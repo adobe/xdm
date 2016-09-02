@@ -1,10 +1,20 @@
-# onecloud-datamodel-schema
+# AdobeCloudPlatform Data Model Schema
 
-Semantic data model for the [unified Adobe Cloud API](https://wiki.corp.adobe.com/display/ctooperations/Content+and+Data+Workstream). Includes tooling to generate HTML documentation.
+Semantic data model schema for the [unified Adobe Cloud API](https://wiki.corp.adobe.com/display/ctooperations/Content+and+Data+Workstream).
 
 ## Schema files
 
-The machine readable schema source files ([RDF/S](https://www.w3.org/TR/rdf-schema/) in [Notation3 (N3) Syntax](https://www.w3.org/TeamSubmission/n3/)) are located in the `schemas` root directory.
+The machine readable schema source files ([RDF/S](https://www.w3.org/TR/rdf-schema/) in [Notation3 (N3) Syntax](https://www.w3.org/TeamSubmission/n3/)) are located in the root directory of this project.
+
+## Tooling
+
+The tooling (e.g. Html Documentation Generator, JSON-LD conversion) is located in the [AdobeCloudPlatform/machinery](https://git.corp.adobe.com/AdobeCloudPlatform/machinery) git repository. 
+
+## Naming Conventions
+
+* Names of Classes and Types use CamelCase notation (i.e. they start with a capital letter), e.g. `Asset`
+* Names of Properties use mixedCase notation (i.e. they begin with lower case but still capitalize thereafter), e.g. `core:assetName`
+* **Exception:** Names of Properties, Classes and Types defined in other onthologies/vocabularies are used _as-is_. e.g. `dc:title`, `xmp:CreateDate`
 
 ## Links
 

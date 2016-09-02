@@ -1,6 +1,6 @@
 # AdobeCloudPlatform Data Model Schema
 
-Semantic data model schema for the [unified Adobe Cloud API](https://wiki.corp.adobe.com/display/ctooperations/Content+and+Data+Workstream).
+Machine readable semantic data model schemas for the [unified Adobe Cloud API](https://wiki.corp.adobe.com/display/ctooperations/Content+and+Data+Workstream).
 
 ## Schema files
 
@@ -8,7 +8,7 @@ The machine readable schema source files ([RDF/S](https://www.w3.org/TR/rdf-sche
 
 ## Tooling
 
-The tooling (e.g. Html Documentation Generator, JSON-LD conversion) is located in the [AdobeCloudPlatform/machinery](https://git.corp.adobe.com/AdobeCloudPlatform/machinery) git repository. 
+The tooling project (e.g. for generating HTML documentation, N3-to-JSON-LD conversion) is located in the [AdobeCloudPlatform/machinery](https://git.corp.adobe.com/AdobeCloudPlatform/machinery) git repository. 
 
 ## Naming Conventions
 

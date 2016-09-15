@@ -12,9 +12,9 @@ The tooling project (e.g. for generating HTML documentation, N3-to-JSON-LD conve
 
 ## Naming Conventions
 
-* Names of Classes and Types use CamelCase notation (i.e. they start with a capital letter), e.g. `Asset`
+* Names of Classes, Types and Stricts use CamelCase notation (i.e. they start with a capital letter), e.g. `Asset`
 * Names of Properties use mixedCase notation (i.e. they begin with lower case but still capitalize thereafter), e.g. `core:assetName`
-* **Exception:** Names of Properties, Classes and Types defined in other onthologies/vocabularies are used _as-is_. e.g. `dc:title`, `xmp:CreateDate`
+* **Exception:** Names of Properties, Classes and Types defined in other ontologies/vocabularies are used _as-is_. e.g. `dc:title`, `xmp:CreateDate`
 
 ## Links
 

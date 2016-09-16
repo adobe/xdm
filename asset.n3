@@ -258,13 +258,13 @@ plus:CopyrightOwnerID a rdf:Property ;
   rdfs:label "CopyrightOwnerID"@en ;
   rdfs:range xmp:Text ;
   rdfs:domain core:CopyrightOwnerClass ;
-  rdfs:comment """A string representing id of copyright owner.""" . 
-  
+  rdfs:comment """ID of the copyright owner. If the PLUS-ID being stored in this property is registered with the PLUS Coalition, it should be expressed as a URL. For example: http://plus-id.org/PLUS-ID.""" .
+
 plus:CopyrightOwnerName a rdf:Property ;
   rdfs:label "CopyrightOwnerName"@en ;
   rdfs:range xmp:ProperName ;
   rdfs:domain core:CopyrightOwnerClass ;
-  rdfs:comment """A string representing name of copyright owner.""" . 
+  rdfs:comment """Name of the copyright owner.""" .
   
 ## structure for defining Dimensions as per XMP spec
 
@@ -486,10 +486,15 @@ meta:jsonName a rdf:Property ;
   rdfs:domain core:BaseProperty ;
   rdfs:range xsd:string .
 
-meta:repositoryImmutable a rdf:Property ;
-  rdfs:label "repositoryImmutable"@en ;
-  # corresponds to 'Immutability' column
+meta:immutable a rdf:Property ;
+  rdfs:label "Immutable"@en ;
   rdfs:comment "resource property cannot be modified after resource creation" ;
+  rdfs:domain core:BaseProperty ;
+  rdfs:range xsd:boolean .
+
+meta:mandatory a rdf:Property ;
+  rdfs:label "Mandatory"@en ;
+  rdfs:comment "Mandatory in One Adobe Cloud APIs" ;
   rdfs:domain core:BaseProperty ;
   rdfs:range xsd:boolean .
 
@@ -506,12 +511,12 @@ core:assetID a core:BaseProperty ;
   rdfs:label "Asset ID"@en ;
   rdfs:comment "A unique identifier given to every addressable asset in a given repository." ;
   rdfs:range xsd:string ;
-  meta:repositoryImmutable "true" ;
+  meta:immutable "true" ;
   meta:jsonName "asset_id" ;
   meta:access "read" ;
   skos:note "urn:aaid:{system}:{id} - {format}:{namespace}:{system}:{id}" ;  
-  #skos:example """“asset_id”:“urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e”""" ;
-  # TODO TBD 'mandatory'?
+  skos:example """“asset_id”:“urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e”""" ;
+  meta:mandatory "true" ;
   rdfs:domain core:Asset .
 
 xmpMM:DocumentID a core:BaseProperty ;
@@ -520,7 +525,7 @@ xmpMM:DocumentID a core:BaseProperty ;
   rdfs:label "Document ID"@en ;
   rdfs:comment "It takes the value of xmpMM:DocumentID present in the XMP packet of the asset. For the assets having no XMP packet this property won't be populated." ;
   rdfs:range xmp:GUID ;
-  meta:repositoryImmutable "true" ;
+  meta:immutable "true" ;
   meta:jsonName "document_id" ;
   meta:access "read" ;
   skos:note "" ;  # TODO
@@ -583,7 +588,7 @@ YYYY-MM-DDThh:mm:ss.sTZD""" ;
 core:firstUploadDate a core:BaseProperty ;
   rdfs:label "Date Initally Uploaded"@en ;    #rdfs:comment "Date and Time media was originally created." ;
   rdfs:comment """The date and time when the file was first uploaded to the cloud. It will be the server time. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".""" ;
-  meta:repositoryImmutable "true" ;
+  meta:immutable "true" ;
   rdfs:range xsd:dateTime ;
   meta:jsonName "first_upload_date" ;
   meta:access "read" ;
@@ -603,7 +608,7 @@ dc:creator a core:BaseProperty ;
 core:firstUploadedBy a core:BaseProperty ;
   rdfs:label "First uploaded by"@en ;
   rdfs:comment "ID of the user who first uploaded the asset" ;
-  meta:repositoryImmutable "true" ;
+  meta:immutable "true" ;
   rdfs:range xsd:string ;
   meta:jsonName "first_uploaded_by" ;
   meta:access "read" ;
@@ -657,7 +662,7 @@ core:versionID a core:BaseProperty ;
   rdfs:label "Version ID"@en ;
   rdfs:comment "The version ID of the asset. It will be generated both on explicit and implicit save or upload." ;
   rdfs:range xsd:string ;
-  meta:repositoryImmutable "true" ;
+  meta:immutable "true" ;
   meta:jsonName "version_id" ;
   meta:access "read" ;
   skos:note "" ;  # TODO
@@ -783,22 +788,6 @@ xmpMM:History a core:BaseProperty ;
   rdfs:comment """High-level actions that resulted in this resource. It is intended to give human readers a description of the steps taken to make the changes from the previous version to this one. The list should be at an abstract level; it is not intended to be an exhaustive keystroke or other detailed history. The description should be sufficient for metadata management, as well as for workflow enhancement.""" ;
   rdfs:range xmp:ResourceEventList ;
   meta:jsonName "history" ;
-  meta:access "readwrite" ;
-  rdfs:domain core:Asset .   
-  
-plus:CopyrightOwnerID a core:BaseProperty ;
-  rdfs:label "Copyright Owner ID"@en ;
-  rdfs:comment """ID of the copyright owner. If the PLUS-ID being stored in this property is registered with the PLUS Coalition, it should be expressed as a URL. For example: http://plus-id.org/PLUS-ID.""" ;
-  rdfs:range xmp:Text ;
-  meta:jsonName "copyright_owner_id" ;
-  meta:access "readwrite" ;
-  rdfs:domain core:Asset .  
-  
-plus:CopyrightOwnerName a core:BaseProperty ;
-  rdfs:label "Copyright Owner Name"@en ;
-  rdfs:comment """Name of Copyright Owner.""" ;
-  rdfs:range xmp:ProperName ;
-  meta:jsonName "copyright_owner_name" ;
   meta:access "readwrite" ;
   rdfs:domain core:Asset .   
   

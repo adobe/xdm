@@ -16,8 +16,8 @@
  # from Adobe Systems Incorporated.
  #*************************************************************************/
 
-@prefix core: <http://ns.adobe.com/adobecloud/core/1.0/> . # TODO TBD define namespace URI
-@prefix meta: <http://ns.adobe.com/adobecloud/meta/1.0/> . # TODO TBD define namespace URI
+@prefix core: <http://ns.adobe.com/adobecloud/core/1.0/> .
+@prefix meta: <http://ns.adobe.com/adobecloud/meta/1.0/> .
 @prefix xmp: <http://ns.adobe.com/xap/1.0/> .
 @prefix xmpMM: <http://ns.adobe.com/xap/1.0/mm/> .
 @prefix xmpRights: <http://ns.adobe.com/xap/1.0/rights/> .
@@ -34,8 +34,6 @@
 @prefix plus: <http://ns.useplus.org/ldf/xmp/1.0/> .
 @prefix cc:  <http://creativecommons.org/ns#> .
 @prefix stEvt: <http://ns.adobe.com/xap/1.0/sType/ResourceEvent#> .
-
-# TODO schema definition vocabulary: use/leverage owl:imports, rdfs:seeAlso , rdfs:isDefinedBy, skos:definition, etc ?
 
 <> a owl:Ontology ;
   dc:title "Adobe Cloud Core Asset Data Model" ;
@@ -238,7 +236,6 @@ core:algorithmName a rdf:Property ;
   rdfs:label "Algorithm Name"@en ;
   rdfs:range xsd:string ;
   rdfs:domain core:Hash ;
-  # TODO Define the restiction over algorithm name ;
   rdfs:comment """An algorithm name used to generate hash.""" .
   
 core:hashValue a rdf:Property ;
@@ -473,13 +470,6 @@ core:BaseProperty a rdfs:Class ;
 
 # schema defintion vocabulary extensions
 
-meta:access a rdf:Property ;
-  rdfs:label "Access"@en ;
-  rdfs:comment "read, write, readwrite" ;
-  rdfs:domain core:BaseProperty ;
-  skos:note "corresponds to RelaxNG XMP Schema" ;
-  rdfs:range xsd:string .
-
 meta:jsonName a rdf:Property ;
   rdfs:label "JSON Name"@en ;
   rdfs:comment "Name of the property in JSON serialization" ;
@@ -490,6 +480,13 @@ meta:immutable a rdf:Property ;
   rdfs:label "Immutable"@en ;
   rdfs:comment "resource property cannot be modified after resource creation" ;
   rdfs:domain core:BaseProperty ;
+  rdfs:range xsd:boolean .
+
+meta:userEditable a rdf:Property ;
+  rdfs:label "User Editable"@en ;
+  rdfs:comment "property can be modified by user" ;
+  rdfs:domain core:BaseProperty ;
+  skos:note "human users or user agents acting on behalf of them can edit this property." ;
   rdfs:range xsd:boolean .
 
 meta:mandatory a rdf:Property ;
@@ -511,12 +508,12 @@ core:assetID a core:BaseProperty ;
   rdfs:label "Asset ID"@en ;
   rdfs:comment "A unique identifier given to every addressable asset in a given repository." ;
   rdfs:range xsd:string ;
+  meta:mandatory "true" ;
+  meta:userEditable "false" ;
   meta:immutable "true" ;
   meta:jsonName "asset_id" ;
-  meta:access "read" ;
-  skos:note "urn:aaid:{system}:{id} - {format}:{namespace}:{system}:{id}" ;  
+  skos:note "urn:aaid:{system}:{id} - {format}:{namespace}:{system}:{id}" ;
   skos:example """“asset_id”:“urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e”""" ;
-  meta:mandatory "true" ;
   rdfs:domain core:Asset .
 
 xmpMM:DocumentID a core:BaseProperty ;
@@ -525,22 +522,24 @@ xmpMM:DocumentID a core:BaseProperty ;
   rdfs:label "Document ID"@en ;
   rdfs:comment "It takes the value of xmpMM:DocumentID present in the XMP packet of the asset. For the assets having no XMP packet this property won't be populated." ;
   rdfs:range xmp:GUID ;
+  meta:mandatory "false" ;
+  meta:userEditable "false" ;
   meta:immutable "true" ;
   meta:jsonName "document_id" ;
-  meta:access "read" ;
-  skos:note "" ;  # TODO
+  skos:note "" ;
   skos:example "uuid:d4546407-8e2c-4194-be3b-98ef79696e2c" ;
-  # TODO TBD 'mandatory'?
   rdfs:domain core:Asset .
 
 core:assetName a core:BaseProperty ;
   rdfs:label "Asset name"@en ;
   rdfs:comment "Name of the asset in the repository. This could be a file name or any name provided by the repository to the asset." ;
   rdfs:range xsd:string ;
+  meta:mandatory "false" ;
+  meta:userEditable "true" ;
+  meta:immutable "false" ;
   meta:jsonName "asset_name" ;
-  meta:access "readwrite" ;
-  skos:note "" ;  # TODO
-  skos:example "" ;  # TODO
+  skos:note "" ;
+  skos:example "" ;
   rdfs:domain core:Asset .
   
 core:aliasIDs a core:BaseProperty ;
@@ -548,21 +547,24 @@ core:aliasIDs a core:BaseProperty ;
   rdfs:comment "List of IDs under which external systems track the asset. Example of external systems : google, facebook etc." ;
   rdfs:range core:ListOfAliasIDs ;
   meta:jsonName "alias_ids" ;
-  meta:access "read" ;
+  meta:mandatory "false" ;
+  meta:userEditable "false" ;
+  meta:immutable "false" ;
   skos:note "[ {system: {system}, id: {id}}, ...]" ;
-  skos:example "" ;  # TODO
+  skos:example "" ;
   rdfs:domain core:Asset .  
   
 core:primaryURL a core:BaseProperty ;
   rdfs:label "Primary URL"@en ;
   rdfs:comment "The URL used to fetch the actual content of the asset. If the asset is a JPEG image, for example, then this URL is used to fetch the binary bits of the JPEG image." ;
   rdfs:range xsd:string ;
+  meta:mandatory "true" ;
+  meta:userEditable "false" ;
+  meta:immutable "true" ;
   meta:jsonName "primary_url" ;
-  meta:access "read" ;
-  skos:note "" ;  # TODO
-  skos:example "" ;  # TODO
-  # TODO TBD 'mandatory'?
-  rdfs:domain core:Asset .    
+  skos:note "A URL [RFC3986]" ;
+  skos:example "" ;
+  rdfs:domain core:Asset .
 
 #### Property section: Asset Creation
 
@@ -570,11 +572,12 @@ xmp:CreateDate a core:BaseProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
   rdfs:isDefinedBy <http://wwwimages.adobe.com/content/dam/Adobe/en/devnet/xmp/pdfs/XMP%20SDK%20Release%20cc-2014-12/XMPSpecificationPart1.pdf> ;
   rdfs:label "Date Created"@en ;
-  #rdfs:comment "Date and Time media was originally created." ;
-  rdfs:comment "The date and time the resource was created. For a digital file, this need not match a file-system creation time. For a freshly created resource, it should be close to that time, modulo the time taken to write the file. Later file transfer, copying, and so on, can make the file-system time arbitrarily different." ;
+  rdfs:comment "The date and time the resource was created. It will be taken from within the asset." ;
   rdfs:range xsd:dateTime ;
+  meta:mandatory "true" ;
+  meta:userEditable "true" ;
+  meta:immutable "false" ;
   meta:jsonName "create_date" ;
-  meta:access "readwrite" ;
   skos:note """YYYY
 YYYY-MM
 YYYY-MM-DD
@@ -582,50 +585,55 @@ YYYY-MM-DDThh:mmTZD
 YYYY-MM-DDThh:mm:ssTZD
 YYYY-MM-DDThh:mm:ss.sTZD""" ;
   skos:example "1600" ;
-  # TODO TBD 'mandatory'?
   rdfs:domain core:Asset .
 
 core:firstUploadDate a core:BaseProperty ;
-  rdfs:label "Date Initally Uploaded"@en ;    #rdfs:comment "Date and Time media was originally created." ;
+  rdfs:label "Date Initally Uploaded"@en ;
   rdfs:comment """The date and time when the file was first uploaded to the cloud. It will be the server time. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".""" ;
-  meta:immutable "true" ;
   rdfs:range xsd:dateTime ;
+  meta:mandatory "true" ;
+  meta:userEditable "false" ;
+  meta:immutable "true" ;
   meta:jsonName "first_upload_date" ;
-  meta:access "read" ;
   skos:note "YYYY-MM-DDThh:mm:ss.sTZD" ;
   skos:example "2016-07-12T12:13:05.123+01:00" ;
-  # TODO TBD 'mandatory'?
   rdfs:domain core:Asset .
   
 dc:creator a core:BaseProperty ;
   rdfs:label "Creator"@en ;  
-  rdfs:comment "An entity primarily responsible for making the resource. Examples of a creator include a person, an organization, or a service. Typically, the name of a creator should be used to indicate the entity." ;
+  rdfs:comment """An entity primarily responsible for making the resource. Examples of a creator include a person, an organization, or a service. Typically, the name of a creator should be used to indicate the entity.""" ;
   rdfs:range core:ListOfProperNames ;
+  meta:mandatory "false" ;
+  meta:userEditable "true" ;
+  meta:immutable "false" ;
   meta:jsonName "creator" ;
-  meta:access "readwrite" ;
-  rdfs:domain core:Asset .  
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Asset .
 
 core:firstUploadedBy a core:BaseProperty ;
   rdfs:label "First uploaded by"@en ;
   rdfs:comment "ID of the user who first uploaded the asset" ;
-  meta:immutable "true" ;
   rdfs:range xsd:string ;
+  meta:mandatory "true" ;
+  meta:userEditable "false" ;
+  meta:immutable "true" ;
   meta:jsonName "first_uploaded_by" ;
-  meta:access "read" ;
-  skos:note "" ;  # TODO
-  skos:example "" ;  # TODO
-  # TODO TBD 'mandatory'?
+  skos:note "" ;
+  skos:example "" ;
   rdfs:domain core:Asset .
 
 xmp:CreatorTool a core:BaseProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
   rdfs:label "Creator tool"@en ;
-  rdfs:comment "Name of the application which authored the asset." ;
+  rdfs:comment "Name of the application which authored the asset. It takes the value present in xmp:CreatorTool property in XMP.." ;
   rdfs:range xmp:AgentName ;
+  meta:mandatory "false" ;
+  meta:userEditable "false" ;
+  meta:immutable "false" ;
   meta:jsonName "creator_tool" ;
-  meta:access "read" ;
-  skos:note "" ;  # TODO
-  skos:example "" ;  # TODO
+  skos:note "" ;
+  skos:example "" ;
   rdfs:domain core:Asset .
 
 #### Property section: Asset Modification
@@ -635,49 +643,54 @@ xmp:ModifyDate a core:BaseProperty ;
   rdfs:label "Modify Date"@en ;
   rdfs:comment """The date and time when asset content or asset metadata was last modified in the repository. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".""" ;
   rdfs:range xsd:dateTime ;
+  meta:mandatory "true" ;
+  meta:userEditable "false" ;
+  meta:immutable "false" ;
   meta:jsonName "modify_date" ;
-  meta:access "read" ;
   skos:note "YYYY
 			 YYYY-MM
 			 YYYY-MM-DD
 			 YYYY-MM-DDThh:mmTZD
 			 YYYY-MM-DDThh:mm:ssTZD
 			 YYYY-MM-DDThh:mm:ss.sTZD" ; 
-  skos:example "" ;  # TODO
-  # TODO TBD 'mandatory'?
+  skos:note "" ;
+  skos:example "" ;
   rdfs:domain core:Asset .
 
 core:modifiedBy a core:BaseProperty ;
   rdfs:label "Modified By"@en ;
   rdfs:comment "ID of the user who initiated the change that is recorded by ModifyDate." ;
   rdfs:range xsd:string ;
+  meta:mandatory "true" ;
+  meta:userEditable "false" ;
+  meta:immutable "false" ;
   meta:jsonName "modified_by" ;
-  meta:access "read" ;
-  skos:note "" ;  # TODO
-  skos:example "" ;  # TODO
-  # TODO TBD 'mandatory'?
-  rdfs:domain core:Asset .    
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Asset .
 
 core:versionID a core:BaseProperty ;
   rdfs:label "Version ID"@en ;
   rdfs:comment "The version ID of the asset. It will be generated both on explicit and implicit save or upload." ;
   rdfs:range xsd:string ;
+  meta:mandatory "true" ;
+  meta:userEditable "false" ;
   meta:immutable "true" ;
   meta:jsonName "version_id" ;
-  meta:access "read" ;
-  skos:note "" ;  # TODO
-  skos:example "" ;  # TODO
-  # TODO TBD 'mandatory'?
-  rdfs:domain core:Asset . 
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Asset .
 
 core:versionLabel a core:BaseProperty ;
   rdfs:label "Version label"@en ;
   rdfs:comment "A label given to a version of the asset. It is optional." ;
   rdfs:range xsd:string ;
+  meta:mandatory "false" ;
+  meta:userEditable "true" ;
+  meta:immutable "false" ;
   meta:jsonName "version_label" ;
-  meta:access "read" ;
-  skos:note "" ;  # TODO
-  skos:example "" ;  # TODO
+  skos:note "" ;
+  skos:example "" ;
   rdfs:domain core:Asset . 
 
 #### Property section: Asset Legal Information
@@ -687,20 +700,26 @@ xmpRights:WebStatement a core:BaseProperty ;
   rdfs:label "Web statement"@en ;
   rdfs:comment "A Web URL for a statement of the ownership and usage rights for this resource. This is a normal (non-URI) simple value because of historical usage." ;
   rdfs:range xsd:string ;
+  meta:mandatory "false" ;
+  meta:userEditable "true" ;
+  meta:immutable "false" ;
   meta:jsonName "web_statement" ;
-  meta:access "readwrite" ;
   skos:note "This is a normal (non-URI) simple value because of historical usage" ;
   skos:example "http://creativecommons.org/licenses/by/4.0/" ;
   rdfs:domain core:Asset .
 
 dc:rights a core:BaseProperty ;
   rdfs:label "Rights"@en ;
-  rdfs:comment """Information about rights held in and over the resource.Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights.""" ;
+  rdfs:comment """Information about rights held in and over the resource.
+We can live without mentioning locale if only one entry is there. Default locale is en_us.
+Locale codes should follow IETF BCP 47 standard. """ ;
   rdfs:range xmp:LanguageAlternative ;
+  meta:mandatory "false" ;
+  meta:userEditable "true" ;
+  meta:immutable "false" ;
   meta:jsonName "rights" ;
-  meta:access "readwrite" ;
-  skos:note "" ;  # TODO
-  skos:example "" ;  # TODO
+  skos:note "" ;
+  skos:example "" ;
   rdfs:domain core:Asset .
 
 xmpRights:Marked a core:BaseProperty ;
@@ -708,10 +727,12 @@ xmpRights:Marked a core:BaseProperty ;
   rdfs:label "Marked"@en ;
   rdfs:comment """When true, indicates that this is a rights-managed resource. When false, indicates that this is a public-domain resource. Omit if the state is unknown.""" ;
   rdfs:range xsd:boolean ;
+  meta:mandatory "false" ;
+  meta:userEditable "true" ;
+  meta:immutable "false" ;
   meta:jsonName "marked" ;
-  meta:access "readwrite" ;
-  skos:note "" ;  # TODO
-  skos:example "" ;  # TODO
+  skos:note "" ;
+  skos:example "" ;
   rdfs:domain core:Asset .
 
 xmpRights:UsageTerms a core:BaseProperty ;
@@ -719,77 +740,113 @@ xmpRights:UsageTerms a core:BaseProperty ;
   rdfs:label "Usage Terms"@en ;
   rdfs:comment """A collection of text instructions on how a resource can be legally used, given in a variety of languages.""" ;
   rdfs:range xmp:LanguageAlternative ;
+  meta:mandatory "false" ;
+  meta:userEditable "true" ;
+  meta:immutable "false" ;
   meta:jsonName "usage_terms" ;
-  meta:access "readwrite" ;
-  rdfs:domain core:Asset . 
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Asset .
   
 plus:CopyrightOwner a core:BaseProperty ;
   rdfs:label "Copyright Owner"@en ;
   rdfs:comment """Owner or owners of the copyright in the licensed asset.""" ;
   rdfs:range plus:ListOfCopyrightOwners ;
+  meta:mandatory "false" ;
+  meta:userEditable "true" ;
+  meta:immutable "false" ;
   meta:jsonName "copyright_owner" ;
-  meta:access "readwrite" ;
-  rdfs:domain core:Asset .  
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Asset .
 
 photoshop:Credit a core:BaseProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
   rdfs:label "Credit"@en ;
   rdfs:comment """Who should be credited when the asset is published.""" ;
   rdfs:range xsd:string ;
+  meta:mandatory "false" ;
+  meta:userEditable "true" ;
+  meta:immutable "false" ;
   meta:jsonName "credit" ;
-  meta:access "readwrite" ;
-  rdfs:domain core:Asset .   
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Asset .
   
 cc:license a core:BaseProperty ;
   rdfs:label "License"@en ;
   rdfs:comment """A license is a set of requests/permissions to users of a Work, e.g. a copyright license, the public domain, information for distributors.""" ;
   rdfs:range core:URI ;
+  meta:mandatory "false" ;
+  meta:userEditable "true" ;
+  meta:immutable "false" ;
   meta:jsonName "license" ;
-  meta:access "readwrite" ;
-  rdfs:domain core:Asset .   
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Asset .
   
 cc:attributionURL a core:BaseProperty ;
   rdfs:label "Attribution URL"@en ;
   rdfs:comment """For licenses that require attribution, such as some Creative Commons licenses, a URL that identifies the user to which a work should be attributed. When publishing to Behance, we link to the user's profile page.""" ;
   rdfs:range core:URI ;
+  meta:mandatory "false" ;
+  meta:userEditable "true" ;
+  meta:immutable "false" ;
   meta:jsonName "attribution_url" ;
-  meta:access "readwrite" ;
-  rdfs:domain core:Asset .  
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Asset .
 
 cc:attributionName a core:BaseProperty ;
   rdfs:label "Attribution Name"@en ;
   rdfs:comment """For licenses that require attribution, such as some Creative Commons licenses, the user to which a work is attributed. When publishing to Behance, this is taken from the user's Behance profile information.""" ;
   rdfs:range xsd:string ;
+  meta:mandatory "false" ;
+  meta:userEditable "true" ;
+  meta:immutable "false" ;
   meta:jsonName "attribution_name" ;
-  meta:access "readwrite" ;
-  rdfs:domain core:Asset .   
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Asset .
   
 xmpMM:ManageUI a core:BaseProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
   rdfs:label "Manage UI"@en ;
   rdfs:comment """A URI that can be used to access information about the managed resource through a web browser.""" ;
   rdfs:range core:URI ;
+  meta:mandatory "false" ;
+  meta:userEditable "true" ;
+  meta:immutable "false" ;
   meta:jsonName "manage_ui" ;
-  meta:access "readwrite" ;
-  rdfs:domain core:Asset .  
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Asset .
   
 xmpMM:ManageTo a core:BaseProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
   rdfs:label "Manage To"@en ;
   rdfs:comment """A URI identifying the managed resource to the asset management system; the presence of this property is the formal indication that this resource is managed. The form and content of this URI is private to the asset management system.""" ;
   rdfs:range core:URI ;
+  meta:mandatory "false" ;
+  meta:userEditable "true" ;
+  meta:immutable "false" ;
   meta:jsonName "manage_to" ;
-  meta:access "readwrite" ;
-  rdfs:domain core:Asset .   
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Asset .
   
 xmpMM:History a core:BaseProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
   rdfs:label "History"@en ;
   rdfs:comment """High-level actions that resulted in this resource. It is intended to give human readers a description of the steps taken to make the changes from the previous version to this one. The list should be at an abstract level; it is not intended to be an exhaustive keystroke or other detailed history. The description should be sufficient for metadata management, as well as for workflow enhancement.""" ;
   rdfs:range xmp:ResourceEventList ;
+  meta:mandatory "false" ;
+  meta:userEditable "false" ;
+  meta:immutable "false" ;
   meta:jsonName "history" ;
-  meta:access "readwrite" ;
-  rdfs:domain core:Asset .   
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Asset .
   
 #### Property section: Asset Description
 
@@ -798,61 +855,82 @@ dc:title a core:BaseProperty ;
   rdfs:comment """A name given to the resource. Typically, a Title will be a name by which the resource is formally known.""" ;
   rdfs:range xmp:LanguageAlternative ;
   meta:jsonName "title" ;
-  meta:access "readwrite" ;
-  rdfs:domain core:Asset . 
+  meta:userEditable "readwrite" ;
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Asset .
   
 dc:description a core:BaseProperty ;
   rdfs:label "Description"@en ;
   rdfs:comment """An account of the content of the resource. Description may include but is not limited to: an abstract, table of contents, reference to a graphical representation of content or a free-text account of the content.""" ;
   rdfs:range xmp:LanguageAlternative ;
+  meta:mandatory "false" ;
+  meta:userEditable "true" ;
+  meta:immutable "false" ;
   meta:jsonName "description" ;
-  meta:access "readwrite" ;
-  rdfs:domain core:Asset . 
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Asset .
 
 dc:format a core:BaseProperty ;
   rdfs:label "Format"@en ;
   rdfs:comment """The physical or digital manifestation of the resource. Typically, Format may include the media-type or dimensions of the resource. Examples of dimensions include size and duration. Format may be used to determine the software, hardware or other equipment needed to display or operate the resource. Recommended best practice is to select a value from a controlled vocabulary (for example, the list of Internet Media Types [http://www.iana.org/ assignments/media-types/] defining computer media formats).""" ;
   rdfs:range xmp:Text ;
+  meta:mandatory "true" ;
+  meta:userEditable "false" ;
+  meta:immutable "false" ;
   meta:jsonName "media_type" ;
-  # TODO TBD 'mandatory'?
+  skos:note "" ;
   skos:example """“media_type”:“application/vnd.adobe.photoshop”""" ;
-  meta:access "read" ;
-  rdfs:domain core:Asset .  
+  rdfs:domain core:Asset .
   
 core:length a core:BaseProperty ;
   rdfs:label "Length"@en ;
   rdfs:comment """Size of the asset in bytes""" ;
   rdfs:range xsd:string ;
+  meta:mandatory "true" ;
+  meta:userEditable "false" ;
+  meta:immutable "false" ;
   meta:jsonName "length" ;
-  # TODO TBD 'mandatory'?
-  meta:access "read" ;
-  rdfs:domain core:Asset .   
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Asset .
   
 core:path a core:BaseProperty ;
   rdfs:label "Path"@en ;
   rdfs:comment """Shows the hierarchy of the asset.The last entry of the path will not be the asset but it will be the parent of the asset. The path semantics should be same as that defined in https://tools.ietf.org/html/rfc3986#section-3.3. In case a repository is not path based then it can return the information which will help in browsing. It could be just an asset id, or something like {catalog}/{id} in case of OZ.""" ;
   rdfs:range xsd:string ;
+  meta:mandatory "true" ;
+  meta:userEditable "false" ;
+  meta:immutable "false" ;
   meta:jsonName "path" ;
-  # TODO TBD 'mandatory'?
-  meta:access "read" ;
-  rdfs:domain core:Asset .  
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Asset .
   
 core:hash a core:BaseProperty ;
   rdfs:label "Hash"@en ;
   rdfs:comment """Hash of the asset along with the algorithm name. Currently only one algorithm is allowed which is md5. If we need to extend the list then it needs to be approved through a process.""" ;
   rdfs:range core:ListOfHash ;
+  meta:mandatory "true" ;
+  meta:userEditable "false" ;
+  meta:immutable "false" ;
   meta:jsonName "hash" ;
-  # TODO TBD 'mandatory'?
-  meta:access "read" ;
-  rdfs:domain core:Asset .   
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Asset .
   
 core:etag a core:BaseProperty ;
   rdfs:label "ETAG"@en ;
   rdfs:comment """An  ETag is an HTTP response header returned by an HTTP/1.1 compliant web server used to determine change in content of a resource at a given URL. """ ;
   rdfs:range xsd:string ;
+  meta:mandatory "true" ;
+  meta:userEditable "false" ;
+  meta:immutable "false" ;
   meta:jsonName "etag" ;
-  meta:access "readwrite" ;
-  rdfs:domain core:Asset .  
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Asset .
 
 ### Image class
 
@@ -868,8 +946,10 @@ tiff:Orientation a core:BaseProperty ;
   rdfs:label "Orientation"@en ;
   rdfs:comment """The orientation of the image.""" ;
   rdfs:range tiff:OrientationMode ;
+  meta:mandatory "false" ;
+  meta:userEditable "false" ;
+  meta:immutable "false" ;
   meta:jsonName "orientation" ;
-    meta:access "read" ;
   skos:note """1 = Horizontal (normal)
 2 = Mirror horizontal 
 3 = Rotate 180 
@@ -878,7 +958,7 @@ tiff:Orientation a core:BaseProperty ;
 6 = Rotate 90 CW 
 7 = Mirror horizontal and rotate 90 CW 
 8 = Rotate 270 CW""" ;
-  # TODO TBD 'mandatory'?
+  skos:example "" ;
   rdfs:domain core:Image .
   
 tiff:ImageWidth a core:BaseProperty ;
@@ -886,9 +966,12 @@ tiff:ImageWidth a core:BaseProperty ;
   rdfs:label "Image Width"@en ;
   rdfs:comment """Image width in pixels.""" ;
   rdfs:range xsd:integer ;
+  meta:mandatory "false" ;
+  meta:userEditable "false" ;
+  meta:immutable "false" ;
   meta:jsonName "image_width" ;
-  meta:access "read" ;
-  # TODO TBD 'mandatory'?
+  skos:note "" ;
+  skos:example "" ;
   rdfs:domain core:Image .  
   
 tiff:ImageLength a core:BaseProperty ;
@@ -896,9 +979,12 @@ tiff:ImageLength a core:BaseProperty ;
   rdfs:label "Image Length"@en ;
   rdfs:comment """Image height in pixels.""" ;
   rdfs:range xsd:integer ;
+  meta:mandatory "false" ;
+  meta:userEditable "false" ;
+  meta:immutable "false" ;
   meta:jsonName "image_length" ;
-  meta:access "read" ;
-  # TODO TBD 'mandatory'?
+  skos:note "" ;
+  skos:example "" ;
   rdfs:domain core:Image .  
 
 tiff:XResolution a core:BaseProperty ;
@@ -906,9 +992,12 @@ tiff:XResolution a core:BaseProperty ;
   rdfs:label "Image X-Resolution"@en ;
   rdfs:comment """Horizontal resolution in pixels per ResolutionUnit.""" ;
   rdfs:range tiff:Rational ;
+  meta:mandatory "false" ;
+  meta:userEditable "false" ;
+  meta:immutable "false" ;
   meta:jsonName "x_resolution" ;
-  meta:access "read" ;
-  # TODO TBD 'mandatory'?
+  skos:note "" ;
+  skos:example "" ;
   rdfs:domain core:Image .  
   
 tiff:YResolution a core:BaseProperty ;
@@ -916,21 +1005,26 @@ tiff:YResolution a core:BaseProperty ;
   rdfs:label "Image Y-Resolution"@en ;
   rdfs:comment """Vertical resolution in pixels per ResolutionUnit.""" ;
   rdfs:range tiff:Rational ;
+  meta:mandatory "false" ;
+  meta:userEditable "false" ;
+  meta:immutable "false" ;
   meta:jsonName "y_resolution" ;
-  meta:access "read" ;
-  # TODO TBD 'mandatory'?
-  rdfs:domain core:Image .   
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Image .
 
 tiff:ResolutionUnit a core:BaseProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
   rdfs:label "Resolution Unit"@en ;
   rdfs:comment """Unit used for XResolution and YResolution.""" ;
   rdfs:range tiff:ResolutionUnitChoice ;
+  meta:mandatory "false" ;
+  meta:userEditable "false" ;
+  meta:immutable "false" ;
   meta:jsonName "resolution_unit" ;
-  meta:access "read" ;
   skos:note """2 = inches
 3 = centimeters""" ;
-  # TODO TBD 'mandatory'?
+  skos:example "" ;
   rdfs:domain core:Image .   
   
 photoshop:ColorMode a core:BaseProperty ;
@@ -938,8 +1032,10 @@ photoshop:ColorMode a core:BaseProperty ;
   rdfs:label "ColorMode"@en ;
   rdfs:comment """The color mode or image mode determines how colors combine based on the number of channels in a color model. Different color modes result in different levels of color detail and file size. For instance, use CMYK color mode for images in a full-color print brochure, and use RGB color mode for images in web or e-mail to reduce file size while maintaining color integrity.""" ;
   rdfs:range photoshop:ColorModeChoice ;
+  meta:mandatory "false" ;
+  meta:userEditable "false" ;
+  meta:immutable "false" ;
   meta:jsonName "color_mode" ;
-  meta:access "read" ;
   skos:note """0 = Bitmap
 1 = Gray scale
 2 = Indexed color
@@ -948,7 +1044,7 @@ photoshop:ColorMode a core:BaseProperty ;
 7 = Multi-channel
 8 = Duotone
 9 = LAB color""" ;
-  # TODO TBD 'mandatory'?
+  skos:example "" ;
   rdfs:domain core:Image .     
   
 photoshop:ICCProfile a core:BaseProperty ;
@@ -956,7 +1052,10 @@ photoshop:ICCProfile a core:BaseProperty ;
   rdfs:label "ICCProfile"@en ;
   rdfs:comment """The color profile, such as AppleRGB, AdobeRGB1998.""" ;
   rdfs:range xmp:Text ;
+  meta:mandatory "false" ;
+  meta:userEditable "false" ;
+  meta:immutable "false" ;
   meta:jsonName "icc_profile" ;
-  meta:access "read" ;
-  # TODO TBD 'mandatory'?
+  skos:note "" ;
+  skos:example "" ;
   rdfs:domain core:Image .     

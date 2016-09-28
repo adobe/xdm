@@ -4,11 +4,11 @@ Machine readable semantic data model schemas for the [unified Adobe Cloud API](h
 
 ## Schema files
 
-The machine readable schema source files ([RDF/S](https://www.w3.org/TR/rdf-schema/) in [Notation3 (N3) Syntax](https://www.w3.org/TeamSubmission/n3/)) are located in the root directory of this project.
+The machine readable schema source files ([RDF/S](https://www.w3.org/TR/rdf-schema/) in [Turtle Syntax](https://www.w3.org/TR/turtle/)) are located in the root directory of this project.
 
 ## Tooling
 
-The tooling project (e.g. for generating HTML documentation, N3-to-JSON-LD conversion) is located in the [AdobeCloudPlatform/machinery](https://git.corp.adobe.com/AdobeCloudPlatform/machinery) git repository. 
+The tooling project (e.g. for generating HTML documentation, Turtle-to-JSON-LD conversion) is located in the [AdobeCloudPlatform/machinery](https://git.corp.adobe.com/AdobeCloudPlatform/machinery) git repository. 
 
 ## Naming Conventions
 
@@ -22,7 +22,7 @@ The tooling project (e.g. for generating HTML documentation, N3-to-JSON-LD conve
 
 * [RDF](https://www.w3.org/RDF/)
 * [RDF Schema (RDF/S) 1.1](https://www.w3.org/TR/rdf-schema/)
-* [Notation3 (N3) Syntax](https://www.w3.org/TeamSubmission/n3/)
+* [RDF 1.1 Turtle](https://www.w3.org/TR/turtle/)
 * [JSON-LD 1.0](https://www.w3.org/TR/json-ld/)
 * [XMP SPECIFICATION PART 1 DATA MODEL, SERIALIZATION, AND CORE PROPERTIES](http://wwwimages.adobe.com/content/dam/Adobe/en/devnet/xmp/pdfs/XMP%20SDK%20Release%20cc-2014-12/XMPSpecificationPart1.pdf)
 

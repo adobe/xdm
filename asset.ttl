@@ -58,17 +58,17 @@ xsd:boolean a rdfs:Datatype ;
 
 xsd:decimal a rdfs:Datatype ;
   rdfs:label "Decimal" ;
-	rdfs:comment "Arbitrary-precision decimal numbers" ;
+  rdfs:comment "Arbitrary-precision decimal numbers" ;
   rdfs:seeAlso <https://www.w3.org/TR/rdf11-concepts/#xsd-datatypes> ;
-	owl:withRestrictions (
-		[
-			xsd:pattern "[+-]?[0-9]*\\.?[0-9]*"
-		]
-	) .
+  owl:withRestrictions (
+    [
+      xsd:pattern "[+-]?[0-9]*\\.?[0-9]*"
+    ]
+  ) .
 
 xsd:integer a rdfs:Datatype ;
   rdfs:label "Integer" ;
-	rdfs:comment "Arbitrary-size integer numbers" ;
+  rdfs:comment "Arbitrary-size integer numbers" ;
   owl:onDatatype xsd:decimal ;
   rdfs:seeAlso <https://www.w3.org/TR/rdf11-concepts/#xsd-datatypes> ;
   owl:withRestrictions (
@@ -99,21 +99,21 @@ xsd:date a rdfs:Datatype ;
   rdfs:label "Date" ;
   rdfs:comment "Dates (yyyy-mm-dd) with or without timezone" ;
   rdfs:seeAlso <https://www.w3.org/TR/rdf11-concepts/#xsd-datatypes> ;
-	owl:withRestrictions (
-		[
-			xsd:pattern "-?[0-9][0-9][0-9][0-9]([0-9]*)?-(0[1-9]|1[0-1])-([0-3][1-9])([+-][0-1][0-9]:[0-6][0-9])?"
-		]
-	) .
+  owl:withRestrictions (
+    [
+      xsd:pattern "-?[0-9][0-9][0-9][0-9]([0-9]*)?-(0[1-9]|1[0-1])-([0-3][1-9])([+-][0-1][0-9]:[0-6][0-9])?"
+    ]
+  ) .
 
 xsd:time a rdfs:Datatype ;
   rdfs:label "Time" ;
   rdfs:comment "Times (hh:mm:ss.sss…) with or without timezone" ;
   rdfs:seeAlso <https://www.w3.org/TR/rdf11-concepts/#xsd-datatypes> ;
-	owl:withRestrictions (
-		[
-			xsd:pattern "[1-2][0-9]:[0-5][0-9]:[0-5][0-9].[0-9][0-9][0-9]"
-		]
-	) .
+  owl:withRestrictions (
+    [
+      xsd:pattern "[1-2][0-9]:[0-5][0-9]:[0-5][0-9].[0-9][0-9][0-9]"
+    ]
+  ) .
 
 xsd:dateTime a rdfs:Datatype ;
   rdfs:label "DateTime" ;
@@ -172,23 +172,23 @@ tiff:OrientationMode a rdfs:Datatype ;
 6 = Rotate 90 CW 
 7 = Mirror horizontal and rotate 90 CW 
 8 = Rotate 270 CW""" ;
-	owl:withRestrictions (
-		[
-			xsd:pattern "^[1-8]?$"
-		]
-	) .
-	
-tiff:ResolutionUnitChoice	a rdfs:Datatype ;
+  owl:withRestrictions (
+    [
+      xsd:pattern "^[1-8]?$"
+    ]
+  ) .
+  
+tiff:ResolutionUnitChoice  a rdfs:Datatype ;
   rdfs:label "ResolutionUnitChoice"@en ;
   rdfs:comment """2 = inches
 3 = centimeters""" ;
-	owl:withRestrictions (
-		[
-			xsd:pattern "^[2-3]?$"
-		]
-	) .
+  owl:withRestrictions (
+    [
+      xsd:pattern "^[2-3]?$"
+    ]
+  ) .
 
-photoshop:ColorModeChoice	a rdfs:Datatype ;
+photoshop:ColorModeChoice  a rdfs:Datatype ;
   rdfs:label "ColorModeChoice"@en ;
   rdfs:comment """0 = Bitmap
 1 = Gray scale
@@ -198,11 +198,11 @@ photoshop:ColorModeChoice	a rdfs:Datatype ;
 7 = Multi-channel
 8 = Duotone
 9 = LAB color""" ;
-	owl:withRestrictions (
-		[
-			xsd:pattern "^[0-9]?$"
-		]
-	) .	
+  owl:withRestrictions (
+    [
+      xsd:pattern "^[0-9]?$"
+    ]
+  ) .  
   
 # structures and auxiliary types/constructs
 
@@ -309,8 +309,8 @@ tiff:denominator a rdf:Property ;
     ] [
       xsd:fractionDigits 0
     ]
-  ) .	
-	
+  ) .
+
 ## container type and auxiliary structure for defining LanguageAlternative as per XMP spec
 
 core:LanguageAlternativeDetail a rdfs:Class ;

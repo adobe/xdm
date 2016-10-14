@@ -48,6 +48,12 @@
       rdfs:range :Metric .
 
 
+###  http://ns.adobe.com/adobecloud/core/1.0/interaction
+:interaction rdf:type owl:ObjectProperty ;
+             rdfs:domain :CallToAction ;
+             rdfs:range :Action .
+
+
 ###  http://ns.adobe.com/adobecloud/core/1.0/location
 :location rdf:type owl:ObjectProperty ;
           rdfs:domain :CallToAction ,

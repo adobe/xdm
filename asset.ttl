@@ -18,9 +18,9 @@
 
 @prefix core: <http://ns.adobe.com/adobecloud/core/1.0/> .
 @prefix meta: <http://ns.adobe.com/adobecloud/meta/1.0/> .
-@prefix xmp: <http://ns.adobe.com/xap/1.0/> .
 @prefix xmpMM: <http://ns.adobe.com/xap/1.0/mm/> .
 @prefix xmpRights: <http://ns.adobe.com/xap/1.0/rights/> .
+@prefix xmp: <http://ns.adobe.com/xap/1.0/> .
 @prefix stDim: <http://ns.adobe.com/xap/1.0/sType/Dimensions#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .

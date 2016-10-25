@@ -155,7 +155,7 @@ xmp:GUID a rdfs:Datatype ;
 xmp:ProperName a rdfs:Datatype ;
   rdfs:label "ProperName"@en ;
   owl:onDatatype xsd:string ;
-  rdfs:comment """A simple text value denoting the name of a person or organization.”""" .
+  rdfs:comment """A simple text value denoting the name of a person or organization.""" .
   
 core:URI a rdfs:Datatype ;
   rdfs:label "URI"@en ;

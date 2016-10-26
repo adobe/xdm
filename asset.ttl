@@ -668,7 +668,6 @@ YYYY-MM-DD
 YYYY-MM-DDThh:mmTZD
 YYYY-MM-DDThh:mm:ssTZD
 YYYY-MM-DDThh:mm:ss.sTZD""" ; 
-  skos:note "" ;
   skos:example "" ;
   rdfs:domain core:Asset .
 

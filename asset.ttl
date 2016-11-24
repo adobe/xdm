@@ -659,7 +659,7 @@ YYYY-MM-DDThh:mm:ss.sTZD""" ;
 
 core:lastUploadedBy a core:BaseProperty, owl:FunctionalProperty ;
   rdfs:label "Last Uploaded By"@en ;
-  rdfs:comment "ID of the user who upload the change that is recorded by last upload date." ;
+  rdfs:comment "ID of the user who performed the change that is recorded by lastUploadDate." ;
   rdfs:range xsd:string ;
   meta:mandatory "true" ;
   meta:userEditable "false" ;

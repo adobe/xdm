@@ -243,29 +243,32 @@ plus:CopyrightOwnerName a rdf:Property ;
   rdfs:range xmp:ProperName ;
   rdfs:domain plus:CopyrightOwnerDetail ;
   rdfs:comment """Name of the copyright owner.""" .
-  
-## structure for defining milestone
+
+## structure for defining MilestoneInfo
+
 core:MilestoneInfo a rdfs:Class ;
   rdfs:label "Milestone Info"@en ;
-  rdfs:comment "A structure containing infomation about version of an asset." .
- 
+  rdfs:comment """A structure containing information about version of an asset.""" ;
+  rdfs:subClassOf rdfs:Resource .
+
 core:MilestoneLabel a rdf:Property ;
   rdfs:label "MilestoneLabel"@en ;
   rdfs:range xsd:string ;
   rdfs:domain core:MilestoneInfo ;
-  rdfs:comment """Label for the version of an asset""". 
-  
+  rdfs:comment """Label for the version of an asset""" .
+
 core:MilestoneDescription a rdf:Property ;
   rdfs:label "MilestoneDescription"@en ;
   rdfs:range xsd:string ;
   rdfs:domain core:MilestoneInfo ;
-  rdfs:comment """Description for the version of an asset""".   
-  
+  rdfs:comment """Description for the version of an asset""" .
+
 ## structure for defining Dimensions as per XMP spec
 
 xmp:Dimensions a rdfs:Class ;
   rdfs:label "Dimensions"@en ;
-  rdfs:comment "A structure containing dimensions for a drawn object." .
+  rdfs:comment "A structure containing dimensions for a drawn object." ;
+  rdfs:subClassOf rdfs:Resource .
 
 stDim:h a rdf:Property ;
   rdfs:label "Height"@en ;
@@ -296,7 +299,7 @@ tiff:numerator a rdf:Property ;
   rdfs:range xsd:integer ;
   rdfs:domain tiff:Rational ;
   rdfs:comment """A value representing numerator part of a rational.""" .
-  
+
 tiff:denominator a rdf:Property ;
   rdfs:range xsd:integer ;
   rdfs:domain tiff:Rational ;
@@ -336,7 +339,7 @@ xmp:LanguageAlternative a rdfs:Class ;
     owl:allValuesFrom xmp:LanguageAlternative ;
   ] ;
   rdfs:subClassOf rdf:List .
-    
+
 ## structure for defining ResourceEvent as per XMP spec
 
 xmp:ResourceEvent a rdfs:Class ;
@@ -392,7 +395,7 @@ core:ListOfProperNames a rdfs:Class ;
   rdfs:subClassOf rdf:List .
 
 ## auxiliary container type for defining an array of AliasID
-  
+
 core:ListOfAliasIDs a rdfs:Class ;
   rdfs:label "ListOfAliasIDs"@en ;
   rdfs:comment "Array of AliasID" ;
@@ -537,7 +540,7 @@ core:assetName a core:BaseProperty, owl:FunctionalProperty ;
   skos:note "" ;
   skos:example "" ;
   rdfs:domain core:Asset .
-  
+
 core:aliasIDs a core:BaseProperty, owl:FunctionalProperty ;
   rdfs:label "Alias IDs"@en ;
   rdfs:comment "List of IDs under which external systems track the asset. Example of external systems : google, facebook etc." ;
@@ -548,8 +551,8 @@ core:aliasIDs a core:BaseProperty, owl:FunctionalProperty ;
   meta:immutable "false" ;
   skos:note "[ {system: {system}, id: {id}}, ...]" ;
   skos:example "" ;
-  rdfs:domain core:Asset .  
-  
+  rdfs:domain core:Asset .
+
 #### Property section: Asset Creation
 
 xmp:CreateDate a core:BaseProperty, owl:FunctionalProperty ;
@@ -582,9 +585,9 @@ core:firstUploadDate a core:BaseProperty, owl:FunctionalProperty ;
   skos:note "YYYY-MM-DDThh:mm:ss.sTZD" ;
   skos:example "2016-07-12T12:13:05.123+01:00" ;
   rdfs:domain core:Asset .
-  
+
 dc:creator a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "Creator"@en ;  
+  rdfs:label "Creator"@en ;
   rdfs:comment """An entity primarily responsible for making the resource. Examples of a creator include a person, an organization, or a service. Typically, the name of a creator should be used to indicate the entity.""" ;
   rdfs:range core:ListOfProperNames ;
   meta:mandatory "false" ;
@@ -636,10 +639,10 @@ YYYY-MM
 YYYY-MM-DD
 YYYY-MM-DDThh:mmTZD
 YYYY-MM-DDThh:mm:ssTZD
-YYYY-MM-DDThh:mm:ss.sTZD""" ; 
+YYYY-MM-DDThh:mm:ss.sTZD""" ;
   skos:example "" ;
   rdfs:domain core:Asset .
-  
+
 core:lastUploadDate a core:BaseProperty, owl:FunctionalProperty ;
   rdfs:label "Last Upload Date"@en ;
   rdfs:comment """The date and time when most recent version of an asset was uploaded in the repo. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".""" ;
@@ -653,8 +656,8 @@ YYYY-MM
 YYYY-MM-DD
 YYYY-MM-DDThh:mmTZD
 YYYY-MM-DDThh:mm:ssTZD
-YYYY-MM-DDThh:mm:ss.sTZD""" ; 
-  skos:example "" ;
+YYYY-MM-DDThh:mm:ss.sTZD""" ;
+  skos:example "2004-10-23T12:00:00-06:00" ;
   rdfs:domain core:Asset .
 
 core:lastUploadedBy a core:BaseProperty, owl:FunctionalProperty ;
@@ -691,7 +694,7 @@ core:milestone a core:BaseProperty, owl:FunctionalProperty ;
   meta:jsonName "milestone" ;
   skos:note "" ;
   skos:example "" ;
-  rdfs:domain core:Asset . 
+  rdfs:domain core:Asset .
 
 #### Property section: Asset Legal Information
 
@@ -747,7 +750,7 @@ xmpRights:UsageTerms a core:BaseProperty, owl:FunctionalProperty ;
   skos:note "" ;
   skos:example "" ;
   rdfs:domain core:Asset .
-  
+
 plus:CopyrightOwner a core:BaseProperty, owl:FunctionalProperty ;
   rdfs:label "Copyright Owner"@en ;
   rdfs:comment """Owner or owners of the copyright in the licensed asset.""" ;
@@ -772,7 +775,7 @@ photoshop:Credit a core:BaseProperty, owl:FunctionalProperty ;
   skos:note "" ;
   skos:example "" ;
   rdfs:domain core:Asset .
-  
+
 cc:license a core:BaseProperty, owl:FunctionalProperty ;
   rdfs:label "License"@en ;
   rdfs:comment """A license is a set of requests/permissions to users of a Work, e.g. a copyright license, the public domain, information for distributors.""" ;
@@ -784,7 +787,7 @@ cc:license a core:BaseProperty, owl:FunctionalProperty ;
   skos:note "" ;
   skos:example "" ;
   rdfs:domain core:Asset .
-  
+
 cc:attributionURL a core:BaseProperty, owl:FunctionalProperty ;
   rdfs:label "Attribution URL"@en ;
   rdfs:comment """For licenses that require attribution, such as some Creative Commons licenses, a URL that identifies the user to which a work should be attributed. When publishing to Behance, we link to the user's profile page.""" ;
@@ -808,7 +811,7 @@ cc:attributionName a core:BaseProperty, owl:FunctionalProperty ;
   skos:note "" ;
   skos:example "" ;
   rdfs:domain core:Asset .
-  
+
 xmpMM:ManageUI a core:BaseProperty, owl:FunctionalProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
   rdfs:label "Manage UI"@en ;
@@ -821,7 +824,7 @@ xmpMM:ManageUI a core:BaseProperty, owl:FunctionalProperty ;
   skos:note "" ;
   skos:example "" ;
   rdfs:domain core:Asset .
-  
+
 xmpMM:ManageTo a core:BaseProperty, owl:FunctionalProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
   rdfs:label "Manage To"@en ;
@@ -834,7 +837,7 @@ xmpMM:ManageTo a core:BaseProperty, owl:FunctionalProperty ;
   skos:note "" ;
   skos:example "" ;
   rdfs:domain core:Asset .
-  
+
 xmpMM:History a core:BaseProperty, owl:FunctionalProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
   rdfs:label "History"@en ;
@@ -847,7 +850,7 @@ xmpMM:History a core:BaseProperty, owl:FunctionalProperty ;
   skos:note "" ;
   skos:example "" ;
   rdfs:domain core:Asset .
-  
+
 #### Property section: Asset Description
 
 dc:title a core:BaseProperty, owl:FunctionalProperty ;
@@ -859,7 +862,7 @@ dc:title a core:BaseProperty, owl:FunctionalProperty ;
   skos:note "XMP usage is a title or name, given in various languages" ;
   skos:example "" ;
   rdfs:domain core:Asset .
-  
+
 dc:description a core:BaseProperty, owl:FunctionalProperty ;
   rdfs:label "Description"@en ;
   rdfs:comment """An account of the content of the resource. Description may include but is not limited to: an abstract, table of contents, reference to a graphical representation of content or a free-text account of the content.""" ;
@@ -883,7 +886,7 @@ dc:format a core:BaseProperty, owl:FunctionalProperty ;
   skos:note "XMP usage is a MIME type. Dimensions would be stored using a media-specific property, beyond the scope of this document." ;
   skos:example """“media_type”:“application/vnd.adobe.photoshop”""" ;
   rdfs:domain core:Asset .
-  
+
 core:size a core:BaseProperty, owl:FunctionalProperty ;
   rdfs:label "Size"@en ;
   rdfs:comment """Size of the asset in bytes""" ;
@@ -895,7 +898,7 @@ core:size a core:BaseProperty, owl:FunctionalProperty ;
   skos:note "" ;
   skos:example "" ;
   rdfs:domain core:Asset .
-  
+
 core:path a core:BaseProperty, owl:FunctionalProperty ;
   rdfs:label "Path"@en ;
   rdfs:comment """Shows the hierarchy of the asset.The last entry of the path will not be the asset but it will be the parent of the asset. The path semantics should be same as that defined in https://tools.ietf.org/html/rfc3986#section-3.3. In case a repository is not path based then it can return the information which will help in browsing. It could be just an asset id, or something like {catalog}/{id} in case of OZ.""" ;
@@ -907,7 +910,7 @@ core:path a core:BaseProperty, owl:FunctionalProperty ;
   skos:note "" ;
   skos:example "" ;
   rdfs:domain core:Asset .
-  
+
 core:etag a core:BaseProperty, owl:FunctionalProperty ;
   rdfs:label "ETAG"@en ;
   rdfs:comment """An  ETag is an HTTP response header returned by an HTTP/1.1 compliant web server used to determine change in content of a resource at a given URL. """ ;
@@ -927,7 +930,7 @@ core:Image a rdfs:Class ;
   rdfs:comment "OneAdobe Cloud Image Class, JPEG, PNG, etc." ;
   rdfs:subClassOf core:Asset .
 
-#### Image properties 
+#### Image properties
 
 tiff:Orientation a core:BaseProperty, owl:FunctionalProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
@@ -939,16 +942,16 @@ tiff:Orientation a core:BaseProperty, owl:FunctionalProperty ;
   meta:immutable "false" ;
   meta:jsonName "orientation" ;
   skos:note """1 = Horizontal (normal)
-2 = Mirror horizontal 
-3 = Rotate 180 
-4 = Mirror vertical 
-5 = Mirror horizontal and rotate 270 CW 
-6 = Rotate 90 CW 
-7 = Mirror horizontal and rotate 90 CW 
+2 = Mirror horizontal
+3 = Rotate 180
+4 = Mirror vertical
+5 = Mirror horizontal and rotate 270 CW
+6 = Rotate 90 CW
+7 = Mirror horizontal and rotate 90 CW
 8 = Rotate 270 CW""" ;
   skos:example "" ;
   rdfs:domain core:Image .
-  
+
 tiff:ImageWidth a core:BaseProperty, owl:FunctionalProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
   rdfs:label "Image Width"@en ;
@@ -960,8 +963,8 @@ tiff:ImageWidth a core:BaseProperty, owl:FunctionalProperty ;
   meta:jsonName "image_width" ;
   skos:note "" ;
   skos:example "" ;
-  rdfs:domain core:Image .  
-  
+  rdfs:domain core:Image .
+
 tiff:ImageLength a core:BaseProperty, owl:FunctionalProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
   rdfs:label "Image Length"@en ;
@@ -973,7 +976,7 @@ tiff:ImageLength a core:BaseProperty, owl:FunctionalProperty ;
   meta:jsonName "image_length" ;
   skos:note "" ;
   skos:example "" ;
-  rdfs:domain core:Image .  
+  rdfs:domain core:Image .
 
 tiff:XResolution a core:BaseProperty, owl:FunctionalProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
@@ -986,8 +989,8 @@ tiff:XResolution a core:BaseProperty, owl:FunctionalProperty ;
   meta:jsonName "x_resolution" ;
   skos:note "" ;
   skos:example "" ;
-  rdfs:domain core:Image .  
-  
+  rdfs:domain core:Image .
+
 tiff:YResolution a core:BaseProperty, owl:FunctionalProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
   rdfs:label "Image Y-Resolution"@en ;
@@ -1013,8 +1016,8 @@ tiff:ResolutionUnit a core:BaseProperty, owl:FunctionalProperty ;
   skos:note """2 = inches
 3 = centimeters""" ;
   skos:example "" ;
-  rdfs:domain core:Image .   
-  
+  rdfs:domain core:Image .
+
 photoshop:ColorMode a core:BaseProperty, owl:FunctionalProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
   rdfs:label "ColorMode"@en ;
@@ -1033,8 +1036,8 @@ photoshop:ColorMode a core:BaseProperty, owl:FunctionalProperty ;
 8 = Duotone
 9 = LAB color""" ;
   skos:example "" ;
-  rdfs:domain core:Image .     
-  
+  rdfs:domain core:Image .
+
 photoshop:ICCProfile a core:BaseProperty, owl:FunctionalProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
   rdfs:label "ICCProfile"@en ;
@@ -1046,4 +1049,4 @@ photoshop:ICCProfile a core:BaseProperty, owl:FunctionalProperty ;
   meta:jsonName "icc_profile" ;
   skos:note "" ;
   skos:example "" ;
-  rdfs:domain core:Image .     
+  rdfs:domain core:Image .

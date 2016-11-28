@@ -136,6 +136,11 @@ xmp:Text a rdfs:Datatype ;
   owl:onDatatype xsd:string ;
   rdfs:comment """A possibly empty Unicode string""" .  
 
+xmp:MIMEType a rdfs:Datatype ;
+  rdfs:label "MIMEType"@en ;
+  owl:onDatatype xmp:Text ;
+  rdfs:comment """A simple text value denoting a digital file format as defined in IETF RFC 2046.""" .
+
 xmp:AgentName a rdfs:Datatype ;
   rdfs:label "AgentName"@en ;
   owl:onDatatype xmp:Text ;
@@ -156,30 +161,30 @@ xmp:ProperName a rdfs:Datatype ;
   rdfs:label "ProperName"@en ;
   owl:onDatatype xsd:string ;
   rdfs:comment """A simple text value denoting the name of a person or organization.""" .
-  
+
 core:URI a rdfs:Datatype ;
   rdfs:label "URI"@en ;
   owl:onDatatype xsd:string ;
   rdfs:comment """A string representing URI""" .
-  
+
 tiff:OrientationMode a rdfs:Datatype ;
-  rdfs:label "OrientationMode"@en ;
+  rdfs:label "Closed choice of integer."@en ;
   rdfs:comment """1 = Horizontal (normal)
-2 = Mirror horizontal 
-3 = Rotate 180 
-4 = Mirror vertical 
-5 = Mirror horizontal and rotate 270 CW 
-6 = Rotate 90 CW 
-7 = Mirror horizontal and rotate 90 CW 
+2 = Mirror horizontal
+3 = Rotate 180
+4 = Mirror vertical
+5 = Mirror horizontal and rotate 270 CW
+6 = Rotate 90 CW
+7 = Mirror horizontal and rotate 90 CW
 8 = Rotate 270 CW""" ;
   owl:withRestrictions (
     [
       xsd:pattern "^[1-8]?$"
     ]
   ) .
-  
+
 tiff:ResolutionUnitChoice  a rdfs:Datatype ;
-  rdfs:label "ResolutionUnitChoice"@en ;
+  rdfs:label "Closed choice of integer"@en ;
   rdfs:comment """2 = inches
 3 = centimeters""" ;
   owl:withRestrictions (
@@ -189,7 +194,7 @@ tiff:ResolutionUnitChoice  a rdfs:Datatype ;
   ) .
 
 photoshop:ColorModeChoice  a rdfs:Datatype ;
-  rdfs:label "ColorModeChoice"@en ;
+  rdfs:label "Closed choice of integer."@en ;
   rdfs:comment """0 = Bitmap
 1 = Gray scale
 2 = Indexed color
@@ -202,8 +207,8 @@ photoshop:ColorModeChoice  a rdfs:Datatype ;
     [
       xsd:pattern "^[0-9]?$"
     ]
-  ) .  
-  
+  ) .
+
 # structures and auxiliary types/constructs
 
 ## structure for defining AliasID
@@ -213,17 +218,17 @@ core:AliasID a rdfs:Class ;
   rdfs:comment """A class representing an Alias ID structure with id and system properties""" ;
   rdfs:subClassOf rdfs:Resource .
 
-core:system a rdf:Property ;
-  rdfs:label "System"@en ;
+core:externalSystem a rdf:Property ;
+  rdfs:label "external System"@en ;
   rdfs:range xsd:string ;
   rdfs:domain core:AliasID ;
   rdfs:comment """A string used to identify the external systems like google, facebook etc.""" .
-  
-core:id a rdf:Property ;
+
+core:externalID a rdf:Property ;
   rdfs:label "ID"@en ;
   rdfs:range xsd:string ;
   rdfs:domain core:AliasID ;
-  rdfs:comment """An Id under which external systems track the asset.""" .  
+  rdfs:comment """An Id under which external systems track the asset.""" .
 
 ## structure for defining CopyrightOwnerDetail
 
@@ -232,14 +237,14 @@ plus:CopyrightOwnerDetail a rdfs:Class ;
   rdfs:comment """Contains properties that provide for a Copyright Owner.""" ;
   rdfs:subClassOf rdfs:Resource .
 
-plus:CopyrightOwnerID a rdf:Property ;
-  rdfs:label "CopyrightOwnerID"@en ;
+plus:OwnerID a rdf:Property ;
+  rdfs:label "Copyright owner ID"@en ;
   rdfs:range xmp:Text ;
   rdfs:domain plus:CopyrightOwnerDetail ;
   rdfs:comment """ID of the copyright owner. If the PLUS-ID being stored in this property is registered with the PLUS Coalition, it should be expressed as a URL. For example: http://plus-id.org/PLUS-ID.""" .
 
-plus:CopyrightOwnerName a rdf:Property ;
-  rdfs:label "CopyrightOwnerName"@en ;
+plus:OwnerName a rdf:Property ;
+  rdfs:label "Copyright owner name"@en ;
   rdfs:range xmp:ProperName ;
   rdfs:domain plus:CopyrightOwnerDetail ;
   rdfs:comment """Name of the copyright owner.""" .
@@ -247,7 +252,7 @@ plus:CopyrightOwnerName a rdf:Property ;
 ## structure for defining MilestoneInfo
 
 core:MilestoneInfo a rdfs:Class ;
-  rdfs:label "Milestone Info"@en ;
+  rdfs:label "MilestoneInfo"@en ;
   rdfs:comment """A structure containing information about version of an asset.""" ;
   rdfs:subClassOf rdfs:Resource .
 
@@ -326,7 +331,7 @@ core:LanguageAlternativeLang a rdf:Property ;
   rdfs:domain core:LanguageAlternativeDetail .
 
 xmp:LanguageAlternative a rdfs:Class ;
-  rdfs:label "LanguageAlternative"@en ;
+  rdfs:label "LocaleStruct"@en ;
   rdfs:comment "An alternative array of simple text items. Language alternatives facilitate the selection of a simple text item based on a desired language." ;
   rdfs:subClassOf [
     a owl:Restriction ;
@@ -380,7 +385,7 @@ stEvt:when a rdf:Property ;
 ## auxiliary container type for defining an array of ProperName as per XMP spec
 
 core:ListOfProperNames a rdfs:Class ;
-  rdfs:label "ListOfProperNames"@en ;
+  rdfs:label "Ordered array of ProperName"@en ;
   rdfs:comment "Ordered array of xmp:ProperName" ;
   rdfs:subClassOf [
     a owl:Restriction ;
@@ -397,7 +402,7 @@ core:ListOfProperNames a rdfs:Class ;
 ## auxiliary container type for defining an array of AliasID
 
 core:ListOfAliasIDs a rdfs:Class ;
-  rdfs:label "ListOfAliasIDs"@en ;
+  rdfs:label "Unordered array of AliasID"@en ;
   rdfs:comment "Array of AliasID" ;
   rdfs:subClassOf [
     a owl:Restriction ;
@@ -414,7 +419,7 @@ core:ListOfAliasIDs a rdfs:Class ;
 ## auxiliary container type for defining an array of CopyrightOwnerDetail
 
 core:ListOfCopyrightOwners a rdfs:Class ;
-  rdfs:label "ListOfCopyrightOwners"@en ;
+  rdfs:label "Ordered array of structure having two fields : CopyrightOwnerId and CopyrightOwnerName"@en ;
   rdfs:comment "Array of plus:CopyrightOwnerDetail" ;
   rdfs:subClassOf [
     a owl:Restriction ;
@@ -431,7 +436,7 @@ core:ListOfCopyrightOwners a rdfs:Class ;
 ## auxiliary container type for defining an array of ResourceEvent as per XMP spec
 
 core:ResourceEventList a rdfs:Class ;
-  rdfs:label "ResourceEventList"@en ;
+  rdfs:label "Ordered array of ResourceEvent"@en ;
   rdfs:comment """ordered array of xmp:ResourceEvent""" ;
   rdfs:subClassOf [
     a owl:Restriction ;
@@ -549,7 +554,7 @@ core:aliasIDs a core:BaseProperty, owl:FunctionalProperty ;
   meta:mandatory "false" ;
   meta:userEditable "false" ;
   meta:immutable "false" ;
-  skos:note "[ {system: {system}, id: {id}}, ...]" ;
+  skos:note """[{"external_system": "facebook", "external_id": "000A1C004EAE74B70A490D05"},...]""" ;
   skos:example "" ;
   rdfs:domain core:Asset .
 
@@ -651,12 +656,7 @@ core:lastUploadDate a core:BaseProperty, owl:FunctionalProperty ;
   meta:userEditable "false" ;
   meta:immutable "false" ;
   meta:jsonName "last_upload_date" ;
-  skos:note """YYYY
-YYYY-MM
-YYYY-MM-DD
-YYYY-MM-DDThh:mmTZD
-YYYY-MM-DDThh:mm:ssTZD
-YYYY-MM-DDThh:mm:ss.sTZD""" ;
+  skos:note """YYYY-MM-DDThh:mm:ss.sTZD""" ;
   skos:example "2004-10-23T12:00:00-06:00" ;
   rdfs:domain core:Asset .
 
@@ -692,7 +692,10 @@ core:milestone a core:BaseProperty, owl:FunctionalProperty ;
   meta:userEditable "true" ;
   meta:immutable "false" ;
   meta:jsonName "milestone" ;
-  skos:note "" ;
+  skos:note """{
+       "label": "Draft 1",
+       "description": "Shared this one with Jerry"
+      }""" ;
   skos:example "" ;
   rdfs:domain core:Asset .
 
@@ -851,6 +854,33 @@ xmpMM:History a core:BaseProperty, owl:FunctionalProperty ;
   skos:example "" ;
   rdfs:domain core:Asset .
 
+plus:CopyrightOwnerID a core:BaseProperty, owl:FunctionalProperty ;
+  # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
+  rdfs:label "CopyrightOwnerID"@en ;
+  rdfs:comment """ID of the copyright owner.
+If the PLUS-ID being stored in this property is registered with the PLUS Coalition, it should be expressed as a URL. For example: http://plus-id.org/PLUS-ID""" ;
+  rdfs:range xmp:Text ;
+  meta:mandatory "false" ;
+  meta:userEditable "true" ;
+  meta:immutable "false" ;
+  meta:jsonName "copyright_owner_id" ;
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Asset .
+
+plus:CopyrightOwnerName a core:BaseProperty, owl:FunctionalProperty ;
+  # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
+  rdfs:label "CopyrightOwnerName"@en ;
+  rdfs:comment """Name of Copyright Owner.""" ;
+  rdfs:range xmp:ProperName ;
+  meta:mandatory "false" ;
+  meta:userEditable "true" ;
+  meta:immutable "false" ;
+  meta:jsonName "copyright_owner_name" ;
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Asset .
+
 #### Property section: Asset Description
 
 dc:title a core:BaseProperty, owl:FunctionalProperty ;
@@ -878,7 +908,7 @@ dc:description a core:BaseProperty, owl:FunctionalProperty ;
 dc:format a core:BaseProperty, owl:FunctionalProperty ;
   rdfs:label "Format"@en ;
   rdfs:comment """The physical or digital manifestation of the resource. Typically, Format may include the media-type or dimensions of the resource. Examples of dimensions include size and duration. Format may be used to determine the software, hardware or other equipment needed to display or operate the resource. Recommended best practice is to select a value from a controlled vocabulary (for example, the list of Internet Media Types [http://www.iana.org/ assignments/media-types/] defining computer media formats).""" ;
-  rdfs:range xmp:Text ;
+  rdfs:range xmp:MIMEType ;
   meta:mandatory "true" ;
   meta:userEditable "false" ;
   meta:immutable "false" ;
@@ -890,7 +920,7 @@ dc:format a core:BaseProperty, owl:FunctionalProperty ;
 core:size a core:BaseProperty, owl:FunctionalProperty ;
   rdfs:label "Size"@en ;
   rdfs:comment """Size of the asset in bytes""" ;
-  rdfs:range xsd:string ;
+  rdfs:range xsd:integer ;
   meta:mandatory "true" ;
   meta:userEditable "false" ;
   meta:immutable "false" ;

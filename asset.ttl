@@ -689,7 +689,10 @@ core:milestone a core:BaseProperty, owl:FunctionalProperty ;
   meta:userEditable "true" ;
   meta:immutable "false" ;
   meta:jsonName "milestone" ;
-  skos:note """{"2","milestone version:2"}""" ;
+  skos:note """{
+        "Draft 1",
+        "Shared this one with Jerry"
+      }""" ;
   skos:example "" ;
   rdfs:domain core:Asset . 
 

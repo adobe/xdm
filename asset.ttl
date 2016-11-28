@@ -551,7 +551,7 @@ core:aliasIDs a core:BaseProperty, owl:FunctionalProperty ;
   meta:mandatory "false" ;
   meta:userEditable "false" ;
   meta:immutable "false" ;
-  skos:note "[ {system: {system}, id: {id}}, ...]" ;
+  skos:note """[{"external_system": "facebook", "external_id": "000A1C004EAE74B70A490D05"},...]""" ;
   skos:example "" ;
   rdfs:domain core:Asset .  
   
@@ -690,8 +690,8 @@ core:milestone a core:BaseProperty, owl:FunctionalProperty ;
   meta:immutable "false" ;
   meta:jsonName "milestone" ;
   skos:note """{
-        "Draft 1",
-        "Shared this one with Jerry"
+       "label": "Draft 1",
+       "description": "Shared this one with Jerry"
       }""" ;
   skos:example "" ;
   rdfs:domain core:Asset . 

@@ -888,7 +888,9 @@ dc:title a core:BaseProperty, owl:FunctionalProperty ;
   rdfs:comment """A name given to the resource. Typically, a Title will be a name by which the resource is formally known.""" ;
   rdfs:range xmp:LanguageAlternative ;
   meta:jsonName "title" ;
+  meta:mandatory false ;
   meta:userEditable true ;
+  meta:immutable false ;
   skos:note "XMP usage is a title or name, given in various languages" ;
   skos:example "" ;
   rdfs:domain core:Asset .

@@ -1,0 +1,139 @@
+#*************************************************************************
+ #
+ # ADOBE CONFIDENTIAL
+ # ___________________
+ #
+ #  Copyright 2016 Adobe Systems Incorporated
+ #  All Rights Reserved.
+ #
+ # NOTICE:  All information contained herein is, and remains
+ # the property of Adobe Systems Incorporated and its suppliers,
+ # if any.  The intellectual and technical concepts contained
+ # herein are proprietary to Adobe Systems Incorporated and its
+ # suppliers and are protected by trade secret or copyright law.
+ # Dissemination of this information or reproduction of this material
+ # is strictly forbidden unless prior written permission is obtained
+ # from Adobe Systems Incorporated.
+ #*************************************************************************/
+
+@prefix core: <http://ns.adobe.com/adobecloud/core/1.0/> .
+@prefix meta: <http://ns.adobe.com/adobecloud/meta/1.0/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<http://ns.adobe.com/adobecloud/core/1.0/> a owl:Ontology ;
+  dc:title "Adobe Cloud Collections Data Model" ;
+  rdfs:comment "An RDF Schema for the Adobe Cloud Collections Data Model" .
+
+xsd:date a rdfs:Datatype ;
+  rdfs:label "Date" ;
+  rdfs:comment "Dates (yyyy-mm-dd) with or without timezone" ;
+  rdfs:seeAlso <https://www.w3.org/TR/rdf11-concepts/#xsd-datatypes> ;
+  owl:withRestrictions (
+    [
+      xsd:pattern "-?[0-9][0-9][0-9][0-9]([0-9]*)?-(0[1-9]|1[0-1])-([0-3][1-9])([+-][0-1][0-9]:[0-6][0-9])?"
+    ]
+  ) .
+
+xsd:time a rdfs:Datatype ;
+  rdfs:label "Time" ;
+  rdfs:comment "Times (hh:mm:ss.sss…) with or without timezone" ;
+  rdfs:seeAlso <https://www.w3.org/TR/rdf11-concepts/#xsd-datatypes> ;
+  owl:withRestrictions (
+    [
+      xsd:pattern "[1-2][0-9]:[0-5][0-9]:[0-5][0-9].[0-9][0-9][0-9]"
+    ]
+  ) .
+
+xsd:dateTime a rdfs:Datatype ;
+  rdfs:label "DateTime" ;
+  rdfs:seeAlso <https://www.w3.org/TR/rdf11-concepts/#xsd-datatypes> ;
+  rdfs:comment "Date and time with or without timezone" .
+
+xsd:dateTimeStamp a rdfs:Datatype ;
+  rdfs:label "DateTimeStamp" ;
+  rdfs:seeAlso <https://www.w3.org/TR/rdf11-concepts/#xsd-datatypes> ;
+  rdfs:comment "Date and time with required timezone" .
+
+
+
+### Collection class
+
+core:Collection a rdfs:Class ;
+  rdfs:label "Collection"@en ;
+  rdfs:comment "OneAdobe Collection" ;
+  rdfs:subClassOf core:BaseClass .
+
+core:name a core:BaseProperty, owl:FunctionalProperty ;
+  rdfs:label "Asset name"@en ;
+  rdfs:comment "Name of the collections in the repository. This could be a file name or any name provided by the repository to the collection. It could also be missing in case of dynamic collections." ;
+  rdfs:range xsd:string ;
+  meta:mandatory false ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "name" ;
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Collection .
+
+core:children a core:BaseProperty, owl:FunctionalProperty ;
+  rdfs:label "children of the collection"@en ;
+  rdfs:comment "Children (e.g. assets or other collections) contained in the collection." ;
+  ### TODO I don't think we need an rdfs:range - anything can be in a collection
+  meta:jsonName "children" ;
+  meta:mandatory false ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Collection .
+
+### Directory class
+
+core:Directory a rdfs:Class ;
+  rdfs:label "Directory"@en ;
+  rdfs:comment "OneAdobe Directory" ;
+  rdfs:subClassOf core:Collection .
+
+core:path a core:BaseProperty, owl:FunctionalProperty ;
+  ### TODO: should this be moved to a common model between collections and assets?
+  rdfs:label "Path"@en ;
+  rdfs:comment """Shows the hierarchy of the directory.The last entry of the path will not be the directory itslef but it will be the parent of the directory. The path semantics should be same as that defined in https://tools.ietf.org/html/rfc3986#section-3.3. In case a repository is not path based then it can return the information which will help in browsing.""" ;
+  rdfs:range xsd:string ;
+  meta:mandatory true ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "path" ;
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Directory .
+
+core:creationDate a core:BaseProperty, owl:FunctionalProperty ;
+  rdfs:label "Date Initally Uploaded"@en ;
+  rdfs:comment """The date and time when the directory was created. It will be the server time. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".""" ;
+  rdfs:range xsd:dateTime ;
+  meta:mandatory true ;
+  meta:userEditable false ;
+  meta:immutable true ;
+  meta:jsonName "creation_date" ;
+  skos:note "YYYY-MM-DDThh:mm:ss.sTZD" ;
+  skos:example "2016-07-12T12:13:05.123+01:00" ;
+  rdfs:domain core:Directory .
+
+core:lastModificationDate a core:BaseProperty, owl:FunctionalProperty ;
+  rdfs:label "Date Initally Uploaded"@en ;
+  ### TODO: is the statement below on modification semantics correct?
+  rdfs:comment """The date and time when the directory was last modified. Modifications to children of the directory will not change this date. It will be the server time. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".""" ;
+  rdfs:range xsd:dateTime ;
+  meta:mandatory true ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "last_modification_date" ;
+  skos:note "YYYY-MM-DDThh:mm:ss.sTZD" ;
+  skos:example "2016-07-12T12:13:05.123+01:00" ;
+  rdfs:domain core:Directory .

@@ -508,18 +508,6 @@ core:Asset a rdfs:Class ;
 
 #### Property section: Asset Identity
 
-core:dummyProp a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "dummy prop to test auto generation of markdown and commit in model-spec repo"@en ;
-  rdfs:comment "dummy prop to test auto generation of markdown and commit in model-spec repo" ;
-  rdfs:range xsd:string ;
-  meta:mandatory true ;
-  meta:userEditable false ;
-  meta:immutable true ;
-  meta:jsonName "asset_id" ;
-  skos:note "urn:aaid:{system}:{id} - {format}:{namespace}:{system}:{id}" ;
-  skos:example """“asset_id”:“urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e”""" ;
-  rdfs:domain core:Asset .
-
 core:assetID a core:BaseProperty, owl:FunctionalProperty ;
   rdfs:label "Asset ID"@en ;
   rdfs:comment "A unique identifier given to every addressable asset in a given repository." ;

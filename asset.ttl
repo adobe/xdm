@@ -510,7 +510,8 @@ core:Asset a rdfs:Class ;
 
 core:assetID a core:BaseProperty, owl:FunctionalProperty ;
   rdfs:label "Asset ID"@en ;
-  rdfs:comment "A unique identifier given to every addressable asset in a given repository." ;
+  # rdfs:comment "A unique identifier given to every addressable asset in a given repository." ;
+  rdfs:comment "changes to test jenkins service for generation of markdown pages and auto commit in model-spec repo" ;
   rdfs:range xsd:string ;
   meta:mandatory true ;
   meta:userEditable false ;

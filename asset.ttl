@@ -165,7 +165,7 @@ xmp:ProperName a rdfs:Datatype ;
 core:URI a rdfs:Datatype ;
   rdfs:label "URI"@en ;
   owl:onDatatype xsd:string ;
-  rdfs:comment """A string representing URI""" .
+  rdfs:comment """A string representing URI as defined in IETF RFC 3986.""" .
 
 tiff:OrientationMode a rdfs:Datatype ;
   rdfs:label "Closed choice of integer."@en ;

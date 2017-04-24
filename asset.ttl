@@ -541,7 +541,7 @@ core:assetName a core:BaseProperty, owl:FunctionalProperty ;
   meta:mandatory false ;
   meta:userEditable true ;
   meta:immutable false ;
-  meta:jsonName "asset_name" ;
+  meta:jsonName "name" ;
   skos:note "" ;
   skos:example "" ;
   rdfs:domain core:Asset .

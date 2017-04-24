@@ -134,7 +134,7 @@ xml:lang a rdfs:Datatype ;
 xmp:Text a rdfs:Datatype ;
   rdfs:label "Text"@en ;
   owl:onDatatype xsd:string ;
-  rdfs:comment """A possibly empty Unicode string""" .  
+  rdfs:comment """A possibly empty Unicode string""" .
 
 xmp:MIMEType a rdfs:Datatype ;
   rdfs:label "MIMEType"@en ;
@@ -916,7 +916,7 @@ dc:format a core:BaseProperty, owl:FunctionalProperty ;
   meta:immutable false ;
   meta:jsonName "type" ;
   skos:note "XMP usage is a MIME type. Dimensions would be stored using a media-specific property, beyond the scope of this document." ;
-  skos:example """“media_type”:“application/vnd.adobe.photoshop”""" ;
+  skos:example """“type”:“application/vnd.adobe.photoshop”""" ;
   rdfs:domain core:Asset .
 
 core:size a core:BaseProperty, owl:FunctionalProperty ;

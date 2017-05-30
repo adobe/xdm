@@ -1082,3 +1082,10 @@ photoshop:ICCProfile a core:BaseProperty, owl:FunctionalProperty ;
   skos:note "" ;
   skos:example "" ;
   rdfs:domain core:Image .
+
+### Video class
+
+core:Video a rdfs:Class ;
+  rdfs:label "Video" ;
+  rdfs:comment "OneAdobe Cloud Video Class" ;
+  rdfs:subClassOf core:Asset .

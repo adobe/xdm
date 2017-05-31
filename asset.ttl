@@ -1122,3 +1122,15 @@ tiff:ImageLength a core:BaseProperty, owl:FunctionalProperty ;
   skos:note "" ;
   skos:example "" ;
   rdfs:domain core:Image, core:Video .  
+
+core:aspectRatio a core:BaseProperty, owl:FunctionalProperty ;
+  rdfs:label "Aspect Ratio"@en ;
+  rdfs:comment "Describes the proportional relationship between the width and the height" ;
+  rdfs:range xsd:float ;
+  meta:mandatory false ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "aspect_ratio" ;
+  skos:note "See the definition in https://en.wikipedia.org/wiki/Aspect_ratio_(image)" ;
+  skos:example "" ;
+  rdfs:domain core:Image, core:Video .    

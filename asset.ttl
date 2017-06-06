@@ -579,14 +579,14 @@ YYYY-MM-DDThh:mm:ss.sTZD""" ;
   skos:example "1600" ;
   rdfs:domain core:Asset .
 
-core:firstUploadDate a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "Date Initally Uploaded"@en ;
-  rdfs:comment """The date and time when the file was first uploaded to the cloud. It will be the server time. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".""" ;
+core:repositoryCreatedDate a core:BaseProperty, owl:FunctionalProperty ;
+  rdfs:label "Date created in repository"@en ;
+  rdfs:comment """The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".""" ;
   rdfs:range xsd:dateTime ;
   meta:mandatory true ;
   meta:userEditable false ;
   meta:immutable true ;
-  meta:jsonName "first_upload_date" ;
+  meta:jsonName "repository_created_date" ;
   skos:note "YYYY-MM-DDThh:mm:ss.sTZD" ;
   skos:example "2016-07-12T12:13:05.123+01:00" ;
   rdfs:domain core:Asset .
@@ -603,14 +603,14 @@ dc:creator a core:BaseProperty, owl:FunctionalProperty ;
   skos:example "" ;
   rdfs:domain core:Asset .
 
-core:firstUploadedBy a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "First uploaded by"@en ;
-  rdfs:comment "ID of the user who first uploaded the asset" ;
+core:repositoryCreatedBy a core:BaseProperty, owl:FunctionalProperty ;
+  rdfs:label "Created in repository by"@en ;
+  rdfs:comment "ID of the user who initiated the action that caused the resource to be created in the repository." ;
   rdfs:range xsd:string ;
   meta:mandatory true ;
   meta:userEditable false ;
   meta:immutable true ;
-  meta:jsonName "first_uploaded_by" ;
+  meta:jsonName "repository_created_by" ;
   skos:note "" ;
   skos:example "" ;
   rdfs:domain core:Asset .
@@ -648,26 +648,26 @@ YYYY-MM-DDThh:mm:ss.sTZD""" ;
   skos:example "" ;
   rdfs:domain core:Asset .
 
-core:lastUploadDate a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "Last Upload Date"@en ;
-  rdfs:comment """The date and time when most recent version of an asset was uploaded in the repo. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".""" ;
+core:repositoryLastModifiedDate a core:BaseProperty, owl:FunctionalProperty ;
+  rdfs:label "Repository last modified date"@en ;
+  rdfs:comment """The server date and time when the resource was most recently modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".""" ;
   rdfs:range xsd:dateTime ;
   meta:mandatory true ;
   meta:userEditable false ;
   meta:immutable false ;
-  meta:jsonName "last_upload_date" ;
+  meta:jsonName "repository_last_modified_date" ;
   skos:note """YYYY-MM-DDThh:mm:ss.sTZD""" ;
   skos:example "2004-10-23T12:00:00-06:00" ;
   rdfs:domain core:Asset .
 
-core:lastUploadedBy a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "Last Uploaded By"@en ;
-  rdfs:comment "ID of the user who performed the change that is recorded by lastUploadDate." ;
+core:repositoryLastModifiedBy a core:BaseProperty, owl:FunctionalProperty ;
+  rdfs:label "Repository last modified by"@en ;
+  rdfs:comment "ID of the user who initiated the action that most recently caused the resource to be modified in the repository." ;
   rdfs:range xsd:string ;
   meta:mandatory true ;
   meta:userEditable false ;
   meta:immutable false ;
-  meta:jsonName "last_uploaded_by" ;
+  meta:jsonName "repository_last_modified_by" ;
   skos:note "" ;
   skos:example "" ;
   rdfs:domain core:Asset .

@@ -34,8 +34,6 @@
 @prefix plus: <http://ns.useplus.org/ldf/xmp/1.0/> .
 @prefix cc:  <http://creativecommons.org/ns#> .
 @prefix stEvt: <http://ns.adobe.com/xap/1.0/sType/ResourceEvent#> .
-@prefix exif: <http://ns.adobe.com/exif/1.0/#> .
-
 
 <http://ns.adobe.com/adobecloud/core/1.0/> a owl:Ontology ;
   dc:title "Adobe Cloud Core Asset Data Model" ;
@@ -210,17 +208,6 @@ photoshop:ColorModeChoice  a rdfs:Datatype ;
       xsd:pattern "^[0-9]?$"
     ]
   ) .
-
-exif:GPSCoordinate a rdfs:Datatype ;
-  rdfs:label "GPS Coordinate"@en ;
-  owl:onDatatype xsd:string ;
-  rdfs:comment """A Text value in the form “DDD,MM,SSk” or “DDD,MM.mmk”, where:
-* DDD is a number of degrees
-* MM is a number of minutes
-* SS is a number of seconds
-* mm is a fraction of minutes
-* k is a single character N, S, E, or W indicating a direction (north, south, east, west)
-Leading zeros are not necessary for the for DDD, MM, and SS values. The DDD,MM.mmk form should be used when any of the native Exif component rational values has a denominator other than 1. There can be any number of fractional digits.""" .
 
 # structures and auxiliary types/constructs
 
@@ -964,56 +951,6 @@ core:etag a core:BaseProperty, owl:FunctionalProperty ;
   meta:userEditable false ;
   meta:immutable false ;
   meta:jsonName "etag" ;
-  skos:note "" ;
-  skos:example "" ;
-  rdfs:domain core:Asset .
-
-exif:GPSAltitude a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "GPS Altitude"@en ;
-  rdfs:comment """GPS tag 6, 0x06. Indicates altitude in meters.""" ;
-  rdfs:range xsd:float ;
-  meta:mandatory false ;
-  meta:userEditable false ;
-  meta:immutable false ;
-  meta:jsonName "gps_altitude" ;
-  skos:note "" ;
-  skos:example "" ;
-  rdfs:domain core:Asset .
-
-exif:GPSAltitudeRef a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "GPS Altitude Ref"@en ;
-  rdfs:comment """GPS tag 5, 0x5. Indicates whether the altitude is above or below sea level:
-0 = Above sea level
-1 = Below sea level""" ;
-  rdfs:range xsd:integer ;
-  meta:mandatory false ;
-  meta:userEditable false ;
-  meta:immutable false ;
-  meta:jsonName "gps_altitude_ref" ;
-  skos:note "" ;
-  skos:example "" ;
-  rdfs:domain core:Asset .
-
-exif:GPSLatitude a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "GPS Latitude"@en ;
-  rdfs:comment """GPS tag 2, 0x02 (position) and 1, 0x01 (North/South). Indicates latitude.""" ;
-  rdfs:range exif:GPSCoordinate ;
-  meta:mandatory false ;
-  meta:userEditable false ;
-  meta:immutable false ;
-  meta:jsonName "gps_latitude" ;
-  skos:note "" ;
-  skos:example "" ;
-  rdfs:domain core:Asset .
-
-exif:GPSLongitude a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "GPS Longitude"@en ;
-  rdfs:comment """GPS tag 4, 0x04 (position) and 3, 0x03 (East/West). Indicates longitude.""" ;
-  rdfs:range exif:GPSCoordinate ;
-  meta:mandatory false ;
-  meta:userEditable false ;
-  meta:immutable false ;
-  meta:jsonName "gps_longitude" ;
   skos:note "" ;
   skos:example "" ;
   rdfs:domain core:Asset .

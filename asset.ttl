@@ -34,6 +34,7 @@
 @prefix plus: <http://ns.useplus.org/ldf/xmp/1.0/> .
 @prefix cc:  <http://creativecommons.org/ns#> .
 @prefix stEvt: <http://ns.adobe.com/xap/1.0/sType/ResourceEvent#> .
+@prefix stArtboard: <http://ns.adobe.com/core/1.0/sType/Artboard#> .
 
 <http://ns.adobe.com/adobecloud/core/1.0/> a owl:Ontology ;
   dc:title "Adobe Cloud Core Asset Data Model" ;
@@ -383,6 +384,42 @@ stEvt:when a rdf:Property ;
   rdfs:comment """Timestamp of when the action occurred.For events that create or write to a file, this should be the approximate modification time of the file.""" .
 
 ## auxiliary container type for defining an array of ProperName as per XMP spec
+## structure for defining Artboard
+
+core:Artboard a rdfs:Class ;
+  rdfs:label "Artboard class"@en ;
+  rdfs:comment """This property is used for document types in which a list of artboards is the top-level organizing principle. Illustartor and Xd documents are two such examples. Structure containing the characteristics of a Artboard used in a document.""" ;
+  rdfs:subClassOf rdfs:Resource .
+  
+stArtboard:id a rdf:Property ;
+  rdfs:range xsd:string ;
+  rdfs:domain core:stArtboard ;
+  rdfs:comment """Unique ID of Artboard""" .
+  
+stArtboard:name a rdf:Property ;
+  rdfs:range xsd:string ;
+  rdfs:domain core:stArtboard ;
+  rdfs:comment """Name of Artboard""" . 
+  
+stArtboard:x a rdf:Property ;
+  rdfs:range xsd:integer ;
+  rdfs:domain core:stArtboard ;
+  rdfs:comment """Origin X position in pixels""" .   
+  
+stArtboard:y a rdf:Property ;
+  rdfs:range xsd:integer ;
+  rdfs:domain core:stArtboard ;
+  rdfs:comment """Origin Y position in pixels""" .   
+  
+stArtboard:width a rdf:Property ;
+  rdfs:range xsd:integer ;
+  rdfs:domain core:stArtboard ;
+  rdfs:comment """Width of artboard in pixels""" .
+
+stArtboard:height a rdf:Property ;
+  rdfs:range xsd:integer ;
+  rdfs:domain core:stArtboard ;
+  rdfs:comment """Height of artboard in pixels""" .
 
 core:ListOfProperNames a rdfs:Class ;
   rdfs:label "Ordered array of ProperName"@en ;
@@ -1082,6 +1119,11 @@ photoshop:ColorMode a core:BaseProperty, owl:FunctionalProperty ;
   skos:example "" ;
   rdfs:domain core:Image .
 
+core:CCDoc a rdfs:Class ;
+  rdfs:label "CCDoc" ;
+  rdfs:comment "OneAdobe Cloud Documents Class, AI, ID, PSD, PDF, etc." ;
+  rdfs:subClassOf core:Asset .
+
 photoshop:ICCProfile a core:BaseProperty, owl:FunctionalProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
   rdfs:label "ICCProfile"@en ;
@@ -1094,3 +1136,16 @@ photoshop:ICCProfile a core:BaseProperty, owl:FunctionalProperty ;
   skos:note "" ;
   skos:example "" ;
   rdfs:domain core:Image .
+
+core:Artboards a core:BaseProperty, owl:FunctionalProperty ;
+  # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
+  rdfs:label "Artboards"@en ;
+  rdfs:comment """Unordered Array of Artboard structure""" ;
+  rdfs:range core:Artboard ;
+  meta:mandatory false ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "artboards" ;
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:CCDoc .

@@ -411,7 +411,7 @@ stArtboard:name a rdf:Property ;
 stArtboard:x a rdf:Property ;
   rdfs:range xsd:integer ;
   rdfs:domain core:stArtboard ;
-  rdfs:comment """Origin X position in pixels""" 
+  rdfs:comment """Origin X position in pixels - Base system is cartesian and origin in top,left (Y increasing downwards)""" 
   meta:mandatory true ;
   meta:userEditable false ;
   meta:immutable false ;
@@ -420,7 +420,7 @@ stArtboard:x a rdf:Property ;
 stArtboard:y a rdf:Property ;
   rdfs:range xsd:integer ;
   rdfs:domain core:stArtboard ;
-  rdfs:comment """Origin Y position in pixels""" 
+  rdfs:comment """Origin Y position in pixels - Base system is cartesian and origin in top,left (Y increasing downwards)""" 
   meta:mandatory true ;
   meta:userEditable false ;
   meta:immutable false ;

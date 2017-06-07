@@ -383,7 +383,6 @@ stEvt:when a rdf:Property ;
   rdfs:domain xmp:ResourceEvent ;
   rdfs:comment """Timestamp of when the action occurred.For events that create or write to a file, this should be the approximate modification time of the file.""" .
 
-## auxiliary container type for defining an array of ProperName as per XMP spec
 ## structure for defining Artboard
 
 core:Artboard a rdfs:Class ;
@@ -394,32 +393,58 @@ core:Artboard a rdfs:Class ;
 stArtboard:id a rdf:Property ;
   rdfs:range xsd:string ;
   rdfs:domain core:stArtboard ;
-  rdfs:comment """Unique ID of Artboard""" .
-  
+  rdfs:comment """Unique ID of Artboard""";
+  meta:mandatory true ;
+  meta:userEditable false ;
+  meta:immutable true ;
+  meta:jsonName "id" .
+
 stArtboard:name a rdf:Property ;
   rdfs:range xsd:string ;
   rdfs:domain core:stArtboard ;
-  rdfs:comment """Name of Artboard""" . 
-  
+  rdfs:comment """Name of Artboard""" 
+  meta:mandatory false ;
+  meta:userEditable true ;
+  meta:immutable false ;
+  meta:jsonName "name" .
+
 stArtboard:x a rdf:Property ;
   rdfs:range xsd:integer ;
   rdfs:domain core:stArtboard ;
-  rdfs:comment """Origin X position in pixels""" .   
-  
+  rdfs:comment """Origin X position in pixels""" 
+  meta:mandatory true ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "x" .
+
 stArtboard:y a rdf:Property ;
   rdfs:range xsd:integer ;
   rdfs:domain core:stArtboard ;
-  rdfs:comment """Origin Y position in pixels""" .   
-  
+  rdfs:comment """Origin Y position in pixels""" 
+  meta:mandatory true ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "y" .
+
 stArtboard:width a rdf:Property ;
   rdfs:range xsd:integer ;
   rdfs:domain core:stArtboard ;
-  rdfs:comment """Width of artboard in pixels""" .
+  rdfs:comment """Width of artboard in pixels""" 
+  meta:mandatory true ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "width" .
 
 stArtboard:height a rdf:Property ;
   rdfs:range xsd:integer ;
   rdfs:domain core:stArtboard ;
-  rdfs:comment """Height of artboard in pixels""" .
+  rdfs:comment """Height of artboard in pixels""" 
+  meta:mandatory true ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "height" .
+
+## auxiliary container type for defining an array of ProperName as per XMP spec
 
 core:ListOfProperNames a rdfs:Class ;
   rdfs:label "Ordered array of ProperName"@en ;

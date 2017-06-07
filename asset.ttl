@@ -393,37 +393,65 @@ xmp:Font a rdfs:Class ;
 stFnt:childFontFiles a rdf:Property ;
   rdfs:range core:ListOfString ;
   rdfs:domain xmp:Font ;
-  rdfs:comment """The list of file names for the fonts that make up a composite font.""" .
-  
+  rdfs:comment """The list of file names for the fonts that make up a composite font.""" 
+  meta:mandatory false ;
+  meta:userEditable false ;
+  meta:immutable true ;
+  meta:jsonName "child_font_files" .
+
 stFnt:composite a rdf:Property ;
   rdfs:range xsd:boolean ;
   rdfs:domain xmp:Font ;
-  rdfs:comment """When true, this is a composite font.""" .
-  
+  rdfs:comment """When true, this is a composite font.""" 
+  meta:mandatory false ;
+  meta:userEditable false ;
+  meta:immutable true ;  
+  meta:jsonName "composite" .
+
 stFnt:fontFace a rdf:Property ;
   rdfs:range xmp:Text ;
   rdfs:domain xmp:Font ;
-  rdfs:comment """The font face name.""" .  
-  
+  rdfs:comment """The font face name.""" 
+  meta:mandatory false ;
+  meta:userEditable false ;
+  meta:immutable true ;  
+  meta:jsonName "font_face" .
+
 stFnt:fontFamily a rdf:Property ;
   rdfs:range xmp:Text ;
   rdfs:domain xmp:Font ;
-  rdfs:comment """The font family name.""" .    
+  rdfs:comment """The font family name.""" 
+  meta:mandatory false ;
+  meta:userEditable false ;
+  meta:immutable true ;  
+  meta:jsonName "font_family" .
   
 stFnt:fontFileName a rdf:Property ;
   rdfs:range xsd:string ;
   rdfs:domain xmp:Font ;
-  rdfs:comment """The font file name (not a complete path).""" .     
+  rdfs:comment """The font file name (not a complete path)."""   
+  meta:mandatory false ;
+  meta:userEditable false ;
+  meta:immutable true ;  
+  meta:jsonName "font_file_name" .
 
 stFnt:fontName a rdf:Property ;
   rdfs:range xmp:Text ;
   rdfs:domain xmp:Font ;
-  rdfs:comment """PostScript® name of the font.""" .    
+  rdfs:comment """PostScript® name of the font."""
+  meta:mandatory true ;
+  meta:userEditable false ;
+  meta:immutable true ;  
+  meta:jsonName "font_name" .
   
 stFnt:fontType a rdf:Property ;
   rdfs:range xmp:Text ;
   rdfs:domain xmp:Font ;
-  rdfs:comment """The font type, such as TrueType, Type 1, Open Type, and so on.""" .     
+  rdfs:comment """The font type, such as TrueType, Type 1, Open Type, and so on."""    
+  meta:mandatory true ;
+  meta:userEditable false ;
+  meta:immutable true ;  
+  meta:jsonName "font_type" .
 
 stFnt:versionString a rdf:Property ;
   rdfs:range xsd:string ;
@@ -433,7 +461,11 @@ stFnt:versionString a rdf:Property ;
   -nameId 5 for Apple True Type and OpenType
   -CIDFontVersion for CID fonts
   -The empty string for bitmap fonts
-  The Adobe CoolType font engine allows two fonts with the same PostScript name and different technologies to be used at the same time, but not if they are from different versions. So even without this data for a given document you will have unique font data. However,the version can tell you if the font has changed metrics, glyph forms or other important information. This is useful for comparing fonts in two documents or fonts in a document to those in your system.""" .    
+  The Adobe CoolType font engine allows two fonts with the same PostScript name and different technologies to be used at the same time, but not if they are from different versions. So even without this data for a given document you will have unique font data. However,the version can tell you if the font has changed metrics, glyph forms or other important information. This is useful for comparing fonts in two documents or fonts in a document to those in your system.""" 
+  meta:mandatory false ;
+  meta:userEditable false ;
+  meta:immutable true ;  
+  meta:jsonName "version_string" .
 
 ## auxiliary container type for defining an array of ProperName as per XMP spec
 

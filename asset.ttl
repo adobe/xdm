@@ -34,6 +34,7 @@
 @prefix plus: <http://ns.useplus.org/ldf/xmp/1.0/> .
 @prefix cc:  <http://creativecommons.org/ns#> .
 @prefix stEvt: <http://ns.adobe.com/xap/1.0/sType/ResourceEvent#> .
+@prefix stFnt: <http:ns.adobe.com/xap/1.0/sType/Font#> .
 
 <http://ns.adobe.com/adobecloud/core/1.0/> a owl:Ontology ;
   dc:title "Adobe Cloud Core Asset Data Model" ;
@@ -381,6 +382,58 @@ stEvt:when a rdf:Property ;
   rdfs:range xsd:dateTime ;
   rdfs:domain xmp:ResourceEvent ;
   rdfs:comment """Timestamp of when the action occurred.For events that create or write to a file, this should be the approximate modification time of the file.""" .
+  
+## structure for defining Font
+
+xmp:Font a rdfs:Class ;
+  rdfs:label "Font class"@en ;
+  rdfs:comment """Structure containing the characteristics of a font used in a document.""" ;
+  rdfs:subClassOf rdfs:Resource .
+  
+stFnt:childFontFiles a rdf:Property ;
+  rdfs:range core:ListOfString ;
+  rdfs:domain xmp:Font ;
+  rdfs:comment """The list of file names for the fonts that make up a composite font.""" .
+  
+stFnt:composite a rdf:Property ;
+  rdfs:range xsd:boolean ;
+  rdfs:domain xmp:Font ;
+  rdfs:comment """When true, this is a composite font.""" .
+  
+stFnt:fontFace a rdf:Property ;
+  rdfs:range xmp:Text ;
+  rdfs:domain xmp:Font ;
+  rdfs:comment """The font face name.""" .  
+  
+stFnt:fontFamily a rdf:Property ;
+  rdfs:range xmp:Text ;
+  rdfs:domain xmp:Font ;
+  rdfs:comment """The font family name.""" .    
+  
+stFnt:fontFileName a rdf:Property ;
+  rdfs:range xsd:string ;
+  rdfs:domain xmp:Font ;
+  rdfs:comment """The font file name (not a complete path).""" .     
+
+stFnt:fontName a rdf:Property ;
+  rdfs:range xmp:Text ;
+  rdfs:domain xmp:Font ;
+  rdfs:comment """PostScript® name of the font.""" .    
+  
+stFnt:fontType a rdf:Property ;
+  rdfs:range xmp:Text ;
+  rdfs:domain xmp:Font ;
+  rdfs:comment """The font type, such as TrueType, Type 1, Open Type, and so on.""" .     
+
+stFnt:versionString a rdf:Property ;
+  rdfs:range xsd:string ;
+  rdfs:domain xmp:Font ;
+  rdfs:comment """The version string: 
+  -version for Type1 fonts
+  -nameId 5 for Apple True Type and OpenType
+  -CIDFontVersion for CID fonts
+  -The empty string for bitmap fonts
+  The Adobe CoolType font engine allows two fonts with the same PostScript name and different technologies to be used at the same time, but not if they are from different versions. So even without this data for a given document you will have unique font data. However,the version can tell you if the font has changed metrics, glyph forms or other important information. This is useful for comparing fonts in two documents or fonts in a document to those in your system.""" .    
 
 ## auxiliary container type for defining an array of ProperName as per XMP spec
 
@@ -398,6 +451,23 @@ core:ListOfProperNames a rdfs:Class ;
     owl:allValuesFrom core:ListOfProperNames ;
   ] ;
   rdfs:subClassOf rdf:List .
+  
+## auxiliary container type for defining an array of xsd:string
+
+core:ListOfString a rdfs:Class ;
+  rdfs:label "Ordered array of String"@en ;
+  rdfs:comment "Ordered array of String" ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty rdf:first ;
+    owl:allValuesFrom xsd:string ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty rdf:rest ;
+    owl:allValuesFrom core:ListOfString ;
+  ] ;
+  rdfs:subClassOf rdf:List .  
 
 ## auxiliary container type for defining an array of AliasID
 
@@ -1094,3 +1164,21 @@ photoshop:ICCProfile a core:BaseProperty, owl:FunctionalProperty ;
   skos:note "" ;
   skos:example "" ;
   rdfs:domain core:Image .
+
+core:CCDoc a rdfs:Class ;
+  rdfs:label "CCDoc" ;
+  rdfs:comment "OneAdobe Cloud Documents Class, AI, ID, PSD, PDF, etc." ;
+  rdfs:subClassOf core:Asset .
+
+core:Fonts a core:BaseProperty, owl:FunctionalProperty ;
+  # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
+  rdfs:label "Fonts"@en ;
+  rdfs:comment """Unordered Array of Font structure""" ;
+  rdfs:range core:Font ;
+  meta:mandatory false ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "fonts" ;
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:CCDoc .

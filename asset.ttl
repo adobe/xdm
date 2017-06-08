@@ -512,6 +512,23 @@ core:ResourceEventList a rdfs:Class ;
   ] ;
   rdfs:subClassOf rdf:List .
 
+## auxiliary container type for defining an array of Artboard 
+
+core:ListOfArtboard a rdfs:Class ;
+  rdfs:label "Unordered array of Artboard"@en ;
+  rdfs:comment "Unordered array of core:Artboard" ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty rdf:first ;
+    owl:allValuesFrom core:Artboard ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty rdf:rest ;
+    owl:allValuesFrom core:ListOfArtboard ;
+  ] ;
+  rdfs:subClassOf rdf:List .
+
 # abstract base classes for schema classes and properties
 
 core:BaseClass a rdfs:Class ;
@@ -1168,7 +1185,7 @@ core:Artboards a core:BaseProperty, owl:FunctionalProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
   rdfs:label "Artboards"@en ;
   rdfs:comment """Unordered Array of Artboard structure""" ;
-  rdfs:range core:Artboard ;
+  rdfs:range core:ListOfArtboard ;
   meta:mandatory false ;
   meta:userEditable false ;
   meta:immutable false ;

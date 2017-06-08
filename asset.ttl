@@ -552,6 +552,23 @@ core:ResourceEventList a rdfs:Class ;
   ] ;
   rdfs:subClassOf rdf:List .
 
+## auxiliary container type for defining an array of xap:stFnt
+
+core:ListOfFont a rdfs:Class ;
+  rdfs:label "Unordered array of Font"@en ;
+  rdfs:comment "Unordered array of Font" ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty rdf:first ;
+    owl:allValuesFrom xmp:Font ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty rdf:rest ;
+    owl:allValuesFrom core:ListOfFont ;
+  ] ;
+  rdfs:subClassOf rdf:List .  
+
 # abstract base classes for schema classes and properties
 
 core:BaseClass a rdfs:Class ;
@@ -1197,6 +1214,8 @@ photoshop:ICCProfile a core:BaseProperty, owl:FunctionalProperty ;
   skos:example "" ;
   rdfs:domain core:Image .
 
+# core:CCDoc class for Creative Cloud documents
+
 core:CCDoc a rdfs:Class ;
   rdfs:label "CCDoc" ;
   rdfs:comment "OneAdobe Cloud Documents Class, AI, ID, PSD, PDF, etc." ;
@@ -1206,7 +1225,7 @@ core:Fonts a core:BaseProperty, owl:FunctionalProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
   rdfs:label "Fonts"@en ;
   rdfs:comment """Unordered Array of Font structure""" ;
-  rdfs:range core:Font ;
+  rdfs:range core:ListOfFont ;
   meta:mandatory false ;
   meta:userEditable false ;
   meta:immutable false ;

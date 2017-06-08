@@ -391,6 +391,15 @@ stEvt:when a rdf:Property ;
  +  rdfs:comment """Layer is used for document types in which a stack of layers is the top-level organizing principle. Photoshop documents are one such example. Layers are like stacked sheets. User can add transparency/opacity to see through transparent areas of a layer. They are used for compositing multiple images, adding text to an image, or adding vector graphic shapes. Users can also apply layer style to add a special effect such as a drop shadow or a glow. Structure denoting layer information in the document.""" ;
  +  rdfs:subClassOf rdfs:Resource .
  +  
+stLayer:type a rdf:Property ;
+ +  rdfs:range xsd:string ;
+ +  rdfs:domain core:stLayer ;
+ +  rdfs:comment """Closed choice of ("Layer", "LayerGroup") - will have "Layer" if stLayer structure is active.""";
+ +  meta:mandatory true ;
+ +  meta:userEditable false ;
+ +  meta:immutable true ;
+ +  meta:jsonName "type" .
+
  +stLayer:id a rdf:Property ;
  +  rdfs:range xsd:string ;
  +  rdfs:domain core:stLayer ;
@@ -462,6 +471,50 @@ stLayer:style a rdf:Property ;
  +  meta:userEditable false ;
  +  meta:immutable false ;
  +  meta:jsonName "height" .
+
++## structure for defining LayerGroup
+ +
+ +core:LayerGroup a rdfs:Class ;
+ +  rdfs:label "LayerGroup class"@en ;
+ +  rdfs:comment """Layer group helps in preserving the hierarchy of layers in a document. User can apply common style to the group instead of working at individual layers. Layer Group can contain layers/layer groups. A structure denoting layer group information in the document.""" ;
+ +  rdfs:subClassOf rdfs:Resource .
+ +  
+stLayerGroup:type a rdf:Property ;
+ +  rdfs:range xsd:string ;
+ +  rdfs:domain core:stLayerGroup ;
+ +  rdfs:comment """Closed choice of ("Layer", "LayerGroup") - will have "LayerGroup" if stLayerGroup structure is active.""";
+ +  meta:mandatory true ;
+ +  meta:userEditable false ;
+ +  meta:immutable true ;
+ +  meta:jsonName "type" .
+
+ +stLayerGroup:id a rdf:Property ;
+ +  rdfs:range xsd:string ;
+ +  rdfs:domain core:stLayerGroup ;
+ +  rdfs:comment """Unique ID of LayerGroup""";
+ +  meta:mandatory true ;
+ +  meta:userEditable false ;
+ +  meta:immutable true ;
+ +  meta:jsonName "id" .
+ +
+ +stLayerGroup:name a rdf:Property ;
+ +  rdfs:range xsd:string ;
+ +  rdfs:domain core:stLayerGroup ;
+ +  rdfs:comment """Name of LayerGroup""" 
+ +  meta:mandatory false ;
+ +  meta:userEditable true ;
+ +  meta:immutable false ;
+ +  meta:jsonName "name" .
+
+stLayerGroup:layers a rdf:Property ;
+ +  rdfs:range xsd:string ;
+ +  rdfs:domain core:stLayerGroup ;
+ +  rdfs:comment """List of layers/layer groups in a layer group""" 
+ +  meta:mandatory false ;
+ +  meta:userEditable true ;
+ +  meta:immutable false ;
+ +  meta:jsonName "layers" .
+
 
 ## auxiliary container type for defining an array of ProperName as per XMP spec
 

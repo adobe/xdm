@@ -408,23 +408,23 @@ stArtboard:name a rdf:Property ;
   meta:immutable false ;
   meta:jsonName "name" .
 
-stArtboard:x a rdf:Property ;
+stArtboard:originX a rdf:Property ;
   rdfs:range xsd:integer ;
   rdfs:domain core:stArtboard ;
   rdfs:comment """Origin X position in pixels - Base system is cartesian, relative to master page and origin in top,left (X increasing to right, Y increasing downwards)""" 
   meta:mandatory true ;
   meta:userEditable false ;
   meta:immutable false ;
-  meta:jsonName "x" .
+  meta:jsonName "origin_x" .
 
-stArtboard:y a rdf:Property ;
+stArtboard:originY a rdf:Property ;
   rdfs:range xsd:integer ;
   rdfs:domain core:stArtboard ;
   rdfs:comment """Origin Y position in pixels - Base system is cartesian, relative to master page and origin in top,left (X increasing to right, Y increasing downwards)""" 
   meta:mandatory true ;
   meta:userEditable false ;
   meta:immutable false ;
-  meta:jsonName "y" .
+  meta:jsonName "origin_y" .
 
 stArtboard:width a rdf:Property ;
   rdfs:range xsd:integer ;

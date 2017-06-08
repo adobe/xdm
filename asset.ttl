@@ -34,8 +34,8 @@
 @prefix plus: <http://ns.useplus.org/ldf/xmp/1.0/> .
 @prefix cc:  <http://creativecommons.org/ns#> .
 @prefix stEvt: <http://ns.adobe.com/xap/1.0/sType/ResourceEvent#> .
-@prefix stArtboard: <http://ns.adobe.com/core/1.0/sType/Layer#> .
-@prefix stArtboard: <http://ns.adobe.com/core/1.0/sType/LayerGroup#> .
+@prefix stLayer: <http://ns.adobe.com/core/1.0/sType/Layer#> .
+@prefix stLayerGroup: <http://ns.adobe.com/core/1.0/sType/LayerGroup#> .
 
 <http://ns.adobe.com/adobecloud/core/1.0/> a owl:Ontology ;
   dc:title "Adobe Cloud Core Asset Data Model" ;
@@ -393,7 +393,7 @@ stEvt:when a rdf:Property ;
  +  
 stLayer:type a rdf:Property ;
  +  rdfs:range xsd:string ;
- +  rdfs:domain core:stLayer ;
+ +  rdfs:domain core:Layer ;
  +  rdfs:comment """Closed choice of ("Layer", "LayerGroup") - will have "Layer" if stLayer structure is active.""";
  +  meta:mandatory true ;
  +  meta:userEditable false ;
@@ -402,7 +402,7 @@ stLayer:type a rdf:Property ;
 
  +stLayer:id a rdf:Property ;
  +  rdfs:range xsd:string ;
- +  rdfs:domain core:stLayer ;
+ +  rdfs:domain core:Layer ;
  +  rdfs:comment """Unique ID of Layer""";
  +  meta:mandatory true ;
  +  meta:userEditable false ;
@@ -411,7 +411,7 @@ stLayer:type a rdf:Property ;
  +
  +stLayer:name a rdf:Property ;
  +  rdfs:range xsd:string ;
- +  rdfs:domain core:stLayer ;
+ +  rdfs:domain core:Layer ;
  +  rdfs:comment """Name of Layer""" 
  +  meta:mandatory false ;
  +  meta:userEditable true ;
@@ -420,7 +420,7 @@ stLayer:type a rdf:Property ;
  +
   stLayer:visible a rdf:Property ;
  +  rdfs:range xsd:boolean ;
- +  rdfs:domain core:stLayer ;
+ +  rdfs:domain core:Layer ;
  +  rdfs:comment """Indicates if layer is visible in document. visible = true - Layer is visible and false - Layer is hidden (Visibility can be toggled by clicking "eye" icon in PS against each layer)""" 
  +  meta:mandatory true ;
  +  meta:userEditable true ;
@@ -429,7 +429,7 @@ stLayer:type a rdf:Property ;
 
 stLayer:style a rdf:Property ;
  +  rdfs:range xsd:string ;
- +  rdfs:domain core:stLayer ;
+ +  rdfs:domain core:Layer ;
  +  rdfs:comment """A layer style is one or more effects applied to a layer or layer group. You can apply one of the preset styles provided with Photoshop or create a custom style. Photoshop provides a variety of effects—such as shadows, glows, and bevels—that change the appearance of a layer’s contents in a non-distructive way. Layer effects are linked to the layer contents. When you move or edit the contents of the layer, the same effects are applied to the modified contents. For example, if you apply a drop shadow to a text layer and then add new text, the shadow is added automatically to the new text.""" 
  +  meta:mandatory false ;
  +  meta:userEditable true ;
@@ -438,7 +438,7 @@ stLayer:style a rdf:Property ;
 
 +stLayer:originX a rdf:Property ;
  +  rdfs:range xsd:integer ;
- +  rdfs:domain core:stLayer ;
+ +  rdfs:domain core:Layer ;
  +  rdfs:comment """Origin X position in pixels - Base system is cartesian, relative to master page and origin in top,left (X increasing to right, Y increasing downwards)""" 
  +  meta:mandatory true ;
  +  meta:userEditable false ;
@@ -447,7 +447,7 @@ stLayer:style a rdf:Property ;
  +
  +stLayer:originY a rdf:Property ;
  +  rdfs:range xsd:integer ;
- +  rdfs:domain core:stLayer ;
+ +  rdfs:domain core:Layer ;
  +  rdfs:comment """Origin Y position in pixels - Base system is cartesian, relative to master page and origin in top,left (X increasing to right, Y increasing downwards)""" 
  +  meta:mandatory true ;
  +  meta:userEditable false ;
@@ -456,7 +456,7 @@ stLayer:style a rdf:Property ;
  +
  +stLayer:width a rdf:Property ;
  +  rdfs:range xsd:integer ;
- +  rdfs:domain core:stLayer ;
+ +  rdfs:domain core:Layer ;
  +  rdfs:comment """Width of layer in pixels""" 
  +  meta:mandatory true ;
  +  meta:userEditable false ;
@@ -465,7 +465,7 @@ stLayer:style a rdf:Property ;
  +
  +stLayer:height a rdf:Property ;
  +  rdfs:range xsd:integer ;
- +  rdfs:domain core:stLayer ;
+ +  rdfs:domain core:Layer ;
  +  rdfs:comment """Height of layer in pixels""" 
  +  meta:mandatory true ;
  +  meta:userEditable false ;
@@ -481,7 +481,7 @@ stLayer:style a rdf:Property ;
  +  
 stLayerGroup:type a rdf:Property ;
  +  rdfs:range xsd:string ;
- +  rdfs:domain core:stLayerGroup ;
+ +  rdfs:domain core:LayerGroup ;
  +  rdfs:comment """Closed choice of ("Layer", "LayerGroup") - will have "LayerGroup" if stLayerGroup structure is active.""";
  +  meta:mandatory true ;
  +  meta:userEditable false ;
@@ -490,7 +490,7 @@ stLayerGroup:type a rdf:Property ;
 
  +stLayerGroup:id a rdf:Property ;
  +  rdfs:range xsd:string ;
- +  rdfs:domain core:stLayerGroup ;
+ +  rdfs:domain core:LayerGroup ;
  +  rdfs:comment """Unique ID of LayerGroup""";
  +  meta:mandatory true ;
  +  meta:userEditable false ;
@@ -499,7 +499,7 @@ stLayerGroup:type a rdf:Property ;
  +
  +stLayerGroup:name a rdf:Property ;
  +  rdfs:range xsd:string ;
- +  rdfs:domain core:stLayerGroup ;
+ +  rdfs:domain core:LayerGroup ;
  +  rdfs:comment """Name of LayerGroup""" 
  +  meta:mandatory false ;
  +  meta:userEditable true ;
@@ -508,7 +508,7 @@ stLayerGroup:type a rdf:Property ;
 
 stLayerGroup:layers a rdf:Property ;
  +  rdfs:range xsd:string ;
- +  rdfs:domain core:stLayerGroup ;
+ +  rdfs:domain core:LayerGroup ;
  +  rdfs:comment """List of layers/layer groups in a layer group""" 
  +  meta:mandatory false ;
  +  meta:userEditable true ;
@@ -583,6 +583,29 @@ core:ResourceEventList a rdfs:Class ;
     owl:allValuesFrom core:ResourceEventList ;
   ] ;
   rdfs:subClassOf rdf:List .
+
+## auxiliary container type for defining an array of Layer 
+
+core:ListOfLayer a rdfs:Class ;
+  rdfs:label "Ordered array of Layer/LayerGroup"@en ;
+  rdfs:comment "Ordered array of core:Layer/Core:LayerGroup" ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty rdf:first ;
+    # Not sure, what is the right way to use union to define collection of two different types - I'm trying to find this information
+    # will update it later
+    owl:unionOf rdf:parseType="Collection" ;
+    owl:class core:Layer ;
+    owl:class core:LayerGroup ;
+    #owl:allValuesFrom core:Layer ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty rdf:rest ;
+    owl:allValuesFrom core:ListOfLayer ;
+  ] ;
+  rdfs:subClassOf rdf:List .
+
 
 # abstract base classes for schema classes and properties
 
@@ -1239,9 +1262,9 @@ core:Layers a core:BaseProperty, owl:FunctionalProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
   rdfs:label "Layers"@en ;
   rdfs:comment """Ordered Array of Layer/LayerGroup structure""" ;
-  rdfs:range core:Layer ;
+  rdfs:range core:ListofLayer ;
   meta:mandatory false ;
-  meta:userEditable false ;
+  meta:userEditable true ;
   meta:immutable false ;
   meta:jsonName "layers" ;
   skos:note "" ;

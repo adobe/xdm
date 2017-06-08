@@ -34,6 +34,8 @@
 @prefix plus: <http://ns.useplus.org/ldf/xmp/1.0/> .
 @prefix cc:  <http://creativecommons.org/ns#> .
 @prefix stEvt: <http://ns.adobe.com/xap/1.0/sType/ResourceEvent#> .
+@prefix stArtboard: <http://ns.adobe.com/core/1.0/sType/Layer#> .
+@prefix stArtboard: <http://ns.adobe.com/core/1.0/sType/LayerGroup#> .
 
 <http://ns.adobe.com/adobecloud/core/1.0/> a owl:Ontology ;
   dc:title "Adobe Cloud Core Asset Data Model" ;
@@ -381,6 +383,85 @@ stEvt:when a rdf:Property ;
   rdfs:range xsd:dateTime ;
   rdfs:domain xmp:ResourceEvent ;
   rdfs:comment """Timestamp of when the action occurred.For events that create or write to a file, this should be the approximate modification time of the file.""" .
+
++## structure for defining Layer
+ +
+ +core:Layer a rdfs:Class ;
+ +  rdfs:label "Layer class"@en ;
+ +  rdfs:comment """Layer is used for document types in which a stack of layers is the top-level organizing principle. Photoshop documents are one such example. Layers are like stacked sheets. User can add transparency/opacity to see through transparent areas of a layer. They are used for compositing multiple images, adding text to an image, or adding vector graphic shapes. Users can also apply layer style to add a special effect such as a drop shadow or a glow. Structure denoting layer information in the document.""" ;
+ +  rdfs:subClassOf rdfs:Resource .
+ +  
+ +stLayer:id a rdf:Property ;
+ +  rdfs:range xsd:string ;
+ +  rdfs:domain core:stLayer ;
+ +  rdfs:comment """Unique ID of Layer""";
+ +  meta:mandatory true ;
+ +  meta:userEditable false ;
+ +  meta:immutable true ;
+ +  meta:jsonName "id" .
+ +
+ +stLayer:name a rdf:Property ;
+ +  rdfs:range xsd:string ;
+ +  rdfs:domain core:stLayer ;
+ +  rdfs:comment """Name of Layer""" 
+ +  meta:mandatory false ;
+ +  meta:userEditable true ;
+ +  meta:immutable false ;
+ +  meta:jsonName "name" .
+ +
+  stLayer:visible a rdf:Property ;
+ +  rdfs:range xsd:boolean ;
+ +  rdfs:domain core:stLayer ;
+ +  rdfs:comment """Indicates if layer is visible in document. visible = true - Layer is visible and false - Layer is hidden (Visibility can be toggled by clicking "eye" icon in PS against each layer)""" 
+ +  meta:mandatory true ;
+ +  meta:userEditable true ;
+ +  meta:immutable false ;
+ +  meta:jsonName "visible" .
+
+stLayer:style a rdf:Property ;
+ +  rdfs:range xsd:string ;
+ +  rdfs:domain core:stLayer ;
+ +  rdfs:comment """A layer style is one or more effects applied to a layer or layer group. You can apply one of the preset styles provided with Photoshop or create a custom style. Photoshop provides a variety of effects—such as shadows, glows, and bevels—that change the appearance of a layer’s contents in a non-distructive way. Layer effects are linked to the layer contents. When you move or edit the contents of the layer, the same effects are applied to the modified contents. For example, if you apply a drop shadow to a text layer and then add new text, the shadow is added automatically to the new text.""" 
+ +  meta:mandatory false ;
+ +  meta:userEditable true ;
+ +  meta:immutable false ;
+ +  meta:jsonName "style" .
+
++stLayer:originX a rdf:Property ;
+ +  rdfs:range xsd:integer ;
+ +  rdfs:domain core:stLayer ;
+ +  rdfs:comment """Origin X position in pixels - Base system is cartesian, relative to master page and origin in top,left (X increasing to right, Y increasing downwards)""" 
+ +  meta:mandatory true ;
+ +  meta:userEditable false ;
+ +  meta:immutable false ;
+ +  meta:jsonName "origin_x" .
+ +
+ +stLayer:originY a rdf:Property ;
+ +  rdfs:range xsd:integer ;
+ +  rdfs:domain core:stLayer ;
+ +  rdfs:comment """Origin Y position in pixels - Base system is cartesian, relative to master page and origin in top,left (X increasing to right, Y increasing downwards)""" 
+ +  meta:mandatory true ;
+ +  meta:userEditable false ;
+ +  meta:immutable false ;
+ +  meta:jsonName "origin_y" .
+ +
+ +stLayer:width a rdf:Property ;
+ +  rdfs:range xsd:integer ;
+ +  rdfs:domain core:stLayer ;
+ +  rdfs:comment """Width of layer in pixels""" 
+ +  meta:mandatory true ;
+ +  meta:userEditable false ;
+ +  meta:immutable false ;
+ +  meta:jsonName "width" .
+ +
+ +stLayer:height a rdf:Property ;
+ +  rdfs:range xsd:integer ;
+ +  rdfs:domain core:stLayer ;
+ +  rdfs:comment """Height of layer in pixels""" 
+ +  meta:mandatory true ;
+ +  meta:userEditable false ;
+ +  meta:immutable false ;
+ +  meta:jsonName "height" .
 
 ## auxiliary container type for defining an array of ProperName as per XMP spec
 

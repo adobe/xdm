@@ -1187,7 +1187,7 @@ core:Artboards a core:BaseProperty, owl:FunctionalProperty ;
   rdfs:comment """Unordered Array of Artboard structure""" ;
   rdfs:range core:ListOfArtboard ;
   meta:mandatory false ;
-  meta:userEditable false ;
+  meta:userEditable true ;
   meta:immutable false ;
   meta:jsonName "artboards" ;
   skos:note "" ;

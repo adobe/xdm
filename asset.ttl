@@ -1144,10 +1144,6 @@ photoshop:ColorMode a core:BaseProperty, owl:FunctionalProperty ;
   skos:example "" ;
   rdfs:domain core:Image .
 
-core:CCDoc a rdfs:Class ;
-  rdfs:label "CCDoc" ;
-  rdfs:comment "OneAdobe Cloud Documents Class, AI, ID, PSD, PDF, etc." ;
-  rdfs:subClassOf core:Asset .
 
 photoshop:ICCProfile a core:BaseProperty, owl:FunctionalProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
@@ -1161,6 +1157,12 @@ photoshop:ICCProfile a core:BaseProperty, owl:FunctionalProperty ;
   skos:note "" ;
   skos:example "" ;
   rdfs:domain core:Image .
+
+# core:CCDoc class for Creative cloud documents
+core:CCDoc a rdfs:Class ;
+  rdfs:label "CCDoc" ;
+  rdfs:comment "OneAdobe Cloud Documents Class, AI, ID, PSD, PDF, etc." ;
+  rdfs:subClassOf core:Asset .
 
 core:Artboards a core:BaseProperty, owl:FunctionalProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case

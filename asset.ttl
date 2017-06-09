@@ -387,13 +387,13 @@ stEvt:when a rdf:Property ;
 
 core:Artboard a rdfs:Class ;
   rdfs:label "Artboard class"@en ;
-  rdfs:comment """This property is used for document types in which a list of artboards is the top-level organizing principle. Illustartor and Xd documents are two such examples. Structure containing the characteristics of a Artboard used in a document.""" ;
+  rdfs:comment """This property is used for document types in which a list of artboards is the top-level organizing principle. Illustrator and Xd documents are two such examples. Structure containing the characteristics of a Artboard used in a document.""" ;
   rdfs:subClassOf rdfs:Resource .
   
 stArtboard:id a rdf:Property ;
   rdfs:range xsd:string ;
   rdfs:domain core:Artboard ;
-  rdfs:comment """Unique ID of Artboard""";
+  rdfs:comment """Unique ID of Artboard - This identifier will help in uniquely identifying artboards in a file""";
   meta:mandatory true ;
   meta:userEditable false ;
   meta:immutable true ;

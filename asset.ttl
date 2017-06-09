@@ -1176,10 +1176,10 @@ photoshop:ICCProfile a core:BaseProperty, owl:FunctionalProperty ;
   rdfs:domain core:Image .
 
 # core:CCDoc class for Creative cloud documents
-core:CCDoc a rdfs:Class ;
-  rdfs:label "CCDoc" ;
-  rdfs:comment "OneAdobe Cloud Documents Class, AI, ID, PSD, PDF, etc." ;
-  rdfs:subClassOf core:Asset .
+#core:CCDoc a rdfs:Class ;
+# rdfs:label "CCDoc" ;
+#  rdfs:comment "OneAdobe Cloud Documents Class, AI, ID, PSD, PDF, etc." ;
+#  rdfs:subClassOf core:Asset .
 
 core:Artboards a core:BaseProperty, owl:FunctionalProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
@@ -1192,4 +1192,4 @@ core:Artboards a core:BaseProperty, owl:FunctionalProperty ;
   meta:jsonName "artboards" ;
   skos:note "" ;
   skos:example "" ;
-  rdfs:domain core:CCDoc .
+  rdfs:domain core:Asset .

@@ -403,7 +403,7 @@ stLayer:type a rdf:Property ;
  +stLayer:id a rdf:Property ;
  +  rdfs:range xsd:string ;
  +  rdfs:domain core:Layer ;
- +  rdfs:comment """Unique ID of Layer""";
+ +  rdfs:comment """Unique ID of Layer in a file""";
  +  meta:mandatory true ;
  +  meta:userEditable false ;
  +  meta:immutable true ;
@@ -432,7 +432,7 @@ stLayer:style a rdf:Property ;
  +  rdfs:domain core:Layer ;
  +  rdfs:comment """A layer style is one or more effects applied to a layer or layer group. You can apply one of the preset styles provided with Photoshop or create a custom style. Photoshop provides a variety of effects—such as shadows, glows, and bevels—that change the appearance of a layer’s contents in a non-distructive way. Layer effects are linked to the layer contents. When you move or edit the contents of the layer, the same effects are applied to the modified contents. For example, if you apply a drop shadow to a text layer and then add new text, the shadow is added automatically to the new text.""" 
  +  meta:mandatory false ;
- +  meta:userEditable true ;
+ +  meta:userEditable false ;
  +  meta:immutable false ;
  +  meta:jsonName "style" .
 
@@ -491,7 +491,7 @@ stLayerGroup:type a rdf:Property ;
  +stLayerGroup:id a rdf:Property ;
  +  rdfs:range xsd:string ;
  +  rdfs:domain core:LayerGroup ;
- +  rdfs:comment """Unique ID of LayerGroup""";
+ +  rdfs:comment """Unique ID of LayerGroup in a file""";
  +  meta:mandatory true ;
  +  meta:userEditable false ;
  +  meta:immutable true ;
@@ -597,6 +597,8 @@ core:ListOfLayer a rdfs:Class ;
     owl:unionOf rdf:parseType="Collection" ;
     owl:class core:Layer ;
     owl:class core:LayerGroup ;
+    skos:note "Not sure, what is the right way to use union to define collection of two different types - I'm trying to find this information
+    # will update it later" ; 
     #owl:allValuesFrom core:Layer ;
   ] ;
   rdfs:subClassOf [
@@ -1253,10 +1255,10 @@ photoshop:ICCProfile a core:BaseProperty, owl:FunctionalProperty ;
   rdfs:domain core:Image .
 
 # core:CCDoc class for Creative cloud documents
-core:CCDoc a rdfs:Class ;
-  rdfs:label "CCDoc" ;
-  rdfs:comment "OneAdobe Cloud Documents Class, AI, ID, PSD, PDF, etc." ;
-  rdfs:subClassOf core:Asset .
+#core:CCDoc a rdfs:Class ;
+#  rdfs:label "CCDoc" ;
+#  rdfs:comment "OneAdobe Cloud Documents Class, AI, ID, PSD, PDF, etc." ;
+#  rdfs:subClassOf core:Asset .
 
 core:Layers a core:BaseProperty, owl:FunctionalProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
@@ -1269,4 +1271,4 @@ core:Layers a core:BaseProperty, owl:FunctionalProperty ;
   meta:jsonName "layers" ;
   skos:note "" ;
   skos:example "" ;
-  rdfs:domain core:CCDoc .
+  rdfs:domain core:Asset .

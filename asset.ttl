@@ -1113,7 +1113,7 @@ tiff:ImageWidth a core:BaseProperty, owl:FunctionalProperty ;
 tiff:ImageLength a core:BaseProperty, owl:FunctionalProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
   rdfs:label "Length"@en ;
-  rdfs:comment """Length in pixels.""" ;
+  rdfs:comment """Height in pixels. To maintain continuity with the XMP and TIFF standards, the height of an image or video is specified in the property `tiff:ImageLength`. The duration of the video (also commonly called length) is specified in the property `core:extent`. """ ;
   rdfs:range xsd:integer ;
   meta:mandatory false ;
   meta:userEditable false ;

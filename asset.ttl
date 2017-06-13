@@ -938,6 +938,18 @@ dc:description a core:BaseProperty, owl:FunctionalProperty ;
   skos:example "" ;
   rdfs:domain core:Asset .
 
+core:notSafe a core:BaseProperty, owl:FunctionalProperty ;
+  rdfs:label "NSFW state"@en ;
+  rdfs:comment "Indicates if the content is SFW (safe for work). Safe is value 0 or missing value. NSFW is value 1." ;
+  rdfs:range xsd:float ;
+  meta:mandatory false ;
+  meta:userEditable true ;
+  meta:immutable false ;
+  meta:jsonName "not_safe" ;
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Asset .
+
 dc:format a core:BaseProperty, owl:FunctionalProperty ;
   rdfs:label "Format"@en ;
   rdfs:comment """The physical or digital manifestation of the resource. Typically, Format may include the media-type or dimensions of the resource. Examples of dimensions include size and duration. Format may be used to determine the software, hardware or other equipment needed to display or operate the resource. Recommended best practice is to select a value from a controlled vocabulary (for example, the list of Internet Media Types [http://www.iana.org/ assignments/media-types/] defining computer media formats).""" ;

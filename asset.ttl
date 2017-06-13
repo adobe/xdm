@@ -944,8 +944,8 @@ dc:language a core:BaseProperty, owl:FunctionalProperty ;
   meta:userEditable false ;
   meta:immutable false ;
   meta:jsonName "type" ;
-  skos:note "XMP usage is a list of languages used in the content of the resource. " ;
-  skos:example "" ;
+  skos:note "XMP usage is a list of languages used in the content of the resource. Languages are specified in language code as defined in IETF RFC 3066. " ;
+  skos:example "pt-BR" ;
   rdfs:domain core:Asset .
 
 core:size a core:BaseProperty, owl:FunctionalProperty ;

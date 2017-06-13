@@ -430,6 +430,23 @@ core:ListOfAliasIDs a rdfs:Class ;
   ] ;
   rdfs:subClassOf rdf:List .
 
+## auxiliary container type for defining an array of Locales
+
+core:ListOfLocales a rdfs:Class ;
+  rdfs:label "Locales"@en ;
+  rdfs:comment "Unordered array of locales" ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty rdf:first ;
+    owl:allValuesFrom xml:lang ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty rdf:rest ;
+    owl:allValuesFrom core:ListOfLocales ;
+  ] ;
+  rdfs:subClassOf rdf:List .  
+
 ## auxiliary container type for defining an array of CopyrightOwnerDetail
 
 core:ListOfCopyrightOwners a rdfs:Class ;
@@ -931,6 +948,18 @@ dc:format a core:BaseProperty, owl:FunctionalProperty ;
   meta:jsonName "type" ;
   skos:note "XMP usage is a MIME type. Dimensions would be stored using a media-specific property, beyond the scope of this document." ;
   skos:example """“type”:“application/vnd.adobe.photoshop”""" ;
+  rdfs:domain core:Asset .
+
+dc:language a core:BaseProperty, owl:FunctionalProperty ;
+  rdfs:label "Language"@en ;
+  rdfs:comment """The language or languages of the resource.""" ;
+  rdfs:range core:ListOfLocales ;
+  meta:mandatory false ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "type" ;
+  skos:note "XMP usage is a list of languages used in the content of the resource. Languages are specified in language code as defined in IETF RFC 3066. " ;
+  skos:example "pt-BR" ;
   rdfs:domain core:Asset .
 
 core:size a core:BaseProperty, owl:FunctionalProperty ;

@@ -19,6 +19,7 @@
 @prefix core: <http://ns.adobe.com/adobecloud/core/1.0/> .
 @prefix meta: <http://ns.adobe.com/adobecloud/meta/1.0/> .
 @prefix xmpMM: <http://ns.adobe.com/xap/1.0/mm/> .
+@prefix xmpDM: <http://ns.adobe.com/xmp/1.0/DynamicMedia/> .
 @prefix xmpRights: <http://ns.adobe.com/xap/1.0/rights/> .
 @prefix xmp: <http://ns.adobe.com/xap/1.0/> .
 @prefix stDim: <http://ns.adobe.com/xap/1.0/sType/Dimensions#> .
@@ -1047,31 +1048,6 @@ tiff:Orientation a core:BaseProperty, owl:FunctionalProperty ;
   skos:example "" ;
   rdfs:domain core:Image .
 
-tiff:ImageWidth a core:BaseProperty, owl:FunctionalProperty ;
-  # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
-  rdfs:label "Image Width"@en ;
-  rdfs:comment """Image width in pixels.""" ;
-  rdfs:range xsd:integer ;
-  meta:mandatory false ;
-  meta:userEditable false ;
-  meta:immutable false ;
-  meta:jsonName "image_width" ;
-  skos:note "" ;
-  skos:example "" ;
-  rdfs:domain core:Image .
-
-tiff:ImageLength a core:BaseProperty, owl:FunctionalProperty ;
-  # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
-  rdfs:label "Image Length"@en ;
-  rdfs:comment """Image height in pixels.""" ;
-  rdfs:range xsd:integer ;
-  meta:mandatory false ;
-  meta:userEditable false ;
-  meta:immutable false ;
-  meta:jsonName "image_length" ;
-  skos:note "" ;
-  skos:example "" ;
-  rdfs:domain core:Image .
 
 tiff:XResolution a core:BaseProperty, owl:FunctionalProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
@@ -1157,3 +1133,79 @@ photoshop:ICCProfile a core:BaseProperty, owl:FunctionalProperty ;
   skos:note "" ;
   skos:example "" ;
   rdfs:domain core:Image .
+
+### Video class
+
+core:Video a rdfs:Class ;
+  rdfs:label "Video" ;
+  rdfs:comment "A digital recording of an image or set of images (such as a movie or animation), optionally accompanied by sound." ;
+  rdfs:subClassOf core:Asset .
+
+### Video properties
+
+core:extent a core:BaseProperty, owl:FunctionalProperty ;
+  rdfs:label "Extent"@en ;
+  rdfs:comment """The duration of the video in milliseconds.""" ;
+  rdfs:range xsd:integer ;
+  meta:mandatory false ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "extent" ;
+  skos:note "This property is inspired by `dc:extent`. However, `dc:extent` does not specify units. `core:extent` is always an integer and describes the duration in milliseconds." ;
+  skos:example "" ;
+  rdfs:domain core:Video .
+
+xmpDM:videoFrameRate a core:BaseProperty, owl:FunctionalProperty ;
+  rdfs:label "Frame Rate"@en ;
+  rdfs:comment """The video frame rate in frames per second (FPS). Predefined values include: 
+24
+NTSC
+PAL""" ;
+  rdfs:range xsd:float ;
+  meta:mandatory false ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "video_frame_rate" ;
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Video .
+
+### Properties that apply to Video and Images
+
+tiff:ImageWidth a core:BaseProperty, owl:FunctionalProperty ;
+  # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
+  rdfs:label "Width"@en ;
+  rdfs:comment """Width in pixels.""" ;
+  rdfs:range xsd:integer ;
+  meta:mandatory false ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "image_width" ;
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Image, core:Video .
+
+tiff:ImageLength a core:BaseProperty, owl:FunctionalProperty ;
+  # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
+  rdfs:label "Length"@en ;
+  rdfs:comment """Height in pixels. To maintain continuity with the XMP and TIFF standards, the height of an image or video is specified in the property `tiff:ImageLength`. The duration of the video (also commonly called length) is specified in the property `core:extent`. """ ;
+  rdfs:range xsd:integer ;
+  meta:mandatory false ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "image_length" ;
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Image, core:Video .  
+
+core:aspectRatio a core:BaseProperty, owl:FunctionalProperty ;
+  rdfs:label "Aspect Ratio"@en ;
+  rdfs:comment "Describes the proportional relationship between the width and the height. To determine the aspect ratio, divide width by height. Videos that have an aspect ratio smaller than one are in landscape format, videos that have an aspect ratio greater than one are in portrait format." ;
+  rdfs:range xsd:float ;
+  meta:mandatory false ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "aspect_ratio" ;
+  skos:note "See the definition in https://en.wikipedia.org/wiki/Aspect_ratio_(image)" ;
+  skos:example "" ;
+  rdfs:domain core:Image, core:Video .    

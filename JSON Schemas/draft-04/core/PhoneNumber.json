@@ -1,0 +1,57 @@
+{
+  "id": "core/PhoneNumber.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Phone Number",
+  "type": "object",
+  "description": "Information that allows the phone calling of a person. Typically an alphanumeric number, 1-222-333 4444 in North America, but can have a wide range of formats.",
+  "properties": {
+    "primary": {
+      "type": "boolean",
+      "description": "Primary phone number indicator."
+    },
+    "type": {
+      "type": "string",
+      "description": "The way the phone number relates to the person. e.g 'work' or 'personal'",
+      "enum": [
+        "personal",
+        "work",
+        "education"
+      ]
+    },
+    "number": {
+      "type": "string",
+      "description": "The phone number. Note the phone number is a string and may include meaningful characters such as brackets (), hyphens - or characters to indicate sub dialing identifiers like extensions x. E.g 1-353(0)18391111 or +613 9403600x1234."
+    },
+    "extension": {
+      "type": "string",
+      "description": "The internal dialing number used to call from a private exchange, operator or switchboard."
+    },
+    "status": {
+      "type": "string",
+      "description": "An indication as to the ability to use the phone number.",
+      "enum": [
+        "active",
+        "pendingVerification",
+        "blacklisted",
+        "blocked"
+      ]
+    },
+    "statusReason": {
+      "type": "string",
+      "description": "A description of the current status."
+    },
+    "validity": {
+      "type": "string",
+      "description": "A level of technical correctness of the phone number.",
+      "enum": [
+        "consistent",
+        "inconsistent",
+        "incomplete",
+        "successfullyUsed"
+      ]
+    },
+    "audit": {
+      "$ref": "core/AuditTrail.json"
+    }
+  }
+}

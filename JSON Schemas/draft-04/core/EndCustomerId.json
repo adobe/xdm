@@ -1,0 +1,17 @@
+{
+  "id": "core/EndCustomerId.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "End customer id",
+  "type": "object",
+  "description": "Condensed, normalized (mcId is not a separate thing) encapsulation of an end-customer identifier and the DataSource that defines what that identifier is.  The term EndCustomer comes from the XDM: https://wiki.corp.adobe.com/display/marketingcloud/EndCustomer",
+  "properties": {
+    "datasource": {
+      "$ref": "core/DataSource.json",
+      "description": "A generic placeholder for data source info."
+    },
+    "uid": {
+      "type": "string",
+      "description": "Unique identifier of customer"
+    }
+  }
+}

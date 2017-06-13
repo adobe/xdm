@@ -1,0 +1,59 @@
+{
+  "id": "core/Geo.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Geo",
+  "type": "object",
+  "description": "The geographic location where an event was observed.\n",
+  "properties": {
+    "countryCode": {
+      "type": "string",
+      "description": "The two-character ISO 3166-1 alpha code for the country.\nSee https://en.wikipedia.org/wiki/ISO_3166-1\n"
+    },
+    "regionCode": {
+      "type": "string",
+      "description": "String up to three characters long contain the subdivision portion\nof the ISO 3166-2code.\n"
+    },
+    "stateProvince": {
+      "type": "string",
+      "description": "The state, or province portion of the observation."
+    },
+    "city": {
+      "type": "string",
+      "description": "The name of the city.\n"
+    },
+    "postalCode": {
+      "type": "string",
+      "description": "The postal code of the location. Postal codes are not available for\nall countries. In some countries, this will only contain part of\nthe postal code.\n"
+    },
+    "metroCode": {
+      "type": "integer",
+      "description": "The metro code of the location if the location is in the US.\nSee Google AdWords API metro codes.\n"
+    },
+    "mmLocationId": {
+      "type": "integer",
+      "description": "A numeric identifier (location ID) that is obtained from\nMaxmind’s GeoIP package that represents the Geo.\nSee GeoIPCity-134-Location.csv.\n"
+    },
+    "dmaId": {
+      "type": "integer",
+      "description": "Geo DMA.\n"
+    },
+    "msaId": {
+      "type": "integer",
+      "description": "The metro survey area where the observation occurred."
+    },
+    "latitude": {
+      "type": "number",
+      "description": "Geo latitude\n",
+      "format": "int32"
+    },
+    "longiitude": {
+      "type": "number",
+      "description": "Geo longitude\n",
+      "format": "int32"
+    },
+    "geographicRegion": {
+      "type": "string",
+      "description": "The name of a group of countries either by pure geographic designation as per\n[http://www.itu.int/ITU-D/ict/definitions/regions/index.html](http://www.itu.int/ITU-D/ict/definitions/regions/index.html),\nor common market designation (EMEA, EMEIA).\n"
+    }
+  }
+}

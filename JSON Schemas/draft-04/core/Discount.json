@@ -1,0 +1,17 @@
+{
+  "id": "core/Discount.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Discount",
+  "type": "object",
+  "description": "Discount for the purchase.",
+  "properties": {
+    "code": {
+      "type": "string",
+      "description": "The description of the discountValue attribute. e.g percentage, currency, 3for2 etc. Can be enumerated, custom values allowed."
+    },
+    "value": {
+      "type": "number",
+      "description": "If the discount code indicates a percentage or similar formulaic value, it is represented here, can be percentage or currency amount."
+    }
+  }
+}

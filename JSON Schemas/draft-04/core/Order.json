@@ -1,0 +1,64 @@
+{
+  "id": "core/Order.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Order",
+  "type": "object",
+  "description": "Order placed for one or more products.",
+  "properties": {
+    "purchaseId": {
+      "type": "string",
+      "description": "Unique seller's identifier for this purchase or contract. Wher there are multiple orders with duplicate purchase IDs the first order takes precedence and all other orders are ignored as they are assumed duplicates, this behavior is similar to the Adobe Analytics."
+    },
+    "purchaseOrderNumber": {
+      "type": "string",
+      "description": "Unique purchaser’s identifier for this purchase or contract. The purchaser's accounting systems and processes may issue a tracking number that the purchasing organization uses to track the order."
+    },
+    "paymentType": {
+      "type": "string",
+      "description": "The method of payment for this order. Enumerated, custom values allowed."
+    },
+    "deliveryType": {
+      "type": "string",
+      "description": "The physical delivery method for this order. Enumerated, custom values allowed"
+    },
+    "type": {
+      "type": "string",
+      "description": "Information about the nature of the order, is it to be delivered to the purchaser, a third party as a gift etc. Enumerated, custom values allowed."
+    },
+    "currency": {
+      "type": "string",
+      "description": "The currency in which the amount is denominated."
+    },
+    "currencyExchangeRate": {
+      "type": "number",
+      "description": "The exchange rate for a single unit of the sellers default accounting currency to the orders currency. The exchange rate is set at the time the order as per the sellers accounting policies, and does not change."
+    },
+    "basePriceTotal": {
+      "type": "number",
+      "description": "The number of units the customer has indicated they require."
+    },
+    "discount": {
+      "type": "array",
+      "description": "Discount for the purchase.",
+      "items": {
+        "$ref": "core/Discount.json"
+      }
+    },
+    "deliveryTotal": {
+      "type": "number",
+      "description": "The sum of deliver costs payable by the customer as part of the order."
+    },
+    "taxTotal": {
+      "type": "number",
+      "description": "The sum of all taxAmount amounts."
+    },
+    "orderTotal": {
+      "type": "number",
+      "description": "The sum of all basePriceTotal, deliveryTotal and taxesTotal,\nless discountTotal. It is equivalent to the SAP NetValue.\n"
+    },
+    "orderQuantityTotal": {
+      "type": "number",
+      "description": "The total number of units in the order. The sum of all productListItem.quantity.\n"
+    }
+  }
+}

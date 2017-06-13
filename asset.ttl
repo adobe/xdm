@@ -1082,7 +1082,7 @@ core:extent a core:BaseProperty, owl:FunctionalProperty ;
 
 xmpDM:videoFrameRate a core:BaseProperty, owl:FunctionalProperty ;
   rdfs:label "Frame Rate"@en ;
-  rdfs:comment """The video frame rate. Predefined values include: 
+  rdfs:comment """The video frame rate in frames per second (FPS). Predefined values include: 
 24
 NTSC
 PAL""" ;

@@ -35,6 +35,8 @@
 @prefix plus: <http://ns.useplus.org/ldf/xmp/1.0/> .
 @prefix cc:  <http://creativecommons.org/ns#> .
 @prefix stEvt: <http://ns.adobe.com/xap/1.0/sType/ResourceEvent#> .
+@prefix exif: <http://ns.adobe.com/exif/1.0/#> .
+
 
 <http://ns.adobe.com/adobecloud/core/1.0/> a owl:Ontology ;
   dc:title "Adobe Cloud Core Asset Data Model" ;
@@ -135,7 +137,7 @@ xml:lang a rdfs:Datatype ;
 xmp:Text a rdfs:Datatype ;
   rdfs:label "Text"@en ;
   owl:onDatatype xsd:string ;
-  rdfs:comment """A possibly empty Unicode string""" .  
+  rdfs:comment """A possibly empty Unicode string""" .
 
 xmp:MIMEType a rdfs:Datatype ;
   rdfs:label "MIMEType"@en ;
@@ -166,7 +168,7 @@ xmp:ProperName a rdfs:Datatype ;
 core:URI a rdfs:Datatype ;
   rdfs:label "URI"@en ;
   owl:onDatatype xsd:string ;
-  rdfs:comment """A string representing URI""" .
+  rdfs:comment """A string representing URI as defined in IETF RFC 3986.""" .
 
 tiff:OrientationMode a rdfs:Datatype ;
   rdfs:label "Closed choice of integer."@en ;
@@ -209,6 +211,17 @@ photoshop:ColorModeChoice  a rdfs:Datatype ;
       xsd:pattern "^[0-9]?$"
     ]
   ) .
+
+exif:GPSCoordinate a rdfs:Datatype ;
+  rdfs:label "GPS Coordinate"@en ;
+  owl:onDatatype xsd:string ;
+  rdfs:comment """A Text value in the form “DDD,MM,SSk” or “DDD,MM.mmk”, where:
+* DDD is a number of degrees
+* MM is a number of minutes
+* SS is a number of seconds
+* mm is a fraction of minutes
+* k is a single character N, S, E, or W indicating a direction (north, south, east, west)
+Leading zeros are not necessary for the for DDD, MM, and SS values. The DDD,MM.mmk form should be used when any of the native Exif component rational values has a denominator other than 1. There can be any number of fractional digits.""" .
 
 # structures and auxiliary types/constructs
 
@@ -542,7 +555,7 @@ core:assetName a core:BaseProperty, owl:FunctionalProperty ;
   meta:mandatory false ;
   meta:userEditable true ;
   meta:immutable false ;
-  meta:jsonName "asset_name" ;
+  meta:jsonName "name" ;
   skos:note "" ;
   skos:example "" ;
   rdfs:domain core:Asset .
@@ -917,7 +930,7 @@ dc:format a core:BaseProperty, owl:FunctionalProperty ;
   meta:immutable false ;
   meta:jsonName "type" ;
   skos:note "XMP usage is a MIME type. Dimensions would be stored using a media-specific property, beyond the scope of this document." ;
-  skos:example """“media_type”:“application/vnd.adobe.photoshop”""" ;
+  skos:example """“type”:“application/vnd.adobe.photoshop”""" ;
   rdfs:domain core:Asset .
 
 core:size a core:BaseProperty, owl:FunctionalProperty ;
@@ -934,7 +947,7 @@ core:size a core:BaseProperty, owl:FunctionalProperty ;
 
 core:path a core:BaseProperty, owl:FunctionalProperty ;
   rdfs:label "Path"@en ;
-  rdfs:comment """Shows the hierarchy of the asset.The last entry of the path will not be the asset but it will be the parent of the asset. The path semantics should be same as that defined in https://tools.ietf.org/html/rfc3986#section-3.3. In case a repository is not path based then it can return the information which will help in browsing. It could be just an asset id, or something like {catalog}/{id} in case of OZ.""" ;
+  rdfs:comment """Shows the hierarchy of the asset. The path semantics should be same as that defined in https://tools.ietf.org/html/rfc3986#section-3.3. In case a repository is not path based then it can return the information which will help in browsing. It could be just an asset id, or something like {catalog}/{id} in case of OZ.""" ;
   rdfs:range xsd:string ;
   meta:mandatory true ;
   meta:userEditable false ;
@@ -952,6 +965,56 @@ core:etag a core:BaseProperty, owl:FunctionalProperty ;
   meta:userEditable false ;
   meta:immutable false ;
   meta:jsonName "etag" ;
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Asset .
+
+exif:GPSAltitude a core:BaseProperty, owl:FunctionalProperty ;
+  rdfs:label "GPS Altitude"@en ;
+  rdfs:comment """GPS tag 6, 0x06. Indicates altitude in meters.""" ;
+  rdfs:range xsd:float ;
+  meta:mandatory false ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "gps_altitude" ;
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Asset .
+
+exif:GPSAltitudeRef a core:BaseProperty, owl:FunctionalProperty ;
+  rdfs:label "GPS Altitude Ref"@en ;
+  rdfs:comment """GPS tag 5, 0x5. Indicates whether the altitude is above or below sea level:
+0 = Above sea level
+1 = Below sea level""" ;
+  rdfs:range xsd:integer ;
+  meta:mandatory false ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "gps_altitude_ref" ;
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Asset .
+
+exif:GPSLatitude a core:BaseProperty, owl:FunctionalProperty ;
+  rdfs:label "GPS Latitude"@en ;
+  rdfs:comment """GPS tag 2, 0x02 (position) and 1, 0x01 (North/South). Indicates latitude.""" ;
+  rdfs:range exif:GPSCoordinate ;
+  meta:mandatory false ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "gps_latitude" ;
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Asset .
+
+exif:GPSLongitude a core:BaseProperty, owl:FunctionalProperty ;
+  rdfs:label "GPS Longitude"@en ;
+  rdfs:comment """GPS tag 4, 0x04 (position) and 3, 0x03 (East/West). Indicates longitude.""" ;
+  rdfs:range exif:GPSCoordinate ;
+  meta:mandatory false ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "gps_longitude" ;
   skos:note "" ;
   skos:example "" ;
   rdfs:domain core:Asset .
@@ -1026,6 +1089,18 @@ tiff:ResolutionUnit a core:BaseProperty, owl:FunctionalProperty ;
   skos:example "" ;
   rdfs:domain core:Image .
 
+core:numberOfPixels a core:BaseProperty, owl:FunctionalProperty ;
+  rdfs:label "Number of Pixels"@en ;
+  rdfs:comment "Total number of pixels" ;
+  rdfs:range xsd:integer ;
+  meta:mandatory false ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "numberOfPixels" ;
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Image .
+
 photoshop:ColorMode a core:BaseProperty, owl:FunctionalProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
   rdfs:label "ColorMode"@en ;
@@ -1063,26 +1138,26 @@ photoshop:ICCProfile a core:BaseProperty, owl:FunctionalProperty ;
 
 core:Video a rdfs:Class ;
   rdfs:label "Video" ;
-  rdfs:comment "The Video class is for video assets, i.e. assets that consist of moving pictures and sound." ;
+  rdfs:comment "The Video class is for video assets, i.e. assets that consist of moving pictures and, optionally, sound." ;
   rdfs:subClassOf core:Asset .
 
 ### Video properties
 
 core:extent a core:BaseProperty, owl:FunctionalProperty ;
   rdfs:label "Extent"@en ;
-  rdfs:comment """The duration of the resource in milliseconds.""" ;
+  rdfs:comment """The duration of the video in milliseconds.""" ;
   rdfs:range xsd:integer ;
   meta:mandatory false ;
   meta:userEditable false ;
   meta:immutable false ;
   meta:jsonName "extent" ;
-  skos:note "This property is inspired by dc:extent. However, dc:extent does not specify units. core:extent is always an integer and describes the duration in milliseconds." ;
+  skos:note "This property is inspired by `dc:extent`. However, `dc:extent` does not specify units. `core:extent` is always an integer and describes the duration in milliseconds." ;
   skos:example "" ;
   rdfs:domain core:Video .
 
 xmpDM:videoFrameRate a core:BaseProperty, owl:FunctionalProperty ;
   rdfs:label "Frame Rate"@en ;
-  rdfs:comment """The video frame rate. Predefined values include: 
+  rdfs:comment """The video frame rate in frames per second (FPS). Predefined values include: 
 24
 NTSC
 PAL""" ;
@@ -1116,7 +1191,7 @@ tiff:ImageWidth a core:BaseProperty, owl:FunctionalProperty ;
 tiff:ImageLength a core:BaseProperty, owl:FunctionalProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
   rdfs:label "Length"@en ;
-  rdfs:comment """Length in pixels.""" ;
+  rdfs:comment """Height in pixels. To maintain continuity with the XMP and TIFF standards, the height of an image or video is specified in the property `tiff:ImageLength`. The duration of the video (also commonly called length) is specified in the property `core:extent`. """ ;
   rdfs:range xsd:integer ;
   meta:mandatory false ;
   meta:userEditable false ;
@@ -1125,3 +1200,15 @@ tiff:ImageLength a core:BaseProperty, owl:FunctionalProperty ;
   skos:note "" ;
   skos:example "" ;
   rdfs:domain core:Image, core:Video .  
+
+core:aspectRatio a core:BaseProperty, owl:FunctionalProperty ;
+  rdfs:label "Aspect Ratio"@en ;
+  rdfs:comment "Describes the proportional relationship between the width and the height. To determine the aspect ratio, divide width by height. Videos that have an aspect ratio smaller than one are in landscape format, videos that have an aspect ratio greater than one are in portrait format." ;
+  rdfs:range xsd:float ;
+  meta:mandatory false ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "aspect_ratio" ;
+  skos:note "See the definition in https://en.wikipedia.org/wiki/Aspect_ratio_(image)" ;
+  skos:example "" ;
+  rdfs:domain core:Image, core:Video .    

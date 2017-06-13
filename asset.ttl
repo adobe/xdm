@@ -1063,7 +1063,7 @@ photoshop:ICCProfile a core:BaseProperty, owl:FunctionalProperty ;
 
 core:Video a rdfs:Class ;
   rdfs:label "Video" ;
-  rdfs:comment "OneAdobe Cloud Video Class" ;
+  rdfs:comment "A digital recording of an image or set of images (such as a movie or animation), optionally accompanied by sound." ;
   rdfs:subClassOf core:Asset .
 
 ### Video properties

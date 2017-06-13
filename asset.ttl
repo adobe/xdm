@@ -1125,7 +1125,7 @@ tiff:ImageLength a core:BaseProperty, owl:FunctionalProperty ;
 
 core:aspectRatio a core:BaseProperty, owl:FunctionalProperty ;
   rdfs:label "Aspect Ratio"@en ;
-  rdfs:comment "Describes the proportional relationship between the width and the height" ;
+  rdfs:comment "Describes the proportional relationship between the width and the height. To determine the aspect ratio, divide width by height. Videos that have an aspect ratio smaller than one are in landscape format, videos that have an aspect ratio greater than one are in portrait format." ;
   rdfs:range xsd:float ;
   meta:mandatory false ;
   meta:userEditable false ;

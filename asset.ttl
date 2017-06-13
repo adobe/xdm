@@ -938,7 +938,7 @@ dc:format a core:BaseProperty, owl:FunctionalProperty ;
 
 dc:language a core:BaseProperty, owl:FunctionalProperty ;
   rdfs:label "Language"@en ;
-  rdfs:comment """A language of the resource.""" ;
+  rdfs:comment """The language or languages of the resource.""" ;
   rdfs:range core:ListOfLocales ;
   meta:mandatory false ;
   meta:userEditable false ;

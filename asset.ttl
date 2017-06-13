@@ -1060,6 +1060,20 @@ exif:GPSLongitude a core:BaseProperty, owl:FunctionalProperty ;
   skos:example "" ;
   rdfs:domain core:Asset .
 
+
+xmp:Rating a core:BaseProperty, owl:FunctionalProperty ;
+   rdfs:label "Rating"@en ;
+   rdfs:comment """A user-assigned rating for this file. The value shall be -1 or in the range [0..5], where -1 indicates “rejected” and 0 indicates “unrated”. If xmp:Rating is not present, a value of 0 should be assumed. NOTE: Anticipated usage is for a typical “star rating” UI, with the addition of a notion of rejection.""" ;
+   rdfs:range xsd:integer ;
+   meta:mandatory false ;
+   meta:userEditable false ;
+   meta:immutable false ;
+   meta:jsonName "rating" ;
+   skos:note "EDITORIAL NOTE: the range (data type) should be an enum. Due to the upcoming change to json-schema I took a short-cut and made it integer. We fix it after the migration" ;
+   skos:example "" ;
+   rdfs:domain core:Asset .
+ 
+
 ### Image class
 
 core:Image a rdfs:Class ;

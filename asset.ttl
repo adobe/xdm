@@ -441,7 +441,7 @@ stArtboard:height a rdf:Property ;
 stArtboard:unit a rdf:Property ;
   rdfs:range xsd:String ;
   rdfs:domain core:Artboard ;
-  rdfs:comment """Unit used for artboard coordinates (origingX, originY, width and height). For example: inch, mm, pixel, pica, point (default is pixels)""" 
+  rdfs:comment """Unit used for artboard coordinates (origingX, originY, width and height). For example: inch, mm, pixel, pica, point (default is pixels)""" ;
   meta:mandatory false ;
   meta:userEditable false ;
   meta:immutable false ;
@@ -519,7 +519,7 @@ core:ResourceEventList a rdfs:Class ;
 
 core:ArtboardSet a rdfs:Class ;
   rdfs:label "Unordered array of Artboard"@en ;
-  rdfs:comment "Unordered array of core:Artboard. A document can have multiple Artboards. ArtboardSet helps in getting access to all artboards used in a document" ;
+  rdfs:comment "Unordered array of core:Artboard. A document can have multiple Artboards. ArtboardSet helps in getting access to all artboards used in a document """ ;
   rdfs:subClassOf [
     a owl:Restriction ;
     owl:onProperty rdf:first ;

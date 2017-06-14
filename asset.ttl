@@ -423,7 +423,7 @@ stArtboard:originY a rdf:Property ;
 stArtboard:width a rdf:Property ;
   rdfs:range xsd:integer ;
   rdfs:domain core:Artboard ;
-  rdfs:comment """Width of artboard in pixels""" 
+  rdfs:comment """Width of artboard""" 
   meta:mandatory true ;
   meta:userEditable false ;
   meta:immutable false ;
@@ -432,7 +432,7 @@ stArtboard:width a rdf:Property ;
 stArtboard:height a rdf:Property ;
   rdfs:range xsd:integer ;
   rdfs:domain core:Artboard ;
-  rdfs:comment """Height of artboard in pixels""" 
+  rdfs:comment """Height of artboard""" 
   meta:mandatory true ;
   meta:userEditable false ;
   meta:immutable false ;

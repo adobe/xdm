@@ -515,7 +515,7 @@ core:ResourceEventList a rdfs:Class ;
   ] ;
   rdfs:subClassOf rdf:List .
 
-## auxiliary container type for defining an array of Artboard 
+## auxiliary container type for defining an Array of Artboards
 
 core:ArtboardSet a rdfs:Class ;
   rdfs:label "Unordered array of Artboard"@en ;

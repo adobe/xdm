@@ -1010,6 +1010,18 @@ core:etag a core:BaseProperty, owl:FunctionalProperty ;
   skos:example "" ;
   rdfs:domain core:Asset .
 
+core:numberOfPages a core:BaseProperty, owl:FunctionalProperty ;
+  rdfs:label "Number of pages"@en ;
+  rdfs:comment """Number of pages in the asset""" ;
+  rdfs:range xsd:integer ;
+  meta:mandatory false ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "number_of_pages" ;
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Asset .
+
 exif:GPSAltitude a core:BaseProperty, owl:FunctionalProperty ;
   rdfs:label "GPS Altitude"@en ;
   rdfs:comment """GPS tag 6, 0x06. Indicates altitude in meters.""" ;

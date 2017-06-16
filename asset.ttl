@@ -400,7 +400,7 @@ stEvt:when a rdf:Property ;
 
 core:Artboard a rdfs:Class ;
   rdfs:label "Artboard class"@en ;
-  rdfs:comment """Structure containing the characteristics of a Artboard used in a document. Artboard contains areas for your artwork that can be printed or exported. 
+  rdfs:comment """Structure containing the characteristics of an Artboard used in a document. An artboard contains areas of your artwork that can be printed or exported. 
   Documents created in Adobe Illustrator and Adobe XD can have multiple Artboards. 
   For Adobe Photoshop users, it's a special type of layer group which clips the contents of  contained elements to its boundaries. Objects outside Artboard area will not be visible
   For more details, refer to: https://helpx.adobe.com/illustrator/how-to/visual-dictionary-artboard.html""" ;
@@ -409,7 +409,7 @@ core:Artboard a rdfs:Class ;
 stArtboard:name a rdf:Property ;
   rdfs:range xsd:string ;
   rdfs:domain core:Artboard ;
-  rdfs:comment """Name of Artboard. This would be visible to the user and users can specify names that can help them uniquely identfiy different Artboards.""" ;
+  rdfs:comment """Name of the artboard. This would be visible to the user and users can specify names that can help them uniquely identfiy different Artboards.""" ;
   meta:mandatory false ;
   meta:userEditable true ;
   meta:immutable false ;
@@ -436,7 +436,7 @@ stArtboard:originY a rdf:Property ;
 stArtboard:width a rdf:Property ;
   rdfs:range xsd:integer ;
   rdfs:domain core:Artboard ;
-  rdfs:comment """Width of artboard""" 
+  rdfs:comment """Width of the artboard""" 
   meta:mandatory true ;
   meta:userEditable false ;
   meta:immutable false ;
@@ -445,7 +445,7 @@ stArtboard:width a rdf:Property ;
 stArtboard:height a rdf:Property ;
   rdfs:range xsd:integer ;
   rdfs:domain core:Artboard ;
-  rdfs:comment """Height of artboard""" 
+  rdfs:comment """Height of the artboard""" 
   meta:mandatory true ;
   meta:userEditable false ;
   meta:immutable false ;
@@ -454,7 +454,7 @@ stArtboard:height a rdf:Property ;
 stArtboard:unit a rdf:Property ;
   rdfs:range xsd:String ;
   rdfs:domain core:Artboard ;
-  rdfs:comment """Unit used for artboard coordinates (origingX, originY, width and height). For example: inch, mm, pixel, pica, point (default is pixels)""" ;
+  rdfs:comment """Unit used for artboard coordinates (originX, originY, width and height). For example: inch, mm, pixel, pica, point (default is pixels)""" ;
   meta:mandatory false ;
   meta:userEditable false ;
   meta:immutable false ;
@@ -548,8 +548,8 @@ core:ResourceEventList a rdfs:Class ;
 ## auxiliary container type for defining an Array of Artboards
 
 core:ArtboardSet a rdfs:Class ;
-  rdfs:label "Unordered array of Artboard"@en ;
-  rdfs:comment "Unordered array of core:Artboard. A document can have multiple Artboards. ArtboardSet helps in getting access to all artboards used in a document """ ;
+  rdfs:label "A set of Artboards"@en ;
+  rdfs:comment "An unordered set of artboards. ArtboardSet helps in getting access to all artboards used in a document """ ;
   rdfs:subClassOf [
     a owl:Restriction ;
     owl:onProperty rdf:first ;
@@ -1280,7 +1280,7 @@ photoshop:ICCProfile a core:BaseProperty, owl:FunctionalProperty ;
 core:Artboards a core:BaseProperty, owl:FunctionalProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
   rdfs:label "Artboards"@en ;
-  rdfs:comment """Unordered Array of Artboard structure used inside a document. A document can have multiple Artboards""" ;
+  rdfs:comment """Contains the artboards that are being used in the document. A document can have multiple artboards.""" ;
   rdfs:range core:ArtboardSet ;
   meta:mandatory false ;
   meta:userEditable true ;

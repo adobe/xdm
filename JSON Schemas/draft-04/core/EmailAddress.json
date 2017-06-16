@@ -1,0 +1,60 @@
+{
+  "id": "core/EmailAddress.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Email address",
+  "type": "object",
+  "description": "A standard e-mail address.",
+  "properties": {
+    "primary": {
+      "type": "boolean",
+      "description": "Primary email indicator."
+    },
+    "address": {
+      "type": "string",
+      "description": "The technical address, e.g 'name@domain.com' as commonly defined in RFC2822 and subsequent standards."
+    },
+    "label": {
+      "type": "string",
+      "description": "Additional display information that maybe available, e.g MS Outlook rich address controls display 'John Smith smithjr@company.uk', the 'John Smith' part is data that would be placed in the label."
+    },
+    "type": {
+      "type": "string",
+      "description": "The way the account relates to the person. e.g 'work' or 'personal'",
+      "enum": [
+        "personal",
+        "work",
+        "education"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "description": "An indication as to the ability to use the email address.",
+      "enum": [
+        "active",
+        "pendingVerification",
+        "blacklisted",
+        "blocked"
+      ]
+    },
+    "statusReason": {
+      "type": "string",
+      "description": "A description of the current status."
+    },
+    "validity": {
+      "type": "string",
+      "description": "A level of technical correctness of the email address.",
+      "enum": [
+        "consistent",
+        "inconsistent",
+        "incomplete",
+        "successfullyUsed"
+      ]
+    },
+    "audit": {
+      "$ref": "core/AuditTrail.json"
+    }
+  },
+  "required": [
+    "address"
+  ]
+}

@@ -19,6 +19,7 @@
 @prefix core: <http://ns.adobe.com/adobecloud/core/1.0/> .
 @prefix meta: <http://ns.adobe.com/adobecloud/meta/1.0/> .
 @prefix xmpMM: <http://ns.adobe.com/xap/1.0/mm/> .
+@prefix xmpDM: <http://ns.adobe.com/xmp/1.0/DynamicMedia/> .
 @prefix xmpRights: <http://ns.adobe.com/xap/1.0/rights/> .
 @prefix xmp: <http://ns.adobe.com/xap/1.0/> .
 @prefix stDim: <http://ns.adobe.com/xap/1.0/sType/Dimensions#> .
@@ -35,6 +36,7 @@
 @prefix cc:  <http://creativecommons.org/ns#> .
 @prefix stEvt: <http://ns.adobe.com/xap/1.0/sType/ResourceEvent#> .
 @prefix stArtboard: <http://ns.adobe.com/core/1.0/sType/Artboard#> .
+@prefix exif: <http://ns.adobe.com/exif/1.0/#> .
 
 <http://ns.adobe.com/adobecloud/core/1.0/> a owl:Ontology ;
   dc:title "Adobe Cloud Core Asset Data Model" ;
@@ -209,6 +211,17 @@ photoshop:ColorModeChoice  a rdfs:Datatype ;
       xsd:pattern "^[0-9]?$"
     ]
   ) .
+
+exif:GPSCoordinate a rdfs:Datatype ;
+  rdfs:label "GPS Coordinate"@en ;
+  owl:onDatatype xsd:string ;
+  rdfs:comment """A Text value in the form “DDD,MM,SSk” or “DDD,MM.mmk”, where:
+* DDD is a number of degrees
+* MM is a number of minutes
+* SS is a number of seconds
+* mm is a fraction of minutes
+* k is a single character N, S, E, or W indicating a direction (north, south, east, west)
+Leading zeros are not necessary for the for DDD, MM, and SS values. The DDD,MM.mmk form should be used when any of the native Exif component rational values has a denominator other than 1. There can be any number of fractional digits.""" .
 
 # structures and auxiliary types/constructs
 
@@ -481,6 +494,23 @@ core:ListOfAliasIDs a rdfs:Class ;
   ] ;
   rdfs:subClassOf rdf:List .
 
+## auxiliary container type for defining an array of Locales
+
+core:ListOfLocales a rdfs:Class ;
+  rdfs:label "Locales"@en ;
+  rdfs:comment "Unordered array of locales" ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty rdf:first ;
+    owl:allValuesFrom xml:lang ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty rdf:rest ;
+    owl:allValuesFrom core:ListOfLocales ;
+  ] ;
+  rdfs:subClassOf rdf:List .  
+
 ## auxiliary container type for defining an array of CopyrightOwnerDetail
 
 core:ListOfCopyrightOwners a rdfs:Class ;
@@ -661,14 +691,14 @@ YYYY-MM-DDThh:mm:ss.sTZD""" ;
   skos:example "1600" ;
   rdfs:domain core:Asset .
 
-core:firstUploadDate a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "Date Initally Uploaded"@en ;
-  rdfs:comment """The date and time when the file was first uploaded to the cloud. It will be the server time. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".""" ;
+core:repositoryCreatedDate a core:BaseProperty, owl:FunctionalProperty ;
+  rdfs:label "Date created in repository"@en ;
+  rdfs:comment """The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".""" ;
   rdfs:range xsd:dateTime ;
   meta:mandatory true ;
   meta:userEditable false ;
   meta:immutable true ;
-  meta:jsonName "first_upload_date" ;
+  meta:jsonName "repository_created_date" ;
   skos:note "YYYY-MM-DDThh:mm:ss.sTZD" ;
   skos:example "2016-07-12T12:13:05.123+01:00" ;
   rdfs:domain core:Asset .
@@ -685,14 +715,14 @@ dc:creator a core:BaseProperty, owl:FunctionalProperty ;
   skos:example "" ;
   rdfs:domain core:Asset .
 
-core:firstUploadedBy a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "First uploaded by"@en ;
-  rdfs:comment "ID of the user who first uploaded the asset" ;
+core:repositoryCreatedBy a core:BaseProperty, owl:FunctionalProperty ;
+  rdfs:label "Created in repository by"@en ;
+  rdfs:comment "ID of the user who initiated the action that caused the resource to be created in the repository." ;
   rdfs:range xsd:string ;
   meta:mandatory true ;
   meta:userEditable false ;
   meta:immutable true ;
-  meta:jsonName "first_uploaded_by" ;
+  meta:jsonName "repository_created_by" ;
   skos:note "" ;
   skos:example "" ;
   rdfs:domain core:Asset .
@@ -730,26 +760,26 @@ YYYY-MM-DDThh:mm:ss.sTZD""" ;
   skos:example "" ;
   rdfs:domain core:Asset .
 
-core:lastUploadDate a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "Last Upload Date"@en ;
-  rdfs:comment """The date and time when most recent version of an asset was uploaded in the repo. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".""" ;
+core:repositoryLastModifiedDate a core:BaseProperty, owl:FunctionalProperty ;
+  rdfs:label "Repository last modified date"@en ;
+  rdfs:comment """The server date and time when the resource was most recently modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".""" ;
   rdfs:range xsd:dateTime ;
   meta:mandatory true ;
   meta:userEditable false ;
   meta:immutable false ;
-  meta:jsonName "last_upload_date" ;
+  meta:jsonName "repository_last_modified_date" ;
   skos:note """YYYY-MM-DDThh:mm:ss.sTZD""" ;
   skos:example "2004-10-23T12:00:00-06:00" ;
   rdfs:domain core:Asset .
 
-core:lastUploadedBy a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "Last Uploaded By"@en ;
-  rdfs:comment "ID of the user who performed the change that is recorded by lastUploadDate." ;
+core:repositoryLastModifiedBy a core:BaseProperty, owl:FunctionalProperty ;
+  rdfs:label "Repository last modified by"@en ;
+  rdfs:comment "ID of the user who initiated the action that most recently caused the resource to be modified in the repository." ;
   rdfs:range xsd:string ;
   meta:mandatory true ;
   meta:userEditable false ;
   meta:immutable false ;
-  meta:jsonName "last_uploaded_by" ;
+  meta:jsonName "repository_last_modified_by" ;
   skos:note "" ;
   skos:example "" ;
   rdfs:domain core:Asset .
@@ -989,6 +1019,18 @@ dc:description a core:BaseProperty, owl:FunctionalProperty ;
   skos:example "" ;
   rdfs:domain core:Asset .
 
+core:notSafe a core:BaseProperty, owl:FunctionalProperty ;
+  rdfs:label "NSFW state"@en ;
+  rdfs:comment "Indicates if the content is SFW (safe for work). Safe is value 0 or missing value. NSFW is value 1." ;
+  rdfs:range xsd:float ;
+  meta:mandatory false ;
+  meta:userEditable true ;
+  meta:immutable false ;
+  meta:jsonName "not_safe" ;
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Asset .
+
 dc:format a core:BaseProperty, owl:FunctionalProperty ;
   rdfs:label "Format"@en ;
   rdfs:comment """The physical or digital manifestation of the resource. Typically, Format may include the media-type or dimensions of the resource. Examples of dimensions include size and duration. Format may be used to determine the software, hardware or other equipment needed to display or operate the resource. Recommended best practice is to select a value from a controlled vocabulary (for example, the list of Internet Media Types [http://www.iana.org/ assignments/media-types/] defining computer media formats).""" ;
@@ -999,6 +1041,18 @@ dc:format a core:BaseProperty, owl:FunctionalProperty ;
   meta:jsonName "type" ;
   skos:note "XMP usage is a MIME type. Dimensions would be stored using a media-specific property, beyond the scope of this document." ;
   skos:example """“type”:“application/vnd.adobe.photoshop”""" ;
+  rdfs:domain core:Asset .
+
+dc:language a core:BaseProperty, owl:FunctionalProperty ;
+  rdfs:label "Language"@en ;
+  rdfs:comment """The language or languages of the resource.""" ;
+  rdfs:range core:ListOfLocales ;
+  meta:mandatory false ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "type" ;
+  skos:note "XMP usage is a list of languages used in the content of the resource. Languages are specified in language code as defined in IETF RFC 3066. " ;
+  skos:example "pt-BR" ;
   rdfs:domain core:Asset .
 
 core:size a core:BaseProperty, owl:FunctionalProperty ;
@@ -1037,11 +1091,75 @@ core:etag a core:BaseProperty, owl:FunctionalProperty ;
   skos:example "" ;
   rdfs:domain core:Asset .
 
+exif:GPSAltitude a core:BaseProperty, owl:FunctionalProperty ;
+  rdfs:label "GPS Altitude"@en ;
+  rdfs:comment """GPS tag 6, 0x06. Indicates altitude in meters.""" ;
+  rdfs:range xsd:float ;
+  meta:mandatory false ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "gps_altitude" ;
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Asset .
+
+exif:GPSAltitudeRef a core:BaseProperty, owl:FunctionalProperty ;
+  rdfs:label "GPS Altitude Ref"@en ;
+  rdfs:comment """GPS tag 5, 0x5. Indicates whether the altitude is above or below sea level:
+0 = Above sea level
+1 = Below sea level""" ;
+  rdfs:range xsd:integer ;
+  meta:mandatory false ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "gps_altitude_ref" ;
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Asset .
+
+exif:GPSLatitude a core:BaseProperty, owl:FunctionalProperty ;
+  rdfs:label "GPS Latitude"@en ;
+  rdfs:comment """GPS tag 2, 0x02 (position) and 1, 0x01 (North/South). Indicates latitude.""" ;
+  rdfs:range exif:GPSCoordinate ;
+  meta:mandatory false ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "gps_latitude" ;
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Asset .
+
+exif:GPSLongitude a core:BaseProperty, owl:FunctionalProperty ;
+  rdfs:label "GPS Longitude"@en ;
+  rdfs:comment """GPS tag 4, 0x04 (position) and 3, 0x03 (East/West). Indicates longitude.""" ;
+  rdfs:range exif:GPSCoordinate ;
+  meta:mandatory false ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "gps_longitude" ;
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Asset .
+
+
+xmp:Rating a core:BaseProperty, owl:FunctionalProperty ;
+   rdfs:label "Rating"@en ;
+   rdfs:comment """A user-assigned rating for this file. The value shall be -1 or in the range [0..5], where -1 indicates “rejected” and 0 indicates “unrated”. If xmp:Rating is not present, a value of 0 should be assumed. NOTE: Anticipated usage is for a typical “star rating” UI, with the addition of a notion of rejection.""" ;
+   rdfs:range xsd:integer ;
+   meta:mandatory false ;
+   meta:userEditable false ;
+   meta:immutable false ;
+   meta:jsonName "rating" ;
+   skos:note "EDITORIAL NOTE: the range (data type) should be an enum. Due to the upcoming change to json-schema I took a short-cut and made it integer. We fix it after the migration" ;
+   skos:example "" ;
+   rdfs:domain core:Asset .
+ 
+
 ### Image class
 
 core:Image a rdfs:Class ;
   rdfs:label "Image" ;
-  rdfs:comment "OneAdobe Cloud Image Class, JPEG, PNG, etc." ;
+  rdfs:comment "The Image class is for raster image assets, e.g. JPEG, PNG, etc." ;
   rdfs:subClassOf core:Asset .
 
 #### Image properties
@@ -1066,31 +1184,6 @@ tiff:Orientation a core:BaseProperty, owl:FunctionalProperty ;
   skos:example "" ;
   rdfs:domain core:Image .
 
-tiff:ImageWidth a core:BaseProperty, owl:FunctionalProperty ;
-  # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
-  rdfs:label "Image Width"@en ;
-  rdfs:comment """Image width in pixels.""" ;
-  rdfs:range xsd:integer ;
-  meta:mandatory false ;
-  meta:userEditable false ;
-  meta:immutable false ;
-  meta:jsonName "image_width" ;
-  skos:note "" ;
-  skos:example "" ;
-  rdfs:domain core:Image .
-
-tiff:ImageLength a core:BaseProperty, owl:FunctionalProperty ;
-  # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
-  rdfs:label "Image Length"@en ;
-  rdfs:comment """Image height in pixels.""" ;
-  rdfs:range xsd:integer ;
-  meta:mandatory false ;
-  meta:userEditable false ;
-  meta:immutable false ;
-  meta:jsonName "image_length" ;
-  skos:note "" ;
-  skos:example "" ;
-  rdfs:domain core:Image .
 
 tiff:XResolution a core:BaseProperty, owl:FunctionalProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
@@ -1196,3 +1289,83 @@ core:Artboards a core:BaseProperty, owl:FunctionalProperty ;
   skos:note "" ;
   skos:example "" ;
   rdfs:domain core:Asset .
+
+### Video class
+
+core:Video a rdfs:Class ;
+  rdfs:label "Video" ;
+  rdfs:comment "The Video class is for video assets, i.e. assets that consist of moving pictures and, optionally, sound." ;
+  rdfs:subClassOf core:Asset .
+
+### Video properties
+
+core:extent a core:BaseProperty, owl:FunctionalProperty ;
+  rdfs:label "Extent"@en ;
+  rdfs:comment """The duration of the video in milliseconds.""" ;
+  rdfs:range xsd:integer ;
+  meta:mandatory false ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "extent" ;
+  skos:note "This property is inspired by `dc:extent`. However, `dc:extent` does not specify units. `core:extent` is always an integer and describes the duration in milliseconds." ;
+  skos:example "" ;
+  rdfs:domain core:Video .
+
+xmpDM:videoFrameRate a core:BaseProperty, owl:FunctionalProperty ;
+  rdfs:label "Frame Rate"@en ;
+  rdfs:comment """The video frame rate in frames per second (FPS). Predefined values include: 
+24
+NTSC
+PAL""" ;
+  rdfs:range xmp:Text ;
+  meta:mandatory false ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "video_frame_rate" ;
+  skos:note "" ;
+  skos:example """These examples show common video and audio frame rates:
+Film at 24 fps (frame rate = 24, rate basis = 1): "f24"
+Speech-to-text in milliseconds (frame rate = 1000, rate basis = 1): "f1000"
+NTSC at 29.97 fps (frame rate = 30000, rate basis = 1001): "f30000s1001" """ ;
+  rdfs:domain core:Video .
+
+### Properties that apply to Video and Images
+
+tiff:ImageWidth a core:BaseProperty, owl:FunctionalProperty ;
+  # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
+  rdfs:label "Width"@en ;
+  rdfs:comment """Width in pixels.""" ;
+  rdfs:range xsd:integer ;
+  meta:mandatory false ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "image_width" ;
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Image, core:Video .
+
+tiff:ImageLength a core:BaseProperty, owl:FunctionalProperty ;
+  # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
+  rdfs:label "Length"@en ;
+  rdfs:comment """Height in pixels. To maintain continuity with the XMP and TIFF standards, the height of an image or video is specified in the property `tiff:ImageLength`. The duration of the video (also commonly called length) is specified in the property `core:extent`. """ ;
+  rdfs:range xsd:integer ;
+  meta:mandatory false ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "image_length" ;
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Image, core:Video .  
+
+core:aspectRatio a core:BaseProperty, owl:FunctionalProperty ;
+  rdfs:label "Aspect Ratio"@en ;
+  rdfs:comment "Describes the proportional relationship between the width and the height. To determine the aspect ratio, divide width by height. Videos that have an aspect ratio smaller than one are in landscape format, videos that have an aspect ratio greater than one are in portrait format." ;
+  rdfs:range xsd:float ;
+  meta:mandatory false ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "aspect_ratio" ;
+  skos:note "See the definition in https://en.wikipedia.org/wiki/Aspect_ratio_(image)" ;
+  skos:example "" ;
+  rdfs:domain core:Image, core:Video .    
+

@@ -35,8 +35,8 @@
 @prefix plus: <http://ns.useplus.org/ldf/xmp/1.0/> .
 @prefix cc:  <http://creativecommons.org/ns#> .
 @prefix stEvt: <http://ns.adobe.com/xap/1.0/sType/ResourceEvent#> .
+@prefix stArtboard: <http://ns.adobe.com/core/1.0/sType/Artboard#> .
 @prefix exif: <http://ns.adobe.com/exif/1.0/#> .
-
 
 <http://ns.adobe.com/adobecloud/core/1.0/> a owl:Ontology ;
   dc:title "Adobe Cloud Core Asset Data Model" ;
@@ -396,6 +396,70 @@ stEvt:when a rdf:Property ;
   rdfs:domain xmp:ResourceEvent ;
   rdfs:comment """Timestamp of when the action occurred.For events that create or write to a file, this should be the approximate modification time of the file.""" .
 
+## structure for defining Artboard
+
+core:Artboard a rdfs:Class ;
+  rdfs:label "Artboard class"@en ;
+  rdfs:comment """Structure containing the characteristics of an Artboard used in a document. An artboard contains areas of your artwork that can be printed or exported. 
+  Documents created in Adobe Illustrator and Adobe XD can have multiple Artboards. 
+  For Adobe Photoshop users, it's a special type of layer group which clips the contents of  contained elements to its boundaries. Objects outside Artboard area will not be visible
+  For more details, refer to: https://helpx.adobe.com/illustrator/how-to/visual-dictionary-artboard.html""" ;
+  rdfs:subClassOf rdfs:Resource .
+  
+stArtboard:name a rdf:Property ;
+  rdfs:range xsd:string ;
+  rdfs:domain core:Artboard ;
+  rdfs:comment """Name of the artboard. This would be visible to the user and users can specify names that can help them uniquely identfiy different Artboards.""" ;
+  meta:mandatory false ;
+  meta:userEditable true ;
+  meta:immutable false ;
+  meta:jsonName "name" .
+
+stArtboard:originX a rdf:Property ;
+  rdfs:range xsd:integer ;
+  rdfs:domain core:Artboard ;
+  rdfs:comment """Origin X position - Base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards)""" ;
+  meta:mandatory true ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "origin_x" .
+
+stArtboard:originY a rdf:Property ;
+  rdfs:range xsd:integer ;
+  rdfs:domain core:Artboard ;
+  rdfs:comment """Origin Y position - Base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards)""" ;
+  meta:mandatory true ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "origin_y" .
+
+stArtboard:width a rdf:Property ;
+  rdfs:range xsd:integer ;
+  rdfs:domain core:Artboard ;
+  rdfs:comment """Width of the artboard""" 
+  meta:mandatory true ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "width" .
+
+stArtboard:height a rdf:Property ;
+  rdfs:range xsd:integer ;
+  rdfs:domain core:Artboard ;
+  rdfs:comment """Height of the artboard""" 
+  meta:mandatory true ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "height" .
+
+stArtboard:unit a rdf:Property ;
+  rdfs:range xsd:String ;
+  rdfs:domain core:Artboard ;
+  rdfs:comment """Unit used for artboard coordinates (originX, originY, width and height). For example: inch, mm, pixel, pica, point (default is pixels)""" ;
+  meta:mandatory false ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "unit" .
+
 ## auxiliary container type for defining an array of ProperName as per XMP spec
 
 core:ListOfProperNames a rdfs:Class ;
@@ -478,6 +542,23 @@ core:ResourceEventList a rdfs:Class ;
     a owl:Restriction ;
     owl:onProperty rdf:rest ;
     owl:allValuesFrom core:ResourceEventList ;
+  ] ;
+  rdfs:subClassOf rdf:List .
+
+## auxiliary container type for defining an Array of Artboards
+
+core:ArtboardSet a rdfs:Class ;
+  rdfs:label "A set of Artboards"@en ;
+  rdfs:comment "An unordered set of artboards. ArtboardSet helps in getting access to all artboards used in a document """ ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty rdf:first ;
+    owl:allValuesFrom core:Artboard ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty rdf:rest ;
+    owl:allValuesFrom core:ArtboardSet ;
   ] ;
   rdfs:subClassOf rdf:List .
 
@@ -1176,6 +1257,7 @@ photoshop:ColorMode a core:BaseProperty, owl:FunctionalProperty ;
   skos:example "" ;
   rdfs:domain core:Image .
 
+
 photoshop:ICCProfile a core:BaseProperty, owl:FunctionalProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
   rdfs:label "ICCProfile"@en ;
@@ -1188,6 +1270,25 @@ photoshop:ICCProfile a core:BaseProperty, owl:FunctionalProperty ;
   skos:note "" ;
   skos:example "" ;
   rdfs:domain core:Image .
+
+# core:CCDoc class for Creative cloud documents
+#core:CCDoc a rdfs:Class ;
+# rdfs:label "CCDoc" ;
+#  rdfs:comment "OneAdobe Cloud Documents Class, AI, ID, PSD, PDF, etc." ;
+#  rdfs:subClassOf core:Asset .
+
+core:Artboards a core:BaseProperty, owl:FunctionalProperty ;
+  # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
+  rdfs:label "Artboards"@en ;
+  rdfs:comment """Contains the artboards that are being used in the document. A document can have multiple artboards.""" ;
+  rdfs:range core:ArtboardSet ;
+  meta:mandatory false ;
+  meta:userEditable true ;
+  meta:immutable false ;
+  meta:jsonName "artboards" ;
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Asset .
 
 ### Video class
 
@@ -1267,3 +1368,4 @@ core:aspectRatio a core:BaseProperty, owl:FunctionalProperty ;
   skos:note "See the definition in https://en.wikipedia.org/wiki/Aspect_ratio_(image)" ;
   skos:example "" ;
   rdfs:domain core:Image, core:Video .    
+

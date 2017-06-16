@@ -476,7 +476,7 @@ stFnt:versionString a rdf:Property ;
   -nameId 5 for Apple TrueType and OpenType
   -CIDFontVersion for CID fonts
   -The empty string for bitmap fonts
-  The Adobe CoolType font engine allows two fonts with the same PostScript name and different technologies to be used at the same time, but not if they are from different versions. So even without this data for a given document you will have unique font data. However,the version can tell you if the font has changed metrics, glyph forms or other important information. This is useful for comparing fonts in two documents or fonts in a document to those in your system.
+  The Adobe CoolType font engine allows two fonts with the same PostScript name and different technologies to be used at the same time, but not if they are from different versions. So even without this data for a given document you will have unique font data. However, the version can tell you if the font has changed metrics, glyph forms or other important information. This is useful for comparing fonts in two documents or fonts in a document to those in your system.
   For example: TimesNewRomanPS-BoldItalicMTVersion 3.05 """ ;
   meta:mandatory false ;
   meta:userEditable false ;

@@ -503,8 +503,8 @@ core:ListOfProperNames a rdfs:Class ;
 ## auxiliary container type for defining an array of xsd:string
 
 core:StringList a rdfs:Class ;
-  rdfs:label "Ordered array of String"@en ;
-  rdfs:comment "Ordered array of String" ;
+  rdfs:label "List of Strings"@en ;
+  rdfs:comment "An ordered list of strings" ;
   rdfs:subClassOf [
     a owl:Restriction ;
     owl:onProperty rdf:first ;
@@ -588,8 +588,8 @@ core:ResourceEventList a rdfs:Class ;
 ## auxiliary container type for defining an array of xap:stFnt
 
 core:FontSet a rdfs:Class ;
-  rdfs:label "Unordered array of Font"@en ;
-  rdfs:comment "Unordered array of Font" ;
+  rdfs:label "A set of fonts"@en ;
+  rdfs:comment "A set of fonts, order does not matter" ;
   rdfs:subClassOf [
     a owl:Restriction ;
     owl:onProperty rdf:first ;
@@ -1322,7 +1322,7 @@ photoshop:ICCProfile a core:BaseProperty, owl:FunctionalProperty ;
 core:Fonts a core:BaseProperty, owl:FunctionalProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
   rdfs:label "Fonts"@en ;
-  rdfs:comment """Unordered Array of Font structure""" ;
+  rdfs:comment """The set of fonts used or embedded in the asset. The order of elements in this set carries no semantics. """ ;
   rdfs:range core:FontSet ;
   meta:mandatory false ;
   meta:userEditable false ;

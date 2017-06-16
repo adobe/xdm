@@ -36,6 +36,9 @@
 @prefix cc:  <http://creativecommons.org/ns#> .
 @prefix stEvt: <http://ns.adobe.com/xap/1.0/sType/ResourceEvent#> .
 @prefix stFnt: <http:ns.adobe.com/xap/1.0/sType/Font#> .
+@prefix stLayer: <http://ns.adobe.com/core/1.0/sType/Layer#> .
+@prefix stLayerGroup: <http://ns.adobe.com/core/1.0/sType/LayerGroup#> .
+@prefix stArtboard: <http://ns.adobe.com/core/1.0/sType/Artboard#> .
 @prefix exif: <http://ns.adobe.com/exif/1.0/#> .
 
 <http://ns.adobe.com/adobecloud/core/1.0/> a owl:Ontology ;
@@ -483,6 +486,192 @@ stFnt:versionString a rdf:Property ;
   meta:immutable false ;  
   meta:jsonName "version_string" .
 
++## structure for defining Layer
+ +
+ +core:Layer a rdfs:Class ;
+ +  rdfs:label "Layer class"@en ;
+ +  rdfs:comment """Structure denoting layer information in the document. Layers are like stacked sheets. User can add transparency/opacity to see through transparent areas of a layer. They are used for compositing multiple images, adding text to an image, or adding vector graphic shapes. Users can also apply layer style to add a special effect such as a drop shadow or a glow. """ ;
+ +  rdfs:subClassOf rdfs:Resource .
+ +  
+stLayer:type a rdf:Property ;
+ +  rdfs:range xsd:string ;
+ +  rdfs:domain core:Layer ;
+ +  rdfs:comment """Closed choice of ("Layer", "LayerGroup") - will have "Layer" if stLayer structure is active.""";
+ +  meta:mandatory true ;
+ +  meta:userEditable false ;
+ +  meta:immutable true ;
+ +  meta:jsonName "type" .
+
+ +stLayer:name a rdf:Property ;
+ +  rdfs:range xsd:string ;
+ +  rdfs:domain core:Layer ;
+ +  rdfs:comment """Name of Layer. This would be visible to the user and users can specify names that can help them uniquely identfiy different Layers""" ;
+ +  meta:mandatory false ;
+ +  meta:userEditable true ;
+ +  meta:immutable false ;
+ +  meta:jsonName "name" .
+ +
+  stLayer:visible a rdf:Property ;
+ +  rdfs:range xsd:boolean ;
+ +  rdfs:domain core:Layer ;
+ +  rdfs:comment """Indicates if layer is visible in document. visible = true - Layer is visible and false - Layer is hidden (Visibility can be toggled by clicking "eye" icon in PS against each layer)""" ;
+ +  meta:mandatory true ;
+ +  meta:userEditable true ;
+ +  meta:immutable false ;
+ +  meta:jsonName "visible" .
+
+stLayer:style a rdf:Property ;
+ +  rdfs:range xsd:string ;
+ +  rdfs:domain core:Layer ;
+ +  rdfs:comment """A layer style is one or more effects applied to a layer or layer group. You can apply one of the preset styles provided with Photoshop or create a custom style. Photoshop provides a variety of effects—such as shadows, glows, and bevels—that change the appearance of a layer’s contents in a non-distructive way. Layer effects are linked to the layer contents. When you move or edit the contents of the layer, the same effects are applied to the modified contents. For example, if you apply a drop shadow to a text layer and then add new text, the shadow is added automatically to the new text.""" ;
+ +  meta:mandatory false ;
+ +  meta:userEditable false ;
+ +  meta:immutable false ;
+ +  meta:jsonName "style" .
+
++stLayer:originX a rdf:Property ;
+ +  rdfs:range xsd:integer ;
+ +  rdfs:domain core:Layer ;
+ +  rdfs:comment """Origin X position - Base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards)""" ;
+ +  meta:mandatory true ;
+ +  meta:userEditable false ;
+ +  meta:immutable false ;
+ +  meta:jsonName "origin_x" .
+ +
+ +stLayer:originY a rdf:Property ;
+ +  rdfs:range xsd:integer ;
+ +  rdfs:domain core:Layer ;
+ +  rdfs:comment """Origin Y position - Base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards) """ ;
+ +  meta:mandatory true ;
+ +  meta:userEditable false ;
+ +  meta:immutable false ;
+ +  meta:jsonName "origin_y" .
+ +
+ +stLayer:width a rdf:Property ;
+ +  rdfs:range xsd:integer ;
+ +  rdfs:domain core:Layer ;
+ +  rdfs:comment """Width of layer """ ;
+ +  meta:mandatory true ;
+ +  meta:userEditable false ;
+ +  meta:immutable false ;
+ +  meta:jsonName "width" .
+ +
+ +stLayer:height a rdf:Property ;
+ +  rdfs:range xsd:integer ;
+ +  rdfs:domain core:Layer ;
+ +  rdfs:comment """Height of layer """ ;
+ +  meta:mandatory true ;
+ +  meta:userEditable false ;
+ +  meta:immutable false ;
+ +  meta:jsonName "height" .
+
+stLayer:unit a rdf:Property ;
+ +  rdfs:range xsd:String ;
+ +  rdfs:domain core:Layer ;
+ +  rdfs:comment """Unit used for layer coordinates (origingX, originY, width and height). For example: inch, mm, pixel, pica, point (default is pixels)""" ;
+ +  meta:mandatory false ;
+ +  meta:userEditable false ;
+ +  meta:immutable false ;
+ +  meta:jsonName "unit" .
+
++## structure for defining LayerGroup
+ +
+ +core:LayerGroup a rdfs:Class ;
+ +  rdfs:label "LayerGroup class"@en ;
+ +  rdfs:comment """Layer group helps in preserving the hierarchy of layers in a document. User can apply common style to the group instead of working at individual layers. Layer Group can contain layers/layer groups. A structure denoting layer group information in the document.""" ;
+ +  rdfs:subClassOf rdfs:Resource .
+ +  
+stLayerGroup:type a rdf:Property ;
+ +  rdfs:range xsd:string ;
+ +  rdfs:domain core:LayerGroup ;
+ +  rdfs:comment """Closed choice of ("Layer", "LayerGroup") - will have "LayerGroup" if stLayerGroup structure is active.""";
+ +  meta:mandatory true ;
+ +  meta:userEditable false ;
+ +  meta:immutable true ;
+ +  meta:jsonName "type" .
+
+ +stLayerGroup:name a rdf:Property ;
+ +  rdfs:range xsd:string ;
+ +  rdfs:domain core:LayerGroup ;
+ +  rdfs:comment """Name of LayerGroup. This would be visible to the user and users can specify name that can help them uniquely identfiy different Layer Groups""" ; 
+ +  meta:mandatory false ;
+ +  meta:userEditable true ;
+ +  meta:immutable false ;
+ +  meta:jsonName "name" .
+
+stLayerGroup:layers a rdf:Property ;
+ +  rdfs:range xsd:string ;
+ +  rdfs:domain core:LayerGroup ;
+ +  rdfs:comment """List of layers/layer groups in a layer group""" 
+ +  meta:mandatory false ;
+ +  meta:userEditable true ;
+ +  meta:immutable false ;
+ +  meta:jsonName "layers" .
+
+## structure for defining Artboards
+
+core:Artboard a rdfs:Class ;
+  rdfs:label "Artboard class"@en ;
+  rdfs:comment """Structure containing the characteristics of an Artboard used in a document. An artboard contains areas of your artwork that can be printed or exported. 
+  Documents created in Adobe Illustrator and Adobe XD can have multiple Artboards. 
+  For Adobe Photoshop users, it's a special type of layer group which clips the contents of  contained elements to its boundaries. Objects outside Artboard area will not be visible
+  For more details, refer to: https://helpx.adobe.com/illustrator/how-to/visual-dictionary-artboard.html""" ;
+  rdfs:subClassOf rdfs:Resource .
+  
+stArtboard:name a rdf:Property ;
+  rdfs:range xsd:string ;
+  rdfs:domain core:Artboard ;
+  rdfs:comment """Name of the artboard. This would be visible to the user and users can specify names that can help them uniquely identfiy different Artboards.""" ;
+  meta:mandatory false ;
+  meta:userEditable true ;
+  meta:immutable false ;
+  meta:jsonName "name" .
+
+stArtboard:originX a rdf:Property ;
+  rdfs:range xsd:integer ;
+  rdfs:domain core:Artboard ;
+  rdfs:comment """Origin X position - Base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards)""" ;
+  meta:mandatory true ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "origin_x" .
+
+stArtboard:originY a rdf:Property ;
+  rdfs:range xsd:integer ;
+  rdfs:domain core:Artboard ;
+  rdfs:comment """Origin Y position - Base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards)""" ;
+  meta:mandatory true ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "origin_y" .
+
+stArtboard:width a rdf:Property ;
+  rdfs:range xsd:integer ;
+  rdfs:domain core:Artboard ;
+  rdfs:comment """Width of the artboard""" 
+  meta:mandatory true ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "width" .
+
+stArtboard:height a rdf:Property ;
+  rdfs:range xsd:integer ;
+  rdfs:domain core:Artboard ;
+  rdfs:comment """Height of the artboard""" 
+  meta:mandatory true ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "height" .
+
+stArtboard:unit a rdf:Property ;
+  rdfs:range xsd:String ;
+  rdfs:domain core:Artboard ;
+  rdfs:comment """Unit used for artboard coordinates (originX, originY, width and height). For example: inch, mm, pixel, pica, point (default is pixels)""" ;
+  meta:mandatory false ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "unit" .
+
 ## auxiliary container type for defining an array of ProperName as per XMP spec
 
 core:ListOfProperNames a rdfs:Class ;
@@ -594,13 +783,43 @@ core:FontSet a rdfs:Class ;
     a owl:Restriction ;
     owl:onProperty rdf:first ;
     owl:allValuesFrom xmp:Font ;
+        owl:allValuesFrom core:FontSet ;
+  ] ;
+  rdfs:subClassOf rdf:List . 
+
+## auxiliary container type for defining an array of Layer 
+
+core:LayerList a rdfs:Class ;
+  rdfs:label "Ordered array of Layer/LayerGroup"@en ;
+  rdfs:comment "Ordered array of core:Layer/Core:LayerGroup used inside a document. """ ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty rdf:first ;
+    # Not sure, what is the right way to use union to define collection of two different types - I'm trying to find this information
+    # will update it later
+    owl:unionOf rdf:parseType="Collection" ;
+    owl:class core:Layer ;
+    owl:class core:LayerGroup ;
+    skos:note "Not sure, what is the right way to use union to define collection of two different types - I'm trying to find this information
+    # will update it later" ; 
+    #owl:allValuesFrom core:Layer ;
+
+## auxiliary container type for defining an Array of Artboards
+
+core:ArtboardSet a rdfs:Class ;
+  rdfs:label "A set of Artboards"@en ;
+  rdfs:comment "An unordered set of artboards. ArtboardSet helps in getting access to all artboards used in a document """ ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty rdf:first ;
+    owl:allValuesFrom core:Artboard ;
   ] ;
   rdfs:subClassOf [
     a owl:Restriction ;
     owl:onProperty rdf:rest ;
-    owl:allValuesFrom core:FontSet ;
+    owl:allValuesFrom core:ArtboardSet ;
   ] ;
-  rdfs:subClassOf rdf:List .  
+  rdfs:subClassOf rdf:List .
 
 # abstract base classes for schema classes and properties
 
@@ -1297,6 +1516,7 @@ photoshop:ColorMode a core:BaseProperty, owl:FunctionalProperty ;
   skos:example "" ;
   rdfs:domain core:Image .
 
+
 photoshop:ICCProfile a core:BaseProperty, owl:FunctionalProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
   rdfs:label "ICCProfile"@en ;
@@ -1331,7 +1551,32 @@ core:Fonts a core:BaseProperty, owl:FunctionalProperty ;
   skos:note "" ;
   skos:example "" ;
   rdfs:domain core:Asset .
+    
+core:Layers a core:BaseProperty, owl:FunctionalProperty ;
+  # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
+  rdfs:label "Layers"@en ;
+  rdfs:comment """Ordered Array of Layer/LayerGroup structure used inside a document""" ;
+  rdfs:range core:LayerList ;
+  meta:mandatory false ;
+  meta:userEditable true ;
+  meta:immutable false ;
+  meta:jsonName "layers" ;
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Asset .
 
+core:Artboards a core:BaseProperty, owl:FunctionalProperty ;
+  # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
+  rdfs:label "Artboards"@en ;
+  rdfs:comment """Contains the artboards that are being used in the document. A document can have multiple artboards.""" ;
+  rdfs:range core:ArtboardSet ;
+  meta:mandatory false ;
+  meta:userEditable true ;
+  meta:immutable false ;
+  meta:jsonName "artboards" ;
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Asset .
 
 ### Video class
 

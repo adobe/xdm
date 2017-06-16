@@ -1,0 +1,55 @@
+{
+  "id": "core/OrgUnit.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Organizational unit",
+  "type": "object",
+  "description": "A business unit in the organization.\n\nOrganizational units are defining a hierarchy of business units in an organization. \nThey are mostly use to enforce user access restrictions, partitioning data or reporting.\n",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "A unique internal name of the organizational unit.\n"
+    },
+    "fullName": {
+      "type": "string",
+      "description": "The fully qualified name of the unit including names of its parent units.   \nUnits composing the full name are separated by a slash character (`/`).\n\n```\n/Entertainment\n/Entertainment/SonyPictures\n/Entertainment/SonyMusic\n/Entertainment/SonyMusic/RCA\n/Entertainment/SonyMusic/Epics\n/Electronics\n/Electronics/EntertainmentSystem\n/Electronics/Mobile\n...\n```\n"
+    },
+    "displayName": {
+      "type": "string",
+      "description": "The name of the organizational unit in the user interface."
+    },
+    "description": {
+      "type": "string",
+      "description": "A short overview of the unit in the organization."
+    },
+    "parent": {
+      "anyOf": [
+        {
+          "$ref": "core/Reference.json"
+        },
+        {
+          "$ref": "core/OrgUnit.json"
+        }
+      ],
+      "description": "The organizational unit owning this unit.\n"
+    },
+    "children": {
+      "type": "array",
+      "description": "All other organizational units under this unit.\n",
+      "items": {
+        "anyOf": [
+          {
+            "$ref": "core/Reference.json"
+          },
+          {
+            "$ref": "core/OrgUnit.json"
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "name",
+    "fullName",
+    "displayName"
+  ]
+}

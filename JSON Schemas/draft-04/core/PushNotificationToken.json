@@ -1,0 +1,36 @@
+{
+  "id": "core/PushNotificationToken.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Push notification token",
+  "type": "object",
+  "description": "Push notification tokens are used to communicate with applications that\nare installed on devices or SaaS application accounts. Examples include mobile\napplication notifications over notification services like the Apple Push\nNotification service.\n",
+  "properties": {
+    "token": {
+      "type": "string",
+      "description": "The service specific token used to address the application for\ncommunication. e.g an Apple APN ID or a Google GCM ID.\n"
+    },
+    "environment": {
+      "$ref": "core/Environment.json",
+      "description": "Environment of at the time of the registration.\n"
+    },
+    "device": {
+      "$ref": "core/Device.json",
+      "description": "The device originating the registration."
+    },
+    "application": {
+      "anyOf": [
+        {
+          "$ref": "core/Reference.json"
+        },
+        {
+          "$ref": "core/Application.json"
+        }
+      ],
+      "description": "Application registered to receive Push Notifications.\n"
+    }
+  },
+  "required": [
+    "token",
+    "environment"
+  ]
+}

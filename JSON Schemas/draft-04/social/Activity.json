@@ -1,0 +1,15 @@
+{
+  "id": "social/Activity.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Activity",
+  "type": "object",
+  "description": "An activity - Based on Activity Streams spec",
+  "properties": {
+    "verb": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "verb"
+  ]
+}

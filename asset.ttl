@@ -445,7 +445,8 @@ stFnt:fontFamily a rdf:Property ;
 stFnt:fontFileName a rdf:Property ;
   rdfs:range xsd:string ;
   rdfs:domain xmp:Font ;
-  rdfs:comment """The font file name (not a complete path). For example: Times New Roman""" ;   
+  rdfs:comment """The font file name (not a complete path). For example: Times New Roman.otf. Some products are not storing file extension information. XMP sepc is open about specifics of file name. If font information is stored in multiple files, use ";' separator to store file names.
+  For example: "zx___.mmm; zx__.pfm"""" ;   
   meta:mandatory false ;
   meta:userEditable false ;
   meta:immutable false ;  

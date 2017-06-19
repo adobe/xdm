@@ -338,14 +338,14 @@ tiff:denominator a rdf:Property ;
 
 core:stKeyword a rdfs:Class ;
   rdfs:label "stKeyword"@en ;
-  rdfs:comment """A structure containing information of the keyword added to the asset.""" ;
+  rdfs:comment """The list of keywords describing the asset. Values of the `stKeyword` property have been applied by a human reviewer.""" ;
   rdfs:subClassOf rdfs:Resource .
 
 core:value a rdf:Property ;
   rdfs:label "value"@en ;
   rdfs:range xsd:string ;
   rdfs:domain core:stKeyword ;
-  rdfs:comment """Keyword value""" ;
+  rdfs:comment """The keyword itself. A keyword can be considered like a tag, i.e. a short description of the content of the asset.""" ;
   meta:mandatory true ;
   meta:jsonName "value" .
 
@@ -353,7 +353,8 @@ core:localecode a rdf:Property ;
   rdfs:label "localeCode"@en ;
   rdfs:range xsd:string ;
   rdfs:domain core:stKeyword ;
-  rdfs:comment """keyword is of which langauge. The locale code should follow https://tools.ietf.org/html/bcp47""" ;
+  rdfs:comment """Language of the keyword. The locale code should follow RFC BCP47""" ;
+  skos:example "en-US"
   meta:mandatory false ;
   meta:jsonName "locale_code" .
 
@@ -361,7 +362,7 @@ core:importance a rdf:Property ;
   rdfs:label "importance"@en ;
   rdfs:range xsd:float ;
   rdfs:domain core:stKeyword ;
-  rdfs:comment """importance of the keyword. If required repository will infer it as per its policies and add it for the keywords""" ;
+  rdfs:comment """The importance of the keyword on a scale from zero to one. If required repository will infer it as per its policies and add it for the keywords""" ;
   meta:mandatory false ;
   meta:jsonName "importance"
   owl:withRestrictions (
@@ -376,14 +377,14 @@ core:importance a rdf:Property ;
 
 core:stMachineKeyword a rdfs:Class ;
   rdfs:label "stMachineKeyword"@en ;
-  rdfs:comment """A structure containing information of the machine generated keyword added to the asset.""" ;
+  rdfs:comment """The list of machine-inferred keywords describing the asset. Values of the `stMachineKeyword` property have been applied by a machine and do not require a human reviewer.""" ;
   rdfs:subClassOf rdfs:Resource .
 
 core:value a rdf:Property ;
   rdfs:label "value"@en ;
   rdfs:range xsd:string ;
   rdfs:domain core:stMachineKeyword ;
-  rdfs:comment """Keyword value""" ;
+  rdfs:comment """The keyword itself. A keyword can be considered like a tag, i.e. a short description of the content of the asset.""" ;
   meta:mandatory true ;
   meta:jsonName "value" .
 
@@ -391,7 +392,8 @@ core:localecode a rdf:Property ;
   rdfs:label "localeCode"@en ;
   rdfs:range xsd:string ;
   rdfs:domain core:stMachineKeyword ;
-  rdfs:comment """keyword is of which langauge. The locale code should follow https://tools.ietf.org/html/bcp47""" ;
+  rdfs:comment """Language of the keyword. The locale code should follow RFC BCP47""" ;
+  skos:example "de-CH"
   meta:mandatory false ;
   meta:jsonName "locale_code" .
 
@@ -399,7 +401,7 @@ core:confidence a rdf:Property ;
   rdfs:label "confidence"@en ;
   rdfs:range xsd:float ;
   rdfs:domain core:stMachineKeyword ;
-  rdfs:comment """confidence of the algorithm regarding this particular keyword""" ;
+  rdfs:comment """Confidence of the algorithm that this keyword is applicable to the asset. Confidence values are numbers between zero and one. A value of .95 indicates that the algorithm expects less than 5% of all tags with the same confidence value to be mis-applied, i.e. not to be a proper description of the asset.""" ;
   meta:mandatory false ;
   meta:jsonName "confidence"
   owl:withRestrictions (
@@ -414,7 +416,7 @@ core:algorithm a rdf:Property ;
   rdfs:label "algorithm"@en ;
   rdfs:range xsd:string ;
   rdfs:domain core:stMachineKeyword ;
-  rdfs:comment """algorithm name which generated the keyword""" ;
+  rdfs:comment """Name of the algorithm which generated the keyword.""" ;
   meta:mandatory false ;
   meta:jsonName "algorithm" .
 

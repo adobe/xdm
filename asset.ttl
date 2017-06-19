@@ -21,6 +21,7 @@
 @prefix xmpMM: <http://ns.adobe.com/xap/1.0/mm/> .
 @prefix xmpDM: <http://ns.adobe.com/xmp/1.0/DynamicMedia/> .
 @prefix xmpRights: <http://ns.adobe.com/xap/1.0/rights/> .
+@prefix xmpTPg: <http://ns.adobe.com/xap/1.0/t/pg/> .
 @prefix xmp: <http://ns.adobe.com/xap/1.0/> .
 @prefix stDim: <http://ns.adobe.com/xap/1.0/sType/Dimensions#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
@@ -31,7 +32,6 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace/> .
 @prefix photoshop: <http://ns.adobe.com/photoshop/1.0/> .
-@prefix schemaorg: <http://schema.org/> .
 @prefix tiff: <http://ns.adobe.com/tiff/1.0/> .
 @prefix plus: <http://ns.useplus.org/ldf/xmp/1.0/> .
 @prefix cc:  <http://creativecommons.org/ns#> .
@@ -1011,15 +1011,15 @@ core:etag a core:BaseProperty, owl:FunctionalProperty ;
   skos:example "" ;
   rdfs:domain core:Asset .
 
-schemaorg:numberOfPages a core:BaseProperty, owl:FunctionalProperty ;
+xmpTPg:NPages a core:BaseProperty, owl:FunctionalProperty ;
   rdfs:label "Number of pages"@en ;
-  rdfs:comment """Number of pages in the document.""" ;
+  rdfs:comment """The number of pages in the document (including any in contained documents).""" ;
   rdfs:range xsd:integer ;
   meta:mandatory false ;
   meta:userEditable false ;
   meta:immutable false ;
-  meta:jsonName "number_of_pages" ;
-  skos:note "This property is based on schema.org's number of pages in a book, but has been generalized to all assets" ;
+  meta:jsonName "n_pages" ;
+  skos:note "" ;
   skos:example "" ;
   rdfs:domain core:Asset .
 

@@ -1565,7 +1565,7 @@ dc:subject a core:BaseProperty, owl:FunctionalProperty ;
  
 core:keywords a core:BaseProperty, owl:FunctionalProperty ;
    rdfs:label "keywords"@en ;
-   rdfs:comment """A new field which can be used by repositories like Stock to store user added keywords along with the locale. Stock currently relies on the order of keywords to assign importance. Rather than relying on order, a separate "importance" field will be introduced.""" ;
+   rdfs:comment """A new field which can be used by asset repositories to store user added keywords along with the locale of the keyword. Rather than assigning importance based on keyword order, a separate `importance` property has been introduced.""" ;
    rdfs:range core:keywordList ;
    meta:mandatory false ;
    meta:userEditable true ;

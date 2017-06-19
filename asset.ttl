@@ -372,6 +372,52 @@ core:importance a rdf:Property ;
      ]
    ) .
 
+## structure of machine keywords property
+
+core:stMachineKeyword a rdfs:Class ;
+  rdfs:label "stMachineKeyword"@en ;
+  rdfs:comment """A structure containing information of the machine generated keyword added to the asset.""" ;
+  rdfs:subClassOf rdfs:Resource .
+
+core:value a rdf:Property ;
+  rdfs:label "value"@en ;
+  rdfs:range xsd:string ;
+  rdfs:domain core:stMachineKeyword ;
+  rdfs:comment """Keyword value""" ;
+  meta:mandatory true ;
+  meta:jsonName "value" .
+
+core:localecode a rdf:Property ;
+  rdfs:label "localeCode"@en ;
+  rdfs:range xsd:string ;
+  rdfs:domain core:stMachineKeyword ;
+  rdfs:comment """keyword is of which langauge. The locale code should follow https://tools.ietf.org/html/bcp47""" ;
+  meta:mandatory false ;
+  meta:jsonName "locale_code" .
+
+core:confidence a rdf:Property ;
+  rdfs:label "confidence"@en ;
+  rdfs:range xsd:float ;
+  rdfs:domain core:stMachineKeyword ;
+  rdfs:comment """confidence of the algorithm regarding this particular keyword""" ;
+  meta:mandatory false ;
+  meta:jsonName "confidence"
+  owl:withRestrictions (
+    [
+      xsd:minInclusive +0.0
+    ] [
+       xsd:maxInclusive +1.0
+     ]
+   ) .
+
+core:algorithm a rdf:Property ;
+  rdfs:label "algorithm"@en ;
+  rdfs:range xsd:string ;
+  rdfs:domain core:stMachineKeyword ;
+  rdfs:comment """algorithm name which generated the keyword""" ;
+  meta:mandatory false ;
+  meta:jsonName "algorithm" .
+
 ## container type and auxiliary structure for defining LanguageAlternative as per XMP spec
 
 core:LanguageAlternativeDetail a rdfs:Class ;
@@ -779,7 +825,7 @@ core:textList a rdfs:Class ;
   ] ;
   rdfs:subClassOf rdf:List .
 
-## auxilary container type for defining an array of Text
+## auxilary container type for defining an array of keywords
 
 core:keywordList a rdfs:Class ;
   rdfs:label "Unordered array of keywords"@en ;
@@ -787,12 +833,29 @@ core:keywordList a rdfs:Class ;
   rdfs:subClassOf [
     a owl:Restriction ;
     owl:onProperty rdf:first ;
-    owl:allValuesFrom core:keyword ;
+    owl:allValuesFrom core:stKeyword ;
   ] ;
   rdfs:subClassOf [
     a owl:Restriction ;
     owl:onProperty rdf:rest ;
     owl:allValuesFrom core:keywordList ;
+  ] ;
+  rdfs:subClassOf rdf:List .
+
+## auxilary container type for defining an array of machine generated keywords
+
+core:machineKeywordList a rdfs:Class ;
+  rdfs:label "Unordered array of machine keywords"@en ;
+  rdfs:comment "Array of machine keywords" ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty rdf:first ;
+    owl:allValuesFrom core:stMachineKeyword ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty rdf:rest ;
+    owl:allValuesFrom core:machineKeywordList ;
   ] ;
   rdfs:subClassOf rdf:List .
 
@@ -1506,6 +1569,18 @@ core:keywords a core:BaseProperty, owl:FunctionalProperty ;
    meta:userEditable true ;
    meta:immutable false ;
    meta:jsonName "keywords" ;
+   skos:note "" ;
+   skos:example "" ;
+   rdfs:domain core:Asset .
+
+core:machinekeywords a core:BaseProperty, owl:FunctionalProperty ;
+   rdfs:label "machinekeywords"@en ;
+   rdfs:comment """A new field to store machine generated keywords in the repository.""" ;
+   rdfs:range core:machineKeywordList ;
+   meta:mandatory false ;
+   meta:userEditable false ;
+   meta:immutable false ;
+   meta:jsonName "machine_keywords" ;
    skos:note "" ;
    skos:example "" ;
    rdfs:domain core:Asset .

@@ -810,11 +810,11 @@ core:ListOfAliasIDs a rdfs:Class ;
   ] ;
   rdfs:subClassOf rdf:List .
 
-## auxilary container type for defining an array of Text
+## auxilary container type for defining an array of Text elements
 
 core:textList a rdfs:Class ;
-  rdfs:label "Unordered array of Text"@en ;
-  rdfs:comment "Array of Text" ;
+  rdfs:label "Unordered set of Text elements"@en ;
+  rdfs:comment "Set of Text elements" ;
   rdfs:subClassOf [
     a owl:Restriction ;
     owl:onProperty rdf:first ;
@@ -830,8 +830,8 @@ core:textList a rdfs:Class ;
 ## auxilary container type for defining an array of keywords
 
 core:keywordList a rdfs:Class ;
-  rdfs:label "Unordered array of keywords"@en ;
-  rdfs:comment "Array of keywords" ;
+  rdfs:label "Unordered set of keywords"@en ;
+  rdfs:comment "Set of keywords" ;
   rdfs:subClassOf [
     a owl:Restriction ;
     owl:onProperty rdf:first ;
@@ -847,8 +847,8 @@ core:keywordList a rdfs:Class ;
 ## auxilary container type for defining an array of machine generated keywords
 
 core:machineKeywordList a rdfs:Class ;
-  rdfs:label "Unordered array of machine keywords"@en ;
-  rdfs:comment "Array of machine keywords" ;
+  rdfs:label "Unordered set of machine keywords"@en ;
+  rdfs:comment "Set of machine keywords" ;
   rdfs:subClassOf [
     a owl:Restriction ;
     owl:onProperty rdf:first ;

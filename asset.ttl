@@ -334,6 +334,44 @@ tiff:denominator a rdf:Property ;
     ]
   ) .
 
+## structure of keywords property
+
+core:stKeyword a rdfs:Class ;
+  rdfs:label "stKeyword"@en ;
+  rdfs:comment """A structure containing information of the keyword added to the asset.""" ;
+  rdfs:subClassOf rdfs:Resource .
+
+core:value a rdf:Property ;
+  rdfs:label "value"@en ;
+  rdfs:range xsd:string ;
+  rdfs:domain core:stKeyword ;
+  rdfs:comment """Keyword value""" ;
+  meta:mandatory true ;
+  meta:jsonName "value" .
+
+core:localecode a rdf:Property ;
+  rdfs:label "localeCode"@en ;
+  rdfs:range xsd:string ;
+  rdfs:domain core:stKeyword ;
+  rdfs:comment """keyword is of which langauge. The locale code should follow https://tools.ietf.org/html/bcp47""" ;
+  meta:mandatory false ;
+  meta:jsonName "locale_code" .
+
+core:importance a rdf:Property ;
+  rdfs:label "importance"@en ;
+  rdfs:range xsd:float ;
+  rdfs:domain core:stKeyword ;
+  rdfs:comment """importance of the keyword. If required repository will infer it as per its policies and add it for the keywords""" ;
+  meta:mandatory false ;
+  meta:jsonName "importance"
+  owl:withRestrictions (
+    [
+      xsd:minInclusive +0.0
+    ] [
+       xsd:maxInclusive +1.0
+     ]
+   ) .
+
 ## container type and auxiliary structure for defining LanguageAlternative as per XMP spec
 
 core:LanguageAlternativeDetail a rdfs:Class ;
@@ -726,7 +764,7 @@ core:ListOfAliasIDs a rdfs:Class ;
 
 ## auxilary container type for defining an array of Text
 
-core:ListofText a rdfs:Class ;
+core:textList a rdfs:Class ;
   rdfs:label "Unordered array of Text"@en ;
   rdfs:comment "Array of Text" ;
   rdfs:subClassOf [
@@ -737,7 +775,24 @@ core:ListofText a rdfs:Class ;
   rdfs:subClassOf [
     a owl:Restriction ;
     owl:onProperty rdf:rest ;
-    owl:allValuesFrom core:ListOfText ;
+    owl:allValuesFrom core:textList ;
+  ] ;
+  rdfs:subClassOf rdf:List .
+
+## auxilary container type for defining an array of Text
+
+core:keywordList a rdfs:Class ;
+  rdfs:label "Unordered array of keywords"@en ;
+  rdfs:comment "Array of keywords" ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty rdf:first ;
+    owl:allValuesFrom core:keyword ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty rdf:rest ;
+    owl:allValuesFrom core:keywordList ;
   ] ;
   rdfs:subClassOf rdf:List .
 
@@ -1434,7 +1489,7 @@ xmp:Rating a core:BaseProperty, owl:FunctionalProperty ;
 dc:subject a core:BaseProperty, owl:FunctionalProperty ;
    rdfs:label "subject"@en ;
    rdfs:comment """List of descriptive phrases or keywords that specify the content of the resource. These keywords are part of the XMP metadata of the asset.""" ;
-   rdfs:range core:ListofText ;
+   rdfs:range core:textList ;
    meta:mandatory false ;
    meta:userEditable true ;
    meta:immutable false ;
@@ -1443,6 +1498,17 @@ dc:subject a core:BaseProperty, owl:FunctionalProperty ;
    skos:example "" ;
    rdfs:domain core:Asset .
  
+core:keywords a core:BaseProperty, owl:FunctionalProperty ;
+   rdfs:label "keywords"@en ;
+   rdfs:comment """A new field which can be used by repositories like Stock to store user added keywords along with the locale. Stock currently relies on the order of keywords to assign importance. Rather than relying on order, a separate "importance" field will be introduced.""" ;
+   rdfs:range core:keywordList ;
+   meta:mandatory false ;
+   meta:userEditable true ;
+   meta:immutable false ;
+   meta:jsonName "keywords" ;
+   skos:note "" ;
+   skos:example "" ;
+   rdfs:domain core:Asset .
 
 ### Image class
 

@@ -31,6 +31,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace/> .
 @prefix photoshop: <http://ns.adobe.com/photoshop/1.0/> .
+@prefix schemaorg: <http://schema.org/> .
 @prefix tiff: <http://ns.adobe.com/tiff/1.0/> .
 @prefix plus: <http://ns.useplus.org/ldf/xmp/1.0/> .
 @prefix cc:  <http://creativecommons.org/ns#> .
@@ -1010,15 +1011,15 @@ core:etag a core:BaseProperty, owl:FunctionalProperty ;
   skos:example "" ;
   rdfs:domain core:Asset .
 
-core:numberOfPages a core:BaseProperty, owl:FunctionalProperty ;
+schemaorg:numberOfPages a core:BaseProperty, owl:FunctionalProperty ;
   rdfs:label "Number of pages"@en ;
-  rdfs:comment """Number of pages in the asset""" ;
+  rdfs:comment """Number of pages in the document.""" ;
   rdfs:range xsd:integer ;
   meta:mandatory false ;
   meta:userEditable false ;
   meta:immutable false ;
   meta:jsonName "number_of_pages" ;
-  skos:note "" ;
+  skos:note "This property is based on schema.org's number of pages in a book, but has been generalized to all assets" ;
   skos:example "" ;
   rdfs:domain core:Asset .
 

@@ -1,0 +1,31 @@
+{
+  "id": "campaign/Link.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Link",
+  "type": "object",
+  "description": "Link in a message.",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string",
+      "description": "A human-friendly description of the URL."
+    },
+    "url": {
+      "type": "string"
+    },
+    "occurrence": {
+      "type": "integer",
+      "description": "URL occurrence index in the content (first is 1).\nWhen the same URL is available several times in the same content, its is\nnecessary to track which occurence of the URL has been clicked on.\n",
+      "default": 1,
+      "minimum": 1,
+      "format": "int16"
+    }
+  },
+  "required": [
+    "id",
+    "url",
+    "occurrence"
+  ]
+}

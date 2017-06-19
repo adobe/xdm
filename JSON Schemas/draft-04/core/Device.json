@@ -1,0 +1,50 @@
+{
+  "id": "core/Device.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Device",
+  "type": "object",
+  "description": "An identified Device/Application or Device/Browser instance that is trackable across sessions, normally by cookies.",
+  "properties": {
+    "deviceAtlasId": {
+      "type": "integer",
+      "description": "Unique identifier of the device.\n\n> IMPORTANT: (from: ferdinan@adobe.com)\n1. Should be `id`.  The fact it is commining from Device Atlas is an implementation detail.\n   Device Atlas could be mentionned in the documentation.\n2. Are your sure the Device Atlas identifier is unique for each physical device or unique for\n   each model?\n      \n"
+    },
+    "type": {
+      "type": "string",
+      "description": "Type of device being tracked.",
+      "enum": [
+        "mobile",
+        "desktop",
+        "ereader",
+        "gamingConsole",
+        "televisions",
+        "setTopBox",
+        "mediaPlayer"
+      ]
+    },
+    "manufacturer": {
+      "type": "string",
+      "description": "The name of the organization who owns the design and creation of the Device. For example, 'Apple' is the manufacturer of the iPhone."
+    },
+    "model": {
+      "type": "string",
+      "description": "The name of the model for the Device. This is the common, human-readable name for the Device. The 'iPhone 6S' is a particular model of mobile phone."
+    },
+    "modelNumber": {
+      "type": "string",
+      "description": "The unique model number designation assigned by the manufacturer for this Device. Model numbers are not versions, but unique identifiers that identify a particular model configuration. While the model for a particular phone might be 'iPhone 6S' the model number would be 'A1633', or 'A1634' based on configuration at the time of sale."
+    },
+    "height": {
+      "type": "integer",
+      "description": "The horizontal size (in pixels) of the device's active display."
+    },
+    "width": {
+      "type": "integer",
+      "description": "The vertical size (in pixels) of the device's active display."
+    },
+    "colorDepth": {
+      "type": "integer",
+      "description": "The number of colors the display is able to represent."
+    }
+  }
+}

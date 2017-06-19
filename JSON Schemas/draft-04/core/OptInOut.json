@@ -1,0 +1,59 @@
+{
+  "id": "core/OptInOut.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "OptInOut",
+  "type": "object",
+  "description": "Describes a users opting in and out preferences for communication by medium and communication type.",
+  "properties": {
+    "optingEmail": {
+      "type": "string",
+      "description": "Preference for Email communication.",
+      "default": "notProvided",
+      "enum": [
+        "in",
+        "out",
+        "notProvided"
+      ]
+    },
+    "optingPhone": {
+      "type": "string",
+      "description": "Preference for Phone voice communication.",
+      "default": "notProvided",
+      "enum": [
+        "in",
+        "out",
+        "notProvided"
+      ]
+    },
+    "optingTextMessaging": {
+      "type": "string",
+      "description": "Preference for instant Text communication.",
+      "default": "notProvided",
+      "enum": [
+        "in",
+        "out",
+        "notProvided"
+      ]
+    },
+    "optingFax": {
+      "type": "string",
+      "description": "Preference for Fax communication.",
+      "default": "notProvided",
+      "enum": [
+        "in",
+        "out",
+        "notProvided"
+      ]
+    },
+    "optingAddress": {
+      "type": "string",
+      "description": "Preference for mail address communication.",
+      "default": "notProvided",
+      "enum": [
+        "in",
+        "out",
+        "notProvided"
+      ]
+    }
+  }
+}

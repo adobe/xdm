@@ -1,0 +1,16 @@
+{
+  "id": "social/TouchPoint.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "TouchPoint Extension",
+  "type": "object",
+  "description": "All TouchPoint properties specific to Adobe Social.\n",
+  "properties": {
+    "activity": {
+      "$ref": "social/Activity.json",
+      "description": "An activity."
+    }
+  },
+  "required": [
+    "activity"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "campaign/TouchPoint.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "TouchPoint Extension",
+  "type": "object",
+  "description": "All TouchPoint properties specific to Adobe Campaign.\n",
+  "properties": {
+    "message": {
+      "$ref": "campaign/Message.json",
+      "description": "A message sent to a profile or an application.\n"
+    },
+    "link": {
+      "$ref": "campaign/Link.json",
+      "description": "The link in the message for a click event.\n"
+    }
+  }
+}

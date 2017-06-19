@@ -334,6 +334,92 @@ tiff:denominator a rdf:Property ;
     ]
   ) .
 
+## structure of keywords property
+
+core:stKeyword a rdfs:Class ;
+  rdfs:label "stKeyword"@en ;
+  rdfs:comment """The list of keywords describing the asset. Values of the `stKeyword` property have been applied by a human reviewer.""" ;
+  rdfs:subClassOf rdfs:Resource .
+
+core:value a rdf:Property ;
+  rdfs:label "value"@en ;
+  rdfs:range xsd:string ;
+  rdfs:domain core:stKeyword ;
+  rdfs:comment """The keyword itself. A keyword can be considered like a tag, i.e. a short description of the content of the asset.""" ;
+  meta:mandatory true ;
+  meta:jsonName "value" .
+
+core:localecode a rdf:Property ;
+  rdfs:label "localeCode"@en ;
+  rdfs:range xsd:string ;
+  rdfs:domain core:stKeyword ;
+  rdfs:comment """Language of the keyword. The locale code should follow RFC BCP47""" ;
+  skos:example "en-US"
+  meta:mandatory false ;
+  meta:jsonName "locale_code" .
+
+core:importance a rdf:Property ;
+  rdfs:label "importance"@en ;
+  rdfs:range xsd:float ;
+  rdfs:domain core:stKeyword ;
+  rdfs:comment """The importance of the keyword on a scale from zero to one. If required repository will infer it as per its policies and add it for the keywords""" ;
+  meta:mandatory false ;
+  meta:jsonName "importance"
+  owl:withRestrictions (
+    [
+      xsd:minInclusive +0.0
+    ] [
+       xsd:maxInclusive +1.0
+     ]
+   ) .
+
+## structure of machine keywords property
+
+core:stMachineKeyword a rdfs:Class ;
+  rdfs:label "stMachineKeyword"@en ;
+  rdfs:comment """The list of machine-inferred keywords describing the asset. Values of the `stMachineKeyword` property have been applied by a machine and do not require a human reviewer.""" ;
+  rdfs:subClassOf rdfs:Resource .
+
+core:value a rdf:Property ;
+  rdfs:label "value"@en ;
+  rdfs:range xsd:string ;
+  rdfs:domain core:stMachineKeyword ;
+  rdfs:comment """The keyword itself. A keyword can be considered like a tag, i.e. a short description of the content of the asset.""" ;
+  meta:mandatory true ;
+  meta:jsonName "value" .
+
+core:localecode a rdf:Property ;
+  rdfs:label "localeCode"@en ;
+  rdfs:range xsd:string ;
+  rdfs:domain core:stMachineKeyword ;
+  rdfs:comment """Language of the keyword. The locale code should follow RFC BCP47""" ;
+  skos:example "de-CH"
+  meta:mandatory false ;
+  meta:jsonName "locale_code" .
+
+core:confidence a rdf:Property ;
+  rdfs:label "confidence"@en ;
+  rdfs:range xsd:float ;
+  rdfs:domain core:stMachineKeyword ;
+  rdfs:comment """Confidence of the algorithm that this keyword is applicable to the asset. Confidence values are numbers between zero and one. A value of .95 indicates that the algorithm expects less than 5% of all tags with the same confidence value to be mis-applied, i.e. not to be a proper description of the asset.""" ;
+  meta:mandatory false ;
+  meta:jsonName "confidence"
+  owl:withRestrictions (
+    [
+      xsd:minInclusive +0.0
+    ] [
+       xsd:maxInclusive +1.0
+     ]
+   ) .
+
+core:algorithm a rdf:Property ;
+  rdfs:label "algorithm"@en ;
+  rdfs:range xsd:string ;
+  rdfs:domain core:stMachineKeyword ;
+  rdfs:comment """Name of the algorithm which generated the keyword.""" ;
+  meta:mandatory false ;
+  meta:jsonName "algorithm" .
+
 ## container type and auxiliary structure for defining LanguageAlternative as per XMP spec
 
 core:LanguageAlternativeDetail a rdfs:Class ;
@@ -445,8 +531,8 @@ stFnt:fontFamily a rdf:Property ;
 stFnt:fontFileName a rdf:Property ;
   rdfs:range xsd:string ;
   rdfs:domain xmp:Font ;
-  rdfs:comment """The font file name (not a complete path). For example: Times New Roman.otf. Some products are not storing file extension information. XMP sepc is open about specifics of file name. If font information is stored in multiple files, use ";' separator to store file names.
-  For example: "zx___.mmm; zx__.pfm"""" ;   
+  rdfs:comment """The font file name (not a complete path). For example: Times New Roman.otf. Some products are not storing file extension information. XMP spec is open about specifics of file name. If font information is stored in multiple files, use ";' separator to store file names.
+  For example: "zx___.mmm; zx__.pfm""" ;   
   meta:mandatory false ;
   meta:userEditable false ;
   meta:immutable false ;  
@@ -721,6 +807,57 @@ core:ListOfAliasIDs a rdfs:Class ;
     a owl:Restriction ;
     owl:onProperty rdf:rest ;
     owl:allValuesFrom core:ListOfAliasIDs ;
+  ] ;
+  rdfs:subClassOf rdf:List .
+
+## auxilary container type for defining an array of Text elements
+
+core:textSet a rdfs:Class ;
+  rdfs:label "Unordered set of Text elements"@en ;
+  rdfs:comment "Set of Text elements" ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty rdf:first ;
+    owl:allValuesFrom xmp:Text ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty rdf:rest ;
+    owl:allValuesFrom core:textSet ;
+  ] ;
+  rdfs:subClassOf rdf:List .
+
+## auxilary container type for defining an array of keywords
+
+core:keywordSet a rdfs:Class ;
+  rdfs:label "Unordered set of keywords"@en ;
+  rdfs:comment "Set of keywords" ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty rdf:first ;
+    owl:allValuesFrom core:stKeyword ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty rdf:rest ;
+    owl:allValuesFrom core:keywordSet ;
+  ] ;
+  rdfs:subClassOf rdf:List .
+
+## auxilary container type for defining an array of machine generated keywords
+
+core:machineKeywordSet a rdfs:Class ;
+  rdfs:label "Unordered set of machine keywords"@en ;
+  rdfs:comment "Set of machine keywords" ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty rdf:first ;
+    owl:allValuesFrom core:stMachineKeyword ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty rdf:rest ;
+    owl:allValuesFrom core:machineKeywordSet ;
   ] ;
   rdfs:subClassOf rdf:List .
 
@@ -1413,7 +1550,42 @@ xmp:Rating a core:BaseProperty, owl:FunctionalProperty ;
    skos:note "EDITORIAL NOTE: the range (data type) should be an enum. Due to the upcoming change to json-schema I took a short-cut and made it integer. We fix it after the migration" ;
    skos:example "" ;
    rdfs:domain core:Asset .
+
+dc:subject a core:BaseProperty, owl:FunctionalProperty ;
+   rdfs:label "subject"@en ;
+   rdfs:comment """Set of descriptive phrases or keywords that describe the content of the resource. These keywords are part of the XMP metadata of the asset. Compare this with the `keyword` and `machineKeywords` properties, which provide more structure and context.""" ;
+   rdfs:range core:textSet ;
+   meta:mandatory false ;
+   meta:userEditable true ;
+   meta:immutable false ;
+   meta:jsonName "subject" ;
+   skos:note "" ;
+   skos:example "" ;
+   rdfs:domain core:Asset .
  
+core:keywords a core:BaseProperty, owl:FunctionalProperty ;
+   rdfs:label "keywords"@en ;
+   rdfs:comment """The `keywords` property is used to track human-assigned descriptive phrases like keywords or tags of an asset. Rather than a plan list of tags, it is a structured set of keywords, where keywords can have an explicit importance ranking and a locale. This allows the management of multi-lingual keywords for a given asset. For machine-generated keywords, use the `machineKeywords` property. """ ;
+   rdfs:range core:keywordSet ;
+   meta:mandatory false ;
+   meta:userEditable true ;
+   meta:immutable false ;
+   meta:jsonName "keywords" ;
+   skos:note "" ;
+   skos:example "" ;
+   rdfs:domain core:Asset .
+
+core:machinekeywords a core:BaseProperty, owl:FunctionalProperty ;
+   rdfs:label "machinekeywords"@en ;
+   rdfs:comment """The `machineKeywords` property is used to track machine-assigned descriptive phrases like keywords or tags of an asset. Rather than a plan list of tags, it is a structured set of keywords, where keywords can have an explicit confidence ranking and a locale. For human-defined keywords, use the `keywords` property. """ ;
+   rdfs:range core:machineKeywordSet ;
+   meta:mandatory false ;
+   meta:userEditable false ;
+   meta:immutable false ;
+   meta:jsonName "machine_keywords" ;
+   skos:note "" ;
+   skos:example "" ;
+   rdfs:domain core:Asset .
 
 ### Image class
 

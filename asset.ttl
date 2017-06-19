@@ -724,6 +724,23 @@ core:ListOfAliasIDs a rdfs:Class ;
   ] ;
   rdfs:subClassOf rdf:List .
 
+## auxilary container type for defining an array of Text
+
+core:ListofText a rdfs:Class ;
+  rdfs:label "Unordered array of Text"@en ;
+  rdfs:comment "Array of Text" ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty rdf:first ;
+    owl:allValuesFrom xmp:Text ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty rdf:rest ;
+    owl:allValuesFrom core:ListOfText ;
+  ] ;
+  rdfs:subClassOf rdf:List .
+
 ## auxiliary container type for defining an array of Locales
 
 core:ListOfLocales a rdfs:Class ;
@@ -1411,6 +1428,18 @@ xmp:Rating a core:BaseProperty, owl:FunctionalProperty ;
    meta:immutable false ;
    meta:jsonName "rating" ;
    skos:note "EDITORIAL NOTE: the range (data type) should be an enum. Due to the upcoming change to json-schema I took a short-cut and made it integer. We fix it after the migration" ;
+   skos:example "" ;
+   rdfs:domain core:Asset .
+
+dc:subject a core:BaseProperty, owl:FunctionalProperty ;
+   rdfs:label "subject"@en ;
+   rdfs:comment """List of descriptive phrases or keywords that specify the content of the resource. These keywords are part of the XMP metadata of the asset.""" ;
+   rdfs:range core:ListofText ;
+   meta:mandatory false ;
+   meta:userEditable true ;
+   meta:immutable false ;
+   meta:jsonName "subject" ;
+   skos:note "" ;
    skos:example "" ;
    rdfs:domain core:Asset .
  

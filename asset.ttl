@@ -69,7 +69,7 @@ xsd:decimal a rdfs:Datatype ;
   rdfs:seeAlso <https://www.w3.org/TR/rdf11-concepts/#xsd-datatypes> ;
   owl:withRestrictions (
     [
-      xsd:pattern "[+-]?[0-9]*\\.?[0-9]*"
+      xsd:pattern "[-]?[0-9]*\\.?[0-9]*"
     ]
   ) .
 
@@ -80,7 +80,7 @@ xsd:integer a rdfs:Datatype ;
   rdfs:seeAlso <https://www.w3.org/TR/rdf11-concepts/#xsd-datatypes> ;
   owl:withRestrictions (
     [
-      xsd:pattern "[-+]?[0-9]+"
+      xsd:pattern "[-]?[0-9]"
     ] [
       xsd:fractionDigits 0
     ]
@@ -92,7 +92,7 @@ xsd:double a rdfs:Datatype ;
   rdfs:seeAlso <https://www.w3.org/TR/rdf11-concepts/#xsd-datatypes> ;
   owl:withRestrictions (
     [
-      xsd:pattern "[+-]?[0-9]*\\.?[0-9]*([eE][-+]?[0-9]+)"
+      xsd:pattern "[-]?[0-9]*\\.?[0-9]*([eE][-]?[0-9])"
     ]
   ) .
 
@@ -108,7 +108,7 @@ xsd:date a rdfs:Datatype ;
   rdfs:seeAlso <https://www.w3.org/TR/rdf11-concepts/#xsd-datatypes> ;
   owl:withRestrictions (
     [
-      xsd:pattern "-?[0-9][0-9][0-9][0-9]([0-9]*)?-(0[1-9]|1[0-1])-([0-3][1-9])([+-][0-1][0-9]:[0-6][0-9])?"
+      xsd:pattern "-?[0-9][0-9][0-9][0-9]([0-9]*)?-(0[1-9]|1[0-1])-([0-3][1-9])([-][0-1][0-9]:[0-6][0-9])?"
     ]
   ) .
 
@@ -329,7 +329,7 @@ tiff:denominator a rdf:Property ;
   rdfs:comment """A value representing denominator part of a rational.""" ;
   owl:withRestrictions (
     [
-      xsd:pattern "[-+]?[1-9]+"
+      xsd:pattern "[-]?[1-9]"
     ] [
       xsd:fractionDigits 0
     ]
@@ -368,9 +368,9 @@ core:importance a rdf:Property ;
   meta:jsonName "importance" ;
   owl:withRestrictions (
     [
-      xsd:minInclusive +0.0
+      xsd:minInclusive 0.0
     ] [
-       xsd:maxInclusive +1.0
+       xsd:maxInclusive 1.0
      ]
    ) .
 
@@ -407,9 +407,9 @@ core:confidence a rdf:Property ;
   meta:jsonName "confidence" ;
   owl:withRestrictions (
     [
-      xsd:minInclusive +0.0
+      xsd:minInclusive 0.0
     ] [
-       xsd:maxInclusive +1.0
+       xsd:maxInclusive 1.0
      ]
    ) .
 
@@ -574,127 +574,127 @@ stFnt:versionString a rdf:Property ;
   meta:immutable false ;  
   meta:jsonName "version_string" .
 
-+## structure for defining Layer
- +
- +core:Layer a rdfs:Class ;
- +  rdfs:label "Layer class"@en ;
- +  rdfs:comment """Structure denoting layer information in the document. Layers are like stacked sheets. User can add transparency/opacity to see through transparent areas of a layer. They are used for compositing multiple images, adding text to an image, or adding vector graphic shapes. Users can also apply layer style to add a special effect such as a drop shadow or a glow. """ ;
- +  rdfs:subClassOf rdfs:Resource .
- +  
+## structure for defining Layer
+ 
+ core:Layer a rdfs:Class ;
+   rdfs:label "Layer class"@en ;
+   rdfs:comment """Structure denoting layer information in the document. Layers are like stacked sheets. User can add transparency/opacity to see through transparent areas of a layer. They are used for compositing multiple images, adding text to an image, or adding vector graphic shapes. Users can also apply layer style to add a special effect such as a drop shadow or a glow. """ ;
+   rdfs:subClassOf rdfs:Resource .
+   
 stLayer:type a rdf:Property ;
- +  rdfs:range xsd:string ;
- +  rdfs:domain core:Layer ;
- +  rdfs:comment """Closed choice of ("Layer", "LayerGroup") - will have "Layer" if stLayer structure is active.""";
- +  meta:mandatory true ;
- +  meta:userEditable false ;
- +  meta:immutable true ;
- +  meta:jsonName "type" .
+   rdfs:range xsd:string ;
+   rdfs:domain core:Layer ;
+   rdfs:comment """Closed choice of ("Layer", "LayerGroup") - will have "Layer" if stLayer structure is active.""";
+   meta:mandatory true ;
+   meta:userEditable false ;
+   meta:immutable true ;
+   meta:jsonName "type" .
 
- +stLayer:name a rdf:Property ;
- +  rdfs:range xsd:string ;
- +  rdfs:domain core:Layer ;
- +  rdfs:comment """Name of Layer. This would be visible to the user and users can specify names that can help them uniquely identfiy different Layers""" ;
- +  meta:mandatory false ;
- +  meta:userEditable true ;
- +  meta:immutable false ;
- +  meta:jsonName "name" .
- +
+ stLayer:name a rdf:Property ;
+   rdfs:range xsd:string ;
+   rdfs:domain core:Layer ;
+   rdfs:comment """Name of Layer. This would be visible to the user and users can specify names that can help them uniquely identfiy different Layers""" ;
+   meta:mandatory false ;
+   meta:userEditable true ;
+   meta:immutable false ;
+   meta:jsonName "name" .
+ 
   stLayer:visible a rdf:Property ;
- +  rdfs:range xsd:boolean ;
- +  rdfs:domain core:Layer ;
- +  rdfs:comment """Indicates if layer is visible in document. visible = true - Layer is visible and false - Layer is hidden (Visibility can be toggled by clicking "eye" icon in PS against each layer)""" ;
- +  meta:mandatory true ;
- +  meta:userEditable true ;
- +  meta:immutable false ;
- +  meta:jsonName "visible" .
+   rdfs:range xsd:boolean ;
+   rdfs:domain core:Layer ;
+   rdfs:comment """Indicates if layer is visible in document. visible = true - Layer is visible and false - Layer is hidden (Visibility can be toggled by clicking "eye" icon in PS against each layer)""" ;
+   meta:mandatory true ;
+   meta:userEditable true ;
+   meta:immutable false ;
+   meta:jsonName "visible" .
 
 stLayer:style a rdf:Property ;
- +  rdfs:range xsd:string ;
- +  rdfs:domain core:Layer ;
- +  rdfs:comment """A layer style is one or more effects applied to a layer or layer group. You can apply one of the preset styles provided with Photoshop or create a custom style. Photoshop provides a variety of effects—such as shadows, glows, and bevels—that change the appearance of a layer’s contents in a non-distructive way. Layer effects are linked to the layer contents. When you move or edit the contents of the layer, the same effects are applied to the modified contents. For example, if you apply a drop shadow to a text layer and then add new text, the shadow is added automatically to the new text.""" ;
- +  meta:mandatory false ;
- +  meta:userEditable false ;
- +  meta:immutable false ;
- +  meta:jsonName "style" .
+   rdfs:range xsd:string ;
+   rdfs:domain core:Layer ;
+   rdfs:comment """A layer style is one or more effects applied to a layer or layer group. You can apply one of the preset styles provided with Photoshop or create a custom style. Photoshop provides a variety of effects—such as shadows, glows, and bevels—that change the appearance of a layer’s contents in a non-distructive way. Layer effects are linked to the layer contents. When you move or edit the contents of the layer, the same effects are applied to the modified contents. For example, if you apply a drop shadow to a text layer and then add new text, the shadow is added automatically to the new text.""" ;
+   meta:mandatory false ;
+   meta:userEditable false ;
+   meta:immutable false ;
+   meta:jsonName "style" .
 
-+stLayer:originX a rdf:Property ;
- +  rdfs:range xsd:integer ;
- +  rdfs:domain core:Layer ;
- +  rdfs:comment """Origin X position - Base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards)""" ;
- +  meta:mandatory true ;
- +  meta:userEditable false ;
- +  meta:immutable false ;
- +  meta:jsonName "origin_x" .
- +
- +stLayer:originY a rdf:Property ;
- +  rdfs:range xsd:integer ;
- +  rdfs:domain core:Layer ;
- +  rdfs:comment """Origin Y position - Base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards) """ ;
- +  meta:mandatory true ;
- +  meta:userEditable false ;
- +  meta:immutable false ;
- +  meta:jsonName "origin_y" .
- +
- +stLayer:width a rdf:Property ;
- +  rdfs:range xsd:integer ;
- +  rdfs:domain core:Layer ;
- +  rdfs:comment """Width of layer """ ;
- +  meta:mandatory true ;
- +  meta:userEditable false ;
- +  meta:immutable false ;
- +  meta:jsonName "width" .
- +
- +stLayer:height a rdf:Property ;
- +  rdfs:range xsd:integer ;
- +  rdfs:domain core:Layer ;
- +  rdfs:comment """Height of layer """ ;
- +  meta:mandatory true ;
- +  meta:userEditable false ;
- +  meta:immutable false ;
- +  meta:jsonName "height" .
+stLayer:originX a rdf:Property ;
+   rdfs:range xsd:integer ;
+   rdfs:domain core:Layer ;
+   rdfs:comment """Origin X position - Base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards)""" ;
+   meta:mandatory true ;
+   meta:userEditable false ;
+   meta:immutable false ;
+   meta:jsonName "origin_x" .
+ 
+ stLayer:originY a rdf:Property ;
+   rdfs:range xsd:integer ;
+   rdfs:domain core:Layer ;
+   rdfs:comment """Origin Y position - Base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards) """ ;
+   meta:mandatory true ;
+   meta:userEditable false ;
+   meta:immutable false ;
+   meta:jsonName "origin_y" .
+ 
+ stLayer:width a rdf:Property ;
+   rdfs:range xsd:integer ;
+   rdfs:domain core:Layer ;
+   rdfs:comment """Width of layer """ ;
+   meta:mandatory true ;
+   meta:userEditable false ;
+   meta:immutable false ;
+   meta:jsonName "width" .
+ 
+ stLayer:height a rdf:Property ;
+   rdfs:range xsd:integer ;
+   rdfs:domain core:Layer ;
+   rdfs:comment """Height of layer """ ;
+   meta:mandatory true ;
+   meta:userEditable false ;
+   meta:immutable false ;
+   meta:jsonName "height" .
 
 stLayer:unit a rdf:Property ;
- +  rdfs:range xsd:String ;
- +  rdfs:domain core:Layer ;
- +  rdfs:comment """Unit used for layer coordinates (origingX, originY, width and height). For example: inch, mm, pixel, pica, point (default is pixels)""" ;
- +  meta:mandatory false ;
- +  meta:userEditable false ;
- +  meta:immutable false ;
- +  meta:jsonName "unit" .
+   rdfs:range xsd:String ;
+   rdfs:domain core:Layer ;
+   rdfs:comment """Unit used for layer coordinates (origingX, originY, width and height). For example: inch, mm, pixel, pica, point (default is pixels)""" ;
+   meta:mandatory false ;
+   meta:userEditable false ;
+   meta:immutable false ;
+   meta:jsonName "unit" .
 
-+## structure for defining LayerGroup
- +
- +core:LayerGroup a rdfs:Class ;
- +  rdfs:label "LayerGroup class"@en ;
- +  rdfs:comment """Layer group helps in preserving the hierarchy of layers in a document. User can apply common style to the group instead of working at individual layers. Layer Group can contain layers/layer groups. A structure denoting layer group information in the document.""" ;
- +  rdfs:subClassOf rdfs:Resource .
- +  
+## structure for defining LayerGroup
+ 
+ core:LayerGroup a rdfs:Class ;
+   rdfs:label "LayerGroup class"@en ;
+   rdfs:comment """Layer group helps in preserving the hierarchy of layers in a document. User can apply common style to the group instead of working at individual layers. Layer Group can contain layers/layer groups. A structure denoting layer group information in the document.""" ;
+   rdfs:subClassOf rdfs:Resource .
+   
 stLayerGroup:type a rdf:Property ;
- +  rdfs:range xsd:string ;
- +  rdfs:domain core:LayerGroup ;
- +  rdfs:comment """Closed choice of ("Layer", "LayerGroup") - will have "LayerGroup" if stLayerGroup structure is active.""";
- +  meta:mandatory true ;
- +  meta:userEditable false ;
- +  meta:immutable true ;
- +  meta:jsonName "type" .
+   rdfs:range xsd:string ;
+   rdfs:domain core:LayerGroup ;
+   rdfs:comment """Closed choice of ("Layer", "LayerGroup") - will have "LayerGroup" if stLayerGroup structure is active.""";
+   meta:mandatory true ;
+   meta:userEditable false ;
+   meta:immutable true ;
+   meta:jsonName "type" .
 
- +stLayerGroup:name a rdf:Property ;
- +  rdfs:range xsd:string ;
- +  rdfs:domain core:LayerGroup ;
- +  rdfs:comment """Name of LayerGroup. This would be visible to the user and users can specify name that can help them uniquely identfiy different Layer Groups""" ; 
- +  meta:mandatory false ;
- +  meta:userEditable true ;
- +  meta:immutable false ;
- +  meta:jsonName "name" .
+ stLayerGroup:name a rdf:Property ;
+   rdfs:range xsd:string ;
+   rdfs:domain core:LayerGroup ;
+   rdfs:comment """Name of LayerGroup. This would be visible to the user and users can specify name that can help them uniquely identfiy different Layer Groups""" ; 
+   meta:mandatory false ;
+   meta:userEditable true ;
+   meta:immutable false ;
+   meta:jsonName "name" .
 
 stLayerGroup:layers a rdf:Property ;
- +  rdfs:range xsd:string ;
- +  rdfs:domain core:LayerGroup ;
- +  rdfs:comment """List of layers/layer groups in a layer group""" 
- +  meta:mandatory false ;
- +  meta:userEditable true ;
- +  meta:immutable false ;
- +  meta:jsonName "layers" .
+   rdfs:range xsd:string ;
+   rdfs:domain core:LayerGroup ;
+   rdfs:comment """List of layers/layer groups in a layer group""" 
+   meta:mandatory false ;
+   meta:userEditable true ;
+   meta:immutable false ;
+   meta:jsonName "layers" .
 
 ## structure for defining Artboards
 
@@ -1098,7 +1098,7 @@ core:repositoryCreatedDate a core:BaseProperty, owl:FunctionalProperty ;
   meta:immutable true ;
   meta:jsonName "repository_created_date" ;
   skos:note "YYYY-MM-DDThh:mm:ss.sTZD" ;
-  skos:example "2016-07-12T12:13:05.123+01:00" ;
+  skos:example "2016-07-12T12:13:05.12301:00" ;
   rdfs:domain core:Asset .
 
 dc:creator a core:BaseProperty, owl:FunctionalProperty ;

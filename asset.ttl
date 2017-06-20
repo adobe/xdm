@@ -21,6 +21,7 @@
 @prefix xmpMM: <http://ns.adobe.com/xap/1.0/mm/> .
 @prefix xmpDM: <http://ns.adobe.com/xmp/1.0/DynamicMedia/> .
 @prefix xmpRights: <http://ns.adobe.com/xap/1.0/rights/> .
+@prefix xmpTPg: <http://ns.adobe.com/xap/1.0/t/pg/> .
 @prefix xmp: <http://ns.adobe.com/xap/1.0/> .
 @prefix stDim: <http://ns.adobe.com/xap/1.0/sType/Dimensions#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
@@ -1484,6 +1485,18 @@ core:etag a core:BaseProperty, owl:FunctionalProperty ;
   meta:userEditable false ;
   meta:immutable false ;
   meta:jsonName "etag" ;
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Asset .
+
+xmpTPg:NPages a core:BaseProperty, owl:FunctionalProperty ;
+  rdfs:label "Number of pages"@en ;
+  rdfs:comment """The number of pages in the document (including any in contained documents).""" ;
+  rdfs:range xsd:integer ;
+  meta:mandatory false ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "n_pages" ;
   skos:note "" ;
   skos:example "" ;
   rdfs:domain core:Asset .

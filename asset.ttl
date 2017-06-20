@@ -354,7 +354,7 @@ core:localecode a rdf:Property ;
   rdfs:range xsd:string ;
   rdfs:domain core:stKeyword ;
   rdfs:comment """Language of the keyword. The locale code should follow RFC BCP47""" ;
-  skos:example "en-US"
+  skos:example "en-US" ;
   meta:mandatory false ;
   meta:jsonName "locale_code" .
 
@@ -364,7 +364,7 @@ core:importance a rdf:Property ;
   rdfs:domain core:stKeyword ;
   rdfs:comment """The importance of the keyword on a scale from zero to one. If required repository will infer it as per its policies and add it for the keywords""" ;
   meta:mandatory false ;
-  meta:jsonName "importance"
+  meta:jsonName "importance" ;
   owl:withRestrictions (
     [
       xsd:minInclusive +0.0
@@ -393,7 +393,7 @@ core:localecode a rdf:Property ;
   rdfs:range xsd:string ;
   rdfs:domain core:stMachineKeyword ;
   rdfs:comment """Language of the keyword. The locale code should follow RFC BCP47""" ;
-  skos:example "de-CH"
+  skos:example "de-CH" ;
   meta:mandatory false ;
   meta:jsonName "locale_code" .
 
@@ -403,7 +403,7 @@ core:confidence a rdf:Property ;
   rdfs:domain core:stMachineKeyword ;
   rdfs:comment """Confidence of the algorithm that this keyword is applicable to the asset. Confidence values are numbers between zero and one. A value of .95 indicates that the algorithm expects less than 5% of all tags with the same confidence value to be mis-applied, i.e. not to be a proper description of the asset.""" ;
   meta:mandatory false ;
-  meta:jsonName "confidence"
+  meta:jsonName "confidence" ;
   owl:withRestrictions (
     [
       xsd:minInclusive +0.0
@@ -546,7 +546,7 @@ stFnt:fontName a rdf:Property ;
   meta:userEditable false ;
   meta:immutable false ;  
   meta:jsonName "font_name" ;
-  skos:note "fontName is manadatory to identify the font used in an asset but an asset may not have a font property if it has only images/vector arts (no text).""" ;
+  skos:note """fontName is manadatory to identify the font used in an asset but an asset may not have a font property if it has only images/vector arts (no text).""" .
   
 stFnt:fontType a rdf:Property ;
   rdfs:range xmp:Text ;
@@ -556,7 +556,7 @@ stFnt:fontType a rdf:Property ;
   meta:userEditable false ;
   meta:immutable false ;  
   meta:jsonName "font_type" ;
-  skos:note "fontType is manadatory to identify font category but an asset may not have a font property if it has only images/vector arts (no text).""" ;
+  skos:note """fontType is manadatory to identify font category but an asset may not have a font property if it has only images/vector arts (no text).""" .
 
 stFnt:versionString a rdf:Property ;
   rdfs:range xsd:string ;

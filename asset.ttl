@@ -123,12 +123,12 @@ xsd:time a rdfs:Datatype ;
   ) .
 
 xsd:dateTime a rdfs:Datatype ;
-  rdfs:label "DateTime" ;
+  rdfs:label "Date Time" ;
   rdfs:seeAlso <https://www.w3.org/TR/rdf11-concepts/#xsd-datatypes> ;
   rdfs:comment "Date and time with or without timezone" .
 
 xsd:dateTimeStamp a rdfs:Datatype ;
-  rdfs:label "DateTimeStamp" ;
+  rdfs:label "Date Time Stamp" ;
   rdfs:seeAlso <https://www.w3.org/TR/rdf11-concepts/#xsd-datatypes> ;
   rdfs:comment "Date and time with required timezone" .
 
@@ -146,12 +146,12 @@ xmp:Text a rdfs:Datatype ;
   rdfs:comment """A possibly empty Unicode string""" .
 
 xmp:MIMEType a rdfs:Datatype ;
-  rdfs:label "MIMEType"@en ;
+  rdfs:label "MIME Type"@en ;
   owl:onDatatype xmp:Text ;
   rdfs:comment """A simple text value denoting a digital file format as defined in IETF RFC 2046.""" .
 
 xmp:AgentName a rdfs:Datatype ;
-  rdfs:label "AgentName"@en ;
+  rdfs:label "Agent Name"@en ;
   owl:onDatatype xmp:Text ;
   rdfs:comment """The name of an XMP processor, a Text value.
 It is recommended that the value use this format convention:
@@ -167,7 +167,7 @@ xmp:GUID a rdfs:Datatype ;
   rdfs:comment """A string representing a “globally unique identifier”""" .
 
 xmp:ProperName a rdfs:Datatype ;
-  rdfs:label "ProperName"@en ;
+  rdfs:label "Proper Name"@en ;
   owl:onDatatype xsd:string ;
   rdfs:comment """A simple text value denoting the name of a person or organization.""" .
 
@@ -235,7 +235,7 @@ Leading zeros are not necessary for the for DDD, MM, and SS values. The DDD,MM.m
 ## structure for defining AliasID
 
 core:AliasID a rdfs:Class ;
-  rdfs:label "AliasID"@en ;
+  rdfs:label "Alias ID"@en ;
   rdfs:comment """A class representing an Alias ID structure with id and system properties""" ;
   rdfs:subClassOf rdfs:Resource .
 
@@ -254,18 +254,18 @@ core:externalID a rdf:Property ;
 ## structure for defining CopyrightOwnerDetail
 
 plus:CopyrightOwnerDetail a rdfs:Class ;
-  rdfs:label "CopyrightOwnerDetail"@en ;
+  rdfs:label "Copyright Owner Detail"@en ;
   rdfs:comment """Contains properties that provide for a Copyright Owner.""" ;
   rdfs:subClassOf rdfs:Resource .
 
 plus:OwnerID a rdf:Property ;
-  rdfs:label "Copyright owner ID"@en ;
+  rdfs:label "Copyright Owner ID"@en ;
   rdfs:range xmp:Text ;
   rdfs:domain plus:CopyrightOwnerDetail ;
   rdfs:comment """ID of the copyright owner. If the PLUS-ID being stored in this property is registered with the PLUS Coalition, it should be expressed as a URL. For example: http://plus-id.org/PLUS-ID.""" .
 
 plus:OwnerName a rdf:Property ;
-  rdfs:label "Copyright owner name"@en ;
+  rdfs:label "Copyright Owner name"@en ;
   rdfs:range xmp:ProperName ;
   rdfs:domain plus:CopyrightOwnerDetail ;
   rdfs:comment """Name of the copyright owner.""" .
@@ -273,18 +273,18 @@ plus:OwnerName a rdf:Property ;
 ## structure for defining MilestoneInfo
 
 core:MilestoneInfo a rdfs:Class ;
-  rdfs:label "MilestoneInfo"@en ;
+  rdfs:label "Milestone Info"@en ;
   rdfs:comment """A structure containing information about version of an asset.""" ;
   rdfs:subClassOf rdfs:Resource .
 
 core:MilestoneLabel a rdf:Property ;
-  rdfs:label "MilestoneLabel"@en ;
+  rdfs:label "Milestone Label"@en ;
   rdfs:range xsd:string ;
   rdfs:domain core:MilestoneInfo ;
   rdfs:comment """Label for the version of an asset""" .
 
 core:MilestoneDescription a rdf:Property ;
-  rdfs:label "MilestoneDescription"@en ;
+  rdfs:label "Milestone Description"@en ;
   rdfs:range xsd:string ;
   rdfs:domain core:MilestoneInfo ;
   rdfs:comment """Description for the version of an asset""" .
@@ -341,7 +341,7 @@ tiff:denominator a rdf:Property ;
 ## structure of keywords property
 
 core:stKeyword a rdfs:Class ;
-  rdfs:label "stKeyword"@en ;
+  rdfs:label "Keyword"@en ;
   rdfs:comment """The list of keywords describing the asset. Values of the `stKeyword` property have been applied by a human reviewer.""" ;
   rdfs:subClassOf rdfs:Resource .
 
@@ -354,7 +354,7 @@ core:value a rdf:Property ;
   meta:jsonName "value" .
 
 core:localecode a rdf:Property ;
-  rdfs:label "localeCode"@en ;
+  rdfs:label "locale Code"@en ;
   rdfs:range xsd:string ;
   rdfs:domain core:stKeyword ;
   rdfs:comment """Language of the keyword. The locale code should follow RFC BCP47""" ;
@@ -380,7 +380,7 @@ core:importance a rdf:Property ;
 ## structure of machine keywords property
 
 core:stMachineKeyword a rdfs:Class ;
-  rdfs:label "stMachineKeyword"@en ;
+  rdfs:label "Machine Keyword"@en ;
   rdfs:comment """The list of machine-inferred keywords describing the asset. Values of the `stMachineKeyword` property have been applied by a machine and do not require a human reviewer.""" ;
   rdfs:subClassOf rdfs:Resource .
 
@@ -438,7 +438,7 @@ core:LanguageAlternativeLang a rdf:Property ;
   rdfs:domain core:LanguageAlternativeDetail .
 
 xmp:LanguageAlternative a rdfs:Class ;
-  rdfs:label "LocaleStruct"@en ;
+  rdfs:label "Locale Struct"@en ;
   rdfs:comment "An alternative array of simple text items. Language alternatives facilitate the selection of a simple text item based on a desired language." ;
   rdfs:subClassOf [
     a owl:Restriction ;
@@ -455,7 +455,7 @@ xmp:LanguageAlternative a rdfs:Class ;
 ## structure for defining ResourceEvent as per XMP spec
 
 xmp:ResourceEvent a rdfs:Class ;
-  rdfs:label "ResourceEvent"@en ;
+  rdfs:label "Resource Event"@en ;
   rdfs:comment """A structure denoting a high-level event that occurred in the processing of a resource.""" ;
   rdfs:subClassOf rdfs:Resource .
 
@@ -492,7 +492,7 @@ stEvt:when a rdf:Property ;
 ## structure for defining Font
 
 xmp:Font a rdfs:Class ;
-  rdfs:label "Font class"@en ;
+  rdfs:label "Font"@en ;
   rdfs:comment """Structure containing the characteristics of a font used in a document.""" ;
   rdfs:subClassOf rdfs:Resource .
   
@@ -580,7 +580,7 @@ stFnt:versionString a rdf:Property ;
 ## structure for defining Layer
 
 core:Layer a rdfs:Class ;
-  rdfs:label "Layer class"@en ;
+  rdfs:label "Layer"@en ;
   rdfs:comment """Structure denoting layer information in the document. Layers are like stacked sheets. User can add transparency/opacity to see through transparent areas of a layer. They are used for compositing multiple images, adding text to an image, or adding vector graphic shapes. Users can also apply layer style to add a special effect such as a drop shadow or a glow. """ ;
   rdfs:subClassOf rdfs:Resource .
   
@@ -668,7 +668,7 @@ stLayer:unit a rdf:Property ;
 ## structure for defining LayerGroup
 
 core:LayerGroup a rdfs:Class ;
-  rdfs:label "LayerGroup class"@en ;
+  rdfs:label "Layer Group"@en ;
   rdfs:comment """Layer group helps in preserving the hierarchy of layers in a document. User can apply common style to the group instead of working at individual layers. Layer Group can contain layers/layer groups. A structure denoting layer group information in the document.""" ;
   rdfs:subClassOf rdfs:Resource .
   
@@ -702,7 +702,7 @@ stLayerGroup:layers a rdf:Property ;
 ## structure for defining Artboards
 
 core:Artboard a rdfs:Class ;
-  rdfs:label "Artboard class"@en ;
+  rdfs:label "Artboard"@en ;
   rdfs:comment """Structure containing the characteristics of an Artboard used in a document. An artboard contains areas of your artwork that can be printed or exported. 
   Documents created in Adobe Illustrator and Adobe XD can have multiple Artboards. 
   For Adobe Photoshop users, it's a special type of layer group which clips the contents of  contained elements to its boundaries. Objects outside Artboard area will not be visible
@@ -766,7 +766,7 @@ stArtboard:unit a rdf:Property ;
 ## auxiliary container type for defining an array of ProperName as per XMP spec
 
 core:ListOfProperNames a rdfs:Class ;
-  rdfs:label "Ordered array of ProperName"@en ;
+  rdfs:label "List of Proper Names"@en ;
   rdfs:comment "Ordered array of xmp:ProperName" ;
   rdfs:subClassOf [
     a owl:Restriction ;
@@ -783,7 +783,7 @@ core:ListOfProperNames a rdfs:Class ;
 ## auxiliary container type for defining an array of xsd:string
 
 core:StringList a rdfs:Class ;
-  rdfs:label "List of Strings"@en ;
+  rdfs:label "String List"@en ;
   rdfs:comment "An ordered list of strings" ;
   rdfs:subClassOf [
     a owl:Restriction ;
@@ -800,8 +800,8 @@ core:StringList a rdfs:Class ;
 ## auxiliary container type for defining an array of AliasID
 
 core:ListOfAliasIDs a rdfs:Class ;
-  rdfs:label "Unordered array of AliasID"@en ;
-  rdfs:comment "Array of AliasID" ;
+  rdfs:label "List of Alias IDs"@en ;
+  rdfs:comment "Unordered array of AliasID" ;
   rdfs:subClassOf [
     a owl:Restriction ;
     owl:onProperty rdf:first ;
@@ -817,8 +817,8 @@ core:ListOfAliasIDs a rdfs:Class ;
 ## auxilary container type for defining an array of Text elements
 
 core:textSet a rdfs:Class ;
-  rdfs:label "Unordered set of Text elements"@en ;
-  rdfs:comment "Set of Text elements" ;
+  rdfs:label "Text Set"@en ;
+  rdfs:comment "Unordered set of Text elements" ;
   rdfs:subClassOf [
     a owl:Restriction ;
     owl:onProperty rdf:first ;
@@ -834,8 +834,8 @@ core:textSet a rdfs:Class ;
 ## auxilary container type for defining an array of keywords
 
 core:keywordSet a rdfs:Class ;
-  rdfs:label "Unordered set of keywords"@en ;
-  rdfs:comment "Set of keywords" ;
+  rdfs:label "Keyword Set"@en ;
+  rdfs:comment "Unordered set of keywords" ;
   rdfs:subClassOf [
     a owl:Restriction ;
     owl:onProperty rdf:first ;
@@ -851,8 +851,8 @@ core:keywordSet a rdfs:Class ;
 ## auxilary container type for defining an array of machine generated keywords
 
 core:machineKeywordSet a rdfs:Class ;
-  rdfs:label "Unordered set of machine keywords"@en ;
-  rdfs:comment "Set of machine keywords" ;
+  rdfs:label "Machine Keyword Set"@en ;
+  rdfs:comment "Unordered set of machine keywords" ;
   rdfs:subClassOf [
     a owl:Restriction ;
     owl:onProperty rdf:first ;
@@ -868,8 +868,8 @@ core:machineKeywordSet a rdfs:Class ;
 ## auxiliary container type for defining an array of Locales
 
 core:ListOfLocales a rdfs:Class ;
-  rdfs:label "Locales"@en ;
-  rdfs:comment "Unordered array of locales" ;
+  rdfs:label "List of Locales"@en ;
+  rdfs:comment "Unordered set of locales" ;
   rdfs:subClassOf [
     a owl:Restriction ;
     owl:onProperty rdf:first ;
@@ -885,8 +885,8 @@ core:ListOfLocales a rdfs:Class ;
 ## auxiliary container type for defining an array of CopyrightOwnerDetail
 
 core:ListOfCopyrightOwners a rdfs:Class ;
-  rdfs:label "Ordered array of structure having two fields : CopyrightOwnerId and CopyrightOwnerName"@en ;
-  rdfs:comment "Array of plus:CopyrightOwnerDetail" ;
+  rdfs:label "List of Copyright Owners"@en ;
+  rdfs:comment "Ordered list of plus:CopyrightOwnerDetail, having two fields: CopyrightOwnerId and CopyrightOwnerName" ;
   rdfs:subClassOf [
     a owl:Restriction ;
     owl:onProperty rdf:first ;
@@ -902,8 +902,8 @@ core:ListOfCopyrightOwners a rdfs:Class ;
 ## auxiliary container type for defining an array of ResourceEvent as per XMP spec
 
 core:ResourceEventList a rdfs:Class ;
-  rdfs:label "Ordered array of ResourceEvent"@en ;
-  rdfs:comment """ordered array of xmp:ResourceEvent""" ;
+  rdfs:label "Resource Event List"@en ;
+  rdfs:comment """Ordered list of xmp:ResourceEvent""" ;
   rdfs:subClassOf [
     a owl:Restriction ;
     owl:onProperty rdf:first ;
@@ -919,7 +919,7 @@ core:ResourceEventList a rdfs:Class ;
 ## auxiliary container type for defining an array of xap:stFnt
 
 core:FontSet a rdfs:Class ;
-  rdfs:label "A set of fonts"@en ;
+  rdfs:label "Font Set"@en ;
   rdfs:comment "A set of fonts, order does not matter" ;
   rdfs:subClassOf [
     a owl:Restriction ;
@@ -932,7 +932,7 @@ core:FontSet a rdfs:Class ;
 ## auxiliary container type for defining an array of Layer 
 
 core:LayerList a rdfs:Class ;
-  rdfs:label "Ordered array of Layer/LayerGroup"@en ;
+  rdfs:label "Layer List"@en ;
   rdfs:comment "Ordered array of core:Layer/Core:LayerGroup used inside a document. " .
 # Commented this out as it breaks the machinery also doesn't validate: https://github.com/IDLabResearch/TurtleValidator
 #  rdfs:subClassOf [
@@ -950,7 +950,7 @@ core:LayerList a rdfs:Class ;
 ## auxiliary container type for defining an Array of Artboards
 
 core:ArtboardSet a rdfs:Class ;
-  rdfs:label "A set of Artboards"@en ;
+  rdfs:label "Artboard Set"@en ;
   rdfs:comment "An unordered set of artboards. ArtboardSet helps in getting access to all artboards used in a document ";
   rdfs:subClassOf [
     a owl:Restriction ;
@@ -967,12 +967,12 @@ core:ArtboardSet a rdfs:Class ;
 # abstract base classes for schema classes and properties
 
 core:BaseClass a rdfs:Class ;
-  rdfs:label "BaseClass"@en ;
+  rdfs:label "Base Class"@en ;
   rdfs:comment "Base class of all Data Model Classes" ;
   rdfs:subClassOf rdfs:Resource .
 
 core:BaseProperty a rdfs:Class ;
-  rdfs:label "BaseProperty"@en ;
+  rdfs:label "Base Property"@en ;
   rdfs:comment "Base class of all Data Model Properties" ;
   rdfs:subClassOf [
     a owl:Restriction ;
@@ -1017,7 +1017,7 @@ meta:mandatory a rdf:Property ;
 
 core:Asset a rdfs:Class ;
   rdfs:label "Asset"@en ;
-  rdfs:comment "OneAdobe Cloud Asset Core Class" ;
+  rdfs:comment "A class for Digital Assets" ;
   rdfs:subClassOf core:BaseClass .
 
 #### Property section: Asset Identity
@@ -1049,7 +1049,7 @@ xmpMM:DocumentID a core:BaseProperty, owl:FunctionalProperty ;
   rdfs:domain core:Asset .
 
 core:assetName a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "Asset name"@en ;
+  rdfs:label "Asset Name"@en ;
   rdfs:comment "Name of the asset in the repository. This could be a file name or any name provided by the repository to the asset." ;
   rdfs:range xsd:string ;
   meta:mandatory false ;
@@ -1146,7 +1146,7 @@ xmp:CreatorTool a core:BaseProperty, owl:FunctionalProperty ;
 
 xmp:ModifyDate a core:BaseProperty, owl:FunctionalProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
-  rdfs:label "Modify Date"@en ;
+  rdfs:label "Mofification Date"@en ;
   rdfs:comment """The date and time when asset was last modified. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".""" ;
   rdfs:range xsd:dateTime ;
   meta:mandatory true ;
@@ -1370,7 +1370,7 @@ xmpMM:History a core:BaseProperty, owl:FunctionalProperty ;
 
 plus:CopyrightOwnerID a core:BaseProperty, owl:FunctionalProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
-  rdfs:label "CopyrightOwnerID"@en ;
+  rdfs:label "Copyright Owner ID"@en ;
   rdfs:comment """ID of the copyright owner.
 If the PLUS-ID being stored in this property is registered with the PLUS Coalition, it should be expressed as a URL. For example: http://plus-id.org/PLUS-ID""" ;
   rdfs:range xmp:Text ;
@@ -1384,7 +1384,7 @@ If the PLUS-ID being stored in this property is registered with the PLUS Coaliti
 
 plus:CopyrightOwnerName a core:BaseProperty, owl:FunctionalProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
-  rdfs:label "CopyrightOwnerName"@en ;
+  rdfs:label "Copyright Owner Name"@en ;
   rdfs:comment """Name of Copyright Owner.""" ;
   rdfs:range xmp:ProperName ;
   meta:mandatory false ;
@@ -1569,7 +1569,7 @@ xmp:Rating a core:BaseProperty, owl:FunctionalProperty ;
    rdfs:domain core:Asset .
 
 dc:subject a core:BaseProperty, owl:FunctionalProperty ;
-   rdfs:label "subject"@en ;
+   rdfs:label "Subject"@en ;
    rdfs:comment """Set of descriptive phrases or keywords that describe the content of the resource. These keywords are part of the XMP metadata of the asset. Compare this with the `keyword` and `machineKeywords` properties, which provide more structure and context.""" ;
    rdfs:range core:textSet ;
    meta:mandatory false ;
@@ -1581,7 +1581,7 @@ dc:subject a core:BaseProperty, owl:FunctionalProperty ;
    rdfs:domain core:Asset .
  
 core:keywords a core:BaseProperty, owl:FunctionalProperty ;
-   rdfs:label "keywords"@en ;
+   rdfs:label "Keywords"@en ;
    rdfs:comment """The `keywords` property is used to track human-assigned descriptive phrases like keywords or tags of an asset. Rather than a plan list of tags, it is a structured set of keywords, where keywords can have an explicit importance ranking and a locale. This allows the management of multi-lingual keywords for a given asset. For machine-generated keywords, use the `machineKeywords` property. """ ;
    rdfs:range core:keywordSet ;
    meta:mandatory false ;
@@ -1593,7 +1593,7 @@ core:keywords a core:BaseProperty, owl:FunctionalProperty ;
    rdfs:domain core:Asset .
 
 core:machinekeywords a core:BaseProperty, owl:FunctionalProperty ;
-   rdfs:label "machinekeywords"@en ;
+   rdfs:label "Machine Keywords"@en ;
    rdfs:comment """The `machineKeywords` property is used to track machine-assigned descriptive phrases like keywords or tags of an asset. Rather than a plan list of tags, it is a structured set of keywords, where keywords can have an explicit confidence ranking and a locale. For human-defined keywords, use the `keywords` property. """ ;
    rdfs:range core:machineKeywordSet ;
    meta:mandatory false ;
@@ -1636,7 +1636,7 @@ tiff:Orientation a core:BaseProperty, owl:FunctionalProperty ;
 
 tiff:XResolution a core:BaseProperty, owl:FunctionalProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
-  rdfs:label "Image X-Resolution"@en ;
+  rdfs:label "X-Resolution"@en ;
   rdfs:comment """Horizontal resolution in pixels per ResolutionUnit.""" ;
   rdfs:range tiff:Rational ;
   meta:mandatory false ;
@@ -1649,7 +1649,7 @@ tiff:XResolution a core:BaseProperty, owl:FunctionalProperty ;
 
 tiff:YResolution a core:BaseProperty, owl:FunctionalProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
-  rdfs:label "Image Y-Resolution"@en ;
+  rdfs:label "Y-Resolution"@en ;
   rdfs:comment """Vertical resolution in pixels per ResolutionUnit.""" ;
   rdfs:range tiff:Rational ;
   meta:mandatory false ;
@@ -1688,7 +1688,7 @@ core:numberOfPixels a core:BaseProperty, owl:FunctionalProperty ;
 
 photoshop:ColorMode a core:BaseProperty, owl:FunctionalProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
-  rdfs:label "ColorMode"@en ;
+  rdfs:label "Color Mode"@en ;
   rdfs:comment """The color mode or image mode determines how colors combine based on the number of channels in a color model. Different color modes result in different levels of color detail and file size. For instance, use CMYK color mode for images in a full-color print brochure, and use RGB color mode for images in web or e-mail to reduce file size while maintaining color integrity.""" ;
   rdfs:range photoshop:ColorModeChoice ;
   meta:mandatory false ;
@@ -1709,7 +1709,7 @@ photoshop:ColorMode a core:BaseProperty, owl:FunctionalProperty ;
 
 photoshop:ICCProfile a core:BaseProperty, owl:FunctionalProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
-  rdfs:label "ICCProfile"@en ;
+  rdfs:label "ICC Profile"@en ;
   rdfs:comment """The color profile, such as AppleRGB, AdobeRGB1998.""" ;
   rdfs:range xmp:Text ;
   meta:mandatory false ;
@@ -1790,7 +1790,7 @@ core:extent a core:BaseProperty, owl:FunctionalProperty ;
   rdfs:domain core:Video .
 
 xmpDM:videoFrameRate a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "Frame Rate"@en ;
+  rdfs:label "Video Frame Rate"@en ;
   rdfs:comment """The video frame rate in frames per second (FPS). Predefined values include: 
 24
 NTSC

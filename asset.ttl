@@ -178,8 +178,9 @@ core:URI a rdfs:Datatype ;
   rdfs:comment """A string representing URI as defined in IETF RFC 3986.""" .
 
 tiff:OrientationMode a rdfs:Datatype ;
-  rdfs:label "Closed choice of integer."@en ;
-  rdfs:comment """1 = Horizontal (normal)
+  rdfs:label "Orientation Mode"@en ;
+  rdfs:comment """Orientation of the asset. Closed choice of integer:
+1 = Horizontal (normal)
 2 = Mirror horizontal
 3 = Rotate 180
 4 = Mirror vertical
@@ -194,8 +195,9 @@ tiff:OrientationMode a rdfs:Datatype ;
   ) .
 
 tiff:ResolutionUnitChoice  a rdfs:Datatype ;
-  rdfs:label "Closed choice of integer"@en ;
-  rdfs:comment """2 = inches
+  rdfs:label "Resolution Unit Choice"@en ;
+  rdfs:comment """Unit choice for measuring resolution. Closed choice of integer:
+2 = inches
 3 = centimeters""" ;
   owl:withRestrictions (
     [
@@ -204,8 +206,9 @@ tiff:ResolutionUnitChoice  a rdfs:Datatype ;
   ) .
 
 photoshop:ColorModeChoice  a rdfs:Datatype ;
-  rdfs:label "Closed choice of integer."@en ;
-  rdfs:comment """0 = Bitmap
+  rdfs:label "Color Mode Choice"@en ;
+  rdfs:comment """Color mode. Closed choice of integer:
+0 = Bitmap
 1 = Gray scale
 2 = Indexed color
 3 = RGB color

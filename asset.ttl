@@ -21,6 +21,7 @@
 @prefix xmpMM: <http://ns.adobe.com/xap/1.0/mm/> .
 @prefix xmpDM: <http://ns.adobe.com/xmp/1.0/DynamicMedia/> .
 @prefix xmpRights: <http://ns.adobe.com/xap/1.0/rights/> .
+@prefix xmpTPg: <http://ns.adobe.com/xap/1.0/t/pg/> .
 @prefix xmp: <http://ns.adobe.com/xap/1.0/> .
 @prefix stDim: <http://ns.adobe.com/xap/1.0/sType/Dimensions#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
@@ -334,6 +335,92 @@ tiff:denominator a rdf:Property ;
     ]
   ) .
 
+## structure of keywords property
+
+core:stKeyword a rdfs:Class ;
+  rdfs:label "stKeyword"@en ;
+  rdfs:comment """The list of keywords describing the asset. Values of the `stKeyword` property have been applied by a human reviewer.""" ;
+  rdfs:subClassOf rdfs:Resource .
+
+core:value a rdf:Property ;
+  rdfs:label "value"@en ;
+  rdfs:range xsd:string ;
+  rdfs:domain core:stKeyword ;
+  rdfs:comment """The keyword itself. A keyword can be considered like a tag, i.e. a short description of the content of the asset.""" ;
+  meta:mandatory true ;
+  meta:jsonName "value" .
+
+core:localecode a rdf:Property ;
+  rdfs:label "localeCode"@en ;
+  rdfs:range xsd:string ;
+  rdfs:domain core:stKeyword ;
+  rdfs:comment """Language of the keyword. The locale code should follow RFC BCP47""" ;
+  skos:example "en-US" ;
+  meta:mandatory false ;
+  meta:jsonName "locale_code" .
+
+core:importance a rdf:Property ;
+  rdfs:label "importance"@en ;
+  rdfs:range xsd:float ;
+  rdfs:domain core:stKeyword ;
+  rdfs:comment """The importance of the keyword on a scale from zero to one. If required repository will infer it as per its policies and add it for the keywords""" ;
+  meta:mandatory false ;
+  meta:jsonName "importance" ;
+  owl:withRestrictions (
+    [
+      xsd:minInclusive +0.0
+    ] [
+       xsd:maxInclusive +1.0
+     ]
+   ) .
+
+## structure of machine keywords property
+
+core:stMachineKeyword a rdfs:Class ;
+  rdfs:label "stMachineKeyword"@en ;
+  rdfs:comment """The list of machine-inferred keywords describing the asset. Values of the `stMachineKeyword` property have been applied by a machine and do not require a human reviewer.""" ;
+  rdfs:subClassOf rdfs:Resource .
+
+core:value a rdf:Property ;
+  rdfs:label "value"@en ;
+  rdfs:range xsd:string ;
+  rdfs:domain core:stMachineKeyword ;
+  rdfs:comment """The keyword itself. A keyword can be considered like a tag, i.e. a short description of the content of the asset.""" ;
+  meta:mandatory true ;
+  meta:jsonName "value" .
+
+core:localecode a rdf:Property ;
+  rdfs:label "localeCode"@en ;
+  rdfs:range xsd:string ;
+  rdfs:domain core:stMachineKeyword ;
+  rdfs:comment """Language of the keyword. The locale code should follow RFC BCP47""" ;
+  skos:example "de-CH" ;
+  meta:mandatory false ;
+  meta:jsonName "locale_code" .
+
+core:confidence a rdf:Property ;
+  rdfs:label "confidence"@en ;
+  rdfs:range xsd:float ;
+  rdfs:domain core:stMachineKeyword ;
+  rdfs:comment """Confidence of the algorithm that this keyword is applicable to the asset. Confidence values are numbers between zero and one. A value of .95 indicates that the algorithm expects less than 5% of all tags with the same confidence value to be mis-applied, i.e. not to be a proper description of the asset.""" ;
+  meta:mandatory false ;
+  meta:jsonName "confidence" ;
+  owl:withRestrictions (
+    [
+      xsd:minInclusive +0.0
+    ] [
+       xsd:maxInclusive +1.0
+     ]
+   ) .
+
+core:algorithm a rdf:Property ;
+  rdfs:label "algorithm"@en ;
+  rdfs:range xsd:string ;
+  rdfs:domain core:stMachineKeyword ;
+  rdfs:comment """Name of the algorithm which generated the keyword.""" ;
+  meta:mandatory false ;
+  meta:jsonName "algorithm" .
+
 ## container type and auxiliary structure for defining LanguageAlternative as per XMP spec
 
 core:LanguageAlternativeDetail a rdfs:Class ;
@@ -445,8 +532,8 @@ stFnt:fontFamily a rdf:Property ;
 stFnt:fontFileName a rdf:Property ;
   rdfs:range xsd:string ;
   rdfs:domain xmp:Font ;
-  rdfs:comment """The font file name (not a complete path). For example: Times New Roman.otf. Some products are not storing file extension information. XMP sepc is open about specifics of file name. If font information is stored in multiple files, use ";' separator to store file names.
-  For example: "zx___.mmm; zx__.pfm"""" ;   
+  rdfs:comment """The font file name (not a complete path). For example: Times New Roman.otf. Some products are not storing file extension information. XMP spec is open about specifics of file name. If font information is stored in multiple files, use ";' separator to store file names.
+  For example: "zx___.mmm; zx__.pfm""" ;   
   meta:mandatory false ;
   meta:userEditable false ;
   meta:immutable false ;  
@@ -460,7 +547,7 @@ stFnt:fontName a rdf:Property ;
   meta:userEditable false ;
   meta:immutable false ;  
   meta:jsonName "font_name" ;
-  skos:note "fontName is manadatory to identify the font used in an asset but an asset may not have a font property if it has only images/vector arts (no text).""" ;
+  skos:note """fontName is manadatory to identify the font used in an asset but an asset may not have a font property if it has only images/vector arts (no text).""" .
   
 stFnt:fontType a rdf:Property ;
   rdfs:range xmp:Text ;
@@ -470,7 +557,7 @@ stFnt:fontType a rdf:Property ;
   meta:userEditable false ;
   meta:immutable false ;  
   meta:jsonName "font_type" ;
-  skos:note "fontType is manadatory to identify font category but an asset may not have a font property if it has only images/vector arts (no text).""" ;
+  skos:note """fontType is manadatory to identify font category but an asset may not have a font property if it has only images/vector arts (no text).""" .
 
 stFnt:versionString a rdf:Property ;
   rdfs:range xsd:string ;
@@ -487,127 +574,127 @@ stFnt:versionString a rdf:Property ;
   meta:immutable false ;  
   meta:jsonName "version_string" .
 
-+## structure for defining Layer
- +
- +core:Layer a rdfs:Class ;
- +  rdfs:label "Layer class"@en ;
- +  rdfs:comment """Structure denoting layer information in the document. Layers are like stacked sheets. User can add transparency/opacity to see through transparent areas of a layer. They are used for compositing multiple images, adding text to an image, or adding vector graphic shapes. Users can also apply layer style to add a special effect such as a drop shadow or a glow. """ ;
- +  rdfs:subClassOf rdfs:Resource .
- +  
-stLayer:type a rdf:Property ;
- +  rdfs:range xsd:string ;
- +  rdfs:domain core:Layer ;
- +  rdfs:comment """Closed choice of ("Layer", "LayerGroup") - will have "Layer" if stLayer structure is active.""";
- +  meta:mandatory true ;
- +  meta:userEditable false ;
- +  meta:immutable true ;
- +  meta:jsonName "type" .
+## structure for defining Layer
 
- +stLayer:name a rdf:Property ;
- +  rdfs:range xsd:string ;
- +  rdfs:domain core:Layer ;
- +  rdfs:comment """Name of Layer. This would be visible to the user and users can specify names that can help them uniquely identfiy different Layers""" ;
- +  meta:mandatory false ;
- +  meta:userEditable true ;
- +  meta:immutable false ;
- +  meta:jsonName "name" .
- +
+core:Layer a rdfs:Class ;
+  rdfs:label "Layer class"@en ;
+  rdfs:comment """Structure denoting layer information in the document. Layers are like stacked sheets. User can add transparency/opacity to see through transparent areas of a layer. They are used for compositing multiple images, adding text to an image, or adding vector graphic shapes. Users can also apply layer style to add a special effect such as a drop shadow or a glow. """ ;
+  rdfs:subClassOf rdfs:Resource .
+  
+stLayer:type a rdf:Property ;
+  rdfs:range xsd:string ;
+  rdfs:domain core:Layer ;
+  rdfs:comment """Closed choice of ("Layer", "LayerGroup") - will have "Layer" if stLayer structure is active.""";
+  meta:mandatory true ;
+  meta:userEditable false ;
+  meta:immutable true ;
+  meta:jsonName "type" .
+
+stLayer:name a rdf:Property ;
+  rdfs:range xsd:string ;
+  rdfs:domain core:Layer ;
+  rdfs:comment """Name of Layer. This would be visible to the user and users can specify names that can help them uniquely identfiy different Layers""" ;
+  meta:mandatory false ;
+  meta:userEditable true ;
+  meta:immutable false ;
+  meta:jsonName "name" .
+
   stLayer:visible a rdf:Property ;
- +  rdfs:range xsd:boolean ;
- +  rdfs:domain core:Layer ;
- +  rdfs:comment """Indicates if layer is visible in document. visible = true - Layer is visible and false - Layer is hidden (Visibility can be toggled by clicking "eye" icon in PS against each layer)""" ;
- +  meta:mandatory true ;
- +  meta:userEditable true ;
- +  meta:immutable false ;
- +  meta:jsonName "visible" .
+  rdfs:range xsd:boolean ;
+  rdfs:domain core:Layer ;
+  rdfs:comment """Indicates if layer is visible in document. visible = true - Layer is visible and false - Layer is hidden (Visibility can be toggled by clicking "eye" icon in PS against each layer)""" ;
+  meta:mandatory true ;
+  meta:userEditable true ;
+  meta:immutable false ;
+  meta:jsonName "visible" .
 
 stLayer:style a rdf:Property ;
- +  rdfs:range xsd:string ;
- +  rdfs:domain core:Layer ;
- +  rdfs:comment """A layer style is one or more effects applied to a layer or layer group. You can apply one of the preset styles provided with Photoshop or create a custom style. Photoshop provides a variety of effects—such as shadows, glows, and bevels—that change the appearance of a layer’s contents in a non-distructive way. Layer effects are linked to the layer contents. When you move or edit the contents of the layer, the same effects are applied to the modified contents. For example, if you apply a drop shadow to a text layer and then add new text, the shadow is added automatically to the new text.""" ;
- +  meta:mandatory false ;
- +  meta:userEditable false ;
- +  meta:immutable false ;
- +  meta:jsonName "style" .
+  rdfs:range xsd:string ;
+  rdfs:domain core:Layer ;
+  rdfs:comment """A layer style is one or more effects applied to a layer or layer group. You can apply one of the preset styles provided with Photoshop or create a custom style. Photoshop provides a variety of effects—such as shadows, glows, and bevels—that change the appearance of a layer’s contents in a non-distructive way. Layer effects are linked to the layer contents. When you move or edit the contents of the layer, the same effects are applied to the modified contents. For example, if you apply a drop shadow to a text layer and then add new text, the shadow is added automatically to the new text.""" ;
+  meta:mandatory false ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "style" .
 
-+stLayer:originX a rdf:Property ;
- +  rdfs:range xsd:integer ;
- +  rdfs:domain core:Layer ;
- +  rdfs:comment """Origin X position - Base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards)""" ;
- +  meta:mandatory true ;
- +  meta:userEditable false ;
- +  meta:immutable false ;
- +  meta:jsonName "origin_x" .
- +
- +stLayer:originY a rdf:Property ;
- +  rdfs:range xsd:integer ;
- +  rdfs:domain core:Layer ;
- +  rdfs:comment """Origin Y position - Base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards) """ ;
- +  meta:mandatory true ;
- +  meta:userEditable false ;
- +  meta:immutable false ;
- +  meta:jsonName "origin_y" .
- +
- +stLayer:width a rdf:Property ;
- +  rdfs:range xsd:integer ;
- +  rdfs:domain core:Layer ;
- +  rdfs:comment """Width of layer """ ;
- +  meta:mandatory true ;
- +  meta:userEditable false ;
- +  meta:immutable false ;
- +  meta:jsonName "width" .
- +
- +stLayer:height a rdf:Property ;
- +  rdfs:range xsd:integer ;
- +  rdfs:domain core:Layer ;
- +  rdfs:comment """Height of layer """ ;
- +  meta:mandatory true ;
- +  meta:userEditable false ;
- +  meta:immutable false ;
- +  meta:jsonName "height" .
+stLayer:originX a rdf:Property ;
+  rdfs:range xsd:integer ;
+  rdfs:domain core:Layer ;
+  rdfs:comment """Origin X position - Base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards)""" ;
+  meta:mandatory true ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "origin_x" .
+
+stLayer:originY a rdf:Property ;
+  rdfs:range xsd:integer ;
+  rdfs:domain core:Layer ;
+  rdfs:comment """Origin Y position - Base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards) """ ;
+  meta:mandatory true ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "origin_y" .
+
+stLayer:width a rdf:Property ;
+  rdfs:range xsd:integer ;
+  rdfs:domain core:Layer ;
+  rdfs:comment """Width of layer """ ;
+  meta:mandatory true ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "width" .
+
+stLayer:height a rdf:Property ;
+  rdfs:range xsd:integer ;
+  rdfs:domain core:Layer ;
+  rdfs:comment """Height of layer """ ;
+  meta:mandatory true ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "height" .
 
 stLayer:unit a rdf:Property ;
- +  rdfs:range xsd:String ;
- +  rdfs:domain core:Layer ;
- +  rdfs:comment """Unit used for layer coordinates (origingX, originY, width and height). For example: inch, mm, pixel, pica, point (default is pixels)""" ;
- +  meta:mandatory false ;
- +  meta:userEditable false ;
- +  meta:immutable false ;
- +  meta:jsonName "unit" .
+  rdfs:range xsd:String ;
+  rdfs:domain core:Layer ;
+  rdfs:comment """Unit used for layer coordinates (origingX, originY, width and height). For example: inch, mm, pixel, pica, point (default is pixels)""" ;
+  meta:mandatory false ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "unit" .
 
-+## structure for defining LayerGroup
- +
- +core:LayerGroup a rdfs:Class ;
- +  rdfs:label "LayerGroup class"@en ;
- +  rdfs:comment """Layer group helps in preserving the hierarchy of layers in a document. User can apply common style to the group instead of working at individual layers. Layer Group can contain layers/layer groups. A structure denoting layer group information in the document.""" ;
- +  rdfs:subClassOf rdfs:Resource .
- +  
+## structure for defining LayerGroup
+
+core:LayerGroup a rdfs:Class ;
+  rdfs:label "LayerGroup class"@en ;
+  rdfs:comment """Layer group helps in preserving the hierarchy of layers in a document. User can apply common style to the group instead of working at individual layers. Layer Group can contain layers/layer groups. A structure denoting layer group information in the document.""" ;
+  rdfs:subClassOf rdfs:Resource .
+  
 stLayerGroup:type a rdf:Property ;
- +  rdfs:range xsd:string ;
- +  rdfs:domain core:LayerGroup ;
- +  rdfs:comment """Closed choice of ("Layer", "LayerGroup") - will have "LayerGroup" if stLayerGroup structure is active.""";
- +  meta:mandatory true ;
- +  meta:userEditable false ;
- +  meta:immutable true ;
- +  meta:jsonName "type" .
+  rdfs:range xsd:string ;
+  rdfs:domain core:LayerGroup ;
+  rdfs:comment """Closed choice of ("Layer", "LayerGroup") - will have "LayerGroup" if stLayerGroup structure is active.""";
+  meta:mandatory true ;
+  meta:userEditable false ;
+  meta:immutable true ;
+  meta:jsonName "type" .
 
- +stLayerGroup:name a rdf:Property ;
- +  rdfs:range xsd:string ;
- +  rdfs:domain core:LayerGroup ;
- +  rdfs:comment """Name of LayerGroup. This would be visible to the user and users can specify name that can help them uniquely identfiy different Layer Groups""" ; 
- +  meta:mandatory false ;
- +  meta:userEditable true ;
- +  meta:immutable false ;
- +  meta:jsonName "name" .
+stLayerGroup:name a rdf:Property ;
+  rdfs:range xsd:string ;
+  rdfs:domain core:LayerGroup ;
+  rdfs:comment """Name of LayerGroup. This would be visible to the user and users can specify name that can help them uniquely identfiy different Layer Groups""" ; 
+  meta:mandatory false ;
+  meta:userEditable true ;
+  meta:immutable false ;
+  meta:jsonName "name" .
 
 stLayerGroup:layers a rdf:Property ;
- +  rdfs:range xsd:string ;
- +  rdfs:domain core:LayerGroup ;
- +  rdfs:comment """List of layers/layer groups in a layer group""" 
- +  meta:mandatory false ;
- +  meta:userEditable true ;
- +  meta:immutable false ;
- +  meta:jsonName "layers" .
+  rdfs:range xsd:string ;
+  rdfs:domain core:LayerGroup ;
+  rdfs:comment """List of layers/layer groups in a layer group""" ;
+  meta:mandatory false ;
+  meta:userEditable true ;
+  meta:immutable false ;
+  meta:jsonName "layers" .
 
 ## structure for defining Artboards
 
@@ -649,7 +736,7 @@ stArtboard:originY a rdf:Property ;
 stArtboard:width a rdf:Property ;
   rdfs:range xsd:integer ;
   rdfs:domain core:Artboard ;
-  rdfs:comment """Width of the artboard""" 
+  rdfs:comment """Width of the artboard""" ;
   meta:mandatory true ;
   meta:userEditable false ;
   meta:immutable false ;
@@ -658,7 +745,7 @@ stArtboard:width a rdf:Property ;
 stArtboard:height a rdf:Property ;
   rdfs:range xsd:integer ;
   rdfs:domain core:Artboard ;
-  rdfs:comment """Height of the artboard""" 
+  rdfs:comment """Height of the artboard""" ;
   meta:mandatory true ;
   meta:userEditable false ;
   meta:immutable false ;
@@ -721,6 +808,57 @@ core:ListOfAliasIDs a rdfs:Class ;
     a owl:Restriction ;
     owl:onProperty rdf:rest ;
     owl:allValuesFrom core:ListOfAliasIDs ;
+  ] ;
+  rdfs:subClassOf rdf:List .
+
+## auxilary container type for defining an array of Text elements
+
+core:textSet a rdfs:Class ;
+  rdfs:label "Unordered set of Text elements"@en ;
+  rdfs:comment "Set of Text elements" ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty rdf:first ;
+    owl:allValuesFrom xmp:Text ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty rdf:rest ;
+    owl:allValuesFrom core:textSet ;
+  ] ;
+  rdfs:subClassOf rdf:List .
+
+## auxilary container type for defining an array of keywords
+
+core:keywordSet a rdfs:Class ;
+  rdfs:label "Unordered set of keywords"@en ;
+  rdfs:comment "Set of keywords" ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty rdf:first ;
+    owl:allValuesFrom core:stKeyword ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty rdf:rest ;
+    owl:allValuesFrom core:keywordSet ;
+  ] ;
+  rdfs:subClassOf rdf:List .
+
+## auxilary container type for defining an array of machine generated keywords
+
+core:machineKeywordSet a rdfs:Class ;
+  rdfs:label "Unordered set of machine keywords"@en ;
+  rdfs:comment "Set of machine keywords" ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty rdf:first ;
+    owl:allValuesFrom core:stMachineKeyword ;
+  ] ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty rdf:rest ;
+    owl:allValuesFrom core:machineKeywordSet ;
   ] ;
   rdfs:subClassOf rdf:List .
 
@@ -792,24 +930,25 @@ core:FontSet a rdfs:Class ;
 
 core:LayerList a rdfs:Class ;
   rdfs:label "Ordered array of Layer/LayerGroup"@en ;
-  rdfs:comment "Ordered array of core:Layer/Core:LayerGroup used inside a document. """ ;
-  rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty rdf:first ;
-    # Not sure, what is the right way to use union to define collection of two different types - I'm trying to find this information
-    # will update it later
-    owl:unionOf rdf:parseType="Collection" ;
-    owl:class core:Layer ;
-    owl:class core:LayerGroup ;
-    skos:note "Not sure, what is the right way to use union to define collection of two different types - I'm trying to find this information
-    # will update it later" ; 
-    #owl:allValuesFrom core:Layer ;
+  rdfs:comment "Ordered array of core:Layer/Core:LayerGroup used inside a document. " .
+# Commented this out as it breaks the machinery also doesn't validate: https://github.com/IDLabResearch/TurtleValidator
+#  rdfs:subClassOf [
+#    a owl:Restriction ;
+#    owl:onProperty rdf:first ;
+#    # Not sure, what is the right way to use union to define collection of two different types - I'm trying to find this information
+#    # will update it later
+#    owl:unionOf rdf:parseType="Collection" ;
+#    owl:class core:Layer ;
+#    owl:class core:LayerGroup ;
+#    skos:note "Not sure, what is the right way to use union to define collection of two different types - I'm trying to find this information
+#    # will update it later" ; 
+#    #owl:allValuesFrom core:Layer ;
 
 ## auxiliary container type for defining an Array of Artboards
 
 core:ArtboardSet a rdfs:Class ;
   rdfs:label "A set of Artboards"@en ;
-  rdfs:comment "An unordered set of artboards. ArtboardSet helps in getting access to all artboards used in a document """ ;
+  rdfs:comment "An unordered set of artboards. ArtboardSet helps in getting access to all artboards used in a document ";
   rdfs:subClassOf [
     a owl:Restriction ;
     owl:onProperty rdf:first ;
@@ -1351,6 +1490,18 @@ core:etag a core:BaseProperty, owl:FunctionalProperty ;
   skos:example "" ;
   rdfs:domain core:Asset .
 
+xmpTPg:NPages a core:BaseProperty, owl:FunctionalProperty ;
+  rdfs:label "Number of pages"@en ;
+  rdfs:comment """The number of pages in the document (including any in contained documents).""" ;
+  rdfs:range xsd:integer ;
+  meta:mandatory false ;
+  meta:userEditable false ;
+  meta:immutable false ;
+  meta:jsonName "n_pages" ;
+  skos:note "" ;
+  skos:example "" ;
+  rdfs:domain core:Asset .
+
 exif:GPSAltitude a core:BaseProperty, owl:FunctionalProperty ;
   rdfs:label "GPS Altitude"@en ;
   rdfs:comment """GPS tag 6, 0x06. Indicates altitude in meters.""" ;
@@ -1413,7 +1564,42 @@ xmp:Rating a core:BaseProperty, owl:FunctionalProperty ;
    skos:note "EDITORIAL NOTE: the range (data type) should be an enum. Due to the upcoming change to json-schema I took a short-cut and made it integer. We fix it after the migration" ;
    skos:example "" ;
    rdfs:domain core:Asset .
+
+dc:subject a core:BaseProperty, owl:FunctionalProperty ;
+   rdfs:label "subject"@en ;
+   rdfs:comment """Set of descriptive phrases or keywords that describe the content of the resource. These keywords are part of the XMP metadata of the asset. Compare this with the `keyword` and `machineKeywords` properties, which provide more structure and context.""" ;
+   rdfs:range core:textSet ;
+   meta:mandatory false ;
+   meta:userEditable true ;
+   meta:immutable false ;
+   meta:jsonName "subject" ;
+   skos:note "" ;
+   skos:example "" ;
+   rdfs:domain core:Asset .
  
+core:keywords a core:BaseProperty, owl:FunctionalProperty ;
+   rdfs:label "keywords"@en ;
+   rdfs:comment """The `keywords` property is used to track human-assigned descriptive phrases like keywords or tags of an asset. Rather than a plan list of tags, it is a structured set of keywords, where keywords can have an explicit importance ranking and a locale. This allows the management of multi-lingual keywords for a given asset. For machine-generated keywords, use the `machineKeywords` property. """ ;
+   rdfs:range core:keywordSet ;
+   meta:mandatory false ;
+   meta:userEditable true ;
+   meta:immutable false ;
+   meta:jsonName "keywords" ;
+   skos:note "" ;
+   skos:example "" ;
+   rdfs:domain core:Asset .
+
+core:machinekeywords a core:BaseProperty, owl:FunctionalProperty ;
+   rdfs:label "machinekeywords"@en ;
+   rdfs:comment """The `machineKeywords` property is used to track machine-assigned descriptive phrases like keywords or tags of an asset. Rather than a plan list of tags, it is a structured set of keywords, where keywords can have an explicit confidence ranking and a locale. For human-defined keywords, use the `keywords` property. """ ;
+   rdfs:range core:machineKeywordSet ;
+   meta:mandatory false ;
+   meta:userEditable false ;
+   meta:immutable false ;
+   meta:jsonName "machine_keywords" ;
+   skos:note "" ;
+   skos:example "" ;
+   rdfs:domain core:Asset .
 
 ### Image class
 

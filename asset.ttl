@@ -148,6 +148,8 @@ xmp:Text a rdfs:Datatype ;
 xmp:MIMEType a rdfs:Datatype ;
   rdfs:label "MIME Type"@en ;
   owl:onDatatype xmp:Text ;
+  rdfs:seeAlso <https://www.ietf.org/rfc/rfc2046.txt> ;
+  skos:example "image/png" ;
   rdfs:comment """A simple text value denoting a digital file format as defined in IETF RFC 2046.""" .
 
 xmp:AgentName a rdfs:Datatype ;
@@ -175,6 +177,7 @@ core:URI a rdfs:Datatype ;
   rdfs:label "URI"@en ;
   owl:onDatatype xsd:string ;
   rdfs:seeAlso <https://www.ietf.org/rfc/rfc3986.txt> ;
+  skos:example "https://www.adobe.io" ;
   rdfs:comment """A string representing URI as defined in IETF RFC 3986.""" .
 
 tiff:OrientationMode a rdfs:Datatype ;
@@ -360,7 +363,8 @@ core:localecode a rdf:Property ;
   rdfs:label "locale Code"@en ;
   rdfs:range xsd:string ;
   rdfs:domain core:stKeyword ;
-  rdfs:comment """Language of the keyword. The locale code should follow RFC BCP47""" ;
+  rdfs:comment """Language of the keyword. The locale code should follow RFC BCP 47""" ;
+  rdfs:seeAlso <https://tools.ietf.org/html/bcp47> ;
   skos:example "en-US" ;
   meta:mandatory false ;
   meta:jsonName "locale_code" .
@@ -396,10 +400,11 @@ core:value a rdf:Property ;
   meta:jsonName "value" .
 
 core:localecode a rdf:Property ;
-  rdfs:label "localeCode"@en ;
+  rdfs:label "locale Code"@en ;
   rdfs:range xsd:string ;
   rdfs:domain core:stMachineKeyword ;
   rdfs:comment """Language of the keyword. The locale code should follow RFC BCP47""" ;
+  rdfs:seeAlso <https://tools.ietf.org/html/bcp47> ;
   skos:example "de-CH" ;
   meta:mandatory false ;
   meta:jsonName "locale_code" .
@@ -1457,6 +1462,7 @@ dc:language a core:BaseProperty, owl:FunctionalProperty ;
   meta:immutable false ;
   meta:jsonName "type" ;
   skos:note "XMP usage is a list of languages used in the content of the resource. Languages are specified in language code as defined in IETF RFC 3066. " ;
+  rdfs:seeAlso <https://www.ietf.org/rfc/rfc3066.txt> ;
   skos:example "pt-BR" ;
   rdfs:domain core:Asset .
 

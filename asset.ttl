@@ -137,6 +137,7 @@ xsd:dateTimeStamp a rdfs:Datatype ;
 xml:lang a rdfs:Datatype ;
   owl:onDatatype xsd:string ;
   rdfs:comment """Language string as defined in IETF RFC 3066""" ;
+  rdfs:seeAlso <https://www.ietf.org/rfc/rfc3066.txt> ;
   skos:example "DE-de" .
 
 xmp:Text a rdfs:Datatype ;

@@ -1,0 +1,12 @@
+{
+  "name": "xdm-models",
+  "version": "0.0.1",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "node ./node_modules/turtle-validator/TurtleValidator.js asset.ttl && node ./node_modules/turtle-validator/TurtleValidator.js core.ttl "
+  },
+  "devDependencies": {
+    "turtle-validator": "1.0.1"
+  }
+}

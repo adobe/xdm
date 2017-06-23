@@ -10,6 +10,21 @@ The machine readable schema source files ([RDF/S](https://www.w3.org/TR/rdf-sche
 
 The tooling project (e.g. for generating HTML documentation, Turtle-to-JSON-LD conversion) is located in the [AdobeCloudPlatform/machinery](https://git.corp.adobe.com/AdobeCloudPlatform/machinery) git repository. 
 
+### Validation
+
+This project contains a minimal validation script that depends on [NPM](https://www.npmjs.com). You can use it to validate the TTL syntax after making changes to any of the `.ttl` files.
+
+```bash
+$ npm install
+$ npm test
+
+Validator finished with 0 warnings and 0 errors.
+Validator finished with 0 warnings and 0 errors.
+
+```
+
+If you see warnings or error messages, fix them before making a pull request.
+
 ## Naming Conventions
 
 * Names of Classes, Types and Stricts use CamelCase notation (i.e. they start with a capital letter), e.g. `Asset`

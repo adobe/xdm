@@ -1,4 +1,4 @@
-# AdobeCloudPlatform Data Model Schema
+# Experience Data Model (XDM) Schema
 
 Machine readable semantic data model schemas for the [unified Adobe Cloud API](https://wiki.corp.adobe.com/display/ctooperations/Content+and+Data+Workstream).
 

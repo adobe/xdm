@@ -176,7 +176,7 @@
       "$ref": "core/Order.json",
       "description": "Order placed for one or more products.\n"
     },
-    "campaingnContext": {
+    "campaignContext": {
       "$ref": "campaign/TouchPoint.json",
       "description": "Additional information about the touchpoint specific to campaign.\n"
     },

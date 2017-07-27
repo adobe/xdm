@@ -3,7 +3,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Message",
   "type": "object",
-  "description": "A message part of a campaign activity.\nA message is created each `Person` targeted in a campaign activity. If a person\nis targeted twice within the same activity, two messages will be created.\n",
+  "description": "A message part of a campaign activity.\nA message is created for each `Person` targeted in a campaign activity. If a person\nis targeted twice within the same activity, two messages will be created.\n",
   "properties": {
     "id": {
       "type": "string"

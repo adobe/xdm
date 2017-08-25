@@ -67,7 +67,20 @@ Another goal for XDM is interoperability with [Microsoft's Common Data Model (CD
 
 ### Design for Consumability
 
+While there will be almost certainly multiple implementations of parts of XDM across Adobe (sometimes sequentially, sometimes in parallel), the number of internal implementations (producers) will be massively outstripped by the number of external, consuming implementations of XDM.
 
+All of the design guidelines above help the consumer:
+
+* **Longevity** means consuming applications rarely need to be changed
+*  **Clarity** means that concepts are self-explanatory
+*  **Continuity** means that existing knowledge can be re-applied
+*  **Compatibility** means that implementations can cross Microsoft and Adobe products
+
+Additional aspects of standard design that aid with consumability are: 
+
+* principle of least astonishment: don't surprise the consumer
+* avoid unnecessary complexity: don't introduce indirections that are not needed
+* the principle of minimal verbosity: make keep things as short as possible, but not shorter
 
 ## Coding Styleguides
 

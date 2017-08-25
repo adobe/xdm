@@ -39,6 +39,20 @@ The design decisions you make today, will impact future developers, who will hav
 
 ### Design for Continuity
 
+XDM is not an isolated standard, but a standard that incorporates and subsumes existing standards. Whenever possible, use existing standards, or "borrow" concepts from existing standards. Don't reinvent the wheel when you can steal the wheel.
+
+Standards that XDM is relying on include:
+
+* [XMP](http://www.adobe.com/products/xmp.html)
+* [schema.org](http://schema.org)
+* [JSON Schema](http://json-schema.org)
+* [EXIF](http://www.exif.org)
+* [TIFF](https://www.iso.org/standard/34342.html)
+* [W3C Activity Streams](https://www.w3.org/TR/activitystreams-core/)
+* [Dublin Core](http://dublincore.org/)
+* [URI](https://www.ietf.org/rfc/rfc3986.txt)
+* [BCP 47 – Tags for Identifying Languages](https://tools.ietf.org/html/bcp47)
+
 ### Design for Compatibility
 
 ### Design for Consumability

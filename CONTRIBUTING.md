@@ -29,6 +29,14 @@ Each commit message:
 * Should contain the issue ID like `[ACP-123]`
 * Can contain the tag `[trivial]` for trivial changes that don't relate to an issue
 
+## Design Guidelines
+
+### Design for Longevity
+
+Our goal is to establish a universal standard for the experience business. As such, this standard's lifetime will be comparable to standards like PDF (24 years old), EXIF (22 years old), or HTML (24 years old).
+
+The design decisions you make today, will impact future developers, who will have only limited understanding, patience, or sympathy for constraints dictated by your current implementation.
+
 ## Coding Styleguides
 
 There are no coding style guides yet.

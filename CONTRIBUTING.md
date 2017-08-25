@@ -37,6 +37,14 @@ Our goal is to establish a universal standard for the experience business. As su
 
 The design decisions you make today, will impact future developers, who will have only limited understanding, patience, or sympathy for constraints dictated by your current implementation.
 
+### Design for Clarity
+
+As XDM will be consumed and implemented by many highly different applications, which in turn will be used by digital experience professionals such as marketers, designers, advertisers, or digital analysts, which will be exposed to names and concepts introduced and solidified in XDM, clarity in naming is of utmost importance.
+
+When names can refer to a business concept or a lower-level technical concept, the shorter, simpler name shall be reserved for the high-level business concept.
+
+For example, for a marketer, an *event* is something that happens or takes place, or a planned public or social occasion. For a developer, an *event* in event-driven programming is a low level user- or system action. As the term event is highly relevant to experiences in the more general sense, the shorter, unqualified term shall be used for the business concept.
+
 ### Design for Continuity
 
 XDM is not an isolated standard, but a standard that incorporates and subsumes existing standards. Whenever possible, use existing standards, or "borrow" concepts from existing standards. Don't reinvent the wheel when you can steal the wheel.
@@ -58,6 +66,8 @@ Standards that XDM is relying on include:
 Another goal for XDM is interoperability with [Microsoft's Common Data Model (CDM)](https://docs.microsoft.com/en-us/common-data-service/entity-reference/common-data-model). This means, that definitions that are present in CDM should be used or extended, where appropriate, by XDM. XDM should not attempt to duplicate definitions that are present in CDM.
 
 ### Design for Consumability
+
+
 
 ## Coding Styleguides
 

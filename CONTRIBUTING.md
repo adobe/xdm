@@ -37,6 +37,12 @@ Our goal is to establish a universal standard for the experience business. As su
 
 The design decisions you make today, will impact future developers, who will have only limited understanding, patience, or sympathy for constraints dictated by your current implementation.
 
+### Design for Continuity
+
+### Design for Compatibility
+
+### Design for Consumability
+
 ## Coding Styleguides
 
 There are no coding style guides yet.

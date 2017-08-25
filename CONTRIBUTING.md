@@ -6,11 +6,11 @@ The Experience Data Model (XDM) project is developed as an Open Standard within 
 
 XDM uses a **review then commit** process, which means that no changes are being made without an *editor* approving the change.
 
-# Before you Contribute
+## Before you Contribute
 
 All contributions should be discussed on the Mailing List first. Send a mail to [Grp-XDM-API-WGs](mailto:Grp-XDM-API-WGs@adobe.com) with the subject line `[XDM] …` to get the discussion started. It also helps if you can refer to an issue in the [ACP JIRA project](https://jira.corp.adobe.com/projects/ACP).
 
-# How to Contribute
+## How to Contribute
 
 1. Fork the repository
 2. Create a pull request
@@ -37,20 +37,20 @@ There are no coding style guides yet.
 
 For all writing, please follow the [Adobe I/O style guide](https://github.com/trieloff/styleguide/blob/master/opensource/doc-style.md).
 
-# How Contributions get Reviewed
+## How Contributions get Reviewed
 
 The XDM project differentiates between major and minor contributions.
 
 * Minor contributions: contributions that do not change the meaning of the standard, such as corrections to typos, word order or formatting. Contributions to the project's `README.md` or `CONTRIBUTING.md` are also minor contributions.
 * Major contributions: all other contributions.
 
-## Minor Contributions
+### Minor Contributions
 
 One of the editors will look at the pull request within one week and flag it as `minor`. The editor will then either merge or reject the pull request. If you haven't heard back from the editors within a week, it is not impolite to send a reminder to [Grp-XDM-API-WGs](mailto:Grp-XDM-API-WGs@adobe.com).
 
 Feedback on the pull request will be given in writing, in GitHub.
 
-## Major Contributions
+### Major Contributions
 
 One of the editors will look at the pull request within one week and flag it as `major`. The editor will then provide feedback on the pull request in GitHub. 
 

@@ -55,6 +55,8 @@ Standards that XDM is relying on include:
 
 ### Design for Compatibility
 
+Another goal for XDM is interoperability with [Microsoft's Common Data Model (CDM)](https://docs.microsoft.com/en-us/common-data-service/entity-reference/common-data-model). This means, that definitions that are present in CDM should be used or extended, where appropriate, by XDM. XDM should not attempt to duplicate definitions that are present in CDM.
+
 ### Design for Consumability
 
 ## Coding Styleguides

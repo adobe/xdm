@@ -2,6 +2,17 @@
 
 Machine readable semantic data model schemas for the [unified Adobe Cloud API](https://wiki.corp.adobe.com/display/ctooperations/Content+and+Data+Workstream).
 
+## Project Layout
+
+The project is laid out in the following way:
+
+- `docs`: Markdown files that contain front-matter, introduction, and non-normative parts of XDM
+- `JSON Schemas`: JSON schema files constituting the normative part of XDM
+- `*.ttl`: legacy schema files in Turtle Syntax that have not yet been converted into JSON Schema
+- `package.json`: a build file for `npm` that allows the generation of Markdown from the JSON Schema source files and (later) the generation of an AEM package to be deployed on the Adobe I/O Website
+- `README.md`: this file
+- `CONTRIBUTING.md`: guidelines for contributors, covering process, conventions and design guidelines
+
 ## Schema files
 
 The machine readable schema source files ([RDF/S](https://www.w3.org/TR/rdf-schema/) in [Turtle Syntax](https://www.w3.org/TR/turtle/)) are located in the root directory of this project.

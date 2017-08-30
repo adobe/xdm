@@ -7,7 +7,7 @@ Machine readable semantic data model schemas for the [unified Adobe Cloud API](h
 The project is laid out in the following way:
 
 - `docs`: Markdown files that contain front-matter, introduction, and non-normative parts of XDM
-- `JSON Schemas`: JSON schema files constituting the normative part of XDM
+- `schemas`: JSON schema files constituting the normative part of XDM
 - `*.ttl`: legacy schema files in Turtle Syntax that have not yet been converted into JSON Schema
 - `package.json`: a build file for `npm` that allows the generation of Markdown from the JSON Schema source files and (later) the generation of an AEM package to be deployed on the Adobe I/O Website
 - `README.md`: this file

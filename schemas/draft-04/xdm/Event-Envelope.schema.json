@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$id": "xdm/Event-Envelope.json",
-    "defintions": {
+    "definitions": {
         "extra-properties": {
             "properties": {
                 "object-type": {
@@ -41,7 +41,7 @@
             "$ref": "../activity-streams-2/activity.schema.json"
         },
         {
-            "$ref": "#/defintions/extra-properties"
+            "$ref": "#/definitions/extra-properties"
         },
         {
             "required": [

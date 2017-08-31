@@ -1,0 +1,72 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "definitions": {
+        "single-object-or-link": {
+            "anyOf": [
+                {
+                    "$ref": "uri.schema.json"
+                },
+                {
+                    "$ref": "object.schema.json"
+                },
+                {
+                    "$ref": "link.schema.json"
+                }
+            ]
+        },
+        "multiple-objects-or-links": {
+            "items": {
+                "$ref": "#/definitions/single-object-or-link"
+            },
+            "type": "array"
+        },
+        "object-or-link-or-array-of-object-or-link": {
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/single-object-or-link"
+                },
+                {
+                    "$ref": "#/definitions/multiple-objects-or-links"
+                }
+            ]
+        },
+        "extra-properties": {
+            "properties": {
+                "actor": {
+                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-actor",
+                    "$ref": "#/definitions/object-or-link-or-array-of-object-or-link"
+                },
+                "object": {
+                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object",
+                    "$ref": "#/definitions/object-or-link-or-array-of-object-or-link"
+                },
+                "target": {
+                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-target",
+                    "$ref": "#/definitions/object-or-link-or-array-of-object-or-link"
+                },
+                "result": {
+                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-result",
+                    "$ref": "#/definitions/object-or-link-or-array-of-object-or-link"
+                },
+                "origin": {
+                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-origin",
+                    "$ref": "#/definitions/object-or-link-or-array-of-object-or-link"
+                },
+                "instrument": {
+                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-instrument",
+                    "$ref": "#/definitions/object-or-link-or-array-of-object-or-link"
+                }
+            }
+        }
+    },
+    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-activity",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "object.schema.json"
+        },
+        {
+            "$ref": "#/definitions/extra-properties"
+        }
+    ]
+}

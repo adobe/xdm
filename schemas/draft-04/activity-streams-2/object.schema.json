@@ -1,0 +1,223 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "definitions": {
+        "single-object-or-link": {
+            "anyOf": [
+                {
+                    "$ref": "uri.schema.json"
+                },
+                {
+                    "$ref": "object.schema.json"
+                },
+                {
+                    "$ref": "link.schema.json"
+                }
+            ]
+        },
+        "multiple-objects-or-links": {
+            "items": {
+                "$ref": "#/definitions/single-object-or-link"
+            },
+            "type": "array"
+        },
+        "object-or-link-or-array-of-object-or-link": {
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/single-object-or-link"
+                },
+                {
+                    "$ref": "#/definitions/multiple-objects-or-links"
+                }
+            ]
+        },
+        "single-image-or-link": {
+            "anyOf": [
+                {
+                    "$ref": "uri.schema.json"
+                },
+                {
+                    "$ref": "image.schema.json"
+                },
+                {
+                    "$ref": "link.schema.json"
+                }
+            ]
+        },
+        "multiple-images-or-links": {
+            "items": {
+                "$ref": "#/definitions/single-image-or-link"
+            },
+            "type": "array"
+        },
+        "image-or-link-or-array-of-image-or-link": {
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/single-image-or-link"
+                },
+                {
+                    "$ref": "#/definitions/multiple-images-or-links"
+                }
+            ]
+        },
+        "single-xsd:anyURI-or-link": {
+            "anyOf": [
+                {
+                    "$ref": "xsd-anyURI.schema.json"
+                },
+                {
+                    "$ref": "link.schema.json"
+                }
+            ]
+        },
+        "multiple-xsd:anyURIs-or-links": {
+            "items": {
+                "$ref": "#/definitions/single-xsd:anyURI-or-link"
+            },
+            "type": "array"
+        },
+        "xsd:anyURI-or-link-or-array-of-xsd:anyURI-or-link": {
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/single-xsd:anyURI-or-link"
+                },
+                {
+                    "$ref": "#/definitions/multiple-xsd:anyURIs-or-links"
+                }
+            ]
+        },
+        "string-type": {
+            "oneOf": [
+                {
+                    "$ref": "xsd-string.schema.json"
+                },
+                {
+                    "$ref": "rdf-langString.schema.json"
+                }
+            ]
+        },
+        "object-properties": {
+            "properties": {
+                "attachment": {
+                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-attachment",
+                    "$ref": "#/definitions/object-or-link-or-array-of-object-or-link"
+                },
+                "attributedTo": {
+                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-attributedTo",
+                    "$ref": "#/definitions/object-or-link-or-array-of-object-or-link"
+                },
+                "audience": {
+                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-audience",
+                    "$ref": "#/definitions/object-or-link-or-array-of-object-or-link"
+                },
+                "content": {
+                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-content",
+                    "$ref": "#/definitions/string-type"
+                },
+                "context": {
+                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-context",
+                    "$ref": "#/definitions/object-or-link-or-array-of-object-or-link"
+                },
+                "name": {
+                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-name",
+                    "$ref": "#/definitions/string-type"
+                },
+                "endTime": {
+                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-endtime",
+                    "$ref": "xsd-dateTime.schema.json"
+                },
+                "generator": {
+                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-generator",
+                    "$ref": "#/definitions/object-or-link-or-array-of-object-or-link"
+                },
+                "icon": {
+                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-icon",
+                    "$ref": "#/definitions/image-or-link-or-array-of-image-or-link"
+                },
+                "image": {
+                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-image",
+                    "$ref": "#/definitions/image-or-link-or-array-of-image-or-link"
+                },
+                "inReplyTo": {
+                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-inreplyto",
+                    "$ref": "#/definitions/object-or-link-or-array-of-object-or-link"
+                },
+                "location": {
+                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-location",
+                    "$ref": "#/definitions/object-or-link-or-array-of-object-or-link"
+                },
+                "preview": {
+                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-preview",
+                    "$ref": "#/definitions/object-or-link-or-array-of-object-or-link"
+                },
+                "published": {
+                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-published",
+                    "$ref": "xsd-dateTime.schema.json"
+                },
+                "replies": {
+                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-replies",
+                    "$ref": "collection.schema.json"
+                },
+                "startTime": {
+                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-starttime",
+                    "$ref": "xsd-dateTime.schema.json"
+                },
+                "summary": {
+                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-summary",
+                    "$ref": "#/definitions/string-type"
+                },
+                "tag": {
+                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-tag",
+                    "$ref": "#/definitions/object-or-link-or-array-of-object-or-link"
+                },
+                "updated": {
+                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-updated",
+                    "$ref": "xsd-dateTime.schema.json"
+                },
+                "url": {
+                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-url",
+                    "$ref": "#/definitions/xsd:anyURI-or-link-or-array-of-xsd:anyURI-or-link"
+                },
+                "to": {
+                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-to",
+                    "$ref": "#/definitions/object-or-link-or-array-of-object-or-link"
+                },
+                "bto": {
+                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-bto",
+                    "$ref": "#/definitions/object-or-link-or-array-of-object-or-link"
+                },
+                "cc": {
+                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-cc",
+                    "$ref": "#/definitions/object-or-link-or-array-of-object-or-link"
+                },
+                "bcc": {
+                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-bcc",
+                    "$ref": "#/definitions/object-or-link-or-array-of-object-or-link"
+                },
+                "mediaType": {
+                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-mediatype",
+                    "$ref": "mime-media-type.schema.json"
+                },
+                "duration": {
+                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-duration",
+                    "$ref": "xsd-duration.schema.json"
+                }
+            }
+        }
+    },
+    "type": "object",
+    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object",
+    "allOf": [
+        {
+            "$ref": "context.schema.json"
+        },
+        {
+            "$ref": "id.schema.json"
+        },
+        {
+            "$ref": "type.schema.json"
+        },
+        {
+            "$ref": "#/definitions/object-properties"
+        }
+    ]
+}

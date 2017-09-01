@@ -7,30 +7,6 @@
                 "object-type": {
                     "description": "This is the type of the `object` that has been emitting this event. The value of this field MUST be exactly same as the value of the `object.type` field. Making the type available in the event envelope allows routing systems to dispatch events based on the object type without inspecting the object itself.",
                     "$ref": "../activity-streams-2/type.schema.json"
-                },
-                "route": {
-                    "description": "The cross data center routing context for the message.",
-                    "type": "object",
-                    "properties": {
-                        "imsOrg": {
-                            "type": "string",
-                            "description": "The IMS Org ID."
-                        },
-                        "source": {
-                            "type": "string",
-                            "description": "The SKMS data center that the message orginated from."
-                        },
-                        "destinations": {
-                            "type": [
-                                "string",
-                                "array"
-                            ],
-                            "items": {
-                                "type": "string"
-                            },
-                            "description": "A list of data centers to route the message to."
-                        }
-                    }
                 }
             }
         }

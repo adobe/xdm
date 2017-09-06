@@ -1,0 +1,54 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "definitions": {
+        "single-collection-or-link": {
+            "anyOf": [
+                {
+                    "$ref": "uri.schema.json"
+                },
+                {
+                    "$ref": "collection.schema.json"
+                },
+                {
+                    "$ref": "link.schema.json"
+                }
+            ]
+        },
+        "single-collectionPage-or-link": {
+            "anyOf": [
+                {
+                    "$ref": "collection-page.schema.json"
+                },
+                {
+                    "$ref": "link.schema.json"
+                }
+            ]
+        },
+        "extra-properties": {
+            "properties": {
+                "partOf": {
+                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-partof",
+                    "$ref": "#/definitions/single-collection-or-link"
+                },
+                "next": {
+                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-next",
+                    "$ref": "#/definitions/single-collectionPage-or-link"
+                },
+                "prev": {
+                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-prev",
+                    "$ref": "#/definitions/single-collectionPage-or-link"
+                }
+            }
+        }
+    },
+    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-collectionpage",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "collection.schema.json"
+        },
+        {
+            "$ref": "#/definitions/extra-properties"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$id": "xdm/Event-Envelope.json",
+    "definitions": {
+        "extra-properties": {
+            "properties": {
+                "object-type": {
+                    "description": "This is the type of the `object` that has been emitting this event. The value of this field MUST be exactly same as the value of the `object.type` field. Making the type available in the event envelope allows routing systems to dispatch events based on the object type without inspecting the object itself.",
+                    "$ref": "../activity-streams-2/type.schema.json"
+                }
+            }
+        }
+    },
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "../activity-streams-2/activity.schema.json"
+        },
+        {
+            "$ref": "#/definitions/extra-properties"
+        },
+        {
+            "required": [
+                "id",
+                "type",
+                "published",
+                "object-type",
+                "object"
+            ]
+        }
+    ]
+}

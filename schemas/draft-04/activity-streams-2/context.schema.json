@@ -1,0 +1,226 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-id",
+    "definitions": {
+        "keywords": {
+            "type": "string",
+            "enum": [
+                "@context",
+                "@id",
+                "@value",
+                "@language",
+                "@type",
+                "@container",
+                "@list",
+                "@set",
+                "@reverse",
+                "@index",
+                "@base",
+                "@vocab",
+                "@graph",
+                ":"
+            ]
+        },
+        "blank-node-identifier": {
+            "type": "string",
+            "pattern": "^_:.+$"
+        },
+        "term": {
+            "type": "string",
+            "pattern": "^[^:@].+$"
+        },
+        "expanded-term-definition": {
+            "type": "object",
+            "properties": {
+                "@id": {
+                    "anyOf": [
+                        {
+                            "$ref": "uri.schema.json"
+                        },
+                        {
+                            "$ref": "#/definitions/term"
+                        },
+                        {
+                            "$ref": "#/definitions/blank-node-identifier"
+                        },
+                        {
+                            "$ref": "#/definitions/keywords"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "@reverse": {
+                    "anyOf": [
+                        {
+                            "$ref": "uri.schema.json"
+                        },
+                        {
+                            "$ref": "#/definitions/term"
+                        },
+                        {
+                            "$ref": "#/definitions/blank-node-identifier"
+                        },
+                        {
+                            "$ref": "#/definitions/keywords"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "@type": {
+                    "anyOf": [
+                        {
+                            "$ref": "uri.schema.json"
+                        },
+                        {
+                            "$ref": "#/definitions/term"
+                        },
+                        {
+                            "type": "string",
+                            "enum": [
+                                "@id",
+                                "@vocab"
+                            ]
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "@language": {
+                    "oneOf": [
+                        {
+                            "$ref": "language-tag.schema.json"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "@container": {
+                    "oneOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string",
+                            "enum": [
+                                "@set",
+                                "@list",
+                                "@language",
+                                "@index"
+                            ]
+                        }
+                    ]
+                }
+            },
+            "additionalProperties": false
+        },
+        "single-context": {
+            "type": "object",
+            "properties": {
+                "@vocab": {
+                    "anyOf": [
+                        {
+                            "$ref": "uri.schema.json"
+                        },
+                        {
+                            "$ref": "#/definitions/blank-node-identifier"
+                        },
+                        {
+                            "$ref": "#/definitions/term"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "@base": {
+                    "oneOf": [
+                        {
+                            "$ref": "uri.schema.json"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "@language": {
+                    "oneOf": [
+                        {
+                            "$ref": "language-tag.schema.json"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                }
+            },
+            "patternProperties": {
+                "^([^:@_].*)|(_:.*)$": {
+                    "anyOf": [
+                        {
+                            "$ref": "uri.schema.json"
+                        },
+                        {
+                            "$ref": "#/definitions/term"
+                        },
+                        {
+                            "$ref": "#/definitions/blank-node-identifier"
+                        },
+                        {
+                            "$ref": "#/definitions/keywords"
+                        },
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "$ref": "#/definitions/expanded-term-definition"
+                        },
+                        {
+                            "properties": {
+                                "@context": {
+                                    "$ref": "#/definitions/single-or-array-of-contexts"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    ]
+                }
+            },
+            "additionalProperties": false
+        },
+        "single-context-or-uri": {
+            "oneOf": [
+                {
+                    "$ref": "uri.schema.json"
+                },
+                {
+                    "$ref": "#/definitions/single-context"
+                }
+            ]
+        },
+        "single-or-array-of-contexts": {
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/single-context-or-uri"
+                },
+                {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/single-context-or-uri"
+                    }
+                }
+            ]
+        }
+    },
+    "properties": {
+        "@context": {
+            "$ref": "#/definitions/single-or-array-of-contexts"
+        }
+    },
+    "type": "object"
+}

@@ -13,7 +13,7 @@ Maintaining forward and backwards compatibility is an important goal of XDM. The
 * introduce new mandatory properties
 * rename existing properties
 * remove previously defined properties
-* remove previously supported property values
+* remove or restrict previously supported property values
 
 ### Extensibility
 

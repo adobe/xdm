@@ -6,9 +6,9 @@
 
 As the nature of digital experiences evolves over time, so does the experience data model. To give consumers and implementors of XDM a common ground of expectations, XDM comes with a versioning schema.
 
-### Web Versioning
+### Purely Additive Versioning
 
-Maintaining forward and backwards compatibility is an important goal of XDM. Therefore, XDM uses Web Versioning, which means that any revision of the experience data model following the 1.0 release will not:
+Maintaining forward and backwards compatibility is an important goal of XDM. Therefore, XDM uses purely additive versioning, following the [best practices for versioning REST APIs](https://www.infoq.com/articles/roy-fielding-on-versioning), which means that any revision of the experience data model following the 1.0 release will not:
 
 * introduce new mandatory properties
 * rename existing properties

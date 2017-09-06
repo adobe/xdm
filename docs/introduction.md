@@ -17,7 +17,11 @@ Maintaining forward and backwards compatibility is an important goal of XDM. The
 
 ### Extensibility
 
-The fields in each XDM model are extensible. Consuming applications should not fail when they encounter unknown objects, field names, or property values. It is best practice to pass through unknown objects, field names, or property values without modification.
+The fields in each XDM model are extensible. Consuming applications should not fail when they encounter unknown objects, field names, or property values. It is best practice to pass through unknown objects, field names, or property values without modification. This includes passing through values that are not conforming to this specification.
+
+In general, consuming applications should reject invalid models when the invalidity of the received data is preventing the application from functioning, and pass through all other models.
+
+All extensions will be performed in a customer- or vendor-defined namespace, which means that extensions cannot change, modify, or break the semantics of previously introduced models, properties, or values.
 
 This best practice holds for customer- and vendor-specific extensions to XDM, but also to version updates to XDM. New objects, field names, or property values introduced by either a newer version of XDM or an extension of XDM must not cause a consumer to fail, and should, when possible, passed through without modification.
 

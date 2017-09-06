@@ -15,6 +15,8 @@ Maintaining forward and backwards compatibility is an important goal of XDM. The
 * remove previously defined properties
 * remove or restrict previously supported property values
 
+As all XDM versions are mutually compatible, the version numbers indicated in the specification serve as an guide when models, properties, or values have been added to the specification.
+
 ### Extensibility
 
 The fields in each XDM model are extensible. Consuming applications should not fail when they encounter unknown objects, field names, or property values. It is best practice to pass through unknown objects, field names, or property values without modification. This includes passing through values that are not conforming to this specification.

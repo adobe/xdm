@@ -4,9 +4,9 @@
     "definitions": {
         "extra-properties": {
             "properties": {
-                "object-type": {
+                "objectType": {
                     "description": "This is the type of the `object` that has been emitting this event. The value of this field MUST be exactly same as the value of the `object.type` field. Making the type available in the event envelope allows routing systems to dispatch events based on the object type without inspecting the object itself.",
-                    "$ref": "../activity-streams-2/type.schema.json"
+                    "$ref": "../activity-streams-2/type.schema.json#/definitions/type"
                 }
             }
         }
@@ -24,7 +24,7 @@
                 "id",
                 "type",
                 "published",
-                "object-type",
+                "objectType",
                 "object"
             ]
         }

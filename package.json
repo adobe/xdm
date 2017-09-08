@@ -5,8 +5,8 @@
   "main": "",
   "scripts": {
     "test": "node ./node_modules/turtle-validator/TurtleValidator.js asset.ttl && node ./node_modules/turtle-validator/TurtleValidator.js core.ttl ",
-    "markdown": "mkdir -p docs/reference && node ./node_modules/adobecloudplatform-machinery/index.js -o docs/reference -d schemas/draft-04/activity-streams-2",
-    "package": "java -jar ~/.m2/repository/io/adobe/udp/markdown-importer/0.0.1-SNAPSHOT/markdown-importer-0.0.1-SNAPSHOT-jar-with-dependencies.jar markdown2aem.yaml"
+    "preinstall": "mkdir -p docs/reference && node ./node_modules/adobecloudplatform-machinery/index.js -o docs/reference -d schemas/draft-04/activity-streams-2",
+    "prepare": "java -jar ~/.m2/repository/io/adobe/udp/markdown-importer/0.0.1-SNAPSHOT/markdown-importer-0.0.1-SNAPSHOT-jar-with-dependencies.jar markdown2aem.yaml"
   },
   "devDependencies": {
     "turtle-validator": "1.0.1",

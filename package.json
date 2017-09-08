@@ -4,9 +4,11 @@
   "description": "",
   "main": "",
   "scripts": {
-    "test": "node ./node_modules/turtle-validator/TurtleValidator.js asset.ttl && node ./node_modules/turtle-validator/TurtleValidator.js core.ttl "
+    "test": "node ./node_modules/turtle-validator/TurtleValidator.js asset.ttl && node ./node_modules/turtle-validator/TurtleValidator.js core.ttl ",
+    "markdown": "mkdir -p docs/reference && node ./node_modules/adobecloudplatform-machinery/index.js -o docs/reference -d schemas/draft-04/activity-streams-2"
   },
   "devDependencies": {
-    "turtle-validator": "1.0.1"
+    "turtle-validator": "1.0.1",
+    "adobecloudplatform-machinery": "../machinery"
   }
 }

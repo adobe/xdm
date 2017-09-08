@@ -24,7 +24,24 @@ The machine readable schema source files ([RDF/S](https://www.w3.org/TR/rdf-sche
 
 The tooling project (e.g. for generating HTML documentation, Turtle-to-JSON-LD conversion) is located in the [AdobeCloudPlatform/machinery](https://git.corp.adobe.com/AdobeCloudPlatform/machinery) git repository. 
 
-### Validation
+### Dependencies
+
+You need:
+
+1. The `models` project. Clone `https://git.corp.adobe.com/ankaur/machinery.git`, revert to commit `32ba91cfc07b05b1132206173c39b06cec56a9ac` and keep it in the `../models` directory
+2. The AEM Standalone importer. Clone `https://git.corp.adobe.com/adobe-io/unified-dev-portal.git`, use branch `standalone-importer` and build using `mvn clean install`
+
+### AEM Package Generation
+
+When all dependencies are installed, simply run
+
+```bash
+$ npm install
+```
+
+This will fetch all dependencies, then generate Markdown in the `docs/reference` directory and then generate an AEM package under `xdm-docs.zip`.
+
+### Validation (deprecated)
 
 This project contains a minimal validation script that depends on [NPM](https://www.npmjs.com). You can use it to validate the TTL syntax after making changes to any of the `.ttl` files.
 

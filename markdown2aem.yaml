@@ -12,14 +12,14 @@ repositoryUrl: http://git.corp.adobe.com/AdobeCloudPlatform/models
 privateRepository: false
 
 branches:
-  - master
- 
+ - master
+
  #if working dirs are set then api import will be skipped
 workingDirs:
- - .;master
+ - master:docs
  
 pages:
-   - docs*
+   - "*"
 
 componentMappings:
  com.vladsch.flexmark.ast.Node: io.adobe.udp.markdownimporter.mappings.MarkdownParagraphMapper

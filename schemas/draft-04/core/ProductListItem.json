@@ -45,7 +45,7 @@
       "type": "array",
       "description": "Discount for the purchase.",
       "items": {
-        "$ref": "core/Discount.json"
+        "$ref": "../core/Discount.json"
       }
     },
     "taxesAmount": {

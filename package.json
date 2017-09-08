@@ -9,6 +9,6 @@
   },
   "devDependencies": {
     "turtle-validator": "1.0.1",
-    "adobecloudplatform-machinery": "../machinery"
+    "adobecloudplatform-machinery": "git+ssh://git@git.corp.adobe.com:AdobeCloudPlatform/machinery.git"
   }
 }

@@ -94,7 +94,7 @@
       "description": "The date that the address was last verified as still belonging to the person. "
     },
     "audit": {
-      "$ref": "core/AuditTrail.json"
+      "$ref": "../core/AuditTrail.json"
     }
   }
 }

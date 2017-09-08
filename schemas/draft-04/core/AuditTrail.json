@@ -18,10 +18,10 @@
     "createdByUser": {
       "anyOf": [
         {
-          "$ref": "core/Reference.json"
+          "$ref": "../core/Reference.json"
         },
         {
-          "$ref": "core/User.json"
+          "$ref": "../core/User.json"
         }
       ],
       "description": "User who has created the entity.\n"
@@ -29,10 +29,10 @@
     "modifiedByUser": {
       "anyOf": [
         {
-          "$ref": "core/Reference.json"
+          "$ref": "../core/Reference.json"
         },
         {
-          "$ref": "core/User.json"
+          "$ref": "../core/User.json"
         }
       ],
       "description": "User who last modified the entity.  \nAt creation time, `modifiedByUser` is set as `createdByUser`.\n"

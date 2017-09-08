@@ -6,11 +6,11 @@
   "description": "All TouchPoint properties specific to Adobe Campaign.\n",
   "properties": {
     "message": {
-      "$ref": "campaign/Message.json",
+      "$ref": "../campaign/Message.json",
       "description": "A message sent to a profile or an application.\n"
     },
     "link": {
-      "$ref": "campaign/Link.json",
+      "$ref": "../campaign/Link.json",
       "description": "The link in the message for a click event.\n"
     }
   }

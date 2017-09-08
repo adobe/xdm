@@ -6,7 +6,7 @@
   "description": "All TouchPoint properties specific to Adobe Social.\n",
   "properties": {
     "activity": {
-      "$ref": "social/Activity.json",
+      "$ref": "../social/Activity.json",
       "description": "An activity."
     }
   },

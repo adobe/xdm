@@ -12,10 +12,10 @@
     "subscriber": {
       "anyOf": [
         {
-          "$ref": "core/Reference.json"
+          "$ref": "../core/Reference.json"
         },
         {
-          "$ref": "core/Person.json"
+          "$ref": "../core/Person.json"
         }
       ],
       "description": "The owner of the subscription."
@@ -23,16 +23,16 @@
     "device": {
       "anyOf": [
         {
-          "$ref": "core/Reference.json"
+          "$ref": "../core/Reference.json"
         },
         {
-          "$ref": "core/Device.json"
+          "$ref": "../core/Device.json"
         }
       ],
       "description": "The device linked to the subscription."
     },
     "environment": {
-      "$ref": "core/Environment.json",
+      "$ref": "../core/Environment.json",
       "description": "Environment of the subscription.\n\nThis can be either then known environment at the time of the subscription\nor the environment of the application for subscriptions related to an\nApplication.\n"
     },
     "SKU": {

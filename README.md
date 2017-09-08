@@ -39,7 +39,13 @@ When all dependencies are installed, simply run
 $ npm install
 ```
 
-This will fetch all dependencies, then generate Markdown in the `docs/reference` directory and then generate an AEM package under `xdm-docs.zip`.
+This will fetch all dependencies, then generate Markdown in the `docs/reference` directory and then generate an AEM package under `xdm-docs.zip`. The package can be uploaded using the command
+
+```bash
+$ npm run upload
+```
+
+You will need to provide the password of the `packageUser`
 
 ### Validation (deprecated)
 

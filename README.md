@@ -45,7 +45,13 @@ This will fetch all dependencies, then generate Markdown in the `docs/reference`
 $ npm run upload
 ```
 
-You will need to provide the password of the `packageUser`
+The AEM password is not saved in this repository (of course), but you can set it using this command:
+
+```bash
+$ npm config set xdm-models:aem_password $AEM_PASSWORD
+```
+
+This is assuming `$AEM_PASSWORD` has been provided to your Continuous Integration system or set on the command line beforehand.
 
 ### Validation (deprecated)
 

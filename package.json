@@ -3,10 +3,14 @@
   "version": "0.0.1",
   "description": "Experience Data Models",
   "main": "",
+  "config": {
+    "aem_user":"packageUser",
+    "aem_password": "override me securely"
+  },
   "scripts": {
     "test": "node ./node_modules/turtle-validator/TurtleValidator.js asset.ttl && node ./node_modules/turtle-validator/TurtleValidator.js core.ttl ",
     "prepare": "mkdir -p docs/reference && node ./node_modules/adobecloudplatform-machinery/index.js -o docs/reference -d schemas/draft-04 && java -jar ~/.m2/repository/io/adobe/udp/markdown-importer/0.0.1-SNAPSHOT/markdown-importer-0.0.1-SNAPSHOT-jar-with-dependencies.jar markdown2aem.yaml",
-    "upload":"curl -u \"packageUser\" -F file=\"@xdm-docs.zip\" -F name=\"xdm-docs\" -F force=true -F install=true https://author-adobeio-stage.adobemsbasic.com/crx/packmgr/service.jsp"
+    "upload":"curl -u \"$npm_package_config_aem_user:$npm_package_config_aem_password\" -F file=\"@xdm-docs.zip\" -F name=\"xdm-docs\" -F force=true -F install=true https://author-adobeio-stage.adobemsbasic.com/crx/packmgr/service.jsp"
   },
   "devDependencies": {
     "turtle-validator": "1.0.1",

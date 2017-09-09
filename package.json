@@ -11,7 +11,9 @@
     "test": "node ./node_modules/turtle-validator/TurtleValidator.js asset.ttl && node ./node_modules/turtle-validator/TurtleValidator.js core.ttl ",
     "prepare": "mkdir -p docs/reference && node ./node_modules/adobecloudplatform-machinery/index.js -o docs/reference -d schemas/draft-04 && java -jar ~/.m2/repository/io/adobe/udp/markdown-importer/0.0.1-SNAPSHOT/markdown-importer-0.0.1-SNAPSHOT-jar-with-dependencies.jar markdown2aem.yaml",
     "upload":"curl -u \"$npm_package_config_aem_user:$npm_package_config_aem_password\" -F file=\"@xdm-docs.zip\" -F name=\"xdm-docs\" -F force=true -F install=true https://author-adobeio-stage.adobemsbasic.com/crx/packmgr/service.jsp",
-    "upload:prod":"curl -u \"$npm_package_config_aem_user:$npm_package_config_aem_password\" -F file=\"@xdm-docs.zip\" -F name=\"xdm-docs\" -F force=true -F install=true https://author-adobeio-prod.adobemsbasic.com/crx/packmgr/service.jsp"
+    "upload:prod":"curl -u \"$npm_package_config_aem_user:$npm_package_config_aem_password\" -F file=\"@xdm-docs.zip\" -F name=\"xdm-docs\" -F force=true -F install=true https://author-adobeio-prod.adobemsbasic.com/crx/packmgr/service.jsp",
+    "activate":"curl -u \"$npm_package_config_aem_user:$npm_package_config_aem_password\" -F cmd=activate -F ignoredeactivated=true -F onlymodified=true -F path=/content/udp/en/open/standards/xdm/docs https://author-adobeio-stage.adobemsbasic.com/etc/replication/treeactivation.html",
+    "activate:prod":"curl -u \"$npm_package_config_aem_user:$npm_package_config_aem_password\" -F cmd=activate -F ignoredeactivated=true -F onlymodified=true -F path=/content/udp/en/open/standards/xdm/docs https://author-adobeio-prod.adobemsbasic.com/etc/replication/treeactivation.html"
   },
   "devDependencies": {
     "turtle-validator": "1.0.1",

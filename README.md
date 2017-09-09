@@ -55,6 +55,18 @@ $ npm config set xdm-models:aem_password $AEM_PASSWORD
 
 This is assuming `$AEM_PASSWORD` has been provided to your Continuous Integration system or set on the command line beforehand.
 
+Running `upload` will only make the documentation visible on the "author" instance, this means visitors to the site cannot see any of the documentation. To publish it, run the `npm run activate` or `npm run activate:prod` commands.
+
+A full process would then look like this:
+
+```bash
+$ npm config set xdm-models:aem_password $AEM_PASSWORD
+$ npm install
+$ npm run upload
+$ npm run activate
+```
+This will generate documentation, create an AEM package, install it on (stage) author, and activate it from there, so that visitors can read the documentation.
+
 ### Validation (deprecated)
 
 This project contains a minimal validation script that depends on [NPM](https://www.npmjs.com). You can use it to validate the TTL syntax after making changes to any of the `.ttl` files.

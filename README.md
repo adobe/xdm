@@ -45,6 +45,8 @@ This will fetch all dependencies, then generate Markdown in the `docs/reference`
 $ npm run upload
 ```
 
+`upload` will upload to the Adobe I/O Staging instance. To upload to production, use `upload:prod` instead.
+
 The AEM password is not saved in this repository (of course), but you can set it using this command:
 
 ```bash

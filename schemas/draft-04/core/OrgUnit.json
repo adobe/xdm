@@ -24,10 +24,10 @@
     "parent": {
       "anyOf": [
         {
-          "$ref": "core/Reference.json"
+          "$ref": "../core/Reference.json"
         },
         {
-          "$ref": "core/OrgUnit.json"
+          "$ref": "../core/OrgUnit.json"
         }
       ],
       "description": "The organizational unit owning this unit.\n"
@@ -38,10 +38,10 @@
       "items": {
         "anyOf": [
           {
-            "$ref": "core/Reference.json"
+            "$ref": "../core/Reference.json"
           },
           {
-            "$ref": "core/OrgUnit.json"
+            "$ref": "../core/OrgUnit.json"
           }
         ]
       }

@@ -6,7 +6,7 @@
   "description": "The core touchpoint XDM is used to capture observations that are altering one or\nmore related XDMs/entities. The touchpoint captures information about the observation\ntaking place and when it is occurring. It is critical for time\ndomain analytics as it allows observation and analysis of changes that occur\nin windows of time and comparison with other windows of time to track trends.\n\nTouchpoint events are either explicit or implicit. Explicit events are direct observations\nof a human action taking place during a session. Implicit events are events that\nare being raised without a direct human action. Examples of implicit events\nare scheduled e-mail sending of newsletters, battery voltage reaching a\ncertain threshold, a person entering into range of a proximity sensor.\n\nWhile not all events are easily categorized across all data sources, it is\nextremely valuable to harmonize similar events into similar types for\nprocessing where possible, and the XDM specifications does this by defining a\nset of enumerated **type** attribute values with specific semantic meanings.\nWhere possible events must be constrained to these enumerated values to\nfacilitate interoperability.\n\n![TouchPoint](images/touchpoint.png)\n",
   "properties": {
     "dataSource": {
-      "$ref": "core/DataSource.json"
+      "$ref": "../core/DataSource.json"
     },
     "timestamp": {
       "type": "string",
@@ -150,38 +150,38 @@
       "type": "array",
       "description": "Condensed, normalized (mcId is not a separate thing) encapsulation of\nan end-customer identifier and the DataSource that defines what that\nidentifier is.  The term EndCustomer comes from the XDM:\n\nhttps://wiki.corp.adobe.com/display/marketingcloud/EndCustomer\n",
       "items": {
-        "$ref": "core/EndCustomerId.json"
+        "$ref": "../core/EndCustomerId.json"
       }
     },
     "environment": {
-      "$ref": "core/Environment.json",
+      "$ref": "../core/Environment.json",
       "description": "Information about the surrounding situation the event observation occurred\nin, specifically detailing transitory information such as the network or\nsoftware versions.\n"
     },
     "geo": {
-      "$ref": "core/Geo.json",
+      "$ref": "../core/Geo.json",
       "description": "The geographic location where an event was observed.\n"
     },
     "productListItems": {
       "type": "array",
       "description": "A list of items representing a product selected by a\ncustomer with specific options and pricing that are for that usage context\nat a specific point of time and may differ from the product record.\n",
       "items": {
-        "$ref": "core/ProductListItem.json"
+        "$ref": "../core/ProductListItem.json"
       }
     },
     "device": {
-      "$ref": "core/Device.json",
+      "$ref": "../core/Device.json",
       "description": "An identified Device/Application or Device/Browser instance that is\ntrackable across sessions, normally by cookies.\n"
     },
     "order": {
-      "$ref": "core/Order.json",
+      "$ref": "../core/Order.json",
       "description": "Order placed for one or more products.\n"
     },
     "campaignContext": {
-      "$ref": "campaign/TouchPoint.json",
+      "$ref": "../campaign/TouchPoint.json",
       "description": "Additional information about the touchpoint specific to campaign.\n"
     },
     "socialContext": {
-      "$ref": "social/TouchPoint.json",
+      "$ref": "../social/TouchPoint.json",
       "description": "Additional information about the touchpoint specific to social activities.\n"
     }
   },

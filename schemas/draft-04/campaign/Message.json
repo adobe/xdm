@@ -11,13 +11,13 @@
     "recipient": {
       "anyOf": [
         {
-          "$ref": "core/Reference.json"
+          "$ref": "../core/Reference.json"
         },
         {
-          "$ref": "core/Person.json"
+          "$ref": "../core/Person.json"
         },
         {
-          "$ref": "core/Subscription.json"
+          "$ref": "../core/Subscription.json"
         }
       ],
       "description": "The recipient of the message.\n\nThe recipient is not necessarily a person, it could also be a subscription\nfrom a mobile application.\n"
@@ -25,10 +25,10 @@
     "delivery": {
       "anyOf": [
         {
-          "$ref": "core/Reference.json"
+          "$ref": "../core/Reference.json"
         },
         {
-          "$ref": "campaign/Delivery.json"
+          "$ref": "../campaign/Delivery.json"
         }
       ],
       "description": "The campaign activity originating this message.\n"

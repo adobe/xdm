@@ -10,20 +10,20 @@
       "description": "The service specific token used to address the application for\ncommunication. e.g an Apple APN ID or a Google GCM ID.\n"
     },
     "environment": {
-      "$ref": "core/Environment.json",
+      "$ref": "../core/Environment.json",
       "description": "Environment of at the time of the registration.\n"
     },
     "device": {
-      "$ref": "core/Device.json",
+      "$ref": "../core/Device.json",
       "description": "The device originating the registration."
     },
     "application": {
       "anyOf": [
         {
-          "$ref": "core/Reference.json"
+          "$ref": "../core/Reference.json"
         },
         {
-          "$ref": "core/Application.json"
+          "$ref": "../core/Application.json"
         }
       ],
       "description": "Application registered to receive Push Notifications.\n"

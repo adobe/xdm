@@ -56,7 +56,7 @@
       ]
     },
     "audit": {
-      "$ref": "core/AuditTrail.json"
+      "$ref": "../core/AuditTrail.json"
     }
   }
 }

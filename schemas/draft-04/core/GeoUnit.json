@@ -24,10 +24,10 @@
     "parent": {
       "anyOf": [
         {
-          "$ref": "core/Reference.json"
+          "$ref": "../core/Reference.json"
         },
         {
-          "$ref": "core/GeoUnit.json"
+          "$ref": "../core/GeoUnit.json"
         }
       ],
       "description": "The geographical unit owner of this unit.\n"
@@ -38,10 +38,10 @@
       "items": {
         "anyOf": [
           {
-            "$ref": "core/Reference.json"
+            "$ref": "../core/Reference.json"
           },
           {
-            "$ref": "core/GeoUnit.json"
+            "$ref": "../core/GeoUnit.json"
           }
         ]
       }

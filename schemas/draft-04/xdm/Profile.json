@@ -10,48 +10,48 @@
       "description": "A unique identifier assigned by the platform."
     },
     "person": {
-      "$ref": "core/Person.json",
+      "$ref": "../core/Person.json",
       "description": "An individual actor, contact, or owner.\n"
     },
     "addresses": {
       "type": "array",
       "description": "A postal address. Address could relate to a persons home, work, preferred\nstore location etc.\n",
       "items": {
-        "$ref": "core/Address.json"
+        "$ref": "../core/Address.json"
       }
     },
     "emails": {
       "type": "array",
       "description": "A standard e-mail address.\n",
       "items": {
-        "$ref": "core/EmailAddress.json"
+        "$ref": "../core/EmailAddress.json"
       }
     },
     "phoneNumbers": {
       "type": "array",
       "description": "Information that allows the phone calling of a person. Typically an\nalphanumeric number, 1-222-333 4444 in North America, but can have a wide\nrange of formats.\n",
       "items": {
-        "$ref": "core/PhoneNumber.json"
+        "$ref": "../core/PhoneNumber.json"
       }
     },
     "optInOut": {
-      "$ref": "core/OptInOut.json",
+      "$ref": "../core/OptInOut.json",
       "description": "Describes a users opting in and out preferences for communication by medium\nand communication type.\n"
     },
     "pushNotificationTokens": {
       "type": "array",
       "description": "Push notification tokens are used to communicate with applications that\nare installed on devices or SaaS application accounts.\n",
       "items": {
-        "$ref": "core/PushNotificationToken.json"
+        "$ref": "../core/PushNotificationToken.json"
       }
     },
     "orgUnit": {
       "anyOf": [
         {
-          "$ref": "core/Reference.json"
+          "$ref": "../core/Reference.json"
         },
         {
-          "$ref": "core/OrgUnit.json"
+          "$ref": "../core/OrgUnit.json"
         }
       ],
       "description": "The unit within the organization owning the profile."
@@ -59,16 +59,16 @@
     "geoUnit": {
       "anyOf": [
         {
-          "$ref": "core/Reference.json"
+          "$ref": "../core/Reference.json"
         },
         {
-          "$ref": "core/GeoUnit.json"
+          "$ref": "../core/GeoUnit.json"
         }
       ],
       "description": "The geographical unit within the organization owning the profile."
     },
     "audit": {
-      "$ref": "core/AuditTrail.json"
+      "$ref": "../core/AuditTrail.json"
     }
   },
   "required": [

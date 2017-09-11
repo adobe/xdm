@@ -1,0 +1,30 @@
+rootPath: /content/udp/en/open/standards/xdm/docs
+rootTitle: XDM
+rootTemplate: /apps/udp/templates/githubdocumentation
+rootPageResourceType: udp/components/structure/githubdocumentation
+pageTemplate: /apps/udp/templates/importedgithubpage
+pageResourceType: udp/components/structure/githubpage
+packageName: xdm-docs
+group : io.adobe
+version : 1.3 
+
+repositoryUrl: http://git.corp.adobe.com/AdobeCloudPlatform/models
+privateRepository: false
+
+branches:
+ - master
+
+ #if working dirs are set then api import will be skipped
+workingDirs:
+ - master:docs
+ 
+pages:
+   - "*"
+
+componentMappings:
+ com.vladsch.flexmark.ast.Node: io.adobe.udp.markdownimporter.mappings.MarkdownParagraphMapper
+ com.vladsch.flexmark.ast.IndentedCodeBlock: io.adobe.udp.markdownimporter.mappings.IndentedCodeBlockMapper
+ com.vladsch.flexmark.ast.FencedCodeBlock: io.adobe.udp.markdownimporter.mappings.MarkdownFencedCodeBlockMapper
+ com.vladsch.flexmark.ext.tables.TableBlock: io.adobe.udp.markdownimporter.mappings.MarkdownTableMapper
+ com.vladsch.flexmark.ast.Heading: io.adobe.udp.markdownimporter.mappings.MarkdownHeadlineMapper
+ com.vladsch.flexmark.ext.front.matter.YamlFrontMatterBlock: io.adobe.udp.markdownimporter.mappings.FrontMatterMapper

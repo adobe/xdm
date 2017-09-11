@@ -28,7 +28,7 @@ The tooling project (e.g. for generating HTML documentation, Turtle-to-JSON-LD c
 
 You need:
 
-1. The `models` project. Clone `https://git.corp.adobe.com/ankaur/machinery.git`, revert to commit `32ba91cfc07b05b1132206173c39b06cec56a9ac` and keep it in the `../models` directory
+1. Node.js and `npm`
 2. The AEM Standalone importer. Clone `https://git.corp.adobe.com/adobe-io/unified-dev-portal.git`, use branch `standalone-importer` and build using `mvn clean install`
 
 ### AEM Package Generation

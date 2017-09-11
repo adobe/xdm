@@ -29,7 +29,7 @@ The tooling project (e.g. for generating HTML documentation, Turtle-to-JSON-LD c
 You need:
 
 1. Node.js and `npm`
-2. The AEM Standalone importer. Clone `https://git.corp.adobe.com/adobe-io/unified-dev-portal.git`, use branch `standalone-importer` and build using `mvn clean install`
+2. `curl`
 
 ### AEM Package Generation
 
@@ -66,6 +66,10 @@ $ npm run upload
 $ npm run activate
 ```
 This will generate documentation, create an AEM package, install it on (stage) author, and activate it from there, so that visitors can read the documentation.
+
+#### A Note on Dependencies
+
+The `package.json` script will fetch a released version of the AEM Markdown Importer JAR using curl.
 
 ### Validation (deprecated)
 

@@ -11,6 +11,14 @@ The project is laid out in the following way:
   - `*.schema.json` is the schema file, e.g. `event-envelope.schema.json` – we pick the `.json` file extension for easy syntax highlighting in editors
   - `*.example.*.json` is an example file that will be validated against the `*.schema.json` file, and if successful, merged into the `*.schema.json` file as an `"example"` field at the root of the schema before its converted into Markdown or published
   - `*.description.md` is a description file that will be merged into the `"description"` field at the root of the schema, allowing the authoring of longer descriptions. The merge happens before publishing the schema file or creating a joint Markdown file
+  - `schemas/assets` – for schemas related to the asset core concept, including image, video, document
+  - `schemas/audiences` – for schemas describing audiences, segments, and groups of consumers
+  - `schemas/campaigns` – for schemas describing orchestrated experience campaign
+  - `schemas/content` – for schemas related to content, including visual, audible, and virtual reality content
+  - `schemas/context` – for schemas related to the context of a digital experience, including profile, person, environment
+  - `schemas/data` – for schemas describing collected data, metric, etc.
+  - `schemas/external/*` – for JSON Schema representation of externally defined standards
+  - `schemas/locations` – for schemas describing experience channels and locations therein
 - `*.ttl`: legacy schema files in Turtle Syntax that have not yet been converted into JSON Schema
 - `package.json`: a build file for `npm` that allows the generation of Markdown from the JSON Schema source files and (later) the generation of an AEM package to be deployed on the Adobe I/O Website
 - `README.md`: this file

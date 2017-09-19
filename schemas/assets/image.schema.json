@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "title": "Image",
+  "description": "The Image class is for raster image assets, e.g. JPEG, PNG, etc.",
+  "properties": {
+    "orientation": {
+      "$schema": "http://json-schema.org/schema#",
+      "properties": {}
+    },
+    "x_resolution": {
+      "$schema": "http://json-schema.org/schema#",
+      "properties": {
+        "http://ns.adobe.com/tiff/1.0/numerator": {
+          "type": "integer",
+          "description": "A value representing numerator part of a rational."
+        },
+        "http://ns.adobe.com/tiff/1.0/denominator": {
+          "type": "integer",
+          "description": "A value representing denominator part of a rational."
+        }
+      }
+    },
+    "y_resolution": {
+      "$schema": "http://json-schema.org/schema#",
+      "properties": {
+        "http://ns.adobe.com/tiff/1.0/numerator": {
+          "type": "integer",
+          "description": "A value representing numerator part of a rational."
+        },
+        "http://ns.adobe.com/tiff/1.0/denominator": {
+          "type": "integer",
+          "description": "A value representing denominator part of a rational."
+        }
+      }
+    },
+    "resolution_unit": {
+      "$schema": "http://json-schema.org/schema#",
+      "properties": {}
+    },
+    "numberOfPixels": {
+      "type": "integer",
+      "description": "Total number of pixels"
+    },
+    "color_mode": {
+      "$schema": "http://json-schema.org/schema#",
+      "properties": {}
+    },
+    "icc_profile": {
+      "type": "string",
+      "description": "The color profile, such as AppleRGB, AdobeRGB1998."
+    }
+  }
+}

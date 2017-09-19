@@ -2,6 +2,12 @@
 
 ## Introduction
 
+## Goals
+
+## Status
+
+XDM is currently undergoing an intermal specification effort. The documents published here are a preview of that effort and are not yet finalized.
+
 ## Versioning
 
 As the nature of digital experiences evolves over time, so does the experience data model. To give consumers and implementors of XDM a common ground of expectations, XDM comes with a versioning schema.

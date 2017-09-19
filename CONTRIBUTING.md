@@ -84,7 +84,7 @@ Additional aspects of standard design that aid with consumability are:
 
 ## Coding Styleguides
 
-There are no coding style guides yet.
+* file names for schema files should be lower case and end with `.schema.json`
 
 ## Writing Styleguides
 

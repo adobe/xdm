@@ -88,7 +88,7 @@ There are no coding style guides yet.
 
 ## Writing Styleguides
 
-For all writing, please follow the [Adobe I/O style guide](https://github.com/trieloff/styleguide/blob/master/opensource/doc-style.md).
+For all writing, please follow the [Adobe I/O style guide](https://www.adobe.io/about/contributing/doc-style_master.html).
 
 ## How Contributions get Reviewed
 

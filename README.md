@@ -19,6 +19,7 @@ The project is laid out in the following way:
   - `schemas/data` – for schemas describing collected data, metric, etc.
   - `schemas/external/*` – for JSON Schema representation of externally defined standards
   - `schemas/locations` – for schemas describing experience channels and locations therein
+  - `schemas/base` – for basic concepts like extensibility that are not covered in `external` schemas
 - `*.ttl`: legacy schema files in Turtle Syntax that have not yet been converted into JSON Schema
 - `package.json`: a build file for `npm` that allows the generation of Markdown from the JSON Schema source files and (later) the generation of an AEM package to be deployed on the Adobe I/O Website
 - `README.md`: this file

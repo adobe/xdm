@@ -1,16 +1,17 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
+    "$id": "https://ns.adobe.com/xdm/external/activity-streams-2/object",
     "definitions": {
         "single-object-or-link": {
             "anyOf": [
                 {
-                    "$ref": "uri.schema.json"
+                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/uri"
                 },
                 {
-                    "$ref": "object.schema.json"
+                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/object"
                 },
                 {
-                    "$ref": "link.schema.json"
+                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/link"
                 }
             ]
         },
@@ -33,13 +34,13 @@
         "single-image-or-link": {
             "anyOf": [
                 {
-                    "$ref": "uri.schema.json"
+                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/uri"
                 },
                 {
-                    "$ref": "image.schema.json"
+                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/image"
                 },
                 {
-                    "$ref": "link.schema.json"
+                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/link"
                 }
             ]
         },
@@ -62,10 +63,10 @@
         "single-xsd:anyURI-or-link": {
             "anyOf": [
                 {
-                    "$ref": "xsd-anyURI.schema.json"
+                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/xsd-anyURI"
                 },
                 {
-                    "$ref": "link.schema.json"
+                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/link"
                 }
             ]
         },
@@ -88,10 +89,10 @@
         "string-type": {
             "oneOf": [
                 {
-                    "$ref": "xsd-string.schema.json"
+                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/xsd-string"
                 },
                 {
-                    "$ref": "rdf-langString.schema.json"
+                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langString"
                 }
             ]
         },
@@ -123,7 +124,7 @@
                 },
                 "endTime": {
                     "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-endtime",
-                    "$ref": "xsd-dateTime.schema.json"
+                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/xsd-dateTime"
                 },
                 "generator": {
                     "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-generator",
@@ -151,15 +152,15 @@
                 },
                 "published": {
                     "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-published",
-                    "$ref": "xsd-dateTime.schema.json"
+                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/xsd-dateTime"
                 },
                 "replies": {
                     "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-replies",
-                    "$ref": "collection.schema.json"
+                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/collection"
                 },
                 "startTime": {
                     "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-starttime",
-                    "$ref": "xsd-dateTime.schema.json"
+                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/xsd-dateTime"
                 },
                 "summary": {
                     "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-summary",
@@ -171,7 +172,7 @@
                 },
                 "updated": {
                     "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-updated",
-                    "$ref": "xsd-dateTime.schema.json"
+                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/xsd-dateTime"
                 },
                 "url": {
                     "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-url",
@@ -195,11 +196,11 @@
                 },
                 "mediaType": {
                     "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-mediatype",
-                    "$ref": "mime-media-type.schema.json"
+                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/mime-media-type"
                 },
                 "duration": {
                     "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-duration",
-                    "$ref": "xsd-duration.schema.json"
+                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/xsd-duration"
                 }
             }
         }
@@ -208,13 +209,13 @@
     "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object",
     "allOf": [
         {
-            "$ref": "context.schema.json"
+            "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/context"
         },
         {
-            "$ref": "id.schema.json"
+            "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/id"
         },
         {
-            "$ref": "type.schema.json"
+            "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/type"
         },
         {
             "$ref": "#/definitions/object-properties"

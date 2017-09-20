@@ -1,5 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
+    "$id": "https://ns.adobe.com/xdm/external/activity-streams-2/context",
     "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-id",
     "definitions": {
         "keywords": {
@@ -35,7 +36,7 @@
                 "@id": {
                     "anyOf": [
                         {
-                            "$ref": "uri.schema.json"
+                            "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/uri"
                         },
                         {
                             "$ref": "#/definitions/term"
@@ -54,7 +55,7 @@
                 "@reverse": {
                     "anyOf": [
                         {
-                            "$ref": "uri.schema.json"
+                            "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/uri"
                         },
                         {
                             "$ref": "#/definitions/term"
@@ -73,7 +74,7 @@
                 "@type": {
                     "anyOf": [
                         {
-                            "$ref": "uri.schema.json"
+                            "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/uri"
                         },
                         {
                             "$ref": "#/definitions/term"
@@ -93,7 +94,7 @@
                 "@language": {
                     "oneOf": [
                         {
-                            "$ref": "language-tag.schema.json"
+                            "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/language-tag"
                         },
                         {
                             "type": "null"
@@ -125,7 +126,7 @@
                 "@vocab": {
                     "anyOf": [
                         {
-                            "$ref": "uri.schema.json"
+                            "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/uri"
                         },
                         {
                             "$ref": "#/definitions/blank-node-identifier"
@@ -141,7 +142,7 @@
                 "@base": {
                     "oneOf": [
                         {
-                            "$ref": "uri.schema.json"
+                            "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/uri"
                         },
                         {
                             "type": "null"
@@ -151,7 +152,7 @@
                 "@language": {
                     "oneOf": [
                         {
-                            "$ref": "language-tag.schema.json"
+                            "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/language-tag"
                         },
                         {
                             "type": "null"
@@ -163,7 +164,7 @@
                 "^([^:@_].*)|(_:.*)$": {
                     "anyOf": [
                         {
-                            "$ref": "uri.schema.json"
+                            "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/uri"
                         },
                         {
                             "$ref": "#/definitions/term"
@@ -196,7 +197,7 @@
         "single-context-or-uri": {
             "oneOf": [
                 {
-                    "$ref": "uri.schema.json"
+                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/uri"
                 },
                 {
                     "$ref": "#/definitions/single-context"

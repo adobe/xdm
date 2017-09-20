@@ -1,5 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
+    "$id": "https://ns.adobe.com/xdm/external/activity-streams-2/page",
     "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-page",
-    "$ref": "document.schema.json"
+    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/document"
 }

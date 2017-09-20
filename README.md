@@ -71,6 +71,7 @@ A full process would then look like this:
 ```bash
 $ npm config set xdm-models:aem_password $AEM_PASSWORD
 $ npm install
+$ npm test
 $ npm run upload
 $ npm run activate
 ```
@@ -80,20 +81,31 @@ This will generate documentation, create an AEM package, install it on (stage) a
 
 The `package.json` script will fetch a released version of the AEM Markdown Importer JAR using curl.
 
-### Validation (deprecated)
+### Validation
 
-This project contains a minimal validation script that depends on [NPM](https://www.npmjs.com). You can use it to validate the TTL syntax after making changes to any of the `.ttl` files.
+This project contains a minimal validation script that depends on [NPM](https://www.npmjs.com). You can use it to validate the JSON example files against the JSON Schema files after making changes to either.
 
 ```bash
 $ npm install
 $ npm test
 
-Validator finished with 0 warnings and 0 errors.
-Validator finished with 0 warnings and 0 errors.
+> xdm-models@0.0.1 test /Users/lars/Code/models
+> sh validate.sh
+
+Validating schemas/base/eventenvelope.example.1.json against schemas/base/eventenvelope.schema.json
+schemas/base/eventenvelope.example.1.json valid
+Validating schemas/base/eventenvelope.example.2.json against schemas/base/eventenvelope.schema.json
+schemas/base/eventenvelope.example.2.json valid
+Validating schemas/base/eventenvelope.example.3.json against schemas/base/eventenvelope.schema.json
+schemas/base/eventenvelope.example.3.json valid
+Validating schemas/base/eventenvelope.example.4.json against schemas/base/eventenvelope.schema.json
+schemas/base/eventenvelope.example.4.json valid
+Validating schemas/base/eventenvelope.example.5.json against schemas/base/eventenvelope.schema.json
+schemas/base/eventenvelope.example.5.json valid
 
 ```
 
-If you see warnings or error messages, fix them before making a pull request.
+If you see warnings or error messages (or an non-zero exit code), fix them before making a pull request.
 
 ## Naming Conventions
 
@@ -105,9 +117,6 @@ If you see warnings or error messages, fix them before making a pull request.
 
 ### Specifications
 
-* [RDF](https://www.w3.org/RDF/)
-* [RDF Schema (RDF/S) 1.1](https://www.w3.org/TR/rdf-schema/)
-* [RDF 1.1 Turtle](https://www.w3.org/TR/turtle/)
 * [JSON-LD 1.0](https://www.w3.org/TR/json-ld/)
 * [XMP SPECIFICATION PART 1 DATA MODEL, SERIALIZATION, AND CORE PROPERTIES](http://wwwimages.adobe.com/content/dam/Adobe/en/devnet/xmp/pdfs/XMP%20SDK%20Release%20cc-2014-12/XMPSpecificationPart1.pdf)
 
@@ -117,8 +126,3 @@ If you see warnings or error messages, fix them before making a pull request.
 * [Dublin Core](http://dublincore.org/)
 * [OWL](http://www.w3.org/TR/2009/REC-owl2-overview-20091027/)
 * [SKOS Core](http://www.w3.org/TR/2009/REC-skos-reference-20090818/)
-
-### Tools
-
-* [TextMate N3/Turtle Bundle](https://github.com/peta/turtle.tmbundle)
-* [Online RDF Converter](http://www.easyrdf.org/converter)

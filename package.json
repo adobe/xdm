@@ -18,6 +18,7 @@
   },
   "devDependencies": {
     "turtle-validator": "1.0.1",
+    "ajv-cli": "*",
     "adobecloudplatform-machinery": "git+ssh://git@git.corp.adobe.com:AdobeCloudPlatform/machinery.git#schema2md-bin"
   }
 }

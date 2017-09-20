@@ -9,7 +9,7 @@ for example in $examples; do
   schema=$(echo $example | sed -e "s/\.example\..\./.schema./")
   echo "Validating $example against $schema"
   ./node_modules/.bin/ajv validate -s $schema -d $example $append
-  exit 1
+
   if [ $? -ne 0 ]; then
     failures=$[failures + 1]
   fi

@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
+  "$id": "https://ns.adobe.com/xdm/assets/asset",
   "title": "Asset",
   "description": "OneAdobe Cloud Asset Core Class",
   "properties": {

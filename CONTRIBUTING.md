@@ -85,6 +85,7 @@ Additional aspects of standard design that aid with consumability are:
 ## Coding Styleguides
 
 * file names for schema files should be lower case and end with `.schema.json`
+* include an `"$id"` with a value like `"https://ns.adobe.com/xdm/assets/image"` in the schema
 
 ## Writing Styleguides
 

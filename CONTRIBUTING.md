@@ -20,13 +20,18 @@ Every pull request should specify:
 
 * What the change intends to do
 * If there are breaking changes
-* Link to the JIRA issue in the format `ACP-123`
+* Link to the Github issue in the format `#42`
+
+For every update to the schema, make sure
+
+* `npm test` validates all example files
+* There are `schemas/*/*.example.*.json` files for each newly created schema
 
 Furthermore, a pull request that modifies the schema must also include accompanying documentation. Pull requests with missing documentation will be rejected.
 
 Each commit message:
 
-* Should contain the issue ID like `[ACP-123]`
+* Should contain the issue ID like `[ACP-123]` or `#42`
 * Can contain the tag `[trivial]` for trivial changes that don't relate to an issue
 
 ## Design Guidelines

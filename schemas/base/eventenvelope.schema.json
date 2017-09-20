@@ -8,7 +8,7 @@
             "properties": {
                 "objectType": {
                     "description": "This is the type of the `object` that has been emitting this event. The value of this field MUST be exactly same as the value of the `object.type` field. Making the type available in the event envelope allows routing systems to dispatch events based on the object type without inspecting the object itself.",
-                    "$ref": "../external/activity-streams-2/type.schema.json#/definitions/type"
+                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/type#/definitions/type"
                 }
             },
             "additionalProperties": false
@@ -17,7 +17,7 @@
     "type": "object",
     "allOf": [
         {
-            "$ref": "../external/activity-streams-2/activity.schema.json"
+            "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/activity"
         },
         {
             "$ref": "#/definitions/extra-properties"

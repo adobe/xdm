@@ -5,23 +5,23 @@
         "single-collectionPage-or-link": {
             "anyOf": [
                 {
-                    "$ref": "uri.schema.json"
+                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/uri"
                 },
                 {
-                    "$ref": "collection-page.schema.json"
+                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/collection-page"
                 },
                 {
-                    "$ref": "link.schema.json"
+                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/link"
                 }
             ]
         },
         "single-object-or-link": {
             "anyOf": [
                 {
-                    "$ref": "object.schema.json"
+                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/object"
                 },
                 {
-                    "$ref": "link.schema.json"
+                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/link"
                 }
             ]
         },
@@ -45,7 +45,7 @@
             "properties": {
                 "totalItems": {
                     "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-totalitems",
-                    "$ref": "xsd-nonNegativeInteger.schema.json"
+                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/xsd-nonNegativeInteger"
                 },
                 "current": {
                     "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-current",
@@ -70,7 +70,7 @@
     "type": "object",
     "allOf": [
         {
-            "$ref": "object.schema.json"
+            "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/object"
         },
         {
             "$ref": "#/definitions/extra-properties"

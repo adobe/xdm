@@ -5,13 +5,13 @@
         "single-value": {
             "anyOf": [
                 {
-                    "$ref": "uri.schema.json"
+                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/uri"
                 },
                 {
-                    "$ref": "object.schema.json"
+                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/object"
                 },
                 {
-                    "$ref": "link.schema.json"
+                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/link"
                 }
             ]
         },
@@ -37,38 +37,38 @@
     "properties": {
         "href": {
             "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-href",
-            "$ref": "xsd-anyURI.schema.json"
+            "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/xsd-anyURI"
         },
         "rel": {
             "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-rel",
-            "$ref": "link-rel.schema.json"
+            "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/link-rel"
         },
         "mediaType": {
             "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-mediatype",
-            "$ref": "mime-media-type.schema.json"
+            "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/mime-media-type"
         },
         "name": {
             "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-name",
             "oneOf": [
                 {
-                    "$ref": "xsd-string.schema.json"
+                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/xsd-string"
                 },
                 {
-                    "$ref": "rdf-langString.schema.json"
+                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langString"
                 }
             ]
         },
         "hreflang": {
             "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-hreflang",
-            "$ref": "language-tag.schema.json"
+            "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/language-tag"
         },
         "height": {
             "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-height",
-            "$ref": "xsd-nonNegativeInteger.schema.json"
+            "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/xsd-nonNegativeInteger"
         },
         "width": {
             "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-width",
-            "$ref": "xsd-nonNegativeInteger.schema.json"
+            "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/xsd-nonNegativeInteger"
         },
         "preview": {
             "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-preview",

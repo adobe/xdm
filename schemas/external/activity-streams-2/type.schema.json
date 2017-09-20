@@ -8,12 +8,12 @@
             "oneOf": [
                 {
                     "items": {
-                        "$ref": "uri.schema.json"
+                        "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/uri"
                     },
                     "type": "array"
                 },
                 {
-                    "$ref": "uri.schema.json"
+                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/uri"
                 }
             ]
         }

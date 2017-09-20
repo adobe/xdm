@@ -1,0 +1,32 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/activitystreams",
+    "http://ns.adobe.com/xdm/event-envelope"
+  ],
+  "type": "http://ns.adobe.com/xdm/event/created",
+  "objectType": "http://ns.adobe.com/xdm/asset",
+  "published": "2016-07-16T19:20:30+01:00",
+  "id": "82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
+  "to": {
+    "type": "http://ns.adobe.com/xdm/IMSUser",
+    "id": "D13A1E7053E46A220A4C86E1@AdobeID"
+  },
+  "generator": {
+    "type": "http://ns.adobe.com/xdm/services",
+    "id": "creative-cloud"
+  },
+  "actor": {
+    "type": "http://ns.adobe.com/xdm/IMSUser",
+    "id": "D13A1E7053E46A220A4C86E1@AdobeID"
+  },
+  "object": {
+    "@context": "http://ns.adobe.com/xdm/asset",
+    "type": "http://ns.adobe.com/xdm/asset",
+    "asset_id": "urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
+    "id": "https://cc-api-storage-stage.adobe.io/id/urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
+    "asset_name": "example.jpg",
+    "path": "/MyFolder/example.jpg",
+    "mediaType": "image/jpg",
+    "etag": "\"6fc55d0389d856ae7deccebba54f110e\""
+  }
+}

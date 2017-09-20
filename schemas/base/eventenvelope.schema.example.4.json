@@ -1,0 +1,29 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/activitystreams",
+    "http://ns.adobe.com/xdm/event-envelope"
+  ],
+  "type": "http://ns.adobe.com/xdm/event/published",
+  "objectType": "http://ns.adobe.com/xdm/page",
+  "published": "2016-07-16T19:20:30+01:00",
+  "id": "82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
+  "to": {
+    "type": "http://ns.adobe.com/xdm/IMSOrg",
+    "id": "1362"
+  },
+  "generator": {
+    "type": "http://ns.adobe.com/xdm/aem/instance",
+    "id": "AEM-Sites-08B3E5CE5822FC520A494229@AdobeOrg1373843566"
+  },
+  "actor": {
+    "type": "http://ns.adobe.com/xdm/aem/user",
+    "id": "admin"
+  },
+  "object": {
+    "@context": "http://ns.adobe.com/xdm/page",
+    "type": "http://ns.adobe.com/xdm/page",
+    "id": "http://adobesummit.adobesandbox.com:4502/content/geometrixx/en/vintage.html",
+    "title": "Vintage Collection",
+    "pathname": "/content/geometrixx/en/vintage.html"
+  }
+}

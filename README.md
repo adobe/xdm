@@ -117,6 +117,7 @@ If you see warnings or error messages (or an non-zero exit code), fix them befor
 
 ### Specifications
 
+* [JSON Schema](http://json-schema.org/)
 * [JSON-LD 1.0](https://www.w3.org/TR/json-ld/)
 * [XMP SPECIFICATION PART 1 DATA MODEL, SERIALIZATION, AND CORE PROPERTIES](http://wwwimages.adobe.com/content/dam/Adobe/en/devnet/xmp/pdfs/XMP%20SDK%20Release%20cc-2014-12/XMPSpecificationPart1.pdf)
 

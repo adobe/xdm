@@ -1,0 +1,65 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$id": "https://ns.adobe.com/xdm/sites/page",
+    "type": "object",
+
+    "title": "Page",
+    "description": "OneAdobe Cloud Sites Page Class",
+
+    "properties": {
+        "path": {
+            "type": "string",
+            "description": "Shows the hierarchy of the page. The path semantics should be same as that defined in https://tools.ietf.org/html/rfc3986#section-3.3. In case a repository is not path based then it can return the information which will help in browsing. It could be just an document id, or something like {catalog}/{id} in case of OZ."
+        },
+        "name": {
+            "type": "string",
+            "description": "Name of the page in the repository. This could be a file name or any name provided by the repository to the page."
+        },
+        "title": {
+            "type": "string",
+            "description": "Full title of the page."
+        },
+        "short_title": {
+            "type": "string",
+            "description": "Short title of the page that is suitable to be displayed in navigation links."
+        },
+        "hide_in_navigation": {
+            "type": "boolean",
+            "description": "Indicates if this page should be hidden by default in navigational collections."
+        },
+        "template": {
+            "type": "string",
+            "description": "The template type, id or path that was used to create this page."
+        },
+        "language": {
+            "type": "string",
+            "description": "Specifies the language of this page. the language property should conform to RFC5646, for example 'en_GB'"
+        },
+        "created_date": {
+            "type": "string",
+            "format": "date-time",
+            "description": "The server date and time when the resource was created in the repository, such as when an page file is first uploaded or a directory is created by the server as the parent of a new page. The Date Time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\"."
+        },
+        "created_by": {
+            "type": "string",
+            "description": "ID of the user who initiated the action that caused the resource to be created in the repository."
+        },
+        "last_modified_date": {
+            "type": "string",
+            "format": "date-time",
+            "description": "The server date and time when the resource was most recently modified in the repository, such as when a new version of an page is uploaded or a directory's child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\"."
+        },
+        "last_modified_by": {
+            "type": "string",
+            "description": "ID of the user who initiated the action that most recently caused the resource to be modified in the repository."
+        }
+    },
+    "required": [
+        "name",
+        "path",
+        "created_date",
+        "created_by",
+        "last_modified_date",
+        "last_modified_by"
+    ]
+}

@@ -29,7 +29,8 @@
         },
         "template": {
             "type": "string",
-            "description": "The template type, id or path that was used to create this page."
+            "format": "uri",
+            "description": "The template that was used to create this page."
         },
         "language": {
             "type": "string",
@@ -42,6 +43,7 @@
         },
         "created_by": {
             "type": "string",
+            "format": "uri",
             "description": "ID of the user who initiated the action that caused the resource to be created in the repository."
         },
         "last_modified_date": {
@@ -51,6 +53,7 @@
         },
         "last_modified_by": {
             "type": "string",
+            "format": "uri",
             "description": "ID of the user who initiated the action that most recently caused the resource to be modified in the repository."
         }
     },

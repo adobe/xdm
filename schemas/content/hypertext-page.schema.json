@@ -33,7 +33,7 @@
         },
         "language": {
             "type": "string",
-            "description": "Specifies the language of this page. the language property should conform to RFC5646, for example 'en_GB'"
+            "description": "Specifies the language of this page. the language property should conform to BPC 47, for example 'en_GB'"
         },
         "created_date": {
             "type": "string",

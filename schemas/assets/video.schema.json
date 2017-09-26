@@ -3,14 +3,35 @@
   "$id": "https://ns.adobe.com/xdm/assets/video",
   "title": "Video",
   "description": "The Video class is for video assets, i.e. assets that consist of moving pictures and, optionally, sound.",
-  "properties": {
-    "extent": {
-      "type": "integer",
-      "description": "The duration of the video in milliseconds."
-    },
-    "video_frame_rate": {
-      "type": "string",
-      "description": "The video frame rate in frames per second (FPS). Predefined values include: \n24\nNTSC\nPAL"
+  "definitions": {
+    "video": {
+      "properties": {
+        "extent": {
+          "type": "integer",
+          "description": "The duration of the video in milliseconds."
+        },
+        "video_frame_rate": {
+          "type": "string",
+          "description": "The video frame rate in frames per second (FPS). Predefined values include: \n24\nNTSC\nPAL"
+        }
+      }
     }
-  }
+  },
+  "allOf": [
+    {"$ref": "https://ns.adobe.com/xdm/assets/asset#/definitions/asset"},
+    {"$ref": "#/definitions/video"}
+  ],
+  "required": [
+    "asset_id",
+    "create_date",
+    "repository_created_date",
+    "repository_created_by",
+    "modify_date",
+    "repository_last_modified_date",
+    "repository_last_modified_by",
+    "version_id",
+    "size",
+    "path",
+    "etag"
+  ]
 }

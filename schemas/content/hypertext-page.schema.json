@@ -23,7 +23,7 @@
             "type": "string",
             "description": "Short title of the page that is suitable to be displayed in navigation links."
         },
-        "hide_in_navigation": {
+        "hidden_in_navigation": {
             "type": "boolean",
             "description": "Indicates if this page should be hidden by default in navigational collections."
         },

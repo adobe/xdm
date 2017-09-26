@@ -9,7 +9,7 @@
     "properties": {
         "path": {
             "type": "string",
-            "description": "Shows the hierarchy of the page. The path semantics should be same as that defined in https://tools.ietf.org/html/rfc3986#section-3.3. In case a repository is not path based then it can return the information which will help in browsing. It could be just an document id, or something like {catalog}/{id} in case of OZ."
+            "description": "Shows the hierarchy of the page. The path semantics should be same as that defined in [RFC 3986](https://tools.ietf.org/html/rfc3986#section-3.3). In case a repository is not path based then it can return the information which will help in browsing. It could be just an document id, or something like `{catalog}/{id}` in case of a document database."
         },
         "name": {
             "type": "string",

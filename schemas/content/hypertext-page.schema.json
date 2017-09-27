@@ -58,6 +58,9 @@
             "description": "ID of the user who initiated the action that most recently caused the resource to be modified in the repository."
         }
     },
+    "additionalProperties": {
+        "$ref": "#/definitions/Residuals"
+    },
     "required": [
         "name",
         "path",
@@ -65,5 +68,69 @@
         "created_by",
         "last_modified_date",
         "last_modified_by"
-    ]
+    ],
+    "definitions": {
+        "Residuals": {
+            "description": "Defines the set of residual properties allowed on a page or component.",
+            "additionalProperties": {
+                "anyOf": [
+                    {"type": "object"},
+                    {"type": "string"},
+                    {"type": "number"},
+                    {"type": "integer"},
+                    {"type": "array"},
+                    {"type": "boolean"},
+                    {"$ref": "#/definitions/Component"},
+                    {"$ref": "#/definitions/Container"}
+                ]
+            }
+        },
+        "Container": {
+            "description": "Acts as container for other components.",
+            "type": "object",
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "format": "uri",
+                    "description": "Type of the container. acts as processing hint for the client."
+                },
+                "items": {
+                    "type": "object",
+                    "description": "The items of this container.",
+                    "oneOf": [
+                        { "$ref": "#/definitions/Container" },
+                        { "$ref": "#/definitions/Component"}
+                    ]
+                },
+                "itemsOrder": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Defines the order of the items in the container. can be omitted if the order is not important."
+                }
+            },
+            "required": [
+                "type",
+                "items"
+            ]
+        },
+        "Component": {
+            "description": "Acts as generic typed component that can have any arbitrary properties.",
+            "type": "object",
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "format": "uri",
+                    "description": "Type of the component. acts as processing hint for the client."
+                }
+            },
+            "additionalProperties": {
+                "$ref": "#/definitions/Residuals"
+            },
+            "required": [
+                "type"
+            ]
+        }
+    }
 }

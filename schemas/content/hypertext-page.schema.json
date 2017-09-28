@@ -29,7 +29,7 @@
         },
         "template": {
             "type": "string",
-            "format": "uri",
+            "format": "uri-reference",
             "description": "The template that was used to create this page."
         },
         "language": {
@@ -44,7 +44,7 @@
         },
         "created_by": {
             "type": "string",
-            "format": "uri",
+            "format": "uri-reference",
             "description": "ID of the user who initiated the action that caused the resource to be created in the repository."
         },
         "last_modified_date": {
@@ -54,7 +54,7 @@
         },
         "last_modified_by": {
             "type": "string",
-            "format": "uri",
+            "format": "uri-reference",
             "description": "ID of the user who initiated the action that most recently caused the resource to be modified in the repository."
         }
     },
@@ -91,7 +91,7 @@
             "properties": {
                 "type": {
                     "type": "string",
-                    "format": "uri",
+                    "format": "uri-reference",
                     "description": "Type of the container. acts as processing hint for the client."
                 },
                 "items": {
@@ -121,7 +121,7 @@
             "properties": {
                 "type": {
                     "type": "string",
-                    "format": "uri",
+                    "format": "uri-reference",
                     "description": "Type of the component. acts as processing hint for the client."
                 }
             },

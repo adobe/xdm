@@ -8,10 +8,12 @@
       "properties": {
         "asset_id": {
           "type": "string",
+          "meta:immutable": true,
           "description": "A unique identifier given to every addressable asset in a given repository."
         },
         "document_id": {
           "type": "string",
+          "meta:immutable": true,
           "description": "It takes the value of xmpMM:DocumentID present in the XMP packet of the asset. For the assets having no XMP packet this property won't be populated."
         },
         "name": {
@@ -43,6 +45,7 @@
         "repository_created_date": {
           "type": "string",
           "format": "date-time",
+          "meta:immutable": true,
           "description": "The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\"."
         },
         "creator": {
@@ -54,6 +57,7 @@
         },
         "repository_created_by": {
           "type": "string",
+          "meta:immutable": true,
           "description": "ID of the user who initiated the action that caused the resource to be created in the repository."
         },
         "creator_tool": {
@@ -76,6 +80,7 @@
         },
         "version_id": {
           "type": "string",
+          "meta:immutable": true,
           "description": "The version ID of the asset. It will be generated both on explicit and implicit save or upload."
         },
         "milestone": {

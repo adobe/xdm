@@ -180,22 +180,23 @@ core:URI a rdfs:Datatype ;
   skos:example "https://www.adobe.io" ;
   rdfs:comment """A string representing URI as defined in IETF RFC 3986.""" .
 
-tiff:OrientationMode a rdfs:Datatype ;
-  rdfs:label "Orientation Mode"@en ;
-  rdfs:comment """Orientation of the asset. Closed choice of integer:
-1 = Horizontal (normal)
-2 = Mirror horizontal
-3 = Rotate 180
-4 = Mirror vertical
-5 = Mirror horizontal and rotate 270 CW
-6 = Rotate 90 CW
-7 = Mirror horizontal and rotate 90 CW
-8 = Rotate 270 CW""" ;
-  owl:withRestrictions (
-    [
-      xsd:pattern "^[1-8]?$"
-    ]
-  ) .
+# @trieloff covered
+# tiff:OrientationMode a rdfs:Datatype ;
+#   rdfs:label "Orientation Mode"@en ;
+#   rdfs:comment """Orientation of the asset. Closed choice of integer:
+# 1 = Horizontal (normal)
+# 2 = Mirror horizontal
+# 3 = Rotate 180
+# 4 = Mirror vertical
+# 5 = Mirror horizontal and rotate 270 CW
+# 6 = Rotate 90 CW
+# 7 = Mirror horizontal and rotate 90 CW
+# 8 = Rotate 270 CW""" ;
+#   owl:withRestrictions (
+#     [
+#       xsd:pattern "^[1-8]?$"
+#     ]
+#   ) .
 
 tiff:ResolutionUnitChoice  a rdfs:Datatype ;
   rdfs:label "Resolution Unit Choice"@en ;
@@ -1622,52 +1623,53 @@ core:Image a rdfs:Class ;
 
 #### Image properties
 
-tiff:Orientation a core:BaseProperty, owl:FunctionalProperty ;
-  # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
-  rdfs:label "Orientation"@en ;
-  rdfs:comment """The orientation of the image.""" ;
-  rdfs:range tiff:OrientationMode ;
-  meta:mandatory false ;
-  meta:userEditable false ;
-  meta:immutable false ;
-  meta:jsonName "orientation" ;
-  skos:note """1 = Horizontal (normal)
-2 = Mirror horizontal
-3 = Rotate 180
-4 = Mirror vertical
-5 = Mirror horizontal and rotate 270 CW
-6 = Rotate 90 CW
-7 = Mirror horizontal and rotate 90 CW
-8 = Rotate 270 CW""" ;
-  skos:example "" ;
-  rdfs:domain core:Image .
+# @trieloff covered
+# tiff:Orientation a core:BaseProperty, owl:FunctionalProperty ;
+#   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
+#   rdfs:label "Orientation"@en ;
+#   rdfs:comment """The orientation of the image.""" ;
+#   rdfs:range tiff:OrientationMode ;
+#   meta:mandatory false ;
+#   meta:userEditable false ;
+#   meta:immutable false ;
+#   meta:jsonName "orientation" ;
+#   skos:note """1 = Horizontal (normal)
+# 2 = Mirror horizontal
+# 3 = Rotate 180
+# 4 = Mirror vertical
+# 5 = Mirror horizontal and rotate 270 CW
+# 6 = Rotate 90 CW
+# 7 = Mirror horizontal and rotate 90 CW
+# 8 = Rotate 270 CW""" ;
+#   skos:example "" ;
+#   rdfs:domain core:Image .
 
+# @trieloff covered
+# tiff:XResolution a core:BaseProperty, owl:FunctionalProperty ;
+#   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
+#   rdfs:label "X-Resolution"@en ;
+#   rdfs:comment """Horizontal resolution in pixels per ResolutionUnit.""" ;
+#   rdfs:range tiff:Rational ;
+#   meta:mandatory false ;
+#   meta:userEditable false ;
+#   meta:immutable false ;
+#   meta:jsonName "x_resolution" ;
+#   skos:note "" ;
+#   skos:example "" ;
+#   rdfs:domain core:Image .
 
-tiff:XResolution a core:BaseProperty, owl:FunctionalProperty ;
-  # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
-  rdfs:label "X-Resolution"@en ;
-  rdfs:comment """Horizontal resolution in pixels per ResolutionUnit.""" ;
-  rdfs:range tiff:Rational ;
-  meta:mandatory false ;
-  meta:userEditable false ;
-  meta:immutable false ;
-  meta:jsonName "x_resolution" ;
-  skos:note "" ;
-  skos:example "" ;
-  rdfs:domain core:Image .
-
-tiff:YResolution a core:BaseProperty, owl:FunctionalProperty ;
-  # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
-  rdfs:label "Y-Resolution"@en ;
-  rdfs:comment """Vertical resolution in pixels per ResolutionUnit.""" ;
-  rdfs:range tiff:Rational ;
-  meta:mandatory false ;
-  meta:userEditable false ;
-  meta:immutable false ;
-  meta:jsonName "y_resolution" ;
-  skos:note "" ;
-  skos:example "" ;
-  rdfs:domain core:Image .
+# tiff:YResolution a core:BaseProperty, owl:FunctionalProperty ;
+#   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
+#   rdfs:label "Y-Resolution"@en ;
+#   rdfs:comment """Vertical resolution in pixels per ResolutionUnit.""" ;
+#   rdfs:range tiff:Rational ;
+#   meta:mandatory false ;
+#   meta:userEditable false ;
+#   meta:immutable false ;
+#   meta:jsonName "y_resolution" ;
+#   skos:note "" ;
+#   skos:example "" ;
+#   rdfs:domain core:Image .
 
 tiff:ResolutionUnit a core:BaseProperty, owl:FunctionalProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case

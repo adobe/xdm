@@ -13,5 +13,9 @@
   "image_length": 768,
   "image_width": 1024,
   "aspect_ratio": 1.3333333,
-  "orientation": 1
+  "orientation": 1,
+  "x_resolution": {
+    "numerator": 300,
+    "denominator": 1
+  }
 }

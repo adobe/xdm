@@ -7,8 +7,10 @@
     "image": {
       "properties": {
         "orientation": {
-          "$schema": "http://json-schema.org/schema#",
-          "properties": {}
+          "type":"integer",
+          "description": "The orientation of the image. Following values are permitted:\n- `1` = Horizontal (normal)\n- `2` = Mirror horizontal\n- `3` = Rotate 180 degrees\n- `4` = Mirror vertical\n- `5` = Mirror horizontal and rotate 270 degrees clockwise\n- `6` = Rotate 90 degrees clockwise\n- `7` = Mirror horizontal and rotate 90 degrees clockwise\n- `8` = Rotate 270 degrees clockwise",
+          "minimum": 1,
+          "maximum": 8
         },
         "x_resolution": {
           "$schema": "http://json-schema.org/schema#",

@@ -42,23 +42,12 @@
           "format": "date-time",
           "description": "The date and time the resource was created. It will be taken from within the asset."
         },
-        "repository_created_date": {
-          "type": "string",
-          "format": "date-time",
-          "meta:immutable": true,
-          "description": "The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\"."
-        },
         "creator": {
           "type": "array",
           "items": {
             "type": "string"
           },
           "description": "An entity primarily responsible for making the resource. Examples of a creator include a person, an organization, or a service. Typically, the name of a creator should be used to indicate the entity."
-        },
-        "repository_created_by": {
-          "type": "string",
-          "meta:immutable": true,
-          "description": "ID of the user who initiated the action that caused the resource to be created in the repository."
         },
         "creator_tool": {
           "type": "string",
@@ -68,20 +57,6 @@
           "type": "string",
           "format": "date-time",
           "description": "The date and time when asset was last modified. The Date Time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\"."
-        },
-        "repository_last_modified_date": {
-          "type": "string",
-          "format": "date-time",
-          "description": "The server date and time when the resource was most recently modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\"."
-        },
-        "repository_last_modified_by": {
-          "type": "string",
-          "description": "ID of the user who initiated the action that most recently caused the resource to be modified in the repository."
-        },
-        "version_id": {
-          "type": "string",
-          "meta:immutable": true,
-          "description": "The version ID of the asset. It will be generated both on explicit and implicit save or upload."
         },
         "milestone": {
           "$schema": "http://json-schema.org/schema#",
@@ -376,6 +351,7 @@
     }
   },
   "allOf": [
+    {"$ref": "https://ns.adobe.com/xdm/content/content#/definitions/content"},
     {"$ref": "#/definitions/asset"}    
   ],
   "required": [

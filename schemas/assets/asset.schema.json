@@ -2,370 +2,382 @@
   "$schema": "http://json-schema.org/schema#",
   "$id": "https://ns.adobe.com/xdm/assets/asset",
   "title": "Asset",
-  "description": "OneAdobe Cloud Asset Core Class",
-  "properties": {
-    "asset_id": {
-      "type": "string",
-      "description": "A unique identifier given to every addressable asset in a given repository."
-    },
-    "document_id": {
-      "type": "string",
-      "description": "It takes the value of xmpMM:DocumentID present in the XMP packet of the asset. For the assets having no XMP packet this property won't be populated."
-    },
-    "name": {
-      "type": "string",
-      "description": "Name of the asset in the repository. This could be a file name or any name provided by the repository to the asset."
-    },
-    "alias_ids": {
-      "type": "array",
-      "items": {
-        "$schema": "http://json-schema.org/schema#",
-        "properties": {
-          "external System": {
-            "type": "string",
-            "description": "A string used to identify the external systems like google, facebook etc."
-          },
-          "ID": {
-            "type": "string",
-            "description": "An Id under which external systems track the asset."
-          }
-        }
-      },
-      "description": "List of IDs under which external systems track the asset. Example of external systems : google, facebook etc."
-    },
-    "create_date": {
-      "type": "string",
-      "format": "date-time",
-      "description": "The date and time the resource was created. It will be taken from within the asset."
-    },
-    "repository_created_date": {
-      "type": "string",
-      "format": "date-time",
-      "description": "The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\"."
-    },
-    "creator": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      },
-      "description": "An entity primarily responsible for making the resource. Examples of a creator include a person, an organization, or a service. Typically, the name of a creator should be used to indicate the entity."
-    },
-    "repository_created_by": {
-      "type": "string",
-      "description": "ID of the user who initiated the action that caused the resource to be created in the repository."
-    },
-    "creator_tool": {
-      "type": "string",
-      "description": "Name of the application which authored the asset. It takes the value present in xmp:CreatorTool property in XMP."
-    },
-    "modify_date": {
-      "type": "string",
-      "format": "date-time",
-      "description": "The date and time when asset was last modified. The Date Time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\"."
-    },
-    "repository_last_modified_date": {
-      "type": "string",
-      "format": "date-time",
-      "description": "The server date and time when the resource was most recently modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\"."
-    },
-    "repository_last_modified_by": {
-      "type": "string",
-      "description": "ID of the user who initiated the action that most recently caused the resource to be modified in the repository."
-    },
-    "version_id": {
-      "type": "string",
-      "description": "The version ID of the asset. It will be generated both on explicit and implicit save or upload."
-    },
-    "milestone": {
-      "$schema": "http://json-schema.org/schema#",
+  "description": "A digital asset, is anything that exists in a binary format and comes with the right to use. Content that does not possess that right is not considered an asset. Digital assets include but are not exclusive to: digital documents, audible content, motion picture, and other relevant digital content that is currently in circulation or production.",
+  "definitions": {
+    "asset": {
       "properties": {
-        "MilestoneLabel": {
+        "asset_id": {
           "type": "string",
-          "description": "Label for the version of an asset"
+          "meta:immutable": true,
+          "description": "A unique identifier given to every addressable asset in a given repository."
         },
-        "MilestoneDescription": {
+        "document_id": {
           "type": "string",
-          "description": "Description for the version of an asset"
+          "meta:immutable": true,
+          "description": "It takes the value of xmpMM:DocumentID present in the XMP packet of the asset. For the assets having no XMP packet this property won't be populated."
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the asset in the repository. This could be a file name or any name provided by the repository to the asset."
+        },
+        "alias_ids": {
+          "type": "array",
+          "items": {
+            "$schema": "http://json-schema.org/schema#",
+            "properties": {
+              "external System": {
+                "type": "string",
+                "description": "A string used to identify the external systems like google, facebook etc."
+              },
+              "ID": {
+                "type": "string",
+                "description": "An Id under which external systems track the asset."
+              }
+            }
+          },
+          "description": "List of IDs under which external systems track the asset. Example of external systems : google, facebook etc."
+        },
+        "create_date": {
+          "type": "string",
+          "format": "date-time",
+          "description": "The date and time the resource was created. It will be taken from within the asset."
+        },
+        "repository_created_date": {
+          "type": "string",
+          "format": "date-time",
+          "meta:immutable": true,
+          "description": "The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\"."
+        },
+        "creator": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "An entity primarily responsible for making the resource. Examples of a creator include a person, an organization, or a service. Typically, the name of a creator should be used to indicate the entity."
+        },
+        "repository_created_by": {
+          "type": "string",
+          "meta:immutable": true,
+          "description": "ID of the user who initiated the action that caused the resource to be created in the repository."
+        },
+        "creator_tool": {
+          "type": "string",
+          "description": "Name of the application which authored the asset. It takes the value present in xmp:CreatorTool property in XMP."
+        },
+        "modify_date": {
+          "type": "string",
+          "format": "date-time",
+          "description": "The date and time when asset was last modified. The Date Time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\"."
+        },
+        "repository_last_modified_date": {
+          "type": "string",
+          "format": "date-time",
+          "description": "The server date and time when the resource was most recently modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\"."
+        },
+        "repository_last_modified_by": {
+          "type": "string",
+          "description": "ID of the user who initiated the action that most recently caused the resource to be modified in the repository."
+        },
+        "version_id": {
+          "type": "string",
+          "meta:immutable": true,
+          "description": "The version ID of the asset. It will be generated both on explicit and implicit save or upload."
+        },
+        "milestone": {
+          "$schema": "http://json-schema.org/schema#",
+          "properties": {
+            "MilestoneLabel": {
+              "type": "string",
+              "description": "Label for the version of an asset"
+            },
+            "MilestoneDescription": {
+              "type": "string",
+              "description": "Description for the version of an asset"
+            }
+          }
+        },
+        "web_statement": {
+          "type": "string",
+          "description": "A Web URL for a statement of the ownership and usage rights for this resource. This is a normal (non-URI) simple value because of historical usage."
+        },
+        "rights": {
+          "type": "array",
+          "items": {
+            "$schema": "http://json-schema.org/schema#",
+            "properties": {
+              "http://ns.adobe.com/adobecloud/core/1.0/LanguageAlternativeText": {
+                "type": "string"
+              },
+              "http://ns.adobe.com/adobecloud/core/1.0/LanguageAlternativeLang": {
+                "type": "string"
+              }
+            }
+          },
+          "description": "Information about rights held in and over the resource.\nWe can live without mentioning locale if only one entry is there. Default locale is en_us.\nLocale codes should follow IETF BCP 47 standard."
+        },
+        "marked": {
+          "type": "boolean",
+          "description": "When true, indicates that this is a rights-managed resource. When false, indicates that this is a public-domain resource. Omit if the state is unknown."
+        },
+        "usage_terms": {
+          "type": "array",
+          "items": {
+            "$schema": "http://json-schema.org/schema#",
+            "properties": {
+              "http://ns.adobe.com/adobecloud/core/1.0/LanguageAlternativeText": {
+                "type": "string"
+              },
+              "http://ns.adobe.com/adobecloud/core/1.0/LanguageAlternativeLang": {
+                "type": "string"
+              }
+            }
+          },
+          "description": "A collection of text instructions on how a resource can be legally used, given in a variety of languages."
+        },
+        "copyright_owner": {
+          "type": "array",
+          "items": {
+            "$schema": "http://json-schema.org/schema#",
+            "properties": {
+              "Copyright owner ID": {
+                "type": "string",
+                "description": "ID of the copyright owner. If the PLUS-ID being stored in this property is registered with the PLUS Coalition, it should be expressed as a URL. For example: http://plus-id.org/PLUS-ID."
+              },
+              "Copyright owner name": {
+                "type": "string",
+                "description": "Name of the copyright owner."
+              }
+            }
+          },
+          "description": "Owner or owners of the copyright in the licensed asset."
+        },
+        "credit": {
+          "type": "string",
+          "description": "Who should be credited when the asset is published."
+        },
+        "license": {
+          "type": "string",
+          "description": "A license is a set of requests/permissions to users of a Work, e.g. a copyright license, the public domain, information for distributors."
+        },
+        "attribution_url": {
+          "type": "string",
+          "description": "For licenses that require attribution, such as some Creative Commons licenses, a URL that identifies the user to which a work should be attributed. When publishing to Behance, we link to the user's profile page."
+        },
+        "attribution_name": {
+          "type": "string",
+          "description": "For licenses that require attribution, such as some Creative Commons licenses, the user to which a work is attributed. When publishing to Behance, this is taken from the user's Behance profile information."
+        },
+        "manage_ui": {
+          "type": "string",
+          "description": "A URI that can be used to access information about the managed resource through a web browser."
+        },
+        "manage_to": {
+          "type": "string",
+          "description": "A URI identifying the managed resource to the asset management system; the presence of this property is the formal indication that this resource is managed. The form and content of this URI is private to the asset management system."
+        },
+        "history": {
+          "type": "array",
+          "items": {
+            "$schema": "http://json-schema.org/schema#",
+            "properties": {
+              "http://ns.adobe.com/xap/1.0/sType/ResourceEvent#action": {
+                "type": "string",
+                "description": "The action that occurred. Defined values are: converted,copied, created, cropped, edited, filtered, formatted,version_updated, printed, published, managed, produced,resized, saved.New values should be verbs in the past tense."
+              },
+              "http://ns.adobe.com/xap/1.0/sType/ResourceEvent#changed": {
+                "type": "string",
+                "description": "A semicolon-delimited list of the parts of the resource that were changed since the previous event history.If not present, presumed to be undefined. When tracking changes and the scope of the changed components is unknown, it should be assumed that anything might have changed."
+              },
+              "http://ns.adobe.com/xap/1.0/sType/ResourceEvent#instanceID": {
+                "type": "string",
+                "description": "The value of the xmpMM:InstanceID property for the modified(output) resource."
+              },
+              "http://ns.adobe.com/xap/1.0/sType/ResourceEvent#parameters": {
+                "type": "string",
+                "description": "Additional description of the action."
+              },
+              "http://ns.adobe.com/xap/1.0/sType/ResourceEvent#softwareAgent": {
+                "type": "string",
+                "description": "The software agent that performed the action."
+              },
+              "http://ns.adobe.com/xap/1.0/sType/ResourceEvent#when": {
+                "type": "string",
+                "format": "date-time",
+                "description": "Timestamp of when the action occurred.For events that create or write to a file, this should be the approximate modification time of the file."
+              }
+            }
+          },
+          "description": "High-level actions that resulted in this resource. It is intended to give human readers a description of the steps taken to make the changes from the previous version to this one. The list should be at an abstract level; it is not intended to be an exhaustive keystroke or other detailed history. The description should be sufficient for metadata management, as well as for workflow enhancement."
+        },
+        "copyright_owner_id": {
+          "type": "string",
+          "description": "ID of the copyright owner.\nIf the PLUS-ID being stored in this property is registered with the PLUS Coalition, it should be expressed as a URL. For example: http://plus-id.org/PLUS-ID"
+        },
+        "copyright_owner_name": {
+          "type": "string",
+          "description": "Name of Copyright Owner."
+        },
+        "title": {
+          "type": "array",
+          "items": {
+            "$schema": "http://json-schema.org/schema#",
+            "properties": {
+              "http://ns.adobe.com/adobecloud/core/1.0/LanguageAlternativeText": {
+                "type": "string"
+              },
+              "http://ns.adobe.com/adobecloud/core/1.0/LanguageAlternativeLang": {
+                "type": "string"
+              }
+            }
+          },
+          "description": "A name given to the resource. Typically, a Title will be a name by which the resource is formally known."
+        },
+        "description": {
+          "type": "array",
+          "items": {
+            "$schema": "http://json-schema.org/schema#",
+            "properties": {
+              "http://ns.adobe.com/adobecloud/core/1.0/LanguageAlternativeText": {
+                "type": "string"
+              },
+              "http://ns.adobe.com/adobecloud/core/1.0/LanguageAlternativeLang": {
+                "type": "string"
+              }
+            }
+          },
+          "description": "An account of the content of the resource. Description may include but is not limited to: an abstract, table of contents, reference to a graphical representation of content or a free-text account of the content."
+        },
+        "not_safe": {
+          "$schema": "http://json-schema.org/schema#",
+          "properties": {}
+        },
+        "type": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "The language or languages of the resource."
+        },
+        "size": {
+          "type": "integer",
+          "description": "Size of the asset in bytes"
+        },
+        "path": {
+          "type": "string",
+          "description": "Shows the hierarchy of the asset. The path semantics should be same as that defined in https://tools.ietf.org/html/rfc3986#section-3.3. In case a repository is not path based then it can return the information which will help in browsing. It could be just an asset id, or something like {catalog}/{id} in case of OZ."
+        },
+        "etag": {
+          "type": "string",
+          "description": "An  ETag is an HTTP response header returned by an HTTP/1.1 compliant web server used to determine change in content of a resource at a given URL. "
+        },
+        "n_pages": {
+          "type": "integer",
+          "description": "The number of pages in the document (including any in contained documents)."
+        },
+        "gps_altitude": {
+          "$schema": "http://json-schema.org/schema#",
+          "properties": {}
+        },
+        "gps_altitude_ref": {
+          "type": "integer",
+          "description": "GPS tag 5, 0x5. Indicates whether the altitude is above or below sea level:\n0 = Above sea level\n1 = Below sea level"
+        },
+        "gps_latitude": {
+          "type": "string",
+          "description": "GPS tag 2, 0x02 (position) and 1, 0x01 (North/South). Indicates latitude."
+        },
+        "gps_longitude": {
+          "type": "string",
+          "description": "GPS tag 4, 0x04 (position) and 3, 0x03 (East/West). Indicates longitude."
+        },
+        "rating": {
+          "type": "integer",
+          "description": "A user-assigned rating for this file. The value shall be -1 or in the range [0..5], where -1 indicates “rejected” and 0 indicates “unrated”. If xmp:Rating is not present, a value of 0 should be assumed. NOTE: Anticipated usage is for a typical “star rating” UI, with the addition of a notion of rejection."
+        },
+        "subject": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Set of descriptive phrases or keywords that describe the content of the resource. These keywords are part of the XMP metadata of the asset. Compare this with the `keyword` and `machineKeywords` properties, which provide more structure and context."
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "$schema": "http://json-schema.org/schema#",
+            "properties": {
+              "importance": {
+                "type": "string",
+                "description": "The importance of the keyword on a scale from zero to one. If required repository will infer it as per its policies and add it for the keywords"
+              }
+            }
+          },
+          "description": "The `keywords` property is used to track human-assigned descriptive phrases like keywords or tags of an asset. Rather than a plan list of tags, it is a structured set of keywords, where keywords can have an explicit importance ranking and a locale. This allows the management of multi-lingual keywords for a given asset. For machine-generated keywords, use the `machineKeywords` property. "
+        },
+        "machine_keywords": {
+          "type": "array",
+          "items": {
+            "$schema": "http://json-schema.org/schema#",
+            "properties": {
+              "confidence": {
+                "type": "string",
+                "description": "Confidence of the algorithm that this keyword is applicable to the asset. Confidence values are numbers between zero and one. A value of .95 indicates that the algorithm expects less than 5% of all tags with the same confidence value to be mis-applied, i.e. not to be a proper description of the asset."
+              },
+              "algorithm": {
+                "type": "string",
+                "description": "Name of the algorithm which generated the keyword."
+              }
+            }
+          },
+          "description": "The `machineKeywords` property is used to track machine-assigned descriptive phrases like keywords or tags of an asset. Rather than a plan list of tags, it is a structured set of keywords, where keywords can have an explicit confidence ranking and a locale. For human-defined keywords, use the `keywords` property. "
+        },
+        "fonts": {
+          "$schema": "http://json-schema.org/schema#",
+          "properties": {}
+        },
+        "layers": {
+          "$schema": "http://json-schema.org/schema#",
+          "properties": {}
+        },
+        "artboards": {
+          "type": "array",
+          "items": {
+            "$schema": "http://json-schema.org/schema#",
+            "properties": {
+              "http://ns.adobe.com/core/1.0/sType/Artboard#name": {
+                "type": "string",
+                "description": "Name of the artboard. This would be visible to the user and users can specify names that can help them uniquely identfiy different Artboards."
+              },
+              "http://ns.adobe.com/core/1.0/sType/Artboard#originX": {
+                "type": "integer",
+                "description": "Origin X position - Base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards)"
+              },
+              "http://ns.adobe.com/core/1.0/sType/Artboard#originY": {
+                "type": "integer",
+                "description": "Origin Y position - Base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards)"
+              },
+              "http://ns.adobe.com/core/1.0/sType/Artboard#width": {
+                "type": "integer",
+                "description": "Width of the artboard"
+              },
+              "http://ns.adobe.com/core/1.0/sType/Artboard#height": {
+                "type": "integer",
+                "description": "Height of the artboard"
+              },
+              "http://ns.adobe.com/core/1.0/sType/Artboard#unit": {
+                "type": "string",
+                "description": "Unit used for artboard coordinates (originX, originY, width and height). For example: inch, mm, pixel, pica, point (default is pixels)"
+              }
+            }
+          },
+          "description": "Contains the artboards that are being used in the document. A document can have multiple artboards."
         }
       }
-    },
-    "web_statement": {
-      "type": "string",
-      "description": "A Web URL for a statement of the ownership and usage rights for this resource. This is a normal (non-URI) simple value because of historical usage."
-    },
-    "rights": {
-      "type": "array",
-      "items": {
-        "$schema": "http://json-schema.org/schema#",
-        "properties": {
-          "http://ns.adobe.com/adobecloud/core/1.0/LanguageAlternativeText": {
-            "type": "string"
-          },
-          "http://ns.adobe.com/adobecloud/core/1.0/LanguageAlternativeLang": {
-            "type": "string"
-          }
-        }
-      },
-      "description": "Information about rights held in and over the resource.\nWe can live without mentioning locale if only one entry is there. Default locale is en_us.\nLocale codes should follow IETF BCP 47 standard."
-    },
-    "marked": {
-      "type": "boolean",
-      "description": "When true, indicates that this is a rights-managed resource. When false, indicates that this is a public-domain resource. Omit if the state is unknown."
-    },
-    "usage_terms": {
-      "type": "array",
-      "items": {
-        "$schema": "http://json-schema.org/schema#",
-        "properties": {
-          "http://ns.adobe.com/adobecloud/core/1.0/LanguageAlternativeText": {
-            "type": "string"
-          },
-          "http://ns.adobe.com/adobecloud/core/1.0/LanguageAlternativeLang": {
-            "type": "string"
-          }
-        }
-      },
-      "description": "A collection of text instructions on how a resource can be legally used, given in a variety of languages."
-    },
-    "copyright_owner": {
-      "type": "array",
-      "items": {
-        "$schema": "http://json-schema.org/schema#",
-        "properties": {
-          "Copyright owner ID": {
-            "type": "string",
-            "description": "ID of the copyright owner. If the PLUS-ID being stored in this property is registered with the PLUS Coalition, it should be expressed as a URL. For example: http://plus-id.org/PLUS-ID."
-          },
-          "Copyright owner name": {
-            "type": "string",
-            "description": "Name of the copyright owner."
-          }
-        }
-      },
-      "description": "Owner or owners of the copyright in the licensed asset."
-    },
-    "credit": {
-      "type": "string",
-      "description": "Who should be credited when the asset is published."
-    },
-    "license": {
-      "type": "string",
-      "description": "A license is a set of requests/permissions to users of a Work, e.g. a copyright license, the public domain, information for distributors."
-    },
-    "attribution_url": {
-      "type": "string",
-      "description": "For licenses that require attribution, such as some Creative Commons licenses, a URL that identifies the user to which a work should be attributed. When publishing to Behance, we link to the user's profile page."
-    },
-    "attribution_name": {
-      "type": "string",
-      "description": "For licenses that require attribution, such as some Creative Commons licenses, the user to which a work is attributed. When publishing to Behance, this is taken from the user's Behance profile information."
-    },
-    "manage_ui": {
-      "type": "string",
-      "description": "A URI that can be used to access information about the managed resource through a web browser."
-    },
-    "manage_to": {
-      "type": "string",
-      "description": "A URI identifying the managed resource to the asset management system; the presence of this property is the formal indication that this resource is managed. The form and content of this URI is private to the asset management system."
-    },
-    "history": {
-      "type": "array",
-      "items": {
-        "$schema": "http://json-schema.org/schema#",
-        "properties": {
-          "http://ns.adobe.com/xap/1.0/sType/ResourceEvent#action": {
-            "type": "string",
-            "description": "The action that occurred. Defined values are: converted,copied, created, cropped, edited, filtered, formatted,version_updated, printed, published, managed, produced,resized, saved.New values should be verbs in the past tense."
-          },
-          "http://ns.adobe.com/xap/1.0/sType/ResourceEvent#changed": {
-            "type": "string",
-            "description": "A semicolon-delimited list of the parts of the resource that were changed since the previous event history.If not present, presumed to be undefined. When tracking changes and the scope of the changed components is unknown, it should be assumed that anything might have changed."
-          },
-          "http://ns.adobe.com/xap/1.0/sType/ResourceEvent#instanceID": {
-            "type": "string",
-            "description": "The value of the xmpMM:InstanceID property for the modified(output) resource."
-          },
-          "http://ns.adobe.com/xap/1.0/sType/ResourceEvent#parameters": {
-            "type": "string",
-            "description": "Additional description of the action."
-          },
-          "http://ns.adobe.com/xap/1.0/sType/ResourceEvent#softwareAgent": {
-            "type": "string",
-            "description": "The software agent that performed the action."
-          },
-          "http://ns.adobe.com/xap/1.0/sType/ResourceEvent#when": {
-            "type": "string",
-            "format": "date-time",
-            "description": "Timestamp of when the action occurred.For events that create or write to a file, this should be the approximate modification time of the file."
-          }
-        }
-      },
-      "description": "High-level actions that resulted in this resource. It is intended to give human readers a description of the steps taken to make the changes from the previous version to this one. The list should be at an abstract level; it is not intended to be an exhaustive keystroke or other detailed history. The description should be sufficient for metadata management, as well as for workflow enhancement."
-    },
-    "copyright_owner_id": {
-      "type": "string",
-      "description": "ID of the copyright owner.\nIf the PLUS-ID being stored in this property is registered with the PLUS Coalition, it should be expressed as a URL. For example: http://plus-id.org/PLUS-ID"
-    },
-    "copyright_owner_name": {
-      "type": "string",
-      "description": "Name of Copyright Owner."
-    },
-    "title": {
-      "type": "array",
-      "items": {
-        "$schema": "http://json-schema.org/schema#",
-        "properties": {
-          "http://ns.adobe.com/adobecloud/core/1.0/LanguageAlternativeText": {
-            "type": "string"
-          },
-          "http://ns.adobe.com/adobecloud/core/1.0/LanguageAlternativeLang": {
-            "type": "string"
-          }
-        }
-      },
-      "description": "A name given to the resource. Typically, a Title will be a name by which the resource is formally known."
-    },
-    "description": {
-      "type": "array",
-      "items": {
-        "$schema": "http://json-schema.org/schema#",
-        "properties": {
-          "http://ns.adobe.com/adobecloud/core/1.0/LanguageAlternativeText": {
-            "type": "string"
-          },
-          "http://ns.adobe.com/adobecloud/core/1.0/LanguageAlternativeLang": {
-            "type": "string"
-          }
-        }
-      },
-      "description": "An account of the content of the resource. Description may include but is not limited to: an abstract, table of contents, reference to a graphical representation of content or a free-text account of the content."
-    },
-    "not_safe": {
-      "$schema": "http://json-schema.org/schema#",
-      "properties": {}
-    },
-    "type": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      },
-      "description": "The language or languages of the resource."
-    },
-    "size": {
-      "type": "integer",
-      "description": "Size of the asset in bytes"
-    },
-    "path": {
-      "type": "string",
-      "description": "Shows the hierarchy of the asset. The path semantics should be same as that defined in https://tools.ietf.org/html/rfc3986#section-3.3. In case a repository is not path based then it can return the information which will help in browsing. It could be just an asset id, or something like {catalog}/{id} in case of OZ."
-    },
-    "etag": {
-      "type": "string",
-      "description": "An  ETag is an HTTP response header returned by an HTTP/1.1 compliant web server used to determine change in content of a resource at a given URL. "
-    },
-    "n_pages": {
-      "type": "integer",
-      "description": "The number of pages in the document (including any in contained documents)."
-    },
-    "gps_altitude": {
-      "$schema": "http://json-schema.org/schema#",
-      "properties": {}
-    },
-    "gps_altitude_ref": {
-      "type": "integer",
-      "description": "GPS tag 5, 0x5. Indicates whether the altitude is above or below sea level:\n0 = Above sea level\n1 = Below sea level"
-    },
-    "gps_latitude": {
-      "type": "string",
-      "description": "GPS tag 2, 0x02 (position) and 1, 0x01 (North/South). Indicates latitude."
-    },
-    "gps_longitude": {
-      "type": "string",
-      "description": "GPS tag 4, 0x04 (position) and 3, 0x03 (East/West). Indicates longitude."
-    },
-    "rating": {
-      "type": "integer",
-      "description": "A user-assigned rating for this file. The value shall be -1 or in the range [0..5], where -1 indicates “rejected” and 0 indicates “unrated”. If xmp:Rating is not present, a value of 0 should be assumed. NOTE: Anticipated usage is for a typical “star rating” UI, with the addition of a notion of rejection."
-    },
-    "subject": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      },
-      "description": "Set of descriptive phrases or keywords that describe the content of the resource. These keywords are part of the XMP metadata of the asset. Compare this with the `keyword` and `machineKeywords` properties, which provide more structure and context."
-    },
-    "keywords": {
-      "type": "array",
-      "items": {
-        "$schema": "http://json-schema.org/schema#",
-        "properties": {
-          "importance": {
-            "type": "string",
-            "description": "The importance of the keyword on a scale from zero to one. If required repository will infer it as per its policies and add it for the keywords"
-          }
-        }
-      },
-      "description": "The `keywords` property is used to track human-assigned descriptive phrases like keywords or tags of an asset. Rather than a plan list of tags, it is a structured set of keywords, where keywords can have an explicit importance ranking and a locale. This allows the management of multi-lingual keywords for a given asset. For machine-generated keywords, use the `machineKeywords` property. "
-    },
-    "machine_keywords": {
-      "type": "array",
-      "items": {
-        "$schema": "http://json-schema.org/schema#",
-        "properties": {
-          "confidence": {
-            "type": "string",
-            "description": "Confidence of the algorithm that this keyword is applicable to the asset. Confidence values are numbers between zero and one. A value of .95 indicates that the algorithm expects less than 5% of all tags with the same confidence value to be mis-applied, i.e. not to be a proper description of the asset."
-          },
-          "algorithm": {
-            "type": "string",
-            "description": "Name of the algorithm which generated the keyword."
-          }
-        }
-      },
-      "description": "The `machineKeywords` property is used to track machine-assigned descriptive phrases like keywords or tags of an asset. Rather than a plan list of tags, it is a structured set of keywords, where keywords can have an explicit confidence ranking and a locale. For human-defined keywords, use the `keywords` property. "
-    },
-    "fonts": {
-      "$schema": "http://json-schema.org/schema#",
-      "properties": {}
-    },
-    "layers": {
-      "$schema": "http://json-schema.org/schema#",
-      "properties": {}
-    },
-    "artboards": {
-      "type": "array",
-      "items": {
-        "$schema": "http://json-schema.org/schema#",
-        "properties": {
-          "http://ns.adobe.com/core/1.0/sType/Artboard#name": {
-            "type": "string",
-            "description": "Name of the artboard. This would be visible to the user and users can specify names that can help them uniquely identfiy different Artboards."
-          },
-          "http://ns.adobe.com/core/1.0/sType/Artboard#originX": {
-            "type": "integer",
-            "description": "Origin X position - Base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards)"
-          },
-          "http://ns.adobe.com/core/1.0/sType/Artboard#originY": {
-            "type": "integer",
-            "description": "Origin Y position - Base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards)"
-          },
-          "http://ns.adobe.com/core/1.0/sType/Artboard#width": {
-            "type": "integer",
-            "description": "Width of the artboard"
-          },
-          "http://ns.adobe.com/core/1.0/sType/Artboard#height": {
-            "type": "integer",
-            "description": "Height of the artboard"
-          },
-          "http://ns.adobe.com/core/1.0/sType/Artboard#unit": {
-            "type": "string",
-            "description": "Unit used for artboard coordinates (originX, originY, width and height). For example: inch, mm, pixel, pica, point (default is pixels)"
-          }
-        }
-      },
-      "description": "Contains the artboards that are being used in the document. A document can have multiple artboards."
     }
   },
+  "allOf": [
+    {"$ref": "#/definitions/asset"}    
+  ],
   "required": [
     "asset_id",
     "create_date",

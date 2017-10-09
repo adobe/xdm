@@ -33,7 +33,7 @@
         "version_id": {
           "type": "string",
           "meta:immutable": true,
-          "description": "The version ID of the asset. It will be generated both on explicit and implicit save or upload."
+          "description": "The version ID of the piece of content. It will be generated both on explicit and implicit save or upload."
         }
       }
     }

@@ -1,0 +1,32 @@
+{
+    "@context": {
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "domain": {
+            "@id": "rdfs:domain",
+            "@type": "@id"
+        },
+        "imsorg": {
+            "@id": "http://ns.adobe.com/xdm/ims/org#",
+            "@type": "rdfs:Class",
+            "rdfs:label": {
+                "@language": "en-US",
+                "@value": "IMS Organization"
+            },
+            "rdfs:comment": "Represents an IMS Organization",
+        },
+        "org_id": {
+            "@id": "imsorg:org_id",
+            "@type": "rdf:property",
+            "rdfs:subPropertyOf": "@id",
+            "domain": "imsorg",
+            "rdfs:label": {
+                "@language": "en-US",
+                "@value": "IMS Organization ID"
+            },
+            "rdfs:comment": "Could not find any documentation to refer to.",
+            "rdfs:seeAlso": ""
+        }
+    }
+}

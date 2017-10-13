@@ -33,9 +33,9 @@
         "expanded-term-definition": {
             "type": "object",
             "properties": {
-                "@id": {
+                "@id": {"description":"please help me",
                     "anyOf": [
-                        {
+                        {"description":"please work",
                             "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/uri"
                         },
                         {
@@ -223,5 +223,6 @@
             "$ref": "#/definitions/single-or-array-of-contexts"
         }
     },
-    "type": "object"
+    "type": "object",
+    "title": "Context"
 }

@@ -2,21 +2,23 @@
     "@context": {
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "owl": "http://www.w3.org/2002/07/owl#",
+        "imsuser": "http://ns.adobe.com/xdm/ims/user#",
         "domain": {
             "@id": "rdfs:domain",
             "@type": "@id"
-        },
-        "imsuser": {
-            "@id": "http://ns.adobe.com/xdm/ims/user#",
+        }
+    },
+    "@graph": [
+        {
+            "@id": "imsuser",
             "@type": "rdfs:Class",
             "rdfs:label": {
                 "@language": "en",
                 "@value": "IMS User"
             },
-            "rdfs:comment": "Represents an IMS User",
+            "rdfs:comment": "Represents an IMS User"
         },
-        "user_id": {
+        {
             "@id": "imsuser:user_id",
             "@type": "rdf:property",
             "rdfs:subPropertyOf": "@id",
@@ -31,5 +33,5 @@
                 "https://wiki.corp.adobe.com/display/ims/IMS+API+-+userinfo"
             ]
         }
-    }
+    ]
 }

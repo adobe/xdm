@@ -33,9 +33,9 @@
         "expanded-term-definition": {
             "type": "object",
             "properties": {
-                "@id": {"description":"please help me",
+                "@id": {
                     "anyOf": [
-                        {"description":"please work",
+                        {
                             "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/uri"
                         },
                         {

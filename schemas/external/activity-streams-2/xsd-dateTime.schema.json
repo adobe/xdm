@@ -2,5 +2,6 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$id": "https://ns.adobe.com/xdm/external/activity-streams-2/xsd-dateTime",
     "type": "string",
-    "format": "date-time"
+    "format": "date-time",
+    "title":  "XSD Date/Time"
 }

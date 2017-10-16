@@ -2,5 +2,6 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$id": "https://ns.adobe.com/xdm/external/activity-streams-2/organization",
     "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-organization",
-    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/object"
+    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/object",
+    "title":"Organization"
 }

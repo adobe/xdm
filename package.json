@@ -9,6 +9,7 @@
     "markdown-importer-version": "0.0.3"
   },
   "scripts": {
+    "clean": "rm -rf docs/reference",
     "test": "sh validate.sh",
     "prepare": "mkdir -p docs/reference && jsonschema2md -o docs/reference -d schemas && curl -o \"./node_modules/markdown-importer-0.0.3-jar-with-dependencies.jar\" -C - https://artifactory.corp.adobe.com/artifactory/maven-markdown-tools-release/io/adobe/udp/markdown-importer/0.0.3/markdown-importer-0.0.3-jar-with-dependencies.jar && java -jar ./node_modules/markdown-importer-0.0.3-jar-with-dependencies.jar markdown2aem.yaml",
     "upload": "curl -u \"$npm_package_config_aem_user:$npm_package_config_aem_password\" -F file=\"@xdm-docs.zip\" -F name=\"xdm-docs\" -F force=true -F install=true https://author-adobeio-stage.adobemsbasic.com/crx/packmgr/service.jsp",

@@ -9,33 +9,12 @@
         "name": {
           "type": "string",
           "description": "Name of the artboard. This would be visible to the user and users can specify names that can help them uniquely identfiy different Artboards."
-        },
-        "originX": {
-          "type": "integer",
-          "description": "Origin X position - Base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards)"
-        },
-        "originY": {
-          "type": "integer",
-          "description": "Origin Y position - Base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards)"
-        },
-        "width": {
-          "type": "integer",
-          "exclusiveMinimum": 0,
-          "description": "Width of the artboard"
-        },
-        "height": {
-          "type": "integer",
-          "exclusiveMinimum": 0,
-          "description": "Height of the artboard"
-        },
-        "unit": {
-          "type": "string",
-          "description": "Unit used for artboard coordinates (originX, originY, width and height). For example: inch, mm, pixel, pica, point (default is pixels)"
         }
       }
     }
   },
   "allOf": [
-    {"$ref":"#/definitions/artboard"}
+    {"$ref":"#/definitions/artboard"},
+    {"$ref":"https://ns.adobe.com/xdm/assets/variable-unit-rectangular#/definitions/rectangular"}
   ]
 }

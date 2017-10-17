@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://ns.adobe.com/xdm/assets/variable-unit-rectangular",
+  "title": "Rectangular Object (measured in variable unit)",
+  "description":"This is an abstract schema for objects of rectangular dimensions and position, with a user-specified unit of measurement. Examples include `Artboard` and `Layer`.",
+  "definitions": {
+    "rectangular": {
+      "properties": {
+        "originX": {
+          "type": "integer",
+          "description": "Origin X position - Base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards)"
+        },
+        "originY": {
+          "type": "integer",
+          "description": "Origin Y position - Base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards)"
+        },
+        "width": {
+          "type": "integer",
+          "exclusiveMinimum": 0,
+          "description": "Width of the artboard"
+        },
+        "height": {
+          "type": "integer",
+          "exclusiveMinimum": 0,
+          "description": "Height of the artboard"
+        },
+        "unit": {
+          "type": "string",
+          "description": "Unit used for artboard coordinates (originX, originY, width and height). For example: inch, mm, pixel, pica, point (default is pixels)"
+        }
+      }
+    }
+  }
+}

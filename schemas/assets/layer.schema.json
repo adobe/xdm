@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://ns.adobe.com/xdm/assets/layer",
+  "title": "Layer",
+  "description":"",
+  "definitions": {
+    "layer": {
+      "properties": {
+        "name": {
+          "type":"string",
+          "title": "Name",
+          "description": "Name of the Layer. This will be visible to the user and users can specify names that can help them to identify different Layers"
+        },
+        "visible": {
+          "type":"boolean",
+          "title": "Visible",
+          "description": "Indicates if a layer is visible in the document. `visible = true` - Layer is visible and `false` - Layer is hidden. Visibility is not to be confused with opacity, which is a layer effect."
+        },
+        "style": {
+          "type":"string",
+          "name": "Style",
+          "description": "A layer style is one or more effects applied to a layer or layer group. You can apply one of the preset styles provided with Photoshop or create a custom style. Photoshop provides a variety of effects—such as shadows, glows, and bevels—that change the appearance of a layer’s contents in a non-distructive way. Layer effects are linked to the layer contents. When you move or edit the contents of the layer, the same effects are applied to the modified contents. For example, if you apply a drop shadow to a text layer and then add new text, the shadow is added automatically to the new text."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {"$ref":"#/definitions/layer"},
+    {"$ref":"https://ns.adobe.com/xdm/assets/variable-unit-rectangular#/definitions/rectangular"}
+  ]
+}

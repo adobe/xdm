@@ -68,8 +68,8 @@
                     {"type": "integer"},
                     {"type": "array"},
                     {"type": "boolean"},
-                    {"$ref": "#/definitions/Component"},
-                    {"$ref": "#/definitions/Container"}
+                    {"$ref": "#/definitions/component"},
+                    {"$ref": "#/definitions/container"}
                 ]
             }
         },
@@ -86,8 +86,8 @@
                     "type": "object",
                     "description": "The items of this container.",
                     "oneOf": [
-                        { "$ref": "#/definitions/Container" },
-                        { "$ref": "#/definitions/Component"}
+                        { "$ref": "#/definitions/container" },
+                        { "$ref": "#/definitions/component"}
                     ]
                 },
                 "itemsOrder": {
@@ -95,7 +95,7 @@
                     "items": {
                         "type": "string"
                     },
-                    "description": "Defines the order of the items in the container. can be omitted if the order is not important."
+                    "description": "Defines the order of the items in the container. Can be omitted if the order is not important."
                 }
             },
             "required": [
@@ -110,11 +110,11 @@
                 "type": {
                     "type": "string",
                     "format": "uri-reference",
-                    "description": "Type of the component. acts as processing hint for the client."
+                    "description": "Type of the component. Acts as processing hint for the client."
                 }
             },
             "additionalProperties": {
-                "$ref": "#/definitions/Residuals"
+                "$ref": "#/definitions/residuals"
             },
             "required": [
                 "type"

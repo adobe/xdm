@@ -1,0 +1,1 @@
+A container for `Page Component`s. Components in the container can be ordered or unordered, and the type of the container determines how the container is authored, configured, rendered, and displayed.

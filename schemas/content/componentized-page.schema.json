@@ -69,39 +69,9 @@
                     {"type": "array"},
                     {"type": "boolean"},
                     {"$ref": "https://ns.adobe.com/xdm/content/page-component#/definitions/component"},
-                    {"$ref": "#/definitions/container"}
+                    {"$ref": "https://ns.adobe.com/xdm/content/component-container#/definitions/container"}
                 ]
             }
-        },
-        "container": {
-            "description": "Acts as container for other components.",
-            "type": "object",
-            "properties": {
-                "type": {
-                    "type": "string",
-                    "format": "uri-reference",
-                    "description": "Type of the container. acts as processing hint for the client."
-                },
-                "items": {
-                    "type": "object",
-                    "description": "The items of this container.",
-                    "oneOf": [
-                        { "$ref": "#/definitions/container" },
-                        { "$ref": "https://ns.adobe.com/xdm/content/page-component#/definitions/component"}
-                    ]
-                },
-                "itemsOrder": {
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    },
-                    "description": "Defines the order of the items in the container. Can be omitted if the order is not important."
-                }
-            },
-            "required": [
-                "type",
-                "items"
-            ]
         }
     }
 }

@@ -68,7 +68,7 @@
                     {"type": "integer"},
                     {"type": "array"},
                     {"type": "boolean"},
-                    {"$ref": "#/definitions/component"},
+                    {"$ref": "https://ns.adobe.com/xdm/content/page-component#/definitions/component"},
                     {"$ref": "#/definitions/container"}
                 ]
             }
@@ -87,7 +87,7 @@
                     "description": "The items of this container.",
                     "oneOf": [
                         { "$ref": "#/definitions/container" },
-                        { "$ref": "#/definitions/component"}
+                        { "$ref": "https://ns.adobe.com/xdm/content/page-component#/definitions/component"}
                     ]
                 },
                 "itemsOrder": {
@@ -101,23 +101,6 @@
             "required": [
                 "type",
                 "items"
-            ]
-        },
-        "component": {
-            "description": "Acts as generic typed component that can have any arbitrary properties.",
-            "type": "object",
-            "properties": {
-                "type": {
-                    "type": "string",
-                    "format": "uri-reference",
-                    "description": "Type of the component. Acts as processing hint for the client."
-                }
-            },
-            "additionalProperties": {
-                "$ref": "#/definitions/residuals"
-            },
-            "required": [
-                "type"
             ]
         }
     }

@@ -19,7 +19,7 @@ The project is laid out in the following way:
   - `schemas/data` – for schemas describing collected data, metric, etc.
   - `schemas/external/*` – for JSON Schema representation of externally defined standards
   - `schemas/locations` – for schemas describing experience channels and locations therein
-  - `schemas/base` – for basic concepts like extensibility that are not covered in `external` schemas
+  - `schemas/common` – for basic concepts like extensibility that are not covered in `external` schemas
 - `*.ttl`: legacy schema files in Turtle Syntax that have not yet been converted into JSON Schema
 - `package.json`: a build file for `npm` that allows the generation of Markdown from the JSON Schema source files and (later) the generation of an AEM package to be deployed on the Adobe I/O Website
 - `README.md`: this file
@@ -92,16 +92,16 @@ $ npm test
 > xdm-models@0.0.1 test /Users/lars/Code/models
 > sh validate.sh
 
-Validating schemas/base/eventenvelope.example.1.json against schemas/base/eventenvelope.schema.json
-schemas/base/eventenvelope.example.1.json valid
-Validating schemas/base/eventenvelope.example.2.json against schemas/base/eventenvelope.schema.json
-schemas/base/eventenvelope.example.2.json valid
-Validating schemas/base/eventenvelope.example.3.json against schemas/base/eventenvelope.schema.json
-schemas/base/eventenvelope.example.3.json valid
-Validating schemas/base/eventenvelope.example.4.json against schemas/base/eventenvelope.schema.json
-schemas/base/eventenvelope.example.4.json valid
-Validating schemas/base/eventenvelope.example.5.json against schemas/base/eventenvelope.schema.json
-schemas/base/eventenvelope.example.5.json valid
+Validating schemas/common/eventenvelope.example.1.json against schemas/common/eventenvelope.schema.json
+schemas/common/eventenvelope.example.1.json valid
+Validating schemas/common/eventenvelope.example.2.json against schemas/common/eventenvelope.schema.json
+schemas/common/eventenvelope.example.2.json valid
+Validating schemas/common/eventenvelope.example.3.json against schemas/common/eventenvelope.schema.json
+schemas/common/eventenvelope.example.3.json valid
+Validating schemas/common/eventenvelope.example.4.json against schemas/common/eventenvelope.schema.json
+schemas/common/eventenvelope.example.4.json valid
+Validating schemas/common/eventenvelope.example.5.json against schemas/common/eventenvelope.schema.json
+schemas/common/eventenvelope.example.5.json valid
 
 ```
 

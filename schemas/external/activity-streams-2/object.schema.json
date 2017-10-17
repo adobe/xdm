@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$id": "https://ns.adobe.com/xdm/external/activity-streams-2/object",
+    "title":"Object",
     "definitions": {
         "single-object-or-link": {
             "anyOf": [

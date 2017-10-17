@@ -18,10 +18,10 @@
     "required": [
         "name",
         "path",
-        "created_date",
-        "created_by",
-        "last_modified_date",
-        "last_modified_by"
+        "repository_created_date",
+        "repository_created_by",
+        "repository_last_modified_date",
+        "repository_last_modified_by"
     ],
     "definitions": {
         "page": {

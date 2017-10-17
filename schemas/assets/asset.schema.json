@@ -295,12 +295,22 @@
             "$schema": "http://json-schema.org/schema#",
             "properties": {
               "confidence": {
-                "type": "string",
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
                 "description": "Confidence of the algorithm that this keyword is applicable to the asset. Confidence values are numbers between zero and one. A value of .95 indicates that the algorithm expects less than 5% of all tags with the same confidence value to be mis-applied, i.e. not to be a proper description of the asset."
               },
               "algorithm": {
                 "type": "string",
                 "description": "Name of the algorithm which generated the keyword."
+              },
+              "value": {
+                "type": "string",
+                "description": "The keyword itself. A keyword can be considered like a tag, i.e. a short description of the content of the asset."
+              },
+              "locale_code": {
+                "type": "string",
+                "description": "Language of the keyword. The locale code should follow [RFC BCP47](https://tools.ietf.org/html/bcp47)"
               }
             }
           },

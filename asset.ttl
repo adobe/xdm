@@ -385,53 +385,53 @@ core:importance a rdf:Property ;
      ]
    ) .
 
-## structure of machine keywords property
+# ## structure of machine keywords property
 
-core:stMachineKeyword a rdfs:Class ;
-  rdfs:label "Machine Keyword"@en ;
-  rdfs:comment """The list of machine-inferred keywords describing the asset. Values of the `stMachineKeyword` property have been applied by a machine and do not require a human reviewer.""" ;
-  rdfs:subClassOf rdfs:Resource .
+# core:stMachineKeyword a rdfs:Class ;
+#   rdfs:label "Machine Keyword"@en ;
+#   rdfs:comment """The list of machine-inferred keywords describing the asset. Values of the `stMachineKeyword` property have been applied by a machine and do not require a human reviewer.""" ;
+#   rdfs:subClassOf rdfs:Resource .
 
-core:value a rdf:Property ;
-  rdfs:label "value"@en ;
-  rdfs:range xsd:string ;
-  rdfs:domain core:stMachineKeyword ;
-  rdfs:comment """The keyword itself. A keyword can be considered like a tag, i.e. a short description of the content of the asset.""" ;
-  meta:mandatory true ;
-  meta:jsonName "value" .
+# core:value a rdf:Property ;
+#   rdfs:label "value"@en ;
+#   rdfs:range xsd:string ;
+#   rdfs:domain core:stMachineKeyword ;
+#   rdfs:comment """The keyword itself. A keyword can be considered like a tag, i.e. a short description of the content of the asset.""" ;
+#   meta:mandatory true ;
+#   meta:jsonName "value" .
 
-core:localecode a rdf:Property ;
-  rdfs:label "locale Code"@en ;
-  rdfs:range xsd:string ;
-  rdfs:domain core:stMachineKeyword ;
-  rdfs:comment """Language of the keyword. The locale code should follow RFC BCP47""" ;
-  rdfs:seeAlso <https://tools.ietf.org/html/bcp47> ;
-  skos:example "de-CH" ;
-  meta:mandatory false ;
-  meta:jsonName "locale_code" .
+# core:localecode a rdf:Property ;
+#   rdfs:label "locale Code"@en ;
+#   rdfs:range xsd:string ;
+#   rdfs:domain core:stMachineKeyword ;
+#   rdfs:comment """Language of the keyword. The locale code should follow RFC BCP47""" ;
+#   rdfs:seeAlso <https://tools.ietf.org/html/bcp47> ;
+#   skos:example "de-CH" ;
+#   meta:mandatory false ;
+#   meta:jsonName "locale_code" .
 
-core:confidence a rdf:Property ;
-  rdfs:label "confidence"@en ;
-  rdfs:range xsd:float ;
-  rdfs:domain core:stMachineKeyword ;
-  rdfs:comment """Confidence of the algorithm that this keyword is applicable to the asset. Confidence values are numbers between zero and one. A value of .95 indicates that the algorithm expects less than 5% of all tags with the same confidence value to be mis-applied, i.e. not to be a proper description of the asset.""" ;
-  meta:mandatory false ;
-  meta:jsonName "confidence" ;
-  owl:withRestrictions (
-    [
-      xsd:minInclusive +0.0
-    ] [
-       xsd:maxInclusive +1.0
-     ]
-   ) .
+# core:confidence a rdf:Property ;
+#   rdfs:label "confidence"@en ;
+#   rdfs:range xsd:float ;
+#   rdfs:domain core:stMachineKeyword ;
+#   rdfs:comment """Confidence of the algorithm that this keyword is applicable to the asset. Confidence values are numbers between zero and one. A value of .95 indicates that the algorithm expects less than 5% of all tags with the same confidence value to be mis-applied, i.e. not to be a proper description of the asset.""" ;
+#   meta:mandatory false ;
+#   meta:jsonName "confidence" ;
+#   owl:withRestrictions (
+#     [
+#       xsd:minInclusive +0.0
+#     ] [
+#        xsd:maxInclusive +1.0
+#      ]
+#    ) .
 
-core:algorithm a rdf:Property ;
-  rdfs:label "algorithm"@en ;
-  rdfs:range xsd:string ;
-  rdfs:domain core:stMachineKeyword ;
-  rdfs:comment """Name of the algorithm which generated the keyword.""" ;
-  meta:mandatory false ;
-  meta:jsonName "algorithm" .
+# core:algorithm a rdf:Property ;
+#   rdfs:label "algorithm"@en ;
+#   rdfs:range xsd:string ;
+#   rdfs:domain core:stMachineKeyword ;
+#   rdfs:comment """Name of the algorithm which generated the keyword.""" ;
+#   meta:mandatory false ;
+#   meta:jsonName "algorithm" .
 
 ## container type and auxiliary structure for defining LanguageAlternative as per XMP spec
 

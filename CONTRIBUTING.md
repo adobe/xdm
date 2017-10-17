@@ -96,6 +96,7 @@ Avoid non-semantic limits – don’t put current resource limits in the data mo
 
 * file names for schema files should be lower case and end with `.schema.json`
 * include an `"$id"` with a value like `"https://ns.adobe.com/xdm/assets/image"` in the schema
+* don't nest schemas too deeply. Break inline type definitions into separate `*.schema.json` files if they have properties with object types themselves.
 
 ## Writing Styleguides
 

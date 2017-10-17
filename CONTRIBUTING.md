@@ -44,7 +44,6 @@ The target consumers of the data model are developers building applications usin
 *  **Compatibility**: implementations can easily cross between products.
 *  **Consumability**: systems based on the data model are easy to build, understand, and use.
 
----
 ### Design for Longevity
 
 Our goal is to establish a universal standard for the experience business. As such, this standard's lifetime will be comparable to standards like PDF (24 years old), EXIF (22 years old), or HTML (24 years old).
@@ -68,7 +67,7 @@ XDM is not an isolated standard, but incorporates and builds on standards. Whene
 Interoperability with [Microsoft's Common Data Model (CDM)](https://docs.microsoft.com/en-us/common-data-service/entity-reference/common-data-model)is a top priority. This means that definitions that are present in CDM should be used or extended, where appropriate, by XDM. XDM should not attempt to duplicate definitions that are present in CDM.
 
 Where appropriate, we can 'lead' CDM, extend it to meet other requirements.
-A good source of data model elements is [Schema.Org](http://schema.org).
+Another good source of data model elements is [schema.Org](http://schema.org).
 
 ### Design for Consumability
 
@@ -82,20 +81,21 @@ Additional aspects of standard design that aid with consumability are:
 
 ### Design for the Cloud
 
-Desktop and Enterprise applications are often built to be localized, adapted to the customer environment. But XDM will form the "glue" that puts together widely distributed components which may have different internal data models.
+The experience business is a global business, therefore XDM needs to meet the needs of consumers and creators world-wide.
+Desktop and Enterprise applications are often built to be localized, adapted to the customer environment. 
+But XDM will form the "glue" that puts together widely distributed components which may have different internal data models.
 In general we want to avoid the necessity of converters, with some exceptions:
 
-Some values require context to interpret--for example, a phone number without a county code. Include the context in XDM.
+Some values require context to interpret – for example, a phone number without a county code. Include the context in XDM.
 However, for values that need no context to convert, put off conversion by allowing alternatives: writing XDM data will require no conversion, while consuming XDM data only requires conversion in cases where conversion is necessary.
 
-Avoid non-semantic limits--don’t put current resource limits in the data model. Limits (number ranges, choices, string length) should be based on business constraints or expressed independently.
+Avoid non-semantic limits – don’t put current resource limits in the data model. Limits (number ranges, choices, string length) should be based on business constraints or expressed independently.
 
----
 
 ## Coding Styleguides
 
 * file names for schema files should be lower case and end with `.schema.json`
-* include an `"$id"` with a value like `"https://ns.adobe.com/xdm/assets/image"` in the schema.
+* include an `"$id"` with a value like `"https://ns.adobe.com/xdm/assets/image"` in the schema
 
 ## Writing Styleguides
 

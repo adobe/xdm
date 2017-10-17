@@ -59,7 +59,7 @@
         }
     },
     "additionalProperties": {
-        "$ref": "#/definitions/Residuals"
+        "$ref": "#/definitions/residuals"
     },
     "required": [
         "name",
@@ -70,7 +70,7 @@
         "last_modified_by"
     ],
     "definitions": {
-        "Residuals": {
+        "residuals": {
             "description": "Defines the set of residual properties allowed on a page or component.",
             "additionalProperties": {
                 "anyOf": [
@@ -85,7 +85,7 @@
                 ]
             }
         },
-        "Container": {
+        "container": {
             "description": "Acts as container for other components.",
             "type": "object",
             "properties": {
@@ -115,7 +115,7 @@
                 "items"
             ]
         },
-        "Component": {
+        "component": {
             "description": "Acts as generic typed component that can have any arbitrary properties.",
             "type": "object",
             "properties": {

@@ -1,6 +1,19 @@
 ## Related Standards
 
-XDM incorporates a number of existing standards like Microsoft's Common Data Model, schema.org, and Adobe's Extensible Metadata Platform (XMP).
+XDM incorporates or builds a number of existing standards and specifications.
+
+Standard | Used for | Status
+--- | --- | --- | ---
+[MS CDM](https://docs.microsoft.com/en-us/common-data-service/entity-reference/common-data-model) | Data model for business | Beta
+[XMP](http://www.adobe.com/products/xmp.html) | Asset | Stable
+[schema.org](http://schema.org) | Busines schemas | Evolving
+[JSON Schema](http://json-schema.org) | Representing data model | Evolving
+[EXIF](http://www.exif.org) | Image metadata | Stable
+[TIFF](https://www.iso.org/standard/34342.html) | ?? | Frozen
+[W3C Activity Streams](https://www.w3.org/TR/activitystreams-core/) | Event model | ?? |
+[Dublin Core](http://dublincore.org/) | Cross-media metadata | Stable
+| [URI](https://www.ietf.org/rfc/rfc3986.txt) | Core datatype | Stable
+| [BCP 47 – Tags for Identifying Languages](https://tools.ietf.org/html/bcp47) | Core datatype | Stable
 
 ### Relationship to XMP
 

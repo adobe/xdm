@@ -36,56 +36,61 @@ Each commit message:
 
 ## Design Guidelines
 
+The target consumers of the data model are developers building applications using services from Adobe, our partners, and their customers. These design guidelines help:
+
+*  **Longevity**: consuming applications rarely need to be changed.
+*  **Clarity**: concepts are self-explanatory.
+*  **Continuity**: existing knowledge can be re-applied.
+*  **Compatibility**: implementations can easily cross between products.
+*  **Consumability**: systems based on the data model are easy to build, understand, and use.
+
 ### Design for Longevity
 
 Our goal is to establish a universal standard for the experience business. As such, this standard's lifetime will be comparable to standards like PDF (24 years old), EXIF (22 years old), or HTML (24 years old).
 
-The design decisions you make today, will impact future developers, who will have only limited understanding, patience, or sympathy for constraints dictated by your current implementation.
+The design decisions made today will impact future developers, who will have only limited understanding, patience, or sympathy for constraints dictated by current Adobe implementations. While future requirements cannot be predicted in detail, it is important to accomodate requirements and industry trends.
 
 ### Design for Clarity
 
-As XDM will be consumed and implemented by many highly different applications, which in turn will be used by digital experience professionals such as marketers, designers, advertisers, or digital analysts, which will be exposed to names and concepts introduced and solidified in XDM, clarity in naming is of utmost importance.
+XDM will be consumed and implemented by many highly different applications, which in turn will be used by digital experience professionals such as marketers, designers, advertisers, or digital analysts, which will be exposed to names and concepts introduced and solidified in XDM.
 
-When names can refer to a business concept or a lower-level technical concept, the shorter, simpler name shall be reserved for the high-level business concept.
+When names can refer to a business concept or a lower-level technical concept, save the shorter, simpler name for the high-level business concept.
 
 For example, for a marketer, an *event* is something that happens or takes place, or a planned public or social occasion. For a developer, an *event* in event-driven programming is a low level user- or system action. As the term event is highly relevant to experiences in the more general sense, the shorter, unqualified term shall be used for the business concept.
 
 ### Design for Continuity
 
-XDM is not an isolated standard, but a standard that incorporates and subsumes existing standards. Whenever possible, use existing standards, or "borrow" concepts from existing standards. Don't reinvent the wheel when you can steal the wheel.
-
-Standards that XDM is relying on include:
-
-* [XMP](http://www.adobe.com/products/xmp.html)
-* [schema.org](http://schema.org)
-* [JSON Schema](http://json-schema.org)
-* [EXIF](http://www.exif.org)
-* [TIFF](https://www.iso.org/standard/34342.html)
-* [W3C Activity Streams](https://www.w3.org/TR/activitystreams-core/)
-* [Dublin Core](http://dublincore.org/)
-* [URI](https://www.ietf.org/rfc/rfc3986.txt)
-* [BCP 47 – Tags for Identifying Languages](https://tools.ietf.org/html/bcp47)
+XDM is not an isolated standard, but incorporates and builds on standards. Whenever possible, use existing standards, or "borrow" concepts from existing standards. See (and update!) [Standards Used by XDM](docs/standards.md).
 
 ### Design for Compatibility
 
-Another goal for XDM is interoperability with [Microsoft's Common Data Model (CDM)](https://docs.microsoft.com/en-us/common-data-service/entity-reference/common-data-model). This means, that definitions that are present in CDM should be used or extended, where appropriate, by XDM. XDM should not attempt to duplicate definitions that are present in CDM.
+Interoperability with [Microsoft's Common Data Model (CDM)](https://docs.microsoft.com/en-us/common-data-service/entity-reference/common-data-model)is a top priority. This means that definitions that are present in CDM should be used or extended, where appropriate, by XDM. XDM should not attempt to duplicate definitions that are present in CDM.
+
+Where appropriate, we can 'lead' CDM, extend it to meet other requirements.
+Another good source of data model elements is [schema.Org](http://schema.org).
 
 ### Design for Consumability
 
 While there will be almost certainly multiple implementations of parts of XDM across Adobe (sometimes sequentially, sometimes in parallel), the number of internal implementations (producers) will be massively outstripped by the number of external, consuming implementations of XDM.
-
-All of the design guidelines above help the consumer:
-
-* **Longevity** means consuming applications rarely need to be changed
-*  **Clarity** means that concepts are self-explanatory
-*  **Continuity** means that existing knowledge can be re-applied
-*  **Compatibility** means that implementations can cross Microsoft and Adobe products
 
 Additional aspects of standard design that aid with consumability are: 
 
 * principle of least astonishment: don't surprise the consumer
 * avoid unnecessary complexity: don't introduce indirections that are not needed
 * the principle of minimal verbosity: make keep things as short as possible, but not shorter
+
+### Design for the Cloud
+
+The experience business is a global business, therefore XDM needs to meet the needs of consumers and creators world-wide.
+Desktop and Enterprise applications are often built to be localized, adapted to the customer environment. 
+But XDM will form the "glue" that puts together widely distributed components which may have different internal data models.
+In general we want to avoid the necessity of converters, with some exceptions:
+
+Some values require context to interpret – for example, a phone number without a county code. Include the context in XDM.
+However, for values that need no context to convert, put off conversion by allowing alternatives: writing XDM data will require no conversion, while consuming XDM data only requires conversion in cases where conversion is necessary.
+
+Avoid non-semantic limits – don’t put current resource limits in the data model. Limits (number ranges, choices, string length) should be based on business constraints or expressed independently.
+
 
 ## Coding Styleguides
 

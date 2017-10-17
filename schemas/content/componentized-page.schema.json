@@ -3,7 +3,7 @@
     "$id": "https://ns.adobe.com/xdm/content/hypertext-page",
     "type": "object",
 
-    "title": "Hypertext Page",
+    "title": "Componentized Page",
     "description": "A hypertext page that is part of a web site or mobile web site. Hypertext pages are modular (consist of smaller content fragments), hyperlinked (link to other pages), and include digital assets (like images or videos)",
 
     "properties": {

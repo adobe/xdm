@@ -315,35 +315,10 @@
           "properties": {}
         },
         "artboards": {
+          "title": "Artboards",
           "type": "array",
           "items": {
-            "$schema": "http://json-schema.org/schema#",
-            "properties": {
-              "http://ns.adobe.com/core/1.0/sType/Artboard#name": {
-                "type": "string",
-                "description": "Name of the artboard. This would be visible to the user and users can specify names that can help them uniquely identfiy different Artboards."
-              },
-              "http://ns.adobe.com/core/1.0/sType/Artboard#originX": {
-                "type": "integer",
-                "description": "Origin X position - Base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards)"
-              },
-              "http://ns.adobe.com/core/1.0/sType/Artboard#originY": {
-                "type": "integer",
-                "description": "Origin Y position - Base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards)"
-              },
-              "http://ns.adobe.com/core/1.0/sType/Artboard#width": {
-                "type": "integer",
-                "description": "Width of the artboard"
-              },
-              "http://ns.adobe.com/core/1.0/sType/Artboard#height": {
-                "type": "integer",
-                "description": "Height of the artboard"
-              },
-              "http://ns.adobe.com/core/1.0/sType/Artboard#unit": {
-                "type": "string",
-                "description": "Unit used for artboard coordinates (originX, originY, width and height). For example: inch, mm, pixel, pica, point (default is pixels)"
-              }
-            }
+            "$ref":"https://ns.adobe.com/xdm/assets/artboard"
           },
           "description": "Contains the artboards that are being used in the document. A document can have multiple artboards."
         }

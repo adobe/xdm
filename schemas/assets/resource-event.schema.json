@@ -35,7 +35,7 @@
           "title": "Instance ID",
           "description": "The value of the `instance_id` property for the modified (output) resource. The value is a GUID, capital A-F, 8-4-4-12",
           "meta:example": "00112233-4455-6677-8899-AABBCCDDEEFF",
-          "pattern": "^[A-Z0-9]{8}-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{12}$",
+          "pattern": "^[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}$",
           "type": "string"
         },
         "parameters": {

@@ -1578,41 +1578,41 @@ xmp:Rating a core:BaseProperty, owl:FunctionalProperty ;
    skos:example "" ;
    rdfs:domain core:Asset .
 
-dc:subject a core:BaseProperty, owl:FunctionalProperty ;
-   rdfs:label "Subject"@en ;
-   rdfs:comment """Set of descriptive phrases or keywords that describe the content of the resource. These keywords are part of the XMP metadata of the asset. Compare this with the `keyword` and `machineKeywords` properties, which provide more structure and context.""" ;
-   rdfs:range core:textSet ;
-   meta:mandatory false ;
-   meta:userEditable true ;
-   meta:immutable false ;
-   meta:jsonName "subject" ;
-   skos:note "" ;
-   skos:example "" ;
-   rdfs:domain core:Asset .
+# dc:subject a core:BaseProperty, owl:FunctionalProperty ;
+#    rdfs:label "Subject"@en ;
+#    rdfs:comment """Set of descriptive phrases or keywords that describe the content of the resource. These keywords are part of the XMP metadata of the asset. Compare this with the `keyword` and `machineKeywords` properties, which provide more structure and context.""" ;
+#    rdfs:range core:textSet ;
+#    meta:mandatory false ;
+#    meta:userEditable true ;
+#    meta:immutable false ;
+#    meta:jsonName "subject" ;
+#    skos:note "" ;
+#    skos:example "" ;
+#    rdfs:domain core:Asset .
  
-core:keywords a core:BaseProperty, owl:FunctionalProperty ;
-   rdfs:label "Keywords"@en ;
-   rdfs:comment """The `keywords` property is used to track human-assigned descriptive phrases like keywords or tags of an asset. Rather than a plan list of tags, it is a structured set of keywords, where keywords can have an explicit importance ranking and a locale. This allows the management of multi-lingual keywords for a given asset. For machine-generated keywords, use the `machineKeywords` property. """ ;
-   rdfs:range core:keywordSet ;
-   meta:mandatory false ;
-   meta:userEditable true ;
-   meta:immutable false ;
-   meta:jsonName "keywords" ;
-   skos:note "" ;
-   skos:example "" ;
-   rdfs:domain core:Asset .
+# core:keywords a core:BaseProperty, owl:FunctionalProperty ;
+#    rdfs:label "Keywords"@en ;
+#    rdfs:comment """The `keywords` property is used to track human-assigned descriptive phrases like keywords or tags of an asset. Rather than a plan list of tags, it is a structured set of keywords, where keywords can have an explicit importance ranking and a locale. This allows the management of multi-lingual keywords for a given asset. For machine-generated keywords, use the `machineKeywords` property. """ ;
+#    rdfs:range core:keywordSet ;
+#    meta:mandatory false ;
+#    meta:userEditable true ;
+#    meta:immutable false ;
+#    meta:jsonName "keywords" ;
+#    skos:note "" ;
+#    skos:example "" ;
+#    rdfs:domain core:Asset .
 
-core:machinekeywords a core:BaseProperty, owl:FunctionalProperty ;
-   rdfs:label "Machine Keywords"@en ;
-   rdfs:comment """The `machineKeywords` property is used to track machine-assigned descriptive phrases like keywords or tags of an asset. Rather than a plan list of tags, it is a structured set of keywords, where keywords can have an explicit confidence ranking and a locale. For human-defined keywords, use the `keywords` property. """ ;
-   rdfs:range core:machineKeywordSet ;
-   meta:mandatory false ;
-   meta:userEditable false ;
-   meta:immutable false ;
-   meta:jsonName "machine_keywords" ;
-   skos:note "" ;
-   skos:example "" ;
-   rdfs:domain core:Asset .
+# core:machinekeywords a core:BaseProperty, owl:FunctionalProperty ;
+#    rdfs:label "Machine Keywords"@en ;
+#    rdfs:comment """The `machineKeywords` property is used to track machine-assigned descriptive phrases like keywords or tags of an asset. Rather than a plan list of tags, it is a structured set of keywords, where keywords can have an explicit confidence ranking and a locale. For human-defined keywords, use the `keywords` property. """ ;
+#    rdfs:range core:machineKeywordSet ;
+#    meta:mandatory false ;
+#    meta:userEditable false ;
+#    meta:immutable false ;
+#    meta:jsonName "machine_keywords" ;
+#    skos:note "" ;
+#    skos:example "" ;
+#    rdfs:domain core:Asset .
 
 ### Image class
 

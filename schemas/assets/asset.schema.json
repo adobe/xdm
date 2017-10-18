@@ -223,8 +223,14 @@
           "description": "An account of the content of the resource. Description may include but is not limited to: an abstract, table of contents, reference to a graphical representation of content or a free-text account of the content."
         },
         "not_safe": {
-          "$schema": "http://json-schema.org/schema#",
-          "properties": {}
+          "name": "NSFW State",
+          "description": "Indicates if the content is SFW (safe for work). Safe is value 0 or missing value. NSFW is value 1.",
+          "type": "integer",
+          "enum": [0, 1],
+          "meta:enum": {
+            "0": "The content is safe for work",
+            "1": "The content is not safe for work"
+          }
         },
         "language": {
           "type": "array",

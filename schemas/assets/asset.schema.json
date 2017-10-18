@@ -9,12 +9,17 @@
         "asset_id": {
           "type": "string",
           "meta:immutable": true,
-          "description": "A unique identifier given to every addressable asset in a given repository."
+          "description": "A unique identifier given to every addressable asset in a given repository.\n\nThe format is a [GUID-based URN](https://www.ietf.org/rfc/rfc4122.txt). The pattern to generate an Asset ID is ```urn:aaid:{system}:{id} - {format}:{namespace}:{system}:{id}```",
+          "meta:example": "urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e",
+          "pattern": "^urn:aaid:[A-Za-z0-9]+:[A-Za-z0-9]+:[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}$"
         },
         "document_id": {
           "type": "string",
+          "title": "Document ID",
           "meta:immutable": true,
-          "description": "It takes the value of xmpMM:DocumentID present in the XMP packet of the asset. For the assets having no XMP packet this property won't be populated."
+          "description": "It takes the value of xmpMM:DocumentID present in the [XMP packet of the asset](http://wwwimages.adobe.com/content/dam/Adobe/en/devnet/xmp/pdfs/XMP%20SDK%20Release%20cc-2014-12/XMPSpecificationPart1.pdf). For the assets having no XMP packet this property won't be populated. \n\nThe value is a GUID, capital A-F, 8-4-4-12, preceded by the string `uuid:`",
+          "meta:example": "uuid:00112233-4455-6677-8899-AABBCCDDEEFF",
+          "pattern": "^uuid:[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}$"
         },
         "name": {
           "title": "Asset Name",

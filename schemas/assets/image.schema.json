@@ -52,8 +52,17 @@
           ]
         },
         "resolution_unit": {
-          "$schema": "http://json-schema.org/schema#",
-          "properties": {}
+          "title": "Resolution Unit",
+          "description": "Unit used for `x_resolution` and `y_resolution`. Possible values are 2 (inches) and 3 (centimeters).",
+          "type": "integer",
+          "enum": [
+            2,
+            3
+          ],
+          "meta:enum": {
+            "2": "inches",
+            "3": "centimeters"
+          }
         },
         "numberOfPixels": {
           "type": "integer",

@@ -134,16 +134,16 @@ xsd:dateTimeStamp a rdfs:Datatype ;
 
 # derived data types
 
-xml:lang a rdfs:Datatype ;
-  owl:onDatatype xsd:string ;
-  rdfs:comment """Language string as defined in IETF RFC 3066""" ;
-  rdfs:seeAlso <https://www.ietf.org/rfc/rfc3066.txt> ;
-  skos:example "DE-de" .
+# xml:lang a rdfs:Datatype ;
+#   owl:onDatatype xsd:string ;
+#   rdfs:comment """Language string as defined in IETF RFC 3066""" ;
+#   rdfs:seeAlso <https://www.ietf.org/rfc/rfc3066.txt> ;
+#   skos:example "DE-de" .
 
-xmp:Text a rdfs:Datatype ;
-  rdfs:label "Text"@en ;
-  owl:onDatatype xsd:string ;
-  rdfs:comment """A possibly empty Unicode string""" .
+# xmp:Text a rdfs:Datatype ;
+#   rdfs:label "Text"@en ;
+#   owl:onDatatype xsd:string ;
+#   rdfs:comment """A possibly empty Unicode string""" .
 
 # xmp:MIMEType a rdfs:Datatype ;
 #   rdfs:label "MIME Type"@en ;
@@ -152,33 +152,33 @@ xmp:Text a rdfs:Datatype ;
 #   skos:example "image/png" ;
 #   rdfs:comment """A simple text value denoting a digital file format as defined in IETF RFC 2046.""" .
 
-xmp:AgentName a rdfs:Datatype ;
-  rdfs:label "Agent Name"@en ;
-  owl:onDatatype xmp:Text ;
-  rdfs:comment """The name of an XMP processor, a Text value.
-It is recommended that the value use this format convention:
-Organization Software_name Version (token;token;...)
-- Organization: The name of the company or organization providing the software, no SPACEs.
-- Software_name: The full name of the software, SPACEs allowed.
-- version: The version of the software, no SPACEs.
-- tokens: Can be used to identify an operating system, plug-in, or more detailed version information.""" .
+# xmp:AgentName a rdfs:Datatype ;
+#   rdfs:label "Agent Name"@en ;
+#   owl:onDatatype xmp:Text ;
+#   rdfs:comment """The name of an XMP processor, a Text value.
+# It is recommended that the value use this format convention:
+# Organization Software_name Version (token;token;...)
+# - Organization: The name of the company or organization providing the software, no SPACEs.
+# - Software_name: The full name of the software, SPACEs allowed.
+# - version: The version of the software, no SPACEs.
+# - tokens: Can be used to identify an operating system, plug-in, or more detailed version information.""" .
 
-xmp:GUID a rdfs:Datatype ;
-  rdfs:label "GUID"@en ;
-  owl:onDatatype xsd:string ;
-  rdfs:comment """A string representing a “globally unique identifier”""" .
+# xmp:GUID a rdfs:Datatype ;
+#   rdfs:label "GUID"@en ;
+#   owl:onDatatype xsd:string ;
+#   rdfs:comment """A string representing a “globally unique identifier”""" .
 
-xmp:ProperName a rdfs:Datatype ;
-  rdfs:label "Proper Name"@en ;
-  owl:onDatatype xsd:string ;
-  rdfs:comment """A simple text value denoting the name of a person or organization.""" .
+# xmp:ProperName a rdfs:Datatype ;
+#   rdfs:label "Proper Name"@en ;
+#   owl:onDatatype xsd:string ;
+#   rdfs:comment """A simple text value denoting the name of a person or organization.""" .
 
-core:URI a rdfs:Datatype ;
-  rdfs:label "URI"@en ;
-  owl:onDatatype xsd:string ;
-  rdfs:seeAlso <https://www.ietf.org/rfc/rfc3986.txt> ;
-  skos:example "https://www.adobe.io" ;
-  rdfs:comment """A string representing URI as defined in IETF RFC 3986.""" .
+# core:URI a rdfs:Datatype ;
+#   rdfs:label "URI"@en ;
+#   owl:onDatatype xsd:string ;
+#   rdfs:seeAlso <https://www.ietf.org/rfc/rfc3986.txt> ;
+#   skos:example "https://www.adobe.io" ;
+#   rdfs:comment """A string representing URI as defined in IETF RFC 3986.""" .
 
 # @trieloff covered
 # tiff:OrientationMode a rdfs:Datatype ;
@@ -198,16 +198,16 @@ core:URI a rdfs:Datatype ;
 #     ]
 #   ) .
 
-tiff:ResolutionUnitChoice  a rdfs:Datatype ;
-  rdfs:label "Resolution Unit Choice"@en ;
-  rdfs:comment """Unit choice for measuring resolution. Closed choice of integer:
-2 = inches
-3 = centimeters""" ;
-  owl:withRestrictions (
-    [
-      xsd:pattern "^[2-3]?$"
-    ]
-  ) .
+# tiff:ResolutionUnitChoice  a rdfs:Datatype ;
+#   rdfs:label "Resolution Unit Choice"@en ;
+#   rdfs:comment """Unit choice for measuring resolution. Closed choice of integer:
+# 2 = inches
+# 3 = centimeters""" ;
+#   owl:withRestrictions (
+#     [
+#       xsd:pattern "^[2-3]?$"
+#     ]
+#   ) .
 
 photoshop:ColorModeChoice  a rdfs:Datatype ;
   rdfs:label "Color Mode Choice"@en ;
@@ -1671,19 +1671,19 @@ core:Image a rdfs:Class ;
 #   skos:example "" ;
 #   rdfs:domain core:Image .
 
-tiff:ResolutionUnit a core:BaseProperty, owl:FunctionalProperty ;
-  # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
-  rdfs:label "Resolution Unit"@en ;
-  rdfs:comment """Unit used for XResolution and YResolution.""" ;
-  rdfs:range tiff:ResolutionUnitChoice ;
-  meta:mandatory false ;
-  meta:userEditable false ;
-  meta:immutable false ;
-  meta:jsonName "resolution_unit" ;
-  skos:note """2 = inches
-3 = centimeters""" ;
-  skos:example "" ;
-  rdfs:domain core:Image .
+# tiff:ResolutionUnit a core:BaseProperty, owl:FunctionalProperty ;
+#   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
+#   rdfs:label "Resolution Unit"@en ;
+#   rdfs:comment """Unit used for XResolution and YResolution.""" ;
+#   rdfs:range tiff:ResolutionUnitChoice ;
+#   meta:mandatory false ;
+#   meta:userEditable false ;
+#   meta:immutable false ;
+#   meta:jsonName "resolution_unit" ;
+#   skos:note """2 = inches
+# 3 = centimeters""" ;
+#   skos:example "" ;
+#   rdfs:domain core:Image .
 
 core:numberOfPixels a core:BaseProperty, owl:FunctionalProperty ;
   rdfs:label "Number of Pixels"@en ;

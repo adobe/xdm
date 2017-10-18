@@ -122,10 +122,13 @@
           "description": "A license is a set of requests/permissions to users of a Work, e.g. a copyright license, the public domain, information for distributors."
         },
         "attribution_url": {
+          "title": "Attribution URL",
+          "format": "uri",
           "type": "string",
           "description": "For licenses that require attribution, such as some Creative Commons licenses, a URL that identifies the user to which a work should be attributed. When publishing to Behance, we link to the user's profile page."
         },
         "attribution_name": {
+          "title": "Attribution Name",
           "type": "string",
           "description": "For licenses that require attribution, such as some Creative Commons licenses, the user to which a work is attributed. When publishing to Behance, this is taken from the user's Behance profile information."
         },

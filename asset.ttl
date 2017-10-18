@@ -1314,29 +1314,29 @@ cc:license a core:BaseProperty, owl:FunctionalProperty ;
   skos:example "" ;
   rdfs:domain core:Asset .
 
-cc:attributionURL a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "Attribution URL"@en ;
-  rdfs:comment """For licenses that require attribution, such as some Creative Commons licenses, a URL that identifies the user to which a work should be attributed. When publishing to Behance, we link to the user's profile page.""" ;
-  rdfs:range core:URI ;
-  meta:mandatory false ;
-  meta:userEditable true ;
-  meta:immutable false ;
-  meta:jsonName "attribution_url" ;
-  skos:note "" ;
-  skos:example "" ;
-  rdfs:domain core:Asset .
+# cc:attributionURL a core:BaseProperty, owl:FunctionalProperty ;
+#   rdfs:label "Attribution URL"@en ;
+#   rdfs:comment """For licenses that require attribution, such as some Creative Commons licenses, a URL that identifies the user to which a work should be attributed. When publishing to Behance, we link to the user's profile page.""" ;
+#   rdfs:range core:URI ;
+#   meta:mandatory false ;
+#   meta:userEditable true ;
+#   meta:immutable false ;
+#   meta:jsonName "attribution_url" ;
+#   skos:note "" ;
+#   skos:example "" ;
+#   rdfs:domain core:Asset .
 
-cc:attributionName a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "Attribution Name"@en ;
-  rdfs:comment """For licenses that require attribution, such as some Creative Commons licenses, the user to which a work is attributed. When publishing to Behance, this is taken from the user's Behance profile information.""" ;
-  rdfs:range xsd:string ;
-  meta:mandatory false ;
-  meta:userEditable true ;
-  meta:immutable false ;
-  meta:jsonName "attribution_name" ;
-  skos:note "" ;
-  skos:example "" ;
-  rdfs:domain core:Asset .
+# cc:attributionName a core:BaseProperty, owl:FunctionalProperty ;
+#   rdfs:label "Attribution Name"@en ;
+#   rdfs:comment """For licenses that require attribution, such as some Creative Commons licenses, the user to which a work is attributed. When publishing to Behance, this is taken from the user's Behance profile information.""" ;
+#   rdfs:range xsd:string ;
+#   meta:mandatory false ;
+#   meta:userEditable true ;
+#   meta:immutable false ;
+#   meta:jsonName "attribution_name" ;
+#   skos:note "" ;
+#   skos:example "" ;
+#   rdfs:domain core:Asset .
 
 # xmpMM:ManageUI a core:BaseProperty, owl:FunctionalProperty ;
 #   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case

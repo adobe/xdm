@@ -774,20 +774,20 @@ tiff:denominator a rdf:Property ;
 
 ## auxiliary container type for defining an array of ProperName as per XMP spec
 
-core:ListOfProperNames a rdfs:Class ;
-  rdfs:label "List of Proper Names"@en ;
-  rdfs:comment "Ordered array of xmp:ProperName" ;
-  rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty rdf:first ;
-    owl:allValuesFrom xmp:ProperName ;
-  ] ;
-  rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty rdf:rest ;
-    owl:allValuesFrom core:ListOfProperNames ;
-  ] ;
-  rdfs:subClassOf rdf:List .
+# core:ListOfProperNames a rdfs:Class ;
+#   rdfs:label "List of Proper Names"@en ;
+#   rdfs:comment "Ordered array of xmp:ProperName" ;
+#   rdfs:subClassOf [
+#     a owl:Restriction ;
+#     owl:onProperty rdf:first ;
+#     owl:allValuesFrom xmp:ProperName ;
+#   ] ;
+#   rdfs:subClassOf [
+#     a owl:Restriction ;
+#     owl:onProperty rdf:rest ;
+#     owl:allValuesFrom core:ListOfProperNames ;
+#   ] ;
+#   rdfs:subClassOf rdf:List .
   
 ## auxiliary container type for defining an array of xsd:string
 
@@ -1114,17 +1114,17 @@ core:repositoryCreatedDate a core:BaseProperty, owl:FunctionalProperty ;
   skos:example "2016-07-12T12:13:05.123+01:00" ;
   rdfs:domain core:Asset .
 
-dc:creator a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "Creator"@en ;
-  rdfs:comment """An entity primarily responsible for making the resource. Examples of a creator include a person, an organization, or a service. Typically, the name of a creator should be used to indicate the entity.""" ;
-  rdfs:range core:ListOfProperNames ;
-  meta:mandatory false ;
-  meta:userEditable true ;
-  meta:immutable false ;
-  meta:jsonName "creator" ;
-  skos:note """XMP usage is a list of creators. Entities should be listed in order of decreasing precedence, if such order is significant.""" ;
-  skos:example "" ;
-  rdfs:domain core:Asset .
+# dc:creator a core:BaseProperty, owl:FunctionalProperty ;
+#   rdfs:label "Creator"@en ;
+#   rdfs:comment """An entity primarily responsible for making the resource. Examples of a creator include a person, an organization, or a service. Typically, the name of a creator should be used to indicate the entity.""" ;
+#   rdfs:range core:ListOfProperNames ;
+#   meta:mandatory false ;
+#   meta:userEditable true ;
+#   meta:immutable false ;
+#   meta:jsonName "creator" ;
+#   skos:note """XMP usage is a list of creators. Entities should be listed in order of decreasing precedence, if such order is significant.""" ;
+#   skos:example "" ;
+#   rdfs:domain core:Asset .
 
 core:repositoryCreatedBy a core:BaseProperty, owl:FunctionalProperty ;
   rdfs:label "Created in repository by"@en ;

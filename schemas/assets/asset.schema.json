@@ -43,11 +43,12 @@
           "description": "The date and time the resource was created. It will be taken from within the asset."
         },
         "creator": {
+          "title": "Creator",
           "type": "array",
           "items": {
             "type": "string"
           },
-          "description": "An entity primarily responsible for making the resource. Examples of a creator include a person, an organization, or a service. Typically, the name of a creator should be used to indicate the entity."
+          "description": "An entity primarily responsible for making the resource. Examples of a creator include a person, an organization, or a service. Typically, the name of a creator should be used to indicate the entity.\n\nXMP usage is a list of creators. Entities should be listed in order of decreasing precedence, if such order is significant."
         },
         "creator_tool": {
           "title": "Creator Tool",

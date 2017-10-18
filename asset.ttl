@@ -1102,17 +1102,17 @@ core:Asset a rdfs:Class ;
 #   skos:example "1600" ;
 #   rdfs:domain core:Asset .
 
-core:repositoryCreatedDate a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "Date created in repository"@en ;
-  rdfs:comment """The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".""" ;
-  rdfs:range xsd:dateTime ;
-  meta:mandatory true ;
-  meta:userEditable false ;
-  meta:immutable true ;
-  meta:jsonName "repository_created_date" ;
-  skos:note "YYYY-MM-DDThh:mm:ss.sTZD" ;
-  skos:example "2016-07-12T12:13:05.123+01:00" ;
-  rdfs:domain core:Asset .
+# core:repositoryCreatedDate a core:BaseProperty, owl:FunctionalProperty ;
+#   rdfs:label "Date created in repository"@en ;
+#   rdfs:comment """The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".""" ;
+#   rdfs:range xsd:dateTime ;
+#   meta:mandatory true ;
+#   meta:userEditable false ;
+#   meta:immutable true ;
+#   meta:jsonName "repository_created_date" ;
+#   skos:note "YYYY-MM-DDThh:mm:ss.sTZD" ;
+#   skos:example "2016-07-12T12:13:05.123+01:00" ;
+#   rdfs:domain core:Asset .
 
 # dc:creator a core:BaseProperty, owl:FunctionalProperty ;
 #   rdfs:label "Creator"@en ;
@@ -1126,17 +1126,17 @@ core:repositoryCreatedDate a core:BaseProperty, owl:FunctionalProperty ;
 #   skos:example "" ;
 #   rdfs:domain core:Asset .
 
-core:repositoryCreatedBy a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "Created in repository by"@en ;
-  rdfs:comment "ID of the user who initiated the action that caused the resource to be created in the repository." ;
-  rdfs:range xsd:string ;
-  meta:mandatory true ;
-  meta:userEditable false ;
-  meta:immutable true ;
-  meta:jsonName "repository_created_by" ;
-  skos:note "" ;
-  skos:example "" ;
-  rdfs:domain core:Asset .
+# core:repositoryCreatedBy a core:BaseProperty, owl:FunctionalProperty ;
+#   rdfs:label "Created in repository by"@en ;
+#   rdfs:comment "ID of the user who initiated the action that caused the resource to be created in the repository." ;
+#   rdfs:range xsd:string ;
+#   meta:mandatory true ;
+#   meta:userEditable false ;
+#   meta:immutable true ;
+#   meta:jsonName "repository_created_by" ;
+#   skos:note "" ;
+#   skos:example "" ;
+#   rdfs:domain core:Asset .
 
 # xmp:CreatorTool a core:BaseProperty, owl:FunctionalProperty ;
 #   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case

@@ -50,8 +50,9 @@
           "description": "An entity primarily responsible for making the resource. Examples of a creator include a person, an organization, or a service. Typically, the name of a creator should be used to indicate the entity."
         },
         "creator_tool": {
+          "title": "Creator Tool",
           "type": "string",
-          "description": "Name of the application which authored the asset. It takes the value present in xmp:CreatorTool property in XMP."
+          "description": "Name of the application which authored the asset. It takes the value present in `xmp:CreatorTool` property in XMP.\nIt is recommended that the value use this format convention:\nOrganization Software_name Version (token;token;...)\n- Organization: The name of the company or organization providing the software, no SPACEs.\n- Software_name: The full name of the software, SPACEs allowed.\n- version: The version of the software, no SPACEs.\n- tokens: Can be used to identify an operating system, plug-in, or more detailed version information."
         },
         "modify_date": {
           "type": "string",

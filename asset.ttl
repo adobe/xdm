@@ -1138,18 +1138,18 @@ core:repositoryCreatedBy a core:BaseProperty, owl:FunctionalProperty ;
   skos:example "" ;
   rdfs:domain core:Asset .
 
-xmp:CreatorTool a core:BaseProperty, owl:FunctionalProperty ;
-  # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
-  rdfs:label "Creator tool"@en ;
-  rdfs:comment "Name of the application which authored the asset. It takes the value present in xmp:CreatorTool property in XMP." ;
-  rdfs:range xmp:AgentName ;
-  meta:mandatory false ;
-  meta:userEditable false ;
-  meta:immutable false ;
-  meta:jsonName "creator_tool" ;
-  skos:note "" ;
-  skos:example "" ;
-  rdfs:domain core:Asset .
+# xmp:CreatorTool a core:BaseProperty, owl:FunctionalProperty ;
+#   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
+#   rdfs:label "Creator tool"@en ;
+#   rdfs:comment "Name of the application which authored the asset. It takes the value present in xmp:CreatorTool property in XMP." ;
+#   rdfs:range xmp:AgentName ;
+#   meta:mandatory false ;
+#   meta:userEditable false ;
+#   meta:immutable false ;
+#   meta:jsonName "creator_tool" ;
+#   skos:note "" ;
+#   skos:example "" ;
+#   rdfs:domain core:Asset .
 
 #### Property section: Asset Modification
 

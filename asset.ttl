@@ -1377,32 +1377,32 @@ xmpMM:History a core:BaseProperty, owl:FunctionalProperty ;
   skos:example "" ;
   rdfs:domain core:Asset .
 
-plus:CopyrightOwnerID a core:BaseProperty, owl:FunctionalProperty ;
-  # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
-  rdfs:label "Copyright Owner ID"@en ;
-  rdfs:comment """ID of the copyright owner.
-If the PLUS-ID being stored in this property is registered with the PLUS Coalition, it should be expressed as a URL. For example: http://plus-id.org/PLUS-ID""" ;
-  rdfs:range xmp:Text ;
-  meta:mandatory false ;
-  meta:userEditable true ;
-  meta:immutable false ;
-  meta:jsonName "copyright_owner_id" ;
-  skos:note "" ;
-  skos:example "" ;
-  rdfs:domain core:Asset .
+# plus:CopyrightOwnerID a core:BaseProperty, owl:FunctionalProperty ;
+#   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
+#   rdfs:label "Copyright Owner ID"@en ;
+#   rdfs:comment """ID of the copyright owner.
+# If the PLUS-ID being stored in this property is registered with the PLUS Coalition, it should be expressed as a URL. For example: http://plus-id.org/PLUS-ID""" ;
+#   rdfs:range xmp:Text ;
+#   meta:mandatory false ;
+#   meta:userEditable true ;
+#   meta:immutable false ;
+#   meta:jsonName "copyright_owner_id" ;
+#   skos:note "" ;
+#   skos:example "" ;
+#   rdfs:domain core:Asset .
 
-plus:CopyrightOwnerName a core:BaseProperty, owl:FunctionalProperty ;
-  # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
-  rdfs:label "Copyright Owner Name"@en ;
-  rdfs:comment """Name of Copyright Owner.""" ;
-  rdfs:range xmp:ProperName ;
-  meta:mandatory false ;
-  meta:userEditable true ;
-  meta:immutable false ;
-  meta:jsonName "copyright_owner_name" ;
-  skos:note "" ;
-  skos:example "" ;
-  rdfs:domain core:Asset .
+# plus:CopyrightOwnerName a core:BaseProperty, owl:FunctionalProperty ;
+#   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
+#   rdfs:label "Copyright Owner Name"@en ;
+#   rdfs:comment """Name of Copyright Owner.""" ;
+#   rdfs:range xmp:ProperName ;
+#   meta:mandatory false ;
+#   meta:userEditable true ;
+#   meta:immutable false ;
+#   meta:jsonName "copyright_owner_name" ;
+#   skos:note "" ;
+#   skos:example "" ;
+#   rdfs:domain core:Asset .
 
 #### Property section: Asset Description
 

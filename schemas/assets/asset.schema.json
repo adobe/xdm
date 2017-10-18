@@ -171,10 +171,12 @@
           "description": "High-level actions that resulted in this resource. It is intended to give human readers a description of the steps taken to make the changes from the previous version to this one. The list should be at an abstract level; it is not intended to be an exhaustive keystroke or other detailed history. The description should be sufficient for metadata management, as well as for workflow enhancement."
         },
         "copyright_owner_id": {
+          "title": "Copyright Owner ID",
           "type": "string",
           "description": "ID of the copyright owner.\nIf the PLUS-ID being stored in this property is registered with the PLUS Coalition, it should be expressed as a URL. For example: http://plus-id.org/PLUS-ID"
         },
         "copyright_owner_name": {
+          "title": "Copyright Owner Name",
           "type": "string",
           "description": "Name of Copyright Owner."
         },

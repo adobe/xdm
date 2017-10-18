@@ -1224,18 +1224,18 @@ core:milestone a core:BaseProperty, owl:FunctionalProperty ;
 
 #### Property section: Asset Legal Information
 
-xmpRights:WebStatement a core:BaseProperty, owl:FunctionalProperty ;
-  # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
-  rdfs:label "Web statement"@en ;
-  rdfs:comment "A Web URL for a statement of the ownership and usage rights for this resource. This is a normal (non-URI) simple value because of historical usage." ;
-  rdfs:range xsd:string ;
-  meta:mandatory false ;
-  meta:userEditable true ;
-  meta:immutable false ;
-  meta:jsonName "web_statement" ;
-  skos:note "This is a normal (non-URI) simple value because of historical usage" ;
-  skos:example "http://creativecommons.org/licenses/by/4.0/" ;
-  rdfs:domain core:Asset .
+# xmpRights:WebStatement a core:BaseProperty, owl:FunctionalProperty ;
+#   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
+#   rdfs:label "Web statement"@en ;
+#   rdfs:comment "A Web URL for a statement of the ownership and usage rights for this resource. This is a normal (non-URI) simple value because of historical usage." ;
+#   rdfs:range xsd:string ;
+#   meta:mandatory false ;
+#   meta:userEditable true ;
+#   meta:immutable false ;
+#   meta:jsonName "web_statement" ;
+#   skos:note "This is a normal (non-URI) simple value because of historical usage" ;
+#   skos:example "http://creativecommons.org/licenses/by/4.0/" ;
+#   rdfs:domain core:Asset .
 
 # dc:rights a core:BaseProperty, owl:FunctionalProperty ;
 #   rdfs:label "Rights"@en ;

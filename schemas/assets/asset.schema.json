@@ -74,7 +74,8 @@
         },
         "web_statement": {
           "type": "string",
-          "description": "A Web URL for a statement of the ownership and usage rights for this resource. This is a normal (non-URI) simple value because of historical usage."
+          "description": "A Web URL for a statement of the ownership and usage rights for this resource. This is a normal (non-URI) simple value because of historical usage.",
+          "meta:example": "http://creativecommons.org/licenses/by/4.0/"
         },
         "rights": {
           "title": "Rights",

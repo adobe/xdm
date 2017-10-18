@@ -246,6 +246,7 @@
           "description": "An  ETag is an HTTP response header returned by an HTTP/1.1 compliant web server used to determine change in content of a resource at a given URL. "
         },
         "n_pages": {
+          "name": "Number of pages",
           "type": "integer",
           "minimum": 0,
           "description": "The number of pages in the document (including any in contained documents)."

@@ -1515,31 +1515,31 @@ xmpTPg:NPages a core:BaseProperty, owl:FunctionalProperty ;
   skos:example "" ;
   rdfs:domain core:Asset .
 
-exif:GPSAltitude a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "GPS Altitude"@en ;
-  rdfs:comment """GPS tag 6, 0x06. Indicates altitude in meters.""" ;
-  rdfs:range xsd:float ;
-  meta:mandatory false ;
-  meta:userEditable false ;
-  meta:immutable false ;
-  meta:jsonName "gps_altitude" ;
-  skos:note "" ;
-  skos:example "" ;
-  rdfs:domain core:Asset .
+# exif:GPSAltitude a core:BaseProperty, owl:FunctionalProperty ;
+#   rdfs:label "GPS Altitude"@en ;
+#   rdfs:comment """GPS tag 6, 0x06. Indicates altitude in meters.""" ;
+#   rdfs:range xsd:float ;
+#   meta:mandatory false ;
+#   meta:userEditable false ;
+#   meta:immutable false ;
+#   meta:jsonName "gps_altitude" ;
+#   skos:note "" ;
+#   skos:example "" ;
+#   rdfs:domain core:Asset .
 
-exif:GPSAltitudeRef a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "GPS Altitude Ref"@en ;
-  rdfs:comment """GPS tag 5, 0x5. Indicates whether the altitude is above or below sea level:
-0 = Above sea level
-1 = Below sea level""" ;
-  rdfs:range xsd:integer ;
-  meta:mandatory false ;
-  meta:userEditable false ;
-  meta:immutable false ;
-  meta:jsonName "gps_altitude_ref" ;
-  skos:note "" ;
-  skos:example "" ;
-  rdfs:domain core:Asset .
+# exif:GPSAltitudeRef a core:BaseProperty, owl:FunctionalProperty ;
+#   rdfs:label "GPS Altitude Ref"@en ;
+#   rdfs:comment """GPS tag 5, 0x5. Indicates whether the altitude is above or below sea level:
+# 0 = Above sea level
+# 1 = Below sea level""" ;
+#   rdfs:range xsd:integer ;
+#   meta:mandatory false ;
+#   meta:userEditable false ;
+#   meta:immutable false ;
+#   meta:jsonName "gps_altitude_ref" ;
+#   skos:note "" ;
+#   skos:example "" ;
+#   rdfs:domain core:Asset .
 
 # exif:GPSLatitude a core:BaseProperty, owl:FunctionalProperty ;
 #   rdfs:label "GPS Latitude"@en ;

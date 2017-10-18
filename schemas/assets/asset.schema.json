@@ -250,11 +250,21 @@
           "description": "The number of pages in the document (including any in contained documents)."
         },
         "gps_altitude": {
-          "$schema": "http://json-schema.org/schema#",
-          "properties": {}
+          "name": "GPS Altitude",
+          "description": "GPS tag 6, 0x06. Indicates altitude in meters.",
+          "type": "number"
         },
         "gps_altitude_ref": {
           "type": "integer",
+          "name": "GPS Altitude Reference",
+          "enum":[
+            0,
+            1
+          ],
+          "meta:enum": {
+            "0": "The `gps_altitude specifies a value above sea level`",
+            "1": "The `gps_altitude specifies a value below sea level"
+          },
           "description": "GPS tag 5, 0x5. Indicates whether the altitude is above or below sea level:\n0 = Above sea level\n1 = Below sea level"
         },
         "gps_latitude": {

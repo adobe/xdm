@@ -17,6 +17,7 @@
           "description": "It takes the value of xmpMM:DocumentID present in the XMP packet of the asset. For the assets having no XMP packet this property won't be populated."
         },
         "name": {
+          "title": "Asset Name",
           "type": "string",
           "description": "Name of the asset in the repository. This could be a file name or any name provided by the repository to the asset."
         },

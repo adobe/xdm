@@ -1057,17 +1057,17 @@ xmpMM:DocumentID a core:BaseProperty, owl:FunctionalProperty ;
   skos:example "uuid:d4546407-8e2c-4194-be3b-98ef79696e2c" ;
   rdfs:domain core:Asset .
 
-core:assetName a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "Asset Name"@en ;
-  rdfs:comment "Name of the asset in the repository. This could be a file name or any name provided by the repository to the asset." ;
-  rdfs:range xsd:string ;
-  meta:mandatory false ;
-  meta:userEditable true ;
-  meta:immutable false ;
-  meta:jsonName "name" ;
-  skos:note "" ;
-  skos:example "" ;
-  rdfs:domain core:Asset .
+# core:assetName a core:BaseProperty, owl:FunctionalProperty ;
+#   rdfs:label "Asset Name"@en ;
+#   rdfs:comment "Name of the asset in the repository. This could be a file name or any name provided by the repository to the asset." ;
+#   rdfs:range xsd:string ;
+#   meta:mandatory false ;
+#   meta:userEditable true ;
+#   meta:immutable false ;
+#   meta:jsonName "name" ;
+#   skos:note "" ;
+#   skos:example "" ;
+#   rdfs:domain core:Asset .
 
 # core:aliasIDs a core:BaseProperty, owl:FunctionalProperty ;
 #   rdfs:label "Alias IDs"@en ;

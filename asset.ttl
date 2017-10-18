@@ -1616,10 +1616,10 @@ core:versionID a core:BaseProperty, owl:FunctionalProperty ;
 
 ### Image class
 
-core:Image a rdfs:Class ;
-  rdfs:label "Image" ;
-  rdfs:comment "The Image class is for raster image assets, e.g. JPEG, PNG, etc." ;
-  rdfs:subClassOf core:Asset .
+# core:Image a rdfs:Class ;
+#   rdfs:label "Image" ;
+#   rdfs:comment "The Image class is for raster image assets, e.g. JPEG, PNG, etc." ;
+#   rdfs:subClassOf core:Asset .
 
 #### Image properties
 

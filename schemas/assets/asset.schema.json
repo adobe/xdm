@@ -278,6 +278,7 @@
         },
         "keywords": {
           "type": "array",
+          "name": "Keywords",
           "items": {
             "$schema": "http://json-schema.org/schema#",
             "name": "Keyword",

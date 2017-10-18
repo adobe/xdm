@@ -1277,17 +1277,17 @@ xmpRights:Marked a core:BaseProperty, owl:FunctionalProperty ;
 #   skos:example "" ;
 #   rdfs:domain core:Asset .
 
-plus:CopyrightOwner a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "Copyright Owner"@en ;
-  rdfs:comment """Owner or owners of the copyright in the licensed asset.""" ;
-  rdfs:range core:ListOfCopyrightOwners ;
-  meta:mandatory false ;
-  meta:userEditable true ;
-  meta:immutable false ;
-  meta:jsonName "copyright_owner" ;
-  skos:note "" ;
-  skos:example "" ;
-  rdfs:domain core:Asset .
+# plus:CopyrightOwner a core:BaseProperty, owl:FunctionalProperty ;
+#   rdfs:label "Copyright Owner"@en ;
+#   rdfs:comment """Owner or owners of the copyright in the licensed asset.""" ;
+#   rdfs:range core:ListOfCopyrightOwners ;
+#   meta:mandatory false ;
+#   meta:userEditable true ;
+#   meta:immutable false ;
+#   meta:jsonName "copyright_owner" ;
+#   skos:note "" ;
+#   skos:example "" ;
+#   rdfs:domain core:Asset .
 
 # photoshop:Credit a core:BaseProperty, owl:FunctionalProperty ;
 #   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case

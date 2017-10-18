@@ -97,19 +97,10 @@
           "description": "A collection of text instructions on how a resource can be legally used, given in a variety of languages."
         },
         "copyright_owner": {
+          "title": "Copyright Owners",
           "type": "array",
           "items": {
-            "$schema": "http://json-schema.org/schema#",
-            "properties": {
-              "Copyright owner ID": {
-                "type": "string",
-                "description": "ID of the copyright owner. If the PLUS-ID being stored in this property is registered with the PLUS Coalition, it should be expressed as a URL. For example: http://plus-id.org/PLUS-ID."
-              },
-              "Copyright owner name": {
-                "type": "string",
-                "description": "Name of the copyright owner."
-              }
-            }
+            "$ref": "https://ns.adobe.com/xdm/assets/copyright-owner#/definitions/copyright"
           },
           "description": "Owner or owners of the copyright in the licensed asset."
         },
@@ -154,16 +145,6 @@
             "$ref": "https://ns.adobe.com/xdm/assets/resource-event#/definitions/resource-event"
           },
           "description": "High-level actions that resulted in the creation of this asset. It is intended to give human readers a description of the steps taken to make the changes from the previous version to this one. The list should be at an abstract level; it is not intended to be an exhaustive keystroke or other detailed history. The description should be sufficient for metadata management, as well as for workflow enhancement."
-        },
-        "copyright_owner_id": {
-          "title": "Copyright Owner ID",
-          "type": "string",
-          "description": "ID of the copyright owner.\nIf the PLUS-ID being stored in this property is registered with the PLUS Coalition, it should be expressed as a URL. For example: http://plus-id.org/PLUS-ID"
-        },
-        "copyright_owner_name": {
-          "title": "Copyright Owner Name",
-          "type": "string",
-          "description": "Name of Copyright Owner."
         },
         "title": {
           "title": "Title",
@@ -377,6 +358,7 @@
   },
   "allOf": [
     {"$ref": "https://ns.adobe.com/xdm/content/content#/definitions/content"},
+    {"$ref": "https://ns.adobe.com/xdm/assets/copyright-owner#/definitions/copyright"},
     {"$ref": "#/definitions/asset"}    
   ],
   "required": [

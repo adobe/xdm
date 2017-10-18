@@ -1685,17 +1685,17 @@ core:Image a rdfs:Class ;
 #   skos:example "" ;
 #   rdfs:domain core:Image .
 
-core:numberOfPixels a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "Number of Pixels"@en ;
-  rdfs:comment "Total number of pixels" ;
-  rdfs:range xsd:integer ;
-  meta:mandatory false ;
-  meta:userEditable false ;
-  meta:immutable false ;
-  meta:jsonName "numberOfPixels" ;
-  skos:note "" ;
-  skos:example "" ;
-  rdfs:domain core:Image .
+# core:numberOfPixels a core:BaseProperty, owl:FunctionalProperty ;
+#   rdfs:label "Number of Pixels"@en ;
+#   rdfs:comment "Total number of pixels" ;
+#   rdfs:range xsd:integer ;
+#   meta:mandatory false ;
+#   meta:userEditable false ;
+#   meta:immutable false ;
+#   meta:jsonName "numberOfPixels" ;
+#   skos:note "" ;
+#   skos:example "" ;
+#   rdfs:domain core:Image .
 
 photoshop:ColorMode a core:BaseProperty, owl:FunctionalProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case

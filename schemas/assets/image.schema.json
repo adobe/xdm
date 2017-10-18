@@ -64,8 +64,10 @@
             "3": "centimeters"
           }
         },
-        "numberOfPixels": {
+        "number_of_pixels": {
           "type": "integer",
+          "name": "Number of Pixels",
+          "minimum": 0,
           "description": "Total number of pixels"
         },
         "color_mode": {

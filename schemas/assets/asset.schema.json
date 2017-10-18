@@ -270,6 +270,7 @@
           "description": "A user-assigned rating for this file. The value shall be -1 or in the range [0..5], where -1 indicates “rejected” and 0 indicates “unrated”. If xmp:Rating is not present, a value of 0 should be assumed. NOTE: Anticipated usage is for a typical “star rating” UI, with the addition of a notion of rejection."
         },
         "subject": {
+          "name": "Subject",
           "type": "array",
           "items": {
             "type": "string"

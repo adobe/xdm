@@ -60,13 +60,17 @@
           "description": "The date and time when asset was last modified. The Date Time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\"."
         },
         "milestone": {
-          "$schema": "http://json-schema.org/schema#",
+          "title": "Milestone",
+          "description": "A label given to a version of the asset.",
+          "type": "object",
           "properties": {
-            "MilestoneLabel": {
+            "label": {
+              "title": "Milestone Label",
               "type": "string",
               "description": "Label for the version of an asset"
             },
-            "MilestoneDescription": {
+            "description": {
+              "title": "Milestone Description",
               "type": "string",
               "description": "Description for the version of an asset"
             }

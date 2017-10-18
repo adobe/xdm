@@ -279,22 +279,22 @@ plus:OwnerName a rdf:Property ;
 
 ## structure for defining MilestoneInfo
 
-core:MilestoneInfo a rdfs:Class ;
-  rdfs:label "Milestone Info"@en ;
-  rdfs:comment """A structure containing information about version of an asset.""" ;
-  rdfs:subClassOf rdfs:Resource .
+# core:MilestoneInfo a rdfs:Class ;
+#   rdfs:label "Milestone Info"@en ;
+#   rdfs:comment """A structure containing information about version of an asset.""" ;
+#   rdfs:subClassOf rdfs:Resource .
 
-core:MilestoneLabel a rdf:Property ;
-  rdfs:label "Milestone Label"@en ;
-  rdfs:range xsd:string ;
-  rdfs:domain core:MilestoneInfo ;
-  rdfs:comment """Label for the version of an asset""" .
+# core:MilestoneLabel a rdf:Property ;
+#   rdfs:label "Milestone Label"@en ;
+#   rdfs:range xsd:string ;
+#   rdfs:domain core:MilestoneInfo ;
+#   rdfs:comment """Label for the version of an asset""" .
 
-core:MilestoneDescription a rdf:Property ;
-  rdfs:label "Milestone Description"@en ;
-  rdfs:range xsd:string ;
-  rdfs:domain core:MilestoneInfo ;
-  rdfs:comment """Description for the version of an asset""" .
+# core:MilestoneDescription a rdf:Property ;
+#   rdfs:label "Milestone Description"@en ;
+#   rdfs:range xsd:string ;
+#   rdfs:domain core:MilestoneInfo ;
+#   rdfs:comment """Description for the version of an asset""" .
 
 ## structure for defining Dimensions as per XMP spec
 
@@ -1207,20 +1207,20 @@ core:versionID a core:BaseProperty, owl:FunctionalProperty ;
   skos:example "" ;
   rdfs:domain core:Asset .
 
-core:milestone a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "Milestone"@en ;
-  rdfs:comment "A label given to a version of the asset." ;
-  rdfs:range core:MilestoneInfo ;
-  meta:mandatory false ;
-  meta:userEditable true ;
-  meta:immutable false ;
-  meta:jsonName "milestone" ;
-  skos:note """{
-       "label": "Draft 1",
-       "description": "Shared this one with Jerry"
-      }""" ;
-  skos:example "" ;
-  rdfs:domain core:Asset .
+# core:milestone a core:BaseProperty, owl:FunctionalProperty ;
+#   rdfs:label "Milestone"@en ;
+#   rdfs:comment "A label given to a version of the asset." ;
+#   rdfs:range core:MilestoneInfo ;
+#   meta:mandatory false ;
+#   meta:userEditable true ;
+#   meta:immutable false ;
+#   meta:jsonName "milestone" ;
+#   skos:note """{
+#        "label": "Draft 1",
+#        "description": "Shared this one with Jerry"
+#       }""" ;
+#   skos:example "" ;
+#   rdfs:domain core:Asset .
 
 #### Property section: Asset Legal Information
 

@@ -1171,29 +1171,29 @@ core:repositoryCreatedBy a core:BaseProperty, owl:FunctionalProperty ;
 #   skos:example "" ;
 #   rdfs:domain core:Asset .
 
-core:repositoryLastModifiedDate a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "Repository last modified date"@en ;
-  rdfs:comment """The server date and time when the resource was most recently modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".""" ;
-  rdfs:range xsd:dateTime ;
-  meta:mandatory true ;
-  meta:userEditable false ;
-  meta:immutable false ;
-  meta:jsonName "repository_last_modified_date" ;
-  skos:note """YYYY-MM-DDThh:mm:ss.sTZD""" ;
-  skos:example "2004-10-23T12:00:00-06:00" ;
-  rdfs:domain core:Asset .
+# core:repositoryLastModifiedDate a core:BaseProperty, owl:FunctionalProperty ;
+#   rdfs:label "Repository last modified date"@en ;
+#   rdfs:comment """The server date and time when the resource was most recently modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".""" ;
+#   rdfs:range xsd:dateTime ;
+#   meta:mandatory true ;
+#   meta:userEditable false ;
+#   meta:immutable false ;
+#   meta:jsonName "repository_last_modified_date" ;
+#   skos:note """YYYY-MM-DDThh:mm:ss.sTZD""" ;
+#   skos:example "2004-10-23T12:00:00-06:00" ;
+#   rdfs:domain core:Asset .
 
-core:repositoryLastModifiedBy a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "Repository last modified by"@en ;
-  rdfs:comment "ID of the user who initiated the action that most recently caused the resource to be modified in the repository." ;
-  rdfs:range xsd:string ;
-  meta:mandatory true ;
-  meta:userEditable false ;
-  meta:immutable false ;
-  meta:jsonName "repository_last_modified_by" ;
-  skos:note "" ;
-  skos:example "" ;
-  rdfs:domain core:Asset .
+# core:repositoryLastModifiedBy a core:BaseProperty, owl:FunctionalProperty ;
+#   rdfs:label "Repository last modified by"@en ;
+#   rdfs:comment "ID of the user who initiated the action that most recently caused the resource to be modified in the repository." ;
+#   rdfs:range xsd:string ;
+#   meta:mandatory true ;
+#   meta:userEditable false ;
+#   meta:immutable false ;
+#   meta:jsonName "repository_last_modified_by" ;
+#   skos:note "" ;
+#   skos:example "" ;
+#   rdfs:domain core:Asset .
 
 core:versionID a core:BaseProperty, owl:FunctionalProperty ;
   rdfs:label "Version ID"@en ;

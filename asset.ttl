@@ -226,16 +226,16 @@ photoshop:ColorModeChoice  a rdfs:Datatype ;
     ]
   ) .
 
-exif:GPSCoordinate a rdfs:Datatype ;
-  rdfs:label "GPS Coordinate"@en ;
-  owl:onDatatype xsd:string ;
-  rdfs:comment """A Text value in the form “DDD,MM,SSk” or “DDD,MM.mmk”, where:
-* DDD is a number of degrees
-* MM is a number of minutes
-* SS is a number of seconds
-* mm is a fraction of minutes
-* k is a single character N, S, E, or W indicating a direction (north, south, east, west)
-Leading zeros are not necessary for the for DDD, MM, and SS values. The DDD,MM.mmk form should be used when any of the native Exif component rational values has a denominator other than 1. There can be any number of fractional digits.""" .
+# exif:GPSCoordinate a rdfs:Datatype ;
+#   rdfs:label "GPS Coordinate"@en ;
+#   owl:onDatatype xsd:string ;
+#   rdfs:comment """A Text value in the form “DDD,MM,SSk” or “DDD,MM.mmk”, where:
+# * DDD is a number of degrees
+# * MM is a number of minutes
+# * SS is a number of seconds
+# * mm is a fraction of minutes
+# * k is a single character N, S, E, or W indicating a direction (north, south, east, west)
+# Leading zeros are not necessary for the for DDD, MM, and SS values. The DDD,MM.mmk form should be used when any of the native Exif component rational values has a denominator other than 1. There can be any number of fractional digits.""" .
 
 # structures and auxiliary types/constructs
 
@@ -1541,42 +1541,42 @@ exif:GPSAltitudeRef a core:BaseProperty, owl:FunctionalProperty ;
   skos:example "" ;
   rdfs:domain core:Asset .
 
-exif:GPSLatitude a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "GPS Latitude"@en ;
-  rdfs:comment """GPS tag 2, 0x02 (position) and 1, 0x01 (North/South). Indicates latitude.""" ;
-  rdfs:range exif:GPSCoordinate ;
-  meta:mandatory false ;
-  meta:userEditable false ;
-  meta:immutable false ;
-  meta:jsonName "gps_latitude" ;
-  skos:note "" ;
-  skos:example "" ;
-  rdfs:domain core:Asset .
+# exif:GPSLatitude a core:BaseProperty, owl:FunctionalProperty ;
+#   rdfs:label "GPS Latitude"@en ;
+#   rdfs:comment """GPS tag 2, 0x02 (position) and 1, 0x01 (North/South). Indicates latitude.""" ;
+#   rdfs:range exif:GPSCoordinate ;
+#   meta:mandatory false ;
+#   meta:userEditable false ;
+#   meta:immutable false ;
+#   meta:jsonName "gps_latitude" ;
+#   skos:note "" ;
+#   skos:example "" ;
+#   rdfs:domain core:Asset .
 
-exif:GPSLongitude a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "GPS Longitude"@en ;
-  rdfs:comment """GPS tag 4, 0x04 (position) and 3, 0x03 (East/West). Indicates longitude.""" ;
-  rdfs:range exif:GPSCoordinate ;
-  meta:mandatory false ;
-  meta:userEditable false ;
-  meta:immutable false ;
-  meta:jsonName "gps_longitude" ;
-  skos:note "" ;
-  skos:example "" ;
-  rdfs:domain core:Asset .
+# exif:GPSLongitude a core:BaseProperty, owl:FunctionalProperty ;
+#   rdfs:label "GPS Longitude"@en ;
+#   rdfs:comment """GPS tag 4, 0x04 (position) and 3, 0x03 (East/West). Indicates longitude.""" ;
+#   rdfs:range exif:GPSCoordinate ;
+#   meta:mandatory false ;
+#   meta:userEditable false ;
+#   meta:immutable false ;
+#   meta:jsonName "gps_longitude" ;
+#   skos:note "" ;
+#   skos:example "" ;
+#   rdfs:domain core:Asset .
 
 
-xmp:Rating a core:BaseProperty, owl:FunctionalProperty ;
-   rdfs:label "Rating"@en ;
-   rdfs:comment """A user-assigned rating for this file. The value shall be -1 or in the range [0..5], where -1 indicates “rejected” and 0 indicates “unrated”. If xmp:Rating is not present, a value of 0 should be assumed. NOTE: Anticipated usage is for a typical “star rating” UI, with the addition of a notion of rejection.""" ;
-   rdfs:range xsd:integer ;
-   meta:mandatory false ;
-   meta:userEditable false ;
-   meta:immutable false ;
-   meta:jsonName "rating" ;
-   skos:note "EDITORIAL NOTE: the range (data type) should be an enum. Due to the upcoming change to json-schema I took a short-cut and made it integer. We fix it after the migration" ;
-   skos:example "" ;
-   rdfs:domain core:Asset .
+# xmp:Rating a core:BaseProperty, owl:FunctionalProperty ;
+#    rdfs:label "Rating"@en ;
+#    rdfs:comment """A user-assigned rating for this file. The value shall be -1 or in the range [0..5], where -1 indicates “rejected” and 0 indicates “unrated”. If xmp:Rating is not present, a value of 0 should be assumed. NOTE: Anticipated usage is for a typical “star rating” UI, with the addition of a notion of rejection.""" ;
+#    rdfs:range xsd:integer ;
+#    meta:mandatory false ;
+#    meta:userEditable false ;
+#    meta:immutable false ;
+#    meta:jsonName "rating" ;
+#    skos:note "EDITORIAL NOTE: the range (data type) should be an enum. Due to the upcoming change to json-schema I took a short-cut and made it integer. We fix it after the migration" ;
+#    skos:example "" ;
+#    rdfs:domain core:Asset .
 
 # dc:subject a core:BaseProperty, owl:FunctionalProperty ;
 #    rdfs:label "Subject"@en ;

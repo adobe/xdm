@@ -500,107 +500,107 @@ stEvt:when a rdf:Property ;
   
 ## structure for defining Font
 
-xmp:Font a rdfs:Class ;
-  rdfs:label "Font"@en ;
-  rdfs:comment """Structure containing the characteristics of a font used in a document.""" ;
-  rdfs:subClassOf rdfs:Resource .
+# xmp:Font a rdfs:Class ;
+#   rdfs:label "Font"@en ;
+#   rdfs:comment """Structure containing the characteristics of a font used in a document.""" ;
+#   rdfs:subClassOf rdfs:Resource .
   
-stFnt:childFontFiles a rdf:Property ;
-  rdfs:range core:StringList ;
-  rdfs:domain xmp:Font ;
-  rdfs:comment """The list of file names for the fonts that make up a composite font.""" ;
-  meta:mandatory false ;
-  meta:userEditable false ;
-  meta:immutable false ;
-  meta:jsonName "child_font_files" .
+# stFnt:childFontFiles a rdf:Property ;
+#   rdfs:range core:StringList ;
+#   rdfs:domain xmp:Font ;
+#   rdfs:comment """The list of file names for the fonts that make up a composite font.""" ;
+#   meta:mandatory false ;
+#   meta:userEditable false ;
+#   meta:immutable false ;
+#   meta:jsonName "child_font_files" .
 
-stFnt:composite a rdf:Property ;
-  rdfs:range xsd:boolean ;
-  rdfs:domain xmp:Font ;
-  rdfs:comment """When true, this is a composite font.""" ;
-  meta:mandatory false ;
-  meta:userEditable false ;
-  meta:immutable false ;  
-  meta:jsonName "composite" .
+# stFnt:composite a rdf:Property ;
+#   rdfs:range xsd:boolean ;
+#   rdfs:domain xmp:Font ;
+#   rdfs:comment """When true, this is a composite font.""" ;
+#   meta:mandatory false ;
+#   meta:userEditable false ;
+#   meta:immutable false ;  
+#   meta:jsonName "composite" .
 
-stFnt:fontFace a rdf:Property ;
-  rdfs:range xmp:Text ;
-  rdfs:domain xmp:Font ;
-  rdfs:comment """The name of the typeface, i.e. the specific weight or instance of the fontFamily. For ex: Bold, Italic""" ;
-  meta:mandatory false ;
-  meta:userEditable false ;
-  meta:immutable false ;  
-  meta:jsonName "font_face" .
+# stFnt:fontFace a rdf:Property ;
+#   rdfs:range xmp:Text ;
+#   rdfs:domain xmp:Font ;
+#   rdfs:comment """The name of the typeface, i.e. the specific weight or instance of the fontFamily. For ex: Bold, Italic""" ;
+#   meta:mandatory false ;
+#   meta:userEditable false ;
+#   meta:immutable false ;  
+#   meta:jsonName "font_face" .
 
-stFnt:fontFamily a rdf:Property ;
-  rdfs:range xmp:Text ;
-  rdfs:domain xmp:Font ;
-  rdfs:comment """Complete collection of typefaces in different weights and classifications, but having the same point size, and designed to work together. For example, a Times Roman font family may include Times Roman Bold, Times Roman Extra Bold, Times Roman Italic, Times Roman Bold Italic, Times Roman Condensed, etc., all in the same size.""" ;
-  meta:mandatory false ;
-  meta:userEditable false ;
-  meta:immutable false ;  
-  meta:jsonName "font_family" .
+# stFnt:fontFamily a rdf:Property ;
+#   rdfs:range xmp:Text ;
+#   rdfs:domain xmp:Font ;
+#   rdfs:comment """Complete collection of typefaces in different weights and classifications, but having the same point size, and designed to work together. For example, a Times Roman font family may include Times Roman Bold, Times Roman Extra Bold, Times Roman Italic, Times Roman Bold Italic, Times Roman Condensed, etc., all in the same size.""" ;
+#   meta:mandatory false ;
+#   meta:userEditable false ;
+#   meta:immutable false ;  
+#   meta:jsonName "font_family" .
   
-stFnt:fontFileName a rdf:Property ;
-  rdfs:range xsd:string ;
-  rdfs:domain xmp:Font ;
-  rdfs:comment """The font file name (not a complete path). For example: `Times New Roman.otf`. Some products are not storing file extension information. XMP spec is open about specifics of the file name. If font information is stored in multiple files, use the semicolon separator to store file names. For example: `zx___.mmm; zx__.pfm`""" ;
-  skos:example "zx___.mmm; zx__.pfm" ;
-  meta:mandatory false ;
-  meta:userEditable false ;
-  meta:immutable false ;  
-  meta:jsonName "font_file_name" .
+# stFnt:fontFileName a rdf:Property ;
+#   rdfs:range xsd:string ;
+#   rdfs:domain xmp:Font ;
+#   rdfs:comment """The font file name (not a complete path). For example: `Times New Roman.otf`. Some products are not storing file extension information. XMP spec is open about specifics of the file name. If font information is stored in multiple files, use the semicolon separator to store file names. For example: `zx___.mmm; zx__.pfm`""" ;
+#   skos:example "zx___.mmm; zx__.pfm" ;
+#   meta:mandatory false ;
+#   meta:userEditable false ;
+#   meta:immutable false ;  
+#   meta:jsonName "font_file_name" .
 
-stFnt:fontName a rdf:Property ;
-  rdfs:range xmp:Text ;
-  rdfs:domain xmp:Font ;
-  rdfs:comment """PostScript name of the font. For example: TimesNewRomanPS-BoldItalicMT """ ;
-  meta:mandatory true ;
-  meta:userEditable false ;
-  meta:immutable false ;  
-  meta:jsonName "font_name" ;
-  skos:note """fontName is manadatory to identify the font used in an asset but an asset may not have a font property if it has only images/vector arts (no text).""" .
+# stFnt:fontName a rdf:Property ;
+#   rdfs:range xmp:Text ;
+#   rdfs:domain xmp:Font ;
+#   rdfs:comment """PostScript name of the font. For example: TimesNewRomanPS-BoldItalicMT """ ;
+#   meta:mandatory true ;
+#   meta:userEditable false ;
+#   meta:immutable false ;  
+#   meta:jsonName "font_name" ;
+#   skos:note """fontName is manadatory to identify the font used in an asset but an asset may not have a font property if it has only images/vector arts (no text).""" .
   
-stFnt:fontType a rdf:Property ;
-  rdfs:range xmp:Text ;
-  rdfs:domain xmp:Font ;
-  rdfs:comment """The font type, such as TrueType, Type 1, OpenType, and so on.""" ;   
-  meta:mandatory true ;
-  meta:userEditable false ;
-  meta:immutable false ;  
-  meta:jsonName "font_type" ;
-  skos:note """fontType is manadatory to identify font category but an asset may not have a font property if it has only images/vector arts (no text).""" .
+# stFnt:fontType a rdf:Property ;
+#   rdfs:range xmp:Text ;
+#   rdfs:domain xmp:Font ;
+#   rdfs:comment """The font type, such as TrueType, Type 1, OpenType, and so on.""" ;   
+#   meta:mandatory true ;
+#   meta:userEditable false ;
+#   meta:immutable false ;  
+#   meta:jsonName "font_type" ;
+#   skos:note """fontType is manadatory to identify font category but an asset may not have a font property if it has only images/vector arts (no text).""" .
 
-stFnt:versionString a rdf:Property ;
-  rdfs:range xsd:string ;
-  rdfs:domain xmp:Font ;
-  rdfs:comment """The version string: 
-  -version for Type1 fonts
-  -nameId 5 for Apple TrueType and OpenType
-  -CIDFontVersion for CID fonts
-  -The empty string for bitmap fonts
-  The Adobe CoolType font engine allows two fonts with the same PostScript name and different technologies to be used at the same time, but not if they are from different versions. So even without this data for a given document you will have unique font data. However, the version can tell you if the font has changed metrics, glyph forms or other important information. This is useful for comparing fonts in two documents or fonts in a document to those in your system.
-  For example: TimesNewRomanPS-BoldItalicMTVersion 3.05 """ ;
-  meta:mandatory false ;
-  meta:userEditable false ;
-  meta:immutable false ;  
-  meta:jsonName "version_string" .
+# stFnt:versionString a rdf:Property ;
+#   rdfs:range xsd:string ;
+#   rdfs:domain xmp:Font ;
+#   rdfs:comment """The version string: 
+#   -version for Type1 fonts
+#   -nameId 5 for Apple TrueType and OpenType
+#   -CIDFontVersion for CID fonts
+#   -The empty string for bitmap fonts
+#   The Adobe CoolType font engine allows two fonts with the same PostScript name and different technologies to be used at the same time, but not if they are from different versions. So even without this data for a given document you will have unique font data. However, the version can tell you if the font has changed metrics, glyph forms or other important information. This is useful for comparing fonts in two documents or fonts in a document to those in your system.
+#   For example: TimesNewRomanPS-BoldItalicMTVersion 3.05 """ ;
+#   meta:mandatory false ;
+#   meta:userEditable false ;
+#   meta:immutable false ;  
+#   meta:jsonName "version_string" .
 
 ## structure for defining Layer
 
-core:Layer a rdfs:Class ;
-  rdfs:label "Layer"@en ;
-  rdfs:comment """Structure denoting layer information in the document. Layers are like stacked sheets. User can add transparency/opacity to see through transparent areas of a layer. They are used for compositing multiple images, adding text to an image, or adding vector graphic shapes. Users can also apply layer style to add a special effect such as a drop shadow or a glow. """ ;
-  rdfs:subClassOf rdfs:Resource .
+# core:Layer a rdfs:Class ;
+#   rdfs:label "Layer"@en ;
+#   rdfs:comment """Structure denoting layer information in the document. Layers are like stacked sheets. User can add transparency/opacity to see through transparent areas of a layer. They are used for compositing multiple images, adding text to an image, or adding vector graphic shapes. Users can also apply layer style to add a special effect such as a drop shadow or a glow. """ ;
+#   rdfs:subClassOf rdfs:Resource .
   
-stLayer:type a rdf:Property ;
-  rdfs:range xsd:string ;
-  rdfs:domain core:Layer ;
-  rdfs:comment """Closed choice of ("Layer", "LayerGroup") - will have "Layer" if stLayer structure is active.""";
-  meta:mandatory true ;
-  meta:userEditable false ;
-  meta:immutable true ;
-  meta:jsonName "type" .
+# stLayer:type a rdf:Property ;
+#   rdfs:range xsd:string ;
+#   rdfs:domain core:Layer ;
+#   rdfs:comment """Closed choice of ("Layer", "LayerGroup") - will have "Layer" if stLayer structure is active.""";
+#   meta:mandatory true ;
+#   meta:userEditable false ;
+#   meta:immutable true ;
+#   meta:jsonName "type" .
 
 # stLayer:name a rdf:Property ;
 #   rdfs:range xsd:string ;
@@ -927,16 +927,16 @@ core:ResourceEventList a rdfs:Class ;
 
 ## auxiliary container type for defining an array of xap:stFnt
 
-core:FontSet a rdfs:Class ;
-  rdfs:label "Font Set"@en ;
-  rdfs:comment "A set of fonts, order does not matter" ;
-  rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty rdf:first ;
-    owl:allValuesFrom xmp:Font ;
-        owl:allValuesFrom core:FontSet ;
-  ] ;
-  rdfs:subClassOf rdf:List . 
+# core:FontSet a rdfs:Class ;
+#   rdfs:label "Font Set"@en ;
+#   rdfs:comment "A set of fonts, order does not matter" ;
+#   rdfs:subClassOf [
+#     a owl:Restriction ;
+#     owl:onProperty rdf:first ;
+#     owl:allValuesFrom xmp:Font ;
+#         owl:allValuesFrom core:FontSet ;
+#   ] ;
+#   rdfs:subClassOf rdf:List . 
 
 ## auxiliary container type for defining an array of Layer 
 
@@ -1740,44 +1740,44 @@ photoshop:ICCProfile a core:BaseProperty, owl:FunctionalProperty ;
 
 #Using core:Asset class to store Font property until we decide a right place to group these together
 
-core:Fonts a core:BaseProperty, owl:FunctionalProperty ;
-  # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
-  rdfs:label "Fonts"@en ;
-  rdfs:comment """The set of fonts used or embedded in the asset. The order of elements in this set carries no semantics. """ ;
-  rdfs:range core:FontSet ;
-  meta:mandatory false ;
-  meta:userEditable false ;
-  meta:immutable false ;
-  meta:jsonName "fonts" ;
-  skos:note "" ;
-  skos:example "" ;
-  rdfs:domain core:Asset .
+# core:Fonts a core:BaseProperty, owl:FunctionalProperty ;
+#   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
+#   rdfs:label "Fonts"@en ;
+#   rdfs:comment """The set of fonts used or embedded in the asset. The order of elements in this set carries no semantics. """ ;
+#   rdfs:range core:FontSet ;
+#   meta:mandatory false ;
+#   meta:userEditable false ;
+#   meta:immutable false ;
+#   meta:jsonName "fonts" ;
+#   skos:note "" ;
+#   skos:example "" ;
+#   rdfs:domain core:Asset .
     
-core:Layers a core:BaseProperty, owl:FunctionalProperty ;
-  # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
-  rdfs:label "Layers"@en ;
-  rdfs:comment """Ordered Array of Layer/LayerGroup structure used inside a document""" ;
-  rdfs:range core:LayerList ;
-  meta:mandatory false ;
-  meta:userEditable true ;
-  meta:immutable false ;
-  meta:jsonName "layers" ;
-  skos:note "" ;
-  skos:example "" ;
-  rdfs:domain core:Asset .
+# core:Layers a core:BaseProperty, owl:FunctionalProperty ;
+#   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
+#   rdfs:label "Layers"@en ;
+#   rdfs:comment """Ordered Array of Layer/LayerGroup structure used inside a document""" ;
+#   rdfs:range core:LayerList ;
+#   meta:mandatory false ;
+#   meta:userEditable true ;
+#   meta:immutable false ;
+#   meta:jsonName "layers" ;
+#   skos:note "" ;
+#   skos:example "" ;
+#   rdfs:domain core:Asset .
 
-core:Artboards a core:BaseProperty, owl:FunctionalProperty ;
-  # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
-  rdfs:label "Artboards"@en ;
-  rdfs:comment """Contains the artboards that are being used in the document. A document can have multiple artboards.""" ;
-  rdfs:range core:ArtboardSet ;
-  meta:mandatory false ;
-  meta:userEditable true ;
-  meta:immutable false ;
-  meta:jsonName "artboards" ;
-  skos:note "" ;
-  skos:example "" ;
-  rdfs:domain core:Asset .
+# core:Artboards a core:BaseProperty, owl:FunctionalProperty ;
+#   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
+#   rdfs:label "Artboards"@en ;
+#   rdfs:comment """Contains the artboards that are being used in the document. A document can have multiple artboards.""" ;
+#   rdfs:range core:ArtboardSet ;
+#   meta:mandatory false ;
+#   meta:userEditable true ;
+#   meta:immutable false ;
+#   meta:jsonName "artboards" ;
+#   skos:note "" ;
+#   skos:example "" ;
+#   rdfs:domain core:Asset .
 
 # ### Video class
 # @trieloff: covered

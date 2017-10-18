@@ -317,8 +317,12 @@
           "description": "The `machineKeywords` property is used to track machine-assigned descriptive phrases like keywords or tags of an asset. Rather than a plan list of tags, it is a structured set of keywords, where keywords can have an explicit confidence ranking and a locale. For human-defined keywords, use the `keywords` property. "
         },
         "fonts": {
-          "$schema": "http://json-schema.org/schema#",
-          "properties": {}
+          "name": "Fonts",
+          "description": "This is a list of fonts and typefaces that are used in the document. The order of fonts does not matter.",
+          "type": "array",
+          "items": {
+            "$ref": "https://ns.adobe.com/xdm/assets/font#/definitions/font"
+          }
         },
         "layers": {
           "$ref": "https://ns.adobe.com/xdm/assets/layer-group#/definitions/layer-group"

@@ -22,15 +22,17 @@
         },
         "alias_ids": {
           "type": "array",
+          "title": "Alias IDs",
           "items": {
-            "$schema": "http://json-schema.org/schema#",
             "properties": {
-              "external System": {
+              "system": {
+                "title": "External System",
                 "type": "string",
                 "description": "A string used to identify the external systems like google, facebook etc."
               },
-              "ID": {
+              "id": {
                 "type": "string",
+                "title": "External ID",
                 "description": "An Id under which external systems track the asset."
               }
             }

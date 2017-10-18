@@ -241,41 +241,41 @@ photoshop:ColorModeChoice  a rdfs:Datatype ;
 
 ## structure for defining AliasID
 
-core:AliasID a rdfs:Class ;
-  rdfs:label "Alias ID"@en ;
-  rdfs:comment """A class representing an Alias ID structure with id and system properties""" ;
-  rdfs:subClassOf rdfs:Resource .
+# core:AliasID a rdfs:Class ;
+#   rdfs:label "Alias ID"@en ;
+#   rdfs:comment """A class representing an Alias ID structure with id and system properties""" ;
+#   rdfs:subClassOf rdfs:Resource .
 
-core:externalSystem a rdf:Property ;
-  rdfs:label "external System"@en ;
-  rdfs:range xsd:string ;
-  rdfs:domain core:AliasID ;
-  rdfs:comment """A string used to identify the external systems like google, facebook etc.""" .
+# core:externalSystem a rdf:Property ;
+#   rdfs:label "external System"@en ;
+#   rdfs:range xsd:string ;
+#   rdfs:domain core:AliasID ;
+#   rdfs:comment """A string used to identify the external systems like google, facebook etc.""" .
 
-core:externalID a rdf:Property ;
-  rdfs:label "ID"@en ;
-  rdfs:range xsd:string ;
-  rdfs:domain core:AliasID ;
-  rdfs:comment """An Id under which external systems track the asset.""" .
+# core:externalID a rdf:Property ;
+#   rdfs:label "ID"@en ;
+#   rdfs:range xsd:string ;
+#   rdfs:domain core:AliasID ;
+#   rdfs:comment """An Id under which external systems track the asset.""" .
 
 ## structure for defining CopyrightOwnerDetail
 
-plus:CopyrightOwnerDetail a rdfs:Class ;
-  rdfs:label "Copyright Owner Detail"@en ;
-  rdfs:comment """Contains properties that provide for a Copyright Owner.""" ;
-  rdfs:subClassOf rdfs:Resource .
+# plus:CopyrightOwnerDetail a rdfs:Class ;
+#   rdfs:label "Copyright Owner Detail"@en ;
+#   rdfs:comment """Contains properties that provide for a Copyright Owner.""" ;
+#   rdfs:subClassOf rdfs:Resource .
 
-plus:OwnerID a rdf:Property ;
-  rdfs:label "Copyright Owner ID"@en ;
-  rdfs:range xmp:Text ;
-  rdfs:domain plus:CopyrightOwnerDetail ;
-  rdfs:comment """ID of the copyright owner. If the PLUS-ID being stored in this property is registered with the PLUS Coalition, it should be expressed as a URL. For example: http://plus-id.org/PLUS-ID.""" .
+# plus:OwnerID a rdf:Property ;
+#   rdfs:label "Copyright Owner ID"@en ;
+#   rdfs:range xmp:Text ;
+#   rdfs:domain plus:CopyrightOwnerDetail ;
+#   rdfs:comment """ID of the copyright owner. If the PLUS-ID being stored in this property is registered with the PLUS Coalition, it should be expressed as a URL. For example: http://plus-id.org/PLUS-ID.""" .
 
-plus:OwnerName a rdf:Property ;
-  rdfs:label "Copyright Owner name"@en ;
-  rdfs:range xmp:ProperName ;
-  rdfs:domain plus:CopyrightOwnerDetail ;
-  rdfs:comment """Name of the copyright owner.""" .
+# plus:OwnerName a rdf:Property ;
+#   rdfs:label "Copyright Owner name"@en ;
+#   rdfs:range xmp:ProperName ;
+#   rdfs:domain plus:CopyrightOwnerDetail ;
+#   rdfs:comment """Name of the copyright owner.""" .
 
 ## structure for defining MilestoneInfo
 
@@ -808,20 +808,20 @@ core:StringList a rdfs:Class ;
 
 ## auxiliary container type for defining an array of AliasID
 
-core:ListOfAliasIDs a rdfs:Class ;
-  rdfs:label "List of Alias IDs"@en ;
-  rdfs:comment "Unordered array of AliasID" ;
-  rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty rdf:first ;
-    owl:allValuesFrom core:AliasID ;
-  ] ;
-  rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty rdf:rest ;
-    owl:allValuesFrom core:ListOfAliasIDs ;
-  ] ;
-  rdfs:subClassOf rdf:List .
+# core:ListOfAliasIDs a rdfs:Class ;
+#   rdfs:label "List of Alias IDs"@en ;
+#   rdfs:comment "Unordered array of AliasID" ;
+#   rdfs:subClassOf [
+#     a owl:Restriction ;
+#     owl:onProperty rdf:first ;
+#     owl:allValuesFrom core:AliasID ;
+#   ] ;
+#   rdfs:subClassOf [
+#     a owl:Restriction ;
+#     owl:onProperty rdf:rest ;
+#     owl:allValuesFrom core:ListOfAliasIDs ;
+#   ] ;
+#   rdfs:subClassOf rdf:List .
 
 ## auxilary container type for defining an array of Text elements
 
@@ -1069,17 +1069,17 @@ core:assetName a core:BaseProperty, owl:FunctionalProperty ;
   skos:example "" ;
   rdfs:domain core:Asset .
 
-core:aliasIDs a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "Alias IDs"@en ;
-  rdfs:comment "List of IDs under which external systems track the asset. Example of external systems : google, facebook etc." ;
-  rdfs:range core:ListOfAliasIDs ;
-  meta:jsonName "alias_ids" ;
-  meta:mandatory false ;
-  meta:userEditable false ;
-  meta:immutable false ;
-  skos:note """[{"external_system": "facebook", "external_id": "000A1C004EAE74B70A490D05"},...]""" ;
-  skos:example "" ;
-  rdfs:domain core:Asset .
+# core:aliasIDs a core:BaseProperty, owl:FunctionalProperty ;
+#   rdfs:label "Alias IDs"@en ;
+#   rdfs:comment "List of IDs under which external systems track the asset. Example of external systems : google, facebook etc." ;
+#   rdfs:range core:ListOfAliasIDs ;
+#   meta:jsonName "alias_ids" ;
+#   meta:mandatory false ;
+#   meta:userEditable false ;
+#   meta:immutable false ;
+#   skos:note """[{"external_system": "facebook", "external_id": "000A1C004EAE74B70A490D05"},...]""" ;
+#   skos:example "" ;
+#   rdfs:domain core:Asset .
 
 #### Property section: Asset Creation
 

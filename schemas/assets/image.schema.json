@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/schema#",
   "$id": "https://ns.adobe.com/xdm/assets/image",
   "title": "Image",
-  "description": "The Image class is for raster image assets, e.g. JPEG, PNG, etc.",
+  "description": "The Image class is for raster and vector image assets, including JPEG, PNG, SVG files",
   "definitions": {
     "rational": {
       "$id": "https://ns.adobe.com/xdm/assets/image/rational",

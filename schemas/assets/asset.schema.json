@@ -243,6 +243,7 @@
         },
         "etag": {
           "type": "string",
+          "name": "ETag",
           "description": "An  ETag is an HTTP response header returned by an HTTP/1.1 compliant web server used to determine change in content of a resource at a given URL. "
         },
         "n_pages": {

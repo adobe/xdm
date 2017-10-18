@@ -1491,17 +1491,17 @@ core:path a core:BaseProperty, owl:FunctionalProperty ;
   skos:example "" ;
   rdfs:domain core:Asset .
 
-core:etag a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "ETAG"@en ;
-  rdfs:comment """An  ETag is an HTTP response header returned by an HTTP/1.1 compliant web server used to determine change in content of a resource at a given URL. """ ;
-  rdfs:range xsd:string ;
-  meta:mandatory true ;
-  meta:userEditable false ;
-  meta:immutable false ;
-  meta:jsonName "etag" ;
-  skos:note "" ;
-  skos:example "" ;
-  rdfs:domain core:Asset .
+# core:etag a core:BaseProperty, owl:FunctionalProperty ;
+#   rdfs:label "ETAG"@en ;
+#   rdfs:comment """An  ETag is an HTTP response header returned by an HTTP/1.1 compliant web server used to determine change in content of a resource at a given URL. """ ;
+#   rdfs:range xsd:string ;
+#   meta:mandatory true ;
+#   meta:userEditable false ;
+#   meta:immutable false ;
+#   meta:jsonName "etag" ;
+#   skos:note "" ;
+#   skos:example "" ;
+#   rdfs:domain core:Asset .
 
 # xmpTPg:NPages a core:BaseProperty, owl:FunctionalProperty ;
 #   rdfs:label "Number of pages"@en ;

@@ -1153,23 +1153,23 @@ core:repositoryCreatedBy a core:BaseProperty, owl:FunctionalProperty ;
 
 #### Property section: Asset Modification
 
-xmp:ModifyDate a core:BaseProperty, owl:FunctionalProperty ;
-  # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
-  rdfs:label "Mofification Date"@en ;
-  rdfs:comment """The date and time when asset was last modified. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".""" ;
-  rdfs:range xsd:dateTime ;
-  meta:mandatory true ;
-  meta:userEditable false ;
-  meta:immutable false ;
-  meta:jsonName "modify_date" ;
-  skos:note """YYYY
-YYYY-MM
-YYYY-MM-DD
-YYYY-MM-DDThh:mmTZD
-YYYY-MM-DDThh:mm:ssTZD
-YYYY-MM-DDThh:mm:ss.sTZD""" ;
-  skos:example "" ;
-  rdfs:domain core:Asset .
+# xmp:ModifyDate a core:BaseProperty, owl:FunctionalProperty ;
+#   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
+#   rdfs:label "Mofification Date"@en ;
+#   rdfs:comment """The date and time when asset was last modified. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".""" ;
+#   rdfs:range xsd:dateTime ;
+#   meta:mandatory true ;
+#   meta:userEditable false ;
+#   meta:immutable false ;
+#   meta:jsonName "modify_date" ;
+#   skos:note """YYYY
+# YYYY-MM
+# YYYY-MM-DD
+# YYYY-MM-DDThh:mmTZD
+# YYYY-MM-DDThh:mm:ssTZD
+# YYYY-MM-DDThh:mm:ss.sTZD""" ;
+#   skos:example "" ;
+#   rdfs:domain core:Asset .
 
 core:repositoryLastModifiedDate a core:BaseProperty, owl:FunctionalProperty ;
   rdfs:label "Repository last modified date"@en ;

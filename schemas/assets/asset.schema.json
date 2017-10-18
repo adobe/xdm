@@ -55,9 +55,10 @@
           "description": "Name of the application which authored the asset. It takes the value present in `xmp:CreatorTool` property in XMP.\nIt is recommended that the value use this format convention:\nOrganization Software_name Version (token;token;...)\n- Organization: The name of the company or organization providing the software, no SPACEs.\n- Software_name: The full name of the software, SPACEs allowed.\n- version: The version of the software, no SPACEs.\n- tokens: Can be used to identify an operating system, plug-in, or more detailed version information."
         },
         "modify_date": {
+          "title": "Mofification Date",
           "type": "string",
           "format": "date-time",
-          "description": "The date and time when asset was last modified. The Date Time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\"."
+          "description": "The date and time when asset was last modified. The Date Time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\". Opposed to `repository_last_modified_date`, this is the time when the asset was last modified locally, with or without knowledge of the repository."
         },
         "milestone": {
           "title": "Milestone",

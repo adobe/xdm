@@ -791,20 +791,20 @@ tiff:denominator a rdf:Property ;
   
 ## auxiliary container type for defining an array of xsd:string
 
-core:StringList a rdfs:Class ;
-  rdfs:label "String List"@en ;
-  rdfs:comment "An ordered list of strings" ;
-  rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty rdf:first ;
-    owl:allValuesFrom xsd:string ;
-  ] ;
-  rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty rdf:rest ;
-    owl:allValuesFrom core:StringList ;
-  ] ;
-  rdfs:subClassOf rdf:List .  
+# core:StringList a rdfs:Class ;
+#   rdfs:label "String List"@en ;
+#   rdfs:comment "An ordered list of strings" ;
+#   rdfs:subClassOf [
+#     a owl:Restriction ;
+#     owl:onProperty rdf:first ;
+#     owl:allValuesFrom xsd:string ;
+#   ] ;
+#   rdfs:subClassOf [
+#     a owl:Restriction ;
+#     owl:onProperty rdf:rest ;
+#     owl:allValuesFrom core:StringList ;
+#   ] ;
+#   rdfs:subClassOf rdf:List .  
 
 ## auxiliary container type for defining an array of AliasID
 
@@ -825,54 +825,54 @@ core:StringList a rdfs:Class ;
 
 ## auxilary container type for defining an array of Text elements
 
-core:textSet a rdfs:Class ;
-  rdfs:label "Text Set"@en ;
-  rdfs:comment "Unordered set of Text elements" ;
-  rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty rdf:first ;
-    owl:allValuesFrom xmp:Text ;
-  ] ;
-  rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty rdf:rest ;
-    owl:allValuesFrom core:textSet ;
-  ] ;
-  rdfs:subClassOf rdf:List .
+# core:textSet a rdfs:Class ;
+#   rdfs:label "Text Set"@en ;
+#   rdfs:comment "Unordered set of Text elements" ;
+#   rdfs:subClassOf [
+#     a owl:Restriction ;
+#     owl:onProperty rdf:first ;
+#     owl:allValuesFrom xmp:Text ;
+#   ] ;
+#   rdfs:subClassOf [
+#     a owl:Restriction ;
+#     owl:onProperty rdf:rest ;
+#     owl:allValuesFrom core:textSet ;
+#   ] ;
+#   rdfs:subClassOf rdf:List .
 
 ## auxilary container type for defining an array of keywords
 
-core:keywordSet a rdfs:Class ;
-  rdfs:label "Keyword Set"@en ;
-  rdfs:comment "Unordered set of keywords" ;
-  rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty rdf:first ;
-    owl:allValuesFrom core:stKeyword ;
-  ] ;
-  rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty rdf:rest ;
-    owl:allValuesFrom core:keywordSet ;
-  ] ;
-  rdfs:subClassOf rdf:List .
+# core:keywordSet a rdfs:Class ;
+#   rdfs:label "Keyword Set"@en ;
+#   rdfs:comment "Unordered set of keywords" ;
+#   rdfs:subClassOf [
+#     a owl:Restriction ;
+#     owl:onProperty rdf:first ;
+#     owl:allValuesFrom core:stKeyword ;
+#   ] ;
+#   rdfs:subClassOf [
+#     a owl:Restriction ;
+#     owl:onProperty rdf:rest ;
+#     owl:allValuesFrom core:keywordSet ;
+#   ] ;
+#   rdfs:subClassOf rdf:List .
 
 ## auxilary container type for defining an array of machine generated keywords
 
-core:machineKeywordSet a rdfs:Class ;
-  rdfs:label "Machine Keyword Set"@en ;
-  rdfs:comment "Unordered set of machine keywords" ;
-  rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty rdf:first ;
-    owl:allValuesFrom core:stMachineKeyword ;
-  ] ;
-  rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty rdf:rest ;
-    owl:allValuesFrom core:machineKeywordSet ;
-  ] ;
-  rdfs:subClassOf rdf:List .
+# core:machineKeywordSet a rdfs:Class ;
+#   rdfs:label "Machine Keyword Set"@en ;
+#   rdfs:comment "Unordered set of machine keywords" ;
+#   rdfs:subClassOf [
+#     a owl:Restriction ;
+#     owl:onProperty rdf:first ;
+#     owl:allValuesFrom core:stMachineKeyword ;
+#   ] ;
+#   rdfs:subClassOf [
+#     a owl:Restriction ;
+#     owl:onProperty rdf:rest ;
+#     owl:allValuesFrom core:machineKeywordSet ;
+#   ] ;
+#   rdfs:subClassOf rdf:List .
 
 ## auxiliary container type for defining an array of Locales
 
@@ -893,37 +893,37 @@ core:machineKeywordSet a rdfs:Class ;
 
 ## auxiliary container type for defining an array of CopyrightOwnerDetail
 
-core:ListOfCopyrightOwners a rdfs:Class ;
-  rdfs:label "List of Copyright Owners"@en ;
-  rdfs:comment "Ordered list of plus:CopyrightOwnerDetail, having two fields: CopyrightOwnerId and CopyrightOwnerName" ;
-  rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty rdf:first ;
-    owl:allValuesFrom plus:CopyrightOwnerDetail ;
-  ] ;
-  rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty rdf:rest ;
-    owl:allValuesFrom core:ListOfCopyrightOwners ;
-  ] ;
-  rdfs:subClassOf rdf:List .
+# core:ListOfCopyrightOwners a rdfs:Class ;
+#   rdfs:label "List of Copyright Owners"@en ;
+#   rdfs:comment "Ordered list of plus:CopyrightOwnerDetail, having two fields: CopyrightOwnerId and CopyrightOwnerName" ;
+#   rdfs:subClassOf [
+#     a owl:Restriction ;
+#     owl:onProperty rdf:first ;
+#     owl:allValuesFrom plus:CopyrightOwnerDetail ;
+#   ] ;
+#   rdfs:subClassOf [
+#     a owl:Restriction ;
+#     owl:onProperty rdf:rest ;
+#     owl:allValuesFrom core:ListOfCopyrightOwners ;
+#   ] ;
+#   rdfs:subClassOf rdf:List .
 
 ## auxiliary container type for defining an array of ResourceEvent as per XMP spec
 
-core:ResourceEventList a rdfs:Class ;
-  rdfs:label "Resource Event List"@en ;
-  rdfs:comment """Ordered list of xmp:ResourceEvent""" ;
-  rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty rdf:first ;
-    owl:allValuesFrom xmp:ResourceEvent ;
-  ] ;
-  rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty rdf:rest ;
-    owl:allValuesFrom core:ResourceEventList ;
-  ] ;
-  rdfs:subClassOf rdf:List .
+# core:ResourceEventList a rdfs:Class ;
+#   rdfs:label "Resource Event List"@en ;
+#   rdfs:comment """Ordered list of xmp:ResourceEvent""" ;
+#   rdfs:subClassOf [
+#     a owl:Restriction ;
+#     owl:onProperty rdf:first ;
+#     owl:allValuesFrom xmp:ResourceEvent ;
+#   ] ;
+#   rdfs:subClassOf [
+#     a owl:Restriction ;
+#     owl:onProperty rdf:rest ;
+#     owl:allValuesFrom core:ResourceEventList ;
+#   ] ;
+#   rdfs:subClassOf rdf:List .
 
 ## auxiliary container type for defining an array of xap:stFnt
 
@@ -940,9 +940,9 @@ core:ResourceEventList a rdfs:Class ;
 
 ## auxiliary container type for defining an array of Layer 
 
-core:LayerList a rdfs:Class ;
-  rdfs:label "Layer List"@en ;
-  rdfs:comment "Ordered array of core:Layer/Core:LayerGroup used inside a document. " .
+# core:LayerList a rdfs:Class ;
+#   rdfs:label "Layer List"@en ;
+#   rdfs:comment "Ordered array of core:Layer/Core:LayerGroup used inside a document. " .
 # Commented this out as it breaks the machinery also doesn't validate: https://github.com/IDLabResearch/TurtleValidator
 #  rdfs:subClassOf [
 #    a owl:Restriction ;
@@ -958,20 +958,20 @@ core:LayerList a rdfs:Class ;
 
 ## auxiliary container type for defining an Array of Artboards
 
-core:ArtboardSet a rdfs:Class ;
-  rdfs:label "Artboard Set"@en ;
-  rdfs:comment "An unordered set of artboards. ArtboardSet helps in getting access to all artboards used in a document ";
-  rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty rdf:first ;
-    owl:allValuesFrom core:Artboard ;
-  ] ;
-  rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty rdf:rest ;
-    owl:allValuesFrom core:ArtboardSet ;
-  ] ;
-  rdfs:subClassOf rdf:List .
+# core:ArtboardSet a rdfs:Class ;
+#   rdfs:label "Artboard Set"@en ;
+#   rdfs:comment "An unordered set of artboards. ArtboardSet helps in getting access to all artboards used in a document ";
+#   rdfs:subClassOf [
+#     a owl:Restriction ;
+#     owl:onProperty rdf:first ;
+#     owl:allValuesFrom core:Artboard ;
+#   ] ;
+#   rdfs:subClassOf [
+#     a owl:Restriction ;
+#     owl:onProperty rdf:rest ;
+#     owl:allValuesFrom core:ArtboardSet ;
+#   ] ;
+#   rdfs:subClassOf rdf:List .
 
 # abstract base classes for schema classes and properties
 

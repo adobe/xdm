@@ -209,22 +209,22 @@ xsd:dateTimeStamp a rdfs:Datatype ;
 #     ]
 #   ) .
 
-photoshop:ColorModeChoice  a rdfs:Datatype ;
-  rdfs:label "Color Mode Choice"@en ;
-  rdfs:comment """Color mode. Closed choice of integer:
-0 = Bitmap
-1 = Gray scale
-2 = Indexed color
-3 = RGB color
-4 = CMYK color
-7 = Multi-channel
-8 = Duotone
-9 = LAB color""" ;
-  owl:withRestrictions (
-    [
-      xsd:pattern "^[0-9]?$"
-    ]
-  ) .
+# photoshop:ColorModeChoice  a rdfs:Datatype ;
+#   rdfs:label "Color Mode Choice"@en ;
+#   rdfs:comment """Color mode. Closed choice of integer:
+# 0 = Bitmap
+# 1 = Gray scale
+# 2 = Indexed color
+# 3 = RGB color
+# 4 = CMYK color
+# 7 = Multi-channel
+# 8 = Duotone
+# 9 = LAB color""" ;
+#   owl:withRestrictions (
+#     [
+#       xsd:pattern "^[0-9]?$"
+#     ]
+#   ) .
 
 # exif:GPSCoordinate a rdfs:Datatype ;
 #   rdfs:label "GPS Coordinate"@en ;
@@ -1697,25 +1697,25 @@ core:Image a rdfs:Class ;
 #   skos:example "" ;
 #   rdfs:domain core:Image .
 
-photoshop:ColorMode a core:BaseProperty, owl:FunctionalProperty ;
-  # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
-  rdfs:label "Color Mode"@en ;
-  rdfs:comment """The color mode or image mode determines how colors combine based on the number of channels in a color model. Different color modes result in different levels of color detail and file size. For instance, use CMYK color mode for images in a full-color print brochure, and use RGB color mode for images in web or e-mail to reduce file size while maintaining color integrity.""" ;
-  rdfs:range photoshop:ColorModeChoice ;
-  meta:mandatory false ;
-  meta:userEditable false ;
-  meta:immutable false ;
-  meta:jsonName "color_mode" ;
-  skos:note """0 = Bitmap
-1 = Gray scale
-2 = Indexed color
-3 = RGB color
-4 = CMYK color
-7 = Multi-channel
-8 = Duotone
-9 = LAB color""" ;
-  skos:example "" ;
-  rdfs:domain core:Image .
+# photoshop:ColorMode a core:BaseProperty, owl:FunctionalProperty ;
+#   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
+#   rdfs:label "Color Mode"@en ;
+#   rdfs:comment """The color mode or image mode determines how colors combine based on the number of channels in a color model. Different color modes result in different levels of color detail and file size. For instance, use CMYK color mode for images in a full-color print brochure, and use RGB color mode for images in web or e-mail to reduce file size while maintaining color integrity.""" ;
+#   rdfs:range photoshop:ColorModeChoice ;
+#   meta:mandatory false ;
+#   meta:userEditable false ;
+#   meta:immutable false ;
+#   meta:jsonName "color_mode" ;
+#   skos:note """0 = Bitmap
+# 1 = Gray scale
+# 2 = Indexed color
+# 3 = RGB color
+# 4 = CMYK color
+# 7 = Multi-channel
+# 8 = Duotone
+# 9 = LAB color""" ;
+#   skos:example "" ;
+#   rdfs:domain core:Image .
 
 
 photoshop:ICCProfile a core:BaseProperty, owl:FunctionalProperty ;

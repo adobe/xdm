@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://ns.adobe.com/xdm/assets/layer-goup",
+  "title": "Layer Group",
+  "description":"",
+  "definitions": {
+    "layer": {
+      "properties": {
+        "name": {
+          "type":"string",
+          "title": "Name",
+          "description": "Name of the Layer Group. This will be visible to the user and users can specify names that can help them to identify different Layer Groups"
+        },
+        "layers": {
+          "name": "Layers",
+          "description": "The layers or layer groups contained in this layer group.",
+          "type":"array",
+          "items": {
+            "anyOf": [
+              {"$ref":"#/definitions/layer-group"},
+              {"$ref":"https://ns.adobe.com/xdm/assets/layer#/definitions/layer"}
+            ]
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {"$ref":"#/definitions/layer-group"}
+  ]
+}

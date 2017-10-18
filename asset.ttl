@@ -876,20 +876,20 @@ core:machineKeywordSet a rdfs:Class ;
 
 ## auxiliary container type for defining an array of Locales
 
-core:ListOfLocales a rdfs:Class ;
-  rdfs:label "List of Locales"@en ;
-  rdfs:comment "Unordered set of locales" ;
-  rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty rdf:first ;
-    owl:allValuesFrom xml:lang ;
-  ] ;
-  rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty rdf:rest ;
-    owl:allValuesFrom core:ListOfLocales ;
-  ] ;
-  rdfs:subClassOf rdf:List .  
+# core:ListOfLocales a rdfs:Class ;
+#   rdfs:label "List of Locales"@en ;
+#   rdfs:comment "Unordered set of locales" ;
+#   rdfs:subClassOf [
+#     a owl:Restriction ;
+#     owl:onProperty rdf:first ;
+#     owl:allValuesFrom xml:lang ;
+#   ] ;
+#   rdfs:subClassOf [
+#     a owl:Restriction ;
+#     owl:onProperty rdf:rest ;
+#     owl:allValuesFrom core:ListOfLocales ;
+#   ] ;
+#   rdfs:subClassOf rdf:List .  
 
 ## auxiliary container type for defining an array of CopyrightOwnerDetail
 
@@ -1454,18 +1454,18 @@ dc:format a core:BaseProperty, owl:FunctionalProperty ;
   skos:example """“type”:“application/vnd.adobe.photoshop”""" ;
   rdfs:domain core:Asset .
 
-dc:language a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "Language"@en ;
-  rdfs:comment """The language or languages of the resource.""" ;
-  rdfs:range core:ListOfLocales ;
-  meta:mandatory false ;
-  meta:userEditable false ;
-  meta:immutable false ;
-  meta:jsonName "type" ;
-  skos:note "XMP usage is a list of languages used in the content of the resource. Languages are specified in language code as defined in IETF RFC 3066. " ;
-  rdfs:seeAlso <https://www.ietf.org/rfc/rfc3066.txt> ;
-  skos:example "pt-BR" ;
-  rdfs:domain core:Asset .
+# dc:language a core:BaseProperty, owl:FunctionalProperty ;
+#   rdfs:label "Language"@en ;
+#   rdfs:comment """The language or languages of the resource.""" ;
+#   rdfs:range core:ListOfLocales ;
+#   meta:mandatory false ;
+#   meta:userEditable false ;
+#   meta:immutable false ;
+#   meta:jsonName "type" ;
+#   skos:note "XMP usage is a list of languages used in the content of the resource. Languages are specified in language code as defined in IETF RFC 3066. " ;
+#   rdfs:seeAlso <https://www.ietf.org/rfc/rfc3066.txt> ;
+#   skos:example "pt-BR" ;
+#   rdfs:domain core:Asset .
 
 # core:size a core:BaseProperty, owl:FunctionalProperty ;
 #   rdfs:label "Size"@en ;

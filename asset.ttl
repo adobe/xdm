@@ -345,45 +345,45 @@ tiff:denominator a rdf:Property ;
     ]
   ) .
 
-## structure of keywords property
+# ## structure of keywords property
 
-core:stKeyword a rdfs:Class ;
-  rdfs:label "Keyword"@en ;
-  rdfs:comment """The list of keywords describing the asset. Values of the `stKeyword` property have been applied by a human reviewer.""" ;
-  rdfs:subClassOf rdfs:Resource .
+# core:stKeyword a rdfs:Class ;
+#   rdfs:label "Keyword"@en ;
+#   rdfs:comment """The list of keywords describing the asset. Values of the `stKeyword` property have been applied by a human reviewer.""" ;
+#   rdfs:subClassOf rdfs:Resource .
 
-core:value a rdf:Property ;
-  rdfs:label "value"@en ;
-  rdfs:range xsd:string ;
-  rdfs:domain core:stKeyword ;
-  rdfs:comment """The keyword itself. A keyword can be considered like a tag, i.e. a short description of the content of the asset.""" ;
-  meta:mandatory true ;
-  meta:jsonName "value" .
+# core:value a rdf:Property ;
+#   rdfs:label "value"@en ;
+#   rdfs:range xsd:string ;
+#   rdfs:domain core:stKeyword ;
+#   rdfs:comment """The keyword itself. A keyword can be considered like a tag, i.e. a short description of the content of the asset.""" ;
+#   meta:mandatory true ;
+#   meta:jsonName "value" .
 
-core:localecode a rdf:Property ;
-  rdfs:label "locale Code"@en ;
-  rdfs:range xsd:string ;
-  rdfs:domain core:stKeyword ;
-  rdfs:comment """Language of the keyword. The locale code should follow RFC BCP 47""" ;
-  rdfs:seeAlso <https://tools.ietf.org/html/bcp47> ;
-  skos:example "en-US" ;
-  meta:mandatory false ;
-  meta:jsonName "locale_code" .
+# core:localecode a rdf:Property ;
+#   rdfs:label "locale Code"@en ;
+#   rdfs:range xsd:string ;
+#   rdfs:domain core:stKeyword ;
+#   rdfs:comment """Language of the keyword. The locale code should follow RFC BCP 47""" ;
+#   rdfs:seeAlso <https://tools.ietf.org/html/bcp47> ;
+#   skos:example "en-US" ;
+#   meta:mandatory false ;
+#   meta:jsonName "locale_code" .
 
-core:importance a rdf:Property ;
-  rdfs:label "importance"@en ;
-  rdfs:range xsd:float ;
-  rdfs:domain core:stKeyword ;
-  rdfs:comment """The importance of the keyword on a scale from zero to one. If required repository will infer it as per its policies and add it for the keywords""" ;
-  meta:mandatory false ;
-  meta:jsonName "importance" ;
-  owl:withRestrictions (
-    [
-      xsd:minInclusive +0.0
-    ] [
-       xsd:maxInclusive +1.0
-     ]
-   ) .
+# core:importance a rdf:Property ;
+#   rdfs:label "importance"@en ;
+#   rdfs:range xsd:float ;
+#   rdfs:domain core:stKeyword ;
+#   rdfs:comment """The importance of the keyword on a scale from zero to one. If required repository will infer it as per its policies and add it for the keywords""" ;
+#   meta:mandatory false ;
+#   meta:jsonName "importance" ;
+#   owl:withRestrictions (
+#     [
+#       xsd:minInclusive +0.0
+#     ] [
+#        xsd:maxInclusive +1.0
+#      ]
+#    ) .
 
 # ## structure of machine keywords property
 

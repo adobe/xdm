@@ -1338,31 +1338,31 @@ cc:attributionName a core:BaseProperty, owl:FunctionalProperty ;
   skos:example "" ;
   rdfs:domain core:Asset .
 
-xmpMM:ManageUI a core:BaseProperty, owl:FunctionalProperty ;
-  # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
-  rdfs:label "Manage UI"@en ;
-  rdfs:comment """A URI that can be used to access information about the managed resource through a web browser.""" ;
-  rdfs:range core:URI ;
-  meta:mandatory false ;
-  meta:userEditable true ;
-  meta:immutable false ;
-  meta:jsonName "manage_ui" ;
-  skos:note "" ;
-  skos:example "" ;
-  rdfs:domain core:Asset .
+# xmpMM:ManageUI a core:BaseProperty, owl:FunctionalProperty ;
+#   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
+#   rdfs:label "Manage UI"@en ;
+#   rdfs:comment """A URI that can be used to access information about the managed resource through a web browser.""" ;
+#   rdfs:range core:URI ;
+#   meta:mandatory false ;
+#   meta:userEditable true ;
+#   meta:immutable false ;
+#   meta:jsonName "manage_ui" ;
+#   skos:note "" ;
+#   skos:example "" ;
+#   rdfs:domain core:Asset .
 
-xmpMM:ManageTo a core:BaseProperty, owl:FunctionalProperty ;
-  # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
-  rdfs:label "Manage To"@en ;
-  rdfs:comment """A URI identifying the managed resource to the asset management system; the presence of this property is the formal indication that this resource is managed. The form and content of this URI is private to the asset management system.""" ;
-  rdfs:range core:URI ;
-  meta:mandatory false ;
-  meta:userEditable true ;
-  meta:immutable false ;
-  meta:jsonName "manage_to" ;
-  skos:note "" ;
-  skos:example "" ;
-  rdfs:domain core:Asset .
+# xmpMM:ManageTo a core:BaseProperty, owl:FunctionalProperty ;
+#   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
+#   rdfs:label "Manage To"@en ;
+#   rdfs:comment """A URI identifying the managed resource to the asset management system; the presence of this property is the formal indication that this resource is managed. The form and content of this URI is private to the asset management system.""" ;
+#   rdfs:range core:URI ;
+#   meta:mandatory false ;
+#   meta:userEditable true ;
+#   meta:immutable false ;
+#   meta:jsonName "manage_to" ;
+#   skos:note "" ;
+#   skos:example "" ;
+#   rdfs:domain core:Asset .
 
 # xmpMM:History a core:BaseProperty, owl:FunctionalProperty ;
 #   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case

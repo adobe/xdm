@@ -130,11 +130,15 @@
           "description": "For licenses that require attribution, such as some Creative Commons licenses, the user to which a work is attributed. When publishing to Behance, this is taken from the user's Behance profile information."
         },
         "manage_ui": {
+          "title": "Manage UI",
+          "format": "uri",
           "type": "string",
           "description": "A URI that can be used to access information about the managed resource through a web browser."
         },
         "manage_to": {
+          "title": "Manage To",
           "type": "string",
+          "format": "uri",
           "description": "A URI identifying the managed resource to the asset management system; the presence of this property is the formal indication that this resource is managed. The form and content of this URI is private to the asset management system."
         },
         "history": {

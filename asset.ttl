@@ -1195,17 +1195,17 @@ core:Asset a rdfs:Class ;
 #   skos:example "" ;
 #   rdfs:domain core:Asset .
 
-core:versionID a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "Version ID"@en ;
-  rdfs:comment "The version ID of the asset. It will be generated both on explicit and implicit save or upload." ;
-  rdfs:range xsd:string ;
-  meta:mandatory true ;
-  meta:userEditable false ;
-  meta:immutable true ;
-  meta:jsonName "version_id" ;
-  skos:note "" ;
-  skos:example "" ;
-  rdfs:domain core:Asset .
+# core:versionID a core:BaseProperty, owl:FunctionalProperty ;
+#   rdfs:label "Version ID"@en ;
+#   rdfs:comment "The version ID of the asset. It will be generated both on explicit and implicit save or upload." ;
+#   rdfs:range xsd:string ;
+#   meta:mandatory true ;
+#   meta:userEditable false ;
+#   meta:immutable true ;
+#   meta:jsonName "version_id" ;
+#   skos:note "" ;
+#   skos:example "" ;
+#   rdfs:domain core:Asset .
 
 # core:milestone a core:BaseProperty, owl:FunctionalProperty ;
 #   rdfs:label "Milestone"@en ;

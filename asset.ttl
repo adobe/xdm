@@ -1083,24 +1083,24 @@ core:aliasIDs a core:BaseProperty, owl:FunctionalProperty ;
 
 #### Property section: Asset Creation
 
-xmp:CreateDate a core:BaseProperty, owl:FunctionalProperty ;
-  # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
-  rdfs:isDefinedBy <http://wwwimages.adobe.com/content/dam/Adobe/en/devnet/xmp/pdfs/XMP%20SDK%20Release%20cc-2014-12/XMPSpecificationPart1.pdf> ;
-  rdfs:label "Date Created"@en ;
-  rdfs:comment "The date and time the resource was created. It will be taken from within the asset." ;
-  rdfs:range xsd:dateTime ;
-  meta:mandatory true ;
-  meta:userEditable true ;
-  meta:immutable false ;
-  meta:jsonName "create_date" ;
-  skos:note """YYYY
-YYYY-MM
-YYYY-MM-DD
-YYYY-MM-DDThh:mmTZD
-YYYY-MM-DDThh:mm:ssTZD
-YYYY-MM-DDThh:mm:ss.sTZD""" ;
-  skos:example "1600" ;
-  rdfs:domain core:Asset .
+# xmp:CreateDate a core:BaseProperty, owl:FunctionalProperty ;
+#   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
+#   rdfs:isDefinedBy <http://wwwimages.adobe.com/content/dam/Adobe/en/devnet/xmp/pdfs/XMP%20SDK%20Release%20cc-2014-12/XMPSpecificationPart1.pdf> ;
+#   rdfs:label "Date Created"@en ;
+#   rdfs:comment "The date and time the resource was created. It will be taken from within the asset." ;
+#   rdfs:range xsd:dateTime ;
+#   meta:mandatory true ;
+#   meta:userEditable true ;
+#   meta:immutable false ;
+#   meta:jsonName "create_date" ;
+#   skos:note """YYYY
+# YYYY-MM
+# YYYY-MM-DD
+# YYYY-MM-DDThh:mmTZD
+# YYYY-MM-DDThh:mm:ssTZD
+# YYYY-MM-DDThh:mm:ss.sTZD""" ;
+#   skos:example "1600" ;
+#   rdfs:domain core:Asset .
 
 core:repositoryCreatedDate a core:BaseProperty, owl:FunctionalProperty ;
   rdfs:label "Date created in repository"@en ;

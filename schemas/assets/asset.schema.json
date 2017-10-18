@@ -38,6 +38,7 @@
           "description": "List of IDs under which external systems track the asset. Example of external systems : google, facebook etc."
         },
         "create_date": {
+          "title": "Date Created",
           "type": "string",
           "format": "date-time",
           "description": "The date and time the resource was created. It will be taken from within the asset."

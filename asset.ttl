@@ -1479,17 +1479,17 @@ core:size a core:BaseProperty, owl:FunctionalProperty ;
   skos:example "" ;
   rdfs:domain core:Asset .
 
-core:path a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "Path"@en ;
-  rdfs:comment """Shows the hierarchy of the asset. The path semantics should be same as that defined in https://tools.ietf.org/html/rfc3986#section-3.3. In case a repository is not path based then it can return the information which will help in browsing. It could be just an asset id, or something like {catalog}/{id} in case of OZ.""" ;
-  rdfs:range xsd:string ;
-  meta:mandatory true ;
-  meta:userEditable false ;
-  meta:immutable false ;
-  meta:jsonName "path" ;
-  skos:note "" ;
-  skos:example "" ;
-  rdfs:domain core:Asset .
+# core:path a core:BaseProperty, owl:FunctionalProperty ;
+#   rdfs:label "Path"@en ;
+#   rdfs:comment """Shows the hierarchy of the asset. The path semantics should be same as that defined in https://tools.ietf.org/html/rfc3986#section-3.3. In case a repository is not path based then it can return the information which will help in browsing. It could be just an asset id, or something like {catalog}/{id} in case of OZ.""" ;
+#   rdfs:range xsd:string ;
+#   meta:mandatory true ;
+#   meta:userEditable false ;
+#   meta:immutable false ;
+#   meta:jsonName "path" ;
+#   skos:note "" ;
+#   skos:example "" ;
+#   rdfs:domain core:Asset .
 
 # core:etag a core:BaseProperty, owl:FunctionalProperty ;
 #   rdfs:label "ETAG"@en ;

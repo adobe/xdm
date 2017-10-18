@@ -85,7 +85,7 @@
           "description": "Information about rights held in and over the resource.\nWe can live without mentioning locale if only one entry is there. Default locale is en_us.\nLocale codes should follow IETF BCP 47 standard."
         },
         "marked": {
-          "title": "Marked"
+          "title": "Marked",
           "type": "boolean",
           "description": "When true, indicates that this is a rights-managed resource. When false, indicates that this is a public-domain resource. Omit if the state is unknown."
         },

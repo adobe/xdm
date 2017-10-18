@@ -997,11 +997,11 @@ core:BaseProperty a rdfs:Class ;
 
 # schema definition vocabulary extensions
 
-meta:jsonName a rdf:Property ;
-  rdfs:label "JSON Name"@en ;
-  rdfs:comment "Name of the property in JSON serialization" ;
-  rdfs:domain core:BaseProperty ;
-  rdfs:range xsd:string .
+# meta:jsonName a rdf:Property ;
+#   rdfs:label "JSON Name"@en ;
+#   rdfs:comment "Name of the property in JSON serialization" ;
+#   rdfs:domain core:BaseProperty ;
+#   rdfs:range xsd:string .
 
 meta:immutable a rdf:Property ;
   rdfs:label "Immutable"@en ;
@@ -1024,10 +1024,10 @@ meta:mandatory a rdf:Property ;
 
 ### Asset class
 
-core:Asset a rdfs:Class ;
-  rdfs:label "Asset"@en ;
-  rdfs:comment "A class for Digital Assets" ;
-  rdfs:subClassOf core:BaseClass .
+# core:Asset a rdfs:Class ;
+#   rdfs:label "Asset"@en ;
+#   rdfs:comment "A class for Digital Assets" ;
+#   rdfs:subClassOf core:BaseClass .
 
 #### Property section: Asset Identity
 

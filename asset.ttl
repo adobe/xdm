@@ -145,12 +145,12 @@ xmp:Text a rdfs:Datatype ;
   owl:onDatatype xsd:string ;
   rdfs:comment """A possibly empty Unicode string""" .
 
-xmp:MIMEType a rdfs:Datatype ;
-  rdfs:label "MIME Type"@en ;
-  owl:onDatatype xmp:Text ;
-  rdfs:seeAlso <https://www.ietf.org/rfc/rfc2046.txt> ;
-  skos:example "image/png" ;
-  rdfs:comment """A simple text value denoting a digital file format as defined in IETF RFC 2046.""" .
+# xmp:MIMEType a rdfs:Datatype ;
+#   rdfs:label "MIME Type"@en ;
+#   owl:onDatatype xmp:Text ;
+#   rdfs:seeAlso <https://www.ietf.org/rfc/rfc2046.txt> ;
+#   skos:example "image/png" ;
+#   rdfs:comment """A simple text value denoting a digital file format as defined in IETF RFC 2046.""" .
 
 xmp:AgentName a rdfs:Datatype ;
   rdfs:label "Agent Name"@en ;
@@ -1442,17 +1442,17 @@ dc:description a core:BaseProperty, owl:FunctionalProperty ;
 #   skos:example "" ;
 #   rdfs:domain core:Asset .
 
-dc:format a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "Format"@en ;
-  rdfs:comment """The physical or digital manifestation of the resource. Typically, Format may include the media-type or dimensions of the resource. Examples of dimensions include size and duration. Format may be used to determine the software, hardware or other equipment needed to display or operate the resource. Recommended best practice is to select a value from a controlled vocabulary (for example, the list of Internet Media Types [http://www.iana.org/ assignments/media-types/] defining computer media formats).""" ;
-  rdfs:range xmp:MIMEType ;
-  meta:mandatory true ;
-  meta:userEditable false ;
-  meta:immutable false ;
-  meta:jsonName "type" ;
-  skos:note "XMP usage is a MIME type. Dimensions would be stored using a media-specific property, beyond the scope of this document." ;
-  skos:example """“type”:“application/vnd.adobe.photoshop”""" ;
-  rdfs:domain core:Asset .
+# dc:format a core:BaseProperty, owl:FunctionalProperty ;
+#   rdfs:label "Format"@en ;
+#   rdfs:comment """The physical or digital manifestation of the resource. Typically, Format may include the media-type or dimensions of the resource. Examples of dimensions include size and duration. Format may be used to determine the software, hardware or other equipment needed to display or operate the resource. Recommended best practice is to select a value from a controlled vocabulary (for example, the list of Internet Media Types [http://www.iana.org/ assignments/media-types/] defining computer media formats).""" ;
+#   rdfs:range xmp:MIMEType ;
+#   meta:mandatory true ;
+#   meta:userEditable false ;
+#   meta:immutable false ;
+#   meta:jsonName "type" ;
+#   skos:note "XMP usage is a MIME type. Dimensions would be stored using a media-specific property, beyond the scope of this document." ;
+#   skos:example """“type”:“application/vnd.adobe.photoshop”""" ;
+#   rdfs:domain core:Asset .
 
 # dc:language a core:BaseProperty, owl:FunctionalProperty ;
 #   rdfs:label "Language"@en ;

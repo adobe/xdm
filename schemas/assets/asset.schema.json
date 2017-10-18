@@ -222,6 +222,12 @@
           },
           "description": "An account of the content of the resource. Description may include but is not limited to: an abstract, table of contents, reference to a graphical representation of content or a free-text account of the content."
         },
+        "format": {
+          "name": "Format",
+          "pattern": "\\w+\\/[-.\\w]+(?:\\+[-.\\w]+)?",
+          "meta:example": "application/vnd.adobe.photoshop",
+          "description": "The physical or digital manifestation of the resource. Typically, Format should include the media-type of the resource. Format may be used to determine the software, hardware or other equipment needed to display or operate the resource. Recommended best practice is to select a value from a controlled vocabulary (for example, the list of [Internet Media Types](http://www.iana.org/ assignments/media-types/) defining computer media formats)."
+        },
         "not_safe": {
           "name": "NSFW State",
           "description": "Indicates if the content is SFW (safe for work). Safe is value 0 or missing value. NSFW is value 1.",

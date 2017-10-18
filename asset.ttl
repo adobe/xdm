@@ -1718,18 +1718,18 @@ core:Image a rdfs:Class ;
 #   rdfs:domain core:Image .
 
 
-photoshop:ICCProfile a core:BaseProperty, owl:FunctionalProperty ;
-  # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
-  rdfs:label "ICC Profile"@en ;
-  rdfs:comment """The color profile, such as AppleRGB, AdobeRGB1998.""" ;
-  rdfs:range xmp:Text ;
-  meta:mandatory false ;
-  meta:userEditable false ;
-  meta:immutable false ;
-  meta:jsonName "icc_profile" ;
-  skos:note "" ;
-  skos:example "" ;
-  rdfs:domain core:Image .
+# photoshop:ICCProfile a core:BaseProperty, owl:FunctionalProperty ;
+#   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
+#   rdfs:label "ICC Profile"@en ;
+#   rdfs:comment """The color profile, such as AppleRGB, AdobeRGB1998.""" ;
+#   rdfs:range xmp:Text ;
+#   meta:mandatory false ;
+#   meta:userEditable false ;
+#   meta:immutable false ;
+#   meta:jsonName "icc_profile" ;
+#   skos:note "" ;
+#   skos:example "" ;
+#   rdfs:domain core:Image .
 
 # core:CCDoc class for Creative Cloud documents
 

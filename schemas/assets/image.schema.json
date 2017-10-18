@@ -90,7 +90,25 @@
         },
         "icc_profile": {
           "type": "string",
-          "description": "The color profile, such as AppleRGB, AdobeRGB1998."
+          "title": "ICC Profile",
+          "description": "The [ICC color profile](http://www.color.org/iccprofile.xalter), such as AppleRGB, AdobeRGB1998.",
+          "meta:enum": [
+            "ColorMatchRGB",
+            "AppleRGB",
+            "AdobeRGB1998",
+            "JapanColor2002Newspaper",
+            "USSheetfedUncoated",
+            "JapanColor2001Uncoated",
+            "CoatedFOGRA27",
+            "UncoatedFOGRA29",
+            "USWebCoatedSWOP",
+            "JapanColor2001Coated",
+            "JapanWebCoated",
+            "WebCoatedFOGRA28",
+            "USWebUncoated",
+            "CoatedFOGRA39",
+            "USSheetfedCoated"
+          ]
         }
       }
     }

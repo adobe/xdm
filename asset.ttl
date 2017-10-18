@@ -676,37 +676,37 @@ stLayer:type a rdf:Property ;
 
 ## structure for defining LayerGroup
 
-core:LayerGroup a rdfs:Class ;
-  rdfs:label "Layer Group"@en ;
-  rdfs:comment """Layer group helps in preserving the hierarchy of layers in a document. User can apply common style to the group instead of working at individual layers. Layer Group can contain layers/layer groups. A structure denoting layer group information in the document.""" ;
-  rdfs:subClassOf rdfs:Resource .
+# core:LayerGroup a rdfs:Class ;
+#   rdfs:label "Layer Group"@en ;
+#   rdfs:comment """Layer group helps in preserving the hierarchy of layers in a document. User can apply common style to the group instead of working at individual layers. Layer Group can contain layers/layer groups. A structure denoting layer group information in the document.""" ;
+#   rdfs:subClassOf rdfs:Resource .
   
-stLayerGroup:type a rdf:Property ;
-  rdfs:range xsd:string ;
-  rdfs:domain core:LayerGroup ;
-  rdfs:comment """Closed choice of ("Layer", "LayerGroup") - will have "LayerGroup" if stLayerGroup structure is active.""";
-  meta:mandatory true ;
-  meta:userEditable false ;
-  meta:immutable true ;
-  meta:jsonName "type" .
+# stLayerGroup:type a rdf:Property ;
+#   rdfs:range xsd:string ;
+#   rdfs:domain core:LayerGroup ;
+#   rdfs:comment """Closed choice of ("Layer", "LayerGroup") - will have "LayerGroup" if stLayerGroup structure is active.""";
+#   meta:mandatory true ;
+#   meta:userEditable false ;
+#   meta:immutable true ;
+#   meta:jsonName "type" .
 
-stLayerGroup:name a rdf:Property ;
-  rdfs:range xsd:string ;
-  rdfs:domain core:LayerGroup ;
-  rdfs:comment """Name of LayerGroup. This would be visible to the user and users can specify name that can help them uniquely identfiy different Layer Groups""" ; 
-  meta:mandatory false ;
-  meta:userEditable true ;
-  meta:immutable false ;
-  meta:jsonName "name" .
+# stLayerGroup:name a rdf:Property ;
+#   rdfs:range xsd:string ;
+#   rdfs:domain core:LayerGroup ;
+#   rdfs:comment """Name of LayerGroup. This would be visible to the user and users can specify name that can help them uniquely identfiy different Layer Groups""" ; 
+#   meta:mandatory false ;
+#   meta:userEditable true ;
+#   meta:immutable false ;
+#   meta:jsonName "name" .
 
-stLayerGroup:layers a rdf:Property ;
-  rdfs:range xsd:string ;
-  rdfs:domain core:LayerGroup ;
-  rdfs:comment """List of layers/layer groups in a layer group""" ;
-  meta:mandatory false ;
-  meta:userEditable true ;
-  meta:immutable false ;
-  meta:jsonName "layers" .
+# stLayerGroup:layers a rdf:Property ;
+#   rdfs:range xsd:string ;
+#   rdfs:domain core:LayerGroup ;
+#   rdfs:comment """List of layers/layer groups in a layer group""" ;
+#   meta:mandatory false ;
+#   meta:userEditable true ;
+#   meta:immutable false ;
+#   meta:jsonName "layers" .
 
 # ## structure for defining Artboards
 

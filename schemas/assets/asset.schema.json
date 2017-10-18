@@ -321,8 +321,7 @@
           "properties": {}
         },
         "layers": {
-          "$schema": "http://json-schema.org/schema#",
-          "properties": {}
+          "$ref": "https://ns.adobe.com/xdm/assets/layer-group#/definitions/layer-group"
         },
         "artboards": {
           "title": "Artboards",

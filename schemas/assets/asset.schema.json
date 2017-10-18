@@ -138,37 +138,11 @@
         },
         "history": {
           "type": "array",
+          "title": "History",
           "items": {
-            "$schema": "http://json-schema.org/schema#",
-            "properties": {
-              "http://ns.adobe.com/xap/1.0/sType/ResourceEvent#action": {
-                "type": "string",
-                "description": "The action that occurred. Defined values are: converted,copied, created, cropped, edited, filtered, formatted,version_updated, printed, published, managed, produced,resized, saved.New values should be verbs in the past tense."
-              },
-              "http://ns.adobe.com/xap/1.0/sType/ResourceEvent#changed": {
-                "type": "string",
-                "description": "A semicolon-delimited list of the parts of the resource that were changed since the previous event history.If not present, presumed to be undefined. When tracking changes and the scope of the changed components is unknown, it should be assumed that anything might have changed."
-              },
-              "http://ns.adobe.com/xap/1.0/sType/ResourceEvent#instanceID": {
-                "type": "string",
-                "description": "The value of the xmpMM:InstanceID property for the modified(output) resource."
-              },
-              "http://ns.adobe.com/xap/1.0/sType/ResourceEvent#parameters": {
-                "type": "string",
-                "description": "Additional description of the action."
-              },
-              "http://ns.adobe.com/xap/1.0/sType/ResourceEvent#softwareAgent": {
-                "type": "string",
-                "description": "The software agent that performed the action."
-              },
-              "http://ns.adobe.com/xap/1.0/sType/ResourceEvent#when": {
-                "type": "string",
-                "format": "date-time",
-                "description": "Timestamp of when the action occurred.For events that create or write to a file, this should be the approximate modification time of the file."
-              }
-            }
+            "$ref": "https://ns.adobe.com/xdm/assets/resource-event#/definitions/resource-event"
           },
-          "description": "High-level actions that resulted in this resource. It is intended to give human readers a description of the steps taken to make the changes from the previous version to this one. The list should be at an abstract level; it is not intended to be an exhaustive keystroke or other detailed history. The description should be sufficient for metadata management, as well as for workflow enhancement."
+          "description": "High-level actions that resulted in the creation of this asset. It is intended to give human readers a description of the steps taken to make the changes from the previous version to this one. The list should be at an abstract level; it is not intended to be an exhaustive keystroke or other detailed history. The description should be sufficient for metadata management, as well as for workflow enhancement."
         },
         "copyright_owner_id": {
           "title": "Copyright Owner ID",

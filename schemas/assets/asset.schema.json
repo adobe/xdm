@@ -9,6 +9,7 @@
         "asset_id": {
           "type": "string",
           "meta:immutable": true,
+          "meta:usereditable": false,
           "description": "A unique identifier given to every addressable asset in a given repository.\n\nThe format is a [GUID-based URN](https://www.ietf.org/rfc/rfc4122.txt). The pattern to generate an Asset ID is ```urn:aaid:{system}:{id} - {format}:{namespace}:{system}:{id}```",
           "meta:example": "urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e",
           "pattern": "^urn:aaid:[A-Za-z0-9]+:[A-Za-z0-9]+:[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}$"
@@ -28,6 +29,7 @@
         },
         "alias_ids": {
           "type": "array",
+          "meta:usereditable": false,
           "title": "Alias IDs",
           "items": {
             "properties": {
@@ -62,11 +64,13 @@
         "creator_tool": {
           "title": "Creator Tool",
           "type": "string",
+          "meta:usereditable": false,
           "description": "Name of the application which authored the asset. It takes the value present in `xmp:CreatorTool` property in XMP.\nIt is recommended that the value use this format convention:\nOrganization Software_name Version (token;token;...)\n- Organization: The name of the company or organization providing the software, no SPACEs.\n- Software_name: The full name of the software, SPACEs allowed.\n- version: The version of the software, no SPACEs.\n- tokens: Can be used to identify an operating system, plug-in, or more detailed version information."
         },
         "modify_date": {
           "title": "Mofification Date",
           "type": "string",
+          "meta:usereditable": false,
           "format": "date-time",
           "description": "The date and time when asset was last modified. The Date Time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\". Opposed to `repository_last_modified_date`, this is the time when the asset was last modified locally, with or without knowledge of the repository."
         },
@@ -156,6 +160,7 @@
           "description": "A URI identifying the managed resource to the asset management system; the presence of this property is the formal indication that this resource is managed. The form and content of this URI is private to the asset management system."
         },
         "history": {
+          "meta:usereditable": false,
           "type": "array",
           "title": "History",
           "items": {
@@ -180,6 +185,7 @@
           "description": "An account of the content of the resource. Description may include but is not limited to: an abstract, table of contents, reference to a graphical representation of content or a free-text account of the content."
         },
         "format": {
+          "meta:usereditable": false,
           "title":"Format",
           "pattern": "\\w+\\/[-.\\w]+(?:\\+[-.\\w]+)?",
           "meta:example": "application/vnd.adobe.photoshop",
@@ -196,6 +202,7 @@
           }
         },
         "language": {
+          "meta:usereditable": false,
           "type": "array",
           "title":"Language",
           "items": {
@@ -206,32 +213,38 @@
           "meta:example": "[\n  \"pt-BR\",\n  \"es-ES\"]"
         },
         "size": {
+          "meta:usereditable": false,
           "type": "integer",
           "title":"Size",
           "description": "Size of the asset in bytes"
         },
         "path": {
+          "meta:usereditable": false,
           "type": "string",
           "title":"Path",
           "description": "Shows the hierarchy of the asset. The path semantics should be same as that defined in https://tools.ietf.org/html/rfc3986#section-3.3. In case a repository is not path based then it can return the information which will help in browsing. It could be just an asset id, or something like {catalog}/{id} in case of OZ."
         },
         "etag": {
+          "meta:usereditable": false,
           "type": "string",
           "title":"ETag",
           "description": "An  ETag is an HTTP response header returned by an HTTP/1.1 compliant web server used to determine change in content of a resource at a given URL. "
         },
         "n_pages": {
+          "meta:usereditable": false,
           "title":"Number of pages",
           "type": "integer",
           "minimum": 0,
           "description": "The number of pages in the document (including any in contained documents)."
         },
         "gps_altitude": {
+          "meta:usereditable": false,
           "title":"GPS Altitude",
           "description": "GPS tag 6, 0x06. Indicates altitude in meters.",
           "type": "number"
         },
         "gps_altitude_ref": {
+          "meta:usereditable": false,
           "type": "integer",
           "title":"GPS Altitude Reference",
           "enum":[
@@ -245,18 +258,21 @@
           "description": "GPS tag 5, 0x5. Indicates whether the altitude is above or below sea level:\n0 = Above sea level\n1 = Below sea level"
         },
         "gps_latitude": {
+          "meta:usereditable": false,
           "type": "string",
           "title":"GPS Latitude",
           "pattern": "^[\\d]{1,3},[\\d]{1,2}(,[\\d]{1,2}|.[\\d]+)[NS]$",
           "description": "GPS tag 2, 0x02 (position) and 1, 0x01 (North/South). Indicates latitude. A Text value in the form “DDD,MM,SSk” or “DDD,MM.mmk”, where:\n* DDD is a number of degrees\n* MM is a number of minutes\n* SS is a number of seconds\n* mm is a fraction of minutes\n* k is a single character N or S, indicating a direction (north, south)\nLeading zeros are not necessary for the for DDD, MM, and SS values. The DDD,MM.mmk form should be used when any of the native Exif component rational values has a denominator other than 1. There can be any number of fractional digits."
         },
         "gps_longitude": {
+          "meta:usereditable": false,
           "type": "string",
           "title":"GPS Longitude",
           "pattern": "^[\\d]{1,3},[\\d]{1,2}(,[\\d]{1,2}|.[\\d]+)[EW]$",
           "description": "GPS tag 4, 0x04 (position) and 3, 0x03 (East/West). Indicates longitude. A Text value in the form “DDD,MM,SSk” or “DDD,MM.mmk”, where:\n* DDD is a number of degrees\n* MM is a number of minutes\n* SS is a number of seconds\n* mm is a fraction of minutes\n* k is a single character E or W, indicating a direction (east, west)\nLeading zeros are not necessary for the for DDD, MM, and SS values. The DDD,MM.mmk form should be used when any of the native Exif component rational values has a denominator other than 1. There can be any number of fractional digits."
         },
         "rating": {
+          "meta:usereditable": false,
           "type": "integer",
           "title":"Rating",
           "enum": [
@@ -324,6 +340,7 @@
           "description": "The `keywords` property is used to track human-assigned descriptive phrases like keywords or tags of an asset. Rather than a plan list of tags, it is a structured set of keywords, where keywords can have an explicit importance ranking and a locale. This allows the management of multi-lingual keywords for a given asset. For machine-generated keywords, use the `machine_keywords` property. "
         },
         "machine_keywords": {
+          "meta:usereditable": false,
           "type": "array",
           "items": {
             "$schema": "http://json-schema.org/schema#",
@@ -353,6 +370,7 @@
         },
         "fonts": {
           "title":"Fonts",
+          "meta:usereditable": false,
           "description": "This is a list of fonts and typefaces that are used in the document. The order of fonts does not matter.",
           "type": "array",
           "items": {

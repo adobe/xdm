@@ -1003,18 +1003,18 @@ core:BaseProperty a rdfs:Class ;
 #   rdfs:domain core:BaseProperty ;
 #   rdfs:range xsd:string .
 
-meta:immutable a rdf:Property ;
-  rdfs:label "Immutable"@en ;
-  rdfs:comment "resource property cannot be modified after resource creation" ;
-  rdfs:domain core:BaseProperty ;
-  rdfs:range xsd:boolean .
+# meta:immutable a rdf:Property ;
+#   rdfs:label "Immutable"@en ;
+#   rdfs:comment "resource property cannot be modified after resource creation" ;
+#   rdfs:domain core:BaseProperty ;
+#   rdfs:range xsd:boolean .
 
-meta:userEditable a rdf:Property ;
-  rdfs:label "User Editable"@en ;
-  rdfs:comment "property can be modified by user" ;
-  rdfs:domain core:BaseProperty ;
-  skos:note "human users or user agents acting on behalf of them can edit this property." ;
-  rdfs:range xsd:boolean .
+# meta:userEditable a rdf:Property ;
+#   rdfs:label "User Editable"@en ;
+#   rdfs:comment "property can be modified by user" ;
+#   rdfs:domain core:BaseProperty ;
+#   skos:note "human users or user agents acting on behalf of them can edit this property." ;
+#   rdfs:range xsd:boolean .
 
 meta:mandatory a rdf:Property ;
   rdfs:label "Mandatory"@en ;

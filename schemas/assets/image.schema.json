@@ -30,13 +30,25 @@
       "properties": {
         "orientation": {
           "type":"integer",
+          "meta:usereditable": false,
           "title": "Orientation",
           "description": "The orientation of the image. Following values are permitted:\n- `1` = Horizontal (normal)\n- `2` = Mirror horizontal\n- `3` = Rotate 180 degrees\n- `4` = Mirror vertical\n- `5` = Mirror horizontal and rotate 270 degrees clockwise\n- `6` = Rotate 90 degrees clockwise\n- `7` = Mirror horizontal and rotate 90 degrees clockwise\n- `8` = Rotate 270 degrees clockwise",
           "minimum": 1,
-          "maximum": 8
+          "maximum": 8,
+          "meta:enum": {
+            "1": "Horizontal (normal)",
+            "2": "Mirror horizontal" ,
+            "3": "Rotate 180 degrees" ,
+            "4": "Mirror vertical" ,
+            "5": "Mirror horizontal and rotate 270 degrees clockwise" ,
+            "6": "Rotate 90 degrees clockwise" ,
+            "7": "Mirror horizontal and rotate 90 degrees clockwise" ,
+            "8": "Rotate 270 degrees clockwise"
+          }
         },
         "x_resolution": {
           "title": "X-Resolution",
+          "meta:usereditable": false,
           "description": "Horizontal resolution in pixels per `resolution_unit`.",
           "type":"object",
           "allOf": [
@@ -45,6 +57,7 @@
         },
         "y_resolution": {
           "title": "Y-Resolution",
+          "meta:usereditable": false,
           "description": "Vertical resolution in pixels per `resolution_unit`.",
           "type":"object",
           "allOf": [
@@ -52,6 +65,7 @@
           ]
         },
         "resolution_unit": {
+          "meta:usereditable": false,
           "title": "Resolution Unit",
           "description": "Unit used for `x_resolution` and `y_resolution`. Possible values are 2 (inches) and 3 (centimeters).",
           "type": "integer",
@@ -65,12 +79,14 @@
           }
         },
         "number_of_pixels": {
+          "meta:usereditable": false,
           "type": "integer",
           "name": "Number of Pixels",
           "minimum": 0,
           "description": "Total number of pixels"
         },
         "color_mode": {
+          "meta:usereditable": false,
           "title": "Color Mode",
           "description": "The color mode or image mode determines how colors combine based on the number of channels in a color model. Different color modes result in different levels of color detail and file size. For instance, use CMYK color mode for images in a full-color print brochure, and use RGB color mode for images in web or e-mail to reduce file size while maintaining color integrity.",
           "type": "integer",
@@ -89,6 +105,7 @@
           }
         },
         "icc_profile": {
+          "meta:usereditable": false,
           "type": "string",
           "title": "ICC Profile",
           "description": "The [ICC color profile](http://www.color.org/iccprofile.xalter), such as AppleRGB, AdobeRGB1998.",

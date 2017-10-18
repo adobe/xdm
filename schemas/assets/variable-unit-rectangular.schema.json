@@ -6,25 +6,35 @@
   "definitions": {
     "rectangular": {
       "properties": {
-        "originX": {
+        "origin_x": {
           "type": "integer",
+          "title": "Origin X",
+          "meta:usereditable": false,
           "description": "Origin X position - Base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards)"
         },
         "originY": {
           "type": "integer",
+          "title": "Origin Y",
+          "meta:usereditable": false,
           "description": "Origin Y position - Base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards)"
         },
         "width": {
+          "title": "Width",
+          "meta:usereditable": false,
           "type": "integer",
           "exclusiveMinimum": 0,
           "description": "Width of the artboard"
         },
         "height": {
+          "title": "Height",
+          "meta:usereditable": false,
           "type": "integer",
           "exclusiveMinimum": 0,
           "description": "Height of the artboard"
         },
         "unit": {
+          "title": "Unit",
+          "meta:usereditable": false,
           "type": "string",
           "description": "Unit used for artboard coordinates (originX, originY, width and height). For example: inch, mm, pixel, pica, point (default is pixels)"
         }

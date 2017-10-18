@@ -76,17 +76,10 @@
           "description": "A Web URL for a statement of the ownership and usage rights for this resource. This is a normal (non-URI) simple value because of historical usage."
         },
         "rights": {
+          "title": "Rights",
           "type": "array",
           "items": {
-            "$schema": "http://json-schema.org/schema#",
-            "properties": {
-              "http://ns.adobe.com/adobecloud/core/1.0/LanguageAlternativeText": {
-                "type": "string"
-              },
-              "http://ns.adobe.com/adobecloud/core/1.0/LanguageAlternativeLang": {
-                "type": "string"
-              }
-            }
+            "$ref": "https://ns.adobe.com/xdm/assets/language-alternative#/definitions/language-alternative"
           },
           "description": "Information about rights held in and over the resource.\nWe can live without mentioning locale if only one entry is there. Default locale is en_us.\nLocale codes should follow IETF BCP 47 standard."
         },
@@ -96,16 +89,9 @@
         },
         "usage_terms": {
           "type": "array",
+          "title": "Usage Terms",
           "items": {
-            "$schema": "http://json-schema.org/schema#",
-            "properties": {
-              "http://ns.adobe.com/adobecloud/core/1.0/LanguageAlternativeText": {
-                "type": "string"
-              },
-              "http://ns.adobe.com/adobecloud/core/1.0/LanguageAlternativeLang": {
-                "type": "string"
-              }
-            }
+            "$ref": "https://ns.adobe.com/xdm/assets/language-alternative#/definitions/language-alternative"
           },
           "description": "A collection of text instructions on how a resource can be legally used, given in a variety of languages."
         },
@@ -193,32 +179,18 @@
           "description": "Name of Copyright Owner."
         },
         "title": {
+          "title": "Title",
           "type": "array",
           "items": {
-            "$schema": "http://json-schema.org/schema#",
-            "properties": {
-              "http://ns.adobe.com/adobecloud/core/1.0/LanguageAlternativeText": {
-                "type": "string"
-              },
-              "http://ns.adobe.com/adobecloud/core/1.0/LanguageAlternativeLang": {
-                "type": "string"
-              }
-            }
+            "$ref": "https://ns.adobe.com/xdm/assets/language-alternative#/definitions/language-alternative"
           },
           "description": "A name given to the resource. Typically, a Title will be a name by which the resource is formally known."
         },
         "description": {
           "type": "array",
+          "title": "Description",
           "items": {
-            "$schema": "http://json-schema.org/schema#",
-            "properties": {
-              "http://ns.adobe.com/adobecloud/core/1.0/LanguageAlternativeText": {
-                "type": "string"
-              },
-              "http://ns.adobe.com/adobecloud/core/1.0/LanguageAlternativeLang": {
-                "type": "string"
-              }
-            }
+            "$ref": "https://ns.adobe.com/xdm/assets/language-alternative#/definitions/language-alternative"
           },
           "description": "An account of the content of the resource. Description may include but is not limited to: an abstract, table of contents, reference to a graphical representation of content or a free-text account of the content."
         },

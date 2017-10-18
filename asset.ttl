@@ -435,31 +435,31 @@ tiff:denominator a rdf:Property ;
 
 ## container type and auxiliary structure for defining LanguageAlternative as per XMP spec
 
-core:LanguageAlternativeDetail a rdfs:Class ;
-  rdfs:subClassOf rdfs:Resource .
+# core:LanguageAlternativeDetail a rdfs:Class ;
+#   rdfs:subClassOf rdfs:Resource .
 
-core:LanguageAlternativeText a rdf:Property ;
-  rdfs:range xsd:string ;
-  rdfs:domain core:LanguageAlternativeDetail .
+# core:LanguageAlternativeText a rdf:Property ;
+#   rdfs:range xsd:string ;
+#   rdfs:domain core:LanguageAlternativeDetail .
 
-core:LanguageAlternativeLang a rdf:Property ;
-  rdfs:range xml:lang ;
-  rdfs:domain core:LanguageAlternativeDetail .
+# core:LanguageAlternativeLang a rdf:Property ;
+#   rdfs:range xml:lang ;
+#   rdfs:domain core:LanguageAlternativeDetail .
 
-xmp:LanguageAlternative a rdfs:Class ;
-  rdfs:label "Locale Struct"@en ;
-  rdfs:comment "An alternative array of simple text items. Language alternatives facilitate the selection of a simple text item based on a desired language." ;
-  rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty rdf:first ;
-    owl:allValuesFrom core:LanguageAlternativeDetail ;
-  ] ;
-  rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty rdf:rest ;
-    owl:allValuesFrom xmp:LanguageAlternative ;
-  ] ;
-  rdfs:subClassOf rdf:List .
+# xmp:LanguageAlternative a rdfs:Class ;
+#   rdfs:label "Locale Struct"@en ;
+#   rdfs:comment "An alternative array of simple text items. Language alternatives facilitate the selection of a simple text item based on a desired language." ;
+#   rdfs:subClassOf [
+#     a owl:Restriction ;
+#     owl:onProperty rdf:first ;
+#     owl:allValuesFrom core:LanguageAlternativeDetail ;
+#   ] ;
+#   rdfs:subClassOf [
+#     a owl:Restriction ;
+#     owl:onProperty rdf:rest ;
+#     owl:allValuesFrom xmp:LanguageAlternative ;
+#   ] ;
+#   rdfs:subClassOf rdf:List .
 
 ## structure for defining ResourceEvent as per XMP spec
 
@@ -1237,19 +1237,19 @@ xmpRights:WebStatement a core:BaseProperty, owl:FunctionalProperty ;
   skos:example "http://creativecommons.org/licenses/by/4.0/" ;
   rdfs:domain core:Asset .
 
-dc:rights a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "Rights"@en ;
-  rdfs:comment """Information about rights held in and over the resource.
-We can live without mentioning locale if only one entry is there. Default locale is en_us.
-Locale codes should follow IETF BCP 47 standard.""" ;
-  rdfs:range xmp:LanguageAlternative ;
-  meta:mandatory false ;
-  meta:userEditable true ;
-  meta:immutable false ;
-  meta:jsonName "rights" ;
-  skos:note "XMP usage is a list of related resources." ;
-  skos:example "" ;
-  rdfs:domain core:Asset .
+# dc:rights a core:BaseProperty, owl:FunctionalProperty ;
+#   rdfs:label "Rights"@en ;
+#   rdfs:comment """Information about rights held in and over the resource.
+# We can live without mentioning locale if only one entry is there. Default locale is en_us.
+# Locale codes should follow IETF BCP 47 standard.""" ;
+#   rdfs:range xmp:LanguageAlternative ;
+#   meta:mandatory false ;
+#   meta:userEditable true ;
+#   meta:immutable false ;
+#   meta:jsonName "rights" ;
+#   skos:note "XMP usage is a list of related resources." ;
+#   skos:example "" ;
+#   rdfs:domain core:Asset .
 
 xmpRights:Marked a core:BaseProperty, owl:FunctionalProperty ;
   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
@@ -1264,18 +1264,18 @@ xmpRights:Marked a core:BaseProperty, owl:FunctionalProperty ;
   skos:example "" ;
   rdfs:domain core:Asset .
 
-xmpRights:UsageTerms a core:BaseProperty, owl:FunctionalProperty ;
-  # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
-  rdfs:label "Usage Terms"@en ;
-  rdfs:comment """A collection of text instructions on how a resource can be legally used, given in a variety of languages.""" ;
-  rdfs:range xmp:LanguageAlternative ;
-  meta:mandatory false ;
-  meta:userEditable true ;
-  meta:immutable false ;
-  meta:jsonName "usage_terms" ;
-  skos:note "" ;
-  skos:example "" ;
-  rdfs:domain core:Asset .
+# xmpRights:UsageTerms a core:BaseProperty, owl:FunctionalProperty ;
+#   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
+#   rdfs:label "Usage Terms"@en ;
+#   rdfs:comment """A collection of text instructions on how a resource can be legally used, given in a variety of languages.""" ;
+#   rdfs:range xmp:LanguageAlternative ;
+#   meta:mandatory false ;
+#   meta:userEditable true ;
+#   meta:immutable false ;
+#   meta:jsonName "usage_terms" ;
+#   skos:note "" ;
+#   skos:example "" ;
+#   rdfs:domain core:Asset .
 
 plus:CopyrightOwner a core:BaseProperty, owl:FunctionalProperty ;
   rdfs:label "Copyright Owner"@en ;
@@ -1406,29 +1406,29 @@ plus:CopyrightOwnerName a core:BaseProperty, owl:FunctionalProperty ;
 
 #### Property section: Asset Description
 
-dc:title a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "Title"@en ;
-  rdfs:comment """A name given to the resource. Typically, a Title will be a name by which the resource is formally known.""" ;
-  rdfs:range xmp:LanguageAlternative ;
-  meta:jsonName "title" ;
-  meta:mandatory false ;
-  meta:userEditable true ;
-  meta:immutable false ;
-  skos:note "XMP usage is a title or name, given in various languages" ;
-  skos:example "" ;
-  rdfs:domain core:Asset .
+# dc:title a core:BaseProperty, owl:FunctionalProperty ;
+#   rdfs:label "Title"@en ;
+#   rdfs:comment """A name given to the resource. Typically, a Title will be a name by which the resource is formally known.""" ;
+#   rdfs:range xmp:LanguageAlternative ;
+#   meta:jsonName "title" ;
+#   meta:mandatory false ;
+#   meta:userEditable true ;
+#   meta:immutable false ;
+#   skos:note "XMP usage is a title or name, given in various languages" ;
+#   skos:example "" ;
+#   rdfs:domain core:Asset .
 
-dc:description a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "Description"@en ;
-  rdfs:comment """An account of the content of the resource. Description may include but is not limited to: an abstract, table of contents, reference to a graphical representation of content or a free-text account of the content.""" ;
-  rdfs:range xmp:LanguageAlternative ;
-  meta:mandatory false ;
-  meta:userEditable true ;
-  meta:immutable false ;
-  meta:jsonName "description" ;
-  skos:note "XMP usage is a list of textual descriptions of the content of the resource, given in various languages." ;
-  skos:example "" ;
-  rdfs:domain core:Asset .
+# dc:description a core:BaseProperty, owl:FunctionalProperty ;
+#   rdfs:label "Description"@en ;
+#   rdfs:comment """An account of the content of the resource. Description may include but is not limited to: an abstract, table of contents, reference to a graphical representation of content or a free-text account of the content.""" ;
+#   rdfs:range xmp:LanguageAlternative ;
+#   meta:mandatory false ;
+#   meta:userEditable true ;
+#   meta:immutable false ;
+#   meta:jsonName "description" ;
+#   skos:note "XMP usage is a list of textual descriptions of the content of the resource, given in various languages." ;
+#   skos:example "" ;
+#   rdfs:domain core:Asset .
 
 # core:notSafe a core:BaseProperty, owl:FunctionalProperty ;
 #   rdfs:label "NSFW state"@en ;

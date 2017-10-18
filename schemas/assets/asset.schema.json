@@ -119,6 +119,8 @@
         },
         "license": {
           "type": "string",
+          "title": "License",
+          "format": "uri",
           "description": "A license is a set of requests/permissions to users of a Work, e.g. a copyright license, the public domain, information for distributors."
         },
         "attribution_url": {

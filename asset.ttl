@@ -1289,30 +1289,30 @@ plus:CopyrightOwner a core:BaseProperty, owl:FunctionalProperty ;
   skos:example "" ;
   rdfs:domain core:Asset .
 
-photoshop:Credit a core:BaseProperty, owl:FunctionalProperty ;
-  # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
-  rdfs:label "Credit"@en ;
-  rdfs:comment """Who should be credited when the asset is published.""" ;
-  rdfs:range xsd:string ;
-  meta:mandatory false ;
-  meta:userEditable true ;
-  meta:immutable false ;
-  meta:jsonName "credit" ;
-  skos:note "" ;
-  skos:example "" ;
-  rdfs:domain core:Asset .
+# photoshop:Credit a core:BaseProperty, owl:FunctionalProperty ;
+#   # XMP uses inconsistent naming conventions/cases: by convention property names should be camel case and start with lower case
+#   rdfs:label "Credit"@en ;
+#   rdfs:comment """Who should be credited when the asset is published.""" ;
+#   rdfs:range xsd:string ;
+#   meta:mandatory false ;
+#   meta:userEditable true ;
+#   meta:immutable false ;
+#   meta:jsonName "credit" ;
+#   skos:note "" ;
+#   skos:example "" ;
+#   rdfs:domain core:Asset .
 
-cc:license a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "License"@en ;
-  rdfs:comment """A license is a set of requests/permissions to users of a Work, e.g. a copyright license, the public domain, information for distributors.""" ;
-  rdfs:range core:URI ;
-  meta:mandatory false ;
-  meta:userEditable true ;
-  meta:immutable false ;
-  meta:jsonName "license" ;
-  skos:note "" ;
-  skos:example "" ;
-  rdfs:domain core:Asset .
+# cc:license a core:BaseProperty, owl:FunctionalProperty ;
+#   rdfs:label "License"@en ;
+#   rdfs:comment """A license is a set of requests/permissions to users of a Work, e.g. a copyright license, the public domain, information for distributors.""" ;
+#   rdfs:range core:URI ;
+#   meta:mandatory false ;
+#   meta:userEditable true ;
+#   meta:immutable false ;
+#   meta:jsonName "license" ;
+#   skos:note "" ;
+#   skos:example "" ;
+#   rdfs:domain core:Asset .
 
 # cc:attributionURL a core:BaseProperty, owl:FunctionalProperty ;
 #   rdfs:label "Attribution URL"@en ;

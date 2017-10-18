@@ -114,6 +114,7 @@
           "description": "Owner or owners of the copyright in the licensed asset."
         },
         "credit": {
+          "title": "Credit",
           "type": "string",
           "description": "Who should be credited when the asset is published."
         },

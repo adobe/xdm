@@ -235,6 +235,7 @@
         },
         "size": {
           "type": "integer",
+          "name": "Size",
           "description": "Size of the asset in bytes"
         },
         "path": {

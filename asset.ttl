@@ -1467,17 +1467,17 @@ dc:language a core:BaseProperty, owl:FunctionalProperty ;
   skos:example "pt-BR" ;
   rdfs:domain core:Asset .
 
-core:size a core:BaseProperty, owl:FunctionalProperty ;
-  rdfs:label "Size"@en ;
-  rdfs:comment """Size of the asset in bytes""" ;
-  rdfs:range xsd:integer ;
-  meta:mandatory true ;
-  meta:userEditable false ;
-  meta:immutable false ;
-  meta:jsonName "size" ;
-  skos:note "" ;
-  skos:example "" ;
-  rdfs:domain core:Asset .
+# core:size a core:BaseProperty, owl:FunctionalProperty ;
+#   rdfs:label "Size"@en ;
+#   rdfs:comment """Size of the asset in bytes""" ;
+#   rdfs:range xsd:integer ;
+#   meta:mandatory true ;
+#   meta:userEditable false ;
+#   meta:immutable false ;
+#   meta:jsonName "size" ;
+#   skos:note "" ;
+#   skos:example "" ;
+#   rdfs:domain core:Asset .
 
 # core:path a core:BaseProperty, owl:FunctionalProperty ;
 #   rdfs:label "Path"@en ;

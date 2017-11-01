@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://ns.adobe.com/xdm/assets/artboard",
+  "title": "Artboard",
+  "description":"",
+  "definitions": {
+    "artboard": {
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Name of the artboard. This would be visible to the user and users can specify names that can help them uniquely identfiy different Artboards."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {"$ref":"#/definitions/artboard"},
+    {"$ref":"https://ns.adobe.com/xdm/assets/variable-unit-rectangular#/definitions/rectangular"}
+  ]
+}

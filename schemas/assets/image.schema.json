@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/schema#",
   "$id": "https://ns.adobe.com/xdm/assets/image",
   "title": "Image",
-  "description": "The Image class is for raster image assets, e.g. JPEG, PNG, etc.",
+  "description": "The Image class is for raster and vector image assets, including JPEG, PNG, SVG files",
   "definitions": {
     "rational": {
       "$id": "https://ns.adobe.com/xdm/assets/image/rational",
@@ -30,13 +30,25 @@
       "properties": {
         "orientation": {
           "type":"integer",
+          "meta:usereditable": false,
           "title": "Orientation",
           "description": "The orientation of the image. Following values are permitted:\n- `1` = Horizontal (normal)\n- `2` = Mirror horizontal\n- `3` = Rotate 180 degrees\n- `4` = Mirror vertical\n- `5` = Mirror horizontal and rotate 270 degrees clockwise\n- `6` = Rotate 90 degrees clockwise\n- `7` = Mirror horizontal and rotate 90 degrees clockwise\n- `8` = Rotate 270 degrees clockwise",
           "minimum": 1,
-          "maximum": 8
+          "maximum": 8,
+          "meta:enum": {
+            "1": "Horizontal (normal)",
+            "2": "Mirror horizontal" ,
+            "3": "Rotate 180 degrees" ,
+            "4": "Mirror vertical" ,
+            "5": "Mirror horizontal and rotate 270 degrees clockwise" ,
+            "6": "Rotate 90 degrees clockwise" ,
+            "7": "Mirror horizontal and rotate 90 degrees clockwise" ,
+            "8": "Rotate 270 degrees clockwise"
+          }
         },
         "x_resolution": {
           "title": "X-Resolution",
+          "meta:usereditable": false,
           "description": "Horizontal resolution in pixels per `resolution_unit`.",
           "type":"object",
           "allOf": [
@@ -45,6 +57,7 @@
         },
         "y_resolution": {
           "title": "Y-Resolution",
+          "meta:usereditable": false,
           "description": "Vertical resolution in pixels per `resolution_unit`.",
           "type":"object",
           "allOf": [
@@ -52,20 +65,67 @@
           ]
         },
         "resolution_unit": {
-          "$schema": "http://json-schema.org/schema#",
-          "properties": {}
-        },
-        "numberOfPixels": {
+          "meta:usereditable": false,
+          "title": "Resolution Unit",
+          "description": "Unit used for `x_resolution` and `y_resolution`. Possible values are 2 (inches) and 3 (centimeters).",
           "type": "integer",
+          "enum": [
+            2,
+            3
+          ],
+          "meta:enum": {
+            "2": "inches",
+            "3": "centimeters"
+          }
+        },
+        "number_of_pixels": {
+          "meta:usereditable": false,
+          "type": "integer",
+          "name": "Number of Pixels",
+          "minimum": 0,
           "description": "Total number of pixels"
         },
         "color_mode": {
-          "$schema": "http://json-schema.org/schema#",
-          "properties": {}
+          "meta:usereditable": false,
+          "title": "Color Mode",
+          "description": "The color mode or image mode determines how colors combine based on the number of channels in a color model. Different color modes result in different levels of color detail and file size. For instance, use CMYK color mode for images in a full-color print brochure, and use RGB color mode for images in web or e-mail to reduce file size while maintaining color integrity.",
+          "type": "integer",
+          "enum": [
+            0, 1, 2, 3, 4, 7, 8, 9
+          ],
+          "meta:enum": {
+            "0": "Bitmap",
+            "1": "Gray scale",
+            "2": "Indexed color",
+            "3": "RGB color",
+            "4": "CMYK color",
+            "7": "Multi-channel",
+            "8": "Duotone",
+            "9": "LAB color"
+          }
         },
         "icc_profile": {
+          "meta:usereditable": false,
           "type": "string",
-          "description": "The color profile, such as AppleRGB, AdobeRGB1998."
+          "title": "ICC Profile",
+          "description": "The [ICC color profile](http://www.color.org/iccprofile.xalter), such as AppleRGB, AdobeRGB1998.",
+          "meta:enum": [
+            "ColorMatchRGB",
+            "AppleRGB",
+            "AdobeRGB1998",
+            "JapanColor2002Newspaper",
+            "USSheetfedUncoated",
+            "JapanColor2001Uncoated",
+            "CoatedFOGRA27",
+            "UncoatedFOGRA29",
+            "USWebCoatedSWOP",
+            "JapanColor2001Coated",
+            "JapanWebCoated",
+            "WebCoatedFOGRA28",
+            "USWebUncoated",
+            "CoatedFOGRA39",
+            "USSheetfedCoated"
+          ]
         }
       }
     }

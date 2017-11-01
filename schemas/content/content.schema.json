@@ -14,25 +14,30 @@
           "type": "string",
           "format": "date-time",
           "meta:immutable": true,
+          "meta:usereditable": false,
           "description": "The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\"."
         },
         "repository_created_by": {
           "type": "string",
           "meta:immutable": true,
+          "meta:usereditable": false,
           "description": "ID of the user who initiated the action that caused the resource to be created in the repository."
         },
         "repository_last_modified_date": {
           "type": "string",
           "format": "date-time",
+          "meta:usereditable": false,
           "description": "The server date and time when the resource was most recently modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\"."
         },
         "repository_last_modified_by": {
           "type": "string",
+          "meta:usereditable": false,
           "description": "ID of the user who initiated the action that most recently caused the resource to be modified in the repository."
         },
         "version_id": {
           "type": "string",
           "meta:immutable": true,
+          "meta:usereditable": false,
           "description": "The version ID of the piece of content. It will be generated both on explicit and implicit save or upload."
         }
       }

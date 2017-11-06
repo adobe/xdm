@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://ns.adobe.com/xdm/content/page-component",
+  "type": "object",
+  "title": "Page Component",
+  "description": "",
+  "definitions":{
+    "component": {
+      "properties": {
+          "type": {
+              "type": "string",
+              "format": "uri-reference",
+              "description": "Type of the component. Acts as processing hint for the client."
+          }
+      }
+    }
+  },
+  "allOf": [
+    {"$ref":"#/definitions/component"},
+    {"$ref": "https://ns.adobe.com/xdm/content/componentized-page#/definitions/residuals"}
+  ]
+}

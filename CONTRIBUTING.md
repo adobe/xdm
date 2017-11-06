@@ -12,9 +12,12 @@ All contributions should be discussed on the Mailing List first. Send a mail to 
 
 ## How to Contribute
 
-1. Fork the repository
-2. Create a pull request
-3. Submit the pull request
+1. Go to the [list of open issues](https://git.corp.adobe.com/AdobeCloudPlatform/xdm/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) and pick an issue you want to work on. If you don't see the appropriate issue, [create a new issue in GitHub](https://git.corp.adobe.com/AdobeCloudPlatform/xdm/issues/new)
+2. If you haven't done so yet, [fork the XDM repository into your private GitHub organization](https://git.corp.adobe.com/AdobeCloudPlatform/xdm/fork). If your fork exists, merge the latest updates from `AdobeCloudPlatform/xdm` into `yourname/xdm`, so that you don't start from an outdated code tree
+3. In `yourname/xdm` create a new branch from `master`. Your branch name should either refer the issue number like `bug-42` or `feature-23` or have a descriptive name like `fix-layer-group-references`
+4. Make add edits that apply to the given feature or bug against this new branch. Commit and push in frequent intervals
+5. If you are working on the branch for more than a day, make sure to occasionally (at least once per day) to merge the latest updates from `AdobeCloudPlatform/xdm#master` into your branch, so that you won't get surprised when it's time to merge the pull request. Resolve any conflicts to make life easier for the XDM editors
+6. Once you are done, create a pull request from your branch against `AdobeCloudPlatform/xdm#master`.
 
 Every pull request should specify:
 
@@ -29,9 +32,9 @@ For every update to the schema, make sure
 
 Furthermore, a pull request that modifies the schema must also include accompanying documentation. Pull requests with missing documentation will be rejected.
 
-Each commit message:
+Each commit message that is not part of a pull request:
 
-* Should contain the issue ID like `[ACP-123]` or `#42`
+* Should contain the issue ID like `#42`
 * Can contain the tag `[trivial]` for trivial changes that don't relate to an issue
 
 ## Design Guidelines

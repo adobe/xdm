@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$id": "https://ns.adobe.com/xdm/base/imsorg",
+    "title": "IMS Organization",
+    "description": "This model represents a IMS Organization. The IMS organization prinicpal is a organization account under Adobe's identity management system (IMS).",
+    "definitions": {
+        "imsorg": {
+            "type": "object",
+            "identityProvider": {
+                "type": "string",
+                "pattern": "^ims$"
+            },
+            "principalId": {
+                "description": "Principal id identifies an organization in IMS. It is a unique and persitent identifier which is allocated at the time the organization is created in the system. An organization's admin can find this value by logging into the [adminconsole](https://adminconsole.adobe.com) and parsing the resource URL they are redirected to.",
+                "type": "string",
+                "pattern": "^\\w+@AdobeOrg$"
+            },
+            "principalType": {
+                "type": "string",
+                "pattern": "^organization$"
+            }
+        }
+    },
+    "allOf": [
+        { "$ref": "https://ns.adobe.com/xdm/base/principal" },
+        { "$ref": "#/definitions/imsorg" }
+    ]
+}

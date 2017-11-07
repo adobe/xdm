@@ -5,7 +5,7 @@
   "description": "A Content Repository that is compliant with the ACP API specification.",
   "type": "object",
   "properties": {
-    "root": {
+    "rootResource": {
       "decription": "The location of the root resource of the repository. The root resource is of significance because it defines the entry point into the repository, in an hypermedia sense.",
       "type": "string",
       "format": "uri"

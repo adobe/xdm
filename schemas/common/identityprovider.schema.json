@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "$id": "https://ns.adobe.com/xdm/base/identityprovider",
+    "$id": "https://ns.adobe.com/xdm/common/identityprovider",
     "title": "Identity Provider",
     "description": "An identity provider (abbreviated IdP) is a system entity that creates, maintains, and manages identity information for principals while providing authentication services to relying party applications within a federation or distributed network. An identity provider offers subject authentication as a service.",
     "definitions": {

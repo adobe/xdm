@@ -223,5 +223,6 @@
             "$ref": "#/definitions/single-or-array-of-contexts"
         }
     },
-    "type": "object"
+    "type": "object",
+    "title": "Context"
 }

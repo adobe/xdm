@@ -6,4 +6,10 @@ out/
 # mac files
 .DS_Store
 /node_modules
+
+# generated
+docs
+xdm-docs.zip
 /xdm-docs.zip
+
+/package-lock.json

@@ -2,5 +2,6 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$id": "https://ns.adobe.com/xdm/external/activity-streams-2/document",
     "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-document",
-    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/object"
+    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/object",
+    "title":"Document"
 }

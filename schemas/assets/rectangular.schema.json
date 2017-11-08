@@ -10,7 +10,7 @@
           "title": "Width",
           "description": "Width in pixels",
           "type":"integer",
-          "meta:userEditable": false,
+          "meta:usereditable": false,
           "minimum": 0,
           "example": 768
         },
@@ -18,7 +18,7 @@
           "title": "Length",
           "description": "Height in pixels. To maintain continuity with the XMP and TIFF standards, the height of an image or video is specified in the property `image_length`. The duration of the video (also commonly called length) is specified in the property `extent`",
           "type":"integer",
-          "meta:userEditable": false,
+          "meta:usereditable": false,
           "minimum": 0,
           "example": 1024
         },
@@ -27,7 +27,7 @@
           "description": "Describes the proportional relationship between the width and the height. To determine the aspect ratio, divide width by height. Media that have an aspect ratio smaller than one are in landscape format, media that have an aspect ratio greater than one are in portrait format.",
           "type":"number",
           "minimum": 0,
-          "meta:userEditable": false,
+          "meta:usereditable": false,
           "example": 1.333333
         }
       }

@@ -2,5 +2,6 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$id": "https://ns.adobe.com/xdm/external/activity-streams-2/xsd-nonNegativeInteger",
     "type": "integer",
-    "minimum": 0
+    "minimum": 0,
+    "title":  "XSD non negative Integer"
 }

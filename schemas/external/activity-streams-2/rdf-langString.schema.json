@@ -7,5 +7,6 @@
             "type": "string"
         }
     },
-    "additionalProperties": false
+    "additionalProperties": false,
+    "title":"RDF Language Tagged String"
 }

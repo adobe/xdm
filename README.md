@@ -127,3 +127,10 @@ If you see warnings or error messages (or an non-zero exit code), fix them befor
 * [Dublin Core](http://dublincore.org/)
 * [OWL](http://www.w3.org/TR/2009/REC-owl2-overview-20091027/)
 * [SKOS Core](http://www.w3.org/TR/2009/REC-skos-reference-20090818/)
+
+## License/Copyright
+
+Copyright 2017 Adobe Systems Incorporated. All rights reserved.
+This file is licensed to you under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License. You may obtain a copy
+of the License at http://www.apache.org/licenses/LICENSE-2.0

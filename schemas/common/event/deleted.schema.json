@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "$id": "https://ns.adobe.com/xdm/event/deleted",
+    "$id": "https://ns.adobe.com/xdm/common/event/deleted",
     "title": "Deleted Event",
     "description": "A `deleted event` follows semantics that are exactly equivalent to the semantics described by the [`delete activity`](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-delete), except for one difference. The `delete activity` can be used in imperative contexts, however, the `deleted event` can only be used in passive contexts.",
     "allOf": [

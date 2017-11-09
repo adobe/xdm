@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "$id": "https://ns.adobe.com/xdm/event/created",
+    "$id": "https://ns.adobe.com/xdm/common/event/created",
     "title": "Created Event",
     "description": "A `created event` follows semantics that are exactly equivalent to the semantics described by the [`create activity`](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-create), except for one difference. The `create activity` can be used in imperative contexts, however, the `created event` can only be used in passive contexts.",
     "allOf": [

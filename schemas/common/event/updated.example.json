@@ -24,12 +24,12 @@
     "@type" : "xdmImsUser"
   },
   "@context" : [
-    "https://www.w3.org/ns/activitystreams",
+    "https://www.w3.org/ns/activitystreams#",
     "https://ns.adobe.com/xdm/common/eventenvelope#",
     {
       "xdmAsset" : "http://ns.adobe.com/xdm/assets/asset#",
       "xdmImsUser": "https://ns.adobe.com/xdm/base/imsuser#",
-      "xdmContentRepository": "https://ns.adobe.com/xdm/content/repository"
+      "xdmContentRepository": "https://ns.adobe.com/xdm/content/repository#"
     }
   ]
 }

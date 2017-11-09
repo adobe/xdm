@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/schema#",
   "$id": "https://ns.adobe.com/xdm/content/repository",
   "title": "Content Repository",
-  "description": "A Content Repository that is compliant with the ACP API specification.",
+  "description": "A Content Repository that is compliant with the Adobe Cloud Platform API specification.",
   "type": "object",
   "properties": {
     "rootResource": {

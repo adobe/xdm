@@ -1,0 +1,63 @@
+{
+    "meta:license": [
+      "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+      "This file is licensed to you under the Apache License, Version 2.0 (the 'License');",
+      "you may not use this file except in compliance with the License. You may obtain a copy",
+      "of the License at http://www.apache.org/licenses/LICENSE-2.0"
+      ],
+    "$id": "https://ns.adobe.com/xdm/experience/geo.schema.json",
+    "$schema": "http://json-schema.org/schema#",
+    "title": "Geo",
+    "description": "The geographic related data where an event was observed.",
+    "definitions": {
+      "geo" : {
+        "properties": {
+            "countryCode": {
+                "title": "Country code",
+                "type": "string",
+                "description": "The two-character ISO 3166-1 alpha code for the country."
+            },
+            "stateProvince": {
+                "title": "State or province",
+                "type": "string",
+                "description": "The state, or province portion of the observation."
+            },
+            "city": {
+                "title": "City",
+                "type": "string",
+                "description": "The name of the city."
+            },
+            "postalCode": {
+                "title": "Postal code",
+                "type": "string",
+                "description": "The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code."
+            },
+            "dmaId": {
+                "title": "Designated Market Area",
+                "type": "integer",
+                "description": "The Nielsen Media Research designated market area."
+            },
+            "msaId": {
+                "title": "Metropolitan Statistical Area",
+                "type": "integer",
+                "description": "The Metropolitan Statistical Area in the USA where the observation occurred."
+            },
+            "latitude": {
+                "title": "Latitude",
+                "type": "number",
+                "description": "The signed vertical coordinate of a geographic point.",
+                "format": "float"
+            },
+            "longitude": {
+                "title": "Longitude",
+                "type": "number",
+                "description": "The signed horizontal coordinate of a geographic point.",
+                "format": "float"
+            }
+        }
+      }
+    },
+    "allOf": [
+      {"$ref":"#/definitions/geo"}
+    ]
+}

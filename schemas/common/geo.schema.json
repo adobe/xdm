@@ -5,7 +5,7 @@
       "you may not use this file except in compliance with the License. You may obtain a copy",
       "of the License at http://www.apache.org/licenses/LICENSE-2.0"
       ],
-    "$id": "https://ns.adobe.com/xdm/experience/geo.schema.json",
+    "$id": "https://ns.adobe.com/xdm/common/geo.schema.json",
     "$schema": "http://json-schema.org/schema#",
     "title": "Geo",
     "description": "The geographic related data where an event was observed.",

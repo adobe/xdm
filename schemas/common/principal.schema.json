@@ -11,14 +11,14 @@
     "description": "This model represents a principal in an access control system. Principals are entities that have been authenticated against an identity provider.",
     "type": "object",
     "properties": {
-        "identityProvider": {
-            "$ref": "https://ns.adobe.com/xdm/common/identityprovider#/definitions/identityProviderId"
+        "identity_provider": {
+            "$ref": "https://ns.adobe.com/xdm/common/identityprovider#/definitions/name"
         },
-        "principalId": {
+        "id": {
             "description": "A unique (uniqueness is defined on the same lines as defined [here](https://tools.ietf.org/html/rfc8141#section-5)) and persistent identifier for the principal. Ideally, this identifier should be a [URI](https://tools.ietf.org/html/rfc3986)."
         },
-        "principalType": {
-            "description": "The type of the principal. Acts as a processing hint to the client. Principals can be of several types - user, group, organization, application, etcetra. The list is not necessarily finite. Ideally, each value should be identified as a [URI](https://tools.ietf.org/html/rfc3986)."
+        "type": {
+            "description": "The type of the principal. Acts as a processing hint to the client. Ideally, each value should be identified as a [URI](https://tools.ietf.org/html/rfc3986)."
         }
     }
 }

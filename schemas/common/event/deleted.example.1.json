@@ -1,31 +1,31 @@
 {
-	"id" : "82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
-	"type" : "https://ns.adobe.com/xdm/common/event/deleted",
-	"objectType" : "xdmAsset",
-	"actor" : {
-		"xdmImsUser:principalId" : "D13A1E7053E46A220A4C86E1@AdobeID",
-		"@type" : "xdmImsUser"
-	},
-	"generator" : {
-		"xdmContentRepository:rootResource" : "https://cc-api-storage.adobe.io/",
-		"@type" : "xdmContentRepository"
-	},
-	"object" : {
-		"@type" : "xdmAsset",
-		"xdmAsset:asset_id" : "urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185"
-	},
-	"published" : "2016-07-16T19:20:30+01:00",
-	"to" : {
-		"xdmImsUser:principalId" : "D13A1E7053E46A220A4C86E1@AdobeID",
-		"@type" : "xdmImsUser"
-	},
-	"@context" : [
-		"https://www.w3.org/ns/activitystreams#",
-		"https://ns.adobe.com/xdm/common/eventenvelope#",
-		{
-			"xdmAsset" : "http://ns.adobe.com/xdm/assets/asset#",
-			"xdmImsUser": "https://ns.adobe.com/xdm/base/imsuser#",
-			"xdmContentRepository": "https://ns.adobe.com/xdm/content/repository#"
-		}
-	]
+  "id" : "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
+  "type" : "https://ns.adobe.com/xdm/common/event/deleted",
+  "objectType" : "http://ns.adobe.com/xdm/assets/asset#",
+  "actor" : {
+    "xdmImsUser:principalId" : "D13A1E7053E46A220A4C86E1@AdobeID",
+    "@type" : "xdmImsUser"
+  },
+  "generator" : {
+    "xdmContentRepository:rootResource" : "https://cc-api-storage.adobe.io/",
+    "@type" : "xdmContentRepository"
+  },
+  "object" : {
+    "@type" : "xdmAsset",
+    "xdmAsset:asset_id" : "urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185"
+  },
+  "published" : "2016-07-16T19:20:30+01:00",
+  "to" : {
+    "xdmImsUser:principalId" : "D13A1E7053E46A220A4C86E1@AdobeID",
+    "@type" : "xdmImsUser"
+  },
+  "@context" : [
+    "https://www.w3.org/ns/activitystreams#",
+    "https://ns.adobe.com/xdm/common/eventenvelope#",
+    {
+      "xdmAsset" : "http://ns.adobe.com/xdm/assets/asset#",
+      "xdmImsUser": "https://ns.adobe.com/xdm/base/imsuser#",
+      "xdmContentRepository": "https://ns.adobe.com/xdm/content/repository#"
+    }
+  ]
 }

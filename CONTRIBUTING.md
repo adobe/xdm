@@ -1,6 +1,6 @@
 # Contributing to XDM
 
-The Experience Data Model (XDM) project is developed as an Open Standard within Adobe. We welcome contributions from everyone at Adobe.
+The Experience Data Model (XDM) project is developed as an Open Standard driven by Adobe. We welcome contributions from everyone who is interested in advancing digital experiences.
 
 ## Things to Keep in Mind
 
@@ -8,7 +8,9 @@ XDM uses a **review then commit** process, which means that no changes are being
 
 ## Before you Contribute
 
-All contributions should be discussed on the Mailing List first. Send a mail to [Grp-XDM-API-WGs](mailto:Grp-XDM-API-WGs@adobe.com) with the subject line `[XDM] …` to get the discussion started. It also helps if you can refer to an issue in the [ACP JIRA project](https://jira.corp.adobe.com/projects/ACP).
+XDM is driven by Adobe, but it is not specific to Adobe products.
+This means that models should capture the universal concepts of digital experiences, not specific implementations, no matter if they are part of an Adobe product or not.
+If you need to express a concept that is specific to an Adobe (or other) product, that is not universal, it should be formulated in an XDM extension instead.
 
 ## How to Contribute
 

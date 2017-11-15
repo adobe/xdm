@@ -19,8 +19,7 @@
                 },
                 "principalId": {
                     "description": "Principal id identifies an organization in IMS. It is a unique and persitent identifier which is allocated at the time the organization is created in the system. An organization's admin can find this value by logging into the [adminconsole](https://adminconsole.adobe.com) and parsing the resource URL they are redirected to.",
-                    "type": "string",
-                    "pattern": "^\\w+@AdobeOrg$"
+                    "type": "string"
                 },
                 "principalType": {
                     "type": "string",

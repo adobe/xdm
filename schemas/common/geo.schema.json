@@ -38,7 +38,7 @@
                 "type": "integer",
                 "description": "The Nielsen Media Research designated market area."
             },
-            "msa-id": {
+            "msa_id": {
                 "title": "Metropolitan Statistical Area",
                 "type": "integer",
                 "description": "The Metropolitan Statistical Area in the USA where the observation occurred."

@@ -72,7 +72,7 @@ XDM is not an isolated standard, but incorporates and builds on standards. Whene
 Interoperability with [Microsoft's Common Data Model (CDM)](https://docs.microsoft.com/en-us/common-data-service/entity-reference/common-data-model)is a top priority. This means that definitions that are present in CDM should be used or extended, where appropriate, by XDM. XDM should not attempt to duplicate definitions that are present in CDM.
 
 Where appropriate, we can 'lead' CDM, extend it to meet other requirements.
-Another good source of data model elements is [schema.Org](http://schema.org).
+Another good source of data model elements is [schema.org](http://schema.org).
 
 ### Design for Consumability
 

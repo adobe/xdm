@@ -6,11 +6,11 @@
         "of the License at http://www.apache.org/licenses/LICENSE-2.0"
     ],
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "$id": "https://ns.adobe.com/xdm/ims/imsorg",
+    "$id": "https://ns.adobe.com/xdm/ims/organization",
     "title": "IMS Organization",
     "description": "This model represents a IMS Organization. The IMS organization prinicpal is a organization account under Adobe's identity management system (IMS).",
     "definitions": {
-        "imsorg": {
+        "organization": {
             "type": "object",
             "properties": {
                 "identityProvider": {
@@ -31,6 +31,6 @@
     },
     "allOf": [
         { "$ref": "https://ns.adobe.com/xdm/common/principal" },
-        { "$ref": "#/definitions/imsorg" }
+        { "$ref": "#/definitions/organization" }
     ]
 }

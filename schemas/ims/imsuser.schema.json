@@ -6,11 +6,11 @@
         "of the License at http://www.apache.org/licenses/LICENSE-2.0"
     ],
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "$id": "https://ns.adobe.com/xdm/ims/imsuser",
+    "$id": "https://ns.adobe.com/xdm/ims/user",
     "title": "IMS User",
     "description": "This model represents an authenticated IMS User. The IMS user prinicpal is a user account under Adobe's identity management system (IMS).",
     "definitions": {
-        "imsuser": {
+        "user": {
             "type": "object",
             "properties": {
                 "identityProvider": {
@@ -31,6 +31,6 @@
     },
     "allOf": [
         { "$ref": "https://ns.adobe.com/xdm/common/principal" },
-        { "$ref": "#/definitions/imsuser" }
+        { "$ref": "#/definitions/user" }
     ]
 }

@@ -1,5 +1,5 @@
 {
-    "identityProvider": "ims",
-    "principalId": "C0B648DE57D701277F000101@AdobeID",
-    "principalType": "user",
+    "identity_provider": "ims",
+    "id": "C0B648DE57D701277F000101@AdobeID",
+    "type": "https://ns.adobe.com/xdm/ims/user",
 }

@@ -1,5 +1,5 @@
 {
-    "identityProvider": "ims",
-    "principalId": "126236B3597F99260A494228@AdobeOrg",
-    "principalType": "organization",
+    "identity_provider": "ims",
+    "id": "126236B3597F99260A494228@AdobeOrg",
+    "type": "https://ns.adobe.com/xdm/ims/organization",
 }

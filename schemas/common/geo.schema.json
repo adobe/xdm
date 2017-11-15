@@ -45,14 +45,12 @@
             "latitude": {
                 "title": "Latitude",
                 "type": "number",
-                "description": "The signed vertical coordinate of a geographic point.",
-                "format": "float"
+                "description": "The signed vertical coordinate of a geographic point."
             },
             "longitude": {
                 "title": "Longitude",
                 "type": "number",
-                "description": "The signed horizontal coordinate of a geographic point.",
-                "format": "float"
+                "description": "The signed horizontal coordinate of a geographic point."
             }
         }
       }

@@ -46,11 +46,15 @@
             "latitude": {
                 "title": "Latitude",
                 "type": "number",
+                "minimum": -90,
+                "maximum": 90,
                 "description": "The signed vertical coordinate of a geographic point."
             },
             "longitude": {
                 "title": "Longitude",
                 "type": "number",
+                "minimum": -180,
+                "maximum": 180,
                 "description": "The signed horizontal coordinate of a geographic point."
             }
         }

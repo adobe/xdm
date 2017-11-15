@@ -15,7 +15,7 @@
             "country_code": {
                 "title": "Country code",
                 "type": "string",
-                "description": "The two-character ISO 3166-1 alpha code for the country."
+                "description": "The two-character [ISO 3166-1 alpha-2](https://datahub.io/core/country-list) code for the country."
             },
             "state_province": {
                 "title": "State or province",

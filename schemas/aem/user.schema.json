@@ -1,0 +1,31 @@
+{
+    "meta:license": [
+        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+        "This file is licensed to you under the Apache License, Version 2.0 (the 'License');",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at http://www.apache.org/licenses/LICENSE-2.0"
+    ],
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "https://ns.adobe.com/xdm/aem/user",
+    "title": "AEM User",
+    "description": "This model represents an [AEM User](https://jackrabbit.apache.org/api/2.8/org/apache/jackrabbit/api/security/user/User.html). The associated principal with this AEM User is the principal returned by [`User.getPrincipal()`](https://jackrabbit.apache.org/api/2.8/org/apache/jackrabbit/api/security/user/Authorizable.html#getPrincipal()).",
+    "definitions": {
+        "user": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "description": "The value `User.getPrincipal().getName()`. This identifier is unique and persistent per AEM repository, with one caveat, that this identifier could be reassigned.",
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string",
+                    "const": "https://ns.adobe.com/xdm/aem/user"
+                }
+            }
+        }
+    },
+    "allOf": [
+        { "$ref": "https://ns.adobe.com/xdm/common/principal" },
+        { "$ref": "#/definitions/user" }
+    ]
+}

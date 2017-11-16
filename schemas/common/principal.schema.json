@@ -12,7 +12,7 @@
     "type": "object",
     "properties": {
         "identity_provider": {
-            "description": "The identity provider that manages this principal."
+            "description": "The identity provider that manages this principal.",
             "$ref": "https://ns.adobe.com/xdm/common/identityprovider#/definitions/name"
         },
         "id": {

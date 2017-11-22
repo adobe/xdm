@@ -1,0 +1,53 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This file is licensed to you under the Apache License, Version 2.0 (the 'License');",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at http://www.apache.org/licenses/LICENSE-2.0"
+  ],
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://ns.adobe.com/xdm/content/repository-policy",
+  "title": "Content Repository Policy",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "versioning": {
+      "name": "Versioning Configuration",
+      "decription": "Configures how assets are versioned in the part of the repository to which this configuration applies",
+      "type": "object",
+      "properties" : {
+        "retention_time" : {
+          "name" : "Retention Time (days)",
+          "description" : "The maximum time (in days) up to which a version is retained if it is not marked as a milestone",
+          "type" : "integer"
+        },
+        "max_milestones" : {
+          "name" : "Maximum Number of Milestones",
+          "description" : "The maximum number of old versions that can be marked as a mlestone on a versioned resource",
+          "type" : "integer"
+        }
+      }
+    },
+    "encryption" : {
+      "name" : "At-Rest Encryption",
+      "description" : "Configuration of at-rest encryption",
+      "type" : "object",
+      "properties" : {
+        "key_type" : {
+          "name" : "Key Type",
+          "description" : "The type of encryption key - 'platform': a key used across all tenants of the platform; 'org': a key managed exclusviely for the org to which the storage belongs",
+          "meta:usereditable": false,
+          "type" : "string" ,
+          "enum" : ["platform", "org"]
+        },
+        "key_status" : {
+          "name" : "Key Status",
+          "description" : "The status of the encryption key - 'enabled': the key is enabled and content is accessible to authorized users; 'disabled': the key is disabled and content is not accessible",
+          "meta:usereditable": false,
+          "type" : "string",
+          "enum" : ["enabled", "disabled"]
+        }
+      }
+    }
+  }
+}

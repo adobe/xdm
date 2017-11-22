@@ -1,0 +1,10 @@
+{
+  "versioning" : {
+    "retention_time" : 60,
+    "max_milestones" : 1000
+  },
+  "encryption" : {
+    "key_type" : "org",
+    "key_status" : "enabled"
+  }
+}

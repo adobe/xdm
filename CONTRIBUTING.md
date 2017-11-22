@@ -1,6 +1,6 @@
 # Contributing to XDM
 
-The Experience Data Model (XDM) project is developed as an Open Standard within Adobe. We welcome contributions from everyone at Adobe.
+The Experience Data Model (XDM) project is developed as an Open Standard driven by Adobe. We welcome contributions from everyone who is interested in advancing digital experiences.
 
 ## Things to Keep in Mind
 
@@ -8,13 +8,18 @@ XDM uses a **review then commit** process, which means that no changes are being
 
 ## Before you Contribute
 
-All contributions should be discussed on the Mailing List first. Send a mail to [Grp-XDM-API-WGs](mailto:Grp-XDM-API-WGs@adobe.com) with the subject line `[XDM] …` to get the discussion started. It also helps if you can refer to an issue in the [ACP JIRA project](https://jira.corp.adobe.com/projects/ACP).
+XDM is driven by Adobe, but it is not specific to Adobe products.
+This means that models should capture the universal concepts of digital experiences, not specific implementations, no matter if they are part of an Adobe product or not.
+If you need to express a concept that is specific to an Adobe (or other) product, that is not universal, it should be formulated in an XDM extension instead.
 
 ## How to Contribute
 
-1. Fork the repository
-2. Create a pull request
-3. Submit the pull request
+1. Go to the [list of open issues](https://git.corp.adobe.com/AdobeCloudPlatform/xdm/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) and pick an issue you want to work on. If you don't see the appropriate issue, [create a new issue in GitHub](https://git.corp.adobe.com/AdobeCloudPlatform/xdm/issues/new)
+2. If you haven't done so yet, [fork the XDM repository into your private GitHub organization](https://git.corp.adobe.com/AdobeCloudPlatform/xdm/fork). If your fork exists, merge the latest updates from `AdobeCloudPlatform/xdm` into `yourname/xdm`, so that you don't start from an outdated code tree
+3. In `yourname/xdm` create a new branch from `master`. Your branch name should either refer the issue number like `bug-42` or `feature-23` or have a descriptive name like `fix-layer-group-references`
+4. Make add edits that apply to the given feature or bug against this new branch. Commit and push in frequent intervals
+5. If you are working on the branch for more than a day, make sure to occasionally (at least once per day) to merge the latest updates from `AdobeCloudPlatform/xdm#master` into your branch, so that you won't get surprised when it's time to merge the pull request. Resolve any conflicts to make life easier for the XDM editors
+6. Once you are done, create a pull request from your branch against `AdobeCloudPlatform/xdm#master`.
 
 Every pull request should specify:
 
@@ -29,9 +34,9 @@ For every update to the schema, make sure
 
 Furthermore, a pull request that modifies the schema must also include accompanying documentation. Pull requests with missing documentation will be rejected.
 
-Each commit message:
+Each commit message that is not part of a pull request:
 
-* Should contain the issue ID like `[ACP-123]` or `#42`
+* Should contain the issue ID like `#42`
 * Can contain the tag `[trivial]` for trivial changes that don't relate to an issue
 
 ## Design Guidelines
@@ -67,7 +72,7 @@ XDM is not an isolated standard, but incorporates and builds on standards. Whene
 Interoperability with [Microsoft's Common Data Model (CDM)](https://docs.microsoft.com/en-us/common-data-service/entity-reference/common-data-model)is a top priority. This means that definitions that are present in CDM should be used or extended, where appropriate, by XDM. XDM should not attempt to duplicate definitions that are present in CDM.
 
 Where appropriate, we can 'lead' CDM, extend it to meet other requirements.
-Another good source of data model elements is [schema.Org](http://schema.org).
+Another good source of data model elements is [schema.org](http://schema.org).
 
 ### Design for Consumability
 
@@ -97,6 +102,7 @@ Avoid non-semantic limits – don’t put current resource limits in the data mo
 * file names for schema files should be lower case and end with `.schema.json`
 * include an `"$id"` with a value like `"https://ns.adobe.com/xdm/assets/image"` in the schema
 * don't nest schemas too deeply. Break inline type definitions into separate `*.schema.json` files if they have properties with object types themselves.
+* convention is that property names are snake_case, when they appear in JSON
 
 ## Writing Styleguides
 

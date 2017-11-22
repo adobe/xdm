@@ -1,6 +1,6 @@
 # Experience Data Model (XDM) Schema
 
-Machine readable semantic data model schemas for the [unified Adobe Cloud API](https://wiki.corp.adobe.com/display/ctooperations/Content+and+Data+Workstream).
+The [Experience Data Model](https://www.adobe.io/open/standards/xdm) (XDM) is the language of digital experiences. XDM is an open standard, driven by Adobe to improve the interoperability, expressivness, and power of digital experiences. This repository contains the source code for the formal specification of the XDM model, using the JSON Schema language.
 
 ## Project Layout
 
@@ -25,13 +25,9 @@ The project is laid out in the following way:
 - `README.md`: this file
 - `CONTRIBUTING.md`: guidelines for contributors, covering process, conventions and design guidelines
 
-## Schema files
-
-The machine readable schema source files ([RDF/S](https://www.w3.org/TR/rdf-schema/) in [Turtle Syntax](https://www.w3.org/TR/turtle/)) are located in the root directory of this project.
-
 ## Tooling
 
-The tooling project (e.g. for generating HTML documentation, Turtle-to-JSON-LD conversion) is located in the [AdobeCloudPlatform/machinery](https://git.corp.adobe.com/AdobeCloudPlatform/machinery) git repository. 
+The tooling project (e.g. for generating Markdown documentation, example validation, JSON Schema documentation inlining) is located in the [adobe/jsonschema2md](https://github.com/adobe/jsonschema2md) git repository. 
 
 ### Dependencies
 
@@ -109,14 +105,13 @@ If you see warnings or error messages (or an non-zero exit code), fix them befor
 
 ## Naming Conventions
 
-* Names of Classes, Types and Stricts use CamelCase notation (i.e. they start with a capital letter), e.g. `Asset`
-* Names of Properties use mixedCase notation (i.e. they begin with lower case but still capitalize thereafter), e.g. `core:assetName`
-* **Exception:** Names of Properties, Classes and Types defined in other ontologies/vocabularies are used _as-is_. e.g. `dc:title`, `xmp:CreateDate`
+* see the [Contributor's guide](CONTRIBUTING.md)
 
 ## Links
 
 ### Specifications
 
+* [JSON Schema](http://json-schema.org/)
 * [JSON-LD 1.0](https://www.w3.org/TR/json-ld/)
 * [XMP SPECIFICATION PART 1 DATA MODEL, SERIALIZATION, AND CORE PROPERTIES](http://wwwimages.adobe.com/content/dam/Adobe/en/devnet/xmp/pdfs/XMP%20SDK%20Release%20cc-2014-12/XMPSpecificationPart1.pdf)
 
@@ -126,3 +121,10 @@ If you see warnings or error messages (or an non-zero exit code), fix them befor
 * [Dublin Core](http://dublincore.org/)
 * [OWL](http://www.w3.org/TR/2009/REC-owl2-overview-20091027/)
 * [SKOS Core](http://www.w3.org/TR/2009/REC-skos-reference-20090818/)
+
+## License/Copyright
+
+Copyright 2017 Adobe Systems Incorporated. All rights reserved.
+This file is licensed to you under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License. You may obtain a copy
+of the License at http://www.apache.org/licenses/LICENSE-2.0

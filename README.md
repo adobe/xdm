@@ -10,6 +10,7 @@ The project is laid out in the following way:
 - `schemas`: JSON schema files constituting the normative part of XDM
   - `*.schema.json` is the schema file, e.g. `event-envelope.schema.json` – we pick the `.json` file extension for easy syntax highlighting in editors
   - `*.example.*.json` is an example file that will be validated against the `*.schema.json` file, and if successful, merged into the `*.schema.json` file as an `"example"` field at the root of the schema before its converted into Markdown or published
+  - `*.invalid.*.json` is an invalid example file that will be validated against the `*.schema.json` file. If the `invalid` file validates (false positive), the schema is too lax and the overall build will fail. `invalid` files will not be merged into documentation.
   - `*.description.md` is a description file that will be merged into the `"description"` field at the root of the schema, allowing the authoring of longer descriptions. The merge happens before publishing the schema file or creating a joint Markdown file
   - `schemas/assets` – for schemas related to the asset core concept, including image, video, document
   - `schemas/audiences` – for schemas describing audiences, segments, and groups of consumers

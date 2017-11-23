@@ -6,7 +6,7 @@
         "of the License at http://www.apache.org/licenses/LICENSE-2.0"
     ],
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "$id": "https://ns.adobe.com/xdm/aem/user",
+    "$id": "https://ns.adobe.com/xdm-extensions/aem/user",
     "title": "AEM User",
     "description": "This model represents an [AEM User](https://jackrabbit.apache.org/api/2.8/org/apache/jackrabbit/api/security/user/User.html). The associated principal with this AEM User is the principal returned by [`User.getPrincipal()`](https://jackrabbit.apache.org/api/2.8/org/apache/jackrabbit/api/security/user/Authorizable.html#getPrincipal()).",
     "definitions": {

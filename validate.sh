@@ -36,9 +36,16 @@ for example in $invalid; do
   fi
 done
 
-
 if [ $falsepositives -ne 0 ]; then
   echo $falsepositives schemas failed to validate
 fi
+
+for schema in $schemas; do
+  pattern=$(echo $schema | sed -e "s/\.schema\./.example.*./")
+  count=$(ls $pattern 2> /dev/null | wc -l)
+  if [ "$count" == "0" ]; then
+    echo "$schema has $count examples"
+  fi
+done
 
 exit $failures

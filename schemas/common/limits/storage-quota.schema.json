@@ -20,8 +20,8 @@
           "enum": ["hard", "soft"]
         },
         "limit": {
-          "name": "Storage Limit (GB)",
-          "decription": "The storage limit value specified in GB (1GB = 1024MB = 2^30 Bytes).",
+          "name": "Storage Limit (Bytes)",
+          "decription": "The storage limit value specified in bytes.",
           "type": "number",
           "minimum": 0
         },

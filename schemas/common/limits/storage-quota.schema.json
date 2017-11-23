@@ -30,6 +30,13 @@
           "decription": "The amount of storage used at the point of the repository that links to this quota document in bytes",
           "meta:usereditable": false,
           "type": "integer"
+        },
+        "unit": {
+          "name": "Unit of the limit",
+          "decription": "The unit that is used to determine the limit. This property is optional, but fixed, i.e. it allows consumers to quickly understand the value just by looking at the JSON response from the API.",
+          "meta:usereditable": false,
+          "type": "string",
+          "const": "Bytes"
         }
       },
       "required": [

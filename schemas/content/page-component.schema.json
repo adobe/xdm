@@ -15,7 +15,7 @@
       "properties": {
           "type": {
               "type": "string",
-              "format": "reference",
+              "format": "uri",
               "description": "Type of the component. Acts as processing hint for the client."
           }
       }

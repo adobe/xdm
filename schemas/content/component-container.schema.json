@@ -15,18 +15,18 @@
       "properties": {
           "type": {
               "type": "string",
-              "format": "uri-reference",
+              "format": "uri",
               "description": "Type of the container. Acts as processing hint for the client."
           },
           "items": {
               "type": "object",
               "description": "The items of this container.",
-              "oneOf": [
+              "anyOf": [
                   { "$ref": "#/definitions/container" },
                   { "$ref": "https://ns.adobe.com/xdm/content/page-component#/definitions/component"}
               ]
           },
-          "itemsOrder": {
+          "items_order": {
               "type": "array",
               "uniqueItems": true,
               "items": {

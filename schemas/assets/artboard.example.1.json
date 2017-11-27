@@ -1,6 +1,8 @@
 {
   "name": "Example Artboard",
-  "image_width": 768,
-  "image_length": 768,
-  "aspect_ratio": 1
+  "width": 768,
+  "height": 768,
+  "origin_y": 0,
+  "origin_x": 256,
+  "unit": "pixels"
 }

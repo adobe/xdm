@@ -53,7 +53,7 @@
           "type": "string",
           "name": "Font Name",
           "meta:usereditable": false,
-          "description": "PostScript name of the font. For example: `TimesNewRomanPS-BoldItalicMT`. font_name is manadatory to identify the font used in an asset but an asset may not have a `font` property if it has only images/vector arts (no text)."
+          "description": "PostScript name of the font. For example: `TimesNewRomanPS-BoldItalicMT`. `font_name` is manadatory to identify the font used in an asset but an asset may not have a `font` property if it has only images/vector arts (no text)."
         },
         "font_type": {
           "type": "string",

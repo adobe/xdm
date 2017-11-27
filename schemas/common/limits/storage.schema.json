@@ -6,34 +6,34 @@
     "of the License at http://www.apache.org/licenses/LICENSE-2.0"
   ],
   "$schema": "http://json-schema.org/schema#",
-  "$id": "https://ns.adobe.com/xdm/common/limits/storage-quota",
+  "$id": "https://ns.adobe.com/xdm/common/limits/storage",
   "title": "ACP Storage Quota",
   "description": "Represent hard and soft storage quota for ACP content storage",
   "properties" : {
-    "storage_quota" : {
+    "storage" : {
       "type" : "object",
       "properties" : {
         "enforcement": {
-          "name": "Enforcemnt Type",
-          "decription": "Determines whether the limit is being enforced (hard limit) or only reported on (soft limit)",
+          "name": "Enforcement Type",
+          "decription": "Determines whether the quota is being enforced (hard quota) or only reported on (soft quota)",
           "type": "string",
           "enum": ["hard", "soft"]
         },
-        "limit": {
-          "name": "Storage Limit (Bytes)",
-          "decription": "The storage limit value specified in bytes.",
+        "quota": {
+          "name": "Quota amount",
+          "decription": "The quota against which consumption is measured at the point of the repository that links to this document.",
           "type": "number",
           "minimum": 0
         },
-        "usage": {
-          "name": "Storage Used (Bytes)",
-          "decription": "The amount of storage used at the point of the repository that links to this quota document in bytes",
+        "consumed": {
+          "name": "Currently consumed amount",
+          "decription": "The amount currently consumed against the quota at the point of the repository that links to this document.",
           "meta:usereditable": false,
-          "type": "integer"
+          "type": "number"
         },
         "unit": {
-          "name": "Unit of the limit",
-          "decription": "The unit that is used to determine the limit. This property is optional, but fixed, i.e. it allows consumers to quickly understand the value just by looking at the JSON response from the API.",
+          "name": "Unit of the 'limit' and 'consumed' properties",
+          "decription": "The unit that is used to determine the quota and measure consumption. This property is optional, but fixed, i.e. it allows consumers to quickly understand the value just by looking at the JSON response from the API.",
           "meta:usereditable": false,
           "type": "string",
           "const": "Bytes"
@@ -41,7 +41,7 @@
       },
       "required": [
         "enforcement",
-        "limit"
+        "quota"
       ]
     }
   }

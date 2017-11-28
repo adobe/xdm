@@ -1,0 +1,37 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This file is licensed to you under the Apache License, Version 2.0 (the 'License');",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at http://www.apache.org/licenses/LICENSE-2.0"
+  ],
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://ns.adobe.com/xdm/assets/layer-group",
+  "title": "Layer Group",
+  "description":"",
+  "definitions": {
+    "layer-group": {
+      "properties": {
+        "name": {
+          "type":"string",
+          "title": "Name",
+          "description": "Name of the Layer Group. This will be visible to the user and users can specify names that can help them to identify different Layer Groups"
+        },
+        "layers": {
+          "name": "Layers",
+          "description": "The layers or layer groups contained in this layer group.",
+          "type":"array",
+          "items": {
+            "anyOf": [
+              {"$ref":"#/definitions/layer-group"},
+              {"$ref":"https://ns.adobe.com/xdm/assets/layer#/definitions/layer"}
+            ]
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {"$ref":"#/definitions/layer-group"}
+  ]
+}

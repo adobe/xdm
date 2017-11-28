@@ -1,0 +1,23 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This file is licensed to you under the Apache License, Version 2.0 (the 'License');",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at http://www.apache.org/licenses/LICENSE-2.0"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/common/event/unpublished",
+  "title": "Unpublished Event",
+  "description": "The `unpublished event` represents the activity of making an object, which was previously published, unavailable for distribution. It can be thought of as the semantic opposite of the `published event`. Some examples of the unpublished activity are, taking down digital content from a website, taking down a previously published memo from the notice board, etcetera. The [`object`](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object) field should specify the object that was taken down/unpublished, whereas the [`target`](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-target) field, if present, should describe where the said object was taken down from. The `unpublished event` can only be used in passive contexts. Example: the act of taking down a previously published memo from the notice board would be represented by the `unpublished` activity wherein, the memo would be the `object` of the `unpublished event` and the notice board would be the `target`.",
+  "allOf": [
+    { "$ref": "https://ns.adobe.com/xdm/common/eventenvelope" },
+    {
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "https://ns.adobe.com/xdm/common/event/unpublished"
+        }
+      }
+    }
+  ]
+}

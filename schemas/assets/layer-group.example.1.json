@@ -1,0 +1,28 @@
+{
+  "name": "Example Layer Group",
+  "layers": [
+    {
+      "name": "Example Layer",
+      "width": 768,
+      "height": 768,
+      "origin_y": 0,
+      "origin_x": 256,
+      "unit": "pixels",
+      "visible": true
+    },
+    {
+      "name": "Nested Layer Group",
+      "layers": [
+        {
+          "name": "Example Layer in Nested Layer Group",
+          "width": 768,
+          "height": 768,
+          "origin_y": 0,
+          "origin_x": 256,
+          "unit": "pixels",
+          "visible": false
+        }
+      ]
+    }
+  ]
+}

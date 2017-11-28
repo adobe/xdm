@@ -9,7 +9,7 @@
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "Person",
     "type": "object",
-    "description": "An individual actor, contact, or owner.",
+    "description": "An individual person.  May represent a person acting in various roles, such as a customer, contact, or owner.",
     "definitions" : {
         "person" : {
             "properties": {
@@ -18,66 +18,39 @@
                     "$ref": "./personname.schema.json",
                     "description": "The person's full name"
                 },
-                "courtesyTitle": {
-                    "title": "Courtesy title",
-                    "type": "string",
-                    "description": "Normally an abbreviation of a persons *title*, *honorific*, or *salutation*.\nThe `courtesyTitle` is used in front of full or last name in opening texts.\ne.g Mr. Miss. or Dr J. Smith.\n"
-                },
                "birthDay": {
                     "title": "Birth day",
                     "type": "integer",
-                    "description": "The day of the month a person was born (1-31).\nDefault 0 means absence.\n",
-                    "default": 0,
-                    "minimum": 0,
+                    "description": "The day of the month a person was born (1-31).",
+                    "minimum": 1,
                     "maximum": 31,
                 },
                 "birthMonth": {
                     "title": "Birth month",
                     "type": "integer",
-                    "description": "The month of the year a person was born (1-12).\nDefault 0 means absence.\n",
-                    "default": 0,
-                    "minimum": 0,
+                    "description": "The month of the year a person was born (1-12).",
+                    "minimum": 1,
                     "maximum": 12
                 },
                 "birthYear": {
                     "title": "Birth year",
                     "type": "integer",
-                    "description": "The year a person was born including the century (yyyy, e.g 1983).\nDefault 0 means absence.\n",
-                    "default": 0,
-                    "minimum": 0,
+                    "description": "The year a person was born including the century (yyyy, e.g 1983).",
+                    "minimum": 1,
                     "maximum" : 32767
                 },
                 "gender": {
                     "title": "Gender",
                     "type": "string",
-                    "enumValues": [
-                        {
-                            "male": {
-                                "title": "Male"
-                            }
-                        },
-                        {
-                            "female": {
-                                "title": "Female"
-                            }
-                        },
-                        {
-                            "notSpecified": {
-                                "title": "Not Specified"
-                            }
-                        },
-                        {
-                            "nonSpecific": {
-                                "title": "Nonspecific"
-                            }
-                        }
-                    ],
+                    "enum": [ "male", "female", "notSpecified", "nonSpecific" ],
+                    "meta:enum": {
+                        "male" : "Male",
+                        "female" : "Female",
+                        "notSpecified" : "Not Specified",
+                        "nonSpecific" : "Nonspecific"
+                    },
                     "description": "Gender identity of the person.\n",
                     "default": "notSpecified"
-                },
-                "audit": {
-                    "title": "audit",
-                    "$ref": "../common/AuditTrail.schema.json"
                 }
             }
         }

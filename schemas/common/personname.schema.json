@@ -5,7 +5,7 @@
       "you may not use this file except in compliance with the License. You may obtain a copy",
       "of the License at http://www.apache.org/licenses/LICENSE-2.0"
       ],
-    "id": "common/personname.schema.json",
+    "id": "https://ns.adobe.com/xdm/common/personname.schema.json",
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "PersonName",
     "type": "object",
@@ -18,7 +18,7 @@
                     "type": "string",
                     "description": "The personal, given, or first name."
                 },
-                "surName": {
+                "surname": {
                     "title": "Surname",
                     "type": "string",
                     "description": "The inherited family name, last name, surname, patronymic, or matronymic name."
@@ -27,7 +27,12 @@
                     "title": "Middle name",
                     "type": "string",
                     "description": "Middle, alternative, or additional names supplied between the given name and surnames."
-                }
+                },
+                "courtesyTitle": {
+                    "title": "Courtesy title",
+                    "type": "string",
+                    "description": "Normally an abbreviation of a persons *title*, *honorific*, or *salutation*.\nThe `courtesyTitle` is used in front of full or last name in opening texts.\ne.g Mr. Miss. or Dr J. Smith.\n"
+                },
             }
         }
     },

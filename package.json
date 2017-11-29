@@ -10,7 +10,7 @@
   },
   "scripts": {
     "clean": "rm -rf docs/reference",
-    "markdown": "mkdir -p docs/reference && jsonschema2md -o docs/reference -d schemas",
+    "markdown": "shx mkdir -p docs/reference && jsonschema2md -o docs/reference -d schemas",
     "test": "sh validate.sh",
     "prepare": "npm run markdown && curl -o \"./node_modules/markdown-importer-0.0.4-jar-with-dependencies.jar\" -C - https://artifactory.corp.adobe.com/artifactory/maven-markdown-tools-release/io/adobe/udp/markdown-importer/0.0.4/markdown-importer-0.0.4-jar-with-dependencies.jar && java -jar ./node_modules/markdown-importer-0.0.4-jar-with-dependencies.jar markdown2aem.yaml",
     "upload": "curl -u \"$npm_package_config_aem_user:$npm_package_config_aem_password\" -F file=\"@xdm-docs.zip\" -F name=\"xdm-docs\" -F force=true -F install=true https://author-adobeio-stage.adobemsbasic.com/crx/packmgr/service.jsp",
@@ -19,7 +19,8 @@
     "activate:prod": "curl -u \"$npm_package_config_aem_user:$npm_package_config_aem_password\" -F cmd=activate -F ignoredeactivated=true -F onlymodified=true -F path=/content/udp/en/open/standards/xdm/docs https://author-adobeio-prod.adobemsbasic.com/etc/replication/treeactivation.html"
   },
   "devDependencies": {
-    "turtle-validator": "1.0.1",
+    "shelljs": "^0.7.8",
+    "shx": "^0.2.2",
     "ajv-cli": "*",
     "jsonschema2md": "git+ssh://git@git.corp.adobe.com:AdobeCloudPlatform/jsonschema2md.git"
   },

@@ -6,31 +6,11 @@
     "of the License at http://www.apache.org/licenses/LICENSE-2.0"
   ],
   "$schema": "http://json-schema.org/schema#",
-  "$id": "https://ns.adobe.com/xdm/content/repository-policy",
-  "title": "Content Repository Policy",
-  "description": "",
-  "type": "object",
-  "properties": {
-    "versioning": {
-      "name": "Versioning Configuration",
-      "decription": "Configures how assets are versioned in the part of the repository to which this configuration applies",
-      "type": "object",
-      "properties" : {
-        "retention_time" : {
-          "name" : "Retention Time (days)",
-          "description" : "The maximum time (in days) up to which a version is retained if it is not marked as a milestone",
-          "type" : "integer"
-        },
-        "max_milestones" : {
-          "name" : "Maximum Number of Milestones",
-          "description" : "The maximum number of old versions that can be marked as a mlestone on a versioned resource",
-          "type" : "integer"
-        }
-      }
-    },
+  "$id": "https://ns.adobe.com/xdm/content/repository-policies/encryption",
+  "title": "At-Rest Encryption",
+  "description" : "Representation of how content is encrypted at-rest",
+  "definitions": {
     "encryption" : {
-      "name" : "At-Rest Encryption",
-      "description" : "Configuration of at-rest encryption",
       "type" : "object",
       "properties" : {
         "key_type" : {
@@ -49,5 +29,7 @@
         }
       }
     }
-  }
+  },
+  "type": "object",
+  "$ref": "#/definitions/encryption"
 }

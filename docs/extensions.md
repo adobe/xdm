@@ -29,6 +29,26 @@ Because the JSON-LD `@context` of APIs that use XDM is only changing when a new 
 However, for XDM producers that do not use the `Link` header and instead embed a `@context` in the JSON document, additional rules apply. Through the `extensibility` schema fragemnt, XDM ensures that no prefix mappings can be established other than the prefix mappings that are part of the XDM standard.
 This ensures that no matter who is generating an XDM document, or how the XDM document is being generated, that no conflicting properties can get introduced.
 
+> An example of an XDM Asset, extended with the property `asset_name` (fully qualified name is `https://ns.example.com/asset_name`)
+
+```json
+{
+  "https://ns.example.com/asset_name": "custom_asset_1",
+  "xdm:asset_id": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
+  "xdm:create_date": "2017-09-26T15:52:25+00:00",
+  "xdm:repository_created_date": "2017-09-26T15:52:25+00:00",
+  "xdm:repository_created_by": "lars",
+  "xdm:modify_date": "2017-09-26T15:52:25+00:00",
+  "xdm:repository_last_modified_date": "2017-09-26T15:52:25+00:00",
+  "xdm:repository_last_modified_by": "2017-09-26T15:52:25+00:00",
+  "xdm:version_id": "15",
+  "dc:title": "This is an example",
+  "xdm:size": 1632418,
+  "xdm:path": "/here",
+  "xdm:etag": "15"
+}
+```
+
 Users of XDM wishing to insert custom properties should select a namespace URI that is under their own control such as `https://ns.yourcompany.com`. Each namespace must be unique for a given resource, and using domain names that you own helps to avoid naming clashes with other users that are extending XDM as well.
 
 ## Extending XDM through new Schemas

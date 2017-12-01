@@ -13,7 +13,7 @@
     "properties": {
         "xdm:identity_provider": {
             "description": "The identity provider that manages this principal.",
-            "$ref": "https://ns.adobe.com/xdm/common/identityprovider#/definitions/name"
+            "$ref": "https://ns.adobe.com/xdm/common/identityprovider#/definitions/xdm:name"
         },
         "@id": {
             "type": "string",
@@ -24,5 +24,10 @@
             "format": "uri",
             "description": "The type of the principal. Acts as a processing hint to the client. Ideally, each value should be identified as a [URI](https://tools.ietf.org/html/rfc3986)."
         }
-    }
+    },
+    "required": [
+        "xdm:identity_provider",
+        "@id",
+        "@type"
+    ]
 }

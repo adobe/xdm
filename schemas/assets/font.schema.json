@@ -12,7 +12,7 @@
   "definitions": {
     "font": {
       "properties": {
-        "child_font_files": {
+        "xdm:child_font_files": {
           "type":"array",
           "name": "Child Font Files",
           "meta:usereditable": false,
@@ -21,25 +21,25 @@
             "type":"string"
           }
         },
-        "composite": {
+        "xdm:composite": {
           "type":"boolean",
           "name": "Composite",
           "meta:usereditable": false,
           "description": "`true` for composite fonts. See also `child_font_files`."
         },
-        "font_face": {
+        "xdm:font_face": {
           "type":"string",
           "name": "Font Face",
           "meta:usereditable": false,
           "description": "The name of the typeface, i.e. the specific weight or instance of the fontFamily. For example: Bold, Italic"
         },
-        "font_family": {
+        "xdm:font_family": {
           "type": "string",
           "name": "Font Family",
           "meta:usereditable": false,
           "description": "Complete collection of typefaces in different weights and classifications, but having the same point size, and designed to work together. For example, a Times Roman font family may include Times Roman Bold, Times Roman Extra Bold, Times Roman Italic, Times Roman Bold Italic, Times Roman Condensed, etc., all in the same size."
         },
-        "font_file_name": {
+        "xdm:font_file_name": {
           "type": "string",
           "name": "Font File Name",
           "meta:usereditable": false,
@@ -49,13 +49,13 @@
             "zx__.pfm"
           ]
         },
-        "font_name": {
+        "xdm:font_name": {
           "type": "string",
           "name": "Font Name",
           "meta:usereditable": false,
           "description": "PostScript name of the font. For example: `TimesNewRomanPS-BoldItalicMT`. `font_name` is manadatory to identify the font used in an asset but an asset may not have a `font` property if it has only images/vector arts (no text)."
         },
-        "font_type": {
+        "xdm:font_type": {
           "type": "string",
           "name": "Font Type",
           "meta:usereditable": false,
@@ -67,7 +67,7 @@
           ]
 
         },
-        "version_string": {
+        "xdm:version_string": {
           "type": "string",
           "meta:usereditable": false,
           "enum": [

@@ -6,11 +6,11 @@
     "of the License at http://www.apache.org/licenses/LICENSE-2.0"
   ],
   "$schema": "http://json-schema.org/schema#",
-  "$id": "https://ns.adobe.com/xdm/common/limits/storage",
-  "title": "ACP Storage Quota",
-  "description": "Represent hard and soft storage quota for ACP content storage",
-  "properties" : {
-    "storage" : {
+  "$id": "https://ns.adobe.com/xdm/content/repository-policies/quota",
+  "title": "Storage Quota",
+  "description": "Representation of hard and soft quota on content storage",
+  "definitions" : {
+    "quota" : {
       "type" : "object",
       "properties" : {
         "enforcement": {
@@ -19,7 +19,7 @@
           "type": "string",
           "enum": ["hard", "soft"]
         },
-        "quota": {
+        "amount": {
           "name": "Quota amount",
           "decription": "The quota against which consumption is measured at the point of the repository that links to this document.",
           "type": "number",
@@ -41,8 +41,10 @@
       },
       "required": [
         "enforcement",
-        "quota"
+        "amount"
       ]
     }
-  }
+  },
+  "type": "object",
+  "$ref": "#/definitions/quota"
 }

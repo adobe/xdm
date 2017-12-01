@@ -1,4 +1,0 @@
-Storage limits are used to manage and monitor storage quota and consumption at various directories throughout the content repository.
-Storage limits are expressed as two values: *Storage Quota* (`quota`) and *Current Consumption* (`consumed`). The former represents a limit of storage space allocated in the directory and its descendants. The latter represents the storage space that is currently allocated.
-Furthermore, *Storage Quota* can be either *hard* or *soft* via the 'enforcement' property. If a *hard* *Storage Quota* is set, the repository implementation will not allow clients to allocate storage beyond the quota value.
-Repository implementations will can generate notifications or alerts when the consumed space in a part of the repository for which a (hard or soft) quota has been defined exceeds a given percentage (e.g. 80%) of the *Storage Quota* value.

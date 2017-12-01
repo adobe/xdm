@@ -1,0 +1,4 @@
+Quota policy represents how storage consumption is managed and monitored in a given part of the repository.
+Quota is expressed as two values: *Quota Amount* (`amount`) and *Current Consumption* (`consumed`). The former represents a limit of storage space that can be allocated in the directory and its descendants. The latter represents the storage space that is currently allocated.
+Furthermore, *Storage Quota* can be either *hard* or *soft* via the 'enforcement' property. If a *hard* *Storage Quota* is set, the repository implementation will not allow clients to allocate storage beyond the *Quota Amount*.
+Repository implementations can generate notifications or alerts when the consumed space in a part of the repository for which a (hard or soft) quota has been defined exceeds a given percentage (e.g. 80%) of the *Quota Amount*.

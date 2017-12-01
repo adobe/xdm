@@ -91,7 +91,7 @@
     {"$ref":"#/definitions/font"}
   ],
   "required": [
-    "font_name",
-    "font_type"
+    "xdm:font_name",
+    "xdm:font_type"
   ]
 }

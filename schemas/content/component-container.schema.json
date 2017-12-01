@@ -13,12 +13,12 @@
   "definitions": {
     "container": {
       "properties": {
-          "type": {
+          "@type": {
               "type": "string",
               "format": "uri",
               "description": "Type of the container. Acts as processing hint for the client."
           },
-          "items": {
+          "xdm:items": {
               "type": "object",
               "description": "The items of this container.",
               "anyOf": [
@@ -26,7 +26,7 @@
                   { "$ref": "https://ns.adobe.com/xdm/content/page-component#/definitions/component"}
               ]
           },
-          "items_order": {
+          "xdm:items_order": {
               "type": "array",
               "uniqueItems": true,
               "items": {

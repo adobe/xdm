@@ -12,10 +12,10 @@ schemas.forEach(schema => {
   const directory = schema.replace(/\.schema\.json$/,"");
 
   const myExamples = examples.filter(example => {
-    return example.indexOf(directory) >= 0;
+    return example.indexOf(directory + ".example.") >= 0;
   });
   const myInvalids = invalids.filter(example => {
-    return example.indexOf(directory) >= 0;
+    return example.indexOf(directory + ".invalid.") >= 0;
   });
 
   if (myExamples.length==0) {

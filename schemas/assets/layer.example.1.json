@@ -1,9 +1,9 @@
 {
-  "name": "Example Layer",
-  "width": 768,
-  "height": 768,
-  "origin_y": 0,
-  "origin_x": 256,
-  "unit": "pixels",
-  "visible": true
+  "xdm:name": "Example Layer",
+  "stLayer:width": 768,
+  "stLayer:height": 768,
+  "stLayer:origin_y": 0,
+  "stLayer:origin_x": 256,
+  "stLayer:unit": "pixels",
+  "xdm:visible": true
 }

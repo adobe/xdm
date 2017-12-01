@@ -9,12 +9,12 @@
       "title": "Rational",
       "description": "A representation of rational numbers as fractions of denominator and numerator.",
       "properties": {
-        "numerator": {
+        "tiff:numerator": {
           "title": "Numerator",
           "description": "The numerator of a fraction",
           "type":"integer"
         },
-        "denominator": {
+        "tiff:denominator": {
           "title": "Denominator",
           "description": "The denominator of a fraction",
           "not": {"maximum": 0, "minimum": 0},
@@ -22,13 +22,13 @@
         }
       },
       "required": [
-        "numerator",
-        "denominator"
+        "tiff:numerator",
+        "tiff:denominator"
       ]
     },
     "image": {
       "properties": {
-        "orientation": {
+        "tiff:orientation": {
           "type":"integer",
           "meta:usereditable": false,
           "title": "Orientation",
@@ -46,7 +46,7 @@
             "8": "Rotate 270 degrees clockwise"
           }
         },
-        "x_resolution": {
+        "tiff:x_resolution": {
           "title": "X-Resolution",
           "meta:usereditable": false,
           "description": "Horizontal resolution in pixels per `resolution_unit`.",
@@ -55,7 +55,7 @@
             {"$ref": "#/definitions/rational"}
           ]
         },
-        "y_resolution": {
+        "tiff:y_resolution": {
           "title": "Y-Resolution",
           "meta:usereditable": false,
           "description": "Vertical resolution in pixels per `resolution_unit`.",
@@ -64,7 +64,7 @@
             {"$ref": "#/definitions/rational"}
           ]
         },
-        "resolution_unit": {
+        "tiff:resolution_unit": {
           "meta:usereditable": false,
           "title": "Resolution Unit",
           "description": "Unit used for `x_resolution` and `y_resolution`. Possible values are 2 (inches) and 3 (centimeters).",
@@ -78,14 +78,14 @@
             "3": "centimeters"
           }
         },
-        "number_of_pixels": {
+        "xmp:number_of_pixels": {
           "meta:usereditable": false,
           "type": "integer",
           "name": "Number of Pixels",
           "minimum": 0,
           "description": "Total number of pixels"
         },
-        "color_mode": {
+        "photoshop:color_mode": {
           "meta:usereditable": false,
           "title": "Color Mode",
           "description": "The color mode or image mode determines how colors combine based on the number of channels in a color model. Different color modes result in different levels of color detail and file size. For instance, use CMYK color mode for images in a full-color print brochure, and use RGB color mode for images in web or e-mail to reduce file size while maintaining color integrity.",
@@ -104,7 +104,7 @@
             "9": "LAB color"
           }
         },
-        "icc_profile": {
+        "photoshop:icc_profile": {
           "meta:usereditable": false,
           "type": "string",
           "title": "ICC Profile",
@@ -137,16 +137,16 @@
     {"$ref": "#/definitions/image"}
   ],
   "required": [
-    "asset_id",
-    "create_date",
-    "repository_created_date",
-    "repository_created_by",
-    "modify_date",
-    "repository_last_modified_date",
-    "repository_last_modified_by",
-    "version_id",
-    "size",
-    "path",
-    "etag"
+    "xdm:asset_id",
+    "xmp:create_date",
+    "xdm:repository_created_date",
+    "xdm:repository_created_by",
+    "xmp:modify_date",
+    "xdm:repository_last_modified_date",
+    "xdm:repository_last_modified_by",
+    "xdm:version_id",
+    "xdm:size",
+    "xdm:path",
+    "xdm:etag"
   ]
 }

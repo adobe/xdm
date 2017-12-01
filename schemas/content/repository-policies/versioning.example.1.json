@@ -1,4 +1,4 @@
 {
-  "retention_time": 60,
-  "max_milestones": 1000
+  "xdm:retention_time": 60,
+  "xdm:max_milestones": 1000
 }

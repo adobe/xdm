@@ -33,15 +33,15 @@
         },
         "extra-properties": {
             "properties": {
-                "partOf": {
+                "activitystreams:partOf": {
                     "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-partof",
                     "$ref": "#/definitions/single-collection-or-link"
                 },
-                "next": {
+                "activitystreams:next": {
                     "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-next",
                     "$ref": "#/definitions/single-collectionPage-or-link"
                 },
-                "prev": {
+                "activitystreams:prev": {
                     "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-prev",
                     "$ref": "#/definitions/single-collectionPage-or-link"
                 }

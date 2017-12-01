@@ -34,7 +34,7 @@
         "multiple-values": {
             "type": "object",
             "properties": {
-                "rel": {
+                "activitystreams:rel": {
                     "items": {
                         "$ref": "#/definitions/link-rel"
                     },

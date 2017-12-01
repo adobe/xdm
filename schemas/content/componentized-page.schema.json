@@ -32,32 +32,32 @@
     "definitions": {
         "page": {
             "properties": {
-                "path": {
+                "xdm:path": {
                     "type": "string",
                     "description": "Shows the hierarchy of the page. The path semantics should be same as that defined in [RFC 3986](https://tools.ietf.org/html/rfc3986#section-3.3). In case a repository is not path based then it can return the information which will help in browsing. It could be just an document id, or something like `{catalog}/{id}` in case of a document database."
                 },
-                "name": {
+                "xdm:name": {
                     "type": "string",
                     "description": "Name of the page in the repository. This could be a file name or any name provided by the repository to the page."
                 },
-                "title": {
+                "xdm:title": {
                     "type": "string",
                     "description": "Full title of the page."
                 },
-                "short_title": {
+                "xdm:short_title": {
                     "type": "string",
                     "description": "Short title of the page that is suitable to be displayed in navigation links."
                 },
-                "unlisted": {
+                "xdm:unlisted": {
                     "type": "boolean",
                     "description": "Indicates if this page should be hidden by default in navigational collections."
                 },
-                "template": {
+                "xdm:template": {
                     "type": "string",
                     "format": "uri-reference",
                     "description": "The template that was used to create this page."
                 },
-                "language": {
+                "xdm:language": {
                     "type": "string",
                     "pattern": "^(((([A-Za-z]{2,3}(-([A-Za-z]{3}(-[A-Za-z]{3}){0,2}))?)|[A-Za-z]{4}|[A-Za-z]{5,8})(-([A-Za-z]{4}))?(-([A-Za-z]{2}|[0-9]{3}))?(-([A-Za-z0-9]{5,8}|[0-9][A-Za-z0-9]{3}))*(-([0-9A-WY-Za-wy-z](-[A-Za-z0-9]{2,8})+))*(-(x(-[A-Za-z0-9]{1,8})+))?)|(x(-[A-Za-z0-9]{1,8})+)|((en-GB-oed|i-ami|i-bnn|i-default|i-enochian|i-hak|i-klingon|i-lux|i-mingo|i-navajo|i-pwn|i-tao|i-tay|i-tsu|sgn-BE-FR|sgn-BE-NL|sgn-CH-DE)|(art-lojban|cel-gaulish|no-bok|no-nyn|zh-guoyu|zh-hakka|zh-min|zh-min-nan|zh-xiang)))$",
                     "description": "Specifies the language of this page. the language property should conform to BPC 47, for example `en-GB`"

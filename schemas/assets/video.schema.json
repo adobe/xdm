@@ -6,14 +6,14 @@
   "definitions": {
     "video": {
       "properties": {
-        "extent": {
+        "xdm:extent": {
           "title": "Duration",
           "meta:usereditable": false,
           "type": "integer",
           "description": "The duration of the video in milliseconds. This property is inspired by `dc:extent`. However, `dc:extent` does not specify units. `core:extent` is always an integer and describes the duration in milliseconds.",
           "example": 8880000
         },
-        "video_frame_rate": {
+        "xmpDM:video_frame_rate": {
           "type": "string",
           "title": "Frame Rate",
           "meta:usereditable": false,
@@ -29,16 +29,16 @@
     {"$ref": "#/definitions/video"}
   ],
   "required": [
-    "asset_id",
-    "create_date",
-    "repository_created_date",
-    "repository_created_by",
-    "modify_date",
-    "repository_last_modified_date",
-    "repository_last_modified_by",
-    "version_id",
-    "size",
-    "path",
-    "etag"
+    "xdm:asset_id",
+    "xmp:create_date",
+    "xdm:repository_created_date",
+    "xdm:repository_created_by",
+    "xmp:modify_date",
+    "xdm:repository_last_modified_date",
+    "xdm:repository_last_modified_by",
+    "xdm:version_id",
+    "xdm:size",
+    "xdm:path",
+    "xdm:etag"
   ]
 }

@@ -11,11 +11,14 @@
   "description": "A Content Repository that is compliant with the Adobe Cloud Platform API specification.",
   "type": "object",
   "properties": {
-    "root": {
+    "xdm:root": {
       "name": "Root resource",
       "decription": "The location of the root resource of the repository. The root resource is of significance because it defines the entry point into the repository, in an hypermedia sense.",
       "type": "string",
       "format": "uri"
     }
-  }
+  },
+  "required": [
+    "xdm:root"
+  ]
 }

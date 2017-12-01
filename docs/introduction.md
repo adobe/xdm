@@ -43,3 +43,10 @@ This best practice holds for customer- and vendor-specific extensions to XDM, bu
 ### Versioning Schema
 
 …
+
+## Formal Expression
+
+XDM is formally specified through a combination of JSON Schema and some aspects of JSON for Linking Data (JSON-LD). 
+JSON Schema specifies unambiguously which properties and property values are allowed for a specific instance of a model, JSON-LD provides us with best practices of defining namespace prefixes, and identifying the semantics of property names.
+For consumers, it is not neccessary to understand JSON-LD, and expected to treat all XDM documents as JSON documents. 
+This means, if the JSON representation of two XDM models is identical, then the two models are considered identical.

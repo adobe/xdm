@@ -37,7 +37,7 @@ It is best practice to pass through unknown schemas, field names, or property va
 
 In general, consuming applications should reject invalid models when the invalidity of the received data is preventing the application from functioning, and pass through all other models.
 
-All extensions will be performed in a customer- or vendor-defined namespace, which means that extensions cannot change, modify, or break the semantics of previously introduced models, properties, or values.
+All extensions will be performed using URIs as property names, which means that extensions cannot change, modify, or break the semantics of previously introduced models, properties, or values, because all XDM-provided property names use a `prefix:name` pattern.
 
 This best practice holds for customer- and vendor-specific extensions to XDM, but also to version updates to XDM. 
 New schemas, field names, or property values introduced by either a newer version of XDM or an extension of XDM must not cause a consumer to fail, and should, when possible, passed through without modification.

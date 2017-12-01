@@ -41,6 +41,7 @@
             "^stLayerGroup:.*$": {},
             "^stArtboard:.*$": {},
             "^exif:.*$": {},
+            "^activitystreams:.*$": {},
             ".+://.+": {}
           },
           "additionalProperties": false
@@ -76,7 +77,8 @@
                 "stLayer": {"type": "string", "format": "url", "const": "http://ns.adobe.com/core/1.0/sType/Layer#" },
                 "stLayerGroup": {"type": "string", "format": "url", "const": "http://ns.adobe.com/core/1.0/sType/LayerGroup#" },
                 "stArtboard": {"type": "string", "format": "url", "const": "http://ns.adobe.com/core/1.0/sType/Artboard#" },
-                "exif": {"type": "string", "format": "url", "const": "http://ns.adobe.com/exif/1.0/#" }
+                "exif": {"type": "string", "format": "url", "const": "http://ns.adobe.com/exif/1.0/#" },
+                "activitystreams": {"type": "string", "format": "url", "const": "https://www.w3.org/ns/activitystreams" }
               },
               "additionalProperties": false,
               "required": [
@@ -111,6 +113,7 @@
             "^stLayerGroup:.*$": {},
             "^stArtboard:.*$": {},
             "^exif:.*$": {},
+            "^activitystreams:.*$": {},
             ".+://.+": {}
           },
           "required": [

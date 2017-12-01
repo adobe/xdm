@@ -111,8 +111,15 @@ Avoid non-semantic limits – don’t put current resource limits in the data mo
 ## Coding Styleguides
 
 * file names for schema files should be lower case and end with `.schema.json`
-* include an `"$id"` with a value like `"https://ns.adobe.com/xdm/assets/image"` in the schema
+* include an `"$id"` with a value like `"https://ns.adobe.com/xdm/assets/image"` in the schema (but leave out the `.schema.json`)
+* when referencing schemas, use the absolute `$id`, don't use relative references like `../content/content.schema.json` 
 * don't nest schemas too deeply. Break inline type definitions into separate `*.schema.json` files if they have properties with object types themselves.
+* ensure that there is a `meta:license` at the top of the schema
+* use JSON Schema `draft-6`
+* provide a `description` and `title` for each schema and each property
+* have the `title` at the top of the schema, so that it can be found without scrolling
+* make sure you have an example for every schema
+* run `npm test` before you make a pull request
 * convention is that property names are snake_case, when they appear in JSON
 
 ## Writing Styleguides

@@ -29,11 +29,11 @@
         },
         {
             "required": [
-                "id",
-                "type",
-                "published",
-                "objectType",
-                "object"
+                "@id",
+                "@type",
+                "activitystreams:published",
+                "xdm:object_type",
+                "activitystreams:object"
             ]
         }
     ]

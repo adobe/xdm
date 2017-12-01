@@ -218,7 +218,7 @@
           "description": "The language or languages of the resource.\nLanguages are specified in language code as defined in [IETF RFC 3066](https://www.ietf.org/rfc/rfc3066.txt), which is part of BCP 47, which is used elsewhere in XDM.",
           "meta:example": "[\n  \"pt-BR\",\n  \"es-ES\"]"
         },
-        "xmp:size": {
+        "xdm:size": {
           "meta:usereditable": false,
           "type": "integer",
           "title":"Size",
@@ -410,8 +410,8 @@
     "xmp:modify_date",
     "xdm:repository_last_modified_date",
     "xdm:repository_last_modified_by",
-    "version_id",
-    "xmp:size",
+    "xdm:version_id",
+    "xdm:size",
     "xdm:path",
     "xdm:etag"
   ]

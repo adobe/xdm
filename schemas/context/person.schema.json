@@ -15,7 +15,7 @@
             "properties": {
                 "xdm:name": {
                     "title": "Full name",
-                    "$ref": "./personname.schema.json",
+                    "$ref": "https://ns.adobe.com/xdm/context/personname.schema.json",
                     "description": "The person's full name"
                 },
                "xdm:birth_day": {

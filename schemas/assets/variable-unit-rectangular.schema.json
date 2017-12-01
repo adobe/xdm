@@ -12,33 +12,33 @@
   "definitions": {
     "rectangular": {
       "properties": {
-        "origin_x": {
+        "stLayer:origin_x": {
           "type": "integer",
           "title": "Origin X",
           "meta:usereditable": false,
           "description": "Origin X position - Base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards)"
         },
-        "origin_y": {
+        "stLayer:origin_y": {
           "type": "integer",
           "title": "Origin Y",
           "meta:usereditable": false,
           "description": "Origin Y position - Base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards)"
         },
-        "width": {
+        "stLayer:width": {
           "title": "Width",
           "meta:usereditable": false,
           "type": "integer",
           "exclusiveMinimum": 0,
           "description": "Width of the artboard"
         },
-        "height": {
+        "stLayer:height": {
           "title": "Height",
           "meta:usereditable": false,
           "type": "integer",
           "exclusiveMinimum": 0,
           "description": "Height of the artboard"
         },
-        "unit": {
+        "stLayer:unit": {
           "title": "Unit",
           "meta:usereditable": false,
           "type": "string",

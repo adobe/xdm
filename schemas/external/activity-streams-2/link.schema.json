@@ -42,19 +42,19 @@
     "type": "object",
     "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-link",
     "properties": {
-        "href": {
+        "activitystreams:href": {
             "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-href",
             "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/xsd-anyURI"
         },
-        "rel": {
+        "activitystreams:rel": {
             "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-rel",
             "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/link-rel"
         },
-        "mediaType": {
+        "activitystreams:mediaType": {
             "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-mediatype",
             "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/mime-media-type"
         },
-        "name": {
+        "activitystreams:name": {
             "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-name",
             "oneOf": [
                 {
@@ -65,19 +65,19 @@
                 }
             ]
         },
-        "hreflang": {
+        "activitystreams:hreflang": {
             "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-hreflang",
             "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/language-tag"
         },
-        "height": {
+        "activitystreams:height": {
             "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-height",
             "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/xsd-nonNegativeInteger"
         },
-        "width": {
+        "activitystreams:width": {
             "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-width",
             "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/xsd-nonNegativeInteger"
         },
-        "preview": {
+        "activitystreams:preview": {
             "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-preview",
             "$ref": "#/definitions/object-or-link-or-array-of-object-or-link"
         }

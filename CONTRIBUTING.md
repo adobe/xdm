@@ -2,6 +2,17 @@
 
 The Experience Data Model (XDM) project is developed as an Open Standard driven by Adobe. We welcome contributions from everyone who is interested in advancing digital experiences.
 
+## Public GitHub Ground Rules
+
+We are in the process of increasing the visibility of XDM to partners and to invite them to contribute and give feedback.
+For this purpose, we will move the XDM repository to [https://github.com/adobe/xdm](https://github.com/adobe/xdm). 
+For Adobe employees, following ground rules apply:
+
+* Like everyone, follow the [Code of Conduct](CODE_OF_CONDUCT.md)
+* Like everyone, follow these [Contributing](CONTRIBUTING.md) guides
+* Like always, don't share credentials, API keys, or other secrets in issues or in code
+* Focus on standardizing the category, not your specific product
+
 ## Things to Keep in Mind
 
 XDM uses a **review then commit** process, which means that no changes are being made without an *editor* approving the change.

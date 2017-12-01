@@ -121,6 +121,8 @@ Avoid non-semantic limits – don’t put current resource limits in the data mo
 * make sure you have an example for every schema
 * run `npm test` before you make a pull request
 * convention is that property names are snake_case, when they appear in JSON
+* don't invent your own `_id` attributes, use the `@id` convention
+* don't invent your own `type` attributes, use the `@type` convention
 
 ## Writing Styleguides
 

@@ -9,7 +9,7 @@
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "Person",
     "type": "object",
-    "description": "An individual person.  May represent a person acting in various roles, such as a customer, contact, or owner.",
+    "description": "An individual person. May represent a person acting in various roles, such as a customer, contact, or owner.",
     "definitions" : {
         "person" : {
             "properties": {
@@ -18,21 +18,21 @@
                     "$ref": "./personname.schema.json",
                     "description": "The person's full name"
                 },
-               "birthDay": {
+               "birth_day": {
                     "title": "Birth day",
                     "type": "integer",
                     "description": "The day of the month a person was born (1-31).",
                     "minimum": 1,
                     "maximum": 31
                 },
-                "birthMonth": {
+                "birth_month": {
                     "title": "Birth month",
                     "type": "integer",
                     "description": "The month of the year a person was born (1-12).",
                     "minimum": 1,
                     "maximum": 12
                 },
-                "birthYear": {
+                "birth_year": {
                     "title": "Birth year",
                     "type": "integer",
                     "description": "The year a person was born including the century (yyyy, e.g 1983).",
@@ -42,15 +42,15 @@
                 "gender": {
                     "title": "Gender",
                     "type": "string",
-                    "enum": [ "male", "female", "notSpecified", "nonSpecific" ],
+                    "enum": [ "male", "female", "not_specified", "non_specific" ],
                     "meta:enum": {
                         "male" : "Male",
                         "female" : "Female",
-                        "notSpecified" : "Not Specified",
-                        "nonSpecific" : "Nonspecific"
+                        "not_specified" : "Not Specified",
+                        "non_specific" : "Nonspecific"
                     },
                     "description": "Gender identity of the person.\n",
-                    "default": "notSpecified"
+                    "default": "not_specified"
                 }
             }
         }

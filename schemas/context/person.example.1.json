@@ -1,11 +1,11 @@
 {
-	"name" : {
-	    "givenName" : "Jane",
-	    "middleName" : "F",
-	    "surname" : "Doe"
+	"name": {
+	    "given_name": "Jane",
+	    "middle_name": "F",
+	    "surname": "Doe"
 	},
-	"birthMonth" : 1,
-	"birthDay" : 3,
-	"birthYear" : 1996,
-	"gender" : "female"
+	"birth_month": 1,
+	"birth_day": 3,
+	"birth_year": 1996,
+	"gender": "female"
 }

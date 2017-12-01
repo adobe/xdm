@@ -56,7 +56,6 @@
         }
     },
     "allOf" : [
-        {"$ref": "base/extensible.schema.json#/definitions/@context"},
         {"ref$" : "#/definitions/person"}
     ]
 }

@@ -224,13 +224,13 @@
           "title":"Size",
           "description": "Size of the asset in bytes"
         },
-        "xmp:path": {
+        "xdm:path": {
           "meta:usereditable": false,
           "type": "string",
           "title":"Path",
           "description": "Shows the hierarchy of the asset. The path semantics should be same as that defined in https://tools.ietf.org/html/rfc3986#section-3.3. In case a repository is not path based then it can return the information which will help in browsing. It could be just an asset id, or something like {catalog}/{id} in case of OZ."
         },
-        "xmp:etag": {
+        "xdm:etag": {
           "meta:usereditable": false,
           "type": "string",
           "title":"ETag",
@@ -403,16 +403,16 @@
     {"$ref": "#/definitions/asset"}    
   ],
   "required": [
-    "asset_id",
-    "create_date",
-    "repository_created_date",
-    "repository_created_by",
-    "modify_date",
-    "repository_last_modified_date",
-    "repository_last_modified_by",
+    "xdm:asset_id",
+    "xmp:create_date",
+    "xdm:repository_created_date",
+    "xdm:repository_created_by",
+    "xmp:modify_date",
+    "xdm:repository_last_modified_date",
+    "xdm:repository_last_modified_by",
     "version_id",
-    "size",
-    "path",
-    "etag"
+    "xmp:size",
+    "xdm:path",
+    "xdm:etag"
   ]
 }

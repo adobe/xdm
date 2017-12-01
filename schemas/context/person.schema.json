@@ -5,7 +5,7 @@
       "you may not use this file except in compliance with the License. You may obtain a copy",
       "of the License at http://www.apache.org/licenses/LICENSE-2.0"
       ],
-    "id": "https://ns.adobe.com/xdm/context/person.schema.json",
+    "$id": "https://ns.adobe.com/xdm/context/person",
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "Person",
     "type": "object",
@@ -15,7 +15,7 @@
             "properties": {
                 "xdm:name": {
                     "title": "Full name",
-                    "$ref": "https://ns.adobe.com/xdm/context/personname.schema.json",
+                    "$ref": "https://ns.adobe.com/xdm/context/personname",
                     "description": "The person's full name"
                 },
                "xdm:birth_day": {

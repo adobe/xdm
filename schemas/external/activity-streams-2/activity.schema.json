@@ -39,27 +39,27 @@
         },
         "extra-properties": {
             "properties": {
-                "actor": {
+                "activitystreams:actor": {
                     "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-actor",
                     "$ref": "#/definitions/object-or-link-or-array-of-object-or-link"
                 },
-                "object": {
+                "activitystreams:object": {
                     "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object",
                     "$ref": "#/definitions/object-or-link-or-array-of-object-or-link"
                 },
-                "target": {
+                "activitystreams:target": {
                     "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-target",
                     "$ref": "#/definitions/object-or-link-or-array-of-object-or-link"
                 },
-                "result": {
+                "activitystreams:result": {
                     "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-result",
                     "$ref": "#/definitions/object-or-link-or-array-of-object-or-link"
                 },
-                "origin": {
+                "activitystreams:origin": {
                     "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-origin",
                     "$ref": "#/definitions/object-or-link-or-array-of-object-or-link"
                 },
-                "instrument": {
+                "activitystreams:instrument": {
                     "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-instrument",
                     "$ref": "#/definitions/object-or-link-or-array-of-object-or-link"
                 }

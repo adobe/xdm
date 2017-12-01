@@ -12,7 +12,7 @@
   "definitions": {
     "asset": {
       "properties": {
-        "asset_id": {
+        "xdm:asset_id": {
           "type": "string",
           "meta:immutable": true,
           "meta:usereditable": false,
@@ -20,7 +20,7 @@
           "meta:example": "urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e",
           "pattern": "^urn:aaid:[A-Za-z0-9]+:[A-Za-z0-9]+:[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}$"
         },
-        "document_id": {
+        "xdm:document_id": {
           "type": "string",
           "title": "Document ID",
           "meta:immutable": true,
@@ -28,12 +28,12 @@
           "meta:example": "uuid:00112233-4455-6677-8899-AABBCCDDEEFF",
           "pattern": "^uuid:[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}$"
         },
-        "name": {
+        "xdm:name": {
           "title": "Asset Name",
           "type": "string",
           "description": "Name of the asset in the repository. This could be a file name or any name provided by the repository to the asset."
         },
-        "alias_ids": {
+        "xdm:alias_ids": {
           "type": "array",
           "meta:usereditable": false,
           "title": "Alias IDs",
@@ -53,13 +53,13 @@
           },
           "description": "List of IDs under which external systems track the asset. Example of external systems : google, facebook etc."
         },
-        "create_date": {
+        "xmp:create_date": {
           "title": "Date Created",
           "type": "string",
           "format": "date-time",
           "description": "The date and time the resource was created. It will be taken from within the asset."
         },
-        "creator": {
+        "dc:creator": {
           "title": "Creator",
           "type": "array",
           "items": {
@@ -67,20 +67,20 @@
           },
           "description": "An entity primarily responsible for making the resource. Examples of a creator include a person, an organization, or a service. Typically, the name of a creator should be used to indicate the entity.\n\nXMP usage is a list of creators. Entities should be listed in order of decreasing precedence, if such order is significant."
         },
-        "creator_tool": {
+        "xmp:creator_tool": {
           "title": "Creator Tool",
           "type": "string",
           "meta:usereditable": false,
           "description": "Name of the application which authored the asset. It takes the value present in `xmp:CreatorTool` property in XMP.\nIt is recommended that the value use this format convention:\nOrganization Software_name Version (token;token;...)\n- Organization: The name of the company or organization providing the software, no SPACEs.\n- Software_name: The full name of the software, SPACEs allowed.\n- version: The version of the software, no SPACEs.\n- tokens: Can be used to identify an operating system, plug-in, or more detailed version information."
         },
-        "modify_date": {
+        "xmp:modify_date": {
           "title": "Mofification Date",
           "type": "string",
           "meta:usereditable": false,
           "format": "date-time",
           "description": "The date and time when asset was last modified. The Date Time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\". Opposed to `repository_last_modified_date`, this is the time when the asset was last modified locally, with or without knowledge of the repository."
         },
-        "milestone": {
+        "xdm:milestone": {
           "title": "Milestone",
           "description": "A label given to a version of the asset.",
           "type": "object",
@@ -97,12 +97,12 @@
             }
           }
         },
-        "web_statement": {
+        "xmpRights:web_statement": {
           "type": "string",
           "description": "A Web URL for a statement of the ownership and usage rights for this resource. This is a normal (non-URI) simple value because of historical usage.",
           "meta:example": "http://creativecommons.org/licenses/by/4.0/"
         },
-        "rights": {
+        "dc:rights": {
           "title": "Rights",
           "type": "array",
           "items": {
@@ -110,12 +110,12 @@
           },
           "description": "Information about rights held in and over the resource.\nWe can live without mentioning locale if only one entry is there. Default locale is en_us.\nLocale codes should follow IETF BCP 47 standard."
         },
-        "marked": {
+        "xmpRights:marked": {
           "title": "Marked",
           "type": "boolean",
           "description": "When true, indicates that this is a rights-managed resource. When false, indicates that this is a public-domain resource. Omit if the state is unknown."
         },
-        "usage_terms": {
+        "xmpRights:usage_terms": {
           "type": "array",
           "title": "Usage Terms",
           "items": {
@@ -123,7 +123,7 @@
           },
           "description": "A collection of text instructions on how a resource can be legally used, given in a variety of languages."
         },
-        "copyright_owner": {
+        "plus:copyright_owner": {
           "title": "Copyright Owners",
           "type": "array",
           "items": {
@@ -131,41 +131,41 @@
           },
           "description": "Owner or owners of the copyright in the licensed asset."
         },
-        "credit": {
+        "photoshop:credit": {
           "title": "Credit",
           "type": "string",
           "description": "Who should be credited when the asset is published."
         },
-        "license": {
+        "cc:license": {
           "type": "string",
           "title": "License",
           "format": "uri",
           "description": "A license is a set of requests/permissions to users of a Work, e.g. a copyright license, the public domain, information for distributors."
         },
-        "attribution_url": {
+        "cc:attribution_url": {
           "title": "Attribution URL",
           "format": "uri",
           "type": "string",
           "description": "For licenses that require attribution, such as some Creative Commons licenses, a URL that identifies the user to which a work should be attributed. When publishing to Behance, we link to the user's profile page."
         },
-        "attribution_name": {
+        "cc:attribution_name": {
           "title": "Attribution Name",
           "type": "string",
           "description": "For licenses that require attribution, such as some Creative Commons licenses, the user to which a work is attributed. When publishing to Behance, this is taken from the user's Behance profile information."
         },
-        "manage_ui": {
+        "xmpMM:manage_ui": {
           "title": "Manage UI",
           "format": "uri",
           "type": "string",
           "description": "A URI that can be used to access information about the managed resource through a web browser."
         },
-        "manage_to": {
+        "xmpMM:manage_to": {
           "title": "Manage To",
           "type": "string",
           "format": "uri",
           "description": "A URI identifying the managed resource to the asset management system; the presence of this property is the formal indication that this resource is managed. The form and content of this URI is private to the asset management system."
         },
-        "history": {
+        "xmpMM:history": {
           "meta:usereditable": false,
           "type": "array",
           "title": "History",
@@ -174,7 +174,7 @@
           },
           "description": "High-level actions that resulted in the creation of this asset. It is intended to give human readers a description of the steps taken to make the changes from the previous version to this one. The list should be at an abstract level; it is not intended to be an exhaustive keystroke or other detailed history. The description should be sufficient for metadata management, as well as for workflow enhancement."
         },
-        "title": {
+        "dc:title": {
           "title": "Title",
           "type": "array",
           "items": {
@@ -182,7 +182,7 @@
           },
           "description": "A name given to the resource. Typically, a Title will be a name by which the resource is formally known."
         },
-        "description": {
+        "dc:description": {
           "type": "array",
           "title": "Description",
           "items": {
@@ -190,14 +190,14 @@
           },
           "description": "An account of the content of the resource. Description may include but is not limited to: an abstract, table of contents, reference to a graphical representation of content or a free-text account of the content."
         },
-        "format": {
+        "dc:format": {
           "meta:usereditable": false,
           "title":"Format",
           "pattern": "\\w+\\/[-.\\w]+(?:\\+[-.\\w]+)?",
           "meta:example": "application/vnd.adobe.photoshop",
           "description": "The physical or digital manifestation of the resource. Typically, Format should include the media-type of the resource. Format may be used to determine the software, hardware or other equipment needed to display or operate the resource. Recommended best practice is to select a value from a controlled vocabulary (for example, the list of [Internet Media Types](http://www.iana.org/ assignments/media-types/) defining computer media formats)."
         },
-        "not_safe": {
+        "xdm:not_safe": {
           "title":"NSFW State",
           "description": "Indicates if the content is SFW (safe for work). Safe is value 0 or missing value. NSFW is value 1.",
           "type": "integer",
@@ -207,7 +207,7 @@
             "1": "The content is not safe for work"
           }
         },
-        "language": {
+        "dc:language": {
           "meta:usereditable": false,
           "type": "array",
           "title":"Language",
@@ -218,38 +218,38 @@
           "description": "The language or languages of the resource.\nLanguages are specified in language code as defined in [IETF RFC 3066](https://www.ietf.org/rfc/rfc3066.txt), which is part of BCP 47, which is used elsewhere in XDM.",
           "meta:example": "[\n  \"pt-BR\",\n  \"es-ES\"]"
         },
-        "size": {
+        "xdm:size": {
           "meta:usereditable": false,
           "type": "integer",
           "title":"Size",
           "description": "Size of the asset in bytes"
         },
-        "path": {
+        "xdm:path": {
           "meta:usereditable": false,
           "type": "string",
           "title":"Path",
           "description": "Shows the hierarchy of the asset. The path semantics should be same as that defined in https://tools.ietf.org/html/rfc3986#section-3.3. In case a repository is not path based then it can return the information which will help in browsing. It could be just an asset id, or something like {catalog}/{id} in case of OZ."
         },
-        "etag": {
+        "xdm:etag": {
           "meta:usereditable": false,
           "type": "string",
           "title":"ETag",
           "description": "An  ETag is an HTTP response header returned by an HTTP/1.1 compliant web server used to determine change in content of a resource at a given URL. "
         },
-        "n_pages": {
+        "xmpTPg:n_pages": {
           "meta:usereditable": false,
           "title":"Number of pages",
           "type": "integer",
           "minimum": 0,
           "description": "The number of pages in the document (including any in contained documents)."
         },
-        "gps_altitude": {
+        "exif:gps_altitude": {
           "meta:usereditable": false,
           "title":"GPS Altitude",
           "description": "GPS tag 6, 0x06. Indicates altitude in meters.",
           "type": "number"
         },
-        "gps_altitude_ref": {
+        "exif:gps_altitude_ref": {
           "meta:usereditable": false,
           "type": "integer",
           "title":"GPS Altitude Reference",
@@ -263,21 +263,21 @@
           },
           "description": "GPS tag 5, 0x5. Indicates whether the altitude is above or below sea level:\n0 = Above sea level\n1 = Below sea level"
         },
-        "gps_latitude": {
+        "exif:gps_latitude": {
           "meta:usereditable": false,
           "type": "string",
           "title":"GPS Latitude",
           "pattern": "^[\\d]{1,3},[\\d]{1,2}(,[\\d]{1,2}|.[\\d]+)[NS]$",
           "description": "GPS tag 2, 0x02 (position) and 1, 0x01 (North/South). Indicates latitude. A Text value in the form “DDD,MM,SSk” or “DDD,MM.mmk”, where:\n* DDD is a number of degrees\n* MM is a number of minutes\n* SS is a number of seconds\n* mm is a fraction of minutes\n* k is a single character N or S, indicating a direction (north, south)\nLeading zeros are not necessary for the for DDD, MM, and SS values. The DDD,MM.mmk form should be used when any of the native Exif component rational values has a denominator other than 1. There can be any number of fractional digits."
         },
-        "gps_longitude": {
+        "exif:gps_longitude": {
           "meta:usereditable": false,
           "type": "string",
           "title":"GPS Longitude",
           "pattern": "^[\\d]{1,3},[\\d]{1,2}(,[\\d]{1,2}|.[\\d]+)[EW]$",
           "description": "GPS tag 4, 0x04 (position) and 3, 0x03 (East/West). Indicates longitude. A Text value in the form “DDD,MM,SSk” or “DDD,MM.mmk”, where:\n* DDD is a number of degrees\n* MM is a number of minutes\n* SS is a number of seconds\n* mm is a fraction of minutes\n* k is a single character E or W, indicating a direction (east, west)\nLeading zeros are not necessary for the for DDD, MM, and SS values. The DDD,MM.mmk form should be used when any of the native Exif component rational values has a denominator other than 1. There can be any number of fractional digits."
         },
-        "rating": {
+        "xmp:rating": {
           "meta:usereditable": false,
           "type": "integer",
           "title":"Rating",
@@ -301,7 +301,7 @@
           },
           "description": "A user-assigned rating for this file. The value shall be -1 or in the range [0..5], where -1 indicates “rejected” and 0 indicates “unrated”. If xmp:Rating is not present, a value of 0 should be assumed. NOTE: Anticipated usage is for a typical “star rating” UI, with the addition of a notion of rejection."
         },
-        "subject": {
+        "dc:subject": {
           "title":"Subject",
           "type": "array",
           "items": {
@@ -309,7 +309,7 @@
           },
           "description": "Set of descriptive phrases or keywords that describe the content of the resource. These keywords are part of the XMP metadata of the asset. Compare this with the `keyword` and `machineKeywords` properties, which provide more structure and context."
         },
-        "keywords": {
+        "xmp:keywords": {
           "type": "array",
           "title":"Keywords",
           "items": {
@@ -345,7 +345,7 @@
           },
           "description": "The `keywords` property is used to track human-assigned descriptive phrases like keywords or tags of an asset. Rather than a plan list of tags, it is a structured set of keywords, where keywords can have an explicit importance ranking and a locale. This allows the management of multi-lingual keywords for a given asset. For machine-generated keywords, use the `machine_keywords` property. "
         },
-        "machine_keywords": {
+        "xmp:machine_keywords": {
           "meta:usereditable": false,
           "type": "array",
           "items": {
@@ -374,7 +374,7 @@
           },
           "description": "The `machineKeywords` property is used to track machine-assigned descriptive phrases like keywords or tags of an asset. Rather than a plan list of tags, it is a structured set of keywords, where keywords can have an explicit confidence ranking and a locale. For human-defined keywords, use the `keywords` property. "
         },
-        "fonts": {
+        "xmp:fonts": {
           "title":"Fonts",
           "meta:usereditable": false,
           "description": "This is a list of fonts and typefaces that are used in the document. The order of fonts does not matter.",
@@ -383,10 +383,10 @@
             "$ref": "https://ns.adobe.com/xdm/assets/font#/definitions/font"
           }
         },
-        "layers": {
+        "xmp:layers": {
           "$ref": "https://ns.adobe.com/xdm/assets/layer-group#/definitions/layer-group"
         },
-        "artboards": {
+        "xmp:artboards": {
           "title": "Artboards",
           "type": "array",
           "items": {
@@ -403,16 +403,16 @@
     {"$ref": "#/definitions/asset"}    
   ],
   "required": [
-    "asset_id",
-    "create_date",
-    "repository_created_date",
-    "repository_created_by",
-    "modify_date",
-    "repository_last_modified_date",
-    "repository_last_modified_by",
-    "version_id",
-    "size",
-    "path",
-    "etag"
+    "xdm:asset_id",
+    "xmp:create_date",
+    "xdm:repository_created_date",
+    "xdm:repository_created_by",
+    "xmp:modify_date",
+    "xdm:repository_last_modified_date",
+    "xdm:repository_last_modified_by",
+    "xdm:version_id",
+    "xdm:size",
+    "xdm:path",
+    "xdm:etag"
   ]
 }

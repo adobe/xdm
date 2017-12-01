@@ -12,17 +12,17 @@
   "definitions": {
     "layer": {
       "properties": {
-        "name": {
+        "xdm:name": {
           "type":"string",
           "title": "Name",
           "description": "Name of the Layer. This will be visible to the user and users can specify names that can help them to identify different Layers"
         },
-        "visible": {
+        "xdm:visible": {
           "type":"boolean",
           "title": "Visible",
           "description": "Indicates if a layer is visible in the document. `visible = true` - Layer is visible and `false` - Layer is hidden. Visibility is not to be confused with opacity, which is a layer effect."
         },
-        "style": {
+        "xdm:style": {
           "type":"string",
           "name": "Style",
           "meta:usereditable": false,

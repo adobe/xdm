@@ -49,23 +49,23 @@
         },
         "extra-properties": {
             "properties": {
-                "totalItems": {
+                "activitystreams:totalItems": {
                     "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-totalitems",
                     "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/xsd-nonNegativeInteger"
                 },
-                "current": {
+                "activitystreams:current": {
                     "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-current",
                     "$ref": "#/definitions/single-collectionPage-or-link"
                 },
-                "first": {
+                "activitystreams:first": {
                     "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-first",
                     "$ref": "#/definitions/single-collectionPage-or-link"
                 },
-                "last": {
+                "activitystreams:last": {
                     "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-last",
                     "$ref": "#/definitions/single-collectionPage-or-link"
                 },
-                "items": {
+                "activitystreams:items": {
                     "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-items",
                     "$ref": "#/definitions/object-or-link-or-ordered-list-of-object-or-link"
                 }

@@ -13,33 +13,33 @@
     "definitions" : {
         "person" : {
             "properties": {
-                "name": {
+                "xdm:name": {
                     "title": "Full name",
-                    "$ref": "./personname.schema.json",
+                    "$ref": "https://ns.adobe.com/xdm/context/personname.schema.json",
                     "description": "The person's full name"
                 },
-               "birth_day": {
+               "xdm:birth_day": {
                     "title": "Birth day",
                     "type": "integer",
                     "description": "The day of the month a person was born (1-31).",
                     "minimum": 1,
                     "maximum": 31
                 },
-                "birth_month": {
+                "xdm:birth_month": {
                     "title": "Birth month",
                     "type": "integer",
                     "description": "The month of the year a person was born (1-12).",
                     "minimum": 1,
                     "maximum": 12
                 },
-                "birth_year": {
+                "xdm:birth_year": {
                     "title": "Birth year",
                     "type": "integer",
                     "description": "The year a person was born including the century (yyyy, e.g 1983).",
                     "minimum": 1,
                     "maximum" : 32767
                 },
-                "gender": {
+                "xdm:gender": {
                     "title": "Gender",
                     "type": "string",
                     "enum": [ "male", "female", "not_specified", "non_specific" ],

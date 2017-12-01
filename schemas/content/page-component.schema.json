@@ -13,7 +13,7 @@
   "definitions":{
     "component": {
       "properties": {
-          "type": {
+          "@type": {
               "type": "string",
               "format": "uri",
               "description": "Type of the component. Acts as processing hint for the client."

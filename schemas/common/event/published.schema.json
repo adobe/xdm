@@ -13,7 +13,7 @@
     { "$ref": "https://ns.adobe.com/xdm/common/eventenvelope" },
     {
       "properties": {
-        "type": {
+        "@type": {
           "type": "string",
           "const": "https://ns.adobe.com/xdm/common/event/published"
         }

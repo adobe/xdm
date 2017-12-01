@@ -12,45 +12,45 @@
     "definitions": {
       "geo" : {
         "properties": {
-            "country_code": {
+            "xdm:country_code": {
                 "title": "Country code",
                 "type": "string",
                 "pattern": "^[A-Z]{2}$",
                 "description": "The two-character [ISO 3166-1 alpha-2](https://datahub.io/core/country-list) code for the country."
             },
-            "state_province": {
+            "xdm:state_province": {
                 "title": "State or province",
                 "type": "string",
                 "description": "The state, or province portion of the observation."
             },
-            "city": {
+            "xdm:city": {
                 "title": "City",
                 "type": "string",
                 "description": "The name of the city."
             },
-            "postal_code": {
+            "xdm:postal_code": {
                 "title": "Postal code",
                 "type": "string",
                 "description": "The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code."
             },
-            "dma_id": {
+            "xdm:dma_id": {
                 "title": "Designated Market Area",
                 "type": "integer",
                 "description": "The Nielsen Media Research designated market area."
             },
-            "msa_id": {
+            "xdm:msa_id": {
                 "title": "Metropolitan Statistical Area",
                 "type": "integer",
                 "description": "The Metropolitan Statistical Area in the USA where the observation occurred."
             },
-            "latitude": {
+            "xdm:latitude": {
                 "title": "Latitude",
                 "type": "number",
                 "minimum": -90,
                 "maximum": 90,
                 "description": "The signed vertical coordinate of a geographic point."
             },
-            "longitude": {
+            "xdm:longitude": {
                 "title": "Longitude",
                 "type": "number",
                 "minimum": -180,

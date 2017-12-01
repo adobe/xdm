@@ -104,6 +104,23 @@ Avoid non-semantic limits – don’t put current resource limits in the data mo
 * don't nest schemas too deeply. Break inline type definitions into separate `*.schema.json` files if they have properties with object types themselves.
 * convention is that property names are snake_case, when they appear in JSON
 
+### Re-Use and Modularity
+
+In order to encourage re-use of definitions and modularity of schema files, avoid putting all property declarations into the root of the schema, instead use a `definitions` object with one sub-key for each semantic unit. Then, at the bottom of your schema definition, `$ref`erence them using the `allOf` construct.
+
+```json
+"allOf":[
+    {"$ref": "#/definitions/mydefinition"},
+    {"$ref": "#/definitions/myotherdefinition"},
+    {"$ref": "https://ns.adobe.com/xdm/assets/image#/definitions/someotherdefinition"},
+  ]
+```
+
+In this example, the definitions `mydefinition` and `myotherdefinition` are pulled from the current schema, while `someotherdefinition` is pulled from `https://ns.adobe.com/xdm/assets/image`
+
+JSON Schema [does not have a built-in inheritance mechanism](https://github.com/json-schema-org/json-schema-spec/issues/348#issuecomment-322940347), so the use of `definitions` is considered [best practice in structuring complex schemas](https://spacetelescope.github.io/understanding-json-schema/structuring.html).
+
+
 ## Writing Styleguides
 
 For all writing, please follow the [Adobe I/O style guide](https://www.adobe.io/about/contributing/doc-style_master.html).

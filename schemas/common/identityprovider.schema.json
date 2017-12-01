@@ -18,5 +18,8 @@
     "type": "object",
     "properties": {
         "name": { "$ref": "#/definitions/xdm:name" }
-    }
+    },
+    "required":[
+        "xdm:name"
+    ]
 }

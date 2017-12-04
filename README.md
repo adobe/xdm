@@ -43,6 +43,7 @@ When all dependencies are installed, simply run
 
 ```bash
 $ npm install
+$ npm run package
 ```
 
 This will fetch all dependencies, then generate Markdown in the `docs/reference` directory and then generate an AEM package under `xdm-docs.zip`. The package can be uploaded using the command
@@ -69,6 +70,7 @@ A full process would then look like this:
 $ npm config set xdm-models:aem_password $AEM_PASSWORD
 $ npm install
 $ npm test
+$ npm run package
 $ npm run upload
 $ npm run activate
 ```

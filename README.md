@@ -1,5 +1,7 @@
 # Experience Data Model (XDM) Schema
 
+[![CircleCI](https://circleci.com/gh/adobe/xdm.svg?style=svg)](https://circleci.com/gh/adobe/xdm)
+
 The [Experience Data Model](https://www.adobe.io/open/standards/xdm) (XDM) is the language of digital experiences. XDM is an open standard, driven by Adobe to improve the interoperability, expressivness, and power of digital experiences. This repository contains the source code for the formal specification of the XDM model, using the JSON Schema language.
 
 ## Project Layout

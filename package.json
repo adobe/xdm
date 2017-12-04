@@ -1,6 +1,6 @@
 {
-  "name": "xdm-models",
-  "version": "0.0.1",
+  "name": "xdm",
+  "version": "0.1.0",
   "description": "Experience Data Models",
   "main": "",
   "config": {
@@ -22,7 +22,7 @@
     "shelljs": "^0.7.8",
     "shx": "^0.2.2",
     "ajv-cli": "*",
-    "jsonschema2md": "git+ssh://git@git.corp.adobe.com:AdobeCloudPlatform/jsonschema2md.git"
+    "jsonschema2md": "git+ssh://git@github.com:adobe/jsonschema2md.git"
   },
   "license": "Apache-2.0"
 }

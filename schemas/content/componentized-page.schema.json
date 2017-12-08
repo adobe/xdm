@@ -22,12 +22,12 @@
     }
   ],
   "required": [
-    "name",
-    "path",
-    "repository_created_date",
-    "repository_created_by",
-    "repository_last_modified_date",
-    "repository_last_modified_by"
+    "xdm:name",
+    "xdm:path",
+    "xdm:repositoryCreatedDate",
+    "xdm:repositoryCreatedBy",
+    "xdm:repositoryLastModifiedDate",
+    "xdm:repositoryLastModifiedBy"
   ],
   "definitions": {
     "page": {
@@ -44,7 +44,7 @@
           "type": "string",
           "description": "Full title of the page."
         },
-        "xdm:short_title": {
+        "xdm:shortTitle": {
           "type": "string",
           "description": "Short title of the page that is suitable to be displayed in navigation links."
         },

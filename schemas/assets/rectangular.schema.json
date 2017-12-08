@@ -12,7 +12,7 @@
   "definitions": {
     "rectangular": {
       "properties": {
-        "tiff:image_width": {
+        "tiff:imageWidth": {
           "title": "Width",
           "description": "Width in pixels",
           "type": "integer",
@@ -20,15 +20,15 @@
           "minimum": 0,
           "example": 768
         },
-        "tiff:image_length": {
+        "tiff:imageLength": {
           "title": "Length",
-          "description": "Height in pixels. To maintain continuity with the XMP and TIFF standards, the height of an image or video is specified in the property `image_length`. The duration of the video (also commonly called length) is specified in the property `extent`",
+          "description": "Height in pixels. To maintain continuity with the XMP and TIFF standards, the height of an image or video is specified in the property `imageLength`. The duration of the video (also commonly called length) is specified in the property `extent`",
           "type": "integer",
           "meta:usereditable": false,
           "minimum": 0,
           "example": 1024
         },
-        "xdm:aspect_ratio": {
+        "xdm:aspectRatio": {
           "title": "Aspect Ratio",
           "description": "Describes the proportional relationship between the width and the height. To determine the aspect ratio, divide width by height. Media that have an aspect ratio smaller than one are in landscape format, media that have an aspect ratio greater than one are in portrait format.",
           "type": "number",

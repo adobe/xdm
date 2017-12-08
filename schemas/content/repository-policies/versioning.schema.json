@@ -13,12 +13,12 @@
     "versioning": {
       "type": "object",
       "properties": {
-        "xdm:retention_time": {
+        "xdm:retentionTime": {
           "name": "Retention Time (days)",
           "description": "The maximum time (in days) up to which a version is retained if it is not marked as a milestone",
           "type": "integer"
         },
-        "xdm:max_milestones": {
+        "xdm:maxMilestones": {
           "name": "Maximum Number of Milestones",
           "description": "The maximum number of old versions that can be marked as a mlestone on a versioned resource",
           "type": "integer"

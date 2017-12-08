@@ -11,7 +11,7 @@
   "description": "This model represents a principal in an access control system. Principals are entities that have been authenticated against an identity provider.",
   "type": "object",
   "properties": {
-    "xdm:identity_provider": {
+    "xdm:identityProvider": {
       "description": "The identity provider that manages this principal.",
       "$ref": "https://ns.adobe.com/xdm/common/identityprovider#/definitions/xdm:name"
     },
@@ -26,7 +26,7 @@
     }
   },
   "required": [
-    "xdm:identity_provider",
+    "xdm:identityProvider",
     "@id",
     "@type"
   ]

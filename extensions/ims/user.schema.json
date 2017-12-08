@@ -13,7 +13,7 @@
     "user": {
       "type": "object",
       "properties": {
-        "identity_provider": {
+        "xdm:identityProvider": {
           "type": "string",
           "const": "ims"
         },

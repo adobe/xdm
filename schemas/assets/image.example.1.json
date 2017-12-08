@@ -1,20 +1,20 @@
 {
-  "xdm:asset_id": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
-  "xmp:create_date": "2017-09-26T15:52:25+00:00",
-  "xdm:repository_created_date": "2017-09-26T15:52:25+00:00",
-  "xdm:repository_created_by": "lars",
-  "xmp:modify_date": "2017-09-26T15:52:25+00:00",
-  "xdm:repository_last_modified_date": "2017-09-26T15:52:25+00:00",
-  "xdm:repository_last_modified_by": "2017-09-26T15:52:25+00:00",
-  "xdm:version_id": "15",
+  "xdm:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
+  "xmp:createDate": "2017-09-26T15:52:25+00:00",
+  "xdm:repositoryCreatedDate": "2017-09-26T15:52:25+00:00",
+  "xdm:repositoryCreatedBy": "lars",
+  "xmp:modifyDate": "2017-09-26T15:52:25+00:00",
+  "xdm:repositoryLastModifiedDate": "2017-09-26T15:52:25+00:00",
+  "xdm:repositoryLastModifiedBy": "2017-09-26T15:52:25+00:00",
+  "xdm:versionID": "15",
   "xdm:size": 1632418,
   "xdm:path": "here",
   "xdm:etag": "15",
-  "tiff:image_length": 768,
-  "tiff:image_width": 1024,
-  "xdm:aspect_ratio": 1.3333333,
+  "tiff:imageLength": 768,
+  "tiff:imageWidth": 1024,
+  "xdm:aspectRatio": 1.3333333,
   "tiff:orientation": 1,
-  "tiff:x_resolution": {
+  "tiff:XResolution": {
     "tiff:numerator": 300,
     "tiff:denominator": 1
   }

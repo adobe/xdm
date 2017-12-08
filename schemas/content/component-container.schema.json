@@ -30,7 +30,7 @@
             }
           ]
         },
-        "xdm:items_order": {
+        "xdm:itemsOrder": {
           "type": "array",
           "uniqueItems": true,
           "items": {
@@ -47,7 +47,7 @@
     }
   ],
   "required": [
-    "type",
-    "items"
+    "@type",
+    "xdm:items"
   ]
 }

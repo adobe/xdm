@@ -13,7 +13,7 @@
     "encryption": {
       "type": "object",
       "properties": {
-        "xdm:key_type": {
+        "xdm:keyType": {
           "name": "Key Type",
           "description": "The type of encryption key - 'platform': a key used across all tenants of the platform; 'org': a key managed exclusviely for the org to which the storage belongs",
           "meta:usereditable": false,
@@ -23,7 +23,7 @@
             "org"
           ]
         },
-        "xdm:key_status": {
+        "xdm:keyStatus": {
           "name": "Key Status",
           "description": "The status of the encryption key - 'enabled': the key is enabled and content is accessible to authorized users; 'disabled': the key is disabled and content is not accessible",
           "meta:usereditable": false,

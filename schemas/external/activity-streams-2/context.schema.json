@@ -103,7 +103,7 @@
         "@language": {
           "oneOf": [
             {
-              "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langstring/#definitions/language-tag"
+              "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langstring#/definitions/tag"
             },
             {
               "type": "null"
@@ -163,7 +163,7 @@
         "@language": {
           "oneOf": [
             {
-              "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langstring/#definitions/language-tag"
+              "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langstring#/definitions/tag"
             },
             {
               "type": "null"

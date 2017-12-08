@@ -63,13 +63,13 @@
           "type": "string"
         },
         {
-          "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langString"
+          "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langstring"
         }
       ]
     },
     "activitystreams:hreflang": {
       "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-hreflang",
-      "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langstring/#definitions/language-tag"
+      "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langstring#/definitions/tag"
     },
     "activitystreams:height": {
       "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-height",

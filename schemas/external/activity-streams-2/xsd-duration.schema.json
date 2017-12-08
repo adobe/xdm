@@ -8,5 +8,6 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$id": "https://ns.adobe.com/xdm/external/activity-streams-2/xsd-duration",
     "type": "string",
-    "title":  "XSD Duration according to [specification](https://www.w3.org/TR/xmlschema11-2/#duration)"
+    "description":  "XSD Duration according to [specification](https://www.w3.org/TR/xmlschema11-2/#duration)",
+    "title": "XSD Duration"
 }

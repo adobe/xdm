@@ -42,7 +42,8 @@
                 "@id": {
                     "anyOf": [
                         {
-                            "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/uri"
+                            "type": "string",
+                            "format": "uri"
                         },
                         {
                             "$ref": "#/definitions/term"
@@ -61,7 +62,8 @@
                 "@reverse": {
                     "anyOf": [
                         {
-                            "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/uri"
+                            "type": "string",
+                            "format": "uri"
                         },
                         {
                             "$ref": "#/definitions/term"
@@ -80,7 +82,8 @@
                 "@type": {
                     "anyOf": [
                         {
-                            "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/uri"
+                            "type": "string",
+                            "format": "uri"
                         },
                         {
                             "$ref": "#/definitions/term"
@@ -132,7 +135,8 @@
                 "@vocab": {
                     "anyOf": [
                         {
-                            "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/uri"
+                            "type": "string",
+                            "format": "uri"
                         },
                         {
                             "$ref": "#/definitions/blank-node-identifier"
@@ -148,7 +152,8 @@
                 "@base": {
                     "oneOf": [
                         {
-                            "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/uri"
+                            "type": "string",
+                            "format": "uri"
                         },
                         {
                             "type": "null"
@@ -170,7 +175,8 @@
                 "^([^:@_].*)|(_:.*)$": {
                     "anyOf": [
                         {
-                            "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/uri"
+                            "type": "string",
+                            "format": "uri"
                         },
                         {
                             "$ref": "#/definitions/term"
@@ -203,7 +209,8 @@
         "single-context-or-uri": {
             "oneOf": [
                 {
-                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/uri"
+                    "type": "string",
+                    "format": "uri"
                 },
                 {
                     "$ref": "#/definitions/single-context"

@@ -16,7 +16,8 @@
         "link-rel": {
             "anyOf": [
                 {
-                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/uri"
+                    "type": "string",
+                    "format": "uri"
                 },
                 {
                     "$ref": "#/definitions/regular-rel-type"

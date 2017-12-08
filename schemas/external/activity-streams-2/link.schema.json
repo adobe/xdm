@@ -12,7 +12,8 @@
         "single-value": {
             "anyOf": [
                 {
-                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/uri"
+                    "type": "string",
+                    "format": "uri"
                 },
                 {
                     "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/object"

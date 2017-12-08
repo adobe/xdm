@@ -1,35 +1,39 @@
 {
-    "meta:license": [
-        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
-        "This file is licensed to you under the Apache License, Version 2.0 (the 'License');",
-        "you may not use this file except in compliance with the License. You may obtain a copy",
-        "of the License at http://www.apache.org/licenses/LICENSE-2.0"
-    ],
-    "$schema": "http://json-schema.org/draft-06/schema#",
-    "$id": "https://ns.adobe.com/xdm-extensions/ims/user",
-    "title": "IMS User",
-    "description": "This model represents an authenticated IMS User. The IMS user prinicpal is a user account under Adobe's identity management system (IMS).",
-    "definitions": {
-        "user": {
-            "type": "object",
-            "properties": {
-                "xdm:identityProvider": {
-                    "type": "string",
-                    "const": "ims"
-                },
-                "id": {
-                    "description": "Principal id identifies a user account in IMS. Its value is equivalent to the standard claim, `sub` as mentioned in the [openid connect 1.0 standard claims](http://openid.net/specs/openid-connect-core-1_0.html#StandardClaim). This value can be obtained by fetching the [userinfo resource](http://openid.net/specs/openid-connect-core-1_0.html#UserInfo) for a particular user [in IMS](https://wiki.corp.adobe.com/display/ims/IMS+API+-+userinfo).",
-                    "type": "string"
-                },
-                "type": {
-                    "type": "string",
-                    "const": "https://ns.adobe.com/xdm-extensions/ims/user"
-                }
-            }
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This file is licensed to you under the Apache License, Version 2.0 (the 'License');",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at http://www.apache.org/licenses/LICENSE-2.0"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm-extensions/ims/user",
+  "title": "IMS User",
+  "description": "This model represents an authenticated IMS User. The IMS user prinicpal is a user account under Adobe's identity management system (IMS).",
+  "definitions": {
+    "user": {
+      "type": "object",
+      "properties": {
+        "xdm:identityProvider": {
+          "type": "string",
+          "const": "ims"
+        },
+        "id": {
+          "description": "Principal id identifies a user account in IMS. Its value is equivalent to the standard claim, `sub` as mentioned in the [openid connect 1.0 standard claims](http://openid.net/specs/openid-connect-core-1_0.html#StandardClaim). This value can be obtained by fetching the [userinfo resource](http://openid.net/specs/openid-connect-core-1_0.html#UserInfo) for a particular user [in IMS](https://wiki.corp.adobe.com/display/ims/IMS+API+-+userinfo).",
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "const": "https://ns.adobe.com/xdm-extensions/ims/user"
         }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/principal"
     },
-    "allOf": [
-        { "$ref": "https://ns.adobe.com/xdm/common/principal" },
-        { "$ref": "#/definitions/user" }
-    ]
+    {
+      "$ref": "#/definitions/user"
+    }
+  ]
 }

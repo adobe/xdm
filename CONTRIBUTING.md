@@ -122,6 +122,7 @@ Avoid non-semantic limits – don’t put current resource limits in the data mo
 * run `npm test` before you make a pull request
 * convention is that property names are in camelCase, when they appear in JSON
 * Acronyms in camelCase like ID, API, JSON are also capitalized in camelCase, such as `assetID`
+* When combining two acronyms, use lowercase for the first and uppercase for the second, such as `dmaID`
 * don't invent your own `ID` attributes, use the `@id` convention
 * don't invent your own `type` attributes, use the `@type` convention
 

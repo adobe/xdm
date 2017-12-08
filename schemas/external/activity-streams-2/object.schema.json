@@ -131,7 +131,8 @@
                 },
                 "activitystreams:endTime": {
                     "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-endtime",
-                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/xsd-dateTime"
+                    "type": "string",
+                    "format": "date-time"
                 },
                 "activitystreams:generator": {
                     "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-generator",
@@ -159,7 +160,8 @@
                 },
                 "activitystreams:published": {
                     "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-published",
-                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/xsd-dateTime"
+                    "type": "string",
+                    "format": "date-time"
                 },
                 "activitystreams:replies": {
                     "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-replies",
@@ -167,7 +169,8 @@
                 },
                 "activitystreams:startTime": {
                     "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-starttime",
-                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/xsd-dateTime"
+                    "type": "string",
+                    "format": "date-time"
                 },
                 "activitystreams:summary": {
                     "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-summary",
@@ -179,7 +182,8 @@
                 },
                 "activitystreams:updated": {
                     "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-updated",
-                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/xsd-dateTime"
+                    "type": "string",
+                    "format": "date-time"
                 },
                 "activitystreams:url": {
                     "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-url",

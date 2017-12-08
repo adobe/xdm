@@ -74,7 +74,7 @@
             }
         }
     },
-    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-collection",
+    "description": "A `Collection` is a subtype of `[Object](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object)` that represents ordered or unordered sets of `[Object](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object) or [Link](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-link)` instances. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-collection) specification for a complete description of the `Collection` type.",
     "type": "object",
     "allOf": [
         {

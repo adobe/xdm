@@ -8,6 +8,7 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$id": "https://ns.adobe.com/xdm/external/activity-streams-2/link-rel",
     "title":"Link-Relation",
+    "description": "A link relation associated with a `[Link](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-link)`. The value _MUST_ conform to both the [HTML5](https://www.w3.org/TR/html5/) and [RFC5988](https://tools.ietf.org/html/rfc5988) 'link relation' definitions. In the [HTML5](https://www.w3.org/TR/html5/), any string not containing the 'space' U+0020, 'tab' (U+0009), 'LF' (U+000A), 'FF' (U+000C), 'CR' (U+000D) or ',' (U+002C) characters can be used as a valid link relation.",
     "definitions": {
         "regular-rel-type": {
             "type": "string",

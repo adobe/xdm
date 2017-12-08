@@ -67,7 +67,7 @@
             }
         }
     },
-    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-activity",
+    "description": "An [Activity](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-activity) is a subtype of `[Object](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object)` that describes some form of action that may happen, is currently happening, or has already happened. The `Activity` type itself serves as an abstract base type for all types of activities. It is important to note that the `Activity` type itself does not carry any specific semantics about the kind of action being taken.",
     "type": "object",
     "allOf": [
         {

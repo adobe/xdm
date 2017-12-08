@@ -9,5 +9,6 @@
     "$id": "https://ns.adobe.com/xdm/external/activity-streams-2/mime-media-type",
     "type": "string",
     "title":"MIME Media Type",
+    "description": "[Multipurpose Internet Mail Extensions (MIME)](https://tools.ietf.org/html/rfc2046)",
     "pattern": "\\w+\\/[-.\\w]+(?:\\+[-.\\w]+)?"
 }

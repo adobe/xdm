@@ -7,7 +7,7 @@
     ],
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$id": "https://ns.adobe.com/xdm/external/activity-streams-2/context",
-    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-id",
+    "description": "A a set of rules for interpreting a JSON-LD document as specified in [the Context of the JSON-LD specification](https://json-ld.org/spec/latest/json-ld/#the-context).",
     "definitions": {
         "keywords": {
             "type": "string",

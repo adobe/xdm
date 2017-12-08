@@ -8,5 +8,6 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$id": "https://ns.adobe.com/xdm/external/activity-streams-2/language-tag",
     "type": "string",
-    "title":"Language-Tag"
+    "title":"Language-Tag",
+    "description": "A language tag as defined by [BCP47](https://tools.ietf.org/html/bcp47)."
 }

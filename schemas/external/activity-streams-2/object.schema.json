@@ -220,7 +220,7 @@
         }
     },
     "type": "object",
-    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object",
+    "description": "Describes an object of any kind. The [`Object`](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object) type serves as the base type for most of the other kinds of objects defined in the Activity Vocabulary, including other Core types such as `[Activity](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-activity)`, `[IntransitiveActivity](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-intransitiveactivity)`, `[Collection](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-collection)` and `[OrderedCollection](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-orderedcollection)`.",
     "allOf": [
         {
             "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/context"

@@ -2,6 +2,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/xdm/assets/image",
   "title": "Image",
+  "type": "object",
   "description": "The Image class is for raster and vector image assets, including JPEG, PNG, SVG files",
   "definitions": {
     "rational": {

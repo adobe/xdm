@@ -6,7 +6,8 @@
     "of the License at http://www.apache.org/licenses/LICENSE-2.0"
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "https://ns.adobe.com/xdm/common/extensible.schema.json",
+  "$id": "https://ns.adobe.com/xdm/common/extensible",
+  "type": "object",
   "title": "Extensibility base schema",
   "description": "",
   "definitions": {

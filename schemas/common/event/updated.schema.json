@@ -7,6 +7,7 @@
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/xdm/common/event/updated",
+  "type": "object",
   "title": "Updated Event",
   "description": "A `updated event` follows semantics that are exactly equivalent to the semantics described by the [`update activity`](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-update), except for one difference. The `update activity` can be used in imperative contexts, however, the `updated event` can only be used in passive contexts.",
   "allOf": [

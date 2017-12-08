@@ -8,6 +8,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/xdm/content/repository-policies/encryption",
   "title": "At-Rest Encryption",
+  "type": "object",
   "description": "Representation of how content is encrypted at-rest",
   "definitions": {
     "encryption": {
@@ -36,6 +37,5 @@
       }
     }
   },
-  "type": "object",
   "$ref": "#/definitions/encryption"
 }

@@ -2,6 +2,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/xdm/assets/video",
   "title": "Video",
+  "type": "object",
   "description": "The Video class is for video assets, i.e. assets that consist of moving pictures and, optionally, sound.",
   "definitions": {
     "video": {

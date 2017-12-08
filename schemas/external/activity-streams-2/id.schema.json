@@ -9,7 +9,7 @@
     "$id": "https://ns.adobe.com/xdm/external/activity-streams-2/id",
     "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-id",
     "properties": {
-        "id": {
+        "@id": {
             "type": "string",
             "format": "uri"
         }

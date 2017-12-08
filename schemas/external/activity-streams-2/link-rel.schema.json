@@ -24,14 +24,6 @@
                 }
             ]
         },
-        "single-value": {
-            "type": "object",
-            "properties": {
-                "rel": {
-                    "$ref": "#/definitions/link-rel"
-                }
-            }
-        },
         "multiple-values": {
             "type": "object",
             "properties": {
@@ -47,7 +39,7 @@
     "type": "object",
     "oneOf": [
         {
-            "$ref": "#/definitions/single-value"
+            "$ref": "#/definitions/link-rel"
         },
         {
             "$ref": "#/definitions/multiple-values"

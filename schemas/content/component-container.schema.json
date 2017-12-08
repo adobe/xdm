@@ -41,7 +41,7 @@
     {"$ref": "#/definitions/container"}
   ],
   "required": [
-    "type",
-    "items"
+    "@type",
+    "xdm:items"
   ]
 }

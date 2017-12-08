@@ -22,12 +22,12 @@
     ],
 
     "required": [
-        "name",
-        "path",
-        "repositoryCreatedDate",
-        "repositoryCreatedBy",
-        "repositoryLastModifiedDate",
-        "repositoryLastModifiedBy"
+        "xdm:name",
+        "xdm:path",
+        "xdm:repositoryCreatedDate",
+        "xdm:repositoryCreatedBy",
+        "xdm:repositoryLastModifiedDate",
+        "xdm:repositoryLastModifiedBy"
     ],
     "definitions": {
         "page": {

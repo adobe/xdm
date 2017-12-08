@@ -220,7 +220,7 @@
         },
         "activitystreams:duration": {
           "type": "string",
-          "pattern": "^[-]?P(?!$)(?:(?<year>\\d+)+Y)?(?:(?<month>\\d+)+M)?(?:(?<days>\\d+)+D)?(?:T(?!$)(?:(?<hours>\\d+)+H)?(?:(?<minutes>\\d+)+M)? (?:(?<seconds>\\d+(?:\\.\\d+)?)+S)?)?$",
+          "pattern": "^[-]?P(?!$)(?:\\d+Y)?(?:\\d+M)?(?:\\d+D)?(?:T(?!$)(?:\\d+H)?(?:\\d+M)?(?:\\d+(?:\\.\\d+)?S)?)?$",
           "description": "XSD Duration according to [specification](https://www.w3.org/TR/xmlschema11-2/#duration)",
           "title": "XSD Duration"
         }

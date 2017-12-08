@@ -120,9 +120,17 @@ Avoid non-semantic limits – don’t put current resource limits in the data mo
 * have the `title` at the top of the schema, so that it can be found without scrolling
 * make sure you have an example for every schema
 * run `npm test` before you make a pull request
-* convention is that property names are snake_case, when they appear in JSON
-* don't invent your own `_id` attributes, use the `@id` convention
+* convention is that property names are in camelCase, when they appear in JSON
+* Acronyms in camelCase like ID, API, JSON are also capitalized in camelCase, such as `assetID`
+* When combining two acronyms, use lowercase for the first and uppercase for the second, such as `dmaID`
+* don't invent your own `ID` attributes, use the `@id` convention
 * don't invent your own `type` attributes, use the `@type` convention
+
+Run `npm run lint` before committing. The `lint` command is able to fix some easy styling issues, including:
+
+* intent: 2 spaces
+* line breaks
+* spaces around delimiters
 
 ## Writing Styleguides
 

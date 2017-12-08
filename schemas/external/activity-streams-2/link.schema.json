@@ -58,7 +58,7 @@
             "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-name",
             "oneOf": [
                 {
-                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/xsd-string"
+                    "type": "string"
                 },
                 {
                     "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langString"

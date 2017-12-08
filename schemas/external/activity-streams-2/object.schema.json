@@ -96,7 +96,7 @@
         "string-type": {
             "oneOf": [
                 {
-                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/xsd-string"
+                    "type": "string"
                 },
                 {
                     "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langString"

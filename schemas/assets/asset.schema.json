@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at http://www.apache.org/licenses/LICENSE-2.0"
   ],
-  "$schema": "http://json-schema.org/schema#",
+  "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/xdm/assets/asset",
   "title": "Asset",
   "description": "A digital asset, is anything that exists in a binary format and comes with the right to use. Content that does not possess that right is not considered an asset. Digital assets include but are not exclusive to: digital documents, audible content, motion picture, and other relevant digital content that is currently in circulation or production.",
@@ -316,7 +316,7 @@
           "type": "array",
           "title": "Keywords",
           "items": {
-            "$schema": "http://json-schema.org/schema#",
+            "$schema": "http://json-schema.org/draft-06/schema#",
             "title": "Keyword",
             "description": "The `Keyword` schema describes a keyword in a list of keywords, with specific locale and importance relative to other keywords in the same list.",
             "properties": {
@@ -352,7 +352,7 @@
           "meta:usereditable": false,
           "type": "array",
           "items": {
-            "$schema": "http://json-schema.org/schema#",
+            "$schema": "http://json-schema.org/draft-06/schema#",
             "properties": {
               "confidence": {
                 "type": "number",

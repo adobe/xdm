@@ -126,6 +126,12 @@ Avoid non-semantic limits – don’t put current resource limits in the data mo
 * don't invent your own `ID` attributes, use the `@id` convention
 * don't invent your own `type` attributes, use the `@type` convention
 
+Run `npm run lint` before committing. The `lint` command is able to fix some easy styling issues, including:
+
+* intent: 2 spaces
+* line breaks
+* spaces around delimiters
+
 ## Writing Styleguides
 
 For all writing, please follow the [Adobe I/O style guide](https://www.adobe.io/about/contributing/doc-style_master.html).

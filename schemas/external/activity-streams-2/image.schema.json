@@ -10,5 +10,5 @@
   "description": "An image document of any kind. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-image) specification for a complete description of the `image` type.",
   "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/document",
   "title": "Image Document",
-  "type":"object"
+  "type": "object"
 }

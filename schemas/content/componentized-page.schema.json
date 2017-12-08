@@ -40,7 +40,7 @@
           "type": "string",
           "description": "Name of the page in the repository. This could be a file name or any name provided by the repository to the page."
         },
-        "xdm:title": {
+        "dc:title": {
           "type": "string",
           "description": "Full title of the page."
         },

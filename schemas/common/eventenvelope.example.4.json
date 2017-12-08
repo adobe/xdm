@@ -18,7 +18,7 @@
   "activitystreams:object": {
     "@type": "http://ns.adobe.com/xdm/page",
     "@id": "http://adobesummit.adobesandbox.com:4502/content/geometrixx/en/vintage.html",
-    "xdm:title": "Vintage Collection",
+    "dc:title": "Vintage Collection",
     "xdm:path": "/content/geometrixx/en/vintage.html"
   }
 }

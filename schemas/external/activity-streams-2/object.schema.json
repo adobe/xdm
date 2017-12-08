@@ -213,8 +213,10 @@
           "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/mime-media-type"
         },
         "activitystreams:duration": {
-          "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-duration",
-          "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/xsd-duration"
+          "type": "string",
+          "pattern": "^[-]?P(?!$)(?:(?<year>\\d+)+Y)?(?:(?<month>\\d+)+M)?(?:(?<days>\\d+)+D)?(?:T(?!$)(?:(?<hours>\\d+)+H)?(?:(?<minutes>\\d+)+M)? (?:(?<seconds>\\d+(?:\\.\\d+)?)+S)?)?$",
+          "description": "XSD Duration according to [specification](https://www.w3.org/TR/xmlschema11-2/#duration)",
+          "title": "XSD Duration"
         }
       }
     }

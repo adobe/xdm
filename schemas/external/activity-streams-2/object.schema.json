@@ -70,7 +70,8 @@
         "single-xsd:anyURI-or-link": {
             "anyOf": [
                 {
-                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/xsd-anyURI"
+                    "type": "string",
+                    "format": "uri"
                 },
                 {
                     "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/link"

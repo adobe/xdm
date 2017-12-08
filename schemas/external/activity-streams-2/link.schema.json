@@ -44,7 +44,8 @@
     "properties": {
         "activitystreams:href": {
             "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-href",
-            "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/xsd-anyURI"
+            "type": "string",
+            "format": "uri"
         },
         "activitystreams:rel": {
             "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-rel",

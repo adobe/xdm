@@ -1,62 +1,62 @@
 {
-    "meta:license": [
-      "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
-      "This file is licensed to you under the Apache License, Version 2.0 (the 'License');",
-      "you may not use this file except in compliance with the License. You may obtain a copy",
-      "of the License at http://www.apache.org/licenses/LICENSE-2.0"
-    ],
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "$id": "https://ns.adobe.com/xdm/external/activity-streams-2/collection-page",
-    "definitions": {
-        "single-collection-or-link": {
-            "anyOf": [
-                {
-                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/uri"
-                },
-                {
-                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/collection"
-                },
-                {
-                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/link"
-                }
-            ]
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This file is licensed to you under the Apache License, Version 2.0 (the 'License');",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at http://www.apache.org/licenses/LICENSE-2.0"
+  ],
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$id": "https://ns.adobe.com/xdm/external/activity-streams-2/collection-page",
+  "definitions": {
+    "single-collection-or-link": {
+      "anyOf": [
+        {
+          "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/uri"
         },
-        "single-collectionPage-or-link": {
-            "anyOf": [
-                {
-                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/collection-page"
-                },
-                {
-                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/link"
-                }
-            ]
+        {
+          "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/collection"
         },
-        "extra-properties": {
-            "properties": {
-                "activitystreams:partOf": {
-                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-partof",
-                    "$ref": "#/definitions/single-collection-or-link"
-                },
-                "activitystreams:next": {
-                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-next",
-                    "$ref": "#/definitions/single-collectionPage-or-link"
-                },
-                "activitystreams:prev": {
-                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-prev",
-                    "$ref": "#/definitions/single-collectionPage-or-link"
-                }
-            }
+        {
+          "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/link"
         }
+      ]
     },
-    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-collectionpage",
-    "type": "object",
-    "allOf": [
+    "single-collectionPage-or-link": {
+      "anyOf": [
         {
-            "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/collection"
+          "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/collection-page"
         },
         {
-            "$ref": "#/definitions/extra-properties"
+          "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/link"
         }
-    ],
-    "title":"Page in a Collection"
+      ]
+    },
+    "extra-properties": {
+      "properties": {
+        "activitystreams:partOf": {
+          "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-partof",
+          "$ref": "#/definitions/single-collection-or-link"
+        },
+        "activitystreams:next": {
+          "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-next",
+          "$ref": "#/definitions/single-collectionPage-or-link"
+        },
+        "activitystreams:prev": {
+          "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-prev",
+          "$ref": "#/definitions/single-collectionPage-or-link"
+        }
+      }
+    }
+  },
+  "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-collectionpage",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/collection"
+    },
+    {
+      "$ref": "#/definitions/extra-properties"
+    }
+  ],
+  "title": "Page in a Collection"
 }

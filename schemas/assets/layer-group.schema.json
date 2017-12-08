@@ -8,23 +8,27 @@
   "$schema": "http://json-schema.org/schema#",
   "$id": "https://ns.adobe.com/xdm/assets/layer-group",
   "title": "Layer Group",
-  "description":"",
+  "description": "",
   "definitions": {
     "layer-group": {
       "properties": {
         "xdm:name": {
-          "type":"string",
+          "type": "string",
           "title": "Name",
           "description": "Name of the Layer Group. This will be visible to the user and users can specify names that can help them to identify different Layer Groups"
         },
         "xdm:layers": {
           "name": "Layers",
           "description": "The layers or layer groups contained in this layer group.",
-          "type":"array",
+          "type": "array",
           "items": {
             "anyOf": [
-              {"$ref":"#/definitions/layer-group"},
-              {"$ref":"https://ns.adobe.com/xdm/assets/layer#/definitions/layer"}
+              {
+                "$ref": "#/definitions/layer-group"
+              },
+              {
+                "$ref": "https://ns.adobe.com/xdm/assets/layer#/definitions/layer"
+              }
             ]
           }
         }
@@ -32,6 +36,8 @@
     }
   },
   "allOf": [
-    {"$ref":"#/definitions/layer-group"}
+    {
+      "$ref": "#/definitions/layer-group"
+    }
   ]
 }

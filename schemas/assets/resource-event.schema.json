@@ -24,11 +24,11 @@
             "filtered",
             "formatted",
             "version_updated",
-            "printed", 
-            "published", 
-            "managed", 
-            "produced", 
-            "resized", 
+            "printed",
+            "published",
+            "managed",
+            "produced",
+            "resized",
             "saved"
           ]
         },
@@ -64,6 +64,8 @@
     }
   },
   "allOf": [
-    {"$ref":"#/definitions/resource-event"}
+    {
+      "$ref": "#/definitions/resource-event"
+    }
   ]
 }

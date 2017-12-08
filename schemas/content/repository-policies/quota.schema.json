@@ -9,15 +9,18 @@
   "$id": "https://ns.adobe.com/xdm/content/repository-policies/quota",
   "title": "Storage Quota",
   "description": "Representation of hard and soft quota on content storage",
-  "definitions" : {
-    "quota" : {
-      "type" : "object",
-      "properties" : {
+  "definitions": {
+    "quota": {
+      "type": "object",
+      "properties": {
         "xdm:enforcement": {
           "name": "Enforcement Type",
           "decription": "Determines whether the quota is being enforced (hard quota) or only reported on (soft quota)",
           "type": "string",
-          "enum": ["hard", "soft"]
+          "enum": [
+            "hard",
+            "soft"
+          ]
         },
         "xdm:amount": {
           "name": "Quota amount",

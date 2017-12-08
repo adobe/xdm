@@ -24,9 +24,15 @@
     }
   },
   "allOf": [
-    {"$ref": "https://ns.adobe.com/xdm/assets/asset#/definitions/asset"},
-    {"$ref": "https://ns.adobe.com/xdm/assets/rectangular#/definitions/rectangular"},
-    {"$ref": "#/definitions/video"}
+    {
+      "$ref": "https://ns.adobe.com/xdm/assets/asset#/definitions/asset"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/assets/rectangular#/definitions/rectangular"
+    },
+    {
+      "$ref": "#/definitions/video"
+    }
   ],
   "required": [
     "xdm:asset_id",

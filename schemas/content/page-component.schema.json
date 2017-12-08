@@ -10,19 +10,23 @@
   "type": "object",
   "title": "Page Component",
   "description": "",
-  "definitions":{
+  "definitions": {
     "component": {
       "properties": {
-          "@type": {
-              "type": "string",
-              "format": "uri",
-              "description": "Type of the component. Acts as processing hint for the client."
-          }
+        "@type": {
+          "type": "string",
+          "format": "uri",
+          "description": "Type of the component. Acts as processing hint for the client."
+        }
       }
     }
   },
   "allOf": [
-    {"$ref":"#/definitions/component"},
-    {"$ref": "https://ns.adobe.com/xdm/content/componentized-page#/definitions/residuals"}
+    {
+      "$ref": "#/definitions/component"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/content/componentized-page#/definitions/residuals"
+    }
   ]
 }

@@ -12,16 +12,16 @@
   "definitions": {
     "versioning": {
       "type": "object",
-      "properties" : {
-        "xdm:retention_time" : {
-          "name" : "Retention Time (days)",
-          "description" : "The maximum time (in days) up to which a version is retained if it is not marked as a milestone",
-          "type" : "integer"
+      "properties": {
+        "xdm:retention_time": {
+          "name": "Retention Time (days)",
+          "description": "The maximum time (in days) up to which a version is retained if it is not marked as a milestone",
+          "type": "integer"
         },
-        "xdm:max_milestones" : {
-          "name" : "Maximum Number of Milestones",
-          "description" : "The maximum number of old versions that can be marked as a mlestone on a versioned resource",
-          "type" : "integer"
+        "xdm:max_milestones": {
+          "name": "Maximum Number of Milestones",
+          "description": "The maximum number of old versions that can be marked as a mlestone on a versioned resource",
+          "type": "integer"
         }
       }
     }

@@ -8,7 +8,7 @@
   "$schema": "http://json-schema.org/schema#",
   "$id": "https://ns.adobe.com/xdm/assets/copyright-owner",
   "title": "Copyright Owner",
-  "description":"Describes the owner of a copyrighted work through name and ID",
+  "description": "Describes the owner of a copyrighted work through name and ID",
   "definitions": {
     "copyright": {
       "properties": {

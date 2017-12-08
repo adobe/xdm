@@ -8,27 +8,27 @@
   "$schema": "http://json-schema.org/schema#",
   "$id": "https://ns.adobe.com/xdm/assets/font",
   "title": "Font",
-  "description":"",
+  "description": "",
   "definitions": {
     "font": {
       "properties": {
         "xdm:child_font_files": {
-          "type":"array",
+          "type": "array",
           "name": "Child Font Files",
           "meta:usereditable": false,
           "description": "The list of file names for the font files that make up a composite font. See also `composite`, `font_face`.",
           "items": {
-            "type":"string"
+            "type": "string"
           }
         },
         "xdm:composite": {
-          "type":"boolean",
+          "type": "boolean",
           "name": "Composite",
           "meta:usereditable": false,
           "description": "`true` for composite fonts. See also `child_font_files`."
         },
         "xdm:font_face": {
-          "type":"string",
+          "type": "string",
           "name": "Font Face",
           "meta:usereditable": false,
           "description": "The name of the typeface, i.e. the specific weight or instance of the fontFamily. For example: Bold, Italic"
@@ -65,7 +65,6 @@
             "Type 1",
             "OpenType"
           ]
-
         },
         "xdm:version_string": {
           "type": "string",
@@ -88,7 +87,9 @@
     }
   },
   "allOf": [
-    {"$ref":"#/definitions/font"}
+    {
+      "$ref": "#/definitions/font"
+    }
   ],
   "required": [
     "xdm:font_name",

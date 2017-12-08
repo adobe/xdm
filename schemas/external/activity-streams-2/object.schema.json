@@ -9,6 +9,12 @@
   "$id": "https://ns.adobe.com/xdm/external/activity-streams-2/object",
   "title": "Object",
   "definitions": {
+    "mime-media-type": {
+      "type": "string",
+      "title": "MIME Media Type",
+      "description": "[Multipurpose Internet Mail Extensions (MIME)](https://tools.ietf.org/html/rfc2046)",
+      "pattern": "\\w+\\/[-.\\w]+(?:\\+[-.\\w]+)?"
+    },
     "single-object-or-link": {
       "anyOf": [
         {
@@ -210,7 +216,7 @@
         },
         "activitystreams:mediaType": {
           "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-mediatype",
-          "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/mime-media-type"
+          "$ref": "#/definitions/mime-media-type"
         },
         "activitystreams:duration": {
           "type": "string",

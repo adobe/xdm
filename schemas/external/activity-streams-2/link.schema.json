@@ -54,7 +54,7 @@
     },
     "activitystreams:mediaType": {
       "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-mediatype",
-      "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/mime-media-type"
+      "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/object#/definitions/mime-media-type"
     },
     "activitystreams:name": {
       "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-name",

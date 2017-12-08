@@ -23,7 +23,7 @@ all.forEach(json => {
 schemas.forEach(schema => {
   const result = $.exec("ajv validate --errors=text --all-errors -s meta.schema.json -d " + schema, {silent: true} );
   if (result.code!=0) {
-    //failures++;
+    failures++;
     console.error("Schema " + schema + " does not validate against meta.schema.json");
     console.error(result.stderr);
     console.error(result.stdout);

@@ -15,9 +15,20 @@ all.forEach(json => {
   const orig = $.exec("cat " + json, {silent: true});
   if (pretty!=orig) {
     failures++;
-    console.warn(json + " is not pretty." );
+    console.warn(json + " is not pretty. Fixing." );
     $.exec("json-beautify -r -s 2 -f " + json, {silent: true})
   }
 });
 
+schemas.forEach(schema => {
+  const result = $.exec("ajv validate --errors=text --all-errors -s meta.schema.json -d " + schema, {silent: true} );
+  if (result.code!=0) {
+    //failures++;
+    console.error("Schema " + schema + " does not validate against meta.schema.json");
+    console.error(result.stderr);
+    console.error(result.stdout);
+  }
+});
+
 $.exit(failures);
+

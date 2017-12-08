@@ -12,7 +12,7 @@
     "definitions": {
         "extra-properties": {
             "properties": {
-                "xdm:object_type": {
+                "xdm:objectType": {
                     "description": "This is the type of the `object` that has been emitting this event. The value of this field MUST be exactly same as the value of the `object.type` field. Making the type available in the event envelope allows routing systems to dispatch events based on the object type without inspecting the object itself.",
                     "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/type#/definitions/type"
                 }
@@ -32,7 +32,7 @@
                 "@id",
                 "@type",
                 "activitystreams:published",
-                "xdm:object_type",
+                "xdm:objectType",
                 "activitystreams:object"
             ]
         }

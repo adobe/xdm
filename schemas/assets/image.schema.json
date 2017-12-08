@@ -46,28 +46,28 @@
             "8": "Rotate 270 degrees clockwise"
           }
         },
-        "tiff:x_resolution": {
+        "tiff:XResolution": {
           "title": "X-Resolution",
           "meta:usereditable": false,
-          "description": "Horizontal resolution in pixels per `resolution_unit`.",
+          "description": "Horizontal resolution in pixels per `resolutionUnit`.",
           "type":"object",
           "allOf": [
             {"$ref": "#/definitions/rational"}
           ]
         },
-        "tiff:y_resolution": {
+        "tiff:YResolution": {
           "title": "Y-Resolution",
           "meta:usereditable": false,
-          "description": "Vertical resolution in pixels per `resolution_unit`.",
+          "description": "Vertical resolution in pixels per `resolutionUnit`.",
           "type":"object",
           "allOf": [
             {"$ref": "#/definitions/rational"}
           ]
         },
-        "tiff:resolution_unit": {
+        "tiff:resolutionUnit": {
           "meta:usereditable": false,
           "title": "Resolution Unit",
-          "description": "Unit used for `x_resolution` and `y_resolution`. Possible values are 2 (inches) and 3 (centimeters).",
+          "description": "Unit used for `XResolution` and `YRresolution`. Possible values are 2 (inches) and 3 (centimeters).",
           "type": "integer",
           "enum": [
             2,
@@ -78,14 +78,14 @@
             "3": "centimeters"
           }
         },
-        "xmp:number_of_pixels": {
+        "xmp:numberOfPixels": {
           "meta:usereditable": false,
           "type": "integer",
           "name": "Number of Pixels",
           "minimum": 0,
           "description": "Total number of pixels"
         },
-        "photoshop:color_mode": {
+        "photoshop:colorMode": {
           "meta:usereditable": false,
           "title": "Color Mode",
           "description": "The color mode or image mode determines how colors combine based on the number of channels in a color model. Different color modes result in different levels of color detail and file size. For instance, use CMYK color mode for images in a full-color print brochure, and use RGB color mode for images in web or e-mail to reduce file size while maintaining color integrity.",
@@ -104,7 +104,7 @@
             "9": "LAB color"
           }
         },
-        "photoshop:icc_profile": {
+        "photoshop:ICCProfile": {
           "meta:usereditable": false,
           "type": "string",
           "title": "ICC Profile",
@@ -137,14 +137,14 @@
     {"$ref": "#/definitions/image"}
   ],
   "required": [
-    "xdm:asset_id",
-    "xmp:create_date",
-    "xdm:repository_created_date",
-    "xdm:repository_created_by",
-    "xmp:modify_date",
-    "xdm:repository_last_modified_date",
-    "xdm:repository_last_modified_by",
-    "xdm:version_id",
+    "xdm:assetID",
+    "xmp:createDate",
+    "xdm:repositoryCreatedDate",
+    "xdm:repositoryCreatedBy",
+    "xmp:modifyDate",
+    "xdm:repositoryLastModifiedDate",
+    "xdm:repositoryLastModifiedBy",
+    "xdm:versionID",
     "xdm:size",
     "xdm:path",
     "xdm:etag"

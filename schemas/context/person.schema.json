@@ -18,21 +18,21 @@
                     "$ref": "https://ns.adobe.com/xdm/context/personname",
                     "description": "The person's full name"
                 },
-               "xdm:birth_day": {
+               "xdm:birthDay": {
                     "title": "Birth day",
                     "type": "integer",
                     "description": "The day of the month a person was born (1-31).",
                     "minimum": 1,
                     "maximum": 31
                 },
-                "xdm:birth_month": {
+                "xdm:birthMonth": {
                     "title": "Birth month",
                     "type": "integer",
                     "description": "The month of the year a person was born (1-12).",
                     "minimum": 1,
                     "maximum": 12
                 },
-                "xdm:birth_year": {
+                "xdm:birthYear": {
                     "title": "Birth year",
                     "type": "integer",
                     "description": "The year a person was born including the century (yyyy, e.g 1983).",

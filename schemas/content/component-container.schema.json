@@ -26,7 +26,7 @@
                   { "$ref": "https://ns.adobe.com/xdm/content/page-component#/definitions/component"}
               ]
           },
-          "xdm:items_order": {
+          "xdm:itemsOrder": {
               "type": "array",
               "uniqueItems": true,
               "items": {

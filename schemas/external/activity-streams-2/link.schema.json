@@ -44,7 +44,7 @@
   "description": "A Link is an indirect, qualified reference to a resource identified by a URL. The fundamental model for links is established by [RFC5988](https://tools.ietf.org/html/rfc5988). Many of the properties defined by the Activity Vocabulary allow values that are either instances of `[Object](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object)` or `[Link](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-link)`. When a `[Link](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-link)` is used, it establishes a [qualified relation](http://patterns.dataincubator.org/book/qualified-relation.html) connecting the subject (the containing object) to the resource identified by the `[href](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-href)`. Properties of the `[Link](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-link)` are properties of the reference as opposed to properties of the resource.",
   "properties": {
     "activitystreams:href": {
-      "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-href",
+      "description": "The target resource pointed to by a Link. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-href) document for a complete description.",
       "type": "string",
       "format": "uri"
     },
@@ -66,11 +66,11 @@
       ]
     },
     "activitystreams:mediaType": {
-      "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-mediatype",
+      "description": "When used on a Link, identifies the MIME media type of the referenced resource. When used on an Object, identifies the MIME media type of the value of the content property. If not specified, the content property is assumed to contain text/html content. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-mediatype) document for a complete description.",
       "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/object#/definitions/mime-media-type"
     },
     "activitystreams:name": {
-      "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-name",
+      "description": "Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-name) document for a complete description.",
       "oneOf": [
         {
           "type": "string"
@@ -81,21 +81,21 @@
       ]
     },
     "activitystreams:hreflang": {
-      "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-hreflang",
+      "description": "Hints as to the language used by the target resource. Value must be a [BCP47] Language-Tag. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-hreflang) document for a complete description.",
       "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langstring#/definitions/tag"
     },
     "activitystreams:height": {
-      "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-height",
+      "description": "On a Link, specifies a hint as to the rendering height in device-independent pixels of the linked resource. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-height) document for a complete description.",
       "type": "integer",
       "minimum": 0
     },
     "activitystreams:width": {
-      "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-width",
+      "description": "On a Link, specifies a hint as to the rendering width in device-independent pixels of the linked resource. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-width) document for a complete description.",
       "type": "integer",
       "minimum": 0
     },
     "activitystreams:preview": {
-      "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-preview",
+      "description": "Identifies an entity that provides a preview of this object. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-preview) document for a complete description.",
       "$ref": "#/definitions/object-or-link-or-array-of-object-or-link"
     }
   }

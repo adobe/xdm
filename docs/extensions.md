@@ -1,5 +1,15 @@
 # Extending XDM
 
+XDM is a JSON-based standard and there are three ways how JSON data models can be extended:
+
+1. through the introduction of new properties
+2. through the introduction of new values for existing properties
+3. through the introduction of new schemas
+
+XDM only supports (1) and (3), because the introduction of new values for existing properties can cause challenges for implementors of XDM and increases the difficulty of adhering of XDM's purely additive versioning requirement.
+
+The following sections will describe how each of these extension mechansims can be used by XDM providers that are seeking to extend XDM.
+
 ## Extending XDM Properties
 
 XDM is extensible, which means that customers, partners, and system integrators can take an existing XDM schema and add custom properties. 

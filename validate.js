@@ -7,6 +7,7 @@ const examples = $.find("schemas").filter(name => { return name.match(/.*\.examp
 const invalids = $.find("schemas").filter(name => { return name.match(/.*\.invalid\.[0-9]+\.json$/)});
 
 const invalid = [];
+let missing = 0;
 
 schemas.forEach(schema => {
   const directory = schema.replace(/\.schema\.json$/,"");
@@ -19,7 +20,8 @@ schemas.forEach(schema => {
   });
 
   if (myExamples.length==0) {
-    console.warn(schema + " has no examples");
+    console.error(schema + " has no examples");
+    missing++;
   } else {
     myExamples.forEach(example => {
       //console.log("Validating " + example + " against " + schema + " and " + (schemas.length - 1) + " other schemas");
@@ -53,10 +55,12 @@ schemas.forEach(schema => {
   });
 });
 
-if (invalid.length==0) {
+if (invalid.length==0&&missing==0) {
   console.log("All examples validated.");
-} else {
+} else if (missing==0) {
   console.error("There have been " + invalid.length + " validation errors");
+} else {
+  console.error("There have been " + invalid.length + " validation errors and " + missing + " missing examples.");
 }
 $.exit(invalid.length);
 

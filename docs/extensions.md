@@ -92,11 +92,11 @@ An XDM producer that wishes to extend an exiting XDM schema has to adhere to fol
   "meta:extends": [
     "https://ns.adobe.com/xdm/example/first",
     "https://ns.adobe.com/xdm/example/second"
-  ]
+  ],
   "definitions": {
     "third": {
       "properties": {
-          "baz" {
+          "baz": {
             "type": "string",
           }
         }

@@ -154,7 +154,7 @@ JSON Schema [does not have a built-in inheritance mechanism](https://github.com/
 We use built-in JSON Schema capabilities to provide extensibility. 
 These capabilities are augmented by some JSON LD-inspired extensions, without requiring consumers to become full-blown JSON LD processors.
 There are two modes of making XDM extensible: through custom properties and through new schemas.
-Custom properties are discussed below, new schemas will be defined in the future.
+Custom properties and deriving new schemas from existing schemas are discussed in the next two sections
 
 #### Custom Properties
 
@@ -180,6 +180,25 @@ In order to make a schema extensible, add the `https://ns.adobe.com/xdm/common/e
   ]
 ```
 
+#### New Schemas
+
+When it comes to expressing parent-child relationships between schemas, e.g. in order to create a new schema that inherits definitions from an existing schema, XDM distinguishes two things:
+
+1. How inheritance relationships are expressed
+2. How inheritance relationships are implemented
+
+JSON Schema does not have a built-in concept of schema inheritance, so XDM is using a set of custom properties and conventions to achieve the same semantics.
+
+##### Declaring a Schema to be Extensible
+
+Unless explicitly declared otherwise, XDM schemas cannot be extended. 
+The author of a given schema has to declare the ability to extend a schema using the `meta:extensible` property at the root of the schema. 
+`meta:extensible` is a `boolean` property, and only the value `true` is of any consequence, as the assumed default is `false`.
+If a schema is not extensible, the `meta:extensible` property can be omitted.
+
+In addition to **declaring** the extensibility, the schema author has to make sure that all properties that constitute the schema are defined in a child node of `definitions`.
+As you can see in the next section, the presence of a `definitions` object is expected, and will be validated by running `npm run lint`.
+The co-occurrence of `"meta:extensible": true` and `definitions` is enforced through rules in the meta-schema under `meta.schema.json`.
 
 
 ## Writing Styleguides

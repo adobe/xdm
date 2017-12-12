@@ -229,6 +229,101 @@ Note that the first and second schema are referred to not just by their base pat
 The schema's own definitions are kept and imported from the `definitions.myowndefinitions` object. 
 This keeps the schema compact and readable.
 
+##### Example
+
+The root schema is `first.schema.json`. It is extensible.
+
+```json
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/example/first",
+  "title": "First",
+  "type": "object",
+  "meta:extensible": true,
+  "definitions": {
+    "first": {
+      "properties": {
+          "foo" {
+            "type": "string",
+          }
+        }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/first"
+    }
+  ]
+}
+```
+
+The second schema is `second.schema.json`, it is both extending and extensible.
+
+```json
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/example/second",
+  "title": "Second",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:extends": "https://ns.adobe.com/xdm/example/first"
+  "definitions": {
+    "second": {
+      "properties": {
+          "bar" {
+            "type": "string",
+          }
+        }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/example/first#/definitions/first"
+    },
+    {
+      "$ref": "#/definitions/second"
+    },
+    
+  ]
+}
+```
+
+The third schema is `third.schema.json`, it extends both `second`, and transitively `first` (although this needs to be expressed explicitly)
+
+```json
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/example/third",
+  "title": "Second",
+  "type": "object",
+  "meta:extensible": false,
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/example/first",
+    "https://ns.adobe.com/xdm/example/second"
+  ]
+  "definitions": {
+    "third": {
+      "properties": {
+          "baz" {
+            "type": "string",
+          }
+        }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/example/first#/definitions/first"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/example/first#/definitions/second"
+    },
+    {
+      "$ref": "#/definitions/third"
+    },
+    
+  ]
+}
+```
 
 ## Writing Styleguides
 

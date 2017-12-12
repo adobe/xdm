@@ -1,4 +1,5 @@
 const $ = require("shelljs");
+const fs = require('fs');
 
 const schemas = $.find("schemas").filter(name => { return name.match(/.*\.schema\.json$/)});
 const extensions = $.find("extensions").filter(name => { return name.match(/.*\.schema\.json$/)});
@@ -6,9 +7,20 @@ const extensions = $.find("extensions").filter(name => { return name.match(/.*\.
 const examples = $.find("schemas").filter(name => { return name.match(/.*\.example\.[0-9]+\.json$/)});
 const invalids = $.find("schemas").filter(name => { return name.match(/.*\.invalid\.[0-9]+\.json$/)});
 
-const all = schemas.concat(extensions, examples, invalids);
 
-var failures = 0;
+const package = JSON.parse(fs.readFileSync('package.json', 'utf8'));
+
+
+let failures = 0;
+
+
+if (schemas.length!=package.config.schemas) {
+  console.error("Found " + schemas.length + " schemas but expected " + package.config.schemas + " for XDM version " + package.version);
+  console.error("Open package.json and increase the minor version number then update the config.schemas parameter to " + schemas.length);
+  failures++;
+}
+
+const all = schemas.concat(extensions, examples, invalids);
 
 all.forEach(json => {
   const pretty = $.exec("json-beautify -s 2 -f " + json, {silent: true}).stdout;

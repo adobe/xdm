@@ -10,7 +10,6 @@
   "title": "Rectangular Object (measured in variable unit)",
   "type": "object",
   "meta:extensible": true,
-  "meta:extends": "https://ns.adobe.com/xdm/assets/variable-unit-rectangular",
   "description": "This is an abstract schema for objects of rectangular dimensions and position, with a user-specified unit of measurement. Examples include `Artboard` and `Layer`.",
   "definitions": {
     "rectangular": {

@@ -1,0 +1,10 @@
+{
+  "@context": {
+    "activitystreams": "http://www.w3.org/ns/activitystreams#"
+  },
+  "@type": "https://www.w3.org/ns/activitystreams#Link",
+  "activitystreams:href": "http://example.org/abc",
+  "activitystreams:hreflang": "en",
+  "activitystreams:mediaType": "text/html",
+  "activitystreams:name": "An example link"
+}

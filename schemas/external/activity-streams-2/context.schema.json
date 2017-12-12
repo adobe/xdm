@@ -7,7 +7,7 @@
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/xdm/external/activity-streams-2/context",
-  "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-id",
+  "description": "A a set of rules for interpreting a JSON-LD document as specified in [the Context of the JSON-LD specification](https://json-ld.org/spec/latest/json-ld/#the-context).",
   "definitions": {
     "keywords": {
       "type": "string",
@@ -42,7 +42,8 @@
         "@id": {
           "anyOf": [
             {
-              "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/uri"
+              "type": "string",
+              "format": "uri"
             },
             {
               "$ref": "#/definitions/term"
@@ -61,7 +62,8 @@
         "@reverse": {
           "anyOf": [
             {
-              "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/uri"
+              "type": "string",
+              "format": "uri"
             },
             {
               "$ref": "#/definitions/term"
@@ -80,7 +82,8 @@
         "@type": {
           "anyOf": [
             {
-              "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/uri"
+              "type": "string",
+              "format": "uri"
             },
             {
               "$ref": "#/definitions/term"
@@ -100,7 +103,7 @@
         "@language": {
           "oneOf": [
             {
-              "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/language-tag"
+              "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langstring#/definitions/tag"
             },
             {
               "type": "null"
@@ -132,7 +135,8 @@
         "@vocab": {
           "anyOf": [
             {
-              "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/uri"
+              "type": "string",
+              "format": "uri"
             },
             {
               "$ref": "#/definitions/blank-node-identifier"
@@ -148,7 +152,8 @@
         "@base": {
           "oneOf": [
             {
-              "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/uri"
+              "type": "string",
+              "format": "uri"
             },
             {
               "type": "null"
@@ -158,7 +163,7 @@
         "@language": {
           "oneOf": [
             {
-              "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/language-tag"
+              "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langstring#/definitions/tag"
             },
             {
               "type": "null"
@@ -170,7 +175,8 @@
         "^([^:@_].*)|(_:.*)$": {
           "anyOf": [
             {
-              "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/uri"
+              "type": "string",
+              "format": "uri"
             },
             {
               "$ref": "#/definitions/term"
@@ -203,7 +209,8 @@
     "single-context-or-uri": {
       "oneOf": [
         {
-          "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/uri"
+          "type": "string",
+          "format": "uri"
         },
         {
           "$ref": "#/definitions/single-context"
@@ -230,5 +237,5 @@
     }
   },
   "type": "object",
-  "title": "Context"
+  "title": "JSON-LD `@context`"
 }

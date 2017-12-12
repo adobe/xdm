@@ -2,6 +2,17 @@
 
 The Experience Data Model (XDM) project is developed as an Open Standard driven by Adobe. We welcome contributions from everyone who is interested in advancing digital experiences.
 
+## Public GitHub Ground Rules
+
+We are in the process of increasing the visibility of XDM to partners and to invite them to contribute and give feedback.
+For this purpose, we will move the XDM repository to [https://github.com/adobe/xdm](https://github.com/adobe/xdm). 
+For Adobe employees, following ground rules apply:
+
+* Like everyone, follow the [Code of Conduct](CODE_OF_CONDUCT.md)
+* Like everyone, follow these [Contributing](CONTRIBUTING.md) guides
+* Like always, don't share credentials, API keys, or other secrets in issues or in code
+* Focus on standardizing the category, not your specific product
+
 ## Things to Keep in Mind
 
 XDM uses a **review then commit** process, which means that no changes are being made without an *editor* approving the change.
@@ -100,9 +111,26 @@ Avoid non-semantic limits – don’t put current resource limits in the data mo
 ## Coding Styleguides
 
 * file names for schema files should be lower case and end with `.schema.json`
-* include an `"$id"` with a value like `"https://ns.adobe.com/xdm/assets/image"` in the schema
+* include an `"$id"` with a value like `"https://ns.adobe.com/xdm/assets/image"` in the schema (but leave out the `.schema.json`)
+* when referencing schemas, use the absolute `$id`, don't use relative references like `../content/content.schema.json` 
 * don't nest schemas too deeply. Break inline type definitions into separate `*.schema.json` files if they have properties with object types themselves.
-* convention is that property names are snake_case, when they appear in JSON
+* ensure that there is a `meta:license` at the top of the schema
+* use JSON Schema `draft-6`
+* provide a `description` and `title` for each schema and each property
+* have the `title` at the top of the schema, so that it can be found without scrolling
+* make sure you have an example for every schema
+* run `npm test` before you make a pull request
+* convention is that property names are in camelCase, when they appear in JSON
+* Acronyms in camelCase like ID, API, JSON are also capitalized in camelCase, such as `assetID`
+* When combining two acronyms, use lowercase for the first and uppercase for the second, such as `dmaID`
+* don't invent your own `ID` attributes, use the `@id` convention
+* don't invent your own `type` attributes, use the `@type` convention
+
+Run `npm run lint` before committing. The `lint` command is able to fix some easy styling issues, including:
+
+* intent: 2 spaces
+* line breaks
+* spaces around delimiters
 
 ### Re-Use and Modularity
 

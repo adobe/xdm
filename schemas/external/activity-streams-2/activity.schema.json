@@ -1,80 +1,80 @@
 {
-    "meta:license": [
-      "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
-      "This file is licensed to you under the Apache License, Version 2.0 (the 'License');",
-      "you may not use this file except in compliance with the License. You may obtain a copy",
-      "of the License at http://www.apache.org/licenses/LICENSE-2.0"
-    ],
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "$id": "https://ns.adobe.com/xdm/external/activity-streams-2/activity",
-    "definitions": {
-        "single-object-or-link": {
-            "anyOf": [
-                {
-                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/uri"
-                },
-                {
-                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/object"
-                },
-                {
-                    "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/link"
-                }
-            ]
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This file is licensed to you under the Apache License, Version 2.0 (the 'License');",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at http://www.apache.org/licenses/LICENSE-2.0"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/external/activity-streams-2/activity",
+  "definitions": {
+    "single-object-or-link": {
+      "anyOf": [
+        {
+          "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/uri"
         },
-        "multiple-objects-or-links": {
-            "items": {
-                "$ref": "#/definitions/single-object-or-link"
-            },
-            "type": "array"
+        {
+          "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/object"
         },
-        "object-or-link-or-array-of-object-or-link": {
-            "oneOf": [
-                {
-                    "$ref": "#/definitions/single-object-or-link"
-                },
-                {
-                    "$ref": "#/definitions/multiple-objects-or-links"
-                }
-            ]
-        },
-        "extra-properties": {
-            "properties": {
-                "activitystreams:actor": {
-                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-actor",
-                    "$ref": "#/definitions/object-or-link-or-array-of-object-or-link"
-                },
-                "activitystreams:object": {
-                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object",
-                    "$ref": "#/definitions/object-or-link-or-array-of-object-or-link"
-                },
-                "activitystreams:target": {
-                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-target",
-                    "$ref": "#/definitions/object-or-link-or-array-of-object-or-link"
-                },
-                "activitystreams:result": {
-                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-result",
-                    "$ref": "#/definitions/object-or-link-or-array-of-object-or-link"
-                },
-                "activitystreams:origin": {
-                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-origin",
-                    "$ref": "#/definitions/object-or-link-or-array-of-object-or-link"
-                },
-                "activitystreams:instrument": {
-                    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-instrument",
-                    "$ref": "#/definitions/object-or-link-or-array-of-object-or-link"
-                }
-            }
+        {
+          "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/link"
         }
+      ]
     },
-    "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-activity",
-    "type": "object",
-    "allOf": [
+    "multiple-objects-or-links": {
+      "items": {
+        "$ref": "#/definitions/single-object-or-link"
+      },
+      "type": "array"
+    },
+    "object-or-link-or-array-of-object-or-link": {
+      "oneOf": [
         {
-            "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/object"
+          "$ref": "#/definitions/single-object-or-link"
         },
         {
-            "$ref": "#/definitions/extra-properties"
+          "$ref": "#/definitions/multiple-objects-or-links"
         }
-    ],
-    "title":"Activity"
+      ]
+    },
+    "extra-properties": {
+      "properties": {
+        "activitystreams:actor": {
+          "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-actor",
+          "$ref": "#/definitions/object-or-link-or-array-of-object-or-link"
+        },
+        "activitystreams:object": {
+          "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object",
+          "$ref": "#/definitions/object-or-link-or-array-of-object-or-link"
+        },
+        "activitystreams:target": {
+          "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-target",
+          "$ref": "#/definitions/object-or-link-or-array-of-object-or-link"
+        },
+        "activitystreams:result": {
+          "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-result",
+          "$ref": "#/definitions/object-or-link-or-array-of-object-or-link"
+        },
+        "activitystreams:origin": {
+          "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-origin",
+          "$ref": "#/definitions/object-or-link-or-array-of-object-or-link"
+        },
+        "activitystreams:instrument": {
+          "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-instrument",
+          "$ref": "#/definitions/object-or-link-or-array-of-object-or-link"
+        }
+      }
+    }
+  },
+  "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-activity",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/object"
+    },
+    {
+      "$ref": "#/definitions/extra-properties"
+    }
+  ],
+  "title": "Activity"
 }

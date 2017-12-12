@@ -1,6 +1,10 @@
 # Experience Data Model (XDM) Schema
 
-The [Experience Data Model](https://www.adobe.io/open/standards/xdm) (XDM) is the language of digital experiences. XDM is an open standard, driven by Adobe to improve the interoperability, expressivness, and power of digital experiences. This repository contains the source code for the formal specification of the XDM model, using the JSON Schema language.
+[![CircleCI](https://circleci.com/gh/adobe/xdm.svg?style=svg)](https://circleci.com/gh/adobe/xdm)
+
+The [Experience Data Model](https://www.adobe.io/open/standards/xdm) (XDM) is the language of digital experiences. 
+XDM is a publicly documented specification, driven by Adobe to improve the interoperability, expressivness, and power of digital experiences. 
+This repository contains the source code for the formal specification of the XDM model, using the JSON Schema language.
 
 ## Project Layout
 
@@ -43,6 +47,7 @@ When all dependencies are installed, simply run
 
 ```bash
 $ npm install
+$ npm run package
 ```
 
 This will fetch all dependencies, then generate Markdown in the `docs/reference` directory and then generate an AEM package under `xdm-docs.zip`. The package can be uploaded using the command
@@ -69,6 +74,7 @@ A full process would then look like this:
 $ npm config set xdm-models:aem_password $AEM_PASSWORD
 $ npm install
 $ npm test
+$ npm run package
 $ npm run upload
 $ npm run activate
 ```
@@ -116,7 +122,7 @@ If you see warnings or error messages (or an non-zero exit code), fix them befor
 * [JSON-LD 1.0](https://www.w3.org/TR/json-ld/)
 * [XMP SPECIFICATION PART 1 DATA MODEL, SERIALIZATION, AND CORE PROPERTIES](http://wwwimages.adobe.com/content/dam/Adobe/en/devnet/xmp/pdfs/XMP%20SDK%20Release%20cc-2014-12/XMPSpecificationPart1.pdf)
 
-### Vocabularies / Ontologies
+### Vocabularies/Ontologies
 
 * [schema.org](http://schema.org)
 * [Dublin Core](http://dublincore.org/)

@@ -1,7 +1,14 @@
 {
-  "$schema": "http://json-schema.org/schema#",
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This file is licensed to you under the Apache License, Version 2.0 (the 'License');",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at http://www.apache.org/licenses/LICENSE-2.0"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/xdm/assets/video",
   "title": "Video",
+  "type": "object",
   "description": "The Video class is for video assets, i.e. assets that consist of moving pictures and, optionally, sound.",
   "definitions": {
     "video": {
@@ -13,7 +20,7 @@
           "description": "The duration of the video in milliseconds. This property is inspired by `dc:extent`. However, `dc:extent` does not specify units. `core:extent` is always an integer and describes the duration in milliseconds.",
           "example": 8880000
         },
-        "xmpDM:video_frame_rate": {
+        "xmpDM:videoFrameRate": {
           "type": "string",
           "title": "Frame Rate",
           "meta:usereditable": false,
@@ -24,19 +31,25 @@
     }
   },
   "allOf": [
-    {"$ref": "https://ns.adobe.com/xdm/assets/asset#/definitions/asset"},
-    {"$ref": "https://ns.adobe.com/xdm/assets/rectangular#/definitions/rectangular"},
-    {"$ref": "#/definitions/video"}
+    {
+      "$ref": "https://ns.adobe.com/xdm/assets/asset#/definitions/asset"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/assets/rectangular#/definitions/rectangular"
+    },
+    {
+      "$ref": "#/definitions/video"
+    }
   ],
   "required": [
-    "xdm:asset_id",
-    "xmp:create_date",
-    "xdm:repository_created_date",
-    "xdm:repository_created_by",
-    "xmp:modify_date",
-    "xdm:repository_last_modified_date",
-    "xdm:repository_last_modified_by",
-    "xdm:version_id",
+    "xdm:assetID",
+    "xmp:createDate",
+    "xdm:repositoryCreatedDate",
+    "xdm:repositoryCreatedBy",
+    "xmp:modifyDate",
+    "xdm:repositoryLastModifiedDate",
+    "xdm:repositoryLastModifiedBy",
+    "xdm:versionID",
     "xdm:size",
     "xdm:path",
     "xdm:etag"

@@ -5,10 +5,11 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at http://www.apache.org/licenses/LICENSE-2.0"
   ],
-  "$schema": "http://json-schema.org/schema#",
+  "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/xdm/assets/artboard",
   "title": "Artboard",
-  "description":"",
+  "type": "object",
+  "description": "",
   "definitions": {
     "artboard": {
       "properties": {
@@ -20,7 +21,11 @@
     }
   },
   "allOf": [
-    {"$ref":"#/definitions/artboard"},
-    {"$ref":"https://ns.adobe.com/xdm/assets/variable-unit-rectangular#/definitions/rectangular"}
+    {
+      "$ref": "#/definitions/artboard"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/assets/variable-unit-rectangular#/definitions/rectangular"
+    }
   ]
 }

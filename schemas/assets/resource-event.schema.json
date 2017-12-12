@@ -5,9 +5,10 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at http://www.apache.org/licenses/LICENSE-2.0"
   ],
-  "$schema": "http://json-schema.org/schema#",
+  "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/xdm/assets/resource-event",
   "title": "Resource Event",
+  "type": "object",
   "description": "",
   "definitions": {
     "resource-event": {
@@ -24,11 +25,11 @@
             "filtered",
             "formatted",
             "version_updated",
-            "printed", 
-            "published", 
-            "managed", 
-            "produced", 
-            "resized", 
+            "printed",
+            "published",
+            "managed",
+            "produced",
+            "resized",
             "saved"
           ]
         },
@@ -37,9 +38,9 @@
           "description": "A semicolon-delimited list of the parts of the resource that were changed since the previous event history. If not present, presumed to be undefined. When tracking changes and the scope of the changed components is unknown, it should be assumed that anything might have changed.",
           "type": "string"
         },
-        "stEvt:instance_id": {
+        "stEvt:instanceID": {
           "title": "Instance ID",
-          "description": "The value of the `instance_id` property for the modified (output) resource. The value is a GUID, capital A-F, 8-4-4-12",
+          "description": "The value of the `instanceID` property for the modified (output) resource. The value is a GUID, capital A-F, 8-4-4-12",
           "meta:example": "00112233-4455-6677-8899-AABBCCDDEEFF",
           "pattern": "^[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}$",
           "type": "string"
@@ -49,7 +50,7 @@
           "description": "Additional description of the action.",
           "type": "string"
         },
-        "stEvt:software_agent": {
+        "stEvt:softwareAgent": {
           "title": "Software Agent",
           "description": "The software agent (program) that performed the action.\nIt is recommended that the value use this format convention:\nOrganization Software_name Version (token;token;...)\n- Organization: The name of the company or organization providing the software, no SPACEs.\n- Software_name: The full name of the software, SPACEs allowed.\n- version: The version of the software, no SPACEs.\n- tokens: Can be used to identify an operating system, plug-in, or more detailed version information.",
           "type": "string"
@@ -64,6 +65,8 @@
     }
   },
   "allOf": [
-    {"$ref":"#/definitions/resource-event"}
+    {
+      "$ref": "#/definitions/resource-event"
+    }
   ]
 }

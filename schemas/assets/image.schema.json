@@ -1,7 +1,14 @@
 {
-  "$schema": "http://json-schema.org/schema#",
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/xdm/assets/image",
   "title": "Image",
+  "type": "object",
   "description": "The Image class is for raster and vector image assets, including JPEG, PNG, SVG files",
   "definitions": {
     "rational": {
@@ -12,13 +19,16 @@
         "tiff:numerator": {
           "title": "Numerator",
           "description": "The numerator of a fraction",
-          "type":"integer"
+          "type": "integer"
         },
         "tiff:denominator": {
           "title": "Denominator",
           "description": "The denominator of a fraction",
-          "not": {"maximum": 0, "minimum": 0},
-          "type":"integer"
+          "not": {
+            "maximum": 0,
+            "minimum": 0
+          },
+          "type": "integer"
         }
       },
       "required": [
@@ -29,7 +39,7 @@
     "image": {
       "properties": {
         "tiff:orientation": {
-          "type":"integer",
+          "type": "integer",
           "meta:usereditable": false,
           "title": "Orientation",
           "description": "The orientation of the image. Following values are permitted:\n- `1` = Horizontal (normal)\n- `2` = Mirror horizontal\n- `3` = Rotate 180 degrees\n- `4` = Mirror vertical\n- `5` = Mirror horizontal and rotate 270 degrees clockwise\n- `6` = Rotate 90 degrees clockwise\n- `7` = Mirror horizontal and rotate 90 degrees clockwise\n- `8` = Rotate 270 degrees clockwise",
@@ -37,37 +47,41 @@
           "maximum": 8,
           "meta:enum": {
             "1": "Horizontal (normal)",
-            "2": "Mirror horizontal" ,
-            "3": "Rotate 180 degrees" ,
-            "4": "Mirror vertical" ,
-            "5": "Mirror horizontal and rotate 270 degrees clockwise" ,
-            "6": "Rotate 90 degrees clockwise" ,
-            "7": "Mirror horizontal and rotate 90 degrees clockwise" ,
+            "2": "Mirror horizontal",
+            "3": "Rotate 180 degrees",
+            "4": "Mirror vertical",
+            "5": "Mirror horizontal and rotate 270 degrees clockwise",
+            "6": "Rotate 90 degrees clockwise",
+            "7": "Mirror horizontal and rotate 90 degrees clockwise",
             "8": "Rotate 270 degrees clockwise"
           }
         },
-        "tiff:x_resolution": {
+        "tiff:XResolution": {
           "title": "X-Resolution",
           "meta:usereditable": false,
-          "description": "Horizontal resolution in pixels per `resolution_unit`.",
-          "type":"object",
+          "description": "Horizontal resolution in pixels per `resolutionUnit`.",
+          "type": "object",
           "allOf": [
-            {"$ref": "#/definitions/rational"}
+            {
+              "$ref": "#/definitions/rational"
+            }
           ]
         },
-        "tiff:y_resolution": {
+        "tiff:YResolution": {
           "title": "Y-Resolution",
           "meta:usereditable": false,
-          "description": "Vertical resolution in pixels per `resolution_unit`.",
-          "type":"object",
+          "description": "Vertical resolution in pixels per `resolutionUnit`.",
+          "type": "object",
           "allOf": [
-            {"$ref": "#/definitions/rational"}
+            {
+              "$ref": "#/definitions/rational"
+            }
           ]
         },
-        "tiff:resolution_unit": {
+        "tiff:resolutionUnit": {
           "meta:usereditable": false,
           "title": "Resolution Unit",
-          "description": "Unit used for `x_resolution` and `y_resolution`. Possible values are 2 (inches) and 3 (centimeters).",
+          "description": "Unit used for `XResolution` and `YRresolution`. Possible values are 2 (inches) and 3 (centimeters).",
           "type": "integer",
           "enum": [
             2,
@@ -78,20 +92,27 @@
             "3": "centimeters"
           }
         },
-        "xmp:number_of_pixels": {
+        "xmp:numberOfPixels": {
           "meta:usereditable": false,
           "type": "integer",
           "name": "Number of Pixels",
           "minimum": 0,
           "description": "Total number of pixels"
         },
-        "photoshop:color_mode": {
+        "photoshop:colorMode": {
           "meta:usereditable": false,
           "title": "Color Mode",
           "description": "The color mode or image mode determines how colors combine based on the number of channels in a color model. Different color modes result in different levels of color detail and file size. For instance, use CMYK color mode for images in a full-color print brochure, and use RGB color mode for images in web or e-mail to reduce file size while maintaining color integrity.",
           "type": "integer",
           "enum": [
-            0, 1, 2, 3, 4, 7, 8, 9
+            0,
+            1,
+            2,
+            3,
+            4,
+            7,
+            8,
+            9
           ],
           "meta:enum": {
             "0": "Bitmap",
@@ -104,7 +125,7 @@
             "9": "LAB color"
           }
         },
-        "photoshop:icc_profile": {
+        "photoshop:ICCProfile": {
           "meta:usereditable": false,
           "type": "string",
           "title": "ICC Profile",
@@ -131,20 +152,28 @@
     }
   },
   "allOf": [
-    {"$ref": "https://ns.adobe.com/xdm/content/content#/definitions/content"},
-    {"$ref": "https://ns.adobe.com/xdm/assets/asset#/definitions/asset"},
-    {"$ref": "https://ns.adobe.com/xdm/assets/rectangular#/definitions/rectangular"},
-    {"$ref": "#/definitions/image"}
+    {
+      "$ref": "https://ns.adobe.com/xdm/content/content#/definitions/content"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/assets/asset#/definitions/asset"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/assets/rectangular#/definitions/rectangular"
+    },
+    {
+      "$ref": "#/definitions/image"
+    }
   ],
   "required": [
-    "xdm:asset_id",
-    "xmp:create_date",
-    "xdm:repository_created_date",
-    "xdm:repository_created_by",
-    "xmp:modify_date",
-    "xdm:repository_last_modified_date",
-    "xdm:repository_last_modified_by",
-    "xdm:version_id",
+    "xdm:assetID",
+    "xmp:createDate",
+    "xdm:repositoryCreatedDate",
+    "xdm:repositoryCreatedBy",
+    "xmp:modifyDate",
+    "xdm:repositoryLastModifiedDate",
+    "xdm:repositoryLastModifiedBy",
+    "xdm:versionID",
     "xdm:size",
     "xdm:path",
     "xdm:etag"

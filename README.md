@@ -122,7 +122,7 @@ If you see warnings or error messages (or an non-zero exit code), fix them befor
 * [JSON-LD 1.0](https://www.w3.org/TR/json-ld/)
 * [XMP SPECIFICATION PART 1 DATA MODEL, SERIALIZATION, AND CORE PROPERTIES](http://wwwimages.adobe.com/content/dam/Adobe/en/devnet/xmp/pdfs/XMP%20SDK%20Release%20cc-2014-12/XMPSpecificationPart1.pdf)
 
-### Vocabularies / Ontologies
+### Vocabularies/Ontologies
 
 * [schema.org](http://schema.org)
 * [Dublin Core](http://dublincore.org/)
@@ -132,6 +132,18 @@ If you see warnings or error messages (or an non-zero exit code), fix them befor
 ## License/Copyright
 
 Copyright 2017 Adobe Systems Incorporated. All rights reserved.
-This file is licensed to you under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License. You may obtain a copy
-of the License at http://www.apache.org/licenses/LICENSE-2.0
+This work is licensed under a [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) license.
+
+### You are free to:
+
+* Share — copy and redistribute the material in any medium or format
+* Adapt — remix, transform, and build upon the material for any purpose, even commercially.
+
+This license is acceptable for Free Cultural Works.
+
+The licensor cannot revoke these freedoms as long as you follow the license terms.
+
+### Under the following terms:
+
+* Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+* No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.

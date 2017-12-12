@@ -6,12 +6,14 @@
   "config": {
     "aem_user": "packageUser",
     "aem_password": "override me securely",
-    "markdown-importer-version": "0.0.4"
+    "markdown-importer-version": "0.0.4",
+    "schemas": 69
   },
   "scripts": {
     "clean": "rm -rf docs/reference",
     "markdown": "shx mkdir -p docs/reference && jsonschema2md -o docs/reference -d schemas",
     "test": "node validate.js",
+    "lint": "node lint.js",
     "package": "npm run markdown && curl -o \"./node_modules/markdown-importer-0.0.4-jar-with-dependencies.jar\" -C - https://artifactory.corp.adobe.com/artifactory/maven-markdown-tools-release/io/adobe/udp/markdown-importer/0.0.4/markdown-importer-0.0.4-jar-with-dependencies.jar && java -jar ./node_modules/markdown-importer-0.0.4-jar-with-dependencies.jar markdown2aem.yaml",
     "upload": "curl -u \"$npm_package_config_aem_user:$npm_package_config_aem_password\" -F file=\"@xdm-docs.zip\" -F name=\"xdm-docs\" -F force=true -F install=true https://author-adobeio-stage.adobemsbasic.com/crx/packmgr/service.jsp",
     "upload:prod": "curl -u \"$npm_package_config_aem_user:$npm_package_config_aem_password\" -F file=\"@xdm-docs.zip\" -F name=\"xdm-docs\" -F force=true -F install=true https://author-adobeio-prod.adobemsbasic.com/crx/packmgr/service.jsp",
@@ -29,6 +31,7 @@
   "devDependencies": {
     "@adobe/jsonschema2md": "1.0.0",
     "ajv-cli": "^2.1.0",
+    "json-beautifier": "^1.0.3",
     "shelljs": "^0.7.8",
     "shx": "^0.2.2"
   }

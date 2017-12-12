@@ -1,45 +1,46 @@
 {
   "meta:license": [
     "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
-    "This file is licensed to you under the Apache License, Version 2.0 (the 'License');",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
     "you may not use this file except in compliance with the License. You may obtain a copy",
-    "of the License at http://www.apache.org/licenses/LICENSE-2.0"
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$schema": "http://json-schema.org/schema#",
+  "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/xdm/assets/font",
   "title": "Font",
-  "description":"",
+  "description": "",
+  "type": "object",
   "definitions": {
     "font": {
       "properties": {
-        "xdm:child_font_files": {
-          "type":"array",
+        "xdm:childFontFiles": {
+          "type": "array",
           "name": "Child Font Files",
           "meta:usereditable": false,
-          "description": "The list of file names for the font files that make up a composite font. See also `composite`, `font_face`.",
+          "description": "The list of file names for the font files that make up a composite font. See also `composite`, `fontFace`.",
           "items": {
-            "type":"string"
+            "type": "string"
           }
         },
         "xdm:composite": {
-          "type":"boolean",
+          "type": "boolean",
           "name": "Composite",
           "meta:usereditable": false,
-          "description": "`true` for composite fonts. See also `child_font_files`."
+          "description": "`true` for composite fonts. See also `childFontFiles`."
         },
-        "xdm:font_face": {
-          "type":"string",
+        "xdm:fontFace": {
+          "type": "string",
           "name": "Font Face",
           "meta:usereditable": false,
           "description": "The name of the typeface, i.e. the specific weight or instance of the fontFamily. For example: Bold, Italic"
         },
-        "xdm:font_family": {
+        "xdm:fontFamily": {
           "type": "string",
           "name": "Font Family",
           "meta:usereditable": false,
           "description": "Complete collection of typefaces in different weights and classifications, but having the same point size, and designed to work together. For example, a Times Roman font family may include Times Roman Bold, Times Roman Extra Bold, Times Roman Italic, Times Roman Bold Italic, Times Roman Condensed, etc., all in the same size."
         },
-        "xdm:font_file_name": {
+        "xdm:fontFileName": {
           "type": "string",
           "name": "Font File Name",
           "meta:usereditable": false,
@@ -49,13 +50,13 @@
             "zx__.pfm"
           ]
         },
-        "xdm:font_name": {
+        "xdm:fontName": {
           "type": "string",
           "name": "Font Name",
           "meta:usereditable": false,
           "description": "PostScript name of the font. For example: `TimesNewRomanPS-BoldItalicMT`. `font_name` is manadatory to identify the font used in an asset but an asset may not have a `font` property if it has only images/vector arts (no text)."
         },
-        "xdm:font_type": {
+        "xdm:fontType": {
           "type": "string",
           "name": "Font Type",
           "meta:usereditable": false,
@@ -65,9 +66,8 @@
             "Type 1",
             "OpenType"
           ]
-
         },
-        "xdm:version_string": {
+        "xdm:versionString": {
           "type": "string",
           "meta:usereditable": false,
           "enum": [
@@ -88,10 +88,12 @@
     }
   },
   "allOf": [
-    {"$ref":"#/definitions/font"}
+    {
+      "$ref": "#/definitions/font"
+    }
   ],
   "required": [
-    "xdm:font_name",
-    "xdm:font_type"
+    "xdm:fontName",
+    "xdm:fontType"
   ]
 }

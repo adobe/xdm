@@ -243,7 +243,7 @@ The root schema is `first.schema.json`. It is extensible.
   "definitions": {
     "first": {
       "properties": {
-          "foo" {
+          "foo": {
             "type": "string",
           }
         }
@@ -266,11 +266,11 @@ The second schema is `second.schema.json`, it is both extending and extensible.
   "title": "Second",
   "type": "object",
   "meta:extensible": true,
-  "meta:extends": "https://ns.adobe.com/xdm/example/first"
+  "meta:extends": "https://ns.adobe.com/xdm/example/first",
   "definitions": {
     "second": {
       "properties": {
-          "bar" {
+          "bar": {
             "type": "string",
           }
         }
@@ -300,11 +300,11 @@ The third schema is `third.schema.json`, it extends both `second`, and transitiv
   "meta:extends": [
     "https://ns.adobe.com/xdm/example/first",
     "https://ns.adobe.com/xdm/example/second"
-  ]
+  ],
   "definitions": {
     "third": {
       "properties": {
-          "baz" {
+          "baz": {
             "type": "string",
           }
         }

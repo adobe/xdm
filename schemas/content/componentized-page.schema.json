@@ -10,6 +10,10 @@
   "type": "object",
   "title": "Componentized Page",
   "description": "",
+  "meta:extensible": true,
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/content/content"
+  ],
   "additionalProperties": {
     "$ref": "#/definitions/residuals"
   },

@@ -200,6 +200,35 @@ In addition to **declaring** the extensibility, the schema author has to make su
 As you can see in the next section, the presence of a `definitions` object is expected, and will be validated by running `npm run lint`.
 The co-occurrence of `"meta:extensible": true` and `definitions` is enforced through rules in the meta-schema under `meta.schema.json`.
 
+##### Extending a Schema with a new Schema
+
+A schema must express that it is extending one or multiple other schemas through the `meta:extends` property.
+This property can be either a `string`, containing the `uri` of the schema that is being extended.
+This `uri` is the value of the `$id` property of the extended schema, and is for XDM typically a fully qualified URI that does *not* end with `.schema.json`.
+Alternatively, `meta:extends` can be an `array` of schmema `uri`s.
+JSON Schema does not resolve multiple levels of inheritance, so when extending a schema that is extending another schema, list both schemas in the `meta:extends` array. A list of extensions will looks something like this:
+
+```json
+"meta:extends": [
+  "https://ns.adobe.com/firstschema",
+  "https://ns.adobe.com/secondschema",
+]
+```
+
+In addition to **declaring** the intent to extend, the schema author has to make sure to actually include the schema definitions in an `allOf` object at the root of the schema. This `allOf` object will look something like this:
+
+```json
+"allOf":[
+    {"$ref": "https://ns.adobe.com/firstschema#/definitions/first"},
+    {"$ref": "https://ns.adobe.com/secondschema#/definitions/second"},
+    {"$ref": "#/definitions/myowndefinitions"}
+  ]
+```
+
+Note that the first and second schema are referred to not just by their base path, but also by the fragment identifier `#/definitions/first` and `#/definitions/second`, respectively. 
+The schema's own definitions are kept and imported from the `definitions.myowndefinitions` object. 
+This keeps the schema compact and readable.
+
 
 ## Writing Styleguides
 

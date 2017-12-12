@@ -132,6 +132,55 @@ Run `npm run lint` before committing. The `lint` command is able to fix some eas
 * line breaks
 * spaces around delimiters
 
+### Re-Use and Modularity
+
+In order to encourage re-use of definitions and modularity of schema files, avoid putting all property declarations into the root of the schema, instead use a `definitions` object with one sub-key for each semantic unit. Then, at the bottom of your schema definition, `$ref`erence them using the `allOf` construct.
+
+```json
+"allOf":[
+    {"$ref": "#/definitions/mydefinition"},
+    {"$ref": "#/definitions/myotherdefinition"},
+    {"$ref": "https://ns.adobe.com/xdm/assets/image#/definitions/someotherdefinition"},
+  ]
+```
+
+In this example, the definitions `mydefinition` and `myotherdefinition` are pulled from the current schema, while `someotherdefinition` is pulled from `https://ns.adobe.com/xdm/assets/image`
+
+JSON Schema [does not have a built-in inheritance mechanism](https://github.com/json-schema-org/json-schema-spec/issues/348#issuecomment-322940347), so the use of `definitions` is considered [best practice in structuring complex schemas](https://spacetelescope.github.io/understanding-json-schema/structuring.html).
+
+### Extensibility
+
+We use built-in JSON Schema capabilities to provide extensibility. 
+These capabilities are augmented by some JSON LD-inspired extensions, without requiring consumers to become full-blown JSON LD processors.
+There are two modes of making XDM extensible: through custom properties and through new schemas.
+Custom properties are discussed below, new schemas will be defined in the future.
+
+#### Custom Properties
+
+In order to allow custom properties, use the `https://ns.adobe.com/xdm/common/extensible` schema as a `$ref` reference to the schema in question. This will make sure validation will mark any extension that uses ad-hoc, unregistered properties that potentially overwrites existing or future XDM core properties, as invalid.
+
+In detail, this schema fragment:
+
+1. disallows the use of `@context` to define custom namespace prefixes
+2. if `@context` is used, it enforces the namespace prefix mapping that XDM uses
+3. it forbids the use of any property name prefix that is not listed in `schemas/common/context.jsonld`
+4. it allows `patternProperties` that are full URIs, so that customers can add their own extensions, as explained in [the extensibility docs](docs/extensibility.md)
+
+XDM provides this JSON Schema fragment to that express these constraints. The schema fragment that can be added to a given schema, allowing you to validate example documents with extensions.
+
+##### Example
+
+In order to make a schema extensible, add the `https://ns.adobe.com/xdm/common/extensible#/definitions/@context` schema fragment reference to your schema definition.
+
+```json
+"allOf":[
+    {"$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"},
+    {"$ref": "#/definitions/…"}
+  ]
+```
+
+
+
 ## Writing Styleguides
 
 For all writing, please follow the [Adobe I/O style guide](https://www.adobe.io/about/contributing/doc-style_master.html).

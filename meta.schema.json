@@ -28,6 +28,26 @@
           "of the License at https://creativecommons.org/licenses/by/4.0/"
         ]
       },
+      "meta:extensible": {
+        "type": "boolean",
+        "default": false,
+        "description": "Set this `true` if the schema can be extended by other schemas."
+      },
+      "meta:extends": {
+        "oneOf": [
+          {
+            "type": "string",
+            "format": "uri"
+          },
+          {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uri"
+            }
+          }
+        ]
+      },
       "type": {
         "type": "string",
         "const": "object"
@@ -37,6 +57,26 @@
         "minLength": 3
       }
     },
+    "oneOf": [
+      {
+        "properties": {
+          "meta:extensible": {
+            "const": true
+          }
+        },
+        "required": [
+          "definitions",
+          "meta:extensible"
+        ]
+      },
+      {
+        "properties": {
+          "meta:extensible": {
+            "const": false
+          }
+        }
+      }
+    ],
     "required": [
       "$schema",
       "$id",

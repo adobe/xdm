@@ -63,10 +63,62 @@ Users of XDM wishing to insert custom properties should select a namespace URI t
 
 ## Extending XDM through new Schemas
 
-In the future, XDM will allow the extension through the introduction of new schemas. 
+XDM also allows the extension through the introduction of new schemas. 
 This means that a new schema will be able to express that it is extending an existing standard schema and that an application that is able to process the parent schema should treat the extended schema as if it was the parent schema.
 
-How this type of extensibility will work is not yet specified.
+Not all XDM schema are extensible and allow new derivative schemas.
+If a schema has been declared extensible, the XDM reference documentation for that schema will show that derivative schemas are permitted.
+The JSON Schema also includes a formal declaration of extensibility in the form of the `meta:extensible` property.
+This property will be `true` for schemas that are extensible, and `false` or be absent for all other schemas.
+If a schema is extensible, the JSON Schema file will also include one or more usable schema fragments that are named child properties of the `definitions` property of the schema.
+These schema fragments can be included by schemas that are extending an existing schema.
+
+An XDM producer that wishes to extend an exiting XDM schema has to adhere to following steps:
+
+1. Only extend schemas that are `meta:extensible`
+2. Create a new JSON Schema file
+3. Add a property `meta:extends` that is either a `string`, pointing to the schema URI of the schema to extend, or an `array`, listing all schemas URIs that the schema is extending
+4. Merge the schema fragments of the schemas that are being extended into the current schema using the `allOf` keyword
+
+> Example: here a schema (`third`) is extending the schema `second`, which is extending the schema `first`. In order to express the transitive dependency chain, both `first` and `second` need to be listed under `meta:extends`. The `allOf` node shows how to include schema fragments using `$ref` and the JSON Pointer path to the `#/definitions/…` fragment.
+
+```json
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/example/third",
+  "title": "Second",
+  "type": "object",
+  "meta:extensible": false,
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/example/first",
+    "https://ns.adobe.com/xdm/example/second"
+  ]
+  "definitions": {
+    "third": {
+      "properties": {
+          "baz" {
+            "type": "string",
+          }
+        }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/example/first#/definitions/first"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/example/first#/definitions/second"
+    },
+    {
+      "$ref": "#/definitions/third"
+    },
+    
+  ]
+}
+```
+
+Any XDM consumer or producer that is processing instances of schemas that allow extensibility must treat every instance of an extending schema as if it was an instance of the extended schema.
+There is no obligation to treat the inheriting schema in any way different, or to attempt to understand or process any of the properties that have been added in the extension, all of this is completely optional.
 
 ## What Cannot be Extended
 

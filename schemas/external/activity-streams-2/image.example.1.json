@@ -1,0 +1,19 @@
+{
+  "@context": {
+    "activitystreams": "http://www.w3.org/ns/activitystreams#"
+  },
+  "@type": "http://www.w3.org/ns/activitystreams#Image",
+  "activitystreams:name": "Cat Jumping on Wagon",
+  "activitystreams:url": [
+    {
+      "@type": "http://www.w3.org/ns/activitystreams#Link",
+      "activitystreams:href": "http://example.org/image.jpeg",
+      "activitystreams:mediaType": "image/jpeg"
+    },
+    {
+      "@type": "http://www.w3.org/ns/activitystreams#Link",
+      "activitystreams:href": "http://example.org/image.png",
+      "activitystreams:mediaType": "image/png"
+    }
+  ]
+}

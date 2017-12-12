@@ -35,18 +35,15 @@
     "extra-properties": {
       "properties": {
         "activitystreams:partOf": {
-          "description": "Identifies the Collection to which a CollectionPage objects items belong.",
-          "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-partof",
+          "description": "Identifies the Collection to which a CollectionPage objects items belong. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-partof) document for a complete description.",
           "$ref": "#/definitions/single-collection-or-link"
         },
         "activitystreams:next": {
-          "description": "In a paged Collection, indicates the next page of items.",
-          "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-next",
+          "description": "In a paged Collection, indicates the next page of items. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-next) document for a complete description.",
           "$ref": "#/definitions/single-collectionPage-or-link"
         },
         "activitystreams:prev": {
-          "description": "In a paged Collection, identifies the previous page of items.",
-          "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-prev",
+          "description": "In a paged Collection, identifies the previous page of items. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-prev) document for a complete description.",
           "$ref": "#/definitions/single-collectionPage-or-link"
         }
       }

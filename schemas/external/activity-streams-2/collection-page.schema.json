@@ -35,14 +35,17 @@
     "extra-properties": {
       "properties": {
         "activitystreams:partOf": {
+          "description": "Identifies the Collection to which a CollectionPage objects items belong.",
           "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-partof",
           "$ref": "#/definitions/single-collection-or-link"
         },
         "activitystreams:next": {
+          "description": "In a paged Collection, indicates the next page of items.",
           "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-next",
           "$ref": "#/definitions/single-collectionPage-or-link"
         },
         "activitystreams:prev": {
+          "description": "In a paged Collection, identifies the previous page of items.",
           "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-prev",
           "$ref": "#/definitions/single-collectionPage-or-link"
         }

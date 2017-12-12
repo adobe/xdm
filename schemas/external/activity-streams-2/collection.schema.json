@@ -51,23 +51,28 @@
     "extra-properties": {
       "properties": {
         "activitystreams:totalItems": {
+          "description": "A non-negative integer specifying the total number of objects contained by the logical view of the collection. This number might not reflect the actual number of items serialized within the Collection object instance.",
           "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-totalitems",
           "type": "integer",
           "minimum": 0
         },
         "activitystreams:current": {
+          "description": "In a paged Collection, indicates the page that contains the most recently updated member items.",
           "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-current",
           "$ref": "#/definitions/single-collectionPage-or-link"
         },
         "activitystreams:first": {
+          "description": "In a paged Collection, indicates the furthest preceeding page of items in the collection.",
           "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-first",
           "$ref": "#/definitions/single-collectionPage-or-link"
         },
         "activitystreams:last": {
+          "description": "In a paged Collection, indicates the furthest proceeding page of the collection.",
           "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-last",
           "$ref": "#/definitions/single-collectionPage-or-link"
         },
         "activitystreams:items": {
+          "description": "Identifies the items contained in a collection. The items might be ordered or unordered.",
           "description": "https://www.w3.org/TR/activitystreams-vocabulary/#dfn-items",
           "$ref": "#/definitions/object-or-link-or-ordered-list-of-object-or-link"
         }

@@ -10,6 +10,7 @@
   "title": "Content",
   "type": "object",
   "description": "",
+  "meta:extensible": true,
   "definitions": {
     "content": {
       "properties": {

@@ -34,7 +34,14 @@
         "xdm:environment": {
           "name": "Environment",
           "description": "A tenant (see `xdm:tenant`) may work with 1..n environments where the application (see `xdm:application`) runs. Each environment serves a purpose in the CI/CD chain providing a structure whereby changes  to the application can be rolled out. Typically the owner of the application manages transitions between environments. A system integratior, partner or customer may be the owner of the application expecially where the application has  been extended and customised. An environment may have a uri referencing the definition of the environment. ",
-          "type": "string"
+          "type": "string",
+          "meta:enum": {
+            "dev": "A development environment for engineering teams to develop and test against prior to releasing to the QE teams.",
+            "qe": "A deployment provisioned to statisfy the Quality Engineering process",
+            "stage": "A final deployment environment before production. Typically used to perform final testing and give a reference  deployment to the last production deployment",
+            "beta": "A production deployment environment used to introduce end users of the `application` to new features.",
+            "prod": "The production deployment environment"
+          }
         },
         "xdm:cluster": {
           "name": "Cluster",

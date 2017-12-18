@@ -9,7 +9,7 @@
   "$id": "https://ns.adobe.com/xdm/common/event/rejected",
   "type": "object",
   "title": "Rejected Event",
-  "description": "A `rejected event` follows semantics that are exactly equivalent to the semantics described by the [`reject activity`](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-reject), except for one difference. The `reject activity` can be used in imperative contexts, however, the `rejected event` can only be used in passive contexts.",
+  "description": "",
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/eventenvelope"

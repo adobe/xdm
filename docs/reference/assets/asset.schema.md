@@ -1037,7 +1037,7 @@ The value of this property **must** be equal to one of the [known values below](
 | Value | Description |
 |-------|-------------|
 | `0` | The `gpsAltitude specifies a value above sea level` |
-| `1` | The `gpsAltitude specifies a value below sea level |
+| `1` | The `gpsAltitude specifies a value below sea level` |
 
 
 

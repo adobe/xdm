@@ -262,10 +262,10 @@
             1
           ],
           "meta:enum": {
-            "0": "The `gpsAltitude specifies a value above sea level`",
-            "1": "The `gpsAltitude specifies a value below sea level`"
+            "0": "The `exif:gpsAltitude` specifies a value above sea level",
+            "1": "The `exif:gpsAltitude` specifies a value below sea level"
           },
-          "description": "GPS tag 5, 0x5. Indicates whether the altitude is above or below sea level:\n0 = Above sea level\n1 = Below sea level"
+          "description": "GPS tag 5, 0x5. Indicates whether the altitude is above or below sea level."
         },
         "exif:gpsLatitude": {
           "meta:usereditable": false,

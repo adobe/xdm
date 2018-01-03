@@ -21,7 +21,9 @@
   },
   "type": "object",
   "allOf": [
-    { "$ref": "#/definitions/name" }
+    {
+      "$ref": "#/definitions/name"
+    }
   ],
   "required": [
     "xdm:name"

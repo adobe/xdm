@@ -75,7 +75,7 @@ All digital assets are content, and some content can include, link to, or refer 
 | [xmpMM:history](#xmpMM:history) | reference | Optional | Asset (this schema) |
 | [dc:title](#dc:title) | reference | Optional | Asset (this schema) |
 | [dc:description](#dc:description) | reference | Optional | Asset (this schema) |
-| [dc:format](#dc:format) | complex | Optional | Asset (this schema) |
+| [dc:format](#dc:format) |`string` | Optional | Asset (this schema) |
 | [xdm:notSafe](#xdm:notSafe) | `enum` | Optional | Asset (this schema) |
 | [dc:language](#dc:language) | `string[]` | Optional | Asset (this schema) |
 | [xdm:size](#xdm:size) | `integer` | **Required** | Asset (this schema) |
@@ -840,12 +840,12 @@ The physical or digital manifestation of the resource. Typically, Format should 
 
 `dc:format`
 * is optional
-* type: complex
+* type: string
 * defined in this schema
 
 ### dc:format Type
 
-Unknown type ``.
+String ``.
 
 ```json
 {

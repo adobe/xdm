@@ -262,10 +262,10 @@
             1
           ],
           "meta:enum": {
-            "0": "The `gpsAltitude specifies a value above sea level`",
-            "1": "The `gpsAltitude specifies a value below sea level"
+            "0": "The `exif:gpsAltitude` specifies a value above sea level",
+            "1": "The `exif:gpsAltitude` specifies a value below sea level"
           },
-          "description": "GPS tag 5, 0x5. Indicates whether the altitude is above or below sea level:\n0 = Above sea level\n1 = Below sea level"
+          "description": "GPS tag 5, 0x5. Indicates whether the altitude is above or below sea level."
         },
         "exif:gpsLatitude": {
           "meta:usereditable": false,
@@ -282,7 +282,7 @@
           "description": "GPS tag 4, 0x04 (position) and 3, 0x03 (East/West). Indicates longitude. A Text value in the form “DDD,MM,SSk” or “DDD,MM.mmk”, where:\n* DDD is a number of degrees\n* MM is a number of minutes\n* SS is a number of seconds\n* mm is a fraction of minutes\n* k is a single character E or W, indicating a direction (east, west)\nLeading zeros are not necessary for the for DDD, MM, and SS values. The DDD,MM.mmk form should be used when any of the native Exif component rational values has a denominator other than 1. There can be any number of fractional digits."
         },
         "xmp:rating": {
-          "meta:usereditable": false,
+          "meta:usereditable": true,
           "type": "integer",
           "title": "Rating",
           "enum": [
@@ -303,7 +303,7 @@
             "5": "⭑⭑⭑⭑⭑",
             "-1": "rejected"
           },
-          "description": "A user-assigned rating for this file. The value shall be -1 or in the range [0..5], where -1 indicates “rejected” and 0 indicates “unrated”. If xmp:Rating is not present, a value of 0 should be assumed. NOTE: Anticipated usage is for a typical “star rating” UI, with the addition of a notion of rejection."
+          "description": "A user-assigned editable rating for this file. The value shall be -1 or in the range [0..5], where -1 indicates “rejected” and 0 indicates “unrated”. If xmp:Rating is not present, a value of 0 should be assumed. NOTE: Anticipated usage is for a typical “star rating” UI, with the addition of a notion of rejection."
         },
         "dc:subject": {
           "title": "Subject",

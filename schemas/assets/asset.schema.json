@@ -193,6 +193,7 @@
         },
         "dc:format": {
           "meta:usereditable": false,
+          "type": "string",
           "title": "Format",
           "pattern": "\\w+\\/[-.\\w]+(?:\\+[-.\\w]+)?",
           "meta:example": "application/vnd.adobe.photoshop",

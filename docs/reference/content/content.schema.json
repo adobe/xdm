@@ -1,0 +1,64 @@
+{
+    "meta:license": [
+        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "https://ns.adobe.com/xdm/content/content",
+    "title": "Content",
+    "type": "object",
+    "description": "Content is information that is directed towards an audience for consumption in a (digital) experience. Content is delivered through channels (or a particular medium), but the essence of content remains independent from the devliery medium.\n\nIn [Web Content Management by Deane Barker](https://www.safaribooksonline.com/library/view/web-content-management/9781491908112/ch01.html) two key differences between content and other digital information are pointed out:\n\n> 1. Content is *created* differently\n> 2. Content is *used* differently\n\nThese differences boil down to a number of key characteristics of content.\n\n*Content is created by human editors* in an editorial process that involves creation, revision, and publishing.\n\n*Content is created for human audiences*, which gives the content the ultimate value.",
+    "definitions": {
+        "content": {
+            "properties": {
+                "@id": {
+                    "type": "string",
+                    "format": "uri",
+                    "description": "A unique identifier given to every addressable piece of content in a given repository."
+                },
+                "xdm:repositoryCreatedDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "meta:immutable": true,
+                    "meta:usereditable": false,
+                    "description": "The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\"."
+                },
+                "xdm:repositoryCreatedBy": {
+                    "type": "string",
+                    "meta:immutable": true,
+                    "meta:usereditable": false,
+                    "description": "ID of the user who initiated the action that caused the resource to be created in the repository."
+                },
+                "xdm:repositoryLastModifiedDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "meta:usereditable": false,
+                    "description": "The server date and time when the resource was most recently modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\"."
+                },
+                "xdm:repositoryLastModifiedBy": {
+                    "type": "string",
+                    "meta:usereditable": false,
+                    "description": "ID of the user who initiated the action that most recently caused the resource to be modified in the repository."
+                },
+                "xdm:versionID": {
+                    "type": "string",
+                    "meta:immutable": true,
+                    "meta:usereditable": false,
+                    "description": "The version ID of the piece of content. It will be generated both on explicit and implicit save or upload."
+                }
+            }
+        }
+    },
+    "examples": [
+        {
+            "@id": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
+            "xdm:repositoryCreatedDate": "2017-11-23T13:11:05+00:00",
+            "xdm:repositoryCreatedBy": "lars",
+            "xdm:repositoryLastModifiedDate": "2017-11-23T13:11:05+00:00",
+            "xdm:repositoryLastModifiedBy": "lars",
+            "xdm:versionID": "1"
+        }
+    ]
+}

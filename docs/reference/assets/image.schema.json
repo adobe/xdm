@@ -1,0 +1,204 @@
+{
+    "meta:license": [
+        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "https://ns.adobe.com/xdm/assets/image",
+    "title": "Image",
+    "type": "object",
+    "description": "The Image class is for raster and vector image assets, including JPEG, PNG, SVG files",
+    "definitions": {
+        "rational": {
+            "$id": "https://ns.adobe.com/xdm/assets/image/rational",
+            "title": "Rational",
+            "description": "A representation of rational numbers as fractions of denominator and numerator.",
+            "properties": {
+                "tiff:numerator": {
+                    "title": "Numerator",
+                    "description": "The numerator of a fraction",
+                    "type": "integer"
+                },
+                "tiff:denominator": {
+                    "title": "Denominator",
+                    "description": "The denominator of a fraction",
+                    "not": {
+                        "maximum": 0,
+                        "minimum": 0
+                    },
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "tiff:numerator",
+                "tiff:denominator"
+            ]
+        },
+        "image": {
+            "properties": {
+                "tiff:orientation": {
+                    "type": "integer",
+                    "meta:usereditable": false,
+                    "title": "Orientation",
+                    "description": "The orientation of the image. Following values are permitted:\n- `1` = Horizontal (normal)\n- `2` = Mirror horizontal\n- `3` = Rotate 180 degrees\n- `4` = Mirror vertical\n- `5` = Mirror horizontal and rotate 270 degrees clockwise\n- `6` = Rotate 90 degrees clockwise\n- `7` = Mirror horizontal and rotate 90 degrees clockwise\n- `8` = Rotate 270 degrees clockwise",
+                    "minimum": 1,
+                    "maximum": 8,
+                    "meta:enum": {
+                        "1": "Horizontal (normal)",
+                        "2": "Mirror horizontal",
+                        "3": "Rotate 180 degrees",
+                        "4": "Mirror vertical",
+                        "5": "Mirror horizontal and rotate 270 degrees clockwise",
+                        "6": "Rotate 90 degrees clockwise",
+                        "7": "Mirror horizontal and rotate 90 degrees clockwise",
+                        "8": "Rotate 270 degrees clockwise"
+                    }
+                },
+                "tiff:XResolution": {
+                    "title": "X-Resolution",
+                    "meta:usereditable": false,
+                    "description": "Horizontal resolution in pixels per `resolutionUnit`.",
+                    "type": "object",
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/rational"
+                        }
+                    ]
+                },
+                "tiff:YResolution": {
+                    "title": "Y-Resolution",
+                    "meta:usereditable": false,
+                    "description": "Vertical resolution in pixels per `resolutionUnit`.",
+                    "type": "object",
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/rational"
+                        }
+                    ]
+                },
+                "tiff:resolutionUnit": {
+                    "meta:usereditable": false,
+                    "title": "Resolution Unit",
+                    "description": "Unit used for `XResolution` and `YRresolution`. Possible values are 2 (inches) and 3 (centimeters).",
+                    "type": "integer",
+                    "enum": [
+                        2,
+                        3
+                    ],
+                    "meta:enum": {
+                        "2": "inches",
+                        "3": "centimeters"
+                    }
+                },
+                "xmp:numberOfPixels": {
+                    "meta:usereditable": false,
+                    "type": "integer",
+                    "name": "Number of Pixels",
+                    "minimum": 0,
+                    "description": "Total number of pixels"
+                },
+                "photoshop:colorMode": {
+                    "meta:usereditable": false,
+                    "title": "Color Mode",
+                    "description": "The color mode or image mode determines how colors combine based on the number of channels in a color model. Different color modes result in different levels of color detail and file size. For instance, use CMYK color mode for images in a full-color print brochure, and use RGB color mode for images in web or e-mail to reduce file size while maintaining color integrity.",
+                    "type": "integer",
+                    "enum": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        7,
+                        8,
+                        9
+                    ],
+                    "meta:enum": {
+                        "0": "Bitmap",
+                        "1": "Gray scale",
+                        "2": "Indexed color",
+                        "3": "RGB color",
+                        "4": "CMYK color",
+                        "7": "Multi-channel",
+                        "8": "Duotone",
+                        "9": "LAB color"
+                    }
+                },
+                "photoshop:ICCProfile": {
+                    "meta:usereditable": false,
+                    "type": "string",
+                    "title": "ICC Profile",
+                    "description": "The [ICC color profile](http://www.color.org/iccprofile.xalter), such as AppleRGB, AdobeRGB1998.",
+                    "meta:enum": [
+                        "ColorMatchRGB",
+                        "AppleRGB",
+                        "AdobeRGB1998",
+                        "JapanColor2002Newspaper",
+                        "USSheetfedUncoated",
+                        "JapanColor2001Uncoated",
+                        "CoatedFOGRA27",
+                        "UncoatedFOGRA29",
+                        "USWebCoatedSWOP",
+                        "JapanColor2001Coated",
+                        "JapanWebCoated",
+                        "WebCoatedFOGRA28",
+                        "USWebUncoated",
+                        "CoatedFOGRA39",
+                        "USSheetfedCoated"
+                    ]
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/content/content#/definitions/content"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/assets/asset#/definitions/asset"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/assets/rectangular#/definitions/rectangular"
+        },
+        {
+            "$ref": "#/definitions/image"
+        }
+    ],
+    "required": [
+        "xdm:assetID",
+        "xmp:createDate",
+        "xdm:repositoryCreatedDate",
+        "xdm:repositoryCreatedBy",
+        "xmp:modifyDate",
+        "xdm:repositoryLastModifiedDate",
+        "xdm:repositoryLastModifiedBy",
+        "xdm:versionID",
+        "xdm:size",
+        "xdm:path",
+        "xdm:etag"
+    ],
+    "examples": [
+        {
+            "xdm:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
+            "xmp:createDate": "2017-09-26T15:52:25+00:00",
+            "xdm:repositoryCreatedDate": "2017-09-26T15:52:25+00:00",
+            "xdm:repositoryCreatedBy": "lars",
+            "xmp:modifyDate": "2017-09-26T15:52:25+00:00",
+            "xdm:repositoryLastModifiedDate": "2017-09-26T15:52:25+00:00",
+            "xdm:repositoryLastModifiedBy": "2017-09-26T15:52:25+00:00",
+            "xdm:versionID": "15",
+            "xdm:size": 1632418,
+            "xdm:path": "here",
+            "xdm:etag": "15",
+            "tiff:imageLength": 768,
+            "tiff:imageWidth": 1024,
+            "xdm:aspectRatio": 1.3333333,
+            "tiff:orientation": 1,
+            "tiff:XResolution": {
+                "tiff:numerator": 300,
+                "tiff:denominator": 1
+            }
+        }
+    ]
+}

@@ -63,7 +63,7 @@
         },
         "xdm:topology": {
           "name": "Topology",
-          "description": "A topology is a logical group of services (see `xdm:service`) and their implementations that togther form an application (see `xdm:application`). The topology may consist of services and service implementations at differnt layers throughout an application Some services within a topology may be satisfied by shared components, for instance many applications may share an edge traffic load balancer. A service will have a URI defining it.",
+          "description": "A topology is a logical group of services (see `xdm:service`) and their implementations that together form an application (see `xdm:application`). The topology may consist of services and service implementations at different layers throughout an application. Some services within a topology may be satisfied by shared components, for instance many applications may share an edge traffic load balancer. A service will have a URI defining it.",
           "type": "string",
           "format": "uri"
         },

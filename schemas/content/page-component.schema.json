@@ -9,6 +9,7 @@
   "$id": "https://ns.adobe.com/xdm/content/page-component",
   "type": "object",
   "title": "Page Component",
+  "meta:extensible": true,
   "description": "",
   "definitions": {
     "component": {

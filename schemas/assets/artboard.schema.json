@@ -10,6 +10,7 @@
   "title": "Artboard",
   "type": "object",
   "description": "",
+  "meta:extends": "https://ns.adobe.com/xdm/assets/variable-unit-rectangular",
   "definitions": {
     "artboard": {
       "properties": {

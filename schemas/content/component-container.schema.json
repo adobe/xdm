@@ -9,6 +9,7 @@
   "$id": "https://ns.adobe.com/xdm/content/component-container",
   "type": "object",
   "title": "Component Container",
+  "meta:extensible": true,
   "description": "",
   "definitions": {
     "container": {

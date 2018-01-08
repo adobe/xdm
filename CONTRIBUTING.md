@@ -154,7 +154,7 @@ JSON Schema [does not have a built-in inheritance mechanism](https://github.com/
 We use built-in JSON Schema capabilities to provide extensibility. 
 These capabilities are augmented by some JSON LD-inspired extensions, without requiring consumers to become full-blown JSON LD processors.
 There are two modes of making XDM extensible: through custom properties and through new schemas.
-Custom properties are discussed below, new schemas will be defined in the future.
+Custom properties and deriving new schemas from existing schemas are discussed in the next two sections
 
 #### Custom Properties
 
@@ -180,7 +180,150 @@ In order to make a schema extensible, add the `https://ns.adobe.com/xdm/common/e
   ]
 ```
 
+#### New Schemas
 
+When it comes to expressing parent-child relationships between schemas, e.g. in order to create a new schema that inherits definitions from an existing schema, XDM distinguishes two things:
+
+1. How inheritance relationships are expressed
+2. How inheritance relationships are implemented
+
+JSON Schema does not have a built-in concept of schema inheritance, so XDM is using a set of custom properties and conventions to achieve the same semantics.
+
+##### Declaring a Schema to be Extensible
+
+Unless explicitly declared otherwise, XDM schemas cannot be extended. 
+The author of a given schema has to declare the ability to extend a schema using the `meta:extensible` property at the root of the schema. 
+`meta:extensible` is a `boolean` property, and only the value `true` is of any consequence, as the assumed default is `false`.
+If a schema is not extensible, the `meta:extensible` property can be omitted.
+
+In addition to **declaring** the extensibility, the schema author has to make sure that all properties that constitute the schema are defined in a child node of `definitions`.
+As you can see in the next section, the presence of a `definitions` object is expected, and will be validated by running `npm run lint`.
+The co-occurrence of `"meta:extensible": true` and `definitions` is enforced through rules in the meta-schema under `meta.schema.json`.
+
+##### Extending a Schema with a new Schema
+
+A schema must express that it is extending one or multiple other schemas through the `meta:extends` property.
+This property can be either a `string`, containing the `uri` of the schema that is being extended.
+This `uri` is the value of the `$id` property of the extended schema, and is for XDM typically a fully qualified URI that does *not* end with `.schema.json`.
+Alternatively, `meta:extends` can be an `array` of schmema `uri`s.
+JSON Schema does not resolve multiple levels of inheritance, so when extending a schema that is extending another schema, list both schemas in the `meta:extends` array. A list of extensions will looks something like this:
+
+```json
+"meta:extends": [
+  "https://ns.adobe.com/firstschema",
+  "https://ns.adobe.com/secondschema",
+]
+```
+
+In addition to **declaring** the intent to extend, the schema author has to make sure to actually include the schema definitions in an `allOf` object at the root of the schema. This `allOf` object will look something like this:
+
+```json
+"allOf":[
+    {"$ref": "https://ns.adobe.com/firstschema#/definitions/first"},
+    {"$ref": "https://ns.adobe.com/secondschema#/definitions/second"},
+    {"$ref": "#/definitions/myowndefinitions"}
+  ]
+```
+
+Note that the first and second schema are referred to not just by their base path, but also by the fragment identifier `#/definitions/first` and `#/definitions/second`, respectively. 
+The schema's own definitions are kept and imported from the `definitions.myowndefinitions` object. 
+This keeps the schema compact and readable.
+
+##### Example
+
+The root schema is `first.schema.json`. It is extensible.
+
+```json
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/example/first",
+  "title": "First",
+  "type": "object",
+  "meta:extensible": true,
+  "definitions": {
+    "first": {
+      "properties": {
+          "foo": {
+            "type": "string",
+          }
+        }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/first"
+    }
+  ]
+}
+```
+
+The second schema is `second.schema.json`, it is both extending and extensible.
+
+```json
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/example/second",
+  "title": "Second",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:extends": "https://ns.adobe.com/xdm/example/first",
+  "definitions": {
+    "second": {
+      "properties": {
+          "bar": {
+            "type": "string",
+          }
+        }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/example/first#/definitions/first"
+    },
+    {
+      "$ref": "#/definitions/second"
+    },
+    
+  ]
+}
+```
+
+The third schema is `third.schema.json`, it extends both `second`, and transitively `first` (although this needs to be expressed explicitly)
+
+```json
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/example/third",
+  "title": "Second",
+  "type": "object",
+  "meta:extensible": false,
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/example/first",
+    "https://ns.adobe.com/xdm/example/second"
+  ],
+  "definitions": {
+    "third": {
+      "properties": {
+          "baz": {
+            "type": "string",
+          }
+        }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/example/first#/definitions/first"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/example/first#/definitions/second"
+    },
+    {
+      "$ref": "#/definitions/third"
+    },
+    
+  ]
+}
+```
 
 ## Writing Styleguides
 

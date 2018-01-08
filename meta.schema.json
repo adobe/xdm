@@ -1,48 +1,133 @@
 {
-    "meta:license": [
-      "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
-      "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
-      "you may not use this file except in compliance with the License. You may obtain a copy",
-      "of the License at https://creativecommons.org/licenses/by/4.0/"
-    ],
-    "$schema": "http://json-schema.org/draft-06/schema#",
-    "$id": "https://ns.adobe.com/xdm/meta",
-    "title": "Meta-Schema for XDM",
-    "type": "object",
-    "description": "All Schema files have to adhere to this style guide.",
-    "properties": {
-      "$schema": {
-        "const": "http://json-schema.org/draft-06/schema#"
-      },
-      "$id": {
-        "type": "string",
-        "format": "uri",
-        "pattern": "https://ns.adobe.com/xdm/.*"
-      },
-      "meta:license": {
-        "type": "array",
-        "const": [
-          "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
-          "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
-          "you may not use this file except in compliance with the License. You may obtain a copy",
-          "of the License at https://creativecommons.org/licenses/by/4.0/"
-        ]
-      },
-      "type": {
-        "type": "string",
-        "const": "object"
-      },
-      "title": {
-        "type": "string",
-        "minLength": 3
-      }
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/meta",
+  "title": "Meta-Schema for XDM",
+  "type": "object",
+  "description": "All Schema files have to adhere to this style guide.",
+  "properties": {
+    "$schema": {
+      "const": "http://json-schema.org/draft-06/schema#"
     },
-    "required": [
-      "$schema",
-      "$id",
-      "meta:license",
-      "type",
-      "title",
-      "description"
-    ]
+    "$id": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "https://ns.adobe.com/xdm/.*"
+    },
+    "meta:license": {
+      "type": "array",
+      "const": [
+        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+      ]
+    },
+    "meta:extensible": {
+      "type": "boolean",
+      "default": false,
+      "description": "Set this `true` if the schema can be extended by other schemas."
+    },
+    "meta:extends": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "uri"
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      ]
+    },
+    "type": {
+      "type": "string",
+      "const": "object"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 3
+    }
+  },
+  "allOf": [
+    {
+      "oneOf": [
+        {
+          "properties": {
+            "meta:extensible": {
+              "const": true
+            }
+          },
+          "required": [
+            "definitions",
+            "meta:extensible"
+          ]
+        },
+        {
+          "properties": {
+            "meta:extensible": {
+              "const": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "anyOf": [
+        {
+          "properties": {
+            "meta:extends": {
+              "type": "string",
+              "format": "uri"
+            }
+          },
+          "required": [
+            "meta:extends",
+            "allOf"
+          ]
+        },
+        {
+          "properties": {
+            "meta:extends": {
+              "type": "array",
+              "items": {
+                "format": "uri",
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "meta:extends",
+            "allOf"
+          ]
+        },
+        {
+          "properties": {
+            "meta:extends": {
+              "default": null,
+              "const": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "required": [
+        "$schema",
+        "$id",
+        "meta:license",
+        "type",
+        "title",
+        "description"
+      ]
+    }
+  ]
 }

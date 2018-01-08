@@ -9,6 +9,8 @@
   "$id": "https://ns.adobe.com/xdm/assets/asset",
   "title": "Asset",
   "type": "object",
+  "meta:extensible": true,
+  "meta:extends": "https://ns.adobe.com/xdm/content/content",
   "description": "A digital asset, is anything that exists in a binary format and comes with the right to use. Content that does not possess that right is not considered an asset. Digital assets include but are not exclusive to: digital documents, audible content, motion picture, and other relevant digital content that is currently in circulation or production.",
   "definitions": {
     "asset": {

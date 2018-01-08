@@ -1,0 +1,92 @@
+{
+    "meta:license": [
+        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+        "This file is licensed to you under the Apache License, Version 2.0 (the 'License');",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at http://www.apache.org/licenses/LICENSE-2.0"
+    ],
+    "$id": "https://ns.adobe.com/xdm/experience/profile",
+    "$schema": "http://json-schema.org/schema#",
+    "title": "Profile",
+    "type": "object",
+    "description": "XDM Profiles are a singular representation of the attributes of identified and\npartially identified persons. Profiles that are highly identified maybe used for\npersonal communications or highly targeted engagements and can contain detailed\npersonal information such as names, gender, date of birth, locations, and contact\ninformation like phone numbers and email addresses. Profiles may range to the\nother end of the identification spectrum where only anonymous behavioral signals\nare being observed and the amount of identification is simple browser cookies.\nIn this latter case, the sparse Profile data is useful to build more knowledge\non the interests and preferences of the anonymous profile, and over time can\nbecome richer as the person interacting with brand becomes more engaged and\nultimately signs-on to notifications, subscriptions, purchases and other\nconnections with the brand that enrich and fill out the profile.\n\nXDM Profile can contain personal information, identification information, contact\ndetails and communication preferences. Over time XDM Profile will expand to cater\nfor other Profile data such as preference, propensities and other attributes.\n\n",
+    "properties": {
+        "xdm:realmId": {
+            "title": "Realm",
+            "$ref": "https://ns.adobe.com/xdm/common/datasource#/definitions/datasource",
+            "description": "The optional realm associated with the identity stitching strategy."
+        },
+        "xdm:identities": {
+            "title": "End User Identities",
+            "type": "array",
+            "description": "Array of Identities. Condensed, normalized encapsulation of all end user identifiers.",
+            "items": {
+                "$ref": "https://ns.adobe.com/xdm/common/identity#/definitions/identity"
+            },
+            "minItems": 1
+        },
+        "xdm:person": {
+            "title": "Person",
+            "$ref": "https://ns.adobe.com/xdm/common/person#/definitions/person",
+            "description": "An individual actor, contact, or owner.\n"
+        },
+        "xdm:addresses": {
+            "title": "Addresses",
+            "type": "array",
+            "description": "A postal address. Address could relate to a persons home, work, preferred\nstore location etc.\n",
+            "items": {
+                "$ref": "https://ns.adobe.com/xdm/common/address#/definitions/address"
+            }
+        },
+        "xdm:emails": {
+            "title": "Emails",
+            "type": "array",
+            "description": "A standard email address.\n",
+            "items": {
+                "$ref": "https://ns.adobe.com/xdm/common/emailaddress#/definitions/emailaddress"
+            }
+        },
+        "xdm:phoneNumbers": {
+            "title": "Phone Numbers",
+            "type": "array",
+            "description": "Information that allows the phone calling of a person. Typically an\nalphanumeric number, 1-222-333 4444 in North America, but can have a wide\nrange of formats.\n",
+            "items": {
+                "$ref": "https://ns.adobe.com/xdm/common/phonenumber#/definitions/phonenumber"
+            }
+        },
+        "xdm:optInOut": {
+            "title": "OptInOut",
+            "$ref": "https://ns.adobe.com/xdm/common/optinout#/definitions/optinout",
+            "description": "Describes a users opting in and out preferences for communication by medium\nand communication type.\n"
+        },
+        "xdm:pushNotificationTokens": {
+            "title": "Push Notification Tokens",
+            "type": "array",
+            "description": "Push notification tokens are used to communicate with applications that\nare installed on devices or SaaS application accounts.\n",
+            "items": {
+                "$ref": "https://ns.adobe.com/xdm/common/pushnotificationtoken#/definitions/pushnotificationtoken"
+            }
+        },
+        "xdm:orgUnitId": {
+            "title": "Organizational Unit Identifier",
+            "type": "string",
+            "description": "The unit ID within the organization owning the profile. This ID can be used to reference the organization details maintained in another dataset."
+        },
+        "xdm:geoUnitId": {
+            "title": "Geographical Unit Identifier",
+            "type": "string",
+            "description": "The geographical unit ID within the organization owning the profile. This ID can be used to reference the geographical information maintained in another dataset."
+        },
+        "xdm:audit": {
+            "title": "Audit",
+            "$ref": "https://ns.adobe.com/xdm/common/audittrail#/definitions/audittrail"
+        },
+        "xdm:organizations": {
+            "title": "Organizations",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    }
+}

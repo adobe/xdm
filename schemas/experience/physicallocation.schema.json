@@ -1,0 +1,66 @@
+{
+    "meta:license": [
+        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+        "This file is licensed to you under the Apache License, Version 2.0 (the 'License');",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at http://www.apache.org/licenses/LICENSE-2.0"
+    ],
+    "$id": "https://ns.adobe.com/xdm/experience/physicallocation",
+    "$schema": "http://json-schema.org/schema#",
+    "title": "Physical Location",
+    "type": "object",
+    "description": "",
+    "properties": {
+        "xdm:id": {
+            "title": "Location Id",
+            "type": "string",
+            "description": "The unique identifier of the location."
+        },
+        "xdm:description": {
+            "title": "Description",
+            "type": "string",
+            "description": "The description of the physical location."
+        },
+        "xdm:address": {
+            "title": "Address",
+            "$ref": "https://ns.adobe.com/xdm/common/address#/definitions/address",
+            "description": "The physical address of the location."
+        },
+        "xdm:phoneNumber": {
+            "title": "Phone Number",
+            "type": "string",
+            "description": "The phone number."
+        },
+        "xdm:locationCode": {
+            "title": "Location Code",
+            "type": "string",
+            "description": "A short code that uniquely identifies this location."
+        },
+        "xdm:shape": {
+            "title": "Geo Shape",
+            "$ref": "https://ns.adobe.com/xdm/common/geoshape#/definitions/geoshape",
+            "description": "The geographic shape of the physical location."
+        },
+        "xdm:pointOfInterest": {
+            "title": "Point of Interest",
+            "$ref": "https://ns.adobe.com/xdm/common/geocoordinates#/definitions/geocoordinates",
+            "description": "The coordinates of the point of interest for this location."
+        },
+        "xdm:containedByLocation": {
+            "title": "Contained by Location",
+            "$ref": "https://ns.adobe.com/xdm/common/reference#/definitions/reference",
+            "description": "A relation between this location and another one that contains it."
+        },
+        "xdm:containsLocations": {
+            "title": "Contains Locations",
+            "type": "array",
+            "items": {
+                "$ref": "https://ns.adobe.com/xdm/common/reference#/definitions/reference"
+            },
+            "description": "An array of one or more physical locations that are contained in this one."
+        }
+    },
+    "required": [
+        "xdm:id"
+    ]
+}

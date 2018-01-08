@@ -1,0 +1,34 @@
+{
+    "meta:license": [
+        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+        "This file is licensed to you under the Apache License, Version 2.0 (the 'License');",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at http://www.apache.org/licenses/LICENSE-2.0"
+    ],
+    "$id": "https://ns.adobe.com/xdm/common/identity",
+    "$schema": "http://json-schema.org/schema#",
+    "title": "Identity",
+    "type": "object",
+    "description": "Identity from identity services which is the fact of being who or what a person or thing is.\n",
+    "definitions": {
+        "identity": {
+            "properties": {
+                "xdm:id": {
+                    "title": "Identifier",
+                    "type": "string",
+                    "description": "Identity of the consumer in the related namespace."
+                },
+                "xdm:namespace": {
+                    "title": "Namespace",
+                    "$ref": "https://ns.adobe.com/xdm/common/datasource#/definitions/datasource",
+                    "description": "The namespace associated with the id attribute and matched up with the AAM data source integration code."
+                },
+                "xdm:xid": {
+                    "title": "Experience Identifier",
+                    "type": "string",
+                    "description": "The optional, universally unique identity of the consumer. Generated using the Identity and the related universally unique Datasource Id for the namespace."
+                }
+            }
+        }
+    }
+}

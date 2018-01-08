@@ -1,0 +1,44 @@
+{
+    "meta:license": [
+        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+        "This file is licensed to you under the Apache License, Version 2.0 (the 'License');",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at http://www.apache.org/licenses/LICENSE-2.0"
+    ],
+    "$id": "https://ns.adobe.com/xdm/common/metrics",
+    "$schema": "http://json-schema.org/schema#",
+    "title": "Metrics",
+    "type": "object",
+    "description": "Quantifiable measures used to track and assess the status of a specific business process.",
+    "definitions": {
+        "metrics": {
+            "properties": {
+                "xdm:directMarketing": {
+                    "title": "Direct Marketing",
+                    "$ref": "https://ns.adobe.com/xdm/common/directmarketingmetrics#/definitions/directmarketingmetrics",
+                    "description": "Direct marketing metrics\n"
+                },
+                "xdm:commerce": {
+                    "title": "Commerce",
+                    "$ref": "https://ns.adobe.com/xdm/common/commercemetrics#/definitions/commercemetrics",
+                    "description": "Commerce metrics\n"
+                },
+                "xdm:advertising": {
+                    "title": "Advertising",
+                    "$ref": "https://ns.adobe.com/xdm/common/advertisingmetrics#/definitions/advertisingmetrics",
+                    "description": "Advertising metrics\n"
+                },
+                "xdm:web": {
+                    "title": "Web",
+                    "$ref": "https://ns.adobe.com/xdm/common/webmetrics#/definitions/webmetrics",
+                    "description": "Web metrics\n"
+                },
+                "xdm:_vendor": {
+                    "title": "Vendor",
+                    "$ref": "https://ns.adobe.com/xdm/_vendor/metrics",
+                    "description": "Vendor specific metrics"
+                }
+            }
+        }
+    }
+}

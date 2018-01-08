@@ -173,10 +173,8 @@
   ],
   "required": [
     "xdm:assetID",
-    "xmp:createDate",
     "xdm:repositoryCreatedDate",
     "xdm:repositoryCreatedBy",
-    "xmp:modifyDate",
     "xdm:repositoryLastModifiedDate",
     "xdm:repositoryLastModifiedBy",
     "xdm:versionID",

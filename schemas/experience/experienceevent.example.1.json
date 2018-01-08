@@ -1,0 +1,66 @@
+{
+   "xdm:id":"experienceid-123456",
+   "xdm:dataSource":{
+      "xdm:id":12345,
+      "xdm:code":"DataSourceIntegrationCode-123"
+   },
+   "xdm:timestamp":978336000000,
+   "xdm:endUserIds":{
+      "xdm:mcId":{
+         "xdm:id":"mcid-sample111",
+         "xdm:namespace":{
+            "xdm:id":12345,
+            "xdm:code":"IC111"
+         }
+      },
+      "xdm:analytics":{
+         "xdm:id":"analyticsid-sample222",
+         "xdm:namespace":{
+            "xdm:id":12345,
+            "xdm:code":"AA111"
+         }
+      }
+   },
+   "xdm:environment":{
+      "xdm:type":"browser",
+      "xdm:browserDetails":{
+         "xdm:name":"Chrome",
+         "xdm:version":"63.0.3239",
+         "xdm:acceptLanguage":"en",
+         "xdm:cookiesEnabled":true,
+         "xdm:javaScriptEnabled":true,
+         "xdm:javaScriptVersion":"1.8.5",
+         "xdm:javaEnabled":true,
+         "xdm:javaVersion":"Java SE 8",
+         "xdm:viewportHeight":900,
+         "xdm:viewportWidth":1680
+      },
+      "xdm:operatingSystem":"MAC OS",
+      "xdm:operatingSystemVersion":"10.13",
+      "xdm:connectionType":"cable"
+   },
+   "xdm:productListItems":{
+      "xdm:SKU":"1002352692",
+      "xdm:lineItemId":"12345678",
+      "xdm:name":"24-Watt 8-Light Chrome Integrated LED Bath Light",
+      "xdm:currencyCode":"USD",
+      "xdm:quantity":1,
+      "xdm:priceTotal":159
+   },
+   "xdm:commerce":{
+      "xdm:order":{
+         "xdm:purchaseId":"a8g784hjq1mnp3",
+         "xdm:purchaseOrderNumber":"123456",
+         "xdm:payments":[
+            {
+               "xdm:transactionId":"transactid-a111",
+               "xdm:paymentAmount":159,
+               "xdm:paymentType":"creditCard",
+               "xdm:currencyCode":"USD"
+            }
+         ],
+         "xdm:currency":"USD",
+         "xdm:priceTotal":159
+      }
+   }
+}

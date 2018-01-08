@@ -10,6 +10,7 @@
   "title": "Principal",
   "description": "This model represents a principal in an access control system. Principals are entities that have been authenticated against an identity provider.",
   "type": "object",
+  "meta:extensible": false,
   "properties": {
     "xdm:identityProvider": {
       "description": "The identity provider that manages this principal.",

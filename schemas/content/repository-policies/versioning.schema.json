@@ -9,6 +9,7 @@
   "$id": "https://ns.adobe.com/xdm/content/repository-policies/versioning",
   "title": "Versioning",
   "description": "Representation of how content is versioned",
+  "meta:extensible": false,
   "definitions": {
     "versioning": {
       "type": "object",

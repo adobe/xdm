@@ -8,6 +8,7 @@
   "$id": "https://ns.adobe.com/xdm/common/geo.schema.json",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "type": "object",
+  "meta:extensible": true,
   "title": "Geo",
   "description": "The geographic related data where an event was observed.",
   "definitions": {

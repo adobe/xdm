@@ -8,6 +8,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/xdm/assets/layer-group",
   "title": "Layer Group",
+  "meta:extensible": true,
   "type": "object",
   "description": "",
   "definitions": {

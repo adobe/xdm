@@ -8,6 +8,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/xdm/assets/layer",
   "title": "Layer",
+  "meta:extensible": true,
   "type": "object",
   "description": "",
   "definitions": {

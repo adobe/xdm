@@ -9,6 +9,7 @@
   "$id": "https://ns.adobe.com/xdm/content/repository-policies/quota",
   "title": "Storage Quota",
   "description": "Representation of hard and soft quota on content storage",
+  "meta:extensible": true,
   "definitions": {
     "quota": {
       "type": "object",

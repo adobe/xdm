@@ -45,7 +45,7 @@
           "name": "Font File Name",
           "meta:usereditable": false,
           "description": "The font file name (not a complete path). For example: `Times New Roman.otf`. Some products are not storing file extension information. XMP spec is open about specifics of the file name. If font information is stored in multiple files, use the semicolon separator to store file names. For example: `zx___.mmm; zx__.pfm`",
-          "meta:example": [
+          "examples": [
             "zx___.mmm",
             "zx__.pfm"
           ]

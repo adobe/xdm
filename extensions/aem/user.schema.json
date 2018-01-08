@@ -14,7 +14,7 @@
       "type": "object",
       "properties": {
         "id": {
-          "description": "The value `User.getPrincipal().getName()`. This identifier is unique and persistent per AEM repository, with one caveat, that this identifier could be reassigned.",
+          "description": "The value of `User.getPrincipal().getName()`. This identifier is unique and persistent per AEM repository, with one caveat, that this identifier could be reassigned.",
           "type": "string"
         },
         "type": {

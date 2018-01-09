@@ -85,11 +85,6 @@
             "title": "Location Context",
             "$ref": "https://ns.adobe.com/xdm/common/locationcontext#/definitions/locationcontext",
             "description": "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, working hours."
-        },
-        "xdm:_vendor": {
-            "title": "Vendor Extensions",
-            "$ref": "https://ns.adobe.com/xdm/_vendor/experienceevent",
-            "description": "Vendor extensions to ExperienceEvent"
         }
     },
     "required": [

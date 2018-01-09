@@ -32,11 +32,6 @@
                     "title": "Web",
                     "$ref": "https://ns.adobe.com/xdm/common/webmetrics#/definitions/webmetrics",
                     "description": "Web metrics\n"
-                },
-                "xdm:_vendor": {
-                    "title": "Vendor",
-                    "$ref": "https://ns.adobe.com/xdm/_vendor/metrics",
-                    "description": "Vendor specific metrics"
                 }
             }
         }

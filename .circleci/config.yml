@@ -46,7 +46,7 @@ jobs:
       # send up-to-date markdown back to GitHub
       - run:
         name: Publish Markdown to GitHub
-        run: |
+        command: |
           git config --global user.email "trieloff@adobe.com"
           git config --global user.name "CirceCI"
           git add --force docs/reference/*

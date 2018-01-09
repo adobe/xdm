@@ -35,7 +35,9 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # lint
-      - run: npm run lint
+      - run: 
+          name: Lint
+          command: npm run lint
 
       # run tests!
       - run: npm test
@@ -47,7 +49,7 @@ jobs:
       # send up-to-date markdown back to GitHub
       - run:
           name: Publish Markdown to GitHub
-          command: git add --force docs/reference/* && git commit -m "[ci skip] updating documentation"
+          command: git add --force docs/reference/* && git commit -m "[ci skip] updating documentation" && git push
           filters:
             branches:
               only: master

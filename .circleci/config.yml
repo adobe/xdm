@@ -41,3 +41,11 @@ jobs:
 
       # generate markdowm
       - run: npm run markdown
+
+      # send up-to-date markdown back to GitHub
+      - run: 
+        name: Publish Documentation
+        command: git add --force docs/reference/* && git commit -m "[ci skip] update documentation" && git push
+        filters:
+          branches:
+            only: master

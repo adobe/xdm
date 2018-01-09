@@ -4,6 +4,23 @@
 
 
 
+## /common/
+
+* [EventEnvelope](./common/eventenvelope.schema.md) – `https://ns.adobe.com/xdm/common/eventenvelope`
+* [Extensibility base schema](./common/extensible.schema.md) – `https://ns.adobe.com/xdm/common/extensible`
+* [Geo](./common/geo.schema.md) – `https://ns.adobe.com/xdm/common/geo.schema.json`
+* [Principal](./common/principal.schema.md) – `https://ns.adobe.com/xdm/common/principal`
+* [Identity Provider](./common/identity-provider.schema.md) – `https://ns.adobe.com/xdm/common/identity-provider`
+* [Customer Managed Environment](./common/selfservice.schema.md) – `https://ns.adobe.com/xdm/selfservice`
+
+## /content/
+
+* [Component Container](./content/component-container.schema.md) – `https://ns.adobe.com/xdm/content/component-container`
+* [Componentized Page](./content/componentized-page.schema.md) – `https://ns.adobe.com/xdm/content/componentized-page`
+* [Content](./content/content.schema.md) – `https://ns.adobe.com/xdm/content/content`
+* [Page Component](./content/page-component.schema.md) – `https://ns.adobe.com/xdm/content/page-component`
+* [Content Repository](./content/repository.schema.md) – `https://ns.adobe.com/xdm/content/repository`
+
 ## /assets/
 
 * [Artboard](./assets/artboard.schema.md) – `https://ns.adobe.com/xdm/assets/artboard`
@@ -18,23 +35,6 @@
 * [Resource Event](./assets/resource-event.schema.md) – `https://ns.adobe.com/xdm/assets/resource-event`
 * [Rectangular Object (measured in variable unit)](./assets/variable-unit-rectangular.schema.md) – `https://ns.adobe.com/xdm/assets/variable-unit-rectangular`
 * [Video](./assets/video.schema.md) – `https://ns.adobe.com/xdm/assets/video`
-
-## /common/
-
-* [EventEnvelope](./common/eventenvelope.schema.md) – `https://ns.adobe.com/xdm/common/eventenvelope`
-* [Extensibility base schema](./common/extensible.schema.md) – `https://ns.adobe.com/xdm/common/extensible`
-* [Geo](./common/geo.schema.md) – `https://ns.adobe.com/xdm/common/geo.schema.json`
-* [Identity Provider](./common/identity-provider.schema.md) – `https://ns.adobe.com/xdm/common/identity-provider`
-* [Principal](./common/principal.schema.md) – `https://ns.adobe.com/xdm/common/principal`
-* [Customer Managed Environment](./common/selfservice.schema.md) – `https://ns.adobe.com/xdm/selfservice`
-
-## /content/
-
-* [Component Container](./content/component-container.schema.md) – `https://ns.adobe.com/xdm/content/component-container`
-* [Componentized Page](./content/componentized-page.schema.md) – `https://ns.adobe.com/xdm/content/componentized-page`
-* [Content](./content/content.schema.md) – `https://ns.adobe.com/xdm/content/content`
-* [Page Component](./content/page-component.schema.md) – `https://ns.adobe.com/xdm/content/page-component`
-* [Content Repository](./content/repository.schema.md) – `https://ns.adobe.com/xdm/content/repository`
 
 ## /context/
 

@@ -21,27 +21,6 @@ The Video class is for video assets, i.e. assets that consist of moving pictures
 
 ```json
 {
-  "xdm:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ad",
-  "xmp:createDate": "2017-09-26T15:52:25+00:00",
-  "xdm:repositoryCreatedDate": "2017-09-26T15:52:25+00:00",
-  "xdm:repositoryCreatedBy": "lars",
-  "xmp:modifyDate": "2017-09-26T15:52:25+00:00",
-  "xdm:repositoryLastModifiedDate": "2017-09-26T15:52:25+00:00",
-  "xdm:repositoryLastModifiedBy": "2017-09-26T15:52:25+00:00",
-  "xdm:versionID": "15",
-  "xdm:size": 1632418,
-  "xdm:path": "here",
-  "xdm:etag": "15",
-  "tiff:imageLength": 2160,
-  "tiff:imageWidth": 3840,
-  "xdm:aspectRatio": 1.77777777778,
-  "xdm:extent": 10920000,
-  "xdm:videoFrameRate": "f48s1"
-}
-```
-
-```json
-{
   "xdm:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ac",
   "xmp:createDate": "2017-09-26T15:52:25+00:00",
   "xdm:repositoryCreatedDate": "2017-09-26T15:52:25+00:00",
@@ -58,6 +37,27 @@ The Video class is for video assets, i.e. assets that consist of moving pictures
   "xdm:aspectRatio": 1.77777777778,
   "xdm:extent": 11700000,
   "xdm:videoFrameRate": "NTSC"
+}
+```
+
+```json
+{
+  "xdm:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ad",
+  "xmp:createDate": "2017-09-26T15:52:25+00:00",
+  "xdm:repositoryCreatedDate": "2017-09-26T15:52:25+00:00",
+  "xdm:repositoryCreatedBy": "lars",
+  "xmp:modifyDate": "2017-09-26T15:52:25+00:00",
+  "xdm:repositoryLastModifiedDate": "2017-09-26T15:52:25+00:00",
+  "xdm:repositoryLastModifiedBy": "2017-09-26T15:52:25+00:00",
+  "xdm:versionID": "15",
+  "xdm:size": 1632418,
+  "xdm:path": "here",
+  "xdm:etag": "15",
+  "tiff:imageLength": 2160,
+  "tiff:imageWidth": 3840,
+  "xdm:aspectRatio": 1.77777777778,
+  "xdm:extent": 10920000,
+  "xdm:videoFrameRate": "f48s1"
 }
 ```
 

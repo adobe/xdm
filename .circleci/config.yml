@@ -46,8 +46,8 @@ jobs:
 
       # send up-to-date markdown back to GitHub
       - run:
-        name: Publish Markdown to GitHub
-        command: git add --force docs/reference/* && git commit -m "[ci skip] updating documentation"
-        filters:
-          branches:
-            only: master
+          name: Publish Markdown to GitHub
+          command: git add --force docs/reference/* && git commit -m "[ci skip] updating documentation"
+          filters:
+            branches:
+              only: master

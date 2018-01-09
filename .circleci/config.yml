@@ -1,3 +1,4 @@
+---
 # Javascript Node CircleCI 2.0 configuration file
 #
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
@@ -8,7 +9,7 @@ jobs:
     docker:
       # specify the version you desire here
       - image: circleci/node:7.10
-      
+
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
       # documented at https://circleci.com/docs/2.0/circleci-images/
@@ -22,9 +23,9 @@ jobs:
       # Download and cache dependencies
       - restore_cache:
           keys:
-          - v1-dependencies-{{ checksum "package.json" }}
-          # fallback to using the latest cache if no exact match is found
-          - v1-dependencies-
+            - v1-dependencies-{{ checksum "package.json" }}
+            # fallback to using the latest cache if no exact match is found
+            - v1-dependencies-
 
       - run: npm install
 
@@ -32,10 +33,10 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-      
+
       # lint
       - run: npm run lint
-        
+
       # run tests!
       - run: npm test
 
@@ -43,9 +44,9 @@ jobs:
       - run: npm run markdown
 
       # send up-to-date markdown back to GitHub
-      - run: 
-        name: Publish Documentation
-        command: git add --force docs/reference/* && git commit -m "[ci skip] update documentation" && git push
+      - run:
+        name: Publish Markdown to GitHub
+        command: git add --force docs/reference/* && git commit -m "[ci skip] updating documentation"
         filters:
           branches:
             only: master

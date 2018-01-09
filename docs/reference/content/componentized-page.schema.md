@@ -77,6 +77,7 @@ Componentized pages are modular (consist of smaller content components), hyperli
 | [dc:title](#dctitle) | `string` | Optional | Componentized Page (this schema) |
 | [xdm:language](#xdmlanguage) | `string` | Optional | Componentized Page (this schema) |
 | [xdm:name](#xdmname) | `string` | **Required** | Componentized Page (this schema) |
+| [xdm:navOrder](#xdmnavOrder) | `integer` | Optional | Componentized Page (this schema) |
 | [xdm:path](#xdmpath) | `string` | **Required** | Componentized Page (this schema) |
 | [xdm:repositoryCreatedBy](#xdmrepositoryCreatedBy) | `string` | **Required** | [Content](content.schema.md#xdmrepositoryCreatedBy) |
 | [xdm:repositoryCreatedDate](#xdmrepositoryCreatedDate) | `string` | **Required** | [Content](content.schema.md#xdmrepositoryCreatedDate) |
@@ -166,6 +167,26 @@ Name of the page in the repository. This could be a file name or any name provid
 
 
 `string`
+
+
+
+
+
+
+## xdm:navOrder
+
+When this page is shown in a collection of pages, use `nav_order` to sort. The smallest `nav_order` should be the first item in the sorted collection.
+
+`xdm:navOrder`
+* is optional
+* type: `integer`
+* defined in this schema
+
+### xdm:navOrder Type
+
+
+`integer`
+* minimum value: `0`
 
 
 

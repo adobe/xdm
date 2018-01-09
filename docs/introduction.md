@@ -1,4 +1,7 @@
-# Experience Data Model (XDM) Version 0.1-WIP
+---
+xdm:navOrder: 1
+---
+# Experience Data Model (XDM) Version 0.2.0-WIP
 
 ## Introduction
 

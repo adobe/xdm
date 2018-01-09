@@ -1,3 +1,6 @@
+---
+xdm:navOrder: 2
+---
 ## Related Standards
 
 XDM incorporates or builds a number of existing standards and specifications.

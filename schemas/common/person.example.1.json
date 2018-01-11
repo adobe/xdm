@@ -1,9 +1,11 @@
 {
-   "xdm:firstName":"John",
-   "xdm:lastName":"Smith",
-   "xdm:courtesyTitle":"Mr.",
-   "xdm:birthDay":1,
-   "xdm:birthMonth":1,
-   "xdm:birthYear":2000,
-   "xdm:gender":"male"
+  "xdm:name": {
+    "xdm:givenName": "Jane",
+    "xdm:middleName": "F",
+    "xdm:surname": "Doe"
+  },
+  "xdm:birthMonth": 1,
+  "xdm:birthDay": 3,
+  "xdm:birthYear": 1996,
+  "xdm:gender": "female"
 }

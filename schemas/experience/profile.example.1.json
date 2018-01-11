@@ -1,20 +1,14 @@
 {
-   "xdm:endUserIds":{
-      "xdm:mcId":{
-         "xdm:id":"mcid-sample111",
-         "xdm:namespace":{
-            "xdm:id":12345,
-            "xdm:code":"IC111"
-         }
-      },
-      "xdm:analytics":{
-         "xdm:id":"analyticsid-sample222",
-         "xdm:namespace":{
-            "xdm:id":12345,
-            "xdm:code":"AA111"
-         }
-      }
-   },
+   "xdm:identities":[
+     {
+        "xdm:id":"analyticsid-sample222",
+        "xdm:namespace":{
+           "xdm:id":12345,
+           "xdm:code":"AA111"
+        },
+        "xdm:xid":"xid-12345"
+     }
+   ],
    "xdm:person":{
       "xdm:firstName":"John",
       "xdm:lastName":"Smith",
@@ -24,10 +18,8 @@
       "xdm:birthYear":2000,
       "xdm:gender":"male"
    },
-   "xdm:addresses": [
-     {
+   "xdm:workAddress": {
         "xdm:primary":false,
-        "xdm:type":"work",
         "xdm:street1":"300 Park Ave",
         "xdm:city":"San Jose",
         "xdm:stateProvince":"CA",
@@ -39,8 +31,7 @@
         "xdm:longitude":121.8863,
         "xdm:status":"active",
         "xdm:lastVerifiedDate":"2018-01-02"
-     }
-   ],
+   },
    "xdm:emails": [
      {
         "xdm:primary":false,
@@ -50,14 +41,11 @@
         "xdm:status":"active"
    }
    ],
-   "xdm:phoneNumbers": [
-     {
+   "xdm:mobilePhone": {
         "xdm:primary":true,
-        "xdm:type":"mobile",
         "xdm:number":"1-408-888-8888",
         "xdm:status":"active"
-     }
-   ],
+  },
    "xdm:optInOut":{
       "xdm:optingEmail":"In",
       "xdm:optingPhone":"Out",

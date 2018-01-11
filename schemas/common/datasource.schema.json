@@ -32,10 +32,10 @@
                         "type": "string"
                     }
                 }
-            }
+            },
+            "required": [
+                "xdm:id"
+            ]
         }
-    },
-    "required": [
-        "xdm:id"
-    ]
+    }
 }

@@ -42,10 +42,10 @@
                     "type": "string",
                     "description": "The specific altitude of the defined coordinate. The value conforms to the WGS84 datum and is measured in meters."
                 }
-            }
+            },
+            "required": [
+                "xdm:id"
+            ]
         }
-    },
-    "required": [
-        "xdm:id"
-    ]
+    }
 }

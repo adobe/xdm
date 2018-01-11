@@ -48,10 +48,10 @@
                     "type": "number",
                     "description": "The total price for the product line item."
                 }
-            }
+            },
+            "required": [
+                "xdm:SKU"
+            ]
         }
-    },
-    "required": [
-        "xdm:SKU"
-    ]
+    }
 }

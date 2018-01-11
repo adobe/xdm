@@ -57,10 +57,10 @@
                     "type": "number",
                     "description": "The maximum altitude of the shape. Only valid when used in combination with elevation. This value conforms to the WGS84 datum and is measured in meters."
                 }
-            }
+            },
+            "required": [
+                "xdm:id"
+            ]
         }
-    },
-    "required": [
-        "xdm:id"
-    ]
+    }
 }

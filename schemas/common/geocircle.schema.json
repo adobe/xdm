@@ -33,10 +33,10 @@
                     "type": "number",
                     "description": "The length of the radius of the circle. This value conforms to the WGS84 datum and is measured in meters."
                 }
-            }
+            },
+            "required": [
+                "xdm:id"
+            ]
         }
-    },
-    "required": [
-        "xdm:id"
-    ]
+    }
 }

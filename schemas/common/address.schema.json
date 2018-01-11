@@ -18,16 +18,6 @@
                     "type": "boolean",
                     "description": "Primary address indicator. A Profile can have only one `primary` address at a given point of time.\n"
                 },
-                "xdm:type": {
-                    "title": "Type",
-                    "type": "string",
-                    "description": "The way the address relates to the person. e.g 'work' or 'home'. Note this is person neutral, all persons will have a common address.type, if it is person specific the relationship attribute should be used e.g address.relationship='residence'",
-                    "meta:enum": {
-                        "home": "Home",
-                        "work": "Work",
-                        "unknown": "Unknown"
-                    }
-                },
                 "xdm:label": {
                     "title": "Label",
                     "type": "string",

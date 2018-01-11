@@ -18,19 +18,6 @@
                     "type": "boolean",
                     "description": "Primary phone number indicator.\n\nUnlike for Address or EmailAddress, there can be multiple primary phone numbers; one per communication channel.\nThe communication channel is defined by the type:\n\n* `textMessaging`: type = `mobile`\n* `phone`: type = `home` | `work` | `unknown`\n* `fax`: type = `fax`\n"
                 },
-                "xdm:type": {
-                    "title": "Type",
-                    "type": "string",
-                    "description": "The way the phone number relates to the person. e.g 'work' or 'personal'",
-                    "default": "unknown",
-                    "meta:enum": {
-                        "unknown": "Unknown",
-                        "mobile": "Mobile",
-                        "home": "Home",
-                        "work": "Work",
-                        "fax": "Fax"
-                    }
-                },
                 "xdm:number": {
                     "title": "Number",
                     "type": "string",

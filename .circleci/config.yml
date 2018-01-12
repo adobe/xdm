@@ -1,14 +1,16 @@
-# Javascript Node CircleCI 2.0 configuration file
-#
-# Check https://circleci.com/docs/2.0/language-javascript/ for more details
-#
+---
+# Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+# This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+# you may not use this file except in compliance with the License. You may obtain a copy",
+# of the License at https://creativecommons.org/licenses/by/4.0/"
+
 version: 2
 jobs:
   build:
     docker:
       # specify the version you desire here
       - image: circleci/node:7.10
-      
+
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
       # documented at https://circleci.com/docs/2.0/circleci-images/
@@ -22,9 +24,9 @@ jobs:
       # Download and cache dependencies
       - restore_cache:
           keys:
-          - v1-dependencies-{{ checksum "package.json" }}
-          # fallback to using the latest cache if no exact match is found
-          - v1-dependencies-
+            - v1-dependencies-{{ checksum "package.json" }}
+            # fallback to using the latest cache if no exact match is found
+            - v1-dependencies-
 
       - run: npm install
 
@@ -32,12 +34,23 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-      
+
       # lint
-      - run: npm run lint
-        
+      - run: 
+          name: Lint
+          command: npm run lint
+
       # run tests!
       - run: npm test
 
       # generate markdowm
       - run: npm run markdown
+      - run: git config --global user.email "trieloff@adobe.com" && git config --global user.name "CirceCI"
+
+      # send up-to-date markdown back to GitHub
+      - run:
+          name: Publish Markdown to GitHub
+          command: git add --force docs/reference/* && git commit -m "[ci skip] updating documentation" && git push
+          filters:
+            branches:
+              only: master

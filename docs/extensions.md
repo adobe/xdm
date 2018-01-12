@@ -1,3 +1,6 @@
+---
+xdm:navOrder: 4
+---
 # Extending XDM
 
 XDM is a JSON-based standard and there are three ways how JSON data models can be extended:

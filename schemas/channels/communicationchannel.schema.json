@@ -98,5 +98,10 @@
         }
       }
     }
-  }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/communicationchannel"
+    }
+  ]
 }

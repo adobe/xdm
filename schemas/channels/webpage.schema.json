@@ -5,11 +5,11 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/common/webpage",
+  "$id": "https://ns.adobe.com/xdm/channels/webpage",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Web Page",
   "type": "object",
-  "description": "Information about the web page of the ExperienceEvent.",
+  "description": "Information about the web page of the `ExperienceEvent`.",
   "definitions": {
     "webpage": {
       "properties": {
@@ -26,11 +26,13 @@
         "xdm:URL": {
           "title": "URL",
           "type": "string",
+          "format": "uri",
           "description": "The web page URL."
         },
         "xdm:server": {
           "title": "Server",
           "type": "string",
+          "format": "hostname",
           "description": "The server hosts the web page."
         },
         "xdm:isErrorPage": {
@@ -67,5 +69,10 @@
         }
       }
     }
-  }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/webpage"
+    }
+  ]
 }

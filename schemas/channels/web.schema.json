@@ -9,21 +9,26 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Web",
   "type": "object",
-  "description": "Information about the web page and/or link of the ExperienceEvent.",
+  "description": "Information about the web page and/or link of the `ExperienceEvent`.",
   "definitions": {
     "web": {
       "properties": {
         "xdm:page": {
           "title": "Web Page",
           "$ref": "https://ns.adobe.com/xdm/common/webpage#/definitions/webpage",
-          "description": "The web page information of the ExperienceEvent."
+          "description": "The web page information of the `ExperienceEvent`."
         },
         "xdm:link": {
           "title": "Web Link",
           "$ref": "https://ns.adobe.com/xdm/common/weblink#/definitions/weblink",
-          "description": "The web link information of the ExperienceEvent."
+          "description": "The web link information of the `ExperienceEvent`."
         }
       }
     }
-  }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/web"
+    }
+  ]
 }

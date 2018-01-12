@@ -40,5 +40,10 @@
         }
       }
     }
-  }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/personname"
+    }
+  ]
 }

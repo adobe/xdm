@@ -1,0 +1,16 @@
+{
+  "@id": "https://ns.adobe.com/entities/geo/shapeid123",
+  "schema:description": "GeoCircle of New York Metro",
+  "schema:circle": {
+    "@id": "https://ns.adobe.com/entities/geo/circleid123",
+    "schema:description": "New York Metro",
+    "schema:coordinates": {
+      "@id": "https://ns.adobe.com/entities/geo/111",
+      "schema:description": "New York",
+      "schema:latitude": 37.3308953,
+      "schema:longitude": -121.8939894,
+      "schema:elevation": 31.0896
+    },
+    "schema:radius": 80000
+  }
+}

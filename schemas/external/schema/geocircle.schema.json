@@ -5,11 +5,11 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/common/geocircle",
+  "$id": "http://schema.org/GeoCircle",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Geo Circle",
   "type": "object",
-  "description": "A circular region of a particular radius centered on a GeoCoordinate.",
+  "description": "A circular region of a particular radius centered on a GeoCoordinate. Based on [schema.org](http://schema.org/GeoCircle)",
   "definitions": {
     "geocircle": {
       "properties": {
@@ -18,17 +18,17 @@
           "type": "string",
           "description": "The unique identifier of the circle."
         },
-        "xdm:description": {
+        "schema:description": {
           "title": "Description",
           "type": "string",
           "description": "A description of what the circle contains."
         },
-        "xdm:coordinates": {
+        "schema:coordinates": {
           "title": "Coordinates",
-          "$ref": "https://ns.adobe.com/xdm/common/geocoordinates#/definitions/geocoordinates",
+          "$ref": "http://schema.org/GeoCoordinates",
           "description": ""
         },
-        "xdm:radius": {
+        "schema:radius": {
           "title": "Radius",
           "type": "number",
           "description": "The length of the radius of the circle. This value conforms to the WGS84 datum and is measured in meters."

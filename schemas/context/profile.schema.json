@@ -15,7 +15,7 @@
       "properties": {
         "xdm:realmId": {
           "title": "Realm",
-          "$ref": "https://ns.adobe.com/xdm/common/datasource",
+          "$ref": "https://ns.adobe.com/xdm/data/datasource",
           "description": "The optional realm associated with the identity stitching strategy."
         },
         "xdm:identities": {
@@ -23,7 +23,7 @@
           "type": "array",
           "description": "Array of Identities. Condensed, normalized encapsulation of all end user identifiers.",
           "items": {
-            "$ref": "https://ns.adobe.com/xdm/common/identity#/definitions/identity"
+            "$ref": "https://ns.adobe.com/xdm/context/identity"
           },
           "minItems": 1
         },
@@ -47,27 +47,27 @@
           "type": "array",
           "description": "A standard email address.\n",
           "items": {
-            "$ref": "https://ns.adobe.com/xdm/common/emailaddress"
+            "$ref": "https://ns.adobe.com/xdm/context/emailaddress"
           }
         },
         "xdm:homePhone": {
           "title": "Home Phone",
-          "$ref": "https://ns.adobe.com/xdm/common/phonenumber",
+          "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
           "description": "Home phone number.\n"
         },
         "xdm:workPhone": {
           "title": "Work Phone",
-          "$ref": "https://ns.adobe.com/xdm/common/phonenumber",
+          "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
           "description": "Work phone number.\n"
         },
         "xdm:mobilePhone": {
           "title": "Mobile Phone",
-          "$ref": "https://ns.adobe.com/xdm/common/phonenumber",
+          "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
           "description": "Mobile phone number.\n"
         },
         "xdm:optInOut": {
           "title": "OptInOut",
-          "$ref": "https://ns.adobe.com/xdm/common/optinout",
+          "$ref": "https://ns.adobe.com/xdm/context/optinout",
           "description": "Describes a users opting in and out preferences for communication by medium\nand communication type.\n"
         },
         "xdm:pushNotificationTokens": {
@@ -75,7 +75,7 @@
           "type": "array",
           "description": "Push notification tokens are used to communicate with applications that\nare installed on devices or SaaS application accounts.\n",
           "items": {
-            "$ref": "https://ns.adobe.com/xdm/common/pushnotificationtoken"
+            "$ref": "https://ns.adobe.com/xdm/context/pushnotificationtoken"
           }
         },
         "xdm:orgUnitId": {

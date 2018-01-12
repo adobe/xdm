@@ -75,7 +75,7 @@
         },
         "xdm:web": {
           "title": "Web",
-          "$ref": "https://ns.adobe.com/xdm/channel/web",
+          "$ref": "https://ns.adobe.com/xdm/channels/web",
           "description": "The information related to web page and link of the ExperienceEvent."
         },
         "xdm:marketing": {

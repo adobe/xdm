@@ -19,21 +19,21 @@
           "description": "The person's full name"
         },
         "xdm:birthDay": {
-          "title": "Birth Day",
+          "title": "Birth day",
           "type": "integer",
           "description": "The day of the month a person was born (1-31).",
           "minimum": 1,
           "maximum": 31
         },
         "xdm:birthMonth": {
-          "title": "Birth Month",
+          "title": "Birth month",
           "type": "integer",
           "description": "The month of the year a person was born (1-12).",
           "minimum": 1,
           "maximum": 12
         },
         "xdm:birthYear": {
-          "title": "Birth Year",
+          "title": "Birth year",
           "type": "integer",
           "description": "The year a person was born including the century (yyyy, e.g 1983).",
           "minimum": 1,
@@ -44,11 +44,17 @@
           "type": "string",
           "description": "Gender identity of the person.\n",
           "default": "not_specified",
+          "enum": [
+            "male",
+            "female",
+            "not_specified",
+            "non_specific"
+          ],
           "meta:enum": {
             "not_specified": "Not Specified",
             "male": "Male",
             "female": "Female",
-            "non_specific": "Non specific"
+            "non_specific": "Non-specific"
           }
         },
         "xdm:audit": {
@@ -57,5 +63,10 @@
         }
       }
     }
-  }
+  },
+  "allOf": [
+    {
+      "ref$": "#/definitions/person"
+    }
+  ]
 }

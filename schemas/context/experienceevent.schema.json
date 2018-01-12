@@ -20,7 +20,7 @@
         },
         "xdm:dataSource": {
           "title": "Data Source",
-          "$ref": "https://ns.adobe.com/xdm/common/datasource#/definitions/datasource",
+          "$ref": "https://ns.adobe.com/xdm/data/datasource",
           "description": "Globally unique identification of a data source."
         },
         "xdm:timestamp": {
@@ -32,17 +32,17 @@
         },
         "xdm:endUserIds": {
           "title": "End User IDs",
-          "$ref": "https://ns.adobe.com/xdm/common/enduserids#/definitions/enduserids",
+          "$ref": "https://ns.adobe.com/xdm/context/enduserids",
           "description": "Condensed, normalized encapsulation of all end user identifiers.\n"
         },
         "xdm:metrics": {
           "title": "Metrics",
-          "$ref": "https://ns.adobe.com/xdm/common/metrics#/definitions/metrics",
+          "$ref": "https://ns.adobe.com/xdm/data/metrics",
           "description": "The metrics for actions performed during this observation."
         },
         "xdm:environment": {
           "title": "Environment",
-          "$ref": "https://ns.adobe.com/xdm/common/environment#/definitions/environment",
+          "$ref": "https://ns.adobe.com/xdm/context/environment",
           "description": "Information about the surrounding situation the event observation occurred in, specifically detailing transitory information such as the network or software versions."
         },
         "xdm:productListItems": {
@@ -50,42 +50,42 @@
           "type": "array",
           "description": "A list of items representing a product selected by a customer with specific options and pricing that are for that usage context at a specific point of time and may differ from the product record.",
           "items": {
-            "$ref": "https://ns.adobe.com/xdm/common/productlistitem#/definitions/productlistitem"
+            "$ref": "https://ns.adobe.com/xdm/content/productlistitem"
           }
         },
         "xdm:device": {
           "title": "Device",
-          "$ref": "https://ns.adobe.com/xdm/common/device#/definitions/device",
+          "$ref": "https://ns.adobe.com/xdm/context/device",
           "description": "An identified Device/Application or Device/Browser instance that is trackable across sessions, normally by cookies."
         },
         "xdm:commerce": {
           "title": "Commerce",
-          "$ref": "https://ns.adobe.com/xdm/common/commerce#/definitions/commerce",
+          "$ref": "https://ns.adobe.com/xdm/context/commerce",
           "description": "The commerce specific data related to this interaction."
         },
         "xdm:application": {
           "title": "Application",
-          "$ref": "https://ns.adobe.com/xdm/common/application#/definitions/application",
+          "$ref": "https://ns.adobe.com/xdm/channels/application",
           "description": "The application related to the event observation. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login."
         },
         "xdm:search": {
           "title": "Search",
-          "$ref": "https://ns.adobe.com/xdm/common/search#/definitions/search",
+          "$ref": "https://ns.adobe.com/xdm/context/search",
           "description": "The information related to web or mobile search."
         },
         "xdm:web": {
           "title": "Web",
-          "$ref": "https://ns.adobe.com/xdm/common/web#/definitions/web",
+          "$ref": "https://ns.adobe.com/xdm/channel/web",
           "description": "The information related to web page and link of the ExperienceEvent."
         },
         "xdm:marketing": {
           "title": "Marketing",
-          "$ref": "https://ns.adobe.com/xdm/common/marketing#/definitions/marketing",
+          "$ref": "https://ns.adobe.com/xdm/context/marketing",
           "description": "The information related to marketing activities that are active with the touchpoint."
         },
         "xdm:locationContext": {
           "title": "Location Context",
-          "$ref": "https://ns.adobe.com/xdm/common/locationcontext#/definitions/locationcontext",
+          "$ref": "https://ns.adobe.com/xdm/context/locationcontext",
           "description": "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, working hours."
         }
       },

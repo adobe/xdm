@@ -120,7 +120,7 @@
         },
         "xdm:audit": {
           "title": "Audit",
-          "$ref": "https://ns.adobe.com/xdm/common/audittrail#/definitions/audittrail"
+          "$ref": "https://ns.adobe.com/xdm/common/audittrail"
         }
       }
     }

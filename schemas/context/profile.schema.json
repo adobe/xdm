@@ -15,7 +15,7 @@
       "properties": {
         "xdm:realmId": {
           "title": "Realm",
-          "$ref": "https://ns.adobe.com/xdm/common/datasource#/definitions/datasource",
+          "$ref": "https://ns.adobe.com/xdm/common/datasource",
           "description": "The optional realm associated with the identity stitching strategy."
         },
         "xdm:identities": {
@@ -29,17 +29,17 @@
         },
         "xdm:person": {
           "title": "Person",
-          "$ref": "https://ns.adobe.com/xdm/common/person#/definitions/person",
+          "$ref": "https://ns.adobe.com/xdm/common/person",
           "description": "An individual actor, contact, or owner.\n"
         },
         "xdm:homeAddress": {
           "title": "Home Address",
-          "$ref": "https://ns.adobe.com/xdm/common/address#/definitions/address",
+          "$ref": "https://ns.adobe.com/xdm/common/address",
           "description": "A home postal address.\n"
         },
         "xdm:workAddress": {
           "title": "Work Address",
-          "$ref": "https://ns.adobe.com/xdm/common/address#/definitions/address",
+          "$ref": "https://ns.adobe.com/xdm/common/address",
           "description": "A work postal address.\n"
         },
         "xdm:emails": {
@@ -47,27 +47,27 @@
           "type": "array",
           "description": "A standard email address.\n",
           "items": {
-            "$ref": "https://ns.adobe.com/xdm/common/emailaddress#/definitions/emailaddress"
+            "$ref": "https://ns.adobe.com/xdm/common/emailaddress"
           }
         },
         "xdm:homePhone": {
           "title": "Home Phone",
-          "$ref": "https://ns.adobe.com/xdm/common/phonenumber#/definitions/phonenumber",
+          "$ref": "https://ns.adobe.com/xdm/common/phonenumber",
           "description": "Home phone number.\n"
         },
         "xdm:workPhone": {
           "title": "Work Phone",
-          "$ref": "https://ns.adobe.com/xdm/common/phonenumber#/definitions/phonenumber",
+          "$ref": "https://ns.adobe.com/xdm/common/phonenumber",
           "description": "Work phone number.\n"
         },
         "xdm:mobilePhone": {
           "title": "Mobile Phone",
-          "$ref": "https://ns.adobe.com/xdm/common/phonenumber#/definitions/phonenumber",
+          "$ref": "https://ns.adobe.com/xdm/common/phonenumber",
           "description": "Mobile phone number.\n"
         },
         "xdm:optInOut": {
           "title": "OptInOut",
-          "$ref": "https://ns.adobe.com/xdm/common/optinout#/definitions/optinout",
+          "$ref": "https://ns.adobe.com/xdm/common/optinout",
           "description": "Describes a users opting in and out preferences for communication by medium\nand communication type.\n"
         },
         "xdm:pushNotificationTokens": {
@@ -75,7 +75,7 @@
           "type": "array",
           "description": "Push notification tokens are used to communicate with applications that\nare installed on devices or SaaS application accounts.\n",
           "items": {
-            "$ref": "https://ns.adobe.com/xdm/common/pushnotificationtoken#/definitions/pushnotificationtoken"
+            "$ref": "https://ns.adobe.com/xdm/common/pushnotificationtoken"
           }
         },
         "xdm:orgUnitId": {
@@ -90,7 +90,7 @@
         },
         "xdm:audit": {
           "title": "Audit",
-          "$ref": "https://ns.adobe.com/xdm/common/audittrail#/definitions/audittrail"
+          "$ref": "https://ns.adobe.com/xdm/common/audittrail"
         },
         "xdm:organizations": {
           "title": "Organizations",

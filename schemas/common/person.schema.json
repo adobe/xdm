@@ -15,7 +15,7 @@
       "properties": {
         "xdm:name": {
           "title": "Full name",
-          "$ref": "https://ns.adobe.com/xdm/common/personname#/definitions/personname",
+          "$ref": "https://ns.adobe.com/xdm/common/personname",
           "description": "The person's full name"
         },
         "xdm:birthDay": {
@@ -59,7 +59,7 @@
         },
         "xdm:audit": {
           "title": "Audit",
-          "$ref": "https://ns.adobe.com/xdm/common/audittrail#/definitions/audittrail"
+          "$ref": "https://ns.adobe.com/xdm/common/audittrail"
         }
       }
     }

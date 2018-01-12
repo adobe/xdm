@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/common/advertisingmetrics",
+  "$id": "https://ns.adobe.com/xdm/data/advertisingmetrics",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Advertising Metrics",
   "type": "object",
@@ -15,12 +15,12 @@
       "properties": {
         "xdm:impressions": {
           "title": "Impressions",
-          "$ref": "https://ns.adobe.com/xdm/common/metric#/definitions/metric",
+          "$ref": "https://ns.adobe.com/xdm/data/metric",
           "description": "Number of impressions of an advertisement.\n"
         },
         "xdm:clicks": {
           "title": "Clicks",
-          "$ref": "https://ns.adobe.com/xdm/common/metric#/definitions/metric",
+          "$ref": "https://ns.adobe.com/xdm/data/metric",
           "description": "Number of clicks of an advertisement.\n"
         }
       }

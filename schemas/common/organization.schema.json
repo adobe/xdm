@@ -60,7 +60,7 @@
         },
         "xdm:location": {
           "title": "Location",
-          "$ref": "https://ns.adobe.com/xdm/context/physicallocation#/definitions/physicallocation",
+          "$ref": "https://ns.adobe.com/xdm/context/physicallocation",
           "description": "The location of the organization's main office."
         },
         "xdm:rating": {

@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/common/subscription",
+  "$id": "https://ns.adobe.com/xdm/context/subscription",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Subscription",
   "type": "object",
@@ -20,17 +20,17 @@
         },
         "xdm:subscriber": {
           "title": "Subscriber",
-          "$ref": "https://ns.adobe.com/xdm/common/person#/definitions/person",
+          "$ref": "https://ns.adobe.com/xdm/common/person",
           "description": "The owner of the subscription."
         },
         "xdm:device": {
           "title": "Device",
-          "$ref": "https://ns.adobe.com/xdm/common/device#/definitions/device",
+          "$ref": "https://ns.adobe.com/xdm/context/device",
           "description": "The device linked to the subscription."
         },
         "xdm:environment": {
           "title": "Environment",
-          "$ref": "https://ns.adobe.com/xdm/common/environment#/definitions/environment",
+          "$ref": "https://ns.adobe.com/xdm/context/environment",
           "description": "Environment of the subscription.\n\nThis can be either then known environment at the time of the subscription\nor the environment of the application for subscriptions related to an\nApplication.\n"
         },
         "xdm:SKU": {

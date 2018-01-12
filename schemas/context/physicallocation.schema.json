@@ -25,7 +25,7 @@
         },
         "xdm:address": {
           "title": "Address",
-          "$ref": "https://ns.adobe.com/xdm/common/address#/definitions/address",
+          "$ref": "https://ns.adobe.com/xdm/common/address",
           "description": "The physical address of the location."
         },
         "xdm:phoneNumber": {
@@ -40,24 +40,24 @@
         },
         "xdm:shape": {
           "title": "Geo Shape",
-          "$ref": "https://ns.adobe.com/xdm/common/geoshape#/definitions/geoshape",
+          "$ref": "http://schema.org/GeoShape",
           "description": "The geographic shape of the physical location."
         },
         "xdm:pointOfInterest": {
           "title": "Point of Interest",
-          "$ref": "https://ns.adobe.com/xdm/common/geocoordinates#/definitions/geocoordinates",
+          "$ref": "http://schema.org/GeoCoordinates",
           "description": "The coordinates of the point of interest for this location."
         },
         "xdm:containedByLocation": {
           "title": "Contained by Location",
-          "$ref": "https://ns.adobe.com/xdm/common/reference#/definitions/reference",
+          "$ref": "https://ns.adobe.com/xdm/common/reference",
           "description": "A relation between this location and another one that contains it."
         },
         "xdm:containsLocations": {
           "title": "Contains Locations",
           "type": "array",
           "items": {
-            "$ref": "https://ns.adobe.com/xdm/common/reference#/definitions/reference"
+            "$ref": "https://ns.adobe.com/xdm/common/reference"
           },
           "description": "An array of one or more physical locations that are contained in this one."
         }

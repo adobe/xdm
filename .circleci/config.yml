@@ -6,7 +6,7 @@
 
 version: 2
 jobs:
-  build:
+  validate:
     docker:
       # specify the version you desire here
       - image: circleci/node:7.10
@@ -79,7 +79,7 @@ workflows:
   version: 2
   build:
     jobs:
-      - build
+      - validate
       - docs:
         requires:
           - build

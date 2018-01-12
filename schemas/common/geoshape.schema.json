@@ -13,7 +13,7 @@
   "definitions": {
     "geoshape": {
       "properties": {
-        "xdm:id": {
+        "@id": {
           "title": "Shape Id",
           "type": "string",
           "description": "The unique identifier of the shape."
@@ -27,7 +27,7 @@
           "title": "Polygon",
           "type": "array",
           "items": {
-            "$ref": "https://ns.adobe.com/xdm/common/geocoordinates#/definitions/geocoordinates"
+            "$ref": "https://ns.adobe.com/xdm/common/geocoordinates"
           },
           "description": "A series of four or more coordinates where the first and final coordinates are identical.",
           "minItems": 4
@@ -41,7 +41,7 @@
           "title": "Box",
           "type": "array",
           "items": {
-            "$ref": "https://ns.adobe.com/xdm/common/geocoordinates#/definitions/geocoordinates"
+            "$ref": "https://ns.adobe.com/xdm/common/geocoordinates"
           },
           "description": "The area enclosed by the rectangle formed by two coordinates. The first coordinate is the lower corner and the second coordinate is the upper corner of a rectangle.",
           "minItems": 2,
@@ -62,5 +62,10 @@
         "xdm:id"
       ]
     }
-  }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/geoshape"
+    }
+  ]
 }

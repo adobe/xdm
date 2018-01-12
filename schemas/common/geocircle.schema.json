@@ -13,7 +13,7 @@
   "definitions": {
     "geocircle": {
       "properties": {
-        "xdm:id": {
+        "@id": {
           "title": "Identifier",
           "type": "string",
           "description": "The unique identifier of the circle."
@@ -35,8 +35,13 @@
         }
       },
       "required": [
-        "xdm:id"
+        "@id"
       ]
     }
-  }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/geocircle"
+    }
+  ]
 }

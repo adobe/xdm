@@ -13,7 +13,7 @@
   "definitions": {
     "geocoordinates": {
       "properties": {
-        "xdm:id": {
+        "@id": {
           "title": "Coordinates Id",
           "type": "string",
           "description": "The unique identifier of the coordinates."
@@ -44,8 +44,13 @@
         }
       },
       "required": [
-        "xdm:id"
+        "@id"
       ]
     }
-  }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/geocoordinates"
+    }
+  ]
 }

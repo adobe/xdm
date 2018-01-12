@@ -7,16 +7,17 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/physicallocation",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Physical Location",
+  "title": "Place",
   "type": "object",
-  "description": "",
+  "description": "A place in the real world with a physical location.",
   "definitions": {
     "physicallocation": {
       "properties": {
-        "xdm:id": {
-          "title": "Location Id",
+        "@id": {
+          "title": "Place ID",
           "type": "string",
-          "description": "The unique identifier of the location."
+          "format": "uri",
+          "description": "The unique identifier of the place."
         },
         "xdm:description": {
           "title": "Description",
@@ -63,7 +64,7 @@
         }
       },
       "required": [
-        "xdm:id"
+        "@id"
       ]
     }
   },

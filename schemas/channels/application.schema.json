@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/common/application",
+  "$id": "https://ns.adobe.com/xdm/channels/application",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Application",
   "type": "object",
@@ -13,7 +13,7 @@
   "definitions": {
     "application": {
       "properties": {
-        "xdm:id": {
+        "@id": {
           "title": "Application Identifier",
           "type": "string",
           "description": "Unique identifier of the application."
@@ -26,9 +26,14 @@
         "xdm:version": {
           "title": "Version",
           "type": "string",
-          "description": "Version of the application.\n"
+          "description": "Version of the application."
         }
       }
     }
-  }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/application"
+    }
+  ]
 }

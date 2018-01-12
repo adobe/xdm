@@ -77,13 +77,7 @@ jobs:
 
 workflows:
   version: 2
-  all:
+  build:
     jobs:
       - build
-      - docs:
-        requires:
-          - build
-        filters:
-          branches:
-            only:
-              - master
+      - docs

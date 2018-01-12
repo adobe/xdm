@@ -15,12 +15,12 @@
       "properties": {
         "xdm:page": {
           "title": "Web Page",
-          "$ref": "https://ns.adobe.com/xdm/common/webpage#/definitions/webpage",
+          "$ref": "https://ns.adobe.com/xdm/channels/webpage",
           "description": "The web page information of the `ExperienceEvent`."
         },
         "xdm:link": {
           "title": "Web Link",
-          "$ref": "https://ns.adobe.com/xdm/common/weblink#/definitions/weblink",
+          "$ref": "https://ns.adobe.com/xdm/context/weblink",
           "description": "The web link information of the `ExperienceEvent`."
         }
       }

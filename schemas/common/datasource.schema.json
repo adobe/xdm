@@ -6,7 +6,7 @@
     "of the License at http://www.apache.org/licenses/LICENSE-2.0"
   ],
   "$id": "https://ns.adobe.com/xdm/common/datasource",
-  "$schema": "http://json-schema.org/schema#",
+  "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Data Source",
   "type": "object",
   "description": "The Datasource acts as a namespace or unique identifier associated with a collection of data. Each EndUserID is associated with a given Datasource. A user can create and obtain information about a Datasource during the solution onboarding.\n",

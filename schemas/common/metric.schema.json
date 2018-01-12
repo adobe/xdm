@@ -6,7 +6,7 @@
     "of the License at http://www.apache.org/licenses/LICENSE-2.0"
   ],
   "$id": "https://ns.adobe.com/xdm/common/metric",
-  "$schema": "http://json-schema.org/schema#",
+  "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Metric",
   "type": "object",
   "description": "A quantifiable measure that is used to track and assess the status of a specific business process.",

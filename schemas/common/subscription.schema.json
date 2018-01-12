@@ -6,7 +6,7 @@
     "of the License at http://www.apache.org/licenses/LICENSE-2.0"
   ],
   "$id": "https://ns.adobe.com/xdm/common/subscription",
-  "$schema": "http://json-schema.org/schema#",
+  "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Subscription",
   "type": "object",
   "description": "Subscriptions are licensed entitlements to software, services or goods that are utilized in a time or usage based way.",

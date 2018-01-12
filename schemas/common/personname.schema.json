@@ -6,7 +6,7 @@
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
   "$id": "https://ns.adobe.com/xdm/common/personname",
-  "$schema": "http://json-schema.org/schema#",
+  "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Person Name",
   "type": "object",
   "description": "Full name of a person",

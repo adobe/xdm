@@ -6,7 +6,7 @@
     "of the License at http://www.apache.org/licenses/LICENSE-2.0"
   ],
   "$id": "https://ns.adobe.com/xdm/common/discount",
-  "$schema": "http://json-schema.org/schema#",
+  "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Discount",
   "type": "object",
   "description": "This is an offer from the supplier to the purchaser, to reduce the payment amount if the payment is made within a certain period of time.",

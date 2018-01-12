@@ -6,7 +6,7 @@
     "of the License at http://www.apache.org/licenses/LICENSE-2.0"
   ],
   "$id": "https://ns.adobe.com/xdm/common/reference",
-  "$schema": "http://json-schema.org/schema#",
+  "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Reference",
   "type": "object",
   "description": "A reference to another model of the XDM.\n\n> Note: This object is not a model in the XDM. It's just used by models to\n  link them to another model.\n",

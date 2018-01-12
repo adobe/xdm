@@ -6,7 +6,7 @@
     "of the License at http://www.apache.org/licenses/LICENSE-2.0"
   ],
   "$id": "https://ns.adobe.com/xdm/common/pushnotificationtoken",
-  "$schema": "http://json-schema.org/schema#",
+  "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Push Notification Token",
   "type": "object",
   "description": "Push notification tokens are used to communicate with applications that\nare installed on devices or SaaS application accounts. Examples include mobile\napplication notifications over notification services like the Apple Push\nNotification service.\n",

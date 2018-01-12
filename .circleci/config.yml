@@ -81,5 +81,9 @@ workflows:
     jobs:
       - validate-json
       - generate-docs:
+          filters:
+            branches:
+              only:
+                - master
           requires: 
             - validate-json

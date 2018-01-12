@@ -6,7 +6,7 @@
 
 version: 2
 jobs:
-  validate:
+  validate-json:
     docker:
       # specify the version you desire here
       - image: circleci/node:7.10
@@ -43,7 +43,7 @@ jobs:
       # run tests!
       - run: npm test
 
-  docs:
+  generate-docs:
     docker:
       - image: circleci/node:7.10
 
@@ -79,7 +79,7 @@ workflows:
   version: 2
   build:
     jobs:
-      - validate
-      - docs:
-        requires:
-          - validate
+      - validate-json
+      - generate-docs:
+          requires: 
+            - validate-json

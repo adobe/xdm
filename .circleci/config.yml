@@ -80,6 +80,6 @@ workflows:
   build:
     jobs:
       - validate
-      docs:
+      - docs:
         requires:
           - validate

@@ -1,8 +1,8 @@
 {
-  "xdm:createdOn": "2018-01-12T15:52:25+00:00",
-  "xdm:modifiedOn": "2018-01-12T15:52:25+00:00",
-  "xdm:createdByUserId": "jsmith",
-  "xdm:modifiedByUserId": "jsmith",
-  "xdm:createdByBatchId": "batchid-123",
-  "xdm:modifiedByBatchId": "batchid-456"
+  "xdm:repositoryCreatedDate": "2018-01-12T15:52:25+00:00",
+  "xdm:repositoryLastModifiedDate": "2018-01-12T15:52:25+00:00",
+  "xdm:repositoryCreatedBy": "jsmith",
+  "xdm:repositoryLastModifiedBy": "jsmith",
+  "xdm:createdByBatchID": "https://data.adobe.io/batchid-123",
+  "xdm:modifiedByBatchID": "https://data.adobe.io/batchid-456"
 }

@@ -1,8 +1,9 @@
 {
+  "@id": "https://ns.adobe.com/entities/geo/tokyo",
   "xdm:countryCode": "JP",
   "xdm:stateProvince": "Tōkyō-to",
   "xdm:city": "Tōkyō",
   "xdm:postalCode": "141-0032",
-  "xdm:latitude": 35.6185,
-  "xdm:longitude": 139.73237
+  "schema:latitude": 35.6185,
+  "schema:longitude": 139.73237
 }

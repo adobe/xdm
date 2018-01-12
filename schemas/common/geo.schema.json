@@ -9,6 +9,9 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "type": "object",
   "meta:extensible": true,
+  "meta:extends": [
+    "http://schema.org/GeoCoordinates"
+  ],
   "title": "Geo",
   "description": "The geographic related data where an event was observed.",
   "definitions": {
@@ -44,25 +47,14 @@
           "title": "Metropolitan Statistical Area",
           "type": "integer",
           "description": "The Metropolitan Statistical Area in the USA where the observation occurred."
-        },
-        "xdm:latitude": {
-          "title": "Latitude",
-          "type": "number",
-          "minimum": -90,
-          "maximum": 90,
-          "description": "The signed vertical coordinate of a geographic point."
-        },
-        "xdm:longitude": {
-          "title": "Longitude",
-          "type": "number",
-          "minimum": -180,
-          "maximum": 180,
-          "description": "The signed horizontal coordinate of a geographic point."
         }
       }
     }
   },
   "allOf": [
+    {
+      "$ref": "http://schema.org/GeoCoordinates"
+    },
     {
       "$ref": "#/definitions/geo"
     }

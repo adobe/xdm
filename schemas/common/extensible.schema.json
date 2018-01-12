@@ -43,6 +43,7 @@
             "^stArtboard:.*$": {},
             "^exif:.*$": {},
             "^activitystreams:.*$": {},
+            "^schema:.*$": {},
             ".+://.+": {}
           },
           "additionalProperties": false
@@ -187,6 +188,11 @@
                   "type": "string",
                   "format": "url",
                   "const": "https://www.w3.org/ns/activitystreams"
+                },
+                "schema": {
+                  "type": "string",
+                  "format": "url",
+                  "const": "http://schema.org/"
                 }
               },
               "additionalProperties": false,
@@ -223,6 +229,7 @@
             "^stArtboard:.*$": {},
             "^exif:.*$": {},
             "^activitystreams:.*$": {},
+            "^schema:.*$": {},
             ".+://.+": {}
           },
           "required": [

@@ -1,0 +1,74 @@
+{
+    "meta:license": [
+        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+        "This file is licensed to you under the Apache License, Version 2.0 (the 'License');",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at http://www.apache.org/licenses/LICENSE-2.0"
+    ],
+    "$id": "https://ns.adobe.com/xdm/common/organization",
+    "$schema": "http://json-schema.org/schema#",
+    "title": "Organization",
+    "type": "object",
+    "description": "information that uniquely identifies an organized entity such as company, non-profit, government agency or educational institution, plus additional information that further qualifies the organization.",
+    "definitions": {
+        "organization": {
+            "properties": {
+                "xdm:id": {
+                    "title": "Organization Id",
+                    "type": "string",
+                    "description": "A unique identifier for the organization."
+                },
+                "xdm:legalName": {
+                    "title": "Organization Name",
+                    "type": "string",
+                    "description": "The official name of the organization."
+                },
+                "xdm:description": {
+                    "title": "Organization Description",
+                    "type": "string",
+                    "description": "A description of the organization."
+                },
+                "xdm:numberOfEmployees": {
+                    "title": "Number of Employees",
+                    "type": "number",
+                    "description": "The number of employees the organization has."
+                },
+                "xdm:industry": {
+                    "title": "Industry",
+                    "type": "string",
+                    "description": "The the industry that this organization is a part of. "
+                },
+                "xdm:duns": {
+                    "title": "Dun & Bradstreet number",
+                    "type": "string",
+                    "description": "The Dun & Bradstreet DUNS number for identifying an organization or business person."
+                },
+                "xdm:website": {
+                    "title": "Web Site",
+                    "type": "string",
+                    "description": "The url of the organization's website."
+                },
+                "xdm:sicCode": {
+                    "title": "SIC Code",
+                    "type": "string",
+                    "description": "The Standard Industrial Classification Code."
+                },
+                "xdm:marketSegment": {
+                    "title": "Market Segment",
+                    "type": "string",
+                    "description": "The named market segment that the organization participates in."
+                },
+                "xdm:location": {
+                    "title": "Location",
+                    "$ref": "https://ns.adobe.com/xdm/experience/physicallocation#/definitions/physicallocation",
+                    "description": "The location of the organization's main office."
+                },
+                "xdm:rating": {
+                    "title": "Rating",
+                    "type": "string",
+                    "description": "The calculated score or star rating for this organization."
+                }
+            }
+        }
+    }
+}

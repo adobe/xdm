@@ -1,0 +1,14 @@
+{
+   "xdm:page":{
+      "xdm:section":"Navigation",
+      "xdm:name":"google homepage",
+      "xdm:URL":"www.google.com",
+      "xdm:isErrorPage":false,
+      "xdm:isHomePage":true
+   },
+   "xdm:link":{
+      "xdm:type":"other",
+      "xdm:URL":"https://store.google.com/?utm_source=hp_header&utm_medium=google_oo&utm_campaign=GS100042",
+      "xdm:name":"google store"
+   }
+}

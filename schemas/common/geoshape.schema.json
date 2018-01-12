@@ -1,0 +1,66 @@
+{
+    "meta:license": [
+        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+        "This file is licensed to you under the Apache License, Version 2.0 (the 'License');",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at http://www.apache.org/licenses/LICENSE-2.0"
+    ],
+    "$id": "https://ns.adobe.com/xdm/common/geoshape",
+    "$schema": "http://json-schema.org/schema#",
+    "title": "Geo Shape",
+    "type": "object",
+    "description": "The geographic shape of a place. Based on http://schema.org/GeoShape.",
+    "definitions": {
+        "geoshape": {
+            "properties": {
+                "xdm:id": {
+                    "title": "Shape Id",
+                    "type": "string",
+                    "description": "The unique identifier of the shape."
+                },
+                "xdm:description": {
+                    "title": "Description",
+                    "type": "string",
+                    "description": "A description of what the shape is defining."
+                },
+                "xdm:polygon": {
+                    "title": "Polygon",
+                    "type": "array",
+                    "items": {
+                        "$ref": "https://ns.adobe.com/xdm/common/geocoordinates#/definitions/geocoordinates"
+                    },
+                    "description": "A series of four or more coordinates where the first and final coordinates are identical.",
+                    "minItems": 4
+                },
+                "xdm:circle": {
+                    "title": "Circle",
+                    "$ref": "https://ns.adobe.com/xdm/common/geocircle#/definitions/geocircle",
+                    "description": "A circular region with a specific radius centered on a geographic coordinate."
+                },
+                "xdm:box": {
+                    "title": "Box",
+                    "type": "array",
+                    "items": {
+                        "$ref": "https://ns.adobe.com/xdm/common/geocoordinates#/definitions/geocoordinates"
+                    },
+                    "description": "The area enclosed by the rectangle formed by two coordinates. The first coordinate is the lower corner and the second coordinate is the upper corner of a rectangle.",
+                    "minItems": 2,
+                    "maxItems": 2
+                },
+                "xdm:altitude": {
+                    "title": "Altitude",
+                    "type": "number",
+                    "description": "The specific or minimum altitude of the shape. This value conforms to the WGS84 datum and is measured in meters."
+                },
+                "xdm:ceiling": {
+                    "title": "Ceiling",
+                    "type": "number",
+                    "description": "The maximum altitude of the shape. Only valid when used in combination with elevation. This value conforms to the WGS84 datum and is measured in meters."
+                }
+            },
+            "required": [
+                "xdm:id"
+            ]
+        }
+    }
+}

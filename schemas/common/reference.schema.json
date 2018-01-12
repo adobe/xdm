@@ -1,0 +1,29 @@
+{
+    "meta:license": [
+        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+        "This file is licensed to you under the Apache License, Version 2.0 (the 'License');",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at http://www.apache.org/licenses/LICENSE-2.0"
+    ],
+    "$id": "https://ns.adobe.com/xdm/common/reference",
+    "$schema": "http://json-schema.org/schema#",
+    "title": "Reference",
+    "type": "object",
+    "description": "A reference to another model of the XDM.\n\n> Note: This object is not a model in the XDM. It's just used by models to\n  link them to another model.\n",
+    "definitions": {
+        "reference": {
+            "properties": {
+                "xdm:ref": {
+                    "title": "Reference Value",
+                    "type": "string",
+                    "description": "Value of the primary key value of the referenced entity. If the primary key\nis a composite key each value within the key must be serialized into a single\nvalue.\n"
+                },
+                "xdm:type": {
+                    "title": "Object Type",
+                    "type": "string",
+                    "description": "Type of the referenced entity (e.g., Event, Activity, ...).\nThe `type` MUST be set when the reference is ambiguous. For instance\nin an `Event`, the `context` property is a reference to different entities\ndepending on the type of the event.\n"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,128 @@
+{
+    "meta:license": [
+      "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+      "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+      "you may not use this file except in compliance with the License. You may obtain a copy",
+      "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/common/address",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Address",
+    "type": "object",
+    "description": "A postal address. Address could relate to a persons home, work, preferred store location etc.",
+    "definitions": {
+        "address": {
+            "properties": {
+                "xdm:primary": {
+                    "title": "Primary",
+                    "type": "boolean",
+                    "description": "Primary address indicator. A Profile can have only one `primary` address at a given point of time.\n"
+                },
+                "xdm:label": {
+                    "title": "Label",
+                    "type": "string",
+                    "description": "Free form name of the address."
+                },
+                "xdm:street1": {
+                    "title": "Street 1",
+                    "type": "string",
+                    "description": "Primary Street level information, apartment number, street number and street name."
+                },
+                "xdm:street2": {
+                    "title": "Street 2",
+                    "type": "string",
+                    "description": "Optional street information second line."
+                },
+                "xdm:street3": {
+                    "title": "Street 3",
+                    "type": "string",
+                    "description": "Optional street information third line."
+                },
+                "xdm:street4": {
+                    "title": "Street 4",
+                    "type": "string",
+                    "description": "Optional street information fourth line."
+                },
+                "xdm:city": {
+                    "title": "City",
+                    "type": "string",
+                    "description": "The town, city, village or other metropolitan identity of the address."
+                },
+                "xdm:region": {
+                    "title": "Region",
+                    "type": "string",
+                    "description": "The region, county, or district portion of the address."
+                },
+                "xdm:stateProvince": {
+                    "title": "State or Province",
+                    "type": "string",
+                    "description": "The state, province, region, territory portion of the address."
+                },
+                "xdm:stateProvinceISO": {
+                    "title": "State or Province ISO Code.",
+                    "type": "string",
+                    "description": "The country subdivision as defined by the second part of [ISO 3166-2](https://www.iso.org/iso-3166-country-codes.html#2012_iso3166-2)\n(without the first part and the hyphen ISO 3166-1 alpha-2).\n\nExample:\n\n* CA: from ISO 3166-2 `US-CA` value designating the state of California in the United States of America.\n* 75: from ISO 3166-2 `FR-75` value designating the metropolitan department of Paris in France.\n\n> NOTE: This value must be combined with countryCodeISO to compose a valid ISO 3166-2 code.\n"
+                },
+                "xdm:postalCode": {
+                    "title": "Postal Code",
+                    "type": "string",
+                    "description": "The postal code, zip code of other postal ordering for the address. Note, if zip codes are used either the base zip or zip+4 format can be used."
+                },
+                "xdm:country": {
+                    "title": "Country",
+                    "type": "string",
+                    "description": "The name of the government-administered territory."
+                },
+                "xdm:countryISO": {
+                    "title": "Country ISO",
+                    "type": "string",
+                    "description": "The alpha-2 code of the country as defined by [ISO 3166-1](https://www.iso.org/iso-3166-country-codes.html).",
+                    "minLength": 2,
+                    "maxLength": 2
+                },
+                "xdm:latitude": {
+                    "title": "Latitude",
+                    "type": "number",
+                    "minimum": -90,
+                    "maximum": 90,
+                    "description": "Defines the latitude of the delivery address."
+                },
+                "xdm:longitude": {
+                    "title": "Longitude",
+                    "type": "number",
+                    "minimum": -180,
+                    "maximum": 180,
+                    "description": "Defines the longitude of the delivery address."
+                },
+                "xdm:status": {
+                    "title": "Status",
+                    "type": "string",
+                    "description": "An indication as to the ability to use the address.",
+                    "default": "active",
+                    "meta:enum": {
+                        "active": "Active",
+                        "incomplete": "Incomplete",
+                        "pendingVerification": "Pending Verification",
+                        "blacklisted": "Blacklisted",
+                        "blocked": "Blocked"
+                    }
+                },
+                "xdm:statusReason": {
+                    "title": "Status Reason",
+                    "type": "string",
+                    "description": "A description of the current status."
+                },
+                "xdm:lastVerifiedDate": {
+                    "title": "Last Verified Date",
+                    "type": "string",
+                    "format": "date",
+                    "description": "The date that the address was last verified as still belonging to the person."
+                },
+                "xdm:audit": {
+                    "title": "Audit",
+                    "$ref": "https://ns.adobe.com/xdm/common/audittrail#/definitions/audittrail"
+                }
+            }
+        }
+    }
+}

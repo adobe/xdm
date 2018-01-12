@@ -1,0 +1,60 @@
+{
+   "xdm:identities":[
+      {
+         "xdm:id":"analyticsid-sample222",
+         "xdm:namespace":{
+            "xdm:id":12345,
+            "xdm:code":"AA111"
+         },
+         "xdm:xid":"xid-12345"
+      }
+   ],
+   "xdm:person":{
+      "xdm:name":{
+         "xdm:givenName":"Jane",
+         "xdm:middleName":"F",
+         "xdm:surname":"Doe"
+      },
+      "xdm:birthMonth":1,
+      "xdm:birthDay":3,
+      "xdm:birthYear":1996,
+      "xdm:gender":"female"
+   },
+   "xdm:workAddress":{
+      "xdm:primary":false,
+      "xdm:street1":"300 Park Ave",
+      "xdm:city":"San Jose",
+      "xdm:stateProvince":"CA",
+      "xdm:stateProvinceISO":"CA",
+      "xdm:postalCode":"95110",
+      "xdm:country":"US",
+      "xdm:countryISO":"US",
+      "xdm:latitude":37.3382,
+      "xdm:longitude":121.8863,
+      "xdm:status":"active",
+      "xdm:lastVerifiedDate":"2018-01-02"
+   },
+   "xdm:emails":[
+      {
+         "xdm:primary":false,
+         "xdm:address":"jsmith@xyzinc.com",
+         "xdm:label":"John Smith",
+         "xdm:type":"work",
+         "xdm:status":"active"
+      }
+   ],
+   "xdm:mobilePhone":{
+      "xdm:primary":true,
+      "xdm:number":"1-408-888-8888",
+      "xdm:status":"active"
+   },
+   "xdm:optInOut":{
+      "xdm:optingEmail":"In",
+      "xdm:optingPhone":"Out",
+      "xdm:optingTextMessaging":"Not Provided",
+      "xdm:optingFax":"Not Provided",
+      "xdm:optingAddress":"Not Provided",
+      "xdm:optingPushNotification":"Not Provided",
+      "xdm:globalOptout":false
+   }
+}

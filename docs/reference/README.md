@@ -4,14 +4,6 @@
 
 
 
-## /content/
-
-* [Component Container](./content/component-container.schema.md) – `https://ns.adobe.com/xdm/content/component-container`
-* [Componentized Page](./content/componentized-page.schema.md) – `https://ns.adobe.com/xdm/content/componentized-page`
-* [Content](./content/content.schema.md) – `https://ns.adobe.com/xdm/content/content`
-* [Page Component](./content/page-component.schema.md) – `https://ns.adobe.com/xdm/content/page-component`
-* [Content Repository](./content/repository.schema.md) – `https://ns.adobe.com/xdm/content/repository`
-
 ## /assets/
 
 * [Artboard](./assets/artboard.schema.md) – `https://ns.adobe.com/xdm/assets/artboard`
@@ -27,6 +19,19 @@
 * [Rectangular Object (measured in variable unit)](./assets/variable-unit-rectangular.schema.md) – `https://ns.adobe.com/xdm/assets/variable-unit-rectangular`
 * [Video](./assets/video.schema.md) – `https://ns.adobe.com/xdm/assets/video`
 
+## /context/
+
+* [Person Name](./context/person-name.schema.md) – `https://ns.adobe.com/xdm/context/person-name`
+* [Person](./context/person.schema.md) – `https://ns.adobe.com/xdm/context/person`
+
+## /content/
+
+* [Component Container](./content/component-container.schema.md) – `https://ns.adobe.com/xdm/content/component-container`
+* [Componentized Page](./content/componentized-page.schema.md) – `https://ns.adobe.com/xdm/content/componentized-page`
+* [Content](./content/content.schema.md) – `https://ns.adobe.com/xdm/content/content`
+* [Page Component](./content/page-component.schema.md) – `https://ns.adobe.com/xdm/content/page-component`
+* [Content Repository](./content/repository.schema.md) – `https://ns.adobe.com/xdm/content/repository`
+
 ## /common/
 
 * [EventEnvelope](./common/eventenvelope.schema.md) – `https://ns.adobe.com/xdm/common/eventenvelope`
@@ -35,17 +40,6 @@
 * [Identity Provider](./common/identity-provider.schema.md) – `https://ns.adobe.com/xdm/common/identity-provider`
 * [Principal](./common/principal.schema.md) – `https://ns.adobe.com/xdm/common/principal`
 * [Customer Managed Environment](./common/selfservice.schema.md) – `https://ns.adobe.com/xdm/selfservice`
-
-## /context/
-
-* [Person Name](./context/person-name.schema.md) – `https://ns.adobe.com/xdm/context/person-name`
-* [Person](./context/person.schema.md) – `https://ns.adobe.com/xdm/context/person`
-
-## /content/repository-policies/
-
-* [At-Rest Encryption](./content/repository-policies/encryption.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/encryption`
-* [Storage Quota](./content/repository-policies/quota.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/quota`
-* [Versioning](./content/repository-policies/versioning.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/versioning`
 
 ## /external/activity-streams-2/
 
@@ -60,6 +54,12 @@
 * [Object](./external/activity-streams-2/object.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/object`
 * [RDF Language Tagged String](./external/activity-streams-2/rdf-langstring.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langstring`
 * [JSON-LD `@type`](./external/activity-streams-2/type.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/type`
+
+## /content/repository-policies/
+
+* [At-Rest Encryption](./content/repository-policies/encryption.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/encryption`
+* [Storage Quota](./content/repository-policies/quota.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/quota`
+* [Versioning](./content/repository-policies/versioning.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/versioning`
 
 ## /common/event/
 

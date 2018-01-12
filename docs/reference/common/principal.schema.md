@@ -19,7 +19,9 @@ This model represents a principal in an access control system. Principals are en
 ## Principal Example
 ```json
 {
-  "xdm:identityProvider": "ims",
+  "xdm:provider": {
+    "@id": "https://ims-na1.adobelogin.com/"
+  },
   "@id": "C0B648DE57D701277F000101@AdobeID",
   "@type": "https://ns.adobe.com/xdm-extensions/ims/user"
 }
@@ -31,7 +33,7 @@ This model represents a principal in an access control system. Principals are en
 |----------|------|----------|------------|
 | [@id](#@id) | `string` | **Required** | Principal (this schema) |
 | [@type](#@type) | `string` | **Required** | Principal (this schema) |
-| [xdm:identityProvider](#xdmidentityProvider) | `string` | **Required** | Principal (this schema) |
+| [xdm:provider](#xdmprovider) | Identity Provider | **Required** | Principal (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -73,20 +75,19 @@ The type of the principal. Acts as a processing hint to the client. Ideally, eac
 
 
 
-## xdm:identityProvider
+## xdm:provider
 
 The identity provider that manages this principal.
 
-`xdm:identityProvider`
+`xdm:provider`
 * is **required**
-* type: `string`
+* type: Identity Provider
 * defined in this schema
 
-### xdm:identityProvider Type
+### xdm:provider Type
 
 
-`string`
-
+* [Identity Provider](identity-provider.schema.md) – `https://ns.adobe.com/xdm/common/identity-provider`
 
 
 

@@ -6,7 +6,7 @@
         "of the License at http://www.apache.org/licenses/LICENSE-2.0"
     ],
     "$id": "https://ns.adobe.com/xdm/common/address",
-    "$schema": "http://json-schema.org/schema#",
+    "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "Address",
     "type": "object",
     "description": "A postal address. Address could relate to a persons home, work, preferred store location etc.",

@@ -1,16 +1,16 @@
 {
-   "xdm:mcId":{
-      "xdm:id":"mcid-sample111",
-      "xdm:namespace":{
-         "xdm:id":12345,
-         "xdm:code":"IC111"
-      }
-   },
-   "xdm:analytics":{
-      "xdm:id":"analyticsid-sample222",
-      "xdm:namespace":{
-         "xdm:id":12345,
-         "xdm:code":"AA111"
-      }
-   }
+  "xdm:mcId": {
+    "xdm:id": "mcid-sample111",
+    "xdm:namespace": {
+      "xdm:id": 12345,
+      "xdm:code": "IC111"
+    }
+  },
+  "xdm:analytics": {
+    "xdm:id": "analyticsid-sample222",
+    "xdm:namespace": {
+      "xdm:id": 12345,
+      "xdm:code": "AA111"
+    }
+  }
 }

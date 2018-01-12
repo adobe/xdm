@@ -1,16 +1,16 @@
 {
-   "xdm:id":"shapeid123",
-   "xdm:description":"GeoCircle of New York Metro",
-   "xdm:circle":{
-      "xdm:id":"circleid123",
-      "xdm:description":"New York Metro",
-      "xdm:coordinates":{
-         "xdm:id":"111",
-         "xdm:description":"New York",
-         "xdm:latitude":37.3308953,
-         "xdm:longitude":-121.8939894,
-         "xdm:altitude":31.0896
-      },
-      "xdm:radius":80000
-   }
+  "xdm:id": "shapeid123",
+  "xdm:description": "GeoCircle of New York Metro",
+  "xdm:circle": {
+    "xdm:id": "circleid123",
+    "xdm:description": "New York Metro",
+    "xdm:coordinates": {
+      "xdm:id": "111",
+      "xdm:description": "New York",
+      "xdm:latitude": 37.3308953,
+      "xdm:longitude": -121.8939894,
+      "xdm:altitude": 31.0896
+    },
+    "xdm:radius": 80000
+  }
 }

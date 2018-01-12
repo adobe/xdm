@@ -1,24 +1,24 @@
 {
-    "meta:license": [
-        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
-        "This file is licensed to you under the Apache License, Version 2.0 (the 'License');",
-        "you may not use this file except in compliance with the License. You may obtain a copy",
-        "of the License at http://www.apache.org/licenses/LICENSE-2.0"
-    ],
-    "$id": "https://ns.adobe.com/xdm/common/commerce",
-    "$schema": "http://json-schema.org/schema#",
-    "title": "Commerce",
-    "type": "object",
-    "description": "The entites related to buying and selling activity.",
-    "definitions": {
-        "commerce": {
-            "properties": {
-                "xdm:order": {
-                    "title": "Order",
-                    "$ref": "https://ns.adobe.com/xdm/common/order#/definitions/order",
-                    "description": "The placed order for one or more products."
-                }
-            }
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This file is licensed to you under the Apache License, Version 2.0 (the 'License');",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at http://www.apache.org/licenses/LICENSE-2.0"
+  ],
+  "$id": "https://ns.adobe.com/xdm/common/commerce",
+  "$schema": "http://json-schema.org/schema#",
+  "title": "Commerce",
+  "type": "object",
+  "description": "The entites related to buying and selling activity.",
+  "definitions": {
+    "commerce": {
+      "properties": {
+        "xdm:order": {
+          "title": "Order",
+          "$ref": "https://ns.adobe.com/xdm/common/order#/definitions/order",
+          "description": "The placed order for one or more products."
         }
+      }
     }
+  }
 }

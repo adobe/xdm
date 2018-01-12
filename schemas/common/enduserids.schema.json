@@ -1,44 +1,44 @@
 {
-    "meta:license": [
-        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
-        "This file is licensed to you under the Apache License, Version 2.0 (the 'License');",
-        "you may not use this file except in compliance with the License. You may obtain a copy",
-        "of the License at http://www.apache.org/licenses/LICENSE-2.0"
-    ],
-    "$id": "https://ns.adobe.com/xdm/common/enduserids",
-    "$schema": "http://json-schema.org/schema#",
-    "title": "End User IDs",
-    "type": "object",
-    "description": "Condensed, normalized encapsulation of all end user identifiers. NOTE: At least one of the fields is required.\n",
-    "definitions": {
-        "enduserids": {
-            "properties": {
-                "xdm:realmId": {
-                    "title": "Realm",
-                    "$ref": "https://ns.adobe.com/xdm/common/datasource#/definitions/datasource",
-                    "description": "The optional realm associated with the identity stitching strategy."
-                },
-                "xdm:mcId": {
-                    "title": "Marketing Cloud identifier",
-                    "$ref": "https://ns.adobe.com/xdm/common/identity#/definitions/identity",
-                    "description": "A unique identifier from Adobe Marketing Cloud."
-                },
-                "xdm:analytics": {
-                    "title": "Analytics",
-                    "$ref": "https://ns.adobe.com/xdm/common/identity#/definitions/identity",
-                    "description": "Adobe Analytics end user identifier."
-                },
-                "xdm:campaign": {
-                    "title": "Campaign",
-                    "$ref": "https://ns.adobe.com/xdm/common/identity#/definitions/identity",
-                    "description": "Adobe Campaign profile identifier."
-                },
-                "xdm:target": {
-                    "title": "Target",
-                    "$ref": "https://ns.adobe.com/xdm/common/identity#/definitions/identity",
-                    "description": "Adobe Target end user identifier."
-                }
-            }
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This file is licensed to you under the Apache License, Version 2.0 (the 'License');",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at http://www.apache.org/licenses/LICENSE-2.0"
+  ],
+  "$id": "https://ns.adobe.com/xdm/common/enduserids",
+  "$schema": "http://json-schema.org/schema#",
+  "title": "End User IDs",
+  "type": "object",
+  "description": "Condensed, normalized encapsulation of all end user identifiers. NOTE: At least one of the fields is required.\n",
+  "definitions": {
+    "enduserids": {
+      "properties": {
+        "xdm:realmId": {
+          "title": "Realm",
+          "$ref": "https://ns.adobe.com/xdm/common/datasource#/definitions/datasource",
+          "description": "The optional realm associated with the identity stitching strategy."
+        },
+        "xdm:mcId": {
+          "title": "Marketing Cloud identifier",
+          "$ref": "https://ns.adobe.com/xdm/common/identity#/definitions/identity",
+          "description": "A unique identifier from Adobe Marketing Cloud."
+        },
+        "xdm:analytics": {
+          "title": "Analytics",
+          "$ref": "https://ns.adobe.com/xdm/common/identity#/definitions/identity",
+          "description": "Adobe Analytics end user identifier."
+        },
+        "xdm:campaign": {
+          "title": "Campaign",
+          "$ref": "https://ns.adobe.com/xdm/common/identity#/definitions/identity",
+          "description": "Adobe Campaign profile identifier."
+        },
+        "xdm:target": {
+          "title": "Target",
+          "$ref": "https://ns.adobe.com/xdm/common/identity#/definitions/identity",
+          "description": "Adobe Target end user identifier."
         }
+      }
     }
+  }
 }

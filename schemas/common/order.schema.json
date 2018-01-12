@@ -1,47 +1,47 @@
 {
-    "meta:license": [
-        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
-        "This file is licensed to you under the Apache License, Version 2.0 (the 'License');",
-        "you may not use this file except in compliance with the License. You may obtain a copy",
-        "of the License at http://www.apache.org/licenses/LICENSE-2.0"
-    ],
-    "$id": "https://ns.adobe.com/xdm/common/order",
-    "$schema": "http://json-schema.org/schema#",
-    "title": "Order",
-    "type": "object",
-    "description": "The order placed for a product list.",
-    "definitions": {
-        "order": {
-            "properties": {
-                "xdm:purchaseId": {
-                    "title": "Purchase ID",
-                    "type": "string",
-                    "description": "Unique identifier assigned by the seller for this purchase or contract."
-                },
-                "xdm:purchaseOrderNumber": {
-                    "title": "Purchase Order Number",
-                    "type": "string",
-                    "description": "Unique identifier assigned by the purchaser for this purchase or contract."
-                },
-                "xdm:payments": {
-                    "title": "Payment List",
-                    "type": "array",
-                    "description": "The list of payments for this order.",
-                    "items": {
-                        "$ref": "https://ns.adobe.com/xdm/common/paymentitem#/definitions/paymentitem"
-                    }
-                },
-                "xdm:currency": {
-                    "title": "Currency",
-                    "type": "string",
-                    "description": "The ISO 4217 currency code used for the order totals."
-                },
-                "xdm:priceTotal": {
-                    "title": "Price Total",
-                    "type": "number",
-                    "description": "The total price of this order after all discounts and taxes have been applied."
-                }
-            }
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This file is licensed to you under the Apache License, Version 2.0 (the 'License');",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at http://www.apache.org/licenses/LICENSE-2.0"
+  ],
+  "$id": "https://ns.adobe.com/xdm/common/order",
+  "$schema": "http://json-schema.org/schema#",
+  "title": "Order",
+  "type": "object",
+  "description": "The order placed for a product list.",
+  "definitions": {
+    "order": {
+      "properties": {
+        "xdm:purchaseId": {
+          "title": "Purchase ID",
+          "type": "string",
+          "description": "Unique identifier assigned by the seller for this purchase or contract."
+        },
+        "xdm:purchaseOrderNumber": {
+          "title": "Purchase Order Number",
+          "type": "string",
+          "description": "Unique identifier assigned by the purchaser for this purchase or contract."
+        },
+        "xdm:payments": {
+          "title": "Payment List",
+          "type": "array",
+          "description": "The list of payments for this order.",
+          "items": {
+            "$ref": "https://ns.adobe.com/xdm/common/paymentitem#/definitions/paymentitem"
+          }
+        },
+        "xdm:currency": {
+          "title": "Currency",
+          "type": "string",
+          "description": "The ISO 4217 currency code used for the order totals."
+        },
+        "xdm:priceTotal": {
+          "title": "Price Total",
+          "type": "number",
+          "description": "The total price of this order after all discounts and taxes have been applied."
         }
+      }
     }
+  }
 }

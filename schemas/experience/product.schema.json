@@ -1,152 +1,152 @@
 {
-    "meta:license": [
-        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
-        "This file is licensed to you under the Apache License, Version 2.0 (the 'License');",
-        "you may not use this file except in compliance with the License. You may obtain a copy",
-        "of the License at http://www.apache.org/licenses/LICENSE-2.0"
-    ],
-    "$id": "https://ns.adobe.com/xdm/experience/product",
-    "$schema": "http://json-schema.org/schema#",
-    "title": "Product",
-    "type": "object",
-    "description": "XDM product variant, master product and key attributes of product in the product catalog.",
-    "definitions": {
-        "product": {
-            "properties": {
-                "xdm:id": {
-                    "title": "Identifier",
-                    "type": "string",
-                    "description": "The internal unique ID of the variant in the commerce backend system."
-                },
-                "xdm:SKU": {
-                    "title": "SKU",
-                    "type": "string",
-                    "description": "The unique SKU (Stock Keeping Unit) of the variant assigned by the vendor."
-                },
-                "xdm:name": {
-                    "title": "Name",
-                    "type": "string",
-                    "description": "The name of the product."
-                },
-                "xdm:description": {
-                    "title": "Description",
-                    "type": "string",
-                    "description": "The localized description of the product."
-                },
-                "xdm:category": {
-                    "title": "Category",
-                    "type": "string",
-                    "description": "Primary categorization (category) name of the Master/variant."
-                },
-                "xdm:department": {
-                    "title": "Department",
-                    "type": "string",
-                    "description": "Primary department the product is associated with."
-                },
-                "xdm:brand": {
-                    "title": "Brand",
-                    "type": "string",
-                    "description": "Brand of the Master/Variant products."
-                },
-                "xdm:masterProductId": {
-                    "title": "Master Product Identifier",
-                    "type": "string",
-                    "description": "The internal unique ID of the product in the commerce backend system."
-                },
-                "xdm:masterProductSKU": {
-                    "title": "Master Product SKU",
-                    "type": "string",
-                    "description": "The unique SKU (Stock Keeping Unit) of the master product assigned by the vendor or manufacturer(to update)."
-                },
-                "xdm:masterProductName": {
-                    "title": "Master Product Name",
-                    "type": "string",
-                    "description": "The localized name of the product."
-                },
-                "xdm:masterProductDescription": {
-                    "title": "Master Product Description",
-                    "type": "string",
-                    "description": "The description of the product."
-                },
-                "xdm:fabrication": {
-                    "title": "Fabrication",
-                    "type": "string",
-                    "description": "Primary material the product is constructed with."
-                },
-                "xdm:gender": {
-                    "title": "Gender",
-                    "type": "string",
-                    "description": "Gender the product is marketed to. [male,female,unisex,unknown]."
-                },
-                "xdm:size": {
-                    "title": "Size",
-                    "type": "number",
-                    "description": "Standard product size for the product."
-                },
-                "xdm:unitOfMeasure": {
-                    "title": "Unit of Measure",
-                    "type": "string",
-                    "description": "Standard unit of measure of the varient. Denotes the units for the size measurement."
-                },
-                "xdm:countryOfOrigin": {
-                    "title": "Country of Origin",
-                    "type": "string",
-                    "description": "Country of origin as defined by customs requirements."
-                },
-                "xdm:COGS": {
-                    "title": "Cost of Good Sold",
-                    "type": "number",
-                    "description": "Cost of Good Sold. In the currencyCode currency."
-                },
-                "xdm:listPrice": {
-                    "title": "List Price",
-                    "type": "number",
-                    "description": "Default price of the product before sales and discounting. In the currencyCode currency."
-                },
-                "xdm:currencyCode": {
-                    "title": "Currency Code",
-                    "type": "string",
-                    "description": "The ISO 4217 currency code used for cost and pricing."
-                },
-                "xdm:originalSaleDate": {
-                    "title": "Original Sale Date",
-                    "type": "string",
-                    "description": "First date the product was made available for sale. The time using RFC3339 with a stated timezone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\"."
-                },
-                "xdm:productCreateDate": {
-                    "title": "Product Creation Date",
-                    "type": "string",
-                    "description": "The date when this product varient was created. The time using RFC3339 with a stated timezone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\"."
-                },
-                "xdm:productLastModified": {
-                    "title": "Product Last Modified",
-                    "type": "string",
-                    "description": "The date when this product varient was last modified. The time using RFC3339 with a stated timezone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\"."
-                },
-                "xdm:productURL": {
-                    "title": "Product URL",
-                    "type": "string",
-                    "description": "The URL for the primary Product View of the product varient page."
-                },
-                "xdm:manufacturerName": {
-                    "title": "Manufacturer Name",
-                    "type": "string",
-                    "description": "Manufacturer of the product."
-                },
-                "xdm:supplierName": {
-                    "title": "Supplier Name",
-                    "type": "string",
-                    "description": "The distributor of the product."
-                }
-            }
-        }
-    },
-    "allOf": [
-        {
-            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This file is licensed to you under the Apache License, Version 2.0 (the 'License');",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at http://www.apache.org/licenses/LICENSE-2.0"
+  ],
+  "$id": "https://ns.adobe.com/xdm/experience/product",
+  "$schema": "http://json-schema.org/schema#",
+  "title": "Product",
+  "type": "object",
+  "description": "XDM product variant, master product and key attributes of product in the product catalog.",
+  "definitions": {
+    "product": {
+      "properties": {
+        "xdm:id": {
+          "title": "Identifier",
+          "type": "string",
+          "description": "The internal unique ID of the variant in the commerce backend system."
         },
-        {
-            "$ref": "#/definitions/product"
+        "xdm:SKU": {
+          "title": "SKU",
+          "type": "string",
+          "description": "The unique SKU (Stock Keeping Unit) of the variant assigned by the vendor."
+        },
+        "xdm:name": {
+          "title": "Name",
+          "type": "string",
+          "description": "The name of the product."
+        },
+        "xdm:description": {
+          "title": "Description",
+          "type": "string",
+          "description": "The localized description of the product."
+        },
+        "xdm:category": {
+          "title": "Category",
+          "type": "string",
+          "description": "Primary categorization (category) name of the Master/variant."
+        },
+        "xdm:department": {
+          "title": "Department",
+          "type": "string",
+          "description": "Primary department the product is associated with."
+        },
+        "xdm:brand": {
+          "title": "Brand",
+          "type": "string",
+          "description": "Brand of the Master/Variant products."
+        },
+        "xdm:masterProductId": {
+          "title": "Master Product Identifier",
+          "type": "string",
+          "description": "The internal unique ID of the product in the commerce backend system."
+        },
+        "xdm:masterProductSKU": {
+          "title": "Master Product SKU",
+          "type": "string",
+          "description": "The unique SKU (Stock Keeping Unit) of the master product assigned by the vendor or manufacturer(to update)."
+        },
+        "xdm:masterProductName": {
+          "title": "Master Product Name",
+          "type": "string",
+          "description": "The localized name of the product."
+        },
+        "xdm:masterProductDescription": {
+          "title": "Master Product Description",
+          "type": "string",
+          "description": "The description of the product."
+        },
+        "xdm:fabrication": {
+          "title": "Fabrication",
+          "type": "string",
+          "description": "Primary material the product is constructed with."
+        },
+        "xdm:gender": {
+          "title": "Gender",
+          "type": "string",
+          "description": "Gender the product is marketed to. [male,female,unisex,unknown]."
+        },
+        "xdm:size": {
+          "title": "Size",
+          "type": "number",
+          "description": "Standard product size for the product."
+        },
+        "xdm:unitOfMeasure": {
+          "title": "Unit of Measure",
+          "type": "string",
+          "description": "Standard unit of measure of the varient. Denotes the units for the size measurement."
+        },
+        "xdm:countryOfOrigin": {
+          "title": "Country of Origin",
+          "type": "string",
+          "description": "Country of origin as defined by customs requirements."
+        },
+        "xdm:COGS": {
+          "title": "Cost of Good Sold",
+          "type": "number",
+          "description": "Cost of Good Sold. In the currencyCode currency."
+        },
+        "xdm:listPrice": {
+          "title": "List Price",
+          "type": "number",
+          "description": "Default price of the product before sales and discounting. In the currencyCode currency."
+        },
+        "xdm:currencyCode": {
+          "title": "Currency Code",
+          "type": "string",
+          "description": "The ISO 4217 currency code used for cost and pricing."
+        },
+        "xdm:originalSaleDate": {
+          "title": "Original Sale Date",
+          "type": "string",
+          "description": "First date the product was made available for sale. The time using RFC3339 with a stated timezone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\"."
+        },
+        "xdm:productCreateDate": {
+          "title": "Product Creation Date",
+          "type": "string",
+          "description": "The date when this product varient was created. The time using RFC3339 with a stated timezone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\"."
+        },
+        "xdm:productLastModified": {
+          "title": "Product Last Modified",
+          "type": "string",
+          "description": "The date when this product varient was last modified. The time using RFC3339 with a stated timezone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\"."
+        },
+        "xdm:productURL": {
+          "title": "Product URL",
+          "type": "string",
+          "description": "The URL for the primary Product View of the product varient page."
+        },
+        "xdm:manufacturerName": {
+          "title": "Manufacturer Name",
+          "type": "string",
+          "description": "Manufacturer of the product."
+        },
+        "xdm:supplierName": {
+          "title": "Supplier Name",
+          "type": "string",
+          "description": "The distributor of the product."
         }
-    ]
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/product"
+    }
+  ]
 }

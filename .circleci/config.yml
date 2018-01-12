@@ -43,6 +43,29 @@ jobs:
       # run tests!
       - run: npm test
 
+  docs:
+    docker:
+      - image: circleci/node:7.10
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}
+            # fallback to using the latest cache if no exact match is found
+            - v1-dependencies-
+
+      - run: npm install
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+
       # generate markdowm
       - run: npm run markdown
       - run: git config --global user.email "trieloff@adobe.com" && git config --global user.name "CirceCI"
@@ -51,6 +74,16 @@ jobs:
       - run:
           name: Publish Markdown to GitHub
           command: git add --force docs/reference/* && git commit -m "[ci skip] updating documentation" && git push
-          filters:
-            branches:
-              only: master
+
+workflows:
+  version: 2
+  all:
+    jobs:
+      - build
+      - docs:
+        requires:
+          - build
+        filters:
+          branches:
+            only:
+              - master

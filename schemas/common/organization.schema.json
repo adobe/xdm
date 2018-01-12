@@ -13,8 +13,8 @@
   "definitions": {
     "organization": {
       "properties": {
-        "xdm:id": {
-          "title": "Organization Id",
+        "@id": {
+          "title": "Organization ID",
           "type": "string",
           "description": "A unique identifier for the organization."
         },
@@ -46,7 +46,8 @@
         "xdm:website": {
           "title": "Web Site",
           "type": "string",
-          "description": "The url of the organization's website."
+          "format": "uri",
+          "description": "The URL of the organization's website."
         },
         "xdm:sicCode": {
           "title": "SIC Code",
@@ -65,8 +66,10 @@
         },
         "xdm:rating": {
           "title": "Rating",
-          "type": "string",
-          "description": "The calculated score or star rating for this organization."
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "The calculated score or star rating for this organization. `1` indicates the maximum possible rating, `0` the minumum possible rating."
         }
       }
     }

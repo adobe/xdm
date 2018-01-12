@@ -1,10 +1,11 @@
 {
-  "xdm:id": "orgid111",
+  "@id": "https://data.adobe.io/entities/org/orgid111",
   "xdm:legalName": "ABC Stores",
   "xdm:numberOfEmployees": 200,
   "xdm:industry": "Retail",
   "xdm:website": "www.abcstores.com",
   "xdm:sicCode": "56",
+  "rating": 1,
   "xdm:marketSegment": "apparel for kids",
   "xdm:location": {
     "xdm:id": "locid123",

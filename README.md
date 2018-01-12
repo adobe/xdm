@@ -11,7 +11,7 @@ This repository contains the source code for the formal specification of the XDM
 * [Chapter 1: Introduction](docs/introduction.md)
 * [Chapter 2: Related Standards](docs/standards.md)
 * [Chapter 3: Terminology](docs/terminology.md)
-* [Chapter 4: Extending XDM](docs/extending.md)
+* [Chapter 4: Extending XDM](docs/extensions.md)
 * [Appendix A: Reference](docs/reference/README.md) – this contains all the schemas defined by XDM
 
 ## Project Layout

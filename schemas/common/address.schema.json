@@ -9,6 +9,10 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Address",
   "type": "object",
+  "meta:extends": [
+    "http://schema.org/GeoCoordinates",
+    "https://ns.adobe.com/xdm/common/geo"
+  ],
   "description": "A postal address. Address could relate to a person's home, work, preferred store location etc.",
   "definitions": {
     "address": {
@@ -43,56 +47,20 @@
           "type": "string",
           "description": "Optional street information fourth line."
         },
-        "xdm:city": {
-          "title": "City",
-          "type": "string",
-          "description": "The town, city, village or other metropolitan identity of the address."
-        },
         "xdm:region": {
           "title": "Region",
           "type": "string",
           "description": "The region, county, or district portion of the address."
-        },
-        "xdm:stateProvince": {
-          "title": "State or Province",
-          "type": "string",
-          "description": "The state, province, region, territory portion of the address."
         },
         "xdm:stateProvinceISO": {
           "title": "State or Province ISO Code.",
           "type": "string",
           "description": "The country subdivision as defined by the second part of [ISO 3166-2](https://www.iso.org/iso-3166-country-codes.html#2012_iso3166-2)\n(without the first part and the hyphen ISO 3166-1 alpha-2).\n\nExample:\n\n* CA: from ISO 3166-2 `US-CA` value designating the state of California in the United States of America.\n* 75: from ISO 3166-2 `FR-75` value designating the metropolitan department of Paris in France.\n\n> NOTE: This value must be combined with countryCodeISO to compose a valid ISO 3166-2 code.\n"
         },
-        "xdm:postalCode": {
-          "title": "Postal Code",
-          "type": "string",
-          "description": "The postal code, zip code of other postal ordering for the address. Note, if zip codes are used either the base zip or zip+4 format can be used."
-        },
         "xdm:country": {
           "title": "Country",
           "type": "string",
           "description": "The name of the government-administered territory."
-        },
-        "xdm:countryISO": {
-          "title": "Country ISO",
-          "type": "string",
-          "description": "The alpha-2 code of the country as defined by [ISO 3166-1](https://www.iso.org/iso-3166-country-codes.html).",
-          "minLength": 2,
-          "maxLength": 2
-        },
-        "xdm:latitude": {
-          "title": "Latitude",
-          "type": "number",
-          "minimum": -90,
-          "maximum": 90,
-          "description": "Defines the latitude of the delivery address."
-        },
-        "xdm:longitude": {
-          "title": "Longitude",
-          "type": "number",
-          "minimum": -180,
-          "maximum": 180,
-          "description": "Defines the longitude of the delivery address."
         },
         "xdm:status": {
           "title": "Status",
@@ -102,7 +70,7 @@
           "meta:enum": {
             "active": "Active",
             "incomplete": "Incomplete",
-            "pendingVerification": "Pending Verification",
+            "pending_verification": "Pending Verification",
             "blacklisted": "Blacklisted",
             "blocked": "Blocked"
           }
@@ -124,5 +92,16 @@
         }
       }
     }
-  }
+  },
+  "allOf": [
+    {
+      "$ref": "http://schema.org/GeoCoordinates"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/geo"
+    },
+    {
+      "$ref": "#/definitions/address"
+    }
+  ]
 }

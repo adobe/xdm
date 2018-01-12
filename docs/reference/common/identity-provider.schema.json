@@ -13,8 +13,9 @@
     "definitions": {
         "name": {
             "properties": {
-                "xdm:name": {
+                "@id": {
                     "type": "string",
+                    "format": "uri",
                     "description": "A unique (uniqueness is defined on the same lines as defined [here](https://tools.ietf.org/html/rfc8141#section-5)) and persistent identifier for the identity provider. Ideally, this identifier should be a [URI](https://tools.ietf.org/html/rfc3986)."
                 }
             }
@@ -27,11 +28,11 @@
         }
     ],
     "required": [
-        "xdm:name"
+        "@id"
     ],
     "examples": [
         {
-            "xdm:name": "ims"
+            "@id": "https://ims-na1.adobelogin.com/"
         }
     ]
 }

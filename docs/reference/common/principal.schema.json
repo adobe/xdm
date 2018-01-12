@@ -12,9 +12,9 @@
     "type": "object",
     "meta:extensible": false,
     "properties": {
-        "xdm:identityProvider": {
+        "xdm:provider": {
             "description": "The identity provider that manages this principal.",
-            "$ref": "https://ns.adobe.com/xdm/common/identity-provider#/definitions/name/properties/xdm:name"
+            "$ref": "https://ns.adobe.com/xdm/common/identity-provider"
         },
         "@id": {
             "type": "string",
@@ -27,13 +27,15 @@
         }
     },
     "required": [
-        "xdm:identityProvider",
+        "xdm:provider",
         "@id",
         "@type"
     ],
     "examples": [
         {
-            "xdm:identityProvider": "ims",
+            "xdm:provider": {
+                "@id": "https://ims-na1.adobelogin.com/"
+            },
             "@id": "C0B648DE57D701277F000101@AdobeID",
             "@type": "https://ns.adobe.com/xdm-extensions/ims/user"
         }

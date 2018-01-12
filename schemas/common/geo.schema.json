@@ -7,20 +7,21 @@
   ],
   "$id": "https://ns.adobe.com/xdm/common/geo",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Geo",
   "type": "object",
+  "meta:extensible": true,
+  "title": "Geo",
   "description": "The geographic related data where an event was observed.",
   "definitions": {
     "geo": {
       "properties": {
         "xdm:countryCode": {
-          "title": "Country Code",
+          "title": "Country code",
           "type": "string",
           "pattern": "^[A-Z]{2}$",
-          "description": "The two-character [ISO 3166-1 alpha-2](https://datahub.io/common/country-list) code for the country."
+          "description": "The two-character [ISO 3166-1 alpha-2](https://datahub.io/core/country-list) code for the country."
         },
         "xdm:stateProvince": {
-          "title": "State or Province",
+          "title": "State or province",
           "type": "string",
           "description": "The state, or province portion of the observation."
         },
@@ -30,16 +31,16 @@
           "description": "The name of the city."
         },
         "xdm:postalCode": {
-          "title": "Postal Code",
+          "title": "Postal code",
           "type": "string",
           "description": "The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code."
         },
-        "xdm:dmaId": {
+        "xdm:dmaID": {
           "title": "Designated Market Area",
           "type": "integer",
           "description": "The Nielsen Media Research designated market area."
         },
-        "xdm:msaId": {
+        "xdm:msaID": {
           "title": "Metropolitan Statistical Area",
           "type": "integer",
           "description": "The Metropolitan Statistical Area in the USA where the observation occurred."
@@ -60,5 +61,10 @@
         }
       }
     }
-  }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/geo"
+    }
+  ]
 }

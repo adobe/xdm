@@ -73,5 +73,10 @@
         }
       }
     }
-  }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/organization"
+    }
+  ]
 }

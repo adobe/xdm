@@ -52,15 +52,10 @@
           "type": "string",
           "description": "The region, county, or district portion of the address."
         },
-        "xdm:stateProvinceISO": {
-          "title": "State or Province ISO Code.",
-          "type": "string",
-          "description": "The country subdivision as defined by the second part of [ISO 3166-2](https://www.iso.org/iso-3166-country-codes.html#2012_iso3166-2)\n(without the first part and the hyphen ISO 3166-1 alpha-2).\n\nExample:\n\n* CA: from ISO 3166-2 `US-CA` value designating the state of California in the United States of America.\n* 75: from ISO 3166-2 `FR-75` value designating the metropolitan department of Paris in France.\n\n> NOTE: This value must be combined with countryCodeISO to compose a valid ISO 3166-2 code.\n"
-        },
         "xdm:country": {
           "title": "Country",
           "type": "string",
-          "description": "The name of the government-administered territory."
+          "description": "The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language."
         },
         "xdm:status": {
           "title": "Status",

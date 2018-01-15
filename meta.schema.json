@@ -17,7 +17,7 @@
     "$id": {
       "type": "string",
       "format": "uri",
-      "pattern": "(https://ns\\.adobe\\.com/xdm/[a-z0-9-/]*)|(http://schema\\.org/.*)"
+      "pattern": "(https://ns\\.adobe\\.com/xdm/[a-z0-9-/]*)|(http://schema\\.org/.*)|(https://tools\\.ietf\\.org/html/draft-kelly-json-hal-08)"
     },
     "meta:license": {
       "type": "array",

@@ -14,12 +14,77 @@
     "hal": {
       "properties": {
         "_links": {
+          "type": "object",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^[a-z]+[a-z0-9\\.-]*$": {
+              "anyOf": [
+                {
+                  "$ref": "https://tools.ietf.org/html/draft-kelly-json-hal-08/link"
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "$ref": "https://tools.ietf.org/html/draft-kelly-json-hal-08/link"
+                  }
+                }
+              ]
+            },
+            "^.*://.*$": {
+              "anyOf": [
+                {
+                  "$ref": "https://tools.ietf.org/html/draft-kelly-json-hal-08/link"
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "$ref": "https://tools.ietf.org/html/draft-kelly-json-hal-08/link"
+                  }
+                }
+              ]
+            }
+          },
           "description": "It is an object whose property names are link relation types (as defined by [RFC5988](https://tools.ietf.org/html/rfc5988) and values are either a Link Object or an array of Link Objects.  The subject resource of these links is the Resource Object of which the containing `_links` object is a property."
         },
         "_embedded": {
+          "type": "object",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^[a-z]+[a-z0-9\\.-]*$": {
+              "anyOf": [
+                {
+                  "$ref": "https://tools.ietf.org/html/draft-kelly-json-hal-08/link"
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "$ref": "https://tools.ietf.org/html/draft-kelly-json-hal-08/link"
+                  }
+                }
+              ]
+            },
+            "^.*://.*$": {
+              "anyOf": [
+                {
+                  "$ref": "https://tools.ietf.org/html/draft-kelly-json-hal-08/link"
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "$ref": "https://tools.ietf.org/html/draft-kelly-json-hal-08/link"
+                  }
+                }
+              ]
+            }
+          },
           "description": "It is an object whose property names are link relation types (as defined by [RFC5988](https://tools.ietf.org/html/rfc5988)) and values are either a Resource Object or an array of Resource Objects.\\n\\nEmbedded Resources MAY be a full, partial, or inconsistent version of the representation served from the target URI."
         }
       }
     }
-  }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/hal"
+    }
+  ]
 }

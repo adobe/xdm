@@ -12,7 +12,16 @@
   "type": "object",
   "definitions": {
     "hal-link-common": {
+      "additionalProperties": false,
       "properties": {
+        "templated": {
+          "type": "boolean",
+          "description": "> Its value is boolean and SHOULD be true when the Link Object's `href` property is a URI Template.\\n\\nIts value SHOULD be considered false if it is undefined or any other value than `true`."
+        },
+        "href": {
+          "description": "> If the value is a URI Template then the Link Object SHOULD have a `templated` attribute whose value is `true`",
+          "type": "string"
+        },
         "type": {
           "type": "string",
           "pattern": "\\w+\\/[-.\\w]+(?:\\+[-.\\w]+)?",
@@ -52,28 +61,33 @@
         },
         "templated": {
           "type": "boolean",
-          "const": "true",
+          "const": true,
           "description": "> Its value is boolean and SHOULD be true when the Link Object's `href` property is a URI Template.\\n\\nIts value SHOULD be considered false if it is undefined or any other value than `true`."
         }
       },
       "required": [
         "href",
         "templated"
-      ]
+      ],
+      "additionalProperties": false
     },
     "hal-link": {
       "properties": {
         "href": {
           "description": "> If the value is a URI Template then the Link Object SHOULD have a `templated` attribute whose value is `true`",
           "type": "string",
-          "pattern": "uri-reference"
+          "format": "uri"
         },
         "templated": {
           "type": "boolean",
           "default": false,
           "description": "> Its value is boolean and SHOULD be true when the Link Object's `href` property is a URI Template.\\n\\nIts value SHOULD be considered false if it is undefined or any other value than `true`."
         }
-      }
+      },
+      "required": [
+        "href"
+      ],
+      "additionalProperties": false
     }
   },
   "anyOf": [
@@ -81,13 +95,7 @@
       "$ref": "#/definitions/hal-link"
     },
     {
-      "$ref": "#/definitions/hal-link-templated"
-    },
-    {
       "$ref": "#/definitions/hal-link-common"
     }
-  ],
-  "required": [
-    "href"
   ]
 }

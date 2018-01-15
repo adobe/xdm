@@ -1,0 +1,58 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/common/audittrail",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Audit Trail",
+  "type": "object",
+  "description": "Information related to the creation and the modifications of an entity.\n",
+  "definitions": {
+    "audittrail": {
+      "properties": {
+        "xdm:repositoryCreatedDate": {
+          "title": "Created On",
+          "type": "string",
+          "format": "date-time",
+          "description": "Creation date of the entity.\n"
+        },
+        "xdm:repositoryLastModifiedDate": {
+          "title": "Modified On",
+          "type": "string",
+          "format": "date-time",
+          "description": "Last modification date of the entity.\nAt creation time, `modifiedOn` is set as `createdOn`.\n"
+        },
+        "xdm:repositoryCreatedBy": {
+          "title": "Created by User Identifier",
+          "type": "string",
+          "description": "User id who has created the entity.\n"
+        },
+        "xdm:modifiedByUserID": {
+          "title": "Modified by User Identifier",
+          "type": "string",
+          "description": "User id who last modified the entity.\nAt creation time, `modifiedByUser` is set as `createdByUser`.\n"
+        },
+        "xdm:createdByBatchID": {
+          "title": "Created by Batch Identifier",
+          "type": "string",
+          "format": "uri",
+          "description": "The Data Set Files in Catalog Services which has been originating the creation of the entity.\n"
+        },
+        "xdm:modifiedByBatchID": {
+          "title": "Modified by Batch Identifier",
+          "type": "string",
+          "format": "uri",
+          "description": "The last Data Set Files in Catalog Services which has modified the entity.\nAt creation time, `modifiedByBatchId` is set as `createdByBatchId`.\n"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/audittrail"
+    }
+  ]
+}

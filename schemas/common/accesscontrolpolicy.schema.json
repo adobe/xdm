@@ -9,6 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Access Control Policy",
   "description": "Schema for the Access Control Policy of a resource",
+  "type": "object",
   "definitions": {
     "accesscontrolpolicy": {
       "type": "object",

@@ -2,7 +2,7 @@
 # Geo Schema
 
 ```
-https://ns.adobe.com/xdm/common/geo.schema.json
+https://ns.adobe.com/xdm/common/geo
 ```
 
 The geographic related data where an event was observed.
@@ -11,21 +11,28 @@ The geographic related data where an event was observed.
 |----------|------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Forbidden | Permitted | [common/geo.schema.json](common/geo.schema.json) |
 
+## Schema Hierarchy
+
+* Geo `https://ns.adobe.com/xdm/common/geo`
+  * [Geo Coordinates](../external/schema/geocoordinates.schema.md) `http://schema.org/GeoCoordinates`
+
 ## Geo Examples
 
 ```json
 {
+  "@id": "https://ns.adobe.com/entities/geo/tokyo",
   "xdm:countryCode": "JP",
   "xdm:stateProvince": "Tōkyō-to",
   "xdm:city": "Tōkyō",
   "xdm:postalCode": "141-0032",
-  "xdm:latitude": 35.6185,
-  "xdm:longitude": 139.73237
+  "schema:latitude": 35.6185,
+  "schema:longitude": 139.73237
 }
 ```
 
 ```json
 {
+  "@id": "https://ns.adobe.com/entities/geo/potsdam",
   "xdm:countryCode": "DE",
   "xdm:stateProvince": "Brandenburg",
   "xdm:city": "Potsdam",
@@ -38,15 +45,121 @@ The geographic related data where an event was observed.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
+| [@id](#@id) | `string` | Optional | [Geo Coordinates](../external/schema/geocoordinates.schema.md#@id) |
+| [schema:description](#schemadescription) | `string` | Optional | [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemadescription) |
+| [schema:elevation](#schemaelevation) | `number` | Optional | [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemaelevation) |
+| [schema:latitude](#schemalatitude) | `number` | Optional | [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemalatitude) |
+| [schema:longitude](#schemalongitude) | `number` | Optional | [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemalongitude) |
 | [xdm:city](#xdmcity) | `string` | Optional | Geo (this schema) |
 | [xdm:countryCode](#xdmcountryCode) | `string` | Optional | Geo (this schema) |
 | [xdm:dmaID](#xdmdmaID) | `integer` | Optional | Geo (this schema) |
-| [xdm:latitude](#xdmlatitude) | `number` | Optional | Geo (this schema) |
-| [xdm:longitude](#xdmlongitude) | `number` | Optional | Geo (this schema) |
 | [xdm:msaID](#xdmmsaID) | `integer` | Optional | Geo (this schema) |
 | [xdm:postalCode](#xdmpostalCode) | `string` | Optional | Geo (this schema) |
 | [xdm:stateProvince](#xdmstateProvince) | `string` | Optional | Geo (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
+
+## @id
+### Coordinates Id
+
+The unique identifier of the coordinates.
+
+`@id`
+* is optional
+* type: `string`
+* defined in [Geo Coordinates](../external/schema/geocoordinates.schema.md#@id)
+
+### @id Type
+
+
+`string`
+* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+
+
+
+
+
+
+## schema:description
+### Description
+
+A description of what the coordinates identify.
+
+`schema:description`
+* is optional
+* type: `string`
+* defined in [Geo Coordinates](../external/schema/geocoordinates.schema.md#schema:description)
+
+### schema:description Type
+
+
+`string`
+
+
+
+
+
+
+## schema:elevation
+### Elevation
+
+The specific elevation of the defined coordinate. The value conforms to the [WGS84](http://gisgeography.com/wgs84-world-geodetic-system/) datum and is measured in meters.
+
+`schema:elevation`
+* is optional
+* type: `number`
+* defined in [Geo Coordinates](../external/schema/geocoordinates.schema.md#schema:elevation)
+
+### schema:elevation Type
+
+
+`number`
+
+
+
+
+
+
+## schema:latitude
+### Latitude
+
+The signed vertical coordinate of a geographic point.
+
+`schema:latitude`
+* is optional
+* type: `number`
+* defined in [Geo Coordinates](../external/schema/geocoordinates.schema.md#schema:latitude)
+
+### schema:latitude Type
+
+
+`number`
+* minimum value: `-90`
+* maximum value: `90`
+
+
+
+
+
+## schema:longitude
+### Longitude
+
+The signed horizontal coordinate of a geographic point.
+
+`schema:longitude`
+* is optional
+* type: `number`
+* defined in [Geo Coordinates](../external/schema/geocoordinates.schema.md#schema:longitude)
+
+### schema:longitude Type
+
+
+`number`
+* minimum value: `-180`
+* maximum value: `180`
+
+
+
+
 
 ## xdm:city
 ### City
@@ -115,48 +228,6 @@ The Nielsen Media Research designated market area.
 
 
 
-## xdm:latitude
-### Latitude
-
-The signed vertical coordinate of a geographic point.
-
-`xdm:latitude`
-* is optional
-* type: `number`
-* defined in this schema
-
-### xdm:latitude Type
-
-
-`number`
-* minimum value: `-90`
-* maximum value: `90`
-
-
-
-
-
-## xdm:longitude
-### Longitude
-
-The signed horizontal coordinate of a geographic point.
-
-`xdm:longitude`
-* is optional
-* type: `number`
-* defined in this schema
-
-### xdm:longitude Type
-
-
-`number`
-* minimum value: `-180`
-* maximum value: `180`
-
-
-
-
-
 ## xdm:msaID
 ### Metropolitan Statistical Area
 
@@ -200,7 +271,7 @@ The postal code of the location. Postal codes are not available for all countrie
 ## xdm:stateProvince
 ### State or province
 
-The state, or province portion of the observation.
+The state, or province portion of the observation. The format follows the [ISO 3166-2 (country and subdivision)][http://www.unece.org/cefact/locode/subdivisions.html] standard.
 
 `xdm:stateProvince`
 * is optional
@@ -213,6 +284,30 @@ The state, or province portion of the observation.
 `string`
 
 
+All instances must conform to this regular expression 
+```regex
+([A-Z]{2}-[A-Z0-9]{1,3}|)
+```
 
+* test example: [US-CA](https://regexr.com/?expression=(%5BA-Z%5D%7B2%7D-%5BA-Z0-9%5D%7B1%2C3%7D%7C)&text=US-CA)
+* test example: [DE-BB](https://regexr.com/?expression=(%5BA-Z%5D%7B2%7D-%5BA-Z0-9%5D%7B1%2C3%7D%7C)&text=DE-BB)
+* test example: [JP-13](https://regexr.com/?expression=(%5BA-Z%5D%7B2%7D-%5BA-Z0-9%5D%7B1%2C3%7D%7C)&text=JP-13)
+
+
+
+
+### xdm:stateProvince Examples
+
+```json
+"US-CA"
+```
+
+```json
+"DE-BB"
+```
+
+```json
+"JP-13"
+```
 
 

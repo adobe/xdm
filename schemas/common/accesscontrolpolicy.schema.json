@@ -60,7 +60,7 @@
       "description": "List of relation link types to which this privilege applies",
       "type": "array",
       "items": { "type": "string" }
-    }
+    },
     "modifier": {
       "description": "Optional modified to the privilege: either grant or deny to grant or deny, resp., the privilege. The default modifier is grant if this property is missing or has an invalid value.",
       "type": "string",

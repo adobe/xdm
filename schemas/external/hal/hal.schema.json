@@ -24,6 +24,7 @@
                 },
                 {
                   "type": "array",
+                  "minItems": 1,
                   "items": {
                     "$ref": "https://tools.ietf.org/html/draft-kelly-json-hal-08/link"
                   }
@@ -37,6 +38,7 @@
                 },
                 {
                   "type": "array",
+                  "minItems": 1,
                   "items": {
                     "$ref": "https://tools.ietf.org/html/draft-kelly-json-hal-08/link"
                   }
@@ -57,8 +59,20 @@
                 },
                 {
                   "type": "array",
+                  "minItems": 1,
                   "items": {
                     "$ref": "https://tools.ietf.org/html/draft-kelly-json-hal-08/link"
+                  }
+                },
+                {
+                  "type": "object",
+                  "description": "`_embedded` can contain any object or resource."
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "description": "`_embedded` can contain any object or resource."
                   }
                 }
               ]
@@ -70,8 +84,21 @@
                 },
                 {
                   "type": "array",
+                  "minItems": 1,
                   "items": {
                     "$ref": "https://tools.ietf.org/html/draft-kelly-json-hal-08/link"
+                  }
+                },
+                {
+                  "type": "object",
+                  "description": "`_embedded` can contain any object or resource."
+                },
+                {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "object",
+                    "description": "`_embedded` can contain any object or resource."
                   }
                 }
               ]

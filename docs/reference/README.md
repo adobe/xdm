@@ -4,16 +4,19 @@
 
 
 
-## /context/
+## /content/
 
-* [Person Name](./context/person-name.schema.md) – `https://ns.adobe.com/xdm/context/person-name`
-* [Person](./context/person.schema.md) – `https://ns.adobe.com/xdm/context/person`
+* [Component Container](./content/component-container.schema.md) – `https://ns.adobe.com/xdm/content/component-container`
+* [Componentized Page](./content/componentized-page.schema.md) – `https://ns.adobe.com/xdm/content/componentized-page`
+* [Content](./content/content.schema.md) – `https://ns.adobe.com/xdm/content/content`
+* [Page Component](./content/page-component.schema.md) – `https://ns.adobe.com/xdm/content/page-component`
+* [Content Repository](./content/repository.schema.md) – `https://ns.adobe.com/xdm/content/repository`
 
 ## /common/
 
 * [EventEnvelope](./common/eventenvelope.schema.md) – `https://ns.adobe.com/xdm/common/eventenvelope`
 * [Extensibility base schema](./common/extensible.schema.md) – `https://ns.adobe.com/xdm/common/extensible`
-* [Geo](./common/geo.schema.md) – `https://ns.adobe.com/xdm/common/geo.schema.json`
+* [Geo](./common/geo.schema.md) – `https://ns.adobe.com/xdm/common/geo`
 * [Identity Provider](./common/identity-provider.schema.md) – `https://ns.adobe.com/xdm/common/identity-provider`
 * [Principal](./common/principal.schema.md) – `https://ns.adobe.com/xdm/common/principal`
 * [Customer Managed Environment](./common/selfservice.schema.md) – `https://ns.adobe.com/xdm/selfservice`
@@ -33,29 +36,22 @@
 * [Rectangular Object (measured in variable unit)](./assets/variable-unit-rectangular.schema.md) – `https://ns.adobe.com/xdm/assets/variable-unit-rectangular`
 * [Video](./assets/video.schema.md) – `https://ns.adobe.com/xdm/assets/video`
 
-## /content/
+## /context/
 
-* [Component Container](./content/component-container.schema.md) – `https://ns.adobe.com/xdm/content/component-container`
-* [Componentized Page](./content/componentized-page.schema.md) – `https://ns.adobe.com/xdm/content/componentized-page`
-* [Content](./content/content.schema.md) – `https://ns.adobe.com/xdm/content/content`
-* [Page Component](./content/page-component.schema.md) – `https://ns.adobe.com/xdm/content/page-component`
-* [Content Repository](./content/repository.schema.md) – `https://ns.adobe.com/xdm/content/repository`
-
-## /common/event/
-
-* [Created Event](./common/event/created.schema.md) – `https://ns.adobe.com/xdm/common/event/created`
-* [Deleted Event](./common/event/deleted.schema.md) – `https://ns.adobe.com/xdm/common/event/deleted`
-* [Emitted Event](./common/event/emitted.schema.md) – `https://ns.adobe.com/xdm/common/event/emitted`
-* [Published Event](./common/event/published.schema.md) – `https://ns.adobe.com/xdm/common/event/published`
-* [Rejected Event](./common/event/rejected.schema.md) – `https://ns.adobe.com/xdm/common/event/rejected`
-* [Unpublished Event](./common/event/unpublished.schema.md) – `https://ns.adobe.com/xdm/common/event/unpublished`
-* [Updated Event](./common/event/updated.schema.md) – `https://ns.adobe.com/xdm/common/event/updated`
+* [Person Name](./context/person-name.schema.md) – `https://ns.adobe.com/xdm/context/person-name`
+* [Person](./context/person.schema.md) – `https://ns.adobe.com/xdm/context/person`
 
 ## /content/repository-policies/
 
 * [At-Rest Encryption](./content/repository-policies/encryption.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/encryption`
 * [Storage Quota](./content/repository-policies/quota.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/quota`
 * [Versioning](./content/repository-policies/versioning.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/versioning`
+
+## /external/schema/
+
+* [Geo Circle](./external/schema/geocircle.schema.md) – `http://schema.org/GeoCircle`
+* [Geo Shape](./external/schema/geoshape.schema.md) – `http://schema.org/GeoShape`
+* [Geo Coordinates](./external/schema/geocoordinates.schema.md) – `http://schema.org/GeoCoordinates`
 
 ## /external/activity-streams-2/
 
@@ -70,3 +66,13 @@
 * [Object](./external/activity-streams-2/object.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/object`
 * [RDF Language Tagged String](./external/activity-streams-2/rdf-langstring.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langstring`
 * [JSON-LD `@type`](./external/activity-streams-2/type.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/type`
+
+## /common/event/
+
+* [Created Event](./common/event/created.schema.md) – `https://ns.adobe.com/xdm/common/event/created`
+* [Deleted Event](./common/event/deleted.schema.md) – `https://ns.adobe.com/xdm/common/event/deleted`
+* [Emitted Event](./common/event/emitted.schema.md) – `https://ns.adobe.com/xdm/common/event/emitted`
+* [Published Event](./common/event/published.schema.md) – `https://ns.adobe.com/xdm/common/event/published`
+* [Rejected Event](./common/event/rejected.schema.md) – `https://ns.adobe.com/xdm/common/event/rejected`
+* [Unpublished Event](./common/event/unpublished.schema.md) – `https://ns.adobe.com/xdm/common/event/unpublished`
+* [Updated Event](./common/event/updated.schema.md) – `https://ns.adobe.com/xdm/common/event/updated`

@@ -9,5 +9,19 @@
   "$id": "http://ns.adobe.com/adobecloud/core/1.0/directory",
   "type": "object",
   "title": "Directory",
-  "description": "A directory in Adobe Cloud Platform."
+  "description": "A directory in Adobe Cloud Platform.",
+  "allOf": [
+    {
+      "$ref": "#/definitions/asset"
+    },
+    {
+      "$ref": "http://ns.adobe.com/adobecloud/core/1.0#/definitions/common-properties"
+    },
+    {
+      "$ref": "http://ns.adobe.com/adobecloud/core/1.0#/definitions/date-properties"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/external/hal/resource#/definitions/hal"
+    }
+  ]
 }

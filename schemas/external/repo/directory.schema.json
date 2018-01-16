@@ -28,7 +28,7 @@
           "items": {
             "oneOf": [
               {
-                "$ref": "http://ns.adobe.com/adobecloud/core/1.0/directory"
+                "$ref": "http://ns.adobe.com/adobecloud/core/1.0/sub-directory"
               },
               {
                 "$ref": "http://ns.adobe.com/adobecloud/core/1.0/asset"

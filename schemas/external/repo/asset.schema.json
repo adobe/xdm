@@ -1,0 +1,86 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "http://ns.adobe.com/adobecloud/core/1.0/asset",
+  "type": "object",
+  "title": "Asset",
+  "meta:extensible": true,
+  "description": "An asset in Adobe Cloud Platform. It is not neccessarily a Digital Asset in the sense of Digital Asset Management, but a piece of content or data that can be represented in the form of a file.",
+  "definitions": {
+    "asset": {
+      "properties": {
+        "repo:assetID": {
+          "type": "string",
+          "meta:immutable": true,
+          "meta:usereditable": false,
+          "description": "A unique identifier given to every addressable asset in a given repository.\n\nThe format is a [GUID-based URN](https://www.ietf.org/rfc/rfc4122.txt). The pattern to generate an Asset ID is ```urn:aaid:{system}:{id} - {format}:{namespace}:{system}:{id}```",
+          "examples": [
+            "urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e"
+          ],
+          "pattern": "^urn:aaid:[A-Za-z0-9]+:[A-Za-z0-9]+:[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}$"
+        },
+        "repo:etag": {
+          "meta:usereditable": false,
+          "type": "string",
+          "title": "ETag",
+          "description": "An  ETag is an HTTP response header returned by an HTTP/1.1 compliant web server used to determine change in content of a resource at a given URL. "
+        },
+        "repo:version": {
+          "type": "string",
+          "meta:immutable": true,
+          "meta:usereditable": false,
+          "description": "The version ID of the piece of content. It will be generated both on explicit and implicit save or upload."
+        },
+        "tiff:imageWidth": {
+          "title": "Width",
+          "description": "Width in pixels",
+          "type": "integer",
+          "meta:usereditable": false,
+          "minimum": 0,
+          "example": 768
+        },
+        "tiff:imageLength": {
+          "title": "Length",
+          "description": "Height in pixels. To maintain continuity with the XMP and TIFF standards, the height of an image or video is specified in the property `imageLength`. The duration of the video (also commonly called length) is specified in the property `extent`",
+          "type": "integer",
+          "meta:usereditable": false,
+          "minimum": 0,
+          "example": 1024
+        },
+        "repo:size": {
+          "meta:usereditable": false,
+          "type": "integer",
+          "title": "Size",
+          "description": "Size of the asset in bytes."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/asset"
+    },
+    {
+      "$ref": "http://ns.adobe.com/adobecloud/core/1.0#/definitions/common-properties"
+    },
+    {
+      "$ref": "http://ns.adobe.com/adobecloud/core/1.0#/definitions/date-properties"
+    }
+  ],
+  "required": [
+    "repo:name",
+    "repo:path",
+    "dc:format",
+    "repo:createdDate",
+    "repo:lastModifiedDate",
+    "repo:assetID",
+    "repo:etag",
+    "repo:version",
+    "repo:size"
+  ]
+}

@@ -92,7 +92,14 @@
   },
   "anyOf": [
     {
-      "$ref": "#/definitions/hal-link"
+      "oneOf": [
+        {
+          "$ref": "#/definitions/hal-link-templated"
+        },
+        {
+          "$ref": "#/definitions/hal-link"
+        }
+      ]
     },
     {
       "$ref": "#/definitions/hal-link-common"

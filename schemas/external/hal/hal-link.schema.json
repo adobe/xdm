@@ -90,7 +90,7 @@
       "additionalProperties": false
     }
   },
-  "anyOf": [
+  "allOf": [
     {
       "oneOf": [
         {

@@ -40,11 +40,7 @@ An `EventEnvelope` is a type of `Activity` (in the sense of [W3C Activity Stream
   "activitystreams:object": {
     "@type": "http://ns.adobe.com/xdm/asset",
     "xdm:assetID": "urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
-    "@id": "https://cc-api-storage-stage.adobe.io/id/urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
-    "xdm:name": "example.jpg",
-    "xdm:path": "/MyFolder/example.jpg",
-    "dc:format": "image/jpg",
-    "xdm:etag": "\"6fc55d0389d856ae7deccebba54f110e\""
+    "@id": "https://cc-api-storage-stage.adobe.io/id/urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185"
   }
 }
 ```
@@ -70,7 +66,11 @@ An `EventEnvelope` is a type of `Activity` (in the sense of [W3C Activity Stream
   "activitystreams:object": {
     "@type": "http://ns.adobe.com/xdm/asset",
     "xdm:assetID": "urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
-    "@id": "https://cc-api-storage-stage.adobe.io/id/urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185"
+    "@id": "https://cc-api-storage-stage.adobe.io/id/urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
+    "xdm:name": "example.jpg",
+    "xdm:path": "/MyFolder/example.jpg",
+    "dc:format": "image/jpg",
+    "xdm:etag": "\"6fc55d0389d856ae7deccebba54f110e\""
   }
 }
 ```

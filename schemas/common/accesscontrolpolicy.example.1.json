@@ -1,14 +1,23 @@
- {
-  "acl": [
+{
+  "repo:acl": [
     {
-      "principal": "6A29340459CA8D350A49413A@AdobeOrg:87611788",
-      "privilege": "read",
-      "modifier": "grant"
+      "repo:principal": "authenticated",
+      "repo:privilege": "read",
+      "repo:modifier": "grant"
     },
     {
-      "principal": "6A29340459CA8D350A49413A@AdobeOrg:58203452",
-      "privilege": "write",
-      "modifier": "grant"
+      "repo:principal": {
+        "xdm:provider": {
+          "@id": "https://ims-na1.adobelogin.com/"
+        },
+        "@id": "C0B648DE57D701277F000101@AdobeID",
+        "@type": "https://ns.adobe.com/xdm-extensions/ims/user"
+      },
+      "repo:privilege": [
+        "write",
+        "delete"
+      ],
+      "repo:modifier": "grant"
     }
   ]
 }

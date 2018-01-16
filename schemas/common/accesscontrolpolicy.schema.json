@@ -1,6 +1,6 @@
 {
   "meta:license": [
-    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
     "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
@@ -14,62 +14,15 @@
     "accesscontrolpolicy": {
       "type": "object",
       "properties": {
-        "acl": { "$ref": "#/definitions/acl" }
-      }
-    },
-    "acl": {
-      "title": "Access Control List",
-      "description": "List of Access Control Entries defining access to this resource",
-      "type": "array",
-      "items": { "$ref": "#/definitions/ace" }
-    },
-    "ace": {
-      "type": "object",
-      "properties": {
-        "principal": { "$ref": "#/definitions/principal" },
-        "privilege": { "$ref": "#/definitions/privilege" },
-        "relations": { "$ref": "#/definitions/relations" },
-        "modifier": { "$ref": "#/definitions/modifier" }
-      },
-      "required": [ "principal", "privilege" ],
-      "additionalProperties": {
-        "type": [ "object", "array", "string" ]
-      }
-    },
-    "principal": {
-      "anyOf": [
-        {
-          "description": "Reference to the User or Group to which the entry applies",
-          "type": "string",
-          "format": "uri"
-        },
-        {
-          "description": "A special principal to which the entry applies. 'Authenticated' refers to any authenticated user, 'Unauthenticated' refers to an unknown user, 'all' refers to any user regardless of authenticated or not.",
-          "enum": [ "authenticated", "unauthenticated", "all" ]
+        "repo:acl": {
+          "$ref": "https://ns.adobe.com/xdm/common/accesscontrolentry#/definitions/acl"
         }
-      ]
-    },
-    "privilege": {
-      "description": "Privilege granted or denied to the Principal",
-      "type": "array",
-      "items": {
-        "type": "string",
-        "enum": [ "ack", "read", "write", "modify", "attach", "delete", "full" ]
       }
-    },
-    "relations": {
-      "description": "List of relation link types to which this privilege applies",
-      "type": "array",
-      "items": { "type": "string" }
-    },
-    "modifier": {
-      "description": "Optional modified to the privilege: either grant or deny to grant or deny, resp., the privilege. The default modifier is grant if this property is missing or has an invalid value.",
-      "type": "string",
-      "enum": [ "grant", "deny" ],
-      "default": "grant"
     }
   },
   "allOf": [
-    { "$ref": "#/definitions/accesscontrolpolicy" }
+    {
+      "$ref": "#/definitions/accesscontrolpolicy"
+    }
   ]
 }

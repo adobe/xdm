@@ -26,24 +26,6 @@ Replace `#/definitions/…` with the correct path to the `definitions` object in
 
 ```json
 {
-  "https://ns.example.com/asset_name": "custom_asset_1",
-  "xdm:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
-  "xdm:createDate": "2017-09-26T15:52:25+00:00",
-  "xdm:repositoryCreatedDate": "2017-09-26T15:52:25+00:00",
-  "xdm:repositoryCreatedBy": "lars",
-  "xdm:modifyDate": "2017-09-26T15:52:25+00:00",
-  "xdm:repositoryLastModifiedDate": "2017-09-26T15:52:25+00:00",
-  "xdm:repository_lastModifiedBy": "2017-09-26T15:52:25+00:00",
-  "xdm:versionID": "15",
-  "dc:title": "This is an example",
-  "xdm:size": 1632418,
-  "xdm:path": "/here",
-  "xdm:etag": "15"
-}
-```
-
-```json
-{
   "xdm:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
   "xdm:createDate": "2017-09-26T15:52:25+00:00",
   "xdm:repositoryCreatedDate": "2017-09-26T15:52:25+00:00",
@@ -102,6 +84,24 @@ Replace `#/definitions/…` with the correct path to the `definitions` object in
   "xdm:versionID": "15",
   "xdm:size": 1632418,
   "xdm:path": "here",
+  "xdm:etag": "15"
+}
+```
+
+```json
+{
+  "https://ns.example.com/asset_name": "custom_asset_1",
+  "xdm:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
+  "xdm:createDate": "2017-09-26T15:52:25+00:00",
+  "xdm:repositoryCreatedDate": "2017-09-26T15:52:25+00:00",
+  "xdm:repositoryCreatedBy": "lars",
+  "xdm:modifyDate": "2017-09-26T15:52:25+00:00",
+  "xdm:repositoryLastModifiedDate": "2017-09-26T15:52:25+00:00",
+  "xdm:repository_lastModifiedBy": "2017-09-26T15:52:25+00:00",
+  "xdm:versionID": "15",
+  "dc:title": "This is an example",
+  "xdm:size": 1632418,
+  "xdm:path": "/here",
   "xdm:etag": "15"
 }
 ```

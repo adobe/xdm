@@ -68,7 +68,7 @@ jobs:
 
       # generate markdowm
       - run: npm run markdown
-      - run: git config --global user.email "trieloff@adobe.com" && git config --global user.name "CirceCI"
+      - run: git config --global user.email "trieloff@adobe.com" && git config --global user.name "CircleCI"
 
       # send up-to-date markdown back to GitHub
       - run:

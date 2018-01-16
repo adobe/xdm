@@ -86,7 +86,7 @@
         "ack": "Existence of the resource can be confirmed.",
         "read": "The resource can be retrieved.",
         "write": "The resource can be updated.",
-        "modify": "Implies READ and WRITE privileges.",
+        "modify": "Implies `read` and `write` privileges.",
         "attach": "Attached resources can be created.",
         "delete": "The resource can be deleted.",
         "full": "Implies all of the above privileges."

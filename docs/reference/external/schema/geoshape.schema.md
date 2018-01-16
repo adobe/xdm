@@ -137,7 +137,7 @@ A description of what the shape is defining.
 ## schema:elevation
 ### Elevation
 
-The specific or minimum elevation of the shape. This value conforms to the [WGS84](http://gisgeography.com/wgs84-world-geodetic-system/) datum and is measured in meters.
+The specific or minimum elevation of the shape. This value conforms to the [WGS84](http://gisgeography.com/wgs84-world-geodetic-system/) datum and is measured in meters. In combination with `ceiling`, this property can be used to express a three-dimensional bounding box for a location.
 
 `schema:elevation`
 * is optional
@@ -183,7 +183,7 @@ All items must be of the type:
 ## xdm:ceiling
 ### Ceiling
 
-The maximum elevation of the shape. Only valid when used in combination with `elevation`. This value conforms to the [WGS84](http://gisgeography.com/wgs84-world-geodetic-system/) datum and is measured in meters. This value is not part of the schema.org spec.
+The maximum elevation of the shape. Only valid when used in combination with `elevation`. This value conforms to the [WGS84](http://gisgeography.com/wgs84-world-geodetic-system/) datum and is measured in meters. This value is not part of the schema.org spec. In combination with `elevation`, this property can be used to express a three-dimensional bounding box for a location.
 
 `xdm:ceiling`
 * is optional

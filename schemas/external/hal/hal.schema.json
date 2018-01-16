@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://tools.ietf.org/html/draft-kelly-json-hal-08/resource",
+  "$id": "https://ns.adobe.com/xdm/external/hal/resource",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "HAL Resource",
   "description": "",
@@ -20,13 +20,13 @@
             "^[a-z]+[a-z0-9\\.-]*$": {
               "anyOf": [
                 {
-                  "$ref": "https://tools.ietf.org/html/draft-kelly-json-hal-08/link"
+                  "$ref": "https://ns.adobe.com/xdm/external/hal/link"
                 },
                 {
                   "type": "array",
                   "minItems": 1,
                   "items": {
-                    "$ref": "https://tools.ietf.org/html/draft-kelly-json-hal-08/link"
+                    "$ref": "https://ns.adobe.com/xdm/external/hal/link"
                   }
                 }
               ]
@@ -34,13 +34,13 @@
             "^.*://.*$": {
               "anyOf": [
                 {
-                  "$ref": "https://tools.ietf.org/html/draft-kelly-json-hal-08/link"
+                  "$ref": "https://ns.adobe.com/xdm/external/hal/link"
                 },
                 {
                   "type": "array",
                   "minItems": 1,
                   "items": {
-                    "$ref": "https://tools.ietf.org/html/draft-kelly-json-hal-08/link"
+                    "$ref": "https://ns.adobe.com/xdm/external/hal/link"
                   }
                 }
               ]
@@ -55,13 +55,13 @@
             "^[a-z]+[a-z0-9\\.-]*$": {
               "anyOf": [
                 {
-                  "$ref": "https://tools.ietf.org/html/draft-kelly-json-hal-08/link"
+                  "$ref": "https://ns.adobe.com/xdm/external/hal/link"
                 },
                 {
                   "type": "array",
                   "minItems": 1,
                   "items": {
-                    "$ref": "https://tools.ietf.org/html/draft-kelly-json-hal-08/link"
+                    "$ref": "https://ns.adobe.com/xdm/external/hal/link"
                   }
                 },
                 {
@@ -80,13 +80,13 @@
             "^.*://.*$": {
               "anyOf": [
                 {
-                  "$ref": "https://tools.ietf.org/html/draft-kelly-json-hal-08/link"
+                  "$ref": "https://ns.adobe.com/xdm/external/hal/link"
                 },
                 {
                   "type": "array",
                   "minItems": 1,
                   "items": {
-                    "$ref": "https://tools.ietf.org/html/draft-kelly-json-hal-08/link"
+                    "$ref": "https://ns.adobe.com/xdm/external/hal/link"
                   }
                 },
                 {

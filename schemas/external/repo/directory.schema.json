@@ -10,9 +10,33 @@
   "type": "object",
   "title": "Directory",
   "description": "A directory in Adobe Cloud Platform.",
+  "definitions": {
+    "directory": {
+      "properties": {
+        "dc:format": {
+          "type": "string",
+          "title": "Format",
+          "const": "application/vnd.adobecloud.directory+json"
+        },
+        "children": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "$ref": "http://ns.adobe.com/adobecloud/core/1.0/directory"
+              },
+              {
+                "$ref": "http://ns.adobe.com/adobecloud/core/1.0/asset"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
   "allOf": [
     {
-      "$ref": "#/definitions/asset"
+      "$ref": "#/definitions/directory"
     },
     {
       "$ref": "http://ns.adobe.com/adobecloud/core/1.0#/definitions/common-properties"
@@ -23,5 +47,12 @@
     {
       "$ref": "https://ns.adobe.com/xdm/external/hal/resource#/definitions/hal"
     }
+  ],
+  "required": [
+    "repo:name",
+    "repo:path",
+    "dc:format",
+    "repo:createdDate",
+    "repo:lastModifiedDate"
   ]
 }

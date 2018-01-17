@@ -7,6 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/common/auditable",
   "$schema": "http://json-schema.org/draft-06/schema#",
+<<<<<<< HEAD
   "title": "Audit Trail",
   "type": "object",
   "meta:extends": [
@@ -17,6 +18,27 @@
   "definitions": {
     "auditlog": {
       "properties": {
+=======
+  "title": "Auditable",
+  "type": "object",
+  "meta:abstract": true,
+  "description": "Inheriting this schema using `allOf` indicates that the data record is auditable, i.e. it can be determined when the record has last been modified and by whom.",
+  "definitions": {
+    "auditable": {
+      "properties": {
+        "xdm:repositoryCreatedDate": {
+          "title": "Created On",
+          "type": "string",
+          "format": "date-time",
+          "description": "Creation date of the entity.\n"
+        },
+        "xdm:repositoryLastModifiedDate": {
+          "title": "Modified On",
+          "type": "string",
+          "format": "date-time",
+          "description": "Last modification date of the entity.\nAt creation time, `modifiedOn` is set as `createdOn`.\n"
+        },
+>>>>>>> Add address, auditable and person related schemas to common
         "xdm:repositoryCreatedBy": {
           "title": "Created by User Identifier",
           "type": "string",
@@ -41,6 +63,7 @@
         }
       }
     }
+<<<<<<< HEAD
   },
   "allOf": [
     {
@@ -50,4 +73,7 @@
       "$ref": "http://ns.adobe.com/adobecloud/core/1.0#/definitions/date-properties"
     }
   ]
+=======
+  }
+>>>>>>> Add address, auditable and person related schemas to common
 }

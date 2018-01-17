@@ -1,13 +1,21 @@
 {
   "name": "xdm",
+<<<<<<< HEAD
   "version": "0.4.1",
+=======
+  "version": "0.2.2",
+>>>>>>> Update package.json
   "description": "Experience Data Models",
   "main": "",
   "config": {
     "aem_user": "packageUser",
     "aem_password": "override me securely",
     "markdown-importer-version": "0.0.4",
+<<<<<<< HEAD
     "schemas": 58
+=======
+    "schemas": 51
+>>>>>>> Update package.json
   },
   "scripts": {
     "clean": "rm -rf docs/reference",

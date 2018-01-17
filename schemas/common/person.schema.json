@@ -9,9 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Person",
   "type": "object",
-  "meta:batchable": [
-    "https://ns.adobe.com/xdm/common/auditable#/definitions/auditable"
-  ],
+  "meta:batchable": true,
   "description": "An individual person. May represent a person acting in various roles, such as a customer, contact, or owner.",
   "definitions": {
     "person": {

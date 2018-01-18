@@ -1,0 +1,37 @@
+{
+    "name": "example",
+    "path": "/content/example",
+    "@type": "https://ns.adobe.com/xdm/content/directory",
+    "repository_created_date": "2017-09-26T13:27:36+00:00",
+    "repository_last_modified_date": "2017-09-26T13:31:19+00:00",
+    "children": [
+        {
+            "name": "subdirectory0",
+            "path": "/content/example/subdirectory0",
+            "@type": "https://ns.adobe.com/xdm/content/directory",
+            "repository_created_date": "2017-09-26T13:27:36+00:00",
+            "repository_last_modified_date": "2017-09-26T13:31:19+00:00"
+        },
+        {
+            "name": "subdirectory1",
+            "path": "/content/example/subdirectory1",
+            "@type": "https://ns.adobe.com/xdm/content/directory",
+            "repository_created_date": "2017-09-26T13:27:36+00:00",
+            "repository_last_modified_date": "2017-09-26T13:31:19+00:00"
+        },
+        {
+            "name": "image0",
+            "path": "/content/example/image0",
+            "@type": "http://ns.adobe.com/xdm/asset",
+            "repository_created_date": "2017-09-26T13:27:36+00:00",
+            "repository_last_modified_date": "2017-09-26T13:31:19+00:00"
+        },
+        {
+            "name": "image1",
+            "path": "/content/example/image1",
+            "@type": "http://ns.adobe.com/xdm/asset",
+            "repository_created_date": "2017-09-26T13:27:36+00:00",
+            "repository_last_modified_date": "2017-09-26T13:31:19+00:00"
+        }
+    ]
+}

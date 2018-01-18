@@ -1,0 +1,45 @@
+{
+  "_links": {
+    "self": {
+      "href": "/orders/523"
+    },
+    "replacing": [
+      {
+        "href": "/orders/521"
+      },
+      {
+        "href": "/orders/520"
+      }
+    ],
+    "invoice": {
+      "href": "/invoices/873"
+    }
+  },
+  "_embedded": {
+    "replacing": [
+      {
+        "_links": {
+          "self": {
+            "href": "/orders/521"
+          }
+        },
+        "currency": "USD",
+        "status": "open",
+        "total": 10.2
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/orders/521"
+          }
+        },
+        "currency": "EUR",
+        "status": "open",
+        "total": 10.2
+      }
+    ]
+  },
+  "currency": "USD",
+  "status": "shipped",
+  "total": 10.2
+}

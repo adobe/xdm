@@ -44,6 +44,7 @@
             "^exif:.*$": {},
             "^activitystreams:.*$": {},
             "^schema:.*$": {},
+            "^repo:.*$": {},
             ".+://.+": {}
           },
           "additionalProperties": false
@@ -193,6 +194,11 @@
                   "type": "string",
                   "format": "url",
                   "const": "http://schema.org/"
+                },
+                "repo": {
+                  "type": "string",
+                  "format": "url",
+                  "const": "http://ns.adobe.com/adobecloud/core/1.0/"
                 }
               },
               "additionalProperties": false,
@@ -230,6 +236,7 @@
             "^exif:.*$": {},
             "^activitystreams:.*$": {},
             "^schema:.*$": {},
+            "^repo:.*$": {},
             ".+://.+": {}
           },
           "required": [

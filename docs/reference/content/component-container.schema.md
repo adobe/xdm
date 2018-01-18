@@ -29,7 +29,7 @@ A container for `Page Component`s, this means for content blocks that are within
       "type": "https://francois.corp.adobe.com:4502/apps/foundation/image",
       "image": {
         "@type": "http://ns.adobe.com/xdm/assets/asset",
-        "xdm:assetID": "urn:aaid:aem:4123ba4c-93a8-4c5d-b979-1234e4318185",
+        "repo:assetID": "urn:aaid:aem:4123ba4c-93a8-4c5d-b979-1234e4318185",
         "id": "https://francois.corp.adobe.com:4502/content/dam/Glasses-small.jpg"
       }
     },

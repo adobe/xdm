@@ -11,6 +11,10 @@
   "type": "object",
   "meta:extensible": true,
   "meta:extends": [
+    "http://ns.adobe.com/adobecloud/core/1.0#/definitions/common-properties",
+    "http://ns.adobe.com/adobecloud/core/1.0#/definitions/date-properties",
+    "https://ns.adobe.com/xdm/external/hal/resource#/definitions/hal",
+    "http://ns.adobe.com/adobecloud/core/1.0/asset",
     "https://ns.adobe.com/xdm/content/content",
     "https://ns.adobe.com/xdm/assets/asset",
     "https://ns.adobe.com/xdm/assets/rectangular"
@@ -172,14 +176,14 @@
     }
   ],
   "required": [
-    "xdm:assetID",
-    "xdm:repositoryCreatedDate",
+    "repo:assetID",
+    "repo:createdDate",
     "xdm:repositoryCreatedBy",
-    "xdm:repositoryLastModifiedDate",
+    "repo:lastModifiedDate",
     "xdm:repositoryLastModifiedBy",
-    "xdm:versionID",
-    "xdm:size",
+    "repo:version",
+    "repo:size",
     "xdm:path",
-    "xdm:etag"
+    "repo:etag"
   ]
 }

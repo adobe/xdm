@@ -12,6 +12,10 @@
   "description": "",
   "meta:extensible": true,
   "meta:extends": [
+    "http://ns.adobe.com/adobecloud/core/1.0#/definitions/common-properties",
+    "http://ns.adobe.com/adobecloud/core/1.0#/definitions/date-properties",
+    "https://ns.adobe.com/xdm/external/hal/resource#/definitions/hal",
+    "http://ns.adobe.com/adobecloud/core/1.0/asset",
     "https://ns.adobe.com/xdm/content/content"
   ],
   "additionalProperties": {
@@ -26,21 +30,21 @@
     }
   ],
   "required": [
-    "xdm:name",
-    "xdm:path",
-    "xdm:repositoryCreatedDate",
+    "repo:name",
+    "repo:path",
+    "repo:createdDate",
     "xdm:repositoryCreatedBy",
-    "xdm:repositoryLastModifiedDate",
+    "repo:lastModifiedDate",
     "xdm:repositoryLastModifiedBy"
   ],
   "definitions": {
     "page": {
       "properties": {
-        "xdm:path": {
+        "repo:path": {
           "type": "string",
           "description": "Shows the hierarchy of the page. The path semantics should be same as that defined in [RFC 3986](https://tools.ietf.org/html/rfc3986#section-3.3). In case a repository is not path based then it can return the information which will help in browsing. It could be just an document id, or something like `{catalog}/{id}` in case of a document database."
         },
-        "xdm:name": {
+        "repo:name": {
           "type": "string",
           "description": "Name of the page in the repository. This could be a file name or any name provided by the repository to the page."
         },

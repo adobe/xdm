@@ -43,7 +43,7 @@ An [Activity](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-activity) is
     "@type": "http://ns.adobe.com/xdm/assets/asset#",
     "xdm:asset_id": "urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
     "xdm:asset_name": "example.jpg",
-    "xdm:etag": "6fc55d0389d856ae7deccebba54f110e",
+    "repo:etag": "6fc55d0389d856ae7deccebba54f110e",
     "xdm:path": "/MyFolder/example.jpg",
     "xdm:format": "image/jpeg"
   }

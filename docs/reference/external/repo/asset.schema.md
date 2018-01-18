@@ -1,87 +1,55 @@
 
-# Content Schema
+# Asset Schema
 
 ```
-https://ns.adobe.com/xdm/content/content
+http://ns.adobe.com/adobecloud/core/1.0/asset
 ```
 
-Content is information that is directed towards an audience for consumption in a (digital) experience. Content is delivered through channels (or a particular medium), but the essence of content remains independent from the devliery medium.
-
-In [Web Content Management by Deane Barker](https://www.safaribooksonline.com/library/view/web-content-management/9781491908112/ch01.html) two key differences between content and other digital information are pointed out:
-
-&gt; 1. Content is *created* differently
-&gt; 2. Content is *used* differently
-
-These differences boil down to a number of key characteristics of content.
-
-*Content is created by human editors* in an editorial process that involves creation, revision, and publishing.
-
-*Content is created for human audiences*, which gives the content the ultimate value.
+An asset in Adobe Cloud Platform. It is not neccessarily a Digital Asset in the sense of Digital Asset Management, but a piece of content or data that can be represented in the form of a file.
 
 | Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
 |----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [content/content.schema.json](content/content.schema.json) |
+| Can be instantiated | Yes | Forbidden | Permitted | [external/repo/asset.schema.json](external/repo/asset.schema.json) |
 
 ## Schema Hierarchy
 
-* Content `https://ns.adobe.com/xdm/content/content`
-  * [Asset](../external/repo/asset.schema.md) `http://ns.adobe.com/adobecloud/core/1.0/asset`
-  * [Common Properties](../external/repo/common.schema.md) `http://ns.adobe.com/adobecloud/core/1.0`
-  * [HAL Resource](../external/hal/hal.schema.md) `https://ns.adobe.com/xdm/external/hal/resource`
+* Asset `http://ns.adobe.com/adobecloud/core/1.0/asset`
+  * [Common Properties](common.schema.md) `http://ns.adobe.com/adobecloud/core/1.0`
+  * [HAL Resource](../hal/hal.schema.md) `https://ns.adobe.com/xdm/external/hal/resource`
 
-## Content Example
+## Asset Example
 ```json
 {
-  "@id": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
-  "repo:createdDate": "2017-11-23T13:11:05+00:00",
-  "xdm:repositoryCreatedBy": "lars",
-  "repo:lastModifiedDate": "2017-11-23T13:11:05+00:00",
-  "xdm:repositoryLastModifiedBy": "lars",
-  "repo:version": "1"
+  "repo:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
+  "repo:createdDate": "2017-09-26T15:52:25+00:00",
+  "repo:lastModifiedDate": "2017-09-26T15:52:25+00:00",
+  "repo:version": "15",
+  "repo:size": 1632418,
+  "repo:path": "here",
+  "repo:name": "example.png",
+  "repo:etag": "15",
+  "dc:format": "image/png"
 }
 ```
 
-# Content Properties
+# Asset Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Content (this schema) |
-| [_embedded](#_embedded) | `object` | Optional | [HAL Resource](../external/hal/hal.schema.md#_embedded) |
-| [_links](#_links) | `object` | Optional | [HAL Resource](../external/hal/hal.schema.md#_links) |
-| [dc:format](#dcformat) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#dcformat) |
-| [repo:assetID](#repoassetID) | `string` | Optional | [Asset](../external/repo/asset.schema.md#repoassetID) |
-| [repo:createDate](#repocreateDate) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#repocreateDate) |
-| [repo:etag](#repoetag) | `string` | Optional | [Asset](../external/repo/asset.schema.md#repoetag) |
-| [repo:lastModifiedDate](#repolastModifiedDate) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#repolastModifiedDate) |
-| [repo:name](#reponame) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#reponame) |
-| [repo:path](#repopath) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#repopath) |
-| [repo:size](#reposize) | `integer` | Optional | [Asset](../external/repo/asset.schema.md#reposize) |
-| [repo:version](#repoversion) | `string` | Optional | [Asset](../external/repo/asset.schema.md#repoversion) |
-| [tiff:imageLength](#tiffimageLength) | `integer` | Optional | [Asset](../external/repo/asset.schema.md#tiffimageLength) |
-| [tiff:imageWidth](#tiffimageWidth) | `integer` | Optional | [Asset](../external/repo/asset.schema.md#tiffimageWidth) |
-| [xdm:repositoryCreatedBy](#xdmrepositoryCreatedBy) | `string` | Optional | Content (this schema) |
-| [xdm:repositoryLastModifiedBy](#xdmrepositoryLastModifiedBy) | `string` | Optional | Content (this schema) |
+| [_embedded](#_embedded) | `object` | Optional | [HAL Resource](../hal/hal.schema.md#_embedded) |
+| [_links](#_links) | `object` | Optional | [HAL Resource](../hal/hal.schema.md#_links) |
+| [dc:format](#dcformat) | `string` | **Required** | [Common Properties](common.schema.md#dcformat) |
+| [repo:assetID](#repoassetID) | `string` | **Required** | Asset (this schema) |
+| [repo:createDate](#repocreateDate) | `string` | Optional | [Common Properties](common.schema.md#repocreateDate) |
+| [repo:etag](#repoetag) | `string` | **Required** | Asset (this schema) |
+| [repo:lastModifiedDate](#repolastModifiedDate) | `string` | **Required** | [Common Properties](common.schema.md#repolastModifiedDate) |
+| [repo:name](#reponame) | `string` | **Required** | [Common Properties](common.schema.md#reponame) |
+| [repo:path](#repopath) | `string` | **Required** | [Common Properties](common.schema.md#repopath) |
+| [repo:size](#reposize) | `integer` | **Required** | Asset (this schema) |
+| [repo:version](#repoversion) | `string` | **Required** | Asset (this schema) |
+| [tiff:imageLength](#tiffimageLength) | `integer` | Optional | Asset (this schema) |
+| [tiff:imageWidth](#tiffimageWidth) | `integer` | Optional | Asset (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
-
-## @id
-
-A unique identifier given to every addressable piece of content in a given repository.
-
-`@id`
-* is optional
-* type: `string`
-* defined in this schema
-
-### @id Type
-
-
-`string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
-
-
-
-
-
 
 ## _embedded
 
@@ -90,7 +58,7 @@ It is an object whose property names are link relation types (as defined by [RFC
 `_embedded`
 * is optional
 * type: `object`
-* defined in [HAL Resource](../external/hal/hal.schema.md#_embedded)
+* defined in [HAL Resource](../hal/hal.schema.md#_embedded)
 
 ### _embedded Type
 
@@ -113,7 +81,7 @@ It is an object whose property names are link relation types (as defined by [RFC
 `_links`
 * is optional
 * type: `object`
-* defined in [HAL Resource](../external/hal/hal.schema.md#_links)
+* defined in [HAL Resource](../hal/hal.schema.md#_links)
 
 ### _links Type
 
@@ -135,9 +103,9 @@ It is an object whose property names are link relation types (as defined by [RFC
 The physical or digital manifestation of the resource. Typically, Format should include the media-type of the resource. Format may be used to determine the software, hardware or other equipment needed to display or operate the resource. Recommended best practice is to select a value from a controlled vocabulary (for example, the list of [Internet Media Types](http://www.iana.org/ assignments/media-types/) defining computer media formats).
 
 `dc:format`
-* is optional
+* is **required**
 * type: `string`
-* defined in [Common Properties](../external/repo/common.schema.md#dc:format)
+* defined in [Common Properties](common.schema.md#dc:format)
 
 ### dc:format Type
 
@@ -169,9 +137,9 @@ A unique identifier given to every addressable asset in a given repository.
 The format is a [GUID-based URN](https://www.ietf.org/rfc/rfc4122.txt). The pattern to generate an Asset ID is ```urn:aaid:{system}:{id} - {format}:{namespace}:{system}:{id}```
 
 `repo:assetID`
-* is optional
+* is **required**
 * type: `string`
-* defined in [Asset](../external/repo/asset.schema.md#repo:assetID)
+* defined in this schema
 
 ### repo:assetID Type
 
@@ -203,7 +171,7 @@ The server date and time when the resource was created in the repository, such a
 `repo:createDate`
 * is optional
 * type: `string`
-* defined in [Common Properties](../external/repo/common.schema.md#repo:createDate)
+* defined in [Common Properties](common.schema.md#repo:createDate)
 
 ### repo:createDate Type
 
@@ -227,9 +195,9 @@ The server date and time when the resource was created in the repository, such a
 An  ETag is an HTTP response header returned by an HTTP/1.1 compliant web server used to determine change in content of a resource at a given URL. 
 
 `repo:etag`
-* is optional
+* is **required**
 * type: `string`
-* defined in [Asset](../external/repo/asset.schema.md#repo:etag)
+* defined in this schema
 
 ### repo:etag Type
 
@@ -246,9 +214,9 @@ An  ETag is an HTTP response header returned by an HTTP/1.1 compliant web server
 The server date and time when the resource was most recently modified in the repository, such as when a new version of an asset is uploaded or a directory&#39;s child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is &#34;2004-10-23T12:00:00-06:00&#34;.
 
 `repo:lastModifiedDate`
-* is optional
+* is **required**
 * type: `string`
-* defined in [Common Properties](../external/repo/common.schema.md#repo:lastModifiedDate)
+* defined in [Common Properties](common.schema.md#repo:lastModifiedDate)
 
 ### repo:lastModifiedDate Type
 
@@ -270,9 +238,9 @@ The server date and time when the resource was most recently modified in the rep
 
 
 `repo:name`
-* is optional
+* is **required**
 * type: `string`
-* defined in [Common Properties](../external/repo/common.schema.md#repo:name)
+* defined in [Common Properties](common.schema.md#repo:name)
 
 ### repo:name Type
 
@@ -288,9 +256,9 @@ The server date and time when the resource was most recently modified in the rep
 
 
 `repo:path`
-* is optional
+* is **required**
 * type: `string`
-* defined in [Common Properties](../external/repo/common.schema.md#repo:path)
+* defined in [Common Properties](common.schema.md#repo:path)
 
 ### repo:path Type
 
@@ -308,9 +276,9 @@ The server date and time when the resource was most recently modified in the rep
 Size of the asset in bytes.
 
 `repo:size`
-* is optional
+* is **required**
 * type: `integer`
-* defined in [Asset](../external/repo/asset.schema.md#repo:size)
+* defined in this schema
 
 ### repo:size Type
 
@@ -327,9 +295,9 @@ Size of the asset in bytes.
 The version ID of the piece of content. It will be generated both on explicit and implicit save or upload.
 
 `repo:version`
-* is optional
+* is **required**
 * type: `string`
-* defined in [Asset](../external/repo/asset.schema.md#repo:version)
+* defined in this schema
 
 ### repo:version Type
 
@@ -349,7 +317,7 @@ Height in pixels. To maintain continuity with the XMP and TIFF standards, the he
 `tiff:imageLength`
 * is optional
 * type: `integer`
-* defined in [Asset](../external/repo/asset.schema.md#tiff:imageLength)
+* defined in this schema
 
 ### tiff:imageLength Type
 
@@ -370,51 +338,13 @@ Width in pixels
 `tiff:imageWidth`
 * is optional
 * type: `integer`
-* defined in [Asset](../external/repo/asset.schema.md#tiff:imageWidth)
+* defined in this schema
 
 ### tiff:imageWidth Type
 
 
 `integer`
 * minimum value: `0`
-
-
-
-
-
-
-## xdm:repositoryCreatedBy
-
-ID of the user who initiated the action that caused the resource to be created in the repository.
-
-`xdm:repositoryCreatedBy`
-* is optional
-* type: `string`
-* defined in this schema
-
-### xdm:repositoryCreatedBy Type
-
-
-`string`
-
-
-
-
-
-
-## xdm:repositoryLastModifiedBy
-
-ID of the user who initiated the action that most recently caused the resource to be modified in the repository.
-
-`xdm:repositoryLastModifiedBy`
-* is optional
-* type: `string`
-* defined in this schema
-
-### xdm:repositoryLastModifiedBy Type
-
-
-`string`
 
 
 

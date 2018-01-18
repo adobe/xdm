@@ -21,17 +21,17 @@ The Image class is for raster and vector image assets, including JPEG, PNG, SVG 
 ## Image Example
 ```json
 {
-  "xdm:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
+  "repo:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
   "xmp:createDate": "2017-09-26T15:52:25+00:00",
-  "xdm:repositoryCreatedDate": "2017-09-26T15:52:25+00:00",
+  "repo:createdDate": "2017-09-26T15:52:25+00:00",
   "xdm:repositoryCreatedBy": "lars",
   "xmp:modifyDate": "2017-09-26T15:52:25+00:00",
-  "xdm:repositoryLastModifiedDate": "2017-09-26T15:52:25+00:00",
+  "repo:lastModifiedDate": "2017-09-26T15:52:25+00:00",
   "xdm:repositoryLastModifiedBy": "2017-09-26T15:52:25+00:00",
-  "xdm:versionID": "15",
-  "xdm:size": 1632418,
+  "repo:version": "15",
+  "repo:size": 1632418,
   "xdm:path": "here",
-  "xdm:etag": "15",
+  "repo:etag": "15",
   "tiff:imageLength": 768,
   "tiff:imageWidth": 1024,
   "xdm:aspectRatio": 1.3333333,
@@ -53,7 +53,6 @@ The Image class is for raster and vector image assets, including JPEG, PNG, SVG 
 | [cc:license](#cclicense) | `string` | Optional | [Asset](asset.schema.md#cclicense) |
 | [dc:creator](#dccreator) | `string[]` | Optional | [Asset](asset.schema.md#dccreator) |
 | [dc:description](#dcdescription) | reference | Optional | [Asset](asset.schema.md#dcdescription) |
-| [dc:format](#dcformat) | `string` | Optional | [Asset](asset.schema.md#dcformat) |
 | [dc:language](#dclanguage) | `string[]` | Optional | [Asset](asset.schema.md#dclanguage) |
 | [dc:rights](#dcrights) | reference | Optional | [Asset](asset.schema.md#dcrights) |
 | [dc:subject](#dcsubject) | `string[]` | Optional | [Asset](asset.schema.md#dcsubject) |
@@ -74,19 +73,11 @@ The Image class is for raster and vector image assets, including JPEG, PNG, SVG 
 | [tiff:resolutionUnit](#tiffresolutionUnit) | `enum` | Optional | Image (this schema) |
 | [xdm:aliasIDs](#xdmaliasIDs) | `array` | Optional | [Asset](asset.schema.md#xdmaliasIDs) |
 | [xdm:aspectRatio](#xdmaspectRatio) | `number` | Optional | [Rectangular Media](rectangular.schema.md#xdmaspectRatio) |
-| [xdm:assetID](#xdmassetID) | `string` | **Required** | [Asset](asset.schema.md#xdmassetID) |
 | [xdm:documentID](#xdmdocumentID) | `string` | Optional | [Asset](asset.schema.md#xdmdocumentID) |
-| [xdm:etag](#xdmetag) | `string` | **Required** | [Asset](asset.schema.md#xdmetag) |
 | [xdm:milestone](#xdmmilestone) | `object` | Optional | [Asset](asset.schema.md#xdmmilestone) |
-| [xdm:name](#xdmname) | `string` | Optional | [Asset](asset.schema.md#xdmname) |
 | [xdm:notSafe](#xdmnotSafe) | `enum` | Optional | [Asset](asset.schema.md#xdmnotSafe) |
-| [xdm:path](#xdmpath) | `string` | **Required** | [Asset](asset.schema.md#xdmpath) |
 | [xdm:repositoryCreatedBy](#xdmrepositoryCreatedBy) | `string` | **Required** | [Content](../content/content.schema.md#xdmrepositoryCreatedBy) |
-| [xdm:repositoryCreatedDate](#xdmrepositoryCreatedDate) | `string` | **Required** | [Content](../content/content.schema.md#xdmrepositoryCreatedDate) |
 | [xdm:repositoryLastModifiedBy](#xdmrepositoryLastModifiedBy) | `string` | **Required** | [Content](../content/content.schema.md#xdmrepositoryLastModifiedBy) |
-| [xdm:repositoryLastModifiedDate](#xdmrepositoryLastModifiedDate) | `string` | **Required** | [Content](../content/content.schema.md#xdmrepositoryLastModifiedDate) |
-| [xdm:size](#xdmsize) | `integer` | **Required** | [Asset](asset.schema.md#xdmsize) |
-| [xdm:versionID](#xdmversionID) | `string` | **Required** | [Content](../content/content.schema.md#xdmversionID) |
 | [xmp:artboards](#xmpartboards) | Artboard | Optional | [Asset](asset.schema.md#xmpartboards) |
 | [xmp:createDate](#xmpcreateDate) | `string` | Optional | [Asset](asset.schema.md#xmpcreateDate) |
 | [xmp:creatorTool](#xmpcreatorTool) | `string` | Optional | [Asset](asset.schema.md#xmpcreatorTool) |
@@ -241,39 +232,6 @@ All items must be of the type:
 
 
 
-
-
-## dc:format
-### Format
-
-The physical or digital manifestation of the resource. Typically, Format should include the media-type of the resource. Format may be used to determine the software, hardware or other equipment needed to display or operate the resource. Recommended best practice is to select a value from a controlled vocabulary (for example, the list of [Internet Media Types](http://www.iana.org/ assignments/media-types/) defining computer media formats).
-
-`dc:format`
-* is optional
-* type: `string`
-* defined in [Asset](asset.schema.md#dc:format)
-
-### dc:format Type
-
-
-`string`
-
-
-All instances must conform to this regular expression 
-```regex
-\w+\/[-.\w]+(?:\+[-.\w]+)?
-```
-
-* test example: [application/vnd.adobe.photoshop](https://regexr.com/?expression=%5Cw%2B%5C%2F%5B-.%5Cw%5D%2B(%3F%3A%5C%2B%5B-.%5Cw%5D%2B)%3F&text=application%2Fvnd.adobe.photoshop)
-
-
-
-
-### dc:format Example
-
-```json
-"application/vnd.adobe.photoshop"
-```
 
 
 ## dc:language
@@ -853,40 +811,6 @@ Describes the proportional relationship between the width and the height. To det
 
 
 
-## xdm:assetID
-
-A unique identifier given to every addressable asset in a given repository.
-
-The format is a [GUID-based URN](https://www.ietf.org/rfc/rfc4122.txt). The pattern to generate an Asset ID is ```urn:aaid:{system}:{id} - {format}:{namespace}:{system}:{id}```
-
-`xdm:assetID`
-* is **required**
-* type: `string`
-* defined in [Asset](asset.schema.md#xdm:assetID)
-
-### xdm:assetID Type
-
-
-`string`
-
-
-All instances must conform to this regular expression 
-```regex
-^urn:aaid:[A-Za-z0-9]+:[A-Za-z0-9]+:[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}$
-```
-
-* test example: [urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e](https://regexr.com/?expression=%5Eurn%3Aaaid%3A%5BA-Za-z0-9%5D%2B%3A%5BA-Za-z0-9%5D%2B%3A%5BA-Fa-f0-9%5D%7B8%7D-%5BA-Fa-f0-9%5D%7B4%7D-%5BA-Fa-f0-9%5D%7B4%7D-%5BA-Fa-f0-9%5D%7B4%7D-%5BA-Fa-f0-9%5D%7B12%7D%24&text=urn%3Aaaid%3Asc%3AUS%3A6dc33479-13ca-4b19-b25d-c805eff8a69e)
-
-
-
-
-### xdm:assetID Example
-
-```json
-"urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e"
-```
-
-
 ## xdm:documentID
 ### Document ID
 
@@ -920,26 +844,6 @@ All instances must conform to this regular expression
 ```json
 "uuid:00112233-4455-6677-8899-AABBCCDDEEFF"
 ```
-
-
-## xdm:etag
-### ETag
-
-An  ETag is an HTTP response header returned by an HTTP/1.1 compliant web server used to determine change in content of a resource at a given URL. 
-
-`xdm:etag`
-* is **required**
-* type: `string`
-* defined in [Asset](asset.schema.md#xdm:etag)
-
-### xdm:etag Type
-
-
-`string`
-
-
-
-
 
 
 ## xdm:milestone
@@ -1010,26 +914,6 @@ Label for the version of an asset
 
 
 
-## xdm:name
-### Asset Name
-
-Name of the asset in the repository. This could be a file name or any name provided by the repository to the asset.
-
-`xdm:name`
-* is optional
-* type: `string`
-* defined in [Asset](asset.schema.md#xdm:name)
-
-### xdm:name Type
-
-
-`string`
-
-
-
-
-
-
 ## xdm:notSafe
 ### NSFW State
 
@@ -1047,26 +931,6 @@ The value of this property **must** be equal to one of the [known values below](
 |-------|-------------|
 | `0` | The content is safe for work |
 | `1` | The content is not safe for work |
-
-
-
-
-## xdm:path
-### Path
-
-Shows the hierarchy of the asset. The path semantics should be same as that defined in https://tools.ietf.org/html/rfc3986#section-3.3. In case a repository is not path based then it can return the information which will help in browsing. It could be just an asset id, or something like {catalog}/{id} in case of OZ.
-
-`xdm:path`
-* is **required**
-* type: `string`
-* defined in [Asset](asset.schema.md#xdm:path)
-
-### xdm:path Type
-
-
-`string`
-
-
 
 
 
@@ -1090,26 +954,6 @@ ID of the user who initiated the action that caused the resource to be created i
 
 
 
-## xdm:repositoryCreatedDate
-
-The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is &#34;2004-10-23T12:00:00-06:00&#34;.
-
-`xdm:repositoryCreatedDate`
-* is **required**
-* type: `string`
-* defined in [Content](../content/content.schema.md#xdm:repositoryCreatedDate)
-
-### xdm:repositoryCreatedDate Type
-
-
-`string`
-* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
-
-
-
-
-
-
 ## xdm:repositoryLastModifiedBy
 
 ID of the user who initiated the action that most recently caused the resource to be modified in the repository.
@@ -1120,65 +964,6 @@ ID of the user who initiated the action that most recently caused the resource t
 * defined in [Content](../content/content.schema.md#xdm:repositoryLastModifiedBy)
 
 ### xdm:repositoryLastModifiedBy Type
-
-
-`string`
-
-
-
-
-
-
-## xdm:repositoryLastModifiedDate
-
-The server date and time when the resource was most recently modified in the repository, such as when a new version of an asset is uploaded or a directory&#39;s child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is &#34;2004-10-23T12:00:00-06:00&#34;.
-
-`xdm:repositoryLastModifiedDate`
-* is **required**
-* type: `string`
-* defined in [Content](../content/content.schema.md#xdm:repositoryLastModifiedDate)
-
-### xdm:repositoryLastModifiedDate Type
-
-
-`string`
-* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
-
-
-
-
-
-
-## xdm:size
-### Size
-
-Size of the asset in bytes
-
-`xdm:size`
-* is **required**
-* type: `integer`
-* defined in [Asset](asset.schema.md#xdm:size)
-
-### xdm:size Type
-
-
-`integer`
-
-
-
-
-
-
-## xdm:versionID
-
-The version ID of the piece of content. It will be generated both on explicit and implicit save or upload.
-
-`xdm:versionID`
-* is **required**
-* type: `string`
-* defined in [Content](../content/content.schema.md#xdm:versionID)
-
-### xdm:versionID Type
 
 
 `string`

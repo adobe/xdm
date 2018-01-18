@@ -10,21 +10,17 @@
     "title": "Asset",
     "type": "object",
     "meta:extensible": true,
-    "meta:extends": "https://ns.adobe.com/xdm/content/content",
+    "meta:extends": [
+        "http://ns.adobe.com/adobecloud/core/1.0#/definitions/common-properties",
+        "http://ns.adobe.com/adobecloud/core/1.0#/definitions/date-properties",
+        "https://ns.adobe.com/xdm/external/hal/resource#/definitions/hal",
+        "http://ns.adobe.com/adobecloud/core/1.0/asset",
+        "https://ns.adobe.com/xdm/content/content"
+    ],
     "description": "A digital asset, is anything that exists in a binary format and comes with the right to use. Content that does not possess that right is not considered an asset. Digital assets include but are not exclusive to: digital documents, audible content, motion picture, and other relevant digital content that is currently in circulation or production.\n\nAs described in [What is a digital asset](https://www.realstorygroup.com/Blog/3140-What-is-a-digital-asset), the definition of a digital asset can be put like this:\n> In theory, a digital asset is something represented in a digital form that has an intrinsic or acquired value. This initial definition is intentionally general. It could correspond to almost anything or any piece of media in a digital form, such as a photo, website, or email message. As a practical matter, however, DAM [Digital Asset Management] has evolved to support the management of digital media assets almost exclusively. This includes images, video, audio, and related artifacts (such as brochures and compound publications). You would typically use different types of technology to manage email, Word documents, relational data records, and web pages. Even some image “assets” don’t fall under the domain of DAM technology as it is known today. Scanned paper or forms that end up as TIFF or PDF files do not constitute media assets that originate through some creative process.\n\nAll digital assets are content, and some content can include, link to, or refer digital assets. Content can furthermore be transformed (rendered) into digital assets, such as when exporting a PDF. ",
     "definitions": {
         "asset": {
             "properties": {
-                "xdm:assetID": {
-                    "type": "string",
-                    "meta:immutable": true,
-                    "meta:usereditable": false,
-                    "description": "A unique identifier given to every addressable asset in a given repository.\n\nThe format is a [GUID-based URN](https://www.ietf.org/rfc/rfc4122.txt). The pattern to generate an Asset ID is ```urn:aaid:{system}:{id} - {format}:{namespace}:{system}:{id}```",
-                    "examples": [
-                        "urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e"
-                    ],
-                    "pattern": "^urn:aaid:[A-Za-z0-9]+:[A-Za-z0-9]+:[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}$"
-                },
                 "xdm:documentID": {
                     "type": "string",
                     "title": "Document ID",
@@ -34,11 +30,6 @@
                         "uuid:00112233-4455-6677-8899-AABBCCDDEEFF"
                     ],
                     "pattern": "^uuid:[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}$"
-                },
-                "xdm:name": {
-                    "title": "Asset Name",
-                    "type": "string",
-                    "description": "Name of the asset in the repository. This could be a file name or any name provided by the repository to the asset."
                 },
                 "xdm:aliasIDs": {
                     "type": "array",
@@ -199,16 +190,6 @@
                     },
                     "description": "An account of the content of the resource. Description may include but is not limited to: an abstract, table of contents, reference to a graphical representation of content or a free-text account of the content."
                 },
-                "dc:format": {
-                    "meta:usereditable": false,
-                    "type": "string",
-                    "title": "Format",
-                    "pattern": "\\w+\\/[-.\\w]+(?:\\+[-.\\w]+)?",
-                    "examples": [
-                        "application/vnd.adobe.photoshop"
-                    ],
-                    "description": "The physical or digital manifestation of the resource. Typically, Format should include the media-type of the resource. Format may be used to determine the software, hardware or other equipment needed to display or operate the resource. Recommended best practice is to select a value from a controlled vocabulary (for example, the list of [Internet Media Types](http://www.iana.org/ assignments/media-types/) defining computer media formats)."
-                },
                 "xdm:notSafe": {
                     "title": "NSFW State",
                     "description": "Indicates if the content is SFW (safe for work). Safe is value 0 or missing value. NSFW is value 1.",
@@ -236,24 +217,6 @@
                         "pt-BR",
                         "es-ES"
                     ]
-                },
-                "xdm:size": {
-                    "meta:usereditable": false,
-                    "type": "integer",
-                    "title": "Size",
-                    "description": "Size of the asset in bytes"
-                },
-                "xdm:path": {
-                    "meta:usereditable": false,
-                    "type": "string",
-                    "title": "Path",
-                    "description": "Shows the hierarchy of the asset. The path semantics should be same as that defined in https://tools.ietf.org/html/rfc3986#section-3.3. In case a repository is not path based then it can return the information which will help in browsing. It could be just an asset id, or something like {catalog}/{id} in case of OZ."
-                },
-                "xdm:etag": {
-                    "meta:usereditable": false,
-                    "type": "string",
-                    "title": "ETag",
-                    "description": "An  ETag is an HTTP response header returned by an HTTP/1.1 compliant web server used to determine change in content of a resource at a given URL. "
                 },
                 "xmpTPg:NPages": {
                     "meta:usereditable": false,
@@ -418,6 +381,18 @@
     },
     "allOf": [
         {
+            "$ref": "http://ns.adobe.com/adobecloud/core/1.0/asset#/definitions/asset"
+        },
+        {
+            "$ref": "http://ns.adobe.com/adobecloud/core/1.0#/definitions/common-properties"
+        },
+        {
+            "$ref": "http://ns.adobe.com/adobecloud/core/1.0#/definitions/date-properties"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/external/hal/resource#/definitions/hal"
+        },
+        {
             "$ref": "https://ns.adobe.com/xdm/content/content#/definitions/content"
         },
         {
@@ -428,29 +403,31 @@
         }
     ],
     "required": [
-        "xdm:assetID",
-        "xdm:repositoryCreatedDate",
-        "xdm:repositoryCreatedBy",
-        "xdm:repositoryLastModifiedDate",
-        "xdm:repositoryLastModifiedBy",
-        "xdm:versionID",
-        "xdm:size",
-        "xdm:path",
-        "xdm:etag"
+        "repo:name",
+        "repo:path",
+        "dc:format",
+        "repo:createdDate",
+        "repo:lastModifiedDate",
+        "repo:assetID",
+        "repo:etag",
+        "repo:version",
+        "repo:size"
     ],
     "examples": [
         {
-            "xdm:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
+            "repo:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
             "xmp:createDate": "2017-09-26T15:52:25+00:00",
-            "xdm:repositoryCreatedDate": "2017-09-26T15:52:25+00:00",
+            "repo:createdDate": "2017-09-26T15:52:25+00:00",
             "xdm:repositoryCreatedBy": "lars",
             "xmp:modifyDate": "2017-09-26T15:52:25+00:00",
-            "xdm:repositoryLastModifiedDate": "2017-09-26T15:52:25+00:00",
+            "repo:lastModifiedDate": "2017-09-26T15:52:25+00:00",
             "xdm:repositoryLastModifiedBy": "lars",
-            "xdm:versionID": "15",
-            "xdm:size": 1632418,
-            "xdm:path": "here",
-            "xdm:etag": "15"
+            "repo:version": "15",
+            "repo:size": 1632418,
+            "repo:path": "here",
+            "repo:etag": "15",
+            "repo:name": "example.pdf",
+            "dc:format": "application/pdf"
         }
     ]
 }

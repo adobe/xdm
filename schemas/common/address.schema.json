@@ -13,7 +13,7 @@
     "http://schema.org/GeoCoordinates",
     "https://ns.adobe.com/xdm/common/geo"
   ],
-  "meta:batchable": true,
+  "meta:auditable": true,
   "description": "A postal address. Address could relate to a person's home, work, preferred store location etc.",
   "definitions": {
     "address": {

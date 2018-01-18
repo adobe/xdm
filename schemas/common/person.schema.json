@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Person",
   "type": "object",
-  "meta:batchable": true,
+  "meta:auditable": true,
   "description": "An individual person. May represent a person acting in various roles, such as a customer, contact, or owner.",
   "definitions": {
     "person": {

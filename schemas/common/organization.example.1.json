@@ -1,0 +1,28 @@
+{
+  "@id": "https://data.adobe.io/entities/org/orgid111",
+  "xdm:legalName": "ABC Stores",
+  "xdm:numberOfEmployees": 200,
+  "xdm:industry": "Retail",
+  "xdm:website": "http://www.abcstores.com",
+  "xdm:sicCode": "56",
+  "rating": 1,
+  "xdm:marketSegment": "apparel for kids",
+  "xdm:location": {
+    "@id": "https://data.adobe.io/entities/places/locid123",
+    "xdm:description": "ABC Store location",
+    "xdm:address": {
+      "@id": "https://ns.adobe.com/entities/address/123",
+      "xdm:primary": true,
+      "xdm:street1": "100 Lincoln Ave",
+      "xdm:city": "San Jose",
+      "xdm:stateProvince": "US-CA",
+      "xdm:postalCode": "95125",
+      "xdm:country": "United States",
+      "schema:latitude": 37.3382,
+      "schema:longitude": 121.8863,
+      "xdm:status": "active",
+      "xdm:lastVerifiedDate": "2018-01-03"
+    },
+    "xdm:phoneNumber": "1-408-800-0000"
+  }
+}

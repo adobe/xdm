@@ -9,6 +9,9 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/experience-cloud-pr1
   "title": "Audit Trail",
   "type": "object",
   "meta:extends": [
@@ -19,6 +22,7 @@
   "definitions": {
     "auditlog": {
       "properties": {
+<<<<<<< HEAD
 =======
   "title": "Auditable",
 =======
@@ -49,6 +53,8 @@
 >>>>>>> Add address, auditable and person related schemas to common
 =======
 >>>>>>> Sync up with master for auditable
+=======
+>>>>>>> origin/experience-cloud-pr1
         "xdm:repositoryCreatedBy": {
           "title": "Created by User Identifier",
           "type": "string",
@@ -75,8 +81,11 @@
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Sync up with master for auditable
+=======
+>>>>>>> origin/experience-cloud-pr1
   },
   "allOf": [
     {
@@ -87,9 +96,12 @@
     }
   ]
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   }
 >>>>>>> Add address, auditable and person related schemas to common
 =======
 >>>>>>> Sync up with master for auditable
+=======
+>>>>>>> origin/experience-cloud-pr1
 }

@@ -84,7 +84,7 @@
         },
         "xdm:audit": {
           "title": "Audit",
-          "$ref": "https://ns.adobe.com/xdm/common/auditable#/definitions/auditable"
+          "$ref": "https://ns.adobe.com/xdm/common/auditable"
         }
       }
     }

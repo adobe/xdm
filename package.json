@@ -1,13 +1,29 @@
 {
   "name": "xdm",
+<<<<<<< HEAD
+<<<<<<< HEAD
   "version": "0.4.1",
+=======
+  "version": "0.2.2",
+>>>>>>> Update package.json
+=======
+  "version": "0.2.2",
+>>>>>>> origin/experience-cloud-pr1
   "description": "Experience Data Models",
   "main": "",
   "config": {
     "aem_user": "packageUser",
     "aem_password": "override me securely",
     "markdown-importer-version": "0.0.4",
+<<<<<<< HEAD
+<<<<<<< HEAD
     "schemas": 58
+=======
+    "schemas": 51
+>>>>>>> Update package.json
+=======
+    "schemas": 51
+>>>>>>> origin/experience-cloud-pr1
   },
   "scripts": {
     "clean": "rm -rf docs/reference",

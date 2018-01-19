@@ -52,6 +52,7 @@
         "xdm:masterProductID": {
           "title": "Master Product Identifier",
           "type": "string",
+          "format": "uri",
           "description": "The internal unique ID of the product in the commerce backend system."
         },
         "xdm:masterProductSKU": {

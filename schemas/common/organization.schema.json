@@ -37,12 +37,7 @@
         "xdm:industry": {
           "title": "Industry",
           "type": "string",
-          "description": "The the industry that this organization is a part of. This is a free-form field, and it is advisable to use a structured value for queries."
-        },
-        "xdm:duns": {
-          "title": "Dun & Bradstreet number",
-          "type": "string",
-          "description": "The Dun & Bradstreet DUNS number for identifying an organization or business person."
+          "description": "The the industry that this organization is a part of. This is a free-form field, and it is advisable to use a structured value for queries or to use the `xdm:classifier` property."
         },
         "xdm:website": {
           "title": "Web Site",
@@ -50,15 +45,10 @@
           "format": "uri",
           "description": "The URL of the organization's website."
         },
-        "xdm:sicCode": {
-          "title": "SIC Code",
-          "type": "string",
-          "description": "The Standard Industrial Classification Code."
-        },
         "xdm:marketSegment": {
           "title": "Market Segment",
           "type": "string",
-          "description": "The named market segment that the organization participates in. This is a free-form field, and it is advisable to use a structured value for queries."
+          "description": "The named market segment that the organization participates in. This is a free-form field, and it is advisable to use a structured value for queries or to use the `xdm:identifier` property."
         },
         "xdm:location": {
           "title": "Location",
@@ -71,6 +61,49 @@
           "minimum": 0,
           "maximum": 1,
           "description": "The calculated score or star rating for this organization. `1` indicates the maximum possible rating, `0` the minumum possible rating."
+        },
+        "xdm:identifier": {
+          "title": "Organization Identifier",
+          "type": "object",
+          "meta:enum": {
+            "https://ns.adobe.com/external/dnb": "Dun & Bradstreet",
+            "https://ns.adobe.com/external/angellist": "Angellist"
+          },
+          "patternProperties": {
+            ".+://.+": {
+              "type": "string",
+              "description": "ID of the organization according to the service."
+            }
+          },
+          "examples": [
+            {
+              "https://ns.adobe.com/external/dnb": "1234",
+              "https://ns.adobe.com/external/angellist": "https://angel.co/adobe"
+            }
+          ],
+          "description": "This object contains unambiguous identifiers for the organization. Each key is the URI of an identification service, each value is the unique ID (or preferrably URI) of the organization as defined by the identification service."
+        },
+        "xdm:classifier": {
+          "title": "Market/Industry Classifier",
+          "type": "object",
+          "meta:enum": {
+            "https://ns.adobe.com/external/isic4": "International Standard of Industrial Classification of All Economic Activities (ISIC)",
+            "https://ns.adobe.com/external/sic": "Standard Industrial Classification",
+            "https://ns.adobe.com/external/naics": "North American Industry Classification System"
+          },
+          "patternProperties": {
+            ".+://.+": {
+              "type": "string",
+              "description": "ID of the market or industry according to the service."
+            }
+          },
+          "examples": [
+            {
+              "https://ns.adobe.com/external/sic": "1234",
+              "https://ns.adobe.com/external/naics": "1234"
+            }
+          ],
+          "description": "This object contains unambiguous classifiers for the organization. Each key is the URI of an classification service or standard, each value is the unique ID (or preferrably URI) of the organization as defined by the classification service."
         }
       }
     }

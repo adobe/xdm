@@ -89,10 +89,6 @@
           "type": "string",
           "description": "The geographical unit ID within the organization owning the profile. This ID can be used to reference the geographical information maintained in another dataset."
         },
-        "xdm:audit": {
-          "title": "Audit",
-          "$ref": "https://ns.adobe.com/xdm/common/audittrail"
-        },
         "xdm:organizations": {
           "title": "Organizations",
           "type": "array",

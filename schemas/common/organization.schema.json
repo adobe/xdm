@@ -9,13 +9,14 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Organization",
   "type": "object",
-  "description": "information that uniquely identifies an organized entity such as company, non-profit, government agency or educational institution, plus additional information that further qualifies the organization.",
+  "description": "",
   "definitions": {
     "organization": {
       "properties": {
         "@id": {
           "title": "Organization ID",
           "type": "string",
+          "format": "uri",
           "description": "A unique identifier for the organization."
         },
         "xdm:legalName": {
@@ -23,12 +24,12 @@
           "type": "string",
           "description": "The official name of the organization."
         },
-        "xdm:description": {
+        "schema:description": {
           "title": "Organization Description",
           "type": "string",
           "description": "A description of the organization."
         },
-        "xdm:numberOfEmployees": {
+        "schema:numberOfEmployees": {
           "title": "Number of Employees",
           "type": "number",
           "description": "The number of employees the organization has."
@@ -36,12 +37,14 @@
         "xdm:industry": {
           "title": "Industry",
           "type": "string",
-          "description": "The the industry that this organization is a part of. "
+          "description":
+            "The the industry that this organization is a part of. This is a free-form field, and it is advisable to use a structured value for queries."
         },
         "xdm:duns": {
           "title": "Dun & Bradstreet number",
           "type": "string",
-          "description": "The Dun & Bradstreet DUNS number for identifying an organization or business person."
+          "description":
+            "The Dun & Bradstreet DUNS number for identifying an organization or business person."
         },
         "xdm:website": {
           "title": "Web Site",
@@ -57,7 +60,8 @@
         "xdm:marketSegment": {
           "title": "Market Segment",
           "type": "string",
-          "description": "The named market segment that the organization participates in."
+          "description":
+            "The named market segment that the organization participates in. This is a free-form field, and it is advisable to use a structured value for queries."
         },
         "xdm:location": {
           "title": "Location",
@@ -69,7 +73,8 @@
           "type": "number",
           "minimum": 0,
           "maximum": 1,
-          "description": "The calculated score or star rating for this organization. `1` indicates the maximum possible rating, `0` the minumum possible rating."
+          "description":
+            "The calculated score or star rating for this organization. `1` indicates the maximum possible rating, `0` the minumum possible rating."
         }
       }
     }

@@ -53,7 +53,6 @@
           "title": "Contained by Location",
           "type": "string",
           "format": "uri",
-          "$ref": "https://ns.adobe.com/xdm/common/reference",
           "description": "XDM URI of another `Place` that this place is contained in.\n\nThis property is based on `schema:containedInPlace`, but is using URI references instead of embedding the containing place."
         },
         "xdm:containsPlaces": {

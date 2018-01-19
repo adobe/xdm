@@ -9,6 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Address",
   "type": "object",
+  "meta:auditable": true,
   "meta:extends": [
     "http://schema.org/GeoCoordinates",
     "https://ns.adobe.com/xdm/common/geo"
@@ -80,10 +81,6 @@
           "type": "string",
           "format": "date",
           "description": "The date that the address was last verified as still belonging to the person."
-        },
-        "xdm:audit": {
-          "title": "Audit",
-          "$ref": "https://ns.adobe.com/xdm/common/audittrail"
         }
       }
     }
@@ -91,6 +88,9 @@
   "allOf": [
     {
       "$ref": "http://schema.org/GeoCoordinates"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/geo"
     },
     {
       "$ref": "https://ns.adobe.com/xdm/common/geo"

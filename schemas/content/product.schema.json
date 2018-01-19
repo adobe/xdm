@@ -99,7 +99,8 @@
         "xdm:countryOfOrigin": {
           "title": "Country of Origin",
           "type": "string",
-          "description": "Country of origin as defined by customs requirements."
+          "pattern": "^[A-Z]{2}$",
+          "description": "The two-character [ISO 3166-1 alpha-2](https://datahub.io/core/country-list) code for the country of origin of the product as defined by customs requirements."
         },
         "xdm:COGS": {
           "title": "Cost of Good Sold",

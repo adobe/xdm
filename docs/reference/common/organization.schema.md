@@ -1,0 +1,338 @@
+
+# Organization Schema
+
+```
+https://ns.adobe.com/xdm/common/organization
+```
+
+Information that uniquely identifies an organized entity such as company, non-profit, government agency or educational institution, plus additional information that further qualifies the organization.
+
+
+| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
+|----------|------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Forbidden | Permitted | [common/organization.schema.json](common/organization.schema.json) |
+
+## Schema Hierarchy
+
+* Organization `https://ns.adobe.com/xdm/common/organization`
+  * [Place](../context/place.schema.md) `https://ns.adobe.com/xdm/context/place`
+
+## Organization Example
+```json
+{
+  "@id": "https://data.adobe.io/entities/org/orgid111",
+  "xdm:legalName": "ABC Stores",
+  "xdm:numberOfEmployees": 200,
+  "xdm:industry": "Retail",
+  "xdm:website": "http://www.abcstores.com",
+  "rating": 1,
+  "xdm:marketSegment": "apparel for kids",
+  "xdm:location": {
+    "@id": "https://data.adobe.io/entities/places/locid123",
+    "schema:description": "ABC Store location",
+    "xdm:address": {
+      "@id": "https://ns.adobe.com/entities/address/123",
+      "xdm:primary": true,
+      "xdm:type": "work",
+      "xdm:street1": "100 Lincoln Ave",
+      "xdm:city": "San Jose",
+      "xdm:stateProvince": "California",
+      "xdm:stateProvinceISO": "CA",
+      "xdm:postalCode": "95125",
+      "xdm:country": "United States",
+      "xdm:countryCode": "US",
+      "schema:latitude": 37.3382,
+      "schema:longitude": 121.8863,
+      "xdm:status": "active",
+      "xdm:lastVerifiedDate": "2018-01-03"
+    },
+    "schema:telephone": "1-408-800-0000",
+    "xdm:identifier": {
+      "https://ns.adobe.com/external/dnb": "1234",
+      "https://ns.adobe.com/external/angellist": "https://angel.co/adobe"
+    },
+    "xdm:classifier": {
+      "https://ns.adobe.com/external/sic": "1234",
+      "https://ns.adobe.com/external/naics": "1234"
+    }
+  }
+}
+```
+
+# Organization Properties
+
+| Property | Type | Required | Defined by |
+|----------|------|----------|------------|
+| [@id](#@id) | `string` | Optional | Organization (this schema) |
+| [schema:description](#schemadescription) | `string` | Optional | Organization (this schema) |
+| [schema:numberOfEmployees](#schemanumberOfEmployees) | `number` | Optional | Organization (this schema) |
+| [xdm:classifier](#xdmclassifier) | `object` | Optional | Organization (this schema) |
+| [xdm:identifier](#xdmidentifier) | `object` | Optional | Organization (this schema) |
+| [xdm:industry](#xdmindustry) | `string` | Optional | Organization (this schema) |
+| [xdm:legalName](#xdmlegalName) | `string` | Optional | Organization (this schema) |
+| [xdm:location](#xdmlocation) | Place | Optional | Organization (this schema) |
+| [xdm:marketSegment](#xdmmarketSegment) | `string` | Optional | Organization (this schema) |
+| [xdm:rating](#xdmrating) | `number` | Optional | Organization (this schema) |
+| [xdm:website](#xdmwebsite) | `string` | Optional | Organization (this schema) |
+| `*` | any | Additional | this schema *allows* additional properties |
+
+## @id
+### Organization ID
+
+A unique identifier for the organization.
+
+`@id`
+* is optional
+* type: `string`
+* defined in this schema
+
+### @id Type
+
+
+`string`
+* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+
+
+
+
+
+
+## schema:description
+### Organization Description
+
+A description of the organization.
+
+`schema:description`
+* is optional
+* type: `string`
+* defined in this schema
+
+### schema:description Type
+
+
+`string`
+
+
+
+
+
+
+## schema:numberOfEmployees
+### Number of Employees
+
+The number of employees the organization has.
+
+`schema:numberOfEmployees`
+* is optional
+* type: `number`
+* defined in this schema
+
+### schema:numberOfEmployees Type
+
+
+`number`
+
+
+
+
+
+
+## xdm:classifier
+### Market/Industry Classifier
+
+This object contains unambiguous classifiers for the organization. Each key is the URI of an classification service or standard, each value is the unique ID (or preferrably URI) of the organization as defined by the classification service.
+
+`xdm:classifier`
+* is optional
+* type: `object`
+* defined in this schema
+
+### xdm:classifier Type
+
+
+`object` with following properties:
+
+
+| Property | Type | Required
+|----------|------|----------|
+
+
+
+### xdm:classifier Known Values
+| Value | Description |
+|-------|-------------|
+| `https://ns.adobe.com/external/isic4` | International Standard of Industrial Classification of All Economic Activities (ISIC) |
+| `https://ns.adobe.com/external/sic` | Standard Industrial Classification |
+| `https://ns.adobe.com/external/naics` | North American Industry Classification System |
+
+
+
+### xdm:classifier Example
+
+```json
+{
+  "https://ns.adobe.com/external/sic": "1234",
+  "https://ns.adobe.com/external/naics": "1234"
+}
+```
+
+
+## xdm:identifier
+### Organization Identifier
+
+This object contains unambiguous identifiers for the organization. Each key is the URI of an identification service, each value is the unique ID (or preferrably URI) of the organization as defined by the identification service.
+
+`xdm:identifier`
+* is optional
+* type: `object`
+* defined in this schema
+
+### xdm:identifier Type
+
+
+`object` with following properties:
+
+
+| Property | Type | Required
+|----------|------|----------|
+
+
+
+### xdm:identifier Known Values
+| Value | Description |
+|-------|-------------|
+| `https://ns.adobe.com/external/dnb` | Dun &amp; Bradstreet |
+| `https://ns.adobe.com/external/angellist` | Angellist |
+
+
+
+### xdm:identifier Example
+
+```json
+{
+  "https://ns.adobe.com/external/dnb": "1234",
+  "https://ns.adobe.com/external/angellist": "https://angel.co/adobe"
+}
+```
+
+
+## xdm:industry
+### Industry
+
+The the industry that this organization is a part of. This is a free-form field, and it is advisable to use a structured value for queries or to use the `xdm:classifier` property.
+
+`xdm:industry`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:industry Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:legalName
+### Organization Name
+
+The official name of the organization.
+
+`xdm:legalName`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:legalName Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:location
+### Location
+
+The location of the organization&#39;s main office.
+
+`xdm:location`
+* is optional
+* type: Place
+* defined in this schema
+
+### xdm:location Type
+
+
+* [Place](../context/place.schema.md) – `https://ns.adobe.com/xdm/context/place`
+
+
+
+
+
+## xdm:marketSegment
+### Market Segment
+
+The named market segment that the organization participates in. This is a free-form field, and it is advisable to use a structured value for queries or to use the `xdm:identifier` property.
+
+`xdm:marketSegment`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:marketSegment Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:rating
+### Rating
+
+The calculated score or star rating for this organization. `1` indicates the maximum possible rating, `0` the minumum possible rating.
+
+`xdm:rating`
+* is optional
+* type: `number`
+* defined in this schema
+
+### xdm:rating Type
+
+
+`number`
+* minimum value: `0`
+* maximum value: `1`
+
+
+
+
+
+## xdm:website
+### Web Site
+
+The URL of the organization&#39;s website.
+
+`xdm:website`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:website Type
+
+
+`string`
+* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+
+
+
+
+

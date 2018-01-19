@@ -16,6 +16,10 @@
           "format": "uri",
           "const": "https://ns.adobe.com/xdm/content/directory"
         },
+        "_page": {
+        	  "$ref": "https://ns.adobe.com/xdm/content/directory-page#/definitions/page",
+          "description": "Page info, included if this resource is part of paginated result."
+        },
         "children": {
           "type": "array",
           "description": "The children of this directory.",

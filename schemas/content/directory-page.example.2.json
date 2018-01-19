@@ -1,9 +1,9 @@
 {
-    "orderBy": "age",
-    "order": "asc",
-    "start": "123",
-    "next": "789",
-    "property": "male",
-    "type": "image/jpeg",
-    "count": "100"
+  "@type": "https://ns.adobe.com/xdm/content/directory-page",
+  "orderBy": "id",
+  "order": "asc",
+  "start": "123",
+  "next": "789",
+  "type": "image/jpeg",
+  "count": 100
 }

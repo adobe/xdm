@@ -13,15 +13,21 @@
   "definitions": {
     "page": {
       "properties": {
+        "@type": {
+          "type": "string",
+          "format": "uri",
+          "const": "https://ns.adobe.com/xdm/content/directory-page"
+        },
         "xdm:orderBy": {
           "title": "Order by property",
           "type": "string",
           "description": "The property by which this page is ordered.\n"
         },
         "xdm:order": {
-          "title": "Order direction",
+          "title": "Sort order",
           "type": "string",
-          "description": "\"asc\" or \"desc\".\n"
+          "pattern": "^(asc|desc)$",
+          "description": "Sort order, either \"asc\" or \"desc\".\n"
         },
         "xdm:start": {
           "title": "First value",

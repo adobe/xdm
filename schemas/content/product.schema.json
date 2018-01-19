@@ -110,7 +110,7 @@
         "xdm:listPrice": {
           "title": "List Price",
           "type": "number",
-          "description": "Default price of the product before sales and discounting. In the currencyCode currency."
+          "description": "Default price of the product before sales and discounting. In the `currencyCode` currency."
         },
         "xdm:currencyCode": {
           "title": "Currency Code",
@@ -120,7 +120,7 @@
             "EUR"
           ],
           "pattern": "^[A-Z]{3}$",
-          "description": "The ISO 4217 alphabetic currency code used for cost and pricing."
+          "description": "The ISO 4217 alphabetic currency code used for cost and pricing, including `listPrice` and `COGS`."
         },
         "xdm:originalSaleDate": {
           "title": "Original Sale Date",

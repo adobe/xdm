@@ -9,7 +9,7 @@
   "xdm:marketSegment": "apparel for kids",
   "xdm:location": {
     "@id": "https://data.adobe.io/entities/places/locid123",
-    "xdm:description": "ABC Store location",
+    "schema:description": "ABC Store location",
     "xdm:address": {
       "@id": "https://ns.adobe.com/entities/address/123",
       "xdm:primary": true,
@@ -20,12 +20,12 @@
       "xdm:stateProvinceISO": "CA",
       "xdm:postalCode": "95125",
       "xdm:country": "United States",
-      "xdm:countryISO": "US",
-      "xdm:latitude": 37.3382,
-      "xdm:longitude": 121.8863,
+      "xdm:countryCode": "US",
+      "schema:latitude": 37.3382,
+      "schema:longitude": 121.8863,
       "xdm:status": "active",
       "xdm:lastVerifiedDate": "2018-01-03"
     },
-    "xdm:phoneNumber": "1-408-800-0000"
+    "schmema:telephone": "1-408-800-0000"
   }
 }

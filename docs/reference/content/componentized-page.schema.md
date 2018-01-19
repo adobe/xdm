@@ -21,13 +21,13 @@ Componentized pages are modular (consist of smaller content components), hyperli
 ## Componentized Page Example
 ```json
 {
-  "xdm:name": "example",
-  "xdm:path": "/content/example",
+  "repo:name": "example",
+  "repo:path": "/content/example",
   "dc:title": "Example Page for XDM.",
   "xdm:shortTitle": "Example",
-  "xdm:repositoryCreatedDate": "2017-09-26T13:27:36+00:00",
+  "repo:createdDate": "2017-09-26T13:27:36+00:00",
   "xdm:repositoryCreatedBy": "https://identity.adobe.io/users/tripod@adobe.com",
-  "xdm:repositoryLastModifiedDate": "2017-09-26T13:31:19+00:00",
+  "repo:lastModifiedDate": "2017-09-26T13:31:19+00:00",
   "xdm:repositoryLastModifiedBy": "https://identity.adobe.io/users/trieloff@adobe.com",
   "xdm:language": "en-US",
   "xdm:template": "https://francois.corp.adobe.com:4502/apps/foundation/generic_page",
@@ -36,7 +36,7 @@ Componentized pages are modular (consist of smaller content components), hyperli
     "title": "Sunglasses",
     "image": {
       "@type": "http://ns.adobe.com/xdm/assets/asset",
-      "xdm:assetID": "urn:aaid:aem:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
+      "repo:assetID": "urn:aaid:aem:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
       "@id": "https://francois.corp.adobe.com:4502/content/dam/Fx_DUKE-small.jpg"
     }
   },
@@ -75,18 +75,15 @@ Componentized pages are modular (consist of smaller content components), hyperli
 |----------|------|----------|------------|
 | [@id](#@id) | `string` | Optional | [Content](content.schema.md#@id) |
 | [dc:title](#dctitle) | `string` | Optional | Componentized Page (this schema) |
+| [repo:name](#reponame) | `string` | **Required** | Componentized Page (this schema) |
+| [repo:path](#repopath) | `string` | **Required** | Componentized Page (this schema) |
 | [xdm:language](#xdmlanguage) | `string` | Optional | Componentized Page (this schema) |
-| [xdm:name](#xdmname) | `string` | **Required** | Componentized Page (this schema) |
 | [xdm:navOrder](#xdmnavOrder) | `integer` | Optional | Componentized Page (this schema) |
-| [xdm:path](#xdmpath) | `string` | **Required** | Componentized Page (this schema) |
 | [xdm:repositoryCreatedBy](#xdmrepositoryCreatedBy) | `string` | **Required** | [Content](content.schema.md#xdmrepositoryCreatedBy) |
-| [xdm:repositoryCreatedDate](#xdmrepositoryCreatedDate) | `string` | **Required** | [Content](content.schema.md#xdmrepositoryCreatedDate) |
 | [xdm:repositoryLastModifiedBy](#xdmrepositoryLastModifiedBy) | `string` | **Required** | [Content](content.schema.md#xdmrepositoryLastModifiedBy) |
-| [xdm:repositoryLastModifiedDate](#xdmrepositoryLastModifiedDate) | `string` | **Required** | [Content](content.schema.md#xdmrepositoryLastModifiedDate) |
 | [xdm:shortTitle](#xdmshortTitle) | `string` | Optional | Componentized Page (this schema) |
 | [xdm:template](#xdmtemplate) | `string` | Optional | Componentized Page (this schema) |
 | [xdm:unlisted](#xdmunlisted) | `boolean` | Optional | Componentized Page (this schema) |
-| [xdm:versionID](#xdmversionID) | `string` | Optional | [Content](content.schema.md#xdmversionID) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -128,6 +125,44 @@ Full title of the page.
 
 
 
+## repo:name
+
+Name of the page in the repository. This could be a file name or any name provided by the repository to the page.
+
+`repo:name`
+* is **required**
+* type: `string`
+* defined in this schema
+
+### repo:name Type
+
+
+`string`
+
+
+
+
+
+
+## repo:path
+
+Shows the hierarchy of the page. The path semantics should be same as that defined in [RFC 3986](https://tools.ietf.org/html/rfc3986#section-3.3). In case a repository is not path based then it can return the information which will help in browsing. It could be just an document id, or something like `{catalog}/{id}` in case of a document database.
+
+`repo:path`
+* is **required**
+* type: `string`
+* defined in this schema
+
+### repo:path Type
+
+
+`string`
+
+
+
+
+
+
 ## xdm:language
 
 Specifies the language of this page. the language property should conform to BPC 47, for example `en-GB`
@@ -154,25 +189,6 @@ All instances must conform to this regular expression
 
 
 
-## xdm:name
-
-Name of the page in the repository. This could be a file name or any name provided by the repository to the page.
-
-`xdm:name`
-* is **required**
-* type: `string`
-* defined in this schema
-
-### xdm:name Type
-
-
-`string`
-
-
-
-
-
-
 ## xdm:navOrder
 
 When this page is shown in a collection of pages, use `nav_order` to sort. The smallest `nav_order` should be the first item in the sorted collection.
@@ -187,25 +203,6 @@ When this page is shown in a collection of pages, use `nav_order` to sort. The s
 
 `integer`
 * minimum value: `0`
-
-
-
-
-
-
-## xdm:path
-
-Shows the hierarchy of the page. The path semantics should be same as that defined in [RFC 3986](https://tools.ietf.org/html/rfc3986#section-3.3). In case a repository is not path based then it can return the information which will help in browsing. It could be just an document id, or something like `{catalog}/{id}` in case of a document database.
-
-`xdm:path`
-* is **required**
-* type: `string`
-* defined in this schema
-
-### xdm:path Type
-
-
-`string`
 
 
 
@@ -231,26 +228,6 @@ ID of the user who initiated the action that caused the resource to be created i
 
 
 
-## xdm:repositoryCreatedDate
-
-The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is &#34;2004-10-23T12:00:00-06:00&#34;.
-
-`xdm:repositoryCreatedDate`
-* is **required**
-* type: `string`
-* defined in [Content](content.schema.md#xdm:repositoryCreatedDate)
-
-### xdm:repositoryCreatedDate Type
-
-
-`string`
-* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
-
-
-
-
-
-
 ## xdm:repositoryLastModifiedBy
 
 ID of the user who initiated the action that most recently caused the resource to be modified in the repository.
@@ -264,26 +241,6 @@ ID of the user who initiated the action that most recently caused the resource t
 
 
 `string`
-
-
-
-
-
-
-## xdm:repositoryLastModifiedDate
-
-The server date and time when the resource was most recently modified in the repository, such as when a new version of an asset is uploaded or a directory&#39;s child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is &#34;2004-10-23T12:00:00-06:00&#34;.
-
-`xdm:repositoryLastModifiedDate`
-* is **required**
-* type: `string`
-* defined in [Content](content.schema.md#xdm:repositoryLastModifiedDate)
-
-### xdm:repositoryLastModifiedDate Type
-
-
-`string`
-* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
 
 
 
@@ -342,25 +299,6 @@ Indicates if this page should be hidden by default in navigational collections.
 
 
 `boolean`
-
-
-
-
-
-## xdm:versionID
-
-The version ID of the piece of content. It will be generated both on explicit and implicit save or upload.
-
-`xdm:versionID`
-* is optional
-* type: `string`
-* defined in [Content](content.schema.md#xdm:versionID)
-
-### xdm:versionID Type
-
-
-`string`
-
 
 
 

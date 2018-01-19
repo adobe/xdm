@@ -1,0 +1,117 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/external/hal/resource",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "HAL Resource",
+  "description": "",
+  "type": "object",
+  "definitions": {
+    "hal": {
+      "properties": {
+        "_links": {
+          "type": "object",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^[a-z]+[a-z0-9\\.-]*$": {
+              "anyOf": [
+                {
+                  "$ref": "https://ns.adobe.com/xdm/external/hal/link"
+                },
+                {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "$ref": "https://ns.adobe.com/xdm/external/hal/link"
+                  }
+                }
+              ]
+            },
+            "^.*://.*$": {
+              "anyOf": [
+                {
+                  "$ref": "https://ns.adobe.com/xdm/external/hal/link"
+                },
+                {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "$ref": "https://ns.adobe.com/xdm/external/hal/link"
+                  }
+                }
+              ]
+            }
+          },
+          "description": "It is an object whose property names are link relation types (as defined by [RFC5988](https://tools.ietf.org/html/rfc5988) and values are either a Link Object or an array of Link Objects.  The subject resource of these links is the Resource Object of which the containing `_links` object is a property."
+        },
+        "_embedded": {
+          "type": "object",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^[a-z]+[a-z0-9\\.-]*$": {
+              "anyOf": [
+                {
+                  "$ref": "https://ns.adobe.com/xdm/external/hal/link"
+                },
+                {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "$ref": "https://ns.adobe.com/xdm/external/hal/link"
+                  }
+                },
+                {
+                  "type": "object",
+                  "description": "`_embedded` can contain any object or resource."
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "description": "`_embedded` can contain any object or resource."
+                  }
+                }
+              ]
+            },
+            "^.*://.*$": {
+              "anyOf": [
+                {
+                  "$ref": "https://ns.adobe.com/xdm/external/hal/link"
+                },
+                {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "$ref": "https://ns.adobe.com/xdm/external/hal/link"
+                  }
+                },
+                {
+                  "type": "object",
+                  "description": "`_embedded` can contain any object or resource."
+                },
+                {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "object",
+                    "description": "`_embedded` can contain any object or resource."
+                  }
+                }
+              ]
+            }
+          },
+          "description": "It is an object whose property names are link relation types (as defined by [RFC5988](https://tools.ietf.org/html/rfc5988)) and values are either a Resource Object or an array of Resource Objects.\\n\\nEmbedded Resources MAY be a full, partial, or inconsistent version of the representation served from the target URI."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/hal"
+    }
+  ]
+}

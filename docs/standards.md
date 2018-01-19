@@ -11,6 +11,7 @@ Standard | Used for | Status
 [XMP](http://www.adobe.com/products/xmp.html) | Asset | Stable
 [schema.org](http://schema.org) | Busines schemas | Evolving
 [JSON Schema](http://json-schema.org) | Representing data model | Evolving
+[JSON Hypertext Application Language](https://tools.ietf.org/html/draft-kelly-json-hal-08) | Expressing links between models | Evolving
 [EXIF](http://www.exif.org) | Image metadata | Stable
 [TIFF](https://www.iso.org/standard/34342.html) | Image metadata | Frozen
 [W3C Activity Streams](https://www.w3.org/TR/activitystreams-core/) | Event model | Stable |

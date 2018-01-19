@@ -26,18 +26,36 @@ Replace `#/definitions/…` with the correct path to the `definitions` object in
 
 ```json
 {
-  "xdm:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
+  "repo:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
   "xdm:createDate": "2017-09-26T15:52:25+00:00",
-  "xdm:repositoryCreatedDate": "2017-09-26T15:52:25+00:00",
+  "repo:createdDate": "2017-09-26T15:52:25+00:00",
   "xdm:repositoryCreatedBy": "lars",
   "xdm:modifyDate": "2017-09-26T15:52:25+00:00",
-  "xdm:repositoryLastModifiedDate": "2017-09-26T15:52:25+00:00",
+  "repo:lastModifiedDate": "2017-09-26T15:52:25+00:00",
   "xdm:repositoryLastModifiedBy": "2017-09-26T15:52:25+00:00",
-  "xdm:versionID": "15",
+  "repo:version": "15",
   "dc:title": "This is an example",
-  "xdm:size": 1632418,
+  "repo:size": 1632418,
   "xdm:path": "/here",
-  "xdm:etag": "15"
+  "repo:etag": "15"
+}
+```
+
+```json
+{
+  "https://ns.example.com/asset_name": "custom_asset_1",
+  "repo:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
+  "xdm:createDate": "2017-09-26T15:52:25+00:00",
+  "repo:createdDate": "2017-09-26T15:52:25+00:00",
+  "xdm:repositoryCreatedBy": "lars",
+  "xdm:modifyDate": "2017-09-26T15:52:25+00:00",
+  "repo:lastModifiedDate": "2017-09-26T15:52:25+00:00",
+  "xdm:repository_lastModifiedBy": "2017-09-26T15:52:25+00:00",
+  "repo:version": "15",
+  "dc:title": "This is an example",
+  "repo:size": 1632418,
+  "xdm:path": "/here",
+  "repo:etag": "15"
 }
 ```
 
@@ -74,35 +92,17 @@ Replace `#/definitions/…` with the correct path to the `definitions` object in
   },
   "https://ns.example.com/path": "/custom/path/1",
   "https://ns.example.com/asset_name": "custom_asset_1",
-  "xdm:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
+  "repo:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
   "xdm:createDate": "2017-09-26T15:52:25+00:00",
-  "xdm:repositoryCreatedDate": "2017-09-26T15:52:25+00:00",
+  "repo:createdDate": "2017-09-26T15:52:25+00:00",
   "xdm:repositoryCreatedBy": "lars",
   "xdm:modifyDate": "2017-09-26T15:52:25+00:00",
-  "xdm:repositoryLastModifiedDate": "2017-09-26T15:52:25+00:00",
+  "repo:lastModifiedDate": "2017-09-26T15:52:25+00:00",
   "xdm:repositoryLastModifiedBy": "2017-09-26T15:52:25+00:00",
-  "xdm:versionID": "15",
-  "xdm:size": 1632418,
+  "repo:version": "15",
+  "repo:size": 1632418,
   "xdm:path": "here",
-  "xdm:etag": "15"
-}
-```
-
-```json
-{
-  "https://ns.example.com/asset_name": "custom_asset_1",
-  "xdm:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
-  "xdm:createDate": "2017-09-26T15:52:25+00:00",
-  "xdm:repositoryCreatedDate": "2017-09-26T15:52:25+00:00",
-  "xdm:repositoryCreatedBy": "lars",
-  "xdm:modifyDate": "2017-09-26T15:52:25+00:00",
-  "xdm:repositoryLastModifiedDate": "2017-09-26T15:52:25+00:00",
-  "xdm:repository_lastModifiedBy": "2017-09-26T15:52:25+00:00",
-  "xdm:versionID": "15",
-  "dc:title": "This is an example",
-  "xdm:size": 1632418,
-  "xdm:path": "/here",
-  "xdm:etag": "15"
+  "repo:etag": "15"
 }
 ```
 

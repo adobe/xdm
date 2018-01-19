@@ -1,8 +1,8 @@
 {
   "@id": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
-  "xdm:repositoryCreatedDate": "2017-11-23T13:11:05+00:00",
+  "repo:createdDate": "2017-11-23T13:11:05+00:00",
   "xdm:repositoryCreatedBy": "lars",
-  "xdm:repositoryLastModifiedDate": "2017-11-23T13:11:05+00:00",
+  "repo:lastModifiedDate": "2017-11-23T13:11:05+00:00",
   "xdm:repositoryLastModifiedBy": "lars",
-  "xdm:versionID": "1"
+  "repo:version": "1"
 }

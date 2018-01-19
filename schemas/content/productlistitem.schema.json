@@ -18,10 +18,17 @@
           "type": "string",
           "description": "Stock Keeping Unit, the unique identifier for a product defined by the vendor."
         },
-        "xdm:lineItemId": {
+        "@id": {
           "title": "Line Item ID.",
           "type": "string",
-          "description": "The line item identifier for this product entry."
+          "format": "uri",
+          "description": "The line item identifier for this product entry. The product itself is identified through `xdm:product`."
+        },
+        "xdm:product": {
+          "title": "Product",
+          "type": "string",
+          "format": "uri",
+          "description": "The XDM identifier of the product itself."
         },
         "xdm:name": {
           "title": "Name",
@@ -36,7 +43,12 @@
         "xdm:currencyCode": {
           "title": "Currency Code",
           "type": "string",
-          "description": "The ISO 4217 currency code used for pricing the product."
+          "examples": [
+            "USD",
+            "EUR"
+          ],
+          "pattern": "^[A-Z]{3}$",
+          "description": "The ISO 4217 alphabetic currency code used for pricing the product."
         },
         "xdm:quantity": {
           "title": "Quantity",

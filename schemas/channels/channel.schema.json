@@ -14,7 +14,7 @@
     "channel": {
       "properties": {
         "@id": {
-          "type":"string",
+          "type": "string",
           "format": "uri",
           "description": "The ID uniquely identifies the channel. Each specific experience channel defines a constant `@id`."
         },
@@ -55,7 +55,7 @@
           "description": "The content types that this channel can deliver."
         },
         "xdm:metricTypes": {
-          "type":"array",
+          "type": "array",
           "items": {
             "type": "string",
             "format": "uri",
@@ -76,8 +76,12 @@
     }
   },
   "allOf": [
-    {"$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"},
-    {"$ref": "#/definitions/channel"}
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/channel"
+    }
   ],
   "required": [
     "@id"

@@ -14,6 +14,7 @@
     "https://ns.adobe.com/xdm/channels/channel#/definitions/channel"
   ],
   "meta:abstract": false,
+  "type": "object",
   "definitions": {
     "channel": {
       "properties": {

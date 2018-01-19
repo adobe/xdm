@@ -10,6 +10,7 @@
   "title": "Experience Channel",
   "meta:extensible": true,
   "meta:abstract": true,
+  "type": "object",
   "definitions": {
     "channel": {
       "properties": {

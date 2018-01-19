@@ -77,7 +77,13 @@
         "xdm:gender": {
           "title": "Gender",
           "type": "string",
-          "description": "Gender the product is marketed to. [male,female,unisex,unknown]."
+          "description": "Gender the product is marketed to.",
+          "meta:enum": {
+            "male": "For men",
+            "female": "For women",
+            "unisex": "For both men and women",
+            "unknown": "Unknown"
+          }
         },
         "xdm:size": {
           "title": "Size",

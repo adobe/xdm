@@ -1,0 +1,1 @@
+Information that uniquely identifies an organized entity such as company, non-profit, government agency or educational institution, plus additional information that further qualifies the organization.

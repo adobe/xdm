@@ -103,7 +103,7 @@
         "xdm:COGS": {
           "title": "Cost of Good Sold",
           "type": "number",
-          "description": "Cost of Good Sold. In the currencyCode currency."
+          "description": "Cost of Good Sold. In the `currencyCode` currency."
         },
         "xdm:listPrice": {
           "title": "List Price",
@@ -113,7 +113,12 @@
         "xdm:currencyCode": {
           "title": "Currency Code",
           "type": "string",
-          "description": "The ISO 4217 currency code used for cost and pricing."
+          "examples": [
+            "USD",
+            "EUR"
+          ],
+          "pattern": "^[A-Z]{3}$",
+          "description": "The ISO 4217 alphabetic currency code used for cost and pricing."
         },
         "xdm:originalSaleDate": {
           "title": "Original Sale Date",

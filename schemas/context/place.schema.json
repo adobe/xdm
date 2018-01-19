@@ -19,7 +19,7 @@
           "format": "uri",
           "description": "The unique identifier of the place."
         },
-        "xdm:description": {
+        "schema:description": {
           "title": "Description",
           "type": "string",
           "description": "The description of the physical location."
@@ -29,15 +29,16 @@
           "$ref": "https://ns.adobe.com/xdm/common/address",
           "description": "The physical address of the location."
         },
-        "xdm:phoneNumber": {
+        "schema:telephone": {
           "title": "Phone Number",
           "type": "string",
           "description": "The phone number."
         },
-        "xdm:locationCode": {
+        "schema:branchCode": {
           "title": "Location Code",
           "type": "string",
-          "description": "A short code that uniquely identifies this location."
+          "description":
+            "A short textual code (also called \"store code\") that uniquely identifies a place of business. The code is typically assigned by the parent Organization and used in structured URLs.\n\nFor example, in the URL `http://www.starbucks.co.uk/store-locator/etc/detail/3047` the code \"3047\" is a `branchCode` for a particular branch."
         },
         "xdm:shape": {
           "title": "Geo Shape",
@@ -50,20 +51,25 @@
           "description":
             "The coordinates of the point of interest for this location."
         },
-        "xdm:containedByLocation": {
+        "xdm:containedInPlace": {
           "title": "Contained by Location",
+          "type": "string",
+          "format": "uri",
           "$ref": "https://ns.adobe.com/xdm/common/reference",
           "description":
-            "A relation between this location and another one that contains it."
+            "XDM URI of another `Place` that this place is contained in.\n\nThis property is based on `schema:containedInPlace`, but is using URI references instead of embedding the containing place."
         },
-        "xdm:containsLocations": {
+        "xdm:containsPlaces": {
           "title": "Contains Locations",
           "type": "array",
           "items": {
-            "$ref": "https://ns.adobe.com/xdm/common/reference"
+            "type": "string",
+            "format": "uri",
+            "description":
+              "The XDM URI of another `Place` that this place contains."
           },
           "description":
-            "An array of one or more physical locations that are contained in this one."
+            "An array of XDM URIs of other `Place` instances that this place is containing.\n\nThis property is based on `schema:containsPlace`, but is using URI references instead of embedding the containing place. In addition, it is an array, allowing one place to include multiple other places."
         }
       },
       "required": ["@id"]

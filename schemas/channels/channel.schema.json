@@ -51,7 +51,17 @@
             "type": "string",
             "format": "uri",
             "description": "The `@type` of an XDM-defined content type that is supported by this channel."
-          }
+          },
+          "description": "The content types that this channel can deliver."
+        },
+        "xdm:metricTypes": {
+          "type":"array",
+          "items": {
+            "type": "string",
+            "format": "uri",
+            "description": "The `@type` of an XDM-defined metric that is supported by this channel."
+          },
+          "description": "The metrics that can be collected in this channel."
         }
       }
     }

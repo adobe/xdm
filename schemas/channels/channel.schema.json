@@ -62,6 +62,15 @@
             "description": "The `@type` of an XDM-defined metric that is supported by this channel."
           },
           "description": "The metrics that can be collected in this channel."
+        },
+        "xdm:locationTypes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "uri",
+            "description": "The `@type` of an XDM-defined location (virtual place) that this channel can contain."
+          },
+          "description": "The types of locations (virtual places) that this channel consists of and can deliver content to."
         }
       }
     }

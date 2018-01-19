@@ -88,7 +88,9 @@ Replace `#/definitions/…` with the correct path to the `definitions` object in
     "stLayerGroup": "http://ns.adobe.com/core/1.0/sType/LayerGroup#",
     "stArtboard": "http://ns.adobe.com/core/1.0/sType/Artboard#",
     "exif": "http://ns.adobe.com/exif/1.0/#",
-    "activitystreams": "https://www.w3.org/ns/activitystreams"
+    "activitystreams": "https://www.w3.org/ns/activitystreams",
+    "schema": "http://schema.org",
+    "repo": "http://ns.adobe.com/adobecloud/core/1.0/"
   },
   "https://ns.example.com/path": "/custom/path/1",
   "https://ns.example.com/asset_name": "custom_asset_1",

@@ -5,7 +5,7 @@ The Experience Data Model (XDM) project is developed as an Open Standard driven 
 ## Public GitHub Ground Rules
 
 We are in the process of increasing the visibility of XDM to partners and to invite them to contribute and give feedback.
-For this purpose, we will move the XDM repository to [https://github.com/adobe/xdm](https://github.com/adobe/xdm). 
+For this purpose, we will move the XDM repository to [https://github.com/adobe/xdm](https://github.com/adobe/xdm).
 For Adobe employees, following ground rules apply:
 
 * Like everyone, follow the [Code of Conduct](CODE_OF_CONDUCT.md)
@@ -15,7 +15,7 @@ For Adobe employees, following ground rules apply:
 
 ## Things to Keep in Mind
 
-XDM uses a **review then commit** process, which means that no changes are being made without an *editor* approving the change.
+XDM uses a **review then commit** process, which means that no changes are being made without an _editor_ approving the change.
 
 ## Before you Contribute
 
@@ -54,11 +54,11 @@ Each commit message that is not part of a pull request:
 
 The target consumers of the data model are developers building applications using services from Adobe, our partners, and their customers. These design guidelines help:
 
-*  **Longevity**: consuming applications rarely need to be changed.
-*  **Clarity**: concepts are self-explanatory.
-*  **Continuity**: existing knowledge can be re-applied.
-*  **Compatibility**: implementations can easily cross between products.
-*  **Consumability**: systems based on the data model are easy to build, understand, and use.
+* **Longevity**: consuming applications rarely need to be changed.
+* **Clarity**: concepts are self-explanatory.
+* **Continuity**: existing knowledge can be re-applied.
+* **Compatibility**: implementations can easily cross between products.
+* **Consumability**: systems based on the data model are easy to build, understand, and use.
 
 ### Design for Longevity
 
@@ -72,7 +72,7 @@ XDM will be consumed and implemented by many highly different applications, whic
 
 When names can refer to a business concept or a lower-level technical concept, save the shorter, simpler name for the high-level business concept.
 
-For example, for a marketer, an *event* is something that happens or takes place, or a planned public or social occasion. For a developer, an *event* in event-driven programming is a low level user- or system action. As the term event is highly relevant to experiences in the more general sense, the shorter, unqualified term shall be used for the business concept.
+For example, for a marketer, an _event_ is something that happens or takes place, or a planned public or social occasion. For a developer, an _event_ in event-driven programming is a low level user- or system action. As the term event is highly relevant to experiences in the more general sense, the shorter, unqualified term shall be used for the business concept.
 
 ### Design for Continuity
 
@@ -89,7 +89,7 @@ Another good source of data model elements is [schema.org](http://schema.org).
 
 While there will be almost certainly multiple implementations of parts of XDM across Adobe (sometimes sequentially, sometimes in parallel), the number of internal implementations (producers) will be massively outstripped by the number of external, consuming implementations of XDM.
 
-Additional aspects of standard design that aid with consumability are: 
+Additional aspects of standard design that aid with consumability are:
 
 * principle of least astonishment: don't surprise the consumer
 * avoid unnecessary complexity: don't introduce indirections that are not needed
@@ -98,7 +98,7 @@ Additional aspects of standard design that aid with consumability are:
 ### Design for the Cloud
 
 The experience business is a global business, therefore XDM needs to meet the needs of consumers and creators world-wide.
-Desktop and Enterprise applications are often built to be localized, adapted to the customer environment. 
+Desktop and Enterprise applications are often built to be localized, adapted to the customer environment.
 But XDM will form the "glue" that puts together widely distributed components which may have different internal data models.
 In general we want to avoid the necessity of converters, with some exceptions:
 
@@ -107,12 +107,11 @@ However, for values that need no context to convert, put off conversion by allow
 
 Avoid non-semantic limits – don’t put current resource limits in the data model. Limits (number ranges, choices, string length) should be based on business constraints or expressed independently.
 
-
 ## Coding Styleguides
 
 * file names for schema files should be lower case and end with `.schema.json`
 * include an `"$id"` with a value like `"https://ns.adobe.com/xdm/assets/image"` in the schema (but leave out the `.schema.json`)
-* when referencing schemas, use the absolute `$id`, don't use relative references like `../content/content.schema.json` 
+* when referencing schemas, use the absolute `$id`, don't use relative references like `../content/content.schema.json`
 * don't nest schemas too deeply. Break inline type definitions into separate `*.schema.json` files if they have properties with object types themselves.
 * don't make schemas too fine-grained, only create schemas for `object`s not for simple types like patterned strings
 * ensure that there is a `meta:license` at the top of the schema
@@ -151,7 +150,7 @@ JSON Schema [does not have a built-in inheritance mechanism](https://github.com/
 
 ### Extensibility
 
-We use built-in JSON Schema capabilities to provide extensibility. 
+We use built-in JSON Schema capabilities to provide extensibility.
 These capabilities are augmented by some JSON LD-inspired extensions, without requiring consumers to become full-blown JSON LD processors.
 There are two modes of making XDM extensible: through custom properties and through new schemas.
 Custom properties and deriving new schemas from existing schemas are discussed in the next two sections
@@ -191,8 +190,8 @@ JSON Schema does not have a built-in concept of schema inheritance, so XDM is us
 
 ##### Declaring a Schema to be Extensible
 
-Unless explicitly declared otherwise, XDM schemas cannot be extended. 
-The author of a given schema has to declare the ability to extend a schema using the `meta:extensible` property at the root of the schema. 
+Unless explicitly declared otherwise, XDM schemas cannot be extended.
+The author of a given schema has to declare the ability to extend a schema using the `meta:extensible` property at the root of the schema.
 `meta:extensible` is a `boolean` property, and only the value `true` is of any consequence, as the assumed default is `false`.
 If a schema is not extensible, the `meta:extensible` property can be omitted.
 
@@ -204,7 +203,7 @@ The co-occurrence of `"meta:extensible": true` and `definitions` is enforced thr
 
 A schema must express that it is extending one or multiple other schemas through the `meta:extends` property.
 This property can be either a `string`, containing the `uri` of the schema that is being extended.
-This `uri` is the value of the `$id` property of the extended schema, and is for XDM typically a fully qualified URI that does *not* end with `.schema.json`.
+This `uri` is the value of the `$id` property of the extended schema, and is for XDM typically a fully qualified URI that does _not_ end with `.schema.json`.
 Alternatively, `meta:extends` can be an `array` of schmema `uri`s.
 JSON Schema does not resolve multiple levels of inheritance, so when extending a schema that is extending another schema, list both schemas in the `meta:extends` array. A list of extensions will looks something like this:
 
@@ -225,8 +224,8 @@ In addition to **declaring** the intent to extend, the schema author has to make
   ]
 ```
 
-Note that the first and second schema are referred to not just by their base path, but also by the fragment identifier `#/definitions/first` and `#/definitions/second`, respectively. 
-The schema's own definitions are kept and imported from the `definitions.myowndefinitions` object. 
+Note that the first and second schema are referred to not just by their base path, but also by the fragment identifier `#/definitions/first` and `#/definitions/second`, respectively.
+The schema's own definitions are kept and imported from the `definitions.myowndefinitions` object.
 This keeps the schema compact and readable.
 
 ##### Example
@@ -243,10 +242,10 @@ The root schema is `first.schema.json`. It is extensible.
   "definitions": {
     "first": {
       "properties": {
-          "foo": {
-            "type": "string",
-          }
+        "foo": {
+          "type": "string"
         }
+      }
     }
   },
   "allOf": [
@@ -270,10 +269,10 @@ The second schema is `second.schema.json`, it is both extending and extensible.
   "definitions": {
     "second": {
       "properties": {
-          "bar": {
-            "type": "string",
-          }
+        "bar": {
+          "type": "string"
         }
+      }
     }
   },
   "allOf": [
@@ -282,8 +281,7 @@ The second schema is `second.schema.json`, it is both extending and extensible.
     },
     {
       "$ref": "#/definitions/second"
-    },
-    
+    }
   ]
 }
 ```
@@ -304,10 +302,10 @@ The third schema is `third.schema.json`, it extends both `second`, and transitiv
   "definitions": {
     "third": {
       "properties": {
-          "baz": {
-            "type": "string",
-          }
+        "baz": {
+          "type": "string"
         }
+      }
     }
   },
   "allOf": [
@@ -319,11 +317,18 @@ The third schema is `third.schema.json`, it extends both `second`, and transitiv
     },
     {
       "$ref": "#/definitions/third"
-    },
-    
+    }
   ]
 }
 ```
+
+### Other Schema Extensions
+
+XDM is using a couple of custom keywords that are not part of the JSON Schema standard. These include:
+
+* `meta:extensible`: see above, to describe schemas that allow custom properties
+* `meta:auditable`: for schemas that have created and last modified dates
+* `meta:enum`: for known values in enums, strings, and as property keys
 
 ## Writing Styleguides
 
@@ -344,9 +349,8 @@ Feedback on the pull request will be given in writing, in GitHub.
 
 ### Major Contributions
 
-One of the editors will look at the pull request within one week and flag it as `major`. The editor will then provide feedback on the pull request in GitHub. 
+One of the editors will look at the pull request within one week and flag it as `major`. The editor will then provide feedback on the pull request in GitHub.
 
 Every week, during the XDM working group meeting, all open pull requests will be reviewed and discussed. All feedback given in the meeting will be logged in GitHub. This real-time discussion will make sure all open pull requests will get attention.
 
 When the editors agree on the pull request, the pull request will either be merged or rejected. Until this is the case, the pull request will remain open. Editors are operating under the assumption of agreement, so that a single editor can authorize a merge.
-

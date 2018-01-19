@@ -11,6 +11,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "type": "object",
+  "description": "",
   "definitions": {
     "channel": {
       "properties": {

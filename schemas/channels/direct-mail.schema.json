@@ -21,7 +21,7 @@
         "@id": {
           "type": "string",
           "format": "uri",
-          "const": "",
+          "const": "https://ns.adobe.com/xdm/channels/direct-mail",
           "description": "The ID uniquely identifies the channel. Each specific experience channel defines a constant `@id`."
         },
         "xdm:mode": {

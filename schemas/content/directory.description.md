@@ -1,1 +1,0 @@
-A directory is a container of content items (for instance assets) and other directories.

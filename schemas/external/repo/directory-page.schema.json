@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/content/directory-page",
+  "$id": "http://ns.adobe.com/adobecloud/core/1.0/directory-page",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Directory Page Object",
   "type": "object",
@@ -13,43 +13,38 @@
   "definitions": {
     "page": {
       "properties": {
-        "@type": {
-          "type": "string",
-          "format": "uri",
-          "const": "https://ns.adobe.com/xdm/content/directory-page"
-        },
-        "xdm:orderBy": {
+        "orderBy": {
           "title": "Order by property",
           "type": "string",
           "description": "The property by which this page is ordered.\n"
         },
-        "xdm:order": {
+        "order": {
           "title": "Sort order",
           "type": "string",
           "pattern": "^(asc|desc)$",
           "description": "Sort order, either \"asc\" or \"desc\".\n"
         },
-        "xdm:start": {
+        "start": {
           "title": "First value",
           "type": "string",
           "description": "The first value, in sorted order, of the orderby property on this page.\n"
         },
-        "xdm:next": {
+        "next": {
           "title": "Next page start value",
           "type": "string",
           "description": "The start value for the next page.\n"
         },
-        "xdm:property": {
+        "property": {
           "title": "Filter properties",
           "type": "string",
           "description": "The list of properties by which the result is filtered, if any.\n"
         },
-        "xdm:type": {
+        "type": {
           "title": "Filter type value",
           "type": "string",
           "description": "The applied type filtering value, if any.\n"
         },
-        "xdm:count": {
+        "count": {
           "title": "Number of items",
           "type": "integer",
           "description": "The number of items on this page.\n"

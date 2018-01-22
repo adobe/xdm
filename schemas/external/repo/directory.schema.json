@@ -23,7 +23,11 @@
           "title": "Format",
           "const": "application/vnd.adobecloud.directory+json"
         },
-        "children": {
+		"_page": {
+ 			"$ref": "http://ns.adobe.com/adobecloud/core/1.0/directory-page",
+ 			"description": "Page info, included if this resource is part of paginated result."
+		},
+		"children": {
           "type": "array",
           "items": {
             "oneOf": [

@@ -103,7 +103,7 @@
             "out": "Out"
           }
         },
-        "xdm:optingPushNotification": {
+        "xdm:optinPushNotification": {
           "title": "Opt-in Push Notification",
           "type": "string",
           "description": "Preference for push notification.",

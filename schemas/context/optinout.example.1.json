@@ -1,9 +1,9 @@
 {
-  "xdm:optinEmail": "In",
-  "xdm:optinPhone": "Out",
-  "xdm:optinTextMessaging": "Not Provided",
-  "xdm:optinFax": "Not Provided",
-  "xdm:optinAddress": "Not Provided",
-  "xdm:optinPushNotification": "Not Provided",
+  "xdm:optinEmail": "pending",
+  "xdm:optinPhone": "out",
+  "xdm:optinTextMessaging": "in",
+  "xdm:optinFax": "not_provided",
+  "xdm:optinAddress": "not_provided",
+  "xdm:optinPushNotification": "not_provided",
   "xdm:globalOptout": false
 }

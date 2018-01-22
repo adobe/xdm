@@ -50,12 +50,12 @@
     "xdm:status": "active"
   },
   "xdm:optInOut": {
-    "xdm:optingEmail": "In",
-    "xdm:optingPhone": "Out",
-    "xdm:optingTextMessaging": "Not Provided",
-    "xdm:optingFax": "Not Provided",
-    "xdm:optingAddress": "Not Provided",
-    "xdm:optingPushNotification": "Not Provided",
+    "xdm:optinEmail": "pending",
+    "xdm:optinPhone": "out",
+    "xdm:optinTextMessaging": "in",
+    "xdm:optinFax": "not_provided",
+    "xdm:optinAddress": "not_provided",
+    "xdm:optinPushNotification": "not_provided",
     "xdm:globalOptout": false
   }
 }

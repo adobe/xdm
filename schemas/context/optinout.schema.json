@@ -18,9 +18,15 @@
           "type": "string",
           "description": "Preference for email communication.",
           "default": "notProvided",
+          "enum": [
+            "not_provided",
+            "pending",
+            "in",
+            "out"
+          ],
           "meta:enum": {
-            "notProvided": "Not Provided",
-            "pendingConfirmation": "Pending Verification",
+            "not_provided": "Not Provided",
+            "pending": "Pending Verification",
             "in": "In",
             "out": "Out"
           }
@@ -30,9 +36,15 @@
           "type": "string",
           "description": "Preference for phone voice communication.",
           "default": "notProvided",
+          "enum": [
+            "not_provided",
+            "pending",
+            "in",
+            "out"
+          ],
           "meta:enum": {
-            "notProvided": "Not Provided",
-            "pendingConfirmation": "Pending Verification",
+            "not_provided": "Not Provided",
+            "pending": "Pending Verification",
             "in": "In",
             "out": "Out"
           }
@@ -42,9 +54,15 @@
           "type": "string",
           "description": "Preference for instant text communication.",
           "default": "notProvided",
+          "enum": [
+            "not_provided",
+            "pending",
+            "in",
+            "out"
+          ],
           "meta:enum": {
-            "notProvided": "Not Provided",
-            "pendingConfirmation": "Pending Verification",
+            "not_provided": "Not Provided",
+            "pending": "Pending Verification",
             "in": "In",
             "out": "Out"
           }
@@ -54,9 +72,15 @@
           "type": "string",
           "description": "Preference for fax communication.",
           "default": "notProvided",
+          "enum": [
+            "not_provided",
+            "pending",
+            "in",
+            "out"
+          ],
           "meta:enum": {
-            "notProvided": "Not Provided",
-            "pendingConfirmation": "Pending Verification",
+            "not_provided": "Not Provided",
+            "pending": "Pending Verification",
             "in": "In",
             "out": "Out"
           }
@@ -66,9 +90,15 @@
           "type": "string",
           "description": "Preference for mail address communication.",
           "default": "notProvided",
+          "enum": [
+            "not_provided",
+            "pending",
+            "in",
+            "out"
+          ],
           "meta:enum": {
-            "notProvided": "Not Provided",
-            "pendingConfirmation": "Pending Verification",
+            "not_provided": "Not Provided",
+            "pending": "Pending Verification",
             "in": "In",
             "out": "Out"
           }
@@ -78,9 +108,15 @@
           "type": "string",
           "description": "Preference for push notification.",
           "default": "notProvided",
+          "enum": [
+            "not_provided",
+            "pending",
+            "in",
+            "out"
+          ],
           "meta:enum": {
-            "notProvided": "Not Provided",
-            "pendingConfirmation": "Pending Verification",
+            "not_provided": "Not Provided",
+            "pending": "Pending Verification",
             "in": "In",
             "out": "Out"
           }
@@ -88,10 +124,15 @@
         "xdm:globalOptout": {
           "title": "Global Opt-out",
           "type": "boolean",
-          "description": "Do not contact this profile on any communication channel.",
+          "description": "Do not contact this profile on any outbound channel.",
           "default": false
         }
       }
     }
-  }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/optinout"
+    }
+  ]
 }

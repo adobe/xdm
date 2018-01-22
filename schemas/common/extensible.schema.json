@@ -45,7 +45,8 @@
             "^activitystreams:.*$": {},
             "^schema:.*$": {},
             "^repo:.*$": {},
-            ".+://.+": {}
+            ".+://.+": {},
+            "@.*": {}
           },
           "additionalProperties": false
         },

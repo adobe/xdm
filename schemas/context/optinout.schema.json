@@ -13,8 +13,8 @@
   "definitions": {
     "optinout": {
       "properties": {
-        "xdm:optingEmail": {
-          "title": "Opting Email",
+        "xdm:optinEmail": {
+          "title": "Opt-in Email",
           "type": "string",
           "description": "Preference for email communication.",
           "default": "notProvided",
@@ -25,8 +25,8 @@
             "out": "Out"
           }
         },
-        "xdm:optingPhone": {
-          "title": "Opting Phone",
+        "xdm:optinPhone": {
+          "title": "Opt-in Phone",
           "type": "string",
           "description": "Preference for phone voice communication.",
           "default": "notProvided",
@@ -37,8 +37,8 @@
             "out": "Out"
           }
         },
-        "xdm:optingTextMessaging": {
-          "title": "Opting Text Messaging",
+        "xdm:optinTextMessaging": {
+          "title": "Opt-in Text Messaging",
           "type": "string",
           "description": "Preference for instant text communication.",
           "default": "notProvided",
@@ -49,8 +49,8 @@
             "out": "Out"
           }
         },
-        "xdm:optingFax": {
-          "title": "Opting Fax",
+        "xdm:optinFax": {
+          "title": "Opt-in Fax",
           "type": "string",
           "description": "Preference for fax communication.",
           "default": "notProvided",
@@ -61,8 +61,8 @@
             "out": "Out"
           }
         },
-        "xdm:optingAddress": {
-          "title": "Opting Address",
+        "xdm:optinAddress": {
+          "title": "Opt-in Address",
           "type": "string",
           "description": "Preference for mail address communication.",
           "default": "notProvided",
@@ -74,7 +74,7 @@
           }
         },
         "xdm:optingPushNotification": {
-          "title": "Opting Push Notification",
+          "title": "Opt-in Push Notification",
           "type": "string",
           "description": "Preference for push notification.",
           "default": "notProvided",

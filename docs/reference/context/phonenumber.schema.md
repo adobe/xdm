@@ -1,46 +1,46 @@
 
-# Person Schema
+# Phone Number Schema
 
 ```
-https://ns.adobe.com/xdm/context/person
+https://ns.adobe.com/xdm/context/phonenumber
 ```
 
-An individual person. May represent a person acting in various roles, such as a customer, contact, or owner.
+Information that allows the phone calling of a person. Typically an alphanumeric number, 1-222-333 4444 in North America, but can have a wide range of formats.
 
 | Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
 |----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [context/person.schema.json](context/person.schema.json) |
+| Can be instantiated | Yes | Forbidden | Permitted | [context/phonenumber.schema.json](context/phonenumber.schema.json) |
 
 ## Schema Hierarchy
 
-* Person `https://ns.adobe.com/xdm/context/person`
+* Phone Number `https://ns.adobe.com/xdm/context/phonenumber`
   * [Audit Trail](../common/auditable.schema.md) `https://ns.adobe.com/xdm/common/auditable`
 
-## Person Example
+## Phone Number Example
 ```json
 {
-  "xdm:name": {
-    "xdm:givenName": "Jane",
-    "xdm:middleName": "F",
-    "xdm:surname": "Doe"
-  },
-  "xdm:birthMonth": 1,
-  "xdm:birthDay": 3,
-  "xdm:birthYear": 1996,
-  "xdm:gender": "female"
+  "xdm:primary": true,
+  "xdm:number": "1-408-888-8888",
+  "xdm:status": "active"
 }
 ```
 
-# Person Properties
+# Phone Number Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [repo:createDate](#repocreateDate) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#repocreateDate) |
 | [repo:lastModifiedDate](#repolastModifiedDate) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#repolastModifiedDate) |
 | [xdm:createdByBatchID](#xdmcreatedByBatchID) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmcreatedByBatchID) |
+| [xdm:extension](#xdmextension) | `string` | Optional | Phone Number (this schema) |
 | [xdm:modifiedByBatchID](#xdmmodifiedByBatchID) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmmodifiedByBatchID) |
+| [xdm:number](#xdmnumber) | `string` | Optional | Phone Number (this schema) |
+| [xdm:primary](#xdmprimary) | `boolean` | Optional | Phone Number (this schema) |
 | [xdm:repositoryCreatedBy](#xdmrepositoryCreatedBy) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmrepositoryCreatedBy) |
 | [xdm:repositoryLastModifiedBy](#xdmrepositoryLastModifiedBy) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmrepositoryLastModifiedBy) |
+| [xdm:status](#xdmstatus) | `string` | Optional | Phone Number (this schema) |
+| [xdm:statusReason](#xdmstatusReason) | `string` | Optional | Phone Number (this schema) |
+| [xdm:validity](#xdmvalidity) | `string` | Optional | Phone Number (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## repo:createDate
@@ -115,6 +115,26 @@ The Data Set Files in Catalog Services which has been originating the creation o
 
 
 
+## xdm:extension
+### Extension
+
+The internal dialing number used to call from a private exchange, operator or switchboard.
+
+`xdm:extension`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:extension Type
+
+
+`string`
+
+
+
+
+
+
 ## xdm:modifiedByBatchID
 ### Modified by Batch Identifier
 
@@ -133,6 +153,53 @@ At creation time, `modifiedByBatchId` is set as `createdByBatchId`.
 `string`
 * format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
 
+
+
+
+
+
+## xdm:number
+### Number
+
+The phone number. Note the phone number is a string and may include meaningful characters such as brackets (), hyphens - or characters to indicate sub dialing identifiers like extensions x. E.g 1-353(0)18391111 or +613 9403600x1234.
+
+`xdm:number`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:number Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:primary
+### Primary
+
+Primary phone number indicator.
+
+Unlike for Address or EmailAddress, there can be multiple primary phone numbers; one per communication channel.
+The communication channel is defined by the type:
+
+* `textMessaging`: type = `mobile`
+* `phone`: type = `home` | `work` | `unknown`
+* `fax`: type = `fax`
+
+
+`xdm:primary`
+* is optional
+* type: `boolean`
+* defined in this schema
+
+### xdm:primary Type
+
+
+`boolean`
 
 
 
@@ -181,118 +248,78 @@ At creation time, `modifiedByUser` is set as `createdByUser`.
 
 
 
-# Person Definitions
+## xdm:status
+### Status
 
-| Property | Type | Group |
-|----------|------|-------|
-| [xdm:birthDay](#xdm:birthDay) | `integer` | `https://ns.adobe.com/xdm/context/person#/definitions/person` |
-| [xdm:birthMonth](#xdm:birthMonth) | `integer` | `https://ns.adobe.com/xdm/context/person#/definitions/person` |
-| [xdm:birthYear](#xdm:birthYear) | `integer` | `https://ns.adobe.com/xdm/context/person#/definitions/person` |
-| [xdm:gender](#xdm:gender) | `enum` | `https://ns.adobe.com/xdm/context/person#/definitions/person` |
-| [xdm:name](#xdm:name) | reference | `https://ns.adobe.com/xdm/context/person#/definitions/person` |
+An indication as to the ability to use the phone number.
 
-## xdm:birthDay
-### Birth day
-
-The day of the month a person was born (1-31).
-
-`xdm:birthDay`
+`xdm:status`
 * is optional
-* type: `integer`
+* type: `string`
 * defined in this schema
 
-### xdm:birthDay Type
+### xdm:status Type
 
 
-`integer`
-* minimum value: `1`
-* maximum value: `31`
-
+`string`
 
 
 
-
-## xdm:birthMonth
-### Birth month
-
-The month of the year a person was born (1-12).
-
-`xdm:birthMonth`
-* is optional
-* type: `integer`
-* defined in this schema
-
-### xdm:birthMonth Type
-
-
-`integer`
-* minimum value: `1`
-* maximum value: `12`
-
-
-
-
-
-## xdm:birthYear
-### Birth year
-
-The year a person was born including the century (yyyy, e.g 1983).
-
-`xdm:birthYear`
-* is optional
-* type: `integer`
-* defined in this schema
-
-### xdm:birthYear Type
-
-
-`integer`
-* minimum value: `1`
-* maximum value: `32767`
-
-
-
-
-
-## xdm:gender
-### Gender
-
-Gender identity of the person.
-
-
-`xdm:gender`
-* is optional
-* type: `enum`
-* defined in this schema
-
-The value of this property **must** be equal to one of the [known values below](#xdm:gender-known-values).
-
-### xdm:gender Known Values
+### xdm:status Known Values
 | Value | Description |
 |-------|-------------|
-| `male` | Male |
-| `female` | Female |
-| `not_specified` | Not Specified |
-| `non_specific` | Nonspecific |
+| `active` | Active |
+| `incomplete` | Incomplete |
+| `blacklisted` | Blacklisted |
+| `blocked` | Blocked |
 
 
 
 
-## xdm:name
-### Full name
+## xdm:statusReason
+### Status Reason
 
-The person&#39;s full name
+A description of the current status.
 
-`xdm:name`
+`xdm:statusReason`
 * is optional
-* type: reference
+* type: `string`
 * defined in this schema
 
-### xdm:name Type
+### xdm:statusReason Type
 
 
-* []() – `https://ns.adobe.com/xdm/context/person-name`
+`string`
 
+
+
+
+
+
+## xdm:validity
+### Validity
+
+A level of technical correctness of the phone number.
+
+`xdm:validity`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:validity Type
+
+
+`string`
+
+
+
+### xdm:validity Known Values
+| Value | Description |
+|-------|-------------|
+| `consistent` | Consistent |
+| `inconsistent` | Inconsistent |
+| `incomplete` | Incomplete |
+| `successfullyUsed` | Successfully Used |
 
 
 

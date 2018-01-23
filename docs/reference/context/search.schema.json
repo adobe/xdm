@@ -1,0 +1,52 @@
+{
+    "meta:license": [
+        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/context/search",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Search",
+    "type": "object",
+    "description": "Information about web search activity.",
+    "definitions": {
+        "search": {
+            "properties": {
+                "xdm:searchEngine": {
+                    "title": "Search Engine",
+                    "type": "string",
+                    "description": "The search engine used by the search."
+                },
+                "xdm:keywords": {
+                    "title": "Keywords",
+                    "type": "string",
+                    "description": "The keywords for the search."
+                },
+                "xdm:isPaid": {
+                    "title": "Is Paid",
+                    "type": "boolean",
+                    "description": "Indicate if the search is paid or not."
+                },
+                "xdm:pageDepth": {
+                    "title": "Page Depth",
+                    "type": "number",
+                    "description": "The page depth in the search results."
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/search"
+        }
+    ],
+    "examples": [
+        {
+            "xdm:searchEngine": "Google",
+            "xdm:keywords": "rice cooker",
+            "xdm:isPaid": true,
+            "xdm:pageDepth": 1
+        }
+    ]
+}

@@ -1,0 +1,610 @@
+
+# Product Schema
+
+```
+https://ns.adobe.com/xdm/context/product
+```
+
+XDM product variant, master product and key attributes of product in the product catalog.
+
+
+| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
+|----------|------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Forbidden | Permitted | [content/product.schema.json](content/product.schema.json) |
+
+## Schema Hierarchy
+
+* Product `https://ns.adobe.com/xdm/context/product`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+
+## Product Example
+```json
+{
+  "@id": "https://commerce.adobe.io/entities/product/product-203766910",
+  "xdm:SKU": "203766910",
+  "xdm:name": "Lahara Single Hole Single-Handle Bathroom Faucet with Metal Drain Assembly in Stainless",
+  "schema:description": "Just like ocean waves, the one-piece curves and sleek lines of this Lahara Single Hole 1-Handle High Arc Bathroom Faucet in Stainless make a lasting impression. Delta's exclusive DIAMOND seal technology uses a valve with a tough diamond coating to bring you a faucet built to last up to five million uses.",
+  "xdm:category": "Bathroom Faucets",
+  "xdm:department": "Bathroom",
+  "xdm:brand": "Delta",
+  "xdm:fabrication": "stainless steel",
+  "xdm:size": 8.91,
+  "xdm:unitOfMeasure": "Inch",
+  "xdm:countryOfOrigin": "US",
+  "xdm:listPrice": 151.99,
+  "xdm:currencyCode": "USD",
+  "xdm:productURL": "https://www.homedepot.com/p/Delta-Lahara-Single-Hole-Single-Handle-Bathroom-Faucet-with-Metal-Drain-Assembly-in-Stainless-538-SSMPU-DST/203766910",
+  "xdm:manufacturerName": "Delta Faucet Company",
+  "xdm:supplierName": "Home Depot"
+}
+```
+
+# Product Properties
+
+| Property | Type | Required | Defined by |
+|----------|------|----------|------------|
+| [@id](#@id) | `string` | Optional | Product (this schema) |
+| [schema:description](#schemadescription) | `string` | Optional | Product (this schema) |
+| [xdm:COGS](#xdmCOGS) | `number` | Optional | Product (this schema) |
+| [xdm:SKU](#xdmSKU) | `string` | Optional | Product (this schema) |
+| [xdm:brand](#xdmbrand) | `string` | Optional | Product (this schema) |
+| [xdm:category](#xdmcategory) | `string` | Optional | Product (this schema) |
+| [xdm:countryOfOrigin](#xdmcountryOfOrigin) | `string` | Optional | Product (this schema) |
+| [xdm:currencyCode](#xdmcurrencyCode) | `string` | Optional | Product (this schema) |
+| [xdm:department](#xdmdepartment) | `string` | Optional | Product (this schema) |
+| [xdm:fabrication](#xdmfabrication) | `string` | Optional | Product (this schema) |
+| [xdm:gender](#xdmgender) | `string` | Optional | Product (this schema) |
+| [xdm:listPrice](#xdmlistPrice) | `number` | Optional | Product (this schema) |
+| [xdm:manufacturerName](#xdmmanufacturerName) | `string` | Optional | Product (this schema) |
+| [xdm:masterProductDescription](#xdmmasterProductDescription) | `string` | Optional | Product (this schema) |
+| [xdm:masterProductID](#xdmmasterProductID) | `string` | Optional | Product (this schema) |
+| [xdm:masterProductName](#xdmmasterProductName) | `string` | Optional | Product (this schema) |
+| [xdm:masterProductSKU](#xdmmasterProductSKU) | `string` | Optional | Product (this schema) |
+| [xdm:name](#xdmname) | `string` | Optional | Product (this schema) |
+| [xdm:originalSaleDate](#xdmoriginalSaleDate) | `string` | Optional | Product (this schema) |
+| [xdm:productCreateDate](#xdmproductCreateDate) | `string` | Optional | Product (this schema) |
+| [xdm:productLastModified](#xdmproductLastModified) | `string` | Optional | Product (this schema) |
+| [xdm:productURL](#xdmproductURL) | `string` | Optional | Product (this schema) |
+| [xdm:size](#xdmsize) | `number` | Optional | Product (this schema) |
+| [xdm:supplierName](#xdmsupplierName) | `string` | Optional | Product (this schema) |
+| [xdm:unitOfMeasure](#xdmunitOfMeasure) | `string` | Optional | Product (this schema) |
+| `*` | any | Additional | this schema *allows* additional properties |
+
+## @id
+### Identifier
+
+The internal unique ID of the variant in the commerce backend system.
+
+`@id`
+* is optional
+* type: `string`
+* defined in this schema
+
+### @id Type
+
+
+`string`
+* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+
+
+
+
+
+
+## schema:description
+### Description
+
+The localized description of the product.
+
+`schema:description`
+* is optional
+* type: `string`
+* defined in this schema
+
+### schema:description Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:COGS
+### Cost of Good Sold
+
+Cost of Good Sold. In the `currencyCode` currency.
+
+`xdm:COGS`
+* is optional
+* type: `number`
+* defined in this schema
+
+### xdm:COGS Type
+
+
+`number`
+
+
+
+
+
+
+## xdm:SKU
+### SKU
+
+The unique SKU (Stock Keeping Unit) of the variant assigned by the vendor.
+
+`xdm:SKU`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:SKU Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:brand
+### Brand
+
+Brand of the Master/Variant products.
+
+`xdm:brand`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:brand Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:category
+### Category
+
+Primary categorization (category) name of the Master/variant.
+
+`xdm:category`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:category Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:countryOfOrigin
+### Country of Origin
+
+The two-character [ISO 3166-1 alpha-2](https://datahub.io/core/country-list) code for the country of origin of the product as defined by customs requirements.
+
+`xdm:countryOfOrigin`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:countryOfOrigin Type
+
+
+`string`
+
+
+All instances must conform to this regular expression 
+(test examples [here](https://regexr.com/?expression=%5E%5BA-Z%5D%7B2%7D%24)):
+```regex
+^[A-Z]{2}$
+```
+
+
+
+
+
+
+## xdm:currencyCode
+### Currency Code
+
+The ISO 4217 alphabetic currency code used for cost and pricing, including `listPrice` and `COGS`.
+
+`xdm:currencyCode`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:currencyCode Type
+
+
+`string`
+
+
+All instances must conform to this regular expression 
+```regex
+^[A-Z]{3}$
+```
+
+* test example: [USD](https://regexr.com/?expression=%5E%5BA-Z%5D%7B3%7D%24&text=USD)
+* test example: [EUR](https://regexr.com/?expression=%5E%5BA-Z%5D%7B3%7D%24&text=EUR)
+
+
+
+
+### xdm:currencyCode Examples
+
+```json
+"USD"
+```
+
+```json
+"EUR"
+```
+
+
+
+## xdm:department
+### Department
+
+Primary department the product is associated with.
+
+`xdm:department`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:department Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:fabrication
+### Fabrication
+
+Primary material the product is constructed with.
+
+`xdm:fabrication`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:fabrication Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:gender
+### Gender
+
+Gender the product is marketed to.
+
+`xdm:gender`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:gender Type
+
+
+`string`
+
+
+
+### xdm:gender Known Values
+| Value | Description |
+|-------|-------------|
+| `male` | For men |
+| `female` | For women |
+| `unisex` | For both men and women |
+| `unknown` | Unknown |
+
+
+
+
+## xdm:listPrice
+### List Price
+
+Default price of the product before sales and discounting. In the `currencyCode` currency.
+
+`xdm:listPrice`
+* is optional
+* type: `number`
+* defined in this schema
+
+### xdm:listPrice Type
+
+
+`number`
+
+
+
+
+
+
+## xdm:manufacturerName
+### Manufacturer Name
+
+Manufacturer of the product.
+
+`xdm:manufacturerName`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:manufacturerName Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:masterProductDescription
+### Master Product Description
+
+The description of the product.
+
+`xdm:masterProductDescription`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:masterProductDescription Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:masterProductID
+### Master Product Identifier
+
+The internal unique ID of the product in the commerce backend system.
+
+`xdm:masterProductID`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:masterProductID Type
+
+
+`string`
+* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+
+
+
+
+
+
+## xdm:masterProductName
+### Master Product Name
+
+The localized name of the product.
+
+`xdm:masterProductName`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:masterProductName Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:masterProductSKU
+### Master Product SKU
+
+The unique SKU (Stock Keeping Unit) of the master product assigned by the vendor or manufacturer(to update).
+
+`xdm:masterProductSKU`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:masterProductSKU Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:name
+### Name
+
+The name of the product.
+
+`xdm:name`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:name Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:originalSaleDate
+### Original Sale Date
+
+First date the product was made available for sale. The time using RFC3339 with a stated timezone offset such as &#34;2001-07-04T12:08:56-07:00&#34;. An example formatting pattern is &#34;yyyy-MM-dd&#39;T&#39;HH:mm:ssXXX&#34;.
+
+`xdm:originalSaleDate`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:originalSaleDate Type
+
+
+`string`
+* format: `date` – date, without time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+
+
+
+
+
+
+## xdm:productCreateDate
+### Product Creation Date
+
+The date when this product variant was created. The time using RFC3339 with a stated timezone offset such as &#34;2001-07-04T12:08:56-07:00&#34;. An example formatting pattern is &#34;yyyy-MM-dd&#39;T&#39;HH:mm:ssXXX&#34;.
+
+`xdm:productCreateDate`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:productCreateDate Type
+
+
+`string`
+* format: `date` – date, without time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+
+
+
+
+
+
+## xdm:productLastModified
+### Product Last Modified
+
+The date when this product variant was last modified. The time using RFC3339 with a stated timezone offset such as &#34;2001-07-04T12:08:56-07:00&#34;. An example formatting pattern is &#34;yyyy-MM-dd&#39;T&#39;HH:mm:ssXXX&#34;.
+
+`xdm:productLastModified`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:productLastModified Type
+
+
+`string`
+* format: `date` – date, without time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+
+
+
+
+
+
+## xdm:productURL
+### Product URL
+
+The URL for the primary Product View of the product variant page.
+
+`xdm:productURL`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:productURL Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:size
+### Size
+
+Standard product size for the product.
+
+`xdm:size`
+* is optional
+* type: `number`
+* defined in this schema
+
+### xdm:size Type
+
+
+`number`
+
+
+
+
+
+
+## xdm:supplierName
+### Supplier Name
+
+The distributor of the product.
+
+`xdm:supplierName`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:supplierName Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:unitOfMeasure
+### Unit of Measure
+
+Standard unit of measure of the variant. Denotes the units for the size measurement.
+
+`xdm:unitOfMeasure`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:unitOfMeasure Type
+
+
+`string`
+
+
+
+
+

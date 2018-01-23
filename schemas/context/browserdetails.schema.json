@@ -82,5 +82,8 @@
         }
       }
     }
-  }
+  },
+  "allOf": [
+    {"$ref": "#/definitions/browserdetails"}
+  ]
 }

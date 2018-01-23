@@ -17,11 +17,17 @@
           "title": "Type",
           "type": "string",
           "description": "The type of the application environment.",
+          "enum": [
+            "browser",
+            "application",
+            "iot",
+            "external"
+          ],
           "meta:enum": {
             "browser": "Browser",
             "application": "Application",
             "iot": "IoT",
-            "externalSystem": "External System"
+            "external": "External System"
           }
         },
         "xdm:browserDetails": {
@@ -61,19 +67,37 @@
           "title": "Connection Type",
           "type": "string",
           "description": "Internet connection type.",
+          "enum":[
+            "dialup",
+            "isdn",
+            "bisdn",
+            "dsl",
+            "cable",
+            "wireless_wifi",
+            "mobile",
+            "mobile_edge",
+            "mobile_2g",
+            "mobile_3g",
+            "mobile_lte",
+            "t1",
+            "t3",
+            "oc3",
+            "lan",
+            "modem"
+          ],
           "meta:enum": {
-            "dialUp": "Dial-up",
+            "dialup": "Dial-up",
             "isdn": "ISDN",
             "bisdn": "BISDN",
             "dsl": "DSL",
             "cable": "Cable",
-            "wirelessWIFI": "Wireless WIFI",
+            "wireless_wifi": "Wireless WIFI",
             "mobile": "Mobile",
-            "mobileEdge": "Mobile Edge",
-            "mobileGPRS": "Mobile GPRS",
-            "mobile2G": "Mobile 2G",
-            "mobile3G": "Mobile 3G",
-            "mobileLTE": "Mobile LTE",
+            "mobile_edge": "Mobile Edge",
+            "mobile_gprs": "Mobile GPRS",
+            "mobile_2g": "Mobile 2G",
+            "mobile_3g": "Mobile 3G",
+            "mobile_lte": "Mobile LTE",
             "t1": "T1",
             "t3": "T3",
             "oc3": "OC3",
@@ -100,5 +124,8 @@
         }
       }
     }
-  }
+  },
+  "allOf": [
+    { "$ref": "#/definitions/environment" }
+  ]
 }

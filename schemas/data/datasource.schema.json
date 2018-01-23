@@ -13,15 +13,16 @@
   "definitions": {
     "datasource": {
       "properties": {
-        "xdm:id": {
+        "@id": {
           "title": "Identifier",
-          "type": "integer",
-          "description": "The numeric ID associated with this Datasource. This would be provided by the individual or system that created the Datasource.\n"
-        },
-        "xdm:code": {
-          "title": "Code",
           "type": "string",
-          "description": "The string based name associated associated with the id attribute. Sometimes refered to as the data source integration code."
+          "format": "uri",
+          "description": "The unique ID of this data source. This would be provided by the individual or system that created the Datasource.\n"
+        },
+        "xdm:name": {
+          "title": "Name",
+          "type": "string",
+          "description": "Human readable name of the data source. "
         },
         "xdm:tags": {
           "title": "Tags",
@@ -34,8 +35,13 @@
         }
       },
       "required": [
-        "xdm:id"
+        "@id"
       ]
     }
-  }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/datasource"
+    }
+  ]
 }

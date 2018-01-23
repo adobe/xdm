@@ -1,8 +1,8 @@
 {
   "xdm:id": "experienceid-123456",
   "xdm:dataSource": {
-    "xdm:id": 12345,
-    "xdm:code": "DataSourceIntegrationCode-123"
+    "@id": "https://data.adobe.io/datasources/datasource-123",
+    "xdm:name": "DataSourceIntegrationCode-123"
   },
   "xdm:timestamp": 978336000000,
   "xdm:endUserIds": {

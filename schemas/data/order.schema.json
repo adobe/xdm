@@ -48,5 +48,8 @@
         }
       }
     }
-  }
+  },
+  "allOf": [
+    {"$ref": "#/definitions/order"}
+  ]
 }

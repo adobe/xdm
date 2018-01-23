@@ -16,7 +16,7 @@
         "schema:description": {
           "title": "Description",
           "description": "Describes the discounting rules in detail. ",
-          "type":"string"
+          "type": "string"
         },
         "xdm:code": {
           "title": "Code",
@@ -46,7 +46,9 @@
     }
   },
   "allOf": [
-    {"$ref": "#/definitions/discount"}
+    {
+      "$ref": "#/definitions/discount"
+    }
   ],
   "required": [
     "xdm:code"

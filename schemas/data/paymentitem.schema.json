@@ -53,8 +53,9 @@
       }
     }
   },
-  ,
   "allOf": [
-    {"$ref": "#/definitions/paymentitem"}
+    {
+      "$ref": "#/definitions/paymentitem"
+    }
   ]
 }

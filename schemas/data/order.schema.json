@@ -50,6 +50,8 @@
     }
   },
   "allOf": [
-    {"$ref": "#/definitions/order"}
+    {
+      "$ref": "#/definitions/order"
+    }
   ]
 }

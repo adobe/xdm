@@ -5,13 +5,13 @@
     {
       "xdm:transactionID": "transactid-a111",
       "xdm:paymentAmount": 899.99,
-      "xdm:paymentType": "creditCard",
+      "xdm:paymentType": "credit_card",
       "xdm:currencyCode": "USD"
     },
     {
       "xdm:transactionId": "transactid-a222",
       "xdm:paymentAmount": 99.99,
-      "xdm:paymentType": "giftCard",
+      "xdm:paymentType": "gift_card",
       "xdm:currencyCode": "USD"
     }
   ],

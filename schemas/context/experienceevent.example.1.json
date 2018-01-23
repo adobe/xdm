@@ -84,6 +84,8 @@
       "schema:latitude": 35.6185,
       "schema:longitude": 139.73237
     }  
-  }
-  
+  },
+  "xdm:marketing": {
+    "xdm:trackingCode": "marketingcampaign111"
+  }  
 }

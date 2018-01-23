@@ -3,16 +3,24 @@
     "@id": "https://data.adobe.io/datasources/datasource-123",
     "xdm:name": "DataSourceIntegrationCode-123"
   },
-  "xdm:identities": [
-    {
-      "xdm:id": "analyticsid-sample222",
-      "xdm:namespace": {
-        "xdm:id": 12345,
-        "xdm:code": "AA111"
+  "xdm:identities": {
+    "xdm:realm": {
+      "@id": "https://data.adobe.io/experiencecloud/audiencemanager",
+      "xdm:name": "Adobe Audience Manager"
+    },
+    "https://ns.adobe.com/experiencecloud/mcid": {
+      "xdm:datasource": {
+        "@id": "https://data.adobe.io/experiencecloud/mcid",
+        "xdm:name": "Adobe Marketing Cloud Identity Core Service"
       },
-      "xdm:xid": "xid-12345"
+      "xdm:id": "mcid-sample111",
+      "xdm:confidence": 1
+    },
+    "https://ns.adobe.com/experiencecloud/analytics": {
+      "xdm:id": "mcid-sample111",
+      "xdm:confidence": 0.99
     }
-  ],
+  },
   "xdm:person": {
     "xdm:name": {
       "xdm:givenName": "Jane",

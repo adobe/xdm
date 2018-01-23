@@ -1,5 +1,5 @@
 {
-  "xdm:id": "experienceid-123456",
+  "@id": "https://data.adobe.io/experienceid-123456",
   "xdm:dataSource": {
     "@id": "https://data.adobe.io/datasources/datasource-123",
     "xdm:name": "DataSourceIntegrationCode-123"

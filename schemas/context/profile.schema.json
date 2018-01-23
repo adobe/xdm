@@ -21,12 +21,8 @@
         },
         "xdm:identities": {
           "title": "End User Identities",
-          "type": "array",
-          "description": "Array of Identities. Condensed, normalized encapsulation of all end user identifiers.",
-          "items": {
-            "$ref": "https://ns.adobe.com/xdm/context/identity"
-          },
-          "minItems": 1
+          "description": "How this profile can be identified",
+          "$ref": "https://ns.adobe.com/xdm/context/enduserids"
         },
         "xdm:person": {
           "title": "Person",

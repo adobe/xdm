@@ -13,11 +13,7 @@
   "definitions": {
     "enduserids": {
       "properties": {
-        "xdm:realmId": {
-          "title": "Realm",
-          "$ref": "https://ns.adobe.com/xdm/data/datasource",
-          "description": "The optional realm associated with the identity stitching strategy."
-        },
+        "xdm:realmId": {},
         "xdm:mcId": {
           "title": "Marketing Cloud identifier",
           "$ref": "https://ns.adobe.com/xdm/context/identity",
@@ -39,6 +35,43 @@
           "description": "Adobe Target end user identifier."
         }
       }
+    }
+  },
+  "minProperties": 1,
+  "properties": {
+    "xdm:realm": {
+      "title": "Realm",
+      "$ref": "https://ns.adobe.com/xdm/data/datasource",
+      "description": "The optional realm associated with the identity stitching strategy."
+    }
+  },
+  "patternProperties": {
+    ".+://.+": {
+      "meta:enum": {
+        "https://ns.adobe.com/experiencecloud/target": "Adobe Target",
+        "https://ns.adobe.com/experiencecloud/campaign": "Adobe Campaign",
+        "https://ns.adobe.com/experiencecloud/analytics": "Adobe Analytics",
+        "https://ns.adobe.com/experiencecloud/mcid": "Marketing Cloud Identity Core Service"
+      },
+      "description": "The identifier, including data source (`@id` must be identical to the property value), foreign ID, and confidence.",
+      "type": "object",
+      "properties": {
+        "xdm:datasource": {
+          "$ref": "https://ns.adobe.com/xdm/data/datasource"
+        },
+        "xdm:id": {
+          "type": "string",
+          "description": "The ID that is being used by the service specified by the outer property name or `xdm:datasource`\n\n. **Note:** opposed to most other IDs in XDM, this is not a URI, as it cannot be guaranteed that all identity services are using URIs as IDs."
+        },
+        "xdm:confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "required": [
+        "xdm:id"
+      ]
     }
   }
 }

@@ -13,7 +13,7 @@
   "definitions": {
     "subscription": {
       "properties": {
-        "xdm:id": {
+        "@id": {
           "title": "Identifier",
           "type": "string",
           "description": "Unique identifier for the subscription instance."

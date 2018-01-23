@@ -51,18 +51,24 @@
   ],
   "xdm:commerce": {
     "xdm:order": {
-      "xdm:purchaseId": "a8g784hjq1mnp3",
+      "xdm:purchaseID": "a8g784hjq1mnp3",
       "xdm:purchaseOrderNumber": "123456",
       "xdm:payments": [
         {
-          "xdm:transactionId": "transactid-a111",
-          "xdm:paymentAmount": 159,
-          "xdm:paymentType": "creditCard",
+          "xdm:transactionID": "transactid-a111",
+          "xdm:paymentAmount": 899.99,
+          "xdm:paymentType": "credit_card",
+          "xdm:currencyCode": "USD"
+        },
+        {
+          "xdm:transactionId": "transactid-a222",
+          "xdm:paymentAmount": 99.99,
+          "xdm:paymentType": "gift_card",
           "xdm:currencyCode": "USD"
         }
       ],
-      "xdm:currency": "USD",
-      "xdm:priceTotal": 159
+      "xdm:currencyCode": "USD",
+      "xdm:priceTotal": 999.98
     }
   }
 }

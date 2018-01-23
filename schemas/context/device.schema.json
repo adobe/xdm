@@ -13,15 +13,19 @@
   "definitions": {
     "device": {
       "properties": {
-        "xdm:typeId": {
+        "xdm:typeID": {
           "title": "Type Identifier",
           "type": "string",
           "description": "An identifier for the device. This may be an identifier from Device Atlas or another service that identifies the hardware that is being used."
         },
-        "xdm:typeIdService": {
+        "xdm:typeIDService": {
           "title": "Type Identifier Service",
           "type": "string",
-          "description": "The namespace of the service that is used to identify the device type. For example: \"deviceAtlas\"."
+          "format": "uri",
+          "description": "The namespace of the service that is used to identify the device type.",
+          "meta:enum": {
+            "https://ns.adobe.com/external/deviceatlas": "Device Atlas"
+          }
         },
         "xdm:type": {
           "title": "Type",
@@ -32,10 +36,10 @@
             "tablet": "Tablet",
             "desktop": "Desktop",
             "ereader": "E-Reader",
-            "gamingConsole": "Gaming Console",
+            "gaming": "Gaming Console",
             "television": "Television",
-            "setTopBox": "Set-top Box",
-            "mediaPlayer": "Media Player"
+            "settop": "Set-top Box",
+            "mediaplayer": "Media Player"
           }
         },
         "xdm:manufacturer": {
@@ -70,5 +74,8 @@
         }
       }
     }
-  }
+  },
+  "allOf": [
+    {"$ref": "#/definitions/device"}
+  ]
 }

@@ -10,10 +10,6 @@
   "title": "Metric",
   "type": "object",
   "meta:extensible": true,
-  "meta:extends": [
-    "http://schema.org/GeoCoordinates",
-    "https://ns.adobe.com/xdm/common/geo"
-  ],
   "description": "",
   "definitions": {
     "metric": {

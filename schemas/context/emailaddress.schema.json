@@ -9,6 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Email Address",
   "type": "object",
+  "meta:auditable": true,
   "description": "A standard email address.",
   "definitions": {
     "emailaddress": {
@@ -21,6 +22,7 @@
         "xdm:address": {
           "title": "Address",
           "type": "string",
+          "format": "email",
           "description": "The technical address, e.g 'name@domain.com' as commonly defined in RFC2822 and subsequent standards."
         },
         "xdm:label": {
@@ -47,7 +49,7 @@
           "meta:enum": {
             "active": "Active",
             "incomplete": "Incomplete",
-            "pendingVerification": "Pending Verification",
+            "pending_verification": "Pending Verification",
             "blacklisted": "Blacklisted",
             "blocked": "Blocked"
           }
@@ -56,12 +58,16 @@
           "title": "Status Reason",
           "type": "string",
           "description": "A description of the current status."
-        },
-        "xdm:audit": {
-          "title": "Audit",
-          "$ref": "https://ns.adobe.com/xdm/common/audittrail"
         }
       }
     }
-  }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/emailaddress"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/auditable"
+    }
+  ]
 }

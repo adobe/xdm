@@ -31,9 +31,14 @@
             "$ref": "https://ns.adobe.com/xdm/data/paymentitem"
           }
         },
-        "xdm:currency": {
+        "xdm:currencyCode": {
           "title": "Currency",
           "type": "string",
+          "examples": [
+            "USD",
+            "EUR"
+          ],
+          "pattern": "^[A-Z]{3}$",
           "description": "The ISO 4217 currency code used for the order totals."
         },
         "xdm:priceTotal": {

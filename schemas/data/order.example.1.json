@@ -3,7 +3,7 @@
   "xdm:purchaseOrderNumber": "123456",
   "xdm:payments": [
     {
-      "xdm:transactionId": "transactid-a111",
+      "xdm:transactionID": "transactid-a111",
       "xdm:paymentAmount": 899.99,
       "xdm:paymentType": "creditCard",
       "xdm:currencyCode": "USD"

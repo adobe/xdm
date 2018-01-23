@@ -13,7 +13,7 @@
   "definitions": {
     "paymentitem": {
       "properties": {
-        "xdm:transactionId": {
+        "xdm:transactionID": {
           "title": "Transaction ID",
           "type": "string",
           "description": "The unique transaction identifier for this payment item."

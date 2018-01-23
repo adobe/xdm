@@ -84,6 +84,8 @@
     }
   },
   "allOf": [
-    {"$ref": "#/definitions/browserdetails"}
+    {
+      "$ref": "#/definitions/browserdetails"
+    }
   ]
 }

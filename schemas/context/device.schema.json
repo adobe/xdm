@@ -76,6 +76,8 @@
     }
   },
   "allOf": [
-    {"$ref": "#/definitions/device"}
+    {
+      "$ref": "#/definitions/device"
+    }
   ]
 }

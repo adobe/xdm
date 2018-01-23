@@ -67,7 +67,7 @@
           "title": "Connection Type",
           "type": "string",
           "description": "Internet connection type.",
-          "enum":[
+          "enum": [
             "dialup",
             "isdn",
             "bisdn",
@@ -126,6 +126,8 @@
     }
   },
   "allOf": [
-    { "$ref": "#/definitions/environment" }
+    {
+      "$ref": "#/definitions/environment"
+    }
   ]
 }

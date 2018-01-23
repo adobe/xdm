@@ -45,12 +45,17 @@
           "$ref": "https://ns.adobe.com/xdm/channels/application",
           "description": "Application registered to receive Push Notifications.\n"
         },
-        "xdm:communicationChannel": {
+        "xdm:channel": {
           "title": "Communication Channel",
-          "$ref": "https://ns.adobe.com/xdm/channels/communicationchannel",
+          "$ref": "https://ns.adobe.com/xdm/channels/channel",
           "description": "Channels for communicating with customers or users."
         }
       }
     }
-  }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/pushnotificationtoken"
+    }
+  ]
 }

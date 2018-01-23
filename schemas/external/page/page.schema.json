@@ -5,11 +5,11 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "http://ns.adobe.com/adobecloud/core/1.0/directory-page",
+  "$id": "http://ns.adobe.com/adobecloud/core/1.0/page",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Directory Page Object",
+  "title": "Page Object",
   "type": "object",
-  "description": "Directory page object contains paging information for related directory when directory result is paginated.",
+  "description": "Page object contains paging information for related resource when resource result is paginated.",
   "definitions": {
     "page": {
       "properties": {
@@ -47,6 +47,7 @@
         "count": {
           "title": "Number of items",
           "type": "integer",
+          "minimum": 0,
           "description": "The number of items on this page.\n"
         }
       }

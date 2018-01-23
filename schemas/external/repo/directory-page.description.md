@@ -1,1 +1,0 @@
-Directory page object contains paging information for related directory when directory result is paginated.

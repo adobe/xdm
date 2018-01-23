@@ -24,7 +24,7 @@
           "const": "application/vnd.adobecloud.directory+json"
         },
         "_page": {
-          "$ref": "http://ns.adobe.com/adobecloud/core/1.0/directory-page",
+          "$ref": "http://ns.adobe.com/adobecloud/core/1.0/page",
           "description": "Page info, included if this resource is part of paginated result."
         },
         "children": {

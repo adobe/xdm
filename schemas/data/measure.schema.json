@@ -25,8 +25,12 @@
         },
         "xdm:unit": {
           "anyOf": [
-            {"type": "string"},
-            {"const": null}
+            {
+              "type": "string"
+            },
+            {
+              "const": null
+            }
           ],
           "description": "The (optional) unit that this measure's value is measured in. The `unit` in the `Measure` is purely informational, as the `unit` property of the referenced `Metric` determines the interpretation.",
           "examples": [

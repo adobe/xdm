@@ -14,19 +14,5 @@
   "https://ns.adobe.com/experiencecloud/analytics": {
     "xdm:id": "mcid-sample111",
     "xdm:confidence": 0.99
-  },
-  "xdm:mcId": {
-    "xdm:id": "mcid-sample111",
-    "xdm:namespace": {
-      "xdm:id": 12345,
-      "xdm:code": "IC111"
-    }
-  },
-  "xdm:analytics": {
-    "xdm:id": "analyticsid-sample222",
-    "xdm:namespace": {
-      "xdm:id": 12345,
-      "xdm:code": "AA111"
-    }
   }
 }

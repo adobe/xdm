@@ -9,125 +9,37 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "OptInOut",
   "type": "object",
-  "description": "Describes a users opting in and out preferences for communication by medium and communication type.",
+  "description": "Describes a users' communication preferences by channel. For each channel individually, which is a property of this object, a user's preference (opt-in, opt-out, pending) can be recorded. In addition, a global override opt-out is possible. Each property of this schema must be a valid and known URI for an XDM Channel.",
   "definitions": {
     "optinout": {
+      "patternProperties": {
+        ".+://.+": {
+          "description": "Communication preference for the outbound channel identified through its URL by the name of the property.",
+          "type": "string",
+          "default": "not_provided",
+          "enum": [
+            "not_provided",
+            "pending",
+            "in",
+            "out"
+          ],
+          "meta:enum": {
+            "not_provided": "Not Provided",
+            "pending": "Pending Verification",
+            "in": "Opt-In: the user explicitly consents to receiving messages.",
+            "out": "Opt-Out: the user declines to receive any messages on this channel"
+          }
+        }
+      },
       "properties": {
-        "xdm:optinEmail": {
-          "title": "Opt-in Email",
-          "type": "string",
-          "description": "Preference for email communication.",
-          "default": "notProvided",
-          "enum": [
-            "not_provided",
-            "pending",
-            "in",
-            "out"
-          ],
-          "meta:enum": {
-            "not_provided": "Not Provided",
-            "pending": "Pending Verification",
-            "in": "In",
-            "out": "Out"
-          }
-        },
-        "xdm:optinPhone": {
-          "title": "Opt-in Phone",
-          "type": "string",
-          "description": "Preference for phone voice communication.",
-          "default": "notProvided",
-          "enum": [
-            "not_provided",
-            "pending",
-            "in",
-            "out"
-          ],
-          "meta:enum": {
-            "not_provided": "Not Provided",
-            "pending": "Pending Verification",
-            "in": "In",
-            "out": "Out"
-          }
-        },
-        "xdm:optinTextMessaging": {
-          "title": "Opt-in Text Messaging",
-          "type": "string",
-          "description": "Preference for instant text communication.",
-          "default": "notProvided",
-          "enum": [
-            "not_provided",
-            "pending",
-            "in",
-            "out"
-          ],
-          "meta:enum": {
-            "not_provided": "Not Provided",
-            "pending": "Pending Verification",
-            "in": "In",
-            "out": "Out"
-          }
-        },
-        "xdm:optinFax": {
-          "title": "Opt-in Fax",
-          "type": "string",
-          "description": "Preference for fax communication.",
-          "default": "notProvided",
-          "enum": [
-            "not_provided",
-            "pending",
-            "in",
-            "out"
-          ],
-          "meta:enum": {
-            "not_provided": "Not Provided",
-            "pending": "Pending Verification",
-            "in": "In",
-            "out": "Out"
-          }
-        },
-        "xdm:optinAddress": {
-          "title": "Opt-in Address",
-          "type": "string",
-          "description": "Preference for mail address communication.",
-          "default": "notProvided",
-          "enum": [
-            "not_provided",
-            "pending",
-            "in",
-            "out"
-          ],
-          "meta:enum": {
-            "not_provided": "Not Provided",
-            "pending": "Pending Verification",
-            "in": "In",
-            "out": "Out"
-          }
-        },
-        "xdm:optinPushNotification": {
-          "title": "Opt-in Push Notification",
-          "type": "string",
-          "description": "Preference for push notification.",
-          "default": "notProvided",
-          "enum": [
-            "not_provided",
-            "pending",
-            "in",
-            "out"
-          ],
-          "meta:enum": {
-            "not_provided": "Not Provided",
-            "pending": "Pending Verification",
-            "in": "In",
-            "out": "Out"
-          }
-        },
         "xdm:globalOptout": {
           "title": "Global Opt-out",
           "type": "boolean",
           "description": "Do not contact this profile on any outbound channel.",
           "default": false
         }
-      }
+      },
+      "additionalProperties": false
     }
   },
   "allOf": [

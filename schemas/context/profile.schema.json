@@ -75,12 +75,12 @@
             "$ref": "https://ns.adobe.com/xdm/context/pushnotificationtoken"
           }
         },
-        "xdm:orgUnitId": {
+        "xdm:orgUnitID": {
           "title": "Organizational Unit Identifier",
           "type": "string",
           "description": "The unit ID within the organization owning the profile. This ID can be used to reference the organization details maintained in another dataset."
         },
-        "xdm:geoUnitId": {
+        "xdm:geoUnitID": {
           "title": "Geographical Unit Identifier",
           "type": "string",
           "description": "The geographical unit ID within the organization owning the profile. This ID can be used to reference the geographical information maintained in another dataset."

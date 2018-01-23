@@ -30,7 +30,7 @@
         },
         "xdm:person": {
           "title": "Person",
-          "$ref": "https://ns.adobe.com/xdm/common/person",
+          "$ref": "https://ns.adobe.com/xdm/context/person",
           "description": "An individual actor, contact, or owner.\n"
         },
         "xdm:homeAddress": {

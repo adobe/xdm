@@ -1,0 +1,54 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/data/measure",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Measure",
+  "type": "object",
+  "meta:extensible": false,
+  "description": "",
+  "definitions": {
+    "measure": {
+      "properties": {
+        "@type": {
+          "type": "string",
+          "format": "uri",
+          "description": "Links to the `Metric` that this measure refers to. The `@type` can be omitted in contexts where it is obvious what metric is being referred to, for instance in the `Metrics` object that is keyed with `Metric` URIs."
+        },
+        "xdm:value": {
+          "type": "number",
+          "description": "The quantifiable value of this measure."
+        },
+        "xdm:unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "const": null
+            }
+          ],
+          "description": "The (optional) unit that this measure's value is measured in. The `unit` in the `Measure` is purely informational, as the `unit` property of the referenced `Metric` determines the interpretation.",
+          "examples": [
+            "m",
+            "kg",
+            "s",
+            "USD"
+          ]
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/measure"
+    }
+  ],
+  "required": [
+    "xdm:value"
+  ]
+}

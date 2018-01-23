@@ -5,43 +5,36 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/data/metric",
+  "$id": "https://ns.adobe.com/xdm/data/metrics/commerce/product-views",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Metric",
+  "title": "product-views",
   "type": "object",
   "meta:extensible": true,
-  "description": "",
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/metric"
+  ],
+  "description": "The commerce metric product-views describes the number of product views that have occurred. Because the number of products on a page might be greater than one, this number may differ from the page view count of product pages.",
   "definitions": {
     "metric": {
       "properties": {
         "@id": {
           "type": "string",
           "format": "uri",
+          "const": "https://ns.adobe.com/xdm/data/metrics/commerce/product-views",
           "description": "The unique identifier of this metric."
         },
         "schema:name": {
           "type": "string",
+          "const": "commerce metric: product-views",
           "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
         },
         "xdm:measurement": {
           "type": "string",
           "description": "How to take measures of this metric.",
-          "examples": [
-            "distance",
-            "time",
-            "price",
-            "count"
-          ]
+          "const": "count"
         },
         "xdm:unit": {
-          "type": "string",
-          "description": "The unit that this metric is measured in. Whenever possible, metrics should follow the [SI base units](https://www.bipm.org/en/measurement-units/) or be [ISO 4217 currency codes](https://www.iso.org/iso-4217-currency-codes.html). For measures that are counts, the `xdm:unit` must be `null`.",
-          "examples": [
-            "m",
-            "kg",
-            "s",
-            "USD"
-          ]
+          "const": null
         }
       }
     }

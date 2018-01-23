@@ -55,12 +55,16 @@
             "incomplete": "Incomplete",
             "successfullyUsed": "Successfully Used"
           }
-        },
-        "xdm:audit": {
-          "title": "Audit",
-          "$ref": "https://ns.adobe.com/xdm/common/audittrail"
         }
       }
     }
-  }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/phonenumber"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/auditable"
+    }
+  ]
 }

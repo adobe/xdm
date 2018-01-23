@@ -14,7 +14,7 @@
   "definitions": {
     "profile": {
       "properties": {
-        "xdm:realmId": {
+        "xdm:realm": {
           "title": "Realm",
           "$ref": "https://ns.adobe.com/xdm/data/datasource",
           "description": "The optional realm associated with the identity stitching strategy."

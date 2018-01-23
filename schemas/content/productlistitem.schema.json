@@ -1,0 +1,69 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/content/productlistitem",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Product List Item",
+  "type": "object",
+  "description": "The product list item is a list item representing a product selected by a customer with specific options and pricing that are for that usage context at a specific point of time and may differ from the product record. For example the product record contains details from the product information system that are consistent for all customers, where the product list item has the actual price offered to the customer at that time which may vary due to sales campaigns or seasonal pricing.",
+  "definitions": {
+    "productlistitem": {
+      "properties": {
+        "xdm:SKU": {
+          "title": "SKU",
+          "type": "string",
+          "description": "Stock Keeping Unit, the unique identifier for a product defined by the vendor."
+        },
+        "@id": {
+          "title": "Line Item ID.",
+          "type": "string",
+          "format": "uri",
+          "description": "The line item identifier for this product entry. The product itself is identified through `xdm:product`."
+        },
+        "xdm:product": {
+          "title": "Product",
+          "type": "string",
+          "format": "uri",
+          "description": "The XDM identifier of the product itself."
+        },
+        "xdm:name": {
+          "title": "Name",
+          "type": "string",
+          "description": "The display name for the product as presented to the user for this product view."
+        },
+        "xdm:productAddMethod": {
+          "title": "Product Add Method",
+          "type": "string",
+          "description": "The method that was used to add a product item to the list by the visitor. Set with product list add metrics."
+        },
+        "xdm:currencyCode": {
+          "title": "Currency Code",
+          "type": "string",
+          "examples": [
+            "USD",
+            "EUR"
+          ],
+          "pattern": "^[A-Z]{3}$",
+          "description": "The ISO 4217 alphabetic currency code used for pricing the product."
+        },
+        "xdm:quantity": {
+          "title": "Quantity",
+          "type": "integer",
+          "description": "The number of units the customer has indicated they require of the product."
+        },
+        "xdm:priceTotal": {
+          "title": "Price Total",
+          "type": "number",
+          "description": "The total price for the product line item."
+        }
+      },
+      "required": [
+        "xdm:SKU"
+      ]
+    }
+  }
+}

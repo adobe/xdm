@@ -13,10 +13,10 @@
   "definitions": {
     "order": {
       "properties": {
-        "xdm:purchaseId": {
+        "xdm:purchaseID": {
           "title": "Purchase ID",
           "type": "string",
-          "description": "Unique identifier assigned by the seller for this purchase or contract."
+          "description": "Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique."
         },
         "xdm:purchaseOrderNumber": {
           "title": "Purchase Order Number",

@@ -17,14 +17,17 @@
         "@type": {
           "type": "string",
           "format": "uri",
-          "description": "Links to the `Metric` that this measure refers to."
+          "description": "Links to the `Metric` that this measure refers to. The `@type` can be omitted in contexts where it is obvious what metric is being referred to, for instance in the `Metrics` object that is keyed with `Metric` URIs."
         },
         "xdm:value": {
           "type": "number",
           "description": "The quantifiable value of this measure."
         },
         "xdm:unit": {
-          "type": "string",
+          "anyOf": [
+            {"type": "string"},
+            {"const": null}
+          ],
           "description": "The (optional) unit that this measure's value is measured in. The `unit` in the `Measure` is purely informational, as the `unit` property of the referenced `Metric` determines the interpretation.",
           "examples": [
             "m",
@@ -42,7 +45,6 @@
     }
   ],
   "required": [
-    "@type",
     "xdm:value"
   ]
 }

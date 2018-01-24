@@ -1,0 +1,9 @@
+{
+  "https://ns.adobe.com/xdm/channels/email": "pending",
+  "https://ns.adobe.com/xdm/channels/phone": "out",
+  "https://ns.adobe.com/xdm/channels/sms": "in",
+  "https://ns.adobe.com/xdm/channels/fax": "not_provided",
+  "https://ns.adobe.com/xdm/channels/direct-mail": "not_provided",
+  "https://ns.adobe.com/xdm/channels/apns": "not_provided",
+  "xdm:globalOptout": false
+}

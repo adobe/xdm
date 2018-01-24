@@ -1,0 +1,97 @@
+{
+    "meta:license": [
+        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/context/enduserids",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "End User IDs",
+    "type": "object",
+    "description": "The End User IDs schema is used to represent a federated identity of a visitor or known profile across a number of data sources.\n\nIt is an `object` that is using the `@id` of an XDM data source as keys. \nEach value consists of the (required) ID that is native to the data source, and (optional) metadata about the data source as well as (optional) confidence in the stitching.\n\nAdditionally, this schema can include a property that describes the data source that is responsible for identity stitching.\n",
+    "definitions": {
+        "enduserids": {
+            "properties": {
+                "xdm:realmId": {},
+                "xdm:mcId": {
+                    "title": "Marketing Cloud identifier",
+                    "$ref": "https://ns.adobe.com/xdm/context/identity",
+                    "description": "A unique identifier from Adobe Marketing Cloud."
+                },
+                "xdm:analytics": {
+                    "title": "Analytics",
+                    "$ref": "https://ns.adobe.com/xdm/context/identity",
+                    "description": "Adobe Analytics end user identifier."
+                },
+                "xdm:campaign": {
+                    "title": "Campaign",
+                    "$ref": "https://ns.adobe.com/xdm/context/identity",
+                    "description": "Adobe Campaign profile identifier."
+                },
+                "xdm:target": {
+                    "title": "Target",
+                    "$ref": "https://ns.adobe.com/xdm/context/identity",
+                    "description": "Adobe Target end user identifier."
+                }
+            }
+        }
+    },
+    "minProperties": 1,
+    "properties": {
+        "xdm:realm": {
+            "title": "Realm",
+            "$ref": "https://ns.adobe.com/xdm/data/datasource",
+            "description": "The optional realm associated with the identity stitching strategy."
+        }
+    },
+    "patternProperties": {
+        ".+://.+": {
+            "meta:enum": {
+                "https://ns.adobe.com/experiencecloud/target": "Adobe Target",
+                "https://ns.adobe.com/experiencecloud/campaign": "Adobe Campaign",
+                "https://ns.adobe.com/experiencecloud/analytics": "Adobe Analytics",
+                "https://ns.adobe.com/experiencecloud/mcid": "Marketing Cloud Identity Core Service"
+            },
+            "description": "The identifier, including data source (`@id` must be identical to the property value), foreign ID, and confidence.",
+            "type": "object",
+            "properties": {
+                "xdm:datasource": {
+                    "$ref": "https://ns.adobe.com/xdm/data/datasource"
+                },
+                "xdm:id": {
+                    "type": "string",
+                    "description": "The ID that is being used by the service specified by the outer property name or `xdm:datasource`\n\n. **Note:** opposed to most other IDs in XDM, this is not a URI, as it cannot be guaranteed that all identity services are using URIs as IDs."
+                },
+                "xdm:confidence": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                }
+            },
+            "required": [
+                "xdm:id"
+            ]
+        }
+    },
+    "examples": [
+        {
+            "xdm:realm": {
+                "@id": "https://data.adobe.io/experiencecloud/audiencemanager",
+                "xdm:name": "Adobe Audience Manager"
+            },
+            "https://ns.adobe.com/experiencecloud/mcid": {
+                "xdm:datasource": {
+                    "@id": "https://data.adobe.io/experiencecloud/mcid",
+                    "xdm:name": "Adobe Marketing Cloud Identity Core Service"
+                },
+                "xdm:id": "mcid-sample111",
+                "xdm:confidence": 1
+            },
+            "https://ns.adobe.com/experiencecloud/analytics": {
+                "xdm:id": "mcid-sample111",
+                "xdm:confidence": 0.99
+            }
+        }
+    ]
+}

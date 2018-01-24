@@ -16,6 +16,8 @@
                 {
                     "type": "object",
                     "patternProperties": {
+                        "@type": {},
+                        "@id": {},
                         "^xdm:.*$": {},
                         "^core:.*$": {},
                         "^meta:.*$": {},

@@ -10,6 +10,7 @@
   "title": "Aggregated Asset",
   "type": "object",
   "description": "This schema aggregates all asset sub-schemas that are supported by XDM.",
+  "additionalProperties": true,
   "allOf": [
     {
       "$ref": "http://ns.adobe.com/adobecloud/core/1.0/asset#/definitions/asset"

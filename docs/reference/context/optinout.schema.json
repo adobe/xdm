@@ -1,0 +1,61 @@
+{
+    "meta:license": [
+        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/context/optinout",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "OptInOut",
+    "type": "object",
+    "description": "Describes a users' communication preferences by channel. For each channel individually, which is a property of this object, a user's preference (opt-in, opt-out, pending) can be recorded. In addition, a global override opt-out is possible. Each property of this schema must be a valid and known URI for an XDM Channel.",
+    "definitions": {
+        "optinout": {
+            "patternProperties": {
+                ".+://.+": {
+                    "description": "Communication preference for the outbound channel identified through its URL by the name of the property.",
+                    "type": "string",
+                    "default": "not_provided",
+                    "enum": [
+                        "not_provided",
+                        "pending",
+                        "in",
+                        "out"
+                    ],
+                    "meta:enum": {
+                        "not_provided": "Not Provided",
+                        "pending": "Pending Verification",
+                        "in": "Opt-In: the user explicitly consents to receiving messages.",
+                        "out": "Opt-Out: the user declines to receive any messages on this channel"
+                    }
+                }
+            },
+            "properties": {
+                "xdm:globalOptout": {
+                    "title": "Global Opt-out",
+                    "type": "boolean",
+                    "description": "Do not contact this profile on any outbound channel.",
+                    "default": false
+                }
+            },
+            "additionalProperties": false
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/optinout"
+        }
+    ],
+    "examples": [
+        {
+            "https://ns.adobe.com/xdm/channels/email": "pending",
+            "https://ns.adobe.com/xdm/channels/phone": "out",
+            "https://ns.adobe.com/xdm/channels/sms": "in",
+            "https://ns.adobe.com/xdm/channels/fax": "not_provided",
+            "https://ns.adobe.com/xdm/channels/direct-mail": "not_provided",
+            "https://ns.adobe.com/xdm/channels/apns": "not_provided",
+            "xdm:globalOptout": false
+        }
+    ]
+}

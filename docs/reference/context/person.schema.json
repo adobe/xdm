@@ -10,6 +10,7 @@
     "title": "Person",
     "type": "object",
     "meta:extensible": true,
+    "meta:auditable": true,
     "description": "An individual person. May represent a person acting in various roles, such as a customer, contact, or owner.",
     "definitions": {
         "person": {
@@ -64,6 +65,9 @@
     "allOf": [
         {
             "ref$": "#/definitions/person"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/auditable"
         }
     ],
     "examples": [

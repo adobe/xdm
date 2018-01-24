@@ -1,0 +1,56 @@
+{
+    "meta:license": [
+        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/context/weblink",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Web Link",
+    "type": "object",
+    "description": "Information about the web link of the ExperienceEvent.",
+    "definitions": {
+        "weblink": {
+            "properties": {
+                "xdm:type": {
+                    "title": "Type",
+                    "type": "string",
+                    "description": "The link type.",
+                    "enum": [
+                        "download",
+                        "exit",
+                        "other"
+                    ],
+                    "meta:enum": {
+                        "download": "Download",
+                        "exit": "Exit",
+                        "other": "Other"
+                    }
+                },
+                "xdm:URL": {
+                    "title": "URL",
+                    "type": "string",
+                    "description": "The link URL."
+                },
+                "xdm:name": {
+                    "title": "Name",
+                    "type": "string",
+                    "description": "The link name."
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/weblink"
+        }
+    ],
+    "examples": [
+        {
+            "xdm:type": "other",
+            "xdm:URL": "https://store.google.com/?utm_source=hp_header&utm_medium=google_oo&utm_campaign=GS100042",
+            "xdm:name": "google store"
+        }
+    ]
+}

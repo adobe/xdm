@@ -1,0 +1,105 @@
+{
+    "meta:license": [
+        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/context/browserdetails",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Browser Details",
+    "type": "object",
+    "description": "Detail information related to the browser",
+    "definitions": {
+        "browserdetails": {
+            "properties": {
+                "xdm:name": {
+                    "title": "Name",
+                    "type": "string",
+                    "description": "The application or browser version."
+                },
+                "xdm:version": {
+                    "title": "Version",
+                    "type": "string",
+                    "description": "The application or browser version."
+                },
+                "xdm:userAgent": {
+                    "title": "User Agent",
+                    "type": "string",
+                    "description": "The HTTP User-Agent string from the client request."
+                },
+                "xdm:acceptLanguage": {
+                    "title": "Accept Language",
+                    "type": "string",
+                    "description": "An IETF Language Tag (RFC 5646)."
+                },
+                "xdm:cookiesEnabled": {
+                    "title": "Allows Cookies",
+                    "type": "boolean",
+                    "description": "The current user agent settings allow for the writing of cookies.'"
+                },
+                "xdm:javaScriptEnabled": {
+                    "title": "JavaScript Enabled",
+                    "type": "boolean",
+                    "description": "If JavaScript was enabled in the device this observation was made from."
+                },
+                "xdm:javaScriptVersion": {
+                    "title": "JavaScript Version",
+                    "type": "string",
+                    "description": "The version of JavaScript supported during the observation."
+                },
+                "xdm:javaEnabled": {
+                    "title": "Java Enabled",
+                    "type": "boolean",
+                    "description": "If Java was enabled in the device this observation was made from."
+                },
+                "xdm:javaVersion": {
+                    "title": "Java Version",
+                    "type": "string",
+                    "description": "The version of Java supported during the observation."
+                },
+                "xdm:quicktimeVersion": {
+                    "title": "Quicktime Version",
+                    "type": "string",
+                    "description": "The version of Apple Quicktime supported during the observation."
+                },
+                "xdm:thirdPartyCookiesEnabled": {
+                    "title": "Allows Third-party Cookies",
+                    "type": "boolean",
+                    "description": "If third-party cookies were enabled when this observation was made."
+                },
+                "xdm:viewportHeight": {
+                    "title": "Viewport Height",
+                    "type": "integer",
+                    "description": "The vertical size (in pixels) of the window the experience was displayed inside. For a web view event, the browser viewport height.",
+                    "minimum": 0
+                },
+                "xdm:viewportWidth": {
+                    "title": "Viewport Width",
+                    "type": "integer",
+                    "description": "The horizontal size (in pixels) of the window the experience was displayed inside. For a web view event, the browser viewport width.",
+                    "minimum": 0
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/browserdetails"
+        }
+    ],
+    "examples": [
+        {
+            "xdm:name": "Chrome",
+            "xdm:version": "63.0.3239",
+            "xdm:acceptLanguage": "en",
+            "xdm:cookiesEnabled": true,
+            "xdm:javaScriptEnabled": true,
+            "xdm:javaScriptVersion": "1.8.5",
+            "xdm:javaEnabled": true,
+            "xdm:javaVersion": "Java SE 8",
+            "xdm:viewportHeight": 900,
+            "xdm:viewportWidth": 1680
+        }
+    ]
+}

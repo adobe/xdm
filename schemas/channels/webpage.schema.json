@@ -1,0 +1,78 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/channels/webpage",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Web Page",
+  "type": "object",
+  "description": "Information about the web page of the `ExperienceEvent`.",
+  "definitions": {
+    "webpage": {
+      "properties": {
+        "xdm:section": {
+          "title": "Section",
+          "type": "string",
+          "description": "The section of the web page."
+        },
+        "xdm:name": {
+          "title": "Name",
+          "type": "string",
+          "description": "The name of the web page."
+        },
+        "xdm:URL": {
+          "title": "URL",
+          "type": "string",
+          "format": "uri",
+          "description": "The web page URL."
+        },
+        "xdm:server": {
+          "title": "Server",
+          "type": "string",
+          "format": "hostname",
+          "description": "The server hosts the web page."
+        },
+        "xdm:isErrorPage": {
+          "title": "Is Error Page",
+          "type": "boolean",
+          "description": "Indicate if the page is error page or not."
+        },
+        "xdm:isHomePage": {
+          "title": "Is Home Page",
+          "type": "boolean",
+          "description": "Indicate if the page is home page or not."
+        },
+        "xdm:referrer": {
+          "title": "Referrer",
+          "type": "object",
+          "description": "The referrer of the web page.",
+          "properties": {
+            "URL": {
+              "title": "URL",
+              "type": "string",
+              "description": "The referrer URL."
+            },
+            "domain": {
+              "title": "Domain",
+              "type": "string",
+              "description": "The domain of the referrer."
+            },
+            "type": {
+              "title": "Type",
+              "type": "string",
+              "description": "The referrer type."
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/webpage"
+    }
+  ]
+}

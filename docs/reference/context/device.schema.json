@@ -1,0 +1,96 @@
+{
+    "meta:license": [
+        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/context/device",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Device",
+    "type": "object",
+    "description": "An identified device that is an application or browser instance that is trackable across sessions, normally by cookies.",
+    "definitions": {
+        "device": {
+            "properties": {
+                "xdm:typeID": {
+                    "title": "Type Identifier",
+                    "type": "string",
+                    "description": "An identifier for the device. This may be an identifier from Device Atlas or another service that identifies the hardware that is being used."
+                },
+                "xdm:typeIDService": {
+                    "title": "Type Identifier Service",
+                    "type": "string",
+                    "format": "uri",
+                    "description": "The namespace of the service that is used to identify the device type.",
+                    "meta:enum": {
+                        "https://ns.adobe.com/external/deviceatlas": "Device Atlas"
+                    }
+                },
+                "xdm:type": {
+                    "title": "Type",
+                    "type": "string",
+                    "description": "Type of device being tracked.",
+                    "meta:enum": {
+                        "mobile": "Mobile",
+                        "tablet": "Tablet",
+                        "desktop": "Desktop",
+                        "ereader": "E-Reader",
+                        "gaming": "Gaming Console",
+                        "television": "Television",
+                        "settop": "Set-top Box",
+                        "mediaplayer": "Media Player"
+                    }
+                },
+                "xdm:manufacturer": {
+                    "title": "Manufacturer",
+                    "type": "string",
+                    "description": "The name of the organization who owns the design and creation of the Device. For example, 'Apple' is the manufacturer of the iPhone."
+                },
+                "xdm:model": {
+                    "title": "Model",
+                    "type": "string",
+                    "description": "The name of the model for the Device. This is the common, human-readable or marketing name for the Device. The 'iPhone 6S' is a particular model of mobile phone."
+                },
+                "xdm:modelNumber": {
+                    "title": "Model Number",
+                    "type": "string",
+                    "description": "The unique model number designation assigned by the manufacturer for this Device. Model numbers are not versions, but unique identifiers that identify a particular model configuration. While the model for a particular phone might be 'iPhone 6S' the model number would be 'A1633', or 'A1634' based on configuration at the time of sale."
+                },
+                "xdm:screenHeight": {
+                    "title": "Screen Height",
+                    "type": "integer",
+                    "description": "The number of veritcal pixels of the device's active display in its default orientation."
+                },
+                "xdm:screenWidth": {
+                    "title": "Screen Width",
+                    "type": "integer",
+                    "description": "The number of horizontal pixels of the device's active display in its default orientation."
+                },
+                "xdm:colorDepth": {
+                    "title": "Color Depth",
+                    "type": "integer",
+                    "description": "The number of colors the display is able to represent."
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/device"
+        }
+    ],
+    "examples": [
+        {
+            "xdm:typeID": "TypeIdentifier-111",
+            "xdm:typeIDService": "https://ns.adobe.com/external/deviceatlas",
+            "xdm:type": "mobile",
+            "xdm:manufacturer": "Apple",
+            "xdm:model": "iPhone 6",
+            "xdm:modelNumber": "A1586",
+            "xdm:screenHeight": 667,
+            "xdm:screenWidth": 375,
+            "xdm:colorDepth": 16777216
+        }
+    ]
+}

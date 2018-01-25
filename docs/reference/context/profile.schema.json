@@ -1,0 +1,184 @@
+{
+    "meta:license": [
+        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/context/profile",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Profile",
+    "type": "object",
+    "auditable": true,
+    "description": "XDM Profiles are a singular representation of the attributes of identified and\npartially identified persons. Profiles that are highly identified maybe used for\npersonal communications or highly targeted engagements and can contain detailed\npersonal information such as names, gender, date of birth, locations, and contact\ninformation like phone numbers and email addresses. Profiles may range to the\nother end of the identification spectrum where only anonymous behavioral signals\nare being observed and the amount of identification is simple browser cookies.\nIn this latter case, the sparse Profile data is useful to build more knowledge\non the interests and preferences of the anonymous profile, and over time can\nbecome richer as the person interacting with brand becomes more engaged and\nultimately signs-on to notifications, subscriptions, purchases and other\nconnections with the brand that enrich and fill out the profile.\n\nXDM Profile can contain personal information, identification information, contact\ndetails and communication preferences. Over time XDM Profile will expand to cater\nfor other Profile data such as preference, propensities and other attributes.\n\n",
+    "definitions": {
+        "profile": {
+            "properties": {
+                "xdm:realm": {
+                    "title": "Realm",
+                    "$ref": "https://ns.adobe.com/xdm/data/datasource",
+                    "description": "The optional realm associated with the identity stitching strategy."
+                },
+                "xdm:identities": {
+                    "title": "End User Identities",
+                    "description": "How this profile can be identified",
+                    "$ref": "https://ns.adobe.com/xdm/context/enduserids"
+                },
+                "xdm:person": {
+                    "title": "Person",
+                    "$ref": "https://ns.adobe.com/xdm/context/person",
+                    "description": "An individual actor, contact, or owner.\n"
+                },
+                "xdm:homeAddress": {
+                    "title": "Home Address",
+                    "$ref": "https://ns.adobe.com/xdm/common/address",
+                    "description": "A home postal address.\n"
+                },
+                "xdm:workAddress": {
+                    "title": "Work Address",
+                    "$ref": "https://ns.adobe.com/xdm/common/address",
+                    "description": "A work postal address.\n"
+                },
+                "xdm:emails": {
+                    "title": "Emails",
+                    "type": "array",
+                    "description": "A standard email address.\n",
+                    "items": {
+                        "$ref": "https://ns.adobe.com/xdm/context/emailaddress"
+                    }
+                },
+                "xdm:homePhone": {
+                    "title": "Home Phone",
+                    "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
+                    "description": "Home phone number.\n"
+                },
+                "xdm:workPhone": {
+                    "title": "Work Phone",
+                    "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
+                    "description": "Work phone number.\n"
+                },
+                "xdm:mobilePhone": {
+                    "title": "Mobile Phone",
+                    "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
+                    "description": "Mobile phone number.\n"
+                },
+                "xdm:optInOut": {
+                    "title": "OptInOut",
+                    "$ref": "https://ns.adobe.com/xdm/context/optinout",
+                    "description": "Describes a users opting in and out preferences for communication by medium\nand communication type.\n"
+                },
+                "xdm:pushNotificationTokens": {
+                    "title": "Push Notification Tokens",
+                    "type": "array",
+                    "description": "Push notification tokens are used to communicate with applications that\nare installed on devices or SaaS application accounts.\n",
+                    "items": {
+                        "$ref": "https://ns.adobe.com/xdm/context/pushnotificationtoken"
+                    }
+                },
+                "xdm:orgUnitID": {
+                    "title": "Organizational Unit Identifier",
+                    "type": "string",
+                    "description": "The unit ID within the organization owning the profile. This ID can be used to reference the organization details maintained in another dataset."
+                },
+                "xdm:geoUnitID": {
+                    "title": "Geographical Unit Identifier",
+                    "type": "string",
+                    "description": "The geographical unit ID within the organization owning the profile. This ID can be used to reference the geographical information maintained in another dataset."
+                },
+                "xdm:organizations": {
+                    "title": "Organizations",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/auditable"
+        },
+        {
+            "$ref": "#/definitions/profile"
+        }
+    ],
+    "examples": [
+        {
+            "xdm:realm": {
+                "@id": "https://data.adobe.io/datasources/datasource-123",
+                "xdm:name": "DataSourceIntegrationCode-123"
+            },
+            "xdm:identities": {
+                "xdm:realm": {
+                    "@id": "https://data.adobe.io/experiencecloud/audiencemanager",
+                    "xdm:name": "Adobe Audience Manager"
+                },
+                "https://ns.adobe.com/experiencecloud/mcid": {
+                    "xdm:datasource": {
+                        "@id": "https://data.adobe.io/experiencecloud/mcid",
+                        "xdm:name": "Adobe Marketing Cloud Identity Core Service"
+                    },
+                    "xdm:id": "mcid-sample111",
+                    "xdm:confidence": 1
+                },
+                "https://ns.adobe.com/experiencecloud/analytics": {
+                    "xdm:id": "mcid-sample111",
+                    "xdm:confidence": 0.99
+                }
+            },
+            "xdm:person": {
+                "xdm:name": {
+                    "xdm:givenName": "Jane",
+                    "xdm:middleName": "F",
+                    "xdm:surname": "Doe"
+                },
+                "xdm:birthMonth": 1,
+                "xdm:birthDay": 3,
+                "xdm:birthYear": 1996,
+                "xdm:gender": "female"
+            },
+            "xdm:workAddress": {
+                "@id": "https://ns.adobe.com/entities/address/123",
+                "xdm:primary": false,
+                "xdm:street1": "345 Park Ave",
+                "xdm:city": "San Jose",
+                "xdm:stateProvince": "California",
+                "xdm:stateProvinceISO": "CA",
+                "xdm:postalCode": "95110",
+                "xdm:country": "United States",
+                "xdm:countryCode": "US",
+                "schema:latitude": 37.3382,
+                "schema:longitude": 121.8863,
+                "xdm:status": "active",
+                "xdm:lastVerifiedDate": "2018-01-02"
+            },
+            "xdm:emails": [
+                {
+                    "xdm:primary": false,
+                    "xdm:address": "jsmith@xyzinc.com",
+                    "xdm:label": "John Smith",
+                    "xdm:type": "work",
+                    "xdm:status": "active"
+                }
+            ],
+            "xdm:mobilePhone": {
+                "xdm:primary": true,
+                "xdm:number": "1-408-888-8888",
+                "xdm:status": "active"
+            },
+            "xdm:optInOut": {
+                "https://ns.adobe.com/xdm/channels/email": "pending",
+                "https://ns.adobe.com/xdm/channels/phone": "out",
+                "https://ns.adobe.com/xdm/channels/sms": "in",
+                "https://ns.adobe.com/xdm/channels/fax": "not_provided",
+                "https://ns.adobe.com/xdm/channels/direct-mail": "not_provided",
+                "https://ns.adobe.com/xdm/channels/apns": "not_provided",
+                "xdm:globalOptout": false
+            }
+        }
+    ]
+}

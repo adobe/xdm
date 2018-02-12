@@ -18,7 +18,7 @@
         "type": "string",
         "enum": [ "ack", "read", "write", "attach", "delete" ]
       }
-    },
+    }
   },
   "allOf": [
     { "$ref": "#/definitions/effectiveprivileges" }

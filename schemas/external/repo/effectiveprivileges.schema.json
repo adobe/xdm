@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/base/effectiveprivileges",
+  "title": "Effective Privileges",
+  "description": "Schema for the Effective Privileges resource",
+  "definitions": {
+    "effectiveprivileges": {
+      "type": "object",
+      "properties": {
+        "*": { "$ref": "#/definitions/privilege" }
+      },
+      "additionalProperties": { "$ref": "#/definitions/privilege" }
+    },
+    "privilege": {
+      "description": "Privilege granted to the current Subject",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [ "ack", "read", "write", "attach", "delete" ]
+      }
+    },
+  },
+  "allOf": [
+    { "$ref": "#/definitions/effectiveprivileges" }
+  ]
+}

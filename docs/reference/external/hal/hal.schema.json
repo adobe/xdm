@@ -120,6 +120,22 @@
                 "self": {
                     "href": "/orders/523"
                 },
+                "warehouse": {
+                    "href": "/warehouse/56"
+                },
+                "invoice": {
+                    "href": "/invoices/873"
+                }
+            },
+            "currency": "USD",
+            "status": "shipped",
+            "total": 10.2
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "/orders/523"
+                },
                 "warehouses": [
                     {
                         "href": "/warehouse/56"
@@ -179,22 +195,6 @@
                         "total": 10.2
                     }
                 ]
-            },
-            "currency": "USD",
-            "status": "shipped",
-            "total": 10.2
-        },
-        {
-            "_links": {
-                "self": {
-                    "href": "/orders/523"
-                },
-                "warehouse": {
-                    "href": "/warehouse/56"
-                },
-                "invoice": {
-                    "href": "/invoices/873"
-                }
             },
             "currency": "USD",
             "status": "shipped",

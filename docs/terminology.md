@@ -19,4 +19,4 @@ Schema
 : when used in this document, a Schema is a JSON Schema, as defined by the [JSON Schema Core Specification](http://json-schema.org/latest/json-schema-core.html)
 
 Standard Schema
-: schemas defined in the Adobe XDM repository with the compact IRIs 'xdm'. Standard Schemas define common representations of Experience concepts that are to be reused for interoperability.
+: schemas defined in the Adobe XDM repository with the compact IRIs `xdm`. Standard Schemas define common representations of experience concepts that are to be reused for interoperability.

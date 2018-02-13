@@ -1,76 +1,61 @@
 
-# Video Schema
+# Aggregated Asset Schema
 
 ```
-https://ns.adobe.com/xdm/assets/video
+https://ns.adobe.com/xdm/assets/aggregated-asset
 ```
 
-The Video class is for video assets, i.e. assets that consist of moving pictures and, optionally, sound.
+This schema aggregates all asset sub-schemas that are supported by XDM.
 
 | Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
 |----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [assets/video.schema.json](assets/video.schema.json) |
+| Can be instantiated | No | Forbidden | Permitted | [assets/aggregated-asset.schema.json](assets/aggregated-asset.schema.json) |
 
 ## Schema Hierarchy
 
-* Video `https://ns.adobe.com/xdm/assets/video`
+* Aggregated Asset `https://ns.adobe.com/xdm/assets/aggregated-asset`
+  * [Asset](../external/repo/asset.schema.md) `http://ns.adobe.com/adobecloud/core/1.0/asset`
+  * [Common Properties](../external/repo/common.schema.md) `http://ns.adobe.com/adobecloud/core/1.0`
+  * [HAL Resource](../external/hal/hal.schema.md) `https://ns.adobe.com/xdm/external/hal/resource`
+  * [Content](../content/content.schema.md) `https://ns.adobe.com/xdm/content/content`
+  * [Copyright Owner](copyright-owner.schema.md) `https://ns.adobe.com/xdm/assets/copyright-owner`
   * [Asset](asset.schema.md) `https://ns.adobe.com/xdm/assets/asset`
   * [Rectangular Media](rectangular.schema.md) `https://ns.adobe.com/xdm/assets/rectangular`
+  * [Image](image.schema.md) `https://ns.adobe.com/xdm/assets/image`
+  * [Video](video.schema.md) `https://ns.adobe.com/xdm/assets/video`
 
-## Video Examples
-
+## Aggregated Asset Example
 ```json
 {
-  "repo:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ad",
+  "repo:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
   "xmp:createDate": "2017-09-26T15:52:25+00:00",
   "repo:createdDate": "2017-09-26T15:52:25+00:00",
   "xdm:repositoryCreatedBy": "lars",
   "xmp:modifyDate": "2017-09-26T15:52:25+00:00",
   "repo:lastModifiedDate": "2017-09-26T15:52:25+00:00",
-  "xdm:repositoryLastModifiedBy": "2017-09-26T15:52:25+00:00",
+  "xdm:repositoryLastModifiedBy": "lars",
   "repo:version": "15",
   "repo:size": 1632418,
-  "xdm:path": "here",
+  "repo:path": "here",
   "repo:etag": "15",
-  "tiff:imageLength": 2160,
-  "tiff:imageWidth": 3840,
-  "xdm:aspectRatio": 1.77777777778,
-  "xdm:extent": 10920000,
-  "xdm:videoFrameRate": "f48s1"
+  "repo:name": "example.pdf",
+  "dc:format": "application/pdf"
 }
 ```
 
-```json
-{
-  "repo:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ac",
-  "xmp:createDate": "2017-09-26T15:52:25+00:00",
-  "repo:createdDate": "2017-09-26T15:52:25+00:00",
-  "xdm:repositoryCreatedBy": "lars",
-  "xmp:modifyDate": "2017-09-26T15:52:25+00:00",
-  "repo:lastModifiedDate": "2017-09-26T15:52:25+00:00",
-  "xdm:repositoryLastModifiedBy": "2017-09-26T15:52:25+00:00",
-  "repo:version": "15",
-  "repo:size": 1632418,
-  "xdm:path": "here",
-  "repo:etag": "15",
-  "tiff:imageLength": 2160,
-  "tiff:imageWidth": 3840,
-  "xdm:aspectRatio": 1.77777777778,
-  "xdm:extent": 11700000,
-  "xdm:videoFrameRate": "NTSC"
-}
-```
-
-
-# Video Properties
+# Aggregated Asset Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
+| [@id](#@id) | `string` | Optional | [Content](../content/content.schema.md#@id) |
+| [_embedded](#_embedded) | `object` | Optional | [HAL Resource](../external/hal/hal.schema.md#_embedded) |
+| [_links](#_links) | `object` | Optional | [HAL Resource](../external/hal/hal.schema.md#_links) |
 | [cc:attributionName](#ccattributionName) | `string` | Optional | [Asset](asset.schema.md#ccattributionName) |
 | [cc:attributionUrl](#ccattributionUrl) | `string` | Optional | [Asset](asset.schema.md#ccattributionUrl) |
 | [cc:license](#cclicense) | `string` | Optional | [Asset](asset.schema.md#cclicense) |
 | [dc:creator](#dccreator) | `string[]` | Optional | [Asset](asset.schema.md#dccreator) |
 | [dc:description](#dcdescription) | reference | Optional | [Asset](asset.schema.md#dcdescription) |
+| [dc:format](#dcformat) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#dcformat) |
 | [dc:language](#dclanguage) | `string[]` | Optional | [Asset](asset.schema.md#dclanguage) |
 | [dc:rights](#dcrights) | reference | Optional | [Asset](asset.schema.md#dcrights) |
 | [dc:subject](#dcsubject) | `string[]` | Optional | [Asset](asset.schema.md#dcsubject) |
@@ -79,16 +64,34 @@ The Video class is for video assets, i.e. assets that consist of moving pictures
 | [exif:gpsAltitudeRef](#exifgpsAltitudeRef) | `enum` | Optional | [Asset](asset.schema.md#exifgpsAltitudeRef) |
 | [exif:gpsLatitude](#exifgpsLatitude) | `string` | Optional | [Asset](asset.schema.md#exifgpsLatitude) |
 | [exif:gpsLongitude](#exifgpsLongitude) | `string` | Optional | [Asset](asset.schema.md#exifgpsLongitude) |
+| [photoshop:ICCProfile](#photoshopICCProfile) | `string` | Optional | [Image](image.schema.md#photoshopICCProfile) |
+| [photoshop:colorMode](#photoshopcolorMode) | `enum` | Optional | [Image](image.schema.md#photoshopcolorMode) |
 | [photoshop:credit](#photoshopcredit) | `string` | Optional | [Asset](asset.schema.md#photoshopcredit) |
 | [plus:copyrightOwner](#pluscopyrightOwner) | reference | Optional | [Asset](asset.schema.md#pluscopyrightOwner) |
+| [plus:copyrightOwnerID](#pluscopyrightOwnerID) | `string` | Optional | [Copyright Owner](copyright-owner.schema.md#pluscopyrightOwnerID) |
+| [plus:copyrightOwnerName](#pluscopyrightOwnerName) | `string` | Optional | [Copyright Owner](copyright-owner.schema.md#pluscopyrightOwnerName) |
+| [repo:assetID](#repoassetID) | `string` | Optional | [Asset](../external/repo/asset.schema.md#repoassetID) |
+| [repo:createDate](#repocreateDate) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#repocreateDate) |
+| [repo:etag](#repoetag) | `string` | Optional | [Asset](../external/repo/asset.schema.md#repoetag) |
+| [repo:lastModifiedDate](#repolastModifiedDate) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#repolastModifiedDate) |
+| [repo:name](#reponame) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#reponame) |
+| [repo:path](#repopath) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#repopath) |
+| [repo:size](#reposize) | `integer` | Optional | [Asset](../external/repo/asset.schema.md#reposize) |
+| [repo:version](#repoversion) | `string` | Optional | [Asset](../external/repo/asset.schema.md#repoversion) |
+| [tiff:XResolution](#tiffXResolution) | `object` | Optional | [Image](image.schema.md#tiffXResolution) |
+| [tiff:YResolution](#tiffYResolution) | `object` | Optional | [Image](image.schema.md#tiffYResolution) |
 | [tiff:imageLength](#tiffimageLength) | `integer` | Optional | [Rectangular Media](rectangular.schema.md#tiffimageLength) |
 | [tiff:imageWidth](#tiffimageWidth) | `integer` | Optional | [Rectangular Media](rectangular.schema.md#tiffimageWidth) |
+| [tiff:orientation](#tifforientation) | `integer` | Optional | [Image](image.schema.md#tifforientation) |
+| [tiff:resolutionUnit](#tiffresolutionUnit) | `enum` | Optional | [Image](image.schema.md#tiffresolutionUnit) |
 | [xdm:aliasIDs](#xdmaliasIDs) | `array` | Optional | [Asset](asset.schema.md#xdmaliasIDs) |
 | [xdm:aspectRatio](#xdmaspectRatio) | `number` | Optional | [Rectangular Media](rectangular.schema.md#xdmaspectRatio) |
 | [xdm:documentID](#xdmdocumentID) | `string` | Optional | [Asset](asset.schema.md#xdmdocumentID) |
-| [xdm:extent](#xdmextent) | `integer` | Optional | Video (this schema) |
+| [xdm:extent](#xdmextent) | `integer` | Optional | [Video](video.schema.md#xdmextent) |
 | [xdm:milestone](#xdmmilestone) | `object` | Optional | [Asset](asset.schema.md#xdmmilestone) |
 | [xdm:notSafe](#xdmnotSafe) | `enum` | Optional | [Asset](asset.schema.md#xdmnotSafe) |
+| [xdm:repositoryCreatedBy](#xdmrepositoryCreatedBy) | `string` | Optional | [Content](../content/content.schema.md#xdmrepositoryCreatedBy) |
+| [xdm:repositoryLastModifiedBy](#xdmrepositoryLastModifiedBy) | `string` | Optional | [Content](../content/content.schema.md#xdmrepositoryLastModifiedBy) |
 | [xmp:artboards](#xmpartboards) | Artboard | Optional | [Asset](asset.schema.md#xmpartboards) |
 | [xmp:createDate](#xmpcreateDate) | `string` | Optional | [Asset](asset.schema.md#xmpcreateDate) |
 | [xmp:creatorTool](#xmpcreatorTool) | `string` | Optional | [Asset](asset.schema.md#xmpcreatorTool) |
@@ -97,8 +100,9 @@ The Video class is for video assets, i.e. assets that consist of moving pictures
 | [xmp:layers](#xmplayers) | complex | Optional | [Asset](asset.schema.md#xmplayers) |
 | [xmp:machineKeywords](#xmpmachineKeywords) | `array` | Optional | [Asset](asset.schema.md#xmpmachineKeywords) |
 | [xmp:modifyDate](#xmpmodifyDate) | `string` | Optional | [Asset](asset.schema.md#xmpmodifyDate) |
+| [xmp:numberOfPixels](#xmpnumberOfPixels) | `integer` | Optional | [Image](image.schema.md#xmpnumberOfPixels) |
 | [xmp:rating](#xmprating) | `enum` | Optional | [Asset](asset.schema.md#xmprating) |
-| [xmpDM:videoFrameRate](#xmpDMvideoFrameRate) | `string` | Optional | Video (this schema) |
+| [xmpDM:videoFrameRate](#xmpDMvideoFrameRate) | `string` | Optional | [Video](video.schema.md#xmpDMvideoFrameRate) |
 | [xmpMM:history](#xmpMMhistory) | reference | Optional | [Asset](asset.schema.md#xmpMMhistory) |
 | [xmpMM:manageTo](#xmpMMmanageTo) | `string` | Optional | [Asset](asset.schema.md#xmpMMmanageTo) |
 | [xmpMM:manageUI](#xmpMMmanageUI) | `string` | Optional | [Asset](asset.schema.md#xmpMMmanageUI) |
@@ -107,6 +111,72 @@ The Video class is for video assets, i.e. assets that consist of moving pictures
 | [xmpRights:webStatement](#xmpRightswebStatement) | `string` | Optional | [Asset](asset.schema.md#xmpRightswebStatement) |
 | [xmpTPg:NPages](#xmpTPgNPages) | `integer` | Optional | [Asset](asset.schema.md#xmpTPgNPages) |
 | `*` | any | Additional | this schema *allows* additional properties |
+
+## @id
+
+A unique identifier given to every addressable piece of content in a given repository.
+
+`@id`
+* is optional
+* type: `string`
+* defined in [Content](../content/content.schema.md#@id)
+
+### @id Type
+
+
+`string`
+* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+
+
+
+
+
+
+## _embedded
+
+It is an object whose property names are link relation types (as defined by [RFC5988](https://tools.ietf.org/html/rfc5988)) and values are either a Resource Object or an array of Resource Objects.\n\nEmbedded Resources MAY be a full, partial, or inconsistent version of the representation served from the target URI.
+
+`_embedded`
+* is optional
+* type: `object`
+* defined in [HAL Resource](../external/hal/hal.schema.md#_embedded)
+
+### _embedded Type
+
+
+`object` with following properties:
+
+
+| Property | Type | Required
+|----------|------|----------|
+
+
+
+
+
+
+## _links
+
+It is an object whose property names are link relation types (as defined by [RFC5988](https://tools.ietf.org/html/rfc5988) and values are either a Link Object or an array of Link Objects.  The subject resource of these links is the Resource Object of which the containing `_links` object is a property.
+
+`_links`
+* is optional
+* type: `object`
+* defined in [HAL Resource](../external/hal/hal.schema.md#_links)
+
+### _links Type
+
+
+`object` with following properties:
+
+
+| Property | Type | Required
+|----------|------|----------|
+
+
+
+
+
 
 ## cc:attributionName
 ### Attribution Name
@@ -223,6 +293,39 @@ All items must be of the type:
 
 
 
+
+
+## dc:format
+### Format
+
+The physical or digital manifestation of the resource. Typically, Format should include the media-type of the resource. Format may be used to determine the software, hardware or other equipment needed to display or operate the resource. Recommended best practice is to select a value from a controlled vocabulary (for example, the list of [Internet Media Types](http://www.iana.org/ assignments/media-types/) defining computer media formats).
+
+`dc:format`
+* is optional
+* type: `string`
+* defined in [Common Properties](../external/repo/common.schema.md#dc:format)
+
+### dc:format Type
+
+
+`string`
+
+
+All instances must conform to this regular expression 
+```regex
+\w+\/[-.\w]+(?:\+[-.\w]+)?
+```
+
+* test example: [application/vnd.adobe.photoshop](https://regexr.com/?expression=%5Cw%2B%5C%2F%5B-.%5Cw%5D%2B(%3F%3A%5C%2B%5B-.%5Cw%5D%2B)%3F&text=application%2Fvnd.adobe.photoshop)
+
+
+
+
+### dc:format Example
+
+```json
+"application/vnd.adobe.photoshop"
+```
 
 
 ## dc:language
@@ -462,6 +565,72 @@ All instances must conform to this regular expression
 
 
 
+## photoshop:ICCProfile
+### ICC Profile
+
+The [ICC color profile](http://www.color.org/iccprofile.xalter), such as AppleRGB, AdobeRGB1998.
+
+`photoshop:ICCProfile`
+* is optional
+* type: `string`
+* defined in [Image](image.schema.md#photoshop:ICCProfile)
+
+### photoshop:ICCProfile Type
+
+
+`string`
+
+
+
+### photoshop:ICCProfile Known Values
+| Value | Description |
+|-------|-------------|
+| `0` | ColorMatchRGB |
+| `1` | AppleRGB |
+| `2` | AdobeRGB1998 |
+| `3` | JapanColor2002Newspaper |
+| `4` | USSheetfedUncoated |
+| `5` | JapanColor2001Uncoated |
+| `6` | CoatedFOGRA27 |
+| `7` | UncoatedFOGRA29 |
+| `8` | USWebCoatedSWOP |
+| `9` | JapanColor2001Coated |
+| `10` | JapanWebCoated |
+| `11` | WebCoatedFOGRA28 |
+| `12` | USWebUncoated |
+| `13` | CoatedFOGRA39 |
+| `14` | USSheetfedCoated |
+
+
+
+
+## photoshop:colorMode
+### Color Mode
+
+The color mode or image mode determines how colors combine based on the number of channels in a color model. Different color modes result in different levels of color detail and file size. For instance, use CMYK color mode for images in a full-color print brochure, and use RGB color mode for images in web or e-mail to reduce file size while maintaining color integrity.
+
+`photoshop:colorMode`
+* is optional
+* type: `enum`
+* defined in [Image](image.schema.md#photoshop:colorMode)
+
+The value of this property **must** be equal to one of the [known values below](#photoshop:colorMode-known-values).
+
+### photoshop:colorMode Known Values
+| Value | Description |
+|-------|-------------|
+| `0` | Bitmap |
+| `1` | Gray scale |
+| `2` | Indexed color |
+| `3` | RGB color |
+| `4` | CMYK color |
+| `7` | Multi-channel |
+| `8` | Duotone |
+| `9` | LAB color |
+
+
+
+
 ## photoshop:credit
 ### Credit
 
@@ -508,6 +677,274 @@ All items must be of the type:
 
 
 
+## plus:copyrightOwnerID
+### Copyright Owner ID
+
+ID of the copyright owner.
+If the PLUS-ID being stored in this property is registered with the PLUS Coalition, it should be expressed as a URL. For example: http://plus-id.org/PLUS-ID
+
+`plus:copyrightOwnerID`
+* is optional
+* type: `string`
+* defined in [Copyright Owner](copyright-owner.schema.md#plus:copyrightOwnerID)
+
+### plus:copyrightOwnerID Type
+
+
+`string`
+
+
+
+
+
+
+## plus:copyrightOwnerName
+### Copyright Owner Name
+
+Name of Copyright Owner.
+
+`plus:copyrightOwnerName`
+* is optional
+* type: `string`
+* defined in [Copyright Owner](copyright-owner.schema.md#plus:copyrightOwnerName)
+
+### plus:copyrightOwnerName Type
+
+
+`string`
+
+
+
+
+
+
+## repo:assetID
+
+A unique identifier given to every addressable asset in a given repository.
+
+The format is a [GUID-based URN](https://www.ietf.org/rfc/rfc4122.txt). The pattern to generate an Asset ID is ```urn:aaid:{system}:{id} - {format}:{namespace}:{system}:{id}```
+
+`repo:assetID`
+* is optional
+* type: `string`
+* defined in [Asset](../external/repo/asset.schema.md#repo:assetID)
+
+### repo:assetID Type
+
+
+`string`
+
+
+All instances must conform to this regular expression 
+```regex
+^urn:aaid:[A-Za-z0-9]+:[A-Za-z0-9]+:[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}$
+```
+
+* test example: [urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e](https://regexr.com/?expression=%5Eurn%3Aaaid%3A%5BA-Za-z0-9%5D%2B%3A%5BA-Za-z0-9%5D%2B%3A%5BA-Fa-f0-9%5D%7B8%7D-%5BA-Fa-f0-9%5D%7B4%7D-%5BA-Fa-f0-9%5D%7B4%7D-%5BA-Fa-f0-9%5D%7B4%7D-%5BA-Fa-f0-9%5D%7B12%7D%24&text=urn%3Aaaid%3Asc%3AUS%3A6dc33479-13ca-4b19-b25d-c805eff8a69e)
+
+
+
+
+### repo:assetID Example
+
+```json
+"urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e"
+```
+
+
+## repo:createDate
+
+The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is &#34;2004-10-23T12:00:00-06:00&#34;.
+
+`repo:createDate`
+* is optional
+* type: `string`
+* defined in [Common Properties](../external/repo/common.schema.md#repo:createDate)
+
+### repo:createDate Type
+
+
+`string`
+* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+
+
+
+
+### repo:createDate Example
+
+```json
+"2004-10-23T12:00:00-06:00"
+```
+
+
+## repo:etag
+### ETag
+
+An  ETag is an HTTP response header returned by an HTTP/1.1 compliant web server used to determine change in content of a resource at a given URL. 
+
+`repo:etag`
+* is optional
+* type: `string`
+* defined in [Asset](../external/repo/asset.schema.md#repo:etag)
+
+### repo:etag Type
+
+
+`string`
+
+
+
+
+
+
+## repo:lastModifiedDate
+
+The server date and time when the resource was most recently modified in the repository, such as when a new version of an asset is uploaded or a directory&#39;s child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is &#34;2004-10-23T12:00:00-06:00&#34;.
+
+`repo:lastModifiedDate`
+* is optional
+* type: `string`
+* defined in [Common Properties](../external/repo/common.schema.md#repo:lastModifiedDate)
+
+### repo:lastModifiedDate Type
+
+
+`string`
+* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+
+
+
+
+### repo:lastModifiedDate Example
+
+```json
+"2004-10-23T12:00:00-06:00"
+```
+
+
+## repo:name
+
+
+`repo:name`
+* is optional
+* type: `string`
+* defined in [Common Properties](../external/repo/common.schema.md#repo:name)
+
+### repo:name Type
+
+
+`string`
+
+
+
+
+
+
+## repo:path
+
+
+`repo:path`
+* is optional
+* type: `string`
+* defined in [Common Properties](../external/repo/common.schema.md#repo:path)
+
+### repo:path Type
+
+
+`string`
+
+
+
+
+
+
+## repo:size
+### Size
+
+Size of the asset in bytes.
+
+`repo:size`
+* is optional
+* type: `integer`
+* defined in [Asset](../external/repo/asset.schema.md#repo:size)
+
+### repo:size Type
+
+
+`integer`
+
+
+
+
+
+
+## repo:version
+
+The version ID of the piece of content. It will be generated both on explicit and implicit save or upload.
+
+`repo:version`
+* is optional
+* type: `string`
+* defined in [Asset](../external/repo/asset.schema.md#repo:version)
+
+### repo:version Type
+
+
+`string`
+
+
+
+
+
+
+## tiff:XResolution
+### X-Resolution
+
+Horizontal resolution in pixels per `resolutionUnit`.
+
+`tiff:XResolution`
+* is optional
+* type: `object`
+* defined in [Image](image.schema.md#tiff:XResolution)
+
+### tiff:XResolution Type
+
+
+`object` with following properties:
+
+
+| Property | Type | Required
+|----------|------|----------|
+
+
+
+
+
+
+## tiff:YResolution
+### Y-Resolution
+
+Vertical resolution in pixels per `resolutionUnit`.
+
+`tiff:YResolution`
+* is optional
+* type: `object`
+* defined in [Image](image.schema.md#tiff:YResolution)
+
+### tiff:YResolution Type
+
+
+`object` with following properties:
+
+
+| Property | Type | Required
+|----------|------|----------|
+
+
+
+
+
+
 ## tiff:imageLength
 ### Length
 
@@ -546,6 +983,68 @@ Width in pixels
 * minimum value: `0`
 
 
+
+
+
+
+## tiff:orientation
+### Orientation
+
+The orientation of the image. Following values are permitted:
+- `1` = Horizontal (normal)
+- `2` = Mirror horizontal
+- `3` = Rotate 180 degrees
+- `4` = Mirror vertical
+- `5` = Mirror horizontal and rotate 270 degrees clockwise
+- `6` = Rotate 90 degrees clockwise
+- `7` = Mirror horizontal and rotate 90 degrees clockwise
+- `8` = Rotate 270 degrees clockwise
+
+`tiff:orientation`
+* is optional
+* type: `integer`
+* defined in [Image](image.schema.md#tiff:orientation)
+
+### tiff:orientation Type
+
+
+`integer`
+* minimum value: `1`
+* maximum value: `8`
+
+
+### tiff:orientation Known Values
+| Value | Description |
+|-------|-------------|
+| `1` | Horizontal (normal) |
+| `2` | Mirror horizontal |
+| `3` | Rotate 180 degrees |
+| `4` | Mirror vertical |
+| `5` | Mirror horizontal and rotate 270 degrees clockwise |
+| `6` | Rotate 90 degrees clockwise |
+| `7` | Mirror horizontal and rotate 90 degrees clockwise |
+| `8` | Rotate 270 degrees clockwise |
+
+
+
+
+## tiff:resolutionUnit
+### Resolution Unit
+
+Unit used for `XResolution` and `YRresolution`. Possible values are 2 (inches) and 3 (centimeters).
+
+`tiff:resolutionUnit`
+* is optional
+* type: `enum`
+* defined in [Image](image.schema.md#tiff:resolutionUnit)
+
+The value of this property **must** be equal to one of the [known values below](#tiff:resolutionUnit-known-values).
+
+### tiff:resolutionUnit Known Values
+| Value | Description |
+|-------|-------------|
+| `2` | inches |
+| `3` | centimeters |
 
 
 
@@ -669,7 +1168,7 @@ The duration of the video in milliseconds. This property is inspired by `dc:exte
 `xdm:extent`
 * is optional
 * type: `integer`
-* defined in this schema
+* defined in [Video](video.schema.md#xdm:extent)
 
 ### xdm:extent Type
 
@@ -766,6 +1265,44 @@ The value of this property **must** be equal to one of the [known values below](
 |-------|-------------|
 | `0` | The content is safe for work |
 | `1` | The content is not safe for work |
+
+
+
+
+## xdm:repositoryCreatedBy
+
+ID of the user who initiated the action that caused the resource to be created in the repository.
+
+`xdm:repositoryCreatedBy`
+* is optional
+* type: `string`
+* defined in [Content](../content/content.schema.md#xdm:repositoryCreatedBy)
+
+### xdm:repositoryCreatedBy Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:repositoryLastModifiedBy
+
+ID of the user who initiated the action that most recently caused the resource to be modified in the repository.
+
+`xdm:repositoryLastModifiedBy`
+* is optional
+* type: `string`
+* defined in [Content](../content/content.schema.md#xdm:repositoryLastModifiedBy)
+
+### xdm:repositoryLastModifiedBy Type
+
+
+`string`
+
+
 
 
 
@@ -1075,6 +1612,26 @@ The date and time when asset was last modified. The Date Time property should co
 
 
 
+## xmp:numberOfPixels
+
+Total number of pixels
+
+`xmp:numberOfPixels`
+* is optional
+* type: `integer`
+* defined in [Image](image.schema.md#xmp:numberOfPixels)
+
+### xmp:numberOfPixels Type
+
+
+`integer`
+* minimum value: `0`
+
+
+
+
+
+
 ## xmp:rating
 ### Rating
 
@@ -1118,7 +1675,7 @@ These examples show common video and audio frame rates:
 `xmpDM:videoFrameRate`
 * is optional
 * type: `string`
-* defined in this schema
+* defined in [Video](video.schema.md#xmpDM:videoFrameRate)
 
 ### xmpDM:videoFrameRate Type
 

@@ -1,0 +1,74 @@
+{
+    "meta:license": [
+        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/data/commercemetrics",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Commerce Metrics",
+    "type": "object",
+    "description": "Quantifiable measures used to track and assess the status of a commerce business process.",
+    "definitions": {
+        "commercemetrics": {
+            "properties": {
+                "xdm:productViews": {
+                    "title": "Product Views",
+                    "$ref": "https://ns.adobe.com/xdm/data/metric",
+                    "description": "Number of views of a product has occurred. (same as productView in Adobe Analytics).\n"
+                },
+                "xdm:productListOpens": {
+                    "title": "Product List Opens",
+                    "$ref": "https://ns.adobe.com/xdm/data/metric",
+                    "description": "Number of opens, initializations of a new product list has occurred. (same as scOpen in Adobe Analytics).\n"
+                },
+                "xdm:productListAdds": {
+                    "title": "Product List Adds",
+                    "$ref": "https://ns.adobe.com/xdm/data/metric",
+                    "description": "Number of adds of a product to the product list has occurred. (same as scAdd in Adobe Analytics).\n"
+                },
+                "xdm:productListRemovals": {
+                    "title": "Product List Removals",
+                    "$ref": "https://ns.adobe.com/xdm/data/metric",
+                    "description": "Number of removals of a product entry from a product list has occurred. (same as scRemove in Adobe Analytics).\n"
+                },
+                "xdm:productListViews": {
+                    "title": "Product List Views",
+                    "$ref": "https://ns.adobe.com/xdm/data/metric",
+                    "description": "Number of views of a product list has occurred. (same as scView in Adobe Analytics)\n"
+                },
+                "xdm:saveForLaters": {
+                    "title": "Save for Laters",
+                    "$ref": "https://ns.adobe.com/xdm/data/metric",
+                    "description": "Number of requests to save a product list for a future session.\n"
+                },
+                "xdm:checkouts": {
+                    "title": "Checkouts",
+                    "$ref": "https://ns.adobe.com/xdm/data/metric",
+                    "description": "Number of actions during a checkout process of a product list, there can be more than one checkout event if there are multiple steps in a checkout\nprocess. If there are multiple steps the event time information and\nreferenced page or experience is used to identify the step individual\nevents represent in order.\n"
+                },
+                "xdm:abandons": {
+                    "title": "Abandons",
+                    "$ref": "https://ns.adobe.com/xdm/data/metric",
+                    "description": "Number of abandons for which a product list has been identified as no longer purchasable or accessible by the user without the user re-creating the product list from scratch.\n"
+                },
+                "xdm:productListReopens": {
+                    "title": "Product List Reopens",
+                    "$ref": "https://ns.adobe.com/xdm/data/metric",
+                    "description": "Number of reopens for which a product list that was no longer accessible has been re-activated by the user, for example via a re-marketing activity.\n"
+                },
+                "xdm:purchases": {
+                    "title": "Purchases",
+                    "$ref": "https://ns.adobe.com/xdm/data/metric",
+                    "description": "Number of orders has occurred. purchase is the only required action in a commerce conversion. Purchase must have a product list referenced. (same as Adobe Analytics)\n"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/commercemetrics"
+        }
+    ]
+}

@@ -1,19 +1,44 @@
 {
-  "meta:license": [
-    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
-    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
-    "you may not use this file except in compliance with the License. You may obtain a copy",
-    "of the License at https://creativecommons.org/licenses/by/4.0/"
-  ],
-  "$id": "https://ns.adobe.com/xdm/data/metrics",
-  "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Metrics",
-  "type": "object",
-  "description": "This is map of metrics and measues. Each key is the valid URI of a known `Metric`. Each value is a `Measure`, i.e. a concrete data point.",
-  "patternProperties": {
-    ".+://.+": {
-      "$ref": "https://ns.adobe.com/xdm/data/measure"
-    }
-  },
-  "additionalProperties": false
+    "meta:license": [
+        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/data/metrics",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Metrics",
+    "type": "object",
+    "description": "Quantifiable measures used to track and assess the status of a specific business process.",
+    "definitions": {
+        "metrics": {
+            "properties": {
+                "xdm:directMarketing": {
+                    "title": "Direct Marketing",
+                    "$ref": "https://ns.adobe.com/xdm/data/directmarketingmetrics",
+                    "description": "Direct marketing metrics\n"
+                },
+                "xdm:commerce": {
+                    "title": "Commerce",
+                    "$ref": "https://ns.adobe.com/xdm/data/commercemetrics",
+                    "description": "Commerce metrics\n"
+                },
+                "xdm:advertising": {
+                    "title": "Advertising",
+                    "$ref": "https://ns.adobe.com/xdm/data/advertisingmetrics",
+                    "description": "Advertising metrics\n"
+                },
+                "xdm:web": {
+                    "title": "Web",
+                    "$ref": "https://ns.adobe.com/xdm/data/webmetrics",
+                    "description": "Web metrics\n"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/metrics"
+        }
+    ]
 }

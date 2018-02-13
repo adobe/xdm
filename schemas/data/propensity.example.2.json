@@ -1,0 +1,10 @@
+{
+  "@id": "https://ns.adobe.com/entities/propensity/133",
+  "xdm:score": 0.80,
+  "xdm:action": "abandon",
+  "xdm:reasonCode": "5a",
+  "xdm:reasonText": "Usage data indicates likely abandonment due to reduced usage frequency in last 30 days.",
+  "xdm:timeWindow": 30,
+  "xdm:unitOfTime": "days",
+  "xdm:algorithmId": "adobe.memberChurn"
+}

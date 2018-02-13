@@ -1,0 +1,49 @@
+{
+    "meta:license": [
+        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/data/directmarketingmetrics",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Direct Marketing Metrics",
+    "type": "object",
+    "description": "Quantifiable measures used to track and assess the status of a direct marketing business process.",
+    "definitions": {
+        "directmarketingmetrics": {
+            "properties": {
+                "xdm:sends": {
+                    "title": "Sends",
+                    "$ref": "https://ns.adobe.com/xdm/data/metric",
+                    "description": "Number of asynchronous message (email, SMS, MMS etc) has been dispatched to an persons account/address/device.\n"
+                },
+                "xdm:bounces": {
+                    "title": "Bounces",
+                    "$ref": "https://ns.adobe.com/xdm/data/metric",
+                    "description": "Number of asynchronous message has been returned by the receiving system.\n"
+                },
+                "xdm:nonDeliverables": {
+                    "title": "Non-deliverables",
+                    "$ref": "https://ns.adobe.com/xdm/data/metric",
+                    "description": "Number of asynchronous message failed to deliver in a way that indicates that no future messages will be deliverable either to this address.\n"
+                },
+                "xdm:mirrorPages": {
+                    "title": "Mirror Pages",
+                    "$ref": "https://ns.adobe.com/xdm/data/metric",
+                    "description": "Number of mirror pages for which a link to the online mirror page of a message has been clicked..\n"
+                },
+                "xdm:userComplaints": {
+                    "title": "User Complaints",
+                    "$ref": "https://ns.adobe.com/xdm/data/metric",
+                    "description": "Number of user complaints has been received. This generally occurred when a recipient of a message reported it as spam.\n"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/directmarketingmetrics"
+        }
+    ]
+}

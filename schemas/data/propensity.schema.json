@@ -1,0 +1,65 @@
+{
+    "meta:license": [
+        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/data/propensity",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Propensity",
+    "type": "object",
+    "description": "The propensity schema represents the likelihood of a certain action happening in a certain window of time. The propensity schema can host various predictive results e.g churn. This is a general-purpose schema that is designed to contain the results of any propensity scoring algorithm.",
+    "definitions": {
+        "propensity": {
+            "properties": {
+                "xdm:score": {
+                    "title": "Score",
+                    "type": "number",
+                    "description": "The score is a real number between 0 and 1 (both inclusive). A higher value indicates a higher likelihood of the action occurring."
+                },
+                "xdm:action": {
+                    "title": "Action",
+                    "type": "string",
+                    "description": "The action that the propensity is testing the likelihood of occurring. Selected from the metric types of Experience Event where applicable."
+                },
+                "xdm:reasonCode": {
+                    "title": "Reason Code",
+                    "type": "string",
+                    "description": "The code that represents the algorithmic selected reason that the action is likely."
+                },
+                "xdm:reasonText": {
+                    "title": "Reason Text",
+                    "type": "string",
+                    "description": "The description text that represents the algorithmic selected reason that the action is predicted to occur."
+                },
+                "xdm:timeWindow": {
+                    "title": "Time Window",
+                    "type": "number",
+                    "description": "The time within which the action as predicted to occur."
+                },
+                "xdm:unitOfTime": {
+                    "title": "Unit of Time",
+                    "type": "string",
+                    "description": "The unit for measuring time of the window attribute.",
+                    "meta:enum": {
+                        "seconds": "Seconds",
+                        "minutes": "Minutes",
+                        "hours": "Hours",
+                        "days": "Days"
+                    }
+                },
+                "xdm:algorithmId": {
+                    "title": "Algorithm Id",
+                    "type": "string",
+                    "description": "The universal identifier of the Algorithm used."
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/propensity"
+        }
+    ]
+}

@@ -22,11 +22,6 @@
           "title": "Adobe Analytics Cloud End User Ids",
           "$ref": "https://ns.adobe.com/xdm/context/identity",
           "description": "Adobe Analytics Cloud extension to End User Ids."
-        },
-        "https://ns.adobe.com/experience/identity": {
-          "title": "Adobe Identity Service End User Ids",
-          "$ref": "https://ns.adobe.com/xdm-extensions/experience/identity/enduserids",
-          "description": "Adobe Identity Service extension to End User Ids."
         }
       }
     }

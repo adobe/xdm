@@ -13,65 +13,27 @@
   "definitions": {
     "enduserids": {
       "properties": {
-        "xdm:realmId": {},
-        "xdm:mcId": {
-          "title": "Marketing Cloud identifier",
+        "https://ns.adobe.com/experience/mcId": {
+          "title": "Adobe Marketing Cloud Id",
           "$ref": "https://ns.adobe.com/xdm/context/identity",
           "description": "A unique identifier from Adobe Marketing Cloud."
         },
-        "xdm:analytics": {
-          "title": "Analytics",
+        "https://ns.adobe.com/experience/analytics": {
+          "title": "Adobe Analytics Cloud End User Ids",
           "$ref": "https://ns.adobe.com/xdm/context/identity",
-          "description": "Adobe Analytics end user identifier."
+          "description": "Adobe Analytics Cloud extension to End User Ids."
         },
-        "xdm:campaign": {
-          "title": "Campaign",
-          "$ref": "https://ns.adobe.com/xdm/context/identity",
-          "description": "Adobe Campaign profile identifier."
-        },
-        "xdm:target": {
-          "title": "Target",
-          "$ref": "https://ns.adobe.com/xdm/context/identity",
-          "description": "Adobe Target end user identifier."
+        "https://ns.adobe.com/experience/identity": {
+          "title": "Adobe Identity Service End User Ids",
+          "$ref": "https://ns.adobe.com/xdm-extensions/experience/identity/enduserids",
+          "description": "Adobe Identity Service extension to End User Ids."
         }
       }
     }
   },
-  "minProperties": 1,
-  "properties": {
-    "xdm:realm": {
-      "title": "Realm",
-      "$ref": "https://ns.adobe.com/xdm/data/datasource",
-      "description": "The optional realm associated with the identity stitching strategy."
+  "allOf": [
+    {
+      "$ref": "#/definitions/enduserids"
     }
-  },
-  "patternProperties": {
-    ".+://.+": {
-      "meta:enum": {
-        "https://ns.adobe.com/experiencecloud/target": "Adobe Target",
-        "https://ns.adobe.com/experiencecloud/campaign": "Adobe Campaign",
-        "https://ns.adobe.com/experiencecloud/analytics": "Adobe Analytics",
-        "https://ns.adobe.com/experiencecloud/mcid": "Marketing Cloud Identity Core Service"
-      },
-      "description": "The identifier, including data source (`@id` must be identical to the property value), foreign ID, and confidence.",
-      "type": "object",
-      "properties": {
-        "xdm:datasource": {
-          "$ref": "https://ns.adobe.com/xdm/data/datasource"
-        },
-        "xdm:id": {
-          "type": "string",
-          "description": "The ID that is being used by the service specified by the outer property name or `xdm:datasource`\n\n. **Note:** opposed to most other IDs in XDM, this is not a URI, as it cannot be guaranteed that all identity services are using URIs as IDs."
-        },
-        "xdm:confidence": {
-          "type": "number",
-          "minimum": 0,
-          "maximum": 1
-        }
-      },
-      "required": [
-        "xdm:id"
-      ]
-    }
-  }
+  ]
 }

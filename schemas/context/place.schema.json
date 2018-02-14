@@ -41,12 +41,12 @@
         },
         "xdm:shape": {
           "title": "Geo Shape",
-          "$ref": "http://schema.org/GeoShape",
+          "$ref": "https://ns.adobe.com/xdm/common/geoshape",
           "description": "The geographic shape of the physical location."
         },
         "xdm:pointOfInterest": {
           "title": "Point of Interest",
-          "$ref": "http://schema.org/GeoCoordinates",
+          "$ref": "https://ns.adobe.com/xdm/common/geocoordinates",
           "description": "The coordinates of the point of interest for this location."
         },
         "xdm:containedInPlace": {

@@ -1,5 +1,5 @@
 {
-  "@id": "https://data.adobe.io/entities/places/locationid-123456",
+  "@id": "https://ns.adobe.com/entities/places/locationid-123456",
   "schema:description": "A nice place to work",
   "xdm:address": {
     "@id": "https://ns.adobe.com/entities/address/123",
@@ -18,7 +18,7 @@
   },
   "schema:telephone": "1-408-888-0000",
   "xdm:containsPlaces": [
-    "https://data.adobe.io/entities/places/locationid-123457",
-    "https://data.adobe.io/entities/places/locationid-123458"
+    "https://ns.adobe.com/entities/places/locationid-123457",
+    "https://ns.adobe.com/entities/places/locationid-123458"
   ]
 }

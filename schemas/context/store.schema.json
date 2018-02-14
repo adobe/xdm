@@ -1,0 +1,127 @@
+{
+    "meta:license": [
+        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/context/store",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Store",
+    "type": "object",
+    "description": "A place or property (physical or digital) where goods or services are sold, distributed or subscribed. Includes a store with in a larger store.",
+    "definitions": {
+        "store": {
+            "properties": {
+                "@id": {
+                    "title": "Store Id",
+                    "type": "string",
+                    "format": "uri",
+                    "description": "The unique identifier of the store."
+                },
+                "xdm:name": {
+                    "title": "Store Name",
+                    "type": "string",
+                    "description": "The common name of the store."
+                },
+                "xdm:description": {
+                    "title": "Description",
+                    "type": "string",
+                    "description": "The description of the store."
+                },
+                "xdm:parentStoreId": {
+                    "title": "Parent Store Id",
+                    "type": "string",
+                    "description": "Id of the store this store is contained or closely related to, e.g a pharmacy inside a supermarket store."
+                },
+                "xdm:brand": {
+                    "title": "Brand",
+                    "type": "string",
+                    "description": "Store brand or label."
+                },
+                "xdm:location": {
+                    "title": "Location",
+                    "$ref": "https://ns.adobe.com/xdm/context/place",
+                    "description": "The perminant physical location of the store."
+                },
+                "xdm:generalEmail": {
+                    "title": "General Email",
+                    "$ref": "https://ns.adobe.com/xdm/context/emailaddress",
+                    "description": "The general email address for the store."
+                },
+                "xdm:openingHours": {
+                    "title": "Opening Hours",
+                    "$ref": "https://ns.adobe.com/xdm/context/openinghours",
+                    "description": "Store opening hours."
+                },
+                "xdm:manager": {
+                    "title": "Person",
+                    "$ref": "https://ns.adobe.com/xdm/context/person",
+                    "description": "Manager of the store."
+                },
+                "xdm:dmaId": {
+                    "title": "Designated Market Area",
+                    "type": "integer",
+                    "description": "The Nielsen Media Research designated market area the store serves."
+                },
+                "xdm:market": {
+                    "title": "Market",
+                    "type": "string",
+                    "description": "Sales organization  market area the store serves."
+                },
+                "xdm:openingDate": {
+                    "title": "Original Opening Date",
+                    "type": "string",
+                    "format": "date",
+                    "description": "The date that the store first opened for business, even if the address changed, the area served remained the same."
+                },
+                "xdm:remodelDate": {
+                    "title": "Last Remodel Date",
+                    "type": "string",
+                    "format": "date",
+                    "description": "The date that the store last had a significant remodel."
+                },
+                "xdm:revenueBand": {
+                    "title": "Revenue Band",
+                    "type": "string",
+                    "description": "Revenue classification for this store."
+                },
+                "xdm:model": {
+                    "title": "Store Model",
+                    "type": "string",
+                    "description": "The model or type of store. Examples: online, express, micro, kiosk, partner, superstore, mobile, distribution center."
+                },
+                "xdm:features": {
+                    "title": "Store Features",
+                    "type": "array",
+                    "description": "List of non-standard features that the store has, such as product demo areas, e.g Apple displays, Bike Shop etc.",
+                    "uniqueItems": true,
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "xdm:productCategories": {
+                    "title": "Product Categories",
+                    "type": "array",
+                    "description": "List of product categories this store supports that directly correlate with the categories in the Product schema, e.g cloths, women’s shoes.",
+                    "uniqueItems": true,
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            },
+            "required": [
+                "@id",
+                "xdm:name"
+            ]
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/store"
+        }
+    ]
+}

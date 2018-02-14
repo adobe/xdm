@@ -1,0 +1,76 @@
+ {
+   "@id": "https://ns.adobe.com/entities/store/123",
+   "xdm:name": "ABC Stores",
+   "xdm:description": "Retail company operates a chain of grocery stores in California",
+   "xdm:brand": "MyBrand",
+   "xdm:location": {
+     "@id": "https://ns.adobe.com/entities/places/locationid-123456",
+     "schema:description": "A nice place to shop",
+     "xdm:address": {
+       "@id": "https://ns.adobe.com/entities/address/123",
+       "xdm:primary": true,
+       "xdm:type": "work",
+       "xdm:street1": "100 Lincoln Ave",
+       "xdm:city": "San Jose",
+       "xdm:stateProvince": "California",
+       "xdm:stateProvinceISO": "CA",
+       "xdm:postalCode": "95125",
+       "xdm:country": "United States",
+       "xdm:countryCode": "US",
+       "schema:latitude": 37.3382,
+       "schema:longitude": 121.8863,
+       "xdm:status": "active",
+       "xdm:lastVerifiedDate": "2018-01-03"
+     },
+     "schema:telephone": "1-408-888-0000"
+   },
+   "xdm:generalEmail": {
+     "xdm:primary": true,
+     "xdm:address": "contact@abcstores.com",
+     "xdm:label": "ABC Stores",
+     "xdm:type": "work",
+     "xdm:status": "active"
+   },
+   "xdm:openingHours": {
+     "xdm:sunday": {
+       "xdm:opens": "10:00",
+       "xdm:closes": "18:00"
+     },
+     "xdm:monday": {
+       "xdm:opens": "10:00",
+       "xdm:closes": "18:00"
+     },
+     "xdm:tuesday": {
+       "xdm:opens": "10:00",
+       "xdm:closes": "18:00"
+     },
+     "xdm:wednesday": {
+       "xdm:opens": "10:00",
+       "xdm:closes": "18:00"
+     },
+     "xdm:thursday": {
+       "xdm:opens": "10:00",
+       "xdm:closes": "18:00"
+     },
+     "xdm:friday": {
+       "xdm:opens": "10:00",
+       "xdm:closes": "18:00"
+     },
+     "xdm:saturday": {
+       "xdm:opens": "10:00",
+       "xdm:closes": "18:00"
+     }
+   },
+   "xdm:manager": {
+     "xdm:name": {
+       "xdm:givenName": "Jane",
+       "xdm:middleName": "F",
+       "xdm:surname": "Doe"
+     },
+     "xdm:birthMonth": 1,
+     "xdm:birthDay": 3,
+     "xdm:birthYear": 1996,
+     "xdm:gender": "female"
+   }
+
+ }

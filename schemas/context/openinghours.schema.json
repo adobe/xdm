@@ -1,0 +1,59 @@
+{
+    "meta:license": [
+        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/context/openinghours",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Opening Hours",
+    "type": "object",
+    "description": "Opening and closing times for a store or service.",
+    "definitions": {
+        "openinghours": {
+            "properties": {
+                "xdm:sunday": {
+                    "title": "Sunday",
+                    "$ref": "https://ns.adobe.com/xdm/context/times",
+                    "description": "Sunday times."
+                },
+                "xdm:monday": {
+                    "title": "Monday",
+                    "$ref": "https://ns.adobe.com/xdm/context/times",
+                    "description": "Monday times."
+                },
+                "xdm:tuesday": {
+                    "title": "Tuesday",
+                    "$ref": "https://ns.adobe.com/xdm/context/times",
+                    "description": "Tuesday times."
+                },
+                "xdm:wednesday": {
+                    "title": "Wednesday",
+                    "$ref": "https://ns.adobe.com/xdm/context/times",
+                    "description": "Wednesday times."
+                },
+                "xdm:thursday": {
+                    "title": "Thursday",
+                    "$ref": "https://ns.adobe.com/xdm/context/times",
+                    "description": "Thursday times."
+                },
+                "xdm:friday": {
+                    "title": "Friday",
+                    "$ref": "https://ns.adobe.com/xdm/context/times",
+                    "description": "Friday times."
+                },
+                "xdm:saturday": {
+                    "title": "Saturday",
+                    "$ref": "https://ns.adobe.com/xdm/context/times",
+                    "description": "Saturday times."
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/openinghours"
+        }
+    ]
+}

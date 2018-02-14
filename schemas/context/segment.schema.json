@@ -1,0 +1,57 @@
+{
+    "meta:license": [
+        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/context/segment",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Segment",
+    "type": "object",
+    "description": "A Segment assignment used to define the audience a profile belongs to with meta data about the assigning agent and time and duration of the assignment.",
+    "definitions": {
+        "segment": {
+            "properties": {
+                "@id": {
+                    "title": "Identity",
+                    "type": "string",
+                    "format": "uri",
+                    "description": "Unique identity of the segment."
+                },
+                "xdm:endUserIds": {
+                    "title": "End User IDs",
+                    "$ref": "https://ns.adobe.com/xdm/context/enduserids",
+                    "description": "Condensed, normalized encapsulation of an end user identifier that the segment is assigned to."
+                },
+                "xdm:name": {
+                    "title": "Name",
+                    "type": "string",
+                    "description": "The common name associated with the segment."
+                },
+                "xdm:assignedOn": {
+                    "title": "Assigned On",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "The date the segment was assigned to the profile."
+                },
+                "xdm:validUntil": {
+                    "title": "Valid Until",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "The date the segment assignment is valid until."
+                },
+                "xdm:assignedById": {
+                    "title": "Assigned By Identity",
+                    "type": "string",
+                    "description": "The identity of the system or user that assigned the segment to the profile."
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/segment"
+        }
+    ]
+}

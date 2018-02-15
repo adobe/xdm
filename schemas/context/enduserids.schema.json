@@ -10,25 +10,45 @@
   "title": "End User IDs",
   "type": "object",
   "description": "Condensed, normalized encapsulation of all end user identifiers. NOTE: At least one of the fields is required.\n",
-  "definitions": {
-    "enduserids": {
-      "properties": {
-        "https://ns.adobe.com/experience/mcId": {
-          "title": "Adobe Marketing Cloud Id",
-          "$ref": "https://ns.adobe.com/xdm/context/identity",
-          "description": "A unique identifier from Adobe Marketing Cloud."
-        },
-        "https://ns.adobe.com/experience/analytics": {
-          "title": "Adobe Analytics Cloud End User Ids",
-          "$ref": "https://ns.adobe.com/xdm/context/identity",
-          "description": "Adobe Analytics Cloud extension to End User Ids."
-        }
-      }
+  "properties": {
+    "https://ns.adobe.com/experience/mcId": {
+      "title": "Adobe Marketing Cloud Id",
+      "$ref": "https://ns.adobe.com/xdm/context/identity",
+      "description": "A unique identifier from Adobe Marketing Cloud."
+    },
+    "https://ns.adobe.com/experience/analytics": {
+      "title": "Adobe Analytics Cloud End User Ids",
+      "$ref": "https://ns.adobe.com/xdm/context/identity",
+      "description": "Adobe Analytics Cloud extension to End User Ids."
     }
   },
-  "allOf": [
-    {
-      "$ref": "#/definitions/enduserids"
+  "meta:keys": {
+    "https://ns.adobe.com/experience/target": "Adobe Target",
+    "https://ns.adobe.com/experience/campaign": "Adobe Campaign",
+    "https://ns.adobe.com/experience/analytics": "Adobe Analytics",
+    "https://ns.adobe.com/experience/mcid": "Marketing Cloud Identity Core Service"
+  },
+  "patternProperties": {
+    ".+://.+": {
+      "description": "The identifier, including data source (`@id` must be identical to the property value), foreign ID, and confidence.",
+      "type": "object",
+      "properties": {
+        "xdm:datasource": {
+          "$ref": "https://ns.adobe.com/xdm/data/datasource"
+        },
+        "xdm:id": {
+          "type": "string",
+          "description": "The ID that is being used by the service specified by the outer property name or `xdm:datasource`\n\n. **Note:** opposed to most other IDs in XDM, this is not a URI, as it cannot be guaranteed that all identity services are using URIs as IDs."
+        },
+        "xdm:confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "required": [
+        "xdm:id"
+      ]
     }
-  ]
+  }
 }

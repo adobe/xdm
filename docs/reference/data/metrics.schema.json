@@ -15,6 +15,68 @@
             "$ref": "https://ns.adobe.com/xdm/data/measure"
         }
     },
+    "properties": {
+        "https://ns.adobe.com/xdm/data/metrics/commerce/abandons": {
+            "$ref": "https://ns.adobe.com/xdm/data/measure"
+        },
+        "https://ns.adobe.com/xdm/data/metrics/direct-marketing/bounces": {
+            "$ref": "https://ns.adobe.com/xdm/data/measure"
+        },
+        "https://ns.adobe.com/xdm/data/metrics/commerce/checkouts": {
+            "$ref": "https://ns.adobe.com/xdm/data/measure"
+        },
+        "https://ns.adobe.com/xdm/data/metrics/advertising/clicks": {
+            "$ref": "https://ns.adobe.com/xdm/data/measure"
+        },
+        "https://ns.adobe.com/xdm/data/discount": {
+            "$ref": "https://ns.adobe.com/xdm/data/measure"
+        },
+        "https://ns.adobe.com/xdm/data/metrics/advertising/impressions": {
+            "$ref": "https://ns.adobe.com/xdm/data/measure"
+        },
+        "https://ns.adobe.com/xdm/data/metrics/web/link-clicks": {
+            "$ref": "https://ns.adobe.com/xdm/data/measure"
+        },
+        "https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages": {
+            "$ref": "https://ns.adobe.com/xdm/data/measure"
+        },
+        "https://ns.adobe.com/xdm/data/metrics/direct-marketing/non-deliverables": {
+            "$ref": "https://ns.adobe.com/xdm/data/measure"
+        },
+        "https://ns.adobe.com/xdm/data/metrics/web/page-views": {
+            "$ref": "https://ns.adobe.com/xdm/data/measure"
+        },
+        "https://ns.adobe.com/xdm/data/metrics/commerce/product-list-adds": {
+            "$ref": "https://ns.adobe.com/xdm/data/measure"
+        },
+        "https://ns.adobe.com/xdm/data/metrics/commerce/product-list-opens": {
+            "$ref": "https://ns.adobe.com/xdm/data/measure"
+        },
+        "https://ns.adobe.com/xdm/data/metrics/commerce/product-list-removals": {
+            "$ref": "https://ns.adobe.com/xdm/data/measure"
+        },
+        "https://ns.adobe.com/xdm/data/metrics/commerce/product-list-reopens": {
+            "$ref": "https://ns.adobe.com/xdm/data/measure"
+        },
+        "https://ns.adobe.com/xdm/data/metrics/commerce/product-list-views": {
+            "$ref": "https://ns.adobe.com/xdm/data/measure"
+        },
+        "https://ns.adobe.com/xdm/data/metrics/commerce/product-views": {
+            "$ref": "https://ns.adobe.com/xdm/data/measure"
+        },
+        "https://ns.adobe.com/xdm/data/metrics/commerce/purchases": {
+            "$ref": "https://ns.adobe.com/xdm/data/measure"
+        },
+        "https://ns.adobe.com/xdm/data/metrics/commerce/save-for-laters": {
+            "$ref": "https://ns.adobe.com/xdm/data/measure"
+        },
+        "https://ns.adobe.com/xdm/data/metrics/direct-marketing/sends": {
+            "$ref": "https://ns.adobe.com/xdm/data/measure"
+        },
+        "https://ns.adobe.com/xdm/data/metrics/direct-marketing/user-complaints": {
+            "$ref": "https://ns.adobe.com/xdm/data/measure"
+        }
+    },
     "additionalProperties": false,
     "examples": [
         {

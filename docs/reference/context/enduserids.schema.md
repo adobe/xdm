@@ -15,7 +15,7 @@ Additionally, this schema can include a property that describes the data source 
 
 | Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
 |----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [context/enduserids.schema.json](context/enduserids.schema.json) |
+| Can be instantiated | No | Forbidden | Permitted | [context/enduserids.schema.json](context/enduserids.schema.json) |
 
 ## Schema Hierarchy
 
@@ -88,12 +88,6 @@ Unknown type `object`.
 
 ```json
 {
-  "meta:enum": {
-    "https://ns.adobe.com/experiencecloud/target": "Adobe Target",
-    "https://ns.adobe.com/experiencecloud/campaign": "Adobe Campaign",
-    "https://ns.adobe.com/experiencecloud/analytics": "Adobe Analytics",
-    "https://ns.adobe.com/experiencecloud/mcid": "Marketing Cloud Identity Core Service"
-  },
   "description": "The identifier, including data source (`@id` must be identical to the property value), foreign ID, and confidence.",
   "type": "object",
   "properties": {
@@ -116,123 +110,6 @@ Unknown type `object`.
   "simpletype": "`object`"
 }
 ```
-
-
-### Pattern .+://.+ Known Values
-| Value | Description |
-|-------|-------------|
-| `https://ns.adobe.com/experiencecloud/target` | Adobe Target |
-| `https://ns.adobe.com/experiencecloud/campaign` | Adobe Campaign |
-| `https://ns.adobe.com/experiencecloud/analytics` | Adobe Analytics |
-| `https://ns.adobe.com/experiencecloud/mcid` | Marketing Cloud Identity Core Service |
-
-
-
-
-# End User IDs Definitions
-
-| Property | Type | Group |
-|----------|------|-------|
-| [xdm:analytics](#xdm:analytics) | reference | `https://ns.adobe.com/xdm/context/enduserids#/definitions/enduserids` |
-| [xdm:campaign](#xdm:campaign) | reference | `https://ns.adobe.com/xdm/context/enduserids#/definitions/enduserids` |
-| [xdm:mcId](#xdm:mcId) | reference | `https://ns.adobe.com/xdm/context/enduserids#/definitions/enduserids` |
-| [xdm:realmId](#xdm:realmId) | complex | `https://ns.adobe.com/xdm/context/enduserids#/definitions/enduserids` |
-| [xdm:target](#xdm:target) | reference | `https://ns.adobe.com/xdm/context/enduserids#/definitions/enduserids` |
-
-## xdm:analytics
-### Analytics
-
-Adobe Analytics end user identifier.
-
-`xdm:analytics`
-* is optional
-* type: reference
-* defined in this schema
-
-### xdm:analytics Type
-
-
-* []() – `https://ns.adobe.com/xdm/context/identity`
-
-
-
-
-
-## xdm:campaign
-### Campaign
-
-Adobe Campaign profile identifier.
-
-`xdm:campaign`
-* is optional
-* type: reference
-* defined in this schema
-
-### xdm:campaign Type
-
-
-* []() – `https://ns.adobe.com/xdm/context/identity`
-
-
-
-
-
-## xdm:mcId
-### Marketing Cloud identifier
-
-A unique identifier from Adobe Marketing Cloud.
-
-`xdm:mcId`
-* is optional
-* type: reference
-* defined in this schema
-
-### xdm:mcId Type
-
-
-* []() – `https://ns.adobe.com/xdm/context/identity`
-
-
-
-
-
-## xdm:realmId
-
-
-`xdm:realmId`
-* is optional
-* type: complex
-* defined in this schema
-
-### xdm:realmId Type
-
-Unknown type ``.
-
-```json
-{
-  "definitiongroup": "enduserids",
-  "simpletype": "complex"
-}
-```
-
-
-
-
-
-## xdm:target
-### Target
-
-Adobe Target end user identifier.
-
-`xdm:target`
-* is optional
-* type: reference
-* defined in this schema
-
-### xdm:target Type
-
-
-* []() – `https://ns.adobe.com/xdm/context/identity`
 
 
 

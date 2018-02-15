@@ -40,14 +40,18 @@ An `EventEnvelope` is a type of `Activity` (in the sense of [W3C Activity Stream
   "activitystreams:object": {
     "@type": "http://ns.adobe.com/xdm/asset",
     "repo:assetID": "urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
-    "@id": "https://cc-api-storage-stage.adobe.io/id/urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185"
+    "@id": "https://cc-api-storage-stage.adobe.io/id/urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
+    "xdm:name": "example.jpg",
+    "xdm:path": "/MyFolder/example.jpg",
+    "dc:format": "image/jpg",
+    "repo:etag": "\"6fc55d0389d856ae7deccebba54f110e\""
   }
 }
 ```
 
 ```json
 {
-  "@type": "http://ns.adobe.com/xdm/event/published",
+  "@type": "http://ns.adobe.com/xdm/event/unpublished",
   "xdm:objectType": "http://ns.adobe.com/xdm/page",
   "activitystreams:published": "2016-07-16T19:20:30+01:00",
   "@id": "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
@@ -74,7 +78,37 @@ An `EventEnvelope` is a type of `Activity` (in the sense of [W3C Activity Stream
 
 ```json
 {
-  "@type": "http://ns.adobe.com/xdm/event/unpublished",
+  "@type": "http://ns.adobe.com/xdm/event/updated",
+  "xdm:objectType": "http://ns.adobe.com/xdm/asset",
+  "activitystreams:published": "2016-07-16T19:20:30+01:00",
+  "@id": "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
+  "activitystreams:to": {
+    "@type": "http://ns.adobe.com/xdm/IMSOrg",
+    "@id": "1362"
+  },
+  "activitystreams:generator": {
+    "@type": "http://ns.adobe.com/xdm/aem/instance",
+    "@id": "AEM-08B3E5CE5822FC520A494229@AdobeOrg_francois.corp.adobe.com"
+  },
+  "activitystreams:actor": {
+    "@type": "http://ns.adobe.com/xdm/aem/user",
+    "@id": "admin"
+  },
+  "activitystreams:object": {
+    "@type": "http://ns.adobe.com/xdm/asset",
+    "repo:assetID": "urn:aaid:aem:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
+    "@id": "https://francois.corp.adobe.com:4502/content/dam/Fx_DUKE-small.jpg",
+    "xdm:name": "Fx_DUKE-small.png",
+    "xdm:path": "/content/dam/Fx_DUKE-small.png",
+    "dc:format": "image/png",
+    "repo:etag": "\"6fc55d0389d856ae7wddwebba54f110e\""
+  }
+}
+```
+
+```json
+{
+  "@type": "http://ns.adobe.com/xdm/event/published",
   "xdm:objectType": "http://ns.adobe.com/xdm/page",
   "activitystreams:published": "2016-07-16T19:20:30+01:00",
   "@id": "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
@@ -120,41 +154,7 @@ An `EventEnvelope` is a type of `Activity` (in the sense of [W3C Activity Stream
   "activitystreams:object": {
     "@type": "http://ns.adobe.com/xdm/asset",
     "repo:assetID": "urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
-    "@id": "https://cc-api-storage-stage.adobe.io/id/urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
-    "xdm:name": "example.jpg",
-    "xdm:path": "/MyFolder/example.jpg",
-    "dc:format": "image/jpg",
-    "repo:etag": "\"6fc55d0389d856ae7deccebba54f110e\""
-  }
-}
-```
-
-```json
-{
-  "@type": "http://ns.adobe.com/xdm/event/updated",
-  "xdm:objectType": "http://ns.adobe.com/xdm/asset",
-  "activitystreams:published": "2016-07-16T19:20:30+01:00",
-  "@id": "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
-  "activitystreams:to": {
-    "@type": "http://ns.adobe.com/xdm/IMSOrg",
-    "@id": "1362"
-  },
-  "activitystreams:generator": {
-    "@type": "http://ns.adobe.com/xdm/aem/instance",
-    "@id": "AEM-08B3E5CE5822FC520A494229@AdobeOrg_francois.corp.adobe.com"
-  },
-  "activitystreams:actor": {
-    "@type": "http://ns.adobe.com/xdm/aem/user",
-    "@id": "admin"
-  },
-  "activitystreams:object": {
-    "@type": "http://ns.adobe.com/xdm/asset",
-    "repo:assetID": "urn:aaid:aem:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
-    "@id": "https://francois.corp.adobe.com:4502/content/dam/Fx_DUKE-small.jpg",
-    "xdm:name": "Fx_DUKE-small.png",
-    "xdm:path": "/content/dam/Fx_DUKE-small.png",
-    "dc:format": "image/png",
-    "repo:etag": "\"6fc55d0389d856ae7wddwebba54f110e\""
+    "@id": "https://cc-api-storage-stage.adobe.io/id/urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185"
   }
 }
 ```

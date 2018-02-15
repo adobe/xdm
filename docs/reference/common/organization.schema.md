@@ -158,14 +158,6 @@ This object contains unambiguous classifiers for the organization. Each key is t
 
 
 
-### xdm:classifier Known Values
-| Value | Description |
-|-------|-------------|
-| `https://ns.adobe.com/external/isic4` | International Standard of Industrial Classification of All Economic Activities (ISIC) |
-| `https://ns.adobe.com/external/sic` | Standard Industrial Classification |
-| `https://ns.adobe.com/external/naics` | North American Industry Classification System |
-
-
 
 ### xdm:classifier Example
 
@@ -196,13 +188,6 @@ This object contains unambiguous identifiers for the organization. Each key is t
 | Property | Type | Required
 |----------|------|----------|
 
-
-
-### xdm:identifier Known Values
-| Value | Description |
-|-------|-------------|
-| `https://ns.adobe.com/external/dnb` | Dun &amp; Bradstreet |
-| `https://ns.adobe.com/external/angellist` | Angellist |
 
 
 

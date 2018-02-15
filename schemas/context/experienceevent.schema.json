@@ -26,9 +26,10 @@
         },
         "xdm:timestamp": {
           "title": "Timestamp",
-          "type": "string",
-          "format": "date-time",
-          "description": "The time when the first event of the interaction occurred."
+          "type": "integer",
+          "description": "The timestamp when the first event of the touchpoint occurred. Milliseconds since midnight of January 1, 1970.",
+          "minimum": 1,
+          "maximum": 9223372036854770000
         },
         "xdm:endUserIds": {
           "title": "End User IDs",

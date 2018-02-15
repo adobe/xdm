@@ -1,35 +1,38 @@
 {
-   "meta:license":[
-      "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
-      "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
-      "you may not use this file except in compliance with the License. You may obtain a copy",
-      "of the License at https://creativecommons.org/licenses/by/4.0/"
-   ],
-   "$id":"https://ns.adobe.com/xdm/context/identity",
-   "$schema":"http://json-schema.org/draft-06/schema#",
-   "title":"Identity",
-   "type":"object",
-   "description":"Identity from identity services which is the fact of being who or what a person or thing is.\n",
-   "definitions":{
-      "identity":{
-         "properties":{
-            "@id":{
-               "title":"Identifier",
-               "type":"string",
-               "format": "uri",
-               "description":"Identity of the consumer in the related namespace."
-            },
-            "xdm:namespace":{
-               "title":"Namespace",
-               "$ref":"https://ns.adobe.com/xdm/context/namespace",
-               "description":"The namespace associated with the id attribute and matched up with the AAM data source integration code."
-            }
-         }
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/identity",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Identity",
+  "type": "object",
+  "description": "Identity from identity services which is the fact of being who or what a person or thing is.\n",
+  "definitions": {
+    "identity": {
+      "properties": {
+        "@id": {
+          "title": "Identifier",
+          "type": "string",
+          "format": "uri",
+          "description": "Identity of the consumer in the related namespace."
+        },
+        "xdm:namespace": {
+          "title": "Namespace",
+          "$ref": "https://ns.adobe.com/xdm/context/namespace",
+          "description": "The namespace associated with the id attribute and matched up with the AAM data source integration code."
+        },
+        "xdm:xid": {
+          "title": "Adobe Experience Identifier",
+          "type": "string",
+          "description": "The optional, universally unique Adobe identity of the consumer. Generated using the Identity and the related namespace id."
+        }
       }
-   },
-   "allOf": [
-     {
-       "$ref": "#/definitions/identity"
-     }
-   ]
+    }
+  },
+  "allOf": [{
+    "$ref": "#/definitions/identity"
+  }]
 }

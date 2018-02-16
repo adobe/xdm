@@ -16,65 +16,128 @@
     }
   },
   "properties": {
-    "https://ns.adobe.com/xdm/data/metrics/commerce/abandons": {
-      "$ref": "https://ns.adobe.com/xdm/data/measure"
+    "xdm:directMarketing": {
+        "title": "Direct Marketing",
+        "type": "object",
+        "description": "Direct marketing metrics\n",
+        "properties": {
+          "xdm:sends": {
+              "title": "Sends",
+              "$ref": "https://ns.adobe.com/xdm/data/measure",
+              "description": "Number of asynchronous message (email, SMS, MMS etc) has been dispatched to an persons account/address/device.\n"
+          },
+          "xdm:bounces": {
+              "title": "Bounces",
+              "$ref": "https://ns.adobe.com/xdm/data/measure",
+              "description": "Number of asynchronous message has been returned by the receiving system.\n"
+          },
+          "xdm:nonDeliverables": {
+              "title": "Non-deliverables",
+              "$ref": "https://ns.adobe.com/xdm/data/measure",
+              "description": "Number of asynchronous message failed to deliver in a way that indicates that no future messages will be deliverable either to this address.\n"
+          },
+          "xdm:mirrorPages": {
+              "title": "Mirror Pages",
+              "$ref": "https://ns.adobe.com/xdm/data/measure",
+              "description": "Number of mirror pages for which a link to the online mirror page of a message has been clicked..\n"
+          },
+          "xdm:userComplaints": {
+              "title": "User Complaints",
+              "$ref": "https://ns.adobe.com/xdm/data/measure",
+              "description": "Number of user complaints has been received. This generally occurred when a recipient of a message reported it as spam.\n"
+          }
+        }
     },
-    "https://ns.adobe.com/xdm/data/metrics/direct-marketing/bounces": {
-      "$ref": "https://ns.adobe.com/xdm/data/measure"
+    "xdm:commerce": {
+        "title": "Commerce",
+        "type": "object",
+        "description": "Commerce metrics\n",
+        "properties": {
+          "xdm:productViews": {
+              "title": "Product Views",
+              "$ref": "https://ns.adobe.com/xdm/data/measure",
+              "description": "Number of views of a product has occurred. (same as productView in Adobe Analytics).\n"
+          },
+          "xdm:productListOpens": {
+              "title": "Product List Opens",
+              "$ref": "https://ns.adobe.com/xdm/data/measure",
+              "description": "Number of opens, initializations of a new product list has occurred. (same as scOpen in Adobe Analytics).\n"
+          },
+          "xdm:productListAdds": {
+              "title": "Product List Adds",
+              "$ref": "https://ns.adobe.com/xdm/data/measure",
+              "description": "Number of adds of a product to the product list has occurred. (same as scAdd in Adobe Analytics).\n"
+          },
+          "xdm:productListRemovals": {
+              "title": "Product List Removals",
+              "$ref": "https://ns.adobe.com/xdm/data/measure",
+              "description": "Number of removals of a product entry from a product list has occurred. (same as scRemove in Adobe Analytics).\n"
+          },
+          "xdm:productListViews": {
+              "title": "Product List Views",
+              "$ref": "https://ns.adobe.com/xdm/data/measure",
+              "description": "Number of views of a product list has occurred. (same as scView in Adobe Analytics)\n"
+          },
+          "xdm:saveForLaters": {
+              "title": "Save for Laters",
+              "$ref": "https://ns.adobe.com/xdm/data/measure",
+              "description": "Number of requests to save a product list for a future session.\n"
+          },
+          "xdm:checkouts": {
+              "title": "Checkouts",
+              "$ref": "https://ns.adobe.com/xdm/data/measure",
+              "description": "Number of actions during a checkout process of a product list, there can be more than one checkout event if there are multiple steps in a checkout\nprocess. If there are multiple steps the event time information and\nreferenced page or experience is used to identify the step individual\nevents represent in order.\n"
+          },
+          "xdm:abandons": {
+              "title": "Abandons",
+              "$ref": "https://ns.adobe.com/xdm/data/measure",
+              "description": "Number of abandons for which a product list has been identified as no longer purchasable or accessible by the user without the user re-creating the product list from scratch.\n"
+          },
+          "xdm:productListReopens": {
+              "title": "Product List Reopens",
+              "$ref": "https://ns.adobe.com/xdm/data/measure",
+              "description": "Number of reopens for which a product list that was no longer accessible has been re-activated by the user, for example via a re-marketing activity.\n"
+          },
+          "xdm:purchases": {
+              "title": "Purchases",
+              "$ref": "https://ns.adobe.com/xdm/data/measure",
+              "description": "Number of orders has occurred. purchase is the only required action in a commerce conversion. Purchase must have a product list referenced. (same as Adobe Analytics)\n"
+          }
+        }
     },
-    "https://ns.adobe.com/xdm/data/metrics/commerce/checkouts": {
-      "$ref": "https://ns.adobe.com/xdm/data/measure"
+    "xdm:advertising": {
+        "title": "Advertising",
+        "type": "object",
+        "description": "Advertising metrics\n",
+        "properties": {
+          "xdm:impressions": {
+              "title": "Impressions",
+              "$ref": "https://ns.adobe.com/xdm/data/measure",
+              "description": "Number of impressions of an advertisement.\n"
+          },
+          "xdm:clicks": {
+              "title": "Clicks",
+              "$ref": "https://ns.adobe.com/xdm/data/measure",
+              "description": "Number of clicks of an advertisement.\n"
+          }
+        }
     },
-    "https://ns.adobe.com/xdm/data/metrics/advertising/clicks": {
-      "$ref": "https://ns.adobe.com/xdm/data/measure"
-    },
-    "https://ns.adobe.com/xdm/data/discount": {
-      "$ref": "https://ns.adobe.com/xdm/data/measure"
-    },
-    "https://ns.adobe.com/xdm/data/metrics/advertising/impressions": {
-      "$ref": "https://ns.adobe.com/xdm/data/measure"
-    },
-    "https://ns.adobe.com/xdm/data/metrics/web/link-clicks": {
-      "$ref": "https://ns.adobe.com/xdm/data/measure"
-    },
-    "https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages": {
-      "$ref": "https://ns.adobe.com/xdm/data/measure"
-    },
-    "https://ns.adobe.com/xdm/data/metrics/direct-marketing/non-deliverables": {
-      "$ref": "https://ns.adobe.com/xdm/data/measure"
-    },
-    "https://ns.adobe.com/xdm/data/metrics/web/page-views": {
-      "$ref": "https://ns.adobe.com/xdm/data/measure"
-    },
-    "https://ns.adobe.com/xdm/data/metrics/commerce/product-list-adds": {
-      "$ref": "https://ns.adobe.com/xdm/data/measure"
-    },
-    "https://ns.adobe.com/xdm/data/metrics/commerce/product-list-opens": {
-      "$ref": "https://ns.adobe.com/xdm/data/measure"
-    },
-    "https://ns.adobe.com/xdm/data/metrics/commerce/product-list-removals": {
-      "$ref": "https://ns.adobe.com/xdm/data/measure"
-    },
-    "https://ns.adobe.com/xdm/data/metrics/commerce/product-list-reopens": {
-      "$ref": "https://ns.adobe.com/xdm/data/measure"
-    },
-    "https://ns.adobe.com/xdm/data/metrics/commerce/product-list-views": {
-      "$ref": "https://ns.adobe.com/xdm/data/measure"
-    },
-    "https://ns.adobe.com/xdm/data/metrics/commerce/product-views": {
-      "$ref": "https://ns.adobe.com/xdm/data/measure"
-    },
-    "https://ns.adobe.com/xdm/data/metrics/commerce/purchases": {
-      "$ref": "https://ns.adobe.com/xdm/data/measure"
-    },
-    "https://ns.adobe.com/xdm/data/metrics/commerce/save-for-laters": {
-      "$ref": "https://ns.adobe.com/xdm/data/measure"
-    },
-    "https://ns.adobe.com/xdm/data/metrics/direct-marketing/sends": {
-      "$ref": "https://ns.adobe.com/xdm/data/measure"
-    },
-    "https://ns.adobe.com/xdm/data/metrics/direct-marketing/user-complaints": {
-      "$ref": "https://ns.adobe.com/xdm/data/measure"
+    "xdm:web": {
+        "title": "Web",
+        "type": "object",
+        "description": "Web metrics\n",
+        "properties": {
+          "xdm:pageViews": {
+              "title": "Page Views",
+              "$ref": "https://ns.adobe.com/xdm/data/measure",
+              "description": "Number of views of a web page.\n"
+          },
+          "xdm:linkClicks": {
+              "title": "Link Clicks",
+              "$ref": "https://ns.adobe.com/xdm/data/measure",
+              "description": "Number of clicks of a web link.\n"
+          }
+        }
     }
   },
   "additionalProperties": false

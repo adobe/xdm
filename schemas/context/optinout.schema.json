@@ -54,6 +54,78 @@
         }
       },
       "properties": {
+        "xdm:optingEmail": {
+            "title": "Opting Email",
+            "type": "string",
+            "description": "Preference for email communication.",
+            "default": "notProvided",
+            "meta:enum": {
+                "notProvided": "Not Provided",
+                "pendingConfirmation": "Pending Verification",
+                "in": "In",
+                "out": "Out"
+            }
+        },
+        "xdm:optingPhone": {
+            "title": "Opting Phone",
+            "type": "string",
+            "description": "Preference for phone voice communication.",
+            "default": "notProvided",
+            "meta:enum": {
+                "notProvided": "Not Provided",
+                "pendingConfirmation": "Pending Verification",
+                "in": "In",
+                "out": "Out"
+            }
+        },
+        "xdm:optingTextMessaging": {
+            "title": "Opting Text Messaging",
+            "type": "string",
+            "description": "Preference for instant text communication.",
+            "default": "notProvided",
+            "meta:enum": {
+                "notProvided": "Not Provided",
+                "pendingConfirmation": "Pending Verification",
+                "in": "In",
+                "out": "Out"
+            }
+        },
+        "xdm:optingFax": {
+            "title": "Opting Fax",
+            "type": "string",
+            "description": "Preference for fax communication.",
+            "default": "notProvided",
+            "meta:enum": {
+                "notProvided": "Not Provided",
+                "pendingConfirmation": "Pending Verification",
+                "in": "In",
+                "out": "Out"
+            }
+        },
+        "xdm:optingAddress": {
+            "title": "Opting Address",
+            "type": "string",
+            "description": "Preference for mail address communication.",
+            "default": "notProvided",
+            "meta:enum": {
+                "notProvided": "Not Provided",
+                "pendingConfirmation": "Pending Verification",
+                "in": "In",
+                "out": "Out"
+            }
+        },
+        "xdm:optingPushNotification": {
+            "title": "Opting Push Notification",
+            "type": "string",
+            "description": "Preference for push notification.",
+            "default": "notProvided",
+            "meta:enum": {
+                "notProvided": "Not Provided",
+                "pendingConfirmation": "Pending Verification",
+                "in": "In",
+                "out": "Out"
+            }
+        },
         "xdm:globalOptout": {
           "title": "Global Opt-out",
           "type": "boolean",

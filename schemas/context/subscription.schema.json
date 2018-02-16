@@ -20,7 +20,7 @@
         },
         "xdm:subscriber": {
           "title": "Subscriber",
-          "$ref": "https://ns.adobe.com/xdm/common/person",
+          "$ref": "https://ns.adobe.com/xdm/context/person",
           "description": "The owner of the subscription."
         },
         "xdm:device": {

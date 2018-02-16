@@ -66,7 +66,7 @@
           "title": "Organization Identifier",
           "type": "object",
           "properties": {
-            "https://ns.adobe.com/external/dnb": {
+            "xdm:duns": {
                 "title": "Dun & Bradstreet number",
                 "type": "string",
                 "description": "The Dun & Bradstreet DUNS number for identifying an organization or business person."
@@ -94,7 +94,7 @@
           "title": "Market/Industry Classifier",
           "type": "object",
           "properties": {
-            "https://ns.adobe.com/external/sic": {
+            "xdm:sicCode": {
                 "title": "SIC Code",
                 "type": "string",
                 "description": "The Standard Industrial Classification Code."

@@ -65,6 +65,13 @@
         "xdm:identifier": {
           "title": "Organization Identifier",
           "type": "object",
+          "properties": {
+            "https://ns.adobe.com/external/dnb": {
+                "title": "Dun & Bradstreet number",
+                "type": "string",
+                "description": "The Dun & Bradstreet DUNS number for identifying an organization or business person."
+            }
+          },
           "meta:keys": {
             "https://ns.adobe.com/external/dnb": "Dun & Bradstreet",
             "https://ns.adobe.com/external/angellist": "Angellist"
@@ -86,6 +93,13 @@
         "xdm:classifier": {
           "title": "Market/Industry Classifier",
           "type": "object",
+          "properties": {
+            "https://ns.adobe.com/external/sic": {
+                "title": "SIC Code",
+                "type": "string",
+                "description": "The Standard Industrial Classification Code."
+            }
+          },
           "meta:keys": {
             "https://ns.adobe.com/external/isic4": "International Standard of Industrial Classification of All Economic Activities (ISIC)",
             "https://ns.adobe.com/external/sic": "Standard Industrial Classification",

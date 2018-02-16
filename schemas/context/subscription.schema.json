@@ -143,5 +143,10 @@
         }
       }
     }
-  }
+  },
+  "allOf": [
+      {
+          "$ref": "#/definitions/subscription"
+      }
+  ]
 }

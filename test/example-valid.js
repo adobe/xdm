@@ -45,7 +45,6 @@ describe("Validity of examples", () => {
   });
 
   schemas.forEach((schema) => {
-    console.log(schema);
     const directory = schema.replace(/\.schema\.json$/, "");
 
     const myExamples = examples.filter(example => {

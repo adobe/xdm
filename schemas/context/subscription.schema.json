@@ -145,8 +145,8 @@
     }
   },
   "allOf": [
-      {
-          "$ref": "#/definitions/subscription"
-      }
+    {
+      "$ref": "#/definitions/subscription"
+    }
   ]
 }

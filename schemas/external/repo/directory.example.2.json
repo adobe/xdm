@@ -1,0 +1,25 @@
+{
+  "_links": {
+    "http://ns.adobe.com/adobecloud/rel/create": {
+      "href": "https://api.example.com/v2/create{+path}{?intermediates}",
+      "templated": true
+    },
+    "http://ns.adobe.com/adobecloud/rel/resolve/id": {
+      "href": "https://api2.example.com/v7/resolve{?asset_id}",
+      "templated": true
+    }
+  },
+  "_page": {
+    "orderBy": "id",
+    "start": "123",
+    "next": "789",
+    "count": 100
+  },
+  "repo:createdDate": "2017-09-26T15:52:25+00:00",
+  "repo:lastModifiedDate": "2017-09-26T15:52:25+00:00",
+  "repo:path": "/",
+  "repo:name": "here",
+  "repo:etag": "15",
+  "dc:format": "application/vnd.adobecloud.directory+json",
+  "children": []
+}

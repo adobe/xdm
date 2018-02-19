@@ -14,7 +14,7 @@
     "markdown":
       "shx mkdir -p docs/reference && jsonschema2md -o docs/reference -d schemas",
     "test": "node validate.js",
-    "lint": "node lint.js",
+    "lint": "prettier --write *.md docs/*.md schemas/**/*.md schemas/**/*.json",
     "package":
       "npm run markdown && curl -o \"./node_modules/markdown-importer-0.0.4-jar-with-dependencies.jar\" -C - https://artifactory.corp.adobe.com/artifactory/maven-markdown-tools-release/io/adobe/udp/markdown-importer/0.0.4/markdown-importer-0.0.4-jar-with-dependencies.jar && java -jar ./node_modules/markdown-importer-0.0.4-jar-with-dependencies.jar markdown2aem.yaml",
     "upload":
@@ -37,7 +37,8 @@
   "devDependencies": {
     "@adobe/jsonschema2md": "1.0.2",
     "ajv-cli": "^2.1.0",
-    "json-beautifier": "^1.0.3",
+    "prettier": "^1.10.2",
+    "pretty-quick": "^1.4.1",
     "shelljs": "^0.7.8",
     "shx": "^0.2.2"
   }

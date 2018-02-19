@@ -9,24 +9,28 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "End User IDs",
   "type": "object",
-  "description": "Condensed, normalized encapsulation of all end user identifiers. NOTE: At least one of the fields is required.",
+  "description":
+    "Condensed, normalized encapsulation of all end user identifiers. NOTE: At least one of the fields is required.",
   "minProperties": 1,
   "properties": {
     "xdm:realm": {
       "title": "Realm",
       "$ref": "https://ns.adobe.com/xdm/data/datasource",
-      "description": "The optional realm associated with the identity stitching strategy."
+      "description":
+        "The optional realm associated with the identity stitching strategy."
     }
   },
   "meta:keys": {
     "https://ns.adobe.com/experiencecloud/target": "Adobe Target",
     "https://ns.adobe.com/experiencecloud/campaign": "Adobe Campaign",
     "https://ns.adobe.com/experiencecloud/analytics": "Adobe Analytics",
-    "https://ns.adobe.com/experiencecloud/mcid": "Marketing Cloud Identity Core Service"
+    "https://ns.adobe.com/experiencecloud/mcid":
+      "Marketing Cloud Identity Core Service"
   },
   "patternProperties": {
     ".+://.+": {
-      "description": "The identifier, including data source (`@id` must be identical to the property value), foreign ID, and confidence.",
+      "description":
+        "The identifier, including data source (`@id` must be identical to the property value), foreign ID, and confidence.",
       "type": "object",
       "properties": {
         "xdm:datasource": {
@@ -34,7 +38,8 @@
         },
         "xdm:id": {
           "type": "string",
-          "description": "The ID that is being used by the service specified by the outer property name or `xdm:datasource`\n\n. **Note:** opposed to most other IDs in XDM, this is not a URI, as it cannot be guaranteed that all identity services are using URIs as IDs."
+          "description":
+            "The ID that is being used by the service specified by the outer property name or `xdm:datasource`\n\n. **Note:** opposed to most other IDs in XDM, this is not a URI, as it cannot be guaranteed that all identity services are using URIs as IDs."
         },
         "xdm:confidence": {
           "type": "number",
@@ -42,9 +47,7 @@
           "maximum": 1
         }
       },
-      "required": [
-        "xdm:id"
-      ]
+      "required": ["xdm:id"]
     }
   }
 }

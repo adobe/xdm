@@ -22,16 +22,6 @@ if (schemas.length!=package.config.schemas) {
 
 const all = schemas.concat(extensions, examples, invalids);
 
-all.forEach(json => {
-  const pretty = $.exec("json-beautify -s 2 -f " + json, {silent: true}).stdout;
-  const orig = $.exec("cat " + json, {silent: true});
-  if (pretty!=orig) {
-    failures++;
-    console.warn(json + " is not pretty. Fixing." );
-    $.exec("json-beautify -r -s 2 -f " + json, {silent: true})
-  }
-});
-
 schemas.forEach(schema => {
   const result = $.exec("ajv validate --errors=text --all-errors -s meta.schema.json -d " + schema, {silent: true} );
   if (result.code!=0) {

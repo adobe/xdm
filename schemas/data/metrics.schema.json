@@ -17,28 +17,28 @@
   },
   "properties": {
     "xdm:directMarketing": {
-        "title": "Direct Marketing",
-        "type": "object",
-        "description": "Direct marketing metrics\n",
-        "$ref": "https://ns.adobe.com/xdm/data/directmarketingmetrics"
+      "title": "Direct Marketing",
+      "type": "object",
+      "description": "Direct marketing metrics\n",
+      "$ref": "https://ns.adobe.com/xdm/data/directmarketingmetrics"
     },
     "xdm:commerce": {
-        "title": "Commerce",
-        "type": "object",
-        "description": "Commerce metrics\n",
-        "$ref": "https://ns.adobe.com/xdm/data/commercemetrics"
+      "title": "Commerce",
+      "type": "object",
+      "description": "Commerce metrics\n",
+      "$ref": "https://ns.adobe.com/xdm/data/commercemetrics"
     },
     "xdm:advertising": {
-        "title": "Advertising",
-        "type": "object",
-        "description": "Advertising metrics\n",
-        "$ref": "https://ns.adobe.com/xdm/data/advertisingmetrics"
+      "title": "Advertising",
+      "type": "object",
+      "description": "Advertising metrics\n",
+      "$ref": "https://ns.adobe.com/xdm/data/advertisingmetrics"
     },
     "xdm:web": {
-        "title": "Web",
-        "type": "object",
-        "description": "Web metrics\n",
-        "$ref": "https://ns.adobe.com/xdm/data/webmetrics"
+      "title": "Web",
+      "type": "object",
+      "description": "Web metrics\n",
+      "$ref": "https://ns.adobe.com/xdm/data/webmetrics"
     }
   },
   "additionalProperties": false

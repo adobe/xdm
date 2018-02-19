@@ -9,7 +9,14 @@ Subscriptions are licensed entitlements to software, services or goods that are 
 
 | Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
 |----------|------------|-------------------|-----------------------|------------|
-| Cannot be instantiated | Yes | Forbidden | Permitted | [context/subscription.schema.json](context/subscription.schema.json) |
+| Can be instantiated | Yes | Forbidden | Permitted | [context/subscription.schema.json](context/subscription.schema.json) |
+
+## Schema Hierarchy
+
+* Subscription `https://ns.adobe.com/xdm/context/subscription`
+  * [Person](person.schema.md) `https://ns.adobe.com/xdm/context/person`
+  * [Device](device.schema.md) `https://ns.adobe.com/xdm/context/device`
+  * [Environment](environment.schema.md) `https://ns.adobe.com/xdm/context/environment`
 
 ## Subscription Example
 ```json
@@ -38,48 +45,49 @@ Subscriptions are licensed entitlements to software, services or goods that are 
   "xdm:SKU": "12345678",
   "xdm:planName": "PS+ 12 Month Membership",
   "xdm:country": "USA",
-  "xdm:startDate": "2001-01-01T10:00:00",
-  "xdm:endDate": "2002-01-01T10:00:00",
+  "xdm:startDate": "2001-01-01",
+  "xdm:endDate": "2002-01-01",
   "xdm:term": 12,
   "xdm:termUnitOfTime": "Month",
   "xdm:status": "active",
   "xdm:contractId": "contractid-123",
   "xdm:paymentMethod": "creditCard",
   "xdm:billingPeriod": "Month",
-  "xdm:billingStartDate": "2001-01-01T10:00:00",
+  "xdm:billingStartDate": "2001-01-01",
   "xdm:paymentStatus": "paid"
 }
 ```
 
-# Subscription Definitions
+# Subscription Properties
 
-| Property | Type | Group |
-|----------|------|-------|
-| [@id](#@id) | `string` | `https://ns.adobe.com/xdm/context/subscription#/definitions/subscription` |
-| [xdm:SKU](#xdm:SKU) | `string` | `https://ns.adobe.com/xdm/context/subscription#/definitions/subscription` |
-| [xdm:billingPeriod](#xdm:billingPeriod) | `string` | `https://ns.adobe.com/xdm/context/subscription#/definitions/subscription` |
-| [xdm:billingStartDate](#xdm:billingStartDate) | `string` | `https://ns.adobe.com/xdm/context/subscription#/definitions/subscription` |
-| [xdm:category](#xdm:category) | `string` | `https://ns.adobe.com/xdm/context/subscription#/definitions/subscription` |
-| [xdm:chargeMethod](#xdm:chargeMethod) | `string` | `https://ns.adobe.com/xdm/context/subscription#/definitions/subscription` |
-| [xdm:contractId](#xdm:contractId) | `string` | `https://ns.adobe.com/xdm/context/subscription#/definitions/subscription` |
-| [xdm:country](#xdm:country) | `string` | `https://ns.adobe.com/xdm/context/subscription#/definitions/subscription` |
-| [xdm:device](#xdm:device) | reference | `https://ns.adobe.com/xdm/context/subscription#/definitions/subscription` |
-| [xdm:endDate](#xdm:endDate) | `string` | `https://ns.adobe.com/xdm/context/subscription#/definitions/subscription` |
-| [xdm:environment](#xdm:environment) | reference | `https://ns.adobe.com/xdm/context/subscription#/definitions/subscription` |
-| [xdm:paymentMethod](#xdm:paymentMethod) | `string` | `https://ns.adobe.com/xdm/context/subscription#/definitions/subscription` |
-| [xdm:paymentStatus](#xdm:paymentStatus) | `string` | `https://ns.adobe.com/xdm/context/subscription#/definitions/subscription` |
-| [xdm:planName](#xdm:planName) | `string` | `https://ns.adobe.com/xdm/context/subscription#/definitions/subscription` |
-| [xdm:reason](#xdm:reason) | `string` | `https://ns.adobe.com/xdm/context/subscription#/definitions/subscription` |
-| [xdm:renew](#xdm:renew) | `string` | `https://ns.adobe.com/xdm/context/subscription#/definitions/subscription` |
-| [xdm:revision](#xdm:revision) | `string` | `https://ns.adobe.com/xdm/context/subscription#/definitions/subscription` |
-| [xdm:startDate](#xdm:startDate) | `string` | `https://ns.adobe.com/xdm/context/subscription#/definitions/subscription` |
-| [xdm:status](#xdm:status) | `string` | `https://ns.adobe.com/xdm/context/subscription#/definitions/subscription` |
-| [xdm:subCategory](#xdm:subCategory) | `string` | `https://ns.adobe.com/xdm/context/subscription#/definitions/subscription` |
-| [xdm:subscriber](#xdm:subscriber) | reference | `https://ns.adobe.com/xdm/context/subscription#/definitions/subscription` |
-| [xdm:term](#xdm:term) | `integer` | `https://ns.adobe.com/xdm/context/subscription#/definitions/subscription` |
-| [xdm:termUnitOfTime](#xdm:termUnitOfTime) | `string` | `https://ns.adobe.com/xdm/context/subscription#/definitions/subscription` |
-| [xdm:topUp](#xdm:topUp) | `string` | `https://ns.adobe.com/xdm/context/subscription#/definitions/subscription` |
-| [xdm:type](#xdm:type) | `string` | `https://ns.adobe.com/xdm/context/subscription#/definitions/subscription` |
+| Property | Type | Required | Defined by |
+|----------|------|----------|------------|
+| [@id](#@id) | `string` | Optional | Subscription (this schema) |
+| [xdm:SKU](#xdmSKU) | `string` | Optional | Subscription (this schema) |
+| [xdm:billingPeriod](#xdmbillingPeriod) | `string` | Optional | Subscription (this schema) |
+| [xdm:billingStartDate](#xdmbillingStartDate) | `string` | Optional | Subscription (this schema) |
+| [xdm:category](#xdmcategory) | `string` | Optional | Subscription (this schema) |
+| [xdm:chargeMethod](#xdmchargeMethod) | `string` | Optional | Subscription (this schema) |
+| [xdm:contractId](#xdmcontractId) | `string` | Optional | Subscription (this schema) |
+| [xdm:country](#xdmcountry) | `string` | Optional | Subscription (this schema) |
+| [xdm:device](#xdmdevice) | Device | Optional | Subscription (this schema) |
+| [xdm:endDate](#xdmendDate) | `string` | Optional | Subscription (this schema) |
+| [xdm:environment](#xdmenvironment) | Environment | Optional | Subscription (this schema) |
+| [xdm:paymentMethod](#xdmpaymentMethod) | `string` | Optional | Subscription (this schema) |
+| [xdm:paymentStatus](#xdmpaymentStatus) | `string` | Optional | Subscription (this schema) |
+| [xdm:planName](#xdmplanName) | `string` | Optional | Subscription (this schema) |
+| [xdm:reason](#xdmreason) | `string` | Optional | Subscription (this schema) |
+| [xdm:renew](#xdmrenew) | `string` | Optional | Subscription (this schema) |
+| [xdm:revision](#xdmrevision) | `string` | Optional | Subscription (this schema) |
+| [xdm:startDate](#xdmstartDate) | `string` | Optional | Subscription (this schema) |
+| [xdm:status](#xdmstatus) | `string` | Optional | Subscription (this schema) |
+| [xdm:subCategory](#xdmsubCategory) | `string` | Optional | Subscription (this schema) |
+| [xdm:subscriber](#xdmsubscriber) | Person | Optional | Subscription (this schema) |
+| [xdm:term](#xdmterm) | `integer` | Optional | Subscription (this schema) |
+| [xdm:termUnitOfTime](#xdmtermUnitOfTime) | `string` | Optional | Subscription (this schema) |
+| [xdm:topUp](#xdmtopUp) | `string` | Optional | Subscription (this schema) |
+| [xdm:type](#xdmtype) | `string` | Optional | Subscription (this schema) |
+| `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
 ### Identifier
@@ -249,13 +257,13 @@ The device linked to the subscription.
 
 `xdm:device`
 * is optional
-* type: reference
+* type: Device
 * defined in this schema
 
 ### xdm:device Type
 
 
-* []() – `https://ns.adobe.com/xdm/context/device`
+* [Device](device.schema.md) – `https://ns.adobe.com/xdm/context/device`
 
 
 
@@ -294,13 +302,13 @@ Application.
 
 `xdm:environment`
 * is optional
-* type: reference
+* type: Environment
 * defined in this schema
 
 ### xdm:environment Type
 
 
-* []() – `https://ns.adobe.com/xdm/context/environment`
+* [Environment](environment.schema.md) – `https://ns.adobe.com/xdm/context/environment`
 
 
 
@@ -494,13 +502,13 @@ The owner of the subscription.
 
 `xdm:subscriber`
 * is optional
-* type: reference
+* type: Person
 * defined in this schema
 
 ### xdm:subscriber Type
 
 
-* []() – `https://ns.adobe.com/xdm/common/person`
+* [Person](person.schema.md) – `https://ns.adobe.com/xdm/context/person`
 
 
 

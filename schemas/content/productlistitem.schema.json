@@ -65,5 +65,10 @@
         "xdm:SKU"
       ]
     }
-  }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/productlistitem"
+    }
+  ]
 }

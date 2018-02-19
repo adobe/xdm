@@ -1,6 +1,7 @@
 ---
 xdm:navOrder: 3
 ---
+
 ## Terminology
 
 Abstract Schema

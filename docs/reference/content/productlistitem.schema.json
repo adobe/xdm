@@ -66,6 +66,11 @@
             ]
         }
     },
+    "allOf": [
+        {
+            "$ref": "#/definitions/productlistitem"
+        }
+    ],
     "examples": [
         {
             "xdm:SKU": "1002352692",

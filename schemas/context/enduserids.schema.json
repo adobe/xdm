@@ -9,34 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "End User IDs",
   "type": "object",
-  "description": "Condensed, normalized encapsulation of all end user identifiers. NOTE: At least one of the fields is required.\n",
-  "definitions": {
-    "enduserids": {
-      "properties": {
-        "xdm:realmId": {},
-        "xdm:mcId": {
-          "title": "Marketing Cloud identifier",
-          "$ref": "https://ns.adobe.com/xdm/context/identity",
-          "description": "A unique identifier from Adobe Marketing Cloud."
-        },
-        "xdm:analytics": {
-          "title": "Analytics",
-          "$ref": "https://ns.adobe.com/xdm/context/identity",
-          "description": "Adobe Analytics end user identifier."
-        },
-        "xdm:campaign": {
-          "title": "Campaign",
-          "$ref": "https://ns.adobe.com/xdm/context/identity",
-          "description": "Adobe Campaign profile identifier."
-        },
-        "xdm:target": {
-          "title": "Target",
-          "$ref": "https://ns.adobe.com/xdm/context/identity",
-          "description": "Adobe Target end user identifier."
-        }
-      }
-    }
-  },
+  "description": "Condensed, normalized encapsulation of all end user identifiers. NOTE: At least one of the fields is required.",
   "minProperties": 1,
   "properties": {
     "xdm:realm": {
@@ -45,14 +18,14 @@
       "description": "The optional realm associated with the identity stitching strategy."
     }
   },
+  "meta:keys": {
+    "https://ns.adobe.com/experiencecloud/target": "Adobe Target",
+    "https://ns.adobe.com/experiencecloud/campaign": "Adobe Campaign",
+    "https://ns.adobe.com/experiencecloud/analytics": "Adobe Analytics",
+    "https://ns.adobe.com/experiencecloud/mcid": "Marketing Cloud Identity Core Service"
+  },
   "patternProperties": {
     ".+://.+": {
-      "meta:enum": {
-        "https://ns.adobe.com/experiencecloud/target": "Adobe Target",
-        "https://ns.adobe.com/experiencecloud/campaign": "Adobe Campaign",
-        "https://ns.adobe.com/experiencecloud/analytics": "Adobe Analytics",
-        "https://ns.adobe.com/experiencecloud/mcid": "Marketing Cloud Identity Core Service"
-      },
       "description": "The identifier, including data source (`@id` must be identical to the property value), foreign ID, and confidence.",
       "type": "object",
       "properties": {

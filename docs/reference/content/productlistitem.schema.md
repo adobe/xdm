@@ -9,7 +9,7 @@ The product list item is a list item representing a product selected by a custom
 
 | Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
 |----------|------------|-------------------|-----------------------|------------|
-| Cannot be instantiated | Yes | Forbidden | Permitted | [content/productlistitem.schema.json](content/productlistitem.schema.json) |
+| Can be instantiated | Yes | Forbidden | Permitted | [content/productlistitem.schema.json](content/productlistitem.schema.json) |
 
 ## Product List Item Example
 ```json
@@ -24,18 +24,19 @@ The product list item is a list item representing a product selected by a custom
 }
 ```
 
-# Product List Item Definitions
+# Product List Item Properties
 
-| Property | Type | Group |
-|----------|------|-------|
-| [@id](#@id) | `string` | `https://ns.adobe.com/xdm/content/productlistitem#/definitions/productlistitem` |
-| [xdm:SKU](#xdm:SKU) | `string` | `https://ns.adobe.com/xdm/content/productlistitem#/definitions/productlistitem` |
-| [xdm:currencyCode](#xdm:currencyCode) | `string` | `https://ns.adobe.com/xdm/content/productlistitem#/definitions/productlistitem` |
-| [xdm:name](#xdm:name) | `string` | `https://ns.adobe.com/xdm/content/productlistitem#/definitions/productlistitem` |
-| [xdm:priceTotal](#xdm:priceTotal) | `number` | `https://ns.adobe.com/xdm/content/productlistitem#/definitions/productlistitem` |
-| [xdm:product](#xdm:product) | `string` | `https://ns.adobe.com/xdm/content/productlistitem#/definitions/productlistitem` |
-| [xdm:productAddMethod](#xdm:productAddMethod) | `string` | `https://ns.adobe.com/xdm/content/productlistitem#/definitions/productlistitem` |
-| [xdm:quantity](#xdm:quantity) | `integer` | `https://ns.adobe.com/xdm/content/productlistitem#/definitions/productlistitem` |
+| Property | Type | Required | Defined by |
+|----------|------|----------|------------|
+| [@id](#@id) | `string` | Optional | Product List Item (this schema) |
+| [xdm:SKU](#xdmSKU) | `string` | Optional | Product List Item (this schema) |
+| [xdm:currencyCode](#xdmcurrencyCode) | `string` | Optional | Product List Item (this schema) |
+| [xdm:name](#xdmname) | `string` | Optional | Product List Item (this schema) |
+| [xdm:priceTotal](#xdmpriceTotal) | `number` | Optional | Product List Item (this schema) |
+| [xdm:product](#xdmproduct) | `string` | Optional | Product List Item (this schema) |
+| [xdm:productAddMethod](#xdmproductAddMethod) | `string` | Optional | Product List Item (this schema) |
+| [xdm:quantity](#xdmquantity) | `integer` | Optional | Product List Item (this schema) |
+| `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
 ### Line Item ID.

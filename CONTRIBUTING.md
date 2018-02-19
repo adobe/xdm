@@ -152,6 +152,7 @@ Run `npm run lint` before committing. The `lint` command is able to fix some eas
 * intent: 2 spaces
 * line breaks
 * spaces around delimiters
+* breaks long lines where possible
 
 ### Re-Use and Modularity
 

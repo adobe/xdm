@@ -43,7 +43,7 @@
   },
   "allOf": [
     {
-      "ref$": "#/definitions/personname"
+      "$ref": "#/definitions/personname"
     }
   ]
 }

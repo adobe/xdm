@@ -23,14 +23,14 @@
   "xdm:SKU": "12345678",
   "xdm:planName": "PS+ 12 Month Membership",
   "xdm:country": "USA",
-  "xdm:startDate": "2001-01-01T10:00:00",
-  "xdm:endDate": "2002-01-01T10:00:00",
+  "xdm:startDate": "2001-01-01",
+  "xdm:endDate": "2002-01-01",
   "xdm:term": 12,
   "xdm:termUnitOfTime": "Month",
   "xdm:status": "active",
   "xdm:contractId": "contractid-123",
   "xdm:paymentMethod": "creditCard",
   "xdm:billingPeriod": "Month",
-  "xdm:billingStartDate": "2001-01-01T10:00:00",
+  "xdm:billingStartDate": "2001-01-01",
   "xdm:paymentStatus": "paid"
 }

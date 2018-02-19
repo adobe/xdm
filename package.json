@@ -33,6 +33,7 @@
     "ajv-cli": "^2.1.0",
     "json-beautifier": "^1.0.3",
     "mocha": "^5.0.1",
+    "mocha-junit-reporter": "^1.17.0",
     "shelljs": "^0.7.8",
     "shx": "^0.2.2"
   }

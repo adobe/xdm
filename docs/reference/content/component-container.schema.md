@@ -5,7 +5,8 @@
 https://ns.adobe.com/xdm/content/component-container
 ```
 
-A container for `Page Component`s, this means for content blocks that are within a *Componentized Page*, not a container for componentized pages themselves. Components in the container can be ordered or unordered, and the type of the container determines how the container is authored, configured, rendered, and displayed.
+A container for `Page Component`s, this means for content blocks that are within a _Componentized Page_, not a container for componentized pages themselves. Components in the container can be ordered or unordered, and the type of the container determines how the container is authored, configured, rendered, and displayed.
+
 
 | Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
 |----------|------------|-------------------|-----------------------|------------|

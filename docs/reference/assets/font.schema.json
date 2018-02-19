@@ -9,7 +9,7 @@
     "$id": "https://ns.adobe.com/xdm/assets/font",
     "title": "Font",
     "meta:extensible": false,
-    "description": "Font is used to describe the typefaces and font files used in a document.\nThe Font schema groups different font files that belong to the same typeface.",
+    "description": "Font is used to describe the typefaces and font files used in a document.\nThe Font schema groups different font files that belong to the same typeface.\n",
     "type": "object",
     "definitions": {
         "font": {

@@ -1,6 +1,7 @@
 ---
 xdm:navOrder: 1
 ---
+
 # Experience Data Model (XDM) Version 0.2.0-WIP
 
 ## Introduction
@@ -9,10 +10,9 @@ xdm:navOrder: 1
 
 The goal of the Experience Data Model standard is to define a common language for digital experiences that spans multiple channels, software implementations, and vendors. In particular, XDM aims to:
 
-- Enable software that creates, manages, publishes, and measures digital experiences to interoperate more easily
-- Facilitate the creation of complex, engaging, and intruiging digital experiences across channels
-- Allow the creation of application programming interfaces (APIs) for experience creation, management, publication, and measurement
-
+* Enable software that creates, manages, publishes, and measures digital experiences to interoperate more easily
+* Facilitate the creation of complex, engaging, and intruiging digital experiences across channels
+* Allow the creation of application programming interfaces (APIs) for experience creation, management, publication, and measurement
 
 ## Status
 
@@ -37,15 +37,15 @@ As all XDM versions are mutually compatible, the version numbers indicated in th
 
 XDM Versioning follows the practices laid out in the [Semantic Versioning 2.0.0 guideline](https://semver.org). This means, that XDM version numbers are in the form MAJOR.MINOR.PATCH, with increments happening when:
 
-> - MAJOR version when you make incompatible API changes,
-> - MINOR version when you add functionality in a backwards-compatible manner, and
-> - PATCH version when you make backwards-compatible bug fixes.
+> * MAJOR version when you make incompatible API changes,
+> * MINOR version when you add functionality in a backwards-compatible manner, and
+> * PATCH version when you make backwards-compatible bug fixes.
 
 Applied to XDM, this means,
 
-- MAJOR version will not be increased once version 1.0.0 is reached
-- MINOR version will be increased when new optional properties get added, the range of property values gets broadened
-- PATCH version will be increased when names, titles, and descriptions of properties get changed
+* MAJOR version will not be increased once version 1.0.0 is reached
+* MINOR version will be increased when new optional properties get added, the range of property values gets broadened
+* PATCH version will be increased when names, titles, and descriptions of properties get changed
 
 ### Versioning before 1.0.0
 
@@ -57,14 +57,14 @@ XDM is at major version zero at this time, and should not be considered stable.
 
 ### Extensibility
 
-The fields in each XDM model are extensible. Consuming applications should not fail when they encounter unknown schemas, field names, or property values. 
+The fields in each XDM model are extensible. Consuming applications should not fail when they encounter unknown schemas, field names, or property values.
 It is best practice to pass through unknown schemas, field names, or property values without modification. This includes passing through values that are not conforming to this specification.
 
 In general, consuming applications should reject invalid models when the invalidity of the received data is preventing the application from functioning, and pass through all other models.
 
 All extensions will be performed using URIs as property names, which means that extensions cannot change, modify, or break the semantics of previously introduced models, properties, or values, because all XDM-provided property names use a `prefix:name` pattern.
 
-This best practice holds for customer- and vendor-specific extensions to XDM, but also to version updates to XDM. 
+This best practice holds for customer- and vendor-specific extensions to XDM, but also to version updates to XDM.
 New schemas, field names, or property values introduced by either a newer version of XDM or an extension of XDM must not cause a consumer to fail, and should, when possible, passed through without modification.
 
 ### Versioning Schema
@@ -73,7 +73,7 @@ New schemas, field names, or property values introduced by either a newer versio
 
 ## Formal Expression
 
-XDM is formally specified through a combination of JSON Schema and some aspects of JSON for Linking Data (JSON-LD). 
+XDM is formally specified through a combination of JSON Schema and some aspects of JSON for Linking Data (JSON-LD).
 JSON Schema specifies unambiguously which properties and property values are allowed for a specific instance of a model, JSON-LD provides us with best practices of defining namespace prefixes, and identifying the semantics of property names.
-For consumers, it is not neccessary to understand JSON-LD, and expected to treat all XDM documents as JSON documents. 
+For consumers, it is not neccessary to understand JSON-LD, and expected to treat all XDM documents as JSON documents.
 This means, if the JSON representation of two XDM models is identical, then the two models are considered identical.

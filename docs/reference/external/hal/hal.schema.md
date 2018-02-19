@@ -6,12 +6,13 @@ https://ns.adobe.com/xdm/external/hal/resource
 ```
 
 &gt; The JSON Hypertext Application Language (HAL) is a standard which
-   establishes conventions for expressing hypermedia controls, such as
-   links, with JSON [RFC4627](https://tools.ietf.org/html/rfc4627).
+&gt; establishes conventions for expressing hypermedia controls, such as
+&gt; links, with JSON [RFC4627](https://tools.ietf.org/html/rfc4627).
 
 -- from [JSON Hypertext Application Language draft-kelly-json-hal-08](https://tools.ietf.org/html/draft-kelly-json-hal-08)
 
 This external schema definition allows adding HAL expressions into an existing schema.
+
 
 | Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
 |----------|------------|-------------------|-----------------------|------------|
@@ -28,33 +29,6 @@ This external schema definition allows adding HAL expressions into an existing s
     "warehouse": {
       "href": "/warehouse/56"
     },
-    "invoice": {
-      "href": "/invoices/873"
-    }
-  },
-  "currency": "USD",
-  "status": "shipped",
-  "total": 10.2
-}
-```
-
-```json
-{
-  "_links": {
-    "self": {
-      "href": "/orders/523"
-    },
-    "warehouses": [
-      {
-        "href": "/warehouse/56"
-      },
-      {
-        "href": "/warehouse/56"
-      },
-      {
-        "href": "/warehouse/56"
-      }
-    ],
     "invoice": {
       "href": "/invoices/873"
     }
@@ -106,6 +80,33 @@ This external schema definition allows adding HAL expressions into an existing s
         "total": 10.2
       }
     ]
+  },
+  "currency": "USD",
+  "status": "shipped",
+  "total": 10.2
+}
+```
+
+```json
+{
+  "_links": {
+    "self": {
+      "href": "/orders/523"
+    },
+    "warehouses": [
+      {
+        "href": "/warehouse/56"
+      },
+      {
+        "href": "/warehouse/56"
+      },
+      {
+        "href": "/warehouse/56"
+      }
+    ],
+    "invoice": {
+      "href": "/invoices/873"
+    }
   },
   "currency": "USD",
   "status": "shipped",

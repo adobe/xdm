@@ -20,15 +20,27 @@
 * [Rectangular Object (measured in variable unit)](./assets/variable-unit-rectangular.schema.md) – `https://ns.adobe.com/xdm/assets/variable-unit-rectangular`
 * [Video](./assets/video.schema.md) – `https://ns.adobe.com/xdm/assets/video`
 
-## /content/
+## /context/
 
-* [Component Container](./content/component-container.schema.md) – `https://ns.adobe.com/xdm/content/component-container`
-* [Componentized Page](./content/componentized-page.schema.md) – `https://ns.adobe.com/xdm/content/componentized-page`
-* [Content](./content/content.schema.md) – `https://ns.adobe.com/xdm/content/content`
-* [Page Component](./content/page-component.schema.md) – `https://ns.adobe.com/xdm/content/page-component`
-* [Product](./content/product.schema.md) – `https://ns.adobe.com/xdm/context/product`
-* [Product List Item](./content/productlistitem.schema.md) – `https://ns.adobe.com/xdm/content/productlistitem`
-* [Content Repository](./content/repository.schema.md) – `https://ns.adobe.com/xdm/content/repository`
+* [Browser Details](./context/browserdetails.schema.md) – `https://ns.adobe.com/xdm/context/browserdetails`
+* [Commerce](./context/commerce.schema.md) – `https://ns.adobe.com/xdm/context/commerce`
+* [Device](./context/device.schema.md) – `https://ns.adobe.com/xdm/context/device`
+* [Email Address](./context/emailaddress.schema.md) – `https://ns.adobe.com/xdm/context/emailaddress`
+* [End User IDs](./context/enduserids.schema.md) – `https://ns.adobe.com/xdm/context/enduserids`
+* [Environment](./context/environment.schema.md) – `https://ns.adobe.com/xdm/context/environment`
+* [ExperienceEvent](./context/experienceevent.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent`
+* [Location Context](./context/locationcontext.schema.md) – `https://ns.adobe.com/xdm/context/locationcontext`
+* [Marketing](./context/marketing.schema.md) – `https://ns.adobe.com/xdm/context/marketing`
+* [OptInOut](./context/optinout.schema.md) – `https://ns.adobe.com/xdm/context/optinout`
+* [Person Name](./context/person-name.schema.md) – `https://ns.adobe.com/xdm/context/person-name`
+* [Person](./context/person.schema.md) – `https://ns.adobe.com/xdm/context/person`
+* [Phone Number](./context/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
+* [Place](./context/place.schema.md) – `https://ns.adobe.com/xdm/context/place`
+* [Profile](./context/profile.schema.md) – `https://ns.adobe.com/xdm/context/profile`
+* [Push Notification Token](./context/pushnotificationtoken.schema.md) – `https://ns.adobe.com/xdm/context/pushnotificationtoken`
+* [Search](./context/search.schema.md) – `https://ns.adobe.com/xdm/context/search`
+* [Subscription](./context/subscription.schema.md) – `https://ns.adobe.com/xdm/context/subscription`
+* [Web Link](./context/weblink.schema.md) – `https://ns.adobe.com/xdm/context/weblink`
 
 ## /channels/
 
@@ -53,56 +65,15 @@
 * [WeChat](./channels/wechat.schema.md) – `https://ns.adobe.com/xdm/channels/wechat`
 * [WNS](./channels/wns.schema.md) – `https://ns.adobe.com/xdm/channels/wns`
 
-## /context/
+## /content/
 
-* [Browser Details](./context/browserdetails.schema.md) – `https://ns.adobe.com/xdm/context/browserdetails`
-* [Commerce](./context/commerce.schema.md) – `https://ns.adobe.com/xdm/context/commerce`
-* [Device](./context/device.schema.md) – `https://ns.adobe.com/xdm/context/device`
-* [Email Address](./context/emailaddress.schema.md) – `https://ns.adobe.com/xdm/context/emailaddress`
-* [End User IDs](./context/enduserids.schema.md) – `https://ns.adobe.com/xdm/context/enduserids`
-* [Environment](./context/environment.schema.md) – `https://ns.adobe.com/xdm/context/environment`
-* [ExperienceEvent](./context/experienceevent.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent`
-* [Location Context](./context/locationcontext.schema.md) – `https://ns.adobe.com/xdm/context/locationcontext`
-* [Marketing](./context/marketing.schema.md) – `https://ns.adobe.com/xdm/context/marketing`
-* [OptInOut](./context/optinout.schema.md) – `https://ns.adobe.com/xdm/context/optinout`
-* [Person Name](./context/person-name.schema.md) – `https://ns.adobe.com/xdm/context/person-name`
-* [Person](./context/person.schema.md) – `https://ns.adobe.com/xdm/context/person`
-* [Phone Number](./context/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
-* [Place](./context/place.schema.md) – `https://ns.adobe.com/xdm/context/place`
-* [Profile](./context/profile.schema.md) – `https://ns.adobe.com/xdm/context/profile`
-* [Push Notification Token](./context/pushnotificationtoken.schema.md) – `https://ns.adobe.com/xdm/context/pushnotificationtoken`
-* [Search](./context/search.schema.md) – `https://ns.adobe.com/xdm/context/search`
-* [Subscription](./context/subscription.schema.md) – `https://ns.adobe.com/xdm/context/subscription`
-* [Web Link](./context/weblink.schema.md) – `https://ns.adobe.com/xdm/context/weblink`
-
-## /data/
-
-* [abandons](./data/abandons.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/abandons`
-* [bounces](./data/bounces.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/bounces`
-* [checkouts](./data/checkouts.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/checkouts`
-* [clicks](./data/clicks.schema.md) – `https://ns.adobe.com/xdm/data/metrics/advertising/clicks`
-* [Data Source](./data/datasource.schema.md) – `https://ns.adobe.com/xdm/data/datasource`
-* [impressions](./data/impressions.schema.md) – `https://ns.adobe.com/xdm/data/metrics/advertising/impressions`
-* [Discount](./data/discount.schema.md) – `https://ns.adobe.com/xdm/data/discount`
-* [link-clicks](./data/link-clicks.schema.md) – `https://ns.adobe.com/xdm/data/metrics/web/link-clicks`
-* [Metric](./data/metric.schema.md) – `https://ns.adobe.com/xdm/data/metric`
-* [Measure](./data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
-* [Metrics](./data/metrics.schema.md) – `https://ns.adobe.com/xdm/data/metrics`
-* [mirror-pages](./data/mirror-pages.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages`
-* [non-deliverables](./data/non-deliverables.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/non-deliverables`
-* [Order](./data/order.schema.md) – `https://ns.adobe.com/xdm/data/order`
-* [product-list-adds](./data/product-list-adds.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/product-list-adds`
-* [page-views](./data/page-views.schema.md) – `https://ns.adobe.com/xdm/data/metrics/web/page-views`
-* [product-list-opens](./data/product-list-opens.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/product-list-opens`
-* [Payment Item](./data/paymentitem.schema.md) – `https://ns.adobe.com/xdm/data/paymentitem`
-* [product-list-removals](./data/product-list-removals.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/product-list-removals`
-* [product-list-reopens](./data/product-list-reopens.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/product-list-reopens`
-* [product-list-views](./data/product-list-views.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/product-list-views`
-* [product-views](./data/product-views.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/product-views`
-* [purchases](./data/purchases.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/purchases`
-* [save-for-laters](./data/save-for-laters.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/save-for-laters`
-* [sends](./data/sends.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/sends`
-* [user-complaints](./data/user-complaints.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/user-complaints`
+* [Component Container](./content/component-container.schema.md) – `https://ns.adobe.com/xdm/content/component-container`
+* [Componentized Page](./content/componentized-page.schema.md) – `https://ns.adobe.com/xdm/content/componentized-page`
+* [Content](./content/content.schema.md) – `https://ns.adobe.com/xdm/content/content`
+* [Page Component](./content/page-component.schema.md) – `https://ns.adobe.com/xdm/content/page-component`
+* [Product](./content/product.schema.md) – `https://ns.adobe.com/xdm/context/product`
+* [Product List Item](./content/productlistitem.schema.md) – `https://ns.adobe.com/xdm/content/productlistitem`
+* [Content Repository](./content/repository.schema.md) – `https://ns.adobe.com/xdm/content/repository`
 
 ## /common/
 
@@ -116,16 +87,34 @@
 * [Principal](./common/principal.schema.md) – `https://ns.adobe.com/xdm/common/principal`
 * [Customer Managed Environment](./common/selfservice.schema.md) – `https://ns.adobe.com/xdm/selfservice`
 
-## /content/repository-policies/
+## /data/
 
-* [At-Rest Encryption](./content/repository-policies/encryption.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/encryption`
-* [Storage Quota](./content/repository-policies/quota.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/quota`
-* [Versioning](./content/repository-policies/versioning.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/versioning`
-
-## /external/hal/
-
-* [HAL Link](./external/hal/hal-link.schema.md) – `https://ns.adobe.com/xdm/external/hal/link`
-* [HAL Resource](./external/hal/hal.schema.md) – `https://ns.adobe.com/xdm/external/hal/resource`
+* [abandons](./data/abandons.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/abandons`
+* [bounces](./data/bounces.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/bounces`
+* [checkouts](./data/checkouts.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/checkouts`
+* [clicks](./data/clicks.schema.md) – `https://ns.adobe.com/xdm/data/metrics/advertising/clicks`
+* [Data Source](./data/datasource.schema.md) – `https://ns.adobe.com/xdm/data/datasource`
+* [Discount](./data/discount.schema.md) – `https://ns.adobe.com/xdm/data/discount`
+* [impressions](./data/impressions.schema.md) – `https://ns.adobe.com/xdm/data/metrics/advertising/impressions`
+* [link-clicks](./data/link-clicks.schema.md) – `https://ns.adobe.com/xdm/data/metrics/web/link-clicks`
+* [Measure](./data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+* [Metric](./data/metric.schema.md) – `https://ns.adobe.com/xdm/data/metric`
+* [Metrics](./data/metrics.schema.md) – `https://ns.adobe.com/xdm/data/metrics`
+* [mirror-pages](./data/mirror-pages.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages`
+* [non-deliverables](./data/non-deliverables.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/non-deliverables`
+* [Order](./data/order.schema.md) – `https://ns.adobe.com/xdm/data/order`
+* [page-views](./data/page-views.schema.md) – `https://ns.adobe.com/xdm/data/metrics/web/page-views`
+* [Payment Item](./data/paymentitem.schema.md) – `https://ns.adobe.com/xdm/data/paymentitem`
+* [product-list-adds](./data/product-list-adds.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/product-list-adds`
+* [product-list-opens](./data/product-list-opens.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/product-list-opens`
+* [product-list-removals](./data/product-list-removals.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/product-list-removals`
+* [product-list-reopens](./data/product-list-reopens.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/product-list-reopens`
+* [product-list-views](./data/product-list-views.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/product-list-views`
+* [product-views](./data/product-views.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/product-views`
+* [purchases](./data/purchases.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/purchases`
+* [save-for-laters](./data/save-for-laters.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/save-for-laters`
+* [sends](./data/sends.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/sends`
+* [user-complaints](./data/user-complaints.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/user-complaints`
 
 ## /external/activity-streams-2/
 
@@ -155,6 +144,17 @@
 * [Common Properties](./external/repo/common.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0`
 * [Directory](./external/repo/directory.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/directory`
 * [Sub-Directory](./external/repo/sub-directory.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/sub-directory`
+
+## /external/hal/
+
+* [HAL Link](./external/hal/hal-link.schema.md) – `https://ns.adobe.com/xdm/external/hal/link`
+* [HAL Resource](./external/hal/hal.schema.md) – `https://ns.adobe.com/xdm/external/hal/resource`
+
+## /content/repository-policies/
+
+* [At-Rest Encryption](./content/repository-policies/encryption.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/encryption`
+* [Storage Quota](./content/repository-policies/quota.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/quota`
+* [Versioning](./content/repository-policies/versioning.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/versioning`
 
 ## /common/event/
 

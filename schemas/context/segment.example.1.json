@@ -1,0 +1,24 @@
+ {
+                "@id": "https://ns.adobe.com/entities/segment/123",
+                "xdm:endUserIds": {
+                  "xdm:realm": {
+                    "@id": "https://data.adobe.io/experiencecloud/audiencemanager",
+                    "xdm:name": "Adobe Audience Manager"
+                  },
+                  "https://ns.adobe.com/experiencecloud/mcid": {
+                    "xdm:datasource": {
+                      "@id": "https://data.adobe.io/experiencecloud/mcid",
+                      "xdm:name": "Adobe Marketing Cloud Identity Core Service"
+                    },
+                    "xdm:id": "mcid-sample111",
+                    "xdm:confidence": 1
+                  },
+                  "https://ns.adobe.com/experiencecloud/analytics": {
+                    "xdm:id": "mcid-sample111",
+                    "xdm:confidence": 0.99
+                  }
+                },
+                "xdm:name": "My segment",
+                "xdm:assignedOn": "2017-01-12T15:52:25+00:00",
+                "xdm:validUntil": "2018-01-12T15:52:25+00:00"
+            }

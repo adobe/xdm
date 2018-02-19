@@ -1,0 +1,8 @@
+{
+  "@id": "https://ns.adobe.com/entities/propensity/123",
+  "xdm:score": 0.25,
+  "xdm:action": "purchase",
+  "xdm:timeWindow": 15,
+  "xdm:unitOfTime": "minutes",
+  "xdm:algorithmId": "adobe.propensityAR1"
+}

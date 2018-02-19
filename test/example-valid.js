@@ -24,6 +24,8 @@ const validator = new Ajv({
 });
 
 describe("Loading of schemas", () => {
+  validator.addMetaSchema(JSON.parse(fs.readFileSync("meta.schema.json")));
+
   schemas.forEach(schema => {
     it("Loading " + schema, (done) => {
       assert.doesNotThrow(() => {

@@ -8,6 +8,7 @@ https://ns.adobe.com/xdm/assets/font
 Font is used to describe the typefaces and font files used in a document.
 The Font schema groups different font files that belong to the same typeface.
 
+
 | Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
 |----------|------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Forbidden | Permitted | [assets/font.schema.json](assets/font.schema.json) |

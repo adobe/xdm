@@ -10,7 +10,7 @@
     "title": "Layer",
     "meta:extensible": true,
     "type": "object",
-    "description": "Layers are like stacked sheets. \nUsers can add transparency/opacity to see through transparent areas of a layer. \nThey are used for compositing multiple images, adding text to an image, or adding vector graphic shapes. \nUsers can also apply a layer style to add a special effect such as a drop shadow or a glow.",
+    "description": "Layers are like stacked sheets.\nUsers can add transparency/opacity to see through transparent areas of a layer.\nThey are used for compositing multiple images, adding text to an image, or adding vector graphic shapes.\nUsers can also apply a layer style to add a special effect such as a drop shadow or a glow.\n",
     "definitions": {
         "layer": {
             "properties": {

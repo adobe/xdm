@@ -8,9 +8,9 @@ const extensions = $.find("extensions").filter(name => { return name.match(/.*\.
 const examples = $.find("schemas").filter(name => { return name.match(/.*\.example\.[0-9]+\.json$/)});
 const invalids = $.find("schemas").filter(name => { return name.match(/.*\.invalid\.[0-9]+\.json$/)});
 
-describe("Presence of examples", () => {
+describe("Presence of invalids", () => {
   schemas.forEach(schema => {
-    it(schema + " has at least one example", () => {
+    it(schema + " has at least one invalid example", () => {
       const directory = schema.replace(/\.schema\.json$/,"");
       
       const myInvalids = invalids.filter(example => {

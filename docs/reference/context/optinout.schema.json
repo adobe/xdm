@@ -12,6 +12,28 @@
     "description": "Describes a users' communication preferences by channel. For each channel individually, which is a property of this object, a user's preference (opt-in, opt-out, pending) can be recorded. In addition, a global override opt-out is possible. Each property of this schema must be a valid and known URI for an XDM Channel.",
     "definitions": {
         "optinout": {
+            "meta:keys": {
+                "https://ns.adobe.com/xdm/channels/adm": "ADM",
+                "https://ns.adobe.com/xdm/channels/apns": "APNS",
+                "https://ns.adobe.com/xdm/channels/application": "Application",
+                "https://ns.adobe.com/xdm/channels/baidu": "Baidu",
+                "https://ns.adobe.com/xdm/channels/channel": "Experience Channel",
+                "https://ns.adobe.com/xdm/channels/direct-mail": "Direct Mail",
+                "https://ns.adobe.com/xdm/channels/email": "E-Mail",
+                "https://ns.adobe.com/xdm/channels/facebook-feed": "Facebook News Feed",
+                "https://ns.adobe.com/xdm/channels/fax": "Fax",
+                "https://ns.adobe.com/xdm/channels/gcm": "GCM",
+                "https://ns.adobe.com/xdm/channels/line": "LINE",
+                "https://ns.adobe.com/xdm/channels/mobile-app": "Web",
+                "https://ns.adobe.com/xdm/channels/mpns": "MPNS",
+                "https://ns.adobe.com/xdm/channels/phone": "Phone",
+                "https://ns.adobe.com/xdm/channels/sms": "SMS",
+                "https://ns.adobe.com/xdm/channels/twitter-feed": "Twitter Feed",
+                "https://ns.adobe.com/xdm/channels/web": "Web",
+                "https://ns.adobe.com/xdm/channels/webpage": "Web Page",
+                "https://ns.adobe.com/xdm/channels/wechat": "WeChat",
+                "https://ns.adobe.com/xdm/channels/wns": "WNS"
+            },
             "patternProperties": {
                 ".+://.+": {
                     "description": "Communication preference for the outbound channel identified through its URL by the name of the property.",

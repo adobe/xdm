@@ -1,0 +1,46 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/assets/aggregated-asset",
+  "title": "Aggregated Asset",
+  "type": "object",
+  "description": "This schema aggregates all asset sub-schemas that are supported by XDM.",
+  "additionalProperties": true,
+  "allOf": [
+    {
+      "$ref": "http://ns.adobe.com/adobecloud/core/1.0/asset#/definitions/asset"
+    },
+    {
+      "$ref": "http://ns.adobe.com/adobecloud/core/1.0#/definitions/common-properties"
+    },
+    {
+      "$ref": "http://ns.adobe.com/adobecloud/core/1.0#/definitions/date-properties"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/external/hal/resource#/definitions/hal"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/content/content#/definitions/content"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/assets/copyright-owner#/definitions/copyright"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/assets/asset#/definitions/asset"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/assets/rectangular#/definitions/rectangular"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/assets/image#/definitions/image"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/assets/video#/definitions/video"
+    }
+  ]
+}

@@ -64,7 +64,7 @@
   },
   "allOf": [
     {
-      "ref$": "#/definitions/person"
+      "$ref": "#/definitions/person"
     },
     {
       "$ref": "https://ns.adobe.com/xdm/common/auditable"

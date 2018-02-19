@@ -77,9 +77,9 @@ jobs:
             MOCHA_FILE: junit/test-results.xml
           when: always
       - store_test_results:
-          path: ~/junit
+          path: junit
       - store_artifacts:
-          path: ~/junit 
+          path: junit 
 
   generate-docs:
     docker:

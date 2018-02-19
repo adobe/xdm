@@ -154,6 +154,8 @@ Run `npm run lint` before committing. The `lint` command is able to fix some eas
 * spaces around delimiters
 * breaks long lines where possible
 
+`npm lint` uses [Prettier](https://prettier.io), which offers integrations for consistent formatting for many editors and IDEs.
+
 ### Re-Use and Modularity
 
 In order to encourage re-use of definitions and modularity of schema files, avoid putting all property declarations into the root of the schema, instead use a `definitions` object with one sub-key for each semantic unit. Then, at the bottom of your schema definition, `$ref`erence them using the `allOf` construct.

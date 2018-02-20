@@ -14,10 +14,12 @@ A directory in Adobe Cloud Platform.
 ## Schema Hierarchy
 
 * Directory `http://ns.adobe.com/adobecloud/core/1.0/directory`
+  * [Page](../../common/page.schema.md) `https://ns.adobe.com/xdm/common/page`
   * [Common Properties](common.schema.md) `http://ns.adobe.com/adobecloud/core/1.0`
   * [HAL Resource](../hal/hal.schema.md) `https://ns.adobe.com/xdm/external/hal/resource`
 
-## Directory Example
+## Directory Examples
+
 ```json
 {
   "_links": {
@@ -40,12 +42,42 @@ A directory in Adobe Cloud Platform.
 }
 ```
 
+```json
+{
+  "_links": {
+    "http://ns.adobe.com/adobecloud/rel/create": {
+      "href": "https://api.example.com/v2/create{+path}{?intermediates}",
+      "templated": true
+    },
+    "http://ns.adobe.com/adobecloud/rel/resolve/id": {
+      "href": "https://api2.example.com/v7/resolve{?asset_id}",
+      "templated": true
+    }
+  },
+  "_page": {
+    "orderBy": "id",
+    "start": "123",
+    "next": "789",
+    "count": 100
+  },
+  "repo:createdDate": "2017-09-26T15:52:25+00:00",
+  "repo:lastModifiedDate": "2017-09-26T15:52:25+00:00",
+  "repo:path": "/",
+  "repo:name": "here",
+  "repo:etag": "15",
+  "dc:format": "application/vnd.adobecloud.directory+json",
+  "children": []
+}
+```
+
+
 # Directory Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [_embedded](#_embedded) | `object` | Optional | [HAL Resource](../hal/hal.schema.md#_embedded) |
 | [_links](#_links) | `object` | Optional | [HAL Resource](../hal/hal.schema.md#_links) |
+| [_page](#_page) | Page | Optional | Directory (this schema) |
 | [children](#children) | `array` | Optional | Directory (this schema) |
 | [dc:format](#dcformat) | `string` | **Required** | [Common Properties](common.schema.md#dcformat) |
 | [repo:createDate](#repocreateDate) | `string` | Optional | [Common Properties](common.schema.md#repocreateDate) |
@@ -95,6 +127,24 @@ It is an object whose property names are link relation types (as defined by [RFC
 | Property | Type | Required
 |----------|------|----------|
 
+
+
+
+
+
+## _page
+
+Page info, included if this resource is part of paginated result.
+
+`_page`
+* is optional
+* type: Page
+* defined in this schema
+
+### _page Type
+
+
+* [Page](../../common/page.schema.md) – `https://ns.adobe.com/xdm/common/page`
 
 
 

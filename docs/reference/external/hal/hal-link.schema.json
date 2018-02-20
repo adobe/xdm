@@ -8,7 +8,7 @@
     "$id": "https://ns.adobe.com/xdm/external/hal/link",
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "HAL Link",
-    "description": "> A Link Object represents a hyperlink from the containing resource to a URI.\n\n-- from [JSON Hypertext Application Language, section 5](https://tools.ietf.org/html/draft-kelly-json-hal-08#section-5)",
+    "description": "> A Link Object represents a hyperlink from the containing resource to a URI.\n\n-- from [JSON Hypertext Application Language, section 5](https://tools.ietf.org/html/draft-kelly-json-hal-08#section-5)\n",
     "type": "object",
     "definitions": {
         "hal-link-common": {
@@ -107,11 +107,11 @@
     ],
     "examples": [
         {
-            "href": "http://www.adobe.com/"
-        },
-        {
             "href": "http://www.adobe.com/{product}",
             "templated": true
+        },
+        {
+            "href": "http://www.adobe.com/"
         }
     ]
 }

@@ -1,6 +1,7 @@
 ---
 xdm:navOrder: 4
 ---
+
 # Extending XDM
 
 XDM is a JSON-based standard and there are three ways how JSON data models can be extended:
@@ -15,7 +16,7 @@ The following sections will describe how each of these extension mechansims can 
 
 ## Extending XDM Properties
 
-XDM is extensible, which means that customers, partners, and system integrators can take an existing XDM schema and add custom properties. 
+XDM is extensible, which means that customers, partners, and system integrators can take an existing XDM schema and add custom properties.
 Although implementations should be lenient when encountering unknown properties, it is best practice to avoid using undeclared properties, because they might clash with future standard properties defined in XDM or with other undeclared properties.
 Some XDM schemas might be declared non-extensible, which means that any property that is not defined in the JSON Schema will cause validation to fail.
 
@@ -24,7 +25,7 @@ XDM generally separates two kinds of properties:
 1. Standard properties are part of the XDM specification, and follow a pattern of `prefix:name`. For instance, `xdm:asset_id` is the unique identifier of assets in XDM.
 2. Extension properties are not part of the XDM specification and have been defined by a customer, a partner, or by Adobe for things that are specific to one implemenation. Extension property names are always URIs like `http://example.com/ns/xdm/my_property`
 
-XDM comes with a small list of allowed prefixes that correspond to the namespace URIs of the standards that XDM is incorporating. 
+XDM comes with a small list of allowed prefixes that correspond to the namespace URIs of the standards that XDM is incorporating.
 Each of these namespaces prefixes and the corresponding namespace URI is listed in a JSON-LD context document.
 JSON-LD stands for JSON for Linked Data and provides a way of expressing a mapping between a short (prefixed) property name and a globally unique property name that is defined through an IRI (Internationalized URI).
 Consumers of XDM can use the JSON-LD context as part of their systems, but in practise everything will work just as well when treating everything simply as JSON.
@@ -66,7 +67,7 @@ Users of XDM wishing to insert custom properties should select a namespace URI t
 
 ## Extending XDM through new Schemas
 
-XDM also allows the extension through the introduction of new schemas. 
+XDM also allows the extension through the introduction of new schemas.
 This means that a new schema will be able to express that it is extending an existing standard schema and that an application that is able to process the parent schema should treat the extended schema as if it was the parent schema.
 
 Not all XDM schema are extensible and allow new derivative schemas.
@@ -99,10 +100,10 @@ An XDM producer that wishes to extend an exiting XDM schema has to adhere to fol
   "definitions": {
     "third": {
       "properties": {
-          "baz": {
-            "type": "string",
-          }
+        "baz": {
+          "type": "string"
         }
+      }
     }
   },
   "allOf": [
@@ -114,8 +115,7 @@ An XDM producer that wishes to extend an exiting XDM schema has to adhere to fol
     },
     {
       "$ref": "#/definitions/third"
-    },
-    
+    }
   ]
 }
 ```
@@ -125,7 +125,7 @@ There is no obligation to treat the inheriting schema in any way different, or t
 
 ## What Cannot be Extended
 
-XDM is using fixed lists of `enum` values in some schemas. These lists cannot be extended. 
+XDM is using fixed lists of `enum` values in some schemas. These lists cannot be extended.
 
 ## Versioning Extensions
 

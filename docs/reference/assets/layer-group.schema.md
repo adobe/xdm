@@ -5,9 +5,10 @@
 https://ns.adobe.com/xdm/assets/layer-group
 ```
 
-Layer group help in preserving the hierarchy of layers in a document. 
-Users can apply a common style to the group instead of working at individual layers. 
+Layer group help in preserving the hierarchy of layers in a document.
+Users can apply a common style to the group instead of working at individual layers.
 A Layer Group can contain layers or other layer groups.
+
 
 | Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
 |----------|------------|-------------------|-----------------------|------------|

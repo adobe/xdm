@@ -10,7 +10,7 @@
     "title": "Layer Group",
     "meta:extensible": true,
     "type": "object",
-    "description": "Layer group help in preserving the hierarchy of layers in a document. \nUsers can apply a common style to the group instead of working at individual layers. \nA Layer Group can contain layers or other layer groups.",
+    "description": "Layer group help in preserving the hierarchy of layers in a document.\nUsers can apply a common style to the group instead of working at individual layers.\nA Layer Group can contain layers or other layer groups.\n",
     "definitions": {
         "layer-group": {
             "properties": {

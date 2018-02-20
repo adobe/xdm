@@ -14,20 +14,32 @@
     "effectiveprivileges": {
       "type": "object",
       "properties": {
-        "*": { "$ref": "#/definitions/privilege" }
+        "*": {
+          "$ref": "#/definitions/privilege"
+        }
       },
-      "additionalProperties": { "$ref": "#/definitions/privilege" }
+      "additionalProperties": {
+        "$ref": "#/definitions/privilege"
+      }
     },
     "privilege": {
       "description": "Privilege granted to the current Subject",
       "type": "array",
       "items": {
         "type": "string",
-        "enum": [ "ack", "read", "write", "attach", "delete" ]
+        "enum": [
+          "ack",
+          "read",
+          "write",
+          "attach",
+          "delete"
+        ]
       }
     }
   },
   "allOf": [
-    { "$ref": "#/definitions/effectiveprivileges" }
+    {
+      "$ref": "#/definitions/effectiveprivileges"
+    }
   ]
 }

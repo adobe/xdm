@@ -10,7 +10,7 @@
     "title": "Resource Event",
     "type": "object",
     "meta:extensible": false,
-    "description": "A Resource Event is a high-level event that occurred in the processing, editing, or creation of an asset.\n\nResource Events are typically attached directly to an asset.",
+    "description": "A Resource Event is a high-level event that occurred in the processing, editing, or creation of an asset.\n\nResource Events are typically attached directly to an asset.\n",
     "definitions": {
         "resource-event": {
             "properties": {

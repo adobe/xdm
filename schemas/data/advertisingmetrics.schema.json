@@ -9,7 +9,8 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Advertising Metrics",
   "type": "object",
-  "description": "Quantifiable measures used to track and assess the status of a advertising business process.",
+  "description":
+    "Quantifiable measures used to track and assess the status of a advertising business process.",
   "definitions": {
     "advertisingmetrics": {
       "properties": {

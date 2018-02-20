@@ -10,7 +10,7 @@
     "title": "Metric",
     "type": "object",
     "meta:extensible": true,
-    "description": "A metric is a definition of a measurable or countable quantity. \n\nA metric consists of a measurement and a dimension. \nFor easier identification, metrics have a name and a unique URI that can be used when referring to the metric.\n\nThrough XDM's extensibility mechanism, new metrics can be defined by extending `Metric`.\n",
+    "description": "A metric is a definition of a measurable or countable quantity.\n\nA metric consists of a measurement and a dimension.\nFor easier identification, metrics have a name and a unique URI that can be used when referring to the metric.\n\nThrough XDM's extensibility mechanism, new metrics can be defined by extending `Metric`.\n",
     "definitions": {
         "metric": {
             "properties": {

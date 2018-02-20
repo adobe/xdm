@@ -9,6 +9,7 @@ A page component is a part or module of a `Componentized Page` or included in a 
 It contains content fragments and has a specific type.
 The type determines how the component will be displayed, rendered, and authored.
 
+
 | Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
 |----------|------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Forbidden | Permitted | [content/page-component.schema.json](content/page-component.schema.json) |

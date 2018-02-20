@@ -9,7 +9,8 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Web Metrics",
   "type": "object",
-  "description": "Quantifiable measures used to track and assess the status of a web activity.",
+  "description":
+    "Quantifiable measures used to track and assess the status of a web activity.",
   "definitions": {
     "webmetrics": {
       "properties": {

@@ -20,29 +20,6 @@
 * [Rectangular Object (measured in variable unit)](./assets/variable-unit-rectangular.schema.md) – `https://ns.adobe.com/xdm/assets/variable-unit-rectangular`
 * [Video](./assets/video.schema.md) – `https://ns.adobe.com/xdm/assets/video`
 
-## /channels/
-
-* [ADM](./channels/adm.schema.md) – `https://ns.adobe.com/xdm/channels/adm`
-* [APNS](./channels/apns.schema.md) – `https://ns.adobe.com/xdm/channels/apns`
-* [Application](./channels/application.schema.md) – `https://ns.adobe.com/xdm/channels/application`
-* [Baidu](./channels/baidu.schema.md) – `https://ns.adobe.com/xdm/channels/baidu`
-* [Experience Channel](./channels/channel.schema.md) – `https://ns.adobe.com/xdm/channels/channel`
-* [Direct Mail](./channels/direct-mail.schema.md) – `https://ns.adobe.com/xdm/channels/direct-mail`
-* [E-Mail](./channels/email.schema.md) – `https://ns.adobe.com/xdm/channels/email`
-* [Facebook News Feed](./channels/facebook-feed.schema.md) – `https://ns.adobe.com/xdm/channels/facebook-feed`
-* [Fax](./channels/fax.schema.md) – `https://ns.adobe.com/xdm/channels/fax`
-* [GCM](./channels/gcm.schema.md) – `https://ns.adobe.com/xdm/channels/gcm`
-* [LINE](./channels/line.schema.md) – `https://ns.adobe.com/xdm/channels/line`
-* [Web](./channels/mobile-app.schema.md) – `https://ns.adobe.com/xdm/channels/mobile-app`
-* [MPNS](./channels/mpns.schema.md) – `https://ns.adobe.com/xdm/channels/mpns`
-* [Phone](./channels/phone.schema.md) – `https://ns.adobe.com/xdm/channels/phone`
-* [SMS](./channels/sms.schema.md) – `https://ns.adobe.com/xdm/channels/sms`
-* [Twitter Feed](./channels/twitter-feed.schema.md) – `https://ns.adobe.com/xdm/channels/twitter-feed`
-* [Web](./channels/web.schema.md) – `https://ns.adobe.com/xdm/channels/web`
-* [Web Page](./channels/webpage.schema.md) – `https://ns.adobe.com/xdm/channels/webpage`
-* [WeChat](./channels/wechat.schema.md) – `https://ns.adobe.com/xdm/channels/wechat`
-* [WNS](./channels/wns.schema.md) – `https://ns.adobe.com/xdm/channels/wns`
-
 ## /content/
 
 * [Component Container](./content/component-container.schema.md) – `https://ns.adobe.com/xdm/content/component-container`
@@ -65,6 +42,29 @@
 * [Page](./common/page.schema.md) – `https://ns.adobe.com/xdm/common/page`
 * [Principal](./common/principal.schema.md) – `https://ns.adobe.com/xdm/common/principal`
 * [Customer Managed Environment](./common/selfservice.schema.md) – `https://ns.adobe.com/xdm/selfservice`
+
+## /channels/
+
+* [ADM](./channels/adm.schema.md) – `https://ns.adobe.com/xdm/channels/adm`
+* [APNS](./channels/apns.schema.md) – `https://ns.adobe.com/xdm/channels/apns`
+* [Application](./channels/application.schema.md) – `https://ns.adobe.com/xdm/channels/application`
+* [Baidu](./channels/baidu.schema.md) – `https://ns.adobe.com/xdm/channels/baidu`
+* [Experience Channel](./channels/channel.schema.md) – `https://ns.adobe.com/xdm/channels/channel`
+* [Direct Mail](./channels/direct-mail.schema.md) – `https://ns.adobe.com/xdm/channels/direct-mail`
+* [E-Mail](./channels/email.schema.md) – `https://ns.adobe.com/xdm/channels/email`
+* [Facebook News Feed](./channels/facebook-feed.schema.md) – `https://ns.adobe.com/xdm/channels/facebook-feed`
+* [Fax](./channels/fax.schema.md) – `https://ns.adobe.com/xdm/channels/fax`
+* [GCM](./channels/gcm.schema.md) – `https://ns.adobe.com/xdm/channels/gcm`
+* [LINE](./channels/line.schema.md) – `https://ns.adobe.com/xdm/channels/line`
+* [Web](./channels/mobile-app.schema.md) – `https://ns.adobe.com/xdm/channels/mobile-app`
+* [MPNS](./channels/mpns.schema.md) – `https://ns.adobe.com/xdm/channels/mpns`
+* [Phone](./channels/phone.schema.md) – `https://ns.adobe.com/xdm/channels/phone`
+* [SMS](./channels/sms.schema.md) – `https://ns.adobe.com/xdm/channels/sms`
+* [Twitter Feed](./channels/twitter-feed.schema.md) – `https://ns.adobe.com/xdm/channels/twitter-feed`
+* [Web](./channels/web.schema.md) – `https://ns.adobe.com/xdm/channels/web`
+* [Web Page](./channels/webpage.schema.md) – `https://ns.adobe.com/xdm/channels/webpage`
+* [WeChat](./channels/wechat.schema.md) – `https://ns.adobe.com/xdm/channels/wechat`
+* [WNS](./channels/wns.schema.md) – `https://ns.adobe.com/xdm/channels/wns`
 
 ## /context/
 
@@ -123,19 +123,15 @@
 * [Storage Quota](./content/repository-policies/quota.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/quota`
 * [Versioning](./content/repository-policies/versioning.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/versioning`
 
-## /external/hal/
+## /common/event/
 
-* [HAL Link](./external/hal/hal-link.schema.md) – `https://ns.adobe.com/xdm/external/hal/link`
-* [HAL Resource](./external/hal/hal.schema.md) – `https://ns.adobe.com/xdm/external/hal/resource`
-
-## /external/repo/
-
-* [Access Control Entry](./external/repo/accesscontrolentry.schema.md) – `https://ns.adobe.com/xdm/external/repo/accesscontrolentry`
-* [Access Control Policy](./external/repo/accesscontrolpolicy.schema.md) – `https://ns.adobe.com/xdm/external/repo/accesscontrolpolicy`
-* [Asset](./external/repo/asset.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/asset`
-* [Common Properties](./external/repo/common.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0`
-* [Directory](./external/repo/directory.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/directory`
-* [Sub-Directory](./external/repo/sub-directory.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/sub-directory`
+* [Created Event](./common/event/created.schema.md) – `https://ns.adobe.com/xdm/common/event/created`
+* [Deleted Event](./common/event/deleted.schema.md) – `https://ns.adobe.com/xdm/common/event/deleted`
+* [Published Event](./common/event/published.schema.md) – `https://ns.adobe.com/xdm/common/event/published`
+* [Emitted Event](./common/event/emitted.schema.md) – `https://ns.adobe.com/xdm/common/event/emitted`
+* [Rejected Event](./common/event/rejected.schema.md) – `https://ns.adobe.com/xdm/common/event/rejected`
+* [Unpublished Event](./common/event/unpublished.schema.md) – `https://ns.adobe.com/xdm/common/event/unpublished`
+* [Updated Event](./common/event/updated.schema.md) – `https://ns.adobe.com/xdm/common/event/updated`
 
 ## /external/activity-streams-2/
 
@@ -157,12 +153,16 @@
 * [Geo Coordinates](./external/schema/geocoordinates.schema.md) – `http://schema.org/GeoCoordinates`
 * [Geo Shape](./external/schema/geoshape.schema.md) – `http://schema.org/GeoShape`
 
-## /common/event/
+## /external/repo/
 
-* [Created Event](./common/event/created.schema.md) – `https://ns.adobe.com/xdm/common/event/created`
-* [Deleted Event](./common/event/deleted.schema.md) – `https://ns.adobe.com/xdm/common/event/deleted`
-* [Emitted Event](./common/event/emitted.schema.md) – `https://ns.adobe.com/xdm/common/event/emitted`
-* [Published Event](./common/event/published.schema.md) – `https://ns.adobe.com/xdm/common/event/published`
-* [Rejected Event](./common/event/rejected.schema.md) – `https://ns.adobe.com/xdm/common/event/rejected`
-* [Unpublished Event](./common/event/unpublished.schema.md) – `https://ns.adobe.com/xdm/common/event/unpublished`
-* [Updated Event](./common/event/updated.schema.md) – `https://ns.adobe.com/xdm/common/event/updated`
+* [Access Control Entry](./external/repo/accesscontrolentry.schema.md) – `https://ns.adobe.com/xdm/external/repo/accesscontrolentry`
+* [Access Control Policy](./external/repo/accesscontrolpolicy.schema.md) – `https://ns.adobe.com/xdm/external/repo/accesscontrolpolicy`
+* [Asset](./external/repo/asset.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/asset`
+* [Common Properties](./external/repo/common.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0`
+* [Directory](./external/repo/directory.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/directory`
+* [Sub-Directory](./external/repo/sub-directory.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/sub-directory`
+
+## /external/hal/
+
+* [HAL Link](./external/hal/hal-link.schema.md) – `https://ns.adobe.com/xdm/external/hal/link`
+* [HAL Resource](./external/hal/hal.schema.md) – `https://ns.adobe.com/xdm/external/hal/resource`

@@ -20,9 +20,10 @@
           "description":
             "Links to the `Metric` that this measure refers to. The `@type` can be omitted in contexts where it is obvious what metric is being referred to, for instance in the `Metrics` object that is keyed with `Metric` URIs."
         },
-        "xdm:uniqueId": {
+        "@id": {
           "title": "Unique Identifier",
           "type": "string",
+          "format": "uri",
           "description": "Unique identifier of the metric."
         },
         "xdm:value": {

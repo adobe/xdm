@@ -52,7 +52,7 @@
         }
       },
       "properties": {
-        "xdm:optingEmail": {
+        "https://ns.adobe.com/xdm/channels/email": {
           "title": "Opting Email",
           "type": "string",
           "description": "Preference for email communication.",
@@ -64,7 +64,7 @@
             "out": "Out"
           }
         },
-        "xdm:optingPhone": {
+        "https://ns.adobe.com/xdm/channels/phone": {
           "title": "Opting Phone",
           "type": "string",
           "description": "Preference for phone voice communication.",
@@ -76,7 +76,7 @@
             "out": "Out"
           }
         },
-        "xdm:optingTextMessaging": {
+        "https://ns.adobe.com/xdm/channels/text-messaging": {
           "title": "Opting Text Messaging",
           "type": "string",
           "description": "Preference for instant text communication.",
@@ -88,7 +88,7 @@
             "out": "Out"
           }
         },
-        "xdm:optingFax": {
+        "https://ns.adobe.com/xdm/channels/fax": {
           "title": "Opting Fax",
           "type": "string",
           "description": "Preference for fax communication.",
@@ -100,7 +100,7 @@
             "out": "Out"
           }
         },
-        "xdm:optingAddress": {
+        "https://ns.adobe.com/xdm/channels/address": {
           "title": "Opting Address",
           "type": "string",
           "description": "Preference for mail address communication.",
@@ -112,7 +112,7 @@
             "out": "Out"
           }
         },
-        "xdm:optingPushNotification": {
+        "https://ns.adobe.com/xdm/channels/push-notification": {
           "title": "Opting Push Notification",
           "type": "string",
           "description": "Preference for push notification.",

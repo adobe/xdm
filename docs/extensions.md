@@ -48,18 +48,19 @@ This ensures that no matter who is generating an XDM document, or how the XDM do
 ```json
 {
   "https://ns.example.com/asset_name": "custom_asset_1",
-  "xdm:asset_id": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
-  "xdm:create_date": "2017-09-26T15:52:25+00:00",
-  "xdm:repository_created_date": "2017-09-26T15:52:25+00:00",
-  "xdm:repository_created_by": "lars",
-  "xdm:modify_date": "2017-09-26T15:52:25+00:00",
-  "xdm:repository_last_modified_date": "2017-09-26T15:52:25+00:00",
-  "xdm:repository_last_modified_by": "2017-09-26T15:52:25+00:00",
-  "xdm:version_id": "15",
-  "dc:title": "This is an example",
-  "xdm:size": 1632418,
-  "xdm:path": "/here",
-  "xdm:etag": "15"
+  "repo:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
+  "xmp:createDate": "2017-09-26T15:52:25+00:00",
+  "repo:createdDate": "2017-09-26T15:52:25+00:00",
+  "xdm:repositoryCreatedBy": "lars",
+  "xmp:modifyDate": "2017-09-26T15:52:25+00:00",
+  "repo:lastModifiedDate": "2017-09-26T15:52:25+00:00",
+  "xdm:repositoryLastModifiedBy": "chris",
+  "repo:version": "15",
+  "repo:size": 1632418,
+  "repo:path": "here",
+  "repo:etag": "15",
+  "repo:name": "example.pdf",
+  "dc:format": "application/pdf"
 }
 ```
 

@@ -4,21 +4,28 @@
 
 
 
-## /assets/
+## /channels/
 
-* [Aggregated Asset](./assets/aggregated-asset.schema.md) – `https://ns.adobe.com/xdm/assets/aggregated-asset`
-* [Artboard](./assets/artboard.schema.md) – `https://ns.adobe.com/xdm/assets/artboard`
-* [Asset](./assets/asset.schema.md) – `https://ns.adobe.com/xdm/assets/asset`
-* [Copyright Owner](./assets/copyright-owner.schema.md) – `https://ns.adobe.com/xdm/assets/copyright-owner`
-* [Font](./assets/font.schema.md) – `https://ns.adobe.com/xdm/assets/font`
-* [Image](./assets/image.schema.md) – `https://ns.adobe.com/xdm/assets/image`
-* [Language Alternative](./assets/language-alternative.schema.md) – `https://ns.adobe.com/xdm/assets/language-alternative`
-* [Layer Group](./assets/layer-group.schema.md) – `https://ns.adobe.com/xdm/assets/layer-group`
-* [Layer](./assets/layer.schema.md) – `https://ns.adobe.com/xdm/assets/layer`
-* [Rectangular Media](./assets/rectangular.schema.md) – `https://ns.adobe.com/xdm/assets/rectangular`
-* [Resource Event](./assets/resource-event.schema.md) – `https://ns.adobe.com/xdm/assets/resource-event`
-* [Rectangular Object (measured in variable unit)](./assets/variable-unit-rectangular.schema.md) – `https://ns.adobe.com/xdm/assets/variable-unit-rectangular`
-* [Video](./assets/video.schema.md) – `https://ns.adobe.com/xdm/assets/video`
+* [ADM](./channels/adm.schema.md) – `https://ns.adobe.com/xdm/channels/adm`
+* [Application](./channels/application.schema.md) – `https://ns.adobe.com/xdm/channels/application`
+* [APNS](./channels/apns.schema.md) – `https://ns.adobe.com/xdm/channels/apns`
+* [Experience Channel](./channels/channel.schema.md) – `https://ns.adobe.com/xdm/channels/channel`
+* [Baidu](./channels/baidu.schema.md) – `https://ns.adobe.com/xdm/channels/baidu`
+* [Direct Mail](./channels/direct-mail.schema.md) – `https://ns.adobe.com/xdm/channels/direct-mail`
+* [E-Mail](./channels/email.schema.md) – `https://ns.adobe.com/xdm/channels/email`
+* [Facebook News Feed](./channels/facebook-feed.schema.md) – `https://ns.adobe.com/xdm/channels/facebook-feed`
+* [Fax](./channels/fax.schema.md) – `https://ns.adobe.com/xdm/channels/fax`
+* [GCM](./channels/gcm.schema.md) – `https://ns.adobe.com/xdm/channels/gcm`
+* [LINE](./channels/line.schema.md) – `https://ns.adobe.com/xdm/channels/line`
+* [Web](./channels/mobile-app.schema.md) – `https://ns.adobe.com/xdm/channels/mobile-app`
+* [MPNS](./channels/mpns.schema.md) – `https://ns.adobe.com/xdm/channels/mpns`
+* [Phone](./channels/phone.schema.md) – `https://ns.adobe.com/xdm/channels/phone`
+* [SMS](./channels/sms.schema.md) – `https://ns.adobe.com/xdm/channels/sms`
+* [Twitter Feed](./channels/twitter-feed.schema.md) – `https://ns.adobe.com/xdm/channels/twitter-feed`
+* [Web](./channels/web.schema.md) – `https://ns.adobe.com/xdm/channels/web`
+* [Web Page](./channels/webpage.schema.md) – `https://ns.adobe.com/xdm/channels/webpage`
+* [WeChat](./channels/wechat.schema.md) – `https://ns.adobe.com/xdm/channels/wechat`
+* [WNS](./channels/wns.schema.md) – `https://ns.adobe.com/xdm/channels/wns`
 
 ## /content/
 
@@ -43,51 +50,6 @@
 * [Principal](./common/principal.schema.md) – `https://ns.adobe.com/xdm/common/principal`
 * [Customer Managed Environment](./common/selfservice.schema.md) – `https://ns.adobe.com/xdm/selfservice`
 
-## /channels/
-
-* [ADM](./channels/adm.schema.md) – `https://ns.adobe.com/xdm/channels/adm`
-* [APNS](./channels/apns.schema.md) – `https://ns.adobe.com/xdm/channels/apns`
-* [Application](./channels/application.schema.md) – `https://ns.adobe.com/xdm/channels/application`
-* [Baidu](./channels/baidu.schema.md) – `https://ns.adobe.com/xdm/channels/baidu`
-* [Experience Channel](./channels/channel.schema.md) – `https://ns.adobe.com/xdm/channels/channel`
-* [Direct Mail](./channels/direct-mail.schema.md) – `https://ns.adobe.com/xdm/channels/direct-mail`
-* [E-Mail](./channels/email.schema.md) – `https://ns.adobe.com/xdm/channels/email`
-* [Facebook News Feed](./channels/facebook-feed.schema.md) – `https://ns.adobe.com/xdm/channels/facebook-feed`
-* [Fax](./channels/fax.schema.md) – `https://ns.adobe.com/xdm/channels/fax`
-* [GCM](./channels/gcm.schema.md) – `https://ns.adobe.com/xdm/channels/gcm`
-* [LINE](./channels/line.schema.md) – `https://ns.adobe.com/xdm/channels/line`
-* [Web](./channels/mobile-app.schema.md) – `https://ns.adobe.com/xdm/channels/mobile-app`
-* [MPNS](./channels/mpns.schema.md) – `https://ns.adobe.com/xdm/channels/mpns`
-* [Phone](./channels/phone.schema.md) – `https://ns.adobe.com/xdm/channels/phone`
-* [SMS](./channels/sms.schema.md) – `https://ns.adobe.com/xdm/channels/sms`
-* [Twitter Feed](./channels/twitter-feed.schema.md) – `https://ns.adobe.com/xdm/channels/twitter-feed`
-* [Web](./channels/web.schema.md) – `https://ns.adobe.com/xdm/channels/web`
-* [Web Page](./channels/webpage.schema.md) – `https://ns.adobe.com/xdm/channels/webpage`
-* [WeChat](./channels/wechat.schema.md) – `https://ns.adobe.com/xdm/channels/wechat`
-* [WNS](./channels/wns.schema.md) – `https://ns.adobe.com/xdm/channels/wns`
-
-## /context/
-
-* [Browser Details](./context/browserdetails.schema.md) – `https://ns.adobe.com/xdm/context/browserdetails`
-* [Commerce](./context/commerce.schema.md) – `https://ns.adobe.com/xdm/context/commerce`
-* [Device](./context/device.schema.md) – `https://ns.adobe.com/xdm/context/device`
-* [Email Address](./context/emailaddress.schema.md) – `https://ns.adobe.com/xdm/context/emailaddress`
-* [End User IDs](./context/enduserids.schema.md) – `https://ns.adobe.com/xdm/context/enduserids`
-* [Environment](./context/environment.schema.md) – `https://ns.adobe.com/xdm/context/environment`
-* [ExperienceEvent](./context/experienceevent.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent`
-* [Location Context](./context/locationcontext.schema.md) – `https://ns.adobe.com/xdm/context/locationcontext`
-* [Marketing](./context/marketing.schema.md) – `https://ns.adobe.com/xdm/context/marketing`
-* [OptInOut](./context/optinout.schema.md) – `https://ns.adobe.com/xdm/context/optinout`
-* [Person Name](./context/person-name.schema.md) – `https://ns.adobe.com/xdm/context/person-name`
-* [Person](./context/person.schema.md) – `https://ns.adobe.com/xdm/context/person`
-* [Phone Number](./context/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
-* [Place](./context/place.schema.md) – `https://ns.adobe.com/xdm/context/place`
-* [Profile](./context/profile.schema.md) – `https://ns.adobe.com/xdm/context/profile`
-* [Push Notification Token](./context/pushnotificationtoken.schema.md) – `https://ns.adobe.com/xdm/context/pushnotificationtoken`
-* [Search](./context/search.schema.md) – `https://ns.adobe.com/xdm/context/search`
-* [Subscription](./context/subscription.schema.md) – `https://ns.adobe.com/xdm/context/subscription`
-* [Web Link](./context/weblink.schema.md) – `https://ns.adobe.com/xdm/context/weblink`
-
 ## /data/
 
 * [abandons](./data/abandons.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/abandons`
@@ -103,10 +65,10 @@
 * [Metrics](./data/metrics.schema.md) – `https://ns.adobe.com/xdm/data/metrics`
 * [mirror-pages](./data/mirror-pages.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages`
 * [non-deliverables](./data/non-deliverables.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/non-deliverables`
-* [Order](./data/order.schema.md) – `https://ns.adobe.com/xdm/data/order`
 * [page-views](./data/page-views.schema.md) – `https://ns.adobe.com/xdm/data/metrics/web/page-views`
-* [Payment Item](./data/paymentitem.schema.md) – `https://ns.adobe.com/xdm/data/paymentitem`
+* [Order](./data/order.schema.md) – `https://ns.adobe.com/xdm/data/order`
 * [product-list-adds](./data/product-list-adds.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/product-list-adds`
+* [Payment Item](./data/paymentitem.schema.md) – `https://ns.adobe.com/xdm/data/paymentitem`
 * [product-list-opens](./data/product-list-opens.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/product-list-opens`
 * [product-list-removals](./data/product-list-removals.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/product-list-removals`
 * [product-list-reopens](./data/product-list-reopens.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/product-list-reopens`
@@ -114,8 +76,46 @@
 * [product-views](./data/product-views.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/product-views`
 * [purchases](./data/purchases.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/purchases`
 * [save-for-laters](./data/save-for-laters.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/save-for-laters`
-* [sends](./data/sends.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/sends`
 * [user-complaints](./data/user-complaints.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/user-complaints`
+* [sends](./data/sends.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/sends`
+
+## /assets/
+
+* [Aggregated Asset](./assets/aggregated-asset.schema.md) – `https://ns.adobe.com/xdm/assets/aggregated-asset`
+* [Artboard](./assets/artboard.schema.md) – `https://ns.adobe.com/xdm/assets/artboard`
+* [Asset](./assets/asset.schema.md) – `https://ns.adobe.com/xdm/assets/asset`
+* [Copyright Owner](./assets/copyright-owner.schema.md) – `https://ns.adobe.com/xdm/assets/copyright-owner`
+* [Font](./assets/font.schema.md) – `https://ns.adobe.com/xdm/assets/font`
+* [Language Alternative](./assets/language-alternative.schema.md) – `https://ns.adobe.com/xdm/assets/language-alternative`
+* [Image](./assets/image.schema.md) – `https://ns.adobe.com/xdm/assets/image`
+* [Layer](./assets/layer.schema.md) – `https://ns.adobe.com/xdm/assets/layer`
+* [Layer Group](./assets/layer-group.schema.md) – `https://ns.adobe.com/xdm/assets/layer-group`
+* [Rectangular Media](./assets/rectangular.schema.md) – `https://ns.adobe.com/xdm/assets/rectangular`
+* [Resource Event](./assets/resource-event.schema.md) – `https://ns.adobe.com/xdm/assets/resource-event`
+* [Rectangular Object (measured in variable unit)](./assets/variable-unit-rectangular.schema.md) – `https://ns.adobe.com/xdm/assets/variable-unit-rectangular`
+* [Video](./assets/video.schema.md) – `https://ns.adobe.com/xdm/assets/video`
+
+## /context/
+
+* [Browser Details](./context/browserdetails.schema.md) – `https://ns.adobe.com/xdm/context/browserdetails`
+* [Commerce](./context/commerce.schema.md) – `https://ns.adobe.com/xdm/context/commerce`
+* [Device](./context/device.schema.md) – `https://ns.adobe.com/xdm/context/device`
+* [Email Address](./context/emailaddress.schema.md) – `https://ns.adobe.com/xdm/context/emailaddress`
+* [End User IDs](./context/enduserids.schema.md) – `https://ns.adobe.com/xdm/context/enduserids`
+* [ExperienceEvent](./context/experienceevent.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent`
+* [Environment](./context/environment.schema.md) – `https://ns.adobe.com/xdm/context/environment`
+* [Location Context](./context/locationcontext.schema.md) – `https://ns.adobe.com/xdm/context/locationcontext`
+* [Marketing](./context/marketing.schema.md) – `https://ns.adobe.com/xdm/context/marketing`
+* [OptInOut](./context/optinout.schema.md) – `https://ns.adobe.com/xdm/context/optinout`
+* [Person Name](./context/person-name.schema.md) – `https://ns.adobe.com/xdm/context/person-name`
+* [Person](./context/person.schema.md) – `https://ns.adobe.com/xdm/context/person`
+* [Place](./context/place.schema.md) – `https://ns.adobe.com/xdm/context/place`
+* [Profile](./context/profile.schema.md) – `https://ns.adobe.com/xdm/context/profile`
+* [Phone Number](./context/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
+* [Push Notification Token](./context/pushnotificationtoken.schema.md) – `https://ns.adobe.com/xdm/context/pushnotificationtoken`
+* [Search](./context/search.schema.md) – `https://ns.adobe.com/xdm/context/search`
+* [Subscription](./context/subscription.schema.md) – `https://ns.adobe.com/xdm/context/subscription`
+* [Web Link](./context/weblink.schema.md) – `https://ns.adobe.com/xdm/context/weblink`
 
 ## /content/repository-policies/
 
@@ -123,15 +123,11 @@
 * [Storage Quota](./content/repository-policies/quota.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/quota`
 * [Versioning](./content/repository-policies/versioning.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/versioning`
 
-## /common/event/
+## /external/schema/
 
-* [Created Event](./common/event/created.schema.md) – `https://ns.adobe.com/xdm/common/event/created`
-* [Deleted Event](./common/event/deleted.schema.md) – `https://ns.adobe.com/xdm/common/event/deleted`
-* [Published Event](./common/event/published.schema.md) – `https://ns.adobe.com/xdm/common/event/published`
-* [Emitted Event](./common/event/emitted.schema.md) – `https://ns.adobe.com/xdm/common/event/emitted`
-* [Rejected Event](./common/event/rejected.schema.md) – `https://ns.adobe.com/xdm/common/event/rejected`
-* [Unpublished Event](./common/event/unpublished.schema.md) – `https://ns.adobe.com/xdm/common/event/unpublished`
-* [Updated Event](./common/event/updated.schema.md) – `https://ns.adobe.com/xdm/common/event/updated`
+* [Geo Circle](./external/schema/geocircle.schema.md) – `http://schema.org/GeoCircle`
+* [Geo Coordinates](./external/schema/geocoordinates.schema.md) – `http://schema.org/GeoCoordinates`
+* [Geo Shape](./external/schema/geoshape.schema.md) – `http://schema.org/GeoShape`
 
 ## /external/activity-streams-2/
 
@@ -147,12 +143,6 @@
 * [RDF Language Tagged String](./external/activity-streams-2/rdf-langstring.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langstring`
 * [JSON-LD `@type`](./external/activity-streams-2/type.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/type`
 
-## /external/schema/
-
-* [Geo Circle](./external/schema/geocircle.schema.md) – `http://schema.org/GeoCircle`
-* [Geo Coordinates](./external/schema/geocoordinates.schema.md) – `http://schema.org/GeoCoordinates`
-* [Geo Shape](./external/schema/geoshape.schema.md) – `http://schema.org/GeoShape`
-
 ## /external/repo/
 
 * [Access Control Entry](./external/repo/accesscontrolentry.schema.md) – `https://ns.adobe.com/xdm/external/repo/accesscontrolentry`
@@ -166,3 +156,13 @@
 
 * [HAL Link](./external/hal/hal-link.schema.md) – `https://ns.adobe.com/xdm/external/hal/link`
 * [HAL Resource](./external/hal/hal.schema.md) – `https://ns.adobe.com/xdm/external/hal/resource`
+
+## /common/event/
+
+* [Created Event](./common/event/created.schema.md) – `https://ns.adobe.com/xdm/common/event/created`
+* [Deleted Event](./common/event/deleted.schema.md) – `https://ns.adobe.com/xdm/common/event/deleted`
+* [Emitted Event](./common/event/emitted.schema.md) – `https://ns.adobe.com/xdm/common/event/emitted`
+* [Published Event](./common/event/published.schema.md) – `https://ns.adobe.com/xdm/common/event/published`
+* [Rejected Event](./common/event/rejected.schema.md) – `https://ns.adobe.com/xdm/common/event/rejected`
+* [Unpublished Event](./common/event/unpublished.schema.md) – `https://ns.adobe.com/xdm/common/event/unpublished`
+* [Updated Event](./common/event/updated.schema.md) – `https://ns.adobe.com/xdm/common/event/updated`

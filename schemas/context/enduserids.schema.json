@@ -10,9 +10,10 @@
   "title": "End User IDs",
   "type": "object",
   "description": "Condensed, normalized encapsulation of all end user identifiers. NOTE: At least one of the fields is required.\n",
+  "minProperties": 1,
   "properties": {
-    "https://ns.adobe.com/experience/mcId": {
-      "title": "Adobe Marketing Cloud Id",
+    "https://ns.adobe.com/experience/mcid": {
+      "title": "Adobe Marketing Cloud ID",
       "$ref": "https://ns.adobe.com/xdm/context/identity",
       "description": "A unique identifier from Adobe Marketing Cloud."
     },

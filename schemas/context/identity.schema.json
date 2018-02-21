@@ -27,7 +27,7 @@
             "The namespace associated with the id attribute and matched up with the AAM data source integration code."
         },
         "xdm:xid": {
-          "title": "Adobe Experience Identifier",
+          "title": "Experience Identifier",
           "type": "string",
           "description":
             "When present, this value represents a cross-namespace identifier that is unique across all namespace-scoped identifiers in all namespaces."

@@ -30,7 +30,7 @@
           "title": "Adobe Experience Identifier",
           "type": "string",
           "description":
-            "The optional, universally unique Adobe identity of the consumer. Generated using the Identity and the related namespace id."
+            "When present, this value represents a cross-namespace identifier that is unique across all namespace-scoped identifiers in all namespaces."
         }
       }
     }

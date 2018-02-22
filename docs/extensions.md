@@ -10,9 +10,9 @@ XDM is a JSON-based standard and there are three ways how JSON data models can b
 2. through the introduction of new values for existing properties
 3. through the introduction of new schemas
 
-XDM only supports (1) and (3), because the introduction of new values for existing properties can cause challenges for implementors of XDM and increases the difficulty of adhering of XDM's purely additive versioning requirement.
+XDM only supports (1) and (3), because the introduction of new values for existing properties can cause challenges for implementers of XDM and increases the difficulty of adhering of XDM's purely additive versioning requirement.
 
-The following sections will describe how each of these extension mechansims can be used by XDM providers that are seeking to extend XDM.
+The following sections will describe how each of these extension mechanisms can be used by XDM providers that are seeking to extend XDM.
 
 ## Extending XDM Properties
 
@@ -22,8 +22,8 @@ Some XDM schemas might be declared non-extensible, which means that any property
 
 XDM generally separates two kinds of properties:
 
-1. Standard properties are part of the XDM specification, and follow a pattern of `prefix:name`. For instance, `xdm:asset_id` is the unique identifier of assets in XDM.
-2. Extension properties are not part of the XDM specification and have been defined by a customer, a partner, or by Adobe for things that are specific to one implemenation. Extension property names are always URIs like `http://example.com/ns/xdm/my_property`
+1. Standard properties are part of the XDM specification, and follow a pattern of `prefix:name`. For instance, `repo:assetID` is the unique identifier of assets in XDM.
+2. Extension properties are not part of the XDM specification and have been defined by a customer, a partner, or by Adobe for things that are specific to one implementation. Extension property names are always URIs like `http://example.com/ns/xdm/my_property`
 
 XDM comes with a small list of allowed prefixes that correspond to the namespace URIs of the standards that XDM is incorporating.
 Each of these namespaces prefixes and the corresponding namespace URI is listed in a JSON-LD context document.
@@ -40,7 +40,7 @@ This schema fragment ensures that:
 
 By default, all Adobe APIs that are using XDM are passing the JSON-LD `@context` (the mapping between namespace predix and URLs) through an HTTP `Link` header, as described in [section 4.9 of the JSON-LD specification: "Interpreting JSON as JSON-LD"](https://json-ld.org/spec/latest/json-ld/#interpreting-json-as-json-ld).
 Because the JSON-LD `@context` of APIs that use XDM is only changing when a new version of XDM is released, passing it as a `Link` header means that XDM documents remain compact, and that XDM consumers can decide themselves if they want to retrieve it.
-However, for XDM producers that do not use the `Link` header and instead embed a `@context` in the JSON document, additional rules apply. Through the `extensibility` schema fragemnt, XDM ensures that no prefix mappings can be established other than the prefix mappings that are part of the XDM standard.
+However, for XDM producers that do not use the `Link` header and instead embed a `@context` in the JSON document, additional rules apply. Through the `extensibility` schema fragment, XDM ensures that no prefix mappings can be established other than the prefix mappings that are part of the XDM standard.
 This ensures that no matter who is generating an XDM document, or how the XDM document is being generated, that no conflicting properties can get introduced.
 
 > An example of an XDM Asset, extended with the property `asset_name` (fully qualified name is `https://ns.example.com/asset_name`)
@@ -48,18 +48,19 @@ This ensures that no matter who is generating an XDM document, or how the XDM do
 ```json
 {
   "https://ns.example.com/asset_name": "custom_asset_1",
-  "xdm:asset_id": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
-  "xdm:create_date": "2017-09-26T15:52:25+00:00",
-  "xdm:repository_created_date": "2017-09-26T15:52:25+00:00",
-  "xdm:repository_created_by": "lars",
-  "xdm:modify_date": "2017-09-26T15:52:25+00:00",
-  "xdm:repository_last_modified_date": "2017-09-26T15:52:25+00:00",
-  "xdm:repository_last_modified_by": "2017-09-26T15:52:25+00:00",
-  "xdm:version_id": "15",
-  "dc:title": "This is an example",
-  "xdm:size": 1632418,
-  "xdm:path": "/here",
-  "xdm:etag": "15"
+  "repo:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
+  "xmp:createDate": "2017-09-26T15:52:25+00:00",
+  "repo:createdDate": "2017-09-26T15:52:25+00:00",
+  "xdm:repositoryCreatedBy": "lars",
+  "xmp:modifyDate": "2017-09-26T15:52:25+00:00",
+  "repo:lastModifiedDate": "2017-09-26T15:52:25+00:00",
+  "xdm:repositoryLastModifiedBy": "chris",
+  "repo:version": "15",
+  "repo:size": 1632418,
+  "repo:path": "here",
+  "repo:etag": "15",
+  "repo:name": "example.pdf",
+  "dc:format": "application/pdf"
 }
 ```
 
@@ -77,7 +78,7 @@ This property will be `true` for schemas that are extensible, and `false` or be 
 If a schema is extensible, the JSON Schema file will also include one or more usable schema fragments that are named child properties of the `definitions` property of the schema.
 These schema fragments can be included by schemas that are extending an existing schema.
 
-An XDM producer that wishes to extend an exiting XDM schema has to adhere to following steps:
+An XDM producer that wishes to extend an existing XDM schema has to adhere to following steps:
 
 1. Only extend schemas that are `meta:extensible`
 2. Create a new JSON Schema file

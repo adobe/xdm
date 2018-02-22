@@ -23,6 +23,10 @@
           "title": "Format",
           "const": "application/vnd.adobecloud.directory+json"
         },
+        "_page": {
+          "$ref": "https://ns.adobe.com/xdm/common/page",
+          "description": "Page info, included if this resource is part of paginated result."
+        },
         "children": {
           "type": "array",
           "items": {

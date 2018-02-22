@@ -1,6 +1,6 @@
 {
   "@id": "https://ns.adobe.com/entities/segment/123",
-  "xdm:endUserIds": {
+  "xdm:endUserIDs": {
     "xdm:realm": {
       "@id": "https://data.adobe.io/experiencecloud/audiencemanager",
       "xdm:name": "Adobe Audience Manager"

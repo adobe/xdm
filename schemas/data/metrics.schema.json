@@ -29,9 +29,6 @@
     "https://ns.adobe.com/xdm/data/metrics/advertising/clicks": {
       "$ref": "https://ns.adobe.com/xdm/data/measure"
     },
-    "https://ns.adobe.com/xdm/data/discount": {
-      "$ref": "https://ns.adobe.com/xdm/data/measure"
-    },
     "https://ns.adobe.com/xdm/data/metrics/advertising/impressions": {
       "$ref": "https://ns.adobe.com/xdm/data/measure"
     },

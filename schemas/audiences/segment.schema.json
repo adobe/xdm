@@ -5,12 +5,12 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/context/segment",
+  "$id": "https://ns.adobe.com/xdm/audiences/segment",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Segment",
+  "title": "Segment Assignment",
   "type": "object",
   "description":
-    "A Segment assignment used to define the audience a profile belongs to with meta data about the assigning agent and time and duration of the assignment.",
+    "",
   "definitions": {
     "segment": {
       "properties": {
@@ -20,7 +20,7 @@
           "format": "uri",
           "description": "Unique identity of the segment."
         },
-        "xdm:endUserIds": {
+        "xdm:endUserIDs": {
           "title": "End User IDs",
           "$ref": "https://ns.adobe.com/xdm/context/enduserids",
           "description":
@@ -43,9 +43,10 @@
           "format": "date-time",
           "description": "The date the segment assignment is valid until."
         },
-        "xdm:assignedById": {
+        "xdm:assignedBy": {
           "title": "Assigned By Identity",
           "type": "string",
+          "format": "uri",
           "description":
             "The identity of the system or user that assigned the segment to the profile."
         }

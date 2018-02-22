@@ -13,9 +13,10 @@
    "definitions":{
       "namespace":{
          "properties":{
-            "xdm:id":{
+            "@id":{
                "title":"Identifier",
-               "type":"integer",
+               "type":"string",
+               "format": "uri",
                "description":"The numeric ID associated with this Datasource. This would be provided by the individual or system that created the Datasource.\n"
             },
             "xdm:code":{

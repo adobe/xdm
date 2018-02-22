@@ -1,13 +1,13 @@
 {
   "name": "xdm",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "description": "Experience Data Models",
   "main": "",
   "config": {
     "aem_user": "packageUser",
     "aem_password": "override me securely",
     "markdown-importer-version": "0.0.4",
-    "schemas": 129
+    "schemas": 131
   },
   "scripts": {
     "clean": "rm -rf docs/reference",
@@ -15,7 +15,7 @@
       "shx mkdir -p docs/reference && jsonschema2md -o docs/reference -d schemas",
     "test": "mocha",
     "lint":
-      "prettier --write *.json *.md docs/*.md schemas/**/*.md schemas/**/*.json && git status --porcelain | read line && return 1 || return 0",
+      "prettier --write *.json *.md docs/*.md schemas/**/*.md schemas/**/*.json && git status --porcelain | read line && exit 1 || exit 0",
     "lint-quick": "pretty-quick",
     "package":
       "npm run markdown && curl -o \"./node_modules/markdown-importer-0.0.4-jar-with-dependencies.jar\" -C - https://artifactory.corp.adobe.com/artifactory/maven-markdown-tools-release/io/adobe/udp/markdown-importer/0.0.4/markdown-importer-0.0.4-jar-with-dependencies.jar && java -jar ./node_modules/markdown-importer-0.0.4-jar-with-dependencies.jar markdown2aem.yaml",

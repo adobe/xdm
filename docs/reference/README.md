@@ -10,8 +10,8 @@
 * [Artboard](./assets/artboard.schema.md) – `https://ns.adobe.com/xdm/assets/artboard`
 * [Asset](./assets/asset.schema.md) – `https://ns.adobe.com/xdm/assets/asset`
 * [Copyright Owner](./assets/copyright-owner.schema.md) – `https://ns.adobe.com/xdm/assets/copyright-owner`
-* [Image](./assets/image.schema.md) – `https://ns.adobe.com/xdm/assets/image`
 * [Font](./assets/font.schema.md) – `https://ns.adobe.com/xdm/assets/font`
+* [Image](./assets/image.schema.md) – `https://ns.adobe.com/xdm/assets/image`
 * [Language Alternative](./assets/language-alternative.schema.md) – `https://ns.adobe.com/xdm/assets/language-alternative`
 * [Layer Group](./assets/layer-group.schema.md) – `https://ns.adobe.com/xdm/assets/layer-group`
 * [Layer](./assets/layer.schema.md) – `https://ns.adobe.com/xdm/assets/layer`
@@ -48,8 +48,8 @@
 * [Phone](./channels/phone.schema.md) – `https://ns.adobe.com/xdm/channels/phone`
 * [SMS](./channels/sms.schema.md) – `https://ns.adobe.com/xdm/channels/sms`
 * [Twitter Feed](./channels/twitter-feed.schema.md) – `https://ns.adobe.com/xdm/channels/twitter-feed`
-* [Web](./channels/web.schema.md) – `https://ns.adobe.com/xdm/channels/web`
 * [Web Page](./channels/webpage.schema.md) – `https://ns.adobe.com/xdm/channels/webpage`
+* [Web](./channels/web.schema.md) – `https://ns.adobe.com/xdm/channels/web`
 * [WeChat](./channels/wechat.schema.md) – `https://ns.adobe.com/xdm/channels/wechat`
 * [WNS](./channels/wns.schema.md) – `https://ns.adobe.com/xdm/channels/wns`
 
@@ -63,8 +63,8 @@
 * [Identity Provider](./common/identity-provider.schema.md) – `https://ns.adobe.com/xdm/common/identity-provider`
 * [Organization](./common/organization.schema.md) – `https://ns.adobe.com/xdm/common/organization`
 * [Page](./common/page.schema.md) – `https://ns.adobe.com/xdm/common/page`
-* [Customer Managed Environment](./common/selfservice.schema.md) – `https://ns.adobe.com/xdm/selfservice`
 * [Principal](./common/principal.schema.md) – `https://ns.adobe.com/xdm/common/principal`
+* [Customer Managed Environment](./common/selfservice.schema.md) – `https://ns.adobe.com/xdm/selfservice`
 
 ## /context/
 
@@ -103,18 +103,18 @@
 * [Metrics](./data/metrics.schema.md) – `https://ns.adobe.com/xdm/data/metrics`
 * [mirror-pages](./data/mirror-pages.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages`
 * [non-deliverables](./data/non-deliverables.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/non-deliverables`
-* [Order](./data/order.schema.md) – `https://ns.adobe.com/xdm/data/order`
 * [page-views](./data/page-views.schema.md) – `https://ns.adobe.com/xdm/data/metrics/web/page-views`
-* [Payment Item](./data/paymentitem.schema.md) – `https://ns.adobe.com/xdm/data/paymentitem`
+* [Order](./data/order.schema.md) – `https://ns.adobe.com/xdm/data/order`
 * [product-list-adds](./data/product-list-adds.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/product-list-adds`
+* [Payment Item](./data/paymentitem.schema.md) – `https://ns.adobe.com/xdm/data/paymentitem`
 * [product-list-opens](./data/product-list-opens.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/product-list-opens`
 * [product-list-removals](./data/product-list-removals.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/product-list-removals`
 * [product-list-reopens](./data/product-list-reopens.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/product-list-reopens`
 * [product-list-views](./data/product-list-views.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/product-list-views`
-* [product-views](./data/product-views.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/product-views`
-* [purchases](./data/purchases.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/purchases`
 * [save-for-laters](./data/save-for-laters.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/save-for-laters`
+* [product-views](./data/product-views.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/product-views`
 * [sends](./data/sends.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/sends`
+* [purchases](./data/purchases.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/purchases`
 * [user-complaints](./data/user-complaints.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/user-complaints`
 
 ## /content/repository-policies/
@@ -144,20 +144,6 @@
 * [Geo Coordinates](./external/schema/geocoordinates.schema.md) – `http://schema.org/GeoCoordinates`
 * [Geo Shape](./external/schema/geoshape.schema.md) – `http://schema.org/GeoShape`
 
-## /external/activity-streams-2/
-
-* [Activity](./external/activity-streams-2/activity.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/activity`
-* [Collection Page](./external/activity-streams-2/collection-page.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/collection-page`
-* [Collection](./external/activity-streams-2/collection.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/collection`
-* [JSON-LD `@context`](./external/activity-streams-2/context.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/context`
-* [Document](./external/activity-streams-2/document.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/document`
-* [JSON-LD `@id`](./external/activity-streams-2/id.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/id`
-* [Image Document](./external/activity-streams-2/image.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/image`
-* [Link](./external/activity-streams-2/link.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/link`
-* [Object](./external/activity-streams-2/object.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/object`
-* [RDF Language Tagged String](./external/activity-streams-2/rdf-langstring.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langstring`
-* [JSON-LD `@type`](./external/activity-streams-2/type.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/type`
-
 ## /external/repo/
 
 * [Access Control Entry](./external/repo/accesscontrolentry.schema.md) – `https://ns.adobe.com/xdm/external/repo/accesscontrolentry`
@@ -167,3 +153,17 @@
 * [Directory](./external/repo/directory.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/directory`
 * [Effective Privileges](./external/repo/effectiveprivileges.schema.md) – `https://ns.adobe.com/xdm/base/effectiveprivileges`
 * [Sub-Directory](./external/repo/sub-directory.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/sub-directory`
+
+## /external/activity-streams-2/
+
+* [Activity](./external/activity-streams-2/activity.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/activity`
+* [Collection Page](./external/activity-streams-2/collection-page.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/collection-page`
+* [Collection](./external/activity-streams-2/collection.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/collection`
+* [Document](./external/activity-streams-2/document.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/document`
+* [JSON-LD `@context`](./external/activity-streams-2/context.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/context`
+* [JSON-LD `@id`](./external/activity-streams-2/id.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/id`
+* [Image Document](./external/activity-streams-2/image.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/image`
+* [Link](./external/activity-streams-2/link.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/link`
+* [Object](./external/activity-streams-2/object.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/object`
+* [RDF Language Tagged String](./external/activity-streams-2/rdf-langstring.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langstring`
+* [JSON-LD `@type`](./external/activity-streams-2/type.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/type`

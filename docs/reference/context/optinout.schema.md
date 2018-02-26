@@ -9,7 +9,7 @@ Describes a users&#39; communication preferences by channel. For each channel in
 
 | Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
 |----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [context/optinout.schema.json](context/optinout.schema.json) |
+| Cannot be instantiated | Yes | Forbidden | Permitted | [context/optinout.schema.json](context/optinout.schema.json) |
 
 ## OptInOut Example
 ```json
@@ -23,29 +23,3 @@ Describes a users&#39; communication preferences by channel. For each channel in
   "xdm:globalOptout": false
 }
 ```
-
-# OptInOut Properties
-
-| Property | Type | Required | Defined by |
-|----------|------|----------|------------|
-| [xdm:globalOptout](#xdmglobalOptout) | `boolean` | Optional | OptInOut (this schema) |
-| `*` | any | Additional | this schema *allows* additional properties |
-
-## xdm:globalOptout
-### Global Opt-out
-
-Do not contact this profile on any outbound channel.
-
-`xdm:globalOptout`
-* is optional
-* type: `boolean`
-* defined in this schema
-
-### xdm:globalOptout Type
-
-
-`boolean`
-
-
-
-

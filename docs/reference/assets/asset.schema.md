@@ -8,9 +8,11 @@ https://ns.adobe.com/xdm/assets/asset
 A digital asset, is anything that exists in a binary format and comes with the right to use. Content that does not possess that right is not considered an asset. Digital assets include but are not exclusive to: digital documents, audible content, motion picture, and other relevant digital content that is currently in circulation or production.
 
 As described in [What is a digital asset](https://www.realstorygroup.com/Blog/3140-What-is-a-digital-asset), the definition of a digital asset can be put like this:
+
 &gt; In theory, a digital asset is something represented in a digital form that has an intrinsic or acquired value. This initial definition is intentionally general. It could correspond to almost anything or any piece of media in a digital form, such as a photo, website, or email message. As a practical matter, however, DAM [Digital Asset Management] has evolved to support the management of digital media assets almost exclusively. This includes images, video, audio, and related artifacts (such as brochures and compound publications). You would typically use different types of technology to manage email, Word documents, relational data records, and web pages. Even some image “assets” don’t fall under the domain of DAM technology as it is known today. Scanned paper or forms that end up as TIFF or PDF files do not constitute media assets that originate through some creative process.
 
-All digital assets are content, and some content can include, link to, or refer digital assets. Content can furthermore be transformed (rendered) into digital assets, such as when exporting a PDF. 
+All digital assets are content, and some content can include, link to, or refer digital assets. Content can furthermore be transformed (rendered) into digital assets, such as when exporting a PDF.
+
 
 | Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
 |----------|------------|-------------------|-----------------------|------------|
@@ -92,7 +94,7 @@ All digital assets are content, and some content can include, link to, or refer 
 | [xmp:fonts](#xmpfonts) | reference | Optional | Asset (this schema) |
 | [xmp:keywords](#xmpkeywords) | `array` | Optional | Asset (this schema) |
 | [xmp:layers](#xmplayers) | complex | Optional | Asset (this schema) |
-| [xmp:machineKeywords](#xmpmachineKeywords) | `array` | Optional | Asset (this schema) |
+| [xmp:machineKeywords](#xmpmachineKeywords) | `object[]` | Optional | Asset (this schema) |
 | [xmp:modifyDate](#xmpmodifyDate) | `string` | Optional | Asset (this schema) |
 | [xmp:rating](#xmprating) | `enum` | Optional | Asset (this schema) |
 | [xmpMM:history](#xmpMMhistory) | reference | Optional | Asset (this schema) |
@@ -1297,51 +1299,114 @@ The `machineKeywords` property is used to track machine-assigned descriptive phr
 
 `xmp:machineKeywords`
 * is optional
-* type: `array`
+* type: `object[]`
 
 * defined in this schema
 
 ### xmp:machineKeywords Type
 
 
-Array type: `array`
+Array type: `object[]`
 
 All items must be of the type:
-Unknown type ``.
+`object` with following properties:
 
-```json
-{
-  "meta:usereditable": false,
-  "type": "array",
-  "items": {
-    "$schema": "http://json-schema.org/draft-06/schema#",
-    "properties": {
-      "confidence": {
-        "type": "number",
-        "minimum": 0,
-        "maximum": 1,
-        "description": "Confidence of the algorithm that this keyword is applicable to the asset. Confidence values are numbers between zero and one. A value of .95 indicates that the algorithm expects less than 5% of all tags with the same confidence value to be mis-applied, i.e. not to be a proper description of the asset."
-      },
-      "algorithm": {
-        "type": "string",
-        "description": "Name of the algorithm which generated the keyword."
-      },
-      "value": {
-        "type": "string",
-        "description": "The keyword itself. A keyword can be considered like a tag, i.e. a short description of the content of the asset."
-      },
-      "localeCode": {
-        "type": "string",
-        "pattern": "^(((([A-Za-z]{2,3}(-([A-Za-z]{3}(-[A-Za-z]{3}){0,2}))?)|[A-Za-z]{4}|[A-Za-z]{5,8})(-([A-Za-z]{4}))?(-([A-Za-z]{2}|[0-9]{3}))?(-([A-Za-z0-9]{5,8}|[0-9][A-Za-z0-9]{3}))*(-([0-9A-WY-Za-wy-z](-[A-Za-z0-9]{2,8})+))*(-(x(-[A-Za-z0-9]{1,8})+))?)|(x(-[A-Za-z0-9]{1,8})+)|((en-GB-oed|i-ami|i-bnn|i-default|i-enochian|i-hak|i-klingon|i-lux|i-mingo|i-navajo|i-pwn|i-tao|i-tay|i-tsu|sgn-BE-FR|sgn-BE-NL|sgn-CH-DE)|(art-lojban|cel-gaulish|no-bok|no-nyn|zh-guoyu|zh-hakka|zh-min|zh-min-nan|zh-xiang)))$",
-        "description": "Language of the keyword. The locale code should follow [RFC BCP47](https://tools.ietf.org/html/bcp47)"
-      }
-    },
-    "simpletype": "complex"
-  },
-  "description": "The `machineKeywords` property is used to track machine-assigned descriptive phrases like keywords or tags of an asset. Rather than a plan list of tags, it is a structured set of keywords, where keywords can have an explicit confidence ranking and a locale. For human-defined keywords, use the `keywords` property. ",
-  "simpletype": "`array`"
-}
+
+| Property | Type | Required
+|----------|------|----------|
+| `algorithm`| string | Optional | 
+| `confidence`| number | Optional | 
+| `localeCode`| string | Optional | 
+| `value`| string | Optional | 
+
+
+
+#### algorithm
+
+Name of the algorithm which generated the keyword.
+
+`algorithm`
+* is optional
+* type: `string`
+
+##### algorithm Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### confidence
+
+Confidence of the algorithm that this keyword is applicable to the asset. Confidence values are numbers between zero and one. A value of .95 indicates that the algorithm expects less than 5% of all tags with the same confidence value to be mis-applied, i.e. not to be a proper description of the asset.
+
+`confidence`
+* is optional
+* type: `number`
+
+##### confidence Type
+
+
+`number`
+* minimum value: `0`
+* maximum value: `1`
+
+
+
+
+
+
+
+#### localeCode
+
+Language of the keyword. The locale code should follow [RFC BCP47](https://tools.ietf.org/html/bcp47)
+
+`localeCode`
+* is optional
+* type: `string`
+
+##### localeCode Type
+
+
+`string`
+
+
+All instances must conform to this regular expression 
+(test examples [here](https://regexr.com/?expression=%5E((((%5BA-Za-z%5D%7B2%2C3%7D(-(%5BA-Za-z%5D%7B3%7D(-%5BA-Za-z%5D%7B3%7D)%7B0%2C2%7D))%3F)%7C%5BA-Za-z%5D%7B4%7D%7C%5BA-Za-z%5D%7B5%2C8%7D)(-(%5BA-Za-z%5D%7B4%7D))%3F(-(%5BA-Za-z%5D%7B2%7D%7C%5B0-9%5D%7B3%7D))%3F(-(%5BA-Za-z0-9%5D%7B5%2C8%7D%7C%5B0-9%5D%5BA-Za-z0-9%5D%7B3%7D))*(-(%5B0-9A-WY-Za-wy-z%5D(-%5BA-Za-z0-9%5D%7B2%2C8%7D)%2B))*(-(x(-%5BA-Za-z0-9%5D%7B1%2C8%7D)%2B))%3F)%7C(x(-%5BA-Za-z0-9%5D%7B1%2C8%7D)%2B)%7C((en-GB-oed%7Ci-ami%7Ci-bnn%7Ci-default%7Ci-enochian%7Ci-hak%7Ci-klingon%7Ci-lux%7Ci-mingo%7Ci-navajo%7Ci-pwn%7Ci-tao%7Ci-tay%7Ci-tsu%7Csgn-BE-FR%7Csgn-BE-NL%7Csgn-CH-DE)%7C(art-lojban%7Ccel-gaulish%7Cno-bok%7Cno-nyn%7Czh-guoyu%7Czh-hakka%7Czh-min%7Czh-min-nan%7Czh-xiang)))%24)):
+```regex
+^(((([A-Za-z]{2,3}(-([A-Za-z]{3}(-[A-Za-z]{3}){0,2}))?)|[A-Za-z]{4}|[A-Za-z]{5,8})(-([A-Za-z]{4}))?(-([A-Za-z]{2}|[0-9]{3}))?(-([A-Za-z0-9]{5,8}|[0-9][A-Za-z0-9]{3}))*(-([0-9A-WY-Za-wy-z](-[A-Za-z0-9]{2,8})+))*(-(x(-[A-Za-z0-9]{1,8})+))?)|(x(-[A-Za-z0-9]{1,8})+)|((en-GB-oed|i-ami|i-bnn|i-default|i-enochian|i-hak|i-klingon|i-lux|i-mingo|i-navajo|i-pwn|i-tao|i-tay|i-tsu|sgn-BE-FR|sgn-BE-NL|sgn-CH-DE)|(art-lojban|cel-gaulish|no-bok|no-nyn|zh-guoyu|zh-hakka|zh-min|zh-min-nan|zh-xiang)))$
 ```
+
+
+
+
+
+
+
+
+#### value
+
+The keyword itself. A keyword can be considered like a tag, i.e. a short description of the content of the asset.
+
+`value`
+* is optional
+* type: `string`
+
+##### value Type
+
+
+`string`
+
+
+
+
+
+
 
 
 

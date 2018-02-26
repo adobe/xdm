@@ -25,22 +25,23 @@ If you need to express a concept that is specific to an Adobe (or other) product
 
 ## Copyright and Licensing
 
-XDM is an Open Standard with appropriate open licensing. The [License](LICENSE) is the Creative Commons 4.0 Attribution International license. 
+XDM is an Open Standard with appropriate open licensing. The [License](LICENSE) is the Creative Commons 4.0 Attribution International license.
 
 Adobe does not require you to assign to Adobe the copyright of your contribution. Contributions must be made by copyright owners, or individuals with the rights to assign the licensing of the contribution on behalf of the copyright owner.
 
-Where possible, include the Creative Commons Attribution 4.0 International (CC BY 4.0) license summary at the top of each file along with the copyright info. 
+Where possible, include the Creative Commons Attribution 4.0 International (CC BY 4.0) license summary at the top of each file along with the copyright info.
 
 ### License Inclusion
+
 You can include the Creative Commons Attribution 4.0 International (CC BY 4.0) license summary from below, ensure to update the copyright details.
 
- ```
- "meta:license": [
-    "->Your copyright statement here<-",
-    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
-    "you may not use this file except in compliance with the License. You may obtain a copy",
-    "of the License at https://creativecommons.org/licenses/by/4.0/"
-  ],
+```
+"meta:license": [
+   "->Your copyright statement here<-",
+   "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+   "you may not use this file except in compliance with the License. You may obtain a copy",
+   "of the License at https://creativecommons.org/licenses/by/4.0/"
+ ],
 ```
 
 ## How to Contribute
@@ -141,7 +142,7 @@ Avoid non-semantic limits – don’t put current resource limits in the data mo
 * make sure you have an example for every schema
 * run `npm test` before you make a pull request
 * convention is that property names are in camelCase, when they appear in JSON
-* Acronyms in camelCase like ID, API, JSON are also capitalized in camelCase, such as `assetID`
+* Acronyms and abbreviations in camelCase like ID, API, JSON are also capitalized in camelCase, such as `assetID`
 * When combining two acronyms, use lowercase for the first and uppercase for the second, such as `dmaID`
 * don't invent your own `ID` attributes, use the `@id` convention
 * don't invent your own `type` attributes, use the `@type` convention
@@ -151,6 +152,9 @@ Run `npm run lint` before committing. The `lint` command is able to fix some eas
 * intent: 2 spaces
 * line breaks
 * spaces around delimiters
+* breaks long lines where possible
+
+`npm lint` uses [Prettier](https://prettier.io), which offers integrations for consistent formatting for many editors and IDEs.
 
 ### Re-Use and Modularity
 

@@ -9,6 +9,7 @@ https://ns.adobe.com/xdm/external/hal/link
 
 -- from [JSON Hypertext Application Language, section 5](https://tools.ietf.org/html/draft-kelly-json-hal-08#section-5)
 
+
 | Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
 |----------|------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Forbidden | Permitted | [external/hal/hal-link.schema.json](external/hal/hal-link.schema.json) |

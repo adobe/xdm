@@ -8,7 +8,7 @@
     "$id": "https://ns.adobe.com/xdm/external/hal/resource",
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "HAL Resource",
-    "description": "> The JSON Hypertext Application Language (HAL) is a standard which\n   establishes conventions for expressing hypermedia controls, such as\n   links, with JSON [RFC4627](https://tools.ietf.org/html/rfc4627).\n\n-- from [JSON Hypertext Application Language draft-kelly-json-hal-08](https://tools.ietf.org/html/draft-kelly-json-hal-08)\n\nThis external schema definition allows adding HAL expressions into an existing schema.",
+    "description": "> The JSON Hypertext Application Language (HAL) is a standard which\n> establishes conventions for expressing hypermedia controls, such as\n> links, with JSON [RFC4627](https://tools.ietf.org/html/rfc4627).\n\n-- from [JSON Hypertext Application Language draft-kelly-json-hal-08](https://tools.ietf.org/html/draft-kelly-json-hal-08)\n\nThis external schema definition allows adding HAL expressions into an existing schema.\n",
     "type": "object",
     "definitions": {
         "hal": {
@@ -284,6 +284,30 @@
                 "self": {
                     "href": "/orders/523"
                 },
+                "warehouses": [
+                    {
+                        "href": "/warehouse/56"
+                    },
+                    {
+                        "href": "/warehouse/56"
+                    },
+                    {
+                        "href": "/warehouse/56"
+                    }
+                ],
+                "invoice": {
+                    "href": "/invoices/873"
+                }
+            },
+            "currency": "USD",
+            "status": "shipped",
+            "total": 10.2
+        },
+        {
+            "_links": {
+                "self": {
+                    "href": "/orders/523"
+                },
                 "warehouse": {
                     "href": "/warehouse/56"
                 },
@@ -335,30 +359,6 @@
                         "total": 10.2
                     }
                 ]
-            },
-            "currency": "USD",
-            "status": "shipped",
-            "total": 10.2
-        },
-        {
-            "_links": {
-                "self": {
-                    "href": "/orders/523"
-                },
-                "warehouses": [
-                    {
-                        "href": "/warehouse/56"
-                    },
-                    {
-                        "href": "/warehouse/56"
-                    },
-                    {
-                        "href": "/warehouse/56"
-                    }
-                ],
-                "invoice": {
-                    "href": "/invoices/873"
-                }
             },
             "currency": "USD",
             "status": "shipped",

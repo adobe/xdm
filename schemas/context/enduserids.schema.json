@@ -31,7 +31,8 @@
   },
   "patternProperties": {
     ".+://.+": {
-      "description": "The identifier, including data source (`@id` must be identical to the property value), foreign ID, and confidence.",
+      "description":
+        "The identifier, including data source (`@id` must be identical to the property value), foreign ID, and confidence.",
       "type": "object",
       "$ref": "https://ns.adobe.com/xdm/context/identity"
     }

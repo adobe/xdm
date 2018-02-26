@@ -22,12 +22,10 @@
             "xdm:code":{
                "title":"Code",
                "type":"string",
-               "description":"The string based name associated associated with the id attribute. Sometimes refered to as the data source integration code."
+               "description":"The code is a shortcut to the full @id and at least one of the code or @id can be used. Sometimes, this code refered to as the data source integration code."
             }
          },
-         "required":[
-            "@id"
-         ]
+         "minProperties": 1
       }
    },
    "allOf": [

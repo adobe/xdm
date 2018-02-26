@@ -1,16 +1,16 @@
 {
   "https://ns.adobe.com/experience/mcid": {
-    "xdm:id": "mcId-123",
+    "@id":"https://ns.adobe.com/entities/identity/mcid123",
     "xdm:namespace": {
-      "@id":"https://ns.adobe.com/entities/namespace/12111",
-      "xdm:code": "AA111"
+      "@id":"https://ns.adobe.com/entities/namespace/11111",
+      "xdm:code": "AA11111"
     }
   },
   "https://ns.adobe.com/experience/analytics": {
-    "xdm:id": "analyticId-123",
+    "@id":"https://ns.adobe.com/entities/identity/analytics123",
     "xdm:namespace": {
-      "@id":"https://ns.adobe.com/entities/namespace/12112",
-      "xdm:code": "AA112"
+      "@id":"https://ns.adobe.com/entities/namespace/11112",
+      "xdm:code": "AA11112"
     }
   }
 }

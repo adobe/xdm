@@ -1,7 +1,7 @@
 {
    "@id":"https://ns.adobe.com/entities/identity/id123",
    "xdm:namespace":{
-      "xdm:id":12345,
+      "@id":"https://ns.adobe.com/entities/namespace/12345",
       "xdm:code":"AA111"
    }
 }

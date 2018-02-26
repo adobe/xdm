@@ -24,7 +24,7 @@
           "title": "Unique Identifier",
           "type": "string",
           "format": "uri",
-          "description": "Unique identifier of the metric."
+          "description": "Unique identifier of the measure."
         },
         "xdm:value": {
           "type": "number",

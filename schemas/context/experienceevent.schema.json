@@ -84,7 +84,7 @@
         },
         "xdm:web": {
           "title": "Web",
-          "$ref": "https://ns.adobe.com/xdm/context/web",
+          "$ref": "https://ns.adobe.com/xdm/context/webinfo",
           "description":
             "The information related to web page and link of the ExperienceEvent."
         },

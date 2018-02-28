@@ -20,15 +20,18 @@
 * [Rectangular Object (measured in variable unit)](./assets/variable-unit-rectangular.schema.md) – `https://ns.adobe.com/xdm/assets/variable-unit-rectangular`
 * [Video](./assets/video.schema.md) – `https://ns.adobe.com/xdm/assets/video`
 
-## /content/
+## /common/
 
-* [Component Container](./content/component-container.schema.md) – `https://ns.adobe.com/xdm/content/component-container`
-* [Componentized Page](./content/componentized-page.schema.md) – `https://ns.adobe.com/xdm/content/componentized-page`
-* [Content](./content/content.schema.md) – `https://ns.adobe.com/xdm/content/content`
-* [Page Component](./content/page-component.schema.md) – `https://ns.adobe.com/xdm/content/page-component`
-* [Product](./content/product.schema.md) – `https://ns.adobe.com/xdm/context/product`
-* [Product List Item](./content/productlistitem.schema.md) – `https://ns.adobe.com/xdm/content/productlistitem`
-* [Content Repository](./content/repository.schema.md) – `https://ns.adobe.com/xdm/content/repository`
+* [Address](./common/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
+* [Audit Trail](./common/auditable.schema.md) – `https://ns.adobe.com/xdm/common/auditable`
+* [EventEnvelope](./common/eventenvelope.schema.md) – `https://ns.adobe.com/xdm/common/eventenvelope`
+* [Extensibility base schema](./common/extensible.schema.md) – `https://ns.adobe.com/xdm/common/extensible`
+* [Geo](./common/geo.schema.md) – `https://ns.adobe.com/xdm/common/geo`
+* [Identity Provider](./common/identity-provider.schema.md) – `https://ns.adobe.com/xdm/common/identity-provider`
+* [Organization](./common/organization.schema.md) – `https://ns.adobe.com/xdm/common/organization`
+* [Page](./common/page.schema.md) – `https://ns.adobe.com/xdm/common/page`
+* [Principal](./common/principal.schema.md) – `https://ns.adobe.com/xdm/common/principal`
+* [Customer Managed Environment](./common/selfservice.schema.md) – `https://ns.adobe.com/xdm/selfservice`
 
 ## /channels/
 
@@ -48,23 +51,20 @@
 * [Phone](./channels/phone.schema.md) – `https://ns.adobe.com/xdm/channels/phone`
 * [SMS](./channels/sms.schema.md) – `https://ns.adobe.com/xdm/channels/sms`
 * [Twitter Feed](./channels/twitter-feed.schema.md) – `https://ns.adobe.com/xdm/channels/twitter-feed`
-* [Web Page](./channels/webpage.schema.md) – `https://ns.adobe.com/xdm/channels/webpage`
 * [Web](./channels/web.schema.md) – `https://ns.adobe.com/xdm/channels/web`
+* [Web Page](./channels/webpage.schema.md) – `https://ns.adobe.com/xdm/channels/webpage`
 * [WeChat](./channels/wechat.schema.md) – `https://ns.adobe.com/xdm/channels/wechat`
 * [WNS](./channels/wns.schema.md) – `https://ns.adobe.com/xdm/channels/wns`
 
-## /common/
+## /content/
 
-* [Address](./common/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
-* [Audit Trail](./common/auditable.schema.md) – `https://ns.adobe.com/xdm/common/auditable`
-* [EventEnvelope](./common/eventenvelope.schema.md) – `https://ns.adobe.com/xdm/common/eventenvelope`
-* [Extensibility base schema](./common/extensible.schema.md) – `https://ns.adobe.com/xdm/common/extensible`
-* [Geo](./common/geo.schema.md) – `https://ns.adobe.com/xdm/common/geo`
-* [Identity Provider](./common/identity-provider.schema.md) – `https://ns.adobe.com/xdm/common/identity-provider`
-* [Organization](./common/organization.schema.md) – `https://ns.adobe.com/xdm/common/organization`
-* [Page](./common/page.schema.md) – `https://ns.adobe.com/xdm/common/page`
-* [Principal](./common/principal.schema.md) – `https://ns.adobe.com/xdm/common/principal`
-* [Customer Managed Environment](./common/selfservice.schema.md) – `https://ns.adobe.com/xdm/selfservice`
+* [Component Container](./content/component-container.schema.md) – `https://ns.adobe.com/xdm/content/component-container`
+* [Componentized Page](./content/componentized-page.schema.md) – `https://ns.adobe.com/xdm/content/componentized-page`
+* [Content](./content/content.schema.md) – `https://ns.adobe.com/xdm/content/content`
+* [Page Component](./content/page-component.schema.md) – `https://ns.adobe.com/xdm/content/page-component`
+* [Product](./content/product.schema.md) – `https://ns.adobe.com/xdm/context/product`
+* [Product List Item](./content/productlistitem.schema.md) – `https://ns.adobe.com/xdm/content/productlistitem`
+* [Content Repository](./content/repository.schema.md) – `https://ns.adobe.com/xdm/content/repository`
 
 ## /context/
 
@@ -96,32 +96,26 @@
 * [clicks](./data/clicks.schema.md) – `https://ns.adobe.com/xdm/data/metrics/advertising/clicks`
 * [Data Source](./data/datasource.schema.md) – `https://ns.adobe.com/xdm/data/datasource`
 * [Discount](./data/discount.schema.md) – `https://ns.adobe.com/xdm/data/discount`
-* [impressions](./data/impressions.schema.md) – `https://ns.adobe.com/xdm/data/metrics/advertising/impressions`
 * [link-clicks](./data/link-clicks.schema.md) – `https://ns.adobe.com/xdm/data/metrics/web/link-clicks`
+* [impressions](./data/impressions.schema.md) – `https://ns.adobe.com/xdm/data/metrics/advertising/impressions`
 * [Measure](./data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
 * [Metric](./data/metric.schema.md) – `https://ns.adobe.com/xdm/data/metric`
 * [Metrics](./data/metrics.schema.md) – `https://ns.adobe.com/xdm/data/metrics`
 * [mirror-pages](./data/mirror-pages.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages`
 * [non-deliverables](./data/non-deliverables.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/non-deliverables`
-* [page-views](./data/page-views.schema.md) – `https://ns.adobe.com/xdm/data/metrics/web/page-views`
 * [Order](./data/order.schema.md) – `https://ns.adobe.com/xdm/data/order`
-* [product-list-adds](./data/product-list-adds.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/product-list-adds`
+* [page-views](./data/page-views.schema.md) – `https://ns.adobe.com/xdm/data/metrics/web/page-views`
 * [Payment Item](./data/paymentitem.schema.md) – `https://ns.adobe.com/xdm/data/paymentitem`
+* [product-list-adds](./data/product-list-adds.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/product-list-adds`
 * [product-list-opens](./data/product-list-opens.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/product-list-opens`
 * [product-list-removals](./data/product-list-removals.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/product-list-removals`
 * [product-list-reopens](./data/product-list-reopens.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/product-list-reopens`
 * [product-list-views](./data/product-list-views.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/product-list-views`
-* [save-for-laters](./data/save-for-laters.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/save-for-laters`
 * [product-views](./data/product-views.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/product-views`
-* [sends](./data/sends.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/sends`
 * [purchases](./data/purchases.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/purchases`
+* [save-for-laters](./data/save-for-laters.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/save-for-laters`
+* [sends](./data/sends.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/sends`
 * [user-complaints](./data/user-complaints.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/user-complaints`
-
-## /content/repository-policies/
-
-* [At-Rest Encryption](./content/repository-policies/encryption.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/encryption`
-* [Storage Quota](./content/repository-policies/quota.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/quota`
-* [Versioning](./content/repository-policies/versioning.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/versioning`
 
 ## /common/event/
 
@@ -129,20 +123,34 @@
 * [Deleted Event](./common/event/deleted.schema.md) – `https://ns.adobe.com/xdm/common/event/deleted`
 * [Emitted Event](./common/event/emitted.schema.md) – `https://ns.adobe.com/xdm/common/event/emitted`
 * [Published Event](./common/event/published.schema.md) – `https://ns.adobe.com/xdm/common/event/published`
-* [Rejected Event](./common/event/rejected.schema.md) – `https://ns.adobe.com/xdm/common/event/rejected`
 * [Unpublished Event](./common/event/unpublished.schema.md) – `https://ns.adobe.com/xdm/common/event/unpublished`
+* [Rejected Event](./common/event/rejected.schema.md) – `https://ns.adobe.com/xdm/common/event/rejected`
 * [Updated Event](./common/event/updated.schema.md) – `https://ns.adobe.com/xdm/common/event/updated`
-
-## /external/hal/
-
-* [HAL Link](./external/hal/hal-link.schema.md) – `https://ns.adobe.com/xdm/external/hal/link`
-* [HAL Resource](./external/hal/hal.schema.md) – `https://ns.adobe.com/xdm/external/hal/resource`
 
 ## /external/schema/
 
 * [Geo Circle](./external/schema/geocircle.schema.md) – `http://schema.org/GeoCircle`
 * [Geo Coordinates](./external/schema/geocoordinates.schema.md) – `http://schema.org/GeoCoordinates`
 * [Geo Shape](./external/schema/geoshape.schema.md) – `http://schema.org/GeoShape`
+
+## /external/hal/
+
+* [HAL Link](./external/hal/hal-link.schema.md) – `https://ns.adobe.com/xdm/external/hal/link`
+* [HAL Resource](./external/hal/hal.schema.md) – `https://ns.adobe.com/xdm/external/hal/resource`
+
+## /external/activity-streams-2/
+
+* [Activity](./external/activity-streams-2/activity.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/activity`
+* [Collection Page](./external/activity-streams-2/collection-page.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/collection-page`
+* [Collection](./external/activity-streams-2/collection.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/collection`
+* [JSON-LD `@context`](./external/activity-streams-2/context.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/context`
+* [Document](./external/activity-streams-2/document.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/document`
+* [JSON-LD `@id`](./external/activity-streams-2/id.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/id`
+* [Image Document](./external/activity-streams-2/image.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/image`
+* [Link](./external/activity-streams-2/link.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/link`
+* [Object](./external/activity-streams-2/object.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/object`
+* [RDF Language Tagged String](./external/activity-streams-2/rdf-langstring.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langstring`
+* [JSON-LD `@type`](./external/activity-streams-2/type.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/type`
 
 ## /external/repo/
 
@@ -154,16 +162,8 @@
 * [Effective Privileges](./external/repo/effectiveprivileges.schema.md) – `https://ns.adobe.com/xdm/base/effectiveprivileges`
 * [Sub-Directory](./external/repo/sub-directory.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/sub-directory`
 
-## /external/activity-streams-2/
+## /content/repository-policies/
 
-* [Activity](./external/activity-streams-2/activity.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/activity`
-* [Collection Page](./external/activity-streams-2/collection-page.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/collection-page`
-* [Collection](./external/activity-streams-2/collection.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/collection`
-* [Document](./external/activity-streams-2/document.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/document`
-* [JSON-LD `@context`](./external/activity-streams-2/context.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/context`
-* [JSON-LD `@id`](./external/activity-streams-2/id.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/id`
-* [Image Document](./external/activity-streams-2/image.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/image`
-* [Link](./external/activity-streams-2/link.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/link`
-* [Object](./external/activity-streams-2/object.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/object`
-* [RDF Language Tagged String](./external/activity-streams-2/rdf-langstring.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langstring`
-* [JSON-LD `@type`](./external/activity-streams-2/type.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/type`
+* [At-Rest Encryption](./content/repository-policies/encryption.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/encryption`
+* [Storage Quota](./content/repository-policies/quota.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/quota`
+* [Versioning](./content/repository-policies/versioning.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/versioning`

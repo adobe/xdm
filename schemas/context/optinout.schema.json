@@ -100,9 +100,9 @@
           "description": "Do not contact this profile on any outbound channel.",
           "default": false
         }
-      }
-    },
-    "additionalProperties": false
+      },
+      "additionalProperties": false
+    }
   },
   "allOf": [
     {

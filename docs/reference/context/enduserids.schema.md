@@ -20,26 +20,24 @@ Additionally, this schema can include a property that describes the data source 
 ## Schema Hierarchy
 
 * End User IDs `https://ns.adobe.com/xdm/context/enduserids`
-  * [Data Source](../data/datasource.schema.md) `https://ns.adobe.com/xdm/data/datasource`
+  * [Identity](identity.schema.md) `https://ns.adobe.com/xdm/context/identity`
 
 ## End User IDs Example
 ```json
 {
-  "xdm:realm": {
-    "@id": "https://data.adobe.io/experiencecloud/audiencemanager",
-    "xdm:name": "Adobe Audience Manager"
+  "https://ns.adobe.com/experience/mcid": {
+    "@id": "https://ns.adobe.com/entities/identity/mcid123",
+    "xdm:namespace": {
+      "@id": "https://ns.adobe.com/entities/namespace/11111",
+      "xdm:code": "AA11111"
+    }
   },
-  "https://ns.adobe.com/experiencecloud/mcid": {
-    "xdm:datasource": {
-      "@id": "https://data.adobe.io/experiencecloud/mcid",
-      "xdm:name": "Adobe Marketing Cloud Identity Core Service"
-    },
-    "xdm:id": "mcid-sample111",
-    "xdm:confidence": 1
-  },
-  "https://ns.adobe.com/experiencecloud/analytics": {
-    "xdm:id": "mcid-sample111",
-    "xdm:confidence": 0.99
+  "https://ns.adobe.com/experience/analytics": {
+    "@id": "https://ns.adobe.com/entities/identity/analytics123",
+    "xdm:namespace": {
+      "@id": "https://ns.adobe.com/entities/namespace/11112",
+      "xdm:code": "AA11112"
+    }
   }
 }
 ```
@@ -48,24 +46,44 @@ Additionally, this schema can include a property that describes the data source 
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:realm](#xdmrealm) | Data Source | Optional | End User IDs (this schema) |
-| `.+://.+` | `object` | Pattern | End User IDs (this schema) |
+| [https://ns.adobe.com/experience/analytics](#https//ns.adobe.com/experience/analytics) | Identity | Optional | End User IDs (this schema) |
+| [https://ns.adobe.com/experience/mcid](#https//ns.adobe.com/experience/mcid) | Identity | Optional | End User IDs (this schema) |
+| `.+://.+` | reference | Pattern | End User IDs (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## xdm:realm
-### Realm
+## https://ns.adobe.com/experience/analytics
+### Adobe Analytics Cloud End User Ids
 
-The optional realm associated with the identity stitching strategy.
+Adobe Analytics Cloud extension to End User Ids.
 
-`xdm:realm`
+`https://ns.adobe.com/experience/analytics`
 * is optional
-* type: Data Source
+* type: Identity
 * defined in this schema
 
-### xdm:realm Type
+### https://ns.adobe.com/experience/analytics Type
 
 
-* [Data Source](../data/datasource.schema.md) – `https://ns.adobe.com/xdm/data/datasource`
+* [Identity](identity.schema.md) – `https://ns.adobe.com/xdm/context/identity`
+
+
+
+
+
+## https://ns.adobe.com/experience/mcid
+### Adobe Marketing Cloud ID
+
+A unique identifier from Adobe Marketing Cloud.
+
+`https://ns.adobe.com/experience/mcid`
+* is optional
+* type: Identity
+* defined in this schema
+
+### https://ns.adobe.com/experience/mcid Type
+
+
+* [Identity](identity.schema.md) – `https://ns.adobe.com/xdm/context/identity`
 
 
 
@@ -79,37 +97,13 @@ The identifier, including data source (`@id` must be identical to the property v
 
 `.+://.+`
 * is a property pattern
-* type: `object`
+* type: reference
 * defined in this schema
 
 ### Pattern .+://.+ Type
 
-Unknown type `object`.
 
-```json
-{
-  "description": "The identifier, including data source (`@id` must be identical to the property value), foreign ID, and confidence.",
-  "type": "object",
-  "properties": {
-    "xdm:datasource": {
-      "$ref": "https://ns.adobe.com/xdm/data/datasource"
-    },
-    "xdm:id": {
-      "type": "string",
-      "description": "The ID that is being used by the service specified by the outer property name or `xdm:datasource`\n\n. **Note:** opposed to most other IDs in XDM, this is not a URI, as it cannot be guaranteed that all identity services are using URIs as IDs."
-    },
-    "xdm:confidence": {
-      "type": "number",
-      "minimum": 0,
-      "maximum": 1
-    }
-  },
-  "required": [
-    "xdm:id"
-  ],
-  "simpletype": "`object`"
-}
-```
+* []() – `https://ns.adobe.com/xdm/context/identity`
 
 
 

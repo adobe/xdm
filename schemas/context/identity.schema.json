@@ -10,7 +10,7 @@
   "title": "Identity",
   "type": "object",
   "description":
-    "Identity from identity services which is the fact of being who or what a person or thing is.\n",
+    "Identity is used to clearly distinguish people that are interacting with digital experiences. Identity is established by an identity provider, which itself is referenced in the `namespace` attribute. Within each `namespace`, the identity is unique.",
   "definitions": {
     "identity": {
       "properties": {
@@ -24,7 +24,7 @@
           "title": "Namespace",
           "$ref": "https://ns.adobe.com/xdm/context/namespace",
           "description":
-            "The namespace associated with the id attribute and matched up with the AAM data source integration code."
+            "The namespace associated with the `xid` attribute and matched up with the AAM data source integration code."
         },
         "xdm:xid": {
           "title": "Experience Identifier",

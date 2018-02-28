@@ -53,56 +53,56 @@
         ".+://.+": {
           "$ref": "#/definitions/preference"
         }
-      }
-    },
-    "properties": {
-      "https://ns.adobe.com/xdm/channels/email": {
-        "$ref": "#/definitions/preference"
       },
-      "https://ns.adobe.com/xdm/channels/phone": {
-        "$ref": "#/definitions/preference"
+      "properties": {
+        "https://ns.adobe.com/xdm/channels/email": {
+          "$ref": "#/definitions/preference"
+        },
+        "https://ns.adobe.com/xdm/channels/phone": {
+          "$ref": "#/definitions/preference"
+        },
+        "https://ns.adobe.com/xdm/channels/sms": {
+          "$ref": "#/definitions/preference"
+        },
+        "https://ns.adobe.com/xdm/channels/fax": {
+          "$ref": "#/definitions/preference"
+        },
+        "https://ns.adobe.com/xdm/channels/direct-mail": {
+          "$ref": "#/definitions/preference"
+        },
+        "https://ns.adobe.com/xdm/channels/adm": {
+          "$ref": "#/definitions/preference"
+        },
+        "https://ns.adobe.com/xdm/channels/apns": {
+          "$ref": "#/definitions/preference"
+        },
+        "https://ns.adobe.com/xdm/channels/baidu": {
+          "$ref": "#/definitions/preference"
+        },
+        "https://ns.adobe.com/xdm/channels/gcm": {
+          "$ref": "#/definitions/preference"
+        },
+        "https://ns.adobe.com/xdm/channels/line": {
+          "$ref": "#/definitions/preference"
+        },
+        "https://ns.adobe.com/xdm/channels/mpns": {
+          "$ref": "#/definitions/preference"
+        },
+        "https://ns.adobe.com/xdm/channels/wechat": {
+          "$ref": "#/definitions/preference"
+        },
+        "https://ns.adobe.com/xdm/channels/wns": {
+          "$ref": "#/definitions/preference"
+        },
+        "xdm:globalOptout": {
+          "title": "Global Opt-out",
+          "type": "boolean",
+          "description": "Do not contact this profile on any outbound channel.",
+          "default": false
+        }
       },
-      "https://ns.adobe.com/xdm/channels/sms": {
-        "$ref": "#/definitions/preference"
-      },
-      "https://ns.adobe.com/xdm/channels/fax": {
-        "$ref": "#/definitions/preference"
-      },
-      "https://ns.adobe.com/xdm/channels/direct-mail": {
-        "$ref": "#/definitions/preference"
-      },
-      "https://ns.adobe.com/xdm/channels/adm": {
-        "$ref": "#/definitions/preference"
-      },
-      "https://ns.adobe.com/xdm/channels/apns": {
-        "$ref": "#/definitions/preference"
-      },
-      "https://ns.adobe.com/xdm/channels/baidu": {
-        "$ref": "#/definitions/preference"
-      },
-      "https://ns.adobe.com/xdm/channels/gcm": {
-        "$ref": "#/definitions/preference"
-      },
-      "https://ns.adobe.com/xdm/channels/line": {
-        "$ref": "#/definitions/preference"
-      },
-      "https://ns.adobe.com/xdm/channels/mpns": {
-        "$ref": "#/definitions/preference"
-      },
-      "https://ns.adobe.com/xdm/channels/wechat": {
-        "$ref": "#/definitions/preference"
-      },
-      "https://ns.adobe.com/xdm/channels/wns": {
-        "$ref": "#/definitions/preference"
-      },
-      "xdm:globalOptout": {
-        "title": "Global Opt-out",
-        "type": "boolean",
-        "description": "Do not contact this profile on any outbound channel.",
-        "default": false
-      }
-    },
-    "additionalProperties": false
+      "additionalProperties": false
+    }
   },
   "allOf": [
     {

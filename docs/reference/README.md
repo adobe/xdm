@@ -10,8 +10,8 @@
 * [Artboard](./assets/artboard.schema.md) – `https://ns.adobe.com/xdm/assets/artboard`
 * [Asset](./assets/asset.schema.md) – `https://ns.adobe.com/xdm/assets/asset`
 * [Copyright Owner](./assets/copyright-owner.schema.md) – `https://ns.adobe.com/xdm/assets/copyright-owner`
-* [Image](./assets/image.schema.md) – `https://ns.adobe.com/xdm/assets/image`
 * [Font](./assets/font.schema.md) – `https://ns.adobe.com/xdm/assets/font`
+* [Image](./assets/image.schema.md) – `https://ns.adobe.com/xdm/assets/image`
 * [Language Alternative](./assets/language-alternative.schema.md) – `https://ns.adobe.com/xdm/assets/language-alternative`
 * [Layer Group](./assets/layer-group.schema.md) – `https://ns.adobe.com/xdm/assets/layer-group`
 * [Layer](./assets/layer.schema.md) – `https://ns.adobe.com/xdm/assets/layer`
@@ -63,8 +63,8 @@
 * [Identity Provider](./common/identity-provider.schema.md) – `https://ns.adobe.com/xdm/common/identity-provider`
 * [Organization](./common/organization.schema.md) – `https://ns.adobe.com/xdm/common/organization`
 * [Page](./common/page.schema.md) – `https://ns.adobe.com/xdm/common/page`
-* [Customer Managed Environment](./common/selfservice.schema.md) – `https://ns.adobe.com/xdm/selfservice`
 * [Principal](./common/principal.schema.md) – `https://ns.adobe.com/xdm/common/principal`
+* [Customer Managed Environment](./common/selfservice.schema.md) – `https://ns.adobe.com/xdm/selfservice`
 
 ## /context/
 
@@ -138,12 +138,6 @@
 * [HAL Link](./external/hal/hal-link.schema.md) – `https://ns.adobe.com/xdm/external/hal/link`
 * [HAL Resource](./external/hal/hal.schema.md) – `https://ns.adobe.com/xdm/external/hal/resource`
 
-## /external/schema/
-
-* [Geo Circle](./external/schema/geocircle.schema.md) – `http://schema.org/GeoCircle`
-* [Geo Coordinates](./external/schema/geocoordinates.schema.md) – `http://schema.org/GeoCoordinates`
-* [Geo Shape](./external/schema/geoshape.schema.md) – `http://schema.org/GeoShape`
-
 ## /external/activity-streams-2/
 
 * [Activity](./external/activity-streams-2/activity.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/activity`
@@ -167,3 +161,9 @@
 * [Directory](./external/repo/directory.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/directory`
 * [Effective Privileges](./external/repo/effectiveprivileges.schema.md) – `https://ns.adobe.com/xdm/base/effectiveprivileges`
 * [Sub-Directory](./external/repo/sub-directory.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/sub-directory`
+
+## /external/schema/
+
+* [Geo Circle](./external/schema/geocircle.schema.md) – `http://schema.org/GeoCircle`
+* [Geo Coordinates](./external/schema/geocoordinates.schema.md) – `http://schema.org/GeoCoordinates`
+* [Geo Shape](./external/schema/geoshape.schema.md) – `http://schema.org/GeoShape`

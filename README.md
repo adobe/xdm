@@ -46,8 +46,8 @@ The tooling project (e.g. for generating Markdown documentation, example validat
 
 You need:
 
-1. Node.js and `npm`
-2. `curl`
+1.  Node.js and `npm`
+2.  `curl`
 
 ### AEM Package Generation
 

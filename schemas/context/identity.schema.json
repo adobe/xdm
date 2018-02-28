@@ -9,7 +9,8 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Identity",
   "type": "object",
-  "description": "Identity from identity services which is the fact of being who or what a person or thing is.\n",
+  "description":
+    "Identity from identity services which is the fact of being who or what a person or thing is.\n",
   "definitions": {
     "identity": {
       "properties": {
@@ -22,17 +23,21 @@
         "xdm:namespace": {
           "title": "Namespace",
           "$ref": "https://ns.adobe.com/xdm/context/namespace",
-          "description": "The namespace associated with the id attribute and matched up with the AAM data source integration code."
+          "description":
+            "The namespace associated with the id attribute and matched up with the AAM data source integration code."
         },
         "xdm:xid": {
           "title": "Experience Identifier",
           "type": "string",
-          "description": "When present, this value represents a cross-namespace identifier that is unique across all namespace-scoped identifiers in all namespaces."
+          "description":
+            "When present, this value represents a cross-namespace identifier that is unique across all namespace-scoped identifiers in all namespaces."
         }
       }
     }
   },
-  "allOf": [{
-    "$ref": "#/definitions/identity"
-  }]
+  "allOf": [
+    {
+      "$ref": "#/definitions/identity"
+    }
+  ]
 }

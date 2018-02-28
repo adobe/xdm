@@ -1,15 +1,15 @@
 {
   "https://ns.adobe.com/experience/mcid": {
-    "@id":"https://ns.adobe.com/entities/identity/mcid123",
+    "@id": "https://ns.adobe.com/entities/identity/mcid123",
     "xdm:namespace": {
-      "@id":"https://ns.adobe.com/entities/namespace/11111",
+      "@id": "https://ns.adobe.com/entities/namespace/11111",
       "xdm:code": "AA11111"
     }
   },
   "https://ns.adobe.com/experience/analytics": {
-    "@id":"https://ns.adobe.com/entities/identity/analytics123",
+    "@id": "https://ns.adobe.com/entities/identity/analytics123",
     "xdm:namespace": {
-      "@id":"https://ns.adobe.com/entities/namespace/11112",
+      "@id": "https://ns.adobe.com/entities/namespace/11112",
       "xdm:code": "AA11112"
     }
   }

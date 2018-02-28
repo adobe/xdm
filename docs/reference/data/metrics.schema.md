@@ -9,7 +9,7 @@ This is map of metrics and measues. Each key is the valid URI of a known `Metric
 
 | Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
 |----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | No | Forbidden | Forbidden | [data/metrics.schema.json](data/metrics.schema.json) |
+| Can be instantiated | Yes | Forbidden | Permitted | [data/metrics.schema.json](data/metrics.schema.json) |
 
 ## Schema Hierarchy
 
@@ -38,7 +38,6 @@ This is map of metrics and measues. Each key is the valid URI of a known `Metric
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [https://ns.adobe.com/xdm/data/discount](#https//ns.adobe.com/xdm/data/discount) | Measure | Optional | Metrics (this schema) |
 | [https://ns.adobe.com/xdm/data/metrics/advertising/clicks](#https//ns.adobe.com/xdm/data/metrics/advertising/clicks) | Measure | Optional | Metrics (this schema) |
 | [https://ns.adobe.com/xdm/data/metrics/advertising/impressions](#https//ns.adobe.com/xdm/data/metrics/advertising/impressions) | Measure | Optional | Metrics (this schema) |
 | [https://ns.adobe.com/xdm/data/metrics/commerce/abandons](#https//ns.adobe.com/xdm/data/metrics/commerce/abandons) | Measure | Optional | Metrics (this schema) |
@@ -58,24 +57,7 @@ This is map of metrics and measues. Each key is the valid URI of a known `Metric
 | [https://ns.adobe.com/xdm/data/metrics/direct-marketing/user-complaints](#https//ns.adobe.com/xdm/data/metrics/direct-marketing/user-complaints) | Measure | Optional | Metrics (this schema) |
 | [https://ns.adobe.com/xdm/data/metrics/web/link-clicks](#https//ns.adobe.com/xdm/data/metrics/web/link-clicks) | Measure | Optional | Metrics (this schema) |
 | [https://ns.adobe.com/xdm/data/metrics/web/page-views](#https//ns.adobe.com/xdm/data/metrics/web/page-views) | Measure | Optional | Metrics (this schema) |
-| `.+://.+` | reference | Pattern | Metrics (this schema) |
-
-## https://ns.adobe.com/xdm/data/discount
-
-
-`https://ns.adobe.com/xdm/data/discount`
-* is optional
-* type: Measure
-* defined in this schema
-
-### https://ns.adobe.com/xdm/data/discount Type
-
-
-* [Measure](measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
-
-
-
-
+| `*` | any | Additional | this schema *allows* additional properties |
 
 ## https://ns.adobe.com/xdm/data/metrics/advertising/clicks
 
@@ -395,24 +377,6 @@ This is map of metrics and measues. Each key is the valid URI of a known `Metric
 
 
 * [Measure](measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
-
-
-
-
-
-## Pattern: `.+://.+`
-Applies to all properties that match the regular expression `.+://.+`
-
-
-`.+://.+`
-* is a property pattern
-* type: reference
-* defined in this schema
-
-### Pattern .+://.+ Type
-
-
-* []() – `https://ns.adobe.com/xdm/data/measure`
 
 
 

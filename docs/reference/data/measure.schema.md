@@ -28,6 +28,7 @@ It has a value, and optionally a unit, although the unit can be inferred from th
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@type](#@type) | `string` | Optional | Measure (this schema) |
+| [xdm:id](#xdmid) | `string` | Optional | Measure (this schema) |
 | [xdm:unit](#xdmunit) | complex | Optional | Measure (this schema) |
 | [xdm:value](#xdmvalue) | `number` | **Required** | Measure (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -47,6 +48,26 @@ Links to the `Metric` that this measure refers to. The `@type` can be omitted in
 `string`
 * format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
 
+
+
+
+
+
+## xdm:id
+### Unique Identifier
+
+Unique identifier of the measure. In cases of data collection using lossy communication channels, such as mobile apps or websites with offline functionality, where transmission of measures cannot be ensured, this property contains a client-generated, unique ID of the measure taken. It is best practice to make this sufficiently long to ensure enough entropy. Additionally, if information such as time stamp, device ID, IP or MAC address, or other potentially user-identifying values are incorporated in the generation of the xdm:id, the result should be hashed, so that no PII is encoded in the value, as the goal is not to identify user or device, but the specific measure in time.
+
+`xdm:id`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:id Type
+
+
+`string`
+* minimum length: 20 characters
 
 
 

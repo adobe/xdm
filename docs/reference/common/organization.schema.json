@@ -65,7 +65,7 @@
                 "xdm:identifier": {
                     "title": "Organization Identifier",
                     "type": "object",
-                    "meta:enum": {
+                    "meta:keys": {
                         "https://ns.adobe.com/external/dnb": "Dun & Bradstreet",
                         "https://ns.adobe.com/external/angellist": "Angellist"
                     },
@@ -86,7 +86,7 @@
                 "xdm:classifier": {
                     "title": "Market/Industry Classifier",
                     "type": "object",
-                    "meta:enum": {
+                    "meta:keys": {
                         "https://ns.adobe.com/external/isic4": "International Standard of Industrial Classification of All Economic Activities (ISIC)",
                         "https://ns.adobe.com/external/sic": "Standard Industrial Classification",
                         "https://ns.adobe.com/external/naics": "North American Industry Classification System"

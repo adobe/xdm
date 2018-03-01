@@ -9,14 +9,15 @@ Content is information that is directed towards an audience for consumption in a
 
 In [Web Content Management by Deane Barker](https://www.safaribooksonline.com/library/view/web-content-management/9781491908112/ch01.html) two key differences between content and other digital information are pointed out:
 
-&gt; 1. Content is *created* differently
-&gt; 2. Content is *used* differently
+&gt; 1.  Content is _created_ differently
+&gt; 2.  Content is _used_ differently
 
 These differences boil down to a number of key characteristics of content.
 
-*Content is created by human editors* in an editorial process that involves creation, revision, and publishing.
+_Content is created by human editors_ in an editorial process that involves creation, revision, and publishing.
 
-*Content is created for human audiences*, which gives the content the ultimate value.
+_Content is created for human audiences_, which gives the content the ultimate value.
+
 
 | Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
 |----------|------------|-------------------|-----------------------|------------|

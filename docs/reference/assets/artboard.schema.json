@@ -9,7 +9,7 @@
     "$id": "https://ns.adobe.com/xdm/assets/artboard",
     "title": "Artboard",
     "type": "object",
-    "description": "An artboard works like a piece of paper on a physical desk. You can place elements you are not using on your desk outside the bounds of the paper. \nThey are still close for easy access, but they don’t interfere with the artwork taking shape on the paper. \nXDM artboards work in a similar way. \nThey contain areas for your artwork that can be are printed or exported.\n\nYou can think of an artboard as a special type of layer group. \nAn artboard clips the contents of any contained elements to its boundaries. \nThe hierarchy of elements in an artboard is displayed in the Layers panel, together with layers and layer groups. \nArtboards can contain layers and layer groups, but not other artboards.",
+    "description": "An artboard works like a piece of paper on a physical desk. You can place elements you are not using on your desk outside the bounds of the paper.\nThey are still close for easy access, but they don’t interfere with the artwork taking shape on the paper.\nXDM artboards work in a similar way.\nThey contain areas for your artwork that can be are printed or exported.\n\nYou can think of an artboard as a special type of layer group.\nAn artboard clips the contents of any contained elements to its boundaries.\nThe hierarchy of elements in an artboard is displayed in the Layers panel, together with layers and layer groups.\nArtboards can contain layers and layer groups, but not other artboards.\n",
     "meta:extends": "https://ns.adobe.com/xdm/assets/variable-unit-rectangular",
     "meta:extensible": true,
     "definitions": {

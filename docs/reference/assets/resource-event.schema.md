@@ -9,6 +9,7 @@ A Resource Event is a high-level event that occurred in the processing, editing,
 
 Resource Events are typically attached directly to an asset.
 
+
 | Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
 |----------|------------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Forbidden | Permitted | [assets/resource-event.schema.json](assets/resource-event.schema.json) |

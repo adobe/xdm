@@ -10,7 +10,7 @@
     "type": "object",
     "title": "Page Component",
     "meta:extensible": true,
-    "description": "A page component is a part or module of a `Componentized Page` or included in a `Component Container`.\nIt contains content fragments and has a specific type.\nThe type determines how the component will be displayed, rendered, and authored.",
+    "description": "A page component is a part or module of a `Componentized Page` or included in a `Component Container`.\nIt contains content fragments and has a specific type.\nThe type determines how the component will be displayed, rendered, and authored.\n",
     "definitions": {
         "component": {
             "properties": {

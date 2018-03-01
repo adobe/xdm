@@ -17,38 +17,44 @@
     "$id": {
       "type": "string",
       "format": "uri",
-      "pattern": "(https://ns\\.adobe\\.com/xdm/[a-z0-9-/]*)|(http://schema\\.org/.*)|(http://ns.adobe.com/adobecloud/core/1.0.*)|(https://tools\\.ietf\\.org/html/draft-kelly-json-hal-08/.*)"
+      "pattern":
+        "(https://ns\\.adobe\\.com/xdm/[a-z0-9-/]*)|(http://schema\\.org/.*)|(http://ns.adobe.com/adobecloud/core/1.0.*)|(https://tools\\.ietf\\.org/html/draft-kelly-json-hal-08/.*)"
     },
     "meta:license": {
       "type": "array",
       "items": [
         {
           "type": "string",
-          "pattern": "Copyright 201[7-8] Adobe Systems Incorporated\\. All rights reserved\\."
+          "pattern": "Copyright 201[7-8] .*\\. All rights reserved\\."
         },
         {
           "type": "string",
-          "const": "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license"
+          "const":
+            "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license"
         },
         {
           "type": "string",
-          "const": "you may not use this file except in compliance with the License. You may obtain a copy"
+          "const":
+            "you may not use this file except in compliance with the License. You may obtain a copy"
         },
         {
           "type": "string",
-          "const": "of the License at https://creativecommons.org/licenses/by/4.0/"
+          "const":
+            "of the License at https://creativecommons.org/licenses/by/4.0/"
         }
       ]
     },
     "meta:extensible": {
       "type": "boolean",
       "default": false,
-      "description": "Set this `true` if the schema can be extended by other schemas."
+      "description":
+        "Set this `true` if the schema can be extended by other schemas."
     },
     "meta:auditable": {
       "type": "boolean",
       "default": false,
-      "description": "Set this `true` if entities of this schema can have an audit record."
+      "description":
+        "Set this `true` if entities of this schema can have an audit record."
     },
     "meta:extends": {
       "oneOf": [
@@ -83,10 +89,7 @@
               "const": true
             }
           },
-          "required": [
-            "definitions",
-            "meta:extensible"
-          ]
+          "required": ["definitions", "meta:extensible"]
         },
         {
           "properties": {
@@ -106,10 +109,7 @@
               "format": "uri"
             }
           },
-          "required": [
-            "meta:extends",
-            "allOf"
-          ]
+          "required": ["meta:extends", "allOf"]
         },
         {
           "properties": {
@@ -121,10 +121,7 @@
               }
             }
           },
-          "required": [
-            "meta:extends",
-            "allOf"
-          ]
+          "required": ["meta:extends", "allOf"]
         },
         {
           "properties": {

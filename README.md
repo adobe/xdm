@@ -2,8 +2,8 @@
 
 [![CircleCI](https://circleci.com/gh/adobe/xdm.svg?style=svg)](https://circleci.com/gh/adobe/xdm)
 
-The [Experience Data Model](https://www.adobe.io/open/standards/xdm) (XDM) is the language of digital experiences. 
-XDM is a publicly documented specification, driven by Adobe to improve the interoperability, expressivness, and power of digital experiences. 
+The [Experience Data Model](https://www.adobe.io/open/standards/xdm) (XDM) is the language of digital experiences.
+XDM is a publicly documented specification, driven by Adobe to improve the interoperability, expressivness, and power of digital experiences.
 This repository contains the source code for the formal specification of the XDM model, using the JSON Schema language.
 
 ## Read the XDM Spec
@@ -18,36 +18,36 @@ This repository contains the source code for the formal specification of the XDM
 
 The project is laid out in the following way:
 
-- `docs`: Markdown files that contain front-matter, introduction, and non-normative parts of XDM
-- `schemas`: JSON schema files constituting the normative part of XDM
-  - `*.schema.json` is the schema file, e.g. `event-envelope.schema.json` – we pick the `.json` file extension for easy syntax highlighting in editors
-  - `*.example.*.json` is an example file that will be validated against the `*.schema.json` file, and if successful, merged into the `*.schema.json` file as an `"example"` field at the root of the schema before it is converted into Markdown or published
-  - `*.invalid.*.json` is an invalid example file that will be validated against the `*.schema.json` file. If the `invalid` file validates (false positive), the schema is too lax and the overall build will fail. `invalid` files will not be merged into documentation.
-  - `*.description.md` is a description file that will be merged into the `"description"` field at the root of the schema, allowing the authoring of longer descriptions. The merge happens before publishing the schema file or creating a joint Markdown file
-  - `schemas/assets` – for schemas related to the asset core concept, including image, video, document
-  - `schemas/audiences` – for schemas describing audiences, segments, and groups of consumers
-  - `schemas/campaigns` – for schemas describing orchestrated experience campaign
-  - `schemas/content` – for schemas related to content, including visual, audible, and virtual reality content
-  - `schemas/context` – for schemas related to the context of a digital experience, including profile, person, environment
-  - `schemas/data` – for schemas describing collected data, metric, etc.
-  - `schemas/external/*` – for JSON Schema representation of externally defined standards
-  - `schemas/channels` – for schemas describing experience channels and locations therein
-  - `schemas/common` – for basic concepts like extensibility that are not covered in `external` schemas
-- `*.ttl`: legacy schema files in Turtle Syntax that have not yet been converted into JSON Schema
-- `package.json`: a build file for `npm` that allows the generation of Markdown from the JSON Schema source files and (later) the generation of an AEM package to be deployed on the Adobe I/O Website
-- `README.md`: this file
-- `CONTRIBUTING.md`: guidelines for contributors, covering process, conventions and design guidelines
+* `docs`: Markdown files that contain front-matter, introduction, and non-normative parts of XDM
+* `schemas`: JSON schema files constituting the normative part of XDM
+  * `*.schema.json` is the schema file, e.g. `event-envelope.schema.json` – we pick the `.json` file extension for easy syntax highlighting in editors
+  * `*.example.*.json` is an example file that will be validated against the `*.schema.json` file, and if successful, merged into the `*.schema.json` file as an `"example"` field at the root of the schema before it is converted into Markdown or published
+  * `*.invalid.*.json` is an invalid example file that will be validated against the `*.schema.json` file. If the `invalid` file validates (false positive), the schema is too lax and the overall build will fail. `invalid` files will not be merged into documentation.
+  * `*.description.md` is a description file that will be merged into the `"description"` field at the root of the schema, allowing the authoring of longer descriptions. The merge happens before publishing the schema file or creating a joint Markdown file
+  * `schemas/assets` – for schemas related to the asset core concept, including image, video, document
+  * `schemas/audiences` – for schemas describing audiences, segments, and groups of consumers
+  * `schemas/campaigns` – for schemas describing orchestrated experience campaign
+  * `schemas/content` – for schemas related to content, including visual, audible, and virtual reality content
+  * `schemas/context` – for schemas related to the context of a digital experience, including profile, person, environment
+  * `schemas/data` – for schemas describing collected data, metric, etc.
+  * `schemas/external/*` – for JSON Schema representation of externally defined standards
+  * `schemas/channels` – for schemas describing experience channels and locations therein
+  * `schemas/common` – for basic concepts like extensibility that are not covered in `external` schemas
+* `*.ttl`: legacy schema files in Turtle Syntax that have not yet been converted into JSON Schema
+* `package.json`: a build file for `npm` that allows the generation of Markdown from the JSON Schema source files and (later) the generation of an AEM package to be deployed on the Adobe I/O Website
+* `README.md`: this file
+* `CONTRIBUTING.md`: guidelines for contributors, covering process, conventions and design guidelines
 
 ## Tooling
 
-The tooling project (e.g. for generating Markdown documentation, example validation, JSON Schema documentation inlining) is located in the [adobe/jsonschema2md](https://github.com/adobe/jsonschema2md) git repository. 
+The tooling project (e.g. for generating Markdown documentation, example validation, JSON Schema documentation inlining) is located in the [adobe/jsonschema2md](https://github.com/adobe/jsonschema2md) git repository.
 
 ### Dependencies
 
 You need:
 
-1. Node.js and `npm`
-2. `curl`
+1.  Node.js and `npm`
+2.  `curl`
 
 ### AEM Package Generation
 
@@ -86,6 +86,7 @@ $ npm run package
 $ npm run upload
 $ npm run activate
 ```
+
 This will generate documentation, create an AEM package, install it on (stage) author, and activate it from there, so that visitors can read the documentation.
 
 #### A Note on Dependencies
@@ -113,7 +114,6 @@ Validating schemas/common/eventenvelope.example.4.json against schemas/common/ev
 schemas/common/eventenvelope.example.4.json valid
 Validating schemas/common/eventenvelope.example.5.json against schemas/common/eventenvelope.schema.json
 schemas/common/eventenvelope.example.5.json valid
-
 ```
 
 If you see warnings or error messages (or an non-zero exit code), fix them before making a pull request.

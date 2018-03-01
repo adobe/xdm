@@ -43,7 +43,7 @@
     },
     "allOf": [
         {
-            "ref$": "#/definitions/personname"
+            "$ref": "#/definitions/personname"
         }
     ],
     "examples": [
@@ -53,14 +53,14 @@
             "xdm:name": "张三"
         },
         {
-            "xdm:givenName": "فلانة",
-            "xdm:surname": "الفلانية",
-            "xdm:name": "فلانة الفلانية"
-        },
-        {
             "xdm:givenName": "John",
             "xdm:middleName": "S",
             "xdm:surname": "Doe"
+        },
+        {
+            "xdm:givenName": "فلانة",
+            "xdm:surname": "الفلانية",
+            "xdm:name": "فلانة الفلانية"
         }
     ]
 }

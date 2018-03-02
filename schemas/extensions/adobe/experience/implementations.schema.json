@@ -1,0 +1,25 @@
+{
+  "$id": "https://ns.adobe.com/xdm-extensions/experience/analytics/analytics-extensions",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Adobe Experience Cloud ExperienceEvent Implementations",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "Details the type and version of Adobe Experience Cloud client implementations. Used for debugging and usage analysis.",
+  "properties": {
+    "https://ns.adobe.com/experience/analytics": {
+      "title": "Adobe Analytics AppMeasurement",
+      "$ref": "https://ns.adobe.com/xdm/context/implementation",
+      "description": "Adobe Analytics AppMeasurement implementation."
+    },
+    "https://ns.adobe.com/experience/target": {
+      "title": "Adobe Target Implementation",
+      "$ref": "https://ns.adobe.com/xdm/context/implementation",
+      "description": "Adobe Target mBox implementation."
+    },
+    "https://ns.adobe.com/experience/idService": {
+      "title": "Adobe Visitor Service Implementation",
+      "$ref": "https://ns.adobe.com/xdm/context/implementation",
+      "description": "Experience Cloud ID Service implementation."
+    }
+  }
+}

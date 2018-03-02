@@ -13,16 +13,17 @@
   "description": "Implementation of an API.",
   "definitions": {
     "implementation": {
-      "xdm:properties": {
-        "name": {
-        "title": "Name",
-        "type": "string",
-        "description": "SDK or endpoint Name, e.g sCode, AppMeasurement."
-      },
-      "xdm:version": {
-        "title": "Version",
-        "type": "string",
-        "description": "The version idenitifier of the API, e.g h.18."
+      "properties": {
+        "xdm:name": {
+          "title": "Name",
+          "type": "string",
+          "description": "SDK or endpoint Name, e.g sCode, AppMeasurement."
+        },
+        "xdm:version": {
+          "title": "Version",
+          "type": "string",
+          "description": "The version idenitifier of the API, e.g h.18."
+        }
       }
     }
   },

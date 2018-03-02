@@ -1,0 +1,6 @@
+{
+  "@id": "https://example.com/descriptors/2",
+  "@type": "xdm:descriptorUpdatePolicy",
+  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile",
+  "xdm:updatePolicy": "xdm:updateMerge"
+}

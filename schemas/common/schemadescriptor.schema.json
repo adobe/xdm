@@ -1,0 +1,75 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/common/schemadescriptor",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Schema Descriptor",
+  "meta:extensible": true,
+  "meta:abstract": false,
+  "type": "object",
+  "description":
+    "A descriptor that contains metadata about an XDM schema, including an optional property and array item selector, used to address the descriptor to a specific property or item.",
+  "definitions": {
+    "descriptor": {
+      "properties": {
+        "@id": {
+          "title": "Identifier",
+          "type": "string",
+          "description": "The unique identifier for the schema descriptor\n"
+        },
+        "@type": {
+          "title": "Type",
+          "type": "string",
+          "description": "The type of descriptor this object represents",
+          "meta:enum": {
+            "xdm:descriptorOneToOne":
+              "Describes a 1:1 relationship between schemas",
+            "xdm:descriptorOneToMany":
+              "Describes a 1:M relationship between schema",
+            "xdm:descriptorManyToMany":
+              "Describes a 1:M relationship between schema",
+            "xdm:descriptorIdentity":
+              "Describes how a property of a schema may be treated as an identity when it does not contain all the properties of the Identity schema",
+            "xdm:descriptorPrimaryKey":
+              "Indicates that the specified property should be used as the primary storage key",
+            "xdm:descriptorUpdatePolicy":
+              "Describes the update policy for the source schema, which defines how new data is merged, accumulated, or replaced",
+            "xdm:descriptorInstantiable":
+              "Indicates whether the specified schema should be allowed to be instanitated directly, for example in a dataset"
+          }
+        },
+        "xdm:sourceSchema": {
+          "title": "Source Schema",
+          "type": "string",
+          "description": "The source schema this descriptor applies to"
+        },
+        "xdm:sourceProperty": {
+          "title": "Source Property",
+          "type": "string",
+          "description":
+            "When present, the property of the source schema to which this descriptor applies."
+        },
+        "xdm:sourceItem": {
+          "title": "Source Item",
+          "description":
+            "When present, the selector used to match a specific item in the array pointed to by sourceProperty",
+          "$ref":
+            "https://ns.adobe.com/xdm/common/itemselector#/definitions/selector"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/descriptor"
+    }
+  ],
+  "required": ["@id", "xdm:sourceSchema"]
+}

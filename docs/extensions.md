@@ -6,9 +6,9 @@ xdm:navOrder: 4
 
 XDM is a JSON-based standard and there are three ways how JSON data models can be extended:
 
-1.  through the introduction of new properties
-2.  through the introduction of new values for existing properties
-3.  through the introduction of new schemas
+1. through the introduction of new properties
+2. through the introduction of new values for existing properties
+3. through the introduction of new schemas
 
 XDM only supports (1) and (3), because the introduction of new values for existing properties can cause challenges for implementers of XDM and increases the difficulty of adhering of XDM's purely additive versioning requirement.
 
@@ -22,8 +22,8 @@ Some XDM schemas might be declared non-extensible, which means that any property
 
 XDM generally separates two kinds of properties:
 
-1.  Standard properties are part of the XDM specification, and follow a pattern of `prefix:name`. For instance, `repo:assetID` is the unique identifier of assets in XDM.
-2.  Extension properties are not part of the XDM specification and have been defined by a customer, a partner, or by Adobe for things that are specific to one implementation. Extension property names are always URIs like `http://example.com/ns/xdm/my_property`
+1. Standard properties are part of the XDM specification, and follow a pattern of `prefix:name`. For instance, `repo:assetID` is the unique identifier of assets in XDM.
+2. Extension properties are not part of the XDM specification and have been defined by a customer, a partner, or by Adobe for things that are specific to one implementation. Extension property names are always URIs like `http://example.com/ns/xdm/my_property`
 
 XDM comes with a small list of allowed prefixes that correspond to the namespace URIs of the standards that XDM is incorporating.
 Each of these namespaces prefixes and the corresponding namespace URI is listed in a JSON-LD context document.
@@ -35,8 +35,8 @@ The XDM reference documentation and the formal JSON Schemas for XDM define for e
 When extensions are permitted, the JSON Schema will include a reference to a global `extensibility` schema fragment.
 This schema fragment ensures that:
 
-1.  Every property name uses a well-defined prefix like `xdm` or `xmp` (these are standard properties)
-2.  All other property names are URIs like `http://example.com/ns/xdm/my_property` (these are extension properties)
+1. Every property name uses a well-defined prefix like `xdm` or `xmp` (these are standard properties)
+2. All other property names are URIs like `http://example.com/ns/xdm/my_property` (these are extension properties)
 
 By default, all Adobe APIs that are using XDM are passing the JSON-LD `@context` (the mapping between namespace predix and URLs) through an HTTP `Link` header, as described in [section 4.9 of the JSON-LD specification: "Interpreting JSON as JSON-LD"](https://json-ld.org/spec/latest/json-ld/#interpreting-json-as-json-ld).
 Because the JSON-LD `@context` of APIs that use XDM is only changing when a new version of XDM is released, passing it as a `Link` header means that XDM documents remain compact, and that XDM consumers can decide themselves if they want to retrieve it.
@@ -80,10 +80,10 @@ These schema fragments can be included by schemas that are extending an existing
 
 An XDM producer that wishes to extend an existing XDM schema has to adhere to following steps:
 
-1.  Only extend schemas that are `meta:extensible`
-2.  Create a new JSON Schema file
-3.  Add a property `meta:extends` that is either a `string`, pointing to the schema URI of the schema to extend, or an `array`, listing all schemas URIs that the schema is extending
-4.  Merge the schema fragments of the schemas that are being extended into the current schema using the `allOf` keyword
+1. Only extend schemas that are `meta:extensible`
+2. Create a new JSON Schema file
+3. Add a property `meta:extends` that is either a `string`, pointing to the schema URI of the schema to extend, or an `array`, listing all schemas URIs that the schema is extending
+4. Merge the schema fragments of the schemas that are being extended into the current schema using the `allOf` keyword
 
 > Example: here a schema (`third`) is extending the schema `second`, which is extending the schema `first`. In order to express the transitive dependency chain, both `first` and `second` need to be listed under `meta:extends`. The `allOf` node shows how to include schema fragments using `$ref` and the JSON Pointer path to the `#/definitions/…` fragment.
 

@@ -46,12 +46,12 @@ You can include the Creative Commons Attribution 4.0 International (CC BY 4.0) l
 
 ## How to Contribute
 
-1.  Go to the [list of open issues](https://git.corp.adobe.com/AdobeCloudPlatform/xdm/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) and pick an issue you want to work on. If you don't see the appropriate issue, [create a new issue in GitHub](https://git.corp.adobe.com/AdobeCloudPlatform/xdm/issues/new)
-2.  If you haven't done so yet, [fork the XDM repository into your private GitHub organization](https://git.corp.adobe.com/AdobeCloudPlatform/xdm/fork). If your fork exists, merge the latest updates from `AdobeCloudPlatform/xdm` into `yourname/xdm`, so that you don't start from an outdated code tree
-3.  In `yourname/xdm` create a new branch from `master`. Your branch name should either refer the issue number like `bug-42` or `feature-23` or have a descriptive name like `fix-layer-group-references`
-4.  Make add edits that apply to the given feature or bug against this new branch. Commit and push in frequent intervals
-5.  If you are working on the branch for more than a day, make sure to occasionally (at least once per day) to merge the latest updates from `AdobeCloudPlatform/xdm#master` into your branch, so that you won't get surprised when it's time to merge the pull request. Resolve any conflicts to make life easier for the XDM editors
-6.  Once you are done, create a pull request from your branch against `AdobeCloudPlatform/xdm#master`.
+1. Go to the [list of open issues](https://git.corp.adobe.com/AdobeCloudPlatform/xdm/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) and pick an issue you want to work on. If you don't see the appropriate issue, [create a new issue in GitHub](https://git.corp.adobe.com/AdobeCloudPlatform/xdm/issues/new)
+2. If you haven't done so yet, [fork the XDM repository into your private GitHub organization](https://git.corp.adobe.com/AdobeCloudPlatform/xdm/fork). If your fork exists, merge the latest updates from `AdobeCloudPlatform/xdm` into `yourname/xdm`, so that you don't start from an outdated code tree
+3. In `yourname/xdm` create a new branch from `master`. Your branch name should either refer the issue number like `bug-42` or `feature-23` or have a descriptive name like `fix-layer-group-references`
+4. Make add edits that apply to the given feature or bug against this new branch. Commit and push in frequent intervals
+5. If you are working on the branch for more than a day, make sure to occasionally (at least once per day) to merge the latest updates from `AdobeCloudPlatform/xdm#master` into your branch, so that you won't get surprised when it's time to merge the pull request. Resolve any conflicts to make life easier for the XDM editors
+6. Once you are done, create a pull request from your branch against `AdobeCloudPlatform/xdm#master`.
 
 Every pull request should specify:
 
@@ -185,10 +185,10 @@ In order to allow custom properties, use the `https://ns.adobe.com/xdm/common/ex
 
 In detail, this schema fragment:
 
-1.  disallows the use of `@context` to define custom namespace prefixes
-2.  if `@context` is used, it enforces the namespace prefix mapping that XDM uses
-3.  it forbids the use of any property name prefix that is not listed in `schemas/common/context.jsonld`
-4.  it allows `patternProperties` that are full URIs, so that customers can add their own extensions, as explained in [the extensibility docs](docs/extensibility.md)
+1. disallows the use of `@context` to define custom namespace prefixes
+2. if `@context` is used, it enforces the namespace prefix mapping that XDM uses
+3. it forbids the use of any property name prefix that is not listed in `schemas/common/context.jsonld`
+4. it allows `patternProperties` that are full URIs, so that customers can add their own extensions, as explained in [the extensibility docs](docs/extensibility.md)
 
 XDM provides this JSON Schema fragment to that express these constraints. The schema fragment that can be added to a given schema, allowing you to validate example documents with extensions.
 
@@ -207,8 +207,8 @@ In order to make a schema extensible, add the `https://ns.adobe.com/xdm/common/e
 
 When it comes to expressing parent-child relationships between schemas, e.g. in order to create a new schema that inherits definitions from an existing schema, XDM distinguishes two things:
 
-1.  How inheritance relationships are expressed
-2.  How inheritance relationships are implemented
+1. How inheritance relationships are expressed
+2. How inheritance relationships are implemented
 
 JSON Schema does not have a built-in concept of schema inheritance, so XDM is using a set of custom properties and conventions to achieve the same semantics.
 

@@ -1,0 +1,52 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/common/identitydescriptor",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Relationship Descriptor",
+  "meta:extensible": true,
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/common/schemadescriptor#/definitions/descriptor"
+  ],
+  "meta:abstract": false,
+  "type": "object",
+  "description":
+    "A descriptor that allows a schema property to be marked as an identity, even when it does not conform to the Identity schema.  This descriptor allows any value to be mapped into the Identity structure.",
+  "definitions": {
+    "identitydescriptor": {
+      "properties": {
+        "xdm:namespace": {
+          "title": "Namespace",
+          "type": "string",
+          "description":
+            "URI of the identity namespace this identity value belongs to"
+        },
+        "xdm:property": {
+          "title": "Namespace",
+          "type": "string",
+          "description":
+            "The identity property this value will map into (id, code)",
+          "enum": ["xdm:id", "xdm:code"],
+          "meta:enum": {
+            "xdm:id": "ID",
+            "xdm:code": "Code"
+          }
+        }
+      },
+      "required": ["xdm:namespace", "xdm:property"]
+    }
+  },
+  "allOf": [
+    {
+      "$ref":
+        "https://ns.adobe.com/xdm/common/schemadescriptor#/definitions/descriptor"
+    },
+    {
+      "$ref": "#/definitions/identitydescriptor"
+    }
+  ]
+}

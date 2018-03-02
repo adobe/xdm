@@ -1,0 +1,51 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/common/updatepolicydescriptor",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Update Policy Descriptor",
+  "meta:extensible": true,
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/common/schemadescriptor#/definitions/descriptor"
+  ],
+  "meta:abstract": false,
+  "type": "object",
+  "description":
+    "A descriptor that indicates how entities defined by this schema should be managed when they are updated.  This may include merging the records, replacing the old one with the new one, or adding them to a time-series log.",
+  "definitions": {
+    "updatepolicydescriptor": {
+      "properties": {
+        "xdm:updatePolicy": {
+          "title": "Update Policy",
+          "type": "string",
+          "description":
+            "The update policy to apply to entities of this schema",
+          "enum": [
+            "xdm:updateMerge",
+            "xdm:updateReplace",
+            "xdm:updateTimeSeries"
+          ],
+          "meta:enum": {
+            "xdm:updateMerge": "Merge:",
+            "xdm:updateReplace": "Replace",
+            "xdm:updateTimeSeries": "Time-Series"
+          }
+        }
+      },
+      "required": ["xdm:updatePolicy"]
+    }
+  },
+  "allOf": [
+    {
+      "$ref":
+        "https://ns.adobe.com/xdm/common/schemadescriptor#/definitions/descriptor"
+    },
+    {
+      "$ref": "#/definitions/updatepolicydescriptor"
+    }
+  ]
+}

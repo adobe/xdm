@@ -2,8 +2,8 @@ Content is information that is directed towards an audience for consumption in a
 
 In [Web Content Management by Deane Barker](https://www.safaribooksonline.com/library/view/web-content-management/9781491908112/ch01.html) two key differences between content and other digital information are pointed out:
 
-> 1. Content is _created_ differently
-> 2. Content is _used_ differently
+> 1.  Content is _created_ differently
+> 2.  Content is _used_ differently
 
 These differences boil down to a number of key characteristics of content.
 

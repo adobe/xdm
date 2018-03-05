@@ -36,7 +36,7 @@
       },
       "https://ns.adobe.com/experience/target/pagedetails": {
         "title": "Page details",
-        "$ref": "pagedetails.schema.json",
+        "$ref": "https://ns.adobe.com/extensions/adobe/experience/target/pagedetails.schema.json",
         "description": "Adobe Target event page details."
       }
     }

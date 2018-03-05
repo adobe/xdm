@@ -14,17 +14,17 @@
   "definitions": {
     "experienceevent": {
       "properties": {
-        "https://ns.adobe.com/experience/target/clientCode": {
+        "https://ns.adobe.com/experience/target/clientcode": {
         "title": "Adobe Target client code",
         "type": "string",
         "description": "Adobe Target client code."
       },
-      "https://ns.adobe.com/experience/target/mboxName": {
+      "https://ns.adobe.com/experience/target/mboxname": {
         "title": "Adobe Target Mbox Name",
         "type": "string",
         "description": "Adobe Target mbox name."
       },
-      "https://ns.adobe.com/experience/target/mboxVersion": {
+      "https://ns.adobe.com/experience/target/mboxversion": {
         "title": "Adobe Target Mbox version",
         "type": "string",
         "description": "Adobe Target mbox version."
@@ -34,7 +34,7 @@
         "type": "string",
         "description": "Adobe Target session identifier."
       },
-      "https://ns.adobe.com/experience/target/pageDetails": {
+      "https://ns.adobe.com/experience/target/pagedetails": {
         "title": "Page details",
         "$ref": "pagedetails.schema.json",
         "description": "Adobe Target event page details."

@@ -22,6 +22,11 @@
       "title": "Adobe Analytics Cloud End User Ids",
       "$ref": "https://ns.adobe.com/xdm/context/identity",
       "description": "Adobe Analytics Cloud extension to End User Ids."
+    },
+    "https://ns.adobe.com/experience/tntid": {
+      "title": "Adobe Target End User Ids",
+      "$ref": "https://ns.adobe.com/xdm/context/identity",
+      "description": "Adobe Analytics Target extension to End User Ids."
     }
   },
   "meta:keys": {

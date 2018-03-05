@@ -1,0 +1,49 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/extensions/adobe/experience/target/experienceevent",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Adobe Target ExperienceEvent Extension",
+  "type": "object",
+  "description":
+    "Adobe Target extension to ExperienceEvent.",
+  "definitions": {
+    "experienceevent": {
+      "properties": {
+        "https://ns.adobe.com/experience/target/clientCode": {
+        "title": "Adobe Target client code",
+        "type": "string",
+        "description": "Adobe Target client code."
+      },
+      "https://ns.adobe.com/experience/target/mboxName": {
+        "title": "Adobe Target Mbox Name",
+        "type": "string",
+        "description": "Adobe Target mbox name."
+      },
+      "https://ns.adobe.com/experience/target/mboxVersion": {
+        "title": "Adobe Target Mbox version",
+        "type": "string",
+        "description": "Adobe Target mbox version."
+      },
+      "https://ns.adobe.com/experience/target/sessionID": {
+        "title": "Adobe Target Session Identifier",
+        "type": "string",
+        "description": "Adobe Target session identifier."
+      },
+      "https://ns.adobe.com/experience/target/pageDetails": {
+        "title": "Page details",
+        "$ref": "pagedetails.schema.json",
+        "description": "Adobe Target event page details."
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/experienceevent"
+    }
+  ]
+}

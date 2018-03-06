@@ -14,7 +14,7 @@
   "definitions": {
     "pagedetails": {
       "properties": {
-        "https://ns.adobe.com/experience/target/pageID": {
+        "https://ns.adobe.com/experience/target/pageid": {
           "title": "Target Unique Page Id",
           "type": "string",
           "format": "uri",

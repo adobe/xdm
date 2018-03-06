@@ -37,13 +37,13 @@
         "type": "string",
         "description": "Adobe Target session identifier."
       },
-      "https://ns.adobe.com/experience/target/pageid": {
+      "https://ns.adobe.com/experience/target/pagedetail/pageid": {
         "title": "Target Unique Page Id",
         "type": "string",
         "format": "uri",
         "description": "Target generated Page Id for current event."
        },
-       "https://ns.adobe.com/experience/target/pagescore": {
+       "https://ns.adobe.com/experience/target/pagedetail/pagescore": {
          "title": "Page Score",
          "type": "number",
          "description":

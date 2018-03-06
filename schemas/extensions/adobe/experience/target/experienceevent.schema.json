@@ -29,7 +29,7 @@
         "type": "string",
         "description": "Adobe Target mbox version."
       },
-      "https://ns.adobe.com/experience/target/sessionID": {
+      "https://ns.adobe.com/experience/target/sessionid": {
         "title": "Adobe Target Session Identifier",
         "type": "string",
         "description": "Adobe Target session identifier."

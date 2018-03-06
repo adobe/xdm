@@ -16,7 +16,7 @@
       "$ref": "https://ns.adobe.com/xdm/context/implementation",
       "description": "Adobe Target mBox implementation."
     },
-    "https://ns.adobe.com/experience/idService": {
+    "https://ns.adobe.com/experience/idservice": {
       "title": "Adobe Visitor Service Implementation",
       "$ref": "https://ns.adobe.com/xdm/context/implementation",
       "description": "Experience Cloud ID Service implementation."

@@ -30,7 +30,7 @@
                     "format": "date-time",
                     "description": "The time when the first event of the interaction occurred."
                 },
-                "xdm:endUserIds": {
+                "xdm:endUserIDs": {
                     "title": "End User IDs",
                     "$ref": "https://ns.adobe.com/xdm/context/enduserids",
                     "description": "Condensed, normalized encapsulation of all end user identifiers.\n"
@@ -93,7 +93,7 @@
                 "@id",
                 "xdm:dataSource",
                 "xdm:timestamp",
-                "xdm:endUserIds"
+                "xdm:endUserIDs"
             ]
         }
     },
@@ -113,7 +113,7 @@
                 "xdm:name": "DataSourceIntegrationCode-123"
             },
             "xdm:timestamp": "2017-09-26T15:52:25+00:00",
-            "xdm:endUserIds": {
+            "xdm:endUserIDs": {
                 "xdm:realm": {
                     "@id": "https://data.adobe.io/experiencecloud/audiencemanager",
                     "xdm:name": "Adobe Audience Manager"

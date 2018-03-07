@@ -15,7 +15,7 @@
     "geocoordinates": {
       "properties": {
         "@id": {
-          "title": "Coordinates Id",
+          "title": "Coordinates ID",
           "type": "string",
           "format": "uri",
           "description": "The unique identifier of the coordinates."

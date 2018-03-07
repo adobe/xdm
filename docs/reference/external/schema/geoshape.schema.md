@@ -50,7 +50,7 @@ The geographic shape of a place. Based on [schema.org](http://schema.org/GeoShap
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
-### Shape Id
+### Shape ID
 
 The unique identifier of the shape.
 

@@ -140,6 +140,7 @@ Avoid non-semantic limits – don’t put current resource limits in the data mo
 * provide a `description` and `title` for each schema and each property
 * have the `title` at the top of the schema, so that it can be found without scrolling
 * make sure you have an example for every schema
+* all properties must have a specific type, while JSON-Schema does allow variability in types in cases like enumerations, concrete types are required in XDM
 * run `npm test` before you make a pull request
 * convention is that property names are in camelCase, when they appear in JSON
 * Acronyms and abbreviations in camelCase like ID, API, JSON are also capitalized in camelCase, such as `assetID`

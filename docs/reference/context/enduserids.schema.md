@@ -52,9 +52,9 @@ Additionally, this schema can include a property that describes the data source 
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## https://ns.adobe.com/experience/analytics
-### Adobe Analytics Cloud End User Ids
+### Adobe Analytics Cloud End User IDs
 
-Adobe Analytics Cloud extension to End User Ids.
+Adobe Analytics Cloud extension to End User IDs.
 
 `https://ns.adobe.com/experience/analytics`
 * is optional

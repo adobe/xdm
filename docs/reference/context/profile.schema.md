@@ -33,38 +33,24 @@ for other Profile data such as preference, propensities and other attributes.
 * Profile `https://ns.adobe.com/xdm/context/profile`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Audit Trail](../common/auditable.schema.md) `https://ns.adobe.com/xdm/common/auditable`
-  * [Data Source](../data/datasource.schema.md) `https://ns.adobe.com/xdm/data/datasource`
-  * [End User IDs](enduserids.schema.md) `https://ns.adobe.com/xdm/context/enduserids`
   * [Person](person.schema.md) `https://ns.adobe.com/xdm/context/person`
   * [Address](../common/address.schema.md) `https://ns.adobe.com/xdm/common/address`
+  * [Email Address](emailaddress.schema.md) `https://ns.adobe.com/xdm/context/emailaddress`
   * [Phone Number](phonenumber.schema.md) `https://ns.adobe.com/xdm/context/phonenumber`
   * [OptInOut](optinout.schema.md) `https://ns.adobe.com/xdm/context/optinout`
 
 ## Profile Example
 ```json
 {
-  "xdm:realm": {
-    "@id": "https://data.adobe.io/datasources/datasource-123",
-    "xdm:name": "DataSourceIntegrationCode-123"
-  },
-  "xdm:identities": {
-    "xdm:realm": {
-      "@id": "https://data.adobe.io/experiencecloud/audiencemanager",
-      "xdm:name": "Adobe Audience Manager"
-    },
-    "https://ns.adobe.com/experiencecloud/mcid": {
-      "xdm:datasource": {
-        "@id": "https://data.adobe.io/experiencecloud/mcid",
-        "xdm:name": "Adobe Marketing Cloud Identity Core Service"
-      },
-      "xdm:id": "mcid-sample111",
-      "xdm:confidence": 1
-    },
-    "https://ns.adobe.com/experiencecloud/analytics": {
-      "xdm:id": "mcid-sample111",
-      "xdm:confidence": 0.99
+  "xdm:identities": [
+    {
+      "@id": "https://ns.adobe.com/entities/identity/id123",
+      "xdm:namespace": {
+        "xdm:id": 12345,
+        "xdm:code": "AA111"
+      }
     }
-  },
+  ],
   "xdm:person": {
     "xdm:name": {
       "xdm:givenName": "Jane",
@@ -91,15 +77,13 @@ for other Profile data such as preference, propensities and other attributes.
     "xdm:status": "active",
     "xdm:lastVerifiedDate": "2018-01-02"
   },
-  "xdm:emails": [
-    {
-      "xdm:primary": false,
-      "xdm:address": "jsmith@xyzinc.com",
-      "xdm:label": "John Smith",
-      "xdm:type": "work",
-      "xdm:status": "active"
-    }
-  ],
+  "xdm:workEmail": {
+    "xdm:primary": false,
+    "xdm:address": "jsmith@xyzinc.com",
+    "xdm:label": "John Smith",
+    "xdm:type": "work",
+    "xdm:status": "active"
+  },
   "xdm:mobilePhone": {
     "xdm:primary": true,
     "xdm:number": "1-408-888-8888",
@@ -121,77 +105,26 @@ for other Profile data such as preference, propensities and other attributes.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [repo:createDate](#repocreateDate) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#repocreateDate) |
-| [repo:lastModifiedDate](#repolastModifiedDate) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#repolastModifiedDate) |
 | [xdm:createdByBatchID](#xdmcreatedByBatchID) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmcreatedByBatchID) |
-| [xdm:emails](#xdmemails) | Email Address | Optional | Profile (this schema) |
 | [xdm:geoUnitID](#xdmgeoUnitID) | `string` | Optional | Profile (this schema) |
 | [xdm:homeAddress](#xdmhomeAddress) | Address | Optional | Profile (this schema) |
 | [xdm:homePhone](#xdmhomePhone) | Phone Number | Optional | Profile (this schema) |
-| [xdm:identities](#xdmidentities) | End User IDs | Optional | Profile (this schema) |
+| [xdm:identities](#xdmidentities) | Identity | Optional | Profile (this schema) |
 | [xdm:mobilePhone](#xdmmobilePhone) | Phone Number | Optional | Profile (this schema) |
 | [xdm:modifiedByBatchID](#xdmmodifiedByBatchID) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmmodifiedByBatchID) |
 | [xdm:optInOut](#xdmoptInOut) | OptInOut | Optional | Profile (this schema) |
 | [xdm:orgUnitID](#xdmorgUnitID) | `string` | Optional | Profile (this schema) |
 | [xdm:organizations](#xdmorganizations) | `string[]` | Optional | Profile (this schema) |
 | [xdm:person](#xdmperson) | Person | Optional | Profile (this schema) |
+| [xdm:personalEmail](#xdmpersonalEmail) | Email Address | Optional | Profile (this schema) |
 | [xdm:pushNotificationTokens](#xdmpushNotificationTokens) | Push Notification Token | Optional | Profile (this schema) |
-| [xdm:realm](#xdmrealm) | Data Source | Optional | Profile (this schema) |
 | [xdm:repositoryCreatedBy](#xdmrepositoryCreatedBy) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmrepositoryCreatedBy) |
 | [xdm:repositoryLastModifiedBy](#xdmrepositoryLastModifiedBy) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmrepositoryLastModifiedBy) |
+| [xdm:subscriptions](#xdmsubscriptions) | Subscription | Optional | Profile (this schema) |
 | [xdm:workAddress](#xdmworkAddress) | Address | Optional | Profile (this schema) |
+| [xdm:workEmail](#xdmworkEmail) | Email Address | Optional | Profile (this schema) |
 | [xdm:workPhone](#xdmworkPhone) | Phone Number | Optional | Profile (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
-
-## repo:createDate
-
-The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is &#34;2004-10-23T12:00:00-06:00&#34;.
-
-`repo:createDate`
-* is optional
-* type: `string`
-* defined in [Audit Trail](../common/auditable.schema.md#repo:createDate)
-
-### repo:createDate Type
-
-
-`string`
-* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
-
-
-
-
-### repo:createDate Example
-
-```json
-"2004-10-23T12:00:00-06:00"
-```
-
-
-## repo:lastModifiedDate
-
-The server date and time when the resource was most recently modified in the repository, such as when a new version of an asset is uploaded or a directory&#39;s child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is &#34;2004-10-23T12:00:00-06:00&#34;.
-
-`repo:lastModifiedDate`
-* is optional
-* type: `string`
-* defined in [Audit Trail](../common/auditable.schema.md#repo:lastModifiedDate)
-
-### repo:lastModifiedDate Type
-
-
-`string`
-* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
-
-
-
-
-### repo:lastModifiedDate Example
-
-```json
-"2004-10-23T12:00:00-06:00"
-```
-
 
 ## xdm:createdByBatchID
 ### Created by Batch Identifier
@@ -209,33 +142,6 @@ The Data Set Files in Catalog Services which has been originating the creation o
 
 `string`
 * format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
-
-
-
-
-
-
-## xdm:emails
-### Emails
-
-A standard email address.
-
-
-`xdm:emails`
-* is optional
-* type: Email Address
-
-* defined in this schema
-
-### xdm:emails Type
-
-
-Array type: Email Address
-
-All items must be of the type:
-* [Email Address](emailaddress.schema.md) – `https://ns.adobe.com/xdm/context/emailaddress`
-
-
 
 
 
@@ -303,19 +209,26 @@ Home phone number.
 
 
 ## xdm:identities
-### End User Identities
+### All User Identities
 
-How this profile can be identified
+Array of Identities. Condensed, normalized encapsulation of all end user identifiers.
 
 `xdm:identities`
 * is optional
-* type: End User IDs
+* type: Identity
+* at least `1` items in the array
 * defined in this schema
 
 ### xdm:identities Type
 
 
-* [End User IDs](enduserids.schema.md) – `https://ns.adobe.com/xdm/context/enduserids`
+Array type: Identity
+
+All items must be of the type:
+* [Identity](identity.schema.md) – `https://ns.adobe.com/xdm/context/identity`
+
+
+
 
 
 
@@ -450,6 +363,26 @@ An individual actor, contact, or owner.
 
 
 
+## xdm:personalEmail
+### Personal Email
+
+A personal email address.
+
+
+`xdm:personalEmail`
+* is optional
+* type: Email Address
+* defined in this schema
+
+### xdm:personalEmail Type
+
+
+* [Email Address](emailaddress.schema.md) – `https://ns.adobe.com/xdm/context/emailaddress`
+
+
+
+
+
 ## xdm:pushNotificationTokens
 ### Push Notification Tokens
 
@@ -473,25 +406,6 @@ All items must be of the type:
 
 
 
-
-
-
-
-
-## xdm:realm
-### Realm
-
-The optional realm associated with the identity stitching strategy.
-
-`xdm:realm`
-* is optional
-* type: Data Source
-* defined in this schema
-
-### xdm:realm Type
-
-
-* [Data Source](../data/datasource.schema.md) – `https://ns.adobe.com/xdm/data/datasource`
 
 
 
@@ -540,6 +454,32 @@ At creation time, `modifiedByUser` is set as `createdByUser`.
 
 
 
+## xdm:subscriptions
+### Subscriptions
+
+Subscriptions that this profile is entitled to including terminated, expired or exhausted subscriptions.
+
+`xdm:subscriptions`
+* is optional
+* type: Subscription
+
+* defined in this schema
+
+### xdm:subscriptions Type
+
+
+Array type: Subscription
+
+All items must be of the type:
+* [Subscription](subscription.schema.md) – `https://ns.adobe.com/xdm/context/subscription`
+
+
+
+
+
+
+
+
 ## xdm:workAddress
 ### Work Address
 
@@ -555,6 +495,26 @@ A work postal address.
 
 
 * [Address](../common/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
+
+
+
+
+
+## xdm:workEmail
+### Work Email
+
+A work email address.
+
+
+`xdm:workEmail`
+* is optional
+* type: Email Address
+* defined in this schema
+
+### xdm:workEmail Type
+
+
+* [Email Address](emailaddress.schema.md) – `https://ns.adobe.com/xdm/context/emailaddress`
 
 
 

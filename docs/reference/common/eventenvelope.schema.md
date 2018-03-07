@@ -77,6 +77,33 @@ An `EventEnvelope` is a type of `Activity` (in the sense of [W3C Activity Stream
 
 ```json
 {
+  "@type": "http://ns.adobe.com/xdm/event/published",
+  "xdm:objectType": "http://ns.adobe.com/xdm/page",
+  "activitystreams:published": "2016-07-16T19:20:30+01:00",
+  "@id": "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
+  "activitystreams:to": {
+    "@type": "http://ns.adobe.com/xdm/IMSOrg",
+    "@id": "1362"
+  },
+  "activitystreams:generator": {
+    "@type": "http://ns.adobe.com/xdm/aem/instance",
+    "@id": "AEM-Sites-08B3E5CE5822FC520A494229@AdobeOrg1373843566"
+  },
+  "activitystreams:actor": {
+    "@type": "http://ns.adobe.com/xdm/aem/user",
+    "@id": "admin"
+  },
+  "activitystreams:object": {
+    "@type": "http://ns.adobe.com/xdm/page",
+    "@id": "http://adobesummit.adobesandbox.com:4502/content/geometrixx/en/vintage.html",
+    "dc:title": "Vintage Collection",
+    "xdm:path": "/content/geometrixx/en/vintage.html"
+  }
+}
+```
+
+```json
+{
   "@type": "http://ns.adobe.com/xdm/event/unpublished",
   "xdm:objectType": "http://ns.adobe.com/xdm/page",
   "activitystreams:published": "2016-07-16T19:20:30+01:00",
@@ -128,33 +155,6 @@ An `EventEnvelope` is a type of `Activity` (in the sense of [W3C Activity Stream
     "xdm:path": "/content/dam/Fx_DUKE-small.png",
     "dc:format": "image/png",
     "repo:etag": "\"6fc55d0389d856ae7wddwebba54f110e\""
-  }
-}
-```
-
-```json
-{
-  "@type": "http://ns.adobe.com/xdm/event/published",
-  "xdm:objectType": "http://ns.adobe.com/xdm/page",
-  "activitystreams:published": "2016-07-16T19:20:30+01:00",
-  "@id": "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
-  "activitystreams:to": {
-    "@type": "http://ns.adobe.com/xdm/IMSOrg",
-    "@id": "1362"
-  },
-  "activitystreams:generator": {
-    "@type": "http://ns.adobe.com/xdm/aem/instance",
-    "@id": "AEM-Sites-08B3E5CE5822FC520A494229@AdobeOrg1373843566"
-  },
-  "activitystreams:actor": {
-    "@type": "http://ns.adobe.com/xdm/aem/user",
-    "@id": "admin"
-  },
-  "activitystreams:object": {
-    "@type": "http://ns.adobe.com/xdm/page",
-    "@id": "http://adobesummit.adobesandbox.com:4502/content/geometrixx/en/vintage.html",
-    "dc:title": "Vintage Collection",
-    "xdm:path": "/content/geometrixx/en/vintage.html"
   }
 }
 ```

@@ -72,7 +72,7 @@
       "$ref": "#/definitions/emailaddress"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/common/auditable"
+      "$ref": "https://ns.adobe.com/xdm/common/auditable#/definitions/auditlog"
     }
   ]
 }

@@ -27,7 +27,7 @@
       "title": "Adobe Target End User IDs",
       "$ref": "https://ns.adobe.com/xdm/context/identity",
       "description": "Adobe Target extension to End User IDs."
-    }
+    } 
   },
   "meta:keys": {
     "https://ns.adobe.com/experience/target": "Adobe Target",

@@ -29,8 +29,6 @@ Information that allows the phone calling of a person. Typically an alphanumeric
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [repo:createDate](#repocreateDate) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#repocreateDate) |
-| [repo:lastModifiedDate](#repolastModifiedDate) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#repolastModifiedDate) |
 | [xdm:createdByBatchID](#xdmcreatedByBatchID) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmcreatedByBatchID) |
 | [xdm:extension](#xdmextension) | `string` | Optional | Phone Number (this schema) |
 | [xdm:modifiedByBatchID](#xdmmodifiedByBatchID) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmmodifiedByBatchID) |
@@ -42,56 +40,6 @@ Information that allows the phone calling of a person. Typically an alphanumeric
 | [xdm:statusReason](#xdmstatusReason) | `string` | Optional | Phone Number (this schema) |
 | [xdm:validity](#xdmvalidity) | `string` | Optional | Phone Number (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
-
-## repo:createDate
-
-The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is &#34;2004-10-23T12:00:00-06:00&#34;.
-
-`repo:createDate`
-* is optional
-* type: `string`
-* defined in [Audit Trail](../common/auditable.schema.md#repo:createDate)
-
-### repo:createDate Type
-
-
-`string`
-* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
-
-
-
-
-### repo:createDate Example
-
-```json
-"2004-10-23T12:00:00-06:00"
-```
-
-
-## repo:lastModifiedDate
-
-The server date and time when the resource was most recently modified in the repository, such as when a new version of an asset is uploaded or a directory&#39;s child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is &#34;2004-10-23T12:00:00-06:00&#34;.
-
-`repo:lastModifiedDate`
-* is optional
-* type: `string`
-* defined in [Audit Trail](../common/auditable.schema.md#repo:lastModifiedDate)
-
-### repo:lastModifiedDate Type
-
-
-`string`
-* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
-
-
-
-
-### repo:lastModifiedDate Example
-
-```json
-"2004-10-23T12:00:00-06:00"
-```
-
 
 ## xdm:createdByBatchID
 ### Created by Batch Identifier

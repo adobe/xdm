@@ -116,7 +116,7 @@ The Data Set Files in Catalog Services which has been originating the creation o
 ### Modified by Batch Identifier
 
 The last Data Set Files in Catalog Services which has modified the entity.
-At creation time, `modifiedByBatchId` is set as `createdByBatchId`.
+At creation time, `modifiedByBatchID` is set as `createdByBatchID`.
 
 
 `xdm:modifiedByBatchID`

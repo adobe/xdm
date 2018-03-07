@@ -36,7 +36,7 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
     "xdm:name": "DataSourceIntegrationCode-123"
   },
   "xdm:timestamp": "2017-09-26T15:52:25+00:00",
-  "xdm:endUserIds": {
+  "xdm:endUserIDs": {
     "xdm:realm": {
       "@id": "https://data.adobe.io/experiencecloud/audiencemanager",
       "xdm:name": "Adobe Audience Manager"
@@ -131,7 +131,7 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
 | [xdm:commerce](#xdmcommerce) | Commerce | Optional | ExperienceEvent (this schema) |
 | [xdm:dataSource](#xdmdataSource) | Data Source | Optional | ExperienceEvent (this schema) |
 | [xdm:device](#xdmdevice) | Device | Optional | ExperienceEvent (this schema) |
-| [xdm:endUserIds](#xdmendUserIds) | End User IDs | Optional | ExperienceEvent (this schema) |
+| [xdm:endUserIDs](#xdmendUserIDs) | End User IDs | Optional | ExperienceEvent (this schema) |
 | [xdm:environment](#xdmenvironment) | Environment | Optional | ExperienceEvent (this schema) |
 | [xdm:locationContext](#xdmlocationContext) | Location Context | Optional | ExperienceEvent (this schema) |
 | [xdm:marketing](#xdmmarketing) | Marketing | Optional | ExperienceEvent (this schema) |
@@ -239,18 +239,18 @@ An identified Device/Application or Device/Browser instance that is trackable ac
 
 
 
-## xdm:endUserIds
+## xdm:endUserIDs
 ### End User IDs
 
 Condensed, normalized encapsulation of all end user identifiers.
 
 
-`xdm:endUserIds`
+`xdm:endUserIDs`
 * is optional
 * type: End User IDs
 * defined in this schema
 
-### xdm:endUserIds Type
+### xdm:endUserIDs Type
 
 
 * [End User IDs](enduserids.schema.md) – `https://ns.adobe.com/xdm/context/enduserids`

@@ -30,7 +30,7 @@ The entites related to buying and selling activity.
         "xdm:currencyCode": "USD"
       },
       {
-        "xdm:transactionId": "transactid-a222",
+        "xdm:transactionID": "transactid-a222",
         "xdm:paymentAmount": 99.99,
         "xdm:paymentType": "gift_card",
         "xdm:currencyCode": "USD"

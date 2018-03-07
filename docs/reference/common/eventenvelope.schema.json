@@ -60,7 +60,11 @@
             "activitystreams:object": {
                 "@type": "http://ns.adobe.com/xdm/asset",
                 "repo:assetID": "urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
-                "@id": "https://cc-api-storage-stage.adobe.io/id/urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185"
+                "@id": "https://cc-api-storage-stage.adobe.io/id/urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
+                "xdm:name": "example.jpg",
+                "xdm:path": "/MyFolder/example.jpg",
+                "dc:format": "image/jpg",
+                "repo:etag": "\"6fc55d0389d856ae7deccebba54f110e\""
             }
         },
         {
@@ -83,11 +87,7 @@
             "activitystreams:object": {
                 "@type": "http://ns.adobe.com/xdm/asset",
                 "repo:assetID": "urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
-                "@id": "https://cc-api-storage-stage.adobe.io/id/urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
-                "xdm:name": "example.jpg",
-                "xdm:path": "/MyFolder/example.jpg",
-                "dc:format": "image/jpg",
-                "repo:etag": "\"6fc55d0389d856ae7deccebba54f110e\""
+                "@id": "https://cc-api-storage-stage.adobe.io/id/urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185"
             }
         },
         {
@@ -118,7 +118,7 @@
             }
         },
         {
-            "@type": "http://ns.adobe.com/xdm/event/unpublished",
+            "@type": "http://ns.adobe.com/xdm/event/published",
             "xdm:objectType": "http://ns.adobe.com/xdm/page",
             "activitystreams:published": "2016-07-16T19:20:30+01:00",
             "@id": "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
@@ -142,7 +142,7 @@
             }
         },
         {
-            "@type": "http://ns.adobe.com/xdm/event/published",
+            "@type": "http://ns.adobe.com/xdm/event/unpublished",
             "xdm:objectType": "http://ns.adobe.com/xdm/page",
             "activitystreams:published": "2016-07-16T19:20:30+01:00",
             "@id": "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",

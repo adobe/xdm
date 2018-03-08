@@ -353,8 +353,7 @@ The third schema is `third.schema.json`, it extends both `second`, and transitiv
 
 #### Overview
 
-XDM allows for additional metadata about a schema to be described using a "schema descriptor". A schema descriptor is
-is applied to a schema using the "meta:descriptors" property. Descriptors may be embedded directly in the schema document, or may be described as independent external entities. The ability to define descriptors outside of a schema is useful for, among other things, annotating schemas that are not under an application's direct control with additional metadata. See examples below.
+XDM allows for additional metadata about a schema to be described using a "schema descriptor". A schema descriptor is applied to a schema using the "meta:descriptors" property. Descriptors may be embedded directly in the schema document, or may be described as independent external entities. The ability to define descriptors outside of a schema is useful for, among other things, annotating schemas that are not under an application's direct control with additional metadata. See examples below.
 
 Schema descriptors are extensible, and new descriptors may be creating by defining a new URI value and using it in
 the `@type` property of the descriptor object. Readers should ignore descriptors they do not understand.
@@ -406,11 +405,11 @@ We have two schemas, which form a parent/child relationship. The first is parent
   "title": "Parent",
   "type": "object",
   "meta:descriptors" : {
-    @type: "xdm:descriptorOneToMany",
-    xdm:sourcePropery: "@id",
-    xdm:destSchema: "https://ns.adobe.com/xdm/example/child",
-    xdm:destProperty: "xdm:parent"
-  }
+    "@type": "xdm:descriptorOneToMany",
+    "xdm:sourcePropery": "@id",
+    "xdm:destSchema": "https://ns.adobe.com/xdm/example/child",
+    "xdm:destProperty": "xdm:parent"
+  },
   "properties" :
   {
     "@id": { "type": "string" }
@@ -428,7 +427,7 @@ The second is child.json:
   "type": "object",
   "properties" :
   {
-    "@id": { "type": "string" }
+    "@id": { "type": "string" },
     "xdm:parent": { "type": "string" }
   }
 }
@@ -440,12 +439,12 @@ Note that the descriptor does not contain an '@id' or 'xdm:sourceSchema property
 
 ```json
 {
-  @id: "https://example.com/descriptors/1"
-  @type: "xdm:descriptorOneToMany",
-  xdm:sourceSchema: "https://ns.adobe.com/xdm/example/parent"
-  xdm:sourcePropery: "@id",
-  xdm:destSchema: "https://ns.adobe.com/xdm/example/child",
-  xdm:destProperty: "xdm:parent"
+  "@id": "https://example.com/descriptors/1",
+  "@type": "xdm:descriptorOneToMany",
+  "xdm:sourceSchema": "https://ns.adobe.com/xdm/example/parent",
+  "xdm:sourcePropery": "@id",
+  "xdm:destSchema": "https://ns.adobe.com/xdm/example/child",
+  "xdm:destProperty": "xdm:parent"
 }
 ```
 
@@ -472,12 +471,12 @@ The customer ID is present, but does not contain other information needed to ens
 
 ```json
 {
-  @id: "https://example.com/descriptors/2"
-  @type: "xdm:descriptorIdentity",
-  xdm:sourceSchema: "https://ns.example.com/xdm/customerrecord"
-  xdm:sourcePropery: "https://ns.example.com/xdm/customerID",
-  xdm:namespace: "https://id-server.adobe.com/1234",
-  xdm:property: "code"
+  "@id": "https://example.com/descriptors/2",
+  "@type": "xdm:descriptorIdentity",
+  "xdm:sourceSchema": "https://ns.example.com/xdm/customerrecord",
+  "xdm:sourcePropery": "https://ns.example.com/xdm/customerID",
+  "xdm:namespace": "https://id-server.adobe.com/1234",
+  "xdm:property": "code"
 }
 ```
 
@@ -497,7 +496,7 @@ We have a schema that describes a sales order taken from an external sales manag
   {
     "https://ns.example.com/xdm/txID": { "type": "string" },
     "https://ns.example.com/xdm/confirmationNum": { "type": "string" },
-    "https://ns.example.com/xdm/customerID": { "type": "string" }
+    "https://ns.example.com/xdm/customerID": { "type": "string" },
     "https://ns.example.com/xdm/productID": { "type": "string" }
   }
 }
@@ -507,10 +506,10 @@ It is not obvious which field is best suited to be the primary key for this data
 
 ```json
 {
-  @id: "https://example.com/descriptors/3"
-  @type: "xdm:descriptorPrimaryKey",
-  xdm:sourceSchema: "https://ns.example.com/xdm/salesorder"
-  xdm:sourcePropery: "https://ns.example.com/xdm/txID"
+  "@id": "https://example.com/descriptors/3",
+  "@type": "xdm:descriptorPrimaryKey",
+  "xdm:sourceSchema": "https://ns.example.com/xdm/salesorder",
+  "xdm:sourcePropery": "https://ns.example.com/xdm/txID"
 }
 ```
 
@@ -534,7 +533,7 @@ Next, they define an extension to SchemaDescriptor containing the in-use flag:
   ],
   "meta:abstract": false,
   "type": "object",
-  "description": "where is this schema being used?"
+  "description": "where is this schema being used?",
   "definitions": {
     "inusedescriptor": {
       "properties": {
@@ -568,10 +567,10 @@ Applying this descriptor might look like:
 
 ```json
 {
-  @id: "https://example.com/descriptors/4"
-  @type: "https://ns.example.com/descriptors/inuse",
-  xdm:sourceSchema: "https://ns.example.com/xdm/salesorder"
-  xdm:usage: "production"
+  "@id": "https://example.com/descriptors/4",
+  "@type": "https://ns.example.com/descriptors/inuse",
+  "xdm:sourceSchema": "https://ns.example.com/xdm/salesorder",
+  "xdm:usage": "production"
 }
 ```
 

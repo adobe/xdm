@@ -32,7 +32,7 @@
           "description":
             "The time when the first event of the interaction occurred."
         },
-        "xdm:endUserIds": {
+        "xdm:endUserIDs": {
           "title": "End User IDs",
           "$ref": "https://ns.adobe.com/xdm/context/enduserids",
           "description":
@@ -101,7 +101,7 @@
             "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, working hours."
         }
       },
-      "required": ["@id", "xdm:dataSource", "xdm:timestamp", "xdm:endUserIds"]
+      "required": ["@id", "xdm:dataSource", "xdm:timestamp", "xdm:endUserIDs"]
     }
   },
   "allOf": [

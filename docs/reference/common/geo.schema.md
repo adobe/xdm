@@ -20,16 +20,6 @@ The geographic related data where an event was observed.
 
 ```json
 {
-  "@id": "https://ns.adobe.com/entities/geo/potsdam",
-  "xdm:countryCode": "DE",
-  "xdm:stateProvince": "Brandenburg",
-  "xdm:city": "Potsdam",
-  "xdm:postalCode": "14482"
-}
-```
-
-```json
-{
   "@id": "https://ns.adobe.com/entities/geo/tokyo",
   "xdm:countryCode": "JP",
   "xdm:stateProvince": "Tōkyō-to",
@@ -37,6 +27,16 @@ The geographic related data where an event was observed.
   "xdm:postalCode": "141-0032",
   "schema:latitude": 35.6185,
   "schema:longitude": 139.73237
+}
+```
+
+```json
+{
+  "@id": "https://ns.adobe.com/entities/geo/potsdam",
+  "xdm:countryCode": "DE",
+  "xdm:stateProvince": "Brandenburg",
+  "xdm:city": "Potsdam",
+  "xdm:postalCode": "14482"
 }
 ```
 

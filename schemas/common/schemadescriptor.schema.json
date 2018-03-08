@@ -19,7 +19,9 @@
         "@id": {
           "title": "Identifier",
           "type": "string",
-          "description": "The unique identifier for the schema descriptor\n"
+          "format": "uri",
+          "description":
+            "The unique identifier for the schema descriptor. This property is required when the descriptor is defined outside of the applicable schema, but is optional when applied via 'meta:descriptors'"
         },
         "@type": {
           "title": "Type",
@@ -45,13 +47,15 @@
         "xdm:sourceSchema": {
           "title": "Source Schema",
           "type": "string",
-          "description": "The source schema this descriptor applies to"
+          "format": "uri",
+          "description":
+            "The source schema this descriptor applies to. This property is required when the descriptor is defined outside of the applicable schema, but is optional when applied via 'meta:descriptors'"
         },
         "xdm:sourceProperty": {
           "title": "Source Property",
           "type": "string",
           "description":
-            "When present, the property of the source schema to which this descriptor applies."
+            "When present, the property of the source schema to which this descriptor applies. This value is a JSON Pointer, applied to an instance of an object described by 'xdm:sourceSchema'."
         },
         "xdm:sourceItem": {
           "title": "Source Item",
@@ -70,6 +74,5 @@
     {
       "$ref": "#/definitions/descriptor"
     }
-  ],
-  "required": ["@id", "xdm:sourceSchema"]
+  ]
 }

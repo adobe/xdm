@@ -8,7 +8,7 @@
   "$id": "https://ns.adobe.com/xdm/common/itemselector",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Item Selector",
-  "meta:extensible": true,
+  "meta:extensible": false,
   "meta:abstract": false,
   "type": "object",
   "description":
@@ -33,6 +33,7 @@
             "xdm:id": {
               "title": "ID",
               "type": "string",
+              "format": "uri",
               "description":
                 "When present, indicates the item with this @id value should be selected."
             }
@@ -44,6 +45,7 @@
             "xdm:type": {
               "title": "Type",
               "type": "string",
+              "format": "uri",
               "description":
                 "When present, indicates the item with this @type value should be selected."
             }
@@ -55,6 +57,7 @@
             "xdm:schema": {
               "title": "Schema",
               "type": "string",
+              "format": "uri",
               "description":
                 "When present, indicates the item which conforms to this schema URI should be selected."
             }

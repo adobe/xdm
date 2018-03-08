@@ -22,18 +22,19 @@
         "xdm:namespace": {
           "title": "Namespace",
           "type": "string",
+          "format": "uri",
           "description":
             "URI of the identity namespace this identity value belongs to"
         },
         "xdm:property": {
-          "title": "Namespace",
+          "title": "Property",
           "type": "string",
           "description":
             "The identity property this value will map into (id, code)",
-          "enum": ["xdm:id", "xdm:code"],
+          "enum": ["id", "code"],
           "meta:enum": {
-            "xdm:id": "ID",
-            "xdm:code": "Code"
+            "id": "ID",
+            "code": "Code"
           }
         }
       },

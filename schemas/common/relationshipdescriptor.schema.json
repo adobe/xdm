@@ -22,13 +22,14 @@
         "xdm:destSchema": {
           "title": "Destination Schema",
           "type": "string",
+          "format": "uri",
           "description": "The destination schema this descriptor applies to"
         },
         "xdm:destProperty": {
           "title": "Destination Property",
           "type": "string",
           "description":
-            "When present, the property of the destination schema to which this descriptor applies."
+            "When present, the property of the destination schema to which this descriptor applies. This value is a JSON Pointer, applied to an instance of an object described by 'xdm:destSchema'"
         },
         "xdm:destItem": {
           "title": "Destination Item",

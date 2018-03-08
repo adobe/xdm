@@ -30,7 +30,7 @@
             "xdm:updateTimeSeries"
           ],
           "meta:enum": {
-            "xdm:updateMerge": "Merge:",
+            "xdm:updateMerge": "Merge",
             "xdm:updateReplace": "Replace",
             "xdm:updateTimeSeries": "Time-Series"
           }

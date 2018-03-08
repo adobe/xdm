@@ -15,17 +15,17 @@ Full name of a person
 
 ```json
 {
-  "xdm:givenName": "فلانة",
-  "xdm:surname": "الفلانية",
-  "xdm:name": "فلانة الفلانية"
+  "xdm:givenName": "John",
+  "xdm:middleName": "S",
+  "xdm:surname": "Doe"
 }
 ```
 
 ```json
 {
-  "xdm:givenName": "John",
-  "xdm:middleName": "S",
-  "xdm:surname": "Doe"
+  "xdm:givenName": "فلانة",
+  "xdm:surname": "الفلانية",
+  "xdm:name": "فلانة الفلانية"
 }
 ```
 

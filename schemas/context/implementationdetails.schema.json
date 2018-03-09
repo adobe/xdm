@@ -5,19 +5,25 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/context/implementation",
+  "$id": "https://ns.adobe.com/xdm/context/implementationdetails",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Implementation",
+  "title": "Implementation Details",
   "type": "object",
   "meta:extensible": true,
-  "description": "Implementation of an API.",
+  "description": "Details about the sdk, library or service used in an application's or web page's implementation of a service.",
   "definitions": {
-    "implementation": {
+    "implementationdetails": {
       "properties": {
         "xdm:name": {
           "title": "Name",
           "type": "string",
-          "description": "SDK or endpoint Name, e.g sCode, AppMeasurement."
+          "format": "uri",
+          "description": "SDK or endpoint Name.",
+          "meta:enum": {
+             "sCode": "Adobe Analytics sCode",
+             "AppMeasurement": "Adobe App Measurement",
+             "mBox": "Adobe Target mBox"
+          }
         },
         "xdm:version": {
           "title": "Version",
@@ -29,7 +35,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/implementation"
+      "$ref": "#/definitions/implementationdetails"
     }
   ]
 }

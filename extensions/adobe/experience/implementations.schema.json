@@ -1,25 +1,24 @@
 {
-  "$id": "https://ns.adobe.com/xdm-extensions/experience/analytics/analytics-extensions",
+  "$id": "https://ns.adobe.com/xdm-extensions/experience/implementations",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Adobe Experience Cloud ExperienceEvent Implementations",
+  "title": "The Adobe Experience Cloud techncial implementations details for data collection",
   "type": "object",
-  "meta:extensible": true,
-  "description": "Details the type and version of Adobe Experience Cloud client implementations. Used for debugging and usage analysis.",
+  "description": "Details the type and version of Adobe Experience Cloud client implementations for data collection. Used for debugging and usage analysis.",
   "properties": {
     "https://ns.adobe.com/experience/analytics": {
-      "title": "Adobe Analytics AppMeasurement",
-      "$ref": "https://ns.adobe.com/xdm/context/implementation",
-      "description": "Adobe Analytics AppMeasurement implementation."
+      "title": "Adobe Analytics AppMeasurement details",
+      "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
+      "description": "Adobe Analytics AppMeasurement implementation details."
     },
     "https://ns.adobe.com/experience/target": {
-      "title": "Adobe Target Implementation",
-      "$ref": "https://ns.adobe.com/xdm/context/implementation",
-      "description": "Adobe Target mBox implementation."
+      "title": "Adobe Target Implementation details",
+      "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
+      "description": "Adobe Target mBox implementation details."
     },
     "https://ns.adobe.com/experience/idservice": {
-      "title": "Adobe Visitor Service Implementation",
-      "$ref": "https://ns.adobe.com/xdm/context/implementation",
-      "description": "Experience Cloud ID Service implementation."
+      "title": "Adobe Visitor Service Implementation details",
+      "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
+      "description": "Experience Cloud ID Service implementation details."
     }
   }
 }

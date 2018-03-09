@@ -22,7 +22,8 @@
           "meta:enum": {
              "sCode": "Adobe Analytics sCode",
              "AppMeasurement": "Adobe App Measurement",
-             "mBox": "Adobe Target mBox"
+             "mBox": "Adobe Target mBox",
+             "VisitorAPI": "Adobe Visitor Service"
           }
         },
         "xdm:version": {

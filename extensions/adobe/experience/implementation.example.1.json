@@ -1,10 +1,10 @@
 {
   "https://ns.adobe.com/experience/analytics": {
-    "xdm:name": "AppMeasurement for JavaScript",
+    "xdm:name": "AppMeasurement",
     "xdm:version": "2.7.0"
   },
   "https://ns.adobe.com/experience/idservice": {
-    "xdm:name": "VisitorAPI.js",
+    "xdm:name": "VisitorAPI",
     "xdm:version": "1.4"
   }
 }

@@ -68,7 +68,7 @@ Subscriptions are licensed entitlements to software, services or goods that are 
 | [xdm:billingStartDate](#xdmbillingStartDate) | `string` | Optional | Subscription (this schema) |
 | [xdm:category](#xdmcategory) | `string` | Optional | Subscription (this schema) |
 | [xdm:chargeMethod](#xdmchargeMethod) | `string` | Optional | Subscription (this schema) |
-| [xdm:contractId](#xdmcontractId) | `string` | Optional | Subscription (this schema) |
+| [xdm:contractID](#xdmcontractID) | `string` | Optional | Subscription (this schema) |
 | [xdm:country](#xdmcountry) | `string` | Optional | Subscription (this schema) |
 | [xdm:device](#xdmdevice) | Device | Optional | Subscription (this schema) |
 | [xdm:endDate](#xdmendDate) | `string` | Optional | Subscription (this schema) |
@@ -210,17 +210,17 @@ The way the billing is setup to charge the customer.
 
 
 
-## xdm:contractId
+## xdm:contractID
 ### Contract ID
 
 Unique ID for the contract that governs this subscription.
 
-`xdm:contractId`
+`xdm:contractID`
 * is optional
 * type: `string`
 * defined in this schema
 
-### xdm:contractId Type
+### xdm:contractID Type
 
 
 `string`

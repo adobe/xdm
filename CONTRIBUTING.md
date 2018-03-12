@@ -349,6 +349,15 @@ The third schema is `third.schema.json`, it extends both `second`, and transitiv
 }
 ```
 
+### Schema Stability Status
+
+Each schema should contains the enum property `meta:status` that designates it's stability. The value should be one of the following enumerations:
+
+* `stable` : No open issues and has been in `stabilizing` for 1 month without major changes
+* `stabilizing` : No further major changes are expected
+* `experimental` : Major changes can be expected
+* `deprecated` : Applicable to `stable` once they are superceded by another model or set of models
+
 ### Other Schema Extensions
 
 XDM is using a couple of custom keywords that are not part of the JSON Schema standard. These include:

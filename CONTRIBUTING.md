@@ -404,14 +404,13 @@ We have two schemas, which form a parent/child relationship. The first is parent
   "$id": "https://ns.adobe.com/xdm/example/parent",
   "title": "Parent",
   "type": "object",
-  "meta:descriptors" : {
+  "meta:descriptors": {
     "@type": "xdm:descriptorOneToMany",
     "xdm:sourcePropery": "@id",
     "xdm:destSchema": "https://ns.adobe.com/xdm/example/child",
     "xdm:destProperty": "xdm:parent"
   },
-  "properties" :
-  {
+  "properties": {
     "@id": { "type": "string" }
   }
 }
@@ -425,8 +424,7 @@ The second is child.json:
   "$id": "https://ns.adobe.com/xdm/example/child",
   "title": "Child",
   "type": "object",
-  "properties" :
-  {
+  "properties": {
     "@id": { "type": "string" },
     "xdm:parent": { "type": "string" }
   }
@@ -492,8 +490,7 @@ We have a schema that describes a sales order taken from an external sales manag
   "$id": "https://ns.example.com/xdm/salesorder",
   "title": "SalesOrder",
   "type": "object",
-  "properties" :
-  {
+  "properties": {
     "https://ns.example.com/xdm/txID": { "type": "string" },
     "https://ns.example.com/xdm/confirmationNum": { "type": "string" },
     "https://ns.example.com/xdm/customerID": { "type": "string" },
@@ -541,11 +538,7 @@ Next, they define an extension to SchemaDescriptor containing the in-use flag:
           "title": "Usage",
           "type": "string",
           "description": "the usage state of the schema",
-          "enum": [
-            "production",
-            "stage",
-            "none"
-          ]
+          "enum": ["production", "stage", "none"]
         }
       },
       "required": ["xdm:usage"]

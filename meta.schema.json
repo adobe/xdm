@@ -149,6 +149,6 @@
     "description":
       "Indicates if the schema’s level of stability. Defined values are: stable, stabilizing, and experimental.",
     "type": "string",
-    "meta:enum": ["stable", "stabilizing", "experimental"]
+    "meta:enum": ["stable", "stabilizing", "experimental", "deprecated"]
   }
 }

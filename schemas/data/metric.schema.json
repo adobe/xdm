@@ -21,19 +21,27 @@
         },
         "schema:name": {
           "type": "string",
-          "description":
-            "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
+          "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
         },
         "xdm:measurement": {
           "type": "string",
           "description": "How to take measures of this metric.",
-          "examples": ["distance", "time", "price", "count"]
+          "examples": [
+            "distance",
+            "time",
+            "price",
+            "count"
+          ]
         },
         "xdm:unit": {
           "type": "string",
-          "description":
-            "The unit that this metric is measured in. Whenever possible, metrics should follow the [SI base units](https://www.bipm.org/en/measurement-units/) or be [ISO 4217 currency codes](https://www.iso.org/iso-4217-currency-codes.html). For measures that are counts, the `xdm:unit` must be `null`.",
-          "examples": ["m", "kg", "s", "USD"]
+          "description": "The unit that this metric is measured in. Whenever possible, metrics should follow the [SI base units](https://www.bipm.org/en/measurement-units/) or be [ISO 4217 currency codes](https://www.iso.org/iso-4217-currency-codes.html). For measures that are counts, the `xdm:unit` must be `null`.",
+          "examples": [
+            "m",
+            "kg",
+            "s",
+            "USD"
+          ]
         }
       }
     }
@@ -43,5 +51,11 @@
       "$ref": "#/definitions/metric"
     }
   ],
-  "required": ["@id", "schema:name", "xdm:measurement", "xdm:unit"]
+  "required": [
+    "@id",
+    "schema:name",
+    "xdm:measurement",
+    "xdm:unit"
+  ],
+  "meta:status": "experimental"
 }

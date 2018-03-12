@@ -205,7 +205,9 @@
                 }
               },
               "additionalProperties": false,
-              "required": ["xdm"]
+              "required": [
+                "xdm"
+              ]
             }
           },
           "patternProperties": {
@@ -240,7 +242,9 @@
             "^repo:.*$": {},
             ".+://.+": {}
           },
-          "required": ["@context"],
+          "required": [
+            "@context"
+          ],
           "additionalProperties": false
         }
       ]
@@ -250,5 +254,6 @@
     {
       "$ref": "#/definitions/@context"
     }
-  ]
+  ],
+  "meta:status": "experimental"
 }

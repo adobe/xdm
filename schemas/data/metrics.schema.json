@@ -9,8 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Metrics",
   "type": "object",
-  "description":
-    "This is map of metrics and measues. Each key is the valid URI of a known `Metric`. Each value is a `Measure`, i.e. a concrete data point.",
+  "description": "This is map of metrics and measues. Each key is the valid URI of a known `Metric`. Each value is a `Measure`, i.e. a concrete data point.",
   "definitions": {
     "metrics": {
       "patternProperties": {
@@ -84,5 +83,6 @@
     {
       "$ref": "#/definitions/metrics"
     }
-  ]
+  ],
+  "meta:status": "experimental"
 }

@@ -9,7 +9,8 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "End User IDs",
   "type": "object",
-  "description": "Condensed, normalized encapsulation of all end user identifiers. NOTE: At least one of the fields is required.\n",
+  "description":
+    "Condensed, normalized encapsulation of all end user identifiers. NOTE: At least one of the fields is required.\n",
   "minProperties": 1,
   "properties": {
     "https://ns.adobe.com/experience/mcid": {
@@ -32,11 +33,13 @@
     "https://ns.adobe.com/experience/target": "Adobe Target",
     "https://ns.adobe.com/experience/campaign": "Adobe Campaign",
     "https://ns.adobe.com/experience/analytics": "Adobe Analytics",
-    "https://ns.adobe.com/experience/mcid": "Marketing Cloud Identity Core Service"
+    "https://ns.adobe.com/experience/mcid":
+      "Marketing Cloud Identity Core Service"
   },
   "patternProperties": {
     ".+://.+": {
-      "description": "The identifier, including data source (`@id` must be identical to the property value), foreign ID, and confidence.",
+      "description":
+        "The identifier, including data source (`@id` must be identical to the property value), foreign ID, and confidence.",
       "type": "object",
       "$ref": "https://ns.adobe.com/xdm/context/identity"
     }

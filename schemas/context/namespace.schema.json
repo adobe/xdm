@@ -9,7 +9,8 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Namespace",
   "type": "object",
-  "description": "The namespace or unique identifier associated with a collection of data. Each EndUserID is associated with a given namespace. A user can create and obtain information about a namespace during the solution onboarding.\n",
+  "description":
+    "The namespace or unique identifier associated with a collection of data. Each EndUserID is associated with a given namespace. A user can create and obtain information about a namespace during the solution onboarding.\n",
   "definitions": {
     "namespace": {
       "properties": {
@@ -17,12 +18,14 @@
           "title": "Identifier",
           "type": "string",
           "format": "uri",
-          "description": "The numeric ID associated with this namespace. This would be provided by the individual or system that created the namespace.\n"
+          "description":
+            "The numeric ID associated with this namespace. This would be provided by the individual or system that created the namespace.\n"
         },
         "xdm:code": {
           "title": "Code",
           "type": "string",
-          "description": "The code is a shortcut to the full @id and at least one of the code or @id can be used. Sometimes, this code refered to as the data source integration code."
+          "description":
+            "The code is a shortcut to the full @id and at least one of the code or @id can be used. Sometimes, this code refered to as the data source integration code."
         }
       },
       "minProperties": 1

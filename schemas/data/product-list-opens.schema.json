@@ -10,23 +10,24 @@
   "title": "product-list-opens",
   "type": "object",
   "meta:extensible": true,
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/data/metric"
-  ],
-  "description": "The commerce metric product-list-opens describes how many new product lists have been created. The most common case is the creation of a new shopping cart by putting the first item into the shopping cart.",
+  "meta:extends": ["https://ns.adobe.com/xdm/data/metric"],
+  "description":
+    "The commerce metric product-list-opens describes how many new product lists have been created. The most common case is the creation of a new shopping cart by putting the first item into the shopping cart.",
   "definitions": {
     "metric": {
       "properties": {
         "@id": {
           "type": "string",
           "format": "uri",
-          "const": "https://ns.adobe.com/xdm/data/metrics/commerce/product-list-opens",
+          "const":
+            "https://ns.adobe.com/xdm/data/metrics/commerce/product-list-opens",
           "description": "The unique identifier of this metric."
         },
         "schema:name": {
           "type": "string",
           "const": "commerce metric: product-list-opens",
-          "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
+          "description":
+            "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
         },
         "xdm:measurement": {
           "type": "string",
@@ -44,11 +45,6 @@
       "$ref": "#/definitions/metric"
     }
   ],
-  "required": [
-    "@id",
-    "schema:name",
-    "xdm:measurement",
-    "xdm:unit"
-  ],
+  "required": ["@id", "schema:name", "xdm:measurement", "xdm:unit"],
   "meta:status": "experimental"
 }

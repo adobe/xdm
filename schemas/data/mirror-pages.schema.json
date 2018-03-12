@@ -10,23 +10,24 @@
   "title": "mirror-pages",
   "type": "object",
   "meta:extensible": true,
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/data/metric"
-  ],
-  "description": "The direct-marketing metric mirror-pages describes the number of mirror pages for which a link to the online mirror page of a message has been clicked.",
+  "meta:extends": ["https://ns.adobe.com/xdm/data/metric"],
+  "description":
+    "The direct-marketing metric mirror-pages describes the number of mirror pages for which a link to the online mirror page of a message has been clicked.",
   "definitions": {
     "metric": {
       "properties": {
         "@id": {
           "type": "string",
           "format": "uri",
-          "const": "https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages",
+          "const":
+            "https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages",
           "description": "The unique identifier of this metric."
         },
         "schema:name": {
           "type": "string",
           "const": "direct-marketing metric: mirror-pages",
-          "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
+          "description":
+            "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
         },
         "xdm:measurement": {
           "type": "string",
@@ -44,11 +45,6 @@
       "$ref": "#/definitions/metric"
     }
   ],
-  "required": [
-    "@id",
-    "schema:name",
-    "xdm:measurement",
-    "xdm:unit"
-  ],
+  "required": ["@id", "schema:name", "xdm:measurement", "xdm:unit"],
   "meta:status": "experimental"
 }

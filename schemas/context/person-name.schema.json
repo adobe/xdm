@@ -21,22 +21,26 @@
         "xdm:surname": {
           "title": "Surname",
           "type": "string",
-          "description": "The inherited family name, last name, surname, patronymic, or matronymic name."
+          "description":
+            "The inherited family name, last name, surname, patronymic, or matronymic name."
         },
         "xdm:middleName": {
           "title": "Middle name",
           "type": "string",
-          "description": "Middle, alternative, or additional names supplied between the given name and surnames."
+          "description":
+            "Middle, alternative, or additional names supplied between the given name and surnames."
         },
         "xdm:courtesyTitle": {
           "title": "Courtesy title",
           "type": "string",
-          "description": "Normally an abbreviation of a persons *title*, *honorific*, or *salutation*.\nThe `courtesyTitle` is used in front of full or last name in opening texts.\ne.g Mr. Miss. or Dr J. Smith.\n"
+          "description":
+            "Normally an abbreviation of a persons *title*, *honorific*, or *salutation*.\nThe `courtesyTitle` is used in front of full or last name in opening texts.\ne.g Mr. Miss. or Dr J. Smith.\n"
         },
         "xdm:name": {
           "title": "Full name",
           "type": "string",
-          "description": "The full name of the person, in writing order most commonly accepted in the language of the name."
+          "description":
+            "The full name of the person, in writing order most commonly accepted in the language of the name."
         }
       }
     }

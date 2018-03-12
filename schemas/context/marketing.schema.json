@@ -9,14 +9,16 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Marketing",
   "type": "object",
-  "description": "The information related to marketing activities that are active with the touchpoint.",
+  "description":
+    "The information related to marketing activities that are active with the touchpoint.",
   "definitions": {
     "marketing": {
       "properties": {
         "xdm:trackingCode": {
           "title": "Tracking Code",
           "type": "string",
-          "description": "Tracking code that can be used to identify the marketing campaign the event is associated with."
+          "description":
+            "Tracking code that can be used to identify the marketing campaign the event is associated with."
         }
       }
     }

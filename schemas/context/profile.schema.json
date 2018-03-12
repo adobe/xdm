@@ -10,7 +10,8 @@
   "title": "Profile",
   "type": "object",
   "auditable": true,
-  "description": "XDM Profiles are a singular representation of the attributes of identified and\npartially identified persons. Profiles that are highly identified maybe used for\npersonal communications or highly targeted engagements and can contain detailed\npersonal information such as names, gender, date of birth, locations, and contact\ninformation like phone numbers and email addresses. Profiles may range to the\nother end of the identification spectrum where only anonymous behavioral signals\nare being observed and the amount of identification is simple browser cookies.\nIn this latter case, the sparse Profile data is useful to build more knowledge\non the interests and preferences of the anonymous profile, and over time can\nbecome richer as the person interacting with brand becomes more engaged and\nultimately signs-on to notifications, subscriptions, purchases and other\nconnections with the brand that enrich and fill out the profile.\n\nXDM Profile can contain personal information, identification information, contact\ndetails and communication preferences. Over time XDM Profile will expand to cater\nfor other Profile data such as preference, propensities and other attributes.\n\n",
+  "description":
+    "XDM Profiles are a singular representation of the attributes of identified and\npartially identified persons. Profiles that are highly identified maybe used for\npersonal communications or highly targeted engagements and can contain detailed\npersonal information such as names, gender, date of birth, locations, and contact\ninformation like phone numbers and email addresses. Profiles may range to the\nother end of the identification spectrum where only anonymous behavioral signals\nare being observed and the amount of identification is simple browser cookies.\nIn this latter case, the sparse Profile data is useful to build more knowledge\non the interests and preferences of the anonymous profile, and over time can\nbecome richer as the person interacting with brand becomes more engaged and\nultimately signs-on to notifications, subscriptions, purchases and other\nconnections with the brand that enrich and fill out the profile.\n\nXDM Profile can contain personal information, identification information, contact\ndetails and communication preferences. Over time XDM Profile will expand to cater\nfor other Profile data such as preference, propensities and other attributes.\n\n",
   "definitions": {
     "profile": {
       "properties": {
@@ -21,7 +22,8 @@
             "$ref": "https://ns.adobe.com/xdm/context/identity"
           },
           "minItems": 1,
-          "description": "Array of Identities. Condensed, normalized encapsulation of all end user identifiers."
+          "description":
+            "Array of Identities. Condensed, normalized encapsulation of all end user identifiers."
         },
         "xdm:person": {
           "title": "Person",
@@ -66,12 +68,14 @@
         "xdm:optInOut": {
           "title": "OptInOut",
           "$ref": "https://ns.adobe.com/xdm/context/optinout",
-          "description": "Describes a users opting in and out preferences for communication by medium\nand communication type.\n"
+          "description":
+            "Describes a users opting in and out preferences for communication by medium\nand communication type.\n"
         },
         "xdm:pushNotificationTokens": {
           "title": "Push Notification Tokens",
           "type": "array",
-          "description": "Push notification tokens are used to communicate with applications that\nare installed on devices or SaaS application accounts.\n",
+          "description":
+            "Push notification tokens are used to communicate with applications that\nare installed on devices or SaaS application accounts.\n",
           "items": {
             "$ref": "https://ns.adobe.com/xdm/context/pushnotificationtoken"
           }
@@ -79,12 +83,14 @@
         "xdm:orgUnitID": {
           "title": "Organizational Unit Identifier",
           "type": "string",
-          "description": "The unit ID within the organization owning the profile. This ID can be used to reference the organization details maintained in another dataset."
+          "description":
+            "The unit ID within the organization owning the profile. This ID can be used to reference the organization details maintained in another dataset."
         },
         "xdm:geoUnitID": {
           "title": "Geographical Unit Identifier",
           "type": "string",
-          "description": "The geographical unit ID within the organization owning the profile. This ID can be used to reference the geographical information maintained in another dataset."
+          "description":
+            "The geographical unit ID within the organization owning the profile. This ID can be used to reference the geographical information maintained in another dataset."
         },
         "xdm:organizations": {
           "title": "Organizations",
@@ -96,7 +102,8 @@
         "xdm:subscriptions": {
           "title": "Subscriptions",
           "type": "array",
-          "description": "Subscriptions that this profile is entitled to including terminated, expired or exhausted subscriptions.",
+          "description":
+            "Subscriptions that this profile is entitled to including terminated, expired or exhausted subscriptions.",
           "items": {
             "$ref": "https://ns.adobe.com/xdm/context/subscription"
           }

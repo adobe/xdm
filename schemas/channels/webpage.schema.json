@@ -50,17 +50,17 @@
           "type": "object",
           "description": "The referrer of the web page.",
           "properties": {
-            "URL": {
+            "xdm:URL": {
               "title": "URL",
               "type": "string",
               "description": "The referrer URL."
             },
-            "domain": {
+            "xdm:domain": {
               "title": "Domain",
               "type": "string",
               "description": "The domain of the referrer."
             },
-            "type": {
+            "@type": {
               "title": "Type",
               "type": "string",
               "description": "The referrer type."

@@ -1,7 +1,9 @@
 {
   "xdm:section": "Search section",
   "xdm:name": "search",
-  "xdm:URL": "https://www.google.com",
+  "xdm:referrer": {
+    "xdm:URL": "https://www.google.com"
+  },
   "xdm:isErrorPage": false,
   "xdm:isHomePage": true
 }

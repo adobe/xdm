@@ -44,5 +44,6 @@
     {
       "$ref": "#/definitions/datasource"
     }
-  ]
+  ],
+  "meta:status": "experimental"
 }

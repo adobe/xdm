@@ -88,5 +88,6 @@
     {
       "$ref": "#/definitions/device"
     }
-  ]
+  ],
+  "meta:status": "experimental"
 }

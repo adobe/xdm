@@ -105,6 +105,7 @@
             "$ref": "#/definitions/experienceevent"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "@id": "https://data.adobe.io/experienceid-123456",

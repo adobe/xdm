@@ -115,6 +115,7 @@
             "$ref": "#/definitions/profile"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "xdm:identities": [

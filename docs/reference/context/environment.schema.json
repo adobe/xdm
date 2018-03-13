@@ -130,6 +130,7 @@
             "$ref": "#/definitions/environment"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "xdm:type": "browser",

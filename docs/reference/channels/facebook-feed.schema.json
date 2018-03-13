@@ -80,6 +80,7 @@
     "required": [
         "@id"
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "@id": "https://ns.adobe.com/xdm/channels/facebook-feed",

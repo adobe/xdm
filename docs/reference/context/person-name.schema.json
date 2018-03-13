@@ -46,6 +46,7 @@
             "$ref": "#/definitions/personname"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "xdm:givenName": "John",

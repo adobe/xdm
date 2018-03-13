@@ -98,5 +98,6 @@
       "description": "Identifies an entity that provides a preview of this object. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-preview) document for a complete description.",
       "$ref": "#/definitions/object-or-link-or-array-of-object-or-link"
     }
-  }
+  },
+  "meta:status": "experimental"
 }

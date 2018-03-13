@@ -81,5 +81,6 @@
     {
       "$ref": "#/definitions/physicallocation"
     }
-  ]
+  ],
+  "meta:status": "experimental"
 }

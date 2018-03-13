@@ -46,6 +46,7 @@
             "$ref": "#/definitions/weblink"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "xdm:type": "other",

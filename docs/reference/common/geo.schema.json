@@ -65,6 +65,7 @@
             "$ref": "#/definitions/geo"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "@id": "https://ns.adobe.com/entities/geo/tokyo",

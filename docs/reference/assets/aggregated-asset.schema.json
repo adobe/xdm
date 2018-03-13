@@ -43,6 +43,7 @@
             "$ref": "https://ns.adobe.com/xdm/assets/video#/definitions/video"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "repo:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",

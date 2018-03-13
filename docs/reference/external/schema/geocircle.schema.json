@@ -44,6 +44,7 @@
             "$ref": "#/definitions/geocircle"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "@id": "https://ns.adobe.com/entities/geo/circleid123",

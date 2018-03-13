@@ -31,5 +31,6 @@
     "@type": {
       "$ref": "#/definitions/type"
     }
-  }
+  },
+  "meta:status": "experimental"
 }

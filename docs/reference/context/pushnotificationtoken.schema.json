@@ -58,6 +58,7 @@
             "$ref": "#/definitions/pushnotificationtoken"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "xdm:token": "ABC123DEFG",

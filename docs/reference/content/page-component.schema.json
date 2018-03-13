@@ -30,6 +30,7 @@
             "$ref": "https://ns.adobe.com/xdm/content/componentized-page#/definitions/residuals"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "@type": "https://francois.corp.adobe.com:4502/apps/foundation/title",

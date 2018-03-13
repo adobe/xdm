@@ -25,6 +25,7 @@
             "$ref": "#/definitions/accesscontrolpolicy"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "repo:acl": [

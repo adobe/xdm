@@ -41,6 +41,7 @@
             "$ref": "https://ns.adobe.com/xdm/context/identity"
         }
     },
+    "meta:status": "experimental",
     "examples": [
         {
             "https://ns.adobe.com/experience/mcid": {

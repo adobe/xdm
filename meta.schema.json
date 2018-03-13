@@ -71,6 +71,33 @@
         }
       ]
     },
+    "meta:xdmType": {
+      "string": {
+        "sqlType": "varchar(255)",
+        "protoType": "string"
+      },
+      "boolean": {
+        "protoType": "bool"
+      },
+      "byte": {
+        "protoType": "int32"
+      },
+      "short": {
+        "protoType": "int32"
+      },
+      "int": {
+        "protoType": "int32"
+      },
+      "long": {
+        "protoType": "int64"
+      },
+      "float": {
+        "protoType": "float"
+      },
+      "double": {
+        "protoType": "double"
+      }
+    },
     "type": {
       "type": "string",
       "const": "object"

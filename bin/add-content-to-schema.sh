@@ -5,11 +5,12 @@
 #   $ sh add-content-to-schema.sh <schemas> <content>
 #
 
-SCHEMAS=$1
+SCHEMA_PATTERN=$1
+SCHEMA_LOCATION=`dirname $0`/../schemas
 CONTENT=$2
-echo -e "Adding:\n\tjson: ${CONTENT}\n\tto: ${SCHEMAS}"
+echo -e "Adding:\n\tjson: ${CONTENT}\n\tto: ${SCHEMA_PATTERN}"
 
-for cur in $( find . -iname "${SCHEMAS}" ); do
+for cur in $( find ${SCHEMA_LOCATION} -iname "${SCHEMA_PATTERN}" ); do
   jq ". + ${CONTENT}" $cur > "${cur}.out"
   mv "${cur}.out" $cur
 done

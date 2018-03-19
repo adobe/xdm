@@ -355,10 +355,10 @@ The third schema is `third.schema.json`, it extends both `second`, and transitiv
 
 XDM allows for additional metadata about a schema to be described using a "schema descriptor". A schema descriptor is applied to a schema using the "meta:descriptors" property. Descriptors may be embedded directly in the schema document, or may be described as independent external entities. The ability to define descriptors outside of a schema is useful for, among other things, annotating schemas that are not under an application's direct control with additional metadata. See examples below.
 
-Schema descriptors are extensible, and new descriptors may be creating by defining a new URI value and using it in
+Schema descriptors are extensible, and new descriptors may be created by defining a new URI value and using it in
 the `@type` property of the descriptor object. Readers should ignore descriptors they do not understand.
 
-Schema descriptors are defined in XDM using the SchemaDescriptor schema.
+Schema descriptors are defined in XDM using the `SchemaDescriptor` schema.
 
 #### Defining Schema Relationships
 
@@ -370,7 +370,7 @@ The following relationship types are defined by XDM:
 * `xdm:descriptorOneToMany`: describes a 1:m relationship between a source schema and a destination schema
 * `xdm:descriptorManyToMany`: describes an m:n relationship between a source schema and a destination schema
 
-These relationships are defined in XDM using the RelationshipDescriptor schema.
+These relationships are defined in XDM using the `RelationshipDescriptor` schema.
 
 #### Update Policies
 
@@ -382,13 +382,13 @@ XDM defines a schema descriptor of type `xdm:descriptorUpdatePolicy`, which desc
 * `xdm:updateReplace`: the new data object should replace the existing data object
 * `xdm:updateTimeSeries`: the data is time series data, and the new object should be logged/collected without changing any existing data
 
-Update policies are defined using the UpdatePolicyDescriptor schema.
+Update policies are defined using the `UpdatePolicyDescriptor` schema.
 
 #### Other Supported Schema Descriptors
 
 A number of additional schema descriptors are defined by XDM:
 
-* `xdm:descriptorIdentity`: allows a property in a schema to be used as an identity, even if it does not conform to the Identity schema.
+* `xdm:descriptorIdentity`: allows a property in a schema to be used as an [Identity](https://github.com/adobe/xdm/blob/master/docs/reference/context/identity.schema.md), even if it does not conform to the Identity schema.
 * `xdm:descriptorPrimaryKey`: allows a property other than `@id` to be flagged as the primary key for a schema
 * `xdm:descriptorInstantiable`: allows a schema to be flagged as 'instantiable', which may be used to differentiate schemas that define primary business objects versus supporting schemas intended to be embedded in another schema.
 
@@ -433,7 +433,7 @@ The second is child.json:
 
 The source schema in this example is Parent, which contains a single relationship descriptor describing a one-to-many relationship between objects of schema Parent to objects of schema Child.
 
-Note that the descriptor does not contain an '@id' or 'xdm:sourceSchema property', which are optional when the descriptor is embedded directly in the schema. If the relationship descriptor were to be written externally, it would look like this:
+Note that the descriptor does not contain an `@id` or `xdm:sourceSchema property`, which are optional when the descriptor is embedded directly in the schema. If the relationship descriptor were to be written externally, it would look like this:
 
 ```json
 {
@@ -518,7 +518,7 @@ Let's say Example.com would like to annotate their schemas with information on w
 
 They need to do two things to define the new descriptor. First, they create a new URI to define the type of the descriptor: 'https://ns.example.com/descriptors/inuse'.
 
-Next, they define an extension to SchemaDescriptor containing the in-use flag:
+Next, they define an extension to `SchemaDescriptor` containing the in-use flag:
 
 ```json
 {

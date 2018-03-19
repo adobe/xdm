@@ -1,10 +1,15 @@
 #!/bin/bash 
 
-schemas=$1
-newcontent=$2
-echo -e "Adding:\n\tjson: ${newcontent}\n\tto: ${schemas}"
+# This is a helper script to quickly add jq-formatted content to all schemas matching a given pattern
+# Usage:
+#   $ sh add-content-to-schema.sh <schemas> <content>
+#
 
-for cur in $( find . -iname "${schemas}" ); do
-  jq ". + ${newcontent}" $cur > "${cur}.out"
+SCHEMAS=$1
+CONTENT=$2
+echo -e "Adding:\n\tjson: ${CONTENT}\n\tto: ${SCHEMAS}"
+
+for cur in $( find . -iname "${SCHEMAS}" ); do
+  jq ". + ${CONTENT}" $cur > "${cur}.out"
   mv "${cur}.out" $cur
 done

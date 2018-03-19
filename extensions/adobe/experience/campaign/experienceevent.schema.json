@@ -27,7 +27,7 @@
       "description": "Human readable name of the activity.",
       "maxLength": 128
     },
-    "https://ns.adobe.com/experience/campaign/message/delivery/communicationChannel": {
+    "https://ns.adobe.com/experience/campaign/message/delivery/communicationchannel": {
       "title": "Channel",
       "$ref": "https://ns.adobe.com/xdm/channels/channel",
       "description": "The marketing channel used to execute this activity."
@@ -37,24 +37,24 @@
       "type": "string",
       "description": "Description of the activity intent."
     },
-    "https://ns.adobe.com/experience/campaign/message/delivery/trackingCode": {
+    "https://ns.adobe.com/experience/campaign/message/delivery/trackingcode": {
       "title": "Tracking Code",
       "type": "string",
       "description": "A human readable tracking code for this activity. A same tracking code can be reused over multiple activities. For instance this could be a promotion code. That same code could be used over different channels at different point of time. All activities sharing that same promotion code can then be grouped together within a same report even if they are not under the same campaign."
     },
-    "https://ns.adobe.com/experience/campaign/message/delivery/startDate": {
+    "https://ns.adobe.com/experience/campaign/message/delivery/startdate": {
       "title": "Start Date",
       "type": "string",
       "format": "date-time",
       "description": "The intended start date of the activity. In Adobe Campaign, the start date is when the delivery of the messages is scheduled to start."
     },
-    "https://ns.adobe.com/experience/campaign/message/delivery/endDate": {
+    "https://ns.adobe.com/experience/campaign/message/delivery/enddate": {
       "title": "End Date",
       "type": "string",
       "format": "date-time",
       "description": "The intended end date of the activity. In Adobe Campaign, the end date is the expiration date of the delivery. After this date, no messages are expected to be delivered. Unlike the `startDate`, the `endDate` is not required. Some activities can be *open* and so the `endDate` is not known at the time of the creation of the entity (e.g., a real-time messaging activity in Adobe Campaign)."
     },
-    "https://ns.adobe.com/experience/campaign/message/delivery/messagesClass": {
+    "https://ns.adobe.com/experience/campaign/message/delivery/messagesclass": {
       "title": "Message Class",
       "type": "string",
       "description": "Marketing classification of the messages sent through that delivery.",
@@ -85,13 +85,13 @@
       "type": "string",
       "description": "Description of the campaign's intent."
     },
-    "https://ns.adobe.com/experience/campaign/message/delivery/campaign/startDate": {
+    "https://ns.adobe.com/experience/campaign/message/delivery/campaign/startdate": {
       "title": "Start Date",
       "type": "string",
       "format": "date",
       "description": "The intended start date of the campaign."
     },
-    "https://ns.adobe.com/experience/campaign/message/delivery/campaign/endDate": {
+    "https://ns.adobe.com/experience/campaign/message/delivery/campaign/enddate": {
       "title": "End Date",
       "type": "string",
       "format": "date",
@@ -107,7 +107,7 @@
       "type": "string",
       "description": "Type of the referenced entity (e.g., Event, Activity, ...). The `type` MUST be set when the reference is ambiguous. For instance in an `Event`, the `context` property is a reference to different entities depending on the type of the event."
     },
-    "https://ns.adobe.com/experience/campaign/message/delivery/testEnabled": {
+    "https://ns.adobe.com/experience/campaign/message/delivery/testenabled": {
       "title": "Test Enabled",
       "type": "boolean",
       "description": "Specify whether delivery is of type AB testing.",
@@ -131,25 +131,25 @@
       "description": "Address moved to quarantine. The quarantine is set to true when the message failed to deliver in a way that indicates that no future messages will be deliverable either to this address.",
       "default": false
     },
-    "https://ns.adobe.com/experience/campaign/message/proofMember": {
+    "https://ns.adobe.com/experience/campaign/message/proofmember": {
       "title": "Proof Member",
       "type": "boolean",
       "description": "The recipient of this message is a member of the proof group for this campaign activity.",
       "default": false
     },
-    "https://ns.adobe.com/experience/campaign/message/seedMember": {
+    "https://ns.adobe.com/experience/campaign/message/seedmember": {
       "title": "Seed Member",
       "type": "boolean",
       "description": "The recipient of this message is a member of a seed list for this campaign activity.",
       "default": false
     },
-    "https://ns.adobe.com/experience/campaign/message/controlGroupMember": {
+    "https://ns.adobe.com/experience/campaign/message/controlgroupmember": {
       "title": "Control Group Member",
       "type": "boolean",
       "description": "The recipient of this message is a member of a control group for this campaign activity. Messages to control group members are not delivered.",
       "default": false
     },
-    "https://ns.adobe.com/experience/campaign/message/testMember": {
+    "https://ns.adobe.com/experience/campaign/message/testmember": {
       "title": "A/B Test Member",
       "type": "boolean",
       "description": "The recipient of this message is a member of a test group for this campaign activity.",
@@ -162,7 +162,7 @@
       "minimum": 0,
       "maximum": 2147483647
     },
-    "https://ns.adobe.com/experience/campaign/message/scheduledAt": {
+    "https://ns.adobe.com/experience/campaign/message/scheduledat": {
       "title": "Scheduled At",
       "type": "string",
       "format": "date-time",
@@ -173,7 +173,7 @@
       "type": "string",
       "description": "A campaign activity can have multiple variants (French, English) but a message delivered to a recipient always contains one of them. > IMPORTANT: Using the mirror page, the recipient can switch from one variant to another (ex: switch of the language)."
     },
-    "https://ns.adobe.com/experience/campaign/message/IP": {
+    "https://ns.adobe.com/experience/campaign/message/ip": {
       "title": "IP Address",
       "type": "string",
       "description": "Outbound IP address used to deliver the message."
@@ -199,7 +199,7 @@
         "unreachable": "Unreachable"
       }
     },
-    "https://ns.adobe.com/experience/campaign/message/reasonMessage": {
+    "https://ns.adobe.com/experience/campaign/message/reasonmessage": {
       "title": "Reason Message",
       "type": "string",
       "description": "Reason of message delivery failure when the status is `bounce` or `nonDeliverable`."

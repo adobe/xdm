@@ -3,6 +3,8 @@
 # This is a helper script to quickly add jq-formatted content to all schemas matching a given pattern
 # Usage:
 #   $ sh add-content-to-schema.sh <schemas> <content>
+# Example:
+#   $ ./bin/add-content-to-schema.sh '*.schema.json' '{ "foobar": "zipzop" }'
 #
 
 SCHEMA_PATTERN=$1

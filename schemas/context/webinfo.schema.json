@@ -14,12 +14,12 @@
   "definitions": {
     "webinfo": {
       "properties": {
-        "xdm:page": {
+        "xdm:webPage": {
           "title": "Web Page",
-          "$ref": "https://ns.adobe.com/xdm/channels/webpage",
+          "$ref": "https://ns.adobe.com/xdm/context/webpage",
           "description": "The web page information of the ExperienceEvent."
         },
-        "xdm:link": {
+        "xdm:webLink": {
           "title": "Web Link",
           "$ref": "https://ns.adobe.com/xdm/context/weblink",
           "description": "The web link information of the ExperienceEvent."

@@ -80,6 +80,7 @@
             "$ref": "#/definitions/device"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "xdm:typeID": "TypeIdentifier-111",

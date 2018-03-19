@@ -138,6 +138,8 @@ Avoid non-semantic limits – don’t put current resource limits in the data mo
 * have the `title` at the top of the schema, so that it can be found without scrolling
 * make sure you have an example for every schema
 * all properties must have a specific type, while JSON-Schema does allow variability in types in cases like enumerations, concrete types are required in XDM
+* restrict the values of `string` properties as much as appropriate for the domain. `minLength`, `maxLength`, `pattern`, and `format` all can help with that.
+* don't restrict values of `string` properties beyond the constraints of the domain, e.g. don't set a `maxLength` of 255, just because your current database uses a `VARCHAR(255)` default
 * run `npm test` before you make a pull request
 * convention is that property names are in camelCase, when they appear in JSON
 * Acronyms and abbreviations in camelCase like ID, API, JSON are also capitalized in camelCase, such as `assetID`
@@ -343,6 +345,15 @@ The third schema is `third.schema.json`, it extends both `second`, and transitiv
   ]
 }
 ```
+
+### Schema Stability Status
+
+Each schema should contains the enum property `meta:status` that designates it's stability. The value should be one of the following enumerations:
+
+* `stable` : No open issues and has been in `stabilizing` for 1 month without major changes
+* `stabilizing` : No further major changes are expected
+* `experimental` : Major changes can be expected
+* `deprecated` : Schema is no longer maintained, supported or is superceded by another schema/set of schemas
 
 ### Other Schema Extensions
 

@@ -67,6 +67,7 @@
             "$ref": "https://ns.adobe.com/xdm/common/auditable#/definitions/auditlog"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "xdm:primary": true,

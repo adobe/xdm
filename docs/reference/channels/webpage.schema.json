@@ -75,6 +75,7 @@
             "$ref": "#/definitions/webpage"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "xdm:section": "Search section",

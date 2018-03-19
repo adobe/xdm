@@ -41,6 +41,7 @@
             "$ref": "#/definitions/search"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "xdm:searchEngine": "Google",

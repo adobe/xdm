@@ -36,6 +36,7 @@
             "$ref": "#/definitions/application"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "xdm:id": "A123",

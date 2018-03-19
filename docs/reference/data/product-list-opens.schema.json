@@ -50,6 +50,7 @@
         "xdm:measurement",
         "xdm:unit"
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "schema:name": "commerce metric: product-list-opens",

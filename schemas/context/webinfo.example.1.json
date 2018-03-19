@@ -1,12 +1,12 @@
 {
-  "xdm:page": {
+  "xdm:webPage": {
     "xdm:section": "Search section",
     "xdm:name": "search",
     "xdm:URL": "https://www.google.com",
     "xdm:isErrorPage": false,
     "xdm:isHomePage": true
   },
-  "xdm:link": {
+  "xdm:webLink": {
     "xdm:type": "other",
     "xdm:URL":
       "https://store.google.com/?utm_source=hp_header&utm_medium=google_oo&utm_campaign=GS100042",

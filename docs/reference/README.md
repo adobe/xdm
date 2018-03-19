@@ -30,6 +30,19 @@
 * [Product List Item](./content/productlistitem.schema.md) – `https://ns.adobe.com/xdm/content/productlistitem`
 * [Content Repository](./content/repository.schema.md) – `https://ns.adobe.com/xdm/content/repository`
 
+## /common/
+
+* [Address](./common/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
+* [Audit Trail](./common/auditable.schema.md) – `https://ns.adobe.com/xdm/common/auditable`
+* [EventEnvelope](./common/eventenvelope.schema.md) – `https://ns.adobe.com/xdm/common/eventenvelope`
+* [Extensibility base schema](./common/extensible.schema.md) – `https://ns.adobe.com/xdm/common/extensible`
+* [Geo](./common/geo.schema.md) – `https://ns.adobe.com/xdm/common/geo`
+* [Identity Provider](./common/identity-provider.schema.md) – `https://ns.adobe.com/xdm/common/identity-provider`
+* [Organization](./common/organization.schema.md) – `https://ns.adobe.com/xdm/common/organization`
+* [Page](./common/page.schema.md) – `https://ns.adobe.com/xdm/common/page`
+* [Principal](./common/principal.schema.md) – `https://ns.adobe.com/xdm/common/principal`
+* [Customer Managed Environment](./common/selfservice.schema.md) – `https://ns.adobe.com/xdm/selfservice`
+
 ## /channels/
 
 * [ADM](./channels/adm.schema.md) – `https://ns.adobe.com/xdm/channels/adm`
@@ -53,19 +66,6 @@
 * [WeChat](./channels/wechat.schema.md) – `https://ns.adobe.com/xdm/channels/wechat`
 * [WNS](./channels/wns.schema.md) – `https://ns.adobe.com/xdm/channels/wns`
 
-## /common/
-
-* [Address](./common/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
-* [Audit Trail](./common/auditable.schema.md) – `https://ns.adobe.com/xdm/common/auditable`
-* [EventEnvelope](./common/eventenvelope.schema.md) – `https://ns.adobe.com/xdm/common/eventenvelope`
-* [Extensibility base schema](./common/extensible.schema.md) – `https://ns.adobe.com/xdm/common/extensible`
-* [Geo](./common/geo.schema.md) – `https://ns.adobe.com/xdm/common/geo`
-* [Identity Provider](./common/identity-provider.schema.md) – `https://ns.adobe.com/xdm/common/identity-provider`
-* [Organization](./common/organization.schema.md) – `https://ns.adobe.com/xdm/common/organization`
-* [Page](./common/page.schema.md) – `https://ns.adobe.com/xdm/common/page`
-* [Principal](./common/principal.schema.md) – `https://ns.adobe.com/xdm/common/principal`
-* [Customer Managed Environment](./common/selfservice.schema.md) – `https://ns.adobe.com/xdm/selfservice`
-
 ## /context/
 
 * [Browser Details](./context/browserdetails.schema.md) – `https://ns.adobe.com/xdm/context/browserdetails`
@@ -86,8 +86,8 @@
 * [Place](./context/place.schema.md) – `https://ns.adobe.com/xdm/context/place`
 * [Profile](./context/profile.schema.md) – `https://ns.adobe.com/xdm/context/profile`
 * [Push Notification Token](./context/pushnotificationtoken.schema.md) – `https://ns.adobe.com/xdm/context/pushnotificationtoken`
-* [Subscription](./context/subscription.schema.md) – `https://ns.adobe.com/xdm/context/subscription`
 * [Search](./context/search.schema.md) – `https://ns.adobe.com/xdm/context/search`
+* [Subscription](./context/subscription.schema.md) – `https://ns.adobe.com/xdm/context/subscription`
 * [Web Link](./context/weblink.schema.md) – `https://ns.adobe.com/xdm/context/weblink`
 
 ## /data/
@@ -149,16 +149,16 @@
 * [RDF Language Tagged String](./external/activity-streams-2/rdf-langstring.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langstring`
 * [JSON-LD `@type`](./external/activity-streams-2/type.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/type`
 
-## /external/hal/
-
-* [HAL Link](./external/hal/hal-link.schema.md) – `https://ns.adobe.com/xdm/external/hal/link`
-* [HAL Resource](./external/hal/hal.schema.md) – `https://ns.adobe.com/xdm/external/hal/resource`
-
 ## /external/schema/
 
 * [Geo Circle](./external/schema/geocircle.schema.md) – `http://schema.org/GeoCircle`
 * [Geo Coordinates](./external/schema/geocoordinates.schema.md) – `http://schema.org/GeoCoordinates`
 * [Geo Shape](./external/schema/geoshape.schema.md) – `http://schema.org/GeoShape`
+
+## /external/hal/
+
+* [HAL Link](./external/hal/hal-link.schema.md) – `https://ns.adobe.com/xdm/external/hal/link`
+* [HAL Resource](./external/hal/hal.schema.md) – `https://ns.adobe.com/xdm/external/hal/resource`
 
 ## /external/repo/
 

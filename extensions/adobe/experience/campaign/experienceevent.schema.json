@@ -118,13 +118,13 @@
         "https://ns.adobe.com/experience/campaign/message/from": {
           "title": "From",
           "type": "string",
-          "description": "Address used as a from/sender/caller address. Depending on the communication channel, the `address` has a different format.  * `email`: an email address.  * `textMessage` or `phone`: a shortcode or phone number.",
+          "description": "Address used as a from/sender/caller address. Depending on the communication channel, the `address` has a different format.\n * `email`: an email address.\n * `textMessage` or `phone`: a shortcode or phone number.",
           "maxLength": 255
         },
         "https://ns.adobe.com/experience/campaign/message/to": {
           "title": "To",
           "type": "string",
-          "description": "Address used to deliver the message to the recipient. Depending on the communication channel, the `address` has a different format.   * `email`: an email address.  * `textMessage` or `phone`: a phone number.  * `directMail`: a postal address.  * `pushNotification`: a push registration token.",
+          "description": "Address used to deliver the message to the recipient. Depending on the communication channel, the `address` has a different format.\n * `email`: an email address.\n * `textMessage` or `phone`: a phone number.\n * `directMail`: a postal address.\n * `pushNotification`: a push registration token.",
           "maxLength": 255
         },
         "https://ns.adobe.com/experience/campaign/message/quarantine": {
@@ -160,7 +160,7 @@
         "https://ns.adobe.com/experience/campaign/message/size": {
           "title": "Size (Bytes)",
           "type": "integer",
-          "description": "Size in bytes of the message. * For email, the `size` reflects the all MIME envelop of the message, including the encoded attachments if any. * For SMS, the `size` reflects the number of bytes necessary to deliver the message. If that number is over 160 the message will be delivered over more than one SMS.",
+          "description": "Size in bytes of the message.\n * For email, the `size` reflects the all MIME envelop of the message, including the encoded attachments if any.\n * For SMS, the `size` reflects the number of bytes necessary to deliver the message. If that number is over 160 the message will be delivered over more than one SMS.",
           "minimum": 0,
           "maximum": 2147483647
         },
@@ -173,7 +173,7 @@
         "https://ns.adobe.com/experience/campaign/message/variant": {
           "title": "Variant",
           "type": "string",
-          "description": "A campaign activity can have multiple variants (French, English) but a message delivered to a recipient always contains one of them. > IMPORTANT: Using the mirror page, the recipient can switch from one variant to another (ex: switch of the language)."
+          "description": "A campaign activity can have multiple variants (French, English) but a message delivered to a recipient always contains one of them.\n > IMPORTANT: Using the mirror page, the recipient can switch from one variant to another (ex: switch of the language)."
         },
         "https://ns.adobe.com/experience/campaign/message/ip": {
           "title": "IP Address",

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Generate master list of URL namespaces found within the project. 
 # Steps:

@@ -85,8 +85,14 @@
       "schema:longitude": 139.73237
     }
   },
+  "xdm:marketing": {
+    "xdm:tracking": {
+      "xdm:code": "KKQWX",
+      "@type": "https://ns.adobe.com/xdm/campaign/campaign",
+      "@id": "https://data.adobe.io/campaigns/campaign-156651"
+    }
+  },
   "xdm:referral": {
-    "xdm:trackingCode": "KKQWX",
     "xdm:URL": "https://www.adobe.com/creativecloud/plans.html",
     "@id": "https://www.adobe.com/creativecloud/plans.html#teams",
     "@type": "https://ns.adobe.com/xdm/context/referral/internal-search",

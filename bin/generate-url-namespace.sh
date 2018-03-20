@@ -7,6 +7,6 @@
 #   (3) Sort resulting entries and ensure uniqueness
 #
 
-find . -path ./node_modules -prune -o -type f -exec egrep -o 'https?://[^][ `)"]+' /dev/null {} \; \
+find schemas -path ./node_modules -prune -o -type f -exec egrep -o 'https?://[^][ `)"]+' /dev/null {} \; \
   | awk '{sub(/:http/," http");$1=$1;print $2}' \
   | sort -u

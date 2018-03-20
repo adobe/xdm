@@ -34,7 +34,7 @@ The geographic coordinates of a place. Based on [schema.org](http://schema.org/G
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
-### Coordinates Id
+### Coordinates ID
 
 The unique identifier of the coordinates.
 

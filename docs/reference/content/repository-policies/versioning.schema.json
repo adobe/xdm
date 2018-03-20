@@ -29,6 +29,7 @@
     },
     "type": "object",
     "$ref": "#/definitions/versioning",
+    "meta:status": "experimental",
     "examples": [
         {
             "xdm:retentionTime": 60,

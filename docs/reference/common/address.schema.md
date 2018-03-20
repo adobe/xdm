@@ -69,7 +69,7 @@ A postal address. Address could relate to a person&#39;s home, work, preferred s
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
-### Coordinates Id
+### Coordinates ID
 
 The unique identifier of the coordinates.
 
@@ -325,7 +325,7 @@ The date that the address was last verified as still belonging to the person.
 ### Modified by Batch Identifier
 
 The last Data Set Files in Catalog Services which has modified the entity.
-At creation time, `modifiedByBatchId` is set as `createdByBatchId`.
+At creation time, `modifiedByBatchID` is set as `createdByBatchID`.
 
 
 `xdm:modifiedByBatchID`

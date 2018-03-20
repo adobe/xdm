@@ -15,7 +15,7 @@
         "geocoordinates": {
             "properties": {
                 "@id": {
-                    "title": "Coordinates Id",
+                    "title": "Coordinates ID",
                     "type": "string",
                     "format": "uri",
                     "description": "The unique identifier of the coordinates."
@@ -55,6 +55,7 @@
             "$ref": "#/definitions/geocoordinates"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "@id": "https://ns.adobe.com/entities/geo/111",

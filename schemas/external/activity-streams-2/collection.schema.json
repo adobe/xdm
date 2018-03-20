@@ -84,5 +84,6 @@
       "$ref": "#/definitions/extra-properties"
     }
   ],
-  "title": "Collection"
+  "title": "Collection",
+  "meta:status": "experimental"
 }

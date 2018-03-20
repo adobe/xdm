@@ -1083,7 +1083,7 @@ Unknown type ``.
       "id": {
         "type": "string",
         "title": "External ID",
-        "description": "An Id under which external systems track the asset."
+        "description": "An ID under which external systems track the asset."
       }
     },
     "simpletype": "complex"

@@ -167,5 +167,6 @@
     {
       "required": ["id", "xdm:tenant", "xdm:application", "xdm:environment"]
     }
-  ]
+  ],
+  "meta:status": "experimental"
 }

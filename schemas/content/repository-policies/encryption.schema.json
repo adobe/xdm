@@ -38,5 +38,6 @@
       }
     }
   },
-  "$ref": "#/definitions/encryption"
+  "$ref": "#/definitions/encryption",
+  "meta:status": "experimental"
 }

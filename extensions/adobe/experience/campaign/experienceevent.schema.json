@@ -107,7 +107,7 @@
         "https://ns.adobe.com/experience/campaign/message/delivery/template/type": {
           "title": "Object Type",
           "type": "string",
-          "description": "Type of the referenced entity (e.g., Event, Activity, ...). The `type` MUST be set when the reference is ambiguous. For instance in an `Event`, the `context` property is a reference to different entities depending on the type of the event."
+          "description": "Type of the referenced entity (e.g., Event, Activity, …). The `type` MUST be set when the reference is ambiguous. For instance in an `Event`, the `context` property is a reference to different entities depending on the type of the event."
         },
         "https://ns.adobe.com/experience/campaign/message/delivery/testenabled": {
           "title": "Test Enabled",

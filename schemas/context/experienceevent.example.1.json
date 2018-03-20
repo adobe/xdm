@@ -85,7 +85,31 @@
       "schema:longitude": 139.73237
     }
   },
-  "xdm:marketing": {
-    "xdm:trackingCode": "marketingcampaign111"
+  "xdm:referral": {
+    "xdm:trackingCode": "KKQWX",
+    "xdm:URL": "https://www.adobe.com/creativecloud/plans.html",
+    "@id": "https://www.adobe.com/creativecloud/plans.html#teams",
+    "@type": "https://ns.adobe.com/xdm/context/referral/internal-search",
+    "xdm:keyword": "Small Business",
+    "xdm:channel": "https://ns.adobe.com/xdm/channels/web",
+    "xdm:property": {
+      "@id": "https://www.adobe.com/",
+      "xdm:name": "Adobe.com"
+    }
+  },
+  "xdm:channelLocation": {
+    "xdm:channel": "https://ns.adobe.com/xdm/channels/web",
+    "@id": "https://www.adobe.com/creativecloud/business.html",
+    "xdm:URL": "https://www.adobe.com/creativecloud/business.html",
+    "xdm:section": {
+      "@id": "https://www.adobe.com/creativecloud/business.html",
+      "xdm:name": "Business Solutions"
+    },
+    "xdm:property": {
+      "@id": "https://www.adobe.com/",
+      "xdm:name": "Adobe.com"
+    },
+    "xdm:error": false,
+    "xdm:home": false
   }
 }

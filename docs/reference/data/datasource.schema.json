@@ -44,6 +44,7 @@
             "$ref": "#/definitions/datasource"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "@id": "https://data.adobe.io/datasources/datasource-123",

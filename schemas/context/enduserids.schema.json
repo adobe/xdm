@@ -19,9 +19,14 @@
       "description": "A unique identifier from Adobe Marketing Cloud."
     },
     "https://ns.adobe.com/experience/analytics": {
-      "title": "Adobe Analytics Cloud End User Ids",
+      "title": "Adobe Analytics Cloud End User IDs",
       "$ref": "https://ns.adobe.com/xdm/context/identity",
-      "description": "Adobe Analytics Cloud extension to End User Ids."
+      "description": "Adobe Analytics Cloud extension to End User IDs."
+    },
+    "https://ns.adobe.com/experience/tntid": {
+      "title": "Adobe Target End User IDs",
+      "$ref": "https://ns.adobe.com/xdm/context/identity",
+      "description": "Adobe Target extension to End User IDs."
     }
   },
   "meta:keys": {
@@ -38,5 +43,6 @@
       "type": "object",
       "$ref": "https://ns.adobe.com/xdm/context/identity"
     }
-  }
+  },
+  "meta:status": "experimental"
 }

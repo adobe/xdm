@@ -99,6 +99,7 @@
             "$ref": "#/definitions/address"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "@id": "https://ns.adobe.com/entities/address/123",

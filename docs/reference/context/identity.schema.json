@@ -37,6 +37,7 @@
             "$ref": "#/definitions/identity"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "@id": "https://ns.adobe.com/entities/identity/id123",

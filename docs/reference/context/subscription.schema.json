@@ -90,7 +90,7 @@
                     "type": "string",
                     "description": "The current status of the subscription."
                 },
-                "xdm:contractId": {
+                "xdm:contractID": {
                     "title": "Contract ID",
                     "type": "string",
                     "description": "Unique ID for the contract that governs this subscription."
@@ -149,6 +149,7 @@
             "$ref": "#/definitions/subscription"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "@id": "https://data.adobe.io/subscriptionid-123",

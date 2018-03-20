@@ -237,5 +237,6 @@
     }
   },
   "type": "object",
-  "title": "JSON-LD `@context`"
+  "title": "JSON-LD `@context`",
+  "meta:status": "experimental"
 }

@@ -84,5 +84,6 @@
     {
       "$ref": "#/definitions/metrics"
     }
-  ]
+  ],
+  "meta:status": "experimental"
 }

@@ -104,5 +104,6 @@
     {
       "$ref": "#/definitions/hal-link-common"
     }
-  ]
+  ],
+  "meta:status": "experimental"
 }

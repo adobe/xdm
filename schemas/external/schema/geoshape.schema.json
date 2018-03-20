@@ -14,7 +14,7 @@
     "geoshape": {
       "properties": {
         "@id": {
-          "title": "Shape Id",
+          "title": "Shape ID",
           "type": "string",
           "description": "The unique identifier of the shape."
         },
@@ -67,5 +67,6 @@
     {
       "$ref": "#/definitions/geoshape"
     }
-  ]
+  ],
+  "meta:status": "experimental"
 }

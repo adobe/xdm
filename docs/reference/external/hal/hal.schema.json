@@ -278,6 +278,7 @@
             "$ref": "#/definitions/hal"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "_links": {

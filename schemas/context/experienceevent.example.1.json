@@ -48,16 +48,16 @@
     "xdm:connectionType": "cable"
   },
   "xdm:metrics": {
-  "https://ns.adobe.com/xdm/data/metrics/commerce/purchases": {
-    "xdm:value": 1.0,
-    "xdm:unit": null
+    "https://ns.adobe.com/xdm/data/metrics/commerce/purchases": {
+      "xdm:value": 1.0,
+      "xdm:unit": null
+    },
+    "https://ns.adobe.com/xdm/data/metrics/web/page-views": {
+      "@type": "https://ns.adobe.com/xdm/data/metrics/web/page-views",
+      "xdm:value": 1.0,
+      "xdm:unit": null
+    }
   },
-  "https://ns.adobe.com/xdm/data/metrics/web/page-views": {
-    "@type": "https://ns.adobe.com/xdm/data/metrics/web/page-views",
-    "xdm:value": 1.0,
-    "xdm:unit": null
-  }
-},
   "xdm:productListItems": [
     {
       "xdm:SKU": "1002352692",
@@ -65,7 +65,7 @@
       "xdm:name": "24-Watt 8-Light Chrome Integrated LED Bath Light",
       "xdm:currencyCode": "USD",
       "xdm:quantity": 1,
-      "xdm:priceTotal": 159.00
+      "xdm:priceTotal": 159.0
     }
   ],
   "xdm:commerce": {
@@ -75,19 +75,19 @@
       "xdm:payments": [
         {
           "xdm:transactionID": "transactid-a111",
-          "xdm:paymentAmount": 59.00,
+          "xdm:paymentAmount": 59.0,
           "xdm:paymentType": "credit_card",
           "xdm:currencyCode": "USD"
         },
         {
           "xdm:transactionId": "transactid-a222",
-          "xdm:paymentAmount": 100.00,
+          "xdm:paymentAmount": 100.0,
           "xdm:paymentType": "gift_card",
           "xdm:currencyCode": "USD"
         }
       ],
       "xdm:currencyCode": "USD",
-      "xdm:priceTotal": 159.00
+      "xdm:priceTotal": 159.0
     }
   },
   "xdm:locationContext": {

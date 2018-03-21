@@ -16,7 +16,7 @@ const $ = require("shelljs")
 const exec = require('child_process').exec
 
 const META_STATUS = "meta:status"
-const TRIVIAL_CHANGE_MATCHERS = ["\[.*trivial.*\]","\[.*ci skip.*\]"]
+const TRIVIAL_CHANGE_MATCHERS = ["\\[.*trivial.*\\]","\\[.*ci skip.*\\]"]
 
 async function getListOfSchemas() {
   return schemas = $.find("schemas").filter(name => { return name.match(/.*\.schema\.json$/)})

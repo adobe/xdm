@@ -84,6 +84,7 @@
             "$ref": "#/definitions/metrics"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "https://ns.adobe.com/xdm/data/metrics/direct-marketing/sends": {

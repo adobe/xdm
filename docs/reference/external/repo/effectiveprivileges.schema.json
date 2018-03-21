@@ -42,6 +42,7 @@
             "$ref": "#/definitions/effectiveprivileges"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "*": [

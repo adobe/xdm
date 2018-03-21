@@ -75,5 +75,6 @@
     {
       "$ref": "#/definitions/resource-event"
     }
-  ]
+  ],
+  "meta:status": "experimental"
 }

@@ -9,8 +9,8 @@
     "@id": "D13A1E7053E46A220A4C86E1@AdobeID"
   },
   "activitystreams:generator": {
-    "@type": "https://ns.adobe.com/xdm/services",
-    "@id": "creative-cloud"
+    "@type": "https://ns.adobe.com/xdm/content/repository",
+    "xdm:root": "https://cc-api-storage-stage.adobe.io/"
   },
   "activitystreams:actor": {
     "@type": "https://ns.adobe.com/xdm-extensions/ims/user",

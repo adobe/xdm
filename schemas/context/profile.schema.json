@@ -65,6 +65,11 @@
           "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
           "description": "Mobile phone number.\n"
         },
+        "xdm:faxPhone": {
+          "title": "Fax Phone",
+          "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
+          "description": "Fax phone number.\n"
+        },
         "xdm:optInOut": {
           "title": "OptInOut",
           "$ref": "https://ns.adobe.com/xdm/context/optinout",
@@ -85,6 +90,24 @@
           "type": "string",
           "description":
             "The unit ID within the organization owning the profile. This ID can be used to reference the organization details maintained in another dataset."
+        },
+        "xdm:preferredLanguage": {
+          "title": "Preferred Language",
+          "type": "string",
+          "description":
+            "Preferred Language"
+        },
+        "xdm:thumbnail": {
+          "title": "Thumbnail",
+          "type": "string",
+          "description":
+            "Link to profile's picture"
+        },
+        "xdm:emailFormat": {
+          "title": "Email Format",
+          "type": "string",
+          "description":
+            "Format of email relevant to the user"
         },
         "xdm:geoUnitID": {
           "title": "Geographical Unit Identifier",

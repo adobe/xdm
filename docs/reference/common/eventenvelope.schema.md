@@ -21,24 +21,24 @@ An `EventEnvelope` is a type of `Activity` (in the sense of [W3C Activity Stream
 
 ```json
 {
-  "@type": "http://ns.adobe.com/xdm/event/created",
-  "xdm:objectType": "http://ns.adobe.com/xdm/asset",
+  "@type": "https://ns.adobe.com/xdm/event/created",
+  "xdm:objectType": "https://ns.adobe.com/xdm/asset",
   "activitystreams:published": "2016-07-16T19:20:30+01:00",
   "@id": "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
   "activitystreams:to": {
-    "@type": "http://ns.adobe.com/xdm/IMSUser",
+    "@type": "https://ns.adobe.com/xdm/IMSUser",
     "@id": "D13A1E7053E46A220A4C86E1@AdobeID"
   },
   "activitystreams:generator": {
-    "@type": "http://ns.adobe.com/xdm/services",
+    "@type": "https://ns.adobe.com/xdm/services",
     "@id": "creative-cloud"
   },
   "activitystreams:actor": {
-    "@type": "http://ns.adobe.com/xdm/IMSUser",
+    "@type": "https://ns.adobe.com/xdm/IMSUser",
     "@id": "D13A1E7053E46A220A4C86E1@AdobeID"
   },
   "activitystreams:object": {
-    "@type": "http://ns.adobe.com/xdm/asset",
+    "@type": "https://ns.adobe.com/xdm/asset",
     "repo:assetID": "urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
     "@id": "https://cc-api-storage-stage.adobe.io/id/urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
     "xdm:name": "example.jpg",
@@ -51,50 +51,24 @@ An `EventEnvelope` is a type of `Activity` (in the sense of [W3C Activity Stream
 
 ```json
 {
-  "@type": "http://ns.adobe.com/xdm/event/created",
-  "xdm:objectType": "http://ns.adobe.com/xdm/asset",
+  "@type": "https://ns.adobe.com/xdm/event/updated",
+  "xdm:objectType": "https://ns.adobe.com/xdm/asset",
   "activitystreams:published": "2016-07-16T19:20:30+01:00",
   "@id": "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
   "activitystreams:to": {
-    "@type": "http://ns.adobe.com/xdm/IMSUser",
-    "@id": "D13A1E7053E46A220A4C86E1@AdobeID"
-  },
-  "activitystreams:generator": {
-    "@type": "http://ns.adobe.com/xdm/services",
-    "@id": "creative-cloud"
-  },
-  "activitystreams:actor": {
-    "@type": "http://ns.adobe.com/xdm/IMSUser",
-    "@id": "D13A1E7053E46A220A4C86E1@AdobeID"
-  },
-  "activitystreams:object": {
-    "@type": "http://ns.adobe.com/xdm/asset",
-    "repo:assetID": "urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
-    "@id": "https://cc-api-storage-stage.adobe.io/id/urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185"
-  }
-}
-```
-
-```json
-{
-  "@type": "http://ns.adobe.com/xdm/event/updated",
-  "xdm:objectType": "http://ns.adobe.com/xdm/asset",
-  "activitystreams:published": "2016-07-16T19:20:30+01:00",
-  "@id": "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
-  "activitystreams:to": {
-    "@type": "http://ns.adobe.com/xdm/IMSOrg",
+    "@type": "https://ns.adobe.com/xdm/IMSOrg",
     "@id": "1362"
   },
   "activitystreams:generator": {
-    "@type": "http://ns.adobe.com/xdm/aem/instance",
+    "@type": "https://ns.adobe.com/xdm/aem/instance",
     "@id": "AEM-08B3E5CE5822FC520A494229@AdobeOrg_francois.corp.adobe.com"
   },
   "activitystreams:actor": {
-    "@type": "http://ns.adobe.com/xdm/aem/user",
+    "@type": "https://ns.adobe.com/xdm/aem/user",
     "@id": "admin"
   },
   "activitystreams:object": {
-    "@type": "http://ns.adobe.com/xdm/asset",
+    "@type": "https://ns.adobe.com/xdm/asset",
     "repo:assetID": "urn:aaid:aem:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
     "@id": "https://francois.corp.adobe.com:4502/content/dam/Fx_DUKE-small.jpg",
     "xdm:name": "Fx_DUKE-small.png",
@@ -107,24 +81,50 @@ An `EventEnvelope` is a type of `Activity` (in the sense of [W3C Activity Stream
 
 ```json
 {
-  "@type": "http://ns.adobe.com/xdm/event/published",
-  "xdm:objectType": "http://ns.adobe.com/xdm/page",
+  "@type": "https://ns.adobe.com/xdm/event/created",
+  "xdm:objectType": "https://ns.adobe.com/xdm/asset",
   "activitystreams:published": "2016-07-16T19:20:30+01:00",
   "@id": "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
   "activitystreams:to": {
-    "@type": "http://ns.adobe.com/xdm/IMSOrg",
+    "@type": "https://ns.adobe.com/xdm/IMSUser",
+    "@id": "D13A1E7053E46A220A4C86E1@AdobeID"
+  },
+  "activitystreams:generator": {
+    "@type": "https://ns.adobe.com/xdm/services",
+    "@id": "creative-cloud"
+  },
+  "activitystreams:actor": {
+    "@type": "https://ns.adobe.com/xdm/IMSUser",
+    "@id": "D13A1E7053E46A220A4C86E1@AdobeID"
+  },
+  "activitystreams:object": {
+    "@type": "https://ns.adobe.com/xdm/asset",
+    "repo:assetID": "urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
+    "@id": "https://cc-api-storage-stage.adobe.io/id/urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185"
+  }
+}
+```
+
+```json
+{
+  "@type": "https://ns.adobe.com/xdm/event/published",
+  "xdm:objectType": "https://ns.adobe.com/xdm/page",
+  "activitystreams:published": "2016-07-16T19:20:30+01:00",
+  "@id": "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
+  "activitystreams:to": {
+    "@type": "https://ns.adobe.com/xdm/IMSOrg",
     "@id": "1362"
   },
   "activitystreams:generator": {
-    "@type": "http://ns.adobe.com/xdm/aem/instance",
+    "@type": "https://ns.adobe.com/xdm/aem/instance",
     "@id": "AEM-Sites-08B3E5CE5822FC520A494229@AdobeOrg1373843566"
   },
   "activitystreams:actor": {
-    "@type": "http://ns.adobe.com/xdm/aem/user",
+    "@type": "https://ns.adobe.com/xdm/aem/user",
     "@id": "admin"
   },
   "activitystreams:object": {
-    "@type": "http://ns.adobe.com/xdm/page",
+    "@type": "https://ns.adobe.com/xdm/page",
     "@id": "http://adobesummit.adobesandbox.com:4502/content/geometrixx/en/vintage.html",
     "dc:title": "Vintage Collection",
     "xdm:path": "/content/geometrixx/en/vintage.html"
@@ -134,24 +134,24 @@ An `EventEnvelope` is a type of `Activity` (in the sense of [W3C Activity Stream
 
 ```json
 {
-  "@type": "http://ns.adobe.com/xdm/event/unpublished",
-  "xdm:objectType": "http://ns.adobe.com/xdm/page",
+  "@type": "https://ns.adobe.com/xdm/event/unpublished",
+  "xdm:objectType": "https://ns.adobe.com/xdm/page",
   "activitystreams:published": "2016-07-16T19:20:30+01:00",
   "@id": "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
   "activitystreams:to": {
-    "@type": "http://ns.adobe.com/xdm/IMSOrg",
+    "@type": "https://ns.adobe.com/xdm/IMSOrg",
     "@id": "1362"
   },
   "activitystreams:generator": {
-    "@type": "http://ns.adobe.com/xdm/aem/instance",
+    "@type": "https://ns.adobe.com/xdm/aem/instance",
     "@id": "AEM-Sites-08B3E5CE5822FC520A494229@AdobeOrg1373843566"
   },
   "activitystreams:actor": {
-    "@type": "http://ns.adobe.com/xdm/aem/user",
+    "@type": "https://ns.adobe.com/xdm/aem/user",
     "@id": "admin"
   },
   "activitystreams:object": {
-    "@type": "http://ns.adobe.com/xdm/page",
+    "@type": "https://ns.adobe.com/xdm/page",
     "@id": "http://adobesummit.adobesandbox.com:4502/content/geometrixx/en/vintage.html",
     "dc:title": "Vintage Collection",
     "xdm:path": "/content/geometrixx/en/vintage.html"

@@ -1,0 +1,18 @@
+{
+  "$id": "https://ns.adobe.com/xdm-extensions/adobe/experience/campaign/campaign-extensions",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Profile Extension for Adobe Campaign",
+  "type": "object",
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/context/profile"
+  ],
+  "description": "All Profile properties specific to Adobe Campaign.",
+  "properties": {
+    "https://ns.adobe.com/experience/campaign/profile/timeZone": {
+          "title": "Time Zone",
+          "type": "string",
+          "description":
+            "Time Zone"
+      }
+  }
+}

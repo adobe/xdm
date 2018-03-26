@@ -1,0 +1,25 @@
+{
+  "$id": "https://ns.adobe.com/xdm-extensions/adobe/experience/campaign/campaign-extensions",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Address Extension for Adobe Campaign",
+  "type": "object",
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/common/address"
+  ],
+  "description": "All Address properties specific to Adobe Campaign.",
+  "properties": {
+    "https://ns.adobe.com/experience/campaign/profile/addressErrorCount": {
+          "title": "Address Error Count",
+          "type": "string",
+          "description":
+            "Number of consecutive errors when sending to this address."
+      },
+      "https://ns.adobe.com/experience/campaign/profile/addressQuality": {
+          "title": "Address Quality",
+          "type": "string",
+          "description":
+            "Address quality rating."
+      }
+
+  }
+}

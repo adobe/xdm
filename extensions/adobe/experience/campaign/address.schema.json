@@ -10,13 +10,13 @@
   "properties": {
     "https://ns.adobe.com/experience/campaign/profile/addressErrorCount": {
           "title": "Address Error Count",
-          "type": "string",
+          "type": "integer",
           "description":
             "Number of consecutive errors when sending to this address."
       },
       "https://ns.adobe.com/experience/campaign/profile/addressQuality": {
           "title": "Address Quality",
-          "type": "string",
+          "type": "integer",
           "description":
             "Address quality rating."
       }

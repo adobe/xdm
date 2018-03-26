@@ -48,12 +48,12 @@ Information that uniquely identifies an organized entity such as company, non-pr
     },
     "schema:telephone": "1-408-800-0000",
     "xdm:identifier": {
-      "https://ns.adobe.com/external/dnb": "1234",
-      "https://ns.adobe.com/external/angellist": "https://angel.co/adobe"
+      "https://ns.adobe.com/xdm/external/dnb": "1234",
+      "https://ns.adobe.com/xdm/external/angellist": "https://angel.co/adobe"
     },
     "xdm:classifier": {
-      "https://ns.adobe.com/external/sic": "1234",
-      "https://ns.adobe.com/external/naics": "1234"
+      "https://ns.adobe.com/xdm/external/sic": "1234",
+      "https://ns.adobe.com/xdm/external/naics": "1234"
     }
   }
 }
@@ -163,8 +163,8 @@ This object contains unambiguous classifiers for the organization. Each key is t
 
 ```json
 {
-  "https://ns.adobe.com/external/sic": "1234",
-  "https://ns.adobe.com/external/naics": "1234"
+  "https://ns.adobe.com/xdm/external/sic": "1234",
+  "https://ns.adobe.com/xdm/external/naics": "1234"
 }
 ```
 
@@ -195,8 +195,8 @@ This object contains unambiguous identifiers for the organization. Each key is t
 
 ```json
 {
-  "https://ns.adobe.com/external/dnb": "1234",
-  "https://ns.adobe.com/external/angellist": "https://angel.co/adobe"
+  "https://ns.adobe.com/xdm/external/dnb": "1234",
+  "https://ns.adobe.com/xdm/external/angellist": "https://angel.co/adobe"
 }
 ```
 

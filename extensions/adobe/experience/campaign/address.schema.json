@@ -16,19 +16,19 @@
   "definitions": {
     "address": {
       "properties": {
-      "https://ns.adobe.com/experience/campaign/profile/addressErrorCount": {
+        "https://ns.adobe.com/experience/campaign/profile/addressErrorCount": {
           "title": "Address Error Count",
           "type": "integer",
           "description": "Number of consecutive errors when sending to this address."
         },
-      "https://ns.adobe.com/experience/campaign/profile/addressQuality": {
+        "https://ns.adobe.com/experience/campaign/profile/addressQuality": {
           "title": "Address Quality",
           "type": "integer",
           "description": "Address quality rating."
         }      
       }
     }
-},
+  },
   "allOf": [{
     "$ref": "#/definitions/experienceevent"
   }]

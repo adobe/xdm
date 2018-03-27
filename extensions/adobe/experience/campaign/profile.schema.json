@@ -16,14 +16,14 @@
   "definitions": {
     "profile": {
       "properties": {
-      "https://ns.adobe.com/experience/campaign/profile/timeZone": {
+        "https://ns.adobe.com/experience/campaign/profile/timeZone": {
           "title": "Time Zone",
           "type": "string",
           "description": "Time Zone."
         }    
       }
     }
-},
+  },
   "allOf": [{
     "$ref": "#/definitions/experienceevent"
   }]

@@ -1,0 +1,259 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id":
+    "https://ns.adobe.com/xdm-extensions/adobe/experience/campaign/experienceevent",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Adobe Campaign ExperienceEvent Extension",
+  "type": "object",
+  "meta:extends": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "Adobe Campaign extension to ExperienceEvent.",
+  "definitions": {
+    "experienceevent": {
+      "properties": {
+        "https://ns.adobe.com/experience/campaign/message/id": {
+          "title": "Message Identifier",
+          "type": "number",
+          "description": "Adobe Campaign message's broadlog ID."
+        },
+        "https://ns.adobe.com/experience/campaign/message/profile": {
+          "title": "Profile",
+          "$ref": "https://ns.adobe.com/xdm/context/profile",
+          "description":
+            "The recipient of the message. This property is primarily used to link the message to a Profile using the EndCustomerId but it can also be used to freeze some properties of the profile at the time the message was sent."
+        },
+        "https://ns.adobe.com/experience/campaign/message/variant": {
+          "title": "Content Variant",
+          "type": "string",
+          "description":
+            "A campaign activity can have multiple variants (Multilingual or A/B testing) but a message delivered to a recipient always contains one of them.\n> IMPORTANT: In case of multilingual, the mirror page, the recipient can switch from one variant to another (ex: switch of the language)."
+        },
+        "https://ns.adobe.com/experience/campaign/message/seedMember": {
+          "title": "Seed Member",
+          "type": "boolean",
+          "default": false,
+          "description":
+            "The recipient of this message is a member of a seed list for this campaign activity."
+        },
+        "https://ns.adobe.com/experience/campaign/message/quarantine": {
+          "title": "Quarantine",
+          "type": "boolean",
+          "default": false,
+          "description":
+            "Address moved to quarantine. The quarantine is set to true when the message failed to deliver in a way that indicates that no future messages will be deliverable either to this address."
+        },
+        "https://ns.adobe.com/experience/campaign/message/proofMember": {
+          "title": "Proof Member",
+          "type": "boolean",
+          "description":
+            "The recipient of this message is a member of the proof group for this campaign activity.",
+          "default": false
+        },
+        "https://ns.adobe.com/experience/campaign/message/controlGroupMember": {
+          "title": "Control Group Member",
+          "type": "boolean",
+          "description":
+            "The recipient of this message is a member of a control group for this campaign activity. Messages to control group members are not delivered.",
+          "default": false
+        },
+        "https://ns.adobe.com/experience/campaign/message/testMember": {
+          "title": "A/B Test Member",
+          "type": "boolean",
+          "description":
+            "The recipient of this message is a member of a test group for this campaign activity.",
+          "default": false
+        },
+        "https://ns.adobe.com/experience/campaign/message/size": {
+          "title": "Size (Bytes)",
+          "type": "integer",
+          "description":
+            "Size in bytes of the message.\n* For email, the `size` reflects the all MIME envelop of the message, including the encoded attachments if any.\n* For SMS, the `size` reflects the number of bytes necessary to deliver the message.\nIf that number is over 160 the message will be delivered over more than one SMS.",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "https://ns.adobe.com/experience/campaign/message/reason": {
+          "title": "Reason",
+          "type": "integer",
+          "meta:enum": {
+            "Undefined": "Not defined",
+            "UnknownUser": "User unknown",
+            "InvalidDomain": "Invalid domain",
+            "Unreachable": "Unreachable",
+            "Disabled": "Account disabled",
+            "MailboxFull": "Mailbox full",
+            "NotConnected": "Not connected",
+            "Refused": "Refused",
+            "ErrorIgnored": "Error ignored",
+            "AddressUndefined": "Address not specified",
+            "Blacklisted": "Blacklisted address",
+            "Quarantine": "Quarantined address",
+            "Duplicate": "Duplicate",
+            "TypologyRule": "Excluded by a SQL rule",
+            "BusinessRanking": "Excluded after arbitration",
+            "Cancelled": "Delivery canceled",
+            "Quality": "Bad-quality address",
+            "Unchecked": "Unqualified address",
+            "OfferMissing": "Not eligible for the offers",
+            "OverDeliveryLimit": "Target limited in size",
+            "Expired": "Expired",
+            "TooLong": "Text too long",
+            "Untranslatable": "Character not supported by encoding",
+            "ControlGroup": "Control address"
+          },
+          "description":
+            "The reason why the message could/would not be delivered.",
+          "default": "Undefined"
+        },
+        "https://ns.adobe.com/experience/campaign/message/reasonMessage": {
+          "title": "Reason Message",
+          "type": "string",
+          "description":
+            "Reason of message delivery failure when the status is `bounce` or `nonDeliverable`."
+        },
+        "https://ns.adobe.com/experience/campaign/message/ip": {
+          "title": "IP Address",
+          "oneOf": [
+            {
+              "format": "ipv4"
+            },
+            {
+              "format": "ipv6"
+            }
+          ],
+          "description": "Outbound IP address used to deliver the message."
+        },
+        "https://ns.adobe.com/experience/campaign/delivery/id": {
+          "title": "DeliveryID",
+          "type": "integer",
+          "description": "The campaign activity originating this message."
+        },
+        "https://ns.adobe.com/experience/campaign/delivery/channel": {
+          "title": "Communication Channel",
+          "type": "string",
+          "meta:enum": {
+            "https://ns.adobe.com/xdm/channels/email": "Email",
+            "https://ns.adobe.com/xdm/channels/sms": "Mobile (SMS)",
+            "https://ns.adobe.com/xdm/channels/phone": "Phone",
+            "https://ns.adobe.com/xdm/channels/direct-mail": "Direct Mail",
+            "https://ns.adobe.com/xdm/channels/fax": "Fax",
+            "https://ns.adobe.com/xdm/channels/apns":
+              "Apple Push Notification Service",
+            "https://ns.adobe.com/xdm/channels/gcm": "Google Cloud Messaging",
+            "agency": "Agency",
+            "other": "Other"
+          },
+          "description": "The marketing channel used to execute this activity."
+        },
+        "https://ns.adobe.com/experience/campaign/campaign/id": {
+          "title": "CampaignID",
+          "type": "integer",
+          "description":
+            "The marketing campaign to which activity originating this message belongs to.."
+        },
+        "https://ns.adobe.com/experience/campaign/delivery/from": {
+          "title": "From",
+          "type": "string",
+          "description":
+            "Address used as a from/sender/caller address. Depending on the communication channel, the `address` has a different format.\n\n  * `email`: an email address.\n  * `textMessage` or `phone`: a shortcode or phone number."
+        },
+        "https://ns.adobe.com/experience/campaign/delivery/testEnabled": {
+          "title": "Test Enabled",
+          "type": "boolean",
+          "description":
+            "Specify whether campaign activity is of type A/B testing.",
+          "default": false
+        },
+        "https://ns.adobe.com/experience/campaign/delivery/messagesClass": {
+          "title": "Message Class",
+          "type": "integer",
+          "meta:enum": {
+            "oneTime": "Marketing (One Time)",
+            "continuous": "Recurring",
+            "messageCenter": "Transactional (Event-based)"
+          },
+          "description":
+            "Marketing classification of the messages sent through that delivery.\n",
+          "default": 0
+        },
+        "https://ns.adobe.com/experience/campaign/delivery/template": {
+          "title": "Template",
+          "type": "integer",
+          "description":
+            "The delivery template used to initialize this delivery.\n\nThe type the template used in Adobe Campaign can be identified using the `messageClass`.\n\n* `messageClass` = `oneTime`: the template is standard delivery template.\n* `messageClass` = `continuous`: the template is a recurring delivery.\n* `messageClass` = `transactional`: the template is a transactionnal message template.\n"
+        },
+        "https://ns.adobe.com/experience/campaign/link/id": {
+          "title": "Tracking URL ID",
+          "type": "string",
+          "description": "Unique Identifier of the Link"
+        },
+        "https://ns.adobe.com/experience/campaign/link/description": {
+          "title": "Tracking URL Description",
+          "type": "string",
+          "description": "A human-friendly description of the Link."
+        },
+        "https://ns.adobe.com/experience/campaign/link/url": {
+          "title": "URL",
+          "format": "uri",
+          "type": "string",
+          "description": "URL of the Link."
+        },
+        "https://ns.adobe.com/experience/campaign/link/occurrence": {
+          "title": "Occurrence",
+          "type": "integer",
+          "description":
+            "URL occurrence index in the content (first is 1). When the same URL is available several times in the same content, its is necessary to track which occurrence of the URL has been clicked on.",
+          "default": 1,
+          "minimum": 1,
+          "maximum": 32767
+        },
+        "https://ns.adobe.com/experience/campaign/link/tags": {
+          "title": "Tags",
+          "type": "array",
+          "description":
+            "A list of tags qualifying the link. The URL category is one of those tags.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "https://ns.adobe.com/experience/campaign/message/offerProposed": {
+          "title": "Offers",
+          "type": "array",
+          "description": "Offers displayed in the message.",
+          "items": {
+            "$ref":
+              "https://ns.adobe.com/xdm-extensions/adobe/experience/campaign/offer"
+          }
+        },
+        "https://ns.adobe.com/experience/campaign/message/offerClicked": {
+          "title": "Offer Clicked",
+          "$ref":
+            "https://ns.adobe.com/xdm-extensions/adobe/experience/campaign/offer",
+          "description":
+            "The offer and its location in the message for a click event related to an offer."
+        },
+        "https://ns.adobe.com/experience/campaign/message/externalId": {
+          "title": "External ID",
+          "type": "string",
+          "description":
+            "An ID generated by Voyager for a message to check later if the incoming experienceEvent was generated from this ID."
+        },
+        "https://ns.adobe.com/experience/campaign/businessContext": {
+          "title": "Business Context",
+          "type": "string",
+          "description":
+            "Internal field for identifying the various actions/intents from Voyager."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/experienceevent"
+    }
+  ],
+  "meta:status": "experimental"
+}

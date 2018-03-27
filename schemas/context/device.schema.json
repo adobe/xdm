@@ -27,7 +27,8 @@
           "description":
             "The namespace of the service that is used to identify the device type.",
           "meta:enum": {
-            "https://ns.adobe.com/xdm/external/deviceatlas": "Device Atlas"
+            "https://ns.adobe.com/xdm/external/deviceatlas": "Device Atlas",
+            "https://ns.adobe.com/xdm/external/proprietary": "Proprietary"
           }
         },
         "xdm:type": {

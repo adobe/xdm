@@ -1,0 +1,100 @@
+{
+  "xdm:timestamp": 1522321544448,
+  "xdm:metrics": {
+    "https://ns.adobe.com/xdm/data/metrics/web/link-clicks": {
+      "xdm:value": 1
+    }
+  },
+  "xdm:environment": {
+    "xdm:type": "browser",
+    "xdm:browserDetails": {
+      "xdm:name": "Chrome"
+    },
+    "xdm:operatingSystem": "MAC OS"
+  },
+  "xdm:device": {
+    "xdm:typeID": "IMac",
+    "xdm:typeIDService": "https://ns.adobe.com/xdm/external/proprietary"
+  },
+  "https://ns.adobe.com/experience/campaign/message": {
+    "id": 10000,
+    "profile": {
+      "xdm:person": {
+        "xdm:birthMonth": 1,
+        "xdm:birthDay": 3,
+        "xdm:birthYear": 1996,
+        "xdm:gender": "female"
+      },
+      "xdm:workAddress": {
+        "@id": "https://ns.adobe.com/entities/address/123",
+        "xdm:primary": true,
+        "xdm:city": "San Jose",
+        "xdm:stateProvinceISO": "CA",
+        "xdm:postalCode": "95110",
+        "xdm:countryCode": "US"
+      },
+      "xdm:workEmail": {
+        "xdm:primary": true,
+        "xdm:address": "jsmith@xyzinc.com"
+      }
+    },
+    "variant": "English",
+    "seedMember": false,
+    "quarantine": false,
+    "proofMember": false,
+    "controlGroupMember": false,
+    "testMember": true,
+    "ip": "10.20.30.40",
+    "offerProposed": [
+      {
+        "id": 1234,
+        "name": "50-percent-off",
+        "activityId": 1357,
+        "activityName": "major-banner",
+        "placementId": 2,
+        "placementName": "top"
+      },
+      {
+        "id": 1235,
+        "name": "bogo",
+        "activityId": 1357,
+        "activityName": "major-banner",
+        "placementId": 3,
+        "placementName": "sidebar"
+      }
+    ],
+    "offerClicked": {
+      "id": 1234,
+      "name": "50-percent-off",
+      "activityId": 1357,
+      "activityName": "major-banner",
+      "placementId": 2,
+      "placementName": "top"
+    }
+  },
+  "https://ns.adobe.com/experience/campaign/delivery": {
+    "id": 1001,
+    "channel": "https://ns.adobe.com/xdm/channels/email",
+    "from": "no-reply@adobe.com",
+    "testEnabled": true,
+    "messageClass": "messageCenter",
+    "template": 1100
+  },
+  "https://ns.adobe.com/experience/campaign/link": {
+    "id": "98765",
+    "url": "https://newsletters.adobe.com/newsletter/101/mastering-xdm.html",
+    "occurrence": 2,
+    "tags": [
+      {
+        "name": "category",
+        "value": "Promotional Links"
+      },
+      {
+        "name": "label",
+        "value": "XDM information"
+      }
+    ]
+  },
+  "externalId": "uuid:00112233-4455-6677-8899-AABBCCDDEEFF",
+  "businessContext": "store-entry-beacon-triggered"
+}

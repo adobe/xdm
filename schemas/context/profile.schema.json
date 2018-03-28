@@ -94,20 +94,23 @@
         "xdm:preferredLanguage": {
           "title": "Preferred Language",
           "type": "string",
-          "description":
-            "Preferred Language"
+          "description": "Preferred language based on ISO-639-1 format"
         },
-        "xdm:thumbnail": {
-          "title": "Thumbnail",
+        "xdm:profilePictureLink": {
+          "title": "Profile Picture Link",
           "type": "string",
-          "description":
-            "Link to profile's picture"
+          "description": "Link to profile's picture"
         },
         "xdm:emailFormat": {
           "title": "Email Format",
           "type": "string",
-          "description":
-            "Format of email relevant to the user"
+          "description": "Email format relevant to the user. This can be HTML/Text/Unknown",
+          "default": "unknown",
+          "meta:enum": {
+            "html": "HTML",
+            "text": "Text",
+            "unknown": "Unknown"
+          }
         },
         "xdm:geoUnitID": {
           "title": "Geographical Unit Identifier",

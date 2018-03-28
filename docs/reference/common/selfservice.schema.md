@@ -2,7 +2,7 @@
 # Customer Managed Environment Schema
 
 ```
-https://ns.adobe.com/xdm/selfservice
+https://ns.adobe.com/xdm/common/selfservice
 ```
 
 A Customer Managed Environment is an environment that allows a system integration or deployer to manage applications. This is also known as selfservice.

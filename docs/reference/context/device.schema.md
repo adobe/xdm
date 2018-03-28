@@ -15,7 +15,7 @@ An identified device that is an application or browser instance that is trackabl
 ```json
 {
   "xdm:typeID": "TypeIdentifier-111",
-  "xdm:typeIDService": "https://ns.adobe.com/external/deviceatlas",
+  "xdm:typeIDService": "https://ns.adobe.com/xdm/external/deviceatlas",
   "xdm:type": "mobile",
   "xdm:manufacturer": "Apple",
   "xdm:model": "iPhone 6",
@@ -234,7 +234,7 @@ The namespace of the service that is used to identify the device type.
 ### xdm:typeIDService Known Values
 | Value | Description |
 |-------|-------------|
-| `https://ns.adobe.com/external/deviceatlas` | Device Atlas |
+| `https://ns.adobe.com/xdm/external/deviceatlas` | Device Atlas |
 
 
 

@@ -36,7 +36,7 @@ Componentized pages are modular (consist of smaller content components), hyperli
     "type": "https://francois.corp.adobe.com:4502/apps/foundation/teaser",
     "title": "Sunglasses",
     "image": {
-      "@type": "http://ns.adobe.com/xdm/assets/asset",
+      "@type": "https://ns.adobe.com/xdm/assets/asset",
       "repo:assetID": "urn:aaid:aem:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
       "@id": "https://francois.corp.adobe.com:4502/content/dam/Fx_DUKE-small.jpg"
     }
@@ -56,7 +56,7 @@ Componentized pages are modular (consist of smaller content components), hyperli
       "image0": {
         "type": "https://francois.corp.adobe.com:4502/apps/foundation/image",
         "image": {
-          "@type": "http://ns.adobe.com/xdm/assets/asset",
+          "@type": "https://ns.adobe.com/xdm/assets/asset",
           "asset_id": "urn:aaid:aem:4123ba4c-93a8-4c5d-b979-1234e4318185",
           "id": "https://francois.corp.adobe.com:4502/content/dam/Glasses-small.jpg"
         }

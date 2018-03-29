@@ -13,23 +13,17 @@
 const path = require('path')
 const fs = require('fs')
 const $ = require("shelljs")
-const exec = require('child_process').exec
 
 const META_STATUS = "meta:status"
 const TRIVIAL_CHANGE_MATCHERS = ["\\[.*trivial.*\\]","\\[.*ci skip.*\\]"]
 
-async function getListOfSchemas() {
+function getListOfSchemas() {
   return schemas = $.find("schemas").filter(name => { return name.match(/.*\.schema\.json$/)})
 }
 
 // Promisfy `ChildProcess.exec` used to run git commands
 function execp(command, opts) {
-  return new Promise( (resolve, reject) => {
-    var child = exec(command, opts, (err, stdout, stderr) => {
-      if (err) { reject(err) }
-      else { resolve(stdout) }
-    })
-  })
+  return $.exec(command).output
 }
 
 // Pull the current _local_ value of `meta:status` for a given schema
@@ -45,19 +39,19 @@ function getStatusOfSchema(schema) {
 }
 
 // Determine the git commit revision for a given schema's `meta:status`
-async function getGitState(schema) {
+function getGitState(schema) {
   let status = getStatusOfSchema(schema)
-  console.debug(`\t-> ${status} -- ${schema}`)
-  let git_output = await execp(`git log -1 --decorate=auto --oneline -S ${META_STATUS} ${schema}`)
+  console.log(`\t-> ${status} -- ${schema}`)
+  let git_output = execp(`git log -1 --decorate=auto --oneline -S ${META_STATUS} ${schema}`)
   let git_commits = git_output.trim().split('\n')
-  console.debug(`\t\tGit State Commit: ${git_output.trim()}`)
+  console.log(`\t\tGit State Commit: ${git_output.trim()}`)
   let git_latest_revision = git_commits[0]
   let commit_raw = git_latest_revision.split(' ')
   let commit_rev = commit_raw[0]
   let commit_msg = commit_raw.splice(1).join(' ')
-  let commit_date = new Date(await execp(`git log -1 -s --format=%ct ${commit_rev}`)*1000)
+  let commit_date = new Date(execp(`git log -1 -s --format=%ct ${commit_rev}`)*1000)
   return {
-    commits: await getSchemaChangesSinceRevision(schema, commit_rev),
+    commits: getSchemaChangesSinceRevision(schema, commit_rev),
     latest: {
       status: status,
       revision: commit_rev,
@@ -75,16 +69,16 @@ function signifiesTrivialChange(message) {
 }
 
 // Create a detailed list of all revisions to a schema since a specific revision
-async function getSchemaChangesSinceRevision(schema, revision) {
+function getSchemaChangesSinceRevision(schema, revision) {
   let commits = []
-  let git_output = await execp(`git rev-list ${revision}^..HEAD ${schema}`)
+  let git_output = execp(`git rev-list ${revision}^..HEAD ${schema}`)
   let git_revisions = git_output.trim().split('\n')
-  console.debug(`\t\tGit Revisions: ${JSON.stringify(git_revisions)}`)
+  console.log(`\t\tGit Revisions: ${JSON.stringify(git_revisions)}`)
   for (idx in git_revisions) {
     let rev_id = git_revisions[idx]
-    let rev_desc = (await execp(`git log -1 --decorate=auto --oneline ${rev_id}`)).trim()
+    let rev_desc = (execp(`git log -1 --decorate=auto --oneline ${rev_id}`)).trim()
     let rev_msg = rev_desc.split(' ').splice(1).join(' ')
-    let rev_date = new Date(await execp(`git log -1 -s --format=%ct ${rev_id}`)*1000)
+    let rev_date = new Date(execp(`git log -1 -s --format=%ct ${rev_id}`)*1000)
     commits.push({
       id: rev_id,
       desc: rev_desc,
@@ -153,20 +147,20 @@ function generateMarkdownTable(schemaDetailMap) {
 }
 
 // Main entrypoint
-async function main() {
+function main() {
   let schemaDetailMap = {}
   
   // Get list of schemas
-  let foundSchemas = await getListOfSchemas()
-  console.debug(`Found ${foundSchemas.length} schemas`)
+  let foundSchemas = getListOfSchemas()
+  console.log(`Found ${foundSchemas.length} schemas`)
   
   // Analyze each schema
   for (idx in foundSchemas) {
     let schema = foundSchemas[idx]
-    schemaDetailMap[schema] = await getGitState(schema)
+    schemaDetailMap[schema] = getGitState(schema)
   }
 
-  console.debug(`Found schema details: ${JSON.stringify(schemaDetailMap, null, '\t')}`)
+  console.log(`Found schema details: ${JSON.stringify(schemaDetailMap, null, '\t')}`)
   
   // Build table rows for each schema generate output in markdown format
   let schemaTable = generateMarkdownTable(schemaDetailMap)

@@ -22,8 +22,8 @@ function getListOfSchemas() {
 }
 
 // Promisfy `ChildProcess.exec` used to run git commands
-function execp(command, opts) {
-  return $.exec(command).output
+function execp(command) {
+  return $.exec(command, { silent: true }).output
 }
 
 // Pull the current _local_ value of `meta:status` for a given schema
@@ -41,10 +41,10 @@ function getStatusOfSchema(schema) {
 // Determine the git commit revision for a given schema's `meta:status`
 function getGitState(schema) {
   let status = getStatusOfSchema(schema)
-  console.log(`\t-> ${status} -- ${schema}`)
+  //console.log(`\t-> ${status} -- ${schema}`)
   let git_output = execp(`git log -1 --decorate=auto --oneline -S ${META_STATUS} ${schema}`)
   let git_commits = git_output.trim().split('\n')
-  console.log(`\t\tGit State Commit: ${git_output.trim()}`)
+  //console.log(`\t\tGit State Commit: ${git_output.trim()}`)
   let git_latest_revision = git_commits[0]
   let commit_raw = git_latest_revision.split(' ')
   let commit_rev = commit_raw[0]
@@ -73,7 +73,7 @@ function getSchemaChangesSinceRevision(schema, revision) {
   let commits = []
   let git_output = execp(`git rev-list ${revision}^..HEAD ${schema}`)
   let git_revisions = git_output.trim().split('\n')
-  console.log(`\t\tGit Revisions: ${JSON.stringify(git_revisions)}`)
+  //console.log(`\t\tGit Revisions: ${JSON.stringify(git_revisions)}`)
   for (idx in git_revisions) {
     let rev_id = git_revisions[idx]
     let rev_desc = (execp(`git log -1 --decorate=auto --oneline ${rev_id}`)).trim()
@@ -119,12 +119,6 @@ function buildGitLog(commits) {
   return `<code>${log.trim()}</code>`
 }
 
-// Build filename with current date - ex: `stabilization_candidates_2099-01-29-13-59-59.md`
-function buildOutputFilename() {
-  let cur_date = new Date()
-  return `stabilization_candidates_${cur_date.getFullYear()}-${cur_date.getMonth()+1}-${cur_date.getDate()}-${cur_date.getHours()}-${cur_date.getMinutes()}-${cur_date.getSeconds()}.md`
-}
-
 // Generate markdown table for all schemas + revision details
 function generateMarkdownTable(schemaDetailMap) {
   let keys = Object.keys(schemaDetailMap).sort()
@@ -152,7 +146,7 @@ function main() {
   
   // Get list of schemas
   let foundSchemas = getListOfSchemas()
-  console.log(`Found ${foundSchemas.length} schemas`)
+  //console.log(`Found ${foundSchemas.length} schemas`)
   
   // Analyze each schema
   for (idx in foundSchemas) {
@@ -160,16 +154,11 @@ function main() {
     schemaDetailMap[schema] = getGitState(schema)
   }
 
-  console.log(`Found schema details: ${JSON.stringify(schemaDetailMap, null, '\t')}`)
+  //console.log(`Found schema details: ${JSON.stringify(schemaDetailMap, null, '\t')}`)
   
   // Build table rows for each schema generate output in markdown format
   let schemaTable = generateMarkdownTable(schemaDetailMap)
-  
-  // Save output
-  let outfile = buildOutputFilename()
-  fs.writeFileSync(outfile, buildOutputBody())
-
-  console.log(`Wrote schema candidate markdown to ${outfile}`)
+  console.log(buildOutputBody(schemaTable))
 }
 
 main()

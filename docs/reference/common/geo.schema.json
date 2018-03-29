@@ -68,7 +68,7 @@
     "meta:status": "experimental",
     "examples": [
         {
-            "@id": "https://ns.adobe.com/entities/geo/tokyo",
+            "@id": "https://data.adobe.io/entities/geo/tokyo",
             "xdm:countryCode": "JP",
             "xdm:stateProvince": "Tōkyō-to",
             "xdm:city": "Tōkyō",
@@ -77,7 +77,7 @@
             "schema:longitude": 139.73237
         },
         {
-            "@id": "https://ns.adobe.com/entities/geo/potsdam",
+            "@id": "https://data.adobe.io/entities/geo/potsdam",
             "xdm:countryCode": "DE",
             "xdm:stateProvince": "Brandenburg",
             "xdm:city": "Potsdam",

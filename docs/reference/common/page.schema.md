@@ -19,7 +19,6 @@ Page information for paginated resource list operations.
   "orderBy": "id",
   "start": "123",
   "next": "789",
-  "type": "image/jpeg",
   "count": 100
 }
 ```
@@ -29,6 +28,7 @@ Page information for paginated resource list operations.
   "orderBy": "id",
   "start": "123",
   "next": "789",
+  "type": "image/jpeg",
   "count": 100
 }
 ```

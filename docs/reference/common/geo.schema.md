@@ -20,7 +20,7 @@ The geographic related data where an event was observed.
 
 ```json
 {
-  "@id": "https://ns.adobe.com/entities/geo/tokyo",
+  "@id": "https://data.adobe.io/entities/geo/tokyo",
   "xdm:countryCode": "JP",
   "xdm:stateProvince": "Tōkyō-to",
   "xdm:city": "Tōkyō",
@@ -32,7 +32,7 @@ The geographic related data where an event was observed.
 
 ```json
 {
-  "@id": "https://ns.adobe.com/entities/geo/potsdam",
+  "@id": "https://data.adobe.io/entities/geo/potsdam",
   "xdm:countryCode": "DE",
   "xdm:stateProvince": "Brandenburg",
   "xdm:city": "Potsdam",

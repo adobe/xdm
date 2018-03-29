@@ -44,7 +44,7 @@
     "proofMember": false,
     "controlGroupMember": false,
     "testMember": true,
-    "ip": "10.20.30.40",
+    "outboundIP": "10.20.30.40",
     "offerProposed": [
       {
         "id": 1234,
@@ -78,7 +78,7 @@
     "from": "no-reply@adobe.com",
     "testEnabled": true,
     "messageClass": "messageCenter",
-    "template": 1100
+    "templateID": 1100
   },
   "https://ns.adobe.com/experience/campaign/link": {
     "id": "98765",

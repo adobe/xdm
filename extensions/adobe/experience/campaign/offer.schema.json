@@ -7,17 +7,17 @@
   ],
   "$id": "https://ns.adobe.com/xdm-extensions/adobe/experience/campaign/offer",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Offer Placement",
+  "title": "Offer",
   "type": "object",
   "description":
-    "The Offer Placement represents the instance of an offer displayed in a message.",
+    "This represents the instance of an offer displayed in a message.",
   "definitions": {
     "offer": {
       "properties": {
         "https://ns.adobe.com/experience/campaign/offer/id": {
           "title": "Offer ID",
           "type": "integer",
-          "description": "Unique identifier of the offer.",
+          "description": "Identifier of the offer.",
           "minimum": 0,
           "maximum": 2147483647
         },
@@ -30,7 +30,7 @@
           "title": "Activity ID",
           "type": "integer",
           "description":
-            "Unique identifier of the offer activity in the Offer Service.",
+            "Identifier of the offer activity in the Offer Service.",
           "minimum": 0,
           "maximum": 2147483647
         },
@@ -42,7 +42,7 @@
         "https://ns.adobe.com/experience/campaign/offer/placementId": {
           "title": "Placement ID",
           "type": "integer",
-          "description": "Unique identifier of the placement of the offer.",
+          "description": "Identifier of the placement of the offer.",
           "minimum": 0,
           "maximum": 2147483647
         },

@@ -107,7 +107,7 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
   "xdm:locationContext": {
     "xdm:localTime": "2001-07-04T12:08:56+01:00",
     "xdm:geo": {
-      "@id": "https://ns.adobe.com/entities/geo/tokyo",
+      "@id": "https://data.adobe.io/entities/geo/tokyo",
       "xdm:countryCode": "JP",
       "xdm:stateProvince": "Tōkyō-to",
       "xdm:city": "Tōkyō",

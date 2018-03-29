@@ -25,7 +25,7 @@ A place in the real world with a physical location.
   "@id": "https://data.adobe.io/entities/places/locationid-123456",
   "schema:description": "A nice place to work",
   "xdm:address": {
-    "@id": "https://ns.adobe.com/entities/address/123",
+    "@id": "https://data.adobe.io/entities/address/123",
     "xdm:primary": false,
     "xdm:street1": "345 Park Ave",
     "xdm:city": "San Jose",

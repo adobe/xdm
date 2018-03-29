@@ -19,9 +19,9 @@ Identity is used to clearly distinguish people that are interacting with digital
 ## Identity Example
 ```json
 {
-  "@id": "https://ns.adobe.com/entities/identity/id123",
+  "@id": "https://data.adobe.io/entities/identity/id123",
   "xdm:namespace": {
-    "@id": "https://ns.adobe.com/entities/namespace/12345",
+    "@id": "https://data.adobe.io/entities/namespace/12345",
     "xdm:code": "AA12345"
   }
 }

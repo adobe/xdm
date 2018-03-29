@@ -21,7 +21,7 @@ A postal address. Address could relate to a person&#39;s home, work, preferred s
 ## Address Example
 ```json
 {
-  "@id": "https://ns.adobe.com/entities/address/123",
+  "@id": "https://data.adobe.io/entities/address/123",
   "xdm:primary": false,
   "xdm:street1": "345 Park Ave",
   "xdm:city": "San Jose",

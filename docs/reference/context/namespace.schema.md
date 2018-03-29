@@ -15,7 +15,7 @@ The namespace or unique identifier associated with a collection of data. Each En
 ## Namespace Example
 ```json
 {
-  "@id": "https://ns.adobe.com/entities/namespace/12345",
+  "@id": "https://data.adobe.io/entities/namespace/12345",
   "xdm:code": "AA12345"
 }
 ```

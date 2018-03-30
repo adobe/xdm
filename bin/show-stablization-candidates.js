@@ -26,7 +26,6 @@ function getListOfSchemas() {
   return schemas = $.find("schemas").filter(name => { return name.match(/.*\.schema\.json$/)})
 }
 
-// Promisfy `ChildProcess.exec` used to run git commands
 function execp(command) {
   return $.exec(command, { silent: true }).output
 }

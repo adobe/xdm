@@ -27,7 +27,7 @@ function getListOfSchemas() {
 }
 
 function execp(command) {
-  return $.exec(command, { silent: true }).output
+  return $.exec(command, { silent: true }).stdout
 }
 
 // Pull the current _local_ value of `meta:status` for a given schema

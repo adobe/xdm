@@ -16,6 +16,11 @@ const $ = require("shelljs")
 
 const META_STATUS = "meta:status"
 const TRIVIAL_CHANGE_MATCHERS = ["\\[.*trivial.*\\]","\\[.*ci skip.*\\]"]
+const LOG_ENABLED = (process.argv.indexOf("--debug") > -1)
+
+function logDebug(message) {
+  if (LOG_ENABLED) { console.log(message) }
+}
 
 function getListOfSchemas() {
   return schemas = $.find("schemas").filter(name => { return name.match(/.*\.schema\.json$/)})
@@ -33,7 +38,7 @@ function getStatusOfSchema(schema) {
     let obj = JSON.parse(fs.readFileSync(schema, 'utf8'))
     status = obj[META_STATUS]
   } catch (e) {
-    console.error(`Failed to parse JSON file ${schema} : ${e}`)
+    logDebug(`ERROR: Failed to parse JSON file ${schema} : ${e}`)
   }
   return status
 }
@@ -41,10 +46,10 @@ function getStatusOfSchema(schema) {
 // Determine the git commit revision for a given schema's `meta:status`
 function getGitState(schema) {
   let status = getStatusOfSchema(schema)
-  //console.log(`\t-> ${status} -- ${schema}`)
+  logDebug(`\t-> ${status} -- ${schema}`)
   let git_output = execp(`git log -1 --decorate=auto --oneline -S ${META_STATUS} ${schema}`)
   let git_commits = git_output.trim().split('\n')
-  //console.log(`\t\tGit State Commit: ${git_output.trim()}`)
+  logDebug(`\t\tGit State Commit: ${git_output.trim()}`)
   let git_latest_revision = git_commits[0]
   let commit_raw = git_latest_revision.split(' ')
   let commit_rev = commit_raw[0]
@@ -73,7 +78,7 @@ function getSchemaChangesSinceRevision(schema, revision) {
   let commits = []
   let git_output = execp(`git rev-list ${revision}^..HEAD ${schema}`)
   let git_revisions = git_output.trim().split('\n')
-  //console.log(`\t\tGit Revisions: ${JSON.stringify(git_revisions)}`)
+  logDebug(`\t\tGit Revisions: ${JSON.stringify(git_revisions)}`)
   for (idx in git_revisions) {
     let rev_id = git_revisions[idx]
     let rev_desc = (execp(`git log -1 --decorate=auto --oneline ${rev_id}`)).trim()
@@ -146,7 +151,7 @@ function main() {
   
   // Get list of schemas
   let foundSchemas = getListOfSchemas()
-  //console.log(`Found ${foundSchemas.length} schemas`)
+  logDebug(`Found ${foundSchemas.length} schemas`)
   
   // Analyze each schema
   for (idx in foundSchemas) {
@@ -154,7 +159,7 @@ function main() {
     schemaDetailMap[schema] = getGitState(schema)
   }
 
-  //console.log(`Found schema details: ${JSON.stringify(schemaDetailMap, null, '\t')}`)
+  logDebug(`Found schema details: ${JSON.stringify(schemaDetailMap, null, '\t')}`)
   
   // Build table rows for each schema generate output in markdown format
   let schemaTable = generateMarkdownTable(schemaDetailMap)

@@ -72,21 +72,11 @@
       ]
     },
     "meta:descriptors": {
-      "oneOf": [
-        {
-          "type": "object",
-          "$ref":
-            "https://ns.adobe.com/xdm/common/schemadescriptor#/definitions/descriptor"
-        },
-        {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "$ref":
-              "https://ns.adobe.com/xdm/common/schemadescriptor#/definitions/descriptor"
-          }
-        }
-      ]
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref":
+          "https://ns.adobe.com/xdm/common/schemadescriptor#/definitions/descriptor"
     },
     "type": {
       "type": "string",
@@ -160,5 +150,12 @@
         "description"
       ]
     }
-  ]
+  ],
+  "meta:status": {
+    "title": "Status",
+    "description":
+      "Indicates if the schema’s level of stability. Defined values are: stable, stabilizing, and experimental.",
+    "type": "string",
+    "meta:enum": ["stable", "stabilizing", "experimental", "deprecated"]
+  }
 }

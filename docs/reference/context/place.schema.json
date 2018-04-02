@@ -79,6 +79,7 @@
             "$ref": "#/definitions/physicallocation"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "@id": "https://data.adobe.io/entities/places/locationid-123456",

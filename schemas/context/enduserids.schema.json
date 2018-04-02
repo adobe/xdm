@@ -43,5 +43,6 @@
       "type": "object",
       "$ref": "https://ns.adobe.com/xdm/context/identity"
     }
-  }
+  },
+  "meta:status": "experimental"
 }

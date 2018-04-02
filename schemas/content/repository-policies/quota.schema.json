@@ -50,5 +50,6 @@
     }
   },
   "type": "object",
-  "$ref": "#/definitions/quota"
+  "$ref": "#/definitions/quota",
+  "meta:status": "experimental"
 }

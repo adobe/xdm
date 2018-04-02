@@ -28,19 +28,16 @@
           "type": "string",
           "description": "The type of descriptor this object represents",
           "meta:enum": {
-            "xdm:descriptorOneToOne":
-              "Describes a 1:1 relationship between schemas",
-            "xdm:descriptorOneToMany":
-              "Describes a 1:M relationship between schema",
-            "xdm:descriptorManyToMany":
-              "Describes a 1:M relationship between schema",
-            "xdm:descriptorIdentity":
+            "xdm:oneToOne": "Describes a 1:1 relationship between schemas",
+            "xdm:oneToMany": "Describes a 1:M relationship between schema",
+            "xdm:manyToMany": "Describes a 1:M relationship between schema",
+            "xdm:identityContext":
               "Describes how a property of a schema may be treated as an identity when it does not contain all the properties of the Identity schema",
-            "xdm:descriptorPrimaryKey":
+            "xdm:primaryKey":
               "Indicates that the specified property should be used as the primary storage key",
-            "xdm:descriptorUpdatePolicy":
+            "xdm:updatePolicy":
               "Describes the update policy for the source schema, which defines how new data is merged, accumulated, or replaced",
-            "xdm:descriptorInstantiable":
+            "xdm:instantiable":
               "Indicates whether the specified schema should be allowed to be instanitated directly, for example in a dataset"
           }
         },

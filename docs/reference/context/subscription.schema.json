@@ -149,6 +149,7 @@
             "$ref": "#/definitions/subscription"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "@id": "https://data.adobe.io/subscriptionid-123",

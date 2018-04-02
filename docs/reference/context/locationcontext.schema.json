@@ -32,6 +32,7 @@
             "$ref": "#/definitions/locationcontext"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "xdm:localTime": "2001-07-04T12:08:56+01:00",

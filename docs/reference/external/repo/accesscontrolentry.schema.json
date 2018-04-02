@@ -98,6 +98,7 @@
             "$ref": "#/definitions/ace"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "repo:principal": "authenticated",

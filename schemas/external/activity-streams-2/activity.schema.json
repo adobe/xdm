@@ -78,5 +78,6 @@
       "$ref": "#/definitions/extra-properties"
     }
   ],
-  "title": "Activity"
+  "title": "Activity",
+  "meta:status": "experimental"
 }

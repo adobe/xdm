@@ -88,5 +88,6 @@
       "$ref": "#/definitions/channel"
     }
   ],
-  "required": ["@id"]
+  "required": ["@id"],
+  "meta:status": "experimental"
 }

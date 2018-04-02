@@ -28,5 +28,6 @@
     }
   },
   "type": "object",
-  "$ref": "#/definitions/versioning"
+  "$ref": "#/definitions/versioning",
+  "meta:status": "experimental"
 }

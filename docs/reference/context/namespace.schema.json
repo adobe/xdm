@@ -33,6 +33,7 @@
             "$ref": "#/definitions/namespace"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "@id": "https://ns.adobe.com/entities/namespace/12345",

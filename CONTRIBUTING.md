@@ -346,6 +346,12 @@ The third schema is `third.schema.json`, it extends both `second`, and transitiv
 }
 ```
 
+### Schema Descriptors
+
+Schema descriptors are an extensible mechanism for providing additional metadata about an XDM schema. For example, schema descriptors can be used to define relationships between schemas or to annotate schema properties with additional metadata. Schema descriptors may be used when certain properties of a schema are not static (which could usually be described in the schema directly) but may vary from usage to usage.
+
+Details on using and defining schema descriptors may be found in [SCHEMA_DESCRIPTORS.md](./SCHEMA_DESCRIPTORS.md)
+
 ### Schema Stability Status
 
 Each schema should contains the enum property `meta:status` that designates it's stability. The value should be one of the following enumerations:
@@ -361,6 +367,7 @@ XDM is using a couple of custom keywords that are not part of the JSON Schema st
 
 * `meta:extensible`: see above, to describe schemas that allow custom properties
 * `meta:auditable`: for schemas that have created and last modified dates
+* `meta:descriptors`: to annotate schemas with additional metadata (see Schema Descriptors above)
 * `meta:enum`: for known values in enums, strings, and as property keys
 
 ## Writing Styleguides

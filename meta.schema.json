@@ -71,6 +71,13 @@
         }
       ]
     },
+    "meta:descriptors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref":
+          "https://ns.adobe.com/xdm/common/schemadescriptor#/definitions/descriptor"
+    },
     "type": {
       "type": "string",
       "const": "object"

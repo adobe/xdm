@@ -1,0 +1,11 @@
+{
+  "@id": "https://example.com/descriptors/4",
+  "@type": "xdm:descriptorIdentity",
+  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile",
+  "xdm:sourceProperty": "xdm:identities",
+  "xdm:sourceItem": {
+    "xdm:type": "https://ns.adobe.com/experience/mcid"
+  },
+  "xdm:namespace": "https://example.com/namespaces/12345",
+  "xdm:property": "code"
+}

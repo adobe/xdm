@@ -66,8 +66,8 @@
                     "title": "Organization Identifier",
                     "type": "object",
                     "meta:keys": {
-                        "https://ns.adobe.com/external/dnb": "Dun & Bradstreet",
-                        "https://ns.adobe.com/external/angellist": "Angellist"
+                        "https://ns.adobe.com/xdm/external/dnb": "Dun & Bradstreet",
+                        "https://ns.adobe.com/xdm/external/angellist": "Angellist"
                     },
                     "patternProperties": {
                         ".+://.+": {
@@ -77,8 +77,8 @@
                     },
                     "examples": [
                         {
-                            "https://ns.adobe.com/external/dnb": "1234",
-                            "https://ns.adobe.com/external/angellist": "https://angel.co/adobe"
+                            "https://ns.adobe.com/xdm/external/dnb": "1234",
+                            "https://ns.adobe.com/xdm/external/angellist": "https://angel.co/adobe"
                         }
                     ],
                     "description": "This object contains unambiguous identifiers for the organization. Each key is the URI of an identification service, each value is the unique ID (or preferrably URI) of the organization as defined by the identification service."
@@ -87,9 +87,9 @@
                     "title": "Market/Industry Classifier",
                     "type": "object",
                     "meta:keys": {
-                        "https://ns.adobe.com/external/isic4": "International Standard of Industrial Classification of All Economic Activities (ISIC)",
-                        "https://ns.adobe.com/external/sic": "Standard Industrial Classification",
-                        "https://ns.adobe.com/external/naics": "North American Industry Classification System"
+                        "https://ns.adobe.com/xdm/external/isic4": "International Standard of Industrial Classification of All Economic Activities (ISIC)",
+                        "https://ns.adobe.com/xdm/external/sic": "Standard Industrial Classification",
+                        "https://ns.adobe.com/xdm/external/naics": "North American Industry Classification System"
                     },
                     "patternProperties": {
                         ".+://.+": {
@@ -99,8 +99,8 @@
                     },
                     "examples": [
                         {
-                            "https://ns.adobe.com/external/sic": "1234",
-                            "https://ns.adobe.com/external/naics": "1234"
+                            "https://ns.adobe.com/xdm/external/sic": "1234",
+                            "https://ns.adobe.com/xdm/external/naics": "1234"
                         }
                     ],
                     "description": "This object contains unambiguous classifiers for the organization. Each key is the URI of an classification service or standard, each value is the unique ID (or preferrably URI) of the organization as defined by the classification service."
@@ -113,6 +113,7 @@
             "$ref": "#/definitions/organization"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "@id": "https://data.adobe.io/entities/org/orgid111",
@@ -126,7 +127,7 @@
                 "@id": "https://data.adobe.io/entities/places/locid123",
                 "schema:description": "ABC Store location",
                 "xdm:address": {
-                    "@id": "https://ns.adobe.com/entities/address/123",
+                    "@id": "https://data.adobe.io/entities/address/123",
                     "xdm:primary": true,
                     "xdm:type": "work",
                     "xdm:street1": "100 Lincoln Ave",
@@ -143,12 +144,12 @@
                 },
                 "schema:telephone": "1-408-800-0000",
                 "xdm:identifier": {
-                    "https://ns.adobe.com/external/dnb": "1234",
-                    "https://ns.adobe.com/external/angellist": "https://angel.co/adobe"
+                    "https://ns.adobe.com/xdm/external/dnb": "1234",
+                    "https://ns.adobe.com/xdm/external/angellist": "https://angel.co/adobe"
                 },
                 "xdm:classifier": {
-                    "https://ns.adobe.com/external/sic": "1234",
-                    "https://ns.adobe.com/external/naics": "1234"
+                    "https://ns.adobe.com/xdm/external/sic": "1234",
+                    "https://ns.adobe.com/xdm/external/naics": "1234"
                 }
             }
         }

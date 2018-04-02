@@ -39,6 +39,7 @@
         }
     },
     "$ref": "#/definitions/encryption",
+    "meta:status": "experimental",
     "examples": [
         {
             "xdm:keyType": "org",

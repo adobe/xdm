@@ -26,17 +26,24 @@ Additionally, this schema can include a property that describes the data source 
 ```json
 {
   "https://ns.adobe.com/experience/mcid": {
-    "@id": "https://ns.adobe.com/entities/identity/mcid123",
+    "@id": "https://data.adobe.io/entities/identity/92312748749128",
     "xdm:namespace": {
-      "@id": "https://ns.adobe.com/entities/namespace/11111",
-      "xdm:code": "AA11111"
+      "@id": "https://data.adobe.io/entities/namespace/4",
+      "xdm:code": "ECID"
     }
   },
   "https://ns.adobe.com/experience/analytics": {
-    "@id": "https://ns.adobe.com/entities/identity/analytics123",
+    "@id": "https://data.adobe.io/entities/identity/2394509340-30453470347",
     "xdm:namespace": {
-      "@id": "https://ns.adobe.com/entities/namespace/11112",
-      "xdm:code": "AA11112"
+      "@id": "https://data.adobe.io/entities/namespace/11112",
+      "xdm:code": "AVID"
+    }
+  },
+  "https://ns.adobe.com/experience/tntid": {
+    "@id": "https://data.adobe.io/entities/identity/1233ce17-20e0-4a2c-8198-2a77fd60cf4d",
+    "xdm:namespace": {
+      "@id": "https://data.adobe.io/entities/namespace/33333",
+      "xdm:code": "tnt0051"
     }
   }
 }
@@ -48,13 +55,14 @@ Additionally, this schema can include a property that describes the data source 
 |----------|------|----------|------------|
 | [https://ns.adobe.com/experience/analytics](#https//ns.adobe.com/experience/analytics) | Identity | Optional | End User IDs (this schema) |
 | [https://ns.adobe.com/experience/mcid](#https//ns.adobe.com/experience/mcid) | Identity | Optional | End User IDs (this schema) |
+| [https://ns.adobe.com/experience/tntid](#https//ns.adobe.com/experience/tntid) | Identity | Optional | End User IDs (this schema) |
 | `.+://.+` | reference | Pattern | End User IDs (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## https://ns.adobe.com/experience/analytics
-### Adobe Analytics Cloud End User Ids
+### Adobe Analytics Cloud End User IDs
 
-Adobe Analytics Cloud extension to End User Ids.
+Adobe Analytics Cloud extension to End User IDs.
 
 `https://ns.adobe.com/experience/analytics`
 * is optional
@@ -81,6 +89,25 @@ A unique identifier from Adobe Marketing Cloud.
 * defined in this schema
 
 ### https://ns.adobe.com/experience/mcid Type
+
+
+* [Identity](identity.schema.md) – `https://ns.adobe.com/xdm/context/identity`
+
+
+
+
+
+## https://ns.adobe.com/experience/tntid
+### Adobe Target End User IDs
+
+Adobe Target extension to End User IDs.
+
+`https://ns.adobe.com/experience/tntid`
+* is optional
+* type: Identity
+* defined in this schema
+
+### https://ns.adobe.com/experience/tntid Type
 
 
 * [Identity](identity.schema.md) – `https://ns.adobe.com/xdm/context/identity`

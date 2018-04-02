@@ -9,7 +9,7 @@
     "$id": "https://ns.adobe.com/xdm/common/extensible",
     "type": "object",
     "title": "Extensibility base schema",
-    "description": "This schema can be included by referencing `https://ns.adobe.com/xdm/base/extensible.schema.json`. It will enable property-based extensibility with namespace protection.\n\nIn order to make a given schema extensible, include this section at the bottom of your schema:\n\n```json\n\"allOf\":[\n    {\"$ref\": \"https://ns.adobe.com/xdm/common/extensible.schema.json#/definitions/@context\"},\n    {\"$ref\": \"#/definitions/…\"}\n  ]\n```\n\nReplace `#/definitions/…` with the correct path to the `definitions` object in your local schema.\n",
+    "description": "This schema can be included by referencing `https://ns.adobe.com/xdm/common/extensible`. It will enable property-based extensibility with namespace protection.\n\nIn order to make a given schema extensible, include this section at the bottom of your schema:\n\n```json\n\"allOf\":[\n    {\"$ref\": \"https://ns.adobe.com/xdm/common/extensible#/definitions/@context\"},\n    {\"$ref\": \"#/definitions/…\"}\n  ]\n```\n\nReplace `#/definitions/…` with the correct path to the `definitions` object in your local schema.\n",
     "definitions": {
         "@context": {
             "oneOf": [
@@ -255,6 +255,7 @@
             "$ref": "#/definitions/@context"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "repo:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",

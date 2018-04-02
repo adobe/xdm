@@ -26,6 +26,7 @@
             "$ref": "#/definitions/marketing"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "xdm:trackingCode": "marketingcampaign111"

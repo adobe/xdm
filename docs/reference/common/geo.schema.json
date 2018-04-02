@@ -65,22 +65,23 @@
             "$ref": "#/definitions/geo"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
-            "@id": "https://ns.adobe.com/entities/geo/tokyo",
+            "@id": "https://data.adobe.io/entities/geo/potsdam",
+            "xdm:countryCode": "DE",
+            "xdm:stateProvince": "Brandenburg",
+            "xdm:city": "Potsdam",
+            "xdm:postalCode": "14482"
+        },
+        {
+            "@id": "https://data.adobe.io/entities/geo/tokyo",
             "xdm:countryCode": "JP",
             "xdm:stateProvince": "Tōkyō-to",
             "xdm:city": "Tōkyō",
             "xdm:postalCode": "141-0032",
             "schema:latitude": 35.6185,
             "schema:longitude": 139.73237
-        },
-        {
-            "@id": "https://ns.adobe.com/entities/geo/potsdam",
-            "xdm:countryCode": "DE",
-            "xdm:stateProvince": "Brandenburg",
-            "xdm:city": "Potsdam",
-            "xdm:postalCode": "14482"
         }
     ]
 }

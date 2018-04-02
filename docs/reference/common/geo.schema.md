@@ -20,23 +20,23 @@ The geographic related data where an event was observed.
 
 ```json
 {
-  "@id": "https://ns.adobe.com/entities/geo/tokyo",
+  "@id": "https://data.adobe.io/entities/geo/potsdam",
+  "xdm:countryCode": "DE",
+  "xdm:stateProvince": "Brandenburg",
+  "xdm:city": "Potsdam",
+  "xdm:postalCode": "14482"
+}
+```
+
+```json
+{
+  "@id": "https://data.adobe.io/entities/geo/tokyo",
   "xdm:countryCode": "JP",
   "xdm:stateProvince": "Tōkyō-to",
   "xdm:city": "Tōkyō",
   "xdm:postalCode": "141-0032",
   "schema:latitude": 35.6185,
   "schema:longitude": 139.73237
-}
-```
-
-```json
-{
-  "@id": "https://ns.adobe.com/entities/geo/potsdam",
-  "xdm:countryCode": "DE",
-  "xdm:stateProvince": "Brandenburg",
-  "xdm:city": "Potsdam",
-  "xdm:postalCode": "14482"
 }
 ```
 
@@ -59,7 +59,7 @@ The geographic related data where an event was observed.
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
-### Coordinates Id
+### Coordinates ID
 
 The unique identifier of the coordinates.
 

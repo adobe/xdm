@@ -30,6 +30,7 @@
     "required": [
         "@id"
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "@id": "https://ims-na1.adobelogin.com/"

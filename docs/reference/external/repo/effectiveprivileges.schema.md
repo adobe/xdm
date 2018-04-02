@@ -2,7 +2,7 @@
 # Effective Privileges Schema
 
 ```
-https://ns.adobe.com/xdm/base/effectiveprivileges
+https://ns.adobe.com/xdm/external/repo/effectiveprivileges
 ```
 
 Schema for the Effective Privileges resource

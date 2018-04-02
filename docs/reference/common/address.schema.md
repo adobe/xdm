@@ -21,7 +21,7 @@ A postal address. Address could relate to a person&#39;s home, work, preferred s
 ## Address Example
 ```json
 {
-  "@id": "https://ns.adobe.com/entities/address/123",
+  "@id": "https://data.adobe.io/entities/address/123",
   "xdm:primary": false,
   "xdm:street1": "345 Park Ave",
   "xdm:city": "San Jose",
@@ -41,8 +41,6 @@ A postal address. Address could relate to a person&#39;s home, work, preferred s
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#@id) | `string` | Optional | [Geo Coordinates](../external/schema/geocoordinates.schema.md#@id) |
-| [repo:createDate](#repocreateDate) | `string` | Optional | [Audit Trail](auditable.schema.md#repocreateDate) |
-| [repo:lastModifiedDate](#repolastModifiedDate) | `string` | Optional | [Audit Trail](auditable.schema.md#repolastModifiedDate) |
 | [schema:description](#schemadescription) | `string` | Optional | [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemadescription) |
 | [schema:elevation](#schemaelevation) | `number` | Optional | [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemaelevation) |
 | [schema:latitude](#schemalatitude) | `number` | Optional | [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemalatitude) |
@@ -71,7 +69,7 @@ A postal address. Address could relate to a person&#39;s home, work, preferred s
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
-### Coordinates Id
+### Coordinates ID
 
 The unique identifier of the coordinates.
 
@@ -89,56 +87,6 @@ The unique identifier of the coordinates.
 
 
 
-
-
-## repo:createDate
-
-The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is &#34;2004-10-23T12:00:00-06:00&#34;.
-
-`repo:createDate`
-* is optional
-* type: `string`
-* defined in [Audit Trail](auditable.schema.md#repo:createDate)
-
-### repo:createDate Type
-
-
-`string`
-* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
-
-
-
-
-### repo:createDate Example
-
-```json
-"2004-10-23T12:00:00-06:00"
-```
-
-
-## repo:lastModifiedDate
-
-The server date and time when the resource was most recently modified in the repository, such as when a new version of an asset is uploaded or a directory&#39;s child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is &#34;2004-10-23T12:00:00-06:00&#34;.
-
-`repo:lastModifiedDate`
-* is optional
-* type: `string`
-* defined in [Audit Trail](auditable.schema.md#repo:lastModifiedDate)
-
-### repo:lastModifiedDate Type
-
-
-`string`
-* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
-
-
-
-
-### repo:lastModifiedDate Example
-
-```json
-"2004-10-23T12:00:00-06:00"
-```
 
 
 ## schema:description
@@ -377,7 +325,7 @@ The date that the address was last verified as still belonging to the person.
 ### Modified by Batch Identifier
 
 The last Data Set Files in Catalog Services which has modified the entity.
-At creation time, `modifiedByBatchId` is set as `createdByBatchId`.
+At creation time, `modifiedByBatchID` is set as `createdByBatchID`.
 
 
 `xdm:modifiedByBatchID`

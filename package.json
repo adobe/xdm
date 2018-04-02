@@ -26,7 +26,8 @@
     "activate":
       "curl -u \"$npm_package_config_aem_user:$npm_package_config_aem_password\" -F cmd=activate -F ignoredeactivated=true -F onlymodified=true -F path=/content/udp/en/open/standards/xdm/docs https://author-adobeio-stage.adobemsbasic.com/etc/replication/treeactivation.html",
     "activate:prod":
-      "curl -u \"$npm_package_config_aem_user:$npm_package_config_aem_password\" -F cmd=activate -F ignoredeactivated=true -F onlymodified=true -F path=/content/udp/en/open/standards/xdm/docs https://author-adobeio-prod.adobemsbasic.com/etc/replication/treeactivation.html"
+      "curl -u \"$npm_package_config_aem_user:$npm_package_config_aem_password\" -F cmd=activate -F ignoredeactivated=true -F onlymodified=true -F path=/content/udp/en/open/standards/xdm/docs https://author-adobeio-prod.adobemsbasic.com/etc/replication/treeactivation.html",
+    "stability-check": "node bin/show-stablization-candidates.js"
   },
   "repository": {
     "type": "git",
@@ -38,7 +39,7 @@
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "devDependencies": {
     "@adobe/jsonschema2md": "1.0.2",
-    "prettier": "^1.11.0",
+    "prettier": "1.11.1",
     "pretty-quick": "^1.4.1",
     "mocha": "^5.0.1",
     "mocha-junit-reporter": "^1.17.0",

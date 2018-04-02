@@ -15,7 +15,7 @@
         "geocoordinates": {
             "properties": {
                 "@id": {
-                    "title": "Coordinates Id",
+                    "title": "Coordinates ID",
                     "type": "string",
                     "format": "uri",
                     "description": "The unique identifier of the coordinates."
@@ -55,9 +55,10 @@
             "$ref": "#/definitions/geocoordinates"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
-            "@id": "https://ns.adobe.com/entities/geo/111",
+            "@id": "https://data.adobe.io/entities/geo/111",
             "xdm:description": "New York",
             "xdm:latitude": 37.3308953,
             "xdm:longitude": -121.8939894,

@@ -53,5 +53,6 @@
     {
       "$ref": "#/definitions/order"
     }
-  ]
+  ],
+  "meta:status": "experimental"
 }

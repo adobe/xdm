@@ -19,7 +19,7 @@ const TRIVIAL_CHANGE_MATCHERS = ["\\[.*trivial.*\\]","\\[.*ci skip.*\\]"]
 const LOG_ENABLED = (process.argv.indexOf("--debug") > -1)
 
 function logDebug(message) {
-  if (LOG_ENABLED) { console.log(message) }
+  if (LOG_ENABLED) { console.error(message) }
 }
 
 function getListOfSchemas() {

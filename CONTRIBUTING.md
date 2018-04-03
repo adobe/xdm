@@ -376,7 +376,7 @@ The XDM project differentiates between major and minor contributions.
 
 ### Minor Contributions
 
-One of the editors will look at the pull request within one week and flag it as `minor`. The editor will then either merge or reject the pull request. If you haven't heard back from the editors within a week, it is not impolite to send a reminder to [Grp-XDM-API-WGs](mailto:Grp-XDM-API-WGs@adobe.com).
+One of the editors will look at the pull request within one week and flag it as `minor`. The editor will then either merge or reject the pull request. If you haven't heard back from the editors within a week, it is not impolite to send a reminder to [Grp-XDM-CoreWG](mailto:Grp-XDM-CoreWG@adobe.com).
 
 Feedback on the pull request will be given in writing, in GitHub.
 

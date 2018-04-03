@@ -20,15 +20,28 @@
 * [Rectangular Object (measured in variable unit)](./assets/variable-unit-rectangular.schema.md) – `https://ns.adobe.com/xdm/assets/variable-unit-rectangular`
 * [Video](./assets/video.schema.md) – `https://ns.adobe.com/xdm/assets/video`
 
-## /content/
+## /channels/
 
-* [Component Container](./content/component-container.schema.md) – `https://ns.adobe.com/xdm/content/component-container`
-* [Componentized Page](./content/componentized-page.schema.md) – `https://ns.adobe.com/xdm/content/componentized-page`
-* [Content](./content/content.schema.md) – `https://ns.adobe.com/xdm/content/content`
-* [Page Component](./content/page-component.schema.md) – `https://ns.adobe.com/xdm/content/page-component`
-* [Product](./content/product.schema.md) – `https://ns.adobe.com/xdm/context/product`
-* [Product List Item](./content/productlistitem.schema.md) – `https://ns.adobe.com/xdm/content/productlistitem`
-* [Content Repository](./content/repository.schema.md) – `https://ns.adobe.com/xdm/content/repository`
+* [ADM](./channels/adm.schema.md) – `https://ns.adobe.com/xdm/channels/adm`
+* [APNS](./channels/apns.schema.md) – `https://ns.adobe.com/xdm/channels/apns`
+* [Application](./channels/application.schema.md) – `https://ns.adobe.com/xdm/channels/application`
+* [Baidu](./channels/baidu.schema.md) – `https://ns.adobe.com/xdm/channels/baidu`
+* [Experience Channel](./channels/channel.schema.md) – `https://ns.adobe.com/xdm/channels/channel`
+* [Direct Mail](./channels/direct-mail.schema.md) – `https://ns.adobe.com/xdm/channels/direct-mail`
+* [E-Mail](./channels/email.schema.md) – `https://ns.adobe.com/xdm/channels/email`
+* [Facebook News Feed](./channels/facebook-feed.schema.md) – `https://ns.adobe.com/xdm/channels/facebook-feed`
+* [Fax](./channels/fax.schema.md) – `https://ns.adobe.com/xdm/channels/fax`
+* [GCM](./channels/gcm.schema.md) – `https://ns.adobe.com/xdm/channels/gcm`
+* [LINE](./channels/line.schema.md) – `https://ns.adobe.com/xdm/channels/line`
+* [Web](./channels/mobile-app.schema.md) – `https://ns.adobe.com/xdm/channels/mobile-app`
+* [MPNS](./channels/mpns.schema.md) – `https://ns.adobe.com/xdm/channels/mpns`
+* [Phone](./channels/phone.schema.md) – `https://ns.adobe.com/xdm/channels/phone`
+* [SMS](./channels/sms.schema.md) – `https://ns.adobe.com/xdm/channels/sms`
+* [Twitter Feed](./channels/twitter-feed.schema.md) – `https://ns.adobe.com/xdm/channels/twitter-feed`
+* [Web](./channels/web.schema.md) – `https://ns.adobe.com/xdm/channels/web`
+* [Web Page](./channels/webpage.schema.md) – `https://ns.adobe.com/xdm/channels/webpage`
+* [WeChat](./channels/wechat.schema.md) – `https://ns.adobe.com/xdm/channels/wechat`
+* [WNS](./channels/wns.schema.md) – `https://ns.adobe.com/xdm/channels/wns`
 
 ## /common/
 
@@ -64,31 +77,18 @@
 * [Profile](./context/profile.schema.md) – `https://ns.adobe.com/xdm/context/profile`
 * [Push Notification Token](./context/pushnotificationtoken.schema.md) – `https://ns.adobe.com/xdm/context/pushnotificationtoken`
 * [Search](./context/search.schema.md) – `https://ns.adobe.com/xdm/context/search`
-* [Subscription](./context/subscription.schema.md) – `https://ns.adobe.com/xdm/context/subscription`
 * [Web Link](./context/weblink.schema.md) – `https://ns.adobe.com/xdm/context/weblink`
+* [Subscription](./context/subscription.schema.md) – `https://ns.adobe.com/xdm/context/subscription`
 
-## /channels/
+## /content/
 
-* [ADM](./channels/adm.schema.md) – `https://ns.adobe.com/xdm/channels/adm`
-* [APNS](./channels/apns.schema.md) – `https://ns.adobe.com/xdm/channels/apns`
-* [Application](./channels/application.schema.md) – `https://ns.adobe.com/xdm/channels/application`
-* [Baidu](./channels/baidu.schema.md) – `https://ns.adobe.com/xdm/channels/baidu`
-* [Experience Channel](./channels/channel.schema.md) – `https://ns.adobe.com/xdm/channels/channel`
-* [Direct Mail](./channels/direct-mail.schema.md) – `https://ns.adobe.com/xdm/channels/direct-mail`
-* [E-Mail](./channels/email.schema.md) – `https://ns.adobe.com/xdm/channels/email`
-* [Facebook News Feed](./channels/facebook-feed.schema.md) – `https://ns.adobe.com/xdm/channels/facebook-feed`
-* [Fax](./channels/fax.schema.md) – `https://ns.adobe.com/xdm/channels/fax`
-* [GCM](./channels/gcm.schema.md) – `https://ns.adobe.com/xdm/channels/gcm`
-* [LINE](./channels/line.schema.md) – `https://ns.adobe.com/xdm/channels/line`
-* [Web](./channels/mobile-app.schema.md) – `https://ns.adobe.com/xdm/channels/mobile-app`
-* [MPNS](./channels/mpns.schema.md) – `https://ns.adobe.com/xdm/channels/mpns`
-* [Phone](./channels/phone.schema.md) – `https://ns.adobe.com/xdm/channels/phone`
-* [SMS](./channels/sms.schema.md) – `https://ns.adobe.com/xdm/channels/sms`
-* [Twitter Feed](./channels/twitter-feed.schema.md) – `https://ns.adobe.com/xdm/channels/twitter-feed`
-* [Web](./channels/web.schema.md) – `https://ns.adobe.com/xdm/channels/web`
-* [Web Page](./channels/webpage.schema.md) – `https://ns.adobe.com/xdm/channels/webpage`
-* [WeChat](./channels/wechat.schema.md) – `https://ns.adobe.com/xdm/channels/wechat`
-* [WNS](./channels/wns.schema.md) – `https://ns.adobe.com/xdm/channels/wns`
+* [Component Container](./content/component-container.schema.md) – `https://ns.adobe.com/xdm/content/component-container`
+* [Componentized Page](./content/componentized-page.schema.md) – `https://ns.adobe.com/xdm/content/componentized-page`
+* [Content](./content/content.schema.md) – `https://ns.adobe.com/xdm/content/content`
+* [Page Component](./content/page-component.schema.md) – `https://ns.adobe.com/xdm/content/page-component`
+* [Product](./content/product.schema.md) – `https://ns.adobe.com/xdm/context/product`
+* [Product List Item](./content/productlistitem.schema.md) – `https://ns.adobe.com/xdm/content/productlistitem`
+* [Content Repository](./content/repository.schema.md) – `https://ns.adobe.com/xdm/content/repository`
 
 ## /data/
 
@@ -119,12 +119,6 @@
 * [sends](./data/sends.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/sends`
 * [user-complaints](./data/user-complaints.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/user-complaints`
 
-## /content/repository-policies/
-
-* [At-Rest Encryption](./content/repository-policies/encryption.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/encryption`
-* [Storage Quota](./content/repository-policies/quota.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/quota`
-* [Versioning](./content/repository-policies/versioning.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/versioning`
-
 ## /common/event/
 
 * [Created Event](./common/event/created.schema.md) – `https://ns.adobe.com/xdm/common/event/created`
@@ -134,11 +128,6 @@
 * [Rejected Event](./common/event/rejected.schema.md) – `https://ns.adobe.com/xdm/common/event/rejected`
 * [Unpublished Event](./common/event/unpublished.schema.md) – `https://ns.adobe.com/xdm/common/event/unpublished`
 * [Updated Event](./common/event/updated.schema.md) – `https://ns.adobe.com/xdm/common/event/updated`
-
-## /external/hal/
-
-* [HAL Link](./external/hal/hal-link.schema.md) – `https://ns.adobe.com/xdm/external/hal/link`
-* [HAL Resource](./external/hal/hal.schema.md) – `https://ns.adobe.com/xdm/external/hal/resource`
 
 ## /external/activity-streams-2/
 
@@ -151,8 +140,19 @@
 * [Image Document](./external/activity-streams-2/image.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/image`
 * [Link](./external/activity-streams-2/link.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/link`
 * [Object](./external/activity-streams-2/object.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/object`
-* [JSON-LD `@type`](./external/activity-streams-2/type.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/type`
 * [RDF Language Tagged String](./external/activity-streams-2/rdf-langstring.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langstring`
+* [JSON-LD `@type`](./external/activity-streams-2/type.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/type`
+
+## /external/hal/
+
+* [HAL Link](./external/hal/hal-link.schema.md) – `https://ns.adobe.com/xdm/external/hal/link`
+* [HAL Resource](./external/hal/hal.schema.md) – `https://ns.adobe.com/xdm/external/hal/resource`
+
+## /external/schema/
+
+* [Geo Circle](./external/schema/geocircle.schema.md) – `http://schema.org/GeoCircle`
+* [Geo Coordinates](./external/schema/geocoordinates.schema.md) – `http://schema.org/GeoCoordinates`
+* [Geo Shape](./external/schema/geoshape.schema.md) – `http://schema.org/GeoShape`
 
 ## /external/repo/
 
@@ -160,12 +160,12 @@
 * [Access Control Policy](./external/repo/accesscontrolpolicy.schema.md) – `https://ns.adobe.com/xdm/external/repo/accesscontrolpolicy`
 * [Asset](./external/repo/asset.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/asset`
 * [Common Properties](./external/repo/common.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0`
-* [Effective Privileges](./external/repo/effectiveprivileges.schema.md) – `https://ns.adobe.com/xdm/external/repo/effectiveprivileges`
 * [Directory](./external/repo/directory.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/directory`
+* [Effective Privileges](./external/repo/effectiveprivileges.schema.md) – `https://ns.adobe.com/xdm/external/repo/effectiveprivileges`
 * [Sub-Directory](./external/repo/sub-directory.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/sub-directory`
 
-## /external/schema/
+## /content/repository-policies/
 
-* [Geo Circle](./external/schema/geocircle.schema.md) – `http://schema.org/GeoCircle`
-* [Geo Coordinates](./external/schema/geocoordinates.schema.md) – `http://schema.org/GeoCoordinates`
-* [Geo Shape](./external/schema/geoshape.schema.md) – `http://schema.org/GeoShape`
+* [At-Rest Encryption](./content/repository-policies/encryption.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/encryption`
+* [Storage Quota](./content/repository-policies/quota.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/quota`
+* [Versioning](./content/repository-policies/versioning.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/versioning`

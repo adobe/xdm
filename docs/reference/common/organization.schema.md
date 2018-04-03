@@ -31,7 +31,7 @@ Information that uniquely identifies an organized entity such as company, non-pr
     "@id": "https://data.adobe.io/entities/places/locid123",
     "schema:description": "ABC Store location",
     "xdm:address": {
-      "@id": "https://ns.adobe.com/entities/address/123",
+      "@id": "https://data.adobe.io/entities/address/123",
       "xdm:primary": true,
       "xdm:type": "work",
       "xdm:street1": "100 Lincoln Ave",

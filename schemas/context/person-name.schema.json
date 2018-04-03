@@ -16,7 +16,7 @@
         "xdm:firstName": {
           "title": "First name",
           "type": "string",
-          "description": "The personal, given, or first name."
+          "description": "The preferred personal, given, or first name."
         },
         "xdm:lastName": {
           "title": "Last name",

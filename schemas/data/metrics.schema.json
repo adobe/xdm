@@ -37,15 +37,18 @@
         },
         "https://ns.adobe.com/xdm/data/metrics/application/crashes": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Triggered when the application does not exit gracefully. Event is sent on application launch after a crash."
+          "description":
+            "Triggered when the application does not exit gracefully. Event is sent on application launch after a crash."
         },
         "https://ns.adobe.com/xdm/data/metrics/application/featureusages": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Activation of an application feature that is being measured."
+          "description":
+            "Activation of an application feature that is being measured."
         },
         "https://ns.adobe.com/xdm/data/metrics/application/installs": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Install of an application on a device. Triggered on first launch after install."
+          "description":
+            "Install of an application on a device. Triggered on first launch after install."
         },
         "https://ns.adobe.com/xdm/data/metrics/advertising/impressions": {
           "$ref": "https://ns.adobe.com/xdm/data/measure"
@@ -55,7 +58,8 @@
         },
         "https://ns.adobe.com/xdm/data/metrics/application/launches": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "A launch of an application. Triggered on every run, including crashes and installs. Also triggered on a resume from background when the lifecycle session timeout has been exceeded."
+          "description":
+            "A launch of an application. Triggered on every run, including crashes and installs. Also triggered on a resume from background when the lifecycle session timeout has been exceeded."
         },
         "https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages": {
           "$ref": "https://ns.adobe.com/xdm/data/measure"
@@ -95,7 +99,8 @@
         },
         "https://ns.adobe.com/xdm/data/metrics/application/upgrades": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Upgrade of an application that has previously been installed. Triggered on first launch after upgrade."
+          "description":
+            "Upgrade of an application that has previously been installed. Triggered on first launch after upgrade."
         },
         "https://ns.adobe.com/xdm/data/metrics/direct-marketing/user-complaints": {
           "$ref": "https://ns.adobe.com/xdm/data/measure"

@@ -10,19 +10,19 @@
   "title": "Web Information",
   "type": "object",
   "description":
-    "Information about the web page and/or link of the ExperienceEvent.",
+    "Information about a web interaction recorded via an ExperienceEvent, including the web page and/or link where the interaction occurred.",
   "definitions": {
     "webinfo": {
       "properties": {
         "xdm:webPage": {
           "title": "Web Page",
           "$ref": "https://ns.adobe.com/xdm/context/webpage",
-          "description": "The web page information of the ExperienceEvent."
+          "description": "Details about the web page where the web interaction occurred."
         },
         "xdm:webLink": {
           "title": "Web Link",
           "$ref": "https://ns.adobe.com/xdm/context/weblink",
-          "description": "The web link information of the ExperienceEvent."
+          "description": "Details about the web link (URL) that corresponds to the web page where the interaction occurred."
         }
       }
     }

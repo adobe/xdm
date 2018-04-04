@@ -19,7 +19,7 @@
         },
         "type": {
           "type": "string",
-          "const": "https://ns.adobe.com/xdm/aem/user"
+          "const": "https://ns.adobe.com/xdm-extensions/aem/user"
         }
       }
     }

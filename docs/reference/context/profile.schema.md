@@ -44,7 +44,7 @@ for other Profile data such as preference, propensities and other attributes.
 {
   "xdm:identities": [
     {
-      "@id": "https://ns.adobe.com/entities/identity/id123",
+      "@id": "https://data.adobe.io/entities/identity/id123",
       "xdm:namespace": {
         "xdm:id": 12345,
         "xdm:code": "AA111"
@@ -63,7 +63,7 @@ for other Profile data such as preference, propensities and other attributes.
     "xdm:gender": "female"
   },
   "xdm:workAddress": {
-    "@id": "https://ns.adobe.com/entities/address/123",
+    "@id": "https://data.adobe.io/entities/address/123",
     "xdm:primary": false,
     "xdm:street1": "345 Park Ave",
     "xdm:city": "San Jose",

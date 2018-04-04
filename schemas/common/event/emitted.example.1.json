@@ -6,12 +6,12 @@
     "https://osgi.org/javadoc/r4v42/org/osgi/service/event/Event.html#io/adobe/event/sample/sku",
   "activitystreams:published": "2016-07-16T19:20:30+01:00",
   "activitystreams:to": {
-    "@type": "https://ns.adobe.com/xdm-extensions/ims/organization#",
+    "@type": "https://ns.adobe.com/xdm-extensions/ims/organization",
     "https://ns.adobe.com/xdm-extensions/ims/organization#id":
       "08B3E5CE5822FC520A494229@AdobeOrg"
   },
   "activitystreams:generator": {
-    "@type": "https://ns.adobe.com/xdm/content/repository#",
+    "@type": "https://ns.adobe.com/xdm/content/repository",
     "xdm:root": "http://francois.corp.adobe.com:4502/"
   },
   "activitystreams:object": {

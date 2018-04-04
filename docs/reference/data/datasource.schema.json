@@ -19,10 +19,10 @@
                     "format": "uri",
                     "description": "The unique ID of this data source. This would be provided by the individual or system that created the Datasource.\n"
                 },
-                "xdm:name": {
-                    "title": "Name",
+                "xdm:code": {
+                    "title": "Code",
                     "type": "string",
-                    "description": "Human readable name of the data source. "
+                    "description": "The code is a shortcut to the full @id and at least one of the code or @id can be used. Sometimes, this code refered to as the data source integration code."
                 },
                 "xdm:tags": {
                     "title": "Tags",
@@ -48,7 +48,7 @@
     "examples": [
         {
             "@id": "https://data.adobe.io/datasources/datasource-123",
-            "xdm:name": "DataSourceIntegrationCode-123"
+            "xdm:code": "DataSourceIntegrationCode-123"
         }
     ]
 }

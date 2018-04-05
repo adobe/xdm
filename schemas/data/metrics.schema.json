@@ -10,7 +10,7 @@
   "title": "Metrics",
   "type": "object",
   "description":
-    "This is map of metrics and measues. Each key is the valid URI of a known `Metric`. Each value is a `Measure`, i.e. a concrete data point.",
+    "This is map of metrics and measures. Each key is the valid URI of a known `Metric`. Each value is a `Measure`, i.e. a concrete data point.",
   "definitions": {
     "metrics": {
       "patternProperties": {
@@ -74,7 +74,7 @@
         "https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
-            "Click on a link in a message to an web hosted mirror page."
+            "Click on a link in a message to a web hosted mirror page."
         },
         "https://ns.adobe.com/xdm/data/metrics/direct-marketing/non-deliverables": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
@@ -103,7 +103,7 @@
         "https://ns.adobe.com/xdm/data/metrics/commerce/product-list-reopens": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
-            "A product-list that was no longer accessible(abandonded) has been re-activated by the user. Example via a re-marketing activity."
+            "A product-list that was no longer accessible(abandoned) has been re-activated by the user. Example via a re-marketing activity."
         },
         "https://ns.adobe.com/xdm/data/metrics/commerce/product-list-views": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
@@ -126,7 +126,7 @@
         "https://ns.adobe.com/xdm/data/metrics/direct-marketing/sends": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
-            "Asynchronous message(s) (email, SMS, MMS etc) have been dispatched to a persons account/address/device."
+            "Asynchronous message(s) (email, SMS, MMS etc) have been dispatched to a person's account/address/device."
         },
         "https://ns.adobe.com/xdm/data/metrics/application/upgrades": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
@@ -136,7 +136,7 @@
         "https://ns.adobe.com/xdm/data/metrics/direct-marketing/user-complaints": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
-            "User complaints has been received. This generally occurrs when a recipient of a message reports it as spam."
+            "User complaints has been received. This generally occurs when a recipient of a message reports it as spam."
         }
       },
       "additionalProperties": false

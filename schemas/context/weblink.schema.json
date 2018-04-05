@@ -9,7 +9,8 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Web Link",
   "type": "object",
-  "description": "Information about the web link of the ExperienceEvent.",
+  "description":
+    "Details about the web link (URL) that corresponds to the web page where the interaction occurred, as recorded by an `ExperienceEvent`",
   "definitions": {
     "weblink": {
       "properties": {
@@ -27,12 +28,13 @@
         "xdm:URL": {
           "title": "URL",
           "type": "string",
-          "description": "The link URL."
+          "description": "The actual link/URL used for this web interaction"
         },
         "xdm:name": {
           "title": "Name",
           "type": "string",
-          "description": "The link name."
+          "description":
+            "The normative name used for this web link, used for classification purposes"
         }
       }
     }

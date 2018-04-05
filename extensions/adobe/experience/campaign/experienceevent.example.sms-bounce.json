@@ -1,5 +1,5 @@
 {
-  "xdm:timestamp": 1522321544448,
+  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
   "xdm:metrics": {
     "https://ns.adobe.com/xdm/data/metrics/direct-marketing/non-deliverables": {
       "xdm:value": 1
@@ -33,7 +33,7 @@
     "controlGroupMember": false,
     "testMember": false,
     "size": 2,
-    "reason": "UnknownUser",
+    "reason": "unknown_user",
     "reasonMessage": "554: Unknown Recipient."
   },
   "https://ns.adobe.com/experience/campaign/delivery": {

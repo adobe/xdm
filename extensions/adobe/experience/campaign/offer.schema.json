@@ -7,7 +7,8 @@
   ],
   "$id": "https://ns.adobe.com/xdm-extensions/adobe/experience/campaign/offer",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Offer",
+  "title":
+    "An offer that is shown as part of a Marketing Campaign. This could be personalized as per the user profile or a generalized offer.",
   "type": "object",
   "description":
     "This represents the instance of an offer displayed in a message.",
@@ -30,7 +31,7 @@
           "title": "Activity ID",
           "type": "integer",
           "description":
-            "Identifier of the offer activity in the Offer Service.",
+            "Identifier of the offer activity in the Offer Service. Offer Activity is a container which may have multiple offers and a subset of them will be shown to the user based on their profile attributes or rules set by the Marketeer. ",
           "minimum": 0,
           "maximum": 2147483647
         },
@@ -42,7 +43,8 @@
         "https://ns.adobe.com/experience/campaign/offer/placementId": {
           "title": "Placement ID",
           "type": "integer",
-          "description": "Identifier of the placement of the offer.",
+          "description":
+            "Identifier of the placement of the offer. The Offer Placement usually defines the sections of the marketing experience where the Offer will be shown.",
           "minimum": 0,
           "maximum": 2147483647
         },
@@ -56,7 +58,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/offerplacement"
+      "$ref": "#/definitions/offer"
     }
   ]
 }

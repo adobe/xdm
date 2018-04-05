@@ -93,8 +93,9 @@
         },
         "xdm:preferredLanguage": {
           "title": "Preferred Language",
-          "type": "string",
-          "description": "Preferred language based on ISO-639-1 format"
+          "$ref": "https://ns.adobe.com/xdm/context/language",
+          "description":
+            "Describes the preferred system of communication used by the profile."
         },
         "xdm:profilePictureLink": {
           "title": "Profile Picture Link",
@@ -104,12 +105,11 @@
         "xdm:emailFormat": {
           "title": "Email Format",
           "type": "string",
-          "description": "Email format relevant to the user. This can be HTML/Text/Unknown",
-          "default": "unknown",
+          "description":
+            "Email format relevant to the user. This can be HTML/Plain Text",
           "meta:enum": {
             "html": "HTML",
-            "text": "Text",
-            "unknown": "Unknown"
+            "plaintext": "Plain Text"
           }
         },
         "xdm:geoUnitID": {

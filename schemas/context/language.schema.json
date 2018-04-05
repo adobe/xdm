@@ -1,0 +1,42 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/language",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Language",
+  "type": "object",
+  "description":
+    "The system of communication used by a particular person, country or community.",
+  "definitions": {
+    "language": {
+      "properties": {
+        "xdm:format": {
+          "title": "Format Identifier",
+          "type": "string",
+          "description":
+            "Standardized nomenclature used to classify the language",
+          "meta:enum": {
+            "iso-639-1": "ISO-639-1",
+            "bcp-47": "BCP-47"
+          }
+        },
+        "xdm:languageCode": {
+          "title": "language",
+          "type": "string",
+          "description":
+            "The code assigned to the language, adhering to the language format."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/language"
+    }
+  ],
+  "meta:status": "experimental"
+}

@@ -47,7 +47,8 @@
         "https://ns.adobe.com/xdm/channels/web": "Web",
         "https://ns.adobe.com/xdm/channels/webpage": "Web Page",
         "https://ns.adobe.com/xdm/channels/wechat": "WeChat",
-        "https://ns.adobe.com/xdm/channels/wns": "WNS"
+        "https://ns.adobe.com/xdm/channels/wns": "WNS",
+        "https://ns.adobe.com/xdm/channels/agancy": "Agency"
       },
       "patternProperties": {
         ".+://.+": {

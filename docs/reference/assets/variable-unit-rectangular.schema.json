@@ -14,33 +14,33 @@
     "definitions": {
         "rectangular": {
             "properties": {
-                "stLayer:originX": {
+                "xdm:originX": {
                     "type": "integer",
                     "title": "Origin X",
                     "meta:usereditable": false,
                     "description": "Origin X position - Base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards)"
                 },
-                "stLayer:originY": {
+                "xdm:originY": {
                     "type": "integer",
                     "title": "Origin Y",
                     "meta:usereditable": false,
                     "description": "Origin Y position - Base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards)"
                 },
-                "stLayer:width": {
+                "xdm:width": {
                     "title": "Width",
                     "meta:usereditable": false,
                     "type": "integer",
                     "exclusiveMinimum": 0,
                     "description": "Width of the artboard"
                 },
-                "stLayer:height": {
+                "xdm:height": {
                     "title": "Height",
                     "meta:usereditable": false,
                     "type": "integer",
                     "exclusiveMinimum": 0,
                     "description": "Height of the artboard"
                 },
-                "stLayer:unit": {
+                "xdm:unit": {
                     "title": "Unit",
                     "meta:usereditable": false,
                     "type": "string",
@@ -53,11 +53,11 @@
     "meta:status": "experimental",
     "examples": [
         {
-            "stLayer:width": 768,
-            "stLayer:height": 768,
-            "stLayer:originY": 0,
-            "stLayer:originX": 256,
-            "stLayer:unit": "pixels"
+            "xdm:width": 768,
+            "xdm:height": 768,
+            "xdm:originY": 0,
+            "xdm:originX": 256,
+            "xdm:unit": "pixels"
         }
     ]
 }

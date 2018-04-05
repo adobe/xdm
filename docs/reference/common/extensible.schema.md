@@ -85,7 +85,6 @@ Replace `#/definitions/…` with the correct path to the `definitions` object in
     "cc": "http://creativecommons.org/ns#",
     "stEvt": "http://ns.adobe.com/xap/1.0/sType/ResourceEvent#",
     "stFnt": "http://ns.adobe.com/xap/1.0/sType/Font#",
-    "stLayer": "http://ns.adobe.com/core/1.0/sType/Layer#",
     "stLayerGroup": "http://ns.adobe.com/core/1.0/sType/LayerGroup#",
     "stArtboard": "http://ns.adobe.com/core/1.0/sType/Artboard#",
     "exif": "http://ns.adobe.com/exif/1.0/#",

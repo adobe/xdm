@@ -21,11 +21,11 @@ A Layer Group can contain layers or other layer groups.
   "xdm:layers": [
     {
       "xdm:name": "Example Layer",
-      "stLayer:width": 768,
-      "stLayer:height": 768,
-      "stLayer:originY": 0,
-      "stLayer:originX": 256,
-      "stLayer:unit": "pixels",
+      "xdm:width": 768,
+      "xdm:height": 768,
+      "xdm:originY": 0,
+      "xdm:originX": 256,
+      "xdm:unit": "pixels",
       "xdm:visible": true
     },
     {
@@ -33,11 +33,11 @@ A Layer Group can contain layers or other layer groups.
       "xdm:layers": [
         {
           "xdm:name": "Example Layer in Nested Layer Group",
-          "stLayer:width": 768,
-          "stLayer:height": 768,
-          "stLayer:originY": 0,
-          "stLayer:originX": 256,
-          "stLayer:unit": "pixels",
+          "xdm:width": 768,
+          "xdm:height": 768,
+          "xdm:originY": 0,
+          "xdm:originX": 256,
+          "xdm:unit": "pixels",
           "xdm:visible": false
         }
       ]

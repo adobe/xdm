@@ -40,7 +40,6 @@
                         "^cc:.*$": {},
                         "^stEvt:.*$": {},
                         "^stFnt:.*$": {},
-                        "^stLayer:.*$": {},
                         "^stLayerGroup:.*$": {},
                         "^stArtboard:.*$": {},
                         "^exif:.*$": {},
@@ -168,11 +167,6 @@
                                     "format": "url",
                                     "const": "http://ns.adobe.com/xap/1.0/sType/Font#"
                                 },
-                                "stLayer": {
-                                    "type": "string",
-                                    "format": "url",
-                                    "const": "http://ns.adobe.com/core/1.0/sType/Layer#"
-                                },
                                 "stLayerGroup": {
                                     "type": "string",
                                     "format": "url",
@@ -233,7 +227,6 @@
                         "^cc:.*$": {},
                         "^stEvt:.*$": {},
                         "^stFnt:.*$": {},
-                        "^stLayer:.*$": {},
                         "^stLayerGroup:.*$": {},
                         "^stArtboard:.*$": {},
                         "^exif:.*$": {},
@@ -255,7 +248,7 @@
             "$ref": "#/definitions/@context"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stabilizing",
     "examples": [
         {
             "repo:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
@@ -310,7 +303,6 @@
                 "cc": "http://creativecommons.org/ns#",
                 "stEvt": "http://ns.adobe.com/xap/1.0/sType/ResourceEvent#",
                 "stFnt": "http://ns.adobe.com/xap/1.0/sType/Font#",
-                "stLayer": "http://ns.adobe.com/core/1.0/sType/Layer#",
                 "stLayerGroup": "http://ns.adobe.com/core/1.0/sType/LayerGroup#",
                 "stArtboard": "http://ns.adobe.com/core/1.0/sType/Artboard#",
                 "exif": "http://ns.adobe.com/exif/1.0/#",

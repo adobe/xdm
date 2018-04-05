@@ -21,9 +21,10 @@ An individual person. May represent a person acting in various roles, such as a 
 ```json
 {
   "xdm:name": {
-    "xdm:givenName": "Jane",
+    "xdm:firstName": "Jane",
     "xdm:middleName": "F",
-    "xdm:surname": "Doe"
+    "xdm:lastName": "Doe",
+    "xdm:fullName": "Jane F. Doe"
   },
   "xdm:birthMonth": 1,
   "xdm:birthDay": 3,

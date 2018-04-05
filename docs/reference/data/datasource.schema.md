@@ -54,7 +54,7 @@ The unique ID of this data source. This would be provided by the individual or s
 ## xdm:code
 ### Code
 
-The code is a shortcut to the full @id and at least one of the code or @id can be used. Sometimes, this code refered to as the data source integration code.
+The code is a shortcut to the full @id and at least one of the code or @id can be used. Sometimes, this code is referred to as the data source integration code.
 
 `xdm:code`
 * is optional

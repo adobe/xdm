@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/channels/gcm
 
 Google Cloud Messaging
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [channels/gcm.schema.json](channels/gcm.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [channels/gcm.schema.json](channels/gcm.schema.json) |
 
 ## Schema Hierarchy
 
@@ -31,9 +31,9 @@ Google Cloud Messaging
 |----------|------|----------|------------|
 | [@id](#@id) | `const` | **Required** | GCM (this schema) |
 | [@type](#@type) | `const` | Optional | GCM (this schema) |
-| [xdm:contentTypes](#xdmcontentTypes) | `const` | Optional | GCM (this schema) |
-| [xdm:locationTypes](#xdmlocationTypes) | `const` | Optional | GCM (this schema) |
-| [xdm:metricTypes](#xdmmetricTypes) | `const` | Optional | GCM (this schema) |
+| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | GCM (this schema) |
+| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | GCM (this schema) |
+| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | GCM (this schema) |
 | [xdm:mode](#xdmmode) | `const` | Optional | GCM (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 

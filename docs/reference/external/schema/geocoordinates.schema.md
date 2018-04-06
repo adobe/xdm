@@ -7,9 +7,9 @@ http://schema.org/GeoCoordinates
 
 The geographic coordinates of a place. Based on [schema.org](http://schema.org/GeoCoordinates).
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [external/schema/geocoordinates.schema.json](external/schema/geocoordinates.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [external/schema/geocoordinates.schema.json](external/schema/geocoordinates.schema.json) |
 
 ## Geo Coordinates Example
 ```json

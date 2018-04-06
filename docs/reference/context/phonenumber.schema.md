@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/context/phonenumber
 
 Information that allows the phone calling of a person. Typically an alphanumeric number, 1-222-333 4444 in North America, but can have a wide range of formats.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [context/phonenumber.schema.json](context/phonenumber.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [context/phonenumber.schema.json](context/phonenumber.schema.json) |
 
 ## Schema Hierarchy
 
@@ -29,15 +29,15 @@ Information that allows the phone calling of a person. Typically an alphanumeric
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:createdByBatchID](#xdmcreatedByBatchID) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmcreatedByBatchID) |
+| [xdm:createdByBatchID](#xdmcreatedbybatchid) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmcreatedbybatchid) |
 | [xdm:extension](#xdmextension) | `string` | Optional | Phone Number (this schema) |
-| [xdm:modifiedByBatchID](#xdmmodifiedByBatchID) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmmodifiedByBatchID) |
+| [xdm:modifiedByBatchID](#xdmmodifiedbybatchid) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmmodifiedbybatchid) |
 | [xdm:number](#xdmnumber) | `string` | Optional | Phone Number (this schema) |
 | [xdm:primary](#xdmprimary) | `boolean` | Optional | Phone Number (this schema) |
-| [xdm:repositoryCreatedBy](#xdmrepositoryCreatedBy) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmrepositoryCreatedBy) |
-| [xdm:repositoryLastModifiedBy](#xdmrepositoryLastModifiedBy) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmrepositoryLastModifiedBy) |
+| [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmrepositorycreatedby) |
+| [xdm:repositoryLastModifiedBy](#xdmrepositorylastmodifiedby) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmrepositorylastmodifiedby) |
 | [xdm:status](#xdmstatus) | `string` | Optional | Phone Number (this schema) |
-| [xdm:statusReason](#xdmstatusReason) | `string` | Optional | Phone Number (this schema) |
+| [xdm:statusReason](#xdmstatusreason) | `string` | Optional | Phone Number (this schema) |
 | [xdm:validity](#xdmvalidity) | `string` | Optional | Phone Number (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 

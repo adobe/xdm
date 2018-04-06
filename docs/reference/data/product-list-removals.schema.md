@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/data/metrics/commerce/product-list-removals
 
 The commerce metric product-list-removals describes the number of times a product has been removed from a product list. The most common use case is the removal of a product from the shopping cart.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [data/product-list-removals.schema.json](data/product-list-removals.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [data/product-list-removals.schema.json](data/product-list-removals.schema.json) |
 
 ## product-list-removals Example
 ```json

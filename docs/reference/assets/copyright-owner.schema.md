@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/assets/copyright-owner
 
 Describes the owner of a copyrighted work through name and ID
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Cannot be instantiated | Yes | Forbidden | Permitted | [assets/copyright-owner.schema.json](assets/copyright-owner.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Cannot be instantiated | Yes | Experimental | Forbidden | Permitted | [assets/copyright-owner.schema.json](assets/copyright-owner.schema.json) |
 
 ## Copyright Owner Example
 ```json
@@ -23,8 +23,8 @@ Describes the owner of a copyrighted work through name and ID
 
 | Property | Type | Group |
 |----------|------|-------|
-| [plus:copyrightOwnerID](#plus:copyrightOwnerID) | `string` | `https://ns.adobe.com/xdm/assets/copyright-owner#/definitions/copyright` |
-| [plus:copyrightOwnerName](#plus:copyrightOwnerName) | `string` | `https://ns.adobe.com/xdm/assets/copyright-owner#/definitions/copyright` |
+| [plus:copyrightOwnerID](#pluscopyrightownerid) | `string` | `https://ns.adobe.com/xdm/assets/copyright-owner#/definitions/copyright` |
+| [plus:copyrightOwnerName](#pluscopyrightownername) | `string` | `https://ns.adobe.com/xdm/assets/copyright-owner#/definitions/copyright` |
 
 ## plus:copyrightOwnerID
 ### Copyright Owner ID

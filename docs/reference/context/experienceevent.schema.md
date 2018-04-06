@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/context/experienceevent
 
 The core ExperienceEvent XDM is used to capture observations that are altering one or more related XDMs/entities. The ExperienceEvent captures information about the observation taking place and when it is occurring. It is critical for time domain analytics as it allows observation and analysis of changes that occur in windows of time and comparison with other windows of time to track trends. ExperienceEvent are either explicit or implicit. Explicit events are direct observations of a human action taking place during a session. Implicit events are events that are being raised without a direct human action. Examples of implicit events are scheduled email sending of newsletters, battery voltage reaching a certain threshold, a person entering into range of a proximity sensor. While not all events are easily categorized across all data sources, it is extremely valuable to harmonize similar events into similar types for processing where possible, and the XDM specifications does this by defining a set of enumerated **type** attribute values with specific semantic meanings. Where possible events must be constrained to these enumerated values to facilitate interoperability.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [context/experienceevent.schema.json](context/experienceevent.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [context/experienceevent.schema.json](context/experienceevent.schema.json) |
 
 ## Schema Hierarchy
 
@@ -145,14 +145,14 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
 | [@id](#@id) | `string` | Optional | ExperienceEvent (this schema) |
 | [xdm:application](#xdmapplication) | Application | Optional | ExperienceEvent (this schema) |
 | [xdm:commerce](#xdmcommerce) | Commerce | Optional | ExperienceEvent (this schema) |
-| [xdm:dataSource](#xdmdataSource) | Data Source | Optional | ExperienceEvent (this schema) |
+| [xdm:dataSource](#xdmdatasource) | Data Source | Optional | ExperienceEvent (this schema) |
 | [xdm:device](#xdmdevice) | Device | Optional | ExperienceEvent (this schema) |
-| [xdm:endUserIDs](#xdmendUserIDs) | End User IDs | Optional | ExperienceEvent (this schema) |
+| [xdm:endUserIDs](#xdmenduserids) | End User IDs | Optional | ExperienceEvent (this schema) |
 | [xdm:environment](#xdmenvironment) | Environment | Optional | ExperienceEvent (this schema) |
-| [xdm:locationContext](#xdmlocationContext) | Location Context | Optional | ExperienceEvent (this schema) |
+| [xdm:locationContext](#xdmlocationcontext) | Location Context | Optional | ExperienceEvent (this schema) |
 | [xdm:marketing](#xdmmarketing) | Marketing | Optional | ExperienceEvent (this schema) |
 | [xdm:metrics](#xdmmetrics) | Metrics | Optional | ExperienceEvent (this schema) |
-| [xdm:productListItems](#xdmproductListItems) | Product List Item | Optional | ExperienceEvent (this schema) |
+| [xdm:productListItems](#xdmproductlistitems) | Product List Item | Optional | ExperienceEvent (this schema) |
 | [xdm:search](#xdmsearch) | Search | Optional | ExperienceEvent (this schema) |
 | [xdm:timestamp](#xdmtimestamp) | `string` | Optional | ExperienceEvent (this schema) |
 | [xdm:web](#xdmweb) | Web | Optional | ExperienceEvent (this schema) |

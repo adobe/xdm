@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/data/paymentitem
 
 A payment associated with an order that defines the type of payment, the amount and the associated currency.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [data/paymentitem.schema.json](data/paymentitem.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [data/paymentitem.schema.json](data/paymentitem.schema.json) |
 
 ## Payment Item Example
 ```json
@@ -25,10 +25,10 @@ A payment associated with an order that defines the type of payment, the amount 
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:currencyCode](#xdmcurrencyCode) | `string` | Optional | Payment Item (this schema) |
-| [xdm:paymentAmount](#xdmpaymentAmount) | `number` | Optional | Payment Item (this schema) |
-| [xdm:paymentType](#xdmpaymentType) | `string` | Optional | Payment Item (this schema) |
-| [xdm:transactionID](#xdmtransactionID) | `string` | Optional | Payment Item (this schema) |
+| [xdm:currencyCode](#xdmcurrencycode) | `string` | Optional | Payment Item (this schema) |
+| [xdm:paymentAmount](#xdmpaymentamount) | `number` | Optional | Payment Item (this schema) |
+| [xdm:paymentType](#xdmpaymenttype) | `string` | Optional | Payment Item (this schema) |
+| [xdm:transactionID](#xdmtransactionid) | `string` | Optional | Payment Item (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:currencyCode

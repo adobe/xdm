@@ -24,9 +24,9 @@ for other Profile data such as preference, propensities and other attributes.
 
 
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [context/profile.schema.json](context/profile.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [context/profile.schema.json](context/profile.schema.json) |
 
 ## Schema Hierarchy
 
@@ -105,25 +105,25 @@ for other Profile data such as preference, propensities and other attributes.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:createdByBatchID](#xdmcreatedByBatchID) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmcreatedByBatchID) |
-| [xdm:geoUnitID](#xdmgeoUnitID) | `string` | Optional | Profile (this schema) |
-| [xdm:homeAddress](#xdmhomeAddress) | Address | Optional | Profile (this schema) |
-| [xdm:homePhone](#xdmhomePhone) | Phone Number | Optional | Profile (this schema) |
+| [xdm:createdByBatchID](#xdmcreatedbybatchid) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmcreatedbybatchid) |
+| [xdm:geoUnitID](#xdmgeounitid) | `string` | Optional | Profile (this schema) |
+| [xdm:homeAddress](#xdmhomeaddress) | Address | Optional | Profile (this schema) |
+| [xdm:homePhone](#xdmhomephone) | Phone Number | Optional | Profile (this schema) |
 | [xdm:identities](#xdmidentities) | Identity | Optional | Profile (this schema) |
-| [xdm:mobilePhone](#xdmmobilePhone) | Phone Number | Optional | Profile (this schema) |
-| [xdm:modifiedByBatchID](#xdmmodifiedByBatchID) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmmodifiedByBatchID) |
-| [xdm:optInOut](#xdmoptInOut) | OptInOut | Optional | Profile (this schema) |
-| [xdm:orgUnitID](#xdmorgUnitID) | `string` | Optional | Profile (this schema) |
+| [xdm:mobilePhone](#xdmmobilephone) | Phone Number | Optional | Profile (this schema) |
+| [xdm:modifiedByBatchID](#xdmmodifiedbybatchid) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmmodifiedbybatchid) |
+| [xdm:optInOut](#xdmoptinout) | OptInOut | Optional | Profile (this schema) |
+| [xdm:orgUnitID](#xdmorgunitid) | `string` | Optional | Profile (this schema) |
 | [xdm:organizations](#xdmorganizations) | `string[]` | Optional | Profile (this schema) |
 | [xdm:person](#xdmperson) | Person | Optional | Profile (this schema) |
-| [xdm:personalEmail](#xdmpersonalEmail) | Email Address | Optional | Profile (this schema) |
-| [xdm:pushNotificationTokens](#xdmpushNotificationTokens) | Push Notification Token | Optional | Profile (this schema) |
-| [xdm:repositoryCreatedBy](#xdmrepositoryCreatedBy) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmrepositoryCreatedBy) |
-| [xdm:repositoryLastModifiedBy](#xdmrepositoryLastModifiedBy) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmrepositoryLastModifiedBy) |
+| [xdm:personalEmail](#xdmpersonalemail) | Email Address | Optional | Profile (this schema) |
+| [xdm:pushNotificationTokens](#xdmpushnotificationtokens) | Push Notification Token | Optional | Profile (this schema) |
+| [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmrepositorycreatedby) |
+| [xdm:repositoryLastModifiedBy](#xdmrepositorylastmodifiedby) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmrepositorylastmodifiedby) |
 | [xdm:subscriptions](#xdmsubscriptions) | Subscription | Optional | Profile (this schema) |
-| [xdm:workAddress](#xdmworkAddress) | Address | Optional | Profile (this schema) |
-| [xdm:workEmail](#xdmworkEmail) | Email Address | Optional | Profile (this schema) |
-| [xdm:workPhone](#xdmworkPhone) | Phone Number | Optional | Profile (this schema) |
+| [xdm:workAddress](#xdmworkaddress) | Address | Optional | Profile (this schema) |
+| [xdm:workEmail](#xdmworkemail) | Email Address | Optional | Profile (this schema) |
+| [xdm:workPhone](#xdmworkphone) | Phone Number | Optional | Profile (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:createdByBatchID

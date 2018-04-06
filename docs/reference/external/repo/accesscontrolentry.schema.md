@@ -7,19 +7,11 @@ https://ns.adobe.com/xdm/external/repo/accesscontrolentry
 
 Schema for the Access Control Entry for the Access Control List of a resource
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [external/repo/accesscontrolentry.schema.json](external/repo/accesscontrolentry.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [external/repo/accesscontrolentry.schema.json](external/repo/accesscontrolentry.schema.json) |
 
 ## Access Control Entry Examples
-
-```json
-{
-  "repo:principal": "authenticated",
-  "repo:privilege": "read",
-  "repo:modifier": "grant"
-}
-```
 
 ```json
 {
@@ -34,6 +26,14 @@ Schema for the Access Control Entry for the Access Control List of a resource
     "write",
     "delete"
   ],
+  "repo:modifier": "grant"
+}
+```
+
+```json
+{
+  "repo:principal": "authenticated",
+  "repo:privilege": "read",
   "repo:modifier": "grant"
 }
 ```

@@ -10,9 +10,9 @@ A measure is a concrete quantifiable data point of a particular metric.
 It has a value, and optionally a unit, although the unit can be inferred from the measure&#39;s metric.
 
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [data/measure.schema.json](data/measure.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [data/measure.schema.json](data/measure.schema.json) |
 
 ## Measure Example
 ```json

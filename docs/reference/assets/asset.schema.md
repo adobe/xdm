@@ -14,9 +14,9 @@ As described in [What is a digital asset](https://www.realstorygroup.com/Blog/31
 All digital assets are content, and some content can include, link to, or refer digital assets. Content can furthermore be transformed (rendered) into digital assets, such as when exporting a PDF.
 
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [assets/asset.schema.json](assets/asset.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [assets/asset.schema.json](assets/asset.schema.json) |
 
 ## Schema Hierarchy
 
@@ -54,8 +54,8 @@ All digital assets are content, and some content can include, link to, or refer 
 | [@id](#@id) | `string` | Optional | [Content](../content/content.schema.md#@id) |
 | [_embedded](#_embedded) | `object` | Optional | [HAL Resource](../external/hal/hal.schema.md#_embedded) |
 | [_links](#_links) | `object` | Optional | [HAL Resource](../external/hal/hal.schema.md#_links) |
-| [cc:attributionName](#ccattributionName) | `string` | Optional | Asset (this schema) |
-| [cc:attributionUrl](#ccattributionUrl) | `string` | Optional | Asset (this schema) |
+| [cc:attributionName](#ccattributionname) | `string` | Optional | Asset (this schema) |
+| [cc:attributionUrl](#ccattributionurl) | `string` | Optional | Asset (this schema) |
 | [cc:license](#cclicense) | `string` | Optional | Asset (this schema) |
 | [dc:creator](#dccreator) | `string[]` | Optional | Asset (this schema) |
 | [dc:description](#dcdescription) | reference | Optional | Asset (this schema) |
@@ -64,46 +64,46 @@ All digital assets are content, and some content can include, link to, or refer 
 | [dc:rights](#dcrights) | reference | Optional | Asset (this schema) |
 | [dc:subject](#dcsubject) | `string[]` | Optional | Asset (this schema) |
 | [dc:title](#dctitle) | reference | Optional | Asset (this schema) |
-| [exif:gpsAltitude](#exifgpsAltitude) | `number` | Optional | Asset (this schema) |
-| [exif:gpsAltitudeRef](#exifgpsAltitudeRef) | `enum` | Optional | Asset (this schema) |
-| [exif:gpsLatitude](#exifgpsLatitude) | `string` | Optional | Asset (this schema) |
-| [exif:gpsLongitude](#exifgpsLongitude) | `string` | Optional | Asset (this schema) |
+| [exif:gpsAltitude](#exifgpsaltitude) | `number` | Optional | Asset (this schema) |
+| [exif:gpsAltitudeRef](#exifgpsaltituderef) | `enum` | Optional | Asset (this schema) |
+| [exif:gpsLatitude](#exifgpslatitude) | `string` | Optional | Asset (this schema) |
+| [exif:gpsLongitude](#exifgpslongitude) | `string` | Optional | Asset (this schema) |
 | [photoshop:credit](#photoshopcredit) | `string` | Optional | Asset (this schema) |
-| [plus:copyrightOwner](#pluscopyrightOwner) | reference | Optional | Asset (this schema) |
-| [plus:copyrightOwnerID](#pluscopyrightOwnerID) | `string` | Optional | [Copyright Owner](copyright-owner.schema.md#pluscopyrightOwnerID) |
-| [plus:copyrightOwnerName](#pluscopyrightOwnerName) | `string` | Optional | [Copyright Owner](copyright-owner.schema.md#pluscopyrightOwnerName) |
-| [repo:assetID](#repoassetID) | `string` | **Required** | [Asset](../external/repo/asset.schema.md#repoassetID) |
-| [repo:createDate](#repocreateDate) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#repocreateDate) |
+| [plus:copyrightOwner](#pluscopyrightowner) | reference | Optional | Asset (this schema) |
+| [plus:copyrightOwnerID](#pluscopyrightownerid) | `string` | Optional | [Copyright Owner](copyright-owner.schema.md#pluscopyrightownerid) |
+| [plus:copyrightOwnerName](#pluscopyrightownername) | `string` | Optional | [Copyright Owner](copyright-owner.schema.md#pluscopyrightownername) |
+| [repo:assetID](#repoassetid) | `string` | **Required** | [Asset](../external/repo/asset.schema.md#repoassetid) |
+| [repo:createDate](#repocreatedate) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#repocreatedate) |
 | [repo:etag](#repoetag) | `string` | **Required** | [Asset](../external/repo/asset.schema.md#repoetag) |
-| [repo:lastModifiedDate](#repolastModifiedDate) | `string` | **Required** | [Common Properties](../external/repo/common.schema.md#repolastModifiedDate) |
+| [repo:lastModifiedDate](#repolastmodifieddate) | `string` | **Required** | [Common Properties](../external/repo/common.schema.md#repolastmodifieddate) |
 | [repo:name](#reponame) | `string` | **Required** | [Common Properties](../external/repo/common.schema.md#reponame) |
 | [repo:path](#repopath) | `string` | **Required** | [Common Properties](../external/repo/common.schema.md#repopath) |
 | [repo:size](#reposize) | `integer` | **Required** | [Asset](../external/repo/asset.schema.md#reposize) |
 | [repo:version](#repoversion) | `string` | **Required** | [Asset](../external/repo/asset.schema.md#repoversion) |
-| [tiff:imageLength](#tiffimageLength) | `integer` | Optional | [Asset](../external/repo/asset.schema.md#tiffimageLength) |
-| [tiff:imageWidth](#tiffimageWidth) | `integer` | Optional | [Asset](../external/repo/asset.schema.md#tiffimageWidth) |
-| [xdm:aliasIDs](#xdmaliasIDs) | `array` | Optional | Asset (this schema) |
-| [xdm:documentID](#xdmdocumentID) | `string` | Optional | Asset (this schema) |
+| [tiff:imageLength](#tiffimagelength) | `integer` | Optional | [Asset](../external/repo/asset.schema.md#tiffimagelength) |
+| [tiff:imageWidth](#tiffimagewidth) | `integer` | Optional | [Asset](../external/repo/asset.schema.md#tiffimagewidth) |
+| [xdm:aliasIDs](#xdmaliasids) | `array` | Optional | Asset (this schema) |
+| [xdm:documentID](#xdmdocumentid) | `string` | Optional | Asset (this schema) |
 | [xdm:milestone](#xdmmilestone) | `object` | Optional | Asset (this schema) |
-| [xdm:notSafe](#xdmnotSafe) | `enum` | Optional | Asset (this schema) |
-| [xdm:repositoryCreatedBy](#xdmrepositoryCreatedBy) | `string` | Optional | [Content](../content/content.schema.md#xdmrepositoryCreatedBy) |
-| [xdm:repositoryLastModifiedBy](#xdmrepositoryLastModifiedBy) | `string` | Optional | [Content](../content/content.schema.md#xdmrepositoryLastModifiedBy) |
+| [xdm:notSafe](#xdmnotsafe) | `enum` | Optional | Asset (this schema) |
+| [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | Optional | [Content](../content/content.schema.md#xdmrepositorycreatedby) |
+| [xdm:repositoryLastModifiedBy](#xdmrepositorylastmodifiedby) | `string` | Optional | [Content](../content/content.schema.md#xdmrepositorylastmodifiedby) |
 | [xmp:artboards](#xmpartboards) | Artboard | Optional | Asset (this schema) |
-| [xmp:createDate](#xmpcreateDate) | `string` | Optional | Asset (this schema) |
-| [xmp:creatorTool](#xmpcreatorTool) | `string` | Optional | Asset (this schema) |
+| [xmp:createDate](#xmpcreatedate) | `string` | Optional | Asset (this schema) |
+| [xmp:creatorTool](#xmpcreatortool) | `string` | Optional | Asset (this schema) |
 | [xmp:fonts](#xmpfonts) | reference | Optional | Asset (this schema) |
 | [xmp:keywords](#xmpkeywords) | `array` | Optional | Asset (this schema) |
 | [xmp:layers](#xmplayers) | complex | Optional | Asset (this schema) |
-| [xmp:machineKeywords](#xmpmachineKeywords) | `object[]` | Optional | Asset (this schema) |
-| [xmp:modifyDate](#xmpmodifyDate) | `string` | Optional | Asset (this schema) |
+| [xmp:machineKeywords](#xmpmachinekeywords) | `object[]` | Optional | Asset (this schema) |
+| [xmp:modifyDate](#xmpmodifydate) | `string` | Optional | Asset (this schema) |
 | [xmp:rating](#xmprating) | `enum` | Optional | Asset (this schema) |
-| [xmpMM:history](#xmpMMhistory) | reference | Optional | Asset (this schema) |
-| [xmpMM:manageTo](#xmpMMmanageTo) | `string` | Optional | Asset (this schema) |
-| [xmpMM:manageUI](#xmpMMmanageUI) | `string` | Optional | Asset (this schema) |
-| [xmpRights:marked](#xmpRightsmarked) | `boolean` | Optional | Asset (this schema) |
-| [xmpRights:usageTerms](#xmpRightsusageTerms) | reference | Optional | Asset (this schema) |
-| [xmpRights:webStatement](#xmpRightswebStatement) | `string` | Optional | Asset (this schema) |
-| [xmpTPg:NPages](#xmpTPgNPages) | `integer` | Optional | Asset (this schema) |
+| [xmpMM:history](#xmpmmhistory) | reference | Optional | Asset (this schema) |
+| [xmpMM:manageTo](#xmpmmmanageto) | `string` | Optional | Asset (this schema) |
+| [xmpMM:manageUI](#xmpmmmanageui) | `string` | Optional | Asset (this schema) |
+| [xmpRights:marked](#xmprightsmarked) | `boolean` | Optional | Asset (this schema) |
+| [xmpRights:usageTerms](#xmprightsusageterms) | reference | Optional | Asset (this schema) |
+| [xmpRights:webStatement](#xmprightswebstatement) | `string` | Optional | Asset (this schema) |
+| [xmpTPg:NPages](#xmptpgnpages) | `integer` | Optional | Asset (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id

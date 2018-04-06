@@ -13,9 +13,9 @@ Each value consists of the (required) ID that is native to the data source, and 
 Additionally, this schema can include a property that describes the data source that is responsible for identity stitching.
 
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | No | Forbidden | Permitted | [context/enduserids.schema.json](context/enduserids.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | No | Experimental | Forbidden | Permitted | [context/enduserids.schema.json](context/enduserids.schema.json) |
 
 ## Schema Hierarchy
 
@@ -56,7 +56,7 @@ Additionally, this schema can include a property that describes the data source 
 | [https://ns.adobe.com/experience/analytics](#https//ns.adobe.com/experience/analytics) | Identity | Optional | End User IDs (this schema) |
 | [https://ns.adobe.com/experience/mcid](#https//ns.adobe.com/experience/mcid) | Identity | Optional | End User IDs (this schema) |
 | [https://ns.adobe.com/experience/tntid](#https//ns.adobe.com/experience/tntid) | Identity | Optional | End User IDs (this schema) |
-| `.+://.+` | reference | Pattern | End User IDs (this schema) |
+| `.+//.+` | reference | Pattern | End User IDs (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## https://ns.adobe.com/experience/analytics

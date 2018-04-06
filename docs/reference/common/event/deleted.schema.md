@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/common/event/deleted
 
 A `deleted event` follows semantics that are exactly equivalent to the semantics described by the [`delete activity`](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-delete), except for one difference. The `delete activity` can be used in imperative contexts, however, the `deleted event` can only be used in passive contexts.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | No | Forbidden | Permitted | [common/event/deleted.schema.json](common/event/deleted.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | No | Experimental | Forbidden | Permitted | [common/event/deleted.schema.json](common/event/deleted.schema.json) |
 
 ## Schema Hierarchy
 
@@ -51,7 +51,7 @@ A `deleted event` follows semantics that are exactly equivalent to the semantics
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@type](#@type) | `const` | Optional | Deleted Event (this schema) |
-| [xdm:objectType](#xdmobjectType) | complex | Optional | [EventEnvelope](../eventenvelope.schema.md#xdmobjectType) |
+| [xdm:objectType](#xdmobjecttype) | complex | Optional | [EventEnvelope](../eventenvelope.schema.md#xdmobjecttype) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @type

@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/channels/line
 
 Line Platform Notification
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [channels/line.schema.json](channels/line.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [channels/line.schema.json](channels/line.schema.json) |
 
 ## Schema Hierarchy
 
@@ -31,9 +31,9 @@ Line Platform Notification
 |----------|------|----------|------------|
 | [@id](#@id) | `const` | **Required** | LINE (this schema) |
 | [@type](#@type) | `const` | Optional | LINE (this schema) |
-| [xdm:contentTypes](#xdmcontentTypes) | `const` | Optional | LINE (this schema) |
-| [xdm:locationTypes](#xdmlocationTypes) | `const` | Optional | LINE (this schema) |
-| [xdm:metricTypes](#xdmmetricTypes) | `const` | Optional | LINE (this schema) |
+| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | LINE (this schema) |
+| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | LINE (this schema) |
+| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | LINE (this schema) |
 | [xdm:mode](#xdmmode) | `const` | Optional | LINE (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 

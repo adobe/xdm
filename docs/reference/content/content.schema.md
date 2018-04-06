@@ -19,9 +19,9 @@ _Content is created by human editors_ in an editorial process that involves crea
 _Content is created for human audiences_, which gives the content the ultimate value.
 
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [content/content.schema.json](content/content.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [content/content.schema.json](content/content.schema.json) |
 
 ## Schema Hierarchy
 
@@ -50,18 +50,18 @@ _Content is created for human audiences_, which gives the content the ultimate v
 | [_embedded](#_embedded) | `object` | Optional | [HAL Resource](../external/hal/hal.schema.md#_embedded) |
 | [_links](#_links) | `object` | Optional | [HAL Resource](../external/hal/hal.schema.md#_links) |
 | [dc:format](#dcformat) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#dcformat) |
-| [repo:assetID](#repoassetID) | `string` | Optional | [Asset](../external/repo/asset.schema.md#repoassetID) |
-| [repo:createDate](#repocreateDate) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#repocreateDate) |
+| [repo:assetID](#repoassetid) | `string` | Optional | [Asset](../external/repo/asset.schema.md#repoassetid) |
+| [repo:createDate](#repocreatedate) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#repocreatedate) |
 | [repo:etag](#repoetag) | `string` | Optional | [Asset](../external/repo/asset.schema.md#repoetag) |
-| [repo:lastModifiedDate](#repolastModifiedDate) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#repolastModifiedDate) |
+| [repo:lastModifiedDate](#repolastmodifieddate) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#repolastmodifieddate) |
 | [repo:name](#reponame) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#reponame) |
 | [repo:path](#repopath) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#repopath) |
 | [repo:size](#reposize) | `integer` | Optional | [Asset](../external/repo/asset.schema.md#reposize) |
 | [repo:version](#repoversion) | `string` | Optional | [Asset](../external/repo/asset.schema.md#repoversion) |
-| [tiff:imageLength](#tiffimageLength) | `integer` | Optional | [Asset](../external/repo/asset.schema.md#tiffimageLength) |
-| [tiff:imageWidth](#tiffimageWidth) | `integer` | Optional | [Asset](../external/repo/asset.schema.md#tiffimageWidth) |
-| [xdm:repositoryCreatedBy](#xdmrepositoryCreatedBy) | `string` | Optional | Content (this schema) |
-| [xdm:repositoryLastModifiedBy](#xdmrepositoryLastModifiedBy) | `string` | Optional | Content (this schema) |
+| [tiff:imageLength](#tiffimagelength) | `integer` | Optional | [Asset](../external/repo/asset.schema.md#tiffimagelength) |
+| [tiff:imageWidth](#tiffimagewidth) | `integer` | Optional | [Asset](../external/repo/asset.schema.md#tiffimagewidth) |
+| [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | Optional | Content (this schema) |
+| [xdm:repositoryLastModifiedBy](#xdmrepositorylastmodifiedby) | `string` | Optional | Content (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id

@@ -23,7 +23,7 @@ The transient circumstances related to the observation. Examples include locale 
   "xdm:geo": {
     "@id": "https://data.adobe.io/entities/geo/tokyo",
     "xdm:countryCode": "JP",
-    "xdm:stateProvince": "Tōkyō-to",
+    "xdm:stateProvince": "JP-13",
     "xdm:city": "Tōkyō",
     "xdm:postalCode": "141-0032",
     "schema:latitude": 35.6185,

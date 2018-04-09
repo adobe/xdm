@@ -7,25 +7,25 @@ https://ns.adobe.com/xdm/context/person-name
 
 Full name of a person
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [context/person-name.schema.json](context/person-name.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [context/person-name.schema.json](context/person-name.schema.json) |
 
 ## Person Name Examples
-
-```json
-{
-  "xdm:firstName": "John",
-  "xdm:middleName": "S",
-  "xdm:lastName": "Doe"
-}
-```
 
 ```json
 {
   "xdm:firstName": "三",
   "xdm:lastName": "张",
   "xdm:fullName": "张三"
+}
+```
+
+```json
+{
+  "xdm:firstName": "John",
+  "xdm:middleName": "S",
+  "xdm:lastName": "Doe"
 }
 ```
 
@@ -42,11 +42,11 @@ Full name of a person
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:courtesyTitle](#xdmcourtesyTitle) | `string` | Optional | Person Name (this schema) |
-| [xdm:firstName](#xdmfirstName) | `string` | Optional | Person Name (this schema) |
-| [xdm:fullName](#xdmfullName) | `string` | Optional | Person Name (this schema) |
-| [xdm:lastName](#xdmlastName) | `string` | Optional | Person Name (this schema) |
-| [xdm:middleName](#xdmmiddleName) | `string` | Optional | Person Name (this schema) |
+| [xdm:courtesyTitle](#xdmcourtesytitle) | `string` | Optional | Person Name (this schema) |
+| [xdm:firstName](#xdmfirstname) | `string` | Optional | Person Name (this schema) |
+| [xdm:fullName](#xdmfullname) | `string` | Optional | Person Name (this schema) |
+| [xdm:lastName](#xdmlastname) | `string` | Optional | Person Name (this schema) |
+| [xdm:middleName](#xdmmiddlename) | `string` | Optional | Person Name (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:courtesyTitle

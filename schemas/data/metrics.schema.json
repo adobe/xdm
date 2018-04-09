@@ -137,6 +137,15 @@
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
             "User complaint(s) have been received. This generally occurs when a recipient of a message reports it as spam."
+        },
+        "https://ns.adobe.com/xdm/data/metrics/direct-marketing/opens": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure"
+        },
+        "https://ns.adobe.com/xdm/data/metrics/direct-marketing/unsubscriptions": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure"
+        },
+        "https://ns.adobe.com/xdm/data/metrics/direct-marketing/not-sent": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure"
         }
       },
       "additionalProperties": false

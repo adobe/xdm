@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/external/activity-streams-2/object
 
 Describes an object of any kind. The [`Object`](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object) type serves as the base type for most of the other kinds of objects defined in the Activity Vocabulary, including other Core types such as `[Activity](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-activity)`, `[IntransitiveActivity](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-intransitiveactivity)`, `[Collection](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-collection)` and `[OrderedCollection](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-orderedcollection)`.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [external/activity-streams-2/object.schema.json](external/activity-streams-2/object.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [external/activity-streams-2/object.schema.json](external/activity-streams-2/object.schema.json) |
 
 ## Schema Hierarchy
 
@@ -43,7 +43,7 @@ Describes an object of any kind. The [`Object`](https://www.w3.org/TR/activityst
 | [@id](#@id) | `string` | Optional | [JSON-LD `@id`](id.schema.md#@id) |
 | [@type](#@type) | complex | Optional | [JSON-LD `@type`](type.schema.md#@type) |
 | [activitystreams:attachment](#activitystreamsattachment) | complex | Optional | Object (this schema) |
-| [activitystreams:attributedTo](#activitystreamsattributedTo) | complex | Optional | Object (this schema) |
+| [activitystreams:attributedTo](#activitystreamsattributedto) | complex | Optional | Object (this schema) |
 | [activitystreams:audience](#activitystreamsaudience) | complex | Optional | Object (this schema) |
 | [activitystreams:bcc](#activitystreamsbcc) | complex | Optional | Object (this schema) |
 | [activitystreams:bto](#activitystreamsbto) | complex | Optional | Object (this schema) |
@@ -51,18 +51,18 @@ Describes an object of any kind. The [`Object`](https://www.w3.org/TR/activityst
 | [activitystreams:content](#activitystreamscontent) | complex | Optional | Object (this schema) |
 | [activitystreams:context](#activitystreamscontext) | complex | Optional | Object (this schema) |
 | [activitystreams:duration](#activitystreamsduration) | `string` | Optional | Object (this schema) |
-| [activitystreams:endTime](#activitystreamsendTime) | `string` | Optional | Object (this schema) |
+| [activitystreams:endTime](#activitystreamsendtime) | `string` | Optional | Object (this schema) |
 | [activitystreams:generator](#activitystreamsgenerator) | complex | Optional | Object (this schema) |
 | [activitystreams:icon](#activitystreamsicon) | complex | Optional | Object (this schema) |
 | [activitystreams:image](#activitystreamsimage) | complex | Optional | Object (this schema) |
-| [activitystreams:inReplyTo](#activitystreamsinReplyTo) | complex | Optional | Object (this schema) |
+| [activitystreams:inReplyTo](#activitystreamsinreplyto) | complex | Optional | Object (this schema) |
 | [activitystreams:location](#activitystreamslocation) | complex | Optional | Object (this schema) |
-| [activitystreams:mediaType](#activitystreamsmediaType) | `string` | Optional | Object (this schema) |
+| [activitystreams:mediaType](#activitystreamsmediatype) | `string` | Optional | Object (this schema) |
 | [activitystreams:name](#activitystreamsname) | complex | Optional | Object (this schema) |
 | [activitystreams:preview](#activitystreamspreview) | complex | Optional | Object (this schema) |
 | [activitystreams:published](#activitystreamspublished) | `string` | Optional | Object (this schema) |
 | [activitystreams:replies](#activitystreamsreplies) | Collection | Optional | Object (this schema) |
-| [activitystreams:startTime](#activitystreamsstartTime) | `string` | Optional | Object (this schema) |
+| [activitystreams:startTime](#activitystreamsstarttime) | `string` | Optional | Object (this schema) |
 | [activitystreams:summary](#activitystreamssummary) | complex | Optional | Object (this schema) |
 | [activitystreams:tag](#activitystreamstag) | complex | Optional | Object (this schema) |
 | [activitystreams:to](#activitystreamsto) | complex | Optional | Object (this schema) |

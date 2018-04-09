@@ -99,14 +99,14 @@
             "$ref": "#/definitions/address"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stabilizing",
     "examples": [
         {
             "@id": "https://data.adobe.io/entities/address/123",
             "xdm:primary": false,
             "xdm:street1": "345 Park Ave",
             "xdm:city": "San Jose",
-            "xdm:stateProvince": "CA",
+            "xdm:stateProvince": "US-CA",
             "xdm:postalCode": "95110",
             "xdm:country": "United States",
             "xdm:countryCode": "US",

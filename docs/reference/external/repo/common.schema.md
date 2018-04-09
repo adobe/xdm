@@ -7,9 +7,9 @@ http://ns.adobe.com/adobecloud/core/1.0
 
 Common Properties for Storage in the Adobe Cloud Platform
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Cannot be instantiated | Yes | Forbidden | Permitted | [external/repo/common.schema.json](external/repo/common.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Cannot be instantiated | Yes | Experimental | Forbidden | Permitted | [external/repo/common.schema.json](external/repo/common.schema.json) |
 
 ## Common Properties Example
 ```json
@@ -24,11 +24,11 @@ Common Properties for Storage in the Adobe Cloud Platform
 
 | Property | Type | Group |
 |----------|------|-------|
-| [dc:format](#dc:format) | `string` | `http://ns.adobe.com/adobecloud/core/1.0#/definitions/common-properties` |
-| [repo:createDate](#repo:createDate) | `string` | `http://ns.adobe.com/adobecloud/core/1.0#/definitions/date-properties` |
-| [repo:lastModifiedDate](#repo:lastModifiedDate) | `string` | `http://ns.adobe.com/adobecloud/core/1.0#/definitions/date-properties` |
-| [repo:name](#repo:name) | `string` | `http://ns.adobe.com/adobecloud/core/1.0#/definitions/common-properties` |
-| [repo:path](#repo:path) | `string` | `http://ns.adobe.com/adobecloud/core/1.0#/definitions/common-properties` |
+| [dc:format](#dcformat) | `string` | `http://ns.adobe.com/adobecloud/core/1.0#/definitions/common-properties` |
+| [repo:createDate](#repocreatedate) | `string` | `http://ns.adobe.com/adobecloud/core/1.0#/definitions/date-properties` |
+| [repo:lastModifiedDate](#repolastmodifieddate) | `string` | `http://ns.adobe.com/adobecloud/core/1.0#/definitions/date-properties` |
+| [repo:name](#reponame) | `string` | `http://ns.adobe.com/adobecloud/core/1.0#/definitions/common-properties` |
+| [repo:path](#repopath) | `string` | `http://ns.adobe.com/adobecloud/core/1.0#/definitions/common-properties` |
 
 ## dc:format
 ### Format

@@ -9,11 +9,11 @@
     "@id": "08B3E5CE5822FC520A494229@AdobeOrg"
   },
   "activitystreams:generator": {
-    "@type": "http://ns.adobe.com/xdm/content/repository",
+    "@type": "https://ns.adobe.com/xdm/content/repository",
     "@id": "https://francois.corp.adobe.com:4502/"
   },
   "activitystreams:actor": {
-    "@type": "http://ns.adobe.com/adobecloudplatform/aem/user",
+    "@type": "https://ns.adobe.com/xdm-extensions/aem/user",
     "@id": "admin"
   },
   "activitystreams:object": {

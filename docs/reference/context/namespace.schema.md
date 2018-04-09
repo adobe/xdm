@@ -8,9 +8,9 @@ https://ns.adobe.com/xdm/context/namespace
 The namespace or unique identifier associated with a collection of data. Each EndUserID is associated with a given namespace. A user can create and obtain information about a namespace during the solution onboarding.
 
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [context/namespace.schema.json](context/namespace.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [context/namespace.schema.json](context/namespace.schema.json) |
 
 ## Namespace Example
 ```json

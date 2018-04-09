@@ -22,9 +22,9 @@ Some examples of the `rejected event` include:
 4. A purchase order was rejected by a firm owing to non payment of previous dues.
 
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | No | Forbidden | Permitted | [common/event/rejected.schema.json](common/event/rejected.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | No | Experimental | Forbidden | Permitted | [common/event/rejected.schema.json](common/event/rejected.schema.json) |
 
 ## Schema Hierarchy
 
@@ -74,7 +74,7 @@ Some examples of the `rejected event` include:
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@type](#@type) | `const` | Optional | Rejected Event (this schema) |
-| [xdm:objectType](#xdmobjectType) | complex | Optional | [EventEnvelope](../eventenvelope.schema.md#xdmobjectType) |
+| [xdm:objectType](#xdmobjecttype) | complex | Optional | [EventEnvelope](../eventenvelope.schema.md#xdmobjecttype) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @type

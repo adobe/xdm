@@ -10,9 +10,9 @@ A Resource Event is a high-level event that occurred in the processing, editing,
 Resource Events are typically attached directly to an asset.
 
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [assets/resource-event.schema.json](assets/resource-event.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [assets/resource-event.schema.json](assets/resource-event.schema.json) |
 
 ## Resource Event Example
 ```json
@@ -27,12 +27,12 @@ Resource Events are typically attached directly to an asset.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [stEvt:action](#stEvtaction) | complex | Optional | Resource Event (this schema) |
-| [stEvt:changed](#stEvtchanged) | `string` | Optional | Resource Event (this schema) |
-| [stEvt:instanceID](#stEvtinstanceID) | `string` | Optional | Resource Event (this schema) |
-| [stEvt:parameters](#stEvtparameters) | `string` | Optional | Resource Event (this schema) |
-| [stEvt:softwareAgent](#stEvtsoftwareAgent) | `string` | Optional | Resource Event (this schema) |
-| [stEvt:when](#stEvtwhen) | `string` | Optional | Resource Event (this schema) |
+| [stEvt:action](#stevtaction) | complex | Optional | Resource Event (this schema) |
+| [stEvt:changed](#stevtchanged) | `string` | Optional | Resource Event (this schema) |
+| [stEvt:instanceID](#stevtinstanceid) | `string` | Optional | Resource Event (this schema) |
+| [stEvt:parameters](#stevtparameters) | `string` | Optional | Resource Event (this schema) |
+| [stEvt:softwareAgent](#stevtsoftwareagent) | `string` | Optional | Resource Event (this schema) |
+| [stEvt:when](#stevtwhen) | `string` | Optional | Resource Event (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## stEvt:action

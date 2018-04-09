@@ -5,13 +5,12 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm-extensions/adobe/experience/analytics/analytics-extensions",
+  "$id":
+    "https://ns.adobe.com/xdm-extensions/adobe/experience/analytics/analytics-extensions",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Adobe Analytics Cloud Experience Event Extension",
   "type": "object",
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/context/experienceevent"
-  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Adobe Analytics Cloud Experience Event Extension.",
   "definitions": {
     "experienceevent": {
@@ -7689,41 +7688,49 @@
         "https://ns.adobe.com/experience/analytics/session/depth": {
           "title": "Session Depth",
           "type": "integer",
-          "description": "Current session depth (eg page number) for the end-user."
+          "description":
+            "Current session depth (eg page number) for the end-user."
         },
         "https://ns.adobe.com/experience/analytics/session/timestamp": {
           "title": "Session Entry Timestamp",
           "type": "integer",
-          "description": "The timestamp at the entry into this session. Milliseconds since midnight of January 1, 1970.",
+          "description":
+            "The timestamp at the entry into this session. Milliseconds since midnight of January 1, 1970.",
           "minimum": 1,
           "maximum": 9223372036854770000
         },
         "https://ns.adobe.com/experience/analytics/session/search": {
           "title": "Session Entry Search",
           "$ref": "https://ns.adobe.com/xdm/context/search",
-          "description": "The information related to web or mobile search at the entry of this session."
+          "description":
+            "The information related to web or mobile search at the entry of this session."
         },
         "https://ns.adobe.com/experience/analytics/session/web": {
           "title": "Session Entry Web",
           "$ref": "https://ns.adobe.com/xdm/context/web",
-          "description": "The information related to web page, link, and referrer at the entry of this session."
+          "description":
+            "The information related to web page, link, and referrer at the entry of this session."
         },
         "https://ns.adobe.com/experience/analytics/enduser/firsttimestamp": {
           "title": "End User First Timestamp",
           "type": "integer",
-          "description": "The timestamp for the first ExperienceEvent for this end-user. Milliseconds since midnight of January 1, 1970.",
+          "description":
+            "The timestamp for the first ExperienceEvent for this end-user. Milliseconds since midnight of January 1, 1970.",
           "minimum": 1,
           "maximum": 9223372036854770000
         },
         "https://ns.adobe.com/experience/analytics/enduser/firstweb": {
           "title": "End User First Web Details",
           "$ref": "https://ns.adobe.com/xdm/context/web",
-          "description": "The information related to web page, link, and referrer from the first ExperienceEvent for this end-user."
+          "description":
+            "The information related to web page, link, and referrer from the first ExperienceEvent for this end-user."
         }
       }
     }
   },
-  "allOf": [{
-    "$ref": "#/definitions/experienceevent"
-  }]
+  "allOf": [
+    {
+      "$ref": "#/definitions/experienceevent"
+    }
+  ]
 }

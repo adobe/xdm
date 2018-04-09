@@ -15,9 +15,9 @@ Full name of a person
 
 ```json
 {
-  "xdm:firstName": "فلانة",
-  "xdm:lastName": "الفلانية",
-  "xdm:fullName": "فلانة الفلانية"
+  "xdm:firstName": "三",
+  "xdm:lastName": "张",
+  "xdm:fullName": "张三"
 }
 ```
 
@@ -31,9 +31,9 @@ Full name of a person
 
 ```json
 {
-  "xdm:firstName": "三",
-  "xdm:lastName": "张",
-  "xdm:fullName": "张三"
+  "xdm:firstName": "فلانة",
+  "xdm:lastName": "الفلانية",
+  "xdm:fullName": "فلانة الفلانية"
 }
 ```
 

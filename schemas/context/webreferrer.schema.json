@@ -9,21 +9,20 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Web Referrer",
   "type": "object",
-  "description":
-    "The referrer of the web page, which is the URL a visitor came from immediately before the current web interaction was recorded",
+  "description": "The referrer of the web page, which is the URL a visitor came from immediately before the current web interaction was recorded",
   "definitions": {
     "webreferrer": {
-          "properties": {
-            "xdm:URL": {
-              "title": "URL",
-              "type": "string",
-              "description": "The referrer URL."
-            },
-            "xdm:referrerType": {
-              "title": "Referrer Type",
-              "type": "string",
-              "description": "The referrer type.",
-              "enum": [
+      "properties": {
+        "xdm:URL": {
+          "title": "URL",
+          "type": "string",
+          "description": "The referrer URL."
+        },
+        "xdm:referrerType": {
+          "title": "Referrer Type",
+          "type": "string",
+          "description": "The referrer type.",
+          "enum": [
                 "internal",
                 "external",
                 "search_engine",
@@ -31,23 +30,17 @@
                 "email",
                 "social"
               ],
-              "meta:enum": {
-                "internal":
-                  "Referral originated from the current domain or site.",
-                "external":
-                  "Referral originated from a different domain or site that was not a search or social type.",
-                "searchEngine":
-                  "Search engine referrers are identified when visitors use a search engine to access the site.",
-                "typedBookmarked":
-                  "Typed/bookmarked referrers are identified when visitors type your site’s URL directly into their browser, or if they access the site by selecting bookmarks.",
-                "email":
-                  "A referring domain is considered as an email referring domain type when visitors click an emailed message link containing the protocol imap:// or mail:// and arrive at the site.",
-                "social": "The referrer is identified as a social network."
-              }
-            }
+          "meta:enum": {
+            "internal": "Referral originated from the current domain or site.",
+            "external": "Referral originated from a different domain or site that was not a search or social type.",
+            "searchEngine": "Search engine referrers are identified when visitors use a search engine to access the site.",
+            "typedBookmarked": "Typed/bookmarked referrers are identified when visitors type your site’s URL directly into their browser, or if they access the site by selecting bookmarks.",
+            "email": "A referring domain is considered as an email referring domain type when visitors click an emailed message link containing the protocol imap:// or mail:// and arrive at the site.",
+            "social": "The referrer is identified as a social network."
           }
         }
       }
+    }
   },
   "allOf": [
     {

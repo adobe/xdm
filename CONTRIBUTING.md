@@ -563,6 +563,7 @@ Applying this descriptor might look like:
   "xdm:usage": "production"
 }
 ```
+
 ### Schema Stability Status
 
 Each schema should contains the enum property `meta:status` that designates it's stability. The value should be one of the following enumerations:

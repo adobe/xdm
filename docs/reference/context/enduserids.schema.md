@@ -13,9 +13,9 @@ Each value consists of the (required) ID that is native to the data source, and 
 Additionally, this schema can include a property that describes the data source that is responsible for identity stitching.
 
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | No | Forbidden | Permitted | [context/enduserids.schema.json](context/enduserids.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | No | Experimental | Forbidden | Permitted | [context/enduserids.schema.json](context/enduserids.schema.json) |
 
 ## Schema Hierarchy
 
@@ -26,23 +26,23 @@ Additionally, this schema can include a property that describes the data source 
 ```json
 {
   "https://ns.adobe.com/experience/mcid": {
-    "@id": "https://ns.adobe.com/entities/identity/92312748749128",
+    "@id": "https://data.adobe.io/entities/identity/92312748749128",
     "xdm:namespace": {
-      "@id": "https://ns.adobe.com/entities/namespace/4",
+      "@id": "https://data.adobe.io/entities/namespace/4",
       "xdm:code": "ECID"
     }
   },
   "https://ns.adobe.com/experience/analytics": {
-    "@id": "https://ns.adobe.com/entities/identity/2394509340-30453470347",
+    "@id": "https://data.adobe.io/entities/identity/2394509340-30453470347",
     "xdm:namespace": {
-      "@id": "https://ns.adobe.com/entities/namespace/11112",
+      "@id": "https://data.adobe.io/entities/namespace/11112",
       "xdm:code": "AVID"
     }
   },
   "https://ns.adobe.com/experience/tntid": {
-    "@id": "https://ns.adobe.com/entities/identity/1233ce17-20e0-4a2c-8198-2a77fd60cf4d",
+    "@id": "https://data.adobe.io/entities/identity/1233ce17-20e0-4a2c-8198-2a77fd60cf4d",
     "xdm:namespace": {
-      "@id": "https://ns.adobe.com/entities/namespace/33333",
+      "@id": "https://data.adobe.io/entities/namespace/33333",
       "xdm:code": "tnt0051"
     }
   }
@@ -56,7 +56,7 @@ Additionally, this schema can include a property that describes the data source 
 | [https://ns.adobe.com/experience/analytics](#https//ns.adobe.com/experience/analytics) | Identity | Optional | End User IDs (this schema) |
 | [https://ns.adobe.com/experience/mcid](#https//ns.adobe.com/experience/mcid) | Identity | Optional | End User IDs (this schema) |
 | [https://ns.adobe.com/experience/tntid](#https//ns.adobe.com/experience/tntid) | Identity | Optional | End User IDs (this schema) |
-| `.+://.+` | reference | Pattern | End User IDs (this schema) |
+| `.+//.+` | reference | Pattern | End User IDs (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## https://ns.adobe.com/experience/analytics

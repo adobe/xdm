@@ -8,9 +8,9 @@ https://ns.adobe.com/xdm/content/repository-policies/encryption
 Encryption policy represents how content in a given part of the repository is encrypted at-rest.
 
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Cannot be instantiated | Yes | Forbidden | Permitted | [content/repository-policies/encryption.schema.json](content/repository-policies/encryption.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Cannot be instantiated | Yes | Experimental | Forbidden | Permitted | [content/repository-policies/encryption.schema.json](content/repository-policies/encryption.schema.json) |
 
 ## At-Rest Encryption Example
 ```json
@@ -24,8 +24,8 @@ Encryption policy represents how content in a given part of the repository is en
 
 | Property | Type | Group |
 |----------|------|-------|
-| [xdm:keyStatus](#xdm:keyStatus) | `enum` | `https://ns.adobe.com/xdm/content/repository-policies/encryption#/definitions/encryption` |
-| [xdm:keyType](#xdm:keyType) | `enum` | `https://ns.adobe.com/xdm/content/repository-policies/encryption#/definitions/encryption` |
+| [xdm:keyStatus](#xdmkeystatus) | `enum` | `https://ns.adobe.com/xdm/content/repository-policies/encryption#/definitions/encryption` |
+| [xdm:keyType](#xdmkeytype) | `enum` | `https://ns.adobe.com/xdm/content/repository-policies/encryption#/definitions/encryption` |
 
 ## xdm:keyStatus
 

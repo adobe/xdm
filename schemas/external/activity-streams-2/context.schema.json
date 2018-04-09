@@ -7,7 +7,8 @@
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/xdm/external/activity-streams-2/context",
-  "description": "A a set of rules for interpreting a JSON-LD document as specified in [the Context of the JSON-LD specification](https://json-ld.org/spec/latest/json-ld/#the-context).",
+  "description":
+    "A a set of rules for interpreting a JSON-LD document as specified in [the Context of the JSON-LD specification](https://json-ld.org/spec/latest/json-ld/#the-context).",
   "definitions": {
     "keywords": {
       "type": "string",
@@ -90,10 +91,7 @@
             },
             {
               "type": "string",
-              "enum": [
-                "@id",
-                "@vocab"
-              ]
+              "enum": ["@id", "@vocab"]
             },
             {
               "type": "null"
@@ -103,7 +101,8 @@
         "@language": {
           "oneOf": [
             {
-              "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langstring#/definitions/tag"
+              "$ref":
+                "https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langstring#/definitions/tag"
             },
             {
               "type": "null"
@@ -117,12 +116,7 @@
             },
             {
               "type": "string",
-              "enum": [
-                "@set",
-                "@list",
-                "@language",
-                "@index"
-              ]
+              "enum": ["@set", "@list", "@language", "@index"]
             }
           ]
         }
@@ -163,7 +157,8 @@
         "@language": {
           "oneOf": [
             {
-              "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langstring#/definitions/tag"
+              "$ref":
+                "https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langstring#/definitions/tag"
             },
             {
               "type": "null"

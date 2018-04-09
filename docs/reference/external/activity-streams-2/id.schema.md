@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/external/activity-streams-2/id
 
 Provides the globally unique identifier for an [Object](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object) or [Link](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-link). Refer to the [JSON-LD](https://json-ld.org/spec/latest/json-ld/) specification for a complete description of the `@id` field.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | No | Forbidden | Permitted | [external/activity-streams-2/id.schema.json](external/activity-streams-2/id.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | No | Experimental | Forbidden | Permitted | [external/activity-streams-2/id.schema.json](external/activity-streams-2/id.schema.json) |
 
 ## JSON-LD `@id` Example
 ```json

@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/common/event/emitted
 
 The `emitted event` represents the activity of emitting a message or some `object`. This event type provides the capability to conform custom activities to the XDM Event Envelope. A custom activity is one where the system transporting the event isn&#39;t aware of what is in the event. A custom activity typically tends to be configured by a system&#39;s end user. Take, for example, custom OSGI events in AEM. One concern does arise regarding the `emitted event`, which is, its generic nature that allows for almost every activity to be modeled as &#39;message emitted&#39; activity. This, however, is a trap that publishers of the XDM Event Envelope must steer away from.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | No | Forbidden | Permitted | [common/event/emitted.schema.json](common/event/emitted.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | No | Experimental | Forbidden | Permitted | [common/event/emitted.schema.json](common/event/emitted.schema.json) |
 
 ## Schema Hierarchy
 
@@ -24,11 +24,11 @@ The `emitted event` represents the activity of emitting a message or some `objec
   "xdm:objectType": "https://osgi.org/javadoc/r4v42/org/osgi/service/event/Event.html#io/adobe/event/sample/sku",
   "activitystreams:published": "2016-07-16T19:20:30+01:00",
   "activitystreams:to": {
-    "@type": "https://ns.adobe.com/xdm-extensions/ims/organization#",
+    "@type": "https://ns.adobe.com/xdm-extensions/ims/organization",
     "https://ns.adobe.com/xdm-extensions/ims/organization#id": "08B3E5CE5822FC520A494229@AdobeOrg"
   },
   "activitystreams:generator": {
-    "@type": "https://ns.adobe.com/xdm/content/repository#",
+    "@type": "https://ns.adobe.com/xdm/content/repository",
     "xdm:root": "http://francois.corp.adobe.com:4502/"
   },
   "activitystreams:object": {
@@ -47,7 +47,7 @@ The `emitted event` represents the activity of emitting a message or some `objec
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@type](#@type) | `const` | Optional | Emitted Event (this schema) |
-| [xdm:objectType](#xdmobjectType) | complex | Optional | [EventEnvelope](../eventenvelope.schema.md#xdmobjectType) |
+| [xdm:objectType](#xdmobjecttype) | complex | Optional | [EventEnvelope](../eventenvelope.schema.md#xdmobjecttype) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @type

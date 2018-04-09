@@ -7,8 +7,13 @@
     "xdm:isErrorPage": false,
     "xdm:isHomePage": true
   },
+  "xdm:webLink": {
+    "xdm:type": "other",
+    "xdm:URL": "#stores",
+    "xdm:name": "product store"
+  },
   "xdm:webReferrer": {
-    "xdm:URL": "https://www.some-adserver.com",
-    "xdm:referrerType": "external"
+    "xdm:URL": "https://www.example.com/products",
+    "xdm:referrerType": "internal"
   }
 }

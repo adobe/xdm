@@ -4,9 +4,5 @@
   "xdm:name": "product home",
   "xdm:URL": "https://www.example.com",
   "xdm:isErrorPage": false,
-  "xdm:isHomePage": true,
-  "xdm:referrer": {
-    "xdm:URL": "https://www.some-adserver.com",
-    "xdm:referrerType": "external"
-  }
+  "xdm:isHomePage": true
 }

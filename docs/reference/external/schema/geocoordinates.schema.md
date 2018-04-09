@@ -7,14 +7,14 @@ http://schema.org/GeoCoordinates
 
 The geographic coordinates of a place. Based on [schema.org](http://schema.org/GeoCoordinates).
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [external/schema/geocoordinates.schema.json](external/schema/geocoordinates.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [external/schema/geocoordinates.schema.json](external/schema/geocoordinates.schema.json) |
 
 ## Geo Coordinates Example
 ```json
 {
-  "@id": "https://ns.adobe.com/entities/geo/111",
+  "@id": "https://data.adobe.io/entities/geo/111",
   "xdm:description": "New York",
   "xdm:latitude": 37.3308953,
   "xdm:longitude": -121.8939894,

@@ -40,7 +40,6 @@
             "^cc:.*$": {},
             "^stEvt:.*$": {},
             "^stFnt:.*$": {},
-            "^stLayer:.*$": {},
             "^stLayerGroup:.*$": {},
             "^stArtboard:.*$": {},
             "^exif:.*$": {},
@@ -168,11 +167,6 @@
                   "format": "url",
                   "const": "http://ns.adobe.com/xap/1.0/sType/Font#"
                 },
-                "stLayer": {
-                  "type": "string",
-                  "format": "url",
-                  "const": "http://ns.adobe.com/core/1.0/sType/Layer#"
-                },
                 "stLayerGroup": {
                   "type": "string",
                   "format": "url",
@@ -231,7 +225,6 @@
             "^cc:.*$": {},
             "^stEvt:.*$": {},
             "^stFnt:.*$": {},
-            "^stLayer:.*$": {},
             "^stLayerGroup:.*$": {},
             "^stArtboard:.*$": {},
             "^exif:.*$": {},
@@ -250,5 +243,6 @@
     {
       "$ref": "#/definitions/@context"
     }
-  ]
+  ],
+  "meta:status": "stabilizing"
 }

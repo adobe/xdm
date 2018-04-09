@@ -20,5 +20,6 @@
       "format": "uri"
     }
   },
-  "required": ["xdm:root"]
+  "required": ["xdm:root"],
+  "meta:status": "experimental"
 }

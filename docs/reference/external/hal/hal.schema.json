@@ -278,7 +278,24 @@
             "$ref": "#/definitions/hal"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
+        {
+            "_links": {
+                "self": {
+                    "href": "/orders/523"
+                },
+                "warehouse": {
+                    "href": "/warehouse/56"
+                },
+                "invoice": {
+                    "href": "/invoices/873"
+                }
+            },
+            "currency": "USD",
+            "status": "shipped",
+            "total": 10.2
+        },
         {
             "_links": {
                 "self": {
@@ -295,22 +312,6 @@
                         "href": "/warehouse/56"
                     }
                 ],
-                "invoice": {
-                    "href": "/invoices/873"
-                }
-            },
-            "currency": "USD",
-            "status": "shipped",
-            "total": 10.2
-        },
-        {
-            "_links": {
-                "self": {
-                    "href": "/orders/523"
-                },
-                "warehouse": {
-                    "href": "/warehouse/56"
-                },
                 "invoice": {
                     "href": "/invoices/873"
                 }

@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/context/environment
 
 Information about the surrounding situation the event observation occurred in, specifically detailing transitory information such as the network or software versions. &gt; IMPORTANT: All values should be aligned with the [DeviceAtlas](https://deviceatlas.com) database licensed by Adobe. 
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [context/environment.schema.json](context/environment.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [context/environment.schema.json](context/environment.schema.json) |
 
 ## Schema Hierarchy
 
@@ -42,23 +42,23 @@ Information about the surrounding situation the event observation occurred in, s
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:browserDetails](#xdmbrowserDetails) | Browser Details | Optional | Environment (this schema) |
+| [xdm:browserDetails](#xdmbrowserdetails) | Browser Details | Optional | Environment (this schema) |
 | [xdm:carrier](#xdmcarrier) | `string` | Optional | Environment (this schema) |
-| [xdm:colorDepth](#xdmcolorDepth) | `integer` | Optional | Environment (this schema) |
-| [xdm:connectionType](#xdmconnectionType) | `enum` | Optional | Environment (this schema) |
-| [xdm:ipV4](#xdmipV4) | `string` | Optional | Environment (this schema) |
-| [xdm:ipV6](#xdmipV6) | `string` | Optional | Environment (this schema) |
-| [xdm:operatingSystem](#xdmoperatingSystem) | `string` | Optional | Environment (this schema) |
-| [xdm:operatingSystemVersion](#xdmoperatingSystemVersion) | `string` | Optional | Environment (this schema) |
+| [xdm:colorDepth](#xdmcolordepth) | `integer` | Optional | Environment (this schema) |
+| [xdm:connectionType](#xdmconnectiontype) | `enum` | Optional | Environment (this schema) |
+| [xdm:ipV4](#xdmipv4) | `string` | Optional | Environment (this schema) |
+| [xdm:ipV6](#xdmipv6) | `string` | Optional | Environment (this schema) |
+| [xdm:operatingSystem](#xdmoperatingsystem) | `string` | Optional | Environment (this schema) |
+| [xdm:operatingSystemVersion](#xdmoperatingsystemversion) | `string` | Optional | Environment (this schema) |
 | [xdm:type](#xdmtype) | `enum` | Optional | Environment (this schema) |
-| [xdm:viewportHeight](#xdmviewportHeight) | `integer` | Optional | Environment (this schema) |
-| [xdm:viewportWidth](#xdmviewportWidth) | `integer` | Optional | Environment (this schema) |
+| [xdm:viewportHeight](#xdmviewportheight) | `integer` | Optional | Environment (this schema) |
+| [xdm:viewportWidth](#xdmviewportwidth) | `integer` | Optional | Environment (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:browserDetails
 ### Browser Details
 
-The browser specific details such as brwoser name, version, javascript version, user agent string, accept language.
+The browser specific details such as browser name, version, javascript version, user agent string, accept language.
 
 `xdm:browserDetails`
 * is optional

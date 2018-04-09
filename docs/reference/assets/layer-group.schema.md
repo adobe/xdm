@@ -10,9 +10,9 @@ Users can apply a common style to the group instead of working at individual lay
 A Layer Group can contain layers or other layer groups.
 
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [assets/layer-group.schema.json](assets/layer-group.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [assets/layer-group.schema.json](assets/layer-group.schema.json) |
 
 ## Layer Group Example
 ```json
@@ -21,11 +21,11 @@ A Layer Group can contain layers or other layer groups.
   "xdm:layers": [
     {
       "xdm:name": "Example Layer",
-      "stLayer:width": 768,
-      "stLayer:height": 768,
-      "stLayer:originY": 0,
-      "stLayer:originX": 256,
-      "stLayer:unit": "pixels",
+      "xdm:width": 768,
+      "xdm:height": 768,
+      "xdm:originY": 0,
+      "xdm:originX": 256,
+      "xdm:unit": "pixels",
       "xdm:visible": true
     },
     {
@@ -33,11 +33,11 @@ A Layer Group can contain layers or other layer groups.
       "xdm:layers": [
         {
           "xdm:name": "Example Layer in Nested Layer Group",
-          "stLayer:width": 768,
-          "stLayer:height": 768,
-          "stLayer:originY": 0,
-          "stLayer:originX": 256,
-          "stLayer:unit": "pixels",
+          "xdm:width": 768,
+          "xdm:height": 768,
+          "xdm:originY": 0,
+          "xdm:originX": 256,
+          "xdm:unit": "pixels",
           "xdm:visible": false
         }
       ]

@@ -74,6 +74,15 @@
                 },
                 "https://ns.adobe.com/xdm/data/metrics/direct-marketing/user-complaints": {
                     "$ref": "https://ns.adobe.com/xdm/data/measure"
+                },
+                "https://ns.adobe.com/xdm/data/metrics/direct-marketing/opens": {
+                    "$ref": "https://ns.adobe.com/xdm/data/measure"
+                },
+                "https://ns.adobe.com/xdm/data/metrics/direct-marketing/unsubscriptions": {
+                    "$ref": "https://ns.adobe.com/xdm/data/measure"
+                },
+                "https://ns.adobe.com/xdm/data/metrics/direct-marketing/not-sent": {
+                    "$ref": "https://ns.adobe.com/xdm/data/measure"
                 }
             },
             "additionalProperties": false
@@ -84,6 +93,7 @@
             "$ref": "#/definitions/metrics"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "https://ns.adobe.com/xdm/data/metrics/direct-marketing/sends": {

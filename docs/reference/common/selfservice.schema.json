@@ -6,7 +6,7 @@
         "of the License at https://creativecommons.org/licenses/by/4.0/"
     ],
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "$id": "https://ns.adobe.com/xdm/selfservice",
+    "$id": "https://ns.adobe.com/xdm/common/selfservice",
     "title": "Customer Managed Environment",
     "description": "A Customer Managed Environment is an environment that allows a system integration or deployer to manage applications. This is also known as selfservice.",
     "type": "object",
@@ -149,6 +149,7 @@
             ]
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "id": "urn:selfsevice:example1",

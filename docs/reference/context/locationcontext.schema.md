@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/context/locationcontext
 
 The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, working hours.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [context/locationcontext.schema.json](context/locationcontext.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [context/locationcontext.schema.json](context/locationcontext.schema.json) |
 
 ## Schema Hierarchy
 
@@ -21,9 +21,9 @@ The transient circumstances related to the observation. Examples include locale 
 {
   "xdm:localTime": "2001-07-04T12:08:56+01:00",
   "xdm:geo": {
-    "@id": "https://ns.adobe.com/entities/geo/tokyo",
+    "@id": "https://data.adobe.io/entities/geo/tokyo",
     "xdm:countryCode": "JP",
-    "xdm:stateProvince": "Tōkyō-to",
+    "xdm:stateProvince": "JP-13",
     "xdm:city": "Tōkyō",
     "xdm:postalCode": "141-0032",
     "schema:latitude": 35.6185,
@@ -37,7 +37,7 @@ The transient circumstances related to the observation. Examples include locale 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [xdm:geo](#xdmgeo) | Geo | Optional | Location Context (this schema) |
-| [xdm:localTime](#xdmlocalTime) | `string` | Optional | Location Context (this schema) |
+| [xdm:localTime](#xdmlocaltime) | `string` | Optional | Location Context (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:geo

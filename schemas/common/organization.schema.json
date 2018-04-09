@@ -69,8 +69,8 @@
           "title": "Organization Identifier",
           "type": "object",
           "meta:keys": {
-            "https://ns.adobe.com/external/dnb": "Dun & Bradstreet",
-            "https://ns.adobe.com/external/angellist": "Angellist"
+            "https://ns.adobe.com/xdm/external/dnb": "Dun & Bradstreet",
+            "https://ns.adobe.com/xdm/external/angellist": "Angellist"
           },
           "patternProperties": {
             ".+://.+": {
@@ -80,8 +80,8 @@
           },
           "examples": [
             {
-              "https://ns.adobe.com/external/dnb": "1234",
-              "https://ns.adobe.com/external/angellist":
+              "https://ns.adobe.com/xdm/external/dnb": "1234",
+              "https://ns.adobe.com/xdm/external/angellist":
                 "https://angel.co/adobe"
             }
           ],
@@ -92,11 +92,11 @@
           "title": "Market/Industry Classifier",
           "type": "object",
           "meta:keys": {
-            "https://ns.adobe.com/external/isic4":
+            "https://ns.adobe.com/xdm/external/isic4":
               "International Standard of Industrial Classification of All Economic Activities (ISIC)",
-            "https://ns.adobe.com/external/sic":
+            "https://ns.adobe.com/xdm/external/sic":
               "Standard Industrial Classification",
-            "https://ns.adobe.com/external/naics":
+            "https://ns.adobe.com/xdm/external/naics":
               "North American Industry Classification System"
           },
           "patternProperties": {
@@ -108,8 +108,8 @@
           },
           "examples": [
             {
-              "https://ns.adobe.com/external/sic": "1234",
-              "https://ns.adobe.com/external/naics": "1234"
+              "https://ns.adobe.com/xdm/external/sic": "1234",
+              "https://ns.adobe.com/xdm/external/naics": "1234"
             }
           ],
           "description":
@@ -122,5 +122,6 @@
     {
       "$ref": "#/definitions/organization"
     }
-  ]
+  ],
+  "meta:status": "stabilizing"
 }

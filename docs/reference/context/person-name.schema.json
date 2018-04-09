@@ -13,13 +13,13 @@
     "definitions": {
         "personname": {
             "properties": {
-                "xdm:givenName": {
-                    "title": "Given name",
+                "xdm:firstName": {
+                    "title": "First name",
                     "type": "string",
-                    "description": "The personal, given, or first name."
+                    "description": "The preferred personal, given, or first name."
                 },
-                "xdm:surname": {
-                    "title": "Surname",
+                "xdm:lastName": {
+                    "title": "Last name",
                     "type": "string",
                     "description": "The inherited family name, last name, surname, patronymic, or matronymic name."
                 },
@@ -33,7 +33,7 @@
                     "type": "string",
                     "description": "Normally an abbreviation of a persons *title*, *honorific*, or *salutation*.\nThe `courtesyTitle` is used in front of full or last name in opening texts.\ne.g Mr. Miss. or Dr J. Smith.\n"
                 },
-                "xdm:name": {
+                "xdm:fullName": {
                     "title": "Full name",
                     "type": "string",
                     "description": "The full name of the person, in writing order most commonly accepted in the language of the name."
@@ -46,21 +46,22 @@
             "$ref": "#/definitions/personname"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
-            "xdm:givenName": "John",
+            "xdm:firstName": "三",
+            "xdm:lastName": "张",
+            "xdm:fullName": "张三"
+        },
+        {
+            "xdm:firstName": "John",
             "xdm:middleName": "S",
-            "xdm:surname": "Doe"
+            "xdm:lastName": "Doe"
         },
         {
-            "xdm:givenName": "三",
-            "xdm:surname": "张",
-            "xdm:name": "张三"
-        },
-        {
-            "xdm:givenName": "فلانة",
-            "xdm:surname": "الفلانية",
-            "xdm:name": "فلانة الفلانية"
+            "xdm:firstName": "فلانة",
+            "xdm:lastName": "الفلانية",
+            "xdm:fullName": "فلانة الفلانية"
         }
     ]
 }

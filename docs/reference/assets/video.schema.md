@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/assets/video
 
 The Video class is for video assets, i.e. assets that consist of moving pictures and, optionally, sound.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [assets/video.schema.json](assets/video.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [assets/video.schema.json](assets/video.schema.json) |
 
 ## Schema Hierarchy
 
@@ -66,8 +66,8 @@ The Video class is for video assets, i.e. assets that consist of moving pictures
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [cc:attributionName](#ccattributionName) | `string` | Optional | [Asset](asset.schema.md#ccattributionName) |
-| [cc:attributionUrl](#ccattributionUrl) | `string` | Optional | [Asset](asset.schema.md#ccattributionUrl) |
+| [cc:attributionName](#ccattributionname) | `string` | Optional | [Asset](asset.schema.md#ccattributionname) |
+| [cc:attributionUrl](#ccattributionurl) | `string` | Optional | [Asset](asset.schema.md#ccattributionurl) |
 | [cc:license](#cclicense) | `string` | Optional | [Asset](asset.schema.md#cclicense) |
 | [dc:creator](#dccreator) | `string[]` | Optional | [Asset](asset.schema.md#dccreator) |
 | [dc:description](#dcdescription) | reference | Optional | [Asset](asset.schema.md#dcdescription) |
@@ -75,37 +75,37 @@ The Video class is for video assets, i.e. assets that consist of moving pictures
 | [dc:rights](#dcrights) | reference | Optional | [Asset](asset.schema.md#dcrights) |
 | [dc:subject](#dcsubject) | `string[]` | Optional | [Asset](asset.schema.md#dcsubject) |
 | [dc:title](#dctitle) | reference | Optional | [Asset](asset.schema.md#dctitle) |
-| [exif:gpsAltitude](#exifgpsAltitude) | `number` | Optional | [Asset](asset.schema.md#exifgpsAltitude) |
-| [exif:gpsAltitudeRef](#exifgpsAltitudeRef) | `enum` | Optional | [Asset](asset.schema.md#exifgpsAltitudeRef) |
-| [exif:gpsLatitude](#exifgpsLatitude) | `string` | Optional | [Asset](asset.schema.md#exifgpsLatitude) |
-| [exif:gpsLongitude](#exifgpsLongitude) | `string` | Optional | [Asset](asset.schema.md#exifgpsLongitude) |
+| [exif:gpsAltitude](#exifgpsaltitude) | `number` | Optional | [Asset](asset.schema.md#exifgpsaltitude) |
+| [exif:gpsAltitudeRef](#exifgpsaltituderef) | `enum` | Optional | [Asset](asset.schema.md#exifgpsaltituderef) |
+| [exif:gpsLatitude](#exifgpslatitude) | `string` | Optional | [Asset](asset.schema.md#exifgpslatitude) |
+| [exif:gpsLongitude](#exifgpslongitude) | `string` | Optional | [Asset](asset.schema.md#exifgpslongitude) |
 | [photoshop:credit](#photoshopcredit) | `string` | Optional | [Asset](asset.schema.md#photoshopcredit) |
-| [plus:copyrightOwner](#pluscopyrightOwner) | reference | Optional | [Asset](asset.schema.md#pluscopyrightOwner) |
-| [tiff:imageLength](#tiffimageLength) | `integer` | Optional | [Rectangular Media](rectangular.schema.md#tiffimageLength) |
-| [tiff:imageWidth](#tiffimageWidth) | `integer` | Optional | [Rectangular Media](rectangular.schema.md#tiffimageWidth) |
-| [xdm:aliasIDs](#xdmaliasIDs) | `array` | Optional | [Asset](asset.schema.md#xdmaliasIDs) |
-| [xdm:aspectRatio](#xdmaspectRatio) | `number` | Optional | [Rectangular Media](rectangular.schema.md#xdmaspectRatio) |
-| [xdm:documentID](#xdmdocumentID) | `string` | Optional | [Asset](asset.schema.md#xdmdocumentID) |
+| [plus:copyrightOwner](#pluscopyrightowner) | reference | Optional | [Asset](asset.schema.md#pluscopyrightowner) |
+| [tiff:imageLength](#tiffimagelength) | `integer` | Optional | [Rectangular Media](rectangular.schema.md#tiffimagelength) |
+| [tiff:imageWidth](#tiffimagewidth) | `integer` | Optional | [Rectangular Media](rectangular.schema.md#tiffimagewidth) |
+| [xdm:aliasIDs](#xdmaliasids) | `array` | Optional | [Asset](asset.schema.md#xdmaliasids) |
+| [xdm:aspectRatio](#xdmaspectratio) | `number` | Optional | [Rectangular Media](rectangular.schema.md#xdmaspectratio) |
+| [xdm:documentID](#xdmdocumentid) | `string` | Optional | [Asset](asset.schema.md#xdmdocumentid) |
 | [xdm:extent](#xdmextent) | `integer` | Optional | Video (this schema) |
 | [xdm:milestone](#xdmmilestone) | `object` | Optional | [Asset](asset.schema.md#xdmmilestone) |
-| [xdm:notSafe](#xdmnotSafe) | `enum` | Optional | [Asset](asset.schema.md#xdmnotSafe) |
+| [xdm:notSafe](#xdmnotsafe) | `enum` | Optional | [Asset](asset.schema.md#xdmnotsafe) |
 | [xmp:artboards](#xmpartboards) | Artboard | Optional | [Asset](asset.schema.md#xmpartboards) |
-| [xmp:createDate](#xmpcreateDate) | `string` | Optional | [Asset](asset.schema.md#xmpcreateDate) |
-| [xmp:creatorTool](#xmpcreatorTool) | `string` | Optional | [Asset](asset.schema.md#xmpcreatorTool) |
+| [xmp:createDate](#xmpcreatedate) | `string` | Optional | [Asset](asset.schema.md#xmpcreatedate) |
+| [xmp:creatorTool](#xmpcreatortool) | `string` | Optional | [Asset](asset.schema.md#xmpcreatortool) |
 | [xmp:fonts](#xmpfonts) | reference | Optional | [Asset](asset.schema.md#xmpfonts) |
 | [xmp:keywords](#xmpkeywords) | `array` | Optional | [Asset](asset.schema.md#xmpkeywords) |
 | [xmp:layers](#xmplayers) | complex | Optional | [Asset](asset.schema.md#xmplayers) |
-| [xmp:machineKeywords](#xmpmachineKeywords) | `object[]` | Optional | [Asset](asset.schema.md#xmpmachineKeywords) |
-| [xmp:modifyDate](#xmpmodifyDate) | `string` | Optional | [Asset](asset.schema.md#xmpmodifyDate) |
+| [xmp:machineKeywords](#xmpmachinekeywords) | `object[]` | Optional | [Asset](asset.schema.md#xmpmachinekeywords) |
+| [xmp:modifyDate](#xmpmodifydate) | `string` | Optional | [Asset](asset.schema.md#xmpmodifydate) |
 | [xmp:rating](#xmprating) | `enum` | Optional | [Asset](asset.schema.md#xmprating) |
-| [xmpDM:videoFrameRate](#xmpDMvideoFrameRate) | `string` | Optional | Video (this schema) |
-| [xmpMM:history](#xmpMMhistory) | reference | Optional | [Asset](asset.schema.md#xmpMMhistory) |
-| [xmpMM:manageTo](#xmpMMmanageTo) | `string` | Optional | [Asset](asset.schema.md#xmpMMmanageTo) |
-| [xmpMM:manageUI](#xmpMMmanageUI) | `string` | Optional | [Asset](asset.schema.md#xmpMMmanageUI) |
-| [xmpRights:marked](#xmpRightsmarked) | `boolean` | Optional | [Asset](asset.schema.md#xmpRightsmarked) |
-| [xmpRights:usageTerms](#xmpRightsusageTerms) | reference | Optional | [Asset](asset.schema.md#xmpRightsusageTerms) |
-| [xmpRights:webStatement](#xmpRightswebStatement) | `string` | Optional | [Asset](asset.schema.md#xmpRightswebStatement) |
-| [xmpTPg:NPages](#xmpTPgNPages) | `integer` | Optional | [Asset](asset.schema.md#xmpTPgNPages) |
+| [xmpDM:videoFrameRate](#xmpdmvideoframerate) | `string` | Optional | Video (this schema) |
+| [xmpMM:history](#xmpmmhistory) | reference | Optional | [Asset](asset.schema.md#xmpmmhistory) |
+| [xmpMM:manageTo](#xmpmmmanageto) | `string` | Optional | [Asset](asset.schema.md#xmpmmmanageto) |
+| [xmpMM:manageUI](#xmpmmmanageui) | `string` | Optional | [Asset](asset.schema.md#xmpmmmanageui) |
+| [xmpRights:marked](#xmprightsmarked) | `boolean` | Optional | [Asset](asset.schema.md#xmprightsmarked) |
+| [xmpRights:usageTerms](#xmprightsusageterms) | reference | Optional | [Asset](asset.schema.md#xmprightsusageterms) |
+| [xmpRights:webStatement](#xmprightswebstatement) | `string` | Optional | [Asset](asset.schema.md#xmprightswebstatement) |
+| [xmpTPg:NPages](#xmptpgnpages) | `integer` | Optional | [Asset](asset.schema.md#xmptpgnpages) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## cc:attributionName

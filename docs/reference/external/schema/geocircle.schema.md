@@ -7,9 +7,9 @@ http://schema.org/GeoCircle
 
 A circular region of a particular radius centered on a GeoCoordinate. Based on [schema.org](http://schema.org/GeoCircle)
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [external/schema/geocircle.schema.json](external/schema/geocircle.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [external/schema/geocircle.schema.json](external/schema/geocircle.schema.json) |
 
 ## Schema Hierarchy
 
@@ -19,10 +19,10 @@ A circular region of a particular radius centered on a GeoCoordinate. Based on [
 ## Geo Circle Example
 ```json
 {
-  "@id": "https://ns.adobe.com/entities/geo/circleid123",
+  "@id": "https://data.adobe.io/entities/geo/circleid123",
   "schema:description": "New York Metro",
   "schema:coordinates": {
-    "@id": "https://ns.adobe.com/entities/geo/111",
+    "@id": "https://data.adobe.io/entities/geo/111",
     "schema:description": "New York",
     "schema:latitude": 37.3308953,
     "schema:longitude": -121.8939894,

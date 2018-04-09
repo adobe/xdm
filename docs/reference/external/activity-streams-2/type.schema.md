@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/external/activity-streams-2/type
 
 Identifies the [Object](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object) or [Link](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-link) type. Multiple values may be specified. Refer to the [JSON-LD](https://json-ld.org/spec/latest/json-ld/) specification for a complete description of the `@type` field.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [external/activity-streams-2/type.schema.json](external/activity-streams-2/type.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [external/activity-streams-2/type.schema.json](external/activity-streams-2/type.schema.json) |
 
 ## JSON-LD `@type` Example
 ```json

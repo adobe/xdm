@@ -24,7 +24,7 @@
                     "format": "uri",
                     "description": "The namespace of the service that is used to identify the device type.",
                     "meta:enum": {
-                        "https://ns.adobe.com/external/deviceatlas": "Device Atlas"
+                        "https://ns.adobe.com/xdm/external/deviceatlas": "Device Atlas"
                     }
                 },
                 "xdm:type": {
@@ -80,10 +80,11 @@
             "$ref": "#/definitions/device"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "xdm:typeID": "TypeIdentifier-111",
-            "xdm:typeIDService": "https://ns.adobe.com/external/deviceatlas",
+            "xdm:typeIDService": "https://ns.adobe.com/xdm/external/deviceatlas",
             "xdm:type": "mobile",
             "xdm:manufacturer": "Apple",
             "xdm:model": "iPhone 6",

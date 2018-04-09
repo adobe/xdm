@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/assets/variable-unit-rectangular
 
 This is an abstract schema for objects of rectangular dimensions and position, with a user-specified unit of measurement. Examples include `Artboard` and `Layer`.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Cannot be instantiated | Yes | Forbidden | Permitted | [assets/variable-unit-rectangular.schema.json](assets/variable-unit-rectangular.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Cannot be instantiated | Yes | Experimental | Forbidden | Permitted | [assets/variable-unit-rectangular.schema.json](assets/variable-unit-rectangular.schema.json) |
 
 ## Rectangular Object (measured in variable unit) Example
 ```json
@@ -26,11 +26,11 @@ This is an abstract schema for objects of rectangular dimensions and position, w
 
 | Property | Type | Group |
 |----------|------|-------|
-| [xdm:height](#xdm:height) | `integer` | `https://ns.adobe.com/xdm/assets/variable-unit-rectangular#/definitions/rectangular` |
-| [xdm:originX](#xdm:originX) | `integer` | `https://ns.adobe.com/xdm/assets/variable-unit-rectangular#/definitions/rectangular` |
-| [xdm:originY](#xdm:originY) | `integer` | `https://ns.adobe.com/xdm/assets/variable-unit-rectangular#/definitions/rectangular` |
-| [xdm:unit](#xdm:unit) | `string` | `https://ns.adobe.com/xdm/assets/variable-unit-rectangular#/definitions/rectangular` |
-| [xdm:width](#xdm:width) | `integer` | `https://ns.adobe.com/xdm/assets/variable-unit-rectangular#/definitions/rectangular` |
+| [xdm:height](#xdmheight) | `integer` | `https://ns.adobe.com/xdm/assets/variable-unit-rectangular#/definitions/rectangular` |
+| [xdm:originX](#xdmoriginx) | `integer` | `https://ns.adobe.com/xdm/assets/variable-unit-rectangular#/definitions/rectangular` |
+| [xdm:originY](#xdmoriginy) | `integer` | `https://ns.adobe.com/xdm/assets/variable-unit-rectangular#/definitions/rectangular` |
+| [xdm:unit](#xdmunit) | `string` | `https://ns.adobe.com/xdm/assets/variable-unit-rectangular#/definitions/rectangular` |
+| [xdm:width](#xdmwidth) | `integer` | `https://ns.adobe.com/xdm/assets/variable-unit-rectangular#/definitions/rectangular` |
 
 ## xdm:height
 ### Height

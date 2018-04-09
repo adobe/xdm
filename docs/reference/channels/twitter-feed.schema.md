@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/channels/twitter-feed
 
 The Twitter Feed, i.e. the stream of user-generated tweets. This does not include Twitter direct messages.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [channels/twitter-feed.schema.json](channels/twitter-feed.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [channels/twitter-feed.schema.json](channels/twitter-feed.schema.json) |
 
 ## Schema Hierarchy
 
@@ -31,9 +31,9 @@ The Twitter Feed, i.e. the stream of user-generated tweets. This does not includ
 |----------|------|----------|------------|
 | [@id](#@id) | `const` | **Required** | Twitter Feed (this schema) |
 | [@type](#@type) | `const` | Optional | Twitter Feed (this schema) |
-| [xdm:contentTypes](#xdmcontentTypes) | `const` | Optional | Twitter Feed (this schema) |
-| [xdm:locationTypes](#xdmlocationTypes) | `const` | Optional | Twitter Feed (this schema) |
-| [xdm:metricTypes](#xdmmetricTypes) | `const` | Optional | Twitter Feed (this schema) |
+| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | Twitter Feed (this schema) |
+| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | Twitter Feed (this schema) |
+| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | Twitter Feed (this schema) |
 | [xdm:mode](#xdmmode) | `const` | Optional | Twitter Feed (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 

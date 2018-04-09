@@ -13,7 +13,7 @@
     "@id": "https://francois.corp.adobe.com:4502/"
   },
   "activitystreams:actor": {
-    "@type": "https://ns.adobe.com/xdm-extensions/aem/user",
+    "@type": "https://ns.adobe.com/experience/aem/user",
     "@id": "admin"
   },
   "activitystreams:object": {

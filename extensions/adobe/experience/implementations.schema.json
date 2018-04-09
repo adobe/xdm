@@ -26,7 +26,8 @@
     "https://ns.adobe.com/experience/idservice": {
       "title": "Client Implementation for Adobe Visitor Service",
       "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
-      "description": "Client details interacting with Adobe Experience Cloud ID Service."
+      "description":
+        "Client details interacting with Adobe Experience Cloud ID Service."
     }
   }
 }

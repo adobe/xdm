@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/common/geo
 
 The geographic related data where an event was observed.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [common/geo.schema.json](common/geo.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [common/geo.schema.json](common/geo.schema.json) |
 
 ## Schema Hierarchy
 
@@ -20,7 +20,7 @@ The geographic related data where an event was observed.
 
 ```json
 {
-  "@id": "https://ns.adobe.com/entities/geo/tokyo",
+  "@id": "https://data.adobe.io/entities/geo/tokyo",
   "xdm:countryCode": "JP",
   "xdm:stateProvince": "Tōkyō-to",
   "xdm:city": "Tōkyō",
@@ -32,7 +32,7 @@ The geographic related data where an event was observed.
 
 ```json
 {
-  "@id": "https://ns.adobe.com/entities/geo/potsdam",
+  "@id": "https://data.adobe.io/entities/geo/potsdam",
   "xdm:countryCode": "DE",
   "xdm:stateProvince": "Brandenburg",
   "xdm:city": "Potsdam",
@@ -51,11 +51,11 @@ The geographic related data where an event was observed.
 | [schema:latitude](#schemalatitude) | `number` | Optional | [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemalatitude) |
 | [schema:longitude](#schemalongitude) | `number` | Optional | [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemalongitude) |
 | [xdm:city](#xdmcity) | `string` | Optional | Geo (this schema) |
-| [xdm:countryCode](#xdmcountryCode) | `string` | Optional | Geo (this schema) |
-| [xdm:dmaID](#xdmdmaID) | `integer` | Optional | Geo (this schema) |
-| [xdm:msaID](#xdmmsaID) | `integer` | Optional | Geo (this schema) |
-| [xdm:postalCode](#xdmpostalCode) | `string` | Optional | Geo (this schema) |
-| [xdm:stateProvince](#xdmstateProvince) | `string` | Optional | Geo (this schema) |
+| [xdm:countryCode](#xdmcountrycode) | `string` | Optional | Geo (this schema) |
+| [xdm:dmaID](#xdmdmaid) | `integer` | Optional | Geo (this schema) |
+| [xdm:msaID](#xdmmsaid) | `integer` | Optional | Geo (this schema) |
+| [xdm:postalCode](#xdmpostalcode) | `string` | Optional | Geo (this schema) |
+| [xdm:stateProvince](#xdmstateprovince) | `string` | Optional | Geo (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id

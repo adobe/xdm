@@ -10,9 +10,9 @@ Examples for componentized pages include web pages as managed by a web content m
 Componentized pages are modular (consist of smaller content components), hyperlinked (link to other pages), and include digital assets (like images or videos).
 
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [content/componentized-page.schema.json](content/componentized-page.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [content/componentized-page.schema.json](content/componentized-page.schema.json) |
 
 ## Schema Hierarchy
 
@@ -36,7 +36,7 @@ Componentized pages are modular (consist of smaller content components), hyperli
     "type": "https://francois.corp.adobe.com:4502/apps/foundation/teaser",
     "title": "Sunglasses",
     "image": {
-      "@type": "http://ns.adobe.com/xdm/assets/asset",
+      "@type": "https://ns.adobe.com/xdm/assets/asset",
       "repo:assetID": "urn:aaid:aem:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
       "@id": "https://francois.corp.adobe.com:4502/content/dam/Fx_DUKE-small.jpg"
     }
@@ -56,7 +56,7 @@ Componentized pages are modular (consist of smaller content components), hyperli
       "image0": {
         "type": "https://francois.corp.adobe.com:4502/apps/foundation/image",
         "image": {
-          "@type": "http://ns.adobe.com/xdm/assets/asset",
+          "@type": "https://ns.adobe.com/xdm/assets/asset",
           "asset_id": "urn:aaid:aem:4123ba4c-93a8-4c5d-b979-1234e4318185",
           "id": "https://francois.corp.adobe.com:4502/content/dam/Glasses-small.jpg"
         }
@@ -79,10 +79,10 @@ Componentized pages are modular (consist of smaller content components), hyperli
 | [repo:name](#reponame) | `string` | **Required** | Componentized Page (this schema) |
 | [repo:path](#repopath) | `string` | **Required** | Componentized Page (this schema) |
 | [xdm:language](#xdmlanguage) | `string` | Optional | Componentized Page (this schema) |
-| [xdm:navOrder](#xdmnavOrder) | `integer` | Optional | Componentized Page (this schema) |
-| [xdm:repositoryCreatedBy](#xdmrepositoryCreatedBy) | `string` | **Required** | [Content](content.schema.md#xdmrepositoryCreatedBy) |
-| [xdm:repositoryLastModifiedBy](#xdmrepositoryLastModifiedBy) | `string` | **Required** | [Content](content.schema.md#xdmrepositoryLastModifiedBy) |
-| [xdm:shortTitle](#xdmshortTitle) | `string` | Optional | Componentized Page (this schema) |
+| [xdm:navOrder](#xdmnavorder) | `integer` | Optional | Componentized Page (this schema) |
+| [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | **Required** | [Content](content.schema.md#xdmrepositorycreatedby) |
+| [xdm:repositoryLastModifiedBy](#xdmrepositorylastmodifiedby) | `string` | **Required** | [Content](content.schema.md#xdmrepositorylastmodifiedby) |
+| [xdm:shortTitle](#xdmshorttitle) | `string` | Optional | Componentized Page (this schema) |
 | [xdm:template](#xdmtemplate) | `string` | Optional | Componentized Page (this schema) |
 | [xdm:unlisted](#xdmunlisted) | `boolean` | Optional | Componentized Page (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |

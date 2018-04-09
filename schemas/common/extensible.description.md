@@ -1,10 +1,10 @@
-This schema can be included by referencing `https://ns.adobe.com/xdm/base/extensible.schema.json`. It will enable property-based extensibility with namespace protection.
+This schema can be included by referencing `https://ns.adobe.com/xdm/common/extensible`. It will enable property-based extensibility with namespace protection.
 
 In order to make a given schema extensible, include this section at the bottom of your schema:
 
 ```json
 "allOf":[
-    {"$ref": "https://ns.adobe.com/xdm/common/extensible.schema.json#/definitions/@context"},
+    {"$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"},
     {"$ref": "#/definitions/…"}
   ]
 ```

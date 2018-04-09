@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/context/experienceevent
 
 The core ExperienceEvent XDM is used to capture observations that are altering one or more related XDMs/entities. The ExperienceEvent captures information about the observation taking place and when it is occurring. It is critical for time domain analytics as it allows observation and analysis of changes that occur in windows of time and comparison with other windows of time to track trends. ExperienceEvent are either explicit or implicit. Explicit events are direct observations of a human action taking place during a session. Implicit events are events that are being raised without a direct human action. Examples of implicit events are scheduled email sending of newsletters, battery voltage reaching a certain threshold, a person entering into range of a proximity sensor. While not all events are easily categorized across all data sources, it is extremely valuable to harmonize similar events into similar types for processing where possible, and the XDM specifications does this by defining a set of enumerated **type** attribute values with specific semantic meanings. Where possible events must be constrained to these enumerated values to facilitate interoperability.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [context/experienceevent.schema.json](context/experienceevent.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [context/experienceevent.schema.json](context/experienceevent.schema.json) |
 
 ## Schema Hierarchy
 
@@ -33,25 +33,30 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
   "@id": "https://data.adobe.io/experienceid-123456",
   "xdm:dataSource": {
     "@id": "https://data.adobe.io/datasources/datasource-123",
-    "xdm:name": "DataSourceIntegrationCode-123"
+    "xdm:code": "DataSourceIntegrationCode-123"
   },
   "xdm:timestamp": "2017-09-26T15:52:25+00:00",
   "xdm:endUserIDs": {
-    "xdm:realm": {
-      "@id": "https://data.adobe.io/experiencecloud/audiencemanager",
-      "xdm:name": "Adobe Audience Manager"
+    "https://ns.adobe.com/experience/mcid": {
+      "@id": "https://data.adobe.io/entities/identity/92312748749128",
+      "xdm:namespace": {
+        "@id": "https://data.adobe.io/entities/namespace/4",
+        "xdm:code": "ECID"
+      }
     },
-    "https://ns.adobe.com/experiencecloud/mcid": {
-      "xdm:datasource": {
-        "@id": "https://data.adobe.io/experiencecloud/mcid",
-        "xdm:name": "Adobe Marketing Cloud Identity Core Service"
-      },
-      "xdm:id": "mcid-sample111",
-      "xdm:confidence": 1
+    "https://ns.adobe.com/experience/analytics": {
+      "@id": "https://data.adobe.io/entities/identity/2394509340-30453470347",
+      "xdm:namespace": {
+        "@id": "https://data.adobe.io/entities/namespace/11112",
+        "xdm:code": "AVID"
+      }
     },
-    "https://ns.adobe.com/experiencecloud/analytics": {
-      "xdm:id": "mcid-sample111",
-      "xdm:confidence": 0.99
+    "https://ns.adobe.com/experience/tntid": {
+      "@id": "https://data.adobe.io/entities/identity/1233ce17-20e0-4a2c-8198-2a77fd60cf4d",
+      "xdm:namespace": {
+        "@id": "https://data.adobe.io/entities/namespace/33333",
+        "xdm:code": "tnt0051"
+      }
     }
   },
   "xdm:environment": {
@@ -72,6 +77,17 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
     "xdm:operatingSystemVersion": "10.13",
     "xdm:connectionType": "cable"
   },
+  "xdm:metrics": {
+    "https://ns.adobe.com/xdm/data/metrics/commerce/purchases": {
+      "xdm:value": 1,
+      "xdm:unit": null
+    },
+    "https://ns.adobe.com/xdm/data/metrics/web/page-views": {
+      "@type": "https://ns.adobe.com/xdm/data/metrics/web/page-views",
+      "xdm:value": 1,
+      "xdm:unit": null
+    }
+  },
   "xdm:productListItems": [
     {
       "xdm:SKU": "1002352692",
@@ -89,25 +105,25 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
       "xdm:payments": [
         {
           "xdm:transactionID": "transactid-a111",
-          "xdm:paymentAmount": 899.99,
+          "xdm:paymentAmount": 59,
           "xdm:paymentType": "credit_card",
           "xdm:currencyCode": "USD"
         },
         {
           "xdm:transactionId": "transactid-a222",
-          "xdm:paymentAmount": 99.99,
+          "xdm:paymentAmount": 100,
           "xdm:paymentType": "gift_card",
           "xdm:currencyCode": "USD"
         }
       ],
       "xdm:currencyCode": "USD",
-      "xdm:priceTotal": 999.98
+      "xdm:priceTotal": 159
     }
   },
   "xdm:locationContext": {
-    "xdm:localTime": "2001-07-04T12:08:56+01:00",
+    "xdm:localTime": "2017-09-26T15:52:25+13:00",
     "xdm:geo": {
-      "@id": "https://ns.adobe.com/entities/geo/tokyo",
+      "@id": "https://data.adobe.io/entities/geo/tokyo",
       "xdm:countryCode": "JP",
       "xdm:stateProvince": "Tōkyō-to",
       "xdm:city": "Tōkyō",
@@ -129,14 +145,14 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
 | [@id](#@id) | `string` | Optional | ExperienceEvent (this schema) |
 | [xdm:application](#xdmapplication) | Application | Optional | ExperienceEvent (this schema) |
 | [xdm:commerce](#xdmcommerce) | Commerce | Optional | ExperienceEvent (this schema) |
-| [xdm:dataSource](#xdmdataSource) | Data Source | Optional | ExperienceEvent (this schema) |
+| [xdm:dataSource](#xdmdatasource) | Data Source | Optional | ExperienceEvent (this schema) |
 | [xdm:device](#xdmdevice) | Device | Optional | ExperienceEvent (this schema) |
-| [xdm:endUserIDs](#xdmendUserIDs) | End User IDs | Optional | ExperienceEvent (this schema) |
+| [xdm:endUserIDs](#xdmenduserids) | End User IDs | Optional | ExperienceEvent (this schema) |
 | [xdm:environment](#xdmenvironment) | Environment | Optional | ExperienceEvent (this schema) |
-| [xdm:locationContext](#xdmlocationContext) | Location Context | Optional | ExperienceEvent (this schema) |
+| [xdm:locationContext](#xdmlocationcontext) | Location Context | Optional | ExperienceEvent (this schema) |
 | [xdm:marketing](#xdmmarketing) | Marketing | Optional | ExperienceEvent (this schema) |
 | [xdm:metrics](#xdmmetrics) | Metrics | Optional | ExperienceEvent (this schema) |
-| [xdm:productListItems](#xdmproductListItems) | Product List Item | Optional | ExperienceEvent (this schema) |
+| [xdm:productListItems](#xdmproductlistitems) | Product List Item | Optional | ExperienceEvent (this schema) |
 | [xdm:search](#xdmsearch) | Search | Optional | ExperienceEvent (this schema) |
 | [xdm:timestamp](#xdmtimestamp) | `string` | Optional | ExperienceEvent (this schema) |
 | [xdm:web](#xdmweb) | Web | Optional | ExperienceEvent (this schema) |

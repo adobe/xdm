@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/common/address
 
 A postal address. Address could relate to a person&#39;s home, work, preferred store location etc.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [common/address.schema.json](common/address.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Stabilizing | Forbidden | Permitted | [common/address.schema.json](common/address.schema.json) |
 
 ## Schema Hierarchy
 
@@ -21,7 +21,7 @@ A postal address. Address could relate to a person&#39;s home, work, preferred s
 ## Address Example
 ```json
 {
-  "@id": "https://ns.adobe.com/entities/address/123",
+  "@id": "https://data.adobe.io/entities/address/123",
   "xdm:primary": false,
   "xdm:street1": "345 Park Ave",
   "xdm:city": "San Jose",
@@ -47,21 +47,21 @@ A postal address. Address could relate to a person&#39;s home, work, preferred s
 | [schema:longitude](#schemalongitude) | `number` | Optional | [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemalongitude) |
 | [xdm:city](#xdmcity) | `string` | Optional | [Geo](geo.schema.md#xdmcity) |
 | [xdm:country](#xdmcountry) | `string` | Optional | Address (this schema) |
-| [xdm:countryCode](#xdmcountryCode) | `string` | Optional | [Geo](geo.schema.md#xdmcountryCode) |
-| [xdm:createdByBatchID](#xdmcreatedByBatchID) | `string` | Optional | [Audit Trail](auditable.schema.md#xdmcreatedByBatchID) |
-| [xdm:dmaID](#xdmdmaID) | `integer` | Optional | [Geo](geo.schema.md#xdmdmaID) |
+| [xdm:countryCode](#xdmcountrycode) | `string` | Optional | [Geo](geo.schema.md#xdmcountrycode) |
+| [xdm:createdByBatchID](#xdmcreatedbybatchid) | `string` | Optional | [Audit Trail](auditable.schema.md#xdmcreatedbybatchid) |
+| [xdm:dmaID](#xdmdmaid) | `integer` | Optional | [Geo](geo.schema.md#xdmdmaid) |
 | [xdm:label](#xdmlabel) | `string` | Optional | Address (this schema) |
-| [xdm:lastVerifiedDate](#xdmlastVerifiedDate) | `string` | Optional | Address (this schema) |
-| [xdm:modifiedByBatchID](#xdmmodifiedByBatchID) | `string` | Optional | [Audit Trail](auditable.schema.md#xdmmodifiedByBatchID) |
-| [xdm:msaID](#xdmmsaID) | `integer` | Optional | [Geo](geo.schema.md#xdmmsaID) |
-| [xdm:postalCode](#xdmpostalCode) | `string` | Optional | [Geo](geo.schema.md#xdmpostalCode) |
+| [xdm:lastVerifiedDate](#xdmlastverifieddate) | `string` | Optional | Address (this schema) |
+| [xdm:modifiedByBatchID](#xdmmodifiedbybatchid) | `string` | Optional | [Audit Trail](auditable.schema.md#xdmmodifiedbybatchid) |
+| [xdm:msaID](#xdmmsaid) | `integer` | Optional | [Geo](geo.schema.md#xdmmsaid) |
+| [xdm:postalCode](#xdmpostalcode) | `string` | Optional | [Geo](geo.schema.md#xdmpostalcode) |
 | [xdm:primary](#xdmprimary) | `boolean` | Optional | Address (this schema) |
 | [xdm:region](#xdmregion) | `string` | Optional | Address (this schema) |
-| [xdm:repositoryCreatedBy](#xdmrepositoryCreatedBy) | `string` | Optional | [Audit Trail](auditable.schema.md#xdmrepositoryCreatedBy) |
-| [xdm:repositoryLastModifiedBy](#xdmrepositoryLastModifiedBy) | `string` | Optional | [Audit Trail](auditable.schema.md#xdmrepositoryLastModifiedBy) |
-| [xdm:stateProvince](#xdmstateProvince) | `string` | Optional | [Geo](geo.schema.md#xdmstateProvince) |
+| [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | Optional | [Audit Trail](auditable.schema.md#xdmrepositorycreatedby) |
+| [xdm:repositoryLastModifiedBy](#xdmrepositorylastmodifiedby) | `string` | Optional | [Audit Trail](auditable.schema.md#xdmrepositorylastmodifiedby) |
+| [xdm:stateProvince](#xdmstateprovince) | `string` | Optional | [Geo](geo.schema.md#xdmstateprovince) |
 | [xdm:status](#xdmstatus) | `string` | Optional | Address (this schema) |
-| [xdm:statusReason](#xdmstatusReason) | `string` | Optional | Address (this schema) |
+| [xdm:statusReason](#xdmstatusreason) | `string` | Optional | Address (this schema) |
 | [xdm:street1](#xdmstreet1) | `string` | Optional | Address (this schema) |
 | [xdm:street2](#xdmstreet2) | `string` | Optional | Address (this schema) |
 | [xdm:street3](#xdmstreet3) | `string` | Optional | Address (this schema) |

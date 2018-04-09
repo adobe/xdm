@@ -7,9 +7,9 @@ http://ns.adobe.com/adobecloud/core/1.0/directory
 
 A directory in Adobe Cloud Platform.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [external/repo/directory.schema.json](external/repo/directory.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [external/repo/directory.schema.json](external/repo/directory.schema.json) |
 
 ## Schema Hierarchy
 
@@ -80,8 +80,8 @@ A directory in Adobe Cloud Platform.
 | [_page](#_page) | Page | Optional | Directory (this schema) |
 | [children](#children) | `array` | Optional | Directory (this schema) |
 | [dc:format](#dcformat) | `string` | **Required** | [Common Properties](common.schema.md#dcformat) |
-| [repo:createDate](#repocreateDate) | `string` | Optional | [Common Properties](common.schema.md#repocreateDate) |
-| [repo:lastModifiedDate](#repolastModifiedDate) | `string` | **Required** | [Common Properties](common.schema.md#repolastModifiedDate) |
+| [repo:createDate](#repocreatedate) | `string` | Optional | [Common Properties](common.schema.md#repocreatedate) |
+| [repo:lastModifiedDate](#repolastmodifieddate) | `string` | **Required** | [Common Properties](common.schema.md#repolastmodifieddate) |
 | [repo:name](#reponame) | `string` | **Required** | [Common Properties](common.schema.md#reponame) |
 | [repo:path](#repopath) | `string` | **Required** | [Common Properties](common.schema.md#repopath) |
 | `*` | any | Additional | this schema *allows* additional properties |

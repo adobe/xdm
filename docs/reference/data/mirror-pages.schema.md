@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages
 
 The direct-marketing metric mirror-pages describes the number of mirror pages for which a link to the online mirror page of a message has been clicked.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [data/mirror-pages.schema.json](data/mirror-pages.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [data/mirror-pages.schema.json](data/mirror-pages.schema.json) |
 
 ## mirror-pages Example
 ```json

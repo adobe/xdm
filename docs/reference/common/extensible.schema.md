@@ -19,9 +19,9 @@ In order to make a given schema extensible, include this section at the bottom o
 Replace `#/definitions/…` with the correct path to the `definitions` object in your local schema.
 
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Cannot be instantiated | Yes | Forbidden | Permitted | [common/extensible.schema.json](common/extensible.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Cannot be instantiated | Yes | Stabilizing | Forbidden | Permitted | [common/extensible.schema.json](common/extensible.schema.json) |
 
 ## Extensibility base schema Examples
 
@@ -67,7 +67,6 @@ Replace `#/definitions/…` with the correct path to the `definitions` object in
     "cc": "http://creativecommons.org/ns#",
     "stEvt": "http://ns.adobe.com/xap/1.0/sType/ResourceEvent#",
     "stFnt": "http://ns.adobe.com/xap/1.0/sType/Font#",
-    "stLayer": "http://ns.adobe.com/core/1.0/sType/Layer#",
     "stLayerGroup": "http://ns.adobe.com/core/1.0/sType/LayerGroup#",
     "stArtboard": "http://ns.adobe.com/core/1.0/sType/Artboard#",
     "exif": "http://ns.adobe.com/exif/1.0/#",

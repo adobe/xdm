@@ -8,9 +8,9 @@ https://ns.adobe.com/xdm/context/product
 XDM product variant, master product and key attributes of product in the product catalog.
 
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [content/product.schema.json](content/product.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [content/product.schema.json](content/product.schema.json) |
 
 ## Schema Hierarchy
 
@@ -45,29 +45,29 @@ XDM product variant, master product and key attributes of product in the product
 |----------|------|----------|------------|
 | [@id](#@id) | `string` | Optional | Product (this schema) |
 | [schema:description](#schemadescription) | `string` | Optional | Product (this schema) |
-| [xdm:COGS](#xdmCOGS) | `number` | Optional | Product (this schema) |
-| [xdm:SKU](#xdmSKU) | `string` | Optional | Product (this schema) |
+| [xdm:COGS](#xdmcogs) | `number` | Optional | Product (this schema) |
+| [xdm:SKU](#xdmsku) | `string` | Optional | Product (this schema) |
 | [xdm:brand](#xdmbrand) | `string` | Optional | Product (this schema) |
 | [xdm:category](#xdmcategory) | `string` | Optional | Product (this schema) |
-| [xdm:countryOfOrigin](#xdmcountryOfOrigin) | `string` | Optional | Product (this schema) |
-| [xdm:currencyCode](#xdmcurrencyCode) | `string` | Optional | Product (this schema) |
+| [xdm:countryOfOrigin](#xdmcountryoforigin) | `string` | Optional | Product (this schema) |
+| [xdm:currencyCode](#xdmcurrencycode) | `string` | Optional | Product (this schema) |
 | [xdm:department](#xdmdepartment) | `string` | Optional | Product (this schema) |
 | [xdm:fabrication](#xdmfabrication) | `string` | Optional | Product (this schema) |
 | [xdm:gender](#xdmgender) | `string` | Optional | Product (this schema) |
-| [xdm:listPrice](#xdmlistPrice) | `number` | Optional | Product (this schema) |
-| [xdm:manufacturerName](#xdmmanufacturerName) | `string` | Optional | Product (this schema) |
-| [xdm:masterProductDescription](#xdmmasterProductDescription) | `string` | Optional | Product (this schema) |
-| [xdm:masterProductID](#xdmmasterProductID) | `string` | Optional | Product (this schema) |
-| [xdm:masterProductName](#xdmmasterProductName) | `string` | Optional | Product (this schema) |
-| [xdm:masterProductSKU](#xdmmasterProductSKU) | `string` | Optional | Product (this schema) |
+| [xdm:listPrice](#xdmlistprice) | `number` | Optional | Product (this schema) |
+| [xdm:manufacturerName](#xdmmanufacturername) | `string` | Optional | Product (this schema) |
+| [xdm:masterProductDescription](#xdmmasterproductdescription) | `string` | Optional | Product (this schema) |
+| [xdm:masterProductID](#xdmmasterproductid) | `string` | Optional | Product (this schema) |
+| [xdm:masterProductName](#xdmmasterproductname) | `string` | Optional | Product (this schema) |
+| [xdm:masterProductSKU](#xdmmasterproductsku) | `string` | Optional | Product (this schema) |
 | [xdm:name](#xdmname) | `string` | Optional | Product (this schema) |
-| [xdm:originalSaleDate](#xdmoriginalSaleDate) | `string` | Optional | Product (this schema) |
-| [xdm:productCreateDate](#xdmproductCreateDate) | `string` | Optional | Product (this schema) |
-| [xdm:productLastModified](#xdmproductLastModified) | `string` | Optional | Product (this schema) |
-| [xdm:productURL](#xdmproductURL) | `string` | Optional | Product (this schema) |
+| [xdm:originalSaleDate](#xdmoriginalsaledate) | `string` | Optional | Product (this schema) |
+| [xdm:productCreateDate](#xdmproductcreatedate) | `string` | Optional | Product (this schema) |
+| [xdm:productLastModified](#xdmproductlastmodified) | `string` | Optional | Product (this schema) |
+| [xdm:productURL](#xdmproducturl) | `string` | Optional | Product (this schema) |
 | [xdm:size](#xdmsize) | `number` | Optional | Product (this schema) |
-| [xdm:supplierName](#xdmsupplierName) | `string` | Optional | Product (this schema) |
-| [xdm:unitOfMeasure](#xdmunitOfMeasure) | `string` | Optional | Product (this schema) |
+| [xdm:supplierName](#xdmsuppliername) | `string` | Optional | Product (this schema) |
+| [xdm:unitOfMeasure](#xdmunitofmeasure) | `string` | Optional | Product (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id

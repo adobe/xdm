@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/assets/rectangular
 
 Properties that apply to images, videos, and other rectangular media
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Cannot be instantiated | Yes | Forbidden | Permitted | [assets/rectangular.schema.json](assets/rectangular.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Cannot be instantiated | Yes | Experimental | Forbidden | Permitted | [assets/rectangular.schema.json](assets/rectangular.schema.json) |
 
 ## Rectangular Media Example
 ```json
@@ -24,9 +24,9 @@ Properties that apply to images, videos, and other rectangular media
 
 | Property | Type | Group |
 |----------|------|-------|
-| [tiff:imageLength](#tiff:imageLength) | `integer` | `https://ns.adobe.com/xdm/assets/rectangular#/definitions/rectangular` |
-| [tiff:imageWidth](#tiff:imageWidth) | `integer` | `https://ns.adobe.com/xdm/assets/rectangular#/definitions/rectangular` |
-| [xdm:aspectRatio](#xdm:aspectRatio) | `number` | `https://ns.adobe.com/xdm/assets/rectangular#/definitions/rectangular` |
+| [tiff:imageLength](#tiffimagelength) | `integer` | `https://ns.adobe.com/xdm/assets/rectangular#/definitions/rectangular` |
+| [tiff:imageWidth](#tiffimagewidth) | `integer` | `https://ns.adobe.com/xdm/assets/rectangular#/definitions/rectangular` |
+| [xdm:aspectRatio](#xdmaspectratio) | `number` | `https://ns.adobe.com/xdm/assets/rectangular#/definitions/rectangular` |
 
 ## tiff:imageLength
 ### Length

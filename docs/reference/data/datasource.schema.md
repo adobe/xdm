@@ -8,9 +8,9 @@ https://ns.adobe.com/xdm/data/datasource
 The Datasource acts as a namespace or unique identifier associated with a collection of data. Each EndUserID is associated with a given Datasource. A user can create and obtain information about a Datasource during the solution onboarding.
 
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [data/datasource.schema.json](data/datasource.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [data/datasource.schema.json](data/datasource.schema.json) |
 
 ## Data Source Example
 ```json
@@ -54,7 +54,7 @@ The unique ID of this data source. This would be provided by the individual or s
 ## xdm:code
 ### Code
 
-The code is a shortcut to the full @id and at least one of the code or @id can be used. Sometimes, this code refered to as the data source integration code.
+The code is a shortcut to the full @id and at least one of the code or @id can be used. Sometimes, this code is referred to as the data source integration code.
 
 `xdm:code`
 * is optional

@@ -1,40 +1,43 @@
 
-# Web Schema
+# E-Mail Schema
 
 ```
-https://ns.adobe.com/xdm/channels/web
+https://ns.adobe.com/xdm/channels/agency
 ```
 
-The world wide web and mobile web. Pages delivered via HTTP to a web browser or in-app browser.
+The marketing experience is handed-off to an external agency.
+This channel has no specific mechanism and is designed for descriptive purposes only.
+Such as, to define experiences for which you want to keep a trace of the population targeted in an external tool
+
 
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [channels/web.schema.json](channels/web.schema.json) |
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [channels/agency.schema.json](channels/agency.schema.json) |
 
 ## Schema Hierarchy
 
-* Web `https://ns.adobe.com/xdm/channels/web`
+* E-Mail `https://ns.adobe.com/xdm/channels/agency`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
-## Web Example
+## E-Mail Example
 ```json
 {
-  "@id": "https://ns.adobe.com/xdm/channels/web",
-  "@type": "https://ns.adobe.com/xdm/channel-types/web"
+  "@id": "https://ns.adobe.com/xdm/channels/agency",
+  "@type": "https://ns.adobe.com/xdm/channel-types/offline"
 }
 ```
 
-# Web Properties
+# E-Mail Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | Web (this schema) |
-| [@type](#@type) | `const` | Optional | Web (this schema) |
-| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | Web (this schema) |
-| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | Web (this schema) |
-| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | Web (this schema) |
-| [xdm:mode](#xdmmode) | `const` | Optional | Web (this schema) |
+| [@id](#@id) | `const` | **Required** | E-Mail (this schema) |
+| [@type](#@type) | `const` | Optional | E-Mail (this schema) |
+| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | E-Mail (this schema) |
+| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | E-Mail (this schema) |
+| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | E-Mail (this schema) |
+| [xdm:mode](#xdmmode) | `const` | Optional | E-Mail (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -49,7 +52,7 @@ The ID uniquely identifies the channel. Each specific experience channel defines
 The value of this property **must** be equal to:
 
 ```json
-"https://ns.adobe.com/xdm/channels/web"
+"https://ns.adobe.com/xdm/channels/agency"
 ```
 
 
@@ -68,7 +71,7 @@ The `@type` property is used to provide a rough classification of channels with 
 The value of this property **must** be equal to:
 
 ```json
-"https://ns.adobe.com/xdm/channel-types/web"
+"https://ns.adobe.com/xdm/channel-types/offline"
 ```
 
 
@@ -157,7 +160,7 @@ How experiences are delivered in this channel.
 The value of this property **must** be equal to:
 
 ```json
-"pull"
+"bidirectional"
 ```
 
 

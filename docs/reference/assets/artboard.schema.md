@@ -16,9 +16,9 @@ The hierarchy of elements in an artboard is displayed in the Layers panel, toget
 Artboards can contain layers and layer groups, but not other artboards.
 
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [assets/artboard.schema.json](assets/artboard.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [assets/artboard.schema.json](assets/artboard.schema.json) |
 
 ## Schema Hierarchy
 
@@ -43,8 +43,8 @@ Artboards can contain layers and layer groups, but not other artboards.
 |----------|------|----------|------------|
 | [xdm:height](#xdmheight) | `integer` | Optional | [Rectangular Object (measured in variable unit)](variable-unit-rectangular.schema.md#xdmheight) |
 | [xdm:name](#xdmname) | `string` | Optional | Artboard (this schema) |
-| [xdm:originX](#xdmoriginX) | `integer` | Optional | [Rectangular Object (measured in variable unit)](variable-unit-rectangular.schema.md#xdmoriginX) |
-| [xdm:originY](#xdmoriginY) | `integer` | Optional | [Rectangular Object (measured in variable unit)](variable-unit-rectangular.schema.md#xdmoriginY) |
+| [xdm:originX](#xdmoriginx) | `integer` | Optional | [Rectangular Object (measured in variable unit)](variable-unit-rectangular.schema.md#xdmoriginx) |
+| [xdm:originY](#xdmoriginy) | `integer` | Optional | [Rectangular Object (measured in variable unit)](variable-unit-rectangular.schema.md#xdmoriginy) |
 | [xdm:unit](#xdmunit) | `string` | Optional | [Rectangular Object (measured in variable unit)](variable-unit-rectangular.schema.md#xdmunit) |
 | [xdm:width](#xdmwidth) | `integer` | Optional | [Rectangular Object (measured in variable unit)](variable-unit-rectangular.schema.md#xdmwidth) |
 | `*` | any | Additional | this schema *allows* additional properties |

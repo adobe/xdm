@@ -103,6 +103,7 @@
         "xdm:channel": {
           "title": "Communication Channel",
           "type": "string",
+          "format": "uri",
           "meta:enum": {
             "https://ns.adobe.com/xdm/channels/adm": "ADM",
             "https://ns.adobe.com/xdm/channels/apns": "APNS",

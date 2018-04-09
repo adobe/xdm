@@ -29,6 +29,7 @@
     "optinout": {
       "meta:keys": {
         "https://ns.adobe.com/xdm/channels/adm": "ADM",
+        "https://ns.adobe.com/xdm/channels/agency": "Agency",
         "https://ns.adobe.com/xdm/channels/apns": "APNS",
         "https://ns.adobe.com/xdm/channels/application": "Application",
         "https://ns.adobe.com/xdm/channels/baidu": "Baidu",
@@ -47,8 +48,7 @@
         "https://ns.adobe.com/xdm/channels/web": "Web",
         "https://ns.adobe.com/xdm/channels/webpage": "Web Page",
         "https://ns.adobe.com/xdm/channels/wechat": "WeChat",
-        "https://ns.adobe.com/xdm/channels/wns": "WNS",
-        "https://ns.adobe.com/xdm/channels/agancy": "Agency"
+        "https://ns.adobe.com/xdm/channels/wns": "WNS"
       },
       "patternProperties": {
         ".+://.+": {

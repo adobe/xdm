@@ -5,15 +5,10 @@
     "xdm:name": "product home",
     "xdm:URL": "https://www.example.com/products",
     "xdm:isErrorPage": false,
-    "xdm:isHomePage": true,
-    "xdm:referrer": {
-      "xdm:URL": "https://www.some-adserver.com",
-      "xdm:referrerType": "external"
-    }
+    "xdm:isHomePage": true
   },
-  "xdm:webLink": {
-    "xdm:type": "other",
-    "xdm:URL": "https://www.example.com/products/store/?view=1",
-    "xdm:name": "product store"
+  "xdm:webReferrer": {
+    "xdm:URL": "https://www.some-adserver.com",
+    "xdm:referrerType": "external"
   }
 }

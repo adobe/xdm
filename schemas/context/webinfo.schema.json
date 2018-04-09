@@ -1,6 +1,6 @@
 {
   "meta:license": [
-    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
     "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
@@ -10,7 +10,7 @@
   "title": "Web Information",
   "type": "object",
   "description":
-    "Information about a web interaction recorded via an `ExperienceEvent`, including the web page and/or link where the interaction occurred.",
+    "Information about a web interaction recorded via an `ExperienceEvent`, including the web page, referrer and/or link related to the interaction.",
   "definitions": {
     "webinfo": {
       "properties": {
@@ -25,6 +25,12 @@
           "$ref": "https://ns.adobe.com/xdm/context/weblink",
           "description":
             "Details about the web link (URL) that corresponds to the web page where the interaction occurred."
+        },
+        "xdm:webReferrer": {
+          "title": "Web Referrer",
+          "$ref": "https://ns.adobe.com/xdm/context/webreferrer",
+          "description":
+            "The referrer of a web interaction, which is the URL a visitor came from immediately before the current web interaction was recorded."
         }
       }
     }

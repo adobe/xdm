@@ -125,7 +125,7 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
     "xdm:geo": {
       "@id": "https://data.adobe.io/entities/geo/tokyo",
       "xdm:countryCode": "JP",
-      "xdm:stateProvince": "Tōkyō-to",
+      "xdm:stateProvince": "JP-13",
       "xdm:city": "Tōkyō",
       "xdm:postalCode": "141-0032",
       "schema:latitude": 35.6185,
@@ -144,6 +144,7 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
 |----------|------|----------|------------|
 | [@id](#@id) | `string` | Optional | ExperienceEvent (this schema) |
 | [xdm:application](#xdmapplication) | Application | Optional | ExperienceEvent (this schema) |
+| [xdm:channel](#xdmchannel) | `string` | Optional | ExperienceEvent (this schema) |
 | [xdm:commerce](#xdmcommerce) | Commerce | Optional | ExperienceEvent (this schema) |
 | [xdm:dataSource](#xdmdatasource) | Data Source | Optional | ExperienceEvent (this schema) |
 | [xdm:device](#xdmdevice) | Device | Optional | ExperienceEvent (this schema) |
@@ -194,6 +195,52 @@ The application related to the event observation. It could be either the applica
 
 * [Application](../channels/application.schema.md) – `https://ns.adobe.com/xdm/channels/application`
 
+
+
+
+
+## xdm:channel
+### Communication Channel
+
+The marketing channel related to this ExperienceEvent.
+
+`xdm:channel`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:channel Type
+
+
+`string`
+* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+
+
+
+### xdm:channel Known Values
+| Value | Description |
+|-------|-------------|
+| `https://ns.adobe.com/xdm/channels/adm` | ADM |
+| `https://ns.adobe.com/xdm/channels/agency` | Agency |
+| `https://ns.adobe.com/xdm/channels/apns` | APNS |
+| `https://ns.adobe.com/xdm/channels/application` | Application |
+| `https://ns.adobe.com/xdm/channels/baidu` | Baidu |
+| `https://ns.adobe.com/xdm/channels/channel` | Experience Channel |
+| `https://ns.adobe.com/xdm/channels/direct-mail` | Direct Mail |
+| `https://ns.adobe.com/xdm/channels/email` | E-Mail |
+| `https://ns.adobe.com/xdm/channels/facebook-feed` | Facebook News Feed |
+| `https://ns.adobe.com/xdm/channels/fax` | Fax |
+| `https://ns.adobe.com/xdm/channels/gcm` | GCM |
+| `https://ns.adobe.com/xdm/channels/line` | LINE |
+| `https://ns.adobe.com/xdm/channels/mobile-app` | Web |
+| `https://ns.adobe.com/xdm/channels/mpns` | MPNS |
+| `https://ns.adobe.com/xdm/channels/phone` | Phone |
+| `https://ns.adobe.com/xdm/channels/sms` | SMS |
+| `https://ns.adobe.com/xdm/channels/twitter-feed` | Twitter Feed |
+| `https://ns.adobe.com/xdm/channels/web` | Web |
+| `https://ns.adobe.com/xdm/channels/webpage` | Web Page |
+| `https://ns.adobe.com/xdm/channels/wechat` | WeChat |
+| `https://ns.adobe.com/xdm/channels/wns` | WNS |
 
 
 

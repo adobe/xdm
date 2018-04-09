@@ -58,7 +58,7 @@ Information about the surrounding situation the event observation occurred in, s
 ## xdm:browserDetails
 ### Browser Details
 
-The browser specific details such as brwoser name, version, javascript version, user agent string, accept language.
+The browser specific details such as browser name, version, javascript version, user agent string, accept language.
 
 `xdm:browserDetails`
 * is optional

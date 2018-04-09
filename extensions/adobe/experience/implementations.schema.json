@@ -1,9 +1,11 @@
 {
   "$id": "https://ns.adobe.com/xdm-extensions/experience/implementations",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "The Adobe Experience Cloud techncial implementations details for data collection",
+  "title":
+    "The Adobe Experience Cloud techncial implementations details for data collection",
   "type": "object",
-  "description": "Details the type and version of Adobe Experience Cloud client implementations for data collection. Used for debugging and usage analysis.",
+  "description":
+    "Details the type and version of Adobe Experience Cloud client implementations for data collection. Used for debugging and usage analysis.",
   "properties": {
     "https://ns.adobe.com/experience/analytics": {
       "title": "Adobe Analytics AppMeasurement details",

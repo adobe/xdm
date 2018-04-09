@@ -10,20 +10,20 @@
   "title": "Implementation Details",
   "type": "object",
   "meta:extensible": true,
-  "description": "Details about the sdk, library or service used in an application's or web page's implementation of a service.",
+  "description":
+    "Details about the sdk, library or service used in an application's or web page's implementation of a service.",
   "definitions": {
     "implementationdetails": {
       "properties": {
         "xdm:name": {
           "title": "Name",
           "type": "string",
-          "format": "uri",
           "description": "SDK or endpoint Name.",
           "meta:enum": {
-             "sCode": "Adobe Analytics sCode",
-             "AppMeasurement": "Adobe App Measurement",
-             "mBox": "Adobe Target mBox",
-             "VisitorAPI": "Adobe Visitor Service"
+            "sCode": "Adobe Analytics sCode",
+            "AppMeasurement": "Adobe App Measurement",
+            "mBox": "Adobe Target mBox",
+            "VisitorAPI": "Adobe Visitor Service"
           }
         },
         "xdm:version": {

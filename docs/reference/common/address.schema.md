@@ -25,7 +25,7 @@ A postal address. Address could relate to a person&#39;s home, work, preferred s
   "xdm:primary": false,
   "xdm:street1": "345 Park Ave",
   "xdm:city": "San Jose",
-  "xdm:stateProvince": "CA",
+  "xdm:stateProvince": "US-CA",
   "xdm:postalCode": "95110",
   "xdm:country": "United States",
   "xdm:countryCode": "US",

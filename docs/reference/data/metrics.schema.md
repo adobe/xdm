@@ -53,7 +53,10 @@ This is map of metrics and measues. Each key is the valid URI of a known `Metric
 | [https://ns.adobe.com/xdm/data/metrics/direct-marketing/bounces](#https//ns.adobe.com/xdm/data/metrics/direct-marketing/bounces) | Measure | Optional | Metrics (this schema) |
 | [https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages](#https//ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages) | Measure | Optional | Metrics (this schema) |
 | [https://ns.adobe.com/xdm/data/metrics/direct-marketing/non-deliverables](#https//ns.adobe.com/xdm/data/metrics/direct-marketing/non-deliverables) | Measure | Optional | Metrics (this schema) |
+| [https://ns.adobe.com/xdm/data/metrics/direct-marketing/not-sent](#https//ns.adobe.com/xdm/data/metrics/direct-marketing/not-sent) | Measure | Optional | Metrics (this schema) |
+| [https://ns.adobe.com/xdm/data/metrics/direct-marketing/opens](#https//ns.adobe.com/xdm/data/metrics/direct-marketing/opens) | Measure | Optional | Metrics (this schema) |
 | [https://ns.adobe.com/xdm/data/metrics/direct-marketing/sends](#https//ns.adobe.com/xdm/data/metrics/direct-marketing/sends) | Measure | Optional | Metrics (this schema) |
+| [https://ns.adobe.com/xdm/data/metrics/direct-marketing/unsubscriptions](#https//ns.adobe.com/xdm/data/metrics/direct-marketing/unsubscriptions) | Measure | Optional | Metrics (this schema) |
 | [https://ns.adobe.com/xdm/data/metrics/direct-marketing/user-complaints](#https//ns.adobe.com/xdm/data/metrics/direct-marketing/user-complaints) | Measure | Optional | Metrics (this schema) |
 | [https://ns.adobe.com/xdm/data/metrics/web/link-clicks](#https//ns.adobe.com/xdm/data/metrics/web/link-clicks) | Measure | Optional | Metrics (this schema) |
 | [https://ns.adobe.com/xdm/data/metrics/web/page-views](#https//ns.adobe.com/xdm/data/metrics/web/page-views) | Measure | Optional | Metrics (this schema) |
@@ -314,6 +317,40 @@ This is map of metrics and measues. Each key is the valid URI of a known `Metric
 
 
 
+## https://ns.adobe.com/xdm/data/metrics/direct-marketing/not-sent
+
+
+`https://ns.adobe.com/xdm/data/metrics/direct-marketing/not-sent`
+* is optional
+* type: Measure
+* defined in this schema
+
+### https://ns.adobe.com/xdm/data/metrics/direct-marketing/not-sent Type
+
+
+* [Measure](measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
+## https://ns.adobe.com/xdm/data/metrics/direct-marketing/opens
+
+
+`https://ns.adobe.com/xdm/data/metrics/direct-marketing/opens`
+* is optional
+* type: Measure
+* defined in this schema
+
+### https://ns.adobe.com/xdm/data/metrics/direct-marketing/opens Type
+
+
+* [Measure](measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
 ## https://ns.adobe.com/xdm/data/metrics/direct-marketing/sends
 
 
@@ -323,6 +360,23 @@ This is map of metrics and measues. Each key is the valid URI of a known `Metric
 * defined in this schema
 
 ### https://ns.adobe.com/xdm/data/metrics/direct-marketing/sends Type
+
+
+* [Measure](measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
+## https://ns.adobe.com/xdm/data/metrics/direct-marketing/unsubscriptions
+
+
+`https://ns.adobe.com/xdm/data/metrics/direct-marketing/unsubscriptions`
+* is optional
+* type: Measure
+* defined in this schema
+
+### https://ns.adobe.com/xdm/data/metrics/direct-marketing/unsubscriptions Type
 
 
 * [Measure](measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`

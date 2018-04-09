@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/common/eventenvelope
 
 An `EventEnvelope` is a type of `Activity` (in the sense of [W3C Activity Streams 2.0](https://www.w3.org/TR/activitystreams-core/) that applies to digital experiences in general, and to entities of the Experience Data Model in particular. It is being used to track or audit changes to core entities like assets, pages, or campaigns, but also to track observed interactions of consumers of digital experiences. These observed interactions can range from simple technical loading, to passive consumption, to active engagement. Through the `EventEnvelope`, a varied set of observable entities can be tracked in a common way, enabling the establishment of publish-subscribe or event bus systems that dispatch `EventEnvelopes` based on the metadata that is part of the envelope, without having to inspect the payload `object`.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [common/eventenvelope.schema.json](common/eventenvelope.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [common/eventenvelope.schema.json](common/eventenvelope.schema.json) |
 
 ## Schema Hierarchy
 
@@ -77,20 +77,20 @@ An `EventEnvelope` is a type of `Activity` (in the sense of [W3C Activity Stream
 
 ```json
 {
-  "@type": "http://ns.adobe.com/xdm/common/event/updated",
+  "@type": "https://ns.adobe.com/xdm/common/event/updated",
   "xdm:objectType": "https://ns.adobe.com/xdm/assets/asset",
   "activitystreams:published": "2016-07-16T19:20:30+01:00",
   "@id": "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
   "activitystreams:to": {
-    "@type": "http://ns.adobe.com/xdm-extensions/ims/organization",
+    "@type": "https://ns.adobe.com/xdm-extensions/ims/organization",
     "@id": "08B3E5CE5822FC520A494229@AdobeOrg"
   },
   "activitystreams:generator": {
-    "@type": "http://ns.adobe.com/xdm/content/repository",
+    "@type": "https://ns.adobe.com/xdm/content/repository",
     "@id": "https://francois.corp.adobe.com:4502/"
   },
   "activitystreams:actor": {
-    "@type": "http://ns.adobe.com/xdm-extensions/aem/user",
+    "@type": "https://ns.adobe.com/xdm-extensions/aem/user",
     "@id": "admin"
   },
   "activitystreams:object": {
@@ -112,15 +112,15 @@ An `EventEnvelope` is a type of `Activity` (in the sense of [W3C Activity Stream
   "activitystreams:published": "2016-07-16T19:20:30+01:00",
   "@id": "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
   "activitystreams:to": {
-    "@type": "http://ns.adobe.com/xdm-extensions/ims/organization",
+    "@type": "https://ns.adobe.com/xdm-extensions/ims/organization",
     "@id": "08B3E5CE5822FC520A494229@AdobeOrg"
   },
   "activitystreams:generator": {
-    "@type": "http://ns.adobe.com/xdm/content/repository",
+    "@type": "https://ns.adobe.com/xdm/content/repository",
     "@id": "https://francois.corp.adobe.com:4502/"
   },
   "activitystreams:actor": {
-    "@type": "http://ns.adobe.com/xdm-extensions/aem/user",
+    "@type": "https://ns.adobe.com/xdm-extensions/aem/user",
     "@id": "admin"
   },
   "activitystreams:object": {
@@ -139,15 +139,15 @@ An `EventEnvelope` is a type of `Activity` (in the sense of [W3C Activity Stream
   "activitystreams:published": "2016-07-16T19:20:30+01:00",
   "@id": "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
   "activitystreams:to": {
-    "@type": "http://ns.adobe.com/xdm-extensions/ims/organization",
+    "@type": "https://ns.adobe.com/xdm-extensions/ims/organization",
     "@id": "08B3E5CE5822FC520A494229@AdobeOrg"
   },
   "activitystreams:generator": {
-    "@type": "http://ns.adobe.com/xdm/content/repository",
+    "@type": "https://ns.adobe.com/xdm/content/repository",
     "@id": "https://francois.corp.adobe.com:4502/"
   },
   "activitystreams:actor": {
-    "@type": "http://ns.adobe.com/xdm-extensions/aem/user",
+    "@type": "https://ns.adobe.com/xdm-extensions/aem/user",
     "@id": "admin"
   },
   "activitystreams:object": {
@@ -170,7 +170,7 @@ An `EventEnvelope` is a type of `Activity` (in the sense of [W3C Activity Stream
 | [activitystreams:origin](#activitystreamsorigin) | complex | Optional | [Activity](../external/activity-streams-2/activity.schema.md#activitystreamsorigin) |
 | [activitystreams:result](#activitystreamsresult) | complex | Optional | [Activity](../external/activity-streams-2/activity.schema.md#activitystreamsresult) |
 | [activitystreams:target](#activitystreamstarget) | complex | Optional | [Activity](../external/activity-streams-2/activity.schema.md#activitystreamstarget) |
-| [xdm:objectType](#xdmobjectType) | complex | **Required** | EventEnvelope (this schema) |
+| [xdm:objectType](#xdmobjecttype) | complex | **Required** | EventEnvelope (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## activitystreams:actor

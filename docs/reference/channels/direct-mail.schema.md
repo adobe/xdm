@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/channels/direct-mail
 
 Mail delivered by a postal service.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [channels/direct-mail.schema.json](channels/direct-mail.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [channels/direct-mail.schema.json](channels/direct-mail.schema.json) |
 
 ## Schema Hierarchy
 
@@ -31,9 +31,9 @@ Mail delivered by a postal service.
 |----------|------|----------|------------|
 | [@id](#@id) | `const` | **Required** | Direct Mail (this schema) |
 | [@type](#@type) | `const` | Optional | Direct Mail (this schema) |
-| [xdm:contentTypes](#xdmcontentTypes) | `const` | Optional | Direct Mail (this schema) |
-| [xdm:locationTypes](#xdmlocationTypes) | `const` | Optional | Direct Mail (this schema) |
-| [xdm:metricTypes](#xdmmetricTypes) | `const` | Optional | Direct Mail (this schema) |
+| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | Direct Mail (this schema) |
+| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | Direct Mail (this schema) |
+| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | Direct Mail (this schema) |
 | [xdm:mode](#xdmmode) | `const` | Optional | Direct Mail (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 

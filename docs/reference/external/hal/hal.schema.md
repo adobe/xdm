@@ -14,9 +14,9 @@ https://ns.adobe.com/xdm/external/hal/resource
 This external schema definition allows adding HAL expressions into an existing schema.
 
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [external/hal/hal.schema.json](external/hal/hal.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [external/hal/hal.schema.json](external/hal/hal.schema.json) |
 
 ## HAL Resource Examples
 
@@ -26,17 +26,9 @@ This external schema definition allows adding HAL expressions into an existing s
     "self": {
       "href": "/orders/523"
     },
-    "warehouses": [
-      {
-        "href": "/warehouse/56"
-      },
-      {
-        "href": "/warehouse/56"
-      },
-      {
-        "href": "/warehouse/56"
-      }
-    ],
+    "warehouse": {
+      "href": "/warehouse/56"
+    },
     "invoice": {
       "href": "/invoices/873"
     }
@@ -101,9 +93,17 @@ This external schema definition allows adding HAL expressions into an existing s
     "self": {
       "href": "/orders/523"
     },
-    "warehouse": {
-      "href": "/warehouse/56"
-    },
+    "warehouses": [
+      {
+        "href": "/warehouse/56"
+      },
+      {
+        "href": "/warehouse/56"
+      },
+      {
+        "href": "/warehouse/56"
+      }
+    ],
     "invoice": {
       "href": "/invoices/873"
     }

@@ -19,9 +19,9 @@ In order to make a given schema extensible, include this section at the bottom o
 Replace `#/definitions/…` with the correct path to the `definitions` object in your local schema.
 
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Cannot be instantiated | Yes | Forbidden | Permitted | [common/extensible.schema.json](common/extensible.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Cannot be instantiated | Yes | Stabilizing | Forbidden | Permitted | [common/extensible.schema.json](common/extensible.schema.json) |
 
 ## Extensibility base schema Examples
 

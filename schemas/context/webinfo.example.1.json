@@ -9,6 +9,6 @@
   },
   "xdm:webReferrer": {
     "xdm:URL": "https://www.some-adserver.com",
-    "xdm:referrerType": "external"
+    "xdm:type": "external"
   }
 }

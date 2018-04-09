@@ -74,9 +74,10 @@
     "examples": [
         {
             "xdm:name": {
-                "xdm:givenName": "Jane",
+                "xdm:firstName": "Jane",
                 "xdm:middleName": "F",
-                "xdm:surname": "Doe"
+                "xdm:lastName": "Doe",
+                "xdm:fullName": "Jane F. Doe"
             },
             "xdm:birthMonth": 1,
             "xdm:birthDay": 3,

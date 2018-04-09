@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/context/subscription
 
 Subscriptions are licensed entitlements to software, services or goods that are utilized in a time or usage based way.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [context/subscription.schema.json](context/subscription.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [context/subscription.schema.json](context/subscription.schema.json) |
 
 ## Schema Hierarchy
 
@@ -63,29 +63,29 @@ Subscriptions are licensed entitlements to software, services or goods that are 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#@id) | `string` | Optional | Subscription (this schema) |
-| [xdm:SKU](#xdmSKU) | `string` | Optional | Subscription (this schema) |
-| [xdm:billingPeriod](#xdmbillingPeriod) | `string` | Optional | Subscription (this schema) |
-| [xdm:billingStartDate](#xdmbillingStartDate) | `string` | Optional | Subscription (this schema) |
+| [xdm:SKU](#xdmsku) | `string` | Optional | Subscription (this schema) |
+| [xdm:billingPeriod](#xdmbillingperiod) | `string` | Optional | Subscription (this schema) |
+| [xdm:billingStartDate](#xdmbillingstartdate) | `string` | Optional | Subscription (this schema) |
 | [xdm:category](#xdmcategory) | `string` | Optional | Subscription (this schema) |
-| [xdm:chargeMethod](#xdmchargeMethod) | `string` | Optional | Subscription (this schema) |
-| [xdm:contractID](#xdmcontractID) | `string` | Optional | Subscription (this schema) |
+| [xdm:chargeMethod](#xdmchargemethod) | `string` | Optional | Subscription (this schema) |
+| [xdm:contractID](#xdmcontractid) | `string` | Optional | Subscription (this schema) |
 | [xdm:country](#xdmcountry) | `string` | Optional | Subscription (this schema) |
 | [xdm:device](#xdmdevice) | Device | Optional | Subscription (this schema) |
-| [xdm:endDate](#xdmendDate) | `string` | Optional | Subscription (this schema) |
+| [xdm:endDate](#xdmenddate) | `string` | Optional | Subscription (this schema) |
 | [xdm:environment](#xdmenvironment) | Environment | Optional | Subscription (this schema) |
-| [xdm:paymentMethod](#xdmpaymentMethod) | `string` | Optional | Subscription (this schema) |
-| [xdm:paymentStatus](#xdmpaymentStatus) | `string` | Optional | Subscription (this schema) |
-| [xdm:planName](#xdmplanName) | `string` | Optional | Subscription (this schema) |
+| [xdm:paymentMethod](#xdmpaymentmethod) | `string` | Optional | Subscription (this schema) |
+| [xdm:paymentStatus](#xdmpaymentstatus) | `string` | Optional | Subscription (this schema) |
+| [xdm:planName](#xdmplanname) | `string` | Optional | Subscription (this schema) |
 | [xdm:reason](#xdmreason) | `string` | Optional | Subscription (this schema) |
 | [xdm:renew](#xdmrenew) | `string` | Optional | Subscription (this schema) |
 | [xdm:revision](#xdmrevision) | `string` | Optional | Subscription (this schema) |
-| [xdm:startDate](#xdmstartDate) | `string` | Optional | Subscription (this schema) |
+| [xdm:startDate](#xdmstartdate) | `string` | Optional | Subscription (this schema) |
 | [xdm:status](#xdmstatus) | `string` | Optional | Subscription (this schema) |
-| [xdm:subCategory](#xdmsubCategory) | `string` | Optional | Subscription (this schema) |
+| [xdm:subCategory](#xdmsubcategory) | `string` | Optional | Subscription (this schema) |
 | [xdm:subscriber](#xdmsubscriber) | Person | Optional | Subscription (this schema) |
 | [xdm:term](#xdmterm) | `integer` | Optional | Subscription (this schema) |
-| [xdm:termUnitOfTime](#xdmtermUnitOfTime) | `string` | Optional | Subscription (this schema) |
-| [xdm:topUp](#xdmtopUp) | `string` | Optional | Subscription (this schema) |
+| [xdm:termUnitOfTime](#xdmtermunitoftime) | `string` | Optional | Subscription (this schema) |
+| [xdm:topUp](#xdmtopup) | `string` | Optional | Subscription (this schema) |
 | [xdm:type](#xdmtype) | `string` | Optional | Subscription (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 

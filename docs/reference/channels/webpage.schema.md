@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/channels/webpage
 
 Information about the web page of the `ExperienceEvent`.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [channels/webpage.schema.json](channels/webpage.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [channels/webpage.schema.json](channels/webpage.schema.json) |
 
 ## Web Page Example
 ```json
@@ -26,9 +26,9 @@ Information about the web page of the `ExperienceEvent`.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:URL](#xdmURL) | `string` | Optional | Web Page (this schema) |
-| [xdm:isErrorPage](#xdmisErrorPage) | `boolean` | Optional | Web Page (this schema) |
-| [xdm:isHomePage](#xdmisHomePage) | `boolean` | Optional | Web Page (this schema) |
+| [xdm:URL](#xdmurl) | `string` | Optional | Web Page (this schema) |
+| [xdm:isErrorPage](#xdmiserrorpage) | `boolean` | Optional | Web Page (this schema) |
+| [xdm:isHomePage](#xdmishomepage) | `boolean` | Optional | Web Page (this schema) |
 | [xdm:name](#xdmname) | `string` | Optional | Web Page (this schema) |
 | [xdm:referrer](#xdmreferrer) | `object` | Optional | Web Page (this schema) |
 | [xdm:section](#xdmsection) | `string` | Optional | Web Page (this schema) |

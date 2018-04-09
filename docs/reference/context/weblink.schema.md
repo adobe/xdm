@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/context/weblink
 
 Information about the web link of the ExperienceEvent.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [context/weblink.schema.json](context/weblink.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [context/weblink.schema.json](context/weblink.schema.json) |
 
 ## Web Link Example
 ```json
@@ -24,7 +24,7 @@ Information about the web link of the ExperienceEvent.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:URL](#xdmURL) | `string` | Optional | Web Link (this schema) |
+| [xdm:URL](#xdmurl) | `string` | Optional | Web Link (this schema) |
 | [xdm:name](#xdmname) | `string` | Optional | Web Link (this schema) |
 | [xdm:type](#xdmtype) | `enum` | Optional | Web Link (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |

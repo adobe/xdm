@@ -1,0 +1,94 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/channels/agency",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "E-Mail",
+  "description":
+    "The marketing experience is handed-off to an external agency. This channel has no specific mechanism and is designed for descriptive purposes only. Such as, to define experiences for which you want to keep a trace of the population targeted in an external tool",
+  "meta:extensible": true,
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/channels/channel#/definitions/channel"
+  ],
+  "type": "object",
+  "meta:abstract": false,
+  "definitions": {
+    "channel": {
+      "properties": {
+        "@id": {
+          "type": "string",
+          "format": "uri",
+          "const": "https://ns.adobe.com/xdm/channels/agency",
+          "description":
+            "The ID uniquely identifies the channel. Each specific experience channel defines a constant `@id`."
+        },
+        "xdm:mode": {
+          "type": "string",
+          "const": "bidirectional",
+          "description": "How experiences are delivered in this channel.",
+          "meta:enum": {
+            "push":
+              "The publisher of an experience can initiate an experience by sending a message into the channel. Most `push` channels involve some form of subscription or opt-in.",
+            "pull":
+              "The consumer can initiate an experience by requesting a location in the channel. Most `pull` channels give publishers some control how the experience is then delivered.",
+            "bidirectional":
+              "Both `push` and `pull` interaction modes are supported by the channel."
+          }
+        },
+        "@type": {
+          "type": "string",
+          "format": "uri",
+          "description":
+            "The `@type` property is used to provide a rough classification of channels with similar properties.",
+          "const": "https://ns.adobe.com/xdm/channel-types/offline",
+          "meta:enum": {
+            "https://ns.adobe.com/xdm/channel-types/web":
+              "The world wide web, including mobile web",
+            "https://ns.adobe.com/xdm/channel-types/social":
+              "Social media platforms",
+            "https://ns.adobe.com/xdm/channel-types/mobile":
+              "Mobile applications",
+            "https://ns.adobe.com/xdm/channel-types/messaging":
+              "Instant Messaging",
+            "https://ns.adobe.com/xdm/channel-types/email": "E-Mail",
+            "https://ns.adobe.com/xdm/channel-types/offline":
+              "Non-Digital experience channels"
+          }
+        },
+        "xdm:contentTypes": {
+          "type": "array",
+          "const": [],
+          "description": "The content types that this channel can deliver."
+        },
+        "xdm:metricTypes": {
+          "type": "array",
+          "const": [],
+          "description": "The metrics that can be collected in this channel."
+        },
+        "xdm:locationTypes": {
+          "type": "array",
+          "const": [],
+          "description":
+            "The types of locations (virtual places) that this channel consists of and can deliver content to."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/channels/channel#/definitions/channel"
+    },
+    {
+      "$ref": "#/definitions/channel"
+    }
+  ],
+  "required": ["@id"],
+  "meta:status": "experimental"
+}

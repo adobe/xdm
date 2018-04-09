@@ -107,7 +107,7 @@ An `EventEnvelope` is a type of `Activity` (in the sense of [W3C Activity Stream
 
 ```json
 {
-  "@type": "https://ns.adobe.com/xdm/common/event/published",
+  "@type": "https://ns.adobe.com/xdm/common/event/unpublished",
   "xdm:objectType": "https://ns.adobe.com/xdm/content/componentized-page",
   "activitystreams:published": "2016-07-16T19:20:30+01:00",
   "@id": "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
@@ -134,7 +134,7 @@ An `EventEnvelope` is a type of `Activity` (in the sense of [W3C Activity Stream
 
 ```json
 {
-  "@type": "https://ns.adobe.com/xdm/common/event/unpublished",
+  "@type": "https://ns.adobe.com/xdm/common/event/published",
   "xdm:objectType": "https://ns.adobe.com/xdm/content/componentized-page",
   "activitystreams:published": "2016-07-16T19:20:30+01:00",
   "@id": "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",

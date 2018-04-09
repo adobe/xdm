@@ -19,8 +19,8 @@
           "type": "string",
           "description": "The referrer URL."
         },
-        "xdm:referrerType": {
-          "title": "Referrer Type",
+        "xdm:type": {
+          "title": "Type",
           "type": "string",
           "description": "The referrer type.",
           "enum": [

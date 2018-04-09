@@ -7,9 +7,9 @@ http://schema.org/GeoCircle
 
 A circular region of a particular radius centered on a GeoCoordinate. Based on [schema.org](http://schema.org/GeoCircle)
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [external/schema/geocircle.schema.json](external/schema/geocircle.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [external/schema/geocircle.schema.json](external/schema/geocircle.schema.json) |
 
 ## Schema Hierarchy
 

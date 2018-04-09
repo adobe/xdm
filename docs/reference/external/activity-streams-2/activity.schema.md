@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/external/activity-streams-2/activity
 
 An [Activity](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-activity) is a subtype of `[Object](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object)` that describes some form of action that may happen, is currently happening, or has already happened. The `Activity` type itself serves as an abstract base type for all types of activities. It is important to note that the `Activity` type itself does not carry any specific semantics about the kind of action being taken.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [external/activity-streams-2/activity.schema.json](external/activity-streams-2/activity.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [external/activity-streams-2/activity.schema.json](external/activity-streams-2/activity.schema.json) |
 
 ## Schema Hierarchy
 
@@ -56,7 +56,7 @@ An [Activity](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-activity) is
 |----------|------|----------|------------|
 | [activitystreams:actor](#activitystreamsactor) | complex | Optional | Activity (this schema) |
 | [activitystreams:attachment](#activitystreamsattachment) | complex | Optional | [Object](object.schema.md#activitystreamsattachment) |
-| [activitystreams:attributedTo](#activitystreamsattributedTo) | complex | Optional | [Object](object.schema.md#activitystreamsattributedTo) |
+| [activitystreams:attributedTo](#activitystreamsattributedto) | complex | Optional | [Object](object.schema.md#activitystreamsattributedto) |
 | [activitystreams:audience](#activitystreamsaudience) | complex | Optional | [Object](object.schema.md#activitystreamsaudience) |
 | [activitystreams:bcc](#activitystreamsbcc) | complex | Optional | [Object](object.schema.md#activitystreamsbcc) |
 | [activitystreams:bto](#activitystreamsbto) | complex | Optional | [Object](object.schema.md#activitystreamsbto) |
@@ -64,14 +64,14 @@ An [Activity](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-activity) is
 | [activitystreams:content](#activitystreamscontent) | complex | Optional | [Object](object.schema.md#activitystreamscontent) |
 | [activitystreams:context](#activitystreamscontext) | complex | Optional | [Object](object.schema.md#activitystreamscontext) |
 | [activitystreams:duration](#activitystreamsduration) | `string` | Optional | [Object](object.schema.md#activitystreamsduration) |
-| [activitystreams:endTime](#activitystreamsendTime) | `string` | Optional | [Object](object.schema.md#activitystreamsendTime) |
+| [activitystreams:endTime](#activitystreamsendtime) | `string` | Optional | [Object](object.schema.md#activitystreamsendtime) |
 | [activitystreams:generator](#activitystreamsgenerator) | complex | Optional | [Object](object.schema.md#activitystreamsgenerator) |
 | [activitystreams:icon](#activitystreamsicon) | complex | Optional | [Object](object.schema.md#activitystreamsicon) |
 | [activitystreams:image](#activitystreamsimage) | complex | Optional | [Object](object.schema.md#activitystreamsimage) |
-| [activitystreams:inReplyTo](#activitystreamsinReplyTo) | complex | Optional | [Object](object.schema.md#activitystreamsinReplyTo) |
+| [activitystreams:inReplyTo](#activitystreamsinreplyto) | complex | Optional | [Object](object.schema.md#activitystreamsinreplyto) |
 | [activitystreams:instrument](#activitystreamsinstrument) | complex | Optional | Activity (this schema) |
 | [activitystreams:location](#activitystreamslocation) | complex | Optional | [Object](object.schema.md#activitystreamslocation) |
-| [activitystreams:mediaType](#activitystreamsmediaType) | `string` | Optional | [Object](object.schema.md#activitystreamsmediaType) |
+| [activitystreams:mediaType](#activitystreamsmediatype) | `string` | Optional | [Object](object.schema.md#activitystreamsmediatype) |
 | [activitystreams:name](#activitystreamsname) | complex | Optional | [Object](object.schema.md#activitystreamsname) |
 | [activitystreams:object](#activitystreamsobject) | complex | Optional | Activity (this schema) |
 | [activitystreams:origin](#activitystreamsorigin) | complex | Optional | Activity (this schema) |
@@ -79,7 +79,7 @@ An [Activity](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-activity) is
 | [activitystreams:published](#activitystreamspublished) | `string` | Optional | [Object](object.schema.md#activitystreamspublished) |
 | [activitystreams:replies](#activitystreamsreplies) | Collection | Optional | [Object](object.schema.md#activitystreamsreplies) |
 | [activitystreams:result](#activitystreamsresult) | complex | Optional | Activity (this schema) |
-| [activitystreams:startTime](#activitystreamsstartTime) | `string` | Optional | [Object](object.schema.md#activitystreamsstartTime) |
+| [activitystreams:startTime](#activitystreamsstarttime) | `string` | Optional | [Object](object.schema.md#activitystreamsstarttime) |
 | [activitystreams:summary](#activitystreamssummary) | complex | Optional | [Object](object.schema.md#activitystreamssummary) |
 | [activitystreams:tag](#activitystreamstag) | complex | Optional | [Object](object.schema.md#activitystreamstag) |
 | [activitystreams:target](#activitystreamstarget) | complex | Optional | Activity (this schema) |

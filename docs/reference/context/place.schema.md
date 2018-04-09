@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/context/place
 
 A place in the real world with a physical location.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [context/place.schema.json](context/place.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [context/place.schema.json](context/place.schema.json) |
 
 ## Schema Hierarchy
 
@@ -29,8 +29,7 @@ A place in the real world with a physical location.
     "xdm:primary": false,
     "xdm:street1": "345 Park Ave",
     "xdm:city": "San Jose",
-    "xdm:stateProvince": "California",
-    "xdm:stateProvinceISO": "CA",
+    "xdm:stateProvince": "US-CA",
     "xdm:postalCode": "95110",
     "xdm:country": "United States",
     "xdm:countryCode": "US",
@@ -52,13 +51,13 @@ A place in the real world with a physical location.
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#@id) | `string` | Optional | Place (this schema) |
-| [schema:branchCode](#schemabranchCode) | `string` | Optional | Place (this schema) |
+| [schema:branchCode](#schemabranchcode) | `string` | Optional | Place (this schema) |
 | [schema:description](#schemadescription) | `string` | Optional | Place (this schema) |
 | [schema:telephone](#schematelephone) | `string` | Optional | Place (this schema) |
 | [xdm:address](#xdmaddress) | Address | Optional | Place (this schema) |
-| [xdm:containedInPlace](#xdmcontainedInPlace) | `string` | Optional | Place (this schema) |
-| [xdm:containsPlaces](#xdmcontainsPlaces) | `string[]` | Optional | Place (this schema) |
-| [xdm:pointOfInterest](#xdmpointOfInterest) | Geo Coordinates | Optional | Place (this schema) |
+| [xdm:containedInPlace](#xdmcontainedinplace) | `string` | Optional | Place (this schema) |
+| [xdm:containsPlaces](#xdmcontainsplaces) | `string[]` | Optional | Place (this schema) |
+| [xdm:pointOfInterest](#xdmpointofinterest) | Geo Coordinates | Optional | Place (this schema) |
 | [xdm:shape](#xdmshape) | Geo Shape | Optional | Place (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 

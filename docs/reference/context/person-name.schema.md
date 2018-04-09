@@ -15,6 +15,14 @@ Full name of a person
 
 ```json
 {
+  "xdm:firstName": "فلانة",
+  "xdm:lastName": "الفلانية",
+  "xdm:fullName": "فلانة الفلانية"
+}
+```
+
+```json
+{
   "xdm:firstName": "John",
   "xdm:middleName": "S",
   "xdm:lastName": "Doe"
@@ -26,14 +34,6 @@ Full name of a person
   "xdm:firstName": "三",
   "xdm:lastName": "张",
   "xdm:fullName": "张三"
-}
-```
-
-```json
-{
-  "xdm:firstName": "فلانة",
-  "xdm:lastName": "الفلانية",
-  "xdm:fullName": "فلانة الفلانية"
 }
 ```
 

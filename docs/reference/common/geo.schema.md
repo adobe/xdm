@@ -22,7 +22,7 @@ The geographic related data where an event was observed.
 {
   "@id": "https://data.adobe.io/entities/geo/tokyo",
   "xdm:countryCode": "JP",
-  "xdm:stateProvince": "Tōkyō-to",
+  "xdm:stateProvince": "JP-13",
   "xdm:city": "Tōkyō",
   "xdm:postalCode": "141-0032",
   "schema:latitude": 35.6185,
@@ -34,7 +34,7 @@ The geographic related data where an event was observed.
 {
   "@id": "https://data.adobe.io/entities/geo/potsdam",
   "xdm:countryCode": "DE",
-  "xdm:stateProvince": "Brandenburg",
+  "xdm:stateProvince": "DE-BB",
   "xdm:city": "Potsdam",
   "xdm:postalCode": "14482"
 }

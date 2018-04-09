@@ -25,7 +25,8 @@
         },
         "_page": {
           "$ref": "https://ns.adobe.com/xdm/common/page",
-          "description": "Page info, included if this resource is part of paginated result."
+          "description":
+            "Page info, included if this resource is part of paginated result."
         },
         "children": {
           "type": "array",
@@ -48,10 +49,12 @@
       "$ref": "#/definitions/directory"
     },
     {
-      "$ref": "http://ns.adobe.com/adobecloud/core/1.0#/definitions/common-properties"
+      "$ref":
+        "http://ns.adobe.com/adobecloud/core/1.0#/definitions/common-properties"
     },
     {
-      "$ref": "http://ns.adobe.com/adobecloud/core/1.0#/definitions/date-properties"
+      "$ref":
+        "http://ns.adobe.com/adobecloud/core/1.0#/definitions/date-properties"
     },
     {
       "$ref": "https://ns.adobe.com/xdm/external/hal/resource#/definitions/hal"

@@ -16,19 +16,19 @@
         "xdm:firstName": {
           "title": "First name",
           "type": "string",
-          "description": "The preferred personal, given, or first name."
+          "description": "The first segment of the name in the writing order most commonly accepted in the language of the name. In many cultures this is the preferred personal or given name.\n\nThe `firstName` and `lastName` properties have been introduced to maintain compatibility with existing systems that model names in a simplified, non-semantic, and non-internationalizable way. Using `xdm:fullName` is always preferable."
         },
         "xdm:lastName": {
           "title": "Last name",
           "type": "string",
           "description":
-            "The inherited family name, last name, surname, patronymic, or matronymic name."
+            "The last segment of the name in the writing order most commonly accepted in the language of the name. In many cultures this is the inherited family name, surname, patronymic, or matronymic name.\n\nThe `firstName` and `lastName` properties have been introduced to maintain compatibility with existing systems that model names in a simplified, non-semantic, and non-internationalizable way. Using `xdm:fullName` is always preferable."
         },
         "xdm:middleName": {
           "title": "Middle name",
           "type": "string",
           "description":
-            "Middle, alternative, or additional names supplied between the given name and surnames."
+            "Middle, alternative, or additional names supplied between the first name and last name."
         },
         "xdm:courtesyTitle": {
           "title": "Courtesy title",

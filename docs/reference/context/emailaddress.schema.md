@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/context/emailaddress
 
 A standard email address.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [context/emailaddress.schema.json](context/emailaddress.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [context/emailaddress.schema.json](context/emailaddress.schema.json) |
 
 ## Schema Hierarchy
 
@@ -32,14 +32,14 @@ A standard email address.
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [xdm:address](#xdmaddress) | `string` | Optional | Email Address (this schema) |
-| [xdm:createdByBatchID](#xdmcreatedByBatchID) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmcreatedByBatchID) |
+| [xdm:createdByBatchID](#xdmcreatedbybatchid) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmcreatedbybatchid) |
 | [xdm:label](#xdmlabel) | `string` | Optional | Email Address (this schema) |
-| [xdm:modifiedByBatchID](#xdmmodifiedByBatchID) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmmodifiedByBatchID) |
+| [xdm:modifiedByBatchID](#xdmmodifiedbybatchid) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmmodifiedbybatchid) |
 | [xdm:primary](#xdmprimary) | `boolean` | Optional | Email Address (this schema) |
-| [xdm:repositoryCreatedBy](#xdmrepositoryCreatedBy) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmrepositoryCreatedBy) |
-| [xdm:repositoryLastModifiedBy](#xdmrepositoryLastModifiedBy) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmrepositoryLastModifiedBy) |
+| [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmrepositorycreatedby) |
+| [xdm:repositoryLastModifiedBy](#xdmrepositorylastmodifiedby) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmrepositorylastmodifiedby) |
 | [xdm:status](#xdmstatus) | `string` | Optional | Email Address (this schema) |
-| [xdm:statusReason](#xdmstatusReason) | `string` | Optional | Email Address (this schema) |
+| [xdm:statusReason](#xdmstatusreason) | `string` | Optional | Email Address (this schema) |
 | [xdm:type](#xdmtype) | `string` | Optional | Email Address (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 

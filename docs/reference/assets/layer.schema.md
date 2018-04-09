@@ -11,9 +11,9 @@ They are used for compositing multiple images, adding text to an image, or addin
 Users can also apply a layer style to add a special effect such as a drop shadow or a glow.
 
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [assets/layer.schema.json](assets/layer.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [assets/layer.schema.json](assets/layer.schema.json) |
 
 ## Schema Hierarchy
 
@@ -39,8 +39,8 @@ Users can also apply a layer style to add a special effect such as a drop shadow
 |----------|------|----------|------------|
 | [xdm:height](#xdmheight) | `integer` | Optional | [Rectangular Object (measured in variable unit)](variable-unit-rectangular.schema.md#xdmheight) |
 | [xdm:name](#xdmname) | `string` | Optional | Layer (this schema) |
-| [xdm:originX](#xdmoriginX) | `integer` | Optional | [Rectangular Object (measured in variable unit)](variable-unit-rectangular.schema.md#xdmoriginX) |
-| [xdm:originY](#xdmoriginY) | `integer` | Optional | [Rectangular Object (measured in variable unit)](variable-unit-rectangular.schema.md#xdmoriginY) |
+| [xdm:originX](#xdmoriginx) | `integer` | Optional | [Rectangular Object (measured in variable unit)](variable-unit-rectangular.schema.md#xdmoriginx) |
+| [xdm:originY](#xdmoriginy) | `integer` | Optional | [Rectangular Object (measured in variable unit)](variable-unit-rectangular.schema.md#xdmoriginy) |
 | [xdm:style](#xdmstyle) | `string` | Optional | Layer (this schema) |
 | [xdm:unit](#xdmunit) | `string` | Optional | [Rectangular Object (measured in variable unit)](variable-unit-rectangular.schema.md#xdmunit) |
 | [xdm:visible](#xdmvisible) | `boolean` | Optional | Layer (this schema) |

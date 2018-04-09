@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/context/device
 
 An identified device that is an application or browser instance that is trackable across sessions, normally by cookies.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [context/device.schema.json](context/device.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [context/device.schema.json](context/device.schema.json) |
 
 ## Device Example
 ```json
@@ -30,15 +30,15 @@ An identified device that is an application or browser instance that is trackabl
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:colorDepth](#xdmcolorDepth) | `integer` | Optional | Device (this schema) |
+| [xdm:colorDepth](#xdmcolordepth) | `integer` | Optional | Device (this schema) |
 | [xdm:manufacturer](#xdmmanufacturer) | `string` | Optional | Device (this schema) |
 | [xdm:model](#xdmmodel) | `string` | Optional | Device (this schema) |
-| [xdm:modelNumber](#xdmmodelNumber) | `string` | Optional | Device (this schema) |
-| [xdm:screenHeight](#xdmscreenHeight) | `integer` | Optional | Device (this schema) |
-| [xdm:screenWidth](#xdmscreenWidth) | `integer` | Optional | Device (this schema) |
+| [xdm:modelNumber](#xdmmodelnumber) | `string` | Optional | Device (this schema) |
+| [xdm:screenHeight](#xdmscreenheight) | `integer` | Optional | Device (this schema) |
+| [xdm:screenWidth](#xdmscreenwidth) | `integer` | Optional | Device (this schema) |
 | [xdm:type](#xdmtype) | `string` | Optional | Device (this schema) |
-| [xdm:typeID](#xdmtypeID) | `string` | Optional | Device (this schema) |
-| [xdm:typeIDService](#xdmtypeIDService) | `string` | Optional | Device (this schema) |
+| [xdm:typeID](#xdmtypeid) | `string` | Optional | Device (this schema) |
+| [xdm:typeIDService](#xdmtypeidservice) | `string` | Optional | Device (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:colorDepth

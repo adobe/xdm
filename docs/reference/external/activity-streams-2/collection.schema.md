@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/external/activity-streams-2/collection
 
 A `Collection` is a subtype of `[Object](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object)` that represents ordered or unordered sets of `[Object](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object) or [Link](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-link)` instances. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-collection) specification for a complete description of the `Collection` type.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [external/activity-streams-2/collection.schema.json](external/activity-streams-2/collection.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [external/activity-streams-2/collection.schema.json](external/activity-streams-2/collection.schema.json) |
 
 ## Schema Hierarchy
 
@@ -45,7 +45,7 @@ A `Collection` is a subtype of `[Object](https://www.w3.org/TR/activitystreams-v
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [activitystreams:attachment](#activitystreamsattachment) | complex | Optional | [Object](object.schema.md#activitystreamsattachment) |
-| [activitystreams:attributedTo](#activitystreamsattributedTo) | complex | Optional | [Object](object.schema.md#activitystreamsattributedTo) |
+| [activitystreams:attributedTo](#activitystreamsattributedto) | complex | Optional | [Object](object.schema.md#activitystreamsattributedto) |
 | [activitystreams:audience](#activitystreamsaudience) | complex | Optional | [Object](object.schema.md#activitystreamsaudience) |
 | [activitystreams:bcc](#activitystreamsbcc) | complex | Optional | [Object](object.schema.md#activitystreamsbcc) |
 | [activitystreams:bto](#activitystreamsbto) | complex | Optional | [Object](object.schema.md#activitystreamsbto) |
@@ -54,25 +54,25 @@ A `Collection` is a subtype of `[Object](https://www.w3.org/TR/activitystreams-v
 | [activitystreams:context](#activitystreamscontext) | complex | Optional | [Object](object.schema.md#activitystreamscontext) |
 | [activitystreams:current](#activitystreamscurrent) | complex | Optional | Collection (this schema) |
 | [activitystreams:duration](#activitystreamsduration) | `string` | Optional | [Object](object.schema.md#activitystreamsduration) |
-| [activitystreams:endTime](#activitystreamsendTime) | `string` | Optional | [Object](object.schema.md#activitystreamsendTime) |
+| [activitystreams:endTime](#activitystreamsendtime) | `string` | Optional | [Object](object.schema.md#activitystreamsendtime) |
 | [activitystreams:first](#activitystreamsfirst) | complex | Optional | Collection (this schema) |
 | [activitystreams:generator](#activitystreamsgenerator) | complex | Optional | [Object](object.schema.md#activitystreamsgenerator) |
 | [activitystreams:icon](#activitystreamsicon) | complex | Optional | [Object](object.schema.md#activitystreamsicon) |
 | [activitystreams:image](#activitystreamsimage) | complex | Optional | [Object](object.schema.md#activitystreamsimage) |
-| [activitystreams:inReplyTo](#activitystreamsinReplyTo) | complex | Optional | [Object](object.schema.md#activitystreamsinReplyTo) |
+| [activitystreams:inReplyTo](#activitystreamsinreplyto) | complex | Optional | [Object](object.schema.md#activitystreamsinreplyto) |
 | [activitystreams:items](#activitystreamsitems) | complex | Optional | Collection (this schema) |
 | [activitystreams:last](#activitystreamslast) | complex | Optional | Collection (this schema) |
 | [activitystreams:location](#activitystreamslocation) | complex | Optional | [Object](object.schema.md#activitystreamslocation) |
-| [activitystreams:mediaType](#activitystreamsmediaType) | `string` | Optional | [Object](object.schema.md#activitystreamsmediaType) |
+| [activitystreams:mediaType](#activitystreamsmediatype) | `string` | Optional | [Object](object.schema.md#activitystreamsmediatype) |
 | [activitystreams:name](#activitystreamsname) | complex | Optional | [Object](object.schema.md#activitystreamsname) |
 | [activitystreams:preview](#activitystreamspreview) | complex | Optional | [Object](object.schema.md#activitystreamspreview) |
 | [activitystreams:published](#activitystreamspublished) | `string` | Optional | [Object](object.schema.md#activitystreamspublished) |
 | [activitystreams:replies](#activitystreamsreplies) | Collection | Optional | [Object](object.schema.md#activitystreamsreplies) |
-| [activitystreams:startTime](#activitystreamsstartTime) | `string` | Optional | [Object](object.schema.md#activitystreamsstartTime) |
+| [activitystreams:startTime](#activitystreamsstarttime) | `string` | Optional | [Object](object.schema.md#activitystreamsstarttime) |
 | [activitystreams:summary](#activitystreamssummary) | complex | Optional | [Object](object.schema.md#activitystreamssummary) |
 | [activitystreams:tag](#activitystreamstag) | complex | Optional | [Object](object.schema.md#activitystreamstag) |
 | [activitystreams:to](#activitystreamsto) | complex | Optional | [Object](object.schema.md#activitystreamsto) |
-| [activitystreams:totalItems](#activitystreamstotalItems) | `integer` | Optional | Collection (this schema) |
+| [activitystreams:totalItems](#activitystreamstotalitems) | `integer` | Optional | Collection (this schema) |
 | [activitystreams:updated](#activitystreamsupdated) | `string` | Optional | [Object](object.schema.md#activitystreamsupdated) |
 | [activitystreams:url](#activitystreamsurl) | complex | Optional | [Object](object.schema.md#activitystreamsurl) |
 | `*` | any | Additional | this schema *allows* additional properties |

@@ -7,9 +7,9 @@ http://ns.adobe.com/adobecloud/core/1.0/asset
 
 An asset in Adobe Cloud Platform. It is not neccessarily a Digital Asset in the sense of Digital Asset Management, but a piece of content or data that can be represented in the form of a file.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [external/repo/asset.schema.json](external/repo/asset.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [external/repo/asset.schema.json](external/repo/asset.schema.json) |
 
 ## Schema Hierarchy
 
@@ -39,16 +39,16 @@ An asset in Adobe Cloud Platform. It is not neccessarily a Digital Asset in the 
 | [_embedded](#_embedded) | `object` | Optional | [HAL Resource](../hal/hal.schema.md#_embedded) |
 | [_links](#_links) | `object` | Optional | [HAL Resource](../hal/hal.schema.md#_links) |
 | [dc:format](#dcformat) | `string` | **Required** | [Common Properties](common.schema.md#dcformat) |
-| [repo:assetID](#repoassetID) | `string` | **Required** | Asset (this schema) |
-| [repo:createDate](#repocreateDate) | `string` | Optional | [Common Properties](common.schema.md#repocreateDate) |
+| [repo:assetID](#repoassetid) | `string` | **Required** | Asset (this schema) |
+| [repo:createDate](#repocreatedate) | `string` | Optional | [Common Properties](common.schema.md#repocreatedate) |
 | [repo:etag](#repoetag) | `string` | **Required** | Asset (this schema) |
-| [repo:lastModifiedDate](#repolastModifiedDate) | `string` | **Required** | [Common Properties](common.schema.md#repolastModifiedDate) |
+| [repo:lastModifiedDate](#repolastmodifieddate) | `string` | **Required** | [Common Properties](common.schema.md#repolastmodifieddate) |
 | [repo:name](#reponame) | `string` | **Required** | [Common Properties](common.schema.md#reponame) |
 | [repo:path](#repopath) | `string` | **Required** | [Common Properties](common.schema.md#repopath) |
 | [repo:size](#reposize) | `integer` | **Required** | Asset (this schema) |
 | [repo:version](#repoversion) | `string` | **Required** | Asset (this schema) |
-| [tiff:imageLength](#tiffimageLength) | `integer` | Optional | Asset (this schema) |
-| [tiff:imageWidth](#tiffimageWidth) | `integer` | Optional | Asset (this schema) |
+| [tiff:imageLength](#tiffimagelength) | `integer` | Optional | Asset (this schema) |
+| [tiff:imageWidth](#tiffimagewidth) | `integer` | Optional | Asset (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## _embedded

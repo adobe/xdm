@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/data/metrics
 
 This is map of metrics and measues. Each key is the valid URI of a known `Metric`. Each value is a `Measure`, i.e. a concrete data point.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [data/metrics.schema.json](data/metrics.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [data/metrics.schema.json](data/metrics.schema.json) |
 
 ## Schema Hierarchy
 

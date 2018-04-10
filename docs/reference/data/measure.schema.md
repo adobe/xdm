@@ -18,7 +18,7 @@ It has a value, and optionally a unit, although the unit can be inferred from th
 ```json
 {
   "@type": "https://ns.adobe.com/xdm/data/example-metric",
-  "unit": null,
+  "xdm:unit": null,
   "xdm:value": 175
 }
 ```

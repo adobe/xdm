@@ -23,6 +23,11 @@
       "$ref": "https://ns.adobe.com/xdm/context/identity",
       "description": "Adobe Analytics Cloud extension to End User IDs."
     },
+    "https://ns.adobe.com/experience/campaign": {
+      "title": "Adobe Campaign End User IDs",
+      "$ref": "https://ns.adobe.com/xdm/context/identity",
+      "description": "Adobe Campaign extension to End User IDs."
+    },
     "https://ns.adobe.com/experience/tntid": {
       "title": "Adobe Target End User IDs",
       "$ref": "https://ns.adobe.com/xdm/context/identity",
@@ -30,7 +35,7 @@
     }
   },
   "meta:keys": {
-    "https://ns.adobe.com/experience/target": "Adobe Target",
+    "https://ns.adobe.com/experience/tntid": "Adobe Target",
     "https://ns.adobe.com/experience/campaign": "Adobe Campaign",
     "https://ns.adobe.com/experience/analytics": "Adobe Analytics",
     "https://ns.adobe.com/experience/mcid":

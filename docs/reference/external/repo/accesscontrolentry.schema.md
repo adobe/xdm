@@ -15,25 +15,25 @@ Schema for the Access Control Entry for the Access Control List of a resource
 
 ```json
 {
-  "repo:principal": {
-    "xdm:provider": {
-      "@id": "https://ims-na1.adobelogin.com/"
-    },
-    "@id": "C0B648DE57D701277F000101@AdobeID",
-    "@type": "https://ns.adobe.com/xdm-extensions/ims/user"
-  },
-  "repo:privilege": [
-    "write",
-    "delete"
-  ],
+  "repo:principal": "authenticated",
+  "repo:privilege": "read",
   "repo:modifier": "grant"
 }
 ```
 
 ```json
 {
-  "repo:principal": "authenticated",
-  "repo:privilege": "read",
+  "repo:principal": {
+    "xdm:provider": {
+      "@id": "https://ims-na1.adobelogin.com/"
+    },
+    "@id": "C0B648DE57D701277F000101@AdobeID",
+    "@type": "https://ns.adobe.com/adobecloudplatform/ims/user"
+  },
+  "repo:privilege": [
+    "write",
+    "delete"
+  ],
   "repo:modifier": "grant"
 }
 ```

@@ -57,7 +57,7 @@
           "title": "Control Group Member",
           "type": "boolean",
           "description":
-            "The recipient of this message is a member of a control group for this campaign activity. A control group is a population which will not receive the delivery; it is used to track post-delivery behavior and campaign impact by making a comparison with the behavior of target population, which has received the delivery.",
+            "The recipient of this message is a member of a control group for this campaign activity. A control group is a population which will not receive the delivery; it is used to track post-delivery behavior and campaign impact by making a comparison between the control group (or hold out group) with the behavior of target population, which has received the delivery.",
           "default": false
         },
         "https://ns.adobe.com/experience/campaign/message/testMember": {

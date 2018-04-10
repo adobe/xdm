@@ -24,7 +24,7 @@ A `updated event` follows semantics that are exactly equivalent to the semantics
   "xdm:objectType": "https://ns.adobe.com/xdm/assets/asset",
   "activitystreams:actor": {
     "@id": "D13A1E7053E46A220A4C86E1@AdobeID",
-    "@type": "https://ns.adobe.com/xdm-extensions/ims/user"
+    "@type": "https://ns.adobe.com/adobecloudplatform/ims/user"
   },
   "activitystreams:generator": {
     "xdm:root": "https://cc-api-storage.adobe.io/",
@@ -41,7 +41,7 @@ A `updated event` follows semantics that are exactly equivalent to the semantics
   "activitystreams:published": "2016-07-16T19:20:30+01:00",
   "activitystreams:to": {
     "@id": "D13A1E7053E46A220A4C86E1@AdobeID",
-    "@type": "https://ns.adobe.com/xdm-extensions/ims/user"
+    "@type": "https://ns.adobe.com/adobecloudplatform/ims/user"
   }
 }
 ```

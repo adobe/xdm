@@ -5016,7 +5016,9 @@
       }
     }
   },
-  "allOf": [{
-    "$ref": "#/definitions/customevents"
-  }]
+  "allOf": [
+    {
+      "$ref": "#/definitions/customevents"
+    }
+  ]
 }

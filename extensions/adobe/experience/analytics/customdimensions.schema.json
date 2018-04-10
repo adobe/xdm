@@ -2681,7 +2681,9 @@
       }
     }
   },
-  "allOf": [{
-    "$ref": "#/definitions/customdimensions"
-  }]
+  "allOf": [
+    {
+      "$ref": "#/definitions/customdimensions"
+    }
+  ]
 }

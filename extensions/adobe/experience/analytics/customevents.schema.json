@@ -7,9 +7,9 @@
   ],
   "$id": "https://ns.adobe.com/experience/analytics/customevents",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Adobe Analytics Cloud Experience Custom Events",
+  "title": "Adobe Analytics Cloud Experience Event Custom Events",
   "type": "object",
-  "description": "Adobe Analytics Cloud Experience Custom Events.",
+  "description": "Adobe Analytics Cloud Experience Event Custom Events.",
   "definitions": {
     "customevents": {
       "properties": {

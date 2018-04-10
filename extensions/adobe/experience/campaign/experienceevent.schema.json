@@ -30,27 +30,27 @@
           "title": "Content Variant",
           "type": "string",
           "description":
-            "A campaign activity can have multiple variants (Multilingual or A/B testing) but a message delivered to a recipient always contains one of them.\n> IMPORTANT: In case of multilingual, the mirror page, the recipient can switch from one variant to another (ex: switch of the language)."
+            "A campaign activity can have multiple variants e.g. Multilingual (translated variants for the same content) or A/B testing (different content to test what works better) but a message delivered to a recipient always contains one of them.\n> IMPORTANT: In case of multilingual, the mirror page, the recipient can switch from one variant to another (ex: switch of the language)."
         },
         "https://ns.adobe.com/experience/campaign/message/seedMember": {
           "title": "Seed Member",
           "type": "boolean",
           "default": false,
           "description":
-            "The recipient of this message is a member of a seed list for this campaign activity. Seed addresses are used to target recipients who do not match the defined target criteria. Seed members could be your marketing team or other stakeholders who are interested in tracking/measuring the quality of the campaign."
+            "The recipient of this message is a member of a seed list for this campaign activity. Seed addresses are used to include recipients who do not match the defined target criteria. Seed members could be your marketing team or other stakeholders who are interested in tracking/measuring the quality of the campaign. SeedMembers get the actual message, at the same time with regular recipients, even when the seedMember does not qualify to be a regular recipient."
         },
         "https://ns.adobe.com/experience/campaign/message/quarantine": {
           "title": "Quarantine",
           "type": "boolean",
           "default": false,
           "description":
-            "Address moved to quarantine. The quarantine is set to true when the message failed to deliver in a way that indicates that no future messages will be deliverable either to this address."
+            "Address moved to quarantine. The quarantine is set to `true` when the message failed to deliver in a way that indicates that no future messages will be deliverable either to this address."
         },
         "https://ns.adobe.com/experience/campaign/message/proofMember": {
           "title": "Proof Member",
           "type": "boolean",
           "description":
-            "The recipient of this message is a member of the proof group for this campaign activity. The proof is a special message that lets you test a delivery before sending to the main target. Proof recipients are responsible for approving both the form and content of the message.",
+            "The recipient of this message is a member of the proof group for this campaign activity. The proof is a special message that lets you test a delivery before sending to the main target. Proof recipients are responsible for approving both the form and content of the message. It is a pre-delivery target.",
           "default": false
         },
         "https://ns.adobe.com/experience/campaign/message/controlGroupMember": {
@@ -64,7 +64,7 @@
           "title": "A/B Test Member",
           "type": "boolean",
           "description":
-            "The recipient of this message is a member of a test group for this campaign activity. This is primarily used for identifying the initial population of an A/B Test.",
+            "The recipient of this message is a member of a test group for this campaign activity. This is primarily used for identifying the initial population of an A/B Test. After sending different variants to the testMembers, the winner Variant is decided to be sent to the remaining population based on behavioural changes in testMembers.",
           "default": false
         },
         "https://ns.adobe.com/experience/campaign/message/size": {
@@ -126,8 +126,7 @@
         "https://ns.adobe.com/experience/campaign/message/reasonMessage": {
           "title": "Reason Message",
           "type": "string",
-          "description":
-            "Reason of message delivery failure when the status is `bounce` or `nonDeliverable`."
+          "description": "Reason of message delivery failure."
         },
         "https://ns.adobe.com/experience/campaign/message/outboundIP": {
           "title": "IP Address",
@@ -166,7 +165,7 @@
             "Specify whether campaign activity is of type A/B testing.",
           "default": false
         },
-        "https://ns.adobe.com/experience/campaign/delivery/messagesClass": {
+        "https://ns.adobe.com/experience/campaign/delivery/messageClass": {
           "title": "Message Class",
           "type": "string",
           "meta:enum": {
@@ -233,7 +232,7 @@
           "description":
             "The offer and its location in the message for a click event related to an offer."
         },
-        "https://ns.adobe.com/experience/campaign/message/externalId": {
+        "https://ns.adobe.com/experience/campaign/message/external/id": {
           "title": "External ID",
           "type": "string",
           "description":

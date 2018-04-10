@@ -27,7 +27,7 @@
           "type": "string",
           "description": "Name of the offer."
         },
-        "https://ns.adobe.com/experience/campaign/offer/activityId": {
+        "https://ns.adobe.com/experience/campaign/offer/activity/id": {
           "title": "Activity ID",
           "type": "integer",
           "description":
@@ -35,12 +35,12 @@
           "minimum": 0,
           "maximum": 2147483647
         },
-        "https://ns.adobe.com/experience/campaign/offer/activityName": {
+        "https://ns.adobe.com/experience/campaign/offer/activity/name": {
           "title": "Activity Name",
           "type": "string",
           "description": "Name of the offer activity in the Offer Service."
         },
-        "https://ns.adobe.com/experience/campaign/offer/placementId": {
+        "https://ns.adobe.com/experience/campaign/offer/placement/id": {
           "title": "Placement ID",
           "type": "integer",
           "description":
@@ -48,7 +48,7 @@
           "minimum": 0,
           "maximum": 2147483647
         },
-        "https://ns.adobe.com/experience/campaign/offer/placementName": {
+        "https://ns.adobe.com/experience/campaign/offer/placement/name": {
           "title": "Placement Name",
           "type": "string",
           "description": "Name of the placement of the offer."

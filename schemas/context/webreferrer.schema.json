@@ -46,7 +46,7 @@
             "social": "The referrer is identified as a social network.",
             "unknown":
               "The referrer is unidentifiable (unknown). `No JavaScript` could be the cause.",
-            "usenet":
+            "news":
               "The URL of a referrer started with news://. As such, the referrer link was posted on a Usenet newsgroup rather than a web page."
           }
         }

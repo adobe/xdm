@@ -4,6 +4,22 @@
 
 
 
+## /assets/
+
+* [Aggregated Asset](./assets/aggregated-asset.schema.md) – `https://ns.adobe.com/xdm/assets/aggregated-asset`
+* [Artboard](./assets/artboard.schema.md) – `https://ns.adobe.com/xdm/assets/artboard`
+* [Asset](./assets/asset.schema.md) – `https://ns.adobe.com/xdm/assets/asset`
+* [Copyright Owner](./assets/copyright-owner.schema.md) – `https://ns.adobe.com/xdm/assets/copyright-owner`
+* [Font](./assets/font.schema.md) – `https://ns.adobe.com/xdm/assets/font`
+* [Image](./assets/image.schema.md) – `https://ns.adobe.com/xdm/assets/image`
+* [Language Alternative](./assets/language-alternative.schema.md) – `https://ns.adobe.com/xdm/assets/language-alternative`
+* [Layer Group](./assets/layer-group.schema.md) – `https://ns.adobe.com/xdm/assets/layer-group`
+* [Layer](./assets/layer.schema.md) – `https://ns.adobe.com/xdm/assets/layer`
+* [Rectangular Media](./assets/rectangular.schema.md) – `https://ns.adobe.com/xdm/assets/rectangular`
+* [Resource Event](./assets/resource-event.schema.md) – `https://ns.adobe.com/xdm/assets/resource-event`
+* [Rectangular Object (measured in variable unit)](./assets/variable-unit-rectangular.schema.md) – `https://ns.adobe.com/xdm/assets/variable-unit-rectangular`
+* [Video](./assets/video.schema.md) – `https://ns.adobe.com/xdm/assets/video`
+
 ## /common/
 
 * [Address](./common/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
@@ -16,22 +32,6 @@
 * [Page](./common/page.schema.md) – `https://ns.adobe.com/xdm/common/page`
 * [Principal](./common/principal.schema.md) – `https://ns.adobe.com/xdm/common/principal`
 * [Customer Managed Environment](./common/selfservice.schema.md) – `https://ns.adobe.com/xdm/common/selfservice`
-
-## /assets/
-
-* [Artboard](./assets/artboard.schema.md) – `https://ns.adobe.com/xdm/assets/artboard`
-* [Aggregated Asset](./assets/aggregated-asset.schema.md) – `https://ns.adobe.com/xdm/assets/aggregated-asset`
-* [Asset](./assets/asset.schema.md) – `https://ns.adobe.com/xdm/assets/asset`
-* [Copyright Owner](./assets/copyright-owner.schema.md) – `https://ns.adobe.com/xdm/assets/copyright-owner`
-* [Font](./assets/font.schema.md) – `https://ns.adobe.com/xdm/assets/font`
-* [Language Alternative](./assets/language-alternative.schema.md) – `https://ns.adobe.com/xdm/assets/language-alternative`
-* [Image](./assets/image.schema.md) – `https://ns.adobe.com/xdm/assets/image`
-* [Layer Group](./assets/layer-group.schema.md) – `https://ns.adobe.com/xdm/assets/layer-group`
-* [Layer](./assets/layer.schema.md) – `https://ns.adobe.com/xdm/assets/layer`
-* [Rectangular Media](./assets/rectangular.schema.md) – `https://ns.adobe.com/xdm/assets/rectangular`
-* [Resource Event](./assets/resource-event.schema.md) – `https://ns.adobe.com/xdm/assets/resource-event`
-* [Rectangular Object (measured in variable unit)](./assets/variable-unit-rectangular.schema.md) – `https://ns.adobe.com/xdm/assets/variable-unit-rectangular`
-* [Video](./assets/video.schema.md) – `https://ns.adobe.com/xdm/assets/video`
 
 ## /channels/
 
@@ -51,8 +51,8 @@
 * [MPNS](./channels/mpns.schema.md) – `https://ns.adobe.com/xdm/channels/mpns`
 * [Phone](./channels/phone.schema.md) – `https://ns.adobe.com/xdm/channels/phone`
 * [SMS](./channels/sms.schema.md) – `https://ns.adobe.com/xdm/channels/sms`
-* [Web](./channels/web.schema.md) – `https://ns.adobe.com/xdm/channels/web`
 * [Twitter Feed](./channels/twitter-feed.schema.md) – `https://ns.adobe.com/xdm/channels/twitter-feed`
+* [Web](./channels/web.schema.md) – `https://ns.adobe.com/xdm/channels/web`
 * [Web Page](./channels/webpage.schema.md) – `https://ns.adobe.com/xdm/channels/webpage`
 * [WeChat](./channels/wechat.schema.md) – `https://ns.adobe.com/xdm/channels/wechat`
 * [WNS](./channels/wns.schema.md) – `https://ns.adobe.com/xdm/channels/wns`
@@ -104,24 +104,24 @@
 * [Measure](./data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
 * [Metric](./data/metric.schema.md) – `https://ns.adobe.com/xdm/data/metric`
 * [Metrics](./data/metrics.schema.md) – `https://ns.adobe.com/xdm/data/metrics`
+* [mirror-pages](./data/mirror-pages.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages`
 * [non-deliverables](./data/non-deliverables.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/non-deliverables`
 * [not-sent](./data/not-sent.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/not-sent`
 * [opens](./data/opens.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/opens`
-* [mirror-pages](./data/mirror-pages.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages`
 * [Order](./data/order.schema.md) – `https://ns.adobe.com/xdm/data/order`
 * [page-views](./data/page-views.schema.md) – `https://ns.adobe.com/xdm/data/metrics/web/page-views`
 * [Payment Item](./data/paymentitem.schema.md) – `https://ns.adobe.com/xdm/data/paymentitem`
-* [product-list-opens](./data/product-list-opens.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/product-list-opens`
 * [product-list-adds](./data/product-list-adds.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/product-list-adds`
+* [product-list-opens](./data/product-list-opens.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/product-list-opens`
 * [product-list-removals](./data/product-list-removals.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/product-list-removals`
-* [product-list-views](./data/product-list-views.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/product-list-views`
 * [product-list-reopens](./data/product-list-reopens.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/product-list-reopens`
+* [product-list-views](./data/product-list-views.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/product-list-views`
 * [product-views](./data/product-views.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/product-views`
 * [purchases](./data/purchases.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/purchases`
 * [save-for-laters](./data/save-for-laters.schema.md) – `https://ns.adobe.com/xdm/data/metrics/commerce/save-for-laters`
-* [user-complaints](./data/user-complaints.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/user-complaints`
 * [sends](./data/sends.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/sends`
 * [unsubscriptions](./data/unsubscriptions.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/unsubscriptions`
+* [user-complaints](./data/user-complaints.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/user-complaints`
 
 ## /common/event/
 
@@ -153,21 +153,21 @@
 * [RDF Language Tagged String](./external/activity-streams-2/rdf-langstring.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langstring`
 * [JSON-LD `@type`](./external/activity-streams-2/type.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/type`
 
-## /external/schema/
-
-* [Geo Circle](./external/schema/geocircle.schema.md) – `http://schema.org/GeoCircle`
-* [Geo Coordinates](./external/schema/geocoordinates.schema.md) – `http://schema.org/GeoCoordinates`
-* [Geo Shape](./external/schema/geoshape.schema.md) – `http://schema.org/GeoShape`
-
 ## /external/hal/
 
 * [HAL Link](./external/hal/hal-link.schema.md) – `https://ns.adobe.com/xdm/external/hal/link`
 * [HAL Resource](./external/hal/hal.schema.md) – `https://ns.adobe.com/xdm/external/hal/resource`
 
+## /external/schema/
+
+* [Geo Coordinates](./external/schema/geocoordinates.schema.md) – `http://schema.org/GeoCoordinates`
+* [Geo Circle](./external/schema/geocircle.schema.md) – `http://schema.org/GeoCircle`
+* [Geo Shape](./external/schema/geoshape.schema.md) – `http://schema.org/GeoShape`
+
 ## /external/repo/
 
-* [Access Control Entry](./external/repo/accesscontrolentry.schema.md) – `https://ns.adobe.com/xdm/external/repo/accesscontrolentry`
 * [Access Control Policy](./external/repo/accesscontrolpolicy.schema.md) – `https://ns.adobe.com/xdm/external/repo/accesscontrolpolicy`
+* [Access Control Entry](./external/repo/accesscontrolentry.schema.md) – `https://ns.adobe.com/xdm/external/repo/accesscontrolentry`
 * [Asset](./external/repo/asset.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/asset`
 * [Common Properties](./external/repo/common.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0`
 * [Directory](./external/repo/directory.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/directory`

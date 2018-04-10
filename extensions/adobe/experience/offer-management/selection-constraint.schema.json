@@ -1,0 +1,36 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id":
+    "https://ns.adobe.com/xdm-extensions/adobe/experience/offer-management/selection-constraint",
+  "type": "object",
+  "title": "Offer Selection Constraint",
+  "description": "Offer Selection Constraint",
+  "definitions": {
+    "selection-constraint": {
+      "properties": {
+        "xdm:startDate": {
+          "type": "string",
+          "title": "Start Date",
+          "description": "Offer Start Date"
+        },
+        "xdm:endDate": {
+          "type": "string",
+          "title": "End Date",
+          "description": "Offer End Date"
+        }
+      },
+      "required": ["xdm:startDate", "xdm:endDate"]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/selection-constraint"
+    }
+  ]
+}

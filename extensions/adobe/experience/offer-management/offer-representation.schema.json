@@ -1,0 +1,57 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id":
+    "https://ns.adobe.com/xdm-extensions/adobe/experience/offer-management/offer-representation",
+  "type": "object",
+  "title": "Representation",
+  "description": "Offer Representation",
+  "definitions": {
+    "offer-representation": {
+      "properties": {
+        "xdm:contentType": {
+          "type": "string",
+          "title": "Type",
+          "description": "Content Type"
+        },
+        "xdm:contentValue": {
+          "type": "string",
+          "title": "Value",
+          "description": "Value"
+        },
+        "xdm:channel": {
+          "type": "string",
+          "title": "Offer Channel",
+          "description": "Offer Channel",
+          "enum": ["email", "mobile", "web"],
+          "meta:enum": {
+            "email": "Email",
+            "mobile": "Mobile",
+            "web": "Web"
+          }
+        },
+        "xdm:placement": {
+          "type": "string",
+          "title": "Placement",
+          "description": "Placement to comply with"
+        }
+      },
+      "required": [
+        "xdm:contentType",
+        "xdm:contentValue",
+        "xdm:channel",
+        "xdm:placement"
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/offer-representation"
+    }
+  ]
+}

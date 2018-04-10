@@ -1,0 +1,98 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id":
+    "https://ns.adobe.com/xdm-extensions/adobe/experience/offer-management/personalized-offer",
+  "meta:extends": [
+    "https://ns.adobe.com/xdm-extensions/adobe/experience/offer-management/offer"
+  ],
+  "type": "object",
+  "title": "Adobe Experience Cloud Personalized Offer",
+  "description": "Adobe Experience Cloud Personalized Offer",
+  "definitions": {
+    "personalized-offer": {
+      "properties": {
+        "@id": {
+          "type": "string",
+          "format": "uri",
+          "title": "ID",
+          "description": "The unique identifier of the offer"
+        },
+        "xdm:name": {
+          "type": "string",
+          "title": "Name",
+          "description": "Offer name"
+        },
+        "xdm:status": {
+          "type": "string",
+          "title": "Status",
+          "description": "Offer Status",
+          "enum": [
+            "draft",
+            "pending",
+            "rejected",
+            "approved",
+            "inUse",
+            "archived"
+          ],
+          "meta:enum": {
+            "draft": "Draft",
+            "pending": "Pending",
+            "rejected": "Rejected",
+            "approved": "Approved",
+            "inUse": "In Use",
+            "archived": "Archived"
+          }
+        },
+        "xdm:representations": {
+          "type": "array",
+          "items": {
+            "$ref":
+              "https://ns.adobe.com/xdm-extensions/adobe/experience/offer-management/offer-representation"
+          },
+          "title": "Representations",
+          "description": "Offer representations for different placements"
+        },
+        "xdm:metadata": {
+          "$ref":
+            "https://ns.adobe.com/xdm-extensions/adobe/experience/offer-management/offer-metadata",
+          "title": "Metadata",
+          "description": "Individual metadata for the offer"
+        },
+        "xdm:rank": {
+          "$ref":
+            "https://ns.adobe.com/xdm-extensions/adobe/experience/offer-management/rank",
+          "title": "Rank",
+          "description": "Offer Rank (priority)"
+        },
+        "xdm:cappingConstraint": {
+          "$ref":
+            "https://ns.adobe.com/xdm-extensions/adobe/experience/offer-management/capping-constraint",
+          "title": "Capping",
+          "description": "Offer capping constraint"
+        },
+        "xdm:selectionConstraint": {
+          "$ref":
+            "https://ns.adobe.com/xdm-extensions/adobe/experience/offer-management/selection-constraint",
+          "title": "Eligibility Rule",
+          "description": "Offer eligibility rule"
+        }
+      },
+      "required": ["xdm:rank", "xdm:cappingConstraint"]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/personalized-offer"
+    },
+    {
+      "$ref":
+        "https://ns.adobe.com/xdm-extensions/adobe/experience/offer-management/offer"
+    }
+  ]
+}

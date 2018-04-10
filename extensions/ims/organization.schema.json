@@ -6,7 +6,7 @@
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "https://ns.adobe.com/xdm-extensions/ims/organization",
+  "$id": "https://ns.adobe.com/adobecloudplatform/ims/organization",
   "title": "IMS Organization",
   "description":
     "This model represents a IMS Organization. The IMS organization prinicpal is a organization account under Adobe's identity management system (IMS).",
@@ -25,7 +25,7 @@
         },
         "type": {
           "type": "string",
-          "const": "https://ns.adobe.com/xdm-extensions/ims/organization"
+          "const": "https://ns.adobe.com/adobecloudplatform/ims/organization"
         }
       }
     }

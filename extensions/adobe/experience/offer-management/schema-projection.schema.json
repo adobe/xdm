@@ -6,44 +6,40 @@
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "https://ns.adobe.com/experience/offer-management/domain-model",
+  "$id": "https://ns.adobe.com/experience/offer-management/schema-projection",
   "meta:extensible": "true",
   "type": "object",
-  "title": "Domain Model",
-  "description": "Domain Model",
+  "title": "Schema Projection",
+  "description":
+    "Schema projection is a way to \"publish\" some set of schema properties for use in queries",
   "definitions": {
-    "offer": {
+    "schema-projection": {
       "properties": {
-        "xdm:schemaId": {
+        "@id": {
           "type": "string",
           "format": "uri",
-          "title": "Schema ID",
-          "description": "The unique identifier of the schema"
+          "title": "ID",
+          "description": "The unique identifier of the projection"
         },
         "xdm:name": {
           "type": "string",
           "title": "Name",
-          "description": "Model name"
+          "description": "Projection name"
         },
-        "xdm:properties": {
+        "xdm:schemaId": {
+          "type": "string",
+          "format": "uri",
+          "title": "Schema ID",
+          "description": "The $id of an underlying schema"
+        },
+        "xdm:publishedProperties": {
           "type": "array",
           "items": {
-            "type": "object",
-            "properties": {
-              "xdm:name": {
-                "type": "string",
-                "title": "Name",
-                "description": "Property name"
-              },
-              "xdm:contentType": {
-                "type": "string",
-                "title": "Type",
-                "description": "Property value type"
-              }
-            }
+            "type": "string"
           },
           "title": "Properties",
-          "description": "Model properties"
+          "description":
+            "Schema properties published for use in queries and rules"
         }
       },
       "required": ["xdm:name", "xdm:schemaId"]
@@ -51,7 +47,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/offer"
+      "$ref": "#/definitions/schema-projection"
     }
   ]
 }

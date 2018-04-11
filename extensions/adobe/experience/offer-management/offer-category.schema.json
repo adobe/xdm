@@ -7,9 +7,9 @@
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id":
-    "https://ns.adobe.com/xdm-extensions/adobe/experience/offer-management/offer-category",
+    "https://ns.adobe.com/experience/offer-management/offer-category",
   "meta:extends": [
-    "https://ns.adobe.com/xdm-extensions/adobe/experience/offer-management/filter-rule"
+    "https://ns.adobe.com/experience/offer-management/filter-rule"
   ],
   "type": "object",
   "title": "Offer Category Filter",
@@ -50,7 +50,7 @@
         },
         "xdm:cappingConstraint": {
           "$ref":
-            "https://ns.adobe.com/xdm-extensions/adobe/experience/offer-management/capping-constraint",
+            "https://ns.adobe.com/experience/offer-management/capping-constraint",
           "title": "Capping Constraint",
           "description": "Offer Capping Constraint"
         }
@@ -63,7 +63,7 @@
     },
     {
       "$ref":
-        "https://ns.adobe.com/xdm-extensions/adobe/experience/offer-management/filter-rule"
+        "https://ns.adobe.com/experience/offer-management/filter-rule"
     }
   ]
 }

@@ -7,9 +7,9 @@
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id":
-    "https://ns.adobe.com/xdm-extensions/adobe/experience/offer-management/personalized-offer",
+    "https://ns.adobe.com/experience/offer-management/personalized-offer",
   "meta:extends": [
-    "https://ns.adobe.com/xdm-extensions/adobe/experience/offer-management/offer"
+    "https://ns.adobe.com/experience/offer-management/offer"
   ],
   "type": "object",
   "title": "Adobe Experience Cloud Personalized Offer",
@@ -53,32 +53,32 @@
           "type": "array",
           "items": {
             "$ref":
-              "https://ns.adobe.com/xdm-extensions/adobe/experience/offer-management/offer-representation"
+              "https://ns.adobe.com/experience/offer-management/offer-representation"
           },
           "title": "Representations",
           "description": "Offer representations for different placements"
         },
         "xdm:metadata": {
           "$ref":
-            "https://ns.adobe.com/xdm-extensions/adobe/experience/offer-management/offer-metadata",
+            "https://ns.adobe.com/experience/offer-management/offer-metadata",
           "title": "Metadata",
           "description": "Individual metadata for the offer"
         },
         "xdm:rank": {
           "$ref":
-            "https://ns.adobe.com/xdm-extensions/adobe/experience/offer-management/rank",
+            "https://ns.adobe.com/experience/offer-management/rank",
           "title": "Rank",
           "description": "Offer Rank (priority)"
         },
         "xdm:cappingConstraint": {
           "$ref":
-            "https://ns.adobe.com/xdm-extensions/adobe/experience/offer-management/capping-constraint",
+            "https://ns.adobe.com/experience/offer-management/capping-constraint",
           "title": "Capping",
           "description": "Offer capping constraint"
         },
         "xdm:selectionConstraint": {
           "$ref":
-            "https://ns.adobe.com/xdm-extensions/adobe/experience/offer-management/selection-constraint",
+            "https://ns.adobe.com/experience/offer-management/selection-constraint",
           "title": "Eligibility Rule",
           "description": "Offer eligibility rule"
         }
@@ -92,7 +92,7 @@
     },
     {
       "$ref":
-        "https://ns.adobe.com/xdm-extensions/adobe/experience/offer-management/offer"
+        "https://ns.adobe.com/experience/offer-management/offer"
     }
   ]
 }

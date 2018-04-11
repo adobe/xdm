@@ -7,7 +7,7 @@
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id":
-    "https://ns.adobe.com/xdm-extensions/adobe/experience/offer-management/filter-rule",
+    "https://ns.adobe.com/experience/offer-management/filter-rule",
   "meta:extensible": "true",
   "type": "object",
   "title": "Filter Rule",

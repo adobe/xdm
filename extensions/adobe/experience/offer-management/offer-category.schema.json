@@ -6,8 +6,7 @@
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id":
-    "https://ns.adobe.com/experience/offer-management/offer-category",
+  "$id": "https://ns.adobe.com/experience/offer-management/offer-category",
   "meta:extends": [
     "https://ns.adobe.com/experience/offer-management/filter-rule"
   ],
@@ -62,8 +61,7 @@
       "$ref": "#/definitions/offer-category"
     },
     {
-      "$ref":
-        "https://ns.adobe.com/experience/offer-management/filter-rule"
+      "$ref": "https://ns.adobe.com/experience/offer-management/filter-rule"
     }
   ]
 }

@@ -6,11 +6,8 @@
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id":
-    "https://ns.adobe.com/experience/offer-management/personalized-offer",
-  "meta:extends": [
-    "https://ns.adobe.com/experience/offer-management/offer"
-  ],
+  "$id": "https://ns.adobe.com/experience/offer-management/personalized-offer",
+  "meta:extends": ["https://ns.adobe.com/experience/offer-management/offer"],
   "type": "object",
   "title": "Adobe Experience Cloud Personalized Offer",
   "description": "Adobe Experience Cloud Personalized Offer",
@@ -65,8 +62,7 @@
           "description": "Individual metadata for the offer"
         },
         "xdm:rank": {
-          "$ref":
-            "https://ns.adobe.com/experience/offer-management/rank",
+          "$ref": "https://ns.adobe.com/experience/offer-management/rank",
           "title": "Rank",
           "description": "Offer Rank (priority)"
         },
@@ -91,8 +87,7 @@
       "$ref": "#/definitions/personalized-offer"
     },
     {
-      "$ref":
-        "https://ns.adobe.com/experience/offer-management/offer"
+      "$ref": "https://ns.adobe.com/experience/offer-management/offer"
     }
   ]
 }

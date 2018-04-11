@@ -6,8 +6,7 @@
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id":
-    "https://ns.adobe.com/experience/offer-management/filter-rule",
+  "$id": "https://ns.adobe.com/experience/offer-management/filter-rule",
   "meta:extensible": "true",
   "type": "object",
   "title": "Filter Rule",

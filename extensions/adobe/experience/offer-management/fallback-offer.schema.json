@@ -7,10 +7,12 @@
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/experience/offer-management/fallback-offer",
-  "meta:extends": ["https://ns.adobe.com/experience/offer-management/offer"],
+  "meta:extends": [
+    "https://ns.adobe.com/experience/offer-management/offer"
+  ],
   "type": "object",
-  "title": "Adobe Experience Cloud Fallback Offer",
-  "description": "Adobe Experience Cloud Fallback Offer",
+  "title": "Fallback Offer",
+  "description": "Fallback offer is a default offer used when there is no offers satisfying all constraints",
   "definitions": {
     "fallback-offer": {
       "type": "object",
@@ -50,15 +52,13 @@
         "xdm:representations": {
           "type": "array",
           "items": {
-            "$ref":
-              "https://ns.adobe.com/experience/offer-management/offer-representation"
+            "$ref": "https://ns.adobe.com/experience/offer-management/offer-representation"
           },
           "title": "Representations",
           "description": "Offer representations for different placements"
         },
         "xdm:metadata": {
-          "$ref":
-            "https://ns.adobe.com/experience/offer-management/offer-metadata",
+          "$ref": "https://ns.adobe.com/experience/offer-management/offer-metadata",
           "title": "Metadata",
           "description": "Individual metadata for the offer"
         }

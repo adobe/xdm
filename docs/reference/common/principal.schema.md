@@ -23,7 +23,7 @@ This model represents a principal in an access control system. Principals are en
     "@id": "https://ims-na1.adobelogin.com/"
   },
   "@id": "C0B648DE57D701277F000101@AdobeID",
-  "@type": "https://ns.adobe.com/xdm-extensions/ims/user"
+  "@type": "https://ns.adobe.com/adobecloudplatform/ims/user"
 }
 ```
 

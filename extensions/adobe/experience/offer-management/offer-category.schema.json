@@ -42,10 +42,13 @@
           "title": "Expression",
           "description": "Expression: tag rule or profile query"
         },
-        "xdm:modelProjection": {
-          "type": "string",
-          "title": "Model Projection",
-          "description": "Model Projection"
+        "xdm:schemaProjections": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Schema Projections",
+          "description": "The id's of schema projections used in tag rule"
         },
         "xdm:cappingConstraint": {
           "$ref":

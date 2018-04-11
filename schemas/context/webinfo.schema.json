@@ -14,17 +14,17 @@
   "definitions": {
     "webinfo": {
       "properties": {
-        "xdm:webPage": {
+        "xdm:webPageView": {
           "title": "Web Page",
           "$ref": "https://ns.adobe.com/xdm/context/webpageview",
           "description":
             "Details about the web page where the web interaction occurred."
         },
-        "xdm:webLink": {
+        "xdm:webinteraction": {
           "title": "Web Link",
-          "$ref": "https://ns.adobe.com/xdm/context/weblink",
+          "$ref": "https://ns.adobe.com/xdm/context/webinteraction",
           "description":
-            "Details about the web link (URL) that corresponds to the web page where the interaction occurred."
+            "Details about the web link (URL) that corresponds to where the interaction occurred."
         },
         "xdm:webReferrer": {
           "title": "Web Referrer",

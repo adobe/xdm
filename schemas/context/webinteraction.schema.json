@@ -7,12 +7,12 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/weblink",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Web Link",
+  "title": "Web Interaction",
   "type": "object",
   "description":
-    "Details about the web link (URL) that corresponds to the web page where the interaction occurred, as recorded by an `ExperienceEvent`",
+    "Details about the web link (URL) that corresponds to where the interaction occurred, as recorded by an `ExperienceEvent`",
   "definitions": {
-    "weblink": {
+    "webinteraction": {
       "properties": {
         "xdm:type": {
           "title": "Type",
@@ -41,7 +41,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/weblink"
+      "$ref": "#/definitions/webinteraction"
     }
   ],
   "meta:status": "experimental"

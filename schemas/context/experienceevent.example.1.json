@@ -102,6 +102,20 @@
       "schema:longitude": 139.73237
     }
   },
+  "xdm:web":{
+    "xdm:webPageView": {
+      "xdm:siteSection": "Shopping Cart",
+      "xdm:server": "example.com",
+      "xdm:name": "Purchase Confirmation",
+      "xdm:URL": "https://www.example.com/orderConf",
+      "xdm:errorPage": false,
+      "xdm:homePage": false
+    },
+    "xdm:webReferrer": {
+      "xdm:URL": "https://www.example.com/checkout",
+      "xdm:referrerType": "internal"
+    }
+  }
   "xdm:marketing": {
     "xdm:trackingCode": "marketingcampaign111"
   }

@@ -16,7 +16,7 @@
       "properties": {
         "xdm:webPage": {
           "title": "Web Page",
-          "$ref": "https://ns.adobe.com/xdm/context/webpage",
+          "$ref": "https://ns.adobe.com/xdm/context/webpageview",
           "description":
             "Details about the web page where the web interaction occurred."
         },

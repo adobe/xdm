@@ -5,14 +5,14 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/context/webpage",
+  "$id": "https://ns.adobe.com/xdm/context/webpageview",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Web Page",
+  "title": "Web Page View",
   "type": "object",
   "description":
-    "Details about the web page where a web interaction occurred, as recorded by an `ExperienceEvent`.",
+    "Details about the web page that has just been loaded and viewed, as recorded by an `ExperienceEvent`.",
   "definitions": {
-    "webpage": {
+    "webpageview": {
       "properties": {
         "xdm:siteSection": {
           "title": "Site Section",
@@ -57,7 +57,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/webpage"
+      "$ref": "#/definitions/webpageview"
     }
   ],
   "meta:status": "experimental"

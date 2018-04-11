@@ -10,7 +10,7 @@
   "meta:extensible": "true",
   "type": "object",
   "title": "Filter Rule",
-  "description": "Filters are used to specify crirea for offer selection",
+  "description": "Filters are used to specify criteria for offer selection",
   "definitions": {
     "filter-rule": {
       "properties": {
@@ -23,7 +23,7 @@
         "xdm:name": {
           "type": "string",
           "title": "Name",
-          "description": "Offer name"
+          "description": "Filter name"
         },
         "xdm:type": {
           "type": "string",
@@ -46,7 +46,7 @@
           "description": "Model Projection"
         }
       },
-      "required": ["xdm:name"]
+      "required": ["xdm:name", "xdm:type"]
     }
   },
   "allOf": [

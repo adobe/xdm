@@ -14,9 +14,11 @@
     "rank": {
       "properties": {
         "xdm:priority": {
-          "type": "number",
+          "type": "integer",
           "title": "Priority",
-          "description": "Offer priority"
+          "description": "Offer priority",
+          "minimum": 0,
+          "maximum": 100
         }
       },
       "required": ["xdm:priority"]

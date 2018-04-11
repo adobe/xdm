@@ -31,7 +31,7 @@ Schema for the Access Control Policy of a resource
           "@id": "https://ims-na1.adobelogin.com/"
         },
         "@id": "C0B648DE57D701277F000101@AdobeID",
-        "@type": "https://ns.adobe.com/xdm-extensions/ims/user"
+        "@type": "https://ns.adobe.com/adobecloudplatform/ims/user"
       },
       "repo:privilege": [
         "write",

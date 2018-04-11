@@ -28,16 +28,16 @@ An [Activity](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-activity) is
   "@type": "https://ns.adobe.com/xdm/common/event/created",
   "activitystreams:published": "2016-07-16T19:20:30+01:00",
   "activitystreams:to": {
-    "https://ns.adobe.com/xdm-extensions/ims/user#id": "D13A1E7053E46A220A4C86E1@AdobeID",
-    "@type": "https://ns.adobe.com/xdm-extensions/ims/user"
+    "https://ns.adobe.com/adobecloudplatform/ims/user#id": "D13A1E7053E46A220A4C86E1@AdobeID",
+    "@type": "https://ns.adobe.com/adobecloudplatform/ims/user"
   },
   "activitystreams:generator": {
     "xdm:root": "https://cc-api-storage.adobe.io/",
     "@type": "https://ns.adobe.com/xdm/content/repository"
   },
   "activitystreams:actor": {
-    "https://ns.adobe.com/xdm-extensions/ims/user#id": "D13A1E7053E46A220A4C86E1@AdobeID",
-    "@type": "https://ns.adobe.com/xdm-extensions/ims/user"
+    "https://ns.adobe.com/adobecloudplatform/ims/user#id": "D13A1E7053E46A220A4C86E1@AdobeID",
+    "@type": "https://ns.adobe.com/adobecloudplatform/ims/user"
   },
   "activitystreams:object": {
     "@type": "https://ns.adobe.com/xdm/assets/asset",

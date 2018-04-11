@@ -39,11 +39,13 @@
         },
         "xdm:startDate": {
           "type": "string",
+          "format": "date-time",
           "title": "Start Date",
           "description": "Activity Start Date"
         },
         "xdm:endDate": {
           "type": "string",
+          "format": "date-time",
           "title": "End Date",
           "description": "Activity End Date"
         },

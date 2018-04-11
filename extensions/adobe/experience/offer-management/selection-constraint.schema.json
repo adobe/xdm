@@ -16,11 +16,13 @@
       "properties": {
         "xdm:startDate": {
           "type": "string",
+          "format": "date-time",
           "title": "Start Date",
           "description": "Offer Start Date"
         },
         "xdm:endDate": {
           "type": "string",
+          "format": "date-time",
           "title": "End Date",
           "description": "Offer End Date"
         }

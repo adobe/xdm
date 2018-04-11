@@ -7,9 +7,7 @@
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/experience/offer-management/fallback-offer",
-  "meta:extends": [
-    "https://ns.adobe.com/experience/offer-management/offer"
-  ],
+  "meta:extends": ["https://ns.adobe.com/experience/offer-management/offer"],
   "type": "object",
   "title": "Fallback Offer",
   "description": "Fallback offer is a default offer used when there is no offers satisfying all constraints",

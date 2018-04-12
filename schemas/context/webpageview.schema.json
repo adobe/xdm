@@ -9,8 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Web Page View",
   "type": "object",
-  "description":
-    "Details about the web page that has just been loaded and viewed, as recorded by an `ExperienceEvent`.",
+  "description": "",
   "definitions": {
     "webpageview": {
       "properties": {

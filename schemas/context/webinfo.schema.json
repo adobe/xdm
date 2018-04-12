@@ -9,8 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Web Information",
   "type": "object",
-  "description":
-    "Information about a web interaction recorded via an `ExperienceEvent`, including the web page, referrer and/or link related to the interaction.",
+  "description": "",
   "definitions": {
     "webinfo": {
       "properties": {

@@ -319,6 +319,7 @@ This is map of metrics and measues. Each key is the valid URI of a known `Metric
 
 ## https://ns.adobe.com/xdm/data/metrics/direct-marketing/not-sent
 
+Asynchronous message (email, SMS, MMS etc) was not dispatched due to cancellation or expiration of the marketing activity.
 
 `https://ns.adobe.com/xdm/data/metrics/direct-marketing/not-sent`
 * is optional
@@ -336,6 +337,7 @@ This is map of metrics and measues. Each key is the valid URI of a known `Metric
 
 ## https://ns.adobe.com/xdm/data/metrics/direct-marketing/opens
 
+The direct marketing message (email, SMS, Push Notifications etc) has been opened/swyped/touched by the recipient.
 
 `https://ns.adobe.com/xdm/data/metrics/direct-marketing/opens`
 * is optional
@@ -370,6 +372,7 @@ This is map of metrics and measues. Each key is the valid URI of a known `Metric
 
 ## https://ns.adobe.com/xdm/data/metrics/direct-marketing/unsubscriptions
 
+The recipient of the direct marketing message (email, newsletters, etc) has opted out from receiving them.
 
 `https://ns.adobe.com/xdm/data/metrics/direct-marketing/unsubscriptions`
 * is optional

@@ -1,0 +1,14 @@
+{
+  "xdm:webPageView": {
+    "xdm:siteSection": "Product section",
+    "xdm:server": "example.com",
+    "xdm:name": "product home",
+    "xdm:URL": "https://www.example.com/products",
+    "xdm:errorPage": false,
+    "xdm:homePage": true
+  },
+  "xdm:webReferrer": {
+    "xdm:URL": "https://www.some-adserver.com",
+    "xdm:referrerType": "external"
+  }
+}

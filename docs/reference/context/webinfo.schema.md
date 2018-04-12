@@ -31,9 +31,14 @@ Information recorded via an `ExperienceEvent` that is specific to the World Wide
     "xdm:errorPage": false,
     "xdm:homePage": true
   },
+  "xdm:webInteraction": {
+    "xdm:type": "other",
+    "xdm:URL": "#stores",
+    "xdm:name": "product store"
+  },
   "xdm:webReferrer": {
-    "xdm:URL": "https://www.some-adserver.com",
-    "xdm:referrerType": "external"
+    "xdm:URL": "https://www.example.com/products",
+    "xdm:type": "internal"
   }
 }
 ```
@@ -48,14 +53,9 @@ Information recorded via an `ExperienceEvent` that is specific to the World Wide
     "xdm:errorPage": false,
     "xdm:homePage": true
   },
-  "xdm:webInteraction": {
-    "xdm:type": "other",
-    "xdm:URL": "#stores",
-    "xdm:name": "product store"
-  },
   "xdm:webReferrer": {
-    "xdm:URL": "https://www.example.com/products",
-    "xdm:type": "internal"
+    "xdm:URL": "https://www.some-adserver.com",
+    "xdm:referrerType": "external"
   }
 }
 ```

@@ -44,5 +44,5 @@
     }
   ],
   "required": ["@id", "schema:name", "xdm:measurement", "xdm:unit"],
-  "meta:status": "stabilizing"
+  "meta:status": "experimental"
 }

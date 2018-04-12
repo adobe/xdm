@@ -9,7 +9,7 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
 
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [context/experienceevent.schema.json](context/experienceevent.schema.json) |
+| Can be instantiated | Yes | Stabilizing | Forbidden | Permitted | [context/experienceevent.schema.json](context/experienceevent.schema.json) |
 
 ## Schema Hierarchy
 

@@ -12,7 +12,7 @@ It has a value, and optionally a unit, although the unit can be inferred from th
 
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [data/measure.schema.json](data/measure.schema.json) |
+| Can be instantiated | Yes | Stabilizing | Forbidden | Permitted | [data/measure.schema.json](data/measure.schema.json) |
 
 ## Measure Example
 ```json

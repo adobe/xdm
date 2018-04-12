@@ -84,7 +84,7 @@
         },
         "xdm:web": {
           "title": "Web",
-          "$ref": "https://ns.adobe.com/xdm/channels/web",
+          "$ref": "https://ns.adobe.com/xdm/context/webinfo",
           "description":
             "The information related to web page and link of the ExperienceEvent."
         },
@@ -94,9 +94,9 @@
           "description":
             "The information related to marketing activities that are active with the touchpoint."
         },
-        "xdm:locationContext": {
-          "title": "Location Context",
-          "$ref": "https://ns.adobe.com/xdm/context/locationcontext",
+        "xdm:placeContext": {
+          "title": "Place Context",
+          "$ref": "https://ns.adobe.com/xdm/context/placecontext",
           "description":
             "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, working hours."
         },

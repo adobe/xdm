@@ -9,7 +9,7 @@ Information about the surrounding situation the event observation occurred in, s
 
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [context/environment.schema.json](context/environment.schema.json) |
+| Can be instantiated | Yes | Stabilizing | Forbidden | Permitted | [context/environment.schema.json](context/environment.schema.json) |
 
 ## Schema Hierarchy
 

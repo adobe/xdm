@@ -9,7 +9,7 @@ The entites related to buying and selling activity.
 
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [context/commerce.schema.json](context/commerce.schema.json) |
+| Can be instantiated | Yes | Stabilizing | Forbidden | Permitted | [context/commerce.schema.json](context/commerce.schema.json) |
 
 ## Schema Hierarchy
 

@@ -46,7 +46,7 @@
             "$ref": "https://ns.adobe.com/xdm/context/identity"
         }
     },
-    "meta:status": "experimental",
+    "meta:status": "stabilizing",
     "examples": [
         {
             "https://ns.adobe.com/experience/mcid": {

@@ -9,7 +9,7 @@ An identified device that is an application or browser instance that is trackabl
 
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [context/device.schema.json](context/device.schema.json) |
+| Can be instantiated | Yes | Stabilizing | Forbidden | Permitted | [context/device.schema.json](context/device.schema.json) |
 
 ## Device Example
 ```json

@@ -9,7 +9,7 @@ Detail information related to the browser
 
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [context/browserdetails.schema.json](context/browserdetails.schema.json) |
+| Can be instantiated | Yes | Stabilizing | Forbidden | Permitted | [context/browserdetails.schema.json](context/browserdetails.schema.json) |
 
 ## Browser Details Example
 ```json

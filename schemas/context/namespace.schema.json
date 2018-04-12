@@ -9,9 +9,8 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Namespace",
   "type": "object",
-  "description":
-    "The namespace or unique identifier associated with a collection of data. Each EndUserID is associated with a given namespace. In an Adobe Experience Cloud implementation standard namespaces exist, customer specific ones can be created on request from Adobe support.",
-  "definitions": {
+  "description": "",
+    "definitions": {
     "namespace": {
       "properties": {
         "xdm:code": {

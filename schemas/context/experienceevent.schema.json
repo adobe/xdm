@@ -157,9 +157,9 @@
               "type": "string",
               "format": "uri",
               "meta:enum": {
-                "https://ns.adobe.com/xdm/channel-types/paid": "Paid",
-                "https://ns.adobe.com/xdm/channel-types/earned": "Earned",
-                "https://ns.adobe.com/xdm/channel-types/owned": "Owned"
+                "https://ns.adobe.com/xdm/channel-strategy/paid": "Paid",
+                "https://ns.adobe.com/xdm/channel-strategy/earned": "Earned",
+                "https://ns.adobe.com/xdm/channel-strategy/owned": "Owned"
               }
             }
           }

@@ -122,6 +122,6 @@
   "xdm:channels": {
     "xdm:communication":"https://ns.adobe.com/xdm/channels/web",
     "xdm:type": "https://ns.adobe.com/xdm/channel-types/web",
-    "xdm:strategy": "https://ns.adobe.com/xdm/channel-types/owned"
+    "xdm:strategy": "https://ns.adobe.com/xdm/channel-strategy/owned"
   }
 }

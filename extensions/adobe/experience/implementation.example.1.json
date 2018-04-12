@@ -1,0 +1,10 @@
+{
+  "https://ns.adobe.com/experience/analytics": {
+    "xdm:name": "https://ns.adobe.com/experience/analytics/appmeasurement",
+    "xdm:version": "2.7.0"
+  },
+  "https://ns.adobe.com/experience/idservice": {
+    "xdm:name": "https://ns.adobe.com/experience/visitorapi",
+    "xdm:version": "1.4"
+  }
+}

@@ -100,36 +100,69 @@
           "description":
             "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, working hours."
         },
-        "xdm:channel": {
-          "title": "Communication Channel",
-          "type": "string",
-          "format": "uri",
-          "meta:enum": {
-            "https://ns.adobe.com/xdm/channels/adm": "ADM",
-            "https://ns.adobe.com/xdm/channels/agency": "Agency",
-            "https://ns.adobe.com/xdm/channels/apns": "APNS",
-            "https://ns.adobe.com/xdm/channels/application": "Application",
-            "https://ns.adobe.com/xdm/channels/baidu": "Baidu",
-            "https://ns.adobe.com/xdm/channels/channel": "Experience Channel",
-            "https://ns.adobe.com/xdm/channels/direct-mail": "Direct Mail",
-            "https://ns.adobe.com/xdm/channels/email": "E-Mail",
-            "https://ns.adobe.com/xdm/channels/facebook-feed":
-              "Facebook News Feed",
-            "https://ns.adobe.com/xdm/channels/fax": "Fax",
-            "https://ns.adobe.com/xdm/channels/gcm": "GCM",
-            "https://ns.adobe.com/xdm/channels/line": "LINE",
-            "https://ns.adobe.com/xdm/channels/mobile-app": "Web",
-            "https://ns.adobe.com/xdm/channels/mpns": "MPNS",
-            "https://ns.adobe.com/xdm/channels/phone": "Phone",
-            "https://ns.adobe.com/xdm/channels/sms": "SMS",
-            "https://ns.adobe.com/xdm/channels/twitter-feed": "Twitter Feed",
-            "https://ns.adobe.com/xdm/channels/web": "Web",
-            "https://ns.adobe.com/xdm/channels/webpage": "Web Page",
-            "https://ns.adobe.com/xdm/channels/wechat": "WeChat",
-            "https://ns.adobe.com/xdm/channels/wns": "WNS"
-          },
+        "xdm:channels": {
+          "title": "Channels",
           "description":
-            "The marketing channel related to this ExperienceEvent."
+            "The channels related to this ExperienceEvent.",
+          "type": "object",
+          "properties": {
+            "xdm:communication": {
+              "title": "Communication Channel",
+              "type": "string",
+              "format": "uri",
+              "meta:enum": {
+                "https://ns.adobe.com/xdm/channels/adm": "ADM",
+                "https://ns.adobe.com/xdm/channels/apns": "APNS",
+                "https://ns.adobe.com/xdm/channels/application": "Application",
+                "https://ns.adobe.com/xdm/channels/baidu": "Baidu",
+                "https://ns.adobe.com/xdm/channels/channel": "Experience Channel",
+                "https://ns.adobe.com/xdm/channels/direct-mail": "Direct Mail",
+                "https://ns.adobe.com/xdm/channels/email": "E-Mail",
+                "https://ns.adobe.com/xdm/channels/facebook-feed":
+                  "Facebook News Feed",
+                "https://ns.adobe.com/xdm/channels/fax": "Fax",
+                "https://ns.adobe.com/xdm/channels/gcm": "GCM",
+                "https://ns.adobe.com/xdm/channels/line": "LINE",
+                "https://ns.adobe.com/xdm/channels/mobile-app": "Web",
+                "https://ns.adobe.com/xdm/channels/mpns": "MPNS",
+                "https://ns.adobe.com/xdm/channels/phone": "Phone",
+                "https://ns.adobe.com/xdm/channels/sms": "SMS",
+                "https://ns.adobe.com/xdm/channels/twitter-feed": "Twitter Feed",
+                "https://ns.adobe.com/xdm/channels/web": "Web",
+                "https://ns.adobe.com/xdm/channels/webpage": "Web Page",
+                "https://ns.adobe.com/xdm/channels/wechat": "WeChat",
+                "https://ns.adobe.com/xdm/channels/wns": "WNS"
+              }
+            },
+            "xdm:type": {
+              "title": "Channel Type",
+              "type": "string",
+              "format": "uri",
+              "meta:enum": {
+                "https://ns.adobe.com/xdm/channel-types/web":
+                  "The world wide web, including mobile web",
+                "https://ns.adobe.com/xdm/channel-types/social":
+                  "Social media platforms",
+                "https://ns.adobe.com/xdm/channel-types/mobile":
+                  "Mobile applications",
+                "https://ns.adobe.com/xdm/channel-types/messaging":
+                  "Instant Messaging",
+                "https://ns.adobe.com/xdm/channel-types/email": "E-Mail",
+                "https://ns.adobe.com/xdm/channel-types/offline":
+                  "Non-Digital experience channels"
+              }
+            },
+            "xdm:strategy": {
+              "title": "Channel Strategy",
+              "type": "string",
+              "format": "uri",
+              "meta:enum": {
+                "https://ns.adobe.com/xdm/channel-strategy/paid": "Paid",
+                "https://ns.adobe.com/xdm/channel-strategy/earned": "Earned",
+                "https://ns.adobe.com/xdm/channel-strategy/owned": "Owned"
+              }
+            }
+          }
         }
       },
       "required": ["@id", "xdm:dataSource", "xdm:timestamp", "xdm:endUserIDs"]

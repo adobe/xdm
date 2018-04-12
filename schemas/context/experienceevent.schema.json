@@ -133,8 +133,9 @@
                   "https://ns.adobe.com/xdm/channels/webpage": "Web Page",
                   "https://ns.adobe.com/xdm/channels/wechat": "WeChat",
                   "https://ns.adobe.com/xdm/channels/wns": "WNS"
-                },
-                "xdm:type": {
+                }
+              },
+              "xdm:type": {
                 "title": "Channel Type",
                 "type": "string",
                 "format": "uri",

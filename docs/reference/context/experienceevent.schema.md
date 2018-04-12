@@ -23,9 +23,9 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
   * [Commerce](commerce.schema.md) `https://ns.adobe.com/xdm/context/commerce`
   * [Application](../channels/application.schema.md) `https://ns.adobe.com/xdm/channels/application`
   * [Search](search.schema.md) `https://ns.adobe.com/xdm/context/search`
-  * [Web](../channels/web.schema.md) `https://ns.adobe.com/xdm/channels/web`
+  * [Web Information](webinfo.schema.md) `https://ns.adobe.com/xdm/context/webinfo`
   * [Marketing](marketing.schema.md) `https://ns.adobe.com/xdm/context/marketing`
-  * [Location Context](locationcontext.schema.md) `https://ns.adobe.com/xdm/context/locationcontext`
+  * [Place Context](placecontext.schema.md) `https://ns.adobe.com/xdm/context/placecontext`
 
 ## ExperienceEvent Example
 ```json
@@ -120,7 +120,7 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
       "xdm:priceTotal": 159
     }
   },
-  "xdm:locationContext": {
+  "xdm:placeContext": {
     "xdm:localTime": "2017-09-26T15:52:25+13:00",
     "xdm:geo": {
       "@id": "https://data.adobe.io/entities/geo/tokyo",
@@ -130,6 +130,20 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
       "xdm:postalCode": "141-0032",
       "schema:latitude": 35.6185,
       "schema:longitude": 139.73237
+    }
+  },
+  "xdm:web": {
+    "xdm:webPageView": {
+      "xdm:siteSection": "Shopping Cart",
+      "xdm:server": "example.com",
+      "xdm:name": "Purchase Confirmation",
+      "xdm:URL": "https://www.example.com/orderConf",
+      "xdm:errorPage": false,
+      "xdm:homePage": false
+    },
+    "xdm:webReferrer": {
+      "xdm:URL": "https://www.example.com/checkout",
+      "xdm:referrerType": "internal"
     }
   },
   "xdm:marketing": {
@@ -150,13 +164,13 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
 | [xdm:device](#xdmdevice) | Device | Optional | ExperienceEvent (this schema) |
 | [xdm:endUserIDs](#xdmenduserids) | End User IDs | Optional | ExperienceEvent (this schema) |
 | [xdm:environment](#xdmenvironment) | Environment | Optional | ExperienceEvent (this schema) |
-| [xdm:locationContext](#xdmlocationcontext) | Location Context | Optional | ExperienceEvent (this schema) |
 | [xdm:marketing](#xdmmarketing) | Marketing | Optional | ExperienceEvent (this schema) |
 | [xdm:metrics](#xdmmetrics) | Metrics | Optional | ExperienceEvent (this schema) |
+| [xdm:placeContext](#xdmplacecontext) | Place Context | Optional | ExperienceEvent (this schema) |
 | [xdm:productListItems](#xdmproductlistitems) | Product List Item | Optional | ExperienceEvent (this schema) |
 | [xdm:search](#xdmsearch) | Search | Optional | ExperienceEvent (this schema) |
 | [xdm:timestamp](#xdmtimestamp) | `string` | Optional | ExperienceEvent (this schema) |
-| [xdm:web](#xdmweb) | Web | Optional | ExperienceEvent (this schema) |
+| [xdm:web](#xdmweb) | Web Information | Optional | ExperienceEvent (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -341,25 +355,6 @@ Information about the surrounding situation the event observation occurred in, s
 
 
 
-## xdm:locationContext
-### Location Context
-
-The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, working hours.
-
-`xdm:locationContext`
-* is optional
-* type: Location Context
-* defined in this schema
-
-### xdm:locationContext Type
-
-
-* [Location Context](locationcontext.schema.md) – `https://ns.adobe.com/xdm/context/locationcontext`
-
-
-
-
-
 ## xdm:marketing
 ### Marketing
 
@@ -393,6 +388,25 @@ The metrics for actions performed during this observation.
 
 
 * [Metrics](../data/metrics.schema.md) – `https://ns.adobe.com/xdm/data/metrics`
+
+
+
+
+
+## xdm:placeContext
+### Place Context
+
+The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, working hours.
+
+`xdm:placeContext`
+* is optional
+* type: Place Context
+* defined in this schema
+
+### xdm:placeContext Type
+
+
+* [Place Context](placecontext.schema.md) – `https://ns.adobe.com/xdm/context/placecontext`
 
 
 
@@ -471,13 +485,13 @@ The information related to web page and link of the ExperienceEvent.
 
 `xdm:web`
 * is optional
-* type: Web
+* type: Web Information
 * defined in this schema
 
 ### xdm:web Type
 
 
-* [Web](../channels/web.schema.md) – `https://ns.adobe.com/xdm/channels/web`
+* [Web Information](webinfo.schema.md) – `https://ns.adobe.com/xdm/context/webinfo`
 
 
 

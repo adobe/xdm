@@ -15,13 +15,13 @@
     "webinfo": {
       "properties": {
         "xdm:webPageView": {
-          "title": "Web Page",
+          "title": "Web Page View",
           "$ref": "https://ns.adobe.com/xdm/context/webpageview",
           "description":
             "Details about the web page where the web interaction occurred."
         },
-        "xdm:webinteraction": {
-          "title": "Web Link",
+        "xdm:webInteraction": {
+          "title": "Web Interaction",
           "$ref": "https://ns.adobe.com/xdm/context/webinteraction",
           "description":
             "Details about the web link (URL) that corresponds to where the interaction occurred."

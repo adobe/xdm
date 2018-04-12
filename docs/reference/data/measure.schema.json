@@ -57,7 +57,7 @@
     "required": [
         "xdm:value"
     ],
-    "meta:status": "experimental",
+    "meta:status": "stabilizing",
     "examples": [
         {
             "@type": "https://ns.adobe.com/xdm/data/example-metric",

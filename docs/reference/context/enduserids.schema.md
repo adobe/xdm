@@ -15,7 +15,7 @@ Additionally, this schema can include a property that describes the data source 
 
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | No | Experimental | Forbidden | Permitted | [context/enduserids.schema.json](context/enduserids.schema.json) |
+| Can be instantiated | No | Stabilizing | Forbidden | Permitted | [context/enduserids.schema.json](context/enduserids.schema.json) |
 
 ## Schema Hierarchy
 

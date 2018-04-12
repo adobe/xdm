@@ -19,7 +19,7 @@
           "format": "uri",
           "description": "The unique identifier of this metric."
         },
-        "xdm:name": {
+        "schema:name": {
           "type": "string",
           "description":
             "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
@@ -43,6 +43,6 @@
       "$ref": "#/definitions/metric"
     }
   ],
-  "required": ["@id", "xdm:name", "xdm:measurement", "xdm:unit"],
+  "required": ["@id", "schema:name", "xdm:measurement", "xdm:unit"],
   "meta:status": "stabilizing"
 }

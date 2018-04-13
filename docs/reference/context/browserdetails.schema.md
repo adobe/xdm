@@ -69,7 +69,7 @@ An IETF Language Tag (RFC 5646).
 ## xdm:cookiesEnabled
 ### Allows Cookies
 
-The current user agent settings allow for the writing of cookies.&#39;
+The current user agent settings allow for the writing of cookies.'
 
 `xdm:cookiesEnabled`
 * is optional

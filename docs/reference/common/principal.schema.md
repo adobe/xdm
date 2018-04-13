@@ -10,11 +10,11 @@ This model represents a principal in an access control system. Principals are en
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
 | Can be instantiated | No | Experimental | Forbidden | Permitted | [common/principal.schema.json](common/principal.schema.json) |
-
 ## Schema Hierarchy
 
 * Principal `https://ns.adobe.com/xdm/common/principal`
   * [Identity Provider](identity-provider.schema.md) `https://ns.adobe.com/xdm/common/identity-provider`
+
 
 ## Principal Example
 ```json

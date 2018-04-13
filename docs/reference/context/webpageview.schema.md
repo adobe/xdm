@@ -101,7 +101,7 @@ Flag that indicate if the page is the site home page or not.  The definition of 
 ## xdm:name
 ### Name
 
-The normative name of the web page. This name is not necessarily the page title or directy associate with page content, but is used to organize a site&#39;s pages for classification purposes
+The normative name of the web page. This name is not necessarily the page title or directy associate with page content, but is used to organize a site's pages for classification purposes
 
 `xdm:name`
 * is optional

@@ -10,12 +10,12 @@ The Facebook News Feed. This does not include Facebook Messenger, or Facebook Ap
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Forbidden | Permitted | [channels/facebook-feed.schema.json](channels/facebook-feed.schema.json) |
-
 ## Schema Hierarchy
 
 * Facebook News Feed `https://ns.adobe.com/xdm/channels/facebook-feed`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
+
 
 ## Facebook News Feed Example
 ```json

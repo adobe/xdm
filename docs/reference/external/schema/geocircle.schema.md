@@ -10,11 +10,11 @@ A circular region of a particular radius centered on a GeoCoordinate. Based on [
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Forbidden | Permitted | [external/schema/geocircle.schema.json](external/schema/geocircle.schema.json) |
-
 ## Schema Hierarchy
 
 * Geo Circle `http://schema.org/GeoCircle`
   * [Geo Coordinates](geocoordinates.schema.md) `http://schema.org/GeoCoordinates`
+
 
 ## Geo Circle Example
 ```json

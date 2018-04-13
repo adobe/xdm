@@ -10,11 +10,11 @@ Identity is used to clearly distinguish people that are interacting with digital
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Forbidden | Permitted | [context/identity.schema.json](context/identity.schema.json) |
-
 ## Schema Hierarchy
 
 * Identity `https://ns.adobe.com/xdm/context/identity`
   * [Namespace](namespace.schema.md) `https://ns.adobe.com/xdm/context/namespace`
+
 
 ## Identity Example
 ```json

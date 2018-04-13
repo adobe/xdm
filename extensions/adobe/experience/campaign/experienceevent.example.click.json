@@ -44,33 +44,7 @@
     "proofMember": false,
     "controlGroupMember": false,
     "testMember": true,
-    "outboundIP": "10.20.30.40",
-    "offerProposed": [
-      {
-        "id": 1234,
-        "name": "50-percent-off",
-        "activityId": 1357,
-        "activityName": "major-banner",
-        "placementId": 2,
-        "placementName": "top"
-      },
-      {
-        "id": 1235,
-        "name": "bogo",
-        "activityId": 1357,
-        "activityName": "major-banner",
-        "placementId": 3,
-        "placementName": "sidebar"
-      }
-    ],
-    "offerClicked": {
-      "id": 1234,
-      "name": "50-percent-off",
-      "activityId": 1357,
-      "activityName": "major-banner",
-      "placementId": 2,
-      "placementName": "top"
-    }
+    "outboundIP": "10.20.30.40"
   },
   "https://ns.adobe.com/experience/campaign/delivery": {
     "id": 1001,

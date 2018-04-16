@@ -93,9 +93,15 @@
         },
         "xdm:preferredLanguage": {
           "title": "Preferred Language",
-          "$ref": "https://ns.adobe.com/xdm/context/language",
+          "type": "string",
           "description":
-            "Describes the preferred system of communication used by the profile."
+            "Describes the preferred system of communication used by the profile. Language codes are expressed in BCP-47 format."
+        },
+        "xdm:timeZone": {
+          "title": "Time Zone",
+          "type": "string",
+          "description":
+            "Describes which time zone the profile is present in, most frequently/the time zone preferred by the profile."
         },
         "xdm:profilePictureLink": {
           "title": "Profile Picture Link",
@@ -106,7 +112,7 @@
           "title": "Email Format",
           "type": "string",
           "description":
-            "Email format relevant to the user. This can be HTML/Plain Text",
+            "Email format relevant to the profile. This can be HTML/Plain Text",
           "meta:enum": {
             "html": "HTML",
             "plaintext": "Plain Text"

@@ -1,0 +1,2524 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/analytics/customeventspart2",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Adobe Analytics Cloud Experience Event Custom Events 501-1000",
+  "type": "object",
+  "description": "Adobe Analytics Cloud Experience Event Custom Events 501-1000.",
+  "definitions": {
+    "customeventspart2": {
+      "properties": {
+        "https://ns.adobe.com/experience/analytics/event501to600/event501": {
+          "title": "event501",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 501."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event502": {
+          "title": "event502",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 502."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event503": {
+          "title": "event503",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 503."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event504": {
+          "title": "event504",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 504."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event505": {
+          "title": "event505",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 505."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event506": {
+          "title": "event506",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 506."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event507": {
+          "title": "event507",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 507."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event508": {
+          "title": "event508",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 508."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event509": {
+          "title": "event509",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 509."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event510": {
+          "title": "event510",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 510."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event511": {
+          "title": "event511",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 511."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event512": {
+          "title": "event512",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 512."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event513": {
+          "title": "event513",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 513."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event514": {
+          "title": "event514",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 514."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event515": {
+          "title": "event515",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 515."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event516": {
+          "title": "event516",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 516."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event517": {
+          "title": "event517",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 517."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event518": {
+          "title": "event518",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 518."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event519": {
+          "title": "event519",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 519."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event520": {
+          "title": "event520",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 520."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event521": {
+          "title": "event521",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 521."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event522": {
+          "title": "event522",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 522."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event523": {
+          "title": "event523",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 523."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event524": {
+          "title": "event524",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 524."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event525": {
+          "title": "event525",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 525."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event526": {
+          "title": "event526",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 526."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event527": {
+          "title": "event527",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 527."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event528": {
+          "title": "event528",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 528."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event529": {
+          "title": "event529",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 529."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event530": {
+          "title": "event530",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 530."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event531": {
+          "title": "event531",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 531."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event532": {
+          "title": "event532",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 532."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event533": {
+          "title": "event533",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 533."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event534": {
+          "title": "event534",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 534."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event535": {
+          "title": "event535",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 535."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event536": {
+          "title": "event536",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 536."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event537": {
+          "title": "event537",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 537."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event538": {
+          "title": "event538",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 538."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event539": {
+          "title": "event539",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 539."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event540": {
+          "title": "event540",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 540."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event541": {
+          "title": "event541",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 541."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event542": {
+          "title": "event542",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 542."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event543": {
+          "title": "event543",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 543."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event544": {
+          "title": "event544",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 544."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event545": {
+          "title": "event545",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 545."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event546": {
+          "title": "event546",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 546."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event547": {
+          "title": "event547",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 547."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event548": {
+          "title": "event548",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 548."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event549": {
+          "title": "event549",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 549."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event550": {
+          "title": "event550",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 550."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event551": {
+          "title": "event551",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 551."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event552": {
+          "title": "event552",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 552."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event553": {
+          "title": "event553",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 553."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event554": {
+          "title": "event554",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 554."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event555": {
+          "title": "event555",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 555."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event556": {
+          "title": "event556",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 556."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event557": {
+          "title": "event557",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 557."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event558": {
+          "title": "event558",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 558."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event559": {
+          "title": "event559",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 559."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event560": {
+          "title": "event560",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 560."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event561": {
+          "title": "event561",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 561."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event562": {
+          "title": "event562",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 562."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event563": {
+          "title": "event563",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 563."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event564": {
+          "title": "event564",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 564."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event565": {
+          "title": "event565",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 565."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event566": {
+          "title": "event566",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 566."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event567": {
+          "title": "event567",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 567."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event568": {
+          "title": "event568",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 568."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event569": {
+          "title": "event569",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 569."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event570": {
+          "title": "event570",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 570."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event571": {
+          "title": "event571",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 571."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event572": {
+          "title": "event572",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 572."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event573": {
+          "title": "event573",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 573."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event574": {
+          "title": "event574",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 574."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event575": {
+          "title": "event575",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 575."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event576": {
+          "title": "event576",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 576."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event577": {
+          "title": "event577",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 577."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event578": {
+          "title": "event578",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 578."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event579": {
+          "title": "event579",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 579."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event580": {
+          "title": "event580",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 580."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event581": {
+          "title": "event581",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 581."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event582": {
+          "title": "event582",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 582."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event583": {
+          "title": "event583",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 583."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event584": {
+          "title": "event584",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 584."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event585": {
+          "title": "event585",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 585."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event586": {
+          "title": "event586",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 586."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event587": {
+          "title": "event587",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 587."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event588": {
+          "title": "event588",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 588."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event589": {
+          "title": "event589",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 589."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event590": {
+          "title": "event590",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 590."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event591": {
+          "title": "event591",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 591."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event592": {
+          "title": "event592",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 592."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event593": {
+          "title": "event593",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 593."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event594": {
+          "title": "event594",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 594."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event595": {
+          "title": "event595",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 595."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event596": {
+          "title": "event596",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 596."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event597": {
+          "title": "event597",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 597."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event598": {
+          "title": "event598",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 598."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event599": {
+          "title": "event599",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 599."
+        },
+        "https://ns.adobe.com/experience/analytics/event501to600/event600": {
+          "title": "event600",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 600."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event601": {
+          "title": "event601",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 601."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event602": {
+          "title": "event602",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 602."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event603": {
+          "title": "event603",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 603."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event604": {
+          "title": "event604",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 604."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event605": {
+          "title": "event605",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 605."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event606": {
+          "title": "event606",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 606."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event607": {
+          "title": "event607",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 607."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event608": {
+          "title": "event608",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 608."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event609": {
+          "title": "event609",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 609."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event610": {
+          "title": "event610",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 610."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event611": {
+          "title": "event611",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 611."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event612": {
+          "title": "event612",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 612."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event613": {
+          "title": "event613",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 613."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event614": {
+          "title": "event614",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 614."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event615": {
+          "title": "event615",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 615."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event616": {
+          "title": "event616",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 616."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event617": {
+          "title": "event617",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 617."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event618": {
+          "title": "event618",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 618."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event619": {
+          "title": "event619",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 619."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event620": {
+          "title": "event620",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 620."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event621": {
+          "title": "event621",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 621."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event622": {
+          "title": "event622",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 622."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event623": {
+          "title": "event623",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 623."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event624": {
+          "title": "event624",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 624."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event625": {
+          "title": "event625",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 625."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event626": {
+          "title": "event626",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 626."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event627": {
+          "title": "event627",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 627."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event628": {
+          "title": "event628",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 628."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event629": {
+          "title": "event629",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 629."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event630": {
+          "title": "event630",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 630."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event631": {
+          "title": "event631",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 631."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event632": {
+          "title": "event632",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 632."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event633": {
+          "title": "event633",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 633."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event634": {
+          "title": "event634",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 634."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event635": {
+          "title": "event635",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 635."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event636": {
+          "title": "event636",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 636."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event637": {
+          "title": "event637",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 637."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event638": {
+          "title": "event638",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 638."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event639": {
+          "title": "event639",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 639."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event640": {
+          "title": "event640",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 640."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event641": {
+          "title": "event641",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 641."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event642": {
+          "title": "event642",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 642."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event643": {
+          "title": "event643",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 643."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event644": {
+          "title": "event644",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 644."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event645": {
+          "title": "event645",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 645."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event646": {
+          "title": "event646",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 646."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event647": {
+          "title": "event647",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 647."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event648": {
+          "title": "event648",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 648."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event649": {
+          "title": "event649",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 649."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event650": {
+          "title": "event650",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 650."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event651": {
+          "title": "event651",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 651."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event652": {
+          "title": "event652",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 652."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event653": {
+          "title": "event653",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 653."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event654": {
+          "title": "event654",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 654."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event655": {
+          "title": "event655",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 655."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event656": {
+          "title": "event656",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 656."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event657": {
+          "title": "event657",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 657."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event658": {
+          "title": "event658",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 658."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event659": {
+          "title": "event659",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 659."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event660": {
+          "title": "event660",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 660."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event661": {
+          "title": "event661",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 661."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event662": {
+          "title": "event662",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 662."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event663": {
+          "title": "event663",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 663."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event664": {
+          "title": "event664",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 664."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event665": {
+          "title": "event665",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 665."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event666": {
+          "title": "event666",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 666."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event667": {
+          "title": "event667",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 667."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event668": {
+          "title": "event668",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 668."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event669": {
+          "title": "event669",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 669."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event670": {
+          "title": "event670",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 670."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event671": {
+          "title": "event671",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 671."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event672": {
+          "title": "event672",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 672."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event673": {
+          "title": "event673",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 673."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event674": {
+          "title": "event674",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 674."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event675": {
+          "title": "event675",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 675."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event676": {
+          "title": "event676",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 676."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event677": {
+          "title": "event677",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 677."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event678": {
+          "title": "event678",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 678."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event679": {
+          "title": "event679",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 679."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event680": {
+          "title": "event680",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 680."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event681": {
+          "title": "event681",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 681."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event682": {
+          "title": "event682",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 682."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event683": {
+          "title": "event683",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 683."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event684": {
+          "title": "event684",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 684."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event685": {
+          "title": "event685",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 685."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event686": {
+          "title": "event686",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 686."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event687": {
+          "title": "event687",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 687."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event688": {
+          "title": "event688",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 688."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event689": {
+          "title": "event689",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 689."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event690": {
+          "title": "event690",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 690."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event691": {
+          "title": "event691",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 691."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event692": {
+          "title": "event692",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 692."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event693": {
+          "title": "event693",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 693."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event694": {
+          "title": "event694",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 694."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event695": {
+          "title": "event695",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 695."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event696": {
+          "title": "event696",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 696."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event697": {
+          "title": "event697",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 697."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event698": {
+          "title": "event698",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 698."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event699": {
+          "title": "event699",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 699."
+        },
+        "https://ns.adobe.com/experience/analytics/event601to700/event700": {
+          "title": "event700",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 700."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event701": {
+          "title": "event701",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 701."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event702": {
+          "title": "event702",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 702."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event703": {
+          "title": "event703",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 703."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event704": {
+          "title": "event704",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 704."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event705": {
+          "title": "event705",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 705."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event706": {
+          "title": "event706",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 706."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event707": {
+          "title": "event707",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 707."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event708": {
+          "title": "event708",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 708."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event709": {
+          "title": "event709",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 709."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event710": {
+          "title": "event710",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 710."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event711": {
+          "title": "event711",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 711."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event712": {
+          "title": "event712",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 712."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event713": {
+          "title": "event713",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 713."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event714": {
+          "title": "event714",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 714."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event715": {
+          "title": "event715",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 715."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event716": {
+          "title": "event716",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 716."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event717": {
+          "title": "event717",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 717."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event718": {
+          "title": "event718",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 718."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event719": {
+          "title": "event719",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 719."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event720": {
+          "title": "event720",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 720."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event721": {
+          "title": "event721",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 721."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event722": {
+          "title": "event722",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 722."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event723": {
+          "title": "event723",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 723."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event724": {
+          "title": "event724",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 724."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event725": {
+          "title": "event725",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 725."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event726": {
+          "title": "event726",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 726."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event727": {
+          "title": "event727",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 727."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event728": {
+          "title": "event728",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 728."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event729": {
+          "title": "event729",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 729."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event730": {
+          "title": "event730",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 730."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event731": {
+          "title": "event731",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 731."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event732": {
+          "title": "event732",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 732."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event733": {
+          "title": "event733",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 733."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event734": {
+          "title": "event734",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 734."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event735": {
+          "title": "event735",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 735."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event736": {
+          "title": "event736",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 736."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event737": {
+          "title": "event737",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 737."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event738": {
+          "title": "event738",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 738."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event739": {
+          "title": "event739",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 739."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event740": {
+          "title": "event740",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 740."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event741": {
+          "title": "event741",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 741."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event742": {
+          "title": "event742",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 742."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event743": {
+          "title": "event743",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 743."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event744": {
+          "title": "event744",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 744."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event745": {
+          "title": "event745",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 745."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event746": {
+          "title": "event746",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 746."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event747": {
+          "title": "event747",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 747."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event748": {
+          "title": "event748",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 748."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event749": {
+          "title": "event749",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 749."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event750": {
+          "title": "event750",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 750."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event751": {
+          "title": "event751",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 751."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event752": {
+          "title": "event752",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 752."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event753": {
+          "title": "event753",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 753."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event754": {
+          "title": "event754",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 754."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event755": {
+          "title": "event755",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 755."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event756": {
+          "title": "event756",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 756."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event757": {
+          "title": "event757",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 757."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event758": {
+          "title": "event758",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 758."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event759": {
+          "title": "event759",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 759."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event760": {
+          "title": "event760",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 760."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event761": {
+          "title": "event761",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 761."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event762": {
+          "title": "event762",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 762."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event763": {
+          "title": "event763",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 763."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event764": {
+          "title": "event764",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 764."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event765": {
+          "title": "event765",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 765."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event766": {
+          "title": "event766",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 766."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event767": {
+          "title": "event767",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 767."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event768": {
+          "title": "event768",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 768."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event769": {
+          "title": "event769",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 769."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event770": {
+          "title": "event770",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 770."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event771": {
+          "title": "event771",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 771."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event772": {
+          "title": "event772",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 772."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event773": {
+          "title": "event773",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 773."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event774": {
+          "title": "event774",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 774."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event775": {
+          "title": "event775",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 775."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event776": {
+          "title": "event776",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 776."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event777": {
+          "title": "event777",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 777."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event778": {
+          "title": "event778",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 778."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event779": {
+          "title": "event779",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 779."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event780": {
+          "title": "event780",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 780."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event781": {
+          "title": "event781",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 781."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event782": {
+          "title": "event782",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 782."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event783": {
+          "title": "event783",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 783."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event784": {
+          "title": "event784",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 784."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event785": {
+          "title": "event785",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 785."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event786": {
+          "title": "event786",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 786."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event787": {
+          "title": "event787",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 787."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event788": {
+          "title": "event788",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 788."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event789": {
+          "title": "event789",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 789."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event790": {
+          "title": "event790",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 790."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event791": {
+          "title": "event791",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 791."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event792": {
+          "title": "event792",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 792."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event793": {
+          "title": "event793",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 793."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event794": {
+          "title": "event794",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 794."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event795": {
+          "title": "event795",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 795."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event796": {
+          "title": "event796",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 796."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event797": {
+          "title": "event797",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 797."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event798": {
+          "title": "event798",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 798."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event799": {
+          "title": "event799",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 799."
+        },
+        "https://ns.adobe.com/experience/analytics/event701to800/event800": {
+          "title": "event800",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 800."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event801": {
+          "title": "event801",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 801."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event802": {
+          "title": "event802",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 802."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event803": {
+          "title": "event803",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 803."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event804": {
+          "title": "event804",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 804."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event805": {
+          "title": "event805",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 805."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event806": {
+          "title": "event806",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 806."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event807": {
+          "title": "event807",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 807."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event808": {
+          "title": "event808",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 808."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event809": {
+          "title": "event809",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 809."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event810": {
+          "title": "event810",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 810."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event811": {
+          "title": "event811",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 811."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event812": {
+          "title": "event812",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 812."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event813": {
+          "title": "event813",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 813."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event814": {
+          "title": "event814",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 814."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event815": {
+          "title": "event815",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 815."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event816": {
+          "title": "event816",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 816."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event817": {
+          "title": "event817",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 817."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event818": {
+          "title": "event818",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 818."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event819": {
+          "title": "event819",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 819."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event820": {
+          "title": "event820",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 820."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event821": {
+          "title": "event821",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 821."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event822": {
+          "title": "event822",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 822."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event823": {
+          "title": "event823",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 823."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event824": {
+          "title": "event824",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 824."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event825": {
+          "title": "event825",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 825."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event826": {
+          "title": "event826",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 826."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event827": {
+          "title": "event827",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 827."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event828": {
+          "title": "event828",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 828."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event829": {
+          "title": "event829",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 829."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event830": {
+          "title": "event830",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 830."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event831": {
+          "title": "event831",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 831."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event832": {
+          "title": "event832",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 832."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event833": {
+          "title": "event833",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 833."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event834": {
+          "title": "event834",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 834."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event835": {
+          "title": "event835",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 835."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event836": {
+          "title": "event836",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 836."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event837": {
+          "title": "event837",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 837."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event838": {
+          "title": "event838",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 838."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event839": {
+          "title": "event839",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 839."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event840": {
+          "title": "event840",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 840."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event841": {
+          "title": "event841",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 841."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event842": {
+          "title": "event842",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 842."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event843": {
+          "title": "event843",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 843."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event844": {
+          "title": "event844",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 844."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event845": {
+          "title": "event845",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 845."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event846": {
+          "title": "event846",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 846."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event847": {
+          "title": "event847",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 847."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event848": {
+          "title": "event848",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 848."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event849": {
+          "title": "event849",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 849."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event850": {
+          "title": "event850",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 850."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event851": {
+          "title": "event851",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 851."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event852": {
+          "title": "event852",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 852."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event853": {
+          "title": "event853",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 853."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event854": {
+          "title": "event854",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 854."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event855": {
+          "title": "event855",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 855."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event856": {
+          "title": "event856",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 856."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event857": {
+          "title": "event857",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 857."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event858": {
+          "title": "event858",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 858."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event859": {
+          "title": "event859",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 859."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event860": {
+          "title": "event860",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 860."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event861": {
+          "title": "event861",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 861."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event862": {
+          "title": "event862",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 862."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event863": {
+          "title": "event863",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 863."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event864": {
+          "title": "event864",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 864."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event865": {
+          "title": "event865",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 865."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event866": {
+          "title": "event866",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 866."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event867": {
+          "title": "event867",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 867."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event868": {
+          "title": "event868",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 868."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event869": {
+          "title": "event869",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 869."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event870": {
+          "title": "event870",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 870."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event871": {
+          "title": "event871",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 871."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event872": {
+          "title": "event872",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 872."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event873": {
+          "title": "event873",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 873."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event874": {
+          "title": "event874",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 874."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event875": {
+          "title": "event875",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 875."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event876": {
+          "title": "event876",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 876."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event877": {
+          "title": "event877",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 877."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event878": {
+          "title": "event878",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 878."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event879": {
+          "title": "event879",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 879."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event880": {
+          "title": "event880",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 880."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event881": {
+          "title": "event881",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 881."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event882": {
+          "title": "event882",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 882."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event883": {
+          "title": "event883",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 883."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event884": {
+          "title": "event884",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 884."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event885": {
+          "title": "event885",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 885."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event886": {
+          "title": "event886",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 886."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event887": {
+          "title": "event887",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 887."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event888": {
+          "title": "event888",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 888."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event889": {
+          "title": "event889",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 889."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event890": {
+          "title": "event890",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 890."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event891": {
+          "title": "event891",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 891."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event892": {
+          "title": "event892",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 892."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event893": {
+          "title": "event893",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 893."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event894": {
+          "title": "event894",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 894."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event895": {
+          "title": "event895",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 895."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event896": {
+          "title": "event896",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 896."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event897": {
+          "title": "event897",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 897."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event898": {
+          "title": "event898",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 898."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event899": {
+          "title": "event899",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 899."
+        },
+        "https://ns.adobe.com/experience/analytics/event801to900/event900": {
+          "title": "event900",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 900."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event901": {
+          "title": "event901",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 901."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event902": {
+          "title": "event902",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 902."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event903": {
+          "title": "event903",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 903."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event904": {
+          "title": "event904",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 904."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event905": {
+          "title": "event905",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 905."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event906": {
+          "title": "event906",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 906."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event907": {
+          "title": "event907",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 907."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event908": {
+          "title": "event908",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 908."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event909": {
+          "title": "event909",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 909."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event910": {
+          "title": "event910",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 910."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event911": {
+          "title": "event911",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 911."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event912": {
+          "title": "event912",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 912."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event913": {
+          "title": "event913",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 913."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event914": {
+          "title": "event914",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 914."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event915": {
+          "title": "event915",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 915."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event916": {
+          "title": "event916",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 916."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event917": {
+          "title": "event917",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 917."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event918": {
+          "title": "event918",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 918."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event919": {
+          "title": "event919",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 919."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event920": {
+          "title": "event920",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 920."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event921": {
+          "title": "event921",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 921."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event922": {
+          "title": "event922",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 922."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event923": {
+          "title": "event923",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 923."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event924": {
+          "title": "event924",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 924."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event925": {
+          "title": "event925",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 925."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event926": {
+          "title": "event926",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 926."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event927": {
+          "title": "event927",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 927."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event928": {
+          "title": "event928",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 928."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event929": {
+          "title": "event929",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 929."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event930": {
+          "title": "event930",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 930."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event931": {
+          "title": "event931",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 931."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event932": {
+          "title": "event932",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 932."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event933": {
+          "title": "event933",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 933."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event934": {
+          "title": "event934",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 934."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event935": {
+          "title": "event935",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 935."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event936": {
+          "title": "event936",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 936."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event937": {
+          "title": "event937",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 937."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event938": {
+          "title": "event938",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 938."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event939": {
+          "title": "event939",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 939."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event940": {
+          "title": "event940",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 940."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event941": {
+          "title": "event941",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 941."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event942": {
+          "title": "event942",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 942."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event943": {
+          "title": "event943",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 943."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event944": {
+          "title": "event944",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 944."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event945": {
+          "title": "event945",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 945."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event946": {
+          "title": "event946",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 946."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event947": {
+          "title": "event947",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 947."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event948": {
+          "title": "event948",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 948."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event949": {
+          "title": "event949",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 949."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event950": {
+          "title": "event950",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 950."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event951": {
+          "title": "event951",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 951."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event952": {
+          "title": "event952",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 952."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event953": {
+          "title": "event953",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 953."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event954": {
+          "title": "event954",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 954."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event955": {
+          "title": "event955",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 955."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event956": {
+          "title": "event956",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 956."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event957": {
+          "title": "event957",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 957."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event958": {
+          "title": "event958",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 958."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event959": {
+          "title": "event959",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 959."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event960": {
+          "title": "event960",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 960."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event961": {
+          "title": "event961",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 961."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event962": {
+          "title": "event962",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 962."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event963": {
+          "title": "event963",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 963."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event964": {
+          "title": "event964",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 964."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event965": {
+          "title": "event965",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 965."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event966": {
+          "title": "event966",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 966."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event967": {
+          "title": "event967",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 967."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event968": {
+          "title": "event968",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 968."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event969": {
+          "title": "event969",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 969."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event970": {
+          "title": "event970",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 970."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event971": {
+          "title": "event971",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 971."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event972": {
+          "title": "event972",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 972."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event973": {
+          "title": "event973",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 973."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event974": {
+          "title": "event974",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 974."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event975": {
+          "title": "event975",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 975."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event976": {
+          "title": "event976",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 976."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event977": {
+          "title": "event977",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 977."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event978": {
+          "title": "event978",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 978."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event979": {
+          "title": "event979",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 979."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event980": {
+          "title": "event980",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 980."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event981": {
+          "title": "event981",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 981."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event982": {
+          "title": "event982",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 982."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event983": {
+          "title": "event983",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 983."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event984": {
+          "title": "event984",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 984."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event985": {
+          "title": "event985",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 985."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event986": {
+          "title": "event986",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 986."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event987": {
+          "title": "event987",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 987."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event988": {
+          "title": "event988",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 988."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event989": {
+          "title": "event989",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 989."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event990": {
+          "title": "event990",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 990."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event991": {
+          "title": "event991",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 991."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event992": {
+          "title": "event992",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 992."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event993": {
+          "title": "event993",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 993."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event994": {
+          "title": "event994",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 994."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event995": {
+          "title": "event995",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 995."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event996": {
+          "title": "event996",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 996."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event997": {
+          "title": "event997",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 997."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event998": {
+          "title": "event998",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 998."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event999": {
+          "title": "event999",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 999."
+        },
+        "https://ns.adobe.com/experience/analytics/event901to1000/event1000": {
+          "title": "event1000",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Custom event 1000."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/customeventspart2"
+    }
+  ]
+}

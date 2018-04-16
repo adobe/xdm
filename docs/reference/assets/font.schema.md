@@ -9,9 +9,9 @@ Font is used to describe the typefaces and font files used in a document.
 The Font schema groups different font files that belong to the same typeface.
 
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [assets/font.schema.json](assets/font.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [assets/font.schema.json](assets/font.schema.json) |
 
 ## Font Example
 ```json
@@ -30,14 +30,14 @@ The Font schema groups different font files that belong to the same typeface.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:childFontFiles](#xdmchildFontFiles) | `string[]` | Optional | Font (this schema) |
+| [xdm:childFontFiles](#xdmchildfontfiles) | `string[]` | Optional | Font (this schema) |
 | [xdm:composite](#xdmcomposite) | `boolean` | Optional | Font (this schema) |
-| [xdm:fontFace](#xdmfontFace) | `string` | Optional | Font (this schema) |
-| [xdm:fontFamily](#xdmfontFamily) | `string` | Optional | Font (this schema) |
-| [xdm:fontFileName](#xdmfontFileName) | `string` | Optional | Font (this schema) |
-| [xdm:fontName](#xdmfontName) | `string` | **Required** | Font (this schema) |
-| [xdm:fontType](#xdmfontType) | `string` | **Required** | Font (this schema) |
-| [xdm:versionString](#xdmversionString) | `enum` | Optional | Font (this schema) |
+| [xdm:fontFace](#xdmfontface) | `string` | Optional | Font (this schema) |
+| [xdm:fontFamily](#xdmfontfamily) | `string` | Optional | Font (this schema) |
+| [xdm:fontFileName](#xdmfontfilename) | `string` | Optional | Font (this schema) |
+| [xdm:fontName](#xdmfontname) | `string` | **Required** | Font (this schema) |
+| [xdm:fontType](#xdmfonttype) | `string` | **Required** | Font (this schema) |
+| [xdm:versionString](#xdmversionstring) | `enum` | Optional | Font (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:childFontFiles

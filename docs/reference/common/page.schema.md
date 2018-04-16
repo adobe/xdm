@@ -8,11 +8,20 @@ https://ns.adobe.com/xdm/common/page
 Page information for paginated resource list operations.
 
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [common/page.schema.json](common/page.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [common/page.schema.json](common/page.schema.json) |
 
 ## Page Examples
+
+```json
+{
+  "orderBy": "id",
+  "start": "123",
+  "next": "789",
+  "count": 100
+}
+```
 
 ```json
 {
@@ -24,15 +33,6 @@ Page information for paginated resource list operations.
 }
 ```
 
-```json
-{
-  "orderBy": "id",
-  "start": "123",
-  "next": "789",
-  "count": 100
-}
-```
-
 
 # Page Properties
 
@@ -40,7 +40,7 @@ Page information for paginated resource list operations.
 |----------|------|----------|------------|
 | [count](#count) | `integer` | **Required** | Page (this schema) |
 | [next](#next) | `string` | **Required** | Page (this schema) |
-| [orderBy](#orderBy) | `string` | **Required** | Page (this schema) |
+| [orderBy](#orderby) | `string` | **Required** | Page (this schema) |
 | [property](#property) | `string` | Optional | Page (this schema) |
 | [start](#start) | `string` | **Required** | Page (this schema) |
 | [type](#type) | `string` | Optional | Page (this schema) |

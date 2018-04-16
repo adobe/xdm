@@ -7,9 +7,9 @@ http://ns.adobe.com/adobecloud/core/1.0/sub-directory
 
 A sub-directory in a directory listing.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [external/repo/sub-directory.schema.json](external/repo/sub-directory.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [external/repo/sub-directory.schema.json](external/repo/sub-directory.schema.json) |
 
 ## Schema Hierarchy
 

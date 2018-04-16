@@ -11,9 +11,9 @@ They are used for compositing multiple images, adding text to an image, or addin
 Users can also apply a layer style to add a special effect such as a drop shadow or a glow.
 
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [assets/layer.schema.json](assets/layer.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [assets/layer.schema.json](assets/layer.schema.json) |
 
 ## Schema Hierarchy
 
@@ -24,11 +24,11 @@ Users can also apply a layer style to add a special effect such as a drop shadow
 ```json
 {
   "xdm:name": "Example Layer",
-  "stLayer:width": 768,
-  "stLayer:height": 768,
-  "stLayer:originY": 0,
-  "stLayer:originX": 256,
-  "stLayer:unit": "pixels",
+  "xdm:width": 768,
+  "xdm:height": 768,
+  "xdm:originY": 0,
+  "xdm:originX": 256,
+  "xdm:unit": "pixels",
   "xdm:visible": true
 }
 ```
@@ -37,107 +37,27 @@ Users can also apply a layer style to add a special effect such as a drop shadow
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [stLayer:height](#stLayerheight) | `integer` | Optional | [Rectangular Object (measured in variable unit)](variable-unit-rectangular.schema.md#stLayerheight) |
-| [stLayer:originX](#stLayeroriginX) | `integer` | Optional | [Rectangular Object (measured in variable unit)](variable-unit-rectangular.schema.md#stLayeroriginX) |
-| [stLayer:originY](#stLayeroriginY) | `integer` | Optional | [Rectangular Object (measured in variable unit)](variable-unit-rectangular.schema.md#stLayeroriginY) |
-| [stLayer:unit](#stLayerunit) | `string` | Optional | [Rectangular Object (measured in variable unit)](variable-unit-rectangular.schema.md#stLayerunit) |
-| [stLayer:width](#stLayerwidth) | `integer` | Optional | [Rectangular Object (measured in variable unit)](variable-unit-rectangular.schema.md#stLayerwidth) |
+| [xdm:height](#xdmheight) | `integer` | Optional | [Rectangular Object (measured in variable unit)](variable-unit-rectangular.schema.md#xdmheight) |
 | [xdm:name](#xdmname) | `string` | Optional | Layer (this schema) |
+| [xdm:originX](#xdmoriginx) | `integer` | Optional | [Rectangular Object (measured in variable unit)](variable-unit-rectangular.schema.md#xdmoriginx) |
+| [xdm:originY](#xdmoriginy) | `integer` | Optional | [Rectangular Object (measured in variable unit)](variable-unit-rectangular.schema.md#xdmoriginy) |
 | [xdm:style](#xdmstyle) | `string` | Optional | Layer (this schema) |
+| [xdm:unit](#xdmunit) | `string` | Optional | [Rectangular Object (measured in variable unit)](variable-unit-rectangular.schema.md#xdmunit) |
 | [xdm:visible](#xdmvisible) | `boolean` | Optional | Layer (this schema) |
+| [xdm:width](#xdmwidth) | `integer` | Optional | [Rectangular Object (measured in variable unit)](variable-unit-rectangular.schema.md#xdmwidth) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## stLayer:height
+## xdm:height
 ### Height
 
 Height of the artboard
 
-`stLayer:height`
+`xdm:height`
 * is optional
 * type: `integer`
-* defined in [Rectangular Object (measured in variable unit)](variable-unit-rectangular.schema.md#stLayer:height)
+* defined in [Rectangular Object (measured in variable unit)](variable-unit-rectangular.schema.md#xdm:height)
 
-### stLayer:height Type
-
-
-`integer`
-
-
-
-
-
-
-## stLayer:originX
-### Origin X
-
-Origin X position - Base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards)
-
-`stLayer:originX`
-* is optional
-* type: `integer`
-* defined in [Rectangular Object (measured in variable unit)](variable-unit-rectangular.schema.md#stLayer:originX)
-
-### stLayer:originX Type
-
-
-`integer`
-
-
-
-
-
-
-## stLayer:originY
-### Origin Y
-
-Origin Y position - Base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards)
-
-`stLayer:originY`
-* is optional
-* type: `integer`
-* defined in [Rectangular Object (measured in variable unit)](variable-unit-rectangular.schema.md#stLayer:originY)
-
-### stLayer:originY Type
-
-
-`integer`
-
-
-
-
-
-
-## stLayer:unit
-### Unit
-
-Unit used for artboard coordinates (`originX`, `originY`, `width` and `height`). For example: `inch`, `mm`, `pixel`, `pica`, `point` (default is `pixel`)
-
-`stLayer:unit`
-* is optional
-* type: `string`
-* defined in [Rectangular Object (measured in variable unit)](variable-unit-rectangular.schema.md#stLayer:unit)
-
-### stLayer:unit Type
-
-
-`string`
-
-
-
-
-
-
-## stLayer:width
-### Width
-
-Width of the artboard
-
-`stLayer:width`
-* is optional
-* type: `integer`
-* defined in [Rectangular Object (measured in variable unit)](variable-unit-rectangular.schema.md#stLayer:width)
-
-### stLayer:width Type
+### xdm:height Type
 
 
 `integer`
@@ -167,6 +87,46 @@ Name of the Layer. This will be visible to the user and users can specify names 
 
 
 
+## xdm:originX
+### Origin X
+
+Origin X position - Base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards)
+
+`xdm:originX`
+* is optional
+* type: `integer`
+* defined in [Rectangular Object (measured in variable unit)](variable-unit-rectangular.schema.md#xdm:originX)
+
+### xdm:originX Type
+
+
+`integer`
+
+
+
+
+
+
+## xdm:originY
+### Origin Y
+
+Origin Y position - Base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards)
+
+`xdm:originY`
+* is optional
+* type: `integer`
+* defined in [Rectangular Object (measured in variable unit)](variable-unit-rectangular.schema.md#xdm:originY)
+
+### xdm:originY Type
+
+
+`integer`
+
+
+
+
+
+
 ## xdm:style
 
 A layer style is one or more effects applied to a layer or layer group. You can apply one of the preset styles provided with Photoshop or create a custom style. Photoshop provides a variety of effects—such as shadows, glows, and bevels—that change the appearance of a layer’s contents in a non-distructive way. Layer effects are linked to the layer contents. When you move or edit the contents of the layer, the same effects are applied to the modified contents. For example, if you apply a drop shadow to a text layer and then add new text, the shadow is added automatically to the new text.
@@ -177,6 +137,26 @@ A layer style is one or more effects applied to a layer or layer group. You can 
 * defined in this schema
 
 ### xdm:style Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:unit
+### Unit
+
+Unit used for artboard coordinates (`originX`, `originY`, `width` and `height`). For example: `inch`, `mm`, `pixel`, `pica`, `point` (default is `pixel`)
+
+`xdm:unit`
+* is optional
+* type: `string`
+* defined in [Rectangular Object (measured in variable unit)](variable-unit-rectangular.schema.md#xdm:unit)
+
+### xdm:unit Type
 
 
 `string`
@@ -200,6 +180,26 @@ Indicates if a layer is visible in the document. `visible = true` - Layer is vis
 
 
 `boolean`
+
+
+
+
+
+## xdm:width
+### Width
+
+Width of the artboard
+
+`xdm:width`
+* is optional
+* type: `integer`
+* defined in [Rectangular Object (measured in variable unit)](variable-unit-rectangular.schema.md#xdm:width)
+
+### xdm:width Type
+
+
+`integer`
+
 
 
 

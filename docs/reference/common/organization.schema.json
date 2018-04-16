@@ -113,7 +113,7 @@
             "$ref": "#/definitions/organization"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stabilizing",
     "examples": [
         {
             "@id": "https://data.adobe.io/entities/org/orgid111",
@@ -127,13 +127,12 @@
                 "@id": "https://data.adobe.io/entities/places/locid123",
                 "schema:description": "ABC Store location",
                 "xdm:address": {
-                    "@id": "https://ns.adobe.com/entities/address/123",
+                    "@id": "https://data.adobe.io/entities/address/123",
                     "xdm:primary": true,
                     "xdm:type": "work",
                     "xdm:street1": "100 Lincoln Ave",
                     "xdm:city": "San Jose",
-                    "xdm:stateProvince": "California",
-                    "xdm:stateProvinceISO": "CA",
+                    "xdm:stateProvince": "US-CA",
                     "xdm:postalCode": "95125",
                     "xdm:country": "United States",
                     "xdm:countryCode": "US",

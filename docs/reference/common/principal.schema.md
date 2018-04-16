@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/common/principal
 
 This model represents a principal in an access control system. Principals are entities that have been authenticated against an identity provider.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | No | Forbidden | Permitted | [common/principal.schema.json](common/principal.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | No | Experimental | Forbidden | Permitted | [common/principal.schema.json](common/principal.schema.json) |
 
 ## Schema Hierarchy
 
@@ -23,7 +23,7 @@ This model represents a principal in an access control system. Principals are en
     "@id": "https://ims-na1.adobelogin.com/"
   },
   "@id": "C0B648DE57D701277F000101@AdobeID",
-  "@type": "https://ns.adobe.com/xdm-extensions/ims/user"
+  "@type": "https://ns.adobe.com/adobecloudplatform/ims/user"
 }
 ```
 

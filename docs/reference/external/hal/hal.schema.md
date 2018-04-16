@@ -14,57 +14,11 @@ https://ns.adobe.com/xdm/external/hal/resource
 This external schema definition allows adding HAL expressions into an existing schema.
 
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [external/hal/hal.schema.json](external/hal/hal.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [external/hal/hal.schema.json](external/hal/hal.schema.json) |
 
 ## HAL Resource Examples
-
-```json
-{
-  "_links": {
-    "self": {
-      "href": "/orders/523"
-    },
-    "warehouse": {
-      "href": "/warehouse/56"
-    },
-    "invoice": {
-      "href": "/invoices/873"
-    }
-  },
-  "currency": "USD",
-  "status": "shipped",
-  "total": 10.2
-}
-```
-
-```json
-{
-  "_links": {
-    "self": {
-      "href": "/orders/523"
-    },
-    "warehouses": [
-      {
-        "href": "/warehouse/56"
-      },
-      {
-        "href": "/warehouse/56"
-      },
-      {
-        "href": "/warehouse/56"
-      }
-    ],
-    "invoice": {
-      "href": "/invoices/873"
-    }
-  },
-  "currency": "USD",
-  "status": "shipped",
-  "total": 10.2
-}
-```
 
 ```json
 {
@@ -107,6 +61,52 @@ This external schema definition allows adding HAL expressions into an existing s
         "total": 10.2
       }
     ]
+  },
+  "currency": "USD",
+  "status": "shipped",
+  "total": 10.2
+}
+```
+
+```json
+{
+  "_links": {
+    "self": {
+      "href": "/orders/523"
+    },
+    "warehouse": {
+      "href": "/warehouse/56"
+    },
+    "invoice": {
+      "href": "/invoices/873"
+    }
+  },
+  "currency": "USD",
+  "status": "shipped",
+  "total": 10.2
+}
+```
+
+```json
+{
+  "_links": {
+    "self": {
+      "href": "/orders/523"
+    },
+    "warehouses": [
+      {
+        "href": "/warehouse/56"
+      },
+      {
+        "href": "/warehouse/56"
+      },
+      {
+        "href": "/warehouse/56"
+      }
+    ],
+    "invoice": {
+      "href": "/invoices/873"
+    }
   },
   "currency": "USD",
   "status": "shipped",

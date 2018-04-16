@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/external/repo/accesscontrolentry
 
 Schema for the Access Control Entry for the Access Control List of a resource
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [external/repo/accesscontrolentry.schema.json](external/repo/accesscontrolentry.schema.json) |
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [external/repo/accesscontrolentry.schema.json](external/repo/accesscontrolentry.schema.json) |
 
 ## Access Control Entry Examples
 
@@ -28,7 +28,7 @@ Schema for the Access Control Entry for the Access Control List of a resource
       "@id": "https://ims-na1.adobelogin.com/"
     },
     "@id": "C0B648DE57D701277F000101@AdobeID",
-    "@type": "https://ns.adobe.com/xdm-extensions/ims/user"
+    "@type": "https://ns.adobe.com/adobecloudplatform/ims/user"
   },
   "repo:privilege": [
     "write",

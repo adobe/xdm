@@ -55,33 +55,18 @@
           "title": "Region",
           "type": "string",
           "description":
-            "The region, county, or district portion of the address."
+            "The region, county, or district portion of the address. This is a free-form field that can have the Region name in any language."
         },
         "stateProvince": {
           "title": "State or Province",
           "type": "string",
-          "description": "The state, province, territory portion of the address."
-        },
-        "stateProvinceISO": {
-          "title": "State or Province ISO Code.",
-          "type": "string",
-          "description":
-            "The country subdivision as defined by the second part of [ISO 3166-2](https://www.iso.org/iso-3166-country-codes.html#2012_iso3166-2)(without the first part and the hyphen ISO 3166-1 alpha-2). Example: `CA` from ISO 3166-2 `US-CA` value designating the state of California in the United States of America. Example `75`: from ISO 3166-2 `FR-75` value designating the metropolitan department of Paris in France. NOTE: This value must be combined with countryCodeISO to compose valid ISO 3166-2 code.",
-          "minLength": 2,
-          "maxLength": 2
+          "description": "The state, province, territory portion of the address. Other than `xdm:stateProvinceISO`, this is a free-form field that can have the State or Province name in any language."
         },
         "xdm:country": {
           "title": "Country",
           "type": "string",
           "description":
-            "The name of the government-administered territory. Other than `xdm:countryISO`, this is a free-form field that can have the country name in any language."
-        },
-        "xdm:countryISO": {
-          "title": "Country ISO",
-          "type": "string",
-          "description": "The alpha-2 code of the country as defined by [ISO 3166-1](https://www.iso.org/iso-3166-country-codes.html).",
-          "minLength": 2,
-          "maxLength": 2
+            "The name of the government-administered territory. Other than `xdm:countryISO`, this is a free-form field that can have the Country name in any language."
         },
         "xdm:status": {
           "title": "Status",

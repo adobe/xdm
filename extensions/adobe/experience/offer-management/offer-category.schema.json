@@ -8,7 +8,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/experience/offer-management/offer-category",
   "meta:extends": [
-    "https://ns.adobe.com/experience/offer-management/filter-rule"
+    "https://ns.adobe.com/experience/offer-management/offer-filter-rule"
   ],
   "type": "object",
   "title": "Offer Category Filter",
@@ -27,28 +27,10 @@
           "title": "Name",
           "description": "Category name"
         },
-        "xdm:type": {
-          "type": "string",
-          "title": "Type",
-          "description": "Filter expression type: tag rule or profile query",
-          "enum": ["tag", "profile"],
-          "meta:enum": {
-            "tag": "Tag",
-            "profile": "Profile"
-          }
-        },
         "xdm:value": {
           "type": "string",
           "title": "Expression",
           "description": "Expression: tag rule or profile query"
-        },
-        "xdm:schemaProjections": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "title": "Schema Projections",
-          "description": "The id's of schema projections used in tag rule"
         },
         "xdm:cappingConstraint": {
           "$ref":
@@ -64,7 +46,8 @@
       "$ref": "#/definitions/offer-category"
     },
     {
-      "$ref": "https://ns.adobe.com/experience/offer-management/filter-rule"
+      "$ref":
+        "https://ns.adobe.com/experience/offer-management/offer-filter-rule"
     }
   ]
 }

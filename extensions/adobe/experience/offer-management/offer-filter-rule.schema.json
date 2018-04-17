@@ -6,13 +6,13 @@
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "https://ns.adobe.com/experience/offer-management/filter-rule",
+  "$id": "https://ns.adobe.com/experience/offer-management/offer-filter-rule",
   "meta:extensible": "true",
   "type": "object",
   "title": "Filter Rule",
   "description": "Filters are used to specify criteria for offer selection",
   "definitions": {
-    "filter-rule": {
+    "offer-filter-rule": {
       "properties": {
         "@id": {
           "type": "string",
@@ -25,36 +25,18 @@
           "title": "Name",
           "description": "Filter name"
         },
-        "xdm:type": {
-          "type": "string",
-          "title": "Type",
-          "description": "Filter expression type: tag rule or profile query",
-          "enum": ["tag", "profile"],
-          "meta:enum": {
-            "tag": "Tag",
-            "profile": "Profile"
-          }
-        },
         "xdm:value": {
           "type": "string",
           "title": "Expression",
-          "description": "Expression: tag rule or profile query"
-        },
-        "xdm:schemaProjections": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "title": "Schema Projections",
-          "description": "The id's of schema projections used in tag rule"
+          "description": "Tag rule"
         }
       },
-      "required": ["xdm:name", "xdm:type", "xdm:value"]
+      "required": ["xdm:name", "xdm:value"]
     }
   },
   "allOf": [
     {
-      "$ref": "#/definitions/filter-rule"
+      "$ref": "#/definitions/offer-filter-rule"
     }
   ]
 }

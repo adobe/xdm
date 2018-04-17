@@ -55,9 +55,23 @@
           "title": "Representations",
           "description": "Offer representations for different placements"
         },
-        "xdm:metadata": {
-          "$ref":
-            "https://ns.adobe.com/experience/offer-management/offer-metadata",
+        "xdm:customMetadata": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "value": {
+                "type": "string"
+              }
+            },
+            "title": "Custom Properties",
+            "description":
+              "Custom metadata allows end-users to attach properties to individual instances",
+            "additionalProperties": false
+          },
           "title": "Metadata",
           "description": "Individual metadata for the offer"
         }

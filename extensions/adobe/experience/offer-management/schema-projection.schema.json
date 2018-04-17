@@ -11,7 +11,7 @@
   "type": "object",
   "title": "Schema Projection",
   "description":
-    "Schema projection is a way to \"publish\" some set of schema properties for use in queries",
+    "Schema projection is a way to enable some subset of schema properties for use in queries",
   "definitions": {
     "schema-projection": {
       "properties": {
@@ -32,14 +32,13 @@
           "title": "Schema ID",
           "description": "The $id of an underlying schema"
         },
-        "xdm:publishedProperties": {
+        "xdm:selectableProperties": {
           "type": "array",
           "items": {
             "type": "string"
           },
           "title": "Properties",
-          "description":
-            "Schema properties published for use in queries and rules"
+          "description": "Schema properties allowed for use in queries"
         }
       },
       "required": ["xdm:name", "xdm:schemaId"]

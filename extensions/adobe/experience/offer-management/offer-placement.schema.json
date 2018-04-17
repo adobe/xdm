@@ -32,13 +32,8 @@
         "xdm:channel": {
           "type": "string",
           "title": "Channel",
-          "description": "Offer Channel",
-          "enum": ["email", "mobile", "web"],
-          "meta:enum": {
-            "email": "Email",
-            "mobile": "Mobile",
-            "web": "Web"
-          }
+          "description":
+            "Offer Channel ID. See 'https://ns.adobe.com/xdm/channels/channel'"
         },
         "xdm:contentTypes": {
           "type": "array",

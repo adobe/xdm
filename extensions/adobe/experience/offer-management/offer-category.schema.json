@@ -30,7 +30,7 @@
         "xdm:value": {
           "type": "string",
           "title": "Expression",
-          "description": "Expression: tag rule or profile query"
+          "description": "Tag rule"
         },
         "xdm:cappingConstraint": {
           "$ref":

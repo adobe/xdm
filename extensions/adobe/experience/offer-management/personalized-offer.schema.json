@@ -75,7 +75,7 @@
           },
           "title": "Custom Properties",
           "description":
-          "Custom metadata allows end-users to attach properties to individual instances"
+            "Custom metadata allows end-users to attach properties to individual instances"
         },
         "xdm:rank": {
           "$ref": "https://ns.adobe.com/experience/offer-management/rank",

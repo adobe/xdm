@@ -5,27 +5,28 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/data/metrics/advertising/clicks",
+  "$id": "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/measured-window-depth",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "clicks",
+  "title": "measured-window-depth",
   "type": "object",
   "meta:extensible": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/metric"],
-  "description": "The advertising metric clicks counts the number of clicks on an ad.",
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/metric"
+  ],
+  "description": "The advertising/viewability metric measured-window-depth describes the how many iframes the ad is displayed inside.",
   "definitions": {
     "metric": {
       "properties": {
         "@id": {
           "type": "string",
           "format": "uri",
-          "const": "https://ns.adobe.com/xdm/data/metrics/advertising/clicks",
+          "const": "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/measured-window-depth",
           "description": "The unique identifier of this metric."
         },
         "schema:name": {
           "type": "string",
-          "const": "advertising metric: clicks",
-          "description":
-            "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
+          "const": "advertising/viewability metric: measured-window-depth",
+          "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
         },
         "xdm:measurement": {
           "type": "string",
@@ -43,6 +44,10 @@
       "$ref": "#/definitions/metric"
     }
   ],
-  "required": ["@id", "schema:name", "xdm:measurement", "xdm:unit"],
-  "meta:status": "experimental"
+  "required": [
+    "@id",
+    "schema:name",
+    "xdm:measurement",
+    "xdm:unit"
+  ]
 }

@@ -9,8 +9,8 @@ Content is information that is directed towards an audience for consumption in a
 
 In [Web Content Management by Deane Barker](https://www.safaribooksonline.com/library/view/web-content-management/9781491908112/ch01.html) two key differences between content and other digital information are pointed out:
 
-&gt; 1.  Content is _created_ differently
-&gt; 2.  Content is _used_ differently
+> 1.  Content is _created_ differently
+> 2.  Content is _used_ differently
 
 These differences boil down to a number of key characteristics of content.
 
@@ -22,13 +22,13 @@ _Content is created for human audiences_, which gives the content the ultimate v
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Forbidden | Permitted | [content/content.schema.json](content/content.schema.json) |
-
 ## Schema Hierarchy
 
 * Content `https://ns.adobe.com/xdm/content/content`
   * [Asset](../external/repo/asset.schema.md) `http://ns.adobe.com/adobecloud/core/1.0/asset`
   * [Common Properties](../external/repo/common.schema.md) `http://ns.adobe.com/adobecloud/core/1.0`
   * [HAL Resource](../external/hal/hal.schema.md) `https://ns.adobe.com/xdm/external/hal/resource`
+
 
 ## Content Example
 ```json
@@ -199,7 +199,7 @@ All instances must conform to this regular expression
 
 ## repo:createDate
 
-The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is &#34;2004-10-23T12:00:00-06:00&#34;.
+The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
 
 `repo:createDate`
 * is optional
@@ -244,7 +244,7 @@ An  ETag is an HTTP response header returned by an HTTP/1.1 compliant web server
 
 ## repo:lastModifiedDate
 
-The server date and time when the resource was most recently modified in the repository, such as when a new version of an asset is uploaded or a directory&#39;s child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is &#34;2004-10-23T12:00:00-06:00&#34;.
+The server date and time when the resource was most recently modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
 
 `repo:lastModifiedDate`
 * is optional

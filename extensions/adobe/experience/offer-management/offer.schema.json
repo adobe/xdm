@@ -61,19 +61,21 @@
             "type": "object",
             "properties": {
               "name": {
-                "type": "string"
+                "type": "string",
+                "title": "Name",
+                "description": "Custom property name"
               },
               "value": {
-                "type": "string"
+                "type": "string",
+                "title": "Value",
+                "description": "Custom property value"
               }
             },
-            "title": "Custom Properties",
-            "description":
-              "Custom metadata allows end-users to attach properties to individual instances",
             "additionalProperties": false
           },
-          "title": "Metadata",
-          "description": "Individual metadata for the offer"
+          "title": "Custom Properties",
+          "description":
+            "Custom metadata allows end-users to attach properties to individual instances"
         }
       },
       "required": ["xdm:name", "xdm:status"]

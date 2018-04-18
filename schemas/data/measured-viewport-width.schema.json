@@ -31,10 +31,11 @@
         "xdm:measurement": {
           "type": "string",
           "description": "How to take measures of this metric.",
-          "const": "count"
+          "const": "size"
         },
         "xdm:unit": {
-          "const": null
+          "type": "string",
+          "const": "pixels"
         }
       }
     }

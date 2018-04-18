@@ -1,6 +1,6 @@
 {
   "schema:name": "advertising/viewability metric: measured-viewport-width",
   "@id": "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/measured-viewport-width",
-  "xdm:measurement": "count",
-  "xdm:unit": null
+  "xdm:measurement": "size",
+  "xdm:unit": "pixels"
 }

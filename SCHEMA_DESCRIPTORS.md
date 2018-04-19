@@ -37,9 +37,9 @@ Update policies are defined using the `UpdatePolicyDescriptor` schema.
 
 A number of additional schema descriptors are defined by XDM:
 
-* `xdm:descriptorIdentity`: allows a property in a schema to be used as an [Identity](https://github.com/adobe/xdm/blob/master/docs/reference/context/identity.schema.md), even if it does not conform to the Identity schema.
-* `xdm:descriptorPrimaryKey`: allows a property other than `@id` to be flagged as the primary key for a schema
-* `xdm:descriptorInstantiable`: allows a schema to be flagged as 'instantiable', which may be used to differentiate schemas that define primary business objects versus supporting schemas intended to be embedded in another schema.
+* `xdm:identityContext`: allows a property in a schema to be used as an [Identity](https://github.com/adobe/xdm/blob/master/docs/reference/context/identity.schema.md), even if it does not conform to the Identity schema.
+* `xdm:primaryKey`: allows a property other than `@id` to be flagged as the primary key for a schema
+* `xdm:instantiable`: allows a schema to be flagged as 'instantiable', which may be used to differentiate schemas that define primary business objects versus supporting schemas intended to be embedded in another schema.
 
 ## Embedding Schema Descriptors in a Schema
 

@@ -10,23 +10,13 @@ The geographic related data where an event was observed.
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Forbidden | Permitted | [common/geo.schema.json](common/geo.schema.json) |
-
 ## Schema Hierarchy
 
 * Geo `https://ns.adobe.com/xdm/common/geo`
   * [Geo Coordinates](../external/schema/geocoordinates.schema.md) `http://schema.org/GeoCoordinates`
 
-## Geo Examples
 
-```json
-{
-  "@id": "https://data.adobe.io/entities/geo/potsdam",
-  "xdm:countryCode": "DE",
-  "xdm:stateProvince": "DE-BB",
-  "xdm:city": "Potsdam",
-  "xdm:postalCode": "14482"
-}
-```
+## Geo Examples
 
 ```json
 {
@@ -37,6 +27,16 @@ The geographic related data where an event was observed.
   "xdm:postalCode": "141-0032",
   "schema:latitude": 35.6185,
   "schema:longitude": 139.73237
+}
+```
+
+```json
+{
+  "@id": "https://data.adobe.io/entities/geo/potsdam",
+  "xdm:countryCode": "DE",
+  "xdm:stateProvince": "DE-BB",
+  "xdm:city": "Potsdam",
+  "xdm:postalCode": "14482"
 }
 ```
 

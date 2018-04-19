@@ -10,12 +10,12 @@ Telefacsimile
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Forbidden | Permitted | [channels/fax.schema.json](channels/fax.schema.json) |
-
 ## Schema Hierarchy
 
 * Fax `https://ns.adobe.com/xdm/channels/fax`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
+
 
 ## Fax Example
 ```json

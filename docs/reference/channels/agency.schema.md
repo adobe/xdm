@@ -13,12 +13,12 @@ Such as, to define experiences for which you want to keep a trace of the populat
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Forbidden | Permitted | [channels/agency.schema.json](channels/agency.schema.json) |
-
 ## Schema Hierarchy
 
 * E-Mail `https://ns.adobe.com/xdm/channels/agency`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
+
 
 ## E-Mail Example
 ```json

@@ -6,6 +6,10 @@ The [Experience Data Model](https://www.adobe.io/open/standards/xdm) (XDM) is th
 XDM is a publicly documented specification, driven by Adobe to improve the interoperability, expressiveness, and power of digital experiences.
 This repository contains the source code for the formal specification of the XDM model, using the JSON Schema language.
 
+## Current Version
+
+XDM is at version `0.9`. You can find more about our versioning in [docs/introduction.md](docs/introduction.md#versioning)
+
 ## Read the XDM Spec
 
 * [Chapter 1: Introduction](docs/introduction.md)

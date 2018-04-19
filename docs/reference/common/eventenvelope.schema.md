@@ -10,12 +10,12 @@ An `EventEnvelope` is a type of `Activity` (in the sense of [W3C Activity Stream
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Forbidden | Permitted | [common/eventenvelope.schema.json](common/eventenvelope.schema.json) |
-
 ## Schema Hierarchy
 
 * EventEnvelope `https://ns.adobe.com/xdm/common/eventenvelope`
   * [Activity](../external/activity-streams-2/activity.schema.md) `https://ns.adobe.com/xdm/external/activity-streams-2/activity`
   * [JSON-LD `@type`](../external/activity-streams-2/type.schema.md) `https://ns.adobe.com/xdm/external/activity-streams-2/type`
+
 
 ## EventEnvelope Examples
 
@@ -45,33 +45,6 @@ An `EventEnvelope` is a type of `Activity` (in the sense of [W3C Activity Stream
     "xdm:path": "/MyFolder/example.jpg",
     "dc:format": "image/jpg",
     "repo:etag": "\"6fc55d0389d856ae7deccebba54f110e\""
-  }
-}
-```
-
-```json
-{
-  "@type": "https://ns.adobe.com/xdm/common/event/unpublished",
-  "xdm:objectType": "https://ns.adobe.com/xdm/content/componentized-page",
-  "activitystreams:published": "2016-07-16T19:20:30+01:00",
-  "@id": "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
-  "activitystreams:to": {
-    "@type": "http://ns.adobe.com/adobecloudplatform/ims/organization",
-    "@id": "08B3E5CE5822FC520A494229@AdobeOrg"
-  },
-  "activitystreams:generator": {
-    "@type": "https://ns.adobe.com/xdm/content/repository",
-    "@id": "https://francois.corp.adobe.com:4502/"
-  },
-  "activitystreams:actor": {
-    "@type": "https://ns.adobe.com/experience/aem/user",
-    "@id": "admin"
-  },
-  "activitystreams:object": {
-    "@type": "https://ns.adobe.com/xdm/content/componentized-page",
-    "@id": "http://adobesummit.adobesandbox.com:4502/content/geometrixx/en/vintage.html",
-    "dc:title": "Vintage Collection",
-    "xdm:path": "/content/geometrixx/en/vintage.html"
   }
 }
 ```
@@ -109,6 +82,33 @@ An `EventEnvelope` is a type of `Activity` (in the sense of [W3C Activity Stream
 ```json
 {
   "@type": "https://ns.adobe.com/xdm/common/event/published",
+  "xdm:objectType": "https://ns.adobe.com/xdm/content/componentized-page",
+  "activitystreams:published": "2016-07-16T19:20:30+01:00",
+  "@id": "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
+  "activitystreams:to": {
+    "@type": "http://ns.adobe.com/adobecloudplatform/ims/organization",
+    "@id": "08B3E5CE5822FC520A494229@AdobeOrg"
+  },
+  "activitystreams:generator": {
+    "@type": "https://ns.adobe.com/xdm/content/repository",
+    "@id": "https://francois.corp.adobe.com:4502/"
+  },
+  "activitystreams:actor": {
+    "@type": "https://ns.adobe.com/experience/aem/user",
+    "@id": "admin"
+  },
+  "activitystreams:object": {
+    "@type": "https://ns.adobe.com/xdm/content/componentized-page",
+    "@id": "http://adobesummit.adobesandbox.com:4502/content/geometrixx/en/vintage.html",
+    "dc:title": "Vintage Collection",
+    "xdm:path": "/content/geometrixx/en/vintage.html"
+  }
+}
+```
+
+```json
+{
+  "@type": "https://ns.adobe.com/xdm/common/event/unpublished",
   "xdm:objectType": "https://ns.adobe.com/xdm/content/componentized-page",
   "activitystreams:published": "2016-07-16T19:20:30+01:00",
   "@id": "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
@@ -343,7 +343,7 @@ Unknown type `anyOf`.
 
 ## activitystreams:object
 
-When used within an Activity, describes the direct object of the activity. For instance, in the activity &#39;John added a movie to his wishlist&#39;, the object of the activity is the movie added. When used within a Relationship describes the entity to which the subject is related. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object) document for a complete description.
+When used within an Activity, describes the direct object of the activity. For instance, in the activity 'John added a movie to his wishlist', the object of the activity is the movie added. When used within a Relationship describes the entity to which the subject is related. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object) document for a complete description.
 
 `activitystreams:object`
 * is **required**
@@ -427,7 +427,7 @@ Unknown type `anyOf`.
 
 ## activitystreams:origin
 
-Describes an indirect object of the activity from which the activity is directed. The precise meaning of the origin is the object of the English preposition &#39;from&#39;. For instance, in the activity &#39;John moved an item to List B from List A&#39;, the origin of the activity is &#39;List A&#39;. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-origin) document for a complete description.
+Describes an indirect object of the activity from which the activity is directed. The precise meaning of the origin is the object of the English preposition 'from'. For instance, in the activity 'John moved an item to List B from List A', the origin of the activity is 'List A'. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-origin) document for a complete description.
 
 `activitystreams:origin`
 * is optional
@@ -595,7 +595,7 @@ Unknown type `anyOf`.
 
 ## activitystreams:target
 
-Describes the indirect object, or target, of the activity. The precise meaning of the target is largely dependent on the type of action being described but will often be the object of the English preposition &#39;to&#39;. For instance, in the activity &#39;John added a movie to his wishlist&#39;, the target of the activity is John&#39;s wishlist. An activity can have more than one target. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-target) document for a complete description.
+Describes the indirect object, or target, of the activity. The precise meaning of the target is largely dependent on the type of action being described but will often be the object of the English preposition 'to'. For instance, in the activity 'John added a movie to his wishlist', the target of the activity is John's wishlist. An activity can have more than one target. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-target) document for a complete description.
 
 `activitystreams:target`
 * is optional

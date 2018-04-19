@@ -10,12 +10,12 @@ An individual person. May represent a person acting in various roles, such as a 
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Forbidden | Permitted | [context/person.schema.json](context/person.schema.json) |
-
 ## Schema Hierarchy
 
 * Person `https://ns.adobe.com/xdm/context/person`
   * [Person Name](person-name.schema.md) `https://ns.adobe.com/xdm/context/person-name`
   * [Audit Trail](../common/auditable.schema.md) `https://ns.adobe.com/xdm/common/auditable`
+
 
 ## Person Example
 ```json
@@ -183,7 +183,7 @@ At creation time, `modifiedByBatchID` is set as `createdByBatchID`.
 ## xdm:name
 ### Full name
 
-The person&#39;s full name
+The person's full name
 
 `xdm:name`
 * is optional

@@ -10,11 +10,11 @@ The `unpublished event` represents the activity of making an object, which was p
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
 | Can be instantiated | No | Experimental | Forbidden | Permitted | [common/event/unpublished.schema.json](common/event/unpublished.schema.json) |
-
 ## Schema Hierarchy
 
 * Unpublished Event `https://ns.adobe.com/xdm/common/event/unpublished`
   * [EventEnvelope](../eventenvelope.schema.md) `https://ns.adobe.com/xdm/common/eventenvelope`
+
 
 ## Unpublished Event Example
 ```json

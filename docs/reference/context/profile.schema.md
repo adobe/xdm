@@ -27,7 +27,6 @@ for other Profile data such as preference, propensities and other attributes.
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Forbidden | Permitted | [context/profile.schema.json](context/profile.schema.json) |
-
 ## Schema Hierarchy
 
 * Profile `https://ns.adobe.com/xdm/context/profile`
@@ -38,6 +37,7 @@ for other Profile data such as preference, propensities and other attributes.
   * [Email Address](emailaddress.schema.md) `https://ns.adobe.com/xdm/context/emailaddress`
   * [Phone Number](phonenumber.schema.md) `https://ns.adobe.com/xdm/context/phonenumber`
   * [OptInOut](optinout.schema.md) `https://ns.adobe.com/xdm/context/optinout`
+
 
 ## Profile Example
 ```json

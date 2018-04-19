@@ -10,11 +10,11 @@ The `published event` represents the activity of releasing an object for distrib
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
 | Can be instantiated | No | Experimental | Forbidden | Permitted | [common/event/published.schema.json](common/event/published.schema.json) |
-
 ## Schema Hierarchy
 
 * Published Event `https://ns.adobe.com/xdm/common/event/published`
   * [EventEnvelope](../eventenvelope.schema.md) `https://ns.adobe.com/xdm/common/eventenvelope`
+
 
 ## Published Event Example
 ```json

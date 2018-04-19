@@ -10,12 +10,12 @@ The Twitter Feed, i.e. the stream of user-generated tweets. This does not includ
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Forbidden | Permitted | [channels/twitter-feed.schema.json](channels/twitter-feed.schema.json) |
-
 ## Schema Hierarchy
 
 * Twitter Feed `https://ns.adobe.com/xdm/channels/twitter-feed`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
+
 
 ## Twitter Feed Example
 ```json

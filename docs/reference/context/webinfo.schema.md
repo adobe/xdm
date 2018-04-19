@@ -11,7 +11,6 @@ Information recorded via an `ExperienceEvent` that is specific to the World Wide
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Forbidden | Permitted | [context/webinfo.schema.json](context/webinfo.schema.json) |
-
 ## Schema Hierarchy
 
 * Web Information `https://ns.adobe.com/xdm/context/webinfo`
@@ -19,24 +18,8 @@ Information recorded via an `ExperienceEvent` that is specific to the World Wide
   * [Web Interaction](webinteraction.schema.md) `https://ns.adobe.com/xdm/context/webinteraction`
   * [Web Referrer](webreferrer.schema.md) `https://ns.adobe.com/xdm/context/webreferrer`
 
-## Web Information Examples
 
-```json
-{
-  "xdm:webPageView": {
-    "xdm:siteSection": "Product section",
-    "xdm:server": "example.com",
-    "xdm:name": "product home",
-    "xdm:URL": "https://www.example.com/products",
-    "xdm:errorPage": false,
-    "xdm:homePage": true
-  },
-  "xdm:webReferrer": {
-    "xdm:URL": "https://www.some-adserver.com",
-    "xdm:referrerType": "external"
-  }
-}
-```
+## Web Information Examples
 
 ```json
 {
@@ -56,6 +39,23 @@ Information recorded via an `ExperienceEvent` that is specific to the World Wide
   "xdm:webReferrer": {
     "xdm:URL": "https://www.example.com/products",
     "xdm:type": "internal"
+  }
+}
+```
+
+```json
+{
+  "xdm:webPageView": {
+    "xdm:siteSection": "Product section",
+    "xdm:server": "example.com",
+    "xdm:name": "product home",
+    "xdm:URL": "https://www.example.com/products",
+    "xdm:errorPage": false,
+    "xdm:homePage": true
+  },
+  "xdm:webReferrer": {
+    "xdm:URL": "https://www.some-adserver.com",
+    "xdm:referrerType": "external"
   }
 }
 ```

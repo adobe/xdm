@@ -10,11 +10,11 @@ A `created event` follows semantics that are exactly equivalent to the semantics
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
 | Can be instantiated | No | Experimental | Forbidden | Permitted | [common/event/created.schema.json](common/event/created.schema.json) |
-
 ## Schema Hierarchy
 
 * Created Event `https://ns.adobe.com/xdm/common/event/created`
   * [EventEnvelope](../eventenvelope.schema.md) `https://ns.adobe.com/xdm/common/eventenvelope`
+
 
 ## Created Event Example
 ```json

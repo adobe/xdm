@@ -10,12 +10,12 @@ Apple Push Notification Service
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Forbidden | Permitted | [channels/apns.schema.json](channels/apns.schema.json) |
-
 ## Schema Hierarchy
 
 * APNS `https://ns.adobe.com/xdm/channels/apns`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
+
 
 ## APNS Example
 ```json

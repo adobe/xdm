@@ -80,7 +80,7 @@
             "$ref": "#/definitions/device"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stabilizing",
     "examples": [
         {
             "xdm:typeID": "TypeIdentifier-111",

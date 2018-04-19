@@ -11,11 +11,11 @@ Information that uniquely identifies an organized entity such as company, non-pr
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Stabilizing | Forbidden | Permitted | [common/organization.schema.json](common/organization.schema.json) |
-
 ## Schema Hierarchy
 
 * Organization `https://ns.adobe.com/xdm/common/organization`
   * [Place](../context/place.schema.md) `https://ns.adobe.com/xdm/context/place`
+
 
 ## Organization Example
 ```json
@@ -243,7 +243,7 @@ The official name of the organization.
 ## xdm:location
 ### Location
 
-The location of the organization&#39;s main office.
+The location of the organization's main office.
 
 `xdm:location`
 * is optional
@@ -303,7 +303,7 @@ The calculated score or star rating for this organization. `1` indicates the max
 ## xdm:website
 ### Web Site
 
-The URL of the organization&#39;s website.
+The URL of the organization's website.
 
 `xdm:website`
 * is optional

@@ -10,11 +10,11 @@ A `updated event` follows semantics that are exactly equivalent to the semantics
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
 | Can be instantiated | No | Experimental | Forbidden | Permitted | [common/event/updated.schema.json](common/event/updated.schema.json) |
-
 ## Schema Hierarchy
 
 * Updated Event `https://ns.adobe.com/xdm/common/event/updated`
   * [EventEnvelope](../eventenvelope.schema.md) `https://ns.adobe.com/xdm/common/eventenvelope`
+
 
 ## Updated Event Example
 ```json

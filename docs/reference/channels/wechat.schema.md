@@ -10,12 +10,12 @@ WeChat Platform Notification
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Forbidden | Permitted | [channels/wechat.schema.json](channels/wechat.schema.json) |
-
 ## Schema Hierarchy
 
 * WeChat `https://ns.adobe.com/xdm/channels/wechat`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
+
 
 ## WeChat Example
 ```json

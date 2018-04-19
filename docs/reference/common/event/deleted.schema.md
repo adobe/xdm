@@ -10,11 +10,11 @@ A `deleted event` follows semantics that are exactly equivalent to the semantics
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
 | Can be instantiated | No | Experimental | Forbidden | Permitted | [common/event/deleted.schema.json](common/event/deleted.schema.json) |
-
 ## Schema Hierarchy
 
 * Deleted Event `https://ns.adobe.com/xdm/common/event/deleted`
   * [EventEnvelope](../eventenvelope.schema.md) `https://ns.adobe.com/xdm/common/eventenvelope`
+
 
 ## Deleted Event Example
 ```json

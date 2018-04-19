@@ -25,11 +25,11 @@ Some examples of the `rejected event` include:
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
 | Can be instantiated | No | Experimental | Forbidden | Permitted | [common/event/rejected.schema.json](common/event/rejected.schema.json) |
-
 ## Schema Hierarchy
 
 * Rejected Event `https://ns.adobe.com/xdm/common/event/rejected`
   * [EventEnvelope](../eventenvelope.schema.md) `https://ns.adobe.com/xdm/common/eventenvelope`
+
 
 ## Rejected Event Example
 ```json

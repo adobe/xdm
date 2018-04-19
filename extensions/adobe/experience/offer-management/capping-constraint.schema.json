@@ -29,8 +29,7 @@
           "minimum": 0,
           "maximum": 100
         }
-      },
-      "required": ["xdm:volume", "xdm:frequency"]
+      }
     }
   },
   "allOf": [

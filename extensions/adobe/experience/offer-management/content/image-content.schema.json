@@ -21,18 +21,25 @@
           "type": "string",
           "const": "https://ns.adobe.com/experience/offer-management/content/image-content"
         },
-        "image": {
+        "xdm:image": {
           "type": "string",
           "format": "uri",
           "title": "Image URL",
           "description": "Image representing the offer"
         },
-        "imageName": {
+        "xdm:imageName": {
           "type": "string",
           "title": "Image Name",
           "description": "Image name"
+        },
+        "xdm:redirectUrl": {
+          "type": "string",
+          "format": "uri",
+          "title": "Redirect URL",
+          "description": "URL to navigate if the image is clicked"
         }
-      }
+      },
+      "required": ["xdm:image"]
     }
   },
   "allOf": [

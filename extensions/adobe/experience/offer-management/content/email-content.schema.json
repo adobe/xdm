@@ -26,12 +26,12 @@
           "title": "From",
           "description": "Text of \"From\" field of e-mail"
         },
-        "subject": {
+        "xdm:subject": {
           "type": "string",
           "title": "Subject",
           "description": "Text of \"Subject\" field of e-mail"
         },
-        "text": {
+        "xdm:text": {
           "type": "string",
           "title": "Text",
           "description": "Text of the e-mail. Could be plain text or HTML"

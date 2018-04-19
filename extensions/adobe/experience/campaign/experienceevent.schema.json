@@ -6,7 +6,7 @@
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
   "$id":
-    "https://ns.adobe.com/xdm-extensions/adobe/experience/campaign/experienceevent",
+    "https://ns.adobe.com/experience/campaign/experienceevent",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Adobe Campaign ExperienceEvent Extension",
   "type": "object",
@@ -121,7 +121,7 @@
           },
           "description":
             "The reason why the message could/would not be delivered.",
-          "default": "Undefined"
+          "default": "undefined"
         },
         "https://ns.adobe.com/experience/campaign/message/reasonMessage": {
           "title": "Reason Message",
@@ -174,7 +174,7 @@
             "event_based": "Transactional (Event-based)"
           },
           "description": "Mode of delivery for the messages sent.\n",
-          "default": 0
+          "default": "one_time"
         },
         "https://ns.adobe.com/experience/campaign/delivery/templateID": {
           "title": "Identifier of the Template",

@@ -1,0 +1,63 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id":
+    "https://ns.adobe.com/experience/offer-management/representation-content",
+  "type": "object",
+  "title": "Content",
+  "description": "Offer representation content",
+  "definitions": {
+    "representation-content": {
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "@type": {
+              "type": "string",
+              "format": "uri",
+              "enum": [
+                "https://ns.adobe.com/experience/offer-management/content/email-content",
+                "https://ns.adobe.com/experience/offer-management/content/text-content",
+                "https://ns.adobe.com/experience/offer-management/content/html-content",
+                "https://ns.adobe.com/experience/offer-management/content/image-content"
+              ],
+              "meta:enum": {
+                "https://ns.adobe.com/experience/offer-management/content/email-content": "E-mail",
+                "https://ns.adobe.com/experience/offer-management/content/text-content": "Text",
+                "https://ns.adobe.com/experience/offer-management/content/html-content": "HTML",
+                "https://ns.adobe.com/experience/offer-management/content/image-content": "Image"
+              }
+            },
+            "required": ["@type"]
+          }
+        },
+        {
+          "oneOf": [
+            {
+              "$ref": "https://ns.adobe.com/experience/offer-management/content/email-content"
+            },
+            {
+              "$ref": "https://ns.adobe.com/experience/offer-management/content/text-content"
+            },
+            {
+              "$ref": "https://ns.adobe.com/experience/offer-management/content/html-content"
+            },
+            {
+              "$ref": "https://ns.adobe.com/experience/offer-management/content/image-content"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/representation-content"
+    }
+  ]
+}

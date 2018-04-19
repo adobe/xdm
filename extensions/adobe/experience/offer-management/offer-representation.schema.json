@@ -14,15 +14,8 @@
   "definitions": {
     "offer-representation": {
       "properties": {
-        "xdm:contentType": {
-          "type": "string",
-          "title": "Type",
-          "description": "Content Type"
-        },
-        "xdm:contentValue": {
-          "type": "string",
-          "title": "Value",
-          "description": "Value"
+        "xdm:content": {
+          "$ref": "https://ns.adobe.com/experience/offer-management/representation-content"
         },
         "xdm:channel": {
           "type": "string",
@@ -37,8 +30,7 @@
         }
       },
       "required": [
-        "xdm:contentType",
-        "xdm:contentValue",
+        "xdm:content",
         "xdm:channel",
         "xdm:placement"
       ]

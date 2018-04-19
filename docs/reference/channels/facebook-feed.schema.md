@@ -7,15 +7,15 @@ https://ns.adobe.com/xdm/channels/facebook-feed
 
 The Facebook News Feed. This does not include Facebook Messenger, or Facebook App pages.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [channels/facebook-feed.schema.json](channels/facebook-feed.schema.json) |
-
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [channels/facebook-feed.schema.json](channels/facebook-feed.schema.json) |
 ## Schema Hierarchy
 
 * Facebook News Feed `https://ns.adobe.com/xdm/channels/facebook-feed`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
+
 
 ## Facebook News Feed Example
 ```json
@@ -31,9 +31,9 @@ The Facebook News Feed. This does not include Facebook Messenger, or Facebook Ap
 |----------|------|----------|------------|
 | [@id](#@id) | `const` | **Required** | Facebook News Feed (this schema) |
 | [@type](#@type) | `const` | Optional | Facebook News Feed (this schema) |
-| [xdm:contentTypes](#xdmcontentTypes) | `const` | Optional | Facebook News Feed (this schema) |
-| [xdm:locationTypes](#xdmlocationTypes) | `const` | Optional | Facebook News Feed (this schema) |
-| [xdm:metricTypes](#xdmmetricTypes) | `const` | Optional | Facebook News Feed (this schema) |
+| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | Facebook News Feed (this schema) |
+| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | Facebook News Feed (this schema) |
+| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | Facebook News Feed (this schema) |
 | [xdm:mode](#xdmmode) | `const` | Optional | Facebook News Feed (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 

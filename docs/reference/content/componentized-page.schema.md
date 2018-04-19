@@ -10,14 +10,14 @@ Examples for componentized pages include web pages as managed by a web content m
 Componentized pages are modular (consist of smaller content components), hyperlinked (link to other pages), and include digital assets (like images or videos).
 
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [content/componentized-page.schema.json](content/componentized-page.schema.json) |
-
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [content/componentized-page.schema.json](content/componentized-page.schema.json) |
 ## Schema Hierarchy
 
 * Componentized Page `https://ns.adobe.com/xdm/content/componentized-page`
   * [Content](content.schema.md) `https://ns.adobe.com/xdm/content/content`
+
 
 ## Componentized Page Example
 ```json
@@ -79,10 +79,10 @@ Componentized pages are modular (consist of smaller content components), hyperli
 | [repo:name](#reponame) | `string` | **Required** | Componentized Page (this schema) |
 | [repo:path](#repopath) | `string` | **Required** | Componentized Page (this schema) |
 | [xdm:language](#xdmlanguage) | `string` | Optional | Componentized Page (this schema) |
-| [xdm:navOrder](#xdmnavOrder) | `integer` | Optional | Componentized Page (this schema) |
-| [xdm:repositoryCreatedBy](#xdmrepositoryCreatedBy) | `string` | **Required** | [Content](content.schema.md#xdmrepositoryCreatedBy) |
-| [xdm:repositoryLastModifiedBy](#xdmrepositoryLastModifiedBy) | `string` | **Required** | [Content](content.schema.md#xdmrepositoryLastModifiedBy) |
-| [xdm:shortTitle](#xdmshortTitle) | `string` | Optional | Componentized Page (this schema) |
+| [xdm:navOrder](#xdmnavorder) | `integer` | Optional | Componentized Page (this schema) |
+| [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | **Required** | [Content](content.schema.md#xdmrepositorycreatedby) |
+| [xdm:repositoryLastModifiedBy](#xdmrepositorylastmodifiedby) | `string` | **Required** | [Content](content.schema.md#xdmrepositorylastmodifiedby) |
+| [xdm:shortTitle](#xdmshorttitle) | `string` | Optional | Componentized Page (this schema) |
 | [xdm:template](#xdmtemplate) | `string` | Optional | Componentized Page (this schema) |
 | [xdm:unlisted](#xdmunlisted) | `boolean` | Optional | Componentized Page (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |

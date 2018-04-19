@@ -7,14 +7,14 @@ https://ns.adobe.com/xdm/common/auditable
 
 Inheriting this schema using `allOf` indicates that the data record is auditable, i.e. it can be determined when the record has last been modified and by whom.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [common/auditable.schema.json](common/auditable.schema.json) |
-
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [common/auditable.schema.json](common/auditable.schema.json) |
 ## Schema Hierarchy
 
 * Audit Trail `https://ns.adobe.com/xdm/common/auditable`
   * [Common Properties](../external/repo/common.schema.md) `http://ns.adobe.com/adobecloud/core/1.0`
+
 
 ## Audit Trail Example
 ```json
@@ -32,17 +32,17 @@ Inheriting this schema using `allOf` indicates that the data record is auditable
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [repo:createDate](#repocreateDate) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#repocreateDate) |
-| [repo:lastModifiedDate](#repolastModifiedDate) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#repolastModifiedDate) |
-| [xdm:createdByBatchID](#xdmcreatedByBatchID) | `string` | Optional | Audit Trail (this schema) |
-| [xdm:modifiedByBatchID](#xdmmodifiedByBatchID) | `string` | Optional | Audit Trail (this schema) |
-| [xdm:repositoryCreatedBy](#xdmrepositoryCreatedBy) | `string` | Optional | Audit Trail (this schema) |
-| [xdm:repositoryLastModifiedBy](#xdmrepositoryLastModifiedBy) | `string` | Optional | Audit Trail (this schema) |
+| [repo:createDate](#repocreatedate) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#repocreatedate) |
+| [repo:lastModifiedDate](#repolastmodifieddate) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#repolastmodifieddate) |
+| [xdm:createdByBatchID](#xdmcreatedbybatchid) | `string` | Optional | Audit Trail (this schema) |
+| [xdm:modifiedByBatchID](#xdmmodifiedbybatchid) | `string` | Optional | Audit Trail (this schema) |
+| [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | Optional | Audit Trail (this schema) |
+| [xdm:repositoryLastModifiedBy](#xdmrepositorylastmodifiedby) | `string` | Optional | Audit Trail (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## repo:createDate
 
-The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is &#34;2004-10-23T12:00:00-06:00&#34;.
+The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
 
 `repo:createDate`
 * is optional
@@ -67,7 +67,7 @@ The server date and time when the resource was created in the repository, such a
 
 ## repo:lastModifiedDate
 
-The server date and time when the resource was most recently modified in the repository, such as when a new version of an asset is uploaded or a directory&#39;s child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is &#34;2004-10-23T12:00:00-06:00&#34;.
+The server date and time when the resource was most recently modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
 
 `repo:lastModifiedDate`
 * is optional

@@ -8,14 +8,14 @@ https://ns.adobe.com/xdm/common/organization
 Information that uniquely identifies an organized entity such as company, non-profit, government agency or educational institution, plus additional information that further qualifies the organization.
 
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [common/organization.schema.json](common/organization.schema.json) |
-
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Stabilizing | Forbidden | Permitted | [common/organization.schema.json](common/organization.schema.json) |
 ## Schema Hierarchy
 
 * Organization `https://ns.adobe.com/xdm/common/organization`
   * [Place](../context/place.schema.md) `https://ns.adobe.com/xdm/context/place`
+
 
 ## Organization Example
 ```json
@@ -36,8 +36,7 @@ Information that uniquely identifies an organized entity such as company, non-pr
       "xdm:type": "work",
       "xdm:street1": "100 Lincoln Ave",
       "xdm:city": "San Jose",
-      "xdm:stateProvince": "California",
-      "xdm:stateProvinceISO": "CA",
+      "xdm:stateProvince": "US-CA",
       "xdm:postalCode": "95125",
       "xdm:country": "United States",
       "xdm:countryCode": "US",
@@ -65,13 +64,13 @@ Information that uniquely identifies an organized entity such as company, non-pr
 |----------|------|----------|------------|
 | [@id](#@id) | `string` | Optional | Organization (this schema) |
 | [schema:description](#schemadescription) | `string` | Optional | Organization (this schema) |
-| [schema:numberOfEmployees](#schemanumberOfEmployees) | `number` | Optional | Organization (this schema) |
+| [schema:numberOfEmployees](#schemanumberofemployees) | `number` | Optional | Organization (this schema) |
 | [xdm:classifier](#xdmclassifier) | `object` | Optional | Organization (this schema) |
 | [xdm:identifier](#xdmidentifier) | `object` | Optional | Organization (this schema) |
 | [xdm:industry](#xdmindustry) | `string` | Optional | Organization (this schema) |
-| [xdm:legalName](#xdmlegalName) | `string` | Optional | Organization (this schema) |
+| [xdm:legalName](#xdmlegalname) | `string` | Optional | Organization (this schema) |
 | [xdm:location](#xdmlocation) | Place | Optional | Organization (this schema) |
-| [xdm:marketSegment](#xdmmarketSegment) | `string` | Optional | Organization (this schema) |
+| [xdm:marketSegment](#xdmmarketsegment) | `string` | Optional | Organization (this schema) |
 | [xdm:rating](#xdmrating) | `number` | Optional | Organization (this schema) |
 | [xdm:website](#xdmwebsite) | `string` | Optional | Organization (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -244,7 +243,7 @@ The official name of the organization.
 ## xdm:location
 ### Location
 
-The location of the organization&#39;s main office.
+The location of the organization's main office.
 
 `xdm:location`
 * is optional
@@ -304,7 +303,7 @@ The calculated score or star rating for this organization. `1` indicates the max
 ## xdm:website
 ### Web Site
 
-The URL of the organization&#39;s website.
+The URL of the organization's website.
 
 `xdm:website`
 * is optional

@@ -7,14 +7,9 @@ https://ns.adobe.com/xdm/context/emailaddress
 
 A standard email address.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [context/emailaddress.schema.json](context/emailaddress.schema.json) |
-
-## Schema Hierarchy
-
-* Email Address `https://ns.adobe.com/xdm/context/emailaddress`
-  * [Audit Trail](../common/auditable.schema.md) `https://ns.adobe.com/xdm/common/auditable`
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Stabilizing | Forbidden | Permitted | [context/emailaddress.schema.json](context/emailaddress.schema.json) |
 
 ## Email Address Example
 ```json
@@ -32,21 +27,17 @@ A standard email address.
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [xdm:address](#xdmaddress) | `string` | Optional | Email Address (this schema) |
-| [xdm:createdByBatchID](#xdmcreatedByBatchID) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmcreatedByBatchID) |
 | [xdm:label](#xdmlabel) | `string` | Optional | Email Address (this schema) |
-| [xdm:modifiedByBatchID](#xdmmodifiedByBatchID) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmmodifiedByBatchID) |
 | [xdm:primary](#xdmprimary) | `boolean` | Optional | Email Address (this schema) |
-| [xdm:repositoryCreatedBy](#xdmrepositoryCreatedBy) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmrepositoryCreatedBy) |
-| [xdm:repositoryLastModifiedBy](#xdmrepositoryLastModifiedBy) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmrepositoryLastModifiedBy) |
 | [xdm:status](#xdmstatus) | `string` | Optional | Email Address (this schema) |
-| [xdm:statusReason](#xdmstatusReason) | `string` | Optional | Email Address (this schema) |
+| [xdm:statusReason](#xdmstatusreason) | `string` | Optional | Email Address (this schema) |
 | [xdm:type](#xdmtype) | `string` | Optional | Email Address (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:address
 ### Address
 
-The technical address, e.g &#39;name@domain.com&#39; as commonly defined in RFC2822 and subsequent standards.
+The technical address, e.g 'name@domain.com' as commonly defined in RFC2822 and subsequent standards.
 
 `xdm:address`
 * is optional
@@ -64,32 +55,10 @@ The technical address, e.g &#39;name@domain.com&#39; as commonly defined in RFC2
 
 
 
-## xdm:createdByBatchID
-### Created by Batch Identifier
-
-The Data Set Files in Catalog Services which has been originating the creation of the entity.
-
-
-`xdm:createdByBatchID`
-* is optional
-* type: `string`
-* defined in [Audit Trail](../common/auditable.schema.md#xdm:createdByBatchID)
-
-### xdm:createdByBatchID Type
-
-
-`string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
-
-
-
-
-
-
 ## xdm:label
 ### Label
 
-Additional display information that maybe available, e.g MS Outlook rich address controls display &#39;John Smith smithjr@company.uk&#39;, the &#39;John Smith&#39; part is data that would be placed in the label.
+Additional display information that maybe available, e.g MS Outlook rich address controls display 'John Smith smithjr@company.uk', the 'John Smith' part is data that would be placed in the label.
 
 `xdm:label`
 * is optional
@@ -100,29 +69,6 @@ Additional display information that maybe available, e.g MS Outlook rich address
 
 
 `string`
-
-
-
-
-
-
-## xdm:modifiedByBatchID
-### Modified by Batch Identifier
-
-The last Data Set Files in Catalog Services which has modified the entity.
-At creation time, `modifiedByBatchID` is set as `createdByBatchID`.
-
-
-`xdm:modifiedByBatchID`
-* is optional
-* type: `string`
-* defined in [Audit Trail](../common/auditable.schema.md#xdm:modifiedByBatchID)
-
-### xdm:modifiedByBatchID Type
-
-
-`string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
 
 
 
@@ -146,49 +92,6 @@ A Profile can have only one `primary` email address at a given point of time.
 
 
 `boolean`
-
-
-
-
-
-## xdm:repositoryCreatedBy
-### Created by User Identifier
-
-User id who has created the entity.
-
-
-`xdm:repositoryCreatedBy`
-* is optional
-* type: `string`
-* defined in [Audit Trail](../common/auditable.schema.md#xdm:repositoryCreatedBy)
-
-### xdm:repositoryCreatedBy Type
-
-
-`string`
-
-
-
-
-
-
-## xdm:repositoryLastModifiedBy
-### Modified by User Identifier
-
-User id who last modified the entity.
-At creation time, `modifiedByUser` is set as `createdByUser`.
-
-
-`xdm:repositoryLastModifiedBy`
-* is optional
-* type: `string`
-* defined in [Audit Trail](../common/auditable.schema.md#xdm:repositoryLastModifiedBy)
-
-### xdm:repositoryLastModifiedBy Type
-
-
-`string`
-
 
 
 
@@ -246,7 +149,7 @@ A description of the current status.
 ## xdm:type
 ### Type
 
-The way the account relates to the person. e.g &#39;work&#39; or &#39;personal&#39;
+The way the account relates to the person. e.g 'work' or 'personal'
 
 `xdm:type`
 * is optional

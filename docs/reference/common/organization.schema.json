@@ -113,7 +113,7 @@
             "$ref": "#/definitions/organization"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stabilizing",
     "examples": [
         {
             "@id": "https://data.adobe.io/entities/org/orgid111",
@@ -132,8 +132,7 @@
                     "xdm:type": "work",
                     "xdm:street1": "100 Lincoln Ave",
                     "xdm:city": "San Jose",
-                    "xdm:stateProvince": "California",
-                    "xdm:stateProvinceISO": "CA",
+                    "xdm:stateProvince": "US-CA",
                     "xdm:postalCode": "95125",
                     "xdm:country": "United States",
                     "xdm:countryCode": "US",

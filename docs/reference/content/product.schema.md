@@ -8,14 +8,14 @@ https://ns.adobe.com/xdm/context/product
 XDM product variant, master product and key attributes of product in the product catalog.
 
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [content/product.schema.json](content/product.schema.json) |
-
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [content/product.schema.json](content/product.schema.json) |
 ## Schema Hierarchy
 
 * Product `https://ns.adobe.com/xdm/context/product`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+
 
 ## Product Example
 ```json
@@ -45,29 +45,29 @@ XDM product variant, master product and key attributes of product in the product
 |----------|------|----------|------------|
 | [@id](#@id) | `string` | Optional | Product (this schema) |
 | [schema:description](#schemadescription) | `string` | Optional | Product (this schema) |
-| [xdm:COGS](#xdmCOGS) | `number` | Optional | Product (this schema) |
-| [xdm:SKU](#xdmSKU) | `string` | Optional | Product (this schema) |
+| [xdm:COGS](#xdmcogs) | `number` | Optional | Product (this schema) |
+| [xdm:SKU](#xdmsku) | `string` | Optional | Product (this schema) |
 | [xdm:brand](#xdmbrand) | `string` | Optional | Product (this schema) |
 | [xdm:category](#xdmcategory) | `string` | Optional | Product (this schema) |
-| [xdm:countryOfOrigin](#xdmcountryOfOrigin) | `string` | Optional | Product (this schema) |
-| [xdm:currencyCode](#xdmcurrencyCode) | `string` | Optional | Product (this schema) |
+| [xdm:countryOfOrigin](#xdmcountryoforigin) | `string` | Optional | Product (this schema) |
+| [xdm:currencyCode](#xdmcurrencycode) | `string` | Optional | Product (this schema) |
 | [xdm:department](#xdmdepartment) | `string` | Optional | Product (this schema) |
 | [xdm:fabrication](#xdmfabrication) | `string` | Optional | Product (this schema) |
 | [xdm:gender](#xdmgender) | `string` | Optional | Product (this schema) |
-| [xdm:listPrice](#xdmlistPrice) | `number` | Optional | Product (this schema) |
-| [xdm:manufacturerName](#xdmmanufacturerName) | `string` | Optional | Product (this schema) |
-| [xdm:masterProductDescription](#xdmmasterProductDescription) | `string` | Optional | Product (this schema) |
-| [xdm:masterProductID](#xdmmasterProductID) | `string` | Optional | Product (this schema) |
-| [xdm:masterProductName](#xdmmasterProductName) | `string` | Optional | Product (this schema) |
-| [xdm:masterProductSKU](#xdmmasterProductSKU) | `string` | Optional | Product (this schema) |
+| [xdm:listPrice](#xdmlistprice) | `number` | Optional | Product (this schema) |
+| [xdm:manufacturerName](#xdmmanufacturername) | `string` | Optional | Product (this schema) |
+| [xdm:masterProductDescription](#xdmmasterproductdescription) | `string` | Optional | Product (this schema) |
+| [xdm:masterProductID](#xdmmasterproductid) | `string` | Optional | Product (this schema) |
+| [xdm:masterProductName](#xdmmasterproductname) | `string` | Optional | Product (this schema) |
+| [xdm:masterProductSKU](#xdmmasterproductsku) | `string` | Optional | Product (this schema) |
 | [xdm:name](#xdmname) | `string` | Optional | Product (this schema) |
-| [xdm:originalSaleDate](#xdmoriginalSaleDate) | `string` | Optional | Product (this schema) |
-| [xdm:productCreateDate](#xdmproductCreateDate) | `string` | Optional | Product (this schema) |
-| [xdm:productLastModified](#xdmproductLastModified) | `string` | Optional | Product (this schema) |
-| [xdm:productURL](#xdmproductURL) | `string` | Optional | Product (this schema) |
+| [xdm:originalSaleDate](#xdmoriginalsaledate) | `string` | Optional | Product (this schema) |
+| [xdm:productCreateDate](#xdmproductcreatedate) | `string` | Optional | Product (this schema) |
+| [xdm:productLastModified](#xdmproductlastmodified) | `string` | Optional | Product (this schema) |
+| [xdm:productURL](#xdmproducturl) | `string` | Optional | Product (this schema) |
 | [xdm:size](#xdmsize) | `number` | Optional | Product (this schema) |
-| [xdm:supplierName](#xdmsupplierName) | `string` | Optional | Product (this schema) |
-| [xdm:unitOfMeasure](#xdmunitOfMeasure) | `string` | Optional | Product (this schema) |
+| [xdm:supplierName](#xdmsuppliername) | `string` | Optional | Product (this schema) |
+| [xdm:unitOfMeasure](#xdmunitofmeasure) | `string` | Optional | Product (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -469,7 +469,7 @@ The name of the product.
 ## xdm:originalSaleDate
 ### Original Sale Date
 
-First date the product was made available for sale. The time using RFC3339 with a stated timezone offset such as &#34;2001-07-04T12:08:56-07:00&#34;. An example formatting pattern is &#34;yyyy-MM-dd&#39;T&#39;HH:mm:ssXXX&#34;.
+First date the product was made available for sale. The time using RFC3339 with a stated timezone offset such as "2001-07-04T12:08:56-07:00". An example formatting pattern is "yyyy-MM-dd'T'HH:mm:ssXXX".
 
 `xdm:originalSaleDate`
 * is optional
@@ -490,7 +490,7 @@ First date the product was made available for sale. The time using RFC3339 with 
 ## xdm:productCreateDate
 ### Product Creation Date
 
-The date when this product variant was created. The time using RFC3339 with a stated timezone offset such as &#34;2001-07-04T12:08:56-07:00&#34;. An example formatting pattern is &#34;yyyy-MM-dd&#39;T&#39;HH:mm:ssXXX&#34;.
+The date when this product variant was created. The time using RFC3339 with a stated timezone offset such as "2001-07-04T12:08:56-07:00". An example formatting pattern is "yyyy-MM-dd'T'HH:mm:ssXXX".
 
 `xdm:productCreateDate`
 * is optional
@@ -511,7 +511,7 @@ The date when this product variant was created. The time using RFC3339 with a st
 ## xdm:productLastModified
 ### Product Last Modified
 
-The date when this product variant was last modified. The time using RFC3339 with a stated timezone offset such as &#34;2001-07-04T12:08:56-07:00&#34;. An example formatting pattern is &#34;yyyy-MM-dd&#39;T&#39;HH:mm:ssXXX&#34;.
+The date when this product variant was last modified. The time using RFC3339 with a stated timezone offset such as "2001-07-04T12:08:56-07:00". An example formatting pattern is "yyyy-MM-dd'T'HH:mm:ssXXX".
 
 `xdm:productLastModified`
 * is optional

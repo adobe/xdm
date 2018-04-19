@@ -10,14 +10,14 @@ An experience channel is a way how digital experiences are consumed.
 There are multiple experience channels, each with different constraints on how content is delivered and how customer interaction can be observed and data collected. Within a channel, experiences can be delivered to specific locations. The locations and types of locations that exist in a channel differ from channel to channel.
 
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [channels/channel.schema.json](channels/channel.schema.json) |
-
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [channels/channel.schema.json](channels/channel.schema.json) |
 ## Schema Hierarchy
 
 * Experience Channel `https://ns.adobe.com/xdm/channels/channel`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+
 
 ## Experience Channel Example
 ```json
@@ -37,9 +37,9 @@ There are multiple experience channels, each with different constraints on how c
 |----------|------|----------|------------|
 | [@id](#@id) | `string` | **Required** | Experience Channel (this schema) |
 | [@type](#@type) | `string` | Optional | Experience Channel (this schema) |
-| [xdm:contentTypes](#xdmcontentTypes) | `string[]` | Optional | Experience Channel (this schema) |
-| [xdm:locationTypes](#xdmlocationTypes) | `string[]` | Optional | Experience Channel (this schema) |
-| [xdm:metricTypes](#xdmmetricTypes) | `string[]` | Optional | Experience Channel (this schema) |
+| [xdm:contentTypes](#xdmcontenttypes) | `string[]` | Optional | Experience Channel (this schema) |
+| [xdm:locationTypes](#xdmlocationtypes) | `string[]` | Optional | Experience Channel (this schema) |
+| [xdm:metricTypes](#xdmmetrictypes) | `string[]` | Optional | Experience Channel (this schema) |
 | [xdm:mode](#xdmmode) | `enum` | Optional | Experience Channel (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 

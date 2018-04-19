@@ -7,10 +7,9 @@ https://ns.adobe.com/xdm/context/experienceevent
 
 The core ExperienceEvent XDM is used to capture observations that are altering one or more related XDMs/entities. The ExperienceEvent captures information about the observation taking place and when it is occurring. It is critical for time domain analytics as it allows observation and analysis of changes that occur in windows of time and comparison with other windows of time to track trends. ExperienceEvent are either explicit or implicit. Explicit events are direct observations of a human action taking place during a session. Implicit events are events that are being raised without a direct human action. Examples of implicit events are scheduled email sending of newsletters, battery voltage reaching a certain threshold, a person entering into range of a proximity sensor. While not all events are easily categorized across all data sources, it is extremely valuable to harmonize similar events into similar types for processing where possible, and the XDM specifications does this by defining a set of enumerated **type** attribute values with specific semantic meanings. Where possible events must be constrained to these enumerated values to facilitate interoperability.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [context/experienceevent.schema.json](context/experienceevent.schema.json) |
-
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Stabilizing | Forbidden | Permitted | [context/experienceevent.schema.json](context/experienceevent.schema.json) |
 ## Schema Hierarchy
 
 * ExperienceEvent `https://ns.adobe.com/xdm/context/experienceevent`
@@ -23,9 +22,10 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
   * [Commerce](commerce.schema.md) `https://ns.adobe.com/xdm/context/commerce`
   * [Application](../channels/application.schema.md) `https://ns.adobe.com/xdm/channels/application`
   * [Search](search.schema.md) `https://ns.adobe.com/xdm/context/search`
-  * [Web](../channels/web.schema.md) `https://ns.adobe.com/xdm/channels/web`
+  * [Web Information](webinfo.schema.md) `https://ns.adobe.com/xdm/context/webinfo`
   * [Marketing](marketing.schema.md) `https://ns.adobe.com/xdm/context/marketing`
-  * [Location Context](locationcontext.schema.md) `https://ns.adobe.com/xdm/context/locationcontext`
+  * [Place Context](placecontext.schema.md) `https://ns.adobe.com/xdm/context/placecontext`
+
 
 ## ExperienceEvent Example
 ```json
@@ -33,25 +33,30 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
   "@id": "https://data.adobe.io/experienceid-123456",
   "xdm:dataSource": {
     "@id": "https://data.adobe.io/datasources/datasource-123",
-    "xdm:name": "DataSourceIntegrationCode-123"
+    "xdm:code": "DataSourceIntegrationCode-123"
   },
   "xdm:timestamp": "2017-09-26T15:52:25+00:00",
   "xdm:endUserIDs": {
-    "xdm:realm": {
-      "@id": "https://data.adobe.io/experiencecloud/audiencemanager",
-      "xdm:name": "Adobe Audience Manager"
+    "https://ns.adobe.com/experience/mcid": {
+      "@id": "https://data.adobe.io/entities/identity/92312748749128",
+      "xdm:namespace": {
+        "@id": "https://data.adobe.io/entities/namespace/4",
+        "xdm:code": "ECID"
+      }
     },
-    "https://ns.adobe.com/experiencecloud/mcid": {
-      "xdm:datasource": {
-        "@id": "https://data.adobe.io/experiencecloud/mcid",
-        "xdm:name": "Adobe Marketing Cloud Identity Core Service"
-      },
-      "xdm:id": "mcid-sample111",
-      "xdm:confidence": 1
+    "https://ns.adobe.com/experience/analytics": {
+      "@id": "https://data.adobe.io/entities/identity/2394509340-30453470347",
+      "xdm:namespace": {
+        "@id": "https://data.adobe.io/entities/namespace/11112",
+        "xdm:code": "AVID"
+      }
     },
-    "https://ns.adobe.com/experiencecloud/analytics": {
-      "xdm:id": "mcid-sample111",
-      "xdm:confidence": 0.99
+    "https://ns.adobe.com/experience/tntid": {
+      "@id": "https://data.adobe.io/entities/identity/1233ce17-20e0-4a2c-8198-2a77fd60cf4d",
+      "xdm:namespace": {
+        "@id": "https://data.adobe.io/entities/namespace/33333",
+        "xdm:code": "tnt0051"
+      }
     }
   },
   "xdm:environment": {
@@ -72,6 +77,17 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
     "xdm:operatingSystemVersion": "10.13",
     "xdm:connectionType": "cable"
   },
+  "xdm:metrics": {
+    "https://ns.adobe.com/xdm/data/metrics/commerce/purchases": {
+      "xdm:value": 1,
+      "xdm:unit": null
+    },
+    "https://ns.adobe.com/xdm/data/metrics/web/page-views": {
+      "@type": "https://ns.adobe.com/xdm/data/metrics/web/page-views",
+      "xdm:value": 1,
+      "xdm:unit": null
+    }
+  },
   "xdm:productListItems": [
     {
       "xdm:SKU": "1002352692",
@@ -89,31 +105,45 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
       "xdm:payments": [
         {
           "xdm:transactionID": "transactid-a111",
-          "xdm:paymentAmount": 899.99,
+          "xdm:paymentAmount": 59,
           "xdm:paymentType": "credit_card",
           "xdm:currencyCode": "USD"
         },
         {
           "xdm:transactionId": "transactid-a222",
-          "xdm:paymentAmount": 99.99,
+          "xdm:paymentAmount": 100,
           "xdm:paymentType": "gift_card",
           "xdm:currencyCode": "USD"
         }
       ],
       "xdm:currencyCode": "USD",
-      "xdm:priceTotal": 999.98
+      "xdm:priceTotal": 159
     }
   },
-  "xdm:locationContext": {
-    "xdm:localTime": "2001-07-04T12:08:56+01:00",
+  "xdm:placeContext": {
+    "xdm:localTime": "2017-09-26T15:52:25+13:00",
     "xdm:geo": {
       "@id": "https://data.adobe.io/entities/geo/tokyo",
       "xdm:countryCode": "JP",
-      "xdm:stateProvince": "Tōkyō-to",
+      "xdm:stateProvince": "JP-13",
       "xdm:city": "Tōkyō",
       "xdm:postalCode": "141-0032",
       "schema:latitude": 35.6185,
       "schema:longitude": 139.73237
+    }
+  },
+  "xdm:web": {
+    "xdm:webPageView": {
+      "xdm:siteSection": "Shopping Cart",
+      "xdm:server": "example.com",
+      "xdm:name": "Purchase Confirmation",
+      "xdm:URL": "https://www.example.com/orderConf",
+      "xdm:errorPage": false,
+      "xdm:homePage": false
+    },
+    "xdm:webReferrer": {
+      "xdm:URL": "https://www.example.com/checkout",
+      "xdm:referrerType": "internal"
     }
   },
   "xdm:marketing": {
@@ -128,18 +158,19 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
 |----------|------|----------|------------|
 | [@id](#@id) | `string` | Optional | ExperienceEvent (this schema) |
 | [xdm:application](#xdmapplication) | Application | Optional | ExperienceEvent (this schema) |
+| [xdm:channel](#xdmchannel) | `string` | Optional | ExperienceEvent (this schema) |
 | [xdm:commerce](#xdmcommerce) | Commerce | Optional | ExperienceEvent (this schema) |
-| [xdm:dataSource](#xdmdataSource) | Data Source | Optional | ExperienceEvent (this schema) |
+| [xdm:dataSource](#xdmdatasource) | Data Source | Optional | ExperienceEvent (this schema) |
 | [xdm:device](#xdmdevice) | Device | Optional | ExperienceEvent (this schema) |
-| [xdm:endUserIDs](#xdmendUserIDs) | End User IDs | Optional | ExperienceEvent (this schema) |
+| [xdm:endUserIDs](#xdmenduserids) | End User IDs | Optional | ExperienceEvent (this schema) |
 | [xdm:environment](#xdmenvironment) | Environment | Optional | ExperienceEvent (this schema) |
-| [xdm:locationContext](#xdmlocationContext) | Location Context | Optional | ExperienceEvent (this schema) |
 | [xdm:marketing](#xdmmarketing) | Marketing | Optional | ExperienceEvent (this schema) |
 | [xdm:metrics](#xdmmetrics) | Metrics | Optional | ExperienceEvent (this schema) |
-| [xdm:productListItems](#xdmproductListItems) | Product List Item | Optional | ExperienceEvent (this schema) |
+| [xdm:placeContext](#xdmplacecontext) | Place Context | Optional | ExperienceEvent (this schema) |
+| [xdm:productListItems](#xdmproductlistitems) | Product List Item | Optional | ExperienceEvent (this schema) |
 | [xdm:search](#xdmsearch) | Search | Optional | ExperienceEvent (this schema) |
 | [xdm:timestamp](#xdmtimestamp) | `string` | Optional | ExperienceEvent (this schema) |
-| [xdm:web](#xdmweb) | Web | Optional | ExperienceEvent (this schema) |
+| [xdm:web](#xdmweb) | Web Information | Optional | ExperienceEvent (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -178,6 +209,52 @@ The application related to the event observation. It could be either the applica
 
 * [Application](../channels/application.schema.md) – `https://ns.adobe.com/xdm/channels/application`
 
+
+
+
+
+## xdm:channel
+### Communication Channel
+
+The marketing channel related to this ExperienceEvent.
+
+`xdm:channel`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:channel Type
+
+
+`string`
+* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+
+
+
+### xdm:channel Known Values
+| Value | Description |
+|-------|-------------|
+| `https://ns.adobe.com/xdm/channels/adm` | ADM |
+| `https://ns.adobe.com/xdm/channels/agency` | Agency |
+| `https://ns.adobe.com/xdm/channels/apns` | APNS |
+| `https://ns.adobe.com/xdm/channels/application` | Application |
+| `https://ns.adobe.com/xdm/channels/baidu` | Baidu |
+| `https://ns.adobe.com/xdm/channels/channel` | Experience Channel |
+| `https://ns.adobe.com/xdm/channels/direct-mail` | Direct Mail |
+| `https://ns.adobe.com/xdm/channels/email` | E-Mail |
+| `https://ns.adobe.com/xdm/channels/facebook-feed` | Facebook News Feed |
+| `https://ns.adobe.com/xdm/channels/fax` | Fax |
+| `https://ns.adobe.com/xdm/channels/gcm` | GCM |
+| `https://ns.adobe.com/xdm/channels/line` | LINE |
+| `https://ns.adobe.com/xdm/channels/mobile-app` | Web |
+| `https://ns.adobe.com/xdm/channels/mpns` | MPNS |
+| `https://ns.adobe.com/xdm/channels/phone` | Phone |
+| `https://ns.adobe.com/xdm/channels/sms` | SMS |
+| `https://ns.adobe.com/xdm/channels/twitter-feed` | Twitter Feed |
+| `https://ns.adobe.com/xdm/channels/web` | Web |
+| `https://ns.adobe.com/xdm/channels/webpage` | Web Page |
+| `https://ns.adobe.com/xdm/channels/wechat` | WeChat |
+| `https://ns.adobe.com/xdm/channels/wns` | WNS |
 
 
 
@@ -278,25 +355,6 @@ Information about the surrounding situation the event observation occurred in, s
 
 
 
-## xdm:locationContext
-### Location Context
-
-The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, working hours.
-
-`xdm:locationContext`
-* is optional
-* type: Location Context
-* defined in this schema
-
-### xdm:locationContext Type
-
-
-* [Location Context](locationcontext.schema.md) – `https://ns.adobe.com/xdm/context/locationcontext`
-
-
-
-
-
 ## xdm:marketing
 ### Marketing
 
@@ -330,6 +388,25 @@ The metrics for actions performed during this observation.
 
 
 * [Metrics](../data/metrics.schema.md) – `https://ns.adobe.com/xdm/data/metrics`
+
+
+
+
+
+## xdm:placeContext
+### Place Context
+
+The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, working hours.
+
+`xdm:placeContext`
+* is optional
+* type: Place Context
+* defined in this schema
+
+### xdm:placeContext Type
+
+
+* [Place Context](placecontext.schema.md) – `https://ns.adobe.com/xdm/context/placecontext`
 
 
 
@@ -408,13 +485,13 @@ The information related to web page and link of the ExperienceEvent.
 
 `xdm:web`
 * is optional
-* type: Web
+* type: Web Information
 * defined in this schema
 
 ### xdm:web Type
 
 
-* [Web](../channels/web.schema.md) – `https://ns.adobe.com/xdm/channels/web`
+* [Web Information](webinfo.schema.md) – `https://ns.adobe.com/xdm/context/webinfo`
 
 
 

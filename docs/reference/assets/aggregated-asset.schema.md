@@ -7,10 +7,9 @@ https://ns.adobe.com/xdm/assets/aggregated-asset
 
 This schema aggregates all asset sub-schemas that are supported by XDM.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | No | Forbidden | Permitted | [assets/aggregated-asset.schema.json](assets/aggregated-asset.schema.json) |
-
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | No | Experimental | Forbidden | Permitted | [assets/aggregated-asset.schema.json](assets/aggregated-asset.schema.json) |
 ## Schema Hierarchy
 
 * Aggregated Asset `https://ns.adobe.com/xdm/assets/aggregated-asset`
@@ -23,6 +22,7 @@ This schema aggregates all asset sub-schemas that are supported by XDM.
   * [Rectangular Media](rectangular.schema.md) `https://ns.adobe.com/xdm/assets/rectangular`
   * [Image](image.schema.md) `https://ns.adobe.com/xdm/assets/image`
   * [Video](video.schema.md) `https://ns.adobe.com/xdm/assets/video`
+
 
 ## Aggregated Asset Example
 ```json
@@ -50,8 +50,8 @@ This schema aggregates all asset sub-schemas that are supported by XDM.
 | [@id](#@id) | `string` | Optional | [Content](../content/content.schema.md#@id) |
 | [_embedded](#_embedded) | `object` | Optional | [HAL Resource](../external/hal/hal.schema.md#_embedded) |
 | [_links](#_links) | `object` | Optional | [HAL Resource](../external/hal/hal.schema.md#_links) |
-| [cc:attributionName](#ccattributionName) | `string` | Optional | [Asset](asset.schema.md#ccattributionName) |
-| [cc:attributionUrl](#ccattributionUrl) | `string` | Optional | [Asset](asset.schema.md#ccattributionUrl) |
+| [cc:attributionName](#ccattributionname) | `string` | Optional | [Asset](asset.schema.md#ccattributionname) |
+| [cc:attributionUrl](#ccattributionurl) | `string` | Optional | [Asset](asset.schema.md#ccattributionurl) |
 | [cc:license](#cclicense) | `string` | Optional | [Asset](asset.schema.md#cclicense) |
 | [dc:creator](#dccreator) | `string[]` | Optional | [Asset](asset.schema.md#dccreator) |
 | [dc:description](#dcdescription) | reference | Optional | [Asset](asset.schema.md#dcdescription) |
@@ -60,56 +60,56 @@ This schema aggregates all asset sub-schemas that are supported by XDM.
 | [dc:rights](#dcrights) | reference | Optional | [Asset](asset.schema.md#dcrights) |
 | [dc:subject](#dcsubject) | `string[]` | Optional | [Asset](asset.schema.md#dcsubject) |
 | [dc:title](#dctitle) | reference | Optional | [Asset](asset.schema.md#dctitle) |
-| [exif:gpsAltitude](#exifgpsAltitude) | `number` | Optional | [Asset](asset.schema.md#exifgpsAltitude) |
-| [exif:gpsAltitudeRef](#exifgpsAltitudeRef) | `enum` | Optional | [Asset](asset.schema.md#exifgpsAltitudeRef) |
-| [exif:gpsLatitude](#exifgpsLatitude) | `string` | Optional | [Asset](asset.schema.md#exifgpsLatitude) |
-| [exif:gpsLongitude](#exifgpsLongitude) | `string` | Optional | [Asset](asset.schema.md#exifgpsLongitude) |
-| [photoshop:ICCProfile](#photoshopICCProfile) | `string` | Optional | [Image](image.schema.md#photoshopICCProfile) |
-| [photoshop:colorMode](#photoshopcolorMode) | `enum` | Optional | [Image](image.schema.md#photoshopcolorMode) |
+| [exif:gpsAltitude](#exifgpsaltitude) | `number` | Optional | [Asset](asset.schema.md#exifgpsaltitude) |
+| [exif:gpsAltitudeRef](#exifgpsaltituderef) | `enum` | Optional | [Asset](asset.schema.md#exifgpsaltituderef) |
+| [exif:gpsLatitude](#exifgpslatitude) | `string` | Optional | [Asset](asset.schema.md#exifgpslatitude) |
+| [exif:gpsLongitude](#exifgpslongitude) | `string` | Optional | [Asset](asset.schema.md#exifgpslongitude) |
+| [photoshop:ICCProfile](#photoshopiccprofile) | `string` | Optional | [Image](image.schema.md#photoshopiccprofile) |
+| [photoshop:colorMode](#photoshopcolormode) | `enum` | Optional | [Image](image.schema.md#photoshopcolormode) |
 | [photoshop:credit](#photoshopcredit) | `string` | Optional | [Asset](asset.schema.md#photoshopcredit) |
-| [plus:copyrightOwner](#pluscopyrightOwner) | reference | Optional | [Asset](asset.schema.md#pluscopyrightOwner) |
-| [plus:copyrightOwnerID](#pluscopyrightOwnerID) | `string` | Optional | [Copyright Owner](copyright-owner.schema.md#pluscopyrightOwnerID) |
-| [plus:copyrightOwnerName](#pluscopyrightOwnerName) | `string` | Optional | [Copyright Owner](copyright-owner.schema.md#pluscopyrightOwnerName) |
-| [repo:assetID](#repoassetID) | `string` | Optional | [Asset](../external/repo/asset.schema.md#repoassetID) |
-| [repo:createDate](#repocreateDate) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#repocreateDate) |
+| [plus:copyrightOwner](#pluscopyrightowner) | reference | Optional | [Asset](asset.schema.md#pluscopyrightowner) |
+| [plus:copyrightOwnerID](#pluscopyrightownerid) | `string` | Optional | [Copyright Owner](copyright-owner.schema.md#pluscopyrightownerid) |
+| [plus:copyrightOwnerName](#pluscopyrightownername) | `string` | Optional | [Copyright Owner](copyright-owner.schema.md#pluscopyrightownername) |
+| [repo:assetID](#repoassetid) | `string` | Optional | [Asset](../external/repo/asset.schema.md#repoassetid) |
+| [repo:createDate](#repocreatedate) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#repocreatedate) |
 | [repo:etag](#repoetag) | `string` | Optional | [Asset](../external/repo/asset.schema.md#repoetag) |
-| [repo:lastModifiedDate](#repolastModifiedDate) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#repolastModifiedDate) |
+| [repo:lastModifiedDate](#repolastmodifieddate) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#repolastmodifieddate) |
 | [repo:name](#reponame) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#reponame) |
 | [repo:path](#repopath) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#repopath) |
 | [repo:size](#reposize) | `integer` | Optional | [Asset](../external/repo/asset.schema.md#reposize) |
 | [repo:version](#repoversion) | `string` | Optional | [Asset](../external/repo/asset.schema.md#repoversion) |
-| [tiff:XResolution](#tiffXResolution) | `object` | Optional | [Image](image.schema.md#tiffXResolution) |
-| [tiff:YResolution](#tiffYResolution) | `object` | Optional | [Image](image.schema.md#tiffYResolution) |
-| [tiff:imageLength](#tiffimageLength) | `integer` | Optional | [Rectangular Media](rectangular.schema.md#tiffimageLength) |
-| [tiff:imageWidth](#tiffimageWidth) | `integer` | Optional | [Rectangular Media](rectangular.schema.md#tiffimageWidth) |
+| [tiff:XResolution](#tiffxresolution) | `object` | Optional | [Image](image.schema.md#tiffxresolution) |
+| [tiff:YResolution](#tiffyresolution) | `object` | Optional | [Image](image.schema.md#tiffyresolution) |
+| [tiff:imageLength](#tiffimagelength) | `integer` | Optional | [Rectangular Media](rectangular.schema.md#tiffimagelength) |
+| [tiff:imageWidth](#tiffimagewidth) | `integer` | Optional | [Rectangular Media](rectangular.schema.md#tiffimagewidth) |
 | [tiff:orientation](#tifforientation) | `integer` | Optional | [Image](image.schema.md#tifforientation) |
-| [tiff:resolutionUnit](#tiffresolutionUnit) | `enum` | Optional | [Image](image.schema.md#tiffresolutionUnit) |
-| [xdm:aliasIDs](#xdmaliasIDs) | `array` | Optional | [Asset](asset.schema.md#xdmaliasIDs) |
-| [xdm:aspectRatio](#xdmaspectRatio) | `number` | Optional | [Rectangular Media](rectangular.schema.md#xdmaspectRatio) |
-| [xdm:documentID](#xdmdocumentID) | `string` | Optional | [Asset](asset.schema.md#xdmdocumentID) |
+| [tiff:resolutionUnit](#tiffresolutionunit) | `enum` | Optional | [Image](image.schema.md#tiffresolutionunit) |
+| [xdm:aliasIDs](#xdmaliasids) | `array` | Optional | [Asset](asset.schema.md#xdmaliasids) |
+| [xdm:aspectRatio](#xdmaspectratio) | `number` | Optional | [Rectangular Media](rectangular.schema.md#xdmaspectratio) |
+| [xdm:documentID](#xdmdocumentid) | `string` | Optional | [Asset](asset.schema.md#xdmdocumentid) |
 | [xdm:extent](#xdmextent) | `integer` | Optional | [Video](video.schema.md#xdmextent) |
 | [xdm:milestone](#xdmmilestone) | `object` | Optional | [Asset](asset.schema.md#xdmmilestone) |
-| [xdm:notSafe](#xdmnotSafe) | `enum` | Optional | [Asset](asset.schema.md#xdmnotSafe) |
-| [xdm:repositoryCreatedBy](#xdmrepositoryCreatedBy) | `string` | Optional | [Content](../content/content.schema.md#xdmrepositoryCreatedBy) |
-| [xdm:repositoryLastModifiedBy](#xdmrepositoryLastModifiedBy) | `string` | Optional | [Content](../content/content.schema.md#xdmrepositoryLastModifiedBy) |
+| [xdm:notSafe](#xdmnotsafe) | `enum` | Optional | [Asset](asset.schema.md#xdmnotsafe) |
+| [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | Optional | [Content](../content/content.schema.md#xdmrepositorycreatedby) |
+| [xdm:repositoryLastModifiedBy](#xdmrepositorylastmodifiedby) | `string` | Optional | [Content](../content/content.schema.md#xdmrepositorylastmodifiedby) |
 | [xmp:artboards](#xmpartboards) | Artboard | Optional | [Asset](asset.schema.md#xmpartboards) |
-| [xmp:createDate](#xmpcreateDate) | `string` | Optional | [Asset](asset.schema.md#xmpcreateDate) |
-| [xmp:creatorTool](#xmpcreatorTool) | `string` | Optional | [Asset](asset.schema.md#xmpcreatorTool) |
+| [xmp:createDate](#xmpcreatedate) | `string` | Optional | [Asset](asset.schema.md#xmpcreatedate) |
+| [xmp:creatorTool](#xmpcreatortool) | `string` | Optional | [Asset](asset.schema.md#xmpcreatortool) |
 | [xmp:fonts](#xmpfonts) | reference | Optional | [Asset](asset.schema.md#xmpfonts) |
 | [xmp:keywords](#xmpkeywords) | `array` | Optional | [Asset](asset.schema.md#xmpkeywords) |
 | [xmp:layers](#xmplayers) | complex | Optional | [Asset](asset.schema.md#xmplayers) |
-| [xmp:machineKeywords](#xmpmachineKeywords) | `object[]` | Optional | [Asset](asset.schema.md#xmpmachineKeywords) |
-| [xmp:modifyDate](#xmpmodifyDate) | `string` | Optional | [Asset](asset.schema.md#xmpmodifyDate) |
-| [xmp:numberOfPixels](#xmpnumberOfPixels) | `integer` | Optional | [Image](image.schema.md#xmpnumberOfPixels) |
+| [xmp:machineKeywords](#xmpmachinekeywords) | `object[]` | Optional | [Asset](asset.schema.md#xmpmachinekeywords) |
+| [xmp:modifyDate](#xmpmodifydate) | `string` | Optional | [Asset](asset.schema.md#xmpmodifydate) |
+| [xmp:numberOfPixels](#xmpnumberofpixels) | `integer` | Optional | [Image](image.schema.md#xmpnumberofpixels) |
 | [xmp:rating](#xmprating) | `enum` | Optional | [Asset](asset.schema.md#xmprating) |
-| [xmpDM:videoFrameRate](#xmpDMvideoFrameRate) | `string` | Optional | [Video](video.schema.md#xmpDMvideoFrameRate) |
-| [xmpMM:history](#xmpMMhistory) | reference | Optional | [Asset](asset.schema.md#xmpMMhistory) |
-| [xmpMM:manageTo](#xmpMMmanageTo) | `string` | Optional | [Asset](asset.schema.md#xmpMMmanageTo) |
-| [xmpMM:manageUI](#xmpMMmanageUI) | `string` | Optional | [Asset](asset.schema.md#xmpMMmanageUI) |
-| [xmpRights:marked](#xmpRightsmarked) | `boolean` | Optional | [Asset](asset.schema.md#xmpRightsmarked) |
-| [xmpRights:usageTerms](#xmpRightsusageTerms) | reference | Optional | [Asset](asset.schema.md#xmpRightsusageTerms) |
-| [xmpRights:webStatement](#xmpRightswebStatement) | `string` | Optional | [Asset](asset.schema.md#xmpRightswebStatement) |
-| [xmpTPg:NPages](#xmpTPgNPages) | `integer` | Optional | [Asset](asset.schema.md#xmpTPgNPages) |
+| [xmpDM:videoFrameRate](#xmpdmvideoframerate) | `string` | Optional | [Video](video.schema.md#xmpdmvideoframerate) |
+| [xmpMM:history](#xmpmmhistory) | reference | Optional | [Asset](asset.schema.md#xmpmmhistory) |
+| [xmpMM:manageTo](#xmpmmmanageto) | `string` | Optional | [Asset](asset.schema.md#xmpmmmanageto) |
+| [xmpMM:manageUI](#xmpmmmanageui) | `string` | Optional | [Asset](asset.schema.md#xmpmmmanageui) |
+| [xmpRights:marked](#xmprightsmarked) | `boolean` | Optional | [Asset](asset.schema.md#xmprightsmarked) |
+| [xmpRights:usageTerms](#xmprightsusageterms) | reference | Optional | [Asset](asset.schema.md#xmprightsusageterms) |
+| [xmpRights:webStatement](#xmprightswebstatement) | `string` | Optional | [Asset](asset.schema.md#xmprightswebstatement) |
+| [xmpTPg:NPages](#xmptpgnpages) | `integer` | Optional | [Asset](asset.schema.md#xmptpgnpages) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -181,7 +181,7 @@ It is an object whose property names are link relation types (as defined by [RFC
 ## cc:attributionName
 ### Attribution Name
 
-For licenses that require attribution, such as some Creative Commons licenses, the user to which a work is attributed. When publishing to Behance, this is taken from the user&#39;s Behance profile information.
+For licenses that require attribution, such as some Creative Commons licenses, the user to which a work is attributed. When publishing to Behance, this is taken from the user's Behance profile information.
 
 `cc:attributionName`
 * is optional
@@ -201,7 +201,7 @@ For licenses that require attribution, such as some Creative Commons licenses, t
 ## cc:attributionUrl
 ### Attribution URL
 
-For licenses that require attribution, such as some Creative Commons licenses, a URL that identifies the user to which a work should be attributed. When publishing to Behance, we link to the user&#39;s profile page.
+For licenses that require attribution, such as some Creative Commons licenses, a URL that identifies the user to which a work should be attributed. When publishing to Behance, we link to the user's profile page.
 
 `cc:attributionUrl`
 * is optional
@@ -754,7 +754,7 @@ All instances must conform to this regular expression
 
 ## repo:createDate
 
-The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is &#34;2004-10-23T12:00:00-06:00&#34;.
+The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
 
 `repo:createDate`
 * is optional
@@ -799,7 +799,7 @@ An  ETag is an HTTP response header returned by an HTTP/1.1 compliant web server
 
 ## repo:lastModifiedDate
 
-The server date and time when the resource was most recently modified in the repository, such as when a new version of an asset is uploaded or a directory&#39;s child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is &#34;2004-10-23T12:00:00-06:00&#34;.
+The server date and time when the resource was most recently modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
 
 `repo:lastModifiedDate`
 * is optional
@@ -1128,7 +1128,7 @@ Describes the proportional relationship between the width and the height. To det
 ## xdm:documentID
 ### Document ID
 
-It takes the value of xmpMM:DocumentID present in the [XMP packet of the asset](http://wwwimages.adobe.com/content/dam/Adobe/en/devnet/xmp/pdfs/XMP%20SDK%20Release%20cc-2014-12/XMPSpecificationPart1.pdf). For the assets having no XMP packet this property won&#39;t be populated. 
+It takes the value of xmpMM:DocumentID present in the [XMP packet of the asset](http://wwwimages.adobe.com/content/dam/Adobe/en/devnet/xmp/pdfs/XMP%20SDK%20Release%20cc-2014-12/XMPSpecificationPart1.pdf). For the assets having no XMP packet this property won't be populated. 
 
 The value is a GUID, capital A-F, 8-4-4-12, preceded by the string `uuid:`
 
@@ -1653,7 +1653,7 @@ The keyword itself. A keyword can be considered like a tag, i.e. a short descrip
 ## xmp:modifyDate
 ### Mofification Date
 
-The date and time when asset was last modified. The Date Time property should conform to ISO 8601 standard. An example form is &#34;2004-10-23T12:00:00-06:00&#34;. Opposed to `repositoryLastModifiedDate`, this is the time when the asset was last modified locally, with or without knowledge of the repository.
+The date and time when asset was last modified. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00". Opposed to `repositoryLastModifiedDate`, this is the time when the asset was last modified locally, with or without knowledge of the repository.
 
 `xmp:modifyDate`
 * is optional

@@ -7,15 +7,15 @@ https://ns.adobe.com/xdm/channels/wechat
 
 WeChat Platform Notification
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [channels/wechat.schema.json](channels/wechat.schema.json) |
-
+| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [channels/wechat.schema.json](channels/wechat.schema.json) |
 ## Schema Hierarchy
 
 * WeChat `https://ns.adobe.com/xdm/channels/wechat`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
+
 
 ## WeChat Example
 ```json
@@ -31,9 +31,9 @@ WeChat Platform Notification
 |----------|------|----------|------------|
 | [@id](#@id) | `const` | **Required** | WeChat (this schema) |
 | [@type](#@type) | `const` | Optional | WeChat (this schema) |
-| [xdm:contentTypes](#xdmcontentTypes) | `const` | Optional | WeChat (this schema) |
-| [xdm:locationTypes](#xdmlocationTypes) | `const` | Optional | WeChat (this schema) |
-| [xdm:metricTypes](#xdmmetricTypes) | `const` | Optional | WeChat (this schema) |
+| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | WeChat (this schema) |
+| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | WeChat (this schema) |
+| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | WeChat (this schema) |
 | [xdm:mode](#xdmmode) | `const` | Optional | WeChat (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 

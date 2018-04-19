@@ -5,18 +5,18 @@
 https://ns.adobe.com/xdm/common/address
 ```
 
-A postal address. Address could relate to a person&#39;s home, work, preferred store location etc.
+A postal address. Address could relate to a person's home, work, preferred store location etc.
 
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Stabilizing | Forbidden | Permitted | [common/address.schema.json](common/address.schema.json) |
-
 ## Schema Hierarchy
 
 * Address `https://ns.adobe.com/xdm/common/address`
   * [Geo Coordinates](../external/schema/geocoordinates.schema.md) `http://schema.org/GeoCoordinates`
   * [Geo](geo.schema.md) `https://ns.adobe.com/xdm/common/geo`
   * [Audit Trail](auditable.schema.md) `https://ns.adobe.com/xdm/common/auditable`
+
 
 ## Address Example
 ```json

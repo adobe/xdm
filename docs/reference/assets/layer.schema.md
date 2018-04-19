@@ -14,11 +14,11 @@ Users can also apply a layer style to add a special effect such as a drop shadow
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Forbidden | Permitted | [assets/layer.schema.json](assets/layer.schema.json) |
-
 ## Schema Hierarchy
 
 * Layer `https://ns.adobe.com/xdm/assets/layer`
   * [Rectangular Object (measured in variable unit)](variable-unit-rectangular.schema.md) `https://ns.adobe.com/xdm/assets/variable-unit-rectangular`
+
 
 ## Layer Example
 ```json

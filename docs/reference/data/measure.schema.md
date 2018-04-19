@@ -7,7 +7,7 @@ https://ns.adobe.com/xdm/data/measure
 
 A measure is a concrete quantifiable data point of a particular metric.
 
-It has a value, and optionally a unit, although the unit can be inferred from the measure&#39;s metric.
+It has a value, and optionally a unit, although the unit can be inferred from the measure's metric.
 
 
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
@@ -75,7 +75,7 @@ Unique identifier of the measure. In cases of data collection using lossy commun
 
 ## xdm:unit
 
-The (optional) unit that this measure&#39;s value is measured in. The `unit` in the `Measure` is purely informational, as the `unit` property of the referenced `Metric` determines the interpretation.
+The (optional) unit that this measure's value is measured in. The `unit` in the `Measure` is purely informational, as the `unit` property of the referenced `Metric` determines the interpretation.
 
 `xdm:unit`
 * is optional

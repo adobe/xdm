@@ -10,12 +10,12 @@ E-Mail messages, delivered via SMTP to list subscribers.
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Forbidden | Permitted | [channels/email.schema.json](channels/email.schema.json) |
-
 ## Schema Hierarchy
 
 * E-Mail `https://ns.adobe.com/xdm/channels/email`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
+
 
 ## E-Mail Example
 ```json

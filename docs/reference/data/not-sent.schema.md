@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/data/metrics/direct-marketing/not-sent
 ```
 
-The direct-marketing metric `not-sent` describes the number of asynchronous messages (email, SMS, MMS etc) that have not been dispatched to an recipient&#39;s account/address/device due to cancellation or expiration of the marketing activity.
+The direct-marketing metric `not-sent` describes the number of asynchronous messages (email, SMS, MMS etc) that have not been dispatched to an recipient's account/address/device due to cancellation or expiration of the marketing activity.
 
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|

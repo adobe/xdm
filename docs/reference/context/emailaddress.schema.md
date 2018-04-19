@@ -37,7 +37,7 @@ A standard email address.
 ## xdm:address
 ### Address
 
-The technical address, e.g &#39;name@domain.com&#39; as commonly defined in RFC2822 and subsequent standards.
+The technical address, e.g 'name@domain.com' as commonly defined in RFC2822 and subsequent standards.
 
 `xdm:address`
 * is optional
@@ -58,7 +58,7 @@ The technical address, e.g &#39;name@domain.com&#39; as commonly defined in RFC2
 ## xdm:label
 ### Label
 
-Additional display information that maybe available, e.g MS Outlook rich address controls display &#39;John Smith smithjr@company.uk&#39;, the &#39;John Smith&#39; part is data that would be placed in the label.
+Additional display information that maybe available, e.g MS Outlook rich address controls display 'John Smith smithjr@company.uk', the 'John Smith' part is data that would be placed in the label.
 
 `xdm:label`
 * is optional
@@ -149,7 +149,7 @@ A description of the current status.
 ## xdm:type
 ### Type
 
-The way the account relates to the person. e.g &#39;work&#39; or &#39;personal&#39;
+The way the account relates to the person. e.g 'work' or 'personal'
 
 `xdm:type`
 * is optional

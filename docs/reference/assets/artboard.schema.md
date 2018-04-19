@@ -19,11 +19,11 @@ Artboards can contain layers and layer groups, but not other artboards.
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Forbidden | Permitted | [assets/artboard.schema.json](assets/artboard.schema.json) |
-
 ## Schema Hierarchy
 
 * Artboard `https://ns.adobe.com/xdm/assets/artboard`
   * [Rectangular Object (measured in variable unit)](variable-unit-rectangular.schema.md) `https://ns.adobe.com/xdm/assets/variable-unit-rectangular`
+
 
 ## Artboard Example
 ```json

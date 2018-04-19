@@ -10,12 +10,12 @@ A sub-directory in a directory listing.
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Forbidden | Permitted | [external/repo/sub-directory.schema.json](external/repo/sub-directory.schema.json) |
-
 ## Schema Hierarchy
 
 * Sub-Directory `http://ns.adobe.com/adobecloud/core/1.0/sub-directory`
   * [Common Properties](common.schema.md) `http://ns.adobe.com/adobecloud/core/1.0`
   * [HAL Resource](../hal/hal.schema.md) `https://ns.adobe.com/xdm/external/hal/resource`
+
 
 ## Sub-Directory Example
 ```json

@@ -5,16 +5,16 @@
 https://ns.adobe.com/xdm/context/environment
 ```
 
-Information about the surrounding situation the event observation occurred in, specifically detailing transitory information such as the network or software versions. &gt; IMPORTANT: All values should be aligned with the [DeviceAtlas](https://deviceatlas.com) database licensed by Adobe. 
+Information about the surrounding situation the event observation occurred in, specifically detailing transitory information such as the network or software versions. > IMPORTANT: All values should be aligned with the [DeviceAtlas](https://deviceatlas.com) database licensed by Adobe. 
 
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [context/environment.schema.json](context/environment.schema.json) |
-
+| Can be instantiated | Yes | Stabilizing | Forbidden | Permitted | [context/environment.schema.json](context/environment.schema.json) |
 ## Schema Hierarchy
 
 * Environment `https://ns.adobe.com/xdm/context/environment`
   * [Browser Details](browserdetails.schema.md) `https://ns.adobe.com/xdm/context/browserdetails`
+
 
 ## Environment Example
 ```json
@@ -196,7 +196,7 @@ The numerical label assigned to a device participating in a computer network tha
 ## xdm:operatingSystem
 ### Operating System
 
-The name of the operating system used when the observation was made. This attribute should not contain any version information i.e. 10.5.3, but can contain *edition* designations such as &#39;Ultimate&#39;, or &#39;Professional&#39;.
+The name of the operating system used when the observation was made. This attribute should not contain any version information i.e. 10.5.3, but can contain *edition* designations such as 'Ultimate', or 'Professional'.
 
 `xdm:operatingSystem`
 * is optional

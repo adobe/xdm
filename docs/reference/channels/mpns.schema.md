@@ -10,12 +10,12 @@ Microsoft Push Notification Service
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Forbidden | Permitted | [channels/mpns.schema.json](channels/mpns.schema.json) |
-
 ## Schema Hierarchy
 
 * MPNS `https://ns.adobe.com/xdm/channels/mpns`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
+
 
 ## MPNS Example
 ```json

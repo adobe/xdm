@@ -13,11 +13,11 @@ Componentized pages are modular (consist of smaller content components), hyperli
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Forbidden | Permitted | [content/componentized-page.schema.json](content/componentized-page.schema.json) |
-
 ## Schema Hierarchy
 
 * Componentized Page `https://ns.adobe.com/xdm/content/componentized-page`
   * [Content](content.schema.md) `https://ns.adobe.com/xdm/content/content`
+
 
 ## Componentized Page Example
 ```json

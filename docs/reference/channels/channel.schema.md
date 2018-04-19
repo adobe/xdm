@@ -13,11 +13,11 @@ There are multiple experience channels, each with different constraints on how c
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Forbidden | Permitted | [channels/channel.schema.json](channels/channel.schema.json) |
-
 ## Schema Hierarchy
 
 * Experience Channel `https://ns.adobe.com/xdm/channels/channel`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+
 
 ## Experience Channel Example
 ```json

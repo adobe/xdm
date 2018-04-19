@@ -15,12 +15,12 @@ Additionally, this schema can include a property that describes the data source 
 
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | No | Experimental | Forbidden | Permitted | [context/enduserids.schema.json](context/enduserids.schema.json) |
-
+| Can be instantiated | No | Stabilizing | Forbidden | Permitted | [context/enduserids.schema.json](context/enduserids.schema.json) |
 ## Schema Hierarchy
 
 * End User IDs `https://ns.adobe.com/xdm/context/enduserids`
   * [Identity](identity.schema.md) `https://ns.adobe.com/xdm/context/identity`
+
 
 ## End User IDs Example
 ```json
@@ -54,6 +54,7 @@ Additionally, this schema can include a property that describes the data source 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [https://ns.adobe.com/experience/analytics](#https//ns.adobe.com/experience/analytics) | Identity | Optional | End User IDs (this schema) |
+| [https://ns.adobe.com/experience/campaign](#https//ns.adobe.com/experience/campaign) | Identity | Optional | End User IDs (this schema) |
 | [https://ns.adobe.com/experience/mcid](#https//ns.adobe.com/experience/mcid) | Identity | Optional | End User IDs (this schema) |
 | [https://ns.adobe.com/experience/tntid](#https//ns.adobe.com/experience/tntid) | Identity | Optional | End User IDs (this schema) |
 | `.+//.+` | reference | Pattern | End User IDs (this schema) |
@@ -70,6 +71,25 @@ Adobe Analytics Cloud extension to End User IDs.
 * defined in this schema
 
 ### https://ns.adobe.com/experience/analytics Type
+
+
+* [Identity](identity.schema.md) – `https://ns.adobe.com/xdm/context/identity`
+
+
+
+
+
+## https://ns.adobe.com/experience/campaign
+### Adobe Campaign End User IDs
+
+Adobe Campaign extension to End User IDs.
+
+`https://ns.adobe.com/experience/campaign`
+* is optional
+* type: Identity
+* defined in this schema
+
+### https://ns.adobe.com/experience/campaign Type
 
 
 * [Identity](identity.schema.md) – `https://ns.adobe.com/xdm/context/identity`

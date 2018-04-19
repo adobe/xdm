@@ -19,19 +19,19 @@
   "definitions": {
     "relationshipdescriptor": {
       "properties": {
-        "xdm:destSchema": {
+        "xdm:destinationSchema": {
           "title": "Destination Schema",
           "type": "string",
           "format": "uri",
           "description": "The destination schema this descriptor applies to"
         },
-        "xdm:destProperty": {
+        "xdm:destinationProperty": {
           "title": "Destination Property",
           "type": "string",
           "description":
             "When present, the property of the destination schema to which this descriptor applies. This value is a JSON Pointer, applied to an instance of an object described by 'xdm:destSchema'"
         },
-        "xdm:destItem": {
+        "xdm:destinationItem": {
           "title": "Destination Item",
           "description":
             "When present, the selector used to match a specific item in the array pointed to by destProperty",
@@ -39,7 +39,7 @@
             "https://ns.adobe.com/xdm/common/itemselector#/definitions/selector"
         }
       },
-      "required": ["xdm:destSchema"]
+      "required": ["xdm:destinationSchema"]
     }
   },
   "allOf": [

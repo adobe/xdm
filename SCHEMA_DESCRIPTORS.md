@@ -15,9 +15,9 @@ While schema descriptors can be used to define metadata about a single schema, t
 
 The following relationship types are defined by XDM:
 
-* `xdm:descriptorOneToOne`: describes a 1:1 relationship between a source schema and a destination schema
-* `xdm:descriptorOneToMany`: describes a 1:m relationship between a source schema and a destination schema
-* `xdm:descriptorManyToMany`: describes an m:n relationship between a source schema and a destination schema
+* `xdm:oneToOne`: describes a 1:1 relationship between a source schema and a destination schema
+* `xdm:oneToMany`: describes a 1:m relationship between a source schema and a destination schema
+* `xdm:manyToMany`: describes an m:n relationship between a source schema and a destination schema
 
 These relationships are defined in XDM using the `RelationshipDescriptor` schema.
 
@@ -41,6 +41,14 @@ A number of additional schema descriptors are defined by XDM:
 * `xdm:descriptorPrimaryKey`: allows a property other than `@id` to be flagged as the primary key for a schema
 * `xdm:descriptorInstantiable`: allows a schema to be flagged as 'instantiable', which may be used to differentiate schemas that define primary business objects versus supporting schemas intended to be embedded in another schema.
 
+## Embedding Schema Descriptors in a Schema
+
+The `SchemaDescriptor` schema is designed such that a descriptor can be fully defined as a standalone entity, or embedded in the schema it is describing. When embedded, a schema descriptor may be placed at the root of the schema (which is appropriate for a descriptor that applies to the whole schema) or placed on the sub-schema for a specific property (which is appropriate when the descriptor applies to a property).
+
+In some cases, a descriptor may describe a symmetric relationship. For example, an `xdm:oneToOne` relationship is true for both the source and the destination properties. In this case, it is recommended that descriptors be placed on both the source and the destination.
+
+Examples for each of these cases are shown below.
+
 ## Schema Descriptor Examples
 
 ### Example Relationship Descriptor
@@ -53,14 +61,17 @@ We have two schemas, which form a parent/child relationship. The first is parent
   "$id": "https://ns.adobe.com/xdm/example/parent",
   "title": "Parent",
   "type": "object",
-  "meta:descriptors": {
-    "@type": "xdm:descriptorOneToMany",
-    "xdm:sourcePropery": "@id",
-    "xdm:destSchema": "https://ns.adobe.com/xdm/example/child",
-    "xdm:destProperty": "xdm:parent"
-  },
   "properties": {
-    "@id": { "type": "string" }
+    "@id": {
+      "meta:descriptors": [
+        {
+          "@type": "xdm:oneToMany",
+          "xdm:destinationSchema": "https://ns.adobe.com/xdm/example/child",
+          "xdm:destinationProperty": "xdm:parent"
+        }
+      ],
+      "type": "string"
+    }
   }
 }
 ```
@@ -75,23 +86,32 @@ The second is child.json:
   "type": "object",
   "properties": {
     "@id": { "type": "string" },
-    "xdm:parent": { "type": "string" }
+    "xdm:parent": {
+      "meta:descriptors": [
+        {
+          "@type": "xdm:manyToOne",
+          "xdm:destinationSchema": "https://ns.adobe.com/xdm/example/parent",
+          "xdm:destinationProperty": "@id"
+        }
+      ],
+      "type": "string"
+    }
   }
 }
 ```
 
 The source schema in this example is Parent, which contains a single relationship descriptor describing a one-to-many relationship between objects of schema Parent to objects of schema Child.
 
-Note that the descriptor does not contain an `@id` or `xdm:sourceSchema property`, which are optional when the descriptor is embedded directly in the schema. If the relationship descriptor were to be written externally, it would look like this:
+The above example shows how a descriptor may be embedded in the schema being described, directly on the property where it applies. The example also shows the reciprocal relationship between the parent and child entities. If we were to define this as a stand-alone descriptor, it would look like this:
 
 ```json
 {
   "@id": "https://example.com/descriptors/1",
-  "@type": "xdm:descriptorOneToMany",
+  "@type": "xdm:oneToMany",
   "xdm:sourceSchema": "https://ns.adobe.com/xdm/example/parent",
   "xdm:sourcePropery": "@id",
-  "xdm:destSchema": "https://ns.adobe.com/xdm/example/child",
-  "xdm:destProperty": "xdm:parent"
+  "xdm:destinationSchema": "https://ns.adobe.com/xdm/example/child",
+  "xdm:destinationProperty": "xdm:parent"
 }
 ```
 
@@ -109,25 +129,23 @@ We have a schema that describes a customer record, which contains an customer ID
   "type": "object",
   "properties": {
     "@id": { "type": "string" },
-    "https://ns.example.com/xdm/customerID": { "type": "string" }
+    "https://ns.example.com/xdm/customerID": {
+      "meta:descriptors": [
+        {
+          "@type": "xdm:identityContext",
+          "xdm:namespace": "https://id-server.adobe.com/1234",
+          "xdm:property": "code"
+        }
+      ],
+      "type": "string"
+    }
   }
 }
 ```
 
-The customer ID is present, but does not contain other information needed to ensure the identity is fully described, such as the ID namespace, or whether this value represents the application's native ID for this customer or if this is an ID given my some external system. We can use an identity descriptor to provide the additional details:
+The customer ID is present, but does not contain other information needed to ensure the identity is fully described, such as the ID namespace, or whether this value represents the application's native ID for this customer or if this is an ID given my some external system.
 
-```json
-{
-  "@id": "https://example.com/descriptors/2",
-  "@type": "xdm:descriptorIdentity",
-  "xdm:sourceSchema": "https://ns.example.com/xdm/customerrecord",
-  "xdm:sourcePropery": "https://ns.example.com/xdm/customerID",
-  "xdm:namespace": "https://id-server.adobe.com/1234",
-  "xdm:property": "code"
-}
-```
-
-The descriptor signals the namespace the ID is managed under (in this case, a fictitious service at id-server.adobe.com), and also signals that the value is a "code", meaning it is the externally managed handle for some ID managed by the namespace.
+We can use an identity descriptor to provide the additional details. The descriptor signals the namespace the ID is managed under (in this case, a fictitious service at id-server.adobe.com), and also signals that the value is a "code", meaning it is the externally managed handle for some ID managed by the namespace.
 
 ### Example Primary Key Descriptor
 
@@ -140,7 +158,12 @@ We have a schema that describes a sales order taken from an external sales manag
   "title": "SalesOrder",
   "type": "object",
   "properties": {
-    "https://ns.example.com/xdm/txID": { "type": "string" },
+    "https://ns.example.com/xdm/txID": {
+      "meta:descriptors": [{
+        "@type": "xdm:xdm:primaryKey"
+      },
+      "type": "string"
+      }],
     "https://ns.example.com/xdm/confirmationNum": { "type": "string" },
     "https://ns.example.com/xdm/customerID": { "type": "string" },
     "https://ns.example.com/xdm/productID": { "type": "string" }
@@ -148,18 +171,7 @@ We have a schema that describes a sales order taken from an external sales manag
 }
 ```
 
-It is not obvious which field is best suited to be the primary key for this data. We can use a primary key descriptor to clear this up:
-
-```json
-{
-  "@id": "https://example.com/descriptors/3",
-  "@type": "xdm:descriptorPrimaryKey",
-  "xdm:sourceSchema": "https://ns.example.com/xdm/salesorder",
-  "xdm:sourcePropery": "https://ns.example.com/xdm/txID"
-}
-```
-
-The descriptor signals that the transaction identifier at 'txID' is the appropriate key to be used for this data.
+It is not obvious which field is best suited to be the primary key for this data. The descriptor signals that the transaction identifier at 'txID' is the appropriate key to be used for this data.
 
 ### Example of Defining a New Schema Descriptor
 
@@ -199,7 +211,7 @@ Next, they define an extension to `SchemaDescriptor` containing the in-use flag:
         "https://ns.adobe.com/xdm/common/schemadescriptor#/definitions/descriptor"
     },
     {
-      "$ref": "#/definitions/inuseydescriptor"
+      "$ref": "#/definitions/inusedescriptor"
     }
   ]
 }

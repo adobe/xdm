@@ -1,6 +1,6 @@
 {
   "@id": "https://example.com/descriptors/4",
-  "@type": "xdm:descriptorIdentity",
+  "@type": "xdm:identityContext",
   "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile",
   "xdm:sourceProperty": "xdm:identities",
   "xdm:sourceItem": {

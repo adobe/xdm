@@ -159,9 +159,11 @@ We have a schema that describes a sales order taken from an external sales manag
   "type": "object",
   "properties": {
     "https://ns.example.com/xdm/txID": {
-      "meta:descriptors": [{
-        "@type": "xdm:xdm:primaryKey"
-      }],
+      "meta:descriptors": [
+        {
+          "@type": "xdm:xdm:primaryKey"
+        }
+      ],
       "type": "string"
     },
     "https://ns.example.com/xdm/confirmationNum": { "type": "string" },

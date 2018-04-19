@@ -235,6 +235,7 @@ The namespace of the service that is used to identify the device type.
 | Value | Description |
 |-------|-------------|
 | `https://ns.adobe.com/xdm/external/deviceatlas` | Device Atlas |
+| `https://ns.adobe.com/xdm/external/adobecampaign` | Adobe Campaign |
 
 
 

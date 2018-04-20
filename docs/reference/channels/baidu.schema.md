@@ -10,12 +10,12 @@ Baidu Cloud Push Service
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Forbidden | Permitted | [channels/baidu.schema.json](channels/baidu.schema.json) |
-
 ## Schema Hierarchy
 
 * Baidu `https://ns.adobe.com/xdm/channels/baidu`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
+
 
 ## Baidu Example
 ```json

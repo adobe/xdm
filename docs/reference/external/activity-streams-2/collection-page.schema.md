@@ -10,13 +10,13 @@ Used to represent distinct subsets of items from a `Collection`. Refer to the [A
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Forbidden | Permitted | [external/activity-streams-2/collection-page.schema.json](external/activity-streams-2/collection-page.schema.json) |
-
 ## Schema Hierarchy
 
 * Collection Page `https://ns.adobe.com/xdm/external/activity-streams-2/collection-page`
   * [Collection](collection.schema.md) `https://ns.adobe.com/xdm/external/activity-streams-2/collection`
   * [Link](link.schema.md) `https://ns.adobe.com/xdm/external/activity-streams-2/link`
   * [Collection Page](collection-page.schema.md) `https://ns.adobe.com/xdm/external/activity-streams-2/collection-page`
+
 
 ## Collection Page Example
 ```json

@@ -9,7 +9,7 @@ Detail information related to the browser
 
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [context/browserdetails.schema.json](context/browserdetails.schema.json) |
+| Can be instantiated | Yes | Stabilizing | Forbidden | Permitted | [context/browserdetails.schema.json](context/browserdetails.schema.json) |
 
 ## Browser Details Example
 ```json
@@ -69,7 +69,7 @@ An IETF Language Tag (RFC 5646).
 ## xdm:cookiesEnabled
 ### Allows Cookies
 
-The current user agent settings allow for the writing of cookies.&#39;
+The current user agent settings allow for the writing of cookies.'
 
 `xdm:cookiesEnabled`
 * is optional

@@ -10,11 +10,11 @@ Schema for the Access Control Policy of a resource
 | Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|-------------------|-----------------------|------------|
 | Can be instantiated | Yes | Experimental | Forbidden | Permitted | [external/repo/accesscontrolpolicy.schema.json](external/repo/accesscontrolpolicy.schema.json) |
-
 ## Schema Hierarchy
 
 * Access Control Policy `https://ns.adobe.com/xdm/external/repo/accesscontrolpolicy`
   * [Access Control Entry](accesscontrolentry.schema.md) `https://ns.adobe.com/xdm/external/repo/accesscontrolentry`
+
 
 ## Access Control Policy Example
 ```json

@@ -7067,7 +7067,7 @@
         },
         "https://ns.adobe.com/experience/analytics/session/web": {
           "title": "Session Entry Web",
-          "$ref": "https://ns.adobe.com/xdm/context/web",
+          "$ref": "https://ns.adobe.com/xdm/context/webinfo",
           "description":
             "The information related to web page, link, and referrer at the entry of this session."
         },
@@ -7081,7 +7081,7 @@
         },
         "https://ns.adobe.com/experience/analytics/end-user/first-web": {
           "title": "End User First Web Details",
-          "$ref": "https://ns.adobe.com/xdm/context/web",
+          "$ref": "https://ns.adobe.com/xdm/context/webinfo",
           "description":
             "The information related to web page, link, and referrer from the first ExperienceEvent for this end-user."
         }

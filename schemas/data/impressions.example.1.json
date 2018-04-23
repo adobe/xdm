@@ -1,6 +1,6 @@
 {
-  "schema:name": "advertising metric: impressions",
-  "@id": "https://ns.adobe.com/xdm/data/metrics/advertising/impressions",
+  "schema:name": "Advertisement metric: impressions",
+  "@id": "https://ns.adobe.com/xdm/data/metrics/advertisement/impressions",
   "xdm:measurement": "count",
   "xdm:unit": null
 }

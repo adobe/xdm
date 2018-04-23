@@ -12,11 +12,6 @@
   "description": "The entites related to direct communictions to known users.",
   "definitions": {
     "directmarketing": {
-      "patternProperties": {
-        ".+://.+": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure"
-        }
-      },
       "properties": {
         "https://ns.adobe.com/xdm/data/metrics/direct-marketing/bounces": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
@@ -55,8 +50,7 @@
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Asynchronous message (email, SMS, MMS etc) was not dispatched due to cancellation or expiration of the marketing activity."
         }
-      },
-      "additionalProperties": false
+      }
     }
   },
   "allOf": [

@@ -30,11 +30,6 @@
     "xdm:screenWidth": 375,
     "xdm:colorDepth": 16777216
   },
-  "xdm:application": {
-    "xdm:id": "Abc123",
-    "xdm:name": "facebook",
-    "xdm:version": "153.0"
-  },
   "xdm:channel": {
     "@id": "https://ns.adobe.com/xdm/channels/facebook-feed",
     "@type": "https://ns.adobe.com/xdm/channel-types/social"

@@ -10,5 +10,8 @@
   "xdm:webReferrer": {
     "xdm:URL": "https://www.some-adserver.com",
     "xdm:referrerType": "external"
+  },
+  "https://ns.adobe.com/xdm/data/metrics/web/page-views": {
+    "xdm:value": 1.0
   }
 }

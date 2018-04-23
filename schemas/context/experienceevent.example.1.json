@@ -47,17 +47,6 @@
     "xdm:operatingSystemVersion": "10.13",
     "xdm:connectionType": "cable"
   },
-  "xdm:metrics": {
-    "https://ns.adobe.com/xdm/data/metrics/commerce/purchases": {
-      "xdm:value": 1.0,
-      "xdm:unit": null
-    },
-    "https://ns.adobe.com/xdm/data/metrics/web/page-views": {
-      "@type": "https://ns.adobe.com/xdm/data/metrics/web/page-views",
-      "xdm:value": 1.0,
-      "xdm:unit": null
-    }
-  },
   "xdm:productListItems": [
     {
       "xdm:SKU": "1002352692",

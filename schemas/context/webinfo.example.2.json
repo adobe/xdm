@@ -15,5 +15,8 @@
   "xdm:webReferrer": {
     "xdm:URL": "https://www.example.com/products",
     "xdm:type": "internal"
+  },
+  "https://ns.adobe.com/xdm/data/metrics/web/link-clicks": {
+    "xdm:value": 1.0
   }
 }

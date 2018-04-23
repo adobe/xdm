@@ -80,50 +80,15 @@
           "description":
           "Impression(s) of an advertisement to an end user with viewablility library instrumented."
         },
-        "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/measured-ad-height": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-          "Height in pixels of ad as measured by a viewability library."
-        },
         "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/measured-ad-not-visible": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
           "Indicator of ad not being visible as measured by a viewability library at impression time."
         },
-        "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/measured-ad-width": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-          "Width in pixels of ad as measured by a viewability library."
-        },
         "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/measured-muted": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
           "Indicator of ad being muted as measured by a viewability library at impression time."
-        },
-        "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/measured-percent-viewable": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-          "Percent of ad that is viewable as measured by a viewability library at impression time."
-        },
-        "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/measured-player-volume": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-          "Volume of ad player as measured by a viewability library at impression time."
-        },
-        "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/measured-viewport-height": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-          "Height in pixels of window as measured by a viewability library."
-        },
-        "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/measured-viewport-width": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-          "Width in pixels of window as measured by a viewability library."
-        },
-        "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/measured-window-depth": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-          "Number of iframes ad is inside of as measured by a viewability library."
         },
         "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/measured-window-inactive": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",

@@ -43,6 +43,19 @@
       "xdm:viewportHeight": 900,
       "xdm:viewportWidth": 1680
     },
+    "xdm:viewabilityDetails": {
+      "xdm:windowDepth": 0,
+      "xdm:viewportHeight": 1250,
+      "xdm:viewportWidth": 1600,
+      "xdm:adHeight": 250,
+      "xdm:adWidth": 300,
+      "xdm:playerVolume": 85,
+      "xdm:viewabilityInstrumented": true,
+      "xdm:version": "1",
+      "xdm:viewable": true,
+      "xdm:activeWindow": true,
+      "xdm:percentViewable": 89
+    },
     "xdm:operatingSystem": "MAC OS",
     "xdm:operatingSystemVersion": "10.13",
     "xdm:connectionType": "cable"

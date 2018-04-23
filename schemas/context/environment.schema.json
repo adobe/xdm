@@ -44,11 +44,29 @@
           "description":
             "The name of the operating system used when the observation was made. This attribute should not contain any version information i.e. 10.5.3, but can contain *edition* designations such as 'Ultimate', or 'Professional'."
         },
+        "xdm:operatingSystemMinor": {
+          "title": "Operating System (Minor)",
+          "type": "string",
+          "description":
+          "The full name of the operating system used when the observation was made. This attribute should not contain any version information i.e. 10.5.3, but can contain *edition* designations such as 'Ultimate', or 'Professional'."
+        },
         "xdm:operatingSystemVersion": {
           "title": "Operating System Version",
           "type": "string",
           "description":
-            "The full version identifier for the operating system used when the observation was made. Versions are generally numerically composed, but may be in a vendor defined format."
+            "The version identifier for the operating system used when the observation was made. Versions are generally numerically composed, but may be in a vendor defined format."
+        },
+        "xdm:operatingSystemVersionMinor": {
+          "title": "Operating System Version (Minor)",
+          "type": "string",
+          "description":
+          "The full version identifier for the operating system used when the observation was made. Versions are generally numerically composed, but may be in a vendor defined format."
+        },
+        "xdm:operatingSystemVendor": {
+          "title": "Operating System Vendor",
+          "type": "string",
+          "description":
+          "The name of the operating system vendor used when the observation was made."
         },
         "xdm:colorDepth": {
           "title": "Color Depth",

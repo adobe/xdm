@@ -105,6 +105,11 @@
           "description":
           "Indicator of viewability library not being able to properly execute measurements due to non-predefined error."
         },
+        "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/viewable-impressions": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+          "Impression(s) of an advertisement to an end user deemed viewable at start time by a viewability library."
+        },
         "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/viewable-completes": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":

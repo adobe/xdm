@@ -14,11 +14,11 @@
     "advertisementDetails": {
       "type": "object",
       "properties": {
-        "advertiserId": {
-          "title": "Advertiser ID",
+        "adId": {
+          "title": "Ad ID",
           "type": "integer",
           "description":
-          "Unique identifier for the advertiser this event is associated with."
+          "Unique identifier for the ad asset this event is associated with."
         },
         "runtime": {
           "title": "Runtime Type",

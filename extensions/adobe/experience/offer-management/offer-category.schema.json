@@ -31,12 +31,6 @@
           "type": "string",
           "title": "Expression",
           "description": "Tag rule"
-        },
-        "xdm:cappingConstraint": {
-          "$ref":
-            "https://ns.adobe.com/experience/offer-management/capping-constraint",
-          "title": "Capping Constraint",
-          "description": "Offer Capping Constraint"
         }
       }
     }

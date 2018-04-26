@@ -33,7 +33,7 @@
         "conversionMetric": {
           "title": "Conversion Metric",
           "type": "string",
-          "description": "A client-specific calculation of the metric they care about (and are measuring KPIs against) for conversions."
+          "description": "A client-specific calculation of the metric they care about (and are measuring KPIs against) for conversions.",
           "examples": "order_value, installs, whitepapers_downloaded."
         }
       }

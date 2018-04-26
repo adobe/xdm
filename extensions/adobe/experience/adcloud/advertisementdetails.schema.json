@@ -23,20 +23,20 @@
         "runtime": {
           "title": "Runtime Type",
           "type": "string",
-          "description": "The runtime of the ad unit itself, not the runtime of the browser or the operating system."
-          "example": "unknown, HTML5"
+          "description": "The runtime of the ad unit itself, not the runtime of the browser or the operating system.",
+          "examples": "unknown, HTML5"
         },
         "class": {
           "title": "Ad Class",
           "type": "string",
           "description": "Ad class of driving event.",
-          "example": "display, video, social"
+          "examples": "display, video, social"
         },
         "adUnitType": {
           "title": "Ad Unit Type",
           "type": "string",
           "description": "Unique identifier for the literal piece of code driving display of the ad in a browser/device.",
-          "example": ". linearVideo, interactiveVideo, banner, richMediaBanner, newsFeedVideo, newsFeedDisplay, HTML5, inPageVideo, inPageDisplay, facebook, twitter, linearTv, vod"
+          "examples": "linearVideo, interactiveVideo, banner, richMediaBanner, newsFeedVideo, newsFeedDisplay, HTML5, inPageVideo, inPageDisplay, facebook, twitter, linearTv, vod"
         },
         "asset": {
           "title": "Asset Details",

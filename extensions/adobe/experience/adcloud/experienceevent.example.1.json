@@ -8,8 +8,7 @@
   "xdm:timestamp": "2018-04-25T10:56:00+00:00",
   "xdm:endUserIDs": {
     "https://ns.adobe.com/experience/adcloud": {
-      "@id":
-      "https://data.adobe.io/entities/identity/1233ce17-20e0-4a2c-8198-2a77fd60cf4d",
+      "@id": "https://data.adobe.io/entities/identity/1233ce17-20e0-4a2c-8198-2a77fd60cf4d",
       "xdm:namespace": {
         "@id": "https://data.adobe.io/entities/namespace/123456",
         "xdm:code": "123456"
@@ -94,7 +93,7 @@
       "xdm:dmaid": "99"
     }
   },
-  "xdm:web":{
+  "xdm:web": {
     "xdm:webPageView": {
       "xdm:URL": "https://www.example.com"
     },
@@ -108,9 +107,8 @@
     "xdm:manufacturer": "Apple",
     "xdm:model": "iPhone 6"
   },
-
   "xdm:metrics": {
-      "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/viewable-impressions": {
+    "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/viewable-impressions": {
       "xdm:value": 1.0,
       "xdm:unit": null
     }

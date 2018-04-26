@@ -49,6 +49,9 @@
   },
   "allOf": [
     {
+      "$ref": "https://ns.adobe.com/xdm/context/experienceevent#/definitions/experienceevent"
+    },
+    {
       "$ref": "#/definitions/experienceevent"
     }
   ],

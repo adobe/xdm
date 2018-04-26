@@ -16,12 +16,22 @@
         "xdm:name": {
           "title": "Name",
           "type": "string",
-          "description": "The application or browser version."
+          "description": "The application or browser name."
+        },
+        "xdm:vendor": {
+          "title": "Vendor",
+          "type": "string",
+          "description": "The application or browser vendor."
         },
         "xdm:version": {
           "title": "Version",
           "type": "string",
           "description": "The application or browser version."
+        },
+        "xdm:versionMinor": {
+          "title": "Version (Minor)",
+          "type": "string",
+          "description": "The application or browser minor."
         },
         "xdm:userAgent": {
           "title": "User Agent",

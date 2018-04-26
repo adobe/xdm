@@ -1,0 +1,47 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/experience/adcloud/conversiondetails",
+  "title": "Conversion Detail",
+  "description":
+  "Adobe AdCloud Ad Conversion Details",
+  "definitions": {
+    "conversionDetails": {
+      "type": "object",
+      "properties": {
+        "attributedEventType": {
+          "title": "Attributed Event Type",
+          "type": "string",
+          "description":
+          "Event Type Attributed to Conversion Event."
+        },
+        "conversionObjective": {
+          "title": "Conversion Objective",
+          "type": "string",
+          "description": "Identifier conversion event."
+        },
+        "eventUid": {
+          "title": "Event unique ID",
+          "type": "integer",
+          "description": "Unique identifier for conversion event attributed to event."
+        },
+        "conversionMetric": {
+          "title": "Conversion Metric",
+          "type": "string",
+          "description": "A client-specific calculation of the metric they care about (and are measuring KPIs against) for conversions.",
+          "examples": "order_value, installs, whitepapers_downloaded."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/conversionDetails"
+    }
+  ]
+}

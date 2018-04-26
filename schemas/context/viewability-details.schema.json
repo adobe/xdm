@@ -1,0 +1,102 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/viewability-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Viewability",
+  "type": "object",
+  "description":
+  "Description of viewability measured properties of an advertisement",
+  "definitions": {
+    "viewabilityDetails": {
+      "properties": {
+        "xdm:windowDepth": {
+          "title": "Window Depth",
+          "type": "integer",
+          "description":
+          "The number of iFrames the ad is displayed inside of.",
+          "minimum": 0
+        },
+        "xdm:viewportHeight": {
+          "title": "Viewport Height",
+          "type": "integer",
+          "description":
+          "The number of vertical pixels of the window the ad is displayed in as measured by the viewability library.",
+          "minimum": 0
+
+        },
+        "xdm:viewportWidth": {
+          "title": "Viewport Width",
+          "type": "integer",
+          "description":
+          "The number of horizontal pixels of the window the ad is displayed in as measured by the viewability library.",
+          "minimum": 0
+        },
+        "xdm:adHeight": {
+          "title": "Ad Height",
+          "type": "integer",
+          "description":
+          "The number of vertical pixels of the player as measured by the viewability library. This can be larger than the size of the ad if the player has extra controls or thumbnails.",
+          "minimum": 0
+        },
+        "xdm:adWidth": {
+          "title": "Ad Width",
+          "type": "integer",
+          "description":
+          "The number of horizontal pixels of the player as measured by the viewability library. This can be larger than the size of the ad if the player has extra controls or thumbnails.",
+          "minimum": 0
+        },
+        "xdm:playerVolume": {
+          "title": "Player Volume",
+          "type": "integer",
+          "description":
+          "The volume of the player was at video start.",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "xdm:viewabilityInstrumented": {
+          "title": "Viewabiltity Measurement Instrumented",
+          "type": "boolean",
+          "description":
+          "Whether or not viewability was enabled on for this ad instance."
+        },
+        "xdm:version": {
+          "title": "Viewabiltity Library Version",
+          "type": "string",
+          "description":
+          "The version of the library instrumented to measure viewability metrics."
+        },
+        "xdm:viewable": {
+          "title": "Viewable Ad",
+          "type": "boolean",
+          "description":
+          "Indicates whether ad was measured as viewable during ad play."
+        },
+        "xdm:activeWindow": {
+          "title": "Active Window",
+          "type": "boolean",
+          "description":
+          "Indicates whether ad was shown on active window on users' browser."
+        },
+        "xdm:percentViewable": {
+          "title": "Percent Viewable",
+          "type": "integer",
+          "description":
+          "Percent of pixels in the ad deemed viewable at measurement time.",
+          "minimum": 0,
+          "maximum": 100
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/viewabilityDetails"
+    }
+  ],
+  "meta:status": "experimental"
+}

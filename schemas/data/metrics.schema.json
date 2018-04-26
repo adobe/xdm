@@ -42,25 +42,93 @@
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Graceful termination(s) of an application."
         },
+        "https://ns.adobe.com/xdm/data/metrics/advertising/completes": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "A digital video ad has played through it's entirety."
+        },
+        "https://ns.adobe.com/xdm/data/metrics/advertising/conversion/conversions": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "A pre-defined action on a website triggered a conversion event to be fired"
+        },
         "https://ns.adobe.com/xdm/data/metrics/application/crashes": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
             "Triggered when the application does not exit gracefully. Event is sent on application launch after a crash."
+        },
+        "https://ns.adobe.com/xdm/data/metrics/advertising/first-quartiles": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+          "A digital video ad has played through 25% of it's duration at normal speed."
         },
         "https://ns.adobe.com/xdm/data/metrics/application/featureusages": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
             "Activation(s) of an application feature that is being measured."
         },
+        "https://ns.adobe.com/xdm/data/metrics/advertising/impressions": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+          "Impression(s) of an advertisement to an end user with the potential of being viewed."
+        },
         "https://ns.adobe.com/xdm/data/metrics/application/installs": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
             "Install of an application on a device. Triggered on first launch after install."
         },
-        "https://ns.adobe.com/xdm/data/metrics/advertising/impressions": {
+        "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/instrumented-impressions": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
-            "Impression(s) of an advertisement to an end user with the potential of being viewed."
+          "Impression(s) of an advertisement to an end user with viewablility library instrumented."
+        },
+        "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/measured-ad-not-visible": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+          "Indicator of ad not being visible as measured by a viewability library at impression time."
+        },
+        "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/measured-muted": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+          "Indicator of ad being muted as measured by a viewability library at impression time."
+        },
+        "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/measured-window-inactive": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+          "Indicator of ad being displayed in an inactive window as measured by a viewability library at impression time."
+        },
+        "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/unmeasurable-iframe": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+          "Indicator of viewability library not being able to properly execute measurements due to ad being displayed inside an iframe."
+        },
+        "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/unmeasurable-other": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+          "Indicator of viewability library not being able to properly execute measurements due to non-predefined error."
+        },
+        "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/viewable-impressions": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+          "Impression(s) of an advertisement to an end user deemed viewable at start time by a viewability library."
+        },
+        "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/viewable-completes": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+          "Completion(s) of an advertisement to an end user deemed viewable at completion time by a viewability library."
+        },
+        "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/viewable-first-quartiles": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+          "First quartile(s) of an advertisement to an end user deemed viewable at first quartile of play by a viewability library."
+        },
+        "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/viewable-midpoints": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+          "Midpoint(s) of an advertisement to an end user deemed viewable at midpoint of play by a viewability library."
+        },
+        "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/viewable-third-quartiles": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+          "Third quartile(s) of an advertisement to an end user deemed viewable at third quartile of play by a viewability library."
         },
         "https://ns.adobe.com/xdm/data/metrics/web/link-clicks": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
@@ -70,6 +138,11 @@
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
             "Launch of an application. Triggered on every run, including crashes and installs. Also triggered on a resume from background when the lifecycle session timeout has been exceeded."
+        },
+        "https://ns.adobe.com/xdm/data/metrics/advertising/midpoint": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+          "A digital video ad has played through 50% of it's duration at normal speed."
         },
         "https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
@@ -128,6 +201,11 @@
           "description":
             "Asynchronous message(s) (email, SMS, MMS etc) have been dispatched to a person's account/address/device."
         },
+        "https://ns.adobe.com/xdm/data/metrics/advertising/starts": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+          "A digital video ad has started playing."
+        },
         "https://ns.adobe.com/xdm/data/metrics/application/upgrades": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
@@ -141,6 +219,11 @@
         "https://ns.adobe.com/xdm/data/metrics/direct-marketing/opens": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "The direct marketing message (email, SMS, Push Notifications etc) has been opened/swyped/touched by the recipient."
+        },
+        "https://ns.adobe.com/xdm/data/metrics/advertising/third-quartiles": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+          "A digital video ad has played through 75% of it's duration at normal speed."
         },
         "https://ns.adobe.com/xdm/data/metrics/direct-marketing/unsubscriptions": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",

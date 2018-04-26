@@ -94,9 +94,9 @@
           "title": "Eligibility Rule",
           "description": "Offer eligibility rule"
         }
-      },
-      "required": ["xdm:rank", "xdm:cappingConstraint"]
-    }
+      }
+    },
+    "required": ["xdm:rank", "xdm:cappingConstraint"]
   },
   "allOf": [
     {

@@ -32,9 +32,9 @@
                 "https://ns.adobe.com/experience/offer-management/content/html-content": "HTML",
                 "https://ns.adobe.com/experience/offer-management/content/image-content": "Image"
               }
-            },
-            "required": ["@type"]
-          }
+            }
+          },
+          "required": ["@type"]
         },
         {
           "oneOf": [

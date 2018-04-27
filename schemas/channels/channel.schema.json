@@ -50,7 +50,9 @@
               "Instant Messaging",
             "https://ns.adobe.com/xdm/channel-types/email": "E-Mail",
             "https://ns.adobe.com/xdm/channel-types/offline":
-              "Non-Digital experience channels"
+              "Non-Digital experience channels",
+            "https://ns.adobe.com/xdm/channel-types/application":
+              "Desktop Applications"
           }
         },
         "xdm:contentTypes": {

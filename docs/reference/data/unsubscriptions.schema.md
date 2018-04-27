@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/data/metrics/direct-marketing/unsubscriptions
 
 The direct-marketing metric `unsubscriptions` describes the number of times the recipients of direct marketing messages (email, newsletters, etc) have opted out from receiving them.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [data/unsubscriptions.schema.json](data/unsubscriptions.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [data/unsubscriptions.schema.json](data/unsubscriptions.schema.json) |
 
 ## unsubscriptions Example
 ```json

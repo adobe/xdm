@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/external/repo/accesscontrolpolicy
 
 Schema for the Access Control Policy of a resource
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [external/repo/accesscontrolpolicy.schema.json](external/repo/accesscontrolpolicy.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/repo/accesscontrolpolicy.schema.json](external/repo/accesscontrolpolicy.schema.json) |
 ## Schema Hierarchy
 
 * Access Control Policy `https://ns.adobe.com/xdm/external/repo/accesscontrolpolicy`

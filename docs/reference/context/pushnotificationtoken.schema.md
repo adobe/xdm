@@ -11,9 +11,9 @@ application notifications over notification services like the Apple Push
 Notification service.
 
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Stabilizing | Forbidden | Permitted | [context/pushnotificationtoken.schema.json](context/pushnotificationtoken.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/pushnotificationtoken.schema.json](context/pushnotificationtoken.schema.json) |
 ## Schema Hierarchy
 
 * Push Notification Token `https://ns.adobe.com/xdm/context/pushnotificationtoken`

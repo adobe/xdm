@@ -13,9 +13,9 @@ For easier identification, metrics have a name and a unique URI that can be used
 Through XDM's extensibility mechanism, new metrics can be defined by extending `Metric`.
 
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [data/metric.schema.json](data/metric.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [data/metric.schema.json](data/metric.schema.json) |
 
 ## Metric Example
 ```json

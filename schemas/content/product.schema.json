@@ -5,10 +5,11 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/context/product",
+  "$id": "https://ns.adobe.com/xdm/content/product",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Product",
   "type": "object",
+  "meta:extensible": true,
   "description":
     "XDM product variant, master product and key attributes of product in the product catalog.",
   "definitions": {
@@ -37,21 +38,14 @@
           "type": "string",
           "description": "The localized description of the product."
         },
-        "xdm:category": {
+        "xdm:categories": {
           "title": "Category",
-          "type": "string",
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
           "description":
-            "Primary categorization (category) name of the Master/variant."
-        },
-        "xdm:department": {
-          "title": "Department",
-          "type": "string",
-          "description": "Primary department the product is associated with."
-        },
-        "xdm:brand": {
-          "title": "Brand",
-          "type": "string",
-          "description": "Brand of the Master/Variant products."
+            "List of category ids of the product/variant."
         },
         "xdm:masterProductID": {
           "title": "Master Product Identifier",
@@ -76,58 +70,67 @@
           "type": "string",
           "description": "The description of the product."
         },
-        "xdm:fabrication": {
-          "title": "Fabrication",
-          "type": "string",
-          "description": "Primary material the product is constructed with."
-        },
-        "xdm:gender": {
-          "title": "Gender",
-          "type": "string",
-          "description": "Gender the product is marketed to.",
-          "meta:enum": {
-            "male": "For men",
-            "female": "For women",
-            "unisex": "For both men and women",
-            "unknown": "Unknown"
-          }
-        },
-        "xdm:size": {
-          "title": "Size",
-          "type": "number",
-          "description": "Standard product size for the product."
-        },
-        "xdm:unitOfMeasure": {
-          "title": "Unit of Measure",
-          "type": "string",
+        "xdm:prices": {
+          "title": "Prices",
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "properties": {
+              "currency": {
+                "title": "Currency Code",
+                "type": "string",
+                "examples": ["USD", "EUR"],
+                "pattern": "^[A-Z]{3}$",
+                "description":
+                  "The ISO 4217 alphabetic currency code used for cost and pricing."
+              },
+              "amount": {
+                "title": "Amount",
+                "type": "number",
+                "description":
+                  "The amount value for that price."
+              },
+              "type": {
+                "title": "Price",
+                "type": "string",
+                "examples": ["Sales Price", "MSRP", "Net Price"],
+                "description":
+                  "The price type."
+              }
+            }
+          },
           "description":
-            "Standard unit of measure of the variant. Denotes the units for the size measurement."
+            "The prices for this product. In the `currencyCode` currency."
         },
-        "xdm:countryOfOrigin": {
-          "title": "Country of Origin",
-          "type": "string",
-          "pattern": "^[A-Z]{2}$",
+        "xdm:assets": {
+          "title": "Assets",
+          "type": "array",
+          "items": {
+            "$ref":
+              "https://ns.adobe.com/xdm/assets/asset#/definitions/asset"
+          },
           "description":
-            "The two-character [ISO 3166-1 alpha-2](https://datahub.io/core/country-list) code for the country of origin of the product as defined by customs requirements."
+            "List of assets associated with this product/variant."
         },
-        "xdm:COGS": {
-          "title": "Cost of Good Sold",
-          "type": "number",
-          "description": "Cost of Good Sold. In the `currencyCode` currency."
-        },
-        "xdm:listPrice": {
-          "title": "List Price",
-          "type": "number",
+        "xdm:attributes": {
+          "title": "Attributes",
+          "type": "array",
+          "items": {
+            "$ref":
+              "https://ns.adobe.com/xdm/content/product-attribute#/definitions/attribute"
+          },
           "description":
-            "Default price of the product before sales and discounting. In the `currencyCode` currency."
+            "List of attributes associated with this product/variant."
         },
-        "xdm:currencyCode": {
-          "title": "Currency Code",
-          "type": "string",
-          "examples": ["USD", "EUR"],
-          "pattern": "^[A-Z]{3}$",
+        "xdm:variants": {
+          "title": "Product Variants",
+          "type": "array",
+          "items": {
+            "$ref":
+              "https://ns.adobe.com/xdm/content/product#/definitions/product"
+          },
           "description":
-            "The ISO 4217 alphabetic currency code used for cost and pricing, including `listPrice` and `COGS`."
+            "List of product variants belonging to this product."
         },
         "xdm:originalSaleDate": {
           "title": "Original Sale Date",
@@ -155,16 +158,6 @@
           "type": "string",
           "description":
             "The URL for the primary Product View of the product variant page."
-        },
-        "xdm:manufacturerName": {
-          "title": "Manufacturer Name",
-          "type": "string",
-          "description": "Manufacturer of the product."
-        },
-        "xdm:supplierName": {
-          "title": "Supplier Name",
-          "type": "string",
-          "description": "The distributor of the product."
         }
       }
     }

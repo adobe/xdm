@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/context/subscription
 
 Subscriptions are licensed entitlements to software, services or goods that are utilized in a time or usage based way.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [context/subscription.schema.json](context/subscription.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/subscription.schema.json](context/subscription.schema.json) |
 ## Schema Hierarchy
 
 * Subscription `https://ns.adobe.com/xdm/context/subscription`

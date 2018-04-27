@@ -9,9 +9,9 @@ The transient circumstances related to the place or physical location of the obs
 Examples include location specific information such as weather, local time, traffic, day of the week, workday vs. holiday, working hours.
 
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [context/placecontext.schema.json](context/placecontext.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/placecontext.schema.json](context/placecontext.schema.json) |
 ## Schema Hierarchy
 
 * Place Context `https://ns.adobe.com/xdm/context/placecontext`

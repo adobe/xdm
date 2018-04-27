@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/external/activity-streams-2/context
 
 A a set of rules for interpreting a JSON-LD document as specified in [the Context of the JSON-LD specification](https://json-ld.org/spec/latest/json-ld/#the-context).
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [external/activity-streams-2/context.schema.json](external/activity-streams-2/context.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/activity-streams-2/context.schema.json](external/activity-streams-2/context.schema.json) |
 
 ## JSON-LD `@context` Example
 ```json

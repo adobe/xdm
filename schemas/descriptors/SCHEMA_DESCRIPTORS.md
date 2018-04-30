@@ -94,7 +94,8 @@ The second is child.json:
           "xdm:destinationProperty": "@id"
         }
       ],
-      "type": "string"
+      "type": "string",
+      "format": "uri"
     }
   }
 }
@@ -149,7 +150,7 @@ We can use an identity descriptor to provide the additional details. The descrip
 
 ### Example Primary Key Descriptor
 
-We have a schema that describes a sales order taken from an external sales management system. As this schema is directly transcribed from the external system's data schema, it does not follow the XDM best practice of using @id as the primary key:
+We have a schema that describes a sales order taken from an external sales management system. As this schema is directly transcribed from the external system's data schema, it does not follow the XDM best practice of using `@id` as the primary key:
 
 ```json
 {
@@ -161,7 +162,7 @@ We have a schema that describes a sales order taken from an external sales manag
     "https://ns.example.com/xdm/txID": {
       "meta:descriptors": [
         {
-          "@type": "xdm:xdm:primaryKey"
+          "@type": "xdm:primaryKey"
         }
       ],
       "type": "string"

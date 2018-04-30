@@ -8,9 +8,9 @@ https://ns.adobe.com/xdm/common/page
 Page information for paginated resource list operations.
 
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [common/page.schema.json](common/page.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [common/page.schema.json](common/page.schema.json) |
 
 ## Page Examples
 

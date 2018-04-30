@@ -346,6 +346,15 @@ The third schema is `third.schema.json`, it extends both `second`, and transitiv
 }
 ```
 
+### Structuring Schemas - Nesting versus Namespaces
+
+The use of JSON-LD namespaces in XDM means that schema definitions are organized around two axes.  The first is the structure of the JSON, which may be nested to an arbitrary depth.  The second is the orthogonal layer created by each independent namespace.  While both organizing axes are available, it is important to use each for its intended purpose.
+
+Namespaces should be used to allow organizations to develop XDM-based grammars independently of each other, without fear of conflict and without a need to coordinate.  In general, it is desirable to have the smallest set of namespaces possible while meeting the above goals.
+
+Namespaces *should not* be used to organize or group concepts within a grammar.  When organizing concepts, schema authors should either define sub-objects for each concept, or consider breaking out the concept into an independent schema, as described in "Re-use and Modularity".
+
+
 ### Other Schema Extensions
 
 XDM is using a couple of custom keywords that are not part of the JSON Schema standard. These include:

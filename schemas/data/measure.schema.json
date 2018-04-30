@@ -52,5 +52,6 @@
       "$ref": "#/definitions/measure"
     }
   ],
-  "required": ["xdm:value"]
+  "required": ["xdm:value"],
+  "meta:status": "stabilizing"
 }

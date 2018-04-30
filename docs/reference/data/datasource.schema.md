@@ -8,15 +8,15 @@ https://ns.adobe.com/xdm/data/datasource
 The Datasource acts as a namespace or unique identifier associated with a collection of data. Each EndUserID is associated with a given Datasource. A user can create and obtain information about a Datasource during the solution onboarding.
 
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [data/datasource.schema.json](data/datasource.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [data/datasource.schema.json](data/datasource.schema.json) |
 
 ## Data Source Example
 ```json
 {
   "@id": "https://data.adobe.io/datasources/datasource-123",
-  "xdm:name": "DataSourceIntegrationCode-123"
+  "xdm:code": "DataSourceIntegrationCode-123"
 }
 ```
 
@@ -25,7 +25,7 @@ The Datasource acts as a namespace or unique identifier associated with a collec
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#@id) | `string` | Optional | Data Source (this schema) |
-| [xdm:name](#xdmname) | `string` | Optional | Data Source (this schema) |
+| [xdm:code](#xdmcode) | `string` | Optional | Data Source (this schema) |
 | [xdm:tags](#xdmtags) | `string[]` | Optional | Data Source (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -51,17 +51,17 @@ The unique ID of this data source. This would be provided by the individual or s
 
 
 
-## xdm:name
-### Name
+## xdm:code
+### Code
 
-Human readable name of the data source. 
+The code is a shortcut to the full @id and at least one of the code or @id can be used. Sometimes, this code is referred to as the data source integration code.
 
-`xdm:name`
+`xdm:code`
 * is optional
 * type: `string`
 * defined in this schema
 
-### xdm:name Type
+### xdm:code Type
 
 
 `string`

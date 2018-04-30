@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/context/browserdetails
 
 Detail information related to the browser
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [context/browserdetails.schema.json](context/browserdetails.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/browserdetails.schema.json](context/browserdetails.schema.json) |
 
 ## Browser Details Example
 ```json
@@ -31,19 +31,19 @@ Detail information related to the browser
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:acceptLanguage](#xdmacceptLanguage) | `string` | Optional | Browser Details (this schema) |
-| [xdm:cookiesEnabled](#xdmcookiesEnabled) | `boolean` | Optional | Browser Details (this schema) |
-| [xdm:javaEnabled](#xdmjavaEnabled) | `boolean` | Optional | Browser Details (this schema) |
-| [xdm:javaScriptEnabled](#xdmjavaScriptEnabled) | `boolean` | Optional | Browser Details (this schema) |
-| [xdm:javaScriptVersion](#xdmjavaScriptVersion) | `string` | Optional | Browser Details (this schema) |
-| [xdm:javaVersion](#xdmjavaVersion) | `string` | Optional | Browser Details (this schema) |
+| [xdm:acceptLanguage](#xdmacceptlanguage) | `string` | Optional | Browser Details (this schema) |
+| [xdm:cookiesEnabled](#xdmcookiesenabled) | `boolean` | Optional | Browser Details (this schema) |
+| [xdm:javaEnabled](#xdmjavaenabled) | `boolean` | Optional | Browser Details (this schema) |
+| [xdm:javaScriptEnabled](#xdmjavascriptenabled) | `boolean` | Optional | Browser Details (this schema) |
+| [xdm:javaScriptVersion](#xdmjavascriptversion) | `string` | Optional | Browser Details (this schema) |
+| [xdm:javaVersion](#xdmjavaversion) | `string` | Optional | Browser Details (this schema) |
 | [xdm:name](#xdmname) | `string` | Optional | Browser Details (this schema) |
-| [xdm:quicktimeVersion](#xdmquicktimeVersion) | `string` | Optional | Browser Details (this schema) |
-| [xdm:thirdPartyCookiesEnabled](#xdmthirdPartyCookiesEnabled) | `boolean` | Optional | Browser Details (this schema) |
-| [xdm:userAgent](#xdmuserAgent) | `string` | Optional | Browser Details (this schema) |
+| [xdm:quicktimeVersion](#xdmquicktimeversion) | `string` | Optional | Browser Details (this schema) |
+| [xdm:thirdPartyCookiesEnabled](#xdmthirdpartycookiesenabled) | `boolean` | Optional | Browser Details (this schema) |
+| [xdm:userAgent](#xdmuseragent) | `string` | Optional | Browser Details (this schema) |
 | [xdm:version](#xdmversion) | `string` | Optional | Browser Details (this schema) |
-| [xdm:viewportHeight](#xdmviewportHeight) | `integer` | Optional | Browser Details (this schema) |
-| [xdm:viewportWidth](#xdmviewportWidth) | `integer` | Optional | Browser Details (this schema) |
+| [xdm:viewportHeight](#xdmviewportheight) | `integer` | Optional | Browser Details (this schema) |
+| [xdm:viewportWidth](#xdmviewportwidth) | `integer` | Optional | Browser Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:acceptLanguage
@@ -69,7 +69,7 @@ An IETF Language Tag (RFC 5646).
 ## xdm:cookiesEnabled
 ### Allows Cookies
 
-The current user agent settings allow for the writing of cookies.&#39;
+The current user agent settings allow for the writing of cookies.'
 
 `xdm:cookiesEnabled`
 * is optional

@@ -5,14 +5,14 @@
 https://ns.adobe.com/xdm/external/hal/link
 ```
 
-&gt; A Link Object represents a hyperlink from the containing resource to a URI.
+> A Link Object represents a hyperlink from the containing resource to a URI.
 
 -- from [JSON Hypertext Application Language, section 5](https://tools.ietf.org/html/draft-kelly-json-hal-08#section-5)
 
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [external/hal/hal-link.schema.json](external/hal/hal-link.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/hal/hal-link.schema.json](external/hal/hal-link.schema.json) |
 
 ## HAL Link Examples
 
@@ -46,7 +46,7 @@ https://ns.adobe.com/xdm/external/hal/link
 
 ## deprecation
 
-&gt; Its presence indicates that the link is to be deprecated (i.e. removed) at a future date.  Its value is a URL that SHOULD provide further information about the deprecation.
+> Its presence indicates that the link is to be deprecated (i.e. removed) at a future date.  Its value is a URL that SHOULD provide further information about the deprecation.
 
 `deprecation`
 * is optional
@@ -66,7 +66,7 @@ https://ns.adobe.com/xdm/external/hal/link
 
 ## href
 
-&gt; If the value is a URI Template then the Link Object SHOULD have a `templated` attribute whose value is `true`
+> If the value is a URI Template then the Link Object SHOULD have a `templated` attribute whose value is `true`
 
 `href`
 * is optional
@@ -85,7 +85,7 @@ https://ns.adobe.com/xdm/external/hal/link
 
 ## hreflang
 
-&gt; Its value is a string and is intended for indicating the language of the target resource (as defined by [RFC5988](https://tools.ietf.org/html/rfc5988)
+> Its value is a string and is intended for indicating the language of the target resource (as defined by [RFC5988](https://tools.ietf.org/html/rfc5988)
 
 `hreflang`
 * is optional
@@ -111,7 +111,7 @@ All instances must conform to this regular expression
 
 ## name
 
-&gt; Its value MAY be used as a secondary key for selecting Link Objects which share the same relation type.
+> Its value MAY be used as a secondary key for selecting Link Objects which share the same relation type.
 
 `name`
 * is optional
@@ -130,7 +130,7 @@ All instances must conform to this regular expression
 
 ## profile
 
-&gt; Its value is a string which is a URI that hints about the profile (as defined by [I-D.wilde-profile-link](https://tools.ietf.org/html/draft-wilde-profile-link-04) of the target resource.
+> Its value is a string which is a URI that hints about the profile (as defined by [I-D.wilde-profile-link](https://tools.ietf.org/html/draft-wilde-profile-link-04) of the target resource.
 
 `profile`
 * is optional
@@ -150,7 +150,7 @@ All instances must conform to this regular expression
 
 ## templated
 
-&gt; Its value is boolean and SHOULD be true when the Link Object&#39;s `href` property is a URI Template.\n\nIts value SHOULD be considered false if it is undefined or any other value than `true`.
+> Its value is boolean and SHOULD be true when the Link Object's `href` property is a URI Template.\n\nIts value SHOULD be considered false if it is undefined or any other value than `true`.
 
 `templated`
 * is optional
@@ -168,7 +168,7 @@ All instances must conform to this regular expression
 
 ## title
 
-&gt; Its value is a string and is intended for labelling the link with a human-readable identifier (as defined by [RFC5988](https://tools.ietf.org/html/rfc5988))
+> Its value is a string and is intended for labelling the link with a human-readable identifier (as defined by [RFC5988](https://tools.ietf.org/html/rfc5988))
 
 `title`
 * is optional
@@ -187,7 +187,7 @@ All instances must conform to this regular expression
 
 ## type
 
-&gt; Its value is a string used as a hint to indicate the media type expected when dereferencing the target resource.
+> Its value is a string used as a hint to indicate the media type expected when dereferencing the target resource.
 
 `type`
 * is optional

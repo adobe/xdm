@@ -7,9 +7,9 @@ http://ns.adobe.com/adobecloud/core/1.0
 
 Common Properties for Storage in the Adobe Cloud Platform
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Cannot be instantiated | Yes | Forbidden | Permitted | [external/repo/common.schema.json](external/repo/common.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Cannot be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/repo/common.schema.json](external/repo/common.schema.json) |
 
 ## Common Properties Example
 ```json
@@ -24,11 +24,11 @@ Common Properties for Storage in the Adobe Cloud Platform
 
 | Property | Type | Group |
 |----------|------|-------|
-| [dc:format](#dc:format) | `string` | `http://ns.adobe.com/adobecloud/core/1.0#/definitions/common-properties` |
-| [repo:createDate](#repo:createDate) | `string` | `http://ns.adobe.com/adobecloud/core/1.0#/definitions/date-properties` |
-| [repo:lastModifiedDate](#repo:lastModifiedDate) | `string` | `http://ns.adobe.com/adobecloud/core/1.0#/definitions/date-properties` |
-| [repo:name](#repo:name) | `string` | `http://ns.adobe.com/adobecloud/core/1.0#/definitions/common-properties` |
-| [repo:path](#repo:path) | `string` | `http://ns.adobe.com/adobecloud/core/1.0#/definitions/common-properties` |
+| [dc:format](#dcformat) | `string` | `http://ns.adobe.com/adobecloud/core/1.0#/definitions/common-properties` |
+| [repo:createDate](#repocreatedate) | `string` | `http://ns.adobe.com/adobecloud/core/1.0#/definitions/date-properties` |
+| [repo:lastModifiedDate](#repolastmodifieddate) | `string` | `http://ns.adobe.com/adobecloud/core/1.0#/definitions/date-properties` |
+| [repo:name](#reponame) | `string` | `http://ns.adobe.com/adobecloud/core/1.0#/definitions/common-properties` |
+| [repo:path](#repopath) | `string` | `http://ns.adobe.com/adobecloud/core/1.0#/definitions/common-properties` |
 
 ## dc:format
 ### Format
@@ -65,7 +65,7 @@ All instances must conform to this regular expression
 
 ## repo:createDate
 
-The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is &#34;2004-10-23T12:00:00-06:00&#34;.
+The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
 
 `repo:createDate`
 * is optional
@@ -90,7 +90,7 @@ The server date and time when the resource was created in the repository, such a
 
 ## repo:lastModifiedDate
 
-The server date and time when the resource was most recently modified in the repository, such as when a new version of an asset is uploaded or a directory&#39;s child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is &#34;2004-10-23T12:00:00-06:00&#34;.
+The server date and time when the resource was most recently modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
 
 `repo:lastModifiedDate`
 * is optional

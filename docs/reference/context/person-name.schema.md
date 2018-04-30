@@ -5,35 +5,39 @@
 https://ns.adobe.com/xdm/context/person-name
 ```
 
-Full name of a person
+The Person Name schema is used to model the full name of a person.
+As the conventions for structing names differ widely across languages and cultures, names should always be modeled using the `xdm:fullName` property.
+In addition, a number of optional properties are made available that can be used in situations that require using only a fragment of the full name, such as creating a formal or informal greeting.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [context/person-name.schema.json](context/person-name.schema.json) |
+
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/person-name.schema.json](context/person-name.schema.json) |
 
 ## Person Name Examples
 
 ```json
 {
-  "xdm:givenName": "三",
-  "xdm:surname": "张",
-  "xdm:name": "张三"
-}
-```
-
-```json
-{
-  "xdm:givenName": "John",
+  "xdm:firstName": "John",
   "xdm:middleName": "S",
-  "xdm:surname": "Doe"
+  "xdm:lastName": "Doe",
+  "xdm:fullName": "John S. Doe"
 }
 ```
 
 ```json
 {
-  "xdm:givenName": "فلانة",
-  "xdm:surname": "الفلانية",
-  "xdm:name": "فلانة الفلانية"
+  "xdm:firstName": "张",
+  "xdm:lastName": "三",
+  "xdm:fullName": "张三"
+}
+```
+
+```json
+{
+  "xdm:firstName": "فلانة",
+  "xdm:lastName": "الفلانية",
+  "xdm:fullName": "فلانة الفلانية"
 }
 ```
 
@@ -42,11 +46,11 @@ Full name of a person
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:courtesyTitle](#xdmcourtesyTitle) | `string` | Optional | Person Name (this schema) |
-| [xdm:givenName](#xdmgivenName) | `string` | Optional | Person Name (this schema) |
-| [xdm:middleName](#xdmmiddleName) | `string` | Optional | Person Name (this schema) |
-| [xdm:name](#xdmname) | `string` | Optional | Person Name (this schema) |
-| [xdm:surname](#xdmsurname) | `string` | Optional | Person Name (this schema) |
+| [xdm:courtesyTitle](#xdmcourtesytitle) | `string` | Optional | Person Name (this schema) |
+| [xdm:firstName](#xdmfirstname) | `string` | Optional | Person Name (this schema) |
+| [xdm:fullName](#xdmfullname) | `string` | Optional | Person Name (this schema) |
+| [xdm:lastName](#xdmlastname) | `string` | Optional | Person Name (this schema) |
+| [xdm:middleName](#xdmmiddlename) | `string` | Optional | Person Name (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:courtesyTitle
@@ -72,17 +76,61 @@ e.g Mr. Miss. or Dr J. Smith.
 
 
 
-## xdm:givenName
-### Given name
+## xdm:firstName
+### First name
 
-The personal, given, or first name.
+The first segment of the name in the writing order most commonly accepted in the language of the name. In many cultures this is the preferred personal or given name.
 
-`xdm:givenName`
+The `firstName` and `lastName` properties have been introduced to maintain compatibility with existing systems that model names in a simplified, non-semantic, and non-internationalizable way. Using `xdm:fullName` is always preferable.
+
+`xdm:firstName`
 * is optional
 * type: `string`
 * defined in this schema
 
-### xdm:givenName Type
+### xdm:firstName Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:fullName
+### Full name
+
+The full name of the person, in writing order most commonly accepted in the language of the name.
+
+`xdm:fullName`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:fullName Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:lastName
+### Last name
+
+The last segment of the name in the writing order most commonly accepted in the language of the name. In many cultures this is the inherited family name, surname, patronymic, or matronymic name.
+
+The `firstName` and `lastName` properties have been introduced to maintain compatibility with existing systems that model names in a simplified, non-semantic, and non-internationalizable way. Using `xdm:fullName` is always preferable.
+
+`xdm:lastName`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:lastName Type
 
 
 `string`
@@ -95,7 +143,7 @@ The personal, given, or first name.
 ## xdm:middleName
 ### Middle name
 
-Middle, alternative, or additional names supplied between the given name and surnames.
+Middle, alternative, or additional names supplied between the first name and last name.
 
 `xdm:middleName`
 * is optional
@@ -103,46 +151,6 @@ Middle, alternative, or additional names supplied between the given name and sur
 * defined in this schema
 
 ### xdm:middleName Type
-
-
-`string`
-
-
-
-
-
-
-## xdm:name
-### Full name
-
-The full name of the person, in writing order most commonly accepted in the language of the name.
-
-`xdm:name`
-* is optional
-* type: `string`
-* defined in this schema
-
-### xdm:name Type
-
-
-`string`
-
-
-
-
-
-
-## xdm:surname
-### Surname
-
-The inherited family name, last name, surname, patronymic, or matronymic name.
-
-`xdm:surname`
-* is optional
-* type: `string`
-* defined in this schema
-
-### xdm:surname Type
 
 
 `string`

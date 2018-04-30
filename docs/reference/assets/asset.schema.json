@@ -45,7 +45,7 @@
                             "id": {
                                 "type": "string",
                                 "title": "External ID",
-                                "description": "An Id under which external systems track the asset."
+                                "description": "An ID under which external systems track the asset."
                             }
                         }
                     },
@@ -414,6 +414,7 @@
         "repo:version",
         "repo:size"
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "repo:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",

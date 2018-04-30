@@ -7,10 +7,9 @@ https://ns.adobe.com/xdm/context/place
 
 A place in the real world with a physical location.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [context/place.schema.json](context/place.schema.json) |
-
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [context/place.schema.json](context/place.schema.json) |
 ## Schema Hierarchy
 
 * Place `https://ns.adobe.com/xdm/context/place`
@@ -19,18 +18,18 @@ A place in the real world with a physical location.
   * [Geo Shape](../external/schema/geoshape.schema.md) `http://schema.org/GeoShape`
   * [Geo Coordinates](../external/schema/geocoordinates.schema.md) `http://schema.org/GeoCoordinates`
 
+
 ## Place Example
 ```json
 {
   "@id": "https://data.adobe.io/entities/places/locationid-123456",
   "schema:description": "A nice place to work",
   "xdm:address": {
-    "@id": "https://ns.adobe.com/entities/address/123",
+    "@id": "https://data.adobe.io/entities/address/123",
     "xdm:primary": false,
     "xdm:street1": "345 Park Ave",
     "xdm:city": "San Jose",
-    "xdm:stateProvince": "California",
-    "xdm:stateProvinceISO": "CA",
+    "xdm:stateProvince": "US-CA",
     "xdm:postalCode": "95110",
     "xdm:country": "United States",
     "xdm:countryCode": "US",
@@ -52,13 +51,13 @@ A place in the real world with a physical location.
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#@id) | `string` | Optional | Place (this schema) |
-| [schema:branchCode](#schemabranchCode) | `string` | Optional | Place (this schema) |
+| [schema:branchCode](#schemabranchcode) | `string` | Optional | Place (this schema) |
 | [schema:description](#schemadescription) | `string` | Optional | Place (this schema) |
 | [schema:telephone](#schematelephone) | `string` | Optional | Place (this schema) |
 | [xdm:address](#xdmaddress) | Address | Optional | Place (this schema) |
-| [xdm:containedInPlace](#xdmcontainedInPlace) | `string` | Optional | Place (this schema) |
-| [xdm:containsPlaces](#xdmcontainsPlaces) | `string[]` | Optional | Place (this schema) |
-| [xdm:pointOfInterest](#xdmpointOfInterest) | Geo Coordinates | Optional | Place (this schema) |
+| [xdm:containedInPlace](#xdmcontainedinplace) | `string` | Optional | Place (this schema) |
+| [xdm:containsPlaces](#xdmcontainsplaces) | `string[]` | Optional | Place (this schema) |
+| [xdm:pointOfInterest](#xdmpointofinterest) | Geo Coordinates | Optional | Place (this schema) |
 | [xdm:shape](#xdmshape) | Geo Shape | Optional | Place (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -86,9 +85,9 @@ The unique identifier of the place.
 ## schema:branchCode
 ### Location Code
 
-A short textual code (also called &#34;store code&#34;) that uniquely identifies a place of business. The code is typically assigned by the parent Organization and used in structured URLs.
+A short textual code (also called "store code") that uniquely identifies a place of business. The code is typically assigned by the parent Organization and used in structured URLs.
 
-For example, in the URL `http://www.starbucks.co.uk/store-locator/etc/detail/3047` the code &#34;3047&#34; is a `branchCode` for a particular branch.
+For example, in the URL `http://www.starbucks.co.uk/store-locator/etc/detail/3047` the code "3047" is a `branchCode` for a particular branch.
 
 `schema:branchCode`
 * is optional

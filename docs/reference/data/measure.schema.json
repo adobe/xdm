@@ -57,10 +57,11 @@
     "required": [
         "xdm:value"
     ],
+    "meta:status": "stabilizing",
     "examples": [
         {
             "@type": "https://ns.adobe.com/xdm/data/example-metric",
-            "unit": null,
+            "xdm:unit": null,
             "xdm:value": 175
         }
     ]

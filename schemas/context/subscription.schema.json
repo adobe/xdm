@@ -97,7 +97,7 @@
           "type": "string",
           "description": "The current status of the subscription."
         },
-        "xdm:contractId": {
+        "xdm:contractID": {
           "title": "Contract ID",
           "type": "string",
           "description":
@@ -159,5 +159,6 @@
     {
       "$ref": "#/definitions/subscription"
     }
-  ]
+  ],
+  "meta:status": "experimental"
 }

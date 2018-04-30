@@ -7,15 +7,15 @@ https://ns.adobe.com/xdm/channels/apns
 
 Apple Push Notification Service
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [channels/apns.schema.json](channels/apns.schema.json) |
-
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [channels/apns.schema.json](channels/apns.schema.json) |
 ## Schema Hierarchy
 
 * APNS `https://ns.adobe.com/xdm/channels/apns`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
+
 
 ## APNS Example
 ```json
@@ -31,9 +31,9 @@ Apple Push Notification Service
 |----------|------|----------|------------|
 | [@id](#@id) | `const` | **Required** | APNS (this schema) |
 | [@type](#@type) | `const` | Optional | APNS (this schema) |
-| [xdm:contentTypes](#xdmcontentTypes) | `const` | Optional | APNS (this schema) |
-| [xdm:locationTypes](#xdmlocationTypes) | `const` | Optional | APNS (this schema) |
-| [xdm:metricTypes](#xdmmetricTypes) | `const` | Optional | APNS (this schema) |
+| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | APNS (this schema) |
+| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | APNS (this schema) |
+| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | APNS (this schema) |
 | [xdm:mode](#xdmmode) | `const` | Optional | APNS (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 

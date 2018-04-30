@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/content/productlistitem
 
 The product list item is a list item representing a product selected by a customer with specific options and pricing that are for that usage context at a specific point of time and may differ from the product record. For example the product record contains details from the product information system that are consistent for all customers, where the product list item has the actual price offered to the customer at that time which may vary due to sales campaigns or seasonal pricing.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [content/productlistitem.schema.json](content/productlistitem.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [content/productlistitem.schema.json](content/productlistitem.schema.json) |
 
 ## Product List Item Example
 ```json
@@ -29,12 +29,12 @@ The product list item is a list item representing a product selected by a custom
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#@id) | `string` | Optional | Product List Item (this schema) |
-| [xdm:SKU](#xdmSKU) | `string` | Optional | Product List Item (this schema) |
-| [xdm:currencyCode](#xdmcurrencyCode) | `string` | Optional | Product List Item (this schema) |
+| [xdm:SKU](#xdmsku) | `string` | Optional | Product List Item (this schema) |
+| [xdm:currencyCode](#xdmcurrencycode) | `string` | Optional | Product List Item (this schema) |
 | [xdm:name](#xdmname) | `string` | Optional | Product List Item (this schema) |
-| [xdm:priceTotal](#xdmpriceTotal) | `number` | Optional | Product List Item (this schema) |
+| [xdm:priceTotal](#xdmpricetotal) | `number` | Optional | Product List Item (this schema) |
 | [xdm:product](#xdmproduct) | `string` | Optional | Product List Item (this schema) |
-| [xdm:productAddMethod](#xdmproductAddMethod) | `string` | Optional | Product List Item (this schema) |
+| [xdm:productAddMethod](#xdmproductaddmethod) | `string` | Optional | Product List Item (this schema) |
 | [xdm:quantity](#xdmquantity) | `integer` | Optional | Product List Item (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 

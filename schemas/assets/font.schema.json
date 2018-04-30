@@ -89,5 +89,6 @@
       "$ref": "#/definitions/font"
     }
   ],
-  "required": ["xdm:fontName", "xdm:fontType"]
+  "required": ["xdm:fontName", "xdm:fontType"],
+  "meta:status": "experimental"
 }

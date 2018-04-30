@@ -1,5 +1,6 @@
 {
-  "xdm:givenName": "John",
+  "xdm:firstName": "John",
   "xdm:middleName": "S",
-  "xdm:surname": "Doe"
+  "xdm:lastName": "Doe",
+  "xdm:fullName": "John S. Doe"
 }

@@ -66,6 +66,15 @@
                         "deny": "Permission is denied to the Principal."
                     },
                     "default": "grant"
+                },
+                "repo:inheritance": {
+                    "description": "Optional inheritance of the ace: whether the deny or grant is inherited by the children of the resource. The default inheritance is deep if this property is missing or has an invalid value.",
+                    "type": "string",
+                    "meta:enum": {
+                        "deep": "Deny or grant applies to the resource and to all children of the resource.",
+                        "self": "Deny or grant only applies to the resource."
+                    },
+                    "default": "deep"
                 }
             },
             "required": [
@@ -98,6 +107,7 @@
             "$ref": "#/definitions/ace"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "repo:principal": "authenticated",
@@ -110,13 +120,14 @@
                     "@id": "https://ims-na1.adobelogin.com/"
                 },
                 "@id": "C0B648DE57D701277F000101@AdobeID",
-                "@type": "https://ns.adobe.com/xdm-extensions/ims/user"
+                "@type": "https://ns.adobe.com/adobecloudplatform/ims/user"
             },
             "repo:privilege": [
                 "write",
                 "delete"
             ],
-            "repo:modifier": "grant"
+            "repo:modifier": "grant",
+            "repo:inheritance": "deep"
         }
     ]
 }

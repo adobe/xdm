@@ -7,10 +7,9 @@ https://ns.adobe.com/xdm/external/activity-streams-2/object
 
 Describes an object of any kind. The [`Object`](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object) type serves as the base type for most of the other kinds of objects defined in the Activity Vocabulary, including other Core types such as `[Activity](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-activity)`, `[IntransitiveActivity](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-intransitiveactivity)`, `[Collection](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-collection)` and `[OrderedCollection](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-orderedcollection)`.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [external/activity-streams-2/object.schema.json](external/activity-streams-2/object.schema.json) |
-
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [external/activity-streams-2/object.schema.json](external/activity-streams-2/object.schema.json) |
 ## Schema Hierarchy
 
 * Object `https://ns.adobe.com/xdm/external/activity-streams-2/object`
@@ -22,6 +21,7 @@ Describes an object of any kind. The [`Object`](https://www.w3.org/TR/activityst
   * [RDF Language Tagged String](rdf-langstring.schema.md) `https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langstring`
   * [Image Document](image.schema.md) `https://ns.adobe.com/xdm/external/activity-streams-2/image`
   * [Collection](collection.schema.md) `https://ns.adobe.com/xdm/external/activity-streams-2/collection`
+
 
 ## Object Example
 ```json
@@ -43,7 +43,7 @@ Describes an object of any kind. The [`Object`](https://www.w3.org/TR/activityst
 | [@id](#@id) | `string` | Optional | [JSON-LD `@id`](id.schema.md#@id) |
 | [@type](#@type) | complex | Optional | [JSON-LD `@type`](type.schema.md#@type) |
 | [activitystreams:attachment](#activitystreamsattachment) | complex | Optional | Object (this schema) |
-| [activitystreams:attributedTo](#activitystreamsattributedTo) | complex | Optional | Object (this schema) |
+| [activitystreams:attributedTo](#activitystreamsattributedto) | complex | Optional | Object (this schema) |
 | [activitystreams:audience](#activitystreamsaudience) | complex | Optional | Object (this schema) |
 | [activitystreams:bcc](#activitystreamsbcc) | complex | Optional | Object (this schema) |
 | [activitystreams:bto](#activitystreamsbto) | complex | Optional | Object (this schema) |
@@ -51,18 +51,18 @@ Describes an object of any kind. The [`Object`](https://www.w3.org/TR/activityst
 | [activitystreams:content](#activitystreamscontent) | complex | Optional | Object (this schema) |
 | [activitystreams:context](#activitystreamscontext) | complex | Optional | Object (this schema) |
 | [activitystreams:duration](#activitystreamsduration) | `string` | Optional | Object (this schema) |
-| [activitystreams:endTime](#activitystreamsendTime) | `string` | Optional | Object (this schema) |
+| [activitystreams:endTime](#activitystreamsendtime) | `string` | Optional | Object (this schema) |
 | [activitystreams:generator](#activitystreamsgenerator) | complex | Optional | Object (this schema) |
 | [activitystreams:icon](#activitystreamsicon) | complex | Optional | Object (this schema) |
 | [activitystreams:image](#activitystreamsimage) | complex | Optional | Object (this schema) |
-| [activitystreams:inReplyTo](#activitystreamsinReplyTo) | complex | Optional | Object (this schema) |
+| [activitystreams:inReplyTo](#activitystreamsinreplyto) | complex | Optional | Object (this schema) |
 | [activitystreams:location](#activitystreamslocation) | complex | Optional | Object (this schema) |
-| [activitystreams:mediaType](#activitystreamsmediaType) | `string` | Optional | Object (this schema) |
+| [activitystreams:mediaType](#activitystreamsmediatype) | `string` | Optional | Object (this schema) |
 | [activitystreams:name](#activitystreamsname) | complex | Optional | Object (this schema) |
 | [activitystreams:preview](#activitystreamspreview) | complex | Optional | Object (this schema) |
 | [activitystreams:published](#activitystreamspublished) | `string` | Optional | Object (this schema) |
 | [activitystreams:replies](#activitystreamsreplies) | Collection | Optional | Object (this schema) |
-| [activitystreams:startTime](#activitystreamsstartTime) | `string` | Optional | Object (this schema) |
+| [activitystreams:startTime](#activitystreamsstarttime) | `string` | Optional | Object (this schema) |
 | [activitystreams:summary](#activitystreamssummary) | complex | Optional | Object (this schema) |
 | [activitystreams:tag](#activitystreamstag) | complex | Optional | Object (this schema) |
 | [activitystreams:to](#activitystreamsto) | complex | Optional | Object (this schema) |
@@ -792,7 +792,7 @@ The content or textual representation of the Object encoded as a JSON string. By
 
 ## activitystreams:context
 
-Identifies the context within which the object exists or an activity was performed. The notion of &#39;context&#39; used is intentionally vague. The intended function is to serve as a means of grouping objects and activities that share a common originating context or purpose. An example could be all activities relating to a common project or event. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-context) document for a complete description.
+Identifies the context within which the object exists or an activity was performed. The notion of 'context' used is intentionally vague. The intended function is to serve as a means of grouping objects and activities that share a common originating context or purpose. An example could be all activities relating to a common project or event. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-context) document for a complete description.
 
 `activitystreams:context`
 * is optional
@@ -1576,7 +1576,7 @@ A natural language summarization of the object encoded as HTML. Multiple languag
 
 ## activitystreams:tag
 
-One or more &#39;tags&#39; that have been associated with an objects. A tag can be any kind of Object. The key difference between attachment and tag is that the former implies association by inclusion, while the latter implies associated by reference. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-tag) document for a complete description.
+One or more 'tags' that have been associated with an objects. A tag can be any kind of Object. The key difference between attachment and tag is that the former implies association by inclusion, while the latter implies associated by reference. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-tag) document for a complete description.
 
 `activitystreams:tag`
 * is optional

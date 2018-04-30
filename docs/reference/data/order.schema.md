@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/data/order
 
 The order placed for a product list.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [data/order.schema.json](data/order.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/order.schema.json](data/order.schema.json) |
 
 ## Order Example
 ```json
@@ -39,11 +39,11 @@ The order placed for a product list.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:currencyCode](#xdmcurrencyCode) | `string` | Optional | Order (this schema) |
+| [xdm:currencyCode](#xdmcurrencycode) | `string` | Optional | Order (this schema) |
 | [xdm:payments](#xdmpayments) | Payment Item | Optional | Order (this schema) |
-| [xdm:priceTotal](#xdmpriceTotal) | `number` | Optional | Order (this schema) |
-| [xdm:purchaseID](#xdmpurchaseID) | `string` | Optional | Order (this schema) |
-| [xdm:purchaseOrderNumber](#xdmpurchaseOrderNumber) | `string` | Optional | Order (this schema) |
+| [xdm:priceTotal](#xdmpricetotal) | `number` | Optional | Order (this schema) |
+| [xdm:purchaseID](#xdmpurchaseid) | `string` | Optional | Order (this schema) |
+| [xdm:purchaseOrderNumber](#xdmpurchaseordernumber) | `string` | Optional | Order (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:currencyCode

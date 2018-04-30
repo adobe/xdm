@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/data/metrics/commerce/product-list-opens
 
 The commerce metric product-list-opens describes how many new product lists have been created. The most common case is the creation of a new shopping cart by putting the first item into the shopping cart.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [data/product-list-opens.schema.json](data/product-list-opens.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [data/product-list-opens.schema.json](data/product-list-opens.schema.json) |
 
 ## product-list-opens Example
 ```json

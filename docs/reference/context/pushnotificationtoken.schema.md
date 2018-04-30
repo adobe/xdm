@@ -11,10 +11,9 @@ application notifications over notification services like the Apple Push
 Notification service.
 
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [context/pushnotificationtoken.schema.json](context/pushnotificationtoken.schema.json) |
-
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/pushnotificationtoken.schema.json](context/pushnotificationtoken.schema.json) |
 ## Schema Hierarchy
 
 * Push Notification Token `https://ns.adobe.com/xdm/context/pushnotificationtoken`
@@ -22,6 +21,7 @@ Notification service.
   * [Device](device.schema.md) `https://ns.adobe.com/xdm/context/device`
   * [Application](../channels/application.schema.md) `https://ns.adobe.com/xdm/channels/application`
   * [Experience Channel](../channels/channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
+
 
 ## Push Notification Token Example
 ```json
@@ -75,10 +75,10 @@ Notification service.
 |----------|------|----------|------------|
 | [xdm:application](#xdmapplication) | Application | Optional | Push Notification Token (this schema) |
 | [xdm:channel](#xdmchannel) | Experience Channel | Optional | Push Notification Token (this schema) |
-| [xdm:deregistrationDate](#xdmderegistrationDate) | `string` | Optional | Push Notification Token (this schema) |
+| [xdm:deregistrationDate](#xdmderegistrationdate) | `string` | Optional | Push Notification Token (this schema) |
 | [xdm:device](#xdmdevice) | Device | Optional | Push Notification Token (this schema) |
 | [xdm:environment](#xdmenvironment) | Environment | Optional | Push Notification Token (this schema) |
-| [xdm:registrationDate](#xdmregistrationDate) | `string` | Optional | Push Notification Token (this schema) |
+| [xdm:registrationDate](#xdmregistrationdate) | `string` | Optional | Push Notification Token (this schema) |
 | [xdm:token](#xdmtoken) | `string` | Optional | Push Notification Token (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 

@@ -67,15 +67,17 @@
             "$ref": "#/definitions/person"
         },
         {
-            "$ref": "https://ns.adobe.com/xdm/common/auditable"
+            "$ref": "https://ns.adobe.com/xdm/common/auditable#/definitions/auditlog"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "xdm:name": {
-                "xdm:givenName": "Jane",
+                "xdm:firstName": "Jane",
                 "xdm:middleName": "F",
-                "xdm:surname": "Doe"
+                "xdm:lastName": "Doe",
+                "xdm:fullName": "Jane F. Doe"
             },
             "xdm:birthMonth": 1,
             "xdm:birthDay": 3,

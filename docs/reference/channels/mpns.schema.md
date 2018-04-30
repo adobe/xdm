@@ -7,15 +7,15 @@ https://ns.adobe.com/xdm/channels/mpns
 
 Microsoft Push Notification Service
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [channels/mpns.schema.json](channels/mpns.schema.json) |
-
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [channels/mpns.schema.json](channels/mpns.schema.json) |
 ## Schema Hierarchy
 
 * MPNS `https://ns.adobe.com/xdm/channels/mpns`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
+
 
 ## MPNS Example
 ```json
@@ -31,9 +31,9 @@ Microsoft Push Notification Service
 |----------|------|----------|------------|
 | [@id](#@id) | `const` | **Required** | MPNS (this schema) |
 | [@type](#@type) | `const` | Optional | MPNS (this schema) |
-| [xdm:contentTypes](#xdmcontentTypes) | `const` | Optional | MPNS (this schema) |
-| [xdm:locationTypes](#xdmlocationTypes) | `const` | Optional | MPNS (this schema) |
-| [xdm:metricTypes](#xdmmetricTypes) | `const` | Optional | MPNS (this schema) |
+| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | MPNS (this schema) |
+| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | MPNS (this schema) |
+| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | MPNS (this schema) |
 | [xdm:mode](#xdmmode) | `const` | Optional | MPNS (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 

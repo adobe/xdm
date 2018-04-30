@@ -3,8 +3,12 @@
 [![CircleCI](https://circleci.com/gh/adobe/xdm.svg?style=svg)](https://circleci.com/gh/adobe/xdm)
 
 The [Experience Data Model](https://www.adobe.io/open/standards/xdm) (XDM) is the language of digital experiences.
-XDM is a publicly documented specification, driven by Adobe to improve the interoperability, expressivness, and power of digital experiences.
+XDM is a publicly documented specification, driven by Adobe to improve the interoperability, expressiveness, and power of digital experiences.
 This repository contains the source code for the formal specification of the XDM model, using the JSON Schema language.
+
+## Current Version
+
+XDM is at version `0.9`. You can find more about our versioning in [docs/introduction.md](docs/introduction.md#versioning)
 
 ## Read the XDM Spec
 
@@ -49,9 +53,40 @@ You need:
 1.  Node.js and `npm`
 2.  `curl`
 
-### AEM Package Generation
+### Validation of local changes prior to creating any Pull Requests to adobe/xdm
 
-When all dependencies are installed, simply run
+This project contains a minimal validation script that depends on [NPM](https://www.npmjs.com). You can use it to validate the JSON example files against the JSON Schema files after making changes to either.
+
+From the root directory of the local repository run:
+
+```bash
+$ npm install
+$ npm test
+
+> xdm-models@0.0.1 test /Users/lars/Code/models
+> sh validate.sh
+
+Validating schemas/common/eventenvelope.example.1.json against schemas/common/eventenvelope.schema.json
+schemas/common/eventenvelope.example.1.json valid
+Validating schemas/common/eventenvelope.example.2.json against schemas/common/eventenvelope.schema.json
+schemas/common/eventenvelope.example.2.json valid
+Validating schemas/common/eventenvelope.example.3.json against schemas/common/eventenvelope.schema.json
+schemas/common/eventenvelope.example.3.json valid
+Validating schemas/common/eventenvelope.example.4.json against schemas/common/eventenvelope.schema.json
+schemas/common/eventenvelope.example.4.json valid
+Validating schemas/common/eventenvelope.example.5.json against schemas/common/eventenvelope.schema.json
+schemas/common/eventenvelope.example.5.json valid
+```
+
+If you see warnings or error messages (or an non-zero exit code), fix them before making a pull request.
+
+## Naming Conventions
+
+* see the [Contributor's guide](CONTRIBUTING.md)
+
+### AEM Package Generation (optional)
+
+With all dependencies installed, run the following commands from the root directory of the local repository:
 
 ```bash
 $ npm install
@@ -92,35 +127,6 @@ This will generate documentation, create an AEM package, install it on (stage) a
 #### A Note on Dependencies
 
 The `package.json` script will fetch a released version of the AEM Markdown Importer JAR using curl.
-
-### Validation
-
-This project contains a minimal validation script that depends on [NPM](https://www.npmjs.com). You can use it to validate the JSON example files against the JSON Schema files after making changes to either.
-
-```bash
-$ npm install
-$ npm test
-
-> xdm-models@0.0.1 test /Users/lars/Code/models
-> sh validate.sh
-
-Validating schemas/common/eventenvelope.example.1.json against schemas/common/eventenvelope.schema.json
-schemas/common/eventenvelope.example.1.json valid
-Validating schemas/common/eventenvelope.example.2.json against schemas/common/eventenvelope.schema.json
-schemas/common/eventenvelope.example.2.json valid
-Validating schemas/common/eventenvelope.example.3.json against schemas/common/eventenvelope.schema.json
-schemas/common/eventenvelope.example.3.json valid
-Validating schemas/common/eventenvelope.example.4.json against schemas/common/eventenvelope.schema.json
-schemas/common/eventenvelope.example.4.json valid
-Validating schemas/common/eventenvelope.example.5.json against schemas/common/eventenvelope.schema.json
-schemas/common/eventenvelope.example.5.json valid
-```
-
-If you see warnings or error messages (or an non-zero exit code), fix them before making a pull request.
-
-## Naming Conventions
-
-* see the [Contributor's guide](CONTRIBUTING.md)
 
 ## Links
 

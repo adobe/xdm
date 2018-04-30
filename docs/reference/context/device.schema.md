@@ -7,15 +7,15 @@ https://ns.adobe.com/xdm/context/device
 
 An identified device that is an application or browser instance that is trackable across sessions, normally by cookies.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [context/device.schema.json](context/device.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/device.schema.json](context/device.schema.json) |
 
 ## Device Example
 ```json
 {
   "xdm:typeID": "TypeIdentifier-111",
-  "xdm:typeIDService": "https://ns.adobe.com/external/deviceatlas",
+  "xdm:typeIDService": "https://ns.adobe.com/xdm/external/deviceatlas",
   "xdm:type": "mobile",
   "xdm:manufacturer": "Apple",
   "xdm:model": "iPhone 6",
@@ -30,15 +30,15 @@ An identified device that is an application or browser instance that is trackabl
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:colorDepth](#xdmcolorDepth) | `integer` | Optional | Device (this schema) |
+| [xdm:colorDepth](#xdmcolordepth) | `integer` | Optional | Device (this schema) |
 | [xdm:manufacturer](#xdmmanufacturer) | `string` | Optional | Device (this schema) |
 | [xdm:model](#xdmmodel) | `string` | Optional | Device (this schema) |
-| [xdm:modelNumber](#xdmmodelNumber) | `string` | Optional | Device (this schema) |
-| [xdm:screenHeight](#xdmscreenHeight) | `integer` | Optional | Device (this schema) |
-| [xdm:screenWidth](#xdmscreenWidth) | `integer` | Optional | Device (this schema) |
+| [xdm:modelNumber](#xdmmodelnumber) | `string` | Optional | Device (this schema) |
+| [xdm:screenHeight](#xdmscreenheight) | `integer` | Optional | Device (this schema) |
+| [xdm:screenWidth](#xdmscreenwidth) | `integer` | Optional | Device (this schema) |
 | [xdm:type](#xdmtype) | `string` | Optional | Device (this schema) |
-| [xdm:typeID](#xdmtypeID) | `string` | Optional | Device (this schema) |
-| [xdm:typeIDService](#xdmtypeIDService) | `string` | Optional | Device (this schema) |
+| [xdm:typeID](#xdmtypeid) | `string` | Optional | Device (this schema) |
+| [xdm:typeIDService](#xdmtypeidservice) | `string` | Optional | Device (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:colorDepth
@@ -64,7 +64,7 @@ The number of colors the display is able to represent.
 ## xdm:manufacturer
 ### Manufacturer
 
-The name of the organization who owns the design and creation of the Device. For example, &#39;Apple&#39; is the manufacturer of the iPhone.
+The name of the organization who owns the design and creation of the Device. For example, 'Apple' is the manufacturer of the iPhone.
 
 `xdm:manufacturer`
 * is optional
@@ -84,7 +84,7 @@ The name of the organization who owns the design and creation of the Device. For
 ## xdm:model
 ### Model
 
-The name of the model for the Device. This is the common, human-readable or marketing name for the Device. The &#39;iPhone 6S&#39; is a particular model of mobile phone.
+The name of the model for the Device. This is the common, human-readable or marketing name for the Device. The 'iPhone 6S' is a particular model of mobile phone.
 
 `xdm:model`
 * is optional
@@ -104,7 +104,7 @@ The name of the model for the Device. This is the common, human-readable or mark
 ## xdm:modelNumber
 ### Model Number
 
-The unique model number designation assigned by the manufacturer for this Device. Model numbers are not versions, but unique identifiers that identify a particular model configuration. While the model for a particular phone might be &#39;iPhone 6S&#39; the model number would be &#39;A1633&#39;, or &#39;A1634&#39; based on configuration at the time of sale.
+The unique model number designation assigned by the manufacturer for this Device. Model numbers are not versions, but unique identifiers that identify a particular model configuration. While the model for a particular phone might be 'iPhone 6S' the model number would be 'A1633', or 'A1634' based on configuration at the time of sale.
 
 `xdm:modelNumber`
 * is optional
@@ -124,7 +124,7 @@ The unique model number designation assigned by the manufacturer for this Device
 ## xdm:screenHeight
 ### Screen Height
 
-The number of veritcal pixels of the device&#39;s active display in its default orientation.
+The number of veritcal pixels of the device's active display in its default orientation.
 
 `xdm:screenHeight`
 * is optional
@@ -144,7 +144,7 @@ The number of veritcal pixels of the device&#39;s active display in its default 
 ## xdm:screenWidth
 ### Screen Width
 
-The number of horizontal pixels of the device&#39;s active display in its default orientation.
+The number of horizontal pixels of the device's active display in its default orientation.
 
 `xdm:screenWidth`
 * is optional
@@ -234,7 +234,8 @@ The namespace of the service that is used to identify the device type.
 ### xdm:typeIDService Known Values
 | Value | Description |
 |-------|-------------|
-| `https://ns.adobe.com/external/deviceatlas` | Device Atlas |
+| `https://ns.adobe.com/xdm/external/deviceatlas` | Device Atlas |
+| `https://ns.adobe.com/xdm/external/adobecampaign` | Adobe Campaign |
 
 
 

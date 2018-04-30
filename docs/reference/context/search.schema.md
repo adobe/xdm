@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/context/search
 
 Information about web search activity.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [context/search.schema.json](context/search.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/search.schema.json](context/search.schema.json) |
 
 ## Search Example
 ```json
@@ -25,10 +25,10 @@ Information about web search activity.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:isPaid](#xdmisPaid) | `boolean` | Optional | Search (this schema) |
+| [xdm:isPaid](#xdmispaid) | `boolean` | Optional | Search (this schema) |
 | [xdm:keywords](#xdmkeywords) | `string` | Optional | Search (this schema) |
-| [xdm:pageDepth](#xdmpageDepth) | `number` | Optional | Search (this schema) |
-| [xdm:searchEngine](#xdmsearchEngine) | `string` | Optional | Search (this schema) |
+| [xdm:pageDepth](#xdmpagedepth) | `number` | Optional | Search (this schema) |
+| [xdm:searchEngine](#xdmsearchengine) | `string` | Optional | Search (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:isPaid

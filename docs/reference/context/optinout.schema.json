@@ -31,6 +31,7 @@
         "optinout": {
             "meta:keys": {
                 "https://ns.adobe.com/xdm/channels/adm": "ADM",
+                "https://ns.adobe.com/xdm/channels/agency": "Agency",
                 "https://ns.adobe.com/xdm/channels/apns": "APNS",
                 "https://ns.adobe.com/xdm/channels/application": "Application",
                 "https://ns.adobe.com/xdm/channels/baidu": "Baidu",
@@ -111,6 +112,7 @@
             "$ref": "#/definitions/optinout"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "https://ns.adobe.com/xdm/channels/email": "pending",

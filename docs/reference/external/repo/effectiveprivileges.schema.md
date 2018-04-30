@@ -2,14 +2,14 @@
 # Effective Privileges Schema
 
 ```
-https://ns.adobe.com/xdm/base/effectiveprivileges
+https://ns.adobe.com/xdm/external/repo/effectiveprivileges
 ```
 
 Schema for the Effective Privileges resource
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [external/repo/effectiveprivileges.schema.json](external/repo/effectiveprivileges.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/repo/effectiveprivileges.schema.json](external/repo/effectiveprivileges.schema.json) |
 
 ## Effective Privileges Example
 ```json

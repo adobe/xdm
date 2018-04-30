@@ -7,16 +7,16 @@ https://ns.adobe.com/xdm/external/activity-streams-2/collection
 
 A `Collection` is a subtype of `[Object](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object)` that represents ordered or unordered sets of `[Object](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object) or [Link](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-link)` instances. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-collection) specification for a complete description of the `Collection` type.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [external/activity-streams-2/collection.schema.json](external/activity-streams-2/collection.schema.json) |
-
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/activity-streams-2/collection.schema.json](external/activity-streams-2/collection.schema.json) |
 ## Schema Hierarchy
 
 * Collection `https://ns.adobe.com/xdm/external/activity-streams-2/collection`
   * [Object](object.schema.md) `https://ns.adobe.com/xdm/external/activity-streams-2/object`
   * [Collection Page](collection-page.schema.md) `https://ns.adobe.com/xdm/external/activity-streams-2/collection-page`
   * [Link](link.schema.md) `https://ns.adobe.com/xdm/external/activity-streams-2/link`
+
 
 ## Collection Example
 ```json
@@ -45,7 +45,7 @@ A `Collection` is a subtype of `[Object](https://www.w3.org/TR/activitystreams-v
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [activitystreams:attachment](#activitystreamsattachment) | complex | Optional | [Object](object.schema.md#activitystreamsattachment) |
-| [activitystreams:attributedTo](#activitystreamsattributedTo) | complex | Optional | [Object](object.schema.md#activitystreamsattributedTo) |
+| [activitystreams:attributedTo](#activitystreamsattributedto) | complex | Optional | [Object](object.schema.md#activitystreamsattributedto) |
 | [activitystreams:audience](#activitystreamsaudience) | complex | Optional | [Object](object.schema.md#activitystreamsaudience) |
 | [activitystreams:bcc](#activitystreamsbcc) | complex | Optional | [Object](object.schema.md#activitystreamsbcc) |
 | [activitystreams:bto](#activitystreamsbto) | complex | Optional | [Object](object.schema.md#activitystreamsbto) |
@@ -54,25 +54,25 @@ A `Collection` is a subtype of `[Object](https://www.w3.org/TR/activitystreams-v
 | [activitystreams:context](#activitystreamscontext) | complex | Optional | [Object](object.schema.md#activitystreamscontext) |
 | [activitystreams:current](#activitystreamscurrent) | complex | Optional | Collection (this schema) |
 | [activitystreams:duration](#activitystreamsduration) | `string` | Optional | [Object](object.schema.md#activitystreamsduration) |
-| [activitystreams:endTime](#activitystreamsendTime) | `string` | Optional | [Object](object.schema.md#activitystreamsendTime) |
+| [activitystreams:endTime](#activitystreamsendtime) | `string` | Optional | [Object](object.schema.md#activitystreamsendtime) |
 | [activitystreams:first](#activitystreamsfirst) | complex | Optional | Collection (this schema) |
 | [activitystreams:generator](#activitystreamsgenerator) | complex | Optional | [Object](object.schema.md#activitystreamsgenerator) |
 | [activitystreams:icon](#activitystreamsicon) | complex | Optional | [Object](object.schema.md#activitystreamsicon) |
 | [activitystreams:image](#activitystreamsimage) | complex | Optional | [Object](object.schema.md#activitystreamsimage) |
-| [activitystreams:inReplyTo](#activitystreamsinReplyTo) | complex | Optional | [Object](object.schema.md#activitystreamsinReplyTo) |
+| [activitystreams:inReplyTo](#activitystreamsinreplyto) | complex | Optional | [Object](object.schema.md#activitystreamsinreplyto) |
 | [activitystreams:items](#activitystreamsitems) | complex | Optional | Collection (this schema) |
 | [activitystreams:last](#activitystreamslast) | complex | Optional | Collection (this schema) |
 | [activitystreams:location](#activitystreamslocation) | complex | Optional | [Object](object.schema.md#activitystreamslocation) |
-| [activitystreams:mediaType](#activitystreamsmediaType) | `string` | Optional | [Object](object.schema.md#activitystreamsmediaType) |
+| [activitystreams:mediaType](#activitystreamsmediatype) | `string` | Optional | [Object](object.schema.md#activitystreamsmediatype) |
 | [activitystreams:name](#activitystreamsname) | complex | Optional | [Object](object.schema.md#activitystreamsname) |
 | [activitystreams:preview](#activitystreamspreview) | complex | Optional | [Object](object.schema.md#activitystreamspreview) |
 | [activitystreams:published](#activitystreamspublished) | `string` | Optional | [Object](object.schema.md#activitystreamspublished) |
 | [activitystreams:replies](#activitystreamsreplies) | Collection | Optional | [Object](object.schema.md#activitystreamsreplies) |
-| [activitystreams:startTime](#activitystreamsstartTime) | `string` | Optional | [Object](object.schema.md#activitystreamsstartTime) |
+| [activitystreams:startTime](#activitystreamsstarttime) | `string` | Optional | [Object](object.schema.md#activitystreamsstarttime) |
 | [activitystreams:summary](#activitystreamssummary) | complex | Optional | [Object](object.schema.md#activitystreamssummary) |
 | [activitystreams:tag](#activitystreamstag) | complex | Optional | [Object](object.schema.md#activitystreamstag) |
 | [activitystreams:to](#activitystreamsto) | complex | Optional | [Object](object.schema.md#activitystreamsto) |
-| [activitystreams:totalItems](#activitystreamstotalItems) | `integer` | Optional | Collection (this schema) |
+| [activitystreams:totalItems](#activitystreamstotalitems) | `integer` | Optional | Collection (this schema) |
 | [activitystreams:updated](#activitystreamsupdated) | `string` | Optional | [Object](object.schema.md#activitystreamsupdated) |
 | [activitystreams:url](#activitystreamsurl) | complex | Optional | [Object](object.schema.md#activitystreamsurl) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -615,7 +615,7 @@ The content or textual representation of the Object encoded as a JSON string. By
 
 ## activitystreams:context
 
-Identifies the context within which the object exists or an activity was performed. The notion of &#39;context&#39; used is intentionally vague. The intended function is to serve as a means of grouping objects and activities that share a common originating context or purpose. An example could be all activities relating to a common project or event. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-context) document for a complete description.
+Identifies the context within which the object exists or an activity was performed. The notion of 'context' used is intentionally vague. The intended function is to serve as a means of grouping objects and activities that share a common originating context or purpose. An example could be all activities relating to a common project or event. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-context) document for a complete description.
 
 `activitystreams:context`
 * is optional
@@ -1588,7 +1588,7 @@ A natural language summarization of the object encoded as HTML. Multiple languag
 
 ## activitystreams:tag
 
-One or more &#39;tags&#39; that have been associated with an objects. A tag can be any kind of Object. The key difference between attachment and tag is that the former implies association by inclusion, while the latter implies associated by reference. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-tag) document for a complete description.
+One or more 'tags' that have been associated with an objects. A tag can be any kind of Object. The key difference between attachment and tag is that the former implies association by inclusion, while the latter implies associated by reference. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-tag) document for a complete description.
 
 `activitystreams:tag`
 * is optional

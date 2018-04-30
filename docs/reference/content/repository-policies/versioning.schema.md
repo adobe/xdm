@@ -8,9 +8,9 @@ https://ns.adobe.com/xdm/content/repository-policies/versioning
 Versioning policy represents how versioning for content stored in this specific part of the repository is behaving.
 
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Cannot be instantiated | Yes | Forbidden | Permitted | [content/repository-policies/versioning.schema.json](content/repository-policies/versioning.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Cannot be instantiated | Yes | Experimental | No | Forbidden | Permitted | [content/repository-policies/versioning.schema.json](content/repository-policies/versioning.schema.json) |
 
 ## Versioning Example
 ```json
@@ -24,8 +24,8 @@ Versioning policy represents how versioning for content stored in this specific 
 
 | Property | Type | Group |
 |----------|------|-------|
-| [xdm:maxMilestones](#xdm:maxMilestones) | `integer` | `https://ns.adobe.com/xdm/content/repository-policies/versioning#/definitions/versioning` |
-| [xdm:retentionTime](#xdm:retentionTime) | `integer` | `https://ns.adobe.com/xdm/content/repository-policies/versioning#/definitions/versioning` |
+| [xdm:maxMilestones](#xdmmaxmilestones) | `integer` | `https://ns.adobe.com/xdm/content/repository-policies/versioning#/definitions/versioning` |
+| [xdm:retentionTime](#xdmretentiontime) | `integer` | `https://ns.adobe.com/xdm/content/repository-policies/versioning#/definitions/versioning` |
 
 ## xdm:maxMilestones
 

@@ -7,15 +7,15 @@ https://ns.adobe.com/xdm/channels/phone
 
 The telephone. Includes both inbound and outbound.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [channels/phone.schema.json](channels/phone.schema.json) |
-
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [channels/phone.schema.json](channels/phone.schema.json) |
 ## Schema Hierarchy
 
 * Phone `https://ns.adobe.com/xdm/channels/phone`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
+
 
 ## Phone Example
 ```json
@@ -31,9 +31,9 @@ The telephone. Includes both inbound and outbound.
 |----------|------|----------|------------|
 | [@id](#@id) | `const` | **Required** | Phone (this schema) |
 | [@type](#@type) | `const` | Optional | Phone (this schema) |
-| [xdm:contentTypes](#xdmcontentTypes) | `const` | Optional | Phone (this schema) |
-| [xdm:locationTypes](#xdmlocationTypes) | `const` | Optional | Phone (this schema) |
-| [xdm:metricTypes](#xdmmetricTypes) | `const` | Optional | Phone (this schema) |
+| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | Phone (this schema) |
+| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | Phone (this schema) |
+| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | Phone (this schema) |
 | [xdm:mode](#xdmmode) | `const` | Optional | Phone (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 

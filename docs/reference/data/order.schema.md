@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/data/order
 
 The order placed for a product list.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [data/order.schema.json](data/order.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/order.schema.json](data/order.schema.json) |
 
 ## Order Example
 ```json

@@ -7,9 +7,9 @@ http://ns.adobe.com/adobecloud/core/1.0/asset
 
 An asset in Adobe Cloud Platform. It is not neccessarily a Digital Asset in the sense of Digital Asset Management, but a piece of content or data that can be represented in the form of a file.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [external/repo/asset.schema.json](external/repo/asset.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/repo/asset.schema.json](external/repo/asset.schema.json) |
 ## Schema Hierarchy
 
 * Asset `http://ns.adobe.com/adobecloud/core/1.0/asset`

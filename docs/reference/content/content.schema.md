@@ -19,9 +19,9 @@ _Content is created by human editors_ in an editorial process that involves crea
 _Content is created for human audiences_, which gives the content the ultimate value.
 
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [content/content.schema.json](content/content.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [content/content.schema.json](content/content.schema.json) |
 ## Schema Hierarchy
 
 * Content `https://ns.adobe.com/xdm/content/content`

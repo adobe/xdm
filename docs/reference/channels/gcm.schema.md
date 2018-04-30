@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/channels/gcm
 
 Google Cloud Messaging
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [channels/gcm.schema.json](channels/gcm.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [channels/gcm.schema.json](channels/gcm.schema.json) |
 ## Schema Hierarchy
 
 * GCM `https://ns.adobe.com/xdm/channels/gcm`

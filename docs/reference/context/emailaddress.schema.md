@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/context/emailaddress
 
 A standard email address.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Stabilizing | Forbidden | Permitted | [context/emailaddress.schema.json](context/emailaddress.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/emailaddress.schema.json](context/emailaddress.schema.json) |
 
 ## Email Address Example
 ```json

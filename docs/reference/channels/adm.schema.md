@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/channels/adm
 
 Amazon Device Messaging
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [channels/adm.schema.json](channels/adm.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [channels/adm.schema.json](channels/adm.schema.json) |
 ## Schema Hierarchy
 
 * ADM `https://ns.adobe.com/xdm/channels/adm`

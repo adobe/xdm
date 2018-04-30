@@ -2,14 +2,14 @@
 # Customer Managed Environment Schema
 
 ```
-https://ns.adobe.com/xdm/selfservice
+https://ns.adobe.com/xdm/common/selfservice
 ```
 
 A Customer Managed Environment is an environment that allows a system integration or deployer to manage applications. This is also known as selfservice.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [common/selfservice.schema.json](common/selfservice.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [common/selfservice.schema.json](common/selfservice.schema.json) |
 
 ## Customer Managed Environment Example
 ```json
@@ -26,21 +26,21 @@ A Customer Managed Environment is an environment that allows a system integratio
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:CICDPipeline](#xdmCICDPipeline) | `string` | Optional | Customer Managed Environment (this schema) |
+| [xdm:CICDPipeline](#xdmcicdpipeline) | `string` | Optional | Customer Managed Environment (this schema) |
 | [xdm:application](#xdmapplication) | `string` | **Required** | Customer Managed Environment (this schema) |
-| [xdm:applicationOwner](#xdmapplicationOwner) | `string` | Optional | Customer Managed Environment (this schema) |
+| [xdm:applicationOwner](#xdmapplicationowner) | `string` | Optional | Customer Managed Environment (this schema) |
 | [xdm:artifact](#xdmartifact) | `string` | Optional | Customer Managed Environment (this schema) |
-| [xdm:artifactRepository](#xdmartifactRepository) | `string` | Optional | Customer Managed Environment (this schema) |
+| [xdm:artifactRepository](#xdmartifactrepository) | `string` | Optional | Customer Managed Environment (this schema) |
 | [xdm:cluster](#xdmcluster) | `string` | Optional | Customer Managed Environment (this schema) |
-| [xdm:codeRepository](#xdmcodeRepository) | `string` | Optional | Customer Managed Environment (this schema) |
+| [xdm:codeRepository](#xdmcoderepository) | `string` | Optional | Customer Managed Environment (this schema) |
 | [xdm:deployment](#xdmdeployment) | `string` | Optional | Customer Managed Environment (this schema) |
 | [xdm:environment](#xdmenvironment) | `string` | **Required** | Customer Managed Environment (this schema) |
 | [xdm:provisioning](#xdmprovisioning) | `string` | Optional | Customer Managed Environment (this schema) |
-| [xdm:qualityGateState](#xdmqualityGateState) | `object` | Optional | Customer Managed Environment (this schema) |
-| [xdm:runningInstance](#xdmrunningInstance) | `string` | Optional | Customer Managed Environment (this schema) |
-| [xdm:selfServiceAPI](#xdmselfServiceAPI) | `string` | Optional | Customer Managed Environment (this schema) |
-| [xdm:selfServiceBuild](#xdmselfServiceBuild) | `string` | Optional | Customer Managed Environment (this schema) |
-| [xdm:selfServiceUI](#xdmselfServiceUI) | `string` | Optional | Customer Managed Environment (this schema) |
+| [xdm:qualityGateState](#xdmqualitygatestate) | `object` | Optional | Customer Managed Environment (this schema) |
+| [xdm:runningInstance](#xdmrunninginstance) | `string` | Optional | Customer Managed Environment (this schema) |
+| [xdm:selfServiceAPI](#xdmselfserviceapi) | `string` | Optional | Customer Managed Environment (this schema) |
+| [xdm:selfServiceBuild](#xdmselfservicebuild) | `string` | Optional | Customer Managed Environment (this schema) |
+| [xdm:selfServiceUI](#xdmselfserviceui) | `string` | Optional | Customer Managed Environment (this schema) |
 | [xdm:service](#xdmservice) | `string` | Optional | Customer Managed Environment (this schema) |
 | [xdm:tenant](#xdmtenant) | `string` | **Required** | Customer Managed Environment (this schema) |
 | [xdm:topology](#xdmtopology) | `string` | Optional | Customer Managed Environment (this schema) |

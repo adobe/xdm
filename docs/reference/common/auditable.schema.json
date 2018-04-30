@@ -37,7 +37,7 @@
                     "title": "Modified by Batch Identifier",
                     "type": "string",
                     "format": "uri",
-                    "description": "The last Data Set Files in Catalog Services which has modified the entity.\nAt creation time, `modifiedByBatchId` is set as `createdByBatchId`.\n"
+                    "description": "The last Data Set Files in Catalog Services which has modified the entity.\nAt creation time, `modifiedByBatchID` is set as `createdByBatchID`.\n"
                 }
             }
         }
@@ -50,6 +50,7 @@
             "$ref": "http://ns.adobe.com/adobecloud/core/1.0#/definitions/date-properties"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "repo:createdDate": "2018-01-12T15:52:25+00:00",

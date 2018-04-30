@@ -7,16 +7,16 @@ https://ns.adobe.com/xdm/external/activity-streams-2/collection-page
 
 Used to represent distinct subsets of items from a `Collection`. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-collectionpage) for a complete description of the `CollectionPage` object.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [external/activity-streams-2/collection-page.schema.json](external/activity-streams-2/collection-page.schema.json) |
-
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/activity-streams-2/collection-page.schema.json](external/activity-streams-2/collection-page.schema.json) |
 ## Schema Hierarchy
 
 * Collection Page `https://ns.adobe.com/xdm/external/activity-streams-2/collection-page`
   * [Collection](collection.schema.md) `https://ns.adobe.com/xdm/external/activity-streams-2/collection`
   * [Link](link.schema.md) `https://ns.adobe.com/xdm/external/activity-streams-2/link`
   * [Collection Page](collection-page.schema.md) `https://ns.adobe.com/xdm/external/activity-streams-2/collection-page`
+
 
 ## Collection Page Example
 ```json
@@ -50,9 +50,9 @@ Used to represent distinct subsets of items from a `Collection`. Refer to the [A
 | [activitystreams:items](#activitystreamsitems) | complex | Optional | [Collection](collection.schema.md#activitystreamsitems) |
 | [activitystreams:last](#activitystreamslast) | complex | Optional | [Collection](collection.schema.md#activitystreamslast) |
 | [activitystreams:next](#activitystreamsnext) | complex | Optional | Collection Page (this schema) |
-| [activitystreams:partOf](#activitystreamspartOf) | complex | Optional | Collection Page (this schema) |
+| [activitystreams:partOf](#activitystreamspartof) | complex | Optional | Collection Page (this schema) |
 | [activitystreams:prev](#activitystreamsprev) | complex | Optional | Collection Page (this schema) |
-| [activitystreams:totalItems](#activitystreamstotalItems) | `integer` | Optional | [Collection](collection.schema.md#activitystreamstotalItems) |
+| [activitystreams:totalItems](#activitystreamstotalitems) | `integer` | Optional | [Collection](collection.schema.md#activitystreamstotalitems) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## activitystreams:current

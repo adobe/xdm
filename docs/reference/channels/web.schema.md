@@ -7,15 +7,15 @@ https://ns.adobe.com/xdm/channels/web
 
 The world wide web and mobile web. Pages delivered via HTTP to a web browser or in-app browser.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [channels/web.schema.json](channels/web.schema.json) |
-
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [channels/web.schema.json](channels/web.schema.json) |
 ## Schema Hierarchy
 
 * Web `https://ns.adobe.com/xdm/channels/web`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
+
 
 ## Web Example
 ```json
@@ -31,9 +31,9 @@ The world wide web and mobile web. Pages delivered via HTTP to a web browser or 
 |----------|------|----------|------------|
 | [@id](#@id) | `const` | **Required** | Web (this schema) |
 | [@type](#@type) | `const` | Optional | Web (this schema) |
-| [xdm:contentTypes](#xdmcontentTypes) | `const` | Optional | Web (this schema) |
-| [xdm:locationTypes](#xdmlocationTypes) | `const` | Optional | Web (this schema) |
-| [xdm:metricTypes](#xdmmetricTypes) | `const` | Optional | Web (this schema) |
+| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | Web (this schema) |
+| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | Web (this schema) |
+| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | Web (this schema) |
 | [xdm:mode](#xdmmode) | `const` | Optional | Web (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 

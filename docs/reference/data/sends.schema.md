@@ -5,11 +5,11 @@
 https://ns.adobe.com/xdm/data/metrics/direct-marketing/sends
 ```
 
-The direct-marketing metric sends describes the number of asynchronous messages (email, SMS, MMS etc) that have been dispatched to an recipient&#39;s account/address/device
+The direct-marketing metric sends describes the number of asynchronous messages (email, SMS, MMS etc) that have been dispatched to an recipient's account/address/device
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [data/sends.schema.json](data/sends.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [data/sends.schema.json](data/sends.schema.json) |
 
 ## sends Example
 ```json

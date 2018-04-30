@@ -7,15 +7,15 @@ https://ns.adobe.com/xdm/external/activity-streams-2/activity
 
 An [Activity](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-activity) is a subtype of `[Object](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object)` that describes some form of action that may happen, is currently happening, or has already happened. The `Activity` type itself serves as an abstract base type for all types of activities. It is important to note that the `Activity` type itself does not carry any specific semantics about the kind of action being taken.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [external/activity-streams-2/activity.schema.json](external/activity-streams-2/activity.schema.json) |
-
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/activity-streams-2/activity.schema.json](external/activity-streams-2/activity.schema.json) |
 ## Schema Hierarchy
 
 * Activity `https://ns.adobe.com/xdm/external/activity-streams-2/activity`
   * [Object](object.schema.md) `https://ns.adobe.com/xdm/external/activity-streams-2/object`
   * [Link](link.schema.md) `https://ns.adobe.com/xdm/external/activity-streams-2/link`
+
 
 ## Activity Example
 ```json
@@ -25,22 +25,22 @@ An [Activity](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-activity) is
     "xdm": "https://ns.adobe.com/xdm/"
   },
   "@id": "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
-  "@type": "https://ns.adobe.com/xdm/common/event/created#",
+  "@type": "https://ns.adobe.com/xdm/common/event/created",
   "activitystreams:published": "2016-07-16T19:20:30+01:00",
   "activitystreams:to": {
-    "https://ns.adobe.com/xdm-extensions/ims/user#id": "D13A1E7053E46A220A4C86E1@AdobeID",
-    "@type": "https://ns.adobe.com/xdm-extensions/ims/user#"
+    "https://ns.adobe.com/adobecloudplatform/ims/user#id": "D13A1E7053E46A220A4C86E1@AdobeID",
+    "@type": "https://ns.adobe.com/adobecloudplatform/ims/user"
   },
   "activitystreams:generator": {
     "xdm:root": "https://cc-api-storage.adobe.io/",
-    "@type": "https://ns.adobe.com/xdm/content/repository#"
+    "@type": "https://ns.adobe.com/xdm/content/repository"
   },
   "activitystreams:actor": {
-    "https://ns.adobe.com/xdm-extensions/ims/user#id": "D13A1E7053E46A220A4C86E1@AdobeID",
-    "@type": "https://ns.adobe.com/xdm-extensions/ims/user#"
+    "https://ns.adobe.com/adobecloudplatform/ims/user#id": "D13A1E7053E46A220A4C86E1@AdobeID",
+    "@type": "https://ns.adobe.com/adobecloudplatform/ims/user"
   },
   "activitystreams:object": {
-    "@type": "http://ns.adobe.com/xdm/assets/asset#",
+    "@type": "https://ns.adobe.com/xdm/assets/asset",
     "xdm:asset_id": "urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
     "xdm:asset_name": "example.jpg",
     "repo:etag": "6fc55d0389d856ae7deccebba54f110e",
@@ -56,7 +56,7 @@ An [Activity](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-activity) is
 |----------|------|----------|------------|
 | [activitystreams:actor](#activitystreamsactor) | complex | Optional | Activity (this schema) |
 | [activitystreams:attachment](#activitystreamsattachment) | complex | Optional | [Object](object.schema.md#activitystreamsattachment) |
-| [activitystreams:attributedTo](#activitystreamsattributedTo) | complex | Optional | [Object](object.schema.md#activitystreamsattributedTo) |
+| [activitystreams:attributedTo](#activitystreamsattributedto) | complex | Optional | [Object](object.schema.md#activitystreamsattributedto) |
 | [activitystreams:audience](#activitystreamsaudience) | complex | Optional | [Object](object.schema.md#activitystreamsaudience) |
 | [activitystreams:bcc](#activitystreamsbcc) | complex | Optional | [Object](object.schema.md#activitystreamsbcc) |
 | [activitystreams:bto](#activitystreamsbto) | complex | Optional | [Object](object.schema.md#activitystreamsbto) |
@@ -64,14 +64,14 @@ An [Activity](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-activity) is
 | [activitystreams:content](#activitystreamscontent) | complex | Optional | [Object](object.schema.md#activitystreamscontent) |
 | [activitystreams:context](#activitystreamscontext) | complex | Optional | [Object](object.schema.md#activitystreamscontext) |
 | [activitystreams:duration](#activitystreamsduration) | `string` | Optional | [Object](object.schema.md#activitystreamsduration) |
-| [activitystreams:endTime](#activitystreamsendTime) | `string` | Optional | [Object](object.schema.md#activitystreamsendTime) |
+| [activitystreams:endTime](#activitystreamsendtime) | `string` | Optional | [Object](object.schema.md#activitystreamsendtime) |
 | [activitystreams:generator](#activitystreamsgenerator) | complex | Optional | [Object](object.schema.md#activitystreamsgenerator) |
 | [activitystreams:icon](#activitystreamsicon) | complex | Optional | [Object](object.schema.md#activitystreamsicon) |
 | [activitystreams:image](#activitystreamsimage) | complex | Optional | [Object](object.schema.md#activitystreamsimage) |
-| [activitystreams:inReplyTo](#activitystreamsinReplyTo) | complex | Optional | [Object](object.schema.md#activitystreamsinReplyTo) |
+| [activitystreams:inReplyTo](#activitystreamsinreplyto) | complex | Optional | [Object](object.schema.md#activitystreamsinreplyto) |
 | [activitystreams:instrument](#activitystreamsinstrument) | complex | Optional | Activity (this schema) |
 | [activitystreams:location](#activitystreamslocation) | complex | Optional | [Object](object.schema.md#activitystreamslocation) |
-| [activitystreams:mediaType](#activitystreamsmediaType) | `string` | Optional | [Object](object.schema.md#activitystreamsmediaType) |
+| [activitystreams:mediaType](#activitystreamsmediatype) | `string` | Optional | [Object](object.schema.md#activitystreamsmediatype) |
 | [activitystreams:name](#activitystreamsname) | complex | Optional | [Object](object.schema.md#activitystreamsname) |
 | [activitystreams:object](#activitystreamsobject) | complex | Optional | Activity (this schema) |
 | [activitystreams:origin](#activitystreamsorigin) | complex | Optional | Activity (this schema) |
@@ -79,7 +79,7 @@ An [Activity](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-activity) is
 | [activitystreams:published](#activitystreamspublished) | `string` | Optional | [Object](object.schema.md#activitystreamspublished) |
 | [activitystreams:replies](#activitystreamsreplies) | Collection | Optional | [Object](object.schema.md#activitystreamsreplies) |
 | [activitystreams:result](#activitystreamsresult) | complex | Optional | Activity (this schema) |
-| [activitystreams:startTime](#activitystreamsstartTime) | `string` | Optional | [Object](object.schema.md#activitystreamsstartTime) |
+| [activitystreams:startTime](#activitystreamsstarttime) | `string` | Optional | [Object](object.schema.md#activitystreamsstarttime) |
 | [activitystreams:summary](#activitystreamssummary) | complex | Optional | [Object](object.schema.md#activitystreamssummary) |
 | [activitystreams:tag](#activitystreamstag) | complex | Optional | [Object](object.schema.md#activitystreamstag) |
 | [activitystreams:target](#activitystreamstarget) | complex | Optional | Activity (this schema) |
@@ -710,7 +710,7 @@ The content or textual representation of the Object encoded as a JSON string. By
 
 ## activitystreams:context
 
-Identifies the context within which the object exists or an activity was performed. The notion of &#39;context&#39; used is intentionally vague. The intended function is to serve as a means of grouping objects and activities that share a common originating context or purpose. An example could be all activities relating to a common project or event. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-context) document for a complete description.
+Identifies the context within which the object exists or an activity was performed. The notion of 'context' used is intentionally vague. The intended function is to serve as a means of grouping objects and activities that share a common originating context or purpose. An example could be all activities relating to a common project or event. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-context) document for a complete description.
 
 `activitystreams:context`
 * is optional
@@ -1404,7 +1404,7 @@ A simple, human-readable, plain-text name for the object. HTML markup must not b
 
 ## activitystreams:object
 
-When used within an Activity, describes the direct object of the activity. For instance, in the activity &#39;John added a movie to his wishlist&#39;, the object of the activity is the movie added. When used within a Relationship describes the entity to which the subject is related. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object) document for a complete description.
+When used within an Activity, describes the direct object of the activity. For instance, in the activity 'John added a movie to his wishlist', the object of the activity is the movie added. When used within a Relationship describes the entity to which the subject is related. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object) document for a complete description.
 
 `activitystreams:object`
 * is optional
@@ -1488,7 +1488,7 @@ Unknown type `anyOf`.
 
 ## activitystreams:origin
 
-Describes an indirect object of the activity from which the activity is directed. The precise meaning of the origin is the object of the English preposition &#39;from&#39;. For instance, in the activity &#39;John moved an item to List B from List A&#39;, the origin of the activity is &#39;List A&#39;. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-origin) document for a complete description.
+Describes an indirect object of the activity from which the activity is directed. The precise meaning of the origin is the object of the English preposition 'from'. For instance, in the activity 'John moved an item to List B from List A', the origin of the activity is 'List A'. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-origin) document for a complete description.
 
 `activitystreams:origin`
 * is optional
@@ -1830,7 +1830,7 @@ A natural language summarization of the object encoded as HTML. Multiple languag
 
 ## activitystreams:tag
 
-One or more &#39;tags&#39; that have been associated with an objects. A tag can be any kind of Object. The key difference between attachment and tag is that the former implies association by inclusion, while the latter implies associated by reference. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-tag) document for a complete description.
+One or more 'tags' that have been associated with an objects. A tag can be any kind of Object. The key difference between attachment and tag is that the former implies association by inclusion, while the latter implies associated by reference. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-tag) document for a complete description.
 
 `activitystreams:tag`
 * is optional
@@ -1914,7 +1914,7 @@ Unknown type `anyOf`.
 
 ## activitystreams:target
 
-Describes the indirect object, or target, of the activity. The precise meaning of the target is largely dependent on the type of action being described but will often be the object of the English preposition &#39;to&#39;. For instance, in the activity &#39;John added a movie to his wishlist&#39;, the target of the activity is John&#39;s wishlist. An activity can have more than one target. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-target) document for a complete description.
+Describes the indirect object, or target, of the activity. The precise meaning of the target is largely dependent on the type of action being described but will often be the object of the English preposition 'to'. For instance, in the activity 'John added a movie to his wishlist', the target of the activity is John's wishlist. An activity can have more than one target. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-target) document for a complete description.
 
 `activitystreams:target`
 * is optional

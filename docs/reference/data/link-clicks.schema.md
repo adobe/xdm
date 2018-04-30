@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/data/metrics/web/link-clicks
 
 The web metric link-clicks describes the number of clicks on a link on a web page.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [data/link-clicks.schema.json](data/link-clicks.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [data/link-clicks.schema.json](data/link-clicks.schema.json) |
 
 ## link-clicks Example
 ```json

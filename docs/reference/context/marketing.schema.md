@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/context/marketing
 
 The information related to marketing activities that are active with the touchpoint.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [context/marketing.schema.json](context/marketing.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/marketing.schema.json](context/marketing.schema.json) |
 
 ## Marketing Example
 ```json
@@ -22,7 +22,7 @@ The information related to marketing activities that are active with the touchpo
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:trackingCode](#xdmtrackingCode) | `string` | Optional | Marketing (this schema) |
+| [xdm:trackingCode](#xdmtrackingcode) | `string` | Optional | Marketing (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:trackingCode

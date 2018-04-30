@@ -7,15 +7,15 @@ https://ns.adobe.com/xdm/channels/baidu
 
 Baidu Cloud Push Service
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [channels/baidu.schema.json](channels/baidu.schema.json) |
-
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [channels/baidu.schema.json](channels/baidu.schema.json) |
 ## Schema Hierarchy
 
 * Baidu `https://ns.adobe.com/xdm/channels/baidu`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
+
 
 ## Baidu Example
 ```json
@@ -31,9 +31,9 @@ Baidu Cloud Push Service
 |----------|------|----------|------------|
 | [@id](#@id) | `const` | **Required** | Baidu (this schema) |
 | [@type](#@type) | `const` | Optional | Baidu (this schema) |
-| [xdm:contentTypes](#xdmcontentTypes) | `const` | Optional | Baidu (this schema) |
-| [xdm:locationTypes](#xdmlocationTypes) | `const` | Optional | Baidu (this schema) |
-| [xdm:metricTypes](#xdmmetricTypes) | `const` | Optional | Baidu (this schema) |
+| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | Baidu (this schema) |
+| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | Baidu (this schema) |
+| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | Baidu (this schema) |
 | [xdm:mode](#xdmmode) | `const` | Optional | Baidu (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 

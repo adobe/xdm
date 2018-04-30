@@ -58,6 +58,7 @@
             "$ref": "#/definitions/paymentitem"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "xdm:transactionID": "transactid-a12345",

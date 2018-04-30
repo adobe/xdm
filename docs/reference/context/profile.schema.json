@@ -14,15 +14,14 @@
     "definitions": {
         "profile": {
             "properties": {
-                "xdm:realm": {
-                    "title": "Realm",
-                    "$ref": "https://ns.adobe.com/xdm/data/datasource",
-                    "description": "The optional realm associated with the identity stitching strategy."
-                },
                 "xdm:identities": {
-                    "title": "End User Identities",
-                    "description": "How this profile can be identified",
-                    "$ref": "https://ns.adobe.com/xdm/context/enduserids"
+                    "title": "All User Identities",
+                    "type": "array",
+                    "items": {
+                        "$ref": "https://ns.adobe.com/xdm/context/identity"
+                    },
+                    "minItems": 1,
+                    "description": "Array of Identities. Condensed, normalized encapsulation of all end user identifiers."
                 },
                 "xdm:person": {
                     "title": "Person",
@@ -39,13 +38,15 @@
                     "$ref": "https://ns.adobe.com/xdm/common/address",
                     "description": "A work postal address.\n"
                 },
-                "xdm:emails": {
-                    "title": "Emails",
-                    "type": "array",
-                    "description": "A standard email address.\n",
-                    "items": {
-                        "$ref": "https://ns.adobe.com/xdm/context/emailaddress"
-                    }
+                "xdm:personalEmail": {
+                    "title": "Personal Email",
+                    "$ref": "https://ns.adobe.com/xdm/context/emailaddress",
+                    "description": "A personal email address.\n"
+                },
+                "xdm:workEmail": {
+                    "title": "Work Email",
+                    "$ref": "https://ns.adobe.com/xdm/context/emailaddress",
+                    "description": "A work email address.\n"
                 },
                 "xdm:homePhone": {
                     "title": "Home Phone",
@@ -91,6 +92,14 @@
                     "items": {
                         "type": "string"
                     }
+                },
+                "xdm:subscriptions": {
+                    "title": "Subscriptions",
+                    "type": "array",
+                    "description": "Subscriptions that this profile is entitled to including terminated, expired or exhausted subscriptions.",
+                    "items": {
+                        "$ref": "https://ns.adobe.com/xdm/context/subscription"
+                    }
                 }
             }
         }
@@ -100,36 +109,24 @@
             "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
         },
         {
-            "$ref": "https://ns.adobe.com/xdm/common/auditable"
+            "$ref": "https://ns.adobe.com/xdm/common/auditable#/definitions/auditlog"
         },
         {
             "$ref": "#/definitions/profile"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
-            "xdm:realm": {
-                "@id": "https://data.adobe.io/datasources/datasource-123",
-                "xdm:name": "DataSourceIntegrationCode-123"
-            },
-            "xdm:identities": {
-                "xdm:realm": {
-                    "@id": "https://data.adobe.io/experiencecloud/audiencemanager",
-                    "xdm:name": "Adobe Audience Manager"
-                },
-                "https://ns.adobe.com/experiencecloud/mcid": {
-                    "xdm:datasource": {
-                        "@id": "https://data.adobe.io/experiencecloud/mcid",
-                        "xdm:name": "Adobe Marketing Cloud Identity Core Service"
-                    },
-                    "xdm:id": "mcid-sample111",
-                    "xdm:confidence": 1
-                },
-                "https://ns.adobe.com/experiencecloud/analytics": {
-                    "xdm:id": "mcid-sample111",
-                    "xdm:confidence": 0.99
+            "xdm:identities": [
+                {
+                    "@id": "https://data.adobe.io/entities/identity/id123",
+                    "xdm:namespace": {
+                        "xdm:id": 12345,
+                        "xdm:code": "AA111"
+                    }
                 }
-            },
+            ],
             "xdm:person": {
                 "xdm:name": {
                     "xdm:givenName": "Jane",
@@ -142,12 +139,11 @@
                 "xdm:gender": "female"
             },
             "xdm:workAddress": {
-                "@id": "https://ns.adobe.com/entities/address/123",
+                "@id": "https://data.adobe.io/entities/address/123",
                 "xdm:primary": false,
                 "xdm:street1": "345 Park Ave",
                 "xdm:city": "San Jose",
-                "xdm:stateProvince": "California",
-                "xdm:stateProvinceISO": "CA",
+                "xdm:stateProvince": "US-CA",
                 "xdm:postalCode": "95110",
                 "xdm:country": "United States",
                 "xdm:countryCode": "US",
@@ -156,15 +152,13 @@
                 "xdm:status": "active",
                 "xdm:lastVerifiedDate": "2018-01-02"
             },
-            "xdm:emails": [
-                {
-                    "xdm:primary": false,
-                    "xdm:address": "jsmith@xyzinc.com",
-                    "xdm:label": "John Smith",
-                    "xdm:type": "work",
-                    "xdm:status": "active"
-                }
-            ],
+            "xdm:workEmail": {
+                "xdm:primary": false,
+                "xdm:address": "jsmith@xyzinc.com",
+                "xdm:label": "John Smith",
+                "xdm:type": "work",
+                "xdm:status": "active"
+            },
             "xdm:mobilePhone": {
                 "xdm:primary": true,
                 "xdm:number": "1-408-888-8888",

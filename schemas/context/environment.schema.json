@@ -30,7 +30,7 @@
           "title": "Browser Details",
           "$ref": "https://ns.adobe.com/xdm/context/browserdetails",
           "description":
-            "The browser specific details such as brwoser name, version, javascript version, user agent string, accept language."
+            "The browser specific details such as browser name, version, javascript version, user agent string, accept language."
         },
         "xdm:operatingSystem": {
           "title": "Operating System",
@@ -134,5 +134,6 @@
     {
       "$ref": "#/definitions/environment"
     }
-  ]
+  ],
+  "meta:status": "stabilizing"
 }

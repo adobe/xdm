@@ -7,21 +7,21 @@ https://ns.adobe.com/xdm/context/identity
 
 Identity is used to clearly distinguish people that are interacting with digital experiences. Identity is established by an identity provider, which itself is referenced in the `namespace` attribute. Within each `namespace`, the identity is unique.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [context/identity.schema.json](context/identity.schema.json) |
-
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [context/identity.schema.json](context/identity.schema.json) |
 ## Schema Hierarchy
 
 * Identity `https://ns.adobe.com/xdm/context/identity`
   * [Namespace](namespace.schema.md) `https://ns.adobe.com/xdm/context/namespace`
 
+
 ## Identity Example
 ```json
 {
-  "@id": "https://ns.adobe.com/entities/identity/id123",
+  "@id": "https://data.adobe.io/entities/identity/id123",
   "xdm:namespace": {
-    "@id": "https://ns.adobe.com/entities/namespace/12345",
+    "@id": "https://data.adobe.io/entities/namespace/12345",
     "xdm:code": "AA12345"
   }
 }

@@ -5,7 +5,7 @@ The Experience Data Model (XDM) project is developed as an Open Standard driven 
 ## Public GitHub Ground Rules
 
 We are in the process of increasing the visibility of XDM to partners and to invite them to contribute and give feedback.
-For this purpose, we will move the XDM repository to [https://github.com/adobe/xdm](https://github.com/adobe/xdm).
+For this purpose, we have moved the XDM repository to [https://github.com/adobe/xdm](https://github.com/adobe/xdm).
 For Adobe employees, following ground rules apply:
 
 * Like everyone, follow the [Code of Conduct](CODE_OF_CONDUCT.md)
@@ -31,6 +31,10 @@ Adobe does not require you to assign to Adobe the copyright of your contribution
 
 Where possible, include the Creative Commons Attribution 4.0 International (CC BY 4.0) license summary at the top of each file along with the copyright info.
 
+### Contributor License Agreement
+
+All third-party contributions to this project must be accompanied by a signed contributor license. This gives Adobe permission to redistribute your contributions as part of the project. Sign our CLA at [http://opensource.adobe.com/cla.html](http://opensource.adobe.com/cla.html). You only need to submit an Adobe CLA one time, so if you have submitted one
+
 ### License Inclusion
 
 You can include the Creative Commons Attribution 4.0 International (CC BY 4.0) license summary from below, ensure to update the copyright details.
@@ -46,12 +50,13 @@ You can include the Creative Commons Attribution 4.0 International (CC BY 4.0) l
 
 ## How to Contribute
 
-1.  Go to the [list of open issues](https://git.corp.adobe.com/AdobeCloudPlatform/xdm/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) and pick an issue you want to work on. If you don't see the appropriate issue, [create a new issue in GitHub](https://git.corp.adobe.com/AdobeCloudPlatform/xdm/issues/new)
-2.  If you haven't done so yet, [fork the XDM repository into your private GitHub organization](https://git.corp.adobe.com/AdobeCloudPlatform/xdm/fork). If your fork exists, merge the latest updates from `AdobeCloudPlatform/xdm` into `yourname/xdm`, so that you don't start from an outdated code tree
-3.  In `yourname/xdm` create a new branch from `master`. Your branch name should either refer the issue number like `bug-42` or `feature-23` or have a descriptive name like `fix-layer-group-references`
-4.  Make add edits that apply to the given feature or bug against this new branch. Commit and push in frequent intervals
-5.  If you are working on the branch for more than a day, make sure to occasionally (at least once per day) to merge the latest updates from `AdobeCloudPlatform/xdm#master` into your branch, so that you won't get surprised when it's time to merge the pull request. Resolve any conflicts to make life easier for the XDM editors
-6.  Once you are done, create a pull request from your branch against `AdobeCloudPlatform/xdm#master`.
+0.  If you haven't done so, sign the [Adobe CLA](http://opensource.adobe.com/cla.html)
+1.  Go to the [list of open issues](https://github.com/adobe/xdm/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) and pick an issue you want to work on. If you don't see the appropriate issue, [create a new issue in GitHub](https://github.com/adobe/xdm/issues/new)
+1.  If you haven't done so yet, [fork the XDM repository into your private GitHub organization](https://github.com/adobe/xdm/fork). If your fork exists, merge the latest updates from `adobe/xdm` into `yourname/xdm`, so that you don't start from an outdated code tree
+1.  In `yourname/xdm` create a new branch from `master`. Your branch name should refer the issue number like `bug-42` or `feature-23` where one exists and have a descriptive name like `fix-layer-group-references`
+1.  Make add edits that apply to the given feature or bug against this new branch. Commit and push in frequent intervals
+1.  If you are working on the branch for more than a day, make sure to occasionally (at least once per day) to merge the latest updates from `adobe/xdm#master` into your branch, so that you won't get surprised when it's time to merge the pull request. Resolve any conflicts to make life easier for the XDM editors
+1.  Once you are done, create a pull request from your branch against `adobe/xdm#master`.
 
 Every pull request should specify:
 
@@ -61,15 +66,12 @@ Every pull request should specify:
 
 For every update to the schema, make sure
 
-* `npm test` validates all example files
-* There are `schemas/*/*.example.*.json` files for each newly created schema
+* `npm test` validates all example files, see [README.md](README.md)
+* There are `schemas/*/*.example.*.json` files for each newly created or changed schema
 
 Furthermore, a pull request that modifies the schema must also include accompanying documentation. Pull requests with missing documentation will be rejected.
 
-Each commit message that is not part of a pull request:
-
-* Should contain the issue ID like `#42`
-* Can contain the tag `[trivial]` for trivial changes that don't relate to an issue
+All changes to the adobe/xdm repository now require an associated pull request.
 
 ## Design Guidelines
 
@@ -85,7 +87,7 @@ The target consumers of the data model are developers building applications usin
 
 Our goal is to establish a universal standard for the experience business. As such, this standard's lifetime will be comparable to standards like PDF (24 years old), EXIF (22 years old), or HTML (24 years old).
 
-The design decisions made today will impact future developers, who will have only limited understanding, patience, or sympathy for constraints dictated by current Adobe implementations. While future requirements cannot be predicted in detail, it is important to accomodate requirements and industry trends.
+The design decisions made today will impact future developers, who will have only limited understanding, patience, or sympathy for constraints dictated by current Adobe implementations. While future requirements cannot be predicted in detail, it is important to accommodate requirements and industry trends.
 
 ### Design for Clarity
 
@@ -101,7 +103,7 @@ XDM is not an isolated standard, but incorporates and builds on standards. Whene
 
 ### Design for Compatibility
 
-Interoperability with [Microsoft's Common Data Model (CDM)](https://docs.microsoft.com/en-us/common-data-service/entity-reference/common-data-model)is a top priority. This means that definitions that are present in CDM should be used or extended, where appropriate, by XDM. XDM should not attempt to duplicate definitions that are present in CDM.
+Interoperability with [Microsoft's Common Data Model (CDM)](https://github.com/Microsoft/CDM)is a top priority. This means that definitions that are present in CDM should be used or extended, where appropriate, by XDM. XDM should not attempt to duplicate definitions that are present in CDM.
 
 Where appropriate, we can 'lead' CDM, extend it to meet other requirements.
 Another good source of data model elements is [schema.org](http://schema.org).
@@ -140,6 +142,9 @@ Avoid non-semantic limits – don’t put current resource limits in the data mo
 * provide a `description` and `title` for each schema and each property
 * have the `title` at the top of the schema, so that it can be found without scrolling
 * make sure you have an example for every schema
+* all properties must have a specific type, while JSON-Schema does allow variability in types in cases like enumerations, concrete types are required in XDM
+* restrict the values of `string` properties as much as appropriate for the domain. `minLength`, `maxLength`, `pattern`, and `format` all can help with that.
+* don't restrict values of `string` properties beyond the constraints of the domain, e.g. don't set a `maxLength` of 255, just because your current database uses a `VARCHAR(255)` default
 * run `npm test` before you make a pull request
 * convention is that property names are in camelCase, when they appear in JSON
 * Acronyms and abbreviations in camelCase like ID, API, JSON are also capitalized in camelCase, such as `assetID`
@@ -354,6 +359,16 @@ Namespaces should be used to allow organizations to develop XDM-based grammars i
 
 Namespaces _should not_ be used to organize or group concepts within a grammar. When organizing concepts, schema authors should either define sub-objects for each concept, or consider breaking out the concept into an independent schema, as described in "Re-use and Modularity".
 
+### Schema Stability Status
+
+Each schema should contains the enum property `meta:status` that designates it's stability. The value should be one of the following enumerations:
+
+* `stable` : No open issues and has been in `stabilizing` for 1 month without major changes
+* `stabilizing` : No further major changes are expected
+* `experimental` : Major changes can be expected
+* `deprecated` : Schema is no longer maintained, supported or is superceded by another schema/set of schemas
+>>>>>>> ad2ecb7fc241ef18bd5603eb47c28dd2e98a01b0
+
 ### Other Schema Extensions
 
 XDM is using a couple of custom keywords that are not part of the JSON Schema standard. These include:
@@ -375,7 +390,7 @@ The XDM project differentiates between major and minor contributions.
 
 ### Minor Contributions
 
-One of the editors will look at the pull request within one week and flag it as `minor`. The editor will then either merge or reject the pull request. If you haven't heard back from the editors within a week, it is not impolite to send a reminder to [Grp-XDM-API-WGs](mailto:Grp-XDM-API-WGs@adobe.com).
+One of the editors will look at the pull request within one week and flag it as `minor`. The editor will then either merge or reject the pull request. If you haven't heard back from the editors within a week, it is not impolite to send a reminder to [Grp-XDM-CoreWG](mailto:Grp-XDM-CoreWG@adobe.com).
 
 Feedback on the pull request will be given in writing, in GitHub.
 

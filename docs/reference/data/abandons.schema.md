@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/data/metrics/commerce/abandons
 
 Number of abandons for which a product list has been identified as no longer purchasable or accessible by the user without the user re-creating the product list from scratch.
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [data/abandons.schema.json](data/abandons.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [data/abandons.schema.json](data/abandons.schema.json) |
 
 ## abandons Example
 ```json

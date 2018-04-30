@@ -7,25 +7,25 @@ http://schema.org/GeoShape
 
 The geographic shape of a place. Based on [schema.org](http://schema.org/GeoShape).
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [external/schema/geoshape.schema.json](external/schema/geoshape.schema.json) |
-
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/schema/geoshape.schema.json](external/schema/geoshape.schema.json) |
 ## Schema Hierarchy
 
 * Geo Shape `http://schema.org/GeoShape`
   * [Geo Circle](geocircle.schema.md) `http://schema.org/GeoCircle`
 
+
 ## Geo Shape Example
 ```json
 {
-  "@id": "https://ns.adobe.com/entities/geo/shapeid123",
+  "@id": "https://data.adobe.io/entities/geo/shapeid123",
   "schema:description": "GeoCircle of New York Metro",
   "schema:circle": {
-    "@id": "https://ns.adobe.com/entities/geo/circleid123",
+    "@id": "https://data.adobe.io/entities/geo/circleid123",
     "schema:description": "New York Metro",
     "schema:coordinates": {
-      "@id": "https://ns.adobe.com/entities/geo/111",
+      "@id": "https://data.adobe.io/entities/geo/111",
       "schema:description": "New York",
       "schema:latitude": 37.3308953,
       "schema:longitude": -121.8939894,
@@ -50,7 +50,7 @@ The geographic shape of a place. Based on [schema.org](http://schema.org/GeoShap
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
-### Shape Id
+### Shape ID
 
 The unique identifier of the shape.
 

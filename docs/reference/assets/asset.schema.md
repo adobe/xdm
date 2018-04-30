@@ -9,15 +9,14 @@ A digital asset, is anything that exists in a binary format and comes with the r
 
 As described in [What is a digital asset](https://www.realstorygroup.com/Blog/3140-What-is-a-digital-asset), the definition of a digital asset can be put like this:
 
-&gt; In theory, a digital asset is something represented in a digital form that has an intrinsic or acquired value. This initial definition is intentionally general. It could correspond to almost anything or any piece of media in a digital form, such as a photo, website, or email message. As a practical matter, however, DAM [Digital Asset Management] has evolved to support the management of digital media assets almost exclusively. This includes images, video, audio, and related artifacts (such as brochures and compound publications). You would typically use different types of technology to manage email, Word documents, relational data records, and web pages. Even some image “assets” don’t fall under the domain of DAM technology as it is known today. Scanned paper or forms that end up as TIFF or PDF files do not constitute media assets that originate through some creative process.
+> In theory, a digital asset is something represented in a digital form that has an intrinsic or acquired value. This initial definition is intentionally general. It could correspond to almost anything or any piece of media in a digital form, such as a photo, website, or email message. As a practical matter, however, DAM [Digital Asset Management] has evolved to support the management of digital media assets almost exclusively. This includes images, video, audio, and related artifacts (such as brochures and compound publications). You would typically use different types of technology to manage email, Word documents, relational data records, and web pages. Even some image “assets” don’t fall under the domain of DAM technology as it is known today. Scanned paper or forms that end up as TIFF or PDF files do not constitute media assets that originate through some creative process.
 
 All digital assets are content, and some content can include, link to, or refer digital assets. Content can furthermore be transformed (rendered) into digital assets, such as when exporting a PDF.
 
 
-| Abstract | Extensible | Custom Properties | Additional Properties | Defined In |
-|----------|------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Forbidden | Permitted | [assets/asset.schema.json](assets/asset.schema.json) |
-
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [assets/asset.schema.json](assets/asset.schema.json) |
 ## Schema Hierarchy
 
 * Asset `https://ns.adobe.com/xdm/assets/asset`
@@ -27,6 +26,7 @@ All digital assets are content, and some content can include, link to, or refer 
   * [Content](../content/content.schema.md) `https://ns.adobe.com/xdm/content/content`
   * [Copyright Owner](copyright-owner.schema.md) `https://ns.adobe.com/xdm/assets/copyright-owner`
   * [Layer Group](layer-group.schema.md) `https://ns.adobe.com/xdm/assets/layer-group`
+
 
 ## Asset Example
 ```json
@@ -54,8 +54,8 @@ All digital assets are content, and some content can include, link to, or refer 
 | [@id](#@id) | `string` | Optional | [Content](../content/content.schema.md#@id) |
 | [_embedded](#_embedded) | `object` | Optional | [HAL Resource](../external/hal/hal.schema.md#_embedded) |
 | [_links](#_links) | `object` | Optional | [HAL Resource](../external/hal/hal.schema.md#_links) |
-| [cc:attributionName](#ccattributionName) | `string` | Optional | Asset (this schema) |
-| [cc:attributionUrl](#ccattributionUrl) | `string` | Optional | Asset (this schema) |
+| [cc:attributionName](#ccattributionname) | `string` | Optional | Asset (this schema) |
+| [cc:attributionUrl](#ccattributionurl) | `string` | Optional | Asset (this schema) |
 | [cc:license](#cclicense) | `string` | Optional | Asset (this schema) |
 | [dc:creator](#dccreator) | `string[]` | Optional | Asset (this schema) |
 | [dc:description](#dcdescription) | reference | Optional | Asset (this schema) |
@@ -64,46 +64,46 @@ All digital assets are content, and some content can include, link to, or refer 
 | [dc:rights](#dcrights) | reference | Optional | Asset (this schema) |
 | [dc:subject](#dcsubject) | `string[]` | Optional | Asset (this schema) |
 | [dc:title](#dctitle) | reference | Optional | Asset (this schema) |
-| [exif:gpsAltitude](#exifgpsAltitude) | `number` | Optional | Asset (this schema) |
-| [exif:gpsAltitudeRef](#exifgpsAltitudeRef) | `enum` | Optional | Asset (this schema) |
-| [exif:gpsLatitude](#exifgpsLatitude) | `string` | Optional | Asset (this schema) |
-| [exif:gpsLongitude](#exifgpsLongitude) | `string` | Optional | Asset (this schema) |
+| [exif:gpsAltitude](#exifgpsaltitude) | `number` | Optional | Asset (this schema) |
+| [exif:gpsAltitudeRef](#exifgpsaltituderef) | `enum` | Optional | Asset (this schema) |
+| [exif:gpsLatitude](#exifgpslatitude) | `string` | Optional | Asset (this schema) |
+| [exif:gpsLongitude](#exifgpslongitude) | `string` | Optional | Asset (this schema) |
 | [photoshop:credit](#photoshopcredit) | `string` | Optional | Asset (this schema) |
-| [plus:copyrightOwner](#pluscopyrightOwner) | reference | Optional | Asset (this schema) |
-| [plus:copyrightOwnerID](#pluscopyrightOwnerID) | `string` | Optional | [Copyright Owner](copyright-owner.schema.md#pluscopyrightOwnerID) |
-| [plus:copyrightOwnerName](#pluscopyrightOwnerName) | `string` | Optional | [Copyright Owner](copyright-owner.schema.md#pluscopyrightOwnerName) |
-| [repo:assetID](#repoassetID) | `string` | **Required** | [Asset](../external/repo/asset.schema.md#repoassetID) |
-| [repo:createDate](#repocreateDate) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#repocreateDate) |
+| [plus:copyrightOwner](#pluscopyrightowner) | reference | Optional | Asset (this schema) |
+| [plus:copyrightOwnerID](#pluscopyrightownerid) | `string` | Optional | [Copyright Owner](copyright-owner.schema.md#pluscopyrightownerid) |
+| [plus:copyrightOwnerName](#pluscopyrightownername) | `string` | Optional | [Copyright Owner](copyright-owner.schema.md#pluscopyrightownername) |
+| [repo:assetID](#repoassetid) | `string` | **Required** | [Asset](../external/repo/asset.schema.md#repoassetid) |
+| [repo:createDate](#repocreatedate) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#repocreatedate) |
 | [repo:etag](#repoetag) | `string` | **Required** | [Asset](../external/repo/asset.schema.md#repoetag) |
-| [repo:lastModifiedDate](#repolastModifiedDate) | `string` | **Required** | [Common Properties](../external/repo/common.schema.md#repolastModifiedDate) |
+| [repo:lastModifiedDate](#repolastmodifieddate) | `string` | **Required** | [Common Properties](../external/repo/common.schema.md#repolastmodifieddate) |
 | [repo:name](#reponame) | `string` | **Required** | [Common Properties](../external/repo/common.schema.md#reponame) |
 | [repo:path](#repopath) | `string` | **Required** | [Common Properties](../external/repo/common.schema.md#repopath) |
 | [repo:size](#reposize) | `integer` | **Required** | [Asset](../external/repo/asset.schema.md#reposize) |
 | [repo:version](#repoversion) | `string` | **Required** | [Asset](../external/repo/asset.schema.md#repoversion) |
-| [tiff:imageLength](#tiffimageLength) | `integer` | Optional | [Asset](../external/repo/asset.schema.md#tiffimageLength) |
-| [tiff:imageWidth](#tiffimageWidth) | `integer` | Optional | [Asset](../external/repo/asset.schema.md#tiffimageWidth) |
-| [xdm:aliasIDs](#xdmaliasIDs) | `array` | Optional | Asset (this schema) |
-| [xdm:documentID](#xdmdocumentID) | `string` | Optional | Asset (this schema) |
+| [tiff:imageLength](#tiffimagelength) | `integer` | Optional | [Asset](../external/repo/asset.schema.md#tiffimagelength) |
+| [tiff:imageWidth](#tiffimagewidth) | `integer` | Optional | [Asset](../external/repo/asset.schema.md#tiffimagewidth) |
+| [xdm:aliasIDs](#xdmaliasids) | `array` | Optional | Asset (this schema) |
+| [xdm:documentID](#xdmdocumentid) | `string` | Optional | Asset (this schema) |
 | [xdm:milestone](#xdmmilestone) | `object` | Optional | Asset (this schema) |
-| [xdm:notSafe](#xdmnotSafe) | `enum` | Optional | Asset (this schema) |
-| [xdm:repositoryCreatedBy](#xdmrepositoryCreatedBy) | `string` | Optional | [Content](../content/content.schema.md#xdmrepositoryCreatedBy) |
-| [xdm:repositoryLastModifiedBy](#xdmrepositoryLastModifiedBy) | `string` | Optional | [Content](../content/content.schema.md#xdmrepositoryLastModifiedBy) |
+| [xdm:notSafe](#xdmnotsafe) | `enum` | Optional | Asset (this schema) |
+| [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | Optional | [Content](../content/content.schema.md#xdmrepositorycreatedby) |
+| [xdm:repositoryLastModifiedBy](#xdmrepositorylastmodifiedby) | `string` | Optional | [Content](../content/content.schema.md#xdmrepositorylastmodifiedby) |
 | [xmp:artboards](#xmpartboards) | Artboard | Optional | Asset (this schema) |
-| [xmp:createDate](#xmpcreateDate) | `string` | Optional | Asset (this schema) |
-| [xmp:creatorTool](#xmpcreatorTool) | `string` | Optional | Asset (this schema) |
+| [xmp:createDate](#xmpcreatedate) | `string` | Optional | Asset (this schema) |
+| [xmp:creatorTool](#xmpcreatortool) | `string` | Optional | Asset (this schema) |
 | [xmp:fonts](#xmpfonts) | reference | Optional | Asset (this schema) |
 | [xmp:keywords](#xmpkeywords) | `array` | Optional | Asset (this schema) |
 | [xmp:layers](#xmplayers) | complex | Optional | Asset (this schema) |
-| [xmp:machineKeywords](#xmpmachineKeywords) | `object[]` | Optional | Asset (this schema) |
-| [xmp:modifyDate](#xmpmodifyDate) | `string` | Optional | Asset (this schema) |
+| [xmp:machineKeywords](#xmpmachinekeywords) | `object[]` | Optional | Asset (this schema) |
+| [xmp:modifyDate](#xmpmodifydate) | `string` | Optional | Asset (this schema) |
 | [xmp:rating](#xmprating) | `enum` | Optional | Asset (this schema) |
-| [xmpMM:history](#xmpMMhistory) | reference | Optional | Asset (this schema) |
-| [xmpMM:manageTo](#xmpMMmanageTo) | `string` | Optional | Asset (this schema) |
-| [xmpMM:manageUI](#xmpMMmanageUI) | `string` | Optional | Asset (this schema) |
-| [xmpRights:marked](#xmpRightsmarked) | `boolean` | Optional | Asset (this schema) |
-| [xmpRights:usageTerms](#xmpRightsusageTerms) | reference | Optional | Asset (this schema) |
-| [xmpRights:webStatement](#xmpRightswebStatement) | `string` | Optional | Asset (this schema) |
-| [xmpTPg:NPages](#xmpTPgNPages) | `integer` | Optional | Asset (this schema) |
+| [xmpMM:history](#xmpmmhistory) | reference | Optional | Asset (this schema) |
+| [xmpMM:manageTo](#xmpmmmanageto) | `string` | Optional | Asset (this schema) |
+| [xmpMM:manageUI](#xmpmmmanageui) | `string` | Optional | Asset (this schema) |
+| [xmpRights:marked](#xmprightsmarked) | `boolean` | Optional | Asset (this schema) |
+| [xmpRights:usageTerms](#xmprightsusageterms) | reference | Optional | Asset (this schema) |
+| [xmpRights:webStatement](#xmprightswebstatement) | `string` | Optional | Asset (this schema) |
+| [xmpTPg:NPages](#xmptpgnpages) | `integer` | Optional | Asset (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -175,7 +175,7 @@ It is an object whose property names are link relation types (as defined by [RFC
 ## cc:attributionName
 ### Attribution Name
 
-For licenses that require attribution, such as some Creative Commons licenses, the user to which a work is attributed. When publishing to Behance, this is taken from the user&#39;s Behance profile information.
+For licenses that require attribution, such as some Creative Commons licenses, the user to which a work is attributed. When publishing to Behance, this is taken from the user's Behance profile information.
 
 `cc:attributionName`
 * is optional
@@ -195,7 +195,7 @@ For licenses that require attribution, such as some Creative Commons licenses, t
 ## cc:attributionUrl
 ### Attribution URL
 
-For licenses that require attribution, such as some Creative Commons licenses, a URL that identifies the user to which a work should be attributed. When publishing to Behance, we link to the user&#39;s profile page.
+For licenses that require attribution, such as some Creative Commons licenses, a URL that identifies the user to which a work should be attributed. When publishing to Behance, we link to the user's profile page.
 
 `cc:attributionUrl`
 * is optional
@@ -682,7 +682,7 @@ All instances must conform to this regular expression
 
 ## repo:createDate
 
-The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is &#34;2004-10-23T12:00:00-06:00&#34;.
+The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
 
 `repo:createDate`
 * is optional
@@ -727,7 +727,7 @@ An  ETag is an HTTP response header returned by an HTTP/1.1 compliant web server
 
 ## repo:lastModifiedDate
 
-The server date and time when the resource was most recently modified in the repository, such as when a new version of an asset is uploaded or a directory&#39;s child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is &#34;2004-10-23T12:00:00-06:00&#34;.
+The server date and time when the resource was most recently modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
 
 `repo:lastModifiedDate`
 * is **required**
@@ -901,7 +901,7 @@ Unknown type ``.
       "id": {
         "type": "string",
         "title": "External ID",
-        "description": "An Id under which external systems track the asset."
+        "description": "An ID under which external systems track the asset."
       }
     },
     "simpletype": "complex"
@@ -921,7 +921,7 @@ Unknown type ``.
 ## xdm:documentID
 ### Document ID
 
-It takes the value of xmpMM:DocumentID present in the [XMP packet of the asset](http://wwwimages.adobe.com/content/dam/Adobe/en/devnet/xmp/pdfs/XMP%20SDK%20Release%20cc-2014-12/XMPSpecificationPart1.pdf). For the assets having no XMP packet this property won&#39;t be populated. 
+It takes the value of xmpMM:DocumentID present in the [XMP packet of the asset](http://wwwimages.adobe.com/content/dam/Adobe/en/devnet/xmp/pdfs/XMP%20SDK%20Release%20cc-2014-12/XMPSpecificationPart1.pdf). For the assets having no XMP packet this property won't be populated. 
 
 The value is a GUID, capital A-F, 8-4-4-12, preceded by the string `uuid:`
 
@@ -1418,7 +1418,7 @@ The keyword itself. A keyword can be considered like a tag, i.e. a short descrip
 ## xmp:modifyDate
 ### Mofification Date
 
-The date and time when asset was last modified. The Date Time property should conform to ISO 8601 standard. An example form is &#34;2004-10-23T12:00:00-06:00&#34;. Opposed to `repositoryLastModifiedDate`, this is the time when the asset was last modified locally, with or without knowledge of the repository.
+The date and time when asset was last modified. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00". Opposed to `repositoryLastModifiedDate`, this is the time when the asset was last modified locally, with or without knowledge of the repository.
 
 `xmp:modifyDate`
 * is optional

@@ -1,8 +1,8 @@
-#/!bin/sh
+#!/bin/bash
 
 # This is a helper script to quickly create new metric definitions.
 # Usage:
-# $ sh makemetric.sh <group> <name>
+#   $ sh make-metric-definition.sh <group> <name>
 #
 
 cat << EOF | jq . > $2.schema.json

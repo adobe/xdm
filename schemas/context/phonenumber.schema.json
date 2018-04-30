@@ -68,9 +68,7 @@
   "allOf": [
     {
       "$ref": "#/definitions/phonenumber"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/common/auditable"
     }
-  ]
+  ],
+  "meta:status": "stabilizing"
 }

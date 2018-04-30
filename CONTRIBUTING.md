@@ -367,7 +367,7 @@ Each schema should contains the enum property `meta:status` that designates it's
 * `stabilizing` : No further major changes are expected
 * `experimental` : Major changes can be expected
 * `deprecated` : Schema is no longer maintained, supported or is superceded by another schema/set of schemas
->>>>>>> ad2ecb7fc241ef18bd5603eb47c28dd2e98a01b0
+  > > > > > > > ad2ecb7fc241ef18bd5603eb47c28dd2e98a01b0
 
 ### Other Schema Extensions
 

@@ -71,11 +71,11 @@
           "description":
             "The application related to the event observation. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login."
         },
-        "xdm:advertisement": {
-          "title": "Advertisement",
-          "$ref": "https://ns.adobe.com/xdm/context/advertisement",
+        "xdm:advertising": {
+          "title": "Advertising",
+          "$ref": "https://ns.adobe.com/xdm/context/advertising",
           "description":
-            "The advertisement related to the event observation."
+            "The advertising related to the event observation."
         },
         "xdm:search": {
           "title": "Search",

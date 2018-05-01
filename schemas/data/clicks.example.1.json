@@ -1,6 +1,6 @@
 {
-  "schema:name": "Advertisement metric: clicks",
-  "@id": "https://ns.adobe.com/xdm/data/metrics/advertisement/clicks",
+  "schema:name": "Advertising metric: clicks",
+  "@id": "https://ns.adobe.com/xdm/data/metrics/advertising/clicks",
   "xdm:measurement": "count",
   "xdm:unit": null
 }

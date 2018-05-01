@@ -13,7 +13,7 @@
   "meta:extends": [
     "https://ns.adobe.com/xdm/data/metric"
   ],
-  "description": "The advertising/viewability metric viewable-first-quartiles describes the whether the viewability library deemed video viewable at the first quartile of play.",
+  "description": "The advertising/viewability metric viewable-first-quartiles describes whether at least 50% of the video's pixels were visible at the first quartile of play.",
   "definitions": {
     "metric": {
       "properties": {

@@ -13,7 +13,7 @@
   "meta:extends": [
     "https://ns.adobe.com/xdm/data/metric"
   ],
-  "description": "The advertising/viewability metric measured-muted describes the whether at start time the ad was muted.",
+  "description": "The advertising/viewability metric measured-muted describes whether the ad was measured to be muted at event time.",
   "definitions": {
     "metric": {
       "properties": {

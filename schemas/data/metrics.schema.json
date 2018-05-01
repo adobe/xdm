@@ -46,7 +46,7 @@
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "A digital video ad has played through it's entirety."
         },
-        "https://ns.adobe.com/xdm/data/metrics/advertising/conversion/conversions": {
+        "https://ns.adobe.com/xdm/data/metrics/advertising/conversions": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "A pre-defined action on a website triggered a conversion event to be fired"
         },

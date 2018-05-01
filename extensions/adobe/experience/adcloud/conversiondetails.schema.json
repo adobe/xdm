@@ -8,29 +8,28 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/experience/adcloud/conversiondetails",
   "title": "Conversion Detail",
-  "description":
-  "Adobe AdCloud Ad Conversion Details",
+  "type": "object",
+  "description": "Adobe AdCloud Ad Conversion Details",
   "definitions": {
     "conversionDetails": {
-      "type": "object",
       "properties": {
-        "attributedEventType": {
+        "https://ns.adobe.com/experience/adcloud/conversiondetails/attributedEventType": {
           "title": "Attributed Event Type",
           "type": "string",
           "description":
           "Event Type Attributed to Conversion Event."
         },
-        "conversionObjective": {
+        "https://ns.adobe.com/experience/adcloud/conversiondetails/conversionObjective": {
           "title": "Conversion Objective",
           "type": "string",
           "description": "Identifier conversion event."
         },
-        "eventUid": {
+        "https://ns.adobe.com/experience/adcloud/conversiondetails/eventUid": {
           "title": "Event unique ID",
           "type": "integer",
           "description": "Unique identifier for conversion event attributed to event."
         },
-        "conversionMetric": {
+        "https://ns.adobe.com/experience/adcloud/conversiondetails/conversionMetric": {
           "title": "Conversion Metric",
           "type": "string",
           "description": "A client-specific calculation of the metric they care about (and are measuring KPIs against) for conversions.",

@@ -8,49 +8,48 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/experience/adcloud/campaigndetails",
   "title": "Ad Campaign Detail",
-  "description":
-  "Adobe AdCloud Ad Campaign Hierarchy Details",
+  "type": "object",
+  "description": "Adobe AdCloud Ad Campaign Hierarchy Details",
   "definitions": {
     "campaignDetails": {
-      "type": "object",
       "properties": {
-        "accountId": {
+        "https://ns.adobe.com/experience/adcloud/campaigndetails/accountId": {
           "title": "Account ID",
           "type": "integer",
           "description":
           "Unique identifier for the account this event is associated with."
         },
-        "campaignId": {
+        "https://ns.adobe.com/experience/adcloud/campaigndetails/campaignId": {
           "title": "Campaign ID",
           "type": "integer",
           "description": "Unique identifier for the campaign which this event is associated with."
         },
-        "placementId": {
+        "https://ns.adobe.com/experience/adcloud/campaigndetails/placementId": {
           "title": "Placement ID",
           "type": "integer",
           "description": "Unique identifier for the placement which this event is associated with."
         },
-        "packageId": {
+        "https://ns.adobe.com/experience/adcloud/campaigndetails/packageId": {
           "title": "Package ID",
           "type": "integer",
           "description": "Unique identifier for the package which this event is associated with."
         },
-        "advertiserId": {
+        "https://ns.adobe.com/experience/adcloud/campaigndetails/advertiserId": {
           "title": "Advertiser ID",
           "type": "integer",
           "description": "Unique identifier for the advertiser which this event is associated with."
         },
-        "experimentId": {
+        "https://ns.adobe.com/experience/adcloud/campaigndetails/experimentId": {
           "title": "Experiment ID",
           "type": "integer",
           "description": "Unique identifier for the experiment which this event is associated with."
         },
-        "sampleGroupId": {
+        "shttps://ns.adobe.com/experience/adcloud/campaigndetails/ampleGroupId": {
           "title": "Sample Group ID",
           "type": "integer",
           "description": "Unique identifier for the sample group which this event is associated with."
         },
-        "currency": {
+        "https://ns.adobe.com/experience/adcloud/campaigndetails/currency": {
           "title": "Account Currency",
           "type": "string",
           "examples": ["USD", "EUR"],

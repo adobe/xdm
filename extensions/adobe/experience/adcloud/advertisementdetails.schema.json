@@ -8,37 +8,36 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/experience/adcloud/advertisementdetails",
   "title": "Advertisement Details",
-  "description":
-  "Adobe AdCloud Ad Details",
+  "type": "object",
+  "description": "Adobe AdCloud Ad Details",
   "definitions": {
     "advertisementDetails": {
-      "type": "object",
       "properties": {
-        "adId": {
+        "https://ns.adobe.com/experience/adcloud/advertisementdetails/adId": {
           "title": "Ad ID",
           "type": "integer",
           "description":
           "Unique identifier for the ad asset this event is associated with."
         },
-        "runtime": {
+        "https://ns.adobe.com/experience/adcloud/advertisementdetails/runtime": {
           "title": "Runtime Type",
           "type": "string",
           "description": "The runtime of the ad unit itself, not the runtime of the browser or the operating system.",
           "examples": "unknown, HTML5"
         },
-        "class": {
+        "https://ns.adobe.com/experience/adcloud/advertisementdetails/class": {
           "title": "Ad Class",
           "type": "string",
           "description": "Ad class of driving event.",
           "examples": "display, video, social"
         },
-        "adUnitType": {
+        "https://ns.adobe.com/experience/adcloud/advertisementdetails/adUnitType": {
           "title": "Ad Unit Type",
           "type": "string",
           "description": "Unique identifier for the literal piece of code driving display of the ad in a browser/device.",
           "examples": "linearVideo, interactiveVideo, banner, richMediaBanner, newsFeedVideo, newsFeedDisplay, HTML5, inPageVideo, inPageDisplay, facebook, twitter, linearTv, vod"
         },
-        "asset": {
+        "https://ns.adobe.com/experience/adcloud/advertisementdetails/asset": {
           "title": "Asset Details",
           "$ref": "https://ns.adobe.com/xdm/assets/aggregated-asset",
           "description": "Asset information for the relevant Ad."

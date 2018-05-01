@@ -8,24 +8,23 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/experience/adcloud/segmentdetails",
   "title": "Segment Detail",
-  "description":
-  "Adobe AdCloud Segmentation Traits",
+  "type": "object",
+  "description": "Adobe AdCloud Segmentation Traits",
   "definitions": {
     "segmentDetails": {
-      "type": "object",
       "properties": {
-        "attributablePartnerId": {
+        "https://ns.adobe.com/experience/adcloud/segmentdetails/attributablePartnerId": {
           "title": "Attributable Partner ID",
           "type": "integer",
           "description":
           "The segment provider who owns the attributableSegmentId."
         },
-        "attributableSegmentId": {
+        "https://ns.adobe.com/experience/adcloud/segmentdetails/attributableSegmentId": {
           "title": "Attributable Segment ID",
           "type": "integer",
           "description": "The single segment accredit for user targeting among all the segments in the placement's targeting rule for the purposes of tracking costs and paying partners."
         },
-        "segments": {
+        "https://ns.adobe.com/experience/adcloud/segmentdetails/segments": {
           "title": "Segments",
           "type": "string",
           "description": "The intersection of the user segments that both: a) the user belonged to, and b) the ad was targeting. NOT the full list of segments that the user belonged to at the time of the auction."

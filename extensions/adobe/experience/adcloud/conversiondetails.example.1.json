@@ -1,6 +1,6 @@
 {
-  "attributedEventType": "imp",
-  "conversionObjective": "click_to_req",
-  "eventUid": "09877uy898ukajsdlnc",
-  "conversionMetric": "array<struct<conversion_model:string,ct_count:double,ct_value:double,vt_count:double,vt_value:double>>"
+  "https://ns.adobe.com/experience/adcloud/conversiondetails/attributedEventType": "imp",
+  "https://ns.adobe.com/experience/adcloud/conversiondetails/conversionObjective": "click_to_req",
+  "https://ns.adobe.com/experience/adcloud/conversiondetails/eventUid": "09877uy898ukajsdlnc",
+  "https://ns.adobe.com/experience/adcloud/conversiondetails/conversionMetric": "array<struct<conversion_model:string,ct_count:double,ct_value:double,vt_count:double,vt_value:double>>"
 }

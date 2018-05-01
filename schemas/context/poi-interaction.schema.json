@@ -16,7 +16,6 @@
         "@id": {
           "title": "POI ID",
           "type": "string",
-          "format": "uri",
           "description": "The unique identifier of the POI."
         },
         "xdm:name": {

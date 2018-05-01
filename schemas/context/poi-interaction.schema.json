@@ -33,6 +33,11 @@
           "type": "string",
           "description": "The general type of the POI using a typing schema selected by the adminsitrator of the POI definitions."
         },
+        "xdm:distanceToPOICenter": {
+          "title": "Distance to POI Center",
+          "type": "number",
+          "description": "Estimated distence from the POI Center in meters.",
+        },
         "https://ns.adobe.com/xdm/data/metrics/poi-interaction/poi-entries": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":

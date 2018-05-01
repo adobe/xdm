@@ -25,8 +25,17 @@
           "$ref": "https://ns.adobe.com/xdm/common/geo",
           "description":
             "The geographic location where the experience was delivered ."
+        },
+        "https://ns.adobe.com/xdm/data/metrics/placecontext/poi-entries": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+            "The number of entries into a Point of Interest (POI)."
+        },
+        "https://ns.adobe.com/xdm/data/metrics/placecontext/poi-exits": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+            "The number of exits from a Point of Interest (POI)."
         }
-      }
     }
   },
   "allOf": [

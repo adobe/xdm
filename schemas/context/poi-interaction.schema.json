@@ -1,0 +1,60 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/poi-interaction",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Point of Interest Interaction",
+  "type": "object",
+  "description": "A Point or Place of Interest(POI) interaction. Used to capture triggered engagement activities when users enter, leave of come within range of a POI.",
+  "definitions": {
+    "poi-interaction": {
+      "properties": {
+        "@id": {
+          "title": "POI ID",
+          "type": "string",
+          "format": "uri",
+          "description": "The unique identifier of the POI."
+        },
+        "xdm:name": {
+          "title": "POI Name",
+          "type": "string",
+          "description": "The name given to the POI."
+        },
+        "xdm:category": {
+          "title": "POI Category",
+          "type": "string",
+          "description": "General category assigned for orginizing the POIs by the administrator of POI definitions."
+        },
+        "xdm:type": {
+          "title": "POI Type",
+          "type": "string",
+          "description": "The general type of the POI using a typing schema selected by the adminsitrator of the POI definitions."
+        },
+        "https://ns.adobe.com/xdm/data/metrics/poi-interaction/poi-entries": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+            "The number of entries into a Point of Interest (POI)."
+        },
+        "https://ns.adobe.com/xdm/data/metrics/poi-interaction/poi-exits": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+            "The number of exits from a Point of Interest (POI)."
+        }
+      },
+      "required": ["@id"]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/poi-interaction"
+    }
+  ],
+  "meta:status": "experimental"
+}

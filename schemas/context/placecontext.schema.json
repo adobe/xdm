@@ -26,15 +26,17 @@
           "description":
             "The geographic location where the experience was delivered ."
         },
-        "https://ns.adobe.com/xdm/data/metrics/placecontext/poi-entries": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "xdm:poiInteraction": {
+          "title": "POI Interaction",
+          "$ref": "https://ns.adobe.com/xdm/context/poi-interaction",
           "description":
-            "The number of entries into a Point of Interest (POI)."
+            "The Point of Interest(POI) interaction details."
         },
-        "https://ns.adobe.com/xdm/data/metrics/placecontext/poi-exits": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "xdm:beacon": {
+          "title": "Beacon",
+          "$ref": "https://ns.adobe.com/xdm/common/beacon",
           "description":
-            "The number of exits from a Point of Interest (POI)."
+            "Beacon active for the POI interaction."
         }
     }
   },

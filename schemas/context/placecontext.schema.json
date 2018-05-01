@@ -1,6 +1,6 @@
 {
   "meta:license": [
-    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
     "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
@@ -23,21 +23,19 @@
         "xdm:geo": {
           "title": "Geo",
           "$ref": "https://ns.adobe.com/xdm/common/geo",
-          "description":
-            "The geographic location where the experience was delivered ."
+          "description": "The geographic location where the experience was delivered."
         },
         "xdm:poiInteraction": {
           "title": "POI Interaction",
           "$ref": "https://ns.adobe.com/xdm/context/poi-interaction",
-          "description":
-            "The Point of Interest(POI) interaction details."
+          "description": "The Point of Interest(POI) interaction details."
         },
         "xdm:beacon": {
           "title": "Beacon",
           "$ref": "https://ns.adobe.com/xdm/common/beacon",
-          "description":
-            "Beacon active for the POI interaction."
+          "description": "Beacon active for the POI interaction."
         }
+      }
     }
   },
   "allOf": [

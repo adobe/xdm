@@ -7,16 +7,16 @@ https://ns.adobe.com/xdm/external/activity-streams-2/collection
 
 A `Collection` is a subtype of `[Object](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object)` that represents ordered or unordered sets of `[Object](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object) or [Link](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-link)` instances. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-collection) specification for a complete description of the `Collection` type.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [external/activity-streams-2/collection.schema.json](external/activity-streams-2/collection.schema.json) |
-
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/activity-streams-2/collection.schema.json](external/activity-streams-2/collection.schema.json) |
 ## Schema Hierarchy
 
 * Collection `https://ns.adobe.com/xdm/external/activity-streams-2/collection`
   * [Object](object.schema.md) `https://ns.adobe.com/xdm/external/activity-streams-2/object`
   * [Collection Page](collection-page.schema.md) `https://ns.adobe.com/xdm/external/activity-streams-2/collection-page`
   * [Link](link.schema.md) `https://ns.adobe.com/xdm/external/activity-streams-2/link`
+
 
 ## Collection Example
 ```json
@@ -615,7 +615,7 @@ The content or textual representation of the Object encoded as a JSON string. By
 
 ## activitystreams:context
 
-Identifies the context within which the object exists or an activity was performed. The notion of &#39;context&#39; used is intentionally vague. The intended function is to serve as a means of grouping objects and activities that share a common originating context or purpose. An example could be all activities relating to a common project or event. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-context) document for a complete description.
+Identifies the context within which the object exists or an activity was performed. The notion of 'context' used is intentionally vague. The intended function is to serve as a means of grouping objects and activities that share a common originating context or purpose. An example could be all activities relating to a common project or event. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-context) document for a complete description.
 
 `activitystreams:context`
 * is optional
@@ -1588,7 +1588,7 @@ A natural language summarization of the object encoded as HTML. Multiple languag
 
 ## activitystreams:tag
 
-One or more &#39;tags&#39; that have been associated with an objects. A tag can be any kind of Object. The key difference between attachment and tag is that the former implies association by inclusion, while the latter implies associated by reference. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-tag) document for a complete description.
+One or more 'tags' that have been associated with an objects. A tag can be any kind of Object. The key difference between attachment and tag is that the former implies association by inclusion, while the latter implies associated by reference. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-tag) document for a complete description.
 
 `activitystreams:tag`
 * is optional

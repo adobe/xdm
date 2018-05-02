@@ -7,14 +7,14 @@ https://ns.adobe.com/xdm/common/event/published
 
 The `published event` represents the activity of releasing an object for distribution. Some examples of the published activity are, publishing digital content on a website, publishing a book, publishing an article in a journal, publishing a memo on a notice board, etcetera. The [`object`](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object) field should specify the object that was released/published, whereas the [`target`](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-target) field, if present, should describe where the said object was published on. The `published event` can only be used in passive contexts. Example: the act of publishing an article in a journal would be represented by the `published` activity wherein, the article would be the `object` of publication and the journal would be the `target`.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | No | Experimental | Forbidden | Permitted | [common/event/published.schema.json](common/event/published.schema.json) |
-
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | No | Experimental | No | Forbidden | Permitted | [common/event/published.schema.json](common/event/published.schema.json) |
 ## Schema Hierarchy
 
 * Published Event `https://ns.adobe.com/xdm/common/event/published`
   * [EventEnvelope](../eventenvelope.schema.md) `https://ns.adobe.com/xdm/common/eventenvelope`
+
 
 ## Published Event Example
 ```json
@@ -24,7 +24,7 @@ The `published event` represents the activity of releasing an object for distrib
   "xdm:objectType": "https://ns.adobe.com/xdm/assets/asset",
   "activitystreams:actor": {
     "@id": "D13A1E7053E46A220A4C86E1@AdobeID",
-    "@type": "https://ns.adobe.com/xdm-extensions/ims/user"
+    "@type": "https://ns.adobe.com/adobecloudplatform/ims/user"
   },
   "activitystreams:generator": {
     "xdm:root": "https://cc-api-storage.adobe.io/",
@@ -41,7 +41,7 @@ The `published event` represents the activity of releasing an object for distrib
   "activitystreams:published": "2016-07-16T19:20:30+01:00",
   "activitystreams:to": {
     "@id": "D13A1E7053E46A220A4C86E1@AdobeID",
-    "@type": "https://ns.adobe.com/xdm-extensions/ims/user"
+    "@type": "https://ns.adobe.com/adobecloudplatform/ims/user"
   }
 }
 ```

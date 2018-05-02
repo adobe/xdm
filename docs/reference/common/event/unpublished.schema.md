@@ -7,14 +7,14 @@ https://ns.adobe.com/xdm/common/event/unpublished
 
 The `unpublished event` represents the activity of making an object, which was previously published, unavailable for distribution. It can be thought of as the semantic opposite of the `published event`. Some examples of the unpublished activity are, taking down digital content from a website, taking down a previously published memo from the notice board, etcetera. The [`object`](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object) field should specify the object that was taken down/unpublished, whereas the [`target`](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-target) field, if present, should describe where the said object was taken down from. The `unpublished event` can only be used in passive contexts. Example: the act of taking down a previously published memo from the notice board would be represented by the `unpublished` activity wherein, the memo would be the `object` of the `unpublished event` and the notice board would be the `target`.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | No | Experimental | Forbidden | Permitted | [common/event/unpublished.schema.json](common/event/unpublished.schema.json) |
-
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | No | Experimental | No | Forbidden | Permitted | [common/event/unpublished.schema.json](common/event/unpublished.schema.json) |
 ## Schema Hierarchy
 
 * Unpublished Event `https://ns.adobe.com/xdm/common/event/unpublished`
   * [EventEnvelope](../eventenvelope.schema.md) `https://ns.adobe.com/xdm/common/eventenvelope`
+
 
 ## Unpublished Event Example
 ```json
@@ -24,7 +24,7 @@ The `unpublished event` represents the activity of making an object, which was p
   "xdm:objectType": "https://ns.adobe.com/xdm/assets/asset",
   "activitystreams:actor": {
     "@id": "D13A1E7053E46A220A4C86E1@AdobeID",
-    "@type": "https://ns.adobe.com/xdm-extensions/ims/user"
+    "@type": "https://ns.adobe.com/adobecloudplatform/ims/user"
   },
   "activitystreams:generator": {
     "xdm:root": "https://cc-api-storage.adobe.io/",
@@ -41,7 +41,7 @@ The `unpublished event` represents the activity of making an object, which was p
   "activitystreams:published": "2016-07-16T19:20:30+01:00",
   "activitystreams:to": {
     "@id": "D13A1E7053E46A220A4C86E1@AdobeID",
-    "@type": "https://ns.adobe.com/xdm-extensions/ims/user"
+    "@type": "https://ns.adobe.com/adobecloudplatform/ims/user"
   }
 }
 ```

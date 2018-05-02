@@ -6,7 +6,7 @@
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
   "$id":
-    "https://ns.adobe.com/xdm-extensions/adobe/experience/analytics/analytics-extensions",
+    "https://ns.adobe.com/experience/analytics/experienceevent",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Adobe Analytics Cloud Experience Event Extension",
   "type": "object",
@@ -15,2670 +15,2030 @@
   "definitions": {
     "experienceevent": {
       "properties": {
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar1": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var1": {
           "title": "eVar1",
           "type": "string",
           "description": "Custom conversion variable 1."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar2": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var2": {
           "title": "eVar2",
           "type": "string",
           "description": "Custom conversion variable 2."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar3": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var3": {
           "title": "eVar3",
           "type": "string",
           "description": "Custom conversion variable 3."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar4": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var4": {
           "title": "eVar4",
           "type": "string",
           "description": "Custom conversion variable 4."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar5": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var5": {
           "title": "eVar5",
           "type": "string",
           "description": "Custom conversion variable 5."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar6": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var6": {
           "title": "eVar6",
           "type": "string",
           "description": "Custom conversion variable 6."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar7": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var7": {
           "title": "eVar7",
           "type": "string",
           "description": "Custom conversion variable 7."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar8": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var8": {
           "title": "eVar8",
           "type": "string",
           "description": "Custom conversion variable 8."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar9": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var9": {
           "title": "eVar9",
           "type": "string",
           "description": "Custom conversion variable 9."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar10": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var10": {
           "title": "eVar10",
           "type": "string",
           "description": "Custom conversion variable 10."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar11": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var11": {
           "title": "eVar11",
           "type": "string",
           "description": "Custom conversion variable 11."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar12": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var12": {
           "title": "eVar12",
           "type": "string",
           "description": "Custom conversion variable 12."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar13": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var13": {
           "title": "eVar13",
           "type": "string",
           "description": "Custom conversion variable 13."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar14": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var14": {
           "title": "eVar14",
           "type": "string",
           "description": "Custom conversion variable 14."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar15": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var15": {
           "title": "eVar15",
           "type": "string",
           "description": "Custom conversion variable 15."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar16": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var16": {
           "title": "eVar16",
           "type": "string",
           "description": "Custom conversion variable 16."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar17": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var17": {
           "title": "eVar17",
           "type": "string",
           "description": "Custom conversion variable 17."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar18": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var18": {
           "title": "eVar18",
           "type": "string",
           "description": "Custom conversion variable 18."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar19": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var19": {
           "title": "eVar19",
           "type": "string",
           "description": "Custom conversion variable 19."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar20": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var20": {
           "title": "eVar20",
           "type": "string",
           "description": "Custom conversion variable 20."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar21": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var21": {
           "title": "eVar21",
           "type": "string",
           "description": "Custom conversion variable 21."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar22": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var22": {
           "title": "eVar22",
           "type": "string",
           "description": "Custom conversion variable 22."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar23": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var23": {
           "title": "eVar23",
           "type": "string",
           "description": "Custom conversion variable 23."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar24": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var24": {
           "title": "eVar24",
           "type": "string",
           "description": "Custom conversion variable 24."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar25": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var25": {
           "title": "eVar25",
           "type": "string",
           "description": "Custom conversion variable 25."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar26": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var26": {
           "title": "eVar26",
           "type": "string",
           "description": "Custom conversion variable 26."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar27": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var27": {
           "title": "eVar27",
           "type": "string",
           "description": "Custom conversion variable 27."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar28": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var28": {
           "title": "eVar28",
           "type": "string",
           "description": "Custom conversion variable 28."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar29": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var29": {
           "title": "eVar29",
           "type": "string",
           "description": "Custom conversion variable 29."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar30": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var30": {
           "title": "eVar30",
           "type": "string",
           "description": "Custom conversion variable 30."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar31": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var31": {
           "title": "eVar31",
           "type": "string",
           "description": "Custom conversion variable 31."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar32": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var32": {
           "title": "eVar32",
           "type": "string",
           "description": "Custom conversion variable 32."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar33": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var33": {
           "title": "eVar33",
           "type": "string",
           "description": "Custom conversion variable 33."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar34": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var34": {
           "title": "eVar34",
           "type": "string",
           "description": "Custom conversion variable 34."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar35": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var35": {
           "title": "eVar35",
           "type": "string",
           "description": "Custom conversion variable 35."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar36": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var36": {
           "title": "eVar36",
           "type": "string",
           "description": "Custom conversion variable 36."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar37": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var37": {
           "title": "eVar37",
           "type": "string",
           "description": "Custom conversion variable 37."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar38": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var38": {
           "title": "eVar38",
           "type": "string",
           "description": "Custom conversion variable 38."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar39": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var39": {
           "title": "eVar39",
           "type": "string",
           "description": "Custom conversion variable 39."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar40": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var40": {
           "title": "eVar40",
           "type": "string",
           "description": "Custom conversion variable 40."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar41": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var41": {
           "title": "eVar41",
           "type": "string",
           "description": "Custom conversion variable 41."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar42": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var42": {
           "title": "eVar42",
           "type": "string",
           "description": "Custom conversion variable 42."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar43": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var43": {
           "title": "eVar43",
           "type": "string",
           "description": "Custom conversion variable 43."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar44": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var44": {
           "title": "eVar44",
           "type": "string",
           "description": "Custom conversion variable 44."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar45": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var45": {
           "title": "eVar45",
           "type": "string",
           "description": "Custom conversion variable 45."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar46": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var46": {
           "title": "eVar46",
           "type": "string",
           "description": "Custom conversion variable 46."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar47": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var47": {
           "title": "eVar47",
           "type": "string",
           "description": "Custom conversion variable 47."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar48": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var48": {
           "title": "eVar48",
           "type": "string",
           "description": "Custom conversion variable 48."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar49": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var49": {
           "title": "eVar49",
           "type": "string",
           "description": "Custom conversion variable 49."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar50": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var50": {
           "title": "eVar50",
           "type": "string",
           "description": "Custom conversion variable 50."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar51": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var51": {
           "title": "eVar51",
           "type": "string",
           "description": "Custom conversion variable 51."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar52": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var52": {
           "title": "eVar52",
           "type": "string",
           "description": "Custom conversion variable 52."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar53": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var53": {
           "title": "eVar53",
           "type": "string",
           "description": "Custom conversion variable 53."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar54": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var54": {
           "title": "eVar54",
           "type": "string",
           "description": "Custom conversion variable 54."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar55": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var55": {
           "title": "eVar55",
           "type": "string",
           "description": "Custom conversion variable 55."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar56": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var56": {
           "title": "eVar56",
           "type": "string",
           "description": "Custom conversion variable 56."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar57": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var57": {
           "title": "eVar57",
           "type": "string",
           "description": "Custom conversion variable 57."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar58": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var58": {
           "title": "eVar58",
           "type": "string",
           "description": "Custom conversion variable 58."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar59": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var59": {
           "title": "eVar59",
           "type": "string",
           "description": "Custom conversion variable 59."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar60": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var60": {
           "title": "eVar60",
           "type": "string",
           "description": "Custom conversion variable 60."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar61": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var61": {
           "title": "eVar61",
           "type": "string",
           "description": "Custom conversion variable 61."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar62": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var62": {
           "title": "eVar62",
           "type": "string",
           "description": "Custom conversion variable 62."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar63": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var63": {
           "title": "eVar63",
           "type": "string",
           "description": "Custom conversion variable 63."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar64": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var64": {
           "title": "eVar64",
           "type": "string",
           "description": "Custom conversion variable 64."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar65": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var65": {
           "title": "eVar65",
           "type": "string",
           "description": "Custom conversion variable 65."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar66": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var66": {
           "title": "eVar66",
           "type": "string",
           "description": "Custom conversion variable 66."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar67": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var67": {
           "title": "eVar67",
           "type": "string",
           "description": "Custom conversion variable 67."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar68": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var68": {
           "title": "eVar68",
           "type": "string",
           "description": "Custom conversion variable 68."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar69": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var69": {
           "title": "eVar69",
           "type": "string",
           "description": "Custom conversion variable 69."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar70": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var70": {
           "title": "eVar70",
           "type": "string",
           "description": "Custom conversion variable 70."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar71": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var71": {
           "title": "eVar71",
           "type": "string",
           "description": "Custom conversion variable 71."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar72": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var72": {
           "title": "eVar72",
           "type": "string",
           "description": "Custom conversion variable 72."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar73": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var73": {
           "title": "eVar73",
           "type": "string",
           "description": "Custom conversion variable 73."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar74": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var74": {
           "title": "eVar74",
           "type": "string",
           "description": "Custom conversion variable 74."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar75": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var75": {
           "title": "eVar75",
           "type": "string",
           "description": "Custom conversion variable 75."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar76": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var76": {
           "title": "eVar76",
           "type": "string",
           "description": "Custom conversion variable 76."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar77": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var77": {
           "title": "eVar77",
           "type": "string",
           "description": "Custom conversion variable 77."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar78": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var78": {
           "title": "eVar78",
           "type": "string",
           "description": "Custom conversion variable 78."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar79": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var79": {
           "title": "eVar79",
           "type": "string",
           "description": "Custom conversion variable 79."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar80": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var80": {
           "title": "eVar80",
           "type": "string",
           "description": "Custom conversion variable 80."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar81": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var81": {
           "title": "eVar81",
           "type": "string",
           "description": "Custom conversion variable 81."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar82": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var82": {
           "title": "eVar82",
           "type": "string",
           "description": "Custom conversion variable 82."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar83": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var83": {
           "title": "eVar83",
           "type": "string",
           "description": "Custom conversion variable 83."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar84": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var84": {
           "title": "eVar84",
           "type": "string",
           "description": "Custom conversion variable 84."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar85": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var85": {
           "title": "eVar85",
           "type": "string",
           "description": "Custom conversion variable 85."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar86": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var86": {
           "title": "eVar86",
           "type": "string",
           "description": "Custom conversion variable 86."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar87": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var87": {
           "title": "eVar87",
           "type": "string",
           "description": "Custom conversion variable 87."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar88": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var88": {
           "title": "eVar88",
           "type": "string",
           "description": "Custom conversion variable 88."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar89": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var89": {
           "title": "eVar89",
           "type": "string",
           "description": "Custom conversion variable 89."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar90": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var90": {
           "title": "eVar90",
           "type": "string",
           "description": "Custom conversion variable 90."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar91": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var91": {
           "title": "eVar91",
           "type": "string",
           "description": "Custom conversion variable 91."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar92": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var92": {
           "title": "eVar92",
           "type": "string",
           "description": "Custom conversion variable 92."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar93": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var93": {
           "title": "eVar93",
           "type": "string",
           "description": "Custom conversion variable 93."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar94": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var94": {
           "title": "eVar94",
           "type": "string",
           "description": "Custom conversion variable 94."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar95": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var95": {
           "title": "eVar95",
           "type": "string",
           "description": "Custom conversion variable 95."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar96": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var96": {
           "title": "eVar96",
           "type": "string",
           "description": "Custom conversion variable 96."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar97": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var97": {
           "title": "eVar97",
           "type": "string",
           "description": "Custom conversion variable 97."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar98": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var98": {
           "title": "eVar98",
           "type": "string",
           "description": "Custom conversion variable 98."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar99": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var99": {
           "title": "eVar99",
           "type": "string",
           "description": "Custom conversion variable 99."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar100": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var100": {
           "title": "eVar100",
           "type": "string",
           "description": "Custom conversion variable 100."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar101": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var101": {
           "title": "eVar101",
           "type": "string",
           "description": "Custom conversion variable 101."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar102": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var102": {
           "title": "eVar102",
           "type": "string",
           "description": "Custom conversion variable 102."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar103": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var103": {
           "title": "eVar103",
           "type": "string",
           "description": "Custom conversion variable 103."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar104": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var104": {
           "title": "eVar104",
           "type": "string",
           "description": "Custom conversion variable 104."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar105": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var105": {
           "title": "eVar105",
           "type": "string",
           "description": "Custom conversion variable 105."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar106": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var106": {
           "title": "eVar106",
           "type": "string",
           "description": "Custom conversion variable 106."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar107": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var107": {
           "title": "eVar107",
           "type": "string",
           "description": "Custom conversion variable 107."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar108": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var108": {
           "title": "eVar108",
           "type": "string",
           "description": "Custom conversion variable 108."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar109": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var109": {
           "title": "eVar109",
           "type": "string",
           "description": "Custom conversion variable 109."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar110": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var110": {
           "title": "eVar110",
           "type": "string",
           "description": "Custom conversion variable 110."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar111": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var111": {
           "title": "eVar111",
           "type": "string",
           "description": "Custom conversion variable 111."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar112": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var112": {
           "title": "eVar112",
           "type": "string",
           "description": "Custom conversion variable 112."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar113": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var113": {
           "title": "eVar113",
           "type": "string",
           "description": "Custom conversion variable 113."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar114": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var114": {
           "title": "eVar114",
           "type": "string",
           "description": "Custom conversion variable 114."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar115": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var115": {
           "title": "eVar115",
           "type": "string",
           "description": "Custom conversion variable 115."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar116": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var116": {
           "title": "eVar116",
           "type": "string",
           "description": "Custom conversion variable 116."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar117": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var117": {
           "title": "eVar117",
           "type": "string",
           "description": "Custom conversion variable 117."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar118": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var118": {
           "title": "eVar118",
           "type": "string",
           "description": "Custom conversion variable 118."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar119": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var119": {
           "title": "eVar119",
           "type": "string",
           "description": "Custom conversion variable 119."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar120": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var120": {
           "title": "eVar120",
           "type": "string",
           "description": "Custom conversion variable 120."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar121": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var121": {
           "title": "eVar121",
           "type": "string",
           "description": "Custom conversion variable 121."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar122": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var122": {
           "title": "eVar122",
           "type": "string",
           "description": "Custom conversion variable 122."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar123": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var123": {
           "title": "eVar123",
           "type": "string",
           "description": "Custom conversion variable 123."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar124": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var124": {
           "title": "eVar124",
           "type": "string",
           "description": "Custom conversion variable 124."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar125": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var125": {
           "title": "eVar125",
           "type": "string",
           "description": "Custom conversion variable 125."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar126": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var126": {
           "title": "eVar126",
           "type": "string",
           "description": "Custom conversion variable 126."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar127": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var127": {
           "title": "eVar127",
           "type": "string",
           "description": "Custom conversion variable 127."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar128": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var128": {
           "title": "eVar128",
           "type": "string",
           "description": "Custom conversion variable 128."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar129": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var129": {
           "title": "eVar129",
           "type": "string",
           "description": "Custom conversion variable 129."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar130": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var130": {
           "title": "eVar130",
           "type": "string",
           "description": "Custom conversion variable 130."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar131": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var131": {
           "title": "eVar131",
           "type": "string",
           "description": "Custom conversion variable 131."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar132": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var132": {
           "title": "eVar132",
           "type": "string",
           "description": "Custom conversion variable 132."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar133": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var133": {
           "title": "eVar133",
           "type": "string",
           "description": "Custom conversion variable 133."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar134": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var134": {
           "title": "eVar134",
           "type": "string",
           "description": "Custom conversion variable 134."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar135": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var135": {
           "title": "eVar135",
           "type": "string",
           "description": "Custom conversion variable 135."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar136": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var136": {
           "title": "eVar136",
           "type": "string",
           "description": "Custom conversion variable 136."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar137": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var137": {
           "title": "eVar137",
           "type": "string",
           "description": "Custom conversion variable 137."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar138": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var138": {
           "title": "eVar138",
           "type": "string",
           "description": "Custom conversion variable 138."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar139": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var139": {
           "title": "eVar139",
           "type": "string",
           "description": "Custom conversion variable 139."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar140": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var140": {
           "title": "eVar140",
           "type": "string",
           "description": "Custom conversion variable 140."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar141": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var141": {
           "title": "eVar141",
           "type": "string",
           "description": "Custom conversion variable 141."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar142": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var142": {
           "title": "eVar142",
           "type": "string",
           "description": "Custom conversion variable 142."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar143": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var143": {
           "title": "eVar143",
           "type": "string",
           "description": "Custom conversion variable 143."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar144": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var144": {
           "title": "eVar144",
           "type": "string",
           "description": "Custom conversion variable 144."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar145": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var145": {
           "title": "eVar145",
           "type": "string",
           "description": "Custom conversion variable 145."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar146": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var146": {
           "title": "eVar146",
           "type": "string",
           "description": "Custom conversion variable 146."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar147": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var147": {
           "title": "eVar147",
           "type": "string",
           "description": "Custom conversion variable 147."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar148": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var148": {
           "title": "eVar148",
           "type": "string",
           "description": "Custom conversion variable 148."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar149": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var149": {
           "title": "eVar149",
           "type": "string",
           "description": "Custom conversion variable 149."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar150": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var150": {
           "title": "eVar150",
           "type": "string",
           "description": "Custom conversion variable 150."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar151": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var151": {
           "title": "eVar151",
           "type": "string",
           "description": "Custom conversion variable 151."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar152": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var152": {
           "title": "eVar152",
           "type": "string",
           "description": "Custom conversion variable 152."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar153": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var153": {
           "title": "eVar153",
           "type": "string",
           "description": "Custom conversion variable 153."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar154": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var154": {
           "title": "eVar154",
           "type": "string",
           "description": "Custom conversion variable 154."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar155": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var155": {
           "title": "eVar155",
           "type": "string",
           "description": "Custom conversion variable 155."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar156": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var156": {
           "title": "eVar156",
           "type": "string",
           "description": "Custom conversion variable 156."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar157": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var157": {
           "title": "eVar157",
           "type": "string",
           "description": "Custom conversion variable 157."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar158": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var158": {
           "title": "eVar158",
           "type": "string",
           "description": "Custom conversion variable 158."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar159": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var159": {
           "title": "eVar159",
           "type": "string",
           "description": "Custom conversion variable 159."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar160": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var160": {
           "title": "eVar160",
           "type": "string",
           "description": "Custom conversion variable 160."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar161": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var161": {
           "title": "eVar161",
           "type": "string",
           "description": "Custom conversion variable 161."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar162": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var162": {
           "title": "eVar162",
           "type": "string",
           "description": "Custom conversion variable 162."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar163": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var163": {
           "title": "eVar163",
           "type": "string",
           "description": "Custom conversion variable 163."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar164": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var164": {
           "title": "eVar164",
           "type": "string",
           "description": "Custom conversion variable 164."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar165": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var165": {
           "title": "eVar165",
           "type": "string",
           "description": "Custom conversion variable 165."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar166": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var166": {
           "title": "eVar166",
           "type": "string",
           "description": "Custom conversion variable 166."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar167": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var167": {
           "title": "eVar167",
           "type": "string",
           "description": "Custom conversion variable 167."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar168": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var168": {
           "title": "eVar168",
           "type": "string",
           "description": "Custom conversion variable 168."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar169": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var169": {
           "title": "eVar169",
           "type": "string",
           "description": "Custom conversion variable 169."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar170": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var170": {
           "title": "eVar170",
           "type": "string",
           "description": "Custom conversion variable 170."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar171": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var171": {
           "title": "eVar171",
           "type": "string",
           "description": "Custom conversion variable 171."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar172": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var172": {
           "title": "eVar172",
           "type": "string",
           "description": "Custom conversion variable 172."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar173": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var173": {
           "title": "eVar173",
           "type": "string",
           "description": "Custom conversion variable 173."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar174": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var174": {
           "title": "eVar174",
           "type": "string",
           "description": "Custom conversion variable 174."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar175": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var175": {
           "title": "eVar175",
           "type": "string",
           "description": "Custom conversion variable 175."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar176": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var176": {
           "title": "eVar176",
           "type": "string",
           "description": "Custom conversion variable 176."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar177": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var177": {
           "title": "eVar177",
           "type": "string",
           "description": "Custom conversion variable 177."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar178": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var178": {
           "title": "eVar178",
           "type": "string",
           "description": "Custom conversion variable 178."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar179": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var179": {
           "title": "eVar179",
           "type": "string",
           "description": "Custom conversion variable 179."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar180": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var180": {
           "title": "eVar180",
           "type": "string",
           "description": "Custom conversion variable 180."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar181": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var181": {
           "title": "eVar181",
           "type": "string",
           "description": "Custom conversion variable 181."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar182": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var182": {
           "title": "eVar182",
           "type": "string",
           "description": "Custom conversion variable 182."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar183": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var183": {
           "title": "eVar183",
           "type": "string",
           "description": "Custom conversion variable 183."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar184": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var184": {
           "title": "eVar184",
           "type": "string",
           "description": "Custom conversion variable 184."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar185": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var185": {
           "title": "eVar185",
           "type": "string",
           "description": "Custom conversion variable 185."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar186": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var186": {
           "title": "eVar186",
           "type": "string",
           "description": "Custom conversion variable 186."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar187": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var187": {
           "title": "eVar187",
           "type": "string",
           "description": "Custom conversion variable 187."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar188": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var188": {
           "title": "eVar188",
           "type": "string",
           "description": "Custom conversion variable 188."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar189": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var189": {
           "title": "eVar189",
           "type": "string",
           "description": "Custom conversion variable 189."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar190": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var190": {
           "title": "eVar190",
           "type": "string",
           "description": "Custom conversion variable 190."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar191": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var191": {
           "title": "eVar191",
           "type": "string",
           "description": "Custom conversion variable 191."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar192": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var192": {
           "title": "eVar192",
           "type": "string",
           "description": "Custom conversion variable 192."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar193": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var193": {
           "title": "eVar193",
           "type": "string",
           "description": "Custom conversion variable 193."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar194": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var194": {
           "title": "eVar194",
           "type": "string",
           "description": "Custom conversion variable 194."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar195": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var195": {
           "title": "eVar195",
           "type": "string",
           "description": "Custom conversion variable 195."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar196": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var196": {
           "title": "eVar196",
           "type": "string",
           "description": "Custom conversion variable 196."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar197": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var197": {
           "title": "eVar197",
           "type": "string",
           "description": "Custom conversion variable 197."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar198": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var198": {
           "title": "eVar198",
           "type": "string",
           "description": "Custom conversion variable 198."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar199": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var199": {
           "title": "eVar199",
           "type": "string",
           "description": "Custom conversion variable 199."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar200": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var200": {
           "title": "eVar200",
           "type": "string",
           "description": "Custom conversion variable 200."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar201": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var201": {
           "title": "eVar201",
           "type": "string",
           "description": "Custom conversion variable 201."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar202": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var202": {
           "title": "eVar202",
           "type": "string",
           "description": "Custom conversion variable 202."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar203": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var203": {
           "title": "eVar203",
           "type": "string",
           "description": "Custom conversion variable 203."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar204": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var204": {
           "title": "eVar204",
           "type": "string",
           "description": "Custom conversion variable 204."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar205": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var205": {
           "title": "eVar205",
           "type": "string",
           "description": "Custom conversion variable 205."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar206": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var206": {
           "title": "eVar206",
           "type": "string",
           "description": "Custom conversion variable 206."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar207": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var207": {
           "title": "eVar207",
           "type": "string",
           "description": "Custom conversion variable 207."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar208": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var208": {
           "title": "eVar208",
           "type": "string",
           "description": "Custom conversion variable 208."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar209": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var209": {
           "title": "eVar209",
           "type": "string",
           "description": "Custom conversion variable 209."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar210": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var210": {
           "title": "eVar210",
           "type": "string",
           "description": "Custom conversion variable 210."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar211": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var211": {
           "title": "eVar211",
           "type": "string",
           "description": "Custom conversion variable 211."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar212": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var212": {
           "title": "eVar212",
           "type": "string",
           "description": "Custom conversion variable 212."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar213": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var213": {
           "title": "eVar213",
           "type": "string",
           "description": "Custom conversion variable 213."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar214": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var214": {
           "title": "eVar214",
           "type": "string",
           "description": "Custom conversion variable 214."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar215": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var215": {
           "title": "eVar215",
           "type": "string",
           "description": "Custom conversion variable 215."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar216": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var216": {
           "title": "eVar216",
           "type": "string",
           "description": "Custom conversion variable 216."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar217": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var217": {
           "title": "eVar217",
           "type": "string",
           "description": "Custom conversion variable 217."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar218": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var218": {
           "title": "eVar218",
           "type": "string",
           "description": "Custom conversion variable 218."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar219": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var219": {
           "title": "eVar219",
           "type": "string",
           "description": "Custom conversion variable 219."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar220": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var220": {
           "title": "eVar220",
           "type": "string",
           "description": "Custom conversion variable 220."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar221": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var221": {
           "title": "eVar221",
           "type": "string",
           "description": "Custom conversion variable 221."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar222": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var222": {
           "title": "eVar222",
           "type": "string",
           "description": "Custom conversion variable 222."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar223": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var223": {
           "title": "eVar223",
           "type": "string",
           "description": "Custom conversion variable 223."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar224": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var224": {
           "title": "eVar224",
           "type": "string",
           "description": "Custom conversion variable 224."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar225": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var225": {
           "title": "eVar225",
           "type": "string",
           "description": "Custom conversion variable 225."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar226": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var226": {
           "title": "eVar226",
           "type": "string",
           "description": "Custom conversion variable 226."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar227": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var227": {
           "title": "eVar227",
           "type": "string",
           "description": "Custom conversion variable 227."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar228": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var228": {
           "title": "eVar228",
           "type": "string",
           "description": "Custom conversion variable 228."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar229": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var229": {
           "title": "eVar229",
           "type": "string",
           "description": "Custom conversion variable 229."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar230": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var230": {
           "title": "eVar230",
           "type": "string",
           "description": "Custom conversion variable 230."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar231": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var231": {
           "title": "eVar231",
           "type": "string",
           "description": "Custom conversion variable 231."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar232": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var232": {
           "title": "eVar232",
           "type": "string",
           "description": "Custom conversion variable 232."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar233": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var233": {
           "title": "eVar233",
           "type": "string",
           "description": "Custom conversion variable 233."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar234": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var234": {
           "title": "eVar234",
           "type": "string",
           "description": "Custom conversion variable 234."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar235": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var235": {
           "title": "eVar235",
           "type": "string",
           "description": "Custom conversion variable 235."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar236": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var236": {
           "title": "eVar236",
           "type": "string",
           "description": "Custom conversion variable 236."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar237": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var237": {
           "title": "eVar237",
           "type": "string",
           "description": "Custom conversion variable 237."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar238": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var238": {
           "title": "eVar238",
           "type": "string",
           "description": "Custom conversion variable 238."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar239": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var239": {
           "title": "eVar239",
           "type": "string",
           "description": "Custom conversion variable 239."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar240": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var240": {
           "title": "eVar240",
           "type": "string",
           "description": "Custom conversion variable 240."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar241": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var241": {
           "title": "eVar241",
           "type": "string",
           "description": "Custom conversion variable 241."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar242": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var242": {
           "title": "eVar242",
           "type": "string",
           "description": "Custom conversion variable 242."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar243": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var243": {
           "title": "eVar243",
           "type": "string",
           "description": "Custom conversion variable 243."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar244": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var244": {
           "title": "eVar244",
           "type": "string",
           "description": "Custom conversion variable 244."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar245": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var245": {
           "title": "eVar245",
           "type": "string",
           "description": "Custom conversion variable 245."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar246": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var246": {
           "title": "eVar246",
           "type": "string",
           "description": "Custom conversion variable 246."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar247": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var247": {
           "title": "eVar247",
           "type": "string",
           "description": "Custom conversion variable 247."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar248": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var248": {
           "title": "eVar248",
           "type": "string",
           "description": "Custom conversion variable 248."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar249": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var249": {
           "title": "eVar249",
           "type": "string",
           "description": "Custom conversion variable 249."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/evars/evar250": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/e-vars/e-var250": {
           "title": "eVar250",
           "type": "string",
           "description": "Custom conversion variable 250."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop1": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop1": {
           "title": "prop1",
           "type": "string",
           "description": "Custom property variable 1."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop2": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop2": {
           "title": "prop2",
           "type": "string",
           "description": "Custom property variable 2."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop3": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop3": {
           "title": "prop3",
           "type": "string",
           "description": "Custom property variable 3."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop4": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop4": {
           "title": "prop4",
           "type": "string",
           "description": "Custom property variable 4."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop5": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop5": {
           "title": "prop5",
           "type": "string",
           "description": "Custom property variable 5."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop6": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop6": {
           "title": "prop6",
           "type": "string",
           "description": "Custom property variable 6."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop7": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop7": {
           "title": "prop7",
           "type": "string",
           "description": "Custom property variable 7."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop8": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop8": {
           "title": "prop8",
           "type": "string",
           "description": "Custom property variable 8."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop9": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop9": {
           "title": "prop9",
           "type": "string",
           "description": "Custom property variable 9."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop10": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop10": {
           "title": "prop10",
           "type": "string",
           "description": "Custom property variable 10."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop11": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop11": {
           "title": "prop11",
           "type": "string",
           "description": "Custom property variable 11."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop12": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop12": {
           "title": "prop12",
           "type": "string",
           "description": "Custom property variable 12."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop13": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop13": {
           "title": "prop13",
           "type": "string",
           "description": "Custom property variable 13."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop14": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop14": {
           "title": "prop14",
           "type": "string",
           "description": "Custom property variable 14."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop15": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop15": {
           "title": "prop15",
           "type": "string",
           "description": "Custom property variable 15."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop16": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop16": {
           "title": "prop16",
           "type": "string",
           "description": "Custom property variable 16."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop17": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop17": {
           "title": "prop17",
           "type": "string",
           "description": "Custom property variable 17."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop18": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop18": {
           "title": "prop18",
           "type": "string",
           "description": "Custom property variable 18."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop19": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop19": {
           "title": "prop19",
           "type": "string",
           "description": "Custom property variable 19."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop20": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop20": {
           "title": "prop20",
           "type": "string",
           "description": "Custom property variable 20."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop21": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop21": {
           "title": "prop21",
           "type": "string",
           "description": "Custom property variable 21."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop22": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop22": {
           "title": "prop22",
           "type": "string",
           "description": "Custom property variable 22."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop23": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop23": {
           "title": "prop23",
           "type": "string",
           "description": "Custom property variable 23."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop24": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop24": {
           "title": "prop24",
           "type": "string",
           "description": "Custom property variable 24."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop25": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop25": {
           "title": "prop25",
           "type": "string",
           "description": "Custom property variable 25."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop26": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop26": {
           "title": "prop26",
           "type": "string",
           "description": "Custom property variable 26."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop27": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop27": {
           "title": "prop27",
           "type": "string",
           "description": "Custom property variable 27."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop28": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop28": {
           "title": "prop28",
           "type": "string",
           "description": "Custom property variable 28."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop29": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop29": {
           "title": "prop29",
           "type": "string",
           "description": "Custom property variable 29."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop30": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop30": {
           "title": "prop30",
           "type": "string",
           "description": "Custom property variable 30."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop31": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop31": {
           "title": "prop31",
           "type": "string",
           "description": "Custom property variable 31."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop32": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop32": {
           "title": "prop32",
           "type": "string",
           "description": "Custom property variable 32."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop33": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop33": {
           "title": "prop33",
           "type": "string",
           "description": "Custom property variable 33."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop34": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop34": {
           "title": "prop34",
           "type": "string",
           "description": "Custom property variable 34."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop35": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop35": {
           "title": "prop35",
           "type": "string",
           "description": "Custom property variable 35."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop36": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop36": {
           "title": "prop36",
           "type": "string",
           "description": "Custom property variable 36."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop37": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop37": {
           "title": "prop37",
           "type": "string",
           "description": "Custom property variable 37."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop38": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop38": {
           "title": "prop38",
           "type": "string",
           "description": "Custom property variable 38."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop39": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop39": {
           "title": "prop39",
           "type": "string",
           "description": "Custom property variable 39."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop40": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop40": {
           "title": "prop40",
           "type": "string",
           "description": "Custom property variable 40."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop41": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop41": {
           "title": "prop41",
           "type": "string",
           "description": "Custom property variable 41."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop42": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop42": {
           "title": "prop42",
           "type": "string",
           "description": "Custom property variable 42."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop43": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop43": {
           "title": "prop43",
           "type": "string",
           "description": "Custom property variable 43."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop44": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop44": {
           "title": "prop44",
           "type": "string",
           "description": "Custom property variable 44."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop45": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop45": {
           "title": "prop45",
           "type": "string",
           "description": "Custom property variable 45."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop46": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop46": {
           "title": "prop46",
           "type": "string",
           "description": "Custom property variable 46."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop47": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop47": {
           "title": "prop47",
           "type": "string",
           "description": "Custom property variable 47."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop48": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop48": {
           "title": "prop48",
           "type": "string",
           "description": "Custom property variable 48."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop49": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop49": {
           "title": "prop49",
           "type": "string",
           "description": "Custom property variable 49."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop50": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop50": {
           "title": "prop50",
           "type": "string",
           "description": "Custom property variable 50."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop51": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop51": {
           "title": "prop51",
           "type": "string",
           "description": "Custom property variable 51."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop52": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop52": {
           "title": "prop52",
           "type": "string",
           "description": "Custom property variable 52."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop53": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop53": {
           "title": "prop53",
           "type": "string",
           "description": "Custom property variable 53."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop54": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop54": {
           "title": "prop54",
           "type": "string",
           "description": "Custom property variable 54."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop55": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop55": {
           "title": "prop55",
           "type": "string",
           "description": "Custom property variable 55."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop56": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop56": {
           "title": "prop56",
           "type": "string",
           "description": "Custom property variable 56."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop57": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop57": {
           "title": "prop57",
           "type": "string",
           "description": "Custom property variable 57."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop58": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop58": {
           "title": "prop58",
           "type": "string",
           "description": "Custom property variable 58."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop59": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop59": {
           "title": "prop59",
           "type": "string",
           "description": "Custom property variable 59."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop60": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop60": {
           "title": "prop60",
           "type": "string",
           "description": "Custom property variable 60."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop61": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop61": {
           "title": "prop61",
           "type": "string",
           "description": "Custom property variable 61."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop62": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop62": {
           "title": "prop62",
           "type": "string",
           "description": "Custom property variable 62."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop63": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop63": {
           "title": "prop63",
           "type": "string",
           "description": "Custom property variable 63."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop64": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop64": {
           "title": "prop64",
           "type": "string",
           "description": "Custom property variable 64."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop65": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop65": {
           "title": "prop65",
           "type": "string",
           "description": "Custom property variable 65."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop66": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop66": {
           "title": "prop66",
           "type": "string",
           "description": "Custom property variable 66."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop67": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop67": {
           "title": "prop67",
           "type": "string",
           "description": "Custom property variable 67."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop68": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop68": {
           "title": "prop68",
           "type": "string",
           "description": "Custom property variable 68."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop69": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop69": {
           "title": "prop69",
           "type": "string",
           "description": "Custom property variable 69."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop70": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop70": {
           "title": "prop70",
           "type": "string",
           "description": "Custom property variable 70."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop71": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop71": {
           "title": "prop71",
           "type": "string",
           "description": "Custom property variable 71."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop72": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop72": {
           "title": "prop72",
           "type": "string",
           "description": "Custom property variable 72."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop73": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop73": {
           "title": "prop73",
           "type": "string",
           "description": "Custom property variable 73."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop74": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop74": {
           "title": "prop74",
           "type": "string",
           "description": "Custom property variable 74."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/props/prop75": {
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/props/prop75": {
           "title": "prop75",
           "type": "string",
           "description": "Custom property variable 75."
         },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop1/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop1/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop2/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop2/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop3/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop3/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop4/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop4/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop5/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop5/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop6/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop6/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop7/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop7/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop8/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop8/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop9/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop9/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop10/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop10/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop11/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop11/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop12/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop12/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop13/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop13/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop14/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop14/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop15/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop15/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop16/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop16/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop17/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop17/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop18/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop18/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop19/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop19/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop20/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop20/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop21/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop21/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop22/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop22/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop23/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop23/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop24/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop24/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop25/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop25/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop26/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop26/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop27/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop27/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop28/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop28/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop29/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop29/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop30/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop30/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop31/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop31/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop32/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop32/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop33/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop33/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop34/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop34/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop35/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop35/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop36/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop36/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop37/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop37/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop38/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop38/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop39/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop39/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop40/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop40/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop41/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop41/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop42/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop42/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop43/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop43/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop44/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop44/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop45/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop45/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop46/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop46/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop47/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop47/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop48/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop48/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop49/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop49/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop50/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop50/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop51/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop51/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop52/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop52/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop53/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop53/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop54/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop54/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop55/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop55/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop56/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop56/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop57/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop57/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop58/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop58/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop59/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop59/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop60/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop60/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop61/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop61/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop62/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop62/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop63/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop63/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop64/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop64/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop65/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop65/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop66/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop66/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop67/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop67/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop68/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop68/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop69/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop69/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop70/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop70/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop71/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop71/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop72/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop72/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop73/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop73/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop74/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop74/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop75/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/listprops/prop75/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/hierarchies/hier1/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/hierarchies/hier1/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/hierarchies/hier2/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/hierarchies/hier2/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/hierarchies/hier3/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/hierarchies/hier3/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/hierarchies/hier4/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/hierarchies/hier4/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/hierarchies/hier5/values": {
-          "title": "List Values",
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "List of values."
-        },
-        "https://ns.adobe.com/experience/analytics/customdimensions/hierarchies/hier5/delimiter": {
-          "title": "Original List Delimiter",
-          "type": "string",
-          "description": "The original delimiter used to generate the list."
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop1":{
+           "title":"prop1",
+           "description":"Custom property variable1",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop2":{
+           "title":"prop2",
+           "description":"Custom property variable2",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop3":{
+           "title":"prop3",
+           "description":"Custom property variable3",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop4":{
+           "title":"prop4",
+           "description":"Custom property variable4",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop5":{
+           "title":"prop5",
+           "description":"Custom property variable5",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop6":{
+           "title":"prop6",
+           "description":"Custom property variable6",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop7":{
+           "title":"prop7",
+           "description":"Custom property variable7",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop8":{
+           "title":"prop8",
+           "description":"Custom property variable8",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop9":{
+           "title":"prop9",
+           "description":"Custom property variable9",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop10":{
+           "title":"prop10",
+           "description":"Custom property variable10",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop11":{
+           "title":"prop11",
+           "description":"Custom property variable11",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop12":{
+           "title":"prop12",
+           "description":"Custom property variable12",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop13":{
+           "title":"prop13",
+           "description":"Custom property variable13",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop14":{
+           "title":"prop14",
+           "description":"Custom property variable14",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop15":{
+           "title":"prop15",
+           "description":"Custom property variable15",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop16":{
+           "title":"prop16",
+           "description":"Custom property variable16",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop17":{
+           "title":"prop17",
+           "description":"Custom property variable17",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop18":{
+           "title":"prop18",
+           "description":"Custom property variable18",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop19":{
+           "title":"prop19",
+           "description":"Custom property variable19",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop20":{
+           "title":"prop20",
+           "description":"Custom property variable20",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop21":{
+           "title":"prop21",
+           "description":"Custom property variable21",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop22":{
+           "title":"prop22",
+           "description":"Custom property variable22",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop23":{
+           "title":"prop23",
+           "description":"Custom property variable23",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop24":{
+           "title":"prop24",
+           "description":"Custom property variable24",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop25":{
+           "title":"prop25",
+           "description":"Custom property variable25",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop26":{
+           "title":"prop26",
+           "description":"Custom property variable26",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop27":{
+           "title":"prop27",
+           "description":"Custom property variable27",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop28":{
+           "title":"prop28",
+           "description":"Custom property variable28",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop29":{
+           "title":"prop29",
+           "description":"Custom property variable29",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop30":{
+           "title":"prop30",
+           "description":"Custom property variable30",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop31":{
+           "title":"prop31",
+           "description":"Custom property variable31",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop32":{
+           "title":"prop32",
+           "description":"Custom property variable32",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop33":{
+           "title":"prop33",
+           "description":"Custom property variable33",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop34":{
+           "title":"prop34",
+           "description":"Custom property variable34",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop35":{
+           "title":"prop35",
+           "description":"Custom property variable35",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop36":{
+           "title":"prop36",
+           "description":"Custom property variable36",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop37":{
+           "title":"prop37",
+           "description":"Custom property variable37",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop38":{
+           "title":"prop38",
+           "description":"Custom property variable38",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop39":{
+           "title":"prop39",
+           "description":"Custom property variable39",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop40":{
+           "title":"prop40",
+           "description":"Custom property variable40",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop41":{
+           "title":"prop41",
+           "description":"Custom property variable41",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop42":{
+           "title":"prop42",
+           "description":"Custom property variable42",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop43":{
+           "title":"prop43",
+           "description":"Custom property variable43",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop44":{
+           "title":"prop44",
+           "description":"Custom property variable44",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop45":{
+           "title":"prop45",
+           "description":"Custom property variable45",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop46":{
+           "title":"prop46",
+           "description":"Custom property variable46",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop47":{
+           "title":"prop47",
+           "description":"Custom property variable47",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop48":{
+           "title":"prop48",
+           "description":"Custom property variable48",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop49":{
+           "title":"prop49",
+           "description":"Custom property variable49",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop50":{
+           "title":"prop50",
+           "description":"Custom property variable50",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop51":{
+           "title":"prop51",
+           "description":"Custom property variable51",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop52":{
+           "title":"prop52",
+           "description":"Custom property variable52",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop53":{
+           "title":"prop53",
+           "description":"Custom property variable53",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop54":{
+           "title":"prop54",
+           "description":"Custom property variable54",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop55":{
+           "title":"prop55",
+           "description":"Custom property variable55",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop56":{
+           "title":"prop56",
+           "description":"Custom property variable56",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop57":{
+           "title":"prop57",
+           "description":"Custom property variable57",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop58":{
+           "title":"prop58",
+           "description":"Custom property variable58",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop59":{
+           "title":"prop59",
+           "description":"Custom property variable59",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop60":{
+           "title":"prop60",
+           "description":"Custom property variable60",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop61":{
+           "title":"prop61",
+           "description":"Custom property variable61",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop62":{
+           "title":"prop62",
+           "description":"Custom property variable62",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop63":{
+           "title":"prop63",
+           "description":"Custom property variable63",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop64":{
+           "title":"prop64",
+           "description":"Custom property variable64",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop65":{
+           "title":"prop65",
+           "description":"Custom property variable65",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop66":{
+           "title":"prop66",
+           "description":"Custom property variable66",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop67":{
+           "title":"prop67",
+           "description":"Custom property variable67",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop68":{
+           "title":"prop68",
+           "description":"Custom property variable68",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop69":{
+           "title":"prop69",
+           "description":"Custom property variable69",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop70":{
+           "title":"prop70",
+           "description":"Custom property variable70",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop71":{
+           "title":"prop71",
+           "description":"Custom property variable71",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop72":{
+           "title":"prop72",
+           "description":"Custom property variable72",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop73":{
+           "title":"prop73",
+           "description":"Custom property variable73",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop74":{
+           "title":"prop74",
+           "description":"Custom property variable74",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/list-props/prop75":{
+           "title":"prop75",
+           "description":"Custom property variable75",
+           "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/hierarchies/hier1": {
+          "title": "hier1",
+          "description": "Custom hierarchy variable 1.",
+          "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/hierarchies/hier2": {
+          "title": "hier2",
+          "description": "Custom hierarchy variable 2.",
+          "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/hierarchies/hier3": {
+          "title": "hier3",
+          "description": "Custom hierarchy variable 3.",
+          "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/hierarchies/hier4": {
+          "title": "hier4",
+          "description": "Custom hierarchy variable 4.",
+          "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
+        },
+        "https://ns.adobe.com/experience/analytics/custom-dimensions/hierarchies/hier5": {
+          "title": "hier5",
+          "description": "Custom hierarchy variable 5.",
+          "$ref":"https://ns.adobe.com/experience/analytics/listdetails"
         },
         "https://ns.adobe.com/experience/analytics/event1to100/event1": {
           "title": "event1",
@@ -7707,11 +7067,11 @@
         },
         "https://ns.adobe.com/experience/analytics/session/web": {
           "title": "Session Entry Web",
-          "$ref": "https://ns.adobe.com/xdm/context/web",
+          "$ref": "https://ns.adobe.com/xdm/context/webinfo",
           "description":
             "The information related to web page, link, and referrer at the entry of this session."
         },
-        "https://ns.adobe.com/experience/analytics/enduser/firsttimestamp": {
+        "https://ns.adobe.com/experience/analytics/end-user/first-timestamp": {
           "title": "End User First Timestamp",
           "type": "integer",
           "description":
@@ -7719,9 +7079,9 @@
           "minimum": 1,
           "maximum": 9223372036854770000
         },
-        "https://ns.adobe.com/experience/analytics/enduser/firstweb": {
+        "https://ns.adobe.com/experience/analytics/end-user/first-web": {
           "title": "End User First Web Details",
-          "$ref": "https://ns.adobe.com/xdm/context/web",
+          "$ref": "https://ns.adobe.com/xdm/context/webinfo",
           "description":
             "The information related to web page, link, and referrer from the first ExperienceEvent for this end-user."
         }

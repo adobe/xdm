@@ -7,14 +7,14 @@ https://ns.adobe.com/xdm/common/event/updated
 
 A `updated event` follows semantics that are exactly equivalent to the semantics described by the [`update activity`](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-update), except for one difference. The `update activity` can be used in imperative contexts, however, the `updated event` can only be used in passive contexts.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | No | Experimental | Forbidden | Permitted | [common/event/updated.schema.json](common/event/updated.schema.json) |
-
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | No | Experimental | No | Forbidden | Permitted | [common/event/updated.schema.json](common/event/updated.schema.json) |
 ## Schema Hierarchy
 
 * Updated Event `https://ns.adobe.com/xdm/common/event/updated`
   * [EventEnvelope](../eventenvelope.schema.md) `https://ns.adobe.com/xdm/common/eventenvelope`
+
 
 ## Updated Event Example
 ```json
@@ -24,7 +24,7 @@ A `updated event` follows semantics that are exactly equivalent to the semantics
   "xdm:objectType": "https://ns.adobe.com/xdm/assets/asset",
   "activitystreams:actor": {
     "@id": "D13A1E7053E46A220A4C86E1@AdobeID",
-    "@type": "https://ns.adobe.com/xdm-extensions/ims/user"
+    "@type": "https://ns.adobe.com/adobecloudplatform/ims/user"
   },
   "activitystreams:generator": {
     "xdm:root": "https://cc-api-storage.adobe.io/",
@@ -41,7 +41,7 @@ A `updated event` follows semantics that are exactly equivalent to the semantics
   "activitystreams:published": "2016-07-16T19:20:30+01:00",
   "activitystreams:to": {
     "@id": "D13A1E7053E46A220A4C86E1@AdobeID",
-    "@type": "https://ns.adobe.com/xdm-extensions/ims/user"
+    "@type": "https://ns.adobe.com/adobecloudplatform/ims/user"
   }
 }
 ```

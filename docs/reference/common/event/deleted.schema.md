@@ -7,14 +7,14 @@ https://ns.adobe.com/xdm/common/event/deleted
 
 A `deleted event` follows semantics that are exactly equivalent to the semantics described by the [`delete activity`](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-delete), except for one difference. The `delete activity` can be used in imperative contexts, however, the `deleted event` can only be used in passive contexts.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | No | Experimental | Forbidden | Permitted | [common/event/deleted.schema.json](common/event/deleted.schema.json) |
-
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | No | Experimental | No | Forbidden | Permitted | [common/event/deleted.schema.json](common/event/deleted.schema.json) |
 ## Schema Hierarchy
 
 * Deleted Event `https://ns.adobe.com/xdm/common/event/deleted`
   * [EventEnvelope](../eventenvelope.schema.md) `https://ns.adobe.com/xdm/common/eventenvelope`
+
 
 ## Deleted Event Example
 ```json
@@ -24,7 +24,7 @@ A `deleted event` follows semantics that are exactly equivalent to the semantics
   "xdm:objectType": "https://ns.adobe.com/xdm/assets/asset",
   "activitystreams:actor": {
     "@id": "D13A1E7053E46A220A4C86E1@AdobeID",
-    "@type": "https://ns.adobe.com/xdm-extensions/ims/user"
+    "@type": "https://ns.adobe.com/adobecloudplatform/ims/user"
   },
   "activitystreams:generator": {
     "xdm:root": "https://cc-api-storage.adobe.io/",
@@ -41,7 +41,7 @@ A `deleted event` follows semantics that are exactly equivalent to the semantics
   "activitystreams:published": "2016-07-16T19:20:30+01:00",
   "activitystreams:to": {
     "@id": "D13A1E7053E46A220A4C86E1@AdobeID",
-    "@type": "https://ns.adobe.com/xdm-extensions/ims/user"
+    "@type": "https://ns.adobe.com/adobecloudplatform/ims/user"
   }
 }
 ```

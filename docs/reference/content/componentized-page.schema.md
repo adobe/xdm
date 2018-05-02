@@ -10,14 +10,14 @@ Examples for componentized pages include web pages as managed by a web content m
 Componentized pages are modular (consist of smaller content components), hyperlinked (link to other pages), and include digital assets (like images or videos).
 
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [content/componentized-page.schema.json](content/componentized-page.schema.json) |
-
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [content/componentized-page.schema.json](content/componentized-page.schema.json) |
 ## Schema Hierarchy
 
 * Componentized Page `https://ns.adobe.com/xdm/content/componentized-page`
   * [Content](content.schema.md) `https://ns.adobe.com/xdm/content/content`
+
 
 ## Componentized Page Example
 ```json

@@ -10,15 +10,15 @@ This channel has no specific mechanism and is designed for descriptive purposes 
 Such as, to define experiences for which you want to keep a trace of the population targeted in an external tool
 
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [channels/agency.schema.json](channels/agency.schema.json) |
-
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [channels/agency.schema.json](channels/agency.schema.json) |
 ## Schema Hierarchy
 
 * E-Mail `https://ns.adobe.com/xdm/channels/agency`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
+
 
 ## E-Mail Example
 ```json

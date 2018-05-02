@@ -7,14 +7,14 @@ https://ns.adobe.com/xdm/context/commerce
 
 The entites related to buying and selling activity.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [context/commerce.schema.json](context/commerce.schema.json) |
-
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/commerce.schema.json](context/commerce.schema.json) |
 ## Schema Hierarchy
 
 * Commerce `https://ns.adobe.com/xdm/context/commerce`
   * [Order](../data/order.schema.md) `https://ns.adobe.com/xdm/data/order`
+
 
 ## Commerce Example
 ```json

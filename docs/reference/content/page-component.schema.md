@@ -10,14 +10,14 @@ It contains content fragments and has a specific type.
 The type determines how the component will be displayed, rendered, and authored.
 
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [content/page-component.schema.json](content/page-component.schema.json) |
-
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [content/page-component.schema.json](content/page-component.schema.json) |
 ## Schema Hierarchy
 
 * Page Component `https://ns.adobe.com/xdm/content/page-component`
   * [Componentized Page](componentized-page.schema.md) `https://ns.adobe.com/xdm/content/componentized-page`
+
 
 ## Page Component Examples
 

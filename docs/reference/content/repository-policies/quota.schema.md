@@ -7,13 +7,13 @@ https://ns.adobe.com/xdm/content/repository-policies/quota
 
 Quota policy represents how storage consumption is managed and monitored in a given part of the repository.
 Quota is expressed as two values: _Quota Amount_ (`amount`) and _Current Consumption_ (`consumed`). The former represents a limit of storage space that can be allocated in the directory and its descendants. The latter represents the storage space that is currently allocated.
-Furthermore, _Storage Quota_ can be either _hard_ or _soft_ via the &#39;enforcement&#39; property. If a _hard_ _Storage Quota_ is set, the repository implementation will not allow clients to allocate storage beyond the _Quota Amount_.
+Furthermore, _Storage Quota_ can be either _hard_ or _soft_ via the 'enforcement' property. If a _hard_ _Storage Quota_ is set, the repository implementation will not allow clients to allocate storage beyond the _Quota Amount_.
 Repository implementations can generate notifications or alerts when the consumed space in a part of the repository for which a (hard or soft) quota has been defined exceeds a given percentage (e.g. 80%) of the _Quota Amount_.
 
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Cannot be instantiated | Yes | Experimental | Forbidden | Permitted | [content/repository-policies/quota.schema.json](content/repository-policies/quota.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Cannot be instantiated | Yes | Experimental | No | Forbidden | Permitted | [content/repository-policies/quota.schema.json](content/repository-policies/quota.schema.json) |
 
 ## Storage Quota Example
 ```json

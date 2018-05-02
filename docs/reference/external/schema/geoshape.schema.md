@@ -7,14 +7,14 @@ http://schema.org/GeoShape
 
 The geographic shape of a place. Based on [schema.org](http://schema.org/GeoShape).
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [external/schema/geoshape.schema.json](external/schema/geoshape.schema.json) |
-
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/schema/geoshape.schema.json](external/schema/geoshape.schema.json) |
 ## Schema Hierarchy
 
 * Geo Shape `http://schema.org/GeoShape`
   * [Geo Circle](geocircle.schema.md) `http://schema.org/GeoCircle`
+
 
 ## Geo Shape Example
 ```json

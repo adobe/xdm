@@ -31,6 +31,10 @@ Adobe does not require you to assign to Adobe the copyright of your contribution
 
 Where possible, include the Creative Commons Attribution 4.0 International (CC BY 4.0) license summary at the top of each file along with the copyright info.
 
+### Contributor License Agreement
+
+All third-party contributions to this project must be accompanied by a signed contributor license. This gives Adobe permission to redistribute your contributions as part of the project. Sign our CLA at [http://opensource.adobe.com/cla.html](http://opensource.adobe.com/cla.html). You only need to submit an Adobe CLA one time, so if you have submitted one
+
 ### License Inclusion
 
 You can include the Creative Commons Attribution 4.0 International (CC BY 4.0) license summary from below, ensure to update the copyright details.
@@ -46,12 +50,13 @@ You can include the Creative Commons Attribution 4.0 International (CC BY 4.0) l
 
 ## How to Contribute
 
+0.  If you haven't done so, sign the [Adobe CLA](http://opensource.adobe.com/cla.html)
 1.  Go to the [list of open issues](https://github.com/adobe/xdm/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) and pick an issue you want to work on. If you don't see the appropriate issue, [create a new issue in GitHub](https://github.com/adobe/xdm/issues/new)
-2.  If you haven't done so yet, [fork the XDM repository into your private GitHub organization](https://github.com/adobe/xdm/fork). If your fork exists, merge the latest updates from `adobe/xdm` into `yourname/xdm`, so that you don't start from an outdated code tree
-3.  In `yourname/xdm` create a new branch from `master`. Your branch name should refer the issue number like `bug-42` or `feature-23` where one exists and have a descriptive name like `fix-layer-group-references`
-4.  Make add edits that apply to the given feature or bug against this new branch. Commit and push in frequent intervals
-5.  If you are working on the branch for more than a day, make sure to occasionally (at least once per day) to merge the latest updates from `adobe/xdm#master` into your branch, so that you won't get surprised when it's time to merge the pull request. Resolve any conflicts to make life easier for the XDM editors
-6.  Once you are done, create a pull request from your branch against `adobe/xdm#master`.
+1.  If you haven't done so yet, [fork the XDM repository into your private GitHub organization](https://github.com/adobe/xdm/fork). If your fork exists, merge the latest updates from `adobe/xdm` into `yourname/xdm`, so that you don't start from an outdated code tree
+1.  In `yourname/xdm` create a new branch from `master`. Your branch name should refer the issue number like `bug-42` or `feature-23` where one exists and have a descriptive name like `fix-layer-group-references`
+1.  Make add edits that apply to the given feature or bug against this new branch. Commit and push in frequent intervals
+1.  If you are working on the branch for more than a day, make sure to occasionally (at least once per day) to merge the latest updates from `adobe/xdm#master` into your branch, so that you won't get surprised when it's time to merge the pull request. Resolve any conflicts to make life easier for the XDM editors
+1.  Once you are done, create a pull request from your branch against `adobe/xdm#master`.
 
 Every pull request should specify:
 
@@ -345,6 +350,14 @@ The third schema is `third.schema.json`, it extends both `second`, and transitiv
   ]
 }
 ```
+
+### Structuring Schemas - Nesting versus Namespaces
+
+The use of JSON-LD namespaces in XDM means that schema definitions are organized around two axes. The first is the structure of the JSON, which may be nested to an arbitrary depth. The second is the orthogonal layer created by each independent namespace. While both organizing axes are available, it is important to use each for its intended purpose.
+
+Namespaces should be used to allow organizations to develop XDM-based grammars independently of each other, without fear of conflict and without a need to coordinate. In general, it is desirable to have the smallest set of namespaces possible while meeting the above goals.
+
+Namespaces _should not_ be used to organize or group concepts within a grammar. When organizing concepts, schema authors should either define sub-objects for each concept, or consider breaking out the concept into an independent schema, as described in "Re-use and Modularity".
 
 ### Schema Stability Status
 

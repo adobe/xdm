@@ -6,7 +6,7 @@
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "https://ns.adobe.com/xdm-extensions/ims/user",
+  "$id": "https://ns.adobe.com/adobecloudplatform/ims/user",
   "title": "IMS User",
   "description":
     "This model represents an authenticated IMS User. The IMS user prinicpal is a user account under Adobe's identity management system (IMS).",
@@ -25,7 +25,7 @@
         },
         "type": {
           "type": "string",
-          "const": "https://ns.adobe.com/xdm-extensions/ims/user"
+          "const": "https://ns.adobe.com/adobecloudplatform/ims/user"
         }
       }
     }

@@ -14,9 +14,9 @@ As described in [What is a digital asset](https://www.realstorygroup.com/Blog/31
 All digital assets are content, and some content can include, link to, or refer digital assets. Content can furthermore be transformed (rendered) into digital assets, such as when exporting a PDF.
 
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [assets/asset.schema.json](assets/asset.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [assets/asset.schema.json](assets/asset.schema.json) |
 ## Schema Hierarchy
 
 * Asset `https://ns.adobe.com/xdm/assets/asset`

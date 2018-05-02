@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/assets/copyright-owner
 
 Describes the owner of a copyrighted work through name and ID
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Cannot be instantiated | Yes | Experimental | Forbidden | Permitted | [assets/copyright-owner.schema.json](assets/copyright-owner.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Cannot be instantiated | Yes | Experimental | No | Forbidden | Permitted | [assets/copyright-owner.schema.json](assets/copyright-owner.schema.json) |
 
 ## Copyright Owner Example
 ```json

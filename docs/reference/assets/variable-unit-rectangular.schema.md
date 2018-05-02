@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/assets/variable-unit-rectangular
 
 This is an abstract schema for objects of rectangular dimensions and position, with a user-specified unit of measurement. Examples include `Artboard` and `Layer`.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Cannot be instantiated | Yes | Experimental | Forbidden | Permitted | [assets/variable-unit-rectangular.schema.json](assets/variable-unit-rectangular.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Cannot be instantiated | Yes | Experimental | No | Forbidden | Permitted | [assets/variable-unit-rectangular.schema.json](assets/variable-unit-rectangular.schema.json) |
 
 ## Rectangular Object (measured in variable unit) Example
 ```json

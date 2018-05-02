@@ -11,3 +11,4 @@
 [Unreleased](https://github.com/adobe/xdm/releases/tag/v0.9.1)
 
 * Renames all `Metric` schemas to `Metric Definition` #254
+* Changes `xdm:channel` in `ExperienceEvent` to be a reference to `Channel` #289

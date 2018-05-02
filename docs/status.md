@@ -1,6 +1,6 @@
 ## Schema Status
 
-The status of each schema in XDM describes the likelihood of change of a schema. 
+The status of each schema in XDM describes the likelihood of change of a schema.
 In particular for XDM Versions prior to XDM 1.0.0, this can inform users and providers of XDM-compatible APIs of the stability of a given schema.
 
 XDM defines following status values:

@@ -44,6 +44,12 @@ function getStatusOfSchema(schema) {
   return status
 }
 
+// Retrieve the git revision timestamp in seconds since epoch and
+// convert to milliseconds for use with Date()
+function getRevisionDate(revision_id) {
+  return new Date(execp(`git log -1 -s --format=%ct ${revision_id}`)*1000)
+}
+
 // Determine the git commit revision for a given schema's `meta:status`
 function getGitState(schema) {
   let status = getStatusOfSchema(schema)
@@ -58,8 +64,7 @@ function getGitState(schema) {
   let commit_raw = git_latest_revision.split(' ')
   let commit_rev = commit_raw[0]
   let commit_msg = commit_raw.splice(1).join(' ')
-  // Retrieve the git revision timestamp in seconds since epoch, convert to MS for use with Date()
-  let commit_date = new Date(execp(`git log -1 -s --format=%ct ${commit_rev}`)*1000)
+  let commit_date = getRevisionDate(commit_rev)
   return {
     commits: getSchemaChangesSinceRevision(schema, commit_rev),
     latest: {
@@ -89,7 +94,7 @@ function getSchemaChangesSinceRevision(schema, revision) {
     let rev_id = git_revisions[idx]
     let rev_desc = (execp(`git log -1 --decorate=auto --oneline ${rev_id}`)).trim()
     let rev_msg = rev_desc.split(' ').splice(1).join(' ')
-    let rev_date = new Date(execp(`git log -1 -s --format=%ct ${rev_id}`)*1000)
+    let rev_date = getRevisionDate(rev_id)
     commits.push({
       id: rev_id,
       desc: rev_desc,

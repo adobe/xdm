@@ -22,10 +22,12 @@ function logDebug(message) {
   if (LOG_ENABLED) { console.error(message) }
 }
 
+// Find all XDM schemas, based on `*.schema.json` filemask, within the projects' `schemas` subfolder
 function getListOfSchemas() {
   return schemas = $.find("schemas").filter(name => { return name.match(/.*\.schema\.json$/)})
 }
 
+// Wrapper for basic `exec` implementation
 function execp(command) {
   return $.exec(command, { silent: true }).stdout
 }
@@ -46,6 +48,9 @@ function getStatusOfSchema(schema) {
 function getGitState(schema) {
   let status = getStatusOfSchema(schema)
   logDebug(`\t-> ${status} -- ${schema}`)
+  // Check revision history of a given schema:
+  //  - Retrieve most recent revision as a single, one-line record
+  //  - Determine the most recent change to the `meta:status` key (`-S <string>`)
   let git_output = execp(`git log -1 --decorate=auto --oneline -S ${META_STATUS} ${schema}`)
   let git_commits = git_output.trim().split('\n')
   logDebug(`\t\tGit State Commit: ${git_output.trim()}`)
@@ -53,6 +58,7 @@ function getGitState(schema) {
   let commit_raw = git_latest_revision.split(' ')
   let commit_rev = commit_raw[0]
   let commit_msg = commit_raw.splice(1).join(' ')
+  // Retrieve the git revision timestamp in seconds since epoch, convert to MS for use with Date()
   let commit_date = new Date(execp(`git log -1 -s --format=%ct ${commit_rev}`)*1000)
   return {
     commits: getSchemaChangesSinceRevision(schema, commit_rev),
@@ -65,14 +71,15 @@ function getGitState(schema) {
   }
 }
 
-// Helper method to determine whether a commit message contains non-trivial qualifiers
+// Helper method to determine whether a commit message contains non-trivial change qualifiers
 function signifiesTrivialChange(message) {
   let regex = new RegExp(TRIVIAL_CHANGE_MATCHERS.join('|'))
   let isTrivial = regex.test(message)
   return isTrivial
 }
 
-// Create a detailed list of all revisions to a schema since a specific revision
+// Create a detailed list of intermediate revisions to a given schema between
+// HEAD and a given, valid revision
 function getSchemaChangesSinceRevision(schema, revision) {
   let commits = []
   let git_output = execp(`git rev-list ${revision}^..HEAD ${schema}`)

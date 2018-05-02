@@ -37,7 +37,8 @@ Schema for the Access Control Policy of a resource
         "write",
         "delete"
       ],
-      "repo:modifier": "grant"
+      "repo:modifier": "grant",
+      "repo:inheritance": "deep"
     }
   ]
 }

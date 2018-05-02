@@ -36,7 +36,7 @@
           "description":
             "When present, the selector used to match a specific item in the array pointed to by destProperty",
           "$ref":
-            "https://ns.adobe.com/xdm/common/itemselector#/definitions/selector"
+            "https://ns.adobe.com/xdm/common/descriptors/itemselector#/definitions/selector"
         }
       },
       "required": ["xdm:destinationSchema"]

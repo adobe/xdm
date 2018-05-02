@@ -127,7 +127,7 @@ function buildGitLog(commits) {
 }
 
 // Generate markdown table for all schemas + revision details
-function generateMarkdownTable(schemaDetailMap) {
+function generateMarkdownTable(schemaDetailMap, status) {
   let keys = Object.keys(schemaDetailMap).sort()
   let md = '|Schema|Status|Status Modified Date|Last Non-trivial Change|Raw Commit Log Since Status Change|\n' +
            '|------|------|--------------------|-----------------------|----------------------------------|\n'
@@ -155,8 +155,9 @@ function generateMarkdownTable(schemaDetailMap) {
     }
     //link to schema, ignore extension
     schema = `[${schema.replace(/\.schema\.json/, "")}](${schema})`
-
-    md += `|${schema}|${details.latest.status}|${date_state}|${date_nontrivial}|${buildGitLog(details.commits)}|\n`
+    if (details.latest.status == status) {
+      md += `|${schema}|${details.latest.status}|${date_state}|${date_nontrivial}|${buildGitLog(details.commits)}|\n`
+    }
   }
   return md
 }
@@ -178,7 +179,20 @@ function main() {
   logDebug(`Found schema details: ${JSON.stringify(schemaDetailMap, null, '\t')}`)
   
   // Build table rows for each schema generate output in markdown format
-  let schemaTable = generateMarkdownTable(schemaDetailMap)
+  let schemaTable = `
+### Unknown Status, needs immediate attention
+
+${generateMarkdownTable(schemaDetailMap, undefined)}
+
+### Experimental Status
+
+${generateMarkdownTable(schemaDetailMap, "experimental")}
+
+### Stabilizing
+
+${generateMarkdownTable(schemaDetailMap, "stabilizing")}
+
+`;
   console.log(buildOutputBody(schemaTable))
 }
 

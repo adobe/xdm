@@ -9,14 +9,14 @@ The transient circumstances related to the place or physical location of the obs
 Examples include location specific information such as weather, local time, traffic, day of the week, workday vs. holiday, working hours.
 
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [context/placecontext.schema.json](context/placecontext.schema.json) |
-
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/placecontext.schema.json](context/placecontext.schema.json) |
 ## Schema Hierarchy
 
 * Place Context `https://ns.adobe.com/xdm/context/placecontext`
   * [Geo](../common/geo.schema.md) `https://ns.adobe.com/xdm/common/geo`
+
 
 ## Place Context Example
 ```json
@@ -64,7 +64,7 @@ The geographic location where the experience was delivered .
 ## xdm:localTime
 ### Local Time
 
-The local time using RFC3339 with a stated timezone offset such as &#34;2001-07-04T12:08:56-07:00&#34;. An example formatting pattern is &#34;yyyy-MM-dd&#39;T&#39;HH:mm:ssXXX&#34;.
+The local time using RFC3339 with a stated timezone offset such as "2001-07-04T12:08:56-07:00". An example formatting pattern is "yyyy-MM-dd'T'HH:mm:ssXXX".
 
 `xdm:localTime`
 * is optional

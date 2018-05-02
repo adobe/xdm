@@ -10,19 +10,11 @@ As the conventions for structing names differ widely across languages and cultur
 In addition, a number of optional properties are made available that can be used in situations that require using only a fragment of the full name, such as creating a formal or informal greeting.
 
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [context/person-name.schema.json](context/person-name.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/person-name.schema.json](context/person-name.schema.json) |
 
 ## Person Name Examples
-
-```json
-{
-  "xdm:firstName": "张",
-  "xdm:lastName": "三",
-  "xdm:fullName": "张三"
-}
-```
 
 ```json
 {
@@ -38,6 +30,14 @@ In addition, a number of optional properties are made available that can be used
   "xdm:firstName": "فلانة",
   "xdm:lastName": "الفلانية",
   "xdm:fullName": "فلانة الفلانية"
+}
+```
+
+```json
+{
+  "xdm:firstName": "张",
+  "xdm:lastName": "三",
+  "xdm:fullName": "张三"
 }
 ```
 

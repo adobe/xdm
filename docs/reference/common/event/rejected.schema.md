@@ -22,14 +22,14 @@ Some examples of the `rejected event` include:
 4.  A purchase order was rejected by a firm owing to non payment of previous dues.
 
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | No | Experimental | Forbidden | Permitted | [common/event/rejected.schema.json](common/event/rejected.schema.json) |
-
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | No | Experimental | No | Forbidden | Permitted | [common/event/rejected.schema.json](common/event/rejected.schema.json) |
 ## Schema Hierarchy
 
 * Rejected Event `https://ns.adobe.com/xdm/common/event/rejected`
   * [EventEnvelope](../eventenvelope.schema.md) `https://ns.adobe.com/xdm/common/eventenvelope`
+
 
 ## Rejected Event Example
 ```json

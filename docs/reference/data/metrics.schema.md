@@ -7,14 +7,14 @@ https://ns.adobe.com/xdm/data/metrics
 
 This is map of metrics and measures. Each key is the valid URI of a known `Metric`. Each value is a `Measure`, i.e. a concrete data point.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [data/metrics.schema.json](data/metrics.schema.json) |
-
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/metrics.schema.json](data/metrics.schema.json) |
 ## Schema Hierarchy
 
 * Metrics `https://ns.adobe.com/xdm/data/metrics`
   * [Measure](measure.schema.md) `https://ns.adobe.com/xdm/data/measure`
+
 
 ## Metrics Example
 ```json
@@ -484,7 +484,7 @@ The direct marketing message (email, SMS, Push Notifications etc) has been opene
 
 ## https://ns.adobe.com/xdm/data/metrics/direct-marketing/sends
 
-Asynchronous message(s) (email, SMS, MMS etc) have been dispatched to a person&#39;s account/address/device.
+Asynchronous message(s) (email, SMS, MMS etc) have been dispatched to a person's account/address/device.
 
 `https://ns.adobe.com/xdm/data/metrics/direct-marketing/sends`
 * is optional

@@ -7,17 +7,73 @@ https://ns.adobe.com/xdm/common/eventenvelope
 
 An `EventEnvelope` is a type of `Activity` (in the sense of [W3C Activity Streams 2.0](https://www.w3.org/TR/activitystreams-core/) that applies to digital experiences in general, and to entities of the Experience Data Model in particular. It is being used to track or audit changes to core entities like assets, pages, or campaigns, but also to track observed interactions of consumers of digital experiences. These observed interactions can range from simple technical loading, to passive consumption, to active engagement. Through the `EventEnvelope`, a varied set of observable entities can be tracked in a common way, enabling the establishment of publish-subscribe or event bus systems that dispatch `EventEnvelopes` based on the metadata that is part of the envelope, without having to inspect the payload `object`.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [common/eventenvelope.schema.json](common/eventenvelope.schema.json) |
-
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [common/eventenvelope.schema.json](common/eventenvelope.schema.json) |
 ## Schema Hierarchy
 
 * EventEnvelope `https://ns.adobe.com/xdm/common/eventenvelope`
   * [Activity](../external/activity-streams-2/activity.schema.md) `https://ns.adobe.com/xdm/external/activity-streams-2/activity`
   * [JSON-LD `@type`](../external/activity-streams-2/type.schema.md) `https://ns.adobe.com/xdm/external/activity-streams-2/type`
 
+
 ## EventEnvelope Examples
+
+```json
+{
+  "@type": "https://ns.adobe.com/xdm/common/event/created",
+  "xdm:objectType": "https://ns.adobe.com/xdm/assets/asset",
+  "activitystreams:published": "2016-07-16T19:20:30+01:00",
+  "@id": "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
+  "activitystreams:to": {
+    "@type": "https://ns.adobe.com/adobecloudplatform/ims/user",
+    "@id": "D13A1E7053E46A220A4C86E1@AdobeID"
+  },
+  "activitystreams:generator": {
+    "@type": "https://ns.adobe.com/xdm/content/repository",
+    "xdm:root": "https://cc-api-storage-stage.adobe.io/"
+  },
+  "activitystreams:actor": {
+    "@type": "https://ns.adobe.com/adobecloudplatform/ims/user",
+    "@id": "D13A1E7053E46A220A4C86E1@AdobeID"
+  },
+  "activitystreams:object": {
+    "@type": "https://ns.adobe.com/xdm/assets/asset",
+    "repo:assetID": "urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
+    "@id": "https://cc-api-storage-stage.adobe.io/id/urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185"
+  }
+}
+```
+
+```json
+{
+  "@type": "https://ns.adobe.com/xdm/common/event/updated",
+  "xdm:objectType": "https://ns.adobe.com/xdm/assets/asset",
+  "activitystreams:published": "2016-07-16T19:20:30+01:00",
+  "@id": "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
+  "activitystreams:to": {
+    "@type": "http://ns.adobe.com/adobecloudplatform/ims/organization",
+    "@id": "08B3E5CE5822FC520A494229@AdobeOrg"
+  },
+  "activitystreams:generator": {
+    "@type": "https://ns.adobe.com/xdm/content/repository",
+    "@id": "https://francois.corp.adobe.com:4502/"
+  },
+  "activitystreams:actor": {
+    "@type": "https://ns.adobe.com/experience/aem/user",
+    "@id": "admin"
+  },
+  "activitystreams:object": {
+    "@type": "https://ns.adobe.com/xdm/assets/asset",
+    "repo:assetID": "urn:aaid:aem:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
+    "@id": "https://francois.corp.adobe.com:4502/content/dam/Fx_DUKE-small.jpg",
+    "xdm:name": "Fx_DUKE-small.png",
+    "xdm:path": "/content/dam/Fx_DUKE-small.png",
+    "dc:format": "image/png",
+    "repo:etag": "\"6fc55d0389d856ae7wddwebba54f110e\""
+  }
+}
+```
 
 ```json
 {
@@ -51,59 +107,6 @@ An `EventEnvelope` is a type of `Activity` (in the sense of [W3C Activity Stream
 
 ```json
 {
-  "@type": "https://ns.adobe.com/xdm/common/event/created",
-  "xdm:objectType": "https://ns.adobe.com/xdm/assets/asset",
-  "activitystreams:published": "2016-07-16T19:20:30+01:00",
-  "@id": "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
-  "activitystreams:to": {
-    "@type": "https://ns.adobe.com/adobecloudplatform/ims/user",
-    "@id": "D13A1E7053E46A220A4C86E1@AdobeID"
-  },
-  "activitystreams:generator": {
-    "@type": "https://ns.adobe.com/xdm/content/repository",
-    "xdm:root": "https://cc-api-storage-stage.adobe.io/"
-  },
-  "activitystreams:actor": {
-    "@type": "https://ns.adobe.com/adobecloudplatform/ims/user",
-    "@id": "D13A1E7053E46A220A4C86E1@AdobeID"
-  },
-  "activitystreams:object": {
-    "@type": "https://ns.adobe.com/xdm/assets/asset",
-    "repo:assetID": "urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
-    "@id": "https://cc-api-storage-stage.adobe.io/id/urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185"
-  }
-}
-```
-
-```json
-{
-  "@type": "https://ns.adobe.com/xdm/common/event/published",
-  "xdm:objectType": "https://ns.adobe.com/xdm/content/componentized-page",
-  "activitystreams:published": "2016-07-16T19:20:30+01:00",
-  "@id": "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
-  "activitystreams:to": {
-    "@type": "http://ns.adobe.com/adobecloudplatform/ims/organization",
-    "@id": "08B3E5CE5822FC520A494229@AdobeOrg"
-  },
-  "activitystreams:generator": {
-    "@type": "https://ns.adobe.com/xdm/content/repository",
-    "@id": "https://francois.corp.adobe.com:4502/"
-  },
-  "activitystreams:actor": {
-    "@type": "https://ns.adobe.com/experience/aem/user",
-    "@id": "admin"
-  },
-  "activitystreams:object": {
-    "@type": "https://ns.adobe.com/xdm/content/componentized-page",
-    "@id": "http://adobesummit.adobesandbox.com:4502/content/geometrixx/en/vintage.html",
-    "dc:title": "Vintage Collection",
-    "xdm:path": "/content/geometrixx/en/vintage.html"
-  }
-}
-```
-
-```json
-{
   "@type": "https://ns.adobe.com/xdm/common/event/unpublished",
   "xdm:objectType": "https://ns.adobe.com/xdm/content/componentized-page",
   "activitystreams:published": "2016-07-16T19:20:30+01:00",
@@ -131,8 +134,8 @@ An `EventEnvelope` is a type of `Activity` (in the sense of [W3C Activity Stream
 
 ```json
 {
-  "@type": "https://ns.adobe.com/xdm/common/event/updated",
-  "xdm:objectType": "https://ns.adobe.com/xdm/assets/asset",
+  "@type": "https://ns.adobe.com/xdm/common/event/published",
+  "xdm:objectType": "https://ns.adobe.com/xdm/content/componentized-page",
   "activitystreams:published": "2016-07-16T19:20:30+01:00",
   "@id": "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
   "activitystreams:to": {
@@ -148,13 +151,10 @@ An `EventEnvelope` is a type of `Activity` (in the sense of [W3C Activity Stream
     "@id": "admin"
   },
   "activitystreams:object": {
-    "@type": "https://ns.adobe.com/xdm/assets/asset",
-    "repo:assetID": "urn:aaid:aem:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
-    "@id": "https://francois.corp.adobe.com:4502/content/dam/Fx_DUKE-small.jpg",
-    "xdm:name": "Fx_DUKE-small.png",
-    "xdm:path": "/content/dam/Fx_DUKE-small.png",
-    "dc:format": "image/png",
-    "repo:etag": "\"6fc55d0389d856ae7wddwebba54f110e\""
+    "@type": "https://ns.adobe.com/xdm/content/componentized-page",
+    "@id": "http://adobesummit.adobesandbox.com:4502/content/geometrixx/en/vintage.html",
+    "dc:title": "Vintage Collection",
+    "xdm:path": "/content/geometrixx/en/vintage.html"
   }
 }
 ```
@@ -343,7 +343,7 @@ Unknown type `anyOf`.
 
 ## activitystreams:object
 
-When used within an Activity, describes the direct object of the activity. For instance, in the activity &#39;John added a movie to his wishlist&#39;, the object of the activity is the movie added. When used within a Relationship describes the entity to which the subject is related. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object) document for a complete description.
+When used within an Activity, describes the direct object of the activity. For instance, in the activity 'John added a movie to his wishlist', the object of the activity is the movie added. When used within a Relationship describes the entity to which the subject is related. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object) document for a complete description.
 
 `activitystreams:object`
 * is **required**
@@ -427,7 +427,7 @@ Unknown type `anyOf`.
 
 ## activitystreams:origin
 
-Describes an indirect object of the activity from which the activity is directed. The precise meaning of the origin is the object of the English preposition &#39;from&#39;. For instance, in the activity &#39;John moved an item to List B from List A&#39;, the origin of the activity is &#39;List A&#39;. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-origin) document for a complete description.
+Describes an indirect object of the activity from which the activity is directed. The precise meaning of the origin is the object of the English preposition 'from'. For instance, in the activity 'John moved an item to List B from List A', the origin of the activity is 'List A'. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-origin) document for a complete description.
 
 `activitystreams:origin`
 * is optional
@@ -595,7 +595,7 @@ Unknown type `anyOf`.
 
 ## activitystreams:target
 
-Describes the indirect object, or target, of the activity. The precise meaning of the target is largely dependent on the type of action being described but will often be the object of the English preposition &#39;to&#39;. For instance, in the activity &#39;John added a movie to his wishlist&#39;, the target of the activity is John&#39;s wishlist. An activity can have more than one target. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-target) document for a complete description.
+Describes the indirect object, or target, of the activity. The precise meaning of the target is largely dependent on the type of action being described but will often be the object of the English preposition 'to'. For instance, in the activity 'John added a movie to his wishlist', the target of the activity is John's wishlist. An activity can have more than one target. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-target) document for a complete description.
 
 `activitystreams:target`
 * is optional

@@ -7,10 +7,9 @@ https://ns.adobe.com/xdm/context/place
 
 A place in the real world with a physical location.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [context/place.schema.json](context/place.schema.json) |
-
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [context/place.schema.json](context/place.schema.json) |
 ## Schema Hierarchy
 
 * Place `https://ns.adobe.com/xdm/context/place`
@@ -18,6 +17,7 @@ A place in the real world with a physical location.
   * [Address](../common/address.schema.md) `https://ns.adobe.com/xdm/common/address`
   * [Geo Shape](../external/schema/geoshape.schema.md) `http://schema.org/GeoShape`
   * [Geo Coordinates](../external/schema/geocoordinates.schema.md) `http://schema.org/GeoCoordinates`
+
 
 ## Place Example
 ```json
@@ -85,9 +85,9 @@ The unique identifier of the place.
 ## schema:branchCode
 ### Location Code
 
-A short textual code (also called &#34;store code&#34;) that uniquely identifies a place of business. The code is typically assigned by the parent Organization and used in structured URLs.
+A short textual code (also called "store code") that uniquely identifies a place of business. The code is typically assigned by the parent Organization and used in structured URLs.
 
-For example, in the URL `http://www.starbucks.co.uk/store-locator/etc/detail/3047` the code &#34;3047&#34; is a `branchCode` for a particular branch.
+For example, in the URL `http://www.starbucks.co.uk/store-locator/etc/detail/3047` the code "3047" is a `branchCode` for a particular branch.
 
 `schema:branchCode`
 * is optional

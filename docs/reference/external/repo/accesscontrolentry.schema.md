@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/external/repo/accesscontrolentry
 
 Schema for the Access Control Entry for the Access Control List of a resource
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [external/repo/accesscontrolentry.schema.json](external/repo/accesscontrolentry.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/repo/accesscontrolentry.schema.json](external/repo/accesscontrolentry.schema.json) |
 
 ## Access Control Entry Examples
 
@@ -34,7 +34,8 @@ Schema for the Access Control Entry for the Access Control List of a resource
     "write",
     "delete"
   ],
-  "repo:modifier": "grant"
+  "repo:modifier": "grant",
+  "repo:inheritance": "deep"
 }
 ```
 
@@ -43,11 +44,37 @@ Schema for the Access Control Entry for the Access Control List of a resource
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
+| [repo:inheritance](#repoinheritance) | `string` | Optional | Access Control Entry (this schema) |
 | [repo:modifier](#repomodifier) | `string` | Optional | Access Control Entry (this schema) |
 | [repo:principal](#repoprincipal) | complex | Optional | Access Control Entry (this schema) |
 | [repo:privilege](#repoprivilege) | complex | Optional | Access Control Entry (this schema) |
 | [repo:relations](#reporelations) | `string[]` | Optional | Access Control Entry (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
+
+## repo:inheritance
+
+Optional inheritance of the ace: whether the deny or grant is inherited by the children of the resource. The default inheritance is deep if this property is missing or has an invalid value.
+
+`repo:inheritance`
+* is optional
+* type: `string`
+* defined in this schema
+
+### repo:inheritance Type
+
+
+`string`
+
+
+
+### repo:inheritance Known Values
+| Value | Description |
+|-------|-------------|
+| `deep` | Deny or grant applies to the resource and to all children of the resource. |
+| `self` | Deny or grant only applies to the resource. |
+
+
+
 
 ## repo:modifier
 

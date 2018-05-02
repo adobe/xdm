@@ -110,6 +110,11 @@
     "meta:status": "experimental",
     "examples": [
         {
+            "repo:principal": "authenticated",
+            "repo:privilege": "read",
+            "repo:modifier": "grant"
+        },
+        {
             "repo:principal": {
                 "xdm:provider": {
                     "@id": "https://ims-na1.adobelogin.com/"
@@ -123,11 +128,6 @@
             ],
             "repo:modifier": "grant",
             "repo:inheritance": "deep"
-        },
-        {
-            "repo:principal": "authenticated",
-            "repo:privilege": "read",
-            "repo:modifier": "grant"
         }
     ]
 }

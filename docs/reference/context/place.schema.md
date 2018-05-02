@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/context/place
 
 A place in the real world with a physical location.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [context/place.schema.json](context/place.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [context/place.schema.json](context/place.schema.json) |
 ## Schema Hierarchy
 
 * Place `https://ns.adobe.com/xdm/context/place`

@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/channels/wechat
 
 WeChat Platform Notification
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [channels/wechat.schema.json](channels/wechat.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [channels/wechat.schema.json](channels/wechat.schema.json) |
 ## Schema Hierarchy
 
 * WeChat `https://ns.adobe.com/xdm/channels/wechat`

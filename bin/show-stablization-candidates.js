@@ -81,7 +81,7 @@ function getSchemaChangesSinceRevision(schema, revision) {
   for (idx in git_revisions) {
     let rev_id = git_revisions[idx]
     let rev_desc = (execp(`git log -1 --decorate=auto --oneline ${rev_id}`)).trim()
-    let rev_msg = rev_desc.split(' ').splice(1).join(' ')
+    let rev_msg = rev_desc.split(' ').splice(1).join(' ').replace(/"/g, "'");
     let rev_date = new Date(execp(`git log -1 -s --format=%ct ${rev_id}`)*1000)
     commits.push({
       id: rev_id,
@@ -119,30 +119,45 @@ function buildGitLog(commits) {
   for (idx in commits) {
     let item = commits[idx]
     if (log.length > 0) {
-      log += "<br>"
+      log += " "
     }
-    log += item.desc
+    log += `[${item.id.substr(0,7)}](https://github.com/adobe/xdm/commit/${item.id} "${item.msg}")`;
   }
-  return `<code>${log.trim()}</code>`
+  return `${log.trim()}`
 }
 
 // Generate markdown table for all schemas + revision details
-function generateMarkdownTable(schemaDetailMap) {
+function generateMarkdownTable(schemaDetailMap, status) {
   let keys = Object.keys(schemaDetailMap).sort()
   let md = '|Schema|Status|Status Modified Date|Last Non-trivial Change|Raw Commit Log Since Status Change|\n' +
            '|------|------|--------------------|-----------------------|----------------------------------|\n'
   for (idx in keys) {
     let schema = keys[idx]
     let details = schemaDetailMap[schema]
-    let date_state = details.latest.date
-    let date_nontrivial = date_state
+    let date_state = details.latest.date; // Math.floor((Date.now() - details.latest.date) / 1000 / 3600 / 24) 
+    let date_nontrivial = date_state; //Math.floor((Date.now() - date_state) / 1000 / 3600 / 24)
     for (cidx in details.commits) {
       let commit = details.commits[cidx]
       if (!commit.trivial && commit.date > date_nontrivial) {
         date_nontrivial = commit.date
       }
     }
-    md += `|${schema}|${details.latest.status}|${date_state}|${date_nontrivial}|${buildGitLog(details.commits)}|\n`
+
+    //format dates
+    date_state = Math.floor((Date.now() - date_state) / 1000 / 3600 / 24);
+    if (date_state>30) {
+      date_state = "**" + date_state + "**"
+    }
+
+    date_nontrivial = Math.floor((Date.now() - date_nontrivial) / 1000 / 3600 / 24);
+    if (date_nontrivial>30) {
+      date_nontrivial = "**" + date_nontrivial + "**"
+    }
+    //link to schema, ignore extension
+    schema = `[${schema.replace(/\.schema\.json/, "")}](${schema})`
+    if (details.latest.status == status) {
+      md += `|${schema}|${details.latest.status}|${date_state}|${date_nontrivial}|${buildGitLog(details.commits)}|\n`
+    }
   }
   return md
 }
@@ -164,7 +179,20 @@ function main() {
   logDebug(`Found schema details: ${JSON.stringify(schemaDetailMap, null, '\t')}`)
   
   // Build table rows for each schema generate output in markdown format
-  let schemaTable = generateMarkdownTable(schemaDetailMap)
+  let schemaTable = `
+### Unknown Status, needs immediate attention
+
+${generateMarkdownTable(schemaDetailMap, undefined)}
+
+### Experimental Status
+
+${generateMarkdownTable(schemaDetailMap, "experimental")}
+
+### Stabilizing
+
+${generateMarkdownTable(schemaDetailMap, "stabilizing")}
+
+`;
   console.log(buildOutputBody(schemaTable))
 }
 

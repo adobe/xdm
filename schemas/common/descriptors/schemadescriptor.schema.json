@@ -30,7 +30,8 @@
           "meta:enum": {
             "xdm:oneToOne": "Describes a 1:1 relationship between schemas",
             "xdm:oneToMany": "Describes a 1:M relationship between schema",
-            "xdm:manyToOne": "Describes a M:1 relationship between schema (the reciprocal of 1:M)",
+            "xdm:manyToOne":
+              "Describes a M:1 relationship between schema (the reciprocal of 1:M)",
             "xdm:manyToMany": "Describes a 1:M relationship between schema",
             "xdm:identityContext":
               "Describes how a property of a schema may be treated as an identity when it does not contain all the properties of the Identity schema",

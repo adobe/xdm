@@ -1,0 +1,50 @@
+{
+  "@id": "https://data.adobe.io/experienceid-987654321",
+  "xdm:dataSource": {
+    "@id": "https://data.adobe.io/datasources/datasource-987",
+    "xdm:code": "DataSourceIntegrationCode-987"
+  },
+  "xdm:timestamp": "2018-04-20T17:56:23+00:00",
+  "xdm:endUserIDs": {
+    "https://ns.adobe.com/experience/mcid": {
+      "@id": "https://data.adobe.io/entities/identity/3459347749128",
+      "xdm:namespace": {
+        "@id": "https://data.adobe.io/entities/namespace/4",
+        "xdm:code": "ECID"
+      }
+    },
+    "https://ns.adobe.com/bigco/memberID": {
+      "@id":
+        "https://data.adobe.io/bigco/memberID/rogerroger21",
+      "xdm:namespace": {
+        "xdm:code": "memberID"
+      }
+    }
+  },
+  "xdm:environment": {
+    "xdm:type": "application",
+    "xdm:operatingSystem": "MAC OS",
+    "xdm:operatingSystemVersion": "11.1",
+    "xdm:connectionType": "cable"
+  },
+  "xdm:placeContext": {
+    "xdm:localTime": "2018-04-20T17:56:23+09:00",
+    "xdm:geo": {
+      "@id": "https://data.adobe.io/entities/geo/tokyo",
+      "xdm:countryCode": "JP",
+      "xdm:stateProvince": "JP-13",
+      "xdm:city": "Tōkyō",
+      "xdm:postalCode": "141-0032",
+      "schema:latitude": 35.6185,
+      "schema:longitude": 139.73237
+    }
+  },
+  "xdm:application":{
+    "xdm:id": "A123",
+    "xdm:name": "Myapp",
+    "xdm:version": "1.0.1",
+    "https://ns.adobe.com/xdm/data/metrics/application/launches": {
+      "xdm:value": 1.0
+    }
+  }
+}

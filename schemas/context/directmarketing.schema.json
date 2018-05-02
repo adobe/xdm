@@ -1,0 +1,62 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/directmarketing",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Direct Marketing",
+  "type": "object",
+  "description": "The entites related to direct communictions to known users.",
+  "definitions": {
+    "directmarketing": {
+      "properties": {
+        "https://ns.adobe.com/xdm/data/metrics/direct-marketing/bounces": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+            "Asynchronous message(s) that have been returned as temporarily undeliverable the receiving system."
+        },
+        "https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+            "Click on a link in a message to a web hosted mirror page."
+        },
+        "https://ns.adobe.com/xdm/data/metrics/direct-marketing/non-deliverables": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+            "Asynchronous message(s) failed to deliver in a way that indicates that no future delivery attempts will be successful to the address."
+        },
+        "https://ns.adobe.com/xdm/data/metrics/direct-marketing/sends": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+            "Asynchronous message(s) (email, SMS, MMS etc) have been dispatched to a person's account/address/device."
+        },
+        "https://ns.adobe.com/xdm/data/metrics/direct-marketing/user-complaints": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+            "User complaint(s) have been received. This generally occurs when a recipient of a message reports it as spam."
+        },
+        "https://ns.adobe.com/xdm/data/metrics/direct-marketing/opens": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "The direct marketing message (email, SMS, Push Notifications etc) has been opened/swyped/touched by the recipient."
+        },
+        "https://ns.adobe.com/xdm/data/metrics/direct-marketing/unsubscriptions": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "The recipient of the direct marketing message (email, newsletters, etc) has opted out from receiving them."
+        },
+        "https://ns.adobe.com/xdm/data/metrics/direct-marketing/not-sent": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Asynchronous message (email, SMS, MMS etc) was not dispatched due to cancellation or expiration of the marketing activity."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/directmarketing"
+    }
+  ],
+  "meta:status": "stabilizing"
+}

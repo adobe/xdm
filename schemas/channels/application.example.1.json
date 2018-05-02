@@ -1,5 +1,4 @@
 {
-  "xdm:id": "A123",
-  "xdm:name": "Myapp",
-  "xdm:version": "1.0.1"
+  "@id": "https://ns.adobe.com/xdm/channels/application",
+  "@type": "https://ns.adobe.com/xdm/channel-types/application"
 }

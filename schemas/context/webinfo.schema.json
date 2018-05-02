@@ -30,6 +30,14 @@
           "$ref": "https://ns.adobe.com/xdm/context/webreferrer",
           "description":
             "The referrer of a web interaction, which is the URL a visitor came from immediately before the current web interaction was recorded."
+        },
+        "https://ns.adobe.com/xdm/data/metrics/web/link-clicks": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Click of a web-link has occurred."
+        },
+        "https://ns.adobe.com/xdm/data/metrics/web/page-views": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "View(s) of a webpage has occurred."
         }
       }
     }

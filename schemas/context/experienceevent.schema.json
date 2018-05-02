@@ -38,12 +38,6 @@
           "description":
             "Condensed, normalized encapsulation of all end user identifiers.\n"
         },
-        "xdm:metrics": {
-          "title": "Metrics",
-          "$ref": "https://ns.adobe.com/xdm/data/metrics",
-          "description":
-            "The metrics for actions performed during this observation."
-        },
         "xdm:environment": {
           "title": "Environment",
           "$ref": "https://ns.adobe.com/xdm/context/environment",
@@ -73,9 +67,15 @@
         },
         "xdm:application": {
           "title": "Application",
-          "$ref": "https://ns.adobe.com/xdm/channels/application",
+          "$ref": "https://ns.adobe.com/xdm/context/application",
           "description":
             "The application related to the event observation. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login."
+        },
+        "xdm:advertising": {
+          "title": "Advertising",
+          "$ref": "https://ns.adobe.com/xdm/context/advertising",
+          "description":
+            "The advertising related to the event observation."
         },
         "xdm:search": {
           "title": "Search",

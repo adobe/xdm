@@ -47,17 +47,6 @@
     "xdm:operatingSystemVersion": "10.13",
     "xdm:connectionType": "cable"
   },
-  "xdm:metrics": {
-    "https://ns.adobe.com/xdm/data/metrics/commerce/purchases": {
-      "xdm:value": 1.0,
-      "xdm:unit": null
-    },
-    "https://ns.adobe.com/xdm/data/metrics/web/page-views": {
-      "@type": "https://ns.adobe.com/xdm/data/metrics/web/page-views",
-      "xdm:value": 1.0,
-      "xdm:unit": null
-    }
-  },
   "xdm:productListItems": [
     {
       "xdm:SKU": "1002352692",
@@ -69,6 +58,9 @@
     }
   ],
   "xdm:commerce": {
+    "https://ns.adobe.com/xdm/data/metrics/commerce/purchases": {
+      "xdm:value": 1.0
+    },
     "xdm:order": {
       "xdm:purchaseID": "a8g784hjq1mnp3",
       "xdm:purchaseOrderNumber": "123456",
@@ -114,6 +106,9 @@
     "xdm:webReferrer": {
       "xdm:URL": "https://www.example.com/checkout",
       "xdm:referrerType": "internal"
+    },
+    "https://ns.adobe.com/xdm/data/metrics/web/page-views": {
+      "xdm:value": 1.0
     }
   },
   "xdm:marketing": {

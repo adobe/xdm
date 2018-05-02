@@ -96,7 +96,10 @@ function getSchemaChangesSinceRevision(schema, revision) {
 
 // Build markdown header
 function buildHeader() {
-  return `# Stabilization Candidates\n_Generated on **${(new Date()).toString()}**_`
+  return `# Stabilization Candidates
+
+_Generated on **${(new Date()).toString()}**_
+`
 }
 
 // Build markdown footer

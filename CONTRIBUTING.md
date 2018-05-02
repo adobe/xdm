@@ -362,6 +362,14 @@ the `@type` property of the descriptor object. Readers should ignore descriptors
 
 Schema descriptors are defined in XDM using the `SchemaDescriptor` schema.
 
+### Structuring Schemas - Nesting versus Namespaces
+
+The use of JSON-LD namespaces in XDM means that schema definitions are organized around two axes. The first is the structure of the JSON, which may be nested to an arbitrary depth. The second is the orthogonal layer created by each independent namespace. While both organizing axes are available, it is important to use each for its intended purpose.
+
+Namespaces should be used to allow organizations to develop XDM-based grammars independently of each other, without fear of conflict and without a need to coordinate. In general, it is desirable to have the smallest set of namespaces possible while meeting the above goals.
+
+Namespaces _should not_ be used to organize or group concepts within a grammar. When organizing concepts, schema authors should either define sub-objects for each concept, or consider breaking out the concept into an independent schema, as described in "Re-use and Modularity".
+
 ### Schema Stability Status
 
 Each schema should contains the enum property `meta:status` that designates it's stability. The value should be one of the following enumerations:

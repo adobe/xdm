@@ -351,6 +351,17 @@ The third schema is `third.schema.json`, it extends both `second`, and transitiv
 }
 ```
 
+### Schema Descriptors
+
+Schema descriptors are an extensible mechanism for providing additional metadata about an XDM schema. For example, schema descriptors can be used to define relationships between schemas or to annotate schema properties with additional metadata. Schema descriptors may be used when certain properties of a schema are not static (which could usually be described in the schema directly) but may vary from usage to usage.
+
+Details on using and defining schema descriptors may be found in the section [Schema Descriptors](./docs/descriptors.md) of the specification.
+
+Schema descriptors are extensible, and new descriptors may be creating by defining a new URI value and using it in
+the `@type` property of the descriptor object. Readers should ignore descriptors they do not understand.
+
+Schema descriptors are defined in XDM using the `SchemaDescriptor` schema.
+
 ### Structuring Schemas - Nesting versus Namespaces
 
 The use of JSON-LD namespaces in XDM means that schema definitions are organized around two axes. The first is the structure of the JSON, which may be nested to an arbitrary depth. The second is the orthogonal layer created by each independent namespace. While both organizing axes are available, it is important to use each for its intended purpose.
@@ -374,6 +385,7 @@ XDM is using a couple of custom keywords that are not part of the JSON Schema st
 
 * `meta:extensible`: see above, to describe schemas that allow custom properties
 * `meta:auditable`: for schemas that have created and last modified dates
+* `meta:descriptors`: to annotate schemas with additional metadata (see Schema Descriptors above)
 * `meta:enum`: for known values in enums, strings, and as property keys
 
 ## Writing Styleguides

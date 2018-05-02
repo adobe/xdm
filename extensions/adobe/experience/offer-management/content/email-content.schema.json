@@ -24,12 +24,12 @@
         "xdm:from": {
           "type": "string",
           "title": "From",
-          "description": "Text of \"From\" field of e-mail"
+          "description": "Text of the \"From\" field of the e-mail"
         },
         "xdm:subject": {
           "type": "string",
           "title": "Subject",
-          "description": "Text of \"Subject\" field of e-mail"
+          "description": "Text of the \"Subject\" field of the e-mail"
         },
         "xdm:text": {
           "type": "string",

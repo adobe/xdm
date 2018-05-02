@@ -24,7 +24,15 @@
         "https://ns.adobe.com/experience/campaign/address/addressQuality": {
           "title": "Address Quality",
           "type": "integer",
-          "description": "Address quality rating."
+          "description": "Address quality rating.",
+          "meta:enum": {
+            "0": "Incomplete address",
+            "1": "Unknown Town-Postal Code",
+            "2": "Empty street",
+            "3": "Unknown street",
+            "4": "Partially-recognized street",
+            "5": "Fully-recognized street"
+          }
         }
       }
     }

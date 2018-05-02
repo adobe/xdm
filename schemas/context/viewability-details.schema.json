@@ -7,10 +7,9 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/viewability-details",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Viewability",
+  "title": "Viewability Details",
   "type": "object",
-  "description":
-  "Description of viewability measured properties of an advertisement",
+  "description": "Browser or app settings measured at runtime describing the viewability of an advertisement or content associated with each page load.",
   "definitions": {
     "viewabilityDetails": {
       "properties": {
@@ -18,7 +17,7 @@
           "title": "Ad Unit Depth",
           "type": "integer",
           "description":
-          "Oftentimes, publishers embed ad units inside containers/iFrames in order retain control of the ad and any potential interaction with the surfer/web page. This describes how many 'containers' the ad unit is displayed inside of.",
+          "Publishers may embed ad units inside containers/iFrames in order limit the ad's access solely to the code of the page. This describes how many 'containers' or iFrames the ad unit is displayed inside of.",
           "minimum": 0
         },
         "xdm:viewportHeight": {

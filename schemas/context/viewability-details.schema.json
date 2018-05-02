@@ -11,7 +11,7 @@
   "type": "object",
   "description": "Browser or app settings measured at runtime describing the viewability of an advertisement or content associated with each page load.",
   "definitions": {
-    "viewabilityDetails": {
+    "viewability-details": {
       "properties": {
         "xdm:adUnitDepth": {
           "title": "Ad Unit Depth",
@@ -95,7 +95,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/viewabilityDetails"
+      "$ref": "#/definitions/viewability-details"
     }
   ],
   "meta:status": "experimental"

@@ -9,7 +9,7 @@ A tuple in a set of language alternatives, i.e. pairs of localized text and thei
 
 | Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|--------------|-------------------|-----------------------|------------|
-| Cannot be instantiated | Yes | Experimental | No | Forbidden | Permitted | [assets/language-alternative.schema.json](assets/language-alternative.schema.json) |
+| Cannot be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [assets/language-alternative.schema.json](assets/language-alternative.schema.json) |
 
 ## Language Alternative Example
 ```json

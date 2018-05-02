@@ -11,9 +11,9 @@ This schema is intended for full page views and initial page loads of single pag
 For interactions that are happening on a loaded page that do not trigger a new page load, see `WebInteraction`.
 
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [context/webpageview.schema.json](context/webpageview.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/webpageview.schema.json](context/webpageview.schema.json) |
 
 ## Web Page View Example
 ```json

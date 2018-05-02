@@ -14,7 +14,8 @@
         "@type": "https://ns.adobe.com/adobecloudplatform/ims/user"
       },
       "repo:privileges": ["write", "delete"],
-      "repo:modifier": "grant"
+      "repo:modifier": "grant",
+      "repo:inheritance": "deep"
     }
   ]
 }

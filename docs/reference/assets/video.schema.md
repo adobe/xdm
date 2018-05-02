@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/assets/video
 
 The Video class is for video assets, i.e. assets that consist of moving pictures and, optionally, sound.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [assets/video.schema.json](assets/video.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [assets/video.schema.json](assets/video.schema.json) |
 ## Schema Hierarchy
 
 * Video `https://ns.adobe.com/xdm/assets/video`
@@ -18,27 +18,6 @@ The Video class is for video assets, i.e. assets that consist of moving pictures
 
 
 ## Video Examples
-
-```json
-{
-  "repo:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ad",
-  "xmp:createDate": "2017-09-26T15:52:25+00:00",
-  "repo:createdDate": "2017-09-26T15:52:25+00:00",
-  "xdm:repositoryCreatedBy": "lars",
-  "xmp:modifyDate": "2017-09-26T15:52:25+00:00",
-  "repo:lastModifiedDate": "2017-09-26T15:52:25+00:00",
-  "xdm:repositoryLastModifiedBy": "2017-09-26T15:52:25+00:00",
-  "repo:version": "15",
-  "repo:size": 1632418,
-  "xdm:path": "here",
-  "repo:etag": "15",
-  "tiff:imageLength": 2160,
-  "tiff:imageWidth": 3840,
-  "xdm:aspectRatio": 1.77777777778,
-  "xdm:extent": 10920000,
-  "xdm:videoFrameRate": "f48s1"
-}
-```
 
 ```json
 {
@@ -58,6 +37,27 @@ The Video class is for video assets, i.e. assets that consist of moving pictures
   "xdm:aspectRatio": 1.77777777778,
   "xdm:extent": 11700000,
   "xdm:videoFrameRate": "NTSC"
+}
+```
+
+```json
+{
+  "repo:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ad",
+  "xmp:createDate": "2017-09-26T15:52:25+00:00",
+  "repo:createdDate": "2017-09-26T15:52:25+00:00",
+  "xdm:repositoryCreatedBy": "lars",
+  "xmp:modifyDate": "2017-09-26T15:52:25+00:00",
+  "repo:lastModifiedDate": "2017-09-26T15:52:25+00:00",
+  "xdm:repositoryLastModifiedBy": "2017-09-26T15:52:25+00:00",
+  "repo:version": "15",
+  "repo:size": 1632418,
+  "xdm:path": "here",
+  "repo:etag": "15",
+  "tiff:imageLength": 2160,
+  "tiff:imageWidth": 3840,
+  "xdm:aspectRatio": 1.77777777778,
+  "xdm:extent": 10920000,
+  "xdm:videoFrameRate": "f48s1"
 }
 ```
 

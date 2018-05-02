@@ -11,9 +11,9 @@ They are used for compositing multiple images, adding text to an image, or addin
 Users can also apply a layer style to add a special effect such as a drop shadow or a glow.
 
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [assets/layer.schema.json](assets/layer.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [assets/layer.schema.json](assets/layer.schema.json) |
 ## Schema Hierarchy
 
 * Layer `https://ns.adobe.com/xdm/assets/layer`

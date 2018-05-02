@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/channels/direct-mail
 
 Mail delivered by a postal service.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [channels/direct-mail.schema.json](channels/direct-mail.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [channels/direct-mail.schema.json](channels/direct-mail.schema.json) |
 ## Schema Hierarchy
 
 * Direct Mail `https://ns.adobe.com/xdm/channels/direct-mail`

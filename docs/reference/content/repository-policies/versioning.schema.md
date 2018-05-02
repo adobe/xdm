@@ -8,9 +8,9 @@ https://ns.adobe.com/xdm/content/repository-policies/versioning
 Versioning policy represents how versioning for content stored in this specific part of the repository is behaving.
 
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Cannot be instantiated | Yes | Experimental | Forbidden | Permitted | [content/repository-policies/versioning.schema.json](content/repository-policies/versioning.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Cannot be instantiated | Yes | Experimental | No | Forbidden | Permitted | [content/repository-policies/versioning.schema.json](content/repository-policies/versioning.schema.json) |
 
 ## Versioning Example
 ```json

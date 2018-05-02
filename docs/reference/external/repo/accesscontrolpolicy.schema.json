@@ -46,7 +46,8 @@
                         "write",
                         "delete"
                     ],
-                    "repo:modifier": "grant"
+                    "repo:modifier": "grant",
+                    "repo:inheritance": "deep"
                 }
             ]
         }

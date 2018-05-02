@@ -85,3 +85,4 @@ This means, if the JSON representation of two XDM models is identical, then the 
 3.  [Extending XDM](extensions.md)
 4.  [Abstract and Concrete Schema](abstract.md)
 5.  [Schema Status](status.md)
+6.  [Identifiable Entities](id.md)

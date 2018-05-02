@@ -153,6 +153,8 @@ function generateMarkdownTable(schemaDetailMap) {
     if (date_nontrivial>30) {
       date_nontrivial = "**" + date_nontrivial + "**"
     }
+    //link to schema, ignore extension
+    schema = `[${schema.replace(/\.schema\.json/, "")}](${schema})`
 
     md += `|${schema}|${details.latest.status}|${date_state}|${date_nontrivial}|${buildGitLog(details.commits)}|\n`
   }

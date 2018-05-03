@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/channels/phone
 
 The telephone. Includes both inbound and outbound.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [channels/phone.schema.json](channels/phone.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [channels/phone.schema.json](channels/phone.schema.json) |
 ## Schema Hierarchy
 
 * Phone `https://ns.adobe.com/xdm/channels/phone`

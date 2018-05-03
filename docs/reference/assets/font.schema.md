@@ -9,9 +9,9 @@ Font is used to describe the typefaces and font files used in a document.
 The Font schema groups different font files that belong to the same typeface.
 
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [assets/font.schema.json](assets/font.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [assets/font.schema.json](assets/font.schema.json) |
 
 ## Font Example
 ```json

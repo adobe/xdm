@@ -106,12 +106,13 @@ jobs:
 
       # generate markdowm
       - run: npm run markdown
+      - run: node bin/show-stablization-candidates.js > STABILIZING.md
       - run: git config --global user.email "trieloff@adobe.com" && git config --global user.name "CircleCI"
 
       # send up-to-date markdown back to GitHub
       - run:
           name: Publish Markdown to GitHub
-          command: git add --force docs/reference/* && git commit -m "[ci skip] updating documentation" && git push
+          command: git add --force STABILIZING.md && git add --force docs/reference/* && git commit -m "[ci skip] updating documentation" && git push
 
 workflows:
   version: 2

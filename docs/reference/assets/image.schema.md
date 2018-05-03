@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/assets/image
 
 The Image class is for raster and vector image assets, including JPEG, PNG, SVG files
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [assets/image.schema.json](assets/image.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [assets/image.schema.json](assets/image.schema.json) |
 ## Schema Hierarchy
 
 * Image `https://ns.adobe.com/xdm/assets/image`

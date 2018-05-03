@@ -16,6 +16,7 @@ const $ = require("shelljs")
 
 const META_STATUS = "meta:status"
 const TRIVIAL_CHANGE_MATCHERS = ["\\[.*trivial.*\\]","\\[.*ci skip.*\\]"]
+const TRIVIAL_REVISIONS = getTrivialRevisions();
 const LOG_ENABLED = (process.argv.indexOf("--debug") > -1)
 
 function logDebug(message) {
@@ -76,11 +77,19 @@ function getGitState(schema) {
   }
 }
 
+// Return an array of git revision ids parsed from `/.trivial`
+function getTrivialRevisions() {
+  const trivialFile = ".trivial"
+  const trivialContent = fs.existsSync(trivialFile) ? fs.readFileSync(trivialFile, 'utf8') : ""
+  return trivialContent.split("\n").filter(s => s.length > 0) // an empty file can end up with a single empty string
+}
+
 // Helper method to determine whether a commit message contains non-trivial change qualifiers
-function signifiesTrivialChange(message) {
+function signifiesTrivialChange(message, revision) {
   let regex = new RegExp(TRIVIAL_CHANGE_MATCHERS.join('|'))
-  let isTrivial = regex.test(message)
-  return isTrivial
+  let revTrivial = TRIVIAL_REVISIONS.find(id => revision.startsWith(id)) !== undefined
+  let msgTrivial = regex.test(message)
+  return revTrivial || msgTrivial
 }
 
 // Create a detailed list of intermediate revisions to a given schema between
@@ -100,7 +109,7 @@ function getSchemaChangesSinceRevision(schema, revision) {
       desc: rev_desc,
       msg: rev_msg,
       date: rev_date,
-      trivial: signifiesTrivialChange(rev_msg)
+      trivial: signifiesTrivialChange(rev_msg, rev_id)
     })
   }
   return commits

@@ -7,10 +7,10 @@
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id":
-    "https://ns.adobe.com/experience/offer-management/content/text-content",
+    "https://ns.adobe.com/experience/offer-management/content/image-content",
   "type": "object",
-  "title": "Plain Text Content",
-  "description": "Offer Representation",
+  "title": "Image Content",
+  "description": "Offer Image Content",
   "definitions": {
     "image-content": {
       "type": "object",

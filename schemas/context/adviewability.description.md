@@ -1,4 +1,4 @@
-Browser or app environment measured at runtime describing the viewability of an advertisement or content associated with each page load.
+Browser environment measured at runtime describing the viewability of an advertisement or content associated with each page load.
 
 According to [IAB/MRC definition](https://www.iab.com/wp-content/uploads/2015/06/MRC-Viewable-Ad-Impression-Measurement-Guideline.pdf) of Viewable Browser Space is defined as: 
 

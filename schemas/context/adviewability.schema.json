@@ -5,13 +5,13 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/context/viewability-details",
+  "$id": "https://ns.adobe.com/xdm/context/adviewability",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Viewability Details",
+  "title": "MRC Viewability",
   "type": "object",
-  "description": "Browser or app settings measured at runtime describing the viewability of an advertisement or content associated with each page load.",
+  "description": "Browser or app settings measured at runtime describing the viewability of an advertisement associated with each page load.",
   "definitions": {
-    "viewability-details": {
+    "adviewability": {
       "properties": {
         "xdm:adUnitDepth": {
           "title": "Ad Unit Depth",
@@ -24,7 +24,7 @@
           "title": "Viewport Height",
           "type": "integer",
           "description":
-          "The number of vertical pixels of the window the ad is displayed in, measured at runtime.",
+          "The vertical size (in pixels) of the window the experience was displayed inside measured at runtime. For a web view event, the browser viewport height.",
           "minimum": 0
 
         },
@@ -32,7 +32,7 @@
           "title": "Viewport Width",
           "type": "integer",
           "description":
-          "The number of horizontal pixels of the window the ad is displayed in, measured at runtime.",
+          "The horizontal size (in pixels) of the window the experience was displayed inside measured at runtime. For a web view event, the browser viewport width.",
           "minimum": 0
         },
         "xdm:adHeight": {
@@ -95,7 +95,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/viewability-details"
+      "$ref": "#/definitions/adviewability"
     }
   ],
   "meta:status": "experimental"

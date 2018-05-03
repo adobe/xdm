@@ -5,46 +5,70 @@
       "xdm:value": 1
     }
   },
-  "https://ns.adobe.com/experience/campaign/message": {
-    "id": 10000,
-    "profile": {
-      "xdm:person": {
-        "xdm:birthMonth": 1,
-        "xdm:birthDay": 3,
-        "xdm:birthYear": 1996,
-        "xdm:gender": "female"
-      },
-      "xdm:workAddress": {
-        "@id": "https://ns.adobe.com/entities/address/123",
-        "xdm:primary": true,
-        "xdm:city": "San Jose",
-        "xdm:stateProvinceISO": "CA",
-        "xdm:postalCode": "95110",
-        "xdm:countryCode": "US"
-      },
-      "xdm:workEmail": {
-        "xdm:primary": true,
-        "xdm:address": "jsmith@xyzinc.com"
+  "xdm:channel": "https://ns.adobe.com/xdm/channels/email",
+  "xdm:endUserIDs": {
+    "https://ns.adobe.com/experience/mcid": {
+      "@id": "https://data.adobe.io/entities/identity/92312748749128",
+      "xdm:namespace": {
+        "@id": "https://data.adobe.io/entities/namespace/4",
+        "xdm:code": "ECID"
       }
     },
-    "variant": "English",
-    "seedMember": false,
-    "quarantine": false,
-    "proofMember": false,
-    "controlGroupMember": false,
-    "testMember": true,
-    "size": 421,
-    "outboundIP": "10.20.30.40"
+    "https://ns.adobe.com/experience/campaign": {
+      "@id": "https://data.adobe.io/entities/identity/1234567",
+      "xdm:namespace": {
+        "@id": "https://data.adobe.io/entities/namespace/2756",
+        "xdm:code": "CPGN"
+      }
+    }
   },
-  "https://ns.adobe.com/experience/campaign/delivery": {
-    "id": 1001,
-    "channel": "https://ns.adobe.com/xdm/channels/email",
-    "from": "no-reply@adobe.com",
-    "testEnabled": true,
-    "messageClass": "continuous",
-    "templateID": 1000
+  "https://ns.adobe.com/experience/campaign": {
+    "message": {
+      "id": 10000,
+      "profile": {
+        "xdm:person": {
+          "xdm:birthMonth": 1,
+          "xdm:birthDay": 3,
+          "xdm:birthYear": 1996,
+          "xdm:gender": "female"
+        },
+        "xdm:workAddress": {
+          "@id": "https://ns.adobe.com/entities/address/123",
+          "xdm:primary": true,
+          "xdm:city": "San Jose",
+          "xdm:stateProvinceISO": "CA",
+          "xdm:postalCode": "95110",
+          "xdm:countryCode": "US"
+        },
+        "xdm:workEmail": {
+          "xdm:primary": true,
+          "xdm:address": "jsmith@xyzinc.com"
+        }
+      },
+      "variant": "English",
+      "seedMember": false,
+      "quarantine": false,
+      "proofMember": false,
+      "controlGroupMember": false,
+      "testMember": true,
+      "size": 421,
+      "outboundIP": "10.20.30.40",
+      "external": {
+        "id": "uuid:00112233-4455-6677-8899-AABBCCDDEEFF"
+      }
+    },
+    "delivery": {
+      "id": 1001,
+      "from": "no-reply@adobe.com",
+      "testEnabled": true,
+      "messageClass": "continuous",
+      "templateID": 1000
+    },
+    "marketingCampaign": {
+      "id": 100
+    }
   },
-  "https://ns.adobe.com/experience/campaign/id": 100,
-  "https://ns.adobe.com/experience/campaign/message/external/id": "uuid:00112233-4455-6677-8899-AABBCCDDEEFF",
-  "https://ns.adobe.com/experience/campaign/orchestration/businessReason": "onJourneyEnter"
+  "orchestration": {
+    "businessReason": "onJourneyEnter"
+  }
 }

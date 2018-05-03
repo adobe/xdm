@@ -5,6 +5,23 @@
       "xdm:value": 1
     }
   },
+  "xdm:channel": "https://ns.adobe.com/xdm/channels/apns",
+  "xdm:endUserIDs": {
+    "https://ns.adobe.com/experience/mcid": {
+      "@id": "https://data.adobe.io/entities/identity/92312748749128",
+      "xdm:namespace": {
+        "@id": "https://data.adobe.io/entities/namespace/4",
+        "xdm:code": "ECID"
+      }
+    },
+    "https://ns.adobe.com/experience/campaign": {
+      "@id": "https://data.adobe.io/entities/identity/1234567",
+      "xdm:namespace": {
+        "@id": "https://data.adobe.io/entities/namespace/2756",
+        "xdm:code": "CPGN"
+      }
+    }
+  },
   "xdm:environment": {
     "xdm:type": "browser",
     "xdm:browserDetails": {
@@ -19,42 +36,47 @@
     "xdm:typeID": "IPad",
     "xdm:typeIDService": "https://ns.adobe.com/xdm/external/adobecampaign"
   },
-  "https://ns.adobe.com/experience/campaign/message": {
-    "id": 10000,
-    "profile": {
-      "xdm:person": {
-        "xdm:birthMonth": 1,
-        "xdm:birthDay": 3,
-        "xdm:birthYear": 1996,
-        "xdm:gender": "female"
+  "https://ns.adobe.com/experience/campaign": {
+    "message": {
+      "id": 10000,
+      "profile": {
+        "xdm:person": {
+          "xdm:birthMonth": 1,
+          "xdm:birthDay": 3,
+          "xdm:birthYear": 1996,
+          "xdm:gender": "female"
+        },
+        "xdm:workAddress": {
+          "@id": "https://ns.adobe.com/entities/address/123",
+          "xdm:primary": true,
+          "xdm:city": "San Jose",
+          "xdm:stateProvinceISO": "CA",
+          "xdm:postalCode": "95110",
+          "xdm:countryCode": "US"
+        },
+        "xdm:workEmail": {
+          "xdm:primary": true,
+          "xdm:address": "jsmith@xyzinc.com"
+        }
       },
-      "xdm:workAddress": {
-        "@id": "https://ns.adobe.com/entities/address/123",
-        "xdm:primary": true,
-        "xdm:city": "San Jose",
-        "xdm:stateProvinceISO": "CA",
-        "xdm:postalCode": "95110",
-        "xdm:countryCode": "US"
-      },
-      "xdm:workEmail": {
-        "xdm:primary": true,
-        "xdm:address": "jsmith@xyzinc.com"
+      "variant": "English",
+      "seedMember": false,
+      "quarantine": false,
+      "proofMember": false,
+      "controlGroupMember": false,
+      "testMember": false,
+      "external": {
+        "id": "uuid:00112233-4455-6677-8899-AABBCCDDEEFF"
       }
     },
-    "variant": "English",
-    "seedMember": false,
-    "quarantine": false,
-    "proofMember": false,
-    "controlGroupMember": false,
-    "testMember": false
-  },
-  "https://ns.adobe.com/experience/campaign/delivery": {
-    "id": 1001,
-    "channel": "https://ns.adobe.com/xdm/channels/apns",
-    "testEnabled": false,
-    "messageClass": "messageCenter",
-    "templateID": 1100
-  },
-  "https://ns.adobe.com/experience/campaign/message/external/id": "uuid:00112233-4455-6677-8899-AABBCCDDEEFF",
-  "https://ns.adobe.com/experience/campaign/orchestration/businessReason": "store-entry-beacon-triggered"
+    "delivery": {
+      "id": 1001,
+      "testEnabled": false,
+      "messageClass": "messageCenter",
+      "templateID": 1100
+    },
+    "orchestration": {
+      "businessReason": "store-entry-beacon-triggered"
+    }
+  }
 }

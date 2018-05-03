@@ -146,7 +146,7 @@
           "type": "integer",
           "description": "The campaign activity originating this message."
         },
-        "https://ns.adobe.com/experience/campaign/campaign/id": {
+        "https://ns.adobe.com/experience/campaign/marketingCampaign/id": {
           "title": "CampaignID",
           "type": "integer",
           "description":
@@ -207,14 +207,15 @@
           "minimum": 1,
           "maximum": 32767
         },
-        "https://ns.adobe.com/experience/campaign/link/tags": {
-          "title": "Tags",
-          "type": "array",
-          "description":
-            "A list of tags qualifying the link. The URL category is one of those tags.",
-          "items": {
-            "type": "string"
-          }
+        "https://ns.adobe.com/experience/campaign/link/label": {
+          "title": "URL Label",
+          "type": "string",
+          "description": "The user-friendly label clicking on which the link opens."
+        },
+        "https://ns.adobe.com/experience/campaign/link/category": {
+          "title": "URL Category",
+          "type": "string",
+          "description": "The category of the link. It may be `subscription`, or a user-defined category."
         },
         "https://ns.adobe.com/experience/campaign/message/external/id": {
           "title": "External ID",

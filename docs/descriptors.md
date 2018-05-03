@@ -15,31 +15,15 @@ While schema descriptors can be used to define metadata about a single schema, t
 
 The following relationship types are defined by XDM:
 
-* `xdm:oneToOne`: describes a 1:1 relationship between a source schema and a destination schema
-* `xdm:oneToMany`: describes a 1:m relationship between a source schema and a destination schema
-* `xdm:manyToMany`: describes an m:n relationship between a source schema and a destination schema
-
-These relationships are defined in XDM using the `RelationshipDescriptor` schema.
+TBD
 
 ## Update Policies
 
-Data described by an XDM schema may change over time, and as such a data object may reflect an update of a previous instance of that object. There are different ways that an update may be handled, and this way depends both on the nature of the data and the specific application it is being used for.
-
-XDM defines a schema descriptor of type `xdm:descriptorUpdatePolicy`, which describes several common methods of handling an update:
-
-* `xdm:updateMerge`: the data in the new object should be merged into the existing object; the method by which a merge is applied is defined by the application
-* `xdm:updateReplace`: the new data object should replace the existing data object
-* `xdm:updateTimeSeries`: the data is time series data, and the new object should be logged/collected without changing any existing data
-
-Update policies are defined using the `UpdatePolicyDescriptor` schema.
+TBD
 
 ## Other Supported Schema Descriptors
 
-A number of additional schema descriptors are defined by XDM:
-
-* `xdm:identityContext`: allows a property in a schema to be used as an [Identity](https://github.com/adobe/xdm/blob/master/docs/reference/context/identity.schema.md), even if it does not conform to the Identity schema.
-* `xdm:primaryKey`: allows a property other than `@id` to be flagged as the primary key for a schema
-* `xdm:instantiable`: allows a schema to be flagged as 'instantiable', which may be used to differentiate schemas that define primary business objects versus supporting schemas intended to be embedded in another schema.
+TBD
 
 ## Embedding Schema Descriptors in a Schema
 
@@ -118,63 +102,6 @@ The above example shows how a descriptor may be embedded in the schema being des
 
 This highlights the ability to use schema descriptors both directly in schemas and also as independent entities.
 
-### Example Identity Descriptor
-
-We have a schema that describes a customer record, which contains an customer ID as a property:
-
-```json
-{
-  "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "https://ns.example.com/xdm/customerrecord",
-  "title": "CustomerRecord",
-  "type": "object",
-  "properties": {
-    "@id": { "type": "string" },
-    "https://ns.example.com/xdm/customerID": {
-      "meta:descriptors": [
-        {
-          "@type": "xdm:identityContext",
-          "xdm:namespace": "https://id-server.adobe.com/1234",
-          "xdm:property": "code"
-        }
-      ],
-      "type": "string"
-    }
-  }
-}
-```
-
-The customer ID is present, but does not contain other information needed to ensure the identity is fully described, such as the ID namespace, or whether this value represents the application's native ID for this customer or if this is an ID given my some external system.
-
-We can use an identity descriptor to provide the additional details. The descriptor signals the namespace the ID is managed under (in this case, a fictitious service at id-server.adobe.com), and also signals that the value is a "code", meaning it is the externally managed handle for some ID managed by the namespace.
-
-### Example Primary Key Descriptor
-
-We have a schema that describes a sales order taken from an external sales management system. As this schema is directly transcribed from the external system's data schema, it does not follow the XDM best practice of using `@id` as the primary key:
-
-```json
-{
-  "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "https://ns.example.com/xdm/salesorder",
-  "title": "SalesOrder",
-  "type": "object",
-  "properties": {
-    "https://ns.example.com/xdm/txID": {
-      "meta:descriptors": [
-        {
-          "@type": "xdm:primaryKey"
-        }
-      ],
-      "type": "string"
-    },
-    "https://ns.example.com/xdm/confirmationNum": { "type": "string" },
-    "https://ns.example.com/xdm/customerID": { "type": "string" },
-    "https://ns.example.com/xdm/productID": { "type": "string" }
-  }
-}
-```
-
-It is not obvious which field is best suited to be the primary key for this data. The descriptor signals that the transaction identifier at 'txID' is the appropriate key to be used for this data.
 
 ### Example of Defining a New Schema Descriptor
 

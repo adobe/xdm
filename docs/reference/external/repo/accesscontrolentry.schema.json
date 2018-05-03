@@ -66,6 +66,15 @@
                         "deny": "Permission is denied to the Principal."
                     },
                     "default": "grant"
+                },
+                "repo:inheritance": {
+                    "description": "Optional inheritance of the ace: whether the deny or grant is inherited by the children of the resource. The default inheritance is deep if this property is missing or has an invalid value.",
+                    "type": "string",
+                    "meta:enum": {
+                        "deep": "Deny or grant applies to the resource and to all children of the resource.",
+                        "self": "Deny or grant only applies to the resource."
+                    },
+                    "default": "deep"
                 }
             },
             "required": [
@@ -117,7 +126,8 @@
                 "write",
                 "delete"
             ],
-            "repo:modifier": "grant"
+            "repo:modifier": "grant",
+            "repo:inheritance": "deep"
         }
     ]
 }

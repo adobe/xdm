@@ -24,9 +24,9 @@ for other Profile data such as preference, propensities and other attributes.
 
 
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [context/profile.schema.json](context/profile.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/profile.schema.json](context/profile.schema.json) |
 ## Schema Hierarchy
 
 * Profile `https://ns.adobe.com/xdm/context/profile`

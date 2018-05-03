@@ -8,9 +8,9 @@ https://ns.adobe.com/xdm/common/organization
 Information that uniquely identifies an organized entity such as company, non-profit, government agency or educational institution, plus additional information that further qualifies the organization.
 
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Stabilizing | Forbidden | Permitted | [common/organization.schema.json](common/organization.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Stabilizing | Yes | Forbidden | Permitted | [common/organization.schema.json](common/organization.schema.json) |
 ## Schema Hierarchy
 
 * Organization `https://ns.adobe.com/xdm/common/organization`

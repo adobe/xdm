@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/data/metrics/advertising/impressions
 
 The advertising metric impressions describes…
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [data/impressions.schema.json](data/impressions.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [data/impressions.schema.json](data/impressions.schema.json) |
 
 ## impressions Example
 ```json

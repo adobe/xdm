@@ -11,33 +11,33 @@
   "type": "object",
   "description": "Adobe AdCloud Ad Details",
   "definitions": {
-    "advertisementDetails": {
+    "advertisementdetails": {
       "properties": {
-        "https://ns.adobe.com/experience/adcloud/advertisementdetails/adId": {
+        "https://ns.adobe.com/experience/adcloud/adId": {
           "title": "Ad ID",
-          "type": "integer",
+          "type": "string",
           "description":
-          "Unique identifier for the ad asset this event is associated with."
+          "Unique identifier for the ad asset this event is associated with. Not to be confused with Ad-ID standard."
         },
-        "https://ns.adobe.com/experience/adcloud/advertisementdetails/runtime": {
+        "https://ns.adobe.com/experience/adcloud/runtime": {
           "title": "Runtime Type",
           "type": "string",
           "description": "The runtime of the ad unit itself, not the runtime of the browser or the operating system.",
           "examples": "unknown, HTML5"
         },
-        "https://ns.adobe.com/experience/adcloud/advertisementdetails/class": {
+        "https://ns.adobe.com/experience/adcloud/class": {
           "title": "Ad Class",
           "type": "string",
           "description": "Ad class of driving event.",
           "examples": "display, video, social"
         },
-        "https://ns.adobe.com/experience/adcloud/advertisementdetails/adUnitType": {
+        "https://ns.adobe.com/experience/adcloud/adUnitType": {
           "title": "Ad Unit Type",
           "type": "string",
           "description": "Unique identifier for the literal piece of code driving display of the ad in a browser/device.",
           "examples": "linearVideo, interactiveVideo, banner, richMediaBanner, newsFeedVideo, newsFeedDisplay, HTML5, inPageVideo, inPageDisplay, facebook, twitter, linearTv, vod"
         },
-        "https://ns.adobe.com/experience/adcloud/advertisementdetails/asset": {
+        "https://ns.adobe.com/experience/adcloud/asset": {
           "title": "Asset Details",
           "$ref": "https://ns.adobe.com/xdm/assets/aggregated-asset",
           "description": "Asset information for the relevant Ad."
@@ -47,7 +47,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/advertisementDetails"
+      "$ref": "#/definitions/advertisementdetails"
     }
   ]
 }

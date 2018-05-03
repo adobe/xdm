@@ -28,11 +28,6 @@
           "type": "string",
           "description": "The application or browser version."
         },
-        "xdm:versionMinor": {
-          "title": "Version (Minor)",
-          "type": "string",
-          "description": "The application or browser minor."
-        },
         "xdm:userAgent": {
           "title": "User Agent",
           "type": "string",

@@ -13,40 +13,40 @@
   "definitions": {
     "inventory": {
       "properties": {
-        "https://ns.adobe.com/experience/adcloud/inventory/sessionId": {
+        "https://ns.adobe.com/experience/adcloud/sessionId": {
           "title": "Session ID",
           "type": "string",
           "description":
           "Session ID associated with experience event, used to stitch together independent events which occurred in the same session."
         },
-        "https://ns.adobe.com/experience/adcloud/inventory/feedId": {
+        "https://ns.adobe.com/experience/adcloud/feedId": {
           "title": "Feed ID",
           "type": "integer",
           "description": "Composite id of the publisher, ad exchange, and other features."
         },
-        "https://ns.adobe.com/experience/adcloud/inventory/sspPartnerCode": {
+        "https://ns.adobe.com/experience/adcloud/sspPartnerCode": {
           "title": "SSP Partner Code",
           "type": "string",
-          "description": "The partner (exchange) through which we receive this advertising opportunity."
+          "description": "The partner (exchange) through which AdCloud receives the inventory opportunity."
         },
-        "https://ns.adobe.com/experience/adcloud/inventory/siteId": {
+        "https://ns.adobe.com/experience/adcloud/siteId": {
           "title": "Site ID",
           "type": "integer",
           "description": "Identifier for the web site where ad impression was served."
         },
-        "https://ns.adobe.com/experience/adcloud/inventory/costCurrency": {
+        "https://ns.adobe.com/experience/adcloud/costCurrency": {
           "title": "Cost Currency",
           "type": "string",
           "examples": ["USD", "EUR"],
           "pattern": "^[A-Z]{3}$",
           "description": "The ISO 4217 currency code used to pay partner for in ad opportunity."
         },
-        "https://ns.adobe.com/experience/adcloud/inventory/inventorySourceId": {
+        "https://ns.adobe.com/experience/adcloud/inventorySourceId": {
           "title": "Inventory Source ID",
           "type": "integer",
           "description": "The id of the AdCloud inventory source this opportunity was delivered on."
         },
-        "https://ns.adobe.com/experience/adcloud/inventory/segmentDetails": {
+        "https://ns.adobe.com/experience/adcloud/segmentDetails": {
           "title": "Segmentation Details",
           "$ref": "https://ns.adobe.com/experience/adcloud/segmentdetails",
           "description": "Details associatied with user segmentation rules."

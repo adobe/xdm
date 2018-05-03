@@ -11,57 +11,57 @@
   "type": "object",
   "description": "Adobe AdCloud Ad Campaign Hierarchy Details",
   "definitions": {
-    "campaignDetails": {
+    "campaigndetails": {
       "properties": {
-        "https://ns.adobe.com/experience/adcloud/campaigndetails/accountId": {
+        "https://ns.adobe.com/experience/adcloud/accountId": {
           "title": "Account ID",
-          "type": "integer",
+          "type": "string",
           "description":
           "Unique identifier for the account this event is associated with."
         },
-        "https://ns.adobe.com/experience/adcloud/campaigndetails/campaignId": {
+        "https://ns.adobe.com/experience/adcloud/campaignId": {
           "title": "Campaign ID",
-          "type": "integer",
+          "type": "string",
           "description": "Unique identifier for the campaign which this event is associated with."
         },
-        "https://ns.adobe.com/experience/adcloud/campaigndetails/placementId": {
+        "https://ns.adobe.com/experience/adcloud/placementId": {
           "title": "Placement ID",
-          "type": "integer",
+          "type": "string",
           "description": "Unique identifier for the placement which this event is associated with."
         },
-        "https://ns.adobe.com/experience/adcloud/campaigndetails/packageId": {
+        "https://ns.adobe.com/experience/adcloud/packageId": {
           "title": "Package ID",
-          "type": "integer",
+          "type": "string",
           "description": "Unique identifier for the package which this event is associated with."
         },
-        "https://ns.adobe.com/experience/adcloud/campaigndetails/advertiserId": {
+        "https://ns.adobe.com/experience/adcloud/advertiserId": {
           "title": "Advertiser ID",
-          "type": "integer",
+          "type": "string",
           "description": "Unique identifier for the advertiser which this event is associated with."
         },
-        "https://ns.adobe.com/experience/adcloud/campaigndetails/experimentId": {
+        "https://ns.adobe.com/experience/adcloud/experimentId": {
           "title": "Experiment ID",
-          "type": "integer",
+          "type": "string",
           "description": "Unique identifier for the experiment which this event is associated with."
         },
-        "shttps://ns.adobe.com/experience/adcloud/campaigndetails/ampleGroupId": {
+        "shttps://ns.adobe.com/experience/adcloud/sampleGroupId": {
           "title": "Sample Group ID",
-          "type": "integer",
+          "type": "string",
           "description": "Unique identifier for the sample group which this event is associated with."
         },
-        "https://ns.adobe.com/experience/adcloud/campaigndetails/currency": {
+        "https://ns.adobe.com/experience/adcloud/currency": {
           "title": "Account Currency",
           "type": "string",
           "examples": ["USD", "EUR"],
           "pattern": "^[A-Z]{3}$",
-          "description": "The ISO 4217 billing currency code for the AdCloud account this event is associated with."
+          "description": "The ISO 4217 billing currency code for the account this event is associated with."
         }
       }
     }
   },
   "allOf": [
     {
-      "$ref": "#/definitions/campaignDetails"
+      "$ref": "#/definitions/campaigndetails"
     }
   ]
 }

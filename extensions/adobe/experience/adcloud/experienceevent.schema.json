@@ -21,25 +21,25 @@
         },
         "https://ns.adobe.com/experience/adcloud/marketing/campaignDetails": {
           "title": "Ad Campaign Details",
-          "$ref": "https://ns.adobe.com/experience/adcloud/campaignDetails",
+          "$ref": "https://ns.adobe.com/experience/adcloud/campaigndetails",
           "description":
           "Adobe AdCloud ad campaign hierarchy details."
         },
         "https://ns.adobe.com/experience/adcloud/marketing/inventoryDetails": {
           "title": "Ad Inventory Details",
-          "$ref": "https://ns.adobe.com/experience/adcloud/inventoryDetails",
+          "$ref": "https://ns.adobe.com/experience/adcloud/inventorydetails",
           "description":
           "Adobe AdCloud inventory details."
         },
         "https://ns.adobe.com/experience/adcloud/marketing/conversionDetails": {
           "title": "Ad Conversion Details",
-          "$ref": "https://ns.adobe.com/experience/adcloud/conversionDetails",
+          "$ref": "https://ns.adobe.com/experience/adcloud/conversiondetails",
           "description":
           "Adobe AdCloud ad conversion hierarchy details."
         },
         "https://ns.adobe.com/experience/adcloud/media/advertisementDetails": {
           "title": "Ad Asset Details",
-          "$ref": "https://ns.adobe.com/experience/adcloud/advertisementDetails",
+          "$ref": "https://ns.adobe.com/experience/adcloud/advertisementdetails",
           "description":
           "Digital Advertisement Asset Details"
         }

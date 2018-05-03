@@ -102,7 +102,6 @@ The above example shows how a descriptor may be embedded in the schema being des
 
 This highlights the ability to use schema descriptors both directly in schemas and also as independent entities.
 
-
 ### Example of Defining a New Schema Descriptor
 
 Let's say Example.com would like to annotate their schemas with information on whether they are actively being used in their application, a cloud service. They'd like to know if the schema is being used in production, in staging, or is unused.

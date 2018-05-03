@@ -57,8 +57,8 @@ function getGitState(schema) {
   logDebug(`\t-> ${status} -- ${schema}`)
   // Check revision history of a given schema:
   //  - Retrieve most recent revision as a single, one-line record
-  //  - Determine the most recent change to the `meta:status` key (`-S <string>`)
-  let git_output = execp(`git log -1 --decorate=auto --oneline -S ${META_STATUS} ${schema}`)
+  //  - Determine the most recent change to the `meta:status` key (`-G <string>`)
+  let git_output = execp(`git log -1 --decorate=auto --oneline -G ${META_STATUS} ${schema}`)
   let git_commits = git_output.trim().split('\n')
   logDebug(`\t\tGit State Commit: ${git_output.trim()}`)
   let git_latest_revision = git_commits[0]

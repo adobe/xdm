@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/channels/mpns
 
 Microsoft Push Notification Service
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [channels/mpns.schema.json](channels/mpns.schema.json) |
+| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
+|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [channels/mpns.schema.json](channels/mpns.schema.json) |
 ## Schema Hierarchy
 
 * MPNS `https://ns.adobe.com/xdm/channels/mpns`

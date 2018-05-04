@@ -15,23 +15,23 @@
   "definitions": {
     "address": {
       "properties": {
-        "https://ns.adobe.com/experience/campaign/address/addressErrorCount": {
+        "https://ns.adobe.com/experience/campaign/addressErrorCount": {
           "title": "Address Error Count",
           "type": "integer",
           "description":
             "Number of consecutive errors when sending to this address."
         },
-        "https://ns.adobe.com/experience/campaign/address/addressQuality": {
+        "https://ns.adobe.com/experience/campaign/addressQuality": {
           "title": "Address Quality",
           "type": "integer",
           "description": "Address quality rating.",
           "meta:enum": {
-            "0": "Incomplete address",
-            "1": "Unknown Town-Postal Code",
-            "2": "Empty street",
-            "3": "Unknown street",
-            "4": "Partially-recognized street",
-            "5": "Fully-recognized street"
+            "incomplete_address": "Incomplete address",
+            "unknown_town_postal_code": "Unknown Town-Postal Code",
+            "empty_street": "Empty street",
+            "unknown_street": "Unknown street",
+            "partially_recognized_street": "Partially-recognized street",
+            "fully_recognized_street": "Fully-recognized street"
           }
         }
       }

@@ -23,7 +23,7 @@
         },
         "https://ns.adobe.com/experience/campaign/addressQuality": {
           "title": "Address Quality",
-          "type": "integer",
+          "type": "string",
           "description": "Address quality rating.",
           "meta:enum": {
             "incomplete_address": "Incomplete address",

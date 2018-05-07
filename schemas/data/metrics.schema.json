@@ -140,18 +140,15 @@
         },
         "https://ns.adobe.com/xdm/data/metrics/direct-marketing/opens": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-            "The direct marketing message (email, SMS, Push Notifications etc) has been opened/swyped/touched by the recipient."
+          "description": "The direct marketing message (email, SMS, Push Notifications etc) has been opened/swyped/touched by the recipient."
         },
         "https://ns.adobe.com/xdm/data/metrics/direct-marketing/unsubscriptions": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-            "The recipient of the direct marketing message (email, newsletters, etc) has opted out from receiving them."
+          "description": "The recipient of the direct marketing message (email, newsletters, etc) has opted out from receiving them."
         },
         "https://ns.adobe.com/xdm/data/metrics/direct-marketing/not-sent": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-            "Asynchronous message (email, SMS, MMS etc) was not dispatched due to cancellation or expiration of the marketing activity."
+          "description": "Asynchronous message (email, SMS, MMS etc) was not dispatched due to cancellation or expiration of the marketing activity."
         }
       },
       "additionalProperties": false

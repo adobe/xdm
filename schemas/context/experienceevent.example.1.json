@@ -102,7 +102,7 @@
       "schema:longitude": 139.73237
     }
   },
-  "xdm:web": {
+  "xdm:web":{
     "xdm:webPageView": {
       "xdm:siteSection": "Shopping Cart",
       "xdm:server": "example.com",

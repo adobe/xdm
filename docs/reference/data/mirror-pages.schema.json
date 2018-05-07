@@ -11,11 +11,11 @@
     "type": "object",
     "meta:extensible": true,
     "meta:extends": [
-        "https://ns.adobe.com/xdm/data/metric"
+        "https://ns.adobe.com/xdm/data/metricdefinition"
     ],
     "description": "The direct-marketing metric mirror-pages describes the number of mirror pages for which a link to the online mirror page of a message has been clicked.",
     "definitions": {
-        "metric": {
+        "metricdefinition": {
             "properties": {
                 "@id": {
                     "type": "string",
@@ -41,7 +41,7 @@
     },
     "allOf": [
         {
-            "$ref": "#/definitions/metric"
+            "$ref": "#/definitions/metricdefinition"
         }
     ],
     "required": [

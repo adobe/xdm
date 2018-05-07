@@ -37,7 +37,7 @@
           "description": "Unique identifier for the literal piece of code driving display of the ad in a browser/device.",
           "examples": "linearVideo, interactiveVideo, banner, richMediaBanner, newsFeedVideo, newsFeedDisplay, HTML5, inPageVideo, inPageDisplay, facebook, twitter, linearTv, vod"
         },
-        "https://ns.adobe.com/experience/adcloud/asset": {
+        "https://ns.adobe.com/experience/adcloud/assetDetails": {
           "title": "Asset Details",
           "$ref": "https://ns.adobe.com/xdm/assets/aggregated-asset",
           "description": "Asset information for the relevant Ad."

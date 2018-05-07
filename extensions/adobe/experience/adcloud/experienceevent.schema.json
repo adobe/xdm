@@ -31,12 +31,6 @@
           "description":
           "Adobe AdCloud inventory details."
         },
-        "https://ns.adobe.com/experience/adcloud/marketing/conversionDetails": {
-          "title": "Ad Conversion Details",
-          "$ref": "https://ns.adobe.com/experience/adcloud/conversiondetails",
-          "description":
-          "Adobe AdCloud ad conversion hierarchy details."
-        },
         "https://ns.adobe.com/experience/adcloud/media/advertisementDetails": {
           "title": "Ad Asset Details",
           "$ref": "https://ns.adobe.com/experience/adcloud/advertisementdetails",

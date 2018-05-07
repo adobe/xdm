@@ -61,7 +61,7 @@ You can include the Creative Commons Attribution 4.0 International (CC BY 4.0) l
 Every pull request should specify:
 
 * What the change intends to do
-* If there are breaking changes
+* If there are breaking changes (in case there are, list them in [CHANGELOG.md](CHANGELOG.md), too)
 * Link to the Github issue in the format `#42`
 
 For every update to the schema, make sure

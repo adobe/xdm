@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/implementationdetails
 ```
 
-Details about the sdk, library or service used in an application's or web page's implementation of a service.
+Details about the SDK, library or service used in an application's or web page's implementation of a service.
 
 | Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
 |----------|------------|--------|--------------|-------------------|-----------------------|------------|

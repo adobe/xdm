@@ -4,29 +4,6 @@
 
 
 
-## /channels/
-
-* [ADM](./channels/adm.schema.md) – `https://ns.adobe.com/xdm/channels/adm` (Experimental)
-* [APNS](./channels/apns.schema.md) – `https://ns.adobe.com/xdm/channels/apns` (Experimental)
-* [Application](./channels/application.schema.md) – `https://ns.adobe.com/xdm/channels/application` (Experimental)
-* [Baidu](./channels/baidu.schema.md) – `https://ns.adobe.com/xdm/channels/baidu` (Experimental)
-* [Direct Mail](./channels/direct-mail.schema.md) – `https://ns.adobe.com/xdm/channels/direct-mail` (Experimental)
-* [E-Mail](./channels/agency.schema.md) – `https://ns.adobe.com/xdm/channels/agency` (Experimental)
-* [E-Mail](./channels/email.schema.md) – `https://ns.adobe.com/xdm/channels/email` (Experimental)
-* [Experience Channel](./channels/channel.schema.md) – `https://ns.adobe.com/xdm/channels/channel` (Experimental)
-* [Facebook News Feed](./channels/facebook-feed.schema.md) – `https://ns.adobe.com/xdm/channels/facebook-feed` (Experimental)
-* [Fax](./channels/fax.schema.md) – `https://ns.adobe.com/xdm/channels/fax` (Experimental)
-* [GCM](./channels/gcm.schema.md) – `https://ns.adobe.com/xdm/channels/gcm` (Experimental)
-* [LINE](./channels/line.schema.md) – `https://ns.adobe.com/xdm/channels/line` (Experimental)
-* [MPNS](./channels/mpns.schema.md) – `https://ns.adobe.com/xdm/channels/mpns` (Experimental)
-* [Phone](./channels/phone.schema.md) – `https://ns.adobe.com/xdm/channels/phone` (Experimental)
-* [SMS](./channels/sms.schema.md) – `https://ns.adobe.com/xdm/channels/sms` (Experimental)
-* [Twitter Feed](./channels/twitter-feed.schema.md) – `https://ns.adobe.com/xdm/channels/twitter-feed` (Experimental)
-* [WNS](./channels/wns.schema.md) – `https://ns.adobe.com/xdm/channels/wns` (Experimental)
-* [WeChat](./channels/wechat.schema.md) – `https://ns.adobe.com/xdm/channels/wechat` (Experimental)
-* [Web](./channels/mobile-app.schema.md) – `https://ns.adobe.com/xdm/channels/mobile-app` (Experimental)
-* [Web](./channels/web.schema.md) – `https://ns.adobe.com/xdm/channels/web` (Experimental)
-
 ## /assets/
 
 * [Aggregated Asset](./assets/aggregated-asset.schema.md) – `https://ns.adobe.com/xdm/assets/aggregated-asset` (Experimental)
@@ -35,7 +12,7 @@
 * [Copyright Owner](./assets/copyright-owner.schema.md) – `https://ns.adobe.com/xdm/assets/copyright-owner` (Experimental)
 * [Font](./assets/font.schema.md) – `https://ns.adobe.com/xdm/assets/font` (Experimental)
 * [Image](./assets/image.schema.md) – `https://ns.adobe.com/xdm/assets/image` (Experimental)
-* [Language Alternative](./assets/language-alternative.schema.md) – `https://ns.adobe.com/xdm/assets/language-alternative` (Experimental)
+* [Language Alternative](./assets/language-alternative.schema.md) – `https://ns.adobe.com/xdm/assets/language-alternative` (Stabilizing)
 * [Layer](./assets/layer.schema.md) – `https://ns.adobe.com/xdm/assets/layer` (Experimental)
 * [Layer Group](./assets/layer-group.schema.md) – `https://ns.adobe.com/xdm/assets/layer-group` (Experimental)
 * [Rectangular Media](./assets/rectangular.schema.md) – `https://ns.adobe.com/xdm/assets/rectangular` (Experimental)
@@ -66,6 +43,29 @@
 * [Page](./common/page.schema.md) – `https://ns.adobe.com/xdm/common/page` (Experimental)
 * [Principal](./common/principal.schema.md) – `https://ns.adobe.com/xdm/common/principal` (Experimental)
 
+## /channels/
+
+* [ADM](./channels/adm.schema.md) – `https://ns.adobe.com/xdm/channels/adm` (Experimental)
+* [APNS](./channels/apns.schema.md) – `https://ns.adobe.com/xdm/channels/apns` (Experimental)
+* [Application](./channels/application.schema.md) – `https://ns.adobe.com/xdm/channels/application` (Experimental)
+* [Baidu](./channels/baidu.schema.md) – `https://ns.adobe.com/xdm/channels/baidu` (Experimental)
+* [Direct Mail](./channels/direct-mail.schema.md) – `https://ns.adobe.com/xdm/channels/direct-mail` (Experimental)
+* [E-Mail](./channels/agency.schema.md) – `https://ns.adobe.com/xdm/channels/agency` (Experimental)
+* [E-Mail](./channels/email.schema.md) – `https://ns.adobe.com/xdm/channels/email` (Experimental)
+* [Experience Channel](./channels/channel.schema.md) – `https://ns.adobe.com/xdm/channels/channel` (Experimental)
+* [Facebook News Feed](./channels/facebook-feed.schema.md) – `https://ns.adobe.com/xdm/channels/facebook-feed` (Experimental)
+* [Fax](./channels/fax.schema.md) – `https://ns.adobe.com/xdm/channels/fax` (Experimental)
+* [GCM](./channels/gcm.schema.md) – `https://ns.adobe.com/xdm/channels/gcm` (Experimental)
+* [LINE](./channels/line.schema.md) – `https://ns.adobe.com/xdm/channels/line` (Experimental)
+* [MPNS](./channels/mpns.schema.md) – `https://ns.adobe.com/xdm/channels/mpns` (Experimental)
+* [Phone](./channels/phone.schema.md) – `https://ns.adobe.com/xdm/channels/phone` (Experimental)
+* [SMS](./channels/sms.schema.md) – `https://ns.adobe.com/xdm/channels/sms` (Experimental)
+* [Twitter Feed](./channels/twitter-feed.schema.md) – `https://ns.adobe.com/xdm/channels/twitter-feed` (Experimental)
+* [WNS](./channels/wns.schema.md) – `https://ns.adobe.com/xdm/channels/wns` (Experimental)
+* [WeChat](./channels/wechat.schema.md) – `https://ns.adobe.com/xdm/channels/wechat` (Experimental)
+* [Web](./channels/mobile-app.schema.md) – `https://ns.adobe.com/xdm/channels/mobile-app` (Experimental)
+* [Web](./channels/web.schema.md) – `https://ns.adobe.com/xdm/channels/web` (Experimental)
+
 ## /context/
 
 * [Browser Details](./context/browserdetails.schema.md) – `https://ns.adobe.com/xdm/context/browserdetails` (Stabilizing)
@@ -76,7 +76,7 @@
 * [Environment](./context/environment.schema.md) – `https://ns.adobe.com/xdm/context/environment` (Stabilizing)
 * [ExperienceEvent](./context/experienceevent.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent` (Stabilizing)
 * [Identity](./context/identity.schema.md) – `https://ns.adobe.com/xdm/context/identity` (Experimental)
-* [Implementation Details](./context/implementationdetails.schema.md) – `https://ns.adobe.com/xdm/context/implementationdetails` (Unknown)
+* [Implementation Details](./context/implementationdetails.schema.md) – `https://ns.adobe.com/xdm/context/implementationdetails` (Experimental)
 * [Marketing](./context/marketing.schema.md) – `https://ns.adobe.com/xdm/context/marketing` (Stabilizing)
 * [Namespace](./context/namespace.schema.md) – `https://ns.adobe.com/xdm/context/namespace` (Experimental)
 * [OptInOut](./context/optinout.schema.md) – `https://ns.adobe.com/xdm/context/optinout` (Experimental)
@@ -89,7 +89,7 @@
 * [Push Notification Token](./context/pushnotificationtoken.schema.md) – `https://ns.adobe.com/xdm/context/pushnotificationtoken` (Stabilizing)
 * [Search](./context/search.schema.md) – `https://ns.adobe.com/xdm/context/search` (Experimental)
 * [Subscription](./context/subscription.schema.md) – `https://ns.adobe.com/xdm/context/subscription` (Experimental)
-* [Web Information](./context/webinfo.schema.md) – `https://ns.adobe.com/xdm/context/webinfo` (Unknown)
+* [Web Information](./context/webinfo.schema.md) – `https://ns.adobe.com/xdm/context/webinfo` (Experimental)
 * [Web Interaction](./context/webinteraction.schema.md) – `https://ns.adobe.com/xdm/context/webinteraction` (Experimental)
 * [Web Page View](./context/webpageview.schema.md) – `https://ns.adobe.com/xdm/context/webpageview` (Experimental)
 * [Web Referrer](./context/webreferrer.schema.md) – `https://ns.adobe.com/xdm/context/webreferrer` (Experimental)
@@ -142,20 +142,6 @@
 * [Unpublished Event](./common/event/unpublished.schema.md) – `https://ns.adobe.com/xdm/common/event/unpublished` (Experimental)
 * [Updated Event](./common/event/updated.schema.md) – `https://ns.adobe.com/xdm/common/event/updated` (Experimental)
 
-## /external/activity-streams-2/
-
-* [Activity](./external/activity-streams-2/activity.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/activity` (Experimental)
-* [Collection](./external/activity-streams-2/collection.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/collection` (Experimental)
-* [Collection Page](./external/activity-streams-2/collection-page.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/collection-page` (Experimental)
-* [Document](./external/activity-streams-2/document.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/document` (Experimental)
-* [Image Document](./external/activity-streams-2/image.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/image` (Experimental)
-* [JSON-LD `@context`](./external/activity-streams-2/context.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/context` (Experimental)
-* [JSON-LD `@id`](./external/activity-streams-2/id.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/id` (Experimental)
-* [JSON-LD `@type`](./external/activity-streams-2/type.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/type` (Experimental)
-* [Link](./external/activity-streams-2/link.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/link` (Experimental)
-* [Object](./external/activity-streams-2/object.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/object` (Experimental)
-* [RDF Language Tagged String](./external/activity-streams-2/rdf-langstring.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langstring` (Experimental)
-
 ## /external/hal/
 
 * [HAL Link](./external/hal/hal-link.schema.md) – `https://ns.adobe.com/xdm/external/hal/link` (Experimental)
@@ -170,6 +156,20 @@
 * [Directory](./external/repo/directory.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/directory` (Experimental)
 * [Effective Privileges](./external/repo/effectiveprivileges.schema.md) – `https://ns.adobe.com/xdm/external/repo/effectiveprivileges` (Experimental)
 * [Sub-Directory](./external/repo/sub-directory.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/sub-directory` (Experimental)
+
+## /external/activity-streams-2/
+
+* [Activity](./external/activity-streams-2/activity.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/activity` (Experimental)
+* [Collection](./external/activity-streams-2/collection.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/collection` (Experimental)
+* [Collection Page](./external/activity-streams-2/collection-page.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/collection-page` (Experimental)
+* [Document](./external/activity-streams-2/document.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/document` (Experimental)
+* [Image Document](./external/activity-streams-2/image.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/image` (Experimental)
+* [JSON-LD `@context`](./external/activity-streams-2/context.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/context` (Experimental)
+* [JSON-LD `@id`](./external/activity-streams-2/id.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/id` (Experimental)
+* [JSON-LD `@type`](./external/activity-streams-2/type.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/type` (Experimental)
+* [Link](./external/activity-streams-2/link.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/link` (Experimental)
+* [Object](./external/activity-streams-2/object.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/object` (Experimental)
+* [RDF Language Tagged String](./external/activity-streams-2/rdf-langstring.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langstring` (Experimental)
 
 ## /external/schema/
 

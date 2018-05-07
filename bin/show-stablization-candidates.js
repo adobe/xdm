@@ -16,16 +16,19 @@ const $ = require("shelljs")
 
 const META_STATUS = "meta:status"
 const TRIVIAL_CHANGE_MATCHERS = ["\\[.*trivial.*\\]","\\[.*ci skip.*\\]"]
+const TRIVIAL_REVISIONS = getTrivialRevisions();
 const LOG_ENABLED = (process.argv.indexOf("--debug") > -1)
 
 function logDebug(message) {
   if (LOG_ENABLED) { console.error(message) }
 }
 
+// Find all XDM schemas, based on `*.schema.json` filemask, within the projects' `schemas` subfolder
 function getListOfSchemas() {
   return schemas = $.find("schemas").filter(name => { return name.match(/.*\.schema\.json$/)})
 }
 
+// Wrapper for basic `exec` implementation
 function execp(command) {
   return $.exec(command, { silent: true }).stdout
 }
@@ -42,18 +45,27 @@ function getStatusOfSchema(schema) {
   return status
 }
 
+// Retrieve the git revision timestamp in seconds since epoch and
+// convert to milliseconds for use with Date()
+function getRevisionDate(revision_id) {
+  return new Date(execp(`git log -1 -s --format=%ct ${revision_id}`)*1000)
+}
+
 // Determine the git commit revision for a given schema's `meta:status`
 function getGitState(schema) {
   let status = getStatusOfSchema(schema)
   logDebug(`\t-> ${status} -- ${schema}`)
-  let git_output = execp(`git log -1 --decorate=auto --oneline -S ${META_STATUS} ${schema}`)
+  // Check revision history of a given schema:
+  //  - Retrieve most recent revision as a single, one-line record
+  //  - Determine the most recent change to the `meta:status` key (`-G <string>`)
+  let git_output = execp(`git log -1 --decorate=auto --oneline -G ${META_STATUS} ${schema}`)
   let git_commits = git_output.trim().split('\n')
   logDebug(`\t\tGit State Commit: ${git_output.trim()}`)
   let git_latest_revision = git_commits[0]
   let commit_raw = git_latest_revision.split(' ')
   let commit_rev = commit_raw[0]
   let commit_msg = commit_raw.splice(1).join(' ')
-  let commit_date = new Date(execp(`git log -1 -s --format=%ct ${commit_rev}`)*1000)
+  let commit_date = getRevisionDate(commit_rev)
   return {
     commits: getSchemaChangesSinceRevision(schema, commit_rev),
     latest: {
@@ -65,14 +77,23 @@ function getGitState(schema) {
   }
 }
 
-// Helper method to determine whether a commit message contains non-trivial qualifiers
-function signifiesTrivialChange(message) {
-  let regex = new RegExp(TRIVIAL_CHANGE_MATCHERS.join('|'))
-  let isTrivial = regex.test(message)
-  return isTrivial
+// Return an array of git revision ids parsed from `/.trivial`
+function getTrivialRevisions() {
+  const trivialFile = ".trivial"
+  const trivialContent = fs.existsSync(trivialFile) ? fs.readFileSync(trivialFile, 'utf8') : ""
+  return trivialContent.split("\n").filter(s => s.length > 0) // an empty file can end up with a single empty string
 }
 
-// Create a detailed list of all revisions to a schema since a specific revision
+// Helper method to determine whether a commit message contains non-trivial change qualifiers
+function signifiesTrivialChange(message, revision) {
+  let regex = new RegExp(TRIVIAL_CHANGE_MATCHERS.join('|'))
+  let revTrivial = TRIVIAL_REVISIONS.find(id => revision.startsWith(id)) !== undefined
+  let msgTrivial = regex.test(message)
+  return revTrivial || msgTrivial
+}
+
+// Create a detailed list of intermediate revisions to a given schema between
+// HEAD and a given, valid revision
 function getSchemaChangesSinceRevision(schema, revision) {
   let commits = []
   let git_output = execp(`git rev-list ${revision}^..HEAD ${schema}`)
@@ -81,14 +102,14 @@ function getSchemaChangesSinceRevision(schema, revision) {
   for (idx in git_revisions) {
     let rev_id = git_revisions[idx]
     let rev_desc = (execp(`git log -1 --decorate=auto --oneline ${rev_id}`)).trim()
-    let rev_msg = rev_desc.split(' ').splice(1).join(' ')
-    let rev_date = new Date(execp(`git log -1 -s --format=%ct ${rev_id}`)*1000)
+    let rev_msg = rev_desc.split(' ').splice(1).join(' ').replace(/"/g, "'");
+    let rev_date = getRevisionDate(rev_id)
     commits.push({
       id: rev_id,
       desc: rev_desc,
       msg: rev_msg,
       date: rev_date,
-      trivial: signifiesTrivialChange(rev_msg)
+      trivial: signifiesTrivialChange(rev_msg, rev_id)
     })
   }
   return commits
@@ -119,30 +140,45 @@ function buildGitLog(commits) {
   for (idx in commits) {
     let item = commits[idx]
     if (log.length > 0) {
-      log += "<br>"
+      log += " "
     }
-    log += item.desc
+    log += `[${item.id.substr(0,7)}](https://github.com/adobe/xdm/commit/${item.id} "${item.msg}")`;
   }
-  return `<code>${log.trim()}</code>`
+  return `${log.trim()}`
 }
 
 // Generate markdown table for all schemas + revision details
-function generateMarkdownTable(schemaDetailMap) {
+function generateMarkdownTable(schemaDetailMap, status) {
   let keys = Object.keys(schemaDetailMap).sort()
   let md = '|Schema|Status|Status Modified Date|Last Non-trivial Change|Raw Commit Log Since Status Change|\n' +
            '|------|------|--------------------|-----------------------|----------------------------------|\n'
   for (idx in keys) {
     let schema = keys[idx]
     let details = schemaDetailMap[schema]
-    let date_state = details.latest.date
-    let date_nontrivial = date_state
+    let date_state = details.latest.date; // Math.floor((Date.now() - details.latest.date) / 1000 / 3600 / 24) 
+    let date_nontrivial = date_state; //Math.floor((Date.now() - date_state) / 1000 / 3600 / 24)
     for (cidx in details.commits) {
       let commit = details.commits[cidx]
       if (!commit.trivial && commit.date > date_nontrivial) {
         date_nontrivial = commit.date
       }
     }
-    md += `|${schema}|${details.latest.status}|${date_state}|${date_nontrivial}|${buildGitLog(details.commits)}|\n`
+
+    //format dates
+    date_state = Math.floor((Date.now() - date_state) / 1000 / 3600 / 24);
+    if (date_state>30) {
+      date_state = "**" + date_state + "**"
+    }
+
+    date_nontrivial = Math.floor((Date.now() - date_nontrivial) / 1000 / 3600 / 24);
+    if (date_nontrivial>30) {
+      date_nontrivial = "**" + date_nontrivial + "**"
+    }
+    //link to schema, ignore extension
+    schema = `[${schema.replace(/\.schema\.json/, "")}](${schema})`
+    if (details.latest.status == status) {
+      md += `|${schema}|${details.latest.status}|${date_state}|${date_nontrivial}|${buildGitLog(details.commits)}|\n`
+    }
   }
   return md
 }
@@ -164,7 +200,20 @@ function main() {
   logDebug(`Found schema details: ${JSON.stringify(schemaDetailMap, null, '\t')}`)
   
   // Build table rows for each schema generate output in markdown format
-  let schemaTable = generateMarkdownTable(schemaDetailMap)
+  let schemaTable = `
+### Unknown Status, needs immediate attention
+
+${generateMarkdownTable(schemaDetailMap, undefined)}
+
+### Experimental Status
+
+${generateMarkdownTable(schemaDetailMap, "experimental")}
+
+### Stabilizing
+
+${generateMarkdownTable(schemaDetailMap, "stabilizing")}
+
+`;
   console.log(buildOutputBody(schemaTable))
 }
 

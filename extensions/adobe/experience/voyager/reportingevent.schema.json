@@ -40,6 +40,15 @@
                   "description": "The identifier for event which is reponsible for possible state change in current journey."
                 },
                 "xdm:flowControlType": {
+                  "title": "Flow control",
+                  "type": "strng",
+                  "description": "Flow control in the journey triggered by the event.",
+                  "meta:enum": {
+                    "End": "if the 'end' step has been reached, if this step exists",
+                    "Jump": "if a jump action has been executed",
+                    "Timer": "if a transition has been applied, implying a sheduler notification",
+                    "Condition": "if a conditional step has been processed"
+                  }
                 },
                 "xdm:isError": {
                   "title": "Error",
@@ -47,7 +56,9 @@
                   "description": "Describes if there was an error in taking action or event."
                 },
                 "xdm:isJourneyVersionFailure": {
-
+                  "title": "Journey Error",
+                  "type": "string",
+                  "description": "Error in handling the flow control of the journey."
                 },
                 "xdm:isJourneyEntered": {
                   "title": "Journey Entry",

@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/common/address
 
 A postal address. Address could relate to a person's home, work, preferred store location etc.
 
-| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Stabilizing | Yes | Forbidden | Permitted | [common/address.schema.json](common/address.schema.json) |
 ## Schema Hierarchy
 

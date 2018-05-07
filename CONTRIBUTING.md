@@ -61,7 +61,7 @@ You can include the Creative Commons Attribution 4.0 International (CC BY 4.0) l
 Every pull request should specify:
 
 * What the change intends to do
-* If there are breaking changes
+* If there are breaking changes (in case there are, list them in [CHANGELOG.md](CHANGELOG.md), too)
 * Link to the Github issue in the format `#42`
 
 For every update to the schema, make sure
@@ -103,7 +103,7 @@ XDM is not an isolated standard, but incorporates and builds on standards. Whene
 
 ### Design for Compatibility
 
-Interoperability with [Microsoft's Common Data Model (CDM)](https://github.com/Microsoft/CDM)is a top priority. This means that definitions that are present in CDM should be used or extended, where appropriate, by XDM. XDM should not attempt to duplicate definitions that are present in CDM.
+Interoperability with [Microsoft's Common Data Model (CDM)](https://github.com/Microsoft/CDM) is a top priority. This means that definitions that are present in CDM should be used or extended, where appropriate, by XDM. XDM should not attempt to duplicate definitions that are present in CDM.
 
 Where appropriate, we can 'lead' CDM, extend it to meet other requirements.
 Another good source of data model elements is [schema.org](http://schema.org).
@@ -117,6 +117,7 @@ Additional aspects of standard design that aid with consumability are:
 * principle of least astonishment: don't surprise the consumer
 * avoid unnecessary complexity: don't introduce indirections that are not needed
 * the principle of minimal verbosity: make keep things as short as possible, but not shorter
+* avoid unnecessary polymorphism that is hard to consume, e.g. offering both singular and array notations, or introducing type variants that don't provide a common discriminator property.
 
 ### Design for the Cloud
 

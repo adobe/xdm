@@ -11,11 +11,11 @@
     "type": "object",
     "meta:extensible": true,
     "meta:extends": [
-        "https://ns.adobe.com/xdm/data/metric"
+        "https://ns.adobe.com/xdm/data/metricdefinition"
     ],
     "description": "The web metric link-clicks describes the number of clicks on a link on a web page.",
     "definitions": {
-        "metric": {
+        "metricdefinition": {
             "properties": {
                 "@id": {
                     "type": "string",
@@ -41,7 +41,7 @@
     },
     "allOf": [
         {
-            "$ref": "#/definitions/metric"
+            "$ref": "#/definitions/metricdefinition"
         }
     ],
     "required": [

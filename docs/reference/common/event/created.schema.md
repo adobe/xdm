@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/common/event/created
 
 A `created event` follows semantics that are exactly equivalent to the semantics described by the [`create activity`](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-create), except for one difference. The `create activity` can be used in imperative contexts, however, the `created event` can only be used in passive contexts.
 
-| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
+|----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | No | Experimental | No | Forbidden | Permitted | [common/event/created.schema.json](common/event/created.schema.json) |
 ## Schema Hierarchy
 

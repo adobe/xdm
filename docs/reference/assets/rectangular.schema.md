@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/assets/rectangular
 
 Properties that apply to images, videos, and other rectangular media
 
-| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Cannot be instantiated | Yes | Experimental | No | Forbidden | Permitted | [assets/rectangular.schema.json](assets/rectangular.schema.json) |
 
 ## Rectangular Media Example

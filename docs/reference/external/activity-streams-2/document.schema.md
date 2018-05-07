@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/external/activity-streams-2/document
 
 Represents a document of any kind. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-document) specification for a complete description of the `document` type.
 
-| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
+|----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | No | Experimental | No | Forbidden | Permitted | [external/activity-streams-2/document.schema.json](external/activity-streams-2/document.schema.json) |
 
 ## Document Example

@@ -69,8 +69,6 @@
       }
     ]
   },
-  "https://ns.adobe.com/experience/campaign/message/external/id":
-    "uuid:00112233-4455-6677-8899-AABBCCDDEEFF",
-  "https://ns.adobe.com/experience/campaign/orchestration/businessReason":
-    "store-entry-beacon-triggered"
+  "https://ns.adobe.com/experience/campaign/message/external/id": "uuid:00112233-4455-6677-8899-AABBCCDDEEFF",
+  "https://ns.adobe.com/experience/campaign/orchestration/businessReason": "store-entry-beacon-triggered"
 }

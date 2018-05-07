@@ -43,8 +43,6 @@
     "testEnabled": false,
     "messageClass": "oneTime"
   },
-  "https://ns.adobe.com/experience/campaign/message/external/id":
-    "uuid:00112233-4455-6677-8899-AABBCCDDEEFF",
-  "https://ns.adobe.com/experience/campaign/orchestration/businessReason":
-    "onJourneyEnter"
+  "https://ns.adobe.com/experience/campaign/message/external/id": "uuid:00112233-4455-6677-8899-AABBCCDDEEFF",
+  "https://ns.adobe.com/experience/campaign/orchestration/businessReason": "onJourneyEnter"
 }

@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/content/repository
 
 A Content Repository that is compliant with the Adobe Cloud Platform API specification.
 
-| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | No | Experimental | No | Forbidden | Permitted | [content/repository.schema.json](content/repository.schema.json) |
 
 ## Content Repository Example

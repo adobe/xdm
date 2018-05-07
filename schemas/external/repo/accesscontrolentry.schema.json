@@ -41,19 +41,12 @@
             }
           ]
         },
-        "repo:privilege": {
-          "description": "Privilege granted or denied to the Principal",
-          "anyOf": [
-            {
-              "type": "array",
-              "items": {
-                "$ref": "#/definitions/privilege"
-              }
-            },
-            {
-              "$ref": "#/definitions/privilege"
-            }
-          ]
+        "repo:privileges": {
+          "description": "Privileges granted or denied to the Principal",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/privilege"
+          }
         },
         "repo:relations": {
           "description":
@@ -85,7 +78,7 @@
           "default": "deep"
         }
       },
-      "required": ["repo:principal", "repo:privilege"],
+      "required": ["repo:principal", "repo:privileges"],
       "additionalProperties": {
         "type": ["object", "array", "string"]
       }

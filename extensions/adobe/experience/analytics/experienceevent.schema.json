@@ -7181,6 +7181,18 @@
               "description": "Custom event 1000."
             }
           }
+        },
+        "https://ns.adobe.com/experience/analytics/environment/browserID": {
+          "title": "Browser ID",
+          "type": "integer",
+          "description":
+            "The Adobe Analytics Identifier for the browser used."
+        },
+        "https://ns.adobe.com/experience/analytics/environment/operatingSystemID": {
+          "title": "Operating System ID",
+          "type": "integer",
+          "description":
+            "The Adobe Analytics Identifier of the operating system used."
         }
       }
     }

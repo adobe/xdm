@@ -36,6 +36,7 @@
           "type": "array",
           "items": {
             "$ref": "https://ns.adobe.com/xdm/context/poi-detail"
+          }
         }
       }
     }

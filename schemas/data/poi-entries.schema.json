@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/metric"],
   "description":
-    "The place context metric poi-entries describes the number of entries into a Point of Interest (POI).",
+    "The place context metric poi-entries describes the number of times a person has left a Point of Interest (POI).",
   "definitions": {
     "metric": {
       "properties": {

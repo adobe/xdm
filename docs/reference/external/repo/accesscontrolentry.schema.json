@@ -37,19 +37,12 @@
                         }
                     ]
                 },
-                "repo:privilege": {
-                    "description": "Privilege granted or denied to the Principal",
-                    "anyOf": [
-                        {
-                            "type": "array",
-                            "items": {
-                                "$ref": "#/definitions/privilege"
-                            }
-                        },
-                        {
-                            "$ref": "#/definitions/privilege"
-                        }
-                    ]
+                "repo:privileges": {
+                    "description": "Privileges granted or denied to the Principal",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/privilege"
+                    }
                 },
                 "repo:relations": {
                     "description": "List of relation link types to which this privilege applies",
@@ -79,7 +72,7 @@
             },
             "required": [
                 "repo:principal",
-                "repo:privilege"
+                "repo:privileges"
             ],
             "additionalProperties": {
                 "type": [
@@ -110,11 +103,6 @@
     "meta:status": "experimental",
     "examples": [
         {
-            "repo:principal": "authenticated",
-            "repo:privilege": "read",
-            "repo:modifier": "grant"
-        },
-        {
             "repo:principal": {
                 "xdm:provider": {
                     "@id": "https://ims-na1.adobelogin.com/"
@@ -122,12 +110,19 @@
                 "@id": "C0B648DE57D701277F000101@AdobeID",
                 "@type": "https://ns.adobe.com/adobecloudplatform/ims/user"
             },
-            "repo:privilege": [
+            "repo:privileges": [
                 "write",
                 "delete"
             ],
             "repo:modifier": "grant",
             "repo:inheritance": "deep"
+        },
+        {
+            "repo:principal": "authenticated",
+            "repo:privileges": [
+                "read"
+            ],
+            "repo:modifier": "grant"
         }
     ]
 }

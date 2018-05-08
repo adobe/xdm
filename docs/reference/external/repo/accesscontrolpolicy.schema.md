@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/external/repo/accesscontrolpolicy
 
 Schema for the Access Control Policy of a resource
 
-| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
+|----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/repo/accesscontrolpolicy.schema.json](external/repo/accesscontrolpolicy.schema.json) |
 ## Schema Hierarchy
 
@@ -22,7 +22,9 @@ Schema for the Access Control Policy of a resource
   "repo:acl": [
     {
       "repo:principal": "authenticated",
-      "repo:privilege": "read",
+      "repo:privileges": [
+        "read"
+      ],
       "repo:modifier": "grant"
     },
     {
@@ -33,7 +35,7 @@ Schema for the Access Control Policy of a resource
         "@id": "C0B648DE57D701277F000101@AdobeID",
         "@type": "https://ns.adobe.com/adobecloudplatform/ims/user"
       },
-      "repo:privilege": [
+      "repo:privileges": [
         "write",
         "delete"
       ],

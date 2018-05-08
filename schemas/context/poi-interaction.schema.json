@@ -13,8 +13,8 @@
   "definitions": {
     "poi-interaction": {
       "properties": {
-        "@id": {
-          "title": "POI ID",
+        "xdm:POIID": {
+          "title": "POI Identity",
           "type": "string",
           "description": "The unique identifier of the POI."
         },
@@ -26,27 +26,27 @@
         "xdm:category": {
           "title": "POI Category",
           "type": "string",
-          "description": "General category assigned for orginizing the POIs by the administrator of POI definitions."
+          "description": "General category assigned for organizing the POIs by the administrator of POI definitions."
         },
         "xdm:type": {
           "title": "POI Type",
           "type": "string",
-          "description": "The general type of the POI using a typing schema selected by the adminsitrator of the POI definitions."
+          "description": "The general type of the POI using a typing schema selected by the administrator of the POI definitions."
         },
         "xdm:distanceToPOICenter": {
           "title": "Distance to POI Center",
           "type": "number",
-          "description": "Estimated distence from the POI Center in meters."
+          "description": "Estimated distance from the POI Center in meters."
         },
         "https://ns.adobe.com/xdm/data/metrics/poi-interaction/poi-entries": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
-            "The number of entries into a Point of Interest (POI)."
+            "The number of times a person has entered the Point of Interest (POI)."
         },
         "https://ns.adobe.com/xdm/data/metrics/poi-interaction/poi-exits": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
-            "The number of exits from a Point of Interest (POI)."
+            "The number of times a person has exited the Point of Interest (POI)."
         }
       },
       "required": ["@id"]

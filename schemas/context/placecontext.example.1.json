@@ -9,7 +9,7 @@
     "schema:latitude": 35.6185,
     "schema:longitude": 139.73237
   },
-  "xdm:poiInteraction": {
+  "xdm:POIinteraction": {
     "https://ns.adobe.com/xdm/data/metrics/placecontext/poi-exits": {
       "xdm:value": 1
     },

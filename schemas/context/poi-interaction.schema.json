@@ -13,30 +13,10 @@
   "definitions": {
     "poi-interaction": {
       "properties": {
-        "xdm:POIID": {
-          "title": "POI Identity",
-          "type": "string",
-          "description": "The unique identifier of the POI."
-        },
-        "xdm:name": {
-          "title": "POI Name",
-          "type": "string",
-          "description": "The name given to the POI."
-        },
-        "xdm:category": {
-          "title": "POI Category",
-          "type": "string",
-          "description": "General category assigned for organizing the POIs by the administrator of POI definitions."
-        },
-        "xdm:type": {
-          "title": "POI Type",
-          "type": "string",
-          "description": "The general type of the POI using a typing schema selected by the administrator of the POI definitions."
-        },
-        "xdm:distanceToPOICenter": {
-          "title": "Distance to POI Center",
-          "type": "number",
-          "description": "Estimated distance from the POI Center in meters."
+        "xdm:POIDetail": {
+          "title": "POI Detail",
+          "description": "Detail of the POI that cause the event.",
+          "$ref": "https://ns.adobe.com/xdm/context/poi-detail"
         },
         "https://ns.adobe.com/xdm/data/metrics/poi-interaction/poi-entries": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",

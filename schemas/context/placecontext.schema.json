@@ -30,10 +30,12 @@
           "$ref": "https://ns.adobe.com/xdm/context/poi-interaction",
           "description": "The Point of Interest(POI) interaction details."
         },
-        "xdm:beacon": {
-          "title": "Beacon",
-          "$ref": "https://ns.adobe.com/xdm/common/beacon",
-          "description": "Beacon active for the POI interaction."
+        "xdm:activePOIs" : {
+          "title": "POI Detail",
+          "description": "Details of the POIs that cause the event.",
+          "type": "array",
+          "items": {
+            "$ref": "https://ns.adobe.com/xdm/context/poi-detail"
         }
       }
     }

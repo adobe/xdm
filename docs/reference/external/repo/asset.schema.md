@@ -7,9 +7,9 @@ http://ns.adobe.com/adobecloud/core/1.0/asset
 
 An asset in Adobe Cloud Platform. It is not neccessarily a Digital Asset in the sense of Digital Asset Management, but a piece of content or data that can be represented in the form of a file.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [external/repo/asset.schema.json](external/repo/asset.schema.json) |
+| [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
+|----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/repo/asset.schema.json](external/repo/asset.schema.json) |
 ## Schema Hierarchy
 
 * Asset `http://ns.adobe.com/adobecloud/core/1.0/asset`
@@ -134,8 +134,6 @@ All instances must conform to this regular expression
 
 A unique identifier given to every addressable asset in a given repository.
 
-The format is a [GUID-based URN](https://www.ietf.org/rfc/rfc4122.txt). The pattern to generate an Asset ID is ```urn:aaid:{system}:{id} - {format}:{namespace}:{system}:{id}```
-
 `repo:assetID`
 * is **required**
 * type: `string`
@@ -146,13 +144,6 @@ The format is a [GUID-based URN](https://www.ietf.org/rfc/rfc4122.txt). The patt
 
 `string`
 
-
-All instances must conform to this regular expression 
-```regex
-^urn:aaid:[A-Za-z0-9]+:[A-Za-z0-9]+:[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}$
-```
-
-* test example: [urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e](https://regexr.com/?expression=%5Eurn%3Aaaid%3A%5BA-Za-z0-9%5D%2B%3A%5BA-Za-z0-9%5D%2B%3A%5BA-Fa-f0-9%5D%7B8%7D-%5BA-Fa-f0-9%5D%7B4%7D-%5BA-Fa-f0-9%5D%7B4%7D-%5BA-Fa-f0-9%5D%7B4%7D-%5BA-Fa-f0-9%5D%7B12%7D%24&text=urn%3Aaaid%3Asc%3AUS%3A6dc33479-13ca-4b19-b25d-c805eff8a69e)
 
 
 

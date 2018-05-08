@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/external/activity-streams-2/collection
 
 A `Collection` is a subtype of `[Object](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object)` that represents ordered or unordered sets of `[Object](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object) or [Link](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-link)` instances. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-collection) specification for a complete description of the `Collection` type.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [external/activity-streams-2/collection.schema.json](external/activity-streams-2/collection.schema.json) |
+| [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
+|----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/activity-streams-2/collection.schema.json](external/activity-streams-2/collection.schema.json) |
 ## Schema Hierarchy
 
 * Collection `https://ns.adobe.com/xdm/external/activity-streams-2/collection`

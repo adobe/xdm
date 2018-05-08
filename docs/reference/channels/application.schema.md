@@ -8,9 +8,9 @@ https://ns.adobe.com/xdm/channels/application
 An application that accepts messages or emit events (Facebook page, Mobile App, ...).
 
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [channels/application.schema.json](channels/application.schema.json) |
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/application.schema.json](channels/application.schema.json) |
 
 ## Application Example
 ```json

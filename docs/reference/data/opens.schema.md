@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/data/metrics/direct-marketing/opens
 
 The direct-marketing metric `opens` describes the number of times the direct marketing messages (email, SMS, Push Notifications etc) have been opened/swyped/touched by the recipients.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [data/opens.schema.json](data/opens.schema.json) |
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [data/opens.schema.json](data/opens.schema.json) |
 
 ## opens Example
 ```json

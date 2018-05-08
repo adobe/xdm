@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/data/metrics/web/page-views
 
 The web metric page-views describes the number of impressions of a web page.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [data/page-views.schema.json](data/page-views.schema.json) |
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [data/page-views.schema.json](data/page-views.schema.json) |
 
 ## page-views Example
 ```json

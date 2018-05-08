@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/data/metrics/direct-marketing/non-deliverables
 
 The direct-marketing metric non-deliverables describes the umber of asynchronous messages that failed to deliver in a way that indicates that no future messages will be deliverable either to this address.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [data/non-deliverables.schema.json](data/non-deliverables.schema.json) |
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [data/non-deliverables.schema.json](data/non-deliverables.schema.json) |
 
 ## non-deliverables Example
 ```json

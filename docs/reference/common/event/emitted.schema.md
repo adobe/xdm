@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/common/event/emitted
 
 The `emitted event` represents the activity of emitting a message or some `object`. This event type provides the capability to conform custom activities to the XDM Event Envelope. A custom activity is one where the system transporting the event isn't aware of what is in the event. A custom activity typically tends to be configured by a system's end user. Take, for example, custom OSGI events in AEM. One concern does arise regarding the `emitted event`, which is, its generic nature that allows for almost every activity to be modeled as 'message emitted' activity. This, however, is a trap that publishers of the XDM Event Envelope must steer away from.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | No | Experimental | Forbidden | Permitted | [common/event/emitted.schema.json](common/event/emitted.schema.json) |
+| [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
+|----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
+| Can be instantiated | No | Experimental | No | Forbidden | Permitted | [common/event/emitted.schema.json](common/event/emitted.schema.json) |
 ## Schema Hierarchy
 
 * Emitted Event `https://ns.adobe.com/xdm/common/event/emitted`

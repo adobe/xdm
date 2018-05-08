@@ -13,9 +13,9 @@ Each value consists of the (required) ID that is native to the data source, and 
 Additionally, this schema can include a property that describes the data source that is responsible for identity stitching.
 
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | No | Stabilizing | Forbidden | Permitted | [context/enduserids.schema.json](context/enduserids.schema.json) |
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | No | Stabilizing | No | Forbidden | Permitted | [context/enduserids.schema.json](context/enduserids.schema.json) |
 ## Schema Hierarchy
 
 * End User IDs `https://ns.adobe.com/xdm/context/enduserids`

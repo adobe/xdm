@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/common/event/published
 
 The `published event` represents the activity of releasing an object for distribution. Some examples of the published activity are, publishing digital content on a website, publishing a book, publishing an article in a journal, publishing a memo on a notice board, etcetera. The [`object`](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object) field should specify the object that was released/published, whereas the [`target`](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-target) field, if present, should describe where the said object was published on. The `published event` can only be used in passive contexts. Example: the act of publishing an article in a journal would be represented by the `published` activity wherein, the article would be the `object` of publication and the journal would be the `target`.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | No | Experimental | Forbidden | Permitted | [common/event/published.schema.json](common/event/published.schema.json) |
+| [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
+|----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
+| Can be instantiated | No | Experimental | No | Forbidden | Permitted | [common/event/published.schema.json](common/event/published.schema.json) |
 ## Schema Hierarchy
 
 * Published Event `https://ns.adobe.com/xdm/common/event/published`

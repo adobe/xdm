@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/data/metrics/commerce/save-for-laters
 
 The commerce metric save-for-laters describes how often a product has been saved for a later day purchase.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [data/save-for-laters.schema.json](data/save-for-laters.schema.json) |
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [data/save-for-laters.schema.json](data/save-for-laters.schema.json) |
 
 ## save-for-laters Example
 ```json

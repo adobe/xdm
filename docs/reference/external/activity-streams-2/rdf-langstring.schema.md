@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langstring
 
 The class `rdf:langString` is the class of [language-tagged string values](http://www.w3.org/TR/rdf11-concepts/#dfn-language-tagged-string).
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Cannot be instantiated | Yes | Experimental | Forbidden | Forbidden | [external/activity-streams-2/rdf-langstring.schema.json](external/activity-streams-2/rdf-langstring.schema.json) |
+| [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
+|----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
+| Cannot be instantiated | Yes | Experimental | No | Forbidden | Forbidden | [external/activity-streams-2/rdf-langstring.schema.json](external/activity-streams-2/rdf-langstring.schema.json) |
 
 ## RDF Language Tagged String Example
 ```json

@@ -48,8 +48,7 @@
           "description":
             "The number of times a person has exited the Point of Interest (POI)."
         }
-      },
-      "required": ["@id"]
+      }
     }
   },
   "allOf": [

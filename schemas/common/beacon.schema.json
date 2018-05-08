@@ -17,33 +17,35 @@
         "xdm:proximityUUID": {
           "title": "Proximity UUID",
           "type": "string",
-          "description": "The UUID configured into a beacon (or multiple beacons if multiple operate in an area) to be transmited to mobile devices in range to identify an orginizations beacons."
+          "description": "The UUID configured into a beacon (or multiple beacons if multiple operate in an area) to be transmitted to mobile devices in range to identify an organizations beacons."
         },
         "xdm:beaconMajor": {
           "title": "Beacon Major",
           "type": "number",
           "description":
-            "The first sub orginization identifier of an area multiple beacon operate in."
+            "The first sub organization identifier of an area multiple beacon operate in."
         },
         "xdm:beaconMinor": {
           "title": "Beacon Minor",
           "type": "number",
           "description":
-            "The second sub orginization identifier of an area multiple beacon operate in. The smallest area a beacon can refine location to."
+            "The second sub organization identifier of an area multiple beacon operate in. The smallest area a beacon can refine location to."
         },
         "xdm:proximity": {
           "title": "Proximity to beacon",
           "type": "string",
-          "description": "Estimated distence from the beacon.",
+          "description": "Estimated distance from the beacon.",
           "enum": [
             "immediate",
             "near",
-            "far"
+            "far",
+            "unknown"
           ],
           "meta:enum": {
             "immediate": "Within a few centimeters",
             "near": "Within a couple of meters",
-            "far": "Greater than 10 meters away"
+            "far": "Greater than 10 meters away",
+            "unknown": "Not able to ascertain distance, signal likely very weak."
           }
         }
       }

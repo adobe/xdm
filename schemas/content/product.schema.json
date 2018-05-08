@@ -18,9 +18,8 @@
         "@id": {
           "title": "Identifier",
           "type": "string",
-          "format": "uri",
           "description":
-            "The internal unique ID of the variant in the commerce backend system."
+            "The internal unique ID of the product or variant in the commerce backend system."
         },
         "xdm:SKU": {
           "title": "SKU",
@@ -53,22 +52,6 @@
           "format": "uri",
           "description":
             "The internal unique ID of the product in the commerce backend system."
-        },
-        "xdm:masterProductSKU": {
-          "title": "Master Product SKU",
-          "type": "string",
-          "description":
-            "The unique SKU (Stock Keeping Unit) of the master product assigned by the vendor or manufacturer(to update)."
-        },
-        "xdm:masterProductName": {
-          "title": "Master Product Name",
-          "type": "string",
-          "description": "The localized name of the product."
-        },
-        "xdm:masterProductDescription": {
-          "title": "Master Product Description",
-          "type": "string",
-          "description": "The description of the product."
         },
         "xdm:prices": {
           "title": "Prices",
@@ -132,13 +115,6 @@
           },
           "description":
             "List of product variants belonging to this product."
-        },
-        "xdm:originalSaleDate": {
-          "title": "Original Sale Date",
-          "type": "string",
-          "format": "date",
-          "description":
-            "First date the product was made available for sale. The time using RFC3339 with a stated timezone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\"."
         },
         "xdm:productCreateDate": {
           "title": "Product Creation Date",

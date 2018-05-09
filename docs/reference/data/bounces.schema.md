@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/data/metrics/direct-marketing/bounces
 
 The direct-marketing metric bounces describes the number of asynchronous messages that have been rejected by the receiving system.
 
-| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [data/bounces.schema.json](data/bounces.schema.json) |
 
 ## bounces Example

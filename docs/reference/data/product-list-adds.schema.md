@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/data/metrics/commerce/product-list-adds
 
 The commerce metric product-list-adds describes the number of times a product has been added to a product list. The most common case is adding an item to the shopping cart.
 
-| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [data/product-list-adds.schema.json](data/product-list-adds.schema.json) |
 
 ## product-list-adds Example

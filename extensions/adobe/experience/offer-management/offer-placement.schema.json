@@ -35,13 +35,11 @@
           "description":
             "Offer Channel ID. See 'https://ns.adobe.com/xdm/channels/channel'"
         },
-        "xdm:contentTypes": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "title": "Content Types",
-          "description": "Content Types"
+        "xdm:contentType": {
+          "ref":
+            "https://ns.adobe.com/experience/offer-management/representation-content#/definitions/content-type",
+          "title": "Content Type",
+          "description": "Content Type: image, html or plain text"
         }
       },
       "required": ["xdm:name", "xdm:channel", "xdm:contentTypes"]

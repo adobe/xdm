@@ -8,26 +8,35 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id":
     "https://ns.adobe.com/experience/offer-management/content/html-content",
+  "meta:extends": ["https://ns.adobe.com/experience/offer-management/representation-content"],
   "type": "object",
   "title": "Content",
   "description": "Offer HTML Content",
   "definitions": {
     "html-content": {
       "type": "object",
-      "title": "Text",
-      "description": "Text of the offer",
       "properties": {
         "@type": {
           "type": "string",
           "const": "https://ns.adobe.com/experience/offer-management/content/html-content"
         },
-        "xdm:text": {
-          "type": "string",
-          "title": "Text",
-          "description": "Offer text"
+        "xdm:data": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "xdm:html": {
+                "type": "string",
+                "title": "HTML",
+                "description": "Offer content as an HTML fragment"
+              }
+            }
+          },
+          "required": [
+            "xdm:html"
+          ]
         }
-      },
-      "required": ["xdm:text"]
+      }
     }
   },
   "allOf": [

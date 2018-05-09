@@ -20,9 +20,12 @@
           "description": "The unique identifier of the tag"
         },
         "xdm:name": {
-          "type": "string",
-          "title": "Name",
-          "description": "Tag name"
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "title": "Name",
+            "description": "Tag name"
+          }
         }
       },
       "required": ["xdm:name"]

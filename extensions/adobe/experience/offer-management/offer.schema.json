@@ -56,22 +56,9 @@
           "description": "Offer representations for different placements"
         },
         "xdm:customMetadata": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "name": {
-                "type": "string",
-                "title": "Name",
-                "description": "Custom property name"
-              },
-              "value": {
-                "type": "string",
-                "title": "Value",
-                "description": "Custom property value"
-              }
-            },
-            "additionalProperties": false
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
           },
           "title": "Custom Properties",
           "description":

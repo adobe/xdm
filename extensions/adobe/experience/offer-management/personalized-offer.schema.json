@@ -56,26 +56,13 @@
           "description": "Offer representations for different placements"
         },
         "xdm:customMetadata": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "name": {
-                "type": "string",
-                "title": "Name",
-                "description": "Custom property name"
-              },
-              "value": {
-                "type": "string",
-                "title": "Value",
-                "description": "Custom property value"
-              }
-            },
-            "additionalProperties": false
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
           },
           "title": "Custom Properties",
           "description":
-            "Custom metadata allows end-users to attach properties to individual instances"
+          "Custom metadata allows end-users to attach properties to individual instances"
         },
         "xdm:rank": {
           "$ref": "https://ns.adobe.com/experience/offer-management/rank",
@@ -95,7 +82,7 @@
           "description": "Offer eligibility rule"
         }
       },
-      "required": ["xdm:rank", "xdm:cappingConstraint"]
+      "required": ["xdm:rank", "xdm:selectionConstraint"]
     }
   },
   "allOf": [

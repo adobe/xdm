@@ -6,13 +6,13 @@
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "https://ns.adobe.com/experience/offer-management/offer-filter-rule",
+  "$id": "https://ns.adobe.com/experience/offer-management/offer-filter",
   "meta:extensible": "true",
   "type": "object",
   "title": "Filter Rule",
   "description": "Filters are used to specify criteria for offer selection",
   "definitions": {
-    "offer-filter-rule": {
+    "offer-filter": {
       "properties": {
         "@id": {
           "type": "string",
@@ -36,7 +36,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/offer-filter-rule"
+      "$ref": "#/definitions/offer-filter"
     }
   ]
 }

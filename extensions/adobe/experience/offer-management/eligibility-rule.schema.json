@@ -29,6 +29,15 @@
           "type": "string",
           "title": "Expression",
           "description": "Profile Query"
+        },
+        "xdm:usedProperties": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
         }
       },
       "required": ["xdm:name", "xdm:value"]

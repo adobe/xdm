@@ -12,35 +12,35 @@
   "title": "Content",
   "description": "Offer representation content",
   "definitions": {
+    "content-type": {
+      "type": "string",
+      "format": "uri",
+      "title": "Content Type",
+      "description": "Content Type: image, html or plain text",
+      "enum": [
+        "https://ns.adobe.com/experience/offer-management/content/text-content",
+        "https://ns.adobe.com/experience/offer-management/content/html-content",
+        "https://ns.adobe.com/experience/offer-management/content/image-content"
+      ],
+      "meta:enum": {
+        "https://ns.adobe.com/experience/offer-management/content/text-content": "Text",
+        "https://ns.adobe.com/experience/offer-management/content/html-content": "HTML",
+        "https://ns.adobe.com/experience/offer-management/content/image-content": "Image"
+      }
+    },
     "representation-content": {
       "allOf": [
         {
           "type": "object",
           "properties": {
             "@type": {
-              "type": "string",
-              "format": "uri",
-              "enum": [
-                "https://ns.adobe.com/experience/offer-management/content/email-content",
-                "https://ns.adobe.com/experience/offer-management/content/text-content",
-                "https://ns.adobe.com/experience/offer-management/content/html-content",
-                "https://ns.adobe.com/experience/offer-management/content/image-content"
-              ],
-              "meta:enum": {
-                "https://ns.adobe.com/experience/offer-management/content/email-content": "E-mail",
-                "https://ns.adobe.com/experience/offer-management/content/text-content": "Text",
-                "https://ns.adobe.com/experience/offer-management/content/html-content": "HTML",
-                "https://ns.adobe.com/experience/offer-management/content/image-content": "Image"
-              }
+              "ref": "#/definitions/content-type"
             }
           },
-          "required": ["@type"]
+          "required": ["@type", "xdm:data"]
         },
         {
           "oneOf": [
-            {
-              "$ref": "https://ns.adobe.com/experience/offer-management/content/email-content"
-            },
             {
               "$ref": "https://ns.adobe.com/experience/offer-management/content/text-content"
             },

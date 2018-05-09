@@ -52,7 +52,7 @@
         "xdm:placement": {
           "type": "string",
           "title": "Placement",
-          "description": "Placement to constraint the offers"
+          "description": "Placement to constrain the offers"
         }
       },
       "required": ["xdm:name", "xdm:status"]

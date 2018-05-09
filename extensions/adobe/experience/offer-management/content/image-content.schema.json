@@ -8,6 +8,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id":
     "https://ns.adobe.com/experience/offer-management/content/image-content",
+  "meta:extends": ["https://ns.adobe.com/experience/offer-management/representation-content"],
   "type": "object",
   "title": "Image Content",
   "description": "Offer Image Content",
@@ -15,36 +16,44 @@
     "image-content": {
       "type": "object",
       "title": "Image",
-      "description": "Offer image",
+      "description": "Offer content as an image",
       "properties": {
         "@type": {
           "type": "string",
           "const": "https://ns.adobe.com/experience/offer-management/content/image-content"
         },
-        "xdm:image": {
-          "type": "string",
-          "format": "uri",
-          "title": "Image URL",
-          "description": "Image representing the offer"
-        },
-        "xdm:imageName": {
-          "type": "string",
-          "title": "Image Name",
-          "description": "Image name"
-        },
-        "xdm:redirectUrl": {
-          "type": "string",
-          "format": "uri",
-          "title": "Redirect URL",
-          "description": "URL to navigate if the image is clicked"
+        "xdm:data": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "xdm:imageUrl": {
+                "type": "string",
+                "format": "uri",
+                "title": "Image URL",
+                "description": "Image representing the offer"
+              },
+              "xdm:imageName": {
+                "type": "string",
+                "title": "Image Name",
+                "description": "Image name"
+              },
+              "xdm:redirectUrl": {
+                "type": "string",
+                "format": "uri",
+                "title": "Redirect URL",
+                "description": "URL to navigate if the image is clicked"
+              }
+            },
+            "required": ["xdm:imageUrl"]
+          }
         }
-      },
-      "required": ["xdm:image"]
+      }
     }
   },
   "allOf": [
     {
-      "$ref": "#/definitions/text-content"
+      "$ref": "#/definitions/image-content"
     }
   ]
 }

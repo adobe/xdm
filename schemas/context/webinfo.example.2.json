@@ -10,7 +10,10 @@
   "xdm:webInteraction": {
     "xdm:type": "other",
     "xdm:URL": "#stores",
-    "xdm:name": "product store"
+    "xdm:name": "product store",
+    "https://ns.adobe.com/xdm/metrics/web/link-clicks": {
+      "xdm:value": 1.0
+    }
   },
   "xdm:webReferrer": {
     "xdm:URL": "https://www.example.com/products",

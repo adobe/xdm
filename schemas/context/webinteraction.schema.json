@@ -34,6 +34,10 @@
           "type": "string",
           "description":
             "The normative name used for this web link, used for classification purposes"
+        },
+        "https://ns.adobe.com/xdm/metrics/web/link-clicks": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Click of a web-link has occurred."
         }
       }
     }

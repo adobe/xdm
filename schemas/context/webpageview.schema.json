@@ -50,6 +50,10 @@
           "type": "boolean",
           "description":
             "Flag that indicate if the page is the site home page or not.  The definition of home page is determined by the application, but is commonly used to designate a top level landing page or common site entry point.  This flag is used to broadly categorize web interactions."
+        },
+        "https://ns.adobe.com/xdm/metrics/web/page-views": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "View(s) of a webpage has occurred."
         }
       }
     }

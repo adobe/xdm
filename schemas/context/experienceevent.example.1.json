@@ -51,11 +51,6 @@
     "https://ns.adobe.com/xdm/data/metrics/commerce/purchases": {
       "xdm:value": 1.0,
       "xdm:unit": null
-    },
-    "https://ns.adobe.com/xdm/data/metrics/web/page-views": {
-      "@type": "https://ns.adobe.com/xdm/data/metrics/web/page-views",
-      "xdm:value": 1.0,
-      "xdm:unit": null
     }
   },
   "xdm:productListItems": [
@@ -109,7 +104,11 @@
       "xdm:name": "Purchase Confirmation",
       "xdm:URL": "https://www.example.com/orderConf",
       "xdm:errorPage": false,
-      "xdm:homePage": false
+      "xdm:homePage": false,
+      "https://ns.adobe.com/xdm/metrics/web/page-views": {
+        "xdm:value": 1.0,
+        "xdm:unit": null
+      }
     },
     "xdm:webReferrer": {
       "xdm:URL": "https://www.example.com/checkout",

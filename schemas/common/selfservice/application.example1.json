@@ -1,0 +1,33 @@
+{
+  "xdm:id": 4,
+  "xdm:name": "ACME Corp Main",
+  "xdm:description": "this is the description",
+  "xdm:owner": {
+    "xdm:identityProvider": "ims",
+    "id": "126236B3597F99260A494228@AdobeOrg",
+    "type": "https://ns.adobe.com/adobecloudplatform/ims/organization"
+  },
+  "_links": {
+    "self": {
+      "href": "/api/application/4"
+    },
+    "http://ns.adobe.com/adobecloud/rel/currentUser": {
+      "href": "/api/application/4/user/me"
+    },
+    "http://ns.adobe.com/adobecloud/rel/environments": {
+      "href": "/api/application/4/environments"
+    },
+    "http://ns.adobe.com/adobecloud/rel/pipelines": {
+      "href": "/api/application/4/pipelines"
+    },
+    "http://ns.adobe.com/adobecloud/rel/repositories": {
+      "href": "/api/application/4/repositories"
+    },
+    "http://ns.adobe.com/adobecloud/rel/solutions": {
+      "href": "/api/application/4/solutions"
+    },
+    "http://ns.adobe.com/adobecloud/rel/thumbnail": {
+      "href": "/api/application/4/thumbnail"
+    }
+  }
+}

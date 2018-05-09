@@ -1,0 +1,155 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/selfservice/pipeline",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Pipelines",
+  "description": "A CI/CD Pipeline. References repositories and environments.",
+  "type": "object",
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/external/hal/resource#/definitions/hal"
+  ],
+  "meta:status": "experimental",
+  "definitions": {
+    "pipeline": {
+      "xdm:id": {
+        "type": "string",
+        "description": "Identifier of the pipeline"
+      },
+      "xdm:name": {
+        "type": "string",
+        "example": "AcmeCorp Main Pipeline",
+        "description": "Name of the pipeline"
+      },
+      "xdm:description": {
+        "type": "string",
+        "description": "Description of the pipeline",
+        "example": "This is our primary pipeline ending in a Prod environment."
+      },
+      "xdm:createdAt": {
+        "readOnly": true,
+        "type": "string",
+        "description": "Create date",
+        "format": "date-time"
+      },
+      "xdm:createdBy": {
+        "$ref": "https://ns.adobe.com/xdm/extension/ims/user"
+      },
+      "xdm:updatedAt": {
+        "readOnly": true,
+        "type": "string",
+        "description": "Update date",
+        "format": "date-time"
+      },
+      "xdm:updatedBy": {
+        "$ref": "https://ns.adobe.com/xdm/extension/ims/user"
+      },
+      "xdm:status": {
+        "type": "string",
+        "enum": [
+          "IDLE",
+          "BUSY",
+          "WAITING"
+        ],
+        "meta:enum": {
+          "IDLE": "The pipeline is not performing any operations",
+          "BUSY": "The pipeline is performing some operations. It cannot be changed or started again",
+          "WAITING": "The pipeline was started but is now waiting for user input"
+        },
+        "description": "Pipeline status"
+      },
+      "xdm:trigger": {
+        "enum": [
+          "ON_PR",
+          "MANUAL",
+          "SCHEDULE"
+        ],
+        "meta:enum": {
+          "ON_PR": "On Pull Request",
+          "MANUAL": "Manual",
+          "SCHEDULE": "On Schedule"
+        },
+        "type": "string",
+        "example": "MANUAL",
+        "description": "How should the pipeline be triggered."
+      },
+      "xdm:triggerSchedule": {
+        "type": "string",
+        "example": "When buildTrigger is set to SCHEDULE then this property indicates the actual schedule expressedas a Cron expression",
+        "description": "If builds are triggered on "
+      },
+      "xdm:lastStartedAt": {
+        "readOnly": true,
+        "type": "string",
+        "description": "Last pipeline execution start",
+        "format": "date-time"
+      },
+      "xdm:lastStartedBy": {
+        "$ref": "https://ns.adobe.com/xdm/extension/ims/user"
+      },
+      "xdm:lastFinishedAt": {
+        "readOnly": true,
+        "type": "string",
+        "description": "Last pipeline execution end",
+        "format": "date-time"
+      },
+      "xdm:phases": {
+        "type": "array",
+        "description": "Pipeline phases in execution order",
+        "items": {
+          "type": "object",
+          "description": "Describes a phase of a pipeline",
+          "required": [
+            "type"
+          ],
+          "properties": {
+            "xdm:name": {
+              "type": "string",
+              "example": "DEV Build",
+              "description": "Name of the phase"
+            },
+            "xdm:type": {
+              "enum": [
+                "BUILD",
+                "DEPLOY"
+              ],
+              "meta:enum": {
+                "BUILD": "This phase performs build time processes on a repository. In this case the repositoryId property is mandatory.",
+                "DEPLOY": "This phase performs deploy time processes on a environment. In this case the environmentId property is mandatory."
+              },
+              "type": "string",
+              "example": "DEPLOY",
+              "description": "Type of the phase"
+            },
+            "xdm:environmentId": {
+              "type": "integer",
+              "description": "Identifier of the target environment. Mandatory if type=DEPLOY",
+              "format": "int64"
+            },
+            "xdm:repositoryId": {
+              "type": "integer",
+              "description": "Identifier of the source repository. The code from this repository will be build at the start of this phase. \nMandatory if type=BUILD",
+              "format": "int64"
+            },
+            "xdm:repositoryBranch": {
+              "type": "string",
+              "description": "Name of the repository branch. \n Assumed to be `master` if missing."
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/pipeline"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/external/hal/resource#/definitions/hal"
+    }
+  ]
+}

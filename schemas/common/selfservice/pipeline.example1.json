@@ -1,0 +1,58 @@
+{
+  "xdm:id": 1,
+  "xdm:name": "main",
+  "xdm:description": "Main development pipeline",
+  "xdm:createdAt": "2018-02-28T18:07:30.588+0000",
+  "xdm:createdBy": {
+    "xdm:identityProvider": "ims",
+    "id": "C0B648DE57D701277F000101@AdobeID",
+    "type": "https://ns.adobe.com/adobecloudplatform/ims/user"
+  },
+  "xdm:updatedAt": "2018-02-28T18:07:30.588+0000",
+  "xdm:updatedBy": {
+    "xdm:identityProvider": "ims",
+    "id": "A0B648DE57D702227F000103@AdobeID",
+    "type": "https://ns.adobe.com/adobecloudplatform/ims/user"
+  },
+  "xdm:status": "IDLE",
+  "xdm:trigger": "MANUAL",
+  "xdm:lastStartedAt": "2018-02-28T17:57:17.353+0000",
+  "xdm:lastStartedBy": {
+    "xdm:identityProvider": "ims",
+    "id": "F0A648DE57D701277F00010F@AdobeID",
+    "type": "https://ns.adobe.com/adobecloudplatform/ims/user"
+  },
+  "xdm:lastFinishedAt": "2018-02-28T18:07:30.577+0000",
+  "xdm:phases": [
+    {
+      "xdm:name": "Build main repository",
+      "xdm:type": "BUILD",
+      "xdm:repositoryId": 1,
+      "xdm:repositoryBranch": "master"
+    },
+    {
+      "xdm:name": "Deploy to dev environment",
+      "xdm:type": "DEPLOY",
+      "xdm:environmentId": 1
+    },
+    {
+      "xdm:name": "Deploy to stage environment",
+      "xdm:type": "DEPLOY",
+      "xdm:environmentId": 2
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "/api/application/1/pipeline/1"
+    },
+    "http://ns.adobe.com/adobecloud/rel/application": {
+      "href": "/api/application/1"
+    },
+    "http://ns.adobe.com/adobecloud/rel/execution": {
+      "href": "/api/application/1/pipeline/1/execution"
+    },
+    "http://ns.adobe.com/adobecloud/rel/executions": {
+      "href": "/api/application/1/pipeline/1/executions"
+    }
+  }
+}

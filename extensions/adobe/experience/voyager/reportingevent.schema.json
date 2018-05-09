@@ -1,90 +1,102 @@
 {
-    "meta:license": [
-        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
-        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
-        "you may not use this file except in compliance with the License. You may obtain a copy",
-        "of the License at https://creativecommons.org/licenses/by/4.0/"
-    ],
-    "$id": "https://ns.adobe.com/xdm/context/journeyevent",
-    "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "User Jouney",
-    "type": "object",
-    "description": "The core Journey event captures the state of the user. A journey can have multiple versions. A single user would be on a single wversion of a journey and their path is decided by the version they are on.",
-    "meta:extends": ["https://ns.adobe.com/xdm/context/experienceevent"],
-    "definitions": {
-        "journeyevent": {
-            "properties": {
-                "xdm:journeyUID": {
-                  "title": "Journey Identifier",
-                  "type": "string",
-                  "description": "The unique identifier for the journey."
-                },
-                "xdm:journeyVerUID": {
-                  "title": "Journey version",
-                  "type": "string",
-                  "description": "The unique identifier denoting the version of journey."
-                },
-                "xdm:actionUID": {
-                  "title": "Action Identifier",
-                  "type": "strng",
-                  "description": "Unique Identifier denoting the action to be performed."
-                },
-                "xdm:actionType": {
-                  "title": "Action Type",
-                  "type": "strng",
-                  "description": "The type of action to be performed."
-                },
-                "xdm:eventId": {
-                  "title": "Event id",
-                  "type": "strng",
-                  "description": "The identifier for event which is reponsible for possible state change in current journey."
-                },
-                "xdm:flowControlType": {
-                  "title": "Flow control",
-                  "type": "strng",
-                  "description": "Flow control in the journey triggered by the event.",
-                  "meta:enum": {
-                    "End": "if the 'end' step has been reached, if this step exists",
-                    "Jump": "if a jump action has been executed",
-                    "Timer": "if a transition has been applied, implying a sheduler notification",
-                    "Condition": "if a conditional step has been processed"
-                  }
-                },
-                "xdm:isError": {
-                  "title": "Error",
-                  "type": "boolean",
-                  "description": "Describes if there was an error in taking action or event."
-                },
-                "xdm:isJourneyVersionFailure": {
-                  "title": "Journey Error",
-                  "type": "string",
-                  "description": "Error in handling the flow control of the journey."
-                },
-                "xdm:isJourneyEntered": {
-                  "title": "Journey Entry",
-                  "type": "boolean",
-                  "description": "Informs if this is the start of a journey."
-                },
-                "xdm:isJourneyExited": {
-                  "title": "Journey Exit",
-                  "type": "boolean",
-                  "description": "Informs if this is the end of a journey."
-                },
-                "xdm:isJumpAction": {
-                  "title": "Jump action",
-                  "type": "boolean",
-                  "description": "Informs if this event results in a jump inside a journey."
-                }
-            }
-        }
-    },
-    "allof": [
-        {
-            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/reportingevent",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "User Journey Reporting Event",
+  "type": "object",
+  "meta:extensible": false,
+  "description": "The journey here refers to the workflow of the user. A journey definition can have multiple versions running at the same time. New users would enter the latest version of the journey, while old users continue the version on which they currently reside. Each journey can contain an entry and an exit step. Journey contains the steps, each step definition including the actions to be executed when entering the step. An action can be an email, SMS, push notifications, etc. An event is a trigger coming from a source over HTTP protocol. Event rules define when we can move to the next step in the journey. A step transition can be triggered by one or more events. This schema is for reporting events, actions and transitions happening inside the journey.",
+  "definitions": {
+    "reportingevent": {
+      "properties": {
+        "@id": {
+          "title": "Journey Identifier",
+          "type": "string",
+          // Todo: Why this is unique and how they are generated
+          "description": "The unique identifier for the journey created by the marketer."
         },
-        {
-            "$ref": "#/definitions/journeyevent"
+        "xdm:journeyVersionUID": {
+          "title": "Journey version identifier",
+          "type": "string",
+          // Todo: Why this is unique and how they are generated
+          "description": "The unique identifier denoting the version of journey user is active on."
+        },
+        "xdm:actionUID": {
+          "title": "Action Identifier",
+          "type": "string",
+          // Todo: Why this is unique and how they are generated
+          "description": "Unique Identifier denoting the associated action."
+        },
+        "xdm:actionType": {
+          "title": "Action Type",
+          "type": "string",
+          "description": "The type of action to be performed.",
+          "meta:enum": {
+            "scheduledNotification": "",
+            "httpCall": "",
+            "actionWithPersonalization": "",
+            "parameterizedAction": "",
+            "sendJourneyNotification": "",
+            "acWriter": "",
+            "acMessageCenter": "",
+            "acsWriter": "",
+            "acsMessageCenter": ""
+          }
+        },
+        "xdm:eventId": {
+          "title": "Event id",
+          "type": "string",
+          "description": "The Identifier for the Event received"
+        },
+        "xdm:flowControlType": {
+          "title": "Flow control",
+          "type": "string",
+          "description": "Flow control in the journey triggered by the event.",
+          "meta:enum": {
+            "End": "if the 'end' step has been reached, if this step exists",
+            "Jump": "if a jump has been taken",
+            "Timer": "if a transition has been applied, implying a scheduler notification",
+            "Condition": "if a conditional step has been processed"
+          }
+        },
+        "xdm:isError": {
+          "title": "Error",
+          "type": "boolean",
+          "description": "Describes if there was an error in taking an action or processing an event."
+        },
+        "xdm:isJourneyVersionFailure": {
+          "title": "Journey Error",
+          "type": "string",
+          // Possible values of the string or how the string is inflated
+          "description": "Error in handling the flow control of the journey."
+        },
+        "xdm:isJourneyEntered": {
+          "title": "Journey Entered",
+          "type": "boolean",
+          "description": "True, if journey is entered."
+        },
+        "xdm:isJourneyExited": {
+          "title": "Journey Exit",
+          "type": "boolean",
+          "description": "True, if journey is exited."
+        },
+        "xdm:isJumpAction": {
+          "title": "Jump action",
+          "type": "boolean",
+          "description": "True, if jump has happened."
         }
-    ],
-    "meta:status": "stabilizing"
+      }
+    }
+  },
+  "allof": [
+    {
+      "$ref": "#/definitions/reportingevent"
+    }
+  ],
+  "meta:status": "stabilizing"
 }

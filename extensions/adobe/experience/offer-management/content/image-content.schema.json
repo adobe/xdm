@@ -45,7 +45,8 @@
                 "description": "URL to navigate if the image is clicked"
               }
             },
-            "required": ["xdm:imageUrl"]
+            "required": ["xdm:imageUrl"],
+            "additionalProperties": false
           }
         }
       }

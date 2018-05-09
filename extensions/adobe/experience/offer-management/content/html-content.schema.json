@@ -30,11 +30,12 @@
                 "title": "HTML",
                 "description": "Offer content as an HTML fragment"
               }
-            }
-          },
-          "required": [
-            "xdm:html"
-          ]
+            },
+            "required": [
+              "xdm:html"
+            ],
+            "additionalProperties": false
+          }
         }
       }
     }

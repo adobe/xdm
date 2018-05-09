@@ -30,11 +30,12 @@
                 "title": "Text",
                 "description": "Offer content as a plain text"
               }
-            }
-          },
-          "required": [
-            "xdm:text"
-          ]
+            },
+            "required": [
+              "xdm:text"
+            ],
+            "additionalProperties": false
+          }
         }
       }
     }

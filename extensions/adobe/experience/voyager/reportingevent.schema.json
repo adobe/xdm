@@ -14,7 +14,7 @@
   "definitions": {
     "reportingevent": {
       "properties": {
-        "@id": {
+        "journeyUID": {
           "title": "Journey Identifier",
           "type": "string",
           // Todo: Why this is unique and how they are generated
@@ -26,6 +26,36 @@
           // Todo: Why this is unique and how they are generated
           "description": "The unique identifier denoting the version of journey user is active on."
         },
+       "xdm:timestamp": {
+          "title": "Timestamp",
+          "type": "string",
+          "format": "date-time",
+          "description":
+            "The time when the event of interaction occurred."
+        },
+
+        "xdm:dataProviderType": {
+          "title": "Type for the data providor",
+          "type": "string",
+          "description": "The type of the providor for Enrichment",
+          "meta:enum": {
+              "acs":"The data providor for the event is ACS"
+              "adobe.io":"The data providor for the event is Adobe IO"
+              "acpps":"The data providor is ACP Profile Service"
+              "selfEntity":"The data providor is self contained"
+          }
+        },
+        "xdm:dataEntityUID": {
+          "title": "Unique identifier of data entity",
+          "type": "string",
+          "description": "The Identifier for the data entity for Enrichment"
+        },
+        "xdm:orgID": {
+          "title": "Org-Id of the marketer",
+          "type": "string",
+          // Todo: Why this is unique and how they are generated
+          "description": "Adobe IMS Organization Identifier for the marketer"
+        },
         "xdm:actionUID": {
           "title": "Action Identifier",
           "type": "string",
@@ -36,6 +66,7 @@
           "title": "Action Type",
           "type": "string",
           "description": "The type of action to be performed.",
+          // Todo: Fill the precise descriptions
           "meta:enum": {
             "scheduledNotification": "",
             "httpCall": "",
@@ -51,7 +82,7 @@
         "xdm:eventId": {
           "title": "Event id",
           "type": "string",
-          "description": "The Identifier for the Event received"
+          "description": "The Identifier for the event received"
         },
         "xdm:flowControlType": {
           "title": "Flow control",
@@ -67,13 +98,13 @@
         "xdm:isError": {
           "title": "Error",
           "type": "boolean",
-          "description": "Describes if there was an error in taking an action or processing an event."
+          "description": "True, if there was an error in taking an action or processing an event."
         },
         "xdm:isJourneyVersionFailure": {
           "title": "Journey Error",
           "type": "string",
           // Possible values of the string or how the string is inflated
-          "description": "Error in handling the flow control of the journey."
+          "description": "True, If there was an error handling the flow control of the journey."
         },
         "xdm:isJourneyEntered": {
           "title": "Journey Entered",
@@ -91,7 +122,8 @@
           "description": "True, if jump has happened."
         }
       }
-    }
+    },
+    "required": ["xdm:JourneyUID", "xdm:journeyVerUID", "xdm:timestamp", "xdm:orgId"]
   },
   "allof": [
     {

@@ -23,7 +23,7 @@
     }
   },
   "https://ns.adobe.com/experience/campaign/message": {
-    "@id": 10000,
+    "xdm:id": 10000,
     "xdm:profile": {
       "xdm:person": {
         "xdm:birthMonth": 1,
@@ -55,14 +55,14 @@
     "xdm:externalID": "uuid:00112233-4455-6677-8899-AABBCCDDEEFF"
   },
   "https://ns.adobe.com/experience/campaign/delivery": {
-    "@id": 1001,
+    "xdm:id": 1001,
     "xdm:from": "no-reply@adobe.com",
     "xdm:testEnabled": true,
     "xdm:messageClass": "continuous",
     "xdm:templateID": 1000
   },
   "https://ns.adobe.com/experience/campaign/marketingCampaign": {
-    "@id": 100
+    "xdm:id": 100
   },
   "https://ns.adobe.com/experience/campaign/orchestration": {
     "xdm:businessReason": "onJourneyEnter"

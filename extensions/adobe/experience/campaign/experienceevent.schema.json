@@ -19,7 +19,7 @@
           "title": "A single message sent to a recipient.",
           "type": "object",
           "properties": {
-            "@id": {
+            "id": {
               "title": "Message Identifier",
               "type": "number",
               "description": "Identifier of the message."
@@ -157,7 +157,7 @@
           "title": "The campaign activity originating a message to a recipient.",
           "type": "object",
           "properties": {
-            "@id": {
+            "id": {
               "title": "Delivery ID",
               "type": "integer",
               "description": "The campaign activity originating this message."
@@ -198,7 +198,7 @@
           "title": "The campaign activity originating a message to a recipient.",
           "type": "object",
           "properties": {
-            "@id": {
+            "id": {
               "title": "Campaign ID",
               "type": "integer",
               "description": "Identifier of the marketing campaign to which activity originating this message belongs to."
@@ -209,7 +209,7 @@
           "title": "The campaign activity originating a message to a recipient.",
           "type": "object",
           "properties": {
-            "@id": {
+            "": {
               "title": "Tracking URL ID",
               "type": "string",
               "description": "Unique Identifier of the Link"

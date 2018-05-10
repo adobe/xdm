@@ -28,7 +28,7 @@
        "xdm:timestamp": {
           "title": "Timestamp",
           "type": "string",
-          "format": "date-time",
+          "format": "Unix time in millis",
           "description":
             "The time when the event of interaction occurred."
         },

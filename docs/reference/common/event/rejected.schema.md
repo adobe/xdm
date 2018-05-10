@@ -22,8 +22,8 @@ Some examples of the `rejected event` include:
 4.  A purchase order was rejected by a firm owing to non payment of previous dues.
 
 
-| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
+|----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | No | Experimental | No | Forbidden | Permitted | [common/event/rejected.schema.json](common/event/rejected.schema.json) |
 ## Schema Hierarchy
 

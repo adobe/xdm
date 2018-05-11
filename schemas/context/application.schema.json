@@ -29,7 +29,7 @@
           "type": "string",
           "description": "Version of the application."
         },
-        "https://ns.adobe.com/xdm/metrics/applicationCloses": {
+        "https://ns.adobe.com/xdm/metrics/application-closes": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Graceful termination(s) of an application."
         },
@@ -38,7 +38,7 @@
           "description":
             "Triggered when the application does not exit gracefully. Event is sent on application launch after a crash."
         },
-        "https://ns.adobe.com/xdm/metrics/featureusages": {
+        "https://ns.adobe.com/xdm/metrics/feature-usages": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
             "Activation(s) of an application feature that is being measured."
@@ -48,7 +48,7 @@
           "description":
             "Install of an application on a device where the actual install event is available."
         },
-        "https://ns.adobe.com/xdm/metrics/firstLaunches": {
+        "https://ns.adobe.com/xdm/metrics/first-launches": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
             "Triggered on first launch after install."

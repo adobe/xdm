@@ -19,7 +19,7 @@
         "@id": {
           "type": "string",
           "format": "uri",
-          "const": "https://ns.adobe.com/xdm/checkouts",
+          "const": "https://ns.adobe.com/xdm/metrics/checkouts",
           "description": "The unique identifier of this metric."
         },
         "schema:name": {

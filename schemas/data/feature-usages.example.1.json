@@ -1,6 +1,6 @@
 {
-  "schema:name": "application metric: feature usage",
-  "@id": "https://ns.adobe.com/xdm/metrics/feature-usage",
+  "schema:name": "application metric: feature usages",
+  "@id": "https://ns.adobe.com/xdm/metrics/feature-usages",
   "xdm:measurement": "count",
   "xdm:unit": null
 }

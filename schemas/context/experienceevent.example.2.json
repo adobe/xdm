@@ -76,7 +76,22 @@
         "xdm:locatingType": "gps",
         "xdm:geoInteractionDetails": {
           "xdm:distanceToCenter": 320,
-          "xdm:accuracy": 30
+          "xdm:accuracy": 30,
+          "xdm:geoShape" : {
+            "@id": "https://data.adobe.io/entities/geoShape/shapeid123",
+            "schema:circle": {
+              "@id": "https://data.adobe.io/entities/geo/circleid123",
+              "schema:description": "Tokyo Metro",
+              "schema:coordinates": {
+                "@id": "https://data.adobe.io/entities/geo/111",
+                "schema:description": "Tokyo",
+                "schema:latitude": 37.3308953,
+                "schema:longitude": -121.8939894,
+                "schema:elevation": 31.0896
+              },
+              "schema:radius": 80000
+            }
+          }
         }
       }
 

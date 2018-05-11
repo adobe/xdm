@@ -23,6 +23,11 @@
           "title": "Geo Device Accuracy",
           "type": "number",
           "description": "The accuracy of the geo measuring device or mechanism. Measured in meters."
+        },
+        "xdm:geoShape": {
+          "title": "Geo Shape",
+          "$ref": "http://schema.org/GeoShape",
+          "description": "Geo shape of the geo being interacted with."
         }
       }
     }

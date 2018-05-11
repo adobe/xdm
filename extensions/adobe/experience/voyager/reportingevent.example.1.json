@@ -1,0 +1,17 @@
+{
+  "xdm:journeyUID": "1234-abc4-1232-afeb-4fff",
+  "xdm:journeyVersionUID": "1.1",
+  "xdm:timestamp": "1365745732457",
+  "xdm:dataProviderType": "acs",
+  "xdm:dataEntityUID": "123",
+  "xdm:orgID": "abcabc1234abcd@AdobeOrg",
+  "xdm:actionUID": "123",
+  "xdm:actionType": "parameterizedAction",
+  "xdm:eventId": "123",
+  "xdm:flowControlType": "End",
+  "xdm:isError": false,
+  "xdm:isJourneyVersionFailure": false,
+  "xdm:isJourneyEntered": false,
+  "xdm:isJourneyExited": false,
+  "xdm:isJumpAction": false
+ }

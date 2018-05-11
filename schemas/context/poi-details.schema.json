@@ -11,7 +11,7 @@
   "type": "object",
   "description": "A Point or Place of Interest(POI) Details. Used to capture the techncial and metadata information for a POI.",
   "definitions": {
-    "poi-detail": {
+    "geo-interaction-detail": {
       "properties": {
         "xdm:POIID": {
           "title": "POI Identity",
@@ -38,10 +38,35 @@
           "type": "number",
           "description": "Estimated distance from the POI Center in meters."
         },
-        "xdm:beacon": {
-          "title": "Beacon",
-          "$ref": "https://ns.adobe.com/xdm/common/beacon",
-          "description": "Beacon active for the POI interaction."
+        "xdm:locatingType": {
+          "title": "Locating Type",
+          "type": "string",
+          "description": "Mechanism used to ascertain location.",
+          "enum": [
+            "beacon",
+            "gps",
+            "ip",
+            "ip+wifi",
+            "wifi-triangulation"
+          ],
+          "meta:enum": {
+            "beacon": "Hardware beacon",
+            "gps": "Device GPS",
+            "ip": "IP to geo lookup",
+            "ip+wifi": "IP with Wifi lookup",
+            "wifi-triangulation": "Wifi triangulation"
+          }
+        }
+        },
+        "xdm:beaconInteractionDetails": {
+          "title": "Beacon Interaction Details",
+          "$ref": "https://ns.adobe.com/xdm/context/beacon-interaction-details",
+          "description": "Beacon details active for the POI interaction."
+        },
+        "xdm:geoInteractionDetails": {
+          "title": "Geo Interaction Details",
+          "$ref": "https://ns.adobe.com/xdm/context/geo-interaction-details",
+          "description": "Geo details active for the POI interaction."
         }
       }
     }
@@ -51,7 +76,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "#/definitions/poi-detail"
+      "$ref": "#/definitions/geo-interaction-detail"
     }
   ],
   "meta:status": "experimental"

@@ -12,3 +12,5 @@
 
 * Renames all `Metric` schemas to `Metric Definition` #254
 * Moved `Commerce` metrics used in ExperienceEvent `\metrics` to the `\commerce` context #317
+* Shortened the URI field name for the web events to `https://ns.adobe.com/xdm/metrics/*` by dropping the 'data'. #317
+* `abandons` metric field name change to `cartAbandons` `https://ns.adobe.com/xdm/metrics/cartAbandons. #317

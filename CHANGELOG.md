@@ -11,4 +11,4 @@
 [Unreleased](https://github.com/adobe/xdm/releases/tag/v0.9.1)
 
 * Renames all `Metric` schemas to `Metric Definition` #254
-* Introduced Point of Interest details and metrics. #321
+* Introduced Point of Interest details and metrics. #285

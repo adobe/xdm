@@ -1,6 +1,6 @@
 {
-  "schema:name": "commerce metric: abandons",
-  "@id": "https://ns.adobe.com/xdm/data/metrics/commerce/abandons",
+  "schema:name": "commerce metric: cartAbandons",
+  "@id": "https://ns.adobe.com/xdm/data/metrics/commerce/cartAbandons",
   "xdm:measurement": "count",
   "xdm:unit": null
 }

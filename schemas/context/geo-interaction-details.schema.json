@@ -16,12 +16,12 @@
       "properties": {
         "xdm:distanceToCenter": {
           "title": "Distance to Center",
-          "type": "string",
+          "type": "number",
           "description": "Distance to center of geo in case of a geo circle. Measured in meters."
         },
         "xdm:deviceGeoAccuracy": {
           "title": "Geo Device Accuracy",
-          "type": "string",
+          "type": "number",
           "description": "The accuracy of the geo measuring device or mechanism. Measured in meters."
         }
       }

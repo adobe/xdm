@@ -19,7 +19,7 @@
         "@id": {
           "type": "string",
           "format": "uri",
-          "const": "https://ns.adobe.com/xdm/web/page-views",
+          "const": "https://ns.adobe.com/xdm/metrics/web/page-views",
           "description": "The unique identifier of this metric."
         },
         "schema:name": {

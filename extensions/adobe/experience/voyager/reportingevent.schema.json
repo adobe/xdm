@@ -28,9 +28,8 @@
           "type": "string",
           "format": "Unix time in millis",
           "description":
-            "The time when the event of interaction occurred."
+            "The time when the event was processed in the journey"
         },
-
         "xdm:dataProviderType": {
           "title": "Type for the data provider",
           "type": "string",
@@ -50,7 +49,7 @@
         "xdm:orgID": {
           "title": "Org-Id of the marketer",
           "type": "string",
-          "description": "Adobe IMS Organization Identifier for the marketer"
+          "description": "Adobe IMS Organization Identifier of the marketer"
         },
         "xdm:actionUID": {
           "title": "Action Identifier",
@@ -66,7 +65,7 @@
             "httpCall": "This action type is for a HTTP call on an external system",
             "actionWithPersonalization": "This action type describes an action with personalization that will be resolved at runtime for each voyager instance",
             "parameterizedAction": "This action type decribes an action with parameterization",
-            "sendJourneyNotification": "This action type is to send notification for a another journey",
+            "sendJourneyNotification": "This action type is to send notification for another journey",
             "acsWriter": "The ACS writer action performs REST calls to an Adobe Campaign Standard instance to write data",
             "acsMessageCenter": "The ACS Message Center action performs REST calls to an Adobe Campaign Standard instance to send messages with Message Center"
           }

@@ -14,37 +14,36 @@
     "reportingevent": {
       "properties": {
         "xdm:journeyUID": {
-          "title": "Journey Identifier",
+          "title": "Journey Unique Identifier",
           "type": "string",
-          "description": "The unique identifier for the journey created by the marketer."
+          "description": "The unique identifier of the journey created by the marketer."
         },
         "xdm:journeyVersionUID": {
           "title": "Journey version identifier",
           "type": "string",
-          "description": "The unique identifier denoting the version of journey user is active on."
+          "description": "The unique identifier denoting the version of journey on which the user is active"
         },
        "xdm:timestamp": {
           "title": "Timestamp",
           "type": "string",
           "format": "Unix time in millis",
-          "description":
-            "The time when the event was processed in the journey"
+          "description": "The time when the reporting event was generated"
         },
         "xdm:dataProviderType": {
-          "title": "Type for the data provider",
+          "title": "Type of the data provider",
           "type": "string",
-          "description": "The type of the provider for Enrichment",
+          "description": "The type of the data provider for data Enrichment",
           "meta:enum": {
-              "acs":"The data provider for the event is ACS",
-              "adobe.io":"The data provider for the event is Adobe IO",
+              "acs":"The data provider for the data entity is ACS",
+              "adobe.io":"The data provider for the data entity is Adobe IO",
               "acpps":"The data provider is ACP Profile Service",
-              "selfEntity":"The data provider is self contained"
+              "selfEntity":"The data provider is self contained, entity contains injected data"
           }
         },
         "xdm:dataEntityUID": {
           "title": "Unique identifier of data entity",
           "type": "string",
-          "description": "The Identifier for the data entity for Enrichment"
+          "description": "The Identifier for the data entity used for data enrichment"
         },
         "xdm:orgID": {
           "title": "Org-Id of the marketer",

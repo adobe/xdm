@@ -11,7 +11,7 @@
   "type": "object",
   "meta:extensible": true,
   "description":
-    "XDM product variant, master product and key attributes of product in the product catalog.",
+    "XDM product, product variant and key attributes of product in the product catalog.",
   "definitions": {
     "product": {
       "properties": {
@@ -44,7 +44,7 @@
             "type": "string"
           },
           "description":
-            "List of category ids of the product/variant."
+            "List of category ids of the product."
         },
         "xdm:masterProductID": {
           "title": "Master Product Identifier",
@@ -75,7 +75,7 @@
                   "The amount value for that price."
               },
               "type": {
-                "title": "Price",
+                "title": "Price Type",
                 "type": "string",
                 "examples": ["Sales Price", "MSRP", "Net Price"],
                 "description":
@@ -94,7 +94,7 @@
               "https://ns.adobe.com/xdm/assets/asset#/definitions/asset"
           },
           "description":
-            "List of assets associated with this product/variant."
+            "List of assets associated with this product."
         },
         "xdm:attributes": {
           "title": "Attributes",
@@ -104,7 +104,7 @@
               "https://ns.adobe.com/xdm/content/product-attribute#/definitions/attribute"
           },
           "description":
-            "List of attributes associated with this product/variant."
+            "List of attributes associated with this product."
         },
         "xdm:variants": {
           "title": "Product Variants",
@@ -121,20 +121,20 @@
           "format": "date",
           "type": "string",
           "description":
-            "The date when this product variant was created. The time using RFC3339 with a stated timezone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\"."
+            "The date when this product was created. The time using RFC3339 with a stated timezone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\"."
         },
         "xdm:productLastModified": {
           "title": "Product Last Modified",
           "format": "date",
           "type": "string",
           "description":
-            "The date when this product variant was last modified. The time using RFC3339 with a stated timezone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\"."
+            "The date when this product was last modified. The time using RFC3339 with a stated timezone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\"."
         },
         "xdm:productURL": {
           "title": "Product URL",
           "type": "string",
           "description":
-            "The URL for the primary Product View of the product variant page."
+            "The URL for the primary Product View of the product page."
         }
       }
     }

@@ -9,8 +9,8 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "type": "object",
   "meta:extensible": true,
-  "title": "Org Unit",
-  "description": "The organisation unit of a parent organisation.",
+  "title": "Organizational Unit",
+  "description": "The organizaational unit of a parent organization.",
   "definitions": {
     "orgunit": {
       "properties": {
@@ -19,17 +19,17 @@
           "type": "string",
           "format": "uri",
           "description":
-            "The ID associated with this organisation unit."
+            "The ID associated with this organizational unit."
         },
         "xdm:label": {
-          "title": "Friendly lable of the organisation unit.",
+          "title": "Label of the organizational unit.",
           "type": "string",
-          "description": "The user-friendly name for the organisation unit."
+          "description": "The user-friendly name for the organizational unit."
         },
         "xdm:parentOrgUnit": {
-          "title": "Parent Organisation.",
+          "title": "Parent Organizational Unit.",
           "$ref": "https://ns.adobe.com/xdm/common/orgunit",
-          "description": "The parent organisation unit of the current organisation unit in the org heirarchy."
+          "description": "The parent organizational unit of the current organizational unit in the org hierarchy."
         }
       },
       "required": ["@id"]

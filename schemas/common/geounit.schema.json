@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "type": "object",
   "meta:extensible": true,
-  "title": "Geo Unit",
+  "title": "Geographical Unit",
   "description": "The geographical unit of a parent geographical unit.",
   "definitions": {
     "geounit": {
@@ -22,14 +22,14 @@
             "The ID associated with this geographical unit."
         },
         "xdm:label": {
-          "title": "Friendly lable of the geographical unit.",
+          "title": "Label of the geographical unit.",
           "type": "string",
           "description": "The user-friendly name for the geographical unit."
         },
         "xdm:parentGeoUnit": {
           "title": "Parent Geographical Unit.",
           "$ref": "https://ns.adobe.com/xdm/common/geounit",
-          "description": "Parent geographical unit of the current geographical unit in the geographical heirarchy."
+          "description": "Parent geographical unit of the current geographical unit in the geographical hierarchy."
         }
       },
       "required": ["@id"]

@@ -29,7 +29,7 @@
         "xdm:parentOrgUnit": {
           "title": "Parent Organizational Unit.",
           "$ref": "https://ns.adobe.com/xdm/common/orgunit",
-          "description": "The parent organizational unit of the current organizational unit in the org hierarchy. For e.g. `orgunit` for `Shirts` might have `xdm:parentGeoUnit` as `geounit` `Apparals`."
+          "description": "The parent organizational unit of the current organizational unit in the org hierarchy. For e.g. `orgunit` for `Shirts` might have `xdm:parentOrgUnit` as `orgunit` `Apparals`."
         }
       },
       "required": ["@id"]

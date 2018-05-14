@@ -10,8 +10,8 @@ The Web Interaction schema captures information about interactions that happened
 It is intended for recording interactions in rich web applications that do not trigger a new page load such as single page web apps (SPAs).
 
 
-| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/webinteraction.schema.json](context/webinteraction.schema.json) |
 
 ## Web Interaction Example

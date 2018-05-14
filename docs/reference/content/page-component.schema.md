@@ -10,8 +10,8 @@ It contains content fragments and has a specific type.
 The type determines how the component will be displayed, rendered, and authored.
 
 
-| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [content/page-component.schema.json](content/page-component.schema.json) |
 ## Schema Hierarchy
 
@@ -23,19 +23,19 @@ The type determines how the component will be displayed, rendered, and authored.
 
 ```json
 {
-  "@type": "https://francois.corp.adobe.com:4502/apps/foundation/title",
-  "dc:title": "Protect Your Eyes"
-}
-```
-
-```json
-{
   "@type": "https://francois.corp.adobe.com:4502/apps/foundation/image",
   "image": {
     "@type": "https://ns.adobe.com/xdm/assets/asset",
     "repo:assetID": "urn:aaid:aem:4123ba4c-93a8-4c5d-b979-1234e4318185",
     "@id": "https://francois.corp.adobe.com:4502/content/dam/Glasses-small.jpg"
   }
+}
+```
+
+```json
+{
+  "@type": "https://francois.corp.adobe.com:4502/apps/foundation/title",
+  "dc:title": "Protect Your Eyes"
 }
 ```
 

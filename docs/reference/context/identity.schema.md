@@ -21,7 +21,6 @@ Identity is used to clearly distinguish people that are interacting with digital
 {
   "@id": "https://data.adobe.io/entities/identity/id123",
   "xdm:namespace": {
-    "@id": "https://data.adobe.io/entities/namespace/12345",
     "xdm:code": "AA12345"
   }
 }

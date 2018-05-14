@@ -16,7 +16,7 @@
         "xdm:journeyUID": {
           "title": "Journey Unique Identifier",
           "type": "string",
-          "description": "The unique identifier of the journey created by the marketer."
+          "description": "The unique identifier of the journey associated with this reporting event."
         },
         "xdm:journeyVersionUID": {
           "title": "Journey version identifier",
@@ -88,9 +88,9 @@
         "xdm:count": {
           "title": "occurances/count",
           "type": "integer",
-          "default": 1
+          "default": 1,
           "description": "Count or number of occurances of the event"
-        }
+        },
         "xdm:isError": {
           "title": "Error",
           "type": "boolean",

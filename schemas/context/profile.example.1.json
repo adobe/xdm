@@ -53,5 +53,11 @@
     "https://ns.adobe.com/xdm/channels/direct-mail": "not_provided",
     "https://ns.adobe.com/xdm/channels/apns": "not_provided",
     "xdm:globalOptout": false
+  },
+  "xdm:orgUnit": {
+    "@id" : "https://data.adobe.io/org-apparals-men"
+  },
+  "xdm:geoUnit": {
+    "@id" : "https://data.adobe.io/geo-france"
   }
 }

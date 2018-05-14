@@ -80,17 +80,17 @@
             "$ref": "https://ns.adobe.com/xdm/context/pushnotificationtoken"
           }
         },
-        "xdm:orgUnitID": {
-          "title": "Organizational Unit Identifier",
-          "type": "string",
+        "xdm:orgUnit": {
+          "title": "Organizational Unit",
+          "$ref": "https://ns.adobe.com/xdm/common/orgunit",
           "description":
-            "The unit ID within the organization owning the profile. This ID can be used to reference the organization details maintained in another dataset."
+            "The unit within the organization owning the profile. This can be used to reference the organization details maintained in another dataset."
         },
-        "xdm:geoUnitID": {
-          "title": "Geographical Unit Identifier",
-          "type": "string",
+        "xdm:geoUnit": {
+          "title": "Geographical Unit",
+          "$ref": "https://ns.adobe.com/xdm/common/geounit",
           "description":
-            "The geographical unit ID within the organization owning the profile. This ID can be used to reference the geographical information maintained in another dataset."
+            "The geographical unit within the organization owning the profile. This can be used to reference the geographical information maintained in another dataset."
         },
         "xdm:organizations": {
           "title": "Organizations",

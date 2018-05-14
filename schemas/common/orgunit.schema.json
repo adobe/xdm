@@ -1,0 +1,44 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/common/orgunit",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "type": "object",
+  "meta:extensible": true,
+  "title": "Org Unit",
+  "description": "The organisation unit of a parent organisation.",
+  "definitions": {
+    "orgunit": {
+      "properties": {
+        "@id": {
+          "title": "Identifier",
+          "type": "string",
+          "format": "uri",
+          "description":
+            "The ID associated with this organisation unit."
+        },
+        "xdm:label": {
+          "title": "Friendly lable of the organisation unit.",
+          "type": "string",
+          "description": "The user-friendly name for the organisation unit."
+        },
+        "xdm:parentOrgUnit": {
+          "title": "Parent Organisation.",
+          "$ref": "https://ns.adobe.com/xdm/common/orgunit",
+          "description": "The parent organisation unit of the current organisation unit in the org heirarchy."
+        }
+      },
+      "required": ["@id"]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/orgunit"
+    }
+  ],
+  "meta:status": "experimental"
+}

@@ -11,6 +11,7 @@
 [Unreleased](https://github.com/adobe/xdm/releases/tag/v0.9.1)
 
 * Renames all `Metric` schemas to `Metric Definition` #254
-* Moved `Commerce` metrics used in ExperienceEvent `\metrics` to the `\commerce` context #317
+* Moved `Commerce` metrics used in ExperienceEvent `metrics` to the `commerce` context #317
 * Shortened the URI field name for the web events to `https://ns.adobe.com/xdm/metrics/*` by dropping the 'data'. #317
 * `abandons` metric field name change to `cartAbandons` `https://ns.adobe.com/xdm/metrics/cartAbandons. #317
+* Removed the required constraint from `schemas/external/schema/geo*.schema.json` #315

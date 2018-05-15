@@ -8,8 +8,8 @@ https://ns.adobe.com/xdm/context/webinfo
 Information recorded via an `ExperienceEvent` that is specific to the World Wide Web channel, including the web page, referrer and/or link related to the on-page interaction.
 
 
-| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/webinfo.schema.json](context/webinfo.schema.json) |
 ## Schema Hierarchy
 
@@ -31,9 +31,14 @@ Information recorded via an `ExperienceEvent` that is specific to the World Wide
     "xdm:errorPage": false,
     "xdm:homePage": true
   },
+  "xdm:webInteraction": {
+    "xdm:type": "other",
+    "xdm:URL": "#stores",
+    "xdm:name": "product store"
+  },
   "xdm:webReferrer": {
-    "xdm:URL": "https://www.some-adserver.com",
-    "xdm:referrerType": "external"
+    "xdm:URL": "https://www.example.com/products",
+    "xdm:type": "internal"
   }
 }
 ```
@@ -48,14 +53,9 @@ Information recorded via an `ExperienceEvent` that is specific to the World Wide
     "xdm:errorPage": false,
     "xdm:homePage": true
   },
-  "xdm:webInteraction": {
-    "xdm:type": "other",
-    "xdm:URL": "#stores",
-    "xdm:name": "product store"
-  },
   "xdm:webReferrer": {
-    "xdm:URL": "https://www.example.com/products",
-    "xdm:type": "internal"
+    "xdm:URL": "https://www.some-adserver.com",
+    "xdm:referrerType": "external"
   }
 }
 ```

@@ -12,7 +12,7 @@
   "scripts": {
     "clean": "rm -rf docs/reference",
     "markdown":
-      "shx mkdir -p docs/reference && jsonschema2md -o docs/reference -d schemas",
+      "shx mkdir -p docs/reference && jsonschema2md -o docs/reference -d schemas --link-abstract abstract.md --link-extensible extensions.md --link-status status.md --link-id id.md --link-custom extensions.md --link-additional extensions.md",
     "test": "mocha",
     "lint":
       "prettier --write *.json CHANGELOG.md CONTRIBUTING.md README.md docs/*.md schemas/*/**/*.md schemas/*/**/*.json extensions/*/**/*.json && git diff --exit-code",

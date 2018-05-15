@@ -10,6 +10,7 @@
   "title": "Commerce",
   "type": "object",
   "description": "The entites related to buying and selling activity.",
+  "meta:extensible": true,
   "definitions": {
     "commerce": {
       "properties": {

@@ -23,7 +23,7 @@
         },
         "schema:name": {
           "type": "string",
-          "const": "commerce metric: abandons",
+          "const": "commerce metric: cartAbandons",
           "description":
             "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
         },

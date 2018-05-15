@@ -48,10 +48,6 @@
     "xdm:connectionType": "cable"
   },
   "xdm:metrics": {
-    "xdm:purchases": {
-      "xdm:value": 1.0,
-      "xdm:unit": null
-    },
     "https://ns.adobe.com/xdm/data/metrics/web/page-views": {
       "@type": "https://ns.adobe.com/xdm/data/metrics/web/page-views",
       "xdm:value": 1.0,
@@ -88,6 +84,10 @@
       ],
       "xdm:currencyCode": "USD",
       "xdm:priceTotal": 159.0
+    },
+    "xdm:purchases": {
+      "xdm:value": 1.0,
+      "xdm:unit": null
     }
   },
   "xdm:placeContext": {

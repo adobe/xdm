@@ -46,7 +46,6 @@ for other Profile data such as preference, propensities and other attributes.
     {
       "@id": "https://data.adobe.io/entities/identity/id123",
       "xdm:namespace": {
-        "xdm:id": 12345,
         "xdm:code": "AA111"
       }
     }

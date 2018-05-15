@@ -1,6 +1,6 @@
 {
-  "schema:name": "commerce metric: save-for-laters",
-  "@id": "https://ns.adobe.com/xdm/metrics/save-for-laters",
+  "schema:name": "commerce metric: saveForLaters",
+  "@id": "xdm:saveForLaters",
   "xdm:measurement": "count",
   "xdm:unit": null
 }

@@ -1,6 +1,6 @@
 {
-  "schema:name": "commerce metric: product-list-removals",
-  "@id": "https://ns.adobe.com/xdm/metrics/product-list-removals",
+  "schema:name": "commerce metric: productListRemovals",
+  "@id": "xdm:productListRemovals",
   "xdm:measurement": "count",
   "xdm:unit": null
 }

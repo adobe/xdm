@@ -1,6 +1,6 @@
 {
-  "schema:name": "commerce metric: product-list-opens",
-  "@id": "https://ns.adobe.com/xdm/metrics/product-list-opens",
+  "schema:name": "commerce metric: productListOpens",
+  "@id": "xdm:productListOpens",
   "xdm:measurement": "count",
   "xdm:unit": null
 }

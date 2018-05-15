@@ -19,8 +19,7 @@
     "xdm:currencyCode": "USD",
     "xdm:priceTotal": 999.98
   },
-  "https://ns.adobe.com/xdm/metrics/purchases": {
-    "xdm:value": 1.0,
-    "xdm:unit": null
+  "xdm:purchases": {
+    "xdm:value": 1.0
   }
 }

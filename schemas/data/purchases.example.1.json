@@ -1,6 +1,6 @@
 {
   "schema:name": "commerce metric: purchases",
-  "@id": "https://ns.adobe.com/xdm/metrics/purchases",
+  "@id": "xdm:purchases",
   "xdm:measurement": "count",
   "xdm:unit": null
 }

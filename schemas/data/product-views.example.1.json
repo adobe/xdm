@@ -1,6 +1,6 @@
 {
-  "schema:name": "commerce metric: product-views",
-  "@id": "https://ns.adobe.com/xdm/metrics/product-views",
+  "schema:name": "commerce metric: productViews",
+  "@id": "xdm:productViews",
   "xdm:measurement": "count",
   "xdm:unit": null
 }

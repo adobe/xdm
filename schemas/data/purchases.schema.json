@@ -18,8 +18,7 @@
       "properties": {
         "@id": {
           "type": "string",
-          "format": "uri",
-          "const": "https://ns.adobe.com/xdm/data/metrics/commerce/purchases",
+          "const": "xdm:purchases",
           "description": "The unique identifier of this metric."
         },
         "schema:name": {

@@ -48,7 +48,7 @@
     "xdm:connectionType": "cable"
   },
   "xdm:metrics": {
-    "https://ns.adobe.com/xdm/data/metrics/commerce/purchases": {
+    "xdm:purchases": {
       "xdm:value": 1.0,
       "xdm:unit": null
     },

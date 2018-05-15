@@ -5,27 +5,25 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/data/metrics/commerce/product-list-adds",
+  "$id": "https://ns.adobe.com/xdm/data/metrics/commerce/cartAbandons",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "product-list-adds",
+  "title": "abandons",
   "type": "object",
-  "meta:extensible": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/metricdefinition"],
+  "meta:extensible": true,
   "description":
-    "The commerce metric product-list-adds describes the number of times a product has been added to a product list. The most common case is adding an item to the shopping cart.",
+    "Number of cart abandons for which a product list has been identified as no longer purchasable or accessible by the user without the user re-creating the product list from scratch.",
   "definitions": {
     "metricdefinition": {
       "properties": {
         "@id": {
           "type": "string",
-          "format": "uri",
-          "const":
-            "https://ns.adobe.com/xdm/data/metrics/commerce/product-list-adds",
+          "const": "xdm:cartAbandons",
           "description": "The unique identifier of this metric."
         },
         "schema:name": {
           "type": "string",
-          "const": "commerce metric: product-list-adds",
+          "const": "commerce metric: abandons",
           "description":
             "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
         },

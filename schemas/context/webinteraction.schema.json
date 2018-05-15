@@ -10,6 +10,7 @@
   "title": "Web Interaction",
   "type": "object",
   "description": "",
+  "meta:extensible": true,
   "definitions": {
     "webinteraction": {
       "properties": {

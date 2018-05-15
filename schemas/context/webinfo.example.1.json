@@ -6,7 +6,7 @@
     "xdm:URL": "https://www.example.com/products",
     "xdm:errorPage": false,
     "xdm:homePage": true,
-    "https://ns.adobe.com/xdm/metrics/web/page-views": {
+    "xdm:pageViews": {
       "xdm:value": 1.0
     }
   },

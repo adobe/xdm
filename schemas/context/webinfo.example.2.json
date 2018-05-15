@@ -11,7 +11,7 @@
     "xdm:type": "other",
     "xdm:URL": "#stores",
     "xdm:name": "product store",
-    "https://ns.adobe.com/xdm/metrics/web/link-clicks": {
+    "xdm:linkClicks": {
       "xdm:value": 1.0
     }
   },

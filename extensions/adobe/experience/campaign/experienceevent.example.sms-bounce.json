@@ -5,9 +5,26 @@
       "xdm:value": 1
     }
   },
+  "xdm:channel": "https://ns.adobe.com/xdm/channels/sms",
+  "xdm:endUserIDs": {
+    "https://ns.adobe.com/experience/mcid": {
+      "@id": "https://data.adobe.io/entities/identity/92312748749128",
+      "xdm:namespace": {
+        "@id": "https://data.adobe.io/entities/namespace/4",
+        "xdm:code": "ECID"
+      }
+    },
+    "https://ns.adobe.com/experience/campaign": {
+      "@id": "https://data.adobe.io/entities/identity/1234567",
+      "xdm:namespace": {
+        "@id": "https://data.adobe.io/entities/namespace/2756",
+        "xdm:code": "CPGN"
+      }
+    }
+  },
   "https://ns.adobe.com/experience/campaign/message": {
-    "id": 10000,
-    "profile": {
+    "xdm:id": 10000,
+    "xdm:profile": {
       "xdm:person": {
         "xdm:birthMonth": 1,
         "xdm:birthDay": 3,
@@ -27,22 +44,23 @@
         "xdm:number": "1-408-888-8888"
       }
     },
-    "seedMember": false,
-    "quarantine": true,
-    "proofMember": false,
-    "controlGroupMember": false,
-    "testMember": false,
-    "size": 2,
-    "reason": "unknown_user",
-    "reasonMessage": "554: Unknown Recipient."
+    "xdm:seedMember": false,
+    "xdm:quarantine": true,
+    "xdm:proofMember": false,
+    "xdm:controlGroupMember": false,
+    "xdm:testMember": false,
+    "xdm:size": 2,
+    "xdm:reason": "unknown_user",
+    "xdm:reasonMessage": "554: Unknown Recipient.",
+    "xdm:externalID": "uuid:00112233-4455-6677-8899-AABBCCDDEEFF"
   },
   "https://ns.adobe.com/experience/campaign/delivery": {
-    "id": 1001,
-    "channel": "https://ns.adobe.com/xdm/channels/sms",
-    "from": "CP-ADOBE",
-    "testEnabled": false,
-    "messageClass": "oneTime"
+    "xdm:id": 1001,
+    "xdm:from": "CP-ADOBE",
+    "xdm:testEnabled": false,
+    "xdm:messageClass": "oneTime"
   },
-  "https://ns.adobe.com/experience/campaign/message/external/id": "uuid:00112233-4455-6677-8899-AABBCCDDEEFF",
-  "https://ns.adobe.com/experience/campaign/orchestration/businessReason": "onJourneyEnter"
+  "https://ns.adobe.com/experience/campaign/orchestration": {
+    "xdm:businessReason": "onJourneyEnter"
+  }
 }

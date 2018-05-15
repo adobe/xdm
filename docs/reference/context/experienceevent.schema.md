@@ -40,21 +40,18 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
     "https://ns.adobe.com/experience/mcid": {
       "@id": "https://data.adobe.io/entities/identity/92312748749128",
       "xdm:namespace": {
-        "@id": "https://data.adobe.io/entities/namespace/4",
         "xdm:code": "ECID"
       }
     },
     "https://ns.adobe.com/experience/analytics": {
       "@id": "https://data.adobe.io/entities/identity/2394509340-30453470347",
       "xdm:namespace": {
-        "@id": "https://data.adobe.io/entities/namespace/11112",
         "xdm:code": "AVID"
       }
     },
     "https://ns.adobe.com/experience/tntid": {
       "@id": "https://data.adobe.io/entities/identity/1233ce17-20e0-4a2c-8198-2a77fd60cf4d",
       "xdm:namespace": {
-        "@id": "https://data.adobe.io/entities/namespace/33333",
         "xdm:code": "tnt0051"
       }
     }
@@ -72,6 +69,22 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
       "xdm:javaVersion": "Java SE 8",
       "xdm:viewportHeight": 900,
       "xdm:viewportWidth": 1680
+    },
+    "xdm:adViewability": {
+      "xdm:adUnitDepth": 0,
+      "xdm:viewportHeight": 1250,
+      "xdm:viewportWidth": 1600,
+      "xdm:adHeight": 250,
+      "xdm:adWidth": 300,
+      "xdm:playerVolume": 85,
+      "xdm:measurementEligible": true,
+      "xdm:implementationDetails": {
+        "xdm:name": "https://ns.adobe.com/experience/adcloud/viewability",
+        "xdm:version": "1"
+      },
+      "xdm:viewable": true,
+      "xdm:activeWindow": true,
+      "xdm:percentViewable": 89
     },
     "xdm:operatingSystem": "MAC OS",
     "xdm:operatingSystemVersion": "10.13",

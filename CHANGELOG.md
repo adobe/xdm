@@ -12,3 +12,4 @@
 
 * Renames all `Metric` schemas to `Metric Definition` #254
 * Moved web metrics used in ExperienceEvent `metrics` to the webinteraction and webpageview contexts #316
+* Removed the required constraint from `schemas/external/schema/geo*.schema.json` #315

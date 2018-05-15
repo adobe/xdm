@@ -52,6 +52,7 @@ SDK or endpoint identifier. All SDKs or endpoints are identified through a URI, 
 | `https://ns.adobe.com/experience/analytics/appmeasurement` | Adobe App Measurement |
 | `https://ns.adobe.com/experience/analytics/mbox` | Adobe Target mBox |
 | `https://ns.adobe.com/experience/visitorapi` | Adobe Visitor Service |
+| `https://ns.adobe.com/experience/adcloud/viewability` | Adobe AdCloud Viewability |
 
 
 

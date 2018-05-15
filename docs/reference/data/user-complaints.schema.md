@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/data/metrics/direct-marketing/user-complaints
 
 The direct-marketing metric user-complaints describes the number of user complaints that have been received. This generally occurs when a recipient of a message reported it as spam.
 
-| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [data/user-complaints.schema.json](data/user-complaints.schema.json) |
 
 ## user-complaints Example

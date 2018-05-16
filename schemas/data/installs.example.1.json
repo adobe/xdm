@@ -1,6 +1,6 @@
 {
   "schema:name": "application metric: installs",
-  "@id": "https://ns.adobe.com/xdm/metrics/installs",
+  "@id": "xdm:installs",
   "xdm:measurement": "count",
   "xdm:unit": null
 }

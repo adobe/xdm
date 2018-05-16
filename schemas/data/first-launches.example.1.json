@@ -1,6 +1,6 @@
 {
-  "schema:name": "application metric: first launches",
-  "@id": "https://ns.adobe.com/xdm/metrics/first-launches",
+  "schema:name": "application metric: firstLaunches",
+  "@id": "xdm:firstLaunches",
   "xdm:measurement": "count",
   "xdm:unit": null
 }

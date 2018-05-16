@@ -63,8 +63,7 @@
           "description":
             "The maximum elevation of the shape. Only valid when used in combination with `elevation`. This value conforms to the [WGS84](http://gisgeography.com/wgs84-world-geodetic-system/) datum and is measured in meters. This value is not part of the schema.org spec. In combination with `elevation`, this property can be used to express a three-dimensional bounding box for a location."
         }
-      },
-      "required": ["@id"]
+      }
     }
   },
   "allOf": [

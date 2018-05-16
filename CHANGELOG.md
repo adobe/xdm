@@ -12,3 +12,4 @@
 
 * Renames all `Metric` schemas to `Metric Definition` #254
 * Introduced Point of Interest details and metrics. #285
+* Removed the required constraint from `schemas/external/schema/geo*.schema.json` #315

@@ -6,12 +6,12 @@
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "https://ns.adobe.com/experience/adcloud/segmentdetails",
+  "$id": "https://ns.adobe.com/experience/adcloud/segment",
   "title": "Segment Detail",
   "type": "object",
   "description": "Adobe AdCloud Segmentation Traits",
   "definitions": {
-    "segmentDetails": {
+    "segment": {
       "properties": {
         "xdm:attributablePartnerId": {
           "title": "Attributable Partner ID",
@@ -34,7 +34,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/segmentDetails"
+      "$ref": "#/definitions/segment"
     }
   ]
 }

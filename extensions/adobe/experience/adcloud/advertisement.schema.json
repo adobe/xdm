@@ -6,12 +6,12 @@
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "https://ns.adobe.com/experience/adcloud/advertisementdetails",
+  "$id": "https://ns.adobe.com/experience/adcloud/advertisement",
   "title": "Advertisement Details",
   "type": "object",
   "description": "Adobe AdCloud Ad Details",
   "definitions": {
-    "advertisementdetails": {
+    "advertisement": {
       "properties": {
         "https://ns.adobe.com/experience/adcloud/adId": {
           "title": "Ad ID",
@@ -47,7 +47,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/advertisementdetails"
+      "$ref": "#/definitions/advertisement"
     }
   ]
 }

@@ -6,12 +6,12 @@
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "https://ns.adobe.com/experience/adcloud/campaigndetails",
+  "$id": "https://ns.adobe.com/experience/adcloud/campaign",
   "title": "Ad Campaign Detail",
   "type": "object",
   "description": "Adobe AdCloud Ad Campaign Hierarchy Details",
   "definitions": {
-    "campaigndetails": {
+    "campaign": {
       "properties": {
         "https://ns.adobe.com/experience/adcloud/accountId": {
           "title": "Account ID",
@@ -61,7 +61,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/campaigndetails"
+      "$ref": "#/definitions/campaign"
     }
   ]
 }

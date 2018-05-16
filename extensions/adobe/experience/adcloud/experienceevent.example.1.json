@@ -15,7 +15,7 @@
       }
     }
   },
-  "https://ns.adobe.com/experience/adcloud/marketing/campaignDetails": {
+  "https://ns.adobe.com/experience/adcloud/marketing/campaign": {
     "accountId": 455749,
     "campaignId": 660093,
     "placementId": 1719777,
@@ -25,20 +25,20 @@
     "sampleGroupId": 8676378,
     "currency": "USD"
   },
-  "https://ns.adobe.com/experience/adcloud/marketing/inventoryDetails": {
+  "https://ns.adobe.com/experience/adcloud/marketing/inventory": {
     "sessionId": "8ba48d0a-dd4a-41fb-a258-80c824186f11.1",
     "feedId": 72351,
     "sspPartnerCode": "rubicon",
     "siteId": 596607,
     "costCurrency": "USD",
     "inventorySourceId": 3471,
-    "segmentDetails": {
+    "segment": {
       "attributablePartnerId": 13,
       "attributableSegmentId": 123445,
       "segments": "AbbKlvGfgVH7WK2TH6jd,5lmd4aQCvvrv1yIhjlLQ,9uGk1eYROeHVWiGAOR4p"
     }
   },
-  "https://ns.adobe.com/experience/adcloud/media/advertisementDetails": {
+  "https://ns.adobe.com/experience/adcloud/media/advertisement": {
     "adId": 4116904851,
     "runtime": "HTML5",
     "class": "interactive_preroll",

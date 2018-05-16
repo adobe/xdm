@@ -19,23 +19,23 @@
           "type": "string",
           "description": "Adobe AdCloud event type."
         },
-        "https://ns.adobe.com/experience/adcloud/marketing/campaignDetails": {
+        "https://ns.adobe.com/experience/adcloud/marketing/campaign": {
           "title": "Ad Campaign Details",
-          "$ref": "https://ns.adobe.com/experience/adcloud/campaigndetails",
+          "$ref": "https://ns.adobe.com/experience/adcloud/campaign",
           "description":
           "Adobe AdCloud ad campaign hierarchy details."
         },
-        "https://ns.adobe.com/experience/adcloud/marketing/inventoryDetails": {
+        "https://ns.adobe.com/experience/adcloud/marketing/inventory": {
           "title": "Ad Inventory Details",
-          "$ref": "https://ns.adobe.com/experience/adcloud/inventorydetails",
+          "$ref": "https://ns.adobe.com/experience/adcloud/inventory",
           "description":
           "Adobe AdCloud inventory details."
         },
-        "https://ns.adobe.com/experience/adcloud/media/advertisementDetails": {
+        "https://ns.adobe.com/experience/adcloud/media/advertisement": {
           "title": "Ad Asset Details",
-          "$ref": "https://ns.adobe.com/experience/adcloud/advertisementdetails",
+          "$ref": "https://ns.adobe.com/experience/adcloud/advertisement",
           "description":
-          "Digital Advertisement Asset Details"
+          "Digital advertisement details"
         }
       }
     }

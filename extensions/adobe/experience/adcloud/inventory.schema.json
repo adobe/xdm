@@ -46,9 +46,9 @@
           "type": "integer",
           "description": "The id of the AdCloud inventory source this opportunity was delivered on."
         },
-        "xdm:segmentDetails": {
+        "xdm:segment": {
           "title": "Segmentation Details",
-          "$ref": "https://ns.adobe.com/experience/adcloud/segmentdetails",
+          "$ref": "https://ns.adobe.com/experience/adcloud/segment",
           "description": "Details associatied with user segmentation rules."
         }
       }

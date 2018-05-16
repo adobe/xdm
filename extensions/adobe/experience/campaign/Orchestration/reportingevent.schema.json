@@ -1,0 +1,136 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/campaign/orchestration/reportingevent",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "User Journey Reporting Event",
+  "type": "object",
+  "meta:extends": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "",
+  "definitions": {
+    "reportingevent": {
+      "properties": {
+
+       "xdm:timestamp": {
+          "title": "Timestamp",
+          "type": "string",
+          "description": "Unix time in millis"
+        },
+        "xdm:dataProviderType": {
+          "title": "Type of the data provider",
+          "type": "string",
+          "description": "The type of the data provider for data Enrichment",
+          "meta:enum": {
+              "acs":"The data provider for the data entity is ACS",
+              "adobe.io":"The data provider for the data entity is Adobe IO",
+              "acpps":"The data provider is ACP Profile Service",
+              "selfEntity":"The data provider is self contained, entity contains injected data"
+          }
+        },
+        "xdm:dataEntityUID": {
+          "title": "Unique identifier of data entity",
+          "type": "string",
+          "description": "The Identifier for the data entity used for data enrichment"
+        },
+        "xdm:orgID": {
+          "title": "Organizational unit Identifier",
+          "type": "string",
+          "description": "Identifier of the Organizational unit for this Journey version"
+        },
+        "xdm:actionUID": {
+          "title": "Action Identifier",
+          "type": "string",
+          "description": "Unique Identifier denoting the associated action."
+        },
+        "xdm:actionType": {
+          "title": "Action Type",
+          "type": "string",
+          "description": "The type of action to be performed.",
+          "meta:enum": {
+            "scheduledNotification": "This action type allows to specify scheduled notifications and wait for the notifications as incoming events for steps",
+            "httpCall": "This action type is for a HTTP call on an external system",
+            "actionWithPersonalization": "This action type describes an action with personalization that will be resolved at runtime for each voyager instance",
+            "parameterizedAction": "This action type decribes an action with parameterization",
+            "sendJourneyNotification": "This action type is to send notification for another journey",
+            "acsWriter": "The ACS writer action performs REST calls to an Adobe Campaign Standard instance to write data",
+            "acsMessageCenter": "The ACS Message Center action performs REST calls to an Adobe Campaign Standard instance to send messages with Message Center"
+          }
+        },
+        "xdm:eventId": {
+          "title": "Event id",
+          "type": "string",
+          "description": "The Identifier for the external Event received"
+        },
+        "xdm:flowControlType": {
+          "title": "Flow control",
+          "type": "string",
+          "description": "Flow control in the journey triggered by the event.",
+          "meta:enum": {
+            "End": "if the 'end' step has been reached, if this step exists",
+            "Jump": "if a jump has been taken",
+            "Timer": "if a transition has been applied, implying a scheduler notification",
+            "Condition": "if a conditional step has been processed"
+          }
+        },
+        "xdm:count": {
+          "title": "occurences/count",
+          "type": "integer",
+          "default": 1,
+          "description": "Count or number of occurences of the event"
+        },
+        "xdm:isError": {
+          "title": "Error",
+          "type": "boolean",
+          "description": "True, if there was an error in taking an action or processing an event."
+        },
+        "xdm:isJourneyVersionFailure": {
+          "title": "Journey Error",
+          "type": "string",
+          "description": "True, If there was an error handling the flow control of the journey."
+        },
+        "xdm:isJourneyEntered": {
+          "title": "Journey Entered",
+          "type": "boolean",
+          "description": "True, if journey is entered."
+        },
+        "xdm:isJourneyExited": {
+          "title": "Journey Exit",
+          "type": "boolean",
+          "description": "True, if journey is exited."
+        },
+        "xdm:isJumpAction": {
+          "title": "Jump action",
+          "type": "boolean",
+          "description": "True, if jump has happened."
+        },
+        "https://ns.adobe.com/experience/campaign/orchestration/journey": {
+          "title": "Journey or WorkFlow of an User",
+          "type": "object",
+          "description": "Schema for describing the Journey of an User ",
+          "properties": {
+            "xdm:journeyUID": {
+            "title": "Journey Unique Identifier",
+            "type": "string",
+            "description": "The unique identifier of the journey created by the marketer."
+            },
+            "xdm:journeyVersionUID": {
+            "title": "Journey version identifier",
+            "type": "string",
+            "description": "The unique identifier denoting the version of journey on which the user is active"
+            }
+          }
+      },
+      "required": ["https://ns.adobe.com/experience/campaign/orchestration/journey/journeyUID", "https://ns.adobe.com/experience/campaign/orchestration/journey/journeyVerUID", "xdm:timestamp", "xdm:orgId"]
+    }
+  },
+  "allof": [
+    {
+      "$ref": "#/definitions/reportingevent"
+    }
+  ],
+  "meta:status": "experimental"
+}

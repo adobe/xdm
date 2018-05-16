@@ -1,0 +1,90 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "User Journey Reporting Event metrics",
+  "type": "object",
+  "description": "",
+  "definitions": {
+    "reportingeventmetrics": {
+      "properties": {
+	 "    xdm:EnteredJourneyInstance": {
+          "title":"Entered Journey",
+          "type":"boolean",
+          "description":"set to 1 when a journey instance is created"
+        },
+        "xdm:ExitedJourneyInstance": {
+          "title":"Exited journey",
+          "type":"boolean",
+          "description": "set to 1 when a journey instance is flagged as ended"
+        },
+        "xdm:ErrorInJourneyInstance": {
+          "title":"Error in Journey Instance",
+          "type":"boolean",
+          "description": "set to 1 when an error is raised in a journey instance"
+        },
+        "xdm:ErrorInEventProcessing": {
+          "title":"Eroor in step processing",
+          "type":"boolean",
+          "description": "set to 1 when an error occurs during an event processing meaning, during a step processing"
+        },
+        "xdm:ErrorInActionExecution": {
+          "title":"Error in action execution",
+          "type":"boolean",
+          "description": "set to 1 when an error occurs during an action execution"
+        },
+        "xdm:ErrorInJumpActionExecution": {
+          "title":"Error in jump action",
+          "type":"boolean",
+          "description": "set to 1 when an error occurs during the jump action execution"
+        },
+        "xdm:ErrorInEnrichment": {
+          "title":"Error in enrichment",
+          "type":"boolean",
+          "description": "set to 1 when an error occurs during enrichment"
+        },
+        "xdm:ExecutedEvent": {
+          "title":"Event processed",
+          "type":"boolean",
+          "description": "set to 1 when an event as triggered a transition in a journey instance"
+        },
+        "xdm:ExecutedAction": {
+          "title":"Action executed",
+          "type":"boolean",
+          "description": "set to 1 when an action is executed successfully in a journey instance"
+        },
+        "xdm:ExecutedFlowControl": {
+          "title":"Flow control executed",
+          "type":"boolean",
+          "description": "set to 1 when an action is executed successfully in a journey instance"
+        },
+        "xdm:ExecutedJumpAction": {
+          "title":"Executed jump action",
+          "type":"boolean",
+          "description": "set to 1 when an jump action is executed successfully in a journey instance"
+        },
+        "xdm:ExecutedEnrichment": {
+          "title":"Enrichment made successfully ",
+          "type":"boolean",
+          "description": "set to 1 when an enrichment is executed successfully in a journey instance"
+        },
+        "xdm:JumpToJourney": {
+          "title":"Jump action executed successfully",
+          "type":"boolean",
+          "description":"set to 1 when a jump action is executed successfully in a journey instance",
+        }
+      }
+    }
+  },
+  "allof": [
+      {
+          "$ref": "#/definitions/reportingeventmetrics"
+      }
+  ],
+    "meta:status": "experimental"
+}

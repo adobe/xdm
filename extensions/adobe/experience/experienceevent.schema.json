@@ -15,7 +15,8 @@
     "https://ns.adobe.com/experience/target/experienceevent",
     "https://ns.adobe.com/experience/campaign/experienceevent"
   ],
-  "description": "This ExperienceEvent XDM includes the core/standard ExperienceEvent as well as the Adobe solution ExperienceEvents.",
+  "description":
+    "This ExperienceEvent XDM includes the core/standard ExperienceEvent as well as the Adobe solution ExperienceEvents.",
   "definitions": {
     "experienceevent": {
       "properties": {
@@ -25,7 +26,8 @@
       }
     }
   },
-  "allOf": [{
+  "allOf": [
+    {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {

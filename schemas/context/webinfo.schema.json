@@ -15,10 +15,10 @@
     "webinfo": {
       "properties": {
         "xdm:webPageView": {
-          "title": "Web Page View",
-          "$ref": "https://ns.adobe.com/xdm/context/webpageview",
+          "title": "Web Page Context",
+          "$ref": "https://ns.adobe.com/xdm/context/webpagecontext",
           "description":
-            "Details about the web page where the web interaction occurred."
+            "Contextual details about the web page where the web interaction occurred."
         },
         "xdm:webInteraction": {
           "title": "Web Interaction",

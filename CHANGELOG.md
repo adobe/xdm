@@ -14,3 +14,4 @@
 * Added application and mobile context via `\context\application.schema.json` #318
 * Fixed issue where `\context\experienceevent` `xdm:application` referred to the 'application.schema.json' in `\channels` #318
 * `xdm:application` in `\context\experienceevent` `@id` renamed to `xdm:id` #318
+* Removed the required constraint from `schemas/external/schema/geo*.schema.json` #315

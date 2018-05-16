@@ -10,6 +10,7 @@
     "title": "Web Interaction",
     "type": "object",
     "description": "The Web Interaction schema captures information about interactions that happened on a web page after the intial page load (see also Web Page View) was completed.\n\nIt is intended for recording interactions in rich web applications that do not trigger a new page load such as single page web apps (SPAs).\n",
+    "meta:extensible": true,
     "definitions": {
         "webinteraction": {
             "properties": {
@@ -37,6 +38,10 @@
                     "title": "Name",
                     "type": "string",
                     "description": "The normative name used for this web link, used for classification purposes"
+                },
+                "xdm:linkClicks": {
+                    "$ref": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "Click of a web-link has occurred."
                 }
             }
         }
@@ -51,7 +56,10 @@
         {
             "xdm:type": "other",
             "xdm:URL": "https://www.example.com/products/store/?view=1",
-            "xdm:name": "product store"
+            "xdm:name": "product store",
+            "xdm:linkClicks": {
+                "xdm:value": 1
+            }
         }
     ]
 }

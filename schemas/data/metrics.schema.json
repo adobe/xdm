@@ -62,10 +62,6 @@
           "description":
             "Impression(s) of an advertisement to an end user with the potential of being viewed."
         },
-        "https://ns.adobe.com/xdm/data/metrics/web/link-clicks": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Click of a web-link has occurred."
-        },
         "https://ns.adobe.com/xdm/data/metrics/application/launches": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
@@ -80,10 +76,6 @@
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
             "Asynchronous message(s) failed to deliver in a way that indicates that no future delivery attempts will be successful to the address."
-        },
-        "https://ns.adobe.com/xdm/data/metrics/web/page-views": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "View(s) of a webpage has occurred."
         },
         "https://ns.adobe.com/xdm/data/metrics/commerce/product-list-adds": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",

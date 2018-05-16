@@ -12,3 +12,4 @@
 
 * Renames all `Metric` schemas to `Metric Definition` #254
 * Removed the required constraint from `schemas/external/schema/geo*.schema.json` #315
+* Added `"meta:extends": true` to the schemas that can be extended in `context` #332

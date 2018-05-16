@@ -31,7 +31,19 @@
           "type": "string",
           "description":
             "When present, this value represents a cross-namespace identifier that is unique across all namespace-scoped identifiers in all namespaces."
-        }
+        },
+        "authenticatedState": {
+          "description":
+            "The state this identity is authenticated as for this observed ExperienceEvent.",
+          "type": "string",
+          "default": "unknown",
+          "enum": ["unknown", "loggedin", "loggedOut"],
+          "meta:enum": {
+            "unknown": "Unknown",
+            "loggedin": "User identified by a login action that is valid at the time of the event.",
+            "loggedOut": "User was identified by a login action at some point of time previously, but is not currently logged in."
+          }
+        },
       }
     }
   },

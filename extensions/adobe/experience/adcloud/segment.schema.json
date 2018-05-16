@@ -15,13 +15,13 @@
       "properties": {
         "xdm:attributablePartnerId": {
           "title": "Attributable Partner ID",
-          "type": "integer",
+          "type": "string",
           "description":
           "The segment provider who owns the attributableSegmentId."
         },
         "xdm:attributableSegmentId": {
           "title": "Attributable Segment ID",
-          "type": "integer",
+          "type": "string",
           "description": "The single segment accredit for user targeting among all the segments in the placement's targeting rule for the purposes of tracking costs and paying partners."
         },
         "xdm:segments": {

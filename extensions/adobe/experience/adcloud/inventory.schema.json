@@ -21,7 +21,7 @@
         },
         "xdm:feedId": {
           "title": "Feed ID",
-          "type": "integer",
+          "type": "string",
           "description": "Composite id of the publisher, ad exchange, and other features."
         },
         "xdm:sspPartnerCode": {
@@ -31,7 +31,7 @@
         },
         "xdm:siteId": {
           "title": "Site ID",
-          "type": "integer",
+          "type": "string",
           "description": "Identifier for the web site where ad impression was served."
         },
         "xdm:costCurrency": {
@@ -43,7 +43,7 @@
         },
         "xdm:inventorySourceId": {
           "title": "Inventory Source ID",
-          "type": "integer",
+          "type": "string",
           "description": "The id of the AdCloud inventory source this opportunity was delivered on."
         },
         "xdm:segment": {

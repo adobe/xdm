@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Direct Marketing",
   "type": "object",
-  "description": "The entites related to direct/outbound marketing such as email, direct mail, texts and in-app notifications.",
+  "description": "The events and properties related to direct/outbound marketing such as email, direct mail, texts and in-app notifications.",
   "meta:extensible": true,
   "definitions": {
     "direct-marketing": {

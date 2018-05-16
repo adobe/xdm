@@ -9,6 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Marketing",
   "type": "object",
+  "meta:extensible": true,
   "description":
     "The information related to marketing activities that are active with the touchpoint.",
   "definitions": {

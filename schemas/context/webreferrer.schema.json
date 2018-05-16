@@ -9,6 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Web Referrer",
   "type": "object",
+  "meta:extensible": true,
   "description": "",
   "definitions": {
     "webreferrer": {

@@ -9,6 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "MRC Viewability",
   "type": "object",
+  "meta:extensible": true,
   "description": "Browser or app settings measured at runtime describing the viewability of an advertisement associated with each page load.",
   "definitions": {
     "adviewability": {

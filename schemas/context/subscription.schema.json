@@ -9,6 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Subscription",
   "type": "object",
+  "meta:extensible": true,
   "description":
     "Subscriptions are licensed entitlements to software, services or goods that are utilized in a time or usage based way.",
   "definitions": {

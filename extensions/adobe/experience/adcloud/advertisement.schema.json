@@ -17,7 +17,7 @@
           "title": "Ad ID",
           "type": "string",
           "description":
-          "Unique identifier for the ad asset this event is associated with. Not to be confused with Ad-ID standard."
+          "Unique identifier for the ad this event is associated with. Not to be confused with Ad-ID standard."
         },
         "https://ns.adobe.com/experience/adcloud/runtime": {
           "title": "Runtime Type",
@@ -37,10 +37,10 @@
           "description": "Unique identifier for the literal piece of code driving display of the ad in a browser/device.",
           "examples": "linearVideo, interactiveVideo, banner, richMediaBanner, newsFeedVideo, newsFeedDisplay, HTML5, inPageVideo, inPageDisplay, facebook, twitter, linearTv, vod"
         },
-        "https://ns.adobe.com/experience/adcloud/assetDetails": {
-          "title": "Asset Details",
-          "$ref": "https://ns.adobe.com/xdm/assets/aggregated-asset",
-          "description": "Asset information for the relevant Ad."
+        "https://ns.adobe.com/experience/adcloud/promotedAssetId": {
+          "title": "Promoted Asset ID",
+          "type": "string",
+          "description": "Unique identifier for the underlying asset being promoted in the ad which this event is associated with."
         }
       }
     }

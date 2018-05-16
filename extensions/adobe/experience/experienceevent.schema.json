@@ -17,7 +17,7 @@
   ],
   "description":
     "This ExperienceEvent XDM includes the core/standard ExperienceEvent as well as the Adobe solution ExperienceEvents.",
-  "definitions" : {
+  "definitions": {
     "experienceevent": {
       "properties": {
         "https://ns.adobe.com/experience/implementations": {

@@ -22,7 +22,7 @@
         },
         "schema:name": {
           "type": "string",
-          "const": "advertising metric: messageClicks",
+          "const": "direct-marketing metric: messageClicks",
           "description":
             "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
         },

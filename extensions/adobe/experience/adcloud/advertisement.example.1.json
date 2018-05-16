@@ -1,7 +1,7 @@
 {
-  "https://ns.adobe.com/experience/adcloud/adId": "4116904851",
-  "https://ns.adobe.com/experience/adcloud/runtime": "HTML5",
-  "https://ns.adobe.com/experience/adcloud/class": "video",
-  "https://ns.adobe.com/experience/adcloud/adUnitType": "HTML5",
-  "https://ns.adobe.com/experience/adcloud/promotedAssetId": "4116761052"
+  "xdm:adId": "4116904851",
+  "xdm:runtime": "HTML5",
+  "xdm:adClass": "video",
+  "xdm:adUnitType": "HTML5",
+  "xdm:promotedAssetId": "4116761052"
 }

@@ -1,10 +1,10 @@
 {
-  "https://ns.adobe.com/experience/adcloud/accountId": "123456",
-  "https://ns.adobe.com/experience/adcloud/campaignId": "987654",
-  "https://ns.adobe.com/experience/adcloud/placementId": "7656467",
-  "https://ns.adobe.com/experience/adcloud/packageId": "98766172",
-  "https://ns.adobe.com/experience/adcloud/advertiserId": "87612391",
-  "https://ns.adobe.com/experience/adcloud/experimentId": "9812987",
-  "https://ns.adobe.com/experience/adcloud/sampleGroupId": "8676378",
-  "https://ns.adobe.com/experience/adcloud/currency": "USD"
+  "xdm:accountId": "123456",
+  "xdm:campaignId": "987654",
+  "xdm:placementId": "7656467",
+  "xdm:packageId": "98766172",
+  "xdm:advertiserId": "87612391",
+  "xdm:experimentId": "9812987",
+  "xdm:sampleGroupId": "8676378",
+  "xdm:currency": "USD"
 }

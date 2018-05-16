@@ -13,31 +13,31 @@
   "definitions": {
     "advertisement": {
       "properties": {
-        "https://ns.adobe.com/experience/adcloud/adId": {
+        "xdm:adId": {
           "title": "Ad ID",
           "type": "string",
           "description":
           "Unique identifier for the ad this event is associated with. Not to be confused with Ad-ID standard."
         },
-        "https://ns.adobe.com/experience/adcloud/runtime": {
+        "xdm:runtime": {
           "title": "Runtime Type",
           "type": "string",
           "description": "The runtime of the ad unit itself, not the runtime of the browser or the operating system.",
           "examples": "unknown, HTML5"
         },
-        "https://ns.adobe.com/experience/adcloud/class": {
+        "xdm:adClass": {
           "title": "Ad Class",
           "type": "string",
           "description": "Ad class of driving event.",
           "examples": "display, video, social"
         },
-        "https://ns.adobe.com/experience/adcloud/adUnitType": {
+        "xdm:adUnitType": {
           "title": "Ad Unit Type",
           "type": "string",
           "description": "Unique identifier for the literal piece of code driving display of the ad in a browser/device.",
           "examples": "linearVideo, interactiveVideo, banner, richMediaBanner, newsFeedVideo, newsFeedDisplay, HTML5, inPageVideo, inPageDisplay, facebook, twitter, linearTv, vod"
         },
-        "https://ns.adobe.com/experience/adcloud/promotedAssetId": {
+        "xdm:promotedAssetId": {
           "title": "Promoted Asset ID",
           "type": "string",
           "description": "Unique identifier for the underlying asset being promoted in the ad which this event is associated with."

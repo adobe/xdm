@@ -1,13 +1,13 @@
 {
-  "https://ns.adobe.com/experience/adcloud/sessionId": "8ba48d0a-dd4a-41fb-a258-80c824186f11.1",
-  "https://ns.adobe.com/experience/adcloud/feedId": "1234556",
-  "https://ns.adobe.com/experience/adcloud/sspPartnerCode": "spotx",
-  "https://ns.adobe.com/experience/adcloud/siteId": "987654",
-  "https://ns.adobe.com/experience/adcloud/costCurrency": "USD",
-  "https://ns.adobe.com/experience/adcloud/inventorySourceId": "9",
-  "https://ns.adobe.com/experience/adcloud/segment": {
-    "attributablePartnerId": "13",
-    "attributableSegmentId": "123445",
-    "segments": "AbbKlvGfgVH7WK2TH6jd,5lmd4aQCvvrv1yIhjlLQ,9uGk1eYROeHVWiGAOR4p"
+  "xdm:sessionId": "8ba48d0a-dd4a-41fb-a258-80c824186f11.1",
+  "xdm:feedId": "1234556",
+  "xdm:sspPartnerCode": "spotx",
+  "xdm:iteId": "987654",
+  "xdm:costCurrency": "USD",
+  "xdm:inventorySourceId": "9",
+  "xdm:segment": {
+    "xdm:attributablePartnerId": "13",
+    "xdm:attributableSegmentId": "123445",
+    "xdm:segments": "AbbKlvGfgVH7WK2TH6jd,5lmd4aQCvvrv1yIhjlLQ,9uGk1eYROeHVWiGAOR4p"
   }
 }

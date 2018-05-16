@@ -5,25 +5,24 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages",
+  "$id": "https://ns.adobe.com/xdm/data/metrics/direct-marketing/message-clicks",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Mirror Pages",
+  "title": "Message Clicks",
   "type": "object",
   "meta:extensible": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/metricdefinition"],
-  "description":
-    "The direct-marketing metric mirror-pages describes the number of mirror pages for which a link to the online mirror page of a message has been clicked.",
+  "description": "The message clicks metric represents a click on a link in a message.",
   "definitions": {
     "metricdefinition": {
       "properties": {
         "@id": {
           "type": "string",
-          "const": "xdm:mirrorPages",
+          "const": "xdm:messageClicks",
           "description": "The unique identifier of this metric."
         },
         "schema:name": {
           "type": "string",
-          "const": "direct-marketing metric: mirrorPages",
+          "const": "advertising metric: messageClicks",
           "description":
             "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
         },

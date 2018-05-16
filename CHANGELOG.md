@@ -12,3 +12,4 @@
 
 * Renames all `Metric` schemas to `Metric Definition` #254
 * Removed the required constraint from `schemas/external/schema/geo*.schema.json` #315
+* Corrected naming of EndUserIDs by making them consistent (aaid and acid) `schemas/external/schema/geo*.schema.json` #333

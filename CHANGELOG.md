@@ -12,3 +12,4 @@
 
 * Renames all `Metric` schemas to `Metric Definition` #254
 * Removed the required constraint from `schemas/external/schema/geo*.schema.json` #315
+* Added `xdm:primary` flag to `schemas/context/identity.schema.json` #335

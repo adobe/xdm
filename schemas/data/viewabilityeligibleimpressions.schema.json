@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/data/metrics/advertising/viewability-eligible-impressions",
+  "$id": "https://ns.adobe.com/xdm/data/metrics/advertising/viewabilityeligibleimpressions",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "viewability-eligible-impressions",
   "type": "object",
@@ -19,13 +19,13 @@
       "properties": {
         "@id": {
           "type": "string",
-          "const": "xdm:viewability-eligible-impressions",
+          "const": "xdm:viewabilityEligibleImpressions",
           "description": "The unique identifier of this metric."
         },
         "schema:name": {
           "type": "string",
-          "const": "advertising/viewability metric: viewability-eligible-impressions",
-          "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
+          "const": "advertising/viewability metric: viewabilityEligibleImpressions",
+          "description": "The advertising/viewability metric viewability-eligible-impressions describes the number of impressions that were eligible to measure viewability. An impression is eligible if the ad unit has a supported creative format and tag type."
         },
         "xdm:measurement": {
           "type": "string",

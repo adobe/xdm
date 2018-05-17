@@ -24,7 +24,7 @@
           "type": "string",
           "const": "advertising metric: midpoints",
           "description":
-          "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
+          "The advertising metric midpoints describes when digital video ads played for at least 50% of the total duration."
         },
         "xdm:measurement": {
           "type": "string",

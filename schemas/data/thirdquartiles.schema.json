@@ -5,27 +5,26 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/data/metrics/advertising/measured-window-inactive",
+  "$id": "https://ns.adobe.com/xdm/data/metrics/advertising/thirdquartiles",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "measured-window-inactive",
+  "title": "third-quartiles",
   "type": "object",
   "meta:extensible": true,
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/data/metricdefinition"
-  ],
-  "description": "The advertising/viewability metric measured-window-inactive describes whether the ad was displayed in a window not active by the user at event time.",
+  "meta:extends": ["https://ns.adobe.com/xdm/data/metricdefinition"],
+  "description": "The advertising metric third-quartiles describes digital video ads which played for at least 75% of the total duration.",
   "definitions": {
     "metricdefinition": {
       "properties": {
         "@id": {
           "type": "string",
-          "const": "xdm:measured-window-inactive",
+          "const": "xdm:thirdQuartiles",
           "description": "The unique identifier of this metric."
         },
         "schema:name": {
           "type": "string",
-          "const": "advertising/viewability metric: measured-window-inactive",
-          "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
+          "const": "advertising metric: thirdQuartiles",
+          "description":
+          "The advertising metric third-quartiles describes digital video ads which played for at least 75% of the total duration."
         },
         "xdm:measurement": {
           "type": "string",

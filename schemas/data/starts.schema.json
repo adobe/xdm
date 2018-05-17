@@ -24,7 +24,7 @@
           "type": "string",
           "const": "advertising metric: starts",
           "description":
-          "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
+          "The advertising metric starts describes digital video ads which started playing."
         },
         "xdm:measurement": {
           "type": "string",

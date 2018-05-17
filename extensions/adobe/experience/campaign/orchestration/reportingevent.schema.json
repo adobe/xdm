@@ -15,7 +15,6 @@
     "reportingevent": {
       "properties": {
         "https://ns.adobe.com/experience/campaign/orchestration/reportingevent": {
-
           "xdm:timestamp": {
             "title": "Timestamp",
             "type": "string",
@@ -83,7 +82,6 @@
             "description":
               "The metrics for actions performed during this observation."
           },
-
           "https://ns.adobe.com/experience/campaign/orchestration/journey": {
             "title": "Journey or WorkFlow of an User",
             "type": "object",

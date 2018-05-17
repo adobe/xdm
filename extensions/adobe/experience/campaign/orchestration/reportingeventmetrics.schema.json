@@ -14,7 +14,7 @@
   "definitions": {
     "reportingeventmetrics": {
       "properties": {
-	      "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics/EnteredJourneyInstance": {
+       "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics/EnteredJourneyInstance": {
           "title":"Entered Journey",
           "type":"boolean",
           "description":"set to true when a journey instance is created"

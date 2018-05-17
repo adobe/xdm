@@ -1,6 +1,6 @@
 {
-  "schema:name": "placecontext: poi-entries",
-  "@id": "https://ns.adobe.com/xdm/data/metrics/placecontext/poi-entries",
+  "schema:name": "placecontext: poiEntries",
+  "@id": "poiEntries",
   "xdm:measurement": "count",
   "xdm:unit": null
 }

@@ -32,7 +32,7 @@
       "schema:longitude": 139.73237
     },
     "xdm:POIinteraction": {
-      "https://ns.adobe.com/xdm/data/metrics/placecontext/poi-entries": {
+      "xdm:poiEntries": {
         "xdm:value": 1
       },
       "xdm:POIID": "d8a5c08c-1e79-4051-8a8b-675fb235e03d",

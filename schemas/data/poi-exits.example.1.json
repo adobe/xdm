@@ -1,6 +1,6 @@
 {
   "schema:name": "placecontext: poi-exits",
-  "@id": "https://ns.adobe.com/xdm/data/metrics/placecontext/poi-exits",
+  "@id": "xdm:poi-exits",
   "xdm:measurement": "count",
   "xdm:unit": null
 }

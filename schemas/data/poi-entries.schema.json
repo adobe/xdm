@@ -19,12 +19,12 @@
         "@id": {
           "type": "string",
           "format": "uri",
-          "const": "https://ns.adobe.com/xdm/data/metrics/placecontext/poi-entries",
+          "const": "xdm:poiEntries",
           "description": "The unique identifier of this metric."
         },
         "schema:name": {
           "type": "string",
-          "const": "placecontext: poi-entries",
+          "const": "placecontext: poiEntries",
           "description":
             "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
         },

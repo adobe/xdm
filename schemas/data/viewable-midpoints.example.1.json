@@ -1,6 +1,6 @@
 {
   "schema:name": "advertising/viewability metric: viewable-midpoints",
-  "@id": "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/viewable-midpoints",
+  "@id": "xdm:viewable-midpoints",
   "xdm:measurement": "count",
   "xdm:unit": null
 }

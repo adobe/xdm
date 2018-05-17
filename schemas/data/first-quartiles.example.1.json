@@ -1,6 +1,6 @@
 {
   "schema:name": "advertising metric: first-quartiles",
-  "@id": "https://ns.adobe.com/xdm/data/metrics/advertising/first-quartiles",
+  "@id": "xdm:first-quartiles",
   "xdm:measurement": "count",
   "xdm:unit": null
 }

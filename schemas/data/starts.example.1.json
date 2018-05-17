@@ -1,6 +1,6 @@
 {
   "schema:name": "advertising metric: starts",
-  "@id": "https://ns.adobe.com/xdm/data/metrics/advertising/starts",
+  "@id": "xdm:starts",
   "xdm:measurement": "count",
   "xdm:unit": null
 }

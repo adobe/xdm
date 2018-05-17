@@ -17,8 +17,7 @@
       "properties": {
         "@id": {
           "type": "string",
-          "format": "uri",
-          "const": "https://ns.adobe.com/xdm/data/metrics/advertising/first-quartiles",
+          "const": "xdm:first-quartiles",
           "description": "The unique identifier of this metric."
         },
         "schema:name": {

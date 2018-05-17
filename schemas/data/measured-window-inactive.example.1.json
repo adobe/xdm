@@ -1,6 +1,6 @@
 {
   "schema:name": "advertising/viewability metric: measured-window-inactive",
-  "@id": "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/measured-window-inactive",
+  "@id": "xdm:measured-window-inactive",
   "xdm:measurement": "count",
   "xdm:unit": null
 }

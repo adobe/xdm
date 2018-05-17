@@ -1,6 +1,6 @@
 {
   "schema:name": "advertising/viewability metric: unmeasurable-other",
-  "@id": "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/unmeasurable-other",
+  "@id": "xdm:unmeasurable-other",
   "xdm:measurement": "count",
   "xdm:unit": null
 }

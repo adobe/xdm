@@ -1,6 +1,6 @@
 {
   "schema:name": "advertising/viewability metric: viewable-third-quartiles",
-  "@id": "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/viewable-third-quartiles",
+  "@id": "xdm:viewable-third-quartiles",
   "xdm:measurement": "count",
   "xdm:unit": null
 }

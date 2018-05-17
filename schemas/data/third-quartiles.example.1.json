@@ -1,6 +1,6 @@
 {
   "schema:name": "advertising metric: third-quartiles",
-  "@id": "https://ns.adobe.com/xdm/data/metrics/advertising/third-quartiles",
+  "@id": "xdm:third-quartiles",
   "xdm:measurement": "count",
   "xdm:unit": null
 }

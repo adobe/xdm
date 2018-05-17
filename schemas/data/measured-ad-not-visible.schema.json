@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/measured-ad-not-visible",
+  "$id": "https://ns.adobe.com/xdm/data/metrics/advertising/measured-ad-not-visible",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "measured-ad-not-visible",
   "type": "object",
@@ -19,8 +19,7 @@
       "properties": {
         "@id": {
           "type": "string",
-          "format": "uri",
-          "const": "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/measured-ad-not-visible",
+          "const": "xdm:measured-ad-not-visible",
           "description": "The unique identifier of this metric."
         },
         "schema:name": {

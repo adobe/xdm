@@ -1,6 +1,6 @@
 {
   "schema:name": "advertising/viewability metric: viewability-eligible-impressions",
-  "@id": "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/viewability-eligible-impressions",
+  "@id": "xdm:viewability-eligible-impressions",
   "xdm:measurement": "count",
   "xdm:unit": null
 }

@@ -1,0 +1,16 @@
+{ 
+    "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics": {
+        "xdm:EnteredJourneyInstance":true,
+        "xdm:ErrorInJourneyInstance":true,
+        "xdm:ErrorInEventProcessing":true,
+        "xdm:ErrorInActionExecution":true,
+        "xdm:ErrorInJumpActionExecution":true,
+        "xdm:ErrorInEnrichment":true,
+        "xdm:ExecutedEvent":true,
+        "xdm:ExecutedAction":true,
+        "xdm:ExecutedFlowControl":true,
+        "xdm:ExecutedJumpAction":true,
+        "xdm:ExecutedEnrichment":true,
+        "xdm:JumpToJourney":true 
+    }
+}

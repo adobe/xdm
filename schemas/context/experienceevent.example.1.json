@@ -60,13 +60,6 @@
     "xdm:operatingSystemVersion": "10.13",
     "xdm:connectionType": "cable"
   },
-  "xdm:metrics": {
-    "https://ns.adobe.com/xdm/data/metrics/web/page-views": {
-      "@type": "https://ns.adobe.com/xdm/data/metrics/web/page-views",
-      "xdm:value": 1.0,
-      "xdm:unit": null
-    }
-  },
   "xdm:productListItems": [
     {
       "xdm:SKU": "1002352692",
@@ -121,7 +114,10 @@
       "xdm:name": "Purchase Confirmation",
       "xdm:URL": "https://www.example.com/orderConf",
       "xdm:errorPage": false,
-      "xdm:homePage": false
+      "xdm:homePage": false,
+      "xdm:pageViews": {
+        "xdm:value": 1.0
+      }
     },
     "xdm:webReferrer": {
       "xdm:URL": "https://www.example.com/checkout",

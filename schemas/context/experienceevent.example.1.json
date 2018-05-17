@@ -111,7 +111,7 @@
     }
   },
   "xdm:web":{
-    "xdm:webPageContext": {
+    "xdm:webPageDetail": {
       "xdm:siteSection": "Shopping Cart",
       "xdm:server": "example.com",
       "xdm:name": "Purchase Confirmation",

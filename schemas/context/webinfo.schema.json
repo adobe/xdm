@@ -14,11 +14,11 @@
   "definitions": {
     "webinfo": {
       "properties": {
-        "xdm:webPageView": {
-          "title": "Web Page Context",
-          "$ref": "https://ns.adobe.com/xdm/context/webpagecontext",
+        "xdm:webPageDetail": {
+          "title": "Web Page Detail",
+          "$ref": "https://ns.adobe.com/xdm/context/webpagedetail",
           "description":
-            "Contextual details about the web page where the web interaction occurred."
+            "Details about the web page where the web interaction occurred."
         },
         "xdm:webInteraction": {
           "title": "Web Interaction",

@@ -14,3 +14,4 @@
 * Moved web metrics used in ExperienceEvent `metrics` to the webinteraction and webpageview contexts #316
 * Renamed web metrics to `xdm:*` compressed type property names #316
 * Removed the required constraint from `schemas/external/schema/geo*.schema.json` #315
+* Corrected naming of EndUserIDs by making them consistent (aaid and acid) `schemas/external/schema/geo*.schema.json` #333

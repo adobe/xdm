@@ -33,10 +33,6 @@
           "description":
             "Impression(s) of an advertisement to an end user with the potential of being viewed."
         },
-        "https://ns.adobe.com/xdm/data/metrics/web/link-clicks": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Click of a web-link has occurred."
-        },
         "https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
@@ -47,9 +43,10 @@
           "description":
             "Asynchronous message(s) failed to deliver in a way that indicates that no future delivery attempts will be successful to the address."
         },
-        "https://ns.adobe.com/xdm/data/metrics/web/page-views": {
+        "https://ns.adobe.com/xdm/data/metrics/commerce/product-list-adds": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "View(s) of a webpage has occurred."
+          "description":
+            "Addition of a product to the product-list. Example a product is added to a shopping cart."
         },
         "https://ns.adobe.com/xdm/data/metrics/commerce/product-list-opens": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",

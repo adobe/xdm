@@ -14,6 +14,6 @@
 * Moved web metrics used in ExperienceEvent `metrics` to the webinteraction and webpageview contexts #316
 * Renamed web metrics to `xdm:*` compressed type property names #316
 * Removed the required constraint from `schemas/external/schema/geo*.schema.json` #315
-* Introduced advertising context to ExperienceEvent
-* Introduced advertising and viewability metrics under the advertising context
-* Moved impressions and clicks metrics under advertising context
+* Introduced advertising context to ExperienceEvent #280
+* Introduced advertising and viewability metrics under the advertising context #280
+* Moved impressions and clicks metrics under advertising context #280

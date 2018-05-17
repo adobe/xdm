@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/context/experienceevent
 
 The core ExperienceEvent XDM is used to capture observations that are altering one or more related XDMs/entities. The ExperienceEvent captures information about the observation taking place and when it is occurring. It is critical for time domain analytics as it allows observation and analysis of changes that occur in windows of time and comparison with other windows of time to track trends. ExperienceEvent are either explicit or implicit. Explicit events are direct observations of a human action taking place during a session. Implicit events are events that are being raised without a direct human action. Examples of implicit events are scheduled email sending of newsletters, battery voltage reaching a certain threshold, a person entering into range of a proximity sensor. While not all events are easily categorized across all data sources, it is extremely valuable to harmonize similar events into similar types for processing where possible, and the XDM specifications does this by defining a set of enumerated **type** attribute values with specific semantic meanings. Where possible events must be constrained to these enumerated values to facilitate interoperability.
 
-| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Stabilizing | Yes | Forbidden | Permitted | [context/experienceevent.schema.json](context/experienceevent.schema.json) |
 ## Schema Hierarchy
 
@@ -40,21 +40,18 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
     "https://ns.adobe.com/experience/mcid": {
       "@id": "https://data.adobe.io/entities/identity/92312748749128",
       "xdm:namespace": {
-        "@id": "https://data.adobe.io/entities/namespace/4",
         "xdm:code": "ECID"
       }
     },
-    "https://ns.adobe.com/experience/analytics": {
+    "https://ns.adobe.com/experience/aaid": {
       "@id": "https://data.adobe.io/entities/identity/2394509340-30453470347",
       "xdm:namespace": {
-        "@id": "https://data.adobe.io/entities/namespace/11112",
         "xdm:code": "AVID"
       }
     },
     "https://ns.adobe.com/experience/tntid": {
       "@id": "https://data.adobe.io/entities/identity/1233ce17-20e0-4a2c-8198-2a77fd60cf4d",
       "xdm:namespace": {
-        "@id": "https://data.adobe.io/entities/namespace/33333",
         "xdm:code": "tnt0051"
       }
     }
@@ -73,17 +70,28 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
       "xdm:viewportHeight": 900,
       "xdm:viewportWidth": 1680
     },
+    "xdm:adViewability": {
+      "xdm:adUnitDepth": 0,
+      "xdm:viewportHeight": 1250,
+      "xdm:viewportWidth": 1600,
+      "xdm:adHeight": 250,
+      "xdm:adWidth": 300,
+      "xdm:playerVolume": 85,
+      "xdm:measurementEligible": true,
+      "xdm:implementationDetails": {
+        "xdm:name": "https://ns.adobe.com/experience/adcloud/viewability",
+        "xdm:version": "1"
+      },
+      "xdm:viewable": true,
+      "xdm:activeWindow": true,
+      "xdm:percentViewable": 89
+    },
     "xdm:operatingSystem": "MAC OS",
     "xdm:operatingSystemVersion": "10.13",
     "xdm:connectionType": "cable"
   },
   "xdm:metrics": {
     "https://ns.adobe.com/xdm/data/metrics/commerce/purchases": {
-      "xdm:value": 1,
-      "xdm:unit": null
-    },
-    "https://ns.adobe.com/xdm/data/metrics/web/page-views": {
-      "@type": "https://ns.adobe.com/xdm/data/metrics/web/page-views",
       "xdm:value": 1,
       "xdm:unit": null
     }
@@ -139,7 +147,10 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
       "xdm:name": "Purchase Confirmation",
       "xdm:URL": "https://www.example.com/orderConf",
       "xdm:errorPage": false,
-      "xdm:homePage": false
+      "xdm:homePage": false,
+      "xdm:pageViews": {
+        "xdm:value": 1
+      }
     },
     "xdm:webReferrer": {
       "xdm:URL": "https://www.example.com/checkout",

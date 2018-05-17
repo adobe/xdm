@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/data/metrics
 
 This is map of metrics and measures. Each key is the valid URI of a known `Metric`. Each value is a `Measure`, i.e. a concrete data point.
 
-| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/metrics.schema.json](data/metrics.schema.json) |
 ## Schema Hierarchy
 
@@ -64,8 +64,6 @@ This is map of metrics and measures. Each key is the valid URI of a known `Metri
 | [https://ns.adobe.com/xdm/data/metrics/direct-marketing/sends](#https//ns.adobe.com/xdm/data/metrics/direct-marketing/sends) | Measure | Optional | Metrics (this schema) |
 | [https://ns.adobe.com/xdm/data/metrics/direct-marketing/unsubscriptions](#https//ns.adobe.com/xdm/data/metrics/direct-marketing/unsubscriptions) | Measure | Optional | Metrics (this schema) |
 | [https://ns.adobe.com/xdm/data/metrics/direct-marketing/user-complaints](#https//ns.adobe.com/xdm/data/metrics/direct-marketing/user-complaints) | Measure | Optional | Metrics (this schema) |
-| [https://ns.adobe.com/xdm/data/metrics/web/link-clicks](#https//ns.adobe.com/xdm/data/metrics/web/link-clicks) | Measure | Optional | Metrics (this schema) |
-| [https://ns.adobe.com/xdm/data/metrics/web/page-views](#https//ns.adobe.com/xdm/data/metrics/web/page-views) | Measure | Optional | Metrics (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## https://ns.adobe.com/xdm/data/metrics/advertising/clicks
@@ -528,42 +526,6 @@ User complaint(s) have been received. This generally occurs when a recipient of 
 * defined in this schema
 
 ### https://ns.adobe.com/xdm/data/metrics/direct-marketing/user-complaints Type
-
-
-* [Measure](measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
-
-
-
-
-
-## https://ns.adobe.com/xdm/data/metrics/web/link-clicks
-
-Click of a web-link has occurred.
-
-`https://ns.adobe.com/xdm/data/metrics/web/link-clicks`
-* is optional
-* type: Measure
-* defined in this schema
-
-### https://ns.adobe.com/xdm/data/metrics/web/link-clicks Type
-
-
-* [Measure](measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
-
-
-
-
-
-## https://ns.adobe.com/xdm/data/metrics/web/page-views
-
-View(s) of a webpage has occurred.
-
-`https://ns.adobe.com/xdm/data/metrics/web/page-views`
-* is optional
-* type: Measure
-* defined in this schema
-
-### https://ns.adobe.com/xdm/data/metrics/web/page-views Type
 
 
 * [Measure](measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`

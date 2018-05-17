@@ -8,8 +8,8 @@ https://ns.adobe.com/xdm/content/repository-policies/versioning
 Versioning policy represents how versioning for content stored in this specific part of the repository is behaving.
 
 
-| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
+|----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Cannot be instantiated | Yes | Experimental | No | Forbidden | Permitted | [content/repository-policies/versioning.schema.json](content/repository-policies/versioning.schema.json) |
 
 ## Versioning Example

@@ -1,8 +1,13 @@
 {
   "xdm:timestamp": "2017-09-26T15:52:25+00:00",
-  "xdm:metrics": {
-    "https://ns.adobe.com/xdm/data/metrics/web/link-clicks": {
-      "xdm:value": 1
+  "xdm:web": {
+    "xdm:webInteraction": {
+      "xdm:type": "other",
+      "xdm:URL": "https://newsletters.adobe.com/newsletter/101/mastering-xdm.html",
+      "xdm:name": "XDM information",
+      "xdm:linkClicks": {
+        "xdm:value": 1
+      }
     }
   },
   "xdm:channel": "https://ns.adobe.com/xdm/channels/email",

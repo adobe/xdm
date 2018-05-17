@@ -17,67 +17,67 @@
 	      "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics/EnteredJourneyInstance": {
           "title":"Entered Journey",
           "type":"boolean",
-          "description":"set to 1 when a journey instance is created"
+          "description":"set to true when a journey instance is created"
         },
         "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics/ExitedJourneyInstance": {
           "title":"Exited journey",
           "type":"boolean",
-          "description": "set to 1 when a journey instance is flagged as ended"
+          "description": "set to true when a journey instance is flagged as ended"
         },
         "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics/ErrorInJourneyInstance": {
           "title":"Error in Journey Instance",
           "type":"boolean",
-          "description": "set to 1 when an error is raised in a journey instance"
+          "description": "set to true when an error is raised in a journey instance"
         },
         "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics/ErrorInEventProcessing": {
           "title":"Eroor in step processing",
           "type":"boolean",
-          "description": "set to 1 when an error occurs during an event processing meaning, during a step processing"
+          "description": "set to true when an error occurs during an event processing meaning, during a step processing"
         },
         "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics/ErrorInActionExecution": {
           "title":"Error in action execution",
           "type":"boolean",
-          "description": "set to 1 when an error occurs during an action execution"
+          "description": "set to true when an error occurs during an action execution"
         },
         "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics/ErrorInJumpActionExecution": {
           "title":"Error in jump action",
           "type":"boolean",
-          "description": "set to 1 when an error occurs during the jump action execution"
+          "description": "set to true when an error occurs during the jump action execution"
         },
         "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics/ErrorInEnrichment": {
           "title":"Error in enrichment",
           "type":"boolean",
-          "description": "set to 1 when an error occurs during enrichment"
+          "description": "set to true when an error occurs during enrichment"
         },
         "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics/ExecutedEvent": {
           "title":"Event processed",
           "type":"boolean",
-          "description": "set to 1 when an event as triggered a transition in a journey instance"
+          "description": "set to true when an event as triggered a transition in a journey instance"
         },
         "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics/ExecutedAction": {
           "title":"Action executed",
           "type":"boolean",
-          "description": "set to 1 when an action is executed successfully in a journey instance"
+          "description": "set to true when an action is executed successfully in a journey instance"
         },
         "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics/ExecutedFlowControl": {
           "title":"Flow control executed",
           "type":"boolean",
-          "description": "set to 1 when an action is executed successfully in a journey instance"
+          "description": "set to true when an action is executed successfully in a journey instance"
         },
         "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics/ExecutedJumpAction": {
           "title":"Executed jump action",
           "type":"boolean",
-          "description": "set to 1 when an jump action is executed successfully in a journey instance"
+          "description": "set to true when an jump action is executed successfully in a journey instance"
         },
         "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics/ExecutedEnrichment": {
           "title":"Enrichment made successfully ",
           "type":"boolean",
-          "description": "set to 1 when an enrichment is executed successfully in a journey instance"
+          "description": "set to true when an enrichment is executed successfully in a journey instance"
         },
         "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics/JumpToJourney": {
           "title":"Jump action executed successfully",
           "type":"boolean",
-          "description":"set to 1 when a jump action is executed successfully in a journey instance"
+          "description":"set to true when a jump action is executed successfully in a journey instance"
         }
       }
     }

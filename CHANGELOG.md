@@ -10,7 +10,10 @@
 
 [Unreleased](https://github.com/adobe/xdm/releases/tag/v0.9.1)
 
-* Renames all `Metric` schemas to `Metric Definition` #254
+* Renamed all `Metric` schemas to `Metric Definition` #254
+* Moved web metrics used in ExperienceEvent `metrics` to the webinteraction and webpageview contexts #316
+* Renamed web metrics to `xdm:*` compressed type property names #316
 * Removed the required constraint from `schemas/external/schema/geo*.schema.json` #315
 * Moved `direct-marketing` metrics used in ExperienceEvent `metrics` to a new `xdm:directMarketing` contexts #331
 * Created a new `xdm:messageClicks` metric for direct-marketing clicks #331
+* Corrected naming of EndUserIDs by making them consistent (aaid and acid) `schemas/external/schema/geo*.schema.json` #333

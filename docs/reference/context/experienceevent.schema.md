@@ -43,7 +43,7 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
         "xdm:code": "ECID"
       }
     },
-    "https://ns.adobe.com/experience/analytics": {
+    "https://ns.adobe.com/experience/aaid": {
       "@id": "https://data.adobe.io/entities/identity/2394509340-30453470347",
       "xdm:namespace": {
         "xdm:code": "AVID"

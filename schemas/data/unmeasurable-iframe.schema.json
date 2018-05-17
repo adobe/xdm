@@ -43,10 +43,6 @@
       "$ref": "#/definitions/metricdefinition"
     }
   ],
-  "required": [
-    "@id",
-    "schema:name",
-    "xdm:measurement",
-    "xdm:unit"
-  ]
+  "required": ["@id", "schema:name", "xdm:measurement", "xdm:unit"],
+  "meta:status": "experimental"
 }

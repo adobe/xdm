@@ -75,56 +75,6 @@
           "description":
             "Install of an application on a device. Triggered on first launch after install."
         },
-        "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/instrumented-impressions": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-          "Impression(s) of an advertisement to an end user with viewablility library instrumented."
-        },
-        "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/measured-ad-not-visible": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-          "Indicator of ad not being visible as measured by a viewability library at impression time."
-        },
-        "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/measured-muted": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-          "Indicator of ad being muted as measured by a viewability library at impression time."
-        },
-        "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/measured-window-inactive": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-          "Indicator of ad being displayed in an inactive window as measured by a viewability library at impression time."
-        },
-        "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/unmeasurable-iframe": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-          "Indicator of viewability library not being able to properly execute measurements due to ad being displayed inside an iframe."
-        },
-        "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/unmeasurable-other": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-          "Indicator of viewability library not being able to properly execute measurements due to non-predefined error."
-        },
-        "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/viewable-completes": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-          "Completion(s) of an advertisement to an end user deemed viewable at completion time by a viewability library."
-        },
-        "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/viewable-first-quartiles": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-          "First quartile(s) of an advertisement to an end user deemed viewable at first quartile of play by a viewability library."
-        },
-        "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/viewable-midpoints": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-          "Midpoint(s) of an advertisement to an end user deemed viewable at midpoint of play by a viewability library."
-        },
-        "https://ns.adobe.com/xdm/data/metrics/advertising/viewability/viewable-third-quartiles": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-          "Third quartile(s) of an advertisement to an end user deemed viewable at third quartile of play by a viewability library."
-        },
         "https://ns.adobe.com/xdm/data/metrics/application/launches": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":

@@ -90,6 +90,7 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
     "xdm:operatingSystemVersion": "10.13",
     "xdm:connectionType": "cable"
   },
+<<<<<<< HEAD
   "xdm:metrics": {
     "https://ns.adobe.com/xdm/data/metrics/commerce/purchases": {
       "xdm:value": 1,
@@ -101,6 +102,8 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
       "xdm:unit": null
     }
   },
+=======
+>>>>>>> origin
   "xdm:productListItems": [
     {
       "xdm:SKU": "1002352692",
@@ -131,6 +134,9 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
       ],
       "xdm:currencyCode": "USD",
       "xdm:priceTotal": 159
+    },
+    "xdm:purchases": {
+      "xdm:value": 1
     }
   },
   "xdm:placeContext": {

@@ -22,32 +22,56 @@
         "xdm:cartAbandons": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
+<<<<<<< HEAD
             "A product-list has been identified as no longer accessible (e.g purchasable) by the user."
+=======
+            "A product list has been identified as no longer accessible (e.g purchasable) by the user."
+>>>>>>> origin
         },
         "xdm:checkouts": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
+<<<<<<< HEAD
             "An action during a checkout process of a product-list, there can be more than one checkout event if there are multiple steps in a checkout process. If there are multiple steps the event time information and referenced page or experience is used to identify the step individual events represent in order."
+=======
+            "An action during a checkout process of a product list, there can be more than one checkout event if there are multiple steps in a checkout process. If there are multiple steps the event time information and referenced page or experience is used to identify the step individual events represent in order."
+>>>>>>> origin
         },
         "xdm:productListAdds": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
+<<<<<<< HEAD
             "Addition of a product to the product-list. Example a product is added to a shopping cart."
+=======
+            "Addition of a product to the product list. Example a product is added to a shopping cart."
+>>>>>>> origin
         },
         "xdm:productListOpens": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
+<<<<<<< HEAD
             "Initializations of a new product-list. Example a shopping cart is created."
+=======
+            "Initializations of a new product list. Example a shopping cart is created."
+>>>>>>> origin
         },
         "xdm:productListRemovals": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
+<<<<<<< HEAD
             "Removal(s) of a product entry from a product-list. Example a product is removed from a shopping cart."
+=======
+            "Removal(s) of a product entry from a product list. Example a product is removed from a shopping cart."
+>>>>>>> origin
         },
         "xdm:productListReopens": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
+<<<<<<< HEAD
             "A product-list that was no longer accessible(abandoned) has been re-activated by the user. Example via a re-marketing activity."
+=======
+            "A product list that was no longer accessible(abandoned) has been re-activated by the user. Example via a re-marketing activity."
+>>>>>>> origin
         },
         "xdm:productListViews": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
@@ -60,12 +84,20 @@
         "xdm:purchases": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
+<<<<<<< HEAD
             "An order has been accepted. Purchase is the only required action in a commerce conversion. Purchase must have a product-list referenced."
+=======
+            "An order has been accepted. Purchase is the only required action in a commerce conversion. Purchase must have a product list referenced."
+>>>>>>> origin
         },
         "xdm:saveForLaters": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
+<<<<<<< HEAD
             "Product-list is saved for future use. Example a product wish list."
+=======
+            "Product list is saved for future use. Example a product wish list."
+>>>>>>> origin
         }
       }
     }

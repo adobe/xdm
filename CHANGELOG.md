@@ -15,3 +15,12 @@
 * Fixed issue where `context\experienceevent` `xdm:application` referred to the 'application.schema.json' in `channels` #318
 * `xdm:application` in `context\experienceevent` `@id` renamed to `xdm:id` #318
 * Removed the required constraint from `schemas/external/schema/geo*.schema.json` #315
+* Moved web metrics used in ExperienceEvent `metrics` to the webinteraction and webpageview contexts #316
+* Renamed web metrics to `xdm:*` compressed type property names #316
+* Moved `commerce` metrics used in ExperienceEvent `metrics` to the `commerce` context #317
+* Renamed `commerce` metrics to `xdm:*` compressed type property names #317
+* `abandons` metric field name change to `cartAbandons` . #317
+* The `commerce` schema is now extensible to allow for additional dimensions and metrics. #317
+* Removed the required constraint from `schemas/external/schema/geo*.schema.json` #315
+* Added `xdm:primary` flag to `schemas/context/identity.schema.json` #335
+* Corrected naming of EndUserIDs by making them consistent (aaid and acid) `schemas/external/schema/geo*.schema.json` #333

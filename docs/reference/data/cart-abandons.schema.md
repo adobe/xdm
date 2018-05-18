@@ -1,34 +1,34 @@
 
-# Product List Removals Schema
+# Cart Abandons Schema
 
 ```
-https://ns.adobe.com/xdm/data/metrics/product-list-removals
+https://ns.adobe.com/xdm/data/metrics/cart-abandons
 ```
 
-The commerce metric productListRemovals describes the number of times a product has been removed from a product list. The most common use case is the removal of a product from the shopping cart.
+Number of cart abandons for which a product list has been identified as no longer purchasable or accessible by the user without the user re-creating the product list from scratch.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/product-list-removals.schema.json](data/product-list-removals.schema.json) |
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/cart-abandons.schema.json](data/cart-abandons.schema.json) |
 
-## Product List Removals Example
+## Cart Abandons Example
 ```json
 {
-  "schema:name": "commerce metric: productListRemovals",
-  "@id": "xdm:productListRemovals",
+  "schema:name": "commerce metric: cartAbandons",
+  "@id": "xdm:cartAbandons",
   "xdm:measurement": "count",
   "xdm:unit": null
 }
 ```
 
-# Product List Removals Properties
+# Cart Abandons Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | Product List Removals (this schema) |
-| [schema:name](#schemaname) | `const` | **Required** | Product List Removals (this schema) |
-| [xdm:measurement](#xdmmeasurement) | `const` | **Required** | Product List Removals (this schema) |
-| [xdm:unit](#xdmunit) | `const` | **Required** | Product List Removals (this schema) |
+| [@id](#@id) | `const` | **Required** | Cart Abandons (this schema) |
+| [schema:name](#schemaname) | `const` | **Required** | Cart Abandons (this schema) |
+| [xdm:measurement](#xdmmeasurement) | `const` | **Required** | Cart Abandons (this schema) |
+| [xdm:unit](#xdmunit) | `const` | **Required** | Cart Abandons (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -43,7 +43,7 @@ The unique identifier of this metric.
 The value of this property **must** be equal to:
 
 ```json
-"xdm:productListRemovals"
+"xdm:cartAbandons"
 ```
 
 
@@ -62,7 +62,7 @@ The human-readable name of the metric. The name can be used in user interfaces a
 The value of this property **must** be equal to:
 
 ```json
-"commerce metric: productListRemovals"
+"commerce metric: cartAbandons"
 ```
 
 

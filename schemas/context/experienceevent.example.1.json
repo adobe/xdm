@@ -60,6 +60,7 @@
     "xdm:operatingSystemVersion": "10.13",
     "xdm:connectionType": "cable"
   },
+<<<<<<< HEAD
   "xdm:metrics": {
     "https://ns.adobe.com/xdm/data/metrics/web/page-views": {
       "@type": "https://ns.adobe.com/xdm/data/metrics/web/page-views",
@@ -67,6 +68,8 @@
       "xdm:unit": null
     }
   },
+=======
+>>>>>>> origin
   "xdm:productListItems": [
     {
       "xdm:SKU": "1002352692",

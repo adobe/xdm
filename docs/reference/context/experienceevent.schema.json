@@ -197,6 +197,7 @@
                 "xdm:operatingSystemVersion": "10.13",
                 "xdm:connectionType": "cable"
             },
+<<<<<<< HEAD
             "xdm:metrics": {
                 "https://ns.adobe.com/xdm/data/metrics/commerce/purchases": {
                     "xdm:value": 1,
@@ -208,6 +209,8 @@
                     "xdm:unit": null
                 }
             },
+=======
+>>>>>>> origin
             "xdm:productListItems": [
                 {
                     "xdm:SKU": "1002352692",
@@ -238,6 +241,9 @@
                     ],
                     "xdm:currencyCode": "USD",
                     "xdm:priceTotal": 159
+                },
+                "xdm:purchases": {
+                    "xdm:value": 1
                 }
             },
             "xdm:placeContext": {

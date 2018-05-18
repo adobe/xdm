@@ -78,15 +78,25 @@
     "examples": [
         {
             "xdm:id": "https://example.com/objects/12345"
+<<<<<<< HEAD
         },
         {
             "xdm:schema": "https://ns.adobe.com/xdm/context/identity"
+=======
+>>>>>>> origin
         },
         {
             "xdm:type": "https://ns.adobe.com/experience/mcid"
         },
         {
+<<<<<<< HEAD
             "xdm:index": 0
+=======
+            "xdm:type": "https://ns.adobe.com/experience/mcid"
+        },
+        {
+            "xdm:schema": "https://ns.adobe.com/xdm/context/identity"
+>>>>>>> origin
         }
     ]
 }

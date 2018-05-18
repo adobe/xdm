@@ -47,6 +47,7 @@
           "description":
             "Asynchronous message(s) failed to deliver in a way that indicates that no future delivery attempts will be successful to the address."
         },
+<<<<<<< HEAD
         "https://ns.adobe.com/xdm/data/metrics/web/page-views": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "View(s) of a webpage has occurred."
@@ -66,6 +67,8 @@
           "description":
             "A product-list that was no longer accessible(abandoned) has been re-activated by the user. Example via a re-marketing activity."
         },
+=======
+>>>>>>> origin
         "https://ns.adobe.com/xdm/data/metrics/direct-marketing/sends": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":

@@ -14,9 +14,9 @@
   "definitions": {
     "webinfo": {
       "properties": {
-        "xdm:webPageDetail": {
-          "title": "Web Page Detail",
-          "$ref": "https://ns.adobe.com/xdm/context/webpagedetail",
+        "xdm:webPageDetails": {
+          "title": "Web Page Details",
+          "$ref": "https://ns.adobe.com/xdm/context/webpagedetails",
           "description":
             "Details about the web page where the web interaction occurred."
         },

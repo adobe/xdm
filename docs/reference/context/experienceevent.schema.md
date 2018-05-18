@@ -43,7 +43,7 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
         "xdm:code": "ECID"
       }
     },
-    "https://ns.adobe.com/experience/analytics": {
+    "https://ns.adobe.com/experience/aaid": {
       "@id": "https://data.adobe.io/entities/identity/2394509340-30453470347",
       "xdm:namespace": {
         "xdm:code": "AVID"
@@ -70,20 +70,25 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
       "xdm:viewportHeight": 900,
       "xdm:viewportWidth": 1680
     },
+    "xdm:adViewability": {
+      "xdm:adUnitDepth": 0,
+      "xdm:viewportHeight": 1250,
+      "xdm:viewportWidth": 1600,
+      "xdm:adHeight": 250,
+      "xdm:adWidth": 300,
+      "xdm:playerVolume": 85,
+      "xdm:measurementEligible": true,
+      "xdm:implementationDetails": {
+        "xdm:name": "https://ns.adobe.com/experience/adcloud/viewability",
+        "xdm:version": "1"
+      },
+      "xdm:viewable": true,
+      "xdm:activeWindow": true,
+      "xdm:percentViewable": 89
+    },
     "xdm:operatingSystem": "MAC OS",
     "xdm:operatingSystemVersion": "10.13",
     "xdm:connectionType": "cable"
-  },
-  "xdm:metrics": {
-    "https://ns.adobe.com/xdm/data/metrics/commerce/purchases": {
-      "xdm:value": 1,
-      "xdm:unit": null
-    },
-    "https://ns.adobe.com/xdm/data/metrics/web/page-views": {
-      "@type": "https://ns.adobe.com/xdm/data/metrics/web/page-views",
-      "xdm:value": 1,
-      "xdm:unit": null
-    }
   },
   "xdm:productListItems": [
     {
@@ -115,6 +120,9 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
       ],
       "xdm:currencyCode": "USD",
       "xdm:priceTotal": 159
+    },
+    "xdm:purchases": {
+      "xdm:value": 1
     }
   },
   "xdm:placeContext": {
@@ -136,7 +144,10 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
       "xdm:name": "Purchase Confirmation",
       "xdm:URL": "https://www.example.com/orderConf",
       "xdm:errorPage": false,
-      "xdm:homePage": false
+      "xdm:homePage": false,
+      "xdm:pageViews": {
+        "xdm:value": 1
+      }
     },
     "xdm:webReferrer": {
       "xdm:URL": "https://www.example.com/checkout",

@@ -40,7 +40,7 @@
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Impression(s) of an advertisement to an end user with the potential of being viewed."
         },
-        "xdm:midpoint": {
+        "xdm:midpoints": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "A digital video ad has played through 50% of it's duration at normal speed."
         },

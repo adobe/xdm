@@ -32,7 +32,6 @@ Identity is used to clearly distinguish people that are interacting with digital
 |----------|------|----------|------------|
 | [@id](#@id) | `string` | Optional | Identity (this schema) |
 | [xdm:namespace](#xdmnamespace) | Namespace | Optional | Identity (this schema) |
-| [xdm:primary](#xdmprimary) | `boolean` | Optional | Identity (this schema) |
 | [xdm:xid](#xdmxid) | `string` | Optional | Identity (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -71,25 +70,6 @@ The namespace associated with the `xid` attribute and matched up with the AAM da
 
 
 * [Namespace](namespace.schema.md) – `https://ns.adobe.com/xdm/context/namespace`
-
-
-
-
-
-## xdm:primary
-### Primary
-
-Indicates this identity is the preferred identity. Is used as a hint to help systems better organize how identities are queried.
-
-`xdm:primary`
-* is optional
-* type: `boolean`
-* defined in this schema
-
-### xdm:primary Type
-
-
-`boolean`
 
 
 

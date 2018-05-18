@@ -5,10 +5,7 @@
     "xdm:name": "product home",
     "xdm:URL": "https://www.example.com/products",
     "xdm:errorPage": false,
-    "xdm:homePage": true,
-    "xdm:pageViews": {
-      "xdm:value": 1.0
-    }
+    "xdm:homePage": true
   },
   "xdm:webReferrer": {
     "xdm:URL": "https://www.some-adserver.com",

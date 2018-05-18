@@ -10,7 +10,6 @@
     "title": "Web Page View",
     "type": "object",
     "description": "Details about the web page that has just been loaded and viewed, as recorded by an `ExperienceEvent`.\n\nThis schema is intended for full page views and initial page loads of single page web applications (SPAs).\nFor interactions that are happening on a loaded page that do not trigger a new page load, see `WebInteraction`.\n",
-    "meta:extensible": true,
     "definitions": {
         "webpageview": {
             "properties": {
@@ -45,10 +44,6 @@
                     "title": "Is Home Page",
                     "type": "boolean",
                     "description": "Flag that indicate if the page is the site home page or not.  The definition of home page is determined by the application, but is commonly used to designate a top level landing page or common site entry point.  This flag is used to broadly categorize web interactions."
-                },
-                "xdm:pageViews": {
-                    "$ref": "https://ns.adobe.com/xdm/data/measure",
-                    "description": "View(s) of a webpage has occurred."
                 }
             }
         }
@@ -66,10 +61,7 @@
             "xdm:name": "product home",
             "xdm:URL": "https://www.example.com",
             "xdm:errorPage": false,
-            "xdm:homePage": true,
-            "xdm:pageViews": {
-                "xdm:value": 1
-            }
+            "xdm:homePage": true
         }
     ]
 }

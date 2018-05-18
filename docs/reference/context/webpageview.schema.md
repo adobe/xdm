@@ -14,11 +14,6 @@ For interactions that are happening on a loaded page that do not trigger a new p
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/webpageview.schema.json](context/webpageview.schema.json) |
-## Schema Hierarchy
-
-* Web Page View `https://ns.adobe.com/xdm/context/webpageview`
-  * [Measure](../data/measure.schema.md) `https://ns.adobe.com/xdm/data/measure`
-
 
 ## Web Page View Example
 ```json
@@ -28,10 +23,7 @@ For interactions that are happening on a loaded page that do not trigger a new p
   "xdm:name": "product home",
   "xdm:URL": "https://www.example.com",
   "xdm:errorPage": false,
-  "xdm:homePage": true,
-  "xdm:pageViews": {
-    "xdm:value": 1
-  }
+  "xdm:homePage": true
 }
 ```
 
@@ -43,7 +35,6 @@ For interactions that are happening on a loaded page that do not trigger a new p
 | [xdm:isErrorPage](#xdmiserrorpage) | `boolean` | Optional | Web Page View (this schema) |
 | [xdm:isHomePage](#xdmishomepage) | `boolean` | Optional | Web Page View (this schema) |
 | [xdm:name](#xdmname) | `string` | Optional | Web Page View (this schema) |
-| [xdm:pageViews](#xdmpageviews) | Measure | Optional | Web Page View (this schema) |
 | [xdm:server](#xdmserver) | `string` | Optional | Web Page View (this schema) |
 | [xdm:siteSection](#xdmsitesection) | `string` | Optional | Web Page View (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -122,24 +113,6 @@ The normative name of the web page. This name is not necessarily the page title 
 
 `string`
 
-
-
-
-
-
-## xdm:pageViews
-
-View(s) of a webpage has occurred.
-
-`xdm:pageViews`
-* is optional
-* type: Measure
-* defined in this schema
-
-### xdm:pageViews Type
-
-
-* [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
 
 
 

@@ -12,7 +12,7 @@
         "xdm:code": "ECID"
       }
     },
-    "https://ns.adobe.com/experience/aaid": {
+    "https://ns.adobe.com/experience/analytics": {
       "@id": "https://data.adobe.io/entities/identity/2394509340-30453470347",
       "xdm:namespace": {
         "xdm:code": "AVID"
@@ -114,10 +114,7 @@
       "xdm:name": "Purchase Confirmation",
       "xdm:URL": "https://www.example.com/orderConf",
       "xdm:errorPage": false,
-      "xdm:homePage": false,
-      "xdm:pageViews": {
-        "xdm:value": 1.0
-      }
+      "xdm:homePage": false
     },
     "xdm:webReferrer": {
       "xdm:URL": "https://www.example.com/checkout",

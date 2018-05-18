@@ -10,7 +10,6 @@
   "title": "Web Interaction",
   "type": "object",
   "description": "",
-  "meta:extensible": true,
   "definitions": {
     "webinteraction": {
       "properties": {
@@ -35,10 +34,6 @@
           "type": "string",
           "description":
             "The normative name used for this web link, used for classification purposes"
-        },
-        "xdm:linkClicks": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Click of a web-link has occurred."
         }
       }
     }

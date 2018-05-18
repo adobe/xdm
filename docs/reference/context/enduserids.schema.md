@@ -31,7 +31,7 @@ Additionally, this schema can include a property that describes the data source 
       "xdm:code": "ECID"
     }
   },
-  "https://ns.adobe.com/experience/aaid": {
+  "https://ns.adobe.com/experience/analytics": {
     "@id": "https://data.adobe.io/entities/identity/2394509340-30453470347",
     "xdm:namespace": {
       "xdm:code": "AVID"
@@ -50,24 +50,24 @@ Additionally, this schema can include a property that describes the data source 
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [https://ns.adobe.com/experience/aaid](#https//ns.adobe.com/experience/aaid) | Identity | Optional | End User IDs (this schema) |
-| [https://ns.adobe.com/experience/acid](#https//ns.adobe.com/experience/acid) | Identity | Optional | End User IDs (this schema) |
+| [https://ns.adobe.com/experience/analytics](#https//ns.adobe.com/experience/analytics) | Identity | Optional | End User IDs (this schema) |
+| [https://ns.adobe.com/experience/campaign](#https//ns.adobe.com/experience/campaign) | Identity | Optional | End User IDs (this schema) |
 | [https://ns.adobe.com/experience/mcid](#https//ns.adobe.com/experience/mcid) | Identity | Optional | End User IDs (this schema) |
 | [https://ns.adobe.com/experience/tntid](#https//ns.adobe.com/experience/tntid) | Identity | Optional | End User IDs (this schema) |
 | `.+//.+` | reference | Pattern | End User IDs (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## https://ns.adobe.com/experience/aaid
+## https://ns.adobe.com/experience/analytics
 ### Adobe Analytics Cloud End User IDs
 
 Adobe Analytics Cloud extension to End User IDs.
 
-`https://ns.adobe.com/experience/aaid`
+`https://ns.adobe.com/experience/analytics`
 * is optional
 * type: Identity
 * defined in this schema
 
-### https://ns.adobe.com/experience/aaid Type
+### https://ns.adobe.com/experience/analytics Type
 
 
 * [Identity](identity.schema.md) – `https://ns.adobe.com/xdm/context/identity`
@@ -76,17 +76,17 @@ Adobe Analytics Cloud extension to End User IDs.
 
 
 
-## https://ns.adobe.com/experience/acid
+## https://ns.adobe.com/experience/campaign
 ### Adobe Campaign End User IDs
 
 Adobe Campaign extension to End User IDs.
 
-`https://ns.adobe.com/experience/acid`
+`https://ns.adobe.com/experience/campaign`
 * is optional
 * type: Identity
 * defined in this schema
 
-### https://ns.adobe.com/experience/acid Type
+### https://ns.adobe.com/experience/campaign Type
 
 
 * [Identity](identity.schema.md) – `https://ns.adobe.com/xdm/context/identity`

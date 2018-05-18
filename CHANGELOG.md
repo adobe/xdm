@@ -11,6 +11,10 @@
 [Unreleased](https://github.com/adobe/xdm/releases/tag/v0.9.1)
 
 * Renamed all `Metric` schemas to `Metric Definition` #254
+* Added application and mobile context via `context\application.schema.json` #318
+* Fixed issue where `context\experienceevent` `xdm:application` referred to the 'application.schema.json' in `channels` #318
+* `xdm:application` in `context\experienceevent` `@id` renamed to `xdm:id` #318
+* Removed the required constraint from `schemas/external/schema/geo*.schema.json` #315
 * Moved web metrics used in ExperienceEvent `metrics` to the webinteraction and webpageview contexts #316
 * Renamed web metrics to `xdm:*` compressed type property names #316
 * Moved `commerce` metrics used in ExperienceEvent `metrics` to the `commerce` context #317

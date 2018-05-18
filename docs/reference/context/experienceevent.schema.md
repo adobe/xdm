@@ -43,7 +43,7 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
         "xdm:code": "ECID"
       }
     },
-    "https://ns.adobe.com/experience/aaid": {
+    "https://ns.adobe.com/experience/analytics": {
       "@id": "https://data.adobe.io/entities/identity/2394509340-30453470347",
       "xdm:namespace": {
         "xdm:code": "AVID"
@@ -90,6 +90,20 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
     "xdm:operatingSystemVersion": "10.13",
     "xdm:connectionType": "cable"
   },
+<<<<<<< HEAD
+  "xdm:metrics": {
+    "https://ns.adobe.com/xdm/data/metrics/commerce/purchases": {
+      "xdm:value": 1,
+      "xdm:unit": null
+    },
+    "https://ns.adobe.com/xdm/data/metrics/web/page-views": {
+      "@type": "https://ns.adobe.com/xdm/data/metrics/web/page-views",
+      "xdm:value": 1,
+      "xdm:unit": null
+    }
+  },
+=======
+>>>>>>> origin
   "xdm:productListItems": [
     {
       "xdm:SKU": "1002352692",
@@ -144,10 +158,7 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
       "xdm:name": "Purchase Confirmation",
       "xdm:URL": "https://www.example.com/orderConf",
       "xdm:errorPage": false,
-      "xdm:homePage": false,
-      "xdm:pageViews": {
-        "xdm:value": 1
-      }
+      "xdm:homePage": false
     },
     "xdm:webReferrer": {
       "xdm:URL": "https://www.example.com/checkout",

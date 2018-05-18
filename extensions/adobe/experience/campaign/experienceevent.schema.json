@@ -257,6 +257,106 @@
                 "Business qualifier that identifies the event sent by the data source. It informs on the business reason for sending the event. It is unique per organization. This is used by Campaign orchestration to identify the event without inspecting its payload to determine which action should be triggered when the event is received. The value of this field is a contract between Campaign orchestration and the data source."
             }
           }
+        },
+        "xdm:cusField1": {
+          "title": "Custom Field 1",
+          "type": "string",
+          "description": "Custom field for Campaign's Custom Dimensions 1."
+        },
+        "xdm:cusField2": {
+          "title": "Custom Field 2",
+          "type": "string",
+          "description": "Custom field for Campaign's Custom Dimensions 2."
+        },
+        "xdm:cusField3": {
+          "title": "Custom Field 3",
+          "type": "string",
+          "description": "Custom field for Campaign's Custom Dimensions 3."
+        },
+        "xdm:cusField4": {
+          "title": "Custom Field 4",
+          "type": "string",
+          "description": "Custom field for Campaign's Custom Dimensions 4."
+        },
+        "xdm:cusField5": {
+          "title": "Custom Field 5",
+          "type": "string",
+          "description": "Custom field for Campaign's Custom Dimensions 5."
+        },
+        "xdm:cusField6": {
+          "title": "Custom Field 6",
+          "type": "string",
+          "description": "Custom field for Campaign's Custom Dimensions 6."
+        },
+        "xdm:cusField7": {
+          "title": "Custom Field 7",
+          "type": "string",
+          "description": "Custom field for Campaign's Custom Dimensions 7."
+        },
+        "xdm:cusField8": {
+          "title": "Custom Field 8",
+          "type": "string",
+          "description": "Custom field for Campaign's Custom Dimensions 8."
+        },
+        "xdm:cusField9": {
+          "title": "Custom Field 9",
+          "type": "string",
+          "description": "Custom field for Campaign's Custom Dimensions 9."
+        },
+        "xdm:cusField10": {
+          "title": "Custom Field 10",
+          "type": "string",
+          "description": "Custom field for Campaign's Custom Dimensions 10."
+        },
+        "xdm:cusField11": {
+          "title": "Custom Field 11",
+          "type": "string",
+          "description": "Custom field for Campaign's Custom Dimensions 11."
+        },
+        "xdm:cusField12": {
+          "title": "Custom Field 12",
+          "type": "string",
+          "description": "Custom field for Campaign's Custom Dimensions 12."
+        },
+        "xdm:cusField13": {
+          "title": "Custom Field 13",
+          "type": "string",
+          "description": "Custom field for Campaign's Custom Dimensions 13."
+        },
+        "xdm:cusField14": {
+          "title": "Custom Field 14",
+          "type": "string",
+          "description": "Custom field for Campaign's Custom Dimensions 14."
+        },
+        "xdm:cusField15": {
+          "title": "Custom Field 15",
+          "type": "string",
+          "description": "Custom field for Campaign's Custom Dimensions 15."
+        },
+        "xdm:cusField16": {
+          "title": "Custom Field 16",
+          "type": "string",
+          "description": "Custom field for Campaign's Custom Dimensions 16."
+        },
+        "xdm:cusField17": {
+          "title": "Custom Field 17",
+          "type": "string",
+          "description": "Custom field for Campaign's Custom Dimensions 17."
+        },
+        "xdm:cusField18": {
+          "title": "Custom Field 18",
+          "type": "string",
+          "description": "Custom field for Campaign's Custom Dimensions 18."
+        },
+        "xdm:cusField19": {
+          "title": "Custom Field 19",
+          "type": "string",
+          "description": "Custom field for Campaign's Custom Dimensions 19."
+        },
+        "xdm:cusField20": {
+          "title": "Custom Field 20",
+          "type": "string",
+          "description": "Custom field for Campaign's Custom Dimensions 20."
         }
       }
     }

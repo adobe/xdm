@@ -13,8 +13,8 @@ Each value consists of the (required) ID that is native to the data source, and 
 Additionally, this schema can include a property that describes the data source that is responsible for identity stitching.
 
 
-| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | No | Stabilizing | No | Forbidden | Permitted | [context/enduserids.schema.json](context/enduserids.schema.json) |
 ## Schema Hierarchy
 
@@ -28,21 +28,18 @@ Additionally, this schema can include a property that describes the data source 
   "https://ns.adobe.com/experience/mcid": {
     "@id": "https://data.adobe.io/entities/identity/92312748749128",
     "xdm:namespace": {
-      "@id": "https://data.adobe.io/entities/namespace/4",
       "xdm:code": "ECID"
     }
   },
-  "https://ns.adobe.com/experience/analytics": {
+  "https://ns.adobe.com/experience/aaid": {
     "@id": "https://data.adobe.io/entities/identity/2394509340-30453470347",
     "xdm:namespace": {
-      "@id": "https://data.adobe.io/entities/namespace/11112",
       "xdm:code": "AVID"
     }
   },
   "https://ns.adobe.com/experience/tntid": {
     "@id": "https://data.adobe.io/entities/identity/1233ce17-20e0-4a2c-8198-2a77fd60cf4d",
     "xdm:namespace": {
-      "@id": "https://data.adobe.io/entities/namespace/33333",
       "xdm:code": "tnt0051"
     }
   }
@@ -53,24 +50,24 @@ Additionally, this schema can include a property that describes the data source 
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [https://ns.adobe.com/experience/analytics](#https//ns.adobe.com/experience/analytics) | Identity | Optional | End User IDs (this schema) |
-| [https://ns.adobe.com/experience/campaign](#https//ns.adobe.com/experience/campaign) | Identity | Optional | End User IDs (this schema) |
+| [https://ns.adobe.com/experience/aaid](#https//ns.adobe.com/experience/aaid) | Identity | Optional | End User IDs (this schema) |
+| [https://ns.adobe.com/experience/acid](#https//ns.adobe.com/experience/acid) | Identity | Optional | End User IDs (this schema) |
 | [https://ns.adobe.com/experience/mcid](#https//ns.adobe.com/experience/mcid) | Identity | Optional | End User IDs (this schema) |
 | [https://ns.adobe.com/experience/tntid](#https//ns.adobe.com/experience/tntid) | Identity | Optional | End User IDs (this schema) |
 | `.+//.+` | reference | Pattern | End User IDs (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## https://ns.adobe.com/experience/analytics
+## https://ns.adobe.com/experience/aaid
 ### Adobe Analytics Cloud End User IDs
 
 Adobe Analytics Cloud extension to End User IDs.
 
-`https://ns.adobe.com/experience/analytics`
+`https://ns.adobe.com/experience/aaid`
 * is optional
 * type: Identity
 * defined in this schema
 
-### https://ns.adobe.com/experience/analytics Type
+### https://ns.adobe.com/experience/aaid Type
 
 
 * [Identity](identity.schema.md) – `https://ns.adobe.com/xdm/context/identity`
@@ -79,17 +76,17 @@ Adobe Analytics Cloud extension to End User IDs.
 
 
 
-## https://ns.adobe.com/experience/campaign
+## https://ns.adobe.com/experience/acid
 ### Adobe Campaign End User IDs
 
 Adobe Campaign extension to End User IDs.
 
-`https://ns.adobe.com/experience/campaign`
+`https://ns.adobe.com/experience/acid`
 * is optional
 * type: Identity
 * defined in this schema
 
-### https://ns.adobe.com/experience/campaign Type
+### https://ns.adobe.com/experience/acid Type
 
 
 * [Identity](identity.schema.md) – `https://ns.adobe.com/xdm/context/identity`

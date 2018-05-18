@@ -65,7 +65,6 @@
         },
         "xdm:implementationDetails": {
           "title": "Viewabiltity implementation details",
-          "type": "object",
           "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
           "description":
           "The name and version of the library instrumented to measure viewability metrics."

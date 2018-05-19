@@ -9,14 +9,16 @@
   "$id":
     "https://ns.adobe.com/experience/offer-management/content/image-content",
   "meta:extends": ["https://ns.adobe.com/experience/offer-management/representation-content"],
+  "meta:abstract": false,
+  "meta:extensible": true,
   "type": "object",
   "title": "Image Content",
-  "description": "Offer Image Content",
+  "description": "Image content used in an offer representation",
   "definitions": {
     "image-content": {
       "type": "object",
-      "title": "Image",
-      "description": "Offer content as an image",
+      "title": "Image Content",
+      "description": "Image content used in an offer representation",
       "properties": {
         "@type": {
           "type": "string",
@@ -31,7 +33,7 @@
                 "type": "string",
                 "format": "uri",
                 "title": "Image URL",
-                "description": "Image representing the offer"
+                "description": "Image representing the offer. Access to the image may be restricted and clients should not use this URL in to deliver the content publicly."
               },
               "xdm:imageName": {
                 "type": "string",

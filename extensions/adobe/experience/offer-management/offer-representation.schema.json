@@ -8,7 +8,8 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id":
     "https://ns.adobe.com/experience/offer-management/offer-representation",
-  "meta:extensible": "true",
+  "meta:abstract": true,
+  "meta:extensible": true,
   "type": "object",
   "title": "Representation",
   "description": "Offer Representation",
@@ -21,13 +22,13 @@
         "xdm:channel": {
           "type": "string",
           "title": "Channel",
-          "description":
-            "Offer Channel ID. See 'https://ns.adobe.com/xdm/channels/channel'"
+          "description": "Offer Channel ID. See 'https://ns.adobe.com/xdm/channels/channel'"
         },
         "xdm:placement": {
           "type": "string",
+          "format": "uri"
           "title": "Placement",
-          "description": "Placement to comply with"
+          "description": "Placement to comply with. The value is the URI (@id) of the placement that is referenced."
         }
       },
       "required": [

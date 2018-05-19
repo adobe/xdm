@@ -9,12 +9,16 @@
   "$id":
     "https://ns.adobe.com/experience/offer-management/content/text-content",
   "meta:extends": ["https://ns.adobe.com/experience/offer-management/representation-content"],
+  "meta:abstract": false,
+  "meta:extensible": true,
   "type": "object",
   "title": "Plain Text Content",
-  "description": "Offer Representation",
+  "description": "Plain text content used in an offer representation",
   "definitions": {
     "text-content": {
       "type": "object",
+      "title": "Plain Text Content",
+      "description": "Plain text content used in an offer representation",
       "properties": {
         "@type": {
           "type": "string",

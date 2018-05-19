@@ -9,12 +9,16 @@
   "$id":
     "https://ns.adobe.com/experience/offer-management/content/html-content",
   "meta:extends": ["https://ns.adobe.com/experience/offer-management/representation-content"],
+  "meta:abstract": false,
+  "meta:extensible": true,
   "type": "object",
-  "title": "Content",
-  "description": "Offer HTML Content",
+  "title": "HTML Content",
+  "description": "Image content used in an offer representation",
   "definitions": {
     "html-content": {
       "type": "object",
+      "title": "HTML Content",
+      "description": "HTML content used in an offer representation",
       "properties": {
         "@type": {
           "type": "string",

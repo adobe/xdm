@@ -43,7 +43,7 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
         "xdm:code": "ECID"
       }
     },
-    "https://ns.adobe.com/experience/analytics": {
+    "https://ns.adobe.com/experience/aaid": {
       "@id": "https://data.adobe.io/entities/identity/2394509340-30453470347",
       "xdm:namespace": {
         "xdm:code": "AVID"
@@ -90,12 +90,6 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
     "xdm:operatingSystemVersion": "10.13",
     "xdm:connectionType": "cable"
   },
-  "xdm:metrics": {
-    "https://ns.adobe.com/xdm/data/metrics/commerce/purchases": {
-      "xdm:value": 1,
-      "xdm:unit": null
-    }
-  },
   "xdm:productListItems": [
     {
       "xdm:SKU": "1002352692",
@@ -126,6 +120,9 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
       ],
       "xdm:currencyCode": "USD",
       "xdm:priceTotal": 159
+    },
+    "xdm:purchases": {
+      "xdm:value": 1
     }
   },
   "xdm:placeContext": {

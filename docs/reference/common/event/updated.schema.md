@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/common/event/updated
 
 A `updated event` follows semantics that are exactly equivalent to the semantics described by the [`update activity`](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-update), except for one difference. The `update activity` can be used in imperative contexts, however, the `updated event` can only be used in passive contexts.
 
-| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
+|----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | No | Experimental | No | Forbidden | Permitted | [common/event/updated.schema.json](common/event/updated.schema.json) |
 ## Schema Hierarchy
 

@@ -1,34 +1,34 @@
 
-# checkouts Schema
+# Checkouts Schema
 
 ```
-https://ns.adobe.com/xdm/data/metrics/commerce/checkouts
+https://ns.adobe.com/xdm/data/metrics/checkouts
 ```
 
 Number of actions during a checkout process of a product list, there can be more than one checkout event if there are multiple steps in a checkout process. If there are multiple steps the event time information and referenced page or experience is used to identify the step individual events represent in order.
 
-| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|--------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [data/checkouts.schema.json](data/checkouts.schema.json) |
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/checkouts.schema.json](data/checkouts.schema.json) |
 
-## checkouts Example
+## Checkouts Example
 ```json
 {
   "schema:name": "commerce metric: checkouts",
-  "@id": "https://ns.adobe.com/xdm/data/metrics/commerce/checkouts",
+  "@id": "xdm:checkouts",
   "xdm:measurement": "count",
   "xdm:unit": null
 }
 ```
 
-# checkouts Properties
+# Checkouts Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | checkouts (this schema) |
-| [schema:name](#schemaname) | `const` | **Required** | checkouts (this schema) |
-| [xdm:measurement](#xdmmeasurement) | `const` | **Required** | checkouts (this schema) |
-| [xdm:unit](#xdmunit) | `const` | **Required** | checkouts (this schema) |
+| [@id](#@id) | `const` | **Required** | Checkouts (this schema) |
+| [schema:name](#schemaname) | `const` | **Required** | Checkouts (this schema) |
+| [xdm:measurement](#xdmmeasurement) | `const` | **Required** | Checkouts (this schema) |
+| [xdm:unit](#xdmunit) | `const` | **Required** | Checkouts (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -43,7 +43,7 @@ The unique identifier of this metric.
 The value of this property **must** be equal to:
 
 ```json
-"https://ns.adobe.com/xdm/data/metrics/commerce/checkouts"
+"xdm:checkouts"
 ```
 
 

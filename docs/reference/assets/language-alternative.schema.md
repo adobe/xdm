@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/assets/language-alternative
 
 A tuple in a set of language alternatives, i.e. pairs of localized text and their locale, that are equivalent in meaning.
 
-| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Cannot be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [assets/language-alternative.schema.json](assets/language-alternative.schema.json) |
 
 ## Language Alternative Example

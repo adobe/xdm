@@ -7,13 +7,14 @@ https://ns.adobe.com/xdm/context/environment
 
 Information about the surrounding situation the event observation occurred in, specifically detailing transitory information such as the network or software versions. > IMPORTANT: All values should be aligned with the [DeviceAtlas](https://deviceatlas.com) database licensed by Adobe. 
 
-| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/environment.schema.json](context/environment.schema.json) |
 ## Schema Hierarchy
 
 * Environment `https://ns.adobe.com/xdm/context/environment`
   * [Browser Details](browserdetails.schema.md) `https://ns.adobe.com/xdm/context/browserdetails`
+  * [MRC Viewability](adviewability.schema.md) `https://ns.adobe.com/xdm/context/adviewability`
 
 
 ## Environment Example
@@ -32,6 +33,22 @@ Information about the surrounding situation the event observation occurred in, s
     "xdm:viewportHeight": 900,
     "xdm:viewportWidth": 1680
   },
+  "xdm:adViewability": {
+    "xdm:adUnitDepth": 0,
+    "xdm:viewportHeight": 1250,
+    "xdm:viewportWidth": 1600,
+    "xdm:adHeight": 250,
+    "xdm:adWidth": 300,
+    "xdm:playerVolume": 85,
+    "xdm:measurementEligible": true,
+    "xdm:implementationDetails": {
+      "xdm:name": "https://ns.adobe.com/experience/adcloud/viewability",
+      "xdm:version": "1"
+    },
+    "xdm:viewable": true,
+    "xdm:activeWindow": true,
+    "xdm:percentViewable": 89
+  },
   "xdm:operatingSystem": "MAC OS",
   "xdm:operatingSystemVersion": "10.13",
   "xdm:connectionType": "cable"
@@ -42,6 +59,7 @@ Information about the surrounding situation the event observation occurred in, s
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
+| [xdm:adViewability](#xdmadviewability) | MRC Viewability | Optional | Environment (this schema) |
 | [xdm:browserDetails](#xdmbrowserdetails) | Browser Details | Optional | Environment (this schema) |
 | [xdm:carrier](#xdmcarrier) | `string` | Optional | Environment (this schema) |
 | [xdm:colorDepth](#xdmcolordepth) | `integer` | Optional | Environment (this schema) |
@@ -54,6 +72,25 @@ Information about the surrounding situation the event observation occurred in, s
 | [xdm:viewportHeight](#xdmviewportheight) | `integer` | Optional | Environment (this schema) |
 | [xdm:viewportWidth](#xdmviewportwidth) | `integer` | Optional | Environment (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
+
+## xdm:adViewability
+### MRC Viewability
+
+The runtime measured viewability specific details such as player volume, library version, window status, viewport/ad measured dimensions, etc.
+
+`xdm:adViewability`
+* is optional
+* type: MRC Viewability
+* defined in this schema
+
+### xdm:adViewability Type
+
+
+* [MRC Viewability](adviewability.schema.md) – `https://ns.adobe.com/xdm/context/adviewability`
+
+
+
+
 
 ## xdm:browserDetails
 ### Browser Details

@@ -44,10 +44,7 @@
                     "type": "number",
                     "description": "The specific elevation of the defined coordinate. The value conforms to the [WGS84](http://gisgeography.com/wgs84-world-geodetic-system/) datum and is measured in meters."
                 }
-            },
-            "required": [
-                "@id"
-            ]
+            }
         }
     },
     "allOf": [

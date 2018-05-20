@@ -8,9 +8,11 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id":
     "https://ns.adobe.com/experience/offer-management/representation-content",
+  "meta:abstract": true,
+  "meta:extensible": true,
   "type": "object",
   "title": "Content",
-  "description": "Offer representation content",
+  "description": "Content used in an offer representation",
   "definitions": {
     "content-type": {
       "type": "string",

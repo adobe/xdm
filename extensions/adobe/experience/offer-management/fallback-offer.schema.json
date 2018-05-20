@@ -8,65 +8,14 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/experience/offer-management/fallback-offer",
   "meta:extends": ["https://ns.adobe.com/experience/offer-management/offer"],
+  "meta:abstract": false,
+  "meta:extensible": true,
   "type": "object",
   "title": "Fallback Offer",
-  "description":
-    "Fallback offer is a default offer used when there is no offers satisfying all constraints",
+  "description": "Fallback offer is a default offer used when there is no personalization offer left that satisfies all constraints",
   "definitions": {
     "fallback-offer": {
-      "type": "object",
-      "properties": {
-        "@id": {
-          "type": "string",
-          "format": "uri",
-          "title": "ID",
-          "description": "The unique identifier of the offer"
-        },
-        "xdm:name": {
-          "type": "string",
-          "title": "Name",
-          "description": "Offer name"
-        },
-        "xdm:status": {
-          "type": "string",
-          "title": "Status",
-          "description": "Offer Status",
-          "enum": [
-            "draft",
-            "pending",
-            "rejected",
-            "approved",
-            "inUse",
-            "archived"
-          ],
-          "meta:enum": {
-            "draft": "Draft",
-            "pending": "Pending",
-            "rejected": "Rejected",
-            "approved": "Approved",
-            "inUse": "In Use",
-            "archived": "Archived"
-          }
-        },
-        "xdm:representations": {
-          "type": "array",
-          "items": {
-            "$ref":
-              "https://ns.adobe.com/experience/offer-management/offer-representation"
-          },
-          "title": "Representations",
-          "description": "Offer representations for different placements"
-        },
-        "xdm:customMetadata": {
-          "type": "object",
-          "additionalProperties": {
-            "type": "string"
-          },
-          "title": "Custom Properties",
-          "description":
-          "Custom metadata allows end-users to attach properties to individual instances"
-        }
-      }
+      "type": "object"
     }
   },
   "allOf": [

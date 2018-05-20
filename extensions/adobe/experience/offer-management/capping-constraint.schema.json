@@ -7,6 +7,8 @@
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/experience/offer-management/capping-constraint",
+  "meta:abstract": false,
+  "meta:extensible": true,
   "type": "object",
   "title": "Capping Constraint",
   "description": "Offer Capping Constraint",

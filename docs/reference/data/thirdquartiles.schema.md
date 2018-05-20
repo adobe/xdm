@@ -1,34 +1,34 @@
 
-# impressions Schema
+# third-quartiles Schema
 
 ```
-https://ns.adobe.com/xdm/data/metrics/advertising/impressions
+https://ns.adobe.com/xdm/data/thirdquartiles
 ```
 
-The metric impressions describe the number of digital assets rendered.
+The metric third-quartiles describes digital video which played for at least 75% of the total duration.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/impressions.schema.json](data/impressions.schema.json) |
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/thirdquartiles.schema.json](data/thirdquartiles.schema.json) |
 
-## impressions Example
+## third-quartiles Example
 ```json
 {
-  "schema:name": "metric: impressions",
-  "@id": "xdm:impressions",
+  "schema:name": "metric: thirdQuartiles",
+  "@id": "xdm:thirdQuartiles",
   "xdm:measurement": "count",
   "xdm:unit": null
 }
 ```
 
-# impressions Properties
+# third-quartiles Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | impressions (this schema) |
-| [schema:name](#schemaname) | `const` | **Required** | impressions (this schema) |
-| [xdm:measurement](#xdmmeasurement) | `const` | **Required** | impressions (this schema) |
-| [xdm:unit](#xdmunit) | `const` | **Required** | impressions (this schema) |
+| [@id](#@id) | `const` | **Required** | third-quartiles (this schema) |
+| [schema:name](#schemaname) | `const` | **Required** | third-quartiles (this schema) |
+| [xdm:measurement](#xdmmeasurement) | `const` | **Required** | third-quartiles (this schema) |
+| [xdm:unit](#xdmunit) | `const` | **Required** | third-quartiles (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -43,7 +43,7 @@ The unique identifier of this metric.
 The value of this property **must** be equal to:
 
 ```json
-"xdm:impressions"
+"xdm:thirdQuartiles"
 ```
 
 
@@ -52,7 +52,7 @@ The value of this property **must** be equal to:
 
 ## schema:name
 
-The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.
+The metric third-quartiles describes digital video which played for at least 75% of the total duration.
 
 `schema:name`
 * is **required**
@@ -62,7 +62,7 @@ The human-readable name of the metric. The name can be used in user interfaces a
 The value of this property **must** be equal to:
 
 ```json
-"metric: impressions"
+"metric: thirdQuartiles"
 ```
 
 

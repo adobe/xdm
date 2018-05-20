@@ -5,27 +5,27 @@
         "you may not use this file except in compliance with the License. You may obtain a copy",
         "of the License at https://creativecommons.org/licenses/by/4.0/"
     ],
-    "$id": "https://ns.adobe.com/xdm/data/clicks",
+    "$id": "https://ns.adobe.com/xdm/data/measuredmuted",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "clicks",
+    "title": "measured-muted",
     "type": "object",
     "meta:extensible": true,
     "meta:extends": [
         "https://ns.adobe.com/xdm/data/metricdefinition"
     ],
-    "description": "The metric measures the number of interactions a user had by clicking on an asset.",
+    "description": "The advertising/viewability metric measured-muted describes whether the ad was measured to be muted at event time.",
     "definitions": {
         "metricdefinition": {
             "properties": {
                 "@id": {
                     "type": "string",
-                    "const": "xdm:clicks",
+                    "const": "xdm:measuredMuted",
                     "description": "The unique identifier of this metric."
                 },
                 "schema:name": {
                     "type": "string",
-                    "const": "metric: clicks",
-                    "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
+                    "const": "advertising/viewability metric: measuredMuted",
+                    "description": "The advertising/viewability metric measured-muted describes whether the ad was measured to be muted at event time."
                 },
                 "xdm:measurement": {
                     "type": "string",
@@ -52,8 +52,8 @@
     "meta:status": "experimental",
     "examples": [
         {
-            "schema:name": "metric: clicks",
-            "@id": "xdm:clicks",
+            "schema:name": "advertising/viewability metric: measuredMuted",
+            "@id": "xdm:measuredMuted",
             "xdm:measurement": "count",
             "xdm:unit": null
         }

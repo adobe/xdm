@@ -1,34 +1,34 @@
 
-# impressions Schema
+# midpoints Schema
 
 ```
-https://ns.adobe.com/xdm/data/metrics/advertising/impressions
+https://ns.adobe.com/xdm/data/midpoints
 ```
 
-The metric impressions describe the number of digital assets rendered.
+The metric midpoints describes when digital video played for at least 50% of the total duration.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/impressions.schema.json](data/impressions.schema.json) |
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/midpoints.schema.json](data/midpoints.schema.json) |
 
-## impressions Example
+## midpoints Example
 ```json
 {
-  "schema:name": "metric: impressions",
-  "@id": "xdm:impressions",
+  "schema:name": "metric: midpoints",
+  "@id": "xdm:midpoints",
   "xdm:measurement": "count",
   "xdm:unit": null
 }
 ```
 
-# impressions Properties
+# midpoints Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | impressions (this schema) |
-| [schema:name](#schemaname) | `const` | **Required** | impressions (this schema) |
-| [xdm:measurement](#xdmmeasurement) | `const` | **Required** | impressions (this schema) |
-| [xdm:unit](#xdmunit) | `const` | **Required** | impressions (this schema) |
+| [@id](#@id) | `const` | **Required** | midpoints (this schema) |
+| [schema:name](#schemaname) | `const` | **Required** | midpoints (this schema) |
+| [xdm:measurement](#xdmmeasurement) | `const` | **Required** | midpoints (this schema) |
+| [xdm:unit](#xdmunit) | `const` | **Required** | midpoints (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -43,7 +43,7 @@ The unique identifier of this metric.
 The value of this property **must** be equal to:
 
 ```json
-"xdm:impressions"
+"xdm:midpoints"
 ```
 
 
@@ -52,7 +52,7 @@ The value of this property **must** be equal to:
 
 ## schema:name
 
-The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.
+The metric midpoints describes when digital video played for at least 50% of the total duration.
 
 `schema:name`
 * is **required**
@@ -62,7 +62,7 @@ The human-readable name of the metric. The name can be used in user interfaces a
 The value of this property **must** be equal to:
 
 ```json
-"metric: impressions"
+"metric: midpoints"
 ```
 
 

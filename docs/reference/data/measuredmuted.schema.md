@@ -1,34 +1,34 @@
 
-# impressions Schema
+# measured-muted Schema
 
 ```
-https://ns.adobe.com/xdm/data/metrics/advertising/impressions
+https://ns.adobe.com/xdm/data/measuredmuted
 ```
 
-The metric impressions describe the number of digital assets rendered.
+The advertising/viewability metric measured-muted describes whether the ad was measured to be muted at event time.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/impressions.schema.json](data/impressions.schema.json) |
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/measuredmuted.schema.json](data/measuredmuted.schema.json) |
 
-## impressions Example
+## measured-muted Example
 ```json
 {
-  "schema:name": "metric: impressions",
-  "@id": "xdm:impressions",
+  "schema:name": "advertising/viewability metric: measuredMuted",
+  "@id": "xdm:measuredMuted",
   "xdm:measurement": "count",
   "xdm:unit": null
 }
 ```
 
-# impressions Properties
+# measured-muted Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | impressions (this schema) |
-| [schema:name](#schemaname) | `const` | **Required** | impressions (this schema) |
-| [xdm:measurement](#xdmmeasurement) | `const` | **Required** | impressions (this schema) |
-| [xdm:unit](#xdmunit) | `const` | **Required** | impressions (this schema) |
+| [@id](#@id) | `const` | **Required** | measured-muted (this schema) |
+| [schema:name](#schemaname) | `const` | **Required** | measured-muted (this schema) |
+| [xdm:measurement](#xdmmeasurement) | `const` | **Required** | measured-muted (this schema) |
+| [xdm:unit](#xdmunit) | `const` | **Required** | measured-muted (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -43,7 +43,7 @@ The unique identifier of this metric.
 The value of this property **must** be equal to:
 
 ```json
-"xdm:impressions"
+"xdm:measuredMuted"
 ```
 
 
@@ -52,7 +52,7 @@ The value of this property **must** be equal to:
 
 ## schema:name
 
-The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.
+The advertising/viewability metric measured-muted describes whether the ad was measured to be muted at event time.
 
 `schema:name`
 * is **required**
@@ -62,7 +62,7 @@ The human-readable name of the metric. The name can be used in user interfaces a
 The value of this property **must** be equal to:
 
 ```json
-"metric: impressions"
+"advertising/viewability metric: measuredMuted"
 ```
 
 

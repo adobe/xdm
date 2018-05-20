@@ -1,34 +1,34 @@
 
-# impressions Schema
+# measured-window-inactive Schema
 
 ```
-https://ns.adobe.com/xdm/data/metrics/advertising/impressions
+https://ns.adobe.com/xdm/data/measuredwindowinactive
 ```
 
-The metric impressions describe the number of digital assets rendered.
+The advertising/viewability metric measured-window-inactive describes whether the ad was displayed in a window not active by the user at event time.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/impressions.schema.json](data/impressions.schema.json) |
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/measuredwindowinactive.schema.json](data/measuredwindowinactive.schema.json) |
 
-## impressions Example
+## measured-window-inactive Example
 ```json
 {
-  "schema:name": "metric: impressions",
-  "@id": "xdm:impressions",
+  "schema:name": "advertising/viewability metric: measuredWindowInactive",
+  "@id": "xdm:measuredWindowInactive",
   "xdm:measurement": "count",
   "xdm:unit": null
 }
 ```
 
-# impressions Properties
+# measured-window-inactive Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | impressions (this schema) |
-| [schema:name](#schemaname) | `const` | **Required** | impressions (this schema) |
-| [xdm:measurement](#xdmmeasurement) | `const` | **Required** | impressions (this schema) |
-| [xdm:unit](#xdmunit) | `const` | **Required** | impressions (this schema) |
+| [@id](#@id) | `const` | **Required** | measured-window-inactive (this schema) |
+| [schema:name](#schemaname) | `const` | **Required** | measured-window-inactive (this schema) |
+| [xdm:measurement](#xdmmeasurement) | `const` | **Required** | measured-window-inactive (this schema) |
+| [xdm:unit](#xdmunit) | `const` | **Required** | measured-window-inactive (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -43,7 +43,7 @@ The unique identifier of this metric.
 The value of this property **must** be equal to:
 
 ```json
-"xdm:impressions"
+"xdm:measuredWindowInactive"
 ```
 
 
@@ -52,7 +52,7 @@ The value of this property **must** be equal to:
 
 ## schema:name
 
-The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.
+The advertising/viewability metric measured-window-inactive describes whether the ad was displayed in a window not active by the user at event time.
 
 `schema:name`
 * is **required**
@@ -62,7 +62,7 @@ The human-readable name of the metric. The name can be used in user interfaces a
 The value of this property **must** be equal to:
 
 ```json
-"metric: impressions"
+"advertising/viewability metric: measuredWindowInactive"
 ```
 
 

@@ -1,34 +1,34 @@
 
-# impressions Schema
+# viewable-third-quartiles Schema
 
 ```
-https://ns.adobe.com/xdm/data/metrics/advertising/impressions
+https://ns.adobe.com/xdm/data/viewablethirdquartiles
 ```
 
-The metric impressions describe the number of digital assets rendered.
+The advertising/viewability metric viewable-third-quartiles describes whether at least 50% of the video's pixels were visible at the third quartile of play.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/impressions.schema.json](data/impressions.schema.json) |
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/viewablethirdquartiles.schema.json](data/viewablethirdquartiles.schema.json) |
 
-## impressions Example
+## viewable-third-quartiles Example
 ```json
 {
-  "schema:name": "metric: impressions",
-  "@id": "xdm:impressions",
+  "schema:name": "advertising/viewability metric: viewableThirdQuartiles",
+  "@id": "xdm:viewableThirdQuartiles",
   "xdm:measurement": "count",
   "xdm:unit": null
 }
 ```
 
-# impressions Properties
+# viewable-third-quartiles Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | impressions (this schema) |
-| [schema:name](#schemaname) | `const` | **Required** | impressions (this schema) |
-| [xdm:measurement](#xdmmeasurement) | `const` | **Required** | impressions (this schema) |
-| [xdm:unit](#xdmunit) | `const` | **Required** | impressions (this schema) |
+| [@id](#@id) | `const` | **Required** | viewable-third-quartiles (this schema) |
+| [schema:name](#schemaname) | `const` | **Required** | viewable-third-quartiles (this schema) |
+| [xdm:measurement](#xdmmeasurement) | `const` | **Required** | viewable-third-quartiles (this schema) |
+| [xdm:unit](#xdmunit) | `const` | **Required** | viewable-third-quartiles (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -43,7 +43,7 @@ The unique identifier of this metric.
 The value of this property **must** be equal to:
 
 ```json
-"xdm:impressions"
+"xdm:viewableThirdQuartiles"
 ```
 
 
@@ -52,7 +52,7 @@ The value of this property **must** be equal to:
 
 ## schema:name
 
-The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.
+The advertising/viewability metric viewable-third-quartiles describes whether at least 50% of the video's pixels were visible at the third quartile of play.
 
 `schema:name`
 * is **required**
@@ -62,7 +62,7 @@ The human-readable name of the metric. The name can be used in user interfaces a
 The value of this property **must** be equal to:
 
 ```json
-"metric: impressions"
+"advertising/viewability metric: viewableThirdQuartiles"
 ```
 
 

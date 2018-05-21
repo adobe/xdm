@@ -10,12 +10,17 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "User Journey Reporting Event",
   "type": "object",
-  "meta:extends": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "",
   "definitions": {
     "reportingevent": {
       "properties": {
-        "https://ns.adobe.com/experience/campaign/orchestration/reportingevent/dataProviderType": {
+        "xdm:timestamp": {
+          "title": "Time stamp for event",
+          "type": "string",
+          "format": "date-time",
+          "description": "Time of generation of reporting event"
+        },
+        "xdm:dataEnrichmentProvider": {
           "title": "Type of the data provider",
           "type": "string",
           "description": "The type of the data provider for data Enrichment",
@@ -27,26 +32,26 @@
               "The data provider is self contained, entity contains injected data"
           }
         },
-        "https://ns.adobe.com/experience/campaign/orchestration/reportingevent/dataEntityUID": {
+        "xdm:dataEntityUID": {
           "title": "Unique identifier of data entity",
           "type": "string",
           "format": "uri",
           "description":
             "The Identifier for the data entity used for data enrichment"
         },
-        "https://ns.adobe.com/experience/campaign/orchestration/reportingevent/orgID": {
+        "xdm:orgID": {
           "title": "Organizational unit Identifier",
           "type": "string",
           "description":
             "Identifier of the Organizational unit for this Journey version"
         },
-        "https://ns.adobe.com/experience/campaign/orchestration/reportingevent/actionUID": {
+        "xdm:actionUID": {
           "title": "Action Identifier",
           "type": "string",
           "format": "uri",
           "description": "Unique Identifier denoting the associated action."
         },
-        "https://ns.adobe.com/experience/campaign/orchestration/reportingevent/actionType": {
+        "xdm:actionType": {
           "title": "Action Type",
           "type": "string",
           "description": "The type of action to be performed.",
@@ -67,13 +72,13 @@
               "The ACS Message Center action performs REST calls to an Adobe Campaign Standard instance to send messages with Message Center"
           }
         },
-        "https://ns.adobe.com/experience/campaign/orchestration/reportingevent/eventID": {
+        "xdm:eventID": {
           "title": "Event id",
           "type": "string",
           "format": "uri",
           "description": "The Identifier for the external Event received"
         },
-        "https://ns.adobe.com/experience/campaign/orchestration/reportingevent/flowControlType": {
+        "xdm:flowControlType": {
           "title": "Flow control",
           "type": "string",
           "description": "Flow control in the journey triggered by the event.",
@@ -85,7 +90,7 @@
             "Condition": "if a conditional step has been processed"
           }
         },
-        "https://ns.adobe.com/experience/campaign/orchestration/reportingevent/eventMetrics": {
+        "xdm:eventMetrics": {
           "title": "Metrics for reporting",
           "$ref":
             "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics",
@@ -93,35 +98,35 @@
             "The metrics for actions performed during this observation."
         },
         "https://ns.adobe.com/experience/campaign/orchestration/journey": {
-          "title": "Journey or WorkFlow of an User",
+          "title": "Journey or Workflow of an User",
           "type": "object",
           "description": "Schema for describing the Journey of an User ",
           "properties": {
-            "journeyUID": {
+            "xdm:journeyUID": {
               "title": "Journey Unique Identifier",
               "type": "string",
               "format": "uri",
               "description":
                 "The unique identifier of the journey created by the marketer."
             },
-            "journeyVersionUID": {
+            "xdm:journeyVersionUID": {
               "title": "Journey version identifier",
               "type": "string",
               "format": "uri",
               "description":
                 "The unique identifier denoting the version of journey on which the user is active"
             }
-          }
+          },
+          "required": ["xdm:journeyUID", "xdm:journeyVersionUID"]
         }
       }
-    },
-    "required": [
-      "https://ns.adobe.com/experience/campaign/orchestration/journey/journeyUID",
-      "https://ns.adobe.com/experience/campaign/orchestration/journey/journeyVerUID",
-      "https://ns.adobe.com/experience/campaign/orchestration/reportingevent/timestamp",
-      "https://ns.adobe.com/experience/campaign/orchestration/reportingevent/orgId"
-    ]
+    }
   },
+  "required": [
+    "https://ns.adobe.com/experience/campaign/orchestration/journey",
+    "xdm:timestamp",
+    "xdm:orgID"
+  ],
   "allof": [
     {
       "$ref": "#/definitions/reportingevent"

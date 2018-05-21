@@ -1,14 +1,5 @@
 {
   "https://ns.adobe.com/xdm/data/metrics/direct-marketing/sends": {
     "xdm:value": 1000
-  },
-  "https://ns.adobe.com/xdm/data/metrics/commerce/product-views": {
-    "xdm:value": 20,
-    "xdm:unit": null
-  },
-  "https://ns.adobe.com/xdm/data/metrics/web/page-views": {
-    "@type": "https://ns.adobe.com/xdm/data/metrics/web/page-views",
-    "xdm:value": 1625,
-    "xdm:unit": null
   }
 }

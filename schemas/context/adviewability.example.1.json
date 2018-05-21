@@ -1,0 +1,16 @@
+{
+  "xdm:adUnitDepth": 0,
+  "xdm:viewportHeight": 1250,
+  "xdm:viewportWidth": 1600,
+  "xdm:adHeight": 250,
+  "xdm:adWidth": 300,
+  "xdm:playerVolume": 85,
+  "xdm:measurementEligible": true,
+  "xdm:implementationDetails" : {
+    "xdm:name": "https://ns.adobe.com/xdm/context/viewability-details",
+    "xdm:version": "1"
+  },
+  "xdm:viewable": true,
+  "xdm:activeWindow": true,
+  "xdm:percentViewable": 89
+}

@@ -19,20 +19,10 @@
         }
       },
       "properties": {
-        "https://ns.adobe.com/xdm/data/metrics/commerce/abandons": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-            "A product-list has been identified as no longer accessible (e.g purchasable) by the user."
-        },
         "https://ns.adobe.com/xdm/data/metrics/direct-marketing/bounces": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
             "Asynchronous message(s) that have been returned as temporarily undeliverable the receiving system."
-        },
-        "https://ns.adobe.com/xdm/data/metrics/commerce/checkouts": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-            "An action during a checkout process of a product-list, there can be more than one checkout event if there are multiple steps in a checkout process. If there are multiple steps the event time information and referenced page or experience is used to identify the step individual events represent in order."
         },
         "https://ns.adobe.com/xdm/data/metrics/advertising/clicks": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
@@ -62,10 +52,6 @@
           "description":
             "Impression(s) of an advertisement to an end user with the potential of being viewed."
         },
-        "https://ns.adobe.com/xdm/data/metrics/web/link-clicks": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Click of a web-link has occurred."
-        },
         "https://ns.adobe.com/xdm/data/metrics/application/launches": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
@@ -80,48 +66,6 @@
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
             "Asynchronous message(s) failed to deliver in a way that indicates that no future delivery attempts will be successful to the address."
-        },
-        "https://ns.adobe.com/xdm/data/metrics/web/page-views": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "View(s) of a webpage has occurred."
-        },
-        "https://ns.adobe.com/xdm/data/metrics/commerce/product-list-adds": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-            "Addition of a product to the product-list. Example a product is added to a shopping cart."
-        },
-        "https://ns.adobe.com/xdm/data/metrics/commerce/product-list-opens": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-            "Initializations of a new product-list. Example a shopping cart is created."
-        },
-        "https://ns.adobe.com/xdm/data/metrics/commerce/product-list-removals": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-            "Removal(s) of a product entry from a product-list. Example a product is removed from a shopping cart."
-        },
-        "https://ns.adobe.com/xdm/data/metrics/commerce/product-list-reopens": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-            "A product-list that was no longer accessible(abandoned) has been re-activated by the user. Example via a re-marketing activity."
-        },
-        "https://ns.adobe.com/xdm/data/metrics/commerce/product-list-views": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "View(s) of a product-list has occurred."
-        },
-        "https://ns.adobe.com/xdm/data/metrics/commerce/product-views": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "View(s) of a product have occurred."
-        },
-        "https://ns.adobe.com/xdm/data/metrics/commerce/purchases": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-            "An order has been accepted. Purchase is the only required action in a commerce conversion. Purchase must have a product-list referenced."
-        },
-        "https://ns.adobe.com/xdm/data/metrics/commerce/save-for-laters": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-            "Product-list is saved for future use. Example a product wish list."
         },
         "https://ns.adobe.com/xdm/data/metrics/direct-marketing/sends": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",

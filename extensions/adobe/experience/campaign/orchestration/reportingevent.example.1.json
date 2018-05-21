@@ -1,38 +1,29 @@
 {
-
-  "https://ns.adobe.com/experience/campaign/orchestration/journey" :{
+  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+  "https://ns.adobe.com/experience/campaign/orchestration/journey": {
     "journeyUID": "1234-abc4-1232-afeb-4fff",
     "journeyVersionUID": "1.1"
   },
- "https://ns.adobe.com/experience/campaign/orchestration/journey":{
-  "xdm:metrics": {
-      "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics": {      
-          "xdm:EnteredJourneyInstance":true,
-          "xdm:ErrorInJourneyInstance":true,
-          "xdm:ErrorInEventProcessing":true,
-          "xdm:ErrorInActionExecution":true,
-          "xdm:ErrorInJumpActionExecution":true,
-          "xdm:ErrorInEnrichment":true,
-          "xdm:ExecutedEvent":true,
-          "xdm:ExecutedAction":true,
-          "xdm:ExecutedFlowControl":true,
-          "xdm:ExecutedJumpAction":true,
-          "xdm:ExecutedEnrichment":true,
-          "xdm:JumpToJourney":true 
-        }
+  "https://ns.adobe.com/experience/campaign/orchestration/reportingevent/eventMetrics": {
+    "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics/EnteredJourneyInstance": {
+      "xdm:value": 1
     },
-  "xdm:timestamp": "1365745732457",
-  "xdm:dataProviderType": "acs",
-  "xdm:dataEntityUID": "123",
-  "xdm:orgID": "abcabc1234abcd@AdobeOrg",
-  "xdm:actionUID": "123",
-  "xdm:actionType": "parameterizedAction",
-  "xdm:eventId": "123",
-  "xdm:flowControlType": "End",
-  "xdm:isError": false,
-  "xdm:isJourneyVersionFailure": false,
-  "xdm:isJourneyEntered": false,
-  "xdm:isJourneyExited": false,
-  "xdm:isJumpAction": false
-  }
+
+    "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics/ErrorInJourneyInstance": {
+      "xdm:value": 1,
+      "xdm:unit": null
+    }
+  },
+  "https://ns.adobe.com/experience/campaign/orchestration/reportingevent/dataProviderType":
+    "acs",
+  "https://ns.adobe.com/experience/campaign/orchestration/reportingevent/dataEntityUID":
+    "123",
+  "https://ns.adobe.com/experience/campaign/orchestration/reportingevent/orgID":
+    "abcabc1234abcd@AdobeOrg",
+  "https://ns.adobe.com/experience/campaign/orchestration/reportingevent/actionUID":
+    "123",
+  "https://ns.adobe.com/experience/campaign/orchestration/reportingevent/actionType":
+    "parameterizedAction",
+  "https://ns.adobe.com/experience/campaign/orchestration/reportingevent/eventID":
+    "123"
 }

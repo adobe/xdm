@@ -143,6 +143,13 @@
           "items": {
             "$ref": "https://ns.adobe.com/xdm/context/subscription"
           }
+        },
+        "xdm:testProfile": {
+          "title": "Test Profile",
+          "type": "boolean",
+          "description":
+            "This entity describes a `profile` which is not based a real person but intended for testing purposes.",
+          "default": false
         }
       }
     }

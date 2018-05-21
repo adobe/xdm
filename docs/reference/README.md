@@ -4,6 +4,29 @@
 
 
 
+## /channels/
+
+* [ADM](./channels/adm.schema.md) – `https://ns.adobe.com/xdm/channels/adm` (Experimental)
+* [APNS](./channels/apns.schema.md) – `https://ns.adobe.com/xdm/channels/apns` (Experimental)
+* [Application](./channels/application.schema.md) – `https://ns.adobe.com/xdm/channels/application` (Experimental)
+* [Baidu](./channels/baidu.schema.md) – `https://ns.adobe.com/xdm/channels/baidu` (Experimental)
+* [Direct Mail](./channels/direct-mail.schema.md) – `https://ns.adobe.com/xdm/channels/direct-mail` (Experimental)
+* [E-Mail](./channels/agency.schema.md) – `https://ns.adobe.com/xdm/channels/agency` (Experimental)
+* [E-Mail](./channels/email.schema.md) – `https://ns.adobe.com/xdm/channels/email` (Experimental)
+* [Experience Channel](./channels/channel.schema.md) – `https://ns.adobe.com/xdm/channels/channel` (Experimental)
+* [Facebook News Feed](./channels/facebook-feed.schema.md) – `https://ns.adobe.com/xdm/channels/facebook-feed` (Experimental)
+* [Fax](./channels/fax.schema.md) – `https://ns.adobe.com/xdm/channels/fax` (Experimental)
+* [GCM](./channels/gcm.schema.md) – `https://ns.adobe.com/xdm/channels/gcm` (Experimental)
+* [LINE](./channels/line.schema.md) – `https://ns.adobe.com/xdm/channels/line` (Experimental)
+* [MPNS](./channels/mpns.schema.md) – `https://ns.adobe.com/xdm/channels/mpns` (Experimental)
+* [Phone](./channels/phone.schema.md) – `https://ns.adobe.com/xdm/channels/phone` (Experimental)
+* [SMS](./channels/sms.schema.md) – `https://ns.adobe.com/xdm/channels/sms` (Experimental)
+* [Twitter Feed](./channels/twitter-feed.schema.md) – `https://ns.adobe.com/xdm/channels/twitter-feed` (Experimental)
+* [WNS](./channels/wns.schema.md) – `https://ns.adobe.com/xdm/channels/wns` (Experimental)
+* [WeChat](./channels/wechat.schema.md) – `https://ns.adobe.com/xdm/channels/wechat` (Experimental)
+* [Web](./channels/mobile-app.schema.md) – `https://ns.adobe.com/xdm/channels/mobile-app` (Experimental)
+* [Web](./channels/web.schema.md) – `https://ns.adobe.com/xdm/channels/web` (Experimental)
+
 ## /assets/
 
 * [Aggregated Asset](./assets/aggregated-asset.schema.md) – `https://ns.adobe.com/xdm/assets/aggregated-asset` (Experimental)
@@ -43,31 +66,9 @@
 * [Page](./common/page.schema.md) – `https://ns.adobe.com/xdm/common/page` (Experimental)
 * [Principal](./common/principal.schema.md) – `https://ns.adobe.com/xdm/common/principal` (Experimental)
 
-## /channels/
-
-* [ADM](./channels/adm.schema.md) – `https://ns.adobe.com/xdm/channels/adm` (Experimental)
-* [APNS](./channels/apns.schema.md) – `https://ns.adobe.com/xdm/channels/apns` (Experimental)
-* [Application](./channels/application.schema.md) – `https://ns.adobe.com/xdm/channels/application` (Experimental)
-* [Baidu](./channels/baidu.schema.md) – `https://ns.adobe.com/xdm/channels/baidu` (Experimental)
-* [Direct Mail](./channels/direct-mail.schema.md) – `https://ns.adobe.com/xdm/channels/direct-mail` (Experimental)
-* [E-Mail](./channels/agency.schema.md) – `https://ns.adobe.com/xdm/channels/agency` (Experimental)
-* [E-Mail](./channels/email.schema.md) – `https://ns.adobe.com/xdm/channels/email` (Experimental)
-* [Experience Channel](./channels/channel.schema.md) – `https://ns.adobe.com/xdm/channels/channel` (Experimental)
-* [Facebook News Feed](./channels/facebook-feed.schema.md) – `https://ns.adobe.com/xdm/channels/facebook-feed` (Experimental)
-* [Fax](./channels/fax.schema.md) – `https://ns.adobe.com/xdm/channels/fax` (Experimental)
-* [GCM](./channels/gcm.schema.md) – `https://ns.adobe.com/xdm/channels/gcm` (Experimental)
-* [LINE](./channels/line.schema.md) – `https://ns.adobe.com/xdm/channels/line` (Experimental)
-* [MPNS](./channels/mpns.schema.md) – `https://ns.adobe.com/xdm/channels/mpns` (Experimental)
-* [Phone](./channels/phone.schema.md) – `https://ns.adobe.com/xdm/channels/phone` (Experimental)
-* [SMS](./channels/sms.schema.md) – `https://ns.adobe.com/xdm/channels/sms` (Experimental)
-* [Twitter Feed](./channels/twitter-feed.schema.md) – `https://ns.adobe.com/xdm/channels/twitter-feed` (Experimental)
-* [WNS](./channels/wns.schema.md) – `https://ns.adobe.com/xdm/channels/wns` (Experimental)
-* [WeChat](./channels/wechat.schema.md) – `https://ns.adobe.com/xdm/channels/wechat` (Experimental)
-* [Web](./channels/mobile-app.schema.md) – `https://ns.adobe.com/xdm/channels/mobile-app` (Experimental)
-* [Web](./channels/web.schema.md) – `https://ns.adobe.com/xdm/channels/web` (Experimental)
-
 ## /context/
 
+* [Advertising](./context/advertising.schema.md) – `https://ns.adobe.com/xdm/context/advertising` (Experimental)
 * [Browser Details](./context/browserdetails.schema.md) – `https://ns.adobe.com/xdm/context/browserdetails` (Stabilizing)
 * [Commerce](./context/commerce.schema.md) – `https://ns.adobe.com/xdm/context/commerce` (Stabilizing)
 * [Device](./context/device.schema.md) – `https://ns.adobe.com/xdm/context/device` (Stabilizing)
@@ -115,17 +116,34 @@
 * [Purchases](./data/purchases.schema.md) – `https://ns.adobe.com/xdm/data/metrics/purchases` (Experimental)
 * [Save For Laters](./data/save-for-laters.schema.md) – `https://ns.adobe.com/xdm/data/metrics/save-for-laters` (Experimental)
 * [bounces](./data/bounces.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/bounces` (Experimental)
-* [clicks](./data/clicks.schema.md) – `https://ns.adobe.com/xdm/data/metrics/advertising/clicks` (Experimental)
+* [clicks](./data/clicks.schema.md) – `https://ns.adobe.com/xdm/data/clicks` (Experimental)
+* [completes](./data/completes.schema.md) – `https://ns.adobe.com/xdm/data/completes` (Experimental)
+* [conversions](./data/conversions.schema.md) – `https://ns.adobe.com/xdm/data/conversions` (Experimental)
+* [first-quartiles](./data/firstquartiles.schema.md) – `https://ns.adobe.com/xdm/data/firstquartiles` (Experimental)
 * [impressions](./data/impressions.schema.md) – `https://ns.adobe.com/xdm/data/metrics/advertising/impressions` (Experimental)
 * [link-clicks](./data/linkclicks.schema.md) – `https://ns.adobe.com/xdm/data/metrics/web/linkclicks` (Experimental)
+* [measured-ad-not-visible](./data/measuredadnotvisible.schema.md) – `https://ns.adobe.com/xdm/data/measuredadnotvisible` (Experimental)
+* [measured-muted](./data/measuredmuted.schema.md) – `https://ns.adobe.com/xdm/data/measuredmuted` (Experimental)
+* [measured-window-inactive](./data/measuredwindowinactive.schema.md) – `https://ns.adobe.com/xdm/data/measuredwindowinactive` (Experimental)
+* [midpoints](./data/midpoints.schema.md) – `https://ns.adobe.com/xdm/data/midpoints` (Experimental)
 * [mirror-pages](./data/mirror-pages.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages` (Experimental)
 * [non-deliverables](./data/non-deliverables.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/non-deliverables` (Experimental)
 * [not-sent](./data/not-sent.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/not-sent` (Experimental)
 * [opens](./data/opens.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/opens` (Experimental)
 * [page views](./data/pageviews.schema.md) – `https://ns.adobe.com/xdm/data/metrics/web/pageviews` (Experimental)
 * [sends](./data/sends.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/sends` (Experimental)
+* [starts](./data/starts.schema.md) – `https://ns.adobe.com/xdm/data/starts` (Experimental)
+* [third-quartiles](./data/thirdquartiles.schema.md) – `https://ns.adobe.com/xdm/data/thirdquartiles` (Experimental)
+* [unmeasurable-iframe](./data/unmeasurableiframe.schema.md) – `https://ns.adobe.com/xdm/data/unmeasurableiframe` (Experimental)
+* [unmeasurable-other](./data/unmeasurableother.schema.md) – `https://ns.adobe.com/xdm/data/unmeasurableother` (Experimental)
 * [unsubscriptions](./data/unsubscriptions.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/unsubscriptions` (Experimental)
 * [user-complaints](./data/user-complaints.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/user-complaints` (Experimental)
+* [viewability-eligible-impressions](./data/viewabilityeligibleimpressions.schema.md) – `https://ns.adobe.com/xdm/data/viewabilityeligibleimpressions` (Experimental)
+* [viewable-completes](./data/viewablecompletes.schema.md) – `https://ns.adobe.com/xdm/data/viewablecompletes` (Experimental)
+* [viewable-first-quartiles](./data/viewablefirstquartiles.schema.md) – `https://ns.adobe.com/xdm/data/viewablefirstquartiles` (Experimental)
+* [viewable-impressions](./data/viewableimpressions.schema.md) – `https://ns.adobe.com/xdm/data/viewableimpressions` (Experimental)
+* [viewable-midpoints](./data/viewablemidpoints.schema.md) – `https://ns.adobe.com/xdm/data/viewablemidpoints` (Experimental)
+* [viewable-third-quartiles](./data/viewablethirdquartiles.schema.md) – `https://ns.adobe.com/xdm/data/viewablethirdquartiles` (Experimental)
 
 ## /content/repository-policies/
 
@@ -148,21 +166,6 @@
 * [Unpublished Event](./common/event/unpublished.schema.md) – `https://ns.adobe.com/xdm/common/event/unpublished` (Experimental)
 * [Updated Event](./common/event/updated.schema.md) – `https://ns.adobe.com/xdm/common/event/updated` (Experimental)
 
-## /external/hal/
-
-* [HAL Link](./external/hal/hal-link.schema.md) – `https://ns.adobe.com/xdm/external/hal/link` (Experimental)
-* [HAL Resource](./external/hal/hal.schema.md) – `https://ns.adobe.com/xdm/external/hal/resource` (Experimental)
-
-## /external/repo/
-
-* [Access Control Entry](./external/repo/accesscontrolentry.schema.md) – `https://ns.adobe.com/xdm/external/repo/accesscontrolentry` (Experimental)
-* [Access Control Policy](./external/repo/accesscontrolpolicy.schema.md) – `https://ns.adobe.com/xdm/external/repo/accesscontrolpolicy` (Experimental)
-* [Asset](./external/repo/asset.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/asset` (Experimental)
-* [Common Properties](./external/repo/common.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0` (Experimental)
-* [Directory](./external/repo/directory.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/directory` (Experimental)
-* [Effective Privileges](./external/repo/effectiveprivileges.schema.md) – `https://ns.adobe.com/xdm/external/repo/effectiveprivileges` (Experimental)
-* [Sub-Directory](./external/repo/sub-directory.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/sub-directory` (Experimental)
-
 ## /external/activity-streams-2/
 
 * [Activity](./external/activity-streams-2/activity.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/activity` (Experimental)
@@ -177,9 +180,24 @@
 * [Object](./external/activity-streams-2/object.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/object` (Experimental)
 * [RDF Language Tagged String](./external/activity-streams-2/rdf-langstring.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langstring` (Experimental)
 
+## /external/hal/
+
+* [HAL Link](./external/hal/hal-link.schema.md) – `https://ns.adobe.com/xdm/external/hal/link` (Experimental)
+* [HAL Resource](./external/hal/hal.schema.md) – `https://ns.adobe.com/xdm/external/hal/resource` (Experimental)
+
 ## /external/schema/
 
 * [Geo Circle](./external/schema/geocircle.schema.md) – `http://schema.org/GeoCircle` (Experimental)
 * [Geo Coordinates](./external/schema/geocoordinates.schema.md) – `http://schema.org/GeoCoordinates` (Experimental)
 * [Geo Shape](./external/schema/geoshape.schema.md) – `http://schema.org/GeoShape` (Experimental)
+
+## /external/repo/
+
+* [Access Control Entry](./external/repo/accesscontrolentry.schema.md) – `https://ns.adobe.com/xdm/external/repo/accesscontrolentry` (Experimental)
+* [Access Control Policy](./external/repo/accesscontrolpolicy.schema.md) – `https://ns.adobe.com/xdm/external/repo/accesscontrolpolicy` (Experimental)
+* [Asset](./external/repo/asset.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/asset` (Experimental)
+* [Common Properties](./external/repo/common.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0` (Experimental)
+* [Directory](./external/repo/directory.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/directory` (Experimental)
+* [Effective Privileges](./external/repo/effectiveprivileges.schema.md) – `https://ns.adobe.com/xdm/external/repo/effectiveprivileges` (Experimental)
+* [Sub-Directory](./external/repo/sub-directory.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/sub-directory` (Experimental)
 

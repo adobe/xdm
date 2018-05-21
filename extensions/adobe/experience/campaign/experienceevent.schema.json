@@ -258,6 +258,11 @@
             }
           }
         },
+        "xdm:mutation": {
+          "title": "Mutated fields from the previous experienceEvent.",
+          "$ref": "https://ns.adobe.com/experience/campaign/experienceevent",
+          "description": "Information of the fields that have changed since the previous experienceevent to keep track of the state changes across events. For e.g. if when an email gets sent, an eE with metric `sends` will be sent. This may get bounced and an eE with metric `bounces` will be sent then. It may be important for a downstream application to know that the previous eE with metric `sends` is now to be invalidated. This field will contain the values from the previous eE that have a different value in the current eE."
+        },
         "xdm:cusField1": {
           "title": "Custom Field 1",
           "type": "string",

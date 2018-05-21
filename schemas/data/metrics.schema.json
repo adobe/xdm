@@ -24,9 +24,10 @@
           "description":
             "Asynchronous message(s) that have been returned as temporarily undeliverable the receiving system."
         },
-        "https://ns.adobe.com/xdm/data/metrics/advertising/clicks": {
+        "https://ns.adobe.com/xdm/data/metrics/commerce/checkouts": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Click(s) actions on an advertisement."
+          "description":
+            "An action during a checkout process of a product-list, there can be more than one checkout event if there are multiple steps in a checkout process. If there are multiple steps the event time information and referenced page or experience is used to identify the step individual events represent in order."
         },
         "https://ns.adobe.com/xdm/data/metrics/application/closes": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
@@ -46,11 +47,6 @@
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
             "Install of an application on a device. Triggered on first launch after install."
-        },
-        "https://ns.adobe.com/xdm/data/metrics/advertising/impressions": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-            "Impression(s) of an advertisement to an end user with the potential of being viewed."
         },
         "https://ns.adobe.com/xdm/data/metrics/application/launches": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",

@@ -52,6 +52,7 @@ Additionally, this schema can include a property that describes the data source 
 |----------|------|----------|------------|
 | [https://ns.adobe.com/experience/aaid](#https//ns.adobe.com/experience/aaid) | Identity | Optional | End User IDs (this schema) |
 | [https://ns.adobe.com/experience/acid](#https//ns.adobe.com/experience/acid) | Identity | Optional | End User IDs (this schema) |
+| [https://ns.adobe.com/experience/adcloud](#https//ns.adobe.com/experience/adcloud) | Identity | Optional | End User IDs (this schema) |
 | [https://ns.adobe.com/experience/mcid](#https//ns.adobe.com/experience/mcid) | Identity | Optional | End User IDs (this schema) |
 | [https://ns.adobe.com/experience/tntid](#https//ns.adobe.com/experience/tntid) | Identity | Optional | End User IDs (this schema) |
 | `.+//.+` | reference | Pattern | End User IDs (this schema) |
@@ -87,6 +88,25 @@ Adobe Campaign extension to End User IDs.
 * defined in this schema
 
 ### https://ns.adobe.com/experience/acid Type
+
+
+* [Identity](identity.schema.md) – `https://ns.adobe.com/xdm/context/identity`
+
+
+
+
+
+## https://ns.adobe.com/experience/adcloud
+### Adobe AdCloud End User IDs
+
+Adobe Adcloud extension to End User IDs.
+
+`https://ns.adobe.com/experience/adcloud`
+* is optional
+* type: Identity
+* defined in this schema
+
+### https://ns.adobe.com/experience/adcloud Type
 
 
 * [Identity](identity.schema.md) – `https://ns.adobe.com/xdm/context/identity`

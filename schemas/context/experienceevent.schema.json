@@ -73,7 +73,7 @@
         },
         "xdm:application": {
           "title": "Application",
-          "$ref": "https://ns.adobe.com/xdm/channels/application",
+          "$ref": "https://ns.adobe.com/xdm/context/application",
           "description":
             "The application related to the event observation. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login."
         },

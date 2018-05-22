@@ -24,3 +24,7 @@
 * Moved impressions and clicks metrics under advertising context #280
 * Added `xdm:primary` flag to `schemas/context/identity.schema.json` #335
 * Corrected naming of EndUserIDs by making them consistent (aaid and acid) `schemas/external/schema/geo*.schema.json` #333
+* Renamed `webPageView` to `webPageDetails` e.g `context/webpagedetail.schema.json` #336
+* Added application and mobile context via `context\application.schema.json` #318
+* Fixed issue where `context\experienceevent` `xdm:application` referred to the 'application.schema.json' in `channels` #318
+* `xdm:application` in `context\experienceevent` `@id` renamed to `xdm:id` #318

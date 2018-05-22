@@ -20,7 +20,7 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
   * [Environment](environment.schema.md) `https://ns.adobe.com/xdm/context/environment`
   * [Device](device.schema.md) `https://ns.adobe.com/xdm/context/device`
   * [Commerce](commerce.schema.md) `https://ns.adobe.com/xdm/context/commerce`
-  * [Application](../channels/application.schema.md) `https://ns.adobe.com/xdm/channels/application`
+  * [Application](application.schema.md) `https://ns.adobe.com/xdm/context/application`
   * [Search](search.schema.md) `https://ns.adobe.com/xdm/context/search`
   * [Web Information](webinfo.schema.md) `https://ns.adobe.com/xdm/context/webinfo`
   * [Marketing](marketing.schema.md) `https://ns.adobe.com/xdm/context/marketing`
@@ -124,7 +124,7 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
     }
   },
   "xdm:web": {
-    "xdm:webPageView": {
+    "xdm:webPageDetails": {
       "xdm:siteSection": "Shopping Cart",
       "xdm:server": "example.com",
       "xdm:name": "Purchase Confirmation",
@@ -301,7 +301,7 @@ The application related to the event observation. It could be either the applica
 ### xdm:application Type
 
 
-* [Application](../channels/application.schema.md) – `https://ns.adobe.com/xdm/channels/application`
+* [Application](application.schema.md) – `https://ns.adobe.com/xdm/context/application`
 
 
 

@@ -29,12 +29,7 @@ This is map of metrics and measures. Each key is the valid URI of a known `Metri
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [https://ns.adobe.com/xdm/data/metrics/application/closes](#https//ns.adobe.com/xdm/data/metrics/application/closes) | Measure | Optional | Metrics (this schema) |
-| [https://ns.adobe.com/xdm/data/metrics/application/crashes](#https//ns.adobe.com/xdm/data/metrics/application/crashes) | Measure | Optional | Metrics (this schema) |
-| [https://ns.adobe.com/xdm/data/metrics/application/featureusages](#https//ns.adobe.com/xdm/data/metrics/application/featureusages) | Measure | Optional | Metrics (this schema) |
-| [https://ns.adobe.com/xdm/data/metrics/application/installs](#https//ns.adobe.com/xdm/data/metrics/application/installs) | Measure | Optional | Metrics (this schema) |
-| [https://ns.adobe.com/xdm/data/metrics/application/launches](#https//ns.adobe.com/xdm/data/metrics/application/launches) | Measure | Optional | Metrics (this schema) |
-| [https://ns.adobe.com/xdm/data/metrics/application/upgrades](#https//ns.adobe.com/xdm/data/metrics/application/upgrades) | Measure | Optional | Metrics (this schema) |
+| [https://ns.adobe.com/xdm/data/metrics/advertising/impressions](#https//ns.adobe.com/xdm/data/metrics/advertising/impressions) | Measure | Optional | Metrics (this schema) |
 | [https://ns.adobe.com/xdm/data/metrics/commerce/checkouts](#https//ns.adobe.com/xdm/data/metrics/commerce/checkouts) | Measure | Optional | Metrics (this schema) |
 | [https://ns.adobe.com/xdm/data/metrics/direct-marketing/bounces](#https//ns.adobe.com/xdm/data/metrics/direct-marketing/bounces) | Measure | Optional | Metrics (this schema) |
 | [https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages](#https//ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages) | Measure | Optional | Metrics (this schema) |
@@ -46,106 +41,16 @@ This is map of metrics and measures. Each key is the valid URI of a known `Metri
 | [https://ns.adobe.com/xdm/data/metrics/direct-marketing/user-complaints](#https//ns.adobe.com/xdm/data/metrics/direct-marketing/user-complaints) | Measure | Optional | Metrics (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## https://ns.adobe.com/xdm/data/metrics/application/closes
+## https://ns.adobe.com/xdm/data/metrics/advertising/impressions
 
-Graceful termination(s) of an application.
+Impression(s) of an advertisement to an end user with the potential of being viewed.
 
-`https://ns.adobe.com/xdm/data/metrics/application/closes`
+`https://ns.adobe.com/xdm/data/metrics/advertising/impressions`
 * is optional
 * type: Measure
 * defined in this schema
 
-### https://ns.adobe.com/xdm/data/metrics/application/closes Type
-
-
-* [Measure](measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
-
-
-
-
-
-## https://ns.adobe.com/xdm/data/metrics/application/crashes
-
-Triggered when the application does not exit gracefully. Event is sent on application launch after a crash.
-
-`https://ns.adobe.com/xdm/data/metrics/application/crashes`
-* is optional
-* type: Measure
-* defined in this schema
-
-### https://ns.adobe.com/xdm/data/metrics/application/crashes Type
-
-
-* [Measure](measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
-
-
-
-
-
-## https://ns.adobe.com/xdm/data/metrics/application/featureusages
-
-Activation(s) of an application feature that is being measured.
-
-`https://ns.adobe.com/xdm/data/metrics/application/featureusages`
-* is optional
-* type: Measure
-* defined in this schema
-
-### https://ns.adobe.com/xdm/data/metrics/application/featureusages Type
-
-
-* [Measure](measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
-
-
-
-
-
-## https://ns.adobe.com/xdm/data/metrics/application/installs
-
-Install of an application on a device. Triggered on first launch after install.
-
-`https://ns.adobe.com/xdm/data/metrics/application/installs`
-* is optional
-* type: Measure
-* defined in this schema
-
-### https://ns.adobe.com/xdm/data/metrics/application/installs Type
-
-
-* [Measure](measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
-
-
-
-
-
-## https://ns.adobe.com/xdm/data/metrics/application/launches
-
-Launch of an application. Triggered on every run, including crashes and installs. Also triggered on a resume from background when the lifecycle session timeout has been exceeded.
-
-`https://ns.adobe.com/xdm/data/metrics/application/launches`
-* is optional
-* type: Measure
-* defined in this schema
-
-### https://ns.adobe.com/xdm/data/metrics/application/launches Type
-
-
-* [Measure](measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
-
-
-
-
-
-## https://ns.adobe.com/xdm/data/metrics/application/upgrades
-
-Upgrade of an application that has previously been installed. Triggered on first launch after upgrade.
-
-`https://ns.adobe.com/xdm/data/metrics/application/upgrades`
-* is optional
-* type: Measure
-* defined in this schema
-
-### https://ns.adobe.com/xdm/data/metrics/application/upgrades Type
+### https://ns.adobe.com/xdm/data/metrics/advertising/impressions Type
 
 
 * [Measure](measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`

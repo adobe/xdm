@@ -19,6 +19,11 @@
           "description":
             "Asynchronous message(s) that have been returned as temporarily undeliverable the receiving system."
         },
+        "xdm:clicks": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+            "Click(s) actions on a message."
+        },
         "xdm:mirrorPages": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":

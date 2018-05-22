@@ -5,28 +5,27 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/data/metrics/commerce/abandons",
+  "$id": "https://ns.adobe.com/xdm/data/measuredwindowinactive",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "abandons",
+  "title": "measured-window-inactive",
   "type": "object",
   "meta:extensible": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/metricdefinition"],
-  "description":
-    "Number of abandons for which a product list has been identified as no longer purchasable or accessible by the user without the user re-creating the product list from scratch.",
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/metricdefinition"
+  ],
+  "description": "The advertising/viewability metric measured-window-inactive describes whether the ad was displayed in a window not active by the user at event time.",
   "definitions": {
     "metricdefinition": {
       "properties": {
         "@id": {
           "type": "string",
-          "format": "uri",
-          "const": "https://ns.adobe.com/xdm/data/metrics/commerce/abandons",
+          "const": "xdm:measuredWindowInactive",
           "description": "The unique identifier of this metric."
         },
         "schema:name": {
           "type": "string",
-          "const": "commerce metric: abandons",
-          "description":
-            "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
+          "const": "advertising/viewability metric: measuredWindowInactive",
+          "description": "The advertising/viewability metric measured-window-inactive describes whether the ad was displayed in a window not active by the user at event time."
         },
         "xdm:measurement": {
           "type": "string",

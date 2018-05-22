@@ -17,12 +17,12 @@
             "$ref": "https://ns.adobe.com/xdm/context/identity",
             "description": "A unique identifier from Adobe Marketing Cloud."
         },
-        "https://ns.adobe.com/experience/analytics": {
+        "https://ns.adobe.com/experience/aaid": {
             "title": "Adobe Analytics Cloud End User IDs",
             "$ref": "https://ns.adobe.com/xdm/context/identity",
             "description": "Adobe Analytics Cloud extension to End User IDs."
         },
-        "https://ns.adobe.com/experience/campaign": {
+        "https://ns.adobe.com/experience/acid": {
             "title": "Adobe Campaign End User IDs",
             "$ref": "https://ns.adobe.com/xdm/context/identity",
             "description": "Adobe Campaign extension to End User IDs."
@@ -31,12 +31,18 @@
             "title": "Adobe Target End User IDs",
             "$ref": "https://ns.adobe.com/xdm/context/identity",
             "description": "Adobe Target extension to End User IDs."
+        },
+        "https://ns.adobe.com/experience/adcloud": {
+            "title": "Adobe AdCloud End User IDs",
+            "$ref": "https://ns.adobe.com/xdm/context/identity",
+            "description": "Adobe Adcloud extension to End User IDs."
         }
     },
     "meta:keys": {
+        "https://ns.adobe.com/experience/adcloud": "Adobe AdCloud",
         "https://ns.adobe.com/experience/tntid": "Adobe Target",
-        "https://ns.adobe.com/experience/campaign": "Adobe Campaign",
-        "https://ns.adobe.com/experience/analytics": "Adobe Analytics",
+        "https://ns.adobe.com/experience/acid": "Adobe Campaign",
+        "https://ns.adobe.com/experience/aaid": "Adobe Analytics",
         "https://ns.adobe.com/experience/mcid": "Marketing Cloud Identity Core Service"
     },
     "patternProperties": {
@@ -55,7 +61,7 @@
                     "xdm:code": "ECID"
                 }
             },
-            "https://ns.adobe.com/experience/analytics": {
+            "https://ns.adobe.com/experience/aaid": {
                 "@id": "https://data.adobe.io/entities/identity/2394509340-30453470347",
                 "xdm:namespace": {
                     "xdm:code": "AVID"

@@ -21,15 +21,6 @@ This is map of metrics and measures. Each key is the valid URI of a known `Metri
 {
   "https://ns.adobe.com/xdm/data/metrics/direct-marketing/sends": {
     "xdm:value": 1000
-  },
-  "https://ns.adobe.com/xdm/data/metrics/commerce/product-views": {
-    "xdm:value": 20,
-    "xdm:unit": null
-  },
-  "https://ns.adobe.com/xdm/data/metrics/web/page-views": {
-    "@type": "https://ns.adobe.com/xdm/data/metrics/web/page-views",
-    "xdm:value": 1625,
-    "xdm:unit": null
   }
 }
 ```
@@ -38,24 +29,13 @@ This is map of metrics and measures. Each key is the valid URI of a known `Metri
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [https://ns.adobe.com/xdm/data/metrics/advertising/clicks](#https//ns.adobe.com/xdm/data/metrics/advertising/clicks) | Measure | Optional | Metrics (this schema) |
-| [https://ns.adobe.com/xdm/data/metrics/advertising/impressions](#https//ns.adobe.com/xdm/data/metrics/advertising/impressions) | Measure | Optional | Metrics (this schema) |
 | [https://ns.adobe.com/xdm/data/metrics/application/closes](#https//ns.adobe.com/xdm/data/metrics/application/closes) | Measure | Optional | Metrics (this schema) |
 | [https://ns.adobe.com/xdm/data/metrics/application/crashes](#https//ns.adobe.com/xdm/data/metrics/application/crashes) | Measure | Optional | Metrics (this schema) |
 | [https://ns.adobe.com/xdm/data/metrics/application/featureusages](#https//ns.adobe.com/xdm/data/metrics/application/featureusages) | Measure | Optional | Metrics (this schema) |
 | [https://ns.adobe.com/xdm/data/metrics/application/installs](#https//ns.adobe.com/xdm/data/metrics/application/installs) | Measure | Optional | Metrics (this schema) |
 | [https://ns.adobe.com/xdm/data/metrics/application/launches](#https//ns.adobe.com/xdm/data/metrics/application/launches) | Measure | Optional | Metrics (this schema) |
 | [https://ns.adobe.com/xdm/data/metrics/application/upgrades](#https//ns.adobe.com/xdm/data/metrics/application/upgrades) | Measure | Optional | Metrics (this schema) |
-| [https://ns.adobe.com/xdm/data/metrics/commerce/abandons](#https//ns.adobe.com/xdm/data/metrics/commerce/abandons) | Measure | Optional | Metrics (this schema) |
 | [https://ns.adobe.com/xdm/data/metrics/commerce/checkouts](#https//ns.adobe.com/xdm/data/metrics/commerce/checkouts) | Measure | Optional | Metrics (this schema) |
-| [https://ns.adobe.com/xdm/data/metrics/commerce/product-list-adds](#https//ns.adobe.com/xdm/data/metrics/commerce/product-list-adds) | Measure | Optional | Metrics (this schema) |
-| [https://ns.adobe.com/xdm/data/metrics/commerce/product-list-opens](#https//ns.adobe.com/xdm/data/metrics/commerce/product-list-opens) | Measure | Optional | Metrics (this schema) |
-| [https://ns.adobe.com/xdm/data/metrics/commerce/product-list-removals](#https//ns.adobe.com/xdm/data/metrics/commerce/product-list-removals) | Measure | Optional | Metrics (this schema) |
-| [https://ns.adobe.com/xdm/data/metrics/commerce/product-list-reopens](#https//ns.adobe.com/xdm/data/metrics/commerce/product-list-reopens) | Measure | Optional | Metrics (this schema) |
-| [https://ns.adobe.com/xdm/data/metrics/commerce/product-list-views](#https//ns.adobe.com/xdm/data/metrics/commerce/product-list-views) | Measure | Optional | Metrics (this schema) |
-| [https://ns.adobe.com/xdm/data/metrics/commerce/product-views](#https//ns.adobe.com/xdm/data/metrics/commerce/product-views) | Measure | Optional | Metrics (this schema) |
-| [https://ns.adobe.com/xdm/data/metrics/commerce/purchases](#https//ns.adobe.com/xdm/data/metrics/commerce/purchases) | Measure | Optional | Metrics (this schema) |
-| [https://ns.adobe.com/xdm/data/metrics/commerce/save-for-laters](#https//ns.adobe.com/xdm/data/metrics/commerce/save-for-laters) | Measure | Optional | Metrics (this schema) |
 | [https://ns.adobe.com/xdm/data/metrics/direct-marketing/bounces](#https//ns.adobe.com/xdm/data/metrics/direct-marketing/bounces) | Measure | Optional | Metrics (this schema) |
 | [https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages](#https//ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages) | Measure | Optional | Metrics (this schema) |
 | [https://ns.adobe.com/xdm/data/metrics/direct-marketing/non-deliverables](#https//ns.adobe.com/xdm/data/metrics/direct-marketing/non-deliverables) | Measure | Optional | Metrics (this schema) |
@@ -65,42 +45,6 @@ This is map of metrics and measures. Each key is the valid URI of a known `Metri
 | [https://ns.adobe.com/xdm/data/metrics/direct-marketing/unsubscriptions](#https//ns.adobe.com/xdm/data/metrics/direct-marketing/unsubscriptions) | Measure | Optional | Metrics (this schema) |
 | [https://ns.adobe.com/xdm/data/metrics/direct-marketing/user-complaints](#https//ns.adobe.com/xdm/data/metrics/direct-marketing/user-complaints) | Measure | Optional | Metrics (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
-
-## https://ns.adobe.com/xdm/data/metrics/advertising/clicks
-
-Click(s) actions on an advertisement.
-
-`https://ns.adobe.com/xdm/data/metrics/advertising/clicks`
-* is optional
-* type: Measure
-* defined in this schema
-
-### https://ns.adobe.com/xdm/data/metrics/advertising/clicks Type
-
-
-* [Measure](measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
-
-
-
-
-
-## https://ns.adobe.com/xdm/data/metrics/advertising/impressions
-
-Impression(s) of an advertisement to an end user with the potential of being viewed.
-
-`https://ns.adobe.com/xdm/data/metrics/advertising/impressions`
-* is optional
-* type: Measure
-* defined in this schema
-
-### https://ns.adobe.com/xdm/data/metrics/advertising/impressions Type
-
-
-* [Measure](measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
-
-
-
-
 
 ## https://ns.adobe.com/xdm/data/metrics/application/closes
 
@@ -210,24 +154,6 @@ Upgrade of an application that has previously been installed. Triggered on first
 
 
 
-## https://ns.adobe.com/xdm/data/metrics/commerce/abandons
-
-A product-list has been identified as no longer accessible (e.g purchasable) by the user.
-
-`https://ns.adobe.com/xdm/data/metrics/commerce/abandons`
-* is optional
-* type: Measure
-* defined in this schema
-
-### https://ns.adobe.com/xdm/data/metrics/commerce/abandons Type
-
-
-* [Measure](measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
-
-
-
-
-
 ## https://ns.adobe.com/xdm/data/metrics/commerce/checkouts
 
 An action during a checkout process of a product-list, there can be more than one checkout event if there are multiple steps in a checkout process. If there are multiple steps the event time information and referenced page or experience is used to identify the step individual events represent in order.
@@ -238,150 +164,6 @@ An action during a checkout process of a product-list, there can be more than on
 * defined in this schema
 
 ### https://ns.adobe.com/xdm/data/metrics/commerce/checkouts Type
-
-
-* [Measure](measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
-
-
-
-
-
-## https://ns.adobe.com/xdm/data/metrics/commerce/product-list-adds
-
-Addition of a product to the product-list. Example a product is added to a shopping cart.
-
-`https://ns.adobe.com/xdm/data/metrics/commerce/product-list-adds`
-* is optional
-* type: Measure
-* defined in this schema
-
-### https://ns.adobe.com/xdm/data/metrics/commerce/product-list-adds Type
-
-
-* [Measure](measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
-
-
-
-
-
-## https://ns.adobe.com/xdm/data/metrics/commerce/product-list-opens
-
-Initializations of a new product-list. Example a shopping cart is created.
-
-`https://ns.adobe.com/xdm/data/metrics/commerce/product-list-opens`
-* is optional
-* type: Measure
-* defined in this schema
-
-### https://ns.adobe.com/xdm/data/metrics/commerce/product-list-opens Type
-
-
-* [Measure](measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
-
-
-
-
-
-## https://ns.adobe.com/xdm/data/metrics/commerce/product-list-removals
-
-Removal(s) of a product entry from a product-list. Example a product is removed from a shopping cart.
-
-`https://ns.adobe.com/xdm/data/metrics/commerce/product-list-removals`
-* is optional
-* type: Measure
-* defined in this schema
-
-### https://ns.adobe.com/xdm/data/metrics/commerce/product-list-removals Type
-
-
-* [Measure](measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
-
-
-
-
-
-## https://ns.adobe.com/xdm/data/metrics/commerce/product-list-reopens
-
-A product-list that was no longer accessible(abandoned) has been re-activated by the user. Example via a re-marketing activity.
-
-`https://ns.adobe.com/xdm/data/metrics/commerce/product-list-reopens`
-* is optional
-* type: Measure
-* defined in this schema
-
-### https://ns.adobe.com/xdm/data/metrics/commerce/product-list-reopens Type
-
-
-* [Measure](measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
-
-
-
-
-
-## https://ns.adobe.com/xdm/data/metrics/commerce/product-list-views
-
-View(s) of a product-list has occurred.
-
-`https://ns.adobe.com/xdm/data/metrics/commerce/product-list-views`
-* is optional
-* type: Measure
-* defined in this schema
-
-### https://ns.adobe.com/xdm/data/metrics/commerce/product-list-views Type
-
-
-* [Measure](measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
-
-
-
-
-
-## https://ns.adobe.com/xdm/data/metrics/commerce/product-views
-
-View(s) of a product have occurred.
-
-`https://ns.adobe.com/xdm/data/metrics/commerce/product-views`
-* is optional
-* type: Measure
-* defined in this schema
-
-### https://ns.adobe.com/xdm/data/metrics/commerce/product-views Type
-
-
-* [Measure](measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
-
-
-
-
-
-## https://ns.adobe.com/xdm/data/metrics/commerce/purchases
-
-An order has been accepted. Purchase is the only required action in a commerce conversion. Purchase must have a product-list referenced.
-
-`https://ns.adobe.com/xdm/data/metrics/commerce/purchases`
-* is optional
-* type: Measure
-* defined in this schema
-
-### https://ns.adobe.com/xdm/data/metrics/commerce/purchases Type
-
-
-* [Measure](measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
-
-
-
-
-
-## https://ns.adobe.com/xdm/data/metrics/commerce/save-for-laters
-
-Product-list is saved for future use. Example a product wish list.
-
-`https://ns.adobe.com/xdm/data/metrics/commerce/save-for-laters`
-* is optional
-* type: Measure
-* defined in this schema
-
-### https://ns.adobe.com/xdm/data/metrics/commerce/save-for-laters Type
 
 
 * [Measure](measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`

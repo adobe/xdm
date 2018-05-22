@@ -12,8 +12,8 @@
       "xdm:value": 1,
     }
   },
-  "xdm:dataProviderType": "acs",
-  "xdm:dataEntityUID": "123",
+  "xdm:dataEnrichmentProvider": "acs",
+  "xdm:dataEntityUID": "https://ns.adobe.com/xdm/orchestration/dataentity/123",
   "xdm:orgID": "abcabc1234abcd@AdobeOrg",
   "xdm:actionUID": "https://ns.adobe.com/xdm/orchestration/action/123",
   "xdm:actionType": "parameterizedAction",

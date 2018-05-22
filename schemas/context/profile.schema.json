@@ -148,7 +148,7 @@
           "title": "Test Profile",
           "type": "boolean",
           "description":
-            "This entity describes a `profile` which is not based a real person but intended for testing purposes.",
+            "Indicates the `profile` record is for use in testing/verification purposes and should not be automatically included in normal operation(s).",
           "default": false
         }
       }

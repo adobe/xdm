@@ -89,33 +89,9 @@
                     "description": "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, working hours."
                 },
                 "xdm:channel": {
-                    "title": "Communication Channel",
-                    "type": "string",
-                    "format": "uri",
-                    "meta:enum": {
-                        "https://ns.adobe.com/xdm/channels/adm": "ADM",
-                        "https://ns.adobe.com/xdm/channels/agency": "Agency",
-                        "https://ns.adobe.com/xdm/channels/apns": "APNS",
-                        "https://ns.adobe.com/xdm/channels/application": "Application",
-                        "https://ns.adobe.com/xdm/channels/baidu": "Baidu",
-                        "https://ns.adobe.com/xdm/channels/channel": "Experience Channel",
-                        "https://ns.adobe.com/xdm/channels/direct-mail": "Direct Mail",
-                        "https://ns.adobe.com/xdm/channels/email": "E-Mail",
-                        "https://ns.adobe.com/xdm/channels/facebook-feed": "Facebook News Feed",
-                        "https://ns.adobe.com/xdm/channels/fax": "Fax",
-                        "https://ns.adobe.com/xdm/channels/gcm": "GCM",
-                        "https://ns.adobe.com/xdm/channels/line": "LINE",
-                        "https://ns.adobe.com/xdm/channels/mobile-app": "Web",
-                        "https://ns.adobe.com/xdm/channels/mpns": "MPNS",
-                        "https://ns.adobe.com/xdm/channels/phone": "Phone",
-                        "https://ns.adobe.com/xdm/channels/sms": "SMS",
-                        "https://ns.adobe.com/xdm/channels/twitter-feed": "Twitter Feed",
-                        "https://ns.adobe.com/xdm/channels/web": "Web",
-                        "https://ns.adobe.com/xdm/channels/webpage": "Web Page",
-                        "https://ns.adobe.com/xdm/channels/wechat": "WeChat",
-                        "https://ns.adobe.com/xdm/channels/wns": "WNS"
-                    },
-                    "description": "The marketing channel related to this ExperienceEvent."
+                    "title": "Experience Channel",
+                    "description": "The experience channel related to this ExperienceEvent.",
+                    "$ref": "https://ns.adobe.com/xdm/channels/channel"
                 },
                 "xdm:advertising": {
                     "title": "Advertising",
@@ -154,82 +130,6 @@
                     "xdm:namespace": {
                         "xdm:code": "ECID"
                     }
-                }
-            },
-            "xdm:environment": {
-                "xdm:type": "browser",
-                "xdm:browserDetails": {
-                    "xdm:name": "Chrome",
-                    "xdm:version": "63.0.3239",
-                    "xdm:acceptLanguage": "en",
-                    "xdm:cookiesEnabled": true,
-                    "xdm:viewportHeight": 900,
-                    "xdm:viewportWidth": 1680
-                },
-                "xdm:operatingSystem": "MAC OS",
-                "xdm:operatingSystemVersion": "10.13",
-                "xdm:connectionType": "cable"
-            },
-            "xdm:locationContext": {
-                "xdm:geo": {
-                    "xdm:countryCode": "US",
-                    "xdm:stateProvince": "CA",
-                    "xdm:city": "Emeryville",
-                    "xdm:dmaid": "99"
-                }
-            },
-            "xdm:web": {
-                "xdm:webPageView": {
-                    "xdm:URL": "https://www.example.com"
-                },
-                "xdm:webReferrer": {
-                    "xdm:URL": "https://www.examplereferrer.com/",
-                    "xdm:domain": "examplereferrer.com"
-                }
-            },
-            "xdm:device": {
-                "xdm:type": "mobile",
-                "xdm:manufacturer": "Apple",
-                "xdm:model": "iPhone 6"
-            },
-            "xdm:advertising": {
-                "xdm:adViewability": {
-                    "xdm:adUnitDepth": 0,
-                    "xdm:viewportHeight": 1250,
-                    "xdm:viewportWidth": 1600,
-                    "xdm:adHeight": 250,
-                    "xdm:adWidth": 300,
-                    "xdm:playerVolume": 85,
-                    "xdm:measurementEligible": true,
-                    "xdm:implementationDetails": {
-                        "xdm:name": "https://ns.adobe.com/experience/adcloud/viewability",
-                        "xdm:version": "1"
-                    },
-                    "xdm:viewable": true,
-                    "xdm:activeWindow": true,
-                    "xdm:percentViewable": 89,
-                    "xdm:viewableFirstQuartile": {
-                        "xdm:value": 1
-                    }
-                },
-                "xdm:firstQuartiles": {
-                    "xdm:value": 1
-                }
-            }
-        },
-        {
-            "@id": "https://data.adobe.io/experienceid-123456",
-            "xdm:dataSource": {
-                "@id": "https://data.adobe.io/datasources/datasource-123",
-                "xdm:code": "DataSourceIntegrationCode-123"
-            },
-            "xdm:timestamp": "2017-09-26T15:52:25+00:00",
-            "xdm:endUserIDs": {
-                "https://ns.adobe.com/experience/mcid": {
-                    "@id": "https://data.adobe.io/entities/identity/92312748749128",
-                    "xdm:namespace": {
-                        "xdm:code": "ECID"
-                    }
                 },
                 "https://ns.adobe.com/experience/aaid": {
                     "@id": "https://data.adobe.io/entities/identity/2394509340-30453470347",
@@ -243,6 +143,10 @@
                         "xdm:code": "tnt0051"
                     }
                 }
+            },
+            "xdm:channel": {
+                "@id": "https://ns.adobe.com/xdm/channels/apns",
+                "@type": "https://ns.adobe.com/xdm/channel-types/mobile"
             },
             "xdm:environment": {
                 "xdm:type": "browser",
@@ -328,6 +232,82 @@
             },
             "xdm:marketing": {
                 "xdm:trackingCode": "marketingcampaign111"
+            }
+        },
+        {
+            "@id": "https://data.adobe.io/experienceid-123456",
+            "xdm:dataSource": {
+                "@id": "https://data.adobe.io/datasources/datasource-123",
+                "xdm:code": "DataSourceIntegrationCode-123"
+            },
+            "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+            "xdm:endUserIDs": {
+                "https://ns.adobe.com/experience/mcid": {
+                    "@id": "https://data.adobe.io/entities/identity/92312748749128",
+                    "xdm:namespace": {
+                        "xdm:code": "ECID"
+                    }
+                }
+            },
+            "xdm:environment": {
+                "xdm:type": "browser",
+                "xdm:browserDetails": {
+                    "xdm:name": "Chrome",
+                    "xdm:version": "63.0.3239",
+                    "xdm:acceptLanguage": "en",
+                    "xdm:cookiesEnabled": true,
+                    "xdm:viewportHeight": 900,
+                    "xdm:viewportWidth": 1680
+                },
+                "xdm:operatingSystem": "MAC OS",
+                "xdm:operatingSystemVersion": "10.13",
+                "xdm:connectionType": "cable"
+            },
+            "xdm:locationContext": {
+                "xdm:geo": {
+                    "xdm:countryCode": "US",
+                    "xdm:stateProvince": "CA",
+                    "xdm:city": "Emeryville",
+                    "xdm:dmaid": "99"
+                }
+            },
+            "xdm:web": {
+                "xdm:webPageView": {
+                    "xdm:URL": "https://www.example.com"
+                },
+                "xdm:webReferrer": {
+                    "xdm:URL": "https://www.examplereferrer.com/",
+                    "xdm:domain": "examplereferrer.com"
+                }
+            },
+            "xdm:device": {
+                "xdm:type": "mobile",
+                "xdm:manufacturer": "Apple",
+                "xdm:model": "iPhone 6"
+            },
+            "xdm:advertising": {
+                "xdm:adViewability": {
+                    "xdm:adUnitDepth": 0,
+                    "xdm:viewportHeight": 1250,
+                    "xdm:viewportWidth": 1600,
+                    "xdm:adHeight": 250,
+                    "xdm:adWidth": 300,
+                    "xdm:playerVolume": 85,
+                    "xdm:measurementEligible": true,
+                    "xdm:implementationDetails": {
+                        "xdm:name": "https://ns.adobe.com/experience/adcloud/viewability",
+                        "xdm:version": "1"
+                    },
+                    "xdm:viewable": true,
+                    "xdm:activeWindow": true,
+                    "xdm:percentViewable": 89,
+                    "xdm:viewableFirstQuartile": {
+                        "xdm:value": 1
+                    }
+                },
+                "xdm:firstQuartiles": {
+                    "xdm:value": 1
+                }
             }
         }
     ]

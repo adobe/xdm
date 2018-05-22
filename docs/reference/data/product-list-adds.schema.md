@@ -1,34 +1,34 @@
 
-# product-list-adds Schema
+# Product List Adds Schema
 
 ```
-https://ns.adobe.com/xdm/data/metrics/commerce/product-list-adds
+https://ns.adobe.com/xdm/data/metrics/product-list-adds
 ```
 
-The commerce metric product-list-adds describes the number of times a product has been added to a product list. The most common case is adding an item to the shopping cart.
+The commerce metric productListAdds describes the number of times a product has been added to a product list. The most common case is adding an item to the shopping cart.
 
-| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|--------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [data/product-list-adds.schema.json](data/product-list-adds.schema.json) |
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/product-list-adds.schema.json](data/product-list-adds.schema.json) |
 
-## product-list-adds Example
+## Product List Adds Example
 ```json
 {
-  "schema:name": "commerce metric: product-list-adds",
-  "@id": "https://ns.adobe.com/xdm/data/metrics/commerce/product-list-adds",
+  "schema:name": "commerce metric: productListAdds",
+  "@id": "xdm:productListAdds",
   "xdm:measurement": "count",
   "xdm:unit": null
 }
 ```
 
-# product-list-adds Properties
+# Product List Adds Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | product-list-adds (this schema) |
-| [schema:name](#schemaname) | `const` | **Required** | product-list-adds (this schema) |
-| [xdm:measurement](#xdmmeasurement) | `const` | **Required** | product-list-adds (this schema) |
-| [xdm:unit](#xdmunit) | `const` | **Required** | product-list-adds (this schema) |
+| [@id](#@id) | `const` | **Required** | Product List Adds (this schema) |
+| [schema:name](#schemaname) | `const` | **Required** | Product List Adds (this schema) |
+| [xdm:measurement](#xdmmeasurement) | `const` | **Required** | Product List Adds (this schema) |
+| [xdm:unit](#xdmunit) | `const` | **Required** | Product List Adds (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -43,7 +43,7 @@ The unique identifier of this metric.
 The value of this property **must** be equal to:
 
 ```json
-"https://ns.adobe.com/xdm/data/metrics/commerce/product-list-adds"
+"xdm:productListAdds"
 ```
 
 
@@ -62,7 +62,7 @@ The human-readable name of the metric. The name can be used in user interfaces a
 The value of this property **must** be equal to:
 
 ```json
-"commerce metric: product-list-adds"
+"commerce metric: productListAdds"
 ```
 
 

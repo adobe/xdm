@@ -38,12 +38,6 @@
           "description":
             "Condensed, normalized encapsulation of all end user identifiers.\n"
         },
-        "xdm:metrics": {
-          "title": "Metrics",
-          "$ref": "https://ns.adobe.com/xdm/data/metrics",
-          "description":
-            "The metrics for actions performed during this observation."
-        },
         "xdm:environment": {
           "title": "Environment",
           "$ref": "https://ns.adobe.com/xdm/context/environment",
@@ -73,7 +67,7 @@
         },
         "xdm:application": {
           "title": "Application",
-          "$ref": "https://ns.adobe.com/xdm/channels/application",
+          "$ref": "https://ns.adobe.com/xdm/context/application",
           "description":
             "The application related to the event observation. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login."
         },
@@ -87,6 +81,12 @@
           "$ref": "https://ns.adobe.com/xdm/context/webinfo",
           "description":
             "The information related to web page and link of the ExperienceEvent."
+        },
+        "xdm:directMarketing": {
+          "title": "Direct Marketing",
+          "$ref": "https://ns.adobe.com/xdm/context/direct-marketing",
+          "description":
+            "The events and properties related to direct/outbound marketing such as email, direct mail, texts and in-app notifications."
         },
         "xdm:marketing": {
           "title": "Marketing",
@@ -105,6 +105,12 @@
           "description":
             "The experience channel related to this ExperienceEvent.",
             "$ref": "https://ns.adobe.com/xdm/channels/channel"
+            "The marketing channel related to this ExperienceEvent."
+        },
+        "xdm:advertising": {
+          "title": "Advertising",
+          "$ref": "https://ns.adobe.com/xdm/context/advertising",
+          "description": "The information related to advertising activity related to the experience event"
         }
       },
       "required": ["@id", "xdm:dataSource", "xdm:timestamp", "xdm:endUserIDs"]

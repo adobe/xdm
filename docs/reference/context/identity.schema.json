@@ -28,6 +28,12 @@
                     "title": "Experience Identifier",
                     "type": "string",
                     "description": "When present, this value represents a cross-namespace identifier that is unique across all namespace-scoped identifiers in all namespaces."
+                },
+                "xdm:primary": {
+                    "title": "Primary",
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Indicates this identity is the preferred identity. Is used as a hint to help systems better organize how identities are queried."
                 }
             }
         }
@@ -42,7 +48,6 @@
         {
             "@id": "https://data.adobe.io/entities/identity/id123",
             "xdm:namespace": {
-                "@id": "https://data.adobe.io/entities/namespace/12345",
                 "xdm:code": "AA12345"
             }
         }

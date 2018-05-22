@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/common/selfservice
 
 A Customer Managed Environment is an environment that allows a system integration or deployer to manage applications. This is also known as selfservice.
 
-| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [common/selfservice.schema.json](common/selfservice.schema.json) |
 
 ## Customer Managed Environment Example

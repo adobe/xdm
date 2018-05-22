@@ -2,7 +2,7 @@
   "repo:acl": [
     {
       "repo:principal": "authenticated",
-      "repo:privilege": "read",
+      "repo:privileges": ["read"],
       "repo:modifier": "grant"
     },
     {
@@ -13,7 +13,7 @@
         "@id": "C0B648DE57D701277F000101@AdobeID",
         "@type": "https://ns.adobe.com/adobecloudplatform/ims/user"
       },
-      "repo:privilege": ["write", "delete"],
+      "repo:privileges": ["write", "delete"],
       "repo:modifier": "grant",
       "repo:inheritance": "deep"
     }

@@ -30,7 +30,7 @@
                 },
                 "xdm:pageDepth": {
                     "title": "Page Depth",
-                    "type": "number",
+                    "type": "integer",
                     "description": "The page depth in the search results."
                 }
             }

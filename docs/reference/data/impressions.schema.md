@@ -5,17 +5,17 @@
 https://ns.adobe.com/xdm/data/metrics/advertising/impressions
 ```
 
-The advertising metric impressions describes…
+The metric impressions describe the number of digital assets rendered.
 
-| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|--------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [data/impressions.schema.json](data/impressions.schema.json) |
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/impressions.schema.json](data/impressions.schema.json) |
 
 ## impressions Example
 ```json
 {
-  "schema:name": "advertising metric: impressions",
-  "@id": "https://ns.adobe.com/xdm/data/metrics/advertising/impressions",
+  "schema:name": "metric: impressions",
+  "@id": "xdm:impressions",
   "xdm:measurement": "count",
   "xdm:unit": null
 }
@@ -43,7 +43,7 @@ The unique identifier of this metric.
 The value of this property **must** be equal to:
 
 ```json
-"https://ns.adobe.com/xdm/data/metrics/advertising/impressions"
+"xdm:impressions"
 ```
 
 
@@ -62,7 +62,7 @@ The human-readable name of the metric. The name can be used in user interfaces a
 The value of this property **must** be equal to:
 
 ```json
-"advertising metric: impressions"
+"metric: impressions"
 ```
 
 

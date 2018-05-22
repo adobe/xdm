@@ -1,5 +1,5 @@
 
-# mirror-pages Schema
+# Mirror Pages Schema
 
 ```
 https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages
@@ -7,28 +7,28 @@ https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages
 
 The direct-marketing metric mirror-pages describes the number of mirror pages for which a link to the online mirror page of a message has been clicked.
 
-| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|--------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [data/mirror-pages.schema.json](data/mirror-pages.schema.json) |
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/mirror-pages.schema.json](data/mirror-pages.schema.json) |
 
-## mirror-pages Example
+## Mirror Pages Example
 ```json
 {
-  "schema:name": "direct-marketing metric: mirror-pages",
-  "@id": "https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages",
+  "schema:name": "direct-marketing metric: mirrorPages",
+  "@id": "xdm:mirrorPages",
   "xdm:measurement": "count",
   "xdm:unit": null
 }
 ```
 
-# mirror-pages Properties
+# Mirror Pages Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | mirror-pages (this schema) |
-| [schema:name](#schemaname) | `const` | **Required** | mirror-pages (this schema) |
-| [xdm:measurement](#xdmmeasurement) | `const` | **Required** | mirror-pages (this schema) |
-| [xdm:unit](#xdmunit) | `const` | **Required** | mirror-pages (this schema) |
+| [@id](#@id) | `const` | **Required** | Mirror Pages (this schema) |
+| [schema:name](#schemaname) | `const` | **Required** | Mirror Pages (this schema) |
+| [xdm:measurement](#xdmmeasurement) | `const` | **Required** | Mirror Pages (this schema) |
+| [xdm:unit](#xdmunit) | `const` | **Required** | Mirror Pages (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -43,7 +43,7 @@ The unique identifier of this metric.
 The value of this property **must** be equal to:
 
 ```json
-"https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages"
+"xdm:mirrorPages"
 ```
 
 
@@ -62,7 +62,7 @@ The human-readable name of the metric. The name can be used in user interfaces a
 The value of this property **must** be equal to:
 
 ```json
-"direct-marketing metric: mirror-pages"
+"direct-marketing metric: mirrorPages"
 ```
 
 

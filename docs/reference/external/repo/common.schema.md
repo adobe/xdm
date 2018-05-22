@@ -7,8 +7,8 @@ http://ns.adobe.com/adobecloud/core/1.0
 
 Common Properties for Storage in the Adobe Cloud Platform
 
-| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
+|----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Cannot be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/repo/common.schema.json](external/repo/common.schema.json) |
 
 ## Common Properties Example

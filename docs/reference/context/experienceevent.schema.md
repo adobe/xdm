@@ -7,8 +7,8 @@ https://ns.adobe.com/xdm/context/experienceevent
 
 The core ExperienceEvent XDM is used to capture observations that are altering one or more related XDMs/entities. The ExperienceEvent captures information about the observation taking place and when it is occurring. It is critical for time domain analytics as it allows observation and analysis of changes that occur in windows of time and comparison with other windows of time to track trends. ExperienceEvent are either explicit or implicit. Explicit events are direct observations of a human action taking place during a session. Implicit events are events that are being raised without a direct human action. Examples of implicit events are scheduled email sending of newsletters, battery voltage reaching a certain threshold, a person entering into range of a proximity sensor. While not all events are easily categorized across all data sources, it is extremely valuable to harmonize similar events into similar types for processing where possible, and the XDM specifications does this by defining a set of enumerated **type** attribute values with specific semantic meanings. Where possible events must be constrained to these enumerated values to facilitate interoperability.
 
-| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Stabilizing | Yes | Forbidden | Permitted | [context/experienceevent.schema.json](context/experienceevent.schema.json) |
 ## Schema Hierarchy
 
@@ -16,18 +16,20 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Data Source](../data/datasource.schema.md) `https://ns.adobe.com/xdm/data/datasource`
   * [End User IDs](enduserids.schema.md) `https://ns.adobe.com/xdm/context/enduserids`
-  * [Metrics](../data/metrics.schema.md) `https://ns.adobe.com/xdm/data/metrics`
   * [Environment](environment.schema.md) `https://ns.adobe.com/xdm/context/environment`
   * [Device](device.schema.md) `https://ns.adobe.com/xdm/context/device`
   * [Commerce](commerce.schema.md) `https://ns.adobe.com/xdm/context/commerce`
-  * [Application](../channels/application.schema.md) `https://ns.adobe.com/xdm/channels/application`
+  * [Application](application.schema.md) `https://ns.adobe.com/xdm/context/application`
   * [Search](search.schema.md) `https://ns.adobe.com/xdm/context/search`
   * [Web Information](webinfo.schema.md) `https://ns.adobe.com/xdm/context/webinfo`
+  * [Direct Marketing](direct-marketing.schema.md) `https://ns.adobe.com/xdm/context/direct-marketing`
   * [Marketing](marketing.schema.md) `https://ns.adobe.com/xdm/context/marketing`
   * [Place Context](placecontext.schema.md) `https://ns.adobe.com/xdm/context/placecontext`
+  * [Advertising](advertising.schema.md) `https://ns.adobe.com/xdm/context/advertising`
 
 
-## ExperienceEvent Example
+## ExperienceEvent Examples
+
 ```json
 {
   "@id": "https://data.adobe.io/experienceid-123456",
@@ -40,21 +42,97 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
     "https://ns.adobe.com/experience/mcid": {
       "@id": "https://data.adobe.io/entities/identity/92312748749128",
       "xdm:namespace": {
-        "@id": "https://data.adobe.io/entities/namespace/4",
+        "xdm:code": "ECID"
+      }
+    }
+  },
+  "xdm:environment": {
+    "xdm:type": "browser",
+    "xdm:browserDetails": {
+      "xdm:name": "Chrome",
+      "xdm:version": "63.0.3239",
+      "xdm:acceptLanguage": "en",
+      "xdm:cookiesEnabled": true,
+      "xdm:viewportHeight": 900,
+      "xdm:viewportWidth": 1680
+    },
+    "xdm:operatingSystem": "MAC OS",
+    "xdm:operatingSystemVersion": "10.13",
+    "xdm:connectionType": "cable"
+  },
+  "xdm:locationContext": {
+    "xdm:geo": {
+      "xdm:countryCode": "US",
+      "xdm:stateProvince": "CA",
+      "xdm:city": "Emeryville",
+      "xdm:dmaid": "99"
+    }
+  },
+  "xdm:web": {
+    "xdm:webPageView": {
+      "xdm:URL": "https://www.example.com"
+    },
+    "xdm:webReferrer": {
+      "xdm:URL": "https://www.examplereferrer.com/",
+      "xdm:domain": "examplereferrer.com"
+    }
+  },
+  "xdm:device": {
+    "xdm:type": "mobile",
+    "xdm:manufacturer": "Apple",
+    "xdm:model": "iPhone 6"
+  },
+  "xdm:advertising": {
+    "xdm:adViewability": {
+      "xdm:adUnitDepth": 0,
+      "xdm:viewportHeight": 1250,
+      "xdm:viewportWidth": 1600,
+      "xdm:adHeight": 250,
+      "xdm:adWidth": 300,
+      "xdm:playerVolume": 85,
+      "xdm:measurementEligible": true,
+      "xdm:implementationDetails": {
+        "xdm:name": "https://ns.adobe.com/experience/adcloud/viewability",
+        "xdm:version": "1"
+      },
+      "xdm:viewable": true,
+      "xdm:activeWindow": true,
+      "xdm:percentViewable": 89,
+      "xdm:viewableFirstQuartile": {
+        "xdm:value": 1
+      }
+    },
+    "xdm:firstQuartiles": {
+      "xdm:value": 1
+    }
+  }
+}
+```
+
+```json
+{
+  "@id": "https://data.adobe.io/experienceid-123456",
+  "xdm:dataSource": {
+    "@id": "https://data.adobe.io/datasources/datasource-123",
+    "xdm:code": "DataSourceIntegrationCode-123"
+  },
+  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+  "xdm:endUserIDs": {
+    "https://ns.adobe.com/experience/mcid": {
+      "@id": "https://data.adobe.io/entities/identity/92312748749128",
+      "xdm:namespace": {
         "xdm:code": "ECID"
       }
     },
-    "https://ns.adobe.com/experience/analytics": {
+    "https://ns.adobe.com/experience/aaid": {
       "@id": "https://data.adobe.io/entities/identity/2394509340-30453470347",
       "xdm:namespace": {
-        "@id": "https://data.adobe.io/entities/namespace/11112",
         "xdm:code": "AVID"
       }
     },
     "https://ns.adobe.com/experience/tntid": {
       "@id": "https://data.adobe.io/entities/identity/1233ce17-20e0-4a2c-8198-2a77fd60cf4d",
       "xdm:namespace": {
-        "@id": "https://data.adobe.io/entities/namespace/33333",
         "xdm:code": "tnt0051"
       }
     }
@@ -76,17 +154,6 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
     "xdm:operatingSystem": "MAC OS",
     "xdm:operatingSystemVersion": "10.13",
     "xdm:connectionType": "cable"
-  },
-  "xdm:metrics": {
-    "https://ns.adobe.com/xdm/data/metrics/commerce/purchases": {
-      "xdm:value": 1,
-      "xdm:unit": null
-    },
-    "https://ns.adobe.com/xdm/data/metrics/web/page-views": {
-      "@type": "https://ns.adobe.com/xdm/data/metrics/web/page-views",
-      "xdm:value": 1,
-      "xdm:unit": null
-    }
   },
   "xdm:productListItems": [
     {
@@ -118,6 +185,9 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
       ],
       "xdm:currencyCode": "USD",
       "xdm:priceTotal": 159
+    },
+    "xdm:purchases": {
+      "xdm:value": 1
     }
   },
   "xdm:placeContext": {
@@ -133,13 +203,16 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
     }
   },
   "xdm:web": {
-    "xdm:webPageView": {
+    "xdm:webPageDetails": {
       "xdm:siteSection": "Shopping Cart",
       "xdm:server": "example.com",
       "xdm:name": "Purchase Confirmation",
       "xdm:URL": "https://www.example.com/orderConf",
       "xdm:errorPage": false,
-      "xdm:homePage": false
+      "xdm:homePage": false,
+      "xdm:pageViews": {
+        "xdm:value": 1
+      }
     },
     "xdm:webReferrer": {
       "xdm:URL": "https://www.example.com/checkout",
@@ -152,20 +225,22 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
 }
 ```
 
+
 # ExperienceEvent Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#@id) | `string` | Optional | ExperienceEvent (this schema) |
+| [xdm:advertising](#xdmadvertising) | Advertising | Optional | ExperienceEvent (this schema) |
 | [xdm:application](#xdmapplication) | Application | Optional | ExperienceEvent (this schema) |
 | [xdm:channel](#xdmchannel) | `string` | Optional | ExperienceEvent (this schema) |
 | [xdm:commerce](#xdmcommerce) | Commerce | Optional | ExperienceEvent (this schema) |
 | [xdm:dataSource](#xdmdatasource) | Data Source | Optional | ExperienceEvent (this schema) |
 | [xdm:device](#xdmdevice) | Device | Optional | ExperienceEvent (this schema) |
+| [xdm:directMarketing](#xdmdirectmarketing) | Direct Marketing | Optional | ExperienceEvent (this schema) |
 | [xdm:endUserIDs](#xdmenduserids) | End User IDs | Optional | ExperienceEvent (this schema) |
 | [xdm:environment](#xdmenvironment) | Environment | Optional | ExperienceEvent (this schema) |
 | [xdm:marketing](#xdmmarketing) | Marketing | Optional | ExperienceEvent (this schema) |
-| [xdm:metrics](#xdmmetrics) | Metrics | Optional | ExperienceEvent (this schema) |
 | [xdm:placeContext](#xdmplacecontext) | Place Context | Optional | ExperienceEvent (this schema) |
 | [xdm:productListItems](#xdmproductlistitems) | Product List Item | Optional | ExperienceEvent (this schema) |
 | [xdm:search](#xdmsearch) | Search | Optional | ExperienceEvent (this schema) |
@@ -194,6 +269,25 @@ The unique identifier for the ExperienceEvent.
 
 
 
+## xdm:advertising
+### Advertising
+
+The information related to advertising activity related to the experience event
+
+`xdm:advertising`
+* is optional
+* type: Advertising
+* defined in this schema
+
+### xdm:advertising Type
+
+
+* [Advertising](advertising.schema.md) – `https://ns.adobe.com/xdm/context/advertising`
+
+
+
+
+
 ## xdm:application
 ### Application
 
@@ -207,7 +301,7 @@ The application related to the event observation. It could be either the applica
 ### xdm:application Type
 
 
-* [Application](../channels/application.schema.md) – `https://ns.adobe.com/xdm/channels/application`
+* [Application](application.schema.md) – `https://ns.adobe.com/xdm/context/application`
 
 
 
@@ -316,6 +410,25 @@ An identified Device/Application or Device/Browser instance that is trackable ac
 
 
 
+## xdm:directMarketing
+### Direct Marketing
+
+The events and properties related to direct/outbound marketing such as email, direct mail, texts and in-app notifications.
+
+`xdm:directMarketing`
+* is optional
+* type: Direct Marketing
+* defined in this schema
+
+### xdm:directMarketing Type
+
+
+* [Direct Marketing](direct-marketing.schema.md) – `https://ns.adobe.com/xdm/context/direct-marketing`
+
+
+
+
+
 ## xdm:endUserIDs
 ### End User IDs
 
@@ -369,25 +482,6 @@ The information related to marketing activities that are active with the touchpo
 
 
 * [Marketing](marketing.schema.md) – `https://ns.adobe.com/xdm/context/marketing`
-
-
-
-
-
-## xdm:metrics
-### Metrics
-
-The metrics for actions performed during this observation.
-
-`xdm:metrics`
-* is optional
-* type: Metrics
-* defined in this schema
-
-### xdm:metrics Type
-
-
-* [Metrics](../data/metrics.schema.md) – `https://ns.adobe.com/xdm/data/metrics`
 
 
 

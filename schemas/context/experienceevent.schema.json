@@ -136,6 +136,11 @@
           },
           "description":
             "The marketing channel related to this ExperienceEvent."
+        },
+        "xdm:advertising": {
+          "title": "Advertising",
+          "$ref": "https://ns.adobe.com/xdm/context/advertising",
+          "description": "The information related to advertising activity related to the experience event"
         }
       },
       "required": ["@id", "xdm:dataSource", "xdm:timestamp", "xdm:endUserIDs"]

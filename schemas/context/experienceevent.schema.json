@@ -38,12 +38,6 @@
           "description":
             "Condensed, normalized encapsulation of all end user identifiers.\n"
         },
-        "xdm:metrics": {
-          "title": "Metrics",
-          "$ref": "https://ns.adobe.com/xdm/data/metrics",
-          "description":
-            "The metrics for actions performed during this observation."
-        },
         "xdm:environment": {
           "title": "Environment",
           "$ref": "https://ns.adobe.com/xdm/context/environment",

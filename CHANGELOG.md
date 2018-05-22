@@ -18,6 +18,7 @@
 * `abandons` metric field name change to `cartAbandons` . #317
 * The `commerce` schema is now extensible to allow for additional dimensions and metrics. #317
 * Removed the required constraint from `schemas/external/schema/geo*.schema.json` #315
+* Moved `direct-marketing` metrics used in ExperienceEvent `metrics` to a new `xdm:directMarketing` contexts #331
 * Introduced advertising context to ExperienceEvent #280
 * Introduced advertising and viewability metrics under the advertising context #280
 * Moved impressions and clicks metrics under advertising context #280

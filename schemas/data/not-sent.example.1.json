@@ -1,6 +1,6 @@
 {
-  "schema:name": "direct-marketing metric: not-sent",
-  "@id": "https://ns.adobe.com/xdm/data/metrics/direct-marketing/not-sent",
+  "schema:name": "direct-marketing metric: notSent",
+  "@id": "xdm:notSent",
   "xdm:measurement": "count",
   "xdm:unit": null
 }

@@ -29,29 +29,10 @@
           "description":
             "An action during a checkout process of a product-list, there can be more than one checkout event if there are multiple steps in a checkout process. If there are multiple steps the event time information and referenced page or experience is used to identify the step individual events represent in order."
         },
-        "https://ns.adobe.com/xdm/data/metrics/application/closes": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Graceful termination(s) of an application."
-        },
-        "https://ns.adobe.com/xdm/data/metrics/application/crashes": {
+        "https://ns.adobe.com/xdm/data/metrics/advertising/impressions": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
-            "Triggered when the application does not exit gracefully. Event is sent on application launch after a crash."
-        },
-        "https://ns.adobe.com/xdm/data/metrics/application/featureusages": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-            "Activation(s) of an application feature that is being measured."
-        },
-        "https://ns.adobe.com/xdm/data/metrics/application/installs": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-            "Install of an application on a device. Triggered on first launch after install."
-        },
-        "https://ns.adobe.com/xdm/data/metrics/application/launches": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-            "Launch of an application. Triggered on every run, including crashes and installs. Also triggered on a resume from background when the lifecycle session timeout has been exceeded."
+            "Impression(s) of an advertisement to an end user with the potential of being viewed."
         },
         "https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
@@ -67,11 +48,6 @@
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
             "Asynchronous message(s) (email, SMS, MMS etc) have been dispatched to a person's account/address/device."
-        },
-        "https://ns.adobe.com/xdm/data/metrics/application/upgrades": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-            "Upgrade of an application that has previously been installed. Triggered on first launch after upgrade."
         },
         "https://ns.adobe.com/xdm/data/metrics/direct-marketing/user-complaints": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",

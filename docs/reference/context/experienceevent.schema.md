@@ -23,6 +23,7 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
   * [Application](application.schema.md) `https://ns.adobe.com/xdm/context/application`
   * [Search](search.schema.md) `https://ns.adobe.com/xdm/context/search`
   * [Web Information](webinfo.schema.md) `https://ns.adobe.com/xdm/context/webinfo`
+  * [Direct Marketing](direct-marketing.schema.md) `https://ns.adobe.com/xdm/context/direct-marketing`
   * [Marketing](marketing.schema.md) `https://ns.adobe.com/xdm/context/marketing`
   * [Place Context](placecontext.schema.md) `https://ns.adobe.com/xdm/context/placecontext`
   * [Advertising](advertising.schema.md) `https://ns.adobe.com/xdm/context/advertising`
@@ -237,6 +238,7 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
 | [xdm:commerce](#xdmcommerce) | Commerce | Optional | ExperienceEvent (this schema) |
 | [xdm:dataSource](#xdmdatasource) | Data Source | Optional | ExperienceEvent (this schema) |
 | [xdm:device](#xdmdevice) | Device | Optional | ExperienceEvent (this schema) |
+| [xdm:directMarketing](#xdmdirectmarketing) | Direct Marketing | Optional | ExperienceEvent (this schema) |
 | [xdm:endUserIDs](#xdmenduserids) | End User IDs | Optional | ExperienceEvent (this schema) |
 | [xdm:environment](#xdmenvironment) | Environment | Optional | ExperienceEvent (this schema) |
 | [xdm:marketing](#xdmmarketing) | Marketing | Optional | ExperienceEvent (this schema) |
@@ -405,6 +407,25 @@ An identified Device/Application or Device/Browser instance that is trackable ac
 
 
 * [Device](device.schema.md) – `https://ns.adobe.com/xdm/context/device`
+
+
+
+
+
+## xdm:directMarketing
+### Direct Marketing
+
+The events and properties related to direct/outbound marketing such as email, direct mail, texts and in-app notifications.
+
+`xdm:directMarketing`
+* is optional
+* type: Direct Marketing
+* defined in this schema
+
+### xdm:directMarketing Type
+
+
+* [Direct Marketing](direct-marketing.schema.md) – `https://ns.adobe.com/xdm/context/direct-marketing`
 
 
 

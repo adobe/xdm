@@ -78,6 +78,11 @@
                     "$ref": "https://ns.adobe.com/xdm/context/webinfo",
                     "description": "The information related to web page and link of the ExperienceEvent."
                 },
+                "xdm:directMarketing": {
+                    "title": "Direct Marketing",
+                    "$ref": "https://ns.adobe.com/xdm/context/direct-marketing",
+                    "description": "The events and properties related to direct/outbound marketing such as email, direct mail, texts and in-app notifications."
+                },
                 "xdm:marketing": {
                     "title": "Marketing",
                     "$ref": "https://ns.adobe.com/xdm/context/marketing",

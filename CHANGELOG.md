@@ -23,3 +23,4 @@
 * Moved impressions and clicks metrics under advertising context #280
 * Added `xdm:primary` flag to `schemas/context/identity.schema.json` #335
 * Corrected naming of EndUserIDs by making them consistent (aaid and acid) `schemas/external/schema/geo*.schema.json` #333
+* Renamed `webPageView` to `webPageDetails` e.g `context/webpagedetail.schema.json` #336

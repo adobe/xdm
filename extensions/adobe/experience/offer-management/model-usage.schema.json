@@ -21,7 +21,7 @@
         "xdm:modelReference": {
           "type": "string",
           "format": "uri",
-          "description": "Reference to the model, i.e. its @id property. "
+          "description": "Reference to the model, i.e. its $id property. "
         },
         "xdm:modelPropertyPaths": {
           "type": "array",

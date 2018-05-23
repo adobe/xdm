@@ -27,7 +27,7 @@ Information about web search activity.
 |----------|------|----------|------------|
 | [xdm:isPaid](#xdmispaid) | `boolean` | Optional | Search (this schema) |
 | [xdm:keywords](#xdmkeywords) | `string` | Optional | Search (this schema) |
-| [xdm:pageDepth](#xdmpagedepth) | `number` | Optional | Search (this schema) |
+| [xdm:pageDepth](#xdmpagedepth) | `integer` | Optional | Search (this schema) |
 | [xdm:searchEngine](#xdmsearchengine) | `string` | Optional | Search (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -77,13 +77,13 @@ The page depth in the search results.
 
 `xdm:pageDepth`
 * is optional
-* type: `number`
+* type: `integer`
 * defined in this schema
 
 ### xdm:pageDepth Type
 
 
-`number`
+`integer`
 
 
 

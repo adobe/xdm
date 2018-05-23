@@ -1,21 +1,31 @@
 {
   "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+  "xdm:dataEnrichmentSource": {
+    "@id": "https://data.adobe.io/datasources/datasource-123"
+  },
   "https://ns.adobe.com/experience/campaign/orchestration/journey": {
-    "xdm:journeyUID": "https://ns.adobe.com/experience/campaign/orchestration/journey/1234-abc4-1232-afeb-4fff",
-    "xdm:journeyVersionUID": "https://ns.adobe.com/experience/campaign/orchestration/journeyVersion/5132-2312-1211-1223"
+    "xdm:journeyUID":
+      "https://ns.adobe.com/experience/campaign/orchestration/journey/1234-abc4-1232-afeb-4fff"
+  },
+  "https://ns.adobe.com/experience/campaign/orchestration/journeyVersion": {
+    "xdm:journeyVersionUID":
+      "https://ns.adobe.com/experience/campaign/orchestration/journeyVersion/5132-abc4-1abf-1111-ffff"
   },
   "xdm:eventMetrics": {
     "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics/EnteredJourneyInstance": {
       "xdm:value": 1
     },
     "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics/ErrorInJourneyInstance": {
-      "xdm:value": 1,
+      "xdm:value": 1
     }
   },
-  "xdm:dataEnrichmentProvider": "acs",
   "xdm:dataEntityUID": "https://ns.adobe.com/xdm/orchestration/dataentity/123",
   "xdm:orgID": "abcabc1234abcd@AdobeOrg",
-  "xdm:actionUID": "https://ns.adobe.com/xdm/orchestration/action/123",
-  "xdm:actionType": "parameterizedAction",
-  "xdm:eventID": "https://ns.adobe.com/xdm/orchestration/event/beaconLobby"
+  "https://ns.adobe.com/experience/campaign/orchestration/action": {
+    "xdm:actionUID": "https://ns.adobe.com/xdm/orchestration/action/123",
+    "xdm:actionType": "parameterizedAction"
+  },
+  "https://ns.adobe.com/experience/campaign/orchestration/externalevent": {
+    "@id": "https://ns.adobe.com/xdm/orchestration/externalevent/1234"
+  }
 }

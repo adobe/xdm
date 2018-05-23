@@ -7,7 +7,7 @@
     ],
     "$id": "https://ns.adobe.com/xdm/data/metrics/direct-marketing/non-deliverables",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "non-deliverables",
+    "title": "Non Deliverables",
     "type": "object",
     "meta:extensible": true,
     "meta:extends": [
@@ -19,13 +19,12 @@
             "properties": {
                 "@id": {
                     "type": "string",
-                    "format": "uri",
-                    "const": "https://ns.adobe.com/xdm/data/metrics/direct-marketing/non-deliverables",
+                    "const": "xdm:nonDeliverables",
                     "description": "The unique identifier of this metric."
                 },
                 "schema:name": {
                     "type": "string",
-                    "const": "direct-marketing metric: non-deliverables",
+                    "const": "direct-marketing metric: nonDeliverables",
                     "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
                 },
                 "xdm:measurement": {
@@ -53,8 +52,8 @@
     "meta:status": "experimental",
     "examples": [
         {
-            "schema:name": "direct-marketing metric: non-deliverables",
-            "@id": "https://ns.adobe.com/xdm/data/metrics/direct-marketing/non-deliverables",
+            "schema:name": "direct-marketing metric: nonDeliverables",
+            "@id": "xdm:nonDeliverables",
             "xdm:measurement": "count",
             "xdm:unit": null
         }

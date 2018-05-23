@@ -16,15 +16,16 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Data Source](../data/datasource.schema.md) `https://ns.adobe.com/xdm/data/datasource`
   * [End User IDs](enduserids.schema.md) `https://ns.adobe.com/xdm/context/enduserids`
-  * [Metrics](../data/metrics.schema.md) `https://ns.adobe.com/xdm/data/metrics`
   * [Environment](environment.schema.md) `https://ns.adobe.com/xdm/context/environment`
   * [Device](device.schema.md) `https://ns.adobe.com/xdm/context/device`
   * [Commerce](commerce.schema.md) `https://ns.adobe.com/xdm/context/commerce`
-  * [Application](../channels/application.schema.md) `https://ns.adobe.com/xdm/channels/application`
+  * [Application](application.schema.md) `https://ns.adobe.com/xdm/context/application`
   * [Search](search.schema.md) `https://ns.adobe.com/xdm/context/search`
   * [Web Information](webinfo.schema.md) `https://ns.adobe.com/xdm/context/webinfo`
+  * [Direct Marketing](direct-marketing.schema.md) `https://ns.adobe.com/xdm/context/direct-marketing`
   * [Marketing](marketing.schema.md) `https://ns.adobe.com/xdm/context/marketing`
   * [Place Context](placecontext.schema.md) `https://ns.adobe.com/xdm/context/placecontext`
+  * [Experience Channel](../channels/channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
   * [Advertising](advertising.schema.md) `https://ns.adobe.com/xdm/context/advertising`
 
 
@@ -57,6 +58,10 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
         "xdm:code": "tnt0051"
       }
     }
+  },
+  "xdm:channel": {
+    "@id": "https://ns.adobe.com/xdm/channels/apns",
+    "@type": "https://ns.adobe.com/xdm/channel-types/mobile"
   },
   "xdm:environment": {
     "xdm:type": "browser",
@@ -124,7 +129,7 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
     }
   },
   "xdm:web": {
-    "xdm:webPageView": {
+    "xdm:webPageDetails": {
       "xdm:siteSection": "Shopping Cart",
       "xdm:server": "example.com",
       "xdm:name": "Purchase Confirmation",
@@ -233,14 +238,14 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
 | [@id](#@id) | `string` | Optional | ExperienceEvent (this schema) |
 | [xdm:advertising](#xdmadvertising) | Advertising | Optional | ExperienceEvent (this schema) |
 | [xdm:application](#xdmapplication) | Application | Optional | ExperienceEvent (this schema) |
-| [xdm:channel](#xdmchannel) | `string` | Optional | ExperienceEvent (this schema) |
+| [xdm:channel](#xdmchannel) | Experience Channel | Optional | ExperienceEvent (this schema) |
 | [xdm:commerce](#xdmcommerce) | Commerce | Optional | ExperienceEvent (this schema) |
 | [xdm:dataSource](#xdmdatasource) | Data Source | Optional | ExperienceEvent (this schema) |
 | [xdm:device](#xdmdevice) | Device | Optional | ExperienceEvent (this schema) |
+| [xdm:directMarketing](#xdmdirectmarketing) | Direct Marketing | Optional | ExperienceEvent (this schema) |
 | [xdm:endUserIDs](#xdmenduserids) | End User IDs | Optional | ExperienceEvent (this schema) |
 | [xdm:environment](#xdmenvironment) | Environment | Optional | ExperienceEvent (this schema) |
 | [xdm:marketing](#xdmmarketing) | Marketing | Optional | ExperienceEvent (this schema) |
-| [xdm:metrics](#xdmmetrics) | Metrics | Optional | ExperienceEvent (this schema) |
 | [xdm:placeContext](#xdmplacecontext) | Place Context | Optional | ExperienceEvent (this schema) |
 | [xdm:productListItems](#xdmproductlistitems) | Product List Item | Optional | ExperienceEvent (this schema) |
 | [xdm:search](#xdmsearch) | Search | Optional | ExperienceEvent (this schema) |
@@ -301,54 +306,27 @@ The application related to the event observation. It could be either the applica
 ### xdm:application Type
 
 
-* [Application](../channels/application.schema.md) – `https://ns.adobe.com/xdm/channels/application`
+* [Application](application.schema.md) – `https://ns.adobe.com/xdm/context/application`
 
 
 
 
 
 ## xdm:channel
-### Communication Channel
+### Experience Channel
 
-The marketing channel related to this ExperienceEvent.
+The experience channel related to this ExperienceEvent.
 
 `xdm:channel`
 * is optional
-* type: `string`
+* type: Experience Channel
 * defined in this schema
 
 ### xdm:channel Type
 
 
-`string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+* [Experience Channel](../channels/channel.schema.md) – `https://ns.adobe.com/xdm/channels/channel`
 
-
-
-### xdm:channel Known Values
-| Value | Description |
-|-------|-------------|
-| `https://ns.adobe.com/xdm/channels/adm` | ADM |
-| `https://ns.adobe.com/xdm/channels/agency` | Agency |
-| `https://ns.adobe.com/xdm/channels/apns` | APNS |
-| `https://ns.adobe.com/xdm/channels/application` | Application |
-| `https://ns.adobe.com/xdm/channels/baidu` | Baidu |
-| `https://ns.adobe.com/xdm/channels/channel` | Experience Channel |
-| `https://ns.adobe.com/xdm/channels/direct-mail` | Direct Mail |
-| `https://ns.adobe.com/xdm/channels/email` | E-Mail |
-| `https://ns.adobe.com/xdm/channels/facebook-feed` | Facebook News Feed |
-| `https://ns.adobe.com/xdm/channels/fax` | Fax |
-| `https://ns.adobe.com/xdm/channels/gcm` | GCM |
-| `https://ns.adobe.com/xdm/channels/line` | LINE |
-| `https://ns.adobe.com/xdm/channels/mobile-app` | Web |
-| `https://ns.adobe.com/xdm/channels/mpns` | MPNS |
-| `https://ns.adobe.com/xdm/channels/phone` | Phone |
-| `https://ns.adobe.com/xdm/channels/sms` | SMS |
-| `https://ns.adobe.com/xdm/channels/twitter-feed` | Twitter Feed |
-| `https://ns.adobe.com/xdm/channels/web` | Web |
-| `https://ns.adobe.com/xdm/channels/webpage` | Web Page |
-| `https://ns.adobe.com/xdm/channels/wechat` | WeChat |
-| `https://ns.adobe.com/xdm/channels/wns` | WNS |
 
 
 
@@ -410,6 +388,25 @@ An identified Device/Application or Device/Browser instance that is trackable ac
 
 
 
+## xdm:directMarketing
+### Direct Marketing
+
+The events and properties related to direct/outbound marketing such as email, direct mail, texts and in-app notifications.
+
+`xdm:directMarketing`
+* is optional
+* type: Direct Marketing
+* defined in this schema
+
+### xdm:directMarketing Type
+
+
+* [Direct Marketing](direct-marketing.schema.md) – `https://ns.adobe.com/xdm/context/direct-marketing`
+
+
+
+
+
 ## xdm:endUserIDs
 ### End User IDs
 
@@ -463,25 +460,6 @@ The information related to marketing activities that are active with the touchpo
 
 
 * [Marketing](marketing.schema.md) – `https://ns.adobe.com/xdm/context/marketing`
-
-
-
-
-
-## xdm:metrics
-### Metrics
-
-The metrics for actions performed during this observation.
-
-`xdm:metrics`
-* is optional
-* type: Metrics
-* defined in this schema
-
-### xdm:metrics Type
-
-
-* [Metrics](../data/metrics.schema.md) – `https://ns.adobe.com/xdm/data/metrics`
 
 
 

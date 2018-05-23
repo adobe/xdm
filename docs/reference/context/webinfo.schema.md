@@ -14,7 +14,7 @@ Information recorded via an `ExperienceEvent` that is specific to the World Wide
 ## Schema Hierarchy
 
 * Web Information `https://ns.adobe.com/xdm/context/webinfo`
-  * [Web Page View](webpageview.schema.md) `https://ns.adobe.com/xdm/context/webpageview`
+  * [Web Page Details](webpagedetails.schema.md) `https://ns.adobe.com/xdm/context/webpagedetails`
   * [Web Interaction](webinteraction.schema.md) `https://ns.adobe.com/xdm/context/webinteraction`
   * [Web Referrer](webreferrer.schema.md) `https://ns.adobe.com/xdm/context/webreferrer`
 
@@ -23,7 +23,7 @@ Information recorded via an `ExperienceEvent` that is specific to the World Wide
 
 ```json
 {
-  "xdm:webPageView": {
+  "xdm:webPageDetails": {
     "xdm:siteSection": "Product section",
     "xdm:server": "example.com",
     "xdm:name": "product home",
@@ -43,7 +43,7 @@ Information recorded via an `ExperienceEvent` that is specific to the World Wide
 
 ```json
 {
-  "xdm:webPageView": {
+  "xdm:webPageDetails": {
     "xdm:siteSection": "Product section",
     "xdm:server": "example.com",
     "xdm:name": "product home",
@@ -72,7 +72,7 @@ Information recorded via an `ExperienceEvent` that is specific to the World Wide
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [xdm:webInteraction](#xdmwebinteraction) | Web Interaction | Optional | Web Information (this schema) |
-| [xdm:webPageView](#xdmwebpageview) | Web Page View | Optional | Web Information (this schema) |
+| [xdm:webPageDetails](#xdmwebpagedetails) | Web Page Details | Optional | Web Information (this schema) |
 | [xdm:webReferrer](#xdmwebreferrer) | Web Referrer | Optional | Web Information (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -95,20 +95,20 @@ Details about the web link (URL) that corresponds to where the interaction occur
 
 
 
-## xdm:webPageView
-### Web Page View
+## xdm:webPageDetails
+### Web Page Details
 
 Details about the web page where the web interaction occurred.
 
-`xdm:webPageView`
+`xdm:webPageDetails`
 * is optional
-* type: Web Page View
+* type: Web Page Details
 * defined in this schema
 
-### xdm:webPageView Type
+### xdm:webPageDetails Type
 
 
-* [Web Page View](webpageview.schema.md) – `https://ns.adobe.com/xdm/context/webpageview`
+* [Web Page Details](webpagedetails.schema.md) – `https://ns.adobe.com/xdm/context/webpagedetails`
 
 
 

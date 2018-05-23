@@ -10,6 +10,7 @@
 
 [Unreleased](https://github.com/adobe/xdm/releases/tag/v0.9.1)
 
+* Introduced Point of Interest details and metrics. #285
 * Renamed all `Metric` schemas to `Metric Definition` #254
 * Moved web metrics used in ExperienceEvent `metrics` to the webinteraction and webpageview contexts #316
 * Renamed web metrics to `xdm:*` compressed type property names #316

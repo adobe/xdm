@@ -1,5 +1,5 @@
 {
-  "@id": "https://data.adobe.io/experienceid-123456",
+  "@id": "https://data.adobe.io/experienceid-2345678",
   "xdm:dataSource": {
     "@id": "https://data.adobe.io/datasources/datasource-123",
     "xdm:code": "DataSourceIntegrationCode-123"
@@ -9,6 +9,7 @@
     "https://ns.adobe.com/experience/mcid": {
       "@id": "https://data.adobe.io/entities/identity/92312748749128",
       "xdm:namespace": {
+        "@id": "https://data.adobe.io/entities/namespace/4",
         "xdm:code": "ECID"
       }
     }

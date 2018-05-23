@@ -9,7 +9,7 @@ Information about web search activity.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/search.schema.json](context/search.schema.json) |
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/search.schema.json](context/search.schema.json) |
 
 ## Search Example
 ```json

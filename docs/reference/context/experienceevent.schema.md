@@ -25,89 +25,11 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
   * [Direct Marketing](direct-marketing.schema.md) `https://ns.adobe.com/xdm/context/direct-marketing`
   * [Marketing](marketing.schema.md) `https://ns.adobe.com/xdm/context/marketing`
   * [Place Context](placecontext.schema.md) `https://ns.adobe.com/xdm/context/placecontext`
+  * [Experience Channel](../channels/channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
   * [Advertising](advertising.schema.md) `https://ns.adobe.com/xdm/context/advertising`
 
 
 ## ExperienceEvent Examples
-
-```json
-{
-  "@id": "https://data.adobe.io/experienceid-123456",
-  "xdm:dataSource": {
-    "@id": "https://data.adobe.io/datasources/datasource-123",
-    "xdm:code": "DataSourceIntegrationCode-123"
-  },
-  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
-  "xdm:endUserIDs": {
-    "https://ns.adobe.com/experience/mcid": {
-      "@id": "https://data.adobe.io/entities/identity/92312748749128",
-      "xdm:namespace": {
-        "xdm:code": "ECID"
-      }
-    }
-  },
-  "xdm:environment": {
-    "xdm:type": "browser",
-    "xdm:browserDetails": {
-      "xdm:name": "Chrome",
-      "xdm:version": "63.0.3239",
-      "xdm:acceptLanguage": "en",
-      "xdm:cookiesEnabled": true,
-      "xdm:viewportHeight": 900,
-      "xdm:viewportWidth": 1680
-    },
-    "xdm:operatingSystem": "MAC OS",
-    "xdm:operatingSystemVersion": "10.13",
-    "xdm:connectionType": "cable"
-  },
-  "xdm:locationContext": {
-    "xdm:geo": {
-      "xdm:countryCode": "US",
-      "xdm:stateProvince": "CA",
-      "xdm:city": "Emeryville",
-      "xdm:dmaid": "99"
-    }
-  },
-  "xdm:web": {
-    "xdm:webPageView": {
-      "xdm:URL": "https://www.example.com"
-    },
-    "xdm:webReferrer": {
-      "xdm:URL": "https://www.examplereferrer.com/",
-      "xdm:domain": "examplereferrer.com"
-    }
-  },
-  "xdm:device": {
-    "xdm:type": "mobile",
-    "xdm:manufacturer": "Apple",
-    "xdm:model": "iPhone 6"
-  },
-  "xdm:advertising": {
-    "xdm:adViewability": {
-      "xdm:adUnitDepth": 0,
-      "xdm:viewportHeight": 1250,
-      "xdm:viewportWidth": 1600,
-      "xdm:adHeight": 250,
-      "xdm:adWidth": 300,
-      "xdm:playerVolume": 85,
-      "xdm:measurementEligible": true,
-      "xdm:implementationDetails": {
-        "xdm:name": "https://ns.adobe.com/experience/adcloud/viewability",
-        "xdm:version": "1"
-      },
-      "xdm:viewable": true,
-      "xdm:activeWindow": true,
-      "xdm:percentViewable": 89,
-      "xdm:viewableFirstQuartile": {
-        "xdm:value": 1
-      }
-    },
-    "xdm:firstQuartiles": {
-      "xdm:value": 1
-    }
-  }
-}
-```
 
 ```json
 {
@@ -136,6 +58,10 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
         "xdm:code": "tnt0051"
       }
     }
+  },
+  "xdm:channel": {
+    "@id": "https://ns.adobe.com/xdm/channels/apns",
+    "@type": "https://ns.adobe.com/xdm/channel-types/mobile"
   },
   "xdm:environment": {
     "xdm:type": "browser",
@@ -225,6 +151,85 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
 }
 ```
 
+```json
+{
+  "@id": "https://data.adobe.io/experienceid-123456",
+  "xdm:dataSource": {
+    "@id": "https://data.adobe.io/datasources/datasource-123",
+    "xdm:code": "DataSourceIntegrationCode-123"
+  },
+  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+  "xdm:endUserIDs": {
+    "https://ns.adobe.com/experience/mcid": {
+      "@id": "https://data.adobe.io/entities/identity/92312748749128",
+      "xdm:namespace": {
+        "xdm:code": "ECID"
+      }
+    }
+  },
+  "xdm:environment": {
+    "xdm:type": "browser",
+    "xdm:browserDetails": {
+      "xdm:name": "Chrome",
+      "xdm:version": "63.0.3239",
+      "xdm:acceptLanguage": "en",
+      "xdm:cookiesEnabled": true,
+      "xdm:viewportHeight": 900,
+      "xdm:viewportWidth": 1680
+    },
+    "xdm:operatingSystem": "MAC OS",
+    "xdm:operatingSystemVersion": "10.13",
+    "xdm:connectionType": "cable"
+  },
+  "xdm:locationContext": {
+    "xdm:geo": {
+      "xdm:countryCode": "US",
+      "xdm:stateProvince": "CA",
+      "xdm:city": "Emeryville",
+      "xdm:dmaid": "99"
+    }
+  },
+  "xdm:web": {
+    "xdm:webPageView": {
+      "xdm:URL": "https://www.example.com"
+    },
+    "xdm:webReferrer": {
+      "xdm:URL": "https://www.examplereferrer.com/",
+      "xdm:domain": "examplereferrer.com"
+    }
+  },
+  "xdm:device": {
+    "xdm:type": "mobile",
+    "xdm:manufacturer": "Apple",
+    "xdm:model": "iPhone 6"
+  },
+  "xdm:advertising": {
+    "xdm:adViewability": {
+      "xdm:adUnitDepth": 0,
+      "xdm:viewportHeight": 1250,
+      "xdm:viewportWidth": 1600,
+      "xdm:adHeight": 250,
+      "xdm:adWidth": 300,
+      "xdm:playerVolume": 85,
+      "xdm:measurementEligible": true,
+      "xdm:implementationDetails": {
+        "xdm:name": "https://ns.adobe.com/experience/adcloud/viewability",
+        "xdm:version": "1"
+      },
+      "xdm:viewable": true,
+      "xdm:activeWindow": true,
+      "xdm:percentViewable": 89,
+      "xdm:viewableFirstQuartile": {
+        "xdm:value": 1
+      }
+    },
+    "xdm:firstQuartiles": {
+      "xdm:value": 1
+    }
+  }
+}
+```
+
 
 # ExperienceEvent Properties
 
@@ -233,7 +238,7 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
 | [@id](#@id) | `string` | Optional | ExperienceEvent (this schema) |
 | [xdm:advertising](#xdmadvertising) | Advertising | Optional | ExperienceEvent (this schema) |
 | [xdm:application](#xdmapplication) | Application | Optional | ExperienceEvent (this schema) |
-| [xdm:channel](#xdmchannel) | `string` | Optional | ExperienceEvent (this schema) |
+| [xdm:channel](#xdmchannel) | Experience Channel | Optional | ExperienceEvent (this schema) |
 | [xdm:commerce](#xdmcommerce) | Commerce | Optional | ExperienceEvent (this schema) |
 | [xdm:dataSource](#xdmdatasource) | Data Source | Optional | ExperienceEvent (this schema) |
 | [xdm:device](#xdmdevice) | Device | Optional | ExperienceEvent (this schema) |
@@ -308,47 +313,20 @@ The application related to the event observation. It could be either the applica
 
 
 ## xdm:channel
-### Communication Channel
+### Experience Channel
 
-The marketing channel related to this ExperienceEvent.
+The experience channel related to this ExperienceEvent.
 
 `xdm:channel`
 * is optional
-* type: `string`
+* type: Experience Channel
 * defined in this schema
 
 ### xdm:channel Type
 
 
-`string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+* [Experience Channel](../channels/channel.schema.md) – `https://ns.adobe.com/xdm/channels/channel`
 
-
-
-### xdm:channel Known Values
-| Value | Description |
-|-------|-------------|
-| `https://ns.adobe.com/xdm/channels/adm` | ADM |
-| `https://ns.adobe.com/xdm/channels/agency` | Agency |
-| `https://ns.adobe.com/xdm/channels/apns` | APNS |
-| `https://ns.adobe.com/xdm/channels/application` | Application |
-| `https://ns.adobe.com/xdm/channels/baidu` | Baidu |
-| `https://ns.adobe.com/xdm/channels/channel` | Experience Channel |
-| `https://ns.adobe.com/xdm/channels/direct-mail` | Direct Mail |
-| `https://ns.adobe.com/xdm/channels/email` | E-Mail |
-| `https://ns.adobe.com/xdm/channels/facebook-feed` | Facebook News Feed |
-| `https://ns.adobe.com/xdm/channels/fax` | Fax |
-| `https://ns.adobe.com/xdm/channels/gcm` | GCM |
-| `https://ns.adobe.com/xdm/channels/line` | LINE |
-| `https://ns.adobe.com/xdm/channels/mobile-app` | Web |
-| `https://ns.adobe.com/xdm/channels/mpns` | MPNS |
-| `https://ns.adobe.com/xdm/channels/phone` | Phone |
-| `https://ns.adobe.com/xdm/channels/sms` | SMS |
-| `https://ns.adobe.com/xdm/channels/twitter-feed` | Twitter Feed |
-| `https://ns.adobe.com/xdm/channels/web` | Web |
-| `https://ns.adobe.com/xdm/channels/webpage` | Web Page |
-| `https://ns.adobe.com/xdm/channels/wechat` | WeChat |
-| `https://ns.adobe.com/xdm/channels/wns` | WNS |
 
 
 

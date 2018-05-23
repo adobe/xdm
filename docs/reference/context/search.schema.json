@@ -41,7 +41,7 @@
             "$ref": "#/definitions/search"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stabilizing",
     "examples": [
         {
             "xdm:searchEngine": "Google",

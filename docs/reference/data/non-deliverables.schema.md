@@ -9,7 +9,7 @@ The direct-marketing metric non-deliverables describes the umber of asynchronous
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/non-deliverables.schema.json](data/non-deliverables.schema.json) |
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/non-deliverables.schema.json](data/non-deliverables.schema.json) |
 
 ## Non Deliverables Example
 ```json

@@ -10,7 +10,7 @@ The Datasource acts as a namespace or unique identifier associated with a collec
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [data/datasource.schema.json](data/datasource.schema.json) |
+| Can be instantiated | Yes | Stabilizing | Yes | Forbidden | Permitted | [data/datasource.schema.json](data/datasource.schema.json) |
 
 ## Data Source Example
 ```json

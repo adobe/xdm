@@ -42,13 +42,6 @@
           "title": "Locating Type",
           "type": "string",
           "description": "Mechanism used to ascertain location.",
-          "enum": [
-            "beacon",
-            "gps",
-            "ip",
-            "ip+wifi",
-            "wifi-triangulation"
-          ],
           "meta:enum": {
             "beacon": "Hardware beacon",
             "gps": "Device GPS",

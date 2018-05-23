@@ -23,7 +23,7 @@
         "xdm:dataEnrichmentSource": {
           "title": "Data Source",
           "$ref": "https://ns.adobe.com/xdm/data/datasource",
-          "description": "data source used for data enrichment"
+          "description": "Data source used for data enrichment"
         },
         "xdm:dataEntityUID": {
           "title": "Unique identifier of data entity",

@@ -9,7 +9,7 @@ The advertising/viewability metric measured-muted describes whether the ad was m
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/measuredmuted.schema.json](data/measuredmuted.schema.json) |
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/measuredmuted.schema.json](data/measuredmuted.schema.json) |
 
 ## measured-muted Example
 ```json

@@ -9,7 +9,7 @@
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "Web Information",
     "type": "object",
-    "meta:status": "experimental",
+    "meta:status": "stabilizing",
     "description": "Information recorded via an `ExperienceEvent` that is specific to the World Wide Web channel, including the web page, referrer and/or link related to the on-page interaction.\n",
     "definitions": {
         "webinfo": {

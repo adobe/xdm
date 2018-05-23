@@ -4,14 +4,9 @@
     "@id":
       "https://ns.adobe.com/experience/campaign/orchestration/dataenrichmentsource/datasource-123"
   },
-  "https://ns.adobe.com/experience/campaign/orchestration/journey": {
-    "xdm:journeyUID":
-      "https://ns.adobe.com/experience/campaign/orchestration/journey/1234-abc4-1232-afeb-4fff"
-  },
-  "https://ns.adobe.com/experience/campaign/orchestration/journeyVersion": {
-    "xdm:journeyVersionUID":
-      "https://ns.adobe.com/experience/campaign/orchestration/journeyVersion/5132-abc4-1abf-1111-ffff"
-  },
+  "xdm:dataEntityUID":
+    "https://ns.adobe.com/experience/campaign/orchestration/dataentity/123",
+  "xdm:orgID": "abcabc1234abcd@AdobeOrg",
   "xdm:eventMetrics": {
     "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics/EnteredJourneyInstance": {
       "xdm:value": 1
@@ -20,9 +15,14 @@
       "xdm:value": 1
     }
   },
-  "xdm:dataEntityUID":
-    "https://ns.adobe.com/experience/campaign/orchestration/dataentity/123",
-  "xdm:orgID": "abcabc1234abcd@AdobeOrg",
+  "https://ns.adobe.com/experience/campaign/orchestration/journey": {
+    "xdm:journeyUID":
+      "https://ns.adobe.com/experience/campaign/orchestration/journey/1234-abc4-1232-afeb-4fff"
+  },
+  "https://ns.adobe.com/experience/campaign/orchestration/journeyVersion": {
+    "xdm:journeyVersionUID":
+      "https://ns.adobe.com/experience/campaign/orchestration/journeyVersion/5132-abc4-1abf-1111-ffff"
+  },
   "https://ns.adobe.com/experience/campaign/orchestration/action": {
     "xdm:actionUID":
       "https://ns.adobe.com/experience/campaign/orchestration/action/123",

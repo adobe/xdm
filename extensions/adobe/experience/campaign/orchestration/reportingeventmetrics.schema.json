@@ -8,88 +8,88 @@
   "$id":
     "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "User Journey Reporting Event metrics",
+  "title": "User journey reporting event metrics",
   "type": "object",
   "meta:extends": ["https://ns.adobe.com/xdm/data/metrics"],
   "description":
-    "For different journey events, we capture certain metrices along with the dimensions,This schema hold the metrics accociated with journey events",
+    "For state transitions, we capture certain metrics along with the dimensions. This schema hold the metrics associated with reporting of state transition",
   "definitions": {
     "reportingeventmetrics": {
       "properties": {
         "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics/EnteredJourneyInstance": {
           "title": "Entered Journey",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "set to 1 when a journey instance is created"
+          "description": "Set to 1 when a journey instance is created"
         },
         "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics/ExitedJourneyInstance": {
           "title": "Exited journey",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "set to 1 when a journey instance is flagged as ended"
+          "description": "Set to 1 when a journey instance is flagged as ended"
         },
         "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics/ErrorInJourneyInstance": {
           "title": "Error in Journey Instance",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
-            "set to 1 when an error is raised in a journey instance"
+            "Set to 1 when an error is raised in a journey instance"
         },
         "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics/ErrorInEventProcessing": {
           "title": "Eroor in step processing",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
-            "set to 1 when an error occurs during an event processing meaning, during a step processing"
+            "Set to 1 when an error occurs during an event processing, that is during a step processing"
         },
         "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics/ErrorInActionExecution": {
           "title": "Error in action execution",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
-            "set to 1 when an error occurs during an action execution"
+            "Set to 1 when an error occurs during an action execution"
         },
         "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics/ErrorInJumpActionExecution": {
           "title": "Error in jump action",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
-            "set to 1 when an error occurs during the jump action execution"
+            "Set to 1 when an error occurs during the jump action execution"
         },
         "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics/ErrorInEnrichment": {
           "title": "Error in enrichment",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "set to 1 when an error occurs during enrichment"
+          "description": "Set to 1 when an error occurs during enrichment"
         },
         "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics/ExecutedEvent": {
           "title": "Event processed",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
-            "set to 1 when an event as triggered a transition in a journey instance"
+            "Set to 1 when an event as triggered a transition in a journey instance"
         },
         "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics/ExecutedAction": {
           "title": "Action executed",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
-            "set to 1 when an action is executed successfully in a journey instance"
+            "Set to 1 when an action is executed successfully in a journey instance"
         },
         "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics/ExecutedFlowControl": {
           "title": "Flow control executed",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
-            "set to 1 when an action is executed successfully in a journey instance"
+            "Set to 1 when an action is executed successfully in a journey instance"
         },
         "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics/ExecutedJumpAction": {
           "title": "Executed jump action",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
-            "set to 1 when an jump action is executed successfully in a journey instance"
+            "Set to 1 when a jump action is executed successfully in a journey instance"
         },
         "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics/ExecutedEnrichment": {
           "title": "Enrichment made successfully ",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
-            "set to 1 when an enrichment is executed successfully in a journey instance"
+            "Set to 1 when an enrichment is executed successfully in a journey instance"
         },
         "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics/JumpToJourney": {
           "title": "Jump action executed successfully",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
-            "set to 1 when a jump action is executed successfully in a journey instance"
+            "Set to 1 when a jump to another journey instance is made"
         }
       }
     }

@@ -8,14 +8,14 @@
   "$id":
     "https://ns.adobe.com/experience/campaign/orchestration/reportingevent",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "User Journey Reporting Event",
+  "title": "User journey reporting event",
   "type": "object",
   "description": "",
   "definitions": {
     "reportingevent": {
       "properties": {
         "xdm:timestamp": {
-          "title": "Time stamp for event",
+          "title": "Timestamp for reporting event",
           "type": "string",
           "format": "date-time",
           "description": "Time of generation of reporting event"
@@ -37,6 +37,25 @@
           "type": "string",
           "description":
             "Identifier of the organizational unit for this journey version"
+        },
+        "xdm:flowControlType": {
+          "title": "Flow control",
+          "type": "string",
+          "description": "Flow control in the journey triggered by the event.",
+          "meta:enum": {
+            "End": "if the 'end' step has been reached, if this step exists",
+            "Jump": "if a jump has been taken",
+            "Timer":
+              "if a transition has been applied, implying a scheduler notification",
+            "Condition": "if a conditional step has been processed"
+          }
+        },
+        "xdm:eventMetrics": {
+          "title": "Metrics to be reported",
+          "$ref":
+            "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics",
+          "description":
+            "The metrics for actions performed during this observation."
         },
         "https://ns.adobe.com/experience/campaign/orchestration/action": {
           "title": "Action on step transition",
@@ -62,7 +81,7 @@
                 "actionWithPersonalization":
                   "This action type describes an action with personalization that will be resolved at runtime for each voyager instance",
                 "parameterizedAction":
-                  "This action type decribes an action with parameterization",
+                  "This action type describes an action with parameterization",
                 "sendJourneyNotification":
                   "This action type is to send notification for another journey",
                 "acsWriter":
@@ -77,34 +96,18 @@
           "title": "external event received",
           "type": "object",
           "description":
-            "external event received, triggering in state transition",
+            "External event received, triggering the state transition",
           "meta:extends": ["https://ns.adobe.com/xdm/context/experienceevent"],
           "properties": {
             "xdm:eventType": {
               "title": "Type of the event received",
               "type": "string",
-              "description": "The type for the external event received"
+              "description": "The type for the external event received",
+              "meta:enum": {
+                "http": "The external event recieved on http endpoint"
+              }
             }
           }
-        },
-        "xdm:flowControlType": {
-          "title": "Flow control",
-          "type": "string",
-          "description": "Flow control in the journey triggered by the event.",
-          "meta:enum": {
-            "End": "if the 'end' step has been reached, if this step exists",
-            "Jump": "if a jump has been taken",
-            "Timer":
-              "if a transition has been applied, implying a scheduler notification",
-            "Condition": "if a conditional step has been processed"
-          }
-        },
-        "xdm:eventMetrics": {
-          "title": "Metrics for reporting",
-          "$ref":
-            "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics",
-          "description":
-            "The metrics for actions performed during this observation."
         },
         "https://ns.adobe.com/experience/campaign/orchestration/journey": {
           "title": "Journey for users",

@@ -1,7 +1,8 @@
 {
   "xdm:timestamp": "2017-09-26T15:52:25+00:00",
   "xdm:dataEnrichmentSource": {
-    "@id": "https://data.adobe.io/datasources/datasource-123"
+    "@id":
+      "https://ns.adobe.com/experience/campaign/orchestration/dataenrichmentsource/datasource-123"
   },
   "https://ns.adobe.com/experience/campaign/orchestration/journey": {
     "xdm:journeyUID":
@@ -19,13 +20,16 @@
       "xdm:value": 1
     }
   },
-  "xdm:dataEntityUID": "https://ns.adobe.com/xdm/orchestration/dataentity/123",
+  "xdm:dataEntityUID":
+    "https://ns.adobe.com/experience/campaign/orchestration/dataentity/123",
   "xdm:orgID": "abcabc1234abcd@AdobeOrg",
   "https://ns.adobe.com/experience/campaign/orchestration/action": {
-    "xdm:actionUID": "https://ns.adobe.com/xdm/orchestration/action/123",
+    "xdm:actionUID":
+      "https://ns.adobe.com/experience/campaign/orchestration/action/123",
     "xdm:actionType": "parameterizedAction"
   },
   "https://ns.adobe.com/experience/campaign/orchestration/externalevent": {
-    "@id": "https://ns.adobe.com/xdm/orchestration/externalevent/1234"
+    "@id":
+      "https://ns.adobe.com/experience/campaign/orchestration/externalevent/1234"
   }
 }

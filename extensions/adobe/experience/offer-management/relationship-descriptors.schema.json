@@ -20,7 +20,7 @@
       "xdm:destinationProperty": "@id"
     },
     {
-      "@id": "https://ns.adobe.com/experience/offer-management/relasionships/offer-activity/offer-filter",
+      "@id": "https://ns.adobe.com/experience/offer-management/relasionships/offer-activity/uses-filter",
       "@type": "xdm:oneToMany",
       "xdm:sourceSchema": "https://ns.adobe.com/experience/offer-management/offer-activity",
       "xdm:sourceProperty": "xdm:filter",
@@ -28,7 +28,7 @@
       "xdm:destinationProperty": "@id"
     },
     {
-      "@id": "https://ns.adobe.com/experience/offer-management/relasionships/offer-activity/fallback-offer",
+      "@id": "https://ns.adobe.com/experience/offer-management/relasionships/offer-activity/uses-fallback-offer",
       "@type": "xdm:oneToMany",
       "xdm:sourceSchema": "https://ns.adobe.com/experience/offer-management/offer-activity",
       "xdm:sourceProperty": "xdm:fallback",
@@ -52,7 +52,7 @@
       "xdm:destinationProperty": "@id"
     },
     {
-      "@id": "https://ns.adobe.com/experience/offer-management/relasionships/personalized-offer/eligibility-rule",
+      "@id": "https://ns.adobe.com/experience/offer-management/relasionships/personalized-offer/uses-eligibility-rule",
       "@type": "xdm:oneToMany",
       "xdm:sourceSchema": "https://ns.adobe.com/experience/offer-management/personalized-offer",
       "xdm:sourceProperty": "xdm:selectionConstraint.xdm:eligibilityRule",

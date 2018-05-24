@@ -8,7 +8,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id":
     "https://ns.adobe.com/experience/offer-management/offer-representation",
-  "meta:abstract": true,
+  "meta:abstract": false,
   "meta:extensible": true,
   "type": "object",
   "title": "Representation",

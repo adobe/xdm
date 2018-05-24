@@ -20,12 +20,14 @@
       "enum": [
         "fnApply",
         "literal",
-        "fieldLookup"
+        "fieldLookup",
+        "queryInvoke"
       ],
       "meta:enum": {
         "fnApply": "Apply an n-ary function to the evaluation context",
         "literal": "Prodcue a value from a literal",
-        "fieldLookup": "Produce a value from an object of fields"
+        "fieldLookup": "Produce a value from an object of fields",
+        "queryInvoke": "Invoke a query with parameters."
       }
     },
     "function-type": {
@@ -60,6 +62,7 @@
         "Boolean": ""
       }
     },
+    
     "function-application-content": {
       "type": "object",
       "title": "N-ary function application",
@@ -153,6 +156,32 @@
       },
       "additionalProperties": false
     },
+    
+    "field-lookup-content": {
+      "type": "object",
+      "title": "Field accessor",
+      "description": "An epression that is applied on an object and returns the value of the field specified in the expression",
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "nodeType": {
+              "type": "string",
+              "const": "fieldLookup"
+            },
+            "fieldName": {
+              "type": "string",
+            },
+            "object": {
+              "$ref": "#/definitions/node-content",
+            }
+          },
+          "required": ["nodeType", "fieldName"],
+          "additionalProperties": false
+        }
+      ]
+    },
+    
     "literal-content": {
       "type": "object",
       "title": "Literal",
@@ -184,6 +213,9 @@
             },
             {
               "$ref": "#/definitions/literal-boolean-content"
+            },
+            {
+              "$ref": "#/definitions/literal-xdmobject-content"
             }
           ]
         }
@@ -253,30 +285,62 @@
       },
       "additionalProperties": false
     },
-    "field-lookup-content": {
+    "literal-xdmobject-content": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "literal"
+        },
+        "literalType": {
+          "type": "string",
+          "const": "XDMObject"
+        },
+        "value" : {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "additionalProperties": false
+    },
+    
+    "query-invoke-content": {
       "type": "object",
-      "title": "Field accessor",
-      "description": "An epression that is applied on an object and returns the value of the field specified in the expression",
+      "title": "Query Invocation",
+      "description": "A query can be directly invoked",
       "allOf": [
         {
           "type": "object",
           "properties": {
             "nodeType": {
               "type": "string",
-              "const": "fieldLookup"
+              "const": "queryInvoke"
             },
-            "fieldName": {
+            "queryName": {
               "type": "string",
             },
-            "object": {
-              "$ref": "#/definitions/node-content",
+            "queryParams": {
+              "type": "array",
+              "items" : {
+                "type": "object",
+                "properties" : {
+                  "queryParamName": {
+                    "type": "string",
+                  },
+                  "queryParamValue": {
+                    "$ref": "#/definitions/node-content",
+                  }
+                },
+                "required": ["queryParamName", "queryParamValue"],
+                "additionalProperties": false
+              }
             }
           },
-          "required": ["nodeType", "fieldName"],
+          "required": ["nodeType"],
           "additionalProperties": false
         }
       ]
     },
+    
     "node-content": {
       "allOf": [
         {
@@ -298,6 +362,9 @@
             },
             {
               "$ref": "#/definitions/field-lookup-content"
+            },
+            {
+              "$ref": "#/definitions/query-invoke-content"
             }
           ]
         }

@@ -1,0 +1,14 @@
+{
+  "nodeType": "queryInvoke",
+  "queryName": "offersByTagIds",
+  "queryParams": [
+    {
+      "queryParamName": "tagId",
+      "queryParamValue": {
+        "nodeType": "literal",
+        "literalType": "String",
+        "value": "uri:com:example:tag-0001"
+      }
+    }
+  ]
+}

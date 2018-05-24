@@ -1,0 +1,14 @@
+{
+  "nodeType": "queryInvoke",
+  "queryName": "offersByPlacementIds",
+  "queryParams": [
+    {
+      "queryParamName": "placementId",
+      "queryParamValue": {
+        "nodeType": "literal",
+        "literalType": "String",
+        "value": "uri:com:example:placement-01001"
+      }
+    }
+  ]
+}

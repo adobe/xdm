@@ -7,7 +7,7 @@
     ],
     "$id": "https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "mirror-pages",
+    "title": "Mirror Pages",
     "type": "object",
     "meta:extensible": true,
     "meta:extends": [
@@ -19,13 +19,12 @@
             "properties": {
                 "@id": {
                     "type": "string",
-                    "format": "uri",
-                    "const": "https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages",
+                    "const": "xdm:mirrorPages",
                     "description": "The unique identifier of this metric."
                 },
                 "schema:name": {
                     "type": "string",
-                    "const": "direct-marketing metric: mirror-pages",
+                    "const": "direct-marketing metric: mirrorPages",
                     "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
                 },
                 "xdm:measurement": {
@@ -50,11 +49,11 @@
         "xdm:measurement",
         "xdm:unit"
     ],
-    "meta:status": "experimental",
+    "meta:status": "stabilizing",
     "examples": [
         {
-            "schema:name": "direct-marketing metric: mirror-pages",
-            "@id": "https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages",
+            "schema:name": "direct-marketing metric: mirrorPages",
+            "@id": "xdm:mirrorPages",
             "xdm:measurement": "count",
             "xdm:unit": null
         }

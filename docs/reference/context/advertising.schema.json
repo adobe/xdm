@@ -1,0 +1,89 @@
+{
+    "meta:license": [
+        "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/context/advertising",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Advertising",
+    "type": "object",
+    "description": "The information related to advertising activity related to the experience event",
+    "meta:extensible": true,
+    "definitions": {
+        "advertising": {
+            "properties": {
+                "xdm:adViewability": {
+                    "title": "MRC Viewability",
+                    "$ref": "https://ns.adobe.com/xdm/context/adviewability",
+                    "description": "The runtime measured viewability specific details such as player volume, library version, window status, viewport/ad measured dimensions, etc."
+                },
+                "xdm:clicks": {
+                    "$ref": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "Click(s) actions on an advertisement."
+                },
+                "xdm:completes": {
+                    "$ref": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "A digital video ad has played through it's entirety."
+                },
+                "xdm:conversions": {
+                    "$ref": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "A pre-defined action on a website triggered a conversion event to be fired"
+                },
+                "xdm:firstQuartiles": {
+                    "$ref": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "A digital video ad has played through 25% of it's duration at normal speed."
+                },
+                "xdm:impressions": {
+                    "$ref": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "Impression(s) of an advertisement to an end user with the potential of being viewed."
+                },
+                "xdm:midpoints": {
+                    "$ref": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "A digital video ad has played through 50% of it's duration at normal speed."
+                },
+                "xdm:starts": {
+                    "$ref": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "A digital video ad has started playing."
+                },
+                "xdm:thirdQuartiles": {
+                    "$ref": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "A digital video ad has played through 75% of it's duration at normal speed."
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/advertising"
+        }
+    ],
+    "meta:status": "stabilizing",
+    "examples": [
+        {
+            "xdm:adViewability": {
+                "xdm:adUnitDepth": 0,
+                "xdm:viewportHeight": 1250,
+                "xdm:viewportWidth": 1600,
+                "xdm:adHeight": 250,
+                "xdm:adWidth": 300,
+                "xdm:playerVolume": 85,
+                "xdm:measurementEligible": true,
+                "xdm:implementationDetails": {
+                    "xdm:name": "https://ns.adobe.com/experience/adcloud/viewability",
+                    "xdm:version": "1"
+                },
+                "xdm:viewable": true,
+                "xdm:activeWindow": true,
+                "xdm:percentViewable": 89,
+                "xdm:viewableFirstQuartile": {
+                    "xdm:value": 1
+                }
+            },
+            "xdm:firstQuartiles": {
+                "xdm:value": 1
+            }
+        }
+    ]
+}

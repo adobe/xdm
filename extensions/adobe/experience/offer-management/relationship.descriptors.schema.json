@@ -12,7 +12,7 @@
   "description": "Contains descriptors to define all the relationships between entities in the Offer Management domain",
   "meta:descriptors": [
     {
-      "@id": "https://ns.adobe.com/experience/offer-management/relasionships/offer-activity/restricts-to-placement",
+      "@id": "https://ns.adobe.com/experience/offer-management/relationships/offer-activity/restricts-to-placement",
       "@type": "xdm:oneToMany",
       "xdm:sourceSchema": "https://ns.adobe.com/experience/offer-management/offer-activity",
       "xdm:sourceProperty": "xdm:placement",
@@ -20,7 +20,7 @@
       "xdm:destinationProperty": "@id"
     },
     {
-      "@id": "https://ns.adobe.com/experience/offer-management/relasionships/offer-activity/uses-filter",
+      "@id": "https://ns.adobe.com/experience/offer-management/relationships/offer-activity/uses-filter",
       "@type": "xdm:oneToMany",
       "xdm:sourceSchema": "https://ns.adobe.com/experience/offer-management/offer-activity",
       "xdm:sourceProperty": "xdm:filter",
@@ -28,7 +28,7 @@
       "xdm:destinationProperty": "@id"
     },
     {
-      "@id": "https://ns.adobe.com/experience/offer-management/relasionships/offer-activity/uses-fallback-offer",
+      "@id": "https://ns.adobe.com/experience/offer-management/relationships/offer-activity/uses-fallback-offer",
       "@type": "xdm:oneToMany",
       "xdm:sourceSchema": "https://ns.adobe.com/experience/offer-management/offer-activity",
       "xdm:sourceProperty": "xdm:fallback",
@@ -36,7 +36,7 @@
       "xdm:destinationProperty": "@id"
     },
     {
-      "@id": "https://ns.adobe.com/experience/offer-management/relasionships/offer/complies-with-placement",
+      "@id": "https://ns.adobe.com/experience/offer-management/relationships/offer/complies-with-placement",
       "@type": "xdm:manyToMany",
       "xdm:sourceSchema": "https://ns.adobe.com/experience/offer-management/offer",
       "xdm:sourceProperty": "xdm:representations.xdm:placement",
@@ -44,7 +44,7 @@
       "xdm:destinationProperty": "@id"
     },
     {
-      "@id": "https://ns.adobe.com/experience/offer-management/relasionships/offer/uses-tags",
+      "@id": "https://ns.adobe.com/experience/offer-management/relationships/offer/uses-tags",
       "@type": "xdm:manyToMany",
       "xdm:sourceSchema": "https://ns.adobe.com/experience/offer-management/offer",
       "xdm:sourceProperty": "xdm:tags",
@@ -52,7 +52,7 @@
       "xdm:destinationProperty": "@id"
     },
     {
-      "@id": "https://ns.adobe.com/experience/offer-management/relasionships/personalized-offer/uses-eligibility-rule",
+      "@id": "https://ns.adobe.com/experience/offer-management/relationships/personalized-offer/uses-eligibility-rule",
       "@type": "xdm:oneToMany",
       "xdm:sourceSchema": "https://ns.adobe.com/experience/offer-management/personalized-offer",
       "xdm:sourceProperty": "xdm:selectionConstraint.xdm:eligibilityRule",

@@ -58,33 +58,11 @@
           "type": "array",
           "minItems": 1,
           "items": {
-            "properties": {
-              "currency": {
-                "title": "Currency Code",
-                "type": "string",
-                "examples": ["USD", "EUR"],
-                "pattern": "^[A-Z]{3}$",
-                "description":
-                  "The ISO 4217 alphabetic currency code used for cost and pricing."
-              },
-              "amount": {
-                "title": "Amount",
-                "type": "number",
-                "minimum": 0,
-                "description":
-                  "The amount value for that price."
-              },
-              "type": {
-                "title": "Price Type",
-                "type": "string",
-                "examples": ["Sales Price", "MSRP", "Net Price"],
-                "description":
-                  "The price type."
-              }
-            }
+            "$ref":
+              "https://ns.adobe.com/xdm/assets/asset#/definitions/asset"
           },
           "description":
-            "The prices for this product. In the `currencyCode` currency."
+            "The list of prices for this product."
         },
         "xdm:assets": {
           "title": "Assets",

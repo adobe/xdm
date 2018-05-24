@@ -10,6 +10,7 @@
   "title": "Product Attribute",
   "type": "object",
   "meta:extensible": true,
+  "meta:abstract": true,
   "description": "Generic product attribute of a product in the product catalog.",
   "definitions": {
     "attribute": {
@@ -17,7 +18,17 @@
         "xdm:key": {
           "title": "Key",
           "type": "string",
-          "description": "The technical key / identifier of this attribute."
+          "description": "The technical key / identifier of this attribute.",
+          "meta:enum": {
+            "color": "Color",
+            "size": "Size",
+            "style": "Style",
+            "weight": "Weight",
+            "fabrication": "Fabrication",
+            "dimensions": "Dimensions",
+            "brand": "Brand name",
+            "manufacturer": "Manufacturer name"
+          }
         },
         "schema:name": {
           "title": "Name",
@@ -31,7 +42,20 @@
         "xdm:unit": {
           "title": "Unit",
           "type": "string",
-          "description": "The unit of measure for the attribute value."
+          "description": "The unit of measure for the attribute value, following the International System of Units.",
+          "meta:enum": {
+            "in": "inch",
+            "ft": "foot",
+            "yd": "yard",
+            "m": "meter",
+            "cm": "centimeter",
+            "km": "kilometer",
+            "kg": "kilogram",
+            "lb": "pounds",
+            "W": "watt",
+            "kW": "kilowatt",
+            "L": "liter"
+          }
         },
         "xdm:variantAttribute": {
           "title": "Variant Attribute",

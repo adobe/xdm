@@ -15,11 +15,11 @@
     },
     {
       "xdm:key": "brand",
-      "xdm:name": "Brand",
+      "xdm:name": "Brand Name",
       "xdm:value": "Delta"
     },
     {
-      "xdm:key": "manufacturerName",
+      "xdm:key": "manufacturer",
       "xdm:name": "Manufacturer Name",
       "xdm:value": "Delta Faucet Company"
     },
@@ -44,9 +44,9 @@
   ],
   "xdm:prices": [
     {
-      "currency": "USD",
-      "amount": 151.99,
-      "type": "MSRP"
+      "xdm:currency": "USD",
+      "xdm:amount": 151.99,
+      "xdm:type": "MSRP"
     }
   ],
   "xdm:productURL": "https://www.homedepot.com/p/Delta-Lahara-Single-Hole-Single-Handle-Bathroom-Faucet-with-Metal-Drain-Assembly-in-Stainless-538-SSMPU-DST/203766910"

@@ -23,19 +23,41 @@
           "title": "Runtime Type",
           "type": "string",
           "description": "The runtime of the ad unit itself, not the runtime of the browser or the operating system.",
-          "examples": ["unknown", "HTML5"]
+          "meta:enum": {
+            "unknown": "Unknown",
+            "HTML5": "HTML5"
+            }
         },
         "xdm:adClass": {
           "title": "Ad Class",
           "type": "string",
           "description": "Ad class of driving event.",
-          "examples": ["display", "video", "social"]
+          "meta:enum": {
+            "display": "Display",
+            "video": "Video",
+            "social": "Social"
+
+            }
         },
         "xdm:adUnitType": {
           "title": "Ad Unit Type",
           "type": "string",
           "description": "Unique identifier for the literal piece of code driving display of the ad in a browser/device.",
-          "examples": ["linearVideo", "interactiveVideo", "banner", "richMediaBanner", "newsFeedVideo", "newsFeedDisplay", "HTML5", "inPageVideo", "inPageDisplay", "facebook", "twitter", "linearTv", "vod"]
+          "meta:enum": {
+            "linearVideo": "Linear video",
+            "interactiveVideo": "Interactive video",
+            "banner": "Banner",
+            "richMediaBanner": "Rich media banner",
+            "newsFeedVideo": "News feed video",
+            "newsFeedDisplay": "News feed display",
+            "HTML5": "HTML5",
+            "inPageVideo": "In page video",
+            "inPageDisplay": "In page display",
+            "facebook":"Facebook",
+            "twitter": "Twitter",
+            "linearTv": "linear TV",
+            "vod": "VOD"
+            }
         },
         "xdm:promotedAssetId": {
           "title": "Promoted Asset ID",

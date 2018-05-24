@@ -63,13 +63,13 @@
           "description":
             "Action taken during a step transition happening for an user in state machine",
           "properties": {
-            "xdm:actionUID": {
+            "xdm:actionID": {
               "title": "Action identifier",
               "type": "string",
               "format": "uri",
               "description": "Unique identifier denoting the associated action."
             },
-            "xdm:actionType": {
+            "xdm:type": {
               "title": "Action Type",
               "type": "string",
               "description": "The type of action to be performed.",
@@ -114,7 +114,7 @@
           "type": "object",
           "description": "Journey created by marketer for its users",
           "properties": {
-            "xdm:journeyUID": {
+            "@id": {
               "title": "Journey unique identifier",
               "type": "string",
               "format": "uri",
@@ -122,7 +122,7 @@
                 "The unique identifier of the journey created by the marketer."
             }
           },
-          "required": ["xdm:journeyUID"]
+          "required": ["@id"]
         },
         "https://ns.adobe.com/experience/campaign/orchestration/journeyVersion": {
           "title": "Journey version",
@@ -130,7 +130,7 @@
           "description":
             "Schema for describing the version of a journey, where version holds the state machine",
           "properties": {
-            "xdm:journeyVersionUID": {
+            "@id": {
               "title": "Journey version identifier",
               "type": "string",
               "format": "uri",
@@ -138,7 +138,7 @@
                 "The unique identifier denoting the version of journey on which the user is active"
             }
           },
-          "required": ["xdm:journeyVersionUID"]
+          "required": ["@id"]
         }
       }
     }

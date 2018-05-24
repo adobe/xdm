@@ -16,17 +16,17 @@
     }
   },
   "https://ns.adobe.com/experience/campaign/orchestration/journey": {
-    "xdm:journeyUID":
+    "@id":
       "https://ns.adobe.com/experience/campaign/orchestration/journey/1234-abc4-1232-afeb-4fff"
   },
   "https://ns.adobe.com/experience/campaign/orchestration/journeyVersion": {
-    "xdm:journeyVersionUID":
+    "@id":
       "https://ns.adobe.com/experience/campaign/orchestration/journeyVersion/5132-abc4-1abf-1111-ffff"
   },
   "https://ns.adobe.com/experience/campaign/orchestration/action": {
-    "xdm:actionUID":
+    "xdm:actionID":
       "https://ns.adobe.com/experience/campaign/orchestration/action/123",
-    "xdm:actionType": "parameterizedAction"
+    "xdm:type": "parameterizedAction"
   },
   "https://ns.adobe.com/experience/campaign/orchestration/externalevent": {
     "@id":

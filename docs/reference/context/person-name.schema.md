@@ -41,7 +41,6 @@ In addition, a number of optional properties are made available that can be used
 }
 ```
 
-
 # Person Name Properties
 
 | Property | Type | Required | Defined by |

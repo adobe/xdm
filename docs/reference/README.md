@@ -184,6 +184,11 @@
 * [HAL Link](./external/hal/hal-link.schema.md) – `https://ns.adobe.com/xdm/external/hal/link` (Experimental)
 * [HAL Resource](./external/hal/hal.schema.md) – `https://ns.adobe.com/xdm/external/hal/resource` (Experimental)
 
+## /common/descriptors/
+
+* [Item Selector](./common/descriptors/itemselector.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/itemselector` (Unknown)
+* [Schema Descriptor](./common/descriptors/schemadescriptor.schema.md) – `https://ns.adobe.com/xdm/common/desciptors/schemadescriptor` (Unknown)
+
 ## /external/activity-streams-2/
 
 * [Activity](./external/activity-streams-2/activity.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/activity` (Experimental)
@@ -213,4 +218,3 @@
 * [Directory](./external/repo/directory.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/directory` (Experimental)
 * [Effective Privileges](./external/repo/effectiveprivileges.schema.md) – `https://ns.adobe.com/xdm/external/repo/effectiveprivileges` (Experimental)
 * [Sub-Directory](./external/repo/sub-directory.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/sub-directory` (Experimental)
-

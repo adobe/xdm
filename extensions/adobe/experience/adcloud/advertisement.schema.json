@@ -23,19 +23,19 @@
           "title": "Runtime Type",
           "type": "string",
           "description": "The runtime of the ad unit itself, not the runtime of the browser or the operating system.",
-          "examples": "unknown, HTML5"
+          "examples": ["unknown", "HTML5"]
         },
         "xdm:adClass": {
           "title": "Ad Class",
           "type": "string",
           "description": "Ad class of driving event.",
-          "examples": "display, video, social"
+          "examples": ["display", "video", "social"]
         },
         "xdm:adUnitType": {
           "title": "Ad Unit Type",
           "type": "string",
           "description": "Unique identifier for the literal piece of code driving display of the ad in a browser/device.",
-          "examples": "linearVideo, interactiveVideo, banner, richMediaBanner, newsFeedVideo, newsFeedDisplay, HTML5, inPageVideo, inPageDisplay, facebook, twitter, linearTv, vod"
+          "examples": ["linearVideo", "interactiveVideo", "banner", "richMediaBanner", "newsFeedVideo", "newsFeedDisplay", "HTML5", "inPageVideo", "inPageDisplay", "facebook", "twitter", "linearTv", "vod"]
         },
         "xdm:promotedAssetId": {
           "title": "Promoted Asset ID",

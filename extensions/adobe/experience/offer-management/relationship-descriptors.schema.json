@@ -1,0 +1,63 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/experience/offer-management/relationships",
+  "type": "object",
+  "title": "Relationship descriptors for Offer Management Domain",
+  "description": "Contains descriptors to define all the relationships between entities in the Offer Management domain",
+  "meta:descriptors": [
+    {
+      "@id": "https://ns.adobe.com/experience/offer-management/relasionships/offer-activity/restricts-to-placement",
+      "@type": "xdm:oneToMany",
+      "xdm:sourceSchema": "https://ns.adobe.com/experience/offer-management/offer-activity",
+      "xdm:sourceProperty": "xdm:placement",
+      "xdm:destinationSchema": "https://ns.adobe.com/experience/offer-management/offer-representation",
+      "xdm:destinationProperty": "@id"
+    },
+    {
+      "@id": "https://ns.adobe.com/experience/offer-management/relasionships/offer-activity/uses-filter",
+      "@type": "xdm:oneToMany",
+      "xdm:sourceSchema": "https://ns.adobe.com/experience/offer-management/offer-activity",
+      "xdm:sourceProperty": "xdm:filter",
+      "xdm:destinationSchema": "https://ns.adobe.com/experience/offer-management/offer-filter",
+      "xdm:destinationProperty": "@id"
+    },
+    {
+      "@id": "https://ns.adobe.com/experience/offer-management/relasionships/offer-activity/uses-fallback-offer",
+      "@type": "xdm:oneToMany",
+      "xdm:sourceSchema": "https://ns.adobe.com/experience/offer-management/offer-activity",
+      "xdm:sourceProperty": "xdm:fallback",
+      "xdm:destinationSchema": "https://ns.adobe.com/experience/offer-management/fallback-offer",
+      "xdm:destinationProperty": "@id"
+    },
+    {
+      "@id": "https://ns.adobe.com/experience/offer-management/relasionships/offer/complies-with-placement",
+      "@type": "xdm:manyToMany",
+      "xdm:sourceSchema": "https://ns.adobe.com/experience/offer-management/offer",
+      "xdm:sourceProperty": "xdm:representations.xdm:placement",
+      "xdm:destinationSchema": "https://ns.adobe.com/experience/offer-management/offer-placement",
+      "xdm:destinationProperty": "@id"
+    },
+    {
+      "@id": "https://ns.adobe.com/experience/offer-management/relasionships/offer/uses-tags",
+      "@type": "xdm:manyToMany",
+      "xdm:sourceSchema": "https://ns.adobe.com/experience/offer-management/offer",
+      "xdm:sourceProperty": "xdm:tags",
+      "xdm:destinationSchema": "https://ns.adobe.com/experience/offer-management/tag",
+      "xdm:destinationProperty": "@id"
+    },
+    {
+      "@id": "https://ns.adobe.com/experience/offer-management/relasionships/personalized-offer/uses-eligibility-rule",
+      "@type": "xdm:oneToMany",
+      "xdm:sourceSchema": "https://ns.adobe.com/experience/offer-management/personalized-offer",
+      "xdm:sourceProperty": "xdm:selectionConstraint.xdm:eligibilityRule",
+      "xdm:destinationSchema": "https://ns.adobe.com/experience/offer-management/eligibility-rule",
+      "xdm:destinationProperty": "@id",
+    }
+  ]
+}

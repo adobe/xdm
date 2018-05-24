@@ -69,7 +69,7 @@
           "description": "The reference to a fallback offer that is used when decisioning in the context of this activity does not qualify any of the offers specified in the offer filter. The value is the URI (@id) of the tag that is referenced."
         }
       },
-      "required": ["xdm:name", "xdm:status"]
+      "required": ["xdm:name", "xdm:status", "xdm:placement", "xdm:filter", "xdm:fallback"]
     }
   },
   "allOf": [

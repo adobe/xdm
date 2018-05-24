@@ -229,7 +229,7 @@
         },
         "literalType": {
           "type": "string",
-          "const": "Number"
+          "const": "Integer"
         },
         "value" : {
           "type": "integer"

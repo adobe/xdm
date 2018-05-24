@@ -20,19 +20,19 @@
           "type": "string",
           "format": "date-time",
           "title": "Start Date",
-          "description": "Offer Start Date. Offers that have not reached their start date are not yet considered eligbile in the decisioning."
+          "description": "Offer Start Date. Offers that have not reached their start date are not yet considered eligible in the decisioning."
         },
         "xdm:endDate": {
           "type": "string",
           "format": "date-time",
           "title": "End Date",
-          "description": "Offer End Date. Offers that have passed their end date are no longer considered eligbile in the decisioning process."
+          "description": "Offer End Date. Offers that have passed their end date are no longer considered eligible in the decisioning process."
         },
         "xdm:eligibilityRule": {
           "type": "object",
           "format": "uri",
           "title": "Eligibility Rule",
-          "description": "The reference to an eligbility rule that  tests a condition using the profile and/or other contextual XDM instances. The value is the URI (@id) of the elgibility rule that is referenced."
+          "description": "The reference to an eligibility rule that  tests a condition using the profile and/or other contextual XDM instances. The value is the URI (@id) of the eligibility rule that is referenced."
         }
       },
       "required": ["xdm:startDate", "xdm:endDate"]

@@ -26,7 +26,7 @@
         },
         "xdm:placement": {
           "type": "string",
-          "format": "uri"
+          "format": "uri",
           "title": "Placement",
           "description": "Placement to comply with. The value is the URI (@id) of the placement that is referenced."
         }

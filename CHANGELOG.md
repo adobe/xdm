@@ -29,4 +29,4 @@
 * Fixed issue where `context\experienceevent` `xdm:application` referred to the 'application.schema.json' in `channels` #318
 * `xdm:application` in `context\experienceevent` `@id` renamed to `xdm:id` #318
 * Changes `xdm:channel` in `ExperienceEvent` to be a reference to `Channel` #289
-* Adds new concepts `Organizational Unit` and `Geographical Unit`. Existing links with the `Profile` schema updated. #323
+* Adds new concepts `Organizational Unit` and `Geographical Unit`. Existing links with the `Profile` schema updated. In `Profile`, `xdm:orgUnitID` is now `xdm:orgUnit`, and a simple reference to the `Organizational Unit` schema. #323

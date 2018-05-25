@@ -14,7 +14,6 @@ Information about the surrounding situation the event observation occurred in, s
 
 * Environment `https://ns.adobe.com/xdm/context/environment`
   * [Browser Details](browserdetails.schema.md) `https://ns.adobe.com/xdm/context/browserdetails`
-  * [MRC Viewability](adviewability.schema.md) `https://ns.adobe.com/xdm/context/adviewability`
 
 
 ## Environment Example
@@ -33,24 +32,9 @@ Information about the surrounding situation the event observation occurred in, s
     "xdm:viewportHeight": 900,
     "xdm:viewportWidth": 1680
   },
-  "xdm:adViewability": {
-    "xdm:adUnitDepth": 0,
-    "xdm:viewportHeight": 1250,
-    "xdm:viewportWidth": 1600,
-    "xdm:adHeight": 250,
-    "xdm:adWidth": 300,
-    "xdm:playerVolume": 85,
-    "xdm:measurementEligible": true,
-    "xdm:implementationDetails": {
-      "xdm:name": "https://ns.adobe.com/experience/adcloud/viewability",
-      "xdm:version": "1"
-    },
-    "xdm:viewable": true,
-    "xdm:activeWindow": true,
-    "xdm:percentViewable": 89
-  },
   "xdm:operatingSystem": "MAC OS",
   "xdm:operatingSystemVersion": "10.13",
+  "xdm:operatingSystemVendor": "Apple",
   "xdm:connectionType": "cable"
 }
 ```
@@ -59,7 +43,6 @@ Information about the surrounding situation the event observation occurred in, s
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:adViewability](#xdmadviewability) | MRC Viewability | Optional | Environment (this schema) |
 | [xdm:browserDetails](#xdmbrowserdetails) | Browser Details | Optional | Environment (this schema) |
 | [xdm:carrier](#xdmcarrier) | `string` | Optional | Environment (this schema) |
 | [xdm:colorDepth](#xdmcolordepth) | `integer` | Optional | Environment (this schema) |
@@ -67,30 +50,12 @@ Information about the surrounding situation the event observation occurred in, s
 | [xdm:ipV4](#xdmipv4) | `string` | Optional | Environment (this schema) |
 | [xdm:ipV6](#xdmipv6) | `string` | Optional | Environment (this schema) |
 | [xdm:operatingSystem](#xdmoperatingsystem) | `string` | Optional | Environment (this schema) |
+| [xdm:operatingSystemVendor](#xdmoperatingsystemvendor) | `string` | Optional | Environment (this schema) |
 | [xdm:operatingSystemVersion](#xdmoperatingsystemversion) | `string` | Optional | Environment (this schema) |
 | [xdm:type](#xdmtype) | `enum` | Optional | Environment (this schema) |
 | [xdm:viewportHeight](#xdmviewportheight) | `integer` | Optional | Environment (this schema) |
 | [xdm:viewportWidth](#xdmviewportwidth) | `integer` | Optional | Environment (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
-
-## xdm:adViewability
-### MRC Viewability
-
-The runtime measured viewability specific details such as player volume, library version, window status, viewport/ad measured dimensions, etc.
-
-`xdm:adViewability`
-* is optional
-* type: MRC Viewability
-* defined in this schema
-
-### xdm:adViewability Type
-
-
-* [MRC Viewability](adviewability.schema.md) – `https://ns.adobe.com/xdm/context/adviewability`
-
-
-
-
 
 ## xdm:browserDetails
 ### Browser Details
@@ -241,6 +206,26 @@ The name of the operating system used when the observation was made. This attrib
 * defined in this schema
 
 ### xdm:operatingSystem Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:operatingSystemVendor
+### Operating System Vendor
+
+The name of the operating system vendor used when the observation was made.
+
+`xdm:operatingSystemVendor`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:operatingSystemVendor Type
 
 
 `string`

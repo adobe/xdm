@@ -12,7 +12,7 @@
         "xdm:code": "ECID"
       }
     },
-    "https://ns.adobe.com/experience/analytics": {
+    "https://ns.adobe.com/experience/aaid": {
       "@id": "https://data.adobe.io/entities/identity/2394509340-30453470347",
       "xdm:namespace": {
         "xdm:code": "AVID"
@@ -25,6 +25,10 @@
         "xdm:code": "tnt0051"
       }
     }
+  },
+  "xdm:channel": {
+    "@id": "https://ns.adobe.com/xdm/channels/apns",
+    "@type": "https://ns.adobe.com/xdm/channel-types/mobile"
   },
   "xdm:environment": {
     "xdm:type": "browser",
@@ -40,36 +44,9 @@
       "xdm:viewportHeight": 900,
       "xdm:viewportWidth": 1680
     },
-    "xdm:adViewability": {
-      "xdm:adUnitDepth": 0,
-      "xdm:viewportHeight": 1250,
-      "xdm:viewportWidth": 1600,
-      "xdm:adHeight": 250,
-      "xdm:adWidth": 300,
-      "xdm:playerVolume": 85,
-      "xdm:measurementEligible": true,
-      "xdm:implementationDetails" : {
-        "xdm:name": "https://ns.adobe.com/experience/adcloud/viewability",
-        "xdm:version": "1"
-      },
-      "xdm:viewable": true,
-      "xdm:activeWindow": true,
-      "xdm:percentViewable": 89
-    },
     "xdm:operatingSystem": "MAC OS",
     "xdm:operatingSystemVersion": "10.13",
     "xdm:connectionType": "cable"
-  },
-  "xdm:metrics": {
-    "https://ns.adobe.com/xdm/data/metrics/commerce/purchases": {
-      "xdm:value": 1.0,
-      "xdm:unit": null
-    },
-    "https://ns.adobe.com/xdm/data/metrics/web/page-views": {
-      "@type": "https://ns.adobe.com/xdm/data/metrics/web/page-views",
-      "xdm:value": 1.0,
-      "xdm:unit": null
-    }
   },
   "xdm:productListItems": [
     {
@@ -101,6 +78,9 @@
       ],
       "xdm:currencyCode": "USD",
       "xdm:priceTotal": 159.0
+    },
+    "xdm:purchases": {
+      "xdm:value": 1.0
     }
   },
   "xdm:placeContext": {
@@ -116,13 +96,16 @@
     }
   },
   "xdm:web":{
-    "xdm:webPageView": {
+    "xdm:webPageDetails": {
       "xdm:siteSection": "Shopping Cart",
       "xdm:server": "example.com",
       "xdm:name": "Purchase Confirmation",
       "xdm:URL": "https://www.example.com/orderConf",
       "xdm:errorPage": false,
-      "xdm:homePage": false
+      "xdm:homePage": false,
+      "xdm:pageViews": {
+        "xdm:value": 1.0
+      }
     },
     "xdm:webReferrer": {
       "xdm:URL": "https://www.example.com/checkout",

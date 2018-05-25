@@ -1,34 +1,34 @@
 
-# save-for-laters Schema
+# Save For Laters Schema
 
 ```
-https://ns.adobe.com/xdm/data/metrics/commerce/save-for-laters
+https://ns.adobe.com/xdm/data/metrics/save-for-laters
 ```
 
-The commerce metric save-for-laters describes how often a product has been saved for a later day purchase.
+The commerce metric saveForLaters describes how often a product has been saved for a later day purchase.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [data/save-for-laters.schema.json](data/save-for-laters.schema.json) |
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/save-for-laters.schema.json](data/save-for-laters.schema.json) |
 
-## save-for-laters Example
+## Save For Laters Example
 ```json
 {
-  "schema:name": "commerce metric: save-for-laters",
-  "@id": "https://ns.adobe.com/xdm/data/metrics/commerce/save-for-laters",
+  "schema:name": "commerce metric: saveForLaters",
+  "@id": "xdm:saveForLaters",
   "xdm:measurement": "count",
   "xdm:unit": null
 }
 ```
 
-# save-for-laters Properties
+# Save For Laters Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | save-for-laters (this schema) |
-| [schema:name](#schemaname) | `const` | **Required** | save-for-laters (this schema) |
-| [xdm:measurement](#xdmmeasurement) | `const` | **Required** | save-for-laters (this schema) |
-| [xdm:unit](#xdmunit) | `const` | **Required** | save-for-laters (this schema) |
+| [@id](#@id) | `const` | **Required** | Save For Laters (this schema) |
+| [schema:name](#schemaname) | `const` | **Required** | Save For Laters (this schema) |
+| [xdm:measurement](#xdmmeasurement) | `const` | **Required** | Save For Laters (this schema) |
+| [xdm:unit](#xdmunit) | `const` | **Required** | Save For Laters (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -43,7 +43,7 @@ The unique identifier of this metric.
 The value of this property **must** be equal to:
 
 ```json
-"https://ns.adobe.com/xdm/data/metrics/commerce/save-for-laters"
+"xdm:saveForLaters"
 ```
 
 
@@ -62,7 +62,7 @@ The human-readable name of the metric. The name can be used in user interfaces a
 The value of this property **must** be equal to:
 
 ```json
-"commerce metric: save-for-laters"
+"commerce metric: saveForLaters"
 ```
 
 

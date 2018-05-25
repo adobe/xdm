@@ -2140,8 +2140,17 @@
                   "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
                 }
               }
+            },
+            "xdm:stateProvince": {
+              "title": "state",
+              "type": "string",
+              "description": "Client supplied state or province location."
+            },
+            "xdm:postalCode": {
+              "title": "zip",
+              "type": "string",
+              "description": "Client supplied zip code/postal code."
             }
-
           }
         },
         "https://ns.adobe.com/experience/analytics/event1to100": {

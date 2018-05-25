@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/context/identity
 
 Identity is used to clearly distinguish people that are interacting with digital experiences. Identity is established by an identity provider, which itself is referenced in the `namespace` attribute. Within each `namespace`, the identity is unique.
 
-| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|--------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [context/identity.schema.json](context/identity.schema.json) |
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Stabilizing | Yes | Forbidden | Permitted | [context/identity.schema.json](context/identity.schema.json) |
 ## Schema Hierarchy
 
 * Identity `https://ns.adobe.com/xdm/context/identity`
@@ -21,7 +21,6 @@ Identity is used to clearly distinguish people that are interacting with digital
 {
   "@id": "https://data.adobe.io/entities/identity/id123",
   "xdm:namespace": {
-    "@id": "https://data.adobe.io/entities/namespace/12345",
     "xdm:code": "AA12345"
   }
 }
@@ -33,6 +32,7 @@ Identity is used to clearly distinguish people that are interacting with digital
 |----------|------|----------|------------|
 | [@id](#@id) | `string` | Optional | Identity (this schema) |
 | [xdm:namespace](#xdmnamespace) | Namespace | Optional | Identity (this schema) |
+| [xdm:primary](#xdmprimary) | `boolean` | Optional | Identity (this schema) |
 | [xdm:xid](#xdmxid) | `string` | Optional | Identity (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -71,6 +71,25 @@ The namespace associated with the `xid` attribute and matched up with the AAM da
 
 
 * [Namespace](namespace.schema.md) – `https://ns.adobe.com/xdm/context/namespace`
+
+
+
+
+
+## xdm:primary
+### Primary
+
+Indicates this identity is the preferred identity. Is used as a hint to help systems better organize how identities are queried.
+
+`xdm:primary`
+* is optional
+* type: `boolean`
+* defined in this schema
+
+### xdm:primary Type
+
+
+`boolean`
 
 
 

@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/context/search
 
 Information about web search activity.
 
-| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|--------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/search.schema.json](context/search.schema.json) |
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/search.schema.json](context/search.schema.json) |
 
 ## Search Example
 ```json
@@ -27,7 +27,7 @@ Information about web search activity.
 |----------|------|----------|------------|
 | [xdm:isPaid](#xdmispaid) | `boolean` | Optional | Search (this schema) |
 | [xdm:keywords](#xdmkeywords) | `string` | Optional | Search (this schema) |
-| [xdm:pageDepth](#xdmpagedepth) | `number` | Optional | Search (this schema) |
+| [xdm:pageDepth](#xdmpagedepth) | `integer` | Optional | Search (this schema) |
 | [xdm:searchEngine](#xdmsearchengine) | `string` | Optional | Search (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -77,13 +77,13 @@ The page depth in the search results.
 
 `xdm:pageDepth`
 * is optional
-* type: `number`
+* type: `integer`
 * defined in this schema
 
 ### xdm:pageDepth Type
 
 
-`number`
+`integer`
 
 
 

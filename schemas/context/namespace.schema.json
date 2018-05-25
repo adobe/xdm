@@ -1,6 +1,6 @@
 {
   "meta:license": [
-    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
     "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
@@ -9,26 +9,18 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Namespace",
   "type": "object",
-  "description":
-    "The namespace or unique identifier associated with a collection of data. Each EndUserID is associated with a given namespace. A user can create and obtain information about a namespace during the solution onboarding.\n",
-  "definitions": {
+  "description": "",
+    "definitions": {
     "namespace": {
       "properties": {
-        "@id": {
-          "title": "Identifier",
-          "type": "string",
-          "format": "uri",
-          "description":
-            "The numeric ID associated with this namespace. This would be provided by the individual or system that created the namespace.\n"
-        },
         "xdm:code": {
           "title": "Code",
           "type": "string",
           "description":
-            "The code is a shortcut to the full @id and at least one of the code or @id can be used. Sometimes, this code refered to as the data source integration code."
+            "The code is a human readable identifier for the namespace and can be used to request the technical namespace id which is used for identity graph processing."
         }
       },
-      "minProperties": 1
+      "required": ["xdm:code"]
     }
   },
   "allOf": [
@@ -36,5 +28,5 @@
       "$ref": "#/definitions/namespace"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stabilizing"
 }

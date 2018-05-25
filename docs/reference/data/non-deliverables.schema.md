@@ -1,5 +1,5 @@
 
-# non-deliverables Schema
+# Non Deliverables Schema
 
 ```
 https://ns.adobe.com/xdm/data/metrics/direct-marketing/non-deliverables
@@ -7,28 +7,28 @@ https://ns.adobe.com/xdm/data/metrics/direct-marketing/non-deliverables
 
 The direct-marketing metric non-deliverables describes the umber of asynchronous messages that failed to deliver in a way that indicates that no future messages will be deliverable either to this address.
 
-| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|--------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [data/non-deliverables.schema.json](data/non-deliverables.schema.json) |
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/non-deliverables.schema.json](data/non-deliverables.schema.json) |
 
-## non-deliverables Example
+## Non Deliverables Example
 ```json
 {
-  "schema:name": "direct-marketing metric: non-deliverables",
-  "@id": "https://ns.adobe.com/xdm/data/metrics/direct-marketing/non-deliverables",
+  "schema:name": "direct-marketing metric: nonDeliverables",
+  "@id": "xdm:nonDeliverables",
   "xdm:measurement": "count",
   "xdm:unit": null
 }
 ```
 
-# non-deliverables Properties
+# Non Deliverables Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | non-deliverables (this schema) |
-| [schema:name](#schemaname) | `const` | **Required** | non-deliverables (this schema) |
-| [xdm:measurement](#xdmmeasurement) | `const` | **Required** | non-deliverables (this schema) |
-| [xdm:unit](#xdmunit) | `const` | **Required** | non-deliverables (this schema) |
+| [@id](#@id) | `const` | **Required** | Non Deliverables (this schema) |
+| [schema:name](#schemaname) | `const` | **Required** | Non Deliverables (this schema) |
+| [xdm:measurement](#xdmmeasurement) | `const` | **Required** | Non Deliverables (this schema) |
+| [xdm:unit](#xdmunit) | `const` | **Required** | Non Deliverables (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -43,7 +43,7 @@ The unique identifier of this metric.
 The value of this property **must** be equal to:
 
 ```json
-"https://ns.adobe.com/xdm/data/metrics/direct-marketing/non-deliverables"
+"xdm:nonDeliverables"
 ```
 
 
@@ -62,7 +62,7 @@ The human-readable name of the metric. The name can be used in user interfaces a
 The value of this property **must** be equal to:
 
 ```json
-"direct-marketing metric: non-deliverables"
+"direct-marketing metric: nonDeliverables"
 ```
 
 

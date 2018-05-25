@@ -1,34 +1,34 @@
 
-# purchases Schema
+# Purchases Schema
 
 ```
-https://ns.adobe.com/xdm/data/metrics/commerce/purchases
+https://ns.adobe.com/xdm/data/metrics/purchases
 ```
 
 Number of orders has occurred. Purchase is the only required action in a commerce conversion. Purchase must have a product list referenced.
 
-| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|--------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [data/purchases.schema.json](data/purchases.schema.json) |
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/purchases.schema.json](data/purchases.schema.json) |
 
-## purchases Example
+## Purchases Example
 ```json
 {
   "schema:name": "commerce metric: purchases",
-  "@id": "https://ns.adobe.com/xdm/data/metrics/commerce/purchases",
+  "@id": "xdm:purchases",
   "xdm:measurement": "count",
   "xdm:unit": null
 }
 ```
 
-# purchases Properties
+# Purchases Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | purchases (this schema) |
-| [schema:name](#schemaname) | `const` | **Required** | purchases (this schema) |
-| [xdm:measurement](#xdmmeasurement) | `const` | **Required** | purchases (this schema) |
-| [xdm:unit](#xdmunit) | `const` | **Required** | purchases (this schema) |
+| [@id](#@id) | `const` | **Required** | Purchases (this schema) |
+| [schema:name](#schemaname) | `const` | **Required** | Purchases (this schema) |
+| [xdm:measurement](#xdmmeasurement) | `const` | **Required** | Purchases (this schema) |
+| [xdm:unit](#xdmunit) | `const` | **Required** | Purchases (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -43,7 +43,7 @@ The unique identifier of this metric.
 The value of this property **must** be equal to:
 
 ```json
-"https://ns.adobe.com/xdm/data/metrics/commerce/purchases"
+"xdm:purchases"
 ```
 
 

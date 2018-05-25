@@ -10,16 +10,24 @@ The Web Interaction schema captures information about interactions that happened
 It is intended for recording interactions in rich web applications that do not trigger a new page load such as single page web apps (SPAs).
 
 
-| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|--------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/webinteraction.schema.json](context/webinteraction.schema.json) |
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/webinteraction.schema.json](context/webinteraction.schema.json) |
+## Schema Hierarchy
+
+* Web Interaction `https://ns.adobe.com/xdm/context/webinteraction`
+  * [Measure](../data/measure.schema.md) `https://ns.adobe.com/xdm/data/measure`
+
 
 ## Web Interaction Example
 ```json
 {
   "xdm:type": "other",
   "xdm:URL": "https://www.example.com/products/store/?view=1",
-  "xdm:name": "product store"
+  "xdm:name": "product store",
+  "xdm:linkClicks": {
+    "xdm:value": 1
+  }
 }
 ```
 
@@ -28,6 +36,7 @@ It is intended for recording interactions in rich web applications that do not t
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [xdm:URL](#xdmurl) | `string` | Optional | Web Interaction (this schema) |
+| [xdm:linkClicks](#xdmlinkclicks) | Measure | Optional | Web Interaction (this schema) |
 | [xdm:name](#xdmname) | `string` | Optional | Web Interaction (this schema) |
 | [xdm:type](#xdmtype) | `enum` | Optional | Web Interaction (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -47,6 +56,24 @@ The actual link/URL used for this web interaction
 
 `string`
 
+
+
+
+
+
+## xdm:linkClicks
+
+Click of a web-link has occurred.
+
+`xdm:linkClicks`
+* is optional
+* type: Measure
+* defined in this schema
+
+### xdm:linkClicks Type
+
+
+* [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
 
 
 

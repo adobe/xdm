@@ -1,5 +1,5 @@
 
-# bounces Schema
+# Bounces Schema
 
 ```
 https://ns.adobe.com/xdm/data/metrics/direct-marketing/bounces
@@ -7,28 +7,28 @@ https://ns.adobe.com/xdm/data/metrics/direct-marketing/bounces
 
 The direct-marketing metric bounces describes the number of asynchronous messages that have been rejected by the receiving system.
 
-| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|--------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [data/bounces.schema.json](data/bounces.schema.json) |
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/bounces.schema.json](data/bounces.schema.json) |
 
-## bounces Example
+## Bounces Example
 ```json
 {
   "schema:name": "direct-marketing metric: bounces",
-  "@id": "https://ns.adobe.com/xdm/data/metrics/direct-marketing/bounces",
+  "@id": "xdm:bounces",
   "xdm:measurement": "count",
   "xdm:unit": null
 }
 ```
 
-# bounces Properties
+# Bounces Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | bounces (this schema) |
-| [schema:name](#schemaname) | `const` | **Required** | bounces (this schema) |
-| [xdm:measurement](#xdmmeasurement) | `const` | **Required** | bounces (this schema) |
-| [xdm:unit](#xdmunit) | `const` | **Required** | bounces (this schema) |
+| [@id](#@id) | `const` | **Required** | Bounces (this schema) |
+| [schema:name](#schemaname) | `const` | **Required** | Bounces (this schema) |
+| [xdm:measurement](#xdmmeasurement) | `const` | **Required** | Bounces (this schema) |
+| [xdm:unit](#xdmunit) | `const` | **Required** | Bounces (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -43,7 +43,7 @@ The unique identifier of this metric.
 The value of this property **must** be equal to:
 
 ```json
-"https://ns.adobe.com/xdm/data/metrics/direct-marketing/bounces"
+"xdm:bounces"
 ```
 
 

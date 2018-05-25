@@ -7,8 +7,8 @@ http://ns.adobe.com/adobecloud/core/1.0/directory
 
 A directory in Adobe Cloud Platform.
 
-| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|--------------|-------------------|-----------------------|------------|
+| [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
+|----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/repo/directory.schema.json](external/repo/directory.schema.json) |
 ## Schema Hierarchy
 
@@ -32,6 +32,12 @@ A directory in Adobe Cloud Platform.
       "templated": true
     }
   },
+  "_page": {
+    "orderBy": "id",
+    "start": "123",
+    "next": "789",
+    "count": 100
+  },
   "repo:createdDate": "2017-09-26T15:52:25+00:00",
   "repo:lastModifiedDate": "2017-09-26T15:52:25+00:00",
   "repo:path": "/",
@@ -53,12 +59,6 @@ A directory in Adobe Cloud Platform.
       "href": "https://api2.example.com/v7/resolve{?asset_id}",
       "templated": true
     }
-  },
-  "_page": {
-    "orderBy": "id",
-    "start": "123",
-    "next": "789",
-    "count": 100
   },
   "repo:createdDate": "2017-09-26T15:52:25+00:00",
   "repo:lastModifiedDate": "2017-09-26T15:52:25+00:00",

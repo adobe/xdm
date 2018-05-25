@@ -11,9 +11,9 @@ The information in this schema is semantically compatible with the information i
 > **Note:** While the [HTTP specification](https://www.w3.org/Protocols/HTTP/HTRQ_Headers.html#z14) uses the term "referer", XDM follows the [Document Object Model specification ](https://www.w3.org/TR/2000/WD-DOM-Level-1-20000929/level-one-html.html#ID-95229140) and uses the spelling "referrer", which is more widely accepted as the correct spelling.
 
 
-| Abstract | Extensible | Status | Identifiable | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|--------------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/webreferrer.schema.json](context/webreferrer.schema.json) |
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/webreferrer.schema.json](context/webreferrer.schema.json) |
 
 ## Web Referrer Example
 ```json

@@ -2,7 +2,7 @@
 xdm:navOrder: 1
 ---
 
-# Experience Data Model (XDM) Version 0.9
+# Experience Data Model (XDM) Version 0.91
 
 ## Introduction
 
@@ -55,6 +55,10 @@ As laid out in [Semantic Versioning 2.0.0](https://semver.org), article 4:
 
 XDM is at major version zero at this time, and should not be considered stable.
 
+### Schema Status
+
+Every Schema in XDM has a dedicated status that describes the likelihood of and ability to change. Details are explained in [Schema Status](status.md)
+
 ### Extensibility
 
 The fields in each XDM model are extensible. Consuming applications should not fail when they encounter unknown schemas, field names, or property values.
@@ -67,13 +71,18 @@ All extensions will be performed using URIs as property names, which means that 
 This best practice holds for customer- and vendor-specific extensions to XDM, but also to version updates to XDM.
 New schemas, field names, or property values introduced by either a newer version of XDM or an extension of XDM must not cause a consumer to fail, and should, when possible, passed through without modification.
 
-### Versioning Schema
-
-…
-
 ## Formal Expression
 
 XDM is formally specified through a combination of JSON Schema and some aspects of JSON for Linking Data (JSON-LD).
 JSON Schema specifies unambiguously which properties and property values are allowed for a specific instance of a model, JSON-LD provides us with best practices of defining namespace prefixes, and identifying the semantics of property names.
 For consumers, it is not neccessary to understand JSON-LD, and expected to treat all XDM documents as JSON documents.
 This means, if the JSON representation of two XDM models is identical, then the two models are considered identical.
+
+## Specification Details
+
+1.  [Related Standards](standards.md)
+2.  [Terminology used in XDM](terminology.md)
+3.  [Extending XDM](extensions.md)
+4.  [Abstract and Concrete Schema](abstract.md)
+5.  [Schema Status](status.md)
+6.  [Identifiable Entities](id.md)

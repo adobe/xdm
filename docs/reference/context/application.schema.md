@@ -9,7 +9,7 @@ The details related to the application that the interaction is being generated b
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/application.schema.json](context/application.schema.json) |
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/application.schema.json](context/application.schema.json) |
 ## Schema Hierarchy
 
 * Application `https://ns.adobe.com/xdm/context/application`

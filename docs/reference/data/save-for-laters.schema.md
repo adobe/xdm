@@ -9,7 +9,7 @@ The commerce metric saveForLaters describes how often a product has been saved f
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/save-for-laters.schema.json](data/save-for-laters.schema.json) |
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/save-for-laters.schema.json](data/save-for-laters.schema.json) |
 
 ## Save For Laters Example
 ```json

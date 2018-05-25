@@ -7,10 +7,13 @@
   "xdm:playerVolume": 85,
   "xdm:measurementEligible": true,
   "xdm:implementationDetails" : {
-    "xdm:name": "https://ns.adobe.com/xdm/context/viewability-details",
+    "xdm:name": "https://ns.adobe.com/experience/adcloud/viewability",
     "xdm:version": "1"
   },
   "xdm:viewable": true,
   "xdm:activeWindow": true,
-  "xdm:percentViewable": 89
+  "xdm:percentViewable": 89,
+  "xdm:viewableImpressions": {
+    "xdm:value": 1.0
+  }
 }

@@ -48,11 +48,12 @@ Viewability details are always measured fields during runtime.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/adviewability.schema.json](context/adviewability.schema.json) |
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/adviewability.schema.json](context/adviewability.schema.json) |
 ## Schema Hierarchy
 
 * MRC Viewability `https://ns.adobe.com/xdm/context/adviewability`
   * [Implementation Details](implementationdetails.schema.md) `https://ns.adobe.com/xdm/context/implementationdetails`
+  * [Measure](../data/measure.schema.md) `https://ns.adobe.com/xdm/data/measure`
 
 
 ## MRC Viewability Example
@@ -66,12 +67,15 @@ Viewability details are always measured fields during runtime.
   "xdm:playerVolume": 85,
   "xdm:measurementEligible": true,
   "xdm:implementationDetails": {
-    "xdm:name": "https://ns.adobe.com/xdm/context/viewability-details",
+    "xdm:name": "https://ns.adobe.com/experience/adcloud/viewability",
     "xdm:version": "1"
   },
   "xdm:viewable": true,
   "xdm:activeWindow": true,
-  "xdm:percentViewable": 89
+  "xdm:percentViewable": 89,
+  "xdm:viewableImpressions": {
+    "xdm:value": 1
+  }
 }
 ```
 
@@ -84,10 +88,21 @@ Viewability details are always measured fields during runtime.
 | [xdm:adUnitDepth](#xdmadunitdepth) | `integer` | Optional | MRC Viewability (this schema) |
 | [xdm:adWidth](#xdmadwidth) | `integer` | Optional | MRC Viewability (this schema) |
 | [xdm:implementationDetails](#xdmimplementationdetails) | Implementation Details | Optional | MRC Viewability (this schema) |
+| [xdm:measuredAdNotVisible](#xdmmeasuredadnotvisible) | Measure | Optional | MRC Viewability (this schema) |
+| [xdm:measuredMuted](#xdmmeasuredmuted) | Measure | Optional | MRC Viewability (this schema) |
+| [xdm:measuredWindowInactive](#xdmmeasuredwindowinactive) | Measure | Optional | MRC Viewability (this schema) |
 | [xdm:measurementEligible](#xdmmeasurementeligible) | `boolean` | Optional | MRC Viewability (this schema) |
 | [xdm:percentViewable](#xdmpercentviewable) | `integer` | Optional | MRC Viewability (this schema) |
 | [xdm:playerVolume](#xdmplayervolume) | `integer` | Optional | MRC Viewability (this schema) |
+| [xdm:unmeasurableIframe](#xdmunmeasurableiframe) | Measure | Optional | MRC Viewability (this schema) |
+| [xdm:unmeasurableOther](#xdmunmeasurableother) | Measure | Optional | MRC Viewability (this schema) |
+| [xdm:viewabilityEligibleImpressions](#xdmviewabilityeligibleimpressions) | Measure | Optional | MRC Viewability (this schema) |
 | [xdm:viewable](#xdmviewable) | `boolean` | Optional | MRC Viewability (this schema) |
+| [xdm:viewableCompletes](#xdmviewablecompletes) | Measure | Optional | MRC Viewability (this schema) |
+| [xdm:viewableFirstQuartiles](#xdmviewablefirstquartiles) | Measure | Optional | MRC Viewability (this schema) |
+| [xdm:viewableImpressions](#xdmviewableimpressions) | Measure | Optional | MRC Viewability (this schema) |
+| [xdm:viewableMidpoints](#xdmviewablemidpoints) | Measure | Optional | MRC Viewability (this schema) |
+| [xdm:viewableThirdQuartiles](#xdmviewablethirdquartiles) | Measure | Optional | MRC Viewability (this schema) |
 | [xdm:viewportHeight](#xdmviewportheight) | `integer` | Optional | MRC Viewability (this schema) |
 | [xdm:viewportWidth](#xdmviewportwidth) | `integer` | Optional | MRC Viewability (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -187,12 +202,61 @@ The name and version of the library instrumented to measure viewability metrics.
 ### xdm:implementationDetails Type
 
 
-`object` with following properties:
+* [Implementation Details](implementationdetails.schema.md) – `https://ns.adobe.com/xdm/context/implementationdetails`
 
 
-| Property | Type | Required
-|----------|------|----------|
 
+
+
+## xdm:measuredAdNotVisible
+
+Indicator of ad not being visible as measured by a viewability library at impression time.
+
+`xdm:measuredAdNotVisible`
+* is optional
+* type: Measure
+* defined in this schema
+
+### xdm:measuredAdNotVisible Type
+
+
+* [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
+## xdm:measuredMuted
+
+Indicator of ad being muted as measured by a viewability library at impression time.
+
+`xdm:measuredMuted`
+* is optional
+* type: Measure
+* defined in this schema
+
+### xdm:measuredMuted Type
+
+
+* [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
+## xdm:measuredWindowInactive
+
+Indicator of ad being displayed in an inactive window as measured by a viewability library at impression time.
+
+`xdm:measuredWindowInactive`
+* is optional
+* type: Measure
+* defined in this schema
+
+### xdm:measuredWindowInactive Type
+
+
+* [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
 
 
 
@@ -259,6 +323,60 @@ The player volume percentage, measured at runtime where 0 is muted and 100 is ma
 
 
 
+## xdm:unmeasurableIframe
+
+Indicator of viewability library not being able to properly execute measurements due to ad being displayed inside an iframe.
+
+`xdm:unmeasurableIframe`
+* is optional
+* type: Measure
+* defined in this schema
+
+### xdm:unmeasurableIframe Type
+
+
+* [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
+## xdm:unmeasurableOther
+
+Indicator of viewability library not being able to properly execute measurements due to non-predefined error.
+
+`xdm:unmeasurableOther`
+* is optional
+* type: Measure
+* defined in this schema
+
+### xdm:unmeasurableOther Type
+
+
+* [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
+## xdm:viewabilityEligibleImpressions
+
+Impression(s) of an advertisement to an end user with viewablility library instrumented.
+
+`xdm:viewabilityEligibleImpressions`
+* is optional
+* type: Measure
+* defined in this schema
+
+### xdm:viewabilityEligibleImpressions Type
+
+
+* [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
 ## xdm:viewable
 ### Viewable Ad
 
@@ -273,6 +391,96 @@ Display ads are considered viewable when at least 50% of the ad is visible for a
 
 
 `boolean`
+
+
+
+
+
+## xdm:viewableCompletes
+
+Completion(s) of an advertisement to an end user deemed viewable at completion time by a viewability library.
+
+`xdm:viewableCompletes`
+* is optional
+* type: Measure
+* defined in this schema
+
+### xdm:viewableCompletes Type
+
+
+* [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
+## xdm:viewableFirstQuartiles
+
+First quartile(s) of an advertisement to an end user deemed viewable at first quartile of play by a viewability library.
+
+`xdm:viewableFirstQuartiles`
+* is optional
+* type: Measure
+* defined in this schema
+
+### xdm:viewableFirstQuartiles Type
+
+
+* [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
+## xdm:viewableImpressions
+
+Impressions of an advertisement to an end user deemed viewable after two seconds of play by a viewability library.
+
+`xdm:viewableImpressions`
+* is optional
+* type: Measure
+* defined in this schema
+
+### xdm:viewableImpressions Type
+
+
+* [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
+## xdm:viewableMidpoints
+
+Midpoint(s) of an advertisement to an end user deemed viewable at midpoint of play by a viewability library.
+
+`xdm:viewableMidpoints`
+* is optional
+* type: Measure
+* defined in this schema
+
+### xdm:viewableMidpoints Type
+
+
+* [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
+## xdm:viewableThirdQuartiles
+
+Third quartile(s) of an advertisement to an end user deemed viewable at third quartile of play by a viewability library.
+
+`xdm:viewableThirdQuartiles`
+* is optional
+* type: Measure
+* defined in this schema
+
+### xdm:viewableThirdQuartiles Type
+
+
+* [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
 
 
 

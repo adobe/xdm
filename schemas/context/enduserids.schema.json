@@ -32,9 +32,15 @@
       "title": "Adobe Target End User IDs",
       "$ref": "https://ns.adobe.com/xdm/context/identity",
       "description": "Adobe Target extension to End User IDs."
+    },
+    "https://ns.adobe.com/experience/adcloud": {
+      "title": "Adobe AdCloud End User IDs",
+      "$ref": "https://ns.adobe.com/xdm/context/identity",
+      "description": "Adobe Adcloud extension to End User IDs."
     }
   },
   "meta:keys": {
+    "https://ns.adobe.com/experience/adcloud": "Adobe AdCloud",
     "https://ns.adobe.com/experience/tntid": "Adobe Target",
     "https://ns.adobe.com/experience/acid": "Adobe Campaign",
     "https://ns.adobe.com/experience/aaid": "Adobe Analytics",

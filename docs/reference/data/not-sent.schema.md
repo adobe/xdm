@@ -1,34 +1,34 @@
 
-# not-sent Schema
+# Not Sent Schema
 
 ```
-https://ns.adobe.com/xdm/data/metrics/direct-marketing/not-sent
+https://ns.adobe.com/xdm/data/metrics/direct-marketing/notSent
 ```
 
 The direct-marketing metric `not-sent` describes the number of asynchronous messages (email, SMS, MMS etc) that have not been dispatched to an recipient's account/address/device due to cancellation or expiration of the marketing activity.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [data/not-sent.schema.json](data/not-sent.schema.json) |
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/not-sent.schema.json](data/not-sent.schema.json) |
 
-## not-sent Example
+## Not Sent Example
 ```json
 {
-  "schema:name": "direct-marketing metric: not-sent",
-  "@id": "https://ns.adobe.com/xdm/data/metrics/direct-marketing/not-sent",
+  "schema:name": "direct-marketing metric: notSent",
+  "@id": "xdm:notSent",
   "xdm:measurement": "count",
   "xdm:unit": null
 }
 ```
 
-# not-sent Properties
+# Not Sent Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | not-sent (this schema) |
-| [schema:name](#schemaname) | `const` | **Required** | not-sent (this schema) |
-| [xdm:measurement](#xdmmeasurement) | `const` | **Required** | not-sent (this schema) |
-| [xdm:unit](#xdmunit) | `const` | **Required** | not-sent (this schema) |
+| [@id](#@id) | `const` | **Required** | Not Sent (this schema) |
+| [schema:name](#schemaname) | `const` | **Required** | Not Sent (this schema) |
+| [xdm:measurement](#xdmmeasurement) | `const` | **Required** | Not Sent (this schema) |
+| [xdm:unit](#xdmunit) | `const` | **Required** | Not Sent (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -43,7 +43,7 @@ The unique identifier of this metric.
 The value of this property **must** be equal to:
 
 ```json
-"https://ns.adobe.com/xdm/data/metrics/direct-marketing/not-sent"
+"xdm:notSent"
 ```
 
 
@@ -62,7 +62,7 @@ The human-readable name of the metric. The name can be used in user interfaces a
 The value of this property **must** be equal to:
 
 ```json
-"direct-marketing metric: not-sent"
+"direct-marketing metric: notSent"
 ```
 
 

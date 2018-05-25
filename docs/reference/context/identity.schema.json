@@ -43,7 +43,7 @@
             "$ref": "#/definitions/identity"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stabilizing",
     "examples": [
         {
             "@id": "https://data.adobe.io/entities/identity/id123",

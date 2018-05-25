@@ -9,7 +9,7 @@ The web metric link-clicks describes the number of clicks on a link on a web pag
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [data/linkclicks.schema.json](data/linkclicks.schema.json) |
+| Can be instantiated | Yes | Stabilizing | Yes | Forbidden | Permitted | [data/linkclicks.schema.json](data/linkclicks.schema.json) |
 
 ## link-clicks Example
 ```json

@@ -26,9 +26,17 @@ This external schema definition allows adding HAL expressions into an existing s
     "self": {
       "href": "/orders/523"
     },
-    "warehouse": {
-      "href": "/warehouse/56"
-    },
+    "warehouses": [
+      {
+        "href": "/warehouse/56"
+      },
+      {
+        "href": "/warehouse/56"
+      },
+      {
+        "href": "/warehouse/56"
+      }
+    ],
     "invoice": {
       "href": "/invoices/873"
     }
@@ -93,17 +101,9 @@ This external schema definition allows adding HAL expressions into an existing s
     "self": {
       "href": "/orders/523"
     },
-    "warehouses": [
-      {
-        "href": "/warehouse/56"
-      },
-      {
-        "href": "/warehouse/56"
-      },
-      {
-        "href": "/warehouse/56"
-      }
-    ],
+    "warehouse": {
+      "href": "/warehouse/56"
+    },
     "invoice": {
       "href": "/invoices/873"
     }

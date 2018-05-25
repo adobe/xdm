@@ -34,6 +34,7 @@ Information about the surrounding situation the event observation occurred in, s
   },
   "xdm:operatingSystem": "MAC OS",
   "xdm:operatingSystemVersion": "10.13",
+  "xdm:operatingSystemVendor": "Apple",
   "xdm:connectionType": "cable"
 }
 ```
@@ -49,6 +50,7 @@ Information about the surrounding situation the event observation occurred in, s
 | [xdm:ipV4](#xdmipv4) | `string` | Optional | Environment (this schema) |
 | [xdm:ipV6](#xdmipv6) | `string` | Optional | Environment (this schema) |
 | [xdm:operatingSystem](#xdmoperatingsystem) | `string` | Optional | Environment (this schema) |
+| [xdm:operatingSystemVendor](#xdmoperatingsystemvendor) | `string` | Optional | Environment (this schema) |
 | [xdm:operatingSystemVersion](#xdmoperatingsystemversion) | `string` | Optional | Environment (this schema) |
 | [xdm:type](#xdmtype) | `enum` | Optional | Environment (this schema) |
 | [xdm:viewportHeight](#xdmviewportheight) | `integer` | Optional | Environment (this schema) |
@@ -204,6 +206,26 @@ The name of the operating system used when the observation was made. This attrib
 * defined in this schema
 
 ### xdm:operatingSystem Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:operatingSystemVendor
+### Operating System Vendor
+
+The name of the operating system vendor used when the observation was made.
+
+`xdm:operatingSystemVendor`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:operatingSystemVendor Type
 
 
 `string`

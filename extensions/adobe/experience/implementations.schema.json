@@ -28,6 +28,11 @@
       "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
       "description":
         "Client details interacting with Adobe Experience Cloud ID Service."
+    },
+    "https://ns.adobe.com/experience/adcloud": {
+      "title": "Client Implementation for Adobe AdCloud",
+      "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
+      "description": "Client details interacting with Adobe AdCloud."
     }
   }
 }

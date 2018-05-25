@@ -2119,6 +2119,37 @@
                   "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
                 }
               }
+            },
+            "xdm:lists": {
+              "type": "object",
+              "title": "Custom List Variables",
+              "properties": {
+                "xdm:list1": {
+                  "title": "List 1",
+                  "description": "Custom list variable 1.",
+                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                },
+                "xdm:list2": {
+                  "title": "List 2",
+                  "description": "Custom list variable 2.",
+                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                },
+                "xdm:list3": {
+                  "title": "List 3",
+                  "description": "Custom list variable 3.",
+                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                }
+              }
+            },
+            "xdm:stateProvince": {
+              "title": "state",
+              "type": "string",
+              "description": "Client supplied state or province location."
+            },
+            "xdm:postalCode": {
+              "title": "zip",
+              "type": "string",
+              "description": "Client supplied zip code/postal code."
             }
           }
         },

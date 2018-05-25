@@ -2,7 +2,7 @@
 xdm:navOrder: 1
 ---
 
-# Experience Data Model (XDM) Version 0.9
+# Experience Data Model (XDM) Version 0.91
 
 ## Introduction
 

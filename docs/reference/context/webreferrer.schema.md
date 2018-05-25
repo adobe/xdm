@@ -13,7 +13,7 @@ The information in this schema is semantically compatible with the information i
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/webreferrer.schema.json](context/webreferrer.schema.json) |
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/webreferrer.schema.json](context/webreferrer.schema.json) |
 
 ## Web Referrer Example
 ```json

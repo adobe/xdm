@@ -26,6 +26,10 @@
       }
     }
   },
+  "xdm:channel": {
+    "@id": "https://ns.adobe.com/xdm/channels/apns",
+    "@type": "https://ns.adobe.com/xdm/channel-types/mobile"
+  },
   "xdm:environment": {
     "xdm:type": "browser",
     "xdm:browserDetails": {
@@ -92,7 +96,7 @@
     }
   },
   "xdm:web":{
-    "xdm:webPageView": {
+    "xdm:webPageDetails": {
       "xdm:siteSection": "Shopping Cart",
       "xdm:server": "example.com",
       "xdm:name": "Purchase Confirmation",

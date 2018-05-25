@@ -16,15 +16,16 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Data Source](../data/datasource.schema.md) `https://ns.adobe.com/xdm/data/datasource`
   * [End User IDs](enduserids.schema.md) `https://ns.adobe.com/xdm/context/enduserids`
-  * [Metrics](../data/metrics.schema.md) `https://ns.adobe.com/xdm/data/metrics`
   * [Environment](environment.schema.md) `https://ns.adobe.com/xdm/context/environment`
   * [Device](device.schema.md) `https://ns.adobe.com/xdm/context/device`
   * [Commerce](commerce.schema.md) `https://ns.adobe.com/xdm/context/commerce`
-  * [Application](../channels/application.schema.md) `https://ns.adobe.com/xdm/channels/application`
+  * [Application](application.schema.md) `https://ns.adobe.com/xdm/context/application`
   * [Search](search.schema.md) `https://ns.adobe.com/xdm/context/search`
   * [Web Information](webinfo.schema.md) `https://ns.adobe.com/xdm/context/webinfo`
+  * [Direct Marketing](direct-marketing.schema.md) `https://ns.adobe.com/xdm/context/direct-marketing`
   * [Marketing](marketing.schema.md) `https://ns.adobe.com/xdm/context/marketing`
   * [Place Context](placecontext.schema.md) `https://ns.adobe.com/xdm/context/placecontext`
+  * [Experience Channel](../channels/channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
   * [Advertising](advertising.schema.md) `https://ns.adobe.com/xdm/context/advertising`
 
 
@@ -57,6 +58,10 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
         "xdm:code": "tnt0051"
       }
     }
+  },
+  "xdm:channel": {
+    "@id": "https://ns.adobe.com/xdm/channels/apns",
+    "@type": "https://ns.adobe.com/xdm/channel-types/mobile"
   },
   "xdm:environment": {
     "xdm:type": "browser",
@@ -124,7 +129,7 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
     }
   },
   "xdm:web": {
-    "xdm:webPageView": {
+    "xdm:webPageDetails": {
       "xdm:siteSection": "Shopping Cart",
       "xdm:server": "example.com",
       "xdm:name": "Purchase Confirmation",
@@ -148,7 +153,7 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
 
 ```json
 {
-  "@id": "https://data.adobe.io/experienceid-123456",
+  "@id": "https://data.adobe.io/experienceid-23456782",
   "xdm:dataSource": {
     "@id": "https://data.adobe.io/datasources/datasource-123",
     "xdm:code": "DataSourceIntegrationCode-123"
@@ -158,6 +163,168 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
     "https://ns.adobe.com/experience/mcid": {
       "@id": "https://data.adobe.io/entities/identity/92312748749128",
       "xdm:namespace": {
+        "@id": "https://data.adobe.io/entities/namespace/4",
+        "xdm:code": "ECID"
+      }
+    }
+  },
+  "xdm:environment": {
+    "xdm:type": "application",
+    "xdm:operatingSystem": "iOS",
+    "xdm:operatingSystemVersion": "10.13",
+    "xdm:connectionType": "mobile_lte"
+  },
+  "xdm:placeContext": {
+    "xdm:localTime": "2001-07-04T12:08:56+01:00",
+    "xdm:geo": {
+      "@id": "https://data.adobe.io/entities/geo/tokyo",
+      "xdm:countryCode": "JP",
+      "xdm:stateProvince": "JP-13",
+      "xdm:city": "Tōkyō",
+      "xdm:postalCode": "141-0032",
+      "schema:latitude": 35.6185,
+      "schema:longitude": 139.73237
+    },
+    "xdm:POIinteraction": {
+      "xdm:poiEntries": {
+        "xdm:value": 1
+      },
+      "xdm:POIID": "d8a5c08c-1e79-4051-8a8b-675fb235e03d",
+      "xdm:name": "Acme Hotel Tokyo Lobby",
+      "xdm:category": "Resorts",
+      "xdm:type": "Hotel",
+      "xdm:locatingType": "beacon",
+      "xdm:beaconInteractionDetails": {
+        "xdm:proximityUUID": "c6c03ed9-ea23-481c-ab15-833e88cfb22f",
+        "xdm:beaconMajor": 300,
+        "xdm:beaconMinor": 34
+      }
+    },
+    "xdm:activePOIs": [
+      {
+        "xdm:POIID": "c7f4bf28-c8d9-4b89-a81f-2a8ef9367390",
+        "xdm:name": "Acme Hotel Tokyo",
+        "xdm:category": "Resorts",
+        "xdm:type": "Hotel",
+        "xdm:locatingType": "beacon",
+        "xdm:beaconInteractionDetails": {
+          "xdm:proximityUUID": "dd0094a0-52bb-4d3a-ab15-fcccb9b9b48e",
+          "xdm:beaconMajor": 100,
+          "xdm:beaconMinor": 23
+        }
+      },
+      {
+        "xdm:POIID": "d8a5c08c-1e79-4051-8a8b-675fb235e03d",
+        "xdm:name": "Acme Hotel Tokyo Lobby",
+        "xdm:category": "Resorts",
+        "xdm:type": "Hotel",
+        "xdm:locatingType": "beacon",
+        "xdm:beaconInteractionDetails": {
+          "xdm:proximityUUID": "c6c03ed9-ea23-481c-ab15-833e88cfb22f",
+          "xdm:beaconMajor": 300,
+          "xdm:beaconMinor": 34
+        }
+      },
+      {
+        "xdm:POIID": "d8a5c08c-1e79-4051-8a8b-675fb235e03d",
+        "xdm:name": "Tokyo City",
+        "xdm:locatingType": "gps",
+        "xdm:geoInteractionDetails": {
+          "xdm:distanceToCenter": 320,
+          "xdm:accuracy": 30,
+          "xdm:geoShape": {
+            "@id": "https://data.adobe.io/entities/geoShape/shapeid123",
+            "schema:circle": {
+              "@id": "https://data.adobe.io/entities/geo/circleid123",
+              "schema:description": "Tokyo Metro",
+              "schema:coordinates": {
+                "@id": "https://data.adobe.io/entities/geo/111",
+                "schema:description": "Tokyo",
+                "schema:latitude": 37.3308953,
+                "schema:longitude": -121.8939894,
+                "schema:elevation": 31.0896
+              },
+              "schema:radius": 80000
+            }
+          }
+        }
+      }
+    ],
+    "xdm:type": "browser",
+    "xdm:browserDetails": {
+      "xdm:name": "Chrome",
+      "xdm:version": "63.0.3239",
+      "xdm:acceptLanguage": "en",
+      "xdm:cookiesEnabled": true,
+      "xdm:viewportHeight": 900,
+      "xdm:viewportWidth": 1680
+    },
+    "xdm:operatingSystem": "MAC OS",
+    "xdm:operatingSystemVersion": "10.13",
+    "xdm:connectionType": "cable"
+  },
+  "xdm:locationContext": {
+    "xdm:geo": {
+      "xdm:countryCode": "US",
+      "xdm:stateProvince": "CA",
+      "xdm:city": "Emeryville",
+      "xdm:dmaid": "99"
+    }
+  },
+  "xdm:web": {
+    "xdm:webPageView": {
+      "xdm:URL": "https://www.example.com"
+    },
+    "xdm:webReferrer": {
+      "xdm:URL": "https://www.examplereferrer.com/",
+      "xdm:domain": "examplereferrer.com"
+    }
+  },
+  "xdm:device": {
+    "xdm:type": "mobile",
+    "xdm:manufacturer": "Apple",
+    "xdm:model": "iPhone 6"
+  },
+  "xdm:advertising": {
+    "xdm:adViewability": {
+      "xdm:adUnitDepth": 0,
+      "xdm:viewportHeight": 1250,
+      "xdm:viewportWidth": 1600,
+      "xdm:adHeight": 250,
+      "xdm:adWidth": 300,
+      "xdm:playerVolume": 85,
+      "xdm:measurementEligible": true,
+      "xdm:implementationDetails": {
+        "xdm:name": "https://ns.adobe.com/experience/adcloud/viewability",
+        "xdm:version": "1"
+      },
+      "xdm:viewable": true,
+      "xdm:activeWindow": true,
+      "xdm:percentViewable": 89,
+      "xdm:viewableFirstQuartile": {
+        "xdm:value": 1
+      }
+    },
+    "xdm:firstQuartiles": {
+      "xdm:value": 1
+    }
+  }
+}
+```
+
+```json
+{
+  "@id": "https://data.adobe.io/experienceid-2345678",
+  "xdm:dataSource": {
+    "@id": "https://data.adobe.io/datasources/datasource-123",
+    "xdm:code": "DataSourceIntegrationCode-123"
+  },
+  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+  "xdm:endUserIDs": {
+    "https://ns.adobe.com/experience/mcid": {
+      "@id": "https://data.adobe.io/entities/identity/92312748749128",
+      "xdm:namespace": {
+        "@id": "https://data.adobe.io/entities/namespace/4",
         "xdm:code": "ECID"
       }
     }
@@ -233,14 +400,14 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
 | [@id](#@id) | `string` | Optional | ExperienceEvent (this schema) |
 | [xdm:advertising](#xdmadvertising) | Advertising | Optional | ExperienceEvent (this schema) |
 | [xdm:application](#xdmapplication) | Application | Optional | ExperienceEvent (this schema) |
-| [xdm:channel](#xdmchannel) | `string` | Optional | ExperienceEvent (this schema) |
+| [xdm:channel](#xdmchannel) | Experience Channel | Optional | ExperienceEvent (this schema) |
 | [xdm:commerce](#xdmcommerce) | Commerce | Optional | ExperienceEvent (this schema) |
 | [xdm:dataSource](#xdmdatasource) | Data Source | Optional | ExperienceEvent (this schema) |
 | [xdm:device](#xdmdevice) | Device | Optional | ExperienceEvent (this schema) |
+| [xdm:directMarketing](#xdmdirectmarketing) | Direct Marketing | Optional | ExperienceEvent (this schema) |
 | [xdm:endUserIDs](#xdmenduserids) | End User IDs | Optional | ExperienceEvent (this schema) |
 | [xdm:environment](#xdmenvironment) | Environment | Optional | ExperienceEvent (this schema) |
 | [xdm:marketing](#xdmmarketing) | Marketing | Optional | ExperienceEvent (this schema) |
-| [xdm:metrics](#xdmmetrics) | Metrics | Optional | ExperienceEvent (this schema) |
 | [xdm:placeContext](#xdmplacecontext) | Place Context | Optional | ExperienceEvent (this schema) |
 | [xdm:productListItems](#xdmproductlistitems) | Product List Item | Optional | ExperienceEvent (this schema) |
 | [xdm:search](#xdmsearch) | Search | Optional | ExperienceEvent (this schema) |
@@ -301,54 +468,27 @@ The application related to the event observation. It could be either the applica
 ### xdm:application Type
 
 
-* [Application](../channels/application.schema.md) – `https://ns.adobe.com/xdm/channels/application`
+* [Application](application.schema.md) – `https://ns.adobe.com/xdm/context/application`
 
 
 
 
 
 ## xdm:channel
-### Communication Channel
+### Experience Channel
 
-The marketing channel related to this ExperienceEvent.
+The experience channel related to this ExperienceEvent.
 
 `xdm:channel`
 * is optional
-* type: `string`
+* type: Experience Channel
 * defined in this schema
 
 ### xdm:channel Type
 
 
-`string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+* [Experience Channel](../channels/channel.schema.md) – `https://ns.adobe.com/xdm/channels/channel`
 
-
-
-### xdm:channel Known Values
-| Value | Description |
-|-------|-------------|
-| `https://ns.adobe.com/xdm/channels/adm` | ADM |
-| `https://ns.adobe.com/xdm/channels/agency` | Agency |
-| `https://ns.adobe.com/xdm/channels/apns` | APNS |
-| `https://ns.adobe.com/xdm/channels/application` | Application |
-| `https://ns.adobe.com/xdm/channels/baidu` | Baidu |
-| `https://ns.adobe.com/xdm/channels/channel` | Experience Channel |
-| `https://ns.adobe.com/xdm/channels/direct-mail` | Direct Mail |
-| `https://ns.adobe.com/xdm/channels/email` | E-Mail |
-| `https://ns.adobe.com/xdm/channels/facebook-feed` | Facebook News Feed |
-| `https://ns.adobe.com/xdm/channels/fax` | Fax |
-| `https://ns.adobe.com/xdm/channels/gcm` | GCM |
-| `https://ns.adobe.com/xdm/channels/line` | LINE |
-| `https://ns.adobe.com/xdm/channels/mobile-app` | Web |
-| `https://ns.adobe.com/xdm/channels/mpns` | MPNS |
-| `https://ns.adobe.com/xdm/channels/phone` | Phone |
-| `https://ns.adobe.com/xdm/channels/sms` | SMS |
-| `https://ns.adobe.com/xdm/channels/twitter-feed` | Twitter Feed |
-| `https://ns.adobe.com/xdm/channels/web` | Web |
-| `https://ns.adobe.com/xdm/channels/webpage` | Web Page |
-| `https://ns.adobe.com/xdm/channels/wechat` | WeChat |
-| `https://ns.adobe.com/xdm/channels/wns` | WNS |
 
 
 
@@ -410,6 +550,25 @@ An identified Device/Application or Device/Browser instance that is trackable ac
 
 
 
+## xdm:directMarketing
+### Direct Marketing
+
+The events and properties related to direct/outbound marketing such as email, direct mail, texts and in-app notifications.
+
+`xdm:directMarketing`
+* is optional
+* type: Direct Marketing
+* defined in this schema
+
+### xdm:directMarketing Type
+
+
+* [Direct Marketing](direct-marketing.schema.md) – `https://ns.adobe.com/xdm/context/direct-marketing`
+
+
+
+
+
 ## xdm:endUserIDs
 ### End User IDs
 
@@ -463,25 +622,6 @@ The information related to marketing activities that are active with the touchpo
 
 
 * [Marketing](marketing.schema.md) – `https://ns.adobe.com/xdm/context/marketing`
-
-
-
-
-
-## xdm:metrics
-### Metrics
-
-The metrics for actions performed during this observation.
-
-`xdm:metrics`
-* is optional
-* type: Metrics
-* defined in this schema
-
-### xdm:metrics Type
-
-
-* [Metrics](../data/metrics.schema.md) – `https://ns.adobe.com/xdm/data/metrics`
 
 
 

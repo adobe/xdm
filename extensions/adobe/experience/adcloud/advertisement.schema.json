@@ -1,0 +1,74 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/experience/adcloud/advertisement",
+  "title": "Advertisement Details",
+  "type": "object",
+  "description": "Adobe AdCloud Ad Details",
+  "definitions": {
+    "advertisement": {
+      "properties": {
+        "xdm:adId": {
+          "title": "Ad ID",
+          "type": "string",
+          "description":
+          "Unique identifier for the ad this event is associated with. Not to be confused with Ad-ID standard."
+        },
+        "xdm:runtime": {
+          "title": "Runtime Type",
+          "type": "string",
+          "description": "The runtime of the ad unit itself, not the runtime of the browser or the operating system.",
+          "meta:enum": {
+            "unknown": "Unknown",
+            "HTML5": "HTML5"
+            }
+        },
+        "xdm:adClass": {
+          "title": "Ad Class",
+          "type": "string",
+          "description": "Ad class of driving event.",
+          "meta:enum": {
+            "display": "Display",
+            "video": "Video",
+            "social": "Social"
+            }
+        },
+        "xdm:adUnitType": {
+          "title": "Ad Unit Type",
+          "type": "string",
+          "description": "Unique identifier for the literal piece of code driving display of the ad in a browser/device.",
+          "meta:enum": {
+            "linearVideo": "Linear video",
+            "interactiveVideo": "Interactive video",
+            "banner": "Banner",
+            "richMediaBanner": "Rich media banner",
+            "newsFeedVideo": "News feed video",
+            "newsFeedDisplay": "News feed display",
+            "HTML5": "HTML5",
+            "inPageVideo": "In page video",
+            "inPageDisplay": "In page display",
+            "facebook":"Facebook",
+            "twitter": "Twitter",
+            "linearTv": "Linear TV",
+            "vod": "Video on Demand"
+            }
+        },
+        "xdm:promotedAssetId": {
+          "title": "Promoted Asset ID",
+          "type": "string",
+          "description": "Unique identifier for the underlying asset being promoted in the ad which this event is associated with."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/advertisement"
+    }
+  ]
+}

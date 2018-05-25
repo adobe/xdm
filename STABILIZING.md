@@ -1,14 +1,14 @@
 # Stabilization Candidates
 
-_Generated on **Fri May 25 2018 10:05:24 GMT+0000 (UTC)**_
+_Generated on **Fri May 25 2018 10:33:45 GMT+0000 (UTC)**_
 
 
 ### Unknown Status, needs immediate attention
 
 |Schema|Status|Status Modified Date|Last Non-trivial Change|Raw Commit Log Since Status Change|
 |------|------|--------------------|-----------------------|----------------------------------|
-|[schemas/common/descriptors/itemselector](schemas/common/descriptors/itemselector.schema.json)|undefined|0|0|[](https://github.com/adobe/xdm/commit/ "Merge pull request #342 from saurabhere/add-test-profile")|
-|[schemas/common/descriptors/schemadescriptor](schemas/common/descriptors/schemadescriptor.schema.json)|undefined|0|0|[](https://github.com/adobe/xdm/commit/ "Merge pull request #342 from saurabhere/add-test-profile")|
+|[schemas/common/descriptors/itemselector](schemas/common/descriptors/itemselector.schema.json)|undefined|0|0|[](https://github.com/adobe/xdm/commit/ "Merge pull request #329 from adobe/platform-pr-uber-experienceevent")|
+|[schemas/common/descriptors/schemadescriptor](schemas/common/descriptors/schemadescriptor.schema.json)|undefined|0|0|[](https://github.com/adobe/xdm/commit/ "Merge pull request #329 from adobe/platform-pr-uber-experienceevent")|
 
 
 ### Experimental Status

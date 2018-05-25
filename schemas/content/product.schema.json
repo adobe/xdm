@@ -59,7 +59,7 @@
           "minItems": 1,
           "items": {
             "$ref":
-              "https://ns.adobe.com/xdm/assets/asset#/definitions/asset"
+              "https://ns.adobe.com/xdm/content/product-price#/definitions/price"
           },
           "description":
             "The list of prices for this product."

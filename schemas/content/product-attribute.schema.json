@@ -37,7 +37,8 @@
         },
         "xdm:value": {
           "title": "Value",
-          "description": "The attribute value."
+          "type": "string",
+          "description": "The value of the product attribute."
         },
         "xdm:unit": {
           "title": "Unit",

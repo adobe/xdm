@@ -43,11 +43,11 @@
           "type": "string",
           "description": "Flow control in the journey triggered by the event.",
           "meta:enum": {
-            "End": "if the 'end' step has been reached, if this step exists",
-            "Jump": "if a jump has been taken",
-            "Timer":
+            "end": "if the 'end' step has been reached, if this step exists",
+            "jump": "if a jump has been taken",
+            "timer":
               "if a transition has been applied, implying a scheduler notification",
-            "Condition": "if a conditional step has been processed"
+            "condition": "if a conditional step has been processed"
           }
         },
         "xdm:eventMetrics": {
@@ -74,19 +74,19 @@
               "type": "string",
               "description": "The type of action to be performed.",
               "meta:enum": {
-                "scheduledNotification":
+                "scheduled_notification":
                   "This action type allows to specify scheduled notifications and wait for the notifications as incoming events for steps",
-                "httpCall":
+                "http_call":
                   "This action type is for a HTTP call on an external system",
-                "actionWithPersonalization":
+                "action_with_personalization":
                   "This action type describes an action with personalization that will be resolved at runtime for each voyager instance",
-                "parameterizedAction":
+                "parameterized_action":
                   "This action type describes an action with parameterization",
-                "sendJourneyNotification":
+                "send_journey_notification":
                   "This action type is to send notification for another journey",
-                "acsWriter":
+                "acs_writer":
                   "The ACS writer action performs REST calls to an Adobe campaign standard instance to write data",
-                "acsMessageCenter":
+                "acs_message_center":
                   "The ACS message center action performs REST calls to an Adobe campaign standard instance to send messages with Message Center"
               }
             }

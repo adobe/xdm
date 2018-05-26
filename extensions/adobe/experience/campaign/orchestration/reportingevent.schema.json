@@ -57,7 +57,7 @@
           "description":
             "The metrics for actions performed during this observation."
         },
-        "https://ns.adobe.com/experience/campaign/orchestration/action": {
+        "https://ns.adobe.com/experience/campaign/orchestrationAction": {
           "title": "Action on step transition",
           "type": "object",
           "description":
@@ -92,24 +92,14 @@
             }
           }
         },
-        "https://ns.adobe.com/experience/campaign/orchestration/externalevent": {
+        "https://ns.adobe.com/experience/campaign/orchestrationExternalEvent": {
           "title": "external event received",
-          "type": "object",
+          "$ref":
+            "https://ns.adobe.com/experience/campaign/orchestration/reportingexternalevent",
           "description":
-            "External event received, triggering the state transition",
-          "meta:extends": ["https://ns.adobe.com/xdm/context/experienceevent"],
-          "properties": {
-            "xdm:eventType": {
-              "title": "Type of the event received",
-              "type": "string",
-              "description": "The type for the external event received",
-              "meta:enum": {
-                "http": "The external event recieved on http endpoint"
-              }
-            }
-          }
+            "External event received, triggering the state transition"
         },
-        "https://ns.adobe.com/experience/campaign/orchestration/journey": {
+        "https://ns.adobe.com/experience/campaign/journey": {
           "title": "Journey for users",
           "type": "object",
           "description": "Journey created by marketer for its users",
@@ -124,7 +114,7 @@
           },
           "required": ["@id"]
         },
-        "https://ns.adobe.com/experience/campaign/orchestration/journeyVersion": {
+        "https://ns.adobe.com/experience/campaign/journeyVersion": {
           "title": "Journey version",
           "type": "object",
           "description":
@@ -144,8 +134,8 @@
     }
   },
   "required": [
-    "https://ns.adobe.com/experience/campaign/orchestration/journey",
-    "https://ns.adobe.com/experience/campaign/orchestration/journeyVersion",
+    "https://ns.adobe.com/experience/campaign/journey",
+    "https://ns.adobe.com/experience/campaign/journeyVersion",
     "xdm:timestamp",
     "xdm:orgID"
   ],
@@ -154,5 +144,5 @@
       "$ref": "#/definitions/reportingevent"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stabilizing"
 }

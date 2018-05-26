@@ -42,6 +42,7 @@
           "title": "Flow control",
           "type": "string",
           "description": "Flow control in the journey triggered by the event.",
+          "enum": ["end", "jump", "timer", "condition"],
           "meta:enum": {
             "end": "if the 'end' step has been reached, if this step exists",
             "jump": "if a jump has been taken",

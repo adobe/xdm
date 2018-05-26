@@ -10,11 +10,11 @@ Information recorded via an `ExperienceEvent` that is specific to the World Wide
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/webinfo.schema.json](context/webinfo.schema.json) |
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/webinfo.schema.json](context/webinfo.schema.json) |
 ## Schema Hierarchy
 
 * Web Information `https://ns.adobe.com/xdm/context/webinfo`
-  * [Web Page View](webpageview.schema.md) `https://ns.adobe.com/xdm/context/webpageview`
+  * [Web Page Details](webpagedetails.schema.md) `https://ns.adobe.com/xdm/context/webpagedetails`
   * [Web Interaction](webinteraction.schema.md) `https://ns.adobe.com/xdm/context/webinteraction`
   * [Web Referrer](webreferrer.schema.md) `https://ns.adobe.com/xdm/context/webreferrer`
 
@@ -23,27 +23,7 @@ Information recorded via an `ExperienceEvent` that is specific to the World Wide
 
 ```json
 {
-  "xdm:webPageView": {
-    "xdm:siteSection": "Product section",
-    "xdm:server": "example.com",
-    "xdm:name": "product home",
-    "xdm:URL": "https://www.example.com/products",
-    "xdm:errorPage": false,
-    "xdm:homePage": true,
-    "xdm:pageViews": {
-      "xdm:value": 1
-    }
-  },
-  "xdm:webReferrer": {
-    "xdm:URL": "https://www.some-adserver.com",
-    "xdm:referrerType": "external"
-  }
-}
-```
-
-```json
-{
-  "xdm:webPageView": {
+  "xdm:webPageDetails": {
     "xdm:siteSection": "Product section",
     "xdm:server": "example.com",
     "xdm:name": "product home",
@@ -66,13 +46,33 @@ Information recorded via an `ExperienceEvent` that is specific to the World Wide
 }
 ```
 
+```json
+{
+  "xdm:webPageDetails": {
+    "xdm:siteSection": "Product section",
+    "xdm:server": "example.com",
+    "xdm:name": "product home",
+    "xdm:URL": "https://www.example.com/products",
+    "xdm:errorPage": false,
+    "xdm:homePage": true,
+    "xdm:pageViews": {
+      "xdm:value": 1
+    }
+  },
+  "xdm:webReferrer": {
+    "xdm:URL": "https://www.some-adserver.com",
+    "xdm:referrerType": "external"
+  }
+}
+```
+
 
 # Web Information Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [xdm:webInteraction](#xdmwebinteraction) | Web Interaction | Optional | Web Information (this schema) |
-| [xdm:webPageView](#xdmwebpageview) | Web Page View | Optional | Web Information (this schema) |
+| [xdm:webPageDetails](#xdmwebpagedetails) | Web Page Details | Optional | Web Information (this schema) |
 | [xdm:webReferrer](#xdmwebreferrer) | Web Referrer | Optional | Web Information (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -95,20 +95,20 @@ Details about the web link (URL) that corresponds to where the interaction occur
 
 
 
-## xdm:webPageView
-### Web Page View
+## xdm:webPageDetails
+### Web Page Details
 
 Details about the web page where the web interaction occurred.
 
-`xdm:webPageView`
+`xdm:webPageDetails`
 * is optional
-* type: Web Page View
+* type: Web Page Details
 * defined in this schema
 
-### xdm:webPageView Type
+### xdm:webPageDetails Type
 
 
-* [Web Page View](webpageview.schema.md) – `https://ns.adobe.com/xdm/context/webpageview`
+* [Web Page Details](webpagedetails.schema.md) – `https://ns.adobe.com/xdm/context/webpagedetails`
 
 
 

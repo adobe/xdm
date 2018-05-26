@@ -1,5 +1,5 @@
 
-# opens Schema
+# Opens Schema
 
 ```
 https://ns.adobe.com/xdm/data/metrics/direct-marketing/opens
@@ -9,26 +9,26 @@ The direct-marketing metric `opens` describes the number of times the direct mar
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [data/opens.schema.json](data/opens.schema.json) |
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/opens.schema.json](data/opens.schema.json) |
 
-## opens Example
+## Opens Example
 ```json
 {
   "schema:name": "direct-marketing metric: opens",
-  "@id": "https://ns.adobe.com/xdm/data/metrics/direct-marketing/opens",
+  "@id": "xdm:opens",
   "xdm:measurement": "count",
   "xdm:unit": null
 }
 ```
 
-# opens Properties
+# Opens Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | opens (this schema) |
-| [schema:name](#schemaname) | `const` | **Required** | opens (this schema) |
-| [xdm:measurement](#xdmmeasurement) | `const` | **Required** | opens (this schema) |
-| [xdm:unit](#xdmunit) | `const` | **Required** | opens (this schema) |
+| [@id](#@id) | `const` | **Required** | Opens (this schema) |
+| [schema:name](#schemaname) | `const` | **Required** | Opens (this schema) |
+| [xdm:measurement](#xdmmeasurement) | `const` | **Required** | Opens (this schema) |
+| [xdm:unit](#xdmunit) | `const` | **Required** | Opens (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -43,7 +43,7 @@ The unique identifier of this metric.
 The value of this property **must** be equal to:
 
 ```json
-"https://ns.adobe.com/xdm/data/metrics/direct-marketing/opens"
+"xdm:opens"
 ```
 
 

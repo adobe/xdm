@@ -10,6 +10,9 @@
   "title": "Product",
   "type": "object",
   "meta:extensible": true,
+  "meta:extends": [
+    "http://ns.adobe.com/adobecloud/core/1.0#/definitions/date-properties"
+  ],
   "description":
     "XDM product, product variant and key attributes of product in the product catalog.",
   "definitions": {
@@ -92,21 +95,7 @@
               "https://ns.adobe.com/xdm/content/product#/definitions/product"
           },
           "description":
-            "List of product variants belonging to this product."
-        },
-        "xdm:productCreateDate": {
-          "title": "Product Creation Date",
-          "format": "date",
-          "type": "string",
-          "description":
-            "The date when this product was created. The time using RFC3339 with a stated timezone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\"."
-        },
-        "xdm:productLastModified": {
-          "title": "Product Last Modified",
-          "format": "date",
-          "type": "string",
-          "description":
-            "The date when this product was last modified. The time using RFC3339 with a stated timezone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\"."
+            "List of product variations belonging to this product."
         },
         "xdm:productURL": {
           "title": "Product URL",
@@ -125,6 +114,6 @@
       "$ref": "#/definitions/product"
     }
   ],
-  "required": ["@id", "xdm:name", "xdm:SKU"],
+  "required": ["@id", "repo:createdDate", "xdm:name", "xdm:SKU"],
   "meta:status": "experimental"
 }

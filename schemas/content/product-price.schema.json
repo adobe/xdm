@@ -31,7 +31,7 @@
             "The ISO 4217 alphabetic currency code used for cost and pricing."
         },
         "xdm:type": {
-          "title": "Product price Type",
+          "title": "Product Price Type",
           "type": "string",
           "examples": ["Sales Price", "MSRP", "Net Price"],
           "description":

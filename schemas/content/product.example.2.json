@@ -1,0 +1,78 @@
+{
+  "@id": "https://ns.adobe.com/xdm/commerce/product-CQ3080",
+  "repo:createdDate": "2018-05-28T10:00:00+00:00",
+  "xdm:SKU": "CQ3080",
+  "xdm:name": "Adidas ORIGINALS NMD_R2 SUMMER SHOES",
+  "schema:description": "WARM-WEATHER SHOES THAT BLEND ADIDAS HERITAGE WITH MODERN COMFORT. The NMD_R2 mixes modern engineering with a vintage soul. These shoes have a knit upper that's built to flex and breathe, plus the responsive comfort of Boost.   Outfitted for hot days Mesh lining features cool-touch yarn Sockliner with Outlast® technology helps regulate foot temperature  Distinctive Boost midsole  Boost is our most responsive cushioning ever  Signature NMD details A signature heel pull plus EVA midsole plug",
+  "xdm:categories": [
+    "https://ns.adobe.com/xdm/commerce/category-men-shoes"
+  ],
+  "xdm:attributes": [
+    {
+      "xdm:key": "deparment",
+      "xdm:name": "Department",
+      "xdm:value": "Men Shoes"
+    },
+    {
+      "xdm:key": "brand",
+      "xdm:name": "Brand Name",
+      "xdm:value": "Adidas"
+    }
+  ],
+  "xdm:prices": [
+    {
+      "xdm:currency": "USD",
+      "xdm:amount": 130,
+      "xdm:type": "MSRP"
+    }
+  ],
+  "xdm:variants": [
+    {
+      "@id": "https://ns.adobe.com/xdm/commerce/product-CQ3080",
+      "repo:createdDate": "2018-05-28T10:00:00+00:00",
+      "xdm:name": "Adidas ORIGINALS NMD_R2 SUMMER SHOES - WHITE",
+      "xdm:SKU": "CQ3080",
+      "xdm:attributes": [
+        {
+          "xdm:key": "color",
+          "xdm:name": "Color",
+          "xdm:value": "CRYSTAL WHITE / GREY / GUM",
+          "xdm:variantAttribute": true
+        },
+        {
+          "xdm:key": "size",
+          "xdm:name": "Size",
+          "xdm:value": {
+            "@type": "https://ns.adobe.com/xdm/data/example-metric",
+            "xdm:value": 9
+          },
+          "xdm:variantAttribute": true
+        }
+      ]
+    },
+    {
+      "@id": "https://ns.adobe.com/xdm/commerce/product-CQ3081",
+      "repo:createdDate": "2018-05-28T10:00:00+00:00",
+      "xdm:name": "Adidas ORIGINALS NMD_R2 SUMMER SHOES - ORANGE",
+      "xdm:SKU": "CQ3081",
+      "xdm:attributes": [
+        {
+          "xdm:key": "color",
+          "xdm:name": "Color",
+          "xdm:value": "TRACE ORANGE / GUM / CLOUD WHITE",
+          "xdm:variantAttribute": true
+        },
+        {
+          "xdm:key": "size",
+          "xdm:name": "Size",
+          "xdm:value": {
+            "@type": "https://ns.adobe.com/xdm/data/example-metric",
+            "xdm:value": 10
+          },
+          "xdm:variantAttribute": true
+        }
+
+      ]
+    }
+  ]
+}

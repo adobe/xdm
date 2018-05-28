@@ -38,8 +38,11 @@
     {
       "xdm:key": "size",
       "xdm:name": "Size",
-      "xdm:value": "8.91",
-      "xdm:unit": "Inch",
+      "xdm:value": {
+        "@type": "https://ns.adobe.com/xdm/data/example-metric",
+        "xdm:unit": "Inch",
+        "xdm:value": 8.91
+      },
       "xdm:variantAttribute": true
     }
   ],

@@ -44,6 +44,7 @@
         "xdm:categories": {
           "title": "Category",
           "type": "array",
+          "uniqueItems": true,
           "items": {
             "type": "string",
             "format": "uri"
@@ -72,6 +73,7 @@
         "xdm:assets": {
           "title": "Assets",
           "type": "array",
+          "uniqueItems": true,
           "items": {
             "$ref":
               "https://ns.adobe.com/xdm/assets/asset#/definitions/asset"
@@ -82,6 +84,7 @@
         "xdm:attributes": {
           "title": "Attributes",
           "type": "array",
+          "uniqueItems": true,
           "items": {
             "$ref":
               "https://ns.adobe.com/xdm/content/product-attribute#/definitions/attribute"
@@ -94,10 +97,10 @@
           "type": "array",
           "items": {
             "$ref":
-              "https://ns.adobe.com/xdm/content/product#/definitions/product"
+              "https://ns.adobe.com/xdm/content/product"
           },
           "description":
-            "List of product variations belonging to this product."
+            "List of product variations belonging to this product. Variantions can be represented as products as well."
         },
         "xdm:productURL": {
           "title": "Product URL",

@@ -37,26 +37,15 @@
         },
         "xdm:value": {
           "title": "Value",
-          "type": "string",
+          "oneOf": [
+            {
+              "type": "string"
+            },
+            {
+              "$ref": "https://ns.adobe.com/xdm/data/measure"
+            }
+          ],
           "description": "The value of the product attribute."
-        },
-        "xdm:unit": {
-          "title": "Unit",
-          "type": "string",
-          "description": "The unit of measure for the attribute value, following the International System of Units.",
-          "meta:enum": {
-            "in": "inch",
-            "ft": "foot",
-            "yd": "yard",
-            "m": "meter",
-            "cm": "centimeter",
-            "km": "kilometer",
-            "kg": "kilogram",
-            "lb": "pounds",
-            "W": "watt",
-            "kW": "kilowatt",
-            "L": "liter"
-          }
         },
         "xdm:variantAttribute": {
           "title": "Variant Attribute",
@@ -72,6 +61,9 @@
       "$ref": "#/definitions/attribute"
     }
   ],
-  "required": ["xdm:key"],
+  "required": [
+    "xdm:key",
+    "xdm:value"
+  ],
   "meta:status": "experimental"
 }

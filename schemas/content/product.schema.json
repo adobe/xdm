@@ -18,11 +18,12 @@
   "definitions": {
     "product": {
       "properties": {
-        "id": {
+        "@id": {
           "title": "Identifier",
           "type": "string",
+          "format": "uri",
           "description":
-            "The internal unique ID of the product or variant in the commerce backend system."
+            "The unique identifier for the product or variant. If the internal product id of the commerce or PIM backend system is not a valid URI it must be prefixed unique domain."
         },
         "xdm:SKU": {
           "title": "SKU",
@@ -44,10 +45,11 @@
           "title": "Category",
           "type": "array",
           "items": {
-            "type": "string"
+            "type": "string",
+            "format": "uri"
           },
           "description":
-            "List of category ids of the product."
+            "List of category ids of the product. Primary product category has to be the first list element."
         },
         "xdm:masterProductID": {
           "title": "Master Product Identifier",
@@ -75,7 +77,7 @@
               "https://ns.adobe.com/xdm/assets/asset#/definitions/asset"
           },
           "description":
-            "List of assets associated with this product."
+            "List of assets associated with this product. The primary product asset has to be the first list element."
         },
         "xdm:attributes": {
           "title": "Attributes",

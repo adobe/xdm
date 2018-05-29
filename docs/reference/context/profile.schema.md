@@ -123,6 +123,7 @@ for other Profile data such as preference, propensities and other attributes.
 | [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmrepositorycreatedby) |
 | [xdm:repositoryLastModifiedBy](#xdmrepositorylastmodifiedby) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmrepositorylastmodifiedby) |
 | [xdm:subscriptions](#xdmsubscriptions) | Subscription | Optional | Profile (this schema) |
+| [xdm:testProfile](#xdmtestprofile) | `boolean` | Optional | Profile (this schema) |
 | [xdm:timeZone](#xdmtimezone) | `string` | Optional | Profile (this schema) |
 | [xdm:workAddress](#xdmworkaddress) | Address | Optional | Profile (this schema) |
 | [xdm:workEmail](#xdmworkemail) | Email Address | Optional | Profile (this schema) |
@@ -588,6 +589,25 @@ All items must be of the type:
 
 
 
+
+
+
+
+
+## xdm:testProfile
+### Test Profile
+
+Indicates the `profile` record is for use in testing/verification purposes and should not be automatically included in normal operation(s).
+
+`xdm:testProfile`
+* is optional
+* type: `boolean`
+* defined in this schema
+
+### xdm:testProfile Type
+
+
+`boolean`
 
 
 

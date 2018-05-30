@@ -7,10 +7,10 @@
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/xdm/assets/rectangular",
-  "title": "Rectangular Media",
+  "title": "Simple Rectangular Area",
   "type": "object",
   "description":
-    "Properties that apply to images, videos, and other rectangular media",
+    "Properties that apply to images, videos, and other rectangular media. It represents a rectangular area on a pixel-based surface, but without any indication of origin.",
   "definitions": {
     "rectangular": {
       "properties": {

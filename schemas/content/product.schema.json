@@ -83,14 +83,10 @@
         },
         "xdm:attributes": {
           "title": "Attributes",
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "$ref":
-              "https://ns.adobe.com/xdm/content/product-attribute#/definitions/attribute"
-          },
+          "$ref":
+              "https://ns.adobe.com/xdm/content/product-attributes",
           "description":
-            "List of attributes associated with this product."
+            "Descriptive attributes associated with this product. "
         },
         "xdm:variants": {
           "title": "Product Variants",

@@ -1,0 +1,22 @@
+{
+  "xdm:size": {
+    "xdm:value": "One size",
+    "xdm:variantAttribute": true
+  },
+  "xdm:weight": {
+    "xdm:value": {
+      "@type": "https://ns.adobe.com/xdm/data/weight",
+      "xdm:unit": "kg",
+      "xdm:value": 175
+    }
+  },
+  "https://shop.example.com/pim/freeshipping": true,
+  "https://shop.example.com/pim/shippingweight": {
+    "schema:name": "Shipping Weight",
+    "xdm:value": {
+      "@type": "https://ns.adobe.com/xdm/data/weight",
+      "xdm:unit": "kg",
+      "xdm:value": 175
+    }
+  }
+}

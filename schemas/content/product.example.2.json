@@ -7,18 +7,13 @@
   "xdm:categories": [
     "https://ns.adobe.com/xdm/commerce/category-men-shoes"
   ],
-  "xdm:attributes": [
-    {
-      "xdm:key": "deparment",
-      "xdm:name": "Department",
-      "xdm:value": "Men Shoes"
+  "xdm:attributes": {
+    "https://shop.example.com/pim/department": {
+      "schema:name": "Department",
+      "xdm:value": "Men's Shoes"
     },
-    {
-      "xdm:key": "brand",
-      "xdm:name": "Brand Name",
-      "xdm:value": "Adidas"
-    }
-  ],
+    "xdm:brand": "Adidas"
+  },
   "xdm:prices": [
     {
       "xdm:currency": "USD",
@@ -32,47 +27,38 @@
       "repo:createdDate": "2018-05-28T10:00:00+00:00",
       "xdm:name": "Adidas ORIGINALS NMD_R2 SUMMER SHOES - WHITE",
       "xdm:SKU": "CQ3080",
-      "xdm:attributes": [
-        {
-          "xdm:key": "color",
-          "xdm:name": "Color",
+      "xdm:attributes": {
+        "xdm:color": {
           "xdm:value": "CRYSTAL WHITE / GREY / GUM",
           "xdm:variantAttribute": true
         },
-        {
-          "xdm:key": "size",
-          "xdm:name": "Size",
+        "xdm:size": {
           "xdm:value": {
-            "@type": "https://ns.adobe.com/xdm/data/example-metric",
+            "@type": "https://shop.example.com/pim/us-shoe-size",
             "xdm:value": 9
           },
           "xdm:variantAttribute": true
         }
-      ]
+      }
     },
     {
       "@id": "https://ns.adobe.com/xdm/commerce/product-CQ3081",
       "repo:createdDate": "2018-05-28T10:00:00+00:00",
       "xdm:name": "Adidas ORIGINALS NMD_R2 SUMMER SHOES - ORANGE",
       "xdm:SKU": "CQ3081",
-      "xdm:attributes": [
-        {
-          "xdm:key": "color",
-          "xdm:name": "Color",
+      "xdm:attributes": {
+        "xdm:color": {
           "xdm:value": "TRACE ORANGE / GUM / CLOUD WHITE",
           "xdm:variantAttribute": true
         },
-        {
-          "xdm:key": "size",
-          "xdm:name": "Size",
+        "xdm:size": {
           "xdm:value": {
-            "@type": "https://ns.adobe.com/xdm/data/example-metric",
+            "@type": "https://shop.example.com/pim/us-shoe-size",
             "xdm:value": 10
           },
           "xdm:variantAttribute": true
         }
-
-      ]
+      }
     }
   ]
 }

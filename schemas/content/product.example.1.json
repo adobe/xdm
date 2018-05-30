@@ -2,42 +2,27 @@
   "@id": "https://ns.adobe.com/xdm/commerce/product-203766910",
   "repo:createdDate": "2018-05-28T10:00:00+00:00",
   "xdm:SKU": "203766910",
-  "xdm:name": "Lahara Single Hole Single-Handle Bathroom Faucet with Metal Drain Assembly in Stainless",
-  "schema:description": "Just like ocean waves, the one-piece curves and sleek lines of this Lahara Single Hole 1-Handle High Arc Bathroom Faucet in Stainless make a lasting impression. Delta's exclusive DIAMOND seal technology uses a valve with a tough diamond coating to bring you a faucet built to last up to five million uses.",
+  "xdm:name":
+    "Lahara Single Hole Single-Handle Bathroom Faucet with Metal Drain Assembly in Stainless",
+  "schema:description":
+    "Just like ocean waves, the one-piece curves and sleek lines of this Lahara Single Hole 1-Handle High Arc Bathroom Faucet in Stainless make a lasting impression. Delta's exclusive DIAMOND seal technology uses a valve with a tough diamond coating to bring you a faucet built to last up to five million uses.",
   "xdm:categories": [
     "https://ns.adobe.com/xdm/commerce/category-12345-Bathroom-Faucets",
     "https://ns.adobe.com/xdm/commerce/category-67890-Kitchen-Faucets"
   ],
-  "xdm:attributes": [
-    {
-      "xdm:key": "deparment",
-      "xdm:name": "Department",
+  "xdm:attributes": {
+    "https://shop.example.com/pim/department": {
+      "schema:name": "Department",
       "xdm:value": "Bathroom"
     },
-    {
-      "xdm:key": "brand",
-      "xdm:name": "Brand Name",
-      "xdm:value": "Delta"
-    },
-    {
-      "xdm:key": "manufacturer",
-      "xdm:name": "Manufacturer Name",
-      "xdm:value": "Delta Faucet Company"
-    },
-    {
-      "xdm:key": "supplierName",
-      "xdm:name": "Supplier Name",
+    "xdm:brand": "Delta",
+    "xdm:manufacturer": "Delta Faucet Company",
+    "https://shop.example.com/pim/supplier": {
+      "schema:name": "Supplier Name",
       "xdm:value": "Home Depot"
     },
-    {
-      "xdm:key": "fabrication",
-      "xdm:name": "Fabrication",
-      "xdm:value": "stainless steel",
-      "xdm:variantAttribute": true
-    },
-    {
-      "xdm:key": "size",
-      "xdm:name": "Size",
+    "xdm:fabrication": "stainless steel",
+    "xdm:size": {
       "xdm:value": {
         "@type": "https://ns.adobe.com/xdm/data/example-metric",
         "xdm:unit": "Inch",
@@ -45,7 +30,7 @@
       },
       "xdm:variantAttribute": true
     }
-  ],
+  },
   "xdm:prices": [
     {
       "xdm:currency": "USD",
@@ -53,5 +38,6 @@
       "xdm:type": "MSRP"
     }
   ],
-  "xdm:productURL": "https://www.homedepot.com/p/Delta-Lahara-Single-Hole-Single-Handle-Bathroom-Faucet-with-Metal-Drain-Assembly-in-Stainless-538-SSMPU-DST/203766910"
+  "xdm:productURL":
+    "https://www.homedepot.com/p/Delta-Lahara-Single-Hole-Single-Handle-Bathroom-Faucet-with-Metal-Drain-Assembly-in-Stainless-538-SSMPU-DST/203766910"
 }

@@ -6,7 +6,9 @@
   },
   "xdm:dataEntityUID":
     "https://ns.adobe.com/experience/campaign/orchestration/dataentity/123",
-  "xdm:orgID": "abcabc1234abcd@AdobeOrg",
+  "xdm:orgUnit": {
+    "@id" : "https://data.adobe.io/org-apparals-men"
+  },
   "xdm:flowControlType": "timer",
   "xdm:eventMetrics": {
     "https://ns.adobe.com/experience/campaign/orchestrationEnteredJourneyInstance": {

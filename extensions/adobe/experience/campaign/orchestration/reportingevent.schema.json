@@ -32,11 +32,11 @@
           "description":
             "The identifier for the data entity used for data enrichment"
         },
-        "xdm:orgID": {
-          "title": "Organizational unit identifier",
-          "type": "string",
+        "xdm:orgUnit": {
+          "title": "Organizational Unit",
+          "$ref": "https://ns.adobe.com/xdm/common/orgunit",
           "description":
-            "Identifier of the organizational unit for this journey version"
+            "The unit within the organization owning this journey version."
         },
         "xdm:flowControlType": {
           "title": "Flow control",

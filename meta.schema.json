@@ -10,6 +10,16 @@
   "title": "Meta-Schema for XDM",
   "type": "object",
   "description": "All Schema files have to adhere to this style guide.",
+  "definitions": {
+    "extending-all-of": {
+      "properties": {
+        "allOf": {
+          "type": "array",
+          "minItems": 2
+        }
+      }
+    }
+  },
   "properties": {
     "$schema": {
       "const": "http://json-schema.org/draft-06/schema#"
@@ -115,7 +125,8 @@
             "meta:extends": {
               "type": "string",
               "format": "uri"
-            }
+            },
+            "allOf": { "$ref": "#/definitions/extending-all-of" }
           },
           "required": ["meta:extends", "allOf"]
         },
@@ -127,7 +138,8 @@
                 "format": "uri",
                 "type": "string"
               }
-            }
+            },
+            "allOf": { "$ref": "#/definitions/extending-all-of" }
           },
           "required": ["meta:extends", "allOf"]
         },
@@ -148,7 +160,8 @@
         "meta:license",
         "type",
         "title",
-        "description"
+        "description",
+        "meta:status"
       ]
     }
   ],

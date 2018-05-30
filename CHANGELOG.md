@@ -31,3 +31,4 @@
 * `xdm:application` in `context\experienceevent` `@id` renamed to `xdm:id` #318
 * Changes `xdm:channel` in `ExperienceEvent` to be a reference to `Channel` #289
 * `xdm:dataSource` in `ExperienceEvent` is no longer required #363
+* Adds new concepts `Organizational Unit` and `Geographical Unit`. Existing links with the `Profile` schema updated. In `Profile`, `xdm:orgUnitID` is now `xdm:orgUnit`, and a simple reference to the `Organizational Unit` schema. #323

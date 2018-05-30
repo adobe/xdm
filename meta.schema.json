@@ -20,11 +20,11 @@
           "$ref": {
             "anyOf": [
               {
-                "type":"string",
+                "type": "string",
                 "format": "uri"
               },
               {
-                "type":"string",
+                "type": "string",
                 "pattern": "#/definitions/[a-z0-9]+"
               }
             ]

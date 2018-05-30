@@ -128,6 +128,9 @@ There is no obligation to treat the inheriting schema in any way different, or t
 
 XDM is using fixed lists of `enum` values in some schemas. These lists cannot be extended.
 
+In many places, XDM is using a pattern called "soft enums". Soft enums are `string` properties that include a number of known values in the specification.
+This allows for a simple and lightweight way of adding values ad-hoc.
+
 ## Versioning Extensions
 
 TODO

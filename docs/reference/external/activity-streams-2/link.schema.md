@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/external/activity-streams-2/link
 
 A Link is an indirect, qualified reference to a resource identified by a URL. The fundamental model for links is established by [RFC5988](https://tools.ietf.org/html/rfc5988). Many of the properties defined by the Activity Vocabulary allow values that are either instances of `[Object](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object)` or `[Link](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-link)`. When a `[Link](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-link)` is used, it establishes a [qualified relation](http://patterns.dataincubator.org/book/qualified-relation.html) connecting the subject (the containing object) to the resource identified by the `[href](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-href)`. Properties of the `[Link](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-link)` are properties of the reference as opposed to properties of the resource.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [external/activity-streams-2/link.schema.json](external/activity-streams-2/link.schema.json) |
+| [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
+|----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/activity-streams-2/link.schema.json](external/activity-streams-2/link.schema.json) |
 ## Schema Hierarchy
 
 * Link `https://ns.adobe.com/xdm/external/activity-streams-2/link`

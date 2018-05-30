@@ -61,7 +61,7 @@ You can include the Creative Commons Attribution 4.0 International (CC BY 4.0) l
 Every pull request should specify:
 
 * What the change intends to do
-* If there are breaking changes
+* If there are breaking changes (in case there are, list them in [CHANGELOG.md](CHANGELOG.md), too)
 * Link to the Github issue in the format `#42`
 
 For every update to the schema, make sure
@@ -103,7 +103,7 @@ XDM is not an isolated standard, but incorporates and builds on standards. Whene
 
 ### Design for Compatibility
 
-Interoperability with [Microsoft's Common Data Model (CDM)](https://github.com/Microsoft/CDM)is a top priority. This means that definitions that are present in CDM should be used or extended, where appropriate, by XDM. XDM should not attempt to duplicate definitions that are present in CDM.
+Interoperability with [Microsoft's Common Data Model (CDM)](https://github.com/Microsoft/CDM) is a top priority. This means that definitions that are present in CDM should be used or extended, where appropriate, by XDM. XDM should not attempt to duplicate definitions that are present in CDM.
 
 Where appropriate, we can 'lead' CDM, extend it to meet other requirements.
 Another good source of data model elements is [schema.org](http://schema.org).
@@ -117,6 +117,7 @@ Additional aspects of standard design that aid with consumability are:
 * principle of least astonishment: don't surprise the consumer
 * avoid unnecessary complexity: don't introduce indirections that are not needed
 * the principle of minimal verbosity: make keep things as short as possible, but not shorter
+* avoid unnecessary polymorphism that is hard to consume, e.g. offering both singular and array notations, or introducing type variants that don't provide a common discriminator property.
 
 ### Design for the Cloud
 
@@ -151,6 +152,8 @@ Avoid non-semantic limits – don’t put current resource limits in the data mo
 * When combining two acronyms, use lowercase for the first and uppercase for the second, such as `dmaID`
 * don't invent your own `ID` attributes, use the `@id` convention
 * don't invent your own `type` attributes, use the `@type` convention
+* when using `enum` in JSON schema, document all values using `meta:enum`
+* when working with "soft enums" or "open enumerations", use `meta:enum` to document all known values
 
 Run `npm run lint` before committing. The `lint` command is able to fix some easy styling issues, including:
 
@@ -351,6 +354,25 @@ The third schema is `third.schema.json`, it extends both `second`, and transitiv
 }
 ```
 
+### Schema Descriptors
+
+Schema descriptors are an extensible mechanism for providing additional metadata about an XDM schema. For example, schema descriptors can be used to define relationships between schemas or to annotate schema properties with additional metadata. Schema descriptors may be used when certain properties of a schema are not static (which could usually be described in the schema directly) but may vary from usage to usage.
+
+Details on using and defining schema descriptors may be found in the section [Schema Descriptors](./docs/descriptors.md) of the specification.
+
+Schema descriptors are extensible, and new descriptors may be creating by defining a new URI value and using it in
+the `@type` property of the descriptor object. Readers should ignore descriptors they do not understand.
+
+Schema descriptors are defined in XDM using the `SchemaDescriptor` schema.
+
+### Structuring Schemas - Nesting versus Namespaces
+
+The use of JSON-LD namespaces in XDM means that schema definitions are organized around two axes. The first is the structure of the JSON, which may be nested to an arbitrary depth. The second is the orthogonal layer created by each independent namespace. While both organizing axes are available, it is important to use each for its intended purpose.
+
+Namespaces should be used to allow organizations to develop XDM-based grammars independently of each other, without fear of conflict and without a need to coordinate. In general, it is desirable to have the smallest set of namespaces possible while meeting the above goals.
+
+Namespaces _should not_ be used to organize or group concepts within a grammar. When organizing concepts, schema authors should either define sub-objects for each concept, or consider breaking out the concept into an independent schema, as described in "Re-use and Modularity".
+
 ### Schema Stability Status
 
 Each schema should contains the enum property `meta:status` that designates it's stability. The value should be one of the following enumerations:
@@ -366,7 +388,18 @@ XDM is using a couple of custom keywords that are not part of the JSON Schema st
 
 * `meta:extensible`: see above, to describe schemas that allow custom properties
 * `meta:auditable`: for schemas that have created and last modified dates
-* `meta:enum`: for known values in enums, strings, and as property keys
+* `meta:descriptors`: to annotate schemas with additional metadata (see Schema Descriptors above)
+* `meta:enum`: for known values in enums, strings, and as property keys (see below)
+
+##### Soft and Hard Enumerations
+
+XDM uses the notion of hard and soft enumerations.
+
+A **hard enum** is enforced though JSON Schema's `enum` keyword. Only the values listed in the `enum` array are valid.
+All values should be documented in addition using `meta:enum`
+
+A **soft enum** can be any string property. Soft enums consist of a number of known and documented values (using `meta:enum`), but any `string` that matches the type's constraints is a valid value.
+This means, soft enums are open enumerations that can be extended ad-hoc by XDM users. XDM authors should be aware that just using `meta:enum` is not adding any enforcment logic.
 
 ## Writing Styleguides
 

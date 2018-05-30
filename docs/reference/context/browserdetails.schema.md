@@ -7,14 +7,15 @@ https://ns.adobe.com/xdm/context/browserdetails
 
 Detail information related to the browser
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Stabilizing | Forbidden | Permitted | [context/browserdetails.schema.json](context/browserdetails.schema.json) |
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/browserdetails.schema.json](context/browserdetails.schema.json) |
 
 ## Browser Details Example
 ```json
 {
   "xdm:name": "Chrome",
+  "xdm:vendor": "Google",
   "xdm:version": "63.0.3239",
   "xdm:acceptLanguage": "en",
   "xdm:cookiesEnabled": true,
@@ -41,6 +42,7 @@ Detail information related to the browser
 | [xdm:quicktimeVersion](#xdmquicktimeversion) | `string` | Optional | Browser Details (this schema) |
 | [xdm:thirdPartyCookiesEnabled](#xdmthirdpartycookiesenabled) | `boolean` | Optional | Browser Details (this schema) |
 | [xdm:userAgent](#xdmuseragent) | `string` | Optional | Browser Details (this schema) |
+| [xdm:vendor](#xdmvendor) | `string` | Optional | Browser Details (this schema) |
 | [xdm:version](#xdmversion) | `string` | Optional | Browser Details (this schema) |
 | [xdm:viewportHeight](#xdmviewportheight) | `integer` | Optional | Browser Details (this schema) |
 | [xdm:viewportWidth](#xdmviewportwidth) | `integer` | Optional | Browser Details (this schema) |
@@ -166,7 +168,7 @@ The version of Java supported during the observation.
 ## xdm:name
 ### Name
 
-The application or browser version.
+The application or browser name.
 
 `xdm:name`
 * is optional
@@ -233,6 +235,26 @@ The HTTP User-Agent string from the client request.
 * defined in this schema
 
 ### xdm:userAgent Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:vendor
+### Vendor
+
+The application or browser vendor.
+
+`xdm:vendor`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:vendor Type
 
 
 `string`

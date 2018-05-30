@@ -24,9 +24,9 @@ for other Profile data such as preference, propensities and other attributes.
 
 
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [context/profile.schema.json](context/profile.schema.json) |
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/profile.schema.json](context/profile.schema.json) |
 ## Schema Hierarchy
 
 * Profile `https://ns.adobe.com/xdm/context/profile`
@@ -37,6 +37,8 @@ for other Profile data such as preference, propensities and other attributes.
   * [Email Address](emailaddress.schema.md) `https://ns.adobe.com/xdm/context/emailaddress`
   * [Phone Number](phonenumber.schema.md) `https://ns.adobe.com/xdm/context/phonenumber`
   * [OptInOut](optinout.schema.md) `https://ns.adobe.com/xdm/context/optinout`
+  * [Organizational Unit](../common/orgunit.schema.md) `https://ns.adobe.com/xdm/common/orgunit`
+  * [Geographical Unit](../common/geounit.schema.md) `https://ns.adobe.com/xdm/common/geounit`
 
 
 ## Profile Example
@@ -46,7 +48,6 @@ for other Profile data such as preference, propensities and other attributes.
     {
       "@id": "https://data.adobe.io/entities/identity/id123",
       "xdm:namespace": {
-        "xdm:id": 12345,
         "xdm:code": "AA111"
       }
     }
@@ -96,6 +97,12 @@ for other Profile data such as preference, propensities and other attributes.
     "https://ns.adobe.com/xdm/channels/direct-mail": "not_provided",
     "https://ns.adobe.com/xdm/channels/apns": "not_provided",
     "xdm:globalOptout": false
+  },
+  "xdm:orgUnit": {
+    "@id": "https://data.adobe.io/org-apparals-men"
+  },
+  "xdm:geoUnit": {
+    "@id": "https://data.adobe.io/geo-france"
   }
 }
 ```
@@ -105,21 +112,27 @@ for other Profile data such as preference, propensities and other attributes.
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [xdm:createdByBatchID](#xdmcreatedbybatchid) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmcreatedbybatchid) |
-| [xdm:geoUnitID](#xdmgeounitid) | `string` | Optional | Profile (this schema) |
+| [xdm:emailFormat](#xdmemailformat) | `string` | Optional | Profile (this schema) |
+| [xdm:faxPhone](#xdmfaxphone) | Phone Number | Optional | Profile (this schema) |
+| [xdm:geoUnit](#xdmgeounit) | Geographical Unit | Optional | Profile (this schema) |
 | [xdm:homeAddress](#xdmhomeaddress) | Address | Optional | Profile (this schema) |
 | [xdm:homePhone](#xdmhomephone) | Phone Number | Optional | Profile (this schema) |
 | [xdm:identities](#xdmidentities) | Identity | Optional | Profile (this schema) |
 | [xdm:mobilePhone](#xdmmobilephone) | Phone Number | Optional | Profile (this schema) |
 | [xdm:modifiedByBatchID](#xdmmodifiedbybatchid) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmmodifiedbybatchid) |
 | [xdm:optInOut](#xdmoptinout) | OptInOut | Optional | Profile (this schema) |
-| [xdm:orgUnitID](#xdmorgunitid) | `string` | Optional | Profile (this schema) |
+| [xdm:orgUnit](#xdmorgunit) | Organizational Unit | Optional | Profile (this schema) |
 | [xdm:organizations](#xdmorganizations) | `string[]` | Optional | Profile (this schema) |
 | [xdm:person](#xdmperson) | Person | Optional | Profile (this schema) |
 | [xdm:personalEmail](#xdmpersonalemail) | Email Address | Optional | Profile (this schema) |
+| [xdm:preferredLanguage](#xdmpreferredlanguage) | `string` | Optional | Profile (this schema) |
+| [xdm:profilePictureLink](#xdmprofilepicturelink) | `string` | Optional | Profile (this schema) |
 | [xdm:pushNotificationTokens](#xdmpushnotificationtokens) | Push Notification Token | Optional | Profile (this schema) |
 | [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmrepositorycreatedby) |
 | [xdm:repositoryLastModifiedBy](#xdmrepositorylastmodifiedby) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmrepositorylastmodifiedby) |
 | [xdm:subscriptions](#xdmsubscriptions) | Subscription | Optional | Profile (this schema) |
+| [xdm:testProfile](#xdmtestprofile) | `boolean` | Optional | Profile (this schema) |
+| [xdm:timeZone](#xdmtimezone) | `string` | Optional | Profile (this schema) |
 | [xdm:workAddress](#xdmworkaddress) | Address | Optional | Profile (this schema) |
 | [xdm:workEmail](#xdmworkemail) | Email Address | Optional | Profile (this schema) |
 | [xdm:workPhone](#xdmworkphone) | Phone Number | Optional | Profile (this schema) |
@@ -147,21 +160,66 @@ The Data Set Files in Catalog Services which has been originating the creation o
 
 
 
-## xdm:geoUnitID
-### Geographical Unit Identifier
+## xdm:emailFormat
+### Email Format
 
-The geographical unit ID within the organization owning the profile. This ID can be used to reference the geographical information maintained in another dataset.
+Email format preferred by the profile. This can be rich text/plain text
 
-`xdm:geoUnitID`
+`xdm:emailFormat`
 * is optional
 * type: `string`
 * defined in this schema
 
-### xdm:geoUnitID Type
+### xdm:emailFormat Type
 
 
 `string`
 
+
+
+### xdm:emailFormat Known Values
+| Value | Description |
+|-------|-------------|
+| `html` | Rich text |
+| `plaintext` | Plain text |
+
+
+
+
+## xdm:faxPhone
+### Fax Phone
+
+Fax phone number.
+
+
+`xdm:faxPhone`
+* is optional
+* type: Phone Number
+* defined in this schema
+
+### xdm:faxPhone Type
+
+
+* [Phone Number](phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
+
+
+
+
+
+## xdm:geoUnit
+### Geographical Unit
+
+The geographical unit within the organization owning the profile. This can be used to reference the geographical information maintained in another dataset.
+
+`xdm:geoUnit`
+* is optional
+* type: Geographical Unit
+* defined in this schema
+
+### xdm:geoUnit Type
+
+
+* [Geographical Unit](../common/geounit.schema.md) – `https://ns.adobe.com/xdm/common/geounit`
 
 
 
@@ -297,21 +355,20 @@ and communication type.
 
 
 
-## xdm:orgUnitID
-### Organizational Unit Identifier
+## xdm:orgUnit
+### Organizational Unit
 
-The unit ID within the organization owning the profile. This ID can be used to reference the organization details maintained in another dataset.
+The unit within the organization owning the profile. This can be used to reference the organization details maintained in another dataset.
 
-`xdm:orgUnitID`
+`xdm:orgUnit`
 * is optional
-* type: `string`
+* type: Organizational Unit
 * defined in this schema
 
-### xdm:orgUnitID Type
+### xdm:orgUnit Type
 
 
-`string`
-
+* [Organizational Unit](../common/orgunit.schema.md) – `https://ns.adobe.com/xdm/common/orgunit`
 
 
 
@@ -377,6 +434,70 @@ A personal email address.
 
 
 * [Email Address](emailaddress.schema.md) – `https://ns.adobe.com/xdm/context/emailaddress`
+
+
+
+
+
+## xdm:preferredLanguage
+### Preferred Language
+
+Describes the preferred system of communication used by the profile. Language codes are expressed in BCP 47 format.
+
+`xdm:preferredLanguage`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:preferredLanguage Type
+
+
+`string`
+
+
+All instances must conform to this regular expression 
+```regex
+^(((([A-Za-z]{2,3}(-([A-Za-z]{3}(-[A-Za-z]{3}){0,2}))?)|[A-Za-z]{4}|[A-Za-z]{5,8})(-([A-Za-z]{4}))?(-([A-Za-z]{2}|[0-9]{3}))?(-([A-Za-z0-9]{5,8}|[0-9][A-Za-z0-9]{3}))*(-([0-9A-WY-Za-wy-z](-[A-Za-z0-9]{2,8})+))*(-(x(-[A-Za-z0-9]{1,8})+))?)|(x(-[A-Za-z0-9]{1,8})+)|((en-GB-oed|i-ami|i-bnn|i-default|i-enochian|i-hak|i-klingon|i-lux|i-mingo|i-navajo|i-pwn|i-tao|i-tay|i-tsu|sgn-BE-FR|sgn-BE-NL|sgn-CH-DE)|(art-lojban|cel-gaulish|no-bok|no-nyn|zh-guoyu|zh-hakka|zh-min|zh-min-nan|zh-xiang)))$
+```
+
+* test example: [en-GB](https://regexr.com/?expression=%5E((((%5BA-Za-z%5D%7B2%2C3%7D(-(%5BA-Za-z%5D%7B3%7D(-%5BA-Za-z%5D%7B3%7D)%7B0%2C2%7D))%3F)%7C%5BA-Za-z%5D%7B4%7D%7C%5BA-Za-z%5D%7B5%2C8%7D)(-(%5BA-Za-z%5D%7B4%7D))%3F(-(%5BA-Za-z%5D%7B2%7D%7C%5B0-9%5D%7B3%7D))%3F(-(%5BA-Za-z0-9%5D%7B5%2C8%7D%7C%5B0-9%5D%5BA-Za-z0-9%5D%7B3%7D))*(-(%5B0-9A-WY-Za-wy-z%5D(-%5BA-Za-z0-9%5D%7B2%2C8%7D)%2B))*(-(x(-%5BA-Za-z0-9%5D%7B1%2C8%7D)%2B))%3F)%7C(x(-%5BA-Za-z0-9%5D%7B1%2C8%7D)%2B)%7C((en-GB-oed%7Ci-ami%7Ci-bnn%7Ci-default%7Ci-enochian%7Ci-hak%7Ci-klingon%7Ci-lux%7Ci-mingo%7Ci-navajo%7Ci-pwn%7Ci-tao%7Ci-tay%7Ci-tsu%7Csgn-BE-FR%7Csgn-BE-NL%7Csgn-CH-DE)%7C(art-lojban%7Ccel-gaulish%7Cno-bok%7Cno-nyn%7Czh-guoyu%7Czh-hakka%7Czh-min%7Czh-min-nan%7Czh-xiang)))%24&text=en-GB)
+* test example: [de-DE](https://regexr.com/?expression=%5E((((%5BA-Za-z%5D%7B2%2C3%7D(-(%5BA-Za-z%5D%7B3%7D(-%5BA-Za-z%5D%7B3%7D)%7B0%2C2%7D))%3F)%7C%5BA-Za-z%5D%7B4%7D%7C%5BA-Za-z%5D%7B5%2C8%7D)(-(%5BA-Za-z%5D%7B4%7D))%3F(-(%5BA-Za-z%5D%7B2%7D%7C%5B0-9%5D%7B3%7D))%3F(-(%5BA-Za-z0-9%5D%7B5%2C8%7D%7C%5B0-9%5D%5BA-Za-z0-9%5D%7B3%7D))*(-(%5B0-9A-WY-Za-wy-z%5D(-%5BA-Za-z0-9%5D%7B2%2C8%7D)%2B))*(-(x(-%5BA-Za-z0-9%5D%7B1%2C8%7D)%2B))%3F)%7C(x(-%5BA-Za-z0-9%5D%7B1%2C8%7D)%2B)%7C((en-GB-oed%7Ci-ami%7Ci-bnn%7Ci-default%7Ci-enochian%7Ci-hak%7Ci-klingon%7Ci-lux%7Ci-mingo%7Ci-navajo%7Ci-pwn%7Ci-tao%7Ci-tay%7Ci-tsu%7Csgn-BE-FR%7Csgn-BE-NL%7Csgn-CH-DE)%7C(art-lojban%7Ccel-gaulish%7Cno-bok%7Cno-nyn%7Czh-guoyu%7Czh-hakka%7Czh-min%7Czh-min-nan%7Czh-xiang)))%24&text=de-DE)
+* test example: [yue-HK](https://regexr.com/?expression=%5E((((%5BA-Za-z%5D%7B2%2C3%7D(-(%5BA-Za-z%5D%7B3%7D(-%5BA-Za-z%5D%7B3%7D)%7B0%2C2%7D))%3F)%7C%5BA-Za-z%5D%7B4%7D%7C%5BA-Za-z%5D%7B5%2C8%7D)(-(%5BA-Za-z%5D%7B4%7D))%3F(-(%5BA-Za-z%5D%7B2%7D%7C%5B0-9%5D%7B3%7D))%3F(-(%5BA-Za-z0-9%5D%7B5%2C8%7D%7C%5B0-9%5D%5BA-Za-z0-9%5D%7B3%7D))*(-(%5B0-9A-WY-Za-wy-z%5D(-%5BA-Za-z0-9%5D%7B2%2C8%7D)%2B))*(-(x(-%5BA-Za-z0-9%5D%7B1%2C8%7D)%2B))%3F)%7C(x(-%5BA-Za-z0-9%5D%7B1%2C8%7D)%2B)%7C((en-GB-oed%7Ci-ami%7Ci-bnn%7Ci-default%7Ci-enochian%7Ci-hak%7Ci-klingon%7Ci-lux%7Ci-mingo%7Ci-navajo%7Ci-pwn%7Ci-tao%7Ci-tay%7Ci-tsu%7Csgn-BE-FR%7Csgn-BE-NL%7Csgn-CH-DE)%7C(art-lojban%7Ccel-gaulish%7Cno-bok%7Cno-nyn%7Czh-guoyu%7Czh-hakka%7Czh-min%7Czh-min-nan%7Czh-xiang)))%24&text=yue-HK)
+
+
+
+
+### xdm:preferredLanguage Examples
+
+```json
+"en-GB"
+```
+
+```json
+"de-DE"
+```
+
+```json
+"yue-HK"
+```
+
+
+
+## xdm:profilePictureLink
+### Profile Picture Link
+
+Link to profile's picture
+
+`xdm:profilePictureLink`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:profilePictureLink Type
+
+
+`string`
+
 
 
 
@@ -476,6 +597,60 @@ All items must be of the type:
 
 
 
+
+
+
+## xdm:testProfile
+### Test Profile
+
+Indicates the `profile` record is for use in testing/verification purposes and should not be automatically included in normal operation(s).
+
+`xdm:testProfile`
+* is optional
+* type: `boolean`
+* defined in this schema
+
+### xdm:testProfile Type
+
+
+`boolean`
+
+
+
+
+
+## xdm:timeZone
+### Time Zone
+
+Describes which time zone the profile is present in, most frequently/the time zone preferred by the profile. Time zones are expressed according to the IETF tz database: https://www.ietf.org/timezones/tzdb-2016i/tz-link.htm
+
+`xdm:timeZone`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:timeZone Type
+
+
+`string`
+
+
+
+
+
+### xdm:timeZone Examples
+
+```json
+"America/Barbados"
+```
+
+```json
+"Antarctica/Davis"
+```
+
+```json
+"Asia/Calcutta"
+```
 
 
 

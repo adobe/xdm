@@ -2,20 +2,20 @@
 # clicks Schema
 
 ```
-https://ns.adobe.com/xdm/data/metrics/advertising/clicks
+https://ns.adobe.com/xdm/data/clicks
 ```
 
-The advertising metric clicks describes…
+The metric measures the number of interactions a user had by clicking on an asset.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [data/clicks.schema.json](data/clicks.schema.json) |
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/clicks.schema.json](data/clicks.schema.json) |
 
 ## clicks Example
 ```json
 {
-  "schema:name": "advertising metric: clicks",
-  "@id": "https://ns.adobe.com/xdm/data/metrics/advertising/clicks",
+  "schema:name": "metric: clicks",
+  "@id": "xdm:clicks",
   "xdm:measurement": "count",
   "xdm:unit": null
 }
@@ -43,7 +43,7 @@ The unique identifier of this metric.
 The value of this property **must** be equal to:
 
 ```json
-"https://ns.adobe.com/xdm/data/metrics/advertising/clicks"
+"xdm:clicks"
 ```
 
 
@@ -62,7 +62,7 @@ The human-readable name of the metric. The name can be used in user interfaces a
 The value of this property **must** be equal to:
 
 ```json
-"advertising metric: clicks"
+"metric: clicks"
 ```
 
 

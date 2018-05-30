@@ -1,5 +1,5 @@
 
-# unsubscriptions Schema
+# Unsubscriptions Schema
 
 ```
 https://ns.adobe.com/xdm/data/metrics/direct-marketing/unsubscriptions
@@ -7,28 +7,28 @@ https://ns.adobe.com/xdm/data/metrics/direct-marketing/unsubscriptions
 
 The direct-marketing metric `unsubscriptions` describes the number of times the recipients of direct marketing messages (email, newsletters, etc) have opted out from receiving them.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [data/unsubscriptions.schema.json](data/unsubscriptions.schema.json) |
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/unsubscriptions.schema.json](data/unsubscriptions.schema.json) |
 
-## unsubscriptions Example
+## Unsubscriptions Example
 ```json
 {
   "schema:name": "direct-marketing metric: unsubscriptions",
-  "@id": "https://ns.adobe.com/xdm/data/metrics/direct-marketing/unsubscriptions",
+  "@id": "xdm:unsubscriptions",
   "xdm:measurement": "count",
   "xdm:unit": null
 }
 ```
 
-# unsubscriptions Properties
+# Unsubscriptions Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | unsubscriptions (this schema) |
-| [schema:name](#schemaname) | `const` | **Required** | unsubscriptions (this schema) |
-| [xdm:measurement](#xdmmeasurement) | `const` | **Required** | unsubscriptions (this schema) |
-| [xdm:unit](#xdmunit) | `const` | **Required** | unsubscriptions (this schema) |
+| [@id](#@id) | `const` | **Required** | Unsubscriptions (this schema) |
+| [schema:name](#schemaname) | `const` | **Required** | Unsubscriptions (this schema) |
+| [xdm:measurement](#xdmmeasurement) | `const` | **Required** | Unsubscriptions (this schema) |
+| [xdm:unit](#xdmunit) | `const` | **Required** | Unsubscriptions (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -43,7 +43,7 @@ The unique identifier of this metric.
 The value of this property **must** be equal to:
 
 ```json
-"https://ns.adobe.com/xdm/data/metrics/direct-marketing/unsubscriptions"
+"xdm:unsubscriptions"
 ```
 
 

@@ -8,9 +8,9 @@ https://ns.adobe.com/xdm/content/repository-policies/encryption
 Encryption policy represents how content in a given part of the repository is encrypted at-rest.
 
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Cannot be instantiated | Yes | Experimental | Forbidden | Permitted | [content/repository-policies/encryption.schema.json](content/repository-policies/encryption.schema.json) |
+| [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
+|----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
+| Cannot be instantiated | Yes | Experimental | No | Forbidden | Permitted | [content/repository-policies/encryption.schema.json](content/repository-policies/encryption.schema.json) |
 
 ## At-Rest Encryption Example
 ```json

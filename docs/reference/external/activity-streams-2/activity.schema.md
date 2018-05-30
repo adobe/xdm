@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/external/activity-streams-2/activity
 
 An [Activity](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-activity) is a subtype of `[Object](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object)` that describes some form of action that may happen, is currently happening, or has already happened. The `Activity` type itself serves as an abstract base type for all types of activities. It is important to note that the `Activity` type itself does not carry any specific semantics about the kind of action being taken.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [external/activity-streams-2/activity.schema.json](external/activity-streams-2/activity.schema.json) |
+| [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
+|----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/activity-streams-2/activity.schema.json](external/activity-streams-2/activity.schema.json) |
 ## Schema Hierarchy
 
 * Activity `https://ns.adobe.com/xdm/external/activity-streams-2/activity`

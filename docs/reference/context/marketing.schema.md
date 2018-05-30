@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/context/marketing
 
 The information related to marketing activities that are active with the touchpoint.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Stabilizing | Forbidden | Permitted | [context/marketing.schema.json](context/marketing.schema.json) |
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/marketing.schema.json](context/marketing.schema.json) |
 
 ## Marketing Example
 ```json

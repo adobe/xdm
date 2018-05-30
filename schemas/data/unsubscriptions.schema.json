@@ -8,20 +8,18 @@
   "$id":
     "https://ns.adobe.com/xdm/data/metrics/direct-marketing/unsubscriptions",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "unsubscriptions",
+  "title": "Unsubscriptions",
   "type": "object",
   "meta:extensible": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/metric"],
+  "meta:extends": ["https://ns.adobe.com/xdm/data/metricdefinition"],
   "description":
     "The direct-marketing metric `unsubscriptions` describes the number of times the recipients of direct marketing messages (email, newsletters, etc) have opted out from receiving them.",
   "definitions": {
-    "metric": {
+    "metricdefinition": {
       "properties": {
         "@id": {
           "type": "string",
-          "format": "uri",
-          "const":
-            "https://ns.adobe.com/xdm/data/metrics/direct-marketing/unsubscriptions",
+          "const": "xdm:unsubscriptions",
           "description": "The unique identifier of this metric."
         },
         "schema:name": {
@@ -43,9 +41,9 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/metric"
+      "$ref": "#/definitions/metricdefinition"
     }
   ],
   "required": ["@id", "schema:name", "xdm:measurement", "xdm:unit"],
-  "meta:status": "experimental"
+  "meta:status": "stabilizing"
 }

@@ -1,6 +1,6 @@
 {
-  "schema:name": "direct-marketing metric: mirror-pages",
-  "@id": "https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages",
+  "schema:name": "direct-marketing metric: mirrorPages",
+  "@id": "xdm:mirrorPages",
   "xdm:measurement": "count",
   "xdm:unit": null
 }

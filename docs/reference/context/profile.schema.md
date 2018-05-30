@@ -37,6 +37,8 @@ for other Profile data such as preference, propensities and other attributes.
   * [Email Address](emailaddress.schema.md) `https://ns.adobe.com/xdm/context/emailaddress`
   * [Phone Number](phonenumber.schema.md) `https://ns.adobe.com/xdm/context/phonenumber`
   * [OptInOut](optinout.schema.md) `https://ns.adobe.com/xdm/context/optinout`
+  * [Organizational Unit](../common/orgunit.schema.md) `https://ns.adobe.com/xdm/common/orgunit`
+  * [Geographical Unit](../common/geounit.schema.md) `https://ns.adobe.com/xdm/common/geounit`
 
 
 ## Profile Example
@@ -95,6 +97,12 @@ for other Profile data such as preference, propensities and other attributes.
     "https://ns.adobe.com/xdm/channels/direct-mail": "not_provided",
     "https://ns.adobe.com/xdm/channels/apns": "not_provided",
     "xdm:globalOptout": false
+  },
+  "xdm:orgUnit": {
+    "@id": "https://data.adobe.io/org-apparals-men"
+  },
+  "xdm:geoUnit": {
+    "@id": "https://data.adobe.io/geo-france"
   }
 }
 ```
@@ -106,14 +114,14 @@ for other Profile data such as preference, propensities and other attributes.
 | [xdm:createdByBatchID](#xdmcreatedbybatchid) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmcreatedbybatchid) |
 | [xdm:emailFormat](#xdmemailformat) | `string` | Optional | Profile (this schema) |
 | [xdm:faxPhone](#xdmfaxphone) | Phone Number | Optional | Profile (this schema) |
-| [xdm:geoUnitID](#xdmgeounitid) | `string` | Optional | Profile (this schema) |
+| [xdm:geoUnit](#xdmgeounit) | Geographical Unit | Optional | Profile (this schema) |
 | [xdm:homeAddress](#xdmhomeaddress) | Address | Optional | Profile (this schema) |
 | [xdm:homePhone](#xdmhomephone) | Phone Number | Optional | Profile (this schema) |
 | [xdm:identities](#xdmidentities) | Identity | Optional | Profile (this schema) |
 | [xdm:mobilePhone](#xdmmobilephone) | Phone Number | Optional | Profile (this schema) |
 | [xdm:modifiedByBatchID](#xdmmodifiedbybatchid) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmmodifiedbybatchid) |
 | [xdm:optInOut](#xdmoptinout) | OptInOut | Optional | Profile (this schema) |
-| [xdm:orgUnitID](#xdmorgunitid) | `string` | Optional | Profile (this schema) |
+| [xdm:orgUnit](#xdmorgunit) | Organizational Unit | Optional | Profile (this schema) |
 | [xdm:organizations](#xdmorganizations) | `string[]` | Optional | Profile (this schema) |
 | [xdm:person](#xdmperson) | Person | Optional | Profile (this schema) |
 | [xdm:personalEmail](#xdmpersonalemail) | Email Address | Optional | Profile (this schema) |
@@ -198,21 +206,20 @@ Fax phone number.
 
 
 
-## xdm:geoUnitID
-### Geographical Unit Identifier
+## xdm:geoUnit
+### Geographical Unit
 
-The geographical unit ID within the organization owning the profile. This ID can be used to reference the geographical information maintained in another dataset.
+The geographical unit within the organization owning the profile. This can be used to reference the geographical information maintained in another dataset.
 
-`xdm:geoUnitID`
+`xdm:geoUnit`
 * is optional
-* type: `string`
+* type: Geographical Unit
 * defined in this schema
 
-### xdm:geoUnitID Type
+### xdm:geoUnit Type
 
 
-`string`
-
+* [Geographical Unit](../common/geounit.schema.md) – `https://ns.adobe.com/xdm/common/geounit`
 
 
 
@@ -348,21 +355,20 @@ and communication type.
 
 
 
-## xdm:orgUnitID
-### Organizational Unit Identifier
+## xdm:orgUnit
+### Organizational Unit
 
-The unit ID within the organization owning the profile. This ID can be used to reference the organization details maintained in another dataset.
+The unit within the organization owning the profile. This can be used to reference the organization details maintained in another dataset.
 
-`xdm:orgUnitID`
+`xdm:orgUnit`
 * is optional
-* type: `string`
+* type: Organizational Unit
 * defined in this schema
 
-### xdm:orgUnitID Type
+### xdm:orgUnit Type
 
 
-`string`
-
+* [Organizational Unit](../common/orgunit.schema.md) – `https://ns.adobe.com/xdm/common/orgunit`
 
 
 

@@ -12,10 +12,23 @@
   "description": "All Schema files have to adhere to this style guide.",
   "definitions": {
     "extending-all-of": {
-      "properties": {
-        "allOf": {
-          "type": "array",
-          "minItems": 2
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "properties": {
+          "$ref": {
+            "anyOf": [
+              {
+                "type":"string",
+                "format": "uri"
+              },
+              {
+                "type":"string",
+                "pattern": "#/definitions/[a-z0-9]+"
+              }
+            ]
+          }
         }
       }
     }

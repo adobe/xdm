@@ -134,6 +134,7 @@
           "properties": {
             "meta:extends": {
               "type": "array",
+              "minItems": 1,
               "items": {
                 "format": "uri",
                 "type": "string"

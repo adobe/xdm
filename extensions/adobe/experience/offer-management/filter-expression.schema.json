@@ -72,10 +72,10 @@
           "type": "object",
           "properties": {
             "nodeType": {
-              "ref": "#/definitions/node-type"
+              "$ref": "#/definitions/node-type"
             },
             "fnName": {
-              "ref": "#/definitions/function-type"
+              "$ref": "#/definitions/function-type"
             }
           },
           "required": ["nodeType", "fnName"]
@@ -195,7 +195,7 @@
               "const": "literal"
             },
             "literalType": {
-              "ref": "#/definitions/literal-type"
+              "$ref": "#/definitions/literal-type"
             }
           },
           "required": ["nodeType", "literalType"]

@@ -9,7 +9,7 @@
   "$id": "https://ns.adobe.com/experience/offer-management/primary-keys",
   "type": "object",
   "title": "Primary key descriptors for the Offer Management Domain",
-  "description": "Contains descriptors to define the properties holding the primary key (entitry identifiers) in the Offer Management domain",
+  "description": "Contains descriptors to define the properties holding the primary key (entity identifiers) in the Offer Management domain",
   "meta:descriptors": [
     {
       "@type": "xdm:primaryKey",

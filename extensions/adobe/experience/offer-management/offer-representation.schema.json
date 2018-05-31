@@ -21,6 +21,7 @@
         },
         "xdm:channel": {
           "type": "string",
+          "format": "uri",
           "title": "Channel",
           "description": "Offer Channel ID. See 'https://ns.adobe.com/xdm/channels/channel'"
         },

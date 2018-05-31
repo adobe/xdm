@@ -1,0 +1,30 @@
+{
+  "nodeType": "queryInvoke",
+  "queryName": "offersByTagIds",
+  "queryParams": [
+    {
+      "queryParamName": "tagId",
+      "queryParamValue": {
+        "nodeType": "literal",
+        "literalType": "String",
+        "value": "uri:com:example:tag-0001"
+      }
+    },
+    {
+      "queryParamName": "tagId",
+      "queryParamValue": {
+        "nodeType": "literal",
+        "literalType": "String",
+        "value": "uri:com:example:tag-0002"
+      }
+    },
+    {
+      "queryParamName": "qop",
+      "queryParamValue": {
+        "nodeType": "literal",
+        "literalType": "String",
+        "value": "AND"
+      }
+    }
+  ]
+}

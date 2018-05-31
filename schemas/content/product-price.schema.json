@@ -32,7 +32,13 @@
         "xdm:type": {
           "title": "Product Price Type",
           "type": "string",
-          "examples": ["Sales Price", "MSRP", "Net Price"],
+          "meta:enum": {
+            "sales": "Sales Price",
+            "msrp": "Manufacturer's Suggested Retail Price",
+            "net": "Net Price",
+            "gross": "Gross Price",
+            "shipping": "Shipping Cost"
+          },
           "description":
             "The product price type."
         }

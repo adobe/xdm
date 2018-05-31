@@ -75,6 +75,7 @@
             "$ref": "#/definitions/selector"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "xdm:id": "https://example.com/objects/12345"

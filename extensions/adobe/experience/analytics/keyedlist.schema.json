@@ -18,8 +18,8 @@
           "type": "array",
           "items": {
             "type": "object",
-	          "title": "Key-value pairs",
-	          "properties": {
+            "title": "Key-value pairs",
+            "properties": {
               "xdm:key": {
                 "title": "key",
                 "description": "Key",
@@ -30,7 +30,7 @@
                 "description": "Value",
                 "type": "string"
               }
-	          }
+            }
           },
           "description": "List of keyed values."
         }

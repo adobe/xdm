@@ -1,5 +1,5 @@
 {
-  "@id": "xcore:eligibility-rule:rule-0001",
+  "@id": "https://www.example.com/offers/eligibility-rule/rule-0001",
   "xdm:name": "Californians with two or more purchases of more than $1000",
   "xdm:value": "profile.xdm:homeAddress.xdm:stateOrProvince = \"CA\" AND (SELECT X FROM xEvent WHERE X.xdm:commerce.xdm:order.xdm:priceTotal > 1000 AND X.xdm:commerce.xdm:order.xdm:currencyCode = \"USD\").count() > 1",
   "xdm:modelUsage" : [

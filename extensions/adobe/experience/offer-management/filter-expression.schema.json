@@ -1,0 +1,465 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/experience/offer-management/filter-expression",
+  "meta:abstract": false,
+  "meta:extensible": true,
+  "type": "object",
+  "title": "Filter Expression Tree",
+  "description": "Represents an abstract syntax tree comprised of various node types. The expression is used to evaluate a match against a XDM object tree, where the result is a boolean value - matches: yes or no - or another XDM tree structure.",
+  "definitions": {
+    "node-type": {
+      "type": "string",
+      "title": "Node Type",
+      "description": "Node Type: function application, literal, field lookup",
+      "enum": [
+        "fnApply",
+        "literal",
+        "fieldLookup",
+        "select",
+        "varDecl",
+        "varRef",
+        "queryInvoke"
+      ],
+      "meta:enum": {
+        "fnApply": "Apply an n-ary function to the evaluation context",
+        "literal": "Prodcue a value from a literal",
+        "fieldLookup": "Produce a value from an object by accessing one of its fields",
+        "select": "Produce a list of tuples from a list of inputs by evaluating an expression for every input.",
+        "varDecl": "Produce a list inputs from a list of inputs by applying an optional projection and filter to each input. The value is made available for reference via a variable name.",
+        "varRef": "Produce a list of values by referencing a variable name that denotes a tuple element previously evaluated.",
+        "queryInvoke": "Invoke a query with parameters."
+      }
+    },
+    "function-type": {
+      "type": "string",
+      "title": "Function Identifier",
+      "description": "Function Identifier: OR, AND, EQUALS",
+      "enum": [
+        "and",
+        "or",
+        "equals"
+      ],
+      "meta:enum": {
+        "and": "An n-ary AND function. Map a list of boolean values to a single boolean value. Produces 'true' if and only if all input values are 'true', otherwise produces 'false'.",
+        "or": "An n-ary OR function. Map a list of boolean values to a single boolean value. Produces 'true' if and only if any of the input values is 'true', otherwise produces 'false'.",
+        "equals": "Produce a boolean value from two input values by comparing them, the second value is coerced to the type of the first value before applying the equals operator."
+      }
+    },
+    "literal-type": {
+      "type": "string",
+      "title": "LIteral Type Identifier",
+      "description": "LIteral Type Identifier: String, Number, Integer, Boolean, Date, DateTime",
+      "enum": [
+        "String",
+        "Number",
+        "Integer",
+        "Boolean",
+        "XDMObject"
+      ],
+      "meta:enum": {
+        "String": "A string literal",
+        "Number": "A number literal",
+        "Integer": "An integer literal",
+        "Boolean": "A boolean literal",
+        "XDMObject": "A sting denoting a reference of an XDM schema"
+      }
+    },
+    
+    "function-application-content": {
+      "type": "object",
+      "title": "N-ary function application",
+      "description": "Apply an n-ary function (functor) that maps a value (scalar, object, list, tree) to anothe value, by recursively applying its child nodes to the objects and then taking the results as parameters to itself.",
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "nodeType": {
+              "$ref": "#/definitions/node-type"
+            },
+            "fnName": {
+              "$ref": "#/definitions/function-type"
+            }
+          },
+          "required": ["nodeType", "fnName"]
+        },
+        {
+          "oneOf": [
+            {
+              "$ref": "#/definitions/function-content-and"
+            },
+            {
+              "$ref": "#/definitions/function-content-or"
+            },
+            {
+              "$ref": "#/definitions/function-content-equals"
+            }
+          ]
+       }
+     ]
+    },
+    "function-content-and": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "fnApply"
+        },
+        "fnName": {
+          "type": "string",
+          "const": "and"
+        },
+        "params" : {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/node-content"
+          },
+          "minItems": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "function-content-or": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "fnApply"
+        },
+        "fnName": {
+          "type": "string",
+          "const": "or"
+        },
+        "params" : {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/node-content"
+          },
+          "minItems": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "function-content-equals": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "fnApply"
+        },
+        "fnName": {
+          "type": "string",
+          "const": "equals"
+        },
+        "params" : {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/node-content"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      },
+      "additionalProperties": false
+    },
+    
+    "field-lookup-content": {
+      "type": "object",
+      "title": "Field accessor",
+      "description": "An epression that is applied on an object and returns the value of the field specified in the expression",
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "nodeType": {
+              "type": "string",
+              "const": "fieldLookup"
+            },
+            "fieldName": {
+              "type": "string"
+            },
+            "object": {
+              "$ref": "#/definitions/node-content"
+            }
+          },
+          "required": ["nodeType", "fieldName"],
+          "additionalProperties": false
+        }
+      ]
+    },
+    
+    "literal-content": {
+      "type": "object",
+      "title": "Literal",
+      "description": "A literal produces the value that is stated in the 'value' property.",
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "nodeType": {
+              "type": "string",
+              "const": "literal"
+            },
+            "literalType": {
+              "$ref": "#/definitions/literal-type"
+            }
+          },
+          "required": ["nodeType", "literalType"]
+        },
+        {
+          "oneOf": [
+            {
+              "$ref": "#/definitions/literal-string-content"
+            },
+            {
+              "$ref": "#/definitions/literal-number-content"
+            },
+            {
+              "$ref": "#/definitions/literal-integer-content"
+            },
+            {
+              "$ref": "#/definitions/literal-boolean-content"
+            },
+            {
+              "$ref": "#/definitions/literal-xdmobject-content"
+            }
+          ]
+        }
+      ]
+    },
+    "literal-string-content": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "literal"
+        },
+        "literalType": {
+          "type": "string",
+          "const": "String"
+        },
+        "value" : {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "literal-number-content": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "literal"
+        },
+        "literalType": {
+          "type": "string",
+          "const": "Number"
+        },
+        "value" : {
+          "type": "number"
+        }
+      },
+      "additionalProperties": false
+    },
+    "literal-integer-content": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "literal"
+        },
+        "literalType": {
+          "type": "string",
+          "const": "Integer"
+        },
+        "value" : {
+          "type": "integer"
+        }
+      },
+      "additionalProperties": false
+    },
+    "literal-boolean-content": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "literal"
+        },
+        "literalType": {
+          "type": "string",
+          "const": "Boolean"
+        },
+        "value" : {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "literal-xdmobject-content": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "literal"
+        },
+        "literalType": {
+          "type": "string",
+          "const": "XDMObject"
+        },
+        "value" : {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "select-expression-content": {
+      "type": "object",
+      "title": "List filter",
+      "description": "Produce a list of tuples from a list of input values by evaluating each tuple element (variable) expression in order of declaration.",
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "nodeType": {
+              "type": "string",
+              "const": "select"
+            },
+            "variables": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/tuple-element-content"
+              },
+              "minItems": 1
+            }
+          },
+          "required": ["nodeType", "variables"]
+        }
+      ]
+    },
+    "tuple-element-content": {
+      "type": "object",
+      "title": "Tuple element definition",
+      "description": "Produce a list of output values from a list of inputs by first applying an optional projection (from expression) and then a filter (where expression) to each value from the list of inputs. The list of values is bound to a variable name.",
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "nodeType": {
+              "type": "string",
+              "const": "varDecl"
+            },
+            "from": {
+              "$ref": "#/definitions/node-content"
+            },
+            "where": {
+              "$ref": "#/definitions/node-content"
+            }
+          },
+          "required": ["nodeType", "from", "where"]
+        }
+      ]
+    },
+    "tuple-element-reference-content": {
+      "type": "object",
+      "title": "Reference to a value created in the context of a select expression evaluation",
+      "description": "Produce a list of values by referencing a variable name that denotes a tuple element previously evaluated.",
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "nodeType": {
+              "type": "string",
+              "const": "varRef"
+            },
+            "varName": {
+              "type": "string"
+            }
+          },
+          "required": ["nodeType", "varName"]
+        }
+      ]
+    },
+    
+    "query-invoke-content": {
+      "type": "object",
+      "title": "Query Invocation",
+      "description": "A query can be directly invoked",
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "nodeType": {
+              "type": "string",
+              "const": "queryInvoke"
+            },
+            "queryName": {
+              "type": "string"
+            },
+            "queryParams": {
+              "type": "array",
+              "items" : {
+                "type": "object",
+                "properties" : {
+                  "queryParamName": {
+                    "type": "string"
+                  },
+                  "queryParamValue": {
+                    "$ref": "#/definitions/node-content"
+                  }
+                },
+                "required": ["queryParamName", "queryParamValue"],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": ["nodeType"],
+          "additionalProperties": false
+        }
+      ]
+    },
+    
+    "node-content": {
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "nodeType": {
+              "$ref": "#/definitions/node-type"
+            }
+          },
+          "required": ["nodeType"]
+        },
+        {
+          "oneOf": [
+            {
+              "$ref": "#/definitions/function-application-content"
+            },
+            {
+              "$ref": "#/definitions/literal-content"
+            },
+            {
+              "$ref": "#/definitions/field-lookup-content"
+            },
+            {
+              "$ref": "#/definitions/select-expression-content"
+            },
+            {
+              "$ref": "#/definitions/tuple-element-content"
+            },
+            {
+              "$ref": "#/definitions/tuple-element-reference-content"
+            },
+            {
+              "$ref": "#/definitions/query-invoke-content"
+            }
+          ]
+        }
+      ]
+    }    
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/node-content"
+    }
+  ]
+}
+

@@ -152,6 +152,8 @@ Avoid non-semantic limits – don’t put current resource limits in the data mo
 * When combining two acronyms, use lowercase for the first and uppercase for the second, such as `dmaID`
 * don't invent your own `ID` attributes, use the `@id` convention
 * don't invent your own `type` attributes, use the `@type` convention
+* when using `enum` in JSON schema, document all values using `meta:enum`
+* when working with "soft enums" or "open enumerations", use `meta:enum` to document all known values
 
 Run `npm run lint` before committing. The `lint` command is able to fix some easy styling issues, including:
 
@@ -387,7 +389,17 @@ XDM is using a couple of custom keywords that are not part of the JSON Schema st
 * `meta:extensible`: see above, to describe schemas that allow custom properties
 * `meta:auditable`: for schemas that have created and last modified dates
 * `meta:descriptors`: to annotate schemas with additional metadata (see Schema Descriptors above)
-* `meta:enum`: for known values in enums, strings, and as property keys
+* `meta:enum`: for known values in enums, strings, and as property keys (see below)
+
+##### Soft and Hard Enumerations
+
+XDM uses the notion of hard and soft enumerations.
+
+A **hard enum** is enforced though JSON Schema's `enum` keyword. Only the values listed in the `enum` array are valid.
+All values should be documented in addition using `meta:enum`
+
+A **soft enum** can be any string property. Soft enums consist of a number of known and documented values (using `meta:enum`), but any `string` that matches the type's constraints is a valid value.
+This means, soft enums are open enumerations that can be extended ad-hoc by XDM users. XDM authors should be aware that just using `meta:enum` is not adding any enforcment logic.
 
 ## Writing Styleguides
 

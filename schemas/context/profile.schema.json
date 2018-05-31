@@ -85,12 +85,18 @@
             "$ref": "https://ns.adobe.com/xdm/context/pushnotificationtoken"
           }
         },
-        "xdm:orgUnitID": {
-          "title": "Organizational Unit Identifier",
-          "type": "string",
+        "xdm:orgUnit": {
+          "title": "Organizational Unit",
+          "$ref": "https://ns.adobe.com/xdm/common/orgunit",
           "description":
-            "The unit ID within the organization owning the profile. This ID can be used to reference the organization details maintained in another dataset."
+            "The unit within the organization owning the profile. This can be used to reference the organization details maintained in another dataset."
         },
+        "xdm:geoUnit": {
+          "title": "Geographical Unit",
+          "$ref": "https://ns.adobe.com/xdm/common/geounit",
+          "description":
+            "The geographical unit within the organization owning the profile. This can be used to reference the geographical information maintained in another dataset."
+        },        
         "xdm:preferredLanguage": {
           "title": "Preferred Language",
           "type": "string",
@@ -122,12 +128,6 @@
             "plaintext": "Plain text"
           }
         },
-        "xdm:geoUnitID": {
-          "title": "Geographical Unit Identifier",
-          "type": "string",
-          "description":
-            "The geographical unit ID within the organization owning the profile. This ID can be used to reference the geographical information maintained in another dataset."
-        },
         "xdm:organizations": {
           "title": "Organizations",
           "type": "array",
@@ -143,6 +143,13 @@
           "items": {
             "$ref": "https://ns.adobe.com/xdm/context/subscription"
           }
+        },
+        "xdm:testProfile": {
+          "title": "Test Profile",
+          "type": "boolean",
+          "description":
+            "Indicates the `profile` record is for use in testing/verification purposes and should not be automatically included in normal operation(s).",
+          "default": false
         }
       }
     }

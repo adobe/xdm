@@ -39,7 +39,7 @@
       "@id": "https://ns.adobe.com/experience/offer-management/relationships/offer/complies-with-placement",
       "@type": "xdm:manyToMany",
       "xdm:sourceSchema": "https://ns.adobe.com/experience/offer-management/offer",
-      "xdm:sourceProperty": "xdm:representations.xdm:placement",
+      "xdm:sourceProperty": "xdm:representations[*].xdm:placement",
       "xdm:destinationSchema": "https://ns.adobe.com/experience/offer-management/offer-placement",
       "xdm:destinationProperty": "@id"
     },
@@ -47,7 +47,7 @@
       "@id": "https://ns.adobe.com/experience/offer-management/relationships/offer/uses-tags",
       "@type": "xdm:manyToMany",
       "xdm:sourceSchema": "https://ns.adobe.com/experience/offer-management/offer",
-      "xdm:sourceProperty": "xdm:tags",
+      "xdm:sourceProperty": "xdm:tags[*]",
       "xdm:destinationSchema": "https://ns.adobe.com/experience/offer-management/tag",
       "xdm:destinationProperty": "@id"
     },

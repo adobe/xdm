@@ -112,7 +112,7 @@
           "description": "The information related to advertising activity related to the experience event"
         }
       },
-      "required": ["@id", "xdm:dataSource", "xdm:timestamp", "xdm:endUserIDs"]
+      "required": ["@id", "xdm:timestamp", "xdm:endUserIDs"]
     }
   },
   "allOf": [

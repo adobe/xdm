@@ -21,12 +21,18 @@
         "fnApply",
         "literal",
         "fieldLookup",
+        "select",
+        "varDecl",
+        "varRef",
         "queryInvoke"
       ],
       "meta:enum": {
         "fnApply": "Apply an n-ary function to the evaluation context",
         "literal": "Prodcue a value from a literal",
-        "fieldLookup": "Produce a value from an object of fields",
+        "fieldLookup": "Produce a value from an object by accessing one of its fields",
+        "select": "Produce a list of tuples from a list of inputs by evaluating an expression for every input.",
+        "varDecl": "Produce a list inputs from a list of inputs by applying an optional projection and filter to each input. The value is made available for reference via a variable name.",
+        "varRef": "Produce a list of values by referencing a variable name that denotes a tuple element previously evaluated.",
         "queryInvoke": "Invoke a query with parameters."
       }
     },
@@ -53,13 +59,15 @@
         "String",
         "Number",
         "Integer",
-        "Boolean"
+        "Boolean",
+        "XDMObject"
       ],
       "meta:enum": {
-        "String": "",
-        "Number": "",
-        "Integer": "",
-        "Boolean": ""
+        "String": "A string literal",
+        "Number": "A number literal",
+        "Integer": "An integer literal",
+        "Boolean": "A boolean literal",
+        "XDMObject": "A sting denoting a reference of an XDM schema"
       }
     },
     
@@ -170,10 +178,10 @@
               "const": "fieldLookup"
             },
             "fieldName": {
-              "type": "string",
+              "type": "string"
             },
             "object": {
-              "$ref": "#/definitions/node-content",
+              "$ref": "#/definitions/node-content"
             }
           },
           "required": ["nodeType", "fieldName"],
@@ -302,6 +310,74 @@
       },
       "additionalProperties": false
     },
+
+    "select-expression-content": {
+      "type": "object",
+      "title": "List filter",
+      "description": "Produce a list of tuples from a list of input values by evaluating each tuple element (variable) expression in order of declaration.",
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "nodeType": {
+              "type": "string",
+              "const": "select"
+            },
+            "variables": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/tuple-element-content"
+              },
+              "minItems": 1
+            }
+          },
+          "required": ["nodeType", "variables"]
+        }
+      ]
+    },
+    "tuple-element-content": {
+      "type": "object",
+      "title": "Tuple element definition",
+      "description": "Produce a list of output values from a list of inputs by first applying an optional projection (from expression) and then a filter (where expression) to each value from the list of inputs. The list of values is bound to a variable name.",
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "nodeType": {
+              "type": "string",
+              "const": "varDecl"
+            },
+            "from": {
+              "$ref": "#/definitions/node-content"
+            },
+            "where": {
+              "$ref": "#/definitions/node-content"
+            }
+          },
+          "required": ["nodeType", "from", "where"]
+        }
+      ]
+    },
+    "tuple-element-reference-content": {
+      "type": "object",
+      "title": "Reference to a value created in the context of a select expression evaluation",
+      "description": "Produce a list of values by referencing a variable name that denotes a tuple element previously evaluated.",
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "nodeType": {
+              "type": "string",
+              "const": "varRef"
+            },
+            "varName": {
+              "type": "string"
+            }
+          },
+          "required": ["nodeType", "varName"]
+        }
+      ]
+    },
     
     "query-invoke-content": {
       "type": "object",
@@ -316,7 +392,7 @@
               "const": "queryInvoke"
             },
             "queryName": {
-              "type": "string",
+              "type": "string"
             },
             "queryParams": {
               "type": "array",
@@ -324,10 +400,10 @@
                 "type": "object",
                 "properties" : {
                   "queryParamName": {
-                    "type": "string",
+                    "type": "string"
                   },
                   "queryParamValue": {
-                    "$ref": "#/definitions/node-content",
+                    "$ref": "#/definitions/node-content"
                   }
                 },
                 "required": ["queryParamName", "queryParamValue"],
@@ -347,7 +423,7 @@
           "type": "object",
           "properties": {
             "nodeType": {
-              "ref": "#/definitions/node-type"
+              "$ref": "#/definitions/node-type"
             }
           },
           "required": ["nodeType"]
@@ -362,6 +438,15 @@
             },
             {
               "$ref": "#/definitions/field-lookup-content"
+            },
+            {
+              "$ref": "#/definitions/select-expression-content"
+            },
+            {
+              "$ref": "#/definitions/tuple-element-content"
+            },
+            {
+              "$ref": "#/definitions/tuple-element-reference-content"
             },
             {
               "$ref": "#/definitions/query-invoke-content"

@@ -57,7 +57,7 @@
       "xdm:sourceSchema": "https://ns.adobe.com/experience/offer-management/personalized-offer",
       "xdm:sourceProperty": "xdm:selectionConstraint.xdm:eligibilityRule",
       "xdm:destinationSchema": "https://ns.adobe.com/experience/offer-management/eligibility-rule",
-      "xdm:destinationProperty": "@id",
+      "xdm:destinationProperty": "@id"
     }
   ]
 }

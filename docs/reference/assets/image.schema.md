@@ -15,7 +15,7 @@ The Image class is for raster and vector image assets, including JPEG, PNG, SVG 
 * Image `https://ns.adobe.com/xdm/assets/image`
   * [Content](../content/content.schema.md) `https://ns.adobe.com/xdm/content/content`
   * [Asset](asset.schema.md) `https://ns.adobe.com/xdm/assets/asset`
-  * [Rectangular Media](rectangular.schema.md) `https://ns.adobe.com/xdm/assets/rectangular`
+  * [Simple Rectangular Area](rectangular.schema.md) `https://ns.adobe.com/xdm/assets/rectangular`
 
 
 ## Image Example
@@ -67,12 +67,12 @@ The Image class is for raster and vector image assets, including JPEG, PNG, SVG 
 | [plus:copyrightOwner](#pluscopyrightowner) | reference | Optional | [Asset](asset.schema.md#pluscopyrightowner) |
 | [tiff:XResolution](#tiffxresolution) | `object` | Optional | Image (this schema) |
 | [tiff:YResolution](#tiffyresolution) | `object` | Optional | Image (this schema) |
-| [tiff:imageLength](#tiffimagelength) | `integer` | Optional | [Rectangular Media](rectangular.schema.md#tiffimagelength) |
-| [tiff:imageWidth](#tiffimagewidth) | `integer` | Optional | [Rectangular Media](rectangular.schema.md#tiffimagewidth) |
+| [tiff:imageLength](#tiffimagelength) | `integer` | Optional | [Simple Rectangular Area](rectangular.schema.md#tiffimagelength) |
+| [tiff:imageWidth](#tiffimagewidth) | `integer` | Optional | [Simple Rectangular Area](rectangular.schema.md#tiffimagewidth) |
 | [tiff:orientation](#tifforientation) | `integer` | Optional | Image (this schema) |
 | [tiff:resolutionUnit](#tiffresolutionunit) | `enum` | Optional | Image (this schema) |
 | [xdm:aliasIDs](#xdmaliasids) | `array` | Optional | [Asset](asset.schema.md#xdmaliasids) |
-| [xdm:aspectRatio](#xdmaspectratio) | `number` | Optional | [Rectangular Media](rectangular.schema.md#xdmaspectratio) |
+| [xdm:aspectRatio](#xdmaspectratio) | `number` | Optional | [Simple Rectangular Area](rectangular.schema.md#xdmaspectratio) |
 | [xdm:documentID](#xdmdocumentid) | `string` | Optional | [Asset](asset.schema.md#xdmdocumentid) |
 | [xdm:milestone](#xdmmilestone) | `object` | Optional | [Asset](asset.schema.md#xdmmilestone) |
 | [xdm:notSafe](#xdmnotsafe) | `enum` | Optional | [Asset](asset.schema.md#xdmnotsafe) |
@@ -639,7 +639,7 @@ Height in pixels. To maintain continuity with the XMP and TIFF standards, the he
 `tiff:imageLength`
 * is optional
 * type: `integer`
-* defined in [Rectangular Media](rectangular.schema.md#tiff:imageLength)
+* defined in [Simple Rectangular Area](rectangular.schema.md#tiff:imageLength)
 
 ### tiff:imageLength Type
 
@@ -660,7 +660,7 @@ Width in pixels
 `tiff:imageWidth`
 * is optional
 * type: `integer`
-* defined in [Rectangular Media](rectangular.schema.md#tiff:imageWidth)
+* defined in [Simple Rectangular Area](rectangular.schema.md#tiff:imageWidth)
 
 ### tiff:imageWidth Type
 
@@ -798,7 +798,7 @@ Describes the proportional relationship between the width and the height. To det
 `xdm:aspectRatio`
 * is optional
 * type: `number`
-* defined in [Rectangular Media](rectangular.schema.md#xdm:aspectRatio)
+* defined in [Simple Rectangular Area](rectangular.schema.md#xdm:aspectRatio)
 
 ### xdm:aspectRatio Type
 

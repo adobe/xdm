@@ -14,31 +14,10 @@ The Video class is for video assets, i.e. assets that consist of moving pictures
 
 * Video `https://ns.adobe.com/xdm/assets/video`
   * [Asset](asset.schema.md) `https://ns.adobe.com/xdm/assets/asset`
-  * [Rectangular Media](rectangular.schema.md) `https://ns.adobe.com/xdm/assets/rectangular`
+  * [Simple Rectangular Area](rectangular.schema.md) `https://ns.adobe.com/xdm/assets/rectangular`
 
 
 ## Video Examples
-
-```json
-{
-  "repo:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ac",
-  "xmp:createDate": "2017-09-26T15:52:25+00:00",
-  "repo:createdDate": "2017-09-26T15:52:25+00:00",
-  "xdm:repositoryCreatedBy": "lars",
-  "xmp:modifyDate": "2017-09-26T15:52:25+00:00",
-  "repo:lastModifiedDate": "2017-09-26T15:52:25+00:00",
-  "xdm:repositoryLastModifiedBy": "2017-09-26T15:52:25+00:00",
-  "repo:version": "15",
-  "repo:size": 1632418,
-  "xdm:path": "here",
-  "repo:etag": "15",
-  "tiff:imageLength": 2160,
-  "tiff:imageWidth": 3840,
-  "xdm:aspectRatio": 1.77777777778,
-  "xdm:extent": 11700000,
-  "xdm:videoFrameRate": "NTSC"
-}
-```
 
 ```json
 {
@@ -58,6 +37,27 @@ The Video class is for video assets, i.e. assets that consist of moving pictures
   "xdm:aspectRatio": 1.77777777778,
   "xdm:extent": 10920000,
   "xdm:videoFrameRate": "f48s1"
+}
+```
+
+```json
+{
+  "repo:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ac",
+  "xmp:createDate": "2017-09-26T15:52:25+00:00",
+  "repo:createdDate": "2017-09-26T15:52:25+00:00",
+  "xdm:repositoryCreatedBy": "lars",
+  "xmp:modifyDate": "2017-09-26T15:52:25+00:00",
+  "repo:lastModifiedDate": "2017-09-26T15:52:25+00:00",
+  "xdm:repositoryLastModifiedBy": "2017-09-26T15:52:25+00:00",
+  "repo:version": "15",
+  "repo:size": 1632418,
+  "xdm:path": "here",
+  "repo:etag": "15",
+  "tiff:imageLength": 2160,
+  "tiff:imageWidth": 3840,
+  "xdm:aspectRatio": 1.77777777778,
+  "xdm:extent": 11700000,
+  "xdm:videoFrameRate": "NTSC"
 }
 ```
 
@@ -81,10 +81,10 @@ The Video class is for video assets, i.e. assets that consist of moving pictures
 | [exif:gpsLongitude](#exifgpslongitude) | `string` | Optional | [Asset](asset.schema.md#exifgpslongitude) |
 | [photoshop:credit](#photoshopcredit) | `string` | Optional | [Asset](asset.schema.md#photoshopcredit) |
 | [plus:copyrightOwner](#pluscopyrightowner) | reference | Optional | [Asset](asset.schema.md#pluscopyrightowner) |
-| [tiff:imageLength](#tiffimagelength) | `integer` | Optional | [Rectangular Media](rectangular.schema.md#tiffimagelength) |
-| [tiff:imageWidth](#tiffimagewidth) | `integer` | Optional | [Rectangular Media](rectangular.schema.md#tiffimagewidth) |
+| [tiff:imageLength](#tiffimagelength) | `integer` | Optional | [Simple Rectangular Area](rectangular.schema.md#tiffimagelength) |
+| [tiff:imageWidth](#tiffimagewidth) | `integer` | Optional | [Simple Rectangular Area](rectangular.schema.md#tiffimagewidth) |
 | [xdm:aliasIDs](#xdmaliasids) | `array` | Optional | [Asset](asset.schema.md#xdmaliasids) |
-| [xdm:aspectRatio](#xdmaspectratio) | `number` | Optional | [Rectangular Media](rectangular.schema.md#xdmaspectratio) |
+| [xdm:aspectRatio](#xdmaspectratio) | `number` | Optional | [Simple Rectangular Area](rectangular.schema.md#xdmaspectratio) |
 | [xdm:documentID](#xdmdocumentid) | `string` | Optional | [Asset](asset.schema.md#xdmdocumentid) |
 | [xdm:extent](#xdmextent) | `integer` | Optional | Video (this schema) |
 | [xdm:milestone](#xdmmilestone) | `object` | Optional | [Asset](asset.schema.md#xdmmilestone) |
@@ -516,7 +516,7 @@ Height in pixels. To maintain continuity with the XMP and TIFF standards, the he
 `tiff:imageLength`
 * is optional
 * type: `integer`
-* defined in [Rectangular Media](rectangular.schema.md#tiff:imageLength)
+* defined in [Simple Rectangular Area](rectangular.schema.md#tiff:imageLength)
 
 ### tiff:imageLength Type
 
@@ -537,7 +537,7 @@ Width in pixels
 `tiff:imageWidth`
 * is optional
 * type: `integer`
-* defined in [Rectangular Media](rectangular.schema.md#tiff:imageWidth)
+* defined in [Simple Rectangular Area](rectangular.schema.md#tiff:imageWidth)
 
 ### tiff:imageWidth Type
 
@@ -613,7 +613,7 @@ Describes the proportional relationship between the width and the height. To det
 `xdm:aspectRatio`
 * is optional
 * type: `number`
-* defined in [Rectangular Media](rectangular.schema.md#xdm:aspectRatio)
+* defined in [Simple Rectangular Area](rectangular.schema.md#xdm:aspectRatio)
 
 ### xdm:aspectRatio Type
 

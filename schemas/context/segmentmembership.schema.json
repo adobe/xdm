@@ -44,11 +44,17 @@
           "meta:enum": {
             "existing": "Entity continues to be in the segment",
             "realized": "Entity is entering the segment",
-            "left": "Entity is leaving the segment",
+            "left": "Entity is leaving the segment"
           }
         }
       }
     }
-  }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/segmentMembership"
+    }
+  ],
+  "meta:status": "experimental"
 }
 

@@ -7,9 +7,9 @@ http://ns.adobe.com/adobecloud/core/1.0/directory
 
 A directory in Adobe Cloud Platform.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [external/repo/directory.schema.json](external/repo/directory.schema.json) |
+| [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
+|----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/repo/directory.schema.json](external/repo/directory.schema.json) |
 ## Schema Hierarchy
 
 * Directory `http://ns.adobe.com/adobecloud/core/1.0/directory`

@@ -7,9 +7,9 @@ http://schema.org/GeoShape
 
 The geographic shape of a place. Based on [schema.org](http://schema.org/GeoShape).
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [external/schema/geoshape.schema.json](external/schema/geoshape.schema.json) |
+| [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
+|----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/schema/geoshape.schema.json](external/schema/geoshape.schema.json) |
 ## Schema Hierarchy
 
 * Geo Shape `http://schema.org/GeoShape`

@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/external/activity-streams-2/image
 
 An image document of any kind. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-image) specification for a complete description of the `image` type.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | No | Experimental | Forbidden | Permitted | [external/activity-streams-2/image.schema.json](external/activity-streams-2/image.schema.json) |
+| [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
+|----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
+| Can be instantiated | No | Experimental | No | Forbidden | Permitted | [external/activity-streams-2/image.schema.json](external/activity-streams-2/image.schema.json) |
 
 ## Image Document Example
 ```json

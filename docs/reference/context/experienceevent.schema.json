@@ -30,15 +30,16 @@
                     "format": "date-time",
                     "description": "The time when the first event of the interaction occurred."
                 },
+                "xdm:receivedTimestamp": {
+                    "title": "Received Timestamp",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "The time at which this interaction was received by a server."
+                },
                 "xdm:endUserIDs": {
                     "title": "End User IDs",
                     "$ref": "https://ns.adobe.com/xdm/context/enduserids",
                     "description": "Condensed, normalized encapsulation of all end user identifiers.\n"
-                },
-                "xdm:metrics": {
-                    "title": "Metrics",
-                    "$ref": "https://ns.adobe.com/xdm/data/metrics",
-                    "description": "The metrics for actions performed during this observation."
                 },
                 "xdm:environment": {
                     "title": "Environment",
@@ -65,7 +66,7 @@
                 },
                 "xdm:application": {
                     "title": "Application",
-                    "$ref": "https://ns.adobe.com/xdm/channels/application",
+                    "$ref": "https://ns.adobe.com/xdm/context/application",
                     "description": "The application related to the event observation. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login."
                 },
                 "xdm:search": {
@@ -78,6 +79,11 @@
                     "$ref": "https://ns.adobe.com/xdm/context/webinfo",
                     "description": "The information related to web page and link of the ExperienceEvent."
                 },
+                "xdm:directMarketing": {
+                    "title": "Direct Marketing",
+                    "$ref": "https://ns.adobe.com/xdm/context/direct-marketing",
+                    "description": "The events and properties related to direct/outbound marketing such as email, direct mail, texts and in-app notifications."
+                },
                 "xdm:marketing": {
                     "title": "Marketing",
                     "$ref": "https://ns.adobe.com/xdm/context/marketing",
@@ -89,38 +95,18 @@
                     "description": "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, working hours."
                 },
                 "xdm:channel": {
-                    "title": "Communication Channel",
-                    "type": "string",
-                    "format": "uri",
-                    "meta:enum": {
-                        "https://ns.adobe.com/xdm/channels/adm": "ADM",
-                        "https://ns.adobe.com/xdm/channels/agency": "Agency",
-                        "https://ns.adobe.com/xdm/channels/apns": "APNS",
-                        "https://ns.adobe.com/xdm/channels/application": "Application",
-                        "https://ns.adobe.com/xdm/channels/baidu": "Baidu",
-                        "https://ns.adobe.com/xdm/channels/channel": "Experience Channel",
-                        "https://ns.adobe.com/xdm/channels/direct-mail": "Direct Mail",
-                        "https://ns.adobe.com/xdm/channels/email": "E-Mail",
-                        "https://ns.adobe.com/xdm/channels/facebook-feed": "Facebook News Feed",
-                        "https://ns.adobe.com/xdm/channels/fax": "Fax",
-                        "https://ns.adobe.com/xdm/channels/gcm": "GCM",
-                        "https://ns.adobe.com/xdm/channels/line": "LINE",
-                        "https://ns.adobe.com/xdm/channels/mobile-app": "Web",
-                        "https://ns.adobe.com/xdm/channels/mpns": "MPNS",
-                        "https://ns.adobe.com/xdm/channels/phone": "Phone",
-                        "https://ns.adobe.com/xdm/channels/sms": "SMS",
-                        "https://ns.adobe.com/xdm/channels/twitter-feed": "Twitter Feed",
-                        "https://ns.adobe.com/xdm/channels/web": "Web",
-                        "https://ns.adobe.com/xdm/channels/webpage": "Web Page",
-                        "https://ns.adobe.com/xdm/channels/wechat": "WeChat",
-                        "https://ns.adobe.com/xdm/channels/wns": "WNS"
-                    },
-                    "description": "The marketing channel related to this ExperienceEvent."
+                    "title": "Experience Channel",
+                    "description": "The experience channel related to this ExperienceEvent.",
+                    "$ref": "https://ns.adobe.com/xdm/channels/channel"
+                },
+                "xdm:advertising": {
+                    "title": "Advertising",
+                    "$ref": "https://ns.adobe.com/xdm/context/advertising",
+                    "description": "The information related to advertising activity related to the experience event"
                 }
             },
             "required": [
                 "@id",
-                "xdm:dataSource",
                 "xdm:timestamp",
                 "xdm:endUserIDs"
             ]
@@ -147,24 +133,25 @@
                 "https://ns.adobe.com/experience/mcid": {
                     "@id": "https://data.adobe.io/entities/identity/92312748749128",
                     "xdm:namespace": {
-                        "@id": "https://data.adobe.io/entities/namespace/4",
                         "xdm:code": "ECID"
                     }
                 },
-                "https://ns.adobe.com/experience/analytics": {
+                "https://ns.adobe.com/experience/aaid": {
                     "@id": "https://data.adobe.io/entities/identity/2394509340-30453470347",
                     "xdm:namespace": {
-                        "@id": "https://data.adobe.io/entities/namespace/11112",
                         "xdm:code": "AVID"
                     }
                 },
                 "https://ns.adobe.com/experience/tntid": {
                     "@id": "https://data.adobe.io/entities/identity/1233ce17-20e0-4a2c-8198-2a77fd60cf4d",
                     "xdm:namespace": {
-                        "@id": "https://data.adobe.io/entities/namespace/33333",
                         "xdm:code": "tnt0051"
                     }
                 }
+            },
+            "xdm:channel": {
+                "@id": "https://ns.adobe.com/xdm/channels/apns",
+                "@type": "https://ns.adobe.com/xdm/channel-types/mobile"
             },
             "xdm:environment": {
                 "xdm:type": "browser",
@@ -183,17 +170,6 @@
                 "xdm:operatingSystem": "MAC OS",
                 "xdm:operatingSystemVersion": "10.13",
                 "xdm:connectionType": "cable"
-            },
-            "xdm:metrics": {
-                "https://ns.adobe.com/xdm/data/metrics/commerce/purchases": {
-                    "xdm:value": 1,
-                    "xdm:unit": null
-                },
-                "https://ns.adobe.com/xdm/data/metrics/web/page-views": {
-                    "@type": "https://ns.adobe.com/xdm/data/metrics/web/page-views",
-                    "xdm:value": 1,
-                    "xdm:unit": null
-                }
             },
             "xdm:productListItems": [
                 {
@@ -225,6 +201,9 @@
                     ],
                     "xdm:currencyCode": "USD",
                     "xdm:priceTotal": 159
+                },
+                "xdm:purchases": {
+                    "xdm:value": 1
                 }
             },
             "xdm:placeContext": {
@@ -240,13 +219,16 @@
                 }
             },
             "xdm:web": {
-                "xdm:webPageView": {
+                "xdm:webPageDetails": {
                     "xdm:siteSection": "Shopping Cart",
                     "xdm:server": "example.com",
                     "xdm:name": "Purchase Confirmation",
                     "xdm:URL": "https://www.example.com/orderConf",
                     "xdm:errorPage": false,
-                    "xdm:homePage": false
+                    "xdm:homePage": false,
+                    "xdm:pageViews": {
+                        "xdm:value": 1
+                    }
                 },
                 "xdm:webReferrer": {
                     "xdm:URL": "https://www.example.com/checkout",
@@ -255,6 +237,241 @@
             },
             "xdm:marketing": {
                 "xdm:trackingCode": "marketingcampaign111"
+            }
+        },
+        {
+            "@id": "https://data.adobe.io/experienceid-2345678",
+            "xdm:dataSource": {
+                "@id": "https://data.adobe.io/datasources/datasource-123",
+                "xdm:code": "DataSourceIntegrationCode-123"
+            },
+            "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+            "xdm:endUserIDs": {
+                "https://ns.adobe.com/experience/mcid": {
+                    "@id": "https://data.adobe.io/entities/identity/92312748749128",
+                    "xdm:namespace": {
+                        "@id": "https://data.adobe.io/entities/namespace/4",
+                        "xdm:code": "ECID"
+                    }
+                }
+            },
+            "xdm:environment": {
+                "xdm:type": "browser",
+                "xdm:browserDetails": {
+                    "xdm:name": "Chrome",
+                    "xdm:version": "63.0.3239",
+                    "xdm:acceptLanguage": "en",
+                    "xdm:cookiesEnabled": true,
+                    "xdm:viewportHeight": 900,
+                    "xdm:viewportWidth": 1680
+                },
+                "xdm:operatingSystem": "MAC OS",
+                "xdm:operatingSystemVersion": "10.13",
+                "xdm:connectionType": "cable"
+            },
+            "xdm:locationContext": {
+                "xdm:geo": {
+                    "xdm:countryCode": "US",
+                    "xdm:stateProvince": "CA",
+                    "xdm:city": "Emeryville",
+                    "xdm:dmaid": "99"
+                }
+            },
+            "xdm:web": {
+                "xdm:webPageView": {
+                    "xdm:URL": "https://www.example.com"
+                },
+                "xdm:webReferrer": {
+                    "xdm:URL": "https://www.examplereferrer.com/",
+                    "xdm:domain": "examplereferrer.com"
+                }
+            },
+            "xdm:device": {
+                "xdm:type": "mobile",
+                "xdm:manufacturer": "Apple",
+                "xdm:model": "iPhone 6"
+            },
+            "xdm:advertising": {
+                "xdm:adViewability": {
+                    "xdm:adUnitDepth": 0,
+                    "xdm:viewportHeight": 1250,
+                    "xdm:viewportWidth": 1600,
+                    "xdm:adHeight": 250,
+                    "xdm:adWidth": 300,
+                    "xdm:playerVolume": 85,
+                    "xdm:measurementEligible": true,
+                    "xdm:implementationDetails": {
+                        "xdm:name": "https://ns.adobe.com/experience/adcloud/viewability",
+                        "xdm:version": "1"
+                    },
+                    "xdm:viewable": true,
+                    "xdm:activeWindow": true,
+                    "xdm:percentViewable": 89,
+                    "xdm:viewableFirstQuartile": {
+                        "xdm:value": 1
+                    }
+                },
+                "xdm:firstQuartiles": {
+                    "xdm:value": 1
+                }
+            }
+        },
+        {
+            "@id": "https://data.adobe.io/experienceid-23456782",
+            "xdm:dataSource": {
+                "@id": "https://data.adobe.io/datasources/datasource-123",
+                "xdm:code": "DataSourceIntegrationCode-123"
+            },
+            "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+            "xdm:endUserIDs": {
+                "https://ns.adobe.com/experience/mcid": {
+                    "@id": "https://data.adobe.io/entities/identity/92312748749128",
+                    "xdm:namespace": {
+                        "@id": "https://data.adobe.io/entities/namespace/4",
+                        "xdm:code": "ECID"
+                    }
+                }
+            },
+            "xdm:environment": {
+                "xdm:type": "application",
+                "xdm:operatingSystem": "iOS",
+                "xdm:operatingSystemVersion": "10.13",
+                "xdm:connectionType": "mobile_lte"
+            },
+            "xdm:placeContext": {
+                "xdm:localTime": "2001-07-04T12:08:56+01:00",
+                "xdm:geo": {
+                    "@id": "https://data.adobe.io/entities/geo/tokyo",
+                    "xdm:countryCode": "JP",
+                    "xdm:stateProvince": "JP-13",
+                    "xdm:city": "Tōkyō",
+                    "xdm:postalCode": "141-0032",
+                    "schema:latitude": 35.6185,
+                    "schema:longitude": 139.73237
+                },
+                "xdm:POIinteraction": {
+                    "xdm:poiEntries": {
+                        "xdm:value": 1
+                    },
+                    "xdm:POIID": "d8a5c08c-1e79-4051-8a8b-675fb235e03d",
+                    "xdm:name": "Acme Hotel Tokyo Lobby",
+                    "xdm:category": "Resorts",
+                    "xdm:type": "Hotel",
+                    "xdm:locatingType": "beacon",
+                    "xdm:beaconInteractionDetails": {
+                        "xdm:proximityUUID": "c6c03ed9-ea23-481c-ab15-833e88cfb22f",
+                        "xdm:beaconMajor": 300,
+                        "xdm:beaconMinor": 34
+                    }
+                },
+                "xdm:activePOIs": [
+                    {
+                        "xdm:POIID": "c7f4bf28-c8d9-4b89-a81f-2a8ef9367390",
+                        "xdm:name": "Acme Hotel Tokyo",
+                        "xdm:category": "Resorts",
+                        "xdm:type": "Hotel",
+                        "xdm:locatingType": "beacon",
+                        "xdm:beaconInteractionDetails": {
+                            "xdm:proximityUUID": "dd0094a0-52bb-4d3a-ab15-fcccb9b9b48e",
+                            "xdm:beaconMajor": 100,
+                            "xdm:beaconMinor": 23
+                        }
+                    },
+                    {
+                        "xdm:POIID": "d8a5c08c-1e79-4051-8a8b-675fb235e03d",
+                        "xdm:name": "Acme Hotel Tokyo Lobby",
+                        "xdm:category": "Resorts",
+                        "xdm:type": "Hotel",
+                        "xdm:locatingType": "beacon",
+                        "xdm:beaconInteractionDetails": {
+                            "xdm:proximityUUID": "c6c03ed9-ea23-481c-ab15-833e88cfb22f",
+                            "xdm:beaconMajor": 300,
+                            "xdm:beaconMinor": 34
+                        }
+                    },
+                    {
+                        "xdm:POIID": "d8a5c08c-1e79-4051-8a8b-675fb235e03d",
+                        "xdm:name": "Tokyo City",
+                        "xdm:locatingType": "gps",
+                        "xdm:geoInteractionDetails": {
+                            "xdm:distanceToCenter": 320,
+                            "xdm:accuracy": 30,
+                            "xdm:geoShape": {
+                                "@id": "https://data.adobe.io/entities/geoShape/shapeid123",
+                                "schema:circle": {
+                                    "@id": "https://data.adobe.io/entities/geo/circleid123",
+                                    "schema:description": "Tokyo Metro",
+                                    "schema:coordinates": {
+                                        "@id": "https://data.adobe.io/entities/geo/111",
+                                        "schema:description": "Tokyo",
+                                        "schema:latitude": 37.3308953,
+                                        "schema:longitude": -121.8939894,
+                                        "schema:elevation": 31.0896
+                                    },
+                                    "schema:radius": 80000
+                                }
+                            }
+                        }
+                    }
+                ],
+                "xdm:type": "browser",
+                "xdm:browserDetails": {
+                    "xdm:name": "Chrome",
+                    "xdm:version": "63.0.3239",
+                    "xdm:acceptLanguage": "en",
+                    "xdm:cookiesEnabled": true,
+                    "xdm:viewportHeight": 900,
+                    "xdm:viewportWidth": 1680
+                },
+                "xdm:operatingSystem": "MAC OS",
+                "xdm:operatingSystemVersion": "10.13",
+                "xdm:connectionType": "cable"
+            },
+            "xdm:locationContext": {
+                "xdm:geo": {
+                    "xdm:countryCode": "US",
+                    "xdm:stateProvince": "CA",
+                    "xdm:city": "Emeryville",
+                    "xdm:dmaid": "99"
+                }
+            },
+            "xdm:web": {
+                "xdm:webPageView": {
+                    "xdm:URL": "https://www.example.com"
+                },
+                "xdm:webReferrer": {
+                    "xdm:URL": "https://www.examplereferrer.com/",
+                    "xdm:domain": "examplereferrer.com"
+                }
+            },
+            "xdm:device": {
+                "xdm:type": "mobile",
+                "xdm:manufacturer": "Apple",
+                "xdm:model": "iPhone 6"
+            },
+            "xdm:advertising": {
+                "xdm:adViewability": {
+                    "xdm:adUnitDepth": 0,
+                    "xdm:viewportHeight": 1250,
+                    "xdm:viewportWidth": 1600,
+                    "xdm:adHeight": 250,
+                    "xdm:adWidth": 300,
+                    "xdm:playerVolume": 85,
+                    "xdm:measurementEligible": true,
+                    "xdm:implementationDetails": {
+                        "xdm:name": "https://ns.adobe.com/experience/adcloud/viewability",
+                        "xdm:version": "1"
+                    },
+                    "xdm:viewable": true,
+                    "xdm:activeWindow": true,
+                    "xdm:percentViewable": 89,
+                    "xdm:viewableFirstQuartile": {
+                        "xdm:value": 1
+                    }
+                },
+                "xdm:firstQuartiles": {
+                    "xdm:value": 1
+                }
             }
         }
     ]

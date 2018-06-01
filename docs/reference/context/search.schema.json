@@ -30,7 +30,7 @@
                 },
                 "xdm:pageDepth": {
                     "title": "Page Depth",
-                    "type": "number",
+                    "type": "integer",
                     "description": "The page depth in the search results."
                 }
             }
@@ -41,7 +41,7 @@
             "$ref": "#/definitions/search"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stabilizing",
     "examples": [
         {
             "xdm:searchEngine": "Google",

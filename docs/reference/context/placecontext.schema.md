@@ -9,13 +9,14 @@ The transient circumstances related to the place or physical location of the obs
 Examples include location specific information such as weather, local time, traffic, day of the week, workday vs. holiday, working hours.
 
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [context/placecontext.schema.json](context/placecontext.schema.json) |
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/placecontext.schema.json](context/placecontext.schema.json) |
 ## Schema Hierarchy
 
 * Place Context `https://ns.adobe.com/xdm/context/placecontext`
   * [Geo](../common/geo.schema.md) `https://ns.adobe.com/xdm/common/geo`
+  * [Point of Interest Interaction](poi-interaction.schema.md) `https://ns.adobe.com/xdm/context/poi-interaction`
 
 
 ## Place Context Example
@@ -30,7 +31,45 @@ Examples include location specific information such as weather, local time, traf
     "xdm:postalCode": "141-0032",
     "schema:latitude": 35.6185,
     "schema:longitude": 139.73237
-  }
+  },
+  "xdm:POIinteraction": {
+    "https://ns.adobe.com/xdm/data/metrics/placecontext/poi-exits": {
+      "xdm:value": 1
+    },
+    "xdm:POIID": "d8a5c08c-1e79-4051-8a8b-675fb235e03d",
+    "xdm:name": "Acme Hotel Tokyo Lobby",
+    "xdm:category": "Resorts",
+    "xdm:type": "Hotel",
+    "xdm:beacon": {
+      "xdm:proximityUUID": "c6c03ed9-ea23-481c-ab15-833e88cfb22f",
+      "xdm:beaconMajor": 300,
+      "xdm:beaconMinor": 34
+    }
+  },
+  "xdm:activePOIs": [
+    {
+      "xdm:POIID": "c7f4bf28-c8d9-4b89-a81f-2a8ef9367390",
+      "xdm:name": "Acme Hotel Tokyo",
+      "xdm:category": "Resorts",
+      "xdm:type": "Hotel",
+      "xdm:beacon": {
+        "xdm:proximityUUID": "dd0094a0-52bb-4d3a-ab15-fcccb9b9b48e",
+        "xdm:beaconMajor": 100,
+        "xdm:beaconMinor": 23
+      }
+    },
+    {
+      "xdm:POIID": "d8a5c08c-1e79-4051-8a8b-675fb235e03d",
+      "xdm:name": "Acme Hotel Tokyo Lobby",
+      "xdm:category": "Resorts",
+      "xdm:type": "Hotel",
+      "xdm:beacon": {
+        "xdm:proximityUUID": "c6c03ed9-ea23-481c-ab15-833e88cfb22f",
+        "xdm:beaconMajor": 300,
+        "xdm:beaconMinor": 34
+      }
+    }
+  ]
 }
 ```
 
@@ -38,14 +77,61 @@ Examples include location specific information such as weather, local time, traf
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
+| [xdm:POIinteraction](#xdmpoiinteraction) | Point of Interest Interaction | Optional | Place Context (this schema) |
+| [xdm:activePOIs](#xdmactivepois) | Point of Interest Details | Optional | Place Context (this schema) |
 | [xdm:geo](#xdmgeo) | Geo | Optional | Place Context (this schema) |
 | [xdm:localTime](#xdmlocaltime) | `string` | Optional | Place Context (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
+## xdm:POIinteraction
+### POI Interaction
+
+The Point of Interest(POI) interaction details.
+
+`xdm:POIinteraction`
+* is optional
+* type: Point of Interest Interaction
+* defined in this schema
+
+### xdm:POIinteraction Type
+
+
+* [Point of Interest Interaction](poi-interaction.schema.md) – `https://ns.adobe.com/xdm/context/poi-interaction`
+
+
+
+
+
+## xdm:activePOIs
+### POI Detail
+
+Details of the POIs that cause the event.
+
+`xdm:activePOIs`
+* is optional
+* type: Point of Interest Details
+
+* defined in this schema
+
+### xdm:activePOIs Type
+
+
+Array type: Point of Interest Details
+
+All items must be of the type:
+* [Point of Interest Details](poi-detail.schema.md) – `https://ns.adobe.com/xdm/context/poi-detail`
+
+
+
+
+
+
+
+
 ## xdm:geo
 ### Geo
 
-The geographic location where the experience was delivered .
+The geographic location where the experience was delivered.
 
 `xdm:geo`
 * is optional

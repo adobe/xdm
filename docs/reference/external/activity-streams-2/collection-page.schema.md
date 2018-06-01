@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/external/activity-streams-2/collection-page
 
 Used to represent distinct subsets of items from a `Collection`. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-collectionpage) for a complete description of the `CollectionPage` object.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [external/activity-streams-2/collection-page.schema.json](external/activity-streams-2/collection-page.schema.json) |
+| [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
+|----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/activity-streams-2/collection-page.schema.json](external/activity-streams-2/collection-page.schema.json) |
 ## Schema Hierarchy
 
 * Collection Page `https://ns.adobe.com/xdm/external/activity-streams-2/collection-page`

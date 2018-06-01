@@ -1,0 +1,60 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/data/metricdefinition",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Metric Definition",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "",
+  "definitions": {
+    "metricdefinition": {
+      "properties": {
+        "@id": {
+          "type": "string",
+          "format": "uri",
+          "description": "The unique identifier of this metric."
+        },
+        "schema:name": {
+          "type": "string",
+          "description":
+            "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
+        },
+        "xdm:measurement": {
+          "type": "string",
+          "description": "How to take measures of this metric.",
+          "examples": ["distance", "time", "price", "count"]
+        },
+        "xdm:unit": {
+          "anyOf": [
+            {
+              "type": "string",
+              "description":
+                "The unit that this metric is measured in. Whenever possible, metrics should follow the [SI base units](https://www.bipm.org/en/measurement-units/) or be [ISO 4217 currency codes](https://www.iso.org/iso-4217-currency-codes.html).",
+              "examples": ["m", "kg", "s", "USD"]
+            },
+            {
+              "const": null,
+              "description":
+                "The unit that this metric is measured in. For metric that are counts, the `xdm:unit` must be `null`."
+            }
+          ]
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/metricdefinition"
+    }
+  ],
+  "required": ["@id", "schema:name", "xdm:measurement", "xdm:unit"],
+  "meta:status": "stabilizing"
+}

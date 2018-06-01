@@ -1,7 +1,7 @@
 {
-  "schema:name": "direct-marketing metric: non-deliverables",
+  "schema:name": "direct-marketing metric: nonDeliverables",
   "@id":
-    "https://ns.adobe.com/xdm/data/metrics/direct-marketing/non-deliverables",
+    "xdm:nonDeliverables",
   "xdm:measurement": "count",
   "xdm:unit": null
 }

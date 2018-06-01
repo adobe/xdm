@@ -1,5 +1,5 @@
 {
-  "xdm:webPageView": {
+  "xdm:webPageDetails": {
     "xdm:siteSection": "Product section",
     "xdm:server": "example.com",
     "xdm:name": "product home",
@@ -10,7 +10,10 @@
   "xdm:webInteraction": {
     "xdm:type": "other",
     "xdm:URL": "#stores",
-    "xdm:name": "product store"
+    "xdm:name": "product store",
+    "xdm:linkClicks": {
+      "xdm:value": 1.0
+    }
   },
   "xdm:webReferrer": {
     "xdm:URL": "https://www.example.com/products",

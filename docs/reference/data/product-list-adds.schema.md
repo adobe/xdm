@@ -1,34 +1,39 @@
 
-# product-list-adds Schema
+# Product List Adds Schema
 
 ```
-https://ns.adobe.com/xdm/data/metrics/commerce/product-list-adds
+https://ns.adobe.com/xdm/data/metrics/product-list-adds
 ```
 
-The commerce metric product-list-adds describes the number of times a product has been added to a product list. The most common case is adding an item to the shopping cart.
+The commerce metric productListAdds describes the number of times a product has been added to a product list. The most common case is adding an item to the shopping cart.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [data/product-list-adds.schema.json](data/product-list-adds.schema.json) |
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [data/product-list-adds.schema.json](data/product-list-adds.schema.json) |
+## Schema Hierarchy
 
-## product-list-adds Example
+* Product List Adds `https://ns.adobe.com/xdm/data/metrics/product-list-adds`
+  * [Metric Definition](metricdefinition.schema.md) `https://ns.adobe.com/xdm/data/metricdefinition`
+
+
+## Product List Adds Example
 ```json
 {
-  "schema:name": "commerce metric: product-list-adds",
-  "@id": "https://ns.adobe.com/xdm/data/metrics/commerce/product-list-adds",
+  "schema:name": "commerce metric: productListAdds",
+  "@id": "xdm:productListAdds",
   "xdm:measurement": "count",
   "xdm:unit": null
 }
 ```
 
-# product-list-adds Properties
+# Product List Adds Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | product-list-adds (this schema) |
-| [schema:name](#schemaname) | `const` | **Required** | product-list-adds (this schema) |
-| [xdm:measurement](#xdmmeasurement) | `const` | **Required** | product-list-adds (this schema) |
-| [xdm:unit](#xdmunit) | `const` | **Required** | product-list-adds (this schema) |
+| [@id](#@id) | `string` | **Required** | [Metric Definition](metricdefinition.schema.md#@id) |
+| [schema:name](#schemaname) | `string` | **Required** | [Metric Definition](metricdefinition.schema.md#schemaname) |
+| [xdm:measurement](#xdmmeasurement) | `string` | **Required** | [Metric Definition](metricdefinition.schema.md#xdmmeasurement) |
+| [xdm:unit](#xdmunit) | complex | **Required** | [Metric Definition](metricdefinition.schema.md#xdmunit) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -37,14 +42,15 @@ The unique identifier of this metric.
 
 `@id`
 * is **required**
-* type: `const`
-* defined in this schema
+* type: `string`
+* defined in [Metric Definition](metricdefinition.schema.md#@id)
 
-The value of this property **must** be equal to:
+### @id Type
 
-```json
-"https://ns.adobe.com/xdm/data/metrics/commerce/product-list-adds"
-```
+
+`string`
+* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+
 
 
 
@@ -56,14 +62,14 @@ The human-readable name of the metric. The name can be used in user interfaces a
 
 `schema:name`
 * is **required**
-* type: `const`
-* defined in this schema
+* type: `string`
+* defined in [Metric Definition](metricdefinition.schema.md#schema:name)
 
-The value of this property **must** be equal to:
+### schema:name Type
 
-```json
-"commerce metric: product-list-adds"
-```
+
+`string`
+
 
 
 
@@ -75,16 +81,35 @@ How to take measures of this metric.
 
 `xdm:measurement`
 * is **required**
-* type: `const`
-* defined in this schema
+* type: `string`
+* defined in [Metric Definition](metricdefinition.schema.md#xdm:measurement)
 
-The value of this property **must** be equal to:
+### xdm:measurement Type
+
+
+`string`
+
+
+
+
+
+### xdm:measurement Examples
+
+```json
+"distance"
+```
+
+```json
+"time"
+```
+
+```json
+"price"
+```
 
 ```json
 "count"
 ```
-
-
 
 
 
@@ -93,14 +118,25 @@ The value of this property **must** be equal to:
 
 `xdm:unit`
 * is **required**
-* type: `const`
-* defined in this schema
+* type: complex
+* defined in [Metric Definition](metricdefinition.schema.md#xdm:unit)
 
-The value of this property **must** be equal to:
+### xdm:unit Type
 
-```json
-null
-```
+
+**Any** following *options* needs to be fulfilled.
+
+
+#### Option 1
+
+
+`string`
+
+
+
+#### Option 2
+
+
 
 
 

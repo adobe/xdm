@@ -1,0 +1,115 @@
+
+# Beacon Schema
+
+```
+https://ns.adobe.com/xdm/context/beacon-interaction-details
+```
+
+Beacon, a wireless device that communicates identity information to mobile applications as mobile devices come within range.
+
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/beacon-interaction-details.schema.json](context/beacon-interaction-details.schema.json) |
+
+## Beacon Example
+```json
+{
+  "xdm:proximityUUID": "dd0094a0-52bb-4d3a-ab15-fcccb9b9b48e",
+  "xdm:beaconMajor": 100,
+  "xdm:beaconMinor": 23,
+  "xdm:proximity": "near"
+}
+```
+
+# Beacon Properties
+
+| Property | Type | Required | Defined by |
+|----------|------|----------|------------|
+| [xdm:beaconMajor](#xdmbeaconmajor) | `number` | Optional | Beacon (this schema) |
+| [xdm:beaconMinor](#xdmbeaconminor) | `number` | Optional | Beacon (this schema) |
+| [xdm:proximity](#xdmproximity) | `enum` | Optional | Beacon (this schema) |
+| [xdm:proximityUUID](#xdmproximityuuid) | `string` | Optional | Beacon (this schema) |
+| `*` | any | Additional | this schema *allows* additional properties |
+
+## xdm:beaconMajor
+### Beacon Major
+
+The first sub organization identifier of an area multiple beacon operate in.
+
+`xdm:beaconMajor`
+* is optional
+* type: `number`
+* defined in this schema
+
+### xdm:beaconMajor Type
+
+
+`number`
+
+
+
+
+
+
+## xdm:beaconMinor
+### Beacon Minor
+
+The second sub organization identifier of an area multiple beacon operate in. The smallest area a beacon can refine location to.
+
+`xdm:beaconMinor`
+* is optional
+* type: `number`
+* defined in this schema
+
+### xdm:beaconMinor Type
+
+
+`number`
+
+
+
+
+
+
+## xdm:proximity
+### Proximity to beacon
+
+Estimated distance from the beacon.
+
+`xdm:proximity`
+* is optional
+* type: `enum`
+* defined in this schema
+
+The value of this property **must** be equal to one of the [known values below](#xdm:proximity-known-values).
+
+### xdm:proximity Known Values
+| Value | Description |
+|-------|-------------|
+| `immediate` | Within a few centimeters |
+| `near` | Within a couple of meters |
+| `far` | Greater than 10 meters away |
+| `unknown` | Not able to ascertain distance, signal likely very weak. |
+
+
+
+
+## xdm:proximityUUID
+### Proximity UUID
+
+The UUID configured into a beacon (or multiple beacons if multiple operate in an area) to be transmitted to mobile devices in range to identify an organizations beacons.
+
+`xdm:proximityUUID`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:proximityUUID Type
+
+
+`string`
+
+
+
+
+

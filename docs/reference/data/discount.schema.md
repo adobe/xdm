@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/data/discount
 
 This is an offer from the supplier to the purchaser, to reduce the payment amount if the payment is made within a certain period of time.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [data/discount.schema.json](data/discount.schema.json) |
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/discount.schema.json](data/discount.schema.json) |
 
 ## Discount Example
 ```json

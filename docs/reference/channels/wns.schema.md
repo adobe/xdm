@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/channels/wns
 
 Windows Push Notification Service.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [channels/wns.schema.json](channels/wns.schema.json) |
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [channels/wns.schema.json](channels/wns.schema.json) |
 ## Schema Hierarchy
 
 * WNS `https://ns.adobe.com/xdm/channels/wns`

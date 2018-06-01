@@ -1,0 +1,58 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/segmentMembership",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Segment Membership",
+  "type": "object",
+  "description": "Details about a segment membership.",
+  "definitions": {
+    "segmentMembership": {
+      "properties": {
+        "xdm:segmentID": {
+          "title": "Segment ID",
+          "$ref": "https://ns.adobe.com/xdm/context/identity",
+          "description": "The identity of the segment or snapshot definition in with the domain of the specific system that processes that type of segment."
+        },
+        "xdm:version": {
+          "title": "Version",
+          "type": "string",
+          "description": "The version of the segment definition used in this segment assertion. Version can be omitted in audience lists when all memberships versions are the same."
+        },
+        "xdm:timestamp": {
+          "title": "Timestamp",
+          "type": "string",
+          "format": "date-time",
+          "description": "The timestamp when the assertion of segment membership was made."
+        },
+        "xdm:validUntil": {
+          "title": "Valid Until",
+          "type": "string",
+          "format": "date-time",
+          "description": "The timestamp for when the segment assertion should nolonger be assumed to be valid and should either be ignored or revalidated."
+        },
+        "xdm:value": {
+          "title": "Value",
+          "type": "boolean",
+          "description": "In the segment evaluation was the profile enrolled in the segment (true), specifically removed from (false) or neither (null or 'xdm:value' not present)."
+        },
+        "xdm:status": {
+          "title": "Status",
+          "type": "string",
+          "description": "Is the segment participation realized as part of the current request.",
+          "default": "realized",
+          "enum": ["existing", "realized", "left"],
+          "meta:enum": {
+            "existing": "Entity continues to we in the segment",
+            "realized": "Entity is entering the segment",
+            "left": "Entity is leaving the segment",
+          }
+        }
+      }
+    }
+  }
+}

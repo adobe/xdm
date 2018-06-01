@@ -21,7 +21,10 @@
       "schema:name": "Supplier Name",
       "xdm:value": "Home Depot"
     },
-    "xdm:fabrication": "stainless steel",
+    "xdm:fabrication": {
+      "schema:name": "Supplier Name",
+      "xdm:value": "stainless steel"
+    },
     "xdm:size": {
       "xdm:value": {
         "@type": "https://ns.adobe.com/xdm/data/example-metric",
@@ -29,7 +32,15 @@
         "xdm:value": 8.91
       },
       "xdm:variantAttribute": true
-    }
+    },
+    "schema:isRelatedTo": [
+      {
+        "xdm:value": "https://ns.adobe.com/xdm/commerce/product-203766912"
+      },
+      {
+        "xdm:value": "https://ns.adobe.com/xdm/commerce/product-342224088"
+      }
+    ]
   },
   "xdm:prices": [
     {

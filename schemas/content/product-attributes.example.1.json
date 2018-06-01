@@ -3,14 +3,25 @@
     "xdm:value": "One size",
     "xdm:variantAttribute": true
   },
-  "xdm:weight": {
+  "schema:weight": {
     "xdm:value": {
       "@type": "https://ns.adobe.com/xdm/data/weight",
       "xdm:unit": "kg",
       "xdm:value": 175
     }
   },
-  "https://shop.example.com/pim/freeshipping": true,
+  "schema:isRelatedTo": [
+    {
+      "xdm:value": "https://ns.adobe.com/xdm/commerce/product-203766910"
+    },
+    {
+      "xdm:value": "https://ns.adobe.com/xdm/commerce/product-342224088"
+    }
+  ],
+  "https://shop.example.com/pim/freeshipping": {
+    "schema:name": "Product applies for free shipping",
+    "xdm:value": true
+  },
   "https://shop.example.com/pim/shippingweight": {
     "schema:name": "Shipping Weight",
     "xdm:value": {

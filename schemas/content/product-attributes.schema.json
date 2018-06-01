@@ -15,37 +15,134 @@
   "definitions": {
     "attributes": {
       "properties": {
-        "xdm:color": {
+        "schema:color": {
           "title": "Color",
-          "$ref": "#/definitions/attribute"
+          "$ref": "#/definitions/attribute",
+          "description": "The color of the product or varinat."
         },
         "xdm:size": {
           "title": "Size",
-          "$ref": "#/definitions/attribute"
+          "$ref": "#/definitions/attribute",
+          "description": "The size of the product or varinat."
         },
         "xdm:style": {
           "title": "Style",
-          "$ref": "#/definitions/attribute"
+          "$ref": "#/definitions/attribute",
+          "description": "The sytle description of the product or varinat."
         },
-        "xdm:weight": {
+        "xdm:type": {
+          "title": "Type",
+          "$ref": "#/definitions/attribute",
+          "description": "The type of the product or varinat."
+        },
+        "xdm:model": {
+          "title": "Model",
+          "$ref": "#/definitions/attribute",
+          "description": "The model of the product or varinat."
+        },
+        "xdm:features": {
+          "title": "Features",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/attribute"
+          },
+          "description": "Descriptive feature list of the product or varinat."
+        },
+        "xdm:productLine": {
+          "title": "Product Line",
+          "$ref": "#/definitions/attribute",
+          "description": "The product line of the product or varinat."
+        },
+        "schema:weight": {
           "title": "Weight",
-          "$ref": "#/definitions/attribute"
+          "$ref": "#/definitions/attribute",
+          "description": "The weight of the product or varinat."
         },
         "xdm:fabrication": {
-          "type": "string",
-          "$ref": "#/definitions/attribute"
+          "title": "Fabrication",
+          "$ref": "#/definitions/attribute",
+          "description": "The fabrication of the product or varinat."
         },
-        "xdm:dimensions": {
-          "title": "Dimensions",
-          "$ref": "#/definitions/attribute"
+        "schema:depth": {
+          "title": "Depth",
+          "$ref": "#/definitions/attribute",
+          "description": "The depth of the product or varinat."
         },
-        "xdm:brand": {
+        "schema:height": {
+          "title": "Height",
+          "$ref": "#/definitions/attribute",
+          "description": "The height of the product or varinat."
+        },
+        "schema:width": {
+          "title": "Width",
+          "$ref": "#/definitions/attribute",
+          "description": "The width of the product or varinat."
+        },
+        "schema:brand": {
           "title": "Brand name",
-          "$ref": "#/definitions/attribute"
+          "$ref": "#/definitions/attribute",
+          "description": "The brand of the product or varinat."
         },
-        "xdm:manufacturer": {
+        "xdm:department": {
+          "title": "Department name",
+          "$ref": "#/definitions/attribute",
+          "description": "The department name the product or varinat belongs to."
+        },
+        "schema:manufacturer": {
           "title": "Manufacturer name",
-          "$ref": "#/definitions/attribute"
+          "$ref": "#/definitions/attribute",
+          "description": "The manufacturer name of the product or varinat."
+        },
+        "schema:mpn": {
+          "title": "Manufacturer Part Number",
+          "$ref": "#/definitions/attribute",
+          "description": "The Manufacturer Part Number (MPN) of the product or varinat."
+        },
+        "xdm:shippingWeight": {
+          "title": "Shipping Weight",
+          "$ref": "#/definitions/attribute",
+          "description": "The shipping weight of the product or varinat."
+        },
+        "xdm:review": {
+          "title": "Customer Reviews",
+          "$ref": "#/definitions/attribute",
+          "description": "Customer Reviews related to the product or varinat."
+        },
+        "xdm:warranty": {
+          "title": "Warranty & Support",
+          "$ref": "#/definitions/attribute",
+          "description": "Warranty & Support information of the product or varinat."
+        },
+        "xdm:upc": {
+          "title": "UPC",
+          "$ref": "#/definitions/attribute",
+          "description": "Universal Product Code of the product or varinat."
+        },
+        "xdm:ean": {
+          "title": "EAN",
+          "$ref": "#/definitions/attribute",
+          "description": "International Article Number of the product or varinat."
+        },
+        "schema:isAccessoryOrSparePartFor": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/attribute"
+          },
+          "description": "A pointer to another product (or multiple products) for which this product is an accessory or spare part."
+        },
+        "schema:isRelatedTo": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/attribute"
+          },
+          "description": "A pointer to another, somehow related product (or multiple products)."
+        },
+        "schema:isSimilarTo": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/attribute"
+          },
+          "description": "A pointer to another, functionally similar product (or multiple products)."
         }
       },
       "patternProperties": {
@@ -55,41 +152,36 @@
       }
     },
     "attribute": {
-      "oneOf": [
-        { "type": "string" },
-        { "type": "number" },
-        { "type": "boolean" },
-        {
-          "type": "object",
-          "title": "Structured Product Attribute",
-          "properties": {
-            "schema:name": {
-              "title": "Name",
-              "type": "string",
-              "description": "The human-readable name of the attribute."
+      "type": "object",
+      "title": "Structured Product Attribute",
+      "properties": {
+        "schema:name": {
+          "title": "Name",
+          "type": "string",
+          "description": "The human-readable name of the attribute."
+        },
+        "xdm:value": {
+          "title": "Value",
+          "oneOf": [
+            {
+              "type": "string"
             },
-            "xdm:value": {
-              "title": "Value",
-              "oneOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "$ref": "https://ns.adobe.com/xdm/data/measure"
-                }
-              ],
-              "description": "The value of the product attribute."
+            {
+              "type": "boolean"
             },
-            "xdm:variantAttribute": {
-              "title": "Variant Attribute",
-              "type": "boolean",
-              "default": false,
-              "description":
-                "Whether this attribute is a defining variant attribute which is used to distinguish different product variants from each other."
+            {
+              "$ref": "https://ns.adobe.com/xdm/data/measure"
             }
-          }
+          ],
+          "description": "The value of the product attribute."
+        },
+        "xdm:variantAttribute": {
+          "title": "Variant Attribute",
+          "type": "boolean",
+          "default": false,
+          "description": "Whether this attribute is a defining variant attribute which is used to distinguish different product variants from each other."
         }
-      ]
+      }
     }
   },
   "allOf": [

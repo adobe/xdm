@@ -1,6 +1,6 @@
 {
   "meta:license": [
-    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
     "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
@@ -35,11 +35,6 @@
           "format": "date-time",
           "description": "The timestamp for when the segment assertion should nolonger be assumed to be valid and should either be ignored or revalidated."
         },
-        "xdm:value": {
-          "title": "Value",
-          "type": "boolean",
-          "description": "In the segment evaluation was the profile enrolled in the segment (true), specifically removed from (false) or neither (null or 'xdm:value' not present)."
-        },
         "xdm:status": {
           "title": "Status",
           "type": "string",
@@ -47,7 +42,7 @@
           "default": "realized",
           "enum": ["existing", "realized", "left"],
           "meta:enum": {
-            "existing": "Entity continues to we in the segment",
+            "existing": "Entity continues to be in the segment",
             "realized": "Entity is entering the segment",
             "left": "Entity is leaving the segment",
           }
@@ -56,3 +51,4 @@
     }
   }
 }
+

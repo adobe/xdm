@@ -54,6 +54,7 @@
             "$ref": "#/definitions/descriptor"
         }
     ],
+    "meta:status": "experimental",
     "examples": [
         {
             "@id": "https://example.com/descriptors/1",

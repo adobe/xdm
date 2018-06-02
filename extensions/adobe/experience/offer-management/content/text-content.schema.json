@@ -26,20 +26,23 @@
         },
         "xdm:data": {
           "type": "object",
-          "additionalProperties": {
-            "type": "object",
-            "properties": {
-              "xdm:text": {
-                "type": "string",
-                "title": "Text",
-                "description": "Offer content as a plain text"
-              }
-            },
-            "required": [
-              "xdm:text"
-            ],
-            "additionalProperties": false
-          }
+          "patternProperties": {
+            "^\\w\\w(-\\w\\w)?$": {
+              "type": "object",
+              "properties": {
+                "xdm:text": {
+                  "type": "string",
+                  "title": "Text",
+                  "description": "Offer content as a plain text"
+                }
+              },
+              "required": [
+                "xdm:text"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "additionalProperties": false
         }
       }
     }

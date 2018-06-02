@@ -65,8 +65,10 @@
         },
         "xdm:customMetadata": {
           "type": "object",
-          "additionalProperties": {
-            "type": "string"
+          "patternProperties": {
+            ".+": {
+              "type": "string"
+            }
           },
           "title": "Custom Properties",
           "description":

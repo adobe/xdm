@@ -23,6 +23,11 @@
       "$ref": "https://ns.adobe.com/xdm/context/identity",
       "description": "Adobe Analytics Cloud extension to End User IDs."
     },
+    "https://ns.adobe.com/experience/aacustomid": {
+      "title": "Adobe Analytics Cloud Custom End User IDs",
+      "$ref": "https://ns.adobe.com/xdm/context/identity",
+      "description": "An Adobe Analytics custom identifier passed in on a hit."
+    },
     "https://ns.adobe.com/experience/acid": {
       "title": "Adobe Campaign End User IDs",
       "$ref": "https://ns.adobe.com/xdm/context/identity",

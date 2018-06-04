@@ -1,6 +1,6 @@
 # Stabilization Candidates
 
-_Generated on **Mon Jun 04 2018 17:57:46 GMT+0000 (UTC)**_
+_Generated on **Mon Jun 04 2018 18:06:27 GMT+0000 (UTC)**_
 
 
 ### Unknown Status, needs immediate attention
@@ -166,7 +166,7 @@ _Generated on **Mon Jun 04 2018 17:57:46 GMT+0000 (UTC)**_
 |[schemas/data/installs](schemas/data/installs.schema.json)|stabilizing|11|5|[9958d84](https://github.com/adobe/xdm/commit/9958d8474380e928b240f988713cab4947f5ed07 "Fixed a few issues with our metrics") [cc51bc3](https://github.com/adobe/xdm/commit/cc51bc35b5fbf4f28e7283219027d9b3f3027d71 "updating schemas for 0.91 to stabilizing status")|
 |[schemas/data/launches](schemas/data/launches.schema.json)|stabilizing|11|5|[9958d84](https://github.com/adobe/xdm/commit/9958d8474380e928b240f988713cab4947f5ed07 "Fixed a few issues with our metrics") [cc51bc3](https://github.com/adobe/xdm/commit/cc51bc35b5fbf4f28e7283219027d9b3f3027d71 "updating schemas for 0.91 to stabilizing status")|
 |[schemas/data/linkclicks](schemas/data/linkclicks.schema.json)|stabilizing|11|5|[9958d84](https://github.com/adobe/xdm/commit/9958d8474380e928b240f988713cab4947f5ed07 "Fixed a few issues with our metrics") [cc51bc3](https://github.com/adobe/xdm/commit/cc51bc35b5fbf4f28e7283219027d9b3f3027d71 "updating schemas for 0.91 to stabilizing status")|
-|[schemas/data/measure](schemas/data/measure.schema.json)|stabilizing|**58**|**58**|[3d5ce83](https://github.com/adobe/xdm/commit/3d5ce83ae130e083fe721590fa6187aabff5171e "Update measure.schema.json")|
+|[schemas/data/measure](schemas/data/measure.schema.json)|stabilizing|**59**|**59**|[3d5ce83](https://github.com/adobe/xdm/commit/3d5ce83ae130e083fe721590fa6187aabff5171e "Update measure.schema.json")|
 |[schemas/data/measuredmuted](schemas/data/measuredmuted.schema.json)|stabilizing|11|5|[9958d84](https://github.com/adobe/xdm/commit/9958d8474380e928b240f988713cab4947f5ed07 "Fixed a few issues with our metrics") [cc51bc3](https://github.com/adobe/xdm/commit/cc51bc35b5fbf4f28e7283219027d9b3f3027d71 "updating schemas for 0.91 to stabilizing status")|
 |[schemas/data/measuredwindowinactive](schemas/data/measuredwindowinactive.schema.json)|stabilizing|11|5|[9958d84](https://github.com/adobe/xdm/commit/9958d8474380e928b240f988713cab4947f5ed07 "Fixed a few issues with our metrics") [cc51bc3](https://github.com/adobe/xdm/commit/cc51bc35b5fbf4f28e7283219027d9b3f3027d71 "updating schemas for 0.91 to stabilizing status")|
 |[schemas/data/metricdefinition](schemas/data/metricdefinition.schema.json)|stabilizing|11|5|[54a6fd3](https://github.com/adobe/xdm/commit/54a6fd3961dbcc7e26dca3e9dc7790cabd47536e "Allow `xdm:unit` to be `null` for counts") [cc51bc3](https://github.com/adobe/xdm/commit/cc51bc35b5fbf4f28e7283219027d9b3f3027d71 "updating schemas for 0.91 to stabilizing status")|

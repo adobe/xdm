@@ -50,6 +50,7 @@ Additionally, this schema can include a property that describes the data source 
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
+| [https://ns.adobe.com/experience/aacustomid](#https//ns.adobe.com/experience/aacustomid) | Identity | Optional | End User IDs (this schema) |
 | [https://ns.adobe.com/experience/aaid](#https//ns.adobe.com/experience/aaid) | Identity | Optional | End User IDs (this schema) |
 | [https://ns.adobe.com/experience/acid](#https//ns.adobe.com/experience/acid) | Identity | Optional | End User IDs (this schema) |
 | [https://ns.adobe.com/experience/adcloud](#https//ns.adobe.com/experience/adcloud) | Identity | Optional | End User IDs (this schema) |
@@ -57,6 +58,25 @@ Additionally, this schema can include a property that describes the data source 
 | [https://ns.adobe.com/experience/tntid](#https//ns.adobe.com/experience/tntid) | Identity | Optional | End User IDs (this schema) |
 | `.+//.+` | reference | Pattern | End User IDs (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
+
+## https://ns.adobe.com/experience/aacustomid
+### Adobe Analytics Cloud Custom End User IDs
+
+An Adobe Analytics custom identifier passed in on a hit.
+
+`https://ns.adobe.com/experience/aacustomid`
+* is optional
+* type: Identity
+* defined in this schema
+
+### https://ns.adobe.com/experience/aacustomid Type
+
+
+* [Identity](identity.schema.md) – `https://ns.adobe.com/xdm/context/identity`
+
+
+
+
 
 ## https://ns.adobe.com/experience/aaid
 ### Adobe Analytics Cloud End User IDs

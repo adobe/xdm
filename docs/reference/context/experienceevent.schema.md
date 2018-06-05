@@ -33,126 +33,6 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
 
 ```json
 {
-  "@id": "https://data.adobe.io/experienceid-123456",
-  "xdm:dataSource": {
-    "@id": "https://data.adobe.io/datasources/datasource-123",
-    "xdm:code": "DataSourceIntegrationCode-123"
-  },
-  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
-  "xdm:endUserIDs": {
-    "https://ns.adobe.com/experience/mcid": {
-      "@id": "https://data.adobe.io/entities/identity/92312748749128",
-      "xdm:namespace": {
-        "xdm:code": "ECID"
-      }
-    },
-    "https://ns.adobe.com/experience/aaid": {
-      "@id": "https://data.adobe.io/entities/identity/2394509340-30453470347",
-      "xdm:namespace": {
-        "xdm:code": "AVID"
-      }
-    },
-    "https://ns.adobe.com/experience/tntid": {
-      "@id": "https://data.adobe.io/entities/identity/1233ce17-20e0-4a2c-8198-2a77fd60cf4d",
-      "xdm:namespace": {
-        "xdm:code": "tnt0051"
-      }
-    }
-  },
-  "xdm:channel": {
-    "@id": "https://ns.adobe.com/xdm/channels/apns",
-    "@type": "https://ns.adobe.com/xdm/channel-types/mobile"
-  },
-  "xdm:environment": {
-    "xdm:type": "browser",
-    "xdm:browserDetails": {
-      "xdm:name": "Chrome",
-      "xdm:version": "63.0.3239",
-      "xdm:acceptLanguage": "en",
-      "xdm:cookiesEnabled": true,
-      "xdm:javaScriptEnabled": true,
-      "xdm:javaScriptVersion": "1.8.5",
-      "xdm:javaEnabled": true,
-      "xdm:javaVersion": "Java SE 8",
-      "xdm:viewportHeight": 900,
-      "xdm:viewportWidth": 1680
-    },
-    "xdm:operatingSystem": "MAC OS",
-    "xdm:operatingSystemVersion": "10.13",
-    "xdm:connectionType": "cable"
-  },
-  "xdm:productListItems": [
-    {
-      "xdm:SKU": "1002352692",
-      "xdm:lineItemId": "12345678",
-      "xdm:name": "24-Watt 8-Light Chrome Integrated LED Bath Light",
-      "xdm:currencyCode": "USD",
-      "xdm:quantity": 1,
-      "xdm:priceTotal": 159
-    }
-  ],
-  "xdm:commerce": {
-    "xdm:order": {
-      "xdm:purchaseID": "a8g784hjq1mnp3",
-      "xdm:purchaseOrderNumber": "123456",
-      "xdm:payments": [
-        {
-          "xdm:transactionID": "transactid-a111",
-          "xdm:paymentAmount": 59,
-          "xdm:paymentType": "credit_card",
-          "xdm:currencyCode": "USD"
-        },
-        {
-          "xdm:transactionId": "transactid-a222",
-          "xdm:paymentAmount": 100,
-          "xdm:paymentType": "gift_card",
-          "xdm:currencyCode": "USD"
-        }
-      ],
-      "xdm:currencyCode": "USD",
-      "xdm:priceTotal": 159
-    },
-    "xdm:purchases": {
-      "xdm:value": 1
-    }
-  },
-  "xdm:placeContext": {
-    "xdm:localTime": "2017-09-26T15:52:25+13:00",
-    "xdm:geo": {
-      "@id": "https://data.adobe.io/entities/geo/tokyo",
-      "xdm:countryCode": "JP",
-      "xdm:stateProvince": "JP-13",
-      "xdm:city": "Tōkyō",
-      "xdm:postalCode": "141-0032",
-      "schema:latitude": 35.6185,
-      "schema:longitude": 139.73237
-    }
-  },
-  "xdm:web": {
-    "xdm:webPageDetails": {
-      "xdm:siteSection": "Shopping Cart",
-      "xdm:server": "example.com",
-      "xdm:name": "Purchase Confirmation",
-      "xdm:URL": "https://www.example.com/orderConf",
-      "xdm:errorPage": false,
-      "xdm:homePage": false,
-      "xdm:pageViews": {
-        "xdm:value": 1
-      }
-    },
-    "xdm:webReferrer": {
-      "xdm:URL": "https://www.example.com/checkout",
-      "xdm:referrerType": "internal"
-    }
-  },
-  "xdm:marketing": {
-    "xdm:trackingCode": "marketingcampaign111"
-  }
-}
-```
-
-```json
-{
   "@id": "https://data.adobe.io/experienceid-23456782",
   "xdm:dataSource": {
     "@id": "https://data.adobe.io/datasources/datasource-123",
@@ -388,6 +268,126 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
     "xdm:firstQuartiles": {
       "xdm:value": 1
     }
+  }
+}
+```
+
+```json
+{
+  "@id": "https://data.adobe.io/experienceid-123456",
+  "xdm:dataSource": {
+    "@id": "https://data.adobe.io/datasources/datasource-123",
+    "xdm:code": "DataSourceIntegrationCode-123"
+  },
+  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+  "xdm:endUserIDs": {
+    "https://ns.adobe.com/experience/mcid": {
+      "@id": "https://data.adobe.io/entities/identity/92312748749128",
+      "xdm:namespace": {
+        "xdm:code": "ECID"
+      }
+    },
+    "https://ns.adobe.com/experience/aaid": {
+      "@id": "https://data.adobe.io/entities/identity/2394509340-30453470347",
+      "xdm:namespace": {
+        "xdm:code": "AVID"
+      }
+    },
+    "https://ns.adobe.com/experience/tntid": {
+      "@id": "https://data.adobe.io/entities/identity/1233ce17-20e0-4a2c-8198-2a77fd60cf4d",
+      "xdm:namespace": {
+        "xdm:code": "tnt0051"
+      }
+    }
+  },
+  "xdm:channel": {
+    "@id": "https://ns.adobe.com/xdm/channels/apns",
+    "@type": "https://ns.adobe.com/xdm/channel-types/mobile"
+  },
+  "xdm:environment": {
+    "xdm:type": "browser",
+    "xdm:browserDetails": {
+      "xdm:name": "Chrome",
+      "xdm:version": "63.0.3239",
+      "xdm:acceptLanguage": "en",
+      "xdm:cookiesEnabled": true,
+      "xdm:javaScriptEnabled": true,
+      "xdm:javaScriptVersion": "1.8.5",
+      "xdm:javaEnabled": true,
+      "xdm:javaVersion": "Java SE 8",
+      "xdm:viewportHeight": 900,
+      "xdm:viewportWidth": 1680
+    },
+    "xdm:operatingSystem": "MAC OS",
+    "xdm:operatingSystemVersion": "10.13",
+    "xdm:connectionType": "cable"
+  },
+  "xdm:productListItems": [
+    {
+      "xdm:SKU": "1002352692",
+      "xdm:lineItemId": "12345678",
+      "xdm:name": "24-Watt 8-Light Chrome Integrated LED Bath Light",
+      "xdm:currencyCode": "USD",
+      "xdm:quantity": 1,
+      "xdm:priceTotal": 159
+    }
+  ],
+  "xdm:commerce": {
+    "xdm:order": {
+      "xdm:purchaseID": "a8g784hjq1mnp3",
+      "xdm:purchaseOrderNumber": "123456",
+      "xdm:payments": [
+        {
+          "xdm:transactionID": "transactid-a111",
+          "xdm:paymentAmount": 59,
+          "xdm:paymentType": "credit_card",
+          "xdm:currencyCode": "USD"
+        },
+        {
+          "xdm:transactionId": "transactid-a222",
+          "xdm:paymentAmount": 100,
+          "xdm:paymentType": "gift_card",
+          "xdm:currencyCode": "USD"
+        }
+      ],
+      "xdm:currencyCode": "USD",
+      "xdm:priceTotal": 159
+    },
+    "xdm:purchases": {
+      "xdm:value": 1
+    }
+  },
+  "xdm:placeContext": {
+    "xdm:localTime": "2017-09-26T15:52:25+13:00",
+    "xdm:geo": {
+      "@id": "https://data.adobe.io/entities/geo/tokyo",
+      "xdm:countryCode": "JP",
+      "xdm:stateProvince": "JP-13",
+      "xdm:city": "Tōkyō",
+      "xdm:postalCode": "141-0032",
+      "schema:latitude": 35.6185,
+      "schema:longitude": 139.73237
+    }
+  },
+  "xdm:web": {
+    "xdm:webPageDetails": {
+      "xdm:siteSection": "Shopping Cart",
+      "xdm:server": "example.com",
+      "xdm:name": "Purchase Confirmation",
+      "xdm:URL": "https://www.example.com/orderConf",
+      "xdm:errorPage": false,
+      "xdm:homePage": false,
+      "xdm:pageViews": {
+        "xdm:value": 1
+      }
+    },
+    "xdm:webReferrer": {
+      "xdm:URL": "https://www.example.com/checkout",
+      "xdm:referrerType": "internal"
+    }
+  },
+  "xdm:marketing": {
+    "xdm:trackingCode": "marketingcampaign111"
   }
 }
 ```

@@ -36,7 +36,7 @@
           "type": "object",
           "properties": {
             "@type": {
-              "ref": "#/definitions/content-type"
+              "$ref": "#/definitions/content-type"
             }
           },
           "required": ["@type", "xdm:data"]

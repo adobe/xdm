@@ -26,30 +26,35 @@
         },
         "xdm:data": {
           "type": "object",
-          "additionalProperties": {
-            "type": "object",
-            "properties": {
-              "xdm:imageUrl": {
-                "type": "string",
-                "format": "uri",
-                "title": "Image URL",
-                "description": "Image representing the offer. Access to the image may be restricted and clients should not use this URL in to deliver the content publicly."
+          "patternProperties": {
+            "^\\w\\w(-\\w\\w)?$": {
+              "type": "object",
+              "properties": {
+                "xdm:imageUrl": {
+                  "type": "string",
+                  "format": "uri",
+                  "title": "Image URL",
+                  "description": "Image representing the offer. Access to the image may be restricted and clients should not use this URL in to deliver the content publicly."
+                },
+                "xdm:imageName": {
+                  "type": "string",
+                  "title": "Image Name",
+                  "description": "Image name"
+                },
+                "xdm:redirectUrl": {
+                  "type": "string",
+                  "format": "uri",
+                  "title": "Redirect URL",
+                  "description": "URL to navigate if the image is clicked"
+                }
               },
-              "xdm:imageName": {
-                "type": "string",
-                "title": "Image Name",
-                "description": "Image name"
-              },
-              "xdm:redirectUrl": {
-                "type": "string",
-                "format": "uri",
-                "title": "Redirect URL",
-                "description": "URL to navigate if the image is clicked"
-              }
-            },
-            "required": ["xdm:imageUrl"],
-            "additionalProperties": false
-          }
+              "required": [
+                "xdm:imageUrl"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "additionalProperties": false
         }
       }
     }

@@ -1,33 +1,52 @@
 {
-  "nodeType": "queryInvoke",
-  "queryParams": [
+  "nodeType": "select",
+  "variables": [
     {
-      "queryParamName": "property",
-      "queryParamValue": {
+      "nodeType": "varDecl",
+      "varName": "o",
+      "from": {
+        "nodeType": "literal",
+        "literalType": "XDMObject",
+        "value": "https://ns.adobe.com/experience/offer-management/offer"
+      },
+      "where": {
         "nodeType": "fnApply",
-        "fnName": "or",
-        "params" : [
+        "fnName": "and",
+        "params": [
           {
             "nodeType": "fnApply",
-            "fnName": "equals",
+            "fnName": "some",
+            "varName": "_",
+            "range": {
+              "nodeType": "literal",
+              "literalType": "List",
+              "value": [
+                "uri:com:example:placement-1001",
+                "uri:com:example:placement-1002"
+              ]
+            },
             "params": [
               {
-                "nodeType": "fieldLookup",
-                "fieldName": "xdm:placement",
-                "object" : {
-                  "nodeType": "fieldLookup",
-                  "fieldName": "xdm:representation",
-                  "object": {
-                    "nodeType": "literal",
-                    "literalType": "XDMObject",
-                    "value": "https://ns.adobe.com/experience/offer-management/offer"
+                "nodeType": "fnApply",
+                "fnName": "in",
+                "params": [
+                  {
+                    "nodeType": "varRef",
+                    "varName": "_"
+                  },
+                  {
+                    "nodeType": "fieldLookup",
+                    "fieldName": "xdm:placement",
+                    "object": {
+                      "nodeType": "fieldLookup",
+                      "fieldName": "xdm:representations",
+                      "object": {
+                        "nodeType": "varRef",
+                        "varName": "o"
+                      }
+                    }
                   }
-                }
-              },
-              {
-                "nodeType": "literal",
-                "literalType": "String",
-                "value": "uri:com:example:placement-01001"
+                ]
               }
             ]
           },
@@ -37,21 +56,16 @@
             "params": [
               {
                 "nodeType": "fieldLookup",
-                "fieldName": "xdm:placement",
-                "object" : {
-                  "nodeType": "fieldLookup",
-                  "fieldName": "xdm:representation",
-                  "object": {
-                    "nodeType": "literal",
-                    "literalType": "XDMObject",
-                    "value": "https://ns.adobe.com/experience/offer-management/offer"
-                  }
+                "fieldName": "xdm:status",
+                "object": {
+                  "nodeType": "varRef",
+                  "varName": "o"
                 }
               },
               {
                 "nodeType": "literal",
                 "literalType": "String",
-                "value": "uri:com:example:placement-01002"
+                "value": "approved"
               }
             ]
           }

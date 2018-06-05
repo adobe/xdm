@@ -11,7 +11,7 @@
       },
       "where": {
         "nodeType": "fnApply",
-        "fnName": "all",
+        "fnName": "some",
         "varName": "_",
         "range": {
           "nodeType": "literal",

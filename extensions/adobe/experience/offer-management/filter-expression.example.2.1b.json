@@ -1,0 +1,33 @@
+{
+  "nodeType": "select",
+  "variables": [
+    {
+      "nodeType": "varDecl",
+      "varName": "o",
+      "from": {
+        "nodeType": "literal",
+        "literalType": "XDMObject",
+        "value": "https://ns.adobe.com/experience/offer-management/offer"
+      },
+      "where": {
+        "nodeType": "fnApply",
+        "fnName": "in",
+        "params": [
+          {
+            "nodeType": "literal",
+            "literalType": "String",
+            "value": "uri:com:example:tag-0001"
+          },
+          {
+            "nodeType": "fieldLookup",
+            "fieldName": "xdm:tags",
+            "object": {
+              "nodeType": "varRef",
+              "varName": "o"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

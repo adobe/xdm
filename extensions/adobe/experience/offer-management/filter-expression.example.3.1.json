@@ -67,13 +67,13 @@
             "params": [
               {
                 "nodeType": "fieldLookup",
-                "fieldName": "xdm:placecontext",
+                "fieldName": "xdm:city",
                 "object": {
                   "nodeType": "fieldLookup",
                   "fieldName": "xdm:geo",
                   "object": {
                     "nodeType": "fieldLookup",
-                    "fieldName": "xdm:city",
+                    "fieldName": "xdm:placecontext",
                     "object": {
                       "nodeType": "varRef",
                       "varName": "X1"

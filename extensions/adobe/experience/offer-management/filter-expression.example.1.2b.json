@@ -11,14 +11,14 @@
       },
       "where": {
         "nodeType": "fnApply",
-        "fnName": "all",
+        "fnName": "some",
         "varName": "_",
         "range": {
           "nodeType": "literal",
           "literalType": "List",
           "value": [
-            "uri:com:example:tag-0001",
-            "uri:com:example:tag-0002"
+            "uri:com:example:placement-1001",
+            "uri:com:example:placement-1002"
           ]
         },
         "params": [
@@ -32,10 +32,14 @@
               },
               {
                 "nodeType": "fieldLookup",
-                "fieldName": "xdm:tags",
+                "fieldName": "xdm:placement",
                 "object": {
-                  "nodeType": "varRef",
-                  "varName": "o"
+                  "nodeType": "fieldLookup",
+                  "fieldName": "xdm:representations",
+                  "object": {
+                    "nodeType": "varRef",
+                    "varName": "o"
+                  }
                 }
               }
             ]

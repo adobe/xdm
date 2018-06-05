@@ -23,8 +23,8 @@
           "type": "string",
           "description": "The version of the segment definition used in this segment assertion. Version can be omitted in audience lists when all memberships versions are the same."
         },
-        "xdm:timestamp": {
-          "title": "Timestamp",
+        "xdm:lastQualificationTime": {
+          "title": "Last Qualification Time",
           "type": "string",
           "format": "date-time",
           "description": "The timestamp when the assertion of segment membership was made."

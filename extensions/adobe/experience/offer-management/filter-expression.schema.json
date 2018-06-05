@@ -27,28 +27,42 @@
         "queryInvoke"
       ],
       "meta:enum": {
-        "fnApply": "Apply an n-ary function to the evaluation context",
+        "fnApply": "Apply a function to the evaluation context. The valency or arity of the function varies with the function-type. Functions can be boolean-valued or produce scalar values and vectors.",
         "literal": "Prodcue a value from a literal",
         "fieldLookup": "Produce a value from an object by accessing one of its fields",
-        "select": "Produce a list of tuples from a list of inputs by evaluating an expression for every input.",
-        "varDecl": "Produce a list inputs from a list of inputs by applying an optional projection and filter to each input. The value is made available for reference via a variable name.",
-        "varRef": "Produce a list of values by referencing a variable name that denotes a tuple element previously evaluated.",
+        "select": "Produce a list from a list of inputs by evaluating a projection and a selection expression for every element of the input list.",
+        "varDecl": "Sub-structure of the select expression that binds a variable to the elements matching a projection and a selection expression. The value is made available for reference via a variable name to other sub-select expressions",
+        "varRef": "Iterate over a list of values by referencing a variable name that denotes a list element previously qualified (evaluated in preceeding variable varDecl).",
         "queryInvoke": "Invoke a query with parameters."
       }
     },
     "function-type": {
       "type": "string",
       "title": "Function Identifier",
-      "description": "Function Identifier: OR, AND, EQUALS",
+      "description": "Function Identifier: OR, AND, EQUALS, NOT EQUALS, IN, NOT IN, GREATER THAN, LESS THAN",
       "enum": [
         "and",
         "or",
-        "equals"
+        "all",
+        "some",
+        "equals",
+        "notEquals",
+        "in",
+        "notIn",
+        "greaterThan",
+        "lessThan"
       ],
       "meta:enum": {
         "and": "An n-ary AND function. Map a list of boolean values to a single boolean value. Produces 'true' if and only if all input values are 'true', otherwise produces 'false'.",
         "or": "An n-ary OR function. Map a list of boolean values to a single boolean value. Produces 'true' if and only if any of the input values is 'true', otherwise produces 'false'.",
-        "equals": "Produce a boolean value from two input values by comparing them, the second value is coerced to the type of the first value before applying the equals operator."
+        "all": "The universal quantifier of first order logic. Produce a boolean value from a list of values by applying an n-ary function to each item and returning true if for all of the items the n-ary function evaluates to true",
+        "some": "The existential quantifier of first order logic. Produce a boolean value from a list of  values by applying an n-ary function to each item and returning true if for some of the items the na-ray function evaluates to true",
+        "equals": "Produce a boolean value from two input values by comparing them and returning true if they are not equal and false otherwise. The second value is coerced to the type of the first value before applying the equals operator.",
+        "notEquals": "Produce a boolean value from two input values by comparing them and returning true if they are not equal and false otherwise. The second value is coerced to the type of the first value before applying the equals operator.",
+        "in": "Produce a boolean value from a scalar and a vector input value. If the scalar is eqaul to one or more of the vector values the evaluation results in the boolean value 'true' and 'false' otherwise. The second value is coerced to a list type of the first value before applying the equality check operator.",
+        "notIn": "Produce a boolean value from a scalar and a vector input value. If the scalar is eqaul to none the vector values the evaluation results in the boolean value 'true' and 'false' otherwise. The second value is coerced to a list type of the first value before applying the equality check operator.",
+        "greaterThan": "Produce a boolean value from two input values by comparing them and returning true if the first one is greater than the second and false otherwise. The second value is coerced to the type of the first value before applying the operator.",
+        "lessThan": "Produce a boolean value from two input values by comparing them and returning true if the first one is less than the second and false otherwise. The second value is coerced to the type of the first value before applying the operator."
       }
     },
     "literal-type": {
@@ -60,6 +74,7 @@
         "Number",
         "Integer",
         "Boolean",
+        "List",
         "XDMObject"
       ],
       "meta:enum": {
@@ -67,6 +82,7 @@
         "Number": "A number literal",
         "Integer": "An integer literal",
         "Boolean": "A boolean literal",
+        "List": "An array of literals",
         "XDMObject": "A sting denoting a reference of an XDM schema"
       }
     },
@@ -97,7 +113,28 @@
               "$ref": "#/definitions/function-content-or"
             },
             {
+              "$ref": "#/definitions/function-content-all"
+            },
+            {
+              "$ref": "#/definitions/function-content-some"
+            },
+            {
               "$ref": "#/definitions/function-content-equals"
+            },
+            {
+              "$ref": "#/definitions/function-content-not-equals"
+            },
+            {
+              "$ref": "#/definitions/function-content-in"
+            },
+            {
+              "$ref": "#/definitions/function-content-not-in"
+            },
+            {
+              "$ref": "#/definitions/function-content-greater-than"
+            },
+            {
+              "$ref": "#/definitions/function-content-less-than"
             }
           ]
        }
@@ -143,6 +180,80 @@
       },
       "additionalProperties": false
     },
+    "function-content-all": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "fnApply"
+        },
+        "fnName": {
+          "type": "string",
+          "const": "all"
+        },
+        "varName": {
+          "type": "string",
+          "pattern": "^[_A-Za-z0-9]+$"
+        },
+        "range" : {
+          "$ref": "#/definitions/quantifier-range-content",
+          "description": "The valence of the predicate is 1 for this all-quantifier and must reference excatly one variable whose domain is a list of values. The predicate evaluates to a boolean based on the boolean value of the parameter function applied to each of the range list values. If the function applied to every list element results in 'true' the overall predicate evaluates to 'true' otherwise it evaluates to false."
+        },
+        "params" : {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/node-content"
+          },
+          "minItems": 1,
+          "maxItems": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "function-content-some": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "fnApply"
+        },
+        "fnName": {
+          "type": "string",
+          "const": "some"
+        },
+        "varName": {
+          "type": "string",
+          "pattern": "^[_A-Za-z0-9]+$"
+        },
+        "range" : {
+          "$ref": "#/definitions/quantifier-range-content",
+          "description": "The valence of the predicate is 1 for this exist-quantifier and must reference excatly one variable whose domain is a list of values. The predicate evaluates to a boolean based on the boolean value of the parameter function applied to each of the range list values. . If the function applied to at least one list element results in 'true' the overall predicate evaluates to 'true' otherwise it evaluates to false."
+        },
+        "params" : {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/node-content"
+          },
+          "minItems": 1,
+          "maxItems": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "quantifier-range-content": {
+      "type": "object",
+      "title": "Predicate Range",
+      "description": "The predicate's variable range.",
+      "oneOf": [
+        {
+          "$ref": "#/definitions/field-lookup-content"
+        },
+        {
+          "$ref": "#/definitions/literal-list-content"
+        },
+        {
+          "$ref": "#/definitions/tree-node-reference-content"
+        }
+      ]
+    },
     "function-content-equals": {
       "properties": {
         "nodeType": {
@@ -152,6 +263,111 @@
         "fnName": {
           "type": "string",
           "const": "equals"
+        },
+        "params" : {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/node-content"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      },
+      "additionalProperties": false
+    },
+    "function-content-not-equals": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "fnApply"
+        },
+        "fnName": {
+          "type": "string",
+          "const": "notEquals"
+        },
+        "params" : {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/node-content"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      },
+      "additionalProperties": false
+    },
+    "function-content-in": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "fnApply"
+        },
+        "fnName": {
+          "type": "string",
+          "const": "in"
+        },
+        "params" : {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/node-content"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      },
+      "additionalProperties": false
+    },
+    "function-content-not-in": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "fnApply"
+        },
+        "fnName": {
+          "type": "string",
+          "const": "notIn"
+        },
+        "params" : {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/node-content"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      },
+      "additionalProperties": false
+    },
+    "function-content-greater-than": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "fnApply"
+        },
+        "fnName": {
+          "type": "string",
+          "const": "greaterThan"
+        },
+        "params" : {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/node-content"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      },
+      "additionalProperties": false
+    },
+    "function-content-less-than": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "fnApply"
+        },
+        "fnName": {
+          "type": "string",
+          "const": "lessThan"
         },
         "params" : {
           "type": "array",
@@ -221,6 +437,9 @@
             },
             {
               "$ref": "#/definitions/literal-boolean-content"
+            },
+            {
+              "$ref": "#/definitions/literal-list-content"
             },
             {
               "$ref": "#/definitions/literal-xdmobject-content"
@@ -293,6 +512,22 @@
       },
       "additionalProperties": false
     },
+    "literal-list-content": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "literal"
+        },
+        "literalType": {
+          "type": "string",
+          "const": "List"
+        },
+        "value" : {
+          "type": "array"
+        }
+      },
+      "additionalProperties": false
+    },
     "literal-xdmobject-content": {
       "properties": {
         "nodeType": {
@@ -313,8 +548,8 @@
 
     "select-expression-content": {
       "type": "object",
-      "title": "List filter",
-      "description": "Produce a list of tuples from a list of input values by evaluating each tuple element (variable) expression in order of declaration.",
+      "title": "Tree evaluation",
+      "description": "Produce a list of elements from a list of (tree-structured) input values by evaluating each clause in order of declaration. All clauses must evaluate to true for the element referenced in the first clause to qualify",
       "allOf": [
         {
           "type": "object",
@@ -326,7 +561,7 @@
             "variables": {
               "type": "array",
               "items": {
-                "$ref": "#/definitions/tuple-element-content"
+                "$ref": "#/definitions/tree-node-iterator-content"
               },
               "minItems": 1
             }
@@ -335,9 +570,9 @@
         }
       ]
     },
-    "tuple-element-content": {
+    "tree-node-iterator-content": {
       "type": "object",
-      "title": "Tuple element definition",
+      "title": "Tree node iterator",
       "description": "Produce a list of output values from a list of inputs by first applying an optional projection (from expression) and then a filter (where expression) to each value from the list of inputs. The list of values is bound to a variable name.",
       "allOf": [
         {
@@ -347,6 +582,10 @@
               "type": "string",
               "const": "varDecl"
             },
+            "varName": {
+              "type": "string",
+              "pattern": "^[_A-Za-z0-9]+$"
+            },
             "from": {
               "$ref": "#/definitions/node-content"
             },
@@ -354,14 +593,14 @@
               "$ref": "#/definitions/node-content"
             }
           },
-          "required": ["nodeType", "from", "where"]
+          "required": ["nodeType", "varName", "from", "where"]
         }
       ]
     },
-    "tuple-element-reference-content": {
+    "tree-node-reference-content": {
       "type": "object",
       "title": "Reference to a value created in the context of a select expression evaluation",
-      "description": "Produce a list of values by referencing a variable name that denotes a tuple element previously evaluated.",
+      "description": "Produce a list of values by referencing a variable name that denotes a tree node element previously evaluated.",
       "allOf": [
         {
           "type": "object",
@@ -371,7 +610,8 @@
               "const": "varRef"
             },
             "varName": {
-              "type": "string"
+              "type": "string",
+              "pattern": "^[_A-Za-z0-9]+$"
             }
           },
           "required": ["nodeType", "varName"]
@@ -443,10 +683,10 @@
               "$ref": "#/definitions/select-expression-content"
             },
             {
-              "$ref": "#/definitions/tuple-element-content"
+              "$ref": "#/definitions/tree-node-iterator-content"
             },
             {
-              "$ref": "#/definitions/tuple-element-reference-content"
+              "$ref": "#/definitions/tree-node-reference-content"
             },
             {
               "$ref": "#/definitions/query-invoke-content"

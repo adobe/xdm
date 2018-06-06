@@ -4,23 +4,48 @@ Examples for filters using placement as the constraint
 Example 1.1
 ---
 All offers that have at least one representation for offer placement "uri:com:example:placement-1001"
-Note the reference to the exists-quantifier's range (domain) variable. The reference `_` is implicitly available in the predicate and represents one element from the list that is iterated over
-`select o from xdm:https://ns.adobe.com/experience/offer-management/offer where some (o.xdm:representation -> _.xdm:placement = "uri:com:example:placement-1001")`
+Note the reference to the exists-quantifier's range (domain) variable. The reference `_` is implicitly available in the predicate and represents one element from the list that is iterated over.
 
-Also note that the example 1.1 could be written by using the in operator because there is only one placement that is being tested and the quantifier is `exists`
-`select o from xdm:https://ns.adobe.com/experience/offer-management/offer where "uri:com:example:placement-1001" in o.xdm:representation.xdm:placement`
+```
+select o from "xdm:https://ns.adobe.com/experience/offer-management/offer" where 
+  some (o.xdm:representations -> 
+    _.xdm:placement = "uri:com:example:placement-1001"
+  )
+```
+
+Also note that the example 1.1 could be written by using the `in` operator because the quantifier is existiential quantifier (`some`).
+Here, a property path is shown whose steps include an intermediate array property. It is intermediate because in the path additional properties follow. This path evaluates to a list of placement values. 
+For intermediate array properties, especially for paths that contain multiple array steps, the next element returned is equal to the depth-first traversal of the node tree where the nodes represent the values of the JSON object.
+
+```
+select o from "xdm:https://ns.adobe.com/experience/offer-management/offer" where 
+  "uri:com:example:placement-1001" in o.xdm:representation[*].xdm:placement
+```
 
 
 Example 1.2
 ---
 All offers that have at least one representation referencing an offer placement from one of the list: "uri:com:example:placement-1001", "uri:com:example:placement-1002"
-Note that here, compared to example 1.1 the domain of the exists-quantifier (the `some` expression) is the list of literals, one of them must be in one of the referenced placements for the offer to match
-`select o from xdm:https://ns.adobe.com/experience/offer-management/offer where some (["uri:com:example:placement-1001", "uri:com:example:placement-1002"] ->  _ in o.xdm:representations.xdm:placement)`
+Note that here, compared to example 1.1 the domain of the exists-quantifier (the `some` expression) is the list of literals, one of them must be in one of the referenced placements for the offer to match.
+
+```
+select o from "xdm:https://ns.adobe.com/experience/offer-management/offer" where 
+  some (["uri:com:example:placement-1001", "uri:com:example:placement-1002"] ->  
+    _ in o.xdm:representations[*].xdm:placement
+  )
+```
 
 Example 1.3
 ---
-All offers that have at least one representation referencing an offer placement from one of the list: "uri:com:example:placement-1001", "uri:com:example:placement-1002" and have the status 'approved'
-`select o from xdm:https://ns.adobe.com/experience/offer-management/offer where some (["uri:com:example:placement-1001", "uri:com:example:placement-1002"] ->  _ in o.xdm:representations.xdm:placement) and o.status = "approved"`
+All offers that have at least one representation referencing an offer placement from one of the list: "uri:com:example:placement-1001", "uri:com:example:placement-1002" and have the status 'approved'.
+
+```
+select o from "xdm:https://ns.adobe.com/experience/offer-management/offer" where 
+  some (["uri:com:example:placement-1001", "uri:com:example:placement-1002"] ->  
+    _ in o.xdm:representations[*].xdm:placement
+  ) 
+  and o.status = "approved"
+```
 
 
 Examples for filters using tags as the constraint
@@ -30,17 +55,34 @@ Tags in offers are represented as an array of URIs. Each URI references a Tag by
 Example 2.1
 ---
 All offers that have at least the one tag "uri:com:example:tag-0001"
-Here, the in operator is used to check the containment of a single item in a list of items (tags)
-`select o from xdm:https://ns.adobe.com/experience/offer-management/offer where "uri:com:example:tag-1001" in o.xdm:tags)`
+Here, the in operator is used to check the containment of a single item in a list of items (tags).
+
+```
+select o from "xdm:https://ns.adobe.com/experience/offer-management/offer" where 
+  "uri:com:example:tag-1001" in o.xdm:tags
+```
 
 Example 2.2
 ---
 All offers that have at least one of the tags ["uri:com:example:tag-1001", "uri:com:example:tag-1002"]
 Conceptually, there is an iterator over the list of literals and the iteration breaks with the first element for which the predicate evaluates to `true`
-`select o from xdm:https://ns.adobe.com/experience/offer-management/offer where some (["uri:com:example:tag-1001", "uri:com:example:tag-1002"] ->  _ in o.xdm:tags)`
+
+```
+select o from "xdm:https://ns.adobe.com/experience/offer-management/offer" where 
+  some (["uri:com:example:tag-1001", "uri:com:example:tag-1002"] ->  
+    _ in o.xdm:tags
+  )
+```
 
 Also note that in this case, we could also evaluate the exists-quantifier by ranging over the offer's tag array and testing, one by one of those tags for containment in the list of literals provided:
-`select o from xdm:https://ns.adobe.com/experience/offer-management/offer where some (o.xdm:tags ->  _ in ["uri:com:example:tag-1001", "uri:com:example:tag-1002"])`
+
+```
+select o from "xdm:https://ns.adobe.com/experience/offer-management/offer" where 
+  some (o.xdm:tags ->  
+    _ in ["uri:com:example:tag-1001", "uri:com:example:tag-1002"]
+  )
+```
+
 This works because the not-empty-test for an intersection of two lists commutes.
 
 Example 2.3
@@ -54,20 +96,40 @@ As long as it has *all* the tags we are testing for, ie the literals are a sub-s
 Example 2.4
 ---
 All offers that have at least all of the tags ["uri:com:example:tag-1001", "uri:com:example:tag-1002"] and have the status 'approved'. This is a combination of Example 2.3 with an additional condition on the offer's status property.
-`select o from xdm:https://ns.adobe.com/experience/offer-management/offer where all (["uri:com:example:tag-1001", "uri:com:example:tag-1002"] ->  _ in o.xdm:tags) and o.status = "approved"`
+
+```
+select o from "xdm:https://ns.adobe.com/experience/offer-management/offer" where 
+  all (["uri:com:example:tag-1001", "uri:com:example:tag-1002"] ->  
+    _ in o.xdm:tags
+  ) 
+  and o.status = "approved"
+```
 
 Example 2.5
 ---
 All offers that have (at least) all of the tags ["uri:com:example:tag-1001", "uri:com:example:tag-1002"] and at least one representation for offer placement "uri:com:example:placement-1001" and have the status 'approved'. 
 This is a combination of Example 2.4 and 1.1.
-`select o from xdm:https://ns.adobe.com/experience/offer-management/offer where all (["uri:com:example:tag-1001", "uri:com:example:tag-1002"] ->  _ in o.xdm:tags) and some (o.xdm:representation -> _.xdm:placement = "uri:com:example:placement-1001") and o.status = "approved"`
+
+```
+select o from "xdm:https://ns.adobe.com/experience/offer-management/offer" where 
+  all (["uri:com:example:tag-1001", "uri:com:example:tag-1002"] ->  
+    _ in o.xdm:tags
+  ) 
+  and some (o.xdm:representations -> 
+    _.xdm:placement = "uri:com:example:placement-1001"
+  ) 
+  and o.status = "approved"
+```
+
 Note that the scope of the two `_` references is limited to the predicate of the quantifier, but the scope of the variable `o` is ranging across the two quantifiers.
 
 Example 2.6
 ---
 All offers from a list of directly selected offers that have at least one representation for offer placement "uri:com:example:placement-1001" and have the status 'approved'. 
-This is a variation of 2.5 except that the list of offers is not constraint by a list of tags and instead a list of offer `@id`s is used 
-`select o from xdm:https://ns.adobe.com/experience/offer-management/offer where 
+This is a variation of 2.5 except that the list of offers is not constraint by a list of tags and instead a list of offer `@id` values is used. 
+
+```
+select o from "xdm:https://ns.adobe.com/experience/offer-management/offer" where 
   o.xdm:@id in [
     "uri:com:example:offer-10001", 
     "uri:com:example:offer-10002",
@@ -76,20 +138,25 @@ This is a variation of 2.5 except that the list of offers is not constraint by a
     "uri:com:example:offer-10013",
     "uri:com:example:offer-10005",
     "uri:com:example:offer-10022"] 
-  and some 
-    (o.xdm:representation -> _.xdm:placement = "uri:com:example:placement-1001") 
-  and o.status = "approved"`
+  and some (o.xdm:representation -> 
+    _.xdm:placement = "uri:com:example:placement-1001"
+  ) 
+  and o.status = "approved"
+```
 
 Examples for profile expressions
 ===
 
 Example 3.1
 ---
-All profiles who's person record has a first name 'Dennis' or has a last name 'Kehrig' or has at least one experience event that happened in Tokyo
-`select p from xdm:https://ns.adobe.com/xdm/context/profile,
-        x from p.xEvent where
-          p.xdm:person.xdm:firstName = "Dennis"
-        or
-          p.xdm:person.xdm:lastName = "Kehrig"
-        or
-          x.xdm:placecontext.xdm:geo.xdm:city = "Tōkyō"
+All profiles who's person record has a first name 'Dennis' or has a last name 'Kehrig' or has at least one experience event that happened in Tokyo.
+
+```
+select p from "xdm:https://ns.adobe.com/xdm/context/profile",
+       x from p.xEvent where
+ p.xdm:person.xdm:firstName = "Dennis"
+ or
+ p.xdm:person.xdm:lastName = "Kehrig"
+ or
+ x.xdm:placecontext.xdm:geo.xdm:city = "Tōkyō"
+```

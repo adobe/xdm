@@ -49,9 +49,10 @@
     "meta:status": "experimental",
     "examples": [
         {
-            "xdm:firstName": "张",
-            "xdm:lastName": "三",
-            "xdm:fullName": "张三"
+            "xdm:firstName": "John",
+            "xdm:middleName": "S",
+            "xdm:lastName": "Doe",
+            "xdm:fullName": "John S. Doe"
         },
         {
             "xdm:firstName": "فلانة",
@@ -59,10 +60,9 @@
             "xdm:fullName": "فلانة الفلانية"
         },
         {
-            "xdm:firstName": "John",
-            "xdm:middleName": "S",
-            "xdm:lastName": "Doe",
-            "xdm:fullName": "John S. Doe"
+            "xdm:firstName": "张",
+            "xdm:lastName": "三",
+            "xdm:fullName": "张三"
         }
     ]
 }

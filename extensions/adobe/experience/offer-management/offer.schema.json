@@ -72,7 +72,7 @@
           },
           "title": "Custom Properties",
           "description":
-            "Custom metadata allows end-users to attach properties to individual instances"
+            "Custom metadata is a key-value map that allows the end-users to attach properties to individual offer instances. Any string can be used as a key name, the values are also strings."
         }
       },
       "required": ["xdm:name", "xdm:status"]

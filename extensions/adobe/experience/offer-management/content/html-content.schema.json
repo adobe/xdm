@@ -13,7 +13,7 @@
   "meta:extensible": true,
   "type": "object",
   "title": "HTML Content",
-  "description": "Image content used in an offer representation",
+  "description": "HTML content used in an offer representation",
   "definitions": {
     "html-content": {
       "type": "object",
@@ -26,6 +26,7 @@
         },
         "xdm:data": {
           "type": "object",
+          "description": "Offer content data is a map, where the keys are two- or four-letter language tags. E.g. 'en', 'en-US'",
           "patternProperties": {
             "^\\w\\w(-\\w\\w)?$": {
               "type": "object",

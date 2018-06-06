@@ -27,9 +27,10 @@
           "description": "EligibilityRule name that is used to locate this object in a search operation"
         },
         "xdm:value": {
-          "type": "string",
-          "title": "PQL Expression",
-          "description": "The string serialization of the predicate expression in pql/json format"
+          "type": "object",
+          "title": "Expression over XDM instances",
+          "description": "Contains the expression over a collection of context XDM instances. When the expression evaluates to true the offer refering to this eligibility rule will be included in the decisioning otherwise included. Central context instances include the profile and the experience events associtaed with the profile.",
+          "$ref": "https://ns.adobe.com/experience/offer-management/filter-expression"
         },
         "xdm:modelUsage": {
           "title": "Used Properties",

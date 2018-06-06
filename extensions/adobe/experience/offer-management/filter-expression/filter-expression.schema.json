@@ -593,7 +593,7 @@
               "$ref": "#/definitions/node-content"
             }
           },
-          "required": ["nodeType", "varName", "from", "where"]
+          "required": ["nodeType", "varName", "from"]
         }
       ]
     },

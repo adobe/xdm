@@ -2127,17 +2127,17 @@
                 "xdm:list1": {
                   "title": "List 1",
                   "description": "Custom list variable 1.",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref": "https://ns.adobe.com/experience/analytics/keyedlist"
                 },
                 "xdm:list2": {
                   "title": "List 2",
                   "description": "Custom list variable 2.",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref": "https://ns.adobe.com/experience/analytics/keyedlist"
                 },
                 "xdm:list3": {
                   "title": "List 3",
                   "description": "Custom list variable 3.",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref": "https://ns.adobe.com/experience/analytics/keyedlist"
                 }
               }
             },
@@ -7210,6 +7210,22 @@
               "title": "event1000",
               "$ref": "https://ns.adobe.com/xdm/data/measure",
               "description": "Custom event 1000."
+            }
+          }
+        },
+        "https://ns.adobe.com/experience/analytics/environment": {
+          "type": "object",
+          "title": "Environment",
+          "properties": {
+            "xdm:browserID": {
+              "title": "Browser ID",
+              "type": "integer",
+              "description": "The Adobe Analytics Identifier for the browser used."
+            },
+            "xdm:operatingSystemID": {
+              "title": "Operating System ID",
+              "type": "integer",
+              "description": "The Adobe Analytics Identifier of the operating system used."
             }
           }
         }

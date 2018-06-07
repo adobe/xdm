@@ -61,7 +61,7 @@
             "$ref": "https://ns.adobe.com/experience/offer-management/offer-representation"
           },
           "title": "Representations",
-          "description": "Offer representations for different placements"
+          "description": "Offer representations for different content variants. A single offer can have multiple contents variants. An Offer Representation is the object that connects Offers to Content. Content is information that is directed towards an audience for consumption in a (digital) experience. Content is delivered through channels (or a particular medium). "
         },
         "xdm:customMetadata": {
           "type": "object",

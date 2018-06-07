@@ -1,0 +1,48 @@
+{
+  "nodeType": "select",
+  "variables": [
+    {
+      "nodeType": "varDecl",
+      "varName": "o",
+      "from": {
+        "nodeType": "literal",
+        "literalType": "XDMObject",
+        "value": "https://ns.adobe.com/experience/offer-management/offer"
+      },
+      "where": {
+        "nodeType": "fnApply",
+        "fnName": "some",
+        "varName": "_",
+        "range": {
+          "nodeType": "fieldLookup",
+          "fieldName": "xdm:representations",
+          "object": {
+            "nodeType": "varRef",
+            "varName": "o"
+          }
+        },
+        "params": [
+          {
+            "nodeType": "fnApply",
+            "fnName": "equals",
+            "params": [
+              {
+                "nodeType": "fieldLookup",
+                "fieldName": "xdm:placement",
+                "object": {
+                  "nodeType": "varRef",
+                  "varName": "_"
+                }
+              },
+              {
+                "nodeType": "literal",
+                "literalType": "String",
+                "value": "uri:com:example:placement-1001"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

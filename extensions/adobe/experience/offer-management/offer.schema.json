@@ -52,7 +52,7 @@
           "items": {
             "type": "string",
             "format": "uri",
-            "description": "A reference to a Tag object. The value is the URI (@id) of the tag that is referenced."
+            "description": "A reference to a Tag object. The value is the URI (@id) of the Tag that is referenced. See Tag schema https://ns.adobe.com/experience/offer-management/tag"
           }
         },
         "xdm:representations": {

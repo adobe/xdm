@@ -1,0 +1,76 @@
+{
+  "nodeType": "select",
+  "variables": [
+    {
+      "nodeType": "varDecl",
+      "varName": "o",
+      "from": {
+        "nodeType": "literal",
+        "literalType": "XDMObject",
+        "value": "https://ns.adobe.com/experience/offer-management/offer"
+      },
+      "where": {
+        "nodeType": "fnApply",
+        "fnName": "and",
+        "params": [
+          {
+            "nodeType": "fnApply",
+            "fnName": "some",
+            "varName": "_",
+            "range": {
+              "nodeType": "literal",
+              "literalType": "List",
+              "value": [
+                "uri:com:example:placement-1001",
+                "uri:com:example:placement-1002"
+              ]
+            },
+            "params": [
+              {
+                "nodeType": "fnApply",
+                "fnName": "in",
+                "params": [
+                  {
+                    "nodeType": "varRef",
+                    "varName": "_"
+                  },
+                  {
+                    "nodeType": "fieldLookup",
+                    "fieldName": "xdm:placement",
+                    "object": {
+                      "nodeType": "fieldLookup",
+                      "fieldName": "xdm:representations",
+                      "object": {
+                        "nodeType": "varRef",
+                        "varName": "o"
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nodeType": "fnApply",
+            "fnName": "equals",
+            "params": [
+              {
+                "nodeType": "fieldLookup",
+                "fieldName": "xdm:status",
+                "object": {
+                  "nodeType": "varRef",
+                  "varName": "o"
+                }
+              },
+              {
+                "nodeType": "literal",
+                "literalType": "String",
+                "value": "approved"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

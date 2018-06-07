@@ -29,13 +29,14 @@
         "xdm:description": {
           "type": "string",
           "title": "Description",
-          "description": "Offer placement description. It is used to convey human readable intentions on how the offers are used in the overall message. That a certain space is a \"Banner\" in a web page is often conveyed via the description and not by a formal method."
+          "description": "Offer placement description. It is used to convey human readable intentions in an application on how offers are used in the overall message delivery. That a certain space is a \"Banner\" in a web page is often conveyed via the description and not by a formal method."
         },
         "xdm:channel": {
           "type": "string",
+          "format": "uri",
           "title": "Channel",
           "description":
-            "The Channel ID where the offer content is intended to be used. The channel constraint is used to convey not only where the offer will be used but determine the content editor or validator that is used for the Offer's representation. See 'https://ns.adobe.com/xdm/channels/channel'"
+            "The Channel URI where the offer content is intended to be placed. The channel constraint is used to convey not only where the offer will be used but determine the content editor or validator that is used for the Offer's representation. See 'https://ns.adobe.com/xdm/channels/channel'"
         },
         "xdm:contentType": {
           "$ref": "https://ns.adobe.com/experience/offer-management/representation-content#/definitions/content-type",

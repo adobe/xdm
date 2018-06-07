@@ -23,7 +23,7 @@
           "type": "string",
           "format": "uri",
           "title": "Channel",
-          "description": "Offer Channel ID. See 'https://ns.adobe.com/xdm/channels/channel'"
+          "description": "The channel constraint is used to convey not only where the offer will be used but determine the content editor or validator that is used for the Offer's representation. The value is a valid Channel URI. See 'https://ns.adobe.com/xdm/channels/channel'"
         },
         "xdm:placement": {
           "type": "string",

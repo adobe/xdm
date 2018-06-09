@@ -422,6 +422,48 @@
       },
       "additionalProperties": false
     },
+    "function-content-equals-string": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "fnApply"
+        },
+        "fnName": {
+          "type": "string",
+          "const": "equanls"
+        },
+        "params" : {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/node-content"
+          },
+          "minItems": 2,
+          "maxItems": 3
+        }
+      },
+      "additionalProperties": false
+    },
+    "function-content-not-equals-string": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "fnApply"
+        },
+        "fnName": {
+          "type": "string",
+          "const": "notEquals"
+        },
+        "params" : {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/node-content"
+          },
+          "minItems": 2,
+          "maxItems": 3
+        }
+      },
+      "additionalProperties": false
+    },
     "function-content-all": {
       "properties": {
         "nodeType": {

@@ -16,7 +16,7 @@
     "node-type": {
       "type": "string",
       "title": "Node Type",
-      "description": "Node Type: function application, literal, field lookup",
+      "description": "Indicates the type of a node",
       "enum": [
         "fnApply",
         "fnCreate",
@@ -24,8 +24,7 @@
         "fieldLookup",
         "select",
         "varDecl",
-        "varRef",
-        "queryInvoke"
+        "varRef"
       ],
       "meta:enum": {
         "fnApply": "Apply a function to the evaluation context. The valency or arity of the function varies with the function-type. Functions can be boolean-valued or produce scalar values and vectors.",
@@ -34,8 +33,7 @@
         "fieldLookup": "Produce a value from an object by accessing one of its fields",
         "select": "Produce a list from a list of inputs by evaluating a projection and a selection expression for every element of the input list.",
         "varDecl": "Sub-structure of the select expression that binds a variable to the elements matching a projection and a selection expression. The value is made available for reference via a variable name to other sub-select expressions",
-        "varRef": "Iterate over a list of values by referencing a variable name that denotes a list element previously qualified (evaluated in preceeding variable varDecl).",
-        "queryInvoke": "Invoke a query with parameters."
+        "varRef": "Iterate over a list of values by referencing a variable name that denotes a list element previously qualified (evaluated in preceeding variable varDecl)."
       }
     },
     "function-type": {
@@ -58,7 +56,8 @@
         "all",
         "some",
         "equals",
-        "notEquals"
+        "notEquals",
+        "modelInstances"
       ],
       "meta:enum": {
         "and": "An n-ary AND function. Map a list of boolean values to a single boolean value. Produces 'true' if and only if all input values are 'true', otherwise produces 'false'.",
@@ -76,7 +75,8 @@
         "all": "The universal quantifier of first order logic. Produce a boolean value from a list of values by applying an n-ary function to each item and returning true if for all of the items the n-ary function evaluates to true",
         "some": "The existential quantifier of first order logic. Produce a boolean value from a list of  values by applying an n-ary function to each item and returning true if for some of the items the na-ray function evaluates to true",
         "equals": "Produce a boolean value from two string values by comparing them and returning true if they are equal and false otherwise, an additional argument specifies if compariosn case-sensitive or not. The second value is coerced to the type of the first value before applying the equals operator.",
-        "notEqualsTo": "Produce a boolean value from two string values by comparing them and returning true if they are not equal and false otherwise, an additional argument specifies if compariosn case-sensitive or not. The second value is coerced to the type of the first value before applying the equals operator."
+        "notEqualsTo": "Produce a boolean value from two string values by comparing them and returning true if they are not equal and false otherwise, an additional argument specifies if compariosn case-sensitive or not. The second value is coerced to the type of the first value before applying the equals operator.",
+        "modelInstances": "Reference the set of all instances of a given model"
       }
     },
     "literal-type": {
@@ -167,6 +167,9 @@
             },
             {
               "$ref": "#/definitions/function-content-not-equals-string"
+            },
+            {
+              "$ref": "#/definitions/function-content-model-instances"
             }
           ]
         }
@@ -811,39 +814,31 @@
       ]
     },
 
-    "query-invoke-content": {
+    "function-content-model-instances": {
       "type": "object",
-      "title": "Query Invocation",
-      "description": "A query can be directly invoked",
+      "title": "Reference all instances of a given model",
+      "description": "Reference the instances of a given model provided by the execution context. The function takes one or more arguments, the first argument must evaluate to a string that results in the model name to be accessed.",
       "allOf": [
         {
           "type": "object",
           "properties": {
             "nodeType": {
               "type": "string",
-              "const": "queryInvoke"
+              "const": "fnApply"
             },
-            "queryName": {
-              "type": "string"
+            "fnName": {
+              "type": "string",
+              "const": "modelInstances"
             },
-            "queryParams": {
+            "params": {
               "type": "array",
-              "items" : {
-                "type": "object",
-                "properties" : {
-                  "queryParamName": {
-                    "type": "string"
-                  },
-                  "queryParamValue": {
-                    "$ref": "#/definitions/node-content"
-                  }
-                },
-                "required": ["queryParamName", "queryParamValue"],
-                "additionalProperties": false
-              }
+              "items": {
+                "$ref": "#/definitions/node-content"
+              },
+              "minItems": 1
             }
           },
-          "required": ["nodeType"],
+          "required": ["nodeType", "fnName", "params"],
           "additionalProperties": false
         }
       ]
@@ -882,9 +877,6 @@
             },
             {
               "$ref": "#/definitions/tree-node-reference-content"
-            },
-            {
-              "$ref": "#/definitions/query-invoke-content"
             }
           ]
         }

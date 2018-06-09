@@ -19,6 +19,7 @@
       "description": "Node Type: function application, literal, field lookup",
       "enum": [
         "fnApply",
+        "fnCreate",
         "literal",
         "fieldLookup",
         "select",
@@ -28,6 +29,7 @@
       ],
       "meta:enum": {
         "fnApply": "Apply a function to the evaluation context. The valency or arity of the function varies with the function-type. Functions can be boolean-valued or produce scalar values and vectors.",
+        "fnCreate": "Create a function.",
         "literal": "Prodcue a value from a literal",
         "fieldLookup": "Produce a value from an object by accessing one of its fields",
         "select": "Produce a list from a list of inputs by evaluating a projection and a selection expression for every element of the input list.",
@@ -39,30 +41,38 @@
     "function-type": {
       "type": "string",
       "title": "Function Identifier",
-      "description": "Function Identifier: OR, AND, EQUALS, NOT EQUALS, IN, NOT IN, GREATER THAN, LESS THAN",
+      "description": "Function Identifier. See allowed values for details.",
       "enum": [
         "and",
         "or",
-        "all",
-        "some",
-        "equals",
-        "notEquals",
+        "=",
+        "!=",
+        ">",
+        ">=",
+        "<=",
+        "<",
         "in",
         "notIn",
-        "greaterThan",
-        "lessThan"
+        "isNull",
+        "isNotNull",
+        "all",
+        "some"
       ],
       "meta:enum": {
         "and": "An n-ary AND function. Map a list of boolean values to a single boolean value. Produces 'true' if and only if all input values are 'true', otherwise produces 'false'.",
         "or": "An n-ary OR function. Map a list of boolean values to a single boolean value. Produces 'true' if and only if any of the input values is 'true', otherwise produces 'false'.",
+        "=": "Produce a boolean value from two input values by comparing them and returning true if they are not equal and false otherwise. The second value is coerced to the type of the first value before applying the operator.",
+        "!=": "Produce a boolean value from two input values by comparing them and returning true if they are not equal and false otherwise. The second value is coerced to the type of the first value before applying the operator.",
+        ">": "Produce a boolean value from two input values by comparing them and returning true if the first is greater than the second. The second value is coerced to the type of the first value before applying the operator.",
+        ">=": "Produce a boolean value from two input values by comparing them and returning true if the first is greater than or equal to the second. The second value is coerced to the type of the first value before applying the operator.",
+        "<=": "Produce a boolean value from two input values by comparing them and returning true if the first is less than or equal to the second. The second value is coerced to the type of the first value before applying the operator.",
+        "<": "Produce a boolean value from two input values by comparing them and returning true if the first is less than the second. The second value is coerced to the type of the first value before applying the operator.",
+        "in": "Produce a boolean value from a scalar and a vector input value. If the scalar is equal to one or more of the vector values the evaluation results in the boolean value 'true' and 'false' otherwise. The second value is coerced to a list type of the first value before applying the equality check operator.",
+        "notIn": "Produce a boolean value from a scalar and a vector input value. If the scalar is equal to none of the vector values the evaluation results in the boolean value 'true' and 'false' otherwise. The second value is coerced to a list type of the first value before applying the equality check operator.",
+        "isNull": "Produce a boolean value from a scalar input value. If the scalar is null, the evaluation results in the boolean value 'true' and 'false' otherwise",
+        "isNotNull": "Produce a boolean value from a scalar input value. If the scalar is not null, the evaluation results in the boolean value 'true' and 'false' otherwise",
         "all": "The universal quantifier of first order logic. Produce a boolean value from a list of values by applying an n-ary function to each item and returning true if for all of the items the n-ary function evaluates to true",
-        "some": "The existential quantifier of first order logic. Produce a boolean value from a list of  values by applying an n-ary function to each item and returning true if for some of the items the na-ray function evaluates to true",
-        "equals": "Produce a boolean value from two input values by comparing them and returning true if they are not equal and false otherwise. The second value is coerced to the type of the first value before applying the equals operator.",
-        "notEquals": "Produce a boolean value from two input values by comparing them and returning true if they are not equal and false otherwise. The second value is coerced to the type of the first value before applying the equals operator.",
-        "in": "Produce a boolean value from a scalar and a vector input value. If the scalar is eqaul to one or more of the vector values the evaluation results in the boolean value 'true' and 'false' otherwise. The second value is coerced to a list type of the first value before applying the equality check operator.",
-        "notIn": "Produce a boolean value from a scalar and a vector input value. If the scalar is eqaul to none the vector values the evaluation results in the boolean value 'true' and 'false' otherwise. The second value is coerced to a list type of the first value before applying the equality check operator.",
-        "greaterThan": "Produce a boolean value from two input values by comparing them and returning true if the first one is greater than the second and false otherwise. The second value is coerced to the type of the first value before applying the operator.",
-        "lessThan": "Produce a boolean value from two input values by comparing them and returning true if the first one is less than the second and false otherwise. The second value is coerced to the type of the first value before applying the operator."
+        "some": "The existential quantifier of first order logic. Produce a boolean value from a list of  values by applying an n-ary function to each item and returning true if for some of the items the na-ray function evaluates to true"
       }
     },
     "literal-type": {
@@ -86,7 +96,7 @@
         "XDMObject": "A sting denoting a reference of an XDM schema"
       }
     },
-    
+
     "function-application-content": {
       "type": "object",
       "title": "N-ary function application",
@@ -113,16 +123,22 @@
               "$ref": "#/definitions/function-content-or"
             },
             {
-              "$ref": "#/definitions/function-content-all"
+              "$ref": "#/definitions/function-content-equals-native"
             },
             {
-              "$ref": "#/definitions/function-content-some"
+              "$ref": "#/definitions/function-content-not-equals-native"
             },
             {
-              "$ref": "#/definitions/function-content-equals"
+              "$ref": "#/definitions/function-content-greater-than-native"
             },
             {
-              "$ref": "#/definitions/function-content-not-equals"
+              "$ref": "#/definitions/function-content-greater-than-or-equal-native"
+            },
+            {
+              "$ref": "#/definitions/function-content-less-than-or-equal-native"
+            },
+            {
+              "$ref": "#/definitions/function-content-less-than-native"
             },
             {
               "$ref": "#/definitions/function-content-in"
@@ -131,14 +147,20 @@
               "$ref": "#/definitions/function-content-not-in"
             },
             {
-              "$ref": "#/definitions/function-content-greater-than"
+              "$ref": "#/definitions/function-content-null"
             },
             {
-              "$ref": "#/definitions/function-content-less-than"
+              "$ref": "#/definitions/function-content-not-null"
+            },
+            {
+              "$ref": "#/definitions/function-content-all"
+            },
+            {
+              "$ref": "#/definitions/function-content-some"
             }
           ]
-       }
-     ]
+        }
+      ]
     },
     "function-content-and": {
       "properties": {
@@ -176,6 +198,216 @@
             "$ref": "#/definitions/node-content"
           },
           "minItems": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "function-content-equals-native": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "fnApply"
+        },
+        "fnName": {
+          "type": "string",
+          "const": "="
+        },
+        "params" : {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/node-content"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      },
+      "additionalProperties": false
+    },
+    "function-content-not-equals-native": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "fnApply"
+        },
+        "fnName": {
+          "type": "string",
+          "const": "!="
+        },
+        "params" : {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/node-content"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      },
+      "additionalProperties": false
+    },
+    "function-content-greater-than-native": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "fnApply"
+        },
+        "fnName": {
+          "type": "string",
+          "const": ">"
+        },
+        "params" : {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/node-content"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      },
+      "additionalProperties": false
+    },
+    "function-content-greater-than-or-equal-native": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "fnApply"
+        },
+        "fnName": {
+          "type": "string",
+          "const": ">="
+        },
+        "params" : {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/node-content"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      },
+      "additionalProperties": false
+    },
+    "function-content-less-than-or-equal-native": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "fnApply"
+        },
+        "fnName": {
+          "type": "string",
+          "const": "<="
+        },
+        "params" : {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/node-content"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      },
+      "additionalProperties": false
+    },
+    "function-content-less-than-native": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "fnApply"
+        },
+        "fnName": {
+          "type": "string",
+          "const": "<"
+        },
+        "params" : {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/node-content"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      },
+      "additionalProperties": false
+    },
+    "function-content-in": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "fnApply"
+        },
+        "fnName": {
+          "type": "string",
+          "const": "in"
+        },
+        "params" : {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/node-content"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      },
+      "additionalProperties": false
+    },
+    "function-content-not-in": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "fnApply"
+        },
+        "fnName": {
+          "type": "string",
+          "const": "notIn"
+        },
+        "params" : {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/node-content"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      },
+      "additionalProperties": false
+    },
+    "function-content-null": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "fnApply"
+        },
+        "fnName": {
+          "type": "string",
+          "const": "isNull"
+        },
+        "params" : {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/node-content"
+          },
+          "minItems": 1,
+          "maxItems": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "function-content-not-null": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "fnApply"
+        },
+        "fnName": {
+          "type": "string",
+          "const": "isNotNull"
+        },
+        "params" : {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/node-content"
+          },
+          "minItems": 1,
+          "maxItems": 1
         }
       },
       "additionalProperties": false
@@ -254,133 +486,41 @@
         }
       ]
     },
-    "function-content-equals": {
-      "properties": {
-        "nodeType": {
-          "type": "string",
-          "const": "fnApply"
-        },
-        "fnName": {
-          "type": "string",
-          "const": "equals"
-        },
-        "params" : {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/node-content"
+
+    "function-creation-content": {
+      "type": "object",
+      "title": "Function creation",
+      "description": "Creates a function with a set of variables as parameters.",
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "nodeType": {
+              "type": "string",
+              "const": "fnCreate"
+            },
+            "params" : {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "varName": {
+                    "type": "string"
+                  }
+                },
+                "required": ["varName"]
+              },
+              "minItems": 1
+            },
+            "body": {
+              "$ref": "#/definitions/function-application-content"
+            }
           },
-          "minItems": 2,
-          "maxItems": 2
+          "required": ["nodeType", "params", "body"]
         }
-      },
-      "additionalProperties": false
+      ]
     },
-    "function-content-not-equals": {
-      "properties": {
-        "nodeType": {
-          "type": "string",
-          "const": "fnApply"
-        },
-        "fnName": {
-          "type": "string",
-          "const": "notEquals"
-        },
-        "params" : {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/node-content"
-          },
-          "minItems": 2,
-          "maxItems": 2
-        }
-      },
-      "additionalProperties": false
-    },
-    "function-content-in": {
-      "properties": {
-        "nodeType": {
-          "type": "string",
-          "const": "fnApply"
-        },
-        "fnName": {
-          "type": "string",
-          "const": "in"
-        },
-        "params" : {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/node-content"
-          },
-          "minItems": 2,
-          "maxItems": 2
-        }
-      },
-      "additionalProperties": false
-    },
-    "function-content-not-in": {
-      "properties": {
-        "nodeType": {
-          "type": "string",
-          "const": "fnApply"
-        },
-        "fnName": {
-          "type": "string",
-          "const": "notIn"
-        },
-        "params" : {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/node-content"
-          },
-          "minItems": 2,
-          "maxItems": 2
-        }
-      },
-      "additionalProperties": false
-    },
-    "function-content-greater-than": {
-      "properties": {
-        "nodeType": {
-          "type": "string",
-          "const": "fnApply"
-        },
-        "fnName": {
-          "type": "string",
-          "const": "greaterThan"
-        },
-        "params" : {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/node-content"
-          },
-          "minItems": 2,
-          "maxItems": 2
-        }
-      },
-      "additionalProperties": false
-    },
-    "function-content-less-than": {
-      "properties": {
-        "nodeType": {
-          "type": "string",
-          "const": "fnApply"
-        },
-        "fnName": {
-          "type": "string",
-          "const": "lessThan"
-        },
-        "params" : {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/node-content"
-          },
-          "minItems": 2,
-          "maxItems": 2
-        }
-      },
-      "additionalProperties": false
-    },
-    
+
     "field-lookup-content": {
       "type": "object",
       "title": "Field accessor",
@@ -405,7 +545,7 @@
         }
       ]
     },
-    
+
     "literal-content": {
       "type": "object",
       "title": "Literal",
@@ -618,7 +758,7 @@
         }
       ]
     },
-    
+
     "query-invoke-content": {
       "type": "object",
       "title": "Query Invocation",
@@ -656,7 +796,7 @@
         }
       ]
     },
-    
+
     "node-content": {
       "allOf": [
         {
@@ -672,6 +812,9 @@
           "oneOf": [
             {
               "$ref": "#/definitions/function-application-content"
+            },
+            {
+              "$ref": "#/definitions/function-creation-content"
             },
             {
               "$ref": "#/definitions/literal-content"
@@ -694,7 +837,7 @@
           ]
         }
       ]
-    }    
+    }
   },
   "allOf": [
     {
@@ -702,4 +845,3 @@
     }
   ]
 }
-

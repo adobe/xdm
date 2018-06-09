@@ -56,23 +56,27 @@
         "isNull",
         "isNotNull",
         "all",
-        "some"
+        "some",
+        "equals",
+        "notEquals"
       ],
       "meta:enum": {
         "and": "An n-ary AND function. Map a list of boolean values to a single boolean value. Produces 'true' if and only if all input values are 'true', otherwise produces 'false'.",
         "or": "An n-ary OR function. Map a list of boolean values to a single boolean value. Produces 'true' if and only if any of the input values is 'true', otherwise produces 'false'.",
-        "=": "Produce a boolean value from two input values by comparing them and returning true if they are not equal and false otherwise. The second value is coerced to the type of the first value before applying the operator.",
-        "!=": "Produce a boolean value from two input values by comparing them and returning true if they are not equal and false otherwise. The second value is coerced to the type of the first value before applying the operator.",
-        ">": "Produce a boolean value from two input values by comparing them and returning true if the first is greater than the second. The second value is coerced to the type of the first value before applying the operator.",
-        ">=": "Produce a boolean value from two input values by comparing them and returning true if the first is greater than or equal to the second. The second value is coerced to the type of the first value before applying the operator.",
-        "<=": "Produce a boolean value from two input values by comparing them and returning true if the first is less than or equal to the second. The second value is coerced to the type of the first value before applying the operator.",
-        "<": "Produce a boolean value from two input values by comparing them and returning true if the first is less than the second. The second value is coerced to the type of the first value before applying the operator.",
-        "in": "Produce a boolean value from a scalar and a vector input value. If the scalar is equal to one or more of the vector values the evaluation results in the boolean value 'true' and 'false' otherwise. The second value is coerced to a list type of the first value before applying the equality check operator.",
+        "=": "Produce a boolean value from two input values by comparing them and returning true if neither value is null and they are  equal and returns false otherwise. The second value is coerced to the type of the first value before applying the != operator.",
+        "!=": "Produce a boolean value from two input values by comparing them and returning true if neither value is null and they are not equal and returns alse otherwise. The second value is coerced to the type of the first value before applying the != operator.",
+        ">": "Produce a boolean value from two input values by comparing them and returning true if neither value is null and the first one is greater than the second and returns false otherwise. The second value is coerced to the type of the first value before applying the operator.",
+        ">=": "Produce a boolean value from two input values by comparing them and returning true if neither value is null and the first one is greater than or equals the second and returns false otherwise. The second value is coerced to the type of the first value before applying the operator.",
+        "<=": "Produce a boolean value from two input values by comparing them and returning true if neither value is null and the first one is less than or equals the second and returns false otherwise. The second value is coerced to the type of the first value before applying the operator.",
+        "<": "Produce a boolean value from two input values by comparing them and returning true if neither value is null and the first one is less than the second and returns false otherwise. The second value is coerced to the type of the first value before applying the operator.",
+        "in": "Produce a boolean value from a scalar and a vector input value. If the scalar is eqaul to one or more of the vector values the evaluation results in the boolean value 'true' and 'false' otherwise. The second value is coerced to a list type of the first value before applying the equality check operator.",
         "notIn": "Produce a boolean value from a scalar and a vector input value. If the scalar is equal to none of the vector values the evaluation results in the boolean value 'true' and 'false' otherwise. The second value is coerced to a list type of the first value before applying the equality check operator.",
         "isNull": "Produce a boolean value from a scalar input value. If the scalar is null, the evaluation results in the boolean value 'true' and 'false' otherwise",
         "isNotNull": "Produce a boolean value from a scalar input value. If the scalar is not null, the evaluation results in the boolean value 'true' and 'false' otherwise",
         "all": "The universal quantifier of first order logic. Produce a boolean value from a list of values by applying an n-ary function to each item and returning true if for all of the items the n-ary function evaluates to true",
-        "some": "The existential quantifier of first order logic. Produce a boolean value from a list of  values by applying an n-ary function to each item and returning true if for some of the items the na-ray function evaluates to true"
+        "some": "The existential quantifier of first order logic. Produce a boolean value from a list of  values by applying an n-ary function to each item and returning true if for some of the items the na-ray function evaluates to true",
+        "equals": "Produce a boolean value from two string values by comparing them and returning true if they are equal and false otherwise, an additional argument specifies if compariosn case-sensitive or not. The second value is coerced to the type of the first value before applying the equals operator.",
+        "notEqualsTo": "Produce a boolean value from two string values by comparing them and returning true if they are not equal and false otherwise, an additional argument specifies if compariosn case-sensitive or not. The second value is coerced to the type of the first value before applying the equals operator."
       }
     },
     "literal-type": {
@@ -157,6 +161,12 @@
             },
             {
               "$ref": "#/definitions/function-content-some"
+            },
+            {
+              "$ref": "#/definitions/function-content-equals-string"
+            },
+            {
+              "$ref": "#/definitions/function-content-not-equals-string"
             }
           ]
         }

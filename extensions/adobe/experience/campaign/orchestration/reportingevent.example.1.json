@@ -7,10 +7,11 @@
   "xdm:dataEntityUID":
     "https://ns.adobe.com/experience/campaign/orchestration/dataentity/123",
   "xdm:orgUnit": {
-    "@id" : "https://data.adobe.io/org-apparals-men"
+    "@id": "https://data.adobe.io/org-apparals-men"
   },
   "xdm:flowControlType": "timer",
-  "xdm:flowControlID" : "https://ns.adobe.com/experience/campaign/orchestration/flowcontrol/123",
+  "xdm:flowControlID":
+    "https://ns.adobe.com/experience/campaign/orchestration/flowcontrol/123",
   "xdm:eventMetrics": {
     "https://ns.adobe.com/experience/campaign/orchestrationEnteredJourneyInstance": {
       "xdm:value": 1

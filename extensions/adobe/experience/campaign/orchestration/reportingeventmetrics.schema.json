@@ -97,9 +97,6 @@
   "allof": [
     {
       "$ref": "#/definitions/reportingeventmetrics"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/data/metrics"
     }
   ],
   "meta:status": "stabilizing"

@@ -28,9 +28,6 @@
   "allOf": [
     {
       "$ref": "#/definitions/reportingexternalevent"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/context/experienceevent"
     }
   ],
   "meta:status": "stabilizing"

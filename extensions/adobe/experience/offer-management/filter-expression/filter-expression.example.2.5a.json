@@ -10,8 +10,8 @@
         "params": [
           {
             "nodeType": "literal",
-            "literalType": "XDMObject",
-            "value": "https://ns.adobe.com/experience/offer-management/offer"
+            "literalType": "QueryString",
+            "value": "/queries/offersByTagIds?tagId=\"uri:com:example:tag-0001\"&tagId=\"uri:com:example:tag-0002\"&qop=AND&property=`\"_instance.status=approved\""
           }
         ]
       },
@@ -20,33 +20,30 @@
         "fnName": "some",
         "varName": "_",
         "range": {
-          "nodeType": "literal",
-          "literalType": "List",
-          "value": [
-            "uri:com:example:placement-1001",
-            "uri:com:example:placement-1002"
-          ]
+          "nodeType": "fieldLookup",
+          "fieldName": "xdm:representations",
+          "object": {
+            "nodeType": "varRef",
+            "varName": "o"
+          }
         },
         "params": [
           {
             "nodeType": "fnApply",
-            "fnName": "in",
+            "fnName": "equals",
             "params": [
-              {
-                "nodeType": "varRef",
-                "varName": "_"
-              },
               {
                 "nodeType": "fieldLookup",
                 "fieldName": "xdm:placement",
                 "object": {
-                  "nodeType": "fieldLookup",
-                  "fieldName": "xdm:representations",
-                  "object": {
-                    "nodeType": "varRef",
-                    "varName": "o"
-                  }
+                  "nodeType": "varRef",
+                  "varName": "_"
                 }
+              },
+              {
+                "nodeType": "literal",
+                "literalType": "String",
+                "value": "uri:com:example:placement-1001"
               }
             ]
           }

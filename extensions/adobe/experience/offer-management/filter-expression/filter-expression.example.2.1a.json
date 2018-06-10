@@ -1,14 +1,11 @@
 {
-  "nodeType": "queryInvoke",
-  "queryName": "offersByTagIds",
-  "queryParams": [
+  "nodeType": "fnApply",
+  "fnName": "modelInstances",
+  "params": [
     {
-      "queryParamName": "tagId",
-      "queryParamValue": {
-        "nodeType": "literal",
-        "literalType": "String",
-        "value": "uri:com:example:tag-0001"
-      }
+      "nodeType": "literal",
+      "literalType": "QueryString",
+      "value": "/queries/offersByTagIds?tagId=\"uri:com:example:tag-0001\""
     }
   ]
 }

@@ -5,9 +5,15 @@
       "nodeType": "varDecl",
       "varName": "o",
       "from": {
-        "nodeType": "literal",
-        "literalType": "XDMObject",
-        "value": "https://ns.adobe.com/experience/offer-management/offer"
+        "nodeType": "fnApply",
+        "fnName": "modelInstances",
+        "params": [
+          {
+            "nodeType": "literal",
+            "literalType": "XDMObject",
+            "value": "https://ns.adobe.com/experience/offer-management/offer"
+          }
+        ]
       },
       "where": {
         "nodeType": "fnApply",

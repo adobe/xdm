@@ -1,53 +1,11 @@
 {
-  "nodeType": "queryInvoke",
-  "queryName": "offersByTagIds",
-  "queryParams": [
+  "nodeType": "fnApply",
+  "fnName": "modelInstances",
+  "params": [
     {
-      "queryParamName": "tagId",
-      "queryParamValue": {
-        "nodeType": "literal",
-        "literalType": "String",
-        "value": "uri:com:example:tag-0001"
-      }
-    },
-    {
-      "queryParamName": "tagId",
-      "queryParamValue": {
-        "nodeType": "literal",
-        "literalType": "String",
-        "value": "uri:com:example:tag-0002"
-      }
-    },
-    {
-      "queryParamName": "qop",
-      "queryParamValue": {
-        "nodeType": "literal",
-        "literalType": "String",
-        "value": "AND"
-      }
-    },
-    {
-      "queryParamName": "property",
-      "queryParamValue": {
-        "nodeType": "fnApply",
-        "fnName": "equals",
-        "params": [
-          {
-            "nodeType": "fieldLookup",
-            "fieldName": "xdm:status",
-            "object": {
-              "nodeType": "literal",
-              "literalType": "XDMObject",
-              "value": "https://ns.adobe.com/experience/offer-management/offer"
-            }
-          },
-          {
-            "nodeType": "literal",
-            "literalType": "String",
-            "value": "approved"
-          }
-        ]
-      }
+      "nodeType": "literal",
+      "literalType": "QueryString",
+      "value": "/queries/offersByTagIds?tagId=\"uri:com:example:tag-0001\"&tagId=\"uri:com:example:tag-0002\"&qop=AND&property=`\"_instance.status=approved\""
     }
   ]
 }

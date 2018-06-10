@@ -1,14 +1,11 @@
 {
-  "nodeType": "queryInvoke",
-  "queryName": "offersByPlacementIds",
-  "queryParams": [
+  "nodeType": "fnApply",
+  "fnName": "modelInstances",
+  "params": [
     {
-      "queryParamName": "placementId",
-      "queryParamValue": {
-        "nodeType": "literal",
-        "literalType": "String",
-        "value": "uri:com:example:placement-01001"
-      }
+      "nodeType": "literal",
+      "literalType": "QueryString",
+      "value": "/queries/offersByPlacementIds?placementId=\"uri:com:example:placement-01001\""
     }
   ]
 }

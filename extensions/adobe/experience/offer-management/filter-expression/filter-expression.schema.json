@@ -638,6 +638,9 @@
             },
             {
               "$ref": "#/definitions/literal-xdmobject-content"
+            },
+            {
+              "$ref": "#/definitions/literal-query-string-content"
             }
           ]
         }
@@ -736,6 +739,22 @@
         "value" : {
           "type": "string",
           "format": "uri"
+        }
+      },
+      "additionalProperties": false
+    },
+    "literal-query-string-content": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "literal"
+        },
+        "literalType": {
+          "type": "string",
+          "const": "QueryString"
+        },
+        "value" : {
+          "type": "string"
         }
       },
       "additionalProperties": false

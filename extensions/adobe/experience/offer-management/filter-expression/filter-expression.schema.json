@@ -22,6 +22,7 @@
         "fnCreate",
         "literal",
         "fieldLookup",
+        "quantification",
         "select",
         "varDecl",
         "varRef"
@@ -31,6 +32,7 @@
         "fnCreate": "Create a function.",
         "literal": "Prodcue a value from a literal",
         "fieldLookup": "Produce a value from an object by accessing one of its fields",
+        "quantification": "",
         "select": "Produce a list from a list of inputs by evaluating a projection and a selection expression for every element of the input list.",
         "varDecl": "Sub-structure of the select expression that binds a variable to the elements matching a projection and a selection expression. The value is made available for reference via a variable name to other sub-select expressions",
         "varRef": "Iterate over a list of values by referencing a variable name that denotes a list element previously qualified (evaluated in preceeding variable varDecl)."
@@ -53,8 +55,6 @@
         "notIn",
         "isNull",
         "isNotNull",
-        "all",
-        "some",
         "equals",
         "notEquals",
         "modelInstances"
@@ -73,16 +73,14 @@
         "isNull": "Produce a boolean value from a scalar input value. If the scalar is null, the evaluation results in the boolean value 'true' and 'false' otherwise",
         "isNotNull": "Produce a boolean value from a scalar input value. If the scalar is not null, the evaluation results in the boolean value 'true' and 'false' otherwise",
         "all": "The universal quantifier of first order logic. Produce a boolean value from a list of values by applying an n-ary function to each item and returning true if for all of the items the n-ary function evaluates to true",
-        "some": "The existential quantifier of first order logic. Produce a boolean value from a list of  values by applying an n-ary function to each item and returning true if for some of the items the na-ray function evaluates to true",
-        "equals": "Produce a boolean value from two string values by comparing them and returning true if they are equal and false otherwise, an additional argument specifies if compariosn case-sensitive or not. The second value is coerced to the type of the first value before applying the equals operator.",
         "notEqualsTo": "Produce a boolean value from two string values by comparing them and returning true if they are not equal and false otherwise, an additional argument specifies if compariosn case-sensitive or not. The second value is coerced to the type of the first value before applying the equals operator.",
         "modelInstances": "Reference the set of all instances of a given model"
       }
     },
     "literal-type": {
       "type": "string",
-      "title": "LIteral Type Identifier",
-      "description": "LIteral Type Identifier: String, Number, Integer, Boolean, Date, DateTime",
+      "title": "Literal Type Identifier",
+      "description": "Literal Type Identifier: String, Number, Integer, Boolean, Date, DateTime",
       "enum": [
         "String",
         "Number",
@@ -100,6 +98,23 @@
         "List": "An array of literals",
         "XDMObject": "A sting denoting a reference of an XDM schema",
         "QueryString": "A sting denoting a URL of a query. Used in function \"modeInstances\""
+      }
+    },
+    "quantifier-type": {
+      "type": "string",
+      "title": "Quantifier Type Identifier",
+      "description": "Quantifier of first order logic. Produce a boolean value from a list of values by applying a predicate to each item and returning true or false based on the quantifier.",
+      "enum": [
+        "all",
+        "some",
+        "none",
+        "one"
+      ],
+      "meta:enum": {
+        "all": "The All quantifier",
+        "some": "The Exists quantifier",
+        "none": "The negated exists quantifier. 'There does not exist one'",
+        "one": "There exists one and only one."
       }
     },
 
@@ -157,12 +172,6 @@
             },
             {
               "$ref": "#/definitions/function-content-not-null"
-            },
-            {
-              "$ref": "#/definitions/function-content-all"
-            },
-            {
-              "$ref": "#/definitions/function-content-some"
             },
             {
               "$ref": "#/definitions/function-content-equals-string"
@@ -469,80 +478,6 @@
       },
       "additionalProperties": false
     },
-    "function-content-all": {
-      "properties": {
-        "nodeType": {
-          "type": "string",
-          "const": "fnApply"
-        },
-        "fnName": {
-          "type": "string",
-          "const": "all"
-        },
-        "varName": {
-          "type": "string",
-          "pattern": "^[_A-Za-z0-9]+$"
-        },
-        "range" : {
-          "$ref": "#/definitions/quantifier-range-content",
-          "description": "The valence of the predicate is 1 for this all-quantifier and must reference excatly one variable whose domain is a list of values. The predicate evaluates to a boolean based on the boolean value of the parameter function applied to each of the range list values. If the function applied to every list element results in 'true' the overall predicate evaluates to 'true' otherwise it evaluates to false."
-        },
-        "params" : {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/node-content"
-          },
-          "minItems": 1,
-          "maxItems": 1
-        }
-      },
-      "additionalProperties": false
-    },
-    "function-content-some": {
-      "properties": {
-        "nodeType": {
-          "type": "string",
-          "const": "fnApply"
-        },
-        "fnName": {
-          "type": "string",
-          "const": "some"
-        },
-        "varName": {
-          "type": "string",
-          "pattern": "^[_A-Za-z0-9]+$"
-        },
-        "range" : {
-          "$ref": "#/definitions/quantifier-range-content",
-          "description": "The valence of the predicate is 1 for this exist-quantifier and must reference excatly one variable whose domain is a list of values. The predicate evaluates to a boolean based on the boolean value of the parameter function applied to each of the range list values. . If the function applied to at least one list element results in 'true' the overall predicate evaluates to 'true' otherwise it evaluates to false."
-        },
-        "params" : {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/node-content"
-          },
-          "minItems": 1,
-          "maxItems": 1
-        }
-      },
-      "additionalProperties": false
-    },
-    "quantifier-range-content": {
-      "type": "object",
-      "title": "Predicate Range",
-      "description": "The predicate's variable range.",
-      "oneOf": [
-        {
-          "$ref": "#/definitions/field-lookup-content"
-        },
-        {
-          "$ref": "#/definitions/literal-list-content"
-        },
-        {
-          "$ref": "#/definitions/tree-node-reference-content"
-        }
-      ]
-    },
 
     "function-creation-content": {
       "type": "object",
@@ -762,9 +697,38 @@
       "additionalProperties": false
     },
 
+    "quantification-content": {
+      "type": "object",
+      "title": "Apply a quantification",
+      "description": "Produces a boolean value from a list of (tree-structured) input values by evaluating a predicate for each element. Depending on the quantifier 'all', 'some', 'none' or 'one' evaluations must result in `true` for the overall evaluation to become true.",
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "nodeType": {
+              "type": "string",
+              "const": "quantification"
+            },
+            "quantifier": {
+              "$ref": "#/definitions/quantifier-type"
+            },
+            "variables": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/variable-domain-content"
+              },
+              "minItems": 1
+            }
+          },
+          "required": ["nodeType", "quantifier", "variables"],
+          "additionalProperties": false
+        }
+      ]
+    },
+
     "select-expression-content": {
       "type": "object",
-      "title": "Tree evaluation",
+      "title": "Object tree evaluation",
       "description": "Produce a list of elements from a list of (tree-structured) input values by evaluating each clause in order of declaration. All clauses must evaluate to true for the element referenced in the first clause to qualify",
       "allOf": [
         {
@@ -777,18 +741,20 @@
             "variables": {
               "type": "array",
               "items": {
-                "$ref": "#/definitions/tree-node-iterator-content"
+                "$ref": "#/definitions/variable-domain-content"
               },
               "minItems": 1
             }
           },
-          "required": ["nodeType", "variables"]
+          "required": ["nodeType", "variables"],
+          "additionalProperties": false
         }
       ]
     },
-    "tree-node-iterator-content": {
+    
+    "variable-domain-content": {
       "type": "object",
-      "title": "Tree node iterator",
+      "title": "Define a variable and its domain",
       "description": "Produce a list of output values from a list of inputs by first applying an optional projection (from expression) and then a filter (where expression) to each value from the list of inputs. The list of values is bound to a variable name.",
       "allOf": [
         {
@@ -809,11 +775,12 @@
               "$ref": "#/definitions/node-content"
             }
           },
-          "required": ["nodeType", "varName", "from"]
+          "required": ["nodeType", "varName", "from"],
+          "additionalProperties": false
         }
       ]
     },
-    "tree-node-reference-content": {
+    "variable-reference-content": {
       "type": "object",
       "title": "Reference to a value created in the context of a select expression evaluation",
       "description": "Produce a list of values by referencing a variable name that denotes a tree node element previously evaluated.",
@@ -830,7 +797,8 @@
               "pattern": "^[_A-Za-z0-9]+$"
             }
           },
-          "required": ["nodeType", "varName"]
+          "required": ["nodeType", "varName"],
+          "additionalProperties": false
         }
       ]
     },
@@ -894,11 +862,11 @@
               "$ref": "#/definitions/select-expression-content"
             },
             {
-              "$ref": "#/definitions/tree-node-iterator-content"
+              "$ref": "#/definitions/quantification-content"
             },
             {
-              "$ref": "#/definitions/tree-node-reference-content"
-            }
+              "$ref": "#/definitions/variable-reference-content"
+            },
           ]
         }
       ]

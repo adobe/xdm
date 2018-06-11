@@ -20,69 +20,75 @@
         "fnName": "and",
         "params": [
           {
-            "nodeType": "fnApply",
-            "fnName": "all",
-            "varName": "_",
-            "range": {
-              "nodeType": "literal",
-              "literalType": "List",
-              "value": [
-                "uri:com:example:tag-0001",
-                "uri:com:example:tag-0002"
-              ]
-            },
-            "params": [
+            "nodeType": "quantification",
+            "quantifier": "all",
+            "variables": [
               {
-                "nodeType": "fnApply",
-                "fnName": "in",
-                "params": [
-                  {
-                    "nodeType": "varRef",
-                    "varName": "_"
-                  },
-                  {
-                    "nodeType": "fieldLookup",
-                    "fieldName": "xdm:tags",
-                    "object": {
+                "nodeType": "varDecl",
+                "varName": "_",
+                "from": {
+                  "nodeType": "literal",
+                  "literalType": "List",
+                  "value": [
+                    "uri:com:example:tag-0001",
+                    "uri:com:example:tag-0002"
+                  ]
+                },
+                "where": {
+                  "nodeType": "fnApply",
+                  "fnName": "in",
+                  "params": [
+                    {
                       "nodeType": "varRef",
-                      "varName": "o"
+                      "varName": "_"
+                    },
+                    {
+                      "nodeType": "fieldLookup",
+                      "fieldName": "xdm:tags",
+                      "object": {
+                        "nodeType": "varRef",
+                        "varName": "o"
+                      }
                     }
-                  }
-                ]
+                  ]
+                }
               }
             ]
           },
           {
-            "nodeType": "fnApply",
-            "fnName": "some",
-            "varName": "_",
-            "range": {
-              "nodeType": "fieldLookup",
-              "fieldName": "xdm:representations",
-              "object": {
-                "nodeType": "varRef",
-                "varName": "o"
-              }
-            },
-            "params": [
+            "nodeType": "quantification",
+            "quantifier": "some",
+            "variables": [
               {
-                "nodeType": "fnApply",
-                "fnName": "equals",
-                "params": [
-                  {
-                    "nodeType": "fieldLookup",
-                    "fieldName": "xdm:placement",
-                    "object": {
-                      "nodeType": "varRef",
-                      "varName": "_"
-                    }
-                  },
-                  {
-                    "nodeType": "literal",
-                    "literalType": "String",
-                    "value": "uri:com:example:placement-1001"
+                "nodeType": "varDecl",
+                "varName": "_",
+                "from": {
+                  "nodeType": "fieldLookup",
+                  "fieldName": "xdm:representations",
+                  "object": {
+                    "nodeType": "varRef",
+                    "varName": "o"
                   }
-                ]
+                },
+                "where": {
+                  "nodeType": "fnApply",
+                  "fnName": "equals",
+                  "params": [
+                    {
+                      "nodeType": "fieldLookup",
+                      "fieldName": "xdm:placement",
+                      "object": {
+                        "nodeType": "varRef",
+                        "varName": "_"
+                      }
+                    },
+                    {
+                      "nodeType": "literal",
+                      "literalType": "String",
+                      "value": "uri:com:example:placement-1001"
+                    }
+                  ]
+                }
               }
             ]
           },

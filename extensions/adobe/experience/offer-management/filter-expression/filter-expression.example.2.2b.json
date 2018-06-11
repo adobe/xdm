@@ -16,35 +16,38 @@
         ]
       },
       "where": {
-        "nodeType": "fnApply",
-        "fnName": "some",
-        "varName": "_",
-        "range": {
-          "nodeType": "literal",
-          "literalType": "List",
-          "value": [
-            "uri:com:example:tag-0001",
-            "uri:com:example:tag-0002"
-          ]
-        },
-        "params": [
+        "nodeType": "quantification",
+        "quantifier": "some",
+        "variables": [
           {
-            "nodeType": "fnApply",
-            "fnName": "in",
-            "params": [
-              {
-                "nodeType": "varRef",
-                "varName": "_"
-              },
-              {
-                "nodeType": "fieldLookup",
-                "fieldName": "xdm:tags",
-                "object": {
+            "nodeType": "varDecl",
+            "varName": "t",
+            "from": {
+              "nodeType": "literal",
+              "literalType": "List",
+              "value": [
+                "uri:com:example:tag-0001",
+                "uri:com:example:tag-0002"
+              ]
+            },
+            "where": {
+              "nodeType": "fnApply",
+              "fnName": "in",
+              "params": [
+                {
                   "nodeType": "varRef",
-                  "varName": "o"
+                  "varName": "t"
+                },
+                {
+                  "nodeType": "fieldLookup",
+                  "fieldName": "xdm:tags",
+                  "object": {
+                    "nodeType": "varRef",
+                    "varName": "o"
+                  }
                 }
-              }
-            ]
+              ]
+            }
           }
         ]
       }

@@ -20,39 +20,42 @@
         "fnName": "and",
         "params": [
           {
-            "nodeType": "fnApply",
-            "fnName": "some",
-            "varName": "_",
-            "range": {
-              "nodeType": "literal",
-              "literalType": "List",
-              "value": [
-                "uri:com:example:placement-1001",
-                "uri:com:example:placement-1002"
-              ]
-            },
-            "params": [
+            "nodeType": "quantification",
+            "quantifier": "some",
+            "variables": [
               {
-                "nodeType": "fnApply",
-                "fnName": "in",
-                "params": [
-                  {
-                    "nodeType": "varRef",
-                    "varName": "_"
-                  },
-                  {
-                    "nodeType": "fieldLookup",
-                    "fieldName": "xdm:placement",
-                    "object": {
+                "nodeType": "varDecl",
+                "varName": "p",
+                "from": {
+                  "nodeType": "literal",
+                  "literalType": "List",
+                  "value": [
+                    "uri:com:example:placement-1001",
+                    "uri:com:example:placement-1002"
+                  ]
+                },
+                "where": {
+                  "nodeType": "fnApply",
+                  "fnName": "in",
+                  "params": [
+                    {
+                      "nodeType": "varRef",
+                      "varName": "p"
+                    },
+                    {
                       "nodeType": "fieldLookup",
-                      "fieldName": "xdm:representations",
+                      "fieldName": "xdm:placement",
                       "object": {
-                        "nodeType": "varRef",
-                        "varName": "o"
+                        "nodeType": "fieldLookup",
+                        "fieldName": "xdm:representations",
+                        "object": {
+                          "nodeType": "varRef",
+                          "varName": "o"
+                        }
                       }
                     }
-                  }
-                ]
+                  ]
+                }
               }
             ]
           },

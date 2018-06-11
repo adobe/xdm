@@ -4,13 +4,11 @@ Examples for filters using placement as the constraint
 Example 1.1
 ---
 All offers that have at least one representation for offer placement "uri:com:example:placement-1001"
-Note the reference to the exists-quantifier's range (domain) variable. The reference `_` is implicitly available in the predicate and represents one element from the list that is iterated over.
 
 ```
 select o from modelInstances("https://ns.adobe.com/experience/offer-management/offer") where 
-  some (o.xdm:representations -> 
-    _.xdm:placement = "uri:com:example:placement-1001"
-  )
+  some r from o.xdm:representations where 
+    r.xdm:placement = "uri:com:example:placement-1001"
 ```
 
 Also note that the example 1.1 could be written by using the `in` operator because the quantifier is existiential quantifier (`some`).
@@ -19,7 +17,7 @@ For intermediate array properties, especially for paths that contain multiple ar
 
 ```
 select o from modelInstances("https://ns.adobe.com/experience/offer-management/offer") where 
-  "uri:com:example:placement-1001" in o.xdm:representation[*].xdm:placement
+  "uri:com:example:placement-1001" in o.xdm:representation.xdm:placement
 ```
 
 
@@ -30,19 +28,20 @@ Note that here, compared to example 1.1 the domain of the exists-quantifier (the
 
 ```
 select o from modelInstances("https://ns.adobe.com/experience/offer-management/offer") where 
-  some (["uri:com:example:placement-1001", "uri:com:example:placement-1002"] ->  
-    _ in o.xdm:representations[*].xdm:placement
+  some p from ["uri:com:example:placement-1001", "uri:com:example:placement-1002"] where 
+    p in o.xdm:representations.xdm:placement
   )
 ```
 
 Example 1.3
 ---
 All offers that have at least one representation referencing an offer placement from one of the list: "uri:com:example:placement-1001", "uri:com:example:placement-1002" and have the status 'approved'.
+Note the parenthesis to separate the prodicate that belongs to the `some` expression from the second part of the predicate that applies to the `select` expression.
 
 ```
 select o from modelInstances("https://ns.adobe.com/experience/offer-management/offer") where 
-  some (["uri:com:example:placement-1001", "uri:com:example:placement-1002"] ->  
-    _ in o.xdm:representations[*].xdm:placement
+  ( some p from ["uri:com:example:placement-1001", "uri:com:example:placement-1002"] where  
+    p in o.xdm:representations.xdm:placement
   ) 
   and o.status = "approved"
 ```
@@ -69,18 +68,16 @@ Conceptually, there is an iterator over the list of literals and the iteration b
 
 ```
 select o from modelInstances("https://ns.adobe.com/experience/offer-management/offer") where 
-  some (["uri:com:example:tag-1001", "uri:com:example:tag-1002"] ->  
-    _ in o.xdm:tags
-  )
+  some t from ["uri:com:example:tag-1001", "uri:com:example:tag-1002"] where  
+    t in o.xdm:tags
 ```
 
 Also note that in this case, we could also evaluate the exists-quantifier by ranging over the offer's tag array and testing, one by one of those tags for containment in the list of literals provided:
 
 ```
 select o from modelInstances("https://ns.adobe.com/experience/offer-management/offer") where 
-  some (o.xdm:tags ->  
-    _ in ["uri:com:example:tag-1001", "uri:com:example:tag-1002"]
-  )
+  some t from o.xdm:tags where  
+    t in ["uri:com:example:tag-1001", "uri:com:example:tag-1002"]
 ```
 
 This works because the not-empty-test for an intersection of two lists commutes.
@@ -89,7 +86,13 @@ Example 2.3
 ---
 All offers that have at least all of the tags ["uri:com:example:tag-1001", "uri:com:example:tag-1002"]. Note that offers can have additional tags not tested in this expression
 Conceptually, there is an iterator over the list of literals and the iteration breaks with the first element for which the predicate evaluates to `false`, making the overall quantifier `false`. If the iterator completes with all elements evaluating the predicate to `true` then the overall quantifier evaluates to `true` 
-`select o from xdm:https://ns.adobe.com/experience/offer-management/offer where all (["uri:com:example:tag-1001", "uri:com:example:tag-1002"] ->  _ in o.xdm:tags)`
+
+```
+select o from xdm:https://ns.adobe.com/experience/offer-management/offer where 
+  all t from ["uri:com:example:tag-1001", "uri:com:example:tag-1002"] where  
+    t in o.xdm:tags
+```
+
 Also note that in this case iterating in the quantifier over all the offer's tags would not work because an offer can have additional tags that we skip in our test. 
 As long as it has *all* the tags we are testing for, ie the literals are a sub-set, the offer qualifies. The sub-set test of two lists does not commute.
 
@@ -99,29 +102,29 @@ All offers that have at least all of the tags ["uri:com:example:tag-1001", "uri:
 
 ```
 select o from modelInstances("https://ns.adobe.com/experience/offer-management/offer") where 
-  all (["uri:com:example:tag-1001", "uri:com:example:tag-1002"] ->  
-    _ in o.xdm:tags
-  ) 
+  ( all t from ["uri:com:example:tag-1001", "uri:com:example:tag-1002"] where  
+    t in o.xdm:tags )
   and o.status = "approved"
 ```
 
 Example 2.5
 ---
-All offers that have (at least) all of the tags ["uri:com:example:tag-1001", "uri:com:example:tag-1002"] and at least one representation for offer placement "uri:com:example:placement-1001" and have the status 'approved'. 
+All offers that have all of the tags ["uri:com:example:tag-1001", "uri:com:example:tag-1002"] - they could have additional ones - and at least one representation for offer placement "uri:com:example:placement-1001" and have the status 'approved'. 
 This is a combination of Example 2.4 and 1.1.
 
 ```
 select o from modelInstances("https://ns.adobe.com/experience/offer-management/offer") where 
-  all (["uri:com:example:tag-1001", "uri:com:example:tag-1002"] ->  
+  ( all _ from ["uri:com:example:tag-1001", "uri:com:example:tag-1002"] where  
     _ in o.xdm:tags
   ) 
-  and some (o.xdm:representations -> 
+  and ( some _ from o.xdm:representations where 
     _.xdm:placement = "uri:com:example:placement-1001"
   ) 
   and o.status = "approved"
 ```
 
-Note that the scope of the two `_` references is limited to the predicate of the quantifier, but the scope of the variable `o` is ranging across the two quantifiers.
+Note that the scope of the two `_` variables is limited to the predicate of the quantifier where they were decrared, but the scope of the variable `o` is ranging across the two quantifiers.
+To improve readability, it is encouraged to use different variable names.
 
 Example 2.6
 ---
@@ -138,8 +141,8 @@ select o from modelInstances("https://ns.adobe.com/experience/offer-management/o
     "uri:com:example:offer-10013",
     "uri:com:example:offer-10005",
     "uri:com:example:offer-10022"] 
-  and some (o.xdm:representation -> 
-    _.xdm:placement = "uri:com:example:placement-1001"
+  and ( some r from o.xdm:representation where 
+    r.xdm:placement = "uri:com:example:placement-1001"
   ) 
   and o.status = "approved"
 ```
@@ -149,14 +152,37 @@ Examples for profile expressions
 
 Example 3.1
 ---
-All profiles who's person record has a first name 'Dennis' or has a last name 'Kehrig' and has at least one experience event that happened in Tokyo.
+All profiles who's person record has a first name 'Dennis' or has a last name 'Kehrig' or has at all experience events happening in Tokyo.
+Let's see first how this can be expressed just with the select expression. Note that the `or` connector and the `all` quantifier will not allow us to simply concatenate the profile and experience events variable declarations together as in:
 
 ```
-select p from modelInstances("https://ns.adobe.com/xdm/context/profile"),
-       x from p.xEvent where
- p.xdm:person.xdm:firstName = "Dennis"
+ ... p from modelInstances("https://ns.adobe.com/xdm/context/profile"),
+     x from modelInstances("https://ns.adobe.com/xdm/context/experienceevent",p) where ...
+```
+
+Here is the correct select expression:
+
+```
+select p from modelInstances("https://ns.adobe.com/xdm/context/profile") where
+   p.xdm:person.xdm:firstName = "Dennis"
  or
- p.xdm:person.xdm:lastName = "Kehrig"
+   p.xdm:person.xdm:lastName = "Kehrig"
  or
- x.xdm:placecontext.xdm:geo.xdm:city = "Tōkyō"
+   (select x from modelInstances("https://ns.adobe.com/xdm/context/experienceevent",p) where
+     x.xdm:placecontext.xdm:geo.xdm:city = "Tōkyō"
+   )
+   .count() =
+   (select x from modelInstances("https://ns.adobe.com/xdm/context/experienceevent",p))
+```
+
+This can be expressed much more concise when using quantification instead of counting the results with and without the predicate.
+
+```
+select p from modelInstances("https://ns.adobe.com/xdm/context/profile") where
+    p.xdm:person.xdm:firstName = "Dennis"
+  or
+    p.xdm:person.xdm:lastName = "Kehrig"
+  or
+    all x from modelInstances("https://ns.adobe.com/xdm/context/experienceevent",p) where
+      x.xdm:placecontext.xdm:geo.xdm:city = "Tōkyō"
 ```

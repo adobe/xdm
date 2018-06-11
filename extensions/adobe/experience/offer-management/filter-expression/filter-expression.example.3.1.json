@@ -5,22 +5,19 @@
       "nodeType": "varDecl",
       "varName": "p",
       "from": {
-        "nodeType": "literal",
-        "literalType": "XDMObject",
-        "value": "https://ns.adobe.com/xdm/context/profile"
-      }
-    },
-    {
-      "nodeType": "varDecl",
-      "varName": "x",
-      "from": {
-        "nodeType": "literal",
-        "literalType": "XDMObject",
-        "value": "https://ns.adobe.com/xdm/context/experienceevent"
+        "nodeType": "fnApply",
+        "fnName": "modelInstances",
+        "params": [
+          {
+            "nodeType": "literal",
+            "literalType": "XDMObject",
+            "value": "https://ns.adobe.com/xdm/context/profile"
+          }
+        ]
       },
       "where": {
-        "fnName": "or",
         "nodeType": "fnApply",
+        "fnName": "or",
         "params": [
           {
             "nodeType": "fnApply",
@@ -69,29 +66,54 @@
             ]
           },
           {
-            "nodeType": "fnApply",
-            "fnName": "equals",
-            "params": [
+            "nodeType": "quantification",
+            "quantifier": "all",
+            "variables": [
               {
-                "nodeType": "fieldLookup",
-                "fieldName": "xdm:city",
-                "object": {
-                  "nodeType": "fieldLookup",
-                  "fieldName": "xdm:geo",
-                  "object": {
-                    "nodeType": "fieldLookup",
-                    "fieldName": "xdm:placecontext",
-                    "object": {
+                "nodeType": "varDecl",
+                "varName": "x",
+                "from": {
+                  "nodeType": "fnApply",
+                  "fnName": "modelInstances",
+                  "params": [
+                    {
+                      "nodeType": "literal",
+                      "literalType": "XDMObject",
+                      "value": "https://ns.adobe.com/xdm/context/experienceevent"
+                    },
+                    {
                       "nodeType": "varRef",
-                      "varName": "x"
+                      "varName": "p"
                     }
-                  }
+                  ]
+                },
+                "where": {
+                  "nodeType": "fnApply",
+                  "fnName": "=",
+                  "params": [
+                    {
+                      "nodeType": "fieldLookup",
+                      "fieldName": "xdm:city",
+                      "object": {
+                        "nodeType": "fieldLookup",
+                        "fieldName": "xdm:geo",
+                        "object": {
+                          "nodeType": "fieldLookup",
+                          "fieldName": "xdm:placecontext",
+                          "object": {
+                            "nodeType": "varRef",
+                            "varName": "x"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "literalType": "String",
+                      "nodeType": "literal",
+                      "value": "Tōkyō"
+                    }
+                  ]
                 }
-              },
-              {
-                "literalType": "String",
-                "nodeType": "literal",
-                "value": "Tōkyō"
               }
             ]
           }

@@ -16,36 +16,39 @@
         ]
       },
       "where": {
-        "nodeType": "fnApply",
-        "fnName": "some",
-        "varName": "_",
-        "range": {
-          "nodeType": "fieldLookup",
-          "fieldName": "xdm:representations",
-          "object": {
-            "nodeType": "varRef",
-            "varName": "o"
-          }
-        },
-        "params": [
+        "nodeType": "quantification",
+        "quantifier": "some",
+        "variables": [
           {
-            "nodeType": "fnApply",
-            "fnName": "equals",
-            "params": [
-              {
-                "nodeType": "fieldLookup",
-                "fieldName": "xdm:placement",
-                "object": {
-                  "nodeType": "varRef",
-                  "varName": "_"
-                }
-              },
-              {
-                "nodeType": "literal",
-                "literalType": "String",
-                "value": "uri:com:example:placement-1001"
+            "nodeType": "varDecl",
+            "varName": "r",
+            "from": {
+              "nodeType": "fieldLookup",
+              "fieldName": "xdm:representations",
+              "object": {
+                "nodeType": "varRef",
+                "varName": "o"
               }
-            ]
+            },
+            "where": {
+              "nodeType": "fnApply",
+              "fnName": "equals",
+              "params": [
+                {
+                  "nodeType": "fieldLookup",
+                  "fieldName": "xdm:placement",
+                  "object": {
+                    "nodeType": "varRef",
+                    "varName": "r"
+                  }
+                },
+                {
+                  "nodeType": "literal",
+                  "literalType": "String",
+                  "value": "uri:com:example:placement-1001"
+                }
+              ]
+            }
           }
         ]
       }

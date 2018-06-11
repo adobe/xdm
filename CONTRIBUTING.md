@@ -33,7 +33,7 @@ Where possible, include the Creative Commons Attribution 4.0 International (CC B
 
 ### Contributor License Agreement
 
-All third-party contributions to this project must be accompanied by a signed contributor license. This gives Adobe permission to redistribute your contributions as part of the project. Sign our CLA at [http://opensource.adobe.com/cla.html](http://opensource.adobe.com/cla.html). You only need to submit an Adobe CLA one time, so if you have submitted one
+All third-party contributions to this project must be accompanied by a signed contributor license. This gives Adobe permission to redistribute your contributions as part of the project. [Sign our CLA ](http://opensource.adobe.com/cla.html)! You only need to submit an [Adobe CLA](http://opensource.adobe.com/cla.html) one time.
 
 ### License Inclusion
 

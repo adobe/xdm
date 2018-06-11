@@ -10,7 +10,7 @@ XDM incorporates or builds a number of existing standards and specifications.
 | -------------------------------------------------------------------------------------------------------- | ------------------------------- | -------- |
 | [Microsoft CDM](https://docs.microsoft.com/en-us/common-data-service/entity-reference/common-data-model) | Data model for business         | Beta     |
 | [XMP](http://www.adobe.com/products/xmp.html)                                                            | Asset                           | Stable   |
-| [schema.org](http://schema.org)                                                                          | Busines schemas                 | Evolving |
+| [schema.org](http://schema.org)                                                                          | Business schemas                | Evolving |
 | [JSON Schema](http://json-schema.org)                                                                    | Representing data model         | Evolving |
 | [JSON Hypertext Application Language](https://tools.ietf.org/html/draft-kelly-json-hal-08)               | Expressing links between models | Evolving |
 | [EXIF](http://www.exif.org)                                                                              | Image metadata                  | Stable   |

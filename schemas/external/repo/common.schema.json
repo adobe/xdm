@@ -32,7 +32,7 @@
     },
     "date-properties": {
       "properties": {
-        "repo:createDate": {
+        "repo:createdDate": {
           "type": "string",
           "format": "date-time",
           "meta:immutable": true,

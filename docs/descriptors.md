@@ -13,7 +13,7 @@ Schema descriptors are defined in XDM using the `SchemaDescriptor` schema.
 
 While schema descriptors can be used to define metadata about a single schema, they are also common used to describe relationships between schemas. This mechanism can be used to link schemas together at the property level, defining the equivalent of "foreign key" relationships in a relational database.
 
-Details on relationship descriptors and their usage can be found [here](../schemas/common/descriptors/relationshipdescriptor.description.md).
+Details on relationship descriptors and their usage can be found [here](./reference/common/descriptors/relationshipdescriptor.schema.md).
 
 ## Update Policies
 

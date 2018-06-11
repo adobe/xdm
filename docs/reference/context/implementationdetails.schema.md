@@ -9,7 +9,7 @@ Details about the SDK, library or service used in an application's or web page's
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/implementationdetails.schema.json](context/implementationdetails.schema.json) |
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/implementationdetails.schema.json](context/implementationdetails.schema.json) |
 
 ## Implementation Details Example
 ```json
@@ -52,6 +52,7 @@ SDK or endpoint identifier. All SDKs or endpoints are identified through a URI, 
 | `https://ns.adobe.com/experience/analytics/appmeasurement` | Adobe App Measurement |
 | `https://ns.adobe.com/experience/analytics/mbox` | Adobe Target mBox |
 | `https://ns.adobe.com/experience/visitorapi` | Adobe Visitor Service |
+| `https://ns.adobe.com/experience/adcloud/viewability` | Adobe AdCloud Viewability |
 
 
 

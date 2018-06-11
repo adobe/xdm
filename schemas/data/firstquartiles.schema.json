@@ -1,0 +1,50 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/data/firstquartiles",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "first-quartiles",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/metricdefinition"],
+  "description": "The metric first-quartiles describes a digital video which played for at least 25% of the total duration.",
+  "definitions": {
+    "metricdefinition": {
+      "properties": {
+        "@id": {
+          "type": "string",
+          "const": "xdm:firstQuartiles",
+          "description": "The unique identifier of this metric."
+        },
+        "schema:name": {
+          "type": "string",
+          "const": "metric: firstQuartiles",
+          "description":
+          "The advertising metric first-quartiles describes digital video which played for at least 25% of the total duration."
+        },
+        "xdm:measurement": {
+          "type": "string",
+          "description": "How to take measures of this metric.",
+          "const": "count"
+        },
+        "xdm:unit": {
+          "const": null
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/metricdefinition"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/metricdefinition"
+    }
+  ],
+  "required": ["@id", "schema:name", "xdm:measurement", "xdm:unit"],
+  "meta:status": "stabilizing"
+}

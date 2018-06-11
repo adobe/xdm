@@ -7,7 +7,7 @@
     ],
     "$id": "https://ns.adobe.com/xdm/data/metrics/direct-marketing/opens",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "opens",
+    "title": "Opens",
     "type": "object",
     "meta:extensible": true,
     "meta:extends": [
@@ -19,8 +19,7 @@
             "properties": {
                 "@id": {
                     "type": "string",
-                    "format": "uri",
-                    "const": "https://ns.adobe.com/xdm/data/metrics/direct-marketing/opens",
+                    "const": "xdm:opens",
                     "description": "The unique identifier of this metric."
                 },
                 "schema:name": {
@@ -42,6 +41,9 @@
     "allOf": [
         {
             "$ref": "#/definitions/metricdefinition"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/data/metricdefinition"
         }
     ],
     "required": [
@@ -50,11 +52,11 @@
         "xdm:measurement",
         "xdm:unit"
     ],
-    "meta:status": "experimental",
+    "meta:status": "stabilizing",
     "examples": [
         {
             "schema:name": "direct-marketing metric: opens",
-            "@id": "https://ns.adobe.com/xdm/data/metrics/direct-marketing/opens",
+            "@id": "xdm:opens",
             "xdm:measurement": "count",
             "xdm:unit": null
         }

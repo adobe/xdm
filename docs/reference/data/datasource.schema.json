@@ -44,7 +44,7 @@
             "$ref": "#/definitions/datasource"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stabilizing",
     "examples": [
         {
             "@id": "https://data.adobe.io/datasources/datasource-123",

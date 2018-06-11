@@ -42,6 +42,16 @@
       "title": "Adobe AdCloud End User IDs",
       "$ref": "https://ns.adobe.com/xdm/context/identity",
       "description": "Adobe Adcloud extension to End User IDs."
+    },
+    "https://ns.adobe.com/experience/emailid": {
+      "title": "Email Address IDs",
+      "$ref": "https://ns.adobe.com/xdm/context/identity",
+      "description": "Email addresses used as IDs."
+    },
+    "https://ns.adobe.com/experience/phonenumberid": {
+      "title": "Phone Number IDs",
+      "$ref": "https://ns.adobe.com/xdm/context/identity",
+      "description": "Phone numbers used as IDs."
     }
   },
   "meta:keys": {
@@ -49,8 +59,12 @@
     "https://ns.adobe.com/experience/tntid": "Adobe Target",
     "https://ns.adobe.com/experience/acid": "Adobe Campaign",
     "https://ns.adobe.com/experience/aaid": "Adobe Analytics",
+    "https://ns.adobe.com/experience/aacustomid":
+      "Adobe Analytics Custom",
     "https://ns.adobe.com/experience/mcid":
-      "Marketing Cloud Identity Core Service"
+      "Marketing Cloud Identity Core Service",
+    "https://ns.adobe.com/experience/emailid": "Email Address",
+    "https://ns.adobe.com/experience/phonenumberid": "Phone Number"
   },
   "patternProperties": {
     ".+://.+": {

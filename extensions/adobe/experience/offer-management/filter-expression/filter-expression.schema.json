@@ -89,7 +89,8 @@
         "Integer",
         "Boolean",
         "List",
-        "XDMObject"
+        "XDMObject",
+        "QueryString"
       ],
       "meta:enum": {
         "String": "A string literal",
@@ -97,7 +98,8 @@
         "Integer": "An integer literal",
         "Boolean": "A boolean literal",
         "List": "An array of literals",
-        "XDMObject": "A sting denoting a reference of an XDM schema"
+        "XDMObject": "A sting denoting a reference of an XDM schema",
+        "QueryString": "A sting denoting a URL of a query. Used in function \"modeInstances\""
       }
     },
 
@@ -433,7 +435,7 @@
         },
         "fnName": {
           "type": "string",
-          "const": "equanls"
+          "const": "equals"
         },
         "params" : {
           "type": "array",

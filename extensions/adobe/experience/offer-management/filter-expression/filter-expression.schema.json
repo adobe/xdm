@@ -32,7 +32,7 @@
         "fnCreate": "Create a function.",
         "literal": "Prodcue a value from a literal",
         "fieldLookup": "Produce a value from an object by accessing one of its fields",
-        "quantification": "",
+        "quantification": "Verify how many objects in a set satisfy the provided condition",
         "select": "Produce a list from a list of inputs by evaluating a projection and a selection expression for every element of the input list.",
         "varDecl": "Sub-structure of the select expression that binds a variable to the elements matching a projection and a selection expression. The value is made available for reference via a variable name to other sub-select expressions",
         "varRef": "Iterate over a list of values by referencing a variable name that denotes a list element previously qualified (evaluated in preceeding variable varDecl)."
@@ -55,40 +55,36 @@
         "notIn",
         "isNull",
         "isNotNull",
-        "equals",
-        "notEquals",
         "modelInstances"
       ],
       "meta:enum": {
         "and": "An n-ary AND function. Map a list of boolean values to a single boolean value. Produces 'true' if and only if all input values are 'true', otherwise produces 'false'.",
         "or": "An n-ary OR function. Map a list of boolean values to a single boolean value. Produces 'true' if and only if any of the input values is 'true', otherwise produces 'false'.",
-        "=": "Produce a boolean value from two input values by comparing them and returning true if neither value is null and they are  equal and returns false otherwise. The second value is coerced to the type of the first value before applying the != operator.",
-        "!=": "Produce a boolean value from two input values by comparing them and returning true if neither value is null and they are not equal and returns alse otherwise. The second value is coerced to the type of the first value before applying the != operator.",
-        ">": "Produce a boolean value from two input values by comparing them and returning true if neither value is null and the first one is greater than the second and returns false otherwise. The second value is coerced to the type of the first value before applying the operator.",
-        ">=": "Produce a boolean value from two input values by comparing them and returning true if neither value is null and the first one is greater than or equals the second and returns false otherwise. The second value is coerced to the type of the first value before applying the operator.",
-        "<=": "Produce a boolean value from two input values by comparing them and returning true if neither value is null and the first one is less than or equals the second and returns false otherwise. The second value is coerced to the type of the first value before applying the operator.",
-        "<": "Produce a boolean value from two input values by comparing them and returning true if neither value is null and the first one is less than the second and returns false otherwise. The second value is coerced to the type of the first value before applying the operator.",
-        "in": "Produce a boolean value from a scalar and a vector input value. If the scalar is eqaul to one or more of the vector values the evaluation results in the boolean value 'true' and 'false' otherwise. The second value is coerced to a list type of the first value before applying the equality check operator.",
+        "=": "Produce a boolean value from two input values by comparing them and returning true if neither value is null and they are equal and returns false otherwise. The second value is coerced to the type of the first value before applying the = operator.",
+        "!=": "Produce a boolean value from two input values by comparing them and returning true if neither value is null and they are not equal and returns false otherwise. The second value is coerced to the type of the first value before applying the != operator.",
+        ">": "Produce a boolean value from two input values by comparing them and returning true if neither value is null and the first one is greater than the second and returns false otherwise. The second value is coerced to the type of the first value before applying the > operator.",
+        ">=": "Produce a boolean value from two input values by comparing them and returning true if neither value is null and the first one is greater than or equals the second and returns false otherwise. The second value is coerced to the type of the first value before applying the >= operator.",
+        "<=": "Produce a boolean value from two input values by comparing them and returning true if neither value is null and the first one is less than or equals the second and returns false otherwise. The second value is coerced to the type of the first value before applying the <= operator.",
+        "<": "Produce a boolean value from two input values by comparing them and returning true if neither value is null and the first one is less than the second and returns false otherwise. The second value is coerced to the type of the first value before applying the < operator.",
+        "in": "Produce a boolean value from a scalar and a vector input value. If the scalar is equal to one or more of the vector values the evaluation results in the boolean value 'true' and 'false' otherwise. The second value is coerced to a list type of the first value before applying the equality check operator.",
         "notIn": "Produce a boolean value from a scalar and a vector input value. If the scalar is equal to none of the vector values the evaluation results in the boolean value 'true' and 'false' otherwise. The second value is coerced to a list type of the first value before applying the equality check operator.",
         "isNull": "Produce a boolean value from a scalar input value. If the scalar is null, the evaluation results in the boolean value 'true' and 'false' otherwise",
         "isNotNull": "Produce a boolean value from a scalar input value. If the scalar is not null, the evaluation results in the boolean value 'true' and 'false' otherwise",
         "all": "The universal quantifier of first order logic. Produce a boolean value from a list of values by applying an n-ary function to each item and returning true if for all of the items the n-ary function evaluates to true",
-        "notEqualsTo": "Produce a boolean value from two string values by comparing them and returning true if they are not equal and false otherwise, an additional argument specifies if compariosn case-sensitive or not. The second value is coerced to the type of the first value before applying the equals operator.",
         "modelInstances": "Reference the set of all instances of a given model"
       }
     },
     "literal-type": {
       "type": "string",
       "title": "Literal Type Identifier",
-      "description": "Literal Type Identifier: String, Number, Integer, Boolean, Date, DateTime",
+      "description": "Literal Type Identifier: String, Number, Integer, Boolean, Date, DateTime, XDMObject",
       "enum": [
         "String",
         "Number",
         "Integer",
         "Boolean",
         "List",
-        "XDMObject",
-        "QueryString"
+        "XDMObject"
       ],
       "meta:enum": {
         "String": "A string literal",
@@ -96,8 +92,7 @@
         "Integer": "An integer literal",
         "Boolean": "A boolean literal",
         "List": "An array of literals",
-        "XDMObject": "A sting denoting a reference of an XDM schema",
-        "QueryString": "A sting denoting a URL of a query. Used in function \"modeInstances\""
+        "XDMObject": "A string denoting a reference of an XDM schema"
       }
     },
     "quantifier-type": {
@@ -113,7 +108,7 @@
       "meta:enum": {
         "all": "The All quantifier",
         "some": "The Exists quantifier",
-        "none": "The negated exists quantifier. 'There does not exist one'",
+        "none": "The negated Exists quantifier. 'There does not exist one'",
         "one": "There exists one and only one."
       }
     },
@@ -172,12 +167,6 @@
             },
             {
               "$ref": "#/definitions/function-content-not-null"
-            },
-            {
-              "$ref": "#/definitions/function-content-equals-string"
-            },
-            {
-              "$ref": "#/definitions/function-content-not-equals-string"
             },
             {
               "$ref": "#/definitions/function-content-model-instances"
@@ -457,7 +446,7 @@
       },
       "additionalProperties": false
     },
-    "function-content-not-equals-string": {
+    "function-content-not-equal-to-string": {
       "properties": {
         "nodeType": {
           "type": "string",
@@ -465,7 +454,7 @@
         },
         "fnName": {
           "type": "string",
-          "const": "notEquals"
+          "const": "notEqualTo"
         },
         "params" : {
           "type": "array",
@@ -575,9 +564,6 @@
             },
             {
               "$ref": "#/definitions/literal-xdmobject-content"
-            },
-            {
-              "$ref": "#/definitions/literal-query-string-content"
             }
           ]
         }
@@ -674,8 +660,7 @@
           "const": "XDMObject"
         },
         "value" : {
-          "type": "string",
-          "format": "uri"
+          "type": "string"
         }
       },
       "additionalProperties": false

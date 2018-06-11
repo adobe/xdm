@@ -54,7 +54,9 @@ Additionally, this schema can include a property that describes the data source 
 | [https://ns.adobe.com/experience/aaid](#https//ns.adobe.com/experience/aaid) | Identity | Optional | End User IDs (this schema) |
 | [https://ns.adobe.com/experience/acid](#https//ns.adobe.com/experience/acid) | Identity | Optional | End User IDs (this schema) |
 | [https://ns.adobe.com/experience/adcloud](#https//ns.adobe.com/experience/adcloud) | Identity | Optional | End User IDs (this schema) |
+| [https://ns.adobe.com/experience/emailid](#https//ns.adobe.com/experience/emailid) | Identity | Optional | End User IDs (this schema) |
 | [https://ns.adobe.com/experience/mcid](#https//ns.adobe.com/experience/mcid) | Identity | Optional | End User IDs (this schema) |
+| [https://ns.adobe.com/experience/phonenumberid](#https//ns.adobe.com/experience/phonenumberid) | Identity | Optional | End User IDs (this schema) |
 | [https://ns.adobe.com/experience/tntid](#https//ns.adobe.com/experience/tntid) | Identity | Optional | End User IDs (this schema) |
 | `.+//.+` | reference | Pattern | End User IDs (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -135,6 +137,25 @@ Adobe Adcloud extension to End User IDs.
 
 
 
+## https://ns.adobe.com/experience/emailid
+### Email Address IDs
+
+Email addresses used as IDs.
+
+`https://ns.adobe.com/experience/emailid`
+* is optional
+* type: Identity
+* defined in this schema
+
+### https://ns.adobe.com/experience/emailid Type
+
+
+* [Identity](identity.schema.md) – `https://ns.adobe.com/xdm/context/identity`
+
+
+
+
+
 ## https://ns.adobe.com/experience/mcid
 ### Adobe Marketing Cloud ID
 
@@ -146,6 +167,25 @@ A unique identifier from Adobe Marketing Cloud.
 * defined in this schema
 
 ### https://ns.adobe.com/experience/mcid Type
+
+
+* [Identity](identity.schema.md) – `https://ns.adobe.com/xdm/context/identity`
+
+
+
+
+
+## https://ns.adobe.com/experience/phonenumberid
+### Phone Number IDs
+
+Phone numbers used as IDs.
+
+`https://ns.adobe.com/experience/phonenumberid`
+* is optional
+* type: Identity
+* defined in this schema
+
+### https://ns.adobe.com/experience/phonenumberid Type
 
 
 * [Identity](identity.schema.md) – `https://ns.adobe.com/xdm/context/identity`

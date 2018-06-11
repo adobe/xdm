@@ -42,6 +42,9 @@
     "allOf": [
         {
             "$ref": "#/definitions/metricdefinition"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/data/metricdefinition"
         }
     ],
     "required": [

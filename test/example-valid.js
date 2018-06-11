@@ -24,8 +24,19 @@ const validator = new Ajv({
 });
 
 describe("Loading of schemas", () => {
-  validator.addMetaSchema(JSON.parse(fs.readFileSync("meta.schema.json")));
+  //validator.addMetaSchema(JSON.parse(fs.readFileSync("meta.schema.json")));
 
+  const ajv = new Ajv({
+    "allErrors": true,
+    "extendRefs": true //we need to change this to "fail" for cleaner schemas
+  });
+  
+  ajv
+    .addSchema(JSON.parse(fs.readFileSync("./schemas/common/descriptors/schemadescriptor.schema.json")))
+    .addSchema(JSON.parse(fs.readFileSync("./schemas/common/descriptors/itemselector.schema.json")))
+    .addSchema(JSON.parse(fs.readFileSync("./schemas/common/extensible.schema.json")))
+    .addSchema(JSON.parse(fs.readFileSync("./meta.schema.json")));
+  
   schemas.forEach(schema => {
     it("Loading " + schema, (done) => {
       assert.doesNotThrow(() => {
@@ -34,6 +45,9 @@ describe("Loading of schemas", () => {
           const mySchema = JSON.parse(data);
           allSchemas[schema] = mySchema;
           validator.addSchema(mySchema);
+
+          assert.equal(ajv.validate("https://ns.adobe.com/xdm/meta", mySchema), true, "Schema is not valid according to meta.schema.json: " + ajv.errorsText());
+
           done();
         });
       });

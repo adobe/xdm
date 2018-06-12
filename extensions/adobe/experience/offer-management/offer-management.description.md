@@ -15,3 +15,6 @@ The main concepts in the domain of Offer Management are:
   - Offer Activities reference an Offer Filter object that is used reduce the offer choices by topic
   - Offer Activities reference an Offer Placement object that is used reduce the offer choices by their ability to fit technically into the overall experience, they also define the actual place in the experience where the winning selection's content will be inserted
   - Offer Activities reference a single Fallback Offer that is used when all other contraints are applied and the resulting list of sutable offers is empty.
+
+
+![](offer_model.png)

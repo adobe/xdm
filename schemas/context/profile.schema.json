@@ -96,7 +96,7 @@
           "$ref": "https://ns.adobe.com/xdm/common/geounit",
           "description":
             "The geographical unit within the organization owning the profile. This can be used to reference the geographical information maintained in another dataset."
-        },        
+        },
         "xdm:preferredLanguage": {
           "title": "Preferred Language",
           "type": "string",
@@ -159,7 +159,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/common/auditable#/definitions/auditlog"
+      "$ref": "https://ns.adobe.com/xdm/common/auditable"
     },
     {
       "$ref": "#/definitions/profile"

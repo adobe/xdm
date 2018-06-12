@@ -63,7 +63,7 @@
                 },
                 "where": {
                   "nodeType": "fnApply",
-                  "fnName": "equals",
+                  "fnName": "=",
                   "params": [
                     {
                       "nodeType": "fieldLookup",
@@ -84,7 +84,7 @@
           },
           {
             "nodeType": "fnApply",
-            "fnName": "equals",
+            "fnName": "=",
             "params": [
               {
                 "nodeType": "fieldLookup",

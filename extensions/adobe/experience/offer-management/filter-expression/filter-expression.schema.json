@@ -433,7 +433,7 @@
         },
         "fnName": {
           "type": "string",
-          "const": "equals"
+          "const": "="
         },
         "params" : {
           "type": "array",
@@ -851,7 +851,7 @@
             },
             {
               "$ref": "#/definitions/variable-reference-content"
-            },
+            }
           ]
         }
       ]

@@ -56,6 +56,11 @@
             },
             {
               "type" : "boolean"
+            },
+            {
+              "title": "Segment Membership Propensity Payload",
+              "$ref": "https://ns.adobe.com/xdm/context/segmentMembershipPropensityPayload",
+              "description": "The propensity score associated with this segment membership"
             }
           ]
 

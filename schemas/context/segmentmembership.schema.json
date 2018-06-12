@@ -29,6 +29,37 @@
           "format": "date-time",
           "description": "The timestamp when the assertion of segment membership was made."
         },
+        "xdm:previousQualificationTimes": {
+          "title": "Previous Qualification Times",
+          "description": "The timestamp when the assertion of segment membership was made. DO WE WANT TO TRACK PREVIOUS PAYLOADS HERE",
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "xdm:payload" : {
+          "title" : "Payload",
+          "description": "Values that are direclty related with the segment realization. This payload exists with the same validUntil as the segment realization.",
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type" : "number"
+            },
+            {
+              "type" : "object"
+            },
+            {
+              "type" : "array"
+            },
+            {
+              "type" : "boolean"
+            }
+          ]
+
+        },
         "xdm:validUntil": {
           "title": "Valid Until",
           "type": "string",

@@ -2127,17 +2127,17 @@
                 "xdm:list1": {
                   "title": "List 1",
                   "description": "Custom list variable 1.",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref": "https://ns.adobe.com/experience/analytics/keyedlist"
                 },
                 "xdm:list2": {
                   "title": "List 2",
                   "description": "Custom list variable 2.",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref": "https://ns.adobe.com/experience/analytics/keyedlist"
                 },
                 "xdm:list3": {
                   "title": "List 3",
                   "description": "Custom list variable 3.",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref": "https://ns.adobe.com/experience/analytics/keyedlist"
                 }
               }
             },

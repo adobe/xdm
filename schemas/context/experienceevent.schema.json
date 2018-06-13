@@ -77,27 +77,32 @@
         "xdm:web": {
           "title": "Web",
           "$ref": "https://ns.adobe.com/xdm/context/webinfo",
-          "description": "The information related to web page and link of the ExperienceEvent."
+          "description":
+            "The information related to web page and link of the ExperienceEvent."
         },
         "xdm:directMarketing": {
           "title": "Direct Marketing",
           "$ref": "https://ns.adobe.com/xdm/context/direct-marketing",
-          "description": "The events and properties related to direct/outbound marketing such as email, direct mail, texts and in-app notifications."
+          "description":
+            "The events and properties related to direct/outbound marketing such as email, direct mail, texts and in-app notifications."
         },
         "xdm:marketing": {
           "title": "Marketing",
           "$ref": "https://ns.adobe.com/xdm/context/marketing",
-          "description": "The information related to marketing activities that are active with the touchpoint."
+          "description":
+            "The information related to marketing activities that are active with the touchpoint."
         },
         "xdm:placeContext": {
           "title": "Place Context",
           "$ref": "https://ns.adobe.com/xdm/context/placecontext",
-          "description": "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, working hours."
+          "description":
+            "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, working hours."
         },
         "xdm:channel": {
           "title": "Experience Channel",
-          "description": "The experience channel related to this ExperienceEvent.",
-          "$ref": "https://ns.adobe.com/xdm/channels/channel"
+          "description":
+            "The experience channel related to this ExperienceEvent.",
+            "$ref": "https://ns.adobe.com/xdm/channels/channel"
         },
         "xdm:advertising": {
           "title": "Advertising",
@@ -114,11 +119,7 @@
           }
         }
       },
-      "required": [
-        "@id",
-        "xdm:timestamp",
-        "xdm:endUserIDs"
-      ]
+      "required": ["@id", "xdm:timestamp", "xdm:endUserIDs"]
     }
   },
   "allOf": [

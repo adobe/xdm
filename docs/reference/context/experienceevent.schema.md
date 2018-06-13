@@ -410,6 +410,7 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
 | [xdm:marketing](#xdmmarketing) | Marketing | Optional | ExperienceEvent (this schema) |
 | [xdm:placeContext](#xdmplacecontext) | Place Context | Optional | ExperienceEvent (this schema) |
 | [xdm:productListItems](#xdmproductlistitems) | Product List Item | Optional | ExperienceEvent (this schema) |
+| [xdm:receivedTimestamp](#xdmreceivedtimestamp) | `string` | Optional | ExperienceEvent (this schema) |
 | [xdm:search](#xdmsearch) | Search | Optional | ExperienceEvent (this schema) |
 | [xdm:timestamp](#xdmtimestamp) | `string` | Optional | ExperienceEvent (this schema) |
 | [xdm:web](#xdmweb) | Web Information | Optional | ExperienceEvent (this schema) |
@@ -666,6 +667,27 @@ All items must be of the type:
 * [Product List Item](../content/productlistitem.schema.md) – `https://ns.adobe.com/xdm/content/productlistitem`
 
 
+
+
+
+
+
+
+## xdm:receivedTimestamp
+### Received Timestamp
+
+The time at which this interaction was received by a server.
+
+`xdm:receivedTimestamp`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:receivedTimestamp Type
+
+
+`string`
+* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
 
 
 

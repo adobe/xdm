@@ -1,0 +1,84 @@
+{
+  "@id": "https://data.adobe.io/experienceid-123459",
+  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+  "xdm:endUserIDs": {
+    "https://ns.adobe.com/experience/mcid": {
+      "@id": "https://data.adobe.io/entities/identity/92312748749128",
+      "xdm:namespace": {
+        "xdm:code": "ECID"
+      }
+    },
+    "https://ns.adobe.com/experience/aaid": {
+      "@id": "https://data.adobe.io/entities/identity/2394509340-30453470347",
+      "xdm:namespace": {
+        "xdm:code": "AVID"
+      }
+    }
+  },
+  "xdm:environment": {
+    "xdm:browserDetails": {
+      "xdm:userAgent": "AppleWebkit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "xdm:ipV4": "97.27.143.5"
+  },
+  "xdm:media": {
+    "xdm:media-timed": {
+      "xdm:primaryAssetReference": {
+        "@id": "15234430",
+        "xdm:name": "Floki Begs Helga for Freedom",
+        "xdm:duration": 87,
+        "xdm:showName": "nba_highlights",
+        "xdm:assetID": "2613953",
+        "xdm:showType": "episode",
+        "xdm:season": "N/A",
+        "xdm:episode": "one",
+        "xdm:genre": "sports",
+        "xdm:airDate": "2018-03-01",
+        "xdm:digitalDate": "2018-05-01",
+        "xdm:rating": "TV14",
+        "xdm:originator": "ESPN"
+      },
+      "xdm:primaryAssetViewReference": {
+        "@id": "1427461282884250114230",
+        "xdm:playerName": "watchespn",
+        "xdm:broadcastChannel": "WatchESPN",
+        "xdm:broadcastContentType": "VOD",
+        "xdm:streamFormat": "short",
+        "xdm:sdkVersion": {
+          "xdm:version": "1.0.8"
+        },
+        "xdm:vhlVersion": {
+          "xdm:version": "tvos-1.5.3.109-5c3dd2"
+        },
+        "xdm:broadcastNetwork": "nbcu",
+        "xdm:adLoadType": "2",
+        "xdm:dayPart": "DAY",
+        "xdm:sourceFeed": "http%3A%2F%2Fvod01.pure.centurylink.net%2Fhls%2Fvu%2F9083406%2FVUBX0280890106690980_38_3_M_HD.m3u8",
+        "xdm:sessionTimeout": 1800
+      },
+      "xdm:media-chapter": {
+        "xdm:chapterAssetReference": {
+          "@id": "2144511",
+          "xdm:name": "Chapter1",
+          "xdm:duration": 44
+        },
+        "xdm:chapterAssetViewDetails": {
+          "xdm:chapterPosition": 0,
+          "xdm:offset": 0
+        },
+        "xdm:loads": {
+          "xdm:value": 1
+        },
+        "xdm:completes": {
+          "xdm:value": 1
+        },
+        "xdm:timePlayed": {
+          "xdm:value": 44
+        },
+        "xdm:federated": {
+          "xdm:value": 0
+        }
+      }
+    }
+  }
+}

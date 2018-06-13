@@ -117,6 +117,11 @@
           "title": "Advertising",
           "$ref": "https://ns.adobe.com/xdm/context/advertising",
           "description": "The information related to advertising activity related to the experience event"
+        },
+        "xdm:media": {
+          "title": "Media",
+          "$ref": "https://ns.adobe.com/xdm/context/media",
+          "description": "The media activity information related to the experience event"
         }
       },
       "required": ["@id", "xdm:timestamp", "xdm:endUserIDs"]

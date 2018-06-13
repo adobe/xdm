@@ -1,0 +1,270 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/media-timed",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Timed Media Information",
+  "type": "object",
+  "meta:status": "experimental",
+  "description": "Top level schema for timed media experience events - main content, ads & chapters",
+  "properties": {
+    "xdm:primaryAssetReference": {
+      "title": "Primary Asset Reference",
+      "description": "Asset information about the main content that was played, but present on all ads and chapters that occur during the content's playback as well.",
+      "properties": {
+        "@id": {
+          "title": "Content ID",
+          "type": "string",
+          "description": "Content ID of the content, which can be used to tie back to other industry / CMS IDs."
+        },
+        "xdm:name": {
+          "title": "Media Name",
+          "type": "string",
+          "description": "This is the friendly (human-readable) name of the media."
+        },
+        "xdm:duration": {
+          "title": "Media Length/Runtime",
+          "type": "integer",
+          "description": "Clip Length/Runtime - This is the maximum length (or duration), in seconds, of the content being consumed."
+        },
+        "xdm:showName": {
+          "title": "Show Name",
+          "type": "string",
+          "description": "Program/Series Name."
+        },
+        "xdm:assetID": {
+          "title": "Asset ID",
+          "type": "string",
+          "description": "This is the unique identifier for the content of the video asset, such as the TV series episode identifier, movie asset identifier, or live event identifier. Typically these IDs are derived from metadata authorities such as EIDR, TMS/Gracenote, or Rovi. These identifiers can also be from other proprietary or in-house systems."
+        },
+        "xdm:showType": {
+          "title": "Show Type",
+          "type": "string",
+          "description": "The type of content e.g. Trailer, Full Episode."
+        },
+        "xdm:streamFormat": {
+          "title": "Stream Format",
+          "type": "string",
+          "description": "Free-form format of the stream (e.g. short, long)."
+        },
+        "xdm:season": {
+          "title": "Season",
+          "type": "string",
+          "description": "The season number the show belongs to."
+        },
+        "xdm:episode": {
+          "title": "Episode",
+          "type": "string",
+          "description": "The number of the episode."
+        },
+        "xdm:genre": {
+          "title": "Genre",
+          "type": "string",
+          "description": "Type or grouping of content as defined by content producer."
+        },
+        "xdm:airDate": {
+          "title": "First Air Date",
+          "type": "string",
+          "description": "The date when the content first aired on television."
+        },
+        "xdm:digitalDate": {
+          "title": "First Digital Date",
+          "type": "string",
+          "description": "The date when the content first aired on any digital channel or platform."
+        },
+        "xdm:rating": {
+          "title": "Content Rating",
+          "type": "string",
+          "description": "The rating as defined by TV Parental Guidelines."
+        },
+        "xdm:originator": {
+          "title": "Originator",
+          "type": "string",
+          "description": "The creator of the content."
+        }
+      },
+      "required": [
+        "@id",
+        "xdm:duration"
+      ]
+    },
+    "xdm:primaryAssetViewDetails": {
+      "title": "Primary Asset View Details",
+      "description": "View details for the main content playback, but present on all ads and chapters that occur during the content's playback as well.",
+      "properties": {
+        "@id": {
+          "title": "Media Session ID",
+          "type": "string",
+          "description": "Identifies an instance of a content stream unique to an individual playback."
+        },
+        "xdm:playerName": {
+          "title": "Content Player Name",
+          "type": "string",
+          "description": "Name of the player."
+        },
+        "xdm:broadcastChannel": {
+          "title": "Distribution Channel",
+          "type": "string",
+          "description": "Distribution channel or where the content was played."
+        },
+        "xdm:broadcastContentType": {
+          "title": "Broadcast Content Type",
+          "type": "string",
+          "description": "The type of the stream delivery.",
+          "meta:enum": {
+            "VOD": "Video-on-Demand",
+            "Live": "Live Streaming",
+            "Linear": "Linear playback of the media asset",
+            "UGG": "User-generated Content",
+            "Radio": "Radio Show",
+            "Podcast": "Audio Postcast",
+            "Audiobook": "Audiobook"
+          }
+        },
+        "xdm:sdkVersion": {
+          "title": "Player SDK Version",
+          "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
+          "description": "The SDK version used by the player."
+        },
+        "xdm:vhlVersion": {
+          "title": "Tracking Library Version",
+          "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
+          "description": "The heartbeat SDK version used for the tracking session."
+        },
+        "xdm:broadcastNetwork": {
+          "title": "Broadcast Network",
+          "type": "string",
+          "description": "The programmer network name."
+        },
+        "xdm:adLoadType": {
+          "title": "Ad Load Type",
+          "type": "string",
+          "description": "The type of ad loaded as defined by each customer's internal representation."
+        },
+        "xdm:dayPart": {
+          "title": "Day Part",
+          "type": "string",
+          "description": "A property that defines the time of the day when the content was broadcast or played."
+        },
+        "xdm:sourceFeed": {
+          "title": "Feed Type",
+          "type": "string",
+          "description": "The type of feed. Can either represent actual feed-related data (e.g. EAST HD/SD), or the source of the feed (e.g. an URL)."
+        },
+        "xdm:sessionTimeout": {
+          "title": "Media Session Server Timeout",
+          "type": "integer",
+          "description": "Indicates the amount of time, in seconds, that passed between the user's last known interaction and the moment the session was closed."
+        },
+        "xdm:qoe": {
+          "title": "Quality of Experience",
+          "$ref": "https://ns.adobe.com/xdm/context/media-timed-qoe",
+          "description": "Timed media properties related to the content playback's quality of experience (QoE)."
+        }
+      },
+      "required": [
+        "@id",
+        "xdm:playerName",
+        "xdm:channel"
+      ]
+    },
+    "xdm:media-chapter": {
+      "title": "Media Chapter",
+      "$ref": "https://ns.adobe.com/xdm/context/media-chapter",
+      "description": "Timed media chapter namespace"
+    },
+    "xdm:loads": {
+      "title": "Loads",
+      "$ref": "https://ns.adobe.com/xdm/data/measure",
+      "description": "Describes the intention to play a timed media asset. It does not measure success, as the user might abandon the content before the first frame is viewed."
+    },
+    "xdm:completes": {
+      "title": "Completes",
+      "$ref": "https://ns.adobe.com/xdm/data/measure",
+      "description": "Indicates if a timed media asset was watched to completion - this does not necessarily mean the viewer watched the whole video; viewer could have skipped ahead."
+    },
+    "xdm:timePlayed": {
+      "title": "Time Spent",
+      "$ref": "https://ns.adobe.com/xdm/data/measure",
+      "description": "Describes the amount of time spent by a user on a specific timed media asset."
+    },
+    "xdm:federated": {
+      "title": "Federated",
+      "$ref": "https://ns.adobe.com/xdm/data/measure",
+      "description": "Indicates if an experience event was created through federation."
+    },
+    "xdm:starts": {
+      "title": "Starts",
+      "$ref": "https://ns.adobe.com/xdm/data/measure",
+      "description": "Indicates the first frame of the timed media asset was viewed - i.e. the viewer did not abandon during pre-roll ad, buffering, etc."
+    },
+    "xdm:mediaSegment": {
+      "title": "Content Segment",
+      "type": "string",
+      "description": "The interval that describes the part of the content that has been viewed (in minutes). The segment is computed as min and max of the playhead values during a playback session."
+    },
+    "xdm:mediaSegmentView": {
+      "title": "Content Segment View",
+      "$ref": "https://ns.adobe.com/xdm/data/measure",
+      "description": "Indicates whether at least one frame (not necessarily the first) was viewed."
+    },
+    "xdm:dropBeforeStart": {
+      "title": "Drop Before Start",
+      "$ref": "https://ns.adobe.com/xdm/data/measure",
+      "description": "Indicates the user abandoned the media stream before the first frame (e.g. during the pre-roll ad break, due to an error while loading the content from the CDN)."
+    },
+    "xdm:totalTimePlayed": {
+      "title": "Content Play",
+      "$ref": "https://ns.adobe.com/xdm/data/measure",
+      "description": "Describes the total amount of time spent by a user on a specific timed media asset, which includes time spent watching ads."
+    },
+    "xdm:progress10": {
+      "title": "10% Progress Marker",
+      "$ref": "https://ns.adobe.com/xdm/data/measure",
+      "description": "Indicates that the playhead passed the 10% marker of media based on stream length. The marker is only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted."
+    },
+    "xdm:firstQuartiles": {
+      "title": "25% Progress Marker",
+      "$ref": "https://ns.adobe.com/xdm/data/measure",
+      "description": "Indicates that the playhead passed the 25% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted."
+    },
+    "xdm:midpoints": {
+      "title": "50% Progress Marker",
+      "$ref": "https://ns.adobe.com/xdm/data/measure",
+      "description": "Indicates that the playhead passed the 50% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted."
+    },
+    "xdm:thirdQuartiles": {
+      "title": "75% Progress Marker",
+      "$ref": "https://ns.adobe.com/xdm/data/measure",
+      "description": "Indicates that the playhead passed the 75% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted."
+    },
+    "xdm:progress95": {
+      "title": "95% Progress Marker",
+      "$ref": "https://ns.adobe.com/xdm/data/measure",
+      "description": "Indicates that the playhead passed the 95% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted."
+    },
+    "xdm:resumes": {
+      "title": "Resumes",
+      "$ref": "https://ns.adobe.com/xdm/data/measure",
+      "description": "Marks each playback that was resumed after more than 30 minutes of buffer, pause, or stall period."
+    },
+    "xdm:pauses": {
+      "title": "Pauses",
+      "$ref": "https://ns.adobe.com/xdm/data/measure",
+      "description": "The number of pause periods that occurred during playback."
+    },
+    "xdm:pauseTime": {
+      "title": "Total Pause Duration",
+      "$ref": "https://ns.adobe.com/xdm/data/measure",
+      "description": "Describes the duration in which playback was paused by the user."
+    },
+    "required": [
+      "xdm:primaryAssetReference",
+      "xdm:primaryAssetViewDetails"
+    ]
+  }
+}

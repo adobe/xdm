@@ -20,21 +20,99 @@
           "description":
           "The runtime measured viewability specific details such as player volume, library version, window status, viewport/ad measured dimensions, etc."
         },
+        "xdm:adAssetReference": {
+          "title": "Ad Asset Reference",
+          "description": "Asset information about the ad captured by the experience event.",
+          "properties": {
+            "@id": {
+              "title": "Ad ID",
+              "type": "string",
+              "description": "Identifier of the ad asset."
+            },
+            "xdm:name": {
+              "title": "Ad Name",
+              "type": "string",
+              "description": "The friendly (human-readable) name of the ad asset."
+            },
+            "xdm:duration": {
+              "title": "Ad Length/Duration",
+              "type": "integer",
+              "description": "Length of ad asset in seconds."
+            }
+          },
+          "required": [
+            "@id",
+            "xdm:duration"
+          ]
+        },
+        "xdm:adAssetViewDetails": {
+          "title": "Ad Asset View Details",
+          "description": "View details for the ad playback captured by the experience event.",
+          "properties": {
+            "xdm:playerName": {
+              "title": "Ad Player Name",
+              "type": "string",
+              "description": "The name of the player responsible for rendering the ad."
+            },
+            "xdm:podPosition": {
+              "title": "Ad Position in Pod",
+              "type": "integer",
+              "description": "The position (index) of the ad inside the parent ad break. The first ad has index 0, the second 1, and so on."
+            },
+            "xdm:adBreak": {
+              "properties": {
+                "@id": {
+                  "title": "Ad Break ID",
+                  "type": "string",
+                  "description": "Identifier of the ad break."
+                },
+                "xdm:podName": {
+                  "title": "Ad Break Name",
+                  "type": "string",
+                  "description": "The friendly name of the ad break."
+                },
+                "xdm:podOffset": {
+                  "title": "Ad Break Offset",
+                  "type": "integer",
+                  "description": "The offset, in seconds, of the ad break from the start of the primary content."
+                }
+              },
+              "required": [
+                "@id",
+                "xdm:podOffset"
+              ]
+            }
+          },
+          "required": [
+            "xdm:podPosition"
+          ]
+        },
+        "xdm:completes": {
+          "title": "Completes",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Indicates if a timed media asset was watched to completion - this does not necessarily mean the viewer watched the whole video; viewer could have skipped ahead."
+        },
+        "xdm:timePlayed": {
+          "title": "Time Spent",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Describes the amount of time spent by a user on a specific timed media asset."
+        },
+        "xdm:federated": {
+          "title": "Federated",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Indicates if an experience event was created through data federation (data sharing between customers)."
+        },
         "xdm:clicks": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Click(s) actions on an advertisement."
         },
-        "xdm:completes": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "A digital video ad has played through it's entirety."
-        },
         "xdm:conversions": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "A pre-defined action on a website triggered a conversion event to be fired"
+          "description": "A costumer pre-defined action(s) which triggers an event for performance evaluation."
         },
         "xdm:firstQuartiles": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "A digital video ad has played through 25% of it's duration at normal speed."
+          "description": "A digital video ad has played through 25% of its duration at normal speed."
         },
         "xdm:impressions": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
@@ -42,7 +120,7 @@
         },
         "xdm:midpoints": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "A digital video ad has played through 50% of it's duration at normal speed."
+          "description": "A digital video ad has played through 50% of its duration at normal speed."
         },
         "xdm:starts": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
@@ -50,7 +128,7 @@
         },
         "xdm:thirdQuartiles": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "A digital video ad has played through 75% of it's duration at normal speed."
+          "description": "A digital video ad has played through 75% of its duration at normal speed."
         }
       }
     }

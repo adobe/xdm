@@ -5,14 +5,14 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/context/segmentidentity",
+  "$id": "https://ns.adobe.com/xdm/context/segmentIdentity",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Identity",
   "type": "object",
   "description":
     "SegmentIdentity is used to clearly distinguish segments. SegmentIdentity is established by an segmentidentity provider, which itself is referenced in the `namespace` attribute. Within each `namespace`, the segmentidentity is unique.",
   "definitions": {
-    "identity": {
+    "segmentIdentity": {
       "properties": {
         "@id": {
           "title": "Identifier",
@@ -37,7 +37,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/segmentidentity"
+      "$ref": "#/definitions/segmentIdentity"
     }
   ],
   "meta:status": "experimental"

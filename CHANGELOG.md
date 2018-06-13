@@ -35,6 +35,7 @@
 ## Release 0.9.2
 
 [Planned for June 15, 2018](https://github.com/adobe/xdm/releases/tag/v0.9.2)
+
 * `xdm:dataSource` in `ExperienceEvent` is no longer required #363
 * Adds new concepts `Organizational Unit` and `Geographical Unit`. Existing links with the `Profile` schema updated. In `Profile`, `xdm:orgUnitID` is now `xdm:orgUnit`, and a simple reference to the `Organizational Unit` schema. #323
 * Added Phone Number and Email Address to EndUserIDs. #381

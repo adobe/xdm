@@ -5,26 +5,27 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/data/completes",
+  "$id": "https://ns.adobe.com/xdm/data/media-segment-vie",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "completes",
+  "title": "Media Segment View",
   "type": "object",
   "meta:extensible": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/metricdefinition"],
-  "description": "Indicates if a timed media asset was watched to completion - this does not necessarily mean the viewer watched the whole video; viewer could have skipped ahead.",
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/metricdefinition"
+  ],
+  "description": "Indicates whether at least one frame (not necessarily the first) was viewed.",
   "definitions": {
     "metricdefinition": {
       "properties": {
         "@id": {
           "type": "string",
-          "const": "xdm:completes",
+          "const": "xdm:mediaSegmentView",
           "description": "The unique identifier of this metric."
         },
         "schema:name": {
           "type": "string",
-          "const": "metric: completes",
-          "description":
-          "Indicates if a timed media asset was watched to completion - this does not necessarily mean the viewer watched the whole video; viewer could have skipped ahead."
+          "const": "metric: mediaSegmentView",
+          "description": "Indicates whether at least one frame (not necessarily the first) was viewed."
         },
         "xdm:measurement": {
           "type": "string",
@@ -45,6 +46,11 @@
       "$ref": "https://ns.adobe.com/xdm/data/metricdefinition"
     }
   ],
-  "required": ["@id", "schema:name", "xdm:measurement", "xdm:unit"],
+  "required": [
+    "@id",
+    "schema:name",
+    "xdm:measurement",
+    "xdm:unit"
+  ],
   "meta:status": "stabilizing"
 }

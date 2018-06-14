@@ -11,48 +11,60 @@
   "type": "object",
   "meta:extensible": true,
   "description":
-    "Condensed, normalized encapsulation of all end user identifiers. NOTE: At least one of the fields is required.\n",
+    "Condensed, normalized encapsulation of all end user identifiers. NOTE: At least one of the fields is required.",
   "minProperties": 1,
-  "properties": {
-    "https://ns.adobe.com/experience/mcid": {
-      "title": "Adobe Marketing Cloud ID",
-      "$ref": "https://ns.adobe.com/xdm/context/identity",
-      "description": "A unique identifier from Adobe Marketing Cloud."
-    },
-    "https://ns.adobe.com/experience/aaid": {
-      "title": "Adobe Analytics Cloud End User IDs",
-      "$ref": "https://ns.adobe.com/xdm/context/identity",
-      "description": "Adobe Analytics Cloud extension to End User IDs."
-    },
-    "https://ns.adobe.com/experience/aacustomid": {
-      "title": "Adobe Analytics Cloud Custom End User IDs",
-      "$ref": "https://ns.adobe.com/xdm/context/identity",
-      "description": "An Adobe Analytics custom identifier passed in on a hit."
-    },
-    "https://ns.adobe.com/experience/acid": {
-      "title": "Adobe Campaign End User IDs",
-      "$ref": "https://ns.adobe.com/xdm/context/identity",
-      "description": "Adobe Campaign extension to End User IDs."
-    },
-    "https://ns.adobe.com/experience/tntid": {
-      "title": "Adobe Target End User IDs",
-      "$ref": "https://ns.adobe.com/xdm/context/identity",
-      "description": "Adobe Target extension to End User IDs."
-    },
-    "https://ns.adobe.com/experience/adcloud": {
-      "title": "Adobe AdCloud End User IDs",
-      "$ref": "https://ns.adobe.com/xdm/context/identity",
-      "description": "Adobe Adcloud extension to End User IDs."
-    },
-    "https://ns.adobe.com/experience/emailid": {
-      "title": "Email Address IDs",
-      "$ref": "https://ns.adobe.com/xdm/context/identity",
-      "description": "Email addresses used as IDs."
-    },
-    "https://ns.adobe.com/experience/phonenumberid": {
-      "title": "Phone Number IDs",
-      "$ref": "https://ns.adobe.com/xdm/context/identity",
-      "description": "Phone numbers used as IDs."
+  "definitions": {
+    "enduserids": {
+      "properties": {
+        "https://ns.adobe.com/experience/mcid": {
+          "title": "Adobe Marketing Cloud ID",
+          "$ref": "https://ns.adobe.com/xdm/context/identity",
+          "description": "A unique identifier from Adobe Marketing Cloud."
+        },
+        "https://ns.adobe.com/experience/aaid": {
+          "title": "Adobe Analytics Cloud End User IDs",
+          "$ref": "https://ns.adobe.com/xdm/context/identity",
+          "description": "Adobe Analytics Cloud extension to End User IDs."
+        },
+        "https://ns.adobe.com/experience/aacustomid": {
+          "title": "Adobe Analytics Cloud Custom End User IDs",
+          "$ref": "https://ns.adobe.com/xdm/context/identity",
+          "description": "An Adobe Analytics custom identifier passed in on a hit."
+        },
+        "https://ns.adobe.com/experience/acid": {
+          "title": "Adobe Campaign End User IDs",
+          "$ref": "https://ns.adobe.com/xdm/context/identity",
+          "description": "Adobe Campaign extension to End User IDs."
+        },
+        "https://ns.adobe.com/experience/tntid": {
+          "title": "Adobe Target End User IDs",
+          "$ref": "https://ns.adobe.com/xdm/context/identity",
+          "description": "Adobe Target extension to End User IDs."
+        },
+        "https://ns.adobe.com/experience/adcloud": {
+          "title": "Adobe AdCloud End User IDs",
+          "$ref": "https://ns.adobe.com/xdm/context/identity",
+          "description": "Adobe Adcloud extension to End User IDs."
+        },
+        "https://ns.adobe.com/experience/emailid": {
+          "title": "Email Address IDs",
+          "$ref": "https://ns.adobe.com/xdm/context/identity",
+          "description": "Email addresses used as IDs."
+        },
+        "https://ns.adobe.com/experience/phonenumberid": {
+          "title": "Phone Number IDs",
+          "$ref": "https://ns.adobe.com/xdm/context/identity",
+          "description": "Phone numbers used as IDs."
+        }
+      },
+      "patternProperties": {
+        ".+://.+": {
+          "description":
+            "The identifier, including data source (`@id` must be identical to the property value), foreign ID, and confidence.",
+          "type": "object",
+          "$ref": "https://ns.adobe.com/xdm/context/identity"
+        }
+      }
     }
   },
   "meta:keys": {
@@ -67,13 +79,13 @@
     "https://ns.adobe.com/experience/emailid": "Email Address",
     "https://ns.adobe.com/experience/phonenumberid": "Phone Number"
   },
-  "patternProperties": {
-    ".+://.+": {
-      "description":
-        "The identifier, including data source (`@id` must be identical to the property value), foreign ID, and confidence.",
-      "type": "object",
-      "$ref": "https://ns.adobe.com/xdm/context/identity"
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/enduserids"
     }
-  },
+  ],
   "meta:status": "stabilizing"
 }

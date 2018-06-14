@@ -15,6 +15,7 @@ Examples include location specific information such as weather, local time, traf
 ## Schema Hierarchy
 
 * Place Context `https://ns.adobe.com/xdm/context/placecontext`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Geo](../common/geo.schema.md) `https://ns.adobe.com/xdm/common/geo`
   * [Point of Interest Interaction](poi-interaction.schema.md) `https://ns.adobe.com/xdm/context/poi-interaction`
 

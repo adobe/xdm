@@ -17,6 +17,7 @@ For interactions that are happening on a loaded page that do not trigger a new p
 ## Schema Hierarchy
 
 * Web Page Details `https://ns.adobe.com/xdm/context/webpagedetails`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Measure](../data/measure.schema.md) `https://ns.adobe.com/xdm/data/measure`
 
 

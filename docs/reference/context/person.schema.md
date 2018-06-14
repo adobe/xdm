@@ -13,6 +13,7 @@ An individual person. May represent a person acting in various roles, such as a 
 ## Schema Hierarchy
 
 * Person `https://ns.adobe.com/xdm/context/person`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Person Name](person-name.schema.md) `https://ns.adobe.com/xdm/context/person-name`
   * [Audit Trail](../common/auditable.schema.md) `https://ns.adobe.com/xdm/common/auditable`
 

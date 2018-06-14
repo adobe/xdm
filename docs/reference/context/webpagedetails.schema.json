@@ -9,8 +9,8 @@
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "Web Page Details",
     "type": "object",
-    "description": "Details about the web page that has just been loaded and viewed, as recorded by an `ExperienceEvent`.\n\nThis schema is intended for full page details and initial page loads of single page web applications (SPAs).\nFor interactions that are happening on a loaded page that do not trigger a new page load, see `WebInteraction`.\n",
     "meta:extensible": true,
+    "description": "Details about the web page that has just been loaded and viewed, as recorded by an `ExperienceEvent`.\n\nThis schema is intended for full page details and initial page loads of single page web applications (SPAs).\nFor interactions that are happening on a loaded page that do not trigger a new page load, see `WebInteraction`.\n",
     "definitions": {
         "webpagedetails": {
             "properties": {
@@ -54,6 +54,9 @@
         }
     },
     "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
         {
             "$ref": "#/definitions/webpagedetails"
         }

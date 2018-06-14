@@ -9,6 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Browser Details",
   "type": "object",
+  "meta:extensible": true,
   "description": "Detail information related to the browser",
   "definitions": {
     "browserdetails": {
@@ -97,6 +98,9 @@
     }
   },
   "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
     {
       "$ref": "#/definitions/browserdetails"
     }

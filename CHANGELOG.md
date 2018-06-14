@@ -40,3 +40,4 @@
 * Adds new concepts `Organizational Unit` and `Geographical Unit`. Existing links with the `Profile` schema updated. In `Profile`, `xdm:orgUnitID` is now `xdm:orgUnit`, and a simple reference to the `Organizational Unit` schema. #323
 * Added Phone Number and Email Address to EndUserIDs. #381
 * Changed Adobe Analytics Extension - Alter analytics custom lists to allow keys #376
+* Added `"meta:extends": true` to the schemas that can be extended in `context` #332

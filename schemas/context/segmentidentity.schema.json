@@ -10,7 +10,7 @@
   "title": "Identity",
   "type": "object",
   "description":
-    "SegmentIdentity is used to clearly distinguish segments. SegmentIdentity is established by an segmentidentity provider, which itself is referenced in the `namespace` attribute. Within each `namespace`, the segmentidentity is unique.",
+    "SegmentIdentity is used to clearly distinguish segments from multiple sources. SegmentIdentity is established by an segment identity provider, which itself is referenced in the `namespace` attribute. Within each `namespace`, the segmentidentity is unique.",
   "definitions": {
     "segmentIdentity": {
       "properties": {

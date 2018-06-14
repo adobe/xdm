@@ -9,14 +9,14 @@
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "Web Information",
     "type": "object",
-    "meta:status": "experimental",
+    "meta:status": "stabilizing",
     "description": "Information recorded via an `ExperienceEvent` that is specific to the World Wide Web channel, including the web page, referrer and/or link related to the on-page interaction.\n",
     "definitions": {
         "webinfo": {
             "properties": {
-                "xdm:webPageView": {
-                    "title": "Web Page View",
-                    "$ref": "https://ns.adobe.com/xdm/context/webpageview",
+                "xdm:webPageDetails": {
+                    "title": "Web Page Details",
+                    "$ref": "https://ns.adobe.com/xdm/context/webpagedetails",
                     "description": "Details about the web page where the web interaction occurred."
                 },
                 "xdm:webInteraction": {
@@ -39,7 +39,24 @@
     ],
     "examples": [
         {
-            "xdm:webPageView": {
+            "xdm:webPageDetails": {
+                "xdm:siteSection": "Product section",
+                "xdm:server": "example.com",
+                "xdm:name": "product home",
+                "xdm:URL": "https://www.example.com/products",
+                "xdm:errorPage": false,
+                "xdm:homePage": true,
+                "xdm:pageViews": {
+                    "xdm:value": 1
+                }
+            },
+            "xdm:webReferrer": {
+                "xdm:URL": "https://www.some-adserver.com",
+                "xdm:referrerType": "external"
+            }
+        },
+        {
+            "xdm:webPageDetails": {
                 "xdm:siteSection": "Product section",
                 "xdm:server": "example.com",
                 "xdm:name": "product home",
@@ -50,25 +67,14 @@
             "xdm:webInteraction": {
                 "xdm:type": "other",
                 "xdm:URL": "#stores",
-                "xdm:name": "product store"
+                "xdm:name": "product store",
+                "xdm:linkClicks": {
+                    "xdm:value": 1
+                }
             },
             "xdm:webReferrer": {
                 "xdm:URL": "https://www.example.com/products",
                 "xdm:type": "internal"
-            }
-        },
-        {
-            "xdm:webPageView": {
-                "xdm:siteSection": "Product section",
-                "xdm:server": "example.com",
-                "xdm:name": "product home",
-                "xdm:URL": "https://www.example.com/products",
-                "xdm:errorPage": false,
-                "xdm:homePage": true
-            },
-            "xdm:webReferrer": {
-                "xdm:URL": "https://www.some-adserver.com",
-                "xdm:referrerType": "external"
             }
         }
     ]

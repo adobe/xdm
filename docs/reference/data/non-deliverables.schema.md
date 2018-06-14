@@ -1,5 +1,5 @@
 
-# non-deliverables Schema
+# Non Deliverables Schema
 
 ```
 https://ns.adobe.com/xdm/data/metrics/direct-marketing/non-deliverables
@@ -9,26 +9,31 @@ The direct-marketing metric non-deliverables describes the umber of asynchronous
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [data/non-deliverables.schema.json](data/non-deliverables.schema.json) |
+| Can be instantiated | Yes | Stabilizing | Yes | Forbidden | Permitted | [data/non-deliverables.schema.json](data/non-deliverables.schema.json) |
+## Schema Hierarchy
 
-## non-deliverables Example
+* Non Deliverables `https://ns.adobe.com/xdm/data/metrics/direct-marketing/non-deliverables`
+  * [Metric Definition](metricdefinition.schema.md) `https://ns.adobe.com/xdm/data/metricdefinition`
+
+
+## Non Deliverables Example
 ```json
 {
-  "schema:name": "direct-marketing metric: non-deliverables",
-  "@id": "https://ns.adobe.com/xdm/data/metrics/direct-marketing/non-deliverables",
+  "schema:name": "direct-marketing metric: nonDeliverables",
+  "@id": "xdm:nonDeliverables",
   "xdm:measurement": "count",
   "xdm:unit": null
 }
 ```
 
-# non-deliverables Properties
+# Non Deliverables Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | non-deliverables (this schema) |
-| [schema:name](#schemaname) | `const` | **Required** | non-deliverables (this schema) |
-| [xdm:measurement](#xdmmeasurement) | `const` | **Required** | non-deliverables (this schema) |
-| [xdm:unit](#xdmunit) | `const` | **Required** | non-deliverables (this schema) |
+| [@id](#@id) | `string` | **Required** | [Metric Definition](metricdefinition.schema.md#@id) |
+| [schema:name](#schemaname) | `string` | **Required** | [Metric Definition](metricdefinition.schema.md#schemaname) |
+| [xdm:measurement](#xdmmeasurement) | `string` | **Required** | [Metric Definition](metricdefinition.schema.md#xdmmeasurement) |
+| [xdm:unit](#xdmunit) | complex | **Required** | [Metric Definition](metricdefinition.schema.md#xdmunit) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -37,14 +42,15 @@ The unique identifier of this metric.
 
 `@id`
 * is **required**
-* type: `const`
-* defined in this schema
+* type: `string`
+* defined in [Metric Definition](metricdefinition.schema.md#@id)
 
-The value of this property **must** be equal to:
+### @id Type
 
-```json
-"https://ns.adobe.com/xdm/data/metrics/direct-marketing/non-deliverables"
-```
+
+`string`
+* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+
 
 
 
@@ -56,14 +62,14 @@ The human-readable name of the metric. The name can be used in user interfaces a
 
 `schema:name`
 * is **required**
-* type: `const`
-* defined in this schema
+* type: `string`
+* defined in [Metric Definition](metricdefinition.schema.md#schema:name)
 
-The value of this property **must** be equal to:
+### schema:name Type
 
-```json
-"direct-marketing metric: non-deliverables"
-```
+
+`string`
+
 
 
 
@@ -75,16 +81,35 @@ How to take measures of this metric.
 
 `xdm:measurement`
 * is **required**
-* type: `const`
-* defined in this schema
+* type: `string`
+* defined in [Metric Definition](metricdefinition.schema.md#xdm:measurement)
 
-The value of this property **must** be equal to:
+### xdm:measurement Type
+
+
+`string`
+
+
+
+
+
+### xdm:measurement Examples
+
+```json
+"distance"
+```
+
+```json
+"time"
+```
+
+```json
+"price"
+```
 
 ```json
 "count"
 ```
-
-
 
 
 
@@ -93,14 +118,25 @@ The value of this property **must** be equal to:
 
 `xdm:unit`
 * is **required**
-* type: `const`
-* defined in this schema
+* type: complex
+* defined in [Metric Definition](metricdefinition.schema.md#xdm:unit)
 
-The value of this property **must** be equal to:
+### xdm:unit Type
 
-```json
-null
-```
+
+**Any** following *options* needs to be fulfilled.
+
+
+#### Option 1
+
+
+`string`
+
+
+
+#### Option 2
+
+
 
 
 

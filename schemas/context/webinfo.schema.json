@@ -9,14 +9,15 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Web Information",
   "type": "object",
+  "meta:status": "stabilizing",
   "meta:extensible": true,
   "description": "",
   "definitions": {
     "webinfo": {
       "properties": {
-        "xdm:webPageView": {
-          "title": "Web Page View",
-          "$ref": "https://ns.adobe.com/xdm/context/webpageview",
+        "xdm:webPageDetails": {
+          "title": "Web Page Details",
+          "$ref": "https://ns.adobe.com/xdm/context/webpagedetails",
           "description":
             "Details about the web page where the web interaction occurred."
         },

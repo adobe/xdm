@@ -32,6 +32,13 @@
           "type": "string",
           "description":
             "When present, this value represents a cross-namespace identifier that is unique across all namespace-scoped identifiers in all namespaces."
+        },
+        "xdm:primary": {
+          "title": "Primary",
+          "type": "boolean",
+          "default": false,
+          "description":
+            "Indicates this identity is the preferred identity. Is used as a hint to help systems better organize how identities are queried."
         }
       }
     }
@@ -41,5 +48,5 @@
       "$ref": "#/definitions/identity"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stabilizing"
 }

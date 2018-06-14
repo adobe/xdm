@@ -51,7 +51,7 @@
             "$ref": "#/definitions/webreferrer"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stabilizing",
     "examples": [
         {
             "xdm:URL": "https://www.some-adserver.com",

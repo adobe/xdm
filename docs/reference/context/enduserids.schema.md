@@ -31,7 +31,7 @@ Additionally, this schema can include a property that describes the data source 
       "xdm:code": "ECID"
     }
   },
-  "https://ns.adobe.com/experience/analytics": {
+  "https://ns.adobe.com/experience/aaid": {
     "@id": "https://data.adobe.io/entities/identity/2394509340-30453470347",
     "xdm:namespace": {
       "xdm:code": "AVID"
@@ -50,24 +50,28 @@ Additionally, this schema can include a property that describes the data source 
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [https://ns.adobe.com/experience/analytics](#https//ns.adobe.com/experience/analytics) | Identity | Optional | End User IDs (this schema) |
-| [https://ns.adobe.com/experience/campaign](#https//ns.adobe.com/experience/campaign) | Identity | Optional | End User IDs (this schema) |
+| [https://ns.adobe.com/experience/aacustomid](#https//ns.adobe.com/experience/aacustomid) | Identity | Optional | End User IDs (this schema) |
+| [https://ns.adobe.com/experience/aaid](#https//ns.adobe.com/experience/aaid) | Identity | Optional | End User IDs (this schema) |
+| [https://ns.adobe.com/experience/acid](#https//ns.adobe.com/experience/acid) | Identity | Optional | End User IDs (this schema) |
+| [https://ns.adobe.com/experience/adcloud](#https//ns.adobe.com/experience/adcloud) | Identity | Optional | End User IDs (this schema) |
+| [https://ns.adobe.com/experience/emailid](#https//ns.adobe.com/experience/emailid) | Identity | Optional | End User IDs (this schema) |
 | [https://ns.adobe.com/experience/mcid](#https//ns.adobe.com/experience/mcid) | Identity | Optional | End User IDs (this schema) |
+| [https://ns.adobe.com/experience/phonenumberid](#https//ns.adobe.com/experience/phonenumberid) | Identity | Optional | End User IDs (this schema) |
 | [https://ns.adobe.com/experience/tntid](#https//ns.adobe.com/experience/tntid) | Identity | Optional | End User IDs (this schema) |
 | `.+//.+` | reference | Pattern | End User IDs (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## https://ns.adobe.com/experience/analytics
-### Adobe Analytics Cloud End User IDs
+## https://ns.adobe.com/experience/aacustomid
+### Adobe Analytics Cloud Custom End User IDs
 
-Adobe Analytics Cloud extension to End User IDs.
+An Adobe Analytics custom identifier passed in on a hit.
 
-`https://ns.adobe.com/experience/analytics`
+`https://ns.adobe.com/experience/aacustomid`
 * is optional
 * type: Identity
 * defined in this schema
 
-### https://ns.adobe.com/experience/analytics Type
+### https://ns.adobe.com/experience/aacustomid Type
 
 
 * [Identity](identity.schema.md) – `https://ns.adobe.com/xdm/context/identity`
@@ -76,17 +80,74 @@ Adobe Analytics Cloud extension to End User IDs.
 
 
 
-## https://ns.adobe.com/experience/campaign
-### Adobe Campaign End User IDs
+## https://ns.adobe.com/experience/aaid
+### Adobe Analytics Cloud End User IDs
 
-Adobe Campaign extension to End User IDs.
+Adobe Analytics Cloud extension to End User IDs.
 
-`https://ns.adobe.com/experience/campaign`
+`https://ns.adobe.com/experience/aaid`
 * is optional
 * type: Identity
 * defined in this schema
 
-### https://ns.adobe.com/experience/campaign Type
+### https://ns.adobe.com/experience/aaid Type
+
+
+* [Identity](identity.schema.md) – `https://ns.adobe.com/xdm/context/identity`
+
+
+
+
+
+## https://ns.adobe.com/experience/acid
+### Adobe Campaign End User IDs
+
+Adobe Campaign extension to End User IDs.
+
+`https://ns.adobe.com/experience/acid`
+* is optional
+* type: Identity
+* defined in this schema
+
+### https://ns.adobe.com/experience/acid Type
+
+
+* [Identity](identity.schema.md) – `https://ns.adobe.com/xdm/context/identity`
+
+
+
+
+
+## https://ns.adobe.com/experience/adcloud
+### Adobe AdCloud End User IDs
+
+Adobe Adcloud extension to End User IDs.
+
+`https://ns.adobe.com/experience/adcloud`
+* is optional
+* type: Identity
+* defined in this schema
+
+### https://ns.adobe.com/experience/adcloud Type
+
+
+* [Identity](identity.schema.md) – `https://ns.adobe.com/xdm/context/identity`
+
+
+
+
+
+## https://ns.adobe.com/experience/emailid
+### Email Address IDs
+
+Email addresses used as IDs.
+
+`https://ns.adobe.com/experience/emailid`
+* is optional
+* type: Identity
+* defined in this schema
+
+### https://ns.adobe.com/experience/emailid Type
 
 
 * [Identity](identity.schema.md) – `https://ns.adobe.com/xdm/context/identity`
@@ -106,6 +167,25 @@ A unique identifier from Adobe Marketing Cloud.
 * defined in this schema
 
 ### https://ns.adobe.com/experience/mcid Type
+
+
+* [Identity](identity.schema.md) – `https://ns.adobe.com/xdm/context/identity`
+
+
+
+
+
+## https://ns.adobe.com/experience/phonenumberid
+### Phone Number IDs
+
+Phone numbers used as IDs.
+
+`https://ns.adobe.com/experience/phonenumberid`
+* is optional
+* type: Identity
+* defined in this schema
+
+### https://ns.adobe.com/experience/phonenumberid Type
 
 
 * [Identity](identity.schema.md) – `https://ns.adobe.com/xdm/context/identity`

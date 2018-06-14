@@ -99,7 +99,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/geo"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/common/auditable#/definitions/auditlog"
+      "$ref": "https://ns.adobe.com/xdm/common/auditable"
     },
     {
       "$ref": "#/definitions/address"

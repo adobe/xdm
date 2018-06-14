@@ -9,6 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Web Page Details",
   "type": "object",
+  "meta:extensible": true,
   "description": "",
   "meta:extensible": true,
   "definitions": {
@@ -60,6 +61,9 @@
     }
   },
   "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
     {
       "$ref": "#/definitions/webpagedetails"
     }

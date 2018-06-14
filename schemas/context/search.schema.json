@@ -9,6 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Search",
   "type": "object",
+  "meta:extensible": true,
   "description": "Information about web search activity.",
   "definitions": {
     "search": {
@@ -43,6 +44,9 @@
     }
   },
   "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
     {
       "$ref": "#/definitions/search"
     }

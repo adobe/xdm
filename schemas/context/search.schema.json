@@ -19,6 +19,12 @@
           "type": "string",
           "description": "The search engine used by the search."
         },
+        "xdm:searchEngineID": {
+          "title": "Search Engine ID",
+          "type": "string",
+          "format": "uri",
+          "description": "The application-specified identifier used to identify the search engine used by the search."
+        },
         "xdm:keywords": {
           "title": "Keywords",
           "type": "string",

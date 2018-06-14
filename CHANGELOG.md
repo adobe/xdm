@@ -29,7 +29,14 @@
 * Added application and mobile context via `context\application.schema.json` #318
 * Fixed issue where `context\experienceevent` `xdm:application` referred to the 'application.schema.json' in `channels` #318
 * `xdm:application` in `context\experienceevent` `@id` renamed to `xdm:id` #318
-* Changes `xdm:channel` in `ExperienceEvent` to be a reference to `Channel` #289
+* Changed `xdm:channel` in `ExperienceEvent` to be a reference to `Channel` #289
+* Changed `xdm:pageDepth` data type from number to integer in `context\search.schema.json` #346
+
+## Release 0.9.2
+
+[Planned for June 15, 2018](https://github.com/adobe/xdm/releases/tag/v0.9.2)
+
 * `xdm:dataSource` in `ExperienceEvent` is no longer required #363
 * Adds new concepts `Organizational Unit` and `Geographical Unit`. Existing links with the `Profile` schema updated. In `Profile`, `xdm:orgUnitID` is now `xdm:orgUnit`, and a simple reference to the `Organizational Unit` schema. #323
 * Added Phone Number and Email Address to EndUserIDs. #381
+* Changed Adobe Analytics Extension - Alter analytics custom lists to allow keys #376

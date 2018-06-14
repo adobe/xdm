@@ -155,7 +155,7 @@
           "title" : "Segment Membership",
           "type" : "array",
           "items" : {
-            "$ref" : "https://ns.adobe.com/xdm/context/segmentMembership"
+            "$ref" : "https://ns.adobe.com/xdm/context/segmentmembership"
           }
         }
       }

@@ -111,6 +111,8 @@ for other Profile data such as preference, propensities and other attributes.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
+| [repo:createDate](#repocreatedate) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#repocreatedate) |
+| [repo:lastModifiedDate](#repolastmodifieddate) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#repolastmodifieddate) |
 | [xdm:createdByBatchID](#xdmcreatedbybatchid) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmcreatedbybatchid) |
 | [xdm:emailFormat](#xdmemailformat) | `string` | Optional | Profile (this schema) |
 | [xdm:faxPhone](#xdmfaxphone) | Phone Number | Optional | Profile (this schema) |
@@ -137,6 +139,56 @@ for other Profile data such as preference, propensities and other attributes.
 | [xdm:workEmail](#xdmworkemail) | Email Address | Optional | Profile (this schema) |
 | [xdm:workPhone](#xdmworkphone) | Phone Number | Optional | Profile (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
+
+## repo:createDate
+
+The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
+
+`repo:createDate`
+* is optional
+* type: `string`
+* defined in [Audit Trail](../common/auditable.schema.md#repo:createDate)
+
+### repo:createDate Type
+
+
+`string`
+* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+
+
+
+
+### repo:createDate Example
+
+```json
+"2004-10-23T12:00:00-06:00"
+```
+
+
+## repo:lastModifiedDate
+
+The server date and time when the resource was most recently modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
+
+`repo:lastModifiedDate`
+* is optional
+* type: `string`
+* defined in [Audit Trail](../common/auditable.schema.md#repo:lastModifiedDate)
+
+### repo:lastModifiedDate Type
+
+
+`string`
+* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+
+
+
+
+### repo:lastModifiedDate Example
+
+```json
+"2004-10-23T12:00:00-06:00"
+```
+
 
 ## xdm:createdByBatchID
 ### Created by Batch Identifier

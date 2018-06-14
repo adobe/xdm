@@ -155,7 +155,7 @@
             "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
         },
         {
-            "$ref": "https://ns.adobe.com/xdm/common/auditable#/definitions/auditlog"
+            "$ref": "https://ns.adobe.com/xdm/common/auditable"
         },
         {
             "$ref": "#/definitions/profile"

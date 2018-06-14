@@ -10,7 +10,7 @@
   "title": "Web Interaction",
   "type": "object",
   "meta:extensible": true,
-  "description": "",
+  "description": "Interaction details from inside the context of a loaded webpage.",
   "meta:extensible": true,
   "definitions": {
     "webinteraction": {
@@ -45,6 +45,9 @@
     }
   },
   "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
     {
       "$ref": "#/definitions/webinteraction"
     }

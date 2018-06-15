@@ -151,6 +151,13 @@
           "description":
             "Indicates the `profile` record is for use in testing/verification purposes and should not be automatically included in normal operation(s).",
           "default": false
+        },
+        "xdm:segments":{
+          "title" : "Segment Membership",
+          "type" : "array",
+          "items" : {
+            "$ref" : "https://ns.adobe.com/xdm/context/segmentmembership"
+          }
         }
       }
     }

@@ -4,16 +4,6 @@
 
 
 
-## /content/
-
-* [Component Container](./content/component-container.schema.md) – `https://ns.adobe.com/xdm/content/component-container` (Experimental)
-* [Componentized Page](./content/componentized-page.schema.md) – `https://ns.adobe.com/xdm/content/componentized-page` (Experimental)
-* [Content](./content/content.schema.md) – `https://ns.adobe.com/xdm/content/content` (Experimental)
-* [Content Repository](./content/repository.schema.md) – `https://ns.adobe.com/xdm/content/repository` (Experimental)
-* [Page Component](./content/page-component.schema.md) – `https://ns.adobe.com/xdm/content/page-component` (Experimental)
-* [Product](./content/product.schema.md) – `https://ns.adobe.com/xdm/context/product` (Experimental)
-* [Product List Item](./content/productlistitem.schema.md) – `https://ns.adobe.com/xdm/content/productlistitem` (Experimental)
-
 ## /assets/
 
 * [Aggregated Asset](./assets/aggregated-asset.schema.md) – `https://ns.adobe.com/xdm/assets/aggregated-asset` (Experimental)
@@ -30,20 +20,15 @@
 * [Simple Rectangular Area](./assets/rectangular.schema.md) – `https://ns.adobe.com/xdm/assets/rectangular` (Stabilizing)
 * [Video](./assets/video.schema.md) – `https://ns.adobe.com/xdm/assets/video` (Experimental)
 
-## /common/
+## /content/
 
-* [Address](./common/address.schema.md) – `https://ns.adobe.com/xdm/common/address` (Stabilizing)
-* [Audit Trail](./common/auditable.schema.md) – `https://ns.adobe.com/xdm/common/auditable` (Experimental)
-* [Customer Managed Environment](./common/selfservice.schema.md) – `https://ns.adobe.com/xdm/common/selfservice` (Experimental)
-* [EventEnvelope](./common/eventenvelope.schema.md) – `https://ns.adobe.com/xdm/common/eventenvelope` (Experimental)
-* [Extensibility base schema](./common/extensible.schema.md) – `https://ns.adobe.com/xdm/common/extensible` (Stabilizing)
-* [Geo](./common/geo.schema.md) – `https://ns.adobe.com/xdm/common/geo` (Experimental)
-* [Geographical Unit](./common/geounit.schema.md) – `https://ns.adobe.com/xdm/common/geounit` (Experimental)
-* [Identity Provider](./common/identity-provider.schema.md) – `https://ns.adobe.com/xdm/common/identity-provider` (Experimental)
-* [Organization](./common/organization.schema.md) – `https://ns.adobe.com/xdm/common/organization` (Stabilizing)
-* [Organizational Unit](./common/orgunit.schema.md) – `https://ns.adobe.com/xdm/common/orgunit` (Experimental)
-* [Page](./common/page.schema.md) – `https://ns.adobe.com/xdm/common/page` (Experimental)
-* [Principal](./common/principal.schema.md) – `https://ns.adobe.com/xdm/common/principal` (Experimental)
+* [Component Container](./content/component-container.schema.md) – `https://ns.adobe.com/xdm/content/component-container` (Experimental)
+* [Componentized Page](./content/componentized-page.schema.md) – `https://ns.adobe.com/xdm/content/componentized-page` (Experimental)
+* [Content](./content/content.schema.md) – `https://ns.adobe.com/xdm/content/content` (Experimental)
+* [Content Repository](./content/repository.schema.md) – `https://ns.adobe.com/xdm/content/repository` (Experimental)
+* [Page Component](./content/page-component.schema.md) – `https://ns.adobe.com/xdm/content/page-component` (Experimental)
+* [Product](./content/product.schema.md) – `https://ns.adobe.com/xdm/context/product` (Experimental)
+* [Product List Item](./content/productlistitem.schema.md) – `https://ns.adobe.com/xdm/content/productlistitem` (Experimental)
 
 ## /channels/
 
@@ -67,6 +52,21 @@
 * [WeChat](./channels/wechat.schema.md) – `https://ns.adobe.com/xdm/channels/wechat` (Experimental)
 * [Web](./channels/mobile-app.schema.md) – `https://ns.adobe.com/xdm/channels/mobile-app` (Experimental)
 * [Web](./channels/web.schema.md) – `https://ns.adobe.com/xdm/channels/web` (Experimental)
+
+## /common/
+
+* [Address](./common/address.schema.md) – `https://ns.adobe.com/xdm/common/address` (Stabilizing)
+* [Audit Trail](./common/auditable.schema.md) – `https://ns.adobe.com/xdm/common/auditable` (Experimental)
+* [Customer Managed Environment](./common/selfservice.schema.md) – `https://ns.adobe.com/xdm/common/selfservice` (Experimental)
+* [EventEnvelope](./common/eventenvelope.schema.md) – `https://ns.adobe.com/xdm/common/eventenvelope` (Experimental)
+* [Extensibility base schema](./common/extensible.schema.md) – `https://ns.adobe.com/xdm/common/extensible` (Stabilizing)
+* [Geo](./common/geo.schema.md) – `https://ns.adobe.com/xdm/common/geo` (Experimental)
+* [Geographical Unit](./common/geounit.schema.md) – `https://ns.adobe.com/xdm/common/geounit` (Experimental)
+* [Identity Provider](./common/identity-provider.schema.md) – `https://ns.adobe.com/xdm/common/identity-provider` (Experimental)
+* [Organization](./common/organization.schema.md) – `https://ns.adobe.com/xdm/common/organization` (Stabilizing)
+* [Organizational Unit](./common/orgunit.schema.md) – `https://ns.adobe.com/xdm/common/orgunit` (Experimental)
+* [Page](./common/page.schema.md) – `https://ns.adobe.com/xdm/common/page` (Experimental)
+* [Principal](./common/principal.schema.md) – `https://ns.adobe.com/xdm/common/principal` (Experimental)
 
 ## /context/
 
@@ -201,12 +201,6 @@
 * [HAL Link](./external/hal/hal-link.schema.md) – `https://ns.adobe.com/xdm/external/hal/link` (Experimental)
 * [HAL Resource](./external/hal/hal.schema.md) – `https://ns.adobe.com/xdm/external/hal/resource` (Experimental)
 
-## /external/schema/
-
-* [Geo Circle](./external/schema/geocircle.schema.md) – `http://schema.org/GeoCircle` (Experimental)
-* [Geo Coordinates](./external/schema/geocoordinates.schema.md) – `http://schema.org/GeoCoordinates` (Experimental)
-* [Geo Shape](./external/schema/geoshape.schema.md) – `http://schema.org/GeoShape` (Experimental)
-
 ## /external/repo/
 
 * [Access Control Entry](./external/repo/accesscontrolentry.schema.md) – `https://ns.adobe.com/xdm/external/repo/accesscontrolentry` (Experimental)
@@ -216,4 +210,10 @@
 * [Directory](./external/repo/directory.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/directory` (Experimental)
 * [Effective Privileges](./external/repo/effectiveprivileges.schema.md) – `https://ns.adobe.com/xdm/external/repo/effectiveprivileges` (Experimental)
 * [Sub-Directory](./external/repo/sub-directory.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/sub-directory` (Experimental)
+
+## /external/schema/
+
+* [Geo Circle](./external/schema/geocircle.schema.md) – `http://schema.org/GeoCircle` (Experimental)
+* [Geo Coordinates](./external/schema/geocoordinates.schema.md) – `http://schema.org/GeoCoordinates` (Experimental)
+* [Geo Shape](./external/schema/geoshape.schema.md) – `http://schema.org/GeoShape` (Experimental)
 

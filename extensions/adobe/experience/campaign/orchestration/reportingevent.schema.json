@@ -56,7 +56,7 @@
           "type": "string",
           "format": "uri",
           "description":
-            "The identifier of the flow control in a journey verison"
+            "The identifier of the flow control in a journey version"
         },
         "xdm:eventMetrics": {
           "title": "Metrics to be reported",

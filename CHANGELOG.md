@@ -50,7 +50,6 @@
 * Added the created/modified dates from auditable for `context\profile.schema.json`, address and person schemas #393
 * Adding relationship descriptor #388
 
-
 ## Release 0.9.3
 
 [Planned for June 29, 2018](https://github.com/adobe/xdm/releases/tag/v0.9.3)

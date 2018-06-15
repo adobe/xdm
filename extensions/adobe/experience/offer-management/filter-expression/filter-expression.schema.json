@@ -70,7 +70,6 @@
         "notIn": "Produce a boolean value from a scalar and a vector input value. If the scalar is equal to none of the vector values the evaluation results in the boolean value 'true' and 'false' otherwise. The second value is coerced to a list type of the first value before applying the equality check operator.",
         "isNull": "Produce a boolean value from a scalar input value. If the scalar is null, the evaluation results in the boolean value 'true' and 'false' otherwise",
         "isNotNull": "Produce a boolean value from a scalar input value. If the scalar is not null, the evaluation results in the boolean value 'true' and 'false' otherwise",
-        "all": "The universal quantifier of first order logic. Produce a boolean value from a list of values by applying an n-ary function to each item and returning true if for all of the items the n-ary function evaluates to true",
         "modelInstances": "Reference the set of all instances of a given model"
       }
     },

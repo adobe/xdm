@@ -10,8 +10,8 @@
         "params": [
           {
             "nodeType": "literal",
-            "literalType": "XDMObject",
-            "value": "https://ns.adobe.com/experience/offer-management/offer"
+            "literalType": "String",
+            "value": "https://ns.adobe.com/experience/offer-management/personalized-offer"
           },
           {
             "nodeType": "literal",

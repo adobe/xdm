@@ -6,7 +6,7 @@ Example 1.1
 All offers that have at least one representation for offer placement "uri:com:example:placement-1001"
 
 ```
-select o from modelInstances("https://ns.adobe.com/experience/offer-management/offer") where 
+select o from modelInstances("https://ns.adobe.com/experience/offer-management/personalized-offer") where 
   some r from o.xdm:representations where 
     r.xdm:placement = "uri:com:example:placement-1001"
 ```
@@ -16,7 +16,7 @@ Here, a property path is shown whose steps include an intermediate array propert
 For intermediate array properties, especially for paths that contain multiple array steps, the next element returned is equal to the depth-first traversal of the node tree where the nodes represent the values of the JSON object.
 
 ```
-select o from modelInstances("https://ns.adobe.com/experience/offer-management/offer") where 
+select o from modelInstances("https://ns.adobe.com/experience/offer-management/personalized-offer") where 
   "uri:com:example:placement-1001" in o.xdm:representation.xdm:placement
 ```
 
@@ -27,7 +27,7 @@ All offers that have at least one representation referencing an offer placement 
 Note that here, compared to example 1.1 the domain of the exists-quantifier (the `some` expression) is the list of literals, one of them must be in one of the referenced placements for the offer to match.
 
 ```
-select o from modelInstances("https://ns.adobe.com/experience/offer-management/offer") where 
+select o from modelInstances("https://ns.adobe.com/experience/offer-management/personalized-offer") where 
   some p from ["uri:com:example:placement-1001", "uri:com:example:placement-1002"] where 
     p in o.xdm:representations.xdm:placement
   )
@@ -39,7 +39,7 @@ All offers that have at least one representation referencing an offer placement 
 Note the parenthesis to separate the prodicate that belongs to the `some` expression from the second part of the predicate that applies to the `select` expression.
 
 ```
-select o from modelInstances("https://ns.adobe.com/experience/offer-management/offer") where 
+select o from modelInstances("https://ns.adobe.com/experience/offer-management/personalized-offer") where 
   ( some p from ["uri:com:example:placement-1001", "uri:com:example:placement-1002"] where  
     p in o.xdm:representations.xdm:placement
   ) 
@@ -57,7 +57,7 @@ All offers that have at least the one tag "uri:com:example:tag-0001"
 Here, the in operator is used to check the containment of a single item in a list of items (tags).
 
 ```
-select o from modelInstances("https://ns.adobe.com/experience/offer-management/offer") where 
+select o from modelInstances("https://ns.adobe.com/experience/offer-management/personalized-offer") where 
   "uri:com:example:tag-1001" in o.xdm:tags
 ```
 
@@ -67,7 +67,7 @@ All offers that have at least one of the tags ["uri:com:example:tag-1001", "uri:
 Conceptually, there is an iterator over the list of literals and the iteration breaks with the first element for which the predicate evaluates to `true`
 
 ```
-select o from modelInstances("https://ns.adobe.com/experience/offer-management/offer") where 
+select o from modelInstances("https://ns.adobe.com/experience/offer-management/personalized-offer") where 
   some t from ["uri:com:example:tag-1001", "uri:com:example:tag-1002"] where  
     t in o.xdm:tags
 ```
@@ -75,7 +75,7 @@ select o from modelInstances("https://ns.adobe.com/experience/offer-management/o
 Also note that in this case, we could also evaluate the exists-quantifier by ranging over the offer's tag array and testing, one by one of those tags for containment in the list of literals provided:
 
 ```
-select o from modelInstances("https://ns.adobe.com/experience/offer-management/offer") where 
+select o from modelInstances("https://ns.adobe.com/experience/offer-management/personalized-offer") where 
   some t from o.xdm:tags where  
     t in ["uri:com:example:tag-1001", "uri:com:example:tag-1002"]
 ```
@@ -101,7 +101,7 @@ Example 2.4
 All offers that have at least all of the tags ["uri:com:example:tag-1001", "uri:com:example:tag-1002"] and have the status 'approved'. This is a combination of Example 2.3 with an additional condition on the offer's status property.
 
 ```
-select o from modelInstances("https://ns.adobe.com/experience/offer-management/offer") where 
+select o from modelInstances("https://ns.adobe.com/experience/offer-management/personalized-offer") where 
   ( all t from ["uri:com:example:tag-1001", "uri:com:example:tag-1002"] where  
     t in o.xdm:tags )
   and o.status = "approved"
@@ -113,7 +113,7 @@ All offers that have all of the tags ["uri:com:example:tag-1001", "uri:com:examp
 This is a combination of Example 2.4 and 1.1.
 
 ```
-select o from modelInstances("https://ns.adobe.com/experience/offer-management/offer") where 
+select o from modelInstances("https://ns.adobe.com/experience/offer-management/personalized-offer") where 
   ( all _ from ["uri:com:example:tag-1001", "uri:com:example:tag-1002"] where  
     _ in o.xdm:tags
   ) 
@@ -132,7 +132,7 @@ All offers from a list of directly selected offers that have at least one repres
 This is a variation of 2.5 except that the list of offers is not constraint by a list of tags and instead a list of offer `@id` values is used. 
 
 ```
-select o from modelInstances("https://ns.adobe.com/experience/offer-management/offer") where 
+select o from modelInstances("https://ns.adobe.com/experience/offer-management/personalized-offer") where 
   o.xdm:@id in [
     "uri:com:example:offer-10001", 
     "uri:com:example:offer-10002",
@@ -157,7 +157,7 @@ Let's see first how this can be expressed just with the select expression. Note 
 
 ```
  ... p from modelInstances("https://ns.adobe.com/xdm/context/profile"),
-     x from modelInstances("https://ns.adobe.com/xdm/context/experienceevent",p) where ...
+     x from modelInstances("https://ns.adobe.com/xdm/context/experienceevent") where ...
 ```
 
 Here is the correct select expression:
@@ -168,11 +168,13 @@ select p from modelInstances("https://ns.adobe.com/xdm/context/profile") where
  or
    p.xdm:person.xdm:lastName = "Kehrig"
  or
-   (select x from modelInstances("https://ns.adobe.com/xdm/context/experienceevent",p) where
-     x.xdm:placecontext.xdm:geo.xdm:city = "Tōkyō"
+   (select x from modelInstances("https://ns.adobe.com/xdm/context/experienceevent") where 
+     (select id from x.xdm:endUserIDs where id in p.xdm:identities) and
+     x.xdm:placecontext.xdm:geo.xdm:city = "Köln"
    )
    .count() =
-   (select x from modelInstances("https://ns.adobe.com/xdm/context/experienceevent",p))
+   (select x from modelInstances("https://ns.adobe.com/xdm/context/experienceevent") where 
+     select id from x.xdm:endUserIDs where id in p.xdm:identities)
 ```
 
 This can be expressed much more concise when using quantification instead of counting the results with and without the predicate.
@@ -183,6 +185,8 @@ select p from modelInstances("https://ns.adobe.com/xdm/context/profile") where
   or
     p.xdm:person.xdm:lastName = "Kehrig"
   or
-    all x from modelInstances("https://ns.adobe.com/xdm/context/experienceevent",p) where
-      x.xdm:placecontext.xdm:geo.xdm:city = "Tōkyō"
+    all x from modelInstances("https://ns.adobe.com/xdm/context/experienceevent") where
+      (some id from x.xdm:endUserIDs where id in p.xdm:identities)
+    and
+      x.xdm:placecontext.xdm:geo.xdm:city = "Köln"
 ```

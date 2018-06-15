@@ -10,7 +10,7 @@
         "params": [
           {
             "nodeType": "literal",
-            "literalType": "XDMObject",
+            "literalType": "String",
             "value": "https://ns.adobe.com/xdm/context/profile"
           }
         ]
@@ -78,39 +78,76 @@
                   "params": [
                     {
                       "nodeType": "literal",
-                      "literalType": "XDMObject",
+                      "literalType": "String",
                       "value": "https://ns.adobe.com/xdm/context/experienceevent"
-                    },
-                    {
-                      "nodeType": "varRef",
-                      "varName": "p"
                     }
                   ]
                 },
                 "where": {
-                  "nodeType": "fnApply",
-                  "fnName": "=",
+                  "fnName": "and",
                   "params": [
                     {
-                      "nodeType": "fieldLookup",
-                      "fieldName": "xdm:city",
-                      "object": {
-                        "nodeType": "fieldLookup",
-                        "fieldName": "xdm:geo",
-                        "object": {
-                          "nodeType": "fieldLookup",
-                          "fieldName": "xdm:placecontext",
-                          "object": {
-                            "nodeType": "varRef",
-                            "varName": "x"
+                      "nodeType": "quantification",
+                      "quantifier": "some",
+                      "variables": [
+                        {
+                          "nodeType": "varDecl",
+                          "varName": "id",
+                          "from": {
+                            "nodeType": "fieldLookup",
+                            "fieldName": "xdm:endUserIDs",
+                            "object": {
+                              "nodeType": "varRef",
+                              "varName": "x"
+                            },
+                          },
+                          "where": {
+                            "nodeType": "fnApply",
+                            "fnName": "in",
+                            "params": [
+                              {  
+                                "nodeType": "varRef",
+                                "varName": "id"
+                              }
+                              {
+                                "nodeType": "fieldLookup",
+                                "fieldName": "xdm:identities",
+                                "object": {
+                                  "nodeType": "varRef",
+                                  "varName": "p"
+                                },
+                              }
+                            ]
                           }
                         }
-                      }
+                      ]
                     },
                     {
-                      "literalType": "String",
-                      "nodeType": "literal",
-                      "value": "Tōkyō"
+                      "nodeType": "fnApply",
+                      "fnName": "=",
+                      "params": [
+                        {
+                          "nodeType": "fieldLookup",
+                          "fieldName": "xdm:city",
+                          "object": {
+                            "nodeType": "fieldLookup",
+                            "fieldName": "xdm:geo",
+                            "object": {
+                              "nodeType": "fieldLookup",
+                              "fieldName": "xdm:placecontext",
+                              "object": {
+                                "nodeType": "varRef",
+                                "varName": "x"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "literalType": "String",
+                          "nodeType": "literal",
+                          "value": "Tōkyō"
+                        }
+                      ]
                     }
                   ]
                 }

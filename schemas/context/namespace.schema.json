@@ -9,6 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Namespace",
   "type": "object",
+  "meta:extensible": true,
   "description": "",
     "definitions": {
     "namespace": {
@@ -24,6 +25,9 @@
     }
   },
   "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
     {
       "$ref": "#/definitions/namespace"
     }

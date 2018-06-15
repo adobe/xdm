@@ -13,16 +13,13 @@ In addition, a number of optional properties are made available that can be used
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/person-name.schema.json](context/person-name.schema.json) |
+## Schema Hierarchy
+
+* Person Name `https://ns.adobe.com/xdm/context/person-name`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+
 
 ## Person Name Examples
-
-```json
-{
-  "xdm:firstName": "张",
-  "xdm:lastName": "三",
-  "xdm:fullName": "张三"
-}
-```
 
 ```json
 {
@@ -30,6 +27,14 @@ In addition, a number of optional properties are made available that can be used
   "xdm:middleName": "S",
   "xdm:lastName": "Doe",
   "xdm:fullName": "John S. Doe"
+}
+```
+
+```json
+{
+  "xdm:firstName": "张",
+  "xdm:lastName": "三",
+  "xdm:fullName": "张三"
 }
 ```
 

@@ -13,6 +13,7 @@ The geo details relating to the current state of inclusion in a geo defined area
 ## Schema Hierarchy
 
 * Geo Interaction Details `https://ns.adobe.com/xdm/context/geo-interaction-details`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Geo Shape](../external/schema/geoshape.schema.md) `http://schema.org/GeoShape`
 
 

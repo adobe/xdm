@@ -15,10 +15,11 @@ Additionally, this schema can include a property that describes the data source 
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | No | Stabilizing | No | Forbidden | Permitted | [context/enduserids.schema.json](context/enduserids.schema.json) |
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/enduserids.schema.json](context/enduserids.schema.json) |
 ## Schema Hierarchy
 
 * End User IDs `https://ns.adobe.com/xdm/context/enduserids`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Identity](identity.schema.md) `https://ns.adobe.com/xdm/context/identity`
 
 
@@ -58,7 +59,6 @@ Additionally, this schema can include a property that describes the data source 
 | [https://ns.adobe.com/experience/mcid](#https//ns.adobe.com/experience/mcid) | Identity | Optional | End User IDs (this schema) |
 | [https://ns.adobe.com/experience/phonenumberid](#https//ns.adobe.com/experience/phonenumberid) | Identity | Optional | End User IDs (this schema) |
 | [https://ns.adobe.com/experience/tntid](#https//ns.adobe.com/experience/tntid) | Identity | Optional | End User IDs (this schema) |
-| `.+//.+` | reference | Pattern | End User IDs (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## https://ns.adobe.com/experience/aacustomid
@@ -208,26 +208,6 @@ Adobe Target extension to End User IDs.
 
 
 * [Identity](identity.schema.md) – `https://ns.adobe.com/xdm/context/identity`
-
-
-
-
-
-## Pattern: `.+://.+`
-Applies to all properties that match the regular expression `.+://.+`
-
-
-The identifier, including data source (`@id` must be identical to the property value), foreign ID, and confidence.
-
-`.+://.+`
-* is a property pattern
-* type: reference
-* defined in this schema
-
-### Pattern .+://.+ Type
-
-
-* []() – `https://ns.adobe.com/xdm/context/identity`
 
 
 

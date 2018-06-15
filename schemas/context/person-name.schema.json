@@ -9,6 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Person Name",
   "type": "object",
+  "meta:extensible": true,
   "description": "Full name of a person",
   "definitions": {
     "personname": {
@@ -47,6 +48,9 @@
     }
   },
   "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
     {
       "$ref": "#/definitions/personname"
     }

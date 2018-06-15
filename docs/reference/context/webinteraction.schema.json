@@ -9,8 +9,8 @@
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "Web Interaction",
     "type": "object",
-    "description": "The Web Interaction schema captures information about interactions that happened on a web page after the intial page load (see also Web Page View) was completed.\n\nIt is intended for recording interactions in rich web applications that do not trigger a new page load such as single page web apps (SPAs).\n",
     "meta:extensible": true,
+    "description": "The Web Interaction schema captures information about interactions that happened on a web page after the intial page load (see also Web Page View) was completed.\n\nIt is intended for recording interactions in rich web applications that do not trigger a new page load such as single page web apps (SPAs).\n",
     "definitions": {
         "webinteraction": {
             "properties": {
@@ -47,6 +47,9 @@
         }
     },
     "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
         {
             "$ref": "#/definitions/webinteraction"
         }

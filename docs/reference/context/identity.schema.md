@@ -13,6 +13,7 @@ Identity is used to clearly distinguish people that are interacting with digital
 ## Schema Hierarchy
 
 * Identity `https://ns.adobe.com/xdm/context/identity`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Namespace](namespace.schema.md) `https://ns.adobe.com/xdm/context/namespace`
 
 

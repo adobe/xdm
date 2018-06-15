@@ -10,9 +10,7 @@
   "title":
     "The Adobe Experience Cloud technical implementations details for data collection",
   "type": "object",
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/context/experienceevent"
-  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description":
     "Details the type and version of client implementations for data collection interacting with Adobe Experience Cloud services. Used for debugging and usage analysis.",
   "properties": {

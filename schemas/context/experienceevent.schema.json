@@ -125,7 +125,7 @@
           "type": "array",
           "items": {
             "type": "object",
-            "$ref": "https://ns.adobe.com/xdm/context/segmentMembership"
+            "$ref": "https://ns.adobe.com/xdm/context/segmentmembership"
           }
         }
       },

@@ -9,6 +9,7 @@
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "Place",
     "type": "object",
+    "meta:extensible": true,
     "description": "A place in the real world with a physical location.",
     "definitions": {
         "physicallocation": {

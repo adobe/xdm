@@ -9,8 +9,8 @@
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "Commerce",
     "type": "object",
-    "description": "The entites related to buying and selling activity.",
     "meta:extensible": true,
+    "description": "The entites related to buying and selling activity.",
     "definitions": {
         "commerce": {
             "properties": {
@@ -63,6 +63,9 @@
         }
     },
     "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
         {
             "$ref": "#/definitions/commerce"
         }

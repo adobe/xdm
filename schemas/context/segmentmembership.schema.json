@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/context/segmentMembership",
+  "$id": "https://ns.adobe.com/xdm/context/segmentmembership",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Segment Membership",
   "type": "object",
@@ -15,7 +15,7 @@
       "properties": {
         "xdm:segmentID": {
           "title": "Segment ID",
-          "$ref": "https://ns.statadobe.com/xdm/context/identity",
+          "$ref": "https://ns.adobe.com/xdm/context/segmentidentity",
           "description": "The identity of the segment or snapshot definition in with the domain of the specific system that processes that type of segment."
         },
         "xdm:version": {

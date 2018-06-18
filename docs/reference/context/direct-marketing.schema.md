@@ -13,6 +13,7 @@ The events and properties related to direct/outbound marketing such as email, di
 ## Schema Hierarchy
 
 * Direct Marketing `https://ns.adobe.com/xdm/context/direct-marketing`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Measure](../data/measure.schema.md) `https://ns.adobe.com/xdm/data/measure`
 
 

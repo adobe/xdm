@@ -88,7 +88,6 @@
             }
 
           ]
-
         },
         "xdm:validUntil": {
           "title": "Valid Until",
@@ -101,11 +100,11 @@
           "type": "string",
           "description": "Is the segment participation realized as part of the current request.",
           "default": "realized",
-          "enum": ["existing", "realized", "left"],
+          "enum": ["existing", "realized", "exited"],
           "meta:enum": {
             "existing": "Entity continues to be in the segment",
             "realized": "Entity is entering the segment",
-            "left": "Entity is leaving the segment"
+            "exited": "Entity is exiting the segment"
           }
         }
       }

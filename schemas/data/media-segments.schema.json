@@ -5,9 +5,9 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/data/media-segment",
+  "$id": "https://ns.adobe.com/xdm/data/media-segments",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Media Segment",
+  "title": "Media Segments",
   "type": "object",
   "meta:extensible": true,
   "meta:extends": [
@@ -19,12 +19,12 @@
       "properties": {
         "@id": {
           "type": "string",
-          "const": "xdm:mediaSegment",
+          "const": "xdm:mediaSegments",
           "description": "The unique identifier of this metric."
         },
         "schema:name": {
           "type": "string",
-          "const": "metric: mediaSegment",
+          "const": "metric: mediaSegments",
           "description": "The interval that describes the part of the content that has been viewed (in minutes). The segment is computed as min and max of the playhead values during a playback session."
         },
         "xdm:measurement": {

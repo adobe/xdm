@@ -5,9 +5,9 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/data/media-segment-vie",
+  "$id": "https://ns.adobe.com/xdm/data/media-segment-views",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Media Segment View",
+  "title": "Media Segment Views",
   "type": "object",
   "meta:extensible": true,
   "meta:extends": [
@@ -19,12 +19,12 @@
       "properties": {
         "@id": {
           "type": "string",
-          "const": "xdm:mediaSegmentView",
+          "const": "xdm:mediaSegmentViews",
           "description": "The unique identifier of this metric."
         },
         "schema:name": {
           "type": "string",
-          "const": "metric: mediaSegmentView",
+          "const": "metric: mediaSegmentViews",
           "description": "Indicates whether at least one frame (not necessarily the first) was viewed."
         },
         "xdm:measurement": {

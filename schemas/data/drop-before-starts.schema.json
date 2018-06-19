@@ -5,9 +5,9 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/data/drop-before-start",
+  "$id": "https://ns.adobe.com/xdm/data/drop-before-starts",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Drop before Start",
+  "title": "Drop before Starts",
   "type": "object",
   "meta:extensible": true,
   "meta:extends": [
@@ -19,12 +19,12 @@
       "properties": {
         "@id": {
           "type": "string",
-          "const": "xdm:dropBeforeStart",
+          "const": "xdm:dropBeforeStarts",
           "description": "The unique identifier of this metric."
         },
         "schema:name": {
           "type": "string",
-          "const": "metric: dropBeforeStart",
+          "const": "metric: dropBeforeStarts",
           "description": "Indicates the user abandoned the media stream before the first frame (e.g. during the pre-roll ad break, due to an error while loading the content from the CDN)."
         },
         "xdm:measurement": {

@@ -5,60 +5,26 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/context/media-timed",
+  "$id": "https://ns.adobe.com/xdm/context/media-chapter",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Media Chapter Information",
+  "title": "Timed Media Chapter Information",
   "type": "object",
   "meta:status": "experimental",
+  "meta:extensible": true,
   "description": "Timed media chapter namespace",
   "properties": {
     "xdm:chapterAssetReference": {
       "title": "Chapter Asset Reference",
-      "description": "Asset information about the chapter captured by the experience event.",
-      "properties": {
-        "@id": {
-          "title": "Chapter ID",
-          "type": "string",
-          "description": "The auto-generated ID of the chapter."
-        },
-        "xdm:name": {
-          "title": "Chapter Name",
-          "type": "string",
-          "description": "The friendly name of the chapter and/or segment."
-        },
-        "xdm:duration": {
-          "title": "Chapter Length/Duration",
-          "type": "integer",
-          "description": "The length of the chapter, in seconds."
-        }
-      },
-      "required": [
-        "@id",
-        "xdm:duration"
-      ]
+      "$ref": "https://ns.adobe.com/xdm/context/media-chapter-asset-reference",
+      "description": "Asset information about the chapter captured by the experience event."
     },
     "xdm:chapterAssetViewDetails": {
-      "title": "Chapter Asset View Details",
-      "description": "View details for the chapter playback captured by the experience event.",
-      "properties": {
-        "xdm:chapterPosition": {
-          "title": "Chapter Position",
-          "type": "integer",
-          "description": "The position (index) of the chapter inside the content."
-        },
-        "xdm:offset": {
-          "title": "Chapter Offset",
-          "type": "integer",
-          "description": "The offset of the chapter, in seconds, inside the content from the start."
-        }
-      },
-      "required": [
-        "xdm:position",
-        "xdm:offset"
-      ]
+      "title": "Chapter View Details",
+      "$ref": "https://ns.adobe.com/xdm/context/media-chapter-view-details",
+      "description": "View details for the chapter playback captured by the experience event."
     },
-    "xdm:loads": {
-      "title": "Loads",
+    "xdm:impressions": {
+      "title": "Impressions",
       "$ref": "https://ns.adobe.com/xdm/data/measure",
       "description": "Describes the intention to play a timed media asset. It does not measure success, as the user might abandon the content before the first frame is viewed."
     },
@@ -75,7 +41,15 @@
     "xdm:federated": {
       "title": "Federated",
       "$ref": "https://ns.adobe.com/xdm/data/measure",
-      "description": "Indicates if an experience event was created through federation."
+      "description": "Indicates if an experience event was created through data federation (data sharing between customers)."
     }
-  }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/media-chapter"
+    }
+  ]
 }

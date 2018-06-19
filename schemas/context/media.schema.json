@@ -10,10 +10,23 @@
   "title": "Media Information",
   "type": "object",
   "meta:status": "experimental",
+  "meta:extensible": true,
   "description": "Top level schema for media experience events",
-  "properties": {
-    "xdm:media-timed": {
-      "$ref": "https://ns.adobe.com/xdm/context/media-timed"
+  "definitions": {
+    "media": {
+      "properties": {
+        "xdm:media-timed": {
+          "$ref": "https://ns.adobe.com/xdm/context/media-timed"
+        }
+      }
     }
-  }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/media"
+    }
+  ]
 }

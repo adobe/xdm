@@ -27,12 +27,12 @@
             "@id": {
               "title": "Ad ID",
               "type": "string",
-              "description": "ID of the ad asset."
+              "description": "Identifier of the ad asset."
             },
             "xdm:name": {
               "title": "Ad Name",
               "type": "string",
-              "description": "Friendly name of the ad."
+              "description": "The friendly (human-readable) name of the ad asset."
             },
             "xdm:duration": {
               "title": "Ad Length/Duration",
@@ -64,7 +64,7 @@
                 "@id": {
                   "title": "Ad Break ID",
                   "type": "string",
-                  "description": "ID of the ad break."
+                  "description": "Identifier of the ad break."
                 },
                 "xdm:podName": {
                   "title": "Ad Break Name",
@@ -74,7 +74,7 @@
                 "xdm:podOffset": {
                   "title": "Ad Break Offset",
                   "type": "integer",
-                  "description": "The offset, in seconds, of the ad break inside the main content."
+                  "description": "The offset, in seconds, of the ad break from the start of the primary content."
                 }
               },
               "required": [
@@ -86,11 +86,6 @@
           "required": [
             "xdm:podPosition"
           ]
-        },
-        "xdm:loads": {
-          "title": "Loads",
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Describes the intention to play a timed media asset. It does not measure success, as the user might abandon the content before the first frame is viewed."
         },
         "xdm:completes": {
           "title": "Completes",
@@ -105,7 +100,7 @@
         "xdm:federated": {
           "title": "Federated",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Indicates if an experience event was created through federation."
+          "description": "Indicates if an experience event was created through data federation (data sharing between customers)."
         },
         "xdm:clicks": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",

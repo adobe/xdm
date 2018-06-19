@@ -79,9 +79,6 @@
           },
           "xdm:bitrateAverageBucket": "300-399",
           "xdm:droppedFrames": {
-            "xdm:value": 1
-          },
-          "xdm:droppedFrameCount": {
             "xdm:value": 2
           },
           "xdm:timeToStart": {
@@ -92,7 +89,7 @@
           "xdm:externalSdkErrors": "100-5,11.12"
         }
       },
-      "xdm:loads": {
+      "xdm:impressions": {
         "xdm:value": 1
       },
       "xdm:completes": {

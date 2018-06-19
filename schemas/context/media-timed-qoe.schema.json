@@ -10,6 +10,7 @@
   "title": "Timed Media Quality of Experience",
   "type": "object",
   "meta:status": "experimental",
+  "meta:extensible": true,
   "description": "Timed media properties related to the content playback's quality of experience (QoE).",
   "definitions": {
     "media-timed-qoe": {
@@ -57,7 +58,7 @@
         "xdm:droppedFrames": {
           "title": "Dropped Frames",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "The number of frames dropped during a playback session."
+          "description": "The number of frames dropped during playback of the main content."
         },
         "xdm:timeToStart": {
           "title": "Time to Start",
@@ -69,6 +70,9 @@
     }
   },
   "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
     {
       "$ref": "#definitions/media-timed-qoe"
     }

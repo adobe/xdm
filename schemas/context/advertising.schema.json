@@ -108,7 +108,7 @@
         },
         "xdm:conversions": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "A pre-defined action on a website triggered a conversion event to be fired"
+          "description": "A costumer pre-defined action(s) which triggers an event for performance evaluation."
         },
         "xdm:firstQuartiles": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",

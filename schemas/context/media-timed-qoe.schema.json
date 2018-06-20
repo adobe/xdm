@@ -28,7 +28,7 @@
         "xdm:bufferTime": {
           "title": "Total Buffer Duration",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Describes the total amount of time spent buffering."
+          "description": "Describes the total amount of time (in seconds) spent buffering."
         },
         "xdm:stalls": {
           "title": "Stalls",
@@ -38,7 +38,7 @@
         "xdm:stallTime": {
           "title": "Total Stalling Duration",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Describes the duration in which the playback was stalled during playback."
+          "description": "Describes the duration (in seconds) in which the playback was stalled during playback."
         },
         "xdm:bitrateChanges": {
           "title": "Bitrate Changes",
@@ -63,10 +63,9 @@
         "xdm:timeToStart": {
           "title": "Time to Start",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Describes the duration passed between video load and start."
+          "description": "Describes the duration (in seconds) passed between video load and start."
         }
-      },
-      "required": []
+      }
     }
   },
   "allOf": [
@@ -74,7 +73,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "#definitions/media-timed-qoe"
+      "$ref": "#/definitions/media-timed-qoe"
     }
   ]
 }

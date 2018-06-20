@@ -22,9 +22,9 @@
     "xdm:ipV4": "97.27.143.5"
   },
   "xdm:media": {
-    "xdm:media-timed": {
+    "xdm:mediaTimed": {
       "xdm:primaryAssetReference": {
-        "@id": "15234430",
+        "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234430",
         "xdm:name": "Floki Begs Helga for Freedom",
         "xdm:duration": 87,
         "xdm:showName": "nba_highlights",
@@ -38,8 +38,8 @@
         "xdm:rating": "TV14",
         "xdm:originator": "ESPN"
       },
-      "xdm:primaryAssetViewReference": {
-        "@id": "1427461282884250114230",
+      "xdm:primaryAssetViewDetails": {
+        "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114230",
         "xdm:playerName": "watchespn",
         "xdm:broadcastChannel": "WatchESPN",
         "xdm:broadcastContentType": "VOD",
@@ -55,7 +55,7 @@
         "xdm:dayPart": "DAY",
         "xdm:sourceFeed": "http%3A%2F%2Fvod01.pure.centurylink.net%2Fhls%2Fvu%2F9083406%2FVUBX0280890106690980_38_3_M_HD.m3u8",
         "xdm:sessionTimeout": 1800,
-        "xdm:qoe": {
+        "xdm:QOE": {
           "xdm:errors": {
             "xdm:value": 0
           },

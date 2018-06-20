@@ -1,0 +1,106 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/media-timed-asset-reference",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Timed Media Primary Asset Reference",
+  "type": "object",
+  "meta:status": "experimental",
+  "meta:extensible": true,
+  "description": "Asset information about the main content that was played, but present on all ads and chapters that occur during the content's playback as well.",
+  "definitions": {
+    "media-asset-reference": {
+      "properties": {
+        "@id": {
+          "title": "Content ID",
+          "type": "string",
+          "format": "uri",
+          "description": "Content ID of the content, which can be used to tie back to other industry / CMS IDs."
+        },
+        "xdm:name": {
+          "title": "Media Name",
+          "type": "string",
+          "description": "The friendly (human-readable) name of the timed media asset."
+        },
+        "xdm:duration": {
+          "title": "Media Length/Runtime",
+          "type": "integer",
+          "description": "Length of primary media asset in seconds."
+        },
+        "xdm:showName": {
+          "title": "Show Name",
+          "type": "string",
+          "description": "Program/Series Name."
+        },
+        "xdm:assetID": {
+          "title": "Asset ID",
+          "type": "string",
+          "description": "This is the unique identifier for the content of the video asset, such as the TV series episode identifier, movie asset identifier, or live event identifier. Typically these IDs are derived from metadata authorities such as EIDR, TMS/Gracenote, or Rovi. These identifiers can also be from other proprietary or in-house systems."
+        },
+        "xdm:showType": {
+          "title": "Show Type",
+          "type": "string",
+          "description": "The type of content e.g. Trailer, Full Episode."
+        },
+        "xdm:streamFormat": {
+          "title": "Stream Format",
+          "type": "string",
+          "description": "Free-form format of the stream (e.g. short, long)."
+        },
+        "xdm:season": {
+          "title": "Season",
+          "type": "string",
+          "description": "The season number the show belongs to."
+        },
+        "xdm:episode": {
+          "title": "Episode",
+          "type": "string",
+          "description": "The number of the episode."
+        },
+        "xdm:genre": {
+          "title": "Genre",
+          "type": "string",
+          "description": "Type or grouping of content as defined by content producer."
+        },
+        "xdm:airDate": {
+          "title": "First Air Date",
+          "type": "string",
+          "format": "date",
+          "description": "The date when the content first aired on television."
+        },
+        "xdm:digitalDate": {
+          "title": "First Digital Date",
+          "type": "string",
+          "format": "date",
+          "description": "The date when the content first aired on any digital channel or platform."
+        },
+        "xdm:rating": {
+          "title": "Content Rating",
+          "type": "string",
+          "description": "The rating as defined by Parental Guidelines."
+        },
+        "xdm:originator": {
+          "title": "Originator",
+          "type": "string",
+          "description": "The creator of the content."
+        }
+      },
+      "required": [
+        "@id",
+        "xdm:duration"
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/media-asset-reference"
+    }
+  ]
+}

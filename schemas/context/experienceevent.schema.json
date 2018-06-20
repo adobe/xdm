@@ -120,6 +120,7 @@
         },
         "xdm:media": {
           "title": "Media",
+          "meta:status": "experimental",
           "$ref": "https://ns.adobe.com/xdm/context/media",
           "description": "The media activity information related to the experience event"
         }

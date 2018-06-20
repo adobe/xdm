@@ -11,12 +11,14 @@
   "type": "object",
   "meta:status": "experimental",
   "meta:extensible": true,
-  "description": "Top level schema for media experience events",
+  "description": "Media context information for content related interactions.",
   "definitions": {
     "media": {
       "properties": {
-        "xdm:media-timed": {
-          "$ref": "https://ns.adobe.com/xdm/context/media-timed"
+        "xdm:mediaTimed": {
+          "title": "Timed Media Information",
+          "$ref": "https://ns.adobe.com/xdm/context/media-timed",
+          "description": "Timed media - main content, ads & chapters"
         }
       }
     }

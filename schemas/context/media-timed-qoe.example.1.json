@@ -27,7 +27,7 @@
   "xdm:timeToStart": {
     "xdm:value": 3
   },
-  "xdm:mediaSdkErrors": "300,500.300.200",
-  "xdm:playerSdkErrors": "custom.error.code",
-  "xdm:externalSdkErrors": "100-5,11.12"
+  "xdm:mediaSDKErrors": "300,500.300.200",
+  "xdm:playerSDKErrors": "custom.error.code",
+  "xdm:externalSDKErrors": "100-5,11.12"
 }

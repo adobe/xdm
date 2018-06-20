@@ -20,11 +20,8 @@
     "xdm:broadcastChannel": "WatchESPN",
     "xdm:broadcastContentType": "VOD",
     "xdm:streamFormat": "short",
-    "xdm:sdkVersion": {
+    "xdm:playerSDKVersion": {
       "xdm:version": "1.0.8"
-    },
-    "xdm:vhlVersion": {
-      "xdm:version": "tvos-1.5.3.109-5c3dd2"
     },
     "xdm:broadcastNetwork": "nbcu",
     "xdm:adLoadType": "2",

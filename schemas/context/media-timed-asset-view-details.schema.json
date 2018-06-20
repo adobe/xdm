@@ -45,15 +45,10 @@
             "Audiobook": "Audiobook"
           }
         },
-        "xdm:sdkVersion": {
+        "xdm:playerSDKVersion": {
           "title": "Player SDK Version",
           "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
           "description": "The SDK version used by the player."
-        },
-        "xdm:vhlVersion": {
-          "title": "Tracking Library Version",
-          "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
-          "description": "The heartbeat SDK version used for the tracking session."
         },
         "xdm:broadcastNetwork": {
           "title": "Broadcast Network",

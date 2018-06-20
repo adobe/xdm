@@ -28,11 +28,7 @@
             "title": "Ad Break",
             "description": "Details about how a timed advertising is being inserted into a timed media.",
             "$ref": "https://ns.adobe.com/xdm/context/advertising-break"
-          },
-          "required": [
-            "@id",
-            "xdm:podOffset"
-          ]
+          }
         }
       },
       "required": [

@@ -52,6 +52,7 @@ Viewability details are always measured fields during runtime.
 ## Schema Hierarchy
 
 * MRC Viewability `https://ns.adobe.com/xdm/context/adviewability`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Implementation Details](implementationdetails.schema.md) `https://ns.adobe.com/xdm/context/implementationdetails`
   * [Measure](../data/measure.schema.md) `https://ns.adobe.com/xdm/data/measure`
 

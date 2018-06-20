@@ -9,6 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Email Address",
   "type": "object",
+  "meta:extensible": true,
   "description": "A standard email address.",
   "definitions": {
     "emailaddress": {
@@ -67,6 +68,9 @@
     }
   },
   "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
     {
       "$ref": "#/definitions/emailaddress"
     }

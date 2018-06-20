@@ -13,6 +13,7 @@ Information about the surrounding situation the event observation occurred in, s
 ## Schema Hierarchy
 
 * Environment `https://ns.adobe.com/xdm/context/environment`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Browser Details](browserdetails.schema.md) `https://ns.adobe.com/xdm/context/browserdetails`
 
 

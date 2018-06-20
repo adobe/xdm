@@ -13,6 +13,7 @@ The information related to advertising activity related to the experience event
 ## Schema Hierarchy
 
 * Advertising `https://ns.adobe.com/xdm/context/advertising`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [MRC Viewability](adviewability.schema.md) `https://ns.adobe.com/xdm/context/adviewability`
   * [Measure](../data/measure.schema.md) `https://ns.adobe.com/xdm/data/measure`
 

@@ -23,69 +23,12 @@
         "xdm:adAssetReference": {
           "title": "Ad Asset Reference",
           "description": "Asset information about the ad captured by the experience event.",
-          "properties": {
-            "@id": {
-              "title": "Ad ID",
-              "type": "string",
-              "description": "Identifier of the ad asset."
-            },
-            "xdm:name": {
-              "title": "Ad Name",
-              "type": "string",
-              "description": "The friendly (human-readable) name of the ad asset."
-            },
-            "xdm:duration": {
-              "title": "Ad Length/Duration",
-              "type": "integer",
-              "description": "Length of ad asset in seconds."
-            }
-          },
-          "required": [
-            "@id",
-            "xdm:duration"
-          ]
+          "$ref": "https://ns.adobe.com/xdm/context/advertising-timed-asset-reference"
         },
         "xdm:adAssetViewDetails": {
           "title": "Ad Asset View Details",
           "description": "View details for the ad playback captured by the experience event.",
-          "properties": {
-            "xdm:playerName": {
-              "title": "Ad Player Name",
-              "type": "string",
-              "description": "The name of the player responsible for rendering the ad."
-            },
-            "xdm:podPosition": {
-              "title": "Ad Position in Pod",
-              "type": "integer",
-              "description": "The position (index) of the ad inside the parent ad break. The first ad has index 0, the second 1, and so on."
-            },
-            "xdm:adBreak": {
-              "properties": {
-                "@id": {
-                  "title": "Ad Break ID",
-                  "type": "string",
-                  "description": "Identifier of the ad break."
-                },
-                "xdm:podName": {
-                  "title": "Ad Break Name",
-                  "type": "string",
-                  "description": "The friendly name of the ad break."
-                },
-                "xdm:podOffset": {
-                  "title": "Ad Break Offset",
-                  "type": "integer",
-                  "description": "The offset, in seconds, of the ad break from the start of the primary content."
-                }
-              },
-              "required": [
-                "@id",
-                "xdm:podOffset"
-              ]
-            }
-          },
-          "required": [
-            "xdm:podPosition"
-          ]
+          "$ref": "https://ns.adobe.com/xdm/context/advertising-timed-asset-view-details"
         },
         "xdm:completes": {
           "title": "Completes",

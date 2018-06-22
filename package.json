@@ -27,7 +27,8 @@
       "curl -u \"$npm_package_config_aem_user:$npm_package_config_aem_password\" -F cmd=activate -F ignoredeactivated=true -F onlymodified=true -F path=/content/udp/en/open/standards/xdm/docs https://author-adobeio-stage.adobemsbasic.com/etc/replication/treeactivation.html",
     "activate:prod":
       "curl -u \"$npm_package_config_aem_user:$npm_package_config_aem_password\" -F cmd=activate -F ignoredeactivated=true -F onlymodified=true -F path=/content/udp/en/open/standards/xdm/docs https://author-adobeio-prod.adobemsbasic.com/etc/replication/treeactivation.html",
-    "stability-check": "node bin/show-stablization-candidates.js"
+    "stability-check": "node bin/show-stablization-candidates.js",
+    "xedtest": "sh ./node_modules/smd-specification/tools/scripts/xedConversion.sh xedtest"
   },
   "repository": {
     "type": "git",

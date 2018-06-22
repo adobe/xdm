@@ -16,6 +16,7 @@
       "properties": {
         "@id": {
           "title": "Ad Break ID",
+          "format": "uri",
           "type": "string",
           "description": "Identifier of the ad break."
         },

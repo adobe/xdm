@@ -16,6 +16,7 @@ It is intended for recording interactions in rich web applications that do not t
 ## Schema Hierarchy
 
 * Web Interaction `https://ns.adobe.com/xdm/context/webinteraction`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Measure](../data/measure.schema.md) `https://ns.adobe.com/xdm/data/measure`
 
 

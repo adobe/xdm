@@ -9,6 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Identity",
   "type": "object",
+  "meta:extensible": true,
   "description":
     "Identity is used to clearly distinguish people that are interacting with digital experiences. Identity is established by an identity provider, which itself is referenced in the `namespace` attribute. Within each `namespace`, the identity is unique.",
   "definitions": {
@@ -43,6 +44,9 @@
     }
   },
   "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
     {
       "$ref": "#/definitions/identity"
     }

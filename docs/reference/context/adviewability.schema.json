@@ -9,6 +9,7 @@
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "MRC Viewability",
     "type": "object",
+    "meta:extensible": true,
     "description": "Browser environment measured at runtime describing the viewability of an advertisement or content associated with each page load.\n\nAccording to [IAB/MRC definition](https://www.iab.com/wp-content/uploads/2015/06/MRC-Viewable-Ad-Impression-Measurement-Guideline.pdf) of Viewable Browser Space is defined as: \n\n> Advertisements and content associated with each\npage load can appear either within or outside the viewable space of the browser\non a user’s screen—i.e., that part of the page within the browser that a user can\nsee. This is similar to the concepts once referred to as “Above the Fold” (i.e.,\nwithin the viewable browser space) and “Below the Fold” (i.e., outside the\nviewable browser space). The “fold” was traditionally considered to be where the\ninitially-loaded viewable space of the page ends – so advertisements and content\nabove the fold were considered likely to be viewable upon load, and for content\nbelow the fold, it was considered necessary to scroll to in order for that content to\nbe viewable. In reality, the location of the fold, and consequently the viewable\nstatus of advertising and content, is variable based on the browser settings of the\nuser (resolution, font size, window size, etc.) and there are generally four\nlocations (top, bottom, left and right sides) where advertising and content may be\ncut-off from being viewable based on user actions and settings. Upon initial page\nload, advertising or content placed at the top and left side of the page is most \nlikely to be viewable, however this can change if content or ads are obscured by\noverlays or with further user action (scrolling) coupled with latency; therefore,\nplacement and viewable status are separate attributes to be assessed.\n\nViewability details are always measured fields during runtime.\n\n>Note regarding the applicability of these guidelines for mobile viewable ad\n impression measurement: While these viewability guidelines are primarily\n designed for desktop browser-based advertising rather than mobile advertising,\n the following points should be noted: 1) measurers of viewability of mobile\n browser-based web ads are encouraged to consider these guidelines in\n measurements until such time as guidance specifically designed for the\n measurement of viewability in mobile web based ads is created; and 2) as noted\n in the [Mobile Application Advertising Measurement Guidelines issued by IAB,\n MMA and MRC in July 2013](http://www.iab.net/inappguidelines), ad impressions\n served in an in-application environment are currently generally assumed to be\n viewable.\n\n\n\n",
     "definitions": {
         "adviewability": {
@@ -125,6 +126,9 @@
         }
     },
     "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
         {
             "$ref": "#/definitions/adviewability"
         }

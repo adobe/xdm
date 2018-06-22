@@ -10,6 +10,11 @@ An identified device that is an application or browser instance that is trackabl
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/device.schema.json](context/device.schema.json) |
+## Schema Hierarchy
+
+* Device `https://ns.adobe.com/xdm/context/device`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+
 
 ## Device Example
 ```json

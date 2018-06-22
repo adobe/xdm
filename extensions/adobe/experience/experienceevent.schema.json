@@ -11,15 +11,6 @@
   "type": "object",
   "description":
     "This ExperienceEvent XDM includes the core/standard ExperienceEvent as well as the Adobe solution ExperienceEvents.",
-  "definitions": {
-    "experienceevent": {
-      "properties": {
-        "https://ns.adobe.com/experience/implementations": {
-          "$ref": "https://ns.adobe.com/experience/implementations"
-        }
-      }
-    }
-  },
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
@@ -37,7 +28,10 @@
       "$ref": "https://ns.adobe.com/experience/campaign/experienceevent"
     },
     {
-      "$ref": "#/definitions/experienceevent"
+      "$ref": "https://ns.adobe.com/experience/adcloud/experienceevent"
+    },
+    {
+      "$ref": "https://ns.adobe.com/experience/implementations"
     }
   ],
   "meta:status": "experimental"

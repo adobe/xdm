@@ -10,6 +10,11 @@ Detail information related to the browser
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/browserdetails.schema.json](context/browserdetails.schema.json) |
+## Schema Hierarchy
+
+* Browser Details `https://ns.adobe.com/xdm/context/browserdetails`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+
 
 ## Browser Details Example
 ```json

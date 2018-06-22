@@ -46,13 +46,6 @@
     "mocha-junit-reporter": "^1.17.0",
     "shelljs": "^0.7.8",
     "shx": "^0.2.2",
-    "xed-tooling": "git+ssh://git@git.corp.adobe.com:experience-platform/sdm-specification.git",
-    "fs-extra": "^1.0.0",
-    "node-assign": "^1.1.1",
-    "gulp-watch": "^4.3.8",
-    "gh-pages": "^1.0.0",
-    "git-branch": "^1.0.0",
-    "prompt": "^1.0.0",
-    "gulp-sftp": "^0.1.5"
+    "xed-tooling": "git+ssh://git@git.corp.adobe.com:experience-platform/sdm-specification.git"
   }
 }

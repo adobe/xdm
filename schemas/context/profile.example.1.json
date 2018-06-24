@@ -1,7 +1,7 @@
 {
   "xdm:identities": [
     {
-      "@id": "https://data.adobe.io/entities/identity/id123",
+      "xdm:id": "https://data.adobe.io/entities/identity/id123",
       "xdm:namespace": {
         "xdm:code": "AA111"
       }

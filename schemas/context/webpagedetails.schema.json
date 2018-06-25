@@ -37,7 +37,6 @@
         "xdm:server": {
           "title": "Server",
           "type": "string",
-          "format": "hostname",
           "description":
             "The normative or usual server that hosts the web page.  This may or may not be the host or server that actually served the page interaction, but is used for classification purposes."
         },

@@ -100,7 +100,6 @@ This schema aggregates all asset sub-schemas that are supported by XDM.
 | [xmp:layers](#xmplayers) | complex | Optional | [Asset](asset.schema.md#xmplayers) |
 | [xmp:machineKeywords](#xmpmachinekeywords) | `object[]` | Optional | [Asset](asset.schema.md#xmpmachinekeywords) |
 | [xmp:modifyDate](#xmpmodifydate) | `string` | Optional | [Asset](asset.schema.md#xmpmodifydate) |
-| [xmp:numberOfPixels](#xmpnumberofpixels) | `integer` | Optional | [Image](image.schema.md#xmpnumberofpixels) |
 | [xmp:rating](#xmprating) | `enum` | Optional | [Asset](asset.schema.md#xmprating) |
 | [xmpDM:videoFrameRate](#xmpdmvideoframerate) | `string` | Optional | [Video](video.schema.md#xmpdmvideoframerate) |
 | [xmpMM:history](#xmpmmhistory) | reference | Optional | [Asset](asset.schema.md#xmpmmhistory) |
@@ -1656,26 +1655,6 @@ The date and time when asset was last modified. The Date Time property should co
 
 `string`
 * format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
-
-
-
-
-
-
-## xmp:numberOfPixels
-
-Total number of pixels
-
-`xmp:numberOfPixels`
-* is optional
-* type: `integer`
-* defined in [Image](image.schema.md#xmp:numberOfPixels)
-
-### xmp:numberOfPixels Type
-
-
-`integer`
-* minimum value: `0`
 
 
 

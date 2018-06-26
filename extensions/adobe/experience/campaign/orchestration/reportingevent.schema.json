@@ -147,7 +147,7 @@
     "xdm:timestamp",
     "xdm:orgID"
   ],
-  "allof": [
+  "allOf": [
     {
       "$ref": "#/definitions/reportingevent"
     }

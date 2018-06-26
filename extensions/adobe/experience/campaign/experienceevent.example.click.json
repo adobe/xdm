@@ -8,14 +8,14 @@
   "xdm:channel": "https://ns.adobe.com/xdm/channels/email",
   "xdm:endUserIDs": {
     "https://ns.adobe.com/experience/mcid": {
-      "xdm:id": "https://data.adobe.io/entities/identity/92312748749128",
+      "xdm:id": "92312748749128",
       "xdm:namespace": {
         "@id": "https://data.adobe.io/entities/namespace/4",
         "xdm:code": "ECID"
       }
     },
     "https://ns.adobe.com/experience/campaign": {
-      "xdm:id": "https://data.adobe.io/entities/identity/1234567",
+      "xdm:id": "1234567",
       "xdm:namespace": {
         "@id": "https://data.adobe.io/entities/namespace/2756",
         "xdm:code": "CPGN"

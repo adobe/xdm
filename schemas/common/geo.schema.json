@@ -15,14 +15,14 @@
   "definitions": {
     "geo": {
       "properties": {
-        "xdm:countryISO": {
+        "xdm:countryCode": {
           "title": "Country code",
           "type": "string",
           "pattern": "^[A-Z]{2}$",
           "description":
             "The alpha-2 code of the country as defined by [ISO 3166-1](https://www.iso.org/iso-3166-country-codes.html)."
         },
-        "stateProvinceISO": {
+        "stateProvinceCode": {
           "title": "State or Province ISO Code.",
           "type": "string",
           "description":

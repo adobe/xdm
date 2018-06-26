@@ -60,7 +60,7 @@
         "stateProvince": {
           "title": "State or Province",
           "type": "string",
-          "description": "The state, province, territory portion of the address. Other than `xdm:stateProvinceISO`, this is a free-form field that can have the State or Province name in any language."
+          "description": "The state, province, territory portion of the address. Other than `xdm:stateProvinceCode`, this is a free-form field that can have the State or Province name in any language.  It is suggested to use this field only of the code is not available."
         },
         "xdm:country": {
           "title": "Country",

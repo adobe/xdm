@@ -4,13 +4,9 @@
       "@type": "https://ns.adobe.com/experience/offer-management/content-component-html",
       "dc:format": "text/html",
       "dc:language": ["de", "de-AT", "de-BE", "de-CH", "de-DE", , "de-LI", "de-LU"],
-      "repo:assetID": "urn:aaid:sc:US:0567c1d6-4fdc-4541-b736-f62934fcb5fc",
-      "_links": {
-        "api:primary": {
-          "href": "https://plaftform-cs-va7.adobe.io/content/storage/path/urn:aaid:sc:US:0567c1d6-4fdc-4541-b736-f62934fcb5fc",
-          "type": "text/html"
-        }
-      }
+      "repo:name": "widget_quickbooking.html",
+      "repo:id": "urn:aaid:sc:NLD2:0567c1d6-4fdc-4541-b736-f62934fcb5fc"
+      "repo:resolveURL": "https://platform-cs-stage.adobe.io/content/directory/resolve?asset_id=&quot;urn:aaid:sc:NLD2:0567c1d6-4fdc-4541-b736-f62934fcb5fc&quot;",
     }
   ],
   "xdm:placement": "uri:xcore:placement-0001",

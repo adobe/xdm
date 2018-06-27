@@ -10,6 +10,7 @@
   "title": "Address",
   "type": "object",
   "meta:auditable": true,
+  "meta:extensible": true,
   "meta:extends": [
     "http://schema.org/GeoCoordinates",
     "https://ns.adobe.com/xdm/common/geo"
@@ -97,6 +98,9 @@
     }
   },
   "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
     {
       "$ref": "http://schema.org/GeoCoordinates"
     },

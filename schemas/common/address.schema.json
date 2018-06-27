@@ -24,7 +24,7 @@
           "title": "Primary",
           "type": "boolean",
           "description":
-            "Primary address indicator. A Profile can have only one `primary` address at a given point of time.\n"
+            "Primary address indicator. A Profile can have only one `primary` address at a given point of time."
         },
         "xdm:label": {
           "title": "Label",
@@ -61,11 +61,7 @@
         "xdm:stateProvince": {
           "title": "State or Province",
           "type": "string",
-<<<<<<< HEAD
-          "description": "The state, province, territory portion of the address. Other than `xdm:stateProvinceCode`, this is a free-form field that can have the State or Province name in any language."
-=======
           "description": "The state, province, territory portion of the address. Other than `xdm:stateProvinceCode`, this is a free-form field that can have the State or Province name in any language.  It is suggested to use this field only of the code is not available."
->>>>>>> 3430003b7b3a32fda85452fee78a280b3b1e5d6d
         },
         "xdm:country": {
           "title": "Country",

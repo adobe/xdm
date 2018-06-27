@@ -22,13 +22,12 @@
           "description":
             "The alpha-2 code of the country as defined by [ISO 3166-1](https://www.iso.org/iso-3166-country-codes.html)."
         },
-        "stateProvinceCode": {
+        "xdm:stateProvinceCode": {
           "title": "State or Province ISO Code.",
           "type": "string",
           "description":
-            "The country subdivision as defined by the second part of [ISO 3166-2](https://www.iso.org/iso-3166-country-codes.html#2012_iso3166-2)(without the first part and the hyphen ISO 3166-1 alpha-2). Example: `CA` from ISO 3166-2 `US-CA` value designating the state of California in the United States of America. Example `75`: from ISO 3166-2 `FR-75` value designating the metropolitan department of Paris in France. NOTE: This value must be combined with countryCodeISO to compose valid ISO 3166-2 code.",
-          "minLength": 2,
-          "maxLength": 2
+            "The country subdivision using alpha-2 code of the country as defined by the second part of [ISO 3166-2](https://www.iso.org/iso-3166-country-codes.html#2012_iso3166-2) Example: ISO 3166-2 `US-CA` value designating the state of California in the United States of America. Example: ISO 3166-2 `FR-75` value designating the metropolitan department of Paris in France.",
+          "minLength": 5
         },
         "xdm:city": {
           "title": "City",

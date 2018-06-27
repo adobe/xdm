@@ -59,7 +59,7 @@
         },
         "xdm:postOfficeBox": {
           "title": "Post Office Box",
-          "type": "String",
+          "type": "string",
           "description": "Post office box number of the address.",
           "maxLength": 20
         },

@@ -60,7 +60,7 @@
         "xdm:postOfficeBox": {
           "title": "Post Office Box",
           "type": "string",
-          "description": "Post office box number of the address.",
+          "description": "Post office box of the address.",
           "maxLength": 20
         },
         "xdm:country": {

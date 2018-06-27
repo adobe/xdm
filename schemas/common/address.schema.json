@@ -57,8 +57,7 @@
           "description":
             "The region, county, or district portion of the address."
         },
-        {
-          "xdm:postOfficeBox",
+        "xdm:postOfficeBox": {
           "title": "Post Office Box",
           "type": "String",
           "description": "Post office box number of the address.",

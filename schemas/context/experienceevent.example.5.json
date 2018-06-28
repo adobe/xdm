@@ -25,8 +25,8 @@
     "xdm:mediaTimed": {
       "xdm:primaryAssetReference": {
         "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234430",
-        "xdm:name": "Floki Begs Helga for Freedom",
-        "xdm:duration": 87,
+        "dc:title": "Floki Begs Helga for Freedom",
+        "xmpDM:duration": 87,
         "xdm:showName": "nba_highlights",
         "xdm:assetID": "2613953",
         "xdm:showType": "episode",
@@ -58,16 +58,16 @@
   "xdm:advertising": {
     "xdm:adAssetReference": {
       "@id": "AD1",
-      "xdm:name": "adNumber1",
-      "xdm:duration": 10
+      "dc:title": "adNumber1",
+      "xmpDM:duration": 10
     },
     "xdm:adAssetViewDetails": {
       "xdm:playerName": "miniTestApp",
-      "xdm:podPosition": 0,
+      "xdm:index": 0,
       "xdm:adBreak": {
         "@id": "https://data.adobe.io/entities/ad-break/f40353618c5c11311f584e53c78654b9_0",
-        "xdm:podName": "Mid-Roll",
-        "xdm:podOffset": 44
+        "dc:title": "Mid-Roll",
+        "xdm:offset": 44
       }
     },
     "xdm:impressions": {

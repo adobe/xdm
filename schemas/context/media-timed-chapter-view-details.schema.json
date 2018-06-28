@@ -15,10 +15,10 @@
   "definitions": {
     "media-chapter-view-details": {
       "properties": {
-        "xdm:chapterPosition": {
-          "title": "Chapter Position",
+        "xdm:index": {
+          "title": "Chapter Index",
           "type": "integer",
-          "description": "The position (index) of the chapter inside the content."
+          "description": "The index of the chapter inside the content."
         },
         "xdm:offset": {
           "title": "Chapter Offset",
@@ -27,7 +27,7 @@
         }
       },
       "required": [
-        "xdm:chapterPosition",
+        "xdm:index",
         "xdm:offset"
       ]
     }

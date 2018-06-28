@@ -17,14 +17,14 @@
         "@id": {
           "title": "Ad ID",
           "type": "string",
-          "description": "Identifier of the ad asset."
+          "description": "Identifier of the ad asset provided by Media Analytics customers."
         },
-        "xdm:name": {
+        "dc:title": {
           "title": "Ad Name",
           "type": "string",
           "description": "The friendly (human-readable) name of the ad asset."
         },
-        "xdm:duration": {
+        "xmpDM:duration": {
           "title": "Ad Length/Duration",
           "type": "integer",
           "description": "Length of ad asset in seconds."
@@ -32,7 +32,7 @@
       },
       "required": [
         "@id",
-        "xdm:duration"
+        "xmpDM:duration"
       ]
     }
   },

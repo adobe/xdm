@@ -21,12 +21,12 @@
           "type": "string",
           "description": "The identity of the chapter."
         },
-        "xdm:name": {
+        "dc:title": {
           "title": "Chapter Name",
           "type": "string",
           "description": "The friendly name of the chapter and/or segment."
         },
-        "xdm:duration": {
+        "xmpDM:duration": {
           "title": "Chapter Length/Duration",
           "type": "integer",
           "description": "The length of the chapter, in seconds."
@@ -34,7 +34,7 @@
       },
       "required": [
         "@id",
-        "xdm:duration"
+        "xmpDM:duration"
       ]
     }
   },

@@ -20,12 +20,12 @@
           "type": "string",
           "description": "Identifier of the ad break."
         },
-        "xdm:podName": {
+        "dc:title": {
           "title": "Ad Break Name",
           "type": "string",
           "description": "The friendly name of the ad break."
         },
-        "xdm:podOffset": {
+        "xdm:offset": {
           "title": "Ad Break Offset",
           "type": "integer",
           "description": "The offset, in seconds, of the ad break from the start of the primary content."
@@ -33,7 +33,7 @@
       },
       "required": [
         "@id",
-        "xdm:podOffset"
+        "xdm:offset"
       ]
     }
   },

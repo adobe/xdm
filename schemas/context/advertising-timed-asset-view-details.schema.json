@@ -19,10 +19,10 @@
           "type": "string",
           "description": "The name of the player responsible for rendering the ad."
         },
-        "xdm:podPosition": {
-          "title": "Ad Position in Pod",
+        "xdm:index": {
+          "title": "Ad Index in Pod",
           "type": "integer",
-          "description": "The position (index) of the ad inside the parent ad break. The first ad has index 0, the second 1, and so on."
+          "description": "The index of the ad inside the parent ad break. The first ad has index 0, the second 1, and so on."
         },
         "xdm:adBreak": {
             "title": "Ad Break",
@@ -31,7 +31,7 @@
         }
       },
       "required": [
-        "xdm:podPosition"
+        "xdm:index"
       ]
     }
   },

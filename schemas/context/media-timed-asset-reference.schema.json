@@ -21,12 +21,12 @@
           "format": "uri",
           "description": "Content ID of the content, which can be used to tie back to other industry / CMS IDs."
         },
-        "xdm:name": {
+        "dc:title": {
           "title": "Media Name",
           "type": "string",
           "description": "The friendly (human-readable) name of the timed media asset."
         },
-        "xdm:duration": {
+        "xmpDM:duration": {
           "title": "Media Length/Runtime",
           "type": "integer",
           "description": "Length of primary media asset in seconds."
@@ -91,7 +91,7 @@
       },
       "required": [
         "@id",
-        "xdm:duration"
+        "xmpDM:duration"
       ]
     }
   },

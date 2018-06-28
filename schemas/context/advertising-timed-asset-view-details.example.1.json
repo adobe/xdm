@@ -1,9 +1,9 @@
 {
   "xdm:playerName": "Acme Ad Player",
-  "xdm:podPosition": 12,
+  "xdm:index": 1,
   "xdm:adBreak": {
     "@id": "https://data.adobe.io/entities/adbreak/2394509340-30453470347",
-    "xdm:podName": "My Pod",
-    "xdm:podOffset": 3
+    "dc:title": "My Pod",
+    "xdm:offset": 3
   }
 }

@@ -2,21 +2,21 @@
   "xdm:components": [
     {
       "@type": "https://ns.adobe.com/experience/offer-management/content-component-text",
-      "dc:format": "text/markdown",
-      "dc:language": ["en", "en-US", "en-GB"],
-      "xdm:text": "Mister"
+      "dc:format": "text/template",
+      "dc:language": ["en", "en-AU", "en-CA", "en-GB", "en-IN", "en-IE", "en-MT", "en-NZ", "en-PH", "en-SG", "en-ZA"],
+      "xdm:text": "Dear Madam {{profile.person.lastName}}, the offer expires 12/6/2018"
     },
     {
       "@type": "https://ns.adobe.com/experience/offer-management/content-component-text",
-      "dc:format": "text/markdown",
-      "dc:language": ["de", "de-AT", "de-BE", "de-CH", "de-DE", , "de-LI", "de-LU"],
-      "xdm:text": "Herr"
+      "dc:format": "text/template",
+      "dc:language": ["en-US"],
+      "xdm:text": "Dear Madam {{profile.person.lastName}}, the offer expires 6/12/2018"
     }
     {
       "@type": "https://ns.adobe.com/experience/offer-management/content-component-text",
-      "dc:format": "text/markdown",
-      "dc:language": ["es", "es-ES", "es-MX", "es-US"],
-      "xdm:text": "Señor"
+      "dc:format": "text/template",
+      "dc:language": ["es"],
+      "xdm:text": "Estimada señora {{profile.person.lastName}}: La oferta vence el 12/6/2018"
     }
   ],
   "xdm:placement": "uri:xcore:placement-0001",

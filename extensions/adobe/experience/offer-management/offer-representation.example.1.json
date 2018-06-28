@@ -4,7 +4,19 @@
       "@type": "https://ns.adobe.com/experience/offer-management/content-component-text",
       "dc:format": "text/markdown",
       "dc:language": ["en", "en-US", "en-GB"],
-      "text": "this *is* a text"
+      "xdm:text": "Mister"
+    },
+    {
+      "@type": "https://ns.adobe.com/experience/offer-management/content-component-text",
+      "dc:format": "text/markdown",
+      "dc:language": ["de", "de-AT", "de-BE", "de-CH", "de-DE", , "de-LI", "de-LU"],
+      "xdm:text": "Herr"
+    }
+    {
+      "@type": "https://ns.adobe.com/experience/offer-management/content-component-text",
+      "dc:format": "text/markdown",
+      "dc:language": ["es", "es-ES", "es-MX", "es-US"],
+      "xdm:text": "Señor"
     }
   ],
   "xdm:placement": "uri:xcore:placement-0001",

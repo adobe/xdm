@@ -26,6 +26,11 @@
           "$ref": "https://ns.adobe.com/xdm/data/datasource",
           "description": "Globally unique identification of a data source."
         },
+        "xdm:datasetID": {
+          "title": "Dataset ID",
+          "type": "string",
+          "description": "System generated identifier for the Dataset the event belongs to."
+        },
         "xdm:timestamp": {
           "title": "Timestamp",
           "type": "string",

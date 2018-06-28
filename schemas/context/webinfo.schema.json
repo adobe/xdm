@@ -10,6 +10,7 @@
   "title": "Web Information",
   "type": "object",
   "meta:status": "stabilizing",
+  "meta:extensible": true,
   "description": "",
   "definitions": {
     "webinfo": {
@@ -36,6 +37,9 @@
     }
   },
   "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
     {
       "$ref": "#/definitions/webinfo"
     }

@@ -13,6 +13,7 @@ The entites related to buying and selling activity.
 ## Schema Hierarchy
 
 * Commerce `https://ns.adobe.com/xdm/context/commerce`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Order](../data/order.schema.md) `https://ns.adobe.com/xdm/data/order`
   * [Measure](../data/measure.schema.md) `https://ns.adobe.com/xdm/data/measure`
 

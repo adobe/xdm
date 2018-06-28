@@ -9,6 +9,7 @@
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "ExperienceEvent",
     "type": "object",
+    "meta:extensible": true,
     "description": "The core ExperienceEvent XDM is used to capture observations that are altering one or more related XDMs/entities. The ExperienceEvent captures information about the observation taking place and when it is occurring. It is critical for time domain analytics as it allows observation and analysis of changes that occur in windows of time and comparison with other windows of time to track trends. ExperienceEvent are either explicit or implicit. Explicit events are direct observations of a human action taking place during a session. Implicit events are events that are being raised without a direct human action. Examples of implicit events are scheduled email sending of newsletters, battery voltage reaching a certain threshold, a person entering into range of a proximity sensor. While not all events are easily categorized across all data sources, it is extremely valuable to harmonize similar events into similar types for processing where possible, and the XDM specifications does this by defining a set of enumerated **type** attribute values with specific semantic meanings. Where possible events must be constrained to these enumerated values to facilitate interoperability.",
     "definitions": {
         "experienceevent": {
@@ -122,6 +123,83 @@
     ],
     "meta:status": "stabilizing",
     "examples": [
+        {
+            "@id": "https://data.adobe.io/experienceid-2345678",
+            "xdm:dataSource": {
+                "@id": "https://data.adobe.io/datasources/datasource-123",
+                "xdm:code": "DataSourceIntegrationCode-123"
+            },
+            "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+            "xdm:endUserIDs": {
+                "https://ns.adobe.com/experience/mcid": {
+                    "@id": "https://data.adobe.io/entities/identity/92312748749128",
+                    "xdm:namespace": {
+                        "@id": "https://data.adobe.io/entities/namespace/4",
+                        "xdm:code": "ECID"
+                    }
+                }
+            },
+            "xdm:environment": {
+                "xdm:type": "browser",
+                "xdm:browserDetails": {
+                    "xdm:name": "Chrome",
+                    "xdm:version": "63.0.3239",
+                    "xdm:acceptLanguage": "en",
+                    "xdm:cookiesEnabled": true,
+                    "xdm:viewportHeight": 900,
+                    "xdm:viewportWidth": 1680
+                },
+                "xdm:operatingSystem": "MAC OS",
+                "xdm:operatingSystemVersion": "10.13",
+                "xdm:connectionType": "cable"
+            },
+            "xdm:locationContext": {
+                "xdm:geo": {
+                    "xdm:countryCode": "US",
+                    "xdm:stateProvince": "CA",
+                    "xdm:city": "Emeryville",
+                    "xdm:dmaid": "99"
+                }
+            },
+            "xdm:web": {
+                "xdm:webPageView": {
+                    "xdm:URL": "https://www.example.com"
+                },
+                "xdm:webReferrer": {
+                    "xdm:URL": "https://www.examplereferrer.com/",
+                    "xdm:domain": "examplereferrer.com"
+                }
+            },
+            "xdm:device": {
+                "xdm:type": "mobile",
+                "xdm:manufacturer": "Apple",
+                "xdm:model": "iPhone 6"
+            },
+            "xdm:advertising": {
+                "xdm:adViewability": {
+                    "xdm:adUnitDepth": 0,
+                    "xdm:viewportHeight": 1250,
+                    "xdm:viewportWidth": 1600,
+                    "xdm:adHeight": 250,
+                    "xdm:adWidth": 300,
+                    "xdm:playerVolume": 85,
+                    "xdm:measurementEligible": true,
+                    "xdm:implementationDetails": {
+                        "xdm:name": "https://ns.adobe.com/experience/adcloud/viewability",
+                        "xdm:version": "1"
+                    },
+                    "xdm:viewable": true,
+                    "xdm:activeWindow": true,
+                    "xdm:percentViewable": 89,
+                    "xdm:viewableFirstQuartile": {
+                        "xdm:value": 1
+                    }
+                },
+                "xdm:firstQuartiles": {
+                    "xdm:value": 1
+                }
+            }
+        },
         {
             "@id": "https://data.adobe.io/experienceid-123456",
             "xdm:dataSource": {
@@ -337,83 +415,6 @@
                         }
                     }
                 ],
-                "xdm:type": "browser",
-                "xdm:browserDetails": {
-                    "xdm:name": "Chrome",
-                    "xdm:version": "63.0.3239",
-                    "xdm:acceptLanguage": "en",
-                    "xdm:cookiesEnabled": true,
-                    "xdm:viewportHeight": 900,
-                    "xdm:viewportWidth": 1680
-                },
-                "xdm:operatingSystem": "MAC OS",
-                "xdm:operatingSystemVersion": "10.13",
-                "xdm:connectionType": "cable"
-            },
-            "xdm:locationContext": {
-                "xdm:geo": {
-                    "xdm:countryCode": "US",
-                    "xdm:stateProvince": "CA",
-                    "xdm:city": "Emeryville",
-                    "xdm:dmaid": "99"
-                }
-            },
-            "xdm:web": {
-                "xdm:webPageView": {
-                    "xdm:URL": "https://www.example.com"
-                },
-                "xdm:webReferrer": {
-                    "xdm:URL": "https://www.examplereferrer.com/",
-                    "xdm:domain": "examplereferrer.com"
-                }
-            },
-            "xdm:device": {
-                "xdm:type": "mobile",
-                "xdm:manufacturer": "Apple",
-                "xdm:model": "iPhone 6"
-            },
-            "xdm:advertising": {
-                "xdm:adViewability": {
-                    "xdm:adUnitDepth": 0,
-                    "xdm:viewportHeight": 1250,
-                    "xdm:viewportWidth": 1600,
-                    "xdm:adHeight": 250,
-                    "xdm:adWidth": 300,
-                    "xdm:playerVolume": 85,
-                    "xdm:measurementEligible": true,
-                    "xdm:implementationDetails": {
-                        "xdm:name": "https://ns.adobe.com/experience/adcloud/viewability",
-                        "xdm:version": "1"
-                    },
-                    "xdm:viewable": true,
-                    "xdm:activeWindow": true,
-                    "xdm:percentViewable": 89,
-                    "xdm:viewableFirstQuartile": {
-                        "xdm:value": 1
-                    }
-                },
-                "xdm:firstQuartiles": {
-                    "xdm:value": 1
-                }
-            }
-        },
-        {
-            "@id": "https://data.adobe.io/experienceid-2345678",
-            "xdm:dataSource": {
-                "@id": "https://data.adobe.io/datasources/datasource-123",
-                "xdm:code": "DataSourceIntegrationCode-123"
-            },
-            "xdm:timestamp": "2017-09-26T15:52:25+00:00",
-            "xdm:endUserIDs": {
-                "https://ns.adobe.com/experience/mcid": {
-                    "@id": "https://data.adobe.io/entities/identity/92312748749128",
-                    "xdm:namespace": {
-                        "@id": "https://data.adobe.io/entities/namespace/4",
-                        "xdm:code": "ECID"
-                    }
-                }
-            },
-            "xdm:environment": {
                 "xdm:type": "browser",
                 "xdm:browserDetails": {
                     "xdm:name": "Chrome",

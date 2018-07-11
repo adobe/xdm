@@ -51,43 +51,59 @@
           "type": "string",
           "description": "Free-form format of the stream (e.g. short, long)."
         },
-        "iptc4xmpExt:season": {
-          "title": "Season",
-          "type": "string",
-          "description": "The season number the show belongs to."
-        },
-        "iptc4xmpExt:season": {
+        "iptc4xmpExt:Season": {
           "type": "object",
           "title": "Season",
-          "description": "The season number the show belongs to.",
+          "description": "The season the show belongs to.",
           "properties": {
             "iptc4xmpExt:Name": {
               "title": "Season Name",
               "type": "string",
-              "description": "Name of the episode or season of a series."
+              "description": "Name of the season."
             },
             "iptc4xmpExt:Number": {
               "title": "Season Number",
               "type": "number",
-              "description": "Number of the episode or season of a series."
+              "description": "Number of the season."
             },
             "iptc4xmpExt:Identifier": {
               "title": "Session Identifier",
               "type": "string",
               "format": "uri",
-              "description": "Identifier of the episode or season of a series."
+              "description": "Identifier of the season."
             }
           }
         },
-        "iptc4xmpExt:episode": {
+        "iptc4xmpExt:Episode": {
+          "type": "object",
           "title": "Episode",
-          "type": "string",
-          "description": "The number of the episode."
+          "description": "The episode the show belongs to.",
+          "properties": {
+            "iptc4xmpExt:Name": {
+              "title": "Episode Name",
+              "type": "string",
+              "description": "Name of the episode."
+            },
+            "iptc4xmpExt:Number": {
+              "title": "Season Number",
+              "type": "number",
+              "description": "Number of the episode."
+            },
+            "iptc4xmpExt:Identifier": {
+              "title": "Episode Identifier",
+              "type": "string",
+              "format": "uri",
+              "description": "Identifier of the episode."
+            }
+          }
         },
-        "iptc4xmpExt:genre": {
+        "iptc4xmpExt:Genre": {
           "title": "Genre",
-          "type": "string",
-          "description": "Type or grouping of content as defined by content producer."
+          "description": "Type or grouping of content as defined by content producer.",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
         },
         "xdm:airDate": {
           "title": "First Air Date",
@@ -101,15 +117,43 @@
           "format": "date",
           "description": "The date when the content first aired on any digital channel or platform."
         },
-        "iptc4xmpExt:rating": {
+        "iptc4xmpExt:Rating": {
           "title": "Content Rating",
-          "type": "string",
-          "description": "The rating as defined by Parental Guidelines."
+          "description": "The rating as defined by Parental Guidelines.",
+          "type": "object",
+          "items": {
+            "properties": {
+              "iptc4xmpExt:RatingValue": {
+                "title": "Episode Name",
+                "type": "string",
+                "description": "Rating value as issued by the rating source."
+              },
+              "iptc4xmpExt:RatingSourceLink": {
+                "title": "Episode Identifier",
+                "type": "string",
+                "format": "uri",
+                "description": "Link to the site and optionally the page of the party which has issued the rating value, linked resource should explain the rating rules."
+              }
+            },
+            "required": [
+              "iptc4xmpExt:RatingValue",
+              "iptc4xmpExt:RatingSourceLink"
+            ]
+          }
         },
-        "iptc4xmpExt:creator": {
+        "iptc4xmpExt:Creator": {
           "title": "Creator",
-          "type": "string",
-          "description": "The creator / originator of the content."
+          "description": "Party or parties (person or organisation) which created the video, refinement by the role attribute.",
+          "type": "object",
+          "items": {
+            "properties": {
+              "iptc4xmpExt:Name": {
+                "title": "Creator Name",
+                "type": "string",
+                "description": "Full name of the Creator."
+              }
+            }
+          }
         }
       },
       "required": [

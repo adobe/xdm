@@ -31,13 +31,26 @@
         "xdm:assetID": "2613953",
         "xdm:showType": "episode",
         "xdm:streamFormat": "long",
-        "iptc4xmpExt:season": "N/A",
-        "iptc4xmpExt:episode": "one",
-        "iptc4xmpExt:genre": "sports",
+        "iptc4xmpExt:Season": {
+          "iptc4xmpExt:Number": null
+        },
+        "iptc4xmpExt:Episode": {
+          "iptc4xmpExt:Number": 1
+        },
+        "iptc4xmpExt:Genre": ["sports"],
         "xdm:airDate": "2018-03-01",
         "xdm:digitalDate": "2018-05-01",
-        "iptc4xmpExt:rating": "TV14",
-        "iptc4xmpExt:creator": "ESPN"
+        "iptc4xmpExt:rating": [
+          {
+            "iptc4xmpExt:RatingValue": "TV14",
+            "iptc4xmpExt:RatingSourceLink": "http://www.tvguidelines.org/ratings.htm"
+          }
+        ],
+        "iptc4xmpExt:creator": [
+          {
+            "iptc4xmpExt:Name": "ESPN"
+          }
+        ]
       },
       "xdm:primaryAssetViewDetails": {
         "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114230",

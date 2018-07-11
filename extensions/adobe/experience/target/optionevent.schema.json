@@ -1,0 +1,88 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/target/activity/activityevent/optionevent",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Activity Option Event",
+  "type": "object",
+  "description": "Represents Activity Option Event.",
+  "definitions": {
+    "optionevent": {
+      "properties": {
+        "https://ns.adobe.com/experience/target/activity/activityevent/optionevent/location": {
+          "title": "Location",
+          "description": "Activity Display Location.",
+          "properties": {
+            "xdm:locationId": {
+              "title": "Location Id",
+              "type": "integer",
+              "description": "Activity Display Location Id."
+            },
+            "xdm:selector": {
+              "title": "Selector",
+              "type": "string",
+              "description": "Activity Display Location Selector"
+            }
+          },
+          "required": [
+            "xdm:locationId"
+          ]
+        },
+        "https://ns.adobe.com/experience/target/activity/activityevent/optionevent/option": {
+          "title": "Option",
+          "description": "Activity Display Option.",
+          "properties": {
+            "xdm:optionId": {
+              "title": "Option Id",
+              "type": "integer",
+              "description": "Activity Option Id."
+            },
+            "xdm:offerId": {
+              "title": "Offer Id",
+              "type": "integer",
+              "description": "Represents Id of offer used in option"
+            },
+            "xdm:offerVersion": {
+              "title": "Offer Version",
+              "type": "integer",
+              "description": "Represents Version of used offer"
+            }
+          },
+          "required": [
+            "xdm:optionId"
+          ]
+        },
+        "xdm:type": {
+          "title": "Event Type",
+          "type": "string",
+          "description": "Event Type.",
+          "enum": [
+            "visitor",
+            "visit",
+            "impression"
+          ],
+          "meta:enum": {
+            "visitor": "Activity got a new visitor.",
+            "visit": "Activity got a new visit.",
+            "impression": "Activity got a new impression."
+          }
+        }
+      },
+      "required" : [
+        "https://ns.adobe.com/experience/target/activity/activityevent/optionevent/location",
+        "https://ns.adobe.com/experience/target/activity/activityevent/optionevent/option",
+        "xdm:type"
+      ]
+    },
+    "allOf": [
+      {
+        "$ref": "#/definitions/optionevent"
+      }
+    ],
+    "meta:status": "experimental"
+  }
+}

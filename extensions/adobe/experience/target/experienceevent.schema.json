@@ -44,6 +44,19 @@
           "title": "Page Score",
           "type": "number",
           "description": "Customer assigned score to visited page."
+        },
+        "https://ns.adobe.com/experience/target/environmentId": {
+          "title": "Environment Id",
+          "type": "integer",
+          "description": "id of environment on which event was processed."
+        },
+        "xdm:activities": {
+          "title": "Activities",
+          "type": "array",
+          "description": "A list of items representing executed activities.",
+          "items": {
+            "$ref": "https://ns.adobe.com/experience/target/activity"
+          }
         }
       }
     }

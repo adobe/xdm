@@ -1,0 +1,73 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/target/activity",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Target Activity",
+  "type": "object",
+  "description": "Represents Target Activity Events.",
+  "definitions": {
+    "activity": {
+      "properties": {
+        "xdm:activityId": {
+          "title": "Activity Id",
+          "type": "integer",
+          "description": "Activity Id."
+        },
+        "xdm:version": {
+          "title": "Version",
+          "type": "integer",
+          "description": "Activity Version."
+        },
+        "https://ns.adobe.com/experience/target/activity/preview": {
+          "title": "Activity Preview",
+          "type": "object",
+          "description": "Activity Preview Parameters.",
+          "properties": {
+                  "xdm:forcedExperienceId": {
+                    "title": "Experience Id",
+                    "type": "integer",
+                    "description": "Forced experience Id."
+                  },
+                  "xdm:evaluateAsTrueAudienceIds": {
+                    "title": "evaluate as True audience Ids",
+                    "type": "array",
+                    "items": {
+                      "type": "integer"
+                    },
+                    "description": "Evaluated as matching audience Ids."
+                  },
+                  "xdm:evaluateAsFalseAudienceIds": {
+                    "title": "Evaluate as False audience Ids",
+                    "type": "array",
+                    "items": {
+                      "type": "integer"
+                    },
+                    "description": "Evaluated as non-matching audience Ids."
+                  }
+                }
+        },
+        "xdm:activityevents": {
+          "items": {
+            "$ref": "https://ns.adobe.com/experience/target/activityevent"
+          },
+          "type": "array"
+        },
+        "required": [
+          "activityId",
+          "version"
+        ]
+      }
+    },
+    "allOf": [
+      {
+        "$ref": "#/definitions/activity"
+      }
+    ],
+    "meta:status": "experimental"
+  }
+}

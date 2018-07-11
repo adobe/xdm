@@ -1,0 +1,130 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/target/activity/activityevent",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Target Activity Event",
+  "type": "object",
+  "description": "Represents executed Target Activity and Activity Events.",
+  "definitions": {
+    "activityevent": {
+      "properties": {
+        "https://ns.adobe.com/experience/target/activity/activityevent/context": {
+          "title": "Event Context",
+          "description": "Activity Event Context.",
+          "properties": {
+            "xdm:experienceId": {
+              "title": "Experience identifier",
+              "type": "integer",
+              "description": "experience identifier denoting selected experience."
+            },
+            "xdm:algorithmId": {
+              "title": "Algorithm identifier",
+              "type": "integer",
+              "description": "algorithm identifier denoting used algorithm to select the experience."
+            },
+            "xdm:trafficType": {
+              "title": "Traffic type",
+              "type": "string",
+              "description": "denotes traffic type.",
+              "enum": [
+                "testing",
+                "targeted"
+              ],
+              "meta:enum": {
+                "testing": "Testing Traffic",
+                "targeted": "Targeted Traffic"
+              }
+            },
+            "xdm:stepId": {
+              "title": "Step identifier",
+              "type": "integer",
+              "description": "denotes the visited activity step"
+            },
+            "required": [
+              "xdm:experienceId",
+              "xdm:algorithmId",
+              "xdm:trafficType",
+              "xdm:stepId"
+            ]
+          }
+        }
+      },
+      "xdm:strategy": {
+        "title": "Strategy",
+        "type": "string",
+        "description": "Event processing strategy.",
+        "enum": [
+          "none",
+          "reconvert",
+          "always_convert",
+          "restart_same_experience",
+          "restart_random_experience",
+          "restart_new_experience",
+          "exclude_same_experience",
+          "ban",
+          "exclude_default_content",
+          "experience_frequency_capping"
+        ],
+        "meta:enum": {
+          "none": "Continue to display content from the same experience. Never count the visitor more than once.",
+          "reconvert": "Continue to display content from the same experience. Count the visitor again if they visit any other mbox before visiting this success metric again.",
+          "always_convert": "Continue to display content from the same experience. Count the visitor again every time they visit this success metric",
+          "restart_same_experience": "Continue to display content from the same experience. Count the visitor again if they re-fulfill the campaign entry conditions.",
+          "restart_random_experience": "Run experience selection again to determine the content to display. Count the visitor again if they re-fulfill the campaign entry conditions.",
+          "restart_new_experience": "Run experience selection again to determine the content to display, but exclude any experiences the visitor has already seen. Count the visitor again if they re-fulfill the campaign entry conditions.",
+          "exclude_same_experience": "Continue to display content from the same experience. Never count the visitor more than once.",
+          "ban": "Ban user from campaign.",
+          "exclude_default_content": "Display default content. Never count the visitor again.",
+          "experience_frequency_capping": "Cap experience by frequency"
+        }
+      },
+      "xdm:score": {
+        "title": "Engagement Metric Score",
+        "type": "number",
+        "description": "Engagement Metric Score."
+      },
+      "xdm:type": {
+        "title": "Event Type",
+        "type": "string",
+        "description": "Event Type.",
+        "enum": [
+          "visitor",
+          "visit",
+          "impression"
+        ],
+        "meta:enum": {
+          "visitor": "Activity got a new visitor.",
+          "visit": "Activity got a new visit.",
+          "impression": "Activity got a new impression."
+        }
+      },
+      "xdm:segmentevents": {
+        "items": {
+          "$ref": "https://ns.adobe.com/experience/target/activity/activityevent/segmentevent"
+        },
+        "type": "array"
+      },
+      "xdm:optionevents": {
+        "items": {
+          "$ref": "https://ns.adobe.com/experience/target/activity/activityevent/optionevent"
+        },
+        "type": "array"
+      },
+      "required": [
+        "https://ns.adobe.com/experience/target/activity/activityevent/context",
+        "xdm:type"
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/activityevent"
+    }
+  ],
+  "meta:status": "experimental"
+}

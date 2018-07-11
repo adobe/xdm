@@ -17,6 +17,7 @@
         "@id": {
           "title": "Ad ID",
           "type": "string",
+          "format": "uri",
           "description": "Identifier of the ad asset provided by Media Analytics customers."
         },
         "dc:title": {
@@ -37,6 +38,9 @@
     }
   },
   "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
     {
       "$ref": "#/definitions/adAssetReference"
     }

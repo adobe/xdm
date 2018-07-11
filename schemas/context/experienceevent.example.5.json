@@ -58,7 +58,7 @@
   },
   "xdm:advertising": {
     "xdm:adAssetReference": {
-      "@id": "AD1",
+      "@id": "https://data.adobe.io/entities/ad-id/AD1",
       "dc:title": "adNumber1",
       "xmpDM:duration": 10
     },

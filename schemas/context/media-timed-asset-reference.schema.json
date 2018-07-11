@@ -56,6 +56,29 @@
           "type": "string",
           "description": "The season number the show belongs to."
         },
+        "iptc4xmpExt:season": {
+          "type": "object",
+          "title": "Season",
+          "description": "The season number the show belongs to.",
+          "properties": {
+            "iptc4xmpExt:Name": {
+              "title": "Season Name",
+              "type": "string",
+              "description": "Name of the episode or season of a series."
+            },
+            "iptc4xmpExt:Number": {
+              "title": "Season Number",
+              "type": "number",
+              "description": "Number of the episode or season of a series."
+            },
+            "iptc4xmpExt:Identifier": {
+              "title": "Session Identifier",
+              "type": "string",
+              "format": "uri",
+              "description": "Identifier of the episode or season of a series."
+            }
+          }
+        },
         "iptc4xmpExt:episode": {
           "title": "Episode",
           "type": "string",

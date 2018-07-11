@@ -13,7 +13,7 @@
       "xdm:airDate": "2018-03-01",
       "xdm:digitalDate": "2018-05-01",
       "Iptc4xmpExt:Rating": "TV14",
-      "Iptc4xmpExt:Originator": "ESPN"
+      "Iptc4xmpExt:Creator": "ESPN"
     },
     "xdm:primaryAssetViewDetails": {
       "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114230",
@@ -34,10 +34,10 @@
       "xdm:chapterAssetReference": {
         "@id": "https://data.adobe.io/entities/media-chapter-asset-reference/2144511",
         "xdm:name": "Chapter1",
-        "xdm:duration": 44
+        "xmpDM:duration": 44
       },
       "xdm:chapterAssetViewDetails": {
-        "xdm:chapterPosition": 0,
+        "xdm:index": 0,
         "xdm:offset": 0
       },
       "xdm:impressions": {

@@ -51,17 +51,17 @@
           "type": "string",
           "description": "Free-form format of the stream (e.g. short, long)."
         },
-        "xdm:season": {
+        "Iptc4xmpExt:Season": {
           "title": "Season",
           "type": "string",
           "description": "The season number the show belongs to."
         },
-        "xdm:episode": {
+        "Iptc4xmpExt:Episode": {
           "title": "Episode",
           "type": "string",
           "description": "The number of the episode."
         },
-        "xdm:genre": {
+        "Iptc4xmpExt:Genre": {
           "title": "Genre",
           "type": "string",
           "description": "Type or grouping of content as defined by content producer."
@@ -78,15 +78,15 @@
           "format": "date",
           "description": "The date when the content first aired on any digital channel or platform."
         },
-        "xdm:rating": {
+        "Iptc4xmpExt:Rating": {
           "title": "Content Rating",
           "type": "string",
           "description": "The rating as defined by Parental Guidelines."
         },
-        "xdm:originator": {
-          "title": "Originator",
+        "Iptc4xmpExt:Creator": {
+          "title": "Creator",
           "type": "string",
-          "description": "The creator of the content."
+          "description": "The creator / originator of the content."
         }
       },
       "required": [

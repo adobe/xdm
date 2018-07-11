@@ -120,7 +120,7 @@
         "iptc4xmpExt:Rating": {
           "title": "Content Rating",
           "description": "The rating as defined by Parental Guidelines.",
-          "type": "object",
+          "type": "array",
           "items": {
             "properties": {
               "iptc4xmpExt:RatingValue": {
@@ -144,7 +144,7 @@
         "iptc4xmpExt:Creator": {
           "title": "Creator",
           "description": "Party or parties (person or organisation) which created the video, refinement by the role attribute.",
-          "type": "object",
+          "type": "array",
           "items": {
             "properties": {
               "iptc4xmpExt:Name": {

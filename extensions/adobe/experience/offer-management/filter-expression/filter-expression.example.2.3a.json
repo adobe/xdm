@@ -1,0 +1,11 @@
+{
+  "nodeType": "fnApply",
+  "fnName": "modelInstances",
+  "params": [
+    {
+      "nodeType": "literal",
+      "literalType": "String",
+      "value": "/queries/offersByTagIds?tagId=\"uri:com:example:tag-0001\"&tagId=\"uri:com:example:tag-0002\"&qop=\"AND\""
+    }
+  ]
+}

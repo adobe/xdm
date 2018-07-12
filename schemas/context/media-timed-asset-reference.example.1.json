@@ -2,8 +2,10 @@
   "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234430",
   "dc:title": "Floki Begs Helga for Freedom",
   "xmpDM:duration": 87,
-  "xdm:showName": "nba_highlights",
-  "xdm:assetID": "2613953",
+  "iptc4xmpExt:Series": {
+    "iptc4xmpExt:Name": "nba_highlights",
+    "iptc4xmpExt:Identifier": "http://espn.com/series-identifiers/2613953"
+  },
   "xdm:showType": "episode",
   "xdm:streamFormat": "long",
   "iptc4xmpExt:Season": {

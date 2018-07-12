@@ -86,7 +86,6 @@ The Image class is for raster and vector image assets, including JPEG, PNG, SVG 
 | [xmp:layers](#xmplayers) | complex | Optional | [Asset](asset.schema.md#xmplayers) |
 | [xmp:machineKeywords](#xmpmachinekeywords) | `object[]` | Optional | [Asset](asset.schema.md#xmpmachinekeywords) |
 | [xmp:modifyDate](#xmpmodifydate) | `string` | Optional | [Asset](asset.schema.md#xmpmodifydate) |
-| [xmp:numberOfPixels](#xmpnumberofpixels) | `integer` | Optional | Image (this schema) |
 | [xmp:rating](#xmprating) | `enum` | Optional | [Asset](asset.schema.md#xmprating) |
 | [xmpMM:history](#xmpmmhistory) | reference | Optional | [Asset](asset.schema.md#xmpmmhistory) |
 | [xmpMM:manageTo](#xmpmmmanageto) | `string` | Optional | [Asset](asset.schema.md#xmpmmmanageto) |
@@ -1331,26 +1330,6 @@ The date and time when asset was last modified. The Date Time property should co
 
 `string`
 * format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
-
-
-
-
-
-
-## xmp:numberOfPixels
-
-Total number of pixels
-
-`xmp:numberOfPixels`
-* is optional
-* type: `integer`
-* defined in this schema
-
-### xmp:numberOfPixels Type
-
-
-`integer`
-* minimum value: `0`
 
 
 

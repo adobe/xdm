@@ -51,6 +51,13 @@
             "condition": "if a conditional step has been processed"
           }
         },
+        "xdm:flowControlID": {
+          "title": "Unique identifier for the flow control",
+          "type": "string",
+          "format": "uri",
+          "description":
+            "The identifier of the flow control in a journey version"
+        },
         "xdm:eventMetrics": {
           "title": "Metrics to be reported",
           "$ref":
@@ -140,7 +147,7 @@
     "xdm:timestamp",
     "xdm:orgID"
   ],
-  "allof": [
+  "allOf": [
     {
       "$ref": "#/definitions/reportingevent"
     }

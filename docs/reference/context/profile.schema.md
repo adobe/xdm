@@ -103,7 +103,33 @@ for other Profile data such as preference, propensities and other attributes.
   },
   "xdm:geoUnit": {
     "@id": "https://data.adobe.io/geo-france"
-  }
+  },
+  "xdm:segments": [
+    {
+      "xdm:segmentID": {
+        "@id": "https://data.adobe.io/entities/segmentidentity/04a81716-43d6-4e7a-a49c-f1d8b3129ba9",
+        "xdm:namespace": {
+          "xdm:code": "AAM"
+        }
+      },
+      "xdm:version": "15",
+      "xdm:timestamp": "2018-04-26T15:52:25+00:00",
+      "xdm:validUntil": "2019-04-26T15:52:25+00:00",
+      "xdm:status": "existing"
+    },
+    {
+      "xdm:segmentID": {
+        "@id": "https://data.adobe.io/entities/identity/53cba6b2-a23b-454a-8069-fc41308f1c0f",
+        "xdm:namespace": {
+          "xdm:code": "AAM"
+        }
+      },
+      "xdm:version": "3",
+      "xdm:lastQualificationTime": "2018-04-26T15:52:25+00:00",
+      "xdm:validUntil": "2018-04-27T15:52:25+00:00",
+      "xdm:status": "realized"
+    }
+  ]
 }
 ```
 
@@ -132,6 +158,7 @@ for other Profile data such as preference, propensities and other attributes.
 | [xdm:pushNotificationTokens](#xdmpushnotificationtokens) | Push Notification Token | Optional | Profile (this schema) |
 | [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmrepositorycreatedby) |
 | [xdm:repositoryLastModifiedBy](#xdmrepositorylastmodifiedby) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmrepositorylastmodifiedby) |
+| [xdm:segments](#xdmsegments) | Segment Membership | Optional | Profile (this schema) |
 | [xdm:subscriptions](#xdmsubscriptions) | Subscription | Optional | Profile (this schema) |
 | [xdm:testProfile](#xdmtestprofile) | `boolean` | Optional | Profile (this schema) |
 | [xdm:timeZone](#xdmtimezone) | `string` | Optional | Profile (this schema) |
@@ -620,6 +647,30 @@ At creation time, `modifiedByUser` is set as `createdByUser`.
 
 
 `string`
+
+
+
+
+
+
+## xdm:segments
+### Segment Membership
+
+`xdm:segments`
+* is optional
+* type: Segment Membership
+
+* defined in this schema
+
+### xdm:segments Type
+
+
+Array type: Segment Membership
+
+All items must be of the type:
+* [Segment Membership](segmentmembership.schema.md) – `https://ns.adobe.com/xdm/context/segmentmembership`
+
+
 
 
 

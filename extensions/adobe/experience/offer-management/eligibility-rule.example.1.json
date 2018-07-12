@@ -1,0 +1,20 @@
+{
+  "@id": "https://www.example.com/offers/eligibility-rule/rule-0001",
+  "xdm:name": "Californians with two or more purchases of more than $1000",
+  "xdm:value": "profile.xdm:homeAddress.xdm:stateOrProvince = \"CA\" AND (SELECT X FROM xEvent WHERE X.xdm:commerce.xdm:order.xdm:priceTotal > 1000 AND X.xdm:commerce.xdm:order.xdm:currencyCode = \"USD\").count() > 1",
+  "xdm:modelUsage" : [
+    {
+      "xdm:model" : "https://ns.adobe.com/xdm/context/profile",
+      "xdm:modelPropertyPaths" : [
+        "xdm:homeAddress.xdm:stateProvince"
+      ]
+    },
+    {
+      "xdm:model" : "https://ns.adobe.com/xdm/context/experienceevent",
+      "xdm:modelPropertyPaths" : [
+        "xdm:commerce.xdm:order.xdm:priceTotal",
+        "xdm:commerce.xdm:order.xdm:currencyCode"
+      ]
+    }
+  ]
+}

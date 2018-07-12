@@ -1,0 +1,39 @@
+{
+  "nodeType": "select",
+  "variables": [
+    {
+      "nodeType": "varDecl",
+      "varName": "o",
+      "from": {
+        "nodeType": "fnApply",
+        "fnName": "modelInstances",
+        "params": [
+          {
+            "nodeType": "literal",
+            "literalType": "String",
+            "value": "https://ns.adobe.com/experience/offer-management/personalized-offer"
+          }
+        ]
+      },
+      "where": {
+        "nodeType": "fnApply",
+        "fnName": "in",
+        "params": [
+          {
+            "nodeType": "literal",
+            "literalType": "String",
+            "value": "uri:com:example:tag-0001"
+          },
+          {
+            "nodeType": "fieldLookup",
+            "fieldName": "xdm:tags",
+            "object": {
+              "nodeType": "varRef",
+              "varName": "o"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

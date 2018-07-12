@@ -1,7 +1,4 @@
 {
   "@id": "https://data.adobe.io/geo-san-jose",
-  "xdm:label": "San Jose",
-  "xdm:parentGeoUnit": {
-    "@id": "https://data.adobe.io/geo-sf-bay-area"
-  } 
+  "xdm:label": "San Jose"
 }

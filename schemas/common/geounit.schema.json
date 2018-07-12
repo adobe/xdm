@@ -25,11 +25,6 @@
           "title": "Label of the geographical unit.",
           "type": "string",
           "description": "The user-friendly name for the geographical unit."
-        },
-        "xdm:parentGeoUnit": {
-          "title": "Parent Geographical Unit.",
-          "$ref": "https://ns.adobe.com/xdm/common/geounit",
-          "description": "Parent geographical unit of the current geographical unit in the geographical hierarchy. For e.g. `geounit` for `France` might have `xdm:parentGeoUnit` as `geounit` `Europe`."
         }
       },
       "required": ["@id"]

@@ -9,7 +9,8 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "ExperienceEvent",
   "type": "object",
-  "description": "This ExperienceEvent XDM includes the core/standard ExperienceEvent as well as the Adobe solution ExperienceEvents.",
+  "description":
+    "This ExperienceEvent XDM includes the core/standard ExperienceEvent as well as the Adobe solution ExperienceEvents.",
   "definitions": {
     "experienceevent": {
       "properties": {
@@ -19,8 +20,9 @@
         "https://ns.adobe.com/experience/datasetID": {
           "title": "Dataset ID",
           "type": "string",
-          "description": "System generated identifier for the Dataset the event belongs to."
-        },
+          "description":
+            "System generated identifier for the Dataset the event belongs to."
+        }
       }
     }
   },

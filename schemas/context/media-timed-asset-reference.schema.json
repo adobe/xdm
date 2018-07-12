@@ -31,20 +31,28 @@
           "type": "integer",
           "description": "Length of primary media asset in seconds."
         },
-        "xdm:showName": {
-          "title": "Show Name",
-          "type": "string",
-          "description": "Program/Series Name."
-        },
-        "xdm:assetID": {
-          "title": "Asset ID",
-          "type": "string",
-          "description": "This is the unique identifier for the content of the video asset, such as the TV series episode identifier, movie asset identifier, or live event identifier. Typically these IDs are derived from metadata authorities such as EIDR, TMS/Gracenote, or Rovi. These identifiers can also be from other proprietary or in-house systems."
-        },
         "xdm:showType": {
           "title": "Show Type",
           "type": "string",
           "description": "The type of content e.g. Trailer, Full Episode."
+        },
+        "iptc4xmpExt:Series": {
+          "type": "object",
+          "title": "Series",
+          "description": "The series the show belongs to.",
+          "properties": {
+            "iptc4xmpExt:Name": {
+              "title": "Series Name",
+              "type": "string",
+              "description": "Name of the series."
+            },
+            "iptc4xmpExt:Identifier": {
+              "title": "Series Identifier",
+              "type": "string",
+              "format": "uri",
+              "description": "Identifier of the series."
+            }
+          }
         },
         "xdm:streamFormat": {
           "title": "Stream Format",

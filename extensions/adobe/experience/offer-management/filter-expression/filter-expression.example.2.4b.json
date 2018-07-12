@@ -1,0 +1,81 @@
+{
+  "nodeType": "select",
+  "variables": [
+    {
+      "nodeType": "varDecl",
+      "varName": "o",
+      "from": {
+        "nodeType": "fnApply",
+        "fnName": "modelInstances",
+        "params": [
+          {
+            "nodeType": "literal",
+            "literalType": "String",
+            "value": "https://ns.adobe.com/experience/offer-management/personalized-offer"
+          }
+        ]
+      },
+      "where": {
+        "nodeType": "fnApply",
+        "fnName": "and",
+        "params": [
+          {
+            "nodeType": "quantification",
+            "quantifier": "all",
+            "variables": [
+              {
+                "nodeType": "varDecl",
+                "varName": "t",
+                "from": {
+                  "nodeType": "literal",
+                  "literalType": "List",
+                  "value": [
+                    "uri:com:example:tag-0001",
+                    "uri:com:example:tag-0002"
+                  ]
+                },
+                "where": {
+                  "nodeType": "fnApply",
+                  "fnName": "in",
+                  "params": [
+                    {
+                      "nodeType": "varRef",
+                      "varName": "t"
+                    },
+                    {
+                      "nodeType": "fieldLookup",
+                      "fieldName": "xdm:tags",
+                      "object": {
+                        "nodeType": "varRef",
+                        "varName": "o"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "nodeType": "fnApply",
+            "fnName": "=",
+            "params": [
+              {
+                "nodeType": "fieldLookup",
+                "fieldName": "xdm:status",
+                "object": {
+                  "nodeType": "varRef",
+                  "varName": "o"
+                }
+              },
+              {
+                "nodeType": "literal",
+                "literalType": "String",
+                "value": "approved"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

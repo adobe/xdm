@@ -1,0 +1,57 @@
+{
+  "nodeType": "select",
+  "variables": [
+    {
+      "nodeType": "varDecl",
+      "varName": "o",
+      "from": {
+        "nodeType": "fnApply",
+        "fnName": "modelInstances",
+        "params": [
+          {
+            "nodeType": "literal",
+            "literalType": "String",
+            "value": "https://ns.adobe.com/experience/offer-management/personalized-offer"
+          }
+        ]
+      },
+      "where": {
+        "nodeType": "quantification",
+        "quantifier": "some",
+        "variables": [
+          {
+            "nodeType": "varDecl",
+            "varName": "r",
+            "from": {
+              "nodeType": "fieldLookup",
+              "fieldName": "xdm:representations",
+              "object": {
+                "nodeType": "varRef",
+                "varName": "o"
+              }
+            },
+            "where": {
+              "nodeType": "fnApply",
+              "fnName": "=",
+              "params": [
+                {
+                  "nodeType": "fieldLookup",
+                  "fieldName": "xdm:placement",
+                  "object": {
+                    "nodeType": "varRef",
+                    "varName": "r"
+                  }
+                },
+                {
+                  "nodeType": "literal",
+                  "literalType": "String",
+                  "value": "uri:com:example:placement-1001"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

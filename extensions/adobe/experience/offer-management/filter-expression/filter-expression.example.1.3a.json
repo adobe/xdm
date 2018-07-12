@@ -1,0 +1,11 @@
+{
+  "nodeType": "fnApply",
+  "fnName": "modelInstances",
+  "params": [
+    {
+      "nodeType": "literal",
+      "literalType": "String",
+      "value": "/queries/offersByPlacementIds?placementId=\"uri:com:example:placement-01001\"&placementId=\"uri:com:example:placement-01002\"&property=\"_instance.status=approved\""
+    }
+  ]
+}

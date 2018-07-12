@@ -51,7 +51,7 @@
         },
         "xdm:conversions": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "A costumer pre-defined action(s) which triggers an event for performance evaluation."
+          "description": "A customer pre-defined action(s) which triggers an event for performance evaluation."
         },
         "xdm:firstQuartiles": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",

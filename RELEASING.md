@@ -1,17 +1,18 @@
 # How-To Release an XDM Snapshot
 
-We using the GitHub release mechanism to tag and publish releases.
+The XDM project is using the GitHub release mechanism to tag and publish releases.
 There are a few tasks to be done to prepare the repository for the release off
 of the `master` branch.
-These are listed below here.
+
+## Release Tasks.
 
 *Note:* We are currently only release _pre-release_ versions as we have not
 stabilized our models fully yet.
-Also we try to hold on to a monthly release cycle where releases are cut around
+*Note:* The current release cadence is a monthly release cycle where the releases are cut around
 the middle of the month.
-The next planned release is indicated at the top of the [changelog](CHANGELOG.md).
+The next planned release is indicated at the bottom of the [changelog](CHANGELOG.md).
 
-Long story short, here are the steps to release:
+### Steps to execute a release:
 
 * Clone and update the `master` branch of the `adobe/xdm` repository in your local workspace
 * Make sure there are no pending changes (`git status`) and all pull requests scheduled for the release are merged
@@ -22,7 +23,8 @@ $ npm run lint
 * Define a version number to use, for example `0.9.3`
 * Update the `version` property in [package.json](package.json) with the version number
 * Update the title in the [introduction](docs/introduction.md) with the version number
-* Update [changelog](CHANGELOG.md) with release date and version number
+* Update [changelog](CHANGELOG.md) indicating the "planned release" is "released" with the updated actual date.
+* Update [changelog](CHANGELOG.md) with the addition of a new "planned release" and expected date.
 * Update reference docs
 ```sh
 $ npm run clean

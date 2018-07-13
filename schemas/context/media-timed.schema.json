@@ -55,11 +55,6 @@
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Indicates the first frame of the timed media asset has been viewed - i.e. the viewer did not abandon during pre-roll ad, buffering, etc."
         },
-        "xdm:mediaSegments": {
-          "title": "Media Segment",
-          "type": "string",
-          "description": "The interval that describes the part of the content that has been viewed (in minutes). The segment is computed as min and max of the playhead values during a playback session."
-        },
         "xdm:mediaSegmentViews": {
           "title": "Media Segment Views",
           "$ref": "https://ns.adobe.com/xdm/data/measure",

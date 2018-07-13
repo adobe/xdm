@@ -87,7 +87,6 @@
           "xdm:bitrateAverage": {
             "xdm:value": 320
           },
-          "xdm:bitrateAverageBucket": "300-399",
           "xdm:droppedFrames": {
             "xdm:value": 2
           },
@@ -114,7 +113,6 @@
       "xdm:starts": {
         "xdm:value": 1
       },
-      "xdm:mediaSegment": "[10-70]",
       "xdm:mediaSegmentView": {
         "xdm:value": 1
       },

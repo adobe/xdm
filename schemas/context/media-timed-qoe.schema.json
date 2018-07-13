@@ -50,11 +50,6 @@
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "A weighted average of all bitrate values related to the play duration that occurred during a playback session."
         },
-        "xdm:bitrateAverageBucket": {
-          "title": "Average Bitrate",
-          "type": "string",
-          "description": "The average bitrate classified into predefined buckets of 100kbps intervals."
-        },
         "xdm:droppedFrames": {
           "title": "Dropped Frames",
           "$ref": "https://ns.adobe.com/xdm/data/measure",

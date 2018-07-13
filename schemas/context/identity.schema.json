@@ -15,10 +15,9 @@
   "definitions": {
     "identity": {
       "properties": {
-        "@id": {
+        "xdm:id": {
           "title": "Identifier",
           "type": "string",
-          "format": "uri",
           "description": "Identity of the consumer in the related namespace."
         },
         "xdm:namespace": {

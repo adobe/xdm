@@ -113,18 +113,6 @@
             "type": "string"
           }
         },
-        "xdm:airDate": {
-          "title": "First Air Date",
-          "type": "string",
-          "format": "date",
-          "description": "The date when the content first aired on television."
-        },
-        "xdm:digitalDate": {
-          "title": "First Digital Date",
-          "type": "string",
-          "format": "date",
-          "description": "The date when the content first aired on any digital channel or platform."
-        },
         "iptc4xmpExt:Rating": {
           "title": "Content Rating",
           "description": "The rating as defined by Parental Guidelines.",

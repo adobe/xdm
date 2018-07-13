@@ -53,3 +53,7 @@
 ## Release 0.9.3
 
 [Planned for June 29, 2018](https://github.com/adobe/xdm/releases/tag/v0.9.3)
+
+* Change `Identity` Schema `@id` property renamed to `xdm:id` #420
+* Add post office box to align with Microsoft CDM #423
+* Added datasourceID to the ExperienceCloud Extension for Experience Event. #425

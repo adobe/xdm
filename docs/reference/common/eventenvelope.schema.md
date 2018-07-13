@@ -40,7 +40,11 @@ An `EventEnvelope` is a type of `Activity` (in the sense of [W3C Activity Stream
   "activitystreams:object": {
     "@type": "https://ns.adobe.com/xdm/assets/asset",
     "repo:assetID": "urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
-    "@id": "https://cc-api-storage-stage.adobe.io/id/urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185"
+    "@id": "https://cc-api-storage-stage.adobe.io/id/urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
+    "xdm:name": "example.jpg",
+    "xdm:path": "/MyFolder/example.jpg",
+    "dc:format": "image/jpg",
+    "repo:etag": "\"6fc55d0389d856ae7deccebba54f110e\""
   }
 }
 ```
@@ -66,19 +70,15 @@ An `EventEnvelope` is a type of `Activity` (in the sense of [W3C Activity Stream
   "activitystreams:object": {
     "@type": "https://ns.adobe.com/xdm/assets/asset",
     "repo:assetID": "urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
-    "@id": "https://cc-api-storage-stage.adobe.io/id/urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
-    "xdm:name": "example.jpg",
-    "xdm:path": "/MyFolder/example.jpg",
-    "dc:format": "image/jpg",
-    "repo:etag": "\"6fc55d0389d856ae7deccebba54f110e\""
+    "@id": "https://cc-api-storage-stage.adobe.io/id/urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185"
   }
 }
 ```
 
 ```json
 {
-  "@type": "https://ns.adobe.com/xdm/common/event/updated",
-  "xdm:objectType": "https://ns.adobe.com/xdm/assets/asset",
+  "@type": "https://ns.adobe.com/xdm/common/event/published",
+  "xdm:objectType": "https://ns.adobe.com/xdm/content/componentized-page",
   "activitystreams:published": "2016-07-16T19:20:30+01:00",
   "@id": "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
   "activitystreams:to": {
@@ -94,13 +94,10 @@ An `EventEnvelope` is a type of `Activity` (in the sense of [W3C Activity Stream
     "@id": "admin"
   },
   "activitystreams:object": {
-    "@type": "https://ns.adobe.com/xdm/assets/asset",
-    "repo:assetID": "urn:aaid:aem:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
-    "@id": "https://francois.corp.adobe.com:4502/content/dam/Fx_DUKE-small.jpg",
-    "xdm:name": "Fx_DUKE-small.png",
-    "xdm:path": "/content/dam/Fx_DUKE-small.png",
-    "dc:format": "image/png",
-    "repo:etag": "\"6fc55d0389d856ae7wddwebba54f110e\""
+    "@type": "https://ns.adobe.com/xdm/content/componentized-page",
+    "@id": "http://adobesummit.adobesandbox.com:4502/content/geometrixx/en/vintage.html",
+    "dc:title": "Vintage Collection",
+    "xdm:path": "/content/geometrixx/en/vintage.html"
   }
 }
 ```
@@ -134,8 +131,8 @@ An `EventEnvelope` is a type of `Activity` (in the sense of [W3C Activity Stream
 
 ```json
 {
-  "@type": "https://ns.adobe.com/xdm/common/event/published",
-  "xdm:objectType": "https://ns.adobe.com/xdm/content/componentized-page",
+  "@type": "https://ns.adobe.com/xdm/common/event/updated",
+  "xdm:objectType": "https://ns.adobe.com/xdm/assets/asset",
   "activitystreams:published": "2016-07-16T19:20:30+01:00",
   "@id": "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
   "activitystreams:to": {
@@ -151,10 +148,13 @@ An `EventEnvelope` is a type of `Activity` (in the sense of [W3C Activity Stream
     "@id": "admin"
   },
   "activitystreams:object": {
-    "@type": "https://ns.adobe.com/xdm/content/componentized-page",
-    "@id": "http://adobesummit.adobesandbox.com:4502/content/geometrixx/en/vintage.html",
-    "dc:title": "Vintage Collection",
-    "xdm:path": "/content/geometrixx/en/vintage.html"
+    "@type": "https://ns.adobe.com/xdm/assets/asset",
+    "repo:assetID": "urn:aaid:aem:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
+    "@id": "https://francois.corp.adobe.com:4502/content/dam/Fx_DUKE-small.jpg",
+    "xdm:name": "Fx_DUKE-small.png",
+    "xdm:path": "/content/dam/Fx_DUKE-small.png",
+    "dc:format": "image/png",
+    "repo:etag": "\"6fc55d0389d856ae7wddwebba54f110e\""
   }
 }
 ```

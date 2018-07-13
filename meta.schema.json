@@ -41,7 +41,7 @@
       "type": "string",
       "format": "uri",
       "pattern":
-        "(https://ns\\.adobe\\.com/xdm/[a-z0-9-/]*)|(http://schema\\.org/.*)|(http://ns.adobe.com/adobecloud/core/1.0.*)|(https://tools\\.ietf\\.org/html/draft-kelly-json-hal-08/.*)"
+        "(https://ns\\.adobe\\.com/xdm/[a-z0-9-/]*)|(http://schema\\.org/.*)|(http://ns.adobe.com/adobecloud/core/1.0.*)|(https://tools\\.ietf\\.org/html/draft-kelly-json-hal-08/.*)|(http://iptc\\.org/.*)"
     },
     "meta:license": {
       "type": "array",

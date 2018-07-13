@@ -53,3 +53,5 @@
 ## Release 0.9.3
 
 [Planned for June 29, 2018](https://github.com/adobe/xdm/releases/tag/v0.9.3)
+
+* Add post office box to align with Microsoft CDM #423

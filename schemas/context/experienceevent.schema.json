@@ -44,7 +44,7 @@
           "title": "End User IDs",
           "$ref": "https://ns.adobe.com/xdm/context/enduserids",
           "description":
-            "Condensed, normalized encapsulation of all end user identifiers.\n"
+            "Condensed, normalized encapsulation of all end user identifiers."
         },
         "xdm:environment": {
           "title": "Environment",

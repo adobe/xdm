@@ -37,22 +37,9 @@
           "description": "The type of content e.g. Trailer, Full Episode."
         },
         "iptc4xmpExt:Series": {
-          "type": "object",
           "title": "Series",
           "description": "The series the show belongs to.",
-          "properties": {
-            "iptc4xmpExt:Name": {
-              "title": "Series Name",
-              "type": "string",
-              "description": "Name of the series."
-            },
-            "iptc4xmpExt:Identifier": {
-              "title": "Series Identifier",
-              "type": "string",
-              "format": "uri",
-              "description": "Identifier of the series."
-            }
-          }
+          "$ref": "http://www.iptc.org/series"
         },
         "xdm:streamFormat": {
           "title": "Stream Format",
@@ -60,50 +47,14 @@
           "description": "Free-form format of the stream (e.g. short, long)."
         },
         "iptc4xmpExt:Season": {
-          "type": "object",
           "title": "Season",
           "description": "The season the show belongs to.",
-          "properties": {
-            "iptc4xmpExt:Name": {
-              "title": "Season Name",
-              "type": "string",
-              "description": "Name of the season."
-            },
-            "iptc4xmpExt:Number": {
-              "title": "Season Number",
-              "type": "number",
-              "description": "Number of the season."
-            },
-            "iptc4xmpExt:Identifier": {
-              "title": "Session Identifier",
-              "type": "string",
-              "format": "uri",
-              "description": "Identifier of the season."
-            }
-          }
+          "$ref": "http://www.iptc.org/season"
         },
         "iptc4xmpExt:Episode": {
-          "type": "object",
           "title": "Episode",
           "description": "The episode the show belongs to.",
-          "properties": {
-            "iptc4xmpExt:Name": {
-              "title": "Episode Name",
-              "type": "string",
-              "description": "Name of the episode."
-            },
-            "iptc4xmpExt:Number": {
-              "title": "Season Number",
-              "type": "number",
-              "description": "Number of the episode."
-            },
-            "iptc4xmpExt:Identifier": {
-              "title": "Episode Identifier",
-              "type": "string",
-              "format": "uri",
-              "description": "Identifier of the episode."
-            }
-          }
+          "$ref": "http://www.iptc.org/episode"
         },
         "iptc4xmpExt:Genre": {
           "title": "Genre",
@@ -118,23 +69,7 @@
           "description": "The rating as defined by Parental Guidelines.",
           "type": "array",
           "items": {
-            "properties": {
-              "iptc4xmpExt:RatingValue": {
-                "title": "Episode Name",
-                "type": "string",
-                "description": "Rating value as issued by the rating source."
-              },
-              "iptc4xmpExt:RatingSourceLink": {
-                "title": "Episode Identifier",
-                "type": "string",
-                "format": "uri",
-                "description": "Link to the site and optionally the page of the party which has issued the rating value, linked resource should explain the rating rules."
-              }
-            },
-            "required": [
-              "iptc4xmpExt:RatingValue",
-              "iptc4xmpExt:RatingSourceLink"
-            ]
+            "$ref": "http://www.iptc.org/rating"
           }
         },
         "iptc4xmpExt:Creator": {
@@ -142,13 +77,7 @@
           "description": "Party or parties (person or organisation) which created the video, refinement by the role attribute.",
           "type": "array",
           "items": {
-            "properties": {
-              "iptc4xmpExt:Name": {
-                "title": "Creator Name",
-                "type": "string",
-                "description": "Full name of the Creator."
-              }
-            }
+            "$ref": "http://www.iptc.org/creator"
           }
         }
       },

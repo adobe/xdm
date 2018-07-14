@@ -38,10 +38,11 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
     "@id": "https://data.adobe.io/datasources/datasource-123",
     "xdm:code": "DataSourceIntegrationCode-123"
   },
+  "https://ns.adobe.com/experience/datasetID": "12345677888",
   "xdm:timestamp": "2017-09-26T15:52:25+00:00",
   "xdm:endUserIDs": {
     "https://ns.adobe.com/experience/mcid": {
-      "@id": "https://data.adobe.io/entities/identity/92312748749128",
+      "xdm:id": "92312748749128",
       "xdm:namespace": {
         "@id": "https://data.adobe.io/entities/namespace/4",
         "xdm:code": "ECID"
@@ -118,10 +119,11 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
     "@id": "https://data.adobe.io/datasources/datasource-123",
     "xdm:code": "DataSourceIntegrationCode-123"
   },
+  "https://ns.adobe.com/experience/datasetID": "12345677888",
   "xdm:timestamp": "2017-09-26T15:52:25+00:00",
   "xdm:endUserIDs": {
     "https://ns.adobe.com/experience/mcid": {
-      "@id": "https://data.adobe.io/entities/identity/92312748749128",
+      "xdm:id": "92312748749128",
       "xdm:namespace": {
         "@id": "https://data.adobe.io/entities/namespace/4",
         "xdm:code": "ECID"
@@ -279,22 +281,23 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
     "@id": "https://data.adobe.io/datasources/datasource-123",
     "xdm:code": "DataSourceIntegrationCode-123"
   },
+  "https://ns.adobe.com/experience/datasetID": "12345677888",
   "xdm:timestamp": "2017-09-26T15:52:25+00:00",
   "xdm:endUserIDs": {
     "https://ns.adobe.com/experience/mcid": {
-      "@id": "https://data.adobe.io/entities/identity/92312748749128",
+      "xdm:id": "92312748749128",
       "xdm:namespace": {
         "xdm:code": "ECID"
       }
     },
     "https://ns.adobe.com/experience/aaid": {
-      "@id": "https://data.adobe.io/entities/identity/2394509340-30453470347",
+      "xdm:id": "2394509340-30453470347",
       "xdm:namespace": {
         "xdm:code": "AVID"
       }
     },
     "https://ns.adobe.com/experience/tntid": {
-      "@id": "https://data.adobe.io/entities/identity/1233ce17-20e0-4a2c-8198-2a77fd60cf4d",
+      "xdm:id": "1233ce17-20e0-4a2c-8198-2a77fd60cf4d",
       "xdm:namespace": {
         "xdm:code": "tnt0051"
       }
@@ -574,7 +577,6 @@ The events and properties related to direct/outbound marketing such as email, di
 ### End User IDs
 
 Condensed, normalized encapsulation of all end user identifiers.
-
 
 `xdm:endUserIDs`
 * is optional

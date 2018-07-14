@@ -14,10 +14,9 @@
     "definitions": {
         "identity": {
             "properties": {
-                "@id": {
+                "xdm:id": {
                     "title": "Identifier",
                     "type": "string",
-                    "format": "uri",
                     "description": "Identity of the consumer in the related namespace."
                 },
                 "xdm:namespace": {
@@ -50,9 +49,15 @@
     "meta:status": "stabilizing",
     "examples": [
         {
-            "@id": "https://data.adobe.io/entities/identity/id123",
+            "xdm:id": "id123",
             "xdm:namespace": {
                 "xdm:code": "AA12345"
+            }
+        },
+        {
+            "xdm:id": "someone@example.com",
+            "xdm:namespace": {
+                "xdm:code": "Email"
             }
         }
     ]

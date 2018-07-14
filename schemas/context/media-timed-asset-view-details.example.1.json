@@ -1,0 +1,14 @@
+{
+  "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114230",
+  "xdm:playerName": "watchespn",
+  "xdm:broadcastChannel": "WatchESPN",
+  "xdm:broadcastContentType": "VOD",
+  "xdm:streamFormat": "short",
+  "xdm:playerSDKVersion": {
+    "xdm:version": "1.0.8"
+  },
+  "xdm:broadcastNetwork": "nbcu",
+  "xdm:adLoadType": "2",
+  "xdm:sourceFeed": "http%3A%2F%2Fvod01.pure.centurylink.net%2Fhls%2Fvu%2F9083406%2FVUBX0280890106690980_38_3_M_HD.m3u8",
+  "xdm:sessionTimeout": 1800
+}

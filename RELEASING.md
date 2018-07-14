@@ -18,10 +18,12 @@ The next planned release is indicated at the bottom of the [changelog](CHANGELOG
 * Make sure there are no pending changes (`git status`) and all pull requests scheduled for the release are merged
 * Test the schemas and fix any issues indicated
 ```sh
+$ npm test
 $ npm run lint
 ```
 * Define a version number to use, for example `0.9.3`
 * Update the `version` property in [package.json](package.json) with the version number
+* Update the current version in the [README.md](README.md) file with the version number
 * Update the title in the [introduction](docs/introduction.md) with the version number
 * Update [changelog](CHANGELOG.md) indicating the "planned release" is "released" with the updated actual date.
 * Update [changelog](CHANGELOG.md) with the addition of a new "planned release" and expected date.
@@ -29,7 +31,7 @@ $ npm run lint
 ```sh
 $ npm run clean
 $ npm run markdown
-$ got commit -m"Prepare for release $version" -a
+$ git commit -m"Prepare for release $version" -a
 ```
 * Create the release following the instructions for [GitHub Release creation](https://help.github.com/articles/creating-releases/):
   * Use the version number prefixed with (lowercase) `v`as the tag name, for example `v0.9.3`

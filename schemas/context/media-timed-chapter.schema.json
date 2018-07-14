@@ -1,0 +1,59 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/media-timed-chapter",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Timed Media Chapter Information",
+  "type": "object",
+  "meta:status": "experimental",
+  "meta:extensible": true,
+  "description": "Timed media chapter information",
+  "definitions": {
+    "media-timed-chapter": {
+      "properties": {
+        "xdm:chapterAssetReference": {
+          "title": "Chapter Asset Reference",
+          "$ref": "https://ns.adobe.com/xdm/context/media-timed-chapter-asset-reference",
+          "description": "Asset information about the chapter captured by the experience event."
+        },
+        "xdm:chapterAssetViewDetails": {
+          "title": "Chapter View Details",
+          "$ref": "https://ns.adobe.com/xdm/context/media-timed-chapter-view-details",
+          "description": "View details for the chapter playback captured by the experience event."
+        },
+        "xdm:impressions": {
+          "title": "Impressions",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Describes the intention to play a timed media asset. It does not measure success, as the user might abandon the content before the first frame is viewed."
+        },
+        "xdm:completes": {
+          "title": "Completes",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Indicates if a timed media asset was watched to completion - this does not necessarily mean the viewer watched the whole video; viewer could have skipped ahead."
+        },
+        "xdm:timePlayed": {
+          "title": "Time Spent",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Describes the amount of time (in seconds) spent by a user on a specific timed media asset."
+        },
+        "xdm:federated": {
+          "title": "Federated",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Indicates if an experience event was created through data federation (data sharing)."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/media-timed-chapter"
+    }
+  ]
+}

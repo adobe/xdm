@@ -1,0 +1,6 @@
+{
+  "schema:name": "metric: timeToStart",
+  "@id": "xdm:timeToStart",
+  "xdm:measurement": "time",
+  "xdm:unit": "second"
+}

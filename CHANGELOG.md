@@ -4,10 +4,27 @@
 
 [Planned for June 29, 2018](https://github.com/adobe/xdm/releases/tag/v0.9.3)
 
-* Added Timed Media schemas to `Experience Event` based schemas #417
-* Change `Identity` Schema `@id` property renamed to `xdm:id` #420
-* Add post office box to align with Microsoft CDM #423
-* Added datasourceID to the ExperienceCloud Extension for Experience Event. #425
+Fixed Issues
+
+* #364 Video Analytics additions for ExperienceEvent
+  * PR #417 Added Timed Media schemas to `Experience Event` based schemas PR 
+* #409 Fix campaign extension bugs
+  * PR #410 Issue409-Fix campaign extension bugs
+* #413 WebPageDetails.server shouldn't be constrained to a hostname
+  * PR #414 Removed hostname format constraint from context/webpagedetails.xdm:server
+* #419 Change Identity schema identifier to unstructured string from URI
+  * PR #420 Change `Identity` Schema `@id` property renamed to `xdm:id`
+* #425 Added datasourceID to the ExperienceCloud Extension for Experience Event.
+  * PR #426 add dataset id as part of event 
+
+Merged Pull Requests
+
+* #391 📝 Clarify CLA section of contribution guidelines.
+* #416 Remove definition of xmp:numberOfPixels
+* #423 Add post office box to align with Microsoft CDM
+* #431 Create RELEASING.md file
+* #436 Update Changelog preparing for V0.9.3 release
+* #437 Fixing RELEASING.md
 
 ## Release 0.9.2
 

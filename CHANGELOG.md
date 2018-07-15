@@ -7,7 +7,7 @@
 Fixed Issues
 
 * #364 Video Analytics additions for ExperienceEvent
-  * PR #417 Added Timed Media schemas to `Experience Event` based schemas PR 
+  * PR #417 Added Timed Media schemas to `Experience Event` based schemas PR
 * #409 Fix campaign extension bugs
   * PR #410 Issue409-Fix campaign extension bugs
 * #413 WebPageDetails.server shouldn't be constrained to a hostname
@@ -15,7 +15,7 @@ Fixed Issues
 * #419 Change Identity schema identifier to unstructured string from URI
   * PR #420 Change `Identity` Schema `@id` property renamed to `xdm:id`
 * #425 Added datasourceID to the ExperienceCloud Extension for Experience Event.
-  * PR #426 add dataset id as part of event 
+  * PR #426 add dataset id as part of event
 
 Merged Pull Requests
 

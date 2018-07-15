@@ -6,9 +6,10 @@ of the `master` branch.
 
 ## Release Tasks.
 
-*Note:* We are currently only release _pre-release_ versions as we have not
+**Note:** We are currently only release _pre-release_ versions as we have not
 stabilized our models fully yet.
-*Note:* The current release cadence is a monthly release cycle where the releases are cut around
+
+**Note:** The current release cadence is a monthly release cycle where the releases are cut around
 the middle of the month.
 The next planned release is indicated at the bottom of the [changelog](CHANGELOG.md).
 

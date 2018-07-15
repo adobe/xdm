@@ -21,18 +21,18 @@ Identity is used to clearly distinguish people that are interacting with digital
 
 ```json
 {
-  "xdm:id": "someone@example.com",
+  "xdm:id": "id123",
   "xdm:namespace": {
-    "xdm:code": "Email"
+    "xdm:code": "AA12345"
   }
 }
 ```
 
 ```json
 {
-  "xdm:id": "id123",
+  "xdm:id": "someone@example.com",
   "xdm:namespace": {
-    "xdm:code": "AA12345"
+    "xdm:code": "Email"
   }
 }
 ```

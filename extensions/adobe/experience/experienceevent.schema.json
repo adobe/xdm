@@ -16,6 +16,12 @@
       "properties": {
         "https://ns.adobe.com/experience/implementations": {
           "$ref": "https://ns.adobe.com/experience/implementations"
+        },
+        "https://ns.adobe.com/experience/datasetID": {
+          "title": "Dataset ID",
+          "type": "string",
+          "description":
+            "System generated identifier for the Dataset the event belongs to."
         }
       }
     }
@@ -37,7 +43,10 @@
       "$ref": "https://ns.adobe.com/experience/campaign/experienceevent"
     },
     {
-      "$ref": "#/definitions/experienceevent"
+      "$ref": "https://ns.adobe.com/experience/adcloud/experienceevent"
+    },
+    {
+      "$ref": "https://ns.adobe.com/experience/implementations"
     }
   ],
   "meta:status": "experimental"

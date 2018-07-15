@@ -17,28 +17,15 @@
           "title": "Keyed List",
           "type": "array",
           "items": {
-            "type": "object",
-            "title": "Key-value pairs",
-            "properties": {
-              "xdm:key": {
-                "title": "key",
-                "description": "Key",
-                "type": "string"
-              },
-              "xdm:value": {
-                "title": "value",
-                "description": "Value",
-                "type": "string"
-              }
-            }
+            "$ref": "https://ns.adobe.com/experience/analytics/keyvalue"
           },
           "description": "List of keyed values."
         }
       }
     }
   },
-  "allOf":[  
-    {  
+  "allOf":[
+    {
        "$ref":"#/definitions/keyedlist"
     }
   ]

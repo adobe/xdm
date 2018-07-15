@@ -10,6 +10,7 @@
   "title": "Profile",
   "type": "object",
   "auditable": true,
+  "meta:extensible": true,
   "description":
     "XDM Profiles are a singular representation of the attributes of identified and\npartially identified persons. Profiles that are highly identified maybe used for\npersonal communications or highly targeted engagements and can contain detailed\npersonal information such as names, gender, date of birth, locations, and contact\ninformation like phone numbers and email addresses. Profiles may range to the\nother end of the identification spectrum where only anonymous behavioral signals\nare being observed and the amount of identification is simple browser cookies.\nIn this latter case, the sparse Profile data is useful to build more knowledge\non the interests and preferences of the anonymous profile, and over time can\nbecome richer as the person interacting with brand becomes more engaged and\nultimately signs-on to notifications, subscriptions, purchases and other\nconnections with the brand that enrich and fill out the profile.\n\nXDM Profile can contain personal information, identification information, contact\ndetails and communication preferences. Over time XDM Profile will expand to cater\nfor other Profile data such as preference, propensities and other attributes.\n\n",
   "definitions": {
@@ -96,7 +97,7 @@
           "$ref": "https://ns.adobe.com/xdm/common/geounit",
           "description":
             "The geographical unit within the organization owning the profile. This can be used to reference the geographical information maintained in another dataset."
-        },        
+        },
         "xdm:preferredLanguage": {
           "title": "Preferred Language",
           "type": "string",
@@ -150,6 +151,13 @@
           "description":
             "Indicates the `profile` record is for use in testing/verification purposes and should not be automatically included in normal operation(s).",
           "default": false
+        },
+        "xdm:segments":{
+          "title" : "Segment Membership",
+          "type" : "array",
+          "items" : {
+            "$ref" : "https://ns.adobe.com/xdm/context/segmentmembership"
+          }
         }
       }
     }
@@ -159,7 +167,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/common/auditable#/definitions/auditlog"
+      "$ref": "https://ns.adobe.com/xdm/common/auditable"
     },
     {
       "$ref": "#/definitions/profile"

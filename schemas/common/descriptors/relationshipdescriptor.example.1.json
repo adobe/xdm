@@ -1,0 +1,11 @@
+{
+  "@id": "https://example.com/descriptors/1",
+  "@type": "xdm:descriptorOneToOne",
+  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile",
+  "xdm:sourceProperty": "xdm:identities",
+  "xdm:sourceItem": {
+    "xdm:type": "https://example.com/crmID"
+  },
+  "xdm:destinationSchema": "https://ns.adobe.com/extensions/12345678/customers",
+  "xdm:destinationProperty": "xdm:crmID"
+}

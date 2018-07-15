@@ -29,7 +29,32 @@
 * Added application and mobile context via `context\application.schema.json` #318
 * Fixed issue where `context\experienceevent` `xdm:application` referred to the 'application.schema.json' in `channels` #318
 * `xdm:application` in `context\experienceevent` `@id` renamed to `xdm:id` #318
-* Changes `xdm:channel` in `ExperienceEvent` to be a reference to `Channel` #289
+* Changed `xdm:channel` in `ExperienceEvent` to be a reference to `Channel` #289
+* Changed `xdm:pageDepth` data type from number to integer in `context\search.schema.json` #346
+
+## Release 0.9.2
+
+[Released on June 15, 2018](https://github.com/adobe/xdm/releases/tag/v0.9.2)
+
 * `xdm:dataSource` in `ExperienceEvent` is no longer required #363
-* Adds new concepts `Organizational Unit` and `Geographical Unit`. Existing links with the `Profile` schema updated. In `Profile`, `xdm:orgUnitID` is now `xdm:orgUnit`, and a simple reference to the `Organizational Unit` schema. #323
+* Changed and added new concepts `Organizational Unit` and `Geographical Unit`. Existing links with the `Profile` schema updated. In `Profile`, `xdm:orgUnitID` is now `xdm:orgUnit`, and a simple reference to the `Organizational Unit` schema. #323
 * Added Phone Number and Email Address to EndUserIDs. #381
+* Changed Adobe Analytics Extension - Alter analytics custom lists to allow keys #376
+* Added `"meta:extends": true` to the schemas that can be extended in `context` #332
+* Changed extension `extensions/adobe/experience/implementations.schema.json` properties to include the name `implementation` #403
+* Added Reporting Events to Experience Event in the Campaign Extension #307
+* Improved the representation of Extensibility to `context\*` schemas #332
+* Changed a circular reference introduces in the Campaign Extension to Experience Event #377 / #378
+* Added Segment Membership and related schemas for `context\profile.schema.json` #380
+* Added searchEngineID field to search schema to Experience Event #394
+* Added the created/modified dates from auditable for `context\profile.schema.json`, address and person schemas #393
+* Adding relationship descriptor #388
+
+## Release 0.9.3
+
+[Planned for June 29, 2018](https://github.com/adobe/xdm/releases/tag/v0.9.3)
+
+* Added Timed Media schemas to `Experience Event` based schemas #417
+* Change `Identity` Schema `@id` property renamed to `xdm:id` #420
+* Add post office box to align with Microsoft CDM #423
+* Added datasourceID to the ExperienceCloud Extension for Experience Event. #425

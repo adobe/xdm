@@ -1,0 +1,42 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "http://www.iptc.org/episode",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Season",
+  "type": "object",
+  "description":
+    "The season the show belongs to. Based on [www.iptc.org](https://www.iptc.org/std/videometadatahub/recommendation/pre-versions/IPTC-VideoMetadataHub-props-Rec_1.1.html)",
+  "definitions": {
+    "season": {
+      "properties": {
+        "iptc4xmpExt:Name": {
+          "title": "Season Name",
+          "type": "string",
+          "description": "Name of the season."
+        },
+        "iptc4xmpExt:Number": {
+          "title": "Season Number",
+          "type": "number",
+          "description": "Number of the season."
+        },
+        "iptc4xmpExt:Identifier": {
+          "title": "Season Identifier",
+          "type": "string",
+          "format": "uri",
+          "description": "Identifier of the season."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/season"
+    }
+  ],
+  "meta:status": "experimental"
+}

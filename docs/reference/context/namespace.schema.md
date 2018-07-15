@@ -37,6 +37,11 @@ Namespaces are similar to datasources, both in the use of codes and in the assum
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/namespace.schema.json](context/namespace.schema.json) |
+## Schema Hierarchy
+
+* Namespace `https://ns.adobe.com/xdm/context/namespace`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+
 
 ## Namespace Example
 ```json

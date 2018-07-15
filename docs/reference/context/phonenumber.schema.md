@@ -10,6 +10,11 @@ Information that allows the phone calling of a person. Typically an alphanumeric
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/phonenumber.schema.json](context/phonenumber.schema.json) |
+## Schema Hierarchy
+
+* Phone Number `https://ns.adobe.com/xdm/context/phonenumber`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+
 
 ## Phone Number Example
 ```json

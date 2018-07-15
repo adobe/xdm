@@ -9,7 +9,8 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Web Interaction",
   "type": "object",
-  "description": "",
+  "meta:extensible": true,
+  "description": "Interaction details from inside the context of a loaded webpage.",
   "meta:extensible": true,
   "definitions": {
     "webinteraction": {
@@ -44,6 +45,9 @@
     }
   },
   "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
     {
       "$ref": "#/definitions/webinteraction"
     }

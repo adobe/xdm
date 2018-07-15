@@ -12,7 +12,8 @@ An action can be an email, SMS, push notifications, etc.
 An Event is a trigger coming from a source over HTTP protocol. 
 For example, a user entering a hotel lobby can be marked as an Event.
 
-Event rules define when we can move to the next step in this journey version. 
-A step transition can occur by one or more events. 
+Event rules define when we can move to the next step in this journey version.
+The event rules compose flow controls of a journey version.
+A step transition can occur by one or more events.
 During the processing, we may also need data from external systems, Data entities and Data provider are used to fetch and store data in the journey at runtime. 
 This schema (`reportingevent`) represents a data model for capturing events, actions and transitions happening in a journey version.

@@ -9,6 +9,7 @@
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "OptInOut",
     "type": "object",
+    "meta:extensible": true,
     "description": "Describes a users' communication preferences by channel. For each channel individually, which is a property of this object, a user's preference (opt-in, opt-out, pending) can be recorded. In addition, a global override opt-out is possible. Each property of this schema must be a valid and known URI for an XDM Channel.",
     "definitions": {
         "preference": {
@@ -108,6 +109,9 @@
         }
     },
     "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
         {
             "$ref": "#/definitions/optinout"
         }

@@ -14,6 +14,11 @@ The information in this schema is semantically compatible with the information i
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/webreferrer.schema.json](context/webreferrer.schema.json) |
+## Schema Hierarchy
+
+* Web Referrer `https://ns.adobe.com/xdm/context/webreferrer`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+
 
 ## Web Referrer Example
 ```json

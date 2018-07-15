@@ -10,6 +10,7 @@
     "title": "Web Information",
     "type": "object",
     "meta:status": "stabilizing",
+    "meta:extensible": true,
     "description": "Information recorded via an `ExperienceEvent` that is specific to the World Wide Web channel, including the web page, referrer and/or link related to the on-page interaction.\n",
     "definitions": {
         "webinfo": {
@@ -33,6 +34,9 @@
         }
     },
     "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
         {
             "$ref": "#/definitions/webinfo"
         }

@@ -30,7 +30,7 @@ $ npm run lint
 * Update the title in the [introduction](docs/introduction.md) with the version number
 * Update the [changelog](CHANGELOG.md):
   * Make sure all closed issues and merged pull requests since the last release are listed in chronological order
-  * Indicate the _planned release_ as _released_ with the updated actual release date
+  * Indicate the _planned release_ as _released_ with the updated actual release date and link to the release tag
   * Add a new _planned release_ with expected release version and date at the top
 * Update reference docs:
 

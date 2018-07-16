@@ -49,15 +49,15 @@
     "meta:status": "stabilizing",
     "examples": [
         {
-            "xdm:id": "id123",
-            "xdm:namespace": {
-                "xdm:code": "AA12345"
-            }
-        },
-        {
             "xdm:id": "someone@example.com",
             "xdm:namespace": {
                 "xdm:code": "Email"
+            }
+        },
+        {
+            "xdm:id": "id123",
+            "xdm:namespace": {
+                "xdm:code": "AA12345"
             }
         }
     ]

@@ -17,7 +17,7 @@ The next planned release is indicated at the bottom of the [changelog](CHANGELOG
 
 * Clone and update the `master` branch of the `adobe/xdm` repository in your local workspace
 * Make sure there are no pending changes (`git status`) and all pull requests scheduled for the release are merged
-* Test the schemas and fix any issues indicated
+* Test the schemas and fix any issues indicated:
 
 ```sh
 $ npm test
@@ -28,9 +28,11 @@ $ npm run lint
 * Update the `version` property in [package.json](package.json) with the version number
 * Update the current version in the [README.md](README.md) file with the version number
 * Update the title in the [introduction](docs/introduction.md) with the version number
-* Update [changelog](CHANGELOG.md) indicating the "planned release" is "released" with the updated actual date.
-* Update [changelog](CHANGELOG.md) with the addition of a new "planned release" and expected date.
-* Update reference docs
+* Update the [changelog](CHANGELOG.md):
+  * Make sure all closed issues and merged pull requests since the last release are listed in chronological order
+  * Indicate the _planned release_ as _released_ with the updated actual release date and link to the release tag
+  * Add a new _planned release_ with expected release version and date at the top
+* Update reference docs:
 
 ```sh
 $ npm run clean

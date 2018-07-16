@@ -1,0 +1,128 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/media-timed",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Timed Media Information",
+  "type": "object",
+  "meta:status": "experimental",
+  "meta:extensible": true,
+  "description": "Timed media - main content, ads & chapters",
+  "definitions": {
+    "media-timed": {
+      "properties": {
+        "xdm:primaryAssetReference": {
+          "title": "Primary Asset Reference",
+          "$ref": "https://ns.adobe.com/xdm/context/media-timed-asset-reference",
+          "description": "Asset information about the main content that was played, present on all ads and chapters that occur during the content's playback."
+        },
+        "xdm:primaryAssetViewDetails": {
+          "title": "Primary Asset View Details",
+          "$ref": "https://ns.adobe.com/xdm/context/media-timed-asset-view-details",
+          "description": "View details for the main content playback, present on all ads and chapters that occur during the content's playback."
+        },
+        "xdm:mediaChapter": {
+          "title": "Media Chapter",
+          "$ref": "https://ns.adobe.com/xdm/context/media-timed-chapter",
+          "description": "Timed media - chapter information."
+        },
+        "xdm:impressions": {
+          "title": "Impressions",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Describes the intention to play a timed media asset. It does not measure success, as the user might abandon the content before the first frame is viewed."
+        },
+        "xdm:completes": {
+          "title": "Completes",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Indicates if a timed media asset was watched to completion - this does not necessarily mean the viewer watched the whole video; viewer could have skipped ahead."
+        },
+        "xdm:timePlayed": {
+          "title": "Time Spent",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "The amount of time spent in seconds by a user on a specific timed media asset."
+        },
+        "xdm:federated": {
+          "title": "Federated",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Indicates the experience event was created through data federation (data sharing)."
+        },
+        "xdm:starts": {
+          "title": "Starts",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Indicates the first frame of the timed media asset has been viewed - i.e. the viewer did not abandon during pre-roll ad, buffering, etc."
+        },
+        "xdm:mediaSegmentViews": {
+          "title": "Media Segment Views",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Indicates when at least one frame (not necessarily the first) has been viewed."
+        },
+        "xdm:dropBeforeStarts": {
+          "title": "Drop Before Starts",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Indicates the user abandoned the media stream before the first frame (e.g. during the pre-roll ad break, due to an error while loading the content from the CDN)."
+        },
+        "xdm:totalTimePlayed": {
+          "title": "Content Play",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Describes the total amount of time spent by a user on a specific timed media asset, which includes time spent watching ads."
+        },
+        "xdm:progress10": {
+          "title": "10% Progress Marker",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Indicates that the playhead passed the 10% marker of media based on stream length. The marker is only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted."
+        },
+        "xdm:progress25": {
+          "title": "25% Progress Marker",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Indicates that the playhead passed the 25% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted."
+        },
+        "xdm:progress50": {
+          "title": "50% Progress Marker",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Indicates that the playhead passed the 50% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted."
+        },
+        "xdm:progress75": {
+          "title": "75% Progress Marker",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Indicates that the playhead passed the 75% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted."
+        },
+        "xdm:progress95": {
+          "title": "95% Progress Marker",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Indicates that the playhead passed the 95% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted."
+        },
+        "xdm:resumes": {
+          "title": "Resumes",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Marks each playback that was resumed after more than 30 minutes of buffer, pause, or stall period."
+        },
+        "xdm:pauses": {
+          "title": "Pauses",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "The number of pause periods that occurred during playback."
+        },
+        "xdm:pauseTime": {
+          "title": "Total Pause Duration",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Describes the duration (in seconds) in which playback was paused by the user."
+        }
+      },
+      "required": [
+        "xdm:primaryAssetReference",
+        "xdm:primaryAssetViewDetails"
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/media-timed"
+    }
+  ]
+}

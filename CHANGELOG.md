@@ -1,8 +1,12 @@
 # Changelog
 
+## Release 0.9.4
+
+_Planned for August 17, 2018_
+
 ## Release 0.9.3
 
-_Planned for June 29, 2018_
+[Released on July 16, 2018](https://github.com/adobe/xdm/releases/tag/v0.9.3)
 
 Fixed Issues
 

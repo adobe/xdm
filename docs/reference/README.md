@@ -198,22 +198,6 @@
 * [Storage Quota](./content/repository-policies/quota.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/quota` (Experimental)
 * [Versioning](./content/repository-policies/versioning.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/versioning` (Experimental)
 
-## /common/descriptors/
-
-* [Item Selector](./common/descriptors/itemselector.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/itemselector` (Experimental)
-* [Relationship Descriptor](./common/descriptors/relationshipdescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/relationshipdescriptor` (Experimental)
-* [Schema Descriptor](./common/descriptors/schemadescriptor.schema.md) – `https://ns.adobe.com/xdm/common/desciptors/schemadescriptor` (Experimental)
-
-## /common/event/
-
-* [Created Event](./common/event/created.schema.md) – `https://ns.adobe.com/xdm/common/event/created` (Experimental)
-* [Deleted Event](./common/event/deleted.schema.md) – `https://ns.adobe.com/xdm/common/event/deleted` (Experimental)
-* [Emitted Event](./common/event/emitted.schema.md) – `https://ns.adobe.com/xdm/common/event/emitted` (Experimental)
-* [Published Event](./common/event/published.schema.md) – `https://ns.adobe.com/xdm/common/event/published` (Experimental)
-* [Rejected Event](./common/event/rejected.schema.md) – `https://ns.adobe.com/xdm/common/event/rejected` (Experimental)
-* [Unpublished Event](./common/event/unpublished.schema.md) – `https://ns.adobe.com/xdm/common/event/unpublished` (Experimental)
-* [Updated Event](./common/event/updated.schema.md) – `https://ns.adobe.com/xdm/common/event/updated` (Experimental)
-
 ## /external/activity-streams-2/
 
 * [Activity](./external/activity-streams-2/activity.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/activity` (Experimental)
@@ -256,4 +240,20 @@
 * [Geo Circle](./external/schema/geocircle.schema.md) – `http://schema.org/GeoCircle` (Experimental)
 * [Geo Coordinates](./external/schema/geocoordinates.schema.md) – `http://schema.org/GeoCoordinates` (Experimental)
 * [Geo Shape](./external/schema/geoshape.schema.md) – `http://schema.org/GeoShape` (Experimental)
+
+## /common/descriptors/
+
+* [Item Selector](./common/descriptors/itemselector.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/itemselector` (Experimental)
+* [Relationship Descriptor](./common/descriptors/relationshipdescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/relationshipdescriptor` (Experimental)
+* [Schema Descriptor](./common/descriptors/schemadescriptor.schema.md) – `https://ns.adobe.com/xdm/common/desciptors/schemadescriptor` (Experimental)
+
+## /common/event/
+
+* [Created Event](./common/event/created.schema.md) – `https://ns.adobe.com/xdm/common/event/created` (Experimental)
+* [Deleted Event](./common/event/deleted.schema.md) – `https://ns.adobe.com/xdm/common/event/deleted` (Experimental)
+* [Emitted Event](./common/event/emitted.schema.md) – `https://ns.adobe.com/xdm/common/event/emitted` (Experimental)
+* [Published Event](./common/event/published.schema.md) – `https://ns.adobe.com/xdm/common/event/published` (Experimental)
+* [Rejected Event](./common/event/rejected.schema.md) – `https://ns.adobe.com/xdm/common/event/rejected` (Experimental)
+* [Unpublished Event](./common/event/unpublished.schema.md) – `https://ns.adobe.com/xdm/common/event/unpublished` (Experimental)
+* [Updated Event](./common/event/updated.schema.md) – `https://ns.adobe.com/xdm/common/event/updated` (Experimental)
 

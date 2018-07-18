@@ -1,0 +1,14 @@
+{
+  "xdm:id": 7,
+  "xdm:name": "ACME Corp dev",
+  "xdm:description": "Development environment",
+  "xdm:type": "DEV",
+  "_links": {
+    "self": {
+      "href": "/api/application/1/environment/2"
+    },
+    "http://ns.adobe.com/adobecloud/rel/application": {
+      "href": "/api/application/1"
+    }
+  }
+}

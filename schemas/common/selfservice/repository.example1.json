@@ -1,0 +1,20 @@
+{
+  "xdm:id": 7,
+  "xdm:name": "ACME Corp main repo",
+  "xdm:description": "this is the description",
+  "xdm:url": "https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail",
+  "_links": {
+    "http://ns.adobe.com/adobecloud/rel/application": {
+      "href": "/api/application/1"
+    },
+    "http://ns.adobe.com/adobecloud/rel/branches": {
+      "href": "/api/application/1/repository/1/branches"
+    },
+    "http://ns.adobe.com/adobecloud/rel/pullrequests": {
+      "href": "/api/application/1/repository/1/pullrequests"
+    },
+    "self": {
+      "href": "/api/application/1/repository/1"
+    }
+  }
+}

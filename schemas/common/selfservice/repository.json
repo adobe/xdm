@@ -1,0 +1,47 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/selfservice/repository",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Repository",
+  "description": "A tenant (see `xdm:tenant`) may work with 1..n repositories where the application (see `xdm:application`) runs. Each repository serves a purpose in the CI/CD chain providing a structure whereby changes  to the application can be rolled out. Typically the owner of the application manages transitions between repositorys. A system integrator, partner or customer may be the owner of the application expecially where the application has  been extended and customised. An repository may have a uri referencing the definition of the repository. ",
+  "type": "object",
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/external/hal/resource#/definitions/hal"
+  ],
+  "meta:status": "experimental",
+  "definitions": {
+    "repository": {
+      "xdm:id": {
+        "type": "string",
+        "description": "Identifier of the repository"
+      },
+      "xdm:name": {
+        "type": "string",
+        "example": "AcmeCorp Prod",
+        "description": "Name of the repository"
+      },
+      "xdm:description": {
+        "type": "string",
+        "description": "Description of the repository"
+      },
+      "xdm:url": {
+        "type": "string",
+        "example": "https://github.com/",
+        "description": "Repository Url"
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/repository"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/external/hal/resource#/definitions/hal"
+    }
+  ]
+}

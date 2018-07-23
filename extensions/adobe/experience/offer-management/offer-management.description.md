@@ -6,13 +6,13 @@ Decisioning happens based not only on the offers' constraints and parameters but
 
 The main concepts in the domain of Offer Management are:
 
-- *Offer*: This is a data object that references one or several Contents 
+- *Offer*: This is a data object that references one or several Contents
   - Offers are used as the driver of the decisions when personalizing the experience or as a fallback when no qualifying Offer can be found.
-  - A single Offer can have multiple contents variants. An Offer Representation is the data that connects Offers to Content. Content is information that is directed towards an audience for consumption in a (digital) experience. Content is delivered through channels (or a particular medium). 
-  - Offers used for personalization have various entities that serve as control data, each driving a different aspect of the overall decisioning process. 
+  - A single Offer can have multiple contents variants. An Offer Representation is the data that connects Offers to Content. Content is information that is directed towards an audience for consumption in a (digital) experience. Content is delivered through channels (or a particular medium).
+  - Offers used for personalization have various entities that serve as control data, each driving a different aspect of the overall decisioning process.
   - _Eligibility_ Personalization Offers use a rules to determine if an offer must be excluded or can be included in the decisioning process based on context information such as the user's profile instance. The entity of the offer that controls this aspect is the SelectionConstraint.
-  - _Frequency_ Personalization Offers use a calculations to determine if a proposition has been made too many times already. The entity of the offer that controls this aspect is the CappingConstraint. 
-  - _Priority_ Personalization Offers use a calculations to determine if the proposition of one offer should be made in favor of another offer within a given activity and context. The entity of the offer that controls this aspect is the Rank. 
+  - _Frequency_ Personalization Offers use a calculations to determine if a proposition has been made too many times already. The entity of the offer that controls this aspect is the CappingConstraint.
+  - _Priority_ Personalization Offers use a calculations to determine if the proposition of one offer should be made in favor of another offer within a given activity and context. The entity of the offer that controls this aspect is the Rank.
 
 - *Offer Activity*: This is a data object that represents the execution of the decisioning processes with offers
   - Offer Activities reference an Offer Filter object that is used reduce the offer choices by topic. This controls the *relevancy* aspect of the decisions within a given activity. For instance, an activity that is crafted for web site visitors can select different offers than an activity crafted for in-store visitors. Also, within the web site experience many different activities can exist and different experiences become relevant depending on the area of the web site the user engages with.
@@ -20,9 +20,9 @@ The main concepts in the domain of Offer Management are:
   - Offer Activities reference a single Fallback Offer that is used when the resulting list of sutable offers is empty after all other contraints are applied.
 
 In the diagram below the entities and relationships are shown for the offer management models. Strong entities are instances with their own `@id`. Those instances can be created independently of other instances.
-Strong entities have a solid single line border. 
-Weak entities are dependent on a single strong entity, don't have an `@id` property and are shown with a thin double line. 
-Relaships are shown between entities as connectors with a diamond shape. The direction of the relationship is also shown. A formal description of the relationships is given in the file relationship.descriptors.schema.json
+Strong entities have a solid single line border.
+Weak entities are dependent on a single strong entity, don't have an `@id` property and are shown with a thin double line.
+Relationships are shown between entities as connectors with a diamond shape. The direction of the relationship is also shown. A formal description of the relationships is given in the file relationship.descriptors.schema.json
 The end of a relationship connector in the diagram has special arrow symbols. There are two symbols on each end of the connection. The one closer to the entity box denotes the cardinality, or max degree (more below) and the one right before, closer to the diamond denotes the optionality (min degree).
 The symbols are interpeted as follows:
 - if the pairs of entities were listed in a table (only binary relations used here) and one would filter the table rows by any one of the `@id` of in a column the other entity side/column would be represented in that table by a certain number of entities/rows.

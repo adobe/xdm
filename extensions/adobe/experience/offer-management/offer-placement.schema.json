@@ -39,7 +39,7 @@
             "The Channel URI where the offer content is intended to be placed. The channel constraint is used to convey not only where the offer will be used but determine the content editor or validator that is used for the Offer's representation. See 'https://ns.adobe.com/xdm/channels/channel'"
         },
         "xdm:contentType": {
-          "$ref": "https://ns.adobe.com/experience/offer-management/representation-content#/definitions/content-type",
+          "$ref": "https://ns.adobe.com/experience/offer-management/offer-representation#/definitions/content-component-type",
           "title": "Content Type",
           "description": "A constraint for the content that can be shown in the place described by this placement. Content Type: image, html or plain text"
         }

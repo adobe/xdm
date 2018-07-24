@@ -118,15 +118,6 @@
           "title": "Advertising",
           "$ref": "https://ns.adobe.com/xdm/context/advertising",
           "description": "The information related to advertising activity related to the experience event"
-        },
-        "xdm:segmentMemberships": {
-          "title": "Segment Memberships",
-          "description": "The segments associated with this experience event",
-          "type": "array",
-          "items": {
-            "type": "object",
-            "$ref": "https://ns.adobe.com/xdm/context/segmentmembership"
-          }
         }
       },
       "required": ["@id", "xdm:timestamp", "xdm:endUserIDs"]

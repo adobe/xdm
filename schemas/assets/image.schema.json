@@ -162,7 +162,7 @@
     }
   ],
   "required": [
-    "repo:assetID",
+    "repo:id",
     "repo:createdDate",
     "xdm:repositoryCreatedBy",
     "repo:lastModifiedDate",

@@ -96,7 +96,7 @@
             "repo:name": {
               "type": "string",
               "description":
-                "Some hint about where to locate the repository that stores the external asset by the \"repo:assetID\".",
+                "Some hint about where to locate the repository that stores the external asset by the \"repo:id\".",
             },
             "repo:id": {
               "type": "string",

@@ -33,7 +33,7 @@
           "title": "Valid Until",
           "type": "string",
           "format": "date-time",
-          "description": "The timestamp for when the segment assertion should nolonger be assumed to be valid and should either be ignored or revalidated."
+          "description": "The timestamp for when the segment assertion should no-longer be assumed to be valid and should either be ignored or revalidated."
         },
         "xdm:status": {
           "title": "Status",
@@ -57,4 +57,3 @@
   ],
   "meta:status": "experimental"
 }
-

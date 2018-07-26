@@ -64,7 +64,7 @@
         },
         "activitystreams:first": {
           "description":
-            "In a paged Collection, indicates the furthest preceeding page of items in the collection. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-first) document for a complete description.",
+            "In a paged Collection, indicates the furthest proceeding page of items in the collection. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-first) document for a complete description.",
           "$ref": "#/definitions/single-collectionPage-or-link"
         },
         "activitystreams:last": {

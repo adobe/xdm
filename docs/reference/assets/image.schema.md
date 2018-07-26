@@ -21,7 +21,7 @@ The Image class is for raster and vector image assets, including JPEG, PNG, SVG 
 ## Image Example
 ```json
 {
-  "repo:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
+  "repo:id": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
   "xmp:createDate": "2017-09-26T15:52:25+00:00",
   "repo:createdDate": "2017-09-26T15:52:25+00:00",
   "xdm:repositoryCreatedBy": "lars",

@@ -21,7 +21,7 @@ The Video class is for video assets, i.e. assets that consist of moving pictures
 
 ```json
 {
-  "repo:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ac",
+  "repo:id": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ac",
   "xmp:createDate": "2017-09-26T15:52:25+00:00",
   "repo:createdDate": "2017-09-26T15:52:25+00:00",
   "xdm:repositoryCreatedBy": "lars",
@@ -42,7 +42,7 @@ The Video class is for video assets, i.e. assets that consist of moving pictures
 
 ```json
 {
-  "repo:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ad",
+  "repo:id": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ad",
   "xmp:createDate": "2017-09-26T15:52:25+00:00",
   "repo:createdDate": "2017-09-26T15:52:25+00:00",
   "xdm:repositoryCreatedBy": "lars",

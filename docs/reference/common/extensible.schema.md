@@ -27,7 +27,7 @@ Replace `#/definitions/…` with the correct path to the `definitions` object in
 
 ```json
 {
-  "repo:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
+  "repo:id": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
   "xdm:createDate": "2017-09-26T15:52:25+00:00",
   "repo:createdDate": "2017-09-26T15:52:25+00:00",
   "xdm:repositoryCreatedBy": "lars",
@@ -45,7 +45,7 @@ Replace `#/definitions/…` with the correct path to the `definitions` object in
 ```json
 {
   "https://ns.example.com/asset_name": "custom_asset_1",
-  "repo:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
+  "repo:id": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
   "xdm:createDate": "2017-09-26T15:52:25+00:00",
   "repo:createdDate": "2017-09-26T15:52:25+00:00",
   "xdm:repositoryCreatedBy": "lars",
@@ -94,7 +94,7 @@ Replace `#/definitions/…` with the correct path to the `definitions` object in
   },
   "https://ns.example.com/path": "/custom/path/1",
   "https://ns.example.com/asset_name": "custom_asset_1",
-  "repo:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
+  "repo:id": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
   "xdm:createDate": "2017-09-26T15:52:25+00:00",
   "repo:createdDate": "2017-09-26T15:52:25+00:00",
   "xdm:repositoryCreatedBy": "lars",

@@ -23,7 +23,7 @@
         "xdm:maxMilestones": {
           "name": "Maximum Number of Milestones",
           "description":
-            "The maximum number of old versions that can be marked as a mlestone on a versioned resource",
+            "The maximum number of old versions that can be marked as a milestone on a versioned resource",
           "type": "integer"
         }
       }

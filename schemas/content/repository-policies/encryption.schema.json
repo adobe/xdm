@@ -18,7 +18,7 @@
         "xdm:keyType": {
           "name": "Key Type",
           "description":
-            "The type of encryption key - 'platform': a key used across all tenants of the platform; 'org': a key managed exclusviely for the org to which the storage belongs",
+            "The type of encryption key - 'platform': a key used across all tenants of the platform; 'org': a key managed exclusively for the org to which the storage belongs",
           "meta:usereditable": false,
           "type": "string",
           "enum": ["platform", "org"]

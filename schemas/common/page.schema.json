@@ -18,13 +18,13 @@
           "title": "Order by property",
           "type": "string",
           "description":
-            "The `orderBy` parameter specifies the comma-separated (no spaces after comma) list of properties by which the resource should be sorted. The properties by which to sort are listed in priority order. The first property is used for primary sorting, the second property to resolve ties in primary sorting, etc. The name of a property may be prefixed with a `+` to indicate ascending ordering or `-` to indicate descending ordering by that property. If the property name is not prefixed the result is sorted in asceding order. If `orderBy` is not given or does not name a property supported to sort by, the order is indeterminate and the service may return the elements in any order."
+            "The `orderBy` parameter specifies the comma-separated (no spaces after comma) list of properties by which the resource should be sorted. The properties by which to sort are listed in priority order. The first property is used for primary sorting, the second property to resolve ties in primary sorting, etc. The name of a property may be prefixed with a `+` to indicate ascending ordering or `-` to indicate descending ordering by that property. If the property name is not prefixed the result is sorted in ascending order. If `orderBy` is not given or does not name a property supported to sort by, the order is indeterminate and the service may return the elements in any order."
         },
         "start": {
           "title": "First value",
           "type": "string",
           "description":
-            "The first value, in sorted order, of the orderby property on this page."
+            "The first value, in sorted order, of the order-by property on this page."
         },
         "next": {
           "title": "Next page start value",

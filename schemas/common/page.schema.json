@@ -35,7 +35,7 @@
           "title": "Filter properties",
           "type": "string",
           "description":
-            "The list of properties by which the result is filtered, if any.\nThis list is comma-separated (no spaces after comma). The resulting list will only include entries for which the filtered property has been defined. "
+            "The list of properties by which the result is filtered, if any. This list is comma-separated (no spaces after comma). The resulting list will only include entries for which the filtered property has been defined. "
         },
         "type": {
           "title": "Filter type value",

@@ -63,7 +63,7 @@
           "minimum": 0,
           "maximum": 1,
           "description":
-            "The calculated score or star rating for this organization. `1` indicates the maximum possible rating, `0` the minumum possible rating."
+            "The calculated score or star rating for this organization. `1` indicates the maximum possible rating, `0` the minimum possible rating."
         },
         "xdm:identifier": {
           "title": "Organization Identifier",
@@ -86,7 +86,7 @@
             }
           ],
           "description":
-            "This object contains unambiguous identifiers for the organization. Each key is the URI of an identification service, each value is the unique ID (or preferrably URI) of the organization as defined by the identification service."
+            "This object contains unambiguous identifiers for the organization. Each key is the URI of an identification service, each value is the unique ID (or preferably URI) of the organization as defined by the identification service."
         },
         "xdm:classifier": {
           "title": "Market/Industry Classifier",
@@ -113,7 +113,7 @@
             }
           ],
           "description":
-            "This object contains unambiguous classifiers for the organization. Each key is the URI of an classification service or standard, each value is the unique ID (or preferrably URI) of the organization as defined by the classification service."
+            "This object contains unambiguous classifiers for the organization. Each key is the URI of an classification service or standard, each value is the unique ID (or preferably URI) of the organization as defined by the classification service."
         }
       }
     }

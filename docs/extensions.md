@@ -22,7 +22,7 @@ Some XDM schemas might be declared non-extensible, which means that any property
 
 XDM generally separates two kinds of properties:
 
-1.  Standard properties are part of the XDM specification, and follow a pattern of `prefix:name`. For instance, `repo:id` is the unique identifier of assets in the content repository.
+1.  Standard properties are part of the XDM specification, and follow a pattern of `prefix:name`. For instance, `repo:id` is the unique identifier of assets in a repository.
 2.  Extension properties are not part of the XDM specification and have been defined by a customer, a partner, or by Adobe for things that are specific to one implementation. Extension property names are always URIs like `http://example.com/ns/xdm/my_property`
 
 XDM comes with a small list of allowed prefixes that correspond to the namespace URIs of the standards that XDM is incorporating.

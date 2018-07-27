@@ -10,8 +10,8 @@
   	"xdm:validUntil" : "2017-12-26T15:52:25+00:00",
   	"xdm:status" : "realized",
     "xdm:payload": {
-    "xdm:payloadPropensityValue": 0.5,
-    "xdm:payloadType": "propensity"
+    "xdm:payloadNumberValue": 42,
+    "xdm:payloadType": "number"
    }
 }
 

@@ -126,8 +126,8 @@
       "xdm:version": "1.0",
       "xdm:endUserIds": {
         "https://ns.adobe.com/experience/mcid": {
-          "@id": "https://data.adobe.io/entities/identity/92312748749128",
-          "additionalIds": [
+          "xdm:id": "https://data.adobe.io/entities/identity/92312748749128",
+          "additionalIDs": [
             "https://data.adobe.io/entities/identity/62312748749321",
             "https://data.adobe.io/entities/identity/49312748749132"
           ],
@@ -147,7 +147,7 @@
         }
       },
       "xdm:profileStitchID": {
-        "@id": "https://data.adobe.io/entities/profileStitchIdentity/1",
+        "xdm:id": "https://data.adobe.io/entities/profileStitchIdentity/1",
         "xdm:namespace": {
           "xdm:code": "AAM"
         },

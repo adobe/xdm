@@ -13,7 +13,7 @@
     "definitions": {
         "profileStitchIdentity": {
             "properties": {
-                "@id": {
+                "xdm:id": {
                     "title": "Identifier",
                     "type": "string",
                     "format": "uri",

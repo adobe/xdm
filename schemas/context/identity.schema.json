@@ -20,13 +20,13 @@
           "type": "string",
           "description": "Identity of the consumer in the related namespace."
         },
-        "xdm:additionalIds": {
+        "xdm:additionalIDs": {
           "title": "Additional Identifiers",
           "type":"array",
           "items": {
             "type": "string"
           },
-          "description": "If consumer has more than one of the given id, additional ids are listed here."
+          "description": "If endUser has more than one identity in the namespace, additional identity ids are listed here."
         },
         "xdm:namespace": {
           "title": "Namespace",

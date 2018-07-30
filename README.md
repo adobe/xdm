@@ -140,7 +140,7 @@ The `package.json` script will fetch a released version of the AEM Markdown Impo
 
 ## License/Copyright
 
-Copyright 2017 Adobe Systems Incorporated. All rights reserved.
+Copyright 2018 Adobe Systems Incorporated. All rights reserved.
 This work is licensed under a [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) license.
 
 ### You are free to:

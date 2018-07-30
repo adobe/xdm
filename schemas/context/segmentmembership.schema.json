@@ -51,9 +51,9 @@
           "title" : "Propensity",
           "type" : "number",
           "description": "How strongly associated the membership is. When missing, assumed to be 1 (strongest level of association).",
-          "minimum" : 0,
-          "exclusiveMinimum": true,
-          "maximum" : 1
+          "exclusiveMinimum": 0,
+          "maximum" : 1,
+          "default": 1
         }
       }
     }

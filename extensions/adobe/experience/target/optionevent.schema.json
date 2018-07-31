@@ -1,0 +1,76 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/experience/target/activity/activityevent/optionevent",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Activity Option Event",
+  "type": "object",
+  "description": "Represents Activity Option Event.",
+  "definitions": {
+    "optionevent": {
+      "properties": {
+        "https://ns.adobe.com/xdm/experience/target/activity/activityevent/optionevent/activityLocation": {
+          "title": "Activity Location",
+          "description": "Activity Display Location.",
+          "properties": {
+            "xdm:locationID": {
+              "title": "Location Identifier",
+              "type": "string",
+              "description": "Activity Display Location Identifier."
+            },
+            "xdm:selector": {
+              "title": "Selector",
+              "type": "string",
+              "description": "Activity Display Location Selector"
+            }
+          },
+          "required": [
+            "xdm:locationID"
+          ]
+        },
+        "https://ns.adobe.com/xdm/experience/target/activity/activityevent/optionevent/targetOption": {
+          "title": "Activity Option",
+          "description": "Activity Display Option.",
+          "properties": {
+            "xdm:optionID": {
+              "title": "Option Identifier",
+              "type": "string",
+              "description": "Activity option identifier."
+            },
+            "xdm:offerID": {
+              "title": "Offer Identifier",
+              "type": "string",
+              "description": "Represents identifier of offer used in option."
+            },
+            "xdm:version": {
+              "title": "Offer Version",
+              "type": "string",
+              "description": "Represents version of offer used."
+            }
+          },
+          "required": [
+            "xdm:optionID"
+          ]
+        },
+        "xdm:eventScope": {
+          "$ref": "https://ns.adobe.com/xdm/experience/target/activity/activityevent/eventscope"
+        }
+      },
+      "required": [
+        "https://ns.adobe.com/xdm/experience/target/activity/activityevent/optionevent/activityLocation",
+        "https://ns.adobe.com/xdm/experience/target/activity/activityevent/optionevent/targetOption",
+        "xdm:eventScope"
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/optionevent"
+    }
+  ],
+  "meta:status": "experimental"
+}

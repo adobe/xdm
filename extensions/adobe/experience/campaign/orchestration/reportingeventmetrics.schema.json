@@ -6,7 +6,7 @@
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
   "$id":
-    "https://ns.adobe.com/experience/campaign/orchestrationreportingeventmetrics",
+    "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "User journey reporting event metrics",
   "type": "object",
@@ -94,12 +94,9 @@
       }
     }
   },
-  "allof": [
+  "allOf": [
     {
       "$ref": "#/definitions/reportingeventmetrics"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/data/metrics"
     }
   ],
   "meta:status": "stabilizing"

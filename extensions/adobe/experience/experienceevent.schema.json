@@ -37,7 +37,13 @@
       "$ref": "https://ns.adobe.com/experience/campaign/experienceevent"
     },
     {
-      "$ref": "#/definitions/experienceevent"
+      "$ref": "https://ns.adobe.com/experience/adcloud/experienceevent"
+    },
+    {
+      "$ref": "https://ns.adobe.com/experience/profile/experienceevent"
+    },
+    {
+      "$ref": "https://ns.adobe.com/experience/implementations"
     }
   ],
   "meta:status": "experimental"

@@ -1,0 +1,29 @@
+{
+  "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234430",
+  "dc:title": "Floki Begs Helga for Freedom",
+  "xmpDM:duration": 87,
+  "iptc4xmpExt:Series": {
+    "iptc4xmpExt:Name": "nba_highlights",
+    "iptc4xmpExt:Identifier": "http://espn.com/series-identifiers/2613953"
+  },
+  "xdm:showType": "episode",
+  "xdm:streamFormat": "long",
+  "iptc4xmpExt:Season": {
+    "iptc4xmpExt:Number": 1.0
+  },
+  "iptc4xmpExt:Episode": {
+    "iptc4xmpExt:Number": 1.0
+  },
+  "iptc4xmpExt:Genre": ["sports"],
+  "iptc4xmpExt:Rating": [
+    {
+      "iptc4xmpExt:RatingValue": "TV14",
+      "iptc4xmpExt:RatingSourceLink": "http://www.tvguidelines.org/ratings.htm"
+    }
+  ],
+  "iptc4xmpExt:Creator": [
+    {
+      "iptc4xmpExt:Name": "ESPN"
+    }
+  ]
+}

@@ -15,6 +15,8 @@ The information related to advertising activity related to the experience event
 * Advertising `https://ns.adobe.com/xdm/context/advertising`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [MRC Viewability](adviewability.schema.md) `https://ns.adobe.com/xdm/context/adviewability`
+  * [Ad Asset Reference](advertising-timed-asset-reference.schema.md) `https://ns.adobe.com/xdm/context/advertising-timed-asset-reference`
+  * [Ad Asset View Details](advertising-timed-asset-view-details.schema.md) `https://ns.adobe.com/xdm/context/advertising-timed-asset-view-details`
   * [Measure](../data/measure.schema.md) `https://ns.adobe.com/xdm/data/measure`
 
 
@@ -50,16 +52,58 @@ The information related to advertising activity related to the experience event
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
+| [xdm:adAssetReference](#xdmadassetreference) | Ad Asset Reference | Optional | Advertising (this schema) |
+| [xdm:adAssetViewDetails](#xdmadassetviewdetails) | Ad Asset View Details | Optional | Advertising (this schema) |
 | [xdm:adViewability](#xdmadviewability) | MRC Viewability | Optional | Advertising (this schema) |
 | [xdm:clicks](#xdmclicks) | Measure | Optional | Advertising (this schema) |
 | [xdm:completes](#xdmcompletes) | Measure | Optional | Advertising (this schema) |
 | [xdm:conversions](#xdmconversions) | Measure | Optional | Advertising (this schema) |
+| [xdm:federated](#xdmfederated) | Measure | Optional | Advertising (this schema) |
 | [xdm:firstQuartiles](#xdmfirstquartiles) | Measure | Optional | Advertising (this schema) |
 | [xdm:impressions](#xdmimpressions) | Measure | Optional | Advertising (this schema) |
 | [xdm:midpoints](#xdmmidpoints) | Measure | Optional | Advertising (this schema) |
 | [xdm:starts](#xdmstarts) | Measure | Optional | Advertising (this schema) |
 | [xdm:thirdQuartiles](#xdmthirdquartiles) | Measure | Optional | Advertising (this schema) |
+| [xdm:timePlayed](#xdmtimeplayed) | Measure | Optional | Advertising (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
+
+## xdm:adAssetReference
+### Ad Asset Reference
+
+Asset information about the ad captured by the experience event.
+
+`xdm:adAssetReference`
+* is optional
+* type: Ad Asset Reference
+* defined in this schema
+
+### xdm:adAssetReference Type
+
+
+* [Ad Asset Reference](advertising-timed-asset-reference.schema.md) – `https://ns.adobe.com/xdm/context/advertising-timed-asset-reference`
+
+
+
+
+
+## xdm:adAssetViewDetails
+### Ad Asset View Details
+
+View details for the ad playback captured by the experience event.
+
+`xdm:adAssetViewDetails`
+* is optional
+* type: Ad Asset View Details
+* defined in this schema
+
+### xdm:adAssetViewDetails Type
+
+
+* [Ad Asset View Details](advertising-timed-asset-view-details.schema.md) – `https://ns.adobe.com/xdm/context/advertising-timed-asset-view-details`
+
+
+
+
 
 ## xdm:adViewability
 ### MRC Viewability
@@ -99,8 +143,9 @@ Click(s) actions on an advertisement.
 
 
 ## xdm:completes
+### Completes
 
-A digital video ad has played through it's entirety.
+Indicates if a timed media asset was watched to completion - this does not necessarily mean the viewer watched the whole video; viewer could have skipped ahead.
 
 `xdm:completes`
 * is optional
@@ -118,7 +163,7 @@ A digital video ad has played through it's entirety.
 
 ## xdm:conversions
 
-A pre-defined action on a website triggered a conversion event to be fired
+A customer pre-defined action(s) which triggers an event for performance evaluation.
 
 `xdm:conversions`
 * is optional
@@ -134,9 +179,28 @@ A pre-defined action on a website triggered a conversion event to be fired
 
 
 
+## xdm:federated
+### Federated
+
+Indicates if an experience event was created through data federation (data sharing between customers).
+
+`xdm:federated`
+* is optional
+* type: Measure
+* defined in this schema
+
+### xdm:federated Type
+
+
+* [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
 ## xdm:firstQuartiles
 
-A digital video ad has played through 25% of it's duration at normal speed.
+A digital video ad has played through 25% of its duration at normal speed.
 
 `xdm:firstQuartiles`
 * is optional
@@ -172,7 +236,7 @@ Impression(s) of an advertisement to an end user with the potential of being vie
 
 ## xdm:midpoints
 
-A digital video ad has played through 50% of it's duration at normal speed.
+A digital video ad has played through 50% of its duration at normal speed.
 
 `xdm:midpoints`
 * is optional
@@ -208,7 +272,7 @@ A digital video ad has started playing.
 
 ## xdm:thirdQuartiles
 
-A digital video ad has played through 75% of it's duration at normal speed.
+A digital video ad has played through 75% of its duration at normal speed.
 
 `xdm:thirdQuartiles`
 * is optional
@@ -216,6 +280,25 @@ A digital video ad has played through 75% of it's duration at normal speed.
 * defined in this schema
 
 ### xdm:thirdQuartiles Type
+
+
+* [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
+## xdm:timePlayed
+### Time Spent
+
+Describes the amount of time spent by a user on a specific timed media asset.
+
+`xdm:timePlayed`
+* is optional
+* type: Measure
+* defined in this schema
+
+### xdm:timePlayed Type
 
 
 * [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`

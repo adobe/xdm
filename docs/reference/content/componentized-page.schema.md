@@ -37,7 +37,7 @@ Componentized pages are modular (consist of smaller content components), hyperli
     "title": "Sunglasses",
     "image": {
       "@type": "https://ns.adobe.com/xdm/assets/asset",
-      "repo:assetID": "urn:aaid:aem:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
+      "repo:id": "urn:aaid:aem:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
       "@id": "https://francois.corp.adobe.com:4502/content/dam/Fx_DUKE-small.jpg"
     }
   },

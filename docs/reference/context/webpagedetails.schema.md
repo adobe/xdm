@@ -160,7 +160,6 @@ The normative or usual server that hosts the web page.  This may or may not be t
 
 
 `string`
-* format: `hostname` – Domain Name (according to [RFC 1034, section 3.1](https://tools.ietf.org/html/rfc1034))
 
 
 

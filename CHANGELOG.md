@@ -3,6 +3,7 @@
 ## Release 0.9.4
 
 _Planned for August 17, 2018_
+
 * #458 Change `context\pushNotificationToken` to `context\notificationSubscription` and add support for more general notifications.
 
 ## Release 0.9.3

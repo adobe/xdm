@@ -5,40 +5,52 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/context/pushnotificationtoken",
+  "$id": "https://ns.adobe.com/xdm/context/notificationSubscription",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Push Notification Token",
+  "title": "Notification subscription",
   "type": "object",
   "meta:extensible": true,
   "description":
-    "Push notification tokens are used to communicate with applications that\nare installed on devices or SaaS application accounts. Examples include mobile\napplication notifications over notification services like the Apple Push\nNotification service.\n",
+    "Notification subscriptions are used to communicate with endusers via any channels e.g applications that are installed on devices, email.",
   "definitions": {
-    "pushnotificationtoken": {
+    "notificationSubscription": {
       "properties": {
         "xdm:token": {
           "title": "Token",
           "type": "string",
           "description":
-            "The service specific token used to address the application for\ncommunication. e.g an Apple APN ID or a Google GCM ID.\n"
+            "The service specific token used to address the application for communication. e.g an Apple APN ID or a Google Firebase/Google GCM ID."
+        },
+        "xdm:emailAddress": {
+          "title": "Address",
+          "type": "string",
+          "format": "email",
+          "description":
+            "The technical address, e.g 'name@domain.com' as commonly defined in RFC2822 and subsequent standards."
+        },
+        "xdm:topicID": {
+          "title": "Topic Identifier",
+          "type": "string",
+          "description": "The topic that the notification subscription is permitted to message."
         },
         "xdm:registrationDate": {
           "title": "Registration Date",
           "type": "string",
           "format": "date-time",
           "description":
-            "Date and time when the profile has authorized its application to receive\npush notifications.\n"
+            "Date and time when the enduser has authorized its application to receive notifications."
         },
         "xdm:deregistrationDate": {
           "title": "Deregistration Date",
           "type": "string",
           "format": "date-time",
           "description":
-            "Date and time when the profile has disabled push notifications on the application.\n"
+            "Date and time when the enduser has disabled push notifications on the application. When the subscription is registered the xdm:deregistrationDate must be empty."
         },
         "xdm:environment": {
           "title": "Environment",
           "$ref": "https://ns.adobe.com/xdm/context/environment",
-          "description": "Environment of at the time of the registration.\n"
+          "description": "Environment of at the time of the registration."
         },
         "xdm:device": {
           "title": "Device",
@@ -49,12 +61,12 @@
           "title": "Application",
           "$ref": "https://ns.adobe.com/xdm/channels/application",
           "description":
-            "Application registered to receive Push Notifications.\n"
+            "Application registered to receive notifications."
         },
         "xdm:channel": {
           "title": "Communication Channel",
           "$ref": "https://ns.adobe.com/xdm/channels/channel",
-          "description": "Channels for communicating with customers or users."
+          "description": "Channel used for the notification."
         }
       }
     }
@@ -64,8 +76,8 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "#/definitions/pushnotificationtoken"
+      "$ref": "#/definitions/notificationSubscription"
     }
   ],
-  "meta:status": "stabilizing"
+  "meta:status": "experimental"
 }

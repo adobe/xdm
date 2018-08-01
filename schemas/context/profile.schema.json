@@ -77,13 +77,13 @@
           "description":
             "Describes a users opting in and out preferences for communication by medium\nand communication type.\n"
         },
-        "xdm:pushNotificationTokens": {
-          "title": "Push Notification Tokens",
+        "xdm:notificationSubscriptions": {
+          "title": "Notification Subscriptions",
           "type": "array",
           "description":
-            "Push notification tokens are used to communicate with applications that\nare installed on devices or SaaS application accounts.\n",
+            "Notification subscriptions are used to communicate with endusers that when they have enrolled for the notifications.",
           "items": {
-            "$ref": "https://ns.adobe.com/xdm/context/pushnotificationtoken"
+            "$ref": "https://ns.adobe.com/xdm/context/notificationSubscription"
           }
         },
         "xdm:orgUnit": {

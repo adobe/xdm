@@ -36,7 +36,7 @@
           "description":
             "The state this identity is authenticated as for this observed ExperienceEvent.",
           "type": "string",
-          "default": "unknown",
+          "default": "ambiguous",
           "enum": ["ambiguous", "authenticated", "loggedOut"],
           "meta:enum": {
             "ambiguous": "Ambiguous",

@@ -3,6 +3,7 @@
 ## Release 0.9.4
 
 _Planned for August 17, 2018_
+
 * #459 Added Authenticated State property to `\context\identity.schema.json`
 
 ## Release 0.9.3

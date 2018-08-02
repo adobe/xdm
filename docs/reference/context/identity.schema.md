@@ -9,48 +9,59 @@ Identity is used to clearly distinguish people that are interacting with digital
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | Yes | Forbidden | Permitted | [context/identity.schema.json](context/identity.schema.json) |
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/identity.schema.json](context/identity.schema.json) |
 ## Schema Hierarchy
 
 * Identity `https://ns.adobe.com/xdm/context/identity`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Namespace](namespace.schema.md) `https://ns.adobe.com/xdm/context/namespace`
 
 
-## Identity Example
+## Identity Examples
+
 ```json
 {
-  "@id": "https://data.adobe.io/entities/identity/id123",
+  "xdm:id": "id123",
   "xdm:namespace": {
     "xdm:code": "AA12345"
   }
 }
 ```
 
+```json
+{
+  "xdm:id": "someone@example.com",
+  "xdm:namespace": {
+    "xdm:code": "Email"
+  }
+}
+```
+
+
 # Identity Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Identity (this schema) |
+| [xdm:id](#xdmid) | `string` | Optional | Identity (this schema) |
 | [xdm:namespace](#xdmnamespace) | Namespace | Optional | Identity (this schema) |
 | [xdm:primary](#xdmprimary) | `boolean` | Optional | Identity (this schema) |
 | [xdm:xid](#xdmxid) | `string` | Optional | Identity (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## @id
+## xdm:id
 ### Identifier
 
 Identity of the consumer in the related namespace.
 
-`@id`
+`xdm:id`
 * is optional
 * type: `string`
 * defined in this schema
 
-### @id Type
+### xdm:id Type
 
 
 `string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
 
 
 

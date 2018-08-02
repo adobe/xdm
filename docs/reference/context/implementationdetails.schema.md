@@ -10,6 +10,11 @@ Details about the SDK, library or service used in an application's or web page's
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/implementationdetails.schema.json](context/implementationdetails.schema.json) |
+## Schema Hierarchy
+
+* Implementation Details `https://ns.adobe.com/xdm/context/implementationdetails`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+
 
 ## Implementation Details Example
 ```json

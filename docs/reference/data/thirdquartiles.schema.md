@@ -9,7 +9,12 @@ The metric third-quartiles describes digital video which played for at least 75%
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/thirdquartiles.schema.json](data/thirdquartiles.schema.json) |
+| Can be instantiated | Yes | Stabilizing | Yes | Forbidden | Permitted | [data/thirdquartiles.schema.json](data/thirdquartiles.schema.json) |
+## Schema Hierarchy
+
+* third-quartiles `https://ns.adobe.com/xdm/data/thirdquartiles`
+  * [Metric Definition](metricdefinition.schema.md) `https://ns.adobe.com/xdm/data/metricdefinition`
+
 
 ## third-quartiles Example
 ```json
@@ -25,10 +30,10 @@ The metric third-quartiles describes digital video which played for at least 75%
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | third-quartiles (this schema) |
-| [schema:name](#schemaname) | `const` | **Required** | third-quartiles (this schema) |
-| [xdm:measurement](#xdmmeasurement) | `const` | **Required** | third-quartiles (this schema) |
-| [xdm:unit](#xdmunit) | `const` | **Required** | third-quartiles (this schema) |
+| [@id](#@id) | `string` | **Required** | [Metric Definition](metricdefinition.schema.md#@id) |
+| [schema:name](#schemaname) | `string` | **Required** | [Metric Definition](metricdefinition.schema.md#schemaname) |
+| [xdm:measurement](#xdmmeasurement) | `string` | **Required** | [Metric Definition](metricdefinition.schema.md#xdmmeasurement) |
+| [xdm:unit](#xdmunit) | complex | **Required** | [Metric Definition](metricdefinition.schema.md#xdmunit) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -37,14 +42,15 @@ The unique identifier of this metric.
 
 `@id`
 * is **required**
-* type: `const`
-* defined in this schema
+* type: `string`
+* defined in [Metric Definition](metricdefinition.schema.md#@id)
 
-The value of this property **must** be equal to:
+### @id Type
 
-```json
-"xdm:thirdQuartiles"
-```
+
+`string`
+* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+
 
 
 
@@ -52,18 +58,18 @@ The value of this property **must** be equal to:
 
 ## schema:name
 
-The metric third-quartiles describes digital video which played for at least 75% of the total duration.
+The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.
 
 `schema:name`
 * is **required**
-* type: `const`
-* defined in this schema
+* type: `string`
+* defined in [Metric Definition](metricdefinition.schema.md#schema:name)
 
-The value of this property **must** be equal to:
+### schema:name Type
 
-```json
-"metric: thirdQuartiles"
-```
+
+`string`
+
 
 
 
@@ -75,16 +81,35 @@ How to take measures of this metric.
 
 `xdm:measurement`
 * is **required**
-* type: `const`
-* defined in this schema
+* type: `string`
+* defined in [Metric Definition](metricdefinition.schema.md#xdm:measurement)
 
-The value of this property **must** be equal to:
+### xdm:measurement Type
+
+
+`string`
+
+
+
+
+
+### xdm:measurement Examples
+
+```json
+"distance"
+```
+
+```json
+"time"
+```
+
+```json
+"price"
+```
 
 ```json
 "count"
 ```
-
-
 
 
 
@@ -93,14 +118,25 @@ The value of this property **must** be equal to:
 
 `xdm:unit`
 * is **required**
-* type: `const`
-* defined in this schema
+* type: complex
+* defined in [Metric Definition](metricdefinition.schema.md#xdm:unit)
 
-The value of this property **must** be equal to:
+### xdm:unit Type
 
-```json
-null
-```
+
+**Any** following *options* needs to be fulfilled.
+
+
+#### Option 1
+
+
+`string`
+
+
+
+#### Option 2
+
+
 
 
 

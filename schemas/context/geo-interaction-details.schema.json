@@ -9,6 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Geo Interaction Details",
   "type": "object",
+  "meta:extensible": true,
   "description":
     "The geo details relating to the current state of inclusion in a geo defined area.",
   "definitions": {
@@ -33,6 +34,9 @@
     }
   },
   "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
     {
       "$ref": "#/definitions/geo-interaction-detail"
     }

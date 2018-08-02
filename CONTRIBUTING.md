@@ -33,7 +33,7 @@ Where possible, include the Creative Commons Attribution 4.0 International (CC B
 
 ### Contributor License Agreement
 
-All third-party contributions to this project must be accompanied by a signed contributor license. This gives Adobe permission to redistribute your contributions as part of the project. Sign our CLA at [http://opensource.adobe.com/cla.html](http://opensource.adobe.com/cla.html). You only need to submit an Adobe CLA one time, so if you have submitted one
+All third-party contributions to this project must be accompanied by a signed contributor license. This gives Adobe permission to redistribute your contributions as part of the project. Sign our CLA at [http://opensource.adobe.com/cla.html](http://opensource.adobe.com/cla.html). You only need to submit an [Adobe CLA](http://opensource.adobe.com/cla.html) one time.
 
 ### License Inclusion
 
@@ -148,10 +148,12 @@ Avoid non-semantic limits – don’t put current resource limits in the data mo
 * don't restrict values of `string` properties beyond the constraints of the domain, e.g. don't set a `maxLength` of 255, just because your current database uses a `VARCHAR(255)` default
 * run `npm test` before you make a pull request
 * convention is that property names are in camelCase, when they appear in JSON
-* Acronyms and abbreviations in camelCase like ID, API, JSON are also capitalized in camelCase, such as `assetID`
+* Acronyms and abbreviations in camelCase like ID, API, JSON are also capitalized in camelCase, such as `documentID`
 * When combining two acronyms, use lowercase for the first and uppercase for the second, such as `dmaID`
 * don't invent your own `ID` attributes, use the `@id` convention
 * don't invent your own `type` attributes, use the `@type` convention
+* when using `enum` in JSON schema, document all values using `meta:enum`
+* when working with "soft enums" or "open enumerations", use `meta:enum` to document all known values
 
 Run `npm run lint` before committing. The `lint` command is able to fix some easy styling issues, including:
 
@@ -387,7 +389,17 @@ XDM is using a couple of custom keywords that are not part of the JSON Schema st
 * `meta:extensible`: see above, to describe schemas that allow custom properties
 * `meta:auditable`: for schemas that have created and last modified dates
 * `meta:descriptors`: to annotate schemas with additional metadata (see Schema Descriptors above)
-* `meta:enum`: for known values in enums, strings, and as property keys
+* `meta:enum`: for known values in enums, strings, and as property keys (see below)
+
+##### Soft and Hard Enumerations
+
+XDM uses the notion of hard and soft enumerations.
+
+A **hard enum** is enforced though JSON Schema's `enum` keyword. Only the values listed in the `enum` array are valid.
+All values should be documented in addition using `meta:enum`
+
+A **soft enum** can be any string property. Soft enums consist of a number of known and documented values (using `meta:enum`), but any `string` that matches the type's constraints is a valid value.
+This means, soft enums are open enumerations that can be extended ad-hoc by XDM users. XDM authors should be aware that just using `meta:enum` is not adding any enforcment logic.
 
 ## Writing Styleguides
 

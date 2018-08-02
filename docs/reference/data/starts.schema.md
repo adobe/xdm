@@ -5,11 +5,16 @@
 https://ns.adobe.com/xdm/data/starts
 ```
 
-The metric starts describes a digital video which started playing.
+Indicates the first frame of the timed media was viewed - i.e. the viewer did not abandon during pre-roll ad, buffering, etc.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/starts.schema.json](data/starts.schema.json) |
+| Can be instantiated | Yes | Stabilizing | Yes | Forbidden | Permitted | [data/starts.schema.json](data/starts.schema.json) |
+## Schema Hierarchy
+
+* starts `https://ns.adobe.com/xdm/data/starts`
+  * [Metric Definition](metricdefinition.schema.md) `https://ns.adobe.com/xdm/data/metricdefinition`
+
 
 ## starts Example
 ```json
@@ -25,10 +30,10 @@ The metric starts describes a digital video which started playing.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | starts (this schema) |
-| [schema:name](#schemaname) | `const` | **Required** | starts (this schema) |
-| [xdm:measurement](#xdmmeasurement) | `const` | **Required** | starts (this schema) |
-| [xdm:unit](#xdmunit) | `const` | **Required** | starts (this schema) |
+| [@id](#@id) | `string` | **Required** | [Metric Definition](metricdefinition.schema.md#@id) |
+| [schema:name](#schemaname) | `string` | **Required** | [Metric Definition](metricdefinition.schema.md#schemaname) |
+| [xdm:measurement](#xdmmeasurement) | `string` | **Required** | [Metric Definition](metricdefinition.schema.md#xdmmeasurement) |
+| [xdm:unit](#xdmunit) | complex | **Required** | [Metric Definition](metricdefinition.schema.md#xdmunit) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -37,14 +42,15 @@ The unique identifier of this metric.
 
 `@id`
 * is **required**
-* type: `const`
-* defined in this schema
+* type: `string`
+* defined in [Metric Definition](metricdefinition.schema.md#@id)
 
-The value of this property **must** be equal to:
+### @id Type
 
-```json
-"xdm:starts"
-```
+
+`string`
+* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+
 
 
 
@@ -52,18 +58,18 @@ The value of this property **must** be equal to:
 
 ## schema:name
 
-The metric starts describes a digital video which started playing.
+The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.
 
 `schema:name`
 * is **required**
-* type: `const`
-* defined in this schema
+* type: `string`
+* defined in [Metric Definition](metricdefinition.schema.md#schema:name)
 
-The value of this property **must** be equal to:
+### schema:name Type
 
-```json
-"metric: starts"
-```
+
+`string`
+
 
 
 
@@ -75,16 +81,35 @@ How to take measures of this metric.
 
 `xdm:measurement`
 * is **required**
-* type: `const`
-* defined in this schema
+* type: `string`
+* defined in [Metric Definition](metricdefinition.schema.md#xdm:measurement)
 
-The value of this property **must** be equal to:
+### xdm:measurement Type
+
+
+`string`
+
+
+
+
+
+### xdm:measurement Examples
+
+```json
+"distance"
+```
+
+```json
+"time"
+```
+
+```json
+"price"
+```
 
 ```json
 "count"
 ```
-
-
 
 
 
@@ -93,14 +118,25 @@ The value of this property **must** be equal to:
 
 `xdm:unit`
 * is **required**
-* type: `const`
-* defined in this schema
+* type: complex
+* defined in [Metric Definition](metricdefinition.schema.md#xdm:unit)
 
-The value of this property **must** be equal to:
+### xdm:unit Type
 
-```json
-null
-```
+
+**Any** following *options* needs to be fulfilled.
+
+
+#### Option 1
+
+
+`string`
+
+
+
+#### Option 2
+
+
 
 
 

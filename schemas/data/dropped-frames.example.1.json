@@ -1,0 +1,6 @@
+{
+  "schema:name": "metric: droppedFrames",
+  "@id": "xdm:droppedFrames",
+  "xdm:measurement": "count",
+  "xdm:unit": null
+}

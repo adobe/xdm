@@ -9,14 +9,14 @@
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "Identity",
     "type": "object",
+    "meta:extensible": true,
     "description": "Identity is used to clearly distinguish people that are interacting with digital experiences. Identity is established by an identity provider, which itself is referenced in the `namespace` attribute. Within each `namespace`, the identity is unique.",
     "definitions": {
         "identity": {
             "properties": {
-                "@id": {
+                "xdm:id": {
                     "title": "Identifier",
                     "type": "string",
-                    "format": "uri",
                     "description": "Identity of the consumer in the related namespace."
                 },
                 "xdm:namespace": {
@@ -40,15 +40,24 @@
     },
     "allOf": [
         {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
             "$ref": "#/definitions/identity"
         }
     ],
     "meta:status": "stabilizing",
     "examples": [
         {
-            "@id": "https://data.adobe.io/entities/identity/id123",
+            "xdm:id": "id123",
             "xdm:namespace": {
                 "xdm:code": "AA12345"
+            }
+        },
+        {
+            "xdm:id": "someone@example.com",
+            "xdm:namespace": {
+                "xdm:code": "Email"
             }
         }
     ]

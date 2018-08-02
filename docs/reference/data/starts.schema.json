@@ -13,7 +13,7 @@
     "meta:extends": [
         "https://ns.adobe.com/xdm/data/metricdefinition"
     ],
-    "description": "The metric starts describes a digital video which started playing.",
+    "description": "Indicates the first frame of the timed media was viewed - i.e. the viewer did not abandon during pre-roll ad, buffering, etc.",
     "definitions": {
         "metricdefinition": {
             "properties": {
@@ -25,7 +25,7 @@
                 "schema:name": {
                     "type": "string",
                     "const": "metric: starts",
-                    "description": "The metric starts describes a digital video which started playing."
+                    "description": "Indicates the first frame of the timed media asset was viewed - i.e. the viewer did not abandon during pre-roll ad, buffering, etc."
                 },
                 "xdm:measurement": {
                     "type": "string",
@@ -41,6 +41,9 @@
     "allOf": [
         {
             "$ref": "#/definitions/metricdefinition"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/data/metricdefinition"
         }
     ],
     "required": [

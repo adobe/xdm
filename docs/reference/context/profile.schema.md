@@ -37,6 +37,8 @@ for other Profile data such as preference, propensities and other attributes.
   * [Email Address](emailaddress.schema.md) `https://ns.adobe.com/xdm/context/emailaddress`
   * [Phone Number](phonenumber.schema.md) `https://ns.adobe.com/xdm/context/phonenumber`
   * [OptInOut](optinout.schema.md) `https://ns.adobe.com/xdm/context/optinout`
+  * [Organizational Unit](../common/orgunit.schema.md) `https://ns.adobe.com/xdm/common/orgunit`
+  * [Geographical Unit](../common/geounit.schema.md) `https://ns.adobe.com/xdm/common/geounit`
 
 
 ## Profile Example
@@ -44,9 +46,15 @@ for other Profile data such as preference, propensities and other attributes.
 {
   "xdm:identities": [
     {
-      "@id": "https://data.adobe.io/entities/identity/id123",
+      "xdm:id": "someone@example.com",
       "xdm:namespace": {
-        "xdm:code": "AA111"
+        "xdm:code": "Email"
+      }
+    },
+    {
+      "xdm:id": "123-456",
+      "xdm:namespace": {
+        "xdm:code": "BB111"
       }
     }
   ],
@@ -95,7 +103,39 @@ for other Profile data such as preference, propensities and other attributes.
     "https://ns.adobe.com/xdm/channels/direct-mail": "not_provided",
     "https://ns.adobe.com/xdm/channels/apns": "not_provided",
     "xdm:globalOptout": false
-  }
+  },
+  "xdm:orgUnit": {
+    "@id": "https://data.adobe.io/org-apparals-men"
+  },
+  "xdm:geoUnit": {
+    "@id": "https://data.adobe.io/geo-france"
+  },
+  "xdm:segments": [
+    {
+      "xdm:segmentID": {
+        "@id": "https://data.adobe.io/entities/segmentidentity/04a81716-43d6-4e7a-a49c-f1d8b3129ba9",
+        "xdm:namespace": {
+          "xdm:code": "AAM"
+        }
+      },
+      "xdm:version": "15",
+      "xdm:timestamp": "2018-04-26T15:52:25+00:00",
+      "xdm:validUntil": "2019-04-26T15:52:25+00:00",
+      "xdm:status": "existing"
+    },
+    {
+      "xdm:segmentID": {
+        "@id": "https://data.adobe.io/entities/identity/53cba6b2-a23b-454a-8069-fc41308f1c0f",
+        "xdm:namespace": {
+          "xdm:code": "AAM"
+        }
+      },
+      "xdm:version": "3",
+      "xdm:lastQualificationTime": "2018-04-26T15:52:25+00:00",
+      "xdm:validUntil": "2018-04-27T15:52:25+00:00",
+      "xdm:status": "realized"
+    }
+  ]
 }
 ```
 
@@ -103,17 +143,19 @@ for other Profile data such as preference, propensities and other attributes.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
+| [repo:createDate](#repocreatedate) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#repocreatedate) |
+| [repo:lastModifiedDate](#repolastmodifieddate) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#repolastmodifieddate) |
 | [xdm:createdByBatchID](#xdmcreatedbybatchid) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmcreatedbybatchid) |
 | [xdm:emailFormat](#xdmemailformat) | `string` | Optional | Profile (this schema) |
 | [xdm:faxPhone](#xdmfaxphone) | Phone Number | Optional | Profile (this schema) |
-| [xdm:geoUnitID](#xdmgeounitid) | `string` | Optional | Profile (this schema) |
+| [xdm:geoUnit](#xdmgeounit) | Geographical Unit | Optional | Profile (this schema) |
 | [xdm:homeAddress](#xdmhomeaddress) | Address | Optional | Profile (this schema) |
 | [xdm:homePhone](#xdmhomephone) | Phone Number | Optional | Profile (this schema) |
 | [xdm:identities](#xdmidentities) | Identity | Optional | Profile (this schema) |
 | [xdm:mobilePhone](#xdmmobilephone) | Phone Number | Optional | Profile (this schema) |
 | [xdm:modifiedByBatchID](#xdmmodifiedbybatchid) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmmodifiedbybatchid) |
 | [xdm:optInOut](#xdmoptinout) | OptInOut | Optional | Profile (this schema) |
-| [xdm:orgUnitID](#xdmorgunitid) | `string` | Optional | Profile (this schema) |
+| [xdm:orgUnit](#xdmorgunit) | Organizational Unit | Optional | Profile (this schema) |
 | [xdm:organizations](#xdmorganizations) | `string[]` | Optional | Profile (this schema) |
 | [xdm:person](#xdmperson) | Person | Optional | Profile (this schema) |
 | [xdm:personalEmail](#xdmpersonalemail) | Email Address | Optional | Profile (this schema) |
@@ -122,12 +164,64 @@ for other Profile data such as preference, propensities and other attributes.
 | [xdm:pushNotificationTokens](#xdmpushnotificationtokens) | Push Notification Token | Optional | Profile (this schema) |
 | [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmrepositorycreatedby) |
 | [xdm:repositoryLastModifiedBy](#xdmrepositorylastmodifiedby) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmrepositorylastmodifiedby) |
+| [xdm:segments](#xdmsegments) | Segment Membership | Optional | Profile (this schema) |
 | [xdm:subscriptions](#xdmsubscriptions) | Subscription | Optional | Profile (this schema) |
+| [xdm:testProfile](#xdmtestprofile) | `boolean` | Optional | Profile (this schema) |
 | [xdm:timeZone](#xdmtimezone) | `string` | Optional | Profile (this schema) |
 | [xdm:workAddress](#xdmworkaddress) | Address | Optional | Profile (this schema) |
 | [xdm:workEmail](#xdmworkemail) | Email Address | Optional | Profile (this schema) |
 | [xdm:workPhone](#xdmworkphone) | Phone Number | Optional | Profile (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
+
+## repo:createDate
+
+The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
+
+`repo:createDate`
+* is optional
+* type: `string`
+* defined in [Audit Trail](../common/auditable.schema.md#repo:createDate)
+
+### repo:createDate Type
+
+
+`string`
+* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+
+
+
+
+### repo:createDate Example
+
+```json
+"2004-10-23T12:00:00-06:00"
+```
+
+
+## repo:lastModifiedDate
+
+The server date and time when the resource was most recently modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
+
+`repo:lastModifiedDate`
+* is optional
+* type: `string`
+* defined in [Audit Trail](../common/auditable.schema.md#repo:lastModifiedDate)
+
+### repo:lastModifiedDate Type
+
+
+`string`
+* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+
+
+
+
+### repo:lastModifiedDate Example
+
+```json
+"2004-10-23T12:00:00-06:00"
+```
+
 
 ## xdm:createdByBatchID
 ### Created by Batch Identifier
@@ -197,21 +291,20 @@ Fax phone number.
 
 
 
-## xdm:geoUnitID
-### Geographical Unit Identifier
+## xdm:geoUnit
+### Geographical Unit
 
-The geographical unit ID within the organization owning the profile. This ID can be used to reference the geographical information maintained in another dataset.
+The geographical unit within the organization owning the profile. This can be used to reference the geographical information maintained in another dataset.
 
-`xdm:geoUnitID`
+`xdm:geoUnit`
 * is optional
-* type: `string`
+* type: Geographical Unit
 * defined in this schema
 
-### xdm:geoUnitID Type
+### xdm:geoUnit Type
 
 
-`string`
-
+* [Geographical Unit](../common/geounit.schema.md) – `https://ns.adobe.com/xdm/common/geounit`
 
 
 
@@ -347,21 +440,20 @@ and communication type.
 
 
 
-## xdm:orgUnitID
-### Organizational Unit Identifier
+## xdm:orgUnit
+### Organizational Unit
 
-The unit ID within the organization owning the profile. This ID can be used to reference the organization details maintained in another dataset.
+The unit within the organization owning the profile. This can be used to reference the organization details maintained in another dataset.
 
-`xdm:orgUnitID`
+`xdm:orgUnit`
 * is optional
-* type: `string`
+* type: Organizational Unit
 * defined in this schema
 
-### xdm:orgUnitID Type
+### xdm:orgUnit Type
 
 
-`string`
-
+* [Organizational Unit](../common/orgunit.schema.md) – `https://ns.adobe.com/xdm/common/orgunit`
 
 
 
@@ -567,6 +659,30 @@ At creation time, `modifiedByUser` is set as `createdByUser`.
 
 
 
+## xdm:segments
+### Segment Membership
+
+`xdm:segments`
+* is optional
+* type: Segment Membership
+
+* defined in this schema
+
+### xdm:segments Type
+
+
+Array type: Segment Membership
+
+All items must be of the type:
+* [Segment Membership](segmentmembership.schema.md) – `https://ns.adobe.com/xdm/context/segmentmembership`
+
+
+
+
+
+
+
+
 ## xdm:subscriptions
 ### Subscriptions
 
@@ -588,6 +704,25 @@ All items must be of the type:
 
 
 
+
+
+
+
+
+## xdm:testProfile
+### Test Profile
+
+Indicates the `profile` record is for use in testing/verification purposes and should not be automatically included in normal operation(s).
+
+`xdm:testProfile`
+* is optional
+* type: `boolean`
+* defined in this schema
+
+### xdm:testProfile Type
+
+
+`boolean`
 
 
 

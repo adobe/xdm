@@ -41,6 +41,8 @@ A postal address. Address could relate to a person's home, work, preferred store
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#@id) | `string` | Optional | [Geo Coordinates](../external/schema/geocoordinates.schema.md#@id) |
+| [repo:createDate](#repocreatedate) | `string` | Optional | [Audit Trail](auditable.schema.md#repocreatedate) |
+| [repo:lastModifiedDate](#repolastmodifieddate) | `string` | Optional | [Audit Trail](auditable.schema.md#repolastmodifieddate) |
 | [schema:description](#schemadescription) | `string` | Optional | [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemadescription) |
 | [schema:elevation](#schemaelevation) | `number` | Optional | [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemaelevation) |
 | [schema:latitude](#schemalatitude) | `number` | Optional | [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemalatitude) |
@@ -54,6 +56,7 @@ A postal address. Address could relate to a person's home, work, preferred store
 | [xdm:lastVerifiedDate](#xdmlastverifieddate) | `string` | Optional | Address (this schema) |
 | [xdm:modifiedByBatchID](#xdmmodifiedbybatchid) | `string` | Optional | [Audit Trail](auditable.schema.md#xdmmodifiedbybatchid) |
 | [xdm:msaID](#xdmmsaid) | `integer` | Optional | [Geo](geo.schema.md#xdmmsaid) |
+| [xdm:postOfficeBox](#xdmpostofficebox) | `string` | Optional | Address (this schema) |
 | [xdm:postalCode](#xdmpostalcode) | `string` | Optional | [Geo](geo.schema.md#xdmpostalcode) |
 | [xdm:primary](#xdmprimary) | `boolean` | Optional | Address (this schema) |
 | [xdm:region](#xdmregion) | `string` | Optional | Address (this schema) |
@@ -87,6 +90,56 @@ The unique identifier of the coordinates.
 
 
 
+
+
+## repo:createDate
+
+The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
+
+`repo:createDate`
+* is optional
+* type: `string`
+* defined in [Audit Trail](auditable.schema.md#repo:createDate)
+
+### repo:createDate Type
+
+
+`string`
+* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+
+
+
+
+### repo:createDate Example
+
+```json
+"2004-10-23T12:00:00-06:00"
+```
+
+
+## repo:lastModifiedDate
+
+The server date and time when the resource was most recently modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
+
+`repo:lastModifiedDate`
+* is optional
+* type: `string`
+* defined in [Audit Trail](auditable.schema.md#repo:lastModifiedDate)
+
+### repo:lastModifiedDate Type
+
+
+`string`
+* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+
+
+
+
+### repo:lastModifiedDate Example
+
+```json
+"2004-10-23T12:00:00-06:00"
+```
 
 
 ## schema:description
@@ -359,6 +412,27 @@ The Metropolitan Statistical Area in the USA where the observation occurred.
 
 `integer`
 
+
+
+
+
+
+## xdm:postOfficeBox
+### Post Office Box
+
+Post office box of the address.
+
+`xdm:postOfficeBox`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:postOfficeBox Type
+
+
+`string`
+
+* maximum length: 20 characters
 
 
 

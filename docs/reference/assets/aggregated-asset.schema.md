@@ -19,7 +19,7 @@ This schema aggregates all asset sub-schemas that are supported by XDM.
   * [Content](../content/content.schema.md) `https://ns.adobe.com/xdm/content/content`
   * [Copyright Owner](copyright-owner.schema.md) `https://ns.adobe.com/xdm/assets/copyright-owner`
   * [Asset](asset.schema.md) `https://ns.adobe.com/xdm/assets/asset`
-  * [Rectangular Media](rectangular.schema.md) `https://ns.adobe.com/xdm/assets/rectangular`
+  * [Simple Rectangular Area](rectangular.schema.md) `https://ns.adobe.com/xdm/assets/rectangular`
   * [Image](image.schema.md) `https://ns.adobe.com/xdm/assets/image`
   * [Video](video.schema.md) `https://ns.adobe.com/xdm/assets/video`
 
@@ -27,7 +27,7 @@ This schema aggregates all asset sub-schemas that are supported by XDM.
 ## Aggregated Asset Example
 ```json
 {
-  "repo:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
+  "repo:id": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
   "xmp:createDate": "2017-09-26T15:52:25+00:00",
   "repo:createdDate": "2017-09-26T15:52:25+00:00",
   "xdm:repositoryCreatedBy": "lars",
@@ -70,9 +70,9 @@ This schema aggregates all asset sub-schemas that are supported by XDM.
 | [plus:copyrightOwner](#pluscopyrightowner) | reference | Optional | [Asset](asset.schema.md#pluscopyrightowner) |
 | [plus:copyrightOwnerID](#pluscopyrightownerid) | `string` | Optional | [Copyright Owner](copyright-owner.schema.md#pluscopyrightownerid) |
 | [plus:copyrightOwnerName](#pluscopyrightownername) | `string` | Optional | [Copyright Owner](copyright-owner.schema.md#pluscopyrightownername) |
-| [repo:assetID](#repoassetid) | `string` | Optional | [Asset](../external/repo/asset.schema.md#repoassetid) |
 | [repo:createDate](#repocreatedate) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#repocreatedate) |
 | [repo:etag](#repoetag) | `string` | Optional | [Asset](../external/repo/asset.schema.md#repoetag) |
+| [repo:id](#repoid) | `string` | Optional | [Asset](../external/repo/asset.schema.md#repoid) |
 | [repo:lastModifiedDate](#repolastmodifieddate) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#repolastmodifieddate) |
 | [repo:name](#reponame) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#reponame) |
 | [repo:path](#repopath) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#repopath) |
@@ -80,12 +80,12 @@ This schema aggregates all asset sub-schemas that are supported by XDM.
 | [repo:version](#repoversion) | `string` | Optional | [Asset](../external/repo/asset.schema.md#repoversion) |
 | [tiff:XResolution](#tiffxresolution) | `object` | Optional | [Image](image.schema.md#tiffxresolution) |
 | [tiff:YResolution](#tiffyresolution) | `object` | Optional | [Image](image.schema.md#tiffyresolution) |
-| [tiff:imageLength](#tiffimagelength) | `integer` | Optional | [Rectangular Media](rectangular.schema.md#tiffimagelength) |
-| [tiff:imageWidth](#tiffimagewidth) | `integer` | Optional | [Rectangular Media](rectangular.schema.md#tiffimagewidth) |
+| [tiff:imageLength](#tiffimagelength) | `integer` | Optional | [Simple Rectangular Area](rectangular.schema.md#tiffimagelength) |
+| [tiff:imageWidth](#tiffimagewidth) | `integer` | Optional | [Simple Rectangular Area](rectangular.schema.md#tiffimagewidth) |
 | [tiff:orientation](#tifforientation) | `integer` | Optional | [Image](image.schema.md#tifforientation) |
 | [tiff:resolutionUnit](#tiffresolutionunit) | `enum` | Optional | [Image](image.schema.md#tiffresolutionunit) |
 | [xdm:aliasIDs](#xdmaliasids) | `array` | Optional | [Asset](asset.schema.md#xdmaliasids) |
-| [xdm:aspectRatio](#xdmaspectratio) | `number` | Optional | [Rectangular Media](rectangular.schema.md#xdmaspectratio) |
+| [xdm:aspectRatio](#xdmaspectratio) | `number` | Optional | [Simple Rectangular Area](rectangular.schema.md#xdmaspectratio) |
 | [xdm:documentID](#xdmdocumentid) | `string` | Optional | [Asset](asset.schema.md#xdmdocumentid) |
 | [xdm:extent](#xdmextent) | `integer` | Optional | [Video](video.schema.md#xdmextent) |
 | [xdm:milestone](#xdmmilestone) | `object` | Optional | [Asset](asset.schema.md#xdmmilestone) |
@@ -100,7 +100,6 @@ This schema aggregates all asset sub-schemas that are supported by XDM.
 | [xmp:layers](#xmplayers) | complex | Optional | [Asset](asset.schema.md#xmplayers) |
 | [xmp:machineKeywords](#xmpmachinekeywords) | `object[]` | Optional | [Asset](asset.schema.md#xmpmachinekeywords) |
 | [xmp:modifyDate](#xmpmodifydate) | `string` | Optional | [Asset](asset.schema.md#xmpmodifydate) |
-| [xmp:numberOfPixels](#xmpnumberofpixels) | `integer` | Optional | [Image](image.schema.md#xmpnumberofpixels) |
 | [xmp:rating](#xmprating) | `enum` | Optional | [Asset](asset.schema.md#xmprating) |
 | [xmpDM:videoFrameRate](#xmpdmvideoframerate) | `string` | Optional | [Video](video.schema.md#xmpdmvideoframerate) |
 | [xmpMM:history](#xmpmmhistory) | reference | Optional | [Asset](asset.schema.md#xmpmmhistory) |
@@ -718,31 +717,6 @@ Name of Copyright Owner.
 
 
 
-## repo:assetID
-
-A unique identifier given to every addressable asset in a given repository.
-
-`repo:assetID`
-* is optional
-* type: `string`
-* defined in [Asset](../external/repo/asset.schema.md#repo:assetID)
-
-### repo:assetID Type
-
-
-`string`
-
-
-
-
-
-### repo:assetID Example
-
-```json
-"urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e"
-```
-
-
 ## repo:createDate
 
 The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
@@ -786,6 +760,31 @@ An  ETag is an HTTP response header returned by an HTTP/1.1 compliant web server
 
 
 
+
+
+## repo:id
+
+A unique identifier given to every addressable asset in a given repository.
+
+`repo:id`
+* is optional
+* type: `string`
+* defined in [Asset](../external/repo/asset.schema.md#repo:id)
+
+### repo:id Type
+
+
+`string`
+
+
+
+
+
+### repo:id Example
+
+```json
+"urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e"
+```
 
 
 ## repo:lastModifiedDate
@@ -944,7 +943,7 @@ Height in pixels. To maintain continuity with the XMP and TIFF standards, the he
 `tiff:imageLength`
 * is optional
 * type: `integer`
-* defined in [Rectangular Media](rectangular.schema.md#tiff:imageLength)
+* defined in [Simple Rectangular Area](rectangular.schema.md#tiff:imageLength)
 
 ### tiff:imageLength Type
 
@@ -965,7 +964,7 @@ Width in pixels
 `tiff:imageWidth`
 * is optional
 * type: `integer`
-* defined in [Rectangular Media](rectangular.schema.md#tiff:imageWidth)
+* defined in [Simple Rectangular Area](rectangular.schema.md#tiff:imageWidth)
 
 ### tiff:imageWidth Type
 
@@ -1103,7 +1102,7 @@ Describes the proportional relationship between the width and the height. To det
 `xdm:aspectRatio`
 * is optional
 * type: `number`
-* defined in [Rectangular Media](rectangular.schema.md#xdm:aspectRatio)
+* defined in [Simple Rectangular Area](rectangular.schema.md#xdm:aspectRatio)
 
 ### xdm:aspectRatio Type
 
@@ -1656,26 +1655,6 @@ The date and time when asset was last modified. The Date Time property should co
 
 `string`
 * format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
-
-
-
-
-
-
-## xmp:numberOfPixels
-
-Total number of pixels
-
-`xmp:numberOfPixels`
-* is optional
-* type: `integer`
-* defined in [Image](image.schema.md#xmp:numberOfPixels)
-
-### xmp:numberOfPixels Type
-
-
-`integer`
-* minimum value: `0`
 
 
 

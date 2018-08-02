@@ -15,10 +15,11 @@ Additionally, this schema can include a property that describes the data source 
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | No | Stabilizing | No | Forbidden | Permitted | [context/enduserids.schema.json](context/enduserids.schema.json) |
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/enduserids.schema.json](context/enduserids.schema.json) |
 ## Schema Hierarchy
 
 * End User IDs `https://ns.adobe.com/xdm/context/enduserids`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Identity](identity.schema.md) `https://ns.adobe.com/xdm/context/identity`
 
 
@@ -50,13 +51,34 @@ Additionally, this schema can include a property that describes the data source 
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
+| [https://ns.adobe.com/experience/aacustomid](#https//ns.adobe.com/experience/aacustomid) | Identity | Optional | End User IDs (this schema) |
 | [https://ns.adobe.com/experience/aaid](#https//ns.adobe.com/experience/aaid) | Identity | Optional | End User IDs (this schema) |
 | [https://ns.adobe.com/experience/acid](#https//ns.adobe.com/experience/acid) | Identity | Optional | End User IDs (this schema) |
 | [https://ns.adobe.com/experience/adcloud](#https//ns.adobe.com/experience/adcloud) | Identity | Optional | End User IDs (this schema) |
+| [https://ns.adobe.com/experience/emailid](#https//ns.adobe.com/experience/emailid) | Identity | Optional | End User IDs (this schema) |
 | [https://ns.adobe.com/experience/mcid](#https//ns.adobe.com/experience/mcid) | Identity | Optional | End User IDs (this schema) |
+| [https://ns.adobe.com/experience/phonenumberid](#https//ns.adobe.com/experience/phonenumberid) | Identity | Optional | End User IDs (this schema) |
 | [https://ns.adobe.com/experience/tntid](#https//ns.adobe.com/experience/tntid) | Identity | Optional | End User IDs (this schema) |
-| `.+//.+` | reference | Pattern | End User IDs (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
+
+## https://ns.adobe.com/experience/aacustomid
+### Adobe Analytics Cloud Custom End User IDs
+
+An Adobe Analytics custom identifier passed in on a hit.
+
+`https://ns.adobe.com/experience/aacustomid`
+* is optional
+* type: Identity
+* defined in this schema
+
+### https://ns.adobe.com/experience/aacustomid Type
+
+
+* [Identity](identity.schema.md) – `https://ns.adobe.com/xdm/context/identity`
+
+
+
+
 
 ## https://ns.adobe.com/experience/aaid
 ### Adobe Analytics Cloud End User IDs
@@ -115,6 +137,25 @@ Adobe Adcloud extension to End User IDs.
 
 
 
+## https://ns.adobe.com/experience/emailid
+### Email Address IDs
+
+Email addresses used as IDs.
+
+`https://ns.adobe.com/experience/emailid`
+* is optional
+* type: Identity
+* defined in this schema
+
+### https://ns.adobe.com/experience/emailid Type
+
+
+* [Identity](identity.schema.md) – `https://ns.adobe.com/xdm/context/identity`
+
+
+
+
+
 ## https://ns.adobe.com/experience/mcid
 ### Adobe Marketing Cloud ID
 
@@ -126,6 +167,25 @@ A unique identifier from Adobe Marketing Cloud.
 * defined in this schema
 
 ### https://ns.adobe.com/experience/mcid Type
+
+
+* [Identity](identity.schema.md) – `https://ns.adobe.com/xdm/context/identity`
+
+
+
+
+
+## https://ns.adobe.com/experience/phonenumberid
+### Phone Number IDs
+
+Phone numbers used as IDs.
+
+`https://ns.adobe.com/experience/phonenumberid`
+* is optional
+* type: Identity
+* defined in this schema
+
+### https://ns.adobe.com/experience/phonenumberid Type
 
 
 * [Identity](identity.schema.md) – `https://ns.adobe.com/xdm/context/identity`
@@ -148,26 +208,6 @@ Adobe Target extension to End User IDs.
 
 
 * [Identity](identity.schema.md) – `https://ns.adobe.com/xdm/context/identity`
-
-
-
-
-
-## Pattern: `.+://.+`
-Applies to all properties that match the regular expression `.+://.+`
-
-
-The identifier, including data source (`@id` must be identical to the property value), foreign ID, and confidence.
-
-`.+://.+`
-* is a property pattern
-* type: reference
-* defined in this schema
-
-### Pattern .+://.+ Type
-
-
-* []() – `https://ns.adobe.com/xdm/context/identity`
 
 
 

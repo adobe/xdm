@@ -1,0 +1,3 @@
+This is the schema for the external event received, triggering the state transition in the journey version for the user
+The transition is reported by the reportingevent and the information of the external event triggering journey state change is embedded within the reportingevent
+For example, an external event can be a user entering the lobby of a hotel captured by a lobby beacon. Such event is received to trigger the state change.

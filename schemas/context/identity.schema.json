@@ -37,9 +37,9 @@
             "The state this identity is authenticated as for this observed ExperienceEvent.",
           "type": "string",
           "default": "unknown",
-          "enum": ["unknown", "authenticated", "loggedOut"],
+          "enum": ["ambiguous", "authenticated", "loggedOut"],
           "meta:enum": {
-            "unknown": "Unknown",
+            "ambiguous": "Ambiguous",
             "authenticated": "User identified by a login or simular action that was valid at the time of the event observation.",
             "loggedOut": "User was identified by a login action at some point of time previously, but is not currently logged in."
           }

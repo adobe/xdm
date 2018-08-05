@@ -1,0 +1,73 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id":
+    "https://ns.adobe.com/experience/campaign/orchestration/orchestrationcommon",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "User journey experience event",
+  "type": "object",
+  "meta:extensible": false,
+  "description": "",
+  "definitions": {
+    "journeyID": {
+      "title": "A Journey identifier",
+      "type": "string",
+      "format": "uri",
+      "description":"An identifier of the journey created by the marketer."
+    },
+    "journeyVersionID": {
+      "title": "A Journey Version identifier",
+      "type": "string",
+      "format": "uri",
+      "description":"An identifier denoting the version of journey on which the user is active."
+    },
+    "actionID": {
+      "title": "Action identifier",
+      "type": "string",
+      "format": "uri",
+      "description": "An identifier denoting the associated action during the step transition."
+    },
+    "journeyContext": {
+      "title":"A Journey Context",
+      "type": "object",
+      "description": "set of attributes which defines the context associated with any marketing activity.",
+      "properties": {
+        "journeyID": {
+          "title": "A Journey identifier",
+          "$ref": "#/definitions/journeyID",
+          "title": "An identifier which represent journey in the journey context"
+        },
+        "journeyVersionID":{
+          "title": "A Journey Version identifier",
+          "$ref": "#/definitions/journeyVersionID",
+          "title": "An identifier which represent a specific journey version in the journey context."
+        },
+        "actionID":{
+          "title": "Action identifier",
+          "$ref": "#/definitions/actionID",
+          "title": "An identifier which represent an action in the journey context."
+        }
+      },
+      "required": ["journeyID", "journeyVersionID", "actionID"]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/journeyID",
+    },
+    {
+      "$ref": "#/definitions/journeyVersionID",
+    },
+    {
+      "$ref": "#/definitions/actionID",
+    },
+    {
+      "$ref": "#/definitions/journeyContext",
+    }
+  ],
+  "meta:status": "stabilizing"
+}

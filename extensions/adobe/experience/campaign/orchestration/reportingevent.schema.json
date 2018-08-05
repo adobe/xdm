@@ -73,8 +73,7 @@
           "properties": {
             "xdm:actionID": {
               "title": "Action identifier",
-              "type": "string",
-              "format": "uri",
+              "$ref": "https://ns.adobe.com/experience/campaign/orchestration/orchestrationcommon#/definitions/actionID",
               "description": "Unique identifier denoting the associated action."
             },
             "xdm:type": {
@@ -114,8 +113,7 @@
           "properties": {
             "@id": {
               "title": "Journey unique identifier",
-              "type": "string",
-              "format": "uri",
+              "$ref": "https://ns.adobe.com/experience/campaign/orchestration/orchestrationcommon#/definitions/journeyID",
               "description":
                 "The unique identifier of the journey created by the marketer."
             }
@@ -130,8 +128,7 @@
           "properties": {
             "@id": {
               "title": "Journey version identifier",
-              "type": "string",
-              "format": "uri",
+              "$ref": "https://ns.adobe.com/experience/campaign/orchestration/orchestrationcommon#/definitions/journeyVersionID",
               "description":
                 "The unique identifier denoting the version of journey on which the user is active"
             }

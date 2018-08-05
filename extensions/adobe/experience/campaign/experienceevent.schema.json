@@ -191,6 +191,16 @@
               "type": "integer",
               "description":
                 "The delivery template's ID used to initialize this delivery.\n\nThe type the template used in Adobe Campaign can be identified using the `messageClass`.\n\n* `messageClass` = `oneTime`: the template is standard delivery template.\n* `messageClass` = `continuous`: the template is a recurring delivery.\n* `messageClass` = `transactional`: the template is a transactionnal message template.\n"
+            },
+            "xdm:label": {
+              "title": "Delivery Label",
+              "type": "string",
+              "description" : "Human friendly name of the campaign activity which is originating this message."
+            },
+            "xdm:name": {
+              "title": "Delivery Internal name",
+              "type": "string",
+              "description" : "Friendly identifier of the campaign activity which is originating this message."
             }
           }
         },
@@ -202,6 +212,11 @@
               "title": "Campaign ID",
               "type": "integer",
               "description": "Identifier of the marketing campaign to which activity originating this message belongs to."
+            },
+            "xdm:name": {
+              "title": "Campaign Internal name",
+              "type": "string",
+              "description" : "Friendly identifier of the marketing campaign which is originating this message."
             }
           }
         },

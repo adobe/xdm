@@ -69,5 +69,6 @@
   },
   "https://ns.adobe.com/experience/campaign/orchestration": {
     "xdm:businessReason": "onJourneyEnter"
-  }
+  },
+  "https://ns.adobe.com/experience/campaign/containerID": "customer-stage"
 }

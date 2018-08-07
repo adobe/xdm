@@ -276,6 +276,11 @@
               "$ref": "https://ns.adobe.com/experience/campaign/orchestration/experienceevent#/definitions/journeyContext",
               "description": "Set of attributes that are associated with every business reason."
           }
+        },
+        "https://ns.adobe.com/experience/campaign/containerID": {
+          "title": "Container identifier",
+          "type": "string",
+          "description": "The identifier denoting the container with which campaign experience event is associated."
         }
       }
     },

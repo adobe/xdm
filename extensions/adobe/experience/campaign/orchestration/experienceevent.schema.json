@@ -8,14 +8,14 @@
   "$id":
     "https://ns.adobe.com/experience/campaign/orchestration/experienceevent",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "User journey experience event",
+  "title": "Journey experience event",
   "type": "object",
   "description": "Orchestration extension to ExperienceEvent",
   "definitions": {
     "journey": {
-      "title": "Journey for users",
+      "title": "Journey of an entity",
       "type": "object",
-      "description": "Journey created by marketer for its users",
+      "description": "Journey created for an entity by marketer.",
       "properties": {
         "@id": {
           "title": "Journey unique identifier",
@@ -35,7 +35,7 @@
           "title": "Journey version identifier",
           "type": "string",
           "format": "uri",
-          "description": "The unique identifier denoting the version of journey on which the user is active"
+          "description": "The unique identifier denoting the version of journey on which the entity is active."
         }
       },
       "required": ["@id"]
@@ -43,7 +43,7 @@
     "action": {
       "title": "Action on step transition",
       "type": "object",
-      "description": "Action taken during a step transition happening for an user in state machine",
+      "description": "Action taken during a step transition that happened for an entity in state machine",
       "properties": {
         "xdm:actionID": {
           "title": "Action identifier",
@@ -77,15 +77,15 @@
     "journeyContext": {
       "title": "A Journey Context",
       "type": "object",
-      "description": "A journey context with which a user is associated.",
+      "description": "A journey context with which an entity is associated.",
       "properties": {
         "journey": {
-          "title": "Journey for a user",
+          "title": "Journey for an entity",
           "$ref": "#/definitions/journey",
-          "description": "Journey created by marketer for its users."
+          "description": "Journey created by marketer for its entities."
         },
         "journeyVersion": {
-          "title": "Journey Version for a user",
+          "title": "Journey Version for an entity",
           "$ref": "#/definitions/journeyVersion",
           "description": "Schema for describing the version of a journey, where version holds the state machine."
         },
@@ -93,7 +93,7 @@
           "title": "Action associated with a journey",
           "$ref": "#/definitions/journeyVersion",          
           "description":
-            "Action that is executed for an user when reached a step in in the journey state machine.",
+            "Action that is executed for an entity when reached a step in in the journey state machine.",
           "required":["xdm:actionID"]
         }
       },

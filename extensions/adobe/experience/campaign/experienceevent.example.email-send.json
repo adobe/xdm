@@ -60,12 +60,12 @@
     "xdm:testEnabled": true,
     "xdm:messageClass": "continuous",
     "xdm:templateID": 1000,
-    "xdm:name": "DM200",
-    "xdm:label": "Birthday Wishes"
+    "xdm:deliveryName": "DM200",
+    "xdm:deliveryLabel": "Birthday Wishes"
   },
   "https://ns.adobe.com/experience/campaign/marketingCampaign": {
     "xdm:id": 100,
-    "xdm:name": "CAMP2010"
+    "xdm:campaignName": "CAMP2010"
   },
   "https://ns.adobe.com/experience/campaign/orchestration": {
     "xdm:businessReason": "onJourneyEnter"

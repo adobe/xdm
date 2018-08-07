@@ -17,12 +17,38 @@
           "$ref": "https://ns.adobe.com/xdm/experience/target/activity/activityevent/context"
         },
         "xdm:strategy": {
-          "$ref": "https://ns.adobe.com/xdm/experience/target/activity/activityevent/strategy"
+          "title": "Activity Event Strategy",
+          "description": "Custom behavior strategy for both content viewing and counting when visiting a success metric.",
+          "type": "string",
+          "enum": [
+            "none",
+            "reconvert",
+            "alwaysConvert",
+            "restartSameExperience",
+            "restartRandomExperience",
+            "restartNewExperience",
+            "excludeSameExperience",
+            "ban",
+            "excludeDefaultContent",
+            "experienceFrequencyCapping"
+          ],
+          "meta:enum": {
+            "none": "Continue to display content from the same experience. Never count the visitor more than once.",
+            "reconvert": "Continue to display content from the same experience. Count the visitor again if they visit any other mbox before visiting this success metric again.",
+            "alwaysConvert": "Continue to display content from the same experience. Count the visitor again every time they visit this success metric",
+            "restartSameExperience": "Continue to display content from the same experience. Count the visitor again if they re-fulfill the campaign entry conditions.",
+            "restartRandomExperience": "Run experience selection again to determine the content to display. Count the visitor again if they re-fulfill the campaign entry conditions.",
+            "restartNewExperience": "Run experience selection again to determine the content to display, but exclude any experiences the visitor has already seen. Count the visitor again if they re-fulfill the campaign entry conditions.",
+            "excludeSameExperience": "Continue to display content from the same experience. Never count the visitor more than once.",
+            "ban": "Ban user from campaign.",
+            "excludeDefaultContent": "Display default content. Never count the visitor again.",
+            "experienceFrequencyCapping": "Cap experience by frequency"
+          }
         },
         "xdm:score": {
           "title": "Engagement Metric Score",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Engagement Metric Score."
+          "description": "The Capture Score engagement metric calculates an aggregated score based on the value assigned to pages visited on the site, from the point the visitor first sees the campaign's first display mbox."
         },
         "xdm:eventScope": {
           "$ref": "https://ns.adobe.com/xdm/experience/target/activity/activityevent/eventscope"

@@ -7,11 +7,12 @@
   ],
   "$id": "https://ns.adobe.com/xdm/experience/target/activity/activityevent/eventscope",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Event Type",
+  "title": "Event Scope",
   "type": "object",
-  "description": "Event Type.",
+  "description": "Specifies either it's a new visitor, visit or impression for current metric/step",
   "definitions": {
     "eventscope": {
+      "type": "string",
       "enum": [
         "visitor",
         "visit",
@@ -24,5 +25,10 @@
       }
     }
   },
+  "allOf": [
+    {
+      "$ref": "#/definitions/eventscope"
+    }
+  ],
   "meta:status": "experimental"
 }

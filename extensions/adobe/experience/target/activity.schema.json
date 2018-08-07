@@ -7,49 +7,24 @@
   ],
   "$id": "https://ns.adobe.com/xdm/experience/target/activity",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Target Activity",
+  "title": "Adobe Target Activity",
   "type": "object",
-  "description": "Represents Adobe Target Activity Events.",
+  "description": "An Adobe Target Activity compares two or more experiences against the success metrics that are specified for choosing the experience that is most likely to provide the optimal results",
   "definitions": {
     "activity": {
       "properties": {
         "xdm:activityID": {
           "title": "Activity Identifier",
           "type": "string",
-          "description": "Activity Identifier."
+          "description": "Unique identity of an Adobe Target Activity. This identifier can be used in activity APIs offered by Adobe Target."
         },
         "xdm:version": {
           "title": "Activity Version",
           "type": "string",
-          "description": "Activity Version."
+          "description": "Version of the activity that processed this given experience event."
         },
         "https://ns.adobe.com/xdm/experience/target/activity/preview": {
-          "title": "Activity Preview Parameters",
-          "type": "object",
-          "description": "Activity Preview Parameters.",
-          "properties": {
-            "xdm:forcedExperienceID": {
-              "title": "Experience Identifier",
-              "type": "string",
-              "description": "Forced experience identifier."
-            },
-            "xdm:audienceIDsToEvaluateAsTrue": {
-              "title": "Audience identifiers to evaluate as true",
-              "type": "array",
-              "items": {
-                "type": "string"
-              },
-              "description": "Evaluated as matching audience identifiers."
-            },
-            "xdm:audienceIDsToEvaluateAsFalse": {
-              "title": "Audience identifiers to evaluate as false",
-              "type": "array",
-              "items": {
-                "type": "string"
-              },
-              "description": "Evaluated as non-matching audience identifiers."
-            }
-          }
+          "$ref": "https://ns.adobe.com/xdm/experience/target/activity/preview"
         },
         "xdm:activityEvents": {
           "type": "array",

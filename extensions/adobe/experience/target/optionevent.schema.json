@@ -9,23 +9,23 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Activity Option Event",
   "type": "object",
-  "description": "Represents Activity Option Event.",
+  "description": "Represents the option and its that was displayed during the activity processing.",
   "definitions": {
     "optionevent": {
       "properties": {
         "https://ns.adobe.com/xdm/experience/target/activity/activityevent/optionevent/activityLocation": {
           "title": "Activity Location",
-          "description": "Activity Display Location.",
+          "description": "A location is a page on your website. It could also refer to a place in a mobile app, an email, or any other place where you run an optimization.",
           "properties": {
             "xdm:locationID": {
               "title": "Location Identifier",
               "type": "string",
-              "description": "Activity Display Location Identifier."
+              "description": "The local location identifier"
             },
             "xdm:selector": {
               "title": "Selector",
               "type": "string",
-              "description": "Activity Display Location Selector"
+              "description": "A CSS selector in a html page."
             }
           },
           "required": [
@@ -34,22 +34,22 @@
         },
         "https://ns.adobe.com/xdm/experience/target/activity/activityevent/optionevent/targetOption": {
           "title": "Activity Option",
-          "description": "Activity Display Option.",
+          "description": "An option is the displayed content on your web pages during activities.",
           "properties": {
             "xdm:optionID": {
               "title": "Option Identifier",
               "type": "string",
-              "description": "Activity option identifier."
+              "description": "Unique activity option identifier."
             },
             "xdm:offerID": {
               "title": "Offer Identifier",
               "type": "string",
-              "description": "Represents identifier of offer used in option."
+              "description": "An offer is the content displayed on your web pages during campaigns or activities."
             },
             "xdm:version": {
               "title": "Offer Version",
               "type": "string",
-              "description": "Represents version of offer used."
+              "description": "Version of the offer that was displayed."
             }
           },
           "required": [

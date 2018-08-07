@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "type": "object",
   "title": "Event Context",
-  "description": "Activity Event Context.",
+  "description": "Details about the context the event was processed in, activity that processed the request, the experience the user qualified for, etc..",
   "definitions": {
     "activityeventcontext": {
       "properties": {
@@ -39,7 +39,7 @@
         "xdm:stepID": {
           "title": "Step identifier",
           "type": "string",
-          "description": "Denotes the visited activity step."
+          "description": "Denotes the identifier of the visited activity step."
         }
       },
       "required": [

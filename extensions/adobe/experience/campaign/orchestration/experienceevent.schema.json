@@ -51,7 +51,7 @@
           "format": "uri",
           "description": "Unique identifier denoting the associated action."
         },
-        "xdm:type": {
+        "xdm:actionType": {
           "title": "Action Type",
           "type": "string",
           "description": "The type of action to be performed.",

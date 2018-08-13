@@ -50,9 +50,9 @@ _Content is created for human audiences_, which gives the content the ultimate v
 | [_embedded](#_embedded) | `object` | Optional | [HAL Resource](../external/hal/hal.schema.md#_embedded) |
 | [_links](#_links) | `object` | Optional | [HAL Resource](../external/hal/hal.schema.md#_links) |
 | [dc:format](#dcformat) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#dcformat) |
-| [repo:assetID](#repoassetid) | `string` | Optional | [Asset](../external/repo/asset.schema.md#repoassetid) |
 | [repo:createDate](#repocreatedate) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#repocreatedate) |
 | [repo:etag](#repoetag) | `string` | Optional | [Asset](../external/repo/asset.schema.md#repoetag) |
+| [repo:id](#repoid) | `string` | Optional | [Asset](../external/repo/asset.schema.md#repoid) |
 | [repo:lastModifiedDate](#repolastmodifieddate) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#repolastmodifieddate) |
 | [repo:name](#reponame) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#reponame) |
 | [repo:path](#repopath) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#repopath) |
@@ -163,31 +163,6 @@ All instances must conform to this regular expression
 ```
 
 
-## repo:assetID
-
-A unique identifier given to every addressable asset in a given repository.
-
-`repo:assetID`
-* is optional
-* type: `string`
-* defined in [Asset](../external/repo/asset.schema.md#repo:assetID)
-
-### repo:assetID Type
-
-
-`string`
-
-
-
-
-
-### repo:assetID Example
-
-```json
-"urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e"
-```
-
-
 ## repo:createDate
 
 The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
@@ -231,6 +206,31 @@ An  ETag is an HTTP response header returned by an HTTP/1.1 compliant web server
 
 
 
+
+
+## repo:id
+
+A unique identifier given to every addressable asset in a given repository.
+
+`repo:id`
+* is optional
+* type: `string`
+* defined in [Asset](../external/repo/asset.schema.md#repo:id)
+
+### repo:id Type
+
+
+`string`
+
+
+
+
+
+### repo:id Example
+
+```json
+"urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e"
+```
 
 
 ## repo:lastModifiedDate

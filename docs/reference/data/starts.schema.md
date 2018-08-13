@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/data/starts
 ```
 
-The metric starts describes a digital video which started playing.
+Indicates the first frame of the timed media was viewed - i.e. the viewer did not abandon during pre-roll ad, buffering, etc.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|

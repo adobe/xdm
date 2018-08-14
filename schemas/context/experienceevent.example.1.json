@@ -124,18 +124,26 @@
         }
       },
       "xdm:version": "1.0",
-      "xdm:endUserIds": {
-        "https://ns.adobe.com/experience/mcid": {
-          "xdm:id": "https://data.adobe.io/entities/identity/92312748749128",
-          "additionalIDs": [
-            "https://data.adobe.io/entities/identity/62312748749321",
-            "https://data.adobe.io/entities/identity/49312748749132"
-          ],
+      "xdm:identities": [
+        {
+          "xdm:id": "92312748749128",
+          "xdm:namespace": {
+            "xdm:code": "ECID"
+          }
+        },
+        {
+          "xdm:id": "62312748749321",
+          "xdm:namespace": {
+            "xdm:code": "ECID"
+          }
+        },
+        {
+          "xdm:id": "49312748749132",
           "xdm:namespace": {
             "xdm:code": "ECID"
           }
         }
-      }
+      ]
     }
   ],
   "xdm:segmentMemberships": [

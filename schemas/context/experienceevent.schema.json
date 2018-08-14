@@ -143,8 +143,15 @@
             },
             {
               "properties": {
-                "xdm:profileStitchID": {
-                  "$ref": "https://ns.adobe.com/xdm/context/profileStitchIdentity"
+                "xdm:identities": {
+                  "title": "All User Identities",
+                  "type": "array",
+                  "items": {
+                    "$ref": "https://ns.adobe.com/xdm/context/identity"
+                  },
+                  "minItems": 1,
+                  "description":
+                  "Array of Identities. Condensed, normalized encapsulation of all end user identifiers."
                 }
               }
             }

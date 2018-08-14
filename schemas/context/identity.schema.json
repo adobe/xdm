@@ -20,14 +20,6 @@
           "type": "string",
           "description": "Identity of the consumer in the related namespace."
         },
-        "xdm:additionalIDs": {
-          "title": "Additional Identifiers",
-          "type":"array",
-          "items": {
-            "type": "string"
-          },
-          "description": "If endUser has more than one identity in the namespace, additional identity ids are listed here."
-        },
         "xdm:namespace": {
           "title": "Namespace",
           "$ref": "https://ns.adobe.com/xdm/context/namespace",

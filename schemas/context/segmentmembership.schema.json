@@ -53,6 +53,25 @@
             {
               "type": "object",
               "properties": {
+                "xdm:payloadPropensityValue": {
+                  "title": "Value",
+                  "type": "number",
+                  "description": "The propensity",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "xdm:payloadType": {
+                  "title": "Payload Type",
+                  "type": "string",
+                  "const": "propensity",
+                  "description": "The type of payload."
+                }
+              },
+              "required": ["xdm:payloadPropensityValue", "xdm:payloadType"]
+            },
+            {
+              "type": "object",
+              "properties": {
                 "xdm:payloadBooleanValue": {
                   "title": "Value",
                   "type": "boolean",

@@ -57,7 +57,7 @@
                   "title": "Value",
                   "type": "number",
                   "description": "The propensity",
-                  "minimum": 0,
+                  "exclusiveMinimum": 0,
                   "maximum": 1
                 },
                 "xdm:payloadType": {

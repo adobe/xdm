@@ -32,7 +32,7 @@ The `unpublished event` represents the activity of making an object, which was p
   },
   "activitystreams:object": {
     "@type": "https://ns.adobe.com/xdm/assets/asset",
-    "repo:assetID": "urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
+    "repo:id": "urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
     "xdm:name": "example.jpg",
     "repo:etag": "6fc55d0389d856ae7deccebba54f110e",
     "xdm:path": "/MyFolder/example.jpg",

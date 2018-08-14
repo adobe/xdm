@@ -46,6 +46,14 @@
             "realized": "Entity is entering the segment",
             "exited": "Entity is exiting the segment"
           }
+        },
+        "xdm:propensity" : {
+          "title" : "Propensity",
+          "type" : "number",
+          "description": "How strongly associated the membership is. When missing, assumed to be 1 (strongest level of association).",
+          "exclusiveMinimum": 0,
+          "maximum" : 1,
+          "default": 1
         }
       }
     }

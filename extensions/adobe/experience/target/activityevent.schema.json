@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/experience/target/activity/activityevent",
+  "$id": "https://ns.adobe.com/experience/target/activity/activityevent",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Adobe Target Activity Event",
   "type": "object",
@@ -13,8 +13,8 @@
   "definitions": {
     "activityevent": {
       "properties": {
-        "https://ns.adobe.com/xdm/experience/target/activity/activityevent/context": {
-          "$ref": "https://ns.adobe.com/xdm/experience/target/activity/activityevent/context"
+        "https://ns.adobe.com/experience/target/activity/activityevent/context": {
+          "$ref": "https://ns.adobe.com/experience/target/activity/activityevent/context"
         },
         "xdm:strategy": {
           "title": "Activity Event Strategy",
@@ -51,18 +51,18 @@
           "description": "The Capture Score engagement metric calculates an aggregated score based on the value assigned to pages visited on the site, from the point the visitor first sees the campaign's first display mbox."
         },
         "xdm:eventScope": {
-          "$ref": "https://ns.adobe.com/xdm/experience/target/activity/activityevent/eventscope"
+          "$ref": "https://ns.adobe.com/experience/target/activity/activityevent/eventscope"
         },
         "xdm:segmentEvents": {
           "type": "array",
           "items": {
-            "$ref": "https://ns.adobe.com/xdm/experience/target/activity/activityevent/segmentevent"
+            "$ref": "https://ns.adobe.com/experience/target/activity/activityevent/segmentevent"
           }
         },
         "xdm:optionEvents": {
           "type": "array",
           "items": {
-            "$ref": "https://ns.adobe.com/xdm/experience/target/activity/activityevent/optionevent"
+            "$ref": "https://ns.adobe.com/experience/target/activity/activityevent/optionevent"
           }
         }
       },

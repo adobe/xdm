@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/experience/target/activity/activityevent/optionevent",
+  "$id": "https://ns.adobe.com/experience/target/activity/activityevent/optionevent",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Activity Option Event",
   "type": "object",
@@ -13,7 +13,7 @@
   "definitions": {
     "optionevent": {
       "properties": {
-        "https://ns.adobe.com/xdm/experience/target/activity/activityevent/optionevent/activityLocation": {
+        "https://ns.adobe.com/experience/target/activity/activityevent/optionevent/activityLocation": {
           "title": "Activity Location",
           "description": "A location is a page on your website. It could also refer to a place in a mobile app, an email, or any other place where you run an optimization.",
           "properties": {
@@ -32,7 +32,7 @@
             "xdm:locationID"
           ]
         },
-        "https://ns.adobe.com/xdm/experience/target/activity/activityevent/optionevent/targetOption": {
+        "https://ns.adobe.com/experience/target/activity/activityevent/optionevent/targetOption": {
           "title": "Activity Option",
           "description": "An option is the displayed content on your web pages during activities.",
           "properties": {
@@ -57,12 +57,12 @@
           ]
         },
         "xdm:eventScope": {
-          "$ref": "https://ns.adobe.com/xdm/experience/target/activity/activityevent/eventscope"
+          "$ref": "https://ns.adobe.com/experience/target/activity/activityevent/eventscope"
         }
       },
       "required": [
-        "https://ns.adobe.com/xdm/experience/target/activity/activityevent/optionevent/activityLocation",
-        "https://ns.adobe.com/xdm/experience/target/activity/activityevent/optionevent/targetOption",
+        "https://ns.adobe.com/experience/target/activity/activityevent/optionevent/activityLocation",
+        "https://ns.adobe.com/experience/target/activity/activityevent/optionevent/targetOption",
         "xdm:eventScope"
       ]
     }

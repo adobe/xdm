@@ -31,7 +31,7 @@
   "https://ns.adobe.com/experience/campaign/orchestrationAction": {
     "xdm:actionID":
       "https://ns.adobe.com/experience/campaign/orchestration/action/123",
-    "xdm:actionType": "parameterized_action"
+    "xdm:type": "parameterized_action"
   },
   "https://ns.adobe.com/experience/campaign/orchestrationExternalEvent": {
     "@id":

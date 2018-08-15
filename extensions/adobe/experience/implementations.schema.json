@@ -19,7 +19,7 @@
       "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
       "description": "Client details interacting with Adobe Analytics."
     },
-    "https://ns.adobe.com/experience/target/implementation": {
+    "https://ns.adobe.com/xdm/experience/target/implementation": {
       "title": "Client Implementation for Adobe Target",
       "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
       "description": "Client details interacting with Adobe Target."

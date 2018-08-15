@@ -20,29 +20,6 @@
 * [Simple Rectangular Area](./assets/rectangular.schema.md) – `https://ns.adobe.com/xdm/assets/rectangular` (Stabilizing)
 * [Video](./assets/video.schema.md) – `https://ns.adobe.com/xdm/assets/video` (Experimental)
 
-## /channels/
-
-* [ADM](./channels/adm.schema.md) – `https://ns.adobe.com/xdm/channels/adm` (Experimental)
-* [APNS](./channels/apns.schema.md) – `https://ns.adobe.com/xdm/channels/apns` (Experimental)
-* [Application](./channels/application.schema.md) – `https://ns.adobe.com/xdm/channels/application` (Experimental)
-* [Baidu](./channels/baidu.schema.md) – `https://ns.adobe.com/xdm/channels/baidu` (Experimental)
-* [Direct Mail](./channels/direct-mail.schema.md) – `https://ns.adobe.com/xdm/channels/direct-mail` (Experimental)
-* [E-Mail](./channels/agency.schema.md) – `https://ns.adobe.com/xdm/channels/agency` (Experimental)
-* [E-Mail](./channels/email.schema.md) – `https://ns.adobe.com/xdm/channels/email` (Experimental)
-* [Experience Channel](./channels/channel.schema.md) – `https://ns.adobe.com/xdm/channels/channel` (Experimental)
-* [Facebook News Feed](./channels/facebook-feed.schema.md) – `https://ns.adobe.com/xdm/channels/facebook-feed` (Experimental)
-* [Fax](./channels/fax.schema.md) – `https://ns.adobe.com/xdm/channels/fax` (Experimental)
-* [GCM](./channels/gcm.schema.md) – `https://ns.adobe.com/xdm/channels/gcm` (Experimental)
-* [LINE](./channels/line.schema.md) – `https://ns.adobe.com/xdm/channels/line` (Experimental)
-* [MPNS](./channels/mpns.schema.md) – `https://ns.adobe.com/xdm/channels/mpns` (Experimental)
-* [Phone](./channels/phone.schema.md) – `https://ns.adobe.com/xdm/channels/phone` (Experimental)
-* [SMS](./channels/sms.schema.md) – `https://ns.adobe.com/xdm/channels/sms` (Experimental)
-* [Twitter Feed](./channels/twitter-feed.schema.md) – `https://ns.adobe.com/xdm/channels/twitter-feed` (Experimental)
-* [WNS](./channels/wns.schema.md) – `https://ns.adobe.com/xdm/channels/wns` (Experimental)
-* [WeChat](./channels/wechat.schema.md) – `https://ns.adobe.com/xdm/channels/wechat` (Experimental)
-* [Web](./channels/mobile-app.schema.md) – `https://ns.adobe.com/xdm/channels/mobile-app` (Experimental)
-* [Web](./channels/web.schema.md) – `https://ns.adobe.com/xdm/channels/web` (Experimental)
-
 ## /content/
 
 * [Component Container](./content/component-container.schema.md) – `https://ns.adobe.com/xdm/content/component-container` (Experimental)
@@ -68,54 +45,28 @@
 * [Page](./common/page.schema.md) – `https://ns.adobe.com/xdm/common/page` (Experimental)
 * [Principal](./common/principal.schema.md) – `https://ns.adobe.com/xdm/common/principal` (Experimental)
 
-## /context/
+## /channels/
 
-* [Ad Asset Reference](./context/advertising-timed-asset-reference.schema.md) – `https://ns.adobe.com/xdm/context/advertising-timed-asset-reference` (Experimental)
-* [Ad Asset View Details](./context/advertising-timed-asset-view-details.schema.md) – `https://ns.adobe.com/xdm/context/advertising-timed-asset-view-details` (Experimental)
-* [Ad Break](./context/advertising-break.schema.md) – `https://ns.adobe.com/xdm/context/advertising-break` (Experimental)
-* [Advertising](./context/advertising.schema.md) – `https://ns.adobe.com/xdm/context/advertising` (Stabilizing)
-* [Application](./context/application.schema.md) – `https://ns.adobe.com/xdm/context/application` (Stabilizing)
-* [Beacon](./context/beacon-interaction-details.schema.md) – `https://ns.adobe.com/xdm/context/beacon-interaction-details` (Experimental)
-* [Browser Details](./context/browserdetails.schema.md) – `https://ns.adobe.com/xdm/context/browserdetails` (Stabilizing)
-* [Commerce](./context/commerce.schema.md) – `https://ns.adobe.com/xdm/context/commerce` (Stabilizing)
-* [Device](./context/device.schema.md) – `https://ns.adobe.com/xdm/context/device` (Stabilizing)
-* [Direct Marketing](./context/direct-marketing.schema.md) – `https://ns.adobe.com/xdm/context/direct-marketing` (Stabilizing)
-* [Email Address](./context/emailaddress.schema.md) – `https://ns.adobe.com/xdm/context/emailaddress` (Stabilizing)
-* [End User IDs](./context/enduserids.schema.md) – `https://ns.adobe.com/xdm/context/enduserids` (Stabilizing)
-* [Environment](./context/environment.schema.md) – `https://ns.adobe.com/xdm/context/environment` (Stabilizing)
-* [ExperienceEvent](./context/experienceevent.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent` (Stabilizing)
-* [Geo Interaction Details](./context/geo-interaction-details.schema.md) – `https://ns.adobe.com/xdm/context/geo-interaction-details` (Experimental)
-* [Identity](./context/identity.schema.md) – `https://ns.adobe.com/xdm/context/identity` (Stabilizing)
-* [Identity](./context/segmentidentity.schema.md) – `https://ns.adobe.com/xdm/context/segmentidentity` (Experimental)
-* [Implementation Details](./context/implementationdetails.schema.md) – `https://ns.adobe.com/xdm/context/implementationdetails` (Stabilizing)
-* [MRC Viewability](./context/adviewability.schema.md) – `https://ns.adobe.com/xdm/context/adviewability` (Stabilizing)
-* [Marketing](./context/marketing.schema.md) – `https://ns.adobe.com/xdm/context/marketing` (Stabilizing)
-* [Media Information](./context/media.schema.md) – `https://ns.adobe.com/xdm/context/media` (Experimental)
-* [Namespace](./context/namespace.schema.md) – `https://ns.adobe.com/xdm/context/namespace` (Stabilizing)
-* [OptInOut](./context/optinout.schema.md) – `https://ns.adobe.com/xdm/context/optinout` (Experimental)
-* [Person](./context/person.schema.md) – `https://ns.adobe.com/xdm/context/person` (Experimental)
-* [Person Name](./context/person-name.schema.md) – `https://ns.adobe.com/xdm/context/person-name` (Experimental)
-* [Phone Number](./context/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber` (Stabilizing)
-* [Place](./context/place.schema.md) – `https://ns.adobe.com/xdm/context/place` (Experimental)
-* [Place Context](./context/placecontext.schema.md) – `https://ns.adobe.com/xdm/context/placecontext` (Experimental)
-* [Point of Interest Details](./context/poi-detail.schema.md) – `https://ns.adobe.com/xdm/context/poi-detail` (Experimental)
-* [Point of Interest Interaction](./context/poi-interaction.schema.md) – `https://ns.adobe.com/xdm/context/poi-interaction` (Experimental)
-* [Primary Asset View Details](./context/media-timed-asset-view-details.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-asset-view-details` (Experimental)
-* [Profile](./context/profile.schema.md) – `https://ns.adobe.com/xdm/context/profile` (Experimental)
-* [Push Notification Token](./context/pushnotificationtoken.schema.md) – `https://ns.adobe.com/xdm/context/pushnotificationtoken` (Stabilizing)
-* [Search](./context/search.schema.md) – `https://ns.adobe.com/xdm/context/search` (Stabilizing)
-* [Segment Membership](./context/segmentmembership.schema.md) – `https://ns.adobe.com/xdm/context/segmentmembership` (Experimental)
-* [Subscription](./context/subscription.schema.md) – `https://ns.adobe.com/xdm/context/subscription` (Experimental)
-* [Timed Media Chapter Asset Reference](./context/media-timed-chapter-asset-reference.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-chapter-asset-reference` (Experimental)
-* [Timed Media Chapter Information](./context/media-timed-chapter.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-chapter` (Experimental)
-* [Timed Media Chapter View Details](./context/media-timed-chapter-view-details.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-chapter-view-details` (Experimental)
-* [Timed Media Information](./context/media-timed.schema.md) – `https://ns.adobe.com/xdm/context/media-timed` (Experimental)
-* [Timed Media Primary Asset Reference](./context/media-timed-asset-reference.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-asset-reference` (Experimental)
-* [Timed Media Quality of Experience](./context/media-timed-qoe.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-qoe` (Experimental)
-* [Web Information](./context/webinfo.schema.md) – `https://ns.adobe.com/xdm/context/webinfo` (Stabilizing)
-* [Web Interaction](./context/webinteraction.schema.md) – `https://ns.adobe.com/xdm/context/webinteraction` (Stabilizing)
-* [Web Page Details](./context/webpagedetails.schema.md) – `https://ns.adobe.com/xdm/context/webpagedetails` (Stabilizing)
-* [Web Referrer](./context/webreferrer.schema.md) – `https://ns.adobe.com/xdm/context/webreferrer` (Stabilizing)
+* [ADM](./channels/adm.schema.md) – `https://ns.adobe.com/xdm/channels/adm` (Experimental)
+* [APNS](./channels/apns.schema.md) – `https://ns.adobe.com/xdm/channels/apns` (Experimental)
+* [Application](./channels/application.schema.md) – `https://ns.adobe.com/xdm/channels/application` (Experimental)
+* [Baidu](./channels/baidu.schema.md) – `https://ns.adobe.com/xdm/channels/baidu` (Experimental)
+* [Direct Mail](./channels/direct-mail.schema.md) – `https://ns.adobe.com/xdm/channels/direct-mail` (Experimental)
+* [E-Mail](./channels/agency.schema.md) – `https://ns.adobe.com/xdm/channels/agency` (Experimental)
+* [E-Mail](./channels/email.schema.md) – `https://ns.adobe.com/xdm/channels/email` (Experimental)
+* [Experience Channel](./channels/channel.schema.md) – `https://ns.adobe.com/xdm/channels/channel` (Experimental)
+* [Facebook News Feed](./channels/facebook-feed.schema.md) – `https://ns.adobe.com/xdm/channels/facebook-feed` (Experimental)
+* [Fax](./channels/fax.schema.md) – `https://ns.adobe.com/xdm/channels/fax` (Experimental)
+* [GCM](./channels/gcm.schema.md) – `https://ns.adobe.com/xdm/channels/gcm` (Experimental)
+* [LINE](./channels/line.schema.md) – `https://ns.adobe.com/xdm/channels/line` (Experimental)
+* [MPNS](./channels/mpns.schema.md) – `https://ns.adobe.com/xdm/channels/mpns` (Experimental)
+* [Phone](./channels/phone.schema.md) – `https://ns.adobe.com/xdm/channels/phone` (Experimental)
+* [SMS](./channels/sms.schema.md) – `https://ns.adobe.com/xdm/channels/sms` (Experimental)
+* [Twitter Feed](./channels/twitter-feed.schema.md) – `https://ns.adobe.com/xdm/channels/twitter-feed` (Experimental)
+* [WNS](./channels/wns.schema.md) – `https://ns.adobe.com/xdm/channels/wns` (Experimental)
+* [WeChat](./channels/wechat.schema.md) – `https://ns.adobe.com/xdm/channels/wechat` (Experimental)
+* [Web](./channels/mobile-app.schema.md) – `https://ns.adobe.com/xdm/channels/mobile-app` (Experimental)
+* [Web](./channels/web.schema.md) – `https://ns.adobe.com/xdm/channels/web` (Experimental)
 
 ## /data/
 
@@ -192,11 +143,68 @@
 * [viewable-midpoints](./data/viewablemidpoints.schema.md) – `https://ns.adobe.com/xdm/data/viewablemidpoints` (Stabilizing)
 * [viewable-third-quartiles](./data/viewablethirdquartiles.schema.md) – `https://ns.adobe.com/xdm/data/viewablethirdquartiles` (Stabilizing)
 
+## /context/
+
+* [Ad Asset Reference](./context/advertising-timed-asset-reference.schema.md) – `https://ns.adobe.com/xdm/context/advertising-timed-asset-reference` (Experimental)
+* [Ad Asset View Details](./context/advertising-timed-asset-view-details.schema.md) – `https://ns.adobe.com/xdm/context/advertising-timed-asset-view-details` (Experimental)
+* [Ad Break](./context/advertising-break.schema.md) – `https://ns.adobe.com/xdm/context/advertising-break` (Experimental)
+* [Advertising](./context/advertising.schema.md) – `https://ns.adobe.com/xdm/context/advertising` (Stabilizing)
+* [Application](./context/application.schema.md) – `https://ns.adobe.com/xdm/context/application` (Stabilizing)
+* [Beacon](./context/beacon-interaction-details.schema.md) – `https://ns.adobe.com/xdm/context/beacon-interaction-details` (Experimental)
+* [Browser Details](./context/browserdetails.schema.md) – `https://ns.adobe.com/xdm/context/browserdetails` (Stabilizing)
+* [Commerce](./context/commerce.schema.md) – `https://ns.adobe.com/xdm/context/commerce` (Stabilizing)
+* [Device](./context/device.schema.md) – `https://ns.adobe.com/xdm/context/device` (Stabilizing)
+* [Direct Marketing](./context/direct-marketing.schema.md) – `https://ns.adobe.com/xdm/context/direct-marketing` (Stabilizing)
+* [Email Address](./context/emailaddress.schema.md) – `https://ns.adobe.com/xdm/context/emailaddress` (Stabilizing)
+* [End User IDs](./context/enduserids.schema.md) – `https://ns.adobe.com/xdm/context/enduserids` (Stabilizing)
+* [Environment](./context/environment.schema.md) – `https://ns.adobe.com/xdm/context/environment` (Stabilizing)
+* [ExperienceEvent](./context/experienceevent.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent` (Stabilizing)
+* [Geo Interaction Details](./context/geo-interaction-details.schema.md) – `https://ns.adobe.com/xdm/context/geo-interaction-details` (Experimental)
+* [Identity](./context/identity.schema.md) – `https://ns.adobe.com/xdm/context/identity` (Stabilizing)
+* [Identity](./context/profilestitchidentity.schema.md) – `https://ns.adobe.com/xdm/context/profileStitchIdentity` (Experimental)
+* [Identity](./context/segmentidentity.schema.md) – `https://ns.adobe.com/xdm/context/segmentidentity` (Experimental)
+* [Implementation Details](./context/implementationdetails.schema.md) – `https://ns.adobe.com/xdm/context/implementationdetails` (Stabilizing)
+* [MRC Viewability](./context/adviewability.schema.md) – `https://ns.adobe.com/xdm/context/adviewability` (Stabilizing)
+* [Marketing](./context/marketing.schema.md) – `https://ns.adobe.com/xdm/context/marketing` (Stabilizing)
+* [Media Information](./context/media.schema.md) – `https://ns.adobe.com/xdm/context/media` (Experimental)
+* [Namespace](./context/namespace.schema.md) – `https://ns.adobe.com/xdm/context/namespace` (Stabilizing)
+* [OptInOut](./context/optinout.schema.md) – `https://ns.adobe.com/xdm/context/optinout` (Experimental)
+* [Person](./context/person.schema.md) – `https://ns.adobe.com/xdm/context/person` (Experimental)
+* [Person Name](./context/person-name.schema.md) – `https://ns.adobe.com/xdm/context/person-name` (Experimental)
+* [Phone Number](./context/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber` (Stabilizing)
+* [Place](./context/place.schema.md) – `https://ns.adobe.com/xdm/context/place` (Experimental)
+* [Place Context](./context/placecontext.schema.md) – `https://ns.adobe.com/xdm/context/placecontext` (Experimental)
+* [Point of Interest Details](./context/poi-detail.schema.md) – `https://ns.adobe.com/xdm/context/poi-detail` (Experimental)
+* [Point of Interest Interaction](./context/poi-interaction.schema.md) – `https://ns.adobe.com/xdm/context/poi-interaction` (Experimental)
+* [Primary Asset View Details](./context/media-timed-asset-view-details.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-asset-view-details` (Experimental)
+* [Profile](./context/profile.schema.md) – `https://ns.adobe.com/xdm/context/profile` (Experimental)
+* [Profile Stitch](./context/profilestitch.schema.md) – `https://ns.adobe.com/xdm/context/profileStitch` (Experimental)
+* [Push Notification Token](./context/pushnotificationtoken.schema.md) – `https://ns.adobe.com/xdm/context/pushnotificationtoken` (Stabilizing)
+* [Search](./context/search.schema.md) – `https://ns.adobe.com/xdm/context/search` (Stabilizing)
+* [Segment Membership](./context/segmentmembership.schema.md) – `https://ns.adobe.com/xdm/context/segmentmembership` (Experimental)
+* [Subscription](./context/subscription.schema.md) – `https://ns.adobe.com/xdm/context/subscription` (Experimental)
+* [Timed Media Chapter Asset Reference](./context/media-timed-chapter-asset-reference.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-chapter-asset-reference` (Experimental)
+* [Timed Media Chapter Information](./context/media-timed-chapter.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-chapter` (Experimental)
+* [Timed Media Chapter View Details](./context/media-timed-chapter-view-details.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-chapter-view-details` (Experimental)
+* [Timed Media Information](./context/media-timed.schema.md) – `https://ns.adobe.com/xdm/context/media-timed` (Experimental)
+* [Timed Media Primary Asset Reference](./context/media-timed-asset-reference.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-asset-reference` (Experimental)
+* [Timed Media Quality of Experience](./context/media-timed-qoe.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-qoe` (Experimental)
+* [Web Information](./context/webinfo.schema.md) – `https://ns.adobe.com/xdm/context/webinfo` (Stabilizing)
+* [Web Interaction](./context/webinteraction.schema.md) – `https://ns.adobe.com/xdm/context/webinteraction` (Stabilizing)
+* [Web Page Details](./context/webpagedetails.schema.md) – `https://ns.adobe.com/xdm/context/webpagedetails` (Stabilizing)
+* [Web Referrer](./context/webreferrer.schema.md) – `https://ns.adobe.com/xdm/context/webreferrer` (Stabilizing)
+
 ## /content/repository-policies/
 
 * [At-Rest Encryption](./content/repository-policies/encryption.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/encryption` (Experimental)
 * [Storage Quota](./content/repository-policies/quota.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/quota` (Experimental)
 * [Versioning](./content/repository-policies/versioning.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/versioning` (Experimental)
+
+## /common/descriptors/
+
+* [Item Selector](./common/descriptors/itemselector.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/itemselector` (Experimental)
+* [Relationship Descriptor](./common/descriptors/relationshipdescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/relationshipdescriptor` (Experimental)
+* [Schema Descriptor](./common/descriptors/schemadescriptor.schema.md) – `https://ns.adobe.com/xdm/common/desciptors/schemadescriptor` (Experimental)
 
 ## /common/event/
 
@@ -208,11 +216,10 @@
 * [Unpublished Event](./common/event/unpublished.schema.md) – `https://ns.adobe.com/xdm/common/event/unpublished` (Experimental)
 * [Updated Event](./common/event/updated.schema.md) – `https://ns.adobe.com/xdm/common/event/updated` (Experimental)
 
-## /common/descriptors/
+## /external/hal/
 
-* [Item Selector](./common/descriptors/itemselector.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/itemselector` (Experimental)
-* [Relationship Descriptor](./common/descriptors/relationshipdescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/relationshipdescriptor` (Experimental)
-* [Schema Descriptor](./common/descriptors/schemadescriptor.schema.md) – `https://ns.adobe.com/xdm/common/desciptors/schemadescriptor` (Experimental)
+* [HAL Link](./external/hal/hal-link.schema.md) – `https://ns.adobe.com/xdm/external/hal/link` (Experimental)
+* [HAL Resource](./external/hal/hal.schema.md) – `https://ns.adobe.com/xdm/external/hal/resource` (Experimental)
 
 ## /external/activity-streams-2/
 
@@ -235,11 +242,6 @@
 * [Rating](./external/iptc/rating.schema.md) – `http://www.iptc.org/rating` (Experimental)
 * [Season](./external/iptc/season.schema.md) – `http://www.iptc.org/episode` (Experimental)
 * [Series](./external/iptc/series.schema.md) – `http://www.iptc.org/series` (Experimental)
-
-## /external/hal/
-
-* [HAL Link](./external/hal/hal-link.schema.md) – `https://ns.adobe.com/xdm/external/hal/link` (Experimental)
-* [HAL Resource](./external/hal/hal.schema.md) – `https://ns.adobe.com/xdm/external/hal/resource` (Experimental)
 
 ## /external/repo/
 

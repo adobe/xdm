@@ -29,6 +29,83 @@
           "format": "date-time",
           "description": "The timestamp when the assertion of segment membership was made."
         },
+        "xdm:payload" : {
+          "title" : "Payload",
+          "description": "Values that are directly related with the segment realization. This payload exists with the same validUntil as the segment realization.",
+          "oneOf": [
+            {
+              "type": "object",
+              "properties": {
+                "xdm:payloadNumberValue": {
+                  "title": "Value",
+                  "type": "number",
+                  "description": "The number"
+                },
+                "xdm:payloadType": {
+                  "title": "Payload Type",
+                  "type": "string",
+                  "const": "number",
+                  "description": "The type of payload."
+                }
+              },
+              "required": ["xdm:payloadNumberValue", "xdm:payloadType"]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "xdm:payloadPropensityValue": {
+                  "title": "Value",
+                  "type": "number",
+                  "description": "The propensity",
+                  "exclusiveMinimum": 0,
+                  "maximum": 1
+                },
+                "xdm:payloadType": {
+                  "title": "Payload Type",
+                  "type": "string",
+                  "const": "propensity",
+                  "description": "The type of payload."
+                }
+              },
+              "required": ["xdm:payloadPropensityValue", "xdm:payloadType"]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "xdm:payloadBooleanValue": {
+                  "title": "Value",
+                  "type": "boolean",
+                  "description": "The boolean value"
+                },
+                "xdm:payloadType": {
+                  "title": "Payload Type",
+                  "type": "string",
+                  "const": "boolean",
+                  "description": "The type of payload."
+                }
+              },
+              "required": ["xdm:payloadBooleanValue", "xdm:payloadType"]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "xdm:payloadStringValue": {
+                  "title": "Value",
+                  "type": "string",
+                  "description": "The string value"
+                },
+                "xdm:payloadType": {
+                  "title": "Payload Type",
+                  "type": "string",
+                  "const": "string",
+                  "description": "The type of payload."
+                }
+              },
+              "required": ["xdm:payloadStringValue", "xdm:payloadType"]
+            }
+
+          ]
+        },
         "xdm:validUntil": {
           "title": "Valid Until",
           "type": "string",

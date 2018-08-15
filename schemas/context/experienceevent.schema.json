@@ -44,7 +44,7 @@
           "title": "End User IDs",
           "$ref": "https://ns.adobe.com/xdm/context/enduserids",
           "description":
-            "Condensed, normalized encapsulation of all end user identifiers.\n"
+            "Condensed, normalized encapsulation of all end user identifiers."
         },
         "xdm:environment": {
           "title": "Environment",
@@ -118,6 +118,44 @@
           "title": "Advertising",
           "$ref": "https://ns.adobe.com/xdm/context/advertising",
           "description": "The information related to advertising activity related to the experience event"
+        },
+        "xdm:media": {
+          "title": "Media",
+          "meta:status": "experimental",
+          "$ref": "https://ns.adobe.com/xdm/context/media",
+          "description": "The media activity information related to the experience event"
+        }
+      },
+      "xdm:profileStitching" : {
+        "title": "Profile Stitching",
+        "description": "Details about the ids that were joined by profile stitching.",
+        "$ref": "https://ns.adobe.com/xdm/context/profileStitch"
+      },
+      "xdm:segmentMemberships": {
+        "title": "Segment Memberships",
+        "description": "The segments associated with this experience event",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "allOf": [
+            {
+              "$ref": "https://ns.adobe.com/xdm/context/segmentmembership"
+            },
+            {
+              "properties": {
+                "xdm:identities": {
+                  "title": "All User Identities",
+                  "type": "array",
+                  "items": {
+                    "$ref": "https://ns.adobe.com/xdm/context/identity"
+                  },
+                  "minItems": 1,
+                  "description":
+                  "Array of Identities. Condensed, normalized encapsulation of all end user identifiers."
+                }
+              }
+            }
+          ]
         }
       },
       "required": ["@id", "xdm:timestamp", "xdm:endUserIDs"]

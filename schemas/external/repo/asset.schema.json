@@ -20,7 +20,7 @@
   "definitions": {
     "asset": {
       "properties": {
-        "repo:assetID": {
+        "repo:id": {
           "type": "string",
           "meta:immutable": true,
           "meta:usereditable": false,
@@ -90,7 +90,7 @@
     "dc:format",
     "repo:createdDate",
     "repo:lastModifiedDate",
-    "repo:assetID",
+    "repo:id",
     "repo:etag",
     "repo:version",
     "repo:size"

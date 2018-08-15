@@ -14,10 +14,9 @@
     "definitions": {
         "identity": {
             "properties": {
-                "@id": {
+                "xdm:id": {
                     "title": "Identifier",
                     "type": "string",
-                    "format": "uri",
                     "description": "Identity of the consumer in the related namespace."
                 },
                 "xdm:namespace": {
@@ -29,6 +28,21 @@
                     "title": "Experience Identifier",
                     "type": "string",
                     "description": "When present, this value represents a cross-namespace identifier that is unique across all namespace-scoped identifiers in all namespaces."
+                },
+                "xdm:authenticatedState": {
+                    "description": "The state this identity is authenticated as for this observed ExperienceEvent.",
+                    "type": "string",
+                    "default": "ambiguous",
+                    "enum": [
+                        "ambiguous",
+                        "authenticated",
+                        "loggedOut"
+                    ],
+                    "meta:enum": {
+                        "ambiguous": "Ambiguous",
+                        "authenticated": "User identified by a login or simular action that was valid at the time of the event observation.",
+                        "loggedOut": "User was identified by a login action at some point of time previously, but is not currently logged in."
+                    }
                 },
                 "xdm:primary": {
                     "title": "Primary",
@@ -50,9 +64,16 @@
     "meta:status": "stabilizing",
     "examples": [
         {
-            "@id": "https://data.adobe.io/entities/identity/id123",
+            "xdm:id": "id123",
             "xdm:namespace": {
                 "xdm:code": "AA12345"
+            },
+            "xdm:authenticatedState": "ambiguous"
+        },
+        {
+            "xdm:id": "someone@example.com",
+            "xdm:namespace": {
+                "xdm:code": "Email"
             }
         }
     ]

@@ -4,22 +4,6 @@
 
 
 
-## /assets/
-
-* [Aggregated Asset](./assets/aggregated-asset.schema.md) – `https://ns.adobe.com/xdm/assets/aggregated-asset` (Experimental)
-* [Artboard](./assets/artboard.schema.md) – `https://ns.adobe.com/xdm/assets/artboard` (Experimental)
-* [Asset](./assets/asset.schema.md) – `https://ns.adobe.com/xdm/assets/asset` (Experimental)
-* [Copyright Owner](./assets/copyright-owner.schema.md) – `https://ns.adobe.com/xdm/assets/copyright-owner` (Stabilizing)
-* [Font](./assets/font.schema.md) – `https://ns.adobe.com/xdm/assets/font` (Experimental)
-* [Image](./assets/image.schema.md) – `https://ns.adobe.com/xdm/assets/image` (Experimental)
-* [Language Alternative](./assets/language-alternative.schema.md) – `https://ns.adobe.com/xdm/assets/language-alternative` (Stabilizing)
-* [Layer](./assets/layer.schema.md) – `https://ns.adobe.com/xdm/assets/layer` (Experimental)
-* [Layer Group](./assets/layer-group.schema.md) – `https://ns.adobe.com/xdm/assets/layer-group` (Experimental)
-* [Rectangular Object (measured in variable unit)](./assets/variable-unit-rectangular.schema.md) – `https://ns.adobe.com/xdm/assets/variable-unit-rectangular` (Experimental)
-* [Resource Event](./assets/resource-event.schema.md) – `https://ns.adobe.com/xdm/assets/resource-event` (Experimental)
-* [Simple Rectangular Area](./assets/rectangular.schema.md) – `https://ns.adobe.com/xdm/assets/rectangular` (Stabilizing)
-* [Video](./assets/video.schema.md) – `https://ns.adobe.com/xdm/assets/video` (Experimental)
-
 ## /channels/
 
 * [ADM](./channels/adm.schema.md) – `https://ns.adobe.com/xdm/channels/adm` (Experimental)
@@ -43,6 +27,32 @@
 * [Web](./channels/mobile-app.schema.md) – `https://ns.adobe.com/xdm/channels/mobile-app` (Experimental)
 * [Web](./channels/web.schema.md) – `https://ns.adobe.com/xdm/channels/web` (Experimental)
 
+## /content/
+
+* [Component Container](./content/component-container.schema.md) – `https://ns.adobe.com/xdm/content/component-container` (Experimental)
+* [Componentized Page](./content/componentized-page.schema.md) – `https://ns.adobe.com/xdm/content/componentized-page` (Experimental)
+* [Content](./content/content.schema.md) – `https://ns.adobe.com/xdm/content/content` (Experimental)
+* [Content Repository](./content/repository.schema.md) – `https://ns.adobe.com/xdm/content/repository` (Experimental)
+* [Page Component](./content/page-component.schema.md) – `https://ns.adobe.com/xdm/content/page-component` (Experimental)
+* [Product](./content/product.schema.md) – `https://ns.adobe.com/xdm/context/product` (Experimental)
+* [Product List Item](./content/productlistitem.schema.md) – `https://ns.adobe.com/xdm/content/productlistitem` (Experimental)
+
+## /assets/
+
+* [Aggregated Asset](./assets/aggregated-asset.schema.md) – `https://ns.adobe.com/xdm/assets/aggregated-asset` (Experimental)
+* [Artboard](./assets/artboard.schema.md) – `https://ns.adobe.com/xdm/assets/artboard` (Experimental)
+* [Asset](./assets/asset.schema.md) – `https://ns.adobe.com/xdm/assets/asset` (Experimental)
+* [Copyright Owner](./assets/copyright-owner.schema.md) – `https://ns.adobe.com/xdm/assets/copyright-owner` (Stabilizing)
+* [Font](./assets/font.schema.md) – `https://ns.adobe.com/xdm/assets/font` (Experimental)
+* [Image](./assets/image.schema.md) – `https://ns.adobe.com/xdm/assets/image` (Experimental)
+* [Language Alternative](./assets/language-alternative.schema.md) – `https://ns.adobe.com/xdm/assets/language-alternative` (Stabilizing)
+* [Layer](./assets/layer.schema.md) – `https://ns.adobe.com/xdm/assets/layer` (Experimental)
+* [Layer Group](./assets/layer-group.schema.md) – `https://ns.adobe.com/xdm/assets/layer-group` (Experimental)
+* [Rectangular Object (measured in variable unit)](./assets/variable-unit-rectangular.schema.md) – `https://ns.adobe.com/xdm/assets/variable-unit-rectangular` (Experimental)
+* [Resource Event](./assets/resource-event.schema.md) – `https://ns.adobe.com/xdm/assets/resource-event` (Experimental)
+* [Simple Rectangular Area](./assets/rectangular.schema.md) – `https://ns.adobe.com/xdm/assets/rectangular` (Stabilizing)
+* [Video](./assets/video.schema.md) – `https://ns.adobe.com/xdm/assets/video` (Experimental)
+
 ## /common/
 
 * [Address](./common/address.schema.md) – `https://ns.adobe.com/xdm/common/address` (Stabilizing)
@@ -58,18 +68,11 @@
 * [Page](./common/page.schema.md) – `https://ns.adobe.com/xdm/common/page` (Experimental)
 * [Principal](./common/principal.schema.md) – `https://ns.adobe.com/xdm/common/principal` (Experimental)
 
-## /content/
-
-* [Component Container](./content/component-container.schema.md) – `https://ns.adobe.com/xdm/content/component-container` (Experimental)
-* [Componentized Page](./content/componentized-page.schema.md) – `https://ns.adobe.com/xdm/content/componentized-page` (Experimental)
-* [Content](./content/content.schema.md) – `https://ns.adobe.com/xdm/content/content` (Experimental)
-* [Content Repository](./content/repository.schema.md) – `https://ns.adobe.com/xdm/content/repository` (Experimental)
-* [Page Component](./content/page-component.schema.md) – `https://ns.adobe.com/xdm/content/page-component` (Experimental)
-* [Product](./content/product.schema.md) – `https://ns.adobe.com/xdm/context/product` (Experimental)
-* [Product List Item](./content/productlistitem.schema.md) – `https://ns.adobe.com/xdm/content/productlistitem` (Experimental)
-
 ## /context/
 
+* [Ad Asset Reference](./context/advertising-timed-asset-reference.schema.md) – `https://ns.adobe.com/xdm/context/advertising-timed-asset-reference` (Experimental)
+* [Ad Asset View Details](./context/advertising-timed-asset-view-details.schema.md) – `https://ns.adobe.com/xdm/context/advertising-timed-asset-view-details` (Experimental)
+* [Ad Break](./context/advertising-break.schema.md) – `https://ns.adobe.com/xdm/context/advertising-break` (Experimental)
 * [Advertising](./context/advertising.schema.md) – `https://ns.adobe.com/xdm/context/advertising` (Stabilizing)
 * [Application](./context/application.schema.md) – `https://ns.adobe.com/xdm/context/application` (Stabilizing)
 * [Beacon](./context/beacon-interaction-details.schema.md) – `https://ns.adobe.com/xdm/context/beacon-interaction-details` (Experimental)
@@ -87,6 +90,7 @@
 * [Implementation Details](./context/implementationdetails.schema.md) – `https://ns.adobe.com/xdm/context/implementationdetails` (Stabilizing)
 * [MRC Viewability](./context/adviewability.schema.md) – `https://ns.adobe.com/xdm/context/adviewability` (Stabilizing)
 * [Marketing](./context/marketing.schema.md) – `https://ns.adobe.com/xdm/context/marketing` (Stabilizing)
+* [Media Information](./context/media.schema.md) – `https://ns.adobe.com/xdm/context/media` (Experimental)
 * [Namespace](./context/namespace.schema.md) – `https://ns.adobe.com/xdm/context/namespace` (Stabilizing)
 * [OptInOut](./context/optinout.schema.md) – `https://ns.adobe.com/xdm/context/optinout` (Experimental)
 * [Person](./context/person.schema.md) – `https://ns.adobe.com/xdm/context/person` (Experimental)
@@ -96,11 +100,18 @@
 * [Place Context](./context/placecontext.schema.md) – `https://ns.adobe.com/xdm/context/placecontext` (Experimental)
 * [Point of Interest Details](./context/poi-detail.schema.md) – `https://ns.adobe.com/xdm/context/poi-detail` (Experimental)
 * [Point of Interest Interaction](./context/poi-interaction.schema.md) – `https://ns.adobe.com/xdm/context/poi-interaction` (Experimental)
+* [Primary Asset View Details](./context/media-timed-asset-view-details.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-asset-view-details` (Experimental)
 * [Profile](./context/profile.schema.md) – `https://ns.adobe.com/xdm/context/profile` (Experimental)
 * [Push Notification Token](./context/pushnotificationtoken.schema.md) – `https://ns.adobe.com/xdm/context/pushnotificationtoken` (Stabilizing)
 * [Search](./context/search.schema.md) – `https://ns.adobe.com/xdm/context/search` (Stabilizing)
 * [Segment Membership](./context/segmentmembership.schema.md) – `https://ns.adobe.com/xdm/context/segmentmembership` (Experimental)
 * [Subscription](./context/subscription.schema.md) – `https://ns.adobe.com/xdm/context/subscription` (Experimental)
+* [Timed Media Chapter Asset Reference](./context/media-timed-chapter-asset-reference.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-chapter-asset-reference` (Experimental)
+* [Timed Media Chapter Information](./context/media-timed-chapter.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-chapter` (Experimental)
+* [Timed Media Chapter View Details](./context/media-timed-chapter-view-details.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-chapter-view-details` (Experimental)
+* [Timed Media Information](./context/media-timed.schema.md) – `https://ns.adobe.com/xdm/context/media-timed` (Experimental)
+* [Timed Media Primary Asset Reference](./context/media-timed-asset-reference.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-asset-reference` (Experimental)
+* [Timed Media Quality of Experience](./context/media-timed-qoe.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-qoe` (Experimental)
 * [Web Information](./context/webinfo.schema.md) – `https://ns.adobe.com/xdm/context/webinfo` (Stabilizing)
 * [Web Interaction](./context/webinteraction.schema.md) – `https://ns.adobe.com/xdm/context/webinteraction` (Stabilizing)
 * [Web Page Details](./context/webpagedetails.schema.md) – `https://ns.adobe.com/xdm/context/webpagedetails` (Stabilizing)
@@ -108,23 +119,36 @@
 
 ## /data/
 
+* [10% Progress Marker](./data/progress10.schema.md) – `https://ns.adobe.com/xdm/data/progress10` (Stabilizing)
+* [95% Progress Marker](./data/progress95.schema.md) – `https://ns.adobe.com/xdm/data/progress95` (Stabilizing)
 * [Application Closes](./data/application-closes.schema.md) – `https://ns.adobe.com/xdm/data/application-closes` (Stabilizing)
+* [Bitrate Average](./data/bitrate-average.schema.md) – `https://ns.adobe.com/xdm/data/bitrate-average` (Stabilizing)
+* [Bitrate Changes](./data/bitrate-changes.schema.md) – `https://ns.adobe.com/xdm/data/bitrate-changes` (Stabilizing)
 * [Bounces](./data/bounces.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/bounces` (Experimental)
+* [Buffer Time](./data/buffer-time.schema.md) – `https://ns.adobe.com/xdm/data/buffer-time` (Stabilizing)
+* [Buffers](./data/buffers.schema.md) – `https://ns.adobe.com/xdm/data/buffers` (Stabilizing)
 * [Cart Abandons](./data/cart-abandons.schema.md) – `https://ns.adobe.com/xdm/data/metrics/cart-abandons` (Experimental)
 * [Checkouts](./data/checkouts.schema.md) – `https://ns.adobe.com/xdm/data/metrics/checkouts` (Experimental)
 * [Data Source](./data/datasource.schema.md) – `https://ns.adobe.com/xdm/data/datasource` (Stabilizing)
 * [Discount](./data/discount.schema.md) – `https://ns.adobe.com/xdm/data/discount` (Experimental)
+* [Drop before Starts](./data/drop-before-starts.schema.md) – `https://ns.adobe.com/xdm/data/drop-before-starts` (Stabilizing)
+* [Dropped Frames](./data/dropped-frames.schema.md) – `https://ns.adobe.com/xdm/data/dropped-frames` (Stabilizing)
+* [Errors](./data/errors.schema.md) – `https://ns.adobe.com/xdm/data/errors` (Stabilizing)
 * [Feature Usages](./data/feature-usages.schema.md) – `https://ns.adobe.com/xdm/data/feature-usages` (Stabilizing)
+* [Federated](./data/federated.schema.md) – `https://ns.adobe.com/xdm/data/federated` (Stabilizing)
 * [First Launches](./data/first-launches.schema.md) – `https://ns.adobe.com/xdm/data/first-launches` (Stabilizing)
 * [Installs](./data/installs.schema.md) – `https://ns.adobe.com/xdm/data/installs` (Stabilizing)
 * [Launches](./data/launches.schema.md) – `https://ns.adobe.com/xdm/data/launches` (Stabilizing)
 * [Measure](./data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure` (Stabilizing)
+* [Media Segment Views](./data/media-segment-views.schema.md) – `https://ns.adobe.com/xdm/data/media-segment-views` (Stabilizing)
 * [Metric Definition](./data/metricdefinition.schema.md) – `https://ns.adobe.com/xdm/data/metricdefinition` (Stabilizing)
 * [Mirror Pages](./data/mirror-pages.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages` (Stabilizing)
 * [Non Deliverables](./data/non-deliverables.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/non-deliverables` (Stabilizing)
 * [Not Sent](./data/not-sent.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/notSent` (Stabilizing)
 * [Opens](./data/opens.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/opens` (Stabilizing)
 * [Order](./data/order.schema.md) – `https://ns.adobe.com/xdm/data/order` (Experimental)
+* [Pause Time](./data/pause-time.schema.md) – `https://ns.adobe.com/xdm/data/pause-time` (Stabilizing)
+* [Pauses](./data/pauses.schema.md) – `https://ns.adobe.com/xdm/data/pauses` (Stabilizing)
 * [Payment Item](./data/paymentitem.schema.md) – `https://ns.adobe.com/xdm/data/paymentitem` (Experimental)
 * [Product List Adds](./data/product-list-adds.schema.md) – `https://ns.adobe.com/xdm/data/metrics/product-list-adds` (Experimental)
 * [Product List Opens](./data/product-list-opens.schema.md) – `https://ns.adobe.com/xdm/data/metrics/product-list-opens` (Experimental)
@@ -133,8 +157,14 @@
 * [Product List Views](./data/product-list-views.schema.md) – `https://ns.adobe.com/xdm/data/metrics/product-list-views` (Experimental)
 * [Product Views](./data/product-views.schema.md) – `https://ns.adobe.com/xdm/data/metrics/product-views` (Experimental)
 * [Purchases](./data/purchases.schema.md) – `https://ns.adobe.com/xdm/data/metrics/purchases` (Stabilizing)
+* [Resumes](./data/resumes.schema.md) – `https://ns.adobe.com/xdm/data/resumes` (Stabilizing)
 * [Save For Laters](./data/save-for-laters.schema.md) – `https://ns.adobe.com/xdm/data/metrics/save-for-laters` (Stabilizing)
 * [Sends](./data/sends.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/sends` (Stabilizing)
+* [Stall Time](./data/stall-time.schema.md) – `https://ns.adobe.com/xdm/data/stall-time` (Stabilizing)
+* [Stalls](./data/stalls.schema.md) – `https://ns.adobe.com/xdm/data/stalls` (Stabilizing)
+* [Time Played](./data/time-played.schema.md) – `https://ns.adobe.com/xdm/data/time-played` (Stabilizing)
+* [Time to Start](./data/time-to-start.schema.md) – `https://ns.adobe.com/xdm/data/time-to-start` (Stabilizing)
+* [Total Time Played](./data/total-time-played.schema.md) – `https://ns.adobe.com/xdm/data/total-time-played` (Stabilizing)
 * [Unsubscriptions](./data/unsubscriptions.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/unsubscriptions` (Stabilizing)
 * [Upgrades](./data/upgrades.schema.md) – `https://ns.adobe.com/xdm/data/upgrades` (Stabilizing)
 * [User Complaints](./data/user-complaints.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/user-complaints` (Stabilizing)
@@ -162,11 +192,11 @@
 * [viewable-midpoints](./data/viewablemidpoints.schema.md) – `https://ns.adobe.com/xdm/data/viewablemidpoints` (Stabilizing)
 * [viewable-third-quartiles](./data/viewablethirdquartiles.schema.md) – `https://ns.adobe.com/xdm/data/viewablethirdquartiles` (Stabilizing)
 
-## /common/descriptors/
+## /content/repository-policies/
 
-* [Item Selector](./common/descriptors/itemselector.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/itemselector` (Experimental)
-* [Relationship Descriptor](./common/descriptors/relationshipdescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/relationshipdescriptor` (Experimental)
-* [Schema Descriptor](./common/descriptors/schemadescriptor.schema.md) – `https://ns.adobe.com/xdm/common/desciptors/schemadescriptor` (Experimental)
+* [At-Rest Encryption](./content/repository-policies/encryption.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/encryption` (Experimental)
+* [Storage Quota](./content/repository-policies/quota.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/quota` (Experimental)
+* [Versioning](./content/repository-policies/versioning.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/versioning` (Experimental)
 
 ## /common/event/
 
@@ -177,6 +207,12 @@
 * [Rejected Event](./common/event/rejected.schema.md) – `https://ns.adobe.com/xdm/common/event/rejected` (Experimental)
 * [Unpublished Event](./common/event/unpublished.schema.md) – `https://ns.adobe.com/xdm/common/event/unpublished` (Experimental)
 * [Updated Event](./common/event/updated.schema.md) – `https://ns.adobe.com/xdm/common/event/updated` (Experimental)
+
+## /common/descriptors/
+
+* [Item Selector](./common/descriptors/itemselector.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/itemselector` (Experimental)
+* [Relationship Descriptor](./common/descriptors/relationshipdescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/relationshipdescriptor` (Experimental)
+* [Schema Descriptor](./common/descriptors/schemadescriptor.schema.md) – `https://ns.adobe.com/xdm/common/desciptors/schemadescriptor` (Experimental)
 
 ## /external/activity-streams-2/
 
@@ -191,12 +227,6 @@
 * [Link](./external/activity-streams-2/link.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/link` (Experimental)
 * [Object](./external/activity-streams-2/object.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/object` (Experimental)
 * [RDF Language Tagged String](./external/activity-streams-2/rdf-langstring.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langstring` (Experimental)
-
-## /external/schema/
-
-* [Geo Circle](./external/schema/geocircle.schema.md) – `http://schema.org/GeoCircle` (Experimental)
-* [Geo Coordinates](./external/schema/geocoordinates.schema.md) – `http://schema.org/GeoCoordinates` (Experimental)
-* [Geo Shape](./external/schema/geoshape.schema.md) – `http://schema.org/GeoShape` (Experimental)
 
 ## /external/hal/
 
@@ -213,9 +243,17 @@
 * [Effective Privileges](./external/repo/effectiveprivileges.schema.md) – `https://ns.adobe.com/xdm/external/repo/effectiveprivileges` (Experimental)
 * [Sub-Directory](./external/repo/sub-directory.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/sub-directory` (Experimental)
 
-## /content/repository-policies/
+## /external/iptc/
 
-* [At-Rest Encryption](./content/repository-policies/encryption.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/encryption` (Experimental)
-* [Storage Quota](./content/repository-policies/quota.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/quota` (Experimental)
-* [Versioning](./content/repository-policies/versioning.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/versioning` (Experimental)
+* [Creator](./external/iptc/creator.schema.md) – `http://www.iptc.org/creator` (Experimental)
+* [Episode](./external/iptc/episode.schema.md) – `http://www.iptc.org/season` (Experimental)
+* [Rating](./external/iptc/rating.schema.md) – `http://www.iptc.org/rating` (Experimental)
+* [Season](./external/iptc/season.schema.md) – `http://www.iptc.org/episode` (Experimental)
+* [Series](./external/iptc/series.schema.md) – `http://www.iptc.org/series` (Experimental)
+
+## /external/schema/
+
+* [Geo Circle](./external/schema/geocircle.schema.md) – `http://schema.org/GeoCircle` (Experimental)
+* [Geo Coordinates](./external/schema/geocoordinates.schema.md) – `http://schema.org/GeoCoordinates` (Experimental)
+* [Geo Shape](./external/schema/geoshape.schema.md) – `http://schema.org/GeoShape` (Experimental)
 

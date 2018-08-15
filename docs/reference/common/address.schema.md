@@ -56,6 +56,7 @@ A postal address. Address could relate to a person's home, work, preferred store
 | [xdm:lastVerifiedDate](#xdmlastverifieddate) | `string` | Optional | Address (this schema) |
 | [xdm:modifiedByBatchID](#xdmmodifiedbybatchid) | `string` | Optional | [Audit Trail](auditable.schema.md#xdmmodifiedbybatchid) |
 | [xdm:msaID](#xdmmsaid) | `integer` | Optional | [Geo](geo.schema.md#xdmmsaid) |
+| [xdm:postOfficeBox](#xdmpostofficebox) | `string` | Optional | Address (this schema) |
 | [xdm:postalCode](#xdmpostalcode) | `string` | Optional | [Geo](geo.schema.md#xdmpostalcode) |
 | [xdm:primary](#xdmprimary) | `boolean` | Optional | Address (this schema) |
 | [xdm:region](#xdmregion) | `string` | Optional | Address (this schema) |
@@ -411,6 +412,27 @@ The Metropolitan Statistical Area in the USA where the observation occurred.
 
 `integer`
 
+
+
+
+
+
+## xdm:postOfficeBox
+### Post Office Box
+
+Post office box of the address.
+
+`xdm:postOfficeBox`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:postOfficeBox Type
+
+
+`string`
+
+* maximum length: 20 characters
 
 
 

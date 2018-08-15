@@ -4,6 +4,8 @@
 
 _Planned for August 17, 2018_
 
+* #459 Added Authenticated State property to `\context\identity.schema.json`
+
 ## Release 0.9.3
 
 [Released on July 16, 2018](https://github.com/adobe/xdm/releases/tag/v0.9.3)

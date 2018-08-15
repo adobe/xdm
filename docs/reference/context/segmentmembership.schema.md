@@ -28,7 +28,11 @@ Details about a segment membership.
   "xdm:lastQualificationTime": "2017-09-26T15:52:25+00:00",
   "xdm:version": "1.0",
   "xdm:validUntil": "2017-12-26T15:52:25+00:00",
-  "xdm:status": "realized"
+  "xdm:status": "realized",
+  "xdm:payload": {
+    "xdm:payloadPropensityValue": 0.5,
+    "xdm:payloadType": "propensity"
+  }
 }
 ```
 
@@ -37,6 +41,7 @@ Details about a segment membership.
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [xdm:lastQualificationTime](#xdmlastqualificationtime) | `string` | Optional | Segment Membership (this schema) |
+| [xdm:payload](#xdmpayload) | complex | Optional | Segment Membership (this schema) |
 | [xdm:segmentID](#xdmsegmentid) | Identity | Optional | Segment Membership (this schema) |
 | [xdm:status](#xdmstatus) | `enum` | Optional | Segment Membership (this schema) |
 | [xdm:validUntil](#xdmvaliduntil) | `string` | Optional | Segment Membership (this schema) |
@@ -58,6 +63,42 @@ The timestamp when the assertion of segment membership was made.
 
 `string`
 * format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+
+
+
+
+
+
+## xdm:payload
+### Payload
+
+Values that are directly related with the segment realization. This payload exists with the same validUntil as the segment realization.
+
+`xdm:payload`
+* is optional
+* type: complex
+* defined in this schema
+
+### xdm:payload Type
+
+
+**One** of the following *conditions* need to be fulfilled.
+
+
+#### Condition 1
+
+
+
+#### Condition 2
+
+
+
+#### Condition 3
+
+
+
+#### Condition 4
+
 
 
 

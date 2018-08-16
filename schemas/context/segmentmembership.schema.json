@@ -31,80 +31,44 @@
         },
         "xdm:payload" : {
           "title" : "Payload",
-          "description": "Values that are directly related with the segment realization. This payload exists with the same validUntil as the segment realization.",
-          "oneOf": [
-            {
-              "type": "object",
-              "properties": {
-                "xdm:payloadNumberValue": {
-                  "title": "Value",
-                  "type": "number",
-                  "description": "The number"
-                },
-                "xdm:payloadType": {
-                  "title": "Payload Type",
-                  "type": "string",
-                  "const": "number",
-                  "description": "The type of payload."
-                }
-              },
-              "required": ["xdm:payloadNumberValue", "xdm:payloadType"]
+          "description": "Values that are directly related with the segment realization. This payload exists with the same validUntil as the segment realization.  Note that the intention is that exactly one payload value be included, as indicated by the payload type.  This was originally modelled using 'oneOf', but due to limitations in our tooling that was removed.  This more semantically meaningful representation will be re-introduced in the future.",
+          "type": "object",
+          "properties": {
+            "xdm:payloadBooleanValue": {
+              "title": "Value",
+              "type": "boolean",
+              "description": "The boolean value"
             },
-            {
-              "type": "object",
-              "properties": {
-                "xdm:payloadPropensityValue": {
-                  "title": "Value",
-                  "type": "number",
-                  "description": "The propensity",
-                  "exclusiveMinimum": 0,
-                  "maximum": 1
-                },
-                "xdm:payloadType": {
-                  "title": "Payload Type",
-                  "type": "string",
-                  "const": "propensity",
-                  "description": "The type of payload."
-                }
-              },
-              "required": ["xdm:payloadPropensityValue", "xdm:payloadType"]
+            "xdm:payloadNumberValue": {
+              "title": "Value",
+              "type": "number",
+              "description": "The number"
             },
-            {
-              "type": "object",
-              "properties": {
-                "xdm:payloadBooleanValue": {
-                  "title": "Value",
-                  "type": "boolean",
-                  "description": "The boolean value"
-                },
-                "xdm:payloadType": {
-                  "title": "Payload Type",
-                  "type": "string",
-                  "const": "boolean",
-                  "description": "The type of payload."
-                }
-              },
-              "required": ["xdm:payloadBooleanValue", "xdm:payloadType"]
+            "xdm:payloadPropensityValue": {
+              "title": "Value",
+              "type": "number",
+              "description": "The propensity",
+              "exclusiveMinimum": 0,
+              "maximum": 1
             },
-            {
-              "type": "object",
-              "properties": {
-                "xdm:payloadStringValue": {
-                  "title": "Value",
-                  "type": "string",
-                  "description": "The string value"
-                },
-                "xdm:payloadType": {
-                  "title": "Payload Type",
-                  "type": "string",
-                  "const": "string",
-                  "description": "The type of payload."
-                }
+            "xdm:payloadStringValue": {
+              "title": "Value",
+              "type": "string",
+              "description": "The string value"
+            },
+            "xdm:payloadType": {
+              "title": "Payload Type",
+              "type": "string",
+              "enum": ["boolean", "number", "propensity", "string"],
+              "meta:enum": {
+                "boolean": "Boolean", 
+                "number": "Number",
+                "propensity": "Propensity", 
+                "string": "String"
               },
-              "required": ["xdm:payloadStringValue", "xdm:payloadType"]
+              "description": "The type of payload."
             }
-
-          ]
+          }
         },
         "xdm:validUntil": {
           "title": "Valid Until",

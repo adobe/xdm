@@ -68,7 +68,8 @@
               },
               "description": "The type of payload."
             }
-          }
+          },
+          "required": ["xdm:payloadType"]
         },
         "xdm:validUntil": {
           "title": "Valid Until",

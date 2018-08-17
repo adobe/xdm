@@ -59,7 +59,7 @@
           ]
         },
         "xdm:eventScope": {
-          "$ref": "https://ns.adobe.com/experience/target/activity/activityevent/eventscope"
+          "$ref": "https://ns.adobe.com/experience/target/activity/activityevent/eventscope#/definitions/eventscope"
         }
       },
       "required": [

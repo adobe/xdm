@@ -136,26 +136,7 @@
         "description": "The segments associated with this experience event",
         "type": "array",
         "items": {
-          "type": "object",
-          "allOf": [
-            {
-              "$ref": "https://ns.adobe.com/xdm/context/segmentmembership"
-            },
-            {
-              "properties": {
-                "xdm:identities": {
-                  "title": "All User Identities",
-                  "type": "array",
-                  "items": {
-                    "$ref": "https://ns.adobe.com/xdm/context/identity"
-                  },
-                  "minItems": 1,
-                  "description":
-                  "Array of Identities. Condensed, normalized encapsulation of all end user identifiers."
-                }
-              }
-            }
-          ]
+          "$ref": "https://ns.adobe.com/xdm/context/segmentmembershipitem"
         }
       },
       "required": ["@id", "xdm:timestamp", "xdm:endUserIDs"]

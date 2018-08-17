@@ -51,7 +51,7 @@
           "description": "The Capture Score engagement metric calculates an aggregated score based on the value assigned to pages visited on the site, from the point the visitor first sees the campaign's first display mbox."
         },
         "xdm:eventScope": {
-          "$ref": "https://ns.adobe.com/experience/target/activity/activityevent/eventscope"
+          "$ref": "https://ns.adobe.com/experience/target/activity/activityevent/eventscope#/definitions/eventscope"
         },
         "xdm:segmentEvents": {
           "type": "array",

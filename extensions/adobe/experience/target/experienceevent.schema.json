@@ -52,7 +52,7 @@
           "type": "string",
           "description": "Identifier of the environment on which the event was processed."
         },
-        "xdm:activities": {
+        "https://ns.adobe.com/experience/target/activities": {
           "title": "Activities",
           "type": "array",
           "description": "A list of items representing executed activities.",

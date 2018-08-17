@@ -25,10 +25,5 @@
       }
     }
   },
-  "allOf": [
-    {
-      "$ref": "#/definitions/eventscope"
-    }
-  ],
   "meta:status": "experimental"
 }

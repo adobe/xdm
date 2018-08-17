@@ -41,7 +41,7 @@ Details about a segment membership.
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [xdm:lastQualificationTime](#xdmlastqualificationtime) | `string` | Optional | Segment Membership (this schema) |
-| [xdm:payload](#xdmpayload) | complex | Optional | Segment Membership (this schema) |
+| [xdm:payload](#xdmpayload) | `object` | Optional | Segment Membership (this schema) |
 | [xdm:segmentID](#xdmsegmentid) | Identity | Optional | Segment Membership (this schema) |
 | [xdm:status](#xdmstatus) | `enum` | Optional | Segment Membership (this schema) |
 | [xdm:validUntil](#xdmvaliduntil) | `string` | Optional | Segment Membership (this schema) |
@@ -72,32 +72,132 @@ The timestamp when the assertion of segment membership was made.
 ## xdm:payload
 ### Payload
 
-Values that are directly related with the segment realization. This payload exists with the same validUntil as the segment realization.
+Values that are directly related with the segment realization. This payload exists with the same validUntil as the segment realization.  Note that the intention is that exactly one payload value be included, as indicated by the payload type.  This was originally modelled using 'oneOf', but due to limitations in our tooling that was removed.  This more semantically meaningful representation will be re-introduced in the future.
 
 `xdm:payload`
 * is optional
-* type: complex
+* type: `object`
 * defined in this schema
 
 ### xdm:payload Type
 
 
-**One** of the following *conditions* need to be fulfilled.
+`object` with following properties:
 
 
-#### Condition 1
-
-
-
-#### Condition 2
-
-
-
-#### Condition 3
+| Property | Type | Required
+|----------|------|----------|
+| `xdm:payloadBooleanValue`| boolean | Optional | 
+| `xdm:payloadNumberValue`| number | Optional | 
+| `xdm:payloadPropensityValue`| number | Optional | 
+| `xdm:payloadStringValue`| string | Optional | 
+| `xdm:payloadType`| string | **Required** | 
 
 
 
-#### Condition 4
+#### xdm:payloadBooleanValue
+##### Value
+
+The boolean value
+
+`xdm:payloadBooleanValue`
+* is optional
+* type: `boolean`
+
+##### xdm:payloadBooleanValue Type
+
+
+`boolean`
+
+
+
+
+
+
+
+#### xdm:payloadNumberValue
+##### Value
+
+The number
+
+`xdm:payloadNumberValue`
+* is optional
+* type: `number`
+
+##### xdm:payloadNumberValue Type
+
+
+`number`
+
+
+
+
+
+
+
+
+#### xdm:payloadPropensityValue
+##### Value
+
+The propensity
+
+`xdm:payloadPropensityValue`
+* is optional
+* type: `number`
+
+##### xdm:payloadPropensityValue Type
+
+
+`number`
+* maximum value: `1`
+
+
+
+
+
+
+
+#### xdm:payloadStringValue
+##### Value
+
+The string value
+
+`xdm:payloadStringValue`
+* is optional
+* type: `string`
+
+##### xdm:payloadStringValue Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### xdm:payloadType
+##### Payload Type
+
+The type of payload.
+
+`xdm:payloadType`
+* is **required**
+* type: `string`
+
+The value of this property **must** be equal to one of the [known values below](#xdm:payloadType-known-values).
+
+##### xdm:payloadType Known Values
+| Value | Description |
+|-------|-------------|
+| `boolean` | Boolean |
+| `number` | Number |
+| `propensity` | Propensity |
+| `string` | String |
+
+
 
 
 

@@ -21,6 +21,12 @@
           "$ref": "https://ns.adobe.com/xdm/context/person-name",
           "description": "The person's full name"
         },
+        "xdm:birthDate": {
+          "title": "Birth Date",
+          "type": "string",
+	  "format": "date",
+          "description": "The date a person was born."
+	},
         "xdm:birthDay": {
           "title": "Birth day",
           "type": "integer",

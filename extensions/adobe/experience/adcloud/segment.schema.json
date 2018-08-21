@@ -16,8 +16,7 @@
         "xdm:attributablePartnerId": {
           "title": "Attributable Partner ID",
           "type": "string",
-          "description":
-          "The segment provider who owns the attributableSegmentId."
+          "description": "The segment provider who owns the attributableSegmentId."
         },
         "xdm:attributableSegmentId": {
           "title": "Attributable Segment ID",

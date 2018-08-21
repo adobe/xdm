@@ -16,8 +16,7 @@
         "xdm:accountId": {
           "title": "Account ID",
           "type": "string",
-          "description":
-          "Unique identifier for the account this event is associated with."
+          "description": "Unique identifier for the account this event is associated with."
         },
         "xdm:campaignId": {
           "title": "Campaign ID",
@@ -52,7 +51,10 @@
         "xdm:currency": {
           "title": "Account Currency",
           "type": "string",
-          "examples": ["USD", "EUR"],
+          "examples": [
+            "USD",
+            "EUR"
+          ],
           "pattern": "^[A-Z]{3}$",
           "description": "The ISO 4217 billing currency code for the account this event is associated with."
         }

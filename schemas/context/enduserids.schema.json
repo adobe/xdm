@@ -10,8 +10,7 @@
   "title": "End User IDs",
   "type": "object",
   "meta:extensible": true,
-  "description":
-    "Condensed, normalized encapsulation of all end user identifiers. NOTE: At least one of the fields is required.",
+  "description": "Condensed, normalized encapsulation of all end user identifiers. NOTE: At least one of the fields is required.",
   "minProperties": 1,
   "definitions": {
     "enduserids": {
@@ -59,8 +58,7 @@
       },
       "patternProperties": {
         ".+://.+": {
-          "description":
-            "The identifier, including data source (`@id` must be identical to the property value), foreign ID, and confidence.",
+          "description": "The identifier, including data source (`@id` must be identical to the property value), foreign ID, and confidence.",
           "type": "object",
           "$ref": "https://ns.adobe.com/xdm/context/identity"
         }
@@ -72,10 +70,8 @@
     "https://ns.adobe.com/experience/tntid": "Adobe Target",
     "https://ns.adobe.com/experience/acid": "Adobe Campaign",
     "https://ns.adobe.com/experience/aaid": "Adobe Analytics",
-    "https://ns.adobe.com/experience/aacustomid":
-      "Adobe Analytics Custom",
-    "https://ns.adobe.com/experience/mcid":
-      "Marketing Cloud Identity Core Service",
+    "https://ns.adobe.com/experience/aacustomid": "Adobe Analytics Custom",
+    "https://ns.adobe.com/experience/mcid": "Marketing Cloud Identity Core Service",
     "https://ns.adobe.com/experience/emailid": "Email Address",
     "https://ns.adobe.com/experience/phonenumberid": "Phone Number"
   },

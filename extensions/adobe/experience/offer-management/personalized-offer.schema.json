@@ -7,7 +7,9 @@
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/experience/offer-management/personalized-offer",
-  "meta:extends": ["https://ns.adobe.com/experience/offer-management/offer"],
+  "meta:extends": [
+    "https://ns.adobe.com/experience/offer-management/offer"
+  ],
   "meta:abstract": false,
   "meta:extensible": true,
   "type": "object",
@@ -32,7 +34,10 @@
           "description": "Capping constraint define additional rules based on prior offer proposition, either across all audiences or for a partcular profile identity."
         }
       },
-      "required": ["xdm:rank", "xdm:selectionConstraint"]
+      "required": [
+        "xdm:rank",
+        "xdm:selectionConstraint"
+      ]
     }
   },
   "allOf": [

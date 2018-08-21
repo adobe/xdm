@@ -11,8 +11,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:status": "stabilizing",
-  "description":
-    "Details about the SDK, library or service used in an application's or web page's implementation of a service.",
+  "description": "Details about the SDK, library or service used in an application's or web page's implementation of a service.",
   "definitions": {
     "implementationdetails": {
       "properties": {

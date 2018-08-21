@@ -17,8 +17,7 @@
         "xdm:adViewability": {
           "title": "MRC Viewability",
           "$ref": "https://ns.adobe.com/xdm/context/adviewability",
-          "description":
-          "The runtime measured viewability specific details such as player volume, library version, window status, viewport/ad measured dimensions, etc."
+          "description": "The runtime measured viewability specific details such as player volume, library version, window status, viewport/ad measured dimensions, etc."
         },
         "xdm:adAssetReference": {
           "title": "Ad Asset Reference",

@@ -16,8 +16,7 @@
         "xdm:adId": {
           "title": "Ad ID",
           "type": "string",
-          "description":
-          "Unique identifier for the ad this event is associated with. Not to be confused with Ad-ID standard."
+          "description": "Unique identifier for the ad this event is associated with. Not to be confused with Ad-ID standard."
         },
         "xdm:runtime": {
           "title": "Runtime Type",
@@ -26,7 +25,7 @@
           "meta:enum": {
             "unknown": "Unknown",
             "HTML5": "HTML5"
-            }
+          }
         },
         "xdm:adClass": {
           "title": "Ad Class",
@@ -36,7 +35,7 @@
             "display": "Display",
             "video": "Video",
             "social": "Social"
-            }
+          }
         },
         "xdm:adUnitType": {
           "title": "Ad Unit Type",
@@ -52,11 +51,11 @@
             "HTML5": "HTML5",
             "inPageVideo": "In page video",
             "inPageDisplay": "In page display",
-            "facebook":"Facebook",
+            "facebook": "Facebook",
             "twitter": "Twitter",
             "linearTv": "Linear TV",
             "vod": "Video on Demand"
-            }
+          }
         },
         "xdm:promotedAssetId": {
           "title": "Promoted Asset ID",

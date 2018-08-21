@@ -11,30 +11,31 @@
   "meta:extensible": true,
   "type": "object",
   "title": "Used XDM Models and Properties from those models",
-  "description": "A key-value pair whose key is reference to the model, i.e. the model's $id property. The value is an array of strings, each string representing a fully qualified path to an XDM field with dots used as the path delimiter.",
+  "description":
+    "A key-value pair whose key is reference to the model, i.e. the model's $id property. The value is an array of strings, each string representing a fully qualified path to an XDM field with dots used as the path delimiter.",
   "definitions": {
     "model-usage": {
       "type": "object",
       "title": "Model and Used Properties",
-      "description": "A key-value pair whose key is reference to the model, i.e. the model's $id property. The value is an array of strings, each string representing a fully qualified path to an XDM field with dots used as the path delimiter.",
+      "description":
+        "A key-value pair whose key is reference to the model, i.e. the model's $id property. The value is an array of strings, each string representing a fully qualified path to an XDM field with dots used as the path delimiter.",
       "properties": {
         "xdm:model": {
           "type": "string",
           "format": "uri",
-          "description": "Reference to the model, i.e. its schema $id property. "
+          "description":
+            "Reference to the model, i.e. its schema $id property. "
         },
         "xdm:modelPropertyPaths": {
           "type": "array",
           "items": {
             "type": "string",
-            "description": "A fully qualified JSON path to an XDM field with dots used as the path delimiter"
+            "description":
+              "A fully qualified JSON path to an XDM field with dots used as the path delimiter"
           }
         }
       },
-      "required": [
-        "xdm:modelReference",
-        "xdm:modelPropertyPaths"
-      ]
+      "required": ["xdm:modelReference", "xdm:modelPropertyPaths"]
     }
   }
 }

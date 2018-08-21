@@ -10,8 +10,7 @@
   "title": "Beacon",
   "type": "object",
   "meta:extensible": true,
-  "description":
-    "Beacon, a wireless device that communicates identity information to mobile applications as mobile devices come within range.",
+  "description": "Beacon, a wireless device that communicates identity information to mobile applications as mobile devices come within range.",
   "definitions": {
     "beacon-interaction-detail": {
       "properties": {
@@ -23,14 +22,12 @@
         "xdm:beaconMajor": {
           "title": "Beacon Major",
           "type": "number",
-          "description":
-            "The first sub organization identifier of an area multiple beacon operate in."
+          "description": "The first sub organization identifier of an area multiple beacon operate in."
         },
         "xdm:beaconMinor": {
           "title": "Beacon Minor",
           "type": "number",
-          "description":
-            "The second sub organization identifier of an area multiple beacon operate in. The smallest area a beacon can refine location to."
+          "description": "The second sub organization identifier of an area multiple beacon operate in. The smallest area a beacon can refine location to."
         },
         "xdm:proximity": {
           "title": "Proximity to beacon",

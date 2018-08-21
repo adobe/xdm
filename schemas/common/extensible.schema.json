@@ -205,7 +205,9 @@
                 }
               },
               "additionalProperties": false,
-              "required": ["xdm"]
+              "required": [
+                "xdm"
+              ]
             }
           },
           "patternProperties": {
@@ -240,7 +242,9 @@
             "^iptc4xmpExt:.*$": {},
             ".+://.+": {}
           },
-          "required": ["@context"],
+          "required": [
+            "@context"
+          ],
           "additionalProperties": false
         }
       ]

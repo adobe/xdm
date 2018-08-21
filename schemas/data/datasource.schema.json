@@ -9,36 +9,34 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Data Source",
   "type": "object",
-  "description":
-    "The Datasource acts as a namespace or unique identifier associated with a collection of data. Each EndUserID is associated with a given Datasource. A user can create and obtain information about a Datasource during the solution onboarding.\n",
+  "description": "The Datasource acts as a namespace or unique identifier associated with a collection of data. Each EndUserID is associated with a given Datasource. A user can create and obtain information about a Datasource during the solution onboarding.\n",
   "definitions": {
     "datasource": {
       "properties": {
         "@id": {
           "title": "Identifier",
           "type": "string",
-          "format": "uri",
-          "description":
-            "The unique ID of this data source. This would be provided by the individual or system that created the Datasource.\n"
+          "format": "uri-reference",
+          "description": "The unique ID of this data source. This would be provided by the individual or system that created the Datasource.\n"
         },
         "xdm:code": {
           "title": "Code",
           "type": "string",
-          "description":
-            "The code is a shortcut to the full @id and at least one of the code or @id can be used. Sometimes, this code is referred to as the data source integration code."
+          "description": "The code is a shortcut to the full @id and at least one of the code or @id can be used. Sometimes, this code is referred to as the data source integration code."
         },
         "xdm:tags": {
           "title": "Tags",
           "type": "array",
-          "description":
-            "Tags are used to indicate how the aliases represented by a given data\nsource should be interpreted by applications using those aliases.\n\nExamples:\n\n* `isAVID`: data sources representing Analytics visitor IDs.\n* `isCRSKey`: data sources representing aliases that should be used as keys in CRS.\n\nTags are set when the data source is created but they are also included in\npipeline messages when referencing a given data source.\n",
+          "description": "Tags are used to indicate how the aliases represented by a given data\nsource should be interpreted by applications using those aliases.\n\nExamples:\n\n* `isAVID`: data sources representing Analytics visitor IDs.\n* `isCRSKey`: data sources representing aliases that should be used as keys in CRS.\n\nTags are set when the data source is created but they are also included in\npipeline messages when referencing a given data source.\n",
           "uniqueItems": true,
           "items": {
             "type": "string"
           }
         }
       },
-      "required": ["@id"]
+      "required": [
+        "@id"
+      ]
     }
   },
   "allOf": [

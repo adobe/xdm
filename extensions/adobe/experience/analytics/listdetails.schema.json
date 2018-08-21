@@ -29,9 +29,9 @@
       }
     }
   },
-  "allOf":[  
-    {  
-       "$ref":"#/definitions/listdetails"
+  "allOf": [
+    {
+      "$ref": "#/definitions/listdetails"
     }
   ]
 }

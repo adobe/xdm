@@ -10,8 +10,7 @@
   "type": "object",
   "title": "Created Event",
   "meta:extends": "https://ns.adobe.com/xdm/common/eventenvelope",
-  "description":
-    "A `created event` follows semantics that are exactly equivalent to the semantics described by the [`create activity`](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-create), except for one difference. The `create activity` can be used in imperative contexts, however, the `created event` can only be used in passive contexts.",
+  "description": "A `created event` follows semantics that are exactly equivalent to the semantics described by the [`create activity`](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-create), except for one difference. The `create activity` can be used in imperative contexts, however, the `created event` can only be used in passive contexts.",
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/eventenvelope"

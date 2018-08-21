@@ -17,7 +17,7 @@
       "properties": {
         "@id": {
           "type": "string",
-          "format": "uri",
+          "format": "uri-reference",
           "title": "ID",
           "description": "The unique identifier of the offer. It must be unique within a repository container for objects that are not the same, otherwise it is interpreted as referring to the same object."
         },
@@ -71,11 +71,13 @@
             }
           },
           "title": "Custom Properties",
-          "description":
-            "Custom metadata is a key-value map that allows the end-users to attach properties to individual offer instances. Any string can be used as a key name, the values are also strings."
+          "description": "Custom metadata is a key-value map that allows the end-users to attach properties to individual offer instances. Any string can be used as a key name, the values are also strings."
         }
       },
-      "required": ["xdm:name", "xdm:status"]
+      "required": [
+        "xdm:name",
+        "xdm:status"
+      ]
     }
   },
   "allOf": [

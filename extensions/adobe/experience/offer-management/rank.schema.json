@@ -22,7 +22,9 @@
           "minimum": 0
         }
       },
-      "required": ["xdm:priority"]
+      "required": [
+        "xdm:priority"
+      ]
     }
   },
   "allOf": [

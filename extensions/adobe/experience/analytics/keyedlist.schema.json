@@ -24,9 +24,9 @@
       }
     }
   },
-  "allOf":[
+  "allOf": [
     {
-       "$ref":"#/definitions/keyedlist"
+      "$ref": "#/definitions/keyedlist"
     }
   ]
 }

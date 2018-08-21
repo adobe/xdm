@@ -6,8 +6,7 @@
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id":
-    "https://ns.adobe.com/experience/offer-management/selection-constraint",
+  "$id": "https://ns.adobe.com/experience/offer-management/selection-constraint",
   "meta:abstract": false,
   "meta:extensible": true,
   "type": "object",
@@ -35,7 +34,10 @@
           "description": "The reference to an eligibility rule that tests a condition using the profile and/or other contextual XDM instances. The value is the URI (@id) of the eligibility rule that is referenced. See EligibilityRule schema https://ns.adobe.com/experience/offer-management/eligibility-rule"
         }
       },
-      "required": ["xdm:startDate", "xdm:endDate"]
+      "required": [
+        "xdm:startDate",
+        "xdm:endDate"
+      ]
     }
   },
   "allOf": [

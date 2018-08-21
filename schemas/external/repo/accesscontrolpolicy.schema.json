@@ -15,8 +15,7 @@
       "type": "object",
       "properties": {
         "repo:acl": {
-          "$ref":
-            "https://ns.adobe.com/xdm/external/repo/accesscontrolentry#/definitions/acl"
+          "$ref": "https://ns.adobe.com/xdm/external/repo/accesscontrolentry#/definitions/acl"
         }
       }
     }

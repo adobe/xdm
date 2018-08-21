@@ -11,8 +11,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:auditable": true,
-  "description":
-    "An individual person. May represent a person acting in various roles, such as a customer, contact, or owner.",
+  "description": "An individual person. May represent a person acting in various roles, such as a customer, contact, or owner.",
   "definitions": {
     "person": {
       "properties": {
@@ -38,15 +37,19 @@
         "xdm:birthYear": {
           "title": "Birth year",
           "type": "integer",
-          "description":
-            "The year a person was born including the century (yyyy, e.g 1983).",
+          "description": "The year a person was born including the century (yyyy, e.g 1983).",
           "minimum": 1,
           "maximum": 32767
         },
         "xdm:gender": {
           "title": "Gender",
           "type": "string",
-          "enum": ["male", "female", "not_specified", "non_specific"],
+          "enum": [
+            "male",
+            "female",
+            "not_specified",
+            "non_specific"
+          ],
           "meta:enum": {
             "male": "Male",
             "female": "Female",

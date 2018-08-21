@@ -9,16 +9,14 @@
   "$id": "https://ns.adobe.com/xdm/common/identity-provider",
   "title": "Identity Provider",
   "meta:extensible": true,
-  "description":
-    "An identity provider (abbreviated IdP) is a system entity that creates, maintains, and manages identity information for principals while providing authentication services to relying party applications within a federation or distributed network. An identity provider offers subject authentication as a service.",
+  "description": "An identity provider (abbreviated IdP) is a system entity that creates, maintains, and manages identity information for principals while providing authentication services to relying party applications within a federation or distributed network. An identity provider offers subject authentication as a service.",
   "definitions": {
     "name": {
       "properties": {
         "@id": {
           "type": "string",
-          "format": "uri",
-          "description":
-            "A unique (uniqueness is defined on the same lines as defined [here](https://tools.ietf.org/html/rfc8141#section-5)) and persistent identifier for the identity provider. Ideally, this identifier should be a [URI](https://tools.ietf.org/html/rfc3986)."
+          "format": "uri-reference",
+          "description": "A unique (uniqueness is defined on the same lines as defined [here](https://tools.ietf.org/html/rfc8141#section-5)) and persistent identifier for the identity provider. Ideally, this identifier should be a [URI](https://tools.ietf.org/html/rfc3986)."
         }
       }
     }
@@ -29,6 +27,8 @@
       "$ref": "#/definitions/name"
     }
   ],
-  "required": ["@id"],
+  "required": [
+    "@id"
+  ],
   "meta:status": "experimental"
 }

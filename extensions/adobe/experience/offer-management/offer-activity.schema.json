@@ -17,7 +17,7 @@
       "properties": {
         "@id": {
           "type": "string",
-          "format": "uri",
+          "format": "uri-reference",
           "title": "ID",
           "description": "The unique identifier of the offer activity. This @id must be unique across for objects that are not semantically the same, otherwise it is interpreted as referring to the same object. "
         },
@@ -30,7 +30,12 @@
           "type": "string",
           "title": "Status",
           "description": "Activity Status",
-          "enum": ["draft", "live", "complete", "archived"],
+          "enum": [
+            "draft",
+            "live",
+            "complete",
+            "archived"
+          ],
           "meta:enum": {
             "draft": "Draft",
             "live": "Live",
@@ -69,7 +74,13 @@
           "description": "The reference to a fallback offer that is used when decisioning in the context of this activity does not qualify any of the offers specified in the fallback offer. The value is the URI (@id) of the FallbackOffer that is referenced.  See FallbackOffer schema https://ns.adobe.com/experience/offer-management/fallback-offer"
         }
       },
-      "required": ["xdm:name", "xdm:status", "xdm:placement", "xdm:filter", "xdm:fallback"]
+      "required": [
+        "xdm:name",
+        "xdm:status",
+        "xdm:placement",
+        "xdm:filter",
+        "xdm:fallback"
+      ]
     }
   },
   "allOf": [

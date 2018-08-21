@@ -10,16 +10,14 @@
   "title": "Marketing",
   "type": "object",
   "meta:extensible": true,
-  "description":
-    "The information related to marketing activities that are active with the touchpoint.",
+  "description": "The information related to marketing activities that are active with the touchpoint.",
   "definitions": {
     "marketing": {
       "properties": {
         "xdm:trackingCode": {
           "title": "Tracking Code",
           "type": "string",
-          "description":
-            "Tracking code that can be used to identify the marketing campaign the event is associated with."
+          "description": "Tracking code that can be used to identify the marketing campaign the event is associated with."
         }
       }
     }

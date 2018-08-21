@@ -11,7 +11,6 @@
   "type": "object",
   "meta:extensible": true,
   "description": "Interaction details from inside the context of a loaded webpage.",
-  "meta:extensible": true,
   "definitions": {
     "webinteraction": {
       "properties": {
@@ -19,7 +18,11 @@
           "title": "Type",
           "type": "string",
           "description": "The link type.",
-          "enum": ["download", "exit", "other"],
+          "enum": [
+            "download",
+            "exit",
+            "other"
+          ],
           "meta:enum": {
             "download": "Download",
             "exit": "Exit",
@@ -34,8 +37,7 @@
         "xdm:name": {
           "title": "Name",
           "type": "string",
-          "description":
-            "The normative name used for this web link, used for classification purposes"
+          "description": "The normative name used for this web link, used for classification purposes"
         },
         "xdm:linkClicks": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",

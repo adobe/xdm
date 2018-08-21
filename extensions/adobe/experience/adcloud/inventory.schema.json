@@ -16,8 +16,7 @@
         "xdm:sessionId": {
           "title": "Session ID",
           "type": "string",
-          "description":
-          "Session ID associated with experience event, used to stitch together independent events which occurred in the same session."
+          "description": "Session ID associated with experience event, used to stitch together independent events which occurred in the same session."
         },
         "xdm:feedId": {
           "title": "Feed ID",
@@ -37,7 +36,10 @@
         "xdm:costCurrency": {
           "title": "Cost Currency",
           "type": "string",
-          "examples": ["USD", "EUR"],
+          "examples": [
+            "USD",
+            "EUR"
+          ],
           "pattern": "^[A-Z]{3}$",
           "description": "The ISO 4217 currency code used to pay partner for in ad opportunity."
         },

@@ -111,7 +111,6 @@
         "one": "There exists one and only one."
       }
     },
-
     "function-application-content": {
       "type": "object",
       "title": "N-ary function application",
@@ -127,7 +126,10 @@
               "$ref": "#/definitions/function-type"
             }
           },
-          "required": ["nodeType", "fnName"]
+          "required": [
+            "nodeType",
+            "fnName"
+          ]
         },
         {
           "oneOf": [
@@ -184,7 +186,7 @@
           "type": "string",
           "const": "and"
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -204,7 +206,7 @@
           "type": "string",
           "const": "or"
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -224,7 +226,7 @@
           "type": "string",
           "const": "="
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -245,7 +247,7 @@
           "type": "string",
           "const": "!="
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -266,7 +268,7 @@
           "type": "string",
           "const": ">"
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -287,7 +289,7 @@
           "type": "string",
           "const": ">="
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -308,7 +310,7 @@
           "type": "string",
           "const": "<="
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -329,7 +331,7 @@
           "type": "string",
           "const": "<"
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -350,7 +352,7 @@
           "type": "string",
           "const": "in"
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -371,7 +373,7 @@
           "type": "string",
           "const": "notIn"
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -392,7 +394,7 @@
           "type": "string",
           "const": "isNull"
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -413,7 +415,7 @@
           "type": "string",
           "const": "isNotNull"
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -434,7 +436,7 @@
           "type": "string",
           "const": "="
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -455,7 +457,7 @@
           "type": "string",
           "const": "notEqualTo"
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -466,7 +468,6 @@
       },
       "additionalProperties": false
     },
-
     "function-creation-content": {
       "type": "object",
       "title": "Function creation",
@@ -479,7 +480,7 @@
               "type": "string",
               "const": "fnCreate"
             },
-            "params" : {
+            "params": {
               "type": "array",
               "items": {
                 "type": "object",
@@ -488,7 +489,9 @@
                     "type": "string"
                   }
                 },
-                "required": ["varName"]
+                "required": [
+                  "varName"
+                ]
               },
               "minItems": 1
             },
@@ -496,11 +499,14 @@
               "$ref": "#/definitions/function-application-content"
             }
           },
-          "required": ["nodeType", "params", "body"]
+          "required": [
+            "nodeType",
+            "params",
+            "body"
+          ]
         }
       ]
     },
-
     "field-lookup-content": {
       "type": "object",
       "title": "Field accessor",
@@ -520,12 +526,14 @@
               "$ref": "#/definitions/node-content"
             }
           },
-          "required": ["nodeType", "fieldName"],
+          "required": [
+            "nodeType",
+            "fieldName"
+          ],
           "additionalProperties": false
         }
       ]
     },
-
     "literal-content": {
       "type": "object",
       "title": "Literal",
@@ -542,7 +550,10 @@
               "$ref": "#/definitions/literal-type"
             }
           },
-          "required": ["nodeType", "literalType"]
+          "required": [
+            "nodeType",
+            "literalType"
+          ]
         },
         {
           "oneOf": [
@@ -578,7 +589,7 @@
           "type": "string",
           "const": "String"
         },
-        "value" : {
+        "value": {
           "type": "string"
         }
       },
@@ -594,7 +605,7 @@
           "type": "string",
           "const": "Number"
         },
-        "value" : {
+        "value": {
           "type": "number"
         }
       },
@@ -610,7 +621,7 @@
           "type": "string",
           "const": "Integer"
         },
-        "value" : {
+        "value": {
           "type": "integer"
         }
       },
@@ -626,7 +637,7 @@
           "type": "string",
           "const": "Boolean"
         },
-        "value" : {
+        "value": {
           "type": "boolean"
         }
       },
@@ -642,7 +653,7 @@
           "type": "string",
           "const": "List"
         },
-        "value" : {
+        "value": {
           "type": "array"
         }
       },
@@ -658,7 +669,7 @@
           "type": "string",
           "const": "XDMObject"
         },
-        "value" : {
+        "value": {
           "type": "string"
         }
       },
@@ -674,13 +685,12 @@
           "type": "string",
           "const": "QueryString"
         },
-        "value" : {
+        "value": {
           "type": "string"
         }
       },
       "additionalProperties": false
     },
-
     "quantification-content": {
       "type": "object",
       "title": "Apply a quantification",
@@ -704,12 +714,15 @@
               "minItems": 1
             }
           },
-          "required": ["nodeType", "quantifier", "variables"],
+          "required": [
+            "nodeType",
+            "quantifier",
+            "variables"
+          ],
           "additionalProperties": false
         }
       ]
     },
-
     "select-expression-content": {
       "type": "object",
       "title": "Object tree evaluation",
@@ -730,12 +743,14 @@
               "minItems": 1
             }
           },
-          "required": ["nodeType", "variables"],
+          "required": [
+            "nodeType",
+            "variables"
+          ],
           "additionalProperties": false
         }
       ]
     },
-    
     "variable-domain-content": {
       "type": "object",
       "title": "Define a variable and its domain",
@@ -759,7 +774,11 @@
               "$ref": "#/definitions/node-content"
             }
           },
-          "required": ["nodeType", "varName", "from"],
+          "required": [
+            "nodeType",
+            "varName",
+            "from"
+          ],
           "additionalProperties": false
         }
       ]
@@ -781,12 +800,14 @@
               "pattern": "^[_A-Za-z0-9]+$"
             }
           },
-          "required": ["nodeType", "varName"],
+          "required": [
+            "nodeType",
+            "varName"
+          ],
           "additionalProperties": false
         }
       ]
     },
-
     "function-content-model-instances": {
       "type": "object",
       "title": "Reference all instances of a given model",
@@ -811,12 +832,15 @@
               "minItems": 1
             }
           },
-          "required": ["nodeType", "fnName", "params"],
+          "required": [
+            "nodeType",
+            "fnName",
+            "params"
+          ],
           "additionalProperties": false
         }
       ]
     },
-
     "node-content": {
       "allOf": [
         {
@@ -826,7 +850,9 @@
               "$ref": "#/definitions/node-type"
             }
           },
-          "required": ["nodeType"]
+          "required": [
+            "nodeType"
+          ]
         },
         {
           "oneOf": [

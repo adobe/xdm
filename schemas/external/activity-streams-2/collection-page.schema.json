@@ -15,8 +15,7 @@
           "format": "uri"
         },
         {
-          "$ref":
-            "https://ns.adobe.com/xdm/external/activity-streams-2/collection"
+          "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/collection"
         },
         {
           "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/link"
@@ -26,8 +25,7 @@
     "single-collectionPage-or-link": {
       "anyOf": [
         {
-          "$ref":
-            "https://ns.adobe.com/xdm/external/activity-streams-2/collection-page"
+          "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/collection-page"
         },
         {
           "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/link"
@@ -37,25 +35,21 @@
     "extra-properties": {
       "properties": {
         "activitystreams:partOf": {
-          "description":
-            "Identifies the Collection to which a CollectionPage objects items belong. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-partof) document for a complete description.",
+          "description": "Identifies the Collection to which a CollectionPage objects items belong. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-partof) document for a complete description.",
           "$ref": "#/definitions/single-collection-or-link"
         },
         "activitystreams:next": {
-          "description":
-            "In a paged Collection, indicates the next page of items. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-next) document for a complete description.",
+          "description": "In a paged Collection, indicates the next page of items. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-next) document for a complete description.",
           "$ref": "#/definitions/single-collectionPage-or-link"
         },
         "activitystreams:prev": {
-          "description":
-            "In a paged Collection, identifies the previous page of items. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-prev) document for a complete description.",
+          "description": "In a paged Collection, identifies the previous page of items. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-prev) document for a complete description.",
           "$ref": "#/definitions/single-collectionPage-or-link"
         }
       }
     }
   },
-  "description":
-    "Used to represent distinct subsets of items from a `Collection`. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-collectionpage) for a complete description of the `CollectionPage` object.",
+  "description": "Used to represent distinct subsets of items from a `Collection`. Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-collectionpage) for a complete description of the `CollectionPage` object.",
   "type": "object",
   "allOf": [
     {

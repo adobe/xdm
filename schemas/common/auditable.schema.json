@@ -9,10 +9,11 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Audit Trail",
   "type": "object",
-  "meta:extends": ["http://ns.adobe.com/adobecloud/core/1.0"],
+  "meta:extends": [
+    "http://ns.adobe.com/adobecloud/core/1.0"
+  ],
   "meta:abstract": true,
-  "description":
-    "Inheriting this schema using `allOf` indicates that the data record is auditable, i.e. it can be determined when the record has last been modified and by whom.",
+  "description": "Inheriting this schema using `allOf` indicates that the data record is auditable, i.e. it can be determined when the record has last been modified and by whom.",
   "definitions": {
     "auditlog": {
       "properties": {
@@ -24,22 +25,19 @@
         "xdm:repositoryLastModifiedBy": {
           "title": "Modified by User Identifier",
           "type": "string",
-          "description":
-            "User id who last modified the entity.\nAt creation time, `modifiedByUser` is set as `createdByUser`.\n"
+          "description": "User id who last modified the entity.\nAt creation time, `modifiedByUser` is set as `createdByUser`.\n"
         },
         "xdm:createdByBatchID": {
           "title": "Created by Batch Identifier",
           "type": "string",
           "format": "uri",
-          "description":
-            "The Data Set Files in Catalog Services which has been originating the creation of the entity.\n"
+          "description": "The Data Set Files in Catalog Services which has been originating the creation of the entity.\n"
         },
         "xdm:modifiedByBatchID": {
           "title": "Modified by Batch Identifier",
           "type": "string",
           "format": "uri",
-          "description":
-            "The last Data Set Files in Catalog Services which has modified the entity.\nAt creation time, `modifiedByBatchID` is set as `createdByBatchID`.\n"
+          "description": "The last Data Set Files in Catalog Services which has modified the entity.\nAt creation time, `modifiedByBatchID` is set as `createdByBatchID`.\n"
         }
       }
     }
@@ -49,8 +47,7 @@
       "$ref": "#/definitions/auditlog"
     },
     {
-      "$ref":
-        "http://ns.adobe.com/adobecloud/core/1.0#/definitions/date-properties"
+      "$ref": "http://ns.adobe.com/adobecloud/core/1.0#/definitions/date-properties"
     }
   ],
   "meta:status": "experimental"

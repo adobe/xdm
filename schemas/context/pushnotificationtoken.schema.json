@@ -10,30 +10,26 @@
   "title": "Push Notification Token",
   "type": "object",
   "meta:extensible": true,
-  "description":
-    "Push notification tokens are used to communicate with applications that\nare installed on devices or SaaS application accounts. Examples include mobile\napplication notifications over notification services like the Apple Push\nNotification service.\n",
+  "description": "Push notification tokens are used to communicate with applications that\nare installed on devices or SaaS application accounts. Examples include mobile\napplication notifications over notification services like the Apple Push\nNotification service.\n",
   "definitions": {
     "pushnotificationtoken": {
       "properties": {
         "xdm:token": {
           "title": "Token",
           "type": "string",
-          "description":
-            "The service specific token used to address the application for\ncommunication. e.g an Apple APN ID or a Google GCM ID.\n"
+          "description": "The service specific token used to address the application for\ncommunication. e.g an Apple APN ID or a Google GCM ID.\n"
         },
         "xdm:registrationDate": {
           "title": "Registration Date",
           "type": "string",
           "format": "date-time",
-          "description":
-            "Date and time when the profile has authorized its application to receive\npush notifications.\n"
+          "description": "Date and time when the profile has authorized its application to receive\npush notifications.\n"
         },
         "xdm:deregistrationDate": {
           "title": "Deregistration Date",
           "type": "string",
           "format": "date-time",
-          "description":
-            "Date and time when the profile has disabled push notifications on the application.\n"
+          "description": "Date and time when the profile has disabled push notifications on the application.\n"
         },
         "xdm:environment": {
           "title": "Environment",
@@ -48,8 +44,7 @@
         "xdm:application": {
           "title": "Application",
           "$ref": "https://ns.adobe.com/xdm/channels/application",
-          "description":
-            "Application registered to receive Push Notifications.\n"
+          "description": "Application registered to receive Push Notifications.\n"
         },
         "xdm:channel": {
           "title": "Communication Channel",

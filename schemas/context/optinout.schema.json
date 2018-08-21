@@ -10,21 +10,23 @@
   "title": "OptInOut",
   "type": "object",
   "meta:extensible": true,
-  "description":
-    "Describes a users' communication preferences by channel. For each channel individually, which is a property of this object, a user's preference (opt-in, opt-out, pending) can be recorded. In addition, a global override opt-out is possible. Each property of this schema must be a valid and known URI for an XDM Channel.",
+  "description": "Describes a users' communication preferences by channel. For each channel individually, which is a property of this object, a user's preference (opt-in, opt-out, pending) can be recorded. In addition, a global override opt-out is possible. Each property of this schema must be a valid and known URI for an XDM Channel.",
   "definitions": {
     "preference": {
-      "description":
-        "Communication preference for the outbound channel identified through its URL by the name of the property.",
+      "description": "Communication preference for the outbound channel identified through its URL by the name of the property.",
       "type": "string",
       "default": "not_provided",
-      "enum": ["not_provided", "pending", "in", "out"],
+      "enum": [
+        "not_provided",
+        "pending",
+        "in",
+        "out"
+      ],
       "meta:enum": {
         "not_provided": "Not Provided",
         "pending": "Pending Verification",
         "in": "Opt-In: the user explicitly consents to receiving messages.",
-        "out":
-          "Opt-Out: the user declines to receive any messages on this channel"
+        "out": "Opt-Out: the user declines to receive any messages on this channel"
       }
     },
     "optinout": {

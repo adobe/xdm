@@ -16,7 +16,7 @@
         "@id": {
           "title": "Organization ID",
           "type": "string",
-          "format": "uri",
+          "format": "uri-reference",
           "description": "A unique identifier for the organization."
         },
         "xdm:legalName": {
@@ -37,8 +37,7 @@
         "xdm:industry": {
           "title": "Industry",
           "type": "string",
-          "description":
-            "The the industry that this organization is a part of. This is a free-form field, and it is advisable to use a structured value for queries or to use the `xdm:classifier` property."
+          "description": "The the industry that this organization is a part of. This is a free-form field, and it is advisable to use a structured value for queries or to use the `xdm:classifier` property."
         },
         "xdm:website": {
           "title": "Web Site",
@@ -49,8 +48,7 @@
         "xdm:marketSegment": {
           "title": "Market Segment",
           "type": "string",
-          "description":
-            "The named market segment that the organization participates in. This is a free-form field, and it is advisable to use a structured value for queries or to use the `xdm:identifier` property."
+          "description": "The named market segment that the organization participates in. This is a free-form field, and it is advisable to use a structured value for queries or to use the `xdm:identifier` property."
         },
         "xdm:location": {
           "title": "Location",
@@ -62,8 +60,7 @@
           "type": "number",
           "minimum": 0,
           "maximum": 1,
-          "description":
-            "The calculated score or star rating for this organization. `1` indicates the maximum possible rating, `0` the minumum possible rating."
+          "description": "The calculated score or star rating for this organization. `1` indicates the maximum possible rating, `0` the minumum possible rating."
         },
         "xdm:identifier": {
           "title": "Organization Identifier",
@@ -81,29 +78,23 @@
           "examples": [
             {
               "https://ns.adobe.com/xdm/external/dnb": "1234",
-              "https://ns.adobe.com/xdm/external/angellist":
-                "https://angel.co/adobe"
+              "https://ns.adobe.com/xdm/external/angellist": "https://angel.co/adobe"
             }
           ],
-          "description":
-            "This object contains unambiguous identifiers for the organization. Each key is the URI of an identification service, each value is the unique ID (or preferrably URI) of the organization as defined by the identification service."
+          "description": "This object contains unambiguous identifiers for the organization. Each key is the URI of an identification service, each value is the unique ID (or preferrably URI) of the organization as defined by the identification service."
         },
         "xdm:classifier": {
           "title": "Market/Industry Classifier",
           "type": "object",
           "meta:keys": {
-            "https://ns.adobe.com/xdm/external/isic4":
-              "International Standard of Industrial Classification of All Economic Activities (ISIC)",
-            "https://ns.adobe.com/xdm/external/sic":
-              "Standard Industrial Classification",
-            "https://ns.adobe.com/xdm/external/naics":
-              "North American Industry Classification System"
+            "https://ns.adobe.com/xdm/external/isic4": "International Standard of Industrial Classification of All Economic Activities (ISIC)",
+            "https://ns.adobe.com/xdm/external/sic": "Standard Industrial Classification",
+            "https://ns.adobe.com/xdm/external/naics": "North American Industry Classification System"
           },
           "patternProperties": {
             ".+://.+": {
               "type": "string",
-              "description":
-                "ID of the market or industry according to the service."
+              "description": "ID of the market or industry according to the service."
             }
           },
           "examples": [
@@ -112,8 +103,7 @@
               "https://ns.adobe.com/xdm/external/naics": "1234"
             }
           ],
-          "description":
-            "This object contains unambiguous classifiers for the organization. Each key is the URI of an classification service or standard, each value is the unique ID (or preferrably URI) of the organization as defined by the classification service."
+          "description": "This object contains unambiguous classifiers for the organization. Each key is the URI of an classification service or standard, each value is the unique ID (or preferrably URI) of the organization as defined by the classification service."
         }
       }
     }

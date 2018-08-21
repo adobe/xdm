@@ -20,42 +20,32 @@
       "properties": {
         "@id": {
           "type": "string",
-          "format": "uri",
+          "format": "uri-reference",
           "const": "https://ns.adobe.com/xdm/channels/wechat",
-          "description":
-            "The ID uniquely identifies the channel. Each specific experience channel defines a constant `@id`."
+          "description": "The ID uniquely identifies the channel. Each specific experience channel defines a constant `@id`."
         },
         "xdm:mode": {
           "type": "string",
           "const": "push",
           "description": "How experiences are delivered in this channel.",
           "meta:enum": {
-            "push":
-              "The publisher of an experience can initiate an experience by sending a message into the channel. Most `push` channels involve some form of subscription or opt-in.",
-            "pull":
-              "The consumer can initiate an experience by requesting a location in the channel. Most `pull` channels give publishers some control how the experience is then delivered.",
-            "bidirectional":
-              "Both `push` and `pull` interaction modes are supported by the channel."
+            "push": "The publisher of an experience can initiate an experience by sending a message into the channel. Most `push` channels involve some form of subscription or opt-in.",
+            "pull": "The consumer can initiate an experience by requesting a location in the channel. Most `pull` channels give publishers some control how the experience is then delivered.",
+            "bidirectional": "Both `push` and `pull` interaction modes are supported by the channel."
           }
         },
         "@type": {
           "type": "string",
           "format": "uri",
-          "description":
-            "The `@type` property is used to provide a rough classification of channels with similar properties.",
+          "description": "The `@type` property is used to provide a rough classification of channels with similar properties.",
           "const": "https://ns.adobe.com/xdm/channel-types/messaging",
           "meta:enum": {
-            "https://ns.adobe.com/xdm/channel-types/web":
-              "The world wide web, including mobile web",
-            "https://ns.adobe.com/xdm/channel-types/social":
-              "Social media platforms",
-            "https://ns.adobe.com/xdm/channel-types/mobile":
-              "Mobile applications",
-            "https://ns.adobe.com/xdm/channel-types/messaging":
-              "Instant Messaging",
+            "https://ns.adobe.com/xdm/channel-types/web": "The world wide web, including mobile web",
+            "https://ns.adobe.com/xdm/channel-types/social": "Social media platforms",
+            "https://ns.adobe.com/xdm/channel-types/mobile": "Mobile applications",
+            "https://ns.adobe.com/xdm/channel-types/messaging": "Instant Messaging",
             "https://ns.adobe.com/xdm/channel-types/email": "E-Mail",
-            "https://ns.adobe.com/xdm/channel-types/offline":
-              "Non-Digital experience channels"
+            "https://ns.adobe.com/xdm/channel-types/offline": "Non-Digital experience channels"
           }
         },
         "xdm:contentTypes": {
@@ -71,8 +61,7 @@
         "xdm:locationTypes": {
           "type": "array",
           "const": [],
-          "description":
-            "The types of locations (virtual places) that this channel consists of and can deliver content to."
+          "description": "The types of locations (virtual places) that this channel consists of and can deliver content to."
         }
       }
     }
@@ -88,6 +77,8 @@
       "$ref": "#/definitions/channel"
     }
   ],
-  "required": ["@id"],
+  "required": [
+    "@id"
+  ],
   "meta:status": "experimental"
 }

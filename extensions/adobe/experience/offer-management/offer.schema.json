@@ -11,7 +11,8 @@
   "meta:extensible": true,
   "type": "object",
   "title": "Offer",
-  "description": "This is the base concept for offers that are used for personalization and those that serve as fallback choices when none of offers for personalization qualify at within the given context.",
+  "description":
+    "This is the base concept for offers that are used for personalization and those that serve as fallback choices when none of offers for personalization qualify at within the given context.",
   "definitions": {
     "offer": {
       "properties": {
@@ -19,24 +20,21 @@
           "type": "string",
           "format": "uri-reference",
           "title": "ID",
-          "description": "The unique identifier of the offer. It must be unique within a repository container for objects that are not the same, otherwise it is interpreted as referring to the same object."
+          "description":
+            "The unique identifier of the offer. It must be unique within a repository container for objects that are not the same, otherwise it is interpreted as referring to the same object."
         },
         "xdm:name": {
           "type": "string",
           "title": "Name",
-          "description": "The Offer name. A human readable string to find one or more offers."
+          "description":
+            "The Offer name. A human readable string to find one or more offers."
         },
         "xdm:status": {
           "type": "string",
           "title": "Status",
-          "description": "Offer Status allows user workflows to be conducted with offers. The status may affect where an offer is visible or considered relevant. Status changes are driven by the clients or services that use offers.",
-          "enum": [
-            "draft",
-            "pending",
-            "rejected",
-            "approved",
-            "archived"
-          ],
+          "description":
+            "Offer Status allows user workflows to be conducted with offers. The status may affect where an offer is visible or considered relevant. Status changes are driven by the clients or services that use offers.",
+          "enum": ["draft", "pending", "rejected", "approved", "archived"],
           "meta:enum": {
             "draft": "Draft",
             "pending": "Pending",
@@ -48,20 +46,24 @@
         "xdm:tags": {
           "type": "array",
           "title": "Tags",
-          "description": "The set of tags associated with this offer. The tags are used in OfferFilter expressions to constrain the overal offer inventory to a topical sub set (category).",
+          "description":
+            "The set of tags associated with this offer. The tags are used in OfferFilter expressions to constrain the overal offer inventory to a topical sub set (category).",
           "items": {
             "type": "string",
             "format": "uri",
-            "description": "A reference to a Tag object. The value is the URI (@id) of the Tag that is referenced. See Tag schema https://ns.adobe.com/experience/offer-management/tag"
+            "description":
+              "A reference to a Tag object. The value is the URI (@id) of the Tag that is referenced. See Tag schema https://ns.adobe.com/experience/offer-management/tag"
           }
         },
         "xdm:representations": {
           "type": "array",
           "items": {
-            "$ref": "https://ns.adobe.com/experience/offer-management/offer-representation"
+            "$ref":
+              "https://ns.adobe.com/experience/offer-management/offer-representation"
           },
           "title": "Representations",
-          "description": "Offer representations for different content variants. A single offer can have multiple contents variants. An Offer Representation is the object that connects Offers to Content. Content is information that is directed towards an audience for consumption in a (digital) experience. Content is delivered through channels (or a particular medium). "
+          "description":
+            "Offer representations for different content variants. A single offer can have multiple contents variants. An Offer Representation is the object that connects Offers to Content. Content is information that is directed towards an audience for consumption in a (digital) experience. Content is delivered through channels (or a particular medium). "
         },
         "xdm:customMetadata": {
           "type": "object",
@@ -71,13 +73,11 @@
             }
           },
           "title": "Custom Properties",
-          "description": "Custom metadata is a key-value map that allows the end-users to attach properties to individual offer instances. Any string can be used as a key name, the values are also strings."
+          "description":
+            "Custom metadata is a key-value map that allows the end-users to attach properties to individual offer instances. Any string can be used as a key name, the values are also strings."
         }
       },
-      "required": [
-        "xdm:name",
-        "xdm:status"
-      ]
+      "required": ["xdm:name", "xdm:status"]
     }
   },
   "allOf": [

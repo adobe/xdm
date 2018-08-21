@@ -9,9 +9,7 @@
   "$id": "https://ns.adobe.com/experience/adcloud/experienceevent",
   "title": "Adobe AdCloud ExperienceEvent Extension",
   "type": "object",
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/context/experienceevent"
-  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Adobe AdCloud extension to ExperienceEvent.",
   "definitions": {
     "experienceevent": {
@@ -41,7 +39,8 @@
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/context/experienceevent#/definitions/experienceevent"
+      "$ref":
+        "https://ns.adobe.com/xdm/context/experienceevent#/definitions/experienceevent"
     },
     {
       "$ref": "#/definitions/experienceevent"

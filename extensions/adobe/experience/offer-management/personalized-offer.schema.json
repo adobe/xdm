@@ -7,37 +7,38 @@
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/experience/offer-management/personalized-offer",
-  "meta:extends": [
-    "https://ns.adobe.com/experience/offer-management/offer"
-  ],
+  "meta:extends": ["https://ns.adobe.com/experience/offer-management/offer"],
   "meta:abstract": false,
   "meta:extensible": true,
   "type": "object",
   "title": "Adobe Experience Cloud Personalized Offer",
-  "description": "A Personalized Offer is the conceptual entity that is chosen during the decisioning process. The objective for decisioning is to take a large inventory of content items and apply numerous contraint rules to that inventory to first narrow it down and then rank the qualifying options. The outcome modifies the overall experience to accommodate specific individuals, sometimes tied to groups or segments of individuals.",
+  "description":
+    "A Personalized Offer is the conceptual entity that is chosen during the decisioning process. The objective for decisioning is to take a large inventory of content items and apply numerous contraint rules to that inventory to first narrow it down and then rank the qualifying options. The outcome modifies the overall experience to accommodate specific individuals, sometimes tied to groups or segments of individuals.",
   "definitions": {
     "personalized-offer": {
       "properties": {
         "xdm:rank": {
           "$ref": "https://ns.adobe.com/experience/offer-management/rank",
           "title": "Rank",
-          "description": "Offer Rank (priority). Defines what is considered the \"best offer\" given the context of the decision. Among all the Offers that have not been disqualified due other constraints, the ranking will decide top (or top N) offers to be proposed."
+          "description":
+            "Offer Rank (priority). Defines what is considered the \"best offer\" given the context of the decision. Among all the Offers that have not been disqualified due other constraints, the ranking will decide top (or top N) offers to be proposed."
         },
         "xdm:selectionConstraint": {
-          "$ref": "https://ns.adobe.com/experience/offer-management/selection-constraint",
+          "$ref":
+            "https://ns.adobe.com/experience/offer-management/selection-constraint",
           "title": "Selection Constraints",
-          "description": "Selection constraints define all rules that decide if an offer disqualifies from the set of eligible offers at this moment, for this context and/or for this profile identity. For example, Offers tyically have a start and end date before and after they are not eligible for consideration anymore"
+          "description":
+            "Selection constraints define all rules that decide if an offer disqualifies from the set of eligible offers at this moment, for this context and/or for this profile identity. For example, Offers tyically have a start and end date before and after they are not eligible for consideration anymore"
         },
         "xdm:cappingConstraint": {
-          "$ref": "https://ns.adobe.com/experience/offer-management/capping-constraint",
+          "$ref":
+            "https://ns.adobe.com/experience/offer-management/capping-constraint",
           "title": "Capping Constaints",
-          "description": "Capping constraint define additional rules based on prior offer proposition, either across all audiences or for a partcular profile identity."
+          "description":
+            "Capping constraint define additional rules based on prior offer proposition, either across all audiences or for a partcular profile identity."
         }
       },
-      "required": [
-        "xdm:rank",
-        "xdm:selectionConstraint"
-      ]
+      "required": ["xdm:rank", "xdm:selectionConstraint"]
     }
   },
   "allOf": [

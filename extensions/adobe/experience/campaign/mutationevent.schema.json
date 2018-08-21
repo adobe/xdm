@@ -28,22 +28,26 @@
           "title": "Timestamp",
           "type": "string",
           "format": "date-time",
-          "description": "The time when the first event of the interaction occurred."
+          "description":
+            "The time when the first event of the interaction occurred."
         },
         "xdm:endUserIDs": {
           "title": "End User IDs",
           "$ref": "https://ns.adobe.com/xdm/context/enduserids",
-          "description": "Condensed, normalized encapsulation of all end user identifiers.\n"
+          "description":
+            "Condensed, normalized encapsulation of all end user identifiers.\n"
         },
         "xdm:environment": {
           "title": "Environment",
           "$ref": "https://ns.adobe.com/xdm/context/environment",
-          "description": "Information about the surrounding situation the event observation occurred in, specifically detailing transitory information such as the network or software versions."
+          "description":
+            "Information about the surrounding situation the event observation occurred in, specifically detailing transitory information such as the network or software versions."
         },
         "xdm:productListItems": {
           "title": "Product List Items",
           "type": "array",
-          "description": "A list of items representing a product selected by a customer with specific options and pricing that are for that usage context at a specific point of time and may differ from the product record.",
+          "description":
+            "A list of items representing a product selected by a customer with specific options and pricing that are for that usage context at a specific point of time and may differ from the product record.",
           "items": {
             "$ref": "https://ns.adobe.com/xdm/content/productlistitem"
           }
@@ -51,17 +55,20 @@
         "xdm:device": {
           "title": "Device",
           "$ref": "https://ns.adobe.com/xdm/context/device",
-          "description": "An identified Device/Application or Device/Browser instance that is trackable across sessions, normally by cookies."
+          "description":
+            "An identified Device/Application or Device/Browser instance that is trackable across sessions, normally by cookies."
         },
         "xdm:commerce": {
           "title": "Commerce",
           "$ref": "https://ns.adobe.com/xdm/context/commerce",
-          "description": "The commerce specific data related to this interaction."
+          "description":
+            "The commerce specific data related to this interaction."
         },
         "xdm:application": {
           "title": "Application",
           "$ref": "https://ns.adobe.com/xdm/context/application",
-          "description": "The application related to the event observation. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login."
+          "description":
+            "The application related to the event observation. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login."
         },
         "xdm:search": {
           "title": "Search",
@@ -71,32 +78,38 @@
         "xdm:web": {
           "title": "Web",
           "$ref": "https://ns.adobe.com/xdm/context/webinfo",
-          "description": "The information related to web page and link of the ExperienceEvent."
+          "description":
+            "The information related to web page and link of the ExperienceEvent."
         },
         "xdm:directMarketing": {
           "title": "Direct Marketing",
           "$ref": "https://ns.adobe.com/xdm/context/direct-marketing",
-          "description": "The events and properties related to direct/outbound marketing such as email, direct mail, texts and in-app notifications."
+          "description":
+            "The events and properties related to direct/outbound marketing such as email, direct mail, texts and in-app notifications."
         },
         "xdm:marketing": {
           "title": "Marketing",
           "$ref": "https://ns.adobe.com/xdm/context/marketing",
-          "description": "The information related to marketing activities that are active with the touchpoint."
+          "description":
+            "The information related to marketing activities that are active with the touchpoint."
         },
         "xdm:placeContext": {
           "title": "Place Context",
           "$ref": "https://ns.adobe.com/xdm/context/placecontext",
-          "description": "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, working hours."
+          "description":
+            "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, working hours."
         },
         "xdm:channel": {
           "title": "Experience Channel",
-          "description": "The experience channel related to this ExperienceEvent.",
+          "description":
+            "The experience channel related to this ExperienceEvent.",
           "$ref": "https://ns.adobe.com/xdm/channels/channel"
         },
         "xdm:advertising": {
           "title": "Advertising",
           "$ref": "https://ns.adobe.com/xdm/context/advertising",
-          "description": "The information related to advertising activity related to the experience event"
+          "description":
+            "The information related to advertising activity related to the experience event"
         }
       }
     }
@@ -106,7 +119,8 @@
       "$ref": "#/definitions/experienceevent"
     },
     {
-      "$ref": "https://ns.adobe.com/experience/campaign/experienceevent#/definitions/experienceevent"
+      "$ref":
+        "https://ns.adobe.com/experience/campaign/experienceevent#/definitions/experienceevent"
     }
   ],
   "meta:status": "experimental"

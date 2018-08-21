@@ -11,7 +11,8 @@
   "meta:extensible": true,
   "type": "object",
   "title": "Offer Filter",
-  "description": "Filters are used to specify criteria for offer selection by topic or theme. The most common filter mechanism is by the tags that are associated with an offer. In general the Offer Filter selects a subset of Offers from the overall inventory, not based on the use case for the decisioning.",
+  "description":
+    "Filters are used to specify criteria for offer selection by topic or theme. The most common filter mechanism is by the tags that are associated with an offer. In general the Offer Filter selects a subset of Offers from the overall inventory, not based on the use case for the decisioning.",
   "definitions": {
     "offer-filter": {
       "properties": {
@@ -19,7 +20,8 @@
           "type": "string",
           "format": "uri-reference",
           "title": "ID",
-          "description": "The unique identifier of the filter. This @id must be unique within a repository container for objects that are not the same, otherwise it is interpreted as referring to the same object."
+          "description":
+            "The unique identifier of the filter. This @id must be unique within a repository container for objects that are not the same, otherwise it is interpreted as referring to the same object."
         },
         "xdm:name": {
           "type": "string",
@@ -28,15 +30,15 @@
         },
         "xdm:value": {
           "type": "object",
-          "title": "Expression taking offer XDM instances (list of trees) as input",
-          "description": "Contains the condition that is used to select offers based on a combination of tags or, directly, using the @id of offers",
-          "$ref": "https://ns.adobe.com/experience/offer-management/filter-expression"
+          "title":
+            "Expression taking offer XDM instances (list of trees) as input",
+          "description":
+            "Contains the condition that is used to select offers based on a combination of tags or, directly, using the @id of offers",
+          "$ref":
+            "https://ns.adobe.com/experience/offer-management/filter-expression"
         }
       },
-      "required": [
-        "xdm:name",
-        "xdm:value"
-      ]
+      "required": ["xdm:name", "xdm:value"]
     }
   },
   "allOf": [

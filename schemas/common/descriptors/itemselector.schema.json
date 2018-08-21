@@ -11,7 +11,8 @@
   "meta:extensible": false,
   "meta:abstract": false,
   "type": "object",
-  "description": "Describes how to select or match to a specific item from an array of values described by an XDM schema.  Matching may be done based on array index, @id, @type, or schema URI.",
+  "description":
+    "Describes how to select or match to a specific item from an array of values described by an XDM schema.  Matching may be done based on array index, @id, @type, or schema URI.",
   "definitions": {
     "selector": {
       "oneOf": [
@@ -20,13 +21,12 @@
             "xdm:index": {
               "title": "Index",
               "type": "integer",
-              "description": "When present, indicates the item at this array index should be selected.",
+              "description":
+                "When present, indicates the item at this array index should be selected.",
               "minimum": 0
             }
           },
-          "required": [
-            "xdm:index"
-          ]
+          "required": ["xdm:index"]
         },
         {
           "properties": {
@@ -34,12 +34,11 @@
               "title": "ID",
               "type": "string",
               "format": "uri",
-              "description": "When present, indicates the item with this @id value should be selected."
+              "description":
+                "When present, indicates the item with this @id value should be selected."
             }
           },
-          "required": [
-            "xdm:id"
-          ]
+          "required": ["xdm:id"]
         },
         {
           "properties": {
@@ -47,12 +46,11 @@
               "title": "Type",
               "type": "string",
               "format": "uri",
-              "description": "When present, indicates the item with this @type value should be selected."
+              "description":
+                "When present, indicates the item with this @type value should be selected."
             }
           },
-          "required": [
-            "xdm:type"
-          ]
+          "required": ["xdm:type"]
         },
         {
           "properties": {
@@ -60,12 +58,11 @@
               "title": "Schema",
               "type": "string",
               "format": "uri",
-              "description": "When present, indicates the item which conforms to this schema URI should be selected."
+              "description":
+                "When present, indicates the item which conforms to this schema URI should be selected."
             }
           },
-          "required": [
-            "xdm:schema"
-          ]
+          "required": ["xdm:schema"]
         }
       ]
     }

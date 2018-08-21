@@ -18,7 +18,7 @@
       "properties": {
         "@id": {
           "type": "string",
-          "format": "uri",
+          "format": "uri-reference",
           "title": "ID",
           "description":
             "The unique identifier of the filter. This @id must be unique within a repository container for objects that are not the same, otherwise it is interpreted as referring to the same object."

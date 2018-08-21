@@ -20,8 +20,7 @@
             "$ref": "https://ns.adobe.com/xdm/context/identity"
           },
           "minItems": 1,
-          "description":
-          "Array of Identities. Condensed, normalized encapsulation of all end user identifiers."
+          "description": "Array of Identities. Condensed, normalized encapsulation of all end user identifiers."
         }
       }
     }
@@ -36,4 +35,3 @@
   ],
   "meta:status": "experimental"
 }
-

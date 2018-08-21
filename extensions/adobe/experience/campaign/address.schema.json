@@ -9,7 +9,9 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Address Extensions for Adobe Campaign",
   "type": "object",
-  "meta:extends": ["https://ns.adobe.com/xdm/common/address"],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/common/address"
+  ],
   "description": "Address extension properties specific to Adobe Campaign.",
   "definitions": {
     "address": {
@@ -17,8 +19,7 @@
         "https://ns.adobe.com/experience/campaign/addressErrorCount": {
           "title": "Address Error Count",
           "type": "integer",
-          "description":
-            "Number of consecutive errors when sending to this address."
+          "description": "Number of consecutive errors when sending to this address."
         },
         "https://ns.adobe.com/experience/campaign/addressQuality": {
           "title": "Address Quality",

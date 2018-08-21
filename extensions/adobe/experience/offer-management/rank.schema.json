@@ -11,8 +11,7 @@
   "meta:extensible": true,
   "type": "object",
   "title": "Offer Rank",
-  "description":
-    "Offer rank (priority) represents the default order in which one offer is selected over another in case there is no profile specific ranking order known. If after comparing the priority value two or more offers are still tied one is chosen at random and used in the offer proposition.",
+  "description": "Offer rank (priority) represents the default order in which one offer is selected over another in case there is no profile specific ranking order known. If after comparing the priority value two or more offers are still tied one is chosen at random and used in the offer proposition.",
   "definitions": {
     "rank": {
       "properties": {
@@ -23,7 +22,9 @@
           "minimum": 0
         }
       },
-      "required": ["xdm:priority"]
+      "required": [
+        "xdm:priority"
+      ]
     }
   },
   "allOf": [

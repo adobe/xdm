@@ -10,15 +10,14 @@
   "title": "Geo Coordinates",
   "type": "object",
   "meta:extensible": true,
-  "description":
-    "The geographic coordinates of a place. Based on [schema.org](http://schema.org/GeoCoordinates).",
+  "description": "The geographic coordinates of a place. Based on [schema.org](http://schema.org/GeoCoordinates).",
   "definitions": {
     "geocoordinates": {
       "properties": {
         "@id": {
           "title": "Coordinates ID",
           "type": "string",
-          "format": "uri",
+          "format": "uri-reference",
           "description": "The unique identifier of the coordinates."
         },
         "schema:description": {
@@ -38,14 +37,12 @@
           "type": "number",
           "minimum": -180,
           "maximum": 180,
-          "description":
-            "The signed horizontal coordinate of a geographic point."
+          "description": "The signed horizontal coordinate of a geographic point."
         },
         "schema:elevation": {
           "title": "Elevation",
           "type": "number",
-          "description":
-            "The specific elevation of the defined coordinate. The value conforms to the [WGS84](http://gisgeography.com/wgs84-world-geodetic-system/) datum and is measured in meters."
+          "description": "The specific elevation of the defined coordinate. The value conforms to the [WGS84](http://gisgeography.com/wgs84-world-geodetic-system/) datum and is measured in meters."
         }
       }
     }

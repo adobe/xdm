@@ -6,42 +6,52 @@
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
   "title": "Primary key descriptors for the Offer Management Domain",
-  "description": "Contains descriptors to define the properties holding the primary key (entity identifiers) in the Offer Management domain",
+  "description":
+    "Contains descriptors to define the properties holding the primary key (entity identifiers) in the Offer Management domain",
   "meta:descriptors": [
     {
       "@type": "xdm:primaryKey",
-      "@id": "https://ns.adobe.com/experience/offer-management/eligibility-rule/id",
-      "xdm:sourceSchema": "https://ns.adobe.com/experience/offer-management/eligibility-rule",
+      "@id":
+        "https://ns.adobe.com/experience/offer-management/eligibility-rule/id",
+      "xdm:sourceSchema":
+        "https://ns.adobe.com/experience/offer-management/eligibility-rule",
       "xdm:sourceProperty": "@id"
     },
     {
       "@type": "xdm:primaryKey",
       "@id": "https://ns.adobe.com/experience/offer-management/offer/id",
-      "xdm:sourceSchema": "https://ns.adobe.com/experience/offer-management/offer",
+      "xdm:sourceSchema":
+        "https://ns.adobe.com/experience/offer-management/offer",
       "xdm:sourceProperty": "@id"
     },
     {
       "@type": "xdm:primaryKey",
-      "@id": "https://ns.adobe.com/experience/offer-management/offer-activity/id",
-      "xdm:sourceSchema": "https://ns.adobe.com/experience/offer-management/offer-activity",
+      "@id":
+        "https://ns.adobe.com/experience/offer-management/offer-activity/id",
+      "xdm:sourceSchema":
+        "https://ns.adobe.com/experience/offer-management/offer-activity",
       "xdm:sourceProperty": "@id"
     },
     {
       "@type": "xdm:primaryKey",
       "@id": "https://ns.adobe.com/experience/offer-management/offer-filter/id",
-      "xdm:sourceSchema": "https://ns.adobe.com/experience/offer-management/offer-filter",
+      "xdm:sourceSchema":
+        "https://ns.adobe.com/experience/offer-management/offer-filter",
       "xdm:sourceProperty": "@id"
     },
     {
       "@type": "xdm:primaryKey",
-      "@id": "https://ns.adobe.com/experience/offer-management/offer-placement/id",
-      "xdm:sourceSchema": "https://ns.adobe.com/experience/offer-management/offer-placement",
+      "@id":
+        "https://ns.adobe.com/experience/offer-management/offer-placement/id",
+      "xdm:sourceSchema":
+        "https://ns.adobe.com/experience/offer-management/offer-placement",
       "xdm:sourceProperty": "@id"
     },
     {
       "@type": "xdm:primaryKey",
       "@id": "https://ns.adobe.com/experience/offer-management/tag/id",
-      "xdm:sourceSchema": "https://ns.adobe.com/experience/offer-management/tag",
+      "xdm:sourceSchema":
+        "https://ns.adobe.com/experience/offer-management/tag",
       "xdm:sourceProperty": "@id"
     }
   ]

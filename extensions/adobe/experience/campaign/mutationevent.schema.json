@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id":"https://ns.adobe.com/experience/campaign/mutationevent",
+  "$id": "https://ns.adobe.com/experience/campaign/mutationevent",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Adobe Campaign Mutation Event",
   "type": "object",
@@ -103,12 +103,13 @@
           "title": "Experience Channel",
           "description":
             "The experience channel related to this ExperienceEvent.",
-            "$ref": "https://ns.adobe.com/xdm/channels/channel"
+          "$ref": "https://ns.adobe.com/xdm/channels/channel"
         },
         "xdm:advertising": {
           "title": "Advertising",
           "$ref": "https://ns.adobe.com/xdm/context/advertising",
-          "description": "The information related to advertising activity related to the experience event"
+          "description":
+            "The information related to advertising activity related to the experience event"
         }
       }
     }
@@ -118,7 +119,8 @@
       "$ref": "#/definitions/experienceevent"
     },
     {
-      "$ref": "https://ns.adobe.com/experience/campaign/experienceevent#/definitions/experienceevent"
+      "$ref":
+        "https://ns.adobe.com/experience/campaign/experienceevent#/definitions/experienceevent"
     }
   ],
   "meta:status": "experimental"

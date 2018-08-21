@@ -2,7 +2,21 @@
 
 ## Release 0.9.4
 
-_Planned for August 17, 2018_
+[Released on August 17, 2018](https://github.com/adobe/xdm/releases/tag/v0.9.4)
+
+Fixed Issues
+
+* Need representation for stitched profiles and segment membership in ExperienceEvent
+  * PR #444 profile stitch
+
+Merged Pull Requests
+
+* #411 Payload value types
+* #445 Change repo:assetID to repo:id
+* #456 Adding Target Activities elements
+* #459 Added Authenticated State property to `\context\identity.schema.json`
+* #474 Minor refactor of segment membership schemas to be more tool friendly
+* #475 Make experience schemas xed convertable for 0.9.9.4 release
 
 ## Release 0.9.3
 

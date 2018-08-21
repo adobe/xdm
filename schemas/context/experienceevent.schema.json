@@ -126,6 +126,19 @@
           "description": "The media activity information related to the experience event"
         }
       },
+      "xdm:profileStitching" : {
+        "title": "Profile Stitching",
+        "description": "Details about the ids that were joined by profile stitching.",
+        "$ref": "https://ns.adobe.com/xdm/context/profileStitch"
+      },
+      "xdm:segmentMemberships": {
+        "title": "Segment Memberships",
+        "description": "The segments associated with this experience event",
+        "type": "array",
+        "items": {
+          "$ref": "https://ns.adobe.com/xdm/context/segmentmembershipitem"
+        }
+      },
       "required": ["@id", "xdm:timestamp", "xdm:endUserIDs"]
     }
   },

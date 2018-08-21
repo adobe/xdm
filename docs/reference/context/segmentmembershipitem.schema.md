@@ -1,52 +1,81 @@
 
-# Segment Membership Schema
+# Segment Membership Item Schema
 
 ```
-https://ns.adobe.com/xdm/context/segmentmembership
+https://ns.adobe.com/xdm/context/segmentmembershipitem
 ```
 
-Details about a segment membership.
+List item that contains details of segment membership combined the identities to which the membership applies
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/segmentmembership.schema.json](context/segmentmembership.schema.json) |
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/segmentmembershipitem.schema.json](context/segmentmembershipitem.schema.json) |
 ## Schema Hierarchy
 
-* Segment Membership `https://ns.adobe.com/xdm/context/segmentmembership`
-  * [Identity](segmentidentity.schema.md) `https://ns.adobe.com/xdm/context/segmentidentity`
+* Segment Membership Item `https://ns.adobe.com/xdm/context/segmentmembershipitem`
+  * [Segment Membership](segmentmembership.schema.md) `https://ns.adobe.com/xdm/context/segmentmembership`
 
 
-## Segment Membership Example
+## Segment Membership Item Example
 ```json
 {
   "xdm:segmentID": {
-    "@id": "https://data.adobe.io/entities/segmentIdentity/92312748749128",
+    "@id": "https://data.adobe.io/entities/identity/92312748749128",
     "xdm:namespace": {
       "xdm:code": "AAM"
     }
   },
-  "xdm:lastQualificationTime": "2017-09-26T15:52:25+00:00",
-  "xdm:version": "1.0",
-  "xdm:validUntil": "2017-12-26T15:52:25+00:00",
-  "xdm:status": "realized",
-  "xdm:payload": {
-    "xdm:payloadPropensityValue": 0.5,
-    "xdm:payloadType": "propensity"
+  "xdm:profileStitchID": {
+    "@id": "https://data.adobe.io/entities/profileStitchIdentity/1",
+    "xdm:namespace": {
+      "xdm:code": "AAM"
+    },
+    "xdm:lastQualificationTime": "2017-09-26T15:52:25+00:00",
+    "xdm:version": "1.0",
+    "xdm:validUntil": "2017-12-26T15:52:25+00:00",
+    "xdm:status": "realized"
   }
 }
 ```
 
-# Segment Membership Properties
+# Segment Membership Item Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:lastQualificationTime](#xdmlastqualificationtime) | `string` | Optional | Segment Membership (this schema) |
-| [xdm:payload](#xdmpayload) | `object` | Optional | Segment Membership (this schema) |
-| [xdm:segmentID](#xdmsegmentid) | Identity | Optional | Segment Membership (this schema) |
-| [xdm:status](#xdmstatus) | `enum` | Optional | Segment Membership (this schema) |
-| [xdm:validUntil](#xdmvaliduntil) | `string` | Optional | Segment Membership (this schema) |
-| [xdm:version](#xdmversion) | `string` | Optional | Segment Membership (this schema) |
+| [xdm:identities](#xdmidentities) | Identity | Optional | Segment Membership Item (this schema) |
+| [xdm:lastQualificationTime](#xdmlastqualificationtime) | `string` | Optional | [Segment Membership](segmentmembership.schema.md#xdmlastqualificationtime) |
+| [xdm:payload](#xdmpayload) | `object` | Optional | [Segment Membership](segmentmembership.schema.md#xdmpayload) |
+| [xdm:segmentID](#xdmsegmentid) | Identity | Optional | [Segment Membership](segmentmembership.schema.md#xdmsegmentid) |
+| [xdm:status](#xdmstatus) | `enum` | Optional | [Segment Membership](segmentmembership.schema.md#xdmstatus) |
+| [xdm:validUntil](#xdmvaliduntil) | `string` | Optional | [Segment Membership](segmentmembership.schema.md#xdmvaliduntil) |
+| [xdm:version](#xdmversion) | `string` | Optional | [Segment Membership](segmentmembership.schema.md#xdmversion) |
 | `*` | any | Additional | this schema *allows* additional properties |
+
+## xdm:identities
+### All User Identities
+
+Array of Identities. Condensed, normalized encapsulation of all end user identifiers.
+
+`xdm:identities`
+* is optional
+* type: Identity
+* at least `1` items in the array
+* defined in this schema
+
+### xdm:identities Type
+
+
+Array type: Identity
+
+All items must be of the type:
+* [Identity](identity.schema.md) – `https://ns.adobe.com/xdm/context/identity`
+
+
+
+
+
+
+
 
 ## xdm:lastQualificationTime
 ### Last Qualification Time
@@ -56,7 +85,7 @@ The timestamp when the assertion of segment membership was made.
 `xdm:lastQualificationTime`
 * is optional
 * type: `string`
-* defined in this schema
+* defined in [Segment Membership](segmentmembership.schema.md#xdm:lastQualificationTime)
 
 ### xdm:lastQualificationTime Type
 
@@ -77,7 +106,7 @@ Values that are directly related with the segment realization. This payload exis
 `xdm:payload`
 * is optional
 * type: `object`
-* defined in this schema
+* defined in [Segment Membership](segmentmembership.schema.md#xdm:payload)
 
 ### xdm:payload Type
 
@@ -213,7 +242,7 @@ The identity of the segment or snapshot definition in with the domain of the spe
 `xdm:segmentID`
 * is optional
 * type: Identity
-* defined in this schema
+* defined in [Segment Membership](segmentmembership.schema.md#xdm:segmentID)
 
 ### xdm:segmentID Type
 
@@ -232,7 +261,7 @@ Is the segment participation realized as part of the current request.
 `xdm:status`
 * is optional
 * type: `enum`
-* defined in this schema
+* defined in [Segment Membership](segmentmembership.schema.md#xdm:status)
 
 The value of this property **must** be equal to one of the [known values below](#xdm:status-known-values).
 
@@ -254,7 +283,7 @@ The timestamp for when the segment assertion should nolonger be assumed to be va
 `xdm:validUntil`
 * is optional
 * type: `string`
-* defined in this schema
+* defined in [Segment Membership](segmentmembership.schema.md#xdm:validUntil)
 
 ### xdm:validUntil Type
 
@@ -275,7 +304,7 @@ The version of the segment definition used in this segment assertion. Version ca
 `xdm:version`
 * is optional
 * type: `string`
-* defined in this schema
+* defined in [Segment Membership](segmentmembership.schema.md#xdm:version)
 
 ### xdm:version Type
 

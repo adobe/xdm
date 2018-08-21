@@ -1,0 +1,42 @@
+{
+    "meta:license": [
+        "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/context/profileStitchIdentity",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Identity",
+    "type": "object",
+    "description": "ProfileStitchIdentity is used to clearly distinguish Profile Stitching from multiple sources. ProfileStitchIdentity is established by an Profile Stitch identity provider, which itself is referenced in the `namespace` attribute. Within each `namespace`, the profileStitchIdentity is unique.",
+    "definitions": {
+        "profileStitchIdentity": {
+            "properties": {
+                "@id": {
+                    "title": "Identifier",
+                    "type": "string",
+                    "format": "uri",
+                    "description": "Identity of the Profile Stitch in the related namespace."
+                },
+                "xdm:namespace": {
+                    "title": "Namespace",
+                    "$ref": "https://ns.adobe.com/xdm/context/namespace",
+                    "description": "The namespace associated with the `xid` attribute."
+                },
+                "xdm:xid": {
+                    "title": "Experience Identifier",
+                    "type": "string",
+                    "description": "When present, this value represents a cross-namespace identifier that is unique across all namespace-scoped identifiers in all namespaces."
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/profileStitchIdentity"
+        }
+    ],
+    "meta:status": "experimental"
+}
+

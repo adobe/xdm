@@ -67,9 +67,38 @@
         },
         "https://ns.adobe.com/experience/campaign/orchestrationAction": {
           "title": "Action on step transition",
+          "type": "object",
           "description":
             "Action taken during a step transition happening for an user in state machine",
-          "$ref": "https://ns.adobe.com/experience/campaign/orchestration/experienceevent#/definitions/action"  
+          "properties": {
+            "xdm:actionID": {
+              "title": "Action identifier",
+              "type": "string",
+              "format": "uri",
+              "description": "Unique identifier denoting the associated action."
+            },
+            "xdm:type": {
+              "title": "Action Type",
+              "type": "string",
+              "description": "The type of action to be performed.",
+              "meta:enum": {
+                "scheduled_notification":
+                  "This action type allows to specify scheduled notifications and wait for the notifications as incoming events for steps",
+                "http_call":
+                  "This action type is for a HTTP call on an external system",
+                "action_with_personalization":
+                  "This action type describes an action with personalization that will be resolved at runtime for each voyager instance",
+                "parameterized_action":
+                  "This action type describes an action with parameterization",
+                "send_journey_notification":
+                  "This action type is to send notification for another journey",
+                "acs_writer":
+                  "The ACS writer action performs REST calls to an Adobe campaign standard instance to write data",
+                "acs_message_center":
+                  "The ACS message center action performs REST calls to an Adobe campaign standard instance to send messages with Message Center"
+              }
+            }
+          }
         },
         "https://ns.adobe.com/experience/campaign/orchestrationExternalEvent": {
           "title": "external event received",
@@ -80,14 +109,34 @@
         },
         "https://ns.adobe.com/experience/campaign/journey": {
           "title": "Journey for users",
+          "type": "object",
           "description": "Journey created by marketer for its users",
-          "$ref": "https://ns.adobe.com/experience/campaign/orchestration/experienceevent#/definitions/journey"
+          "properties": {
+            "@id": {
+              "title": "Journey unique identifier",
+              "type": "string",
+              "format": "uri",
+              "description":
+                "The unique identifier of the journey created by the marketer."
+            }
+          },
+          "required": ["@id"]
         },
         "https://ns.adobe.com/experience/campaign/journeyVersion": {
           "title": "Journey version",
+          "type": "object",
           "description":
             "Schema for describing the version of a journey, where version holds the state machine",
-          "$ref": "https://ns.adobe.com/experience/campaign/orchestration/experienceevent#/definitions/journeyVersion"
+          "properties": {
+            "@id": {
+              "title": "Journey version identifier",
+              "type": "string",
+              "format": "uri",
+              "description":
+                "The unique identifier denoting the version of journey on which the user is active"
+            }
+          },
+          "required": ["@id"]
         }
       }
     }

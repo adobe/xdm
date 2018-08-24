@@ -7,6 +7,7 @@ XDM schemas are defined in terms of JSON Schema and therefore inherit a type mod
 The following table describes the available data types:
 
 | XDM type | Range | JSON Schema type | JSON Schema format |
+|---|---|---|---|
 | string | unlimited | string ||
 | number | ±2.23×10^308 to ±1.80×10^308 (IEEE 64-bit floating point) | number ||
 | long | (-2^53 + 1) - (2^53 + 1) (54-bit signed integer\*) | integer ||

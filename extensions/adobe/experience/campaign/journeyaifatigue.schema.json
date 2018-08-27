@@ -7,9 +7,9 @@
   ],
   "$id": "https://ns.adobe.com/experience/campaign/journeyaifatigue",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Journey AI Fatigue",
+  "title": "Fatigue Score and Level",
   "type": "object",
-  "description": "Journey AI fatigue score and level",
+  "description": "Fatigue score and fatigue level from Journey AI",
   "definitions": {
     "journeyaifatigue": {
       "properties": {

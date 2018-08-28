@@ -1,5 +1,5 @@
 
-# Identity Schema
+# Segment Identity Schema
 
 ```
 https://ns.adobe.com/xdm/context/segmentidentity
@@ -12,11 +12,11 @@ SegmentIdentity is used to clearly distinguish segments from multiple sources. S
 | Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [context/segmentidentity.schema.json](context/segmentidentity.schema.json) |
 ## Schema Hierarchy
 
-* Identity `https://ns.adobe.com/xdm/context/segmentidentity`
+* Segment Identity `https://ns.adobe.com/xdm/context/segmentidentity`
   * [Namespace](namespace.schema.md) `https://ns.adobe.com/xdm/context/namespace`
 
 
-## Identity Example
+## Segment Identity Example
 ```json
 {
   "@id": "https://data.adobe.io/entities/segmentIdentity/id123",
@@ -26,13 +26,13 @@ SegmentIdentity is used to clearly distinguish segments from multiple sources. S
 }
 ```
 
-# Identity Properties
+# Segment Identity Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Identity (this schema) |
-| [xdm:namespace](#xdmnamespace) | Namespace | Optional | Identity (this schema) |
-| [xdm:xid](#xdmxid) | `string` | Optional | Identity (this schema) |
+| [@id](#@id) | `string` | Optional | Segment Identity (this schema) |
+| [xdm:namespace](#xdmnamespace) | Namespace | Optional | Segment Identity (this schema) |
+| [xdm:xid](#xdmxid) | `string` | Optional | Segment Identity (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id

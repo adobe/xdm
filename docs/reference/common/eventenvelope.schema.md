@@ -40,7 +40,11 @@ An `EventEnvelope` is a type of `Activity` (in the sense of [W3C Activity Stream
   "activitystreams:object": {
     "@type": "https://ns.adobe.com/xdm/assets/asset",
     "repo:id": "urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
-    "@id": "https://cc-api-storage-stage.adobe.io/id/urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185"
+    "@id": "https://cc-api-storage-stage.adobe.io/id/urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
+    "xdm:name": "example.jpg",
+    "xdm:path": "/MyFolder/example.jpg",
+    "dc:format": "image/jpg",
+    "repo:etag": "\"6fc55d0389d856ae7deccebba54f110e\""
   }
 }
 ```
@@ -150,11 +154,7 @@ An `EventEnvelope` is a type of `Activity` (in the sense of [W3C Activity Stream
   "activitystreams:object": {
     "@type": "https://ns.adobe.com/xdm/assets/asset",
     "repo:id": "urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
-    "@id": "https://cc-api-storage-stage.adobe.io/id/urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
-    "xdm:name": "example.jpg",
-    "xdm:path": "/MyFolder/example.jpg",
-    "dc:format": "image/jpg",
-    "repo:etag": "\"6fc55d0389d856ae7deccebba54f110e\""
+    "@id": "https://cc-api-storage-stage.adobe.io/id/urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185"
   }
 }
 ```

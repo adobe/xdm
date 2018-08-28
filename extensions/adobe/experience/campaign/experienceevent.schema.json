@@ -195,12 +195,14 @@
             "xdm:deliveryLabel": {
               "title": "Delivery Label",
               "type": "string",
-              "description" : "Human friendly name of the campaign activity which is originating this message."
+              "description":
+                "A human-friendly name of the campaign activity which is originating this message."
             },
             "xdm:deliveryName": {
               "title": "Delivery Internal name",
               "type": "string",
-              "description" : "Friendly identifier of the campaign activity which is originating this message."
+              "description":
+                "A human-friendly identifier of the campaign activity which is originating this message."
             }
           }
         },
@@ -218,7 +220,8 @@
             "xdm:campaignName": {
               "title": "Campaign Internal name",
               "type": "string",
-              "description" : "Human friendly identifier of the marketing campaign which is originating this message."
+              "description":
+                "A human-friendly identifier of the marketing campaign which is originating this message."
             }
           }
         },
@@ -278,34 +281,41 @@
             },
             "orchestrationDetails": {
               "title": "Orchestration Details",
-              "description": "Set of attributes that are associated with every orchestration.",
+              "description":
+                "Set of attributes that are associated with every orchestration.",
               "type": "object",
               "properties": {
                 "journey": {
                   "title": "Journey for an entity",
-                  "$ref": "https://ns.adobe.com/experience/campaign/orchestration/experienceevent#/definitions/journey",
+                  "$ref":
+                    "https://ns.adobe.com/experience/campaign/orchestration/experienceevent#/definitions/journey",
                   "description": "Journey created by marketer for its entities."
                 },
                 "journeyVersion": {
                   "title": "Journey Version for an entity",
-                  "$ref": "https://ns.adobe.com/experience/campaign/orchestration/experienceevent#/definitions/journeyVersion",
-                  "description": "Schema for describing the version of a journey, where version holds the state machine."
+                  "$ref":
+                    "https://ns.adobe.com/experience/campaign/orchestration/experienceevent#/definitions/journeyVersion",
+                  "description":
+                    "Schema for describing the version of a journey, where version holds the state machine."
                 },
                 "action": {
                   "title": "Action associated with a journey",
-                  "$ref": "https://ns.adobe.com/experience/campaign/orchestration/experienceevent#/definitions/action",
-                  "description": "Action that is executed for an entity when reached a step in in the journey state machine.",
-                  "required":["xdm:actionID"]
+                  "$ref":
+                    "https://ns.adobe.com/experience/campaign/orchestration/experienceevent#/definitions/action",
+                  "description":
+                    "Action that is executed for an entity when reached a step in in the journey state machine.",
+                  "required": ["xdm:actionID"]
                 }
               },
-              "required":["journey", "journeyVersion", "action"],
+              "required": ["journey", "journeyVersion", "action"]
             }
           }
         },
         "https://ns.adobe.com/experience/campaign/containerID": {
           "title": "Container identifier",
           "type": "string",
-          "description": "The identifier denoting the container with which campaign experience event is associated."
+          "description":
+            "The identifier denoting the container with which campaign experience event is associated."
         }
       }
     },

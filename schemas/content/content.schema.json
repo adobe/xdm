@@ -22,22 +22,19 @@
       "properties": {
         "@id": {
           "type": "string",
-          "format": "uri",
-          "description":
-            "A unique identifier given to every addressable piece of content in a given repository."
+          "format": "uri-reference",
+          "description": "A unique identifier given to every addressable piece of content in a given repository."
         },
         "xdm:repositoryCreatedBy": {
           "type": "string",
           "meta:immutable": true,
           "meta:usereditable": false,
-          "description":
-            "ID of the user who initiated the action that caused the resource to be created in the repository."
+          "description": "ID of the user who initiated the action that caused the resource to be created in the repository."
         },
         "xdm:repositoryLastModifiedBy": {
           "type": "string",
           "meta:usereditable": false,
-          "description":
-            "ID of the user who initiated the action that most recently caused the resource to be modified in the repository."
+          "description": "ID of the user who initiated the action that most recently caused the resource to be modified in the repository."
         }
       }
     }
@@ -47,12 +44,10 @@
       "$ref": "http://ns.adobe.com/adobecloud/core/1.0/asset#/definitions/asset"
     },
     {
-      "$ref":
-        "http://ns.adobe.com/adobecloud/core/1.0#/definitions/common-properties"
+      "$ref": "http://ns.adobe.com/adobecloud/core/1.0#/definitions/common-properties"
     },
     {
-      "$ref":
-        "http://ns.adobe.com/adobecloud/core/1.0#/definitions/date-properties"
+      "$ref": "http://ns.adobe.com/adobecloud/core/1.0#/definitions/date-properties"
     },
     {
       "$ref": "https://ns.adobe.com/xdm/external/hal/resource#/definitions/hal"

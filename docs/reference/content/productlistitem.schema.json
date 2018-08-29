@@ -21,7 +21,7 @@
                 "@id": {
                     "title": "Line Item ID.",
                     "type": "string",
-                    "format": "uri",
+                    "format": "uri-reference",
                     "description": "The line item identifier for this product entry. The product itself is identified through `xdm:product`."
                 },
                 "xdm:product": {

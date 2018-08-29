@@ -10,15 +10,14 @@
   "title": "ExperienceEvent",
   "type": "object",
   "meta:extensible": true,
-  "description":
-    "The core ExperienceEvent XDM is used to capture observations that are altering one or more related XDMs/entities. The ExperienceEvent captures information about the observation taking place and when it is occurring. It is critical for time domain analytics as it allows observation and analysis of changes that occur in windows of time and comparison with other windows of time to track trends. ExperienceEvent are either explicit or implicit. Explicit events are direct observations of a human action taking place during a session. Implicit events are events that are being raised without a direct human action. Examples of implicit events are scheduled email sending of newsletters, battery voltage reaching a certain threshold, a person entering into range of a proximity sensor. While not all events are easily categorized across all data sources, it is extremely valuable to harmonize similar events into similar types for processing where possible, and the XDM specifications does this by defining a set of enumerated **type** attribute values with specific semantic meanings. Where possible events must be constrained to these enumerated values to facilitate interoperability.",
+  "description": "The core ExperienceEvent XDM is used to capture observations that are altering one or more related XDMs/entities. The ExperienceEvent captures information about the observation taking place and when it is occurring. It is critical for time domain analytics as it allows observation and analysis of changes that occur in windows of time and comparison with other windows of time to track trends. ExperienceEvent are either explicit or implicit. Explicit events are direct observations of a human action taking place during a session. Implicit events are events that are being raised without a direct human action. Examples of implicit events are scheduled email sending of newsletters, battery voltage reaching a certain threshold, a person entering into range of a proximity sensor. While not all events are easily categorized across all data sources, it is extremely valuable to harmonize similar events into similar types for processing where possible, and the XDM specifications does this by defining a set of enumerated **type** attribute values with specific semantic meanings. Where possible events must be constrained to these enumerated values to facilitate interoperability.",
   "definitions": {
     "experienceevent": {
       "properties": {
         "@id": {
           "title": "Identifier",
           "type": "string",
-          "format": "uri",
+          "format": "uri-reference",
           "description": "The unique identifier for the ExperienceEvent."
         },
         "xdm:dataSource": {
@@ -30,33 +29,28 @@
           "title": "Timestamp",
           "type": "string",
           "format": "date-time",
-          "description":
-            "The time when the first event of the interaction occurred."
+          "description": "The time when the first event of the interaction occurred."
         },
         "xdm:receivedTimestamp": {
           "title": "Received Timestamp",
           "type": "string",
           "format": "date-time",
-          "description":
-            "The time at which this interaction was received by a server."
+          "description": "The time at which this interaction was received by a server."
         },
         "xdm:endUserIDs": {
           "title": "End User IDs",
           "$ref": "https://ns.adobe.com/xdm/context/enduserids",
-          "description":
-            "Condensed, normalized encapsulation of all end user identifiers."
+          "description": "Condensed, normalized encapsulation of all end user identifiers."
         },
         "xdm:environment": {
           "title": "Environment",
           "$ref": "https://ns.adobe.com/xdm/context/environment",
-          "description":
-            "Information about the surrounding situation the event observation occurred in, specifically detailing transitory information such as the network or software versions."
+          "description": "Information about the surrounding situation the event observation occurred in, specifically detailing transitory information such as the network or software versions."
         },
         "xdm:productListItems": {
           "title": "Product List Items",
           "type": "array",
-          "description":
-            "A list of items representing a product selected by a customer with specific options and pricing that are for that usage context at a specific point of time and may differ from the product record.",
+          "description": "A list of items representing a product selected by a customer with specific options and pricing that are for that usage context at a specific point of time and may differ from the product record.",
           "items": {
             "$ref": "https://ns.adobe.com/xdm/content/productlistitem"
           }
@@ -64,20 +58,17 @@
         "xdm:device": {
           "title": "Device",
           "$ref": "https://ns.adobe.com/xdm/context/device",
-          "description":
-            "An identified Device/Application or Device/Browser instance that is trackable across sessions, normally by cookies."
+          "description": "An identified Device/Application or Device/Browser instance that is trackable across sessions, normally by cookies."
         },
         "xdm:commerce": {
           "title": "Commerce",
           "$ref": "https://ns.adobe.com/xdm/context/commerce",
-          "description":
-            "The commerce specific data related to this interaction."
+          "description": "The commerce specific data related to this interaction."
         },
         "xdm:application": {
           "title": "Application",
           "$ref": "https://ns.adobe.com/xdm/context/application",
-          "description":
-            "The application related to the event observation. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login."
+          "description": "The application related to the event observation. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login."
         },
         "xdm:search": {
           "title": "Search",
@@ -87,32 +78,27 @@
         "xdm:web": {
           "title": "Web",
           "$ref": "https://ns.adobe.com/xdm/context/webinfo",
-          "description":
-            "The information related to web page and link of the ExperienceEvent."
+          "description": "The information related to web page and link of the ExperienceEvent."
         },
         "xdm:directMarketing": {
           "title": "Direct Marketing",
           "$ref": "https://ns.adobe.com/xdm/context/direct-marketing",
-          "description":
-            "The events and properties related to direct/outbound marketing such as email, direct mail, texts and in-app notifications."
+          "description": "The events and properties related to direct/outbound marketing such as email, direct mail, texts and in-app notifications."
         },
         "xdm:marketing": {
           "title": "Marketing",
           "$ref": "https://ns.adobe.com/xdm/context/marketing",
-          "description":
-            "The information related to marketing activities that are active with the touchpoint."
+          "description": "The information related to marketing activities that are active with the touchpoint."
         },
         "xdm:placeContext": {
           "title": "Place Context",
           "$ref": "https://ns.adobe.com/xdm/context/placecontext",
-          "description":
-            "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, working hours."
+          "description": "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, working hours."
         },
         "xdm:channel": {
           "title": "Experience Channel",
-          "description":
-            "The experience channel related to this ExperienceEvent.",
-            "$ref": "https://ns.adobe.com/xdm/channels/channel"
+          "description": "The experience channel related to this ExperienceEvent.",
+          "$ref": "https://ns.adobe.com/xdm/channels/channel"
         },
         "xdm:advertising": {
           "title": "Advertising",
@@ -139,7 +125,11 @@
           }
         }
       },
-      "required": ["@id", "xdm:timestamp", "xdm:endUserIDs"]
+      "required": [
+        "@id",
+        "xdm:timestamp",
+        "xdm:endUserIDs"
+      ]
     }
   },
   "allOf": [

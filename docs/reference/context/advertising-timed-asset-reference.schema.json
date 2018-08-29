@@ -17,7 +17,7 @@
                 "@id": {
                     "title": "Ad ID",
                     "type": "string",
-                    "format": "uri",
+                    "format": "uri-reference",
                     "description": "Identifier of the ad asset provided by Media Analytics customers."
                 },
                 "dc:title": {

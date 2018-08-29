@@ -17,9 +17,8 @@
         "@id": {
           "title": "Identifier",
           "type": "string",
-          "format": "uri",
-          "description":
-            "The ID associated with this geographical unit."
+          "format": "uri-reference",
+          "description": "The ID associated with this geographical unit."
         },
         "xdm:label": {
           "title": "Label of the geographical unit.",
@@ -27,7 +26,9 @@
           "description": "The user-friendly name for the geographical unit."
         }
       },
-      "required": ["@id"]
+      "required": [
+        "@id"
+      ]
     }
   },
   "allOf": [

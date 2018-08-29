@@ -9,28 +9,25 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Segment Identity",
   "type": "object",
-  "description":
-    "SegmentIdentity is used to clearly distinguish segments from multiple sources. SegmentIdentity is established by an segment identity provider, which itself is referenced in the `namespace` attribute. Within each `namespace`, the segmentidentity is unique.",
+  "description": "SegmentIdentity is used to clearly distinguish segments from multiple sources. SegmentIdentity is established by an segment identity provider, which itself is referenced in the `namespace` attribute. Within each `namespace`, the segmentidentity is unique.",
   "definitions": {
     "segmentIdentity": {
       "properties": {
         "@id": {
           "title": "Identifier",
           "type": "string",
-          "format": "uri",
+          "format": "uri-reference",
           "description": "Identity of the Segment in the related namespace."
         },
         "xdm:namespace": {
           "title": "Namespace",
           "$ref": "https://ns.adobe.com/xdm/context/namespace",
-          "description":
-            "The namespace associated with the `xid` attribute."
+          "description": "The namespace associated with the `xid` attribute."
         },
         "xdm:xid": {
           "title": "Experience Identifier",
           "type": "string",
-          "description":
-            "When present, this value represents a cross-namespace identifier that is unique across all namespace-scoped identifiers in all namespaces."
+          "description": "When present, this value represents a cross-namespace identifier that is unique across all namespace-scoped identifiers in all namespaces."
         }
       }
     }

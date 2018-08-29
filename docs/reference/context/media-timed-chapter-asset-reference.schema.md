@@ -9,7 +9,7 @@ Asset information about the chapter captured by the experience event.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [context/media-timed-chapter-asset-reference.schema.json](context/media-timed-chapter-asset-reference.schema.json) |
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/media-timed-chapter-asset-reference.schema.json](context/media-timed-chapter-asset-reference.schema.json) |
 ## Schema Hierarchy
 
 * Timed Media Chapter Asset Reference `https://ns.adobe.com/xdm/context/media-timed-chapter-asset-reference`
@@ -48,7 +48,7 @@ The identity of the chapter.
 
 
 `string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
 
 
 

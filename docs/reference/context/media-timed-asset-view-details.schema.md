@@ -9,7 +9,7 @@ View details for the main content playback, present on all ads and chapters that
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [context/media-timed-asset-view-details.schema.json](context/media-timed-asset-view-details.schema.json) |
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/media-timed-asset-view-details.schema.json](context/media-timed-asset-view-details.schema.json) |
 ## Schema Hierarchy
 
 * Primary Asset View Details `https://ns.adobe.com/xdm/context/media-timed-asset-view-details`
@@ -66,7 +66,7 @@ Identifies an instance of a content stream unique to an individual playback.
 
 
 `string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
 
 
 

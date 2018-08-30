@@ -9,7 +9,7 @@ Native mobile applications that are installed through an app store.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [channels/mobile-app.schema.json](channels/mobile-app.schema.json) |
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/mobile-app.schema.json](channels/mobile-app.schema.json) |
 ## Schema Hierarchy
 
 * Web `https://ns.adobe.com/xdm/channels/mobile-app`

@@ -18,7 +18,7 @@
       "properties": {
         "@id": {
           "type": "string",
-          "format": "uri",
+          "format": "uri-reference",
           "title": "ID",
           "description":
             "The unique identifier of the offer activity. This @id must be unique across for objects that are not semantically the same, otherwise it is interpreted as referring to the same object. "

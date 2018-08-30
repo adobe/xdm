@@ -9,7 +9,7 @@ Provides the globally unique identifier for an [Object](https://www.w3.org/TR/ac
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | No | Experimental | Yes | Forbidden | Permitted | [external/activity-streams-2/id.schema.json](external/activity-streams-2/id.schema.json) |
+| Can be instantiated | No | Experimental | No | Forbidden | Permitted | [external/activity-streams-2/id.schema.json](external/activity-streams-2/id.schema.json) |
 
 ## JSON-LD `@id` Example
 ```json
@@ -37,7 +37,7 @@ Provides the globally unique identifier for an [Object](https://www.w3.org/TR/ac
 
 
 `string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
 
 
 

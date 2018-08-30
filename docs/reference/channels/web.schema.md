@@ -9,7 +9,7 @@ The world wide web and mobile web. Pages delivered via HTTP to a web browser or 
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [channels/web.schema.json](channels/web.schema.json) |
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/web.schema.json](channels/web.schema.json) |
 ## Schema Hierarchy
 
 * Web `https://ns.adobe.com/xdm/channels/web`

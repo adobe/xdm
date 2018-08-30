@@ -16,7 +16,7 @@
                 "@id": {
                     "title": "Identifier",
                     "type": "string",
-                    "format": "uri",
+                    "format": "uri-reference",
                     "description": "Identity of the Segment in the related namespace."
                 },
                 "xdm:namespace": {

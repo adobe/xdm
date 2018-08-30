@@ -11,7 +11,7 @@
     "properties": {
         "@id": {
             "type": "string",
-            "format": "uri"
+            "format": "uri-reference"
         }
     },
     "title": "JSON-LD `@id`",

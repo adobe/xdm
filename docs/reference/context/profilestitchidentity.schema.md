@@ -9,7 +9,7 @@ ProfileStitchIdentity is used to clearly distinguish Profile Stitching from mult
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [context/profilestitchidentity.schema.json](context/profilestitchidentity.schema.json) |
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/profilestitchidentity.schema.json](context/profilestitchidentity.schema.json) |
 ## Schema Hierarchy
 
 * Identity `https://ns.adobe.com/xdm/context/profileStitchIdentity`
@@ -49,7 +49,7 @@ Identity of the Profile Stitch in the related namespace.
 
 
 `string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
 
 
 

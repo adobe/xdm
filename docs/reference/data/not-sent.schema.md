@@ -9,7 +9,7 @@ The direct-marketing metric `not-sent` describes the number of asynchronous mess
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | Yes | Forbidden | Permitted | [data/not-sent.schema.json](data/not-sent.schema.json) |
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/not-sent.schema.json](data/not-sent.schema.json) |
 ## Schema Hierarchy
 
 * Not Sent `https://ns.adobe.com/xdm/data/metrics/direct-marketing/notSent`
@@ -49,7 +49,7 @@ The unique identifier of this metric.
 
 
 `string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
 
 
 

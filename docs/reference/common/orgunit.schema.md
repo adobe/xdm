@@ -9,7 +9,7 @@ The organizaational unit of a parent organization.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [common/orgunit.schema.json](common/orgunit.schema.json) |
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [common/orgunit.schema.json](common/orgunit.schema.json) |
 
 ## Organizational Unit Example
 ```json
@@ -41,7 +41,7 @@ The ID associated with this organizational unit.
 
 
 `string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
 
 
 

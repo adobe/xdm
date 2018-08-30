@@ -9,7 +9,7 @@ Short Message Service delivered to a mobile phone.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [channels/sms.schema.json](channels/sms.schema.json) |
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/sms.schema.json](channels/sms.schema.json) |
 ## Schema Hierarchy
 
 * SMS `https://ns.adobe.com/xdm/channels/sms`

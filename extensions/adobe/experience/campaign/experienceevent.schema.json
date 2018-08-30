@@ -191,6 +191,18 @@
               "type": "integer",
               "description":
                 "The delivery template's ID used to initialize this delivery.\n\nThe type the template used in Adobe Campaign can be identified using the `messageClass`.\n\n* `messageClass` = `oneTime`: the template is standard delivery template.\n* `messageClass` = `continuous`: the template is a recurring delivery.\n* `messageClass` = `transactional`: the template is a transactionnal message template.\n"
+            },
+            "xdm:deliveryLabel": {
+              "title": "Delivery Label",
+              "type": "string",
+              "description":
+                "A human-friendly name of the campaign activity which is originating this message."
+            },
+            "xdm:deliveryName": {
+              "title": "Delivery Internal name",
+              "type": "string",
+              "description":
+                "A human-friendly identifier of the campaign activity which is originating this message."
             }
           }
         },
@@ -204,6 +216,12 @@
               "type": "integer",
               "description":
                 "Identifier of the marketing campaign to which activity originating this message belongs to."
+            },
+            "xdm:campaignName": {
+              "title": "Campaign Internal name",
+              "type": "string",
+              "description":
+                "A human-friendly identifier of the marketing campaign which is originating this message."
             }
           }
         },
@@ -260,8 +278,44 @@
               "type": "string",
               "description":
                 "Business qualifier that identifies the event sent by the data source. It informs on the business reason for sending the event. It is unique per organization. This is used by Campaign orchestration to identify the event without inspecting its payload to determine which action should be triggered when the event is received. The value of this field is a contract between Campaign orchestration and the data source."
+            },
+            "orchestrationDetails": {
+              "title": "Orchestration Details",
+              "description":
+                "Set of attributes that are associated with every orchestration.",
+              "type": "object",
+              "properties": {
+                "journey": {
+                  "title": "Journey for an entity",
+                  "$ref":
+                    "https://ns.adobe.com/experience/campaign/orchestration/experienceevent#/definitions/journey",
+                  "description": "Journey created by marketer for its entities."
+                },
+                "journeyVersion": {
+                  "title": "Journey Version for an entity",
+                  "$ref":
+                    "https://ns.adobe.com/experience/campaign/orchestration/experienceevent#/definitions/journeyVersion",
+                  "description":
+                    "Schema for describing the version of a journey, where version holds the state machine."
+                },
+                "action": {
+                  "title": "Action associated with a journey",
+                  "$ref":
+                    "https://ns.adobe.com/experience/campaign/orchestration/experienceevent#/definitions/action",
+                  "description":
+                    "Action that is executed for an entity when reached a step in in the journey state machine.",
+                  "required": ["xdm:actionID"]
+                }
+              },
+              "required": ["journey", "journeyVersion", "action"]
             }
           }
+        },
+        "https://ns.adobe.com/experience/campaign/containerID": {
+          "title": "Container identifier",
+          "type": "string",
+          "description":
+            "The identifier denoting the container with which campaign experience event is associated."
         }
       }
     },

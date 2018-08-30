@@ -20,7 +20,7 @@
         "@id": {
           "title": "Journey unique identifier",
           "type": "string",
-          "format": "uri",
+          "format": "uri-reference",
           "description": "The unique identifier of the journey created by the marketer."
         }
       },
@@ -34,7 +34,7 @@
         "@id": {
           "title": "Journey version identifier",
           "type": "string",
-          "format": "uri",
+          "format": "uri-reference",
           "description": "The unique identifier denoting the version of journey on which the entity is active."
         }
       },
@@ -48,7 +48,7 @@
         "xdm:actionID": {
           "title": "Action identifier",
           "type": "string",
-          "format": "uri",
+          "format": "uri-reference",
           "description": "Unique identifier denoting the associated action."
         },
         "xdm:actionType": {

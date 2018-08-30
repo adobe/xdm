@@ -283,7 +283,8 @@
               "title": "Orchestration Details",
               "description":
                 "Set of attributes that are associated with every orchestration.",
-              "$ref": "https://ns.adobe.com/experience/campaign/orchestration/orchestrationdetails"
+              "$ref":
+                "https://ns.adobe.com/experience/campaign/orchestration/orchestrationdetails"
             }
           }
         },

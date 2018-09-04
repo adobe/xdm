@@ -114,7 +114,10 @@
         "xdm:profileStitching" : {
           "title": "Profile Stitching",
           "description": "Details about the ids that were joined by profile stitching.",
-          "$ref": "https://ns.adobe.com/xdm/context/profileStitch"
+          "type" : "array",
+          "items" : {
+            "$ref": "https://ns.adobe.com/xdm/context/profileStitch"
+          }
         },
         "xdm:segmentMemberships": {
           "title": "Segment Memberships",

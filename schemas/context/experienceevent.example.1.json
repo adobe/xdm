@@ -115,35 +115,37 @@
   "xdm:marketing": {
     "xdm:trackingCode": "marketingcampaign111"
   },
-  "xdm:profileStitching": {
-    "xdm:profileStitchID": {
-      "@id": "https://data.adobe.io/entities/profileStitchIdentity/1",
-      "xdm:namespace": {
-        "xdm:code": "AAM"
-      }
-    },
-    "xdm:version": "1.0",
-    "xdm:identities": [
-      {
-        "xdm:id": "92312748749128",
+  "xdm:profileStitching": [
+    {
+      "xdm:profileStitchID": {
+        "@id": "https://data.adobe.io/entities/profileStitchIdentity/1",
         "xdm:namespace": {
-          "xdm:code": "ECID"
+          "xdm:code": "AAM"
         }
       },
-      {
-        "xdm:id": "62312748749321",
-        "xdm:namespace": {
-          "xdm:code": "ECID"
+      "xdm:version": "1.0",
+      "xdm:identities": [
+        {
+          "xdm:id": "92312748749128",
+          "xdm:namespace": {
+            "xdm:code": "ECID"
+          }
+        },
+        {
+          "xdm:id": "62312748749321",
+          "xdm:namespace": {
+            "xdm:code": "ECID"
+          }
+        },
+        {
+          "xdm:id": "49312748749132",
+          "xdm:namespace": {
+            "xdm:code": "ECID"
+          }
         }
-      },
-      {
-        "xdm:id": "49312748749132",
-        "xdm:namespace": {
-          "xdm:code": "ECID"
-        }
-      }
-    ]
-  },
+      ]
+    }
+  ],
   "xdm:segmentMemberships": [
     {
       "xdm:segmentID": {

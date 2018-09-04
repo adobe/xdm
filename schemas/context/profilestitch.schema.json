@@ -23,10 +23,15 @@
           "type": "string",
           "description": "The version of the profile stitch definition used. Useful for debugging."
         },
-        "xdm:endUserIDs": {
-          "title": "End User IDs",
-          "$ref": "https://ns.adobe.com/xdm/context/enduserids",
-          "description": "Condensed, normalized encapsulation of all end user identifiers."
+        "xdm:identities": {
+          "title": "All User Identities",
+          "type": "array",
+          "items": {
+            "$ref": "https://ns.adobe.com/xdm/context/identity"
+          },
+          "minItems": 1,
+          "description":
+          "Array of Identities. Condensed, normalized encapsulation of all end user identifiers."
         }
       }
     }

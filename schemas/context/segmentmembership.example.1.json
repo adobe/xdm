@@ -9,6 +9,9 @@
   	"xdm:version": "1.0",
   	"xdm:validUntil" : "2017-12-26T15:52:25+00:00",
   	"xdm:status" : "realized",
-	"xdm:propensity": 0.5
+    "xdm:payload": {
+    "xdm:payloadPropensityValue": 0.5,
+    "xdm:payloadType": "propensity"
+   }
 }
 

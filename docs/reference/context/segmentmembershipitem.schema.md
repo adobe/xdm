@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/segmentmembershipitem
 ```
 
-List item that contains details of segment membership combined the identities to which the membership applies
+List item that contains details of segment membership combined the profile stitched identities to which the membership applies
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -14,6 +14,7 @@ List item that contains details of segment membership combined the identities to
 
 * Segment Membership Item `https://ns.adobe.com/xdm/context/segmentmembershipitem`
   * [Segment Membership](segmentmembership.schema.md) `https://ns.adobe.com/xdm/context/segmentmembership`
+  * [Identity](profilestitchidentity.schema.md) `https://ns.adobe.com/xdm/context/profileStitchIdentity`
 
 
 ## Segment Membership Item Example
@@ -42,40 +43,14 @@ List item that contains details of segment membership combined the identities to
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:identities](#xdmidentities) | Identity | Optional | Segment Membership Item (this schema) |
 | [xdm:lastQualificationTime](#xdmlastqualificationtime) | `string` | Optional | [Segment Membership](segmentmembership.schema.md#xdmlastqualificationtime) |
 | [xdm:payload](#xdmpayload) | `object` | Optional | [Segment Membership](segmentmembership.schema.md#xdmpayload) |
+| [xdm:profileStitchID](#xdmprofilestitchid) | Identity | Optional | Segment Membership Item (this schema) |
 | [xdm:segmentID](#xdmsegmentid) | Segment Identity | Optional | [Segment Membership](segmentmembership.schema.md#xdmsegmentid) |
 | [xdm:status](#xdmstatus) | `enum` | Optional | [Segment Membership](segmentmembership.schema.md#xdmstatus) |
 | [xdm:validUntil](#xdmvaliduntil) | `string` | Optional | [Segment Membership](segmentmembership.schema.md#xdmvaliduntil) |
 | [xdm:version](#xdmversion) | `string` | Optional | [Segment Membership](segmentmembership.schema.md#xdmversion) |
 | `*` | any | Additional | this schema *allows* additional properties |
-
-## xdm:identities
-### All User Identities
-
-Array of Identities. Condensed, normalized encapsulation of all end user identifiers.
-
-`xdm:identities`
-* is optional
-* type: Identity
-* at least `1` items in the array
-* defined in this schema
-
-### xdm:identities Type
-
-
-Array type: Identity
-
-All items must be of the type:
-* [Identity](identity.schema.md) – `https://ns.adobe.com/xdm/context/identity`
-
-
-
-
-
-
-
 
 ## xdm:lastQualificationTime
 ### Last Qualification Time
@@ -229,6 +204,23 @@ The value of this property **must** be equal to one of the [known values below](
 
 
 
+
+
+
+
+
+## xdm:profileStitchID
+
+
+`xdm:profileStitchID`
+* is optional
+* type: Identity
+* defined in this schema
+
+### xdm:profileStitchID Type
+
+
+* [Identity](profilestitchidentity.schema.md) – `https://ns.adobe.com/xdm/context/profileStitchIdentity`
 
 
 

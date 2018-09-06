@@ -6,21 +6,19 @@
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "https://ns.adobe.com/experience/adcloud/adcloud-search-profile",
+  "$id": "https://ns.adobe.com/experience/adcloud/adcloudsearchprofile",
   "title": "Adobe AdCloud Search Profile Extension",
   "type": "object",
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/context/profile"
-  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/context/profile"],
   "description": "Adobe AdCloud Search extension to Profile",
   "definitions": {
-    "adcloud-search-profile": {
+    "adcloudsearchprofile": {
       "properties": {
-        "synchronized-search-retargeting-entities": {
-          "title": "Search retargeting entities",
+        "syncedSegments": {
+          "title": "Synchronized segments",
           "type": "array",
           "items": {
-            "$ref": "https://ns.adobe.com/experience/adcloud/synchronized-search-retargeting-entity"
+            "$ref": "https://ns.adobe.com/experience/adcloud/syncedsegment"
           },
           "description": "List of Search retargeting entities"
         }
@@ -32,7 +30,7 @@
       "$ref": "https://ns.adobe.com/xdm/context/profile#/definitions/profile"
     },
     {
-      "$ref": "#/definitions/adcloud-search-profile"
+      "$ref": "#/definitions/adcloudsearchprofile"
     }
   ],
   "meta:status": "experimental"

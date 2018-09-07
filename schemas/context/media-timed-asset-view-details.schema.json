@@ -18,7 +18,7 @@
         "@id": {
           "title": "Media Session ID",
           "type": "string",
-          "format": "uri",
+          "format": "uri-reference",
           "description": "Identifies an instance of a content stream unique to an individual playback."
         },
         "xdm:playerName": {

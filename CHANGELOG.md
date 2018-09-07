@@ -1,5 +1,24 @@
 # Changelog
 
+## Release 0.9.5
+
+[Released on August 31, 2018](https://github.com/adobe/xdm/releases/tag/v0.9.5)
+
+Fixed Issues
+
+* Change ID format from "uri" to "uri-reference"
+  * PR #488 Change @id's format from "uri" to "uri-reference" if exists
+* Combine individual Birthday fields to a single field of format: 'date-time'
+  * PR #498 Create distinct fields for different cases of birth date
+* Fix lint checks against extensions
+  * PR #485 fix linting issues in extensions folder
+
+Merged Pull Requests
+
+* #472 Add Journey context and delivery attributes in experience event
+* #479 Fix Segment Identity title conflict
+* #501 Campaign extension schema format/structure change for 0.9.9.5 platform release
+
 ## Release 0.9.4
 
 [Released on August 17, 2018](https://github.com/adobe/xdm/releases/tag/v0.9.4)

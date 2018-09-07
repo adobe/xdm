@@ -1,0 +1,73 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/offer-management/decision-event",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "DecisionEvent",
+  "type": "object",
+  "meta:extensible": true,
+  "description":
+    "The  DecisionEvent XDM is used to capture observations that in the course of decisioning. The DecisionEvent captures information about the decision taking place and when it is occurring.",
+  "definitions": {
+    "decision-event": {
+      "properties": {
+        "@id": {
+          "title": "Identifier",
+          "type": "string",
+          "format": "uri",
+          "description": "The unique identifier for the DecisionEvent."
+        },
+        "xdm:timestamp": {
+          "title": "Timestamp",
+          "type": "string",
+          "format": "date-time",
+          "description":
+            "The time when the first event of the decision occurred."
+        },
+        "xdm:endUserIDs": {
+          "title": "End User IDs",
+          "description":
+            "Condensed, normalized encapsulation of all end user identifiers.",
+          "$ref": "https://ns.adobe.com/xdm/context/enduserids"
+        },
+        "xdm:propositions": {
+          "title": "Propopostion Details",
+          "type": "array",
+          "items" : {
+            "$ref": "https://ns.adobe.com/experience/offer-management/decision-proposition"
+          },
+          "description":
+            "Details about the individual context variables and outcomes for the decision."
+        },
+        "xdm:batchId": {
+          "title": "Batch ID",
+          "type": "string",
+          "description":
+            "An ID associated with the decision event, used to manipulate together independent events which occurred in the same batch."
+        },
+        "xdm:containerId": {
+          "title": "Container ID",
+          "type": "string",
+          "description":
+            "An ID associated with library of business objects."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/decision-event"
+    },
+    {
+      "required": ["@id", "xdm:timestamp", "xdm:endUserIDs", "xdm:propositions", "xdm:containerId"]
+    }
+  ],
+  "meta:status": "experimental"
+}

@@ -1,0 +1,130 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/offer-management/decision-proposition",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Decision Proposition",
+  "type": "object",
+  "meta:extensible": true,
+  "description":
+    "The  Decision Proposition XDM is used to capture the outcome of a decisioning process",
+  "definitions": {
+    "decision-proposition": {
+      "properties": {
+        "xdm:offerActivity": {
+          "title": "Offer Activity",
+          "description": "Snapshot of the offer activity for which the proposition was made. The object contains at least the @id property value which is the URI of the offer activity. See schema https://ns.adobe.com/experience/offer-management/offer-activity",
+          "$ref": "https://ns.adobe.com/experience/offer-management/offer-activity#/definitions/offer-activity"
+        },
+        "xdm:offers": {
+          "title": "Proposed Offers",
+          "description": "Snapshots of the personalized offers that were selected for this activity. The objects contain a at least the @id property value which is the URI of a personalized offer. See schema https://ns.adobe.com/experience/offer-management/personalized-offer",
+          "type": "array",
+          "items": {
+            "$ref": "https://ns.adobe.com/experience/offer-management/personalized-offer#/definitions/personalized-offer"
+          },
+          "minItems": 0
+        },
+        "xdm:fallbackOffer": {
+          "title": "Fallback Offer",
+          "description": "Snapshot of the Fallback offer that was selected because no personalized offer satisfied the constaints. The object contains at least the @id property value which is the URI of the fallback offer. See schema https://ns.adobe.com/experience/offer-management/fallback-offer",
+          "$ref": "https://ns.adobe.com/experience/offer-management/fallback-offer#/definitions/fallback-offer"
+        },
+        "xdm:placement": {
+          "title": "Placement",
+          "description": "Snapshot of the Placement for the fallback or personalized offer. The object contains at least the @id property value which is the URI of the offer placement. See schema https://ns.adobe.com/experience/offer-management/offer-placement",
+          "$ref": "https://ns.adobe.com/experience/offer-management/offer-placement#/definitions/offer-placement"
+        },
+        "xdm:channel": {
+          "title": "Experience Channel",
+          "description":
+            "Snapshot of the experience channel related to this experience event. The value is determined by the placement is recorded in the event as a snapshot.",
+          "$ref": "https://ns.adobe.com/xdm/channels/channel"
+        },
+        "xdm:environment": {
+          "title": "Environment",
+          "description":
+            "Information about the surrounding situation the decision occurred in, specifically detailing transitory information such as the network or software versions.",
+          "$ref": "https://ns.adobe.com/xdm/context/environment"
+        },
+        "xdm:productListItems": {
+          "title": "Product List Items",
+          "type": "array",
+          "description":
+            "A list of items representing a product selected by a customer with specific options and pricing that are context for the decision.",
+          "items": {
+            "$ref": "https://ns.adobe.com/xdm/content/productlistitem"
+          }
+        },
+        "xdm:device": {
+          "title": "Device",
+          "description":
+            "An identified Device/Application or Device/Browser instance that is trackable across sessions, normally by cookies.",
+          "$ref": "https://ns.adobe.com/xdm/context/device"
+        },
+        "xdm:commerce": {
+          "title": "Commerce",
+          "$ref": "https://ns.adobe.com/xdm/context/commerce",
+          "description":
+            "The commerce specific data related to this decision."
+        },
+        "xdm:application": {
+          "title": "Application",
+          "description":
+            "The application related to the decision. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login.",
+          "$ref": "https://ns.adobe.com/xdm/context/application"
+        },
+        "xdm:directMarketing": {
+          "title": "Direct Marketing",
+          "description":
+            "The events and properties related to direct/outbound marketing that provided context to the decision, such as email, direct mail, texts and in-app notifications.",
+          "$ref": "https://ns.adobe.com/xdm/context/direct-marketing"
+        },
+        "xdm:marketing": {
+          "title": "Marketing",
+          "description":
+            "The information related to marketing activities that provided context to the decision and were active with the touchpoint.",
+          "$ref": "https://ns.adobe.com/xdm/context/marketing"
+        },
+        "xdm:placeContext": {
+          "title": "Place Context",
+          "description":
+            "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, working hours.",
+          "$ref": "https://ns.adobe.com/xdm/context/placecontext"
+        },
+        "xdm:metrics": {
+          "title": "Metrics",
+          "description": "Additional measurements observed while the decision was made and which provided context to the decision process.",
+          "type": "array",
+          "items": {
+            "description": "A measurement for a metrics that needs to contain the `xdm:value` and the `@type`. The `@type` references one of the metric definitions derived from `https://ns.adobe.com/xdm/data/metricdefinition`",
+            "$ref": "https://ns.adobe.com/xdm/data/measure"
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/decision-proposition"
+    },
+    {
+      "required": ["xdm:offerActivity"]
+    },
+    { 
+      "oneOf": [
+        {
+          "required": ["xdm:offers"]
+        }, 
+        {
+          "required": ["xdm:fallbackOffer"]
+        }
+      ]
+    }
+  ],
+  "meta:status": "experimental"
+}

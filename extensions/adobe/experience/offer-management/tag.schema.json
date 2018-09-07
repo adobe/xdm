@@ -26,13 +26,15 @@
           "title": "Tag Name",
           "description": "The Tag's external human-readable representation to the clients."
         }
-      },
-      "required": ["xdm:name"]
+      }
     }
   },
   "allOf": [
     {
       "$ref": "#/definitions/tag"
+    },
+    {
+      "required": ["xdm:name"]
     }
   ]
 }

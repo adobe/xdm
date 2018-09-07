@@ -18,7 +18,7 @@
       "properties": {
         "xdm:components": {
           "type": "array",
-          "description": "The content components of the Offer Representation, including all their language variants. Specific components are found by 'dx:format', 'dc:subject' and 'dc:language' or a combination thereof. This metadata is used to locate or represent the content that is associated with an offer and integrate it according to the placement contract.",
+          "description": "The content components of the offer representation, including all their language variants. Specific components are found by 'dx:format', 'dc:subject' and 'dc:language' or a combination thereof. This metadata is used to locate or represent the content that is associated with an offer and integrate it according to the placement contract.",
           "items": {
             "$ref": "#/definitions/content-component"
           }
@@ -27,35 +27,30 @@
           "type": "string",
           "format": "uri",
           "title": "Channel",
-          "description": "The channel constraint is used to convey not only where the offer will be used but determine the content editor or validator that is used for the Offer's representation. The value is a valid Channel URI. See 'https://ns.adobe.com/xdm/channels/channel'"
+          "description": "The channel constraint is used to convey not only where the offer will be used but determine the content editor or validator that is used for the offer's representation. The value is a valid Channel URI. See 'https://ns.adobe.com/xdm/channels/channel'"
         },
         "xdm:placement": {
           "type": "string",
           "format": "uri",
           "title": "Placement",
-          "description": "Placement to comply with. The value is the URI (@id) of the OfferPlacement that is referenced. See OfferPlacement schema https://ns.adobe.com/experience/offer-management/offer-placement"
+          "description": "Placement to comply with. The value is the URI (@id) of the offer placement that is referenced. See schema https://ns.adobe.com/experience/offer-management/offer-placement"
         }
-      },
-      "required": [
-        "xdm:components",
-        "xdm:channel",
-        "xdm:placement"
-      ]
+      }
     },
     "content-component-type": {
       "type": "string",
       "format": "uri",
-      "title": "Content Type",
-      "description": "Content Type: image, html or plain text",
+      "title": "Content Component Type",
+      "description": "Content Component Type: imagelink, html or text",
       "enum": [
         "https://ns.adobe.com/experience/offer-management/content-component-text",
         "https://ns.adobe.com/experience/offer-management/content-component-html",
         "https://ns.adobe.com/experience/offer-management/content-component-imagelink"
       ],
       "meta:enum": {
-        "https://ns.adobe.com/experience/offer-management/content-component-text": "Text",
-        "https://ns.adobe.com/experience/offer-management/content-component-html": "HTML",
-        "https://ns.adobe.com/experience/offer-management/content-component-imagelink": "Image Link"
+        "https://ns.adobe.com/experience/offer-management/content-component-text": "Text component",
+        "https://ns.adobe.com/experience/offer-management/content-component-html": "HTML component",
+        "https://ns.adobe.com/experience/offer-management/content-component-imagelink": "Image and click link component"
       }
     },
     "content-component": {
@@ -65,11 +60,13 @@
           "description":
             "Content components are the fragments associated with the a particular offer representation. Those fragments are used to compose the end-user experience. The content resource has optional HAL links to the file resource.",
           "meta:extends": [
-            "https://ns.adobe.com/xdm/external/hal/resource#/definitions/hal",
+            "https://ns.adobe.com/xdm/external/hal/resource#/definitions/hal"
           ],
           "properties": {
             "@type": {
-              "$ref": "#/definitions/content-component-type"
+              "$ref": "#/definitions/content-component-type",
+              "description":
+                "Type of the component. Acts as processing hint for the client. When the experience is assembled the composer will look for the component(s) that have a specific type."
             },
             "dc:format": {
               "meta:usereditable": false,
@@ -96,7 +93,7 @@
             "repo:name": {
               "type": "string",
               "description":
-                "Some hint about where to locate the repository that stores the external asset by the \"repo:id\".",
+                "Some hint about where to locate the repository that stores the external asset by the \"repo:id\"."
             },
             "repo:id": {
               "type": "string",
@@ -114,8 +111,10 @@
               "description":
                 "An optional unique resource locator to read the asset in a content repository. This will make it easier to obtain the asset whithout the client understanding where the asset is manages and what APIs to call. This is similar to a HAL link but the semantic is simpler and more pursposeful.",
               "examples": ["https://plaftform.adobe.io/resolveByPath?path=&quot;/mycorp/content/projectx/fragment/prod/herobanners/banner14.html3&quot;"]
-            },
-          },
+            }
+          }
+        },
+        {
           "required": ["@type","dc:format"]
         }
       ]
@@ -124,6 +123,9 @@
   "allOf": [
     {
       "$ref": "#/definitions/offer-representation"
+    },
+    {
+      "required": ["xdm:components", "xdm:channel", "xdm:placement"]
     }
   ]
 }

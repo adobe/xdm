@@ -13,7 +13,7 @@ Details about a segment membership.
 ## Schema Hierarchy
 
 * Segment Membership `https://ns.adobe.com/xdm/context/segmentmembership`
-  * [Identity](segmentidentity.schema.md) `https://ns.adobe.com/xdm/context/segmentidentity`
+  * [Segment Identity](segmentidentity.schema.md) `https://ns.adobe.com/xdm/context/segmentidentity`
 
 
 ## Segment Membership Example
@@ -42,7 +42,7 @@ Details about a segment membership.
 |----------|------|----------|------------|
 | [xdm:lastQualificationTime](#xdmlastqualificationtime) | `string` | Optional | Segment Membership (this schema) |
 | [xdm:payload](#xdmpayload) | `object` | Optional | Segment Membership (this schema) |
-| [xdm:segmentID](#xdmsegmentid) | Identity | Optional | Segment Membership (this schema) |
+| [xdm:segmentID](#xdmsegmentid) | Segment Identity | Optional | Segment Membership (this schema) |
 | [xdm:status](#xdmstatus) | `enum` | Optional | Segment Membership (this schema) |
 | [xdm:validUntil](#xdmvaliduntil) | `string` | Optional | Segment Membership (this schema) |
 | [xdm:version](#xdmversion) | `string` | Optional | Segment Membership (this schema) |
@@ -212,13 +212,13 @@ The identity of the segment or snapshot definition in with the domain of the spe
 
 `xdm:segmentID`
 * is optional
-* type: Identity
+* type: Segment Identity
 * defined in this schema
 
 ### xdm:segmentID Type
 
 
-* [Identity](segmentidentity.schema.md) – `https://ns.adobe.com/xdm/context/segmentidentity`
+* [Segment Identity](segmentidentity.schema.md) – `https://ns.adobe.com/xdm/context/segmentidentity`
 
 
 

@@ -9,7 +9,7 @@ Details about how a timed advertising is being inserted into a timed media.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [context/advertising-break.schema.json](context/advertising-break.schema.json) |
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/advertising-break.schema.json](context/advertising-break.schema.json) |
 
 ## Ad Break Example
 ```json
@@ -43,7 +43,7 @@ Identifier of the ad break.
 
 
 `string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
 
 
 

@@ -9,7 +9,7 @@ The Twitter Feed, i.e. the stream of user-generated tweets. This does not includ
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [channels/twitter-feed.schema.json](channels/twitter-feed.schema.json) |
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/twitter-feed.schema.json](channels/twitter-feed.schema.json) |
 ## Schema Hierarchy
 
 * Twitter Feed `https://ns.adobe.com/xdm/channels/twitter-feed`

@@ -14,11 +14,19 @@
   "definitions": {
     "profile": {
       "properties": {
-        "https://ns.adobe.com/experience/campaign/journeyai/email": {
-          "title": "Journey AI scores for Email Channel",
-          "$ref": "https://ns.adobe.com/experience/campaign/journeyaiscores",
-          "description":
-            "Journey AI open, click and fatigue scores for email channel"
+        "xdm:journeyAI": {
+          "title": "Journey AI Scores",
+          "type": "object",
+          "description": "Journey AI scores for all channels",
+          "properties": {
+            "xdm:email": {
+              "title": "Journey AI scores for Email Channel",
+              "$ref":
+                "https://ns.adobe.com/experience/campaign/journeyaiscores",
+              "description":
+                "Journey AI open, click and fatigue scores for email channel"
+            }
+          }
         }
       }
     }

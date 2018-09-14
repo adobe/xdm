@@ -14,7 +14,7 @@ List item that contains details of segment membership combined the profile stitc
 
 * Segment Membership Item `https://ns.adobe.com/xdm/context/segmentmembershipitem`
   * [Segment Membership](segmentmembership.schema.md) `https://ns.adobe.com/xdm/context/segmentmembership`
-  * [Identity](profilestitchidentity.schema.md) `https://ns.adobe.com/xdm/context/profileStitchIdentity`
+  * [Profile Stitch Identity](profilestitchidentity.schema.md) `https://ns.adobe.com/xdm/context/profileStitchIdentity`
 
 
 ## Segment Membership Item Example
@@ -45,7 +45,7 @@ List item that contains details of segment membership combined the profile stitc
 |----------|------|----------|------------|
 | [xdm:lastQualificationTime](#xdmlastqualificationtime) | `string` | Optional | [Segment Membership](segmentmembership.schema.md#xdmlastqualificationtime) |
 | [xdm:payload](#xdmpayload) | `object` | Optional | [Segment Membership](segmentmembership.schema.md#xdmpayload) |
-| [xdm:profileStitchID](#xdmprofilestitchid) | Identity | Optional | Segment Membership Item (this schema) |
+| [xdm:profileStitchID](#xdmprofilestitchid) | Profile Stitch Identity | Optional | Segment Membership Item (this schema) |
 | [xdm:segmentID](#xdmsegmentid) | Segment Identity | Optional | [Segment Membership](segmentmembership.schema.md#xdmsegmentid) |
 | [xdm:status](#xdmstatus) | `enum` | Optional | [Segment Membership](segmentmembership.schema.md#xdmstatus) |
 | [xdm:validUntil](#xdmvaliduntil) | `string` | Optional | [Segment Membership](segmentmembership.schema.md#xdmvaliduntil) |
@@ -214,13 +214,13 @@ The value of this property **must** be equal to one of the [known values below](
 
 `xdm:profileStitchID`
 * is optional
-* type: Identity
+* type: Profile Stitch Identity
 * defined in this schema
 
 ### xdm:profileStitchID Type
 
 
-* [Identity](profilestitchidentity.schema.md) – `https://ns.adobe.com/xdm/context/profileStitchIdentity`
+* [Profile Stitch Identity](profilestitchidentity.schema.md) – `https://ns.adobe.com/xdm/context/profileStitchIdentity`
 
 
 

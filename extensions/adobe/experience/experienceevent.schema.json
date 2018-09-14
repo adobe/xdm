@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/experience/experienceevent",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "ExperienceEvent",
+  "title": "Adobe Cloud Platform - Data Services extension to ExperienceEvent",
   "type": "object",
   "description":
     "This ExperienceEvent XDM includes the core/standard ExperienceEvent as well as the Adobe solution ExperienceEvents.",

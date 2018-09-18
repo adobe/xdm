@@ -61,7 +61,8 @@
         },
         "https://ns.adobe.com/experience/target/supplementalDataID": {
           "title": "Supplemental Data Identifier",
-          "description": "Identifier used to stitch Target events with Analytics events",
+          "description":
+            "Identifier used to stitch Target events with Analytics events",
           "type": "string"
         }
       }

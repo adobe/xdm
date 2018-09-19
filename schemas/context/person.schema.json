@@ -1,74 +1,91 @@
 {
-  "meta:license": [
-    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
-    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
-    "you may not use this file except in compliance with the License. You may obtain a copy",
-    "of the License at https://creativecommons.org/licenses/by/4.0/"
-  ],
-  "$id": "https://ns.adobe.com/xdm/context/person",
-  "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Person",
-  "type": "object",
-  "meta:extensible": true,
-  "meta:auditable": true,
-  "description":
-    "An individual person. May represent a person acting in various roles, such as a customer, contact, or owner.",
-  "definitions": {
-    "person": {
-      "properties": {
-        "xdm:name": {
-          "title": "Full name",
-          "$ref": "https://ns.adobe.com/xdm/context/person-name",
-          "description": "The person's full name"
-        },
-        "xdm:birthDay": {
-          "title": "Birth day",
-          "type": "integer",
-          "description": "The day of the month a person was born (1-31).",
-          "minimum": 1,
-          "maximum": 31
-        },
-        "xdm:birthMonth": {
-          "title": "Birth month",
-          "type": "integer",
-          "description": "The month of the year a person was born (1-12).",
-          "minimum": 1,
-          "maximum": 12
-        },
-        "xdm:birthYear": {
-          "title": "Birth year",
-          "type": "integer",
-          "description":
-            "The year a person was born including the century (yyyy, e.g 1983).",
-          "minimum": 1,
-          "maximum": 32767
-        },
-        "xdm:gender": {
-          "title": "Gender",
-          "type": "string",
-          "enum": ["male", "female", "not_specified", "non_specific"],
-          "meta:enum": {
-            "male": "Male",
-            "female": "Female",
-            "not_specified": "Not Specified",
-            "non_specific": "Nonspecific"
-          },
-          "description": "Gender identity of the person.\n",
-          "default": "not_specified"
+    "meta:license": [
+        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/context/person",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Person",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:auditable": true,
+    "description": "An individual person. May represent a person acting in various roles, such as a customer, contact, or owner.",
+    "definitions": {
+        "person": {
+            "properties": {
+                "xdm:name": {
+                    "title": "Full name",
+                    "$ref": "https://ns.adobe.com/xdm/context/person-name",
+                    "description": "The person's full name"
+                },
+                "xdm:birthDay": {
+                    "title": "Birth day",
+                    "type": "integer",
+                    "description": "The day of the month a person was born (1-31).",
+                    "minimum": 1,
+                    "maximum": 31,
+                    "meta:status": "deprecated"
+                },
+                "xdm:birthMonth": {
+                    "title": "Birth month",
+                    "type": "integer",
+                    "description": "The month of the year a person was born (1-12).",
+                    "minimum": 1,
+                    "maximum": 12,
+                    "meta:status": "deprecated"
+                },
+                "xdm:birthDate": {
+                    "title": "Birth Date",
+                    "type": "string",
+                    "format": "date",
+                    "description": "The full date a person was born."
+                },
+                "xdm:birthDayAndMonth": {
+                    "title": "Birth Date",
+                    "type": "string",
+                    "pattern": "[0-1][0-9]-[0-9][0-9]",
+                    "description": "The day and month a person was born, in the format MM-DD. This field should be used when the day and month of a person's birth is known, but not the year."
+                },
+                "xdm:birthYear": {
+                    "title": "Birth year",
+                    "type": "integer",
+                    "description": "The year a person was born including the century (yyyy, e.g 1983).  This field should be used when only the person's age is known, not the full birth date.",
+                    "minimum": 1,
+                    "maximum": 32767
+                },
+                "xdm:gender": {
+                    "title": "Gender",
+                    "type": "string",
+                    "enum": [
+                        "male",
+                        "female",
+                        "not_specified",
+                        "non_specific"
+                    ],
+                    "meta:enum": {
+                        "male": "Male",
+                        "female": "Female",
+                        "not_specified": "Not Specified",
+                        "non_specific": "Nonspecific"
+                    },
+                    "description": "Gender identity of the person.\n",
+                    "default": "not_specified"
+                }
+            }
         }
-      }
-    }
-  },
-  "allOf": [
-    {
-      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
-    {
-      "$ref": "#/definitions/person"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/common/auditable"
-    }
-  ],
-  "meta:status": "experimental"
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/person"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/auditable"
+        }
+    ],
+    "meta:status": "experimental"
 }

@@ -9,7 +9,7 @@ The Image class is for raster and vector image assets, including JPEG, PNG, SVG 
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [assets/image.schema.json](assets/image.schema.json) |
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [assets/image.schema.json](assets/image.schema.json) |
 ## Schema Hierarchy
 
 * Image `https://ns.adobe.com/xdm/assets/image`
@@ -109,7 +109,7 @@ A unique identifier given to every addressable piece of content in a given repos
 
 
 `string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
 
 
 

@@ -9,9 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Adobe Analytics Cloud Experience Event Extension",
   "type": "object",
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/context/experienceevent"
-  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Adobe Analytics Cloud Experience Event Extension.",
   "definitions": {
     "experienceevent": {
@@ -28,24 +26,28 @@
             "xdm:depth": {
               "title": "Session Depth",
               "type": "integer",
-              "description": "Current session depth (eg page number) for the end-user."
+              "description":
+                "Current session depth (eg page number) for the end-user."
             },
             "xdm:timestamp": {
               "title": "Session Entry Timestamp",
               "type": "integer",
-              "description": "The timestamp at the entry into this session. Milliseconds since midnight of January 1, 1970.",
+              "description":
+                "The timestamp at the entry into this session. Milliseconds since midnight of January 1, 1970.",
               "minimum": 1,
               "maximum": 9223372036854770000
             },
             "xdm:search": {
               "title": "Session Entry Search",
               "$ref": "https://ns.adobe.com/xdm/context/search",
-              "description": "The information related to web or mobile search at the entry of this session."
+              "description":
+                "The information related to web or mobile search at the entry of this session."
             },
             "xdm:web": {
               "title": "Session Entry Web",
               "$ref": "https://ns.adobe.com/xdm/context/webinfo",
-              "description": "The information related to web page, link, and referrer at the entry of this session."
+              "description":
+                "The information related to web page, link, and referrer at the entry of this session."
             }
           }
         },
@@ -56,14 +58,16 @@
             "xdm:firstTimestamp": {
               "title": "End User First Timestamp",
               "type": "integer",
-              "description": "The timestamp for the first ExperienceEvent for this end-user. Milliseconds since midnight of January 1, 1970.",
+              "description":
+                "The timestamp for the first ExperienceEvent for this end-user. Milliseconds since midnight of January 1, 1970.",
               "minimum": 1,
               "maximum": 9223372036854770000
             },
             "xdm:firstWeb": {
               "title": "End User First Web Details",
               "$ref": "https://ns.adobe.com/xdm/context/webinfo",
-              "description": "The information related to web page, link, and referrer from the first ExperienceEvent for this end-user."
+              "description":
+                "The information related to web page, link, and referrer from the first ExperienceEvent for this end-user."
             }
           }
         },
@@ -1715,377 +1719,452 @@
                 "xdm:prop1": {
                   "title": "prop1",
                   "description": "Custom property variable1",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop2": {
                   "title": "prop2",
                   "description": "Custom property variable2",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop3": {
                   "title": "prop3",
                   "description": "Custom property variable3",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop4": {
                   "title": "prop4",
                   "description": "Custom property variable4",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop5": {
                   "title": "prop5",
                   "description": "Custom property variable5",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop6": {
                   "title": "prop6",
                   "description": "Custom property variable6",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop7": {
                   "title": "prop7",
                   "description": "Custom property variable7",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop8": {
                   "title": "prop8",
                   "description": "Custom property variable8",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop9": {
                   "title": "prop9",
                   "description": "Custom property variable9",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop10": {
                   "title": "prop10",
                   "description": "Custom property variable10",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop11": {
                   "title": "prop11",
                   "description": "Custom property variable11",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop12": {
                   "title": "prop12",
                   "description": "Custom property variable12",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop13": {
                   "title": "prop13",
                   "description": "Custom property variable13",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop14": {
                   "title": "prop14",
                   "description": "Custom property variable14",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop15": {
                   "title": "prop15",
                   "description": "Custom property variable15",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop16": {
                   "title": "prop16",
                   "description": "Custom property variable16",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop17": {
                   "title": "prop17",
                   "description": "Custom property variable17",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop18": {
                   "title": "prop18",
                   "description": "Custom property variable18",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop19": {
                   "title": "prop19",
                   "description": "Custom property variable19",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop20": {
                   "title": "prop20",
                   "description": "Custom property variable20",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop21": {
                   "title": "prop21",
                   "description": "Custom property variable21",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop22": {
                   "title": "prop22",
                   "description": "Custom property variable22",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop23": {
                   "title": "prop23",
                   "description": "Custom property variable23",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop24": {
                   "title": "prop24",
                   "description": "Custom property variable24",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop25": {
                   "title": "prop25",
                   "description": "Custom property variable25",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop26": {
                   "title": "prop26",
                   "description": "Custom property variable26",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop27": {
                   "title": "prop27",
                   "description": "Custom property variable27",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop28": {
                   "title": "prop28",
                   "description": "Custom property variable28",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop29": {
                   "title": "prop29",
                   "description": "Custom property variable29",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop30": {
                   "title": "prop30",
                   "description": "Custom property variable30",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop31": {
                   "title": "prop31",
                   "description": "Custom property variable31",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop32": {
                   "title": "prop32",
                   "description": "Custom property variable32",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop33": {
                   "title": "prop33",
                   "description": "Custom property variable33",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop34": {
                   "title": "prop34",
                   "description": "Custom property variable34",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop35": {
                   "title": "prop35",
                   "description": "Custom property variable35",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop36": {
                   "title": "prop36",
                   "description": "Custom property variable36",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop37": {
                   "title": "prop37",
                   "description": "Custom property variable37",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop38": {
                   "title": "prop38",
                   "description": "Custom property variable38",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop39": {
                   "title": "prop39",
                   "description": "Custom property variable39",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop40": {
                   "title": "prop40",
                   "description": "Custom property variable40",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop41": {
                   "title": "prop41",
                   "description": "Custom property variable41",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop42": {
                   "title": "prop42",
                   "description": "Custom property variable42",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop43": {
                   "title": "prop43",
                   "description": "Custom property variable43",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop44": {
                   "title": "prop44",
                   "description": "Custom property variable44",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop45": {
                   "title": "prop45",
                   "description": "Custom property variable45",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop46": {
                   "title": "prop46",
                   "description": "Custom property variable46",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop47": {
                   "title": "prop47",
                   "description": "Custom property variable47",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop48": {
                   "title": "prop48",
                   "description": "Custom property variable48",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop49": {
                   "title": "prop49",
                   "description": "Custom property variable49",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop50": {
                   "title": "prop50",
                   "description": "Custom property variable50",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop51": {
                   "title": "prop51",
                   "description": "Custom property variable51",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop52": {
                   "title": "prop52",
                   "description": "Custom property variable52",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop53": {
                   "title": "prop53",
                   "description": "Custom property variable53",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop54": {
                   "title": "prop54",
                   "description": "Custom property variable54",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop55": {
                   "title": "prop55",
                   "description": "Custom property variable55",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop56": {
                   "title": "prop56",
                   "description": "Custom property variable56",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop57": {
                   "title": "prop57",
                   "description": "Custom property variable57",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop58": {
                   "title": "prop58",
                   "description": "Custom property variable58",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop59": {
                   "title": "prop59",
                   "description": "Custom property variable59",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop60": {
                   "title": "prop60",
                   "description": "Custom property variable60",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop61": {
                   "title": "prop61",
                   "description": "Custom property variable61",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop62": {
                   "title": "prop62",
                   "description": "Custom property variable62",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop63": {
                   "title": "prop63",
                   "description": "Custom property variable63",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop64": {
                   "title": "prop64",
                   "description": "Custom property variable64",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop65": {
                   "title": "prop65",
                   "description": "Custom property variable65",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop66": {
                   "title": "prop66",
                   "description": "Custom property variable66",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop67": {
                   "title": "prop67",
                   "description": "Custom property variable67",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop68": {
                   "title": "prop68",
                   "description": "Custom property variable68",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop69": {
                   "title": "prop69",
                   "description": "Custom property variable69",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop70": {
                   "title": "prop70",
                   "description": "Custom property variable70",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop71": {
                   "title": "prop71",
                   "description": "Custom property variable71",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop72": {
                   "title": "prop72",
                   "description": "Custom property variable72",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop73": {
                   "title": "prop73",
                   "description": "Custom property variable73",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop74": {
                   "title": "prop74",
                   "description": "Custom property variable74",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:prop75": {
                   "title": "prop75",
                   "description": "Custom property variable75",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 }
               }
             },
@@ -2096,27 +2175,32 @@
                 "xdm:hier1": {
                   "title": "hier1",
                   "description": "Custom hierarchy variable 1.",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:hier2": {
                   "title": "hier2",
                   "description": "Custom hierarchy variable 2.",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:hier3": {
                   "title": "hier3",
                   "description": "Custom hierarchy variable 3.",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:hier4": {
                   "title": "hier4",
                   "description": "Custom hierarchy variable 4.",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 },
                 "xdm:hier5": {
                   "title": "hier5",
                   "description": "Custom hierarchy variable 5.",
-                  "$ref": "https://ns.adobe.com/experience/analytics/listdetails"
+                  "$ref":
+                    "https://ns.adobe.com/experience/analytics/listdetails"
                 }
               }
             },
@@ -7220,12 +7304,14 @@
             "xdm:browserID": {
               "title": "Browser ID",
               "type": "integer",
-              "description": "The Adobe Analytics Identifier for the browser used."
+              "description":
+                "The Adobe Analytics Identifier for the browser used."
             },
             "xdm:operatingSystemID": {
               "title": "Operating System ID",
               "type": "integer",
-              "description": "The Adobe Analytics Identifier of the operating system used."
+              "description":
+                "The Adobe Analytics Identifier of the operating system used."
             }
           }
         }

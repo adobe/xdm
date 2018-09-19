@@ -16,7 +16,7 @@
             "properties": {
                 "@id": {
                     "type": "string",
-                    "format": "uri",
+                    "format": "uri-reference",
                     "description": "The unique identifier of this metric."
                 },
                 "schema:name": {

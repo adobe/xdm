@@ -59,12 +59,16 @@
     "xdm:from": "no-reply@adobe.com",
     "xdm:testEnabled": true,
     "xdm:messageClass": "continuous",
-    "xdm:templateID": 1000
+    "xdm:templateID": 1000,
+    "xdm:deliveryName": "DM200",
+    "xdm:deliveryLabel": "Birthday Wishes"
   },
   "https://ns.adobe.com/experience/campaign/marketingCampaign": {
-    "xdm:id": 100
+    "xdm:id": 100,
+    "xdm:campaignName": "CAMP2010"
   },
   "https://ns.adobe.com/experience/campaign/orchestration": {
     "xdm:businessReason": "onJourneyEnter"
-  }
+  },
+  "https://ns.adobe.com/experience/campaign/containerID": "customer-stage"
 }

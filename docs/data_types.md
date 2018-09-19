@@ -15,12 +15,12 @@ The following table describes the available data types:
 | short     | -2^15 - 2^15 (16-bit signed integer)                      | integer          |                    |
 | byte      | -2^7 - 2^7 (8-bit signed integer)                         | integer          |                    |
 | boolean   | { true, false }                                           | boolean          |                    |
-| date      | n/a                                                       | string           | date               |
-| date-time | n/a                                                       | string           | date-time          |
-| array     | n/a                                                       | array            |                    |
-| object    | n/a                                                       | object           |                    |
+| date      | n/a                                                       | string           | date\*\*           |
+| date-time | n/a                                                       | string           | date-time\*\*      |
 
-* While conceptually JSON numbers have no limits on range, in practice they are assumed to be represented as IEEE 64-bit floating point numbers. A JSON Schema integer is represented as the set of numbers that don’t have a decimal part. When this is mapped to what can be represented in 64-bit floating point format, the effective range is approximately that of a 54-bit signed integer (shifted by 1). While this can easly be represented as a 64-bit signed integer, processors must take care not to exceed the valid range when exchanging data between services as XDM.
+\* While conceptually JSON numbers have no limits on range, in practice they are assumed to be represented as IEEE 64-bit floating point numbers. A JSON Schema integer is represented as the set of numbers that don’t have a decimal part. When this is mapped to what can be represented in 64-bit floating point format, the effective range is approximately that of a 54-bit signed integer (shifted by 1). While this can easly be represented as a 64-bit signed integer, processors must take care not to exceed the valid range when exchanging data between services as XDM.
+
+\*\* Dates and date-times are defined as they are in JSON Schema: strings conforming to [RFC 3339](https://tools.ietf.org/html/rfc3339).
 
 ## Describing XDM Data Types in JSON Schema
 

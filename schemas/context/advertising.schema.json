@@ -1,0 +1,88 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/advertising",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Advertising",
+  "type": "object",
+  "description": "The information related to advertising activity related to the experience event",
+  "meta:extensible": true,
+  "definitions": {
+    "advertising": {
+      "properties": {
+        "xdm:adViewability": {
+          "title": "MRC Viewability",
+          "$ref": "https://ns.adobe.com/xdm/context/adviewability",
+          "description":
+          "The runtime measured viewability specific details such as player volume, library version, window status, viewport/ad measured dimensions, etc."
+        },
+        "xdm:adAssetReference": {
+          "title": "Ad Asset Reference",
+          "description": "Asset information about the ad captured by the experience event.",
+          "$ref": "https://ns.adobe.com/xdm/context/advertising-timed-asset-reference"
+        },
+        "xdm:adAssetViewDetails": {
+          "title": "Ad Asset View Details",
+          "description": "View details for the ad playback captured by the experience event.",
+          "$ref": "https://ns.adobe.com/xdm/context/advertising-timed-asset-view-details"
+        },
+        "xdm:completes": {
+          "title": "Completes",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Indicates if a timed media asset was watched to completion - this does not necessarily mean the viewer watched the whole video; viewer could have skipped ahead."
+        },
+        "xdm:timePlayed": {
+          "title": "Time Spent",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Describes the amount of time spent by a user on a specific timed media asset."
+        },
+        "xdm:federated": {
+          "title": "Federated",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Indicates if an experience event was created through data federation (data sharing between customers)."
+        },
+        "xdm:clicks": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Click(s) actions on an advertisement."
+        },
+        "xdm:conversions": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "A customer pre-defined action(s) which triggers an event for performance evaluation."
+        },
+        "xdm:firstQuartiles": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "A digital video ad has played through 25% of its duration at normal speed."
+        },
+        "xdm:impressions": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Impression(s) of an advertisement to an end user with the potential of being viewed."
+        },
+        "xdm:midpoints": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "A digital video ad has played through 50% of its duration at normal speed."
+        },
+        "xdm:starts": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "A digital video ad has started playing."
+        },
+        "xdm:thirdQuartiles": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "A digital video ad has played through 75% of its duration at normal speed."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/advertising"
+    }
+  ],
+  "meta:status": "stabilizing"
+}

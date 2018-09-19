@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Email Address",
   "type": "object",
-  "meta:auditable": true,
+  "meta:extensible": true,
   "description": "A standard email address.",
   "definitions": {
     "emailaddress": {
@@ -69,11 +69,11 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/emailaddress"
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/common/auditable#/definitions/auditlog"
+      "$ref": "#/definitions/emailaddress"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stabilizing"
 }

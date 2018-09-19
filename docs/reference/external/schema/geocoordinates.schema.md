@@ -7,9 +7,9 @@ http://schema.org/GeoCoordinates
 
 The geographic coordinates of a place. Based on [schema.org](http://schema.org/GeoCoordinates).
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [external/schema/geocoordinates.schema.json](external/schema/geocoordinates.schema.json) |
+| [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
+|----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/schema/geocoordinates.schema.json](external/schema/geocoordinates.schema.json) |
 
 ## Geo Coordinates Example
 ```json
@@ -47,7 +47,7 @@ The unique identifier of the coordinates.
 
 
 `string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
 
 
 

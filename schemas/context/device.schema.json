@@ -9,6 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Device",
   "type": "object",
+  "meta:extensible": true,
   "description":
     "An identified device that is an application or browser instance that is trackable across sessions, normally by cookies.",
   "definitions": {
@@ -27,7 +28,8 @@
           "description":
             "The namespace of the service that is used to identify the device type.",
           "meta:enum": {
-            "https://ns.adobe.com/xdm/external/deviceatlas": "Device Atlas"
+            "https://ns.adobe.com/xdm/external/deviceatlas": "Device Atlas",
+            "https://ns.adobe.com/xdm/external/adobecampaign": "Adobe Campaign"
           }
         },
         "xdm:type": {
@@ -86,8 +88,11 @@
   },
   "allOf": [
     {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
       "$ref": "#/definitions/device"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stabilizing"
 }

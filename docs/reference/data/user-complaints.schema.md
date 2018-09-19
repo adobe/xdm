@@ -1,5 +1,5 @@
 
-# user-complaints Schema
+# User Complaints Schema
 
 ```
 https://ns.adobe.com/xdm/data/metrics/direct-marketing/user-complaints
@@ -7,28 +7,33 @@ https://ns.adobe.com/xdm/data/metrics/direct-marketing/user-complaints
 
 The direct-marketing metric user-complaints describes the number of user complaints that have been received. This generally occurs when a recipient of a message reported it as spam.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [data/user-complaints.schema.json](data/user-complaints.schema.json) |
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/user-complaints.schema.json](data/user-complaints.schema.json) |
+## Schema Hierarchy
 
-## user-complaints Example
+* User Complaints `https://ns.adobe.com/xdm/data/metrics/direct-marketing/user-complaints`
+  * [Metric Definition](metricdefinition.schema.md) `https://ns.adobe.com/xdm/data/metricdefinition`
+
+
+## User Complaints Example
 ```json
 {
-  "schema:name": "direct-marketing metric: user-complaints",
-  "@id": "https://ns.adobe.com/xdm/data/metrics/direct-marketing/user-complaints",
+  "schema:name": "direct-marketing metric: userComplaints",
+  "@id": "xdm:userComplaints",
   "xdm:measurement": "count",
   "xdm:unit": null
 }
 ```
 
-# user-complaints Properties
+# User Complaints Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | user-complaints (this schema) |
-| [schema:name](#schemaname) | `const` | **Required** | user-complaints (this schema) |
-| [xdm:measurement](#xdmmeasurement) | `const` | **Required** | user-complaints (this schema) |
-| [xdm:unit](#xdmunit) | `const` | **Required** | user-complaints (this schema) |
+| [@id](#@id) | `string` | **Required** | [Metric Definition](metricdefinition.schema.md#@id) |
+| [schema:name](#schemaname) | `string` | **Required** | [Metric Definition](metricdefinition.schema.md#schemaname) |
+| [xdm:measurement](#xdmmeasurement) | `string` | **Required** | [Metric Definition](metricdefinition.schema.md#xdmmeasurement) |
+| [xdm:unit](#xdmunit) | complex | **Required** | [Metric Definition](metricdefinition.schema.md#xdmunit) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -37,14 +42,15 @@ The unique identifier of this metric.
 
 `@id`
 * is **required**
-* type: `const`
-* defined in this schema
+* type: `string`
+* defined in [Metric Definition](metricdefinition.schema.md#@id)
 
-The value of this property **must** be equal to:
+### @id Type
 
-```json
-"https://ns.adobe.com/xdm/data/metrics/direct-marketing/user-complaints"
-```
+
+`string`
+* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
+
 
 
 
@@ -56,14 +62,14 @@ The human-readable name of the metric. The name can be used in user interfaces a
 
 `schema:name`
 * is **required**
-* type: `const`
-* defined in this schema
+* type: `string`
+* defined in [Metric Definition](metricdefinition.schema.md#schema:name)
 
-The value of this property **must** be equal to:
+### schema:name Type
 
-```json
-"direct-marketing metric: user-complaints"
-```
+
+`string`
+
 
 
 
@@ -75,16 +81,35 @@ How to take measures of this metric.
 
 `xdm:measurement`
 * is **required**
-* type: `const`
-* defined in this schema
+* type: `string`
+* defined in [Metric Definition](metricdefinition.schema.md#xdm:measurement)
 
-The value of this property **must** be equal to:
+### xdm:measurement Type
+
+
+`string`
+
+
+
+
+
+### xdm:measurement Examples
+
+```json
+"distance"
+```
+
+```json
+"time"
+```
+
+```json
+"price"
+```
 
 ```json
 "count"
 ```
-
-
 
 
 
@@ -93,14 +118,25 @@ The value of this property **must** be equal to:
 
 `xdm:unit`
 * is **required**
-* type: `const`
-* defined in this schema
+* type: complex
+* defined in [Metric Definition](metricdefinition.schema.md#xdm:unit)
 
-The value of this property **must** be equal to:
+### xdm:unit Type
 
-```json
-null
-```
+
+**Any** following *options* needs to be fulfilled.
+
+
+#### Option 1
+
+
+`string`
+
+
+
+#### Option 2
+
+
 
 
 

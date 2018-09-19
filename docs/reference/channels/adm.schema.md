@@ -7,15 +7,15 @@ https://ns.adobe.com/xdm/channels/adm
 
 Amazon Device Messaging
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [channels/adm.schema.json](channels/adm.schema.json) |
-
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/adm.schema.json](channels/adm.schema.json) |
 ## Schema Hierarchy
 
 * ADM `https://ns.adobe.com/xdm/channels/adm`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
+
 
 ## ADM Example
 ```json

@@ -1,5 +1,5 @@
 
-# mirror-pages Schema
+# Mirror Pages Schema
 
 ```
 https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages
@@ -7,28 +7,33 @@ https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages
 
 The direct-marketing metric mirror-pages describes the number of mirror pages for which a link to the online mirror page of a message has been clicked.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [data/mirror-pages.schema.json](data/mirror-pages.schema.json) |
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/mirror-pages.schema.json](data/mirror-pages.schema.json) |
+## Schema Hierarchy
 
-## mirror-pages Example
+* Mirror Pages `https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages`
+  * [Metric Definition](metricdefinition.schema.md) `https://ns.adobe.com/xdm/data/metricdefinition`
+
+
+## Mirror Pages Example
 ```json
 {
-  "schema:name": "direct-marketing metric: mirror-pages",
-  "@id": "https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages",
+  "schema:name": "direct-marketing metric: mirrorPages",
+  "@id": "xdm:mirrorPages",
   "xdm:measurement": "count",
   "xdm:unit": null
 }
 ```
 
-# mirror-pages Properties
+# Mirror Pages Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | mirror-pages (this schema) |
-| [schema:name](#schemaname) | `const` | **Required** | mirror-pages (this schema) |
-| [xdm:measurement](#xdmmeasurement) | `const` | **Required** | mirror-pages (this schema) |
-| [xdm:unit](#xdmunit) | `const` | **Required** | mirror-pages (this schema) |
+| [@id](#@id) | `string` | **Required** | [Metric Definition](metricdefinition.schema.md#@id) |
+| [schema:name](#schemaname) | `string` | **Required** | [Metric Definition](metricdefinition.schema.md#schemaname) |
+| [xdm:measurement](#xdmmeasurement) | `string` | **Required** | [Metric Definition](metricdefinition.schema.md#xdmmeasurement) |
+| [xdm:unit](#xdmunit) | complex | **Required** | [Metric Definition](metricdefinition.schema.md#xdmunit) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -37,14 +42,15 @@ The unique identifier of this metric.
 
 `@id`
 * is **required**
-* type: `const`
-* defined in this schema
+* type: `string`
+* defined in [Metric Definition](metricdefinition.schema.md#@id)
 
-The value of this property **must** be equal to:
+### @id Type
 
-```json
-"https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages"
-```
+
+`string`
+* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
+
 
 
 
@@ -56,14 +62,14 @@ The human-readable name of the metric. The name can be used in user interfaces a
 
 `schema:name`
 * is **required**
-* type: `const`
-* defined in this schema
+* type: `string`
+* defined in [Metric Definition](metricdefinition.schema.md#schema:name)
 
-The value of this property **must** be equal to:
+### schema:name Type
 
-```json
-"direct-marketing metric: mirror-pages"
-```
+
+`string`
+
 
 
 
@@ -75,16 +81,35 @@ How to take measures of this metric.
 
 `xdm:measurement`
 * is **required**
-* type: `const`
-* defined in this schema
+* type: `string`
+* defined in [Metric Definition](metricdefinition.schema.md#xdm:measurement)
 
-The value of this property **must** be equal to:
+### xdm:measurement Type
+
+
+`string`
+
+
+
+
+
+### xdm:measurement Examples
+
+```json
+"distance"
+```
+
+```json
+"time"
+```
+
+```json
+"price"
+```
 
 ```json
 "count"
 ```
-
-
 
 
 
@@ -93,14 +118,25 @@ The value of this property **must** be equal to:
 
 `xdm:unit`
 * is **required**
-* type: `const`
-* defined in this schema
+* type: complex
+* defined in [Metric Definition](metricdefinition.schema.md#xdm:unit)
 
-The value of this property **must** be equal to:
+### xdm:unit Type
 
-```json
-null
-```
+
+**Any** following *options* needs to be fulfilled.
+
+
+#### Option 1
+
+
+`string`
+
+
+
+#### Option 2
+
+
 
 
 

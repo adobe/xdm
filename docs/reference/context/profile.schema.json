@@ -10,6 +10,7 @@
     "title": "Profile",
     "type": "object",
     "auditable": true,
+    "meta:extensible": true,
     "description": "XDM Profiles are a singular representation of the attributes of identified and\npartially identified persons. Profiles that are highly identified maybe used for\npersonal communications or highly targeted engagements and can contain detailed\npersonal information such as names, gender, date of birth, locations, and contact\ninformation like phone numbers and email addresses. Profiles may range to the\nother end of the identification spectrum where only anonymous behavioral signals\nare being observed and the amount of identification is simple browser cookies.\nIn this latter case, the sparse Profile data is useful to build more knowledge\non the interests and preferences of the anonymous profile, and over time can\nbecome richer as the person interacting with brand becomes more engaged and\nultimately signs-on to notifications, subscriptions, purchases and other\nconnections with the brand that enrich and fill out the profile.\n\nXDM Profile can contain personal information, identification information, contact\ndetails and communication preferences. Over time XDM Profile will expand to cater\nfor other Profile data such as preference, propensities and other attributes.\n\n",
     "definitions": {
         "profile": {
@@ -63,6 +64,11 @@
                     "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
                     "description": "Mobile phone number.\n"
                 },
+                "xdm:faxPhone": {
+                    "title": "Fax Phone",
+                    "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
+                    "description": "Fax phone number.\n"
+                },
                 "xdm:optInOut": {
                     "title": "OptInOut",
                     "$ref": "https://ns.adobe.com/xdm/context/optinout",
@@ -76,15 +82,50 @@
                         "$ref": "https://ns.adobe.com/xdm/context/pushnotificationtoken"
                     }
                 },
-                "xdm:orgUnitID": {
-                    "title": "Organizational Unit Identifier",
-                    "type": "string",
-                    "description": "The unit ID within the organization owning the profile. This ID can be used to reference the organization details maintained in another dataset."
+                "xdm:orgUnit": {
+                    "title": "Organizational Unit",
+                    "$ref": "https://ns.adobe.com/xdm/common/orgunit",
+                    "description": "The unit within the organization owning the profile. This can be used to reference the organization details maintained in another dataset."
                 },
-                "xdm:geoUnitID": {
-                    "title": "Geographical Unit Identifier",
+                "xdm:geoUnit": {
+                    "title": "Geographical Unit",
+                    "$ref": "https://ns.adobe.com/xdm/common/geounit",
+                    "description": "The geographical unit within the organization owning the profile. This can be used to reference the geographical information maintained in another dataset."
+                },
+                "xdm:preferredLanguage": {
+                    "title": "Preferred Language",
                     "type": "string",
-                    "description": "The geographical unit ID within the organization owning the profile. This ID can be used to reference the geographical information maintained in another dataset."
+                    "pattern": "^(((([A-Za-z]{2,3}(-([A-Za-z]{3}(-[A-Za-z]{3}){0,2}))?)|[A-Za-z]{4}|[A-Za-z]{5,8})(-([A-Za-z]{4}))?(-([A-Za-z]{2}|[0-9]{3}))?(-([A-Za-z0-9]{5,8}|[0-9][A-Za-z0-9]{3}))*(-([0-9A-WY-Za-wy-z](-[A-Za-z0-9]{2,8})+))*(-(x(-[A-Za-z0-9]{1,8})+))?)|(x(-[A-Za-z0-9]{1,8})+)|((en-GB-oed|i-ami|i-bnn|i-default|i-enochian|i-hak|i-klingon|i-lux|i-mingo|i-navajo|i-pwn|i-tao|i-tay|i-tsu|sgn-BE-FR|sgn-BE-NL|sgn-CH-DE)|(art-lojban|cel-gaulish|no-bok|no-nyn|zh-guoyu|zh-hakka|zh-min|zh-min-nan|zh-xiang)))$",
+                    "examples": [
+                        "en-GB",
+                        "de-DE",
+                        "yue-HK"
+                    ],
+                    "description": "Describes the preferred system of communication used by the profile. Language codes are expressed in BCP 47 format."
+                },
+                "xdm:timeZone": {
+                    "title": "Time Zone",
+                    "type": "string",
+                    "examples": [
+                        "America/Barbados",
+                        "Antarctica/Davis",
+                        "Asia/Calcutta"
+                    ],
+                    "description": "Describes which time zone the profile is present in, most frequently/the time zone preferred by the profile. Time zones are expressed according to the IETF tz database: https://www.ietf.org/timezones/tzdb-2016i/tz-link.htm"
+                },
+                "xdm:profilePictureLink": {
+                    "title": "Profile Picture Link",
+                    "type": "string",
+                    "description": "Link to profile's picture"
+                },
+                "xdm:emailFormat": {
+                    "title": "Email Format",
+                    "type": "string",
+                    "description": "Email format preferred by the profile. This can be rich text/plain text",
+                    "meta:enum": {
+                        "html": "Rich text",
+                        "plaintext": "Plain text"
+                    }
                 },
                 "xdm:organizations": {
                     "title": "Organizations",
@@ -100,6 +141,19 @@
                     "items": {
                         "$ref": "https://ns.adobe.com/xdm/context/subscription"
                     }
+                },
+                "xdm:testProfile": {
+                    "title": "Test Profile",
+                    "type": "boolean",
+                    "description": "Indicates the `profile` record is for use in testing/verification purposes and should not be automatically included in normal operation(s).",
+                    "default": false
+                },
+                "xdm:segments": {
+                    "title": "Segment Membership",
+                    "type": "array",
+                    "items": {
+                        "$ref": "https://ns.adobe.com/xdm/context/segmentmembership"
+                    }
                 }
             }
         }
@@ -109,7 +163,7 @@
             "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
         },
         {
-            "$ref": "https://ns.adobe.com/xdm/common/auditable#/definitions/auditlog"
+            "$ref": "https://ns.adobe.com/xdm/common/auditable"
         },
         {
             "$ref": "#/definitions/profile"
@@ -120,10 +174,15 @@
         {
             "xdm:identities": [
                 {
-                    "@id": "https://data.adobe.io/entities/identity/id123",
+                    "xdm:id": "someone@example.com",
                     "xdm:namespace": {
-                        "xdm:id": 12345,
-                        "xdm:code": "AA111"
+                        "xdm:code": "Email"
+                    }
+                },
+                {
+                    "xdm:id": "123-456",
+                    "xdm:namespace": {
+                        "xdm:code": "BB111"
                     }
                 }
             ],
@@ -172,7 +231,39 @@
                 "https://ns.adobe.com/xdm/channels/direct-mail": "not_provided",
                 "https://ns.adobe.com/xdm/channels/apns": "not_provided",
                 "xdm:globalOptout": false
-            }
+            },
+            "xdm:orgUnit": {
+                "@id": "https://data.adobe.io/org-apparals-men"
+            },
+            "xdm:geoUnit": {
+                "@id": "https://data.adobe.io/geo-france"
+            },
+            "xdm:segments": [
+                {
+                    "xdm:segmentID": {
+                        "@id": "https://data.adobe.io/entities/segmentidentity/04a81716-43d6-4e7a-a49c-f1d8b3129ba9",
+                        "xdm:namespace": {
+                            "xdm:code": "AAM"
+                        }
+                    },
+                    "xdm:version": "15",
+                    "xdm:timestamp": "2018-04-26T15:52:25+00:00",
+                    "xdm:validUntil": "2019-04-26T15:52:25+00:00",
+                    "xdm:status": "existing"
+                },
+                {
+                    "xdm:segmentID": {
+                        "@id": "https://data.adobe.io/entities/identity/53cba6b2-a23b-454a-8069-fc41308f1c0f",
+                        "xdm:namespace": {
+                            "xdm:code": "AAM"
+                        }
+                    },
+                    "xdm:version": "3",
+                    "xdm:lastQualificationTime": "2018-04-26T15:52:25+00:00",
+                    "xdm:validUntil": "2018-04-27T15:52:25+00:00",
+                    "xdm:status": "realized"
+                }
+            ]
         }
     ]
 }

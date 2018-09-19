@@ -8,9 +8,9 @@ https://ns.adobe.com/xdm/content/component-container
 A container for `Page Component`s, this means for content blocks that are within a _Componentized Page_, not a container for componentized pages themselves. Components in the container can be ordered or unordered, and the type of the container determines how the container is authored, configured, rendered, and displayed.
 
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [content/component-container.schema.json](content/component-container.schema.json) |
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [content/component-container.schema.json](content/component-container.schema.json) |
 
 ## Component Container Example
 ```json
@@ -30,7 +30,7 @@ A container for `Page Component`s, this means for content blocks that are within
       "type": "https://francois.corp.adobe.com:4502/apps/foundation/image",
       "image": {
         "@type": "https://ns.adobe.com/xdm/assets/asset",
-        "repo:assetID": "urn:aaid:aem:4123ba4c-93a8-4c5d-b979-1234e4318185",
+        "repo:id": "urn:aaid:aem:4123ba4c-93a8-4c5d-b979-1234e4318185",
         "id": "https://francois.corp.adobe.com:4502/content/dam/Glasses-small.jpg"
       }
     },

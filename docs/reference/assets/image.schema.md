@@ -7,21 +7,21 @@ https://ns.adobe.com/xdm/assets/image
 
 The Image class is for raster and vector image assets, including JPEG, PNG, SVG files
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [assets/image.schema.json](assets/image.schema.json) |
-
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [assets/image.schema.json](assets/image.schema.json) |
 ## Schema Hierarchy
 
 * Image `https://ns.adobe.com/xdm/assets/image`
   * [Content](../content/content.schema.md) `https://ns.adobe.com/xdm/content/content`
   * [Asset](asset.schema.md) `https://ns.adobe.com/xdm/assets/asset`
-  * [Rectangular Media](rectangular.schema.md) `https://ns.adobe.com/xdm/assets/rectangular`
+  * [Simple Rectangular Area](rectangular.schema.md) `https://ns.adobe.com/xdm/assets/rectangular`
+
 
 ## Image Example
 ```json
 {
-  "repo:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
+  "repo:id": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
   "xmp:createDate": "2017-09-26T15:52:25+00:00",
   "repo:createdDate": "2017-09-26T15:52:25+00:00",
   "xdm:repositoryCreatedBy": "lars",
@@ -67,12 +67,12 @@ The Image class is for raster and vector image assets, including JPEG, PNG, SVG 
 | [plus:copyrightOwner](#pluscopyrightowner) | reference | Optional | [Asset](asset.schema.md#pluscopyrightowner) |
 | [tiff:XResolution](#tiffxresolution) | `object` | Optional | Image (this schema) |
 | [tiff:YResolution](#tiffyresolution) | `object` | Optional | Image (this schema) |
-| [tiff:imageLength](#tiffimagelength) | `integer` | Optional | [Rectangular Media](rectangular.schema.md#tiffimagelength) |
-| [tiff:imageWidth](#tiffimagewidth) | `integer` | Optional | [Rectangular Media](rectangular.schema.md#tiffimagewidth) |
+| [tiff:imageLength](#tiffimagelength) | `integer` | Optional | [Simple Rectangular Area](rectangular.schema.md#tiffimagelength) |
+| [tiff:imageWidth](#tiffimagewidth) | `integer` | Optional | [Simple Rectangular Area](rectangular.schema.md#tiffimagewidth) |
 | [tiff:orientation](#tifforientation) | `integer` | Optional | Image (this schema) |
 | [tiff:resolutionUnit](#tiffresolutionunit) | `enum` | Optional | Image (this schema) |
 | [xdm:aliasIDs](#xdmaliasids) | `array` | Optional | [Asset](asset.schema.md#xdmaliasids) |
-| [xdm:aspectRatio](#xdmaspectratio) | `number` | Optional | [Rectangular Media](rectangular.schema.md#xdmaspectratio) |
+| [xdm:aspectRatio](#xdmaspectratio) | `number` | Optional | [Simple Rectangular Area](rectangular.schema.md#xdmaspectratio) |
 | [xdm:documentID](#xdmdocumentid) | `string` | Optional | [Asset](asset.schema.md#xdmdocumentid) |
 | [xdm:milestone](#xdmmilestone) | `object` | Optional | [Asset](asset.schema.md#xdmmilestone) |
 | [xdm:notSafe](#xdmnotsafe) | `enum` | Optional | [Asset](asset.schema.md#xdmnotsafe) |
@@ -86,7 +86,6 @@ The Image class is for raster and vector image assets, including JPEG, PNG, SVG 
 | [xmp:layers](#xmplayers) | complex | Optional | [Asset](asset.schema.md#xmplayers) |
 | [xmp:machineKeywords](#xmpmachinekeywords) | `object[]` | Optional | [Asset](asset.schema.md#xmpmachinekeywords) |
 | [xmp:modifyDate](#xmpmodifydate) | `string` | Optional | [Asset](asset.schema.md#xmpmodifydate) |
-| [xmp:numberOfPixels](#xmpnumberofpixels) | `integer` | Optional | Image (this schema) |
 | [xmp:rating](#xmprating) | `enum` | Optional | [Asset](asset.schema.md#xmprating) |
 | [xmpMM:history](#xmpmmhistory) | reference | Optional | [Asset](asset.schema.md#xmpmmhistory) |
 | [xmpMM:manageTo](#xmpmmmanageto) | `string` | Optional | [Asset](asset.schema.md#xmpmmmanageto) |
@@ -110,7 +109,7 @@ A unique identifier given to every addressable piece of content in a given repos
 
 
 `string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
 
 
 
@@ -120,7 +119,7 @@ A unique identifier given to every addressable piece of content in a given repos
 ## cc:attributionName
 ### Attribution Name
 
-For licenses that require attribution, such as some Creative Commons licenses, the user to which a work is attributed. When publishing to Behance, this is taken from the user&#39;s Behance profile information.
+For licenses that require attribution, such as some Creative Commons licenses, the user to which a work is attributed. When publishing to Behance, this is taken from the user's Behance profile information.
 
 `cc:attributionName`
 * is optional
@@ -140,7 +139,7 @@ For licenses that require attribution, such as some Creative Commons licenses, t
 ## cc:attributionUrl
 ### Attribution URL
 
-For licenses that require attribution, such as some Creative Commons licenses, a URL that identifies the user to which a work should be attributed. When publishing to Behance, we link to the user&#39;s profile page.
+For licenses that require attribution, such as some Creative Commons licenses, a URL that identifies the user to which a work should be attributed. When publishing to Behance, we link to the user's profile page.
 
 `cc:attributionUrl`
 * is optional
@@ -639,7 +638,7 @@ Height in pixels. To maintain continuity with the XMP and TIFF standards, the he
 `tiff:imageLength`
 * is optional
 * type: `integer`
-* defined in [Rectangular Media](rectangular.schema.md#tiff:imageLength)
+* defined in [Simple Rectangular Area](rectangular.schema.md#tiff:imageLength)
 
 ### tiff:imageLength Type
 
@@ -660,7 +659,7 @@ Width in pixels
 `tiff:imageWidth`
 * is optional
 * type: `integer`
-* defined in [Rectangular Media](rectangular.schema.md#tiff:imageWidth)
+* defined in [Simple Rectangular Area](rectangular.schema.md#tiff:imageWidth)
 
 ### tiff:imageWidth Type
 
@@ -798,7 +797,7 @@ Describes the proportional relationship between the width and the height. To det
 `xdm:aspectRatio`
 * is optional
 * type: `number`
-* defined in [Rectangular Media](rectangular.schema.md#xdm:aspectRatio)
+* defined in [Simple Rectangular Area](rectangular.schema.md#xdm:aspectRatio)
 
 ### xdm:aspectRatio Type
 
@@ -814,7 +813,7 @@ Describes the proportional relationship between the width and the height. To det
 ## xdm:documentID
 ### Document ID
 
-It takes the value of xmpMM:DocumentID present in the [XMP packet of the asset](http://wwwimages.adobe.com/content/dam/Adobe/en/devnet/xmp/pdfs/XMP%20SDK%20Release%20cc-2014-12/XMPSpecificationPart1.pdf). For the assets having no XMP packet this property won&#39;t be populated. 
+It takes the value of xmpMM:DocumentID present in the [XMP packet of the asset](http://wwwimages.adobe.com/content/dam/Adobe/en/devnet/xmp/pdfs/XMP%20SDK%20Release%20cc-2014-12/XMPSpecificationPart1.pdf). For the assets having no XMP packet this property won't be populated. 
 
 The value is a GUID, capital A-F, 8-4-4-12, preceded by the string `uuid:`
 
@@ -1319,7 +1318,7 @@ The keyword itself. A keyword can be considered like a tag, i.e. a short descrip
 ## xmp:modifyDate
 ### Mofification Date
 
-The date and time when asset was last modified. The Date Time property should conform to ISO 8601 standard. An example form is &#34;2004-10-23T12:00:00-06:00&#34;. Opposed to `repositoryLastModifiedDate`, this is the time when the asset was last modified locally, with or without knowledge of the repository.
+The date and time when asset was last modified. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00". Opposed to `repositoryLastModifiedDate`, this is the time when the asset was last modified locally, with or without knowledge of the repository.
 
 `xmp:modifyDate`
 * is optional
@@ -1331,26 +1330,6 @@ The date and time when asset was last modified. The Date Time property should co
 
 `string`
 * format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
-
-
-
-
-
-
-## xmp:numberOfPixels
-
-Total number of pixels
-
-`xmp:numberOfPixels`
-* is optional
-* type: `integer`
-* defined in this schema
-
-### xmp:numberOfPixels Type
-
-
-`integer`
-* minimum value: `0`
 
 
 

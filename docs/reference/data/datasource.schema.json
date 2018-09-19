@@ -16,7 +16,7 @@
                 "@id": {
                     "title": "Identifier",
                     "type": "string",
-                    "format": "uri",
+                    "format": "uri-reference",
                     "description": "The unique ID of this data source. This would be provided by the individual or system that created the Datasource.\n"
                 },
                 "xdm:code": {
@@ -44,7 +44,7 @@
             "$ref": "#/definitions/datasource"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stabilizing",
     "examples": [
         {
             "@id": "https://data.adobe.io/datasources/datasource-123",

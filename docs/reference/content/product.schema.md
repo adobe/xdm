@@ -8,14 +8,14 @@ https://ns.adobe.com/xdm/context/product
 XDM product variant, master product and key attributes of product in the product catalog.
 
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [content/product.schema.json](content/product.schema.json) |
-
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [content/product.schema.json](content/product.schema.json) |
 ## Schema Hierarchy
 
 * Product `https://ns.adobe.com/xdm/context/product`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+
 
 ## Product Example
 ```json
@@ -84,7 +84,7 @@ The internal unique ID of the variant in the commerce backend system.
 
 
 `string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
 
 
 
@@ -469,7 +469,7 @@ The name of the product.
 ## xdm:originalSaleDate
 ### Original Sale Date
 
-First date the product was made available for sale. The time using RFC3339 with a stated timezone offset such as &#34;2001-07-04T12:08:56-07:00&#34;. An example formatting pattern is &#34;yyyy-MM-dd&#39;T&#39;HH:mm:ssXXX&#34;.
+First date the product was made available for sale. The time using RFC3339 with a stated timezone offset such as "2001-07-04T12:08:56-07:00". An example formatting pattern is "yyyy-MM-dd'T'HH:mm:ssXXX".
 
 `xdm:originalSaleDate`
 * is optional
@@ -490,7 +490,7 @@ First date the product was made available for sale. The time using RFC3339 with 
 ## xdm:productCreateDate
 ### Product Creation Date
 
-The date when this product variant was created. The time using RFC3339 with a stated timezone offset such as &#34;2001-07-04T12:08:56-07:00&#34;. An example formatting pattern is &#34;yyyy-MM-dd&#39;T&#39;HH:mm:ssXXX&#34;.
+The date when this product variant was created. The time using RFC3339 with a stated timezone offset such as "2001-07-04T12:08:56-07:00". An example formatting pattern is "yyyy-MM-dd'T'HH:mm:ssXXX".
 
 `xdm:productCreateDate`
 * is optional
@@ -511,7 +511,7 @@ The date when this product variant was created. The time using RFC3339 with a st
 ## xdm:productLastModified
 ### Product Last Modified
 
-The date when this product variant was last modified. The time using RFC3339 with a stated timezone offset such as &#34;2001-07-04T12:08:56-07:00&#34;. An example formatting pattern is &#34;yyyy-MM-dd&#39;T&#39;HH:mm:ssXXX&#34;.
+The date when this product variant was last modified. The time using RFC3339 with a stated timezone offset such as "2001-07-04T12:08:56-07:00". An example formatting pattern is "yyyy-MM-dd'T'HH:mm:ssXXX".
 
 `xdm:productLastModified`
 * is optional

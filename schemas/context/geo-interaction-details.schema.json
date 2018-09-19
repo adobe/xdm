@@ -1,0 +1,45 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/geo-interaction-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Geo Interaction Details",
+  "type": "object",
+  "meta:extensible": true,
+  "description":
+    "The geo details relating to the current state of inclusion in a geo defined area.",
+  "definitions": {
+    "geo-interaction-detail": {
+      "properties": {
+        "xdm:distanceToCenter": {
+          "title": "Distance to Center",
+          "type": "number",
+          "description": "Distance to center of geo in case of a geo circle. Measured in meters."
+        },
+        "xdm:deviceGeoAccuracy": {
+          "title": "Geo Device Accuracy",
+          "type": "number",
+          "description": "The accuracy of the geo measuring device or mechanism. Measured in meters."
+        },
+        "xdm:geoShape": {
+          "title": "Geo Shape",
+          "$ref": "http://schema.org/GeoShape",
+          "description": "Geo shape of the geo being interacted with."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/geo-interaction-detail"
+    }
+  ],
+  "meta:status": "experimental"
+}

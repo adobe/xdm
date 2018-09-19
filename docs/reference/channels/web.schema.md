@@ -7,15 +7,15 @@ https://ns.adobe.com/xdm/channels/web
 
 The world wide web and mobile web. Pages delivered via HTTP to a web browser or in-app browser.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [channels/web.schema.json](channels/web.schema.json) |
-
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/web.schema.json](channels/web.schema.json) |
 ## Schema Hierarchy
 
 * Web `https://ns.adobe.com/xdm/channels/web`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
+
 
 ## Web Example
 ```json

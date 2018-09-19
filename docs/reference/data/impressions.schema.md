@@ -5,17 +5,22 @@
 https://ns.adobe.com/xdm/data/metrics/advertising/impressions
 ```
 
-The advertising metric impressions describes…
+The metric impressions describe the number of digital assets rendered.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [data/impressions.schema.json](data/impressions.schema.json) |
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/impressions.schema.json](data/impressions.schema.json) |
+## Schema Hierarchy
+
+* impressions `https://ns.adobe.com/xdm/data/metrics/advertising/impressions`
+  * [Metric Definition](metricdefinition.schema.md) `https://ns.adobe.com/xdm/data/metricdefinition`
+
 
 ## impressions Example
 ```json
 {
-  "schema:name": "advertising metric: impressions",
-  "@id": "https://ns.adobe.com/xdm/data/metrics/advertising/impressions",
+  "schema:name": "metric: impressions",
+  "@id": "xdm:impressions",
   "xdm:measurement": "count",
   "xdm:unit": null
 }
@@ -25,10 +30,10 @@ The advertising metric impressions describes…
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | impressions (this schema) |
-| [schema:name](#schemaname) | `const` | **Required** | impressions (this schema) |
-| [xdm:measurement](#xdmmeasurement) | `const` | **Required** | impressions (this schema) |
-| [xdm:unit](#xdmunit) | `const` | **Required** | impressions (this schema) |
+| [@id](#@id) | `string` | **Required** | [Metric Definition](metricdefinition.schema.md#@id) |
+| [schema:name](#schemaname) | `string` | **Required** | [Metric Definition](metricdefinition.schema.md#schemaname) |
+| [xdm:measurement](#xdmmeasurement) | `string` | **Required** | [Metric Definition](metricdefinition.schema.md#xdmmeasurement) |
+| [xdm:unit](#xdmunit) | complex | **Required** | [Metric Definition](metricdefinition.schema.md#xdmunit) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -37,14 +42,15 @@ The unique identifier of this metric.
 
 `@id`
 * is **required**
-* type: `const`
-* defined in this schema
+* type: `string`
+* defined in [Metric Definition](metricdefinition.schema.md#@id)
 
-The value of this property **must** be equal to:
+### @id Type
 
-```json
-"https://ns.adobe.com/xdm/data/metrics/advertising/impressions"
-```
+
+`string`
+* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
+
 
 
 
@@ -56,14 +62,14 @@ The human-readable name of the metric. The name can be used in user interfaces a
 
 `schema:name`
 * is **required**
-* type: `const`
-* defined in this schema
+* type: `string`
+* defined in [Metric Definition](metricdefinition.schema.md#schema:name)
 
-The value of this property **must** be equal to:
+### schema:name Type
 
-```json
-"advertising metric: impressions"
-```
+
+`string`
+
 
 
 
@@ -75,16 +81,35 @@ How to take measures of this metric.
 
 `xdm:measurement`
 * is **required**
-* type: `const`
-* defined in this schema
+* type: `string`
+* defined in [Metric Definition](metricdefinition.schema.md#xdm:measurement)
 
-The value of this property **must** be equal to:
+### xdm:measurement Type
+
+
+`string`
+
+
+
+
+
+### xdm:measurement Examples
+
+```json
+"distance"
+```
+
+```json
+"time"
+```
+
+```json
+"price"
+```
 
 ```json
 "count"
 ```
-
-
 
 
 
@@ -93,14 +118,25 @@ The value of this property **must** be equal to:
 
 `xdm:unit`
 * is **required**
-* type: `const`
-* defined in this schema
+* type: complex
+* defined in [Metric Definition](metricdefinition.schema.md#xdm:unit)
 
-The value of this property **must** be equal to:
+### xdm:unit Type
 
-```json
-null
-```
+
+**Any** following *options* needs to be fulfilled.
+
+
+#### Option 1
+
+
+`string`
+
+
+
+#### Option 2
+
+
 
 
 

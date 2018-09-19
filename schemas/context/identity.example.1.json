@@ -1,7 +1,7 @@
 {
-  "@id": "https://data.adobe.io/entities/identity/id123",
+  "xdm:id": "id123",
   "xdm:namespace": {
-    "@id": "https://data.adobe.io/entities/namespace/12345",
     "xdm:code": "AA12345"
-  }
+  },
+  "xdm:authenticatedState": "ambiguous"
 }

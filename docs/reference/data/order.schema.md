@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/data/order
 
 The order placed for a product list.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [data/order.schema.json](data/order.schema.json) |
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/order.schema.json](data/order.schema.json) |
 
 ## Order Example
 ```json
@@ -24,7 +24,7 @@ The order placed for a product list.
       "xdm:currencyCode": "USD"
     },
     {
-      "xdm:transactionId": "transactid-a222",
+      "xdm:transactionID": "transactid-a222",
       "xdm:paymentAmount": 99.99,
       "xdm:paymentType": "gift_card",
       "xdm:currencyCode": "USD"

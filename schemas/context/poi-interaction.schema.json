@@ -1,0 +1,44 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/poi-interaction",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Point of Interest Interaction",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "A Point or Place of Interest(POI) interaction. Used to capture triggered engagement activities when users enter, leave of come within range of a POI.",
+  "definitions": {
+    "poi-interaction": {
+      "properties": {
+        "xdm:POIDetail": {
+          "title": "POI Detail",
+          "description": "Detail of the POI that cause the event.",
+          "$ref": "https://ns.adobe.com/xdm/context/poi-detail"
+        },
+        "xdm:poiEntries": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+            "The number of times a person has entered the Point of Interest (POI)."
+        },
+        "xdm:poiExits": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+            "The number of times a person has exited the Point of Interest (POI)."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/poi-interaction"
+    }
+  ],
+  "meta:status": "experimental"
+}

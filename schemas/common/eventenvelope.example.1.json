@@ -5,7 +5,7 @@
   "@id":
     "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
   "activitystreams:to": {
-    "@type": "https://ns.adobe.com/xdm-extensions/ims/user",
+    "@type": "https://ns.adobe.com/adobecloudplatform/ims/user",
     "@id": "D13A1E7053E46A220A4C86E1@AdobeID"
   },
   "activitystreams:generator": {
@@ -13,12 +13,12 @@
     "xdm:root": "https://cc-api-storage-stage.adobe.io/"
   },
   "activitystreams:actor": {
-    "@type": "https://ns.adobe.com/xdm-extensions/ims/user",
+    "@type": "https://ns.adobe.com/adobecloudplatform/ims/user",
     "@id": "D13A1E7053E46A220A4C86E1@AdobeID"
   },
   "activitystreams:object": {
     "@type": "https://ns.adobe.com/xdm/assets/asset",
-    "repo:assetID": "urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
+    "repo:id": "urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
     "@id":
       "https://cc-api-storage-stage.adobe.io/id/urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
     "xdm:name": "example.jpg",

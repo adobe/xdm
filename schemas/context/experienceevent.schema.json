@@ -9,15 +9,15 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "ExperienceEvent",
   "type": "object",
-  "description":
-    "The core ExperienceEvent XDM is used to capture observations that are altering one or more related XDMs/entities. The ExperienceEvent captures information about the observation taking place and when it is occurring. It is critical for time domain analytics as it allows observation and analysis of changes that occur in windows of time and comparison with other windows of time to track trends. ExperienceEvent are either explicit or implicit. Explicit events are direct observations of a human action taking place during a session. Implicit events are events that are being raised without a direct human action. Examples of implicit events are scheduled email sending of newsletters, battery voltage reaching a certain threshold, a person entering into range of a proximity sensor. While not all events are easily categorized across all data sources, it is extremely valuable to harmonize similar events into similar types for processing where possible, and the XDM specifications does this by defining a set of enumerated **type** attribute values with specific semantic meanings. Where possible events must be constrained to these enumerated values to facilitate interoperability.",
+  "meta:extensible": true,
+  "description": "The core ExperienceEvent XDM is used to capture observations that are altering one or more related XDMs/entities. The ExperienceEvent captures information about the observation taking place and when it is occurring. It is critical for time domain analytics as it allows observation and analysis of changes that occur in windows of time and comparison with other windows of time to track trends. ExperienceEvent are either explicit or implicit. Explicit events are direct observations of a human action taking place during a session. Implicit events are events that are being raised without a direct human action. Examples of implicit events are scheduled email sending of newsletters, battery voltage reaching a certain threshold, a person entering into range of a proximity sensor. While not all events are easily categorized across all data sources, it is extremely valuable to harmonize similar events into similar types for processing where possible, and the XDM specifications does this by defining a set of enumerated **type** attribute values with specific semantic meanings. Where possible events must be constrained to these enumerated values to facilitate interoperability.",
   "definitions": {
     "experienceevent": {
       "properties": {
         "@id": {
           "title": "Identifier",
           "type": "string",
-          "format": "uri",
+          "format": "uri-reference",
           "description": "The unique identifier for the ExperienceEvent."
         },
         "xdm:dataSource": {
@@ -29,32 +29,28 @@
           "title": "Timestamp",
           "type": "string",
           "format": "date-time",
-          "description":
-            "The time when the first event of the interaction occurred."
+          "description": "The time when the first event of the interaction occurred."
+        },
+        "xdm:receivedTimestamp": {
+          "title": "Received Timestamp",
+          "type": "string",
+          "format": "date-time",
+          "description": "The time at which this interaction was received by a server."
         },
         "xdm:endUserIDs": {
           "title": "End User IDs",
           "$ref": "https://ns.adobe.com/xdm/context/enduserids",
-          "description":
-            "Condensed, normalized encapsulation of all end user identifiers.\n"
-        },
-        "xdm:metrics": {
-          "title": "Metrics",
-          "$ref": "https://ns.adobe.com/xdm/data/metrics",
-          "description":
-            "The metrics for actions performed during this observation."
+          "description": "Condensed, normalized encapsulation of all end user identifiers."
         },
         "xdm:environment": {
           "title": "Environment",
           "$ref": "https://ns.adobe.com/xdm/context/environment",
-          "description":
-            "Information about the surrounding situation the event observation occurred in, specifically detailing transitory information such as the network or software versions."
+          "description": "Information about the surrounding situation the event observation occurred in, specifically detailing transitory information such as the network or software versions."
         },
         "xdm:productListItems": {
           "title": "Product List Items",
           "type": "array",
-          "description":
-            "A list of items representing a product selected by a customer with specific options and pricing that are for that usage context at a specific point of time and may differ from the product record.",
+          "description": "A list of items representing a product selected by a customer with specific options and pricing that are for that usage context at a specific point of time and may differ from the product record.",
           "items": {
             "$ref": "https://ns.adobe.com/xdm/content/productlistitem"
           }
@@ -62,20 +58,17 @@
         "xdm:device": {
           "title": "Device",
           "$ref": "https://ns.adobe.com/xdm/context/device",
-          "description":
-            "An identified Device/Application or Device/Browser instance that is trackable across sessions, normally by cookies."
+          "description": "An identified Device/Application or Device/Browser instance that is trackable across sessions, normally by cookies."
         },
         "xdm:commerce": {
           "title": "Commerce",
           "$ref": "https://ns.adobe.com/xdm/context/commerce",
-          "description":
-            "The commerce specific data related to this interaction."
+          "description": "The commerce specific data related to this interaction."
         },
         "xdm:application": {
           "title": "Application",
-          "$ref": "https://ns.adobe.com/xdm/channels/application",
-          "description":
-            "The application related to the event observation. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login."
+          "$ref": "https://ns.adobe.com/xdm/context/application",
+          "description": "The application related to the event observation. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login."
         },
         "xdm:search": {
           "title": "Search",
@@ -84,55 +77,62 @@
         },
         "xdm:web": {
           "title": "Web",
-          "$ref": "https://ns.adobe.com/xdm/channels/web",
-          "description":
-            "The information related to web page and link of the ExperienceEvent."
+          "$ref": "https://ns.adobe.com/xdm/context/webinfo",
+          "description": "The information related to web page and link of the ExperienceEvent."
+        },
+        "xdm:directMarketing": {
+          "title": "Direct Marketing",
+          "$ref": "https://ns.adobe.com/xdm/context/direct-marketing",
+          "description": "The events and properties related to direct/outbound marketing such as email, direct mail, texts and in-app notifications."
         },
         "xdm:marketing": {
           "title": "Marketing",
           "$ref": "https://ns.adobe.com/xdm/context/marketing",
-          "description":
-            "The information related to marketing activities that are active with the touchpoint."
+          "description": "The information related to marketing activities that are active with the touchpoint."
         },
-        "xdm:locationContext": {
-          "title": "Location Context",
-          "$ref": "https://ns.adobe.com/xdm/context/locationcontext",
-          "description":
-            "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, working hours."
+        "xdm:placeContext": {
+          "title": "Place Context",
+          "$ref": "https://ns.adobe.com/xdm/context/placecontext",
+          "description": "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, working hours."
         },
         "xdm:channel": {
-          "title": "Communication Channel",
-          "type": "string",
-          "format": "uri",
-          "meta:enum": {
-            "https://ns.adobe.com/xdm/channels/adm": "ADM",
-            "https://ns.adobe.com/xdm/channels/agency": "Agency",
-            "https://ns.adobe.com/xdm/channels/apns": "APNS",
-            "https://ns.adobe.com/xdm/channels/application": "Application",
-            "https://ns.adobe.com/xdm/channels/baidu": "Baidu",
-            "https://ns.adobe.com/xdm/channels/channel": "Experience Channel",
-            "https://ns.adobe.com/xdm/channels/direct-mail": "Direct Mail",
-            "https://ns.adobe.com/xdm/channels/email": "E-Mail",
-            "https://ns.adobe.com/xdm/channels/facebook-feed":
-              "Facebook News Feed",
-            "https://ns.adobe.com/xdm/channels/fax": "Fax",
-            "https://ns.adobe.com/xdm/channels/gcm": "GCM",
-            "https://ns.adobe.com/xdm/channels/line": "LINE",
-            "https://ns.adobe.com/xdm/channels/mobile-app": "Web",
-            "https://ns.adobe.com/xdm/channels/mpns": "MPNS",
-            "https://ns.adobe.com/xdm/channels/phone": "Phone",
-            "https://ns.adobe.com/xdm/channels/sms": "SMS",
-            "https://ns.adobe.com/xdm/channels/twitter-feed": "Twitter Feed",
-            "https://ns.adobe.com/xdm/channels/web": "Web",
-            "https://ns.adobe.com/xdm/channels/webpage": "Web Page",
-            "https://ns.adobe.com/xdm/channels/wechat": "WeChat",
-            "https://ns.adobe.com/xdm/channels/wns": "WNS"
-          },
-          "description":
-            "The marketing channel related to this ExperienceEvent."
+          "title": "Experience Channel",
+          "description": "The experience channel related to this ExperienceEvent.",
+          "$ref": "https://ns.adobe.com/xdm/channels/channel"
+        },
+        "xdm:advertising": {
+          "title": "Advertising",
+          "$ref": "https://ns.adobe.com/xdm/context/advertising",
+          "description": "The information related to advertising activity related to the experience event"
+        },
+        "xdm:media": {
+          "title": "Media",
+          "meta:status": "experimental",
+          "$ref": "https://ns.adobe.com/xdm/context/media",
+          "description": "The media activity information related to the experience event"
+        },
+        "xdm:profileStitching" : {
+          "title": "Profile Stitching",
+          "description": "Details about the ids that were joined by profile stitching.",
+          "type" : "array",
+          "items" : {
+            "$ref": "https://ns.adobe.com/xdm/context/profileStitch"
+          }
+        },
+        "xdm:segmentMemberships": {
+          "title": "Segment Memberships",
+          "description": "The segments associated with this experience event",
+          "type": "array",
+          "items": {
+            "$ref": "https://ns.adobe.com/xdm/context/segmentmembershipitem"
+          }
         }
       },
-      "required": ["@id", "xdm:dataSource", "xdm:timestamp", "xdm:endUserIDs"]
+      "required": [
+        "@id",
+        "xdm:timestamp",
+        "xdm:endUserIDs"
+      ]
     }
   },
   "allOf": [
@@ -143,5 +143,5 @@
       "$ref": "#/definitions/experienceevent"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stabilizing"
 }

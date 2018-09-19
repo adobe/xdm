@@ -1,17 +1,17 @@
 
-# Rectangular Media Schema
+# Simple Rectangular Area Schema
 
 ```
 https://ns.adobe.com/xdm/assets/rectangular
 ```
 
-Properties that apply to images, videos, and other rectangular media
+Properties that apply to images, videos, and other rectangular media. It represents a rectangular area on a pixel-based surface, but without any indication of origin.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Cannot be instantiated | Yes | Experimental | Forbidden | Permitted | [assets/rectangular.schema.json](assets/rectangular.schema.json) |
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Cannot be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [assets/rectangular.schema.json](assets/rectangular.schema.json) |
 
-## Rectangular Media Example
+## Simple Rectangular Area Example
 ```json
 {
   "tiff:imageWidth": 768,
@@ -20,7 +20,7 @@ Properties that apply to images, videos, and other rectangular media
 }
 ```
 
-# Rectangular Media Definitions
+# Simple Rectangular Area Definitions
 
 | Property | Type | Group |
 |----------|------|-------|

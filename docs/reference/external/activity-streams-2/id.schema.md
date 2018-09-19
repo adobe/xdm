@@ -7,9 +7,9 @@ https://ns.adobe.com/xdm/external/activity-streams-2/id
 
 Provides the globally unique identifier for an [Object](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object) or [Link](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-link). Refer to the [JSON-LD](https://json-ld.org/spec/latest/json-ld/) specification for a complete description of the `@id` field.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | No | Experimental | Forbidden | Permitted | [external/activity-streams-2/id.schema.json](external/activity-streams-2/id.schema.json) |
+| [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
+|----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
+| Can be instantiated | No | Experimental | No | Forbidden | Permitted | [external/activity-streams-2/id.schema.json](external/activity-streams-2/id.schema.json) |
 
 ## JSON-LD `@id` Example
 ```json
@@ -37,7 +37,7 @@ Provides the globally unique identifier for an [Object](https://www.w3.org/TR/ac
 
 
 `string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
 
 
 

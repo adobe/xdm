@@ -1,0 +1,49 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/advertising-timed-asset-reference",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Ad Asset Reference",
+  "type": "object",
+  "description": "Asset information about the ad captured by the experience event.",
+  "meta:extensible": true,
+  "definitions": {
+    "adAssetReference": {
+      "properties": {
+        "@id": {
+          "title": "Ad ID",
+          "type": "string",
+          "format": "uri-reference",
+          "description": "Identifier of the ad asset provided by Media Analytics customers."
+        },
+        "dc:title": {
+          "title": "Ad Name",
+          "type": "string",
+          "description": "The friendly (human-readable) name of the ad asset."
+        },
+        "xmpDM:duration": {
+          "title": "Ad Length/Duration",
+          "type": "integer",
+          "description": "Length of ad asset in seconds."
+        }
+      },
+      "required": [
+        "@id",
+        "xmpDM:duration"
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/adAssetReference"
+    }
+  ],
+  "meta:status": "experimental"
+}

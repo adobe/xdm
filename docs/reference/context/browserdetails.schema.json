@@ -9,6 +9,7 @@
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "Browser Details",
     "type": "object",
+    "meta:extensible": true,
     "description": "Detail information related to the browser",
     "definitions": {
         "browserdetails": {
@@ -16,7 +17,12 @@
                 "xdm:name": {
                     "title": "Name",
                     "type": "string",
-                    "description": "The application or browser version."
+                    "description": "The application or browser name."
+                },
+                "xdm:vendor": {
+                    "title": "Vendor",
+                    "type": "string",
+                    "description": "The application or browser vendor."
                 },
                 "xdm:version": {
                     "title": "Version",
@@ -85,13 +91,17 @@
     },
     "allOf": [
         {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
             "$ref": "#/definitions/browserdetails"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stabilizing",
     "examples": [
         {
             "xdm:name": "Chrome",
+            "xdm:vendor": "Google",
             "xdm:version": "63.0.3239",
             "xdm:acceptLanguage": "en",
             "xdm:cookiesEnabled": true,

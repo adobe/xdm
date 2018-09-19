@@ -1,6 +1,6 @@
 {
   "schema:name": "direct-marketing metric: opens",
-  "@id": "https://ns.adobe.com/xdm/data/metrics/direct-marketing/opens",
+  "@id": "xdm:opens",
   "xdm:measurement": "count",
   "xdm:unit": null
 }

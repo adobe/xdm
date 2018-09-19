@@ -9,6 +9,7 @@
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "Phone Number",
     "type": "object",
+    "meta:extensible": true,
     "description": "Information that allows the phone calling of a person. Typically an alphanumeric number, 1-222-333 4444 in North America, but can have a wide range of formats.",
     "definitions": {
         "phonenumber": {
@@ -61,13 +62,13 @@
     },
     "allOf": [
         {
-            "$ref": "#/definitions/phonenumber"
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
         },
         {
-            "$ref": "https://ns.adobe.com/xdm/common/auditable#/definitions/auditlog"
+            "$ref": "#/definitions/phonenumber"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stabilizing",
     "examples": [
         {
             "xdm:primary": true,

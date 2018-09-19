@@ -7,27 +7,31 @@ https://ns.adobe.com/xdm/context/experienceevent
 
 The core ExperienceEvent XDM is used to capture observations that are altering one or more related XDMs/entities. The ExperienceEvent captures information about the observation taking place and when it is occurring. It is critical for time domain analytics as it allows observation and analysis of changes that occur in windows of time and comparison with other windows of time to track trends. ExperienceEvent are either explicit or implicit. Explicit events are direct observations of a human action taking place during a session. Implicit events are events that are being raised without a direct human action. Examples of implicit events are scheduled email sending of newsletters, battery voltage reaching a certain threshold, a person entering into range of a proximity sensor. While not all events are easily categorized across all data sources, it is extremely valuable to harmonize similar events into similar types for processing where possible, and the XDM specifications does this by defining a set of enumerated **type** attribute values with specific semantic meanings. Where possible events must be constrained to these enumerated values to facilitate interoperability.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [context/experienceevent.schema.json](context/experienceevent.schema.json) |
-
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/experienceevent.schema.json](context/experienceevent.schema.json) |
 ## Schema Hierarchy
 
 * ExperienceEvent `https://ns.adobe.com/xdm/context/experienceevent`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Data Source](../data/datasource.schema.md) `https://ns.adobe.com/xdm/data/datasource`
   * [End User IDs](enduserids.schema.md) `https://ns.adobe.com/xdm/context/enduserids`
-  * [Metrics](../data/metrics.schema.md) `https://ns.adobe.com/xdm/data/metrics`
   * [Environment](environment.schema.md) `https://ns.adobe.com/xdm/context/environment`
   * [Device](device.schema.md) `https://ns.adobe.com/xdm/context/device`
   * [Commerce](commerce.schema.md) `https://ns.adobe.com/xdm/context/commerce`
-  * [Application](../channels/application.schema.md) `https://ns.adobe.com/xdm/channels/application`
+  * [Application](application.schema.md) `https://ns.adobe.com/xdm/context/application`
   * [Search](search.schema.md) `https://ns.adobe.com/xdm/context/search`
-  * [Web](../channels/web.schema.md) `https://ns.adobe.com/xdm/channels/web`
+  * [Web Information](webinfo.schema.md) `https://ns.adobe.com/xdm/context/webinfo`
+  * [Direct Marketing](direct-marketing.schema.md) `https://ns.adobe.com/xdm/context/direct-marketing`
   * [Marketing](marketing.schema.md) `https://ns.adobe.com/xdm/context/marketing`
-  * [Location Context](locationcontext.schema.md) `https://ns.adobe.com/xdm/context/locationcontext`
+  * [Place Context](placecontext.schema.md) `https://ns.adobe.com/xdm/context/placecontext`
+  * [Experience Channel](../channels/channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
+  * [Advertising](advertising.schema.md) `https://ns.adobe.com/xdm/context/advertising`
+  * [Media Information](media.schema.md) `https://ns.adobe.com/xdm/context/media`
 
-## ExperienceEvent Example
+
+## ExperienceEvent Examples
+
 ```json
 {
   "@id": "https://data.adobe.io/experienceid-123456",
@@ -38,26 +42,27 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
   "xdm:timestamp": "2017-09-26T15:52:25+00:00",
   "xdm:endUserIDs": {
     "https://ns.adobe.com/experience/mcid": {
-      "@id": "https://data.adobe.io/entities/identity/92312748749128",
+      "xdm:id": "92312748749128",
       "xdm:namespace": {
-        "@id": "https://data.adobe.io/entities/namespace/4",
         "xdm:code": "ECID"
       }
     },
-    "https://ns.adobe.com/experience/analytics": {
-      "@id": "https://data.adobe.io/entities/identity/2394509340-30453470347",
+    "https://ns.adobe.com/experience/aaid": {
+      "xdm:id": "2394509340-30453470347",
       "xdm:namespace": {
-        "@id": "https://data.adobe.io/entities/namespace/11112",
         "xdm:code": "AVID"
       }
     },
     "https://ns.adobe.com/experience/tntid": {
-      "@id": "https://data.adobe.io/entities/identity/1233ce17-20e0-4a2c-8198-2a77fd60cf4d",
+      "xdm:id": "1233ce17-20e0-4a2c-8198-2a77fd60cf4d",
       "xdm:namespace": {
-        "@id": "https://data.adobe.io/entities/namespace/33333",
         "xdm:code": "tnt0051"
       }
     }
+  },
+  "xdm:channel": {
+    "@id": "https://ns.adobe.com/xdm/channels/apns",
+    "@type": "https://ns.adobe.com/xdm/channel-types/mobile"
   },
   "xdm:environment": {
     "xdm:type": "browser",
@@ -76,17 +81,6 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
     "xdm:operatingSystem": "MAC OS",
     "xdm:operatingSystemVersion": "10.13",
     "xdm:connectionType": "cable"
-  },
-  "xdm:metrics": {
-    "https://ns.adobe.com/xdm/data/metrics/commerce/purchases": {
-      "xdm:value": 1,
-      "xdm:unit": null
-    },
-    "https://ns.adobe.com/xdm/data/metrics/web/page-views": {
-      "@type": "https://ns.adobe.com/xdm/data/metrics/web/page-views",
-      "xdm:value": 1,
-      "xdm:unit": null
-    }
   },
   "xdm:productListItems": [
     {
@@ -118,9 +112,12 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
       ],
       "xdm:currencyCode": "USD",
       "xdm:priceTotal": 159
+    },
+    "xdm:purchases": {
+      "xdm:value": 1
     }
   },
-  "xdm:locationContext": {
+  "xdm:placeContext": {
     "xdm:localTime": "2017-09-26T15:52:25+13:00",
     "xdm:geo": {
       "@id": "https://data.adobe.io/entities/geo/tokyo",
@@ -132,31 +129,705 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
       "schema:longitude": 139.73237
     }
   },
+  "xdm:web": {
+    "xdm:webPageDetails": {
+      "xdm:siteSection": "Shopping Cart",
+      "xdm:server": "example.com",
+      "xdm:name": "Purchase Confirmation",
+      "xdm:URL": "https://www.example.com/orderConf",
+      "xdm:errorPage": false,
+      "xdm:homePage": false,
+      "xdm:pageViews": {
+        "xdm:value": 1
+      }
+    },
+    "xdm:webReferrer": {
+      "xdm:URL": "https://www.example.com/checkout",
+      "xdm:referrerType": "internal"
+    }
+  },
   "xdm:marketing": {
     "xdm:trackingCode": "marketingcampaign111"
+  },
+  "xdm:profileStitching": [
+    {
+      "xdm:profileStitchID": {
+        "@id": "https://data.adobe.io/entities/profileStitchIdentity/1",
+        "xdm:namespace": {
+          "xdm:code": "AAM"
+        }
+      },
+      "xdm:version": "1.0",
+      "xdm:identities": [
+        {
+          "xdm:id": "92312748749128",
+          "xdm:namespace": {
+            "xdm:code": "ECID"
+          }
+        },
+        {
+          "xdm:id": "62312748749321",
+          "xdm:namespace": {
+            "xdm:code": "ECID"
+          }
+        },
+        {
+          "xdm:id": "49312748749132",
+          "xdm:namespace": {
+            "xdm:code": "ECID"
+          }
+        }
+      ]
+    }
+  ],
+  "xdm:segmentMemberships": [
+    {
+      "xdm:segmentID": {
+        "@id": "https://data.adobe.io/entities/identity/92312748749128",
+        "xdm:namespace": {
+          "xdm:code": "AAM"
+        }
+      },
+      "xdm:profileStitchID": {
+        "@id": "https://data.adobe.io/entities/profileStitchIdentity/1",
+        "xdm:namespace": {
+          "xdm:code": "AAM"
+        },
+        "xdm:lastQualificationTime": "2017-09-26T15:52:25+00:00",
+        "xdm:version": "1.0",
+        "xdm:validUntil": "2017-12-26T15:52:25+00:00",
+        "xdm:status": "realized"
+      }
+    }
+  ]
+}
+```
+
+```json
+{
+  "@id": "https://data.adobe.io/experienceid-23456782",
+  "xdm:dataSource": {
+    "@id": "https://data.adobe.io/datasources/datasource-123",
+    "xdm:code": "DataSourceIntegrationCode-123"
+  },
+  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+  "xdm:endUserIDs": {
+    "https://ns.adobe.com/experience/mcid": {
+      "xdm:id": "92312748749128",
+      "xdm:namespace": {
+        "@id": "https://data.adobe.io/entities/namespace/4",
+        "xdm:code": "ECID"
+      }
+    }
+  },
+  "xdm:environment": {
+    "xdm:type": "application",
+    "xdm:operatingSystem": "iOS",
+    "xdm:operatingSystemVersion": "10.13",
+    "xdm:connectionType": "mobile_lte"
+  },
+  "xdm:placeContext": {
+    "xdm:localTime": "2001-07-04T12:08:56+01:00",
+    "xdm:geo": {
+      "@id": "https://data.adobe.io/entities/geo/tokyo",
+      "xdm:countryCode": "JP",
+      "xdm:stateProvince": "JP-13",
+      "xdm:city": "Tōkyō",
+      "xdm:postalCode": "141-0032",
+      "schema:latitude": 35.6185,
+      "schema:longitude": 139.73237
+    },
+    "xdm:POIinteraction": {
+      "xdm:poiEntries": {
+        "xdm:value": 1
+      },
+      "xdm:POIID": "d8a5c08c-1e79-4051-8a8b-675fb235e03d",
+      "xdm:name": "Acme Hotel Tokyo Lobby",
+      "xdm:category": "Resorts",
+      "xdm:type": "Hotel",
+      "xdm:locatingType": "beacon",
+      "xdm:beaconInteractionDetails": {
+        "xdm:proximityUUID": "c6c03ed9-ea23-481c-ab15-833e88cfb22f",
+        "xdm:beaconMajor": 300,
+        "xdm:beaconMinor": 34
+      }
+    },
+    "xdm:activePOIs": [
+      {
+        "xdm:POIID": "c7f4bf28-c8d9-4b89-a81f-2a8ef9367390",
+        "xdm:name": "Acme Hotel Tokyo",
+        "xdm:category": "Resorts",
+        "xdm:type": "Hotel",
+        "xdm:locatingType": "beacon",
+        "xdm:beaconInteractionDetails": {
+          "xdm:proximityUUID": "dd0094a0-52bb-4d3a-ab15-fcccb9b9b48e",
+          "xdm:beaconMajor": 100,
+          "xdm:beaconMinor": 23
+        }
+      },
+      {
+        "xdm:POIID": "d8a5c08c-1e79-4051-8a8b-675fb235e03d",
+        "xdm:name": "Acme Hotel Tokyo Lobby",
+        "xdm:category": "Resorts",
+        "xdm:type": "Hotel",
+        "xdm:locatingType": "beacon",
+        "xdm:beaconInteractionDetails": {
+          "xdm:proximityUUID": "c6c03ed9-ea23-481c-ab15-833e88cfb22f",
+          "xdm:beaconMajor": 300,
+          "xdm:beaconMinor": 34
+        }
+      },
+      {
+        "xdm:POIID": "d8a5c08c-1e79-4051-8a8b-675fb235e03d",
+        "xdm:name": "Tokyo City",
+        "xdm:locatingType": "gps",
+        "xdm:geoInteractionDetails": {
+          "xdm:distanceToCenter": 320,
+          "xdm:accuracy": 30,
+          "xdm:geoShape": {
+            "@id": "https://data.adobe.io/entities/geoShape/shapeid123",
+            "schema:circle": {
+              "@id": "https://data.adobe.io/entities/geo/circleid123",
+              "schema:description": "Tokyo Metro",
+              "schema:coordinates": {
+                "@id": "https://data.adobe.io/entities/geo/111",
+                "schema:description": "Tokyo",
+                "schema:latitude": 37.3308953,
+                "schema:longitude": -121.8939894,
+                "schema:elevation": 31.0896
+              },
+              "schema:radius": 80000
+            }
+          }
+        }
+      }
+    ],
+    "xdm:type": "browser",
+    "xdm:browserDetails": {
+      "xdm:name": "Chrome",
+      "xdm:version": "63.0.3239",
+      "xdm:acceptLanguage": "en",
+      "xdm:cookiesEnabled": true,
+      "xdm:viewportHeight": 900,
+      "xdm:viewportWidth": 1680
+    },
+    "xdm:operatingSystem": "MAC OS",
+    "xdm:operatingSystemVersion": "10.13",
+    "xdm:connectionType": "cable"
+  },
+  "xdm:locationContext": {
+    "xdm:geo": {
+      "xdm:countryCode": "US",
+      "xdm:stateProvince": "CA",
+      "xdm:city": "Emeryville",
+      "xdm:dmaid": "99"
+    }
+  },
+  "xdm:web": {
+    "xdm:webPageView": {
+      "xdm:URL": "https://www.example.com"
+    },
+    "xdm:webReferrer": {
+      "xdm:URL": "https://www.examplereferrer.com/",
+      "xdm:domain": "examplereferrer.com"
+    }
+  },
+  "xdm:device": {
+    "xdm:type": "mobile",
+    "xdm:manufacturer": "Apple",
+    "xdm:model": "iPhone 6"
+  },
+  "xdm:advertising": {
+    "xdm:adViewability": {
+      "xdm:adUnitDepth": 0,
+      "xdm:viewportHeight": 1250,
+      "xdm:viewportWidth": 1600,
+      "xdm:adHeight": 250,
+      "xdm:adWidth": 300,
+      "xdm:playerVolume": 85,
+      "xdm:measurementEligible": true,
+      "xdm:implementationDetails": {
+        "xdm:name": "https://ns.adobe.com/experience/adcloud/viewability",
+        "xdm:version": "1"
+      },
+      "xdm:viewable": true,
+      "xdm:activeWindow": true,
+      "xdm:percentViewable": 89,
+      "xdm:viewableFirstQuartile": {
+        "xdm:value": 1
+      }
+    },
+    "xdm:firstQuartiles": {
+      "xdm:value": 1
+    }
   }
 }
 ```
+
+```json
+{
+  "@id": "https://data.adobe.io/experienceid-2345678",
+  "xdm:dataSource": {
+    "@id": "https://data.adobe.io/datasources/datasource-123",
+    "xdm:code": "DataSourceIntegrationCode-123"
+  },
+  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+  "xdm:endUserIDs": {
+    "https://ns.adobe.com/experience/mcid": {
+      "xdm:id": "92312748749128",
+      "xdm:namespace": {
+        "@id": "https://data.adobe.io/entities/namespace/4",
+        "xdm:code": "ECID"
+      }
+    }
+  },
+  "xdm:environment": {
+    "xdm:type": "browser",
+    "xdm:browserDetails": {
+      "xdm:name": "Chrome",
+      "xdm:version": "63.0.3239",
+      "xdm:acceptLanguage": "en",
+      "xdm:cookiesEnabled": true,
+      "xdm:viewportHeight": 900,
+      "xdm:viewportWidth": 1680
+    },
+    "xdm:operatingSystem": "MAC OS",
+    "xdm:operatingSystemVersion": "10.13",
+    "xdm:connectionType": "cable"
+  },
+  "xdm:locationContext": {
+    "xdm:geo": {
+      "xdm:countryCode": "US",
+      "xdm:stateProvince": "CA",
+      "xdm:city": "Emeryville",
+      "xdm:dmaid": "99"
+    }
+  },
+  "xdm:web": {
+    "xdm:webPageView": {
+      "xdm:URL": "https://www.example.com"
+    },
+    "xdm:webReferrer": {
+      "xdm:URL": "https://www.examplereferrer.com/",
+      "xdm:domain": "examplereferrer.com"
+    }
+  },
+  "xdm:device": {
+    "xdm:type": "mobile",
+    "xdm:manufacturer": "Apple",
+    "xdm:model": "iPhone 6"
+  },
+  "xdm:advertising": {
+    "xdm:adViewability": {
+      "xdm:adUnitDepth": 0,
+      "xdm:viewportHeight": 1250,
+      "xdm:viewportWidth": 1600,
+      "xdm:adHeight": 250,
+      "xdm:adWidth": 300,
+      "xdm:playerVolume": 85,
+      "xdm:measurementEligible": true,
+      "xdm:implementationDetails": {
+        "xdm:name": "https://ns.adobe.com/experience/adcloud/viewability",
+        "xdm:version": "1"
+      },
+      "xdm:viewable": true,
+      "xdm:activeWindow": true,
+      "xdm:percentViewable": 89,
+      "xdm:viewableFirstQuartile": {
+        "xdm:value": 1
+      }
+    },
+    "xdm:firstQuartiles": {
+      "xdm:value": 1
+    }
+  }
+}
+```
+
+```json
+{
+  "@id": "https://data.adobe.io/experienceid-123457",
+  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+  "xdm:endUserIDs": {
+    "https://ns.adobe.com/experience/mcid": {
+      "@id": "https://data.adobe.io/entities/identity/92312748749128",
+      "xdm:namespace": {
+        "xdm:code": "ECID"
+      }
+    },
+    "https://ns.adobe.com/experience/aaid": {
+      "@id": "https://data.adobe.io/entities/identity/2394509340-30453470347",
+      "xdm:namespace": {
+        "xdm:code": "AVID"
+      }
+    }
+  },
+  "xdm:environment": {
+    "xdm:browserDetails": {
+      "xdm:userAgent": "AppleWebkit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "xdm:ipV4": "97.27.143.5"
+  },
+  "xdm:media": {
+    "xdm:mediaTimed": {
+      "xdm:primaryAssetReference": {
+        "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234430",
+        "dc:title": "Floki Begs Helga for Freedom",
+        "xmpDM:duration": 87,
+        "iptc4xmpExt:Series": {
+          "iptc4xmpExt:Name": "nba_highlights",
+          "iptc4xmpExt:Identifier": "http://espn.com/series-identifiers/2613953"
+        },
+        "xdm:showType": "episode",
+        "xdm:streamFormat": "long",
+        "iptc4xmpExt:Season": {
+          "iptc4xmpExt:Number": 1
+        },
+        "iptc4xmpExt:Episode": {
+          "iptc4xmpExt:Number": 1
+        },
+        "iptc4xmpExt:Genre": [
+          "sports"
+        ],
+        "iptc4xmpExt:Rating": [
+          {
+            "iptc4xmpExt:RatingValue": "TV14",
+            "iptc4xmpExt:RatingSourceLink": "http://www.tvguidelines.org/ratings.htm"
+          }
+        ],
+        "iptc4xmpExt:Creator": [
+          {
+            "iptc4xmpExt:Name": "ESPN"
+          }
+        ]
+      },
+      "xdm:primaryAssetViewDetails": {
+        "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114230",
+        "xdm:playerName": "watchespn",
+        "xdm:broadcastChannel": "WatchESPN",
+        "xdm:broadcastContentType": "VOD",
+        "xdm:streamFormat": "short",
+        "xdm:playerSDKVersion": {
+          "xdm:version": "1.0.8"
+        },
+        "xdm:broadcastNetwork": "nbcu",
+        "xdm:adLoadType": "2",
+        "xdm:sourceFeed": "http%3A%2F%2Fvod01.pure.centurylink.net%2Fhls%2Fvu%2F9083406%2FVUBX0280890106690980_38_3_M_HD.m3u8",
+        "xdm:sessionTimeout": 1800,
+        "xdm:QOE": {
+          "xdm:errors": {
+            "xdm:value": 0
+          },
+          "xdm:buffers": {
+            "xdm:value": 4
+          },
+          "xdm:bufferTime": {
+            "xdm:value": 5
+          },
+          "xdm:stalls": {
+            "xdm:value": 0
+          },
+          "xdm:stallTime": {
+            "xdm:value": 0
+          },
+          "xdm:bitrateChanges": {
+            "xdm:value": 0
+          },
+          "xdm:bitrateAverage": {
+            "xdm:value": 320
+          },
+          "xdm:droppedFrames": {
+            "xdm:value": 2
+          },
+          "xdm:timeToStart": {
+            "xdm:value": 3
+          },
+          "xdm:mediaSdkErrors": "300,500.300.200",
+          "xdm:playerSdkErrors": "custom.error.code",
+          "xdm:externalSdkErrors": "100-5,11.12"
+        }
+      },
+      "xdm:impressions": {
+        "xdm:value": 1
+      },
+      "xdm:completes": {
+        "xdm:value": 0
+      },
+      "xdm:timePlayed": {
+        "xdm:value": 80
+      },
+      "xdm:federated": {
+        "xdm:value": 0
+      },
+      "xdm:starts": {
+        "xdm:value": 1
+      },
+      "xdm:mediaSegmentView": {
+        "xdm:value": 1
+      },
+      "xdm:dropBeforeStart": {
+        "xdm:value": 0
+      },
+      "xdm:totalTimePlayed": {
+        "xdm:value": 190
+      },
+      "xdm:progress10": {
+        "xdm:value": 1
+      },
+      "xdm:firstQuartiles": {
+        "xdm:value": 1
+      },
+      "xdm:midpoints": {
+        "xdm:value": 1
+      },
+      "xdm:thirdQuartiles": {
+        "xdm:value": 1
+      },
+      "xdm:progress95": {
+        "xdm:value": 0
+      },
+      "xdm:resumes": {
+        "xdm:value": 0
+      },
+      "xdm:pauses": {
+        "xdm:value": 0
+      },
+      "xdm:pauseTime": {
+        "xdm:value": 0
+      }
+    }
+  }
+}
+```
+
+```json
+{
+  "@id": "https://data.adobe.io/experienceid-123458",
+  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+  "xdm:endUserIDs": {
+    "https://ns.adobe.com/experience/mcid": {
+      "@id": "https://data.adobe.io/entities/identity/92312748749128",
+      "xdm:namespace": {
+        "xdm:code": "ECID"
+      }
+    },
+    "https://ns.adobe.com/experience/aaid": {
+      "@id": "https://data.adobe.io/entities/identity/2394509340-30453470347",
+      "xdm:namespace": {
+        "xdm:code": "AVID"
+      }
+    }
+  },
+  "xdm:environment": {
+    "xdm:browserDetails": {
+      "xdm:userAgent": "AppleWebkit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "xdm:ipV4": "97.27.143.5"
+  },
+  "xdm:media": {
+    "xdm:mediaTimed": {
+      "xdm:primaryAssetReference": {
+        "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234430",
+        "dc:title": "Floki Begs Helga for Freedom",
+        "xmpDM:duration": 87,
+        "iptc4xmpExt:Series": {
+          "iptc4xmpExt:Name": "nba_highlights",
+          "iptc4xmpExt:Identifier": "http://espn.com/series-identifiers/2613953"
+        },
+        "xdm:showType": "episode",
+        "xdm:streamFormat": "long",
+        "iptc4xmpExt:Season": {
+          "iptc4xmpExt:Number": 1
+        },
+        "iptc4xmpExt:Episode": {
+          "iptc4xmpExt:Number": 1
+        },
+        "iptc4xmpExt:Genre": [
+          "sports"
+        ],
+        "iptc4xmpExt:Rating": [
+          {
+            "iptc4xmpExt:RatingValue": "TV14",
+            "iptc4xmpExt:RatingSourceLink": "http://www.tvguidelines.org/ratings.htm"
+          }
+        ],
+        "iptc4xmpExt:Creator": [
+          {
+            "iptc4xmpExt:Name": "ESPN"
+          }
+        ]
+      },
+      "xdm:primaryAssetViewDetails": {
+        "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114230",
+        "xdm:playerName": "watchespn",
+        "xdm:broadcastChannel": "WatchESPN",
+        "xdm:broadcastContentType": "VOD",
+        "xdm:streamFormat": "short",
+        "xdm:playerSDKVersion": {
+          "xdm:version": "1.0.8"
+        },
+        "xdm:broadcastNetwork": "nbcu",
+        "xdm:adLoadType": "2",
+        "xdm:sourceFeed": "http%3A%2F%2Fvod01.pure.centurylink.net%2Fhls%2Fvu%2F9083406%2FVUBX0280890106690980_38_3_M_HD.m3u8",
+        "xdm:sessionTimeout": 1800
+      }
+    }
+  },
+  "xdm:advertising": {
+    "xdm:adAssetReference": {
+      "@id": "https://data.adobe.io/entities/ad-id/AD1",
+      "dc:title": "adNumber1",
+      "xmpDM:duration": 10
+    },
+    "xdm:adAssetViewDetails": {
+      "xdm:playerName": "miniTestApp",
+      "xdm:index": 0,
+      "xdm:adBreak": {
+        "@id": "https://data.adobe.io/entities/ad-break/f40353618c5c11311f584e53c78654b9_0",
+        "dc:title": "Mid-Roll",
+        "xdm:offset": 44
+      }
+    },
+    "xdm:impressions": {
+      "xdm:value": 1
+    },
+    "xdm:completes": {
+      "xdm:value": 1
+    },
+    "xdm:timePlayed": {
+      "xdm:value": 10
+    },
+    "xdm:federated": {
+      "xdm:value": 0
+    }
+  }
+}
+```
+
+```json
+{
+  "@id": "https://data.adobe.io/experienceid-123459",
+  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+  "xdm:endUserIDs": {
+    "https://ns.adobe.com/experience/mcid": {
+      "@id": "https://data.adobe.io/entities/identity/92312748749128",
+      "xdm:namespace": {
+        "xdm:code": "ECID"
+      }
+    },
+    "https://ns.adobe.com/experience/aaid": {
+      "@id": "https://data.adobe.io/entities/identity/2394509340-30453470347",
+      "xdm:namespace": {
+        "xdm:code": "AVID"
+      }
+    }
+  },
+  "xdm:environment": {
+    "xdm:browserDetails": {
+      "xdm:userAgent": "AppleWebkit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "xdm:ipV4": "97.27.143.5"
+  },
+  "xdm:media": {
+    "xdm:mediaTimed": {
+      "xdm:primaryAssetReference": {
+        "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234430",
+        "dc:title": "Floki Begs Helga for Freedom",
+        "xmpDM:duration": 87,
+        "iptc4xmpExt:Series": {
+          "iptc4xmpExt:Name": "nba_highlights",
+          "iptc4xmpExt:Identifier": "http://espn.com/series-identifiers/2613953"
+        },
+        "xdm:showType": "episode",
+        "xdm:streamFormat": "long",
+        "iptc4xmpExt:Season": {
+          "iptc4xmpExt:Number": 1
+        },
+        "iptc4xmpExt:Episode": {
+          "iptc4xmpExt:Number": 1
+        },
+        "iptc4xmpExt:Genre": [
+          "sports"
+        ],
+        "iptc4xmpExt:Rating": [
+          {
+            "iptc4xmpExt:RatingValue": "TV14",
+            "iptc4xmpExt:RatingSourceLink": "http://www.tvguidelines.org/ratings.htm"
+          }
+        ],
+        "iptc4xmpExt:Creator": [
+          {
+            "iptc4xmpExt:Name": "ESPN"
+          }
+        ]
+      },
+      "xdm:primaryAssetViewDetails": {
+        "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114230",
+        "xdm:playerName": "watchespn",
+        "xdm:broadcastChannel": "WatchESPN",
+        "xdm:broadcastContentType": "VOD",
+        "xdm:streamFormat": "short",
+        "xdm:playerSDKVersion": {
+          "xdm:version": "1.0.8"
+        },
+        "xdm:broadcastNetwork": "nbcu",
+        "xdm:adLoadType": "2",
+        "xdm:sourceFeed": "http%3A%2F%2Fvod01.pure.centurylink.net%2Fhls%2Fvu%2F9083406%2FVUBX0280890106690980_38_3_M_HD.m3u8",
+        "xdm:sessionTimeout": 1800
+      },
+      "xdm:mediaChapter": {
+        "xdm:chapterAssetReference": {
+          "@id": "https://data.adobe.io/entities/media-chapter-asset-reference/2144511",
+          "dc:title": "Chapter1",
+          "xmpDM:duration": 44
+        },
+        "xdm:chapterAssetViewDetails": {
+          "xdm:index": 0,
+          "xdm:offset": 0
+        },
+        "xdm:impressions": {
+          "xdm:value": 1
+        },
+        "xdm:completes": {
+          "xdm:value": 1
+        },
+        "xdm:timePlayed": {
+          "xdm:value": 44
+        },
+        "xdm:federated": {
+          "xdm:value": 0
+        }
+      }
+    }
+  }
+}
+```
+
 
 # ExperienceEvent Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#@id) | `string` | Optional | ExperienceEvent (this schema) |
+| [xdm:advertising](#xdmadvertising) | Advertising | Optional | ExperienceEvent (this schema) |
 | [xdm:application](#xdmapplication) | Application | Optional | ExperienceEvent (this schema) |
-| [xdm:channel](#xdmchannel) | `string` | Optional | ExperienceEvent (this schema) |
+| [xdm:channel](#xdmchannel) | Experience Channel | Optional | ExperienceEvent (this schema) |
 | [xdm:commerce](#xdmcommerce) | Commerce | Optional | ExperienceEvent (this schema) |
 | [xdm:dataSource](#xdmdatasource) | Data Source | Optional | ExperienceEvent (this schema) |
 | [xdm:device](#xdmdevice) | Device | Optional | ExperienceEvent (this schema) |
+| [xdm:directMarketing](#xdmdirectmarketing) | Direct Marketing | Optional | ExperienceEvent (this schema) |
 | [xdm:endUserIDs](#xdmenduserids) | End User IDs | Optional | ExperienceEvent (this schema) |
 | [xdm:environment](#xdmenvironment) | Environment | Optional | ExperienceEvent (this schema) |
-| [xdm:locationContext](#xdmlocationcontext) | Location Context | Optional | ExperienceEvent (this schema) |
 | [xdm:marketing](#xdmmarketing) | Marketing | Optional | ExperienceEvent (this schema) |
-| [xdm:metrics](#xdmmetrics) | Metrics | Optional | ExperienceEvent (this schema) |
+| [xdm:media](#xdmmedia) | Media Information | Optional | ExperienceEvent (this schema) |
+| [xdm:placeContext](#xdmplacecontext) | Place Context | Optional | ExperienceEvent (this schema) |
 | [xdm:productListItems](#xdmproductlistitems) | Product List Item | Optional | ExperienceEvent (this schema) |
+| [xdm:profileStitching](#xdmprofilestitching) | Profile Stitch | Optional | ExperienceEvent (this schema) |
+| [xdm:receivedTimestamp](#xdmreceivedtimestamp) | `string` | Optional | ExperienceEvent (this schema) |
 | [xdm:search](#xdmsearch) | Search | Optional | ExperienceEvent (this schema) |
+| [xdm:segmentMemberships](#xdmsegmentmemberships) | Segment Membership Item | Optional | ExperienceEvent (this schema) |
 | [xdm:timestamp](#xdmtimestamp) | `string` | Optional | ExperienceEvent (this schema) |
-| [xdm:web](#xdmweb) | Web | Optional | ExperienceEvent (this schema) |
+| [xdm:web](#xdmweb) | Web Information | Optional | ExperienceEvent (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -173,8 +844,27 @@ The unique identifier for the ExperienceEvent.
 
 
 `string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
 
+
+
+
+
+
+## xdm:advertising
+### Advertising
+
+The information related to advertising activity related to the experience event
+
+`xdm:advertising`
+* is optional
+* type: Advertising
+* defined in this schema
+
+### xdm:advertising Type
+
+
+* [Advertising](advertising.schema.md) – `https://ns.adobe.com/xdm/context/advertising`
 
 
 
@@ -193,54 +883,27 @@ The application related to the event observation. It could be either the applica
 ### xdm:application Type
 
 
-* [Application](../channels/application.schema.md) – `https://ns.adobe.com/xdm/channels/application`
+* [Application](application.schema.md) – `https://ns.adobe.com/xdm/context/application`
 
 
 
 
 
 ## xdm:channel
-### Communication Channel
+### Experience Channel
 
-The marketing channel related to this ExperienceEvent.
+The experience channel related to this ExperienceEvent.
 
 `xdm:channel`
 * is optional
-* type: `string`
+* type: Experience Channel
 * defined in this schema
 
 ### xdm:channel Type
 
 
-`string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+* [Experience Channel](../channels/channel.schema.md) – `https://ns.adobe.com/xdm/channels/channel`
 
-
-
-### xdm:channel Known Values
-| Value | Description |
-|-------|-------------|
-| `https://ns.adobe.com/xdm/channels/adm` | ADM |
-| `https://ns.adobe.com/xdm/channels/agency` | Agency |
-| `https://ns.adobe.com/xdm/channels/apns` | APNS |
-| `https://ns.adobe.com/xdm/channels/application` | Application |
-| `https://ns.adobe.com/xdm/channels/baidu` | Baidu |
-| `https://ns.adobe.com/xdm/channels/channel` | Experience Channel |
-| `https://ns.adobe.com/xdm/channels/direct-mail` | Direct Mail |
-| `https://ns.adobe.com/xdm/channels/email` | E-Mail |
-| `https://ns.adobe.com/xdm/channels/facebook-feed` | Facebook News Feed |
-| `https://ns.adobe.com/xdm/channels/fax` | Fax |
-| `https://ns.adobe.com/xdm/channels/gcm` | GCM |
-| `https://ns.adobe.com/xdm/channels/line` | LINE |
-| `https://ns.adobe.com/xdm/channels/mobile-app` | Web |
-| `https://ns.adobe.com/xdm/channels/mpns` | MPNS |
-| `https://ns.adobe.com/xdm/channels/phone` | Phone |
-| `https://ns.adobe.com/xdm/channels/sms` | SMS |
-| `https://ns.adobe.com/xdm/channels/twitter-feed` | Twitter Feed |
-| `https://ns.adobe.com/xdm/channels/web` | Web |
-| `https://ns.adobe.com/xdm/channels/webpage` | Web Page |
-| `https://ns.adobe.com/xdm/channels/wechat` | WeChat |
-| `https://ns.adobe.com/xdm/channels/wns` | WNS |
 
 
 
@@ -302,11 +965,29 @@ An identified Device/Application or Device/Browser instance that is trackable ac
 
 
 
+## xdm:directMarketing
+### Direct Marketing
+
+The events and properties related to direct/outbound marketing such as email, direct mail, texts and in-app notifications.
+
+`xdm:directMarketing`
+* is optional
+* type: Direct Marketing
+* defined in this schema
+
+### xdm:directMarketing Type
+
+
+* [Direct Marketing](direct-marketing.schema.md) – `https://ns.adobe.com/xdm/context/direct-marketing`
+
+
+
+
+
 ## xdm:endUserIDs
 ### End User IDs
 
 Condensed, normalized encapsulation of all end user identifiers.
-
 
 `xdm:endUserIDs`
 * is optional
@@ -341,25 +1022,6 @@ Information about the surrounding situation the event observation occurred in, s
 
 
 
-## xdm:locationContext
-### Location Context
-
-The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, working hours.
-
-`xdm:locationContext`
-* is optional
-* type: Location Context
-* defined in this schema
-
-### xdm:locationContext Type
-
-
-* [Location Context](locationcontext.schema.md) – `https://ns.adobe.com/xdm/context/locationcontext`
-
-
-
-
-
 ## xdm:marketing
 ### Marketing
 
@@ -379,20 +1041,39 @@ The information related to marketing activities that are active with the touchpo
 
 
 
-## xdm:metrics
-### Metrics
+## xdm:media
+### Media
 
-The metrics for actions performed during this observation.
+The media activity information related to the experience event
 
-`xdm:metrics`
+`xdm:media`
 * is optional
-* type: Metrics
+* type: Media Information
 * defined in this schema
 
-### xdm:metrics Type
+### xdm:media Type
 
 
-* [Metrics](../data/metrics.schema.md) – `https://ns.adobe.com/xdm/data/metrics`
+* [Media Information](media.schema.md) – `https://ns.adobe.com/xdm/context/media`
+
+
+
+
+
+## xdm:placeContext
+### Place Context
+
+The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, working hours.
+
+`xdm:placeContext`
+* is optional
+* type: Place Context
+* defined in this schema
+
+### xdm:placeContext Type
+
+
+* [Place Context](placecontext.schema.md) – `https://ns.adobe.com/xdm/context/placecontext`
 
 
 
@@ -424,6 +1105,53 @@ All items must be of the type:
 
 
 
+## xdm:profileStitching
+### Profile Stitching
+
+Details about the ids that were joined by profile stitching.
+
+`xdm:profileStitching`
+* is optional
+* type: Profile Stitch
+
+* defined in this schema
+
+### xdm:profileStitching Type
+
+
+Array type: Profile Stitch
+
+All items must be of the type:
+* [Profile Stitch](profilestitch.schema.md) – `https://ns.adobe.com/xdm/context/profileStitch`
+
+
+
+
+
+
+
+
+## xdm:receivedTimestamp
+### Received Timestamp
+
+The time at which this interaction was received by a server.
+
+`xdm:receivedTimestamp`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:receivedTimestamp Type
+
+
+`string`
+* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+
+
+
+
+
+
 ## xdm:search
 ### Search
 
@@ -438,6 +1166,32 @@ The information related to web or mobile search.
 
 
 * [Search](search.schema.md) – `https://ns.adobe.com/xdm/context/search`
+
+
+
+
+
+## xdm:segmentMemberships
+### Segment Memberships
+
+The segments associated with this experience event
+
+`xdm:segmentMemberships`
+* is optional
+* type: Segment Membership Item
+
+* defined in this schema
+
+### xdm:segmentMemberships Type
+
+
+Array type: Segment Membership Item
+
+All items must be of the type:
+* [Segment Membership Item](segmentmembershipitem.schema.md) – `https://ns.adobe.com/xdm/context/segmentmembershipitem`
+
+
+
 
 
 
@@ -471,13 +1225,13 @@ The information related to web page and link of the ExperienceEvent.
 
 `xdm:web`
 * is optional
-* type: Web
+* type: Web Information
 * defined in this schema
 
 ### xdm:web Type
 
 
-* [Web](../channels/web.schema.md) – `https://ns.adobe.com/xdm/channels/web`
+* [Web Information](webinfo.schema.md) – `https://ns.adobe.com/xdm/context/webinfo`
 
 
 

@@ -7,27 +7,28 @@
   "xdm:timestamp": "2017-09-26T15:52:25+00:00",
   "xdm:endUserIDs": {
     "https://ns.adobe.com/experience/mcid": {
-      "@id": "https://data.adobe.io/entities/identity/92312748749128",
+      "xdm:id": "92312748749128",
       "xdm:namespace": {
-        "@id": "https://data.adobe.io/entities/namespace/4",
         "xdm:code": "ECID"
       }
     },
-    "https://ns.adobe.com/experience/analytics": {
-      "@id": "https://data.adobe.io/entities/identity/2394509340-30453470347",
+    "https://ns.adobe.com/experience/aaid": {
+      "xdm:id": "2394509340-30453470347",
       "xdm:namespace": {
-        "@id": "https://data.adobe.io/entities/namespace/11112",
         "xdm:code": "AVID"
       }
     },
     "https://ns.adobe.com/experience/tntid": {
-      "@id":
-        "https://data.adobe.io/entities/identity/1233ce17-20e0-4a2c-8198-2a77fd60cf4d",
+      "xdm:id":
+        "1233ce17-20e0-4a2c-8198-2a77fd60cf4d",
       "xdm:namespace": {
-        "@id": "https://data.adobe.io/entities/namespace/33333",
         "xdm:code": "tnt0051"
       }
     }
+  },
+  "xdm:channel": {
+    "@id": "https://ns.adobe.com/xdm/channels/apns",
+    "@type": "https://ns.adobe.com/xdm/channel-types/mobile"
   },
   "xdm:environment": {
     "xdm:type": "browser",
@@ -46,17 +47,6 @@
     "xdm:operatingSystem": "MAC OS",
     "xdm:operatingSystemVersion": "10.13",
     "xdm:connectionType": "cable"
-  },
-  "xdm:metrics": {
-    "https://ns.adobe.com/xdm/data/metrics/commerce/purchases": {
-      "xdm:value": 1.0,
-      "xdm:unit": null
-    },
-    "https://ns.adobe.com/xdm/data/metrics/web/page-views": {
-      "@type": "https://ns.adobe.com/xdm/data/metrics/web/page-views",
-      "xdm:value": 1.0,
-      "xdm:unit": null
-    }
   },
   "xdm:productListItems": [
     {
@@ -88,9 +78,12 @@
       ],
       "xdm:currencyCode": "USD",
       "xdm:priceTotal": 159.0
+    },
+    "xdm:purchases": {
+      "xdm:value": 1.0
     }
   },
-  "xdm:locationContext": {
+  "xdm:placeContext": {
     "xdm:localTime": "2017-09-26T15:52:25+13:00",
     "xdm:geo": {
       "@id": "https://data.adobe.io/entities/geo/tokyo",
@@ -102,7 +95,75 @@
       "schema:longitude": 139.73237
     }
   },
+  "xdm:web":{
+    "xdm:webPageDetails": {
+      "xdm:siteSection": "Shopping Cart",
+      "xdm:server": "example.com",
+      "xdm:name": "Purchase Confirmation",
+      "xdm:URL": "https://www.example.com/orderConf",
+      "xdm:errorPage": false,
+      "xdm:homePage": false,
+      "xdm:pageViews": {
+        "xdm:value": 1.0
+      }
+    },
+    "xdm:webReferrer": {
+      "xdm:URL": "https://www.example.com/checkout",
+      "xdm:referrerType": "internal"
+    }
+  },
   "xdm:marketing": {
     "xdm:trackingCode": "marketingcampaign111"
-  }
+  },
+  "xdm:profileStitching": [
+    {
+      "xdm:profileStitchID": {
+        "@id": "https://data.adobe.io/entities/profileStitchIdentity/1",
+        "xdm:namespace": {
+          "xdm:code": "AAM"
+        }
+      },
+      "xdm:version": "1.0",
+      "xdm:identities": [
+        {
+          "xdm:id": "92312748749128",
+          "xdm:namespace": {
+            "xdm:code": "ECID"
+          }
+        },
+        {
+          "xdm:id": "62312748749321",
+          "xdm:namespace": {
+            "xdm:code": "ECID"
+          }
+        },
+        {
+          "xdm:id": "49312748749132",
+          "xdm:namespace": {
+            "xdm:code": "ECID"
+          }
+        }
+      ]
+    }
+  ],
+  "xdm:segmentMemberships": [
+    {
+      "xdm:segmentID": {
+        "@id": "https://data.adobe.io/entities/identity/92312748749128",
+        "xdm:namespace": {
+          "xdm:code": "AAM"
+        }
+      },
+      "xdm:profileStitchID": {
+        "@id": "https://data.adobe.io/entities/profileStitchIdentity/1",
+        "xdm:namespace": {
+          "xdm:code": "AAM"
+        },
+        "xdm:lastQualificationTime": "2017-09-26T15:52:25+00:00",
+        "xdm:version": "1.0",
+        "xdm:validUntil": "2017-12-26T15:52:25+00:00",
+        "xdm:status": "realized"
+      }
+    }
+  ]
 }

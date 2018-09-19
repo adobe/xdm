@@ -1,0 +1,56 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/placecontext",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Place Context",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "",
+  "definitions": {
+    "placecontext": {
+      "properties": {
+        "xdm:localTime": {
+          "title": "Local Time",
+          "type": "string",
+          "format": "date-time",
+          "description":
+            "The local time using RFC3339 with a stated timezone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\"."
+        },
+        "xdm:geo": {
+          "title": "Geo",
+          "$ref": "https://ns.adobe.com/xdm/common/geo",
+          "description": "The geographic location where the experience was delivered."
+        },
+        "xdm:POIinteraction": {
+          "title": "POI Interaction",
+          "description": "The Point of Interest(POI) interaction details.",
+          "meta:status": "experimental",
+          "$ref": "https://ns.adobe.com/xdm/context/poi-interaction"
+        },
+        "xdm:activePOIs" : {
+          "title": "POI Detail",
+          "description": "Details of the POIs that cause the event.",
+          "meta:status": "experimental",
+          "type": "array",
+          "items": {
+            "$ref": "https://ns.adobe.com/xdm/context/poi-detail"
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/placecontext"
+    }
+  ],
+  "meta:status": "experimental"
+}

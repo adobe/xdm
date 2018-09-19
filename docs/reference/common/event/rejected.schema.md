@@ -22,14 +22,14 @@ Some examples of the `rejected event` include:
 4.  A purchase order was rejected by a firm owing to non payment of previous dues.
 
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | No | Experimental | Forbidden | Permitted | [common/event/rejected.schema.json](common/event/rejected.schema.json) |
-
+| [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
+|----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
+| Can be instantiated | No | Experimental | No | Forbidden | Permitted | [common/event/rejected.schema.json](common/event/rejected.schema.json) |
 ## Schema Hierarchy
 
 * Rejected Event `https://ns.adobe.com/xdm/common/event/rejected`
   * [EventEnvelope](../eventenvelope.schema.md) `https://ns.adobe.com/xdm/common/eventenvelope`
+
 
 ## Rejected Event Example
 ```json
@@ -37,8 +37,8 @@ Some examples of the `rejected event` include:
   "@id": "https://events.adobe.io/events/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
   "activitystreams:published": "2016-07-16T19:20:30+01:00",
   "activitystreams:to": {
-    "https://ns.adobe.com/xdm-extensions/ims/user#id": "C74F69D7594880280A495D09@AdobeID",
-    "@type": "https://ns.adobe.com/xdm-extensions/ims/user"
+    "https://ns.adobe.com/adobecloudplatform/ims/user#id": "C74F69D7594880280A495D09@AdobeID",
+    "@type": "https://ns.adobe.com/adobecloudplatform/ims/user"
   },
   "@type": "https://ns.adobe.com/xdm/common/event/rejected",
   "xdm:objectType": "https://stock.adobe.com/content/json/2017-08-31",

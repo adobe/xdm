@@ -7,14 +7,14 @@ https://ns.adobe.com/xdm/external/repo/accesscontrolpolicy
 
 Schema for the Access Control Policy of a resource
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [external/repo/accesscontrolpolicy.schema.json](external/repo/accesscontrolpolicy.schema.json) |
-
+| [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
+|----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/repo/accesscontrolpolicy.schema.json](external/repo/accesscontrolpolicy.schema.json) |
 ## Schema Hierarchy
 
 * Access Control Policy `https://ns.adobe.com/xdm/external/repo/accesscontrolpolicy`
   * [Access Control Entry](accesscontrolentry.schema.md) `https://ns.adobe.com/xdm/external/repo/accesscontrolentry`
+
 
 ## Access Control Policy Example
 ```json
@@ -22,7 +22,9 @@ Schema for the Access Control Policy of a resource
   "repo:acl": [
     {
       "repo:principal": "authenticated",
-      "repo:privilege": "read",
+      "repo:privileges": [
+        "read"
+      ],
       "repo:modifier": "grant"
     },
     {
@@ -31,13 +33,14 @@ Schema for the Access Control Policy of a resource
           "@id": "https://ims-na1.adobelogin.com/"
         },
         "@id": "C0B648DE57D701277F000101@AdobeID",
-        "@type": "https://ns.adobe.com/xdm-extensions/ims/user"
+        "@type": "https://ns.adobe.com/adobecloudplatform/ims/user"
       },
-      "repo:privilege": [
+      "repo:privileges": [
         "write",
         "delete"
       ],
-      "repo:modifier": "grant"
+      "repo:modifier": "grant",
+      "repo:inheritance": "deep"
     }
   ]
 }

@@ -1,0 +1,6 @@
+{
+  "schema:name": "metric: bitrateAverage",
+  "@id": "xdm:bitrateAverage",
+  "xdm:measurement": "average",
+  "xdm:unit": "kbps"
+}

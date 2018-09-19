@@ -7,16 +7,17 @@ https://ns.adobe.com/xdm/context/subscription
 
 Subscriptions are licensed entitlements to software, services or goods that are utilized in a time or usage based way.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [context/subscription.schema.json](context/subscription.schema.json) |
-
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/subscription.schema.json](context/subscription.schema.json) |
 ## Schema Hierarchy
 
 * Subscription `https://ns.adobe.com/xdm/context/subscription`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Person](person.schema.md) `https://ns.adobe.com/xdm/context/person`
   * [Device](device.schema.md) `https://ns.adobe.com/xdm/context/device`
   * [Environment](environment.schema.md) `https://ns.adobe.com/xdm/context/environment`
+
 
 ## Subscription Example
 ```json

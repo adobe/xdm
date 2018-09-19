@@ -1,0 +1,160 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/adviewability",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "MRC Viewability",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "Browser or app settings measured at runtime describing the viewability of an advertisement associated with each page load.",
+  "definitions": {
+    "adviewability": {
+      "properties": {
+        "xdm:adUnitDepth": {
+          "title": "Ad Unit Depth",
+          "type": "integer",
+          "description":
+          "Publishers may embed ad units inside containers/iFrames in order limit the ad's access solely to the code of the page. This describes how many 'containers' or iFrames the ad unit is displayed inside of.",
+          "minimum": 0
+        },
+        "xdm:viewportHeight": {
+          "title": "Viewport Height",
+          "type": "integer",
+          "description":
+          "The vertical size (in pixels) of the window the experience was displayed inside measured at runtime. For a web view event, the browser viewport height.",
+          "minimum": 0
+
+        },
+        "xdm:viewportWidth": {
+          "title": "Viewport Width",
+          "type": "integer",
+          "description":
+          "The horizontal size (in pixels) of the window the experience was displayed inside measured at runtime. For a web view event, the browser viewport width.",
+          "minimum": 0
+        },
+        "xdm:adHeight": {
+          "title": "Ad Height",
+          "type": "integer",
+          "description":
+          "The number of vertical pixels of the player, measured at runtime. This can be larger than the size of the ad if the player has extra controls or thumbnails.",
+          "minimum": 0
+        },
+        "xdm:adWidth": {
+          "title": "Ad Width",
+          "type": "integer",
+          "description":
+          "The number of horizontal pixels of the player, measured at runtime. This can be larger than the size of the ad if the player has extra controls or thumbnails.",
+          "minimum": 0
+        },
+        "xdm:playerVolume": {
+          "title": "Player Volume Percentage",
+          "type": "integer",
+          "description":
+          "The player volume percentage, measured at runtime where 0 is muted and 100 is maximum volume.",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "xdm:measurementEligible": {
+          "title": "Viewability Measurement Eligible",
+          "type": "boolean",
+          "description":
+          "Whether or not the ad was eligible to viewability measurement. An ad is eligible if the unit has a supported creative format and tag type."
+        },
+        "xdm:implementationDetails": {
+          "title": "Viewabiltity implementation details",
+          "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
+          "description":
+          "The name and version of the library instrumented to measure viewability metrics."
+        },
+        "xdm:viewable": {
+          "title": "Viewable Ad",
+          "type": "boolean",
+          "description":
+          "Display ads are considered viewable when at least 50% of the ad is visible for at least 1 second. Video ads are considered viewable when at least 50% of the ad is visible while the video is playing for at least 2 consecutive seconds. All viewable ads are measurable, because you can't confirm that an ad has met the criteria for viewability unless it can be measured."
+        },
+        "xdm:activeWindow": {
+          "title": "Active Window",
+          "type": "boolean",
+          "description":
+          "Indicates whether ad was shown on active window on users' device."
+        },
+        "xdm:percentViewable": {
+          "title": "Percent Viewable",
+          "type": "integer",
+          "description":
+          "Percent of pixels in the ad deemed viewable at measurement time.",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "xdm:viewabilityEligibleImpressions": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+          "Impression(s) of an advertisement to an end user with viewablility library instrumented."
+        },
+        "xdm:measuredAdNotVisible": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+          "Indicator of ad not being visible as measured by a viewability library at impression time."
+        },
+        "xdm:measuredMuted": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+          "Indicator of ad being muted as measured by a viewability library at impression time."
+        },
+        "xdm:measuredWindowInactive": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+          "Indicator of ad being displayed in an inactive window as measured by a viewability library at impression time."
+        },
+        "xdm:unmeasurableIframe": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+          "Indicator of viewability library not being able to properly execute measurements due to ad being displayed inside an iframe."
+        },
+        "xdm:unmeasurableOther": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+          "Indicator of viewability library not being able to properly execute measurements due to non-predefined error."
+        },
+        "xdm:viewableCompletes": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+          "Completion(s) of an advertisement to an end user deemed viewable at completion time by a viewability library."
+        },
+        "xdm:viewableFirstQuartiles": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+          "First quartile(s) of an advertisement to an end user deemed viewable at first quartile of play by a viewability library."
+        },
+        "xdm:viewableImpressions": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+          "Impressions of an advertisement to an end user deemed viewable after two seconds of play by a viewability library."
+        },
+        "xdm:viewableMidpoints": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+          "Midpoint(s) of an advertisement to an end user deemed viewable at midpoint of play by a viewability library."
+        },
+        "xdm:viewableThirdQuartiles": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+          "Third quartile(s) of an advertisement to an end user deemed viewable at third quartile of play by a viewability library."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/adviewability"
+    }
+  ],
+  "meta:status": "stabilizing"
+}

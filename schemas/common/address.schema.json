@@ -57,6 +57,12 @@
           "description":
             "The region, county, or district portion of the address."
         },
+        "xdm:postOfficeBox": {
+          "title": "Post Office Box",
+          "type": "string",
+          "description": "Post office box of the address.",
+          "maxLength": 20
+        },
         "xdm:country": {
           "title": "Country",
           "type": "string",
@@ -99,7 +105,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/geo"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/common/auditable#/definitions/auditlog"
+      "$ref": "https://ns.adobe.com/xdm/common/auditable"
     },
     {
       "$ref": "#/definitions/address"

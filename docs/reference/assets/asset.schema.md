@@ -9,15 +9,14 @@ A digital asset, is anything that exists in a binary format and comes with the r
 
 As described in [What is a digital asset](https://www.realstorygroup.com/Blog/3140-What-is-a-digital-asset), the definition of a digital asset can be put like this:
 
-&gt; In theory, a digital asset is something represented in a digital form that has an intrinsic or acquired value. This initial definition is intentionally general. It could correspond to almost anything or any piece of media in a digital form, such as a photo, website, or email message. As a practical matter, however, DAM [Digital Asset Management] has evolved to support the management of digital media assets almost exclusively. This includes images, video, audio, and related artifacts (such as brochures and compound publications). You would typically use different types of technology to manage email, Word documents, relational data records, and web pages. Even some image “assets” don’t fall under the domain of DAM technology as it is known today. Scanned paper or forms that end up as TIFF or PDF files do not constitute media assets that originate through some creative process.
+> In theory, a digital asset is something represented in a digital form that has an intrinsic or acquired value. This initial definition is intentionally general. It could correspond to almost anything or any piece of media in a digital form, such as a photo, website, or email message. As a practical matter, however, DAM [Digital Asset Management] has evolved to support the management of digital media assets almost exclusively. This includes images, video, audio, and related artifacts (such as brochures and compound publications). You would typically use different types of technology to manage email, Word documents, relational data records, and web pages. Even some image “assets” don’t fall under the domain of DAM technology as it is known today. Scanned paper or forms that end up as TIFF or PDF files do not constitute media assets that originate through some creative process.
 
 All digital assets are content, and some content can include, link to, or refer digital assets. Content can furthermore be transformed (rendered) into digital assets, such as when exporting a PDF.
 
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [assets/asset.schema.json](assets/asset.schema.json) |
-
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [assets/asset.schema.json](assets/asset.schema.json) |
 ## Schema Hierarchy
 
 * Asset `https://ns.adobe.com/xdm/assets/asset`
@@ -28,10 +27,11 @@ All digital assets are content, and some content can include, link to, or refer 
   * [Copyright Owner](copyright-owner.schema.md) `https://ns.adobe.com/xdm/assets/copyright-owner`
   * [Layer Group](layer-group.schema.md) `https://ns.adobe.com/xdm/assets/layer-group`
 
+
 ## Asset Example
 ```json
 {
-  "repo:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
+  "repo:id": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
   "xmp:createDate": "2017-09-26T15:52:25+00:00",
   "repo:createdDate": "2017-09-26T15:52:25+00:00",
   "xdm:repositoryCreatedBy": "lars",
@@ -72,9 +72,9 @@ All digital assets are content, and some content can include, link to, or refer 
 | [plus:copyrightOwner](#pluscopyrightowner) | reference | Optional | Asset (this schema) |
 | [plus:copyrightOwnerID](#pluscopyrightownerid) | `string` | Optional | [Copyright Owner](copyright-owner.schema.md#pluscopyrightownerid) |
 | [plus:copyrightOwnerName](#pluscopyrightownername) | `string` | Optional | [Copyright Owner](copyright-owner.schema.md#pluscopyrightownername) |
-| [repo:assetID](#repoassetid) | `string` | **Required** | [Asset](../external/repo/asset.schema.md#repoassetid) |
 | [repo:createDate](#repocreatedate) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#repocreatedate) |
 | [repo:etag](#repoetag) | `string` | **Required** | [Asset](../external/repo/asset.schema.md#repoetag) |
+| [repo:id](#repoid) | `string` | **Required** | [Asset](../external/repo/asset.schema.md#repoid) |
 | [repo:lastModifiedDate](#repolastmodifieddate) | `string` | **Required** | [Common Properties](../external/repo/common.schema.md#repolastmodifieddate) |
 | [repo:name](#reponame) | `string` | **Required** | [Common Properties](../external/repo/common.schema.md#reponame) |
 | [repo:path](#repopath) | `string` | **Required** | [Common Properties](../external/repo/common.schema.md#repopath) |
@@ -119,7 +119,7 @@ A unique identifier given to every addressable piece of content in a given repos
 
 
 `string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
 
 
 
@@ -175,7 +175,7 @@ It is an object whose property names are link relation types (as defined by [RFC
 ## cc:attributionName
 ### Attribution Name
 
-For licenses that require attribution, such as some Creative Commons licenses, the user to which a work is attributed. When publishing to Behance, this is taken from the user&#39;s Behance profile information.
+For licenses that require attribution, such as some Creative Commons licenses, the user to which a work is attributed. When publishing to Behance, this is taken from the user's Behance profile information.
 
 `cc:attributionName`
 * is optional
@@ -195,7 +195,7 @@ For licenses that require attribution, such as some Creative Commons licenses, t
 ## cc:attributionUrl
 ### Attribution URL
 
-For licenses that require attribution, such as some Creative Commons licenses, a URL that identifies the user to which a work should be attributed. When publishing to Behance, we link to the user&#39;s profile page.
+For licenses that require attribution, such as some Creative Commons licenses, a URL that identifies the user to which a work should be attributed. When publishing to Behance, we link to the user's profile page.
 
 `cc:attributionUrl`
 * is optional
@@ -646,43 +646,9 @@ Name of Copyright Owner.
 
 
 
-## repo:assetID
-
-A unique identifier given to every addressable asset in a given repository.
-
-The format is a [GUID-based URN](https://www.ietf.org/rfc/rfc4122.txt). The pattern to generate an Asset ID is ```urn:aaid:{system}:{id} - {format}:{namespace}:{system}:{id}```
-
-`repo:assetID`
-* is **required**
-* type: `string`
-* defined in [Asset](../external/repo/asset.schema.md#repo:assetID)
-
-### repo:assetID Type
-
-
-`string`
-
-
-All instances must conform to this regular expression 
-```regex
-^urn:aaid:[A-Za-z0-9]+:[A-Za-z0-9]+:[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}$
-```
-
-* test example: [urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e](https://regexr.com/?expression=%5Eurn%3Aaaid%3A%5BA-Za-z0-9%5D%2B%3A%5BA-Za-z0-9%5D%2B%3A%5BA-Fa-f0-9%5D%7B8%7D-%5BA-Fa-f0-9%5D%7B4%7D-%5BA-Fa-f0-9%5D%7B4%7D-%5BA-Fa-f0-9%5D%7B4%7D-%5BA-Fa-f0-9%5D%7B12%7D%24&text=urn%3Aaaid%3Asc%3AUS%3A6dc33479-13ca-4b19-b25d-c805eff8a69e)
-
-
-
-
-### repo:assetID Example
-
-```json
-"urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e"
-```
-
-
 ## repo:createDate
 
-The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is &#34;2004-10-23T12:00:00-06:00&#34;.
+The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
 
 `repo:createDate`
 * is optional
@@ -725,9 +691,34 @@ An  ETag is an HTTP response header returned by an HTTP/1.1 compliant web server
 
 
 
+## repo:id
+
+A unique identifier given to every addressable asset in a given repository.
+
+`repo:id`
+* is **required**
+* type: `string`
+* defined in [Asset](../external/repo/asset.schema.md#repo:id)
+
+### repo:id Type
+
+
+`string`
+
+
+
+
+
+### repo:id Example
+
+```json
+"urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e"
+```
+
+
 ## repo:lastModifiedDate
 
-The server date and time when the resource was most recently modified in the repository, such as when a new version of an asset is uploaded or a directory&#39;s child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is &#34;2004-10-23T12:00:00-06:00&#34;.
+The server date and time when the resource was most recently modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
 
 `repo:lastModifiedDate`
 * is **required**
@@ -921,7 +912,7 @@ Unknown type ``.
 ## xdm:documentID
 ### Document ID
 
-It takes the value of xmpMM:DocumentID present in the [XMP packet of the asset](http://wwwimages.adobe.com/content/dam/Adobe/en/devnet/xmp/pdfs/XMP%20SDK%20Release%20cc-2014-12/XMPSpecificationPart1.pdf). For the assets having no XMP packet this property won&#39;t be populated. 
+It takes the value of xmpMM:DocumentID present in the [XMP packet of the asset](http://wwwimages.adobe.com/content/dam/Adobe/en/devnet/xmp/pdfs/XMP%20SDK%20Release%20cc-2014-12/XMPSpecificationPart1.pdf). For the assets having no XMP packet this property won't be populated. 
 
 The value is a GUID, capital A-F, 8-4-4-12, preceded by the string `uuid:`
 
@@ -1418,7 +1409,7 @@ The keyword itself. A keyword can be considered like a tag, i.e. a short descrip
 ## xmp:modifyDate
 ### Mofification Date
 
-The date and time when asset was last modified. The Date Time property should conform to ISO 8601 standard. An example form is &#34;2004-10-23T12:00:00-06:00&#34;. Opposed to `repositoryLastModifiedDate`, this is the time when the asset was last modified locally, with or without knowledge of the repository.
+The date and time when asset was last modified. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00". Opposed to `repositoryLastModifiedDate`, this is the time when the asset was last modified locally, with or without knowledge of the repository.
 
 `xmp:modifyDate`
 * is optional

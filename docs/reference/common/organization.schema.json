@@ -16,7 +16,7 @@
                 "@id": {
                     "title": "Organization ID",
                     "type": "string",
-                    "format": "uri",
+                    "format": "uri-reference",
                     "description": "A unique identifier for the organization."
                 },
                 "xdm:legalName": {

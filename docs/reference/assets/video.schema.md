@@ -7,21 +7,21 @@ https://ns.adobe.com/xdm/assets/video
 
 The Video class is for video assets, i.e. assets that consist of moving pictures and, optionally, sound.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [assets/video.schema.json](assets/video.schema.json) |
-
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [assets/video.schema.json](assets/video.schema.json) |
 ## Schema Hierarchy
 
 * Video `https://ns.adobe.com/xdm/assets/video`
   * [Asset](asset.schema.md) `https://ns.adobe.com/xdm/assets/asset`
-  * [Rectangular Media](rectangular.schema.md) `https://ns.adobe.com/xdm/assets/rectangular`
+  * [Simple Rectangular Area](rectangular.schema.md) `https://ns.adobe.com/xdm/assets/rectangular`
+
 
 ## Video Examples
 
 ```json
 {
-  "repo:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ac",
+  "repo:id": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ac",
   "xmp:createDate": "2017-09-26T15:52:25+00:00",
   "repo:createdDate": "2017-09-26T15:52:25+00:00",
   "xdm:repositoryCreatedBy": "lars",
@@ -42,7 +42,7 @@ The Video class is for video assets, i.e. assets that consist of moving pictures
 
 ```json
 {
-  "repo:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ad",
+  "repo:id": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ad",
   "xmp:createDate": "2017-09-26T15:52:25+00:00",
   "repo:createdDate": "2017-09-26T15:52:25+00:00",
   "xdm:repositoryCreatedBy": "lars",
@@ -81,10 +81,10 @@ The Video class is for video assets, i.e. assets that consist of moving pictures
 | [exif:gpsLongitude](#exifgpslongitude) | `string` | Optional | [Asset](asset.schema.md#exifgpslongitude) |
 | [photoshop:credit](#photoshopcredit) | `string` | Optional | [Asset](asset.schema.md#photoshopcredit) |
 | [plus:copyrightOwner](#pluscopyrightowner) | reference | Optional | [Asset](asset.schema.md#pluscopyrightowner) |
-| [tiff:imageLength](#tiffimagelength) | `integer` | Optional | [Rectangular Media](rectangular.schema.md#tiffimagelength) |
-| [tiff:imageWidth](#tiffimagewidth) | `integer` | Optional | [Rectangular Media](rectangular.schema.md#tiffimagewidth) |
+| [tiff:imageLength](#tiffimagelength) | `integer` | Optional | [Simple Rectangular Area](rectangular.schema.md#tiffimagelength) |
+| [tiff:imageWidth](#tiffimagewidth) | `integer` | Optional | [Simple Rectangular Area](rectangular.schema.md#tiffimagewidth) |
 | [xdm:aliasIDs](#xdmaliasids) | `array` | Optional | [Asset](asset.schema.md#xdmaliasids) |
-| [xdm:aspectRatio](#xdmaspectratio) | `number` | Optional | [Rectangular Media](rectangular.schema.md#xdmaspectratio) |
+| [xdm:aspectRatio](#xdmaspectratio) | `number` | Optional | [Simple Rectangular Area](rectangular.schema.md#xdmaspectratio) |
 | [xdm:documentID](#xdmdocumentid) | `string` | Optional | [Asset](asset.schema.md#xdmdocumentid) |
 | [xdm:extent](#xdmextent) | `integer` | Optional | Video (this schema) |
 | [xdm:milestone](#xdmmilestone) | `object` | Optional | [Asset](asset.schema.md#xdmmilestone) |
@@ -111,7 +111,7 @@ The Video class is for video assets, i.e. assets that consist of moving pictures
 ## cc:attributionName
 ### Attribution Name
 
-For licenses that require attribution, such as some Creative Commons licenses, the user to which a work is attributed. When publishing to Behance, this is taken from the user&#39;s Behance profile information.
+For licenses that require attribution, such as some Creative Commons licenses, the user to which a work is attributed. When publishing to Behance, this is taken from the user's Behance profile information.
 
 `cc:attributionName`
 * is optional
@@ -131,7 +131,7 @@ For licenses that require attribution, such as some Creative Commons licenses, t
 ## cc:attributionUrl
 ### Attribution URL
 
-For licenses that require attribution, such as some Creative Commons licenses, a URL that identifies the user to which a work should be attributed. When publishing to Behance, we link to the user&#39;s profile page.
+For licenses that require attribution, such as some Creative Commons licenses, a URL that identifies the user to which a work should be attributed. When publishing to Behance, we link to the user's profile page.
 
 `cc:attributionUrl`
 * is optional
@@ -516,7 +516,7 @@ Height in pixels. To maintain continuity with the XMP and TIFF standards, the he
 `tiff:imageLength`
 * is optional
 * type: `integer`
-* defined in [Rectangular Media](rectangular.schema.md#tiff:imageLength)
+* defined in [Simple Rectangular Area](rectangular.schema.md#tiff:imageLength)
 
 ### tiff:imageLength Type
 
@@ -537,7 +537,7 @@ Width in pixels
 `tiff:imageWidth`
 * is optional
 * type: `integer`
-* defined in [Rectangular Media](rectangular.schema.md#tiff:imageWidth)
+* defined in [Simple Rectangular Area](rectangular.schema.md#tiff:imageWidth)
 
 ### tiff:imageWidth Type
 
@@ -613,7 +613,7 @@ Describes the proportional relationship between the width and the height. To det
 `xdm:aspectRatio`
 * is optional
 * type: `number`
-* defined in [Rectangular Media](rectangular.schema.md#xdm:aspectRatio)
+* defined in [Simple Rectangular Area](rectangular.schema.md#xdm:aspectRatio)
 
 ### xdm:aspectRatio Type
 
@@ -629,7 +629,7 @@ Describes the proportional relationship between the width and the height. To det
 ## xdm:documentID
 ### Document ID
 
-It takes the value of xmpMM:DocumentID present in the [XMP packet of the asset](http://wwwimages.adobe.com/content/dam/Adobe/en/devnet/xmp/pdfs/XMP%20SDK%20Release%20cc-2014-12/XMPSpecificationPart1.pdf). For the assets having no XMP packet this property won&#39;t be populated. 
+It takes the value of xmpMM:DocumentID present in the [XMP packet of the asset](http://wwwimages.adobe.com/content/dam/Adobe/en/devnet/xmp/pdfs/XMP%20SDK%20Release%20cc-2014-12/XMPSpecificationPart1.pdf). For the assets having no XMP packet this property won't be populated. 
 
 The value is a GUID, capital A-F, 8-4-4-12, preceded by the string `uuid:`
 
@@ -1116,7 +1116,7 @@ The keyword itself. A keyword can be considered like a tag, i.e. a short descrip
 ## xmp:modifyDate
 ### Mofification Date
 
-The date and time when asset was last modified. The Date Time property should conform to ISO 8601 standard. An example form is &#34;2004-10-23T12:00:00-06:00&#34;. Opposed to `repositoryLastModifiedDate`, this is the time when the asset was last modified locally, with or without knowledge of the repository.
+The date and time when asset was last modified. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00". Opposed to `repositoryLastModifiedDate`, this is the time when the asset was last modified locally, with or without knowledge of the repository.
 
 `xmp:modifyDate`
 * is optional

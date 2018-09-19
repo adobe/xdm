@@ -9,6 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Push Notification Token",
   "type": "object",
+  "meta:extensible": true,
   "description":
     "Push notification tokens are used to communicate with applications that\nare installed on devices or SaaS application accounts. Examples include mobile\napplication notifications over notification services like the Apple Push\nNotification service.\n",
   "definitions": {
@@ -60,8 +61,11 @@
   },
   "allOf": [
     {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
       "$ref": "#/definitions/pushnotificationtoken"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stabilizing"
 }

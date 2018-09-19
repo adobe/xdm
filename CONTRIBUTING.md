@@ -31,6 +31,10 @@ Adobe does not require you to assign to Adobe the copyright of your contribution
 
 Where possible, include the Creative Commons Attribution 4.0 International (CC BY 4.0) license summary at the top of each file along with the copyright info.
 
+### Contributor License Agreement
+
+All third-party contributions to this project must be accompanied by a signed contributor license. This gives Adobe permission to redistribute your contributions as part of the project. Sign our CLA at [http://opensource.adobe.com/cla.html](http://opensource.adobe.com/cla.html). You only need to submit an [Adobe CLA](http://opensource.adobe.com/cla.html) one time.
+
 ### License Inclusion
 
 You can include the Creative Commons Attribution 4.0 International (CC BY 4.0) license summary from below, ensure to update the copyright details.
@@ -46,17 +50,18 @@ You can include the Creative Commons Attribution 4.0 International (CC BY 4.0) l
 
 ## How to Contribute
 
+0.  If you haven't done so, sign the [Adobe CLA](http://opensource.adobe.com/cla.html)
 1.  Go to the [list of open issues](https://github.com/adobe/xdm/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) and pick an issue you want to work on. If you don't see the appropriate issue, [create a new issue in GitHub](https://github.com/adobe/xdm/issues/new)
-2.  If you haven't done so yet, [fork the XDM repository into your private GitHub organization](https://github.com/adobe/xdm/fork). If your fork exists, merge the latest updates from `adobe/xdm` into `yourname/xdm`, so that you don't start from an outdated code tree
-3.  In `yourname/xdm` create a new branch from `master`. Your branch name should refer the issue number like `bug-42` or `feature-23` where one exists and have a descriptive name like `fix-layer-group-references`
-4.  Make add edits that apply to the given feature or bug against this new branch. Commit and push in frequent intervals
-5.  If you are working on the branch for more than a day, make sure to occasionally (at least once per day) to merge the latest updates from `adobe/xdm#master` into your branch, so that you won't get surprised when it's time to merge the pull request. Resolve any conflicts to make life easier for the XDM editors
-6.  Once you are done, create a pull request from your branch against `adobe/xdm#master`.
+1.  If you haven't done so yet, [fork the XDM repository into your private GitHub organization](https://github.com/adobe/xdm/fork). If your fork exists, merge the latest updates from `adobe/xdm` into `yourname/xdm`, so that you don't start from an outdated code tree
+1.  In `yourname/xdm` create a new branch from `master`. Your branch name should refer the issue number like `bug-42` or `feature-23` where one exists and have a descriptive name like `fix-layer-group-references`
+1.  Make add edits that apply to the given feature or bug against this new branch. Commit and push in frequent intervals
+1.  If you are working on the branch for more than a day, make sure to occasionally (at least once per day) to merge the latest updates from `adobe/xdm#master` into your branch, so that you won't get surprised when it's time to merge the pull request. Resolve any conflicts to make life easier for the XDM editors
+1.  Once you are done, create a pull request from your branch against `adobe/xdm#master`.
 
 Every pull request should specify:
 
 * What the change intends to do
-* If there are breaking changes
+* If there are breaking changes (in case there are, list them in [CHANGELOG.md](CHANGELOG.md), too)
 * Link to the Github issue in the format `#42`
 
 For every update to the schema, make sure
@@ -98,7 +103,7 @@ XDM is not an isolated standard, but incorporates and builds on standards. Whene
 
 ### Design for Compatibility
 
-Interoperability with [Microsoft's Common Data Model (CDM)](https://github.com/Microsoft/CDM)is a top priority. This means that definitions that are present in CDM should be used or extended, where appropriate, by XDM. XDM should not attempt to duplicate definitions that are present in CDM.
+Interoperability with [Microsoft's Common Data Model (CDM)](https://github.com/Microsoft/CDM) is a top priority. This means that definitions that are present in CDM should be used or extended, where appropriate, by XDM. XDM should not attempt to duplicate definitions that are present in CDM.
 
 Where appropriate, we can 'lead' CDM, extend it to meet other requirements.
 Another good source of data model elements is [schema.org](http://schema.org).
@@ -112,6 +117,7 @@ Additional aspects of standard design that aid with consumability are:
 * principle of least astonishment: don't surprise the consumer
 * avoid unnecessary complexity: don't introduce indirections that are not needed
 * the principle of minimal verbosity: make keep things as short as possible, but not shorter
+* avoid unnecessary polymorphism that is hard to consume, e.g. offering both singular and array notations, or introducing type variants that don't provide a common discriminator property.
 
 ### Design for the Cloud
 
@@ -142,10 +148,12 @@ Avoid non-semantic limits – don’t put current resource limits in the data mo
 * don't restrict values of `string` properties beyond the constraints of the domain, e.g. don't set a `maxLength` of 255, just because your current database uses a `VARCHAR(255)` default
 * run `npm test` before you make a pull request
 * convention is that property names are in camelCase, when they appear in JSON
-* Acronyms and abbreviations in camelCase like ID, API, JSON are also capitalized in camelCase, such as `assetID`
+* Acronyms and abbreviations in camelCase like ID, API, JSON are also capitalized in camelCase, such as `documentID`
 * When combining two acronyms, use lowercase for the first and uppercase for the second, such as `dmaID`
 * don't invent your own `ID` attributes, use the `@id` convention
 * don't invent your own `type` attributes, use the `@type` convention
+* when using `enum` in JSON schema, document all values using `meta:enum`
+* when working with "soft enums" or "open enumerations", use `meta:enum` to document all known values
 
 Run `npm run lint` before committing. The `lint` command is able to fix some easy styling issues, including:
 
@@ -346,6 +354,25 @@ The third schema is `third.schema.json`, it extends both `second`, and transitiv
 }
 ```
 
+### Schema Descriptors
+
+Schema descriptors are an extensible mechanism for providing additional metadata about an XDM schema. For example, schema descriptors can be used to define relationships between schemas or to annotate schema properties with additional metadata. Schema descriptors may be used when certain properties of a schema are not static (which could usually be described in the schema directly) but may vary from usage to usage.
+
+Details on using and defining schema descriptors may be found in the section [Schema Descriptors](./docs/descriptors.md) of the specification.
+
+Schema descriptors are extensible, and new descriptors may be creating by defining a new URI value and using it in
+the `@type` property of the descriptor object. Readers should ignore descriptors they do not understand.
+
+Schema descriptors are defined in XDM using the `SchemaDescriptor` schema.
+
+### Structuring Schemas - Nesting versus Namespaces
+
+The use of JSON-LD namespaces in XDM means that schema definitions are organized around two axes. The first is the structure of the JSON, which may be nested to an arbitrary depth. The second is the orthogonal layer created by each independent namespace. While both organizing axes are available, it is important to use each for its intended purpose.
+
+Namespaces should be used to allow organizations to develop XDM-based grammars independently of each other, without fear of conflict and without a need to coordinate. In general, it is desirable to have the smallest set of namespaces possible while meeting the above goals.
+
+Namespaces _should not_ be used to organize or group concepts within a grammar. When organizing concepts, schema authors should either define sub-objects for each concept, or consider breaking out the concept into an independent schema, as described in "Re-use and Modularity".
+
 ### Schema Stability Status
 
 Each schema should contains the enum property `meta:status` that designates it's stability. The value should be one of the following enumerations:
@@ -361,7 +388,18 @@ XDM is using a couple of custom keywords that are not part of the JSON Schema st
 
 * `meta:extensible`: see above, to describe schemas that allow custom properties
 * `meta:auditable`: for schemas that have created and last modified dates
-* `meta:enum`: for known values in enums, strings, and as property keys
+* `meta:descriptors`: to annotate schemas with additional metadata (see Schema Descriptors above)
+* `meta:enum`: for known values in enums, strings, and as property keys (see below)
+
+##### Soft and Hard Enumerations
+
+XDM uses the notion of hard and soft enumerations.
+
+A **hard enum** is enforced though JSON Schema's `enum` keyword. Only the values listed in the `enum` array are valid.
+All values should be documented in addition using `meta:enum`
+
+A **soft enum** can be any string property. Soft enums consist of a number of known and documented values (using `meta:enum`), but any `string` that matches the type's constraints is a valid value.
+This means, soft enums are open enumerations that can be extended ad-hoc by XDM users. XDM authors should be aware that just using `meta:enum` is not adding any enforcment logic.
 
 ## Writing Styleguides
 

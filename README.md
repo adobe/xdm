@@ -6,6 +6,12 @@ The [Experience Data Model](https://www.adobe.io/open/standards/xdm) (XDM) is th
 XDM is a publicly documented specification, driven by Adobe to improve the interoperability, expressiveness, and power of digital experiences.
 This repository contains the source code for the formal specification of the XDM model, using the JSON Schema language.
 
+## Current Version
+
+XDM is at version `0.9.3`.
+
+You can find more about our versioning in [docs/introduction.md](docs/introduction.md#versioning)
+
 ## Read the XDM Spec
 
 * [Chapter 1: Introduction](docs/introduction.md)
@@ -59,19 +65,12 @@ From the root directory of the local repository run:
 $ npm install
 $ npm test
 
-> xdm-models@0.0.1 test /Users/lars/Code/models
-> sh validate.sh
+> xdm@0.9.3 test /Users/fmeschbe/src/platform/xdm
+> mocha
+...
 
-Validating schemas/common/eventenvelope.example.1.json against schemas/common/eventenvelope.schema.json
-schemas/common/eventenvelope.example.1.json valid
-Validating schemas/common/eventenvelope.example.2.json against schemas/common/eventenvelope.schema.json
-schemas/common/eventenvelope.example.2.json valid
-Validating schemas/common/eventenvelope.example.3.json against schemas/common/eventenvelope.schema.json
-schemas/common/eventenvelope.example.3.json valid
-Validating schemas/common/eventenvelope.example.4.json against schemas/common/eventenvelope.schema.json
-schemas/common/eventenvelope.example.4.json valid
-Validating schemas/common/eventenvelope.example.5.json against schemas/common/eventenvelope.schema.json
-schemas/common/eventenvelope.example.5.json valid
+$ npm run lint
+...
 ```
 
 If you see warnings or error messages (or an non-zero exit code), fix them before making a pull request.

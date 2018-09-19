@@ -7,14 +7,14 @@ https://ns.adobe.com/xdm/context/phonenumber
 
 Information that allows the phone calling of a person. Typically an alphanumeric number, 1-222-333 4444 in North America, but can have a wide range of formats.
 
-| Abstract | Extensible | Status | Custom Properties | Additional Properties | Defined In |
-|----------|------------|--------|-------------------|-----------------------|------------|
-| Can be instantiated | Yes | Experimental | Forbidden | Permitted | [context/phonenumber.schema.json](context/phonenumber.schema.json) |
-
+| [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
+|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/phonenumber.schema.json](context/phonenumber.schema.json) |
 ## Schema Hierarchy
 
 * Phone Number `https://ns.adobe.com/xdm/context/phonenumber`
-  * [Audit Trail](../common/auditable.schema.md) `https://ns.adobe.com/xdm/common/auditable`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+
 
 ## Phone Number Example
 ```json
@@ -29,39 +29,13 @@ Information that allows the phone calling of a person. Typically an alphanumeric
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:createdByBatchID](#xdmcreatedbybatchid) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmcreatedbybatchid) |
 | [xdm:extension](#xdmextension) | `string` | Optional | Phone Number (this schema) |
-| [xdm:modifiedByBatchID](#xdmmodifiedbybatchid) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmmodifiedbybatchid) |
 | [xdm:number](#xdmnumber) | `string` | Optional | Phone Number (this schema) |
 | [xdm:primary](#xdmprimary) | `boolean` | Optional | Phone Number (this schema) |
-| [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmrepositorycreatedby) |
-| [xdm:repositoryLastModifiedBy](#xdmrepositorylastmodifiedby) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmrepositorylastmodifiedby) |
 | [xdm:status](#xdmstatus) | `string` | Optional | Phone Number (this schema) |
 | [xdm:statusReason](#xdmstatusreason) | `string` | Optional | Phone Number (this schema) |
 | [xdm:validity](#xdmvalidity) | `string` | Optional | Phone Number (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
-
-## xdm:createdByBatchID
-### Created by Batch Identifier
-
-The Data Set Files in Catalog Services which has been originating the creation of the entity.
-
-
-`xdm:createdByBatchID`
-* is optional
-* type: `string`
-* defined in [Audit Trail](../common/auditable.schema.md#xdm:createdByBatchID)
-
-### xdm:createdByBatchID Type
-
-
-`string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
-
-
-
-
-
 
 ## xdm:extension
 ### Extension
@@ -77,29 +51,6 @@ The internal dialing number used to call from a private exchange, operator or sw
 
 
 `string`
-
-
-
-
-
-
-## xdm:modifiedByBatchID
-### Modified by Batch Identifier
-
-The last Data Set Files in Catalog Services which has modified the entity.
-At creation time, `modifiedByBatchID` is set as `createdByBatchID`.
-
-
-`xdm:modifiedByBatchID`
-* is optional
-* type: `string`
-* defined in [Audit Trail](../common/auditable.schema.md#xdm:modifiedByBatchID)
-
-### xdm:modifiedByBatchID Type
-
-
-`string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
 
 
 
@@ -148,49 +99,6 @@ The communication channel is defined by the type:
 
 
 `boolean`
-
-
-
-
-
-## xdm:repositoryCreatedBy
-### Created by User Identifier
-
-User id who has created the entity.
-
-
-`xdm:repositoryCreatedBy`
-* is optional
-* type: `string`
-* defined in [Audit Trail](../common/auditable.schema.md#xdm:repositoryCreatedBy)
-
-### xdm:repositoryCreatedBy Type
-
-
-`string`
-
-
-
-
-
-
-## xdm:repositoryLastModifiedBy
-### Modified by User Identifier
-
-User id who last modified the entity.
-At creation time, `modifiedByUser` is set as `createdByUser`.
-
-
-`xdm:repositoryLastModifiedBy`
-* is optional
-* type: `string`
-* defined in [Audit Trail](../common/auditable.schema.md#xdm:repositoryLastModifiedBy)
-
-### xdm:repositoryLastModifiedBy Type
-
-
-`string`
-
 
 
 

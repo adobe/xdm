@@ -1,0 +1,50 @@
+{
+  "xdm:localTime": "2001-07-04T12:08:56+01:00",
+  "xdm:geo": {
+    "@id": "https://data.adobe.io/entities/geo/tokyo",
+    "xdm:countryCode": "JP",
+    "xdm:stateProvince": "JP-13",
+    "xdm:city": "Tōkyō",
+    "xdm:postalCode": "141-0032",
+    "schema:latitude": 35.6185,
+    "schema:longitude": 139.73237
+  },
+  "xdm:POIinteraction": {
+    "https://ns.adobe.com/xdm/data/metrics/placecontext/poi-exits": {
+      "xdm:value": 1
+    },
+    "xdm:POIID": "d8a5c08c-1e79-4051-8a8b-675fb235e03d",
+    "xdm:name": "Acme Hotel Tokyo Lobby",
+    "xdm:category": "Resorts",
+    "xdm:type": "Hotel",
+    "xdm:beacon": {
+      "xdm:proximityUUID": "c6c03ed9-ea23-481c-ab15-833e88cfb22f",
+      "xdm:beaconMajor": 300,
+      "xdm:beaconMinor": 34
+    }
+  },
+  "xdm:activePOIs": [
+    {
+      "xdm:POIID": "c7f4bf28-c8d9-4b89-a81f-2a8ef9367390",
+      "xdm:name": "Acme Hotel Tokyo",
+      "xdm:category": "Resorts",
+      "xdm:type": "Hotel",
+      "xdm:beacon": {
+        "xdm:proximityUUID": "dd0094a0-52bb-4d3a-ab15-fcccb9b9b48e",
+        "xdm:beaconMajor": 100,
+        "xdm:beaconMinor": 23
+      }
+    },
+    {
+      "xdm:POIID": "d8a5c08c-1e79-4051-8a8b-675fb235e03d",
+      "xdm:name": "Acme Hotel Tokyo Lobby",
+      "xdm:category": "Resorts",
+      "xdm:type": "Hotel",
+      "xdm:beacon": {
+        "xdm:proximityUUID": "c6c03ed9-ea23-481c-ab15-833e88cfb22f",
+        "xdm:beaconMajor": 300,
+        "xdm:beaconMinor": 34
+      }
+    }
+  ]
+}

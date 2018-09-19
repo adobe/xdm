@@ -1,0 +1,102 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/segmentmembership",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Segment Membership",
+  "type": "object",
+  "description": "Details about a segment membership.",
+  "definitions": {
+    "segmentMembership": {
+      "properties": {
+        "xdm:segmentID": {
+          "title": "Segment ID",
+          "$ref": "https://ns.adobe.com/xdm/context/segmentidentity",
+          "description": "The identity of the segment or snapshot definition in with the domain of the specific system that processes that type of segment."
+        },
+        "xdm:version": {
+          "title": "Version",
+          "type": "string",
+          "description": "The version of the segment definition used in this segment assertion. Version can be omitted in audience lists when all memberships versions are the same."
+        },
+        "xdm:lastQualificationTime": {
+          "title": "Last Qualification Time",
+          "type": "string",
+          "format": "date-time",
+          "description": "The timestamp when the assertion of segment membership was made."
+        },
+        "xdm:payload" : {
+          "title" : "Payload",
+          "description": "Values that are directly related with the segment realization. This payload exists with the same validUntil as the segment realization.  Note that the intention is that exactly one payload value be included, as indicated by the payload type.  This was originally modelled using 'oneOf', but due to limitations in our tooling that was removed.  This more semantically meaningful representation will be re-introduced in the future.",
+          "type": "object",
+          "properties": {
+            "xdm:payloadBooleanValue": {
+              "title": "Value",
+              "type": "boolean",
+              "description": "The boolean value"
+            },
+            "xdm:payloadNumberValue": {
+              "title": "Value",
+              "type": "number",
+              "description": "The number"
+            },
+            "xdm:payloadPropensityValue": {
+              "title": "Value",
+              "type": "number",
+              "description": "The propensity",
+              "exclusiveMinimum": 0,
+              "maximum": 1
+            },
+            "xdm:payloadStringValue": {
+              "title": "Value",
+              "type": "string",
+              "description": "The string value"
+            },
+            "xdm:payloadType": {
+              "title": "Payload Type",
+              "type": "string",
+              "enum": ["boolean", "number", "propensity", "string"],
+              "meta:enum": {
+                "boolean": "Boolean", 
+                "number": "Number",
+                "propensity": "Propensity", 
+                "string": "String"
+              },
+              "description": "The type of payload."
+            }
+          },
+          "required": ["xdm:payloadType"]
+        },
+        "xdm:validUntil": {
+          "title": "Valid Until",
+          "type": "string",
+          "format": "date-time",
+          "description": "The timestamp for when the segment assertion should nolonger be assumed to be valid and should either be ignored or revalidated."
+        },
+        "xdm:status": {
+          "title": "Status",
+          "type": "string",
+          "description": "Is the segment participation realized as part of the current request.",
+          "default": "realized",
+          "enum": ["existing", "realized", "exited"],
+          "meta:enum": {
+            "existing": "Entity continues to be in the segment",
+            "realized": "Entity is entering the segment",
+            "exited": "Entity is exiting the segment"
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/segmentMembership"
+    }
+  ],
+  "meta:status": "experimental"
+}
+

@@ -7,7 +7,7 @@
     ],
     "$id": "https://ns.adobe.com/xdm/context/profileStitchIdentity",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Identity",
+    "title": "Profile Stitch Identity",
     "type": "object",
     "description": "ProfileStitchIdentity is used to clearly distinguish Profile Stitching from multiple sources. ProfileStitchIdentity is established by an Profile Stitch identity provider, which itself is referenced in the `namespace` attribute. Within each `namespace`, the profileStitchIdentity is unique.",
     "definitions": {
@@ -16,7 +16,7 @@
                 "@id": {
                     "title": "Identifier",
                     "type": "string",
-                    "format": "uri",
+                    "format": "uri-reference",
                     "description": "Identity of the Profile Stitch in the related namespace."
                 },
                 "xdm:namespace": {

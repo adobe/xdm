@@ -17,7 +17,7 @@
                 "@id": {
                     "title": "Identifier",
                     "type": "string",
-                    "format": "uri",
+                    "format": "uri-reference",
                     "description": "The ID associated with this geographical unit."
                 },
                 "xdm:label": {

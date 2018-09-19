@@ -17,7 +17,7 @@
       "properties": {
         "@id": {
           "title": "Chapter Identity",
-          "format":"uri",
+          "format": "uri-reference",
           "type": "string",
           "description": "The identity of the chapter."
         },

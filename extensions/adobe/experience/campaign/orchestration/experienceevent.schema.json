@@ -1,0 +1,105 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id":
+    "https://ns.adobe.com/experience/campaign/orchestration/experienceevent",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Journey experience event",
+  "type": "object",
+  "description": "Orchestration extension to ExperienceEvent",
+  "definitions": {
+    "journey": {
+      "title": "Journey of an entity",
+      "type": "object",
+      "description": "Journey created for an entity by marketer.",
+      "properties": {
+        "@id": {
+          "title": "Journey unique identifier",
+          "type": "string",
+          "format": "uri-reference",
+          "description": "The unique identifier of the journey created by the marketer."
+        }
+      },
+      "required": ["@id"]
+    },
+    "journeyVersion": {
+      "title": "Journey version",
+      "type": "object",
+      "description": "Schema for describing the version of a journey, where version holds the state machine",
+      "properties": {
+        "@id": {
+          "title": "Journey version identifier",
+          "type": "string",
+          "format": "uri-reference",
+          "description": "The unique identifier denoting the version of journey on which the entity is active."
+        }
+      },
+      "required": ["@id"]
+    },
+    "action": {
+      "title": "Action on step transition",
+      "type": "object",
+      "description": "Action taken during a step transition that happened for an entity in state machine",
+      "properties": {
+        "xdm:actionID": {
+          "title": "Action identifier",
+          "type": "string",
+          "format": "uri-reference",
+          "description": "Unique identifier denoting the associated action."
+        },
+        "xdm:actionType": {
+          "title": "Action Type",
+          "type": "string",
+          "description": "The type of action to be performed.",
+          "meta:enum": {
+            "scheduled_notification":
+              "This action type allows to specify scheduled notifications and wait for the notifications as incoming events for steps",
+            "http_request":
+              "This action type is for a HTTP call on an external system",
+            "personalized_action":
+              "This action type describes an action with personalization that will be resolved at runtime for each voyager instance",
+            "parameterized_action":
+              "This action type describes an action with parameterization",
+            "journey_notification":
+              "This action type is to send notification for another journey",
+            "campaign_request":
+              "This action performs REST calls to a campaign instance to write data",
+            "messageService_request":
+              "The message service action performs REST calls to campaign instance to send messages with messaging service"
+          }
+        },
+        "xdm:type": { 
+          "title": "Action Type (Deprecated)", 
+          "type": "string", 
+          "description": "The type of action to be performed.  This field has been deprecated, use `xdm:actionType` instead", 
+          "meta:enum": {  
+            "scheduled_notification": "This action type allows to specify scheduled notifications and wait for the notifications as incoming events for steps", 
+            "http_call": "This action type is for a HTTP call on an external system", 
+            "action_with_personalization": "This action type describes an action with personalization that will be resolved at runtime for each voyager instance",  
+            "parameterized_action": "This action type describes an action with parameterization", 
+            "send_journey_notification": "This action type is to send notification for another journey",  
+            "acs_writer": "The ACS writer action performs REST calls to an Adobe campaign standard instance to write data", 
+            "acs_message_center": "The ACS message center action performs REST calls to an Adobe campaign standard instance to send messages with Message Center" 
+          },
+          "meta:status": "deprecated"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/journey"
+    },
+    {
+      "$ref": "#/definitions/journeyVersion"
+    },
+    {
+      "$ref": "#/definitions/action"
+    }
+  ],
+  "meta:status": "stabilizing"
+}

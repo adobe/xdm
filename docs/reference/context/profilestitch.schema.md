@@ -13,8 +13,7 @@ Details about the ids that were joined by profile stitching.
 ## Schema Hierarchy
 
 * Profile Stitch `https://ns.adobe.com/xdm/context/profileStitch`
-  * [Identity](profilestitchidentity.schema.md) `https://ns.adobe.com/xdm/context/profileStitchIdentity`
-  * [End User IDs](enduserids.schema.md) `https://ns.adobe.com/xdm/context/enduserids`
+  * [Profile Stitch Identity](profilestitchidentity.schema.md) `https://ns.adobe.com/xdm/context/profileStitchIdentity`
 
 
 ## Profile Stitch Example
@@ -46,25 +45,32 @@ Details about the ids that were joined by profile stitching.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:endUserIDs](#xdmenduserids) | End User IDs | Optional | Profile Stitch (this schema) |
-| [xdm:profileStitchID](#xdmprofilestitchid) | Identity | Optional | Profile Stitch (this schema) |
+| [xdm:identities](#xdmidentities) | Identity | Optional | Profile Stitch (this schema) |
+| [xdm:profileStitchID](#xdmprofilestitchid) | Profile Stitch Identity | Optional | Profile Stitch (this schema) |
 | [xdm:version](#xdmversion) | `string` | Optional | Profile Stitch (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## xdm:endUserIDs
-### End User IDs
+## xdm:identities
+### All User Identities
 
-Condensed, normalized encapsulation of all end user identifiers.
+Array of Identities. Condensed, normalized encapsulation of all end user identifiers.
 
-`xdm:endUserIDs`
+`xdm:identities`
 * is optional
-* type: End User IDs
+* type: Identity
+* at least `1` items in the array
 * defined in this schema
 
-### xdm:endUserIDs Type
+### xdm:identities Type
 
 
-* [End User IDs](enduserids.schema.md) – `https://ns.adobe.com/xdm/context/enduserids`
+Array type: Identity
+
+All items must be of the type:
+* [Identity](identity.schema.md) – `https://ns.adobe.com/xdm/context/identity`
+
+
+
 
 
 
@@ -77,13 +83,13 @@ The identity of the segment or snapshot definition in with the domain of the spe
 
 `xdm:profileStitchID`
 * is optional
-* type: Identity
+* type: Profile Stitch Identity
 * defined in this schema
 
 ### xdm:profileStitchID Type
 
 
-* [Identity](profilestitchidentity.schema.md) – `https://ns.adobe.com/xdm/context/profileStitchIdentity`
+* [Profile Stitch Identity](profilestitchidentity.schema.md) – `https://ns.adobe.com/xdm/context/profileStitchIdentity`
 
 
 

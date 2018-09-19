@@ -19,7 +19,7 @@
             "properties": {
                 "@id": {
                     "type": "string",
-                    "format": "uri",
+                    "format": "uri-reference",
                     "const": "xdm:linkClicks",
                     "description": "The unique identifier of this metric."
                 },

@@ -25,19 +25,33 @@
                     "type": "integer",
                     "description": "The day of the month a person was born (1-31).",
                     "minimum": 1,
-                    "maximum": 31
+                    "maximum": 31,
+                    "meta:status": "deprecated"
                 },
                 "xdm:birthMonth": {
                     "title": "Birth month",
                     "type": "integer",
                     "description": "The month of the year a person was born (1-12).",
                     "minimum": 1,
-                    "maximum": 12
+                    "maximum": 12,
+                    "meta:status": "deprecated"
+                },
+                "xdm:birthDate": {
+                    "title": "Birth Date",
+                    "type": "string",
+                    "format": "date",
+                    "description": "The full date a person was born."
+                },
+                "xdm:birthDayAndMonth": {
+                    "title": "Birth Date",
+                    "type": "string",
+                    "pattern": "[0-1][0-9]-[0-9][0-9]",
+                    "description": "The day and month a person was born, in the format MM-DD. This field should be used when the day and month of a person's birth is known, but not the year."
                 },
                 "xdm:birthYear": {
                     "title": "Birth year",
                     "type": "integer",
-                    "description": "The year a person was born including the century (yyyy, e.g 1983).",
+                    "description": "The year a person was born including the century (yyyy, e.g 1983).  This field should be used when only the person's age is known, not the full birth date.",
                     "minimum": 1,
                     "maximum": 32767
                 },
@@ -82,10 +96,16 @@
                 "xdm:lastName": "Doe",
                 "xdm:fullName": "Jane F. Doe"
             },
-            "xdm:birthMonth": 1,
-            "xdm:birthDay": 3,
-            "xdm:birthYear": 1996,
-            "xdm:gender": "female"
+            "xdm:birthDate": "1996-01-03"
+        },
+        {
+            "xdm:name": {
+                "xdm:firstName": "Jane",
+                "xdm:middleName": "F",
+                "xdm:lastName": "Doe",
+                "xdm:fullName": "Jane F. Doe"
+            },
+            "xdm:birthDayAndMonth": "01-03"
         }
     ]
 }

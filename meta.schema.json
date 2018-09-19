@@ -102,6 +102,17 @@
           "https://ns.adobe.com/xdm/common/desciptors/schemadescriptor#/definitions/descriptor"
       }
     },
+    "meta:storageHint": {
+      "description": "storage hint applied to a property",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "meta:enum": {
+          "xdm:storeAsMap":
+            "When applied to an object type, signals that the object may have an unconstrained set of keys (i.e. a map)"
+        }
+      }
+    },
     "type": {
       "type": "string",
       "const": "object"

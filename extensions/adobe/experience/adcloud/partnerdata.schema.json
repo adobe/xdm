@@ -7,10 +7,10 @@
   ],
   "$id": "https://ns.adobe.com/experience/adcloud/partnerdata",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Synchronized Remarketing Audiences",
+  "title": "Adcloud partner data",
   "type": "object",
   "description":
-    "Details about AdCloud Search segments used for retargeting surfers on a Search/Marketing platform.",
+    "Details about AdCloud partners.",
   "definitions": {
     "partnerdata": {
       "properties": {

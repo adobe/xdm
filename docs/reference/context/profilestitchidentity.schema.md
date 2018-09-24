@@ -1,5 +1,5 @@
 
-# Identity Schema
+# Profile Stitch Identity Schema
 
 ```
 https://ns.adobe.com/xdm/context/profileStitchIdentity
@@ -12,11 +12,11 @@ ProfileStitchIdentity is used to clearly distinguish Profile Stitching from mult
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/profilestitchidentity.schema.json](context/profilestitchidentity.schema.json) |
 ## Schema Hierarchy
 
-* Identity `https://ns.adobe.com/xdm/context/profileStitchIdentity`
+* Profile Stitch Identity `https://ns.adobe.com/xdm/context/profileStitchIdentity`
   * [Namespace](namespace.schema.md) `https://ns.adobe.com/xdm/context/namespace`
 
 
-## Identity Example
+## Profile Stitch Identity Example
 ```json
 {
   "@id": "https://data.adobe.io/entities/profileStitchIdentity/1",
@@ -26,13 +26,13 @@ ProfileStitchIdentity is used to clearly distinguish Profile Stitching from mult
 }
 ```
 
-# Identity Properties
+# Profile Stitch Identity Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Identity (this schema) |
-| [xdm:namespace](#xdmnamespace) | Namespace | Optional | Identity (this schema) |
-| [xdm:xid](#xdmxid) | `string` | Optional | Identity (this schema) |
+| [@id](#@id) | `string` | Optional | Profile Stitch Identity (this schema) |
+| [xdm:namespace](#xdmnamespace) | Namespace | Optional | Profile Stitch Identity (this schema) |
+| [xdm:xid](#xdmxid) | `string` | Optional | Profile Stitch Identity (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id

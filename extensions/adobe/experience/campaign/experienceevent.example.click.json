@@ -80,6 +80,6 @@
     "xdm:label": "XDM information"
   },
   "https://ns.adobe.com/experience/campaign/orchestration": {
-    "xdm:businessReason": "store-entry-beacon-triggered"
+    "xdm:eventID": "store-entry-beacon-triggered"
   }
 }

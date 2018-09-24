@@ -18,7 +18,7 @@
           "title": "Synchronized segments",
           "type": "array",
           "items": {
-            "$ref": 
+            "$ref":
               "https://ns.adobe.com/experience/adcloud/syncedremarketingaudience"
           },
           "description": "List of Search retargeting entities"

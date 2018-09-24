@@ -9,8 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Adcloud partner data",
   "type": "object",
-  "description":
-    "Details about AdCloud partners.",
+  "description": "Details about AdCloud partners.",
   "definitions": {
     "partnerdata": {
       "properties": {

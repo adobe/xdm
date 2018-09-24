@@ -14,7 +14,7 @@
   "definitions": {
     "syncedremarketingaudience": {
       "properties": {
-        "xdm:id": {
+        "xdm:segmentID": {
           "title": "Segment ID",
           "type": "string",
           "description":

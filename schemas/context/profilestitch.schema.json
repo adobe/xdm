@@ -31,6 +31,12 @@
           },
           "minItems": 1,
           "description": "Array of Identities. Condensed, normalized encapsulation of all end user identifiers."
+        },
+        "xdm:endUserIDs": {
+          "meta:status": "deprecated",
+          "title": "End User IDs",
+          "$ref": "https://ns.adobe.com/xdm/context/enduserids",
+          "description": "Condensed, normalized encapsulation of all end user identifiers. Deprecated"
         }
       }
     }

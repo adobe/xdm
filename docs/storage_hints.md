@@ -1,14 +1,14 @@
 # Storage in XDM
 
-While expressed using JSON Schema, XDM is intended to be an abstract model for data that might be physcially stored or transmitted in any number of ways depending on the technology in use and the needs of the application.
+While expressed using JSON Schema, XDM is intended to be an abstract model for data that might be physically stored or transmitted in any number of ways depending on the technology in use and the needs of the application.
 
 In some cases, it is useful to annotate schemas with hints as to the expected use of a property so that applications can choose the most appropriate mechanism for storage.
 
-A specific case where this is useful is for representing keyed "maps" in XDM, which are objects for which the set of property keys is not fully known at schema authoring time. See below for details.
+A specific case where this is useful is for representing keyed "maps" in XDM, which are objects for which the set of property keys are not fully known at schema authoring time. See below for details.
 
 ## Storing Objects as Maps in XDM
 
-The XDM abstract model for data inherits several properties from JSON and JSON Schema, including the its basic type system. One ramification of this is that objects in XDM are semantically equivalent to maps. In XDM, objects are defined as maps from a valid JSON-LD property (a full URI, a compact URI, they keyword `@id`, `@type`, etc) to any XDM-defined value.
+The XDM abstract model for data inherits several properties from JSON and JSON Schema, including the basic type system. One ramification of this is that objects in XDM are semantically equivalent to maps. In XDM, objects are defined as maps from a valid JSON-LD property (a full URI, a compact URI, the keywords `@id`, `@type`, etc.) to any XDM-defined value.
 
 One limitation of the equivalence of objects and maps in JSON and JSON Schema is that it not possible to know whether a given object definition is intended to describe a fixed set of fields (in other words, the set of keys in constrained), or whether it is intended to describe a map with an unconstrained set of keys. This limitation has serious consequences for systems that store and access XDM data, since storage systems necessarily manage data with a fixed set of fields differently than data with an unconstrained set of fields.
 
@@ -27,11 +27,11 @@ The following example shows a simple model that contains a map property.
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/xdm/example/books",
   "title": "Books",
-  "description": "holds a map book titles, keyed by ISBN"
+  "description": "Holds a map of book titles, keyed by ISBN.",
   "type": "object",
   "properties": {
     "titles": {
-      "description": "a map from book ISBN identifiers to book titles"
+      "description": "A map from book ISBN identifiers to book titles.",
       "type": "object",
       "meta:storageHint": "xdm:storeAsMap",
       "additionalProperties": {

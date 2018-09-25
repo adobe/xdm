@@ -13,7 +13,7 @@ Details about the ids that were joined by profile stitching.
 ## Schema Hierarchy
 
 * Profile Stitch `https://ns.adobe.com/xdm/context/profileStitch`
-  * [Identity](profilestitchidentity.schema.md) `https://ns.adobe.com/xdm/context/profileStitchIdentity`
+  * [Profile Stitch Identity](profilestitchidentity.schema.md) `https://ns.adobe.com/xdm/context/profileStitchIdentity`
 
 
 ## Profile Stitch Example
@@ -46,7 +46,7 @@ Details about the ids that were joined by profile stitching.
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [xdm:identities](#xdmidentities) | Identity | Optional | Profile Stitch (this schema) |
-| [xdm:profileStitchID](#xdmprofilestitchid) | Identity | Optional | Profile Stitch (this schema) |
+| [xdm:profileStitchID](#xdmprofilestitchid) | Profile Stitch Identity | Optional | Profile Stitch (this schema) |
 | [xdm:version](#xdmversion) | `string` | Optional | Profile Stitch (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -83,13 +83,13 @@ The identity of the segment or snapshot definition in with the domain of the spe
 
 `xdm:profileStitchID`
 * is optional
-* type: Identity
+* type: Profile Stitch Identity
 * defined in this schema
 
 ### xdm:profileStitchID Type
 
 
-* [Identity](profilestitchidentity.schema.md) – `https://ns.adobe.com/xdm/context/profileStitchIdentity`
+* [Profile Stitch Identity](profilestitchidentity.schema.md) – `https://ns.adobe.com/xdm/context/profileStitchIdentity`
 
 
 

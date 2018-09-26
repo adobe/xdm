@@ -21,7 +21,8 @@
             "$ref":
               "https://ns.adobe.com/experience/adcloud/syncedremarketingaudience"
           },
-          "description": "List of Search retargeting entities"
+          "description":
+            "List of Search retargeting entities that have been synced with the adCloud partner to build audiences on the platform, e.g. RLSA for Google, WCA for Facebook"
         }
       }
     }

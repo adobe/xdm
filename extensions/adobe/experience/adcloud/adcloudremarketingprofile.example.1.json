@@ -101,12 +101,12 @@
       "xdm:timestamp": "2018-08-07T08:06:34.672Z",
       "xdm:partnerDetails": [
         {
-          "xdm:id": 2,
+          "xdm:id": "2",
           "xdm:data": "sample-conversion-id-123"
         },
 
         {
-          "xdm:id": 1,
+          "xdm:id": "1",
           "xdm:data": "sample-conversion-id-124"
         }
       ]
@@ -118,12 +118,12 @@
       "xdm:timestamp": "2018-08-07T08:06:34.672Z",
       "xdm:partnerDetails": [
         {
-          "xdm:id": 2,
+          "xdm:id": "2",
           "xdm:data": "sample-conversion-id-125"
         },
 
         {
-          "xdm:id": 1,
+          "xdm:id": "1",
           "xdm:data": "sample-conversion-id-126"
         }
       ]

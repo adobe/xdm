@@ -15,7 +15,7 @@
       "properties": {
         "xdm:id": {
           "title": "Search/Marketing partner ID",
-          "type": "int",
+          "type": "string",
           "description":
             "Internal mapping of search/marketing platforms/partners to IDs for Adcloud Search."
         },

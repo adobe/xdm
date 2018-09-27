@@ -28,6 +28,7 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
   * [Experience Channel](../channels/channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
   * [Advertising](advertising.schema.md) `https://ns.adobe.com/xdm/context/advertising`
   * [Media Information](media.schema.md) `https://ns.adobe.com/xdm/context/media`
+  * [Profile Stitch](profilestitch.schema.md) `https://ns.adobe.com/xdm/context/profileStitch`
 
 
 ## ExperienceEvent Examples
@@ -149,7 +150,7 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
   "xdm:marketing": {
     "xdm:trackingCode": "marketingcampaign111"
   },
-  "xdm:profileStitching": [
+  "xdm:profileStitch": [
     {
       "xdm:profileStitchID": {
         "@id": "https://data.adobe.io/entities/profileStitchIdentity/1",
@@ -200,6 +201,86 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
       }
     }
   ]
+}
+```
+
+```json
+{
+  "@id": "https://data.adobe.io/experienceid-2345678",
+  "xdm:dataSource": {
+    "@id": "https://data.adobe.io/datasources/datasource-123",
+    "xdm:code": "DataSourceIntegrationCode-123"
+  },
+  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+  "xdm:endUserIDs": {
+    "https://ns.adobe.com/experience/mcid": {
+      "xdm:id": "92312748749128",
+      "xdm:namespace": {
+        "@id": "https://data.adobe.io/entities/namespace/4",
+        "xdm:code": "ECID"
+      }
+    }
+  },
+  "xdm:environment": {
+    "xdm:type": "browser",
+    "xdm:browserDetails": {
+      "xdm:name": "Chrome",
+      "xdm:version": "63.0.3239",
+      "xdm:acceptLanguage": "en",
+      "xdm:cookiesEnabled": true,
+      "xdm:viewportHeight": 900,
+      "xdm:viewportWidth": 1680
+    },
+    "xdm:operatingSystem": "MAC OS",
+    "xdm:operatingSystemVersion": "10.13",
+    "xdm:connectionType": "cable"
+  },
+  "xdm:locationContext": {
+    "xdm:geo": {
+      "xdm:countryCode": "US",
+      "xdm:stateProvince": "CA",
+      "xdm:city": "Emeryville",
+      "xdm:dmaid": "99"
+    }
+  },
+  "xdm:web": {
+    "xdm:webPageView": {
+      "xdm:URL": "https://www.example.com"
+    },
+    "xdm:webReferrer": {
+      "xdm:URL": "https://www.examplereferrer.com/",
+      "xdm:domain": "examplereferrer.com"
+    }
+  },
+  "xdm:device": {
+    "xdm:type": "mobile",
+    "xdm:manufacturer": "Apple",
+    "xdm:model": "iPhone 6"
+  },
+  "xdm:advertising": {
+    "xdm:adViewability": {
+      "xdm:adUnitDepth": 0,
+      "xdm:viewportHeight": 1250,
+      "xdm:viewportWidth": 1600,
+      "xdm:adHeight": 250,
+      "xdm:adWidth": 300,
+      "xdm:playerVolume": 85,
+      "xdm:measurementEligible": true,
+      "xdm:implementationDetails": {
+        "xdm:name": "https://ns.adobe.com/experience/adcloud/viewability",
+        "xdm:version": "1"
+      },
+      "xdm:viewable": true,
+      "xdm:activeWindow": true,
+      "xdm:percentViewable": 89,
+      "xdm:viewableFirstQuartile": {
+        "xdm:value": 1
+      }
+    },
+    "xdm:firstQuartiles": {
+      "xdm:value": 1
+    }
+  }
 }
 ```
 
@@ -302,86 +383,6 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
         }
       }
     ],
-    "xdm:type": "browser",
-    "xdm:browserDetails": {
-      "xdm:name": "Chrome",
-      "xdm:version": "63.0.3239",
-      "xdm:acceptLanguage": "en",
-      "xdm:cookiesEnabled": true,
-      "xdm:viewportHeight": 900,
-      "xdm:viewportWidth": 1680
-    },
-    "xdm:operatingSystem": "MAC OS",
-    "xdm:operatingSystemVersion": "10.13",
-    "xdm:connectionType": "cable"
-  },
-  "xdm:locationContext": {
-    "xdm:geo": {
-      "xdm:countryCode": "US",
-      "xdm:stateProvince": "CA",
-      "xdm:city": "Emeryville",
-      "xdm:dmaid": "99"
-    }
-  },
-  "xdm:web": {
-    "xdm:webPageView": {
-      "xdm:URL": "https://www.example.com"
-    },
-    "xdm:webReferrer": {
-      "xdm:URL": "https://www.examplereferrer.com/",
-      "xdm:domain": "examplereferrer.com"
-    }
-  },
-  "xdm:device": {
-    "xdm:type": "mobile",
-    "xdm:manufacturer": "Apple",
-    "xdm:model": "iPhone 6"
-  },
-  "xdm:advertising": {
-    "xdm:adViewability": {
-      "xdm:adUnitDepth": 0,
-      "xdm:viewportHeight": 1250,
-      "xdm:viewportWidth": 1600,
-      "xdm:adHeight": 250,
-      "xdm:adWidth": 300,
-      "xdm:playerVolume": 85,
-      "xdm:measurementEligible": true,
-      "xdm:implementationDetails": {
-        "xdm:name": "https://ns.adobe.com/experience/adcloud/viewability",
-        "xdm:version": "1"
-      },
-      "xdm:viewable": true,
-      "xdm:activeWindow": true,
-      "xdm:percentViewable": 89,
-      "xdm:viewableFirstQuartile": {
-        "xdm:value": 1
-      }
-    },
-    "xdm:firstQuartiles": {
-      "xdm:value": 1
-    }
-  }
-}
-```
-
-```json
-{
-  "@id": "https://data.adobe.io/experienceid-2345678",
-  "xdm:dataSource": {
-    "@id": "https://data.adobe.io/datasources/datasource-123",
-    "xdm:code": "DataSourceIntegrationCode-123"
-  },
-  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
-  "xdm:endUserIDs": {
-    "https://ns.adobe.com/experience/mcid": {
-      "xdm:id": "92312748749128",
-      "xdm:namespace": {
-        "@id": "https://data.adobe.io/entities/namespace/4",
-        "xdm:code": "ECID"
-      }
-    }
-  },
-  "xdm:environment": {
     "xdm:type": "browser",
     "xdm:browserDetails": {
       "xdm:name": "Chrome",
@@ -822,6 +823,7 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
 | [xdm:media](#xdmmedia) | Media Information | Optional | ExperienceEvent (this schema) |
 | [xdm:placeContext](#xdmplacecontext) | Place Context | Optional | ExperienceEvent (this schema) |
 | [xdm:productListItems](#xdmproductlistitems) | Product List Item | Optional | ExperienceEvent (this schema) |
+| [xdm:profileStitch](#xdmprofilestitch) | Profile Stitch | Optional | ExperienceEvent (this schema) |
 | [xdm:profileStitching](#xdmprofilestitching) | Profile Stitch | Optional | ExperienceEvent (this schema) |
 | [xdm:receivedTimestamp](#xdmreceivedtimestamp) | `string` | Optional | ExperienceEvent (this schema) |
 | [xdm:search](#xdmsearch) | Search | Optional | ExperienceEvent (this schema) |
@@ -1105,18 +1107,18 @@ All items must be of the type:
 
 
 
-## xdm:profileStitching
-### Profile Stitching
+## xdm:profileStitch
+### Profile Stitch
 
 Details about the ids that were joined by profile stitching.
 
-`xdm:profileStitching`
+`xdm:profileStitch`
 * is optional
 * type: Profile Stitch
 
 * defined in this schema
 
-### xdm:profileStitching Type
+### xdm:profileStitch Type
 
 
 Array type: Profile Stitch
@@ -1126,6 +1128,25 @@ All items must be of the type:
 
 
 
+
+
+
+
+
+## xdm:profileStitching
+### Profile Stitching
+
+Details about the ids that were joined by profile stitching. Deprecated, use `xdm:profileStitch`
+
+`xdm:profileStitching`
+* is optional
+* type: Profile Stitch
+* defined in this schema
+
+### xdm:profileStitching Type
+
+
+* [Profile Stitch](profilestitch.schema.md) – `https://ns.adobe.com/xdm/context/profileStitch`
 
 
 

@@ -47,8 +47,6 @@ Merged Pull Requests
 * #474 Minor refactor of segment membership schemas to be more tool friendly
 * #475 Make experience schemas xed convertable for 0.9.9.4 release
 
-* #458 Change `context\pushNotificationToken` to `context\notificationSubscription` and add support for more general notifications.
-
 ## Release 0.9.3
 
 [Released on July 16, 2018](https://github.com/adobe/xdm/releases/tag/v0.9.3)

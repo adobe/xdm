@@ -22,7 +22,7 @@
         },
         "xdm:type": {
           "title": "Segment/Audience type",
-          "type": "int",
+          "type": "integer",
           "description": "Type of segment, eg. AAM."
         },
         "xdm:timestamp": {
@@ -36,7 +36,7 @@
           "title": "Marketing Partner Details",
           "type": "array",
           "items": {
-            "$ref": "https://ns.adobe.com/xdm/experience/adcloud/partnerdata"
+            "$ref": "https://ns.adobe.com/experience/adcloud/partnerdata"
           }
         }
       }

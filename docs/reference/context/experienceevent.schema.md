@@ -28,6 +28,7 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
   * [Experience Channel](../channels/channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
   * [Advertising](advertising.schema.md) `https://ns.adobe.com/xdm/context/advertising`
   * [Media Information](media.schema.md) `https://ns.adobe.com/xdm/context/media`
+  * [Profile Stitch](profilestitch.schema.md) `https://ns.adobe.com/xdm/context/profileStitch`
 
 
 ## ExperienceEvent Examples
@@ -149,7 +150,7 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
   "xdm:marketing": {
     "xdm:trackingCode": "marketingcampaign111"
   },
-  "xdm:profileStitching": [
+  "xdm:profileStitch": [
     {
       "xdm:profileStitchID": {
         "@id": "https://data.adobe.io/entities/profileStitchIdentity/1",
@@ -446,110 +447,6 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
 
 ```json
 {
-  "@id": "https://data.adobe.io/experienceid-123458",
-  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
-  "xdm:endUserIDs": {
-    "https://ns.adobe.com/experience/mcid": {
-      "@id": "https://data.adobe.io/entities/identity/92312748749128",
-      "xdm:namespace": {
-        "xdm:code": "ECID"
-      }
-    },
-    "https://ns.adobe.com/experience/aaid": {
-      "@id": "https://data.adobe.io/entities/identity/2394509340-30453470347",
-      "xdm:namespace": {
-        "xdm:code": "AVID"
-      }
-    }
-  },
-  "xdm:environment": {
-    "xdm:browserDetails": {
-      "xdm:userAgent": "AppleWebkit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
-    },
-    "xdm:ipV4": "97.27.143.5"
-  },
-  "xdm:media": {
-    "xdm:mediaTimed": {
-      "xdm:primaryAssetReference": {
-        "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234430",
-        "dc:title": "Floki Begs Helga for Freedom",
-        "xmpDM:duration": 87,
-        "iptc4xmpExt:Series": {
-          "iptc4xmpExt:Name": "nba_highlights",
-          "iptc4xmpExt:Identifier": "http://espn.com/series-identifiers/2613953"
-        },
-        "xdm:showType": "episode",
-        "xdm:streamFormat": "long",
-        "iptc4xmpExt:Season": {
-          "iptc4xmpExt:Number": 1
-        },
-        "iptc4xmpExt:Episode": {
-          "iptc4xmpExt:Number": 1
-        },
-        "iptc4xmpExt:Genre": [
-          "sports"
-        ],
-        "iptc4xmpExt:Rating": [
-          {
-            "iptc4xmpExt:RatingValue": "TV14",
-            "iptc4xmpExt:RatingSourceLink": "http://www.tvguidelines.org/ratings.htm"
-          }
-        ],
-        "iptc4xmpExt:Creator": [
-          {
-            "iptc4xmpExt:Name": "ESPN"
-          }
-        ]
-      },
-      "xdm:primaryAssetViewDetails": {
-        "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114230",
-        "xdm:playerName": "watchespn",
-        "xdm:broadcastChannel": "WatchESPN",
-        "xdm:broadcastContentType": "VOD",
-        "xdm:streamFormat": "short",
-        "xdm:playerSDKVersion": {
-          "xdm:version": "1.0.8"
-        },
-        "xdm:broadcastNetwork": "nbcu",
-        "xdm:adLoadType": "2",
-        "xdm:sourceFeed": "http%3A%2F%2Fvod01.pure.centurylink.net%2Fhls%2Fvu%2F9083406%2FVUBX0280890106690980_38_3_M_HD.m3u8",
-        "xdm:sessionTimeout": 1800
-      }
-    }
-  },
-  "xdm:advertising": {
-    "xdm:adAssetReference": {
-      "@id": "https://data.adobe.io/entities/ad-id/AD1",
-      "dc:title": "adNumber1",
-      "xmpDM:duration": 10
-    },
-    "xdm:adAssetViewDetails": {
-      "xdm:playerName": "miniTestApp",
-      "xdm:index": 0,
-      "xdm:adBreak": {
-        "@id": "https://data.adobe.io/entities/ad-break/f40353618c5c11311f584e53c78654b9_0",
-        "dc:title": "Mid-Roll",
-        "xdm:offset": 44
-      }
-    },
-    "xdm:impressions": {
-      "xdm:value": 1
-    },
-    "xdm:completes": {
-      "xdm:value": 1
-    },
-    "xdm:timePlayed": {
-      "xdm:value": 10
-    },
-    "xdm:federated": {
-      "xdm:value": 0
-    }
-  }
-}
-```
-
-```json
-{
   "@id": "https://data.adobe.io/experienceid-123457",
   "xdm:timestamp": "2017-09-26T15:52:25+00:00",
   "xdm:endUserIDs": {
@@ -706,6 +603,110 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
 
 ```json
 {
+  "@id": "https://data.adobe.io/experienceid-123458",
+  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+  "xdm:endUserIDs": {
+    "https://ns.adobe.com/experience/mcid": {
+      "@id": "https://data.adobe.io/entities/identity/92312748749128",
+      "xdm:namespace": {
+        "xdm:code": "ECID"
+      }
+    },
+    "https://ns.adobe.com/experience/aaid": {
+      "@id": "https://data.adobe.io/entities/identity/2394509340-30453470347",
+      "xdm:namespace": {
+        "xdm:code": "AVID"
+      }
+    }
+  },
+  "xdm:environment": {
+    "xdm:browserDetails": {
+      "xdm:userAgent": "AppleWebkit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "xdm:ipV4": "97.27.143.5"
+  },
+  "xdm:media": {
+    "xdm:mediaTimed": {
+      "xdm:primaryAssetReference": {
+        "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234430",
+        "dc:title": "Floki Begs Helga for Freedom",
+        "xmpDM:duration": 87,
+        "iptc4xmpExt:Series": {
+          "iptc4xmpExt:Name": "nba_highlights",
+          "iptc4xmpExt:Identifier": "http://espn.com/series-identifiers/2613953"
+        },
+        "xdm:showType": "episode",
+        "xdm:streamFormat": "long",
+        "iptc4xmpExt:Season": {
+          "iptc4xmpExt:Number": 1
+        },
+        "iptc4xmpExt:Episode": {
+          "iptc4xmpExt:Number": 1
+        },
+        "iptc4xmpExt:Genre": [
+          "sports"
+        ],
+        "iptc4xmpExt:Rating": [
+          {
+            "iptc4xmpExt:RatingValue": "TV14",
+            "iptc4xmpExt:RatingSourceLink": "http://www.tvguidelines.org/ratings.htm"
+          }
+        ],
+        "iptc4xmpExt:Creator": [
+          {
+            "iptc4xmpExt:Name": "ESPN"
+          }
+        ]
+      },
+      "xdm:primaryAssetViewDetails": {
+        "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114230",
+        "xdm:playerName": "watchespn",
+        "xdm:broadcastChannel": "WatchESPN",
+        "xdm:broadcastContentType": "VOD",
+        "xdm:streamFormat": "short",
+        "xdm:playerSDKVersion": {
+          "xdm:version": "1.0.8"
+        },
+        "xdm:broadcastNetwork": "nbcu",
+        "xdm:adLoadType": "2",
+        "xdm:sourceFeed": "http%3A%2F%2Fvod01.pure.centurylink.net%2Fhls%2Fvu%2F9083406%2FVUBX0280890106690980_38_3_M_HD.m3u8",
+        "xdm:sessionTimeout": 1800
+      }
+    }
+  },
+  "xdm:advertising": {
+    "xdm:adAssetReference": {
+      "@id": "https://data.adobe.io/entities/ad-id/AD1",
+      "dc:title": "adNumber1",
+      "xmpDM:duration": 10
+    },
+    "xdm:adAssetViewDetails": {
+      "xdm:playerName": "miniTestApp",
+      "xdm:index": 0,
+      "xdm:adBreak": {
+        "@id": "https://data.adobe.io/entities/ad-break/f40353618c5c11311f584e53c78654b9_0",
+        "dc:title": "Mid-Roll",
+        "xdm:offset": 44
+      }
+    },
+    "xdm:impressions": {
+      "xdm:value": 1
+    },
+    "xdm:completes": {
+      "xdm:value": 1
+    },
+    "xdm:timePlayed": {
+      "xdm:value": 10
+    },
+    "xdm:federated": {
+      "xdm:value": 0
+    }
+  }
+}
+```
+
+```json
+{
   "@id": "https://data.adobe.io/experienceid-123459",
   "xdm:timestamp": "2017-09-26T15:52:25+00:00",
   "xdm:endUserIDs": {
@@ -822,6 +823,7 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
 | [xdm:media](#xdmmedia) | Media Information | Optional | ExperienceEvent (this schema) |
 | [xdm:placeContext](#xdmplacecontext) | Place Context | Optional | ExperienceEvent (this schema) |
 | [xdm:productListItems](#xdmproductlistitems) | Product List Item | Optional | ExperienceEvent (this schema) |
+| [xdm:profileStitch](#xdmprofilestitch) | Profile Stitch | Optional | ExperienceEvent (this schema) |
 | [xdm:profileStitching](#xdmprofilestitching) | Profile Stitch | Optional | ExperienceEvent (this schema) |
 | [xdm:receivedTimestamp](#xdmreceivedtimestamp) | `string` | Optional | ExperienceEvent (this schema) |
 | [xdm:search](#xdmsearch) | Search | Optional | ExperienceEvent (this schema) |
@@ -1105,18 +1107,18 @@ All items must be of the type:
 
 
 
-## xdm:profileStitching
-### Profile Stitching
+## xdm:profileStitch
+### Profile Stitch
 
 Details about the ids that were joined by profile stitching.
 
-`xdm:profileStitching`
+`xdm:profileStitch`
 * is optional
 * type: Profile Stitch
 
 * defined in this schema
 
-### xdm:profileStitching Type
+### xdm:profileStitch Type
 
 
 Array type: Profile Stitch
@@ -1126,6 +1128,25 @@ All items must be of the type:
 
 
 
+
+
+
+
+
+## xdm:profileStitching
+### Profile Stitching
+
+Details about the ids that were joined by profile stitching. Deprecated, use `xdm:profileStitch`
+
+`xdm:profileStitching`
+* is optional
+* type: Profile Stitch
+* defined in this schema
+
+### xdm:profileStitching Type
+
+
+* [Profile Stitch](profilestitch.schema.md) – `https://ns.adobe.com/xdm/context/profileStitch`
 
 
 

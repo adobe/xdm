@@ -14,6 +14,7 @@ Details about the ids that were joined by profile stitching.
 
 * Profile Stitch `https://ns.adobe.com/xdm/context/profileStitch`
   * [Profile Stitch Identity](profilestitchidentity.schema.md) `https://ns.adobe.com/xdm/context/profileStitchIdentity`
+  * [End User IDs](enduserids.schema.md) `https://ns.adobe.com/xdm/context/enduserids`
 
 
 ## Profile Stitch Example
@@ -45,10 +46,30 @@ Details about the ids that were joined by profile stitching.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
+| [xdm:endUserIDs](#xdmenduserids) | End User IDs | Optional | Profile Stitch (this schema) |
 | [xdm:identities](#xdmidentities) | Identity | Optional | Profile Stitch (this schema) |
 | [xdm:profileStitchID](#xdmprofilestitchid) | Profile Stitch Identity | Optional | Profile Stitch (this schema) |
 | [xdm:version](#xdmversion) | `string` | Optional | Profile Stitch (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
+
+## xdm:endUserIDs
+### End User IDs
+
+Condensed, normalized encapsulation of all end user identifiers. Deprecated
+
+`xdm:endUserIDs`
+* is optional
+* type: End User IDs
+* defined in this schema
+
+### xdm:endUserIDs Type
+
+
+* [End User IDs](enduserids.schema.md) – `https://ns.adobe.com/xdm/context/enduserids`
+
+
+
+
 
 ## xdm:identities
 ### All User Identities

@@ -22,7 +22,7 @@
             "properties": {
                 "@id": {
                     "type": "string",
-                    "format": "uri",
+                    "format": "uri-reference",
                     "description": "A unique identifier given to every addressable piece of content in a given repository."
                 },
                 "xdm:repositoryCreatedBy": {

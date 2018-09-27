@@ -73,12 +73,13 @@
   },
   "https://ns.adobe.com/experience/campaign/link": {
     "xdm:id": "98765",
-    "xdm:url": "https://newsletters.adobe.com/newsletter/101/mastering-xdm.html",
+    "xdm:url":
+      "https://newsletters.adobe.com/newsletter/101/mastering-xdm.html",
     "xdm:occurrence": 2,
     "xdm:category": "Promotional Links",
     "xdm:label": "XDM information"
   },
   "https://ns.adobe.com/experience/campaign/orchestration": {
-    "xdm:businessReason": "store-entry-beacon-triggered"
+    "xdm:eventID": "store-entry-beacon-triggered"
   }
 }

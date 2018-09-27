@@ -10,7 +10,7 @@ The Datasource acts as a namespace or unique identifier associated with a collec
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | Yes | Forbidden | Permitted | [data/datasource.schema.json](data/datasource.schema.json) |
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/datasource.schema.json](data/datasource.schema.json) |
 
 ## Data Source Example
 ```json
@@ -44,7 +44,7 @@ The unique ID of this data source. This would be provided by the individual or s
 
 
 `string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
 
 
 

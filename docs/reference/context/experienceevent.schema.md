@@ -9,7 +9,7 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | Yes | Forbidden | Permitted | [context/experienceevent.schema.json](context/experienceevent.schema.json) |
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/experienceevent.schema.json](context/experienceevent.schema.json) |
 ## Schema Hierarchy
 
 * ExperienceEvent `https://ns.adobe.com/xdm/context/experienceevent`
@@ -28,6 +28,7 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
   * [Experience Channel](../channels/channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
   * [Advertising](advertising.schema.md) `https://ns.adobe.com/xdm/context/advertising`
   * [Media Information](media.schema.md) `https://ns.adobe.com/xdm/context/media`
+  * [Profile Stitch](profilestitch.schema.md) `https://ns.adobe.com/xdm/context/profileStitch`
 
 
 ## ExperienceEvent Examples
@@ -148,7 +149,58 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
   },
   "xdm:marketing": {
     "xdm:trackingCode": "marketingcampaign111"
-  }
+  },
+  "xdm:profileStitch": [
+    {
+      "xdm:profileStitchID": {
+        "@id": "https://data.adobe.io/entities/profileStitchIdentity/1",
+        "xdm:namespace": {
+          "xdm:code": "AAM"
+        }
+      },
+      "xdm:version": "1.0",
+      "xdm:identities": [
+        {
+          "xdm:id": "92312748749128",
+          "xdm:namespace": {
+            "xdm:code": "ECID"
+          }
+        },
+        {
+          "xdm:id": "62312748749321",
+          "xdm:namespace": {
+            "xdm:code": "ECID"
+          }
+        },
+        {
+          "xdm:id": "49312748749132",
+          "xdm:namespace": {
+            "xdm:code": "ECID"
+          }
+        }
+      ]
+    }
+  ],
+  "xdm:segmentMemberships": [
+    {
+      "xdm:segmentID": {
+        "@id": "https://data.adobe.io/entities/identity/92312748749128",
+        "xdm:namespace": {
+          "xdm:code": "AAM"
+        }
+      },
+      "xdm:profileStitchID": {
+        "@id": "https://data.adobe.io/entities/profileStitchIdentity/1",
+        "xdm:namespace": {
+          "xdm:code": "AAM"
+        },
+        "xdm:lastQualificationTime": "2017-09-26T15:52:25+00:00",
+        "xdm:version": "1.0",
+        "xdm:validUntil": "2017-12-26T15:52:25+00:00",
+        "xdm:status": "realized"
+      }
+    }
+  ]
 }
 ```
 
@@ -395,6 +447,162 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
 
 ```json
 {
+  "@id": "https://data.adobe.io/experienceid-123457",
+  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+  "xdm:endUserIDs": {
+    "https://ns.adobe.com/experience/mcid": {
+      "@id": "https://data.adobe.io/entities/identity/92312748749128",
+      "xdm:namespace": {
+        "xdm:code": "ECID"
+      }
+    },
+    "https://ns.adobe.com/experience/aaid": {
+      "@id": "https://data.adobe.io/entities/identity/2394509340-30453470347",
+      "xdm:namespace": {
+        "xdm:code": "AVID"
+      }
+    }
+  },
+  "xdm:environment": {
+    "xdm:browserDetails": {
+      "xdm:userAgent": "AppleWebkit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "xdm:ipV4": "97.27.143.5"
+  },
+  "xdm:media": {
+    "xdm:mediaTimed": {
+      "xdm:primaryAssetReference": {
+        "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234430",
+        "dc:title": "Floki Begs Helga for Freedom",
+        "xmpDM:duration": 87,
+        "iptc4xmpExt:Series": {
+          "iptc4xmpExt:Name": "nba_highlights",
+          "iptc4xmpExt:Identifier": "http://espn.com/series-identifiers/2613953"
+        },
+        "xdm:showType": "episode",
+        "xdm:streamFormat": "long",
+        "iptc4xmpExt:Season": {
+          "iptc4xmpExt:Number": 1
+        },
+        "iptc4xmpExt:Episode": {
+          "iptc4xmpExt:Number": 1
+        },
+        "iptc4xmpExt:Genre": [
+          "sports"
+        ],
+        "iptc4xmpExt:Rating": [
+          {
+            "iptc4xmpExt:RatingValue": "TV14",
+            "iptc4xmpExt:RatingSourceLink": "http://www.tvguidelines.org/ratings.htm"
+          }
+        ],
+        "iptc4xmpExt:Creator": [
+          {
+            "iptc4xmpExt:Name": "ESPN"
+          }
+        ]
+      },
+      "xdm:primaryAssetViewDetails": {
+        "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114230",
+        "xdm:playerName": "watchespn",
+        "xdm:broadcastChannel": "WatchESPN",
+        "xdm:broadcastContentType": "VOD",
+        "xdm:streamFormat": "short",
+        "xdm:playerSDKVersion": {
+          "xdm:version": "1.0.8"
+        },
+        "xdm:broadcastNetwork": "nbcu",
+        "xdm:adLoadType": "2",
+        "xdm:sourceFeed": "http%3A%2F%2Fvod01.pure.centurylink.net%2Fhls%2Fvu%2F9083406%2FVUBX0280890106690980_38_3_M_HD.m3u8",
+        "xdm:sessionTimeout": 1800,
+        "xdm:QOE": {
+          "xdm:errors": {
+            "xdm:value": 0
+          },
+          "xdm:buffers": {
+            "xdm:value": 4
+          },
+          "xdm:bufferTime": {
+            "xdm:value": 5
+          },
+          "xdm:stalls": {
+            "xdm:value": 0
+          },
+          "xdm:stallTime": {
+            "xdm:value": 0
+          },
+          "xdm:bitrateChanges": {
+            "xdm:value": 0
+          },
+          "xdm:bitrateAverage": {
+            "xdm:value": 320
+          },
+          "xdm:droppedFrames": {
+            "xdm:value": 2
+          },
+          "xdm:timeToStart": {
+            "xdm:value": 3
+          },
+          "xdm:mediaSdkErrors": "300,500.300.200",
+          "xdm:playerSdkErrors": "custom.error.code",
+          "xdm:externalSdkErrors": "100-5,11.12"
+        }
+      },
+      "xdm:impressions": {
+        "xdm:value": 1
+      },
+      "xdm:completes": {
+        "xdm:value": 0
+      },
+      "xdm:timePlayed": {
+        "xdm:value": 80
+      },
+      "xdm:federated": {
+        "xdm:value": 0
+      },
+      "xdm:starts": {
+        "xdm:value": 1
+      },
+      "xdm:mediaSegmentView": {
+        "xdm:value": 1
+      },
+      "xdm:dropBeforeStart": {
+        "xdm:value": 0
+      },
+      "xdm:totalTimePlayed": {
+        "xdm:value": 190
+      },
+      "xdm:progress10": {
+        "xdm:value": 1
+      },
+      "xdm:firstQuartiles": {
+        "xdm:value": 1
+      },
+      "xdm:midpoints": {
+        "xdm:value": 1
+      },
+      "xdm:thirdQuartiles": {
+        "xdm:value": 1
+      },
+      "xdm:progress95": {
+        "xdm:value": 0
+      },
+      "xdm:resumes": {
+        "xdm:value": 0
+      },
+      "xdm:pauses": {
+        "xdm:value": 0
+      },
+      "xdm:pauseTime": {
+        "xdm:value": 0
+      }
+    }
+  }
+}
+```
+
+```json
+{
   "@id": "https://data.adobe.io/experienceid-123458",
   "xdm:timestamp": "2017-09-26T15:52:25+00:00",
   "xdm:endUserIDs": {
@@ -596,162 +804,6 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
 }
 ```
 
-```json
-{
-  "@id": "https://data.adobe.io/experienceid-123457",
-  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
-  "xdm:endUserIDs": {
-    "https://ns.adobe.com/experience/mcid": {
-      "@id": "https://data.adobe.io/entities/identity/92312748749128",
-      "xdm:namespace": {
-        "xdm:code": "ECID"
-      }
-    },
-    "https://ns.adobe.com/experience/aaid": {
-      "@id": "https://data.adobe.io/entities/identity/2394509340-30453470347",
-      "xdm:namespace": {
-        "xdm:code": "AVID"
-      }
-    }
-  },
-  "xdm:environment": {
-    "xdm:browserDetails": {
-      "xdm:userAgent": "AppleWebkit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
-    },
-    "xdm:ipV4": "97.27.143.5"
-  },
-  "xdm:media": {
-    "xdm:mediaTimed": {
-      "xdm:primaryAssetReference": {
-        "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234430",
-        "dc:title": "Floki Begs Helga for Freedom",
-        "xmpDM:duration": 87,
-        "iptc4xmpExt:Series": {
-          "iptc4xmpExt:Name": "nba_highlights",
-          "iptc4xmpExt:Identifier": "http://espn.com/series-identifiers/2613953"
-        },
-        "xdm:showType": "episode",
-        "xdm:streamFormat": "long",
-        "iptc4xmpExt:Season": {
-          "iptc4xmpExt:Number": 1
-        },
-        "iptc4xmpExt:Episode": {
-          "iptc4xmpExt:Number": 1
-        },
-        "iptc4xmpExt:Genre": [
-          "sports"
-        ],
-        "iptc4xmpExt:Rating": [
-          {
-            "iptc4xmpExt:RatingValue": "TV14",
-            "iptc4xmpExt:RatingSourceLink": "http://www.tvguidelines.org/ratings.htm"
-          }
-        ],
-        "iptc4xmpExt:Creator": [
-          {
-            "iptc4xmpExt:Name": "ESPN"
-          }
-        ]
-      },
-      "xdm:primaryAssetViewDetails": {
-        "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114230",
-        "xdm:playerName": "watchespn",
-        "xdm:broadcastChannel": "WatchESPN",
-        "xdm:broadcastContentType": "VOD",
-        "xdm:streamFormat": "short",
-        "xdm:playerSDKVersion": {
-          "xdm:version": "1.0.8"
-        },
-        "xdm:broadcastNetwork": "nbcu",
-        "xdm:adLoadType": "2",
-        "xdm:sourceFeed": "http%3A%2F%2Fvod01.pure.centurylink.net%2Fhls%2Fvu%2F9083406%2FVUBX0280890106690980_38_3_M_HD.m3u8",
-        "xdm:sessionTimeout": 1800,
-        "xdm:QOE": {
-          "xdm:errors": {
-            "xdm:value": 0
-          },
-          "xdm:buffers": {
-            "xdm:value": 4
-          },
-          "xdm:bufferTime": {
-            "xdm:value": 5
-          },
-          "xdm:stalls": {
-            "xdm:value": 0
-          },
-          "xdm:stallTime": {
-            "xdm:value": 0
-          },
-          "xdm:bitrateChanges": {
-            "xdm:value": 0
-          },
-          "xdm:bitrateAverage": {
-            "xdm:value": 320
-          },
-          "xdm:droppedFrames": {
-            "xdm:value": 2
-          },
-          "xdm:timeToStart": {
-            "xdm:value": 3
-          },
-          "xdm:mediaSdkErrors": "300,500.300.200",
-          "xdm:playerSdkErrors": "custom.error.code",
-          "xdm:externalSdkErrors": "100-5,11.12"
-        }
-      },
-      "xdm:impressions": {
-        "xdm:value": 1
-      },
-      "xdm:completes": {
-        "xdm:value": 0
-      },
-      "xdm:timePlayed": {
-        "xdm:value": 80
-      },
-      "xdm:federated": {
-        "xdm:value": 0
-      },
-      "xdm:starts": {
-        "xdm:value": 1
-      },
-      "xdm:mediaSegmentView": {
-        "xdm:value": 1
-      },
-      "xdm:dropBeforeStart": {
-        "xdm:value": 0
-      },
-      "xdm:totalTimePlayed": {
-        "xdm:value": 190
-      },
-      "xdm:progress10": {
-        "xdm:value": 1
-      },
-      "xdm:firstQuartiles": {
-        "xdm:value": 1
-      },
-      "xdm:midpoints": {
-        "xdm:value": 1
-      },
-      "xdm:thirdQuartiles": {
-        "xdm:value": 1
-      },
-      "xdm:progress95": {
-        "xdm:value": 0
-      },
-      "xdm:resumes": {
-        "xdm:value": 0
-      },
-      "xdm:pauses": {
-        "xdm:value": 0
-      },
-      "xdm:pauseTime": {
-        "xdm:value": 0
-      }
-    }
-  }
-}
-```
-
 
 # ExperienceEvent Properties
 
@@ -771,8 +823,11 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
 | [xdm:media](#xdmmedia) | Media Information | Optional | ExperienceEvent (this schema) |
 | [xdm:placeContext](#xdmplacecontext) | Place Context | Optional | ExperienceEvent (this schema) |
 | [xdm:productListItems](#xdmproductlistitems) | Product List Item | Optional | ExperienceEvent (this schema) |
+| [xdm:profileStitch](#xdmprofilestitch) | Profile Stitch | Optional | ExperienceEvent (this schema) |
+| [xdm:profileStitching](#xdmprofilestitching) | Profile Stitch | Optional | ExperienceEvent (this schema) |
 | [xdm:receivedTimestamp](#xdmreceivedtimestamp) | `string` | Optional | ExperienceEvent (this schema) |
 | [xdm:search](#xdmsearch) | Search | Optional | ExperienceEvent (this schema) |
+| [xdm:segmentMemberships](#xdmsegmentmemberships) | Segment Membership Item | Optional | ExperienceEvent (this schema) |
 | [xdm:timestamp](#xdmtimestamp) | `string` | Optional | ExperienceEvent (this schema) |
 | [xdm:web](#xdmweb) | Web Information | Optional | ExperienceEvent (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -791,7 +846,7 @@ The unique identifier for the ExperienceEvent.
 
 
 `string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
 
 
 
@@ -1052,6 +1107,51 @@ All items must be of the type:
 
 
 
+## xdm:profileStitch
+### Profile Stitch
+
+Details about the ids that were joined by profile stitching.
+
+`xdm:profileStitch`
+* is optional
+* type: Profile Stitch
+
+* defined in this schema
+
+### xdm:profileStitch Type
+
+
+Array type: Profile Stitch
+
+All items must be of the type:
+* [Profile Stitch](profilestitch.schema.md) – `https://ns.adobe.com/xdm/context/profileStitch`
+
+
+
+
+
+
+
+
+## xdm:profileStitching
+### Profile Stitching
+
+Details about the ids that were joined by profile stitching. Deprecated, use `xdm:profileStitch`
+
+`xdm:profileStitching`
+* is optional
+* type: Profile Stitch
+* defined in this schema
+
+### xdm:profileStitching Type
+
+
+* [Profile Stitch](profilestitch.schema.md) – `https://ns.adobe.com/xdm/context/profileStitch`
+
+
+
+
+
 ## xdm:receivedTimestamp
 ### Received Timestamp
 
@@ -1087,6 +1187,32 @@ The information related to web or mobile search.
 
 
 * [Search](search.schema.md) – `https://ns.adobe.com/xdm/context/search`
+
+
+
+
+
+## xdm:segmentMemberships
+### Segment Memberships
+
+The segments associated with this experience event
+
+`xdm:segmentMemberships`
+* is optional
+* type: Segment Membership Item
+
+* defined in this schema
+
+### xdm:segmentMemberships Type
+
+
+Array type: Segment Membership Item
+
+All items must be of the type:
+* [Segment Membership Item](segmentmembershipitem.schema.md) – `https://ns.adobe.com/xdm/context/segmentmembershipitem`
+
+
+
 
 
 

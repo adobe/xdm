@@ -9,7 +9,7 @@ E-Mail messages, delivered via SMTP to list subscribers.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [channels/email.schema.json](channels/email.schema.json) |
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/email.schema.json](channels/email.schema.json) |
 ## Schema Hierarchy
 
 * E-Mail `https://ns.adobe.com/xdm/channels/email`

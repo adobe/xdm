@@ -2,7 +2,7 @@
 
 XDM schemas are defined in terms of JSON Schema and therefore inherit a type model from JSON. While this allows XDM to describe data types represented in JSON directly, it is useful to define the basic logical data types more specifically so that the XDM data model can be more easily mapped to non-JSON representations.
 
-In general, XDM defines specific types only to scalar values.  The semantics of arrays are never modified in this way, and the semantics of objects are always defined via an XDM schema.  The only exception to this is the `map` type, which is used to allow objects to support general map-like semantics.  See below for details on defining maps in XDM.
+In general, XDM defines specific types only to scalar values. The semantics of arrays are never modified in this way, and the semantics of objects are always defined via an XDM schema. The only exception to this is the `map` type, which is used to allow objects to support general map-like semantics. See below for details on defining maps in XDM.
 
 ## Data Type Definitions
 

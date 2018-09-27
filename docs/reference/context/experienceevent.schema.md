@@ -28,6 +28,7 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
   * [Experience Channel](../channels/channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
   * [Advertising](advertising.schema.md) `https://ns.adobe.com/xdm/context/advertising`
   * [Media Information](media.schema.md) `https://ns.adobe.com/xdm/context/media`
+  * [Profile Stitch](profilestitch.schema.md) `https://ns.adobe.com/xdm/context/profileStitch`
 
 
 ## ExperienceEvent Examples
@@ -149,7 +150,7 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
   "xdm:marketing": {
     "xdm:trackingCode": "marketingcampaign111"
   },
-  "xdm:profileStitching": [
+  "xdm:profileStitch": [
     {
       "xdm:profileStitchID": {
         "@id": "https://data.adobe.io/entities/profileStitchIdentity/1",
@@ -822,6 +823,7 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
 | [xdm:media](#xdmmedia) | Media Information | Optional | ExperienceEvent (this schema) |
 | [xdm:placeContext](#xdmplacecontext) | Place Context | Optional | ExperienceEvent (this schema) |
 | [xdm:productListItems](#xdmproductlistitems) | Product List Item | Optional | ExperienceEvent (this schema) |
+| [xdm:profileStitch](#xdmprofilestitch) | Profile Stitch | Optional | ExperienceEvent (this schema) |
 | [xdm:profileStitching](#xdmprofilestitching) | Profile Stitch | Optional | ExperienceEvent (this schema) |
 | [xdm:receivedTimestamp](#xdmreceivedtimestamp) | `string` | Optional | ExperienceEvent (this schema) |
 | [xdm:search](#xdmsearch) | Search | Optional | ExperienceEvent (this schema) |
@@ -1105,18 +1107,18 @@ All items must be of the type:
 
 
 
-## xdm:profileStitching
-### Profile Stitching
+## xdm:profileStitch
+### Profile Stitch
 
 Details about the ids that were joined by profile stitching.
 
-`xdm:profileStitching`
+`xdm:profileStitch`
 * is optional
 * type: Profile Stitch
 
 * defined in this schema
 
-### xdm:profileStitching Type
+### xdm:profileStitch Type
 
 
 Array type: Profile Stitch
@@ -1126,6 +1128,25 @@ All items must be of the type:
 
 
 
+
+
+
+
+
+## xdm:profileStitching
+### Profile Stitching
+
+Details about the ids that were joined by profile stitching. Deprecated, use `xdm:profileStitch`
+
+`xdm:profileStitching`
+* is optional
+* type: Profile Stitch
+* defined in this schema
+
+### xdm:profileStitching Type
+
+
+* [Profile Stitch](profilestitch.schema.md) – `https://ns.adobe.com/xdm/context/profileStitch`
 
 
 

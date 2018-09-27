@@ -102,6 +102,22 @@
           "https://ns.adobe.com/xdm/common/desciptors/schemadescriptor#/definitions/descriptor"
       }
     },
+    "meta:xdmType": {
+      "description": "signals the logical data type of a field",
+      "type": "string",
+      "enum": [
+        "string",
+        "number",
+        "long",
+        "int",
+        "short",
+        "byte",
+        "boolean",
+        "date",
+        "date-time",
+        "map"
+      ]
+    },
     "type": {
       "type": "string",
       "const": "object"

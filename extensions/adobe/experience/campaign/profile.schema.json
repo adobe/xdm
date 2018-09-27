@@ -27,6 +27,15 @@
                 "Journey AI open, click and fatigue scores for email channel"
             }
           }
+        },
+        "xdm:notificationSubscriptions": {
+          "title": "Adobe Campaign Notification Subscriptions",
+          "type": "array",
+          "description":
+            "Adobe Campaign notification subscriptions are used to communicate with endusers that have enrolled for spacific notifications.",
+          "items": {
+            "$ref": "https://ns.adobe.com/experience/campaign/notificationSubscription"
+          }
         }
       }
     }

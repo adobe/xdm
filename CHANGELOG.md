@@ -2,6 +2,16 @@
 
 ## Release 0.9.5
 
+[Released on September 27th, 2018](https://github.com/adobe/xdm/releases/tag/v0.9.6)
+
+Fixed Issues
+
+Merged Pull Requests
+
+* #458 Implement a communications subscription Campaign extension.
+
+## Release 0.9.5
+
 [Released on August 31, 2018](https://github.com/adobe/xdm/releases/tag/v0.9.5)
 
 Fixed Issues

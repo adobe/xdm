@@ -111,13 +111,19 @@
                     "$ref": "https://ns.adobe.com/xdm/context/media",
                     "description": "The media activity information related to the experience event"
                 },
-                "xdm:profileStitching": {
-                    "title": "Profile Stitching",
+                "xdm:profileStitch": {
+                    "title": "Profile Stitch",
                     "description": "Details about the ids that were joined by profile stitching.",
                     "type": "array",
                     "items": {
                         "$ref": "https://ns.adobe.com/xdm/context/profileStitch"
                     }
+                },
+                "xdm:profileStitching": {
+                    "meta:status": "deprecated",
+                    "title": "Profile Stitching",
+                    "description": "Details about the ids that were joined by profile stitching. Deprecated, use `xdm:profileStitch`",
+                    "$ref": "https://ns.adobe.com/xdm/context/profileStitch"
                 },
                 "xdm:segmentMemberships": {
                     "title": "Segment Memberships",
@@ -261,7 +267,7 @@
             "xdm:marketing": {
                 "xdm:trackingCode": "marketingcampaign111"
             },
-            "xdm:profileStitching": [
+            "xdm:profileStitch": [
                 {
                     "xdm:profileStitchID": {
                         "@id": "https://data.adobe.io/entities/profileStitchIdentity/1",

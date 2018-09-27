@@ -10,7 +10,7 @@ The following table describes the available data types:
 | --------- | --------------------------------------------------------- | ---------------- | ------------------ |
 | string    | unlimited                                                 | string           |                    |
 | number    | ±2.23×10^308 to ±1.80×10^308 (IEEE 64-bit floating point) | number           |                    |
-| long      | (-2^53 + 1) - (2^53 + 1) (54-bit signed integer\*)        | integer          |                    |
+| long      | (-2^53 + 1) - (2^53 - 1) (54-bit signed integer\*)        | integer          |                    |
 | int       | -2^31 - 2^31 (32-bit signed integer)                      | integer          |                    |
 | short     | -2^15 - 2^15 (16-bit signed integer)                      | integer          |                    |
 | byte      | -2^7 - 2^7 (8-bit signed integer)                         | integer          |                    |

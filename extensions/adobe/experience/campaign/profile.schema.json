@@ -19,7 +19,7 @@
           "type": "object",
           "description": "Journey AI scores for all channels",
           "properties": {
-            "xdm:email": {
+            "xdm:emailScore": {
               "title": "Journey AI scores for Email Channel",
               "$ref":
                 "https://ns.adobe.com/experience/campaign/journeyaiscores",

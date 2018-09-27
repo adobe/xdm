@@ -1,6 +1,6 @@
 # Changelog
 
-## Release 0.9.5
+## Release 0.9.6
 
 [Released on September 27th, 2018](https://github.com/adobe/xdm/releases/tag/v0.9.6)
 

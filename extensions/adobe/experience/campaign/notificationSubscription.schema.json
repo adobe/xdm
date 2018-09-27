@@ -31,7 +31,8 @@
         "xdm:topicID": {
           "title": "Topic Identifier",
           "type": "string",
-          "description": "The topic that the notification subscription is permitted to message."
+          "description":
+            "The topic that the notification subscription is permitted to message."
         },
         "xdm:registrationDate": {
           "title": "Registration Date",
@@ -60,8 +61,7 @@
         "xdm:application": {
           "title": "Application",
           "$ref": "https://ns.adobe.com/xdm/channels/application",
-          "description":
-            "Application registered to receive notifications."
+          "description": "Application registered to receive notifications."
         },
         "xdm:channel": {
           "title": "Communication Channel",

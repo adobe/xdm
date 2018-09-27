@@ -34,7 +34,8 @@
           "description":
             "Adobe Campaign notification subscriptions are used to communicate with endusers that have enrolled for spacific notifications.",
           "items": {
-            "$ref": "https://ns.adobe.com/experience/campaign/notificationSubscription"
+            "$ref":
+              "https://ns.adobe.com/experience/campaign/notificationSubscription"
           }
         }
       }

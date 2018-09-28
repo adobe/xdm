@@ -1,9 +1,7 @@
 {
-  "xdm:emailAddress": "someone@email.com",
-  "xdm:topicID": "40ac9bf9-721d-44ac-8cf3-fb04c089f3be",
-  "xdm:registrationDate": "2017-09-26T15:52:25+00:00",
-  "xdm:channel": {
-    "@id": "https://ns.adobe.com/xdm/channels/email",
-    "@type": "https://ns.adobe.com/xdm/channel-types/email"
-  }
+  "xdm:topicID": "50ac9bf9-721d-44ac-8cf3-fb04c089f3be",
+  "xdm:type": "Campaign/SubscriptionList",
+  "xdm:subsriptionDate": "2017-02-26T15:52:25+00:00",
+  "xdm:unsubsriptionDate": "2017-09-26T15:52:25+00:00",
+  "xdm:emailAddress" : "johnDoe@adobe.com"
 }

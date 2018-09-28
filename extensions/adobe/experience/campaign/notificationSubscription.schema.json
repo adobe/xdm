@@ -11,62 +11,37 @@
   "type": "object",
   "meta:extensible": true,
   "description":
-    "Adobe Campaign notification subscriptions are used to communicate with endusers via any channels e.g applications that are installed on devices, email.",
+    "Adobe Campaign notification subscriptions allow endusers opt into topics that can be used for communication such as Marketing subscription lists",
   "definitions": {
     "notificationSubscription": {
       "properties": {
-        "xdm:token": {
-          "title": "Token",
+        "xdm:topicID": {
+          "title": "Topic Identifier",
           "type": "string",
-          "description":
-            "The service specific token used to address the application for communication. e.g an Apple APN ID or a Google Firebase/Google GCM ID."
+          "description": "The topic that the enduser has subscribed to and opted into notifications for"
+        },
+        "xdm:type": {
+          "title": "Subscription type",
+          "type": "string",
+          "description": "The type of notification/subscription"
+        },
+        "xdm:subsriptionDate": {
+          "title": "Subscription Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "Date and time when the enduser has subscribed to a notification topic"
+        },
+        "xdm:unsubscriptionDate": {
+          "title": "Unsubscription Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "Date and time when the enduser has unsubscribed from a notification topic. When the subscription is registered the xdm:unsubscriptionDate must be empty."
         },
         "xdm:emailAddress": {
           "title": "Address",
           "type": "string",
           "format": "email",
-          "description":
-            "The technical address, e.g 'name@domain.com' as commonly defined in RFC2822 and subsequent standards."
-        },
-        "xdm:topicID": {
-          "title": "Topic Identifier",
-          "type": "string",
-          "description":
-            "The topic that the notification subscription is permitted to message."
-        },
-        "xdm:registrationDate": {
-          "title": "Registration Date",
-          "type": "string",
-          "format": "date-time",
-          "description":
-            "Date and time when the enduser has authorized its application to receive notifications."
-        },
-        "xdm:deregistrationDate": {
-          "title": "Deregistration Date",
-          "type": "string",
-          "format": "date-time",
-          "description":
-            "Date and time when the enduser has disabled push notifications on the application. When the subscription is registered the xdm:deregistrationDate must be empty."
-        },
-        "xdm:environment": {
-          "title": "Environment",
-          "$ref": "https://ns.adobe.com/xdm/context/environment",
-          "description": "Environment of at the time of the registration."
-        },
-        "xdm:device": {
-          "title": "Device",
-          "$ref": "https://ns.adobe.com/xdm/context/device",
-          "description": "The device originating the registration."
-        },
-        "xdm:application": {
-          "title": "Application",
-          "$ref": "https://ns.adobe.com/xdm/channels/application",
-          "description": "Application registered to receive notifications."
-        },
-        "xdm:channel": {
-          "title": "Communication Channel",
-          "$ref": "https://ns.adobe.com/xdm/channels/channel",
-          "description": "Channel used for the notification."
+          "description": "The technical address, e.g 'name@domain.com' as commonly defined in RFC2822 and subsequent standards."
         }
       }
     }

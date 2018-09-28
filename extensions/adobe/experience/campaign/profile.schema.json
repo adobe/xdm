@@ -32,7 +32,7 @@
           "title": "Adobe Campaign Notification Subscriptions",
           "type": "array",
           "description":
-            "Adobe Campaign notification subscriptions are used to communicate with endusers that have enrolled for spacific notifications.",
+            "Adobe Campaign notification subscriptions are used to communicate with endusers that have enrolled for specific notifications.",
           "items": {
             "$ref":
               "https://ns.adobe.com/experience/campaign/notificationSubscription"

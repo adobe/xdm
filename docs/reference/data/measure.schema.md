@@ -67,7 +67,7 @@ Unique identifier of the measure. In cases of data collection using lossy commun
 
 
 `string`
-* minimum length: 20 characters
+
 
 
 

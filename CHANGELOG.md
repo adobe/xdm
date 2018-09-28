@@ -1,14 +1,45 @@
 # Changelog
 
-## Release 0.9.6
+## Release 0.9.7
 
-[Released on September 27th, 2018](https://github.com/adobe/xdm/releases/tag/v0.9.6)
+[Released on October tBD, 2018](https://github.com/adobe/xdm/releases/tag/v0.9.7)
 
 Fixed Issues
+
+...
 
 Merged Pull Requests
 
 * #458 Implement a communications subscription Campaign extension.
+
+## Release 0.9.6
+
+[Released on September 28, 2018](https://github.com/adobe/xdm/releases/tag/v0.9.6)
+
+Fixed Issues
+
+* XDM schema definition for AdCloud Search surfer profiles in AdCloud extension
+  * PR #477 XDM schema definition for AdCloud Search surfer profiles
+* Fix lint checks against extensions
+  * PR #485 Fix lint checks against extensions
+* Define Logical Data Types for XDM
+  * PR #495 First draft of data type description
+* Add the Supplemental Data Identifier field to the Adobe Target extension
+  * PR #509 Add the Supplemental Data Identifier field to the Adobe Target extension
+* Define a Map Data Type for XDM
+  * PR #511 Define "map" XDM type
+* XDM requires many ID's under experience event schema to be length > 20 ...
+  * PR #524 Removing minLength constraint on measure ids
+
+Merged Pull Requests
+
+* #467 Fixed typo in transactionID
+* #492 Journey AI Fatigue and Score schemas
+* #504 Correct profile stitching
+* #505 Added "eventID" depreciated "businessReason" in Campaign ExperienceEvent extension.
+* #506 Updating titles so that they no longer collide
+* #513 PR 504 - Updates to make changes additive
+* #515 improve name for email fatigue scores in experience event
 
 ## Release 0.9.5
 

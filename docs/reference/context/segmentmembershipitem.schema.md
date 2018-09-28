@@ -21,7 +21,7 @@ List item that contains details of segment membership combined the profile stitc
 ```json
 {
   "xdm:segmentID": {
-    "@id": "https://data.adobe.io/entities/identity/92312748749128",
+    "xdm:id": "92312748749128",
     "xdm:namespace": {
       "xdm:code": "AAM"
     }

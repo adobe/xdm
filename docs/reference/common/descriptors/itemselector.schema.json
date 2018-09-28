@@ -78,10 +78,10 @@
     "meta:status": "experimental",
     "examples": [
         {
-            "xdm:index": 0
+            "xdm:type": "https://ns.adobe.com/experience/mcid"
         },
         {
-            "xdm:type": "https://ns.adobe.com/experience/mcid"
+            "xdm:index": 0
         },
         {
             "xdm:id": "https://example.com/objects/12345"

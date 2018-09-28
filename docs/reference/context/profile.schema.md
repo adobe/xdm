@@ -113,7 +113,7 @@ for other Profile data such as preference, propensities and other attributes.
   "xdm:segments": [
     {
       "xdm:segmentID": {
-        "@id": "https://data.adobe.io/entities/segmentidentity/04a81716-43d6-4e7a-a49c-f1d8b3129ba9",
+        "xdm:id": "04a81716-43d6-4e7a-a49c-f1d8b3129ba9",
         "xdm:namespace": {
           "xdm:code": "AAM"
         }
@@ -125,7 +125,7 @@ for other Profile data such as preference, propensities and other attributes.
     },
     {
       "xdm:segmentID": {
-        "@id": "https://data.adobe.io/entities/identity/53cba6b2-a23b-454a-8069-fc41308f1c0f",
+        "xdm:id": "53cba6b2-a23b-454a-8069-fc41308f1c0f",
         "xdm:namespace": {
           "xdm:code": "AAM"
         }

@@ -19,7 +19,7 @@ SegmentIdentity is used to clearly distinguish segments from multiple sources. S
 ## Segment Identity Example
 ```json
 {
-  "@id": "https://data.adobe.io/entities/segmentIdentity/id123",
+  "xdm:id": "id123",
   "xdm:namespace": {
     "xdm:code": "AA12345"
   }
@@ -30,27 +30,25 @@ SegmentIdentity is used to clearly distinguish segments from multiple sources. S
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Segment Identity (this schema) |
+| [xdm:id](#xdmid) | `string` | Optional | Segment Identity (this schema) |
 | [xdm:namespace](#xdmnamespace) | Namespace | Optional | Segment Identity (this schema) |
 | [xdm:xid](#xdmxid) | `string` | Optional | Segment Identity (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## @id
+## xdm:id
 ### Identifier
 
 Identity of the Segment in the related namespace.
 
-`@id`
+`xdm:id`
 * is optional
 * type: `string`
 * defined in this schema
 
-### @id Type
+### xdm:id Type
 
 
 `string`
-* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
-
 
 
 

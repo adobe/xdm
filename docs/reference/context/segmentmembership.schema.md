@@ -20,7 +20,7 @@ Details about a segment membership.
 ```json
 {
   "xdm:segmentID": {
-    "@id": "https://data.adobe.io/entities/segmentIdentity/92312748749128",
+    "xdm:id": "92312748749128",
     "xdm:namespace": {
       "xdm:code": "AAM"
     }

@@ -11,25 +11,25 @@
   "type": "object",
   "meta:extensible": true,
   "description":
-    "Adobe Campaign notification subscriptions allow endusers opt into topics that can be used for communication such as Marketing subscription lists",
+    "Adobe Campaign notification subscriptions allow endusers opt into topics that can be used for communication such as Marketing subscription lists.",
   "definitions": {
     "notificationSubscription": {
       "properties": {
         "xdm:topicID": {
           "title": "Topic Identifier",
           "type": "string",
-          "description": "The topic that the enduser has subscribed to and opted into notifications for"
+          "description": "The topic that the enduser has subscribed to and opted into notifications for."
         },
         "xdm:type": {
           "title": "Subscription type",
           "type": "string",
-          "description": "The type of notification/subscription"
+          "description": "The type of notification/subscription."
         },
         "xdm:subsriptionDate": {
           "title": "Subscription Date",
           "type": "string",
           "format": "date-time",
-          "description": "Date and time when the enduser has subscribed to a notification topic"
+          "description": "Date and time when the enduser has subscribed to a notification topic."
         },
         "xdm:unsubscriptionDate": {
           "title": "Unsubscription Date",
@@ -44,7 +44,11 @@
           "description": "The technical address, e.g 'name@domain.com' as commonly defined in RFC2822 and subsequent standards."
         }
       }
-    }
+    },
+    "required": [
+      "xdm:topicID",
+      "xdm:type"
+    ]
   },
   "allOf": [
     {

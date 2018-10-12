@@ -11,7 +11,8 @@
   "meta:extensible": true,
   "type": "object",
   "title": "Capping Constraint",
-  "description": "A capping constraint is a component in a personalized offer that defines the parameters for capping. Capping is the process of limiting how many times an offer can be proposed, for an individual profile as well as across all profiles.",
+  "description":
+    "A capping constraint is a component in a personalized offer that defines the parameters for capping. Capping is the process of limiting how many times an offer can be proposed, for an individual profile as well as across all profiles.",
   "definitions": {
     "capping-constraint": {
       "type": "object",
@@ -19,13 +20,15 @@
         "xdm:globalCap": {
           "type": "integer",
           "title": "Global Cap",
-          "description": "Global cap is a constraint on how many times an offer can be proposed in totality.",
+          "description":
+            "Global cap is a constraint on how many times an offer can be proposed in totality.",
           "minimum": 1
         },
         "xdm:profileCap": {
           "type": "integer",
           "title": "Profile Cap",
-          "description": "Profile cap is a constraint on how many times an offer can be proposed to a certain profile.",
+          "description":
+            "Profile cap is a constraint on how many times an offer can be proposed to a certain profile.",
           "minimum": 1
         }
       }

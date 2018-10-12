@@ -18,7 +18,8 @@
       "properties": {
         "xdm:components": {
           "type": "array",
-          "description": "The content components of the offer representation, including all their language variants. Specific components are found by 'dx:format', 'dc:subject' and 'dc:language' or a combination thereof. This metadata is used to locate or represent the content that is associated with an offer and integrate it according to the placement contract.",
+          "description":
+            "The content components of the offer representation, including all their language variants. Specific components are found by 'dx:format', 'dc:subject' and 'dc:language' or a combination thereof. This metadata is used to locate or represent the content that is associated with an offer and integrate it according to the placement contract.",
           "items": {
             "$ref": "#/definitions/content-component"
           }
@@ -27,13 +28,15 @@
           "type": "string",
           "format": "uri",
           "title": "Channel",
-          "description": "The channel constraint is used to convey not only where the offer will be used but determine the content editor or validator that is used for the offer's representation. The value is a valid Channel URI. See 'https://ns.adobe.com/xdm/channels/channel'"
+          "description":
+            "The channel constraint is used to convey not only where the offer will be used but determine the content editor or validator that is used for the offer's representation. The value is a valid Channel URI. See 'https://ns.adobe.com/xdm/channels/channel'"
         },
         "xdm:placement": {
           "type": "string",
           "format": "uri",
           "title": "Placement",
-          "description": "Placement to comply with. The value is the URI (@id) of the offer placement that is referenced. See schema https://ns.adobe.com/experience/offer-management/offer-placement"
+          "description":
+            "Placement to comply with. The value is the URI (@id) of the offer placement that is referenced. See schema https://ns.adobe.com/experience/offer-management/offer-placement"
         }
       }
     },
@@ -48,9 +51,12 @@
         "https://ns.adobe.com/experience/offer-management/content-component-imagelink"
       ],
       "meta:enum": {
-        "https://ns.adobe.com/experience/offer-management/content-component-text": "Text component",
-        "https://ns.adobe.com/experience/offer-management/content-component-html": "HTML component",
-        "https://ns.adobe.com/experience/offer-management/content-component-imagelink": "Image and click link component"
+        "https://ns.adobe.com/experience/offer-management/content-component-text":
+          "Text component",
+        "https://ns.adobe.com/experience/offer-management/content-component-html":
+          "HTML component",
+        "https://ns.adobe.com/experience/offer-management/content-component-imagelink":
+          "Image and click link component"
       }
     },
     "content-component": {
@@ -101,7 +107,9 @@
               "meta:usereditable": false,
               "description":
                 "An optional unique identifier to reference the asset in a content repository. When Platform APIs are used to retrieve the representation the client can expect an addtional propery \"repo:resolveUrl\" to retrieve the asset.",
-              "examples": ["urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e"]
+              "examples": [
+                "urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e"
+              ]
             },
             "repo:resolveURL": {
               "type": "string",
@@ -110,12 +118,14 @@
               "meta:usereditable": false,
               "description":
                 "An optional unique resource locator to read the asset in a content repository. This will make it easier to obtain the asset whithout the client understanding where the asset is manages and what APIs to call. This is similar to a HAL link but the semantic is simpler and more pursposeful.",
-              "examples": ["https://plaftform.adobe.io/resolveByPath?path=&quot;/mycorp/content/projectx/fragment/prod/herobanners/banner14.html3&quot;"]
+              "examples": [
+                "https://plaftform.adobe.io/resolveByPath?path=&quot;/mycorp/content/projectx/fragment/prod/herobanners/banner14.html3&quot;"
+              ]
             }
           }
         },
         {
-          "required": ["@type","dc:format"]
+          "required": ["@type", "dc:format"]
         }
       ]
     }
@@ -129,4 +139,3 @@
     }
   ]
 }
-

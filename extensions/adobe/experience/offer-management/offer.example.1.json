@@ -7,7 +7,8 @@
       "xdm:components": [
         {
           "xdm:text": "You can always get what you want!",
-          "@type": "https://ns.adobe.com/experience/offer-management/content-component-text",
+          "@type":
+            "https://ns.adobe.com/experience/offer-management/content-component-text",
           "dc:format": "text/template"
         }
       ],
@@ -15,7 +16,5 @@
       "xdm:placement": "xcore:offer-placement:e51944a87919861"
     }
   ],
-  "xdm:tags": [
-    "xcore:tag:e5196f1d9119862"
-  ]
+  "xdm:tags": ["xcore:tag:e5196f1d9119862"]
 }

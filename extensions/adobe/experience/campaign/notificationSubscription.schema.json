@@ -48,11 +48,7 @@
         }
       }
     },
-    "required": [
-      "xdm:topicID",
-      "xdm:type",
-      "xdm:subscriptionDate"
-    ]
+    "required": ["xdm:topicID", "xdm:type", "xdm:subscriptionDate"]
   },
   "allOf": [
     {

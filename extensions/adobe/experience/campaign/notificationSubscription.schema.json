@@ -18,7 +18,8 @@
         "xdm:topicID": {
           "title": "Topic Identifier",
           "type": "string",
-          "description": "The topic that the enduser has subscribed to and opted into notifications for."
+          "description":
+            "The topic that the enduser has subscribed to and opted into notifications for."
         },
         "xdm:type": {
           "title": "Subscription type",
@@ -29,17 +30,21 @@
           "title": "Subscription Date",
           "type": "string",
           "format": "date-time",
-          "description": "Date and time when the enduser has subscribed to a notification topic."
+          "description":
+            "Date and time when the enduser has subscribed to a notification topic."
         },
         "xdm:notificationTarget": {
           "title": "Target/destination for the notification",
-          "description": "Target/destination for where to send/receive the notification.",
-          "$ref": "https://ns.adobe.com/experience/campaign/notificationSubscriptionTarget"
+          "description":
+            "Target/destination for where to send/receive the notification.",
+          "$ref":
+            "https://ns.adobe.com/experience/campaign/notificationSubscriptionTarget"
         },
         "xdm:unsubscriptionDetails": {
           "title": "Adobe Campaign Notification Unsubscription details",
           "description": "Adobe Campaign notification unsubscription details.",
-          "$ref": "https://ns.adobe.com/experience/campaign/notificationUnSubscriptionDetails"
+          "$ref":
+            "https://ns.adobe.com/experience/campaign/notificationUnSubscriptionDetails"
         }
       }
     },

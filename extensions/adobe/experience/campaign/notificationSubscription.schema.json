@@ -31,11 +31,10 @@
           "format": "date-time",
           "description": "Date and time when the enduser has subscribed to a notification topic."
         },
-        "xdm:emailAddress": {
-          "title": "Address",
-          "type": "string",
-          "format": "email",
-          "description": "The technical address, e.g 'name@domain.com' as commonly defined in RFC2822 and subsequent standards."
+        "xdm:notificationTarget": {
+          "title": "Target/destination for the notification",
+          "description": "Target/destination for where to send/receive the notification.",
+          "$ref": "https://ns.adobe.com/experience/campaign/notificationSubscriptionTarget"
         },
         "xdm:unsubscriptionDetails": {
           "title": "Adobe Campaign Notification Unsubscription details",

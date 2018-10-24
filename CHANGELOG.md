@@ -1,8 +1,70 @@
 # Changelog
 
+## Release 0.9.6
+
+[Released on September 28, 2018](https://github.com/adobe/xdm/releases/tag/v0.9.6)
+
+Fixed Issues
+
+* XDM schema definition for AdCloud Search surfer profiles in AdCloud extension
+  * PR #477 XDM schema definition for AdCloud Search surfer profiles
+* Fix lint checks against extensions
+  * PR #485 Fix lint checks against extensions
+* Define Logical Data Types for XDM
+  * PR #495 First draft of data type description
+* Add the Supplemental Data Identifier field to the Adobe Target extension
+  * PR #509 Add the Supplemental Data Identifier field to the Adobe Target extension
+* Define a Map Data Type for XDM
+  * PR #511 Define "map" XDM type
+* XDM requires many ID's under experience event schema to be length > 20 ...
+  * PR #524 Removing minLength constraint on measure ids
+
+Merged Pull Requests
+
+* #467 Fixed typo in transactionID
+* #492 Journey AI Fatigue and Score schemas
+* #504 Correct profile stitching
+* #505 Added "eventID" depreciated "businessReason" in Campaign ExperienceEvent extension.
+* #506 Updating titles so that they no longer collide
+* #513 PR 504 - Updates to make changes additive
+* #515 improve name for email fatigue scores in experience event
+
+## Release 0.9.5
+
+[Released on August 31, 2018](https://github.com/adobe/xdm/releases/tag/v0.9.5)
+
+Fixed Issues
+
+* Change ID format from "uri" to "uri-reference"
+  * PR #488 Change @id's format from "uri" to "uri-reference" if exists
+* Combine individual Birthday fields to a single field of format: 'date-time'
+  * PR #498 Create distinct fields for different cases of birth date
+* Fix lint checks against extensions
+  * PR #485 fix linting issues in extensions folder
+
+Merged Pull Requests
+
+* #472 Add Journey context and delivery attributes in experience event
+* #479 Fix Segment Identity title conflict
+* #501 Campaign extension schema format/structure change for 0.9.9.5 platform release
+
 ## Release 0.9.4
 
-_Planned for August 17, 2018_
+[Released on August 17, 2018](https://github.com/adobe/xdm/releases/tag/v0.9.4)
+
+Fixed Issues
+
+* Need representation for stitched profiles and segment membership in ExperienceEvent
+  * PR #444 profile stitch
+
+Merged Pull Requests
+
+* #411 Payload value types
+* #445 Change repo:assetID to repo:id
+* #456 Adding Target Activities elements
+* #459 Added Authenticated State property to `\context\identity.schema.json`
+* #474 Minor refactor of segment membership schemas to be more tool friendly
+* #475 Make experience schemas xed convertable for 0.9.9.4 release
 
 ## Release 0.9.3
 

@@ -20,7 +20,7 @@
             "properties": {
                 "@id": {
                     "type": "string",
-                    "format": "uri",
+                    "format": "uri-reference",
                     "const": "https://ns.adobe.com/xdm/channels/phone",
                     "description": "The ID uniquely identifies the channel. Each specific experience channel defines a constant `@id`."
                 },

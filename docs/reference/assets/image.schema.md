@@ -9,7 +9,7 @@ The Image class is for raster and vector image assets, including JPEG, PNG, SVG 
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [assets/image.schema.json](assets/image.schema.json) |
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [assets/image.schema.json](assets/image.schema.json) |
 ## Schema Hierarchy
 
 * Image `https://ns.adobe.com/xdm/assets/image`
@@ -21,7 +21,7 @@ The Image class is for raster and vector image assets, including JPEG, PNG, SVG 
 ## Image Example
 ```json
 {
-  "repo:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
+  "repo:id": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
   "xmp:createDate": "2017-09-26T15:52:25+00:00",
   "repo:createdDate": "2017-09-26T15:52:25+00:00",
   "xdm:repositoryCreatedBy": "lars",
@@ -109,7 +109,7 @@ A unique identifier given to every addressable piece of content in a given repos
 
 
 `string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
 
 
 

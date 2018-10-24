@@ -9,7 +9,7 @@ This schema aggregates all asset sub-schemas that are supported by XDM.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | No | Experimental | Yes | Forbidden | Permitted | [assets/aggregated-asset.schema.json](assets/aggregated-asset.schema.json) |
+| Can be instantiated | No | Experimental | No | Forbidden | Permitted | [assets/aggregated-asset.schema.json](assets/aggregated-asset.schema.json) |
 ## Schema Hierarchy
 
 * Aggregated Asset `https://ns.adobe.com/xdm/assets/aggregated-asset`
@@ -27,7 +27,7 @@ This schema aggregates all asset sub-schemas that are supported by XDM.
 ## Aggregated Asset Example
 ```json
 {
-  "repo:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
+  "repo:id": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
   "xmp:createDate": "2017-09-26T15:52:25+00:00",
   "repo:createdDate": "2017-09-26T15:52:25+00:00",
   "xdm:repositoryCreatedBy": "lars",
@@ -70,9 +70,9 @@ This schema aggregates all asset sub-schemas that are supported by XDM.
 | [plus:copyrightOwner](#pluscopyrightowner) | reference | Optional | [Asset](asset.schema.md#pluscopyrightowner) |
 | [plus:copyrightOwnerID](#pluscopyrightownerid) | `string` | Optional | [Copyright Owner](copyright-owner.schema.md#pluscopyrightownerid) |
 | [plus:copyrightOwnerName](#pluscopyrightownername) | `string` | Optional | [Copyright Owner](copyright-owner.schema.md#pluscopyrightownername) |
-| [repo:assetID](#repoassetid) | `string` | Optional | [Asset](../external/repo/asset.schema.md#repoassetid) |
 | [repo:createDate](#repocreatedate) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#repocreatedate) |
 | [repo:etag](#repoetag) | `string` | Optional | [Asset](../external/repo/asset.schema.md#repoetag) |
+| [repo:id](#repoid) | `string` | Optional | [Asset](../external/repo/asset.schema.md#repoid) |
 | [repo:lastModifiedDate](#repolastmodifieddate) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#repolastmodifieddate) |
 | [repo:name](#reponame) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#reponame) |
 | [repo:path](#repopath) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#repopath) |
@@ -124,7 +124,7 @@ A unique identifier given to every addressable piece of content in a given repos
 
 
 `string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
 
 
 
@@ -717,31 +717,6 @@ Name of Copyright Owner.
 
 
 
-## repo:assetID
-
-A unique identifier given to every addressable asset in a given repository.
-
-`repo:assetID`
-* is optional
-* type: `string`
-* defined in [Asset](../external/repo/asset.schema.md#repo:assetID)
-
-### repo:assetID Type
-
-
-`string`
-
-
-
-
-
-### repo:assetID Example
-
-```json
-"urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e"
-```
-
-
 ## repo:createDate
 
 The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
@@ -785,6 +760,31 @@ An  ETag is an HTTP response header returned by an HTTP/1.1 compliant web server
 
 
 
+
+
+## repo:id
+
+A unique identifier given to every addressable asset in a given repository.
+
+`repo:id`
+* is optional
+* type: `string`
+* defined in [Asset](../external/repo/asset.schema.md#repo:id)
+
+### repo:id Type
+
+
+`string`
+
+
+
+
+
+### repo:id Example
+
+```json
+"urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e"
+```
 
 
 ## repo:lastModifiedDate

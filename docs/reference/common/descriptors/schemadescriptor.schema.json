@@ -18,7 +18,7 @@
                 "@id": {
                     "title": "Identifier",
                     "type": "string",
-                    "format": "uri",
+                    "format": "uri-reference",
                     "description": "The unique identifier for the schema descriptor. This property is required when the descriptor is defined outside of the applicable schema, but is optional when applied via 'meta:descriptors'"
                 },
                 "@type": {

@@ -5,8 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id":
-    "https://ns.adobe.com/experience/campaign/experienceevent",
+  "$id": "https://ns.adobe.com/experience/campaign/experienceevent",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Adobe Campaign ExperienceEvent Extension",
   "type": "object",
@@ -153,8 +152,9 @@
             }
           }
         },
-        "https://ns.adobe.com/experience/campaign/delivery" : {
-          "title": "The campaign activity originating a message to a recipient.",
+        "https://ns.adobe.com/experience/campaign/delivery": {
+          "title":
+            "The campaign activity originating a message to a recipient.",
           "type": "object",
           "properties": {
             "xdm:id": {
@@ -191,22 +191,43 @@
               "type": "integer",
               "description":
                 "The delivery template's ID used to initialize this delivery.\n\nThe type the template used in Adobe Campaign can be identified using the `messageClass`.\n\n* `messageClass` = `oneTime`: the template is standard delivery template.\n* `messageClass` = `continuous`: the template is a recurring delivery.\n* `messageClass` = `transactional`: the template is a transactionnal message template.\n"
+            },
+            "xdm:deliveryLabel": {
+              "title": "Delivery Label",
+              "type": "string",
+              "description":
+                "A human-friendly name of the campaign activity which is originating this message."
+            },
+            "xdm:deliveryName": {
+              "title": "Delivery Internal name",
+              "type": "string",
+              "description":
+                "A human-friendly identifier of the campaign activity which is originating this message."
             }
           }
         },
         "https://ns.adobe.com/experience/campaign/marketingCampaign": {
-          "title": "The campaign activity originating a message to a recipient.",
+          "title":
+            "The campaign activity originating a message to a recipient.",
           "type": "object",
           "properties": {
             "xdm:id": {
               "title": "Campaign ID",
               "type": "integer",
-              "description": "Identifier of the marketing campaign to which activity originating this message belongs to."
+              "description":
+                "Identifier of the marketing campaign to which activity originating this message belongs to."
+            },
+            "xdm:campaignName": {
+              "title": "Campaign Internal name",
+              "type": "string",
+              "description":
+                "A human-friendly identifier of the marketing campaign which is originating this message."
             }
           }
         },
         "https://ns.adobe.com/experience/campaign/link": {
-          "title": "The campaign activity originating a message to a recipient.",
+          "title":
+            "The campaign activity originating a message to a recipient.",
           "type": "object",
           "properties": {
             "xdm:id": {
@@ -237,12 +258,14 @@
             "xdm:label": {
               "title": "URL Label",
               "type": "string",
-              "description": "The user-friendly label clicking on which the link opens."
+              "description":
+                "The user-friendly label clicking on which the link opens."
             },
             "xdm:category": {
               "title": "URL Category",
               "type": "string",
-              "description": "The category of the link. It may be `subscription`, or a user-defined category."
+              "description":
+                "The category of the link. It may be `subscription`, or a user-defined category."
             }
           }
         },
@@ -251,12 +274,32 @@
           "type": "object",
           "properties": {
             "xdm:businessReason": {
+              "meta:status": "deprecated",
               "title": "Business Reason",
               "type": "string",
               "description":
                 "Business qualifier that identifies the event sent by the data source. It informs on the business reason for sending the event. It is unique per organization. This is used by Campaign orchestration to identify the event without inspecting its payload to determine which action should be triggered when the event is received. The value of this field is a contract between Campaign orchestration and the data source."
+            },
+            "xdm:eventID": {
+              "title": "Event ID",
+              "type": "string",
+              "description":
+                "ID that identifies the event sent by the data source. This is used by Campaign orchestration to identify the event without inspecting its payload to determine which action should be triggered when the event is received. The value is automatically generated in Campaign at event creation time, it is globally unique across organizations."
+            },
+            "xdm:orchestrationDetails": {
+              "title": "Orchestration Details",
+              "description":
+                "Set of attributes that are associated with every orchestration.",
+              "$ref":
+                "https://ns.adobe.com/experience/campaign/orchestration/orchestrationdetails"
             }
           }
+        },
+        "https://ns.adobe.com/experience/campaign/containerID": {
+          "title": "Container identifier",
+          "type": "string",
+          "description":
+            "The identifier denoting the container with which campaign experience event is associated."
         }
       }
     },
@@ -264,8 +307,9 @@
       "properties": {
         "https://ns.adobe.com/experience/campaign/mutation": {
           "title": "Mutated fields from the previous experienceEvent.",
-          "description": "Information of the fields that have changed since the previous experienceevent to keep track of the state changes across events. For e.g. if when an email gets sent, an experienceEvent with metric `sends` will be sent. This may get bounced and an experienceEvent with metric `bounces` will be sent then. It may be important for a downstream application to know that the previous experienceEvent with metric `sends` is now to be invalidated. This field will contain the values from the previous experienceEvent that have a different value in the current experienceEvent.",
-		  "$ref":"https://ns.adobe.com/experience/campaign/mutationevent"
+          "description":
+            "Information of the fields that have changed since the previous experienceevent to keep track of the state changes across events. For e.g. if when an email gets sent, an experienceEvent with metric `sends` will be sent. This may get bounced and an experienceEvent with metric `bounces` will be sent then. It may be important for a downstream application to know that the previous experienceEvent with metric `sends` is now to be invalidated. This field will contain the values from the previous experienceEvent that have a different value in the current experienceEvent.",
+          "$ref": "https://ns.adobe.com/experience/campaign/mutationevent"
         }
       }
     }

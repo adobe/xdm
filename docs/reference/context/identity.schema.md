@@ -21,18 +21,19 @@ Identity is used to clearly distinguish people that are interacting with digital
 
 ```json
 {
-  "xdm:id": "someone@example.com",
+  "xdm:id": "id123",
   "xdm:namespace": {
-    "xdm:code": "Email"
-  }
+    "xdm:code": "AA12345"
+  },
+  "xdm:authenticatedState": "ambiguous"
 }
 ```
 
 ```json
 {
-  "xdm:id": "id123",
+  "xdm:id": "someone@example.com",
   "xdm:namespace": {
-    "xdm:code": "AA12345"
+    "xdm:code": "Email"
   }
 }
 ```
@@ -42,11 +43,33 @@ Identity is used to clearly distinguish people that are interacting with digital
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
+| [xdm:authenticatedState](#xdmauthenticatedstate) | `enum` | Optional | Identity (this schema) |
 | [xdm:id](#xdmid) | `string` | Optional | Identity (this schema) |
 | [xdm:namespace](#xdmnamespace) | Namespace | Optional | Identity (this schema) |
 | [xdm:primary](#xdmprimary) | `boolean` | Optional | Identity (this schema) |
 | [xdm:xid](#xdmxid) | `string` | Optional | Identity (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
+
+## xdm:authenticatedState
+
+The state this identity is authenticated as for this observed ExperienceEvent.
+
+`xdm:authenticatedState`
+* is optional
+* type: `enum`
+* defined in this schema
+
+The value of this property **must** be equal to one of the [known values below](#xdm:authenticatedState-known-values).
+
+### xdm:authenticatedState Known Values
+| Value | Description |
+|-------|-------------|
+| `ambiguous` | Ambiguous |
+| `authenticated` | User identified by a login or simular action that was valid at the time of the event observation. |
+| `loggedOut` | User was identified by a login action at some point of time previously, but is not currently logged in. |
+
+
+
 
 ## xdm:id
 ### Identifier

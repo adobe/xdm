@@ -18,7 +18,7 @@
         "@id": {
           "title": "Asset ID",
           "type": "string",
-          "format": "uri",
+          "format": "uri-reference",
           "description": "Identifier of the content, which can be used to tie back to other industry / CMS IDs."
         },
         "dc:title": {

@@ -20,7 +20,7 @@ An asset in Adobe Cloud Platform. It is not neccessarily a Digital Asset in the 
 ## Asset Example
 ```json
 {
-  "repo:assetID": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
+  "repo:id": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
   "repo:createdDate": "2017-09-26T15:52:25+00:00",
   "repo:lastModifiedDate": "2017-09-26T15:52:25+00:00",
   "repo:version": "15",
@@ -39,9 +39,9 @@ An asset in Adobe Cloud Platform. It is not neccessarily a Digital Asset in the 
 | [_embedded](#_embedded) | `object` | Optional | [HAL Resource](../hal/hal.schema.md#_embedded) |
 | [_links](#_links) | `object` | Optional | [HAL Resource](../hal/hal.schema.md#_links) |
 | [dc:format](#dcformat) | `string` | **Required** | [Common Properties](common.schema.md#dcformat) |
-| [repo:assetID](#repoassetid) | `string` | **Required** | Asset (this schema) |
 | [repo:createDate](#repocreatedate) | `string` | Optional | [Common Properties](common.schema.md#repocreatedate) |
 | [repo:etag](#repoetag) | `string` | **Required** | Asset (this schema) |
+| [repo:id](#repoid) | `string` | **Required** | Asset (this schema) |
 | [repo:lastModifiedDate](#repolastmodifieddate) | `string` | **Required** | [Common Properties](common.schema.md#repolastmodifieddate) |
 | [repo:name](#reponame) | `string` | **Required** | [Common Properties](common.schema.md#reponame) |
 | [repo:path](#repopath) | `string` | **Required** | [Common Properties](common.schema.md#repopath) |
@@ -130,31 +130,6 @@ All instances must conform to this regular expression
 ```
 
 
-## repo:assetID
-
-A unique identifier given to every addressable asset in a given repository.
-
-`repo:assetID`
-* is **required**
-* type: `string`
-* defined in this schema
-
-### repo:assetID Type
-
-
-`string`
-
-
-
-
-
-### repo:assetID Example
-
-```json
-"urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e"
-```
-
-
 ## repo:createDate
 
 The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
@@ -198,6 +173,31 @@ An  ETag is an HTTP response header returned by an HTTP/1.1 compliant web server
 
 
 
+
+
+## repo:id
+
+A unique identifier given to every addressable asset in a given repository.
+
+`repo:id`
+* is **required**
+* type: `string`
+* defined in this schema
+
+### repo:id Type
+
+
+`string`
+
+
+
+
+
+### repo:id Example
+
+```json
+"urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e"
+```
 
 
 ## repo:lastModifiedDate

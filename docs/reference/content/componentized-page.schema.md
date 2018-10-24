@@ -12,7 +12,7 @@ Componentized pages are modular (consist of smaller content components), hyperli
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [content/componentized-page.schema.json](content/componentized-page.schema.json) |
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [content/componentized-page.schema.json](content/componentized-page.schema.json) |
 ## Schema Hierarchy
 
 * Componentized Page `https://ns.adobe.com/xdm/content/componentized-page`
@@ -37,7 +37,7 @@ Componentized pages are modular (consist of smaller content components), hyperli
     "title": "Sunglasses",
     "image": {
       "@type": "https://ns.adobe.com/xdm/assets/asset",
-      "repo:assetID": "urn:aaid:aem:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
+      "repo:id": "urn:aaid:aem:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
       "@id": "https://francois.corp.adobe.com:4502/content/dam/Fx_DUKE-small.jpg"
     }
   },
@@ -100,7 +100,7 @@ A unique identifier given to every addressable piece of content in a given repos
 
 
 `string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
 
 
 

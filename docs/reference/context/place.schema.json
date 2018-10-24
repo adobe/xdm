@@ -17,7 +17,7 @@
                 "@id": {
                     "title": "Place ID",
                     "type": "string",
-                    "format": "uri",
+                    "format": "uri-reference",
                     "description": "The unique identifier of the place."
                 },
                 "schema:description": {

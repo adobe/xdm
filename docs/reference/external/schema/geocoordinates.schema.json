@@ -17,7 +17,7 @@
                 "@id": {
                     "title": "Coordinates ID",
                     "type": "string",
-                    "format": "uri",
+                    "format": "uri-reference",
                     "description": "The unique identifier of the coordinates."
                 },
                 "schema:description": {

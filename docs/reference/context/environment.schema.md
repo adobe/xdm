@@ -36,7 +36,9 @@ Information about the surrounding situation the event observation occurred in, s
   "xdm:operatingSystem": "MAC OS",
   "xdm:operatingSystemVersion": "10.13",
   "xdm:operatingSystemVendor": "Apple",
-  "xdm:connectionType": "cable"
+  "xdm:connectionType": "cable",
+  "xdm:domain": "verizon.com",
+  "xdm:ISP": "Verizon"
 }
 ```
 
@@ -44,10 +46,12 @@ Information about the surrounding situation the event observation occurred in, s
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
+| [xdm:ISP](#xdmisp) | `string` | Optional | Environment (this schema) |
 | [xdm:browserDetails](#xdmbrowserdetails) | Browser Details | Optional | Environment (this schema) |
 | [xdm:carrier](#xdmcarrier) | `string` | Optional | Environment (this schema) |
 | [xdm:colorDepth](#xdmcolordepth) | `integer` | Optional | Environment (this schema) |
 | [xdm:connectionType](#xdmconnectiontype) | `enum` | Optional | Environment (this schema) |
+| [xdm:domain](#xdmdomain) | `string` | Optional | Environment (this schema) |
 | [xdm:ipV4](#xdmipv4) | `string` | Optional | Environment (this schema) |
 | [xdm:ipV6](#xdmipv6) | `string` | Optional | Environment (this schema) |
 | [xdm:operatingSystem](#xdmoperatingsystem) | `string` | Optional | Environment (this schema) |
@@ -57,6 +61,26 @@ Information about the surrounding situation the event observation occurred in, s
 | [xdm:viewportHeight](#xdmviewportheight) | `integer` | Optional | Environment (this schema) |
 | [xdm:viewportWidth](#xdmviewportwidth) | `integer` | Optional | Environment (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
+
+## xdm:ISP
+### Internet Service Provider
+
+The name of the user's Internet Service Provider
+
+`xdm:ISP`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:ISP Type
+
+
+`string`
+
+
+
+
+
 
 ## xdm:browserDetails
 ### Browser Details
@@ -150,6 +174,26 @@ The value of this property **must** be equal to one of the [known values below](
 | `oc3` | OC3 |
 | `lan` | LAN |
 | `modem` | Modem |
+
+
+
+
+## xdm:domain
+### Domain
+
+The domain of the users ISP.
+
+`xdm:domain`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:domain Type
+
+
+`string`
+
+
 
 
 

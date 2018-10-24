@@ -127,6 +127,16 @@
                     "type": "string",
                     "format": "ipv6",
                     "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. "
+                },
+                "xdm:domain": {
+                    "title": "Domain",
+                    "type": "string",
+                    "description": "The domain of the users ISP."
+                },
+                "xdm:ISP": {
+                    "title": "Internet Service Provider",
+                    "type": "string",
+                    "description": "The name of the user's Internet Service Provider"
                 }
             }
         }
@@ -158,7 +168,9 @@
             "xdm:operatingSystem": "MAC OS",
             "xdm:operatingSystemVersion": "10.13",
             "xdm:operatingSystemVendor": "Apple",
-            "xdm:connectionType": "cable"
+            "xdm:connectionType": "cable",
+            "xdm:domain": "verizon.com",
+            "xdm:ISP": "Verizon"
         }
     ]
 }

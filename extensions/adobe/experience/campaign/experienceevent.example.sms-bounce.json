@@ -73,5 +73,6 @@
     "xdm:reason": "undefined",
     "xdm:reasonMessage": "* Sent.",
     "xdm:quarantine": false
-  }
+  },
+  "https://ns.adobe.com/experience/campaign/eventSource": "pipelined-mta"
 }

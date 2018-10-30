@@ -1,0 +1,30 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/data/auxiliaryProperties",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Auxiliary Proprties",
+  "type": "object",
+  "description":
+    "Holds a map of additional properties which help define the instance of XDM. These properties may differ instance to instance.",
+  "properties": {
+    "auxiliaryProperties": {
+      "description":
+        "A map of properties which provide additional context or information. These keys are dynamic and their occurrence can differ for every XDM instance.",
+      "type": "object",
+      "meta:xdmType": "map",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "List of possible values to the key"
+      }
+    }
+  },
+  "meta:status": "experimental"
+}

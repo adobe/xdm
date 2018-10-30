@@ -32,8 +32,7 @@
                 }
             },
             "required": [
-                "@id",
-                "xdm:offset"
+                "@id"
             ]
         }
     },

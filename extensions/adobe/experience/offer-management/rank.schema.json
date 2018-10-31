@@ -22,13 +22,15 @@
           "description": "Offer priority",
           "minimum": 0
         }
-      },
-      "required": ["xdm:priority"]
+      }
     }
   },
   "allOf": [
     {
       "$ref": "#/definitions/rank"
+    },
+    {
+      "required": ["xdm:priority"]
     }
   ]
 }

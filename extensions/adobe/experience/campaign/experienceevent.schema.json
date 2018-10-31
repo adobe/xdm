@@ -300,6 +300,32 @@
           "type": "string",
           "description":
             "The identifier denoting the container with which campaign experience event is associated."
+        },
+        "https://ns.adobe.com/experience/campaign/eventSource": {
+          "title": "Event Source",
+          "type": "string",
+          "meta:enum": {
+            "replay-pipelined-mta":
+              "This event was generated via Replay Utility tool generated from Pipelined",
+            "replay-pipelined-inMail":
+              "This event was generated via Replay Utility tool generated from Pipelined",
+            "replay-pipelined-trackinglogd":
+              "This event was generated via Replay Utility tool generated from Pipelined",
+            "replay-pipelined-pipelined":
+              "This event was generated via Replay Utility tool generated from Pipelined",
+            "pipelined-mta":
+              "This event was generated via Pipelined generated from mta",
+            "pipelined-inMail":
+              "This event was generated via Pipelined generated from inMail",
+            "pipelined-trackinglogd":
+              "This event was generated via Pipelined generated from trackinglogd",
+            "pipelined-pipelined":
+              "This event was generated via Pipelined generated from Pipelined",
+            "replay":
+              "This event was generated via Replay Utility tool which did not have any event source"
+          },
+          "description":
+            "A human-friendly name of the campaign activity which is originating this message."
         }
       }
     },

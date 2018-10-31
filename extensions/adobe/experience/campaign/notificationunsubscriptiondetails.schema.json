@@ -14,7 +14,7 @@
   "description":
     "Adobe Campaign notification unsubscriptions allow endusers opt out after opting into topics that can be used for communication such as Marketing subscription lists.",
   "definitions": {
-    "notificationUnSubscription": {
+    "notificationUnSubscriptionDetails": {
       "properties": {
         "xdm:unsubscriptionDate": {
           "title": "Unsubscription Date",
@@ -35,9 +35,9 @@
           "description":
             "A customer comment/remark that the enduser provided when unbsubscribing."
         }
-      }
-    },
-    "required": ["xdm:unsubscriptionDate"]
+      },
+      "required": ["xdm:unsubscriptionDate"]
+    }
   },
   "allOf": [
     {

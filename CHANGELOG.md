@@ -1,5 +1,24 @@
 # Changelog
 
+## Release 0.9.7
+
+[Released on October 30, 2018](https://github.com/adobe/xdm/releases/tag/v0.9.7)
+
+Fixed Issues
+
+* Implement a communications subscription Campaign extension
+  * PR #458 Implement a communications subscription Campaign extension
+* Add domain and ISP to environment
+  * PR #537 Add domain and ISP
+* Advertising break should not be required
+  * PR #539 Remove the requirement for offset in advertising break
+* Add xdm:localTimezoneOffset next to xdm:localTime under placecontext
+  * PR #554 Added xdm:localTimezoneOffset to context/placecontext #544
+
+Merged Pull Requests
+
+* #532 Add producer event source to message/event on pipeline
+
 ## Release 0.9.6
 
 [Released on September 28, 2018](https://github.com/adobe/xdm/releases/tag/v0.9.6)

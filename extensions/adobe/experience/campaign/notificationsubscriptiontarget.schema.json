@@ -14,7 +14,7 @@
   "description":
     "Target/destination for where to send/receive the notification.",
   "definitions": {
-    "notificationTarget": {
+    "notificationSubscriptionTarget": {
       "properties": {
         "xdm:emailAddress": {
           "title": "Address",

@@ -28,7 +28,7 @@ An individual person. May represent a person acting in various roles, such as a 
     "xdm:lastName": "Doe",
     "xdm:fullName": "Jane F. Doe"
   },
-  "xdm:birthDate": "1996-01-03"
+  "xdm:birthDayAndMonth": "01-03"
 }
 ```
 
@@ -40,7 +40,7 @@ An individual person. May represent a person acting in various roles, such as a 
     "xdm:lastName": "Doe",
     "xdm:fullName": "Jane F. Doe"
   },
-  "xdm:birthDayAndMonth": "01-03"
+  "xdm:birthDate": "1996-01-03"
 }
 ```
 

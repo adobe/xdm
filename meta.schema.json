@@ -126,7 +126,7 @@
       "type": "string",
       "minLength": 3
     },
-    "dcx:type": {
+    "dcx:typeRestriction": {
       "type": "string",
       "pattern": "^(\\w+|\\*)/([-.\\w.]+|\\*)\\+dcx$",
       "description":

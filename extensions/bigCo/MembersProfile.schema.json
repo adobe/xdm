@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/profile",
+  "$id": "https://ns.adobe.com/experience/membersprofile",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Big Company Experience Profile",
   "type": "object",
@@ -13,9 +13,9 @@
   "meta:extensible": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/record","https://ns.adobe.com/xdm/common/auditable","https://ns.adobe.com/xdm/context/identitymap","https://ns.adobe.com/xdm/context/profile-refactor", "https://ns.adobe.com/xdm/context/workaddress", "https://ns.adobe.com/xdm/bigCo/MemberWorkaddress"],
   "description":
-    "Adobe Experience Profile schema.",
+    "Big Co Member Profile schema.",
   "definitions": {
-    "profile": {
+    "bigcoprofile": {
       "properties": { }
     }
   },
@@ -39,7 +39,7 @@
       "$ref": "https://ns.adobe.com/xdm/data/record"
     },
     {
-      "$ref": "#/definitions/profile"
+      "$ref": "#/definitions/bigcoprofile"
     }
   ],
   "meta:status": "experimental"

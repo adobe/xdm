@@ -15,6 +15,12 @@
   "definitions": {
     "time-series": {
       "properties": {
+        "@id": {
+          "title": "Identifier",
+          "type": "string",
+          "format": "uri-reference",
+          "description": "The unique identifier for the ExperienceEvent."
+        },
         "xdm:timestamp": {
           "title": "Timestamp",
           "type": "string",
@@ -24,6 +30,9 @@
       }
     }
   },
+  "required": [
+    "@id"
+  ],
   "allOf": [
     {
       "$ref": "#/definitions/time-series"

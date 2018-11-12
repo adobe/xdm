@@ -12,14 +12,13 @@
   "auditable": true,
   "meta:extensible": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
-  "description":
-    "Adobe Experience Profile schema.",
+  "description": "Big Co Member Work Address schema.",
   "definitions": {
     "memberworkaddress": {
       "properties": {
         "xdm:workAddress": {
           "https://ns.adobe.com/xdm/bigco/MemberWorkaddressType": {
-            "title": "Type Of Work Location",
+            "title": "Type of Work Location",
             "type": "string",
             "description": "Indicates the type of work location."
           }

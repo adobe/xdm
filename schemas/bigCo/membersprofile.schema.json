@@ -11,7 +11,7 @@
   "type": "object",
   "auditable": true,
   "meta:extensible": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/record","https://ns.adobe.com/xdm/common/auditable","https://ns.adobe.com/xdm/context/identitymap","https://ns.adobe.com/xdm/context/profile-refactor", "https://ns.adobe.com/xdm/context/workaddress", "https://ns.adobe.com/xdm/bigCo/MemberWorkaddress"],
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record","https://ns.adobe.com/xdm/common/auditable","https://ns.adobe.com/xdm/context/identitymap","https://ns.adobe.com/xdm/context/profile-refactor", "https://ns.adobe.com/xdm/context/workaddress", "https://ns.adobe.com/bigco/memberworkaddress"],
   "description": "Big Co Member Profile schema.",
   "definitions": {
     "bigcoprofile": {
@@ -23,7 +23,7 @@
       "$ref": "https://ns.adobe.com/xdm/context/profile-refactor"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/context/workaddress"
+      "$ref": "https://ns.adobe.com/xdm/context/memberworkaddress"
     },
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"

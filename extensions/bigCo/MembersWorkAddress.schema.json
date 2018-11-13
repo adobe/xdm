@@ -17,7 +17,7 @@
     "memberworkaddress": {
       "properties": {
         "xdm:workAddress": {
-          "https://ns.adobe.com/xdm/bigco/MemberWorkaddressType": {
+          "https://ns.adobe.com/xdm/bigco/memberWorkaddressType": {
             "title": "Type of Work Location",
             "type": "string",
             "description": "Indicates the type of work location."
@@ -27,7 +27,7 @@
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/context/workaddress"
+      "$ref": "https://ns.adobe.com/xdm/context/profile-work-details"
     }
     {
       "$ref": "#/definitions/memberworkaddress"

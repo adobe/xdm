@@ -10,7 +10,7 @@
   "title": "Big Company Experience Profile",
   "type": "object",
   "meta:extensible": false,
-  "meta:abstract": false,
+  "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "description": "Big Co Member Work Address schema.",
   "definitions": {

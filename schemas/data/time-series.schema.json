@@ -19,7 +19,7 @@
           "title": "Identifier",
           "type": "string",
           "format": "uri-reference",
-          "description": "The unique identifier for the ExperienceEvent."
+          "description": "The unique identifier for the time-series event."
         },
         "xdm:timestamp": {
           "title": "Timestamp",

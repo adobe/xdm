@@ -9,7 +9,8 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Indicates the owning entities of this profile record.",
   "type": "object",
-  "meta:extensible": true,
+  "meta:extensible": false,
+  "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "description": "Work related end user profile information.",
   "definitions": {

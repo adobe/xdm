@@ -9,8 +9,8 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Big Company Experience Profile",
   "type": "object",
-  "auditable": true,
-  "meta:extensible": true,
+  "meta:extensible": false,
+  "meta:abstract": false,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "description": "Big Co Member Work Address schema.",
   "definitions": {

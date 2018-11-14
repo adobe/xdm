@@ -11,7 +11,20 @@
   "type": "object",
   "auditable": true,
   "meta:extensible": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/record","https://ns.adobe.com/xdm/common/auditable","https://ns.adobe.com/xdm/context/identitymap","https://ns.adobe.com/xdm/context/profile-refactor", "https://ns.adobe.com/xdm/context/profile-work-details"],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record",
+    "https://ns.adobe.com/xdm/common/auditable",
+    "https://ns.adobe.com/xdm/context/identitymap",
+    "https://ns.adobe.com/xdm/context/profile",
+    "https://ns.adobe.com/xdm/context/profile-person-details",
+    "https://ns.adobe.com/xdm/context/profile-personal-details",
+    "https://ns.adobe.com/xdm/context/profile-owning-entities",
+    "https://ns.adobe.com/xdm/context/profile-preference-details",
+    "https://ns.adobe.com/xdm/context/profile-push-details",
+    "https://ns.adobe.com/xdm/context/profile-segmentation",
+    "https://ns.adobe.com/xdm/context/profile-subscriptions",
+    "https://ns.adobe.com/xdm/context/profile-test-profile"
+  ],
   "description":
     "Adobe Experience Profile schema.",
   "definitions": {
@@ -21,13 +34,16 @@
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/context/profile-refactor"
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/profile"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/profile-personal-details"
     },
     {
       "$ref": "https://ns.adobe.com/xdm/context/profile-work-details"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
       "$ref": "https://ns.adobe.com/xdm/common/auditable"

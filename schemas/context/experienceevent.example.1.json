@@ -8,26 +8,17 @@
   "xdm:identityMap": {
     "https://data.adobe.io/entities/namespace/4": [
       {
-        "xdm:id": "92312748749128",
-        "xdm:namespace": {
-          "xdm:code": "ECID"
-        }
+        "xdm:id": "92312748749128"
       }
     ],
     "https://data.adobe.io/entities/namespace/10": [
       {
-        "xdm:id": "2394509340-30453470347",
-        "xdm:namespace": {
-          "xdm:code": "AVID"
-        }
+        "xdm:id": "2394509340-30453470347"
       }
     ],
     "https://data.adobe.io/entities/namespace/9": [
       {
-        "xdm:id": "1233ce17-20e0-4a2c-8198-2a77fd60cf4d",
-        "xdm:namespace": {
-          "xdm:code": "TNTID"
-        }
+        "xdm:id": "1233ce17-20e0-4a2c-8198-2a77fd60cf4d"
       }
     ]
   },
@@ -129,26 +120,13 @@
         }
       },
       "xdm:version": "1.0",
-      "xdm:identities": [
-        {
-          "xdm:id": "92312748749128",
-          "xdm:namespace": {
-            "xdm:code": "ECID"
-          }
-        },
-        {
-          "xdm:id": "62312748749321",
-          "xdm:namespace": {
-            "xdm:code": "ECID"
-          }
-        },
-        {
-          "xdm:id": "49312748749132",
-          "xdm:namespace": {
-            "xdm:code": "ECID"
-          }
-        }
-      ]
+      "xdm:identityNap": {
+        "ECID": [
+          { "xdm:id": "https://data.adobe.io/entities/identity/92312748749128" },
+          { "xdm:id": "https://data.adobe.io/entities/identity/62312748749321" },
+          { "xdm:id": "https://data.adobe.io/entities/identity/49312748749132" }
+        ]
+      }
     }
   ],
   "xdm:segmentMemberships": [

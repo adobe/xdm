@@ -1,19 +1,13 @@
 {
    "xdm:identityMap": {
-    "https://data.adobe.io/entities/namespace/4": [
+    "ECID": [
       {
-        "xdm:id": "92312748749128",
-        "xdm:namespace": {
-          "xdm:code": "ECID"
-        }
+        "xdm:id": "92312748749128"
       }
     ],
-    "https://data.adobe.io/entities/namespace/6": [
+    "EMAIL": [
       {
-        "xdm:id": "jane@doe.com",
-        "xdm:namespace": {
-          "xdm:code": "EMAIL"
-        }
+        "xdm:id": "jane@doe.com"
       }
     ]
   },

@@ -27,7 +27,7 @@
           "type": "string",
           "title": "Name",
           "description":
-            "The Offer name. A human readable string to find one or more offers."
+            "The offer's name. A human readable string to find one or more offers."
         },
         "xdm:status": {
           "type": "string",
@@ -47,12 +47,12 @@
           "type": "array",
           "title": "Tags",
           "description":
-            "The set of tags associated with this offer. The tags are used in OfferFilter expressions to constrain the overal offer inventory to a topical sub set (category).",
+            "The set of tags associated with this offer. The tags are used in offer filter expressions to constrain the overal offer inventory to a topical sub set (category).",
           "items": {
             "type": "string",
             "format": "uri",
             "description":
-              "A reference to a Tag object. The value is the URI (@id) of the Tag that is referenced. See Tag schema https://ns.adobe.com/experience/offer-management/tag"
+              "An identifier of a Tag object. The value is the @id of the Tag that is referenced. See Tag schema https://ns.adobe.com/experience/offer-management/tag"
           }
         },
         "xdm:representations": {
@@ -76,13 +76,15 @@
           "description":
             "Custom metadata is a key-value map that allows the end-users to attach properties to individual offer instances. Any string can be used as a key name, the values are also strings."
         }
-      },
-      "required": ["xdm:name", "xdm:status"]
+      }
     }
   },
   "allOf": [
     {
       "$ref": "#/definitions/offer"
+    },
+    {
+      "required": ["xdm:name", "xdm:status"]
     }
   ]
 }

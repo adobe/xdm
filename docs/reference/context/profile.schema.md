@@ -60,13 +60,12 @@ for other Profile data such as preference, propensities and other attributes.
   ],
   "xdm:person": {
     "xdm:name": {
-      "xdm:givenName": "Jane",
+      "xdm:firstName": "Jane",
       "xdm:middleName": "F",
-      "xdm:surname": "Doe"
+      "xdm:lastName": "Doe",
+      "xdm:fullName": "Jane F. Doe"
     },
-    "xdm:birthMonth": 1,
-    "xdm:birthDay": 3,
-    "xdm:birthYear": 1996,
+    "xdm:birthDayAndMonth": "01-03",
     "xdm:gender": "female"
   },
   "xdm:workAddress": {

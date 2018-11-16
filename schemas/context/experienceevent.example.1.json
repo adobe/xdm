@@ -165,5 +165,20 @@
         "xdm:status": "realized"
       }
     }
-  ]
+  ],
+  "xdm:segmentMemberships": [
+    {
+      "xdm:segmentID": {
+        "@id": "https://data.adobe.io/entities/identity/92312748749128",
+        "xdm:namespace": {
+          "xdm:code": "AAM"
+        }
+      }
+    }
+  ],
+  "xdm:auxiliaryProperties": {
+	"d_device_is_robot": ["true"],
+	"d_logged_as_admin": ["0"],
+	"d_dma_code": ["a627hhj1", "0"]
+  }
 }

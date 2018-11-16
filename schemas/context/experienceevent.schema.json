@@ -132,6 +132,12 @@
           "items": {
             "$ref": "https://ns.adobe.com/xdm/context/segmentmembershipitem"
           }
+        },
+        "xdm:auxiliaryProperties": {
+          "title": "Auxiliary Properties",
+          "description": "Holds a map of additional properties that come with an event but can not be defined in schema beforehand. These may also differ instance to instance.",
+          "$ref": "https://ns.adobe.com/xdm/data/auxiliaryProperties",
+          "meta:status": "experimental"
         }
       },
       "required": [

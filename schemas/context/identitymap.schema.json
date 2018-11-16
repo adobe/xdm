@@ -16,7 +16,7 @@
       "additionalProperties": {
         "type": "array",
         "items": {
-          "$ref": "https://ns.adobe.com/xdm/context/identity"
+          "$ref": "https://ns.adobe.com/xdm/context/identityitem"
         }
       }
     }

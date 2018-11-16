@@ -12,7 +12,7 @@
   "type": "object",
   "title": "Capping Constraint",
   "description":
-    "Offer Capping Constraint is a component in a Personalization Offer that defines the parameters for capping. Capping is the process of limiting how many times an offer can be proposed, for an individual profile as well as across all profiles.",
+    "A capping constraint is a component in a personalized offer that defines the parameters for capping. Capping is the process of limiting how many times an offer can be proposed, for an individual profile as well as across all profiles.",
   "definitions": {
     "capping-constraint": {
       "type": "object",

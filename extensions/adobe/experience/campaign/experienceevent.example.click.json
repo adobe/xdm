@@ -81,5 +81,7 @@
   },
   "https://ns.adobe.com/experience/campaign/orchestration": {
     "xdm:eventID": "store-entry-beacon-triggered"
-  }
+  },
+  "https://ns.adobe.com/experience/campaign/eventSource":
+    "pipelined-trackinglogd"
 }

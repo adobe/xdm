@@ -12,7 +12,7 @@
   "type": "object",
   "title": "Offer Filter",
   "description":
-    "Filters are used to specify criteria for offer selection by topic or theme. The most common filter mechanism is by the tags that are associated with an offer. In general the Offer Filter selects a subset of Offers from the overall inventory, not based on the use case for the decisioning.",
+    "Filters are used to specify criteria for offer selection by topic or theme. The most common filter mechanism is by the tags that are associated with an offer. In general the offer filter selects a subset of offers from the overall inventory, not based on the use case for the decisioning.",
   "definitions": {
     "offer-filter": {
       "properties": {
@@ -29,21 +29,22 @@
           "description": "Filter name"
         },
         "xdm:value": {
-          "type": "object",
+          "$ref":
+            "https://ns.adobe.com/experience/offer-management/filter-expression",
           "title":
             "Expression taking offer XDM instances (list of trees) as input",
           "description":
-            "Contains the condition that is used to select offers based on a combination of tags or, directly, using the @id of offers",
-          "$ref":
-            "https://ns.adobe.com/experience/offer-management/filter-expression"
+            "Contains the condition that is used to select offers based on a combination of tags or, directly, using the @id of offers"
         }
-      },
-      "required": ["xdm:name", "xdm:value"]
+      }
     }
   },
   "allOf": [
     {
       "$ref": "#/definitions/offer-filter"
+    },
+    {
+      "required": ["xdm:name", "xdm:value"]
     }
   ]
 }

@@ -12,7 +12,11 @@
   "auditable": true,
   "meta:extensible": false,
   "meta:abstract": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/record","https://ns.adobe.com/xdm/common/auditable","https://ns.adobe.com/xdm/context/identitymap"],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record",
+    "https://ns.adobe.com/xdm/common/auditable",
+    "https://ns.adobe.com/xdm/context/identitymap"
+  ],
   "description":
     "XDM Profiles are a singular representation of the attributes of identified and partially identified persons. Profiles that are highly identified maybe used for personal communications or highly targeted engagements and can contain detailed personal information such as names, gender, date of birth, locations, and contact information like phone numbers and email addresses. Profiles may range to the other end of the identification spectrum where only anonymous behavioral signals are being observed and the amount of identification is simple browser cookies. In this latter case, the sparse Profile data is useful to build more knowledge on the interests and preferences of the anonymous profile, and over time can become richer as the person interacting with brand becomes more engaged and ultimately signs-on to notifications, subscriptions, purchases and other connections with the brand that enrich and fill out the profile. XDM Profile can contain personal information, identification information, contact\ndetails and communication preferences. Over time XDM Profile will expand to cater\nfor other Profile data such as preference, propensities and other attributes.\n\n",
   "definitions": {

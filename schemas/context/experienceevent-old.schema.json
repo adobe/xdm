@@ -14,16 +14,33 @@
   "definitions": {
     "experienceevent": {
       "properties": {
+        "@id": {
+          "title": "Identifier",
+          "type": "string",
+          "format": "uri-reference",
+          "description": "The unique identifier for the ExperienceEvent."
+        },
         "xdm:dataSource": {
           "title": "Data Source",
           "$ref": "https://ns.adobe.com/xdm/data/datasource",
           "description": "Globally unique identification of a data source."
+        },
+        "xdm:timestamp": {
+          "title": "Timestamp",
+          "type": "string",
+          "format": "date-time",
+          "description": "The time when the first event of the interaction occurred."
         },
         "xdm:receivedTimestamp": {
           "title": "Received Timestamp",
           "type": "string",
           "format": "date-time",
           "description": "The time at which this interaction was received by a server."
+        },
+        "xdm:endUserIDs": {
+          "title": "End User IDs",
+          "$ref": "https://ns.adobe.com/xdm/context/enduserids",
+          "description": "Condensed, normalized encapsulation of all end user identifiers."
         },
         "xdm:environment": {
           "title": "Environment",
@@ -116,7 +133,12 @@
             "$ref": "https://ns.adobe.com/xdm/context/segmentmembershipitem"
           }
         }
-      }
+      },
+      "required": [
+        "@id",
+        "xdm:timestamp",
+        "xdm:endUserIDs"
+      ]
     }
   },
   "allOf": [

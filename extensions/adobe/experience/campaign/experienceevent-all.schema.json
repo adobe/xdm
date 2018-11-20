@@ -5,14 +5,14 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/campaign/experienceevent",
+  "$id": "https://ns.adobe.com/experience/campaign/experienceevent-all",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Adobe Campaign ExperienceEvent Extension",
   "type": "object",
   "meta:extends": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Adobe Campaign extension to ExperienceEvent.",
   "definitions": {
-    "experienceevent": {
+    "campaign-experienceevent-all": {
       "properties": {
         "https://ns.adobe.com/experience/campaign/message": {
           "title": "A single message sent to a recipient.",
@@ -342,7 +342,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/experienceevent"
+      "$ref": "#/definitions/campaign-experienceevent-all"
     },
     {
       "$ref": "#/definitions/mutation"

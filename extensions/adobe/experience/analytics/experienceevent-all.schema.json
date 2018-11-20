@@ -5,12 +5,14 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/analytics/experienceevent",
+  "$id": "https://ns.adobe.com/experience/analytics/experienceevent-all",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Adobe Analytics Cloud Experience Event Extension",
+  "title": "Adobe Analytics Cloud Experience Event Full Extension",
   "type": "object",
-  "meta:extends": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "Adobe Analytics Cloud Experience Event Extension.",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "Adobe Analytics Cloud Experience Event Full Extension.",
   "definitions": {
     "experienceevent": {
       "properties": {

@@ -139,16 +139,7 @@
             "$ref": "https://ns.adobe.com/xdm/context/segmentmembershipitem"
           }
         }
-      },
-      "oneOf":[
-        { 
-          "required": [ "@id", "xdm:timestamp", "xdm:endUserIDs" ] 
-        },
-        { 
-          "required": [ "@id", "xdm:timestamp", "xdm:identityMap" ] 
-        }
-      ]
-      
+      }
     }
   },
   "allOf": [

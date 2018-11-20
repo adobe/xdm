@@ -32,7 +32,7 @@
   "description": "Adobe Experience Profile schema.",
   "definitions": {
     "experienceevent": {
-      "properties": { }
+      "properties": {}
     }
   },
   "allOf": [
@@ -61,7 +61,8 @@
       "$ref": "https://ns.adobe.com/xdm/context/experienceevent-directmarketing"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-environment-details"
+      "$ref":
+        "https://ns.adobe.com/xdm/context/experienceevent-environment-details"
     },
     {
       "$ref": "https://ns.adobe.com/xdm/context/experienceevent-marketing"
@@ -76,10 +77,12 @@
       "$ref": "https://ns.adobe.com/xdm/context/experienceevent-search"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-segmentmembership"
+      "$ref":
+        "https://ns.adobe.com/xdm/context/experienceevent-segmentmembership"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-technical-details"
+      "$ref":
+        "https://ns.adobe.com/xdm/context/experienceevent-technical-details"
     },
     {
       "$ref": "https://ns.adobe.com/xdm/context/experienceevent-web"

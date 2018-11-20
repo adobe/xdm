@@ -27,11 +27,10 @@
     "https://ns.adobe.com/xdm/context/profile-subscriptions",
     "https://ns.adobe.com/xdm/context/profile-test-profile"
   ],
-  "description":
-    "Adobe Experience Profile schema.",
+  "description": "Adobe Experience Profile schema.",
   "definitions": {
     "profile": {
-      "properties": { }
+      "properties": {}
     }
   },
   "allOf": [

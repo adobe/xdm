@@ -10,6 +10,7 @@
   "title": "Time-series base schema",
   "type": "object",
   "meta:extensible": true,
+  "meta:abstract": true,
   "description":
     "Time-series base schema. Used to be indicate time partitioned data usage semantics when composed into other schemas.",
   "definitions": {

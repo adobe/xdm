@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Profile Test Profile",
   "type": "object",
-  "meta:extensible": false,
+  "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "description": "Indicates the `profile` record is for use in testing/verification purposes and should not be automatically included in normal operation(s).",

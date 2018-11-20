@@ -10,6 +10,7 @@
   "title": "Record base schema",
   "type": "object",
   "meta:extensible": true,
+  "meta:abstract": true,
   "description":
     "Record base schema. Used to be indicate data record usage semantics when composed into other schemas.",
   "definitions": {

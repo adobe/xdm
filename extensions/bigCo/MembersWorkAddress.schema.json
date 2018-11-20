@@ -28,7 +28,7 @@
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/context/profile-work-details"
-    }
+    },
     {
       "$ref": "#/definitions/memberworkaddress"
     }

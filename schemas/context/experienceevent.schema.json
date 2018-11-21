@@ -43,11 +43,6 @@
           "$ref": "https://ns.adobe.com/xdm/context/enduserids",
           "description": "Condensed, normalized encapsulation of all end user identifiers. Deprecated, use `xdm:identityMap` instead"
         },
-        "xdm:identityMap": {
-          "title": "Identity Map",
-          "$ref": "https://ns.adobe.com/xdm/context/identitymap",
-          "description": "map containing the set of end user identities associated with this event"
-        },
         "xdm:environment": {
           "title": "Environment",
           "$ref": "https://ns.adobe.com/xdm/context/environment",
@@ -145,6 +140,9 @@
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/identitymap"
     },
     {
       "$ref": "#/definitions/experienceevent"

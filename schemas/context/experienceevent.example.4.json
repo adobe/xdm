@@ -1,19 +1,17 @@
 {
   "@id": "https://data.adobe.io/experienceid-123457",
   "xdm:timestamp": "2017-09-26T15:52:25+00:00",
-  "xdm:endUserIDs": {
-    "https://ns.adobe.com/experience/mcid": {
-      "@id": "https://data.adobe.io/entities/identity/92312748749128",
-      "xdm:namespace": {
-        "xdm:code": "ECID"
+  "xdm:identityMap": {
+    "https://data.adobe.io/entities/namespace/4": [
+      {
+        "xdm:id": "92312748749128"
       }
-    },
-    "https://ns.adobe.com/experience/aaid": {
-      "@id": "https://data.adobe.io/entities/identity/2394509340-30453470347",
-      "xdm:namespace": {
-        "xdm:code": "AVID"
+    ],
+    "https://data.adobe.io/entities/namespace/10": [
+      {
+        "xdm:id": "2394509340-30453470347"
       }
-    }
+    ]
   },
   "xdm:environment": {
     "xdm:browserDetails": {

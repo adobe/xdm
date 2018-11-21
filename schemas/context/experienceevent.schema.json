@@ -38,9 +38,15 @@
           "description": "The time at which this interaction was received by a server."
         },
         "xdm:endUserIDs": {
+          "meta:status": "deprecated",
           "title": "End User IDs",
           "$ref": "https://ns.adobe.com/xdm/context/enduserids",
-          "description": "Condensed, normalized encapsulation of all end user identifiers."
+          "description": "Condensed, normalized encapsulation of all end user identifiers. Deprecated, use `xdm:identityMap` instead"
+        },
+        "xdm:identityMap": {
+          "title": "Identity Map",
+          "$ref": "https://ns.adobe.com/xdm/context/identitymap",
+          "description": "map containing the set of end user identities associated with this event"
         },
         "xdm:environment": {
           "title": "Environment",
@@ -133,12 +139,7 @@
             "$ref": "https://ns.adobe.com/xdm/context/segmentmembershipitem"
           }
         }
-      },
-      "required": [
-        "@id",
-        "xdm:timestamp",
-        "xdm:endUserIDs"
-      ]
+      }
     }
   },
   "allOf": [

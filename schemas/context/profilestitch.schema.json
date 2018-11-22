@@ -23,11 +23,6 @@
           "type": "string",
           "description": "The version of the profile stitch definition used. Useful for debugging."
         },
-        "xdm:identityMap": {
-          "title": "Identity Map",
-          "$ref": "https://ns.adobe.com/xdm/context/identitymap",
-          "description": "map containing the set of end user identities associated with this event"
-        },
         "xdm:endUserIDs": {
           "meta:status": "deprecated",
           "title": "End User IDs",
@@ -38,6 +33,9 @@
     }
   },
   "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/identitymap"
+    },
     {
       "$ref": "#/definitions/profileStitch"
     }

@@ -186,6 +186,12 @@
               "description": "Mode of delivery for the messages sent.\n",
               "default": "one_time"
             },
+            "xdm:templateName": {
+              "title": "Delivery Template's Internal name",
+              "type": "string",
+              "description":
+                "A human-friendly identifier of the the parent entity (in case of event_based or continuous message Class) of the campaign activity originating this message."
+            },
             "xdm:templateID": {
               "title": "Identifier of the Template",
               "type": "integer",

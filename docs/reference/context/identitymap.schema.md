@@ -9,9 +9,28 @@ Defines a map containing a set of end user identities, keyed on either namespace
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Cannot be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/identitymap.schema.json](context/identitymap.schema.json) |
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/identitymap.schema.json](context/identitymap.schema.json) |
 
 ## IdentityMap Examples
+
+```json
+{
+  "EMAIL": [
+    {
+      "xdm:id": "92312748749128"
+    },
+    {
+      "xdm:id": "92312748749239"
+    }
+  ],
+  "CRM": [
+    {
+      "xdm:id": "2394509340-30453470347",
+      "xdm:authenticatedState": "authenticated"
+    }
+  ]
+}
+```
 
 ```json
 {
@@ -37,22 +56,32 @@ Defines a map containing a set of end user identities, keyed on either namespace
 }
 ```
 
-```json
-{
-  "EMAIL": [
-    {
-      "xdm:id": "92312748749128"
-    },
-    {
-      "xdm:id": "92312748749239"
-    }
-  ],
-  "CRM": [
-    {
-      "xdm:id": "2394509340-30453470347",
-      "xdm:authenticatedState": "authenticated"
-    }
-  ]
-}
-```
+
+# IdentityMap Properties
+
+| Property | Type | Required | Defined by |
+|----------|------|----------|------------|
+| [xdm:identityMap](#xdmidentitymap) | `object` | Optional | IdentityMap (this schema) |
+| `*` | any | Additional | this schema *allows* additional properties |
+
+## xdm:identityMap
+
+
+`xdm:identityMap`
+* is optional
+* type: `object`
+* defined in this schema
+
+### xdm:identityMap Type
+
+
+`object` with following properties:
+
+
+| Property | Type | Required
+|----------|------|----------|
+
+
+
+
 

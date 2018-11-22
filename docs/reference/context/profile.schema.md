@@ -150,7 +150,7 @@ for other Profile data such as preference, propensities and other attributes.
 | [xdm:homeAddress](#xdmhomeaddress) | Address | Optional | Profile (this schema) |
 | [xdm:homePhone](#xdmhomephone) | Phone Number | Optional | Profile (this schema) |
 | [xdm:identities](#xdmidentities) | Identity | Optional | Profile (this schema) |
-| [xdm:identityMap](#xdmidentitymap) | IdentityMap | Optional | Profile (this schema) |
+| [xdm:identityMap](#xdmidentitymap) | `object` | Optional | [IdentityMap](identitymap.schema.md#xdmidentitymap) |
 | [xdm:mobilePhone](#xdmmobilephone) | Phone Number | Optional | Profile (this schema) |
 | [xdm:modifiedByBatchID](#xdmmodifiedbybatchid) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmmodifiedbybatchid) |
 | [xdm:optInOut](#xdmoptinout) | OptInOut | Optional | Profile (this schema) |
@@ -376,19 +376,22 @@ All items must be of the type:
 
 
 ## xdm:identityMap
-### Identity Map
 
-map containing the set of end user identities associated with this event
 
 `xdm:identityMap`
 * is optional
-* type: IdentityMap
-* defined in this schema
+* type: `object`
+* defined in [IdentityMap](identitymap.schema.md#xdm:identityMap)
 
 ### xdm:identityMap Type
 
 
-* [IdentityMap](identitymap.schema.md) – `https://ns.adobe.com/xdm/context/identitymap`
+`object` with following properties:
+
+
+| Property | Type | Required
+|----------|------|----------|
+
 
 
 

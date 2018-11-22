@@ -13,8 +13,8 @@ Details about the ids that were joined by profile stitching.
 ## Schema Hierarchy
 
 * Profile Stitch `https://ns.adobe.com/xdm/context/profileStitch`
-  * [Profile Stitch Identity](profilestitchidentity.schema.md) `https://ns.adobe.com/xdm/context/profileStitchIdentity`
   * [IdentityMap](identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
+  * [Profile Stitch Identity](profilestitchidentity.schema.md) `https://ns.adobe.com/xdm/context/profileStitchIdentity`
   * [End User IDs](enduserids.schema.md) `https://ns.adobe.com/xdm/context/enduserids`
 
 
@@ -49,7 +49,7 @@ Details about the ids that were joined by profile stitching.
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [xdm:endUserIDs](#xdmenduserids) | End User IDs | Optional | Profile Stitch (this schema) |
-| [xdm:identityMap](#xdmidentitymap) | IdentityMap | Optional | Profile Stitch (this schema) |
+| [xdm:identityMap](#xdmidentitymap) | `object` | Optional | [IdentityMap](identitymap.schema.md#xdmidentitymap) |
 | [xdm:profileStitchID](#xdmprofilestitchid) | Profile Stitch Identity | Optional | Profile Stitch (this schema) |
 | [xdm:version](#xdmversion) | `string` | Optional | Profile Stitch (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -74,19 +74,22 @@ Condensed, normalized encapsulation of all end user identifiers. Deprecated
 
 
 ## xdm:identityMap
-### Identity Map
 
-map containing the set of end user identities associated with this event
 
 `xdm:identityMap`
 * is optional
-* type: IdentityMap
-* defined in this schema
+* type: `object`
+* defined in [IdentityMap](identitymap.schema.md#xdm:identityMap)
 
 ### xdm:identityMap Type
 
 
-* [IdentityMap](identitymap.schema.md) – `https://ns.adobe.com/xdm/context/identitymap`
+`object` with following properties:
+
+
+| Property | Type | Required
+|----------|------|----------|
+
 
 
 

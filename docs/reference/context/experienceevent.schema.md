@@ -14,9 +14,9 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
 
 * ExperienceEvent `https://ns.adobe.com/xdm/context/experienceevent`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [IdentityMap](identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
   * [Data Source](../data/datasource.schema.md) `https://ns.adobe.com/xdm/data/datasource`
   * [End User IDs](enduserids.schema.md) `https://ns.adobe.com/xdm/context/enduserids`
-  * [IdentityMap](identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
   * [Environment](environment.schema.md) `https://ns.adobe.com/xdm/context/environment`
   * [Device](device.schema.md) `https://ns.adobe.com/xdm/context/device`
   * [Commerce](commerce.schema.md) `https://ns.adobe.com/xdm/context/commerce`
@@ -33,6 +33,89 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
 
 
 ## ExperienceEvent Examples
+
+```json
+{
+  "@id": "https://data.adobe.io/experienceid-2345678",
+  "xdm:dataSource": {
+    "@id": "https://data.adobe.io/datasources/datasource-123",
+    "xdm:code": "DataSourceIntegrationCode-123"
+  },
+  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+  "xdm:identityMap": {
+    "ECID": [
+      {
+        "xdm:id": "92312748749128"
+      }
+    ],
+    "AVID": [
+      {
+        "xdm:id": "2394509340-30453470347"
+      }
+    ]
+  },
+  "xdm:environment": {
+    "xdm:type": "browser",
+    "xdm:browserDetails": {
+      "xdm:name": "Chrome",
+      "xdm:version": "63.0.3239",
+      "xdm:acceptLanguage": "en",
+      "xdm:cookiesEnabled": true,
+      "xdm:viewportHeight": 900,
+      "xdm:viewportWidth": 1680
+    },
+    "xdm:operatingSystem": "MAC OS",
+    "xdm:operatingSystemVersion": "10.13",
+    "xdm:connectionType": "cable"
+  },
+  "xdm:locationContext": {
+    "xdm:geo": {
+      "xdm:countryCode": "US",
+      "xdm:stateProvince": "CA",
+      "xdm:city": "Emeryville",
+      "xdm:dmaid": "99"
+    }
+  },
+  "xdm:web": {
+    "xdm:webPageView": {
+      "xdm:URL": "https://www.example.com"
+    },
+    "xdm:webReferrer": {
+      "xdm:URL": "https://www.examplereferrer.com/",
+      "xdm:domain": "examplereferrer.com"
+    }
+  },
+  "xdm:device": {
+    "xdm:type": "mobile",
+    "xdm:manufacturer": "Apple",
+    "xdm:model": "iPhone 6"
+  },
+  "xdm:advertising": {
+    "xdm:adViewability": {
+      "xdm:adUnitDepth": 0,
+      "xdm:viewportHeight": 1250,
+      "xdm:viewportWidth": 1600,
+      "xdm:adHeight": 250,
+      "xdm:adWidth": 300,
+      "xdm:playerVolume": 85,
+      "xdm:measurementEligible": true,
+      "xdm:implementationDetails": {
+        "xdm:name": "https://ns.adobe.com/experience/adcloud/viewability",
+        "xdm:version": "1"
+      },
+      "xdm:viewable": true,
+      "xdm:activeWindow": true,
+      "xdm:percentViewable": 89,
+      "xdm:viewableFirstQuartile": {
+        "xdm:value": 1
+      }
+    },
+    "xdm:firstQuartiles": {
+      "xdm:value": 1
+    }
+  }
+}
+```
 
 ```json
 {
@@ -292,89 +375,6 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
         }
       }
     ],
-    "xdm:type": "browser",
-    "xdm:browserDetails": {
-      "xdm:name": "Chrome",
-      "xdm:version": "63.0.3239",
-      "xdm:acceptLanguage": "en",
-      "xdm:cookiesEnabled": true,
-      "xdm:viewportHeight": 900,
-      "xdm:viewportWidth": 1680
-    },
-    "xdm:operatingSystem": "MAC OS",
-    "xdm:operatingSystemVersion": "10.13",
-    "xdm:connectionType": "cable"
-  },
-  "xdm:locationContext": {
-    "xdm:geo": {
-      "xdm:countryCode": "US",
-      "xdm:stateProvince": "CA",
-      "xdm:city": "Emeryville",
-      "xdm:dmaid": "99"
-    }
-  },
-  "xdm:web": {
-    "xdm:webPageView": {
-      "xdm:URL": "https://www.example.com"
-    },
-    "xdm:webReferrer": {
-      "xdm:URL": "https://www.examplereferrer.com/",
-      "xdm:domain": "examplereferrer.com"
-    }
-  },
-  "xdm:device": {
-    "xdm:type": "mobile",
-    "xdm:manufacturer": "Apple",
-    "xdm:model": "iPhone 6"
-  },
-  "xdm:advertising": {
-    "xdm:adViewability": {
-      "xdm:adUnitDepth": 0,
-      "xdm:viewportHeight": 1250,
-      "xdm:viewportWidth": 1600,
-      "xdm:adHeight": 250,
-      "xdm:adWidth": 300,
-      "xdm:playerVolume": 85,
-      "xdm:measurementEligible": true,
-      "xdm:implementationDetails": {
-        "xdm:name": "https://ns.adobe.com/experience/adcloud/viewability",
-        "xdm:version": "1"
-      },
-      "xdm:viewable": true,
-      "xdm:activeWindow": true,
-      "xdm:percentViewable": 89,
-      "xdm:viewableFirstQuartile": {
-        "xdm:value": 1
-      }
-    },
-    "xdm:firstQuartiles": {
-      "xdm:value": 1
-    }
-  }
-}
-```
-
-```json
-{
-  "@id": "https://data.adobe.io/experienceid-2345678",
-  "xdm:dataSource": {
-    "@id": "https://data.adobe.io/datasources/datasource-123",
-    "xdm:code": "DataSourceIntegrationCode-123"
-  },
-  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
-  "xdm:identityMap": {
-    "ECID": [
-      {
-        "xdm:id": "92312748749128"
-      }
-    ],
-    "AVID": [
-      {
-        "xdm:id": "2394509340-30453470347"
-      }
-    ]
-  },
-  "xdm:environment": {
     "xdm:type": "browser",
     "xdm:browserDetails": {
       "xdm:name": "Chrome",
@@ -805,7 +805,7 @@ The core ExperienceEvent XDM is used to capture observations that are altering o
 | [xdm:directMarketing](#xdmdirectmarketing) | Direct Marketing | Optional | ExperienceEvent (this schema) |
 | [xdm:endUserIDs](#xdmenduserids) | End User IDs | Optional | ExperienceEvent (this schema) |
 | [xdm:environment](#xdmenvironment) | Environment | Optional | ExperienceEvent (this schema) |
-| [xdm:identityMap](#xdmidentitymap) | IdentityMap | Optional | ExperienceEvent (this schema) |
+| [xdm:identityMap](#xdmidentitymap) | `object` | Optional | [IdentityMap](identitymap.schema.md#xdmidentitymap) |
 | [xdm:marketing](#xdmmarketing) | Marketing | Optional | ExperienceEvent (this schema) |
 | [xdm:media](#xdmmedia) | Media Information | Optional | ExperienceEvent (this schema) |
 | [xdm:placeContext](#xdmplacecontext) | Place Context | Optional | ExperienceEvent (this schema) |
@@ -1012,19 +1012,22 @@ Information about the surrounding situation the event observation occurred in, s
 
 
 ## xdm:identityMap
-### Identity Map
 
-map containing the set of end user identities associated with this event
 
 `xdm:identityMap`
 * is optional
-* type: IdentityMap
-* defined in this schema
+* type: `object`
+* defined in [IdentityMap](identitymap.schema.md#xdm:identityMap)
 
 ### xdm:identityMap Type
 
 
-* [IdentityMap](identitymap.schema.md) – `https://ns.adobe.com/xdm/context/identitymap`
+`object` with following properties:
+
+
+| Property | Type | Required
+|----------|------|----------|
+
 
 
 

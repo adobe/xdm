@@ -25,11 +25,6 @@
                     "minItems": 1,
                     "description": "Array of Identities. Condensed, normalized encapsulation of all end user identifiers.  Deprecated, use `xdm:identityMap` instead"
                 },
-                "xdm:identityMap": {
-                    "title": "Identity Map",
-                    "$ref": "https://ns.adobe.com/xdm/context/identitymap",
-                    "description": "map containing the set of end user identities associated with this event"
-                },
                 "xdm:person": {
                     "title": "Person",
                     "$ref": "https://ns.adobe.com/xdm/context/person",
@@ -170,6 +165,9 @@
         },
         {
             "$ref": "https://ns.adobe.com/xdm/common/auditable"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/context/identitymap"
         },
         {
             "$ref": "#/definitions/profile"

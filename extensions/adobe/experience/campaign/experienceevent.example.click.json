@@ -69,7 +69,8 @@
     "xdm:from": "no-reply@adobe.com",
     "xdm:testEnabled": true,
     "xdm:messageClass": "messageCenter",
-    "xdm:templateID": 1100
+    "xdm:templateID": 1100,
+    "xdm:templateName": "Mastering Stuff Series"
   },
   "https://ns.adobe.com/experience/campaign/link": {
     "xdm:id": "98765",

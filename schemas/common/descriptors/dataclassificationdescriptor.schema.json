@@ -1,0 +1,49 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/common/desciptors/dataclassificationdescriptor",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Data Classification Descriptor",
+  "meta:extensible": true,
+  "meta:abstract": false,
+  "type": "object",
+  "description":
+  "Data compliance level of XDM schema properties.",
+  "definitions": {
+    "descriptor": {
+      "properties": {
+        "xdm:restricted": {
+          "title": "Restricted",
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Restricted classification"
+        },
+        "xdm:confidential": {
+          "title": "Confidential",
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Confidential classification"
+        },
+        "xdm:internal": {
+          "title": "Internal",
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Internal classification"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/descriptor"
+    }
+  ],
+  "meta:status": "experimental"
+}

@@ -125,6 +125,12 @@
     "title": {
       "type": "string",
       "minLength": 3
+    },
+    "dcx:typeRestriction": {
+      "type": "string",
+      "pattern": "^(\\w+|\\*)/([-.\\w.]+|\\*)\\+dcx$",
+      "description":
+        "The DCX format or group of formats this schema can be applied to in validation workflows."
     }
   },
   "allOf": [

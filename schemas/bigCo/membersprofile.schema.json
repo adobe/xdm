@@ -18,7 +18,7 @@
     "https://ns.adobe.com/xdm/context/identitymap",
     "https://ns.adobe.com/xdm/context/profile",
     "https://ns.adobe.com/xdm/context/profile-work-details",
-    "https://ns.adobe.com/bigco/memberworkaddress"],
+    "https://ns.adobe.com/bigco/membersworkaddress"],
   "description": "Big Co Member Profile schema.",
   "definitions": {
     "bigcoprofile": {

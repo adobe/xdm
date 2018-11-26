@@ -1,5 +1,19 @@
 # Changelog
 
+## Release 0.9.8
+
+[Released on November 26, 2018](https://github.com/adobe/xdm/releases/tag/v0.9.8)
+
+Fixed Issues
+
+* Add Human Friendly Delivery Template Name in ExperienceEvents
+  * PR #559 Add templateName to experienceevent campaign extension.
+
+Merged Pull Requests
+
+* #523 Unify representation of end-user identity between ExperienceEvent and Profile
+* #552 Added dcx JSON-LD prefix definition & dcx:type property to the meta schema
+
 ## Release 0.9.7
 
 [Released on October 30, 2018](https://github.com/adobe/xdm/releases/tag/v0.9.7)

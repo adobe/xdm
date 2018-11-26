@@ -57,6 +57,9 @@
     },
     {
       "$ref": "https://ns.adobe.com/experience/implementation-ext"
+    },
+    {
+      "$ref": "#/definitions/target-experienceevent"
     }
   ],
   "meta:status": "experimental"

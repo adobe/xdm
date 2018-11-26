@@ -17,6 +17,7 @@
     "profile": {
       "properties": {
         "xdm:identities": {
+          "meta:status": "deprecated",
           "title": "All User Identities",
           "type": "array",
           "items": {
@@ -24,7 +25,7 @@
           },
           "minItems": 1,
           "description":
-            "Array of Identities. Condensed, normalized encapsulation of all end user identifiers."
+            "Array of Identities. Condensed, normalized encapsulation of all end user identifiers.  Deprecated, use `xdm:identityMap` instead"
         },
         "xdm:person": {
           "title": "Person",
@@ -168,6 +169,9 @@
     },
     {
       "$ref": "https://ns.adobe.com/xdm/common/auditable"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/identitymap"
     },
     {
       "$ref": "#/definitions/profile"

@@ -14,6 +14,7 @@ Identity is used to clearly distinguish people that are interacting with digital
 
 * Identity `https://ns.adobe.com/xdm/context/identity`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Identity Item](identityitem.schema.md) `https://ns.adobe.com/xdm/context/identityitem`
   * [Namespace](namespace.schema.md) `https://ns.adobe.com/xdm/context/namespace`
 
 
@@ -43,10 +44,10 @@ Identity is used to clearly distinguish people that are interacting with digital
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:authenticatedState](#xdmauthenticatedstate) | `enum` | Optional | Identity (this schema) |
-| [xdm:id](#xdmid) | `string` | Optional | Identity (this schema) |
+| [xdm:authenticatedState](#xdmauthenticatedstate) | `enum` | Optional | [Identity Item](identityitem.schema.md#xdmauthenticatedstate) |
+| [xdm:id](#xdmid) | `string` | Optional | [Identity Item](identityitem.schema.md#xdmid) |
 | [xdm:namespace](#xdmnamespace) | Namespace | Optional | Identity (this schema) |
-| [xdm:primary](#xdmprimary) | `boolean` | Optional | Identity (this schema) |
+| [xdm:primary](#xdmprimary) | `boolean` | Optional | [Identity Item](identityitem.schema.md#xdmprimary) |
 | [xdm:xid](#xdmxid) | `string` | Optional | Identity (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -57,7 +58,7 @@ The state this identity is authenticated as for this observed ExperienceEvent.
 `xdm:authenticatedState`
 * is optional
 * type: `enum`
-* defined in this schema
+* defined in [Identity Item](identityitem.schema.md#xdm:authenticatedState)
 
 The value of this property **must** be equal to one of the [known values below](#xdm:authenticatedState-known-values).
 
@@ -79,7 +80,7 @@ Identity of the consumer in the related namespace.
 `xdm:id`
 * is optional
 * type: `string`
-* defined in this schema
+* defined in [Identity Item](identityitem.schema.md#xdm:id)
 
 ### xdm:id Type
 
@@ -118,7 +119,7 @@ Indicates this identity is the preferred identity. Is used as a hint to help sys
 `xdm:primary`
 * is optional
 * type: `boolean`
-* defined in this schema
+* defined in [Identity Item](identityitem.schema.md#xdm:primary)
 
 ### xdm:primary Type
 

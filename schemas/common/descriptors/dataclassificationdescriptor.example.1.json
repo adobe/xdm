@@ -1,0 +1,10 @@
+{
+  "@context": {
+    "xdm": "https://ns.adobe.com/xdm/"
+  },
+  "oneOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/desciptors/dataclassificationdescriptor"
+    }
+  ]
+}

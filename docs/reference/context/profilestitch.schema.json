@@ -23,6 +23,16 @@
                     "type": "string",
                     "description": "The version of the profile stitch definition used. Useful for debugging."
                 },
+                "xdm:identities": {
+                    "meta:status": "deprecated",
+                    "title": "All User Identities",
+                    "type": "array",
+                    "items": {
+                        "$ref": "https://ns.adobe.com/xdm/context/identity"
+                    },
+                    "minItems": 1,
+                    "description": "Array of Identities. Condensed, normalized encapsulation of all end user identifiers. Deprecated."
+                },
                 "xdm:endUserIDs": {
                     "meta:status": "deprecated",
                     "title": "End User IDs",

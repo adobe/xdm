@@ -11,7 +11,6 @@
   "type": "object",
   "meta:extensible": true,
   "description": "Interaction details from inside the context of a loaded webpage.",
-  "meta:extensible": true,
   "definitions": {
     "webinteraction": {
       "properties": {

@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "description":
-    "Time-series technical class schema. Used to indicate the behaviour of time partitioned data semantics when composed into other Classes and Schemas.",
+    "Time-series technical class schema. Used to indicate the behaviour of time partitioned data semantic when composed into other Classes and Schemas.",
   "definitions": {
     "time-series": {
       "properties": {

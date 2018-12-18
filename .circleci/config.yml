@@ -40,7 +40,7 @@ jobs:
           name: Lint
           command: npm run lint
 
-  validate-json:
+  build:
     docker:
       # specify the version you desire here
       - image: circleci/node:7.10

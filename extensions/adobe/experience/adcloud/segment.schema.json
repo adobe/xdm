@@ -16,20 +16,17 @@
         "xdm:attributablePartnerId": {
           "title": "Attributable Partner ID",
           "type": "string",
-          "description":
-            "The segment provider who owns the attributableSegmentId."
+          "description": "The segment provider who owns the attributableSegmentId."
         },
         "xdm:attributableSegmentId": {
           "title": "Attributable Segment ID",
           "type": "string",
-          "description":
-            "The single segment accredit for user targeting among all the segments in the placement's targeting rule for the purposes of tracking costs and paying partners."
+          "description": "The single segment accredit for user targeting among all the segments in the placement's targeting rule for the purposes of tracking costs and paying partners."
         },
         "xdm:segments": {
           "title": "Segments",
           "type": "string",
-          "description":
-            "The intersection of the user segments that both: a) the user belonged to, and b) the ad was targeting. NOT the full list of segments that the user belonged to at the time of the auction."
+          "description": "The intersection of the user segments that both: a) the user belonged to, and b) the ad was targeting. NOT the full list of segments that the user belonged to at the time of the auction."
         }
       }
     }

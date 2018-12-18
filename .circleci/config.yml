@@ -119,11 +119,13 @@ workflows:
   build:
     jobs:
       - lint-json
-      - validate-json
+      - build:
+          requires:
+            - lint-json
       - generate-docs:
           filters:
             branches:
               only:
                 - master
           requires: 
-            - validate-json
+            - build

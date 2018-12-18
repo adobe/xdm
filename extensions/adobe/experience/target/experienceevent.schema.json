@@ -48,8 +48,7 @@
         "https://ns.adobe.com/experience/target/environmentID": {
           "title": "Environment Identifier",
           "type": "string",
-          "description":
-            "Identifier of the environment on which the event was processed."
+          "description": "Identifier of the environment on which the event was processed."
         },
         "https://ns.adobe.com/experience/target/activities": {
           "title": "Activities",
@@ -61,8 +60,7 @@
         },
         "https://ns.adobe.com/experience/target/supplementalDataID": {
           "title": "Supplemental Data Identifier",
-          "description":
-            "Identifier used to stitch Target events with Analytics events",
+          "description": "Identifier used to stitch Target events with Analytics events",
           "type": "string"
         }
       }

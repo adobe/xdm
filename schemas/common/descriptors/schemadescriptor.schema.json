@@ -11,8 +11,7 @@
   "meta:extensible": true,
   "meta:abstract": false,
   "type": "object",
-  "description":
-    "A descriptor that contains metadata about an XDM schema, including an optional property and array item selector, used to address the descriptor to a specific property or item.",
+  "description": "A descriptor that contains metadata about an XDM schema, including an optional property and array item selector, used to address the descriptor to a specific property or item.",
   "definitions": {
     "descriptor": {
       "properties": {
@@ -20,8 +19,7 @@
           "title": "Identifier",
           "type": "string",
           "format": "uri-reference",
-          "description":
-            "The unique identifier for the schema descriptor. This property is required when the descriptor is defined outside of the applicable schema, but is optional when applied via 'meta:descriptors'"
+          "description": "The unique identifier for the schema descriptor. This property is required when the descriptor is defined outside of the applicable schema, but is optional when applied via 'meta:descriptors'"
         },
         "@type": {
           "title": "Type",
@@ -33,21 +31,17 @@
           "title": "Source Schema",
           "type": "string",
           "format": "uri",
-          "description":
-            "The source schema this descriptor applies to. This property is required when the descriptor is defined outside of the applicable schema, but is optional when applied via 'meta:descriptors'"
+          "description": "The source schema this descriptor applies to. This property is required when the descriptor is defined outside of the applicable schema, but is optional when applied via 'meta:descriptors'"
         },
         "xdm:sourceProperty": {
           "title": "Source Property",
           "type": "string",
-          "description":
-            "When present, the property of the source schema to which this descriptor applies. This value is a JSON Pointer, applied to an instance of an object described by `xdm:sourceSchema`."
+          "description": "When present, the property of the source schema to which this descriptor applies. This value is a JSON Pointer, applied to an instance of an object described by `xdm:sourceSchema`."
         },
         "xdm:sourceItem": {
           "title": "Source Item",
-          "description":
-            "When present, the selector used to match a specific item in the array pointed to by `sourceProperty`",
-          "$ref":
-            "https://ns.adobe.com/xdm/common/descriptors/itemselector#/definitions/selector"
+          "description": "When present, the selector used to match a specific item in the array pointed to by `sourceProperty`",
+          "$ref": "https://ns.adobe.com/xdm/common/descriptors/itemselector#/definitions/selector"
         }
       }
     }

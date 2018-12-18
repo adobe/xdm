@@ -1,10 +1,8 @@
 {
-  "@id":
-    "https://events.adobe.io/events/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
+  "@id": "https://events.adobe.io/events/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
   "activitystreams:published": "2016-07-16T19:20:30+01:00",
   "activitystreams:to": {
-    "https://ns.adobe.com/adobecloudplatform/ims/user#id":
-      "C74F69D7594880280A495D09@AdobeID",
+    "https://ns.adobe.com/adobecloudplatform/ims/user#id": "C74F69D7594880280A495D09@AdobeID",
     "@type": "https://ns.adobe.com/adobecloudplatform/ims/user"
   },
   "@type": "https://ns.adobe.com/xdm/common/event/rejected",
@@ -15,8 +13,7 @@
   },
   "activitystreams:object": {
     "@type": "https://stock.adobe.com/content/json/2017-08-31",
-    "filename":
-      "2017-03-20T183243Z_131980992_RC110C7B3030_RTRMADP_0_BRAZIL-CORRUPTION-FOOD.JSON",
+    "filename": "2017-03-20T183243Z_131980992_RC110C7B3030_RTRMADP_0_BRAZIL-CORRUPTION-FOOD.JSON",
     "url": "http://s3.amazonaws.com/bucket/asset/file.jpg",
     "activitystreams:generator": {
       "name": "reuters"

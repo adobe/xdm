@@ -9,8 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Geo Circle",
   "type": "object",
-  "description":
-    "A circular region of a particular radius centered on a GeoCoordinate. Based on [schema.org](http://schema.org/GeoCircle)",
+  "description": "A circular region of a particular radius centered on a GeoCoordinate. Based on [schema.org](http://schema.org/GeoCircle)",
   "definitions": {
     "geocircle": {
       "properties": {
@@ -32,8 +31,7 @@
         "schema:radius": {
           "title": "Radius",
           "type": "number",
-          "description":
-            "The length of the radius of the circle. This value conforms to the WGS84 datum and is measured in meters."
+          "description": "The length of the radius of the circle. This value conforms to the WGS84 datum and is measured in meters."
         }
       }
     }

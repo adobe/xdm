@@ -9,8 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Rating",
   "type": "object",
-  "description":
-    "The rating of the show. Based on [www.iptc.org](https://www.iptc.org/std/videometadatahub/recommendation/pre-versions/IPTC-VideoMetadataHub-props-Rec_1.1.html)",
+  "description": "The rating of the show. Based on [www.iptc.org](https://www.iptc.org/std/videometadatahub/recommendation/pre-versions/IPTC-VideoMetadataHub-props-Rec_1.1.html)",
   "definitions": {
     "rating": {
       "properties": {
@@ -23,8 +22,7 @@
           "title": "Rating Source Link",
           "type": "string",
           "format": "uri",
-          "description":
-            "Link to the site and optionally the page of the party which has issued the rating value, linked resource should explain the rating rules."
+          "description": "Link to the site and optionally the page of the party which has issued the rating value, linked resource should explain the rating rules."
         }
       },
       "required": ["iptc4xmpExt:RatingValue", "iptc4xmpExt:RatingSourceLink"]

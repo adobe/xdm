@@ -12,14 +12,12 @@
   "meta:extensible": true,
   "type": "object",
   "title": "Fallback Offer",
-  "description":
-    "Fallback offer is a default offer used when there is no personalization offer left that satisfies all constraints",
+  "description": "Fallback offer is a default offer used when there is no personalization offer left that satisfies all constraints",
   "definitions": {
     "fallback-offer": {
       "allOf": [
         {
-          "$ref":
-            "https://ns.adobe.com/experience/offer-management/offer#/definitions/offer"
+          "$ref": "https://ns.adobe.com/experience/offer-management/offer#/definitions/offer"
         }
       ]
     }

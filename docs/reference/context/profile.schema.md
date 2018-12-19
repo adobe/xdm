@@ -32,6 +32,7 @@ for other Profile data such as preference, propensities and other attributes.
 * Profile `https://ns.adobe.com/xdm/context/profile`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Audit Trail](../common/auditable.schema.md) `https://ns.adobe.com/xdm/common/auditable`
+  * [IdentityMap](identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
   * [Person](person.schema.md) `https://ns.adobe.com/xdm/context/person`
   * [Address](../common/address.schema.md) `https://ns.adobe.com/xdm/common/address`
   * [Email Address](emailaddress.schema.md) `https://ns.adobe.com/xdm/context/emailaddress`
@@ -44,20 +45,18 @@ for other Profile data such as preference, propensities and other attributes.
 ## Profile Example
 ```json
 {
-  "xdm:identities": [
-    {
-      "xdm:id": "someone@example.com",
-      "xdm:namespace": {
-        "xdm:code": "Email"
+  "xdm:identityMap": {
+    "ECID": [
+      {
+        "xdm:id": "92312748749128"
       }
-    },
-    {
-      "xdm:id": "123-456",
-      "xdm:namespace": {
-        "xdm:code": "BB111"
+    ],
+    "EMAIL": [
+      {
+        "xdm:id": "jane@doe.com"
       }
-    }
-  ],
+    ]
+  },
   "xdm:person": {
     "xdm:name": {
       "xdm:firstName": "Jane",
@@ -151,6 +150,7 @@ for other Profile data such as preference, propensities and other attributes.
 | [xdm:homeAddress](#xdmhomeaddress) | Address | Optional | Profile (this schema) |
 | [xdm:homePhone](#xdmhomephone) | Phone Number | Optional | Profile (this schema) |
 | [xdm:identities](#xdmidentities) | Identity | Optional | Profile (this schema) |
+| [xdm:identityMap](#xdmidentitymap) | `object` | Optional | [IdentityMap](identitymap.schema.md#xdmidentitymap) |
 | [xdm:mobilePhone](#xdmmobilephone) | Phone Number | Optional | Profile (this schema) |
 | [xdm:modifiedByBatchID](#xdmmodifiedbybatchid) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmmodifiedbybatchid) |
 | [xdm:optInOut](#xdmoptinout) | OptInOut | Optional | Profile (this schema) |
@@ -352,7 +352,7 @@ Home phone number.
 ## xdm:identities
 ### All User Identities
 
-Array of Identities. Condensed, normalized encapsulation of all end user identifiers.
+Array of Identities. Condensed, normalized encapsulation of all end user identifiers.  Deprecated, use `xdm:identityMap` instead
 
 `xdm:identities`
 * is optional
@@ -369,6 +369,28 @@ All items must be of the type:
 * [Identity](identity.schema.md) – `https://ns.adobe.com/xdm/context/identity`
 
 
+
+
+
+
+
+
+## xdm:identityMap
+
+
+`xdm:identityMap`
+* is optional
+* type: `object`
+* defined in [IdentityMap](identitymap.schema.md#xdm:identityMap)
+
+### xdm:identityMap Type
+
+
+`object` with following properties:
+
+
+| Property | Type | Required
+|----------|------|----------|
 
 
 

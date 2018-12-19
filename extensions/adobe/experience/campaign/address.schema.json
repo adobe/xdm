@@ -17,8 +17,7 @@
         "https://ns.adobe.com/experience/campaign/addressErrorCount": {
           "title": "Address Error Count",
           "type": "integer",
-          "description":
-            "Number of consecutive errors when sending to this address."
+          "description": "Number of consecutive errors when sending to this address."
         },
         "https://ns.adobe.com/experience/campaign/addressQuality": {
           "title": "Address Quality",

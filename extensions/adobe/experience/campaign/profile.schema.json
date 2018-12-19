@@ -21,21 +21,17 @@
           "properties": {
             "xdm:emailScore": {
               "title": "Journey AI scores for Email Channel",
-              "$ref":
-                "https://ns.adobe.com/experience/campaign/journeyaiscores",
-              "description":
-                "Journey AI open, click and fatigue scores for email channel"
+              "$ref": "https://ns.adobe.com/experience/campaign/journeyaiscores",
+              "description": "Journey AI open, click and fatigue scores for email channel"
             }
           }
         },
         "xdm:notificationSubscriptions": {
           "title": "Adobe Campaign Notification Subscriptions",
           "type": "array",
-          "description":
-            "Adobe Campaign notification subscriptions are used to communicate with endusers that have enrolled for specific notifications.",
+          "description": "Adobe Campaign notification subscriptions are used to communicate with endusers that have enrolled for specific notifications.",
           "items": {
-            "$ref":
-              "https://ns.adobe.com/experience/campaign/notificationsubscription"
+            "$ref": "https://ns.adobe.com/experience/campaign/notificationsubscription"
           }
         }
       }

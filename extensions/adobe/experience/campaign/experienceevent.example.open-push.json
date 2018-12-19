@@ -70,11 +70,11 @@
     "xdm:id": 1001,
     "xdm:testEnabled": false,
     "xdm:messageClass": "messageCenter",
-    "xdm:templateID": 1100
+    "xdm:templateID": 1100,
+    "xdm:templateName": "Newsletters-Black Friday"
   },
   "https://ns.adobe.com/experience/campaign/orchestration": {
     "xdm:eventID": "store-entry-beacon-triggered"
   },
-  "https://ns.adobe.com/experience/campaign/eventSource":
-    "pipelined-trackinglogd"
+  "https://ns.adobe.com/experience/campaign/eventSource": "pipelined-trackinglogd"
 }

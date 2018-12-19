@@ -140,8 +140,7 @@ Next, they define an extension to `SchemaDescriptor` containing the in-use flag:
   },
   "allOf": [
     {
-      "$ref":
-        "https://ns.adobe.com/xdm/common/schemadescriptor#/definitions/descriptor"
+      "$ref": "https://ns.adobe.com/xdm/common/schemadescriptor#/definitions/descriptor"
     },
     {
       "$ref": "#/definitions/inusedescriptor"

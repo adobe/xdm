@@ -1,8 +1,7 @@
 {
   "@id": "https://www.example.com/offers/eligibility-rule/rule-0001",
   "xdm:name": "Californians with one or more purchases of more than $1000",
-  "xdm:valueAsText":
-    "homeAddress.stateOrProvince = \"CA\" AND (some x FROM xEvent WHERE commerce.order.priceTotal > 1000 AND x.commerce.order.currencyCode = \"USD\")",
+  "xdm:valueAsText": "homeAddress.stateOrProvince = \"CA\" AND (some x FROM xEvent WHERE commerce.order.priceTotal > 1000 AND x.commerce.order.currencyCode = \"USD\")",
   "xdm:value": {
     "nodeType": "fnApply",
     "fnName": "and",

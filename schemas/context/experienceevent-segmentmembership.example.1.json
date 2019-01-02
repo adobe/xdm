@@ -1,5 +1,5 @@
 {
-  "xdm:segmentMemberships": {
+  "xdm:segmentMemberships": [{
   	"xdm:segmentID": {
   	    "@id": "https://data.adobe.io/entities/segmentIdentity/92312748749128",
   	    "xdm:namespace": {
@@ -14,5 +14,5 @@
       "xdm:payloadPropensityValue": 0.5,
       "xdm:payloadType": "propensity"
      }
-  }
+  }]
 }

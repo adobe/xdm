@@ -7,13 +7,11 @@
   ],
   "$id": "https://ns.adobe.com/experience/experienceevent",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Adobe Experience Event base schema",
+  "title": "Adobe Experience Event All Mix-ins",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:extends": [
-    "https://ns.adobe.com/xdm/data/time-series",
-    "https://ns.adobe.com/xdm/context/identitymap",
     "https://ns.adobe.com/xdm/context/experienceevent-advertising",
     "https://ns.adobe.com/xdm/context/experienceevent-application",
     "https://ns.adobe.com/xdm/context/experienceevent-channel",
@@ -26,9 +24,13 @@
     "https://ns.adobe.com/xdm/context/experienceevent-search",
     "https://ns.adobe.com/xdm/context/experienceevent-segmentmembership",
     "https://ns.adobe.com/xdm/context/experienceevent-technical-details",
-    "https://ns.adobe.com/xdm/context/experienceevent-web"
+    "https://ns.adobe.com/xdm/context/experienceevent-web",
+    "https://ns.adobe.com/experience/analytics/experienceevent-all",
+    "https://ns.adobe.com/experience/adcloud/experienceevent-all",
+    "https://ns.adobe.com/experience/campaign/experienceevent-all",
+    "https://ns.adobe.com/experience/target/experienceevent-all"
   ],
-  "description": "Adobe Experience Event schema.",
+  "description": "Adobe Experience Event Mix-in with all Standard and Solution Mix-ins included.",
   "definitions": {
     "experienceevent": {
       "properties": { }
@@ -37,12 +39,6 @@
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/data/time-series"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/context/identitymap"
     },
     {
       "$ref": "https://ns.adobe.com/xdm/context/experienceevent-advertising"
@@ -85,6 +81,18 @@
     },
     {
       "$ref": "https://ns.adobe.com/xdm/context/experienceevent-web"
+    },
+    {
+      "$ref": "https://ns.adobe.com/experience/analytics/experienceevent-all"
+    },
+    {
+      "$ref": "https://ns.adobe.com/experience/adcloud/experienceevent-all"
+    },
+    {
+      "$ref": "https://ns.adobe.com/experience/campaign/experienceevent-all"
+    },
+    {
+      "$ref": "https://ns.adobe.com/experience/target/experienceevent-all"
     },
     {
       "$ref": "#/definitions/experienceevent"

@@ -16,64 +16,53 @@
       "properties": {
         "templated": {
           "type": "boolean",
-          "description":
-            "> Its value is boolean and SHOULD be true when the Link Object's `href` property is a URI Template.\\n\\nIts value SHOULD be considered false if it is undefined or any other value than `true`."
+          "description": "> Its value is boolean and SHOULD be true when the Link Object's `href` property is a URI Template.\\n\\nIts value SHOULD be considered false if it is undefined or any other value than `true`."
         },
         "href": {
-          "description":
-            "> If the value is a URI Template then the Link Object SHOULD have a `templated` attribute whose value is `true`",
+          "description": "> If the value is a URI Template then the Link Object SHOULD have a `templated` attribute whose value is `true`",
           "type": "string"
         },
         "type": {
           "type": "string",
           "pattern": "\\w+\\/[-.\\w]+(?:\\+[-.\\w]+)?",
-          "description":
-            "> Its value is a string used as a hint to indicate the media type expected when dereferencing the target resource."
+          "description": "> Its value is a string used as a hint to indicate the media type expected when dereferencing the target resource."
         },
         "deprecation": {
           "type": "string",
           "format": "uri",
-          "description":
-            "> Its presence indicates that the link is to be deprecated (i.e. removed) at a future date.  Its value is a URL that SHOULD provide further information about the deprecation."
+          "description": "> Its presence indicates that the link is to be deprecated (i.e. removed) at a future date.  Its value is a URL that SHOULD provide further information about the deprecation."
         },
         "name": {
           "type": "string",
-          "description":
-            "> Its value MAY be used as a secondary key for selecting Link Objects which share the same relation type."
+          "description": "> Its value MAY be used as a secondary key for selecting Link Objects which share the same relation type."
         },
         "profile": {
           "type": "string",
           "format": "uri",
-          "description":
-            "> Its value is a string which is a URI that hints about the profile (as defined by [I-D.wilde-profile-link](https://tools.ietf.org/html/draft-wilde-profile-link-04) of the target resource."
+          "description": "> Its value is a string which is a URI that hints about the profile (as defined by [I-D.wilde-profile-link](https://tools.ietf.org/html/draft-wilde-profile-link-04) of the target resource."
         },
         "title": {
           "type": "string",
-          "description":
-            "> Its value is a string and is intended for labelling the link with a human-readable identifier (as defined by [RFC5988](https://tools.ietf.org/html/rfc5988))"
+          "description": "> Its value is a string and is intended for labelling the link with a human-readable identifier (as defined by [RFC5988](https://tools.ietf.org/html/rfc5988))"
         },
         "hreflang": {
           "type": "string",
-          "pattern":
-            "^(((([A-Za-z]{2,3}(-([A-Za-z]{3}(-[A-Za-z]{3}){0,2}))?)|[A-Za-z]{4}|[A-Za-z]{5,8})(-([A-Za-z]{4}))?(-([A-Za-z]{2}|[0-9]{3}))?(-([A-Za-z0-9]{5,8}|[0-9][A-Za-z0-9]{3}))*(-([0-9A-WY-Za-wy-z](-[A-Za-z0-9]{2,8})+))*(-(x(-[A-Za-z0-9]{1,8})+))?)|(x(-[A-Za-z0-9]{1,8})+)|((en-GB-oed|i-ami|i-bnn|i-default|i-enochian|i-hak|i-klingon|i-lux|i-mingo|i-navajo|i-pwn|i-tao|i-tay|i-tsu|sgn-BE-FR|sgn-BE-NL|sgn-CH-DE)|(art-lojban|cel-gaulish|no-bok|no-nyn|zh-guoyu|zh-hakka|zh-min|zh-min-nan|zh-xiang)))$",
-          "description":
-            "> Its value is a string and is intended for indicating the language of the target resource (as defined by [RFC5988](https://tools.ietf.org/html/rfc5988)"
+          "pattern": "^(((([A-Za-z]{2,3}(-([A-Za-z]{3}(-[A-Za-z]{3}){0,2}))?)|[A-Za-z]{4}|[A-Za-z]{5,8})(-([A-Za-z]{4}))?(-([A-Za-z]{2}|[0-9]{3}))?(-([A-Za-z0-9]{5,8}|[0-9][A-Za-z0-9]{3}))*(-([0-9A-WY-Za-wy-z](-[A-Za-z0-9]{2,8})+))*(-(x(-[A-Za-z0-9]{1,8})+))?)|(x(-[A-Za-z0-9]{1,8})+)|((en-GB-oed|i-ami|i-bnn|i-default|i-enochian|i-hak|i-klingon|i-lux|i-mingo|i-navajo|i-pwn|i-tao|i-tay|i-tsu|sgn-BE-FR|sgn-BE-NL|sgn-CH-DE)|(art-lojban|cel-gaulish|no-bok|no-nyn|zh-guoyu|zh-hakka|zh-min|zh-min-nan|zh-xiang)))$",
+          "description": "> Its value is a string and is intended for indicating the language of the target resource (as defined by [RFC5988](https://tools.ietf.org/html/rfc5988)"
         }
       }
     },
     "hal-link-templated": {
       "properties": {
         "href": {
-          "description":
-            "> If the value is a URI Template then the Link Object SHOULD have a `templated` attribute whose value is `true`",
+          "description": "> If the value is a URI Template then the Link Object SHOULD have a `templated` attribute whose value is `true`",
           "type": "string",
           "pattern": "uri-template"
         },
         "templated": {
           "type": "boolean",
           "const": true,
-          "description":
-            "> Its value is boolean and SHOULD be true when the Link Object's `href` property is a URI Template.\\n\\nIts value SHOULD be considered false if it is undefined or any other value than `true`."
+          "description": "> Its value is boolean and SHOULD be true when the Link Object's `href` property is a URI Template.\\n\\nIts value SHOULD be considered false if it is undefined or any other value than `true`."
         }
       },
       "required": ["href", "templated"],
@@ -82,16 +71,14 @@
     "hal-link": {
       "properties": {
         "href": {
-          "description":
-            "> If the value is a URI Template then the Link Object SHOULD have a `templated` attribute whose value is `true`",
+          "description": "> If the value is a URI Template then the Link Object SHOULD have a `templated` attribute whose value is `true`",
           "type": "string",
           "format": "uri-reference"
         },
         "templated": {
           "type": "boolean",
           "default": false,
-          "description":
-            "> Its value is boolean and SHOULD be true when the Link Object's `href` property is a URI Template.\\n\\nIts value SHOULD be considered false if it is undefined or any other value than `true`."
+          "description": "> Its value is boolean and SHOULD be true when the Link Object's `href` property is a URI Template.\\n\\nIts value SHOULD be considered false if it is undefined or any other value than `true`."
         }
       },
       "required": ["href"],

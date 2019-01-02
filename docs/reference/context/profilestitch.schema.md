@@ -13,6 +13,7 @@ Details about the ids that were joined by profile stitching.
 ## Schema Hierarchy
 
 * Profile Stitch `https://ns.adobe.com/xdm/context/profileStitch`
+  * [IdentityMap](identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
   * [Profile Stitch Identity](profilestitchidentity.schema.md) `https://ns.adobe.com/xdm/context/profileStitchIdentity`
   * [End User IDs](enduserids.schema.md) `https://ns.adobe.com/xdm/context/enduserids`
 
@@ -27,17 +28,18 @@ Details about the ids that were joined by profile stitching.
     }
   },
   "xdm:version": "1.0",
-  "xdm:endUserIds": {
-    "https://ns.adobe.com/experience/mcid": {
-      "xdm:id": "https://data.adobe.io/entities/identity/92312748749128",
-      "additionalIDs": [
-        "https://data.adobe.io/entities/identity/62312748749321",
-        "https://data.adobe.io/entities/identity/49312748749132"
-      ],
-      "xdm:namespace": {
-        "xdm:code": "ECID"
+  "xdm:identityMap": {
+    "ECID": [
+      {
+        "xdm:id": "https://data.adobe.io/entities/identity/92312748749128"
+      },
+      {
+        "xdm:id": "https://data.adobe.io/entities/identity/62312748749321"
+      },
+      {
+        "xdm:id": "https://data.adobe.io/entities/identity/49312748749132"
       }
-    }
+    ]
   }
 }
 ```
@@ -48,6 +50,7 @@ Details about the ids that were joined by profile stitching.
 |----------|------|----------|------------|
 | [xdm:endUserIDs](#xdmenduserids) | End User IDs | Optional | Profile Stitch (this schema) |
 | [xdm:identities](#xdmidentities) | Identity | Optional | Profile Stitch (this schema) |
+| [xdm:identityMap](#xdmidentitymap) | `object` | Optional | [IdentityMap](identitymap.schema.md#xdmidentitymap) |
 | [xdm:profileStitchID](#xdmprofilestitchid) | Profile Stitch Identity | Optional | Profile Stitch (this schema) |
 | [xdm:version](#xdmversion) | `string` | Optional | Profile Stitch (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -74,7 +77,7 @@ Condensed, normalized encapsulation of all end user identifiers. Deprecated
 ## xdm:identities
 ### All User Identities
 
-Array of Identities. Condensed, normalized encapsulation of all end user identifiers.
+Array of Identities. Condensed, normalized encapsulation of all end user identifiers. Deprecated.
 
 `xdm:identities`
 * is optional
@@ -91,6 +94,28 @@ All items must be of the type:
 * [Identity](identity.schema.md) – `https://ns.adobe.com/xdm/context/identity`
 
 
+
+
+
+
+
+
+## xdm:identityMap
+
+
+`xdm:identityMap`
+* is optional
+* type: `object`
+* defined in [IdentityMap](identitymap.schema.md#xdm:identityMap)
+
+### xdm:identityMap Type
+
+
+`object` with following properties:
+
+
+| Property | Type | Required
+|----------|------|----------|
 
 
 

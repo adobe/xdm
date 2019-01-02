@@ -16,13 +16,14 @@
         "profile": {
             "properties": {
                 "xdm:identities": {
+                    "meta:status": "deprecated",
                     "title": "All User Identities",
                     "type": "array",
                     "items": {
                         "$ref": "https://ns.adobe.com/xdm/context/identity"
                     },
                     "minItems": 1,
-                    "description": "Array of Identities. Condensed, normalized encapsulation of all end user identifiers."
+                    "description": "Array of Identities. Condensed, normalized encapsulation of all end user identifiers.  Deprecated, use `xdm:identityMap` instead"
                 },
                 "xdm:person": {
                     "title": "Person",
@@ -166,26 +167,27 @@
             "$ref": "https://ns.adobe.com/xdm/common/auditable"
         },
         {
+            "$ref": "https://ns.adobe.com/xdm/context/identitymap"
+        },
+        {
             "$ref": "#/definitions/profile"
         }
     ],
     "meta:status": "experimental",
     "examples": [
         {
-            "xdm:identities": [
-                {
-                    "xdm:id": "someone@example.com",
-                    "xdm:namespace": {
-                        "xdm:code": "Email"
+            "xdm:identityMap": {
+                "ECID": [
+                    {
+                        "xdm:id": "92312748749128"
                     }
-                },
-                {
-                    "xdm:id": "123-456",
-                    "xdm:namespace": {
-                        "xdm:code": "BB111"
+                ],
+                "EMAIL": [
+                    {
+                        "xdm:id": "jane@doe.com"
                     }
-                }
-            ],
+                ]
+            },
             "xdm:person": {
                 "xdm:name": {
                     "xdm:firstName": "Jane",

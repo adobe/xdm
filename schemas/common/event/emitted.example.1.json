@@ -1,22 +1,18 @@
 {
-  "@id":
-    "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
+  "@id": "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
   "@type": "https://ns.adobe.com/xdm/common/event/emitted",
-  "xdm:objectType":
-    "https://osgi.org/javadoc/r4v42/org/osgi/service/event/Event.html#io/adobe/event/sample/sku",
+  "xdm:objectType": "https://osgi.org/javadoc/r4v42/org/osgi/service/event/Event.html#io/adobe/event/sample/sku",
   "activitystreams:published": "2016-07-16T19:20:30+01:00",
   "activitystreams:to": {
     "@type": "https://ns.adobe.com/adobecloudplatform/ims/organization",
-    "https://ns.adobe.com/adobecloudplatform/ims/organization#id":
-      "08B3E5CE5822FC520A494229@AdobeOrg"
+    "https://ns.adobe.com/adobecloudplatform/ims/organization#id": "08B3E5CE5822FC520A494229@AdobeOrg"
   },
   "activitystreams:generator": {
     "@type": "https://ns.adobe.com/xdm/content/repository",
     "xdm:root": "http://francois.corp.adobe.com:4502/"
   },
   "activitystreams:object": {
-    "@type":
-      "https://osgi.org/javadoc/r4v42/org/osgi/service/event/Event.html#io/adobe/event/sample/sku",
+    "@type": "https://osgi.org/javadoc/r4v42/org/osgi/service/event/Event.html#io/adobe/event/sample/sku",
     "topic": "io/adobe/event/sample/sku",
     "properties": {
       "type": "created",

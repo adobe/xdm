@@ -16,52 +16,44 @@
         "xdm:accountId": {
           "title": "Account ID",
           "type": "string",
-          "description":
-            "Unique identifier for the account this event is associated with."
+          "description": "Unique identifier for the account this event is associated with."
         },
         "xdm:campaignId": {
           "title": "Campaign ID",
           "type": "string",
-          "description":
-            "Unique identifier for the campaign which this event is associated with."
+          "description": "Unique identifier for the campaign which this event is associated with."
         },
         "xdm:placementId": {
           "title": "Placement ID",
           "type": "string",
-          "description":
-            "Unique identifier for the placement which this event is associated with."
+          "description": "Unique identifier for the placement which this event is associated with."
         },
         "xdm:packageId": {
           "title": "Package ID",
           "type": "string",
-          "description":
-            "Unique identifier for the package which this event is associated with."
+          "description": "Unique identifier for the package which this event is associated with."
         },
         "xdm:advertiserId": {
           "title": "Advertiser ID",
           "type": "string",
-          "description":
-            "Unique identifier for the advertiser which this event is associated with."
+          "description": "Unique identifier for the advertiser which this event is associated with."
         },
         "xdm:experimentId": {
           "title": "Experiment ID",
           "type": "string",
-          "description":
-            "Unique identifier for the experiment which this event is associated with."
+          "description": "Unique identifier for the experiment which this event is associated with."
         },
         "xdm:sampleGroupId": {
           "title": "Sample Group ID",
           "type": "string",
-          "description":
-            "Unique identifier for the sample group which this event is associated with."
+          "description": "Unique identifier for the sample group which this event is associated with."
         },
         "xdm:currency": {
           "title": "Account Currency",
           "type": "string",
           "examples": ["USD", "EUR"],
           "pattern": "^[A-Z]{3}$",
-          "description":
-            "The ISO 4217 billing currency code for the account this event is associated with."
+          "description": "The ISO 4217 billing currency code for the account this event is associated with."
         }
       }
     }

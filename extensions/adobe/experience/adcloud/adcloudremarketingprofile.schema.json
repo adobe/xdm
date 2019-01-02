@@ -18,11 +18,9 @@
           "title": "Synchronized segments",
           "type": "array",
           "items": {
-            "$ref":
-              "https://ns.adobe.com/experience/adcloud/syncedremarketingaudience"
+            "$ref": "https://ns.adobe.com/experience/adcloud/syncedremarketingaudience"
           },
-          "description":
-            "List of Search retargeting entities that have been synced with the adCloud partner to build audiences on the platform, e.g. RLSA for Google, WCA for Facebook"
+          "description": "List of Search retargeting entities that have been synced with the adCloud partner to build audiences on the platform, e.g. RLSA for Google, WCA for Facebook"
         }
       }
     }

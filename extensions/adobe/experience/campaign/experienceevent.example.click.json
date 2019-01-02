@@ -69,12 +69,12 @@
     "xdm:from": "no-reply@adobe.com",
     "xdm:testEnabled": true,
     "xdm:messageClass": "messageCenter",
-    "xdm:templateID": 1100
+    "xdm:templateID": 1100,
+    "xdm:templateName": "Mastering Stuff Series"
   },
   "https://ns.adobe.com/experience/campaign/link": {
     "xdm:id": "98765",
-    "xdm:url":
-      "https://newsletters.adobe.com/newsletter/101/mastering-xdm.html",
+    "xdm:url": "https://newsletters.adobe.com/newsletter/101/mastering-xdm.html",
     "xdm:occurrence": 2,
     "xdm:category": "Promotional Links",
     "xdm:label": "XDM information"
@@ -82,6 +82,5 @@
   "https://ns.adobe.com/experience/campaign/orchestration": {
     "xdm:eventID": "store-entry-beacon-triggered"
   },
-  "https://ns.adobe.com/experience/campaign/eventSource":
-    "pipelined-trackinglogd"
+  "https://ns.adobe.com/experience/campaign/eventSource": "pipelined-trackinglogd"
 }

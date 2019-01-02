@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "The Environment Details extension for ExperienceEvent.",
+  "description": "ExperienceEvent Environment Details.",
   "definitions": {
     "experienceevent-environment-details": {
       "properties": {

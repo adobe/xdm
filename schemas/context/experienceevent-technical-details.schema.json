@@ -7,12 +7,12 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/experienceevent-technical-details",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "ExperienceEvent",
+  "title": "ExperienceEvent Technical Details",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "The Technical Details extension for ExperienceEvent.",
+  "description": "Technical Details extension for ExperienceEvent.",
   "definitions": {
     "experienceevent-technical-details": {
       "properties": {

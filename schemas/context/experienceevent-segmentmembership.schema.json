@@ -7,18 +7,18 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/experienceevent-segmentmembership",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "ExperienceEvent Segment Membership extension",
+  "title": "ExperienceEvent Segment Membership Details",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "The Segment Membership extension for ExperienceEvent.",
+  "description": "ExperienceEvent Segment Membership Details.",
   "definitions": {
     "experienceevent-segmentmembership": {
       "properties": {
         "xdm:segmentMemberships": {
           "title": "Segment Memberships",
-          "description": "The segments associated with this experience event",
+          "description": "The segments associated with this ExperienceEvent",
           "type": "array",
           "items": {
             "$ref": "https://ns.adobe.com/xdm/context/segmentmembershipitem"

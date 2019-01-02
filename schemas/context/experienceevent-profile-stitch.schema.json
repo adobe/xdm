@@ -7,12 +7,12 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/experienceevent-profile-stitch",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "ExperienceEvent Profile Stitch Extension",
+  "title": "ExperienceEvent Profile Stitch Details",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "The Profile Stitch extension for ExperienceEvent.",
+  "description": "ExperienceEvent Profile Stitch Details.",
   "definitions": {
     "experienceevent-profile-stitch": {
       "properties": {

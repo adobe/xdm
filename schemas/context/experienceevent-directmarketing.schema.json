@@ -7,19 +7,19 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/experienceevent-directmarketing",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "ExperienceEvent for Direct Marketing",
+  "title": "ExperienceEvent Direct Marketing Details",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "The Direct Marketing extension for ExperienceEvent.",
+  "description": "ExperienceEvent Direct Marketing Details.",
   "definitions": {
     "experienceevent-directmarketing": {
       "properties": {
         "xdm:directMarketing": {
           "title": "Direct Marketing",
           "$ref": "https://ns.adobe.com/xdm/context/direct-marketing",
-          "description": "The events and properties related to direct/outbound marketing such as email, direct mail, texts and in-app notifications."
+          "description": "Events and properties related to direct/outbound marketing such as email, direct mail, texts and in-app notifications."
         }
       }
     }

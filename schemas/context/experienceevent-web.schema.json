@@ -7,12 +7,12 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/experienceevent-web",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "ExperienceEvent Web Extension",
+  "title": "ExperienceEvent Web Details",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "The web extension for ExperienceEvent.",
+  "description": "The web details for ExperienceEvents.",
   "definitions": {
     "experienceevent-web": {
       "properties": {

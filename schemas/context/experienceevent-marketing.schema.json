@@ -7,12 +7,12 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/experienceevent-marketing",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "ExperienceEvent extension for Marketing",
+  "title": "ExperienceEvent Details for Marketing",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "The Marketing extension for ExperienceEvent.",
+  "description": "ExperienceEvent Details for Marketing.",
   "definitions": {
     "experienceevent-marketing": {
       "properties": {

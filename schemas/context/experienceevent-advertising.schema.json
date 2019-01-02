@@ -7,19 +7,19 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/experienceevent-advertising",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "ExperienceEvent extension for Advertising",
+  "title": "ExperienceEvent Details for Advertising",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "The Advertising extension for ExperienceEvent.",
+  "description": "ExperienceEvent Details for Advertising.",
   "definitions": {
     "experienceevent-advertising": {
       "properties": {
         "xdm:advertising": {
           "title": "Advertising",
           "$ref": "https://ns.adobe.com/xdm/context/advertising",
-          "description": "The information related to advertising activity related to the experience event"
+          "description": "Information related to advertising activity in ExperienceEvents"
         }
       }
     }

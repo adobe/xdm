@@ -7,12 +7,12 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/experienceevent-commerce",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "ExperienceEvent Commerce Extension",
+  "title": "ExperienceEvent Commerce Details",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "The commerce extension for XDM Experience Events",
+  "description": "ExperienceEvent Commerce Details.",
   "definitions": {
     "experienceevent-commerce": {
       "properties": {
@@ -27,7 +27,7 @@
         "xdm:commerce": {
           "title": "Commerce",
           "$ref": "https://ns.adobe.com/xdm/context/commerce",
-          "description": "The commerce specific data related to this interaction."
+          "description": "Commerce specific data related to this event."
         }
       }
     }

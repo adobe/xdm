@@ -7,10 +7,10 @@
   ],
   "$id": "https://ns.adobe.com/experience/campaign-experienceevent",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Adobe Campaign ExperienceEvent Mix-in",
+  "title": "Adobe Campaign ExperienceEvent Mixin",
   "type": "object",
   "description":
-    "This Campaign ExperienceEvent Mix-in includes the core/standard ExperienceEvent as well as the required Adobe Campaign ExperienceEvent Mix-ins.",
+    "This Campaign ExperienceEvent Mixin includes the core/standard ExperienceEvent as well as the required Adobe Campaign ExperienceEvent Mixins.",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:extends": [

@@ -22,8 +22,7 @@
         },
         "xdm:fatigueLevel": {
           "title": "Fatigue Level",
-          "description":
-            "Classification of profile into different buckets, based on fatigue score",
+          "description": "Classification of profile into different buckets, based on fatigue score",
           "type": "string",
           "enum": ["low", "medium", "high"],
           "meta:enum": {

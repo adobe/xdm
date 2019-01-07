@@ -10,16 +10,14 @@
   "title": "Unified Profile Service extension to ExperienceEvent",
   "type": "object",
   "meta:extends": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description":
-    "Adobe Experience Cloud - Profile Service extensions to Experience Event.",
+  "description": "Adobe Experience Cloud - Profile Service extensions to Experience Event.",
   "definitions": {
     "experienceevent": {
       "properties": {
         "https://ns.adobe.com/experience/profile/originDatasetID": {
           "title": "Origin Dataset ID",
           "type": "string",
-          "description":
-            "Identity of the Dataset that the Profile Service ingested the data from. Usage is reserved for the Profile Service."
+          "description": "Identity of the Dataset that the Profile Service ingested the data from. Usage is reserved for the Profile Service."
         }
       }
     }

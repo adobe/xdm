@@ -9,8 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Adobe Analytics ExperienceEvent Mixin",
   "type": "object",
-  "description":
-    "This Analytics ExperienceEvent Mixin includes the core/standard ExperienceEvent as well as the required Adobe Analytics ExperienceEvent Mixins.",
+  "description": "This Analytics ExperienceEvent Mixin includes the core/standard ExperienceEvent as well as the required Adobe Analytics ExperienceEvent Mixins.",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:extends": [
@@ -35,7 +34,7 @@
   ],
   "definitions": {
     "analytics-experienceevent": {
-      "properties": { }
+      "properties": {}
     }
   },
   "allOf": [

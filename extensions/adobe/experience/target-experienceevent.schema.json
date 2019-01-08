@@ -9,8 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Adobe Target ExperienceEvent Mixin",
   "type": "object",
-  "description":
-    "This Target ExperienceEvent Mixin includes the core/standard ExperienceEvent as well as the required Adobe Target ExperienceEvent Mixins.",
+  "description": "This Target ExperienceEvent Mixin includes the core/standard ExperienceEvent as well as the required Adobe Target ExperienceEvent Mixins.",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:extends": [
@@ -34,7 +33,7 @@
   ],
   "definitions": {
     "target-experienceevent": {
-      "properties": { }
+      "properties": {}
     }
   },
   "allOf": [

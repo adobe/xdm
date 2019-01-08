@@ -6,14 +6,18 @@
   },
   "xdm:timestamp": "2017-09-26T15:52:25+00:00",
   "xdm:identityMap": {
-     "ECID": [{
+    "ECID": [
+      {
         "id": "68519882713298129995549973016107434638",
         "primary": true
-     }],
-     "CPGN": [{
+      }
+    ],
+    "CPGN": [
+      {
         "id": "https://data.adobe.io/entities/identity/1234567",
         "primary": true
-     }]
+      }
+    ]
   },
   "xdm:directMarketing": {
     "xdm:sends": {

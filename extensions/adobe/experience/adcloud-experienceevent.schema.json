@@ -9,8 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Adobe AdCloud ExperienceEvent Mixin",
   "type": "object",
-  "description":
-    "This AdCloud ExperienceEvent Mixin includes the core/standard ExperienceEvent as well as the required Adobe AdCloud ExperienceEvent Mixins.",
+  "description": "This AdCloud ExperienceEvent Mixin includes the core/standard ExperienceEvent as well as the required Adobe AdCloud ExperienceEvent Mixins.",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:extends": [
@@ -35,7 +34,7 @@
   ],
   "definitions": {
     "adcloud-experienceevent": {
-      "properties": { }
+      "properties": {}
     }
   },
   "allOf": [

@@ -6,14 +6,18 @@
   },
   "xdm:timestamp": "2017-09-26T15:52:25+00:00",
   "xdm:identityMap": {
-     "ECID": [{
+    "ECID": [
+      {
         "id": "68519882713298129995549973016107434638",
         "primary": true
-     }],
-     "AVID": [{
+      }
+    ],
+    "AVID": [
+      {
         "id": "2dfb7d8e00003ba4-056de00000000085",
         "primary": false
-     }]
+      }
+    ]
   },
   "xdm:channel": {
     "@id": "https://ns.adobe.com/xdm/channels/apns",
@@ -84,7 +88,7 @@
       "schema:longitude": 139.73237
     }
   },
-  "xdm:web":{
+  "xdm:web": {
     "xdm:webPageDetails": {
       "xdm:siteSection": "Shopping Cart",
       "xdm:server": "example.com",

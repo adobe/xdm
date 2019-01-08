@@ -12,7 +12,9 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "meta:extends": ["https://ns.adobe.com/experience/target/experienceevent-shared"],
+  "meta:extends": [
+    "https://ns.adobe.com/experience/target/experienceevent-shared"
+  ],
   "description": "Adobe Target extension to ExperienceEvent.",
   "definitions": {
     "target-experienceevent-all": {

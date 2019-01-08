@@ -12,8 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description":
-    "Adobe Experience Cloud - Profile Service extensions to Experience Event.",
+  "description": "Adobe Experience Cloud - Profile Service extensions to Experience Event.",
   "definitions": {
     "profile-experienceevent-shared": {
       "properties": {

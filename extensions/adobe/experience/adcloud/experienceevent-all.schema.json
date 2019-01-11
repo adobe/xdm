@@ -6,13 +6,15 @@
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "https://ns.adobe.com/experience/adcloud/experienceevent",
+  "$id": "https://ns.adobe.com/experience/adcloud/experienceevent-all",
   "title": "Adobe AdCloud ExperienceEvent Extension",
   "type": "object",
-  "meta:extends": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Adobe AdCloud extension to ExperienceEvent.",
   "definitions": {
-    "experienceevent": {
+    "experienceevent-all": {
       "properties": {
         "https://ns.adobe.com/experience/adcloud/eventType": {
           "title": "Event Type",
@@ -42,7 +44,7 @@
       "$ref": "https://ns.adobe.com/xdm/context/experienceevent#/definitions/experienceevent"
     },
     {
-      "$ref": "#/definitions/experienceevent"
+      "$ref": "#/definitions/experienceevent-all"
     }
   ],
   "meta:status": "experimental"

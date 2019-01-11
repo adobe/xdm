@@ -1,0 +1,16 @@
+{
+  "@id": "https://data.adobe.io/experienceid-123456",
+  "xdm:dataSource": {
+    "@id": "https://data.adobe.io/datasources/datasource-123",
+    "xdm:code": "DataSourceIntegrationCode-123"
+  },
+  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+  "xdm:identityMap": {
+    "ECID": [
+      {
+        "id": "68519882713298129995549973016107434638",
+        "primary": true
+      }
+    ]
+  }
+}

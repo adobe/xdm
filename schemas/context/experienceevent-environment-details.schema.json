@@ -1,0 +1,46 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/experienceevent-environment-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "ExperienceEvent Environment Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "ExperienceEvent Environment Details.",
+  "definitions": {
+    "experienceevent-environment-details": {
+      "properties": {
+        "xdm:environment": {
+          "title": "Environment",
+          "$ref": "https://ns.adobe.com/xdm/context/environment",
+          "description": "Information about the surrounding situation the event observation occurred in, specifically detailing transitory information such as the network or software versions."
+        },
+        "xdm:device": {
+          "title": "Device",
+          "$ref": "https://ns.adobe.com/xdm/context/device",
+          "description": "An identified Device/Application or Device/Browser instance that is trackable across sessions, normally by cookies."
+        },
+        "xdm:placeContext": {
+          "title": "Place Context",
+          "$ref": "https://ns.adobe.com/xdm/context/placecontext",
+          "description": "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, working hours."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/experienceevent-environment-details"
+    }
+  ],
+  "meta:status": "stabilizing"
+}

@@ -12,6 +12,7 @@
   "auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "meta:extends": [
     "https://ns.adobe.com/xdm/data/record",
     "https://ns.adobe.com/xdm/common/auditable",

@@ -23,12 +23,6 @@
           "items" : {
             "$ref": "https://ns.adobe.com/xdm/context/profileStitch"
           }
-        },
-        "xdm:profileStitching" : {
-          "meta:status": "deprecated",
-          "title": "Profile Stitching",
-          "description": "Details about the ids that were joined by profile stitching. Deprecated, use `xdm:profileStitch`",
-          "$ref": "https://ns.adobe.com/xdm/context/profileStitch"
         }
       }
     }

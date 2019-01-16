@@ -1,0 +1,37 @@
+{
+  "xdm:productListItems": [
+    {
+      "xdm:SKU": "1002352692",
+      "xdm:lineItemId": "12345678",
+      "xdm:name": "24-Watt 8-Light Chrome Integrated LED Bath Light",
+      "xdm:currencyCode": "USD",
+      "xdm:quantity": 1,
+      "xdm:priceTotal": 159.0
+    }
+  ],
+  "xdm:commerce": {
+    "xdm:order": {
+      "xdm:purchaseID": "a8g784hjq1mnp3",
+      "xdm:purchaseOrderNumber": "123456",
+      "xdm:payments": [
+        {
+          "xdm:transactionID": "transactid-a111",
+          "xdm:paymentAmount": 59.0,
+          "xdm:paymentType": "credit_card",
+          "xdm:currencyCode": "USD"
+        },
+        {
+          "xdm:transactionId": "transactid-a222",
+          "xdm:paymentAmount": 100.0,
+          "xdm:paymentType": "gift_card",
+          "xdm:currencyCode": "USD"
+        }
+      ],
+      "xdm:currencyCode": "USD",
+      "xdm:priceTotal": 159.0
+    },
+    "xdm:purchases": {
+      "xdm:value": 1.0
+    }
+  }
+}

@@ -43,9 +43,9 @@ One limitation of the equivalence of objects and maps in JSON and JSON Schema is
 
 In order to support "map-like" data efficiently in XDM, objects may be annotated with a `meta:xdmType` set to `map` to make it clear that an object should be managed as if the key set were unconstrained. XDM places the following restrictions on the use of this storage hint:
 
-* Properties that carry the `map` type MUST be of type "object"
-* Properties that carry the `map` type MUST NOT have properties defined (i.e. they define "empty" objects)
-* Properties that carry the `map` type MUST include a single "additionalProperties" schema that describes the values that may be placed within the map
+- Properties that carry the `map` type MUST be of type "object"
+- Properties that carry the `map` type MUST NOT have properties defined (i.e. they define "empty" objects)
+- Properties that carry the `map` type MUST include a single "additionalProperties" schema that describes the values that may be placed within the map
 
 ### Example Map in XDM
 

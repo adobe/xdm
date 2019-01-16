@@ -14,8 +14,7 @@
   ],
   "meta:abstract": false,
   "type": "object",
-  "description":
-    "A descriptor that describes a relationship between two schemas, a 'source' and a 'destination'.  This relationship may be directly between the schemas, or between specific properties of the schemas.  Relationship descriptors may be used to describe foreign key relationships between schemas, defining a relational model or star schema.",
+  "description": "A descriptor that describes a relationship between two schemas, a 'source' and a 'destination'.  This relationship may be directly between the schemas, or between specific properties of the schemas.  Relationship descriptors may be used to describe foreign key relationships between schemas, defining a relational model or star schema.",
   "definitions": {
     "relationshipdescriptor": {
       "properties": {
@@ -28,15 +27,12 @@
         "xdm:destinationProperty": {
           "title": "Destination Property",
           "type": "string",
-          "description":
-            "When present, the property of the destination schema to which this descriptor applies. This value is a JSON Pointer, applied to an instance of an object described by 'xdm:destSchema'"
+          "description": "When present, the property of the destination schema to which this descriptor applies. This value is a JSON Pointer, applied to an instance of an object described by 'xdm:destSchema'"
         },
         "xdm:destinationItem": {
           "title": "Destination Item",
-          "description":
-            "When present, the selector used to match a specific item in the array pointed to by destProperty",
-          "$ref":
-            "https://ns.adobe.com/xdm/common/descriptors/itemselector#/definitions/selector"
+          "description": "When present, the selector used to match a specific item in the array pointed to by destProperty",
+          "$ref": "https://ns.adobe.com/xdm/common/descriptors/itemselector#/definitions/selector"
         }
       },
       "required": ["xdm:destinationSchema"]
@@ -44,8 +40,7 @@
   },
   "allOf": [
     {
-      "$ref":
-        "https://ns.adobe.com/xdm/common/desciptors/schemadescriptor#/definitions/descriptor"
+      "$ref": "https://ns.adobe.com/xdm/common/desciptors/schemadescriptor#/definitions/descriptor"
     },
     {
       "$ref": "#/definitions/relationshipdescriptor"

@@ -24,8 +24,11 @@
         },
         "xdm:eventList": {
           "title": "Event List",
-          "$ref": "https://ns.adobe.com/xdm/data/time-series",
-          "description": "List of time-series based events that relate to schemas based on record."
+          "description": "List of time-series based events that relate to schemas based on record.",
+          "type": "array",
+          "items": {
+            "$ref": "https://ns.adobe.com/xdm/data/time-series"
+          }
         }
       }
     }

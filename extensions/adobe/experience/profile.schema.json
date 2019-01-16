@@ -26,7 +26,8 @@
     "https://ns.adobe.com/xdm/context/profile-push-details",
     "https://ns.adobe.com/xdm/context/profile-segmentation",
     "https://ns.adobe.com/xdm/context/profile-subscriptions",
-    "https://ns.adobe.com/xdm/context/profile-test-profile"
+    "https://ns.adobe.com/xdm/context/profile-test-profile",
+    "https://ns.adobe.com/xdm/context/profile-identities-deprecated"
   ],
   "description": "Adobe Experience Profile schema.",
   "definitions": {
@@ -67,6 +68,9 @@
     },
     {
       "$ref": "https://ns.adobe.com/xdm/context/profile-test-profile"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/profile-identities-deprecated"
     },
     {
       "$ref": "https://ns.adobe.com/xdm/common/auditable"

@@ -21,6 +21,11 @@
           "type": "string",
           "format": "uri-reference",
           "description": "A unique identifier for the record."
+        },
+        "xdm:eventList": {
+          "title": "Event List",
+          "$ref": "https://ns.adobe.com/xdm/data/time-series",
+          "description": "List of time-series based events that relate to this record."
         }
       }
     }

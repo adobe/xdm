@@ -30,7 +30,8 @@
     "https://ns.adobe.com/xdm/context/experienceevent-web",
     "https://ns.adobe.com/experience/target/experienceevent-all",
     "https://ns.adobe.com/experience/profile/experienceevent-shared",
-    "https://ns.adobe.com/experience/implementations-ext"
+    "https://ns.adobe.com/experience/implementations-ext",
+    "https://ns.adobe.com/xdm/context/experienceevent-enduserids-deprecated"
   ],
   "definitions": {
     "target-experienceevent": {
@@ -91,6 +92,9 @@
     },
     {
       "$ref": "https://ns.adobe.com/experience/implementations-ext"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-enduserids-deprecated"
     },
     {
       "$ref": "#/definitions/target-experienceevent"

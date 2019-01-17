@@ -30,7 +30,8 @@
     "https://ns.adobe.com/experience/analytics/experienceevent-all",
     "https://ns.adobe.com/experience/adcloud/experienceevent-all",
     "https://ns.adobe.com/experience/campaign/experienceevent-all",
-    "https://ns.adobe.com/experience/target/experienceevent-all"
+    "https://ns.adobe.com/experience/target/experienceevent-all",
+    "https://ns.adobe.com/xdm/context/experienceevent-enduserids-deprecated"
   ],
   "description": "Adobe Experience Event Mixin with all Standard and Solution Mixins included.",
   "definitions": {
@@ -95,6 +96,9 @@
     },
     {
       "$ref": "https://ns.adobe.com/experience/target/experienceevent-all"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-enduserids-deprecated"
     },
     {
       "$ref": "#/definitions/experienceevent"

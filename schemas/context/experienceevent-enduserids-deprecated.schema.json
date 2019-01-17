@@ -5,24 +5,22 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/context/experienceevent-profile-stitch",
+  "$id": "https://ns.adobe.com/xdm/context/experienceevent-enduserids-deprecated",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "ExperienceEvent Profile Stitch Details",
+  "title": "ExperienceEvent endUserIDs (deprecated)",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "ExperienceEvent Profile Stitch Details.",
+  "description": "ExperienceEvent endUserIDs (deprecated).",
   "definitions": {
-    "experienceevent-profile-stitch": {
+    "experienceevent-enduserids-deprecated": {
       "properties": {
-        "xdm:profileStitch" : {
-          "title": "Profile Stitch",
-          "description": "Details about the ids that were joined by profile stitching.",
-          "type" : "array",
-          "items" : {
-            "$ref": "https://ns.adobe.com/xdm/context/profileStitch"
-          }
+        "xdm:endUserIDs": {
+          "meta:status": "deprecated",
+          "title": "End User IDs",
+          "$ref": "https://ns.adobe.com/xdm/context/enduserids",
+          "description": "Condensed, normalized encapsulation of all end user identifiers. Deprecated, use `xdm:identityMap` instead."
         }
       }
     }
@@ -32,8 +30,8 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "#/definitions/experienceevent-profile-stitch"
+      "$ref": "#/definitions/experienceevent-enduserids-deprecated"
     }
   ],
-  "meta:status": "stabilizing"
+  "meta:status": "deprecated"
 }

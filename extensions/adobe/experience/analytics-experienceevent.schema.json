@@ -7,14 +7,13 @@
   ],
   "$id": "https://ns.adobe.com/experience/analytics-experienceevent",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Adobe Analytics ExperienceEvent Mixin",
+  "title": "Adobe Analytics ExperienceEvent Template Mixin",
   "type": "object",
-  "description": "This Analytics ExperienceEvent Mixin includes the core/standard ExperienceEvent as well as the required Adobe Analytics ExperienceEvent Mixins.",
+  "description": "Analytics ExperienceEvent Mixin for use with Schemas for Solution data ingestion. Includes the core/standard ExperienceEvent as well as the required Adobe Analytics ExperienceEvent Mixins.",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "meta:extends": [
-    "https://ns.adobe.com/xdm/context/experienceevent",
     "https://ns.adobe.com/xdm/context/experienceevent-advertising",
     "https://ns.adobe.com/xdm/context/experienceevent-application",
     "https://ns.adobe.com/xdm/context/experienceevent-channel",
@@ -42,9 +41,6 @@
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/context/experienceevent"
     },
     {
       "$ref": "https://ns.adobe.com/xdm/context/experienceevent-advertising"

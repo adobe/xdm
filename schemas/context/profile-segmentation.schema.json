@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/profile-segmentation",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Segmentation for Profile",
+  "title": "Profile Segmentation",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,

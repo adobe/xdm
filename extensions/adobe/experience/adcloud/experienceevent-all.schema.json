@@ -7,12 +7,12 @@
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/experience/adcloud/experienceevent-all",
-  "title": "Adobe AdCloud ExperienceEvent Extension",
+  "title": "Adobe AdCloud ExperienceEvent Full Extension",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "Adobe AdCloud extension to ExperienceEvent.",
+  "description": "Adobe AdCloud ExperienceEvent Full Extension. Contains all Solution added fields.",
   "definitions": {
     "experienceevent-all": {
       "properties": {

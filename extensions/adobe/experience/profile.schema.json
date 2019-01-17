@@ -7,8 +7,9 @@
   ],
   "$id": "https://ns.adobe.com/experience/profile",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Adobe Experience Profile base schema",
+  "title": "Adobe XDM Profile Template Mixin",
   "type": "object",
+  "description": "Adobe XDM Profile Mixin for use with Schemas for Solution data ingestion. Includes the core/standard XDM Profile Mixins.",
   "auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,
@@ -29,7 +30,6 @@
     "https://ns.adobe.com/xdm/context/profile-test-profile",
     "https://ns.adobe.com/xdm/context/profile-identities-deprecated"
   ],
-  "description": "Adobe Experience Profile schema.",
   "definitions": {
     "profile": {
       "properties": {}

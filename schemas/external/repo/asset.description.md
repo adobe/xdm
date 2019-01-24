@@ -1,0 +1,1 @@
+An _asset_, as defined here, is the principal construct within a _repository_. It is an asset that is created, read, updated, and delete. It is assets that have identifiers, names, metadata. It is assets that are organized into hierarchies and collections, and linked to each other. Assets include but are not limited to documents, images, audio, video, motion graphics, 3D models.

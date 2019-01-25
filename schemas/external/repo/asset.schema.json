@@ -55,7 +55,7 @@
           "type": "string",
           "meta:usereditable": false,
           "description": "ID of the user who initiated the action that most recently caused the resource to be modified in the repository."
-        }
+        },
         "tiff:imageWidth": {
           "title": "Width",
           "description": "Width in pixels",

@@ -32,9 +32,9 @@
   "required": [
     "repo:name",
     "repo:path",
-    "repo:createdDate",
+    "repo:createDate",
     "xdm:repositoryCreatedBy",
-    "repo:lastModifiedDate",
+    "repo:modifyDate",
     "xdm:repositoryLastModifiedBy"
   ],
   "definitions": {

@@ -163,9 +163,9 @@
   ],
   "required": [
     "repo:id",
-    "repo:createdDate",
+    "repo:createDate",
     "xdm:repositoryCreatedBy",
-    "repo:lastModifiedDate",
+    "repo:modifyDate",
     "xdm:repositoryLastModifiedBy",
     "repo:version",
     "repo:size",

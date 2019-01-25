@@ -146,6 +146,9 @@
   },
   "allOf": [
     {
+      "$ref": "http://ns.adobe.com/adobecloud/core/1.0/asset#/definitions/asset"
+    },
+    {
       "$ref":
         "https://ns.adobe.com/xdm/assets/rectangular#/definitions/rectangular"
     },

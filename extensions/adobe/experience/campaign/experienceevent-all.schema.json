@@ -254,6 +254,19 @@
             }
           }
         },
+        "https://ns.adobe.com/experience/campaign/clickedOffer": {
+          "title": "Clicked Offer",
+          "description": "Information of the clicked offer",
+          "$ref": "https://ns.adobe.com/experience/campaign/offer"
+        },
+        "https://ns.adobe.com/experience/campaign/proposedOfferList": {
+          "title": "Proposed Offer List",
+          "type": "array",
+          "items": {
+            "$ref": "https://ns.adobe.com/experience/campaign/offer"
+          },
+          "description": "List of Proposed Offer send with the message"
+        },
         "https://ns.adobe.com/experience/campaign/containerID": {
           "title": "Container identifier",
           "type": "string",

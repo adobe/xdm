@@ -11,7 +11,7 @@
   "type": "object",
   "description": "Details about a segment membership.",
   "definitions": {
-    "segmentMembership": {s
+    "segmentMembership": {
       "properties": {
         "xdm:version": {
           "title": "Version",

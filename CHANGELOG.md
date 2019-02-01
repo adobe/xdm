@@ -1,5 +1,19 @@
 # Changelog
 
+## Release 0.9.9
+
+[Planned February, 2019](https://github.com/adobe/xdm/releases/tag/v0.9.9)
+
+Fixed Issues
+
+-
+
+Merged Pull Requests
+
+- #554 XDM composition refactor
+- #566 Technical classes schema composition
+- #567 Issue 555 refactor measures to use descriptors
+
 ## Release 0.9.8
 
 [Released on November 26, 2018](https://github.com/adobe/xdm/releases/tag/v0.9.8)

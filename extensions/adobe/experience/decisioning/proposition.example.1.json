@@ -1,0 +1,15 @@
+{
+  "xdm:activity": {
+    "@id": "xcore:offer-activity:ebc48132c26ccfc"
+  },
+  "xdm:selections": [
+    {
+      "@id": "xcore:personalized-offer:e526a1503bf29e9"
+    }
+  ],
+  "xdm:metrics": {
+    "https://ns.adobe.com/experience/offer-management/offer-propositions": {
+      "xdm:value": 948
+    }
+  }
+}

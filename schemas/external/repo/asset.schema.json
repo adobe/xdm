@@ -15,7 +15,7 @@
     "https://ns.adobe.com/xdm/external/hal/resource#/definitions/hal"
   ],
   "meta:extensible": true,
-  "description": "The set of repository metadata associated with each stored asset.",
+  "description": "The set of repository metadata associated with a stored asset.",
   "definitions": {
     "asset": {
       "properties": {

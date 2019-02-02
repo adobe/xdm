@@ -1,6 +1,4 @@
-A descriptor that describes the search related annotations on the properties of a schema.  
-
-Search annotations are optional meta descriptors. When used,search:indexable is a required property. When the descriptor is absent, indexable will default to false and the other properties will not apply to the field. 
+Describes how XDM properties are to be handled for search, including the application of analyzers and operation in queries. The search:indexed descriptor is set to true to indicate that a property should be indexed, as specified by the values of the other search descriptor properties. When search:index is false (including by default), the other search descriptors will be ignored.
 
 | Field             |                                                               Description & Usage                                                               |                                                                                                                                                                       If Enum - enum literal  values with description | Default value | Required  ( Mandatory ) |
 |-------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------:|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|---------------|-------------------------|

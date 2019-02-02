@@ -14,14 +14,14 @@
   ],
   "meta:abstract": false,
   "type": "object",
-  "description": "A descriptor that describes search annotations for specific properties of the schemas.",
+  "description": "Describes search annotations for specific properties of the schemas.",
   "definitions": {
     "searchdescriptor": {
       "properties": {
         "search:indexed": {
-          "title": "Indexable",
+          "title": "Indexed",
           "type": "boolean",
-          "description": "Whether the propery is indexable and searchable.",
+          "description": "Whether the property is indexable and searchable.",
           "default": false
         },
         "search:filterable": {
@@ -33,7 +33,7 @@
         "search:store": {
           "title": "Stored",
           "type": "string",
-          "description": "Whether the property's value is stored in, and therefore can be retrieved from, the index.",
+          "description": "Whether the property value is stored in, and therefore can be retrieved from, the index.",
           "meta:enum": {
             "notStored": "notStored",
             "stored": "stored",
@@ -42,9 +42,9 @@
           "default": "notStored"
         },
         "search:sort": {
-          "title": "sort type",
+          "title": "Sort Type",
           "type": "string",
-          "description": "Whether and search results can be sorted on this property.",
+          "description": "Whether and how search results can be sorted on this property.",
           "meta:enum": {
             "notSortable": "notSortable",
             "sorted": "sorted",
@@ -54,7 +54,7 @@
           "default": "notSortable"
         },
         "search:analyzers": {
-          "title": "Analyzer to be applied",
+          "title": "Analyzers",
           "type": "array",
           "items": {
             "type": "string"
@@ -73,7 +73,7 @@
             "fileName": "fileName",
             "fileNameExtension": "fileNameExtension"
           },
-          "description": "A list of analyzers to be applied when indexing this property.",
+          "description": "A set of analyzers to be applied when indexing this property.",
           "default": "noAnalysis"
         },
         "search:defaultAnalyzer": {

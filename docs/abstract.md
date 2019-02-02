@@ -6,7 +6,7 @@ As a result, XDM consists of abstract and concrete schemas.
 ### Abstract Schemas
 
 Abstract schemas or schema fragments are partial schemas that can be re-used in other schemas, but that do not allow the creation of any instances.
-As an example, the [Language Alternative](reference/assets/language-alternative.schema.md) schema which is used to define metadata that varies by language can be used as part of an [Asset](reference/assets/asset.schema.md), but it cannot stand on its own.
+As an example, the [Language Alternative](reference/assets/language-alternative.schema.md) schema which is used to define metadata that varies by language can be used as part of another schema, but it cannot stand on its own.
 
 Abstract schemas are often used to define properties that are used in multiple schemas at once.
 

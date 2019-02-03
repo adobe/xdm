@@ -1,10 +1,10 @@
 {
   "xdm:activity": {
-    "@id": "xcore:offer-activity:ebc48132c26ccfc"
+    "xdm:offer-activity": "xcore:offer-activity:ebc48132c26ccfc"
   },
   "xdm:selections": [
     {
-      "@id": "xcore:personalized-offer:e526a1503bf29e9"
+      "xdm:offer": "xcore:personalized-offer:e526a1503bf29e9"
     }
   ],
   "xdm:metrics": {

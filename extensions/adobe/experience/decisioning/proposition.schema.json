@@ -17,23 +17,23 @@
       "properties": {
         "xdm:activity": {
           "title": "Decision Activity",
-          "description": "Snapshot of the activity for which the proposition was made. The object contains at least the @id property value which is the URI of the decision activity. See schema https://ns.adobe.com/experience/decisioning/activity",
-          "$ref": "https://ns.adobe.com/xdm/data/record"
+          "description": "Snapshot of the activity for which the proposition was made.",
+          "$ref": "https://ns.adobe.com/experience/decisioning/activity"
         },
         "xdm:selections": {
           "title": "Selected Options",
-          "description": "Snapshots of the options that were selected for this activity. Those options are ususally constrained. The objects contain a at least the @id property value which is the URI of an option. See schema https://ns.adobe.com/experience/decisioning/option",
+          "description": "Snapshots of the options that were selected for this activity. Those options are ususally constrained.",
           "type": "array",
           "items": {
-            "$ref": "https://ns.adobe.com/xdm/data/record"
+            "$ref": "https://ns.adobe.com/experience/decisioning/option"
           },
           "minItems": 1,
           "uniqueItems": true
         },
         "xdm:fallback": {
           "title": "Fallback Option",
-          "description": "Snapshot of the fixed fallback option that was selected because no available option satisfied all constaints. The object contains at least the @id property value which is the URI of the fallback action. See schema https://ns.adobe.com/experience/decisioning/fallback-option",
-          "$ref": "https://ns.adobe.com/xdm/data/record"
+          "description": "Snapshot of the fixed fallback option that was selected because no available option satisfied all constaints.",
+          "$ref": "https://ns.adobe.com/experience/decisioning/option"
         }
       }
     },

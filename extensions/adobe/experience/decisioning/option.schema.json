@@ -15,7 +15,7 @@
   "definitions": {
     "option": {
       "properties": {
-        "xdm:offer": {
+        "@id": {
           "type": "string",
           "format": "uri-reference",
           "title": "ID",
@@ -34,8 +34,5 @@
     {
       "$ref": "#/definitions/option"
     },
-  ],
-  "required": [
-        "xdm:offer"
   ]
 }

@@ -17,12 +17,12 @@
       "properties": {
         "xdm:activity": {
           "title": "Decision Activity",
-          "description": "Snapshot of the activity for which the proposition was made.",
+          "description": "Snapshot of the activity for which the proposition was made. The object contains at least the @id property value which is the URI of the decision activity. See schema https://ns.adobe.com/experience/decisioning/activity",
           "$ref": "https://ns.adobe.com/experience/decisioning/activity"
         },
         "xdm:selections": {
           "title": "Selected Options",
-          "description": "Snapshots of the options that were selected for this activity. Those options are ususally constrained.",
+          "description": "Snapshots of the options that were selected for this activity. Those options are ususally constrained. The objects contain a at least the @id property value which is the URI of an option. See schema https://ns.adobe.com/experience/decisioning/option",
           "type": "array",
           "items": {
             "$ref": "https://ns.adobe.com/experience/decisioning/option"
@@ -32,7 +32,7 @@
         },
         "xdm:fallback": {
           "title": "Fallback Option",
-          "description": "Snapshot of the fixed fallback option that was selected because no available option satisfied all constaints.",
+          "description": "Snapshot of the fixed fallback option that was selected because no available option satisfied all constaints. The objects contain a at least the @id property value which is the URI of an option. See schema https://ns.adobe.com/experience/decisioning/option",
           "$ref": "https://ns.adobe.com/experience/decisioning/option"
         }
       }

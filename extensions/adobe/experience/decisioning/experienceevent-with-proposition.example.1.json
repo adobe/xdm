@@ -1,0 +1,116 @@
+{
+  "@id": "https://data.adobe.io/experienceid-1234567",
+  "xdm:dataSource": {
+    "@id": "https://data.adobe.io/datasources/datasource-124",
+    "xdm:code": "DataSourceIntegrationCode-124"
+  },
+  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+  "xdm:identityMap": {
+    "ECID": [
+      {
+        "id": "68519882713298129995549973016107434638",
+        "primary": true
+      }
+    ],
+    "CPGN": [
+      {
+        "id": "https://data.adobe.io/entities/identity/1234567",
+        "primary": true
+      }
+    ]
+  },
+  "xdm:directMarketing": {
+    "xdm:sends": {
+      "xdm:value": 1
+    }
+  },
+  "xdm:channel": "https://ns.adobe.com/xdm/channels/email",
+  "https://ns.adobe.com/experience/campaign/message": {
+    "xdm:id": 10000,
+    "xdm:profile": {
+      "xdm:person": {
+        "xdm:birthMonth": 1,
+        "xdm:birthDay": 3,
+        "xdm:birthYear": 1996,
+        "xdm:gender": "female"
+      },
+      "xdm:workAddress": {
+        "@id": "https://ns.adobe.com/entities/address/123",
+        "xdm:primary": true,
+        "xdm:city": "San Jose",
+        "xdm:stateProvinceISO": "CA",
+        "xdm:postalCode": "95110",
+        "xdm:countryCode": "US"
+      },
+      "xdm:workEmail": {
+        "xdm:primary": true,
+        "xdm:address": "jsmith@xyzinc.com"
+      }
+    },
+    "xdm:variant": "English",
+    "xdm:seedMember": false,
+    "xdm:quarantine": false,
+    "xdm:proofMember": false,
+    "xdm:controlGroupMember": false,
+    "xdm:testMember": true,
+    "xdm:size": 421,
+    "xdm:outboundIP": "10.20.30.40",
+    "xdm:externalID": "uuid:00112233-4455-6677-8899-AABBCCDDEEFF"
+  },
+  "https://ns.adobe.com/experience/campaign/delivery": {
+    "xdm:id": 1001,
+    "xdm:from": "no-reply@adobe.com",
+    "xdm:testEnabled": true,
+    "xdm:messageClass": "continuous",
+    "xdm:templateID": 1000,
+    "xdm:deliveryName": "DM200",
+    "xdm:deliveryLabel": "Birthday Wishes"
+  },
+  "https://ns.adobe.com/experience/campaign/marketingCampaign": {
+    "xdm:id": 100,
+    "xdm:campaignName": "CAMP2010"
+  },
+  "https://ns.adobe.com/experience/campaign/orchestration": {
+    "xdm:eventID": "onJourneyEnter"
+  },
+  "https://ns.adobe.com/experience/campaign/containerID": "customer-stage",
+  "https://ns.adobe.com/experience/campaign/eventSource": "pipelined-mta",
+
+  "https://ns.adobe.com/experience/decisioning/propositionId": "3cc33a7e-13ca-4b19-b25d-c816eff9a70a",
+  "https://ns.adobe.com/experience/decisioning/propositionDetails": [
+    {
+      "xdm:activity": {
+        "@id": "xcore:offer-activity:ebc48132c26ccfc",
+        "xdm:placement": "xcore:offer-placement:e91a84cc83ad12f",
+        "xdm:filter": "xcore:offer-filter:e9201a6650bb7e3",
+        "schema:name": "Kiosk"
+      },
+      "xdm:selections": [
+        {
+          "@id": "xcore:personalized-offer:e91ee850a0bb7d9",
+          "https://ns.adobe.com/experience/decisioning/profileConstraint": {
+              "xdm:eligibilityRule": "xcore:eligibility-rule:ec0ef7ceacb2ecd"
+          }
+        }
+      ],
+      "xdm:metrics": {
+        "https://ns.adobe.com/experience/offer-management/offer-propositions": {
+          "xdm:value": 948
+        }
+      }
+    },
+    {
+      "xdm:activity": {
+        "@id": "xcore:offer-activity:f203512e02542b5",
+        "xdm:placement": "xcore:offer-placement:e8900e871ce075f",
+        "xdm:filter": "xcore:offer-filter:ec5139e1a351772",
+        "schema:name": "Sessions"
+      },
+      "xdm:fallback": [
+        {
+          "@id": "xcore:fallback-offer:e91ce7243fd8c2a"
+        }
+      ]
+    }
+  ]
+}

@@ -39,6 +39,6 @@
   "allOf": [
     {
       "$ref": "#/definitions/activity"
-    },
+    }
   ]
 }

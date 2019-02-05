@@ -39,7 +39,7 @@
         "https://ns.adobe.com/experience/adcloud/stitchIdChosen": {
           "title": "Stitch ID Chosen Type",
           "type": "string",
-          "description": "ID from the Ad Servers through AdCloud STATS to track click-through conversion on browsers that clock third party cookies"
+          "description": "ID from the Ad Servers through AdCloud STATS to track click-through conversion on browsers that block third party cookies"
         }
       }
     }

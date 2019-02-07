@@ -1,0 +1,55 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/experience/decisioning/evaluation-metric",
+  "meta:abstract": true,
+  "meta:extensible": true,
+  "type": "object",
+  "title": "Evaluation Metric",
+  "description": "An evaluation metrics captures how to assess the performance of our decision algorithm. A activity can specify one or more evaluation metrics that are computed automatically during the proposition-outcome analysis.",
+  "definitions": {
+    "evaluation-metric-datatype": {
+      "properties": {
+        "@type": {
+          "$ref": "#/definitions/evaluation-metric-type",
+          "description": "Definition of the evaluation metric. Each metric type has a unique identifier that is the @id of a https://ns.adobe.com/xdm/data/metricdefinition."
+        },
+        "schema:name": {
+          "type": "string",
+          "title": "Name",
+          "description": "Evaluation metric name. The name is displayed in various user interfaces."
+        }
+      }
+    },
+    "evaluation-metric-type": {
+      "type": "string",
+      "format": "uri",
+      "title": "Evaluation Metric Type",
+      "description": "Evaluation Metric Type: accuracy score, logarithmic loss, confusion matrix, area under curve, F1 score (precision & recall), mean absolute error, mean squared error",
+      "meta:enum": {
+        "https://ns.adobe.com/experience/decisioning/evaluation-metric-confusion-matrix": "Confusion matrix. Contains the basic measures of a classifier out of which the Accuracy, Sensitivity and Specificity can be computed.",
+        "https://ns.adobe.com/experience/decisioning/evaluation-metric-area-under-curve": "Area under ROC curve. ROC is equal to the probability that a binary classifier will rank a randomly chosen positive example higher than a randomly chosen negative example.",
+        "https://ns.adobe.com/experience/decisioning/evaluation-metric-f1-score": "F1 score, the Harmonic Mean between precision and recall. The metric contains the values for Precision and Recall as well.",
+        "https://ns.adobe.com/experience/decisioning/evaluation-metric-mean-absolute-error": "Mean absolute error. The average of the difference between the Original Values and the Predicted Values of a scoring algorithm.",
+        "https://ns.adobe.com/experience/decisioning/evaluation-metric-mean-sqaured-error": "Mean sqared error. The average of square of the difference between the Original Values and the Predicted Values of a scoring algorithm.",
+        "https://ns.adobe.com/experience/decisioning/evaluation-metric-logarithmic-loss": "Logarithmic loss. A metric to assess how the computed Likelihoods/Uncertainty of the Predicted Values of a classifier matched the observed outcomes. The Cross Entropy can be derived from this metric."
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/evaluation-metric-datatype"
+    },
+    {
+      "required": ["schema:name", "xdm:category"]
+    }
+  ]
+}

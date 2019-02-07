@@ -1,0 +1,927 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/experience/decisioning/filter-expression",
+  "meta:abstract": true,
+  "meta:extensible": true,
+  "type": "object",
+  "title": "Filter Expression Tree",
+  "description": "Represents an abstract syntax tree comprised of various node types. The expression is used to evaluate a match against a XDM object tree, where the result is a boolean value - matches: yes or no - or another XDM tree structure.",
+  "definitions": {
+    "node-type": {
+      "type": "string",
+      "title": "Node Type",
+      "description": "Indicates the type of a node",
+      "enum": [
+        "literal",
+        "fieldLookup",
+        "fnApply",
+        "occurs",
+        "timeQualification",
+        "duration",
+        "range",
+        "select",
+        "varDecl",
+        "let",
+        "exists",
+        "forall",
+        "varRef",
+        "sum",
+        "max",
+        "min",
+        "average",
+        "pathReference"
+      ],
+      "meta:enum": {
+        "literal": "Prodcue a value from a literal",
+        "fieldLookup": "Produce a value from an object by accessing one of its fields",
+        "fnApply": "Apply a function to the evaluation context. The valency or arity of the function varies with the function type. Functions can be boolean-valued or produce scalar values and vectors.",
+        
+        "occurs": "Date/Time expression that constrains a timestamp-valued field to a relative timestamp literal (e.g. today) or relative to another timestamp-valued field.",
+        "timeQualification": "Date/Time expression that constrains a timestamp-valued field to a number of time intervals",
+        "duration": "Date/Time expression that constrains a timestamp-valued field to a duration",
+        "range": "Date/Time expression that constrains a timestamp-valued field to fall into a range of two other absolute timestampt",
+
+        "select": "Produce a list from a list of inputs by evaluating a projection and a selection expression for every element of the input list.",
+        "varDecl": "Sub-structure of the select expression that binds a variable to the elements matching a projection and a selection expression. The value is made available for reference via a variable name to other sub-select expressions",
+        "let": "Expression to store the value of another expression in a variable and reference it later in the query.",
+        "exists": "A boolean expression that asserts the existence of an item in an array which satisfies a given condition.",
+        "forall": "A boolean expression that asserts that all items in an array satisfy a given condition.",
+        "varRef": "Iterate over a list of values by referencing a variable name that denotes a list element previously qualified (evaluated in preceeding variable varDecl).",
+        
+        "sum": "A numeric expression that calculates the sum of numeric values in an array.",
+        "max": "A numeric expression that determines the maximum value of a an array of numeric values.",
+        "min": "A numeric expression that determines the minimum value of a an array of numeric values.",
+        "average": "A numeric expression that calculates the average of numeric values in an array.",
+
+        "pathReference": "A node that indicates the start of a path into an XDM object."
+      }
+    },
+    "function-type": {
+      "type": "string",
+      "title": "Function Identifier",
+      "description": "Function Identifier. See allowed values for details.",
+      "meta:enum": {
+        "and": "An n-ary AND function. Map a list of boolean values to a single boolean value. Produces 'true' if and only if all input values are 'true', otherwise produces 'false'.",
+        "or": "An n-ary OR function. Map a list of boolean values to a single boolean value. Produces 'true' if and only if any of the input values is 'true', otherwise produces 'false'.",
+        "if": "An n-ary OR function. Map a boolean value and two expressions to to value of the first expresssion if and only if the boolean expression evaluates to true. otherwise maps to the value of the second expression.",
+        "not": "Maps the value of a boolean expression to the negated value.",
+        "=": "Produce a boolean value from two input values by comparing them and returning true if neither value is null and they are equal and returns false otherwise. The second value is coerced to the type of the first value before applying the = operator.",
+        "!=": "Produce a boolean value from two input values by comparing them and returning true if neither value is null and they are not equal and returns false otherwise. The second value is coerced to the type of the first value before applying the != operator.",        
+        ">": "Produce a boolean value from two input values by comparing them and returning true if neither value is null and the first one is greater than the second and returns false otherwise. The second value is coerced to the type of the first value before applying the > operator.",
+        ">=": "Produce a boolean value from two input values by comparing them and returning true if neither value is null and the first one is greater than or equals the second and returns false otherwise. The second value is coerced to the type of the first value before applying the >= operator.",
+        "<=": "Produce a boolean value from two input values by comparing them and returning true if neither value is null and the first one is less than or equals the second and returns false otherwise. The second value is coerced to the type of the first value before applying the <= operator.",
+        "<": "Produce a boolean value from two input values by comparing them and returning true if neither value is null and the first one is less than the second and returns false otherwise. The second value is coerced to the type of the first value before applying the < operator.",
+        "in": "Produce a boolean value from a scalar and a vector input value. If the scalar is equal to one or more of the vector values the evaluation results in the boolean value 'true' and 'false' otherwise. The second value is coerced to a list type of the first value before applying the equality check operator.",
+        "includes": "Produce a boolean value from a vector and a scalar input value. If the scalar is equal to one or more of the vector values the evaluation results in the boolean value 'true' and 'false' otherwise. The second value is coerced to a list type of the first value before applying the equality check operator.",
+        "notIn": "Produce a boolean value from a scalar and a vector input value. If the scalar is equal to none of the vector values the evaluation results in the boolean value 'true' and 'false' otherwise. The second value is coerced to a list type of the first value before applying the equality check operator.",
+        "intersects": "Produce a boolean value from two vector values. The result is true if the two vectors have one or more elements that are equal",
+        "isNull": "Produce a boolean value from a scalar input value. If the scalar is null, the evaluation results in the boolean value 'true' and 'false' otherwise",
+        "isNotNull": "Produce a boolean value from a scalar input value. If the scalar is not null, the evaluation results in the boolean value 'true' and 'false' otherwise",
+        "intersection": "Produce a vector value from two vector values. The result is the vector containing all elements that are in both of the input vectors."
+      }
+    },
+    "literal-type": {
+      "type": "string",
+      "title": "Literal Type Identifier",
+      "description": "Literal Type Identifier: String, Number, Integer, Boolean, Date, DateTime, XDMObject",
+      "enum": [
+        "Boolean",
+        "Comparison",
+        "Double",
+        "XDMField",
+        "Function",
+        "Integer",
+        "List",
+        "String",
+        "TimeDirection",
+        "Timestamp",
+        "TimeInterval",
+        "TimeUnit",
+        "XDMObject"
+      ],
+      "meta:enum": {
+        "Boolean": "A boolean literal such as \"true\"",
+        "Comparison": "A comparison literal such as \"<=\"",
+        "Double": "A double literal such as \"1.0\"",
+        "XDMField": "A literal denoting the name of a field",
+        "Function": "A funtion literal denoting the name of a function to be applied",
+        "Integer": "An integer literal",
+        "List": "An array of literals",
+        "String": "A string literal",
+        "TimeDirection": "A time relation literal such as \"before\" or \"after\"",
+        "Timestamp": "A time stamp literal such as \"now\", \"today\" or \"yesterday\"",
+        "TimeInterval": "A time interval literal such as \"next\", \"last\" or \"this\"",
+        "TimeUnit": "A time interval literal such as \"miliseconds\", \"century\" or \"millenia\"",
+        "XDMObject": "A string denoting a reference of an XDM schema"
+      }
+    },
+    "aggregation-type": {
+      "type": "string",
+      "title": "Aggregation Expression Identifier",
+      "description": "Literal Type Identifier: sum, min, max, average",
+      "meta:enum": {
+        "sum": "The sum of the numeric values in a vector",
+        "min": "The minimum of values in a vector as per the type's comparison operator",
+        "max": "The maximum of values in a vector as per the type's comparison operator",
+        "average": "The average of the numeric values in a vector"
+      }
+    },
+
+    "function-application-content": {
+      "type": "object",
+      "title": "N-ary function application",
+      "description": "Apply an n-ary function (functor) that maps a value (scalar, object, list, tree) to anothe value, by recursively applying its child nodes to the objects and then taking the results as parameters to itself.",
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "nodeType": {
+              "type": "string",
+              "const": "fnApply"
+            },
+            "fnName": {
+              "type": "string"
+            },
+            "function": {
+              "$ref": "#/definitions/node-content"
+            },
+            "params": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/node-content"
+              },
+              "minItems": 1
+            }
+          },
+          "required": ["nodeType", "params"]
+        }
+      ]
+    },
+
+    "field-lookup-content": {
+      "type": "object",
+      "title": "Field accessor",
+      "description": "An epression that is applied on an object and returns the value of the field specified in the expression",
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "nodeType": {
+              "type": "string",
+              "const": "fieldLookup"
+            },
+            "fieldName": {
+              "type": "string"
+            },
+            "object": {
+              "$ref": "#/definitions/node-content"
+            }
+          },
+          "required": ["nodeType", "fieldName"],
+          "additionalProperties": false
+        }
+      ]
+    },
+
+    "literal-content": {
+      "type": "object",
+      "title": "Literal",
+      "description": "A literal produces the value that is stated in the 'value' property.",
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "nodeType": {
+              "type": "string",
+              "const": "literal"
+            },
+            "literalType": {
+              "type": "string"
+            }
+          },
+          "required": ["nodeType", "literalType"]
+        },
+        {
+          "oneOf": [
+            {
+              "$ref": "#/definitions/literal-boolean-content"
+            },
+            {
+              "$ref": "#/definitions/literal-comparison-content"
+            },
+            {
+              "$ref": "#/definitions/literal-double-content"
+            },
+            {
+              "$ref": "#/definitions/literal-field-content"
+            },
+            {
+              "$ref": "#/definitions/literal-function-content"
+            },
+            {
+              "$ref": "#/definitions/literal-integer-content"
+            },
+            {
+              "$ref": "#/definitions/literal-list-content"
+            },
+            {
+              "$ref": "#/definitions/literal-string-content"
+            },
+            {
+              "$ref": "#/definitions/literal-time-direction-content"
+            },
+            {
+              "$ref": "#/definitions/literal-time-stamp-content"
+            },
+            {
+              "$ref": "#/definitions/literal-time-interval-content"
+            },
+            {
+              "$ref": "#/definitions/literal-xdmobject-content"
+            },
+            {
+              "$ref": "#/definitions/literal-content-unchecked"
+            }
+          ]
+        }
+      ]
+    },
+    "literal-boolean-content": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "literal"
+        },
+        "literalType": {
+          "type": "string",
+          "const": "Boolean"
+        },
+        "value": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "literal-comparison-content": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "literal"
+        },
+        "literalType": {
+          "type": "string",
+          "const": "Comparison"
+        },
+        "value": {
+          "type": "string"
+        }
+      },
+      "required": ["value"],
+      "additionalProperties": false
+    },
+    "literal-double-content": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "literal"
+        },
+        "literalType": {
+          "type": "string",
+          "const": "Number"
+        },
+        "value": {
+          "type": "number"
+        }
+      },
+      "additionalProperties": false
+    },
+    "literal-field-content": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "literal"
+        },
+        "literalType": {
+          "type": "string",
+          "const": "Field"
+        },
+        "value": {
+          "type": "string"
+        }
+      },
+      "required": ["value"],
+      "additionalProperties": false
+    },
+    "literal-function-content": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "literal"
+        },
+        "literalType": {
+          "type": "string",
+          "const": "Function"
+        },
+        "fnName": {
+          "type": "string"
+        }
+      },
+      "required": ["fnName"],
+      "additionalProperties": false
+    },
+    "literal-integer-content": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "literal"
+        },
+        "literalType": {
+          "type": "string",
+          "const": "Integer"
+        },
+        "value": {
+          "type": "integer"
+        }
+      },
+      "additionalProperties": false
+    },
+    "literal-list-content": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "literal"
+        },
+        "literalType": {
+          "type": "string",
+          "const": "List"
+        },
+        "value": {
+          "type": "array"
+        }
+      },
+      "additionalProperties": false
+    },
+    "literal-string-content": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "literal"
+        },
+        "literalType": {
+          "type": "string",
+          "const": "String"
+        },
+        "value": {
+          "type": "string"
+        }
+      },
+      "required": ["value"],
+      "additionalProperties": false
+    },
+    "literal-time-direction-content": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "literal"
+        },
+        "literalType": {
+          "type": "string",
+          "const": "TimeDirection"
+        },
+        "value": {
+          "type": "string"
+        }
+      },
+      "required": ["value"],
+      "additionalProperties": false
+    },
+    "literal-time-stamp-content": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "literal"
+        },
+        "literalType": {
+          "type": "string",
+          "const": "Timestamp"
+        },
+        "value": {
+          "type": "string"
+        }
+      },
+      "required": ["value"],
+      "additionalProperties": false
+    },
+    "literal-time-interval-content": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "literal"
+        },
+        "literalType": {
+          "type": "string",
+          "const": "TimeInterval"
+        },
+        "relation": {
+          "type": "string"
+        },
+        "unit": {
+          "type": "string"
+        }
+      },
+      "required": ["relation", "unit"],
+      "additionalProperties": false
+    },
+    "literal-time-unit-content": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "literal"
+        },
+        "literalType": {
+          "type": "string",
+          "const": "TimeUnit"
+        },
+        "value": {
+          "type": "string"
+        }
+      },
+      "required": ["value"],
+      "additionalProperties": false
+    },
+    "literal-xdmobject-content": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "literal"
+        },
+        "literalType": {
+          "type": "string",
+          "const": "XDMObject"
+        }
+      },
+      "additionalProperties": false
+    },
+    "literal-content-unchecked": {
+      "properties": {
+        "nodeType": {
+          "type": "string",
+          "const": "literal"
+        },
+        "literalType": {
+          "type": "string",
+          "not": {
+            "$ref": "#/definitions/literal-type"
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+
+    "select-expression-content": {
+      "type": "object",
+      "title": "Object tree evaluation",
+      "description": "Produce a list of elements from a list of (tree-structured) input values by evaluating each clause in order of declaration. All clauses must evaluate to true for the element referenced in the first clause to qualify",
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "nodeType": {
+              "type": "string",
+              "const": "select"
+            },
+            "variables": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/variable-declarations-content"
+              },
+              "minItems": 1
+            }
+          },
+          "required": ["nodeType", "variables"],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "exists-quantification-content": {
+      "type": "object",
+      "title": "Object tree evaluation",
+      "description": "Produce a list of elements from a list of (tree-structured) input values by evaluating each clause in order of declaration. All clauses must evaluate to true for the element referenced in the first clause to qualify",
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "nodeType": {
+              "type": "string",
+              "const": "exist"
+            },
+            "variables": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/variable-declarations-content"
+              },
+              "minItems": 1
+            },
+            "condition": {
+              "$ref": "#/definitions/node-content"
+            }
+          },
+          "required": ["nodeType", "variables"],
+          "additionalProperties": true
+        }
+      ]
+    },
+    "forall-quantification-content": {
+      "type": "object",
+      "title": "Object tree evaluation",
+      "description": "Produce a list of elements from a list of (tree-structured) input values by evaluating each clause in order of declaration. All clauses must evaluate to true for the element referenced in the first clause to qualify",
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "nodeType": {
+              "type": "string",
+              "const": "forall"
+            },
+            "variables": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/variable-declarations-content"
+              },
+              "minItems": 1
+            },
+            "condition": {
+              "$ref": "#/definitions/node-content"
+            }
+          },
+          "required": ["nodeType", "variables", "condition"],
+          "additionalProperties": true
+        }
+      ]
+    },
+
+    "variable-declarations-content": {
+      "type": "object",
+      "title": "Define a variable and its domain",
+      "description": "Produce a list of output values from a list of inputs by first applying an optional projection (from expression) and then a filter (where expression) to each value from the list of inputs. The list of values is bound to a variable name.",
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "nodeType": {
+              "type": "string",
+              "const": "varDecl"
+            },
+            "varName": {
+              "type": "string",
+              "pattern": "^[_A-Za-z0-9]+$"
+            },
+            "from": {
+              "$ref": "#/definitions/node-content"
+            },
+            "where": {
+              "$ref": "#/definitions/node-content"
+            }
+          },
+          "required": ["nodeType", "varName", "from"],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "let-content": {
+      "type": "object",
+      "title": "Define a variable and its value",
+      "description": "Produce a variable binding whose value can be used further inside the expression.",
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "nodeType": {
+              "type": "string",
+              "const": "let"
+            },
+            "varName": {
+              "type": "string",
+              "pattern": "^[_A-Za-z0-9]+$"
+            },
+            "value": {
+              "$ref": "#/definitions/node-content"
+            }
+          },
+          "required": ["nodeType", "varName", "value"],
+          "additionalProperties": true
+        }
+      ]
+    },
+    "variable-reference-content": {
+      "type": "object",
+      "title": "Reference to a value created in the context of a select expression evaluation",
+      "description": "Produce a list of values by referencing a variable name that denotes a tree node element previously evaluated.",
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "nodeType": {
+              "type": "string",
+              "const": "varRef"
+            },
+            "varName": {
+              "type": "string",
+              "pattern": "^[_A-Za-z0-9]+$"
+            }
+          },
+          "required": ["nodeType", "varName"],
+          "additionalProperties": false
+        }
+      ]
+    },
+
+    "aggregation-expression-content": {
+      "type": "object",
+      "title": "Aggregate value",
+      "description": "Produces a single value from a list of values according to the aggregate function.",
+      "allOf": [
+        {
+          "oneOf": [
+            {
+              "properties": {
+                "nodeType": {
+                  "type": "string",
+                  "const": "sum"
+                }
+              }
+            },
+            {
+              "properties": {
+                "nodeType": {
+                  "type": "string",
+                  "const": "min"
+                }
+              }
+            },
+            {
+              "properties": {
+                "nodeType": {
+                  "type": "string",
+                  "const": "max"
+                }
+              }
+            },
+            {
+              "properties": {
+                "nodeType": {
+                  "type": "string",
+                  "const": "average"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "nodeType": {
+              "type": "string"
+            },
+            "variables": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/variable-declarations-content"
+              },
+              "minItems": 1
+            },
+            "aggExpr": {
+              "$ref": "#/definitions/node-content"
+            }
+          },
+          "required": ["nodeType", "variables"],
+          "additionalProperties": false
+        }
+      ]
+    },
+
+    "occurs-content": {
+      "type": "object",
+      "title": "Reference to a value created in the context of a select expression evaluation",
+      "description": "Produce a list of values by referencing a variable name that denotes a tree node element previously evaluated.",
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "nodeType": {
+              "type": "string",
+              "const": "occurs"
+            },
+            "timestamp": {
+              "type": "object"
+            },
+            "timeinterval": {
+              "type": "object"
+            },
+            "relation": {
+              "type": "object"
+            },
+            "qualification": {
+              "type": "object"
+            }
+          },
+          "required": ["nodeType", "timestamp", "timeinterval", "relation"],
+          "additionalProperties": true
+        }
+      ]
+    },
+    "time-qualification-content": {
+      "type": "object",
+      "title": "Reference to a value created in the context of a select expression evaluation",
+      "description": "Produce a list of values by referencing a variable name that denotes a tree node element previously evaluated.",
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "nodeType": {
+              "type": "string",
+              "const": "timeQualification"
+            },
+            "duration": {
+              "type": "object"
+            },
+            "comparison": {
+              "type": "object"
+            }
+          },
+          "required": ["nodeType", "duration", "comparison"],
+          "additionalProperties": true
+        }
+      ]
+    },
+    "time-duration-content": {
+      "type": "object",
+      "title": "Reference to a value created in the context of a select expression evaluation",
+      "description": "Produce a list of values by referencing a variable name that denotes a tree node element previously evaluated.",
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "nodeType": {
+              "type": "string",
+              "const": "duration"
+            },
+            "count": {
+              "type": "object"
+            },
+            "unit": {
+              "type": "object"
+
+            }
+          },
+          "required": ["nodeType", "count", "unit"],
+          "additionalProperties": true
+        }
+      ]
+    },
+    "time-range-content": {
+      "type": "object",
+      "title": "Reference to a value created in the context of a select expression evaluation",
+      "description": "Produce a list of values by referencing a variable name that denotes a tree node element previously evaluated.",
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "nodeType": {
+              "type": "string",
+              "const": "range"
+            },
+            "start": {
+              "type": "object"
+            },
+            "end": {
+              "type": "object"
+
+            }
+          },
+          "required": ["nodeType", "start", "end"],
+          "additionalProperties": true
+        }
+      ]
+    },
+
+    "path-reference-content": {
+      "type": "object",
+      "title": "Reference all instances of a given model",
+      "description": "Reference the instances of a given model provided by the execution context. The function takes one or more arguments, the first argument must evaluate to a string that results in the model name to be accessed.",
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "nodeType": {
+              "type": "string",
+              "const": "pathReference"
+            },
+            "fieldName": {
+              "type": "string"
+            }
+          },
+          "required": ["nodeType","fieldName"],
+          "additionalProperties": true
+        }
+      ]
+    },
+
+    "node-content-unchecked": {
+      "type": "object",
+      "title": "Fallback to allow for additions to the node-type list",
+      "description": "Fallback to allow for additions to the function-type list.",
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "nodeType": {
+              "type": "string",
+              "not": {
+                "$ref": "#/definitions/node-type"
+              }
+            }
+          },
+          "required": ["nodeType"],
+          "additionalProperties": true
+        }
+      ]
+    },
+
+    "node-content": {
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "nodeType": {
+              "type": "string",
+              "title": "Node Type",
+              "description": "Indicates the type of a node"
+            }
+          },
+          "required": ["nodeType"]
+        },
+        {
+          "oneOf": [
+            {
+              "$ref": "#/definitions/literal-content"
+            },
+            {
+              "$ref": "#/definitions/field-lookup-content"
+            },
+            {
+              "$ref": "#/definitions/function-application-content"
+            },
+            {
+              "$ref": "#/definitions/occurs-content"
+            },
+            {
+              "$ref": "#/definitions/time-qualification-content"
+            },
+            {
+              "$ref": "#/definitions/time-duration-content"
+            },
+            {
+              "$ref": "#/definitions/time-range-content"
+            },
+            {
+              "$ref": "#/definitions/select-expression-content"
+            },
+            {
+              "$ref": "#/definitions/exists-quantification-content"
+            },
+            {
+              "$ref": "#/definitions/forall-quantification-content"
+            },
+            {
+              "$ref": "#/definitions/variable-reference-content"
+            },
+            {
+              "$ref": "#/definitions/let-content"
+            },
+            {
+              "$ref": "#/definitions/aggregation-expression-content"
+            },
+            {
+              "$ref": "#/definitions/path-reference-content"
+            },
+            {
+              "$ref": "#/definitions/node-content-unchecked"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/node-content"
+    }
+  ]
+}

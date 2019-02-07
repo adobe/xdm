@@ -1,0 +1,35 @@
+{
+  "@id": "xcore:personalized-offer:e526a1503bf29e9",
+  "schema:name": "Personalized Offer 1",
+  "https://ns.adobe.com/experience/decisioning/lifecycleStatus": "approved",
+  "https://ns.adobe.com/experience/decisioning/content-representations": [
+    {
+      "xdm:components": [
+        {
+          "xdm:text": "You can always get what you want!",
+          "@type": "https://ns.adobe.com/experience/offer-management/content-component-text",
+          "dc:format": "text/template"
+        }
+      ],
+      "xdm:channel": "https://ns.adobe.com/xdm/channels/email",
+      "xdm:placement": "xcore:offer-placement:e51944a87919861"
+    }
+  ],
+  "https://ns.adobe.com/experience/decisioning/tags": [
+    "xcore:tag:e5196f1d9119862"
+  ],
+  "https://ns.adobe.com/experience/decisioning/profileConstraint": {
+    "xdm:eligibilityRule": "xcore:eligibility-rule:e5244c22eff29e8"
+  },
+  "https://ns.adobe.com/experience/decisioning/calendarConstraint": {
+    "xdm:startTime": "2018-03-13T05:59:18.914Z",
+    "xdm:endTime": "2018-12-27T05:59:18.914Z"
+  },
+  "https://ns.adobe.com/experience/decisioning/cappingConstraint": {
+    "xdm:profileCap": 2,
+    "xdm:globalCap": 10
+  },
+  "https://ns.adobe.com/experience/decisioning/ranking": {
+    "xdm:priority": 1
+  }
+}

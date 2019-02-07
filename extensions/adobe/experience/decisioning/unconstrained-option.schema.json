@@ -1,0 +1,51 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/experience/decisioning/unconstrained-option",
+  "meta:abstract": false,
+  "meta:extensible": true,
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record",
+    "https://ns.adobe.com/experience/decisioning/option"
+  ],
+  "title": "Option without constraints",
+  "description": "An option can have a set of constraints. Unconstrained options are always applicable and are used as a fallback in an activity when all other options need to be ruled out for a given profile or context.",
+  "definitions": {
+    "fallback-option-relationship-mixin": {
+      "properties": {
+        "https://ns.adobe.com/experience/decisioning/fallbackOption": {
+          "type": "string",
+          "format": "uri-reference",
+          "title": "Fallback Option",
+          "description": "The reference to a fallback option that is used when decisioning in the context of this activity does not qualify any of the regular options (this typically happens when hard constraints are applied). The value is the URI (@id) of the fallback option that is referenced.  See schema https://ns.adobe.com/experience/decisioning/unconstrained-option",
+          "meta:descriptors": [
+            {
+              "@type": "xdm:manyToOne",
+              "xdm:destinationSchema": "https://ns.adobe.com/experience/decisioning/unconstrained-option",
+              "xdm:destinationProperty": "@id"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "https://ns.adobe.com/experience/decisioning/option#/definitions/option-datatype"
+    }
+  ],
+  "not": {
+    "$ref": "https://ns.adobe.com/experience/decisioning/constrained-option"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/experience/decisioning/activity",
+  "meta:abstract": false,
+  "meta:extensible": true,
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record",
+
+    "https://ns.adobe.com/experience/decisioning/lifecycle-status#/definitions/lifecycle-status-mixin",
+    "https://ns.adobe.com/experience/decisioning/option-filter#/definitions/option-filter-relationship-mixin",
+    "https://ns.adobe.com/experience/decisioning/unconstrained-option#/definitions/fallback-option-relationship-mixin"
+  ],
+  "type": "object",
+  "title": "Activity",
+  "description": "A decision activity is used to control the decisioning process. It specifies the filter applied to the total inventory of options to narrow them down by topic/category. The activity also specifies a fall back option should the combined constraints disqualify all narrowed-down options. A decision activity ican be thought of as a type of http://schema.org/Action",
+  "definitions": {
+    "activity-datatype": {
+      "properties": {
+        "schema:name": {
+          "type": "string",
+          "title": "Name",
+          "description": "Activity name. The name is displayed in various user interfaces. Property has the semantic of schema.org's 'name' property defined on http://schema.org/Thing"
+        },
+        "schema:startTime": {
+          "type": "string",
+          "format": "date-time",
+          "title": "Start Date and Time",
+          "description": "Activity Start Date and Time. Property has the semantic of schema.org's 'startTime' property defined on http://schema.org/Action"
+        },
+        "schema:endTime": {
+          "type": "string",
+          "format": "date-time",
+          "title": "End Date and Time",
+          "description": "Activity End Date and Time. Property has the semantic of schema.org's 'endTime' property defined on http://schema.org/Action"
+        }
+      }
+    },
+    "activity-relationship-mixin": {
+      "properties": {
+        "https://ns.adobe.com/experience/decisioning/activity": {
+          "type": "string",
+          "format": "uri-reference",
+          "title": "Decision Activity",
+          "description": "The reference to an activity that is configuring how the decision is made. The value is the URI (@id) of the decision activity that is referenced. See schema https://ns.adobe.com/experience/decisioning/activity",
+          "meta:descriptors": [
+            {
+              "@type": "xdm:manyToOne",
+              "xdm:destinationSchema": "https://ns.adobe.com/experience/decisioning/activity",
+              "xdm:destinationProperty": "@id"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "#/definitions/activity-datatype"
+    },
+    {
+      "$ref": "https://ns.adobe.com/experience/decisioning/lifecycle-status#/definitions/lifecycle-status-mixin"
+    },
+    {
+      "$ref": "https://ns.adobe.com/experience/decisioning/option-filter#/definitions/option-filter-relationship-mixin"
+    },
+    {
+      "$ref": "https://ns.adobe.com/experience/decisioning/unconstrained-option#/definitions/fallback-option-relationship-mixin"
+    },
+    {
+      "required": ["@id", "schema:name"]
+    },
+    {
+      "properties": { "@id": { "readonly": true } }
+    }
+  ]
+}

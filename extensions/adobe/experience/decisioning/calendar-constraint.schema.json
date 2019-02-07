@@ -1,0 +1,54 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/experience/decisioning/calendar-constraint",
+  "meta:abstract": true,
+  "meta:extensible": true,
+  "type": "object",
+  "title": "Calendar Constraint",
+  "description": "A calendar constraint is a component of a decision option that defines the date range when option is valid. Outside that date range the option cannot be proposed.",
+  "definitions": {
+    "calendar-constraint-datatype": {
+      "type": "object",
+      "properties": {
+        "xdm:startTime": {
+          "type": "string",
+          "format": "date-time",
+          "title": "Start Date & Time",
+          "description": "The start date of an option. Options that have not reached their start date are not yet considered eligible in the decisioning."
+        },
+        "xdm:endTime": {
+          "type": "string",
+          "format": "date-time",
+          "title": "End Date & Time",
+          "description": "The end date of an option. Options that have passed their end date are no longer considered eligible in the decisioning process."
+        }
+      }
+    },
+    "calendar-constraint-mixin": {
+      "meta:intendedToExtend": [
+        "https://ns.adobe.com/experience/decisioning/constrained-option"
+      ],
+      "properties": {
+        "https://ns.adobe.com/experience/decisioning/calendarConstraint": {
+          "$ref": "https://ns.adobe.com/experience/decisioning/calendar-constraint#/definitions/calendar-constraint-datatype",
+          "title": "Calendar Constaints",
+          "description": "Calendar constraints define the date range when an option is valid. Outside that date range the option cannot be proposed."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/calendar-constraint-datatype"
+    }
+  ]
+}

@@ -43,17 +43,19 @@ function checkBreakingChanges(files) {
         try { //check if schema file got removed
             var newSchema = JSON.parse(fs.readFileSync(workingFile).toString());
         } catch (err) {
-            if (err.code = "'ENOENT")
-                createError("Breaking changes found!!! --> " + workingFile + " can not be removed");
+            if (err.code = "ENOENT" && err.message.indexOf("ENOENT: no such file or directory") != -1)
+                createError("Breaking changes found!!! --> " + workingFile.replace("../", "") + " can not be removed");
+            else
+                createError(err)
         }
 
         var allOfCheckResult = isAllOfBroken(originalSchema["allOf"], newSchema["allOf"]); //check deleted allOfs
         if (originalSchema["allOf"] && allOfCheckResult.isBroken) {
-            createError("Breaking changes found!!! $ref " + allOfCheckResult["$ref"] + " inside allOf can not be removed.");
+            createError('Breaking changes found!!! {"$ref": "' + allOfCheckResult["$ref"] + '"} inside "allOf" can not be removed.');
         }
 
         if (newSchema["meta:extends"] && Array.isArray(newSchema["meta:extends"]) && isMetaExtendsBroken(newSchema["meta:extends"], newSchema["allOf"])) {
-            console.log("Warning: Incompatible meta:extends vs allOf found!!! The schemas inside meta:extends did not match those in allOf.")
+            console.log('Warning: Incompatible "meta:extends" vs "allOf" found!!! The schemas inside "meta:extends" did not match those in "allOf".')
         }
 
         var differences = diff(originalSchema, newSchema);
@@ -61,14 +63,14 @@ function checkBreakingChanges(files) {
             for (var i in differences) {
                 if (differences[i].kind == "D") { //check deleted fields
                     if (differences[i].path.indexOf("properties") != -1) {
-                        createError("Breaking changes found!!! Property " + differences[i].path.join("/").replace("../", "") + " can not be removed.");
+                        createError('Breaking changes found!!! Property "' + differences[i].path.join("/").replace("../", "") + '" can not be removed.');
                     }
 
                 }
                 if (differences[i].kind == "E") { //check changed data types
                     if ((differences[i].path[differences[i].path.length - 1] == '$ref' && differences[i].path.indexOf("allOf") == -1) ||
                         (differences[i].path[differences[i].path.length - 1] == 'type' && jsonDataTypes.indexOf(differences[i].lhs.toLowerCase() != -1))) {
-                        createError("Breaking changes found!!! Data type of property " + differences[i].path.join("/").replace("../", "") + " can not be changed.");
+                        createError('Breaking changes found!!! Data type of property "' + differences[i].path.join("/").replace("../", "") + '" can not be changed.');
                     }
 
                 }

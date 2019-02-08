@@ -36,7 +36,7 @@ shell.rm("-rf", masterCopyLoc); //done
 function checkBreakingChanges(files) {
     files.forEach(function (file) {
         var err;
-        console.log('Check breaking changes for -->' + file);
+        console.log('Check breaking changes -->' + file);
         var originalSchema = JSON.parse(fs.readFileSync(file).toString());
         var workingFile = file.replace("tempmaster/", "");
 
@@ -46,35 +46,26 @@ function checkBreakingChanges(files) {
             if (err.code = "ENOENT" && err.message.indexOf("ENOENT: no such file or directory") != -1)
                 createError("Breaking changes found!!! --> " + workingFile.replace("../", "") + " can not be removed");
             else
-                createError(err)
+                createError(err) //raise other validation errors
         }
 
-        var allOfCheckResult = isAllOfBroken(originalSchema["allOf"], newSchema["allOf"]); //check deleted allOfs
-        if (originalSchema["allOf"] && allOfCheckResult.isBroken) {
-            createError('Breaking changes found!!! {"$ref": "' + allOfCheckResult["$ref"] + '"} inside "allOf" can not be removed.');
+        var allOfCheck = isAllOfBroken(originalSchema["allOf"], newSchema["allOf"]); //check deleted allOfs
+        if (originalSchema["allOf"] && allOfCheck.isBroken) {
+            createError('Breaking changes found!!! {"$ref": "' + allOfCheck["$ref"] + '"} inside "allOf" can not be removed.');
         }
 
-        if (newSchema["meta:extends"] && Array.isArray(newSchema["meta:extends"]) && isMetaExtendsBroken(newSchema["meta:extends"], newSchema["allOf"])) {
+        if (newSchema["meta:extends"] && Array.isArray(newSchema["meta:extends"]) && isMetaExtendsBroken(newSchema["meta:extends"], newSchema["allOf"])) { //check meta:extends against allOf
             console.log('Warning: Incompatible "meta:extends" vs "allOf" found!!! The schemas inside "meta:extends" did not match those in "allOf".')
         }
 
         var differences = diff(originalSchema, newSchema);
-        if (differences) {
-            for (var i in differences) {
-                if (differences[i].kind == "D") { //check deleted fields
-                    if (differences[i].path.indexOf("properties") != -1) {
-                        createError('Breaking changes found!!! Property "' + differences[i].path.join("/").replace("../", "") + '" can not be removed.');
-                    }
+        var brokenProperty = {};
+        if (differences && isPropertyRemoved(differences, brokenProperty)) { //check removed properties
+            createError('Breaking changes found!!! Property "' + brokenProperty.name + '" can not be removed.');
+        }
 
-                }
-                if (differences[i].kind == "E") { //check changed data types
-                    if ((differences[i].path[differences[i].path.length - 1] == '$ref' && differences[i].path.indexOf("allOf") == -1) ||
-                        (differences[i].path[differences[i].path.length - 1] == 'type' && jsonDataTypes.indexOf(differences[i].lhs.toLowerCase() != -1))) {
-                        createError('Breaking changes found!!! Data type of property "' + differences[i].path.join("/").replace("../", "") + '" can not be changed.');
-                    }
-
-                }
-            }
+        if (differences && isFieldTypeChanged(differences, brokenProperty)) { //check changed data types
+            createError('Breaking changes found!!! Data type of property "' + brokenProperty.name + '" can not be changed.');
         }
 
     });
@@ -113,6 +104,34 @@ function isMetaExtendsBroken(metaExtends, newAllOf) {
         return false
 
 }
+
+function isPropertyRemoved(differences, brokenProperty) {
+    for (var i in differences) {
+        if (differences[i].kind == "D") {
+            if (differences[i].path.indexOf("properties") != -1) {
+                brokenProperty.name = differences[i].path.join("/").replace("../", "");
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
+function isFieldTypeChanged(differences, brokenProperty) {
+    for (var i in differences) {
+        if (differences[i].kind == "E") {
+            if ((differences[i].path[differences[i].path.length - 1] == '$ref' && differences[i].path.indexOf("allOf") == -1) ||
+                (differences[i].path[differences[i].path.length - 1] == 'type' && jsonDataTypes.indexOf(differences[i].lhs.toLowerCase() != -1))) {
+                brokenProperty.name = differences[i].path.join("/").replace("../", "");
+                return true;
+            }
+
+        }
+    }
+    return false;
+
+}
+
 
 function createError(err) {
     shell.rm("-rf", masterCopyLoc);

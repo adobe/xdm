@@ -61,8 +61,8 @@
     "repo:name",
     "repo:path",
     "dc:format",
-    "repo:createdDate",
-    "repo:lastModifiedDate"
+    "repo:createDate",
+    "repo:modifyDate"
   ],
   "meta:status": "experimental"
 }

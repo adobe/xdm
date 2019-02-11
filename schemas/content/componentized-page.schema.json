@@ -15,15 +15,14 @@
     "http://ns.adobe.com/adobecloud/core/1.0#/definitions/common-properties",
     "http://ns.adobe.com/adobecloud/core/1.0#/definitions/date-properties",
     "https://ns.adobe.com/xdm/external/hal/resource#/definitions/hal",
-    "http://ns.adobe.com/adobecloud/core/1.0/asset",
-    "https://ns.adobe.com/xdm/content/content"
+    "http://ns.adobe.com/adobecloud/core/1.0/asset"
   ],
   "additionalProperties": {
     "$ref": "#/definitions/residuals"
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/content/content#/definitions/content"
+      "$ref": "http://ns.adobe.com/adobecloud/core/1.0/asset#/definitions/asset"
     },
     {
       "$ref": "#/definitions/page"
@@ -32,9 +31,9 @@
   "required": [
     "repo:name",
     "repo:path",
-    "repo:createdDate",
+    "repo:createDate",
     "xdm:repositoryCreatedBy",
-    "repo:lastModifiedDate",
+    "repo:modifyDate",
     "xdm:repositoryLastModifiedBy"
   ],
   "definitions": {

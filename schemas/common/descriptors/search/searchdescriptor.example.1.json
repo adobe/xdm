@@ -1,0 +1,14 @@
+{
+  "@id": "https://ns.adobe.com/xdm/common/descriptors/searchdescriptor",
+  "@type": "xdm:searchdescriptor",
+  "search:indexed": true,
+  "search:filterable": true,
+  "search:store": "storedAndFetchByDefault",
+  "search:sort": "sortedCaseInsensitive",
+  "search:analyzers":
+     [
+      "standard",
+      "noAnalysis"
+    ],
+  "search:defaultAnalyzer": "standard"
+}

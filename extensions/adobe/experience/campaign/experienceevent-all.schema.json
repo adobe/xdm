@@ -281,8 +281,7 @@
         "https://ns.adobe.com/experience/campaign/offerClicked": {
           "title": "Offer Clicked",
           "description": "The offer in the message for a clicked event to an offer.",
-            "$ref": "https://ns.adobe.com/experience/decisioning/proposition#/definitions/proposition-detail-datatype"
-          }
+          "$ref": "https://ns.adobe.com/experience/decisioning/proposition#/definitions/proposition-detail-datatype"
         }
       }
     },

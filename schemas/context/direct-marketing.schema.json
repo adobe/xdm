@@ -24,6 +24,11 @@
           "description":
             "Click(s) actions on a message."
         },
+        "xdm:offerClicks": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+            "Click on an offer in a message."
+        },
         "xdm:mirrorPages": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":

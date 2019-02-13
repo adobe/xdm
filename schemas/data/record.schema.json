@@ -22,8 +22,8 @@
           "format": "uri-reference",
           "description": "A unique identifier for the record."
         },
-        "xdm:eventList": {
-          "title": "Event List",
+        "xdm:timeSeriesEvents": {
+          "title": "Time-series Events",
           "description": "List of time-series based events that relate to schemas based on record.",
           "type": "array",
           "items": {

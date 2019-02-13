@@ -15,7 +15,7 @@
     "https://ns.adobe.com/xdm/external/hal/resource#/definitions/hal"
   ],
   "meta:extensible": true,
-  "description": "An asset in Adobe Cloud Platform. It is not neccessarily a Digital Asset in the sense of Digital Asset Management, but a piece of content or data that can be represented in the form of a file.",
+  "description": "The set of repository metadata associated with a stored asset.",
   "definitions": {
     "asset": {
       "properties": {
@@ -25,6 +25,13 @@
           "meta:usereditable": false,
           "description": "A unique identifier given to every addressable asset in a given repository.",
           "examples": ["urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e"]
+        },
+        "repo:size": {
+          "meta:usereditable": false,
+          "type": "integer",
+          "minimum": 0,
+          "title": "Size",
+          "description": "Size of the asset in bytes."
         },
         "repo:etag": {
           "meta:usereditable": false,
@@ -37,6 +44,17 @@
           "meta:immutable": true,
           "meta:usereditable": false,
           "description": "The version ID of the piece of content. It will be generated both on explicit and implicit save or upload."
+        },
+        "repo:createdBy": {
+          "type": "string",
+          "meta:immutable": true,
+          "meta:usereditable": false,
+          "description": "ID of the user who initiated the action that caused the resource to be created in the repository."
+        },
+        "repo:modifiedBy": {
+          "type": "string",
+          "meta:usereditable": false,
+          "description": "ID of the user who initiated the action that most recently caused the resource to be modified in the repository."
         },
         "tiff:imageWidth": {
           "title": "Width",
@@ -53,12 +71,6 @@
           "meta:usereditable": false,
           "minimum": 0,
           "example": 1024
-        },
-        "repo:size": {
-          "meta:usereditable": false,
-          "type": "integer",
-          "title": "Size",
-          "description": "Size of the asset in bytes."
         }
       }
     }
@@ -81,8 +93,8 @@
     "repo:name",
     "repo:path",
     "dc:format",
-    "repo:createdDate",
-    "repo:lastModifiedDate",
+    "repo:createDate",
+    "repo:modifyDate",
     "repo:id",
     "repo:etag",
     "repo:version",

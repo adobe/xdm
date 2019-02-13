@@ -1,13 +1,13 @@
 {
   "name": "xdm",
-  "version": "0.9.8",
+  "version": "0.9.9",
   "description": "Experience Data Models",
   "main": "",
   "config": {
     "aem_user": "packageUser",
     "aem_password": "override me securely",
     "markdown-importer-version": "0.0.4",
-    "schemas": 240
+    "schemas": 241
   },
   "scripts": {
     "clean": "rm -rf docs/reference",

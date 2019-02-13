@@ -5,25 +5,27 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/context/profile-push-details",
+  "$id": "https://ns.adobe.com/xdm/context/profile-identities-deprecated",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Profile Push Details",
+  "title": "Identities Array for Profile (deprecated)",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
-  "description": "Push addressing details are used to communicate with applications that are installed on devices or SaaS application accounts.",
+  "description": "Identities Array for Profile (deprecated).",
   "definitions": {
-    "profile-push-details": {
+    "profile-identities-deprecated": {
       "properties": {
-        "xdm:pushNotificationTokens": {
-          "title": "Push Notification Tokens",
+        "xdm:identities": {
+          "meta:status": "deprecated",
+          "title": "All User Identities (deprecated)",
           "type": "array",
-          "description":
-            "Push notification tokens are used to communicate with applications that are installed on devices or SaaS application accounts.",
           "items": {
-            "$ref": "https://ns.adobe.com/xdm/context/pushnotificationtoken"
-          }
+            "$ref": "https://ns.adobe.com/xdm/context/identity"
+          },
+          "minItems": 1,
+          "description":
+            "Array of Identities. Condensed, normalized encapsulation of all end user identifiers.  Deprecated, use `xdm:identityMap` instead."
         }
       }
     }
@@ -33,8 +35,8 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "#/definitions/profile-push-details"
+      "$ref": "#/definitions/profile-identities-deprecated"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "deprecated"
 }

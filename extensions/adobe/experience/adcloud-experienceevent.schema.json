@@ -7,14 +7,13 @@
   ],
   "$id": "https://ns.adobe.com/experience/adcloud-experienceevent",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Adobe AdCloud ExperienceEvent Mixin",
+  "title": "Adobe AdCloud ExperienceEvent Template Mixin",
   "type": "object",
-  "description": "This AdCloud ExperienceEvent Mixin includes the core/standard ExperienceEvent as well as the required Adobe AdCloud ExperienceEvent Mixins.",
+  "description": "AdCloud ExperienceEvent Mixin for use with Schemas for Solution data ingestion. Includes the core/standard ExperienceEvent as well as the required Adobe AdCloud ExperienceEvent Mixins.",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "meta:extends": [
-    "https://ns.adobe.com/experience/experienceevent",
     "https://ns.adobe.com/xdm/context/experienceevent-advertising",
     "https://ns.adobe.com/xdm/context/experienceevent-application",
     "https://ns.adobe.com/xdm/context/experienceevent-channel",
@@ -31,7 +30,8 @@
     "https://ns.adobe.com/experience/adcloud/experienceevent-all",
     "https://ns.adobe.com/experience/target/experienceevent-shared",
     "https://ns.adobe.com/experience/profile/experienceevent-shared",
-    "https://ns.adobe.com/experience/implementations-ext"
+    "https://ns.adobe.com/experience/implementations-ext",
+    "https://ns.adobe.com/xdm/context/experienceevent-enduserids-deprecated"
   ],
   "definitions": {
     "adcloud-experienceevent": {
@@ -41,9 +41,6 @@
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
-    },
-    {
-      "$ref": "https://ns.adobe.com/experience/experienceevent"
     },
     {
       "$ref": "https://ns.adobe.com/xdm/context/experienceevent-advertising"
@@ -95,6 +92,9 @@
     },
     {
       "$ref": "https://ns.adobe.com/experience/implementations-ext"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-enduserids-deprecated"
     },
     {
       "$ref": "#/definitions/adcloud-experienceevent"

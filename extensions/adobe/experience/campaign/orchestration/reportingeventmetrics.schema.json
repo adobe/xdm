@@ -90,6 +90,30 @@
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
             "Set to 1 when a jump to another journey instance is made"
+        },
+        "https://ns.adobe.com/experience/campaign/orchestrationTimeoutInAction": {
+          "title": "Timeout In Action",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+          "Set to 1 when timeout occurs during execution of an action"
+        },
+        "https://ns.adobe.com/experience/campaign/orchestrationTimeoutInEvent": {
+          "title": "Timeout in Event",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+          "Set to 1 when timeout occurs during the processing of an event"
+        },
+        "https://ns.adobe.com/experience/campaign/orchestrationTimeoutInJourney": {
+          "title": "Timeout In Journey",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+          "Set to 1 when timeout occurs during the flow of a journey"
+        },
+        "https://ns.adobe.com/experience/campaign/orchestrationTimeoutInEnrichment": {
+          "title": "Timeout In Enrichment",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+          "Set to 1 when timeout occurs during enrichement"
         }
       }
     }

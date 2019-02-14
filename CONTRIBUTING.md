@@ -135,7 +135,7 @@ Avoid non-semantic limits – don’t put current resource limits in the data mo
 
 - file names for schema files should be lower case and end with `.schema.json`
 - include an `"$id"` with a value like `"https://ns.adobe.com/xdm/assets/image"` in the schema (but leave out the `.schema.json`)
-- when referencing schemas, use the absolute `$id`, don't use relative references like `../content/content.schema.json`
+- when referencing schemas, use the absolute `$id`, don't use relative references like `../repo/asset.schema.json`
 - don't nest schemas too deeply. Break inline type definitions into separate `*.schema.json` files if they have properties with object types themselves.
 - don't make schemas too fine-grained, only create schemas for `object`s not for simple types like patterned strings
 - ensure that there is a `meta:license` at the top of the schema

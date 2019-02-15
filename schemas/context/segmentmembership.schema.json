@@ -13,11 +13,6 @@
   "definitions": {
     "segmentMembership": {
       "properties": {
-        "xdm:segmentID": {
-          "title": "Segment ID",
-          "$ref": "https://ns.adobe.com/xdm/context/segmentidentity",
-          "description": "The identity of the segment or snapshot definition in with the domain of the specific system that processes that type of segment."
-        },
         "xdm:version": {
           "title": "Version",
           "type": "string",
@@ -88,6 +83,9 @@
             "realized": "Entity is entering the segment",
             "exited": "Entity is exiting the segment"
           }
+        },
+        "xdm:profileStitchID": {
+          "$ref": "https://ns.adobe.com/xdm/context/profileStitchIdentity"
         }
       }
     }

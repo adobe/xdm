@@ -29,14 +29,14 @@
         "xdm:createdByBatchID": {
           "title": "Created by Batch Identifier",
           "type": "string",
-          "format": "uri",
+          "format": "uri-reference",
           "description":
             "The Data Set Files in Catalog Services which has been originating the creation of the entity."
         },
         "xdm:modifiedByBatchID": {
           "title": "Modified by Batch Identifier",
           "type": "string",
-          "format": "uri",
+          "format": "uri-reference",
           "description":
             "The last Data Set Files in Catalog Services which has modified the entity. At creation time, `modifiedByBatchID` is set as `createdByBatchID`."
         }

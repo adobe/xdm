@@ -11,7 +11,7 @@
   "type": "object",
   "meta:abstract": true,
   "description":
-    "Inheriting this schema using `allOf` indicates that the data record is auditable, i.e. it can be determined when the record has last been modified and by whom.",
+    "Inclusion of this schema indicates that the data record is auditable, i.e. it can be determined when the record has last been modified and by whom.",
   "definitions": {
     "auditlog": {
       "properties": {

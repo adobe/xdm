@@ -1,11 +1,11 @@
 {
   "repo:id": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
-  "repo:createdDate": "2017-09-26T15:52:25+00:00",
-  "repo:lastModifiedDate": "2017-09-26T15:52:25+00:00",
-  "repo:version": "15",
+  "repo:createDate": "2017-09-26T15:52:25+00:00",
+  "repo:modifyDate": "2017-09-26T15:52:25+00:00",
+  "repo:version": "15b",
   "repo:size": 1632418,
-  "repo:path": "here",
-  "repo:name": "example.png",
-  "repo:etag": "15",
+  "repo:path": "/users/joe/Project 1/logo.png",
+  "repo:name": "logo.png",
+  "repo:etag": "\"aa15\"",
   "dc:format": "image/png"
 }

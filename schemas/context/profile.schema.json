@@ -14,7 +14,6 @@
   "meta:abstract": true,
   "meta:extends": [
     "https://ns.adobe.com/xdm/data/record",
-    "https://ns.adobe.com/xdm/common/auditable",
     "https://ns.adobe.com/xdm/context/identitymap"
   ],
   "description":

@@ -16,6 +16,14 @@
   "definitions": {
     "profile-segmentation": {
       "properties": {
+        "xdm:segments":{
+          "title" : "Segment Membership",
+          "meta:status": "deprecated",
+          "type" : "array",
+          "items" : {
+            "$ref" : "https://ns.adobe.com/xdm/context/segmentmembership"
+          }
+        },
         "xdm:segmentMembership":{
           "title" : "Segment Membership Map",
           "type" : "object",

@@ -16,6 +16,15 @@
   "definitions": {
     "experienceevent-segmentmembership": {
       "properties": {
+        "xdm:segmentMemberships": {
+          "title": "Segment Memberships",
+          "meta:status": "deprecated",
+          "description": "The segments associated with this ExperienceEvent. Deprecated, use `xdm:segmentMembership` instead.",
+          "type": "array",
+          "items": {
+            "$ref": "https://ns.adobe.com/xdm/context/segmentmembershipitem"
+          }
+        },
         "xdm:segmentMembership":{
           "title" : "Segment Membership Map",
           "type" : "object",

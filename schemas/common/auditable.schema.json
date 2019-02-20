@@ -48,7 +48,7 @@
       "$ref": "#/definitions/auditlog"
     },
     {
-      "$ref": "http://ns.adobe.com/adobecloud/core/1.0#definitions/date-properties"
+      "$ref": "http://ns.adobe.com/adobecloud/core/1.0#/definitions/date-properties"
     }
   ],
   "meta:status": "experimental"

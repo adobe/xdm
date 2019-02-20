@@ -11,7 +11,7 @@
   "type": "object",
   "description": "Direct Marketing Phone Number.",
   "definitions": {
-    "directmarketing-phone": {
+    "directmarketing-phonenumber": {
       "properties": {
         "xdm:errorCount": {
           "title": "Error Count",

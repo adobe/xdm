@@ -25,16 +25,6 @@
           "title": "Type",
           "type": "string",
           "description": "The type of descriptor this object represents",
-          "enum": [
-            "xdm:descriptorOneToOne",
-            "xdm:descriptorOneToMany",
-            "xdm:descriptorManyToMany",
-            "xdm:descriptorIdentity",
-            "xdm:descriptorPrimaryKey",
-            "xdm:updatePolicy",
-            "xdm:alternateDisplayInfo",
-            "xdm:eventRelationship"
-          ],
           "meta:enum": {
             "xdm:descriptorOneToOne": "xdm:descriptorOneToOne",
             "xdm:descriptorOneToMany": "xdm:descriptorOneToMany",

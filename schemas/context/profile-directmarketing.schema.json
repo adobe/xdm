@@ -16,17 +16,17 @@
   "definitions": {
     "profile-directmarketing": {
       "properties": {
-        "xdm:address": {
+        "xdm:directMarketingAddress": {
           "title": "Direct Marketing Address",
           "$ref": "https://ns.adobe.com/xdm/context/directmarketing-address",
           "description": "Direct Marketing postal address."
         },
-        "xdm:email": {
+        "xdm:directMarketingEmail": {
           "title": "Direct Marketing Email",
           "$ref": "https://ns.adobe.com/xdm/context/directmarketing-emailaddress",
           "description": "Direct Marketing email address."
         },
-        "xdm:phone": {
+        "xdm:directMarketingPhone": {
           "title": "Direct Marketing Phone",
           "$ref": "https://ns.adobe.com/xdm/context/directmarketing-phonenumber",
           "description": "Direct Marketing phone number."

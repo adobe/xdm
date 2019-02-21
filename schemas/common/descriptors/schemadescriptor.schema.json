@@ -25,7 +25,26 @@
           "title": "Type",
           "type": "string",
           "description": "The type of descriptor this object represents",
-          "meta:enum": {}
+          "enum": [
+            "xdm:descriptorOneToOne",
+            "xdm:descriptorOneToMany",
+            "xdm:descriptorManyToMany",
+            "xdm:descriptorIdentity",
+            "xdm:descriptorPrimaryKey",
+            "xdm:updatePolicy",
+            "xdm:alternateDisplayInfo",
+            "xdm:eventRelationship"
+          ],
+          "meta:enum": {
+            "xdm:descriptorOneToOne": "xdm:descriptorOneToOne",
+            "xdm:descriptorOneToMany": "xdm:descriptorOneToMany",
+            "xdm:descriptorManyToMany": "xdm:descriptorManyToMany",
+            "xdm:descriptorIdentity": "xdm:descriptorIdentity",
+            "xdm:descriptorPrimaryKey": "xdm:descriptorPrimaryKey",
+            "xdm:updatePolicy": "xdm:updatePolicy",
+            "xdm:alternateDisplayInfo": "xdm:alternateDisplayInfo",
+            "xdm:eventRelationship": "xdm:eventRelationship"
+          }
         },
         "xdm:sourceSchema": {
           "title": "Source Schema",
@@ -43,7 +62,10 @@
           "description": "When present, the selector used to match a specific item in the array pointed to by `sourceProperty`",
           "$ref": "https://ns.adobe.com/xdm/common/descriptors/itemselector#/definitions/selector"
         }
-      }
+      },
+      "required": [
+        "xdm:sourceSchema"
+      ]
     }
   },
   "allOf": [

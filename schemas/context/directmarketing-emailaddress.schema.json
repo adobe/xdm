@@ -31,7 +31,7 @@
       "$ref": "#/definitions/directmarketing-emailaddress"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/context/phonenumber"
+      "$ref": "https://ns.adobe.com/xdm/context/emailaddress"
     }
   ],
   "meta:status": "experimental"

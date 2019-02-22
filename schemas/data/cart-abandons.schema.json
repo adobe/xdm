@@ -11,8 +11,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/metricdefinition"],
-  "description":
-    "Number of cart abandons for which a product list has been identified as no longer purchasable or accessible by the user without the user re-creating the product list from scratch.",
+  "description": "Number of cart abandons for which a product list has been identified as no longer purchasable or accessible by the user without the user re-creating the product list from scratch.",
   "definitions": {
     "metricdefinition": {
       "properties": {
@@ -24,8 +23,7 @@
         "schema:name": {
           "type": "string",
           "const": "commerce metric: cartAbandons",
-          "description":
-            "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
+          "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
         },
         "xdm:measurement": {
           "type": "string",

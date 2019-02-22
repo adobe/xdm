@@ -25,14 +25,12 @@
           "description": "The index of the ad inside the parent ad break. The first ad has index 0, the second 1, and so on."
         },
         "xdm:adBreak": {
-            "title": "Ad Break",
-            "description": "Details about how a timed advertising is being inserted into a timed media.",
-            "$ref": "https://ns.adobe.com/xdm/context/advertising-break"
+          "title": "Ad Break",
+          "description": "Details about how a timed advertising is being inserted into a timed media.",
+          "$ref": "https://ns.adobe.com/xdm/context/advertising-break"
         }
       },
-      "required": [
-        "xdm:index"
-      ]
+      "required": ["xdm:index"]
     }
   },
   "allOf": [

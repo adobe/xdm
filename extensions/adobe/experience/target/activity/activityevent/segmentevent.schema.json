@@ -22,10 +22,7 @@
           "$ref": "https://ns.adobe.com/experience/target/activity/activityevent/eventscope#/definitions/eventscope"
         }
       },
-      "required": [
-        "xdm:segmentID",
-        "xdm:eventScope"
-      ]
+      "required": ["xdm:segmentID", "xdm:eventScope"]
     }
   },
   "allOf": [

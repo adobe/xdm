@@ -23,8 +23,7 @@
         "schema:name": {
           "type": "string",
           "const": "metric: starts",
-          "description":
-          "Indicates the first frame of the timed media asset was viewed - i.e. the viewer did not abandon during pre-roll ad, buffering, etc."
+          "description": "Indicates the first frame of the timed media asset was viewed - i.e. the viewer did not abandon during pre-roll ad, buffering, etc."
         },
         "xdm:measurement": {
           "type": "string",

@@ -39,12 +39,7 @@
           "title": "Flow control",
           "type": "string",
           "description": "Flow control in the journey triggered by the event.",
-          "enum": [
-            "end",
-            "jump",
-            "timer",
-            "condition"
-          ],
+          "enum": ["end", "jump", "timer", "condition"],
           "meta:enum": {
             "end": "if the 'end' step has been reached, if this step exists",
             "jump": "if a jump has been taken",
@@ -65,9 +60,8 @@
         },
         "https://ns.adobe.com/experience/campaign/orchestrationAction": {
           "title": "Action on step transition",
-          "description":
-            "Action taken during a step transition happening for an user in state machine",
-          "$ref": "https://ns.adobe.com/experience/campaign/orchestration/experienceevent#/definitions/action"  
+          "description": "Action taken during a step transition happening for an user in state machine",
+          "$ref": "https://ns.adobe.com/experience/campaign/orchestration/experienceevent#/definitions/action"
         },
         "https://ns.adobe.com/experience/campaign/orchestrationExternalEvent": {
           "title": "external event received",
@@ -81,8 +75,7 @@
         },
         "https://ns.adobe.com/experience/campaign/journeyVersion": {
           "title": "Journey version",
-          "description":
-            "Schema for describing the version of a journey, where version holds the state machine",
+          "description": "Schema for describing the version of a journey, where version holds the state machine",
           "$ref": "https://ns.adobe.com/experience/campaign/orchestration/experienceevent#/definitions/journeyVersion"
         }
       }

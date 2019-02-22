@@ -1,5 +1,5 @@
 {
-   "xdm:identityMap": {
+  "xdm:identityMap": {
     "ECID": [
       {
         "xdm:id": "92312748749128"
@@ -11,7 +11,7 @@
       }
     ]
   },
-  "xdm:person":{
+  "xdm:person": {
     "xdm:name": {
       "xdm:firstName": "Jane",
       "xdm:middleName": "F",
@@ -57,10 +57,10 @@
     "xdm:globalOptout": false
   },
   "xdm:orgUnit": {
-    "@id" : "https://data.adobe.io/org-apparals-men"
+    "@id": "https://data.adobe.io/org-apparals-men"
   },
   "xdm:geoUnit": {
-    "@id" : "https://data.adobe.io/geo-france"
+    "@id": "https://data.adobe.io/geo-france"
   },
   "xdm:segments": [
     {

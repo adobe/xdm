@@ -18,20 +18,17 @@
         "xdm:webPageDetails": {
           "title": "Web Page Details",
           "$ref": "https://ns.adobe.com/xdm/context/webpagedetails",
-          "description":
-            "Details about the web page where the web interaction occurred."
+          "description": "Details about the web page where the web interaction occurred."
         },
         "xdm:webInteraction": {
           "title": "Web Interaction",
           "$ref": "https://ns.adobe.com/xdm/context/webinteraction",
-          "description":
-            "Details about the web link (URL) that corresponds to where the interaction occurred."
+          "description": "Details about the web link (URL) that corresponds to where the interaction occurred."
         },
         "xdm:webReferrer": {
           "title": "Web Referrer",
           "$ref": "https://ns.adobe.com/xdm/context/webreferrer",
-          "description":
-            "The referrer of a web interaction, which is the URL a visitor came from immediately before the current web interaction was recorded."
+          "description": "The referrer of a web interaction, which is the URL a visitor came from immediately before the current web interaction was recorded."
         }
       }
     }

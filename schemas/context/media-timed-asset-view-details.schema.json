@@ -76,11 +76,7 @@
           "description": "Timed media properties related to the content playback's quality of experience (QoE)."
         }
       },
-      "required": [
-        "@id",
-        "xdm:playerName",
-        "xdm:broadcastChannel"
-      ]
+      "required": ["@id", "xdm:playerName", "xdm:broadcastChannel"]
     }
   },
   "allOf": [

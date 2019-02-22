@@ -33,8 +33,7 @@
         "xdm:name": {
           "title": "Name",
           "type": "string",
-          "description":
-            "The normative name used for this web link, used for classification purposes"
+          "description": "The normative name used for this web link, used for classification purposes"
         },
         "xdm:linkClicks": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",

@@ -16,33 +16,27 @@
       "properties": {
         "xdm:bounces": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-            "Asynchronous message(s) that have been returned as temporarily undeliverable the receiving system."
+          "description": "Asynchronous message(s) that have been returned as temporarily undeliverable the receiving system."
         },
         "xdm:clicks": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-            "Click(s) actions on a message."
+          "description": "Click(s) actions on a message."
         },
         "xdm:mirrorPages": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-            "Click on a link in a message to a web hosted mirror page."
+          "description": "Click on a link in a message to a web hosted mirror page."
         },
         "xdm:nonDeliverables": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-            "Asynchronous message(s) failed to deliver in a way that indicates that no future delivery attempts will be successful to the address."
+          "description": "Asynchronous message(s) failed to deliver in a way that indicates that no future delivery attempts will be successful to the address."
         },
         "xdm:sends": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-            "Asynchronous message(s) (email, SMS, MMS etc) have been dispatched to a person's account/address/device."
+          "description": "Asynchronous message(s) (email, SMS, MMS etc) have been dispatched to a person's account/address/device."
         },
         "xdm:userComplaints": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-            "User complaint(s) have been received. This generally occurs when a recipient of a message reports it as spam."
+          "description": "User complaint(s) have been received. This generally occurs when a recipient of a message reports it as spam."
         },
         "xdm:opens": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",

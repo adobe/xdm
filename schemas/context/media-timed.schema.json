@@ -111,10 +111,7 @@
           "description": "Describes the duration (in seconds) in which playback was paused by the user."
         }
       },
-      "required": [
-        "xdm:primaryAssetReference",
-        "xdm:primaryAssetViewDetails"
-      ]
+      "required": ["xdm:primaryAssetReference", "xdm:primaryAssetViewDetails"]
     }
   },
   "allOf": [

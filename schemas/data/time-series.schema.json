@@ -11,8 +11,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "description":
-    "Used to indicate the behaviour of time partitioned semantics when composed into data schemas.",
+  "description": "Used to indicate the behaviour of time partitioned semantics when composed into data schemas.",
   "definitions": {
     "time-series": {
       "properties": {

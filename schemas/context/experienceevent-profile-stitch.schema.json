@@ -16,11 +16,11 @@
   "definitions": {
     "experienceevent-profile-stitch": {
       "properties": {
-        "xdm:profileStitch" : {
+        "xdm:profileStitch": {
           "title": "Profile Stitch",
           "description": "Details about the ids that were joined by profile stitching.",
-          "type" : "array",
-          "items" : {
+          "type": "array",
+          "items": {
             "$ref": "https://ns.adobe.com/xdm/context/profileStitch"
           }
         }

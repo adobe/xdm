@@ -23,8 +23,7 @@
         "schema:name": {
           "type": "string",
           "const": "metric: firstQuartiles",
-          "description":
-          "The advertising metric first-quartiles describes digital video which played for at least 25% of the total duration."
+          "description": "The advertising metric first-quartiles describes digital video which played for at least 25% of the total duration."
         },
         "xdm:measurement": {
           "type": "string",

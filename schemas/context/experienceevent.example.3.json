@@ -68,14 +68,15 @@
           "xdm:beaconMajor": 300,
           "xdm:beaconMinor": 34
         }
-      },{
+      },
+      {
         "xdm:POIID": "d8a5c08c-1e79-4051-8a8b-675fb235e03d",
         "xdm:name": "Tokyo City",
         "xdm:locatingType": "gps",
         "xdm:geoInteractionDetails": {
           "xdm:distanceToCenter": 320,
           "xdm:accuracy": 30,
-          "xdm:geoShape" : {
+          "xdm:geoShape": {
             "@id": "https://data.adobe.io/entities/geoShape/shapeid123",
             "schema:circle": {
               "@id": "https://data.adobe.io/entities/geo/circleid123",
@@ -92,7 +93,6 @@
           }
         }
       }
-
     ],
     "xdm:type": "browser",
     "xdm:browserDetails": {
@@ -138,7 +138,7 @@
       "xdm:adWidth": 300,
       "xdm:playerVolume": 85,
       "xdm:measurementEligible": true,
-      "xdm:implementationDetails" : {
+      "xdm:implementationDetails": {
         "xdm:name": "https://ns.adobe.com/experience/adcloud/viewability",
         "xdm:version": "1"
       },

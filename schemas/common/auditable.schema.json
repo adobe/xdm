@@ -10,8 +10,7 @@
   "title": "Audit Trail",
   "type": "object",
   "meta:abstract": true,
-  "description":
-    "Inclusion of this schema indicates that the data record is auditable, i.e. it can be determined when the record has last been modified and by whom.",
+  "description": "Inclusion of this schema indicates that the data record is auditable, i.e. it can be determined when the record has last been modified and by whom.",
   "definitions": {
     "auditlog": {
       "properties": {
@@ -23,22 +22,19 @@
         "xdm:repositoryLastModifiedBy": {
           "title": "Modified by User Identifier",
           "type": "string",
-          "description":
-            "User id who last modified the entity. At creation time, `modifiedByUser` is set as `createdByUser`."
+          "description": "User id who last modified the entity. At creation time, `modifiedByUser` is set as `createdByUser`."
         },
         "xdm:createdByBatchID": {
           "title": "Created by Batch Identifier",
           "type": "string",
           "format": "uri-reference",
-          "description":
-            "The Data Set Files in Catalog Services which has been originating the creation of the entity."
+          "description": "The Data Set Files in Catalog Services which has been originating the creation of the entity."
         },
         "xdm:modifiedByBatchID": {
           "title": "Modified by Batch Identifier",
           "type": "string",
           "format": "uri-reference",
-          "description":
-            "The last Data Set Files in Catalog Services which has modified the entity. At creation time, `modifiedByBatchID` is set as `createdByBatchID`."
+          "description": "The last Data Set Files in Catalog Services which has modified the entity. At creation time, `modifiedByBatchID` is set as `createdByBatchID`."
         }
       }
     }

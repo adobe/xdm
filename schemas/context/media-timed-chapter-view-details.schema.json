@@ -26,10 +26,7 @@
           "description": "The offset of the chapter, in seconds, inside the content from the start."
         }
       },
-      "required": [
-        "xdm:index",
-        "xdm:offset"
-      ]
+      "required": ["xdm:index", "xdm:offset"]
     }
   },
   "allOf": [

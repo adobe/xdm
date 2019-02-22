@@ -10,8 +10,12 @@
       "xdm:version": "1.0",
       "xdm:identityMap": {
         "ECID": [
-          { "xdm:id": "https://data.adobe.io/entities/identity/92312748749128" },
-          { "xdm:id": "https://data.adobe.io/entities/identity/62312748749321" },
+          {
+            "xdm:id": "https://data.adobe.io/entities/identity/92312748749128"
+          },
+          {
+            "xdm:id": "https://data.adobe.io/entities/identity/62312748749321"
+          },
           { "xdm:id": "https://data.adobe.io/entities/identity/49312748749132" }
         ]
       }

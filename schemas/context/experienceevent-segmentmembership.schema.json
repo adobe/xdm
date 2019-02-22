@@ -25,16 +25,16 @@
             "$ref": "https://ns.adobe.com/xdm/context/segmentmembershipitem"
           }
         },
-        "xdm:segmentMembership":{
-          "title" : "Segment Membership Map",
-          "type" : "object",
+        "xdm:segmentMembership": {
+          "title": "Segment Membership Map",
+          "type": "object",
           "meta:xdmType": "map",
-          "additionalProperties" : {
+          "additionalProperties": {
             "title": "Segment Membership per Namespace",
             "type": "object",
             "meta:xdmType": "map",
-            "additionalProperties" : {
-              "$ref" : "https://ns.adobe.com/xdm/context/segmentmembership"
+            "additionalProperties": {
+              "$ref": "https://ns.adobe.com/xdm/context/segmentmembership"
             }
           }
         }

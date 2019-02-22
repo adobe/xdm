@@ -32,10 +32,7 @@
           "description": "The length of the chapter, in seconds."
         }
       },
-      "required": [
-        "@id",
-        "xmpDM:duration"
-      ]
+      "required": ["@id", "xmpDM:duration"]
     }
   },
   "allOf": [

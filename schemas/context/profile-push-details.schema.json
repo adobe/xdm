@@ -19,8 +19,7 @@
         "xdm:pushNotificationTokens": {
           "title": "Push Notification Tokens",
           "type": "array",
-          "description":
-            "Push notification tokens are used to communicate with applications that are installed on devices or SaaS application accounts.",
+          "description": "Push notification tokens are used to communicate with applications that are installed on devices or SaaS application accounts.",
           "items": {
             "$ref": "https://ns.adobe.com/xdm/context/pushnotificationtoken"
           }

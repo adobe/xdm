@@ -31,10 +31,7 @@
           "description": "Length of ad asset in seconds."
         }
       },
-      "required": [
-        "@id",
-        "xmpDM:duration"
-      ]
+      "required": ["@id", "xmpDM:duration"]
     }
   },
   "allOf": [

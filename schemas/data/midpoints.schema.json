@@ -23,8 +23,7 @@
         "schema:name": {
           "type": "string",
           "const": "metric: midpoints",
-          "description":
-          "The metric midpoints describes when digital video played for at least 50% of the total duration."
+          "description": "The metric midpoints describes when digital video played for at least 50% of the total duration."
         },
         "xdm:measurement": {
           "type": "string",

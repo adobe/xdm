@@ -23,8 +23,7 @@
         "schema:name": {
           "type": "string",
           "const": "metric: impressions",
-          "description":
-            "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
+          "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
         },
         "xdm:measurement": {
           "type": "string",

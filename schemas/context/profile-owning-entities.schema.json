@@ -19,14 +19,12 @@
         "xdm:orgUnit": {
           "title": "Organizational Unit",
           "$ref": "https://ns.adobe.com/xdm/common/orgunit",
-          "description":
-            "The unit within the organization owning the profile. This can be used to reference the organization details maintained in another dataset."
+          "description": "The unit within the organization owning the profile. This can be used to reference the organization details maintained in another dataset."
         },
         "xdm:geoUnit": {
           "title": "Geographical Unit",
           "$ref": "https://ns.adobe.com/xdm/common/geounit",
-          "description":
-            "The geographical unit within the organization owning the profile. This can be used to reference the geographical information maintained in another dataset."
+          "description": "The geographical unit within the organization owning the profile. This can be used to reference the geographical information maintained in another dataset."
         }
       }
     }

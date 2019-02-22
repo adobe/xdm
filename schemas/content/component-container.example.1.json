@@ -1,6 +1,5 @@
 {
-  "@type":
-    "https://francois.corp.adobe.com:4502/apps/foundation/generic_container",
+  "@type": "https://francois.corp.adobe.com:4502/apps/foundation/generic_container",
   "xdm:itemsOrder": ["title0", "text0", "image0"],
   "xdm:items": {
     "title0": {
@@ -12,8 +11,7 @@
       "image": {
         "@type": "http://ns.adobe.com/adobecloud/core/1.0/asset",
         "repo:id": "urn:aaid:aem:4123ba4c-93a8-4c5d-b979-1234e4318185",
-        "id":
-          "https://francois.corp.adobe.com:4502/content/dam/Glasses-small.jpg"
+        "id": "https://francois.corp.adobe.com:4502/content/dam/Glasses-small.jpg"
       }
     },
     "text0": {

@@ -23,8 +23,7 @@
         "schema:name": {
           "type": "string",
           "const": "metric: completes",
-          "description":
-          "Indicates if a timed media asset was watched to completion - this does not necessarily mean the viewer watched the whole video; viewer could have skipped ahead."
+          "description": "Indicates if a timed media asset was watched to completion - this does not necessarily mean the viewer watched the whole video; viewer could have skipped ahead."
         },
         "xdm:measurement": {
           "type": "string",

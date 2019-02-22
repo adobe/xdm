@@ -16,24 +16,24 @@
   "definitions": {
     "profile-segmentation": {
       "properties": {
-        "xdm:segments":{
-          "title" : "Segment Membership",
+        "xdm:segments": {
+          "title": "Segment Membership",
           "meta:status": "deprecated",
-          "type" : "array",
-          "items" : {
-            "$ref" : "https://ns.adobe.com/xdm/context/segmentmembership"
+          "type": "array",
+          "items": {
+            "$ref": "https://ns.adobe.com/xdm/context/segmentmembership"
           }
         },
-        "xdm:segmentMembership":{
-          "title" : "Segment Membership Map",
-          "type" : "object",
+        "xdm:segmentMembership": {
+          "title": "Segment Membership Map",
+          "type": "object",
           "meta:xdmType": "map",
-          "additionalProperties" : {
+          "additionalProperties": {
             "title": "Segment Membership per Namespace",
             "type": "object",
             "meta:xdmType": "map",
-            "additionalProperties" : {
-              "$ref" : "https://ns.adobe.com/xdm/context/segmentmembership"
+            "additionalProperties": {
+              "$ref": "https://ns.adobe.com/xdm/context/segmentmembership"
             }
           }
         }

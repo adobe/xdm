@@ -23,8 +23,7 @@
         "schema:name": {
           "type": "string",
           "const": "metric: thirdQuartiles",
-          "description":
-          "The metric third-quartiles describes digital video which played for at least 75% of the total duration."
+          "description": "The metric third-quartiles describes digital video which played for at least 75% of the total duration."
         },
         "xdm:measurement": {
           "type": "string",

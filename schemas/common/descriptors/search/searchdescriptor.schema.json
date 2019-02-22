@@ -97,9 +97,7 @@
           "default": "noAnalysis"
         }
       },
-      "required": [
-        "search:indexed"
-      ]
+      "required": ["search:indexed"]
     }
   },
   "allOf": [

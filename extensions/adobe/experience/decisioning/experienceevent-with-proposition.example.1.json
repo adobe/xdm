@@ -24,7 +24,9 @@
       "xdm:value": 1
     }
   },
-  "xdm:channel": "https://ns.adobe.com/xdm/channels/email",
+  "xdm:channel": {
+    "@id": "https://ns.adobe.com/xdm/channels/email"
+  },
   "https://ns.adobe.com/experience/campaign/message": {
     "xdm:id": 10000,
     "xdm:profile": {
@@ -106,11 +108,9 @@
         "xdm:filter": "xcore:offer-filter:ec5139e1a351772",
         "schema:name": "Sessions"
       },
-      "xdm:fallback": [
-        {
+      "xdm:fallback": {
           "@id": "xcore:fallback-offer:e91ce7243fd8c2a"
-        }
-      ]
+      }
     }
   ]
 }

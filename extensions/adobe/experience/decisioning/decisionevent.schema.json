@@ -15,20 +15,9 @@
   "meta:extends": [
     "https://ns.adobe.com/xdm/data/time-series",
 
-    "https://ns.adobe.com/experience/decisioning/proposition#/definitions/propositions-mixin",
-
+    "https://ns.adobe.com/experience/decisioning/proposition",
     "https://ns.adobe.com/xdm/context/identitymap",
-    "https://ns.adobe.com/xdm/context/experienceevent-advertising",
-    "https://ns.adobe.com/xdm/context/experienceevent-application",
-    "https://ns.adobe.com/xdm/context/experienceevent-channel",
-    "https://ns.adobe.com/xdm/context/experienceevent-commerce",
-    "https://ns.adobe.com/xdm/context/experienceevent-directmarketing",
-    "https://ns.adobe.com/xdm/context/experienceevent-environment-details",
-    "https://ns.adobe.com/xdm/context/experienceevent-marketing",
-    "https://ns.adobe.com/xdm/context/experienceevent-media",
-    "https://ns.adobe.com/xdm/context/experienceevent-search",
-    "https://ns.adobe.com/xdm/context/experienceevent-segmentmembership",
-    "https://ns.adobe.com/xdm/context/experienceevent-web"
+    "https://ns.adobe.com/experience/campaign-experienceevent"
   ],
   "definitions": {
     "decisionevent": {
@@ -62,43 +51,13 @@
       "$ref": "#/definitions/decisionevent"
     },
     {
-      "$ref": "https://ns.adobe.com/experience/decisioning/proposition#/definitions/propositions-mixin"
+      "$ref": "https://ns.adobe.com/experience/decisioning/proposition"
     },
     {
       "$ref": "https://ns.adobe.com/xdm/context/identitymap"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-advertising"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-application"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-channel"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-commerce"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-directmarketing"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-environment-details"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-marketing"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-media"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-search"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-segmentmembership"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-web"
+      "$ref": "https://ns.adobe.com/experience/campaign-experienceevent"
     },
     {
       "required": [

@@ -12,9 +12,6 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "meta:extends": [
-    "https://ns.adobe.com/experience/decisioning/proposition#/definitions/propositions-mixin"
-  ],
   "description": "Adobe Campaign ExperienceEvent Full Extension. Contains all Solution added fields.",
   "definitions": {
     "campaign-experienceevent-all": {
@@ -281,7 +278,7 @@
         "https://ns.adobe.com/experience/campaign/offerClicked": {
           "title": "Offer Clicked",
           "description": "The offer in the message for a clicked event to an offer.",
-          "$ref": "https://ns.adobe.com/experience/decisioning/proposition#/definitions/proposition-detail-datatype"
+          "$ref": "https://ns.adobe.com/experience/decisioning/proposition-detail"
         }
       }
     },
@@ -298,9 +295,6 @@
   "allOf": [
     {
       "$ref": "#/definitions/campaign-experienceevent-all"
-    },
-    {
-      "$ref": "https://ns.adobe.com/experience/decisioning/proposition#/definitions/propositions-mixin"
     },
     {
       "$ref": "#/definitions/mutation"

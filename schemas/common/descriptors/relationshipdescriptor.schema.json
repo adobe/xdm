@@ -53,7 +53,7 @@
               "type": "string"
             }
           },
-          "required":["xdm:label"]
+          "required": ["xdm:label"]
         },
         {
           "properties": {
@@ -63,7 +63,7 @@
               "description": "When present, the property of the source schema to which this descriptor applies. This value is a JSON Pointer, applied to an instance of an object described by `xdm:sourceSchema`."
             }
           },
-          "required":["xdm:sourceProperty"]
+          "required": ["xdm:sourceProperty"]
         }
       ]
     }

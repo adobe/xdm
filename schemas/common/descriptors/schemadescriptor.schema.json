@@ -44,9 +44,7 @@
           "$ref": "https://ns.adobe.com/xdm/common/descriptors/itemselector#/definitions/selector"
         }
       },
-      "required": [
-        "xdm:sourceSchema"
-      ]
+      "required": ["xdm:sourceSchema"]
     }
   },
   "allOf": [

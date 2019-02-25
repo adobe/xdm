@@ -10,7 +10,7 @@
   "title": "One to One Relationship Descriptor",
   "meta:extensible": false,
   "meta:extends": [
-    "https://ns.adobe.com/xdm/common/desciptors/schemadescriptor#/definitions/descriptor",
+    "https://ns.adobe.com/xdm/common/descriptors/schemadescriptor#/definitions/descriptor",
     "https://ns.adobe.com/xdm/common/descriptors/relationshipdescriptor#/definitions/relationshipdescriptor"
   ],
   "meta:abstract": false,
@@ -29,7 +29,7 @@
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/common/desciptors/schemadescriptor#/definitions/descriptor"
+      "$ref": "https://ns.adobe.com/xdm/common/descriptors/schemadescriptor#/definitions/descriptor"
     },
     {
       "$ref": "https://ns.adobe.com/xdm/common/descriptors/relationshipdescriptor#/definitions/relationshipdescriptor"

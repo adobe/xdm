@@ -35,17 +35,6 @@
           "$ref": "https://ns.adobe.com/xdm/common/descriptors/itemselector#/definitions/selector"
         }
       },
-      "required": ["xdm:destinationSchema"]
-    }
-  },
-  "allOf": [
-    {
-      "$ref": "https://ns.adobe.com/xdm/common/descriptors/schemadescriptor#/definitions/descriptor"
-    },
-    {
-      "$ref": "#/definitions/relationshipdescriptor"
-    },
-    {
       "oneOf": [
         {
           "properties": {
@@ -56,16 +45,18 @@
           "required": ["xdm:label"]
         },
         {
-          "properties": {
-            "xdm:sourceProperty": {
-              "title": "Source Property",
-              "type": "string",
-              "description": "When present, the property of the source schema to which this descriptor applies. This value is a JSON Pointer, applied to an instance of an object described by `xdm:sourceSchema`."
-            }
-          },
           "required": ["xdm:sourceProperty"]
         }
-      ]
+      ],
+      "required": ["xdm:destinationSchema"]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/descriptors/schemadescriptor#/definitions/descriptor"
+    },
+    {
+      "$ref": "#/definitions/relationshipdescriptor"
     }
   ],
   "meta:status": "experimental"

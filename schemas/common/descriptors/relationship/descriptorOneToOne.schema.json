@@ -21,7 +21,8 @@
       "properties":{
         "@type": {
           "type": "string",
-          "const": "https://ns.adobe.com/xdm/common/descriptors/descriptorOneToOne"
+          "const": "https://ns.adobe.com/xdm/common/descriptors/descriptorOneToOne",
+          "meta:enum": {"https://ns.adobe.com/xdm/common/descriptors/descriptorOneToOne": "xdm:descriptorOneToOne"}
         }
       },
       "required": [

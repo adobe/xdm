@@ -25,6 +25,7 @@
           "title": "Type",
           "type": "string",
           "description": "The type of descriptor this object represents",
+          "meta:enum": {}
         },
         "xdm:sourceSchema": {
           "title": "Source Schema",

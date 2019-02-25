@@ -44,6 +44,28 @@
     },
     {
       "$ref": "#/definitions/relationshipdescriptor"
+    },
+    {
+      "oneOf": [
+        {
+          "properties": {
+            "xdm:label": {
+              "type": "string"
+            }
+          },
+          "required":["xdm:label"]
+        },
+        {
+          "properties": {
+            "xdm:sourceProperty": {
+              "title": "Source Property",
+              "type": "string",
+              "description": "When present, the property of the source schema to which this descriptor applies. This value is a JSON Pointer, applied to an instance of an object described by `xdm:sourceSchema`."
+            }
+          },
+          "required":["xdm:sourceProperty"]
+        }
+      ]
     }
   ],
   "meta:status": "experimental"

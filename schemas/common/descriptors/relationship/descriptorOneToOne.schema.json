@@ -24,11 +24,7 @@
           "const": "https://ns.adobe.com/xdm/common/descriptors/descriptorOneToOne",
           "meta:enum": {"https://ns.adobe.com/xdm/common/descriptors/descriptorOneToOne": "xdm:descriptorOneToOne"}
         }
-      },
-      "required": [
-        "xdm:destinationSchema",
-        "xdm:sourceSchema"
-      ]
+      }
     }
   },
   "allOf": [
@@ -40,28 +36,6 @@
     },
     {
       "$ref": "#/definitions/descriptorOneToOne"
-    },
-    {
-      "oneOf": [
-        {
-          "properties": {
-            "xdm:label": {
-              "type": "string"
-            }
-          },
-          "required":["xdm:label"]
-        },
-        {
-          "properties": {
-            "xdm:sourceProperty": {
-              "title": "Source Property",
-              "type": "string",
-              "description": "When present, the property of the source schema to which this descriptor applies. This value is a JSON Pointer, applied to an instance of an object described by `xdm:sourceSchema`."
-            }
-          },
-          "required":["xdm:sourceProperty"]
-        }
-      ]
     }
   ],
   "meta:status": "experimental"

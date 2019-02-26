@@ -19,10 +19,15 @@
   "definitions": {
     "descriptorOneToOne": {
       "properties":{
+        "@context": {
+          "xdm:descriptorOneToOne": "https://ns.adobe.com/xdm/common/descriptors/descriptorOneToOne"
+        },
         "@type": {
           "type": "string",
-          "const": "https://ns.adobe.com/xdm/common/descriptors/descriptorOneToOne",
-          "meta:enum": {"https://ns.adobe.com/xdm/common/descriptors/descriptorOneToOne": "xdm:descriptorOneToOne"}
+          "const": "xdm:descriptorOneToOne",
+          "meta:enum": {
+            "https://ns.adobe.com/xdm/common/descriptors/descriptorOneToOne": "xdm:descriptorOneToOne"
+          }
         }
       }
     }

@@ -63,6 +63,11 @@
                   "format": "url",
                   "const": "https://ns.adobe.com/xdm/"
                 },
+                "xdm:descriptorOneToOne": {
+                  "type": "string",
+                  "format": "url",
+                  "const": "https://ns.adobe.com/xdm/common/descriptors/descriptorOneToOne"
+                },
                 "core": {
                   "type": "string",
                   "format": "url",

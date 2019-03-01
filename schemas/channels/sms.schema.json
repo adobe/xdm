@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/channels/sms",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "SMS",
+  "title": "SMS Channel",
   "description": "Short Message Service delivered to a mobile phone.",
   "meta:extensible": true,
   "meta:extends": [

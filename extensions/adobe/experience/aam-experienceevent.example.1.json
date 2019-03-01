@@ -99,5 +99,10 @@
   "xdm:signals": {
     "pageTagCloud": ["analytics", "bigdata"],
     "pagelinkshovered": ["http://abcxyzabcxyz.com", "http://abcxyzabcxyz1.com"]
-  }
+  },
+  "xdm:derivedSignals": {
+    "derivedPageTagCloud": ["aam"],
+    "derivedPagelinkshovered": ["https://jhdjdi09002kdjjsl.com"]
+  },
+  "xdm:overwriteTraits": true
 }

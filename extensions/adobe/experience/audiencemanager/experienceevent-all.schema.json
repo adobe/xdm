@@ -17,6 +17,26 @@
     "experienceevent": {
       "properties": {
         "xdm:signals": {
+          "title": "Signals",
+          "description": "Additional frequently changing properties captured with an event via request parameters or other means.",
+          "type": "object",
+          "meta:xdmType": "map",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "description": "Value of the parameter"
+            }
+          }
+        },
+        "xdm:overwriteTraits": {
+          "title": "Overwrite Traits",
+          "type": "boolean",
+          "description": "Flag highlighting that all the traits realized before this for this id and data source, need to be discarded."
+        },
+        "xdm:derivedSignals": {
+          "title": "Derived Signals",
+          "description": "Derived properties from event data",
           "type": "object",
           "meta:xdmType": "map",
           "additionalProperties": {

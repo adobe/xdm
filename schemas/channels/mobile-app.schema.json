@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/channels/mobile-app",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Web",
+  "title": "Native Mobile Application Channel",
   "description": "Native mobile applications that are installed through an app store.",
   "meta:extensible": true,
   "meta:extends": [

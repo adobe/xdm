@@ -39,7 +39,7 @@
       "$ref": "#/definitions/directmarketing-address"
     },
     {
-      "ref": "https://ns.adobe.com/xdm/common/address"
+      "$ref": "https://ns.adobe.com/xdm/common/address"
     }
   ],
   "meta:status": "experimental"

@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/channels/agency",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "E-Mail",
+  "title": "External Agency",
   "description": "The marketing experience is handed-off to an external agency. This channel has no specific mechanism and is designed for descriptive purposes only. Such as, to define experiences for which you want to keep a trace of the population targeted in an external tool",
   "meta:extensible": true,
   "meta:extends": [

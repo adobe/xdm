@@ -8,7 +8,7 @@
   "$id": "https://ns.adobe.com/xdm/channels/fax",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Fax Channel",
-  "description": "Telefacsimile",
+  "description": "Telefacsimile channel.",
   "meta:extensible": true,
   "meta:extends": [
     "https://ns.adobe.com/xdm/channels/channel#/definitions/channel"

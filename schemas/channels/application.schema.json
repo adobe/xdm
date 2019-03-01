@@ -10,7 +10,7 @@
   "title": "Application Channel",
   "type": "object",
   "description":
-    "An application that accepts messages or emit events (Facebook page, Mobile App, ...).",
+    "An application that accepts messages or emit events (Facebook page, Mobile App, ...) channel.",
   "definitions": {
     "application": {
       "properties": {

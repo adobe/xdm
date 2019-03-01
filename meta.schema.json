@@ -92,7 +92,7 @@
       "type": "array",
       "items": {
         "type": "object",
-        "$ref": "https://ns.adobe.com/xdm/common/desciptors/schemadescriptor#/definitions/descriptor"
+        "$ref": "https://ns.adobe.com/xdm/common/descriptors/schemadescriptor#/definitions/descriptor"
       }
     },
     "meta:xdmType": {

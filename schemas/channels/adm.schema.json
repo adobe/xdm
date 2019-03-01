@@ -7,8 +7,8 @@
   ],
   "$id": "https://ns.adobe.com/xdm/channels/adm",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "ADM",
-  "description": "Amazon Device Messaging",
+  "title": "ADM Channel",
+  "description": "Amazon Device Messaging channel.",
   "meta:extensible": true,
   "meta:extends": [
     "https://ns.adobe.com/xdm/channels/channel#/definitions/channel"

@@ -47,7 +47,7 @@
       "items": [
         {
           "type": "string",
-          "pattern": "Copyright 201[7-8] .*\\. All rights reserved\\."
+          "pattern": "Copyright 201[7-9] .*\\. All rights reserved\\."
         },
         {
           "type": "string",
@@ -92,7 +92,7 @@
       "type": "array",
       "items": {
         "type": "object",
-        "$ref": "https://ns.adobe.com/xdm/common/desciptors/schemadescriptor#/definitions/descriptor"
+        "$ref": "https://ns.adobe.com/xdm/common/descriptors/schemadescriptor#/definitions/descriptor"
       }
     },
     "meta:xdmType": {

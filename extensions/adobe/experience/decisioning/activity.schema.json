@@ -16,8 +16,7 @@
     "https://ns.adobe.com/xdm/data/record",
     "https://ns.adobe.com/xdm/common/auditable"
   ],
-  "description":
-    "Entity to to control the decisioning process. It specifies the filter applied to the total inventory of options in order to narrow them down by topic/category. The activity also specifies a fallback option should the combined constraints disqualify all narrowed-down options. A decision activity ican be thought of as a type of http://schema.org/Action .",
+  "description": "Entity to to control the decisioning process. It specifies the filter applied to the total inventory of options in order to narrow them down by topic/category. The activity also specifies a fallback option should the combined constraints disqualify all narrowed-down options. A decision activity ican be thought of as a type of http://schema.org/Action .",
   "definitions": {
     "option": {
       "properties": {
@@ -42,7 +41,7 @@
           "type": "string",
           "format": "uri-reference",
           "title": "Fallback Option",
-          "description": "The reference to a fallback option that is used when decisioning in the context of this activity does not qualify any of the regular options (this typically happens when hard constraints are applied). The value is the URI (@id) of the fallback option that is referenced.  See schema https://ns.adobe.com/experience/decisioning/unconstrained-option",
+          "description": "The reference to a fallback option that is used when decisioning in the context of this activity does not qualify any of the regular options (this typically happens when hard constraints are applied). The value is the URI (@id) of the fallback option that is referenced.  See schema https://ns.adobe.com/experience/decisioning/unconstrained-option"
         }
       }
     }

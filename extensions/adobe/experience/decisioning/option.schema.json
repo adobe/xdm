@@ -16,11 +16,10 @@
     "https://ns.adobe.com/xdm/data/record",
     "https://ns.adobe.com/xdm/common/auditable"
   ],
-  "description":
-    "Entity to represent one of the possible selections or choices of a decision. Options have record semantics when composed into a schema. When referenced in propositions, options are enriched with the observed metrics that applied to them, i.e. they are measurable.",
+  "description": "Entity to represent one of the possible selections or choices of a decision. Options have record semantics when composed into a schema. When referenced in propositions, options are enriched with the observed metrics that applied to them, i.e. they are measurable.",
   "definitions": {
     "option": {
-      "properties": { 
+      "properties": {
         "xdm:name": {
           "type": "string",
           "title": "Name",

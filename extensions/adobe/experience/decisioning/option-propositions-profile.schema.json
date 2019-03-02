@@ -11,22 +11,19 @@
   "type": "object",
   "meta:extensible": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/metricdefinition"],
-  "description":
-    "The number a particular option was proposed so far to a particular profile.",
+  "description": "The number a particular option was proposed so far to a particular profile.",
   "definitions": {
     "metricdefinition": {
       "properties": {
         "@id": {
           "type": "string",
-          "const":
-            "https://ns.adobe.com/experience/decisioning/optionPropositionsProfile",
+          "const": "https://ns.adobe.com/experience/decisioning/optionPropositionsProfile",
           "description": "The unique identifier of this metric."
         },
         "schema:name": {
           "type": "string",
           "const": "option metric: per profile propositions",
-          "description":
-            "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
+          "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
         },
         "xdm:measurement": {
           "type": "string",

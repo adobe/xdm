@@ -275,9 +275,9 @@
           },
           "description": "A human-friendly name of the campaign activity which is originating this message."
         },
-        "https://ns.adobe.com/experience/campaign/offerClicked": {
-          "title": "Offer Clicked",
-          "description": "The offer in the message for a clicked event to an offer.",
+        "https://ns.adobe.com/experience/campaign/offerOpened": {
+          "title": "Offer Opened",
+          "description": "The offer in the message for an 'offer opened' event.",
           "$ref": "https://ns.adobe.com/experience/decisioning/proposition-detail"
         }
       }

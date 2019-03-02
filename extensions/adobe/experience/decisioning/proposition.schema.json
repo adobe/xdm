@@ -11,26 +11,27 @@
   "type": "object",
   "meta:abstract": true,
   "meta:extensible": true,
-  "description": "The  Decision Proposition XDM is used to capture the outcome of a decisioning process",
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent",
+    "https://ns.adobe.com/experience/decisioning/decisionevent"
+  ],
+  "description": "A decision proposition is used to capture the outcome of a decisioning process.",
   "definitions": {
     "proposition-mixin": {
-      "meta:intendedToExtend": [
-        "https://ns.adobe.com/xdm/context/experienceevent",
-        "https://ns.adobe.com/experience/decisioning/decisionevent"
-      ],
       "properties": {
-        "https://ns.adobe.com/experience/decisioning/propositionId": {
-          "title": "Decision Proposition ID",
+        "https://ns.adobe.com/experience/decisioning/propositionID": {
+          "title": "Decision Proposition Identity",
           "type": "string",
-          "description": "An ID associated with an individual decision response. A single decision can produce an array of propositions, one for each activity involved. It is the expectation that applications reference this ID in every experience event that was influended by the propositions. A user profile's proposition-response history is maintained with these identifiers."
+          "format": "uri-reference",
+          "description": "An Identity associated with an individual decision response. A single decision can produce an array of propositions, one for each activity involved. It is the expectation that applications reference this ID in every experience event that was influended by the propositions. A user profile's proposition-response history is maintained with these identifiers."
         },
         "https://ns.adobe.com/experience/decisioning/propositionDetails": {
-          "title": "Propopostion Array providing the outcomes of a single decision event, one outcome per given activity",
+          "title": "Outputs and contexts of a single decision event.",
           "type": "array",
           "items": {
             "$ref": "https://ns.adobe.com/experience/decisioning/proposition-detail"
           },
-          "description": "Details about the individual context variables and outcomes for the decision."
+          "description": "Details about the results of the decision. An array providing the output of a single decision event, one proposition per activity parameter in the request."
         }
       }
     }

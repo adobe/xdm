@@ -9,8 +9,8 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "DecisionEvent",
   "type": "object",
-  "description": "A DecisionEvent is used to capture observations about the outcome and context of a decision activity. The DecisionEvent captures information about how the decision made, when it was occurring, what options were proposed (chosen) and what contextual state existed that either influenced the decision or could be observed during the decision process. The decision event also captures the proposition ID, a globally unique identifier that can be used to correlate the decision to other events. DecisionEvents are not only relatable to Experience Events that impacted a decision but also to ExperienceEvents that are a direct response to a proposition. It is the expectation that applications reference the proposition ID in every experience event that was influended by the propositions. A user profile's proposition-response history is maintained with these proposition IDs.",
-  "meta:abstract": false,
+  "description": "A decision event is used to capture observations about the outcome and context of a decision activity. The decision event captures information about how the decision made, when it was occurring, what options were proposed (chosen) and what contextual state existed that either influenced the decision or could be observed during the decision process. The decision event also captures the proposition ID, a globally unique identifier that can be used to correlate the decision to other events. DecisionEvents are not only relatable to Experience Events that impacted a decision but also to ExperienceEvents that are a direct response to a proposition. It is the expectation that applications reference the proposition ID in every experience event that was influended by the propositions. A user profile's proposition-response history is maintained with these proposition IDs.",
+  "meta:abstract": true,
   "meta:extensible": true,
   "meta:extends": [
     "https://ns.adobe.com/xdm/data/time-series",
@@ -22,20 +22,20 @@
   "definitions": {
     "decisionevent": {
       "properties": {
-        "https://ns.adobe.com/adobecloudplatform/ims/organizationId": {
-          "title": "IMS Org ID",
+        "https://ns.adobe.com/adobecloudplatform/ims/organizationID": {
+          "title": "IMS Organization Identity",
           "type": "string",
-          "description": "An ID associated with the orgnaization that maintains the library of business objects and rules for this decision."
+          "description": "An Identity associated with the orgnaization that maintains the library of business objects and rules for this decision."
         },
-        "https://ns.adobe.com/experience/decisioning/containerId": {
-          "title": "Container ID",
+        "https://ns.adobe.com/experience/decisioning/containerID": {
+          "title": "Container Identity",
           "type": "string",
-          "description": "An ID associated with the library of business objects and rules for this decision."
+          "description": "An Identity associated with the library of business objects and rules for this decision."
         },
-        "https://ns.adobe.com/experience/decisioning/batchId": {
-          "title": "Batch ID",
+        "https://ns.adobe.com/experience/decisioning/batchID": {
+          "title": "Batch Identity",
           "type": "string",
-          "description": "An ID associated with the decision event, if the request was made in batch mode. This propoerty will be absent if the decision leading to this event was made individually for a single profile identity."
+          "description": "An Identity associated with the decision event, if the request was made in batch mode. This propoerty will be absent if the decision leading to this event was made individually for a single profile identity."
         }
       }
     }
@@ -48,27 +48,17 @@
       "$ref": "https://ns.adobe.com/xdm/data/time-series"
     },
     {
-      "$ref": "#/definitions/decisionevent"
-    },
-    {
       "$ref": "https://ns.adobe.com/experience/decisioning/proposition"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/context/identitymap"
-    },
-    {
-      "$ref": "https://ns.adobe.com/experience/campaign-experienceevent"
+      "$ref": "#/definitions/decisionevent"
     },
     {
       "required": [
         "@id",
         "xdm:timestamp",
-        "xdm:identityMap",
-        "https://ns.adobe.com/experience/decisioning/propositionId"
+        "https://ns.adobe.com/experience/decisioning/propositionID"
       ]
-    },
-    {
-      "properties": { "@id": { "readonly": true } }
     }
   ],
   "meta:status": "experimental"

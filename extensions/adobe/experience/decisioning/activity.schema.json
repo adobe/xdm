@@ -1,0 +1,65 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/decisioning/activity",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Decision Option",
+  "type": "object",
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record",
+    "https://ns.adobe.com/xdm/common/auditable"
+  ],
+  "description":
+    "Entity to to control the decisioning process. It specifies the filter applied to the total inventory of options in order to narrow them down by topic/category. The activity also specifies a fallback option should the combined constraints disqualify all narrowed-down options. A decision activity ican be thought of as a type of http://schema.org/Action .",
+  "definitions": {
+    "option": {
+      "properties": {
+        "xdm:name": {
+          "type": "string",
+          "title": "Name",
+          "description": "Activity name. The name is displayed in various user interfaces. Property has the semantic of schema.org's 'name' property defined on http://schema.org/Thing"
+        },
+        "xdm:startTime": {
+          "type": "string",
+          "format": "date-time",
+          "title": "Start Date and Time",
+          "description": "Activity Start Date and Time. Property has the semantic of schema.org's 'startTime' property defined on http://schema.org/Action"
+        },
+        "xdm:endTime": {
+          "type": "string",
+          "format": "date-time",
+          "title": "End Date and Time",
+          "description": "Activity End Date and Time. Property has the semantic of schema.org's 'endTime' property defined on http://schema.org/Action"
+        },
+        "xdm:fallback": {
+          "type": "string",
+          "format": "uri-reference",
+          "title": "Fallback Option",
+          "description": "The reference to a fallback option that is used when decisioning in the context of this activity does not qualify any of the regular options (this typically happens when hard constraints are applied). The value is the URI (@id) of the fallback option that is referenced.  See schema https://ns.adobe.com/experience/decisioning/unconstrained-option",
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/auditable"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "#/definitions/option"
+    }
+  ],
+  "meta:status": "experimental"
+}

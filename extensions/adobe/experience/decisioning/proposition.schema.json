@@ -20,7 +20,7 @@
     "proposition-mixin": {
       "properties": {
         "https://ns.adobe.com/experience/decisioning/propositionID": {
-          "title": "Decision Proposition Identity",
+          "title": "Decision Proposition Identifier",
           "type": "string",
           "format": "uri-reference",
           "description": "An Identity associated with an individual decision response. A single decision can produce an array of propositions, one for each activity involved. It is the expectation that applications reference this ID in every experience event that was influended by the propositions. A user profile's proposition-response history is maintained with these identifiers."

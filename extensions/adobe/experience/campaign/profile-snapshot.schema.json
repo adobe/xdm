@@ -1,0 +1,53 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/campaign/profile-snapshot",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Adobe Campaign Profile Snapshot",
+  "type": "object",
+  "description": "Adobe Campaign Profile Snapshot contains the recipient of the message. This property is primarily used to link the message to a Profile using the `IdentityMap` but it can also be used to freeze some properties of the profile at the time the message was sent.",
+  "definitions": {
+    "profile-snapshot": {
+      "properties": {
+        "xdm:person": {
+          "title": "Person",
+          "$ref": "https://ns.adobe.com/xdm/context/person",
+          "description": "An individual actor, contact, or owner."
+        },
+        "xdm:directMarketingAddress": {
+          "title": "Direct Marketing Address",
+          "$ref": "https://ns.adobe.com/xdm/context/directmarketing-address",
+          "description": "Direct Marketing postal address."
+        },
+        "xdm:directMarketingEmail": {
+          "title": "Direct Marketing Email",
+          "$ref": "https://ns.adobe.com/xdm/context/directmarketing-emailaddress",
+          "description": "Direct Marketing email address."
+        },
+        "xdm:directMarketingPhone": {
+          "title": "Direct Marketing Phone",
+          "$ref": "https://ns.adobe.com/xdm/context/directmarketing-phonenumber",
+          "description": "Direct Marketing phone number."
+        },
+        "xdm:pushNotificationTokens": {
+          "title": "Push Notification Tokens",
+          "type": "array",
+          "description": "Push notification tokens are used to communicate with applications that are installed on devices or SaaS application accounts.",
+          "items": {
+            "$ref": "https://ns.adobe.com/xdm/context/pushnotificationtoken"
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/profile-snapshot"
+    }
+  ],
+  "meta:status": "experimental"
+}

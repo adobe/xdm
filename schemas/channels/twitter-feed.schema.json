@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/channels/twitter-feed",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Twitter Feed",
+  "title": "Twitter Feed Channel",
   "description": "The Twitter Feed, i.e. the stream of user-generated tweets. This does not include Twitter direct messages.",
   "meta:extensible": true,
   "meta:extends": [

@@ -1,0 +1,38 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/directmarketing-emailaddress",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Direct Marketing Email Address",
+  "type": "object",
+  "description": "Direct Marketing Email Address.",
+  "definitions": {
+    "directmarketing-emailaddress": {
+      "properties": {
+        "xdm:errorCount": {
+          "title": "Error Count",
+          "type": "integer",
+          "description": "Number of consecutive errors when sending to this email address."
+        },
+        "xdm:quality": {
+          "title": "Quality",
+          "type": "string",
+          "description": "Quality rating."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/directmarketing-emailaddress"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/emailaddress"
+    }
+  ],
+  "meta:status": "experimental"
+}

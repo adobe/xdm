@@ -1,23 +1,18 @@
 {
   "xdm:activity": {
-    "@id": "xcore:offer-activity:ebc48132c26ccfc",
+    "xdm:activityID": "xcore:offer-activity:ebc48132c26ccfc",
     "xdm:name": "Tutorial videos to watch",
     "xdm:startDate": "2018-10-13T05:59:18.914Z",
     "xdm:endDate": "2018-12-27T05:59:18.914Z",
-    "xdm:fallback": "xcore:fallback-offer:e91ce7243fd8c2a",
-    "xdm:placement": "xcore:offer-placement:e91a84cc83ad12f",
-    "xdm:filter": "xcore:offer-filter:e9201a6650bb7e3"
+    "xdm:fallback": "xcore:fallback-offer:e91ce7243fd8c2a"
   },
   "xdm:selections": [
     {
-      "@id": "xcore:personalized-offer:e91ee850a0bb7d9",
-      "xdm:name": "Introduction to machine learning",
-      "https://ns.adobe.com/experience/decisioning/profileConstraint": {
-        "xdm:eligibilityRule": "xcore:eligibility-rule:ec0ef7ceacb2ecd"
-      },
-      "https://ns.adobe.com/experience/decisioning/optionPropositionsTotal": {
-        "xdm:value": 948
-      }
+      "xdm:optionID": "xcore:personalized-offer:e91ee850a0bb7d9",
+      "xdm:name": "Introduction to machine learning"
     }
-  ]
+  ],
+  "https://ns.adobe.com/experience/decisioning/optionPropositionsTotal": {
+    "xdm:value": 948
+  }
 }

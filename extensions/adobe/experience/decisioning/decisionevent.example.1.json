@@ -28,25 +28,23 @@
   "https://ns.adobe.com/experience/decisioning/propositionDetails": [
     {
       "xdm:activity": {
-        "@id": "xcore:offer-activity:ebc48132c26ccfc"
+        "xdm:activityID": "xcore:offer-activity:ebc48132c26ccfc"
       },
       "xdm:selections": [
         {
-          "@id": "xcore:personalized-offer:e526a1503bf29e9"
+          "xdm:optionID": "xcore:personalized-offer:e526a1503bf29e9"
         }
       ],
-      "xdm:metrics": {
-        "https://ns.adobe.com/experience/offer-management/offer-propositions": {
-          "xdm:value": 948
-        }
+      "https://ns.adobe.com/experience/offer-management/offer-propositions": {
+        "xdm:value": 948
       }
     },
     {
       "xdm:activity": {
-        "@id": "xcore:offer-activity:f203512e02542b5"
+        "xdm:activityID": "xcore:offer-activity:f203512e02542b5"
       },
       "xdm:fallback": {
-        "@id": "xcore:fallback-offer:e91ce7243fd8c2a"
+        "xdm:optionID": "xcore:fallback-offer:e91ce7243fd8c2a"
       }
     }
   ],
@@ -54,11 +52,11 @@
   "https://ns.adobe.com/experience/decisioning/containerID": "c75afa32-371f-4895-8f43-b853dd9fe740",
   "https://ns.adobe.com/experience/campaign/offerOpened": {
     "xdm:activity": {
-      "@id": "xcore:offer-activity:f3f13bfccb4da6e"
+      "xdm:activityID": "xcore:offer-activity:f3f13bfccb4da6e"
     },
     "xdm:selections": [
       {
-        "@id": "xcore:personalized-offer:f3e4b72eb3808e9"
+        "xdm:optionID": "xcore:personalized-offer:f3e4b72eb3808e9"
       }
     ]
   }

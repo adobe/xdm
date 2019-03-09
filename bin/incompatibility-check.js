@@ -30,7 +30,11 @@ var jsonDataTypes = ["string", "number", "integer", "array", "object", "boolean"
 var schemaFiles = glob.sync(masterSchemaFolder + "/**/*.schema.json");
 schemaFiles = schemaFiles.concat(glob.sync(masterExtensionFolder + "/**/*.schema.json"));
 
+var errLogs = [];
 checkBreakingChanges(schemaFiles);
+if (errLogs.length > 0) {
+    createError(errLogs.join(""));
+}
 shell.rm("-rf", masterCopyLoc); //done
 
 function checkBreakingChanges(files) {
@@ -44,28 +48,31 @@ function checkBreakingChanges(files) {
             var newSchema = JSON.parse(fs.readFileSync(workingFile).toString());
         } catch (err) {
             if (err.code = "ENOENT" && err.message.indexOf("ENOENT: no such file or directory") != -1)
-                createError("Breaking changes found!!! --> " + workingFile.replace("../", "") + " can not be removed");
+                errLogs.push(workingFile+" breaking changes found!!! --> " + workingFile.replace("../", "") + " can not be removed.\n");
             else
-                createError(err) //raise other validation errors
+                errLogs.push(workingFile+err+"\n"); //raise other validation errors
         }
 
-        var allOfCheck = isAllOfBroken(originalSchema["allOf"], newSchema["allOf"]); //check deleted allOfs
-        if (originalSchema["allOf"] && allOfCheck.isBroken) {
-            createError('Breaking changes found!!! {"$ref": "' + allOfCheck["$ref"] + '"} inside "allOf" can not be removed.');
-        }
+        if (newSchema) {
+            var allOfCheck = isAllOfBroken(originalSchema["allOf"], newSchema["allOf"]); //check deleted allOfs
+            if (originalSchema["allOf"] && allOfCheck.isBroken) {
+                errLogs.push(workingFile+' breaking changes found!!! {"$ref": "' + allOfCheck["$ref"] + '"} inside "allOf" can not be removed.\n');
+            }
 
-        if (newSchema["meta:extends"] && Array.isArray(newSchema["meta:extends"]) && isMetaExtendsBroken(newSchema["meta:extends"], newSchema["allOf"])) { //check meta:extends against allOf
-            console.log('Warning: Incompatible "meta:extends" vs "allOf" found!!! The schemas inside "meta:extends" did not match those in "allOf".')
-        }
+            if (newSchema["meta:extends"] && Array.isArray(newSchema["meta:extends"]) && isMetaExtendsBroken(newSchema["meta:extends"], newSchema["allOf"])) { //check meta:extends against allOf
+                console.log('Warning: Incompatible "meta:extends" vs "allOf" found!!! The schemas inside "meta:extends" did not match those in "allOf".')
+            }
 
-        var differences = diff(originalSchema, newSchema);
-        var brokenProperty = {};
-        if (differences && isPropertyRemoved(differences, brokenProperty)) { //check removed properties
-            createError('Breaking changes found!!! Property "' + brokenProperty.name + '" can not be removed.');
-        }
+            var differences = diff(originalSchema, newSchema);
+            var brokenProperty = {};
+            if (differences && isPropertyRemoved(differences, brokenProperty)) { //check removed properties
+                errLogs.push(workingFile+' breaking changes found!!! Property "' + brokenProperty.name + '" can not be removed.\n');
+            }
 
-        if (differences && isFieldTypeChanged(differences, brokenProperty)) { //check changed data types
-            createError('Breaking changes found!!! Data type of property "' + brokenProperty.name + '" can not be changed.');
+            if (differences && isFieldTypeChanged(differences, brokenProperty)) { //check changed data types
+                errLogs.push(workingFile+' breaking changes found!!! Data type of property "' + brokenProperty.name + '" can not be changed.\n');
+            }
+
         }
 
     });

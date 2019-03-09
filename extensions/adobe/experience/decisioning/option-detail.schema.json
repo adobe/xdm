@@ -26,11 +26,11 @@
           "title": "Name",
           "description": "Option name. The name is displayed in various user interfaces."
         },
-        "https://ns.adobe.com/experience/decisioning/propositionTotal": {
+        "https://ns.adobe.com/experience/decisioning/propositionsTotal": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "The total number a particular option was proposed so far across all profiles."
         },
-        "https://ns.adobe.com/experience/decisioning/propositionProfile": {
+        "https://ns.adobe.com/experience/decisioning/propositionsProfile": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "The number of times a particular option was proposed so far to a particular profile."
         }

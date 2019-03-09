@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/decisioning/option-propositions-profile",
+  "$id": "https://ns.adobe.com/experience/decisioning/proposition-metric-profile",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Option propositions to profile",
   "type": "object",
@@ -17,7 +17,7 @@
       "properties": {
         "@id": {
           "type": "string",
-          "const": "https://ns.adobe.com/experience/decisioning/optionPropositionsProfile",
+          "const": "https://ns.adobe.com/experience/decisioning/propositionsProfile",
           "description": "The unique identifier of this metric."
         },
         "schema:name": {

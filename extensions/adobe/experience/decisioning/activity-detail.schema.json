@@ -15,7 +15,7 @@
   "definitions": {
     "activity-detail-datatype": {
       "properties": {
-        "xdm:activityID": {
+        "xdm:id": {
           "title": "Activity Identifier",
           "type": "string",
           "format": "uri-reference",

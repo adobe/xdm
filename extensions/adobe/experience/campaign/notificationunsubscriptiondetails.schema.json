@@ -31,7 +31,9 @@
           "description": "A customer comment/remark that the enduser provided when unbsubscribing."
         }
       },
-      "required": ["xdm:unsubscriptionDate"]
+      "required": [
+        "xdm:unsubscriptionDate"
+      ]
     }
   },
   "allOf": [

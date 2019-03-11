@@ -30,10 +30,12 @@
           "type": "string",
           "description": "A customer comment/remark that the enduser provided when unbsubscribing."
         }
-      },
-      "required": ["xdm:unsubscriptionDate"]
+      }
     }
   },
+  "required": [
+    "xdm:unsubscriptionDate"
+  ],
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"

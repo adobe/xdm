@@ -5,7 +5,9 @@
       "xdm:value": 1
     }
   },
-  "xdm:channel": "https://ns.adobe.com/xdm/channels/email",
+  "xdm:channel": {
+    "@id": "https://ns.adobe.com/xdm/channels/email"
+  },
   "xdm:endUserIDs": {
     "https://ns.adobe.com/experience/mcid": {
       "xdm:id": "92312748749128",
@@ -82,5 +84,15 @@
   "https://ns.adobe.com/experience/campaign/orchestration": {
     "xdm:eventID": "store-entry-beacon-triggered"
   },
-  "https://ns.adobe.com/experience/campaign/eventSource": "pipelined-trackinglogd"
+  "https://ns.adobe.com/experience/campaign/eventSource": "pipelined-trackinglogd",
+  "https://ns.adobe.com/experience/campaign/offerOpened": {
+    "xdm:activity": {
+      "@id": "xcore:offer-activity:ebc48132c26ccfc"
+    },
+    "xdm:selections": [
+      {
+        "@id": "xcore:personalized-offer:e526a1503bf29e9"
+      }
+    ]
+  }
 }

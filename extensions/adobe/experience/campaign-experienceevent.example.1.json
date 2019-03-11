@@ -24,7 +24,9 @@
       "xdm:value": 1
     }
   },
-  "xdm:channel": "https://ns.adobe.com/xdm/channels/email",
+  "xdm:channel": {
+    "@id": "https://ns.adobe.com/xdm/channels/email"
+  },
   "https://ns.adobe.com/experience/campaign/message": {
     "xdm:id": 10000,
     "xdm:profile": {

@@ -85,6 +85,7 @@
     "xdm:eventID": "store-entry-beacon-triggered"
   },
   "https://ns.adobe.com/experience/campaign/eventSource": "pipelined-trackinglogd",
+  "https://ns.adobe.com/experience/decisioning/propositionID": "3cc33a7e-13ca-4b19-b25d-c816eff9a701",  
   "https://ns.adobe.com/experience/campaign/offerOpened": {
     "xdm:activity": {
       "@id": "xcore:offer-activity:ebc48132c26ccfc"

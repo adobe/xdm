@@ -24,6 +24,15 @@
       "schema:longitude": 139.73237
     }
   },
+  "xdm:web": {
+    "xdm:webPageView": {
+      "xdm:URL": "https://www.example.com"
+    },
+    "xdm:webReferrer": {
+      "xdm:URL": "https://www.examplereferrer.com/",
+      "xdm:domain": "examplereferrer.com"
+    }
+  },
   "https://ns.adobe.com/experience/decisioning/propositionID": "3cc33a7e-13ca-4b19-b25d-c816eff9a70a",
   "https://ns.adobe.com/experience/decisioning/propositionDetails": [
     {
@@ -53,15 +62,5 @@
     }
   ],
   "https://ns.adobe.com/adobecloudplatform/ims/organizationID": "0D8E32C65A8A91520A494008@AdobeOrg",
-  "https://ns.adobe.com/experience/decisioning/containerID": "c75afa32-371f-4895-8f43-b853dd9fe740",
-  "https://ns.adobe.com/experience/campaign/offerOpened": {
-    "xdm:activity": {
-      "xdm:id": "xcore:offer-activity:f3f13bfccb4da6e"
-    },
-    "xdm:selections": [
-      {
-        "xdm:id": "xcore:personalized-offer:f3e4b72eb3808e9"
-      }
-    ]
-  }
+  "https://ns.adobe.com/experience/decisioning/containerID": "c75afa32-371f-4895-8f43-b853dd9fe740"
 }

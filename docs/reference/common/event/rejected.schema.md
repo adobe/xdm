@@ -73,7 +73,7 @@ Some examples of the `rejected event` include:
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@type](#@type) | `const` | Optional | Rejected Event (this schema) |
+| [@type](#type) | `const` | Optional | Rejected Event (this schema) |
 | [xdm:objectType](#xdmobjecttype) | complex | Optional | [EventEnvelope](../eventenvelope.schema.md#xdmobjecttype) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -102,7 +102,7 @@ This is the type of the `object` that has been emitting this event. The value of
 `xdm:objectType`
 * is optional
 * type: complex
-* defined in [EventEnvelope](../eventenvelope.schema.md#xdm:objectType)
+* defined in [EventEnvelope](../eventenvelope.schema.md#xdmobjecttype)
 
 ### xdm:objectType Type
 

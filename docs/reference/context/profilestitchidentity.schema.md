@@ -30,7 +30,7 @@ ProfileStitchIdentity is used to clearly distinguish Profile Stitching from mult
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Profile Stitch Identity (this schema) |
+| [@id](#id) | `string` | Optional | Profile Stitch Identity (this schema) |
 | [xdm:namespace](#xdmnamespace) | Namespace | Optional | Profile Stitch Identity (this schema) |
 | [xdm:xid](#xdmxid) | `string` | Optional | Profile Stitch Identity (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |

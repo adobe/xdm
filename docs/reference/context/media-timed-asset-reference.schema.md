@@ -58,7 +58,7 @@ Asset information about the main content that was played, but present on all ads
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Timed Media Primary Asset Reference (this schema) |
+| [@id](#id) | `string` | Optional | Timed Media Primary Asset Reference (this schema) |
 | [dc:title](#dctitle) | `string` | Optional | Timed Media Primary Asset Reference (this schema) |
 | [iptc4xmpExt:Creator](#iptc4xmpextcreator) | Creator | Optional | Timed Media Primary Asset Reference (this schema) |
 | [iptc4xmpExt:Episode](#iptc4xmpextepisode) | Season | Optional | Timed Media Primary Asset Reference (this schema) |

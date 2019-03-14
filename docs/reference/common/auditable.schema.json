@@ -9,35 +9,32 @@
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "Audit Trail",
     "type": "object",
-    "meta:extends": [
-        "http://ns.adobe.com/adobecloud/core/1.0"
-    ],
     "meta:abstract": true,
-    "description": "Inheriting this schema using `allOf` indicates that the data record is auditable, i.e. it can be determined when the record has last been modified and by whom.",
+    "description": "Inclusion of this schema indicates that the data record is auditable, i.e. it can be determined when the record has last been modified and by whom.",
     "definitions": {
         "auditlog": {
             "properties": {
                 "xdm:repositoryCreatedBy": {
                     "title": "Created by User Identifier",
                     "type": "string",
-                    "description": "User id who has created the entity.\n"
+                    "description": "User id who has created the entity."
                 },
                 "xdm:repositoryLastModifiedBy": {
                     "title": "Modified by User Identifier",
                     "type": "string",
-                    "description": "User id who last modified the entity.\nAt creation time, `modifiedByUser` is set as `createdByUser`.\n"
+                    "description": "User id who last modified the entity. At creation time, `modifiedByUser` is set as `createdByUser`."
                 },
                 "xdm:createdByBatchID": {
                     "title": "Created by Batch Identifier",
                     "type": "string",
-                    "format": "uri",
-                    "description": "The Data Set Files in Catalog Services which has been originating the creation of the entity.\n"
+                    "format": "uri-reference",
+                    "description": "The Data Set Files in Catalog Services which has been originating the creation of the entity."
                 },
                 "xdm:modifiedByBatchID": {
                     "title": "Modified by Batch Identifier",
                     "type": "string",
-                    "format": "uri",
-                    "description": "The last Data Set Files in Catalog Services which has modified the entity.\nAt creation time, `modifiedByBatchID` is set as `createdByBatchID`.\n"
+                    "format": "uri-reference",
+                    "description": "The last Data Set Files in Catalog Services which has modified the entity. At creation time, `modifiedByBatchID` is set as `createdByBatchID`."
                 }
             }
         }
@@ -53,8 +50,8 @@
     "meta:status": "experimental",
     "examples": [
         {
-            "repo:createdDate": "2018-01-12T15:52:25+00:00",
-            "repo:lastModifiedDate": "2018-01-12T15:52:25+00:00",
+            "repo:createDate": "2018-01-12T15:52:25+00:00",
+            "repo:modifyDate": "2018-01-12T15:52:25+00:00",
             "xdm:repositoryCreatedBy": "jsmith",
             "xdm:repositoryLastModifiedBy": "jsmith",
             "xdm:createdByBatchID": "https://data.adobe.io/batchid-123",

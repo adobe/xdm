@@ -35,6 +35,7 @@ The events and properties related to direct/outbound marketing such as email, di
 | [xdm:mirrorPages](#xdmmirrorpages) | Measure | Optional | Direct Marketing (this schema) |
 | [xdm:nonDeliverables](#xdmnondeliverables) | Measure | Optional | Direct Marketing (this schema) |
 | [xdm:notSent](#xdmnotsent) | Measure | Optional | Direct Marketing (this schema) |
+| [xdm:offerOpens](#xdmofferopens) | Measure | Optional | Direct Marketing (this schema) |
 | [xdm:opens](#xdmopens) | Measure | Optional | Direct Marketing (this schema) |
 | [xdm:sends](#xdmsends) | Measure | Optional | Direct Marketing (this schema) |
 | [xdm:unsubscriptions](#xdmunsubscriptions) | Measure | Optional | Direct Marketing (this schema) |
@@ -123,6 +124,24 @@ Asynchronous message (email, SMS, MMS etc) was not dispatched due to cancellatio
 * defined in this schema
 
 ### xdm:notSent Type
+
+
+* [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
+## xdm:offerOpens
+
+Offer in a marketing message (email, SMS, Push Notifications etc) has been opened/swyped/touched/interacted with by the recipient.
+
+`xdm:offerOpens`
+* is optional
+* type: Measure
+* defined in this schema
+
+### xdm:offerOpens Type
 
 
 * [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`

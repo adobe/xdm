@@ -25,7 +25,7 @@ A a set of rules for interpreting a JSON-LD document as specified in [the Contex
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@context](#@context) | complex | Optional | JSON-LD `@context` (this schema) |
+| [@context](#context) | complex | Optional | JSON-LD `@context` (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @context
@@ -158,13 +158,13 @@ Unknown type `oneOf`.
 
 | Property | Type | Group |
 |----------|------|-------|
-| [@base](#@base) | complex | `https://ns.adobe.com/xdm/external/activity-streams-2/context#/definitions/single-context` |
-| [@container](#@container) | complex | `https://ns.adobe.com/xdm/external/activity-streams-2/context#/definitions/expanded-term-definition` |
-| [@id](#@id) | complex | `https://ns.adobe.com/xdm/external/activity-streams-2/context#/definitions/expanded-term-definition` |
-| [@language](#@language) | complex | `https://ns.adobe.com/xdm/external/activity-streams-2/context#/definitions/single-context` |
-| [@reverse](#@reverse) | complex | `https://ns.adobe.com/xdm/external/activity-streams-2/context#/definitions/expanded-term-definition` |
-| [@type](#@type) | complex | `https://ns.adobe.com/xdm/external/activity-streams-2/context#/definitions/expanded-term-definition` |
-| [@vocab](#@vocab) | complex | `https://ns.adobe.com/xdm/external/activity-streams-2/context#/definitions/single-context` |
+| [@base](#base) | complex | `https://ns.adobe.com/xdm/external/activity-streams-2/context#/definitions/single-context` |
+| [@container](#container) | complex | `https://ns.adobe.com/xdm/external/activity-streams-2/context#/definitions/expanded-term-definition` |
+| [@id](#id) | complex | `https://ns.adobe.com/xdm/external/activity-streams-2/context#/definitions/expanded-term-definition` |
+| [@language](#language) | complex | `https://ns.adobe.com/xdm/external/activity-streams-2/context#/definitions/single-context` |
+| [@reverse](#reverse) | complex | `https://ns.adobe.com/xdm/external/activity-streams-2/context#/definitions/expanded-term-definition` |
+| [@type](#type) | complex | `https://ns.adobe.com/xdm/external/activity-streams-2/context#/definitions/expanded-term-definition` |
+| [@vocab](#vocab) | complex | `https://ns.adobe.com/xdm/external/activity-streams-2/context#/definitions/single-context` |
 
 ## @base
 

@@ -50,7 +50,7 @@ A place in the real world with a physical location.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Place (this schema) |
+| [@id](#id) | `string` | Optional | Place (this schema) |
 | [schema:branchCode](#schemabranchcode) | `string` | Optional | Place (this schema) |
 | [schema:description](#schemadescription) | `string` | Optional | Place (this schema) |
 | [schema:telephone](#schematelephone) | `string` | Optional | Place (this schema) |

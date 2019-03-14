@@ -35,8 +35,8 @@ There are multiple experience channels, each with different constraints on how c
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | **Required** | Experience Channel (this schema) |
-| [@type](#@type) | `string` | Optional | Experience Channel (this schema) |
+| [@id](#id) | `string` | **Required** | Experience Channel (this schema) |
+| [@type](#type) | `string` | Optional | Experience Channel (this schema) |
 | [xdm:contentTypes](#xdmcontenttypes) | `string[]` | Optional | Experience Channel (this schema) |
 | [xdm:locationTypes](#xdmlocationtypes) | `string[]` | Optional | Experience Channel (this schema) |
 | [xdm:metricTypes](#xdmmetrictypes) | `string[]` | Optional | Experience Channel (this schema) |
@@ -189,7 +189,7 @@ How experiences are delivered in this channel.
 * type: `enum`
 * defined in this schema
 
-The value of this property **must** be equal to one of the [known values below](#xdm:mode-known-values).
+The value of this property **must** be equal to one of the [known values below](#xdmmode-known-values).
 
 ### xdm:mode Known Values
 | Value | Description |

@@ -23,7 +23,7 @@ The organizaational unit of a parent organization.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Organizational Unit (this schema) |
+| [@id](#id) | `string` | Optional | Organizational Unit (this schema) |
 | [xdm:label](#xdmlabel) | `string` | Optional | Organizational Unit (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 

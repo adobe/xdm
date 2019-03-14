@@ -15,8 +15,9 @@
             "properties": {
                 "xdm:segmentID": {
                     "title": "Segment ID",
+                    "meta:status": "deprecated",
                     "$ref": "https://ns.adobe.com/xdm/context/segmentidentity",
-                    "description": "The identity of the segment or snapshot definition in with the domain of the specific system that processes that type of segment."
+                    "description": "The identity of the segment or snapshot definition in with the domain of the specific system that processes that type of segment. Deprecated."
                 },
                 "xdm:version": {
                     "title": "Version",
@@ -99,6 +100,9 @@
                         "realized": "Entity is entering the segment",
                         "exited": "Entity is exiting the segment"
                     }
+                },
+                "xdm:profileStitchID": {
+                    "$ref": "https://ns.adobe.com/xdm/context/profileStitchIdentity"
                 }
             }
         }
@@ -111,12 +115,6 @@
     "meta:status": "experimental",
     "examples": [
         {
-            "xdm:segmentID": {
-                "@id": "https://data.adobe.io/entities/segmentIdentity/92312748749128",
-                "xdm:namespace": {
-                    "xdm:code": "AAM"
-                }
-            },
             "xdm:lastQualificationTime": "2017-09-26T15:52:25+00:00",
             "xdm:version": "1.0",
             "xdm:validUntil": "2017-12-26T15:52:25+00:00",

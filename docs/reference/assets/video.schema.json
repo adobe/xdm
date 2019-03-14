@@ -15,8 +15,6 @@
         "http://ns.adobe.com/adobecloud/core/1.0#/definitions/date-properties",
         "https://ns.adobe.com/xdm/external/hal/resource#/definitions/hal",
         "http://ns.adobe.com/adobecloud/core/1.0/asset",
-        "https://ns.adobe.com/xdm/content/content",
-        "https://ns.adobe.com/xdm/assets/asset",
         "https://ns.adobe.com/xdm/assets/rectangular"
     ],
     "description": "The Video class is for video assets, i.e. assets that consist of moving pictures and, optionally, sound.",
@@ -42,7 +40,7 @@
     },
     "allOf": [
         {
-            "$ref": "https://ns.adobe.com/xdm/assets/asset#/definitions/asset"
+            "$ref": "http://ns.adobe.com/adobecloud/core/1.0/asset#/definitions/asset"
         },
         {
             "$ref": "https://ns.adobe.com/xdm/assets/rectangular#/definitions/rectangular"

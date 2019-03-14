@@ -23,8 +23,7 @@
   },
   "required": [
     "@id",
-    "xdm:timestamp",
-    "xdm:identityMap"
+    "xdm:timestamp"
   ],
   "allOf": [
     {

@@ -1,23 +1,23 @@
 
-# LINE Schema
+# LINE Channel Schema
 
 ```
 https://ns.adobe.com/xdm/channels/line
 ```
 
-Line Platform Notification
+Line Platform Notification channel.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/line.schema.json](channels/line.schema.json) |
 ## Schema Hierarchy
 
-* LINE `https://ns.adobe.com/xdm/channels/line`
+* LINE Channel `https://ns.adobe.com/xdm/channels/line`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
 
-## LINE Example
+## LINE Channel Example
 ```json
 {
   "@id": "https://ns.adobe.com/xdm/channels/line",
@@ -25,16 +25,16 @@ Line Platform Notification
 }
 ```
 
-# LINE Properties
+# LINE Channel Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | LINE (this schema) |
-| [@type](#@type) | `const` | Optional | LINE (this schema) |
-| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | LINE (this schema) |
-| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | LINE (this schema) |
-| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | LINE (this schema) |
-| [xdm:mode](#xdmmode) | `const` | Optional | LINE (this schema) |
+| [@id](#id) | `const` | **Required** | LINE Channel (this schema) |
+| [@type](#type) | `const` | Optional | LINE Channel (this schema) |
+| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | LINE Channel (this schema) |
+| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | LINE Channel (this schema) |
+| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | LINE Channel (this schema) |
+| [xdm:mode](#xdmmode) | `const` | Optional | LINE Channel (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id

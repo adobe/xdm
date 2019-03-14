@@ -22,7 +22,7 @@ Identifies the [Object](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-ob
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@type](#@type) | complex | Optional | JSON-LD `@type` (this schema) |
+| [@type](#type) | complex | Optional | JSON-LD `@type` (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @type

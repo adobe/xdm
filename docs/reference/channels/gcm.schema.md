@@ -1,23 +1,23 @@
 
-# GCM Schema
+# GCM Channel Schema
 
 ```
 https://ns.adobe.com/xdm/channels/gcm
 ```
 
-Google Cloud Messaging
+Google Cloud Messaging channel.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/gcm.schema.json](channels/gcm.schema.json) |
 ## Schema Hierarchy
 
-* GCM `https://ns.adobe.com/xdm/channels/gcm`
+* GCM Channel `https://ns.adobe.com/xdm/channels/gcm`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
 
-## GCM Example
+## GCM Channel Example
 ```json
 {
   "@id": "https://ns.adobe.com/xdm/channels/gcm",
@@ -25,16 +25,16 @@ Google Cloud Messaging
 }
 ```
 
-# GCM Properties
+# GCM Channel Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | GCM (this schema) |
-| [@type](#@type) | `const` | Optional | GCM (this schema) |
-| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | GCM (this schema) |
-| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | GCM (this schema) |
-| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | GCM (this schema) |
-| [xdm:mode](#xdmmode) | `const` | Optional | GCM (this schema) |
+| [@id](#id) | `const` | **Required** | GCM Channel (this schema) |
+| [@type](#type) | `const` | Optional | GCM Channel (this schema) |
+| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | GCM Channel (this schema) |
+| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | GCM Channel (this schema) |
+| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | GCM Channel (this schema) |
+| [xdm:mode](#xdmmode) | `const` | Optional | GCM Channel (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id

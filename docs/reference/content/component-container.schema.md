@@ -29,7 +29,7 @@ A container for `Page Component`s, this means for content blocks that are within
     "image0": {
       "type": "https://francois.corp.adobe.com:4502/apps/foundation/image",
       "image": {
-        "@type": "https://ns.adobe.com/xdm/assets/asset",
+        "@type": "http://ns.adobe.com/adobecloud/core/1.0/asset",
         "repo:id": "urn:aaid:aem:4123ba4c-93a8-4c5d-b979-1234e4318185",
         "id": "https://francois.corp.adobe.com:4502/content/dam/Glasses-small.jpg"
       }
@@ -46,7 +46,7 @@ A container for `Page Component`s, this means for content blocks that are within
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@type](#@type) | `string` | **Required** | Component Container (this schema) |
+| [@type](#type) | `string` | **Required** | Component Container (this schema) |
 | [xdm:items](#xdmitems) | `object` | **Required** | Component Container (this schema) |
 | [xdm:itemsOrder](#xdmitemsorder) | `string[]` | Optional | Component Container (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -86,7 +86,7 @@ The items of this container.
 `object` with following properties:
 
 
-| Property | Type | Required
+| Property | Type | Required |
 |----------|------|----------|
 
 

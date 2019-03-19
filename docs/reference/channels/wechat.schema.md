@@ -1,23 +1,23 @@
 
-# WeChat Schema
+# WeChat Channel Schema
 
 ```
 https://ns.adobe.com/xdm/channels/wechat
 ```
 
-WeChat Platform Notification
+WeChat Platform Notification Channel.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/wechat.schema.json](channels/wechat.schema.json) |
 ## Schema Hierarchy
 
-* WeChat `https://ns.adobe.com/xdm/channels/wechat`
+* WeChat Channel `https://ns.adobe.com/xdm/channels/wechat`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
 
-## WeChat Example
+## WeChat Channel Example
 ```json
 {
   "@id": "https://ns.adobe.com/xdm/channels/wechat",
@@ -25,16 +25,16 @@ WeChat Platform Notification
 }
 ```
 
-# WeChat Properties
+# WeChat Channel Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | WeChat (this schema) |
-| [@type](#@type) | `const` | Optional | WeChat (this schema) |
-| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | WeChat (this schema) |
-| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | WeChat (this schema) |
-| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | WeChat (this schema) |
-| [xdm:mode](#xdmmode) | `const` | Optional | WeChat (this schema) |
+| [@id](#id) | `const` | **Required** | WeChat Channel (this schema) |
+| [@type](#type) | `const` | Optional | WeChat Channel (this schema) |
+| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | WeChat Channel (this schema) |
+| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | WeChat Channel (this schema) |
+| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | WeChat Channel (this schema) |
+| [xdm:mode](#xdmmode) | `const` | Optional | WeChat Channel (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id

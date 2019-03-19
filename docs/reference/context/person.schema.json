@@ -20,22 +20,6 @@
                     "$ref": "https://ns.adobe.com/xdm/context/person-name",
                     "description": "The person's full name"
                 },
-                "xdm:birthDay": {
-                    "title": "Birth day",
-                    "type": "integer",
-                    "description": "The day of the month a person was born (1-31).",
-                    "minimum": 1,
-                    "maximum": 31,
-                    "meta:status": "deprecated"
-                },
-                "xdm:birthMonth": {
-                    "title": "Birth month",
-                    "type": "integer",
-                    "description": "The month of the year a person was born (1-12).",
-                    "minimum": 1,
-                    "maximum": 12,
-                    "meta:status": "deprecated"
-                },
                 "xdm:birthDate": {
                     "title": "Birth Date",
                     "type": "string",
@@ -96,7 +80,7 @@
                 "xdm:lastName": "Doe",
                 "xdm:fullName": "Jane F. Doe"
             },
-            "xdm:birthDayAndMonth": "01-03"
+            "xdm:birthDate": "1996-01-03"
         },
         {
             "xdm:name": {
@@ -105,7 +89,7 @@
                 "xdm:lastName": "Doe",
                 "xdm:fullName": "Jane F. Doe"
             },
-            "xdm:birthDate": "1996-01-03"
+            "xdm:birthDayAndMonth": "01-03"
         }
     ]
 }

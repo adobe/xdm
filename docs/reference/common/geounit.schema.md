@@ -23,7 +23,7 @@ The geographical unit of a parent geographical unit.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Geographical Unit (this schema) |
+| [@id](#id) | `string` | Optional | Geographical Unit (this schema) |
 | [xdm:label](#xdmlabel) | `string` | Optional | Geographical Unit (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 

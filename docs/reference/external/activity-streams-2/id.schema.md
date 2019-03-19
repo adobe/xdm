@@ -22,7 +22,7 @@ Provides the globally unique identifier for an [Object](https://www.w3.org/TR/ac
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | JSON-LD `@id` (this schema) |
+| [@id](#id) | `string` | Optional | JSON-LD `@id` (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id

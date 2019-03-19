@@ -1,23 +1,23 @@
 
-# Fax Schema
+# Fax Channel Schema
 
 ```
 https://ns.adobe.com/xdm/channels/fax
 ```
 
-Telefacsimile
+Telefacsimile channel.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/fax.schema.json](channels/fax.schema.json) |
 ## Schema Hierarchy
 
-* Fax `https://ns.adobe.com/xdm/channels/fax`
+* Fax Channel `https://ns.adobe.com/xdm/channels/fax`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
 
-## Fax Example
+## Fax Channel Example
 ```json
 {
   "@id": "https://ns.adobe.com/xdm/channels/fax",
@@ -25,16 +25,16 @@ Telefacsimile
 }
 ```
 
-# Fax Properties
+# Fax Channel Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | Fax (this schema) |
-| [@type](#@type) | `const` | Optional | Fax (this schema) |
-| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | Fax (this schema) |
-| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | Fax (this schema) |
-| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | Fax (this schema) |
-| [xdm:mode](#xdmmode) | `const` | Optional | Fax (this schema) |
+| [@id](#id) | `const` | **Required** | Fax Channel (this schema) |
+| [@type](#type) | `const` | Optional | Fax Channel (this schema) |
+| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | Fax Channel (this schema) |
+| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | Fax Channel (this schema) |
+| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | Fax Channel (this schema) |
+| [xdm:mode](#xdmmode) | `const` | Optional | Fax Channel (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id

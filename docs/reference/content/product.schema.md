@@ -43,7 +43,7 @@ XDM product variant, master product and key attributes of product in the product
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Product (this schema) |
+| [@id](#id) | `string` | Optional | Product (this schema) |
 | [schema:description](#schemadescription) | `string` | Optional | Product (this schema) |
 | [xdm:COGS](#xdmcogs) | `number` | Optional | Product (this schema) |
 | [xdm:SKU](#xdmsku) | `string` | Optional | Product (this schema) |

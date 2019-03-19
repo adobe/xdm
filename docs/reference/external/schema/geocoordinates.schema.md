@@ -26,7 +26,7 @@ The geographic coordinates of a place. Based on [schema.org](http://schema.org/G
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Geo Coordinates (this schema) |
+| [@id](#id) | `string` | Optional | Geo Coordinates (this schema) |
 | [schema:description](#schemadescription) | `string` | Optional | Geo Coordinates (this schema) |
 | [schema:elevation](#schemaelevation) | `number` | Optional | Geo Coordinates (this schema) |
 | [schema:latitude](#schemalatitude) | `number` | Optional | Geo Coordinates (this schema) |

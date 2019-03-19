@@ -79,7 +79,7 @@ Repository implementations can generate notifications or alerts when the consume
 * type: `enum`
 * defined in this schema
 
-The value of this property **must** be equal to one of the [known values below](#xdm:enforcement-known-values).
+The value of this property **must** be equal to one of the [known values below](#xdmenforcement-known-values).
 
 ### xdm:enforcement Known Values
 | Value | Description |

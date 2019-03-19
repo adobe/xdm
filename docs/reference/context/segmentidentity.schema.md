@@ -30,7 +30,7 @@ SegmentIdentity is used to clearly distinguish segments from multiple sources. S
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Segment Identity (this schema) |
+| [@id](#id) | `string` | Optional | Segment Identity (this schema) |
 | [xdm:namespace](#xdmnamespace) | Namespace | Optional | Segment Identity (this schema) |
 | [xdm:xid](#xdmxid) | `string` | Optional | Segment Identity (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |

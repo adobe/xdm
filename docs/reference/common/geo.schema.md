@@ -45,7 +45,7 @@ The geographic related data where an event was observed.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | [Geo Coordinates](../external/schema/geocoordinates.schema.md#@id) |
+| [@id](#id) | `string` | Optional | [Geo Coordinates](../external/schema/geocoordinates.schema.md#id) |
 | [schema:description](#schemadescription) | `string` | Optional | [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemadescription) |
 | [schema:elevation](#schemaelevation) | `number` | Optional | [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemaelevation) |
 | [schema:latitude](#schemalatitude) | `number` | Optional | [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemalatitude) |
@@ -66,7 +66,7 @@ The unique identifier of the coordinates.
 `@id`
 * is optional
 * type: `string`
-* defined in [Geo Coordinates](../external/schema/geocoordinates.schema.md#@id)
+* defined in [Geo Coordinates](../external/schema/geocoordinates.schema.md#id)
 
 ### @id Type
 
@@ -87,7 +87,7 @@ A description of what the coordinates identify.
 `schema:description`
 * is optional
 * type: `string`
-* defined in [Geo Coordinates](../external/schema/geocoordinates.schema.md#schema:description)
+* defined in [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemadescription)
 
 ### schema:description Type
 
@@ -107,7 +107,7 @@ The specific elevation of the defined coordinate. The value conforms to the [WGS
 `schema:elevation`
 * is optional
 * type: `number`
-* defined in [Geo Coordinates](../external/schema/geocoordinates.schema.md#schema:elevation)
+* defined in [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemaelevation)
 
 ### schema:elevation Type
 
@@ -127,7 +127,7 @@ The signed vertical coordinate of a geographic point.
 `schema:latitude`
 * is optional
 * type: `number`
-* defined in [Geo Coordinates](../external/schema/geocoordinates.schema.md#schema:latitude)
+* defined in [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemalatitude)
 
 ### schema:latitude Type
 
@@ -148,7 +148,7 @@ The signed horizontal coordinate of a geographic point.
 `schema:longitude`
 * is optional
 * type: `number`
-* defined in [Geo Coordinates](../external/schema/geocoordinates.schema.md#schema:longitude)
+* defined in [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemalongitude)
 
 ### schema:longitude Type
 

@@ -1,5 +1,5 @@
 
-# Twitter Feed Schema
+# Twitter Feed Channel Schema
 
 ```
 https://ns.adobe.com/xdm/channels/twitter-feed
@@ -12,12 +12,12 @@ The Twitter Feed, i.e. the stream of user-generated tweets. This does not includ
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/twitter-feed.schema.json](channels/twitter-feed.schema.json) |
 ## Schema Hierarchy
 
-* Twitter Feed `https://ns.adobe.com/xdm/channels/twitter-feed`
+* Twitter Feed Channel `https://ns.adobe.com/xdm/channels/twitter-feed`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
 
-## Twitter Feed Example
+## Twitter Feed Channel Example
 ```json
 {
   "@id": "https://ns.adobe.com/xdm/channels/twitter-feed",
@@ -25,16 +25,16 @@ The Twitter Feed, i.e. the stream of user-generated tweets. This does not includ
 }
 ```
 
-# Twitter Feed Properties
+# Twitter Feed Channel Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | Twitter Feed (this schema) |
-| [@type](#@type) | `const` | Optional | Twitter Feed (this schema) |
-| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | Twitter Feed (this schema) |
-| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | Twitter Feed (this schema) |
-| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | Twitter Feed (this schema) |
-| [xdm:mode](#xdmmode) | `const` | Optional | Twitter Feed (this schema) |
+| [@id](#id) | `const` | **Required** | Twitter Feed Channel (this schema) |
+| [@type](#type) | `const` | Optional | Twitter Feed Channel (this schema) |
+| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | Twitter Feed Channel (this schema) |
+| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | Twitter Feed Channel (this schema) |
+| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | Twitter Feed Channel (this schema) |
+| [xdm:mode](#xdmmode) | `const` | Optional | Twitter Feed Channel (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id

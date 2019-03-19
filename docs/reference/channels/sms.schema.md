@@ -1,23 +1,23 @@
 
-# SMS Schema
+# SMS Channel Schema
 
 ```
 https://ns.adobe.com/xdm/channels/sms
 ```
 
-Short Message Service delivered to a mobile phone.
+Short Message Service delivered to a mobile phone channel.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/sms.schema.json](channels/sms.schema.json) |
 ## Schema Hierarchy
 
-* SMS `https://ns.adobe.com/xdm/channels/sms`
+* SMS Channel `https://ns.adobe.com/xdm/channels/sms`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
 
-## SMS Example
+## SMS Channel Example
 ```json
 {
   "@id": "https://ns.adobe.com/xdm/channels/sms",
@@ -25,16 +25,16 @@ Short Message Service delivered to a mobile phone.
 }
 ```
 
-# SMS Properties
+# SMS Channel Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | SMS (this schema) |
-| [@type](#@type) | `const` | Optional | SMS (this schema) |
-| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | SMS (this schema) |
-| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | SMS (this schema) |
-| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | SMS (this schema) |
-| [xdm:mode](#xdmmode) | `const` | Optional | SMS (this schema) |
+| [@id](#id) | `const` | **Required** | SMS Channel (this schema) |
+| [@type](#type) | `const` | Optional | SMS Channel (this schema) |
+| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | SMS Channel (this schema) |
+| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | SMS Channel (this schema) |
+| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | SMS Channel (this schema) |
+| [xdm:mode](#xdmmode) | `const` | Optional | SMS Channel (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id

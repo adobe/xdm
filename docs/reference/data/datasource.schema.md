@@ -24,7 +24,7 @@ The Datasource acts as a namespace or unique identifier associated with a collec
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Data Source (this schema) |
+| [@id](#id) | `string` | Optional | Data Source (this schema) |
 | [xdm:code](#xdmcode) | `string` | Optional | Data Source (this schema) |
 | [xdm:tags](#xdmtags) | `string[]` | Optional | Data Source (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |

@@ -1,0 +1,48 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/decisioning/proposition",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Decision Proposition",
+  "type": "object",
+  "meta:abstract": true,
+  "meta:extensible": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent",
+    "https://ns.adobe.com/experience/decisioning/decisionevent"
+  ],
+  "description": "Decision Proposition is used to capture the outcome of a decisioning process.",
+  "definitions": {
+    "proposition-mixin": {
+      "properties": {
+        "https://ns.adobe.com/experience/decisioning/propositionID": {
+          "title": "Proposition Identifier",
+          "type": "string",
+          "format": "uri-reference",
+          "description": "An Identity associated with an individual decision response. A single decision can produce an array of propositions, one for each activity involved. It is the expectation that applications reference this ID in every ExperienceEvent that was influended by the propositions. A user profile's proposition-response history is maintained with these identifiers."
+        },
+        "https://ns.adobe.com/experience/decisioning/propositionDetails": {
+          "title": "Outputs and contexts of a single decision event.",
+          "type": "array",
+          "items": {
+            "$ref": "https://ns.adobe.com/experience/decisioning/proposition-detail"
+          },
+          "description": "Details about the results of the decision. An array providing the output of a single decision event, one proposition per activity parameter in the request."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/proposition-mixin"
+    }
+  ],
+  "meta:status": "experimental"
+}

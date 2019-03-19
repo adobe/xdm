@@ -12,7 +12,10 @@
   "description": "Campaign ExperienceEvent Mixin for use with Schemas for Solution data ingestion. Includes the core/standard ExperienceEvent as well as the required Adobe Campaign ExperienceEvent Mixins.",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent",
+    "https://ns.adobe.com/experience/decisioning/decisionevent"
+  ],
   "meta:extends": [
     "https://ns.adobe.com/xdm/context/experienceevent-advertising",
     "https://ns.adobe.com/xdm/context/experienceevent-application",
@@ -28,6 +31,7 @@
     "https://ns.adobe.com/xdm/context/experienceevent-technical-details",
     "https://ns.adobe.com/xdm/context/experienceevent-web",
     "https://ns.adobe.com/experience/campaign/experienceevent-all",
+    "https://ns.adobe.com/experience/decisioning/proposition",
     "https://ns.adobe.com/experience/target/experienceevent-shared",
     "https://ns.adobe.com/experience/profile/experienceevent-shared",
     "https://ns.adobe.com/experience/implementations-ext",
@@ -83,6 +87,9 @@
     },
     {
       "$ref": "https://ns.adobe.com/experience/campaign/experienceevent-all"
+    },
+    {
+      "$ref": "https://ns.adobe.com/experience/decisioning/proposition"
     },
     {
       "$ref": "https://ns.adobe.com/experience/target/experienceevent-shared"

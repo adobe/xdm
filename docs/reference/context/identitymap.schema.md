@@ -78,7 +78,7 @@ Defines a map containing a set of end user identities, keyed on either namespace
 `object` with following properties:
 
 
-| Property | Type | Required
+| Property | Type | Required |
 |----------|------|----------|
 
 

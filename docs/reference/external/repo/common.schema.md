@@ -15,7 +15,7 @@ Common Properties for Storage in the Adobe Cloud Platform
 ```json
 {
   "repo:name": "example.png",
-  "repo:path": "/examples/from/xdm",
+  "repo:path": "/examples/from/xdm/example.png",
   "dc:format": "image/png"
 }
 ```
@@ -26,7 +26,7 @@ Common Properties for Storage in the Adobe Cloud Platform
 |----------|------|-------|
 | [dc:format](#dcformat) | `string` | `http://ns.adobe.com/adobecloud/core/1.0#/definitions/common-properties` |
 | [repo:createDate](#repocreatedate) | `string` | `http://ns.adobe.com/adobecloud/core/1.0#/definitions/date-properties` |
-| [repo:lastModifiedDate](#repolastmodifieddate) | `string` | `http://ns.adobe.com/adobecloud/core/1.0#/definitions/date-properties` |
+| [repo:modifyDate](#repomodifydate) | `string` | `http://ns.adobe.com/adobecloud/core/1.0#/definitions/date-properties` |
 | [repo:name](#reponame) | `string` | `http://ns.adobe.com/adobecloud/core/1.0#/definitions/common-properties` |
 | [repo:path](#repopath) | `string` | `http://ns.adobe.com/adobecloud/core/1.0#/definitions/common-properties` |
 
@@ -88,16 +88,16 @@ The server date and time when the resource was created in the repository, such a
 ```
 
 
-## repo:lastModifiedDate
+## repo:modifyDate
 
-The server date and time when the resource was most recently modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
+The server date and time when the resource was last modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
 
-`repo:lastModifiedDate`
+`repo:modifyDate`
 * is optional
 * type: `string`
 * defined in this schema
 
-### repo:lastModifiedDate Type
+### repo:modifyDate Type
 
 
 `string`
@@ -106,7 +106,7 @@ The server date and time when the resource was most recently modified in the rep
 
 
 
-### repo:lastModifiedDate Example
+### repo:modifyDate Example
 
 ```json
 "2004-10-23T12:00:00-06:00"

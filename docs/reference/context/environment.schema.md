@@ -152,7 +152,7 @@ Internet connection type.
 * type: `enum`
 * defined in this schema
 
-The value of this property **must** be equal to one of the [known values below](#xdm:connectionType-known-values).
+The value of this property **must** be equal to one of the [known values below](#xdmconnectiontype-known-values).
 
 ### xdm:connectionType Known Values
 | Value | Description |
@@ -310,7 +310,7 @@ The type of the application environment.
 * type: `enum`
 * defined in this schema
 
-The value of this property **must** be equal to one of the [known values below](#xdm:type-known-values).
+The value of this property **must** be equal to one of the [known values below](#xdmtype-known-values).
 
 ### xdm:type Known Values
 | Value | Description |

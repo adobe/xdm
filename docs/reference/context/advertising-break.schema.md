@@ -24,7 +24,7 @@ Details about how a timed advertising is being inserted into a timed media.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Ad Break (this schema) |
+| [@id](#id) | `string` | Optional | Ad Break (this schema) |
 | [dc:title](#dctitle) | `string` | Optional | Ad Break (this schema) |
 | [xdm:offset](#xdmoffset) | `integer` | Optional | Ad Break (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |

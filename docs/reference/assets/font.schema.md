@@ -206,7 +206,7 @@ The Adobe CoolType font engine allows two fonts with the same PostScript name an
 * type: `enum`
 * defined in this schema
 
-The value of this property **must** be equal to one of the [known values below](#xdm:versionString-known-values).
+The value of this property **must** be equal to one of the [known values below](#xdmversionstring-known-values).
 
 ### xdm:versionString Known Values
 | Value | Description |

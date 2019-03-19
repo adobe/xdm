@@ -269,9 +269,9 @@ The customer CICDPipeline (see `xdm:CICDPipeline`) defines a number of quality g
 `object` with following properties:
 
 
-| Property | Type | Required
+| Property | Type | Required |
 |----------|------|----------|
-| `*Pass`| boolean | Optional | 
+| `*Pass`| boolean | Optional |
 
 
 

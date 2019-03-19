@@ -274,6 +274,11 @@
             "replay": "This event was generated via Replay Utility tool which did not have any event source"
           },
           "description": "A human-friendly name of the campaign activity which is originating this message."
+        },
+        "https://ns.adobe.com/experience/campaign/offerOpened": {
+          "title": "Offer Opened",
+          "description": "The offer in the message for an 'offer opened' event.",
+          "$ref": "https://ns.adobe.com/experience/decisioning/proposition-detail"
         }
       }
     },

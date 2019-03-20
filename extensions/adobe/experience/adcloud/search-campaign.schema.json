@@ -45,7 +45,7 @@
         },
         "xdm:sid": {
           "title": "Search Engine ID",
-          "type": integer"",
+          "type": "integer",
           "description": "Unique identifier for the Search Engine which this event is associated with."
         }
       }

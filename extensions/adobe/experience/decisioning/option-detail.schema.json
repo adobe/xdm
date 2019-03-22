@@ -26,8 +26,8 @@
           "title": "Name",
           "description": "Option name. The name is displayed in various user interfaces."
         },
-        "xdm:metadata": {
-          "title": "Option Metadata",
+        "xdm:customMetadata": {
+          "title": "Option Custom Metadata",
           "description": "Additional properties kept with an Option. The data can be used do compose options into experiences for delivery to a profile. It is also used to analyze optimize the performance of an Option.",
           "type": "object",
           "meta:xdmType": "map",
@@ -35,7 +35,7 @@
             "type": "array",
             "items": {
               "type": "string",
-              "description": "Value of the Option metadata property"
+              "description": "Value of the metadata property."
             }
           }
         },

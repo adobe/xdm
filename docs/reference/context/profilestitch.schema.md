@@ -15,7 +15,6 @@ Details about the ids that were joined by profile stitching.
 * Profile Stitch `https://ns.adobe.com/xdm/context/profileStitch`
   * [IdentityMap](identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
   * [Profile Stitch Identity](profilestitchidentity.schema.md) `https://ns.adobe.com/xdm/context/profileStitchIdentity`
-  * [End User IDs](enduserids.schema.md) `https://ns.adobe.com/xdm/context/enduserids`
 
 
 ## Profile Stitch Example
@@ -48,57 +47,10 @@ Details about the ids that were joined by profile stitching.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:endUserIDs](#xdmenduserids) | End User IDs | Optional | Profile Stitch (this schema) |
-| [xdm:identities](#xdmidentities) | Identity | Optional | Profile Stitch (this schema) |
 | [xdm:identityMap](#xdmidentitymap) | `object` | Optional | [IdentityMap](identitymap.schema.md#xdmidentitymap) |
 | [xdm:profileStitchID](#xdmprofilestitchid) | Profile Stitch Identity | Optional | Profile Stitch (this schema) |
 | [xdm:version](#xdmversion) | `string` | Optional | Profile Stitch (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
-
-## xdm:endUserIDs
-### End User IDs
-
-Condensed, normalized encapsulation of all end user identifiers. Deprecated
-
-`xdm:endUserIDs`
-* is optional
-* type: End User IDs
-* defined in this schema
-
-### xdm:endUserIDs Type
-
-
-* [End User IDs](enduserids.schema.md) – `https://ns.adobe.com/xdm/context/enduserids`
-
-
-
-
-
-## xdm:identities
-### All User Identities
-
-Array of Identities. Condensed, normalized encapsulation of all end user identifiers. Deprecated.
-
-`xdm:identities`
-* is optional
-* type: Identity
-* at least `1` items in the array
-* defined in this schema
-
-### xdm:identities Type
-
-
-Array type: Identity
-
-All items must be of the type:
-* [Identity](identity.schema.md) – `https://ns.adobe.com/xdm/context/identity`
-
-
-
-
-
-
-
 
 ## xdm:identityMap
 
@@ -106,7 +58,7 @@ All items must be of the type:
 `xdm:identityMap`
 * is optional
 * type: `object`
-* defined in [IdentityMap](identitymap.schema.md#xdm:identityMap)
+* defined in [IdentityMap](identitymap.schema.md#xdmidentitymap)
 
 ### xdm:identityMap Type
 
@@ -114,7 +66,7 @@ All items must be of the type:
 `object` with following properties:
 
 
-| Property | Type | Required
+| Property | Type | Required |
 |----------|------|----------|
 
 

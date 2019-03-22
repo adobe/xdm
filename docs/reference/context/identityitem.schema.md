@@ -26,11 +26,11 @@ An end-user identity item, to be included in an instance of `context/identitymap
 
 # Identity Item Properties
 
-| Property | Type | Required | Defined by |
-|----------|------|----------|------------|
-| [xdm:authenticatedState](#xdmauthenticatedstate) | `enum` | Optional | Identity Item (this schema) |
-| [xdm:id](#xdmid) | `string` | Optional | Identity Item (this schema) |
-| [xdm:primary](#xdmprimary) | `boolean` | Optional | Identity Item (this schema) |
+| Property | Type | Required | Default | Defined by |
+|----------|------|----------|---------|------------|
+| [xdm:authenticatedState](#xdmauthenticatedstate) | `enum` | Optional | `"ambiguous"` | Identity Item (this schema) |
+| [xdm:id](#xdmid) | `string` | Optional |  | Identity Item (this schema) |
+| [xdm:primary](#xdmprimary) | `boolean` | Optional | `false` | Identity Item (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:authenticatedState
@@ -40,9 +40,10 @@ The state this identity is authenticated as for this observed ExperienceEvent.
 `xdm:authenticatedState`
 * is optional
 * type: `enum`
+* default: `"ambiguous"`
 * defined in this schema
 
-The value of this property **must** be equal to one of the [known values below](#xdm:authenticatedState-known-values).
+The value of this property **must** be equal to one of the [known values below](#xdmauthenticatedstate-known-values).
 
 ### xdm:authenticatedState Known Values
 | Value | Description |
@@ -82,6 +83,7 @@ Indicates this identity is the preferred identity. Is used as a hint to help sys
 `xdm:primary`
 * is optional
 * type: `boolean`
+* default: `false`
 * defined in this schema
 
 ### xdm:primary Type

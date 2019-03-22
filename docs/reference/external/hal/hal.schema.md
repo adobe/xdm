@@ -138,7 +138,7 @@ It is an object whose property names are link relation types (as defined by [RFC
 `object` with following properties:
 
 
-| Property | Type | Required
+| Property | Type | Required |
 |----------|------|----------|
 
 
@@ -161,7 +161,7 @@ It is an object whose property names are link relation types (as defined by [RFC
 `object` with following properties:
 
 
-| Property | Type | Required
+| Property | Type | Required |
 |----------|------|----------|
 
 

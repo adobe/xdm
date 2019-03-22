@@ -1,23 +1,23 @@
 
-# MPNS Schema
+# MPNS Channel Schema
 
 ```
 https://ns.adobe.com/xdm/channels/mpns
 ```
 
-Microsoft Push Notification Service
+Microsoft Push Notification Service channel.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/mpns.schema.json](channels/mpns.schema.json) |
 ## Schema Hierarchy
 
-* MPNS `https://ns.adobe.com/xdm/channels/mpns`
+* MPNS Channel `https://ns.adobe.com/xdm/channels/mpns`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
 
-## MPNS Example
+## MPNS Channel Example
 ```json
 {
   "@id": "https://ns.adobe.com/xdm/channels/mpns",
@@ -25,16 +25,16 @@ Microsoft Push Notification Service
 }
 ```
 
-# MPNS Properties
+# MPNS Channel Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | MPNS (this schema) |
-| [@type](#@type) | `const` | Optional | MPNS (this schema) |
-| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | MPNS (this schema) |
-| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | MPNS (this schema) |
-| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | MPNS (this schema) |
-| [xdm:mode](#xdmmode) | `const` | Optional | MPNS (this schema) |
+| [@id](#id) | `const` | **Required** | MPNS Channel (this schema) |
+| [@type](#type) | `const` | Optional | MPNS Channel (this schema) |
+| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | MPNS Channel (this schema) |
+| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | MPNS Channel (this schema) |
+| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | MPNS Channel (this schema) |
+| [xdm:mode](#xdmmode) | `const` | Optional | MPNS Channel (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id

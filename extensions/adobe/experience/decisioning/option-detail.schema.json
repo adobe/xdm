@@ -26,13 +26,26 @@
           "title": "Name",
           "description": "Option name. The name is displayed in various user interfaces."
         },
+        "xdm:metadata": {
+          "title": "Option Metadata",
+          "description": "Additional properties kept with an Option. The data can be used do compose options into experiences for delivery to a profile. It is also used to analyze optimize the performance of an Option.",
+          "type": "object",
+          "meta:xdmType": "map",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "description": "Value of the Option metadata property"
+            }
+          }
+        },
         "https://ns.adobe.com/experience/decisioning/propositionsTotal": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "The total number a particular option was proposed so far across all profiles."
         },
         "https://ns.adobe.com/experience/decisioning/propositionsProfile": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "The number of times a particular option was proposed so far to a particular profile."
+          "description": "The number of times a particular option was proposed so far to a particular profile. When this metric is present the record or timeseries entity must include an IdentityMap the profile."
         }
       }
     }

@@ -17,12 +17,12 @@
       "properties": {
         "xdm:activity": {
           "title": "Decision Activity",
-          "description": "Snapshot of the activity for which the proposition was made. The object contains at least the @id property value which is the URI of the decision activity.",
+          "description": "Snapshot of the activity for which the proposition was made. The object contains at least the xdm:id property value which is the identifier of the decision activity.",
           "$ref": "https://ns.adobe.com/experience/decisioning/activity-detail"
         },
         "xdm:selections": {
           "title": "Selected Options",
-          "description": "Snapshots of the options that were selected for this activity. Those options are ususally constrained. The objects contain a at least the @id property value which is the URI of an option. Note that the intention is that either the selections or the fallback property is required.",
+          "description": "Snapshots of the options that were selected for this activity. Those options are ususally constrained. The objects contain a at least the xdm:id property value which is the identifier of an option. Note the intention is that either the selections or the fallback property is required.",
           "type": "array",
           "items": {
             "$ref": "https://ns.adobe.com/experience/decisioning/option-detail"

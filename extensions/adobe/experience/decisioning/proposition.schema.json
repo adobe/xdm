@@ -23,7 +23,7 @@
           "title": "Proposition Identifier",
           "type": "string",
           "format": "uri-reference",
-          "description": "An Identity associated with an single XDM DecisionEvent. A single DecisionEvent can produce an array of propositions, one for each activity involved. It is the expectation that applications reference this ID in every ExperienceEvent that was influended by the propositions. A user profile's proposition-response history is maintained with these identifiers."
+          "description": "An Identity for the Proposition entity associated with an single XDM DecisionEvent. A single DecisionEvent can produce an array of propositions, one for each activity involved. It is the expectation that applications reference this ID in every ExperienceEvent that was influended by the propositions. A user profile's proposition-response history is maintained with these identifiers."
         }
       }
     }

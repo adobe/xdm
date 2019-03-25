@@ -73,6 +73,15 @@
                     "title": "Color Depth",
                     "type": "integer",
                     "description": "The number of colors the display is able to represent."
+                },
+                "xdm:screenOrientation": {
+                    "title": "Screen Orientation",
+                    "type": "string",
+                    "description": "The current screen orientation (\"portait\" or \"landscape\")",
+                    "meta:enum": {
+                        "portrait": "Portrait",
+                        "landscape": "Landscape"
+                    }
                 }
             }
         }
@@ -96,7 +105,8 @@
             "xdm:modelNumber": "A1586",
             "xdm:screenHeight": 667,
             "xdm:screenWidth": 375,
-            "xdm:colorDepth": 16777216
+            "xdm:colorDepth": 16777216,
+            "xdm:screenOrientation": "portrait"
         }
     ]
 }

@@ -1,0 +1,36 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/adcloud/geo",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "geo",
+  "type": "object",
+  "description": "Adcloud search geo inforamtion placeholder ",
+  "definitions": {
+    "geo": {
+      "properties": {
+        "physicalLocationId": {
+          "title": "physical Location Id",
+          "type": "string",
+          "description": "Surfer browsing location. This isn't exactly the location name - like city or country, instead it is a reference from SE for a geo target. "
+        },
+        "interestLocationId": {
+          "title": "interest Location Id",
+          "type": "string",
+          "description": "Location based on interest expressed in search query. For eg. when the search is for string- 'hotel in goa' here the request might be originating from Bangalore but the interest is on Goa."
+        }
+
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/geo"
+    }
+  ],
+  "meta:status": "experimental"
+}

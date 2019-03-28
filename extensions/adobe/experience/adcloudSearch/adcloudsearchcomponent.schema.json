@@ -1,0 +1,48 @@
+{
+  "meta:license":[
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema":"http://json-schema.org/draft-06/schema#",
+  "$id":"https://ns.adobe.com/experience/adcloud/adCloudSearchComponent",
+  "title":"adCloudSearchComponent",
+  "type":"object",
+  "meta:extensible":true,
+  "meta:abstract":true,
+  "meta:intendedToExtend":[
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
+  "description":"adCloudSearchComponent mixin to be used in ad cloud search schema",
+  "definitions":{
+    "adCloudSearchComponent":{
+      "properties":{
+        "_adcloudattributiontesting":{
+          "type":"object",
+          "properties":{
+            "advertisement":{
+              "$ref":"https://ns.adobe.com/adcloudattributiontesting/datatypes/f1add2cb4f1d2f78fa05964019eb3c62"
+            },
+            "geo":{
+              "$ref":"https://ns.adobe.com/adcloudattributiontesting/datatypes/2ae2707f863ece0eaf974e6631bacb7b"
+            },
+            "adDeliveryDetails":{
+              "$ref":"https://ns.adobe.com/adcloudattributiontesting/datatypes/dfc278cf3b37c1e37a5aa2ae5bd0c14b"
+            },
+            "product":{
+              "$ref":"https://ns.adobe.com/adcloudattributiontesting/datatypes/d6119a6f364f281515d2385e3240335d"
+            }
+          }
+        }
+      },
+      "type":"object"
+    }
+  },
+  "allOf":[
+    {
+      "$ref":"#/definitions/adCloudSearchComponent"
+    }
+  ],
+  "meta:status":"experimental"
+}

@@ -1,0 +1,57 @@
+{
+  "_id": "XH9zXgAAAI@XLLFn",
+  "eventType": "click",
+  "timestamp": "2018-08-07T08:06:34.672Z",
+  "search": {
+    "searchEngineID": "3"
+  },
+  "device": {
+    "type": "c"
+  },
+  "environment": {
+    "ipV4": "76.86.127.000",
+    "browserDetails": {
+      "userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36"
+    }
+  },
+  "web": {
+    "webReferrer": {
+      "URL": "https://www.google.com/"
+    }
+  },
+  "identityMap": {
+    "AdCloud": [
+      {
+        "id": "XA9N8wAAAMnAaj_e"
+      }
+    ]
+  },
+  "_adcloudattributiontesting": {
+    "advertisement": {
+      "creativeId": "301404063528",
+      "keywordId": "147741280",
+      "audienceId": "257600311580",
+      "adgroupId": "32345812783",
+      "campaignId": "663049855",
+      "network": "g",
+      "matchType": "b"
+    },
+    "geo": {
+      "physicalLocationId": "1014185",
+      "interestLocationId": "4087"
+    },
+    "product": {
+      "id": "LSTTDSF9J4DQYH8ZZZUSDBCRG",
+      "country": "IN",
+      "language": "en",
+      "partionId": "342294687595",
+      "title": "",
+      "adType": "pla"
+    },
+    "adDeliveryDetails": {
+      "adPosition": "1t1",
+      "siteLinkText": "sl:",
+      "platformClickId": "CjwKCAiA2fjjBRAjEiwAuewS_S97rvRophpC6q0LI9PYRrW69uM7BvHhMe-R5Eq0Wtdb17dVOPOg_xoCBsgQAvD_BwE"
+    }
+  }
+}

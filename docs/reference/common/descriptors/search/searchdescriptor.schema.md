@@ -44,6 +44,7 @@ Describes how XDM properties are to be handled for search, including the applica
 {
   "@id": "https://ns.adobe.com/xdm/common/descriptors/searchdescriptor",
   "@type": "xdm:searchdescriptor",
+  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile",
   "search:indexed": true,
   "search:filterable": true,
   "search:store": "storedAndFetchByDefault",

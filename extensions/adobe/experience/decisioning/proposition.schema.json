@@ -15,7 +15,7 @@
     "https://ns.adobe.com/xdm/context/experienceevent",
     "https://ns.adobe.com/experience/decisioning/decisionevent"
   ],
-  "description": "Decision Proposition is used to capture the outcome of a decisioning process.",
+  "description": "Decision Proposition is used to track and capture the outcomes of a DecisionEvent.",
   "definitions": {
     "proposition-mixin": {
       "properties": {
@@ -23,15 +23,7 @@
           "title": "Proposition Identifier",
           "type": "string",
           "format": "uri-reference",
-          "description": "An Identity associated with an individual decision response. A single decision can produce an array of propositions, one for each activity involved. It is the expectation that applications reference this ID in every ExperienceEvent that was influended by the propositions. A user profile's proposition-response history is maintained with these identifiers."
-        },
-        "https://ns.adobe.com/experience/decisioning/propositionDetails": {
-          "title": "Outputs and contexts of a single decision event.",
-          "type": "array",
-          "items": {
-            "$ref": "https://ns.adobe.com/experience/decisioning/proposition-detail"
-          },
-          "description": "Details about the results of the decision. An array providing the output of a single decision event, one proposition per activity parameter in the request."
+          "description": "An Identity for the Proposition entity associated with an XDM DecisionEvent. A single DecisionEvent can propose multiple Options for a set of Activities at once, one for each Activity involved. It is the expectation that applications reference this PropositionID in every ExperienceEvent that was influended by the set of propositions. An Profile's proposition-response history is maintained with these Proposition identifiers."
         }
       }
     }

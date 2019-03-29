@@ -43,10 +43,12 @@
         {
           "xdm:id": "xcore:personalized-offer:e526a1503bf29e9",
 
-          "https://ns.adobe.com/experience/decisioning/propositionsTotal": {
+          "propositionsTotal": {
+            "xdm:id": "https://ns.adobe.com/experience/decisioning/propositionsProfile",
             "xdm:value": 948
           },
-          "https://ns.adobe.com/experience/decisioning/propositionsProfile": {
+          "propositionsProfile": {
+            "xdm:id": "https://ns.adobe.com/experience/decisioning/propositionsProfile",
             "xdm:value": 2
           }
         }

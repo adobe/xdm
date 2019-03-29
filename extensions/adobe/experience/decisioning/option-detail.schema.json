@@ -39,11 +39,11 @@
             }
           }
         },
-        "propositionsTotal": {
+        "https://ns.adobe.com/experience/decisioning/propositionsTotal": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "The total number a particular option was proposed so far across all profiles."
         },
-        "propositionsProfile": {
+        "https://ns.adobe.com/experience/decisioning/propositionsProfile": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "The number of times a particular option was proposed so far to a particular profile. When this metric is present the record or timeseries entity must include an IdentityMap the profile."
         }

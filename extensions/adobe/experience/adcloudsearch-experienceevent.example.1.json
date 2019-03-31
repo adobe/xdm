@@ -1,0 +1,57 @@
+{
+  "_id": "XH9zXgAAAI@XLLFn",
+  "xdm:eventType": "click",
+  "xdm:timestamp": "2018-08-07T08:06:34.672Z",
+  "xdm:search": {
+    "xdm:searchEngineID": "3"
+  },
+  "xdm:device": {
+    "xdm:type": "c"
+  },
+  "xdm:environment": {
+    "xdm:ipV4": "76.86.127.000",
+    "xdm:browserDetails": {
+      "xdm:userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36"
+    }
+  },
+  "xdm:web": {
+    "xdm:webReferrer": {
+      "xdm:URL": "https://www.google.com/"
+    }
+  },
+  "xdm:identityMap": {
+    "AdCloud": [
+      {
+        "id": "XA9N8wAAAMnAaj_e"
+      }
+    ]
+  },
+  "_adcloudattributiontesting": {
+    "xdm:advertisement": {
+      "xdm:creativeID": "301404063528",
+      "xdm:keywordID": "147741280",
+      "xdm:audienceID": "257600311580",
+      "xdm:adgroupID": "32345812783",
+      "xdm:campaignID": "663049855",
+      "xdm:network": "g",
+      "xdm:matchType": "b"
+    },
+    "xdm:geo": {
+      "xdm:physicalLocationID": "1014185",
+      "xdm:interestLocationID": "4087"
+    },
+    "xdm:product": {
+      "xdm:id": "LSTTDSF9J4DQYH8ZZZUSDBCRG",
+      "xdm:country": "IN",
+      "xdm:language": "en",
+      "xdm:partionID": "342294687595",
+      "xdm:title": "Winter Jacket",
+      "xdm:adtype": "pla"
+    },
+    "xdm:adDeliveryDetails": {
+      "xdm:adPosition": "1t1",
+      "xdm:siteLinkText": "sl:",
+      "xdm:externalClickID": "XJm2lgAAAEmW1LVH"
+    }
+  }
+}

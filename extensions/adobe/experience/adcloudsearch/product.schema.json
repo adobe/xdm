@@ -13,32 +13,32 @@
   "definitions": {
     "product": {
       "properties":{
-        "id":{
+        "xdm:id":{
           "title":"product id",
           "type":"string",
           "description":"The ID of the product featured in the cliked ad, as indicated in client's Mercant Center data feed"
         },
-        "country":{
+        "xdm:country":{
           "title":"product Country",
           "type":"string",
           "description":"The country of sale for the product in the clicked ad."
         },
-        "language":{
+        "xdm:language":{
           "title":"product Language",
           "type":"string",
           "description":"The language of your product information, as indicated in client's Merchant Center data feed."
         },
-        "partionId":{
+        "xdm:partionID":{
           "title":"product Partion id",
           "type":"string",
           "description":"The unique ID for the product group the clicked product ad belongs to."
         },
-        "title":{
+        "xdm:title":{
           "title":"product title",
           "type":"string",
           "description":"product title value shown in the ad"
         },
-        "adType":{
+        "xdm:adType":{
           "title":"product adType",
           "type":"string",
           "description":"Ad Type for Product used in Google Shopping Campaigns.",

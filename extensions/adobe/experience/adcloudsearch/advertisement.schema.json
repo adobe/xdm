@@ -7,38 +7,38 @@
   ],
   "$id": "https://ns.adobe.com/experience/adcloud/advertisement",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "advertisement",
+  "title": "Advertisement details for adcloudsearch",
   "type": "object",
   "description": "Adcloud search advertisement inforamtion ",
   "definitions": {
     "advertisement": {
       "properties":{
-        "creativeId":{
+        "xdm:creativeID":{
           "title":"creative id",
           "type":"string",
           "description":"creative id"
         },
-        "keywordId":{
+        "xdm:keywordID":{
           "title":"keyword id",
           "type":"string",
           "description":"Keyword that surfer used to search that triggered the click event"
         },
-        "audienceId":{
+        "xdm:audienceID":{
           "title":"audience id",
           "type":"string",
           "description":"Audience id"
         },
-        "adgroupId":{
+        "xdm:adgroupID":{
           "title":"adgroup id",
           "type":"string",
           "description":"adgroup id"
         },
-        "campaignId":{
+        "xdm:campaignID":{
           "title":"campaign id",
           "type":"string",
           "description":"campaign id"
         },
-        "network":{
+        "xdm:network":{
           "title":"network",
           "type":"string",
           "description":"network information",
@@ -51,7 +51,7 @@
             "d":"Content"
           }
         },
-        "matchType":{
+        "xdm:matchType":{
           "title":"matchType",
           "type":"string",
           "description":"To check the kind of match type done in keyword match",

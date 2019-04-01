@@ -3,7 +3,8 @@
   "xdm:eventType": "click",
   "xdm:timestamp": "2018-08-07T08:06:34.672Z",
   "xdm:search": {
-    "xdm:searchEngineID": "3"
+    "xdm:searchEngineID": "3",
+    "xdm:keywords": "adobe creative suite"
   },
   "xdm:device": {
     "xdm:type": "c"
@@ -34,8 +35,7 @@
       "xdm:adgroupID": "32345812783",
       "xdm:campaignID": "663049855",
       "xdm:network": "g",
-      "xdm:matchType": "b",
-      "xdm:keyword": "low-carb diet plan"
+      "xdm:matchType": "b"
     },
     "xdm:geo": {
       "xdm:physicalLocationID": "1014185",

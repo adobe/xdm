@@ -23,11 +23,6 @@
           "type": "string",
           "description": "Id of the keyword that surfer used to search that triggered the click event"
         },
-        "xdm:keyword": {
-          "title": "keyword ",
-          "type": "string",
-          "description": "Keyword that surfer used to search that triggered the click event"
-        },
         "xdm:audienceID": {
           "title": "audience id",
           "type": "string",

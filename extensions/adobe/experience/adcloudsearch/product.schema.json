@@ -12,47 +12,47 @@
   "description": "Adcloud search product inforamtion ",
   "definitions": {
     "product": {
-      "properties":{
-        "xdm:id":{
-          "title":"product id",
-          "type":"string",
-          "description":"The ID of the product featured in the cliked ad, as indicated in client's Mercant Center data feed"
+      "properties": {
+        "xdm:id": {
+          "title": "product id",
+          "type": "string",
+          "description": "The ID of the product featured in the cliked ad, as indicated in client's Mercant Center data feed"
         },
-        "xdm:country":{
-          "title":"product Country",
-          "type":"string",
-          "description":"The country of sale for the product in the clicked ad."
+        "xdm:country": {
+          "title": "product Country",
+          "type": "string",
+          "description": "The country of sale for the product in the clicked ad."
         },
-        "xdm:language":{
-          "title":"product Language",
-          "type":"string",
-          "description":"The language of your product information, as indicated in client's Merchant Center data feed."
+        "xdm:language": {
+          "title": "product Language",
+          "type": "string",
+          "description": "The language of your product information, as indicated in client's Merchant Center data feed."
         },
-        "xdm:partionID":{
-          "title":"product Partion id",
-          "type":"string",
-          "description":"The unique ID for the product group the clicked product ad belongs to."
+        "xdm:partionID": {
+          "title": "product Partion id",
+          "type": "string",
+          "description": "The unique ID for the product group the clicked product ad belongs to."
         },
-        "xdm:title":{
-          "title":"product title",
-          "type":"string",
-          "description":"product title value shown in the ad"
+        "xdm:title": {
+          "title": "product title",
+          "type": "string",
+          "description": "product title value shown in the ad"
         },
-        "xdm:adType":{
-          "title":"product adType",
-          "type":"string",
-          "description":"Ad Type for Product used in Google Shopping Campaigns.",
-          "enum":[
+        "xdm:adType": {
+          "title": "product adType",
+          "type": "string",
+          "description": "Ad Type for Product used in Google Shopping Campaigns.",
+          "enum": [
             "pla_with_promotion",
             "pla_multichannel",
             "pla",
             "pla_with_pog"
           ],
-          "meta:enum":{
-            "pla_with_pog":"pla_with_pog",
-            "pla":"pla",
-            "pla_multichannel":"pla_multichannel",
-            "pla_with_promotion":"pla_with_promotion"
+          "meta:enum": {
+            "pla_with_pog": "pla_with_pog",
+            "pla": "pla",
+            "pla_multichannel": "pla_multichannel",
+            "pla_with_promotion": "pla_with_promotion"
           }
         }
       }

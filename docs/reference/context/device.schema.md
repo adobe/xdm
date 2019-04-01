@@ -27,8 +27,7 @@ An identified device that is an application or browser instance that is trackabl
   "xdm:modelNumber": "A1586",
   "xdm:screenHeight": 667,
   "xdm:screenWidth": 375,
-  "xdm:colorDepth": 16777216,
-  "xdm:screenOrientation": "portrait"
+  "xdm:colorDepth": 16777216
 }
 ```
 
@@ -41,7 +40,6 @@ An identified device that is an application or browser instance that is trackabl
 | [xdm:model](#xdmmodel) | `string` | Optional | Device (this schema) |
 | [xdm:modelNumber](#xdmmodelnumber) | `string` | Optional | Device (this schema) |
 | [xdm:screenHeight](#xdmscreenheight) | `integer` | Optional | Device (this schema) |
-| [xdm:screenOrientation](#xdmscreenorientation) | `string` | Optional | Device (this schema) |
 | [xdm:screenWidth](#xdmscreenwidth) | `integer` | Optional | Device (this schema) |
 | [xdm:type](#xdmtype) | `string` | Optional | Device (this schema) |
 | [xdm:typeID](#xdmtypeid) | `string` | Optional | Device (this schema) |
@@ -144,32 +142,6 @@ The number of veritcal pixels of the device's active display in its default orie
 `integer`
 
 
-
-
-
-
-## xdm:screenOrientation
-### Screen Orientation
-
-The current screen orientation ("portait" or "landscape")
-
-`xdm:screenOrientation`
-* is optional
-* type: `string`
-* defined in this schema
-
-### xdm:screenOrientation Type
-
-
-`string`
-
-
-
-### xdm:screenOrientation Known Values
-| Value | Description |
-|-------|-------------|
-| `portrait` | Portrait |
-| `landscape` | Landscape |
 
 
 

@@ -12,9 +12,7 @@
   "description": "adcloudsearchexperienceevent-schema",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/context/experienceevent"
-  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "definitions": {
     "adcloudsearchexperienceevent-schema": {
       "properties": {}
@@ -37,8 +35,6 @@
     {
       "$ref": "https://ns.adobe.com/xdm/context/experienceevent-web"
     }
-
-
   ],
   "meta:status": "experimental"
 }

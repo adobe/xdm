@@ -12,58 +12,56 @@
   "description": "Adcloud search advertisement inforamtion ",
   "definitions": {
     "advertisement": {
-      "properties":{
-        "xdm:creativeID":{
-          "title":"creative id",
-          "type":"string",
-          "description":"creative id"
+      "properties": {
+        "xdm:creativeID": {
+          "title": "creative id",
+          "type": "string",
+          "description": "creative id"
         },
-        "xdm:keywordID":{
-          "title":"keyword id",
-          "type":"string",
-          "description":"Keyword that surfer used to search that triggered the click event"
+        "xdm:keywordID": {
+          "title": "keyword id",
+          "type": "string",
+          "description": "Id of the keyword that surfer used to search that triggered the click event"
         },
-        "xdm:audienceID":{
-          "title":"audience id",
-          "type":"string",
-          "description":"Audience id"
+        "xdm:keyword": {
+          "title": "keyword ",
+          "type": "string",
+          "description": "Keyword that surfer used to search that triggered the click event"
         },
-        "xdm:adgroupID":{
-          "title":"adgroup id",
-          "type":"string",
-          "description":"adgroup id"
+        "xdm:audienceID": {
+          "title": "audience id",
+          "type": "string",
+          "description": "Audience id"
         },
-        "xdm:campaignID":{
-          "title":"campaign id",
-          "type":"string",
-          "description":"campaign id"
+        "xdm:adgroupID": {
+          "title": "adgroup id",
+          "type": "string",
+          "description": "adgroup id"
         },
-        "xdm:network":{
-          "title":"network",
-          "type":"string",
-          "description":"network information",
-          "enum":[
-            "g",
-            "d"
-          ],
-          "meta:enum":{
-            "g":"Search",
-            "d":"Content"
+        "xdm:campaignID": {
+          "title": "campaign id",
+          "type": "string",
+          "description": "campaign id"
+        },
+        "xdm:network": {
+          "title": "network",
+          "type": "string",
+          "description": "network information",
+          "enum": ["g", "d"],
+          "meta:enum": {
+            "g": "Search",
+            "d": "Content"
           }
         },
-        "xdm:matchType":{
-          "title":"matchType",
-          "type":"string",
-          "description":"To check the kind of match type done in keyword match",
-          "enum":[
-            "e",
-            "b",
-            "p"
-          ],
-          "meta:enum":{
-            "e":"Exact",
-            "b":"Broad",
-            "p":"Phrase"
+        "xdm:matchType": {
+          "title": "matchType",
+          "type": "string",
+          "description": "To check the kind of match type done in keyword match",
+          "enum": ["e", "b", "p"],
+          "meta:enum": {
+            "e": "Exact",
+            "b": "Broad",
+            "p": "Phrase"
           }
         }
       }

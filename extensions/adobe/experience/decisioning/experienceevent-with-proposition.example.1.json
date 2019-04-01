@@ -77,28 +77,5 @@
   },
   "https://ns.adobe.com/experience/campaign/containerID": "customer-stage",
   "https://ns.adobe.com/experience/campaign/eventSource": "pipelined-mta",
-
-  "https://ns.adobe.com/experience/decisioning/propositionId": "3cc33a7e-13ca-4b19-b25d-c816eff9a70a",
-  "https://ns.adobe.com/experience/decisioning/propositionDetails": [
-    {
-      "xdm:activity": {
-        "xdm:id": "xcore:offer-activity:ebc48132c26ccfc",
-        "xdm:name": "Video Tutorial"
-      },
-      "xdm:selections": [
-        {
-          "xdm:id": "xcore:personalized-offer:e91ee850a0bb7d9"
-        }
-      ]
-    },
-    {
-      "xdm:activity": {
-        "xdm:id": "xcore:offer-activity:f203512e02542b5",
-        "xdm:name": "Conferences"
-      },
-      "xdm:fallback": {
-        "xdm:id": "xcore:fallback-offer:e91ce7243fd8c2a"
-      }
-    }
-  ]
+  "https://ns.adobe.com/experience/decisioning/propositionId": "3cc33a7e-13ca-4b19-b25d-c816eff9a70a"
 }

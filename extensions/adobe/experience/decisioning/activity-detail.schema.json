@@ -53,6 +53,9 @@
     },
     {
       "$ref": "#/definitions/activity-detail-datatype"
+    },
+    {
+      "required": ["xdm:id"]
     }
   ],
   "meta:status": "experimental"

@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "description":
-    "Used to indicate the behaviour of Adhoc data semantic when composed into data Schemas. The Adhoc data semantic scope is limited to just the local schema, and no compatibility can be assumed between schemas.",
+    "Used to indicate the behavior of the Adhoc data semantic when composed into data Schemas. The Adhoc semantic scope is limited to just the local schema, and no compatibility can be assumed between schemas.",
   "definitions": {
     "adhoc": {
       "properties": {}

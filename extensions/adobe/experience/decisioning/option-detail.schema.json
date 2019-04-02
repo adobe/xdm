@@ -23,20 +23,17 @@
         },
         "xdm:name": {
           "type": "string",
-          "title": "Name",
+          "title": "Option Name",
           "description": "Option name. The name is displayed in various user interfaces."
         },
-        "xdm:customMetadata": {
-          "title": "Option Custom Metadata",
-          "description": "Additional properties kept with an Option. The data can be used do compose options into experiences for delivery to a profile. It is also used to analyze optimize the performance of an Option.",
+        "xdm:characteristics": {
+          "title": "Option Characteristics",
+          "description": "Additional properties or attributed belonging to this particular Option. Different instances can have different characteristics. When every instance has a certain attribute or property it should be modeled as an extension to the schema that derives from Option Detail. The characteristics are name value pairs used to distingusih an option from others. Characteristics are used as features to analyze and optimize the performance of an Option.",
           "type": "object",
           "meta:xdmType": "map",
           "additionalProperties": {
-            "type": "array",
-            "items": {
-              "type": "string",
-              "description": "Value of the metadata property."
-            }
+            "type": "string",
+            "description": "Value of the property."
           }
         },
         "https://ns.adobe.com/experience/decisioning/propositionsTotal": {
@@ -56,6 +53,9 @@
     },
     {
       "$ref": "#/definitions/option-detail-datatype"
+    },
+    {
+      "required": ["xdm:id"]
     }
   ],
   "meta:status": "experimental"

@@ -32,12 +32,6 @@ A directory in Adobe Cloud Platform.
       "templated": true
     }
   },
-  "_page": {
-    "orderBy": "id",
-    "start": "123",
-    "next": "789",
-    "count": 100
-  },
   "repo:createDate": "2017-09-26T15:52:25+00:00",
   "repo:modifyDate": "2017-09-26T15:52:25+00:00",
   "repo:path": "/",
@@ -59,6 +53,12 @@ A directory in Adobe Cloud Platform.
       "href": "https://api2.example.com/v7/resolve{?asset_id}",
       "templated": true
     }
+  },
+  "_page": {
+    "orderBy": "id",
+    "start": "123",
+    "next": "789",
+    "count": 100
   },
   "repo:createDate": "2017-09-26T15:52:25+00:00",
   "repo:modifyDate": "2017-09-26T15:52:25+00:00",

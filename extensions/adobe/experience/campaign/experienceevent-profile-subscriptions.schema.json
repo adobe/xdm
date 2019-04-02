@@ -28,8 +28,7 @@
                 "xdm:subscriptions": {
                   "title": "Subscriptions",
                   "type": "array",
-                  "description":
-                    "Subscriptions that this profile is entitled to including terminated, expired or exhausted subscriptions.",
+                  "description": "Subscriptions that this profile is entitled to including terminated, expired or exhausted subscriptions.",
                   "items": {
                     "$ref": "https://ns.adobe.com/xdm/context/subscription"
                   }

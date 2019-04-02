@@ -28,8 +28,7 @@
                 "xdm:testProfile": {
                   "title": "Test Profile",
                   "type": "boolean",
-                  "description":
-                    "Indicates the `profile` record is for use in testing/verification purposes and should not be automatically included in normal operation(s).",
+                  "description": "Indicates the `profile` record is for use in testing/verification purposes and should not be automatically included in normal operation(s).",
                   "default": false
                 }
               }

@@ -7,9 +7,9 @@
   ],
   "$id": "https://ns.adobe.com/experience/decisioning/decisionevent-all",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Decision Event Decisioning Extension",
+  "title": "DecisionEvent Details for Reporting",
   "type": "object",
-  "description": "Decisioning extension for Decision Event.",
+  "description": "Extension for DecisionEvent that adds dimensions for rollup by organization, container and/or batch.",
   "meta:abstract": true,
   "meta:extensible": true,
   "meta:intendedToExtend": [

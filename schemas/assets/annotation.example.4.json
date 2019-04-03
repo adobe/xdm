@@ -1,0 +1,66 @@
+{
+  "repo:id": "urn:aaid:cs:5d11c169-4870-4bb4-9dfa-bcf9655b6dc1",
+  "repo:createDate": "2017-09-26T15:52:25+00:00",
+  "repo:modifyDate": "2017-09-26T15:52:25+00:00",
+  "repo:version": "1",
+  "repo:size": 1024,
+  "repo:path": "/users/joe/Project 1/logo.png:annotation/5d11c169-4870-4bb4-9dfa-bcf9655b6dc1",
+  "repo:name": "5d11c169-4870-4bb4-9dfa-bcf9655b6dc1",
+  "repo:etag": "\"9758bd1a0eb067d716e26f6405dc24c5\"",
+  "dc:format": "application/vnd.adobe.annotation+json",
+  "adbcollab:target": {
+    "adbcollab:source":"https://platform-cs.adobe.io/file/repoid123/id/urn:aaid:cs:6c21c178-4870-4bb4-9dfa-bcf9655b5eb2",
+    "adbcollab:selector": {
+      "adbcollab:type":"highlight",
+      "adbcollab:primarySelector": [{
+        "adbcollab:type" : "NodeSelector",
+        "xdm:index":0,
+        "adbcollab:boundingBox":[
+          36.1028,
+          973.0618,
+          213.1227,
+          991.1132
+        ],
+        "adbcollab:quadPoints":[
+          36.1028,
+          991.1132,
+          213.1227,
+          991.1132,
+          36.1028,
+          973.0618,
+          213.1227,
+          973.0618
+        ]
+      }],
+      "adbcollab:refinedBy": {
+        "adbcollab:type" : "PositionSelector",
+        "adbcollab:startOffset":20,
+        "adbcollab:endOffset": 50,
+        "adbcollab:startStructElem":"3b21c178-4870-4bb4-9dfa-dea9655b5ec5"
+      }
+    },
+    "adbcollab:annotationStyle": {
+      "adbcollab:strokeColor": "#FCCB00",
+      "adbcollab:strokeWidth": 3,
+      "adbcollab:opacity": 0.4
+    }
+  },
+  "xdm:status": "open",
+  "adbcollab:motivation": "commenting",
+  "adbcollab:body" : {
+      "dc:format": "text/plain",
+      "value": "plain text comment content",
+      "adbcollab:read": true
+  },
+  "adbcollab:creator": {
+    "xdm:provider": {
+      "@id": "https://ims-na1.adobelogin.com/"
+    },
+    "id": "C0B648DE57D701277F000101@AdobeID",
+    "@type": "https://ns.adobe.com/adobecloudplatform/ims/user",
+    "xdm:name":"Neeraj bagga",
+    "adbprincipal:profileImage": "https://na1r-stg1.services.adobe.com/account/UserImage/?g=1416008B47D90B9D9920FAAF"
+  },
+  "dc:title": "Annotation",
+  "type":"object"
+}

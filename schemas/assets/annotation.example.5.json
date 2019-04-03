@@ -1,0 +1,46 @@
+{
+  "repo:id": "urn:aaid:cs:5d11c169-4870-4bb4-9dfa-bcf9655b6dc1",
+  "repo:createDate": "2017-09-26T15:52:25+00:00",
+  "repo:modifyDate": "2017-09-26T15:52:25+00:00",
+  "repo:version": "1",
+  "repo:size": 1024,
+  "repo:path": "/users/joe/Project 1/logo.png:annotation/5d11c169-4870-4bb4-9dfa-bcf9655b6dc1",
+  "repo:name": "5d11c169-4870-4bb4-9dfa-bcf9655b6dc1",
+  "repo:etag": "\"9758bd1a0eb067d716e26f6405dc24c5\"",
+  "dc:format": "application/vnd.adobe.annotation+json",
+  "adbcollab:target": {
+    "adbcollab:source":"https://platform-cs.adobe.io/file/repoid123/id/urn:aaid:cs:6c21c178-4870-4bb4-9dfa-bcf9655b5eb2",
+    "adbcollab:selector": {
+      "adbcollab:type":"shape",
+      "adbcollab:primarySelector": [{
+        "adbcollab:type" : "NodeSelector",
+        "xdm:index":0,
+        "adbcollab:boundingBox": [312.6965, 914.2493, 372.0913, 991.6955],
+        "adbcollab:inkList": [[316.19, 988.20, 316.19, 987.61, 316.19, 985.87, 317.93, 983.54, 319.10, 981.79, 321.43, 979.46, 323.76, 977.72, 326.08, 974.22, 329.58, 971.31, 331.91, 967.82, 337.73, 960.25, 343.55, 954.42, 345.30, 951.51, 349.96, 946.27, 354.03, 941.03, 356.95, 936.95, 359.86, 932.88, 361.60, 929.97, 362.77, 928.80, 363.93, 926.47, 365.10, 924.73, 365.68, 922.98, 366.85, 921.81, 367.43, 920.65, 367.43, 920.07, 368.01, 919.49, 368.01, 918.90, 368.59, 918.90, 368.59, 918.32, 368.59, 918.32, 368.59, 917.74, 368.59, 917.74, 368.59, 917.74]]
+      }]
+    },
+    "adbcollab:annotationStyle": {
+      "adbcollab:strokeColor": "#FCCB00",
+      "adbcollab:strokeWidth": 3,
+      "adbcollab:opacity": 0.4
+    }
+  },
+  "xdm:status": "open",
+  "adbcollab:motivation": "commenting",
+  "adbcollab:body" : {
+      "dc:format": "text/plain",
+      "value": "plain text comment content",
+      "adbcollab:read": true
+  },
+  "adbcollab:creator": {
+    "xdm:provider": {
+      "@id": "https://ims-na1.adobelogin.com/"
+    },
+    "id": "C0B648DE57D701277F000101@AdobeID",
+    "@type": "https://ns.adobe.com/adobecloudplatform/ims/user",
+    "xdm:name":"Neeraj bagga",
+    "adbprincipal:profileImage": "https://na1r-stg1.services.adobe.com/account/UserImage/?g=1416008B47D90B9D9920FAAF"
+  },
+  "dc:title": "Annotation",
+  "type":"object"
+}

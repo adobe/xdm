@@ -22,7 +22,7 @@
           "description": "The set of tags associated with this offer. The tags are used in offer filter expressions to constrain the overal offer inventory to a topical sub set (category).",
           "items": {
             "type": "string",
-            "format": "uri",
+            "format": "uri-reference",
             "description": "An identifier of a Tag object. The value is the @id of the Tag that is referenced. See Tag schema https://ns.adobe.com/experience/offer-management/tag"
           }
         }

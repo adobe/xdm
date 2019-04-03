@@ -296,7 +296,7 @@
         },
         "adbcollab:opacity": {
           "title": "Opacity",
-          "description": "Opacity of the annotation",
+          "description": "Fill and stroke opacity of the annotation",
           "type": "number",
           "minimum": 0,
           "maximum": 1,

@@ -1,0 +1,360 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/assets/annotation",
+  "title": "Annotation",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:extends": [
+    "http://ns.adobe.com/adobecloud/core/1.0#/definitions/common-properties",
+    "http://ns.adobe.com/adobecloud/core/1.0#/definitions/date-properties",
+    "https://ns.adobe.com/xdm/external/hal/resource#/definitions/hal",
+    "http://ns.adobe.com/adobecloud/core/1.0/asset"
+  ],
+  "description": "Annotation class for a contextual or global annotation asset added by a user over a target resource.\nAnnotation data model is based on W3C Web annotations data model (https://www.w3.org/TR/annotation-model/).",
+  "definitions": {
+    "annotation": {
+      "properties": {
+        "xdm:status": {
+            "title": "Status",
+            "type": "string",
+            "meta:enum": [
+                "open",
+                "resolved"
+            ],
+            "default": "open",
+            "description": "Status of this annotation, can be open or resolved."
+        },
+        "adbcollab:motivation": {
+            "title": "Motivation",
+            "type": "string",
+            "meta:usereditable": false,
+            "meta:enum": [
+              "commenting",
+              "replying"
+            ],
+            "default": "commenting",
+            "description": "Motivation for adding this annotation on target resource."
+        },
+        "adbcollab:generator": {
+          "title": "Generator",
+          "type": "string",
+          "meta:usereditable": false,
+          "default": "https://platform-cs.adobe.io/annots",
+          "description": "The service that created the annotation"
+        },
+        "adbcollab:creator": {
+          "title": "Creator",
+          "required" : ["id", "type", "xdm:name"],
+          "$ref": "https://ns.adobe.com/xdm/common/principalprofile",
+          "description": "Details of person who created this annotation."
+        },
+        "adbcollab:body" : {
+          "title": "Annotation Body",
+          "description": "Body of the annotation that contains the content of the annotation",
+          "$ref": "#/definitions/annotationBody"
+        },
+        "adbcollab:target": {
+          "title": "Target",
+          "description": "Target defines the object on which this annotation has been made. In case of global annotations, it can be associated with complete asset. In case of contextual annotation, annotation is made against a specific position/node on the target asset. In case of a reply annotation (motivation is 'replying'), the target of the annotation is parent annotation.",
+          "$ref": "#/definitions/annotationTarget"
+        }
+      }
+    },
+    "annotationBody" : {
+      "type": "object",
+      "title": "Annotation Body",
+      "description": "Body of the annotation that contains the content of the annotation",
+      "required": [ "dc:format" ],
+      "properties": {
+        "value" : {
+          "type": "string",
+          "maxLength": 5000,
+          "title": "Body value",
+          "description": "If the body is textual, then this field should be provided. Since the annotations are typically supposed to be fetched as a collection, it makes sense to have a maxLength for them. If an annotation may have a large text body, then the text body should be stored separately as a blob and referenced via its id. Once an image or video as a comment would need to be supported, 'id' and 'accessible' property from W3C web annotations data model would be added. Due to this, value property is not marked required."
+        },
+        "dc:format" : {
+          "type": "string",
+          "title": "Format",
+          "description": "media type. Currently, only text/plain is supported. In future, other types like text/markdown may be supported. Due to which, this field is not const",
+          "meta:enum": ["text/plain"]
+        },
+        "adbcollab:read": {
+          "type": "boolean",
+          "title": "Read",
+          "description": "This field represents if the current annotation been read by current user. It's default is false if the current user is not same as the annotation creator. It's default is true if the current user is same as annotation creator. This field is only present in payload if it is different than the default."
+        }
+      }
+    },    
+    "numberArray": {
+      "title": "Number array",
+      "description": "Array of points",
+      "type": "array",
+      "minItems": 2,
+      "items" : {
+        "type": "number"
+      }
+    },
+    "quadilateralPoints": {
+      "title": "Quadilateral points",
+      "description": "Quadilateral points may be provided for highlights, strikethrough, underline, insert or replace annotations where the text location in the asset is fixed and need not be recomputed at rendering time. The quadPoints make a lot of sense for PDF documents, since they have fixed layout unless a PDF document is being read on a mobile form factor in dynamic layout. quadPoints must be a multiple of 8. Each successive pair of numbers represent an x,y location for a 'point' in a quadilateral. After successive 8 numbers, the next quadilateral starts. For Adobe creative assets, the origin of the coordinate space is the top left corner of the artboard, and the values of noteX and noteY are expressed in pixels. For other types of documents, the origin and units may be defined differently.",
+      "type": "array",
+      "minItems": 8,
+      "items": {
+        "type": "number",
+        "description": "pixel location of the bounding box"
+      },
+      "examples": [[18.47, 430.65, 539.37, 430.65, 18.47, 418.4, 539.37, 418.4, 18.48, 418.69, 62.71, 418.69, 18.48, 406.45, 62.71, 406.45]]
+    },
+    "adobeNodeSelector": {
+      "type": "array",
+      "title": "Node selector",
+      "description": "If the annotation points to a single node in the target asset, or spans across multiple nodes over the target resource/asset, then this field is used.",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "description": "Single node that points to a specific location in annotation",
+        "oneOf": [
+          {
+            "properties": {
+              "xdm:index": {
+                "title": "Index",
+                "type": "integer",
+                "description": "When present, indicates the item at this array index should be selected. For PDF documents, the node object contains a single property named index, and the value of the index property is the zero-based index of a page in the PDF",
+                "minimum": 0
+              }
+            },
+            "required": ["adbcollab:type", "xdm:index"]
+          },
+          {
+            "properties": {
+              "xdm:id": {
+                "title": "ID",
+                "type": "string",
+                "description": "When present, indicates the item with this id value should be selected. For Adobe XD documents, the node object contains a single property named id, and the value of the id property is the id of the target artboard."
+              }
+            },
+            "required": ["adbcollab:type", "xdm:id"]
+          }
+        ],
+        "properties": {
+          "adbcollab:type" : {
+            "type": "string",
+            "const": "NodeSelector"
+          },
+          "adbcollab:quadPoints": {
+            "title": "Quadilateral points",
+            "description": "Quadilateral points may be provided for highlights, strikethrough, underline, insert or replace annotations.",
+            "$ref" : "#/definitions/quadilateralPoints"
+          },
+          "adbcollab:boundingBox": {
+            "title": "Bounding box",
+            "description": "Bounding box of the location in the 'node' (target.selector.node) of the asset (target.source) where annotation on the target resource is made. For Adobe creative assets, the origin of the coordinate space is the top left corner of the artboard, and the values of noteX and noteY are expressed in pixels. For other types of documents, the origin and units may be defined differently. ",
+            "type": "array",
+            "minItems": 4,
+            "maxItems": 4,
+            "items": {
+              "type": "number",
+              "description": "top, left, bottom, right pixel locations of the bounding box"
+            }
+          },
+          "adbcollab:noteX": {
+            "title": "X point of the location where annotation on the target resource is made",
+            "description": "For Adobe creative assets, the origin of the coordinate space is the top left corner of the artboard, and the values of noteX and noteY are expressed in pixels. For other types of documents, the origin and units may be defined differently. The caller may optionally supply values for noteX and noteY if target.selector.subtype is equal to node.  For other subtypes, noteX and noteY must be specified.",
+            "type": "number"
+          },
+          "adbcollab:noteY": {
+            "title": "X point of the location where annotation on the target resource is made",
+            "description": "For Adobe creative assets, the origin of the coordinate space is the top left corner of the artboard, and the values of noteX and noteY are expressed in pixels. For other types of documents, the origin and units may be defined differently. The caller may optionally supply values for noteX and noteY if target.selector.subtype is equal to node.  For other subtypes, noteX and noteY must be specified.",
+            "type": "number"
+          },
+          "adbcollab:inkList": {
+            "title": "Ink list",
+            "description": "Ink list is useful must be provided for 'shape' subtype of annotation. It is an array of a number arrary.",
+            "type": "array",
+            "items" : {
+              "$ref" : "#/definitions/numberArray"
+            },
+            "examples": [[[466.14, 495, 466.14, 492.44, 466.14, 489.88, 480.42, 504.38, 482.97, 506.09, 484.5, 507.80, 485.01, 508.65, 485.52, 508.65]]]
+          }
+        }
+      }
+    },
+    "adobePositionSelector": {
+      "title": "Position Selector",
+      "description": "This selector helps in selecting a text position range or percentage offset in an image",
+      "oneOf": [
+        {
+          "properties": {
+            "adbcollab:leftOffset": {
+              "title": "Left offset",
+              "description": "Offset in percentage of width of startStructElem element from its left edge. Required for sticky annotation on an image.",
+              "type": "number"
+            },
+            "adbcollab:topOffset": {
+              "title": "Top Offset",
+              "description": "Offset in percentage of height of startStructElem element from its top edge. Required for sticky annotation on an image. ",
+              "type": "number"
+            }
+          },
+          "required": ["adbcollab:type", "adbcollab:startStructElem", "adbcollab:leftOffset", "adbcollab:topOffset"]
+        },
+        {
+          "properties": {
+            "adbcollab:startOffset": {
+              "title": "Unicode character offset from the startStructElem. This property helps in placing annotations over textual content.",
+              "description": "",
+              "type": "integer"
+            },
+            "adbcollab:endOffset": {
+              "title": "Unicode character offset from the endStructElem. This property helps in placing annotations over textual content.",
+              "description": "",
+              "type": "integer"
+            }
+          },
+          "required": ["adbcollab:type", "adbcollab:startStructElem", "adbcollab:startOffset", "adbcollab:endOffset"]
+        }
+      ],
+      "properties": {
+        "adbcollab:type" : {
+          "type": "string",
+          "const": "PositionSelector"
+        },
+        "adbcollab:startStructElem": {
+          "title": "Start structure element",
+          "description": "This field points to the anchor element in the document object model of the asset from which start offset of the text annotation is calculated. This points to the id of the opaque object (could be a guid) in the underlying resource (like an artboard in case of Adobe XD's artifact). In case of a PDF, this field represents a cos object traditionally indirectly referenced as (x y R) in PDF. The value for startStructElem is x. Field 'y' is generation parameter (which is always 0 in PDF 2.0) and 'R' is reference.",
+          "type": "string"
+        },
+        "adbcollab:endStructElem": {
+          "title": "End structure element",
+          "description": "The end offset is computed from the location of this field if it is present. Otherwise, the end offset is computed from adbcollab:startStructElem. The default is that adbcollab:endStructElem is same as adbcollab:startStructElem",
+          "type": "string"
+        }
+      }
+    },
+    "annotationSelectorChooser": {
+      "title": "Selection chooser",
+      "description": "An annotation target may be selected by any choice of selector implementation",
+      "oneOf": [
+        {
+          "$ref": "#/definitions/adobeNodeSelector"
+        },
+        {
+          "$ref": "#/definitions/adobePositionSelector"
+        }        
+      ]
+    },
+    "annotationSelector": {
+      "title": "Annotation Selector",
+      "description": "An annotation may refer to segment of a target resource, rather than all of it. A selector is used to describe that segment in the target resource.",
+      "type": "object",
+      "required": [ "adbcollab:type" ],
+      "properties": {
+        "adbcollab:type": {
+          "title": "Annotation Type",
+          "description": "node subtype identifies a global annotation that is made on an entire artboard, or page of a document. Such a node annotation does not need noteX, noteY properties described below.\nnote subtype is similar to a sticky note in PDF - it is a contextual annotation made at (x, y) location on an artboard or page of a document.\nstrikethrough | highlight | underline | insert subtype correspond to namesake annotation usually made against text in PDF.\nshape annotation is a free form vector drawing annotation.",
+          "type": "string",
+          "meta:enum": ["node", "note", "strikethrough", "highlight", "underline", "insert", "shape"]
+        },
+        "adbcollab:primarySelector": {
+          "title": "Primary Selector",
+          "description": "annotationSelector does not extend annotationSelectorChooser but composes via primarySelector. This helps if the actual selection requires a collection of selections, possible in adobeNodeSelector.",
+          "$ref" : "#/definitions/annotationSelectorChooser"
+        },
+        "adbcollab:refinedBy": {
+          "title": "Refined By",
+          "description": "An annotation may be defined for multiple representations or a specific context of the asset. Example 1: In case of PDF, an annotation may be present at a specific location in a page, or across two pages. A PDF could be rendered/reflowed by relayouting on a smaller form factor (mobile) device. To enable this feature, annotation may need to be represented via text positions and an anchor element/id. Example 2: In case of Adobe XD, an annotation may be present on an overlay artboard when it is superimposed on top of a base artboard. So, the annotation may need both adbcollab:primarySelector and adbcollab:refinedBy to represent it. adbcollab:refinedBy is only present if adbcollab:primarySelector is present.",
+          "$ref" : "#/definitions/annotationSelectorChooser"
+        }
+      }
+    },
+    "annotationStyle": {
+      "title": "Annotation Selector",
+      "description": "An annotation may refer to segment of a target resource, rather than all of it. A selector is used to describe that segment in the target resource.",
+      "type": "object",
+      "properties": {
+        "type" : {
+          "type": "string",
+          "const": "AdobeAnnotationStyle"
+        },
+        "adbcollab:strokeColor": {
+          "title": "Stroke color",
+          "description": "The CSS color for stroke drawing current annotation object",
+          "type": "string",
+          "examples": ["#ffd300"]
+        },
+        "adbcollab:strokeWidth": {
+          "title": "Stroke width",
+          "description": "stroke width for drawing the annotation",
+          "type": "number",
+          "default": 1
+        },
+        "adbcollab:opacity": {
+          "title": "Opacity",
+          "description": "Opacity of the annotation",
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "default": 1
+        }
+      }
+    },
+    "annotationTarget": {
+      "title": "Target",
+      "type": "object",
+      "description": "Target defines the object on which this annotation has been made. In case of global annotations, it can be associated with complete asset. In case of contextual annotation, annotation is made against a specific position/node on the target asset. In case of a reply annotation (motivation is 'replying'), the target of the annotation is parent annotation.",
+      "required": [ "adbcollab:source", "adbcollab:selector" ],
+      "properties": {
+        "adbcollab:source": {
+          "type": "string",
+          "meta:immutable": true,
+          "format": "uri",
+          "title": "Source",
+          "description": "If motivation is 'commenting', then the value of 'target' is <target-asset>\nIf motivation is 'replying', then the value of 'target' is <parent-annotation-uri>",
+          "examples": [
+              "https://platform-cs.adobe.io/file/repoid123/id/urn:aaid:cs:6c21c178-4870-4bb4-9dfa-bcf9655b5eb2"
+          ]
+        },
+        "adbcollab:selector": {
+          "title": "Annotation Selector",
+          "description": "An annotation may refer to segment of a target resource, rather than all of it. A selector is used to describe that segment in the target resource.",
+          "$ref": "#/definitions/annotationSelector"
+        },
+        "adbcollab:annotationStyle": {
+          "title": "Annotation Style",
+          "description": "This field describes the styles used to render the annotation",
+          "$ref": "#/definitions/annotationStyle"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "http://ns.adobe.com/adobecloud/core/1.0/asset#/definitions/asset"
+    },
+    {
+      "$ref": "#/definitions/annotation"
+    }
+  ],
+  "required": [
+    "repo:name",
+    "repo:path",
+    "dc:format",
+    "repo:createDate",
+    "repo:modifyDate",
+    "repo:id",
+    "repo:etag",
+    "repo:version",
+    "repo:size",
+    "adbcollab:body",
+    "adbcollab:target",
+    "adbcollab:creator"
+  ],
+  "xdm:version": "1",
+  "meta:status": "experimental"
+}

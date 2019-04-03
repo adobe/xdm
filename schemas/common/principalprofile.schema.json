@@ -1,0 +1,66 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/common/principalprofile",
+  "title": "Principal with profile",
+  "type": "object",
+  "description": "Principal person with her profile details. It is useful for collaborative workflows where stakeholders may wish to see each other's name, (potentially) a profile avatar/picture and/or a public profile link",
+  "meta:extensible": true,
+  "definitions": {
+    "principalprofile": {
+      "properties": {
+        "xdm:provider": {
+          "description": "The identity provider that manages this principal.",
+          "$ref": "https://ns.adobe.com/xdm/common/identity-provider"
+        },
+        "id": {
+          "type": "string",
+          "description": "Principal id identifies a user account"
+        },
+        "type": {
+          "type": "string",
+          "format": "uri",
+          "description":
+            "The type of the principal. Acts as a processing hint to the client. Ideally, each value should be identified as a [URI](https://tools.ietf.org/html/rfc3986)."
+        },        
+        "xdm:name": {
+          "title": "Name",
+          "type": "string",
+          "description": "Display name"
+        },
+        "adbprincipal:profileImage": {
+          "title": "Image",
+          "format": "uri",
+          "type": "string",
+          "description": "Profile avatar/picture of the person"
+        },
+        "adbprincipal:profileLink": {
+          "title": "Image",
+          "format": "uri",
+          "type": "string",
+          "description": "Link to the public profile of the person. An example of the same is Adobe Behance public profile."
+        },
+        "adbprincipal:anonymous": {
+          "title": "Guest or anonymous user",
+          "type": "boolean",
+          "meta:usereditable": false,
+          "default": false,
+          "description": "A user could add a annotation, live-edit or collaborate over a publically shared asset/link by providing her pseudonym (display name) and potentially solving a captcha. She need not have a permanent identity in an identity provider. In such a case, annot:anonymous would be true."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/principalprofile"
+    }
+  ],
+  "required" : ["id", "type", "xdm:name"],
+  "xdm:version": "1",
+  "meta:status": "experimental"
+}

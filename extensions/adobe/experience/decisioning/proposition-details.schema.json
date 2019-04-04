@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/experience/decisioning/proposition-details",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Decision Proposition",
+  "title": "DecisionEvent List of Propositions",
   "type": "object",
   "meta:abstract": true,
   "meta:extensible": true,

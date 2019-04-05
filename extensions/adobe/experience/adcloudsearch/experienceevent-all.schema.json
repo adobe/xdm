@@ -6,40 +6,45 @@
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "https://ns.adobe.com/experience/adcloud/adCloudSearchComponent",
-  "title": "adCloudSearchComponent",
+  "$id": "https://ns.adobe.com/experience/adcloudsearch/experienceevent-all",
+  "title": "Adobe AdCloud Search ExperienceEvent Full Extension",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "adCloudSearchComponent mixin to be used in ad cloud search schema",
+  "meta:intendedToExtend": [ "https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "Adobe AdCloud Search ExperienceEvent Full Extension",
   "definitions": {
-    "adCloudSearchComponent": {
+    "experienceevent-all": {
       "properties": {
-        "_adcloudattributiontesting": {
-          "type": "object",
-          "properties": {
-            "advertisement": {
-              "$ref": "https://ns.adobe.com/adcloudattributiontesting/datatypes/f1add2cb4f1d2f78fa05964019eb3c62"
-            },
-            "geo": {
-              "$ref": "https://ns.adobe.com/adcloudattributiontesting/datatypes/2ae2707f863ece0eaf974e6631bacb7b"
-            },
-            "adDeliveryDetails": {
-              "$ref": "https://ns.adobe.com/adcloudattributiontesting/datatypes/dfc278cf3b37c1e37a5aa2ae5bd0c14b"
-            },
-            "product": {
-              "$ref": "https://ns.adobe.com/adcloudattributiontesting/datatypes/d6119a6f364f281515d2385e3240335d"
-            }
-          }
+        "https://ns.adobe.com/experience/adcloudsearch/advertisement": {
+          "title": "Advertisement",
+          "type": "string",
+          "description": "Adobe AdCloud Search Advertisement"
+        },
+        "https://ns.adobe.com/experience/adcloudsearch/geo": {
+          "title": "Geo",
+          "type": "string",
+          "description": "Adobe AdCloud Search Geo Information"
+        },
+        "https://ns.adobe.com/experience/adcloudsearch/adDeliveryDetails": {
+          "title": "AdDeliveryDetails",
+          "type": "string",
+          "description": "Adobe AdCloud Search AdDelivery Details "
+        },
+        "https://ns.adobe.com/experience/adcloudsearch/product": {
+          "title": "Product",
+          "type": "string",
+          "description": "Adobe AdCloud Search Product Information "
         }
-      },
-      "type": "object"
+      }
     }
   },
   "allOf": [
     {
-      "$ref": "#/definitions/adCloudSearchComponent"
+      "$ref": "https://ns.adobe.com/xdm/context/experienceevent#/definitions/experienceevent"
+    },
+    {
+      "$ref": "#/definitions/experienceevent-all"
     }
   ],
   "meta:status": "experimental"

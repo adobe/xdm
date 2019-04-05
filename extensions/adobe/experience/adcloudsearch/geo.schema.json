@@ -7,9 +7,9 @@
   ],
   "$id": "https://ns.adobe.com/experience/adcloud/geo",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "geo",
+  "title": "Geo ",
   "type": "object",
-  "description": "Adcloud search geo inforamtion placeholder ",
+  "description": "Adcloud Search Geo Information  ",
   "definitions": {
     "geo": {
       "properties": {

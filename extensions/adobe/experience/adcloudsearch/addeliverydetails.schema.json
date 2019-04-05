@@ -7,9 +7,9 @@
   ],
   "$id": "https://ns.adobe.com/experience/adcloud/adDeliveryDetails",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "ad Delivery Details",
+  "title": "Ad Delivery Details",
   "type": "object",
-  "description": "Adcloud search ad Delivery Details  ",
+  "description": "Adcloud Search Ad Delivery Details  ",
   "definitions": {
     "adDeliveryDetails": {
       "properties": {

@@ -7,9 +7,9 @@
   ],
   "$id": "https://ns.adobe.com/experience/adcloud/advertisement",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Advertisement details for adcloudsearch",
+  "title": "Advertisement Details For Adcloud Search",
   "type": "object",
-  "description": "Adcloud search advertisement inforamtion ",
+  "description": "Adcloud Search Advertisement Information ",
   "definitions": {
     "advertisement": {
       "properties": {
@@ -28,7 +28,7 @@
           "type": "string",
           "description": "Audience id"
         },
-        "xdm:adgroupID": {
+        "xdm:adGroupID": {
           "title": "adgroup id",
           "type": "string",
           "description": "adgroup id"

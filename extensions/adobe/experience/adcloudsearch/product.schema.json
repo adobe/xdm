@@ -7,9 +7,9 @@
   ],
   "$id": "https://ns.adobe.com/experience/adcloud/product",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "product",
+  "title": "Product",
   "type": "object",
-  "description": "Adcloud search product inforamtion ",
+  "description": "Adcloud Search Product Information ",
   "definitions": {
     "product": {
       "properties": {
@@ -28,8 +28,8 @@
           "type": "string",
           "description": "The language of your product information, as indicated in client's Merchant Center data feed."
         },
-        "xdm:partionID": {
-          "title": "product Partion id",
+        "xdm:partitionID": {
+          "title": "product PartitionID id",
           "type": "string",
           "description": "The unique ID for the product group the clicked product ad belongs to."
         },

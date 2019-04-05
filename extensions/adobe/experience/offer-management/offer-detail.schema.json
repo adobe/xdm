@@ -10,9 +10,9 @@
   "meta:abstract": true,
   "meta:extensible": true,
   "type": "object",
-  "title": "Offer Activity Detail",
+  "title": "Offer Detail",
   "meta:extends": ["http://ns.adobe.com/experience/decisioning/option-detail"],
-  "description": "An offer activity is used to control the decisioning process. It specifies the filter applied to the total inventory to narrow down offers by topic/category, the placement to narrow down the inventory to those offers that technically fit into the reserved space for the offer and specifies a fall back option should the combined constraints disqualify all available personalization options (offers).",
+  "description": "Offer Detail is used to capture the attributes of an Offer in a Proposition or Response. Offers are the Decision Options in the Offer Management domain and the Offer Detail datatype extends the Option Detail datatype.",
   "definitions": {
     "offer-detail": {
       "properties": {
@@ -22,7 +22,7 @@
           "description": "The set of tags associated with this offer. The tags are used in offer filter expressions to constrain the overal offer inventory to a topical sub set (category).",
           "items": {
             "type": "string",
-            "format": "uri",
+            "format": "uri-reference",
             "description": "An identifier of a Tag object. The value is the @id of the Tag that is referenced. See Tag schema https://ns.adobe.com/experience/offer-management/tag"
           }
         }

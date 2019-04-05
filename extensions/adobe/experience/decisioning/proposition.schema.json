@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/experience/decisioning/proposition",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Decision Proposition",
+  "title": "Decision Proposition Reference",
   "type": "object",
   "meta:abstract": true,
   "meta:extensible": true,
@@ -15,7 +15,7 @@
     "https://ns.adobe.com/xdm/context/experienceevent",
     "https://ns.adobe.com/experience/decisioning/decisionevent"
   ],
-  "description": "Decision Proposition is used to track and capture the outcomes of a DecisionEvent.",
+  "description": "Decision Proposition Reference is used to link to the proposition in experience events that are response to a particular proposition.",
   "definitions": {
     "proposition-mixin": {
       "properties": {

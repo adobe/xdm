@@ -12,7 +12,7 @@
   "type": "object",
   "title": "Offer Activity Detail",
   "meta:extends": [
-    "http://ns.adobe.com/experience/decisioning/activity-detail"
+    "https://ns.adobe.com/experience/decisioning/activity-detail"
   ],
   "description": "Offer Actity Detail is used to capture the attributes of an Offer Activity in a Proposition or Response.",
   "definitions": {

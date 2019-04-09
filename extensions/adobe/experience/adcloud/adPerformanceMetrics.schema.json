@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/adcloud/search-admetrics",
+  "$id": "https://ns.adobe.com/experience/adcloud/adPerformanceMetrics",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Adobe Ad Cloud Search Ad Performance Metrics",
   "type": "object",
@@ -16,17 +16,17 @@
     "https://ns.adobe.com/xdm/data/time-series"
   ],
   "definitions": {
-    "search-admetrics": {  
+    "adPerformanceMetrics": {  
       "properties": {
-        "https://ns.adobe.com/experience/adcloud/search-campaign": {
+        "https://ns.adobe.com/experience/adcloud/searchCampaign": {
           "title": "Search Campaign Hiearchy Detail",
-          "$ref": "https://ns.adobe.com/experience/adcloud/search-campaign",
+          "$ref": "https://ns.adobe.com/experience/adcloud/searchCampaign",
           "description": "Adobe AdCloud Search Campaign Hierarchy Details"
         },
-        "https://ns.adobe.com/experience/adcloud/search-costclicks": {
-          "title": "Search CostClicks Performance Metrics",
-          "$ref": "https://ns.adobe.com/experience/adcloud/search-costclicks",
-          "description": "Adobe AdCloud Search CostClicks Performance Metrics"
+        "https://ns.adobe.com/experience/adcloud/adMetrics": {
+          "title": "Search Ad Metrics",
+          "$ref": "https://ns.adobe.com/experience/adcloud/adMetrics",
+          "description": "Adobe AdCloud Search Ad Metrics"
         },
         "https://ns.adobe.com/experience/adcloud/deviceType": {
           "title": "Device Type",

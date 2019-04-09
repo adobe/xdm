@@ -48,6 +48,16 @@
           "type": "integer",
           "description": "Unique identifier for the Search Engine which this event is associated to."
         }
+        "xdm:term": {
+          "title": "Search Term",
+          "type": "string",
+          "description": "Search Term or Keyword Name."
+        }
+        "xdm:matchType": {
+          "title": "Keyword Match Type",
+          "type": "string",
+          "description": "Match Type associated to the Keyword being targeted for the Ad."
+        }
       }
     }
   },

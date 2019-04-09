@@ -1,0 +1,47 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/campaign/experienceevent-profile-test-profile",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Adobe Campaign ExperienceEvent - Profile Snapshot Test Profile",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "Adobe Campaign ExperienceEvent optional snapshot of Profile Personal Details.",
+  "definitions": {
+    "campaign-experienceevent-profile-test-profile": {
+      "properties": {
+        "https://ns.adobe.com/experience/campaign/message": {
+          "title": "A single message sent to a recipient.",
+          "type": "object",
+          "properties": {
+            "xdm:profileSnapshot": {
+              "title": "Profile Snapshot",
+              "description": "Profile Snapshot contains the recipient of the message. This property is primarily used to link the message to a Profile using the `IdentityMap` but it can also be used to freeze some properties of the profile at the time the message was sent.",
+              "type": "object",
+              "properties": {
+                "xdm:testProfile": {
+                  "title": "Test Profile",
+                  "type": "boolean",
+                  "description": "Indicates the `profile` record is for use in testing/verification purposes and should not be automatically included in normal operation(s).",
+                  "default": false
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/campaign-experienceevent-profile-test-profile"
+    }
+  ],
+  "meta:status": "experimental"
+}

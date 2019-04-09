@@ -27,11 +27,6 @@
           "title": "Search Ad Metrics",
           "$ref": "https://ns.adobe.com/experience/adcloud/adMetrics",
           "description": "Adobe AdCloud Search Ad Metrics"
-        },
-        "https://ns.adobe.com/experience/adcloud/deviceType": {
-          "title": "Device Type",
-          "type": "string",
-          "description": "Type of the device - computer, mobile, tablet, smartphone which initiated the click/impression event."
         }
       }
     }

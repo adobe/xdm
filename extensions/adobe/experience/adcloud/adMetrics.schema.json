@@ -43,6 +43,11 @@
           "type": "number",
           "description": "Quality Score of the Keyword assigned by the network - range 1 to 10."
         }
+        "xdm:device": {
+          "title": "Device",
+          "$ref": "https://ns.adobe.com/xdm/context/device",
+          "description": "The device originating the event."
+        }
       }
     }
   },

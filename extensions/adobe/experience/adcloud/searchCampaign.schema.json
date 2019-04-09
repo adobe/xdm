@@ -2,58 +2,58 @@
   "meta:license": [
     "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
     "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
-    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "you may not use this file except in compliance to the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "https://ns.adobe.com/experience/adcloud/search-campaign",
+  "$id": "https://ns.adobe.com/experience/adcloud/searchCampaign",
   "title": "Search Campaign Hiearchy Detail",
   "type": "object",
   "description": "Adobe AdCloud Search Campaign Hierarchy Details",
   "definitions": {
-    "search-campaign": {
+    "searchCampaign": {
       "properties": {
         "xdm:accountId": {
           "title": "Account ID",
           "type": "string",
-          "description": "Unique identifier for the account this event is associated with."
+          "description": "Unique identifier for the account this event is associated to."
         },
         "xdm:campaignId": {
           "title": "Campaign ID",
           "type": "string",
-          "description": "Unique identifier for the campaign which this event is associated with."
+          "description": "Unique identifier for the campaign which this event is associated to."
         },
         "xdm:adgroupId": {
           "title": "AdGroup ID",
           "type": "string",
-          "description": "Unique identifier for the adgroup which this event is associated with."
+          "description": "Unique identifier for the adgroup which this event is associated to."
         },
         "xdm:termId": {
           "title": "Search Term ID",
           "type": "string",
-          "description": "Unique identifier for the search term which this event is associated with."
+          "description": "Unique identifier for the search term which this event is associated to."
         },
         "xdm:advertiserId": {
           "title": "Advertiser ID",
           "type": "string",
-          "description": "Unique identifier for the advertiser which this event is associated with."
+          "description": "Unique identifier for the advertiser which this event is associated to."
         },
         "xdm:creativeId": {
           "title": "Ad ID",
           "type": "string",
-          "description": "Unique identifier for the creative or ad which this event is associated with."
+          "description": "Unique identifier for the creative or ad which this event is associated to."
         },
-        "xdm:sid": {
+        "xdm:networkId": {
           "title": "Search Engine ID",
           "type": "integer",
-          "description": "Unique identifier for the Search Engine which this event is associated with."
+          "description": "Unique identifier for the Search Engine which this event is associated to."
         }
       }
     }
   },
   "allOf": [
     {
-      "$ref": "#/definitions/search-campaign"
+      "$ref": "#/definitions/searchCampaign"
     }
   ]
 }

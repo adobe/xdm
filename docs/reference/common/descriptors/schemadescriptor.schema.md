@@ -22,7 +22,7 @@ A descriptor that contains metadata about an XDM schema, including an optional p
 {
   "@id": "https://example.com/descriptors/1",
   "@type": "xdm:descriptorPrimaryKey",
-  "xdm:source": "https://ns.adobe.com/xdm/context/profile",
+  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile",
   "xdm:sourceProperty": "xdm:identities",
   "xdm:sourceItem": {
     "xdm:type": "https://ns.adobe.com/experience/mcid"

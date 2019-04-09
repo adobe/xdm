@@ -1,6 +1,6 @@
 {
   "_id": "XH9zXgAAAI@XLLFn",
-  "xdm:eventType": "click",
+  "xdm:eventType": " advertising.clicks",
   "xdm:timestamp": "2018-08-07T08:06:34.672Z",
   "xdm:search": {
     "xdm:searchEngineID": "https://ns.adobe.com/searchengines/3",
@@ -8,7 +8,7 @@
     "xdm:isPaid": true
   },
   "xdm:device": {
-    "xdm:type": "c"
+    "xdm:type": "mobile"
   },
   "xdm:environment": {
     "xdm:ipV4": "76.86.127.0",
@@ -25,6 +25,11 @@
     "AdCloud": [
       {
         "id": "XA9N8wAAAMnAaj_e"
+      }
+    ],
+    "CLICKID": [
+      {
+        "id": "XJm2lgAAAEmW1LVH"
       }
     ]
   },

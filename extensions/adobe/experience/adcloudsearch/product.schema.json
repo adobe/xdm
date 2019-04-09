@@ -16,7 +16,7 @@
         "xdm:id": {
           "title": "product id",
           "type": "string",
-          "description": "The ID of the product featured in the cliked ad, as indicated in client's Mercant Center data feed"
+          "description": "Unique identifier for the product featured in the clicked advertisement"
         },
         "xdm:country": {
           "title": "product Country",

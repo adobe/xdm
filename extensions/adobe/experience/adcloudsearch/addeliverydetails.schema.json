@@ -16,17 +16,12 @@
         "xdm:adPosition": {
           "title": "ad Position",
           "type": "string",
-          "description": "Position of the ad shown"
+          "description": "Position of the advertisement shown"
         },
         "xdm:siteLinkText": {
           "title": "site link text",
           "type": "string",
           "description": "Some advertisements may have multiple links (in case of site link advertisements), this tracks which of the site link is being clicked. We use this building reports."
-        },
-        "xdm:externalClickID": {
-          "title": "external click id",
-          "type": "string",
-          "description": "unique click id to identify each click"
         }
       }
     }

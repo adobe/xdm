@@ -16,32 +16,32 @@
         "xdm:creativeID": {
           "title": "creative id",
           "type": "string",
-          "description": "creative id"
+          "description": "Unique identifier for the creative which this event is associated with."
         },
         "xdm:keywordID": {
           "title": "keyword id",
           "type": "string",
-          "description": "Id of the keyword that surfer used to search that triggered the click event"
+          "description": "Unique identifier for the keyword that surfer used to search , which triggered this click event"
         },
         "xdm:audienceID": {
           "title": "audience id",
           "type": "string",
-          "description": "Audience id"
+          "description": "Unique identifier for the audience segment for which the ad is targeted "
         },
         "xdm:adGroupID": {
           "title": "adgroup id",
           "type": "string",
-          "description": "adgroup id"
+          "description": "Unique identifier for the adGroup which ad is displayed and triggered this click event "
         },
         "xdm:campaignID": {
           "title": "campaign id",
           "type": "string",
-          "description": "campaign id"
+          "description": "Unique identifier for the campaign that belongs to the current displayed advertisement which triggers this click event "
         },
         "xdm:network": {
           "title": "network",
           "type": "string",
-          "description": "network information",
+          "description": "Current click event came from a search advertisement or content advertisement ",
           "enum": ["g", "d"],
           "meta:enum": {
             "g": "Search",
@@ -51,7 +51,7 @@
         "xdm:matchType": {
           "title": "matchType",
           "type": "string",
-          "description": "To check the kind of match type done in keyword match",
+          "description": "To check for current displayed advertisement what kind of match is done to match keyword ",
           "enum": ["e", "b", "p"],
           "meta:enum": {
             "e": "Exact",

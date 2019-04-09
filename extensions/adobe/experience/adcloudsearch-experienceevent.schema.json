@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Adobe AdCloud Search ExperienceEvent Schema",
   "type": "object",
-  "description": "adcloudsearchexperienceevent-schema",
+  "description": "AdCloud Search ExperienceEvent Schemas for click event data ingestion. Includes the core/standard ExperienceEvent as well as the required Adobe AdCloud Search ExperienceEvent Mixin.",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:extends": ["https://ns.adobe.com/xdm/context/experienceevent"],

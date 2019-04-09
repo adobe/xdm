@@ -6,40 +6,40 @@
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "https://ns.adobe.com/experience/adcloud/searchCampaign",
+  "$id": "https://ns.adobe.com/experience/adcloud/searchEntityId",
   "title": "Search Campaign Hiearchy Detail",
   "type": "object",
   "description": "Adobe AdCloud Search Campaign Hierarchy Details",
   "definitions": {
-    "searchCampaign": {
+    "searchEntityId": {
       "properties": {
-        "xdm:accountId": {
-          "title": "Account ID",
+        "xdm:seaccountId": {
+          "title": "Search Engine Account ID",
           "type": "string",
           "description": "Unique identifier for the account this event is associated to."
         },
-        "xdm:campaignId": {
-          "title": "Campaign ID",
+        "xdm:secampaignId": {
+          "title": "Search Engine Campaign ID",
           "type": "string",
           "description": "Unique identifier for the campaign which this event is associated to."
         },
-        "xdm:adgroupId": {
-          "title": "AdGroup ID",
+        "xdm:seadgroupId": {
+          "title": "Search Engine AdGroup ID",
           "type": "string",
           "description": "Unique identifier for the adgroup which this event is associated to."
         },
-        "xdm:termId": {
+        "xdm:setermId": {
           "title": "Search Term ID",
           "type": "string",
           "description": "Unique identifier for the search term which this event is associated to."
         },
-        "xdm:advertiserId": {
-          "title": "Advertiser ID",
+        "xdm:seadvertiserId": {
+          "title": "Internal Advertiser or User ID",
           "type": "string",
           "description": "Unique identifier for the advertiser which this event is associated to."
         },
-        "xdm:creativeId": {
-          "title": "Ad ID",
+        "xdm:secreativeId": {
+          "title": "Search Engine Ad ID",
           "type": "string",
           "description": "Unique identifier for the creative or ad which this event is associated to."
         },
@@ -47,12 +47,12 @@
           "title": "Search Engine ID",
           "type": "integer",
           "description": "Unique identifier for the Search Engine which this event is associated to."
-        }
+        },
         "xdm:term": {
           "title": "Search Term",
           "type": "string",
           "description": "Search Term or Keyword Name."
-        }
+        },
         "xdm:matchType": {
           "title": "Keyword Match Type",
           "type": "string",
@@ -63,7 +63,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/searchCampaign"
+      "$ref": "#/definitions/searchEntityId"
     }
   ]
 }

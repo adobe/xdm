@@ -6,12 +6,12 @@
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "https://ns.adobe.com/experience/adcloud/adMetrics",
+  "$id": "https://ns.adobe.com/experience/adcloud/searchAdMetrics",
   "title": "Search Ad Metrics",
   "type": "object",
   "description": "Adobe AdCloud Search Ad Metrics",
   "definitions": {
-    "adMetrics": {
+    "searchAdMetrics": {
       "properties": {
         "xdm:clicks": {
           "title": "Clicks",
@@ -32,17 +32,17 @@
           "title": "Ad Position",
           "type": "number",
           "description": "Position of the Ad displayed on Search Engine."
-        }
+        },
         "xdm:topPageBid": {
           "title": "Top of the Page Bid",
           "type": "number",
           "description": "Top of the Page Bid Estimator."
-        }
+        },
         "xdm:qualityScore": {
           "title": "Quality Score",
           "type": "number",
           "description": "Quality Score of the Keyword assigned by the network - range 1 to 10."
-        }
+        },
         "xdm:device": {
           "title": "Device",
           "$ref": "https://ns.adobe.com/xdm/context/device",
@@ -53,7 +53,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/adMetrics"
+      "$ref": "#/definitions/searchAdMetrics"
     }
   ]
 }

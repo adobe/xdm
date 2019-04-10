@@ -1,0 +1,40 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/experience/offer-management/offer-detail",
+  "meta:abstract": true,
+  "meta:extensible": true,
+  "type": "object",
+  "title": "Offer Detail",
+  "meta:extends": ["https://ns.adobe.com/experience/decisioning/option-detail"],
+  "description": "Offer Detail is used to capture the attributes of an Offer in a Proposition or Response. Offers are the Decision Options in the Offer Management domain and the Offer Detail datatype extends the Option Detail datatype.",
+  "definitions": {
+    "offer-detail": {
+      "properties": {
+        "xdm:tags": {
+          "type": "array",
+          "title": "Tags",
+          "description": "The set of tags associated with this offer. The tags are used in offer filter expressions to constrain the overal offer inventory to a topical sub set (category).",
+          "items": {
+            "type": "string",
+            "format": "uri-reference",
+            "description": "An identifier of a Tag object. The value is the @id of the Tag that is referenced. See Tag schema https://ns.adobe.com/experience/offer-management/tag"
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/offer-detail"
+    },
+    {
+      "$ref": "https://ns.adobe.com/experience/decisioning/option-detail"
+    }
+  ]
+}

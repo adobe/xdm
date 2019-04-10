@@ -1,23 +1,23 @@
 
-# Facebook News Feed Schema
+# Facebook News Feed Channel Schema
 
 ```
 https://ns.adobe.com/xdm/channels/facebook-feed
 ```
 
-The Facebook News Feed. This does not include Facebook Messenger, or Facebook App pages.
+The Facebook News Feed. This does not include Facebook Messenger, or Facebook App pages channel.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/facebook-feed.schema.json](channels/facebook-feed.schema.json) |
 ## Schema Hierarchy
 
-* Facebook News Feed `https://ns.adobe.com/xdm/channels/facebook-feed`
+* Facebook News Feed Channel `https://ns.adobe.com/xdm/channels/facebook-feed`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
 
-## Facebook News Feed Example
+## Facebook News Feed Channel Example
 ```json
 {
   "@id": "https://ns.adobe.com/xdm/channels/facebook-feed",
@@ -25,16 +25,16 @@ The Facebook News Feed. This does not include Facebook Messenger, or Facebook Ap
 }
 ```
 
-# Facebook News Feed Properties
+# Facebook News Feed Channel Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | Facebook News Feed (this schema) |
-| [@type](#@type) | `const` | Optional | Facebook News Feed (this schema) |
-| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | Facebook News Feed (this schema) |
-| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | Facebook News Feed (this schema) |
-| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | Facebook News Feed (this schema) |
-| [xdm:mode](#xdmmode) | `const` | Optional | Facebook News Feed (this schema) |
+| [@id](#id) | `const` | **Required** | Facebook News Feed Channel (this schema) |
+| [@type](#type) | `const` | Optional | Facebook News Feed Channel (this schema) |
+| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | Facebook News Feed Channel (this schema) |
+| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | Facebook News Feed Channel (this schema) |
+| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | Facebook News Feed Channel (this schema) |
+| [xdm:mode](#xdmmode) | `const` | Optional | Facebook News Feed Channel (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id

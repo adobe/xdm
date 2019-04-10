@@ -1,23 +1,23 @@
 
-# ADM Schema
+# ADM Channel Schema
 
 ```
 https://ns.adobe.com/xdm/channels/adm
 ```
 
-Amazon Device Messaging
+Amazon Device Messaging channel.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/adm.schema.json](channels/adm.schema.json) |
 ## Schema Hierarchy
 
-* ADM `https://ns.adobe.com/xdm/channels/adm`
+* ADM Channel `https://ns.adobe.com/xdm/channels/adm`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
 
-## ADM Example
+## ADM Channel Example
 ```json
 {
   "@id": "https://ns.adobe.com/xdm/channels/adm",
@@ -25,16 +25,16 @@ Amazon Device Messaging
 }
 ```
 
-# ADM Properties
+# ADM Channel Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | ADM (this schema) |
-| [@type](#@type) | `const` | Optional | ADM (this schema) |
-| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | ADM (this schema) |
-| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | ADM (this schema) |
-| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | ADM (this schema) |
-| [xdm:mode](#xdmmode) | `const` | Optional | ADM (this schema) |
+| [@id](#id) | `const` | **Required** | ADM Channel (this schema) |
+| [@type](#type) | `const` | Optional | ADM Channel (this schema) |
+| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | ADM Channel (this schema) |
+| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | ADM Channel (this schema) |
+| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | ADM Channel (this schema) |
+| [xdm:mode](#xdmmode) | `const` | Optional | ADM Channel (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id

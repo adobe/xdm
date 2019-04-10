@@ -86,7 +86,7 @@ Estimated distance from the beacon.
 * type: `enum`
 * defined in this schema
 
-The value of this property **must** be equal to one of the [known values below](#xdm:proximity-known-values).
+The value of this property **must** be equal to one of the [known values below](#xdmproximity-known-values).
 
 ### xdm:proximity Known Values
 | Value | Description |

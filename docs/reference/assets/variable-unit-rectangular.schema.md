@@ -100,6 +100,7 @@ Unit used for artboard coordinates (`originX`, `originY`, `width` and `height`).
 `xdm:unit`
 * is optional
 * type: `string`
+* default: `"pixel"`
 * defined in this schema
 
 ### xdm:unit Type

@@ -63,7 +63,7 @@ Subscriptions are licensed entitlements to software, services or goods that are 
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Subscription (this schema) |
+| [@id](#id) | `string` | Optional | Subscription (this schema) |
 | [xdm:SKU](#xdmsku) | `string` | Optional | Subscription (this schema) |
 | [xdm:billingPeriod](#xdmbillingperiod) | `string` | Optional | Subscription (this schema) |
 | [xdm:billingStartDate](#xdmbillingstartdate) | `string` | Optional | Subscription (this schema) |

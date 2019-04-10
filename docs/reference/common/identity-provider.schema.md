@@ -22,7 +22,7 @@ An identity provider (abbreviated IdP) is a system entity that creates, maintain
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | **Required** | Identity Provider (this schema) |
+| [@id](#id) | `string` | **Required** | Identity Provider (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id

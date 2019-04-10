@@ -28,7 +28,7 @@ Schema for the Effective Privileges resource
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [*](#*) | `enum[]` | Optional | Effective Privileges (this schema) |
+| [*](#) | `enum[]` | Optional | Effective Privileges (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## *

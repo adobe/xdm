@@ -40,7 +40,7 @@ View details for the main content playback, present on all ads and chapters that
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Primary Asset View Details (this schema) |
+| [@id](#id) | `string` | Optional | Primary Asset View Details (this schema) |
 | [xdm:adLoadType](#xdmadloadtype) | `string` | Optional | Primary Asset View Details (this schema) |
 | [xdm:broadcastChannel](#xdmbroadcastchannel) | `string` | Optional | Primary Asset View Details (this schema) |
 | [xdm:broadcastContentType](#xdmbroadcastcontenttype) | `string` | Optional | Primary Asset View Details (this schema) |

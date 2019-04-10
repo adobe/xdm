@@ -28,7 +28,7 @@ The product list item is a list item representing a product selected by a custom
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Product List Item (this schema) |
+| [@id](#id) | `string` | Optional | Product List Item (this schema) |
 | [xdm:SKU](#xdmsku) | `string` | Optional | Product List Item (this schema) |
 | [xdm:currencyCode](#xdmcurrencycode) | `string` | Optional | Product List Item (this schema) |
 | [xdm:name](#xdmname) | `string` | Optional | Product List Item (this schema) |

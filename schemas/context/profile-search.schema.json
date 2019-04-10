@@ -1,0 +1,34 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/profile-adcloud",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Adobe Ad Cloud Record",
+  "type": "object",
+  "auditable": false,
+  "meta:extensible": false,
+  "meta:abstract": true,
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record"
+  ],
+  "description":
+    "An Adobe Ad Cloud Record is a custom class to represent and define Ad Cloud Entity Level Attributes.",
+  "definitions": {
+    "profile-adcloud": {
+      "properties": { }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "#/definitions/profile-adcloud"
+    }
+  ],
+  "meta:status": "experimental"
+}

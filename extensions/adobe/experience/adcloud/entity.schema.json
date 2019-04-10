@@ -1,0 +1,59 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/experience/adcloud/entity",
+  "title": "Ad Cloud Top Level Entity DataTypes",
+  "type": "object",
+  "description": "Adobe AdCloud Top Level Entity DataTypes",
+  "definitions": {
+    "entity": {
+      "properties": {
+        "xdm:Id": {
+          "title": "ID",
+          "type": "integer",
+          "description": "Unique identifier which represents primary key for the entity object."
+        },
+        "xdm:externalId": {
+          "title": "External Entity ID",
+          "type": "string",
+          "description": "Unique External identifier as represented by the network for the entity object."
+        },
+        "xdm:network": {
+          "title": "Network",
+          "type": "string",
+          "description": "Network Name as defined by the search partners."
+        },
+        "xdm:accountId": {
+          "title": "Account ID",
+          "type": "integer",
+          "description": "Account Identifier which represents account for the entity object."
+        },
+        "xdm:name": {
+          "title": "Name",
+          "type": "string",
+          "description": "Name of the entity."
+        },
+        "xdm:status: {
+          "title": "Status",
+          "type": "string",
+          "description": "Status of the entity."
+        },
+        "xdm:externalStatus": {
+          "title": "Network Status Code",
+          "type": "string",
+          "description": "Network Status Code of the entity."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/entity"
+    }
+  ]
+}

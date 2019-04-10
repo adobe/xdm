@@ -38,7 +38,7 @@
           "type": "string",
           "description": "Name of the entity."
         },
-        "xdm:status: {
+        "xdm:status": {
           "title": "Status",
           "type": "string",
           "description": "Status of the entity."

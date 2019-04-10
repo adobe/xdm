@@ -16,11 +16,11 @@
   "definitions": {
     "campaign-all": {
       "properties": {
-        campaign": {
+        "campaign": {
           "title": "Adobe Ad Cloud Search Campaign Top Level Fields",
           "$ref": "https://ns.adobe.com/experience/adcloud/entity",
           "description": "Adobe AdCloud Top Level Entity Fields."
-        }
+        },
         "budget": {
           "title": "Campaign Budget",
           "type": "integer",

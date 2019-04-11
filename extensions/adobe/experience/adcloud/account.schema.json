@@ -1,0 +1,250 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/experience/adcloud/account",
+  "title": "AdCloud Search User Accounts Detail",
+  "type": "object",
+  "description": "AdCloud Search User Accounts Hierarchy Details",
+  "definitions": {
+    "account": {
+      "properties": {
+        "xdm:accountId": {
+          "title": "Account ID",
+          "type": "integer",
+          "description": "Unique identifier for the account this event is associated with."
+        },
+        "xdm:userId ": {
+          "title": "User ID",
+          "type": "integer",
+          "description": "Unique identifier for the advertiser which this event is associated with."
+        },
+        "xdm:acct_name": {
+          "title": "Account Name",
+          "type": "string",
+          "description": "Unique name for the advertiser which this event is associated with."
+        },
+        "xdm:sid": {
+          "title": "Search Engine ID",
+          "type": "integer",
+          "description": "Unique identifier for the search engine which this event is associated with."
+        },
+        "xdm:login": {
+          "title": "Login",
+          "type": "string",
+          "description": "Advertiser account Login."
+        },
+        "xdm:password": {
+          "title": "Password",
+          "type": "string",
+          "description": "Advertiser account Password."
+        },
+        "xdm:currency": {
+          "title": "Currency",
+          "type": "string",
+          "examples": ["USD", "EUR"],
+          "description": "The ISO 4217 billing currency code for the account this event is associated with."
+        },
+        "xdm:managed": {
+          "title": "Managed",
+          "type": "string",
+          "description": "Is the account managed or self service."
+        },
+        "xdm:mcc_acct_id": {
+          "title": "Master Account ID",
+          "type": "integer",
+          "description": "Unique identifier for the master account."
+        },
+        "xdm:feed": {
+          "title": "Feed",
+          "type": "boolean",
+          "description": "Account feed."
+        },
+        "xdm:se_acctid": {
+          "title": "Search Engine Account",
+          "type": "string",
+          "description": "Unique identifier for Search Engine Account."
+        },
+        "xdm:master_acctid": {
+          "title": "Master Account",
+          "type": "string",
+          "description": "Unique identifier for Master Account."
+        },
+        "xdm:content_support_off": {
+          "title": "Content Support Off",
+          "type": "string",
+          "description": "Content Support Off."
+        },
+        "xdm:budget": {
+          "title": "Budget",
+          "type": "number",
+          "description": "Budget allocated for the account."
+        },
+        "xdm:budget_typeid": {
+          "title": "Budget Type Id",
+          "type": "integer",
+          "description": "Unique identifier for the budget type of the account."
+        },
+        "xdm:mktid": {
+          "title": "Market ID",
+          "type": "integer",
+          "description": "Unique identifier for the market this event is associated with."
+        },
+        "xdm:campaign_name_template": {
+          "title": "Campaign Name Template",
+          "type": "string",
+          "description": "Campaign Name Template for the Account."
+        },
+        "xdm:adgroup_name_template": {
+          "title": "Adgroup Name Template",
+          "type": "string",
+          "description": "Adgroup Name Template for the Account."
+        },
+        "xdm:se_userId": {
+          "title": "Search Engine UserId",
+          "type": "string",
+          "description": "Search Engine UserId."
+        },
+        "xdm:acct_type": {
+          "title": "Account Type",
+          "type": "string",
+          "description": "Unique type for the Account."
+        },
+        "xdm:active_campaigns": {
+          "title": "Active Campaigns",
+          "type": "string",
+          "description": "Active Campaigns for the account."
+        },
+        "xdm:paused_campaigns": {
+          "title": "Paused Campaigns",
+          "type": "string",
+          "description": "Paused Campaigns for the account."
+        },
+        "xdm:removed_campaigns": {
+          "title": "Removed Campaigns",
+          "type": "string",
+          "description": "Removed Campaigns for the account."
+        },
+        "xdm:pending_campaigns": {
+          "title": "Pending Campaigns",
+          "type": "string",
+          "description": "Pending Campaigns for the account."
+        },
+        "xdm:onhold_campaigns": {
+          "title": "OnHold Campaigns",
+          "type": "string",
+          "description": "OnHold Campaigns for the account."
+        },
+        "xdm:ended_campaigns": {
+          "title": "Ended Campaigns",
+          "type": "string",
+          "description": "Ended Campaigns for the account."
+        },
+        "xdm:active_adgroups": {
+          "title": "Active AdGroups",
+          "type": "string",
+          "description": "Active AdGroups for the account."
+        },
+        "xdm:paused_adgroups": {
+          "title": "Paused AdGroups",
+          "type": "string",
+          "description": "Paused AdGroups for the account."
+        },
+        "xdm:removed_adgroups": {
+          "title": "Removed AdGroups",
+          "type": "string",
+          "description": "Removed AdGroups for the account."
+        },
+        "xdm:pending_adgroups": {
+          "title": "Pending AdGroups",
+          "type": "string",
+          "description": "Pending AdGroups for the account."
+        },
+        "xdm:ended_adgroups": {
+          "title": "Ended AdGroups",
+          "type": "string",
+          "description": "Ended AdGroups for the account."
+        },
+        "xdm:active_keywords": {
+          "title": "Active Keywords",
+          "type": "string",
+          "description": "Keywords active for the account."
+        },
+        "xdm:paused_keywords": {
+          "title": "Paused Keywords",
+          "type": "string",
+          "description": "Keywords paused for the account."
+        },
+        "xdm:inactive_keywords": {
+          "title": "InActive Keywords",
+          "type": "string",
+          "description": "Keywords inactive for the account."
+        },
+        "xdm:removed_keywords": {
+          "title": "Removed Keywords",
+          "type": "string",
+          "description": "Keywords removed for the account."
+        },
+        "xdm:disapproved_keywords": {
+          "title": "Disapproved Keywords",
+          "type": "string",
+          "description": "Keywords disapproved for the account."
+        },
+        "xdm:active_creatives": {
+          "title": "Active Creatives",
+          "type": "string",
+          "description": "Active Creatives for the account."
+        },
+        "xdm:paused_creatives": {
+          "title": "Paused Creatives",
+          "type": "string",
+          "description": "Paused Creatives for the account."
+        },
+        "xdm:removed_creatives": {
+          "title": "Removed Creatives",
+          "type": "string",
+          "description": "Removed Creatives for the account."
+        },
+        "xdm:tracking_template": {
+          "title": "Tracking Template",
+          "type": "string",
+          "description": "Tracking Templates."
+        },
+        "xdm:google_conversion_setting": {
+          "title": "Google Conversion Setting",
+          "type": "string",
+          "description": "Google Conversion Setting."
+        },
+        "xdm:se_mcc_accounts_id": {
+          "title": "SE MCC Accounts ID",
+          "type": "string",
+          "description": "Unique identifier for Search Engine MCC Accounts."
+        },
+        "xdm:se_api_params": {
+          "title": "Search Engine API Params",
+          "type": "string",
+          "description": "Search Engine API Params."
+        },
+        "xdm:parallel_tracking_enabled": {
+          "title": "Parallel Tracking Enabled",
+          "type": "string",
+          "description": "Parallel Tracking Enabled."
+        },
+        "xdm:landing_page_suffix": {
+          "title": "Landing Page Suffix",
+          "type": "string",
+          "description": "Landing Page Suffix."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/accounts"
+    }
+  ]
+}

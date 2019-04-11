@@ -7,9 +7,9 @@
   ],
   "$id": "https://ns.adobe.com/experience/adcloudsearcb/product",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Product",
+  "title": "Product Information displayed in AdCloud Search Advertisement",
   "type": "object",
-  "description": "Adcloud Search Product Information ",
+  "description": "AdCloud Search Product Information ",
   "definitions": {
     "product": {
       "properties": {
@@ -31,12 +31,12 @@
         "xdm:partitionID": {
           "title": "product PartitionID id",
           "type": "string",
-          "description": "The unique ID for the product group the clicked product ad belongs to."
+          "description": "The unique identifier for the product group the clicked product advertisement belongs to."
         },
         "xdm:title": {
           "title": "product title",
           "type": "string",
-          "description": "product title value shown in the ad"
+          "description": "product title value shown in the advertisement"
         },
         "xdm:adType": {
           "title": "product adType",

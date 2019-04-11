@@ -7,9 +7,9 @@
   ],
   "$id": "https://ns.adobe.com/experience/adcloudsearch/advertisement",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Advertisement Details For Adcloud Search",
+  "title": "Advertisement Details For AdCloud Search",
   "type": "object",
-  "description": "Adcloud Search Advertisement Information ",
+  "description": "AdCloud Search Advertisement Information ",
   "definitions": {
     "advertisement": {
       "properties": {
@@ -29,7 +29,7 @@
           "description": "Unique identifier for the audience segment for which the ad is targeted "
         },
         "xdm:adGroupID": {
-          "title": "adgroup id",
+          "title": "adGroup id",
           "type": "string",
           "description": "Unique identifier for the adGroup which ad is displayed and triggered this click event "
         },

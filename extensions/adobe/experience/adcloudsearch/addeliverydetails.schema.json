@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Ad Delivery Details",
   "type": "object",
-  "description": "Adcloud Search Ad Delivery Details  ",
+  "description": "AdCloud Search Ad Delivery Details  ",
   "definitions": {
     "adDeliveryDetails": {
       "properties": {

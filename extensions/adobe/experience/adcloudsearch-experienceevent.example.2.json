@@ -44,16 +44,11 @@
       "xdm:matchType": "b"
     },
     "xdm:geo": {
-      "xdm:physicalLocationID": "1014185",
-      "xdm:interestLocationID": "4087"
+      "xdm:physicalLocationID": "1014185"
     },
-    "xdm:product": {
-      "xdm:id": "LSTTDSF9J4DQYH8ZZZUSDBCRG",
-      "xdm:country": "IN",
-      "xdm:language": "en",
-      "xdm:partitionID": "342294687595",
-      "xdm:title": "Winter Jacket",
-      "xdm:adType": "pla"
+    "xdm:adDeliveryDetails": {
+      "xdm:adPosition": "1t1",
+      "xdm:siteLinkText": "Healthy Drinks"
     }
   }
 }

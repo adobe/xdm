@@ -6,12 +6,12 @@
         "of the License at https://creativecommons.org/licenses/by/4.0/"
     ],
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "$id": "https://ns.adobe.com/experience/adcloud/entity",
+    "$id": "https://ns.adobe.com/experience/adcloud/advertisingEntity",
     "title": "Ad Cloud Top Level Entity DataTypes",
     "type": "object",
     "description": "Ad Cloud Top Level Entity DataTypes",
     "definitions": {
-        "entity": {
+        "advertisingEntity": {
             "properties": {
                 "clientId": {
                     "title": "Client ID",
@@ -65,15 +65,7 @@
     },
     "allOf": [
         {
-            "$ref": "#/definitions/entity"
+            "$ref": "#/definitions/advertisingEntity"
         }
-    ],
-    "required": [
-        "clientId",
-        "externalId",
-        "network",
-        "externalStatus",
-        "creationTime",
-        "modifiedTime"
     ]
 }

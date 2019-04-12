@@ -6,7 +6,7 @@
         "of the License at https://creativecommons.org/licenses/by/4.0/"
     ],
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "$id": "https://ns.adobe.com/experience/adcloud/campaign-all",
+    "$id": "https://ns.adobe.com/experience/adcloud/searchcampaign-all",
     "title": "Adobe AdCloud Search Campaign Entity Full Extension",
     "type": "object",
     "meta:extensible": true,
@@ -16,11 +16,11 @@
     ],
     "description": "Adobe AdCloud Search Campaign Entity Full Extension. Contains all Solution added fields.",
     "definitions": {
-        "campaign-all": {
+        "searchcampaign-all": {
             "properties": {
                 "campaign": {
                     "title": "Adobe Ad Cloud Search Campaign Top Level Fields",
-                    "$ref": "https://ns.adobe.com/experience/adcloud/entity",
+                    "$ref": "https://ns.adobe.com/experience/adcloud/advertisingEntity",
                     "description": "Adobe AdCloud Top Level Entity Fields."
                 },
                 "accountId": {
@@ -53,20 +53,20 @@
                     "type": "string",
                     "description": "Budget Type",
                     "meta:enum": {
-                        "daily": "Mobile",
-                        "monthly": "Tablet",
-                        "lifetime": "Desktop",
-                        "daily spend until depleted": "daily spend until depleted",
-                        "day of week": "day of week"
+                        "daily": "Daily",
+                        "monthly": "Monthly",
+                        "lifetime": "Lifetime",
+                        "daily spend until depleted": "Daily spend until depleted",
+                        "day of week": "Day of week"
                     }
                 },
-                "adDelivery": {
+                "deliveryType": {
                     "title": "Ad Delivery Method",
                     "type": "string",
                     "description": "Ad Delivery method can determine how long your budget lasts",
                     "meta:enum": {
-                        "standard": "standard",
-                        "accelerated": "accelerated"
+                        "standard": "Standard",
+                        "accelerated": "Accelerated"
                     }
                 },
                 "objective": {
@@ -74,8 +74,8 @@
                     "type": "string",
                     "description": "Campaign Objective",
                     "meta:enum": {
-                        "visit_web": "standard",
-                        "promote_brand": "accelerated",
+                        "visit_web": "visit_web",
+                        "promote_brand": "promote_brand",
                         "install_app": "install_app",
                         "visit_offer": "visit_offer"
                     }
@@ -98,7 +98,7 @@
             "$ref": "https://ns.adobe.com/xdm/context/profile-adcloud#/definitions/profile-adcloud"
         },
         {
-            "$ref": "#/definitions/campaign-all"
+            "$ref": "#/definitions/searchcampaign-all"
         }
     ],
     "required": [

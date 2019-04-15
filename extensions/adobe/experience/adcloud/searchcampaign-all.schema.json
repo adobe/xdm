@@ -45,7 +45,8 @@
                 },
                 "budget": {
                     "title": "Budget",
-                    "type": "integer",
+                    "type": "number",
+                    "format": "double",
                     "description": "Budget Allocated to the Campaign"
                 },
                 "budgetType": {

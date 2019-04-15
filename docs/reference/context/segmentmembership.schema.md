@@ -14,17 +14,12 @@ Details about a segment membership.
 
 * Segment Membership `https://ns.adobe.com/xdm/context/segmentmembership`
   * [Segment Identity](segmentidentity.schema.md) `https://ns.adobe.com/xdm/context/segmentidentity`
+  * [Profile Stitch Identity](profilestitchidentity.schema.md) `https://ns.adobe.com/xdm/context/profileStitchIdentity`
 
 
 ## Segment Membership Example
 ```json
 {
-  "xdm:segmentID": {
-    "@id": "https://data.adobe.io/entities/segmentIdentity/92312748749128",
-    "xdm:namespace": {
-      "xdm:code": "AAM"
-    }
-  },
   "xdm:lastQualificationTime": "2017-09-26T15:52:25+00:00",
   "xdm:version": "1.0",
   "xdm:validUntil": "2017-12-26T15:52:25+00:00",
@@ -38,14 +33,15 @@ Details about a segment membership.
 
 # Segment Membership Properties
 
-| Property | Type | Required | Defined by |
-|----------|------|----------|------------|
-| [xdm:lastQualificationTime](#xdmlastqualificationtime) | `string` | Optional | Segment Membership (this schema) |
-| [xdm:payload](#xdmpayload) | `object` | Optional | Segment Membership (this schema) |
-| [xdm:segmentID](#xdmsegmentid) | Segment Identity | Optional | Segment Membership (this schema) |
-| [xdm:status](#xdmstatus) | `enum` | Optional | Segment Membership (this schema) |
-| [xdm:validUntil](#xdmvaliduntil) | `string` | Optional | Segment Membership (this schema) |
-| [xdm:version](#xdmversion) | `string` | Optional | Segment Membership (this schema) |
+| Property | Type | Required | Default | Defined by |
+|----------|------|----------|---------|------------|
+| [xdm:lastQualificationTime](#xdmlastqualificationtime) | `string` | Optional |  | Segment Membership (this schema) |
+| [xdm:payload](#xdmpayload) | `object` | Optional |  | Segment Membership (this schema) |
+| [xdm:profileStitchID](#xdmprofilestitchid) | Profile Stitch Identity | Optional |  | Segment Membership (this schema) |
+| [xdm:segmentID](#xdmsegmentid) | Segment Identity | Optional |  | Segment Membership (this schema) |
+| [xdm:status](#xdmstatus) | `enum` | Optional | `"realized"` | Segment Membership (this schema) |
+| [xdm:validUntil](#xdmvaliduntil) | `string` | Optional |  | Segment Membership (this schema) |
+| [xdm:version](#xdmversion) | `string` | Optional |  | Segment Membership (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:lastQualificationTime
@@ -85,13 +81,13 @@ Values that are directly related with the segment realization. This payload exis
 `object` with following properties:
 
 
-| Property | Type | Required
+| Property | Type | Required |
 |----------|------|----------|
-| `xdm:payloadBooleanValue`| boolean | Optional | 
-| `xdm:payloadNumberValue`| number | Optional | 
-| `xdm:payloadPropensityValue`| number | Optional | 
-| `xdm:payloadStringValue`| string | Optional | 
-| `xdm:payloadType`| string | **Required** | 
+| `xdm:payloadBooleanValue`| boolean | Optional |
+| `xdm:payloadNumberValue`| number | Optional |
+| `xdm:payloadPropensityValue`| number | Optional |
+| `xdm:payloadStringValue`| string | Optional |
+| `xdm:payloadType`| string | **Required** |
 
 
 
@@ -185,9 +181,9 @@ The type of payload.
 
 `xdm:payloadType`
 * is **required**
-* type: `string`
+* type: `enum`
 
-The value of this property **must** be equal to one of the [known values below](#xdm:payloadType-known-values).
+The value of this property **must** be equal to one of the [known values below](#xdmpayload-known-values).
 
 ##### xdm:payloadType Known Values
 | Value | Description |
@@ -205,10 +201,27 @@ The value of this property **must** be equal to one of the [known values below](
 
 
 
+## xdm:profileStitchID
+
+
+`xdm:profileStitchID`
+* is optional
+* type: Profile Stitch Identity
+* defined in this schema
+
+### xdm:profileStitchID Type
+
+
+* [Profile Stitch Identity](profilestitchidentity.schema.md) – `https://ns.adobe.com/xdm/context/profileStitchIdentity`
+
+
+
+
+
 ## xdm:segmentID
 ### Segment ID
 
-The identity of the segment or snapshot definition in with the domain of the specific system that processes that type of segment.
+The identity of the segment or snapshot definition in with the domain of the specific system that processes that type of segment. Deprecated.
 
 `xdm:segmentID`
 * is optional
@@ -232,9 +245,10 @@ Is the segment participation realized as part of the current request.
 `xdm:status`
 * is optional
 * type: `enum`
+* default: `"realized"`
 * defined in this schema
 
-The value of this property **must** be equal to one of the [known values below](#xdm:status-known-values).
+The value of this property **must** be equal to one of the [known values below](#xdmstatus-known-values).
 
 ### xdm:status Known Values
 | Value | Description |

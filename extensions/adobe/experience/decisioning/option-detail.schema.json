@@ -23,8 +23,18 @@
         },
         "xdm:name": {
           "type": "string",
-          "title": "Name",
+          "title": "Option Name",
           "description": "Option name. The name is displayed in various user interfaces."
+        },
+        "xdm:characteristics": {
+          "title": "Option Characteristics",
+          "description": "Additional properties or attributed belonging to this particular Option. Different instances can have different characteristics. When every instance has a certain attribute or property it should be modeled as an extension to the schema that derives from Option Detail. The characteristics are name value pairs used to distingusih an option from others. Characteristics are used as features to analyze and optimize the performance of an Option.",
+          "type": "object",
+          "meta:xdmType": "map",
+          "additionalProperties": {
+            "type": "string",
+            "description": "Value of the property."
+          }
         },
         "https://ns.adobe.com/experience/decisioning/propositionsTotal": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
@@ -32,7 +42,7 @@
         },
         "https://ns.adobe.com/experience/decisioning/propositionsProfile": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "The number of times a particular option was proposed so far to a particular profile."
+          "description": "The number of times a particular option was proposed so far to a particular profile. When this metric is present the record or timeseries entity must include an IdentityMap the profile."
         }
       }
     }
@@ -43,6 +53,9 @@
     },
     {
       "$ref": "#/definitions/option-detail-datatype"
+    },
+    {
+      "required": ["xdm:id"]
     }
   ],
   "meta:status": "experimental"

@@ -1,0 +1,41 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/decisioning/proposition-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "DecisionEvent List of Propositions",
+  "type": "object",
+  "meta:abstract": true,
+  "meta:extensible": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/experience/decisioning/decisionevent"
+  ],
+  "description": "Decision Proposition is used to capture the outcome of a decisioning process.",
+  "definitions": {
+    "proposition-details-mixin": {
+      "properties": {
+        "https://ns.adobe.com/experience/decisioning/propositionDetails": {
+          "title": "Outputs and contexts of a single decision event.",
+          "type": "array",
+          "items": {
+            "$ref": "https://ns.adobe.com/experience/decisioning/proposition-detail"
+          },
+          "description": "Details about the results of the decision. An array providing the output of a single decision event, one proposition per activity parameter in the request."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/proposition-details-mixin"
+    }
+  ],
+  "meta:status": "experimental"
+}

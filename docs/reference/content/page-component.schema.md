@@ -32,7 +32,7 @@ The type determines how the component will be displayed, rendered, and authored.
 {
   "@type": "https://francois.corp.adobe.com:4502/apps/foundation/image",
   "image": {
-    "@type": "https://ns.adobe.com/xdm/assets/asset",
+    "@type": "http://ns.adobe.com/adobecloud/core/1.0/asset",
     "repo:id": "urn:aaid:aem:4123ba4c-93a8-4c5d-b979-1234e4318185",
     "@id": "https://francois.corp.adobe.com:4502/content/dam/Glasses-small.jpg"
   }
@@ -44,7 +44,7 @@ The type determines how the component will be displayed, rendered, and authored.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@type](#@type) | `string` | Optional | Page Component (this schema) |
+| [@type](#type) | `string` | Optional | Page Component (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @type

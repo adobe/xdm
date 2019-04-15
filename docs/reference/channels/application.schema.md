@@ -1,18 +1,17 @@
 
-# Application Schema
+# Application Channel Schema
 
 ```
 https://ns.adobe.com/xdm/channels/application
 ```
 
-An application that accepts messages or emit events (Facebook page, Mobile App, ...).
-
+An application that accepts messages or emit events (Facebook page, Mobile App, ...) channel.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/application.schema.json](channels/application.schema.json) |
 
-## Application Example
+## Application Channel Example
 ```json
 {
   "xdm:id": "A123",
@@ -21,13 +20,13 @@ An application that accepts messages or emit events (Facebook page, Mobile App, 
 }
 ```
 
-# Application Properties
+# Application Channel Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Application (this schema) |
-| [xdm:name](#xdmname) | `string` | Optional | Application (this schema) |
-| [xdm:version](#xdmversion) | `string` | Optional | Application (this schema) |
+| [@id](#id) | `string` | Optional | Application Channel (this schema) |
+| [xdm:name](#xdmname) | `string` | Optional | Application Channel (this schema) |
+| [xdm:version](#xdmversion) | `string` | Optional | Application Channel (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id

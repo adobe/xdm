@@ -29,7 +29,7 @@ Asset information about the ad captured by the experience event.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Ad Asset Reference (this schema) |
+| [@id](#id) | `string` | Optional | Ad Asset Reference (this schema) |
 | [dc:title](#dctitle) | `string` | Optional | Ad Asset Reference (this schema) |
 | [xmpDM:duration](#xmpdmduration) | `integer` | Optional | Ad Asset Reference (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |

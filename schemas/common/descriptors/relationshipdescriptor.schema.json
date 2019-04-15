@@ -35,6 +35,19 @@
           "$ref": "https://ns.adobe.com/xdm/common/descriptors/itemselector#/definitions/selector"
         }
       },
+      "oneOf": [
+        {
+          "properties": {
+            "xdm:label": {
+              "type": "string"
+            }
+          },
+          "required": ["xdm:label"]
+        },
+        {
+          "required": ["xdm:sourceProperty"]
+        }
+      ],
       "required": ["xdm:destinationSchema"]
     }
   },

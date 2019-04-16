@@ -18,9 +18,7 @@
       "properties": {}
     }
   },
-  "meta:immutableTags": [
-    "union"
-  ],
+  "meta:immutableTags": ["union"],
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/context/experienceevent"

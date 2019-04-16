@@ -13,11 +13,11 @@
   "definitions": {
     "transaction": {
       "properties": {
-      "xdm:transactionId": {
-        "title": "Client Transaction Id",
-        "type": "string",
-        "description": "Client Transaction Id provided by clients as Unique Transaction Identifier."
-      },
+        "xdm:transactionID": {
+          "title": "Client Transaction Id",
+          "type": "string",
+          "description": "Unique Identifier for Transaction provided by clients ."
+        },
         "xdm:transactionProperties": {
           "type": "array",
           "description": "List of Transaction Property key and its value",

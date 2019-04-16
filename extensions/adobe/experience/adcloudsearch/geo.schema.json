@@ -14,12 +14,12 @@
     "geo": {
       "properties": {
         "xdm:physicalLocationID": {
-          "title": "physical Location Id",
+          "title": "Physical Location Id",
           "type": "string",
           "description": "Surfer browsing location. This isn't exactly the location name - like city or country, instead it is a reference from SE for a geo target. "
         },
         "xdm:interestLocationID": {
-          "title": "interest Location Id",
+          "title": "Interest Location Id",
           "type": "string",
           "description": "Location based on interest expressed in search query. For eg. when the search is for string- 'hotel in goa' here the request might be originating from Bangalore but the interest is on Goa."
         }

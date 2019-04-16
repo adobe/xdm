@@ -11,31 +11,37 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": [ "https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Adobe AdCloud Search ExperienceEvent Full Extension",
   "definitions": {
     "experienceevent-all": {
       "properties": {
         "https://ns.adobe.com/experience/adcloudsearch/advertisement": {
           "title": "Advertisement",
-          "type": "string",
+          "$ref": "https://ns.adobe.com/experience/adcloudsearch/advertisement",
           "description": "Adobe AdCloud Search Advertisement"
         },
         "https://ns.adobe.com/experience/adcloudsearch/geo": {
           "title": "Geo",
-          "type": "string",
+          "$ref": "https://ns.adobe.com/experience/adcloudsearch/geo",
           "description": "Adobe AdCloud Search Geo Information"
         },
         "https://ns.adobe.com/experience/adcloudsearch/adDeliveryDetails": {
           "title": "AdDeliveryDetails",
-          "type": "string",
+          "$ref": "https://ns.adobe.com/experience/adcloudsearch/geo",
           "description": "Adobe AdCloud Search AdDelivery Details "
         },
         "https://ns.adobe.com/experience/adcloudsearch/product": {
           "title": "Product",
-          "type": "string",
+          "$ref": "https://ns.adobe.com/experience/adcloudsearch/adDeliveryDetails",
           "description": "Adobe AdCloud Search Product Information "
+        },
+        "https://ns.adobe.com/experience/adcloudsearch/transaction": {
+          "title": "Transaction",
+          "$ref": "https://ns.adobe.com/experience/adcloudsearch/transaction",
+          "description": "Adobe AdCloud Search Transaction Event Related Information "
         }
+
       }
     }
   },

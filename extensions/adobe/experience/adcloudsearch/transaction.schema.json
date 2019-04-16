@@ -1,0 +1,37 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/adcloudsearch/transaction",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Transaction properties of experience event",
+  "type": "object",
+  "description": "AdCloud Search Transaction Event Details  ",
+  "definitions": {
+    "transaction": {
+      "properties": {
+      "xdm:transactionId": {
+        "title": "Client Transaction Id",
+        "type": "string",
+        "description": "Client Transaction Id provided by clients as Unique Transaction Identifier."
+      },
+        "xdm:transactionProperties": {
+          "type": "array",
+          "description": "List of Transaction Property key and its value",
+          "items": {
+            "$ref": "https://ns.adobe.com/experience/adcloudsearch/keyValue"
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/transaction"
+    }
+  ],
+  "meta:status": "experimental"
+}

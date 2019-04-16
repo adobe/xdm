@@ -12,17 +12,21 @@
     "xdm:physicalLocationID": "1014185",
     "xdm:interestLocationID": "4087"
   },
-  "https://ns.adobe.com/experience/adcloudsearch/product": {
-    "xdm:id": "LSTTDSF9J4DQYH8ZZZUSDBCRG",
-    "xdm:country": "IN",
-    "xdm:language": "en",
-    "xdm:partitionID": "342294687595",
-    "xdm:title": "Winter Jacket",
-    "xdm:adType": "pla"
-  },
-  "https://ns.adobe.com/experience/adcloudsearch/adDeliveryDetails": {
-    "xdm:adPosition": "1t1",
-    "xdm:siteLinkText": "Healthy Diets",
-    "xdm:externalClickID": "XJm2lgAAAEmW1LVH"
+  "https://ns.adobe.com/experience/adcloudsearch/transaction": {
+    "xdm:transactionId": "177116802",
+    "xdm:transactionProperties": [
+      {
+        "key": "page_load",
+        "value": "1"
+      },
+      {
+        "key": "personal_loan_landing_page",
+        "value": "2"
+      },
+      {
+        "key": "SiteEngagement_LoginSignIn",
+        "value": "2"
+      }
+    ]
   }
 }

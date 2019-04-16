@@ -42,21 +42,21 @@
           "title": "network",
           "type": "string",
           "description": "Current click event came from a search advertisement or content advertisement ",
-          "enum": ["g", "d"],
+          "enum": ["search", "content"],
           "meta:enum": {
-            "g": "Search",
-            "d": "Content"
+            "search": "Ad is displayed in Search Network",
+            "content": "Ad is displayed in Content Network"
           }
         },
         "xdm:matchType": {
           "title": "matchType",
           "type": "string",
           "description": "To check for current displayed advertisement what kind of match is done to match keyword ",
-          "enum": ["e", "b", "p"],
+          "enum": ["exact", "broad", "phrase"],
           "meta:enum": {
-            "e": "Exact",
-            "b": "Broad",
-            "p": "Phrase"
+            "exact": "Exact Match of the keyword",
+            "broad": "Broad Match of the keyword",
+            "phrase": "Phrase Match of the keyword"
           }
         }
       }

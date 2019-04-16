@@ -2,7 +2,7 @@
 # Time-series Extension for Record Data Schema
 
 ```
-https://ns.adobe.com/xdm/context/record-timeseries-events
+https://ns.adobe.com/xdm/data/record-timeseries-events
 ```
 
 Time-series Extension for Record Data.
@@ -12,7 +12,7 @@ Time-series Extension for Record Data.
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/record-timeseries-events.schema.json](data/record-timeseries-events.schema.json) |
 ## Schema Hierarchy
 
-* Time-series Extension for Record Data `https://ns.adobe.com/xdm/context/record-timeseries-events`
+* Time-series Extension for Record Data `https://ns.adobe.com/xdm/data/record-timeseries-events`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 

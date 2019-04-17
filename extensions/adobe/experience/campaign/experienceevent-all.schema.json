@@ -284,6 +284,14 @@
           "title": "Offer Opened",
           "description": "The offer in the message for an 'offer opened' event.",
           "$ref": "https://ns.adobe.com/experience/offer-management/proposition-response-detail"
+        },
+        "https://ns.adobe.com/experience/campaign/offersProposed": {
+          "title": "Offer Propositions",
+          "description": "The offers in the message of a 'email-send' event.",
+          "type": "array",
+          "items": {
+            "$ref": "https://ns.adobe.com/experience/campaign/offer-proposition-detail"
+          }
         }
       }
     },

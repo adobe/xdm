@@ -6,7 +6,7 @@ schema="schema.json"
 references=$(find xed -name "*.schema.json")
 append="-r $(echo $references | sed -e "s/ / -r /g")"
 failures=0
-array=()
+declare -a array
 xdmFormats=(int8 int16 int32 int64 float date-only datetime-only)
 opt="--unknownFormats="
 validFormats=""

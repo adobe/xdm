@@ -44,6 +44,9 @@
     "pretty-quick": "^1.4.1",
     "shelljs": "^0.8.3",
     "shx": "^0.3.2",
-    "winston": "^2.4.3"
+    "winston": "^2.4.3",
+    "deep-rename-keys": "^0.2.1",
+    "dot-prop": "^4.2.0",
+    "flat": "^4.0.0"
   }
 }

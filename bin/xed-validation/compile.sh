@@ -1,6 +1,6 @@
 #!/bin/bash
 ##Please run from the root of branch
-
+echo $SHELL
 xdms=$(find xed -name "*.schema.json" -print)
 schema="schema.json"
 references=$(find xed -name "*.schema.json")

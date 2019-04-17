@@ -52,6 +52,7 @@
     "has-value": "^2.0.2",
     "json-schema-deref-sync": "^0.4.0",
     "json-schema-merge-allof": "^0.6.0",
-    "set-value": "^3.0.0"
+    "set-value": "^3.0.0",
+    "camelcase": "^4.1.0"
   }
 }

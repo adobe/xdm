@@ -22,7 +22,7 @@
     "activate:prod": "curl -u \"$npm_package_config_aem_user:$npm_package_config_aem_password\" -F cmd=activate -F ignoredeactivated=true -F onlymodified=true -F path=/content/udp/en/open/standards/xdm/docs https://author-adobeio-prod.adobemsbasic.com/etc/replication/treeactivation.html",
     "stability-check": "node bin/show-stablization-candidates.js",
     "incompatibility-check": "cd bin; node incompatibility-check.js",
-    "xed-validation": "cd bin/xed-validation; sh xed-validation.sh"
+    "xed-validation": "cd bin/xed-validation; ./xed-validation.sh"
   },
   "repository": {
     "type": "git",

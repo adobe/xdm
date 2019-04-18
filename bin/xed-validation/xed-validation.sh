@@ -5,7 +5,7 @@ cp -r ../../schemas ./tempinput/
 cp -r ../../extensions ./tempinput/
 
 (echo "++++++++++Start clean-up for xed conversion of platform schemas only.....++++++++++"; sleep 2)
-sh cleaninput.sh #cleanup non-platform central repo xdms
+./cleaninput.sh #cleanup non-platform central repo xdms
 
 (echo "++++++++++Start XED conversion pre-processing.....++++++++++"; sleep 2)
 node tempGen.js -i tempinput/schemas -j xdm
@@ -20,6 +20,6 @@ echo "{}" > tags.json
 node tag4xed.js -i tempxed -j xed
 
 (echo "++++++++++Start XED schema validation..... ++++++++++"; sleep 2)
-sh compile.sh
+./compile.sh
 
 (rm -rf tempinput xdm xdm-extensions tempxed xed tags.json) #cleanup temp folders

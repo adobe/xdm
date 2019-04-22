@@ -1,0 +1,108 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/experience/adcloud/searchaccount-all",
+  "title": "Adobe AdCloud Search Account Entity Full Extension",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/profile-adcloud"
+  ],
+  "description": "Adobe AdCloud Search Adgroup Entity Full Extension. Contains all Solution added fields.",
+  "definitions": {
+    "searchaccount-all": {
+      "properties": {
+        "account": {
+          "title": "Adobe Ad Cloud Search Account Top Level Fields",
+          "$ref": "https://ns.adobe.com/experience/adcloud/adsentity",
+          "description": "Adobe Ad Cloud Top Level Entity Fields."
+        },
+        "login": {
+          "title": "Login for the account",
+          "type": "string",
+          "description": "Login details of the account"
+        },
+        "password": {
+          "title": "Password for the account",
+          "type": "string",
+          "description": "Password for the account"
+        },
+        "currency": {
+          "title": "Currency the account is operated in",
+          "type": "string",
+          "description": "Currency associated with the account"
+        },
+        "managed": {
+          "title": "Is account managed or self serve",
+          "type": "character",
+          "description": "Is account managed or self service"
+        },
+        "budget": {
+          "title": "Budget",
+          "type": "number",
+          "format": "double",
+          "description": "Budget Allocated to the Account"
+        },
+        "budgetType": {
+          "title": "Budget Type",
+          "type": "string",
+          "description": "Budget Type",
+          "meta:enum": {
+            "daily": "Daily",
+            "monthly": "Monthly",
+            "lifetime": "Lifetime",
+            "daily spend until depleted": "Daily spend until depleted",
+            "day of week": "Day of week"
+          }
+        },
+        "accountStatus": {
+          "title": "Account Status",
+          "type": "string",
+          "description": "Account Status",
+          "meta:enum": {
+            "active": "Active",
+            "deleted": "Deleted",
+            "expired": "Expired",
+            "paused": "Paused",
+            "pending": "Pending"
+          }
+        },
+        "keywordCounts": {
+          "title": "Keyword Counts",
+          "$ref": "https://ns.adobe.com/experience/adcloud/entitycounts",
+          "description": "Count of keywords belonging to this account, and their status."
+        },
+        "creativeCounts": {
+          "title": "Creative Counts",
+          "$ref": "https://ns.adobe.com/experience/adcloud/entitycounts",
+          "description": "Count of ads belonging to this account, and their status."
+        },
+        "campaignCounts": {
+          "title": "Keyword Counts",
+          "$ref": "https://ns.adobe.com/experience/adcloud/entitycounts",
+          "description": "Count of campaigns belonging to this account classified by their status."
+        },
+        "adgroupCounts": {
+          "title": "Creative Counts",
+          "$ref": "https://ns.adobe.com/experience/adcloud/entitycounts",
+          "description": "Count of adgroups belonging to this account classified by their status."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/profile-adcloud#/definitions/profile-adcloud"
+    },
+    {
+      "$ref": "#/definitions/searchaccount-all"
+    }
+  ],
+  "meta:status": "experimental",
+}

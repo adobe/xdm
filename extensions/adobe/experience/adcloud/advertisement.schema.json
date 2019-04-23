@@ -7,9 +7,9 @@
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/experience/adcloud/advertisement",
-  "title": "Adobe Advertising Cloud Search Ad Details",
+  "title": "Adobe Advertising Cloud Ad Details",
   "type": "object",
-  "description": "Adobe Advertising Cloud Search Ad Details.",
+  "description": "Adobe Advertising Cloud Ad Details.",
   "definitions": {
     "advertisement": {
       "properties": {

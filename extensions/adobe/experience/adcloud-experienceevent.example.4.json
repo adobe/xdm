@@ -33,10 +33,10 @@
       }
     ]
   },
-  "https://ns.adobe.com/experience/adcloudsearch/geo": {
+  "https://ns.adobe.com/experience/adcloud/geo": {
     "xdm:physicalLocationID": "1014185"
   },
-  "https://ns.adobe.com/experience/adcloudsearch/transaction": {
+  "https://ns.adobe.com/experience/adcloud/transaction": {
     "xdm:transactionID": "177116802",
     "xdm:transactionProperties": [
       {

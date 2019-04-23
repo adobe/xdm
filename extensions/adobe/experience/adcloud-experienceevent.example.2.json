@@ -33,7 +33,7 @@
       }
     ]
   },
-  "https://ns.adobe.com/experience/adcloudsearch/advertisement": {
+  "https://ns.adobe.com/experience/adcloud/advertisement": {
     "xdm:creativeID": "301404063528",
     "xdm:keywordID": "147741280",
     "xdm:audienceID": "257600311580",
@@ -42,11 +42,11 @@
     "xdm:network": "search",
     "xdm:matchType": "broad"
   },
-  "https://ns.adobe.com/experience/adcloudsearch/geo": {
+  "https://ns.adobe.com/experience/adcloud/geo": {
     "xdm:physicalLocationID": "1014185",
     "xdm:interestLocationID": "4087"
   },
-  "https://ns.adobe.com/experience/adcloudsearch/product": {
+  "https://ns.adobe.com/experience/adcloud/product": {
     "xdm:id": "LSTTDSF9J4DQYH8ZZZUSDBCRG",
     "xdm:country": "IN",
     "xdm:language": "en",

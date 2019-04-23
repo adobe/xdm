@@ -40,6 +40,26 @@
           "title": "Stitch ID Chosen",
           "type": "string",
           "description": "ID from the Ad Servers through AdCloud STATS to track click-through conversion on browsers that block third party cookies"
+        },
+        "https://ns.adobe.com/experience/adcloudsearch/geo": {
+          "title": "Geo",
+          "$ref": "https://ns.adobe.com/experience/adcloudsearch/geo",
+          "description": "Adobe AdCloud Search Geo Information"
+        },
+        "https://ns.adobe.com/experience/adcloudsearch/adDeliveryDetails": {
+          "title": "AdDeliveryDetails",
+          "$ref": "https://ns.adobe.com/experience/adcloudsearch/geo",
+          "description": "Adobe AdCloud Search AdDelivery Details "
+        },
+        "https://ns.adobe.com/experience/adcloudsearch/product": {
+          "title": "Product",
+          "$ref": "https://ns.adobe.com/experience/adcloudsearch/adDeliveryDetails",
+          "description": "Adobe AdCloud Search Product Information "
+        },
+        "https://ns.adobe.com/experience/adcloudsearch/transaction": {
+          "title": "Transaction",
+          "$ref": "https://ns.adobe.com/experience/adcloudsearch/transaction",
+          "description": "Adobe AdCloud Search Transaction Event Related Information "
         }
       }
     }

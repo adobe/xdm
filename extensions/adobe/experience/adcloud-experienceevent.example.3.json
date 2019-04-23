@@ -33,7 +33,7 @@
       }
     ]
   },
-  "https://ns.adobe.com/experience/adcloudsearch/advertisement": {
+  "https://ns.adobe.com/experience/adcloud/advertisement": {
     "xdm:creativeID": "301404063528",
     "xdm:keywordID": "147741280",
     "xdm:audienceID": "257600311580",
@@ -42,10 +42,10 @@
     "xdm:network": "content",
     "xdm:matchType": "exact"
   },
-  "https://ns.adobe.com/experience/adcloudsearch/geo": {
+  "https://ns.adobe.com/experience/adcloud/geo": {
     "xdm:physicalLocationID": "1014185"
   },
-  "https://ns.adobe.com/experience/adcloudsearch/adDeliveryDetails,": {
+  "https://ns.adobe.com/experience/adcloud/adDeliveryDetails,": {
     "xdm:adPosition": "1t1",
     "xdm:siteLinkText": "Healthy Drinks"
   }

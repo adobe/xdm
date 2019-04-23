@@ -43,22 +43,22 @@
         },
         "https://ns.adobe.com/experience/adcloudsearch/geo": {
           "title": "Geo",
-          "$ref": "https://ns.adobe.com/experience/adcloudsearch/geo",
+          "$ref": "https://ns.adobe.com/experience/adcloud/geo",
           "description": "Adobe AdCloud Search Geo Information"
         },
         "https://ns.adobe.com/experience/adcloudsearch/adDeliveryDetails": {
           "title": "AdDeliveryDetails",
-          "$ref": "https://ns.adobe.com/experience/adcloudsearch/geo",
+          "$ref": "https://ns.adobe.com/experience/adcloud/adDeliveryDetails",
           "description": "Adobe AdCloud Search AdDelivery Details "
         },
         "https://ns.adobe.com/experience/adcloudsearch/product": {
           "title": "Product",
-          "$ref": "https://ns.adobe.com/experience/adcloudsearch/adDeliveryDetails",
+          "$ref": "https://ns.adobe.com/experience/adcloud/product",
           "description": "Adobe AdCloud Search Product Information "
         },
         "https://ns.adobe.com/experience/adcloudsearch/transaction": {
           "title": "Transaction",
-          "$ref": "https://ns.adobe.com/experience/adcloudsearch/transaction",
+          "$ref": "https://ns.adobe.com/experience/adcloud/transaction",
           "description": "Adobe AdCloud Search Transaction Event Related Information "
         }
       }

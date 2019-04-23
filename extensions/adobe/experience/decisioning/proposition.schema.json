@@ -15,6 +15,7 @@
     "https://ns.adobe.com/xdm/context/experienceevent",
     "https://ns.adobe.com/experience/decisioning/decisionevent"
   ],
+  "meta:extends": ["https://ns.adobe.com/xdm/context/identitymap"],
   "description": "Decision Proposition Reference is used to link to the proposition in experience events that are response to a particular proposition.",
   "definitions": {
     "proposition-mixin": {
@@ -31,6 +32,9 @@
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/identitymap"
     },
     {
       "$ref": "#/definitions/proposition-mixin"

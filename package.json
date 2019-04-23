@@ -21,7 +21,8 @@
     "activate": "curl -u \"$npm_package_config_aem_user:$npm_package_config_aem_password\" -F cmd=activate -F ignoredeactivated=true -F onlymodified=true -F path=/content/udp/en/open/standards/xdm/docs https://author-adobeio-stage.adobemsbasic.com/etc/replication/treeactivation.html",
     "activate:prod": "curl -u \"$npm_package_config_aem_user:$npm_package_config_aem_password\" -F cmd=activate -F ignoredeactivated=true -F onlymodified=true -F path=/content/udp/en/open/standards/xdm/docs https://author-adobeio-prod.adobemsbasic.com/etc/replication/treeactivation.html",
     "stability-check": "node bin/show-stablization-candidates.js",
-    "incompatibility-check": "cd bin; node incompatibility-check.js"
+    "incompatibility-check": "cd bin; node incompatibility-check.js",
+    "xed-validation": "cd bin/xed-validation; ./xed-validation.sh"
   },
   "repository": {
     "type": "git",
@@ -34,12 +35,24 @@
   "devDependencies": {
     "@adobe/jsonschema2md": "1.1.0",
     "ajv": "5.5.0",
+    "ajv-cli": "^2.1.0",
     "deep-diff": "^1.0.2",
+    "fs-extra": "^1.0.0",
     "mocha": "^5.0.1",
     "mocha-junit-reporter": "^1.17.0",
     "prettier": "1.15.3",
     "pretty-quick": "^1.4.1",
     "shelljs": "^0.8.3",
-    "shx": "^0.3.2"
+    "shx": "^0.3.2",
+    "winston": "^2.4.3",
+    "deep-rename-keys": "^0.2.1",
+    "dot-prop": "^4.2.0",
+    "flat": "^4.0.0",
+    "get-value": "^3.0.1",
+    "has-value": "^2.0.2",
+    "json-schema-deref-sync": "^0.4.0",
+    "json-schema-merge-allof": "^0.6.0",
+    "set-value": "^3.0.0",
+    "camelcase": "^4.1.0"
   }
 }

@@ -17,7 +17,7 @@
           "type": "object",
           "description": "List of Transaction Property Map.",
           "meta:xdmType": "map",
-          "additionalProperties" : {
+          "additionalProperties": {
             "title": "Transaction Property Item",
             "type": "string",
             "meta:xdmType": "string"

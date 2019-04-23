@@ -13,37 +13,37 @@
   "definitions": {
     "campaign": {
       "properties": {
-        "xdm:accountID": {
+        "xdm:accountId": {
           "title": "Account Identifier",
           "type": "string",
           "description": "Identifier for the account."
         },
-        "xdm:campaignID": {
+        "xdm:campaignId": {
           "title": "Campaign Identifier",
           "type": "string",
           "description": "Identifier for the campaign."
         },
-        "xdm:placementID": {
+        "xdm:placementId": {
           "title": "Placement Identifier",
           "type": "string",
           "description": "Identifier for the placement."
         },
-        "xdm:packageID": {
+        "xdm:packageId": {
           "title": "Package Identifier",
           "type": "string",
           "description": "Identifier for the package."
         },
-        "xdm:advertiserID": {
+        "xdm:advertiserId": {
           "title": "Advertiser Identifier",
           "type": "string",
           "description": "Identifier for the advertiser."
         },
-        "xdm:experimentID": {
+        "xdm:experimentId": {
           "title": "Experiment Identifier",
           "type": "string",
           "description": "Identifier for the experiment."
         },
-        "xdm:sampleGroupID": {
+        "xdm:sampleGroupId": {
           "title": "Sample Group Identifier",
           "type": "string",
           "description": "Identifier for the sample group."

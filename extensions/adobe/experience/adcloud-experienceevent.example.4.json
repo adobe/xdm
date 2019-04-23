@@ -1,6 +1,5 @@
 {
   "_id": "XH9zXgAAAI@XLLFn",
-  "xdm:eventType": "advertising.conversions",
   "xdm:timestamp": "2018-08-07T08:06:34.672Z",
   "xdm:search": {
     "xdm:searchEngineID": "https://ns.adobe.com/searchengines/3",
@@ -21,6 +20,12 @@
       "xdm:URL": "https://www.google.com/"
     }
   },
+  "xdm:advertising": {
+    "xdm:conversions": {
+      "xdm:id": "177116802",
+      "value": 1.0
+    }
+  },
   "xdm:identityMap": {
     "AdCloud": [
       {
@@ -33,24 +38,14 @@
       }
     ]
   },
-  "https://ns.adobe.com/experience/adcloud/geo": {
+  "https://ns.adobe.com/experience/adcloud/adGeoDetails": {
     "xdm:physicalLocationID": "1014185"
   },
-  "https://ns.adobe.com/experience/adcloud/transaction": {
-    "xdm:transactionID": "177116802",
-    "xdm:transactionProperties": [
-      {
-        "key": "page_load",
-        "value": "1"
-      },
-      {
-        "key": "personal_loan_landing_page",
-        "value": "2"
-      },
-      {
-        "key": "SiteEngagement_LoginSignIn",
-        "value": "2"
-      }
-    ]
+  "https://ns.adobe.com/experience/adcloud/transactionDetails": {
+     "xdm:transactionProperties": {
+      "page_load": "1",
+      "personal_loan_landing_page": "2",
+      "SiteEngagement_LoginSignIn": "2"
+    }
   }
 }

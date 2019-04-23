@@ -13,16 +13,14 @@
   "definitions": {
     "transaction": {
       "properties": {
-        "xdm:transactionID": {
-          "title": "Client Transaction Identifier",
-          "type": "string",
-          "description": "Identifier for Transaction provided by clients."
-        },
         "xdm:transactionProperties": {
-          "type": "array",
-          "description": "List of Transaction Property key and its value.",
-          "items": {
-            "$ref": "https://ns.adobe.com/experience/adcloud/keyValue"
+          "type": "object",
+          "description": "List of Transaction Property Map.",
+          "meta:xdmType": "map",
+          "additionalProperties" : {
+            "title": "Transaction Property Item",
+            "type": "string",
+            "meta:xdmType": "string"
           }
         }
       }

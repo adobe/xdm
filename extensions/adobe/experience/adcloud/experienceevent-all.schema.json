@@ -41,14 +41,14 @@
           "type": "string",
           "description": "ID from the Ad Servers through AdCloud STATS to track click-through conversion on browsers that block third party cookies"
         },
-        "https://ns.adobe.com/experience/adcloudsearch/geo": {
-          "title": "Geo",
-          "$ref": "https://ns.adobe.com/experience/adcloud/geo",
-          "description": "Search Ad Geo Information."
+        "https://ns.adobe.com/experience/adcloudsearch/adGeoDetails": {
+          "title": "Ad Geo Details",
+          "$ref": "https://ns.adobe.com/experience/adcloud/adgeodetails",
+          "description": "Search Ad Geo Details."
         },
         "https://ns.adobe.com/experience/adcloudsearch/adDeliveryDetails": {
           "title": "Ad Delivery Details",
-          "$ref": "https://ns.adobe.com/experience/adcloud/adDeliveryDetails",
+          "$ref": "https://ns.adobe.com/experience/adcloud/addeliverydetails",
           "description": "Search Ad Delivery Details."
         },
         "https://ns.adobe.com/experience/adcloudsearch/productDetails": {

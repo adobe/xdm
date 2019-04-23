@@ -1,6 +1,5 @@
 {
   "_id": "XH9zXgAAAI@XLLFn",
-  "xdm:eventType": "advertising.clicks",
   "xdm:timestamp": "2018-08-07T08:06:34.672Z",
   "xdm:search": {
     "xdm:searchEngineID": "https://ns.adobe.com/searchengines/3",
@@ -19,6 +18,11 @@
   "xdm:web": {
     "xdm:webReferrer": {
       "xdm:URL": "https://www.google.com/"
+    }
+  },
+  "xdm:advertising": {
+    "xdm:clicks": {
+      "value": 1.0
     }
   },
   "xdm:identityMap": {
@@ -42,7 +46,7 @@
     "xdm:network": "content",
     "xdm:matchType": "exact"
   },
-  "https://ns.adobe.com/experience/adcloud/geo": {
+  "https://ns.adobe.com/experience/adcloud/adGeoDetails": {
     "xdm:physicalLocationID": "1014185"
   },
   "https://ns.adobe.com/experience/adcloud/adDeliveryDetails,": {

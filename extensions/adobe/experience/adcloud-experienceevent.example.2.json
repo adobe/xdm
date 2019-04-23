@@ -1,6 +1,5 @@
 {
   "_id": "XH9zXgAAAI@XLLFn",
-  "xdm:eventType": "advertising.clicks",
   "xdm:timestamp": "2018-08-07T08:06:34.672Z",
   "xdm:search": {
     "xdm:searchEngineID": "https://ns.adobe.com/searchengines/3",
@@ -21,6 +20,11 @@
       "xdm:URL": "https://www.google.com/"
     }
   },
+  "xdm:advertising": {
+    "xdm:clicks": {
+      "value": 1.0
+    }
+  },
   "xdm:identityMap": {
     "AdCloud": [
       {
@@ -39,14 +43,14 @@
     "xdm:audienceID": "257600311580",
     "xdm:adGroupID": "32345812783",
     "xdm:campaignID": "663049855",
-    "xdm:network": "search",
+    "xdm:networkType": "search",
     "xdm:matchType": "broad"
   },
-  "https://ns.adobe.com/experience/adcloud/geo": {
+  "https://ns.adobe.com/experience/adcloud/adGeoDetails": {
     "xdm:physicalLocationID": "1014185",
     "xdm:interestLocationID": "4087"
   },
-  "https://ns.adobe.com/experience/adcloud/product": {
+  "https://ns.adobe.com/experience/adcloud/productDetails": {
     "xdm:id": "LSTTDSF9J4DQYH8ZZZUSDBCRG",
     "xdm:country": "IN",
     "xdm:language": "en",

@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/adcloudsearch/transaction",
+  "$id": "https://ns.adobe.com/experience/adcloud/transaction",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Transaction properties of experience event",
   "type": "object",
@@ -22,7 +22,7 @@
           "type": "array",
           "description": "List of Transaction Property key and its value",
           "items": {
-            "$ref": "https://ns.adobe.com/experience/adcloudsearch/keyValue"
+            "$ref": "https://ns.adobe.com/experience/adcloud/keyValue"
           }
         }
       }

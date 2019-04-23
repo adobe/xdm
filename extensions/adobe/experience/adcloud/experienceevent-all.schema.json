@@ -44,22 +44,22 @@
         "https://ns.adobe.com/experience/adcloudsearch/geo": {
           "title": "Geo",
           "$ref": "https://ns.adobe.com/experience/adcloud/geo",
-          "description": "Adobe AdCloud Search Geo Information"
+          "description": "Search Ad Geo Information."
         },
         "https://ns.adobe.com/experience/adcloudsearch/adDeliveryDetails": {
-          "title": "AdDeliveryDetails",
+          "title": "Ad Delivery Details",
           "$ref": "https://ns.adobe.com/experience/adcloud/adDeliveryDetails",
-          "description": "Adobe AdCloud Search AdDelivery Details "
+          "description": "Search Ad Delivery Details."
         },
-        "https://ns.adobe.com/experience/adcloudsearch/product": {
-          "title": "Product",
-          "$ref": "https://ns.adobe.com/experience/adcloud/product",
-          "description": "Adobe AdCloud Search Product Information "
+        "https://ns.adobe.com/experience/adcloudsearch/productDetails": {
+          "title": "Ad Product Details",
+          "$ref": "https://ns.adobe.com/experience/adcloud/productdetails",
+          "description": "Search Ad Product Details."
         },
-        "https://ns.adobe.com/experience/adcloudsearch/transaction": {
-          "title": "Transaction",
-          "$ref": "https://ns.adobe.com/experience/adcloud/transaction",
-          "description": "Adobe AdCloud Search Transaction Event Related Information "
+        "https://ns.adobe.com/experience/adcloudsearch/transactionDetails": {
+          "title": "Ad Transaction Details",
+          "$ref": "https://ns.adobe.com/experience/adcloud/transactiondetails",
+          "description": "Search Ad Transaction Details."
         }
       }
     }

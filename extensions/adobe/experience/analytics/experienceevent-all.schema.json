@@ -21,7 +21,7 @@
           "type": "array",
           "description": "A list of items representing a product selected by a customer with specific options and pricing that are for that usage context at a specific point of time and may differ from the product record.",
           "items": {
-            "$ref": "https://ns.adobe.com/experience/analtytics/productlistitem"
+            "$ref": "https://ns.adobe.com/experience/analytics/productlistitem"
           }
         },
         "https://ns.adobe.com/experience/analytics/session": {

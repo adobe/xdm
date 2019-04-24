@@ -10,7 +10,6 @@
     "xdm:type": "mobile"
   },
   "xdm:environment": {
-    "xdm:ipV4": "76.86.127.0",
     "xdm:browserDetails": {
       "xdm:userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36"
     }
@@ -38,8 +37,13 @@
       }
     ]
   },
-  "https://ns.adobe.com/experience/adcloud/adGeoDetails": {
-    "xdm:physicalLocationID": "1014185"
+  "xdm:placeContext": {
+    "xdm:geo": {
+      "@id": "https://data.adobe.io/location//1014185" ,
+      "xdm:countryCode": "US",
+      "xdm:stateProvince": "California",
+      "xdm:city": "Rialto"
+    }
   },
   "https://ns.adobe.com/experience/adcloud/transactionDetails": {
     "xdm:transactionProperties": {

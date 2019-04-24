@@ -49,10 +49,10 @@
             "pla_with_pog"
           ],
           "meta:enum": {
-            "pla_with_pog": "pla_with_pog",
-            "pla": "pla",
-            "pla_multichannel": "pla_multichannel",
-            "pla_with_promotion": "pla_with_promotion"
+            "pla_with_pog": "If the click is coming from a Purchases on Google-enabled Shopping ad",
+            "pla": "If the click is coming from a Shopping ad" ,
+            "pla_multichannel": "If the clicked Shopping ad included options for both “online” and “local” shopping channels.",
+            "pla_with_promotion": "If the clicked Shopping ad displayed a merchant promotion."
           }
         }
       }
@@ -60,7 +60,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/product"
+      "$ref": "#/definitions/productdetails"
     }
   ],
   "meta:status": "experimental"

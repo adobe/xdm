@@ -6,41 +6,36 @@
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "https://ns.adobe.com/experience/adcloud/adsmetrics",
-  "title": "Search Ad Metrics",
+  "$id": "https://ns.adobe.com/experience/adcloud/adsmeasures",
+  "title": "Search Ad Performance Measures",
   "type": "object",
-  "description": "Adobe AdCloud Search Ad Metrics",
+  "description": "Adobe AdCloud Search Ad Performance Measures",
+  "meta:extensible": true,
   "definitions": {
-    "adsmetrics": {
+    "adsmeasures": {
       "properties": {
         "xdm:clicks": {
-          "title": "Clicks",
-          "type": "integer",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Total number of clicks on your ads or keywords."
         },
         "xdm:impressions": {
-          "title": "Impressions",
-          "type": "integer",
+          "$ref": "https://ns.adobe.com/xdm/data/measure", 
           "description": "Total number of impressions on your ads or keywords."
         },
         "xdm:totalCost": {
-          "title": "Total Spend",
-          "type": "number",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Total Spend on your ads or keywords."
         },
         "xdm:pos": {
-          "title": "Ad Position",
-          "type": "number",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Position of the Ad displayed on Search Engine."
         },
         "xdm:topPageBid": {
-          "title": "Top of the Page Bid",
-          "type": "number",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Top of the Page Bid Estimator."
         },
         "xdm:qualityScore": {
-          "title": "Quality Score",
-          "type": "number",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Quality Score of the Keyword assigned by the network - range 1 to 10."
         },
         "xdm:device": {
@@ -53,7 +48,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/adsmetrics"
+      "$ref": "#/definitions/adsmeasures"
     }
   ]
 }

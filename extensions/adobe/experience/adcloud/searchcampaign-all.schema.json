@@ -19,9 +19,9 @@
         "searchcampaign-all": {
             "properties": {
                 "campaign": {
-                    "title": "Adobe Ad Cloud Search Campaign Top Level Fields",
-                    "$ref": "https://ns.adobe.com/experience/adcloud/adsentity",
-                    "description": "Adobe AdCloud Top Level Entity Fields."
+                    "title": "Adobe Ad Cloud Search Campaign Top Level Attributes",
+                    "$ref": "https://ns.adobe.com/experience/adcloud/advertisingattributes",
+                    "description": "Adobe AdCloud Top Level Attributes for Campaign Entity."
                 },
                 "accountId": {
                     "title": "Internal Account Id of the Entity",

@@ -23,16 +23,6 @@
           "$ref": "https://ns.adobe.com/experience/adcloud/adsentity",
           "description": "Adobe Ad Cloud Top Level Entity Fields."
         },
-        "login": {
-          "title": "Login for the account",
-          "type": "string",
-          "description": "Login details of the account"
-        },
-        "password": {
-          "title": "Password for the account",
-          "type": "string",
-          "description": "Password for the account"
-        },
         "currency": {
           "title": "Currency the account is operated in",
           "type": "string",
@@ -40,7 +30,7 @@
         },
         "managed": {
           "title": "Is account managed or self serve",
-          "type": "character",
+          "type": "string",
           "description": "Is account managed or self service"
         },
         "budget": {

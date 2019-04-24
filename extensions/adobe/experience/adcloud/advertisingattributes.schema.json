@@ -6,12 +6,12 @@
         "of the License at https://creativecommons.org/licenses/by/4.0/"
     ],
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "$id": "https://ns.adobe.com/experience/adcloud/adsentity",
-    "title": "Ad Cloud Top Level Entity DataTypes",
+    "$id": "https://ns.adobe.com/experience/adcloud/advertisingattributes",
+    "title": "Ad Cloud Top Level Entity Attributes DataTypes",
     "type": "object",
-    "description": "Ad Cloud Top Level Entity DataTypes",
+    "description": "Ad Cloud Top Level Entity Attributes DataTypes",
     "definitions": {
-        "adsentity": {
+        "advertisingattributes": {
             "properties": {
                 "clientId": {
                     "title": "Client ID",
@@ -43,20 +43,15 @@
                     "type": "string",
                     "description": "Status of the entity."
                 },
-                "externalStatus": {
-                    "title": "Network Status Code",
-                    "type": "string",
-                    "description": "Network Status Code of the entity."
-                },
-                "creationTime": {
-                    "title": "Creation Time of the Entity",
-                    "description": "Creation Time when entity object was created",
+                "createdTime": {
+                    "title": "Created Time of the Entity in Ad Cloud platform",
+                    "description": "Created Time when entity got created in Ad Cloud Platform.This can differ from modified time in external advertising platform partners.",
                     "type": "string",
                     "format": "date-time"
                 },
                 "modifiedTime": {
-                    "title": "Modified Time of the Entity",
-                    "description": "Modified Time when entity object was created",
+                    "title": "Modified Time of the Entity in Ad Cloud Platform",
+                    "description": "Modified Time when entity was last modified in Ad Cloud Platform. This can differ from modified time in external advertising platform partners.",
                     "type": "string",
                     "format": "date-time"
                 }
@@ -65,7 +60,7 @@
     },
     "allOf": [
         {
-            "$ref": "#/definitions/adsentity"
+            "$ref": "#/definitions/advertisingattributes"
         }
     ]
 }

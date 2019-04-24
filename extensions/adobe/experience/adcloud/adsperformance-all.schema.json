@@ -6,17 +6,17 @@
         "of the License at https://creativecommons.org/licenses/by/4.0/"
     ],
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "$id": "https://ns.adobe.com/experience/adcloud/adsperformancemetrics-all",
-    "title": "Adobe AdCloud Search Ad Performance Metrics Full Extension",
+    "$id": "https://ns.adobe.com/experience/adcloud/adsperformance-all",
+    "title": "Adobe AdCloud Search Ad Performance Report Full Extension",
     "type": "object",
     "meta:extensible": true,
     "meta:abstract": true,
     "meta:intendedToExtend": [
-        "https://ns.adobe.com/xdm/context/admetrics-search"
+        "https://ns.adobe.com/xdm/context/admeasures-adcloud"
     ],
-    "description": "Adobe AdCloud Search Ad Performance Metrics Full Extension. Contains all Solution added fields.",
+    "description": "Adobe AdCloud Search Ad Performance Report Full Extension. Contains all Solution added fields.",
   "definitions": {
-    "adsperformancemetrics-all": {
+    "adsperformance-all": {
       "properties": {
         "xdm:accountId": {
           "title": "Search Engine Account ID",
@@ -38,15 +38,10 @@
           "type": "string",
           "description": "Unique identifier for the search term which this event is associated to."
         },
-        "xdm:advertiserId": {
+        "xdm:clientId": {
           "title": "Internal Advertiser or User ID",
           "type": "string",
           "description": "Unique identifier for the advertiser which this event is associated to."
-        },
-        "xdm:creativeId": {
-          "title": "Search Engine Ad ID",
-          "type": "string",
-          "description": "Unique identifier for the creative or ad which this event is associated to."
         },
         "xdm:networkId": {
           "title": "Search Engine ID",
@@ -63,20 +58,20 @@
           "type": "string",
           "description": "Match Type associated to the Keyword being targeted for the Ad."
         },
-        "metrics": {
-          "title": "Adobe Ad Cloud Search Ad Metrics Fields",
-          "$ref": "https://ns.adobe.com/experience/adcloud/adsmetrics",
-          "description": "Adobe AdCloud Search Ad Metrics Fields."
+        "xdm:keywordMeasures: {
+          "title": "Adobe Ad Cloud Search Ad Performance Measure Custom Fields",
+          "$ref": "https://ns.adobe.com/experience/adcloud/adsmeasures",
+          "description": "Adobe AdCloud Search Ad Performance Measure Custom Fields."
         } 
       }
     }
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/context/admetrics-search"
+      "$ref": "https://ns.adobe.com/xdm/context/admeasures-adcloud"
     },
     {
-      "$ref": "#/definitions/adsperformancemetrics-all"
+      "$ref": "#/definitions/adsperformance-all"
     }
   ]
 }

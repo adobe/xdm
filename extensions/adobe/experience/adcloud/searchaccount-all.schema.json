@@ -14,13 +14,13 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/profile-adcloud"
   ],
-  "description": "Adobe AdCloud Search Adgroup Entity Full Extension. Contains all Solution added fields.",
+  "description": "Adobe AdCloud Search Account Entity Full Extension. Contains all Solution added fields.",
   "definitions": {
     "searchaccount-all": {
       "properties": {
         "account": {
           "title": "Adobe Ad Cloud Search Account Top Level Fields",
-          "$ref": "https://ns.adobe.com/experience/adcloud/adsentity",
+          "$ref": "https://ns.adobe.com/experience/adcloud/advertisingattributes",
           "description": "Adobe Ad Cloud Top Level Entity Fields."
         },
         "currency": {

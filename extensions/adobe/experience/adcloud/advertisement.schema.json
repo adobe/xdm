@@ -91,17 +91,15 @@
           "title": "Network Type",
           "type": "string",
           "description": "Network type the click event came from a search advertisement or content advertisement.",
-          "enum": ["search", "content"],
           "meta:enum": {
-            "search": "Ad is displayed in Search Network",
-            "content": "Ad is displayed in Content Network"
+            "search": "Advertisement is displayed in Search Network",
+            "content": "Advertisement is displayed in Content Network"
           }
         },
         "xdm:matchType": {
           "title": "matchType",
           "type": "string",
           "description": "Match type used to match keyword.",
-          "enum": ["exact", "broad", "phrase"],
           "meta:enum": {
             "exact": "Exact Match of the keyword",
             "broad": "Broad Match of the keyword",

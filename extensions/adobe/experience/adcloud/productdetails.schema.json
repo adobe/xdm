@@ -42,12 +42,6 @@
           "title": "Product Ad Type",
           "type": "string",
           "description": "Ad Type for Product used in Google Shopping Campaigns.",
-          "enum": [
-            "pla_with_promotion",
-            "pla_multichannel",
-            "pla",
-            "pla_with_pog"
-          ],
           "meta:enum": {
             "pla_with_pog": "If the click is coming from a Purchases on Google-enabled Shopping ad",
             "pla": "If the click is coming from a Shopping ad" ,

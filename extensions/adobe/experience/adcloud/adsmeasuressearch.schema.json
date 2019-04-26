@@ -6,13 +6,13 @@
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "https://ns.adobe.com/experience/adcloud/adsmeasures",
+  "$id": "https://ns.adobe.com/experience/adcloud/adsmeasuressearch",
   "title": "Search Ad Performance Measures",
   "type": "object",
   "description": "Adobe AdCloud Search Ad Performance Measures",
   "meta:extensible": true,
   "definitions": {
-    "adsmeasures": {
+    "adsmeasuressearch": {
       "properties": {
         "xdm:clicks": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
@@ -26,9 +26,9 @@
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Total Spend on your ads or keywords."
         },
-        "xdm:pos": {
+        "xdm:avgPosition": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Position of the Ad displayed on Search Engine."
+          "description": "Average Position of the Ad displayed on Search Engine."
         },
         "xdm:topPageBid": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
@@ -48,7 +48,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/adsmeasures"
+      "$ref": "#/definitions/adsmeasuressearch"
     }
   ]
 }

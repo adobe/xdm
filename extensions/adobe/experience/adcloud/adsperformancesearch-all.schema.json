@@ -6,17 +6,17 @@
         "of the License at https://creativecommons.org/licenses/by/4.0/"
     ],
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "$id": "https://ns.adobe.com/experience/adcloud/adsperformance-all",
+    "$id": "https://ns.adobe.com/experience/adcloud/adsperformancesearch-all",
     "title": "Adobe AdCloud Search Ad Performance Report Full Extension",
     "type": "object",
     "meta:extensible": true,
     "meta:abstract": true,
     "meta:intendedToExtend": [
-        "https://ns.adobe.com/xdm/context/admeasures-adcloud"
+        "https://ns.adobe.com/xdm/context/admeasuressearch-adcloud"
     ],
     "description": "Adobe AdCloud Search Ad Performance Report Full Extension. Contains all Solution added fields.",
   "definitions": {
-    "adsperformance-all": {
+    "adsperformancesearch-all": {
       "properties": {
         "xdm:accountId": {
           "title": "Search Engine Account ID",
@@ -44,8 +44,8 @@
           "description": "Unique identifier for the advertiser which this event is associated to."
         },
         "xdm:networkId": {
-          "title": "Search Engine ID",
-          "type": "integer",
+          "title": "Search Engine Name",
+          "type": "string",
           "description": "Unique identifier for the Search Engine which this event is associated to."
         },
         "xdm:term": {
@@ -68,10 +68,10 @@
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/context/admeasures-adcloud"
+      "$ref": "https://ns.adobe.com/xdm/context/admeasuressearch-adcloud"
     },
     {
-      "$ref": "#/definitions/adsperformance-all"
+      "$ref": "#/definitions/adsperformancesearch-all"
     }
   ]
 }

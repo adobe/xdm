@@ -74,5 +74,26 @@
     "xdm:eventID": "onJourneyEnter"
   },
   "https://ns.adobe.com/experience/campaign/containerID": "customer-stage",
-  "https://ns.adobe.com/experience/campaign/eventSource": "pipelined-mta"
+  "https://ns.adobe.com/experience/campaign/eventSource": "pipelined-mta",
+  "https://ns.adobe.com/experience/campaign/offersProposed": [
+    {
+      "xdm:activity": {
+        "xdm:id": "xcore:offer-activity:f66f792de3c0ba9",
+        "xdm:name": "Email - Next Best Offer",
+        "xdm:placement": "xcore:offer-placement:f6524d27c2d6edd",
+        "xdm:filter": "xcore:offer-filter:f66f792de3c0ba9"
+      },
+      "xdm:offer": {
+        "xdm:id": "xcore:personalized-offer:f67bab756ed6ee4",
+        "xdm:name": "Beach Vacations",
+        "xdm:tags": ["xcore:tag:f68535bc217322e", "xcore:tag:f66f67dbe6d6ee1"],
+        "xdm:characteristics": {
+          "cost": "$2400",
+          "inventoryId": "BORA04",
+          "country": "French Polynesia"
+        },
+        "xdm:eligibilityRule": "xcore:eligibility-rule:e5244c22eff29e8"
+      }
+    }
+  ]
 }

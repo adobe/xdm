@@ -6,7 +6,7 @@
         "of the License at https://creativecommons.org/licenses/by/4.0/"
     ],
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "$id": "https://ns.adobe.com/experience/adcloud/searchportfolio-all",
+    "$id": "https://ns.adobe.com/experience/adcloud/search/portfolio-all",
     "title": "Search Portfolio Detail",
     "type": "object",
     "meta:extensible": true,
@@ -15,11 +15,11 @@
         "https://ns.adobe.com/xdm/context/profile-adcloud"
     ],
     "description": "Adobe AdCloud Search Portfolio Full Extension ",
-    "searchportfolio-all": {
+    "portfolio-all": {
         "properties": {
             "portfolio": {
                 "title": "Adobe Ad Cloud Search Portfolio Top Level Fields",
-                "$ref": "https://ns.adobe.com/experience/adcloud/advertisingattributes",
+                "$ref": "https://ns.adobe.com/experience/adcloud/search/advertisingattributes",
                 "description": "Adobe Ad Cloud Top Level Entity Fields."
             },
             "billingState": {
@@ -49,7 +49,7 @@
             "$ref": "https://ns.adobe.com/xdm/context/profile-adcloud#/definitions/profile-adcloud"
         },
         {
-            "$ref": "#/definitions/searchportfolio-all"
+            "$ref": "#/definitions/portfolio-all"
         }
     ]
 }

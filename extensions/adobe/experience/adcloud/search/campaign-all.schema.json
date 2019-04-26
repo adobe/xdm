@@ -24,21 +24,16 @@
                     "description": "Adobe AdCloud Top Level Attributes for Campaign Entity."
                 },
                 "accountId": {
-                    "title": "Internal Account Id of the Entity",
+                    "title": "Internal Account Id of the Campaign",
                     "type": "integer",
-                    "description": "Internal Account Entity belongs to."
-                },
-                "networkId": {
-                    "title": "Search Engine ID",
-                    "type": "string",
-                    "description": "Unique identifier for the Search Engine which this event is associated to."
+                    "description": "Internal Account the Campaign belongs to."
                 },
                 "portfolioId": {
                     "title": "Portfolio Id",
                     "type": "integer",
-                    "description": "Portfolio Id"
+                    "description": "Portfolio Id assigned to the Campaign"
                 },
-                "mobileBid": {
+                "mobileBidAdjustment": {
                     "title": "Mobile Bid Adjustment",
                     "type": "integer",
                     "description": "Mobile Bid Adjustment"
@@ -46,7 +41,7 @@
                 "channelType": {
                     "title": "Channel Type",
                     "type": "string",
-                    "description": "Channel Type"
+                    "description": "Channel Type for the Campaign"
                 },
                 "budget": {
                     "title": "Budget",

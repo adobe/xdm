@@ -58,7 +58,7 @@
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/context/admeasures-adcloud"
+      "$ref": "https://ns.adobe.com/xdm/context/admeasuressearch-adcloud"
     },
     {
       "$ref": "#/definitions/adsperformance-all"

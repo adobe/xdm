@@ -43,7 +43,11 @@
         "xdm:slot": {
           "title": "Page Slot",
           "type": "string",
-          "description": "Named section of the page where the search result appeared. For eg. Top, Side."
+          "description": "Named section of the page where the search result appeared. For eg. Top, Side.",
+          "meta:enum": {
+            "top": "Top of the page",
+            "side": "Side of the page"
+          }
         },
         "xdm:position": {
           "title": "Listing Position",

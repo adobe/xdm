@@ -27,9 +27,9 @@
                 "type": "string",
                 "description": "Billing State of a Search Portfolio",
                 "meta:enum": {
-                    "m": "Managed",
-                    "n": "Not Managed",
-                    "l": "Manual"
+                    "managed": "Managed",
+                    "unmanaged": "Not Managed",
+                    "manual": "Manual"
                 }
             },
             "portfolioGroupName": {

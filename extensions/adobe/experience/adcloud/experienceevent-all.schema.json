@@ -43,7 +43,7 @@
         },
         "https://ns.adobe.com/experience/adcloud/adDeliveryDetails": {
           "title": "Ad Delivery Details",
-          "$ref":"https://ns.adobe.com/experience/adcloud/addeliverydetails",
+          "$ref": "https://ns.adobe.com/experience/adcloud/addeliverydetails",
           "description": "Adobe AdCloud Search Ad Delivery Details."
         },
         "https://ns.adobe.com/experience/adcloud/productDetails": {

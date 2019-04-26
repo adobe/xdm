@@ -38,7 +38,7 @@
   },
   "xdm:placeContext": {
     "xdm:geo": {
-      "@id": "https://data.adobe.io/location//1014185" ,
+      "@id": "https://data.adobe.io/location/google/geotargeting/1014185",
       "xdm:countryCode": "US",
       "xdm:stateProvince": "California",
       "xdm:city": "Rialto"
@@ -53,7 +53,7 @@
     "xdm:network": "content",
     "xdm:matchType": "exact"
   },
-  "https://ns.adobe.com/experience/adcloud/adDeliveryDetails,": {
+  "https://ns.adobe.com/experience/adcloud/adDeliveryDetails": {
     "xdm:siteLinkText": "Best Personal Loan ",
     "xdm:placementWebsite": "www.cashusa.com"
   }

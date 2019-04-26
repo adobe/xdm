@@ -28,6 +28,11 @@
                     "type": "integer",
                     "description": "Internal Account Entity belongs to."
                 },
+                "networkId": {
+                    "title": "Search Engine ID",
+                    "type": "string",
+                    "description": "Unique identifier for the Search Engine which this event is associated to."
+                },
                 "portfolioId": {
                     "title": "Portfolio Id",
                     "type": "integer",
@@ -84,11 +89,13 @@
                 "startDate": {
                     "title": "Start Date",
                     "type": "string",
+                    "format": "date",
                     "description": "Campaign Start Date"
                 },
                 "endDate": {
                     "title": "End Date",
                     "type": "string",
+                    "format": "date"
                     "description": "Campaign End Date"
                 }
             }

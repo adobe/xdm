@@ -43,17 +43,17 @@
         },
         "https://ns.adobe.com/experience/adcloud/adDeliveryDetails": {
           "title": "Ad Delivery Details",
-          "$ref": "https://ns.adobe.com/experience/adcloud/addeliverydetails",
-          "description": "Search Ad Delivery Details."
+          "$ref":"https://ns.adobe.com/experience/adcloud/addeliverydetails",
+          "description": "Adobe AdCloud Search Ad Delivery Details."
         },
         "https://ns.adobe.com/experience/adcloud/productDetails": {
           "title": "Ad Product Details",
           "$ref": "https://ns.adobe.com/experience/adcloud/productdetails",
-          "description": "Search Ad Product Details."
+          "description": "Adobe AdCloud Search Ad Product Details."
         },
-        "https://ns.adobe.com/experience/adcloud/transactionDetails": {
+        "https://ns.adobe.com/experience/adcloud/conversionDetails": {
           "title": "Ad Transaction Details",
-          "$ref": "https://ns.adobe.com/experience/adcloud/transactiondetails",
+          "$ref": "https://ns.adobe.com/experience/adcloud/conversiondetails",
           "description": "Search Ad Transaction Details."
         }
       }

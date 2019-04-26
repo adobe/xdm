@@ -7,11 +7,11 @@
   ],
   "$id": "https://ns.adobe.com/experience/adcloud/addeliverydetails",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Adobe Advertising Cloud Search Ad Delivery Details",
+  "title": "Adobe Advertising Cloud Ad Delivery Details",
   "type": "object",
   "description": "Adobe Advertising Cloud Search Ad Delivery Details.",
   "definitions": {
-    "adDeliveryDetails": {
+    "addeliverydetails": {
       "properties": {
         "xdm:placementWebsite": {
           "title": "Placement website",

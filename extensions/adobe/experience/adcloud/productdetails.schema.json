@@ -11,7 +11,7 @@
   "type": "object",
   "description": "Adobe Advertising Cloud Search Product Details.",
   "definitions": {
-    "product": {
+    "productdetails": {
       "properties": {
         "xdm:productID": {
           "title": "Product Identifier",

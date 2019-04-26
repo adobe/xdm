@@ -38,7 +38,7 @@
   },
   "xdm:placeContext": {
     "xdm:geo": {
-      "@id": "https://data.adobe.io/location//1014185" ,
+      "@id": "https://data.adobe.io/location/google/geotargeting/1014185" ,
       "xdm:countryCode": "US",
       "xdm:stateProvince": "California",
       "xdm:city": "Rialto"
@@ -53,10 +53,10 @@
     "xdm:networkType": "search",
     "xdm:matchType": "broad"
   },
-  "https://ns.adobe.com/experience/adcloud/addeliverydetails": {
+  "https://ns.adobe.com/experience/adcloud/adDeliveryDetails": {
     "xdm:interestLocationID": "4087"
   },
-  "https://ns.adobe.com/experience/adcloud/productdetails": {
+  "https://ns.adobe.com/experience/adcloud/productDetails": {
     "xdm:id": "LSTTDSF9J4DQYH8ZZZUSDBCRG",
     "xdm:country": "IN",
     "xdm:language": "en",

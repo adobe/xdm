@@ -13,11 +13,6 @@
     "definitions": {
         "advertisingattributes": {
             "properties": {
-                "clientId": {
-                    "title": "Client ID",
-                    "type": "string",
-                    "description": "Client ID for the entity."
-                },
                 "externalId": {
                     "title": "External Entity ID",
                     "type": "string",

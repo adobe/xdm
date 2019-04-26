@@ -6,7 +6,7 @@
         "of the License at https://creativecommons.org/licenses/by/4.0/"
     ],
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "$id": "https://ns.adobe.com/experience/adcloud/search/adsperformance-all",
+    "$id": "https://ns.adobe.com/experience/adcloud/search/adperformance-all",
     "title": "Adobe AdCloud Search Ad Performance Report Full Extension",
     "type": "object",
     "meta:extensible": true,
@@ -16,7 +16,7 @@
     ],
     "description": "Adobe AdCloud Search Ad Performance Report Full Extension. Contains all Solution added fields.",
   "definitions": {
-    "adsperformance-all": {
+    "adperformance-all": {
       "properties": {
         "xdm:accountId": {
           "title": "Search Engine Account ID",
@@ -50,7 +50,7 @@
         },
         "xdm:adMeasures": {
           "title": "Adobe Ad Cloud Search Ad Performance Measure Custom Fields",
-          "$ref": "https://ns.adobe.com/experience/adcloud/search/adsmeasures",
+          "$ref": "https://ns.adobe.com/experience/adcloud/search/admeasures",
           "description": "Adobe AdCloud Search Ad Performance Measure Custom Fields."
         } 
       }
@@ -61,7 +61,7 @@
       "$ref": "https://ns.adobe.com/xdm/context/admeasuressearch-adcloud"
     },
     {
-      "$ref": "#/definitions/adsperformance-all"
+      "$ref": "#/definitions/adperformance-all"
     }
   ]
 }

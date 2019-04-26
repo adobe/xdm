@@ -1,17 +1,15 @@
 {
-    "adgroup-all": {
-		"adgroup": {
-			"xdm:externalId": "26043611800",
-			"xdm:network": "Google Adwords",
-			"xdm:name": "googlecampaignadgroup04",
-			"xdm:description": "",
-			"xdm:status": "Removed",
-			"xdm:createdTime": "2015-10-09 23:16:00",
-			"xdm:modifiedTime": "2015-10-16 22:16:00"
-        },
-        "campaignInternalId": 1790129561,
-        "bidLevel": "adgroup",
-        "mobileBidAdjustment": -90,
-        "searchMaxCPC": 85
-    }
+    "adgroup": {
+        "xdm:externalId": "26043611800",
+        "xdm:network": "Google Adwords",
+        "xdm:name": "googlecampaignadgroup04",
+        "xdm:description": "",
+        "xdm:status": "Removed",
+        "xdm:createdTime": "2015-10-09 23:16:00",
+        "xdm:modifiedTime": "2015-10-16 22:16:00"
+    },
+    "campaignInternalIdentifier": 1790129561,
+    "bidLevel": "adgroup",
+    "mobileBidAdjustment": -90,
+    "searchMaxCPC": 85
 }

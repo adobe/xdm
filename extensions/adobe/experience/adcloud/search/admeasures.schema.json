@@ -6,13 +6,13 @@
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "https://ns.adobe.com/experience/adcloud/search/adsmeasures",
+  "$id": "https://ns.adobe.com/experience/adcloud/search/admeasures",
   "title": "Search Ad Performance Measures",
   "type": "object",
   "description": "Adobe AdCloud Search Ad Performance Measures",
   "meta:extensible": true,
   "definitions": {
-    "adsmeasures": {
+    "admeasures": {
       "properties": {
         "xdm:clicks": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
@@ -48,7 +48,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/adsmeasures"
+      "$ref": "#/definitions/admeasures"
     }
   ]
 }

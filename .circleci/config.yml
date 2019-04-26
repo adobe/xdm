@@ -81,7 +81,9 @@ jobs:
       - store_artifacts:
           path: junit 
       # incompatibility-check
-      - run: npm run incompatibility-check      
+      - run: npm run incompatibility-check
+      # xed-validation
+      - run: npm run xed-validation
 
   generate-docs:
     docker:

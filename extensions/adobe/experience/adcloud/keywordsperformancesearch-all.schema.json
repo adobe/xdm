@@ -60,7 +60,7 @@
         },
         "xdm:keywordMeasures": {
           "title": "Adobe Ad Cloud Search Ad Performance Measure Custom Fields",
-          "$ref": "https://ns.adobe.com/experience/adcloud/adsmeasures",
+          "$ref": "https://ns.adobe.com/experience/adcloud/adsmeasuressearch",
           "description": "Adobe AdCloud Search Ad Performance Measure Custom Fields."
         } 
       }

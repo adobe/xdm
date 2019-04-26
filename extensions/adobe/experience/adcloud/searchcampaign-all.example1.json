@@ -1,0 +1,26 @@
+{
+    "_id": "100000123",
+    "searchcampaign-all": {
+        "campaign": {
+            "xdm:clientId": "2419",
+            "xdm:externalId": "100001",
+            "xdm:network": "Google AdWords",
+            "xdm:name": "My First Campaign",
+            "xdm:description": "My First Search Campaign",
+            "xdm:status": "Active",
+            "xdm:createdTime": "2019-01-08 14:00:00",
+            "xdm:modifiedTime": "2019-02-09 14:00:00"
+        },
+        "accountId": "12345678",
+        "networkId": "3",
+        "portfolioId": "12334556789",
+        "mobileBId": 12,
+        "channelType": "Search",
+        "budget": 123.45,
+        "budgetType": "daily",
+        "deliveryType": "standard",
+        "objective": "visit_web",
+        "startDate": "2019-01-28",
+        "endDate": "2021-01-28"
+    }
+}

@@ -6,17 +6,17 @@
         "of the License at https://creativecommons.org/licenses/by/4.0/"
     ],
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "$id": "https://ns.adobe.com/experience/adcloud/adsperformancesearch-all",
+    "$id": "https://ns.adobe.com/experience/adcloud/search/keywordsperformance-all",
     "title": "Adobe AdCloud Search Keyword Performance Report Full Extension",
     "type": "object",
     "meta:extensible": true,
     "meta:abstract": true,
     "meta:intendedToExtend": [
-        "https://ns.adobe.com/xdm/context/admeasuressearch-adcloud"
+        "https://ns.adobe.com/xdm/context/admeasures-adcloud"
     ],
     "description": "Adobe AdCloud Search Keyword Performance Report Full Extension. Contains all Solution added fields.",
   "definitions": {
-    "keywordsperformancesearch-all": {
+    "keywordsperformance-all": {
       "properties": {
         "xdm:accountId": {
           "title": "Search Engine Account ID",
@@ -36,7 +36,7 @@
         "xdm:termId": {
           "title": "Search Term ID",
           "type": "string",
-          "description": "Unique identifier for the search term which this event is associated to."
+          "description": "Unique identifier for the  term which this event is associated to."
         },
         "xdm:clientId": {
           "title": "Internal Advertiser or User ID",
@@ -60,7 +60,7 @@
         },
         "xdm:keywordMeasures": {
           "title": "Adobe Ad Cloud Search Ad Performance Measure Custom Fields",
-          "$ref": "https://ns.adobe.com/experience/adcloud/adsmeasuressearch",
+          "$ref": "https://ns.adobe.com/experience/adcloud/search/adsmeasures",
           "description": "Adobe AdCloud Search Ad Performance Measure Custom Fields."
         } 
       }
@@ -68,10 +68,10 @@
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/context/admeasuressearch-adcloud"
+      "$ref": "https://ns.adobe.com/xdm/context/admeasures-adcloud"
     },
     {
-      "$ref": "#/definitions/keywordsperformancesearch-all"
+      "$ref": "#/definitions/keywordsperformance-all"
     }
   ]
 }

@@ -95,7 +95,7 @@
                 "endDate": {
                     "title": "End Date",
                     "type": "string",
-                    "format": "date"
+                    "format": "date",
                     "description": "Campaign End Date"
                 }
             }

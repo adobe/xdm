@@ -6,7 +6,7 @@
         "of the License at https://creativecommons.org/licenses/by/4.0/"
     ],
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "$id": "https://ns.adobe.com/experience/adcloud/searchcampaign-all",
+    "$id": "https://ns.adobe.com/experience/adcloud/search/campaign-all",
     "title": "Adobe AdCloud Search Campaign Entity Full Extension",
     "type": "object",
     "meta:extensible": true,
@@ -16,11 +16,11 @@
     ],
     "description": "Adobe AdCloud Search Campaign Entity Full Extension. Contains all Solution added fields.",
     "definitions": {
-        "searchcampaign-all": {
+        "campaign-all": {
             "properties": {
                 "campaign": {
                     "title": "Adobe Ad Cloud Search Campaign Top Level Attributes",
-                    "$ref": "https://ns.adobe.com/experience/adcloud/advertisingattributes",
+                    "$ref": "https://ns.adobe.com/experience/adcloud/search/advertisingattributes",
                     "description": "Adobe AdCloud Top Level Attributes for Campaign Entity."
                 },
                 "accountId": {

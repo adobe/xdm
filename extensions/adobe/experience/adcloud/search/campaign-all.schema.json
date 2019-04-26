@@ -106,7 +106,7 @@
             "$ref": "https://ns.adobe.com/xdm/context/profile-adcloud#/definitions/profile-adcloud"
         },
         {
-            "$ref": "#/definitions/searchcampaign-all"
+            "$ref": "#/definitions/campaign-all"
         }
     ],
     "meta:status": "experimental"

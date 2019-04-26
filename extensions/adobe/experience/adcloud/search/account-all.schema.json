@@ -1,0 +1,66 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/experience/adcloud/search/account-all",
+  "title": "Adobe AdCloud Search Account Entity Full Extension",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/profile-adcloud"
+  ],
+  "description": "Adobe AdCloud Search Account Entity Full Extension. Contains all Solution added fields.",
+  "definitions": {
+    "account-all": {
+      "properties": {
+        "account": {
+          "title": "Adobe Ad Cloud Search Account Top Level Fields",
+          "$ref": "https://ns.adobe.com/experience/adcloud/search/advertisingattributes",
+          "description": "Adobe Ad Cloud Top Level Entity Fields."
+        },
+        "currency": {
+          "title": "Currency the account is operated in",
+          "type": "string",
+          "description": "Currency associated with the account"
+        },
+        "managed": {
+          "title": "Is account managed or self serve",
+          "type": "string",
+          "description": "Is account managed or self service"
+        },
+        "budget": {
+          "title": "Budget",
+          "type": "number",
+          "format": "double",
+          "description": "Budget Allocated to the Account"
+        },
+        "budgetType": {
+          "title": "Budget Type",
+          "type": "string",
+          "description": "Budget Type",
+          "meta:enum": {
+            "daily": "Daily",
+            "monthly": "Monthly",
+            "lifetime": "Lifetime",
+            "daily spend until depleted": "Daily spend until depleted",
+            "day of week": "Day of week"
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/profile-adcloud#/definitions/profile-adcloud"
+    },
+    {
+      "$ref": "#/definitions/account-all"
+    }
+  ],
+  "meta:status": "experimental",
+}

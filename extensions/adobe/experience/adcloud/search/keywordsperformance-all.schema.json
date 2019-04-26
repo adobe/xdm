@@ -12,7 +12,7 @@
     "meta:extensible": true,
     "meta:abstract": true,
     "meta:intendedToExtend": [
-        "https://ns.adobe.com/xdm/context/admeasures-adcloud"
+        "https://ns.adobe.com/xdm/context/admeasuressearch-adcloud"
     ],
     "description": "Adobe AdCloud Search Keyword Performance Report Full Extension. Contains all Solution added fields.",
   "definitions": {
@@ -68,7 +68,7 @@
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/context/admeasures-adcloud"
+      "$ref": "https://ns.adobe.com/xdm/context/admeasuressearch-adcloud"
     },
     {
       "$ref": "#/definitions/keywordsperformance-all"

@@ -1,0 +1,16 @@
+{
+    "_id": "100000123",
+    "searchportfolio-all": {
+        "portfolio": {
+            "xdm:clientId": "2419",
+            "xdm:name": "My First Portfolio",
+            "xdm:description": "My First Search Portfolio",
+            "xdm:status": "Active",
+            "xdm:createdTime": "2019-01-08 14:00:00",
+            "xdm:modifiedTime": "2019-02-09 14:00:00"
+        },
+        "billingState": "Managed",
+        "portfolioGroupName": "My First Portfolio Group",
+        "portfolioGroupInternalId": "34567"
+    }
+}

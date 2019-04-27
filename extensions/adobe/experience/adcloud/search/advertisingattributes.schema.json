@@ -1,0 +1,61 @@
+{
+    "meta:license": [
+        "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "https://ns.adobe.com/experience/adcloud/search/advertisingattributes",
+    "title": "Ad Cloud Top Level Entity Attributes DataTypes",
+    "type": "object",
+    "description": "Ad Cloud Top Level Entity Attributes DataTypes",
+    "definitions": {
+        "advertisingattributes": {
+            "properties": {
+                "externalId": {
+                    "title": "External Entity ID",
+                    "type": "string",
+                    "description": "Unique External identifier as represented by the network for the entity object."
+                },
+                "network": {
+                    "title": "Network",
+                    "type": "string",
+                    "description": "Network Name as defined by the search partners."
+                },
+                "name": {
+                    "title": "Name",
+                    "type": "string",
+                    "description": "Name of the entity."
+                },
+                "description": {
+                    "title": "Description",
+                    "type": "string",
+                    "description": "Description of the entity."
+                },
+                "status": {
+                    "title": "Status",
+                    "type": "string",
+                    "description": "Status of the entity."
+                },
+                "createdTime": {
+                    "title": "Created Time of the Entity in Ad Cloud platform",
+                    "description": "Created Time when entity got created in Ad Cloud Platform.This can differ from modified time in external advertising platform partners.",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "modifiedTime": {
+                    "title": "Modified Time of the Entity in Ad Cloud Platform",
+                    "description": "Modified Time when entity was last modified in Ad Cloud Platform. This can differ from modified time in external advertising platform partners.",
+                    "type": "string",
+                    "format": "date-time"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/advertisingattributes"
+        }
+    ]
+}

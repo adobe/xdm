@@ -1,0 +1,55 @@
+{
+    "meta:license": [
+        "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "https://ns.adobe.com/experience/adcloud/search/portfolio-all",
+    "title": "Search Portfolio Detail",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/profile-adcloud"
+    ],
+    "description": "Adobe AdCloud Search Portfolio Full Extension ",
+    "portfolio-all": {
+        "properties": {
+            "portfolio": {
+                "title": "Adobe Ad Cloud Search Portfolio Top Level Fields",
+                "$ref": "https://ns.adobe.com/experience/adcloud/search/advertisingattributes",
+                "description": "Adobe Ad Cloud Top Level Entity Fields."
+            },
+            "billingState": {
+                "title": "Billing State",
+                "type": "string",
+                "description": "Billing State of a Search Portfolio",
+                "meta:enum": {
+                    "managed": "Managed",
+                    "unmanaged": "Not Managed",
+                    "manual": "Manual"
+                }
+            },
+            "portfolioGroupName": {
+                "title": "Portfolio Group Name",
+                "type": "string",
+                "description": "Name of the Portfolio Group"
+            },
+            "portfolioGroupId": {
+                "title": "Portfolio Group Internal Id",
+                "type": "string",
+                "description": "Internal Identifier for a Portfolio Group"
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/context/profile-adcloud#/definitions/profile-adcloud"
+        },
+        {
+            "$ref": "#/definitions/portfolio-all"
+        }
+    ]
+}

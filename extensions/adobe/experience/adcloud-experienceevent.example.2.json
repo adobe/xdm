@@ -21,6 +21,7 @@
   },
   "xdm:advertising": {
     "xdm:clicks": {
+      "id": "XJm2lgAAAEmW1LVH",
       "value": 1.0
     }
   },
@@ -29,20 +30,7 @@
       {
         "id": "XA9N8wAAAMnAaj_e"
       }
-    ],
-    "CLICKID": [
-      {
-        "id": "XJm2lgAAAEmW1LVH"
-      }
     ]
-  },
-  "xdm:placeContext": {
-    "xdm:geo": {
-      "@id": "https://data.adobe.io/location/google/geotargeting/1014185",
-      "xdm:countryCode": "US",
-      "xdm:stateProvince": "California",
-      "xdm:city": "Rialto"
-    }
   },
   "https://ns.adobe.com/experience/adcloud/advertisement": {
     "xdm:creativeID": "301404063528",
@@ -54,10 +42,12 @@
     "xdm:matchType": "broad"
   },
   "https://ns.adobe.com/experience/adcloud/adDeliveryDetails": {
-    "xdm:interestLocationID": "4087"
+    "xdm:interestLocationID": "4087",
+    "xdm:physicalLocationID": "1014185",
+    "xdm:placementWebsite": "www.tripadvisor.com"
   },
   "https://ns.adobe.com/experience/adcloud/productDetails": {
-    "xdm:id": "LSTTDSF9J4DQYH8ZZZUSDBCRG",
+    "xdm:productID": "LSTTDSF9J4DQYH8ZZZUSDBCRG",
     "xdm:country": "IN",
     "xdm:language": "en",
     "xdm:partitionID": "342294687595",

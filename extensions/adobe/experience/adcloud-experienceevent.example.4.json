@@ -2,9 +2,7 @@
   "_id": "XH9zXgAAAI@XLLFn",
   "xdm:timestamp": "2018-08-07T08:06:34.672Z",
   "xdm:search": {
-    "xdm:searchEngineID": "https://ns.adobe.com/searchengines/3",
-    "xdm:keywords": "driveways designs",
-    "xdm:isPaid": true
+    "xdm:searchEngineID": "https://ns.adobe.com/searchengines/3"
   },
   "xdm:device": {
     "xdm:type": "mobile"
@@ -30,21 +28,9 @@
       {
         "id": "XA9N8wAAAMnAaj_e"
       }
-    ],
-    "CLICKID": [
-      {
-        "id": "XJm2lgAAAEmW1LVH"
-      }
     ]
   },
-  "xdm:placeContext": {
-    "xdm:geo": {
-      "@id": "https://data.adobe.io/location/google/geotargeting/1014185",
-      "xdm:countryCode": "US",
-      "xdm:stateProvince": "California",
-      "xdm:city": "Rialto"
-    }
-  },
+
   "https://ns.adobe.com/experience/adcloud/transactionDetails": {
     "xdm:transactionProperties": {
       "page_load": "1",

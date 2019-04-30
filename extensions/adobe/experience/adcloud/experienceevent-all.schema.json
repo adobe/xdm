@@ -52,9 +52,9 @@
           "description": "Adobe AdCloud Search Ad Product Details."
         },
         "https://ns.adobe.com/experience/adcloud/conversionDetails": {
-          "title": "Ad Transaction Details",
+          "title": "Ad Conversion Details",
           "$ref": "https://ns.adobe.com/experience/adcloud/conversiondetails",
-          "description": "Search Ad Transaction Details."
+          "description": "Search Ad Conversion Details."
         }
       }
     }

@@ -2,9 +2,7 @@
   "_id": "XH9zXgAAAI@XLLFn",
   "xdm:timestamp": "2018-08-07T08:06:34.672Z",
   "xdm:search": {
-    "xdm:searchEngineID": "https://ns.adobe.com/searchengines/3",
-    "xdm:keywords": "loan",
-    "xdm:isPaid": true
+    "xdm:searchEngineID": "https://ns.adobe.com/searchengines/3"
   },
   "xdm:device": {
     "xdm:type": "mobile"
@@ -21,6 +19,7 @@
   },
   "xdm:advertising": {
     "xdm:clicks": {
+      "id": "XJm2lgAAAEmW1LVH",
       "value": 1.0
     }
   },
@@ -29,21 +28,9 @@
       {
         "id": "XA9N8wAAAMnAaj_e"
       }
-    ],
-    "CLICKID": [
-      {
-        "id": "XJm2lgAAAEmW1LVH"
-      }
     ]
   },
-  "xdm:placeContext": {
-    "xdm:geo": {
-      "@id": "https://data.adobe.io/location/google/geotargeting/1014185",
-      "xdm:countryCode": "US",
-      "xdm:stateProvince": "California",
-      "xdm:city": "Rialto"
-    }
-  },
+
   "https://ns.adobe.com/experience/adcloud/advertisement": {
     "xdm:creativeID": "301404063528",
     "xdm:keywordID": "147741280",
@@ -54,7 +41,6 @@
     "xdm:matchType": "exact"
   },
   "https://ns.adobe.com/experience/adcloud/adDeliveryDetails": {
-    "xdm:siteLinkText": "Best Personal Loan ",
-    "xdm:placementWebsite": "www.cashusa.com"
+    "xdm:siteLinkText": "Best Personal Loan "
   }
 }

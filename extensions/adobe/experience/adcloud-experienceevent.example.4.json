@@ -31,8 +31,8 @@
     ]
   },
 
-  "https://ns.adobe.com/experience/adcloud/transactionDetails": {
-    "xdm:transactionProperties": {
+  "https://ns.adobe.com/experience/adcloud/conversionDetails": {
+    "xdm:conversionProperties": {
       "page_load": "1",
       "personal_loan_landing_page": "2",
       "SiteEngagement_LoginSignIn": "2"

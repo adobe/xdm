@@ -1,5 +1,5 @@
 {
-    "@id": 1792062465,
+    "xdm:id": 1792062465,
     "adgroup": {
         "xdm:externalId": "26043611800",
         "xdm:network": "Google Adwords",
@@ -9,8 +9,8 @@
         "xdm:createdTime": "2015-10-09 23:16:00",
         "xdm:modifiedTime": "2015-10-16 22:16:00"
     },
-    "campaignInternalIdentifier": 1790129561,
-    "bidLevel": "adgroup",
-    "mobileBidAdjustment": -90,
-    "searchMaxCPC": 85
+    "xdm:campaignInternalIdentifier": 1790129561,
+    "xdm:bidLevel": "adgroup",
+    "xdm:mobileBidAdjustment": -90,
+    "xdm:searchMaxCPC": 85
 }

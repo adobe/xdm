@@ -23,12 +23,12 @@
                     "$ref": "https://ns.adobe.com/experience/adcloud/search/advertisingattributes",
                     "description": "Adobe Ad Cloud Top Level Attributes for Adgroups."
                 },
-                "campaignInternalId": {
+                "xdm:campaignInternalId": {
                     "title": "Campaign Unique Identifier",
                     "type": "integer",
                     "description": "Campaign unique identifier for the campaign this adgroup belongs to. Use for joining with campaigns."
                 },
-                "bidLevel": {
+                "xdm:bidLevel": {
                     "title": "Bid Level",
                     "type": "string",
                     "description:": "What determines the bid for all ads belonging to this adgroup.",
@@ -42,12 +42,12 @@
                         "user_interest_and_list": "User Interest and List"
                     }
                 },
-                "mobileBidAdjustment": {
+                "xdm:mobileBidAdjustment": {
                     "title": "Mobile Bid Adjustment",
                     "type": "integer",
                     "description": "Percentage determining the change in bid for mobile ads."
                 },
-                "searchMaxCPC": {
+                "xdm:searchMaxCPC": {
                     "title": "Seach Max Cost per Click",
                     "type": "integer",
                     "description": "Maximum cost per click for ads belonging to this adgroup."

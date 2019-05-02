@@ -13,38 +13,38 @@
     "definitions": {
         "advertisingattributes": {
             "properties": {
-                "externalId": {
+                "xdm:externalId": {
                     "title": "External Entity ID",
                     "type": "string",
                     "description": "Unique External identifier as represented by the network for the entity object."
                 },
-                "network": {
+                "xdm:network": {
                     "title": "Network",
                     "type": "string",
                     "description": "Network Name as defined by the search partners."
                 },
-                "name": {
+                "xdm:name": {
                     "title": "Name",
                     "type": "string",
                     "description": "Name of the entity."
                 },
-                "description": {
+                "xdm:description": {
                     "title": "Description",
                     "type": "string",
                     "description": "Description of the entity."
                 },
-                "status": {
+                "xdm:status": {
                     "title": "Status",
                     "type": "string",
                     "description": "Status of the entity."
                 },
-                "createdTime": {
+                "xdm:createdTime": {
                     "title": "Created Time of the Entity in Ad Cloud platform",
                     "description": "Created Time when entity got created in Ad Cloud Platform.This can differ from modified time in external advertising platform partners.",
                     "type": "string",
                     "format": "date-time"
                 },
-                "modifiedTime": {
+                "xdm:modifiedTime": {
                     "title": "Modified Time of the Entity in Ad Cloud Platform",
                     "description": "Modified Time when entity was last modified in Ad Cloud Platform. This can differ from modified time in external advertising platform partners.",
                     "type": "string",

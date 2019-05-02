@@ -1,5 +1,5 @@
 {
-    "@id": "100000123",
+    "xdm:id": "100000123",
     "portfolio": {
         "xdm:name": "My First Portfolio",
         "xdm:description": "My First Search Portfolio",
@@ -7,7 +7,7 @@
         "xdm:createdTime": "2019-01-08 14:00:00",
         "xdm:modifiedTime": "2019-02-09 14:00:00"
     },
-    "billingState": "managed",
-    "portfolioGroupName": "My First Portfolio Group",
-    "portfolioGroupInternalId": "34567"
+    "xdm:billingState": "Managed",
+    "xdm:portfolioGroupName": "My First Portfolio Group",
+    "xdm:portfolioGroupInternalId": "34567"
 }

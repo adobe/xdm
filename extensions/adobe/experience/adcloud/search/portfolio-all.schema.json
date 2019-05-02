@@ -22,22 +22,21 @@
                 "$ref": "https://ns.adobe.com/experience/adcloud/search/advertisingattributes",
                 "description": "Adobe Ad Cloud Top Level Entity Fields."
             },
-            "billingState": {
+            "xdm:billingState": {
                 "title": "Billing State",
                 "type": "string",
-                "description": "Billing State of a Search Portfolio",
+                "description": "Billing State Indicates whether client should be billed for a spend from this Portfolio",
                 "meta:enum": {
-                    "managed": "Managed",
-                    "unmanaged": "Not Managed",
-                    "manual": "Manual"
+                    "Managed": "Client will be billed for the spend from this portfolio",
+                    "Not Managed": "Client will not be billed for the spend from this portfolio"
                 }
             },
-            "portfolioGroupName": {
+            "xdm:portfolioGroupName": {
                 "title": "Portfolio Group Name",
                 "type": "string",
                 "description": "Name of the Portfolio Group"
             },
-            "portfolioGroupId": {
+            "xdm:portfolioGroupId": {
                 "title": "Portfolio Group Internal Id",
                 "type": "string",
                 "description": "Internal Identifier for a Portfolio Group"

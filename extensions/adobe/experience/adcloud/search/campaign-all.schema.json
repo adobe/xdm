@@ -23,32 +23,32 @@
                     "$ref": "https://ns.adobe.com/experience/adcloud/search/advertisingattributes",
                     "description": "Adobe AdCloud Top Level Attributes for Campaign Entity."
                 },
-                "accountId": {
+                "xdm:accountId": {
                     "title": "Internal Account Id of the Campaign",
                     "type": "integer",
                     "description": "Internal Account the Campaign belongs to."
                 },
-                "portfolioId": {
+                "xdm:portfolioId": {
                     "title": "Portfolio Id",
                     "type": "integer",
-                    "description": "Portfolio Id assigned to the Campaign"
+                    "description": "Portfolio assigned to the Campaign. Campaign can have zero or at the most one portfolio assigned to it"
                 },
-                "mobileBidAdjustment": {
+                "xdm:mobileBidAdjustment": {
                     "title": "Mobile Bid Adjustment",
                     "type": "integer",
                     "description": "Mobile Bid Adjustment"
                 },
-                "channelType": {
+                "xdm:channelType": {
                     "title": "Channel Type",
                     "type": "string",
                     "description": "Channel Type for the Campaign"
                 },
-                "budget": {
+                "xdm:budget": {
                     "title": "Budget",
                     "type": "number",
                     "description": "Budget Allocated to the Campaign"
                 },
-                "budgetType": {
+                "xdm:budgetType": {
                     "title": "Budget Type",
                     "type": "string",
                     "description": "Budget Type",
@@ -60,7 +60,7 @@
                         "day of week": "Day of week"
                     }
                 },
-                "deliveryType": {
+                "xdm:deliveryType": {
                     "title": "Ad Delivery Method",
                     "type": "string",
                     "description": "Ad Delivery method can determine how long your budget lasts",
@@ -69,7 +69,7 @@
                         "accelerated": "Accelerated"
                     }
                 },
-                "objective": {
+                "xdm:objective": {
                     "title": "Objective",
                     "type": "string",
                     "description": "Campaign Objective",
@@ -80,13 +80,13 @@
                         "visit_offer": "visit_offer"
                     }
                 },
-                "startDate": {
+                "xdm:startDate": {
                     "title": "Start Date",
                     "type": "string",
                     "format": "date",
                     "description": "Campaign Start Date"
                 },
-                "endDate": {
+                "xdm:endDate": {
                     "title": "End Date",
                     "type": "string",
                     "format": "date",

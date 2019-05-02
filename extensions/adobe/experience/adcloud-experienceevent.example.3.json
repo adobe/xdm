@@ -41,6 +41,7 @@
     "xdm:matchType": "exact"
   },
   "https://ns.adobe.com/experience/adcloud/adDeliveryDetails": {
-    "xdm:siteLinkText": "Best Personal Loan "
+    "xdm:siteLinkText": "Best Personal Loan ",
+    "xdm:physicalLocationID": "1014185"
   }
 }

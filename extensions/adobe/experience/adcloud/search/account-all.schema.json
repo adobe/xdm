@@ -31,7 +31,7 @@
                         "EUR",
                         "JPY"
                     ],
-                    "pattern": "^[A-Z]{3}$"
+                    "pattern": "^[A-Z]{3}$",
                     "description": "Currency associated with the account"
                 },
                 "xdm:managed": {

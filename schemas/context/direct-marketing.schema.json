@@ -71,7 +71,7 @@
           "description":
             "Click(s) actions on an In-App message."
         },
-        "xdm:inAppDismissals": {
+        "xdm:inAppDismissal": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
             "Dismiss actions on an In-App message either by clicking 'X' button or auto-dismiss."

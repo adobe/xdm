@@ -244,7 +244,7 @@
             "xdm:inAppMessageAction": {
               "title": "In-App Message Action",
               "type": "string",
-              "description": "Actions performed on the In-App message. Actions can be Button 1 click, Button 2 click or Dismissals."
+              "description": "Actions performed on the In-App message. It can be text on the buttons for click actions or Dismissal for dismiss actions."
             }
           }
         },

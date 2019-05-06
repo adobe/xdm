@@ -28,7 +28,7 @@
       "$ref": "#/definitions/unified-profile-union"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/context/record-timeseries-events"
+      "$ref": "https://ns.adobe.com/xdm/data/record-timeseries-events"
     },
     {
       "$ref": "https://ns.adobe.com/xdm/context/identitymap"

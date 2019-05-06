@@ -34,24 +34,33 @@ Describes a users' communication preferences by channel. For each channel indivi
 | Property | Type | Required | Default | Defined by |
 |----------|------|----------|---------|------------|
 | [https://ns.adobe.com/xdm/channels/adm](#httpsnsadobecomxdmchannelsadm) | `enum` | Optional | `"not_provided"` | OptInOut (this schema) |
+| [https://ns.adobe.com/xdm/channels/agency](#httpsnsadobecomxdmchannelsagency) | `enum` | Optional | `"not_provided"` | OptInOut (this schema) |
 | [https://ns.adobe.com/xdm/channels/apns](#httpsnsadobecomxdmchannelsapns) | `enum` | Optional | `"not_provided"` | OptInOut (this schema) |
+| [https://ns.adobe.com/xdm/channels/application](#httpsnsadobecomxdmchannelsapplication) | `enum` | Optional | `"not_provided"` | OptInOut (this schema) |
 | [https://ns.adobe.com/xdm/channels/baidu](#httpsnsadobecomxdmchannelsbaidu) | `enum` | Optional | `"not_provided"` | OptInOut (this schema) |
+| [https://ns.adobe.com/xdm/channels/channel](#httpsnsadobecomxdmchannelschannel) | `enum` | Optional | `"not_provided"` | OptInOut (this schema) |
 | [https://ns.adobe.com/xdm/channels/direct-mail](#httpsnsadobecomxdmchannelsdirect-mail) | `enum` | Optional | `"not_provided"` | OptInOut (this schema) |
 | [https://ns.adobe.com/xdm/channels/email](#httpsnsadobecomxdmchannelsemail) | `enum` | Optional | `"not_provided"` | OptInOut (this schema) |
+| [https://ns.adobe.com/xdm/channels/facebook-feed](#httpsnsadobecomxdmchannelsfacebook-feed) | `enum` | Optional | `"not_provided"` | OptInOut (this schema) |
 | [https://ns.adobe.com/xdm/channels/fax](#httpsnsadobecomxdmchannelsfax) | `enum` | Optional | `"not_provided"` | OptInOut (this schema) |
 | [https://ns.adobe.com/xdm/channels/gcm](#httpsnsadobecomxdmchannelsgcm) | `enum` | Optional | `"not_provided"` | OptInOut (this schema) |
 | [https://ns.adobe.com/xdm/channels/line](#httpsnsadobecomxdmchannelsline) | `enum` | Optional | `"not_provided"` | OptInOut (this schema) |
+| [https://ns.adobe.com/xdm/channels/mobile-app](#httpsnsadobecomxdmchannelsmobile-app) | `enum` | Optional | `"not_provided"` | OptInOut (this schema) |
 | [https://ns.adobe.com/xdm/channels/mpns](#httpsnsadobecomxdmchannelsmpns) | `enum` | Optional | `"not_provided"` | OptInOut (this schema) |
 | [https://ns.adobe.com/xdm/channels/phone](#httpsnsadobecomxdmchannelsphone) | `enum` | Optional | `"not_provided"` | OptInOut (this schema) |
 | [https://ns.adobe.com/xdm/channels/sms](#httpsnsadobecomxdmchannelssms) | `enum` | Optional | `"not_provided"` | OptInOut (this schema) |
+| [https://ns.adobe.com/xdm/channels/twitter-feed](#httpsnsadobecomxdmchannelstwitter-feed) | `enum` | Optional | `"not_provided"` | OptInOut (this schema) |
+| [https://ns.adobe.com/xdm/channels/web](#httpsnsadobecomxdmchannelsweb) | `enum` | Optional | `"not_provided"` | OptInOut (this schema) |
+| [https://ns.adobe.com/xdm/channels/webpage](#httpsnsadobecomxdmchannelswebpage) | `enum` | Optional | `"not_provided"` | OptInOut (this schema) |
 | [https://ns.adobe.com/xdm/channels/wechat](#httpsnsadobecomxdmchannelswechat) | `enum` | Optional | `"not_provided"` | OptInOut (this schema) |
 | [https://ns.adobe.com/xdm/channels/wns](#httpsnsadobecomxdmchannelswns) | `enum` | Optional | `"not_provided"` | OptInOut (this schema) |
 | [xdm:globalOptout](#xdmglobaloptout) | `boolean` | Optional | `false` | OptInOut (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## https://ns.adobe.com/xdm/channels/adm
+### ADM
 
-Communication preference for the outbound channel identified through its URL by the name of the property.
+Amazon Device Messaging channel OptInOut.
 
 `https://ns.adobe.com/xdm/channels/adm`
 * is optional
@@ -72,9 +81,34 @@ The value of this property **must** be equal to one of the [known values below](
 
 
 
-## https://ns.adobe.com/xdm/channels/apns
+## https://ns.adobe.com/xdm/channels/agency
+### Agency
 
-Communication preference for the outbound channel identified through its URL by the name of the property.
+External Agency channel OptInOut.
+
+`https://ns.adobe.com/xdm/channels/agency`
+* is optional
+* type: `enum`
+* default: `"not_provided"`
+* defined in this schema
+
+The value of this property **must** be equal to one of the [known values below](#httpsnsadobecomxdmchannelsagency-known-values).
+
+### https://ns.adobe.com/xdm/channels/agency Known Values
+| Value | Description |
+|-------|-------------|
+| `not_provided` | Not Provided |
+| `pending` | Pending Verification |
+| `in` | Opt-In: the user explicitly consents to receiving messages. |
+| `out` | Opt-Out: the user declines to receive any messages on this channel |
+
+
+
+
+## https://ns.adobe.com/xdm/channels/apns
+### APNS
+
+Apple Push Notification Service channel OptInOut.
 
 `https://ns.adobe.com/xdm/channels/apns`
 * is optional
@@ -95,9 +129,34 @@ The value of this property **must** be equal to one of the [known values below](
 
 
 
-## https://ns.adobe.com/xdm/channels/baidu
+## https://ns.adobe.com/xdm/channels/application
+### Application
 
-Communication preference for the outbound channel identified through its URL by the name of the property.
+Application channel OptInOut.
+
+`https://ns.adobe.com/xdm/channels/application`
+* is optional
+* type: `enum`
+* default: `"not_provided"`
+* defined in this schema
+
+The value of this property **must** be equal to one of the [known values below](#httpsnsadobecomxdmchannelsapplication-known-values).
+
+### https://ns.adobe.com/xdm/channels/application Known Values
+| Value | Description |
+|-------|-------------|
+| `not_provided` | Not Provided |
+| `pending` | Pending Verification |
+| `in` | Opt-In: the user explicitly consents to receiving messages. |
+| `out` | Opt-Out: the user declines to receive any messages on this channel |
+
+
+
+
+## https://ns.adobe.com/xdm/channels/baidu
+### Baidu
+
+Baidu Cloud Push Service channel OptInOut.
 
 `https://ns.adobe.com/xdm/channels/baidu`
 * is optional
@@ -118,9 +177,34 @@ The value of this property **must** be equal to one of the [known values below](
 
 
 
-## https://ns.adobe.com/xdm/channels/direct-mail
+## https://ns.adobe.com/xdm/channels/channel
+### Experience Channel
 
-Communication preference for the outbound channel identified through its URL by the name of the property.
+Experience channel OptInOut.
+
+`https://ns.adobe.com/xdm/channels/channel`
+* is optional
+* type: `enum`
+* default: `"not_provided"`
+* defined in this schema
+
+The value of this property **must** be equal to one of the [known values below](#httpsnsadobecomxdmchannelschannel-known-values).
+
+### https://ns.adobe.com/xdm/channels/channel Known Values
+| Value | Description |
+|-------|-------------|
+| `not_provided` | Not Provided |
+| `pending` | Pending Verification |
+| `in` | Opt-In: the user explicitly consents to receiving messages. |
+| `out` | Opt-Out: the user declines to receive any messages on this channel |
+
+
+
+
+## https://ns.adobe.com/xdm/channels/direct-mail
+### Direct Mail
+
+Mail delivered by a postal service channel OptInOut.
 
 `https://ns.adobe.com/xdm/channels/direct-mail`
 * is optional
@@ -142,8 +226,9 @@ The value of this property **must** be equal to one of the [known values below](
 
 
 ## https://ns.adobe.com/xdm/channels/email
+### E-Mail
 
-Communication preference for the outbound channel identified through its URL by the name of the property.
+E-Mail messages, delivered via SMTP to list subscribers channel OptInOut.
 
 `https://ns.adobe.com/xdm/channels/email`
 * is optional
@@ -164,9 +249,34 @@ The value of this property **must** be equal to one of the [known values below](
 
 
 
-## https://ns.adobe.com/xdm/channels/fax
+## https://ns.adobe.com/xdm/channels/facebook-feed
+### Facebook News Feed
 
-Communication preference for the outbound channel identified through its URL by the name of the property.
+The Facebook News Feed channel OptInOut.
+
+`https://ns.adobe.com/xdm/channels/facebook-feed`
+* is optional
+* type: `enum`
+* default: `"not_provided"`
+* defined in this schema
+
+The value of this property **must** be equal to one of the [known values below](#httpsnsadobecomxdmchannelsfacebook-feed-known-values).
+
+### https://ns.adobe.com/xdm/channels/facebook-feed Known Values
+| Value | Description |
+|-------|-------------|
+| `not_provided` | Not Provided |
+| `pending` | Pending Verification |
+| `in` | Opt-In: the user explicitly consents to receiving messages. |
+| `out` | Opt-Out: the user declines to receive any messages on this channel |
+
+
+
+
+## https://ns.adobe.com/xdm/channels/fax
+### Fax
+
+Telefacsimile channel OptInOut.
 
 `https://ns.adobe.com/xdm/channels/fax`
 * is optional
@@ -188,8 +298,9 @@ The value of this property **must** be equal to one of the [known values below](
 
 
 ## https://ns.adobe.com/xdm/channels/gcm
+### GCM
 
-Communication preference for the outbound channel identified through its URL by the name of the property.
+Google Cloud Messaging channel OptInOut.
 
 `https://ns.adobe.com/xdm/channels/gcm`
 * is optional
@@ -211,8 +322,9 @@ The value of this property **must** be equal to one of the [known values below](
 
 
 ## https://ns.adobe.com/xdm/channels/line
+### LINE
 
-Communication preference for the outbound channel identified through its URL by the name of the property.
+Line Platform Notification channel OptInOut.
 
 `https://ns.adobe.com/xdm/channels/line`
 * is optional
@@ -233,9 +345,34 @@ The value of this property **must** be equal to one of the [known values below](
 
 
 
-## https://ns.adobe.com/xdm/channels/mpns
+## https://ns.adobe.com/xdm/channels/mobile-app
+### Web
 
-Communication preference for the outbound channel identified through its URL by the name of the property.
+Native mobile applications that are installed through an app store channel OptInOut.
+
+`https://ns.adobe.com/xdm/channels/mobile-app`
+* is optional
+* type: `enum`
+* default: `"not_provided"`
+* defined in this schema
+
+The value of this property **must** be equal to one of the [known values below](#httpsnsadobecomxdmchannelsmobile-app-known-values).
+
+### https://ns.adobe.com/xdm/channels/mobile-app Known Values
+| Value | Description |
+|-------|-------------|
+| `not_provided` | Not Provided |
+| `pending` | Pending Verification |
+| `in` | Opt-In: the user explicitly consents to receiving messages. |
+| `out` | Opt-Out: the user declines to receive any messages on this channel |
+
+
+
+
+## https://ns.adobe.com/xdm/channels/mpns
+### MPNS
+
+Microsoft Push Notification Service channel OptInOut.
 
 `https://ns.adobe.com/xdm/channels/mpns`
 * is optional
@@ -257,8 +394,9 @@ The value of this property **must** be equal to one of the [known values below](
 
 
 ## https://ns.adobe.com/xdm/channels/phone
+### Phone
 
-Communication preference for the outbound channel identified through its URL by the name of the property.
+The telephone channel OptInOut.
 
 `https://ns.adobe.com/xdm/channels/phone`
 * is optional
@@ -280,8 +418,9 @@ The value of this property **must** be equal to one of the [known values below](
 
 
 ## https://ns.adobe.com/xdm/channels/sms
+### SMS
 
-Communication preference for the outbound channel identified through its URL by the name of the property.
+Short Message Service delivered to a mobile phone channel OptInOut.
 
 `https://ns.adobe.com/xdm/channels/sms`
 * is optional
@@ -302,9 +441,82 @@ The value of this property **must** be equal to one of the [known values below](
 
 
 
-## https://ns.adobe.com/xdm/channels/wechat
+## https://ns.adobe.com/xdm/channels/twitter-feed
+### Twitter Feed
 
-Communication preference for the outbound channel identified through its URL by the name of the property.
+Twitter Feed channel OptInOut.
+
+`https://ns.adobe.com/xdm/channels/twitter-feed`
+* is optional
+* type: `enum`
+* default: `"not_provided"`
+* defined in this schema
+
+The value of this property **must** be equal to one of the [known values below](#httpsnsadobecomxdmchannelstwitter-feed-known-values).
+
+### https://ns.adobe.com/xdm/channels/twitter-feed Known Values
+| Value | Description |
+|-------|-------------|
+| `not_provided` | Not Provided |
+| `pending` | Pending Verification |
+| `in` | Opt-In: the user explicitly consents to receiving messages. |
+| `out` | Opt-Out: the user declines to receive any messages on this channel |
+
+
+
+
+## https://ns.adobe.com/xdm/channels/web
+### Web
+
+World Wide Web and mobile web channel OptInOut.
+
+`https://ns.adobe.com/xdm/channels/web`
+* is optional
+* type: `enum`
+* default: `"not_provided"`
+* defined in this schema
+
+The value of this property **must** be equal to one of the [known values below](#httpsnsadobecomxdmchannelsweb-known-values).
+
+### https://ns.adobe.com/xdm/channels/web Known Values
+| Value | Description |
+|-------|-------------|
+| `not_provided` | Not Provided |
+| `pending` | Pending Verification |
+| `in` | Opt-In: the user explicitly consents to receiving messages. |
+| `out` | Opt-Out: the user declines to receive any messages on this channel |
+
+
+
+
+## https://ns.adobe.com/xdm/channels/webpage
+### Web Page
+
+Web Page channel OptInOut.
+
+`https://ns.adobe.com/xdm/channels/webpage`
+* is optional
+* type: `enum`
+* default: `"not_provided"`
+* defined in this schema
+
+The value of this property **must** be equal to one of the [known values below](#httpsnsadobecomxdmchannelswebpage-known-values).
+
+### https://ns.adobe.com/xdm/channels/webpage Known Values
+| Value | Description |
+|-------|-------------|
+| `not_provided` | Not Provided |
+| `pending` | Pending Verification |
+| `in` | Opt-In: the user explicitly consents to receiving messages. |
+| `out` | Opt-Out: the user declines to receive any messages on this channel |
+
+
+
+
+## https://ns.adobe.com/xdm/channels/wechat
+### WeChat
+
+WeChat Platform Notification channel OptInOut.
 
 `https://ns.adobe.com/xdm/channels/wechat`
 * is optional
@@ -326,8 +538,9 @@ The value of this property **must** be equal to one of the [known values below](
 
 
 ## https://ns.adobe.com/xdm/channels/wns
+### WNS
 
-Communication preference for the outbound channel identified through its URL by the name of the property.
+Windows Push Notification Service channel OptInOut.
 
 `https://ns.adobe.com/xdm/channels/wns`
 * is optional

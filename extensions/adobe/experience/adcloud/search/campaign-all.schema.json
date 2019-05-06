@@ -33,11 +33,6 @@
                     "type": "integer",
                     "description": "Portfolio assigned to the Campaign. Campaign can have zero or at the most one portfolio assigned to it"
                 },
-                "xdm:mobileBidAdjustment": {
-                    "title": "Mobile Bid Adjustment",
-                    "type": "integer",
-                    "description": "Mobile Bid Adjustment"
-                },
                 "xdm:channelType": {
                     "title": "Channel Type",
                     "type": "string",

@@ -41,16 +41,6 @@
                         "adgroup": "Adgroup",
                         "user_interest_and_list": "User Interest and List"
                     }
-                },
-                "xdm:mobileBidAdjustment": {
-                    "title": "Mobile Bid Adjustment",
-                    "type": "integer",
-                    "description": "Percentage determining the change in bid for mobile ads."
-                },
-                "xdm:searchMaxCPC": {
-                    "title": "Seach Max Cost per Click",
-                    "type": "integer",
-                    "description": "Maximum cost per click for ads belonging to this adgroup."
                 }
             }
         }

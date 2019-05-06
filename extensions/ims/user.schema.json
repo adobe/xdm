@@ -16,7 +16,7 @@
       "properties": {
         "xdm:identityProvider": {
           "type": "string",
-          "const": "ims"
+          "meta:enum": ["ims"]
         },
         "id": {
           "description":
@@ -26,6 +26,23 @@
         "type": {
           "type": "string",
           "const": "https://ns.adobe.com/adobecloudplatform/ims/user"
+        },
+        "xdm:displayName": {
+          "title": "Name",
+          "type": "string",
+          "description": "Display name"
+        },
+        "xdm:profileImage": {
+          "title": "Image",
+          "format": "uri",
+          "type": "string",
+          "description": "Profile avatar/picture of the person"
+        },
+        "xdm:profileLink": {
+          "title": "Image",
+          "format": "uri",
+          "type": "string",
+          "description": "Link to the public profile of the person. An example of the same is Adobe Behance public profile."
         }
       }
     }
@@ -37,5 +54,7 @@
     {
       "$ref": "#/definitions/user"
     }
-  ]
+  ],
+  "required" : ["xdm:identityProvider", "id", "type"],
+  "meta:status": "experimental"
 }

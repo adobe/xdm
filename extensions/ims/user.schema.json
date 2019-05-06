@@ -16,7 +16,7 @@
       "properties": {
         "xdm:identityProvider": {
           "type": "string",
-          "const": ["ims"]
+          "const": "ims"
         },
         "id": {
           "description":

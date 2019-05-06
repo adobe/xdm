@@ -36,7 +36,26 @@
                 "xdm:status": {
                     "title": "Status",
                     "type": "string",
-                    "description": "Status of the entity."
+                    "description": "Status of the entity.",
+                    "meta:enum": {
+                        "Active": "Active",
+                        "Paused": "Paused",
+                        "Deleted": "Deleted",
+                        "Ended": "Ended",
+                        "Pending": "Pending",
+                        "Inactive": "Inactive",
+                        "Disapproved": "Disapproved",
+                        "Incomplete": "Incomplete",
+                        "Offline": "Offline",
+                        "On Hold (Editing)": "On Hold (Editing)",
+                        "On Hold (Other)": "On Hold (Other)",
+                        "Duplicate": "Duplicate",
+                        "Orphan": "Orphan",
+                        "Optimize": "Optimize",
+                        "Disabled": "Disabled",
+                        "Unknown": "Unknown",
+                        "Dummy": "Dummy"
+                    }
                 },
                 "xdm:createdTime": {
                     "title": "Created Time of the Entity in Ad Cloud platform",

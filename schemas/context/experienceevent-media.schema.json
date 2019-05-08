@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "ExperienceEvent Details for Media.",
+  "description": "ExperienceEvent details for media.",
   "definitions": {
     "experienceevent-media": {
       "properties": {

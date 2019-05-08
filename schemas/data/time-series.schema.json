@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "description":
-    "Used to indicate the behaviour of time partitioned semantics when composed into data schemas.",
+    "Used to indicate the behavior of time partitioned semantics when composed into data schemas.",
   "definitions": {
     "time-series": {
       "properties": {
@@ -31,7 +31,7 @@
         "xdm:eventType": {
           "title": "Event Type",
           "type": "string",
-          "description": "The primary event type for this timeseries record.",
+          "description": "The primary event type for this time-series record.",
           "meta:enum": {
             "advertising.completes": "Indicates if a timed media asset was watched to completion - this does not necessarily mean the viewer watched the whole video; viewer could have skipped ahead.",
             "advertising.timePlayed": "Describes the amount of time spent by a user on a specific timed media asset.",

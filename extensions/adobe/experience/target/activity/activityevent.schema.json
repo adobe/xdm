@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Adobe Target Activity Event",
   "type": "object",
-  "description": "Represents executed Adobe Target Activity and Activity Events.",
+  "description": "Represents executed Adobe Target activity and activity events.",
   "definitions": {
     "activityevent": {
       "properties": {

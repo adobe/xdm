@@ -10,7 +10,7 @@
   "title": "Point of Interest Interaction",
   "type": "object",
   "meta:extensible": true,
-  "description": "A Point or Place of Interest(POI) interaction. Used to capture triggered engagement activities when users enter, leave of come within range of a POI.",
+  "description": "A Point or Place of Interest (POI) interaction. Used to capture triggered engagement activities when users enter, leave of come within range of a POI.",
   "definitions": {
     "poi-interaction": {
       "properties": {

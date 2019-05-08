@@ -21,7 +21,7 @@
         "https://ns.adobe.com/adobecloudplatform/ims/organizationID": {
           "title": "IMS Organization Identifier",
           "type": "string",
-          "description": "An Identity associated with the orgnaization that maintains the library of business objects and rules for this decision."
+          "description": "An Identity associated with the organization that maintains the library of business objects and rules for this decision."
         },
         "https://ns.adobe.com/experience/decisioning/containerID": {
           "title": "Container Identifier",

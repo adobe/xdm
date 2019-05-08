@@ -10,7 +10,7 @@
     "title": "Point of Interest Details",
     "type": "object",
     "meta:extensible": true,
-    "description": "A Point or Place of Interest(POI) Details. Used to capture the techncial and metadata information for a POI.",
+    "description": "A Point or Place of Interest(POI) Details. Used to capture the technical and metadata information for a POI.",
     "definitions": {
         "geo-interaction-detail": {
             "properties": {

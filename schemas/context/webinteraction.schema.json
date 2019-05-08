@@ -28,13 +28,13 @@
         "xdm:URL": {
           "title": "URL",
           "type": "string",
-          "description": "The actual link/URL used for this web interaction"
+          "description": "The actual link/URL used for this web interaction."
         },
         "xdm:name": {
           "title": "Name",
           "type": "string",
           "description":
-            "The normative name used for this web link, used for classification purposes"
+            "The normative name used for this web link, used for classification purposes."
         },
         "xdm:linkClicks": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",

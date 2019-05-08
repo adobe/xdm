@@ -11,7 +11,7 @@
   "type": "object",
   "meta:abstract": true,
   "meta:extensible": true,
-  "description": "A Proposition Response Detail is used to capture the Response to an offer Proposition. Proposition Responses are enriched with the properties of the activty and offer at the time the decision was made.",
+  "description": "A Proposition Response Detail is used to capture the Response to an offer Proposition. Proposition Responses are enriched with the properties of the activity and offer at the time the decision was made.",
   "definitions": {
     "response-detail-datatype": {
       "properties": {

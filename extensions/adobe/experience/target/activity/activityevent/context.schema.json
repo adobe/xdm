@@ -14,7 +14,7 @@
     "activityeventcontext": {
       "properties": {
         "xdm:experienceID": {
-          "title": "Experience identifier",
+          "title": "Experience Identifier",
           "type": "string",
           "description": "Experience identifier denoting selected experience."
         },

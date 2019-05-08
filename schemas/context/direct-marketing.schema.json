@@ -46,7 +46,7 @@
         },
         "xdm:opens": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "The direct marketing message (email, SMS, Push Notifications etc) has been opened/swyped/touched by the recipient."
+          "description": "The direct marketing message (email, SMS, Push Notifications etc) has been opened/swiped/touched by the recipient."
         },
         "xdm:unsubscriptions": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
@@ -59,7 +59,7 @@
         "xdm:offerOpens": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
-            "Offer in a marketing message (email, SMS, Push Notifications etc) has been opened/swyped/touched/interacted with by the recipient."
+            "Offer in a marketing message (email, SMS, Push Notifications etc) has been opened/swiped/touched/interacted with by the recipient."
         }
       }
     }

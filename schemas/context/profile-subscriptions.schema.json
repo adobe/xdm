@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
-  "description": "profile subscriptions for commercial or licensed services and entitlements.",
+  "description": "Profile subscriptions for commercial or licensed services and entitlements.",
   "definitions": {
     "profile-subscriptions": {
       "properties": {

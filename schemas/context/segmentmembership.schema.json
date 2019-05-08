@@ -32,7 +32,7 @@
         },
         "xdm:payload" : {
           "title" : "Payload",
-          "description": "Values that are directly related with the segment realization. This payload exists with the same validUntil as the segment realization.  Note that the intention is that exactly one payload value be included, as indicated by the payload type.  This was originally modelled using 'oneOf', but due to limitations in our tooling that was removed.  This more semantically meaningful representation will be re-introduced in the future.",
+          "description": "Values that are directly related with the segment realization. This payload exists with the same validUntil as the segment realization.  Note that the intention is that exactly one payload value be included, as indicated by the payload type.  This was originally modeled using 'oneOf', but due to limitations in our tooling that was removed.  This more semantically meaningful representation will be re-introduced in the future.",
           "type": "object",
           "properties": {
             "xdm:payloadBooleanValue": {
@@ -76,7 +76,7 @@
           "title": "Valid Until",
           "type": "string",
           "format": "date-time",
-          "description": "The timestamp for when the segment assertion should nolonger be assumed to be valid and should either be ignored or revalidated."
+          "description": "The timestamp for when the segment assertion should no longer be assumed to be valid and should either be ignored or revalidated."
         },
         "xdm:status": {
           "title": "Status",

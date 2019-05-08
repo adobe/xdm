@@ -9,7 +9,7 @@
   "$id": "https://ns.adobe.com/experience/adcloud/segment",
   "title": "Segment Detail",
   "type": "object",
-  "description": "Adobe AdCloud Segmentation Traits",
+  "description": "Adobe Advertising Cloud segmentation traits.",
   "definitions": {
     "segment": {
       "properties": {

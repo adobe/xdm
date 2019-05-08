@@ -11,7 +11,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "description": "Detail about the Entity defining and controlling the decisioning process. Decisions are made in the context of an Activity. At any given time, the best Option is re-evaluated, or ranked, based on the most current set of context variables, rules and constraints. The decision activity specifies a fallback option should the combined constraints disqualify all narrowed-down options.",
+  "description": "Detail about the entity defining and controlling the decisioning process. Decisions are made in the context of an activity. At any given time, the best option is re-evaluated, or ranked, based on the most current set of context variables, rules and constraints. The decision activity specifies a fallback option should the combined constraints disqualify all narrowed-down options.",
   "definitions": {
     "activity-detail-datatype": {
       "properties": {

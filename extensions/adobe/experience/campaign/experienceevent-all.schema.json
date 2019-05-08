@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "Adobe Campaign ExperienceEvent Full Extension. Contains all Solution added fields.",
+  "description": "Adobe Campaign ExperienceEvent full extension. Contains all Solution added fields.",
   "definitions": {
     "campaign-experienceevent-all": {
       "properties": {
@@ -62,7 +62,7 @@
             "xdm:testMember": {
               "title": "A/B Test Member",
               "type": "boolean",
-              "description": "The recipient of this message is a member of a test group for this campaign activity. This is primarily used for identifying the initial population of an A/B Test. After sending different variants to the testMembers, the winner Variant is decided to be sent to the remaining population based on behavioural changes in testMembers.",
+              "description": "The recipient of this message is a member of a test group for this campaign activity. This is primarily used for identifying the initial population of an A/B Test. After sending different variants to the testMembers, the winner Variant is decided to be sent to the remaining population based on behavioral changes in testMembers.",
               "default": false
             },
             "xdm:size": {
@@ -173,7 +173,7 @@
             "xdm:templateID": {
               "title": "Identifier of the Template",
               "type": "integer",
-              "description": "The delivery template's ID used to initialize this delivery.\n\nThe type the template used in Adobe Campaign can be identified using the `messageClass`.\n\n* `messageClass` = `oneTime`: the template is standard delivery template.\n* `messageClass` = `continuous`: the template is a recurring delivery.\n* `messageClass` = `transactional`: the template is a transactionnal message template.\n"
+              "description": "The delivery template's ID used to initialize this delivery.\n\nThe type the template used in Adobe Campaign can be identified using the `messageClass`.\n\n* `messageClass` = `oneTime`: the template is standard delivery template.\n* `messageClass` = `continuous`: the template is a recurring delivery.\n* `messageClass` = `transactional`: the template is a transactional message template.\n"
             },
             "xdm:deliveryLabel": {
               "title": "Delivery Label",

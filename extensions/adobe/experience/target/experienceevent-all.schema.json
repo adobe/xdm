@@ -15,7 +15,7 @@
   "meta:extends": [
     "https://ns.adobe.com/experience/target/experienceevent-shared"
   ],
-  "description": "Adobe Target ExperienceEvent Full Extension. Contains all Solution added fields.",
+  "description": "Adobe Target ExperienceEvent full extension. Contains all Solution added fields.",
   "definitions": {
     "target-experienceevent-all": {
       "properties": {

@@ -15,7 +15,7 @@
     "https://ns.adobe.com/xdm/context/profile",
     "https://ns.adobe.com/xdm/data/record"
   ],
-  "description": "Time-series Extension for Record Data.",
+  "description": "Time-series extension for record data.",
   "definitions": {
     "record-timeseries-events": {
       "properties": {

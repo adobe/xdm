@@ -9,7 +9,7 @@
   "$id": "https://ns.adobe.com/adobecloudplatform/ims/user",
   "title": "IMS User",
   "description":
-    "This model represents an authenticated IMS User. The IMS user principal is a user account under Adobe's identity management system (IMS). The same schema could be used by other identity providers as well by providing a different value for xdm:identityprovider",
+    "This model represents an authenticated IMS User. The IMS user principal is a user account under Adobe's identity management system (IMS). The same schema could be used by other identity providers as well by providing a different value for xdm:provider",
   "meta:extends": [
     "https://ns.adobe.com/xdm/common/principal"
   ],

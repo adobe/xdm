@@ -18,12 +18,12 @@
           "type": "string",
           "const": "ims"
         },
-        "id": {
+        "xdm:id": {
           "description":
             "Principal id identifies a user account in IMS. Its value is equivalent to the standard claim, `sub` as mentioned in the [openid connect 1.0 standard claims](http://openid.net/specs/openid-connect-core-1_0.html#StandardClaim). This value can be obtained by fetching the [userinfo resource](http://openid.net/specs/openid-connect-core-1_0.html#UserInfo) for a particular user [in IMS](https://wiki.corp.adobe.com/display/ims/IMS+API+-+userinfo).",
           "type": "string"
         },
-        "type": {
+        "xdm:type": {
           "type": "string",
           "const": "https://ns.adobe.com/adobecloudplatform/ims/user"
         }
@@ -60,6 +60,6 @@
       "$ref": "#/definitions/publicprofile"
     }
   ],
-  "required" : ["xdm:identityProvider", "id", "type"],
+  "required" : ["xdm:identityProvider", "xdm:id", "xdm:type"],
   "meta:status": "experimental"
 }

@@ -9,7 +9,7 @@
   "$id": "https://ns.adobe.com/adobecloudplatform/ims/user",
   "title": "IMS User",
   "description":
-    "This model represents an authenticated IMS User. The IMS user prinicpal is a user account under Adobe's identity management system (IMS).",
+    "This model represents an authenticated IMS User. The IMS user principal is a user account under Adobe's identity management system (IMS).",
   "definitions": {
     "user": {
       "type": "object",
@@ -26,24 +26,26 @@
         "type": {
           "type": "string",
           "const": "https://ns.adobe.com/adobecloudplatform/ims/user"
-        },
-        "xdm:displayName": {
-          "title": "Name",
-          "type": "string",
-          "description": "Display name"
-        },
-        "xdm:profileImage": {
-          "title": "Image",
-          "format": "uri",
-          "type": "string",
-          "description": "Profile avatar/picture of the person"
-        },
-        "xdm:profileLink": {
-          "title": "Image",
-          "format": "uri",
-          "type": "string",
-          "description": "Link to the public profile of the person. An example of the same is Adobe Behance public profile."
         }
+      }
+    },
+    "publicprofile": {
+      "xdm:displayName": {
+        "title": "Name",
+        "type": "string",
+        "description": "Display name"
+      },
+      "xdm:profileImage": {
+        "title": "Image",
+        "format": "uri",
+        "type": "string",
+        "description": "Profile avatar/picture of the person"
+      },
+      "xdm:profileLink": {
+        "title": "Image",
+        "format": "uri",
+        "type": "string",
+        "description": "Link to the public profile of the person. An example of the same is Adobe Behance public profile."
       }
     }
   },
@@ -53,6 +55,9 @@
     },
     {
       "$ref": "#/definitions/user"
+    },
+    {
+      "$ref": "#/definitions/publicprofile"
     }
   ],
   "required" : ["xdm:identityProvider", "id", "type"],

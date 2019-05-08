@@ -65,16 +65,6 @@
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
             "The direct-marketing message ( Push Notifications, In-App etc) has been seen by the end user."
-        },
-        "xdm:inAppClicks": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-            "Click(s) actions on an In-App message."
-        },
-        "xdm:inAppDismissal": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-            "Dismiss actions on an In-App message either by clicking 'X' button or auto-dismiss."
         }
       }
     }

@@ -244,7 +244,17 @@
             "xdm:inAppMessageAction": {
               "title": "In-App Message Action",
               "type": "string",
-              "description": "Actions performed on the In-App message. It can be text on the buttons for click actions or Dismissal for dismiss actions."
+              "meta:enum": {
+                "Button 1": "Action on button 1",
+                "Button 2": "Action on button 2",
+                "Dismissal": "Action on close button"
+              },
+              "description": "Actions on the In-App message delivered, e.g. actions on button 1, button 2 or dismissals."
+            },
+            "xdm:inAppMessageButtonText": {
+              "title": "In-App Message Button Text",
+              "type": "string",
+              "description": "The user-friendly text on the button."
             }
           }
         },

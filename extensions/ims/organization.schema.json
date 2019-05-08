@@ -9,33 +9,35 @@
   "$id": "https://ns.adobe.com/adobecloudplatform/ims/organization",
   "title": "IMS Organization",
   "description":
-    "This model represents a IMS Organization. The IMS organization prinicpal is a organization account under Adobe's identity management system (IMS).",
+    "This model represents a IMS Organization. The IMS organization principal is a organization account under Adobe's identity management system (IMS).",
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/common/principal"
+  ],
+  "meta:extensible": true,
   "definitions": {
     "organization": {
       "type": "object",
       "properties": {
-        "xdm:identityProvider": {
-          "type": "string",
-          "const": "ims"
-        },
-        "id": {
+        "xdm:id": {
           "description":
             "Principal id identifies an organization in IMS. It is a unique and persitent identifier which is allocated at the time the organization is created in the system. An organization's admin can find this value by logging into the [adminconsole](https://adminconsole.adobe.com) and parsing the resource URL they are redirected to.",
           "type": "string"
         },
-        "type": {
+        "xdm:type": {
           "type": "string",
-          "const": "https://ns.adobe.com/adobecloudplatform/ims/organization"
+          "const": "https://ns.adobe.com/xdm/common/organization"
         }
       }
     }
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/common/principal"
+      "$ref": "https://ns.adobe.com/xdm/common/principal#/definitions/principal"
     },
     {
       "$ref": "#/definitions/organization"
     }
-  ]
+  ],
+  "required" : ["xdm:provider", "xdm:id", "xdm:type"],
+  "meta:status": "experimental"
 }

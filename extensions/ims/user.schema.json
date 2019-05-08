@@ -9,23 +9,23 @@
   "$id": "https://ns.adobe.com/adobecloudplatform/ims/user",
   "title": "IMS User",
   "description":
-    "This model represents an authenticated IMS User. The IMS user principal is a user account under Adobe's identity management system (IMS).",
+    "This model represents an authenticated IMS User. The IMS user principal is a user account under Adobe's identity management system (IMS). The same schema could be used by other identity providers as well by providing a different value for xdm:identityprovider",
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/common/principal"
+  ],
+  "meta:extensible": true,
   "definitions": {
     "user": {
       "type": "object",
       "properties": {
-        "xdm:identityProvider": {
-          "type": "string",
-          "const": "ims"
-        },
-        "id": {
+        "xdm:id": {
           "description":
             "Principal id identifies a user account in IMS. Its value is equivalent to the standard claim, `sub` as mentioned in the [openid connect 1.0 standard claims](http://openid.net/specs/openid-connect-core-1_0.html#StandardClaim). This value can be obtained by fetching the [userinfo resource](http://openid.net/specs/openid-connect-core-1_0.html#UserInfo) for a particular user [in IMS](https://wiki.corp.adobe.com/display/ims/IMS+API+-+userinfo).",
           "type": "string"
         },
-        "type": {
+        "xdm:type": {
           "type": "string",
-          "const": "https://ns.adobe.com/adobecloudplatform/ims/user"
+          "const": "https://ns.adobe.com/xdm/common/user"
         }
       }
     },
@@ -51,7 +51,7 @@
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/common/principal"
+      "$ref": "https://ns.adobe.com/xdm/common/principal#/definitions/principal"
     },
     {
       "$ref": "#/definitions/user"
@@ -60,6 +60,6 @@
       "$ref": "#/definitions/publicprofile"
     }
   ],
-  "required" : ["xdm:identityProvider", "id", "type"],
+  "required" : ["xdm:provider", "xdm:id", "xdm:type"],
   "meta:status": "experimental"
 }

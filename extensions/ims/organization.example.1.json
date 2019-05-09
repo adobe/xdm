@@ -1,7 +1,5 @@
 {
-  "xdm:provider": {
-    "@id": "https://ns.adobe.com/adobecloudplatform/ims"
-  },
+  "xdm:identityProvider": "https://ns.adobe.com/adobecloudplatform/ims",
   "xdm:id": "126236B3597F99260A494228@AdobeOrg",
   "xdm:type": "https://ns.adobe.com/xdm/common/organization"
 }

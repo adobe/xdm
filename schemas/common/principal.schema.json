@@ -14,9 +14,11 @@
   "meta:extensible": true,
   "definitions": {
     "principal": {
-      "xdm:provider": {
+      "xdm:identityProvider": {
         "description": "The identity provider that manages this principal.",
-        "$ref": "https://ns.adobe.com/xdm/common/identity-provider"
+        "type": "string",
+        "format": "uri",
+        "meta:enum": ["https://ns.adobe.com/adobecloudplatform/ims"]
       },
       "xdm:id": {
         "type": "string",
@@ -36,6 +38,6 @@
       "$ref": "#/definitions/principal"
     }
   ],
-  "required": ["xdm:provider", "xdm:id", "xdm:type"],
+  "required": ["xdm:identityProvider", "xdm:id", "xdm:type"],
   "meta:status": "experimental"
 }

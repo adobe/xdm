@@ -23,12 +23,12 @@
         "xdm:remarkID": {
           "title": "Remark Identifier",
           "type": "string",
-          "description": "The pre defined remark that the enduser identified when unsubscribing."
+          "description": "The pre defined remark that the end-user identified when unsubscribing."
         },
         "xdm:remarkText": {
           "title": "Remark text",
           "type": "string",
-          "description": "A customer comment/remark that the enduser provided when unsubscribing."
+          "description": "A customer comment/remark that the end-user provided when unsubscribing."
         }
       },
       "required": ["xdm:unsubscriptionDate"]

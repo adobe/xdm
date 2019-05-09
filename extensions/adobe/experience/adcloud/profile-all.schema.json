@@ -17,7 +17,7 @@
     "profile-all": {
       "properties": {
         "xdm:syncedRemarketingAudiences": {
-          "title": "Synchronized segments",
+          "title": "Synchronized Segments",
           "type": "array",
           "items": {
             "$ref": "https://ns.adobe.com/experience/adcloud/syncedremarketingaudience"

@@ -18,13 +18,13 @@
         "xdm:repositoryCreatedBy": {
           "title": "Created by User Identifier",
           "type": "string",
-          "description": "User id who has created the entity."
+          "description": "User ID who has created the entity."
         },
         "xdm:repositoryLastModifiedBy": {
           "title": "Modified by User Identifier",
           "type": "string",
           "description":
-            "User id who last modified the entity. At creation time, `modifiedByUser` is set as `createdByUser`."
+            "User ID who last modified the entity. At creation time, `modifiedByUser` is set as `createdByUser`."
         },
         "xdm:createdByBatchID": {
           "title": "Created by Batch Identifier",

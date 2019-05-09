@@ -11,7 +11,7 @@
   "type": "object",
   "meta:extensible": true,
   "description":
-    "An end-user identity item, to be included in an instance of `context/identitymap`",
+    "An end-user identity item, to be included in an instance of `context/identitymap`.",
   "definitions": {
     "identityitem": {
       "properties": {

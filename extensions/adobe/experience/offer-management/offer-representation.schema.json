@@ -11,7 +11,7 @@
   "meta:extensible": true,
   "type": "object",
   "title": "Representation",
-  "description": "Offer Representation",
+  "description": "Offer representation.",
   "definitions": {
     "offer-representation": {
       "properties": {
@@ -40,7 +40,7 @@
       "type": "string",
       "format": "uri",
       "title": "Content Component Type",
-      "description": "Content Component Type: imagelink, html or text",
+      "description": "Content component type: imagelink, html or text.",
       "enum": [
         "https://ns.adobe.com/experience/offer-management/content-component-text",
         "https://ns.adobe.com/experience/offer-management/content-component-html",

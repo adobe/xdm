@@ -28,7 +28,7 @@
           "title": "Subscription Date",
           "type": "string",
           "format": "date-time",
-          "description": "Date and time when the enduser has subscribed to a notification topic. An end-user is subscribed if they have a Subscription Date and the `unsubscriptiondetails/unsubscriptionDate` is empty."
+          "description": "Date and time when the end-user has subscribed to a notification topic. An end-user is subscribed if they have a Subscription Date and the `unsubscriptiondetails/unsubscriptionDate` is empty."
         },
         "xdm:notificationTarget": {
           "title": "Target/destination for the notification",

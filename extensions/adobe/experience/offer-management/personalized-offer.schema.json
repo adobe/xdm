@@ -21,7 +21,7 @@
             "xdm:rank": {
               "$ref": "https://ns.adobe.com/experience/offer-management/rank",
               "title": "Rank",
-              "description": "Offer Rank (priority). Defines what is considered the \"best offer\" given the context of the decision. Among all the Offers that have not been disqualified due other constraints, the ranking will decide top (or top N) offers to be proposed."
+              "description": "Offer rank (priority). Defines what is considered the \"best offer\" given the context of the decision. Among all the offers that have not been disqualified due other constraints, the ranking will decide top (or top N) offers to be proposed."
             },
             "xdm:selectionConstraint": {
               "$ref": "https://ns.adobe.com/experience/offer-management/selection-constraint",

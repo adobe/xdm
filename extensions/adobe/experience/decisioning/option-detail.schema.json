@@ -19,7 +19,7 @@
           "title": "Option Identifier",
           "type": "string",
           "format": "uri-reference",
-          "description": "A unique identifier for the Decision Option."
+          "description": "A unique identifier for the decision option."
         },
         "xdm:name": {
           "type": "string",
@@ -28,7 +28,7 @@
         },
         "xdm:characteristics": {
           "title": "Option Characteristics",
-          "description": "Additional properties or attributed belonging to this particular Option. Different instances can have different characteristics. When every instance has a certain attribute or property it should be modeled as an extension to the schema that derives from Option Detail. The characteristics are name value pairs used to distinguish an option from others. Characteristics are used as features to analyze and optimize the performance of an Option.",
+          "description": "Additional properties or attributed belonging to this particular option. Different instances can have different characteristics. When every instance has a certain attribute or property it should be modeled as an extension to the schema that derives from option Detail. The characteristics are name value pairs used to distinguish an option from others. Characteristics are used as features to analyze and optimize the performance of an option.",
           "type": "object",
           "meta:xdmType": "map",
           "additionalProperties": {

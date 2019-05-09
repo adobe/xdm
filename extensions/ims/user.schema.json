@@ -33,13 +33,13 @@
       "xdm:displayName": {
         "title": "Name",
         "type": "string",
-        "description": "Display name"
+        "description": "Display name."
       },
       "xdm:profileImage": {
         "title": "Image",
         "format": "uri",
         "type": "string",
-        "description": "Profile avatar/picture of the person"
+        "description": "Profile avatar/picture of the person."
       },
       "xdm:profileLink": {
         "title": "Image",

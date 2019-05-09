@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Event Scope",
   "type": "object",
-  "description": "Specifies either it's a new visitor, visit or impression for current metric/step",
+  "description": "Specifies either it's a new visitor, visit or impression for current metric/step.",
   "definitions": {
     "eventscope": {
       "type": "string",

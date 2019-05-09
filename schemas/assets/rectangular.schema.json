@@ -16,7 +16,7 @@
       "properties": {
         "tiff:imageWidth": {
           "title": "Width",
-          "description": "Width in pixels",
+          "description": "Width in pixels.",
           "type": "integer",
           "meta:usereditable": false,
           "minimum": 0,

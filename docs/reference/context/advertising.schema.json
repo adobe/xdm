@@ -58,7 +58,7 @@
                 },
                 "xdm:impressions": {
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
-                    "description": "Impression(s) of an advertisement to an end user with the potential of being viewed."
+                    "description": "Impression(s) of an advertisement to an end-user with the potential of being viewed."
                 },
                 "xdm:midpoints": {
                     "$ref": "https://ns.adobe.com/xdm/data/measure",

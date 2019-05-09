@@ -1,0 +1,33 @@
+{
+    "xdm:accountId": "1001",
+    "xdm:campaignId": "100000000021",
+    "xdm:adgroupId": "10000000022",
+    "xdm:termId": "100000023",
+    "xdm:clientId": "2419",
+    "xdm:networkId": "3",
+    "xdm:term": "adobe_photoshop",
+    "xdm:matchType": "Broad",
+    "xdm:keywordMeasures": {
+        "xdm:clicks": {
+            "xdm:value": 20
+        },
+        "xdm:impressions": {
+            "xdm.value": 100
+        },
+        "xdm:totalCost": {
+            "xdm:totalCost": 42866
+        },
+        "xdm:avgPosition": {
+            "xdm:value": 2
+        },
+        "xdm:topPageBid": {
+            "xdm:value": 3.2
+        },
+        "xdm:device": {
+            "xdm:type": "mobile"
+        },
+        "xdm:qualityScore": {
+            "xdm:value": 4
+        }
+    }
+}

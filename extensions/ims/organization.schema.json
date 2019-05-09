@@ -38,6 +38,6 @@
       "$ref": "#/definitions/organization"
     }
   ],
-  "required" : ["xdm:provider", "xdm:id", "xdm:type"],
+  "required" : ["xdm:identityProvider", "xdm:id", "xdm:type"],
   "meta:status": "experimental"
 }

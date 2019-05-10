@@ -1,0 +1,57 @@
+{
+  "_id": "XH9zXgAAAI@XLLFn",
+  "xdm:timestamp": "2018-08-07T08:06:34.672Z",
+  "xdm:search": {
+    "xdm:searchEngineID": "https://ns.adobe.com/searchengines/3",
+    "xdm:keywords": "Jacket",
+    "xdm:isPaid": true
+  },
+  "xdm:device": {
+    "xdm:type": "mobile"
+  },
+  "xdm:environment": {
+    "xdm:browserDetails": {
+      "xdm:userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36"
+    }
+  },
+  "xdm:web": {
+    "xdm:webReferrer": {
+      "xdm:URL": "https://www.google.com/"
+    }
+  },
+  "xdm:advertising": {
+    "xdm:clicks": {
+      "id": "XJm2lgAAAEmW1LVH",
+      "value": 1.0
+    }
+  },
+  "xdm:identityMap": {
+    "AdCloud": [
+      {
+        "id": "XA9N8wAAAMnAaj_e"
+      }
+    ]
+  },
+  "https://ns.adobe.com/experience/adcloud/advertisement": {
+    "xdm:creativeID": "301404063528",
+    "xdm:keywordID": "147741280",
+    "xdm:audienceID": "257600311580",
+    "xdm:adGroupID": "32345812783",
+    "xdm:campaignID": "663049855",
+    "xdm:networkType": "search",
+    "xdm:matchType": "broad"
+  },
+  "https://ns.adobe.com/experience/adcloud/adDeliveryDetails": {
+    "xdm:interestLocationID": "4087",
+    "xdm:placementWebsite": "www.tripadvisor.com",
+    "xdm:physicalLocationID": "1014185"
+  },
+  "https://ns.adobe.com/experience/adcloud/productDetails": {
+    "xdm:productID": "LSTTDSF9J4DQYH8ZZZUSDBCRG",
+    "xdm:country": "IN",
+    "xdm:language": "en",
+    "xdm:partitionID": "342294687595",
+    "xdm:title": "Winter Jacket",
+    "xdm:adType": "pla"
+  }
+}

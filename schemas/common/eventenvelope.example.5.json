@@ -5,8 +5,9 @@
   "@id":
     "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
   "activitystreams:to": {
-    "@type": "http://ns.adobe.com/adobecloudplatform/ims/organization",
-    "@id": "08B3E5CE5822FC520A494229@AdobeOrg"
+    "xdm:identityProvider": "https://ns.adobe.com/adobecloudplatform/ims",
+    "xdm:type": "https://ns.adobe.com/xdm/common/organization",
+    "xdm:id": "08B3E5CE5822FC520A494229@AdobeOrg"
   },
   "activitystreams:generator": {
     "@type": "https://ns.adobe.com/xdm/content/repository",

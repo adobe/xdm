@@ -4,8 +4,9 @@
   "xdm:objectType": "https://osgi.org/javadoc/r4v42/org/osgi/service/event/Event.html#io/adobe/event/sample/sku",
   "activitystreams:published": "2016-07-16T19:20:30+01:00",
   "activitystreams:to": {
-    "@type": "https://ns.adobe.com/adobecloudplatform/ims/organization",
-    "https://ns.adobe.com/adobecloudplatform/ims/organization#id": "08B3E5CE5822FC520A494229@AdobeOrg"
+    "xdm:identityProvider": "https://ns.adobe.com/adobecloudplatform/ims",
+    "xdm:type": "https://ns.adobe.com/xdm/common/organization",
+    "xdm:id": "08B3E5CE5822FC520A494229@AdobeOrg"
   },
   "activitystreams:generator": {
     "@type": "https://ns.adobe.com/xdm/content/repository",

@@ -9,7 +9,7 @@
   "$id": "https://ns.adobe.com/adobecloudplatform/ims/user",
   "title": "IMS User",
   "description":
-    "This model represents an authenticated IMS User. The IMS user prinicpal is a user account under Adobe's identity management system (IMS).",
+    "This model represents an authenticated IMS User. The IMS user principal is a user account under Adobe's identity management system (IMS).",
   "definitions": {
     "user": {
       "type": "object",
@@ -18,15 +18,34 @@
           "type": "string",
           "const": "ims"
         },
-        "id": {
+        "xdm:id": {
           "description":
             "Principal id identifies a user account in IMS. Its value is equivalent to the standard claim, `sub` as mentioned in the [openid connect 1.0 standard claims](http://openid.net/specs/openid-connect-core-1_0.html#StandardClaim). This value can be obtained by fetching the [userinfo resource](http://openid.net/specs/openid-connect-core-1_0.html#UserInfo) for a particular user [in IMS](https://wiki.corp.adobe.com/display/ims/IMS+API+-+userinfo).",
           "type": "string"
         },
-        "type": {
+        "xdm:type": {
           "type": "string",
           "const": "https://ns.adobe.com/adobecloudplatform/ims/user"
         }
+      }
+    },
+    "publicprofile": {
+      "xdm:displayName": {
+        "title": "Name",
+        "type": "string",
+        "description": "Display name"
+      },
+      "xdm:profileImage": {
+        "title": "Image",
+        "format": "uri",
+        "type": "string",
+        "description": "Profile avatar/picture of the person"
+      },
+      "xdm:profileLink": {
+        "title": "Image",
+        "format": "uri",
+        "type": "string",
+        "description": "Link to the public profile of the person. An example of the same is Adobe Behance public profile."
       }
     }
   },
@@ -36,6 +55,11 @@
     },
     {
       "$ref": "#/definitions/user"
+    },
+    {
+      "$ref": "#/definitions/publicprofile"
     }
-  ]
+  ],
+  "required" : ["xdm:identityProvider", "xdm:id", "xdm:type"],
+  "meta:status": "experimental"
 }

@@ -1,0 +1,7 @@
+{
+  "@id": "https://ns.adobe.com/descriptors/sample-asset-relationship-descriptor",
+  "@type": "xdm:descriptorOneToOne",
+  "xdm:sourceSchema": "http://ns.adobe.com/adobecloud/core/1.0/asset",
+  "xdm:destinationSchema": "http://ns.adobe.com/adobecloud/core/1.0/asset",
+  "xdm:label": "linked-asset"
+}

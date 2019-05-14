@@ -15,7 +15,6 @@ An individual person. May represent a person acting in various roles, such as a 
 * Person `https://ns.adobe.com/xdm/context/person`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Person Name](person-name.schema.md) `https://ns.adobe.com/xdm/context/person-name`
-  * [Audit Trail](../common/auditable.schema.md) `https://ns.adobe.com/xdm/common/auditable`
 
 
 ## Person Examples
@@ -49,68 +48,12 @@ An individual person. May represent a person acting in various roles, such as a 
 
 | Property | Type | Required | Default | Defined by |
 |----------|------|----------|---------|------------|
-| [repo:createDate](#repocreatedate) | `string` | Optional |  | [Audit Trail](../common/auditable.schema.md#repocreatedate) |
-| [repo:modifyDate](#repomodifydate) | `string` | Optional |  | [Audit Trail](../common/auditable.schema.md#repomodifydate) |
 | [xdm:birthDate](#xdmbirthdate) | `string` | Optional |  | Person (this schema) |
 | [xdm:birthDayAndMonth](#xdmbirthdayandmonth) | `string` | Optional |  | Person (this schema) |
 | [xdm:birthYear](#xdmbirthyear) | `integer` | Optional |  | Person (this schema) |
-| [xdm:createdByBatchID](#xdmcreatedbybatchid) | `string` | Optional |  | [Audit Trail](../common/auditable.schema.md#xdmcreatedbybatchid) |
 | [xdm:gender](#xdmgender) | `enum` | Optional | `"not_specified"` | Person (this schema) |
-| [xdm:modifiedByBatchID](#xdmmodifiedbybatchid) | `string` | Optional |  | [Audit Trail](../common/auditable.schema.md#xdmmodifiedbybatchid) |
 | [xdm:name](#xdmname) | Person Name | Optional |  | Person (this schema) |
-| [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | Optional |  | [Audit Trail](../common/auditable.schema.md#xdmrepositorycreatedby) |
-| [xdm:repositoryLastModifiedBy](#xdmrepositorylastmodifiedby) | `string` | Optional |  | [Audit Trail](../common/auditable.schema.md#xdmrepositorylastmodifiedby) |
 | `*` | any | Additional | this schema *allows* additional properties |
-
-## repo:createDate
-
-The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
-
-`repo:createDate`
-* is optional
-* type: `string`
-* defined in [Audit Trail](../common/auditable.schema.md#repocreatedate)
-
-### repo:createDate Type
-
-
-`string`
-* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
-
-
-
-
-### repo:createDate Example
-
-```json
-"2004-10-23T12:00:00-06:00"
-```
-
-
-## repo:modifyDate
-
-The server date and time when the resource was last modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
-
-`repo:modifyDate`
-* is optional
-* type: `string`
-* defined in [Audit Trail](../common/auditable.schema.md#repomodifydate)
-
-### repo:modifyDate Type
-
-
-`string`
-* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
-
-
-
-
-### repo:modifyDate Example
-
-```json
-"2004-10-23T12:00:00-06:00"
-```
-
 
 ## xdm:birthDate
 ### Birth Date
@@ -181,27 +124,6 @@ The year a person was born including the century (yyyy, e.g 1983).  This field s
 
 
 
-## xdm:createdByBatchID
-### Created by Batch Identifier
-
-The Data Set Files in Catalog Services which has been originating the creation of the entity.
-
-`xdm:createdByBatchID`
-* is optional
-* type: `string`
-* defined in [Audit Trail](../common/auditable.schema.md#xdmcreatedbybatchid)
-
-### xdm:createdByBatchID Type
-
-
-`string`
-* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
-
-
-
-
-
-
 ## xdm:gender
 ### Gender
 
@@ -227,27 +149,6 @@ The value of this property **must** be equal to one of the [known values below](
 
 
 
-## xdm:modifiedByBatchID
-### Modified by Batch Identifier
-
-The last Data Set Files in Catalog Services which has modified the entity. At creation time, `modifiedByBatchID` is set as `createdByBatchID`.
-
-`xdm:modifiedByBatchID`
-* is optional
-* type: `string`
-* defined in [Audit Trail](../common/auditable.schema.md#xdmmodifiedbybatchid)
-
-### xdm:modifiedByBatchID Type
-
-
-`string`
-* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
-
-
-
-
-
-
 ## xdm:name
 ### Full name
 
@@ -262,46 +163,6 @@ The person's full name
 
 
 * [Person Name](person-name.schema.md) – `https://ns.adobe.com/xdm/context/person-name`
-
-
-
-
-
-## xdm:repositoryCreatedBy
-### Created by User Identifier
-
-User id who has created the entity.
-
-`xdm:repositoryCreatedBy`
-* is optional
-* type: `string`
-* defined in [Audit Trail](../common/auditable.schema.md#xdmrepositorycreatedby)
-
-### xdm:repositoryCreatedBy Type
-
-
-`string`
-
-
-
-
-
-
-## xdm:repositoryLastModifiedBy
-### Modified by User Identifier
-
-User id who last modified the entity. At creation time, `modifiedByUser` is set as `createdByUser`.
-
-`xdm:repositoryLastModifiedBy`
-* is optional
-* type: `string`
-* defined in [Audit Trail](../common/auditable.schema.md#xdmrepositorylastmodifiedby)
-
-### xdm:repositoryLastModifiedBy Type
-
-
-`string`
-
 
 
 

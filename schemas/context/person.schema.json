@@ -66,9 +66,6 @@
         },
         {
             "$ref": "#/definitions/person"
-        },
-        {
-            "$ref": "https://ns.adobe.com/xdm/common/auditable"
         }
     ],
     "meta:status": "experimental"

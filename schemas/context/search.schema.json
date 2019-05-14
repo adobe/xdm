@@ -28,7 +28,7 @@
         "xdm:keywords": {
           "title": "Keywords",
           "type": "string",
-          "description": "The keywords for the search."
+          "description": "Keywords for the search."
         },
         "xdm:isPaid": {
           "title": "Is Paid",
@@ -38,7 +38,21 @@
         "xdm:pageDepth": {
           "title": "Page Depth",
           "type": "integer",
-          "description": "The page depth in the search results."
+          "description": "Page depth in the search results."
+        },
+        "xdm:slot": {
+          "title": "Page Slot",
+          "type": "string",
+          "description": "Named section of the page where the search result appeared. For eg. Top, Side.",
+          "meta:enum": {
+            "top": "Top of the page",
+            "side": "Side of the page"
+          }
+        },
+        "xdm:position": {
+          "title": "Listing Position",
+          "type": "integer",
+          "description": "Position (rank) of the listing in the search result page."
         }
       }
     }

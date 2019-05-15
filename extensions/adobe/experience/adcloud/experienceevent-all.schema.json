@@ -1,13 +1,13 @@
 {
   "meta:license": [
-    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
     "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/experience/adcloud/experienceevent-all",
-  "title": "Adobe AdCloud ExperienceEvent Full Extension",
+  "title": "Adobe Advertising Cloud ExperienceEvent Full Extension",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
@@ -40,6 +40,21 @@
           "title": "Stitch ID Chosen",
           "type": "string",
           "description": "ID from the Ad Servers through AdCloud STATS to track click-through conversion on browsers that block third party cookies"
+        },
+        "https://ns.adobe.com/experience/adcloud/adDeliveryDetails": {
+          "title": "Ad Delivery Details",
+          "$ref": "https://ns.adobe.com/experience/adcloud/addeliverydetails",
+          "description": "Adobe AdCloud Search Ad Delivery Details."
+        },
+        "https://ns.adobe.com/experience/adcloud/productDetails": {
+          "title": "Ad Product Details",
+          "$ref": "https://ns.adobe.com/experience/adcloud/productdetails",
+          "description": "Adobe AdCloud Search Ad Product Details."
+        },
+        "https://ns.adobe.com/experience/adcloud/conversionDetails": {
+          "title": "Ad Conversion Details",
+          "$ref": "https://ns.adobe.com/experience/adcloud/conversiondetails",
+          "description": "Search Ad Conversion Details."
         }
       }
     }

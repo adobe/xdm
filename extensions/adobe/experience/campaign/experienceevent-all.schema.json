@@ -283,7 +283,7 @@
         "https://ns.adobe.com/experience/campaign/offerOpened": {
           "title": "Offer Opened",
           "description": "The offer in the message for an 'offer opened' event.",
-          "$ref": "https://ns.adobe.com/experience/offer-management/proposition-response-detail"
+          "$ref": "https://ns.adobe.com/experience/campaign/offer-response-detail"
         },
         "https://ns.adobe.com/experience/campaign/offersProposed": {
           "title": "Offer Propositions",

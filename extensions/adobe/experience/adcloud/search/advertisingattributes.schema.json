@@ -18,6 +18,11 @@
                     "type": "string",
                     "description": "Unique External identifier as represented by the network for the entity object."
                 },
+                "xdm:networkId": {
+                    "title": "Network Internal Identifier",
+                    "type": "string",
+                    "description": "Unique Internal identifier for the network primarily used for join to the aggregated data-set."
+                },
                 "xdm:network": {
                     "title": "Network",
                     "type": "string",

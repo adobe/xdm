@@ -12,48 +12,48 @@
     "meta:extensible": true,
     "meta:abstract": true,
     "meta:intendedToExtend": [
-        "https://ns.adobe.com/xdm/context/admeasuressearch-adcloud"
+        "https://ns.adobe.com/experience/adcloud/search/admeasuresearch-adcloud"
     ],
     "description": "Adobe AdCloud Search Keyword Performance Report Full Extension. Contains all Solution added fields.",
     "definitions": {
         "keywordsperformance-all": {
             "properties": {
-                "xdm:accountId": {
+                "https://ns.adobe.com/experience/adcloud/search/accountId": {
                     "title": "Internal Account ID",
                     "type": "string",
                     "description": "Unique identifier for the account this event is associated to."
                 },
-                "xdm:campaignId": {
+                "https://ns.adobe.com/experience/adcloud/search/campaignId": {
                     "title": "Search Engine Campaign ID",
                     "type": "string",
                     "description": "Unique identifier for the campaign which this event is associated to."
                 },
-                "xdm:adgroupId": {
+                "https://ns.adobe.com/experience/adcloud/search/adgroupId": {
                     "title": "Search Engine AdGroup ID",
                     "type": "string",
                     "description": "Unique identifier for the adgroup which this event is associated to."
                 },
-                "xdm:termId": {
+                "https://ns.adobe.com/experience/adcloud/search/termId": {
                     "title": "Search Term ID",
                     "type": "string",
                     "description": "Unique identifier for the  term which this event is associated to."
                 },
-                "xdm:clientId": {
+                "https://ns.adobe.com/experience/adcloud/search/clientId": {
                     "title": "Internal Advertiser or User ID",
                     "type": "string",
                     "description": "Unique identifier for the advertiser which this event is associated to."
                 },
-                "xdm:networkId": {
+                "https://ns.adobe.com/experience/adcloud/search/networkId": {
                     "title": "Search Engine ID",
                     "type": "string",
                     "description": "Unique identifier for the Search Engine which this event is associated to."
                 },
-                "xdm:term": {
+                "https://ns.adobe.com/experience/adcloud/search/term": {
                     "title": "Search Term",
                     "type": "string",
                     "description": "Search Term or Keyword Name."
                 },
-                "xdm:matchType": {
+                "https://ns.adobe.com/experience/adcloud/search/matchType": {
                     "title": "Keyword Match Type",
                     "type": "string",
                     "description": "Match Type associated to the Keyword being targeted for the Ad.",
@@ -68,7 +68,7 @@
                         "Product Group": "Product Group"
                     }
                 },
-                "xdm:keywordMeasures": {
+                "https://ns.adobe.com/experience/adcloud/search/keywordMeasure": {
                     "title": "Adobe Ad Cloud Search Ad Performance Measure Custom Fields",
                     "$ref": "https://ns.adobe.com/experience/adcloud/search/admeasures",
                     "description": "Adobe AdCloud Search Ad Performance Measure Custom Fields."
@@ -78,7 +78,7 @@
     },
     "allOf": [
         {
-            "$ref": "https://ns.adobe.com/xdm/context/admeasuressearch-adcloud"
+            "$ref": "https://ns.adobe.com/experience/adcloud/search/admeasuresearch-adcloud"
         },
         {
             "$ref": "#/definitions/keywordsperformance-all"

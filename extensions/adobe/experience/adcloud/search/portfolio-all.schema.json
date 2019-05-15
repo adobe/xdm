@@ -12,17 +12,17 @@
     "meta:extensible": true,
     "meta:abstract": true,
     "meta:intendedToExtend": [
-        "https://ns.adobe.com/xdm/context/profile-adcloud"
+        "https://ns.adobe.com/experience/adcloud/search/profile-adcloud"
     ],
     "description": "Adobe AdCloud Search Portfolio Full Extension ",
     "portfolio-all": {
         "properties": {
-            "portfolio": {
+            "https://ns.adobe.com/experience/adcloud/search/portfolio": {
                 "title": "Adobe Ad Cloud Search Portfolio Top Level Fields",
                 "$ref": "https://ns.adobe.com/experience/adcloud/search/advertisingattributes",
                 "description": "Adobe Ad Cloud Top Level Entity Fields."
             },
-            "xdm:billingState": {
+            "https://ns.adobe.com/experience/adcloud/search/billingState": {
                 "title": "Billing State",
                 "type": "string",
                 "description": "Billing State Indicates whether client should be billed for a spend from this Portfolio",
@@ -31,12 +31,12 @@
                     "Not Managed": "Client will not be billed for the spend from this portfolio"
                 }
             },
-            "xdm:portfolioGroupName": {
+            "https://ns.adobe.com/experience/adcloud/search/portfolioGroupName": {
                 "title": "Portfolio Group Name",
                 "type": "string",
                 "description": "Name of the Portfolio Group"
             },
-            "xdm:portfolioGroupId": {
+            "https://ns.adobe.com/experience/adcloud/search/portfolioGroupId": {
                 "title": "Portfolio Group Internal Id",
                 "type": "string",
                 "description": "Internal Identifier for a Portfolio Group"
@@ -45,7 +45,7 @@
     },
     "allOf": [
         {
-            "$ref": "https://ns.adobe.com/xdm/context/profile-adcloud#/definitions/profile-adcloud"
+            "$ref": "https://ns.adobe.com/experience/adcloud/search/profile-adcloud#/definitions/profile-adcloud"
         },
         {
             "$ref": "#/definitions/portfolio-all"

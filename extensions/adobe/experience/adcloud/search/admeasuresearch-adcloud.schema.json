@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/context/admeasuressearch-adcloud",
+  "$id": "https://ns.adobe.com/experience/adcloud/search/admeasuresearch-adcloud",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Adobe Ad Cloud Aggregated Measures Time Series Class",
   "type": "object",
@@ -16,7 +16,7 @@
   ],
   "description": "Adobe Ad Cloud Experience Event captures events aggregated at ads entity level for a given date. These events are aggregated on various advertising platforms such as Google Ad Words, Microsoft Bing, Yahoo and persisted in our internal data stores for reporting purposes to end customers. The data can further be rolled up at various standard entities - campaign, ad-groups.", 
   "definitions": {
-    "admeasuressearch-adcloud": {
+    "admeasuresearch-adcloud": {
       "properties": { }
     }
   },
@@ -29,7 +29,7 @@
       "$ref": "https://ns.adobe.com/xdm/data/time-series"
     },
     {
-      "$ref": "#/definitions/admeasuressearch-adcloud"
+      "$ref": "#/definitions/admeasuresearch-adcloud"
     }
   ],
   "meta:status": "stabilizing"

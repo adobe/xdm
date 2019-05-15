@@ -12,23 +12,23 @@
     "meta:extensible": true,
     "meta:abstract": true,
     "meta:intendedToExtend": [
-        "https://ns.adobe.com/xdm/context/profile-adcloud"
+        "https://ns.adobe.com/experience/adcloud/search/profile-adcloud"
     ],
     "description": "Adobe AdCloud Search Adgroup Full Extension. Contains all Solution added fields.",
     "definitions": {
         "adgroup-all":{
             "properties": {
-                "adgroup": {
+                "https://ns.adobe.com/experience/adcloud/search/adgroup": {
                     "title": "Adobe Ad Cloud Search Adgroup Top Level Fields",
                     "$ref": "https://ns.adobe.com/experience/adcloud/search/advertisingattributes",
                     "description": "Adobe Ad Cloud Top Level Attributes for Adgroups."
                 },
-                "xdm:campaignInternalId": {
+                "https://ns.adobe.com/experience/adcloud/search/campaignInternalId": {
                     "title": "Campaign Unique Identifier",
                     "type": "integer",
                     "description": "Campaign unique identifier for the campaign this adgroup belongs to. Use for joining with campaigns."
                 },
-                "xdm:bidLevel": {
+                "https://ns.adobe.com/experience/adcloud/search/bidLevel": {
                     "title": "Bid Level",
                     "type": "string",
                     "description:": "What determines the bid for all ads belonging to this adgroup.",
@@ -47,7 +47,7 @@
     },
     "allOf": [
         {
-          "$ref": "https://ns.adobe.com/xdm/context/profile-adcloud#/definitions/profile-adcloud"
+          "$ref": "https://ns.adobe.com/experience/adcloud/search/profile-adcloud#/definitions/profile-adcloud"
         },
         {
           "$ref": "#/definitions/adgroup-all"

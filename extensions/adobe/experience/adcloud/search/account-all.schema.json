@@ -12,18 +12,18 @@
     "meta:extensible": true,
     "meta:abstract": true,
     "meta:intendedToExtend": [
-        "https://ns.adobe.com/xdm/context/profile-adcloud"
+        "https://ns.adobe.com/experience/adcloud/search/profile-adcloud"
     ],
     "description": "Adobe AdCloud Search Account Entity Full Extension. Contains all Solution added fields.",
     "definitions": {
         "account-all": {
             "properties": {
-                "xdm:account": {
+                "https://ns.adobe.com/experience/adcloud/search/account": {
                     "title": "Adobe Ad Cloud Search Account Top Level Fields",
                     "$ref": "https://ns.adobe.com/experience/adcloud/search/advertisingattributes",
                     "description": "Adobe Ad Cloud Top Level Entity Fields."
                 },
-                "xdm:currencyCode": {
+                "https://ns.adobe.com/experience/adcloud/search/currencyCode": {
                     "title": "Currency the account is operated in on search networks",
                     "type": "string",
                     "examples": [
@@ -34,7 +34,7 @@
                     "pattern": "^[A-Z]{3}$",
                     "description": "Currency associated with the account"
                 },
-                "xdm:managed": {
+                "https://ns.adobe.com/experience/adcloud/search/managed": {
                     "title": "Indicates whether account is enabled or disabled on search networks",
                     "type": "string",
                     "description": "Managed Flag indicates whether account is enabled or disabled on search networks.",
@@ -43,12 +43,12 @@
                         "Disabled": "Disabled"
                     }
                 },
-                "xdm:budget": {
+                "https://ns.adobe.com/experience/adcloud/search/budget": {
                     "title": "Budget",
                     "type": "number",
                     "description": "Budget Allocated to the Account"
                 },
-                "xdm:budgetType": {
+                "https://ns.adobe.com/experience/adcloud/search/budgetType": {
                     "title": "Budget Type",
                     "type": "string",
                     "description": "Budget Type",
@@ -65,7 +65,7 @@
     },
     "allOf": [
         {
-            "$ref": "https://ns.adobe.com/xdm/context/profile-adcloud#/definitions/profile-adcloud"
+            "$ref": "https://ns.adobe.com/experience/adcloud/search/profile-adcloud#/definitions/profile-adcloud"
         },
         {
             "$ref": "#/definitions/account-all"

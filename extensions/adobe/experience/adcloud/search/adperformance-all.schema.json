@@ -12,43 +12,43 @@
     "meta:extensible": true,
     "meta:abstract": true,
     "meta:intendedToExtend": [
-        "https://ns.adobe.com/xdm/context/admeasuressearch-adcloud"
+        "https://ns.adobe.com/experience/adcloud/search/admeasuresearch-adcloud"
     ],
     "description": "Adobe AdCloud Search Ad Performance Report Full Extension. Contains all Solution added fields.",
   "definitions": {
     "adperformance-all": {
       "properties": {
-        "xdm:accountId": {
+        "https://ns.adobe.com/experience/adcloud/search/accountId": {
           "title": "Search Engine Account ID",
           "type": "string",
           "description": "Unique identifier for the account this event is associated to."
         },
-        "xdm:campaignId": {
+        "https://ns.adobe.com/experience/adcloud/search/campaignId": {
           "title": "Search Engine Campaign ID",
           "type": "string",
           "description": "Unique identifier for the campaign which this event is associated to."
         },
-        "xdm:adgroupId": {
+        "https://ns.adobe.com/experience/adcloud/search/adgroupId": {
           "title": "Search Engine AdGroup ID",
           "type": "string",
           "description": "Unique identifier for the adgroup which this event is associated to."
         },
-        "xdm:adId": {
+        "https://ns.adobe.com/experience/adcloud/search/adId": {
           "title": "Ad ID",
           "type": "string",
           "description": "Unique identifier for the ad or creative which this event is associated to."
         },
-        "xdm:clientId": {
+        "https://ns.adobe.com/experience/adcloud/search/clientId": {
           "title": "Internal Advertiser or User ID",
           "type": "string",
           "description": "Unique identifier for the advertiser which this event is associated to."
         },
-        "xdm:networkId": {
+        "https://ns.adobe.com/experience/adcloud/search/networkId": {
           "title": "Search Engine ID",
           "type": "string",
           "description": "Unique identifier for the Search Engine which this event is associated to."
         },
-        "xdm:adMeasures": {
+        "https://ns.adobe.com/experience/adcloud/search/adMeasure": {
           "title": "Adobe Ad Cloud Search Ad Performance Measure Custom Fields",
           "$ref": "https://ns.adobe.com/experience/adcloud/search/admeasures",
           "description": "Adobe AdCloud Search Ad Performance Measure Custom Fields."
@@ -58,7 +58,7 @@
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/context/admeasuressearch-adcloud"
+      "$ref": "https://ns.adobe.com/experience/adcloud/search/admeasuresearch-adcloud"
     },
     {
       "$ref": "#/definitions/adperformance-all"

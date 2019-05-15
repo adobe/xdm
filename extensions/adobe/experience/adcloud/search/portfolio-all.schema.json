@@ -12,9 +12,9 @@
     "meta:extensible": true,
     "meta:abstract": true,
     "meta:intendedToExtend": [
-        "https://ns.adobe.com/experience/adcloud/search/profile-adcloud"
+        "https://ns.adobe.com/xdm/context/profile"
     ],
-    "description": "Adobe AdCloud Search Portfolio Full Extension ",
+    "description": "Adobe AdCloud Search Portfolio Full Extension. Contains Top Level Common Advertising Attributes along with custom fields specific to Portfolio setup on the Adobe AdCloud Platform.",
     "portfolio-all": {
         "properties": {
             "https://ns.adobe.com/experience/adcloud/search/portfolio": {
@@ -45,7 +45,7 @@
     },
     "allOf": [
         {
-            "$ref": "https://ns.adobe.com/experience/adcloud/search/profile-adcloud#/definitions/profile-adcloud"
+            "$ref": "https://ns.adobe.com/xdm/context/profile#/definitions/profile"
         },
         {
             "$ref": "#/definitions/portfolio-all"

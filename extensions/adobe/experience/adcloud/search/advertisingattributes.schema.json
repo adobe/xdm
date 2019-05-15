@@ -9,7 +9,7 @@
     "$id": "https://ns.adobe.com/experience/adcloud/search/advertisingattributes",
     "title": "Ad Cloud Top Level Entity Attributes DataTypes",
     "type": "object",
-    "description": "Ad Cloud Top Level Entity Attributes DataTypes",
+    "description": "Defines common set of attributes across various entities defined on ad network platforms as well as adobe advertising cloud - for example campaign, adgroup, keywords and ads. This set of fields needs to be included in all schemas that defines an advertising entity object.",
     "definitions": {
         "advertisingattributes": {
             "properties": {

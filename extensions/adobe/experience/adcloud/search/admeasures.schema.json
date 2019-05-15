@@ -9,7 +9,7 @@
   "$id": "https://ns.adobe.com/experience/adcloud/search/admeasures",
   "title": "Search Ad Performance Measures",
   "type": "object",
-  "description": "Adobe AdCloud Search Ad Performance Measures",
+  "description": "Adobe AdCloud Search Ad Performance Peformance Measures. They should be included as and when rollup is performed from lowest granular object (ads/keywords) to top level objects - example campaign, adgroup.",
   "meta:extensible": true,
   "definitions": {
     "admeasures": {

@@ -12,9 +12,9 @@
     "meta:extensible": true,
     "meta:abstract": true,
     "meta:intendedToExtend": [
-        "https://ns.adobe.com/experience/adcloud/search/profile-adcloud"
+        "https://ns.adobe.com/xdm/context/profile"
     ],
-    "description": "Adobe AdCloud Search Campaign Entity Full Extension. Contains all Solution added fields.",
+    "description": "Adobe AdCloud Search Campaign Entity Full Extension. Contains Top Level Common Advertising Attributes along with custom fields specific to Campaign setup on the Search Network Platforms.",
     "definitions": {
         "campaign-all": {
             "properties": {
@@ -92,7 +92,7 @@
     },
     "allOf": [
         {
-            "$ref": "https://ns.adobe.com/experience/adcloud/search/profile-adcloud#/definitions/profile-adcloud"
+            "$ref": "https://ns.adobe.com/xdm/context/profile#/definitions/profile"
         },
         {
             "$ref": "#/definitions/campaign-all"

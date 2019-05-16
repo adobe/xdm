@@ -245,11 +245,11 @@
               "title": "In-App Message Action",
               "type": "string",
               "meta:enum": {
-                "Button 1": "Action on button 1",
-                "Button 2": "Action on button 2",
-                "Dismissal": "Action on close button"
+                "primary": "Primary action",
+                "secondary": "Secondary action",
+                "dismiss": "Dismiss action"
               },
-              "description": "Actions on the In-App message delivered, e.g. actions on button 1, button 2 or dismissals."
+              "description": "Actions on the In-App message delivered, e.g. action on primary button, secondary button or close button."
             },
             "xdm:inAppMessageButtonText": {
               "title": "In-App Message Button Text",

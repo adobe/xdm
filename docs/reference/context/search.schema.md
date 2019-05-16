@@ -34,8 +34,10 @@ Information about web search activity.
 | [xdm:isPaid](#xdmispaid) | `boolean` | Optional | Search (this schema) |
 | [xdm:keywords](#xdmkeywords) | `string` | Optional | Search (this schema) |
 | [xdm:pageDepth](#xdmpagedepth) | `integer` | Optional | Search (this schema) |
+| [xdm:position](#xdmposition) | `integer` | Optional | Search (this schema) |
 | [xdm:searchEngine](#xdmsearchengine) | `string` | Optional | Search (this schema) |
 | [xdm:searchEngineID](#xdmsearchengineid) | `string` | Optional | Search (this schema) |
+| [xdm:slot](#xdmslot) | `string` | Optional | Search (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:isPaid
@@ -60,7 +62,7 @@ Indicate if the search is paid or not.
 ## xdm:keywords
 ### Keywords
 
-The keywords for the search.
+Keywords for the search.
 
 `xdm:keywords`
 * is optional
@@ -80,7 +82,7 @@ The keywords for the search.
 ## xdm:pageDepth
 ### Page Depth
 
-The page depth in the search results.
+Page depth in the search results.
 
 `xdm:pageDepth`
 * is optional
@@ -88,6 +90,26 @@ The page depth in the search results.
 * defined in this schema
 
 ### xdm:pageDepth Type
+
+
+`integer`
+
+
+
+
+
+
+## xdm:position
+### Listing Position
+
+Position (rank) of the listing in the search result page.
+
+`xdm:position`
+* is optional
+* type: `integer`
+* defined in this schema
+
+### xdm:position Type
 
 
 `integer`
@@ -134,6 +156,32 @@ The application-specified identifier used to identify the search engine used by 
 * format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
 
 
+
+
+
+
+## xdm:slot
+### Page Slot
+
+Named section of the page where the search result appeared. For eg. Top, Side.
+
+`xdm:slot`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:slot Type
+
+
+`string`
+
+
+
+### xdm:slot Known Values
+| Value | Description |
+|-------|-------------|
+| `top` | Top of the page |
+| `side` | Side of the page |
 
 
 

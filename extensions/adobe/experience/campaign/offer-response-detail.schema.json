@@ -11,9 +11,6 @@
   "type": "object",
   "meta:abstract": true,
   "meta:extensible": true,
-  "meta:extends": [
-    "https://ns.adobe.com/experience/offer-management/proposition-response-detail"
-  ],
   "description": "An Offer Proposition Detail is used to capture the details about an Offer Proposition.",
   "definitions": {
     "response-detail-datatype": {
@@ -34,9 +31,6 @@
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
-    },
-    {
-      "$ref": "https://ns.adobe.com/experience/offer-management/proposition-response-detail"
     },
     {
       "$ref": "#/definitions/response-detail-datatype"

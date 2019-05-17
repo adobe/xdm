@@ -5,15 +5,15 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/campaign/offer-proposition-detail",
+  "$id": "https://ns.adobe.com/experience/campaign/offer-response-detail",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Campaign Offer Proposition Detail",
+  "title": "Campaign Offer Response Detail",
   "type": "object",
   "meta:abstract": true,
   "meta:extensible": true,
   "description": "An Offer Proposition Detail is used to capture the details about an Offer Proposition.",
   "definitions": {
-    "proposition-detail-datatype": {
+    "response-detail-datatype": {
       "properties": {
         "xdm:activity": {
           "title": "Offer Activity Detail",
@@ -33,7 +33,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "#/definitions/proposition-detail-datatype"
+      "$ref": "#/definitions/response-detail-datatype"
     }
   ],
   "meta:status": "experimental"

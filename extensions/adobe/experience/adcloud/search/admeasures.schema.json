@@ -16,32 +16,32 @@
       "properties": {
         "xdm:clicks": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Total number of clicks on your ads or keywords."
+          "description": "Count of Clicks for a given ad displayed on the network."
         },
         "xdm:impressions": {
           "$ref": "https://ns.adobe.com/xdm/data/measure", 
-          "description": "Total number of impressions on your ads or keywords."
+          "description": "Count of impressions for a given ad displayed on the network."
         },
         "xdm:totalCost": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Total Spend on your ads or keywords."
+          "description": "Total Advertising Spend for a given ad displayed on the network. The spend is in the account currency configured on the network."
         },
         "xdm:avgPosition": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Average Position of the Ad displayed on Search Engine."
+          "description": "Average Position of the Ad displayed on the network."
         },
         "xdm:topPageBid": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Top of the Page Bid Estimator."
+          "description": "Top of the Page Bid Estimator. The measure is computed by the network and is not an additive measure."
         },
         "xdm:qualityScore": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Quality Score of the Keyword assigned by the network - range 1 to 10."
+          "description": "Quality Score of the Keyword assigned by the network - range 1 to 10. This is not an additive measure."
         },
         "xdm:device": {
           "title": "Device",
           "$ref": "https://ns.adobe.com/xdm/context/device",
-          "description": "The device originating the event."
+          "description": "The device from where the ad was displayed."
         }
       }
     }

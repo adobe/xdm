@@ -7,7 +7,7 @@
     ],
     "$schema": "http://json-schema.org/draft-06/schema#",
     "$id": "https://ns.adobe.com/experience/adcloud/search/portfolio-all",
-    "title": "Search Portfolio Detail",
+    "title": "Ad Cloud Search Portfolio Entity Full Extension",
     "type": "object",
     "meta:extensible": true,
     "meta:abstract": true,
@@ -31,15 +31,15 @@
                     "Not Managed": "Client will not be billed for the spend from this portfolio"
                 }
             },
-            "https://ns.adobe.com/experience/adcloud/search/portfolioGroupName": {
-                "title": "Portfolio Group Name",
-                "type": "string",
-                "description": "Name of the Portfolio Group"
-            },
             "https://ns.adobe.com/experience/adcloud/search/portfolioGroupId": {
                 "title": "Portfolio Group Internal Id",
                 "type": "string",
-                "description": "Internal Identifier for a Portfolio Group"
+                "description": "Internal Identifier for a Portfolio Group the portfolio belongs to."
+            },
+            "https://ns.adobe.com/experience/adcloud/search/portfolioGroupName": {
+                "title": "Portfolio Group Name",
+                "type": "string",
+                "description": "Name of the Portfolio Group."
             }
         }
     },

@@ -24,7 +24,7 @@
                     "description": "Adobe Ad Cloud Top Level Entity Fields."
                 },
                 "https://ns.adobe.com/experience/adcloud/search/currencyCode": {
-                    "title": "Currency the account is operated in on search networks",
+                    "title": "Currency the account operates on the networks",
                     "type": "string",
                     "examples": [
                         "USD",

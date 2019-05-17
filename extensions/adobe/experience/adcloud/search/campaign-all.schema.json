@@ -24,14 +24,14 @@
                     "description": "Adobe AdCloud Top Level Attributes for Campaign Entity."
                 },
                 "https://ns.adobe.com/experience/adcloud/search/accountId": {
-                    "title": "Internal Account Id of the Campaign",
+                    "title": "Ad Cloud Account Identifier",
                     "type": "integer",
-                    "description": "Internal Account the Campaign belongs to."
+                    "description": "Adobe Ad Cloud Account Identifier given campaign is assoicated to."
                 },
                 "https://ns.adobe.com/experience/adcloud/search/portfolioId": {
-                    "title": "Portfolio Id",
+                    "title": "Ad Cloud Portfolio Id",
                     "type": "integer",
-                    "description": "Portfolio assigned to the Campaign. Campaign can have zero or at the most one portfolio assigned to it"
+                    "description": "Portfolio if associated with the Campaign. This is an internal identifier and will be used to join with Ad Cloud Portfolio Schema."
                 },
                 "https://ns.adobe.com/experience/adcloud/search/channelType": {
                     "title": "Channel Type",
@@ -41,12 +41,12 @@
                 "https://ns.adobe.com/experience/adcloud/search/budget": {
                     "title": "Budget",
                     "type": "number",
-                    "description": "Budget Allocated to the Campaign"
+                    "description": "Budget Allocated for the Campaign"
                 },
                 "https://ns.adobe.com/experience/adcloud/search/budgetType": {
                     "title": "Budget Type",
                     "type": "string",
-                    "description": "Budget Type",
+                    "description": "Budget Type indicates how the allocated budget will be spent",
                     "meta:enum": {
                         "daily": "Daily",
                         "monthly": "Monthly",
@@ -67,7 +67,7 @@
                 "https://ns.adobe.com/experience/adcloud/search/objective": {
                     "title": "Objective",
                     "type": "string",
-                    "description": "Campaign Objective",
+                    "description": "Campaign Objective indicates the primary objective of the campaign - e.g. Promotions, Brands, App Installs.",
                     "meta:enum": {
                         "visit_web": "visit_web",
                         "promote_brand": "promote_brand",
@@ -76,13 +76,13 @@
                     }
                 },
                 "https://ns.adobe.com/experience/adcloud/search/startDate": {
-                    "title": "Start Date",
+                    "title": "Campaign Start Date",
                     "type": "string",
                     "format": "date",
                     "description": "Campaign Start Date"
                 },
                 "https://ns.adobe.com/experience/adcloud/search/endDate": {
-                    "title": "End Date",
+                    "title": "Campaign End Date",
                     "type": "string",
                     "format": "date",
                     "description": "Campaign End Date"

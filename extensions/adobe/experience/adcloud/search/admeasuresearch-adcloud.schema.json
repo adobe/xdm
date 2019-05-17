@@ -14,7 +14,7 @@
   "meta:extends": [
     "https://ns.adobe.com/xdm/data/time-series"
   ],
-  "description": "Adobe Ad Cloud Experience Event captures events aggregated at ads entity level for a given date. These events are aggregated on various advertising platforms such as Google Ad Words, Microsoft Bing, Yahoo and persisted in our internal data stores for reporting purposes to end customers. The data can further be rolled up at various standard entities - campaign, ad-groups. This is an internal Adobe Solution Class and should not be used for purposes outside of Adobe Ad Cloud Solution.", 
+  "description": "Adobe Ad Cloud Search Platform generates daily aggregated peformance and conversions data. The data is generated for external search networks like Google Ad Words, Microsoft Bing, Yahoo. The primary consumers of this data is internal Ad Cloud Solutions Team like reporting and algo teams. This is an internal Adobe Solution Class and should not be used for purposes outside of Adobe Ad Cloud Solution.", 
   "definitions": {
     "admeasuresearch-adcloud": {
       "properties": { }

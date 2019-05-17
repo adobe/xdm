@@ -24,7 +24,7 @@
                     "description": "Adobe Ad Cloud Top Level Attributes for Adgroups."
                 },
                 "https://ns.adobe.com/experience/adcloud/search/campaignInternalId": {
-                    "title": "Campaign Unique Identifier",
+                    "title": "Ad Cloud Campaign Unique Identifier",
                     "type": "integer",
                     "description": "Campaign unique identifier for the campaign this adgroup belongs to. Use for joining with campaigns."
                 },

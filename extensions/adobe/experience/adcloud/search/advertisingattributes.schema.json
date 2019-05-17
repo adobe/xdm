@@ -14,34 +14,34 @@
         "advertisingattributes": {
             "properties": {
                 "xdm:externalId": {
-                    "title": "External Entity ID",
+                    "title": "Network Entity ID",
                     "type": "string",
-                    "description": "Unique External identifier as represented by the network for the entity object."
+                    "description": "Unique identifier as represented by the network for the entity object."
                 },
                 "xdm:networkId": {
-                    "title": "Network Internal Identifier",
+                    "title": "Ad Cloud Search Engine or Network Identifier",
                     "type": "string",
-                    "description": "Unique Internal identifier for the network primarily used for join to the aggregated data-set."
+                    "description": "Unique Internal identifier for the network primarily used for join with the aggregated data-set."
                 },
                 "xdm:network": {
-                    "title": "Network",
+                    "title": "Name of the Search Engine Network",
                     "type": "string",
                     "description": "Network Name as defined by the search partners."
                 },
                 "xdm:name": {
                     "title": "Name",
                     "type": "string",
-                    "description": "Name of the entity."
+                    "description": "Unique Name for the entity - e.g Campaign Name, Ad Group Name."
                 },
                 "xdm:description": {
                     "title": "Description",
                     "type": "string",
-                    "description": "Description of the entity."
+                    "description": "Description for the entity."
                 },
                 "xdm:status": {
                     "title": "Status",
                     "type": "string",
-                    "description": "Status of the entity.",
+                    "description": "Status for the entity.",
                     "meta:enum": {
                         "Active": "Active",
                         "Paused": "Paused",
@@ -63,14 +63,14 @@
                     }
                 },
                 "xdm:createdTime": {
-                    "title": "Created Time of the Entity in Ad Cloud platform",
-                    "description": "Created Time when entity got created in Ad Cloud Platform.This can differ from modified time in external advertising platform partners.",
+                    "title": "Created Time of the entity in the Ad Cloud Platform",
+                    "description": "Created Time of the entity in the Ad Cloud Platform.This differs from creation time of the entity in external advertising platform partners.",
                     "type": "string",
                     "format": "date-time"
                 },
                 "xdm:modifiedTime": {
-                    "title": "Modified Time of the Entity in Ad Cloud Platform",
-                    "description": "Modified Time when entity was last modified in Ad Cloud Platform. This can differ from modified time in external advertising platform partners.",
+                    "title": "Modified Time for the given entity in Ad Cloud Platform",
+                    "description": "Modified Time of the entity in the Ad Cloud Platform. This differs from modified time of the entity in external advertising platform partners.",
                     "type": "string",
                     "format": "date-time"
                 }

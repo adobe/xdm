@@ -19,34 +19,34 @@
     "adperformance-all": {
       "properties": {
         "https://ns.adobe.com/experience/adcloud/search/accountId": {
-          "title": "Search Engine Account ID",
+          "title": "Ad Cloud Account ID",
           "type": "string",
-          "description": "Unique identifier for the account this event is associated to."
+          "description": "Ad Cloud Search Account Identifier associated with this click event."
         },
         "https://ns.adobe.com/experience/adcloud/search/campaignId": {
-          "title": "Search Engine Campaign ID",
+          "title": "Network Campaign ID",
           "type": "string",
-          "description": "Unique identifier for the campaign which this event is associated to."
+          "description": "Network Campaign Identifier associated with this click event."
         },
         "https://ns.adobe.com/experience/adcloud/search/adgroupId": {
-          "title": "Search Engine AdGroup ID",
+          "title": "Network AdGroup ID",
           "type": "string",
-          "description": "Unique identifier for the adgroup which this event is associated to."
+          "description": "Network Ad Group Identifier associated with this click event."
         },
         "https://ns.adobe.com/experience/adcloud/search/adId": {
-          "title": "Ad ID",
+          "title": "Network Creative ID",
           "type": "string",
-          "description": "Unique identifier for the ad or creative which this event is associated to."
+          "description": "Network Ad or Creative Identifier associated with this click event."
         },
         "https://ns.adobe.com/experience/adcloud/search/clientId": {
           "title": "Internal Advertiser or User ID",
           "type": "string",
-          "description": "Unique identifier for the advertiser which this event is associated to."
+          "description": "Advertiser or User Identifier associated with this click event."
         },
         "https://ns.adobe.com/experience/adcloud/search/networkId": {
           "title": "Search Engine ID",
           "type": "string",
-          "description": "Unique identifier for the Search Engine which this event is associated to."
+          "description": "Ad Cloud Search Engine Identifier associated with this click event."
         },
         "https://ns.adobe.com/experience/adcloud/search/adMeasure": {
           "title": "Adobe Ad Cloud Search Ad Performance Measure Custom Fields",

@@ -19,18 +19,14 @@
     "searchadvertisingaccount": {
       "properties": {
         "https://ns.adobe.com/experience/adcloud/currencyCode": {
-          "title": "Currency the account operates on the networks",
+          "title": "Currency the account operates on the advertising platform",
           "type": "string",
-          "examples": [
-            "USD",
-            "EUR",
-            "JPY"
-          ],
+          "examples": ["USD", "EUR", "JPY"],
           "pattern": "^[A-Z]{3}$",
           "description": "Currency associated with the account"
         },
         "https://ns.adobe.com/experience/adcloud/managed": {
-          "title": "Indicates whether account is enabled or disabled on search networks",
+          "title": "Indicates whether account is enabled or disabled on search advertising platform",
           "type": "string",
           "description": "Managed Flag indicates whether account is enabled or disabled on search networks.",
           "meta:enum": {

@@ -1,0 +1,94 @@
+{
+    "meta:license": [
+        "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/experience/adcloud/searchadvertisingattributes",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Search Advertising Entity Attributes",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:extends": [
+        "https://ns.adobe.com/xdm/data/record"
+    ],
+    "description": "Defines common set of attributes across various entities defined on search advertising platforms - for example campaign, adgroup, keywords and ads. Search Advertising Attributes base class needs to be extended in all search advertising entity.",
+    "definitions": {
+        "searchadvertisingattributes": {
+            "properties": {
+                "https://ns.adobe.com/experience/adcloud/externalId": {
+                    "title": "Network Entity ID",
+                    "type": "string",
+                    "description": "Unique identifier as represented by the network for the entity object."
+                },
+                "https://ns.adobe.com/experience/adcloud/networkId": {
+                    "title": "Ad Cloud Search Engine or Network Identifier",
+                    "type": "string",
+                    "description": "Unique Internal identifier for the network primarily used for join with the aggregated data-set."
+                },
+                "https://ns.adobe.com/experience/adcloud/network": {
+                    "title": "Name of the Search Engine Network",
+                    "type": "string",
+                    "description": "Network Name as defined by the search partners."
+                },
+                "https://ns.adobe.com/experience/adcloud/name": {
+                    "title": "Name",
+                    "type": "string",
+                    "description": "Unique Name for the entity - e.g Campaign Name, Ad Group Name."
+                },
+                "https://ns.adobe.com/experience/adcloud/description": {
+                    "title": "Description",
+                    "type": "string",
+                    "description": "Description for the entity."
+                },
+                "https://ns.adobe.com/experience/adcloud/status": {
+                    "title": "Status",
+                    "type": "string",
+                    "description": "Status for the entity.",
+                    "meta:enum": {
+                        "Active": "Active",
+                        "Paused": "Paused",
+                        "Deleted": "Deleted",
+                        "Ended": "Ended",
+                        "Pending": "Pending",
+                        "Inactive": "Inactive",
+                        "Disapproved": "Disapproved",
+                        "Incomplete": "Incomplete",
+                        "Offline": "Offline",
+                        "On Hold (Editing)": "On Hold (Editing)",
+                        "On Hold (Other)": "On Hold (Other)",
+                        "Duplicate": "Duplicate",
+                        "Orphan": "Orphan",
+                        "Optimize": "Optimize",
+                        "Disabled": "Disabled",
+                        "Unknown": "Unknown",
+                        "Dummy": "Dummy"
+                    }
+                },
+                "https://ns.adobe.com/experience/adcloud/createdTime": {
+                    "title": "Created Time of the entity in the Ad Cloud Platform",
+                    "description": "Created Time of the entity in the Ad Cloud Platform.This differs from creation time of the entity in external advertising platform partners.",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "https://ns.adobe.com/experience/adcloud/modifiedTime": {
+                    "title": "Modified Time for the given entity in Ad Cloud Platform",
+                    "description": "Modified Time of the entity in the Ad Cloud Platform. This differs from modified time of the entity in external advertising platform partners.",
+                    "type": "string",
+                    "format": "date-time"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/data/record"
+        },
+        {
+            "$ref": "#/definitions/searchadvertisingattributes"
+        }
+    ],
+    "meta:status": "stabilizing"
+}

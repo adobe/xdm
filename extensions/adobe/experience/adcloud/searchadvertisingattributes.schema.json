@@ -19,19 +19,19 @@
         "searchadvertisingattributes": {
             "properties": {
                 "https://ns.adobe.com/experience/adcloud/externalId": {
-                    "title": "Network Entity ID",
+                    "title": "External Identifier",
                     "type": "string",
-                    "description": "Unique identifier as represented by the network for the entity object."
+                    "description": "Identifier that defines uniqueness of the entity on the search advertising platform."
                 },
-                "https://ns.adobe.com/experience/adcloud/networkId": {
-                    "title": "Ad Cloud Search Engine or Network Identifier",
+                "https://ns.adobe.com/experience/adcloud/sid": {
+                    "title": "Search Engine ID",
                     "type": "string",
-                    "description": "Unique Internal identifier for the network primarily used for join with the aggregated data-set."
+                    "description": "Internal Identifer that maps to Search Advertising Platform - Google Adwords, Bing MSN, Yahoo Gemini, Baidu."
                 },
-                "https://ns.adobe.com/experience/adcloud/network": {
-                    "title": "Name of the Search Engine Network",
+                "https://ns.adobe.com/experience/adcloud/adPlatform": {
+                    "title": "Search Advertising Platform",
                     "type": "string",
-                    "description": "Network Name as defined by the search partners."
+                    "description": "Defines Name of the Search Advertising Platform for the given entity."
                 },
                 "https://ns.adobe.com/experience/adcloud/name": {
                     "title": "Name",

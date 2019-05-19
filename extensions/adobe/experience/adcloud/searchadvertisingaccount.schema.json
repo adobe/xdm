@@ -11,8 +11,7 @@
     "type": "object",
     "meta:extensible": true,
     "meta:abstract": true,
-    "meta:extends": [
-        "https://ns.adobe.com/xdm/data/record",
+    "meta:intendedToExtend": [
         "https://ns.adobe.com/experience/adcloud/searchadvertisingattributes"
     ],
     "description": "Search Advertising Account contains common Search Advertising Attributes along with custom fields specific to Account setup on the Search Advertising Platforms.",
@@ -60,9 +59,6 @@
         }
     },
     "allOf": [
-        {
-            "$ref": "https://ns.adobe.com/xdm/data/record"
-        },
         {
             "$ref": "https://ns.adobe.com/experience/adcloud/searchadvertisingattributes"
         },

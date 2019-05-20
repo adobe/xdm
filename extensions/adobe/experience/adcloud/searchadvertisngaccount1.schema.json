@@ -5,19 +5,37 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/experience/adcloud/searchadvertisingaccount",
+  "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Search Advertising Account",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/experience/adcloud/searchadvertisingattributes"
-  ],
-  "description": "Search Advertising Account contains common Search Advertising Attributes with custom fields specific to Account setup on the Search Advertising Platforms.",
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "description": "Search Advertising Account Class includes fields that defines Account Entity on Search Advertising Platform.",
   "definitions": {
-    "searchadvertisingaccount": {
+    "searchadvertisingcaccount": {
       "properties": {
+        "https://ns.adobe.com/experience/adcloud/externalID": {
+          "title": "External Account ID",
+          "type": "string",
+          "description": "External Account ID on the search advertising platform."
+        },
+        "https://ns.adobe.com/experience/adcloud/sid": {
+          "title": "Search Engine ID",
+          "type": "string",
+          "description": "Internal Identifier that determines which search advertising platform the data is pulled from."
+        },
+        "https://ns.adobe.com/experience/adcloud/adPlatform": {
+          "title": "Search Advertising Platform",
+          "type": "string",
+          "description": "Defines Name of the Search Advertising Platform for the Campaign."
+        },
+        "https://ns.adobe.com/experience/adcloud/accountName": {
+          "title": "Account Name",
+          "type": "string",
+          "description": "Name of the Account."
+        },
         "https://ns.adobe.com/experience/adcloud/currencyCode": {
           "title": "Currency the account operates on the advertising platform",
           "type": "string",
@@ -26,7 +44,7 @@
           "description": "Currency associated with the account"
         },
         "https://ns.adobe.com/experience/adcloud/managed": {
-          "title": "Indicates whether account is enabled or disabled on search advertising platform",
+          "title": "Account Status",
           "type": "string",
           "description": "Managed Flag indicates whether account is enabled or disabled on search networks.",
           "meta:enum": {
@@ -50,13 +68,25 @@
             "daily spend until depleted": "Daily spend until depleted",
             "day of week": "Day of week"
           }
+        },
+        "https://ns.adobe.com/experience/adcloud/createdTime": {
+          "title": "Creation Time of the Campaign in Adobe Platform",
+          "description": "Creation Time in UTC when Campaign got created in Adobe Platform.",
+          "type": "string",
+          "format": "date-time"
+        },
+        "https://ns.adobe.com/experience/adcloud/modifiedTime": {
+          "title": "Modified Time of the Campaign in Adobe Platform",
+          "description": "Modified Time in UTC when Campaign got modified in Adobe Platform.",
+          "type": "string",
+          "format": "date-time"
         }
       }
     }
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/experience/adcloud/searchadvertisingattributes"
+      "$ref": "https://ns.adobe.com/xdm/data/record"
     },
     {
       "$ref": "#/definitions/searchadvertisingaccount"

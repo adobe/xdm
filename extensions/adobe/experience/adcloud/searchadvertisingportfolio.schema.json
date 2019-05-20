@@ -14,7 +14,7 @@
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "description": "Search Advertising Portfolio Class includes fields that defines Portfolio.",
   "definitions": {
-    "searchadvertisingcportfolio": {
+    "searchadvertisingportfolio": {
       "properties": {
         "https://ns.adobe.com/experience/adcloud/portfolioName": {
           "title": "Portfolio Name",

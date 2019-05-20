@@ -14,7 +14,7 @@
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "description": "Search Advertising Account Class includes fields that defines Account Entity on Search Advertising Platform.",
   "definitions": {
-    "searchadvertisingcaccount": {
+    "searchadvertisingaccount": {
       "properties": {
         "https://ns.adobe.com/experience/adcloud/externalID": {
           "title": "External Account ID",

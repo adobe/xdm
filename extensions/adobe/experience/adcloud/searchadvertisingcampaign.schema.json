@@ -16,7 +16,7 @@
   "definitions": {
     "searchadvertisingcampaign": {
       "properties": {
-        "xdm:campaignID": {
+        "xdm:campaignId": {
           "title": "Campaign ID",
           "type": "string",
           "description": "Campaign ID on the search advertising platform."
@@ -31,7 +31,7 @@
           "type": "string",
           "description": "Description of the Campaign."
         },
-        "xdm.campaignStatus": {
+        "xdm:campaignStatus": {
           "title": "Campaign Status",
           "type": "string",
           "description": "Campaign Status indicates if underlying ads are eligible to serve.",
@@ -74,17 +74,17 @@
             "Dummy": "Dummy"
           }
         },
-        "xdm.channelType": {
+        "xdm:channelType": {
           "title": "Channel Type",
           "type": "string",
           "description": "Channel Type for the Campaign"
         },
-        "xdm.budget": {
+        "xdm:budget": {
           "title": "Budget",
           "type": "number",
           "description": "Budget Allocated for the Campaign"
         },
-        "xdm.budgetType": {
+        "xdm:budgetType": {
           "title": "Budget Type",
           "type": "string",
           "description": "Budget Type indicates how the allocated budget will be spent",
@@ -103,7 +103,7 @@
             "Day of week": "Day of week"
           }
         },
-        "xdm.adDeliveryType": {
+        "xdm:adDeliveryType": {
           "title": "Ad Delivery Method",
           "type": "string",
           "description": "Ad Delivery method can determine how long your budget lasts",
@@ -113,7 +113,7 @@
             "accelerated": "Accelerated"
           }
         },
-        "xdm.objective": {
+        "xdm:objective": {
           "title": "Campaign Objective",
           "type": "string",
           "description": "Campaign Objective indicates the primary objective of the campaign - e.g. Promotions, Brands, App Installs.",
@@ -125,17 +125,27 @@
             "visit_offer": "visit_offer"
           }
         },
-        "xdm.campaignStartDate": {
+        "xdm:campaignStartDate": {
           "title": "Campaign Start Date",
           "type": "string",
           "format": "date",
           "description": "Campaign Start Date"
         },
-        "xdm.campaignEndDate": {
+        "xdm:campaignEndDate": {
           "title": "Campaign End Date",
           "type": "string",
           "format": "date",
           "description": "Campaign End Date"
+        },
+        "xdm:portfolioId": {
+          "title": "Portfolio ID",
+          "type": "string",
+          "description": "Identifier indicates if campaign has been assigned and managed via portfolio."
+        },
+        "xdm:searchEngineId": {
+          "title": "Search Engine ID",
+          "type": "integer",
+          "description": "The application-specified identifier used to identify the Search Advertising Platform Name."
         }
       }
     }

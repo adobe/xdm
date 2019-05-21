@@ -36,7 +36,7 @@
           "type": "string",
           "description": "Name of the Ad Group."
         },
-        "xdm.adGroupStatus": {
+        "xdm:adGroupStatus": {
           "title": "Ad Group Status",
           "type": "string",
           "description": "Ad Group Status indicates if underlying ads are eligible to serve.",

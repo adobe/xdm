@@ -26,14 +26,14 @@
           "type": "string",
           "description": "Name of the Account."
         },
-        "xdm.currencyCode": {
+        "xdm:currencyCode": {
           "title": "Currency Code",
           "type": "string",
           "examples": ["USD", "EUR", "JPY"],
           "pattern": "^[A-Z]{3}$",
           "description": "Currency in which this account operates."
         },
-        "xdm.accountStatus": {
+        "xdm:accountStatus": {
           "title": "Account Status",
           "type": "string",
           "description": "Managed Flag indicates whether account is enabled or disabled on search networks.",
@@ -43,12 +43,12 @@
             "Disabled": "Disabled"
           }
         },
-        "xdm.budget": {
+        "xdm:budget": {
           "title": "Budget",
           "type": "number",
           "description": "Budget Allocated to the Account acts only as a spend cap across all your campaigns."
         },
-        "xdm.budgetType": {
+        "xdm:budgetType": {
           "title": "Budget Type",
           "type": "string",
           "description": "Budget Type",
@@ -66,6 +66,11 @@
             "Daily Spend Until Depleted": "Daily spend until depleted",
             "Day of Week": "Day of Week"
           }
+        },
+        "xdm:searchEngineId": {
+          "title": "Search Engine ID",
+          "type": "integer",
+          "description": "The applicatio-specified identifier used to identify the Search Advertising Platform Name."
         }
       }
     }

@@ -17,12 +17,12 @@
   "definitions": {
     "searchadvertisingportfolio": {
       "properties": {
-        "https://ns.adobe.com/experience/adcloud/portfolioName": {
+        "xdm:portfolioName": {
           "title": "Portfolio Name",
           "type": "string",
           "description": "Name of the Portfolio."
         },
-        "https://ns.adobe.com/experience/adcloud/billingState": {
+        "xdm:billingState": {
           "title": "Portfolio Billing State",
           "type": "string",
           "description": "Portfolio Billing State indicates whether client should be billed for spend from this Portfolio.",
@@ -31,12 +31,12 @@
             "Not Managed": "Client will not be billed for the spend from this portfolio"
           }
         },
-        "https://ns.adobe.com/experience/adcloud/portfolioGroupId": {
-          "title": "Portfolio Group ID",
+        "xdm:portfolioGroupId": {
+          "title": "Portfolio Group Identifier",
           "type": "string",
           "description": "Set of portfolios can be assigned to a portfolio Group. This identifier indicates if portfolio is assigned to a portfolio group."
         },
-        "https://ns.adobe.com/experience/adcloud/portfolioGroupName": {
+        "xdm:portfolioGroupName": {
           "title": "Portfolio Group Name",
           "type": "string",
           "description": "Indicates Name of the Portfolio Group if portfolio belongs to a Portfolio Group."

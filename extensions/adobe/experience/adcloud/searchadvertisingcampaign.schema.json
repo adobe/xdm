@@ -17,8 +17,8 @@
   "definitions": {
     "searchadvertisingcampaign": {
       "properties": {
-        "xdm:campaignId": {
-          "title": "Campaign ID",
+        "xdm:CampaignId": {
+          "title": "Campaign Identifier",
           "type": "string",
           "description": "Campaign ID on the search advertising platform."
         },
@@ -27,7 +27,7 @@
           "type": "string",
           "description": "Name of the Campaign."
         },
-        "xdm:campaginDescription": {
+        "xdm:campaignDescription": {
           "title": "Description",
           "type": "string",
           "description": "Description of the Campaign."
@@ -139,12 +139,12 @@
           "description": "Campaign End Date"
         },
         "xdm:portfolioId": {
-          "title": "Portfolio ID",
+          "title": "Portfolio Identifier",
           "type": "string",
           "description": "Identifier indicates if campaign has been assigned and managed via portfolio."
         },
         "xdm:searchEngineId": {
-          "title": "Search Engine ID",
+          "title": "Search Engine Identifier",
           "type": "integer",
           "description": "The application-specified identifier used to identify the Search Advertising Platform Name."
         }

@@ -18,17 +18,17 @@
     "searchadvertisingadgroup": {
       "properties": {
         "xdm:adgroupId": {
-          "title": "Ad Group ID",
+          "title": "Ad Group Identifier",
           "type": "string",
           "description": "Ad Group ID on the search advertising platform."
         },
         "xdm:campaignId": {
-          "title": "Campaign ID",
+          "title": "Campaign Identifier"
           "type": "string",
-          "description": "Campaign ID for the Ad Group."
+          "description": "Campaign ID for the Ad Group on the search advertising platform."
         },
         "xdm:internalCampaignId": {
-          "title": "Internal Campaign ID",
+          "title": "Internal Campaign Identifier",
           "type": "string",
           "description": "Internal Campaign ID for the Ad Group. This identifier determines uniqueness of campaign and ad group record."
         },

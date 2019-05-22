@@ -16,13 +16,13 @@
   "definitions": {
     "searchadvertisingplatform": {
       "properties": {
-        "https://ns.adobe.com/experience/adcloud/adPlatform": {
+        "xdm:adPlatform": {
           "title": "Search Advertising Platform",
           "type": "string",
           "description": "The Search Advertising Platform Name"
         },
-        "https://ns.adobe.com/experience/adcloud/searchEngineId": {
-          "title": "Search Engine ID",
+        "xdm:searchEngineId": {
+          "title": "Search Engine Identifier",
           "type": "integer",
           "description": "The application-specified identifier used to identify the Search Advertising Platform Name."
         }

@@ -18,7 +18,7 @@
     "searchadvertisingaccount": {
       "properties": {
         "xdm:accountId": {
-          "title": "Account ID",
+          "title": "Account Identifier",
           "type": "string",
           "description": "Identifier that defines Customer/Client ID setup on the Search Advertising Platform."
         },
@@ -69,7 +69,7 @@
           }
         },
         "xdm:searchEngineId": {
-          "title": "Search Engine ID",
+          "title": "Search Engine Identifier",
           "type": "integer",
           "description": "The applicatio-specified identifier used to identify the Search Advertising Platform Name."
         }

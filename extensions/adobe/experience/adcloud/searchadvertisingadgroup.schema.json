@@ -23,7 +23,7 @@
           "description": "Ad Group ID on the search advertising platform."
         },
         "xdm:campaignId": {
-          "title": "Campaign Identifier"
+          "title": "Campaign Identifier",
           "type": "string",
           "description": "Campaign ID for the Ad Group on the search advertising platform."
         },

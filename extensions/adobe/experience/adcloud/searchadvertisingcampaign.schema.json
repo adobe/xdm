@@ -17,7 +17,7 @@
   "definitions": {
     "searchadvertisingcampaign": {
       "properties": {
-        "xdm:CampaignId": {
+        "xdm:campaignId": {
           "title": "Campaign Identifier",
           "type": "string",
           "description": "Campaign ID on the search advertising platform."

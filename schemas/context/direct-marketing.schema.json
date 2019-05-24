@@ -60,6 +60,11 @@
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
             "Offer in a marketing message (email, SMS, Push Notifications etc) has been opened/swyped/touched/interacted with by the recipient."
+        },
+        "xdm:impressions": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+            "The direct-marketing message ( Push Notifications, In-App etc) has been seen by the end user."
         }
       }
     }

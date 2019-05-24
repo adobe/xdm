@@ -15,7 +15,6 @@ An XDM Profile forms a singular representation of the attributes and interests o
 * XDM Profile `https://ns.adobe.com/xdm/context/profile`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Audit Trail](../common/auditable.schema.md) `https://ns.adobe.com/xdm/common/auditable`
-  * [IdentityMap](identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
   * [Record Schema](../data/record.schema.md) `https://ns.adobe.com/xdm/data/record`
 
 
@@ -122,11 +121,9 @@ An XDM Profile forms a singular representation of the attributes and interests o
 | [repo:createDate](#repocreatedate) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#repocreatedate) |
 | [repo:modifyDate](#repomodifydate) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#repomodifydate) |
 | [xdm:createdByBatchID](#xdmcreatedbybatchid) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmcreatedbybatchid) |
-| [xdm:identityMap](#xdmidentitymap) | `object` | Optional | [IdentityMap](identitymap.schema.md#xdmidentitymap) |
 | [xdm:modifiedByBatchID](#xdmmodifiedbybatchid) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmmodifiedbybatchid) |
 | [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmrepositorycreatedby) |
 | [xdm:repositoryLastModifiedBy](#xdmrepositorylastmodifiedby) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmrepositorylastmodifiedby) |
-| [xdm:timeSeriesEvents](#xdmtimeseriesevents) | Time-series Schema | Optional | [Record Schema](../data/record.schema.md#xdmtimeseriesevents) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -221,28 +218,6 @@ The Data Set Files in Catalog Services which has been originating the creation o
 
 
 
-## xdm:identityMap
-
-
-`xdm:identityMap`
-* is optional
-* type: `object`
-* defined in [IdentityMap](identitymap.schema.md#xdmidentitymap)
-
-### xdm:identityMap Type
-
-
-`object` with following properties:
-
-
-| Property | Type | Required |
-|----------|------|----------|
-
-
-
-
-
-
 ## xdm:modifiedByBatchID
 ### Modified by Batch Identifier
 
@@ -298,32 +273,6 @@ User id who last modified the entity. At creation time, `modifiedByUser` is set 
 
 
 `string`
-
-
-
-
-
-
-## xdm:timeSeriesEvents
-### Time-series Events
-
-List of time-series based events that relate to schemas based on record.
-
-`xdm:timeSeriesEvents`
-* is optional
-* type: Time-series Schema
-
-* defined in [Record Schema](../data/record.schema.md#xdmtimeseriesevents)
-
-### xdm:timeSeriesEvents Type
-
-
-Array type: Time-series Schema
-
-All items must be of the type:
-* [Time-series Schema](../data/time-series.schema.md) – `https://ns.adobe.com/xdm/data/time-series`
-
-
 
 
 

@@ -240,6 +240,21 @@
               "title": "URL Category",
               "type": "string",
               "description": "The category of the link. It may be `subscription`, or a user-defined category."
+            },
+            "xdm:inAppMessageAction": {
+              "title": "In-App Message Action",
+              "type": "string",
+              "meta:enum": {
+                "primary": "Primary action",
+                "secondary": "Secondary action",
+                "dismiss": "Dismiss action"
+              },
+              "description": "Actions on the In-App message delivered, e.g. action on primary button, secondary button or close button."
+            },
+            "xdm:inAppMessageButtonText": {
+              "title": "In-App Message Button Text",
+              "type": "string",
+              "description": "The user-friendly text on the button."
             }
           }
         },

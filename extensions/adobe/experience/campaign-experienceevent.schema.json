@@ -30,54 +30,54 @@
           "title": "A single message sent to a recipient.",
           "type": "object",
           "properties": {
-            "id": {
+            "xdm:id": {
               "title": "Message Identifier",
               "type": "number",
               "description": "Identifier of the message."
             },
-            "variant": {
+            "xdm:variant": {
               "title": "Content Variant",
               "type": "string",
               "description": "A campaign activity can have multiple variants e.g. Multilingual (translated variants for the same content) or A/B testing (different content to test what works better) but a message delivered to a recipient always contains one of them.\n> IMPORTANT: In case of multilingual, the mirror page, the recipient can switch from one variant to another (ex: switch of the language)."
             },
-            "seedMember": {
+            "xdm:seedMember": {
               "title": "Seed Member",
               "type": "boolean",
               "default": false,
               "description": "The recipient of this message is a member of a seed list for this campaign activity. Seed addresses are used to include recipients who do not match the defined target criteria. Seed members could be your marketing team or other stakeholders who are interested in tracking/measuring the quality of the campaign. SeedMembers get the actual message, at the same time with regular recipients, even when the seedMember does not qualify to be a regular recipient."
             },
-            "quarantine": {
+            "xdm:quarantine": {
               "title": "Quarantine",
               "type": "boolean",
               "default": false,
               "description": "Address moved to quarantine. The quarantine is set to `true` when the message failed to deliver in a way that indicates that no future messages will be deliverable either to this address."
             },
-            "proofMember": {
+            "xdm:proofMember": {
               "title": "Proof Member",
               "type": "boolean",
               "description": "The recipient of this message is a member of the proof group for this campaign activity. The proof is a special message that lets you test a delivery before sending to the main target. Proof recipients are responsible for approving both the form and content of the message. It is a pre-delivery target.",
               "default": false
             },
-            "controlGroupMember": {
+            "xdm:controlGroupMember": {
               "title": "Control Group Member",
               "type": "boolean",
               "description": "The recipient of this message is a member of a control group for this campaign activity. A control group is a population which will not receive the delivery; it is used to track post-delivery behavior and campaign impact by making a comparison between the control group (or hold out group) with the behavior of target population, which has received the delivery.",
               "default": false
             },
-            "testMember": {
+            "xdm:testMember": {
               "title": "A/B Test Member",
               "type": "boolean",
               "description": "The recipient of this message is a member of a test group for this campaign activity. This is primarily used for identifying the initial population of an A/B Test. After sending different variants to the testMembers, the winner Variant is decided to be sent to the remaining population based on behavioural changes in testMembers.",
               "default": false
             },
-            "size": {
+            "xdm:size": {
               "title": "Size (Bytes)",
               "type": "integer",
               "description": "Size in bytes of the message.\n* For email, the `size` reflects the all MIME envelope of the message, including the encoded attachments if any.\n* For SMS, the `size` reflects the number of bytes necessary to deliver the message.\nIf that number is over 160 the message will be delivered over more than one SMS.",
               "minimum": 0,
               "maximum": 2147483647
             },
-            "reason": {
+            "xdm:reason": {
               "title": "Reason",
               "type": "string",
               "meta:enum": {
@@ -109,12 +109,12 @@
               "description": "The reason why the message could/would not be delivered.",
               "default": "undefined"
             },
-            "reasonMessage": {
+            "xdm:reasonMessage": {
               "title": "Reason Message",
               "type": "string",
               "description": "Reason of message delivery failure."
             },
-            "outboundIP": {
+            "xdm:outboundIP": {
               "title": "IP Address",
               "type": "string",
               "oneOf": [
@@ -127,12 +127,12 @@
               ],
               "description": "Outbound IP address used to deliver the message."
             },
-            "externalID": {
+            "xdm:externalID": {
               "title": "External ID",
               "type": "string",
               "description": "An ID generated by the parent activity invoking service to check later if the incoming experienceEvent was generated using this ID."
             },
-            "segmentID": {
+            "xdm:segmentID": {
               "title": "Segment ID",
               "type": "string",
               "description": "A code or ID assigned to the segment population generated by a segmentation workflow. This can identify the population as part of a result set based on a criteria."
@@ -143,23 +143,23 @@
           "title": "The campaign activity originating a message to a recipient.",
           "type": "object",
           "properties": {
-            "id": {
+            "xdm:id": {
               "title": "Delivery ID",
               "type": "integer",
               "description": "The campaign activity originating this message."
             },
-            "from": {
+            "xdm:from": {
               "title": "From",
               "type": "string",
               "description": "Address used as a from/sender/caller address. Depending on the communication channel, the `address` has a different format.\n\n  * `email`: an email address.\n  * `textMessage` or `phone`: a shortcode or phone number."
             },
-            "testEnabled": {
+            "xdm:testEnabled": {
               "title": "Test Enabled",
               "type": "boolean",
               "description": "Specify whether campaign activity is of type A/B testing.",
               "default": false
             },
-            "messageClass": {
+            "xdm:messageClass": {
               "title": "Message Class",
               "type": "string",
               "meta:enum": {
@@ -170,22 +170,22 @@
               "description": "Mode of delivery for the messages sent.\n",
               "default": "one_time"
             },
-            "templateName": {
+            "xdm:templateName": {
               "title": "Delivery Template's Internal name",
               "type": "string",
               "description": "A human-friendly identifier of the the parent entity (in case of event_based or continuous message Class) of the campaign activity originating this message."
             },
-            "templateID": {
+            "xdm:templateID": {
               "title": "Identifier of the Template",
               "type": "integer",
               "description": "The delivery template's ID used to initialize this delivery.\n\nThe type the template used in Adobe Campaign can be identified using the `messageClass`.\n\n* `messageClass` = `oneTime`: the template is standard delivery template.\n* `messageClass` = `continuous`: the template is a recurring delivery.\n* `messageClass` = `transactional`: the template is a transactionnal message template.\n"
             },
-            "deliveryLabel": {
+            "xdm:deliveryLabel": {
               "title": "Delivery Label",
               "type": "string",
               "description": "A human-friendly name of the campaign activity which is originating this message."
             },
-            "deliveryName": {
+            "xdm:deliveryName": {
               "title": "Delivery Internal name",
               "type": "string",
               "description": "A human-friendly identifier of the campaign activity which is originating this message."
@@ -196,12 +196,12 @@
           "title": "The campaign activity originating a message to a recipient.",
           "type": "object",
           "properties": {
-            "id": {
+            "xdm:id": {
               "title": "Campaign ID",
               "type": "integer",
               "description": "Identifier of the marketing campaign to which activity originating this message belongs to."
             },
-            "campaignName": {
+            "xdm:campaignName": {
               "title": "Campaign Internal name",
               "type": "string",
               "description": "A human-friendly identifier of the marketing campaign which is originating this message."
@@ -212,23 +212,23 @@
           "title": "The campaign activity originating a message to a recipient.",
           "type": "object",
           "properties": {
-            "id": {
+            "xdm:id": {
               "title": "Tracking URL ID",
               "type": "string",
               "description": "Unique Identifier of the Link"
             },
-            "description": {
+            "xdm:description": {
               "title": "Tracking URL Description",
               "type": "string",
               "description": "A human-friendly description of the Link."
             },
-            "url": {
+            "xdm:url": {
               "title": "URL",
               "format": "uri",
               "type": "string",
               "description": "URL of the Link."
             },
-            "occurrence": {
+            "xdm:occurrence": {
               "title": "Occurrence",
               "type": "integer",
               "description": "URL occurrence index in the content (first is 1). When the same URL is available several times in the same content, its is necessary to track which occurrence of the URL has been clicked on.",
@@ -236,17 +236,17 @@
               "minimum": 1,
               "maximum": 32767
             },
-            "label": {
+            "xdm:label": {
               "title": "URL Label",
               "type": "string",
               "description": "The user-friendly label clicking on which the link opens."
             },
-            "category": {
+            "xdm:category": {
               "title": "URL Category",
               "type": "string",
               "description": "The category of the link. It may be `subscription`, or a user-defined category."
             },
-            "inAppMessageAction": {
+            "xdm:inAppMessageAction": {
               "title": "In-App Message Action",
               "type": "string",
               "meta:enum": {
@@ -256,7 +256,7 @@
               },
               "description": "Actions on the In-App message delivered, e.g. action on primary button, secondary button or close button."
             },
-            "inAppMessageButtonText": {
+            "xdm:inAppMessageButtonText": {
               "title": "In-App Message Button Text",
               "type": "string",
               "description": "The user-friendly text on the button."
@@ -267,12 +267,12 @@
           "title": "Campaign Orchestration for creating user journey.",
           "type": "object",
           "properties": {
-            "eventID": {
+            "xdm:eventID": {
               "title": "Event ID",
               "type": "string",
               "description": "ID that identifies the event sent by the data source. This is used by Campaign orchestration to identify the event without inspecting its payload to determine which action should be triggered when the event is received. The value is automatically generated in Campaign at event creation time, it is globally unique across organizations."
             },
-            "orchestrationDetails": {
+            "xdm:orchestrationDetails": {
               "title": "Orchestration Details",
               "description": "Set of attributes that are associated with every orchestration.",
               "$ref": "https://ns.adobe.com/experience/campaign/orchestration/orchestrationdetails"
@@ -324,83 +324,83 @@
     },
     "https://ns.adobe.com/experience/campaign/customFields": {
       "properties": {
-        "cusField1": {
+        "xdm:cusField1": {
           "title": "Custom Field 1",
           "type": "string"
         },
-        "cusField2": {
+        "xdm:cusField2": {
           "title": "Custom Field 2",
           "type": "string"
         },
-        "cusField3": {
+        "xdm:cusField3": {
           "title": "Custom Field 3",
           "type": "string"
         },
-        "cusField4": {
+        "xdm:cusField4": {
           "title": "Custom Field 4",
           "type": "string"
         },
-        "cusField5": {
+        "xdm:cusField5": {
           "title": "Custom Field 5",
           "type": "string"
         },
-        "cusField6": {
+        "xdm:cusField6": {
           "title": "Custom Field 6",
           "type": "string"
         },
-        "cusField7": {
+        "xdm:cusField7": {
           "title": "Custom Field 7",
           "type": "string"
         },
-        "cusField8": {
+        "xdm:cusField8": {
           "title": "Custom Field 8",
           "type": "string"
         },
-        "cusField9": {
+        "xdm:cusField9": {
           "title": "Custom Field 9",
           "type": "string"
         },
-        "cusField10": {
+        "xdm:cusField10": {
           "title": "Custom Field 10",
           "type": "string"
         },
-        "cusField11": {
+        "xdm:cusField11": {
           "title": "Custom Field 11",
           "type": "string"
         },
-        "cusField12": {
+        "xdm:cusField12": {
           "title": "Custom Field 12",
           "type": "string"
         },
-        "cusField13": {
+        "xdm:cusField13": {
           "title": "Custom Field 13",
           "type": "string"
         },
-        "cusField14": {
+        "xdm:cusField14": {
           "title": "Custom Field 14",
           "type": "string"
         },
-        "cusField15": {
+        "xdm:cusField15": {
           "title": "Custom Field 15",
           "type": "string"
         },
-        "cusField16": {
+        "xdm:cusField16": {
           "title": "Custom Field 16",
           "type": "string"
         },
-        "cusField17": {
+        "xdm:cusField17": {
           "title": "Custom Field 17",
           "type": "string"
         },
-        "cusField18": {
+        "xdm:cusField18": {
           "title": "Custom Field 18",
           "type": "string"
         },
-        "cusField19": {
+        "xdm:cusField19": {
           "title": "Custom Field 19",
           "type": "string"
         },
-        "cusField20": {
+        "xdm:cusField20": {
           "title": "Custom Field 20",
           "type": "string"
         }

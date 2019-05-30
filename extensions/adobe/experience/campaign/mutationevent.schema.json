@@ -19,17 +19,12 @@
           "format": "date-time",
           "description": "The time when the first event of the interaction occurred."
         },
-        "xdm:web": {
-          "title": "Web",
-          "$ref": "https://ns.adobe.com/xdm/context/webinfo",
-          "description": "The information related to web page and link of the ExperienceEvent."
-        },
         "xdm:directMarketing": {
           "title": "Direct Marketing",
           "$ref": "https://ns.adobe.com/xdm/context/direct-marketing",
           "description": "The events and properties related to direct/outbound marketing such as email, direct mail, texts and in-app notifications."
         },
-        "https://ns.adobe.com/experience/campaign/message": {
+        "xdm:message": {
           "title": "A single message sent to a recipient.",
           "type": "object",
           "properties": {

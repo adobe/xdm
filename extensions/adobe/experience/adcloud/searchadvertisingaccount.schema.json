@@ -1,0 +1,91 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/adcloud/searchadvertisingaccount",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Search Advertising Account",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:auditable": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "description": "Search Advertising Account defines Customer Configuration on Search Advertising Platform.",
+  "definitions": {
+    "searchadvertisingaccount": {
+      "properties": {
+        "xdm:accountId": {
+          "title": "Account Identifier",
+          "type": "string",
+          "description": "Identifier that defines Customer/Client ID setup on the Search Advertising Platform."
+        },
+        "xdm:accountName": {
+          "title": "Account Name",
+          "type": "string",
+          "description": "Name of the Account."
+        },
+        "xdm:currencyCode": {
+          "title": "Currency Code",
+          "type": "string",
+          "examples": ["USD", "EUR", "JPY"],
+          "pattern": "^[A-Z]{3}$",
+          "description": "Currency in which this account operates."
+        },
+        "xdm:accountStatus": {
+          "title": "Account Status",
+          "type": "string",
+          "description": "Managed Flag indicates whether account is enabled or disabled on search networks.",
+          "enum": ["Enabled", "Disabled"],
+          "meta:enum": {
+            "Enabled": "Enabled",
+            "Disabled": "Disabled"
+          }
+        },
+        "xdm:budget": {
+          "title": "Budget",
+          "type": "number",
+          "description": "Budget Allocated to the Account acts only as a spend cap across all your campaigns."
+        },
+        "xdm:budgetType": {
+          "title": "Budget Type",
+          "type": "string",
+          "description": "Budget Type",
+          "enum": [
+            "Daily",
+            "Monthly",
+            "Lifetime",
+            "Daily Spend Until Depleted",
+            "Day of Week"
+          ],
+          "meta:enum": {
+            "Daily": "Daily",
+            "Monthly": "Monthly",
+            "Lifetime": "Lifetime",
+            "Daily Spend Until Depleted": "Daily spend until depleted",
+            "Day of Week": "Day of Week"
+          }
+        },
+        "xdm:searchEngineId": {
+          "title": "Search Engine Identifier",
+          "type": "integer",
+          "description": "The applicatio-specified identifier used to identify the Search Advertising Platform Name."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/auditable"
+    },
+    {
+      "$ref": "#/definitions/searchadvertisingaccount"
+    }
+  ],
+  "meta:status": "experimental"
+}

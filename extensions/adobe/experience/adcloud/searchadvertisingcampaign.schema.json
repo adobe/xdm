@@ -1,0 +1,166 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/adcloud/searchadvertisingcampaign",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Search Advertising Campaign",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:auditable": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "description": "Search Advertising Campaigns is a set of ad groups (ads, keywords, and bids) that share a budget, location targeting, and other settings.",
+  "definitions": {
+    "searchadvertisingcampaign": {
+      "properties": {
+        "xdm:campaignId": {
+          "title": "Campaign Identifier",
+          "type": "string",
+          "description": "Campaign ID on the search advertising platform."
+        },
+        "xdm:campaignName": {
+          "title": "Campaign Name",
+          "type": "string",
+          "description": "Name of the Campaign."
+        },
+        "xdm:campaignDescription": {
+          "title": "Description",
+          "type": "string",
+          "description": "Description of the Campaign."
+        },
+        "xdm:campaignStatus": {
+          "title": "Campaign Status",
+          "type": "string",
+          "description": "Campaign Status indicates if underlying ads are eligible to serve.",
+          "enum": [
+            "Active",
+            "Paused",
+            "Deleted",
+            "Ended",
+            "Pending",
+            "Inactive",
+            "Disapproved",
+            "Incomplete",
+            "Offline",
+            "On Hold (Editing)",
+            "On Hold (Other)",
+            "Duplicate",
+            "Orphan",
+            "Optimize",
+            "Disabled",
+            "Unknown",
+            "Dummy"
+          ],
+          "meta:enum": {
+            "Active": "Active",
+            "Paused": "Paused",
+            "Deleted": "Deleted",
+            "Ended": "Ended",
+            "Pending": "Pending",
+            "Inactive": "Inactive",
+            "Disapproved": "Disapproved",
+            "Incomplete": "Incomplete",
+            "Offline": "Offline",
+            "On Hold (Editing)": "On Hold (Editing)",
+            "On Hold (Other)": "On Hold (Other)",
+            "Duplicate": "Duplicate",
+            "Orphan": "Orphan",
+            "Optimize": "Optimize",
+            "Disabled": "Disabled",
+            "Unknown": "Unknown",
+            "Dummy": "Dummy"
+          }
+        },
+        "xdm:channelType": {
+          "title": "Channel Type",
+          "type": "string",
+          "description": "Channel Type for the Campaign"
+        },
+        "xdm:budget": {
+          "title": "Budget",
+          "type": "number",
+          "description": "Budget Allocated for the Campaign"
+        },
+        "xdm:budgetType": {
+          "title": "Budget Type",
+          "type": "string",
+          "description": "Budget Type indicates how the allocated budget will be spent",
+          "enum": [
+            "Daily",
+            "Monthly",
+            "Lifetime",
+            "Daily Spend Until Depleted",
+            "Day of Week"
+          ],
+          "meta:enum": {
+            "daily": "Daily",
+            "Monthly": "Monthly",
+            "Lifetime": "Lifetime",
+            "Daily Spend Until Depleted": "Daily spend until depleted",
+            "Day of week": "Day of week"
+          }
+        },
+        "xdm:adDeliveryType": {
+          "title": "Ad Delivery Method",
+          "type": "string",
+          "description": "Ad Delivery method can determine how long your budget lasts",
+          "enum": ["Standard", "Accelerated"],
+          "meta:enum": {
+            "standard": "Standard",
+            "accelerated": "Accelerated"
+          }
+        },
+        "xdm:objective": {
+          "title": "Campaign Objective",
+          "type": "string",
+          "description": "Campaign Objective indicates the primary objective of the campaign - e.g. Promotions, Brands, App Installs.",
+          "enum": ["visit_web", "promote_brand", "install_app", "visit_offer"],
+          "meta:enum": {
+            "visit_web": "visit_web",
+            "promote_brand": "promote_brand",
+            "install_app": "install_app",
+            "visit_offer": "visit_offer"
+          }
+        },
+        "xdm:campaignStartDate": {
+          "title": "Campaign Start Date",
+          "type": "string",
+          "format": "date",
+          "description": "Campaign Start Date"
+        },
+        "xdm:campaignEndDate": {
+          "title": "Campaign End Date",
+          "type": "string",
+          "format": "date",
+          "description": "Campaign End Date"
+        },
+        "xdm:portfolioId": {
+          "title": "Portfolio Identifier",
+          "type": "string",
+          "description": "Identifier indicates if campaign has been assigned and managed via portfolio."
+        },
+        "xdm:searchEngineId": {
+          "title": "Search Engine Identifier",
+          "type": "integer",
+          "description": "The application-specified identifier used to identify the Search Advertising Platform Name."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/auditable"
+    },
+    {
+      "$ref": "#/definitions/searchadvertisingcampaign"
+    }
+  ],
+  "meta:status": "experimental"
+}

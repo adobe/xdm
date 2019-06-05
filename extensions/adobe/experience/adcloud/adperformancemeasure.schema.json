@@ -41,11 +41,6 @@
           "type": "integer",
           "description": "The application-specified identifier used to identify the Search Advertising Platform Name."
         },
-        "https://ns.adobe.com/experience/adcloud/search/adMeasure": {
-          "title": "Adobe Ad Cloud Search Ad Performance Measure Custom Fields",
-          "$ref": "https://ns.adobe.com/experience/adcloud/search/admeasures",
-          "description": "Adobe AdCloud Search Ad Performance Measure Custom Fields."
-        },
         "xdm:clicks": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Count of Clicks for a given ad displayed on the network."

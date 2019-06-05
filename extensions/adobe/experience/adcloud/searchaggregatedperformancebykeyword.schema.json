@@ -6,15 +6,15 @@
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "https://ns.adobe.com/experience/adcloud/keywordperformancemeasure",
-  "title": "Search Advertising Keyword Performance Measures",
+  "$id": "https://ns.adobe.com/experience/adcloud/searchaggregatedperformancebykeyword",
+  "title": "Search Advertising Performance Measures Aggregated By Keyword",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/time-series"],
-  "description": "Search Advertising Keyword Performance Measures is a collection of measures pulled from Search Advertising Platforms.",
+  "description": "Search Advertising Performance Measures Aggregated By Keyword is a rolled up data of the collection of aggregated performance measures as pulled from Search Advertising Platforms by Ad/Keyword.",
   "definitions": {
-    "keywordperformancemeasure": {
+    "searchaggregatedperformancebykeyword": {
       "properties": {
         "xdm:accountId": {
           "title": "Account Identifier",
@@ -45,6 +45,16 @@
           "title": "Term Match Type",
           "type": "string",
           "description": "Match Type associated to the Search Term being targeted for the Ad.",
+          "enum": [
+            "Broad",
+            "Phrase",
+            "Exact",
+            "Advanced",
+            "Standard",
+            "Website",
+            "Product Target",
+            "Product Group"
+          ],
           "meta:enum": {
             "Broad": "Broad",
             "Phrase": "Phrase",
@@ -98,7 +108,7 @@
       "$ref": "https://ns.adobe.com/xdm/data/time-series"
     },
     {
-      "$ref": "#/definitions/keywordperformancemeasure"
+      "$ref": "#/definitions/searchaggregatedperformancebykeyword"
     }
   ],
   "meta:status": "experimental"

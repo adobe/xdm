@@ -6,15 +6,15 @@
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "https://ns.adobe.com/experience/adcloud/adperformancemeasure",
-  "title": "Search Advertising Ad Performance Measures",
+  "$id": "https://ns.adobe.com/experience/adcloud/searchaggregatedperformancebyadkeyword",
+  "title": "Search Advertising Aggregated Performance Measures By Ad and Keyword",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/time-series"],
-  "description": "Search Advertising Ad Performance Measures is a collection of measures pulled from Search Advertising Platforms.",
+  "description": "Search Advertising Aggregated Performance Measures by Ad and Keyword is a collection of measures pulled from Search Advertising Platforms.",
   "definitions": {
-    "adperformancemeasure": {
+    "searchaggregatedperformancebyadkeyword": {
       "properties": {
         "xdm:accountId": {
           "title": "Account Identifier",
@@ -30,6 +30,41 @@
           "title": "Ad Group Identifier",
           "type": "string",
           "description": "Ad Group ID on the search advertising platform."
+        },
+        "xdm:termId": {
+          "title": "Search Term Identifier",
+          "type": "string",
+          "description": "Search Term ID on the search advertising platform."
+        },
+        "xdm:term": {
+          "title": "Search Term",
+          "type": "string",
+          "description": "Search Term targeted for the Ad."
+        },
+        "xdm:matchType": {
+          "title": "Term Match Type",
+          "type": "string",
+          "description": "Match Type associated to the Search Term being targeted for the Ad.",
+          "enum": [
+            "Broad",
+            "Phrase",
+            "Exact",
+            "Advanced",
+            "Standard",
+            "Website",
+            "Product Target",
+            "Product Group"
+          ],
+          "meta:enum": {
+            "Broad": "Broad",
+            "Phrase": "Phrase",
+            "Exact": "Exact",
+            "Advanced": "Advanced",
+            "Standard": "Standard",
+            "Website": "Website",
+            "Product Target": "Product Target",
+            "Product Group": "Product Group"
+          }
         },
         "xdm:adId": {
           "title": "Ad Identifier",
@@ -78,7 +113,7 @@
       "$ref": "https://ns.adobe.com/xdm/data/time-series"
     },
     {
-      "$ref": "#/definitions/adperformancemeasure"
+      "$ref": "#/definitions/searchaggregatedperformancebyadkeyword"
     }
   ],
   "meta:status": "experimental"

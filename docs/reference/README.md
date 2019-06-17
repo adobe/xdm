@@ -13,6 +13,29 @@
 * [Product](./content/product.schema.md) – `https://ns.adobe.com/xdm/context/product` (Experimental)
 * [Product List Item](./content/productlistitem.schema.md) – `https://ns.adobe.com/xdm/content/productlistitem` (Experimental)
 
+## /channels/
+
+* [ADM Channel](./channels/adm.schema.md) – `https://ns.adobe.com/xdm/channels/adm` (Experimental)
+* [APNS Channel](./channels/apns.schema.md) – `https://ns.adobe.com/xdm/channels/apns` (Experimental)
+* [Application Channel](./channels/application.schema.md) – `https://ns.adobe.com/xdm/channels/application` (Experimental)
+* [Baidu Channel](./channels/baidu.schema.md) – `https://ns.adobe.com/xdm/channels/baidu` (Experimental)
+* [Direct Mail Channel](./channels/direct-mail.schema.md) – `https://ns.adobe.com/xdm/channels/direct-mail` (Experimental)
+* [E-Mail Channel](./channels/email.schema.md) – `https://ns.adobe.com/xdm/channels/email` (Experimental)
+* [Experience Channel](./channels/channel.schema.md) – `https://ns.adobe.com/xdm/channels/channel` (Experimental)
+* [External Agency Channel](./channels/agency.schema.md) – `https://ns.adobe.com/xdm/channels/agency` (Experimental)
+* [Facebook News Feed Channel](./channels/facebook-feed.schema.md) – `https://ns.adobe.com/xdm/channels/facebook-feed` (Experimental)
+* [Fax Channel](./channels/fax.schema.md) – `https://ns.adobe.com/xdm/channels/fax` (Experimental)
+* [GCM Channel](./channels/gcm.schema.md) – `https://ns.adobe.com/xdm/channels/gcm` (Experimental)
+* [LINE Channel](./channels/line.schema.md) – `https://ns.adobe.com/xdm/channels/line` (Experimental)
+* [MPNS Channel](./channels/mpns.schema.md) – `https://ns.adobe.com/xdm/channels/mpns` (Experimental)
+* [Native Mobile Application Channel](./channels/mobile-app.schema.md) – `https://ns.adobe.com/xdm/channels/mobile-app` (Experimental)
+* [Phone Channel](./channels/phone.schema.md) – `https://ns.adobe.com/xdm/channels/phone` (Experimental)
+* [SMS Channel](./channels/sms.schema.md) – `https://ns.adobe.com/xdm/channels/sms` (Experimental)
+* [Twitter Feed Channel](./channels/twitter-feed.schema.md) – `https://ns.adobe.com/xdm/channels/twitter-feed` (Experimental)
+* [WNS Channel](./channels/wns.schema.md) – `https://ns.adobe.com/xdm/channels/wns` (Experimental)
+* [WeChat Channel](./channels/wechat.schema.md) – `https://ns.adobe.com/xdm/channels/wechat` (Experimental)
+* [Web Channel](./channels/web.schema.md) – `https://ns.adobe.com/xdm/channels/web` (Experimental)
+
 ## /assets/
 
 * [Aggregated Asset](./assets/aggregated-asset.schema.md) – `https://ns.adobe.com/xdm/assets/aggregated-asset` (Experimental)
@@ -42,108 +65,6 @@
 * [Organizational Unit](./common/orgunit.schema.md) – `https://ns.adobe.com/xdm/common/orgunit` (Experimental)
 * [Page](./common/page.schema.md) – `https://ns.adobe.com/xdm/common/page` (Experimental)
 * [Principal](./common/principal.schema.md) – `https://ns.adobe.com/xdm/common/principal` (Experimental)
-
-## /channels/
-
-* [ADM Channel](./channels/adm.schema.md) – `https://ns.adobe.com/xdm/channels/adm` (Experimental)
-* [APNS Channel](./channels/apns.schema.md) – `https://ns.adobe.com/xdm/channels/apns` (Experimental)
-* [Application Channel](./channels/application.schema.md) – `https://ns.adobe.com/xdm/channels/application` (Experimental)
-* [Baidu Channel](./channels/baidu.schema.md) – `https://ns.adobe.com/xdm/channels/baidu` (Experimental)
-* [Direct Mail Channel](./channels/direct-mail.schema.md) – `https://ns.adobe.com/xdm/channels/direct-mail` (Experimental)
-* [E-Mail Channel](./channels/email.schema.md) – `https://ns.adobe.com/xdm/channels/email` (Experimental)
-* [Experience Channel](./channels/channel.schema.md) – `https://ns.adobe.com/xdm/channels/channel` (Experimental)
-* [External Agency Channel](./channels/agency.schema.md) – `https://ns.adobe.com/xdm/channels/agency` (Experimental)
-* [Facebook News Feed Channel](./channels/facebook-feed.schema.md) – `https://ns.adobe.com/xdm/channels/facebook-feed` (Experimental)
-* [Fax Channel](./channels/fax.schema.md) – `https://ns.adobe.com/xdm/channels/fax` (Experimental)
-* [GCM Channel](./channels/gcm.schema.md) – `https://ns.adobe.com/xdm/channels/gcm` (Experimental)
-* [LINE Channel](./channels/line.schema.md) – `https://ns.adobe.com/xdm/channels/line` (Experimental)
-* [MPNS Channel](./channels/mpns.schema.md) – `https://ns.adobe.com/xdm/channels/mpns` (Experimental)
-* [Native Mobile Application Channel](./channels/mobile-app.schema.md) – `https://ns.adobe.com/xdm/channels/mobile-app` (Experimental)
-* [Phone Channel](./channels/phone.schema.md) – `https://ns.adobe.com/xdm/channels/phone` (Experimental)
-* [SMS Channel](./channels/sms.schema.md) – `https://ns.adobe.com/xdm/channels/sms` (Experimental)
-* [Twitter Feed Channel](./channels/twitter-feed.schema.md) – `https://ns.adobe.com/xdm/channels/twitter-feed` (Experimental)
-* [WNS Channel](./channels/wns.schema.md) – `https://ns.adobe.com/xdm/channels/wns` (Experimental)
-* [WeChat Channel](./channels/wechat.schema.md) – `https://ns.adobe.com/xdm/channels/wechat` (Experimental)
-* [Web Channel](./channels/web.schema.md) – `https://ns.adobe.com/xdm/channels/web` (Experimental)
-
-## /data/
-
-* [10% Progress Marker](./data/progress10.schema.md) – `https://ns.adobe.com/xdm/data/progress10` (Stabilizing)
-* [95% Progress Marker](./data/progress95.schema.md) – `https://ns.adobe.com/xdm/data/progress95` (Stabilizing)
-* [Adhoc Schema](./data/adhoc.schema.md) – `https://ns.adobe.com/xdm/data/adhoc` (Experimental)
-* [Application Closes](./data/application-closes.schema.md) – `https://ns.adobe.com/xdm/data/application-closes` (Stabilizing)
-* [Bitrate Average](./data/bitrate-average.schema.md) – `https://ns.adobe.com/xdm/data/bitrate-average` (Stabilizing)
-* [Bitrate Changes](./data/bitrate-changes.schema.md) – `https://ns.adobe.com/xdm/data/bitrate-changes` (Stabilizing)
-* [Bounces](./data/bounces.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/bounces` (Experimental)
-* [Buffer Time](./data/buffer-time.schema.md) – `https://ns.adobe.com/xdm/data/buffer-time` (Stabilizing)
-* [Buffers](./data/buffers.schema.md) – `https://ns.adobe.com/xdm/data/buffers` (Stabilizing)
-* [Cart Abandons](./data/cart-abandons.schema.md) – `https://ns.adobe.com/xdm/data/metrics/cart-abandons` (Experimental)
-* [Checkouts](./data/checkouts.schema.md) – `https://ns.adobe.com/xdm/data/metrics/checkouts` (Experimental)
-* [Data Source](./data/datasource.schema.md) – `https://ns.adobe.com/xdm/data/datasource` (Stabilizing)
-* [Discount](./data/discount.schema.md) – `https://ns.adobe.com/xdm/data/discount` (Experimental)
-* [Drop before Starts](./data/drop-before-starts.schema.md) – `https://ns.adobe.com/xdm/data/drop-before-starts` (Stabilizing)
-* [Dropped Frames](./data/dropped-frames.schema.md) – `https://ns.adobe.com/xdm/data/dropped-frames` (Stabilizing)
-* [Errors](./data/errors.schema.md) – `https://ns.adobe.com/xdm/data/errors` (Stabilizing)
-* [Feature Usages](./data/feature-usages.schema.md) – `https://ns.adobe.com/xdm/data/feature-usages` (Stabilizing)
-* [Federated](./data/federated.schema.md) – `https://ns.adobe.com/xdm/data/federated` (Stabilizing)
-* [First Launches](./data/first-launches.schema.md) – `https://ns.adobe.com/xdm/data/first-launches` (Stabilizing)
-* [Installs](./data/installs.schema.md) – `https://ns.adobe.com/xdm/data/installs` (Stabilizing)
-* [Launches](./data/launches.schema.md) – `https://ns.adobe.com/xdm/data/launches` (Stabilizing)
-* [Measure](./data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure` (Stabilizing)
-* [Media Segment Views](./data/media-segment-views.schema.md) – `https://ns.adobe.com/xdm/data/media-segment-views` (Stabilizing)
-* [Metric Definition](./data/metricdefinition.schema.md) – `https://ns.adobe.com/xdm/data/metricdefinition` (Stabilizing)
-* [Mirror Pages](./data/mirror-pages.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages` (Stabilizing)
-* [Non Deliverables](./data/non-deliverables.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/non-deliverables` (Stabilizing)
-* [Not Sent](./data/not-sent.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/notSent` (Stabilizing)
-* [Opens](./data/opens.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/opens` (Stabilizing)
-* [Order](./data/order.schema.md) – `https://ns.adobe.com/xdm/data/order` (Experimental)
-* [Pause Time](./data/pause-time.schema.md) – `https://ns.adobe.com/xdm/data/pause-time` (Stabilizing)
-* [Pauses](./data/pauses.schema.md) – `https://ns.adobe.com/xdm/data/pauses` (Stabilizing)
-* [Payment Item](./data/paymentitem.schema.md) – `https://ns.adobe.com/xdm/data/paymentitem` (Experimental)
-* [Product List Adds](./data/product-list-adds.schema.md) – `https://ns.adobe.com/xdm/data/metrics/product-list-adds` (Experimental)
-* [Product List Opens](./data/product-list-opens.schema.md) – `https://ns.adobe.com/xdm/data/metrics/product-list-opens` (Experimental)
-* [Product List Removals](./data/product-list-removals.schema.md) – `https://ns.adobe.com/xdm/data/metrics/product-list-removals` (Experimental)
-* [Product List Reopens](./data/product-list-reopens.schema.md) – `https://ns.adobe.com/xdm/data/metrics/product-list-reopens` (Experimental)
-* [Product List Views](./data/product-list-views.schema.md) – `https://ns.adobe.com/xdm/data/metrics/product-list-views` (Experimental)
-* [Product Views](./data/product-views.schema.md) – `https://ns.adobe.com/xdm/data/metrics/product-views` (Experimental)
-* [Purchases](./data/purchases.schema.md) – `https://ns.adobe.com/xdm/data/metrics/purchases` (Stabilizing)
-* [Record Schema](./data/record.schema.md) – `https://ns.adobe.com/xdm/data/record` (Experimental)
-* [Resumes](./data/resumes.schema.md) – `https://ns.adobe.com/xdm/data/resumes` (Stabilizing)
-* [Save For Laters](./data/save-for-laters.schema.md) – `https://ns.adobe.com/xdm/data/metrics/save-for-laters` (Stabilizing)
-* [Sends](./data/sends.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/sends` (Stabilizing)
-* [Stall Time](./data/stall-time.schema.md) – `https://ns.adobe.com/xdm/data/stall-time` (Stabilizing)
-* [Stalls](./data/stalls.schema.md) – `https://ns.adobe.com/xdm/data/stalls` (Stabilizing)
-* [Time Played](./data/time-played.schema.md) – `https://ns.adobe.com/xdm/data/time-played` (Stabilizing)
-* [Time to Start](./data/time-to-start.schema.md) – `https://ns.adobe.com/xdm/data/time-to-start` (Stabilizing)
-* [Time-series Extension for Record Data](./data/record-timeseries-events.schema.md) – `https://ns.adobe.com/xdm/data/record-timeseries-events` (Experimental)
-* [Time-series Schema](./data/time-series.schema.md) – `https://ns.adobe.com/xdm/data/time-series` (Experimental)
-* [Total Time Played](./data/total-time-played.schema.md) – `https://ns.adobe.com/xdm/data/total-time-played` (Stabilizing)
-* [Unsubscriptions](./data/unsubscriptions.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/unsubscriptions` (Stabilizing)
-* [Upgrades](./data/upgrades.schema.md) – `https://ns.adobe.com/xdm/data/upgrades` (Stabilizing)
-* [User Complaints](./data/user-complaints.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/user-complaints` (Stabilizing)
-* [clicks](./data/clicks.schema.md) – `https://ns.adobe.com/xdm/data/clicks` (Experimental)
-* [completes](./data/completes.schema.md) – `https://ns.adobe.com/xdm/data/completes` (Stabilizing)
-* [conversions](./data/conversions.schema.md) – `https://ns.adobe.com/xdm/data/conversions` (Stabilizing)
-* [first-quartiles](./data/firstquartiles.schema.md) – `https://ns.adobe.com/xdm/data/firstquartiles` (Stabilizing)
-* [impressions](./data/impressions.schema.md) – `https://ns.adobe.com/xdm/data/metrics/advertising/impressions` (Stabilizing)
-* [link-clicks](./data/linkclicks.schema.md) – `https://ns.adobe.com/xdm/data/metrics/web/linkclicks` (Stabilizing)
-* [measured-ad-not-visible](./data/measuredadnotvisible.schema.md) – `https://ns.adobe.com/xdm/data/measuredadnotvisible` (Experimental)
-* [measured-muted](./data/measuredmuted.schema.md) – `https://ns.adobe.com/xdm/data/measuredmuted` (Stabilizing)
-* [measured-window-inactive](./data/measuredwindowinactive.schema.md) – `https://ns.adobe.com/xdm/data/measuredwindowinactive` (Stabilizing)
-* [midpoints](./data/midpoints.schema.md) – `https://ns.adobe.com/xdm/data/midpoints` (Stabilizing)
-* [page views](./data/pageviews.schema.md) – `https://ns.adobe.com/xdm/data/metrics/web/pageviews` (Stabilizing)
-* [poi-entries](./data/poi-entries.schema.md) – `https://ns.adobe.com/xdm/data/metrics/placecontext/poi-entries` (Experimental)
-* [poi-entries](./data/poi-exits.schema.md) – `https://ns.adobe.com/xdm/data/metrics/placecontext/poi-exits` (Experimental)
-* [starts](./data/starts.schema.md) – `https://ns.adobe.com/xdm/data/starts` (Stabilizing)
-* [third-quartiles](./data/thirdquartiles.schema.md) – `https://ns.adobe.com/xdm/data/thirdquartiles` (Stabilizing)
-* [unmeasurable-iframe](./data/unmeasurableiframe.schema.md) – `https://ns.adobe.com/xdm/data/unmeasurableiframe` (Stabilizing)
-* [unmeasurable-other](./data/unmeasurableother.schema.md) – `https://ns.adobe.com/xdm/data/unmeasurableother` (Stabilizing)
-* [viewability-eligible-impressions](./data/viewabilityeligibleimpressions.schema.md) – `https://ns.adobe.com/xdm/data/viewabilityeligibleimpressions` (Stabilizing)
-* [viewable-completes](./data/viewablecompletes.schema.md) – `https://ns.adobe.com/xdm/data/viewablecompletes` (Stabilizing)
-* [viewable-first-quartiles](./data/viewablefirstquartiles.schema.md) – `https://ns.adobe.com/xdm/data/viewablefirstquartiles` (Stabilizing)
-* [viewable-impressions](./data/viewableimpressions.schema.md) – `https://ns.adobe.com/xdm/data/viewableimpressions` (Stabilizing)
-* [viewable-midpoints](./data/viewablemidpoints.schema.md) – `https://ns.adobe.com/xdm/data/viewablemidpoints` (Stabilizing)
-* [viewable-third-quartiles](./data/viewablethirdquartiles.schema.md) – `https://ns.adobe.com/xdm/data/viewablethirdquartiles` (Stabilizing)
 
 ## /context/
 
@@ -228,11 +149,101 @@
 * [XDM ExperienceEvent](./context/experienceevent.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent` (Stabilizing)
 * [XDM Profile](./context/profile.schema.md) – `https://ns.adobe.com/xdm/context/profile` (Experimental)
 
+## /data/
+
+* [10% Progress Marker](./data/progress10.schema.md) – `https://ns.adobe.com/xdm/data/progress10` (Stabilizing)
+* [95% Progress Marker](./data/progress95.schema.md) – `https://ns.adobe.com/xdm/data/progress95` (Stabilizing)
+* [Adhoc Schema](./data/adhoc.schema.md) – `https://ns.adobe.com/xdm/data/adhoc` (Experimental)
+* [Application Closes](./data/application-closes.schema.md) – `https://ns.adobe.com/xdm/data/application-closes` (Stabilizing)
+* [Bitrate Average](./data/bitrate-average.schema.md) – `https://ns.adobe.com/xdm/data/bitrate-average` (Stabilizing)
+* [Bitrate Changes](./data/bitrate-changes.schema.md) – `https://ns.adobe.com/xdm/data/bitrate-changes` (Stabilizing)
+* [Bounces](./data/bounces.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/bounces` (Experimental)
+* [Buffer Time](./data/buffer-time.schema.md) – `https://ns.adobe.com/xdm/data/buffer-time` (Stabilizing)
+* [Buffers](./data/buffers.schema.md) – `https://ns.adobe.com/xdm/data/buffers` (Stabilizing)
+* [Cart Abandons](./data/cart-abandons.schema.md) – `https://ns.adobe.com/xdm/data/metrics/cart-abandons` (Experimental)
+* [Checkouts](./data/checkouts.schema.md) – `https://ns.adobe.com/xdm/data/metrics/checkouts` (Experimental)
+* [Data Source](./data/datasource.schema.md) – `https://ns.adobe.com/xdm/data/datasource` (Stabilizing)
+* [Discount](./data/discount.schema.md) – `https://ns.adobe.com/xdm/data/discount` (Experimental)
+* [Drop before Starts](./data/drop-before-starts.schema.md) – `https://ns.adobe.com/xdm/data/drop-before-starts` (Stabilizing)
+* [Dropped Frames](./data/dropped-frames.schema.md) – `https://ns.adobe.com/xdm/data/dropped-frames` (Stabilizing)
+* [Errors](./data/errors.schema.md) – `https://ns.adobe.com/xdm/data/errors` (Stabilizing)
+* [Feature Usages](./data/feature-usages.schema.md) – `https://ns.adobe.com/xdm/data/feature-usages` (Stabilizing)
+* [Federated](./data/federated.schema.md) – `https://ns.adobe.com/xdm/data/federated` (Stabilizing)
+* [First Launches](./data/first-launches.schema.md) – `https://ns.adobe.com/xdm/data/first-launches` (Stabilizing)
+* [Installs](./data/installs.schema.md) – `https://ns.adobe.com/xdm/data/installs` (Stabilizing)
+* [Launches](./data/launches.schema.md) – `https://ns.adobe.com/xdm/data/launches` (Stabilizing)
+* [Measure](./data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure` (Stabilizing)
+* [Media Segment Views](./data/media-segment-views.schema.md) – `https://ns.adobe.com/xdm/data/media-segment-views` (Stabilizing)
+* [Metric Definition](./data/metricdefinition.schema.md) – `https://ns.adobe.com/xdm/data/metricdefinition` (Stabilizing)
+* [Mirror Pages](./data/mirror-pages.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages` (Stabilizing)
+* [Non Deliverables](./data/non-deliverables.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/non-deliverables` (Stabilizing)
+* [Not Sent](./data/not-sent.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/notSent` (Stabilizing)
+* [Opens](./data/opens.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/opens` (Stabilizing)
+* [Order](./data/order.schema.md) – `https://ns.adobe.com/xdm/data/order` (Experimental)
+* [Pause Time](./data/pause-time.schema.md) – `https://ns.adobe.com/xdm/data/pause-time` (Stabilizing)
+* [Pauses](./data/pauses.schema.md) – `https://ns.adobe.com/xdm/data/pauses` (Stabilizing)
+* [Payment Item](./data/paymentitem.schema.md) – `https://ns.adobe.com/xdm/data/paymentitem` (Experimental)
+* [Product List Adds](./data/product-list-adds.schema.md) – `https://ns.adobe.com/xdm/data/metrics/product-list-adds` (Experimental)
+* [Product List Opens](./data/product-list-opens.schema.md) – `https://ns.adobe.com/xdm/data/metrics/product-list-opens` (Experimental)
+* [Product List Removals](./data/product-list-removals.schema.md) – `https://ns.adobe.com/xdm/data/metrics/product-list-removals` (Experimental)
+* [Product List Reopens](./data/product-list-reopens.schema.md) – `https://ns.adobe.com/xdm/data/metrics/product-list-reopens` (Experimental)
+* [Product List Views](./data/product-list-views.schema.md) – `https://ns.adobe.com/xdm/data/metrics/product-list-views` (Experimental)
+* [Product Views](./data/product-views.schema.md) – `https://ns.adobe.com/xdm/data/metrics/product-views` (Experimental)
+* [Purchases](./data/purchases.schema.md) – `https://ns.adobe.com/xdm/data/metrics/purchases` (Stabilizing)
+* [Record Schema](./data/record.schema.md) – `https://ns.adobe.com/xdm/data/record` (Experimental)
+* [Resumes](./data/resumes.schema.md) – `https://ns.adobe.com/xdm/data/resumes` (Stabilizing)
+* [Save For Laters](./data/save-for-laters.schema.md) – `https://ns.adobe.com/xdm/data/metrics/save-for-laters` (Stabilizing)
+* [Sends](./data/sends.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/sends` (Stabilizing)
+* [Stall Time](./data/stall-time.schema.md) – `https://ns.adobe.com/xdm/data/stall-time` (Stabilizing)
+* [Stalls](./data/stalls.schema.md) – `https://ns.adobe.com/xdm/data/stalls` (Stabilizing)
+* [Time Played](./data/time-played.schema.md) – `https://ns.adobe.com/xdm/data/time-played` (Stabilizing)
+* [Time to Start](./data/time-to-start.schema.md) – `https://ns.adobe.com/xdm/data/time-to-start` (Stabilizing)
+* [Time-series Extension for Record Data](./data/record-timeseries-events.schema.md) – `https://ns.adobe.com/xdm/data/record-timeseries-events` (Experimental)
+* [Time-series Schema](./data/time-series.schema.md) – `https://ns.adobe.com/xdm/data/time-series` (Experimental)
+* [Total Time Played](./data/total-time-played.schema.md) – `https://ns.adobe.com/xdm/data/total-time-played` (Stabilizing)
+* [Unsubscriptions](./data/unsubscriptions.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/unsubscriptions` (Stabilizing)
+* [Upgrades](./data/upgrades.schema.md) – `https://ns.adobe.com/xdm/data/upgrades` (Stabilizing)
+* [User Complaints](./data/user-complaints.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/user-complaints` (Stabilizing)
+* [clicks](./data/clicks.schema.md) – `https://ns.adobe.com/xdm/data/clicks` (Experimental)
+* [completes](./data/completes.schema.md) – `https://ns.adobe.com/xdm/data/completes` (Stabilizing)
+* [conversions](./data/conversions.schema.md) – `https://ns.adobe.com/xdm/data/conversions` (Stabilizing)
+* [first-quartiles](./data/firstquartiles.schema.md) – `https://ns.adobe.com/xdm/data/firstquartiles` (Stabilizing)
+* [impressions](./data/impressions.schema.md) – `https://ns.adobe.com/xdm/data/metrics/advertising/impressions` (Stabilizing)
+* [link-clicks](./data/linkclicks.schema.md) – `https://ns.adobe.com/xdm/data/metrics/web/linkclicks` (Stabilizing)
+* [measured-ad-not-visible](./data/measuredadnotvisible.schema.md) – `https://ns.adobe.com/xdm/data/measuredadnotvisible` (Experimental)
+* [measured-muted](./data/measuredmuted.schema.md) – `https://ns.adobe.com/xdm/data/measuredmuted` (Stabilizing)
+* [measured-window-inactive](./data/measuredwindowinactive.schema.md) – `https://ns.adobe.com/xdm/data/measuredwindowinactive` (Stabilizing)
+* [midpoints](./data/midpoints.schema.md) – `https://ns.adobe.com/xdm/data/midpoints` (Stabilizing)
+* [page views](./data/pageviews.schema.md) – `https://ns.adobe.com/xdm/data/metrics/web/pageviews` (Stabilizing)
+* [poi-entries](./data/poi-entries.schema.md) – `https://ns.adobe.com/xdm/data/metrics/placecontext/poi-entries` (Experimental)
+* [poi-entries](./data/poi-exits.schema.md) – `https://ns.adobe.com/xdm/data/metrics/placecontext/poi-exits` (Experimental)
+* [starts](./data/starts.schema.md) – `https://ns.adobe.com/xdm/data/starts` (Stabilizing)
+* [third-quartiles](./data/thirdquartiles.schema.md) – `https://ns.adobe.com/xdm/data/thirdquartiles` (Stabilizing)
+* [unmeasurable-iframe](./data/unmeasurableiframe.schema.md) – `https://ns.adobe.com/xdm/data/unmeasurableiframe` (Stabilizing)
+* [unmeasurable-other](./data/unmeasurableother.schema.md) – `https://ns.adobe.com/xdm/data/unmeasurableother` (Stabilizing)
+* [viewability-eligible-impressions](./data/viewabilityeligibleimpressions.schema.md) – `https://ns.adobe.com/xdm/data/viewabilityeligibleimpressions` (Stabilizing)
+* [viewable-completes](./data/viewablecompletes.schema.md) – `https://ns.adobe.com/xdm/data/viewablecompletes` (Stabilizing)
+* [viewable-first-quartiles](./data/viewablefirstquartiles.schema.md) – `https://ns.adobe.com/xdm/data/viewablefirstquartiles` (Stabilizing)
+* [viewable-impressions](./data/viewableimpressions.schema.md) – `https://ns.adobe.com/xdm/data/viewableimpressions` (Stabilizing)
+* [viewable-midpoints](./data/viewablemidpoints.schema.md) – `https://ns.adobe.com/xdm/data/viewablemidpoints` (Stabilizing)
+* [viewable-third-quartiles](./data/viewablethirdquartiles.schema.md) – `https://ns.adobe.com/xdm/data/viewablethirdquartiles` (Stabilizing)
+
 ## /content/repository-policies/
 
 * [At-Rest Encryption](./content/repository-policies/encryption.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/encryption` (Experimental)
 * [Storage Quota](./content/repository-policies/quota.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/quota` (Experimental)
 * [Versioning](./content/repository-policies/versioning.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/versioning` (Experimental)
+
+## /common/descriptors/
+
+* [Item Selector](./common/descriptors/itemselector.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/itemselector` (Experimental)
+* [Relationship Descriptor](./common/descriptors/relationshipdescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/relationshipdescriptor` (Experimental)
+* [Schema Descriptor](./common/descriptors/schemadescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/schemadescriptor` (Experimental)
+
+## /external/hal/
+
+* [HAL Link](./external/hal/hal-link.schema.md) – `https://ns.adobe.com/xdm/external/hal/link` (Experimental)
+* [HAL Resource](./external/hal/hal.schema.md) – `https://ns.adobe.com/xdm/external/hal/resource` (Experimental)
 
 ## /common/event/
 
@@ -244,20 +255,6 @@
 * [Unpublished Event](./common/event/unpublished.schema.md) – `https://ns.adobe.com/xdm/common/event/unpublished` (Experimental)
 * [Updated Event](./common/event/updated.schema.md) – `https://ns.adobe.com/xdm/common/event/updated` (Experimental)
 
-## /common/descriptors/
-
-* [Item Selector](./common/descriptors/itemselector.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/itemselector` (Experimental)
-* [Relationship Descriptor](./common/descriptors/relationshipdescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/relationshipdescriptor` (Experimental)
-* [Schema Descriptor](./common/descriptors/schemadescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/schemadescriptor` (Experimental)
-
-## /external/iptc/
-
-* [Creator](./external/iptc/creator.schema.md) – `http://www.iptc.org/creator` (Experimental)
-* [Episode](./external/iptc/episode.schema.md) – `http://www.iptc.org/season` (Experimental)
-* [Rating](./external/iptc/rating.schema.md) – `http://www.iptc.org/rating` (Experimental)
-* [Season](./external/iptc/season.schema.md) – `http://www.iptc.org/episode` (Experimental)
-* [Series](./external/iptc/series.schema.md) – `http://www.iptc.org/series` (Experimental)
-
 ## /external/repo/
 
 * [Access Control Entry](./external/repo/accesscontrolentry.schema.md) – `https://ns.adobe.com/xdm/external/repo/accesscontrolentry` (Experimental)
@@ -267,17 +264,6 @@
 * [Directory](./external/repo/directory.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/directory` (Experimental)
 * [Effective Privileges](./external/repo/effectiveprivileges.schema.md) – `https://ns.adobe.com/xdm/external/repo/effectiveprivileges` (Experimental)
 * [Sub-Directory](./external/repo/sub-directory.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/sub-directory` (Experimental)
-
-## /external/schema/
-
-* [Geo Circle](./external/schema/geocircle.schema.md) – `http://schema.org/GeoCircle` (Experimental)
-* [Geo Coordinates](./external/schema/geocoordinates.schema.md) – `http://schema.org/GeoCoordinates` (Experimental)
-* [Geo Shape](./external/schema/geoshape.schema.md) – `http://schema.org/GeoShape` (Experimental)
-
-## /external/hal/
-
-* [HAL Link](./external/hal/hal-link.schema.md) – `https://ns.adobe.com/xdm/external/hal/link` (Experimental)
-* [HAL Resource](./external/hal/hal.schema.md) – `https://ns.adobe.com/xdm/external/hal/resource` (Experimental)
 
 ## /external/activity-streams-2/
 
@@ -293,11 +279,25 @@
 * [Object](./external/activity-streams-2/object.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/object` (Experimental)
 * [RDF Language Tagged String](./external/activity-streams-2/rdf-langstring.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langstring` (Experimental)
 
-## /common/descriptors/relationship/
+## /external/iptc/
 
-* [One to One Relationship Descriptor](./common/descriptors/relationship/descriptorOneToOne.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/descriptorOneToOne` (Experimental)
+* [Creator](./external/iptc/creator.schema.md) – `http://www.iptc.org/creator` (Experimental)
+* [Episode](./external/iptc/episode.schema.md) – `http://www.iptc.org/season` (Experimental)
+* [Rating](./external/iptc/rating.schema.md) – `http://www.iptc.org/rating` (Experimental)
+* [Season](./external/iptc/season.schema.md) – `http://www.iptc.org/episode` (Experimental)
+* [Series](./external/iptc/series.schema.md) – `http://www.iptc.org/series` (Experimental)
+
+## /external/schema/
+
+* [Geo Circle](./external/schema/geocircle.schema.md) – `http://schema.org/GeoCircle` (Experimental)
+* [Geo Coordinates](./external/schema/geocoordinates.schema.md) – `http://schema.org/GeoCoordinates` (Experimental)
+* [Geo Shape](./external/schema/geoshape.schema.md) – `http://schema.org/GeoShape` (Experimental)
 
 ## /common/descriptors/search/
 
 * [Search Descriptor](./common/descriptors/search/searchdescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/searchdescriptor` (Experimental)
+
+## /common/descriptors/relationship/
+
+* [One to One Relationship Descriptor](./common/descriptors/relationship/descriptorOneToOne.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/descriptorOneToOne` (Experimental)
 

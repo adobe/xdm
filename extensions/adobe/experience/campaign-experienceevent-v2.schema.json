@@ -17,7 +17,7 @@
     "https://ns.adobe.com/experience/decisioning/decisionevent"
   ],
   "meta:extends": [
-    "https://ns.adobe.com/xdm/experience/campaign/experienceevent-all",
+    "https://ns.adobe.com/xdm/experience/campaign/experienceevent-all-v2",
     "https://ns.adobe.com/xdm/context/experienceevent-application",
     "https://ns.adobe.com/xdm/context/experienceevent-channel",
     "https://ns.adobe.com/xdm/context/experienceevent-directmarketing",
@@ -137,7 +137,7 @@
       "$ref": "https://ns.adobe.com/xdm/context/experienceevent-environment-details"
     },
     {
-      "$ref": "#/definitions/campaign-experienceevent"
+      "$ref": "#/definitions/campaign-experienceevent-v2"
     }
   ],
   "meta:status": "experimental"

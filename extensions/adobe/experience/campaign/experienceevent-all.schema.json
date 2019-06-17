@@ -11,6 +11,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
+  "meta:status": "deprecated",
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "!Deprecated! Adobe Campaign ExperienceEvent Full Extension. Contains all Solution added fields.",
   "definitions": {

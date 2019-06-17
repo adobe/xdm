@@ -9,6 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Adobe Campaign Mutation Event (Deprecated)",
   "type": "object",
+  "meta:status": "deprecated",
   "description": "!Deprecated! Adobe Campaign mutation event",
   "definitions": {
     "mutationevent": {

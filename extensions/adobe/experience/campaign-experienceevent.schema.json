@@ -12,6 +12,7 @@
   "description": "!Deprecated! Campaign ExperienceEvent Mixin for use with Schemas for Solution data ingestion. Includes the core/standard ExperienceEvent as well as the required Adobe Campaign ExperienceEvent Mixins.",
   "meta:extensible": true,
   "meta:abstract": true,
+  "meta:status": "deprecated",
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent",
     "https://ns.adobe.com/experience/decisioning/decisionevent"

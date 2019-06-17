@@ -165,7 +165,7 @@
       "$ref": "https://ns.adobe.com/experience/decisioning/proposition"
     },
     {
-      "$ref": "#/definitions/campaign-experienceevent-v2"
+      "$ref": "#/definitions/campaign-experienceevent"
     }
   ],
   "meta:status": "experimental"

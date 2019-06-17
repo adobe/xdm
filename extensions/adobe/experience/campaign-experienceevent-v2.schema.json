@@ -25,12 +25,12 @@
       "properties": {
         "xdm:environment": {
           "title": "Environment",
-          "description": "Information about the surrounding situation the event observation occurred in, specifically detailing transitory information such as the network or software versions. > IMPORTANT: All values should be aligned with the [DeviceAtlas](https://deviceatlas.com) database licensed by Adobe."
+          "description": "Information about the surrounding situation the event observation occurred in, specifically detailing transitory information such as the network or software versions. > IMPORTANT: All values should be aligned with the [DeviceAtlas](https://deviceatlas.com) database licensed by Adobe.",
           "$ref": "https://ns.adobe.com/xdm/context/environment"
         },
         "xdm:device": {
           "title": "Device",
-          "description": "An identified device that is an application or browser instance that is trackable across sessions, normally by cookies."
+          "description": "An identified device that is an application or browser instance that is trackable across sessions, normally by cookies.",
           "$ref": "https://ns.adobe.com/xdm/context/device"
         },
         "xdm:application": {

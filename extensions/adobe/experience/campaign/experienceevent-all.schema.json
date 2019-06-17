@@ -328,7 +328,7 @@
         "https://ns.adobe.com/experience/campaign/mutation": {
           "title": "Mutated fields from the previous experienceEvent.",
           "description": "Information of the fields that have changed since the previous experienceevent to keep track of the state changes across events. For e.g. if when an email gets sent, an experienceEvent with metric `sends` will be sent. This may get bounced and an experienceEvent with metric `bounces` will be sent then. It may be important for a downstream application to know that the previous experienceEvent with metric `sends` is now to be invalidated. This field will contain the values from the previous experienceEvent that have a different value in the current experienceEvent.",
-          "$ref": "https://ns.adobe.com/experience/campaign/mutationevent"
+          "$ref": "https://ns.adobe.com/experience/campaign/mutationevent-new"
         }
       }
     }

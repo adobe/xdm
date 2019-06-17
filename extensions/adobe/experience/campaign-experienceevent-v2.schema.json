@@ -1,0 +1,144 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/campaign-experienceevent-v2",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Adobe Campaign ExperienceEvent Mixin",
+  "type": "object",
+  "description": "Campaign ExperienceEvent Mixin for use with Schemas for Solution data ingestion. Includes the core/standard ExperienceEvent as well as the required Adobe Campaign ExperienceEvent Mixins.",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent",
+    "https://ns.adobe.com/experience/decisioning/decisionevent"
+  ],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/experience/campaign/experienceevent-all",
+    "https://ns.adobe.com/xdm/context/experienceevent-application",
+    "https://ns.adobe.com/xdm/context/experienceevent-channel",
+    "https://ns.adobe.com/xdm/context/experienceevent-directmarketing",
+    "https://ns.adobe.com/experience/decisioning/proposition",
+    "https://ns.adobe.com/xdm/context/experienceevent-environment-details"
+  ],
+  "definitions": {
+    "campaign-experienceevent": {
+      "properties": {
+        "https://ns.adobe.com/experience/campaign/customFields": {
+          "properties": {
+            "xdm:cusField1": {
+              "title": "Custom Field 1",
+              "type": "string"
+            },
+            "xdm:cusField2": {
+              "title": "Custom Field 2",
+              "type": "string"
+            },
+            "xdm:cusField3": {
+              "title": "Custom Field 3",
+              "type": "string"
+            },
+            "xdm:cusField4": {
+              "title": "Custom Field 4",
+              "type": "string"
+            },
+            "xdm:cusField5": {
+              "title": "Custom Field 5",
+              "type": "string"
+            },
+            "xdm:cusField6": {
+              "title": "Custom Field 6",
+              "type": "string"
+            },
+            "xdm:cusField7": {
+              "title": "Custom Field 7",
+              "type": "string"
+            },
+            "xdm:cusField8": {
+              "title": "Custom Field 8",
+              "type": "string"
+            },
+            "xdm:cusField9": {
+              "title": "Custom Field 9",
+              "type": "string"
+            },
+            "xdm:cusField10": {
+              "title": "Custom Field 10",
+              "type": "string"
+            },
+            "xdm:cusField11": {
+              "title": "Custom Field 11",
+              "type": "string"
+            },
+            "xdm:cusField12": {
+              "title": "Custom Field 12",
+              "type": "string"
+            },
+            "xdm:cusField13": {
+              "title": "Custom Field 13",
+              "type": "string"
+            },
+            "xdm:cusField14": {
+              "title": "Custom Field 14",
+              "type": "string"
+            },
+            "xdm:cusField15": {
+              "title": "Custom Field 15",
+              "type": "string"
+            },
+            "xdm:cusField16": {
+              "title": "Custom Field 16",
+              "type": "string"
+            },
+            "xdm:cusField17": {
+              "title": "Custom Field 17",
+              "type": "string"
+            },
+            "xdm:cusField18": {
+              "title": "Custom Field 18",
+              "type": "string"
+            },
+            "xdm:cusField19": {
+              "title": "Custom Field 19",
+              "type": "string"
+            },
+            "xdm:cusField20": {
+              "title": "Custom Field 20",
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "ref": "https://ns.adobe.com/xdm/experience/campaign/experienceevent-all"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-application"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-channel"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-directmarketing"
+    },
+    {
+      "$ref": "https://ns.adobe.com/experience/decisioning/proposition"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-environment-details"
+    },
+    {
+      "$ref": "#/definitions/campaign-experienceevent"
+    }
+  ],
+  "meta:status": "experimental"
+}

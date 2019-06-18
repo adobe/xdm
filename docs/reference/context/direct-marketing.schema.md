@@ -32,6 +32,7 @@ The events and properties related to direct/outbound marketing such as email, di
 |----------|------|----------|------------|
 | [xdm:bounces](#xdmbounces) | Measure | Optional | Direct Marketing (this schema) |
 | [xdm:clicks](#xdmclicks) | Measure | Optional | Direct Marketing (this schema) |
+| [xdm:impressions](#xdmimpressions) | Measure | Optional | Direct Marketing (this schema) |
 | [xdm:mirrorPages](#xdmmirrorpages) | Measure | Optional | Direct Marketing (this schema) |
 | [xdm:nonDeliverables](#xdmnondeliverables) | Measure | Optional | Direct Marketing (this schema) |
 | [xdm:notSent](#xdmnotsent) | Measure | Optional | Direct Marketing (this schema) |
@@ -70,6 +71,24 @@ Click(s) actions on a message.
 * defined in this schema
 
 ### xdm:clicks Type
+
+
+* [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
+## xdm:impressions
+
+The direct-marketing message ( Push Notifications, In-App etc) has been seen by the end user.
+
+`xdm:impressions`
+* is optional
+* type: Measure
+* defined in this schema
+
+### xdm:impressions Type
 
 
 * [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`

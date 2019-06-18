@@ -240,6 +240,21 @@
               "title": "URL Category",
               "type": "string",
               "description": "The category of the link. It may be `subscription`, or a user-defined category."
+            },
+            "xdm:inAppMessageAction": {
+              "title": "In-App Message Action",
+              "type": "string",
+              "meta:enum": {
+                "primary": "Primary action",
+                "secondary": "Secondary action",
+                "dismiss": "Dismiss action"
+              },
+              "description": "Actions on the In-App message delivered, e.g. action on primary button, secondary button or close button."
+            },
+            "xdm:inAppMessageButtonText": {
+              "title": "In-App Message Button Text",
+              "type": "string",
+              "description": "The user-friendly text on the button."
             }
           }
         },
@@ -276,14 +291,15 @@
             "pipelined-inMail": "This event was generated via Pipelined generated from inMail",
             "pipelined-trackinglogd": "This event was generated via Pipelined generated from trackinglogd",
             "pipelined-pipelined": "This event was generated via Pipelined generated from Pipelined",
-            "replay": "This event was generated via Replay Utility tool which did not have any event source"
+            "replay": "This event was generated via Replay Utility tool which did not have any event source",
+            "pipelined-tracker": "This event was generated via Pipelined generated from TrackeR"
           },
           "description": "A human-friendly name of the campaign activity which is originating this message."
         },
         "https://ns.adobe.com/experience/campaign/offerOpened": {
           "title": "Offer Opened",
           "description": "The offer in the message for an 'offer opened' event.",
-          "$ref": "https://ns.adobe.com/experience/offer-management/proposition-response-detail"
+          "$ref": "https://ns.adobe.com/experience/campaign/offer-response-detail"
         },
         "https://ns.adobe.com/experience/campaign/offersProposed": {
           "title": "Offer Propositions",
@@ -291,6 +307,18 @@
           "type": "array",
           "items": {
             "$ref": "https://ns.adobe.com/experience/campaign/offer-proposition-detail"
+          }
+        },
+        "https://ns.adobe.com/experience/campaign/medium": {
+          "title": "Medium",
+          "type": "string",
+          "description": "The medium is a combination of the source of the event (message, web, ...) and its format if applicable.",
+          "meta:enum": {
+            "message_text": "The source of the event is message in a text format.",
+            "message_html": "The source of the event is message in a html format.",
+            "message_line": "The source of the event is a line message.",
+            "web": "The source of the event is web tracking tag in a web page.",
+            "offer": "The source of the event is an offer."
           }
         }
       }

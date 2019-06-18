@@ -291,7 +291,8 @@
             "pipelined-inMail": "This event was generated via Pipelined generated from inMail",
             "pipelined-trackinglogd": "This event was generated via Pipelined generated from trackinglogd",
             "pipelined-pipelined": "This event was generated via Pipelined generated from Pipelined",
-            "replay": "This event was generated via Replay Utility tool which did not have any event source"
+            "replay": "This event was generated via Replay Utility tool which did not have any event source",
+            "pipelined-tracker": "This event was generated via Pipelined generated from TrackeR"
           },
           "description": "A human-friendly name of the campaign activity which is originating this message."
         },
@@ -306,6 +307,18 @@
           "type": "array",
           "items": {
             "$ref": "https://ns.adobe.com/experience/campaign/offer-proposition-detail"
+          }
+        },
+        "https://ns.adobe.com/experience/campaign/medium": {
+          "title": "Medium",
+          "type": "string",
+          "description": "The medium is a combination of the source of the event (message, web, ...) and its format if applicable.",
+          "meta:enum": {
+            "message_text": "The source of the event is message in a text format.",
+            "message_html": "The source of the event is message in a html format.",
+            "message_line": "The source of the event is a line message.",
+            "web": "The source of the event is web tracking tag in a web page.",
+            "offer": "The source of the event is an offer."
           }
         }
       }

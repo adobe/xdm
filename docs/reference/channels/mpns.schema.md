@@ -13,7 +13,7 @@ Microsoft Push Notification Service channel.
 ## Schema Hierarchy
 
 * MPNS Channel `https://ns.adobe.com/xdm/channels/mpns`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
 

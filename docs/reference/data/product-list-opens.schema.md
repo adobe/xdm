@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/data/metrics/product-list-opens
 ```
 
-The commerce metric product-list-opens describes how many new product lists have been created. The most common case is the creation of a new shopping cart by putting the first item into the shopping cart.
+The commerce metric `product-list-opens` describes how many new product lists have been created. The most common case is the creation of a new shopping cart by putting the first item into the shopping cart.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|

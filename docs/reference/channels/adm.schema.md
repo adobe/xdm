@@ -13,7 +13,7 @@ Amazon Device Messaging channel.
 ## Schema Hierarchy
 
 * ADM Channel `https://ns.adobe.com/xdm/channels/adm`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
 

@@ -13,7 +13,7 @@ Native mobile applications that are installed through an app store channel.
 ## Schema Hierarchy
 
 * Native Mobile Application Channel `https://ns.adobe.com/xdm/channels/mobile-app`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
 

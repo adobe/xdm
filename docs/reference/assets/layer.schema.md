@@ -50,7 +50,7 @@ Users can also apply a layer style to add a special effect such as a drop shadow
 ## xdm:height
 ### Height
 
-Height of the artboard
+Height of the artboard.
 
 `xdm:height`
 * is optional
@@ -70,7 +70,7 @@ Height of the artboard
 ## xdm:name
 ### Name
 
-Name of the Layer. This will be visible to the user and users can specify names that can help them to identify different Layers
+Name of the layer. This will be visible to the user and users can specify names that can help them to identify different Layers.
 
 `xdm:name`
 * is optional
@@ -90,7 +90,7 @@ Name of the Layer. This will be visible to the user and users can specify names 
 ## xdm:originX
 ### Origin X
 
-Origin X position - Base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards)
+Origin X position - base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards).
 
 `xdm:originX`
 * is optional
@@ -110,7 +110,7 @@ Origin X position - Base system is cartesian, relative to master page and origin
 ## xdm:originY
 ### Origin Y
 
-Origin Y position - Base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards)
+Origin Y position - base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards).
 
 `xdm:originY`
 * is optional
@@ -129,7 +129,7 @@ Origin Y position - Base system is cartesian, relative to master page and origin
 
 ## xdm:style
 
-A layer style is one or more effects applied to a layer or layer group. You can apply one of the preset styles provided with Photoshop or create a custom style. Photoshop provides a variety of effects—such as shadows, glows, and bevels—that change the appearance of a layer’s contents in a non-distructive way. Layer effects are linked to the layer contents. When you move or edit the contents of the layer, the same effects are applied to the modified contents. For example, if you apply a drop shadow to a text layer and then add new text, the shadow is added automatically to the new text.
+A layer style is one or more effects applied to a layer or layer group. You can apply one of the preset styles provided with Photoshop or create a custom style. Photoshop provides a variety of effects—such as shadows, glows, and bevels—that change the appearance of a layer’s contents in a non-destructive way. Layer effects are linked to the layer contents. When you move or edit the contents of the layer, the same effects are applied to the modified contents. For example, if you apply a drop shadow to a text layer and then add new text, the shadow is added automatically to the new text.
 
 `xdm:style`
 * is optional
@@ -149,7 +149,7 @@ A layer style is one or more effects applied to a layer or layer group. You can 
 ## xdm:unit
 ### Unit
 
-Unit used for artboard coordinates (`originX`, `originY`, `width` and `height`). For example: `inch`, `mm`, `pixel`, `pica`, `point` (default is `pixel`)
+Unit used for artboard coordinates (`originX`, `originY`, `width` and `height`). For example: `inch`, `mm`, `pixel`, `pica`, `point` (default is `pixel`).
 
 `xdm:unit`
 * is optional
@@ -189,7 +189,7 @@ Indicates if a layer is visible in the document. `visible = true` - Layer is vis
 ## xdm:width
 ### Width
 
-Width of the artboard
+Width of the artboard.
 
 `xdm:width`
 * is optional

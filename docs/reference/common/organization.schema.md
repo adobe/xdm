@@ -139,7 +139,7 @@ The number of employees the organization has.
 ## xdm:classifier
 ### Market/Industry Classifier
 
-This object contains unambiguous classifiers for the organization. Each key is the URI of an classification service or standard, each value is the unique ID (or preferrably URI) of the organization as defined by the classification service.
+This object contains unambiguous classifiers for the organization. Each key is the URI of an classification service or standard, each value is the unique ID (or preferably URI) of the organization as defined by the classification service.
 
 `xdm:classifier`
 * is optional
@@ -171,7 +171,7 @@ This object contains unambiguous classifiers for the organization. Each key is t
 ## xdm:identifier
 ### Organization Identifier
 
-This object contains unambiguous identifiers for the organization. Each key is the URI of an identification service, each value is the unique ID (or preferrably URI) of the organization as defined by the identification service.
+This object contains unambiguous identifiers for the organization. Each key is the URI of an identification service, each value is the unique ID (or preferably URI) of the organization as defined by the identification service.
 
 `xdm:identifier`
 * is optional
@@ -282,7 +282,7 @@ The named market segment that the organization participates in. This is a free-f
 ## xdm:rating
 ### Rating
 
-The calculated score or star rating for this organization. `1` indicates the maximum possible rating, `0` the minumum possible rating.
+The calculated score or star rating for this organization. `1` indicates the maximum possible rating, `0` the minimum possible rating.
 
 `xdm:rating`
 * is optional

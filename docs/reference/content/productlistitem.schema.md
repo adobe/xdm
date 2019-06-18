@@ -62,7 +62,7 @@ The line item identifier for this product entry. The product itself is identifie
 ## xdm:SKU
 ### SKU
 
-Stock Keeping Unit, the unique identifier for a product defined by the vendor.
+Stock keeping unit, the unique identifier for a product defined by the vendor.
 
 `xdm:SKU`
 * is optional

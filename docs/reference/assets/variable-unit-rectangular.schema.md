@@ -35,7 +35,7 @@ This is an abstract schema for objects of rectangular dimensions and position, w
 ## xdm:height
 ### Height
 
-Height of the artboard
+Height of the artboard.
 
 `xdm:height`
 * is optional
@@ -55,7 +55,7 @@ Height of the artboard
 ## xdm:originX
 ### Origin X
 
-Origin X position - Base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards)
+Origin X position - base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards).
 
 `xdm:originX`
 * is optional
@@ -75,7 +75,7 @@ Origin X position - Base system is cartesian, relative to master page and origin
 ## xdm:originY
 ### Origin Y
 
-Origin Y position - Base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards)
+Origin Y position - base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards).
 
 `xdm:originY`
 * is optional
@@ -95,7 +95,7 @@ Origin Y position - Base system is cartesian, relative to master page and origin
 ## xdm:unit
 ### Unit
 
-Unit used for artboard coordinates (`originX`, `originY`, `width` and `height`). For example: `inch`, `mm`, `pixel`, `pica`, `point` (default is `pixel`)
+Unit used for artboard coordinates (`originX`, `originY`, `width` and `height`). For example: `inch`, `mm`, `pixel`, `pica`, `point` (default is `pixel`).
 
 `xdm:unit`
 * is optional
@@ -116,7 +116,7 @@ Unit used for artboard coordinates (`originX`, `originY`, `width` and `height`).
 ## xdm:width
 ### Width
 
-Width of the artboard
+Width of the artboard.
 
 `xdm:width`
 * is optional

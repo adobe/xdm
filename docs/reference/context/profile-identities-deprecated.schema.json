@@ -14,7 +14,7 @@
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/profile"
     ],
-    "description": "Identities Array for Profile (deprecated).",
+    "description": "Identities array for profile (deprecated).",
     "definitions": {
         "profile-identities-deprecated": {
             "properties": {

@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages
 ```
 
-The direct-marketing metric mirror-pages describes the number of mirror pages for which a link to the online mirror page of a message has been clicked.
+The direct-marketing metric `mirror-page`s describes the number of mirror pages for which a link to the online mirror page of a message has been clicked.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|

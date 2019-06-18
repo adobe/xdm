@@ -13,7 +13,7 @@ Timed media chapter information
 ## Schema Hierarchy
 
 * Timed Media Chapter Information `https://ns.adobe.com/xdm/context/media-timed-chapter`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Timed Media Chapter Asset Reference](media-timed-chapter-asset-reference.schema.md) `https://ns.adobe.com/xdm/context/media-timed-chapter-asset-reference`
   * [Timed Media Chapter View Details](media-timed-chapter-view-details.schema.md) `https://ns.adobe.com/xdm/context/media-timed-chapter-view-details`
   * [Measure](../data/measure.schema.md) `https://ns.adobe.com/xdm/data/measure`

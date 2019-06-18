@@ -44,13 +44,13 @@
         "xdm:dmaID": {
           "title": "Designated Market Area",
           "type": "integer",
-          "description": "The Nielsen Media Research designated market area."
+          "description": "The Nielsen media research designated market area."
         },
         "xdm:msaID": {
           "title": "Metropolitan Statistical Area",
           "type": "integer",
           "description":
-            "The Metropolitan Statistical Area in the USA where the observation occurred."
+            "The metropolitan statistical area in the USA where the observation occurred."
         }
       }
     }

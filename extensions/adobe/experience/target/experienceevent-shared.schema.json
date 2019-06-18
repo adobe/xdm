@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "Adobe Target Shared Extension. Contains Solution fields shared with other Solutions.",
+  "description": "Adobe Target shared extension. Contains Solution fields shared with other Solutions.",
   "definitions": {
     "target-experienceevent-shared": {
       "properties": {

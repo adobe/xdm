@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
-  "description": "Personal related end user profile details.",
+  "description": "Personal related end-user profile details.",
   "definitions": {
     "profile-personal-details": {
       "properties": {

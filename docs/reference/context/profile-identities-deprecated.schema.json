@@ -26,7 +26,7 @@
                         "$ref": "https://ns.adobe.com/xdm/context/identity"
                     },
                     "minItems": 1,
-                    "description": "Array of Identities. Condensed, normalized encapsulation of all end user identifiers.  Deprecated, use `xdm:identityMap` instead."
+                    "description": "Array of identities. Condensed, normalized encapsulation of all end-user identifiers.  Deprecated, use `xdm:identityMap` instead."
                 }
             }
         }

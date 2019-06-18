@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "Adobe Analytics ExperienceEvent Full Extension. Contains all Solution added fields.",
+  "description": "Adobe Analytics ExperienceEvent full extension. Contains all Solution added fields.",
   "definitions": {
     "experienceevent": {
       "properties": {
@@ -51,17 +51,17 @@
         },
         "https://ns.adobe.com/experience/analytics/endUser": {
           "type": "object",
-          "title": "End User",
+          "title": "End-User",
           "properties": {
             "xdm:firstTimestamp": {
-              "title": "End User First Timestamp",
+              "title": "End-User First Timestamp",
               "type": "integer",
               "description": "The timestamp for the first ExperienceEvent for this end-user. Milliseconds since midnight of January 1, 1970.",
               "minimum": 1,
               "maximum": 9223372036854770000
             },
             "xdm:firstWeb": {
-              "title": "End User First Web Details",
+              "title": "End-User First Web Details",
               "$ref": "https://ns.adobe.com/xdm/context/webinfo",
               "description": "The information related to web page, link, and referrer from the first ExperienceEvent for this end-user."
             }
@@ -7220,12 +7220,12 @@
             "xdm:browserID": {
               "title": "Browser ID",
               "type": "integer",
-              "description": "The Adobe Analytics Identifier for the browser used."
+              "description": "The Adobe Analytics identifier for the browser used."
             },
             "xdm:operatingSystemID": {
               "title": "Operating System ID",
               "type": "integer",
-              "description": "The Adobe Analytics Identifier of the operating system used."
+              "description": "The Adobe Analytics identifier of the operating system used."
             }
           }
         }

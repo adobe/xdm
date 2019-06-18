@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "ExperienceEvent Segment Membership Details.",
+  "description": "ExperienceEvent segment membership details.",
   "definitions": {
     "experienceevent-segmentmembership": {
       "properties": {

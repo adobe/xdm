@@ -9,6 +9,7 @@
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "Application Channel",
     "type": "object",
+    "meta:abstract": true,
     "description": "An application that accepts messages or emit events (Facebook page, Mobile App, ...) channel.",
     "definitions": {
         "application": {

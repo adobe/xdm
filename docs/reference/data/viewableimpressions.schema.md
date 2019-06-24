@@ -1,22 +1,22 @@
 
-# viewable-impressions Schema
+# Viewable-impressions Schema
 
 ```
 https://ns.adobe.com/xdm/data/viewableimpressions
 ```
 
-The advertising/viewability metric viewable-impressions describes whether at least 50% of the video's pixels were visible after two seconds of video start.
+The advertising/viewability metric `viewable-impressions` describes whether at least 50% of the video's pixels were visible after two seconds of video start.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/viewableimpressions.schema.json](data/viewableimpressions.schema.json) |
 ## Schema Hierarchy
 
-* viewable-impressions `https://ns.adobe.com/xdm/data/viewableimpressions`
+* Viewable-impressions `https://ns.adobe.com/xdm/data/viewableimpressions`
   * [Metric Definition](metricdefinition.schema.md) `https://ns.adobe.com/xdm/data/metricdefinition`
 
 
-## viewable-impressions Example
+## Viewable-impressions Example
 ```json
 {
   "schema:name": "advertising/viewability metric: viewableImpressions",
@@ -26,7 +26,7 @@ The advertising/viewability metric viewable-impressions describes whether at lea
 }
 ```
 
-# viewable-impressions Properties
+# Viewable-impressions Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|

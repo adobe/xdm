@@ -16,7 +16,7 @@ It is intended for recording interactions in rich web applications that do not t
 ## Schema Hierarchy
 
 * Web Interaction `https://ns.adobe.com/xdm/context/webinteraction`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Measure](../data/measure.schema.md) `https://ns.adobe.com/xdm/data/measure`
 
 
@@ -45,7 +45,7 @@ It is intended for recording interactions in rich web applications that do not t
 ## xdm:URL
 ### URL
 
-The actual link/URL used for this web interaction
+The actual link/URL used for this web interaction.
 
 `xdm:URL`
 * is optional
@@ -83,7 +83,7 @@ Click of a web-link has occurred.
 ## xdm:name
 ### Name
 
-The normative name used for this web link, used for classification purposes
+The normative name used for this web link, used for classification purposes.
 
 `xdm:name`
 * is optional

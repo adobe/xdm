@@ -30,7 +30,7 @@
                     "description": "The second sub organization identifier of an area multiple beacon operate in. The smallest area a beacon can refine location to."
                 },
                 "xdm:proximity": {
-                    "title": "Proximity to beacon",
+                    "title": "Proximity to Beacon",
                     "type": "string",
                     "description": "Estimated distance from the beacon.",
                     "enum": [
@@ -40,9 +40,9 @@
                         "unknown"
                     ],
                     "meta:enum": {
-                        "immediate": "Within a few centimeters",
-                        "near": "Within a couple of meters",
-                        "far": "Greater than 10 meters away",
+                        "immediate": "Within a few centimeter.",
+                        "near": "Within a couple of meters.",
+                        "far": "Greater than 10 meters away.",
                         "unknown": "Not able to ascertain distance, signal likely very weak."
                     }
                 }

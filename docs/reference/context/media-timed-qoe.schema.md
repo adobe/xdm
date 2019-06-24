@@ -13,7 +13,7 @@ Timed media properties related to the content playback's quality of experience (
 ## Schema Hierarchy
 
 * Timed Media Quality of Experience `https://ns.adobe.com/xdm/context/media-timed-qoe`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Measure](../data/measure.schema.md) `https://ns.adobe.com/xdm/data/measure`
 
 

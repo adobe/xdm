@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/experienceevent-media
 ```
 
-ExperienceEvent Details for Media.
+ExperienceEvent details for media.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -13,7 +13,7 @@ ExperienceEvent Details for Media.
 ## Schema Hierarchy
 
 * ExperienceEvent Details for Media `https://ns.adobe.com/xdm/context/experienceevent-media`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Media Information](media.schema.md) `https://ns.adobe.com/xdm/context/media`
 
 
@@ -162,7 +162,7 @@ ExperienceEvent Details for Media.
 ## xdm:media
 ### Media
 
-Media activity information related to the experience event
+Media activity information related to the experience event.
 
 `xdm:media`
 * is optional

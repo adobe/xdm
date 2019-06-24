@@ -13,7 +13,7 @@ An XDM Profile forms a singular representation of the attributes and interests o
 ## Schema Hierarchy
 
 * XDM Profile `https://ns.adobe.com/xdm/context/profile`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Audit Trail](../common/auditable.schema.md) `https://ns.adobe.com/xdm/common/auditable`
   * [Record Schema](../data/record.schema.md) `https://ns.adobe.com/xdm/data/record`
 
@@ -149,7 +149,7 @@ A unique identifier for the record.
 
 ## repo:createDate
 
-The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
+The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The date time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
 
 `repo:createDate`
 * is optional
@@ -174,7 +174,7 @@ The server date and time when the resource was created in the repository, such a
 
 ## repo:modifyDate
 
-The server date and time when the resource was last modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
+The server date and time when the resource was last modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The date time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
 
 `repo:modifyDate`
 * is optional
@@ -200,7 +200,7 @@ The server date and time when the resource was last modified in the repository, 
 ## xdm:createdByBatchID
 ### Created by Batch Identifier
 
-The Data Set Files in Catalog Services which has been originating the creation of the entity.
+The dataset files in Catalog Services which has been originating the creation of the entity.
 
 `xdm:createdByBatchID`
 * is optional
@@ -221,7 +221,7 @@ The Data Set Files in Catalog Services which has been originating the creation o
 ## xdm:modifiedByBatchID
 ### Modified by Batch Identifier
 
-The last Data Set Files in Catalog Services which has modified the entity. At creation time, `modifiedByBatchID` is set as `createdByBatchID`.
+The last dataset files in Catalog Services which has modified the entity. At creation time, `modifiedByBatchID` is set as `createdByBatchID`.
 
 `xdm:modifiedByBatchID`
 * is optional
@@ -242,7 +242,7 @@ The last Data Set Files in Catalog Services which has modified the entity. At cr
 ## xdm:repositoryCreatedBy
 ### Created by User Identifier
 
-User id who has created the entity.
+User ID who has created the entity.
 
 `xdm:repositoryCreatedBy`
 * is optional
@@ -262,7 +262,7 @@ User id who has created the entity.
 ## xdm:repositoryLastModifiedBy
 ### Modified by User Identifier
 
-User id who last modified the entity. At creation time, `modifiedByUser` is set as `createdByUser`.
+User ID who last modified the entity. At creation time, `modifiedByUser` is set as `createdByUser`.
 
 `xdm:repositoryLastModifiedBy`
 * is optional

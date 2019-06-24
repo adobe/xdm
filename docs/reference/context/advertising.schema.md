@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/advertising
 ```
 
-The information related to advertising activity related to the experience event
+The information related to advertising activity related to the experience event.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -13,7 +13,7 @@ The information related to advertising activity related to the experience event
 ## Schema Hierarchy
 
 * Advertising `https://ns.adobe.com/xdm/context/advertising`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [MRC Viewability](adviewability.schema.md) `https://ns.adobe.com/xdm/context/adviewability`
   * [Ad Asset Reference](advertising-timed-asset-reference.schema.md) `https://ns.adobe.com/xdm/context/advertising-timed-asset-reference`
   * [Ad Asset View Details](advertising-timed-asset-view-details.schema.md) `https://ns.adobe.com/xdm/context/advertising-timed-asset-view-details`
@@ -218,7 +218,7 @@ A digital video ad has played through 25% of its duration at normal speed.
 
 ## xdm:impressions
 
-Impression(s) of an advertisement to an end user with the potential of being viewed.
+Impression(s) of an advertisement to an end-user with the potential of being viewed.
 
 `xdm:impressions`
 * is optional

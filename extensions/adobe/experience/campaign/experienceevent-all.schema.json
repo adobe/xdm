@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "Adobe Campaign ExperienceEvent Full Extension. Contains all Solution added fields.",
+  "description": "Adobe Campaign ExperienceEvent full extension. Contains all Solution added fields.",
   "definitions": {
     "campaign-experienceevent-all": {
       "properties": {
@@ -62,7 +62,7 @@
             "xdm:testMember": {
               "title": "A/B Test Member",
               "type": "boolean",
-              "description": "The recipient of this message is a member of a test group for this campaign activity. This is primarily used for identifying the initial population of an A/B Test. After sending different variants to the testMembers, the winner Variant is decided to be sent to the remaining population based on behavioural changes in testMembers.",
+              "description": "The recipient of this message is a member of a test group for this campaign activity. This is primarily used for identifying the initial population of an A/B Test. After sending different variants to the testMembers, the winner Variant is decided to be sent to the remaining population based on behavioral changes in testMembers.",
               "default": false
             },
             "xdm:size": {
@@ -166,14 +166,14 @@
               "default": "one_time"
             },
             "xdm:templateName": {
-              "title": "Delivery Template's Internal name",
+              "title": "Delivery Template's Internal Name",
               "type": "string",
               "description": "A human-friendly identifier of the the parent entity (in case of event_based or continuous message Class) of the campaign activity originating this message."
             },
             "xdm:templateID": {
               "title": "Identifier of the Template",
               "type": "integer",
-              "description": "The delivery template's ID used to initialize this delivery.\n\nThe type the template used in Adobe Campaign can be identified using the `messageClass`.\n\n* `messageClass` = `oneTime`: the template is standard delivery template.\n* `messageClass` = `continuous`: the template is a recurring delivery.\n* `messageClass` = `transactional`: the template is a transactionnal message template.\n"
+              "description": "The delivery template's ID used to initialize this delivery.\n\nThe type the template used in Adobe Campaign can be identified using the `messageClass`.\n\n* `messageClass` = `oneTime`: the template is standard delivery template.\n* `messageClass` = `continuous`: the template is a recurring delivery.\n* `messageClass` = `transactional`: the template is a transactional message template.\n"
             },
             "xdm:deliveryLabel": {
               "title": "Delivery Label",
@@ -181,7 +181,7 @@
               "description": "A human-friendly name of the campaign activity which is originating this message."
             },
             "xdm:deliveryName": {
-              "title": "Delivery Internal name",
+              "title": "Delivery Internal Name",
               "type": "string",
               "description": "A human-friendly identifier of the campaign activity which is originating this message."
             }
@@ -197,7 +197,7 @@
               "description": "Identifier of the marketing campaign to which activity originating this message belongs to."
             },
             "xdm:campaignName": {
-              "title": "Campaign Internal name",
+              "title": "Campaign Internal Name",
               "type": "string",
               "description": "A human-friendly identifier of the marketing campaign which is originating this message."
             }
@@ -215,7 +215,7 @@
             "xdm:description": {
               "title": "Tracking URL Description",
               "type": "string",
-              "description": "A human-friendly description of the Link."
+              "description": "A human-friendly description of the link."
             },
             "xdm:url": {
               "title": "URL",
@@ -275,9 +275,9 @@
           }
         },
         "https://ns.adobe.com/experience/campaign/containerID": {
-          "title": "Container identifier",
+          "title": "Container Identifier",
           "type": "string",
-          "description": "The identifier denoting the container with which campaign experience event is associated."
+          "description": "The identifier denoting the container with which Campaign ExperienceEvent is associated."
         },
         "https://ns.adobe.com/experience/campaign/eventSource": {
           "title": "Event Source",
@@ -291,7 +291,8 @@
             "pipelined-inMail": "This event was generated via Pipelined generated from inMail",
             "pipelined-trackinglogd": "This event was generated via Pipelined generated from trackinglogd",
             "pipelined-pipelined": "This event was generated via Pipelined generated from Pipelined",
-            "replay": "This event was generated via Replay Utility tool which did not have any event source"
+            "replay": "This event was generated via Replay Utility tool which did not have any event source",
+            "pipelined-tracker": "This event was generated via Pipelined generated from TrackeR"
           },
           "description": "A human-friendly name of the campaign activity which is originating this message."
         },
@@ -307,14 +308,26 @@
           "items": {
             "$ref": "https://ns.adobe.com/experience/campaign/offer-proposition-detail"
           }
+        },
+        "https://ns.adobe.com/experience/campaign/medium": {
+          "title": "Medium",
+          "type": "string",
+          "description": "The medium is a combination of the source of the event (message, web, ...) and its format if applicable.",
+          "meta:enum": {
+            "message_text": "The source of the event is message in a text format.",
+            "message_html": "The source of the event is message in a html format.",
+            "message_line": "The source of the event is a line message.",
+            "web": "The source of the event is web tracking tag in a web page.",
+            "offer": "The source of the event is an offer."
+          }
         }
       }
     },
     "mutation": {
       "properties": {
         "https://ns.adobe.com/experience/campaign/mutation": {
-          "title": "Mutated fields from the previous experienceEvent.",
-          "description": "Information of the fields that have changed since the previous experienceevent to keep track of the state changes across events. For e.g. if when an email gets sent, an experienceEvent with metric `sends` will be sent. This may get bounced and an experienceEvent with metric `bounces` will be sent then. It may be important for a downstream application to know that the previous experienceEvent with metric `sends` is now to be invalidated. This field will contain the values from the previous experienceEvent that have a different value in the current experienceEvent.",
+          "title": "Mutated Fields from Previous ExperienceEvent.",
+          "description": "Information of the fields that have changed since the previous ExperienceEvent to keep track of the state changes across events. For e.g. if when an email gets sent, an ExperienceEvent with metric `sends` will be sent. This may get bounced and an ExperienceEvent with metric `bounces` will be sent then. It may be important for a downstream application to know that the previous ExperienceEvent with metric `sends` is now to be invalidated. This field will contain the values from the previous ExperienceEvent that have a different value in the current ExperienceEvent.",
           "$ref": "https://ns.adobe.com/experience/campaign/mutationevent"
         }
       }

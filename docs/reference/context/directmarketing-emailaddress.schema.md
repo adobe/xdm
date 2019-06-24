@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/directmarketing-emailaddress
 ```
 
-Direct Marketing Email Address.
+Direct marketing email address.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|

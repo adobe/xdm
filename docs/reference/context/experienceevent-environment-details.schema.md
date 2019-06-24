@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/experienceevent-environment-details
 ```
 
-ExperienceEvent Environment Details.
+ExperienceEvent environment details.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -13,7 +13,7 @@ ExperienceEvent Environment Details.
 ## Schema Hierarchy
 
 * ExperienceEvent Environment Details `https://ns.adobe.com/xdm/context/experienceevent-environment-details`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Environment](environment.schema.md) `https://ns.adobe.com/xdm/context/environment`
   * [Device](device.schema.md) `https://ns.adobe.com/xdm/context/device`
   * [Place Context](placecontext.schema.md) `https://ns.adobe.com/xdm/context/placecontext`

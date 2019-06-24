@@ -17,7 +17,7 @@ Notification service.
 ## Schema Hierarchy
 
 * Push Notification Token `https://ns.adobe.com/xdm/context/pushnotificationtoken`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Environment](environment.schema.md) `https://ns.adobe.com/xdm/context/environment`
   * [Device](device.schema.md) `https://ns.adobe.com/xdm/context/device`
   * [Application](application.schema.md) `https://ns.adobe.com/xdm/context/application`

@@ -24,7 +24,7 @@
                     "description": "Address quality rating.",
                     "meta:enum": {
                         "incomplete_address": "Incomplete address",
-                        "unknown_town_postal_code": "Unknown Town-Postal Code",
+                        "unknown_town_postal_code": "Unknown town-postal code",
                         "empty_street": "Empty street",
                         "unknown_street": "Unknown street",
                         "partially_recognized_street": "Partially-recognized street",

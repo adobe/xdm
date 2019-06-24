@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/metricdefinition"],
   "description":
-    "The commerce metric productListRemovals describes the number of times a product has been removed from a product list. The most common use case is the removal of a product from the shopping cart.",
+    "The commerce metric `productListRemovals` describes the number of times a product has been removed from a product list. The most common use case is the removal of a product from the shopping cart.",
   "definitions": {
     "metricdefinition": {
       "properties": {

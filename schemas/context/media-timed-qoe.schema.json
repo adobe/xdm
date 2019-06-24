@@ -59,6 +59,30 @@
           "title": "Time to Start",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Describes the duration (in seconds) passed between video load and start."
+        },
+        "xdm:playerErrorIds": {
+          "title": "Player Error IDs",
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "The error IDs encountered during a playback session that originated in the Player."
+        },
+        "xdm:sdkErrorIds": {
+          "title": "SDK Error IDs",
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "The error IDs encountered during a playback session that originated in the Media SDK."
+        },
+        "xdm:externalErrorIds": {
+          "title": "External Error IDs",
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "The error IDs encountered during a playback session that originated outside the Player or SDK."
         }
       }
     }

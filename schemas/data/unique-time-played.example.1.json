@@ -1,0 +1,6 @@
+{
+  "schema:name": "metric: uniqueTimePlayed",
+  "@id": "xdm:uniqueTimePlayed",
+  "xdm:measurement": "time",
+  "xdm:unit": "second"
+}

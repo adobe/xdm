@@ -21,10 +21,38 @@
           "format": "uri-reference",
           "description": "Identifier of the content, which can be used to tie back to other industry / CMS IDs."
         },
+        "dc:creator": {
+          "title": "Creator",
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "An entity primarily responsible for making the resource."
+        },
+        "dc:publisher": {
+          "title": "Publisher",
+          "type": "string",
+          "description": "An entity responsible for making the resource available."
+        },
         "dc:title": {
           "title": "Media Name",
           "type": "string",
           "description": "The friendly (human-readable) name of the timed media asset."
+        },
+        "xdm:recordLabel": {
+          "title": "Record Label",
+          "type": "string",
+          "description": "The name of the record label associated with the music recording or video."
+        },
+        "xmpDM:artist": {
+          "title": "Artist",
+          "type": "string",
+          "description": "The name of the album artist or group performing the music recording or video."
+        },
+        "xmpDM:album": {
+          "title": "Album",
+          "type": "string",
+          "description": "The name of the album that the music recording or video belongs to."
         },
         "xmpDM:duration": {
           "title": "Media Length/Runtime",
@@ -45,6 +73,17 @@
           "title": "Stream Format",
           "type": "string",
           "description": "Free-form format of the stream (e.g. short, long)."
+        },
+        "xdm:streamType": {
+          "description": "The type of the media stream",
+          "type": "string",
+          "default": "video",
+          "enum": ["audio", "video", "gaming"],
+          "meta:enum": {
+            "audio": "An audio stream (e.g. podcast, audiobook, radio stream).",
+            "video": "A video stream (e.g. Video-On-Demand, live event stream, downloaded movie).",
+            "gaming": "A gaming stream (e.g. Twitch, Hitbox)."
+          }
         },
         "iptc4xmpExt:Season": {
           "title": "Season",

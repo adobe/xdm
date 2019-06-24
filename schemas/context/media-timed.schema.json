@@ -66,9 +66,14 @@
           "description": "Indicates the user abandoned the media stream before the first frame (e.g. during the pre-roll ad break, due to an error while loading the content from the CDN)."
         },
         "xdm:totalTimePlayed": {
-          "title": "Content Play",
+          "title": "Total Time Played",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Describes the total amount of time spent by a user on a specific timed media asset, which includes time spent watching ads."
+        },
+        "xdm:uniqueTimePlayed": {
+          "title": "Unique Time Played",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Describes the sum of the unique intervals seen by a user on a timed media asset - i.e. the length playback intervals viewed multiple times are only counted once."
         },
         "xdm:progress10": {
           "title": "10% Progress Marker",

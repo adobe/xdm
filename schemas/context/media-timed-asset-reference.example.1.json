@@ -1,6 +1,7 @@
 {
   "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234430",
   "dc:title": "Floki Begs Helga for Freedom",
+  "dc:publisher": "cbsinteractive",
   "xmpDM:duration": 87,
   "iptc4xmpExt:Series": {
     "iptc4xmpExt:Name": "nba_highlights",
@@ -8,6 +9,7 @@
   },
   "xdm:showType": "episode",
   "xdm:streamFormat": "long",
+  "xdm:streamType": "video",
   "iptc4xmpExt:Season": {
     "iptc4xmpExt:Number": 1.0
   },

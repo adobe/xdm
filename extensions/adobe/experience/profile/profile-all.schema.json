@@ -35,6 +35,9 @@
     },
     {
       "$ref": "https://ns.adobe.com/xdm/context/profile-segmentation"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/identitynamespaces"
     }
   ]
 }

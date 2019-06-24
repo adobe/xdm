@@ -1,0 +1,115 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/experience/adcloud/searchadvertising/aggregateperformancebykeyword",
+  "title": "Search Advertising Performance Measures Aggregated By Keyword",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/time-series"],
+  "description": "Search Advertising Performance Measures Aggregated By Keyword is a rolled up data of the collection of aggregated performance measures as pulled from Search Advertising Platforms by Ad/Keyword.",
+  "definitions": {
+    "aggregateperformancebykeyword": {
+      "properties": {
+        "xdm:accountId": {
+          "title": "Account Identifier",
+          "type": "string",
+          "description": "Identifier that defines Customer/Client ID setup on the Search Advertising Platform."
+        },
+        "xdm:campaignId": {
+          "title": "Campaign Identifier",
+          "type": "string",
+          "description": "Campaign ID on the search advertising platform.."
+        },
+        "xdm:adgroupId": {
+          "title": "Ad Group Identifier",
+          "type": "string",
+          "description": "Ad Group ID on the search advertising platform."
+        },
+        "xdm:termId": {
+          "title": "Search Term Identifier",
+          "type": "string",
+          "description": "Search Term ID on the search advertising platform."
+        },
+        "xdm:term": {
+          "title": "Search Term",
+          "type": "string",
+          "description": "Search Term targeted for the Ad."
+        },
+        "xdm:matchType": {
+          "title": "Term Match Type",
+          "type": "string",
+          "description": "Match Type associated to the Search Term being targeted for the Ad.",
+          "enum": [
+            "Broad",
+            "Phrase",
+            "Exact",
+            "Advanced",
+            "Standard",
+            "Website",
+            "Product Target",
+            "Product Group"
+          ],
+          "meta:enum": {
+            "Broad": "Broad",
+            "Phrase": "Phrase",
+            "Exact": "Exact",
+            "Advanced": "Advanced",
+            "Standard": "Standard",
+            "Website": "Website",
+            "Product Target": "Product Target",
+            "Product Group": "Product Group"
+          }
+        },
+        "xdm:searchEngineId": {
+          "title": "Search Engine Identifier",
+          "type": "integer",
+          "description": "The application-specified identifier used to identify the Search Advertising Platform Name."
+        },
+        "xdm:clicks": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Count of Clicks for a given ad displayed on the network."
+        },
+        "xdm:impressions": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Count of impressions for a given ad displayed on the network."
+        },
+        "xdm:totalCost": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Total Advertising Spend for a given ad displayed on the network. The spend is in the account currency configured on the network."
+        },
+        "xdm:avgPosition": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Average Position of the Ad displayed on the network."
+        },
+        "xdm:topPageBid": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Top of the Page Bid Estimator. The measure is computed by the network and is not an additive measure."
+        },
+        "xdm:qualityScore": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Quality Score of the Keyword assigned by the network - range 1 to 10. This is not an additive measure."
+        },
+        "xdm:device": {
+          "title": "Device",
+          "$ref": "https://ns.adobe.com/xdm/context/device",
+          "description": "The device from where the ad was displayed."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/time-series"
+    },
+    {
+      "$ref": "#/definitions/aggregateperformancebykeyword"
+    }
+  ],
+  "meta:status": "experimental"
+}

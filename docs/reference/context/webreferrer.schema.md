@@ -17,7 +17,7 @@ The information in this schema is semantically compatible with the information i
 ## Schema Hierarchy
 
 * Web Referrer `https://ns.adobe.com/xdm/context/webreferrer`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
 ## Web Referrer Example

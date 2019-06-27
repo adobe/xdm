@@ -1,22 +1,22 @@
 
-# viewable-midpoints Schema
+# Viewable-midpoints Schema
 
 ```
 https://ns.adobe.com/xdm/data/viewablemidpoints
 ```
 
-The advertising/viewability metric viewable-midpoints describes whether at least 50% of the video's pixels were visible at the midpoint of play.
+The advertising/viewability metric `viewable-midpoints` describes whether at least 50% of the video's pixels were visible at the midpoint of play.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/viewablemidpoints.schema.json](data/viewablemidpoints.schema.json) |
 ## Schema Hierarchy
 
-* viewable-midpoints `https://ns.adobe.com/xdm/data/viewablemidpoints`
+* Viewable-midpoints `https://ns.adobe.com/xdm/data/viewablemidpoints`
   * [Metric Definition](metricdefinition.schema.md) `https://ns.adobe.com/xdm/data/metricdefinition`
 
 
-## viewable-midpoints Example
+## Viewable-midpoints Example
 ```json
 {
   "schema:name": "advertising/viewability metric: viewableMidpoints",
@@ -26,7 +26,7 @@ The advertising/viewability metric viewable-midpoints describes whether at least
 }
 ```
 
-# viewable-midpoints Properties
+# Viewable-midpoints Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|

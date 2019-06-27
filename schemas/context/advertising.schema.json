@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Advertising",
   "type": "object",
-  "description": "The information related to advertising activity related to the experience event",
+  "description": "The information related to advertising activity related to the experience event.",
   "meta:extensible": true,
   "definitions": {
     "advertising": {
@@ -59,7 +59,7 @@
         },
         "xdm:impressions": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Impression(s) of an advertisement to an end user with the potential of being viewed."
+          "description": "Impression(s) of an advertisement to an end-user with the potential of being viewed."
         },
         "xdm:midpoints": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",

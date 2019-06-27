@@ -27,7 +27,7 @@ A tuple in a set of language alternatives, i.e. pairs of localized text and thei
 | [xml:lang](#xmllang) | `string` | `https://ns.adobe.com/xdm/assets/language-alternative#/definitions/language-alternative` |
 
 ## xdm:text
-### The localized text
+### Localized Text
 
 `xdm:text`
 * is optional
@@ -45,7 +45,7 @@ A tuple in a set of language alternatives, i.e. pairs of localized text and thei
 
 
 ## xml:lang
-### The locale of the language alternative. Locales are expressed following [RFC BCP47](https://tools.ietf.org/html/bcp47)
+### The locale of the language alternative. Locales are expressed following [RFC BCP47](https://tools.ietf.org/html/bcp47).
 
 `xml:lang`
 * is optional

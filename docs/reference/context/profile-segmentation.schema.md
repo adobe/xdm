@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/profile-segmentation
 ```
 
-Profile Segmentation.
+Profile segmentation.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -13,7 +13,7 @@ Profile Segmentation.
 ## Schema Hierarchy
 
 * Profile Segmentation `https://ns.adobe.com/xdm/context/profile-segmentation`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
 ## Profile Segmentation Example

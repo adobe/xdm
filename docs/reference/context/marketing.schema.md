@@ -13,7 +13,7 @@ The information related to marketing activities that are active with the touchpo
 ## Schema Hierarchy
 
 * Marketing `https://ns.adobe.com/xdm/context/marketing`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
 ## Marketing Example

@@ -1,22 +1,22 @@
 
-# link-clicks Schema
+# Link-Clicks Schema
 
 ```
 https://ns.adobe.com/xdm/data/metrics/web/linkclicks
 ```
 
-The web metric link-clicks describes the number of clicks on a link on a web page.
+The web metric `link-clicks` describes the number of clicks on a link on a web page.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/linkclicks.schema.json](data/linkclicks.schema.json) |
 ## Schema Hierarchy
 
-* link-clicks `https://ns.adobe.com/xdm/data/metrics/web/linkclicks`
+* Link-Clicks `https://ns.adobe.com/xdm/data/metrics/web/linkclicks`
   * [Metric Definition](metricdefinition.schema.md) `https://ns.adobe.com/xdm/data/metricdefinition`
 
 
-## link-clicks Example
+## Link-Clicks Example
 ```json
 {
   "schema:name": "web metric: linkClicks",
@@ -26,7 +26,7 @@ The web metric link-clicks describes the number of clicks on a link on a web pag
 }
 ```
 
-# link-clicks Properties
+# Link-Clicks Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|

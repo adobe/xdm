@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/assets/image
 ```
 
-The Image class is for raster and vector image assets, including JPEG, PNG, SVG files
+The image class is for raster and vector image assets, including JPEG, PNG, SVG files.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -303,7 +303,7 @@ Vertical resolution in pixels per `resolutionUnit`.
 ## tiff:imageLength
 ### Length
 
-Height in pixels. To maintain continuity with the XMP and TIFF standards, the height of an image or video is specified in the property `imageLength`. The duration of the video (also commonly called length) is specified in the property `extent`
+Height in pixels. To maintain continuity with the XMP and TIFF standards, the height of an image or video is specified in the property `imageLength`. The duration of the video (also commonly called length) is specified in the property `extent`.
 
 `tiff:imageLength`
 * is optional
@@ -324,7 +324,7 @@ Height in pixels. To maintain continuity with the XMP and TIFF standards, the he
 ## tiff:imageWidth
 ### Width
 
-Width in pixels
+Width in pixels.
 
 `tiff:imageWidth`
 * is optional
@@ -353,7 +353,7 @@ The orientation of the image. Following values are permitted:
 - `5` = Mirror horizontal and rotate 270 degrees clockwise
 - `6` = Rotate 90 degrees clockwise
 - `7` = Mirror horizontal and rotate 90 degrees clockwise
-- `8` = Rotate 270 degrees clockwise
+- `8` = Rotate 270 degrees clockwise.
 
 `tiff:orientation`
 * is optional
@@ -435,7 +435,7 @@ Describes the proportional relationship between the width and the height. To det
 ## tiff:denominator
 ### Denominator
 
-The denominator of a fraction
+The denominator of a fraction.
 
 `tiff:denominator`
 * is optional
@@ -455,7 +455,7 @@ The denominator of a fraction
 ## tiff:numerator
 ### Numerator
 
-The numerator of a fraction
+The numerator of a fraction.
 
 `tiff:numerator`
 * is optional

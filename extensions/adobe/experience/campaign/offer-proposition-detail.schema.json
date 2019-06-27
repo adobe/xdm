@@ -11,7 +11,7 @@
   "type": "object",
   "meta:abstract": true,
   "meta:extensible": true,
-  "description": "An Offer Proposition Detail is used to capture the details about an Offer Proposition.",
+  "description": "An offer proposition detail is used to capture the details about an offer proposition.",
   "definitions": {
     "proposition-detail-datatype": {
       "properties": {

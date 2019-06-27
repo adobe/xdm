@@ -1,5 +1,5 @@
 
-# conversions Schema
+# Conversions Schema
 
 ```
 https://ns.adobe.com/xdm/data/conversions
@@ -12,11 +12,11 @@ The metric conversions measures a specific set of predefined actions taken by an
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/conversions.schema.json](data/conversions.schema.json) |
 ## Schema Hierarchy
 
-* conversions `https://ns.adobe.com/xdm/data/conversions`
+* Conversions `https://ns.adobe.com/xdm/data/conversions`
   * [Metric Definition](metricdefinition.schema.md) `https://ns.adobe.com/xdm/data/metricdefinition`
 
 
-## conversions Example
+## Conversions Example
 ```json
 {
   "schema:name": "metric: conversions",
@@ -26,7 +26,7 @@ The metric conversions measures a specific set of predefined actions taken by an
 }
 ```
 
-# conversions Properties
+# Conversions Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|

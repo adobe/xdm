@@ -15,7 +15,7 @@
             "properties": {
                 "tiff:imageWidth": {
                     "title": "Width",
-                    "description": "Width in pixels",
+                    "description": "Width in pixels.",
                     "type": "integer",
                     "meta:usereditable": false,
                     "minimum": 0,
@@ -23,7 +23,7 @@
                 },
                 "tiff:imageLength": {
                     "title": "Length",
-                    "description": "Height in pixels. To maintain continuity with the XMP and TIFF standards, the height of an image or video is specified in the property `imageLength`. The duration of the video (also commonly called length) is specified in the property `extent`",
+                    "description": "Height in pixels. To maintain continuity with the XMP and TIFF standards, the height of an image or video is specified in the property `imageLength`. The duration of the video (also commonly called length) is specified in the property `extent`.",
                     "type": "integer",
                     "meta:usereditable": false,
                     "minimum": 0,

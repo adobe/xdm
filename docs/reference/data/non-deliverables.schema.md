@@ -1,22 +1,22 @@
 
-# Non Deliverables Schema
+# Non-Deliverables Schema
 
 ```
 https://ns.adobe.com/xdm/data/metrics/direct-marketing/non-deliverables
 ```
 
-The direct-marketing metric non-deliverables describes the umber of asynchronous messages that failed to deliver in a way that indicates that no future messages will be deliverable either to this address.
+The direct-marketing metric `non-deliverables` describes the umber of asynchronous messages that failed to deliver in a way that indicates that no future messages will be deliverable either to this address.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/non-deliverables.schema.json](data/non-deliverables.schema.json) |
 ## Schema Hierarchy
 
-* Non Deliverables `https://ns.adobe.com/xdm/data/metrics/direct-marketing/non-deliverables`
+* Non-Deliverables `https://ns.adobe.com/xdm/data/metrics/direct-marketing/non-deliverables`
   * [Metric Definition](metricdefinition.schema.md) `https://ns.adobe.com/xdm/data/metricdefinition`
 
 
-## Non Deliverables Example
+## Non-Deliverables Example
 ```json
 {
   "schema:name": "direct-marketing metric: nonDeliverables",
@@ -26,7 +26,7 @@ The direct-marketing metric non-deliverables describes the umber of asynchronous
 }
 ```
 
-# Non Deliverables Properties
+# Non-Deliverables Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|

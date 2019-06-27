@@ -14,7 +14,7 @@ Information recorded via an `ExperienceEvent` that is specific to the World Wide
 ## Schema Hierarchy
 
 * Web Information `https://ns.adobe.com/xdm/context/webinfo`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Web Page Details](webpagedetails.schema.md) `https://ns.adobe.com/xdm/context/webpagedetails`
   * [Web Interaction](webinteraction.schema.md) `https://ns.adobe.com/xdm/context/webinteraction`
   * [Web Referrer](webreferrer.schema.md) `https://ns.adobe.com/xdm/context/webreferrer`

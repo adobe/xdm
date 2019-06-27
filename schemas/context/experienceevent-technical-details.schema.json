@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "Technical Details extension for ExperienceEvent.",
+  "description": "Technical details extension for ExperienceEvent.",
   "definitions": {
     "experienceevent-technical-details": {
       "properties": {

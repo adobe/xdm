@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Adobe Campaign ExperienceEvent Template Mixin",
   "type": "object",
-  "description": "Campaign ExperienceEvent Mixin for use with Schemas for Solution data ingestion. Includes the core/standard ExperienceEvent as well as the required Adobe Campaign ExperienceEvent Mixins.",
+  "description": "Campaign ExperienceEvent mixin for use with schemas for Solution data ingestion. Includes the core/standard ExperienceEvent as well as the required Adobe Campaign ExperienceEvent mixins.",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": [

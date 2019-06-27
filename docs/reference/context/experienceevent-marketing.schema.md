@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/experienceevent-marketing
 ```
 
-ExperienceEvent Details for Marketing.
+ExperienceEvent details for marketing.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -13,7 +13,7 @@ ExperienceEvent Details for Marketing.
 ## Schema Hierarchy
 
 * ExperienceEvent Details for Marketing `https://ns.adobe.com/xdm/context/experienceevent-marketing`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Marketing](marketing.schema.md) `https://ns.adobe.com/xdm/context/marketing`
 
 

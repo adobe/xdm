@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "ExperienceEvent Details for Marketing.",
+  "description": "ExperienceEvent details for marketing.",
   "definitions": {
     "experienceevent-marketing": {
       "properties": {

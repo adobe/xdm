@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/profile-owning-entities
 ```
 
-Indicates the owning Organizational and Geographical entities of this profile.
+Indicates the owning organizational and geographical entities of this profile.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -13,7 +13,7 @@ Indicates the owning Organizational and Geographical entities of this profile.
 ## Schema Hierarchy
 
 * Profile Owning Entity Details `https://ns.adobe.com/xdm/context/profile-owning-entities`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Organizational Unit](../common/orgunit.schema.md) `https://ns.adobe.com/xdm/common/orgunit`
   * [Geographical Unit](../common/geounit.schema.md) `https://ns.adobe.com/xdm/common/geounit`
 

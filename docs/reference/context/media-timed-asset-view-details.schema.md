@@ -13,7 +13,7 @@ View details for the main content playback, present on all ads and chapters that
 ## Schema Hierarchy
 
 * Primary Asset View Details `https://ns.adobe.com/xdm/context/media-timed-asset-view-details`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Implementation Details](implementationdetails.schema.md) `https://ns.adobe.com/xdm/context/implementationdetails`
   * [Timed Media Quality of Experience](media-timed-qoe.schema.md) `https://ns.adobe.com/xdm/context/media-timed-qoe`
 
@@ -138,7 +138,7 @@ The type of the stream delivery.
 | `Linear` | Linear playback of the media asset |
 | `UGC` | User-generated Content |
 | `Radio` | Radio Show |
-| `Podcast` | Audio Postcast |
+| `Podcast` | Audio Podcast |
 | `Audiobook` | Audiobook |
 
 

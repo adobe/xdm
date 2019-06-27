@@ -1,5 +1,5 @@
 
-# first-quartiles Schema
+# First-Quartiles Schema
 
 ```
 https://ns.adobe.com/xdm/data/firstquartiles
@@ -12,11 +12,11 @@ The metric first-quartiles describes a digital video which played for at least 2
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/firstquartiles.schema.json](data/firstquartiles.schema.json) |
 ## Schema Hierarchy
 
-* first-quartiles `https://ns.adobe.com/xdm/data/firstquartiles`
+* First-Quartiles `https://ns.adobe.com/xdm/data/firstquartiles`
   * [Metric Definition](metricdefinition.schema.md) `https://ns.adobe.com/xdm/data/metricdefinition`
 
 
-## first-quartiles Example
+## First-Quartiles Example
 ```json
 {
   "schema:name": "metric: firstQuartiles",
@@ -26,7 +26,7 @@ The metric first-quartiles describes a digital video which played for at least 2
 }
 ```
 
-# first-quartiles Properties
+# First-Quartiles Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|

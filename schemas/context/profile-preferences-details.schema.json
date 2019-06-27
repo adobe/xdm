@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
-  "description": "Preferences for end user profiles.",
+  "description": "Preferences for end-user profiles.",
   "definitions": {
     "profile-preferences-details": {
       "properties": {
@@ -28,13 +28,13 @@
         "xdm:profilePictureLink": {
           "title": "Profile Picture Link",
           "type": "string",
-          "description": "Link to profile's picture"
+          "description": "Link to profile's picture."
         },
         "xdm:emailFormat": {
           "title": "Email Format",
           "type": "string",
           "description":
-            "Email format preferred by the profile. This can be rich text/plain text",
+            "Email format preferred by the profile. This can be rich text/plain text.",
           "meta:enum": {
             "html": "Rich text",
             "plaintext": "Plain text"

@@ -33,13 +33,13 @@
         },
         "xdm:POIinteraction": {
           "title": "POI Interaction",
-          "description": "The Point of Interest(POI) interaction details.",
+          "description": "The point of interest (POI) interaction details.",
           "meta:status": "experimental",
           "$ref": "https://ns.adobe.com/xdm/context/poi-interaction"
         },
         "xdm:activePOIs" : {
           "title": "POI Detail",
-          "description": "Details of the POIs that cause the event.",
+          "description": "Details of the points of interest (POIs) that cause the event.",
           "meta:status": "experimental",
           "type": "array",
           "items": {

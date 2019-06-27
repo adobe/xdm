@@ -14,7 +14,7 @@
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/experienceevent"
     ],
-    "description": "ExperienceEvent Commerce Details.",
+    "description": "ExperienceEvent commerce details.",
     "definitions": {
         "experienceevent-commerce": {
             "properties": {

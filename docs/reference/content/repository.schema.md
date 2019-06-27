@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/content/repository
 ```
 
-A Content Repository that is compliant with the Adobe Cloud Platform API specification.
+A content repository that is compliant with the Adobe Experience Platform API specification.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|

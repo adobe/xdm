@@ -13,7 +13,7 @@ E-Mail messages, delivered via SMTP to list subscribers channel.
 ## Schema Hierarchy
 
 * E-Mail Channel `https://ns.adobe.com/xdm/channels/email`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
 

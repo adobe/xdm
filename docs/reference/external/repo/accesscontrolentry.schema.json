@@ -8,12 +8,12 @@
     "$id": "https://ns.adobe.com/xdm/external/repo/accesscontrolentry",
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "Access Control Entry",
-    "description": "Schema for the Access Control Entry for the Access Control List of a resource",
+    "description": "Schema for the access control entry for the access control List of a resource.",
     "type": "object",
     "definitions": {
         "acl": {
             "title": "Access Control List",
-            "description": "Schema for the Access Control List of a resource",
+            "description": "Schema for the access control List of a resource.",
             "type": "array",
             "items": {
                 "$ref": "https://ns.adobe.com/xdm/external/repo/accesscontrolentry"
@@ -30,22 +30,22 @@
                         {
                             "description": "A special principal to which the entry applies. 'Authenticated' refers to any authenticated user, 'Unauthenticated' refers to an unknown user, 'all' refers to any user regardless of authenticated or not.",
                             "meta:enum": {
-                                "authenticated": "A special Principal which is implicitly part of any Subject relating to an authenticated (identified) user.",
-                                "unauthenticated": "A special Principal representing an unknown user. If a session is established without credentials, such as an HTTP request without the Authentication header, a Subject is used consisting of the Unauthenticated Principal.",
-                                "all": "A special Principal representing all users."
+                                "authenticated": "A special principal which is implicitly part of any Subject relating to an authenticated (identified) user.",
+                                "unauthenticated": "A special principal representing an unknown user. If a session is established without credentials, such as an HTTP request without the Authentication header, a Subject is used consisting of the unauthenticated principal.",
+                                "all": "A special principal representing all users."
                             }
                         }
                     ]
                 },
                 "repo:privileges": {
-                    "description": "Privileges granted or denied to the Principal",
+                    "description": "Privileges granted or denied to the principal.",
                     "type": "array",
                     "items": {
                         "$ref": "#/definitions/privilege"
                     }
                 },
                 "repo:relations": {
-                    "description": "List of relation link types to which this privilege applies",
+                    "description": "List of relation link types to which this privilege applies.",
                     "type": "array",
                     "items": {
                         "type": "string"
@@ -55,8 +55,8 @@
                     "description": "Optional modified to the privilege: either grant or deny to grant or deny, resp., the privilege. The default modifier is grant if this property is missing or has an invalid value.",
                     "type": "string",
                     "meta:enum": {
-                        "grant": "Permission is granted to the Principal.",
-                        "deny": "Permission is denied to the Principal."
+                        "grant": "Permission is granted to the principal.",
+                        "deny": "Permission is denied to the principal."
                     },
                     "default": "grant"
                 },
@@ -103,6 +103,13 @@
     "meta:status": "experimental",
     "examples": [
         {
+            "repo:principal": "authenticated",
+            "repo:privileges": [
+                "read"
+            ],
+            "repo:modifier": "grant"
+        },
+        {
             "repo:principal": {
                 "xdm:provider": {
                     "@id": "https://ims-na1.adobelogin.com/"
@@ -116,13 +123,6 @@
             ],
             "repo:modifier": "grant",
             "repo:inheritance": "deep"
-        },
-        {
-            "repo:principal": "authenticated",
-            "repo:privileges": [
-                "read"
-            ],
-            "repo:modifier": "grant"
         }
     ]
 }

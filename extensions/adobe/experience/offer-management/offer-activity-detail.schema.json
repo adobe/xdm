@@ -14,7 +14,7 @@
   "meta:extends": [
     "https://ns.adobe.com/experience/decisioning/activity-detail"
   ],
-  "description": "Offer Actity Detail is used to capture the attributes of an Offer Activity in a Proposition or Response.",
+  "description": "Offer activity detail is used to capture the attributes of an offer activity in a proposition or response.",
   "definitions": {
     "offer-activity-detail": {
       "properties": {

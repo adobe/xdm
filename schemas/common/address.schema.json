@@ -23,7 +23,7 @@
           "title": "Primary",
           "type": "boolean",
           "description":
-            "Primary address indicator. A Profile can have only one `primary` address at a given point of time.\n"
+            "Primary address indicator. A profile can have only one `primary` address at a given point of time.\n"
         },
         "xdm:label": {
           "title": "Label",

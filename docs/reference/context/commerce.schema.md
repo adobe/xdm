@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/commerce
 ```
 
-The entites related to buying and selling activity.
+The entities related to buying and selling activity.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -13,7 +13,7 @@ The entites related to buying and selling activity.
 ## Schema Hierarchy
 
 * Commerce `https://ns.adobe.com/xdm/context/commerce`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Order](../data/order.schema.md) `https://ns.adobe.com/xdm/data/order`
   * [Measure](../data/measure.schema.md) `https://ns.adobe.com/xdm/data/measure`
 

@@ -14,7 +14,7 @@
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/experienceevent"
     ],
-    "description": "ExperienceEvent Channel Details.",
+    "description": "ExperienceEvent channel details.",
     "definitions": {
         "experienceevent-channel": {
             "properties": {

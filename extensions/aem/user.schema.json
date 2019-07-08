@@ -9,7 +9,7 @@
   "$id": "https://ns.adobe.com/experience/aem/user",
   "title": "AEM User",
   "description":
-    "This model represents an [AEM User](https://jackrabbit.apache.org/api/2.8/org/apache/jackrabbit/api/security/user/User.html). The associated principal with this AEM User is the principal returned by [`User.getPrincipal()`](https://jackrabbit.apache.org/api/2.8/org/apache/jackrabbit/api/security/user/Authorizable.html#getPrincipal()).",
+    "This model represents an [AEM User](https://jackrabbit.apache.org/api/2.8/org/apache/jackrabbit/api/security/user/User.html). The associated principal with this AEM user is the principal returned by [`User.getPrincipal()`](https://jackrabbit.apache.org/api/2.8/org/apache/jackrabbit/api/security/user/Authorizable.html#getPrincipal()).",
   "definitions": {
     "user": {
       "type": "object",

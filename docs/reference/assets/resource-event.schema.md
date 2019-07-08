@@ -118,7 +118,7 @@ A semicolon-delimited list of the parts of the resource that were changed since 
 ## stEvt:instanceID
 ### Instance ID
 
-The value of the `instanceID` property for the modified (output) resource. The value is a GUID, capital A-F, 8-4-4-12
+The value of the `instanceID` property for the modified (output) resource. The value is a GUID, capital A-F, and 8-4-4-12.
 
 `stEvt:instanceID`
 * is optional

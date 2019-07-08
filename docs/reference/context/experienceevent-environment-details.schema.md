@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/experienceevent-environment-details
 ```
 
-ExperienceEvent Environment Details.
+ExperienceEvent environment details.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -13,7 +13,7 @@ ExperienceEvent Environment Details.
 ## Schema Hierarchy
 
 * ExperienceEvent Environment Details `https://ns.adobe.com/xdm/context/experienceevent-environment-details`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Environment](environment.schema.md) `https://ns.adobe.com/xdm/context/environment`
   * [Device](device.schema.md) `https://ns.adobe.com/xdm/context/device`
   * [Place Context](placecontext.schema.md) `https://ns.adobe.com/xdm/context/placecontext`
@@ -39,6 +39,18 @@ ExperienceEvent Environment Details.
     "xdm:operatingSystem": "MAC OS",
     "xdm:operatingSystemVersion": "10.13",
     "xdm:connectionType": "cable"
+  },
+  "xdm:device": {
+    "xdm:typeID": "TypeIdentifier-111",
+    "xdm:typeIDService": "https://ns.adobe.com/xdm/external/deviceatlas",
+    "xdm:type": "mobile",
+    "xdm:manufacturer": "Apple",
+    "xdm:model": "iPhone 6",
+    "xdm:modelNumber": "A1586",
+    "xdm:screenHeight": 667,
+    "xdm:screenWidth": 375,
+    "xdm:colorDepth": 16777216,
+    "xdm:screenOrientation": "portrait"
   },
   "xdm:placeContext": {
     "xdm:localTime": "2017-09-26T15:52:25+13:00",

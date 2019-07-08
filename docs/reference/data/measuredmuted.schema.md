@@ -1,22 +1,22 @@
 
-# measured-muted Schema
+# Measured-muted Schema
 
 ```
 https://ns.adobe.com/xdm/data/measuredmuted
 ```
 
-The advertising/viewability metric measured-muted describes whether the ad was measured to be muted at event time.
+The advertising/viewability metric `measured-muted` describes whether the ad was measured to be muted at event time.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/measuredmuted.schema.json](data/measuredmuted.schema.json) |
 ## Schema Hierarchy
 
-* measured-muted `https://ns.adobe.com/xdm/data/measuredmuted`
+* Measured-muted `https://ns.adobe.com/xdm/data/measuredmuted`
   * [Metric Definition](metricdefinition.schema.md) `https://ns.adobe.com/xdm/data/metricdefinition`
 
 
-## measured-muted Example
+## Measured-muted Example
 ```json
 {
   "schema:name": "advertising/viewability metric: measuredMuted",
@@ -26,7 +26,7 @@ The advertising/viewability metric measured-muted describes whether the ad was m
 }
 ```
 
-# measured-muted Properties
+# Measured-muted Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|

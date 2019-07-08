@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/identityitem
 ```
 
-An end-user identity item, to be included in an instance of `context/identitymap`
+An end-user identity item, to be included in an instance of `context/identitymap`.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -13,7 +13,7 @@ An end-user identity item, to be included in an instance of `context/identitymap
 ## Schema Hierarchy
 
 * Identity Item `https://ns.adobe.com/xdm/context/identityitem`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
 ## Identity Item Example
@@ -49,7 +49,7 @@ The value of this property **must** be equal to one of the [known values below](
 | Value | Description |
 |-------|-------------|
 | `ambiguous` | Ambiguous |
-| `authenticated` | User identified by a login or simular action that was valid at the time of the event observation. |
+| `authenticated` | User identified by a login or similar action that was valid at the time of the event observation. |
 | `loggedOut` | User was identified by a login action at some point of time previously, but is not currently logged in. |
 
 

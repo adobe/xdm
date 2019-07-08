@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/channels/twitter-feed
 ```
 
-The Twitter Feed, i.e. the stream of user-generated tweets. This does not include Twitter direct messages.
+The Twitter feed, i.e. the stream of user-generated tweets. This does not include Twitter direct messages.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -13,7 +13,7 @@ The Twitter Feed, i.e. the stream of user-generated tweets. This does not includ
 ## Schema Hierarchy
 
 * Twitter Feed Channel `https://ns.adobe.com/xdm/channels/twitter-feed`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
 

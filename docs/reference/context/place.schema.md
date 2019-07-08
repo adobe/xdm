@@ -13,7 +13,7 @@ A place in the real world with a physical location.
 ## Schema Hierarchy
 
 * Place `https://ns.adobe.com/xdm/context/place`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Address](../common/address.schema.md) `https://ns.adobe.com/xdm/common/address`
   * [Geo Shape](../external/schema/geoshape.schema.md) `http://schema.org/GeoShape`
   * [Geo Coordinates](../external/schema/geocoordinates.schema.md) `http://schema.org/GeoCoordinates`

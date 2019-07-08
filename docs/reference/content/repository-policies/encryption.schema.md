@@ -29,7 +29,7 @@ Encryption policy represents how content in a given part of the repository is en
 
 ## xdm:keyStatus
 
-The status of the encryption key - 'enabled': the key is enabled and content is accessible to authorized users; 'disabled': the key is disabled and content is not accessible
+The status of the encryption key - 'enabled': the key is enabled and content is accessible to authorized users; 'disabled': the key is disabled and content is not accessible.
 
 `xdm:keyStatus`
 * is optional
@@ -49,7 +49,7 @@ The value of this property **must** be equal to one of the [known values below](
 
 ## xdm:keyType
 
-The type of encryption key - 'platform': a key used across all tenants of the platform; 'org': a key managed exclusviely for the org to which the storage belongs
+The type of encryption key - 'platform': a key used across all tenants of the platform; 'org': a key managed exclusively for the org to which the storage belongs.
 
 `xdm:keyType`
 * is optional

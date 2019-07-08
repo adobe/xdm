@@ -13,7 +13,7 @@ Push addressing details are used to communicate with applications that are insta
 ## Schema Hierarchy
 
 * Profile Push Details `https://ns.adobe.com/xdm/context/profile-push-details`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
 ## Profile Push Details Example

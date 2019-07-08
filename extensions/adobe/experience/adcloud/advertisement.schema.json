@@ -7,21 +7,21 @@
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/experience/adcloud/advertisement",
-  "title": "Advertisement Details",
+  "title": "Adobe Advertising Cloud Ad Details",
   "type": "object",
-  "description": "Adobe AdCloud Ad Details",
+  "description": "Adobe Advertising Cloud Ad Details.",
   "definitions": {
     "advertisement": {
       "properties": {
         "xdm:adId": {
-          "title": "Ad ID",
+          "title": "Ad Identifier",
           "type": "string",
-          "description": "Unique identifier for the ad this event is associated with. Not to be confused with Ad-ID standard."
+          "description": "Identifier for the ad this event is associated with. Not related to the Ad-ID standard."
         },
         "xdm:runtime": {
           "title": "Runtime Type",
           "type": "string",
-          "description": "The runtime of the ad unit itself, not the runtime of the browser or the operating system.",
+          "description": "Runtime of the ad unit itself. Not the runtime of the browser or the operating system.",
           "meta:enum": {
             "unknown": "Unknown",
             "HTML5": "HTML5"
@@ -40,7 +40,7 @@
         "xdm:adUnitType": {
           "title": "Ad Unit Type",
           "type": "string",
-          "description": "Unique identifier for the literal piece of code driving display of the ad in a browser/device.",
+          "description": "Identifier for the literal piece of code driving display of the ad in a browser/device.",
           "meta:enum": {
             "linearVideo": "Linear video",
             "interactiveVideo": "Interactive video",
@@ -58,9 +58,53 @@
           }
         },
         "xdm:promotedAssetId": {
-          "title": "Promoted Asset ID",
+          "title": "Promoted Asset Identifier",
           "type": "string",
-          "description": "Unique identifier for the underlying asset being promoted in the ad which this event is associated with."
+          "description": "Identifier for the underlying asset being promoted in the ad which this event is associated with."
+        },
+        "xdm:creativeID": {
+          "title": "Creative Identifier",
+          "type": "string",
+          "description": "Identifier for the creative which this event is associated with."
+        },
+        "xdm:keywordID": {
+          "title": "Keyword Identifier",
+          "type": "string",
+          "description": "Identifier for the keyword that the surfer used to search, which triggered this click event."
+        },
+        "xdm:audienceID": {
+          "title": "Audience Identifier",
+          "type": "string",
+          "description": "Identifier for the audience segment for which the ad is targeted."
+        },
+        "xdm:adGroupID": {
+          "title": "Ad Group Identifier",
+          "type": "string",
+          "description": "Identifier for the adGroup which ad is displayed and triggered this click event."
+        },
+        "xdm:campaignID": {
+          "title": "Campaign Identifier",
+          "type": "string",
+          "description": "Identifier for the campaign that belongs to the current displayed advertisement which triggers this click event."
+        },
+        "xdm:networkType": {
+          "title": "Network Type",
+          "type": "string",
+          "description": "Network type the click event came from a search advertisement or content advertisement.",
+          "meta:enum": {
+            "search": "Advertisement is displayed in Search Network",
+            "content": "Advertisement is displayed in Content Network"
+          }
+        },
+        "xdm:matchType": {
+          "title": "matchType",
+          "type": "string",
+          "description": "Match type used to match keyword.",
+          "meta:enum": {
+            "exact": "Exact Match of the keyword",
+            "broad": "Broad Match of the keyword",
+            "phrase": "Phrase Match of the keyword"
+          }
         }
       }
     }

@@ -9,7 +9,7 @@
   "$id": "http://ns.adobe.com/adobecloud/core/1.0/directory",
   "type": "object",
   "title": "Directory",
-  "description": "A directory in Adobe Cloud Platform.",
+  "description": "A directory in Adobe Experience Platform.",
   "meta:extends": [
     "http://ns.adobe.com/adobecloud/core/1.0#/definitions/common-properties",
     "http://ns.adobe.com/adobecloud/core/1.0#/definitions/date-properties",

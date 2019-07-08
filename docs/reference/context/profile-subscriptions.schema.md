@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/profile-subscriptions
 ```
 
-profile subscriptions for commercial or licensed services and entitlements.
+Profile subscriptions for commercial or licensed services, and entitlements.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -13,7 +13,7 @@ profile subscriptions for commercial or licensed services and entitlements.
 ## Schema Hierarchy
 
 * Profile Subscriptions `https://ns.adobe.com/xdm/context/profile-subscriptions`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
 ## Profile Subscriptions Example
@@ -70,7 +70,7 @@ profile subscriptions for commercial or licensed services and entitlements.
 ## xdm:subscriptions
 ### Subscriptions
 
-Subscriptions that this profile is entitled to including terminated, expired or exhausted subscriptions.
+Subscriptions that this profile is entitled to including terminated, expired, or exhausted subscriptions.
 
 `xdm:subscriptions`
 * is optional

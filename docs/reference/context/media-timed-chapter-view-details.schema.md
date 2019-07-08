@@ -13,7 +13,7 @@ View details for the chapter playback captured by the experience event.
 ## Schema Hierarchy
 
 * Timed Media Chapter View Details `https://ns.adobe.com/xdm/context/media-timed-chapter-view-details`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
 ## Timed Media Chapter View Details Example

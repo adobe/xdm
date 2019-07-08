@@ -44,6 +44,7 @@ Describes how XDM properties are to be handled for search, including the applica
 {
   "@id": "https://ns.adobe.com/xdm/common/descriptors/searchdescriptor",
   "@type": "xdm:searchdescriptor",
+  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile",
   "search:indexed": true,
   "search:filterable": true,
   "search:store": "storedAndFetchByDefault",
@@ -76,7 +77,7 @@ Describes how XDM properties are to be handled for search, including the applica
 ## @id
 ### Identifier
 
-The unique identifier for the schema descriptor. This property is required when the descriptor is defined outside of the applicable schema, but is optional when applied via 'meta:descriptors'
+The unique identifier for the schema descriptor. This property is required when the descriptor is defined outside of the applicable schema, but is optional when applied via 'meta:descriptors'.
 
 `@id`
 * is optional
@@ -97,7 +98,7 @@ The unique identifier for the schema descriptor. This property is required when 
 ## @type
 ### Type
 
-The type of descriptor this object represents
+The type of descriptor this object represents.
 
 `@type`
 * is optional
@@ -165,7 +166,7 @@ All items must be of the type:
 ## search:defaultAnalyzer
 ### Default analyzer
 
-Default analyzer to be applied when search queries are made against this property
+Default analyzer to be applied when search queries are made against this property.
 
 `search:defaultAnalyzer`
 * is optional
@@ -299,7 +300,7 @@ Whether the property value is stored in, and therefore can be retrieved from, th
 ## xdm:sourceItem
 ### Source Item
 
-When present, the selector used to match a specific item in the array pointed to by `sourceProperty`
+When present, the selector used to match a specific item in the array pointed to by `sourceProperty`.
 
 `xdm:sourceItem`
 * is optional

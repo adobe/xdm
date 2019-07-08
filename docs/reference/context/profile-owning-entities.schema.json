@@ -14,7 +14,7 @@
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/profile"
     ],
-    "description": "Indicates the owning Organizational and Geographical entities of this profile.",
+    "description": "Indicates the owning organizational and geographical entities of this profile.",
     "definitions": {
         "profile-owning-entities": {
             "properties": {

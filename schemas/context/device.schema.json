@@ -69,7 +69,7 @@
           "title": "Screen Height",
           "type": "integer",
           "description":
-            "The number of veritcal pixels of the device's active display in its default orientation."
+            "The number of vertical pixels of the device's active display in its default orientation."
         },
         "xdm:screenWidth": {
           "title": "Screen Width",
@@ -82,6 +82,20 @@
           "type": "integer",
           "description":
             "The number of colors the display is able to represent."
+        },
+        "xdm:screenOrientation": {
+          "title": "Screen Orientation",
+          "type": "string",
+          "description":
+            "The current screen orientation (\"portrait\" or \"landscape\")",
+          "enum": [
+            "portrait",
+            "landscape"
+          ],
+          "meta:enum": {
+            "portrait": "Portrait",
+            "landscape": "Landscape"
+          }
         }
       }
     }

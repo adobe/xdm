@@ -112,7 +112,7 @@
       ]
     },
     "type": {
-      "type": "string",
+      "type": ["string", "array"],
       "const": "object"
     },
     "title": {

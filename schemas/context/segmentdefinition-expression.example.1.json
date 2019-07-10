@@ -1,0 +1,6 @@
+{
+    "xdm:type":"PQL",
+    "xdm:format":"pql/text",
+    "xdm:value":"personalEmail.address.endsWith(\"testxdmmail.com\", false)",
+    "xdm:meta":""
+}

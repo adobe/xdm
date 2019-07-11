@@ -5,39 +5,43 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/context/segment-expression",
+  "$id": "https://ns.adobe.com/xdm/context/segmentdefinition-expression",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Segment Expression",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "description": "Segment expression",
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/segmentdefinition"],
+  "description": "Expression defining segment rule",
   "definitions": {
-    "segment-expression": {
+    "segmentdefinition-expression": {
       "properties": {
-        "xdm:type": {
-          "title": "Type",
-          "type": "string",
-          "description": "Type of expression. For example PQL",
-          "enum" : [
-            "PQL",
-            "AAM"
-          ]
-        },
-        "xdm:format": {
-          "title": "Format",
-          "type": "string",
-          "description": "Format of expression. For example pql/text"
-        },
-        "xdm:value": {
-          "title": "Value",
-          "type": "string",
-          "description": "Actual expression string"
-        },
-        "xdm:meta": {
-          "title": "Meta",
-          "type": "string",
-          "description": "Any other meta data"
+        "xdm:segmentExpression": {
+          "title": "Segment Expression",
+          "type": "object",
+          "properties": {
+            "xdm:expressionType": {
+              "title": "Type",
+              "type": "string",
+              "description": "Type of expression. For example PQL, QUERYSERVICE, AAM",
+              "meta:enum" : [
+                "PQL",
+                "AAM",
+                "QUERYSERVICE"
+              ]
+            },
+            "xdm:mimeType": {
+              "title": "Expression Mime Type",
+              "type": "string",
+              "description": "Mime Type of expression. For example pql/text, application/sql",
+              "pattern": "\\w+/[-.\\w]+(?:\\+[-.\\w]+)?"
+            },
+            "xdm:value": {
+              "title": "Value",
+              "type": "string",
+              "description": "Actual expression string. The syntax of expression will depend upon specified mime type."
+            }
+          }
         }
       }
     }
@@ -47,7 +51,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "#/definitions/segment-expression"
+      "$ref": "#/definitions/segmentdefinition-expression"
     }
   ],
   "meta:status": "experimental"

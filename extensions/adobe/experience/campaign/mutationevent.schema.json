@@ -13,6 +13,11 @@
   "definitions": {
     "mutationevent": {
       "properties": {
+        "xdm:id": {
+          "title": "Message Identifier",
+          "type": "number",
+          "description": "Identifier of the message."
+        },
         "xdm:timestamp": {
           "title": "Timestamp",
           "type": "string",

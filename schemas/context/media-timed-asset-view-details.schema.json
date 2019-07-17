@@ -77,9 +77,7 @@
         }
       },
       "required": [
-        "@id",
-        "xdm:playerName",
-        "xdm:broadcastChannel"
+        "xdm:playerName"
       ]
     }
   },

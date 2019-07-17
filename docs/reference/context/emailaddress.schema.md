@@ -13,7 +13,7 @@ A standard email address.
 ## Schema Hierarchy
 
 * Email Address `https://ns.adobe.com/xdm/context/emailaddress`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
 ## Email Address Example
@@ -29,14 +29,14 @@ A standard email address.
 
 # Email Address Properties
 
-| Property | Type | Required | Defined by |
-|----------|------|----------|------------|
-| [xdm:address](#xdmaddress) | `string` | Optional | Email Address (this schema) |
-| [xdm:label](#xdmlabel) | `string` | Optional | Email Address (this schema) |
-| [xdm:primary](#xdmprimary) | `boolean` | Optional | Email Address (this schema) |
-| [xdm:status](#xdmstatus) | `string` | Optional | Email Address (this schema) |
-| [xdm:statusReason](#xdmstatusreason) | `string` | Optional | Email Address (this schema) |
-| [xdm:type](#xdmtype) | `string` | Optional | Email Address (this schema) |
+| Property | Type | Required | Default | Defined by |
+|----------|------|----------|---------|------------|
+| [xdm:address](#xdmaddress) | `string` | Optional |  | Email Address (this schema) |
+| [xdm:label](#xdmlabel) | `string` | Optional |  | Email Address (this schema) |
+| [xdm:primary](#xdmprimary) | `boolean` | Optional |  | Email Address (this schema) |
+| [xdm:status](#xdmstatus) | `string` | Optional | `"active"` | Email Address (this schema) |
+| [xdm:statusReason](#xdmstatusreason) | `string` | Optional |  | Email Address (this schema) |
+| [xdm:type](#xdmtype) | `string` | Optional |  | Email Address (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:address
@@ -110,6 +110,7 @@ An indication as to the ability to use the email address.
 `xdm:status`
 * is optional
 * type: `string`
+* default: `"active"`
 * defined in this schema
 
 ### xdm:status Type

@@ -16,7 +16,7 @@
         "person": {
             "properties": {
                 "xdm:name": {
-                    "title": "Full name",
+                    "title": "Full Name",
                     "$ref": "https://ns.adobe.com/xdm/context/person-name",
                     "description": "The person's full name"
                 },
@@ -33,7 +33,7 @@
                     "description": "The day and month a person was born, in the format MM-DD. This field should be used when the day and month of a person's birth is known, but not the year."
                 },
                 "xdm:birthYear": {
-                    "title": "Birth year",
+                    "title": "Birth Year",
                     "type": "integer",
                     "description": "The year a person was born including the century (yyyy, e.g 1983).  This field should be used when only the person's age is known, not the full birth date.",
                     "minimum": 1,
@@ -66,9 +66,6 @@
         },
         {
             "$ref": "#/definitions/person"
-        },
-        {
-            "$ref": "https://ns.adobe.com/xdm/common/auditable"
         }
     ],
     "meta:status": "experimental"

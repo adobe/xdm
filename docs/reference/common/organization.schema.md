@@ -62,7 +62,7 @@ Information that uniquely identifies an organized entity such as company, non-pr
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Organization (this schema) |
+| [@id](#id) | `string` | Optional | Organization (this schema) |
 | [schema:description](#schemadescription) | `string` | Optional | Organization (this schema) |
 | [schema:numberOfEmployees](#schemanumberofemployees) | `number` | Optional | Organization (this schema) |
 | [xdm:classifier](#xdmclassifier) | `object` | Optional | Organization (this schema) |
@@ -139,7 +139,7 @@ The number of employees the organization has.
 ## xdm:classifier
 ### Market/Industry Classifier
 
-This object contains unambiguous classifiers for the organization. Each key is the URI of an classification service or standard, each value is the unique ID (or preferrably URI) of the organization as defined by the classification service.
+This object contains unambiguous classifiers for the organization. Each key is the URI of an classification service or standard, each value is the unique ID (or preferably URI) of the organization as defined by the classification service.
 
 `xdm:classifier`
 * is optional
@@ -152,7 +152,7 @@ This object contains unambiguous classifiers for the organization. Each key is t
 `object` with following properties:
 
 
-| Property | Type | Required
+| Property | Type | Required |
 |----------|------|----------|
 
 
@@ -171,7 +171,7 @@ This object contains unambiguous classifiers for the organization. Each key is t
 ## xdm:identifier
 ### Organization Identifier
 
-This object contains unambiguous identifiers for the organization. Each key is the URI of an identification service, each value is the unique ID (or preferrably URI) of the organization as defined by the identification service.
+This object contains unambiguous identifiers for the organization. Each key is the URI of an identification service, each value is the unique ID (or preferably URI) of the organization as defined by the identification service.
 
 `xdm:identifier`
 * is optional
@@ -184,7 +184,7 @@ This object contains unambiguous identifiers for the organization. Each key is t
 `object` with following properties:
 
 
-| Property | Type | Required
+| Property | Type | Required |
 |----------|------|----------|
 
 
@@ -282,7 +282,7 @@ The named market segment that the organization participates in. This is a free-f
 ## xdm:rating
 ### Rating
 
-The calculated score or star rating for this organization. `1` indicates the maximum possible rating, `0` the minumum possible rating.
+The calculated score or star rating for this organization. `1` indicates the maximum possible rating, `0` the minimum possible rating.
 
 `xdm:rating`
 * is optional

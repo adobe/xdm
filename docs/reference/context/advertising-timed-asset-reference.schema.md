@@ -13,7 +13,7 @@ Asset information about the ad captured by the experience event.
 ## Schema Hierarchy
 
 * Ad Asset Reference `https://ns.adobe.com/xdm/context/advertising-timed-asset-reference`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
 ## Ad Asset Reference Example
@@ -29,7 +29,7 @@ Asset information about the ad captured by the experience event.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Ad Asset Reference (this schema) |
+| [@id](#id) | `string` | Optional | Ad Asset Reference (this schema) |
 | [dc:title](#dctitle) | `string` | Optional | Ad Asset Reference (this schema) |
 | [xmpDM:duration](#xmpdmduration) | `integer` | Optional | Ad Asset Reference (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -37,7 +37,7 @@ Asset information about the ad captured by the experience event.
 ## @id
 ### Ad ID
 
-Identifier of the ad asset provided by Media Analytics customers.
+Identifier of the ad asset provided by media analytics customers.
 
 `@id`
 * is optional

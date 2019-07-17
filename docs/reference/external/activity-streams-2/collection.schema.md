@@ -84,7 +84,7 @@ Identifies a resource attached or related to an object that potentially requires
 `activitystreams:attachment`
 * is optional
 * type: complex
-* defined in [Object](object.schema.md#activitystreams:attachment)
+* defined in [Object](object.schema.md#activitystreamsattachment)
 
 ### activitystreams:attachment Type
 
@@ -168,7 +168,7 @@ Identifies one or more entities to which this object is attributed. The attribut
 `activitystreams:attributedTo`
 * is optional
 * type: complex
-* defined in [Object](object.schema.md#activitystreams:attributedTo)
+* defined in [Object](object.schema.md#activitystreamsattributedto)
 
 ### activitystreams:attributedTo Type
 
@@ -252,7 +252,7 @@ Identifies one or more entities that represent the total population of entities 
 `activitystreams:audience`
 * is optional
 * type: complex
-* defined in [Object](object.schema.md#activitystreams:audience)
+* defined in [Object](object.schema.md#activitystreamsaudience)
 
 ### activitystreams:audience Type
 
@@ -336,7 +336,7 @@ Identifies one or more Objects that are part of the private secondary audience o
 `activitystreams:bcc`
 * is optional
 * type: complex
-* defined in [Object](object.schema.md#activitystreams:bcc)
+* defined in [Object](object.schema.md#activitystreamsbcc)
 
 ### activitystreams:bcc Type
 
@@ -420,7 +420,7 @@ Identifies an Object that is part of the private primary audience of this Object
 `activitystreams:bto`
 * is optional
 * type: complex
-* defined in [Object](object.schema.md#activitystreams:bto)
+* defined in [Object](object.schema.md#activitystreamsbto)
 
 ### activitystreams:bto Type
 
@@ -504,7 +504,7 @@ Identifies an Object that is part of the public secondary audience of this Objec
 `activitystreams:cc`
 * is optional
 * type: complex
-* defined in [Object](object.schema.md#activitystreams:cc)
+* defined in [Object](object.schema.md#activitystreamscc)
 
 ### activitystreams:cc Type
 
@@ -588,7 +588,7 @@ The content or textual representation of the Object encoded as a JSON string. By
 `activitystreams:content`
 * is optional
 * type: complex
-* defined in [Object](object.schema.md#activitystreams:content)
+* defined in [Object](object.schema.md#activitystreamscontent)
 
 ### activitystreams:content Type
 
@@ -620,7 +620,7 @@ Identifies the context within which the object exists or an activity was perform
 `activitystreams:context`
 * is optional
 * type: complex
-* defined in [Object](object.schema.md#activitystreams:context)
+* defined in [Object](object.schema.md#activitystreamscontext)
 
 ### activitystreams:context Type
 
@@ -744,7 +744,7 @@ XSD Duration according to [specification](https://www.w3.org/TR/xmlschema11-2/#d
 `activitystreams:duration`
 * is optional
 * type: `string`
-* defined in [Object](object.schema.md#activitystreams:duration)
+* defined in [Object](object.schema.md#activitystreamsduration)
 
 ### activitystreams:duration Type
 
@@ -770,7 +770,7 @@ The date and time describing the actual or expected ending time of the object. W
 `activitystreams:endTime`
 * is optional
 * type: `string`
-* defined in [Object](object.schema.md#activitystreams:endTime)
+* defined in [Object](object.schema.md#activitystreamsendtime)
 
 ### activitystreams:endTime Type
 
@@ -829,7 +829,7 @@ Identifies the entity (e.g. an application) that generated the object. Refer to 
 `activitystreams:generator`
 * is optional
 * type: complex
-* defined in [Object](object.schema.md#activitystreams:generator)
+* defined in [Object](object.schema.md#activitystreamsgenerator)
 
 ### activitystreams:generator Type
 
@@ -913,7 +913,7 @@ Indicates an entity that describes an icon for this object. The image should hav
 `activitystreams:icon`
 * is optional
 * type: complex
-* defined in [Object](object.schema.md#activitystreams:icon)
+* defined in [Object](object.schema.md#activitystreamsicon)
 
 ### activitystreams:icon Type
 
@@ -997,7 +997,7 @@ Indicates an entity that describes an image for this object. Unlike the icon pro
 `activitystreams:image`
 * is optional
 * type: complex
-* defined in [Object](object.schema.md#activitystreams:image)
+* defined in [Object](object.schema.md#activitystreamsimage)
 
 ### activitystreams:image Type
 
@@ -1081,7 +1081,7 @@ Indicates one or more entities for which this object is considered a response. R
 `activitystreams:inReplyTo`
 * is optional
 * type: complex
-* defined in [Object](object.schema.md#activitystreams:inReplyTo)
+* defined in [Object](object.schema.md#activitystreamsinreplyto)
 
 ### activitystreams:inReplyTo Type
 
@@ -1276,7 +1276,7 @@ Indicates one or more physical or logical locations associated with the object. 
 `activitystreams:location`
 * is optional
 * type: complex
-* defined in [Object](object.schema.md#activitystreams:location)
+* defined in [Object](object.schema.md#activitystreamslocation)
 
 ### activitystreams:location Type
 
@@ -1361,7 +1361,7 @@ When used on a Link, identifies the MIME media type of the referenced resource. 
 `activitystreams:mediaType`
 * is optional
 * type: `string`
-* defined in [Object](object.schema.md#activitystreams:mediaType)
+* defined in [Object](object.schema.md#activitystreamsmediatype)
 
 ### activitystreams:mediaType Type
 
@@ -1387,7 +1387,7 @@ A simple, human-readable, plain-text name for the object. HTML markup must not b
 `activitystreams:name`
 * is optional
 * type: complex
-* defined in [Object](object.schema.md#activitystreams:name)
+* defined in [Object](object.schema.md#activitystreamsname)
 
 ### activitystreams:name Type
 
@@ -1419,7 +1419,7 @@ Identifies an entity that provides a preview of this object. Refer to the [Activ
 `activitystreams:preview`
 * is optional
 * type: complex
-* defined in [Object](object.schema.md#activitystreams:preview)
+* defined in [Object](object.schema.md#activitystreamspreview)
 
 ### activitystreams:preview Type
 
@@ -1503,7 +1503,7 @@ The date and time at which the object was published Refer to the [Activity Strea
 `activitystreams:published`
 * is optional
 * type: `string`
-* defined in [Object](object.schema.md#activitystreams:published)
+* defined in [Object](object.schema.md#activitystreamspublished)
 
 ### activitystreams:published Type
 
@@ -1523,7 +1523,7 @@ Identifies a Collection containing objects considered to be responses to this ob
 `activitystreams:replies`
 * is optional
 * type: Collection
-* defined in [Object](object.schema.md#activitystreams:replies)
+* defined in [Object](object.schema.md#activitystreamsreplies)
 
 ### activitystreams:replies Type
 
@@ -1541,7 +1541,7 @@ The date and time describing the actual or expected starting time of the object.
 `activitystreams:startTime`
 * is optional
 * type: `string`
-* defined in [Object](object.schema.md#activitystreams:startTime)
+* defined in [Object](object.schema.md#activitystreamsstarttime)
 
 ### activitystreams:startTime Type
 
@@ -1561,7 +1561,7 @@ A natural language summarization of the object encoded as HTML. Multiple languag
 `activitystreams:summary`
 * is optional
 * type: complex
-* defined in [Object](object.schema.md#activitystreams:summary)
+* defined in [Object](object.schema.md#activitystreamssummary)
 
 ### activitystreams:summary Type
 
@@ -1593,7 +1593,7 @@ One or more 'tags' that have been associated with an objects. A tag can be any k
 `activitystreams:tag`
 * is optional
 * type: complex
-* defined in [Object](object.schema.md#activitystreams:tag)
+* defined in [Object](object.schema.md#activitystreamstag)
 
 ### activitystreams:tag Type
 
@@ -1677,7 +1677,7 @@ Identifies an entity considered to be part of the public primary audience of an 
 `activitystreams:to`
 * is optional
 * type: complex
-* defined in [Object](object.schema.md#activitystreams:to)
+* defined in [Object](object.schema.md#activitystreamsto)
 
 ### activitystreams:to Type
 
@@ -1781,7 +1781,7 @@ The date and time at which the object was updated Refer to the [Activity Streams
 `activitystreams:updated`
 * is optional
 * type: `string`
-* defined in [Object](object.schema.md#activitystreams:updated)
+* defined in [Object](object.schema.md#activitystreamsupdated)
 
 ### activitystreams:updated Type
 
@@ -1801,7 +1801,7 @@ Identifies one or more links to representations of the object. Refer to the [Act
 `activitystreams:url`
 * is optional
 * type: complex
-* defined in [Object](object.schema.md#activitystreams:url)
+* defined in [Object](object.schema.md#activitystreamsurl)
 
 ### activitystreams:url Type
 

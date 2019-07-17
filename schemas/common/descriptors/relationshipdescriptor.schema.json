@@ -10,7 +10,7 @@
   "title": "Relationship Descriptor",
   "meta:extensible": true,
   "meta:extends": [
-    "https://ns.adobe.com/xdm/common/desciptors/schemadescriptor#/definitions/descriptor"
+    "https://ns.adobe.com/xdm/common/descriptors/schemadescriptor#/definitions/descriptor"
   ],
   "meta:abstract": false,
   "type": "object",
@@ -35,12 +35,25 @@
           "$ref": "https://ns.adobe.com/xdm/common/descriptors/itemselector#/definitions/selector"
         }
       },
+      "oneOf": [
+        {
+          "properties": {
+            "xdm:label": {
+              "type": "string"
+            }
+          },
+          "required": ["xdm:label"]
+        },
+        {
+          "required": ["xdm:sourceProperty"]
+        }
+      ],
       "required": ["xdm:destinationSchema"]
     }
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/common/desciptors/schemadescriptor#/definitions/descriptor"
+      "$ref": "https://ns.adobe.com/xdm/common/descriptors/schemadescriptor#/definitions/descriptor"
     },
     {
       "$ref": "#/definitions/relationshipdescriptor"

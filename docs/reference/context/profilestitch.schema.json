@@ -9,7 +9,7 @@
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "Profile Stitch",
     "type": "object",
-    "description": "Details about the ids that were joined by profile stitching.",
+    "description": "Details about the IDs that were joined by profile stitching.",
     "definitions": {
         "profileStitch": {
             "properties": {
@@ -22,22 +22,6 @@
                     "title": "Version",
                     "type": "string",
                     "description": "The version of the profile stitch definition used. Useful for debugging."
-                },
-                "xdm:identities": {
-                    "meta:status": "deprecated",
-                    "title": "All User Identities",
-                    "type": "array",
-                    "items": {
-                        "$ref": "https://ns.adobe.com/xdm/context/identity"
-                    },
-                    "minItems": 1,
-                    "description": "Array of Identities. Condensed, normalized encapsulation of all end user identifiers. Deprecated."
-                },
-                "xdm:endUserIDs": {
-                    "meta:status": "deprecated",
-                    "title": "End User IDs",
-                    "$ref": "https://ns.adobe.com/xdm/context/enduserids",
-                    "description": "Condensed, normalized encapsulation of all end user identifiers. Deprecated"
                 }
             }
         }

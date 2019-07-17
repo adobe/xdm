@@ -12,15 +12,29 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
-  "description": "Profile Segmentation.",
+  "description": "Profile segmentation.",
   "definitions": {
     "profile-segmentation": {
       "properties": {
         "xdm:segments":{
           "title" : "Segment Membership",
+          "meta:status": "deprecated",
           "type" : "array",
           "items" : {
             "$ref" : "https://ns.adobe.com/xdm/context/segmentmembership"
+          }
+        },
+        "xdm:segmentMembership":{
+          "title" : "Segment Membership Map",
+          "type" : "object",
+          "meta:xdmType": "map",
+          "additionalProperties" : {
+            "title": "Segment Membership per Namespace",
+            "type": "object",
+            "meta:xdmType": "map",
+            "additionalProperties" : {
+              "$ref" : "https://ns.adobe.com/xdm/context/segmentmembership"
+            }
           }
         }
       }

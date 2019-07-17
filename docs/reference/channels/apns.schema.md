@@ -1,23 +1,23 @@
 
-# APNS Schema
+# APNS Channel Schema
 
 ```
 https://ns.adobe.com/xdm/channels/apns
 ```
 
-Apple Push Notification Service
+Apple Push Notification Service channel.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/apns.schema.json](channels/apns.schema.json) |
 ## Schema Hierarchy
 
-* APNS `https://ns.adobe.com/xdm/channels/apns`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* APNS Channel `https://ns.adobe.com/xdm/channels/apns`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
 
-## APNS Example
+## APNS Channel Example
 ```json
 {
   "@id": "https://ns.adobe.com/xdm/channels/apns",
@@ -25,16 +25,16 @@ Apple Push Notification Service
 }
 ```
 
-# APNS Properties
+# APNS Channel Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | APNS (this schema) |
-| [@type](#@type) | `const` | Optional | APNS (this schema) |
-| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | APNS (this schema) |
-| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | APNS (this schema) |
-| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | APNS (this schema) |
-| [xdm:mode](#xdmmode) | `const` | Optional | APNS (this schema) |
+| [@id](#id) | `const` | **Required** | APNS Channel (this schema) |
+| [@type](#type) | `const` | Optional | APNS Channel (this schema) |
+| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | APNS Channel (this schema) |
+| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | APNS Channel (this schema) |
+| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | APNS Channel (this schema) |
+| [xdm:mode](#xdmmode) | `const` | Optional | APNS Channel (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id

@@ -13,7 +13,7 @@ Identity is used to clearly distinguish people that are interacting with digital
 ## Schema Hierarchy
 
 * Identity `https://ns.adobe.com/xdm/context/identity`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Identity Item](identityitem.schema.md) `https://ns.adobe.com/xdm/context/identityitem`
   * [Namespace](namespace.schema.md) `https://ns.adobe.com/xdm/context/namespace`
 
@@ -42,13 +42,13 @@ Identity is used to clearly distinguish people that are interacting with digital
 
 # Identity Properties
 
-| Property | Type | Required | Defined by |
-|----------|------|----------|------------|
-| [xdm:authenticatedState](#xdmauthenticatedstate) | `enum` | Optional | [Identity Item](identityitem.schema.md#xdmauthenticatedstate) |
-| [xdm:id](#xdmid) | `string` | Optional | [Identity Item](identityitem.schema.md#xdmid) |
-| [xdm:namespace](#xdmnamespace) | Namespace | Optional | Identity (this schema) |
-| [xdm:primary](#xdmprimary) | `boolean` | Optional | [Identity Item](identityitem.schema.md#xdmprimary) |
-| [xdm:xid](#xdmxid) | `string` | Optional | Identity (this schema) |
+| Property | Type | Required | Default | Defined by |
+|----------|------|----------|---------|------------|
+| [xdm:authenticatedState](#xdmauthenticatedstate) | `enum` | Optional | `"ambiguous"` | [Identity Item](identityitem.schema.md#xdmauthenticatedstate) |
+| [xdm:id](#xdmid) | `string` | Optional |  | [Identity Item](identityitem.schema.md#xdmid) |
+| [xdm:namespace](#xdmnamespace) | Namespace | Optional |  | Identity (this schema) |
+| [xdm:primary](#xdmprimary) | `boolean` | Optional | `false` | [Identity Item](identityitem.schema.md#xdmprimary) |
+| [xdm:xid](#xdmxid) | `string` | Optional |  | Identity (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:authenticatedState
@@ -58,15 +58,16 @@ The state this identity is authenticated as for this observed ExperienceEvent.
 `xdm:authenticatedState`
 * is optional
 * type: `enum`
-* defined in [Identity Item](identityitem.schema.md#xdm:authenticatedState)
+* default: `"ambiguous"`
+* defined in [Identity Item](identityitem.schema.md#xdmauthenticatedstate)
 
-The value of this property **must** be equal to one of the [known values below](#xdm:authenticatedState-known-values).
+The value of this property **must** be equal to one of the [known values below](#xdmauthenticatedstate-known-values).
 
 ### xdm:authenticatedState Known Values
 | Value | Description |
 |-------|-------------|
 | `ambiguous` | Ambiguous |
-| `authenticated` | User identified by a login or simular action that was valid at the time of the event observation. |
+| `authenticated` | User identified by a login or similar action that was valid at the time of the event observation. |
 | `loggedOut` | User was identified by a login action at some point of time previously, but is not currently logged in. |
 
 
@@ -80,7 +81,7 @@ Identity of the consumer in the related namespace.
 `xdm:id`
 * is optional
 * type: `string`
-* defined in [Identity Item](identityitem.schema.md#xdm:id)
+* defined in [Identity Item](identityitem.schema.md#xdmid)
 
 ### xdm:id Type
 
@@ -119,7 +120,8 @@ Indicates this identity is the preferred identity. Is used as a hint to help sys
 `xdm:primary`
 * is optional
 * type: `boolean`
-* defined in [Identity Item](identityitem.schema.md#xdm:primary)
+* default: `false`
+* defined in [Identity Item](identityitem.schema.md#xdmprimary)
 
 ### xdm:primary Type
 

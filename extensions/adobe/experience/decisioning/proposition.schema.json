@@ -7,63 +7,24 @@
   ],
   "$id": "https://ns.adobe.com/experience/decisioning/proposition",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Decision Proposition",
+  "title": "Decision Proposition Reference",
   "type": "object",
   "meta:abstract": true,
   "meta:extensible": true,
-  "description": "The  Decision Proposition XDM is used to capture the outcome of a decisioning process",
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent",
+    "https://ns.adobe.com/experience/decisioning/decisionevent"
+  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/context/identitymap"],
+  "description": "Decision Proposition Reference is used to link to the proposition in experience events that are response to a particular proposition.",
   "definitions": {
-    "proposition-detail-datatype": {
+    "proposition-mixin": {
       "properties": {
-        "xdm:activity": {
-          "title": "Decision Activity",
-          "description": "Snapshot of the activity for which the proposition was made. The object contains at least the @id property value which is the URI of the decision activity. See schema https://ns.adobe.com/experience/decisioning/activity",
-          "$ref": "https://ns.adobe.com/xdm/data/record"
-        },
-        "xdm:selections": {
-          "title": "Selected Options",
-          "description": "Snapshots of the options that were selected for this activity. Those options are ususally constrained. The objects contain a at least the @id property value which is the URI of an option. See schema https://ns.adobe.com/experience/decisioning/option",
-          "type": "array",
-          "items": {
-            "$ref": "https://ns.adobe.com/xdm/data/record"
-          },
-          "minItems": 1,
-          "uniqueItems": true
-        },
-        "xdm:fallback": {
-          "title": "Fallback Option",
-          "description": "Snapshot of the fixed fallback option that was selected because no available option satisfied all constaints. The object contains at least the @id property value which is the URI of the fallback action. See schema https://ns.adobe.com/experience/decisioning/fallback-option",
-          "$ref": "https://ns.adobe.com/xdm/data/record"
-        }
-      }
-    },
-    "proposition-metrics-datatype": {
-      "properties": {
-        "xdm:metrics": {
-          "title": "Metrics",
-          "description": "Additional measurements observed while the decision was made and which provided context to the decision process.",
-          "$ref": "https://ns.adobe.com/experience/decisioning/eventmetrics"
-        }
-      }
-    },
-    "propositions-mixin": {
-      "meta:intendedToExtend": [
-        "https://ns.adobe.com/xdm/context/experienceevent",
-        "https://ns.adobe.com/experience/decisioning/decisionevent"
-      ],
-      "properties": {
-        "https://ns.adobe.com/experience/decisioning/propositionId": {
-          "title": "Decision Proposition ID",
+        "https://ns.adobe.com/experience/decisioning/propositionID": {
+          "title": "Proposition Identifier",
           "type": "string",
-          "description": "An ID associated with an individual decision response. A single decision can produce an array of propositions, one for each activity involved. It is the expectation that applications reference this ID in every experience event that was influended by the propositions. A user profile's proposition-response history is maintained with these identifiers."
-        },
-        "https://ns.adobe.com/experience/decisioning/propositionDetails": {
-          "title": "Propopostion Array providing the outcomes of a single decision event, one outcome per given activity",
-          "type": "array",
-          "items": {
-            "$ref": "https://ns.adobe.com/experience/decisioning/proposition#/definitions/proposition-detail-datatype"
-          },
-          "description": "Details about the individual context variables and outcomes for the decision."
+          "format": "uri-reference",
+          "description": "An identity for the proposition entity associated with an XDM DecisionEvent. A single DecisionEvent can propose multiple options for a set of activities at once, one for each activity involved. It is the expectation that applications reference this PropositionID in every ExperienceEvent that was influenced by the set of propositions. An Profile's proposition-response history is maintained with these proposition identifiers."
         }
       }
     }
@@ -73,23 +34,10 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "#/definitions/proposition-detail-datatype"
+      "$ref": "https://ns.adobe.com/xdm/context/identitymap"
     },
     {
-      "required": ["xdm:activity"]
-    },
-    {
-      "oneOf": [
-        {
-          "required": ["xdm:selections"]
-        },
-        {
-          "required": ["xdm:fallback"]
-        }
-      ]
-    },
-    {
-      "$ref": "#/definitions/proposition-metrics-datatype"
+      "$ref": "#/definitions/proposition-mixin"
     }
   ],
   "meta:status": "experimental"

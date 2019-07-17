@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/direct-marketing
 ```
 
-The events and properties related to direct/outbound marketing such as email, direct mail, texts and in-app notifications.
+The events and properties related to direct/outbound marketing such as email, direct mail, texts, and in-app notifications.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -13,7 +13,7 @@ The events and properties related to direct/outbound marketing such as email, di
 ## Schema Hierarchy
 
 * Direct Marketing `https://ns.adobe.com/xdm/context/direct-marketing`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Measure](../data/measure.schema.md) `https://ns.adobe.com/xdm/data/measure`
 
 
@@ -32,9 +32,11 @@ The events and properties related to direct/outbound marketing such as email, di
 |----------|------|----------|------------|
 | [xdm:bounces](#xdmbounces) | Measure | Optional | Direct Marketing (this schema) |
 | [xdm:clicks](#xdmclicks) | Measure | Optional | Direct Marketing (this schema) |
+| [xdm:impressions](#xdmimpressions) | Measure | Optional | Direct Marketing (this schema) |
 | [xdm:mirrorPages](#xdmmirrorpages) | Measure | Optional | Direct Marketing (this schema) |
 | [xdm:nonDeliverables](#xdmnondeliverables) | Measure | Optional | Direct Marketing (this schema) |
 | [xdm:notSent](#xdmnotsent) | Measure | Optional | Direct Marketing (this schema) |
+| [xdm:offerOpens](#xdmofferopens) | Measure | Optional | Direct Marketing (this schema) |
 | [xdm:opens](#xdmopens) | Measure | Optional | Direct Marketing (this schema) |
 | [xdm:sends](#xdmsends) | Measure | Optional | Direct Marketing (this schema) |
 | [xdm:unsubscriptions](#xdmunsubscriptions) | Measure | Optional | Direct Marketing (this schema) |
@@ -69,6 +71,24 @@ Click(s) actions on a message.
 * defined in this schema
 
 ### xdm:clicks Type
+
+
+* [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
+## xdm:impressions
+
+The direct-marketing message ( Push Notifications, In-App etc) has been seen by the end user.
+
+`xdm:impressions`
+* is optional
+* type: Measure
+* defined in this schema
+
+### xdm:impressions Type
 
 
 * [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
@@ -131,9 +151,27 @@ Asynchronous message (email, SMS, MMS etc) was not dispatched due to cancellatio
 
 
 
+## xdm:offerOpens
+
+Offer in a marketing message (email, SMS, Push Notifications etc) has been opened/swyped/touched/interacted with by the recipient.
+
+`xdm:offerOpens`
+* is optional
+* type: Measure
+* defined in this schema
+
+### xdm:offerOpens Type
+
+
+* [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
 ## xdm:opens
 
-The direct marketing message (email, SMS, Push Notifications etc) has been opened/swyped/touched by the recipient.
+The direct marketing message (email, SMS, Push Notifications etc) has been opened/swiped/touched by the recipient.
 
 `xdm:opens`
 * is optional

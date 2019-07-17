@@ -1,0 +1,114 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/common/descriptors/searchdescriptor",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Search Descriptor",
+  "meta:extensible": false,
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/common/descriptors/schemadescriptor#/definitions/descriptor"
+  ],
+  "meta:abstract": false,
+  "type": "object",
+  "description": "Describes search annotations for specific properties of the schemas.",
+  "definitions": {
+    "searchdescriptor": {
+      "properties": {
+        "search:indexed": {
+          "title": "Indexed",
+          "type": "boolean",
+          "description": "Whether the property is indexable and searchable.",
+          "default": false
+        },
+        "search:filterable": {
+          "title": "Filterable",
+          "type": "boolean",
+          "description": "Whether the property can be used as a filter in search queries.",
+          "default": false
+        },
+        "search:store": {
+          "title": "Stored",
+          "type": "string",
+          "description": "Whether the property value is stored in, and therefore can be retrieved from, the index.",
+          "meta:enum": {
+            "notStored": "notStored",
+            "stored": "stored",
+            "storedAndFetchByDefault": "storedAndFetchByDefault"
+          },
+          "default": "notStored"
+        },
+        "search:sort": {
+          "title": "Sort Type",
+          "type": "string",
+          "description": "Whether and how search results can be sorted on this property.",
+          "meta:enum": {
+            "notSortable": "notSortable",
+            "sorted": "sorted",
+            "sortedCaseSensitive": "sortedCaseSensitive",
+            "sortedCaseInsensitive": "soretdCaseInsensitive"
+          },
+          "default": "notSortable"
+        },
+        "search:analyzers": {
+          "title": "Analyzers",
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "meta:enum": {
+            "noAnalysis": "noAnalysis",
+            "standard": "standard",
+            "langGeneric": "langGeneric",
+            "langFr": "langFr",
+            "langTh": "langTh",
+            "langDe": "langDe",
+            "langJa": "langJa",
+            "langZh": "langZh",
+            "startsWithDefaultAnalyzer": "startsWithDefaultAnalyzer",
+            "startsWithWhiteSpaceAnalyzer": "startsWithWhiteSpaceAnalyzer",
+            "fileName": "fileName",
+            "fileNameExtension": "fileNameExtension"
+          },
+          "description": "A set of analyzers to be applied when indexing this property.",
+          "default": "noAnalysis"
+        },
+        "search:defaultAnalyzer": {
+          "title": "Default analyzer",
+          "type": "string",
+          "description": "Default analyzer to be applied when search queries are made against this property.",
+          "meta:enum": {
+            "noAnalysis": "noAnalysis",
+            "standard": "standard",
+            "langGeneric": "langGeneric",
+            "langFr": "langFr",
+            "langTh": "langTh",
+            "langDe": "langDe",
+            "langJa": "langJa",
+            "langZh": "langZh",
+            "startsWithDefaultAnalyzer": "startsWithDefaultAnalyzer",
+            "startsWithWhiteSpaceAnalyzer": "startsWithWhiteSpaceAnalyzer",
+            "fileName": "fileName",
+            "fileNameExtension": "fileNameExtension"
+          },
+          "default": "noAnalysis"
+        }
+      },
+      "required": [
+        "search:indexed"
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/descriptors/schemadescriptor#/definitions/descriptor"
+    },
+    {
+      "$ref": "#/definitions/searchdescriptor"
+    }
+  ],
+  "meta:status": "experimental"
+}

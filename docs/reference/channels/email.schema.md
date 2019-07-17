@@ -1,23 +1,23 @@
 
-# E-Mail Schema
+# E-Mail Channel Schema
 
 ```
 https://ns.adobe.com/xdm/channels/email
 ```
 
-E-Mail messages, delivered via SMTP to list subscribers.
+E-Mail messages, delivered via SMTP to list subscribers channel.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/email.schema.json](channels/email.schema.json) |
 ## Schema Hierarchy
 
-* E-Mail `https://ns.adobe.com/xdm/channels/email`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* E-Mail Channel `https://ns.adobe.com/xdm/channels/email`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
 
-## E-Mail Example
+## E-Mail Channel Example
 ```json
 {
   "@id": "https://ns.adobe.com/xdm/channels/email",
@@ -25,16 +25,16 @@ E-Mail messages, delivered via SMTP to list subscribers.
 }
 ```
 
-# E-Mail Properties
+# E-Mail Channel Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | E-Mail (this schema) |
-| [@type](#@type) | `const` | Optional | E-Mail (this schema) |
-| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | E-Mail (this schema) |
-| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | E-Mail (this schema) |
-| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | E-Mail (this schema) |
-| [xdm:mode](#xdmmode) | `const` | Optional | E-Mail (this schema) |
+| [@id](#id) | `const` | **Required** | E-Mail Channel (this schema) |
+| [@type](#type) | `const` | Optional | E-Mail Channel (this schema) |
+| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | E-Mail Channel (this schema) |
+| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | E-Mail Channel (this schema) |
+| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | E-Mail Channel (this schema) |
+| [xdm:mode](#xdmmode) | `const` | Optional | E-Mail Channel (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id

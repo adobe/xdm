@@ -1,23 +1,23 @@
 
-# Phone Schema
+# Phone Channel Schema
 
 ```
 https://ns.adobe.com/xdm/channels/phone
 ```
 
-The telephone. Includes both inbound and outbound.
+The telephone channel. Includes both inbound and outbound.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/phone.schema.json](channels/phone.schema.json) |
 ## Schema Hierarchy
 
-* Phone `https://ns.adobe.com/xdm/channels/phone`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* Phone Channel `https://ns.adobe.com/xdm/channels/phone`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
 
-## Phone Example
+## Phone Channel Example
 ```json
 {
   "@id": "https://ns.adobe.com/xdm/channels/phone",
@@ -25,16 +25,16 @@ The telephone. Includes both inbound and outbound.
 }
 ```
 
-# Phone Properties
+# Phone Channel Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | Phone (this schema) |
-| [@type](#@type) | `const` | Optional | Phone (this schema) |
-| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | Phone (this schema) |
-| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | Phone (this schema) |
-| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | Phone (this schema) |
-| [xdm:mode](#xdmmode) | `const` | Optional | Phone (this schema) |
+| [@id](#id) | `const` | **Required** | Phone Channel (this schema) |
+| [@type](#type) | `const` | Optional | Phone Channel (this schema) |
+| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | Phone Channel (this schema) |
+| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | Phone Channel (this schema) |
+| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | Phone Channel (this schema) |
+| [xdm:mode](#xdmmode) | `const` | Optional | Phone Channel (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id

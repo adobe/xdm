@@ -1,23 +1,23 @@
 
-# Web Schema
+# Native Mobile Application Channel Schema
 
 ```
 https://ns.adobe.com/xdm/channels/mobile-app
 ```
 
-Native mobile applications that are installed through an app store.
+Native mobile applications that are installed through an app store channel.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/mobile-app.schema.json](channels/mobile-app.schema.json) |
 ## Schema Hierarchy
 
-* Web `https://ns.adobe.com/xdm/channels/mobile-app`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* Native Mobile Application Channel `https://ns.adobe.com/xdm/channels/mobile-app`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
 
-## Web Example
+## Native Mobile Application Channel Example
 ```json
 {
   "@id": "https://ns.adobe.com/xdm/channels/mobile-app",
@@ -25,16 +25,16 @@ Native mobile applications that are installed through an app store.
 }
 ```
 
-# Web Properties
+# Native Mobile Application Channel Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | Web (this schema) |
-| [@type](#@type) | `const` | Optional | Web (this schema) |
-| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | Web (this schema) |
-| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | Web (this schema) |
-| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | Web (this schema) |
-| [xdm:mode](#xdmmode) | `const` | Optional | Web (this schema) |
+| [@id](#id) | `const` | **Required** | Native Mobile Application Channel (this schema) |
+| [@type](#type) | `const` | Optional | Native Mobile Application Channel (this schema) |
+| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | Native Mobile Application Channel (this schema) |
+| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | Native Mobile Application Channel (this schema) |
+| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | Native Mobile Application Channel (this schema) |
+| [xdm:mode](#xdmmode) | `const` | Optional | Native Mobile Application Channel (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id

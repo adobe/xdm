@@ -1,23 +1,23 @@
 
-# WNS Schema
+# WNS Channel Schema
 
 ```
 https://ns.adobe.com/xdm/channels/wns
 ```
 
-Windows Push Notification Service.
+Windows Push Notification Service channel.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/wns.schema.json](channels/wns.schema.json) |
 ## Schema Hierarchy
 
-* WNS `https://ns.adobe.com/xdm/channels/wns`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* WNS Channel `https://ns.adobe.com/xdm/channels/wns`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
 
-## WNS Example
+## WNS Channel Example
 ```json
 {
   "@id": "https://ns.adobe.com/xdm/channels/wns",
@@ -25,16 +25,16 @@ Windows Push Notification Service.
 }
 ```
 
-# WNS Properties
+# WNS Channel Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | WNS (this schema) |
-| [@type](#@type) | `const` | Optional | WNS (this schema) |
-| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | WNS (this schema) |
-| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | WNS (this schema) |
-| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | WNS (this schema) |
-| [xdm:mode](#xdmmode) | `const` | Optional | WNS (this schema) |
+| [@id](#id) | `const` | **Required** | WNS Channel (this schema) |
+| [@type](#type) | `const` | Optional | WNS Channel (this schema) |
+| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | WNS Channel (this schema) |
+| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | WNS Channel (this schema) |
+| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | WNS Channel (this schema) |
+| [xdm:mode](#xdmmode) | `const` | Optional | WNS Channel (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id

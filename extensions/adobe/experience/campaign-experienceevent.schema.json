@@ -9,10 +9,13 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Adobe Campaign ExperienceEvent Template Mixin",
   "type": "object",
-  "description": "Campaign ExperienceEvent Mixin for use with Schemas for Solution data ingestion. Includes the core/standard ExperienceEvent as well as the required Adobe Campaign ExperienceEvent Mixins.",
+  "description": "Campaign ExperienceEvent mixin for use with schemas for Solution data ingestion. Includes the core/standard ExperienceEvent as well as the required Adobe Campaign ExperienceEvent mixins.",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent",
+    "https://ns.adobe.com/experience/decisioning/decisionevent"
+  ],
   "meta:extends": [
     "https://ns.adobe.com/xdm/context/experienceevent-advertising",
     "https://ns.adobe.com/xdm/context/experienceevent-application",
@@ -28,10 +31,11 @@
     "https://ns.adobe.com/xdm/context/experienceevent-technical-details",
     "https://ns.adobe.com/xdm/context/experienceevent-web",
     "https://ns.adobe.com/experience/campaign/experienceevent-all",
+    "https://ns.adobe.com/experience/decisioning/proposition",
     "https://ns.adobe.com/experience/target/experienceevent-shared",
     "https://ns.adobe.com/experience/profile/experienceevent-shared",
     "https://ns.adobe.com/experience/implementations-ext",
-    "https://ns.adobe.com/xdm/context/experienceevent-enduserids-deprecated"
+    "https://ns.adobe.com/xdm/context/experienceevent-enduserids"
   ],
   "definitions": {
     "campaign-experienceevent": {
@@ -85,6 +89,9 @@
       "$ref": "https://ns.adobe.com/experience/campaign/experienceevent-all"
     },
     {
+      "$ref": "https://ns.adobe.com/experience/decisioning/proposition"
+    },
+    {
       "$ref": "https://ns.adobe.com/experience/target/experienceevent-shared"
     },
     {
@@ -94,7 +101,7 @@
       "$ref": "https://ns.adobe.com/experience/implementations-ext"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-enduserids-deprecated"
+      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-enduserids"
     },
     {
       "$ref": "#/definitions/campaign-experienceevent"

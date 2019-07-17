@@ -7,9 +7,10 @@
     ],
     "$id": "https://ns.adobe.com/xdm/channels/application",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Application",
+    "title": "Application Channel",
     "type": "object",
-    "description": "An application that accepts messages or emit events (Facebook page, Mobile App, ...).\n",
+    "meta:abstract": true,
+    "description": "An application that accepts messages or emit events (Facebook page, Mobile App, ...) channel.",
     "definitions": {
         "application": {
             "properties": {

@@ -17,7 +17,7 @@ For interactions that are happening on a loaded page that do not trigger a new p
 ## Schema Hierarchy
 
 * Web Page Details `https://ns.adobe.com/xdm/context/webpagedetails`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Measure](../data/measure.schema.md) `https://ns.adobe.com/xdm/data/measure`
 
 
@@ -111,7 +111,7 @@ Flag that indicate if the page is the site home page or not.  The definition of 
 ## xdm:name
 ### Name
 
-The normative name of the web page. This name is not necessarily the page title or directy associate with page content, but is used to organize a site's pages for classification purposes
+The normative name of the web page. This name is not necessarily the page title or directly associate with page content, but is used to organize a site's pages for classification purposes.
 
 `xdm:name`
 * is optional
@@ -169,7 +169,7 @@ The normative or usual server that hosts the web page.  This may or may not be t
 ## xdm:siteSection
 ### Site Section
 
-The normative name of the site section where this web page resides, which may be used to classify or categorize the interaction
+The normative name of the site section where this web page resides, which may be used to classify or categorize the interaction.
 
 `xdm:siteSection`
 * is optional

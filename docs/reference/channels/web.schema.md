@@ -1,23 +1,23 @@
 
-# Web Schema
+# Web Channel Schema
 
 ```
 https://ns.adobe.com/xdm/channels/web
 ```
 
-The world wide web and mobile web. Pages delivered via HTTP to a web browser or in-app browser.
+The world wide web and mobile web channel. Pages delivered via HTTP to a web browser or in-app browser.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/web.schema.json](channels/web.schema.json) |
 ## Schema Hierarchy
 
-* Web `https://ns.adobe.com/xdm/channels/web`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* Web Channel `https://ns.adobe.com/xdm/channels/web`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
 
-## Web Example
+## Web Channel Example
 ```json
 {
   "@id": "https://ns.adobe.com/xdm/channels/web",
@@ -25,16 +25,16 @@ The world wide web and mobile web. Pages delivered via HTTP to a web browser or 
 }
 ```
 
-# Web Properties
+# Web Channel Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | Web (this schema) |
-| [@type](#@type) | `const` | Optional | Web (this schema) |
-| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | Web (this schema) |
-| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | Web (this schema) |
-| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | Web (this schema) |
-| [xdm:mode](#xdmmode) | `const` | Optional | Web (this schema) |
+| [@id](#id) | `const` | **Required** | Web Channel (this schema) |
+| [@type](#type) | `const` | Optional | Web Channel (this schema) |
+| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | Web Channel (this schema) |
+| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | Web Channel (this schema) |
+| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | Web Channel (this schema) |
+| [xdm:mode](#xdmmode) | `const` | Optional | Web Channel (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id

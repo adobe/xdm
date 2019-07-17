@@ -13,7 +13,7 @@ Asset information about the chapter captured by the experience event.
 ## Schema Hierarchy
 
 * Timed Media Chapter Asset Reference `https://ns.adobe.com/xdm/context/media-timed-chapter-asset-reference`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
 ## Timed Media Chapter Asset Reference Example
@@ -29,7 +29,7 @@ Asset information about the chapter captured by the experience event.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Timed Media Chapter Asset Reference (this schema) |
+| [@id](#id) | `string` | Optional | Timed Media Chapter Asset Reference (this schema) |
 | [dc:title](#dctitle) | `string` | Optional | Timed Media Chapter Asset Reference (this schema) |
 | [xmpDM:duration](#xmpdmduration) | `integer` | Optional | Timed Media Chapter Asset Reference (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |

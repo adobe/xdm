@@ -28,7 +28,7 @@ The product list item is a list item representing a product selected by a custom
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Product List Item (this schema) |
+| [@id](#id) | `string` | Optional | Product List Item (this schema) |
 | [xdm:SKU](#xdmsku) | `string` | Optional | Product List Item (this schema) |
 | [xdm:currencyCode](#xdmcurrencycode) | `string` | Optional | Product List Item (this schema) |
 | [xdm:name](#xdmname) | `string` | Optional | Product List Item (this schema) |
@@ -62,7 +62,7 @@ The line item identifier for this product entry. The product itself is identifie
 ## xdm:SKU
 ### SKU
 
-Stock Keeping Unit, the unique identifier for a product defined by the vendor.
+Stock keeping unit, the unique identifier for a product defined by the vendor.
 
 `xdm:SKU`
 * is optional

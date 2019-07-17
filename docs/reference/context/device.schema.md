@@ -13,7 +13,7 @@ An identified device that is an application or browser instance that is trackabl
 ## Schema Hierarchy
 
 * Device `https://ns.adobe.com/xdm/context/device`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
 ## Device Example
@@ -27,7 +27,8 @@ An identified device that is an application or browser instance that is trackabl
   "xdm:modelNumber": "A1586",
   "xdm:screenHeight": 667,
   "xdm:screenWidth": 375,
-  "xdm:colorDepth": 16777216
+  "xdm:colorDepth": 16777216,
+  "xdm:screenOrientation": "portrait"
 }
 ```
 
@@ -40,6 +41,7 @@ An identified device that is an application or browser instance that is trackabl
 | [xdm:model](#xdmmodel) | `string` | Optional | Device (this schema) |
 | [xdm:modelNumber](#xdmmodelnumber) | `string` | Optional | Device (this schema) |
 | [xdm:screenHeight](#xdmscreenheight) | `integer` | Optional | Device (this schema) |
+| [xdm:screenOrientation](#xdmscreenorientation) | `enum` | Optional | Device (this schema) |
 | [xdm:screenWidth](#xdmscreenwidth) | `integer` | Optional | Device (this schema) |
 | [xdm:type](#xdmtype) | `string` | Optional | Device (this schema) |
 | [xdm:typeID](#xdmtypeid) | `string` | Optional | Device (this schema) |
@@ -129,7 +131,7 @@ The unique model number designation assigned by the manufacturer for this Device
 ## xdm:screenHeight
 ### Screen Height
 
-The number of veritcal pixels of the device's active display in its default orientation.
+The number of vertical pixels of the device's active display in its default orientation.
 
 `xdm:screenHeight`
 * is optional
@@ -142,6 +144,27 @@ The number of veritcal pixels of the device's active display in its default orie
 `integer`
 
 
+
+
+
+
+## xdm:screenOrientation
+### Screen Orientation
+
+The current screen orientation ("portrait" or "landscape")
+
+`xdm:screenOrientation`
+* is optional
+* type: `enum`
+* defined in this schema
+
+The value of this property **must** be equal to one of the [known values below](#xdmscreenorientation-known-values).
+
+### xdm:screenOrientation Known Values
+| Value | Description |
+|-------|-------------|
+| `portrait` | Portrait |
+| `landscape` | Landscape |
 
 
 

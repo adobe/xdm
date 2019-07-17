@@ -29,14 +29,14 @@ Encryption policy represents how content in a given part of the repository is en
 
 ## xdm:keyStatus
 
-The status of the encryption key - 'enabled': the key is enabled and content is accessible to authorized users; 'disabled': the key is disabled and content is not accessible
+The status of the encryption key - 'enabled': the key is enabled and content is accessible to authorized users; 'disabled': the key is disabled and content is not accessible.
 
 `xdm:keyStatus`
 * is optional
 * type: `enum`
 * defined in this schema
 
-The value of this property **must** be equal to one of the [known values below](#xdm:keyStatus-known-values).
+The value of this property **must** be equal to one of the [known values below](#xdmkeystatus-known-values).
 
 ### xdm:keyStatus Known Values
 | Value | Description |
@@ -49,14 +49,14 @@ The value of this property **must** be equal to one of the [known values below](
 
 ## xdm:keyType
 
-The type of encryption key - 'platform': a key used across all tenants of the platform; 'org': a key managed exclusviely for the org to which the storage belongs
+The type of encryption key - 'platform': a key used across all tenants of the platform; 'org': a key managed exclusively for the org to which the storage belongs.
 
 `xdm:keyType`
 * is optional
 * type: `enum`
 * defined in this schema
 
-The value of this property **must** be equal to one of the [known values below](#xdm:keyType-known-values).
+The value of this property **must** be equal to one of the [known values below](#xdmkeytype-known-values).
 
 ### xdm:keyType Known Values
 | Value | Description |

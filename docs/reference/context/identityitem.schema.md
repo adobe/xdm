@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/identityitem
 ```
 
-An end-user identity item, to be included in an instance of `context/identitymap`
+An end-user identity item, to be included in an instance of `context/identitymap`.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -13,7 +13,7 @@ An end-user identity item, to be included in an instance of `context/identitymap
 ## Schema Hierarchy
 
 * Identity Item `https://ns.adobe.com/xdm/context/identityitem`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
 ## Identity Item Example
@@ -26,11 +26,11 @@ An end-user identity item, to be included in an instance of `context/identitymap
 
 # Identity Item Properties
 
-| Property | Type | Required | Defined by |
-|----------|------|----------|------------|
-| [xdm:authenticatedState](#xdmauthenticatedstate) | `enum` | Optional | Identity Item (this schema) |
-| [xdm:id](#xdmid) | `string` | Optional | Identity Item (this schema) |
-| [xdm:primary](#xdmprimary) | `boolean` | Optional | Identity Item (this schema) |
+| Property | Type | Required | Default | Defined by |
+|----------|------|----------|---------|------------|
+| [xdm:authenticatedState](#xdmauthenticatedstate) | `enum` | Optional | `"ambiguous"` | Identity Item (this schema) |
+| [xdm:id](#xdmid) | `string` | Optional |  | Identity Item (this schema) |
+| [xdm:primary](#xdmprimary) | `boolean` | Optional | `false` | Identity Item (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:authenticatedState
@@ -40,15 +40,16 @@ The state this identity is authenticated as for this observed ExperienceEvent.
 `xdm:authenticatedState`
 * is optional
 * type: `enum`
+* default: `"ambiguous"`
 * defined in this schema
 
-The value of this property **must** be equal to one of the [known values below](#xdm:authenticatedState-known-values).
+The value of this property **must** be equal to one of the [known values below](#xdmauthenticatedstate-known-values).
 
 ### xdm:authenticatedState Known Values
 | Value | Description |
 |-------|-------------|
 | `ambiguous` | Ambiguous |
-| `authenticated` | User identified by a login or simular action that was valid at the time of the event observation. |
+| `authenticated` | User identified by a login or similar action that was valid at the time of the event observation. |
 | `loggedOut` | User was identified by a login action at some point of time previously, but is not currently logged in. |
 
 
@@ -82,6 +83,7 @@ Indicates this identity is the preferred identity. Is used as a hint to help sys
 `xdm:primary`
 * is optional
 * type: `boolean`
+* default: `false`
 * defined in this schema
 
 ### xdm:primary Type

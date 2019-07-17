@@ -13,7 +13,7 @@ Subscriptions are licensed entitlements to software, services or goods that are 
 ## Schema Hierarchy
 
 * Subscription `https://ns.adobe.com/xdm/context/subscription`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Person](person.schema.md) `https://ns.adobe.com/xdm/context/person`
   * [Device](device.schema.md) `https://ns.adobe.com/xdm/context/device`
   * [Environment](environment.schema.md) `https://ns.adobe.com/xdm/context/environment`
@@ -63,7 +63,7 @@ Subscriptions are licensed entitlements to software, services or goods that are 
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Subscription (this schema) |
+| [@id](#id) | `string` | Optional | Subscription (this schema) |
 | [xdm:SKU](#xdmsku) | `string` | Optional | Subscription (this schema) |
 | [xdm:billingPeriod](#xdmbillingperiod) | `string` | Optional | Subscription (this schema) |
 | [xdm:billingStartDate](#xdmbillingstartdate) | `string` | Optional | Subscription (this schema) |

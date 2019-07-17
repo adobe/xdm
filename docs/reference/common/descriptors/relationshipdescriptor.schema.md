@@ -13,10 +13,10 @@ While schema descriptors can be used to define metadata about a single schema, t
 
 The following relationship types are defined by XDM:
 
-* `xdm:oneToOne`: describes a 1:1 relationship between a source schema and a destination schema
-* `xdm:oneToMany`: describes a 1:m relationship between a source schema and a destination schema
-* `xdm:manyToOne`: describes a m:1 relationship between a source schema and a destination schema
-* `xdm:manyToMany`: describes an m:n relationship between a source schema and a destination schema
+- `xdm:oneToOne`: describes a 1:1 relationship between a source schema and a destination schema
+- `xdm:oneToMany`: describes a 1:m relationship between a source schema and a destination schema
+- `xdm:manyToOne`: describes a m:1 relationship between a source schema and a destination schema
+- `xdm:manyToMany`: describes an m:n relationship between a source schema and a destination schema
 
 ## Arrays and Denormalized Links
 
@@ -153,7 +153,7 @@ This changes child.json to:
 ## Schema Hierarchy
 
 * Relationship Descriptor `https://ns.adobe.com/xdm/common/descriptors/relationshipdescriptor`
-  * [Schema Descriptor](schemadescriptor.schema.md) `https://ns.adobe.com/xdm/common/desciptors/schemadescriptor`
+  * [Schema Descriptor](schemadescriptor.schema.md) `https://ns.adobe.com/xdm/common/descriptors/schemadescriptor`
   * [Item Selector](itemselector.schema.md) `https://ns.adobe.com/xdm/common/descriptors/itemselector`
 
 
@@ -176,8 +176,8 @@ This changes child.json to:
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | [Schema Descriptor](schemadescriptor.schema.md#@id) |
-| [@type](#@type) | `string` | Optional | [Schema Descriptor](schemadescriptor.schema.md#@type) |
+| [@id](#id) | `string` | Optional | [Schema Descriptor](schemadescriptor.schema.md#id) |
+| [@type](#type) | `string` | Optional | [Schema Descriptor](schemadescriptor.schema.md#type) |
 | [xdm:destinationItem](#xdmdestinationitem) | complex | Optional | Relationship Descriptor (this schema) |
 | [xdm:destinationProperty](#xdmdestinationproperty) | `string` | Optional | Relationship Descriptor (this schema) |
 | [xdm:destinationSchema](#xdmdestinationschema) | `string` | Optional | Relationship Descriptor (this schema) |
@@ -189,12 +189,12 @@ This changes child.json to:
 ## @id
 ### Identifier
 
-The unique identifier for the schema descriptor. This property is required when the descriptor is defined outside of the applicable schema, but is optional when applied via 'meta:descriptors'
+The unique identifier for the schema descriptor. This property is required when the descriptor is defined outside of the applicable schema, but is optional when applied via 'meta:descriptors'.
 
 `@id`
 * is optional
 * type: `string`
-* defined in [Schema Descriptor](schemadescriptor.schema.md#@id)
+* defined in [Schema Descriptor](schemadescriptor.schema.md#id)
 
 ### @id Type
 
@@ -210,12 +210,12 @@ The unique identifier for the schema descriptor. This property is required when 
 ## @type
 ### Type
 
-The type of descriptor this object represents
+The type of descriptor this object represents.
 
 `@type`
 * is optional
 * type: `string`
-* defined in [Schema Descriptor](schemadescriptor.schema.md#@type)
+* defined in [Schema Descriptor](schemadescriptor.schema.md#type)
 
 ### @type Type
 
@@ -311,12 +311,12 @@ The destination schema this descriptor applies to
 ## xdm:sourceItem
 ### Source Item
 
-When present, the selector used to match a specific item in the array pointed to by `sourceProperty`
+When present, the selector used to match a specific item in the array pointed to by `sourceProperty`.
 
 `xdm:sourceItem`
 * is optional
 * type: complex
-* defined in [Schema Descriptor](schemadescriptor.schema.md#xdm:sourceItem)
+* defined in [Schema Descriptor](schemadescriptor.schema.md#xdmsourceitem)
 
 ### xdm:sourceItem Type
 
@@ -352,7 +352,7 @@ When present, the property of the source schema to which this descriptor applies
 `xdm:sourceProperty`
 * is optional
 * type: `string`
-* defined in [Schema Descriptor](schemadescriptor.schema.md#xdm:sourceProperty)
+* defined in [Schema Descriptor](schemadescriptor.schema.md#xdmsourceproperty)
 
 ### xdm:sourceProperty Type
 
@@ -372,7 +372,7 @@ The source schema this descriptor applies to. This property is required when the
 `xdm:sourceSchema`
 * is optional
 * type: `string`
-* defined in [Schema Descriptor](schemadescriptor.schema.md#xdm:sourceSchema)
+* defined in [Schema Descriptor](schemadescriptor.schema.md#xdmsourceschema)
 
 ### xdm:sourceSchema Type
 

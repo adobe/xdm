@@ -5,7 +5,8 @@
 http://ns.adobe.com/adobecloud/core/1.0/asset
 ```
 
-An asset in Adobe Cloud Platform. It is not neccessarily a Digital Asset in the sense of Digital Asset Management, but a piece of content or data that can be represented in the form of a file.
+An _asset_, as defined here, is the principal construct within a _repository_. It is an asset that is created, read, updated, and deleted. It is assets that have identifiers, names, and metadata. It is assets that are organized into hierarchies and collections, and linked to each other. Assets include but are not limited to documents, images, audio, video, motion graphics, and 3D models.
+
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
@@ -21,13 +22,13 @@ An asset in Adobe Cloud Platform. It is not neccessarily a Digital Asset in the 
 ```json
 {
   "repo:id": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
-  "repo:createdDate": "2017-09-26T15:52:25+00:00",
-  "repo:lastModifiedDate": "2017-09-26T15:52:25+00:00",
-  "repo:version": "15",
+  "repo:createDate": "2017-09-26T15:52:25+00:00",
+  "repo:modifyDate": "2017-09-26T15:52:25+00:00",
+  "repo:version": "15b",
   "repo:size": 1632418,
-  "repo:path": "here",
-  "repo:name": "example.png",
-  "repo:etag": "15",
+  "repo:path": "/users/joe/Project 1/logo.png",
+  "repo:name": "logo.png",
+  "repo:etag": "\"aa15\"",
   "dc:format": "image/png"
 }
 ```
@@ -39,10 +40,12 @@ An asset in Adobe Cloud Platform. It is not neccessarily a Digital Asset in the 
 | [_embedded](#_embedded) | `object` | Optional | [HAL Resource](../hal/hal.schema.md#_embedded) |
 | [_links](#_links) | `object` | Optional | [HAL Resource](../hal/hal.schema.md#_links) |
 | [dc:format](#dcformat) | `string` | **Required** | [Common Properties](common.schema.md#dcformat) |
-| [repo:createDate](#repocreatedate) | `string` | Optional | [Common Properties](common.schema.md#repocreatedate) |
+| [repo:createDate](#repocreatedate) | `string` | **Required** | [Common Properties](common.schema.md#repocreatedate) |
+| [repo:createdBy](#repocreatedby) | `string` | Optional | Asset (this schema) |
 | [repo:etag](#repoetag) | `string` | **Required** | Asset (this schema) |
 | [repo:id](#repoid) | `string` | **Required** | Asset (this schema) |
-| [repo:lastModifiedDate](#repolastmodifieddate) | `string` | **Required** | [Common Properties](common.schema.md#repolastmodifieddate) |
+| [repo:modifiedBy](#repomodifiedby) | `string` | Optional | Asset (this schema) |
+| [repo:modifyDate](#repomodifydate) | `string` | **Required** | [Common Properties](common.schema.md#repomodifydate) |
 | [repo:name](#reponame) | `string` | **Required** | [Common Properties](common.schema.md#reponame) |
 | [repo:path](#repopath) | `string` | **Required** | [Common Properties](common.schema.md#repopath) |
 | [repo:size](#reposize) | `integer` | **Required** | Asset (this schema) |
@@ -66,7 +69,7 @@ It is an object whose property names are link relation types (as defined by [RFC
 `object` with following properties:
 
 
-| Property | Type | Required
+| Property | Type | Required |
 |----------|------|----------|
 
 
@@ -89,7 +92,7 @@ It is an object whose property names are link relation types (as defined by [RFC
 `object` with following properties:
 
 
-| Property | Type | Required
+| Property | Type | Required |
 |----------|------|----------|
 
 
@@ -105,7 +108,7 @@ The physical or digital manifestation of the resource. Typically, Format should 
 `dc:format`
 * is **required**
 * type: `string`
-* defined in [Common Properties](common.schema.md#dc:format)
+* defined in [Common Properties](common.schema.md#dcformat)
 
 ### dc:format Type
 
@@ -132,12 +135,12 @@ All instances must conform to this regular expression
 
 ## repo:createDate
 
-The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
+The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The date time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
 
 `repo:createDate`
-* is optional
+* is **required**
 * type: `string`
-* defined in [Common Properties](common.schema.md#repo:createDate)
+* defined in [Common Properties](common.schema.md#repocreatedate)
 
 ### repo:createDate Type
 
@@ -153,6 +156,25 @@ The server date and time when the resource was created in the repository, such a
 ```json
 "2004-10-23T12:00:00-06:00"
 ```
+
+
+## repo:createdBy
+
+ID of the user who initiated the action that caused the resource to be created in the repository.
+
+`repo:createdBy`
+* is optional
+* type: `string`
+* defined in this schema
+
+### repo:createdBy Type
+
+
+`string`
+
+
+
+
 
 
 ## repo:etag
@@ -200,16 +222,35 @@ A unique identifier given to every addressable asset in a given repository.
 ```
 
 
-## repo:lastModifiedDate
+## repo:modifiedBy
 
-The server date and time when the resource was most recently modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
+ID of the user who initiated the action that most recently caused the resource to be modified in the repository.
 
-`repo:lastModifiedDate`
+`repo:modifiedBy`
+* is optional
+* type: `string`
+* defined in this schema
+
+### repo:modifiedBy Type
+
+
+`string`
+
+
+
+
+
+
+## repo:modifyDate
+
+The server date and time when the resource was last modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The date time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
+
+`repo:modifyDate`
 * is **required**
 * type: `string`
-* defined in [Common Properties](common.schema.md#repo:lastModifiedDate)
+* defined in [Common Properties](common.schema.md#repomodifydate)
 
-### repo:lastModifiedDate Type
+### repo:modifyDate Type
 
 
 `string`
@@ -218,7 +259,7 @@ The server date and time when the resource was most recently modified in the rep
 
 
 
-### repo:lastModifiedDate Example
+### repo:modifyDate Example
 
 ```json
 "2004-10-23T12:00:00-06:00"
@@ -231,7 +272,7 @@ The server date and time when the resource was most recently modified in the rep
 `repo:name`
 * is **required**
 * type: `string`
-* defined in [Common Properties](common.schema.md#repo:name)
+* defined in [Common Properties](common.schema.md#reponame)
 
 ### repo:name Type
 
@@ -249,7 +290,7 @@ The server date and time when the resource was most recently modified in the rep
 `repo:path`
 * is **required**
 * type: `string`
-* defined in [Common Properties](common.schema.md#repo:path)
+* defined in [Common Properties](common.schema.md#repopath)
 
 ### repo:path Type
 
@@ -275,6 +316,7 @@ Size of the asset in bytes.
 
 
 `integer`
+* minimum value: `0`
 
 
 

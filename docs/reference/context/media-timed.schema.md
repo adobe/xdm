@@ -13,7 +13,7 @@ Timed media - main content, ads & chapters
 ## Schema Hierarchy
 
 * Timed Media Information `https://ns.adobe.com/xdm/context/media-timed`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Timed Media Primary Asset Reference](media-timed-asset-reference.schema.md) `https://ns.adobe.com/xdm/context/media-timed-asset-reference`
   * [Primary Asset View Details](media-timed-asset-view-details.schema.md) `https://ns.adobe.com/xdm/context/media-timed-asset-view-details`
   * [Timed Media Chapter Information](media-timed-chapter.schema.md) `https://ns.adobe.com/xdm/context/media-timed-chapter`

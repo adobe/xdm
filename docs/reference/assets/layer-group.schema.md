@@ -102,7 +102,7 @@ Unknown type ``.
 ## xdm:name
 ### Name
 
-Name of the Layer Group. This will be visible to the user and users can specify names that can help them to identify different Layer Groups
+Name of the layer group. This will be visible to the user and users can specify names that can help them to identify different layer groups.
 
 `xdm:name`
 * is optional

@@ -13,7 +13,7 @@ A standard email address.
 ## Schema Hierarchy
 
 * Email Address `https://ns.adobe.com/xdm/context/emailaddress`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
 ## Email Address Example

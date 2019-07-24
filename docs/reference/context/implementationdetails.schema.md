@@ -13,7 +13,7 @@ Details about the SDK, library or service used in an application's or web page's
 ## Schema Hierarchy
 
 * Implementation Details `https://ns.adobe.com/xdm/context/implementationdetails`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
 ## Implementation Details Example
@@ -57,7 +57,7 @@ SDK or endpoint identifier. All SDKs or endpoints are identified through a URI, 
 | `https://ns.adobe.com/experience/analytics/appmeasurement` | Adobe App Measurement |
 | `https://ns.adobe.com/experience/analytics/mbox` | Adobe Target mBox |
 | `https://ns.adobe.com/experience/visitorapi` | Adobe Visitor Service |
-| `https://ns.adobe.com/experience/adcloud/viewability` | Adobe AdCloud Viewability |
+| `https://ns.adobe.com/experience/adcloud/viewability` | Adobe Advertising Cloud Viewability |
 
 
 

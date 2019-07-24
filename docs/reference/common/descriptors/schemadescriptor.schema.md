@@ -13,7 +13,7 @@ A descriptor that contains metadata about an XDM schema, including an optional p
 ## Schema Hierarchy
 
 * Schema Descriptor `https://ns.adobe.com/xdm/common/descriptors/schemadescriptor`
-  * [Extensibility base schema](../extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Item Selector](itemselector.schema.md) `https://ns.adobe.com/xdm/common/descriptors/itemselector`
 
 
@@ -44,7 +44,7 @@ A descriptor that contains metadata about an XDM schema, including an optional p
 ## @id
 ### Identifier
 
-The unique identifier for the schema descriptor. This property is required when the descriptor is defined outside of the applicable schema, but is optional when applied via 'meta:descriptors'
+The unique identifier for the schema descriptor. This property is required when the descriptor is defined outside of the applicable schema, but is optional when applied via 'meta:descriptors'.
 
 `@id`
 * is optional
@@ -65,7 +65,7 @@ The unique identifier for the schema descriptor. This property is required when 
 ## @type
 ### Type
 
-The type of descriptor this object represents
+The type of descriptor this object represents.
 
 `@type`
 * is optional
@@ -89,7 +89,7 @@ The type of descriptor this object represents
 ## xdm:sourceItem
 ### Source Item
 
-When present, the selector used to match a specific item in the array pointed to by `sourceProperty`
+When present, the selector used to match a specific item in the array pointed to by `sourceProperty`.
 
 `xdm:sourceItem`
 * is optional

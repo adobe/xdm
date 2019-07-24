@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/experienceevent-profile-stitch
 ```
 
-ExperienceEvent Profile Stitch Details.
+ExperienceEvent profile stitch details.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -13,7 +13,7 @@ ExperienceEvent Profile Stitch Details.
 ## Schema Hierarchy
 
 * ExperienceEvent Profile Stitch Details `https://ns.adobe.com/xdm/context/experienceevent-profile-stitch`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
 ## ExperienceEvent Profile Stitch Details Example
@@ -76,7 +76,7 @@ ExperienceEvent Profile Stitch Details.
 ## xdm:profileStitch
 ### Profile Stitch
 
-Details about the ids that were joined by profile stitching.
+Details about the IDs that were joined by profile stitching.
 
 `xdm:profileStitch`
 * is optional

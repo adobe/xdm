@@ -49,7 +49,7 @@ The ID associated with this geographical unit.
 
 
 ## xdm:label
-### Label of the geographical unit.
+### Label of the Geographical Unit.
 
 The user-friendly name for the geographical unit.
 

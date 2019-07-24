@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/metricdefinition"],
   "description":
-    "The commerce metric productViews describes the number of product views that have occurred. Because the number of products on a page might be greater than one, this number may differ from the page view count of product pages.",
+    "The commerce metric `productViews` describes the number of product views that have occurred. Because the number of products on a page might be greater than one, this number may differ from the page view count of product pages.",
   "definitions": {
     "metricdefinition": {
       "properties": {

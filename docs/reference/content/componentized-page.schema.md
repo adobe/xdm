@@ -316,7 +316,7 @@ Width in pixels
 
 ## xdm:language
 
-Specifies the language of this page. the language property should conform to BPC 47, for example `en-GB`
+Specifies the language of this page. the language property should conform to BPC 47, for example `en-GB`.
 
 `xdm:language`
 * is optional

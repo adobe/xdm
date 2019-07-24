@@ -37,7 +37,7 @@
         "xdm:category": {
           "title": "Category",
           "type": "string",
-          "description": "Primary categorization (category) name of the Master/variant."
+          "description": "Primary categorization (category) name of the master/variant."
         },
         "xdm:department": {
           "title": "Department",
@@ -47,7 +47,7 @@
         "xdm:brand": {
           "title": "Brand",
           "type": "string",
-          "description": "Brand of the Master/Variant products."
+          "description": "Brand of the master/Variant products."
         },
         "xdm:masterProductID": {
           "title": "Master Product Identifier",
@@ -58,7 +58,7 @@
         "xdm:masterProductSKU": {
           "title": "Master Product SKU",
           "type": "string",
-          "description": "The unique SKU (Stock Keeping Unit) of the master product assigned by the vendor or manufacturer(to update)."
+          "description": "The unique SKU (Stock Keeping Unit) of the master product assigned by the vendor or manufacturer (to update)."
         },
         "xdm:masterProductName": {
           "title": "Master Product Name",
@@ -105,7 +105,7 @@
         "xdm:COGS": {
           "title": "Cost of Good Sold",
           "type": "number",
-          "description": "Cost of Good Sold. In the `currencyCode` currency."
+          "description": "Cost of good sold. In the `currencyCode` currency."
         },
         "xdm:listPrice": {
           "title": "List Price",
@@ -143,7 +143,7 @@
         "xdm:productURL": {
           "title": "Product URL",
           "type": "string",
-          "description": "The URL for the primary Product View of the product variant page."
+          "description": "The URL for the primary product view of the product variant page."
         },
         "xdm:manufacturerName": {
           "title": "Manufacturer Name",

@@ -1,5 +1,5 @@
 
-# Extensibility base schema Schema
+# Extensibility Base Schema Schema
 
 ```
 https://ns.adobe.com/xdm/common/extensible
@@ -23,7 +23,7 @@ Replace `#/definitions/…` with the correct path to the `definitions` object in
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Cannot be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [common/extensible.schema.json](common/extensible.schema.json) |
 
-## Extensibility base schema Examples
+## Extensibility Base Schema Examples
 
 ```json
 {
@@ -34,24 +34,6 @@ Replace `#/definitions/…` with the correct path to the `definitions` object in
   "xdm:modifyDate": "2017-09-26T15:52:25+00:00",
   "repo:modifyDate": "2017-09-26T15:52:25+00:00",
   "xdm:repositoryLastModifiedBy": "2017-09-26T15:52:25+00:00",
-  "repo:version": "15",
-  "dc:title": "This is an example",
-  "repo:size": 1632418,
-  "xdm:path": "/here",
-  "repo:etag": "15"
-}
-```
-
-```json
-{
-  "https://ns.example.com/asset_name": "custom_asset_1",
-  "repo:id": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
-  "xdm:createDate": "2017-09-26T15:52:25+00:00",
-  "repo:createDate": "2017-09-26T15:52:25+00:00",
-  "xdm:repositoryCreatedBy": "lars",
-  "xdm:modifyDate": "2017-09-26T15:52:25+00:00",
-  "repo:modifyDate": "2017-09-26T15:52:25+00:00",
-  "xdm:repository_lastModifiedBy": "2017-09-26T15:52:25+00:00",
   "repo:version": "15",
   "dc:title": "This is an example",
   "repo:size": 1632418,
@@ -104,6 +86,24 @@ Replace `#/definitions/…` with the correct path to the `definitions` object in
   "repo:version": "15",
   "repo:size": 1632418,
   "xdm:path": "here",
+  "repo:etag": "15"
+}
+```
+
+```json
+{
+  "https://ns.example.com/asset_name": "custom_asset_1",
+  "repo:id": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
+  "xdm:createDate": "2017-09-26T15:52:25+00:00",
+  "repo:createDate": "2017-09-26T15:52:25+00:00",
+  "xdm:repositoryCreatedBy": "lars",
+  "xdm:modifyDate": "2017-09-26T15:52:25+00:00",
+  "repo:modifyDate": "2017-09-26T15:52:25+00:00",
+  "xdm:repository_lastModifiedBy": "2017-09-26T15:52:25+00:00",
+  "repo:version": "15",
+  "dc:title": "This is an example",
+  "repo:size": 1632418,
+  "xdm:path": "/here",
   "repo:etag": "15"
 }
 ```

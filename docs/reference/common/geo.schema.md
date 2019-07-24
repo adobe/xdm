@@ -211,7 +211,7 @@ All instances must conform to this regular expression
 ## xdm:dmaID
 ### Designated Market Area
 
-The Nielsen Media Research designated market area.
+The Nielsen media research designated market area.
 
 `xdm:dmaID`
 * is optional
@@ -231,7 +231,7 @@ The Nielsen Media Research designated market area.
 ## xdm:msaID
 ### Metropolitan Statistical Area
 
-The Metropolitan Statistical Area in the USA where the observation occurred.
+The metropolitan statistical area in the USA where the observation occurred.
 
 `xdm:msaID`
 * is optional

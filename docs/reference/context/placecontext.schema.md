@@ -15,7 +15,7 @@ Examples include location specific information such as weather, local time, traf
 ## Schema Hierarchy
 
 * Place Context `https://ns.adobe.com/xdm/context/placecontext`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Geo](../common/geo.schema.md) `https://ns.adobe.com/xdm/common/geo`
   * [Point of Interest Interaction](poi-interaction.schema.md) `https://ns.adobe.com/xdm/context/poi-interaction`
 
@@ -89,7 +89,7 @@ Examples include location specific information such as weather, local time, traf
 ## xdm:POIinteraction
 ### POI Interaction
 
-The Point of Interest(POI) interaction details.
+The point of interest (POI) interaction details.
 
 `xdm:POIinteraction`
 * is optional
@@ -108,7 +108,7 @@ The Point of Interest(POI) interaction details.
 ## xdm:activePOIs
 ### POI Detail
 
-Details of the POIs that cause the event.
+Details of the points of interest (POIs) that cause the event.
 
 `xdm:activePOIs`
 * is optional

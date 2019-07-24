@@ -8,6 +8,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/adobecloudplatform/ims/user",
   "title": "IMS User",
+  "type": "object",
   "description":
     "This model represents an authenticated IMS User. The IMS user principal is a user account under Adobe's identity management system (IMS).",
   "definitions": {

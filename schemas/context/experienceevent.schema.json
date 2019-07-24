@@ -19,11 +19,10 @@
   "definitions": {
     "experienceevent": {
       "properties": {
-        "xdm:correlationId": {
-          "title": "ExperienceEvent Correlation ID",
+        "xdm:stitchId": {
+          "title": "ExperienceEvent Stitch ID",
           "type": "string",
-          "format": "uuid",
-          "description": "The ID for a group or collection of Experience Events when multiple desperate events need to be tied together or correlated in some fashion. This is intended to be populated by the data producer prior to ingestion."
+          "description": "An ID to stitch or group mutliple Experience Events together that need to be correlated in some fashion. This is intended to be populated by the data producer prior to ingestion."
         }
        }
     }

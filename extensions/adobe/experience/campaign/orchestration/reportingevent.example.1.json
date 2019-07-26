@@ -12,6 +12,8 @@
   "xdm:flowControlType": "timer",
   "xdm:flowControlID":
     "https://ns.adobe.com/experience/campaign/orchestration/flowcontrol/123",
+  "xdm:stepID":
+    "https://ns.adobe.com/experience/campaign/orchestration/step/123",
   "xdm:eventMetrics": {
     "https://ns.adobe.com/experience/campaign/orchestrationEnteredJourneyInstance": {
       "xdm:value": 1

@@ -58,6 +58,12 @@
           "format": "uri",
           "description": "The identifier of the flow control in a journey version"
         },
+        "xdm:stepID": {
+          "title": "Unique identifier for the step",
+          "type": "string",
+          "format": "uri",
+          "description": "The identifier of the step in a journey version"
+        },
         "xdm:eventMetrics": {
           "title": "Metrics to be reported",
           "$ref": "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics",

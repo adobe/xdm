@@ -20,6 +20,12 @@
           "meta:enum": {
             "http": "The external event recieved on http endpoint"
           }
+        },
+        "xdm:transitionID": {
+          "title": "Transition triggered by the received event",
+          "type": "string",
+          "format": "uri",
+          "description": "Unique identifier of the transition that has been triggered by the received event"
         }
       }
     }

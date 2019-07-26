@@ -2,6 +2,7 @@
   "https://ns.adobe.com/experience/campaign/orchestrationExternalEvent": {
     "@id":
       "https://ns.adobe.com/experience/campaign/orchestration/externalevent/1234",
-    "xdm:eventType": "http"
+    "xdm:eventType": "http",
+    "xdm:transitionID": "https://ns.adobe.com/experience/campaign/orchestration/transition/123"
   }
 }

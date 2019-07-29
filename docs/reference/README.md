@@ -211,6 +211,8 @@
 * [Profile Work Details](./context/profile-work-details.schema.md) – `https://ns.adobe.com/xdm/context/profile-work-details` (Experimental)
 * [Push Notification Token](./context/pushnotificationtoken.schema.md) – `https://ns.adobe.com/xdm/context/pushnotificationtoken` (Stabilizing)
 * [Search](./context/search.schema.md) – `https://ns.adobe.com/xdm/context/search` (Stabilizing)
+* [Segment Definition](./context/segmentdefinition.schema.md) – `https://ns.adobe.com/xdm/context/segmentdefinition` (Experimental)
+* [Segment Expression](./context/segmentdefinition-expression.schema.md) – `https://ns.adobe.com/xdm/context/segmentdefinition-expression` (Experimental)
 * [Segment Identity](./context/segmentidentity.schema.md) – `https://ns.adobe.com/xdm/context/segmentidentity` (Experimental)
 * [Segment Membership](./context/segmentmembership.schema.md) – `https://ns.adobe.com/xdm/context/segmentmembership` (Experimental)
 * [Segment Membership Item](./context/segmentmembershipitem.schema.md) – `https://ns.adobe.com/xdm/context/segmentmembershipitem` (Experimental)
@@ -244,6 +246,12 @@
 * [Unpublished Event](./common/event/unpublished.schema.md) – `https://ns.adobe.com/xdm/common/event/unpublished` (Experimental)
 * [Updated Event](./common/event/updated.schema.md) – `https://ns.adobe.com/xdm/common/event/updated` (Experimental)
 
+## /common/descriptors/
+
+* [Item Selector](./common/descriptors/itemselector.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/itemselector` (Experimental)
+* [Relationship Descriptor](./common/descriptors/relationshipdescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/relationshipdescriptor` (Experimental)
+* [Schema Descriptor](./common/descriptors/schemadescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/schemadescriptor` (Experimental)
+
 ## /external/activity-streams-2/
 
 * [Activity](./external/activity-streams-2/activity.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/activity` (Experimental)
@@ -264,19 +272,10 @@
 * [Geo Coordinates](./external/schema/geocoordinates.schema.md) – `http://schema.org/GeoCoordinates` (Experimental)
 * [Geo Shape](./external/schema/geoshape.schema.md) – `http://schema.org/GeoShape` (Experimental)
 
-## /common/descriptors/
+## /external/hal/
 
-* [Item Selector](./common/descriptors/itemselector.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/itemselector` (Experimental)
-* [Relationship Descriptor](./common/descriptors/relationshipdescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/relationshipdescriptor` (Experimental)
-* [Schema Descriptor](./common/descriptors/schemadescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/schemadescriptor` (Experimental)
-
-## /external/iptc/
-
-* [Creator](./external/iptc/creator.schema.md) – `http://www.iptc.org/creator` (Experimental)
-* [Episode](./external/iptc/episode.schema.md) – `http://www.iptc.org/season` (Experimental)
-* [Rating](./external/iptc/rating.schema.md) – `http://www.iptc.org/rating` (Experimental)
-* [Season](./external/iptc/season.schema.md) – `http://www.iptc.org/episode` (Experimental)
-* [Series](./external/iptc/series.schema.md) – `http://www.iptc.org/series` (Experimental)
+* [HAL Link](./external/hal/hal-link.schema.md) – `https://ns.adobe.com/xdm/external/hal/link` (Experimental)
+* [HAL Resource](./external/hal/hal.schema.md) – `https://ns.adobe.com/xdm/external/hal/resource` (Experimental)
 
 ## /external/repo/
 
@@ -288,10 +287,13 @@
 * [Effective Privileges](./external/repo/effectiveprivileges.schema.md) – `https://ns.adobe.com/xdm/external/repo/effectiveprivileges` (Experimental)
 * [Sub-Directory](./external/repo/sub-directory.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/sub-directory` (Experimental)
 
-## /external/hal/
+## /external/iptc/
 
-* [HAL Link](./external/hal/hal-link.schema.md) – `https://ns.adobe.com/xdm/external/hal/link` (Experimental)
-* [HAL Resource](./external/hal/hal.schema.md) – `https://ns.adobe.com/xdm/external/hal/resource` (Experimental)
+* [Creator](./external/iptc/creator.schema.md) – `http://www.iptc.org/creator` (Experimental)
+* [Episode](./external/iptc/episode.schema.md) – `http://www.iptc.org/season` (Experimental)
+* [Rating](./external/iptc/rating.schema.md) – `http://www.iptc.org/rating` (Experimental)
+* [Season](./external/iptc/season.schema.md) – `http://www.iptc.org/episode` (Experimental)
+* [Series](./external/iptc/series.schema.md) – `http://www.iptc.org/series` (Experimental)
 
 ## /common/descriptors/relationship/
 

@@ -1,0 +1,250 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/experience/adcloud/adconversions",
+  "title": "Raw Conversions for Advertising Platform",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/time-series"],
+  "description": "Raw Data that holds Cross Channel Advertising Conversion Events. ",
+  "definitions": {
+    "adconversions": {
+      "properties": {
+        "xdm:logId": {
+          "title": "Internal identifier for the batch",
+          "type": "number",
+          "description": "Internal identifier for the batch"
+        },
+        "xdm:conversionTime": {
+          "title": "Conversion Time",
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp that indicates when the conversion event occured"
+        },
+        "xdm:triggerTime": {
+          "title": "Trigger Time",
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp that indicates when the click event occured"
+        },
+        "xdm:advertiserId": {
+          "title": "Advertiser Identifier",
+          "type": "string",
+          "description": "Advertiser ID for the campaign that initiated the conversion event"
+        },
+        "xdm:searchEngineId": {
+          "title": "Search Engine Identifier",
+          "type": "integer",
+          "description": "The application-specified identifier used to identify the Search Advertising Platform Name."
+        },
+        "xdm:propertyName": {
+          "title": "Property Name",
+          "type": "string",
+          "description": "Property Name Configured by Pixel, Analytics, Custom Feeds"
+        },
+        "xdm:clientId1": {
+          "title": "Client ID1",
+          "type": "string",
+          "description": "Alphanumeric strings that are matched against clicks to extract keyword,creative,adgroup IDs along with keyword text and matchtype"
+        },
+        "xdm:clientId2": {
+          "title": "Client ID2",
+          "type": "string",
+          "description": "Alphanumeric strings that are matched against clicks to extract keyword,creative,adgroup IDs along with keyword text and matchtype"
+        },
+        "xdm:accountId": {
+          "title": "Account Identifier",
+          "type": "string",
+          "description": "Account ID for the search advertising platform campaign that initiated the conversion event."
+        },
+        "xdm:displayCampaignId": {
+          "title": "Display Campaign Identifier",
+          "type": "string",
+          "description": "Campaign ID on the display advertising platform."
+        },
+        "xdm:campaignId": {
+          "title": "Campaign Identifier",
+          "type": "string",
+          "description": "Campaign ID on the search advertising platform."
+        },
+        "xdm:placementId": {
+          "title": "Placement Identifier",
+          "type": "string",
+          "description": "Placement ID on the display advertising platform."
+        },
+        "xdm:adgroupId": {
+          "title": "Ad Group Identifier",
+          "type": "string",
+          "description": "Ad Group ID on the search advertising platform."
+        },
+        "xdm:displayAdId": {
+          "title": "Display Ad Identifier",
+          "type": "string",
+          "description": "Ad ID on the display advertising platform."
+        },
+        "xdm:adId": {
+          "title": "Ad Identifier",
+          "type": "string",
+          "description": "Ad ID on the search advertising platform."
+        },
+        "xdm:term": {
+          "title": "Search Term",
+          "type": "string",
+          "description": "Search Term that contributed to the conversion."
+        },
+        "xdm:termId": {
+          "title": "Search Term Identifier",
+          "type": "string",
+          "description": "Search Term ID on the search advertising platform."
+        },
+        "xdm:matchType": {
+          "title": "Term Match Type",
+          "type": "string",
+          "description": "Match Type associated to the Search Term being targeted for the Ad.",
+          "enum": [
+            "Broad",
+            "Phrase",
+            "Exact",
+            "Advanced",
+            "Standard",
+            "Website",
+            "Product Target",
+            "Product Group",
+            "unknown"
+          ],
+          "meta:enum": {
+            "Broad": "Broad",
+            "Phrase": "Phrase",
+            "Exact": "Exact",
+            "Advanced": "Advanced",
+            "Standard": "Standard",
+            "Website": "Website",
+            "Product Target": "Product Target",
+            "Product Group": "Product Group",
+            "null": "Unknown"
+          }
+        },
+        "xdm:lastClickUid": {
+          "title": "Last Click UID",
+          "type": "string",
+          "description": "Unique Identifier of the Last Click Event"
+        },
+        "xdm:transactionId": {
+          "title": "Transaction Identifier",
+          "type": "string",
+          "description": "Click Transaction Identifier of the Event"
+        },
+        "xdm:geoipLocationId": {
+          "title": "Geo IP Location Identifier",
+          "type": "number",
+          "description": "A numeric identifier that is obtained from Maxmind’s GeoIP package that represents the Geo."
+        },
+        "xdm:domainPlacement": {
+          "title": "Domain Placement",
+          "type": "string",
+          "description": "Placement Domain"
+        },
+        "xdm:referrerUrl": {
+          "title": "Referrer URL",
+          "type": "string",
+          "description": "The referrer is the webpage that sends visitors to your site using a link."
+        },
+        "xdm:searchTerm": {
+          "title": "Search Term",
+          "type": "string",
+          "description": "Original Term used for the Search"
+        },
+        "xdm:linkType": {
+          "title": "Link Type",
+          "type": "string",
+          "description": "Query Parameter for Tracking URL that can have Site Link, Product Listing Ads or Product Title"
+        },
+        "xdm:surferRef": {
+          "title": "Surfer Reference",
+          "type": "string",
+          "description": "Surfer Reference Identifier that triggered the event generally browser cookie."
+        },
+        "xdm:rawData": {
+          "title": "Raw Data",
+          "type": "string",
+          "description": "Raw Conversion Data as received from the Customer"
+        },
+        "xdm:clickThroughData": {
+          "title": "Click Through Data",
+          "type": "number",
+          "description": "Attributed Revenue Stiched to the Click Event when a surfer clicks an Ad"
+        },
+        "xdm:clickThroughConversions": {
+          "title": "Click Through Conversions",
+          "type": "number",
+          "description": "Count of Transaction Events with revenue attributed to the Click Event"
+        },
+        "xdm:clickThroughmaxdata": {
+          "title": "Click Through Max Data",
+          "type": "number",
+          "description": "A keyword on a day could be attributed to multiple transaction events, this is the max of clickthrough data in the series/group"
+        },
+        "xdm:viewThroughData": {
+          "title": "View Through Maximum Data",
+          "type": "number",
+          "description": "Count of Transaction Events with revenue attributed to the Impression Event"
+        },
+        "xdm:viewThroughConversions": {
+          "title": "View Through Conversions",
+          "type": "number",
+          "description": "Raw Conversions Value if Triggering Event Type is Impression"
+        },
+        "xdm:viewThroughMaxData": {
+          "title": "View Through Maximum Data",
+          "type": "number",
+          "description": "A keyword on a day could be attributed to multiple transaction events, this is the max of viewthrough data in the series/group"
+        },
+        "xdm:channelType": {
+          "title": "Channel Type",
+          "type": "integer",
+          "description": "The conversion event was triggered by which advertising channel - search, display, video."
+        },
+        "xdm:priorSearchClick": {
+          "title": "Prior Search Click",
+          "type": "string",
+          "description": "First click from the Search Campaigns within a lookback window of configured number of days"
+        },
+        "xdm:priorDisplayClick": {
+          "title": "Prior Display Click",
+          "type": "string",
+          "description": "First click from Display Campaigns within a lookback window of configured number of days"
+        },
+        "xdm:priorImpression": {
+          "title": "Prior Impression",
+          "type": "string",
+          "description": "First impression of display ad and used for first event attribution rule"
+        },
+        "xdm:conversionType": {
+          "title": "Conversion Type",
+          "type": "integer",
+          "description": "Feed Conversion Type"
+        },
+        "xdm:device": {
+          "title": "Device",
+          "$ref": "https://ns.adobe.com/xdm/context/device",
+          "description": "The device from where the ad was displayed."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/time-series"
+    },
+    {
+      "$ref": "#/definitions/adconversions"
+    }
+  ],
+  "meta:status": "experimental"
+}

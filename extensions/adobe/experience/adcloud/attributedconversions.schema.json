@@ -24,7 +24,7 @@
         "xdm:pathPosition": {
           "title": "Path Position",
           "type": "string",
-          "description": "Path Position to conversion"
+          "description": "Path Position of a click/impression event that attributed to a conversion event"
         },
         "xdm:logId": {
           "title": "Internal identifier for the batch",
@@ -43,11 +43,11 @@
           "format": "date-time",
           "description": "Trigger Time of the Event"
         },
-        "xdm:originaltriggerTime": {
+        "xdm:originalTriggerTime": {
           "title": "Original Trigger Time",
           "type": "string",
           "format": "date-time",
-          "description": "Original Trigger Time"
+          "description": "Original Trigger Time of the Event."
         },
         "xdm:advertiserId": {
           "title": "Advertiser Identifier",
@@ -59,7 +59,7 @@
           "type": "integer",
           "description": "The application-specified identifier used to identify the Search Advertising Platform Name."
         },
-        "xdm:displaycampaignId": {
+        "xdm:displayCampaignId": {
           "title": "Display Campaign Identifier",
           "type": "string",
           "description": "Campaign ID on the display advertising platform."
@@ -79,7 +79,7 @@
           "type": "string",
           "description": "Ad Group ID on the search advertising platform."
         },
-        "xdm:displayadId": {
+        "xdm:displayAdId": {
           "title": "Display Ad Identifier",
           "type": "string",
           "description": "Ad ID on the display advertising platform."
@@ -141,60 +141,60 @@
           "type": "string",
           "description": "Original Term used for the Search"
         },
-        "xdm:geoiplocationId": {
+        "xdm:geoipLocationId": {
           "title": "Geo IP Location Identifier",
           "type": "number",
-          "description": "Location ID based on Geographical IP"
+          "description": "A numeric identifier that is obtained from Maxmind’s GeoIP package that represents the Geo."
         },
         "xdm:propertyName": {
           "title": "Property Name",
           "type": "string",
           "description": "Property Name Configured by Pixel, Analytics, Custom Feeds"
         },
-        "xdm:clickthroughValue": {
+        "xdm:clickThroughValue": {
           "title": "Click Through Value",
           "type": "number",
           "description": "Raw Conversion Value if Triggering Event Type is Click"
         },
-        "xdm:clickthroughCount": {
+        "xdm:clickThroughCount": {
           "title": "Click Through Count",
           "type": "number",
           "description": "Raw Conversion Count if Triggering Event Type is Click"
         },
-        "xdm:viewthroughValue": {
+        "xdm:viewThroughValue": {
           "title": "View Through Value",
           "type": "number",
           "description": "Raw Conversion Value if Triggering Event Type is Impression"
         },
-        "xdm:viewthroughCount": {
+        "xdm:viewThroughCount": {
           "title": "View Through Count",
           "type": "number",
-          "description": "Raw Conversion Count if Triggering Event Type is Click"
+          "description": "Raw Conversion Count if Triggering Event Type is Impression"
         },
-        "xdm:clickviewthroughValue": {
+        "xdm:clickviewThroughValue": {
           "title": "Click View Through Value",
           "type": "number",
           "description": "Raw conversion value if trigger event is click but impressions present in path"
         },
-        "xdm:clickviewthroughCount": {
+        "xdm:clickviewThroughCount": {
           "title": "Click View Through Count",
           "type": "number",
           "description": "Raw conversion Count if trigger event is click but impressions present in path"
         },
-        "xdm:viewclickthroughValue": {
+        "xdm:viewclickThroughValue": {
           "title": "View Click Through Value",
           "type": "number",
-          "description": "Raw conversion value if trigger event is impression but clicks  present in path"
+          "description": "Raw conversion value if trigger event is impression but clicks present in path"
         },
-        "xdm:viewclickthroughCount": {
+        "xdm:viewclickThroughCount": {
           "title": "View View Through Count",
           "type": "number",
-          "description": "Raw conversion count if trigger event is impression but clicks  present in path"
+          "description": "Raw conversion count if trigger event is impression but clicks present in path"
         },
         "xdm:pathSize": {
           "title": "Path Size",
           "type": "integer",
-          "description": "Path Size of Trigger Event Types"
+          "description": "Path Size of Trigger Event Type"
         },
         "xdm:conversionType": {
           "title": "Conversion Type",

@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/time-series"],
-  "description": "Post Attributed Conversion Events. Conversion Path can contain at the most 10 events that contributed to the conversion event. ",
+  "description": "Post Attributed Conversion Events. Conversion Path can contain at the most ten events that contributed to the conversion event. ",
   "definitions": {
     "attributedconversions": {
       "properties": {

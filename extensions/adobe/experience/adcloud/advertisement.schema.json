@@ -72,6 +72,11 @@
           "type": "string",
           "description": "Identifier for the keyword that the surfer used to search, which triggered this click event."
         },
+        "xdm:keyword": {
+          "title": "Keyword",
+          "type": "string",
+          "description": "Listing keyword for which customer is bidding "
+        },
         "xdm:audienceID": {
           "title": "Audience Identifier",
           "type": "string",

@@ -29,7 +29,7 @@
         "xdm:logId": {
           "title": "Internal identifier for the batch",
           "type": "number",
-          "description": "Internal identifier for the batch"
+          "description": "Internal identifier for the batch represented in the following format of YYYYMMDDHH24"
         },
         "xdm:conversionTime": {
           "title": "Conversion Time",
@@ -47,62 +47,52 @@
           "title": "Original Trigger Time",
           "type": "string",
           "format": "date-time",
-          "description": "Original Trigger Time of the Event."
+          "description": "Original Trigger Time of the Event"
         },
         "xdm:advertiserId": {
           "title": "Advertiser Identifier",
           "type": "string",
-          "description": "Advertiser Identifier"
+          "description": "Identifier for the advertiser"
         },
         "xdm:searchEngineId": {
           "title": "Search Engine Identifier",
           "type": "integer",
-          "description": "The application-specified identifier used to identify the Search Advertising Platform Name."
-        },
-        "xdm:displayCampaignId": {
-          "title": "Display Campaign Identifier",
-          "type": "string",
-          "description": "Campaign ID on the display advertising platform."
+          "description": "The application-specified identifier used to identify the Search Advertising Platform Name"
         },
         "xdm:campaignId": {
           "title": "Campaign Identifier",
           "type": "string",
-          "description": "Campaign ID on the search advertising platform."
+          "description": "Campaign Identifer on the advertising platform"
         },
         "xdm:placementId": {
           "title": "Placement Identifier",
           "type": "string",
-          "description": "Placement ID on the display advertising platform."
+          "description": "Placement ID on the display advertising platform. It will be populated only for non-search advertising related campaigns"
         },
         "xdm:adgroupId": {
           "title": "Ad Group Identifier",
           "type": "string",
-          "description": "Ad Group ID on the search advertising platform."
-        },
-        "xdm:displayAdId": {
-          "title": "Display Ad Identifier",
-          "type": "string",
-          "description": "Ad ID on the display advertising platform."
+          "description": "Ad Group ID on the search advertising platform"
         },
         "xdm:adId": {
           "title": "Ad Identifier",
           "type": "string",
-          "description": "Ad ID on the search advertising platform."
+          "description": "Ad ID on the advertising platform"
         },
         "xdm:term": {
           "title": "Search Term",
           "type": "string",
-          "description": "Search Term that contributed to the conversion."
+          "description": "Search Term that contributed to the conversion"
         },
         "xdm:termId": {
           "title": "Search Term Identifier",
           "type": "string",
-          "description": "Search Term ID on the search advertising platform."
+          "description": "Search Term ID on the search advertising platform"
         },
         "xdm:matchType": {
           "title": "Term Match Type",
           "type": "string",
-          "description": "Match Type associated to the Search Term being targeted for the Ad.",
+          "description": "Match Type associated to the Search Term being targeted for the Ad",
           "enum": [
             "Broad",
             "Phrase",
@@ -134,7 +124,7 @@
         "xdm:referrerUrl": {
           "title": "Referrer URL",
           "type": "string",
-          "description": "The referrer is the webpage that sends visitors to your site using a link."
+          "description": "The referrer is the webpage that sends visitors to your site using a link"
         },
         "xdm:searchTerm": {
           "title": "Search Term",
@@ -144,7 +134,7 @@
         "xdm:geoipLocationId": {
           "title": "Geo IP Location Identifier",
           "type": "number",
-          "description": "A numeric identifier that is obtained from Maxmind’s GeoIP package that represents the Geo."
+          "description": "A numeric identifier that is obtained from Maxmind’s GeoIP package that represents the Geo"
         },
         "xdm:propertyName": {
           "title": "Property Name",
@@ -194,22 +184,22 @@
         "xdm:pathSize": {
           "title": "Path Size",
           "type": "integer",
-          "description": "Path Size of Trigger Event Type"
+          "description": "Path Size of Trigger Event Type. It is a numerical value that represents the count of the conversion path that triggered the event"
         },
         "xdm:conversionType": {
           "title": "Conversion Type",
           "type": "integer",
-          "description": "Feed Conversion Type"
+          "description": "Feed Conversion Type indicates where the conversion event originated from - examples client, analytics, cross device"
         },
         "xdm:productId": {
           "title": "Product Identifier",
           "type": "string",
-          "description": "Product Id on the search advertising platform."
+          "description": "Product Id on the search advertising platform"
         },
         "xdm:device": {
           "title": "Device",
           "$ref": "https://ns.adobe.com/xdm/context/device",
-          "description": "The device from where the ad was displayed."
+          "description": "The device from where the ad was displayed"
         },
         "xdm:eventUid": {
           "title": "Event UID",
@@ -229,7 +219,7 @@
         "xdm:attrLocations": {
           "title": "Attributed Locations",
           "type": "string",
-          "description": "Attributed Locations for the event. For Display, this stores Thrift encoded object."
+          "description": "Attributed Locations for the event. For Display, this stores Thrift encoded object"
         },
         "xdm:rlsaId": {
           "title": "Remarketing Lists Identifier",

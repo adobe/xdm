@@ -19,7 +19,7 @@
         "xdm:logId": {
           "title": "Internal identifier for the batch",
           "type": "number",
-          "description": "Internal identifier for the batch"
+          "description": "Internal identifier for the batch represented in the YYYYMMDDHH24 format"
         },
         "xdm:conversionTime": {
           "title": "Conversion Time",
@@ -41,7 +41,7 @@
         "xdm:searchEngineId": {
           "title": "Search Engine Identifier",
           "type": "integer",
-          "description": "The application-specified identifier used to identify the Search Advertising Platform Name."
+          "description": "The application-specified identifier used to identify the Search Advertising Platform Name"
         },
         "xdm:propertyName": {
           "title": "Property Name",
@@ -61,52 +61,42 @@
         "xdm:accountId": {
           "title": "Account Identifier",
           "type": "string",
-          "description": "Account ID for the search advertising platform campaign that initiated the conversion event."
-        },
-        "xdm:displayCampaignId": {
-          "title": "Display Campaign Identifier",
-          "type": "string",
-          "description": "Campaign ID on the display advertising platform."
+          "description": "Account ID for the search advertising platform campaign that initiated the conversion event"
         },
         "xdm:campaignId": {
           "title": "Campaign Identifier",
           "type": "string",
-          "description": "Campaign ID on the search advertising platform."
+          "description": "Campaign ID on the advertising platform"
         },
         "xdm:placementId": {
           "title": "Placement Identifier",
           "type": "string",
-          "description": "Placement ID on the display advertising platform."
+          "description": "Placement ID on the display advertising platform. It will be populated only for non-search advertising related campaigns"
         },
         "xdm:adgroupId": {
           "title": "Ad Group Identifier",
           "type": "string",
-          "description": "Ad Group ID on the search advertising platform."
-        },
-        "xdm:displayAdId": {
-          "title": "Display Ad Identifier",
-          "type": "string",
-          "description": "Ad ID on the display advertising platform."
+          "description": "Ad Group ID on the search advertising platform"
         },
         "xdm:adId": {
           "title": "Ad Identifier",
           "type": "string",
-          "description": "Ad ID on the search advertising platform."
+          "description": "Ad ID on the advertising platform"
         },
         "xdm:term": {
           "title": "Search Term",
           "type": "string",
-          "description": "Search Term that contributed to the conversion."
+          "description": "Search Term that contributed to the conversion"
         },
         "xdm:termId": {
           "title": "Search Term Identifier",
           "type": "string",
-          "description": "Search Term ID on the search advertising platform."
+          "description": "Search Term ID on the search advertising platform"
         },
         "xdm:matchType": {
           "title": "Term Match Type",
           "type": "string",
-          "description": "Match Type associated to the Search Term being targeted for the Ad.",
+          "description": "Match Type associated to the Search Term being targeted for the Ad",
           "enum": [
             "Broad",
             "Phrase",
@@ -143,7 +133,7 @@
         "xdm:geoipLocationId": {
           "title": "Geo IP Location Identifier",
           "type": "number",
-          "description": "A numeric identifier that is obtained from Maxmind’s GeoIP package that represents the Geo."
+          "description": "A numeric identifier that is obtained from Maxmind’s GeoIP package that represents the Geo"
         },
         "xdm:domainPlacement": {
           "title": "Domain Placement",
@@ -153,7 +143,7 @@
         "xdm:referrerUrl": {
           "title": "Referrer URL",
           "type": "string",
-          "description": "The referrer is the webpage that sends visitors to your site using a link."
+          "description": "The referrer is the webpage that sends visitors to your site using a link"
         },
         "xdm:searchTerm": {
           "title": "Search Term",
@@ -168,7 +158,7 @@
         "xdm:surferRef": {
           "title": "Surfer Reference",
           "type": "string",
-          "description": "Surfer Reference Identifier that triggered the event generally browser cookie."
+          "description": "Surfer Reference Identifier that triggered the event generally browser cookie"
         },
         "xdm:rawData": {
           "title": "Raw Data",
@@ -208,32 +198,17 @@
         "xdm:channelType": {
           "title": "Channel Type",
           "type": "integer",
-          "description": "The conversion event was triggered by which advertising channel - search, display, video."
-        },
-        "xdm:priorSearchClick": {
-          "title": "Prior Search Click",
-          "type": "string",
-          "description": "First click from the Search Campaigns within a lookback window of configured number of days"
-        },
-        "xdm:priorDisplayClick": {
-          "title": "Prior Display Click",
-          "type": "string",
-          "description": "First click from Display Campaigns within a lookback window of configured number of days"
-        },
-        "xdm:priorImpression": {
-          "title": "Prior Impression",
-          "type": "string",
-          "description": "First impression of display ad and used for first event attribution rule"
+          "description": "The conversion event was triggered by which advertising channel - search, display, video"
         },
         "xdm:conversionType": {
           "title": "Conversion Type",
           "type": "integer",
-          "description": "Feed Conversion Type"
+          "description": "Feed Conversion Type indicates where the conversion event originated from - examples client, analytics, cross device"
         },
         "xdm:device": {
           "title": "Device",
           "$ref": "https://ns.adobe.com/xdm/context/device",
-          "description": "The device from where the ad was displayed."
+          "description": "The device from where the ad was displayed"
         }
       }
     }

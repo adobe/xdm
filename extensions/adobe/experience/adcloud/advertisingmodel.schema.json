@@ -1,0 +1,39 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/adcloud/advertisingmodel",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Advertising Model Measure",
+  "type": "object",
+  "meta:extensible": false,
+  "description": "",
+  "definitions": {
+    "advertisingmodel": {
+      "properties": {
+        "xdm:modelName": {
+          "title": "Model Name",
+          "type": "string",
+          "description": "Unique Name of the advertising attribution Model. Examples include Last Event, First Event, Even Distribution"
+        },
+        "xdm:modelValues": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Raw Conversion Values for the attributed models."
+        },
+        "xdm:modelCounts": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Raw Conversion Counts for the attributed models."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/advertisingmodel"
+    }
+  ],
+  "meta:status": "experimental"
+}

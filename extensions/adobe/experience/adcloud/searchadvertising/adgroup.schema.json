@@ -1,0 +1,121 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/adcloud/searchadvertising/adgroup",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Search Advertising AdGroup",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:auditable": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "description": "Search Advertising Ad Group is a logical collection or grouping of ads.",
+  "definitions": {
+    "searchadvertising-adgroup": {
+      "properties": {
+        "xdm:adgroupId": {
+          "title": "Ad Group Identifier",
+          "type": "string",
+          "description": "Ad Group ID on the search advertising platform."
+        },
+        "xdm:campaignId": {
+          "title": "Campaign Identifier",
+          "type": "string",
+          "description": "Campaign ID for the Ad Group on the search advertising platform."
+        },
+        "xdm:internalCampaignId": {
+          "title": "Internal Campaign Identifier",
+          "type": "string",
+          "description": "Internal Campaign ID for the Ad Group. This identifier determines uniqueness of campaign and ad group record."
+        },
+        "xdm:adgroupName": {
+          "title": "Ad Group Name",
+          "type": "string",
+          "description": "Name of the Ad Group."
+        },
+        "xdm:adGroupStatus": {
+          "title": "Ad Group Status",
+          "type": "string",
+          "description": "Ad Group Status indicates if underlying ads are eligible to serve.",
+          "enum": [
+            "Active",
+            "Paused",
+            "Deleted",
+            "Ended",
+            "Pending",
+            "Inactive",
+            "Disapproved",
+            "Incomplete",
+            "Offline",
+            "On Hold (Editing)",
+            "On Hold (Other)",
+            "Duplicate",
+            "Orphan",
+            "Optimize",
+            "Disabled",
+            "Unknown",
+            "Dummy"
+          ],
+          "meta:enum": {
+            "Active": "Active",
+            "Paused": "Paused",
+            "Deleted": "Deleted",
+            "Ended": "Ended",
+            "Pending": "Pending",
+            "Inactive": "Inactive",
+            "Disapproved": "Disapproved",
+            "Incomplete": "Incomplete",
+            "Offline": "Offline",
+            "On Hold (Editing)": "On Hold (Editing)",
+            "On Hold (Other)": "On Hold (Other)",
+            "Duplicate": "Duplicate",
+            "Orphan": "Orphan",
+            "Optimize": "Optimize",
+            "Disabled": "Disabled",
+            "Unknown": "Unknown",
+            "Dummy": "Dummy"
+          }
+        },
+        "xdm:bidLevel": {
+          "title": "Bid Level",
+          "type": "string",
+          "description:": "What determines the bid for all ads belonging to this adgroup.",
+          "enum": [
+            "Gender",
+            "Placement",
+            "Vertical",
+            "Age Range",
+            "Keyword",
+            "Adgroup",
+            "User Interest and List"
+          ],
+          "meta:enum": {
+            "Gender": "Gender",
+            "Placement": "Placement",
+            "Vertical": "Vertical",
+            "Age Range": "Age Range",
+            "Keyword": "Keyword",
+            "Adgroup": "Adgroup",
+            "User Interest and List": "User Interest and List"
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/auditable"
+    },
+    {
+      "$ref": "#/definitions/searchadvertising-adgroup"
+    }
+  ],
+  "meta:status": "experimental"
+}

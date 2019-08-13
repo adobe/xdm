@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/time-series"],
-  "description": "Raw Data that holds Cross Channel Advertising Conversion Events. ",
+  "description": "Raw Data that holds Cross Channel Advertising Conversion Events.",
   "definitions": {
     "adconversions": {
       "properties": {

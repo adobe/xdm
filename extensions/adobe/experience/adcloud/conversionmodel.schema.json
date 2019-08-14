@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/time-series"],
-  "description": "Revenue Model Conversions is the output of Post attributed conversions after applying common adveristing industry models.",
+  "description": "Revenue Model Conversions after applying common advertising industry models.",
   "definitions": {
     "conversionmodel": {
       "properties": {

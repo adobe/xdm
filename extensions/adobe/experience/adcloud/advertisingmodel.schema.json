@@ -20,11 +20,19 @@
           "description": "Unique Name of the advertising attribution Model. Examples include Last Event, First Event, Even Distribution"
         },
         "xdm:modelValues": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "title": "Raw Conversion Model Values",
+          "type": "array",
+          "items": {
+            "$ref": "https://ns.adobe.com/xdm/data/measure"
+          },
           "description": "Raw Conversion Values for the attributed models."
         },
         "xdm:modelCounts": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "title": "Raw Conversion Model Counts",
+          "type": "array",
+          "items": {
+            "$ref": "https://ns.adobe.com/xdm/data/measure"
+          },
           "description": "Raw Conversion Counts for the attributed models."
         }
       }

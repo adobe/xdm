@@ -13,7 +13,7 @@ An ExperienceEvent captures observations, including the point in time and identi
 ## Schema Hierarchy
 
 * XDM ExperienceEvent `https://ns.adobe.com/xdm/context/experienceevent`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [IdentityMap](identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
   * [Time-series Schema](../data/time-series.schema.md) `https://ns.adobe.com/xdm/data/time-series`
 
@@ -368,6 +368,103 @@ An ExperienceEvent captures observations, including the point in time and identi
 
 ```json
 {
+  "@id": "https://data.adobe.io/experienceid-123459",
+  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+  "xdm:identityMap": {
+    "https://data.adobe.io/entities/namespace/4": [
+      {
+        "xdm:id": "92312748749128"
+      }
+    ],
+    "https://data.adobe.io/entities/namespace/10": [
+      {
+        "xdm:id": "2394509340-30453470347"
+      }
+    ]
+  },
+  "xdm:environment": {
+    "xdm:browserDetails": {
+      "xdm:userAgent": "AppleWebkit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "xdm:ipV4": "97.27.143.5"
+  },
+  "xdm:media": {
+    "xdm:mediaTimed": {
+      "xdm:primaryAssetReference": {
+        "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234430",
+        "dc:title": "Floki Begs Helga for Freedom",
+        "xmpDM:duration": 87,
+        "iptc4xmpExt:Series": {
+          "iptc4xmpExt:Name": "nba_highlights",
+          "iptc4xmpExt:Identifier": "http://espn.com/series-identifiers/2613953"
+        },
+        "xdm:showType": "episode",
+        "xdm:streamFormat": "long",
+        "iptc4xmpExt:Season": {
+          "iptc4xmpExt:Number": 1
+        },
+        "iptc4xmpExt:Episode": {
+          "iptc4xmpExt:Number": 1
+        },
+        "iptc4xmpExt:Genre": [
+          "sports"
+        ],
+        "iptc4xmpExt:Rating": [
+          {
+            "iptc4xmpExt:RatingValue": "TV14",
+            "iptc4xmpExt:RatingSourceLink": "http://www.tvguidelines.org/ratings.htm"
+          }
+        ],
+        "iptc4xmpExt:Creator": [
+          {
+            "iptc4xmpExt:Name": "ESPN"
+          }
+        ]
+      },
+      "xdm:primaryAssetViewDetails": {
+        "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114230",
+        "xdm:playerName": "watchespn",
+        "xdm:broadcastChannel": "WatchESPN",
+        "xdm:broadcastContentType": "VOD",
+        "xdm:streamFormat": "short",
+        "xdm:playerSDKVersion": {
+          "xdm:version": "1.0.8"
+        },
+        "xdm:broadcastNetwork": "nbcu",
+        "xdm:adLoadType": "2",
+        "xdm:sourceFeed": "http%3A%2F%2Fvod01.pure.centurylink.net%2Fhls%2Fvu%2F9083406%2FVUBX0280890106690980_38_3_M_HD.m3u8",
+        "xdm:sessionTimeout": 1800
+      },
+      "xdm:mediaChapter": {
+        "xdm:chapterAssetReference": {
+          "@id": "https://data.adobe.io/entities/media-chapter-asset-reference/2144511",
+          "dc:title": "Chapter1",
+          "xmpDM:duration": 44
+        },
+        "xdm:chapterAssetViewDetails": {
+          "xdm:index": 0,
+          "xdm:offset": 0
+        },
+        "xdm:impressions": {
+          "xdm:value": 1
+        },
+        "xdm:completes": {
+          "xdm:value": 1
+        },
+        "xdm:timePlayed": {
+          "xdm:value": 44
+        },
+        "xdm:federated": {
+          "xdm:value": 0
+        }
+      }
+    }
+  }
+}
+```
+
+```json
+{
   "@id": "https://data.adobe.io/experienceid-23456782",
   "xdm:dataSource": {
     "@id": "https://data.adobe.io/datasources/datasource-123",
@@ -520,103 +617,6 @@ An ExperienceEvent captures observations, including the point in time and identi
     },
     "xdm:firstQuartiles": {
       "xdm:value": 1
-    }
-  }
-}
-```
-
-```json
-{
-  "@id": "https://data.adobe.io/experienceid-123459",
-  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
-  "xdm:identityMap": {
-    "https://data.adobe.io/entities/namespace/4": [
-      {
-        "xdm:id": "92312748749128"
-      }
-    ],
-    "https://data.adobe.io/entities/namespace/10": [
-      {
-        "xdm:id": "2394509340-30453470347"
-      }
-    ]
-  },
-  "xdm:environment": {
-    "xdm:browserDetails": {
-      "xdm:userAgent": "AppleWebkit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
-    },
-    "xdm:ipV4": "97.27.143.5"
-  },
-  "xdm:media": {
-    "xdm:mediaTimed": {
-      "xdm:primaryAssetReference": {
-        "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234430",
-        "dc:title": "Floki Begs Helga for Freedom",
-        "xmpDM:duration": 87,
-        "iptc4xmpExt:Series": {
-          "iptc4xmpExt:Name": "nba_highlights",
-          "iptc4xmpExt:Identifier": "http://espn.com/series-identifiers/2613953"
-        },
-        "xdm:showType": "episode",
-        "xdm:streamFormat": "long",
-        "iptc4xmpExt:Season": {
-          "iptc4xmpExt:Number": 1
-        },
-        "iptc4xmpExt:Episode": {
-          "iptc4xmpExt:Number": 1
-        },
-        "iptc4xmpExt:Genre": [
-          "sports"
-        ],
-        "iptc4xmpExt:Rating": [
-          {
-            "iptc4xmpExt:RatingValue": "TV14",
-            "iptc4xmpExt:RatingSourceLink": "http://www.tvguidelines.org/ratings.htm"
-          }
-        ],
-        "iptc4xmpExt:Creator": [
-          {
-            "iptc4xmpExt:Name": "ESPN"
-          }
-        ]
-      },
-      "xdm:primaryAssetViewDetails": {
-        "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114230",
-        "xdm:playerName": "watchespn",
-        "xdm:broadcastChannel": "WatchESPN",
-        "xdm:broadcastContentType": "VOD",
-        "xdm:streamFormat": "short",
-        "xdm:playerSDKVersion": {
-          "xdm:version": "1.0.8"
-        },
-        "xdm:broadcastNetwork": "nbcu",
-        "xdm:adLoadType": "2",
-        "xdm:sourceFeed": "http%3A%2F%2Fvod01.pure.centurylink.net%2Fhls%2Fvu%2F9083406%2FVUBX0280890106690980_38_3_M_HD.m3u8",
-        "xdm:sessionTimeout": 1800
-      },
-      "xdm:mediaChapter": {
-        "xdm:chapterAssetReference": {
-          "@id": "https://data.adobe.io/entities/media-chapter-asset-reference/2144511",
-          "dc:title": "Chapter1",
-          "xmpDM:duration": 44
-        },
-        "xdm:chapterAssetViewDetails": {
-          "xdm:index": 0,
-          "xdm:offset": 0
-        },
-        "xdm:impressions": {
-          "xdm:value": 1
-        },
-        "xdm:completes": {
-          "xdm:value": 1
-        },
-        "xdm:timePlayed": {
-          "xdm:value": 44
-        },
-        "xdm:federated": {
-          "xdm:value": 0
-        }
-      }
     }
   }
 }
@@ -811,7 +811,7 @@ A unique identifier for the time-series event.
 ## xdm:eventType
 ### Event Type
 
-The primary event type for this timeseries record.
+The primary event type for this time-series record.
 
 `xdm:eventType`
 * is optional
@@ -834,7 +834,7 @@ The primary event type for this timeseries record.
 | `advertising.clicks` | Click(s) actions on an advertisement. |
 | `advertising.conversions` | A customer pre-defined action(s) which triggers an event for performance evaluation. |
 | `advertising.firstQuartiles` | A digital video ad has played through 25% of its duration at normal speed. |
-| `advertising.impressions` | Impression(s) of an advertisement to an end user with the potential of being viewed. |
+| `advertising.impressions` | Impression(s) of an advertisement to an end-user with the potential of being viewed. |
 | `advertising.midpoints` | A digital video ad has played through 50% of its duration at normal speed. |
 | `advertising.starts` | A digital video ad has started playing. |
 | `advertising.thirdQuartiles` | A digital video ad has played through 75% of its duration at normal speed. |

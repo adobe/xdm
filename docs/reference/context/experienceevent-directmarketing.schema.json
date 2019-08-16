@@ -14,14 +14,14 @@
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/experienceevent"
     ],
-    "description": "ExperienceEvent Direct Marketing Details.",
+    "description": "ExperienceEvent direct marketing details.",
     "definitions": {
         "experienceevent-directmarketing": {
             "properties": {
                 "xdm:directMarketing": {
                     "title": "Direct Marketing",
                     "$ref": "https://ns.adobe.com/xdm/context/direct-marketing",
-                    "description": "Events and properties related to direct/outbound marketing such as email, direct mail, texts and in-app notifications."
+                    "description": "Events and properties related to direct/outbound marketing such as email, direct mail, texts, and in-app notifications."
                 }
             }
         }

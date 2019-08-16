@@ -13,7 +13,7 @@ Information about the surrounding situation the event observation occurred in, s
 ## Schema Hierarchy
 
 * Environment `https://ns.adobe.com/xdm/context/environment`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Browser Details](browserdetails.schema.md) `https://ns.adobe.com/xdm/context/browserdetails`
 
 
@@ -104,7 +104,7 @@ The browser specific details such as browser name, version, javascript version, 
 ## xdm:carrier
 ### Mobile Network Carrier
 
-A mobile network carrier or MNO, also known as a wireless service provider, wireless carrier, cellular company, or mobile network carrier, is a provider of services wireless communications that owns or controls all the elements necessary to sell and deliver services to an end user.
+A mobile network carrier or MNO, also known as a wireless service provider, wireless carrier, cellular company, or mobile network carrier, is a provider of services wireless communications that owns or controls all the elements necessary to sell and deliver services to an end-user.
 
 `xdm:carrier`
 * is optional

@@ -20,7 +20,15 @@
   ],
   "definitions": {
     "unified-profile-union": {
-      "properties": {}
+      "properties": {
+        "https://ns.adobe.com/experience/profile/identityNamespaces": {
+          "type": "object",
+          "meta:xdmType": "map",
+          "additionalProperties": {
+            "$ref": "https://ns.adobe.com/xdm/context/namespace"
+          }
+        }
+      }
     }
   },
   "allOf": [

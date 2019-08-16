@@ -68,7 +68,7 @@ The timestamp when the assertion of segment membership was made.
 ## xdm:payload
 ### Payload
 
-Values that are directly related with the segment realization. This payload exists with the same validUntil as the segment realization.  Note that the intention is that exactly one payload value be included, as indicated by the payload type.  This was originally modelled using 'oneOf', but due to limitations in our tooling that was removed.  This more semantically meaningful representation will be re-introduced in the future.
+Values that are directly related with the segment realization. This payload exists with the same 'validUntil' as the segment realization.  Note that the intention is that exactly one payload value be included, as indicated by the payload type.  This was originally modeled using 'oneOf', but due to limitations in our tooling that was removed.  This more semantically meaningful representation will be re-introduced in the future.
 
 `xdm:payload`
 * is optional
@@ -94,7 +94,7 @@ Values that are directly related with the segment realization. This payload exis
 #### xdm:payloadBooleanValue
 ##### Value
 
-The boolean value
+The boolean value.
 
 `xdm:payloadBooleanValue`
 * is optional
@@ -114,7 +114,7 @@ The boolean value
 #### xdm:payloadNumberValue
 ##### Value
 
-The number
+The number.
 
 `xdm:payloadNumberValue`
 * is optional
@@ -135,7 +135,7 @@ The number
 #### xdm:payloadPropensityValue
 ##### Value
 
-The propensity
+The propensity.
 
 `xdm:payloadPropensityValue`
 * is optional
@@ -156,7 +156,7 @@ The propensity
 #### xdm:payloadStringValue
 ##### Value
 
-The string value
+The string value.
 
 `xdm:payloadStringValue`
 * is optional
@@ -253,9 +253,9 @@ The value of this property **must** be equal to one of the [known values below](
 ### xdm:status Known Values
 | Value | Description |
 |-------|-------------|
-| `existing` | Entity continues to be in the segment |
-| `realized` | Entity is entering the segment |
-| `exited` | Entity is exiting the segment |
+| `existing` | Entity continues to be in the segment. |
+| `realized` | Entity is entering the segment. |
+| `exited` | Entity is exiting the segment. |
 
 
 
@@ -263,7 +263,7 @@ The value of this property **must** be equal to one of the [known values below](
 ## xdm:validUntil
 ### Valid Until
 
-The timestamp for when the segment assertion should nolonger be assumed to be valid and should either be ignored or revalidated.
+The timestamp for when the segment assertion should no longer be assumed to be valid and should either be ignored or revalidated.
 
 `xdm:validUntil`
 * is optional

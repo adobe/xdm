@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/data/metrics/direct-marketing/sends
 ```
 
-The direct-marketing metric sends describes the number of asynchronous messages (email, SMS, MMS etc) that have been dispatched to an recipient's account/address/device
+The direct-marketing metric `sends` describes the number of asynchronous messages (email, SMS, MMS etc) that have been dispatched to an recipient's account/address/device.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|

@@ -5,7 +5,7 @@
 http://ns.adobe.com/adobecloud/core/1.0/directory
 ```
 
-A directory in Adobe Cloud Platform.
+A directory in Adobe Experience Platform.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
@@ -32,6 +32,12 @@ A directory in Adobe Cloud Platform.
       "templated": true
     }
   },
+  "_page": {
+    "orderBy": "id",
+    "start": "123",
+    "next": "789",
+    "count": 100
+  },
   "repo:createDate": "2017-09-26T15:52:25+00:00",
   "repo:modifyDate": "2017-09-26T15:52:25+00:00",
   "repo:path": "/",
@@ -53,12 +59,6 @@ A directory in Adobe Cloud Platform.
       "href": "https://api2.example.com/v7/resolve{?asset_id}",
       "templated": true
     }
-  },
-  "_page": {
-    "orderBy": "id",
-    "start": "123",
-    "next": "789",
-    "count": 100
   },
   "repo:createDate": "2017-09-26T15:52:25+00:00",
   "repo:modifyDate": "2017-09-26T15:52:25+00:00",
@@ -227,7 +227,7 @@ All instances must conform to this regular expression
 
 ## repo:createDate
 
-The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
+The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The date time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
 
 `repo:createDate`
 * is **required**
@@ -252,7 +252,7 @@ The server date and time when the resource was created in the repository, such a
 
 ## repo:modifyDate
 
-The server date and time when the resource was last modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
+The server date and time when the resource was last modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The date time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
 
 `repo:modifyDate`
 * is **required**

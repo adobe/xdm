@@ -1,5 +1,5 @@
 
-# clicks Schema
+# Clicks Schema
 
 ```
 https://ns.adobe.com/xdm/data/clicks
@@ -12,11 +12,11 @@ The metric measures the number of interactions a user had by clicking on an asse
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/clicks.schema.json](data/clicks.schema.json) |
 ## Schema Hierarchy
 
-* clicks `https://ns.adobe.com/xdm/data/clicks`
+* Clicks `https://ns.adobe.com/xdm/data/clicks`
   * [Metric Definition](metricdefinition.schema.md) `https://ns.adobe.com/xdm/data/metricdefinition`
 
 
-## clicks Example
+## Clicks Example
 ```json
 {
   "schema:name": "metric: clicks",
@@ -26,7 +26,7 @@ The metric measures the number of interactions a user had by clicking on an asse
 }
 ```
 
-# clicks Properties
+# Clicks Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|

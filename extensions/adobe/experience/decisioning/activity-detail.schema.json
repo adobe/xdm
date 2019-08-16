@@ -11,7 +11,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "description": "Detail about the Entity defining and controlling the decisioning process. Decisions are made in the context of an Activity. At any given time, the best Option is re-evaluated, or ranked, based on the most current set of context variables, rules and constraints. The decision activity specifies a fallback option should the combined constraints disqualify all narrowed-down options.",
+  "description": "Detail about the entity defining and controlling the decisioning process. Decisions are made in the context of an activity. At any given time, the best option is re-evaluated, or ranked, based on the most current set of context variables, rules and constraints. The decision activity specifies a fallback option should the combined constraints disqualify all narrowed-down options.",
   "definitions": {
     "activity-detail-datatype": {
       "properties": {
@@ -19,7 +19,7 @@
           "title": "Activity Identifier",
           "type": "string",
           "format": "uri-reference",
-          "description": "A unique identifier for the Decision Activity."
+          "description": "A unique identifier for the decision activity."
         },
         "xdm:name": {
           "type": "string",
@@ -30,13 +30,13 @@
           "type": "string",
           "format": "date-time",
           "title": "Start Date and Time",
-          "description": "Activity Start Date and Time. Property has the semantic of schema.org's 'startTime' property defined on http://schema.org/Action"
+          "description": "Activity start date and time. Property has the semantic of schema.org's 'startTime' property defined on http://schema.org/Action"
         },
         "xdm:endTime": {
           "type": "string",
           "format": "date-time",
           "title": "End Date and Time",
-          "description": "Activity End Date and Time. Property has the semantic of schema.org's 'endTime' property defined on http://schema.org/Action"
+          "description": "Activity end date and time. Property has the semantic of schema.org's 'endTime' property defined on http://schema.org/Action"
         },
         "xdm:fallback": {
           "type": "string",

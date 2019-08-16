@@ -17,24 +17,24 @@
                 "xdm:repositoryCreatedBy": {
                     "title": "Created by User Identifier",
                     "type": "string",
-                    "description": "User id who has created the entity."
+                    "description": "User ID who has created the entity."
                 },
                 "xdm:repositoryLastModifiedBy": {
                     "title": "Modified by User Identifier",
                     "type": "string",
-                    "description": "User id who last modified the entity. At creation time, `modifiedByUser` is set as `createdByUser`."
+                    "description": "User ID who last modified the entity. At creation time, `modifiedByUser` is set as `createdByUser`."
                 },
                 "xdm:createdByBatchID": {
                     "title": "Created by Batch Identifier",
                     "type": "string",
                     "format": "uri-reference",
-                    "description": "The Data Set Files in Catalog Services which has been originating the creation of the entity."
+                    "description": "The dataset files in Catalog Services which has been originating the creation of the entity."
                 },
                 "xdm:modifiedByBatchID": {
                     "title": "Modified by Batch Identifier",
                     "type": "string",
                     "format": "uri-reference",
-                    "description": "The last Data Set Files in Catalog Services which has modified the entity. At creation time, `modifiedByBatchID` is set as `createdByBatchID`."
+                    "description": "The last dataset files in Catalog Services which has modified the entity. At creation time, `modifiedByBatchID` is set as `createdByBatchID`."
                 }
             }
         }

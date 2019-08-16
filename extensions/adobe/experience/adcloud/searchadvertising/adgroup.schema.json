@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/adcloud/searchadvertisingadgroup",
+  "$id": "https://ns.adobe.com/experience/adcloud/searchadvertising/adgroup",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Search Advertising AdGroup",
   "type": "object",
@@ -15,7 +15,7 @@
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "description": "Search Advertising Ad Group is a logical collection or grouping of ads.",
   "definitions": {
-    "searchadvertisingadgroup": {
+    "searchadvertising-adgroup": {
       "properties": {
         "xdm:adgroupId": {
           "title": "Ad Group Identifier",
@@ -114,7 +114,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/auditable"
     },
     {
-      "$ref": "#/definitions/searchadvertisingadgroup"
+      "$ref": "#/definitions/searchadvertising-adgroup"
     }
   ],
   "meta:status": "experimental"

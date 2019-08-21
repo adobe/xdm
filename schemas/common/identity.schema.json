@@ -6,17 +6,20 @@
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "https://ns.adobe.com/adobecloudplatform/ims/user",
-  "title": "IMS User",
+  "$id": "https://ns.adobe.com/xdm/common/identity",
+  "title": "User identity",
+  "type": "object",  
+  "meta:extensible": true,
   "description":
     "This model represents an authenticated IMS User. The IMS user principal is a user account under Adobe's identity management system (IMS).",
   "definitions": {
-    "user": {
+    "identity": {
       "type": "object",
       "properties": {
         "xdm:identityProvider": {
+          "description": "The identity provider that manages this principal.",
           "type": "string",
-          "const": "ims"
+          "meta:enum": ["ims"]
         },
         "xdm:id": {
           "description":
@@ -25,7 +28,10 @@
         },
         "xdm:type": {
           "type": "string",
-          "const": "https://ns.adobe.com/adobecloudplatform/ims/user"
+          "meta:enum": ["https://ns.adobe.com/xdm/common/user"],
+          "format": "uri",
+          "description":
+            "The type of the identity. Acts as a processing hint to the client. Ideally, each value should be identified as a [URI](https://tools.ietf.org/html/rfc3986)."
         }
       }
     },
@@ -51,15 +57,12 @@
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/common/principal"
-    },    
-    {
-      "$ref": "#/definitions/user"
+      "$ref": "#/definitions/identity"
     },
     {
       "$ref": "#/definitions/publicprofile"
     }
   ],
   "required" : ["xdm:identityProvider", "xdm:id", "xdm:type"],
-  "meta:status": "deprecated"
+  "meta:status": "experimental"
 }

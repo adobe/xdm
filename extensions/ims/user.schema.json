@@ -52,7 +52,7 @@
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/principal"
-    },    
+    },
     {
       "$ref": "#/definitions/user"
     },

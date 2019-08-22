@@ -30,5 +30,5 @@
     }
   },
   "required": ["xdm:provider", "@id", "@type"],
-  "meta:status": "deprecated"
+  "meta:status": "experimental"
 }

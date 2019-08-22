@@ -9,53 +9,35 @@
   "$id": "https://ns.adobe.com/experience/decisioning/rule",
   "meta:abstract": false,
   "meta:extensible": true,
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/data/record",
-
-    "https://ns.adobe.com/experience/decisioning/xdm-usage#/definitions/xdm-usage-mixin"
-  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "type": "object",
   "title": "Decisioning Rule",
   "description": "An rule is a named and referencable predicate used for testing conditions on various 'subjects' and 'objects'. The Profile Query Language forms the foundation of those predicates and primarily tests conditions on 'subjects' that are profiles with associated experience events. For instance rules are interpreted as 'IF PredicateExpression(Subject) == true THEN verb_action(object)'. The 'objects' in this contexts are the decision options (\"https://ns.adobe.com/experience/decisioning/option\"). The predicate either determines the eligibility of the decision option for a given 'subject' (user) or the predicate is used to affect the 'preferability' or priority for that option. A predicate can operate not only over profile fields but also over contextual data provided at the time of decisioning.",
   "definitions": {
-    "rule-datatype": {
+    "rule": {
       "properties": {
-        "schema:name": {
+        "xdm:name": {
           "type": "string",
           "title": "Name",
           "description": "Decision rule's external human-readable name to clients. Property has the semantic of schema.org's 'name' property defined on http://schema.org/Thing"
         },
-        "xdm:predicateAsText": {
-          "type": "string",
+        "xdm:condition": {
+          "$ref": "https://ns.adobe.com/experience/decisioning/xdm-expression",
           "title": "Expression over XDM instances in an alternate query syntax",
           "description": "Contains the expression over a collection of context XDM instances in text format. The text format borrows aspects from SQL and a functional notation"
-        },
-        "xdm:predicateExpression": {
-          "$ref": "https://ns.adobe.com/experience/decisioning/filter-expression",
-          "title": "Expression over XDM instances",
-          "description": "Contains the expression over a collection of context XDM instances in syntax tree format. When the expression evaluates to true -- given the subject or subjects passed to it -- the decision action is applied to the 'object' of this rule."
         }
       }
     }
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
-    },
-    {
       "$ref": "https://ns.adobe.com/xdm/data/record"
     },
     {
-      "$ref": "#/definitions/rule-datatype"
+      "$ref": "#/definitions/rule"
     },
     {
-      "$ref": "https://ns.adobe.com/experience/decisioning/xdm-usage#/definitions/xdm-usage-mixin"
-    },
-    {
-      "required": ["@id", "schema:name"]
-    },
-    {
-      "properties": { "@id": { "readonly": true } }
+      "required": ["xdm:name"]
     }
   ]
 }

@@ -1,0 +1,35 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/experience/decisioning/ranking-detail",
+  "meta:abstract": true,
+  "meta:extensible": true,
+  "type": "object",
+  "title": "Ranking Detail",
+  "description": "Ranking data produces the order in which one option is selected over another. A fixed absolute priority can be used in case there is no other function known that maps contextual data and data related to a profile's identity to a ranking order. If, after comparing the absolute priority values, two or more Options are still tied one is chosen at random and used in the decision process.",
+  "definitions": {
+    "ranking-detail-datatype": {
+      "properties": {
+        "xdm:priority": {
+          "type": "integer",
+          "title": "Priority",
+          "description": "The priority of a ranking. When multiple options or sets of options are ranked, the priority determines the rank. Higher priority options are selected before any lower priority options. Options within the rank with the same priority are decided by the formula given in the rank's expression. Decision Options can be ordered by an absolute numeric value",
+          "minimum": 0
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/ranking-detail-datatype"
+    },
+    {
+      "required": ["xdm:priority"]
+    }
+  ]
+}

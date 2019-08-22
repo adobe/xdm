@@ -9,8 +9,11 @@
   "$id": "https://ns.adobe.com/experience/decisioning/capping-constraint",
   "meta:abstract": true,
   "meta:extensible": true,
-  "title": "Capping Constraint",
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/experience/decisioning/option"
+  ],
   "type": "object",
+  "title": "Capping Constraint",
   "description": "A capping constraint is a component of a decision option that defines the parameters for capping. Capping is the process of limiting how many times an option can be proposed, for an individual profile as well as across all profiles.",
   "definitions": {
     "capping-constraint-datatype": {
@@ -18,35 +21,20 @@
       "properties": {
         "xdm:globalCap": {
           "type": "integer",
-          "minimum": 0,
+          "minimum": 1,
           "title": "Global Cap",
           "description": "Global cap is a constraint on how many times an option can be proposed in totality."
         },
         "xdm:profileCap": {
           "type": "integer",
-          "minimum": 0,
+          "minimum": 1,
           "title": "Profile Cap",
           "description": "Profile cap is a constraint on how many times an option can be proposed to a certain profile."
-        }
-      }
-    },
-    "capping-constraint-mixin": {
-      "meta:intendedToExtend": [
-        "https://ns.adobe.com/experience/decisioning/constrained-option"
-      ],
-      "properties": {
-        "https://ns.adobe.com/experience/decisioning/cappingConstraint": {
-          "$ref": "https://ns.adobe.com/experience/decisioning/capping-constraint#/definitions/capping-constraint-datatype",
-          "title": "Capping Constaints",
-          "description": "Capping constraint define conditions related to prior propositions of an option, either across all audiences or for a partcular profile identity."
         }
       }
     }
   },
   "allOf": [
-    {
-      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
-    },
     {
       "$ref": "#/definitions/capping-constraint-datatype"
     }

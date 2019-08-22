@@ -1,0 +1,37 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/experience/offer-management/content-component",
+  "version": "0.1",
+  "meta:abstract": false,
+  "meta:extensible": true,
+  "meta:extends": [
+    "https://ns.adobe.com/experience/decisioning/content-component"
+  ],
+  "type": "object",
+  "title": "Content Component",
+  "description": "Content components are the fragments associated with the a particular content representation. Those fragments are used to compose the end-user experience. The content resource has optional HAL links to the file resource.",
+  "definitions": {
+    "content-component-datatype": {
+      "properties": {
+        "@type": {
+          "$ref": "https://ns.adobe.com/experience/offer-management/content-component-type",
+          "description": "Type of the component. Acts as processing contract for the client. When the experience is assembled the composer will look for the component(s) that have a specific type."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/experience/decisioning/content-component"
+    },
+    {
+      "$ref": "#/definitions/content-component-datatype"
+    }
+  ]
+}

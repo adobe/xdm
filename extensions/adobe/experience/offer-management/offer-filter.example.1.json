@@ -1,0 +1,59 @@
+{
+  "@id": "xcore:offer-filter:f6704f4d7fc0baa",
+  "xdm:name": "Explore",
+  "xdm:filterType": "anyTags",
+  "xdm:ids": ["xcore:tag:f66f67dbe6d6ee1"],
+  "xdm:value": {
+    "variables": [
+      {
+        "varName": "o",
+        "from": {
+          "fnName": "modelInstances",
+          "nodeType": "fnApply",
+          "params": [
+            {
+              "literalType": "String",
+              "nodeType": "literal",
+              "value": "https://ns.adobe.com/experience/offer-management/personalized-offer"
+            }
+          ]
+        },
+        "where": {
+          "variables": [
+            {
+              "varName": "t",
+              "from": {
+                "literalType": "List",
+                "nodeType": "literal",
+                "value": ["xcore:tag:f66f67dbe6d6ee1"]
+              },
+              "where": {
+                "fnName": "in",
+                "nodeType": "fnApply",
+                "params": [
+                  {
+                    "varName": "t",
+                    "nodeType": "varRef"
+                  },
+                  {
+                    "fieldName": "xdm:tags",
+                    "nodeType": "fieldLookup",
+                    "object": {
+                      "varName": "o",
+                      "nodeType": "varRef"
+                    }
+                  }
+                ]
+              },
+              "nodeType": "varDecl"
+            }
+          ],
+          "nodeType": "quantification",
+          "quantifier": "some"
+        },
+        "nodeType": "varDecl"
+      }
+    ],
+    "nodeType": "select"
+  }
+}

@@ -9,41 +9,28 @@
   "$id": "https://ns.adobe.com/experience/decisioning/lifecycle-status",
   "meta:abstract": true,
   "meta:extensible": true,
-  "title": "Lifecycle Status",
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/experience/decisioning/activity",
+    "https://ns.adobe.com/experience/decisioning/option"
+  ],
+  "title": "Decision Entity Lifecycle Status",
   "description": "Lifecycle status summarizes the current status of the creation, approval, usage and archival actions for the entity that mixes in this schema. A lifecycle action was performed and the results are indicated with this type.",
   "definitions": {
-    "lifecycle-status-datatype": {
+    "lifecycle-status": {
       "type": "string",
-      "format": "uri-reference",
       "meta:enum": {
-        "https://ns.adobe.com/xdm/common/event/draft": "The subject of the lifecycle action is considered as not yet ready for approval.",
-        "https://ns.adobe.com/xdm/common/event/approved": "The subject of the lifecycle action (approval process) is considered approved and ready to be used.",
-        "https://ns.adobe.com/xdm/common/event/rejected": "The subject of the lifecycle action (approval process) is considered rejected and must be modified before it can be used.",
-        "https://ns.adobe.com/xdm/common/event/in-use": "The subject of the lifecycle action is considered to be in use. Restrictions may apply how contributing entities can be altered.",
-        "https://ns.adobe.com/xdm/common/event/completed": "The subject of the lifecycle action is considered be completed or finished. Restrictions on how contributing entities can be altered may no longer apply.",
-        "https://ns.adobe.com/xdm/common/event/archived": "The subject of the lifecycle action is considered be archived. The subject may be excluded from listing of entities."
-      }
-    },
-    "lifecycle-status-mixin": {
-      "meta:intendedToExtend": [
-        "https://ns.adobe.com/experience/decisioning/activity",
-        "https://ns.adobe.com/experience/decisioning/option"
-      ],
-      "properties": {
-        "https://ns.adobe.com/experience/decisioning/lifecycleStatus": {
-          "$ref": "https://ns.adobe.com/experience/decisioning/lifecycle-status#/definitions/lifecycle-status-datatype",
-          "title": "Lifecycle Status",
-          "description": "LifecycleStatus property summarizes the current status of the creation, approval, usage and archival actions for the entity that mixes in this schema."
-        }
+        "draft": "The object of the lifecycle action is considered as not yet ready for approval.",
+        "approved": "The object of the lifecycle action (approval process) is considered approved and ready to be used.",
+        "rejected": "The object of the lifecycle action (approval process) is considered rejected and must be modified before it can be used.",
+        "in-use": "The object of the lifecycle action is considered to be in use. Restrictions may apply how contributing entities can be altered.",
+        "completed": "The object of the lifecycle action is considered be completed or finished. Restrictions on how contributing entities can be altered may no longer apply.",
+        "archived": "The object of the lifecycle action is considered be archived. The subject may be excluded from listing of entities."
       }
     }
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
-    },
-    {
-      "$ref": "#/definitions/lifecycle-status-datatype"
+      "$ref": "#/definitions/lifecycle-status"
     }
   ]
 }

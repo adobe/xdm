@@ -7,6 +7,7 @@
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/experience/offer-management/offer-activity",
+  "meta:extends": ["https://ns.adobe.com/experience/decisioning/activity"],
   "meta:abstract": false,
   "meta:extensible": true,
   "type": "object",
@@ -15,17 +16,6 @@
   "definitions": {
     "offer-activity": {
       "properties": {
-        "@id": {
-          "type": "string",
-          "format": "uri-reference",
-          "title": "ID",
-          "description": "The unique identifier of the offer activity. This @id must be unique across for objects that are not semantically the same, otherwise it is interpreted as referring to the same object. "
-        },
-        "xdm:name": {
-          "type": "string",
-          "title": "Name",
-          "description": "Activity name. The name is displayed in various user interfaces."
-        },
         "xdm:status": {
           "type": "string",
           "title": "Status",
@@ -38,50 +28,38 @@
             "archived": "Archived"
           }
         },
-        "xdm:startDate": {
-          "type": "string",
-          "format": "date-time",
-          "title": "Start Date",
-          "description": "Activity Start Date"
-        },
-        "xdm:endDate": {
-          "type": "string",
-          "format": "date-time",
-          "title": "End Date",
-          "description": "Activity End Date"
-        },
         "xdm:placement": {
           "type": "string",
-          "format": "uri",
+          "format": "uri-reference",
           "title": "Offer Placement",
           "description": "The reference to an offer placement instance. Offer placements are used by offer activities to limit the offer selection to those offers that have a representation that complies with the offer placement restrictions. The value is the URI (@id) of the offer placement that is referenced. See schema https://ns.adobe.com/experience/offer-management/offer-placement"
         },
         "xdm:filter": {
           "type": "string",
-          "format": "uri",
+          "format": "uri-reference",
           "title": "Offer Filter",
           "description": "The reference to a filter that is applied to the inventory when a decisioning is made the context of this activity. The value is the URI (@id) of the offer filter that is referenced. See schema https://ns.adobe.com/experience/offer-management/offer-filter"
-        },
-        "xdm:fallback": {
-          "type": "string",
-          "format": "uri",
-          "title": "Fallback Offer",
-          "description": "The reference to a fallback offer that is used when decisioning in the context of this activity does not qualify any of the offers specified in the fallback offer. The value is the URI (@id) of the fallback offer that is referenced.  See schema https://ns.adobe.com/experience/offer-management/fallback-offer"
         }
       }
     }
   },
   "allOf": [
     {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "https://ns.adobe.com/experience/decisioning/activity"
+    },
+    {
       "$ref": "#/definitions/offer-activity"
     },
     {
       "required": [
         "xdm:name",
+        "xdm:fallback",
         "xdm:status",
         "xdm:placement",
-        "xdm:filter",
-        "xdm:fallback"
+        "xdm:filter"
       ]
     }
   ]

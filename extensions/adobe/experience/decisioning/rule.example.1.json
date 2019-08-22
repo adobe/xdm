@@ -1,0 +1,10 @@
+{
+  "@id": "https://www.example.com/decisioning/rule/rule-0001",
+  "xdm:name": "Californians with one or more purchases of more than $1000",
+  "xdm:condition": {
+    "xdm:type": "PQL",
+    "xdm:format": "pql/text",
+    "xdm:value": "homeAddress.stateOrProvince = \"CA\" AND (some x FROM xEvent WHERE commerce.order.priceTotal > 1000 AND x.commerce.order.currencyCode = \"USD\")",
+    "xdm:meta": "Include audience whose State equals CA AND who ( have at least 1 Purchase event where Total Price is greater than 1000 and Currency equals USD)"
+  }
+}

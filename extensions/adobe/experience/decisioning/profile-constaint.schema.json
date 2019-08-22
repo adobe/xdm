@@ -9,47 +9,28 @@
   "$id": "https://ns.adobe.com/experience/decisioning/profile-constraint",
   "meta:abstract": true,
   "meta:extensible": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/experience/decisioning/constraint-option"
+  ],
   "type": "object",
   "title": "Profile Constraint",
   "description": "A profile constraint is a component of a decision option that defines the rules for testing if the option qualifies. Usually the option is tested against a user profile and the events that were observed for that profile, but the qualification rule can consider any context data as long as it can be described by an XDM schema.",
   "definitions": {
-    "profile-constraint-datatype": {
+    "profile-constraint": {
       "type": "object",
       "properties": {
         "xdm:eligibilityRule": {
           "type": "string",
           "format": "uri-reference",
           "title": "Eligibility Rule",
-          "description": "The reference to a decision rule that evaluates to true or false for a given profile and/or other given contextual XDM objects. The rule is used to decide if the option is eligible for a given profile and context. The value is the URI (@id) of the decision rule that is referenced. See schema https://ns.adobe.com/experience/decision/rule",
-          "meta:descriptors": [
-            {
-              "@type": "xdm:manyToOne",
-              "xdm:destinationSchema": "https://ns.adobe.com/experience/decisioning/rule",
-              "xdm:destinationProperty": "@id"
-            }
-          ]
-        }
-      }
-    },
-    "profile-constraint-mixin": {
-      "meta:intendedToExtend": [
-        "https://ns.adobe.com/experience/decisioning/constrained-option"
-      ],
-      "properties": {
-        "https://ns.adobe.com/experience/decisioning/profileConstraint": {
-          "$ref": "https://ns.adobe.com/experience/decisioning/profile-constraint#/definitions/profile-constraint-datatype",
-          "title": "Profile Constraints",
-          "description": "Profile constraints define rules that decide if an option qualifies as a considerable options for a given profile or in a provided context."
+          "description": "The reference to a decision rule that evaluates to true or false for a given profile and/or other given contextual XDM objects. The rule is used to decide if the option is eligible for a given profile and context. The value is the URI (@id) of the decision rule that is referenced. See schema https://ns.adobe.com/experience/decision/rule"
         }
       }
     }
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
-    },
-    {
-      "$ref": "#/definitions/profile-constraint-datatype"
+      "$ref": "#/definitions/profile-constraint"
     }
   ]
 }

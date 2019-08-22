@@ -14,53 +14,30 @@
   "title": "Option Filter",
   "description": "Filters are used to specify criteria for option selection by topic or theme. The most common filter mechanism is by the tags that are associated with an option. In general the option filter selects a subset of option from the overall inventory by topic.",
   "definitions": {
-    "option-filter-datatype": {
+    "option-filter": {
       "properties": {
-        "schema:name": {
+        "xdm:name": {
           "type": "string",
           "title": "Name",
           "description": "Filter name. Property has the semantic of schema.org's 'name' property defined on http://schema.org/Thing"
         },
-        "xdm:value": {
-          "type": "object",
-          "title": "Expression taking option XDM instances (list of trees) as input",
-          "description": "Contains the condition that is used to select options based on a combination of tags or, directly, using the @id of those option entities."
-        }
-      }
-    },
-    "option-filter-relationship-mixin": {
-      "properties": {
-        "xdm:filter": {
+        "xdm:filterType": {
           "type": "string",
-          "format": "uri-reference",
-          "title": "Decision Options Filter",
-          "description": "The reference to a filter that is applied to the inventory of options when a decisioning is made the context of this activity. The value is the URI (@id) of the decision options filter that is referenced. See schema https://ns.adobe.com/experience/decisioning/option",
-          "meta:descriptors": [
-            {
-              "@type": "xdm:manyToOne",
-              "xdm:destinationSchema": "https://ns.adobe.com/experience/decisioning/option-filter",
-              "xdm:destinationProperty": "@id"
-            }
-          ]
+          "title": "Decision Option Filter Type",
+          "description": "An indicator to identify the handler of the filter expression to which any parameters will be provided. Parameters will be provided as additional properties in schemas that extend Decision Option Filter."
         }
       }
     }
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
-    },
-    {
       "$ref": "https://ns.adobe.com/xdm/data/record"
     },
     {
-      "$ref": "#/definitions/option-filter-datatype"
+      "$ref": "#/definitions/option-filter"
     },
     {
-      "required": ["@id", "xdm:value"]
-    },
-    {
-      "properties": { "@id": { "readonly": true } }
+      "required": ["xdm:name"]
     }
   ]
 }

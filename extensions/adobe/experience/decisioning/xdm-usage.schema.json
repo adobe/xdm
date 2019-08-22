@@ -20,39 +20,20 @@
       "properties": {
         "xdm:modelReference": {
           "type": "string",
-          "format": "uri",
-          "description": "Reference to the model, i.e. its schema $id property. "
+          "format": "uri-reference",
+          "description": "Reference to the model, i.e. its schema $id property."
         },
         "xdm:modelPropertyPaths": {
           "type": "array",
           "items": {
             "type": "string",
-            "description": "A fully qualified JSON path to an XDM field with dots used as the path delimiter"
-          },
-          "minItems": 1
-        }
-      }
-    },
-    "xdm-usage-mixin": {
-      "meta:intendedToExtend": [
-        "https://ns.adobe.com/experience/decisioning/rule"
-      ],
-      "properties": {
-        "https://ns.adobe.com/experience/decisioning/xdmUsage": {
-          "title": "Used XDMs and their Properties",
-          "description": "A list of \"experiance data model usage\" objects, one per model, that lists the fully qualified path to every used property from the model.",
-          "type": "array",
-          "items": {
-            "$ref": "https://ns.adobe.com/experience/decisioning/xdm-usage"
+            "description": "A fully qualified JSON path to an XDM field with dots used as the path delimiter."
           }
         }
       }
     }
   },
   "allOf": [
-    {
-      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
-    },
     {
       "$ref": "#/definitions/xdm-usage-datatype"
     },

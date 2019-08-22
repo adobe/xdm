@@ -7,6 +7,7 @@
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/experience/offer-management/offer-filter",
+  "meta:extends": ["https://ns.adobe.com/experience/decisioning/option-filter"],
   "meta:abstract": false,
   "meta:extensible": true,
   "type": "object",
@@ -15,31 +16,37 @@
   "definitions": {
     "offer-filter": {
       "properties": {
-        "@id": {
-          "type": "string",
-          "format": "uri-reference",
-          "title": "ID",
-          "description": "The unique identifier of the filter. This @id must be unique within a repository container for objects that are not the same, otherwise it is interpreted as referring to the same object."
+        "xdm:filterType": {
+          "enum": ["offers", "anyTags", "allTags"],
+          "meta:enum": {
+            "offers": "The filter directly references offers by their ids. The set of matching offers is enumerated.",
+            "anyTags": "The filter is set up using tags and any tag specified in the `xdm:ids` list that has a match with one tag set on an offer is sufficent for the offer to qualify.",
+            "allTags": "The filter is set up using tags and all tags specified in the `xdm:ids` list must match one set on a particular offer for the offer to qualify."
+          }
         },
-        "xdm:name": {
-          "type": "string",
-          "title": "Name",
-          "description": "Filter name"
-        },
-        "xdm:value": {
-          "$ref": "https://ns.adobe.com/experience/offer-management/filter-expression",
-          "title": "Expression taking offer XDM instances (list of trees) as input",
-          "description": "Contains the condition that is used to select offers based on a combination of tags or, directly, using the @id of offers."
+        "xdm:ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "uri-reference",
+            "description": "An identifier of an XDM entity. The value value refers to an `@id` property of the entity. The type of the entity depends on the filterType value. For instance for filters with `xdm:filterType` value equals `offers` the values reference offers. If the `xdm:filterType` value equals `anyTags` or equals `allTags` then the the values reference tag entities."
+          }
         }
       }
     }
   },
   "allOf": [
     {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "https://ns.adobe.com/experience/decisioning/option-filter"
+    },
+    {
       "$ref": "#/definitions/offer-filter"
     },
     {
-      "required": ["xdm:name", "xdm:value"]
+      "required": ["xdm:name"]
     }
   ]
 }

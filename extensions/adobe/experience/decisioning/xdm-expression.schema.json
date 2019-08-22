@@ -1,0 +1,52 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/experience/decisioning/xdm-expression",
+  "meta:abstract": true,
+  "meta:extensible": true,
+  "type": "object",
+  "title": "XDM Expression",
+  "description": "An expression evaluated against sets of XDM instances. The Profile Query Language forms the foundation of those predicates. The expression operates not only over profile instances but over entity that conforms to the XDM model.",
+  "definitions": {
+    "xdm-expresion-datatype": {
+      "properties": {
+        "xdm:type": {
+          "type": "string",
+          "title": "Expression Type",
+          "description": "Type of expression. For example PQL, QUERYSERVICE, AAM.",
+          "meta:enum": {
+            "PQL": "The expression is given in the PQL language"
+          }
+        },
+        "xdm:format": {
+          "type": "string",
+          "title": "Format",
+          "description": "Serialization format of expression. For example pql/text, application/sql",
+          "pattern": "\\w+/[-.\\w]+(?:\\+[-.\\w]+)?",
+          "meta:enum": {
+            "pql/text": "The expression is given in text representation",
+            "pql/json": "The expression is given in JSON representation where the JSON objects represent nodes of the PQL Abstract Syntax Tree (AST)."
+          }
+        },
+        "xdm:value": {
+          "type": "string",
+          "title": "Expression over XDM instances",
+          "description": "Actual expression string. The syntax of expression will depend upon specified mime type."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/xdm-expresion-datatype"
+    },
+    {
+      "required": ["xdm:type", "xdm:format", "xdm:value"]
+    }
+  ]
+}

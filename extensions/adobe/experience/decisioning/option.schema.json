@@ -8,60 +8,41 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/experience/decisioning/option",
   "type": "object",
-  "title": "Option",
-  "meta:abstract": false,
+  "title": "Decision Option",
+  "meta:abstract": true,
   "meta:extensible": true,
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/data/record",
-
-    "https://ns.adobe.com/experience/decisioning/lifecycle-status#/definitions/lifecycle-status-mixin",
-    "https://ns.adobe.com/experience/decisioning/content-representation#/definitions/content-representation-mixin",
-    "https://ns.adobe.com/experience/decisioning/tag#/definitions/tags-relationship-mixin"
-  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "description": "This is the base schema for the alternatives that a decision choses from.",
   "definitions": {
-    "option-datatype": {
+    "option": {
       "properties": {
-        "schema:name": {
+        "xdm:name": {
           "type": "string",
-          "title": "Name",
-          "description": "The option's name. A human readable string to denote one or more options. Property has the semantic of schema.org's 'name' property defined on http://schema.org/Thing"
+          "title": "Option Name",
+          "description": "Option name. The name is displayed in various user interfaces."
         },
-        "xdm:optionData": {
+        "xdm:characteristics": {
+          "title": "Option Characteristics",
+          "description": "Additional properties or attributes belonging to this particular option. Different instances can have different characteristics (keys in the map). When every instance has a certain attribute or property it should be modeled as an extension to the schema that derives from option Detail. The characteristics are name value pairs used to distinguish an option from others. Characteristics are used as features to analyze and optimize the performance of an option.",
           "type": "object",
+          "meta:xdmType": "map",
           "additionalProperties": {
-            "type": "object"
-          },
-          "title": "Option Data Properties",
-          "description": "Option data is a key-value map that allows users to attach properties to individual options. Those values can be used in rules and models to select or reject, boost or burry that option. Any string can be used as a key name, the values are JSON objects. An example of such property would be the average acceptance rate of an option viz-a-viz a particular profile segment."
+            "type": "string",
+            "description": "Value of the property."
+          }
         }
       }
     }
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
-    },
-    {
       "$ref": "https://ns.adobe.com/xdm/data/record"
     },
     {
-      "$ref": "#/definitions/option-datatype"
+      "$ref": "#/definitions/option"
     },
     {
-      "$ref": "https://ns.adobe.com/experience/decisioning/lifecycle-status#/definitions/lifecycle-status-mixin"
-    },
-    {
-      "$ref": "https://ns.adobe.com/experience/decisioning/content-representation#/definitions/content-representation-mixin"
-    },
-    {
-      "$ref": "https://ns.adobe.com/experience/decisioning/tag#/definitions/tags-relationship-mixin"
-    },
-    {
-      "required": ["@id"]
-    },
-    {
-      "properties": { "@id": { "readonly": true } }
+      "required": ["xdm:name"]
     }
   ]
 }

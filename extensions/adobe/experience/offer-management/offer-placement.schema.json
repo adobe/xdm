@@ -33,23 +33,24 @@
         },
         "xdm:channel": {
           "type": "string",
-          "format": "uri",
+          "format": "uri-reference",
           "title": "Communication Channel",
           "description": "A reference to the channel entity. The channel indicates where the dynamic content is intended to be delivered. The channel constraint is used to convey not only where the offer will be used but also to determine the content editor or validator that is used for the experience. See 'https://ns.adobe.com/xdm/channels/channel'"
         },
         "xdm:componentType": {
-          "$ref": "https://ns.adobe.com/experience/offer-management/offer-representation#/definitions/content-component-type",
-          "title": "Content Type",
-          "description": "A constraint for the content that can be shown in the place described by this placement. Component Types are: image, html or plain text."
+          "$ref": "https://ns.adobe.com/experience/offer-management/content-component-type",
+          "title": "Offer Content Component Type",
+          "description": "A constraint for the content that can be shown in the place described by this placement. Offer Component Types are: image link, html or plain text."
         },
         "xdm:contentTypes": {
           "type": "array",
+          "title": "Content Component Media Types",
+          "description": "A constraint for the media type of the components that is expected in that placement. There could be more than one media type possible for one component such as different image format.",
           "items": {
             "type": "string",
             "title": "MIME Media Type",
-            "description": "[Multipurpose Internet Mail Extensions (MIME)](https://tools.ietf.org/html/rfc2046)",
             "pattern": "\\w+\\/[-.\\w]+(?:\\+[-.\\w]+)?",
-            "description": "A constraint for the media type of the components that is expected in that placement. There could be more than one media type possible for one component such as different image format."
+            "description": "[Multipurpose Internet Mail Extensions (MIME)](https://tools.ietf.org/html/rfc2046)"
           }
         }
       }

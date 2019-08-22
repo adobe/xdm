@@ -7,21 +7,21 @@
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/experience/offer-management/model-usage",
-  "meta:abstract": false,
+  "meta:abstract": true,
   "meta:extensible": true,
   "type": "object",
-  "title": "Used XDM Models and Properties from those Models",
+  "title": "Used XDM models and properties from those models",
   "description": "A key-value pair whose key is a reference to the model, i.e. the model's $id property. The value is an array of strings, each string representing a fully qualified path to an XDM field with dots used as the path delimiter.",
   "definitions": {
-    "model-usage": {
+    "model-usage-datatype": {
       "type": "object",
       "title": "Model and Used Properties",
       "description": "A key-value pair whose key is reference to the model, i.e. the model's $id property. The value is an array of strings, each string representing a fully qualified path to an XDM field with dots used as the path delimiter.",
       "properties": {
         "xdm:modelReference": {
           "type": "string",
-          "format": "uri",
-          "description": "Reference to the model, i.e. its schema $id property. "
+          "format": "uri-reference",
+          "description": "Reference to the model, i.e. its schema $id property."
         },
         "xdm:modelPropertyPaths": {
           "type": "array",
@@ -35,7 +35,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/model-usage"
+      "$ref": "#/definitions/model-usage-datatype"
     },
     {
       "required": ["xdm:modelReference", "xdm:modelPropertyPaths"]

@@ -38,6 +38,11 @@
           "type": "string",
           "description": "When present, the property of the source schema to which this descriptor applies. This value is a JSON Pointer, applied to an instance of an object described by `xdm:sourceSchema`."
         },
+        "xdm:sourceVersion": {
+          "title": "Source Version",
+          "type": "number",
+          "description": "When present, major version being referenced."
+        },
         "xdm:sourceItem": {
           "title": "Source Item",
           "description": "When present, the selector used to match a specific item in the array pointed to by `sourceProperty`.",

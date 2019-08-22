@@ -32,15 +32,11 @@
           "title": "Property",
           "type": "string",
           "description": "Property of the `xdm:namespace` field.",
-          "enum": ["xdm:id", "xdm:code"],
-          "meta:enum": {
-            "xdm:id": "xdm ID",
-            "xdm:code": "xdm Code"
-          }
+          "enum": ["xdm:id", "xdm:code"]
         },
         "xdm:isPrimary": {
           "title": "Is primary key or not",
-          "description": "When present, Allows one field to be marked as the primary if desired. Only one field can be marked as true. Default is false."
+          "description": "When present, only one field should be marked as the primary. Default is false."
         }
       },
       "required": ["xdm:sourceProperty", "xdm:namespace", "xdm:property"]
@@ -54,5 +50,5 @@
       "$ref": "#/definitions/descriptorIdentity"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stabilizing"
 }

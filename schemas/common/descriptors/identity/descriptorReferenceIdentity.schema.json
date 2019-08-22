@@ -14,7 +14,7 @@
   ],
   "meta:abstract": false,
   "type": "object",
-  "description": "Used to describe that a field is an identity that refers to another Primary Identity.",
+  "description": "Used to assign a namespace that will be used to derive a relationship.",
   "definitions": {
     "descriptorReferenceIdentity": {
       "properties": {
@@ -26,7 +26,7 @@
         "xdm:identityNamespace": {
           "title": "Identity Namespace",
           "type": "string",
-          "description": "Namespace code of the sourceProperty."
+          "description": "The namespace code defined in identity system."
         }
       },
       "required": ["xdm:sourceProperty", "xdm:identityNamespace"]
@@ -40,5 +40,5 @@
       "$ref": "#/definitions/descriptorReferenceIdentity"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stabilizing"
 }

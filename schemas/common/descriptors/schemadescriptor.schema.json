@@ -41,7 +41,7 @@
         "xdm:sourceVersion": {
           "title": "Source Version",
           "type": "number",
-          "description": "When present, major version being referenced."
+          "description": "Major version being referenced."
         },
         "xdm:sourceItem": {
           "title": "Source Item",
@@ -49,7 +49,7 @@
           "$ref": "https://ns.adobe.com/xdm/common/descriptors/itemselector#/definitions/selector"
         }
       },
-      "required": ["xdm:sourceSchema"]
+      "required": ["xdm:sourceSchema", "xdm:sourceVersion"]
     }
   },
   "allOf": [
@@ -60,5 +60,5 @@
       "$ref": "#/definitions/descriptor"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stabilizing"
 }

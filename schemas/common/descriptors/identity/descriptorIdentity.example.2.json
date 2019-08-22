@@ -3,9 +3,6 @@
   "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile",
   "xdm:sourceVersion": 1,
   "xdm:sourceProperty": "/orgUnitId",
-  "xdm:sourceItem": {
-    "xdm:type": "https://ns.adobe.com/xdm/someField"
-  },
   "xdm:namespace": "AAM",
   "xdm:property": "xdm:code",
   "xdm:isPrimary": true

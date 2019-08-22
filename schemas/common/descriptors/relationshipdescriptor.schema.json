@@ -42,7 +42,7 @@
         "xdm:sourceValue": {
           "title": "Source Value",
           "type": "string",
-          "description": "When present, provides additional information on the descriptor. Descriptor producer and consumer should coordinate on how to use this field, e.g. defining rules on formats, values, and operations"
+          "description": "When present, provides additional information about the values in that field. Descriptor producer and consumer should coordinate on how to use this field, e.g. defining rules on formats, values, and operations."
         }
       },
       "oneOf": [
@@ -69,5 +69,5 @@
       "$ref": "#/definitions/relationshipdescriptor"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stabilizing"
 }

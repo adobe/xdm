@@ -24,7 +24,13 @@
         "xdm:id": {
           "description":
             "Principal ID identifies a user account in IMS. Its value is equivalent to the standard claim, `sub` as mentioned in the [openid connect 1.0 standard claims](http://openid.net/specs/openid-connect-core-1_0.html#StandardClaim). This value can be obtained by fetching the [userinfo resource](http://openid.net/specs/openid-connect-core-1_0.html#UserInfo) for a particular user [in IMS](https://wiki.corp.adobe.com/display/ims/IMS+API+-+userinfo).",
-          "type": "string"
+          "type": "string",
+          "meta:descriptors": [{
+            "@type": "xdm:searchdescriptor",
+            "search:indexed": true,
+            "search:store": "stored",
+            "search:filterable": true
+          }]
         },
         "xdm:type": {
           "type": "string",
@@ -39,7 +45,14 @@
       "xdm:displayName": {
         "title": "Name",
         "type": "string",
-        "description": "Display name."
+        "description": "Display name.",
+        "meta:descriptors": [{
+          "@type": "xdm:searchdescriptor",
+          "search:indexed": true,
+          "search:filterable": true,
+          "search:store": "stored",
+          "search:sort": "sorted"
+        }]
       },
       "xdm:profileImage": {
         "title": "Image",

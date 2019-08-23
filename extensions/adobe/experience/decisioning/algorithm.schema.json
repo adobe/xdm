@@ -20,7 +20,7 @@
           "$ref": "#/definitions/algorithm-type",
           "description": "Type of the algorithm."
         },
-        "schema:name": {
+        "xdm:name": {
           "type": "string",
           "title": "Name",
           "description": "Algorithm name. The name is displayed in various user interfaces. Property has the semantic of schema.org's name property defined on http://schema.org/Thing"

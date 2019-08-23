@@ -132,7 +132,7 @@
         },
         "xdm:geoipLocationId": {
           "title": "Geo IP Location Identifier",
-          "type": "number",
+          "type": "string",
           "description": "A numeric identifier that is obtained from Maxmind’s GeoIP package that represents the Geo"
         },
         "xdm:domainPlacement": {
@@ -175,13 +175,13 @@
           "type": "number",
           "description": "Count of Transaction Events with revenue attributed to the Click Event"
         },
-        "xdm:clickThroughmaxdata": {
+        "xdm:clickThroughMaxdata": {
           "title": "Click Through Max Data",
           "type": "number",
           "description": "A keyword on a day could be attributed to multiple transaction events, this is the max of clickthrough data in the series/group"
         },
         "xdm:viewThroughData": {
-          "title": "View Through Maximum Data",
+          "title": "View Through Data",
           "type": "number",
           "description": "Count of Transaction Events with revenue attributed to the Impression Event"
         },

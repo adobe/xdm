@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/time-series"],
-  "description": "Revenue Model Conversions after applying common advertising industry models.",
+  "description": "Revenue Model Conversions is the output of Post attributed conversions after applying common adveristing industry models.",
   "definitions": {
     "conversionmodel": {
       "properties": {
@@ -88,13 +88,74 @@
           "type": "string",
           "description": "Property Name Configured by Pixel, Analytics, Custom Feeds"
         },
-        "xdm:conversionModels": {
-          "title": "Attributed Conversion Model Output",
+        "xdm:modelName": {
+          "title": "Model Name",
+          "type": "string",
+          "description": "Unique Name of the advertising attribution Model. Examples include Last Event, First Event, Even Distribution"
+        },
+        "xdm:clickThroughCount": {
+          "title": "Click Through Count Model Attribution",
           "type": "array",
           "items": {
-            "$ref": "https://ns.adobe.com/experience/adcloud/advertisingmodel"
+            "type": "number"
           },
-          "description": "Advertising Models applied on attributed conversion paths. Array holds model name, conversion type, conversion counts and conversion values"
+          "description": "Evaluated as Raw Conversion Count for attributed models if trigger event is Click"
+        },
+        "xdm:clickThroughValue": {
+          "title": "Click Through Value Model Attribution",
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "description": "Evaluated as Raw Conversion Value for attributed models if trigger event is Click"
+        },
+        "xdm:viewThroughCount": {
+          "title": "View Through Count Model Attribution",
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "description": "Evaluated as Raw Conversion Count for attributed models if trigger event is Impression"
+        },
+        "xdm:viewThroughValue": {
+          "title": "View Through Value Model Attribution",
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "description": "Evaluated as Raw Conversion Value for attributed models if trigger event is Impression"
+        },
+        "xdm:clickviewThroughValue": {
+          "title": "Click View Through Value Model Attribution",
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "description": "Evaluated as Raw Conversion Value for attributed models if trigger event is click but impressions present in path"
+        },
+        "xdm:clickviewThroughCount": {
+          "title": "Click View Through Count Model Attribution",
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "description": "Evaluated as Raw Conversion Count for attributed models if trigger event is click but impressions present in path"
+        },
+        "xdm:viewclickThroughValue": {
+          "title": "View Click Through Value Model Attribution",
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "description": "Raw Conversion Value for attributed models if trigger event is impression but clicks present in path"
+        },
+        "xdm:viewclickThroughCount": {
+          "title": "View Click Through Count Model Attribution",
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "description": "Raw Conversion Count for attributed models if trigger event is impression but clicks present in path"
         },
         "xdm:conversionType": {
           "title": "Conversion Type",

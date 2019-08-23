@@ -204,7 +204,7 @@
         "xdm:eventUid": {
           "title": "Event UID",
           "type": "string",
-          "description": "Unique Identifier of the Event"
+          "description": "Unique Identifier of the Conversion Event"
         },
         "xdm:impressionUid": {
           "title": "Impression UID",

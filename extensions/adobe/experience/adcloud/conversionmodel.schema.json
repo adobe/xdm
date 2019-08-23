@@ -136,6 +136,8 @@
         "xdm:conversionType": {
           "title": "Conversion Type",
           "type": "integer",
+          "minimum": -32768,
+          "maximum": 32767,
           "description": "Feed Conversion Type indicates where the conversion event originated from - examples client, analytics, cross device"
         },
         "xdm:device": {

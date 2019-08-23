@@ -95,66 +95,42 @@
         },
         "xdm:clickThroughCount": {
           "title": "Click Through Count Model Attribution",
-          "type": "array",
-          "items": {
-            "type": "number"
-          },
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Evaluated as Raw Conversion Count for attributed models if trigger event is Click"
         },
         "xdm:clickThroughValue": {
           "title": "Click Through Value Model Attribution",
-          "type": "array",
-          "items": {
-            "type": "number"
-          },
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Evaluated as Raw Conversion Value for attributed models if trigger event is Click"
         },
         "xdm:viewThroughCount": {
           "title": "View Through Count Model Attribution",
-          "type": "array",
-          "items": {
-            "type": "number"
-          },
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Evaluated as Raw Conversion Count for attributed models if trigger event is Impression"
         },
         "xdm:viewThroughValue": {
           "title": "View Through Value Model Attribution",
-          "type": "array",
-          "items": {
-            "type": "number"
-          },
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Evaluated as Raw Conversion Value for attributed models if trigger event is Impression"
         },
         "xdm:clickviewThroughValue": {
           "title": "Click View Through Value Model Attribution",
-          "type": "array",
-          "items": {
-            "type": "number"
-          },
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Evaluated as Raw Conversion Value for attributed models if trigger event is click but impressions present in path"
         },
         "xdm:clickviewThroughCount": {
           "title": "Click View Through Count Model Attribution",
-          "type": "array",
-          "items": {
-            "type": "number"
-          },
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Evaluated as Raw Conversion Count for attributed models if trigger event is click but impressions present in path"
         },
         "xdm:viewclickThroughValue": {
           "title": "View Click Through Value Model Attribution",
-          "type": "array",
-          "items": {
-            "type": "number"
-          },
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Raw Conversion Value for attributed models if trigger event is impression but clicks present in path"
         },
         "xdm:viewclickThroughCount": {
           "title": "View Click Through Count Model Attribution",
-          "type": "array",
-          "items": {
-            "type": "number"
-          },
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Raw Conversion Count for attributed models if trigger event is impression but clicks present in path"
         },
         "xdm:conversionType": {

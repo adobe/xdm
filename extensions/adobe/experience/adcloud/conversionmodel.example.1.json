@@ -1,0 +1,43 @@
+{
+  "xdm:id": 2419,
+  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+  "xdm:advertiserId": "2419",
+  "xdm:searchEngineId": 3,
+  "xdm:campaignId": "100",
+  "xdm:placementId": "10001",
+  "xdm:adgroupId": "101",
+  "xdm:adId": "103",
+  "xdm:term": "Cars",
+  "xdm:termId": "123456",
+  "xdm:matchType": "Phrase",
+  "xdm:propertyName": "orders",
+  "xdm:modelName": "Last Event"  
+  "xdm:clickThroughCount": {
+    "xdm:value": 20
+  },
+  "xdm:clickThroughValue": {
+    "xdm.value": 100
+  },
+  "xdm:viewThroughCount": {
+    "xdm:totalCost": 42
+  },
+  "xdm:viewThroughValue": {
+    "xdm:value": 2
+  },
+  "xdm:clickviewThroughCount": {
+    "xdm:value": 3
+  },
+  "xdm:clickviewThroughValue": {
+    "xdm:value": 4
+  },
+  "xdm:viewclickThroughCount": {
+    "xdm:value": 4
+  },
+  "xdm:viewclickThroughValue": {
+    "xdm:value": 4
+  },
+  "xdm:device": {
+    "xdm:type": "mobile"
+  },
+  "xdm:conversionType": 4
+}

@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/profileStitchIdentity
 ```
 
-ProfileStitchIdentity is used to clearly distinguish Profile Stitching from multiple sources. ProfileStitchIdentity is established by an Profile Stitch identity provider, which itself is referenced in the `namespace` attribute. Within each `namespace`, the profileStitchIdentity is unique.
+Profile stitch identity is used to clearly distinguish profile Stitching from multiple sources. `ProfileStitchIdentity` is established by an profile stitch identity provider, which itself is referenced in the `namespace` attribute. Within each `namespace`, the profileStitchIdentity is unique.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -38,7 +38,7 @@ ProfileStitchIdentity is used to clearly distinguish Profile Stitching from mult
 ## @id
 ### Identifier
 
-Identity of the Profile Stitch in the related namespace.
+Identity of the profile stitch in the related namespace.
 
 `@id`
 * is optional

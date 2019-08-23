@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/experienceevent-application
 ```
 
-ExperienceEvent Application Details.
+ExperienceEvent application details.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -13,7 +13,7 @@ ExperienceEvent Application Details.
 ## Schema Hierarchy
 
 * ExperienceEvent Application Details `https://ns.adobe.com/xdm/context/experienceevent-application`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Application](application.schema.md) `https://ns.adobe.com/xdm/context/application`
 
 

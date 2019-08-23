@@ -74,7 +74,7 @@
                 },
                 "iptc4xmpExt:Creator": {
                     "title": "Creator",
-                    "description": "Party or parties (person or organisation) which created the video, refinement by the role attribute.",
+                    "description": "Party or parties (person or organization) which created the video, refinement by the role attribute.",
                     "type": "array",
                     "items": {
                         "$ref": "http://www.iptc.org/creator"

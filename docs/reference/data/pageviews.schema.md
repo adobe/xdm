@@ -1,22 +1,22 @@
 
-# page views Schema
+# Page Views Schema
 
 ```
 https://ns.adobe.com/xdm/data/metrics/web/pageviews
 ```
 
-The web metric pageViews describes the number of impressions of a web page.
+The web metric `pageViews` describes the number of impressions of a web page.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/pageviews.schema.json](data/pageviews.schema.json) |
 ## Schema Hierarchy
 
-* page views `https://ns.adobe.com/xdm/data/metrics/web/pageviews`
+* Page Views `https://ns.adobe.com/xdm/data/metrics/web/pageviews`
   * [Metric Definition](metricdefinition.schema.md) `https://ns.adobe.com/xdm/data/metricdefinition`
 
 
-## page views Example
+## Page Views Example
 ```json
 {
   "schema:name": "web metric: pageViews",
@@ -26,7 +26,7 @@ The web metric pageViews describes the number of impressions of a web page.
 }
 ```
 
-# page views Properties
+# Page Views Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|

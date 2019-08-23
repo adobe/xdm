@@ -9,7 +9,7 @@
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "Profile Stitch",
     "type": "object",
-    "description": "Details about the ids that were joined by profile stitching.",
+    "description": "Details about the IDs that were joined by profile stitching.",
     "definitions": {
         "profileStitch": {
             "properties": {

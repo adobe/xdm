@@ -13,7 +13,7 @@ The web details for ExperienceEvents.
 ## Schema Hierarchy
 
 * ExperienceEvent Web Details `https://ns.adobe.com/xdm/context/experienceevent-web`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Web Information](webinfo.schema.md) `https://ns.adobe.com/xdm/context/webinfo`
 
 

@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/common/orgunit
 ```
 
-The organizaational unit of a parent organization.
+The organizational unit of a parent organization.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -49,7 +49,7 @@ The ID associated with this organizational unit.
 
 
 ## xdm:label
-### Label of the organizational unit.
+### Label of the organizational Unit.
 
 The user-friendly name for the organizational unit.
 

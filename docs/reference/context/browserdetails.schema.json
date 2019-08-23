@@ -10,7 +10,7 @@
     "title": "Browser Details",
     "type": "object",
     "meta:extensible": true,
-    "description": "Detail information related to the browser",
+    "description": "Detail information related to the browser.",
     "definitions": {
         "browserdetails": {
             "properties": {

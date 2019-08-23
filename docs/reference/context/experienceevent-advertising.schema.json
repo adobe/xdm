@@ -14,14 +14,14 @@
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/experienceevent"
     ],
-    "description": "ExperienceEvent Details for Advertising.",
+    "description": "ExperienceEvent details for advertising.",
     "definitions": {
         "experienceevent-advertising": {
             "properties": {
                 "xdm:advertising": {
                     "title": "Advertising",
                     "$ref": "https://ns.adobe.com/xdm/context/advertising",
-                    "description": "Information related to advertising activity in ExperienceEvents"
+                    "description": "Information related to advertising activity in ExperienceEvents."
                 }
             }
         }

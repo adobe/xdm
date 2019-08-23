@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/data/record
 ```
 
-Used to indicate the behaviour of record data semantic when composed into data Schemas.
+Used to indicate the behavior of record data semantic when composed into data schemas.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -13,7 +13,7 @@ Used to indicate the behaviour of record data semantic when composed into data S
 ## Schema Hierarchy
 
 * Record Schema `https://ns.adobe.com/xdm/data/record`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
 ## Record Schema Example
@@ -28,7 +28,6 @@ Used to indicate the behaviour of record data semantic when composed into data S
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | Record Schema (this schema) |
-| [xdm:timeSeriesEvents](#xdmtimeseriesevents) | Time-series Schema | Optional | Record Schema (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -46,32 +45,6 @@ A unique identifier for the record.
 
 `string`
 * format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
-
-
-
-
-
-
-## xdm:timeSeriesEvents
-### Time-series Events
-
-List of time-series based events that relate to schemas based on record.
-
-`xdm:timeSeriesEvents`
-* is optional
-* type: Time-series Schema
-
-* defined in this schema
-
-### xdm:timeSeriesEvents Type
-
-
-Array type: Time-series Schema
-
-All items must be of the type:
-* [Time-series Schema](time-series.schema.md) – `https://ns.adobe.com/xdm/data/time-series`
-
-
 
 
 

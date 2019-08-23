@@ -86,7 +86,7 @@ All items must be of the type:
 
 ## xdm:fontFace
 
-The name of the typeface, i.e. the specific weight or instance of the fontFamily. For example: Bold, Italic
+The name of the typeface, i.e. the specific weight or instance of the fontFamily. For example: Bold, Italic.
 
 `xdm:fontFace`
 * is optional
@@ -154,7 +154,7 @@ The font file name (not a complete path). For example: `Times New Roman.otf`. So
 
 ## xdm:fontName
 
-PostScript name of the font. For example: `TimesNewRomanPS-BoldItalicMT`. `font_name` is manadatory to identify the font used in an asset but an asset may not have a `font` property if it has only images/vector arts (no text).
+PostScript name of the font. For example: `TimesNewRomanPS-BoldItalicMT`. `font_name` is mandatory to identify the font used in an asset but an asset may not have a `font` property if it has only images/vector arts (no text).
 
 `xdm:fontName`
 * is **required**
@@ -173,7 +173,7 @@ PostScript name of the font. For example: `TimesNewRomanPS-BoldItalicMT`. `font_
 
 ## xdm:fontType
 
-The font type, such as TrueType, Type 1, OpenType, and so on. `font_type` is manadatory to identify font category but an asset may not have a `font` property if it has only images/vector arts (no text).
+The font type, such as TrueType, Type 1, OpenType, and so on. `font_type` is mandatory to identify font category but an asset may not have a `font` property if it has only images/vector arts (no text).
 
 `xdm:fontType`
 * is **required**

@@ -7,11 +7,11 @@
   ],
   "$id": "https://ns.adobe.com/xdm/data/midpoints",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "midpoints",
+  "title": "Midpoints",
   "type": "object",
   "meta:extensible": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/metricdefinition"],
-  "description": "The metric midpoints describes when digital video played for at least 50% of the total duration.",
+  "description": "The metric `midpoints` describes when digital video played for at least 50% of the total duration.",
   "definitions": {
     "metricdefinition": {
       "properties": {
@@ -24,7 +24,7 @@
           "type": "string",
           "const": "metric: midpoints",
           "description":
-          "The metric midpoints describes when digital video played for at least 50% of the total duration."
+          "The metric `midpoints` describes when digital video played for at least 50% of the total duration."
         },
         "xdm:measurement": {
           "type": "string",

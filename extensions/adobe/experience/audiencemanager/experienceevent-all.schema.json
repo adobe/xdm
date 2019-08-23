@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "Adobe Audience Manager ExperienceEvent Full Extension. Contains all Solution added fields.",
+  "description": "Adobe Audience Manager ExperienceEvent full extension. Contains all Solution added fields.",
   "definitions": {
     "experienceevent": {
       "properties": {

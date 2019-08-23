@@ -9,7 +9,7 @@
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "Direct Marketing Email Address",
     "type": "object",
-    "description": "Direct Marketing Email Address.",
+    "description": "Direct marketing email address.",
     "definitions": {
         "directmarketing-emailaddress": {
             "properties": {

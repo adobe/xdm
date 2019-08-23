@@ -161,7 +161,7 @@ Post office box of the address.
 ## xdm:primary
 ### Primary
 
-Primary address indicator. A Profile can have only one `primary` address at a given point of time.
+Primary address indicator. A profile can have only one `primary` address at a given point of time.
 
 
 `xdm:primary`
@@ -199,7 +199,7 @@ Address quality rating.
 | Value | Description |
 |-------|-------------|
 | `incomplete_address` | Incomplete address |
-| `unknown_town_postal_code` | Unknown Town-Postal Code |
+| `unknown_town_postal_code` | Unknown town-postal code |
 | `empty_street` | Empty street |
 | `unknown_street` | Unknown street |
 | `partially_recognized_street` | Partially-recognized street |

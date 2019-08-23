@@ -20,16 +20,6 @@ The geographic related data where an event was observed.
 
 ```json
 {
-  "@id": "https://data.adobe.io/entities/geo/potsdam",
-  "xdm:countryCode": "DE",
-  "xdm:stateProvince": "DE-BB",
-  "xdm:city": "Potsdam",
-  "xdm:postalCode": "14482"
-}
-```
-
-```json
-{
   "@id": "https://data.adobe.io/entities/geo/tokyo",
   "xdm:countryCode": "JP",
   "xdm:stateProvince": "JP-13",
@@ -37,6 +27,16 @@ The geographic related data where an event was observed.
   "xdm:postalCode": "141-0032",
   "schema:latitude": 35.6185,
   "schema:longitude": 139.73237
+}
+```
+
+```json
+{
+  "@id": "https://data.adobe.io/entities/geo/potsdam",
+  "xdm:countryCode": "DE",
+  "xdm:stateProvince": "DE-BB",
+  "xdm:city": "Potsdam",
+  "xdm:postalCode": "14482"
 }
 ```
 
@@ -211,7 +211,7 @@ All instances must conform to this regular expression
 ## xdm:dmaID
 ### Designated Market Area
 
-The Nielsen Media Research designated market area.
+The Nielsen media research designated market area.
 
 `xdm:dmaID`
 * is optional
@@ -231,7 +231,7 @@ The Nielsen Media Research designated market area.
 ## xdm:msaID
 ### Metropolitan Statistical Area
 
-The Metropolitan Statistical Area in the USA where the observation occurred.
+The metropolitan statistical area in the USA where the observation occurred.
 
 `xdm:msaID`
 * is optional

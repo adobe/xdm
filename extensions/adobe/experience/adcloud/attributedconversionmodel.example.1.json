@@ -11,7 +11,7 @@
   "xdm:termId": "123456",
   "xdm:matchType": "Phrase",
   "xdm:propertyName": "orders",
-  "xdm:modelName": "Last Event",
+  "xdm:modelName": "LAST EVENT",
   "xdm:clickThroughCount": {
     "xdm:value": 20
   },
@@ -24,20 +24,20 @@
   "xdm:viewThroughValue": {
     "xdm:value": 2
   },
-  "xdm:clickviewThroughCount": {
+  "xdm:clickPlusViewThroughCount": {
     "xdm:value": 3
   },
-  "xdm:clickviewThroughValue": {
+  "xdm:clickPlusViewThroughValue": {
     "xdm:value": 4
   },
-  "xdm:viewclickThroughCount": {
+  "xdm:viewPlusClickThroughCount": {
     "xdm:value": 4
   },
-  "xdm:viewclickThroughValue": {
+  "xdm:viewPlusClickThroughValue": {
     "xdm:value": 4
   },
   "xdm:device": {
     "xdm:type": "mobile"
   },
-  "xdm:conversionType": 4
+  "xdm:conversionType": 0
 }

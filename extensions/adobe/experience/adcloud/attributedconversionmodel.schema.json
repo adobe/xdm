@@ -115,22 +115,22 @@
           "description": "Evaluated as Raw Conversion Sum for models if trigger event is Impression"
         },
         "xdm:clickPlusViewThroughCount": {
-          "title": "Click View Through Conversion Count",
+          "title": "Click Plus View Through Conversion Count",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Evaluated as Raw Conversion Count for models if trigger event is click but impressions present in path"
         },
         "xdm:clickPlusViewThroughValue": {
-          "title": "Click View Through Conversion Sum",
+          "title": "Click Plus View Through Conversion Sum",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Evaluated as Raw Conversion Sum for models if trigger event is click but impressions present in path"
         },
         "xdm:viewPlusClickThroughCount": {
-          "title": "View Click Through Conversion Count",
+          "title": "View Plus Click Through Conversion Count",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Raw Conversion Count for models if trigger event is impression but clicks present in path"
         },
         "xdm:viewPlusClickThroughValue": {
-          "title": "View Click Through Conversion Sum",
+          "title": "View Plus Click Through Conversion Sum",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Raw Conversion Sum for models if trigger event is impression but clicks present in path"
         },

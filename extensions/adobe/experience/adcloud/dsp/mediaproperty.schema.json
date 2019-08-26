@@ -1,0 +1,80 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/adcloud/dsp/advertiser",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "DSP Advertising Media Property",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:auditable": true,
+  "meta:abstract": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "description": "Adobe Advertising Cloud DSP Media Property Details.",
+  "definitions": {
+    "dsp-mediaproperty": {
+      "properties": {
+        "xdm:mediaPropertyName": {
+          "title": "Media Property Name",
+          "type": "string",
+          "description": "Name of the Media Property."
+        },
+        "xdm:source": {
+          "title": "Source",
+          "type": "string",
+          "description": "Source of the Media Property."
+        },
+        "xdm:publisher": {
+          "title": "Publisher",
+          "type": "string",
+          "description": "Publisher of the Media Property."
+        },
+        "xdm:videoCertified": {
+          "title": "Video Certified",
+          "type": "boolean",
+          "description": "Indicates if this media property supports video ads."
+        },
+        "xdm:displayCertified": {
+          "title": "Display Certified",
+          "type": "boolean",
+          "description": "Indicates if this media property supports display ads."
+        },
+        "xdm:audioCertified": {
+          "title": "Audio Certified",
+          "type": "boolean",
+          "description": "Indicates if this media property supports audio ads."
+        },
+        "xdm:vpaidAccepted": {
+          "title": "VPaid Accepted",
+          "type": "boolean",
+          "description": "Indicates if this media property supports VPaid ads."
+        },
+        "xdm:mobileAds": {
+          "title": "Mobile Ads",
+          "type": "boolean",
+          "description": "Indicates if this media property supports mobile ads."
+        },
+        "xdm:connectedTvOnly": {
+          "title": "Connected TV Only",
+          "type": "boolean",
+          "description": "Indicates if this media property supports only connected tv ads."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/auditable"
+    },
+    {
+      "$ref": "#/definitions/dsp-mediaproperty"
+    }
+  ],
+  "meta:status": "experimental"
+}

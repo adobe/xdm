@@ -1,0 +1,60 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/adcloud/dsp/adserver",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Display Advertising Ad Server",
+  "type": "object",
+  "description": "Adobe Advertising Cloud Ad Server details.",
+  "definitions": {
+    "dsp-adserver": {
+      "properties": {
+        "xdm:adServerName": {
+          "title": "Ad Server name",
+          "type": "string",
+          "description": "Ad Server name."
+          },
+        "xdm:adServerStatus": {
+          "title": "Ad Server Status",
+          "type": "string",
+          "description": "The Ad Server Status determines if this Ad Server is active, inactive or deleted.",
+          "enum": [
+            "Active",
+            "Inactive",
+            "Deleted"
+          ],
+          "meta:enum": {
+            "Active": "Active",
+            "Inactive": "Inactive",
+            "Deleted": "Deleted"
+          }
+        },
+        "xdm:dealIdSupported": {
+          "title": "Deal Id Supported",
+          "type": "boolean",
+          "description": "If this Ad Server supports SSP deal ID mechanism."
+        },
+        "xdm:partnerId": {
+          "title": "Partner Id",
+          "type": "integer",
+          "description": "A reference to the partner if a 3rd party ad server or null."
+        },
+        "xdm:inventoryMediaPropertyId": {
+          "title": "Media Property Identifier",
+          "type": "string",
+          "description": "The identifier of the Media Property servicing the Ad Server Inventory."
+        }
+        }
+      }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/dsp-adserver"
+    }
+  ],
+  "meta:status": "experimental"
+}

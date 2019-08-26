@@ -1,0 +1,135 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/adcloud/dsp/feed",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "DSP Advertising Feed",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:auditable": true,
+  "meta:abstract": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "description": "Adobe Advertising Cloud DSP Feed Hierarchy Details.",
+  "definitions": {
+    "dsp-feed": {
+      "properties": {
+        "xdm:feedKey": {
+          "title": "Feed Key",
+          "type": "string",
+          "description": "Feed external unique identifier."
+        },
+        "xdm:feedName": {
+          "title": "Feed Name",
+          "type": "string",
+          "description": "Name of the feed."
+        },
+        "xdm:feedType": {
+          "title": "Feed Type",
+          "type": "string",
+          "description": "Feed Type",
+          "enum": [
+            "Onsite",
+            "TMEmbed",
+            "PartnerEmbed",
+            "RTB",
+            "Vast",
+            "VastProxy",
+            "TrialPay",
+            "DealID",
+            "SAS"
+          ],
+          "meta:enum": {
+            "Onsite": "Onsite",
+            "TMEmbed": "TMEmbed",
+            "PartnerEmbed": "PartnerEmbed",
+            "RTB": "RTB",
+            "Vast": "vast",
+            "VastProxy": "vast_proxy",
+            "TrialPay": "trialpay",
+            "DealID": "DealID",
+            "SAS": "SAS"
+          }
+        },
+        "xdm:mediaType": {
+          "title": "Media Type",
+          "type": "string",
+          "description": "Media Type",
+          "enum": [
+            "DesktopVideo",
+            "MobileVideo",
+            "ConnectedtvVideo",
+            "PtvVideo",
+            "Display",
+            "Audio"
+          ],
+          "meta:enum": {
+            "DesktopVideo": "desktop_video",
+            "MobileVideo": "mobile_video",
+            "ConnectedtvVideo": "connectedtv_video",
+            "PtvVideo": "ptv_video",
+            "Display": "display",
+            "Audio": "audio"
+          }
+        },
+        "xdm:feedTargetImpressions": {
+          "title": "Feed Target Impressions",
+          "type": "integer",
+          "description": "The number of impressions targeted by this feed."
+        },
+        "xdm:feedStartDate": {
+          "title": "Feed Start Date",
+          "type": "string",
+          "format": "date",
+          "description": "Feed Start Date"
+        },
+        "xdm:feedEndDate": {
+          "title": "Feed End Date",
+          "type": "string",
+          "format": "date",
+          "description": "Feed End Date"
+        },
+        "xdm:feedStatus": {
+          "title": "Feed Status",
+          "type": "string",
+          "description": "Feed Status determines if active, inactive or deleted.",
+          "enum": [
+            "Active",
+            "Inactive",
+            "Deleted"
+          ],
+          "meta:enum": {
+            "Active": "Active",
+            "Inactive": "Inactive",
+            "Deleted": "Deleted"
+          }
+        },
+        "xdm:adServerId": {
+          "title": "Ad Server Identifier",
+          "type": "string",
+          "description": "The identifier of the Ad Server providing this feed."
+        },
+        "xdm:mediaPropertyId": {
+          "title": "Media Property Identifier",
+          "type": "string",
+          "description": "The identifier of the Media Property servicing this feed."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/auditable"
+    },
+    {
+      "$ref": "#/definitions/dsp-feed"
+    }
+  ],
+  "meta:status": "experimental"
+}

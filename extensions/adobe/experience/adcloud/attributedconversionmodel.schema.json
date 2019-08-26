@@ -69,7 +69,14 @@
             "Website",
             "Product Target",
             "Product Group",
-            "unknown"
+            "Content",
+            "SiteCpc",
+            "SiteCpm",
+            "Category",
+            "Search",
+            "Adgroup",
+            "Dynamic Ad Target",
+            "Unknown"
           ],
           "meta:enum": {
             "Broad": "Broad",
@@ -80,7 +87,14 @@
             "Website": "Website",
             "Product Target": "Product Target",
             "Product Group": "Product Group",
-            "null": "Unknown"
+            "Content": "Content",
+            "SiteCpc": "SiteCpc",
+            "Sitecpm": "SiteCpm",
+            "Category": "Category",
+            "Search": "Search",
+            "Adgroup": "Adgroup",
+            "Dynamic Ad Target": "Dynamic Ad Target",
+            "Unknown": "Unknown"
           }
         },
         "xdm:propertyName": {

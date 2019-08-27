@@ -9,14 +9,11 @@
   "$id": "https://ns.adobe.com/experience/decisioning/calendar-constraint",
   "meta:abstract": true,
   "meta:extensible": true,
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/experience/decisioning/option"
-  ],
   "type": "object",
   "title": "Calendar Constraint",
   "description": "A calendar constraint is a component of a decision option that defines the date range when option is valid. Outside that date range the option cannot be proposed.",
   "definitions": {
-    "calendar-constraint": {
+    "calendar-constraint-datatype": {
       "type": "object",
       "properties": {
         "xdm:startDate": {
@@ -36,7 +33,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/calendar-constraint"
+      "$ref": "#/definitions/calendar-constraint-datatype"
     }
   ]
 }

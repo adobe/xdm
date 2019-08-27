@@ -1,0 +1,67 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/experience/decisioning/option-all",
+  "type": "object",
+  "title": "Decision Option Full Extension",
+  "meta:abstract": true,
+  "meta:extensible": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/experience/decisioning/option"
+  ],
+  "description": "Contains all content, constraint and ranking data extensions for decision options.",
+  "definitions": {
+    "option-all-mixin": {
+      "properties": {
+        "xdm:status": {
+          "$ref": "https://ns.adobe.com/experience/decisioning/lifecycle-status"
+        },
+        "xdm:tags": {
+          "type": "array",
+          "title": "Tags",
+          "description": "The set of tags associated with this option. The tags are used in option filter expressions to constrain the overal set of choices to a topical sub set (category).",
+          "items": {
+            "type": "string",
+            "format": "uri-reference",
+            "description": "An identifier of a Tag object. The value is the @id of the Tag that is referenced. See Tag schema https://ns.adobe.com/experience/decisioning/tag"
+          }
+        },
+        "xdm:representations": {
+          "type": "array",
+          "items": {
+            "$ref": "https://ns.adobe.com/experience/decisioning/content-representation"
+          },
+          "title": "Representations",
+          "description": "Representations for different content variants for each channel. A single decision option can have multiple contents variants. An content representation is the object that connects options to content. Content is information that is directed towards an audience for consumption in a (digital) experience. Content is delivered through channels (or a particular medium). "
+        },
+        "xdm:calendarConstraint": {
+          "$ref": "https://ns.adobe.com/experience/decisioning/calendar-constraint"
+        },
+        "xdm:profileConstraint": {
+          "$ref": "https://ns.adobe.com/experience/decisioning/profile-constraint"
+        },
+        "xdm:cappingConstraint": {
+          "$ref": "https://ns.adobe.com/experience/decisioning/capping-constraint"
+        },
+        "xdm:rank": {
+          "$ref": "https://ns.adobe.com/experience/decisioning/ranking-detail",
+          "title": "Ranking data",
+          "description": "Defines the priority and scoring function to rank options againts each other, regardless of the context or activitity in which they are considered. Among all the qualified options (per constraints) and for which the context/activity specific method resulted in the same rank, this ranking will decide the top (or top N) option to be proposed. If therefore acts as a tiebreaker when activity-specific scores cannot determine a strict ranking order."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "#/definitions/option-all-mixin"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "@id": "xcore:personalized-offer:e526a1503bf29e9",
+  "xdm:name": "Personalized Offer 1",
+  "xdm:characteristics": {
+    "category": "DC127"
+  },
+  "xdm:status": "approved",
+  "xdm:tags": ["xcore:tag:e5196f1d9119862"],
+  "xdm:representations": [
+    {
+      "xdm:components": [
+        {
+          "@type": "https://ns.adobe.com/experience/offer-management/content-component-text",
+          "dc:format": "text/template",
+          "xdm:text": "You can always get what you want!"
+        }
+      ],
+      "xdm:placement": "xcore:offer-placement:e51944a87919861"
+    }
+  ],
+  "xdm:calendarConstraint": {
+    "xdm:startTime": "2018-03-13T05:59:18.914Z",
+    "xdm:endTime": "2018-12-27T05:59:18.914Z"
+  },
+  "xdm:profileConstraint": {
+    "xdm:rule": "xcore:eligibility-rule:e5244c22eff29e8",
+    "_embedded": {
+      "xdm:name": "Out of state shopper with one or more purchases of more than $1000",
+      "xdm:definedOn": {
+        "": "https://ns.adobe.com/xdm/context/profile",
+        "xEvent": "https://ns.adobe.com/xdm/context/experienceevent",
+        "currentLocation": "https://ns.adobe.com/xdm/common/address"
+      },
+      "xdm:modelUsage": [
+        {
+          "xdm:modelReference": "_xdm.context.profile",
+          "xdm:modelPropertyPaths": ["homeAddress.stateOrProvince"]
+        },
+        {
+          "xdm:modelReference": "_xdm.context.experienceevent",
+          "xdm:modelPropertyPaths": [
+            "eventType",
+            "commerce.order.priceTotal",
+            "commerce.order.currencyCode"
+          ]
+        },
+        {
+          "xdm:modelReference": "_xdm.common.address",
+          "xdm:modelPropertyPaths": ["stateOrProvince"]
+        }
+      ]
+    },
+    "xdm:evaluatedFor": {
+      "": "ups:profile:#",
+      "xEvent": "ups:experienceevent:#",
+      "currentLocation": "request:#"
+    }
+  },
+  "xdm:cappingConstraint": {
+    "xdm:profileCap": 2,
+    "xdm:globalCap": 10
+  },
+  "xdm:rankinData": {
+    "xdm:priority": 3,
+    "xdm:scoringFunction": {
+      "xdm:function": "xcore:function:b437a2403cf10e9",
+      "_embedded": {
+        "xdm:name": "propensity",
+        "xdm:definedOn": [
+          {
+            "param1": "https://ns.adobe.com/xdm/context/profile",
+            "param2": "https://ns.adobe.com/experience/decisioning/option"
+          }
+        ],
+        "xdm:modelUsage": [
+          {
+            "xdm:modelReference": "_xdm.context.experienceevent",
+            "xdm:modelPropertyPaths": [
+              "timestamp",
+              "eventType",
+              "search.keywords",
+              "web",
+              "placeContext"
+            ]
+          },
+          {
+            "xdm:modelReference": "_experience.decisioning.option",
+            "xdm:modelPropertyPaths": ["characteristics.category"]
+          }
+        ]
+      },
+      "xdm:evaluatedFor": {
+        "param1": "ups:profile:#",
+        "param2": "ode:#"
+      }
+    }
+  }
+}

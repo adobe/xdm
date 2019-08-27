@@ -11,7 +11,7 @@
   "meta:extensible": true,
   "type": "object",
   "title": "Content Representation",
-  "description": "Decision options can represent content in the end user experience ",
+  "description": "Content representations contain metadate for content in the end user experience.",
   "definitions": {
     "content-representation-datatype": {
       "properties": {
@@ -24,7 +24,7 @@
         },
         "xdm:channel": {
           "type": "string",
-          "format": "uri-referemce",
+          "format": "uri-reference",
           "title": "Channel",
           "description": "The channel constraint is used to convey not only where the content will be used but determines the content editor or validator that is used for the representation. The value is a valid Channel URI. See 'https://ns.adobe.com/xdm/channels/channel'"
         }

@@ -25,6 +25,11 @@
           "$ref": "https://ns.adobe.com/experience/decisioning/xdm-expression",
           "title": "Expression over XDM instances in an alternate query syntax",
           "description": "Contains the expression over a collection of context XDM instances in text format. The text format borrows aspects from SQL and a functional notation"
+        },
+        "xdm:definedOn": {
+          "$ref": "https://ns.adobe.com/experience/decisioning/xdm-function-context-definition",
+          "title": "Context object definitions",
+          "description": "A map where each key declares a parameter or context object by its name and the value contains a reference to the XDM model, i.e. the symbol's type."
         }
       }
     }

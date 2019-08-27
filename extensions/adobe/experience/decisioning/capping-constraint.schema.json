@@ -9,9 +9,6 @@
   "$id": "https://ns.adobe.com/experience/decisioning/capping-constraint",
   "meta:abstract": true,
   "meta:extensible": true,
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/experience/decisioning/option"
-  ],
   "type": "object",
   "title": "Capping Constraint",
   "description": "A capping constraint is a component of a decision option that defines the parameters for capping. Capping is the process of limiting how many times an option can be proposed, for an individual profile as well as across all profiles.",

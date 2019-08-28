@@ -1,0 +1,57 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/common/descriptors/alternateDisplayInfo",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Friendly Name Descriptor",
+  "meta:extensible": false,
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/common/descriptors/schemadescriptor#/definitions/descriptor"
+  ],
+  "meta:abstract": false,
+  "type": "object",
+  "description": "Allows to modify the \"title\" and \"description\" values of the core library schema fields. UI can use these to show a more friendly name for a standard field or to only show fields that have friendly names.",
+  "definitions": {
+    "alternateDisplayInfo": {
+      "properties": {
+        "@type": {
+          "title": "Type",
+          "type": "string",
+          "const": "xdm:alternateDisplayInfo"
+        },
+        "xdm:title": {
+          "title": "Title",
+          "type": "object",
+          "description": "When present, user friendly title to display."
+        },
+        "xdm:description": {
+          "title": "Description",
+          "type": "object",
+          "description": "When present, user friendly description to display."
+        }
+      },
+      "anyOf": [
+        {
+          "required": ["xdm:title"]
+        },
+        {
+          "required": ["xdm:description"]
+        }
+      ],
+      "required": ["xdm:sourceProperty"]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/descriptors/schemadescriptor#/definitions/descriptor"
+    },
+    {
+      "$ref": "#/definitions/alternateDisplayInfo"
+    }
+  ],
+  "meta:status": "stabilizing"
+}

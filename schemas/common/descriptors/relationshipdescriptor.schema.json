@@ -43,15 +43,14 @@
           "title": "Source Value",
           "type": "string",
           "description": "When present, provides additional information about the values in that field. Descriptor producer and consumer should coordinate on how to use this field, e.g. defining rules on formats, values, and operations."
+        },
+        "xdm:label": {
+          "title": "Label",
+          "type": "string"
         }
       },
       "oneOf": [
         {
-          "properties": {
-            "xdm:label": {
-              "type": "string"
-            }
-          },
           "required": ["xdm:label"]
         },
         {

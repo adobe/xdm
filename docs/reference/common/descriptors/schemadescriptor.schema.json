@@ -38,6 +38,11 @@
                     "type": "string",
                     "description": "When present, the property of the source schema to which this descriptor applies. This value is a JSON Pointer, applied to an instance of an object described by `xdm:sourceSchema`."
                 },
+                "xdm:sourceVersion": {
+                    "title": "Source Version",
+                    "type": "number",
+                    "description": "Major version being referenced."
+                },
                 "xdm:sourceItem": {
                     "title": "Source Item",
                     "description": "When present, the selector used to match a specific item in the array pointed to by `sourceProperty`.",
@@ -45,7 +50,8 @@
                 }
             },
             "required": [
-                "xdm:sourceSchema"
+                "xdm:sourceSchema",
+                "xdm:sourceVersion"
             ]
         }
     },
@@ -57,13 +63,14 @@
             "$ref": "#/definitions/descriptor"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stabilizing",
     "examples": [
         {
             "@id": "https://example.com/descriptors/1",
             "@type": "xdm:descriptorPrimaryKey",
             "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile",
             "xdm:sourceProperty": "xdm:identities",
+            "xdm:sourceVersion": 1,
             "xdm:sourceItem": {
                 "xdm:type": "https://ns.adobe.com/experience/mcid"
             }

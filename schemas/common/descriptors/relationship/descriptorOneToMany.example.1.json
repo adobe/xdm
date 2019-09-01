@@ -1,6 +1,6 @@
 {
-  "@id": "https://ns.adobe.com/example/descriptorOneToOne/1",
-  "@type": "xdm:descriptorOneToOne",
+  "@id": "https://ns.adobe.com/example/descriptorOneToMany/1",
+  "@type": "xdm:descriptorOneToMany",
   "xdm:sourceSchema": "https://ns.adobe.com/experience/aem/user",
   "xdm:sourceVersion": 1,
   "xdm:destinationSchema": "https://ns.adobe.com/xdm/context/profile",

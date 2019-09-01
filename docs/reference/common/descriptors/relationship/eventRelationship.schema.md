@@ -1,49 +1,43 @@
 
-# One to One Relationship Descriptor Schema
+# Event Relationship Descriptor Schema
 
 ```
-https://ns.adobe.com/xdm/common/descriptors/descriptorOneToOne
+https://ns.adobe.com/xdm/common/descriptors/eventRelationship
 ```
 
-Describes one to one relationship descriptor.
+Used by the UPS system to assign the specific schema that will used for the timeSeriesEvents field which is part of the union view of a class. If not supplied, the system today will default to the unified ExperienceEvent.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [common/descriptors/relationship/descriptorOneToOne.schema.json](common/descriptors/relationship/descriptorOneToOne.schema.json) |
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [common/descriptors/relationship/eventRelationship.schema.json](common/descriptors/relationship/eventRelationship.schema.json) |
 ## Schema Hierarchy
 
-* One to One Relationship Descriptor `https://ns.adobe.com/xdm/common/descriptors/descriptorOneToOne`
+* Event Relationship Descriptor `https://ns.adobe.com/xdm/common/descriptors/eventRelationship`
   * [Schema Descriptor](../schemadescriptor.schema.md) `https://ns.adobe.com/xdm/common/descriptors/schemadescriptor`
-  * [Relationship Descriptor](../relationshipdescriptor.schema.md) `https://ns.adobe.com/xdm/common/descriptors/relationshipdescriptor`
 
 
-## One to One Relationship Descriptor Example
+## Event Relationship Descriptor Example
 ```json
 {
-  "@id": "https://ns.adobe.com/example/descriptorOneToOne/1",
-  "@type": "xdm:descriptorOneToOne",
-  "xdm:sourceSchema": "https://ns.adobe.com/experience/aem/user",
+  "@type": "xdm:eventRelationship",
+  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile__union",
   "xdm:sourceVersion": 1,
-  "xdm:destinationSchema": "https://ns.adobe.com/xdm/context/profile",
-  "xdm:label": "UserProfile"
+  "xdm:destinationSchema": "https://ns.adobe.com/xdm/context/experienceevent__union",
+  "xdm:destinationVersion": 1
 }
 ```
 
-# One to One Relationship Descriptor Properties
+# Event Relationship Descriptor Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Schema Descriptor](../schemadescriptor.schema.md#id) |
-| [@type](#type) | `const` | Optional | One to One Relationship Descriptor (this schema) |
-| [xdm:destinationItem](#xdmdestinationitem) | complex | Optional | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdestinationitem) |
-| [xdm:destinationProperty](#xdmdestinationproperty) | `string` | Optional | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdestinationproperty) |
-| [xdm:destinationSchema](#xdmdestinationschema) | `string` | Optional | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdestinationschema) |
-| [xdm:destinationVersion](#xdmdestinationversion) | `number` | Optional | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdestinationversion) |
-| [xdm:label](#xdmlabel) | `string` | Optional | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmlabel) |
+| [@type](#type) | `const` | Optional | Event Relationship Descriptor (this schema) |
+| [xdm:destinationSchema](#xdmdestinationschema) | `string` | Optional | Event Relationship Descriptor (this schema) |
+| [xdm:destinationVersion](#xdmdestinationversion) | `number` | Optional | Event Relationship Descriptor (this schema) |
 | [xdm:sourceItem](#xdmsourceitem) | complex | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceitem) |
 | [xdm:sourceProperty](#xdmsourceproperty) | `string` | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceproperty) |
 | [xdm:sourceSchema](#xdmsourceschema) | `string` | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceschema) |
-| [xdm:sourceValue](#xdmsourcevalue) | `string` | Optional | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmsourcevalue) |
 | [xdm:sourceVersion](#xdmsourceversion) | `number` | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceversion) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -79,64 +73,8 @@ The unique identifier for the schema descriptor. This property is required when 
 The value of this property **must** be equal to:
 
 ```json
-"xdm:descriptorOneToOne"
+"xdm:eventRelationship"
 ```
-
-
-
-
-
-## xdm:destinationItem
-### Destination Item
-
-When present, the selector used to match a specific item in the array pointed to by destProperty
-
-`xdm:destinationItem`
-* is optional
-* type: complex
-* defined in [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdestinationitem)
-
-### xdm:destinationItem Type
-
-
-**One** of the following *conditions* need to be fulfilled.
-
-
-#### Condition 1
-
-
-
-#### Condition 2
-
-
-
-#### Condition 3
-
-
-
-#### Condition 4
-
-
-
-
-
-
-
-## xdm:destinationProperty
-### Destination Property
-
-When present, the property of the destination schema to which this descriptor applies. This value is a JSON Pointer, applied to an instance of an object described by 'xdm:destSchema'
-
-`xdm:destinationProperty`
-* is optional
-* type: `string`
-* defined in [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdestinationproperty)
-
-### xdm:destinationProperty Type
-
-
-`string`
-
 
 
 
@@ -150,7 +88,7 @@ The destination schema this descriptor applies to
 `xdm:destinationSchema`
 * is optional
 * type: `string`
-* defined in [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdestinationschema)
+* defined in this schema
 
 ### xdm:destinationSchema Type
 
@@ -171,30 +109,12 @@ When present, major version being referenced.
 `xdm:destinationVersion`
 * is optional
 * type: `number`
-* defined in [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdestinationversion)
+* defined in this schema
 
 ### xdm:destinationVersion Type
 
 
 `number`
-
-
-
-
-
-
-## xdm:label
-### Label
-
-`xdm:label`
-* is optional
-* type: `string`
-* defined in [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmlabel)
-
-### xdm:label Type
-
-
-`string`
 
 
 
@@ -272,26 +192,6 @@ The source schema this descriptor applies to. This property is required when the
 
 `string`
 * format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
-
-
-
-
-
-
-## xdm:sourceValue
-### Source Value
-
-When present, provides additional information about the values in that field. Descriptor producer and consumer should coordinate on how to use this field, e.g. defining rules on formats, values, and operations.
-
-`xdm:sourceValue`
-* is optional
-* type: `string`
-* defined in [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmsourcevalue)
-
-### xdm:sourceValue Type
-
-
-`string`
 
 
 

@@ -6,28 +6,33 @@
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "https://ns.adobe.com/experience/decisioning/xdm-function-evaluation",
+  "$id": "https://ns.adobe.com/experience/decisioning/xdm-evaluation",
   "meta:abstract": true,
   "meta:extensible": true,
+  "type": "object",
   "title": "Evaluation context for an XDM expression",
   "description": "Contains a value binding map where each key denotes a parameter or context object by name and the map value contains a reference to an XDM object that is resolved at runtime. The resolved XDM object is set as the context or parameter object for the evaluation of the function.",
   "definitions": {
-    "xdm-function-evaluation-datatype": {
-      "title": "Evaluation context for the expression in the profile constraint",
+    "xdm-evaluation-datatype": {
+      "title": "Rule or function evaluation",
       "description": "Contains a value binding map where each key denotes a parameter by name and the value contains a reference that is resolved at runtime.",
       "type": "object",
-      "meta:xdmType": "map",
-      "additionalProperties": {
-        "title": "Parameter binding for context object.",
-        "description": "Contains a locator or reference to determine the value of a parameter for invocating a function.",
-        "type": "string",
-        "format": "uri-reference"
+      "properties": {
+        "xdm:evaluatedFor": {
+          "meta:xdmType": "map",
+          "additionalProperties": {
+            "title": "Parameter binding for context object.",
+            "description": "Contains a locator or reference to determine the value of a function parameter or context object of a rule evaluation.",
+            "type": "string",
+            "format": "uri-reference"
+          }
+        }
       }
     }
   },
   "allOf": [
     {
-      "$ref": "#/definitions/xdm-function-evaluation-datatype"
+      "$ref": "#/definitions/xdm-evaluation-datatype"
     }
   ]
 }

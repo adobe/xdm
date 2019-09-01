@@ -20,6 +20,11 @@
           "title": "Priority",
           "description": "The priority of a ranking. When multiple options or sets of options are ranked, the priority determines the rank. Higher priority options are selected before any lower priority options. Options within the rank with the same priority are decided by the formula given in the rank's expression. Decision Options can be ordered by an absolute numeric value",
           "minimum": 0
+        },
+        "xdm:order": {
+          "title": "Order Evaluation",
+          "description": "Evaluation of an ordinal function. Options with the same ranking priority are decided by an ordinal scale. This function must return an ordinal value for a given option. Decision options will then be ordered (ranked) by that numeric value.",
+          "$ref": "https://ns.adobe.com/experience/decisioning/xdm-function-evaluation"
         }
       }
     }

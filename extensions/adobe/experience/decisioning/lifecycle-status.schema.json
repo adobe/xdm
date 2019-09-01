@@ -9,6 +9,7 @@
   "$id": "https://ns.adobe.com/experience/decisioning/lifecycle-status",
   "meta:abstract": true,
   "meta:extensible": true,
+  "type": "string",
   "title": "Decision Entity Lifecycle Status",
   "description": "Lifecycle status summarizes the current status of the creation, approval, usage and archival actions for the entity that mixes in this schema. A lifecycle action was performed and the results are indicated with this type.",
   "definitions": {

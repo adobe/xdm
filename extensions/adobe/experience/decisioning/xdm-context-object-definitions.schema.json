@@ -1,0 +1,75 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/experience/decisioning/xdm-context-object-definitions",
+  "meta:abstract": true,
+  "meta:extensible": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/experience/decisioning/rule",
+    "https://ns.adobe.com/experience/decisioning/function"
+  ],
+  "type": "object",
+  "title": "Context object definitions",
+  "description": "A map where each key declares a parameter or context object by its name and the value contains a reference to the XDM model, i.e. the symbol's type.",
+  "definitions": {
+    "xdm-context-object-definitions-mixin": {
+      "title": "Context object definitions",
+      "description": "A map where each key declares a parameter or context object by its name and the value contains a reference to the XDM model, i.e. the symbol's type.",
+      "type": "object",
+      "properties": {
+        "xdm:definedOn": {
+          "type": "object",
+          "meta:xdmType": "map",
+          "title": "Context object definition",
+          "description": "A map where each key declares a parameter or context object by its name and the value contains a reference to the XDM model, i.e. the symbol's type.",
+          "additionalProperties": {
+            "$ref": "#/definitions/object-definition-datatype"
+          }
+        }
+      }
+    },
+    "object-definition-datatype": {
+      "title": "Context object schema and schema usage",
+      "description": "Contains a valid XDM schema identifier or XDM type definition for the parameter or context object.",
+      "type": "object",
+      "properties": {
+        "meta:xdmId": {
+          "type": "string",
+          "format": "uri-reference",
+          "title": "Schema identifier",
+          "description": "The schema reference used in this definition."
+        },
+        "meta:altId": {
+          "type": "string",
+          "title": "XED encoded schema identifier",
+          "pattern": "^_[0-9a-zA-Z]+([.][0-9a-zA-Z\\-]+?)*$",
+          "description": "An XED encoded variant of the schema reference used in this definition."
+        },
+        "version": {
+          "type": "string",
+          "pattern": "^[0-9]+([.][0-9]+?)?$",
+          "default": "1",
+          "title": "XDM schema version",
+          "description": "Schema version which can be a revision number or git repo release tag number etc. This should be the same version number as part of the schema id"
+        },
+        "meta:referencePaths": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "description": "A fully qualified JSON path to an XDM field with dots used as the path delimiter."
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/xdm-context-object-definitions-mixin"
+    }
+  ]
+}

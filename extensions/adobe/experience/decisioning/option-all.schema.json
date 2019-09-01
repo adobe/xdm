@@ -51,7 +51,7 @@
         "xdm:rank": {
           "$ref": "https://ns.adobe.com/experience/decisioning/ranking-detail",
           "title": "Ranking data",
-          "description": "Defines the priority and scoring function to rank options againts each other, regardless of the context or activitity in which they are considered. Among all the qualified options (per constraints) and for which the context/activity specific method resulted in the same rank, this ranking will decide the top (or top N) option to be proposed. If therefore acts as a tiebreaker when activity-specific scores cannot determine a strict ranking order."
+          "description": "Defines the priority and order function to rank options againts each other, regardless of the context or activitity in which they are considered. Among all the qualified options (per constraints) and for which the context/activity specific method resulted in the same rank, this ranking will decide the top (or top N) option to be proposed. If therefore acts as a tiebreaker when activity-specific scores cannot determine a strict ranking order."
         }
       }
     }

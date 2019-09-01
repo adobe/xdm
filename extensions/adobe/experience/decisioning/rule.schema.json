@@ -7,9 +7,12 @@
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/experience/decisioning/rule",
-  "meta:abstract": false,
+  "meta:abstract": true,
   "meta:extensible": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record",
+    "https://ns.adobe.com/experience/decisioning/xdm-context-object-definitions"
+  ],
   "type": "object",
   "title": "Decisioning Rule",
   "description": "An rule is a named and referencable predicate used for testing conditions on various 'subjects' and 'objects'. The Profile Query Language forms the foundation of those predicates and primarily tests conditions on 'subjects' that are profiles with associated experience events. For instance rules are interpreted as 'IF PredicateExpression(Subject) == true THEN verb_action(object)'. The 'objects' in this contexts are the decision options (\"https://ns.adobe.com/experience/decisioning/option\"). The predicate either determines the eligibility of the decision option for a given 'subject' (user) or the predicate is used to affect the 'preferability' or priority for that option. A predicate can operate not only over profile fields but also over contextual data provided at the time of decisioning.",
@@ -25,11 +28,6 @@
           "$ref": "https://ns.adobe.com/experience/decisioning/xdm-expression",
           "title": "Expression over XDM instances in an alternate query syntax",
           "description": "Contains the expression over a collection of context XDM instances in text format. The text format borrows aspects from SQL and a functional notation"
-        },
-        "xdm:definedOn": {
-          "$ref": "https://ns.adobe.com/experience/decisioning/xdm-function-context-definition",
-          "title": "Context object definitions",
-          "description": "A map where each key declares a parameter or context object by its name and the value contains a reference to the XDM model, i.e. the symbol's type."
         }
       }
     }
@@ -39,10 +37,13 @@
       "$ref": "https://ns.adobe.com/xdm/data/record"
     },
     {
+      "$ref": "https://ns.adobe.com/experience/decisioning/xdm-context-object-definitions"
+    },
+    {
       "$ref": "#/definitions/rule"
     },
     {
-      "required": ["xdm:name"]
+      "required": ["xdm:name", "xdm:definedOn"]
     }
   ]
 }

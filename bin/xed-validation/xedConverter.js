@@ -330,7 +330,8 @@ class Converter extends EventEmitter {
 
 
 
-    if (xedWithRefs && xedWithRefs.properties) this.emit('json', refBase, JSON.stringify(xedWithRefs, null, 4)); //done
+    //if (xedWithRefs && xedWithRefs.properties) this.emit('json', refBase, JSON.stringify(xedWithRefs, null, 4)); //done
+    if (xedWithRefs) this.emit('json', refBase, JSON.stringify(xedWithRefs, null, 4)); //done
   }
 
   save(directory, id, schema) {

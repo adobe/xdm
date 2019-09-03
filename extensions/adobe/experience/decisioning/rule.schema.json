@@ -43,7 +43,7 @@
       "$ref": "#/definitions/rule"
     },
     {
-      "required": ["xdm:name", "xdm:definedOn"]
+      "required": ["xdm:name"]
     }
   ]
 }

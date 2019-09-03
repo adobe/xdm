@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/data/metrics/product-list-adds
 ```
 
-The commerce metric productListAdds describes the number of times a product has been added to a product list. The most common case is adding an item to the shopping cart.
+The commerce metric `productListAdds` describes the number of times a product has been added to a product list. The most common case is adding an item to the shopping cart.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|

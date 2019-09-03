@@ -14,7 +14,7 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/experience/decisioning/decisionevent"
   ],
-  "description": "Decision Proposition is used to capture the outcome of a decisioning process.",
+  "description": "Decision proposition is used to capture the outcome of a decisioning process.",
   "definitions": {
     "proposition-details-mixin": {
       "properties": {

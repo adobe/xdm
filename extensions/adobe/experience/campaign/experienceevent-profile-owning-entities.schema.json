@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "Adobe Campaign ExperienceEvent optional snapshot of Profile Owning Entities.",
+  "description": "Adobe Campaign ExperienceEvent optional snapshot of Profile owning entities.",
   "definitions": {
     "campaign-experienceevent-profile-owning-entities": {
       "properties": {

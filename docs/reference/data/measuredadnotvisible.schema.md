@@ -1,22 +1,22 @@
 
-# measured-ad-not-visible Schema
+# Measured-ad-not-visible Schema
 
 ```
 https://ns.adobe.com/xdm/data/measuredadnotvisible
 ```
 
-The advertising/viewability metric measured-ad-not-visible describes whether < 51% of pixels on an ad where visible at event time.
+The advertising/viewability metric `measured-ad-not-visible` describes whether < 51% of pixels on an ad where visible at event time.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/measuredadnotvisible.schema.json](data/measuredadnotvisible.schema.json) |
 ## Schema Hierarchy
 
-* measured-ad-not-visible `https://ns.adobe.com/xdm/data/measuredadnotvisible`
+* Measured-ad-not-visible `https://ns.adobe.com/xdm/data/measuredadnotvisible`
   * [Metric Definition](metricdefinition.schema.md) `https://ns.adobe.com/xdm/data/metricdefinition`
 
 
-## measured-ad-not-visible Example
+## Measured-ad-not-visible Example
 ```json
 {
   "schema:name": "advertising/viewability metric: measuredAdNotVisible",
@@ -26,7 +26,7 @@ The advertising/viewability metric measured-ad-not-visible describes whether < 5
 }
 ```
 
-# measured-ad-not-visible Properties
+# Measured-ad-not-visible Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|

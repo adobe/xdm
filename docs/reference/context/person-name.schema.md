@@ -16,19 +16,10 @@ In addition, a number of optional properties are made available that can be used
 ## Schema Hierarchy
 
 * Person Name `https://ns.adobe.com/xdm/context/person-name`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
 ## Person Name Examples
-
-```json
-{
-  "xdm:firstName": "John",
-  "xdm:middleName": "S",
-  "xdm:lastName": "Doe",
-  "xdm:fullName": "John S. Doe"
-}
-```
 
 ```json
 {
@@ -46,6 +37,15 @@ In addition, a number of optional properties are made available that can be used
 }
 ```
 
+```json
+{
+  "xdm:firstName": "John",
+  "xdm:middleName": "S",
+  "xdm:lastName": "Doe",
+  "xdm:fullName": "John S. Doe"
+}
+```
+
 
 # Person Name Properties
 
@@ -59,7 +59,7 @@ In addition, a number of optional properties are made available that can be used
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:courtesyTitle
-### Courtesy title
+### Courtesy Title
 
 Normally an abbreviation of a persons *title*, *honorific*, or *salutation*.
 The `courtesyTitle` is used in front of full or last name in opening texts.
@@ -82,7 +82,7 @@ e.g Mr. Miss. or Dr J. Smith.
 
 
 ## xdm:firstName
-### First name
+### First Name
 
 The first segment of the name in the writing order most commonly accepted in the language of the name. In many cultures this is the preferred personal or given name.
 
@@ -104,7 +104,7 @@ The `firstName` and `lastName` properties have been introduced to maintain compa
 
 
 ## xdm:fullName
-### Full name
+### Full Name
 
 The full name of the person, in writing order most commonly accepted in the language of the name.
 
@@ -124,7 +124,7 @@ The full name of the person, in writing order most commonly accepted in the lang
 
 
 ## xdm:lastName
-### Last name
+### Last Name
 
 The last segment of the name in the writing order most commonly accepted in the language of the name. In many cultures this is the inherited family name, surname, patronymic, or matronymic name.
 
@@ -146,7 +146,7 @@ The `firstName` and `lastName` properties have been introduced to maintain compa
 
 
 ## xdm:middleName
-### Middle name
+### Middle Name
 
 Middle, alternative, or additional names supplied between the first name and last name.
 

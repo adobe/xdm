@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/profile-identities-deprecated
 ```
 
-Identities Array for Profile (deprecated).
+Identities array for profile (deprecated).
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -13,7 +13,7 @@ Identities Array for Profile (deprecated).
 ## Schema Hierarchy
 
 * Identities Array for Profile (deprecated) `https://ns.adobe.com/xdm/context/profile-identities-deprecated`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
 ## Identities Array for Profile (deprecated) Example
@@ -40,7 +40,7 @@ Identities Array for Profile (deprecated).
 ## xdm:identities
 ### All User Identities (deprecated)
 
-Array of Identities. Condensed, normalized encapsulation of all end user identifiers.  Deprecated, use `xdm:identityMap` instead.
+Array of identities. Condensed, normalized encapsulation of all end-user identifiers.  Deprecated, use `xdm:identityMap` instead.
 
 `xdm:identities`
 * is optional

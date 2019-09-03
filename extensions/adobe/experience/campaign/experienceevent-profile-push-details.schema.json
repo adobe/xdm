@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "Adobe Campaign ExperienceEvent optional snapshot of Profile Push Details.",
+  "description": "Adobe Campaign ExperienceEvent optional snapshot of profile push details.",
   "definitions": {
     "campaign-experienceevent-profile-push-details": {
       "properties": {
@@ -22,7 +22,7 @@
           "properties": {
             "xdm:profileSnapshot": {
               "title": "Profile Snapshot",
-              "description": "Profile Snapshot contains the recipient of the message. This property is primarily used to link the message to a Profile using the `IdentityMap` but it can also be used to freeze some properties of the profile at the time the message was sent.",
+              "description": "Profile snapshot contains the recipient of the message. This property is primarily used to link the message to a profile using the `IdentityMap` but it can also be used to freeze some properties of the profile at the time the message was sent.",
               "type": "object",
               "properties": {
                 "xdm:pushNotificationTokens": {

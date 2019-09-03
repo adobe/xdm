@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/data/record
 ```
 
-Used to indicate the behaviour of record data semantic when composed into data Schemas.
+Used to indicate the behavior of record data semantic when composed into data schemas.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -13,7 +13,7 @@ Used to indicate the behaviour of record data semantic when composed into data S
 ## Schema Hierarchy
 
 * Record Schema `https://ns.adobe.com/xdm/data/record`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
 ## Record Schema Example

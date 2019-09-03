@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/profile-directmarketing
 ```
 
-Direct Marketing addressing for profiles.
+Direct marketing addressing for profiles.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -13,7 +13,7 @@ Direct Marketing addressing for profiles.
 ## Schema Hierarchy
 
 * Profile Direct Marketing `https://ns.adobe.com/xdm/context/profile-directmarketing`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Direct Marketing Address](directmarketing-address.schema.md) `https://ns.adobe.com/xdm/context/directmarketing-address`
   * [Direct Marketing Email Address](directmarketing-emailaddress.schema.md) `https://ns.adobe.com/xdm/context/directmarketing-emailaddress`
   * [Direct Marketing Phone Number](directmarketing-phonenumber.schema.md) `https://ns.adobe.com/xdm/context/directmarketing-phonenumber`
@@ -67,7 +67,7 @@ Direct Marketing addressing for profiles.
 ## xdm:directMarketingAddress
 ### Direct Marketing Address
 
-Direct Marketing postal address.
+Direct marketing postal address.
 
 `xdm:directMarketingAddress`
 * is optional
@@ -86,7 +86,7 @@ Direct Marketing postal address.
 ## xdm:directMarketingEmail
 ### Direct Marketing Email
 
-Direct Marketing email address.
+Direct marketing email address.
 
 `xdm:directMarketingEmail`
 * is optional
@@ -105,7 +105,7 @@ Direct Marketing email address.
 ## xdm:directMarketingPhone
 ### Direct Marketing Phone
 
-Direct Marketing phone number.
+Direct marketing phone number.
 
 `xdm:directMarketingPhone`
 * is optional

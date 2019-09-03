@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/data/record-timeseries-events
 ```
 
-Time-series Extension for Record Data.
+Time-series extension for record data.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -13,7 +13,7 @@ Time-series Extension for Record Data.
 ## Schema Hierarchy
 
 * Time-series Extension for Record Data `https://ns.adobe.com/xdm/data/record-timeseries-events`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
 ## Time-series Extension for Record Data Example

@@ -31,7 +31,7 @@ Properties that apply to images, videos, and other rectangular media. It represe
 ## tiff:imageLength
 ### Length
 
-Height in pixels. To maintain continuity with the XMP and TIFF standards, the height of an image or video is specified in the property `imageLength`. The duration of the video (also commonly called length) is specified in the property `extent`
+Height in pixels. To maintain continuity with the XMP and TIFF standards, the height of an image or video is specified in the property `imageLength`. The duration of the video (also commonly called length) is specified in the property `extent`.
 
 `tiff:imageLength`
 * is optional
@@ -52,7 +52,7 @@ Height in pixels. To maintain continuity with the XMP and TIFF standards, the he
 ## tiff:imageWidth
 ### Width
 
-Width in pixels
+Width in pixels.
 
 `tiff:imageWidth`
 * is optional

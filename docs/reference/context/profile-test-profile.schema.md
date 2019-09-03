@@ -13,7 +13,7 @@ Indicates the `profile` record is for use in testing/verification purposes and s
 ## Schema Hierarchy
 
 * Profile Test Details `https://ns.adobe.com/xdm/context/profile-test-profile`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
 ## Profile Test Details Example

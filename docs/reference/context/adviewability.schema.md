@@ -52,7 +52,7 @@ Viewability details are always measured fields during runtime.
 ## Schema Hierarchy
 
 * MRC Viewability `https://ns.adobe.com/xdm/context/adviewability`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Implementation Details](implementationdetails.schema.md) `https://ns.adobe.com/xdm/context/implementationdetails`
   * [Measure](../data/measure.schema.md) `https://ns.adobe.com/xdm/data/measure`
 
@@ -191,7 +191,7 @@ The number of horizontal pixels of the player, measured at runtime. This can be 
 
 
 ## xdm:implementationDetails
-### Viewabiltity implementation details
+### Viewabiltity Implementation Details
 
 The name and version of the library instrumented to measure viewability metrics.
 
@@ -362,7 +362,7 @@ Indicator of viewability library not being able to properly execute measurements
 
 ## xdm:viewabilityEligibleImpressions
 
-Impression(s) of an advertisement to an end user with viewablility library instrumented.
+Impression(s) of an advertisement to an end-user with viewablility library instrumented.
 
 `xdm:viewabilityEligibleImpressions`
 * is optional
@@ -399,7 +399,7 @@ Display ads are considered viewable when at least 50% of the ad is visible for a
 
 ## xdm:viewableCompletes
 
-Completion(s) of an advertisement to an end user deemed viewable at completion time by a viewability library.
+Completion(s) of an advertisement to an end-user deemed viewable at completion time by a viewability library.
 
 `xdm:viewableCompletes`
 * is optional
@@ -417,7 +417,7 @@ Completion(s) of an advertisement to an end user deemed viewable at completion t
 
 ## xdm:viewableFirstQuartiles
 
-First quartile(s) of an advertisement to an end user deemed viewable at first quartile of play by a viewability library.
+First quartile(s) of an advertisement to an end-user deemed viewable at first quartile of play by a viewability library.
 
 `xdm:viewableFirstQuartiles`
 * is optional
@@ -435,7 +435,7 @@ First quartile(s) of an advertisement to an end user deemed viewable at first qu
 
 ## xdm:viewableImpressions
 
-Impressions of an advertisement to an end user deemed viewable after two seconds of play by a viewability library.
+Impressions of an advertisement to an end-user deemed viewable after two seconds of play by a viewability library.
 
 `xdm:viewableImpressions`
 * is optional
@@ -453,7 +453,7 @@ Impressions of an advertisement to an end user deemed viewable after two seconds
 
 ## xdm:viewableMidpoints
 
-Midpoint(s) of an advertisement to an end user deemed viewable at midpoint of play by a viewability library.
+Midpoint(s) of an advertisement to an end-user deemed viewable at midpoint of play by a viewability library.
 
 `xdm:viewableMidpoints`
 * is optional
@@ -471,7 +471,7 @@ Midpoint(s) of an advertisement to an end user deemed viewable at midpoint of pl
 
 ## xdm:viewableThirdQuartiles
 
-Third quartile(s) of an advertisement to an end user deemed viewable at third quartile of play by a viewability library.
+Third quartile(s) of an advertisement to an end-user deemed viewable at third quartile of play by a viewability library.
 
 `xdm:viewableThirdQuartiles`
 * is optional

@@ -16,7 +16,7 @@
         "xdm:SKU": {
           "title": "SKU",
           "type": "string",
-          "description": "Stock Keeping Unit, the unique identifier for a product defined by the vendor."
+          "description": "Stock keeping unit, the unique identifier for a product defined by the vendor."
         },
         "@id": {
           "title": "Line Item ID.",

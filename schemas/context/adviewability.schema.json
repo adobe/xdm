@@ -65,7 +65,7 @@
           "Whether or not the ad was eligible to viewability measurement. An ad is eligible if the unit has a supported creative format and tag type."
         },
         "xdm:implementationDetails": {
-          "title": "Viewabiltity implementation details",
+          "title": "Viewabiltity Implementation Details",
           "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
           "description":
           "The name and version of the library instrumented to measure viewability metrics."
@@ -93,7 +93,7 @@
         "xdm:viewabilityEligibleImpressions": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
-          "Impression(s) of an advertisement to an end user with viewablility library instrumented."
+          "Impression(s) of an advertisement to an end-user with viewablility library instrumented."
         },
         "xdm:measuredAdNotVisible": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
@@ -123,27 +123,27 @@
         "xdm:viewableCompletes": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
-          "Completion(s) of an advertisement to an end user deemed viewable at completion time by a viewability library."
+          "Completion(s) of an advertisement to an end-user deemed viewable at completion time by a viewability library."
         },
         "xdm:viewableFirstQuartiles": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
-          "First quartile(s) of an advertisement to an end user deemed viewable at first quartile of play by a viewability library."
+          "First quartile(s) of an advertisement to an end-user deemed viewable at first quartile of play by a viewability library."
         },
         "xdm:viewableImpressions": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
-          "Impressions of an advertisement to an end user deemed viewable after two seconds of play by a viewability library."
+          "Impressions of an advertisement to an end-user deemed viewable after two seconds of play by a viewability library."
         },
         "xdm:viewableMidpoints": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
-          "Midpoint(s) of an advertisement to an end user deemed viewable at midpoint of play by a viewability library."
+          "Midpoint(s) of an advertisement to an end-user deemed viewable at midpoint of play by a viewability library."
         },
         "xdm:viewableThirdQuartiles": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
-          "Third quartile(s) of an advertisement to an end user deemed viewable at third quartile of play by a viewability library."
+          "Third quartile(s) of an advertisement to an end-user deemed viewable at third quartile of play by a viewability library."
         }
       }
     }

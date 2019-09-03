@@ -9,7 +9,7 @@
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "Segment Identity",
     "type": "object",
-    "description": "SegmentIdentity is used to clearly distinguish segments from multiple sources. SegmentIdentity is established by an segment identity provider, which itself is referenced in the `namespace` attribute. Within each `namespace`, the segmentidentity is unique.",
+    "description": "Segment identity is used to clearly distinguish segments from multiple sources. Segment identity is established by an segment identity provider, which itself is referenced in the `namespace` attribute. Within each `namespace`, the segment identity is unique.",
     "definitions": {
         "segmentIdentity": {
             "properties": {

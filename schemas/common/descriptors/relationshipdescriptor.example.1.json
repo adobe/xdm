@@ -8,5 +8,6 @@
     "xdm:type": "https://example.com/crmID"
   },
   "xdm:destinationSchema": "https://ns.adobe.com/extensions/12345678/customers",
-  "xdm:destinationProperty": "xdm:crmID"
+  "xdm:destinationProperty": "xdm:crmID",
+  "xdm:destinationVersion": 1
 }

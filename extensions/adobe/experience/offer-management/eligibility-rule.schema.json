@@ -7,7 +7,10 @@
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/experience/offer-management/eligibility-rule",
-  "meta:extends": ["https://ns.adobe.com/experience/decisioning/rule"],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record",
+    "https://ns.adobe.com/experience/decisioning/rule"
+  ],
   "meta:abstract": false,
   "meta:extensible": true,
   "type": "object",
@@ -21,7 +24,7 @@
           "description": "A list of \"model usage\" objects, one per model, that lists the fully qualified path to every used property from the model.",
           "type": "array",
           "items": {
-            "$ref": "https://ns.adobe.com/experience/decisioning/xdm-usage"
+            "$ref": "https://ns.adobe.com/experience/offer-management/model-usage"
           }
         }
       }

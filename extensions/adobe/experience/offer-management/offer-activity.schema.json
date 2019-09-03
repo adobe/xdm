@@ -7,7 +7,10 @@
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/experience/offer-management/offer-activity",
-  "meta:extends": ["https://ns.adobe.com/experience/decisioning/activity"],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record",
+    "https://ns.adobe.com/experience/decisioning/activity"
+  ],
   "meta:abstract": false,
   "meta:extensible": true,
   "type": "object",

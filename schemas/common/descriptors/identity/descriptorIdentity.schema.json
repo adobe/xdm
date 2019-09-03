@@ -1,0 +1,54 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/common/descriptors/descriptorIdentity",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Identity Descriptor",
+  "meta:extensible": false,
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/common/descriptors/schemadescriptor#/definitions/descriptor"
+  ],
+  "meta:abstract": false,
+  "type": "object",
+  "description": "Used to mark a field as an identity.",
+  "definitions": {
+    "descriptorIdentity": {
+      "properties": {
+        "@type": {
+          "title": "Type",
+          "type": "string",
+          "const": "xdm:descriptorIdentity"
+        },
+        "xdm:namespace": {
+          "title": "Namespace",
+          "type": "string",
+          "description": "Identity ID or Code."
+        },
+        "xdm:property": {
+          "title": "Property",
+          "type": "string",
+          "description": "Property of the `xdm:namespace` field.",
+          "enum": ["xdm:id", "xdm:code"]
+        },
+        "xdm:isPrimary": {
+          "title": "Is primary key or not",
+          "description": "When present, only one field should be marked as the primary. Default is false."
+        }
+      },
+      "required": ["xdm:sourceProperty", "xdm:namespace", "xdm:property"]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/descriptors/schemadescriptor#/definitions/descriptor"
+    },
+    {
+      "$ref": "#/definitions/descriptorIdentity"
+    }
+  ],
+  "meta:status": "stabilizing"
+}

@@ -25,6 +25,7 @@ Describes one to many relationship descriptor.
   "xdm:sourceSchema": "https://ns.adobe.com/experience/aem/user",
   "xdm:sourceVersion": 1,
   "xdm:destinationSchema": "https://ns.adobe.com/xdm/context/profile",
+  "xdm:destinationVersion": 1,
   "xdm:label": "UserProfile"
 }
 ```
@@ -166,7 +167,7 @@ The destination schema this descriptor applies to
 ## xdm:destinationVersion
 ### Destination Version
 
-When present, major version being referenced.
+Major version being referenced.
 
 `xdm:destinationVersion`
 * is optional

@@ -20,6 +20,12 @@
           "description": "Snapshot of the activity for which the proposition was made. The object contains at least the xdm:id property value which is the identifier of the decision activity.",
           "$ref": "https://ns.adobe.com/experience/decisioning/activity-detail"
         },
+        "xdm:channel": {
+          "type": "string",
+          "format": "uri-reference",
+          "title": "Channel",
+          "description": "The channel in which proposition was made. The value is a valid Channel URI. See 'https://ns.adobe.com/xdm/channels/channel'"
+        },
         "xdm:selections": {
           "title": "Selected Options",
           "description": "Snapshots of the options that were selected for this activity. Those options are usually constrained. The objects contain a at least the xdm:id property value which is the identifier of an option. The intention is that either the selections or the fallback property is required.",

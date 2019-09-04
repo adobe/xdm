@@ -1,0 +1,69 @@
+{
+	"meta:license": [
+		"Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+		"This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+		"you may not use this file except in compliance with the License. You may obtain a copy",
+		"of the License at https://creativecommons.org/licenses/by/4.0/"
+	],
+	"$id": "https://ns.adobe.com/xdm/context/consent",
+	"$schema": "http://json-schema.org/draft-06/schema#",
+	"title": "XDM Consent",
+	"type": "object",
+	"auditable": true,
+	"meta:extensible": true,
+	"meta:abstract": true,
+	"meta:extends": [
+		"https://ns.adobe.com/xdm/data/record"
+	],
+	"description": "An XDM Consent is a representation of the consent responses given by end users/consumers of a given brand to allow or not allow the Brand/Customers to use their personal data for analytics purposes like Direct Marketing, First Party personalization, cross device profile consolidation, advertsing, sending offers etc..",
+	"definitions": {
+		"consent": {
+			"properties": {
+				"Id": {
+					"title": "Id",
+					"description": "The unique identifier of the identity associated with this record.",
+					"type": "string"
+				},
+				"Ttl": {
+					"title": "Time to Live",
+					"description": "The date and time this entry is valid until.",
+					"type": "string",
+					"format": "date-time"
+				},
+				"ConsentTimestamp": {
+					"title": "Consent Timestamp",
+					"description": "The date and time the snapshot of consent assertions was taken.",
+					"type": "string",
+					"format": "date-time"
+				},
+				"ConsentSignal": {
+					"title": "Consent Signal",
+					"type": "string",
+					"description": "User consent signal for a purpose within a given consent stack.",
+					"default": "N",
+					"enum": [
+						"Y",
+						"N",
+						"N/A"
+					],
+					"meta:enum": {
+						"Y": "Opt-Out - User Opted Out",
+						"N": "Opt-In - User opted In",
+						"N/A": "Not Available"
+					}
+				},
+				"required": [
+					"Ttl",
+					"ConsentTimestamp",
+					"ConsentSignal"
+				]
+			}
+		}
+	},
+	"allOf": [{
+			"$ref": "#/definitions/consent"
+		}
+
+	],
+	"meta:status": "experimental"
+}

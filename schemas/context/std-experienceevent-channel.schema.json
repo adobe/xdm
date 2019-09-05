@@ -19,7 +19,7 @@
         "xdm:channel": {
           "title": "Experience Channel",
           "description": "Experience channel related to this ExperienceEvent.",
-          "$ref": "https://ns.adobe.com/xdm/channels/std.channel"
+          "$ref": "https://ns.adobe.com/xdm/channels/stdchannel"
         }
       }
     }

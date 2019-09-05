@@ -14,7 +14,7 @@
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "The web details for ExperienceEvents.",
   "definitions": {
-    "experienceevent-web": {
+    "std-experienceevent-web": {
       "properties": {
         "xdm:web": {
           "title": "Web",

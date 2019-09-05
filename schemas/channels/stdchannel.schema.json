@@ -99,36 +99,38 @@
         },
         "xdm:mediaAction": {
           "type": "array",
-          "format": "string",
-          "description": "The `mediaAction` property is used to provide a type of experiance event media action .",
-          "enum": [
-            "opens", 
-            "sends",
-            "clicks",
-            "impressions",
-            "bounces",
-            "mirrorpages",
-            "nonDeliverables",
-            "notSent",
-            "offerOpens",
-            "unSubscriptions",
-            "userComplaints",
-            "subscriptions"
-          ],
-          "meta:enum": {
-            "opens":"Opens", 
-            "sends":"Sends",
-            "clicks":"Clicks",
-            "impressions":"Impressions",
-            "bounces":"Bounces",
-            "mirrorpages":"Mirrorpages",
-            "nonDeliverables":"NonDeliverables",
-            "notSent":"NotSent",
-            "offerOpens":"OfferOpens",
-            "unSubscriptions":"UnSubscriptions",
-            "userComplaints":"UserComplaints",
-            "subscriptions":"Subscriptions"
+          "items":{
+            "type":"string",
+            "description": "The `mediaAction` property is used to provide a type of experiance event media action .",
+            "enum": [
+              "opens", 
+              "sends",
+              "clicks",
+              "impressions",
+              "bounces",
+              "mirrorpages",
+              "nonDeliverables",
+              "notSent",
+              "offerOpens",
+              "unSubscriptions",
+              "userComplaints",
+              "subscriptions"
+            ],
+            "meta:enum": {
+              "opens":"Opens", 
+              "sends":"Sends",
+              "clicks":"Clicks",
+              "impressions":"Impressions",
+              "bounces":"Bounces",
+              "mirrorpages":"Mirrorpages",
+              "nonDeliverables":"NonDeliverables",
+              "notSent":"NotSent",
+              "offerOpens":"OfferOpens",
+              "unSubscriptions":"UnSubscriptions",
+              "userComplaints":"UserComplaints",
+              "subscriptions":"Subscriptions"
           }
+        }
         },
         "xdm:contentTypes": {
           "type": "array",

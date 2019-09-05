@@ -163,13 +163,14 @@ This changes child.json to:
   "@id": "https://example.com/descriptors/1",
   "@type": "xdm:descriptorOneToOne",
   "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile",
-  "xdm:sourceProperty": "xdm:identities",
+  "xdm:sourceProperty": "/xdm:identities",
   "xdm:sourceVersion": 1,
   "xdm:sourceItem": {
     "xdm:type": "https://example.com/crmID"
   },
   "xdm:destinationSchema": "https://ns.adobe.com/extensions/12345678/customers",
-  "xdm:destinationProperty": "xdm:crmID"
+  "xdm:destinationProperty": "/xdm:crmID",
+  "xdm:destinationVersion": 1
 }
 ```
 
@@ -316,7 +317,7 @@ The destination schema this descriptor applies to
 ## xdm:destinationVersion
 ### Destination Version
 
-When present, major version being referenced.
+Major version being referenced.
 
 `xdm:destinationVersion`
 * is optional

@@ -9,7 +9,7 @@ A descriptor that contains metadata about an XDM schema, including an optional p
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [common/descriptors/schemadescriptor.schema.json](common/descriptors/schemadescriptor.schema.json) |
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [common/descriptors/schemadescriptor.schema.json](common/descriptors/schemadescriptor.schema.json) |
 ## Schema Hierarchy
 
 * Schema Descriptor `https://ns.adobe.com/xdm/common/descriptors/schemadescriptor`
@@ -24,6 +24,7 @@ A descriptor that contains metadata about an XDM schema, including an optional p
   "@type": "xdm:descriptorPrimaryKey",
   "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile",
   "xdm:sourceProperty": "xdm:identities",
+  "xdm:sourceVersion": 1,
   "xdm:sourceItem": {
     "xdm:type": "https://ns.adobe.com/experience/mcid"
   }
@@ -39,6 +40,7 @@ A descriptor that contains metadata about an XDM schema, including an optional p
 | [xdm:sourceItem](#xdmsourceitem) | complex | Optional | Schema Descriptor (this schema) |
 | [xdm:sourceProperty](#xdmsourceproperty) | `string` | Optional | Schema Descriptor (this schema) |
 | [xdm:sourceSchema](#xdmsourceschema) | `string` | Optional | Schema Descriptor (this schema) |
+| [xdm:sourceVersion](#xdmsourceversion) | `number` | Optional | Schema Descriptor (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -157,6 +159,26 @@ The source schema this descriptor applies to. This property is required when the
 
 `string`
 * format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+
+
+
+
+
+
+## xdm:sourceVersion
+### Source Version
+
+Major version being referenced.
+
+`xdm:sourceVersion`
+* is optional
+* type: `number`
+* defined in this schema
+
+### xdm:sourceVersion Type
+
+
+`number`
 
 
 

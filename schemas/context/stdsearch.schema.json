@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "description": "Information about web search activity.",
   "definitions": {
-    "search": {
+    "stdsearch": {
       "properties": {
         "xdm:searchEngine": {
           "title": "Search Engine",

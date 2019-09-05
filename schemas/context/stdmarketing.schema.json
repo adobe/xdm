@@ -13,7 +13,7 @@
   "description":
     "The information related to marketing activities that are active with the touchpoint.",
   "definitions": {
-    "marketing": {
+    "stdmarketing": {
       "properties": {
         "xdm:trackingCode": {
           "title": "Tracking Code",

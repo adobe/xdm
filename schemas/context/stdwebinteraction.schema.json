@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "description": "Interaction details from inside the context of a loaded webpage.",
   "definitions": {
-    "webinteraction": {
+    "stdwebinteraction": {
       "properties": {
         "xdm:type": {
           "title": "Type",

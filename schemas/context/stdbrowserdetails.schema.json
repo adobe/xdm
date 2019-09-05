@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "description": "Detail information related to the browser.",
   "definitions": {
-    "browserdetails": {
+    "stdbrowserdetails": {
       "properties": {
         "xdm:name": {
           "title": "Name",

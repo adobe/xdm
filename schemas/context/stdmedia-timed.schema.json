@@ -13,7 +13,7 @@
   "meta:extensible": true,
   "description": "Timed media - main content, ads & chapters",
   "definitions": {
-    "media-timed": {
+    "stdmedia-timed": {
       "properties": {
         "xdm:primaryAssetReference": {
           "title": "Primary Asset Reference",

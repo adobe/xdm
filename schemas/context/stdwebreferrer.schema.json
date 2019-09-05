@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "description": "",
   "definitions": {
-    "webreferrer": {
+    "stdwebreferrer": {
       "properties": {
         "xdm:URL": {
           "title": "URL",

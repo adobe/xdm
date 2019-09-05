@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "description": "",
   "definitions": {
-    "webpagedetails": {
+    "stdwebpagedetails": {
       "properties": {
         "xdm:siteSection": {
           "title": "Site Section",

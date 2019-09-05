@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "description": "The entites related to buying and selling activity.",
   "definitions": {
-    "commerce": {
+    "stdcommerce": {
       "properties": {
         "xdm:order": {
           "title": "Order",

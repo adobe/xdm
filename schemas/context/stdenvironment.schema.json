@@ -13,7 +13,7 @@
   "description":
     "Information about the surrounding situation the event observation occurred in, specifically detailing transitory information such as the network or software versions. > IMPORTANT: All values should be aligned with the [DeviceAtlas](https://deviceatlas.com) database licensed by Adobe. ",
   "definitions": {
-    "environment": {
+    "stdenvironment": {
       "properties": {
         "xdm:type": {
           "title": "Type",

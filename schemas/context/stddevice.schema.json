@@ -13,7 +13,7 @@
   "description":
     "An identified device that is an application or browser instance that is trackable across sessions, normally by cookies.",
   "definitions": {
-    "device": {
+    "stddevice": {
       "properties": {
         "xdm:typeID": {
           "title": "Type Identifier",

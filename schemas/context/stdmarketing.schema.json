@@ -25,7 +25,7 @@
           "title": "Campaign Name",
           "type": "string",
           "description":
-            "Name of the Campaign used to identify marketing campaign like 50%_DISCOUNT_USA", "50%_DISCOUNT_ASIA"
+            "Name of the Campaign used to identify marketing campaign like 50%_DISCOUNT_USA, 50%_DISCOUNT_ASIA."
         },
           "xdm:campaignGroup": {
           "title": "Campaign Group",

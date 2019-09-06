@@ -72,6 +72,16 @@
           "type": "string",
           "description": "Identifier for the keyword that the surfer used to search, which triggered this click event."
         },
+        "xdm:keyword": {
+          "title": "Keyword",
+          "type": "string",
+          "description": "Listing keyword for which customer is bidding "
+        },
+        "xdm:isDynamicSearchAd": {
+          "title": "Is Dynamic Search Advertisement",
+          "type": "boolean",
+          "description": "Indicates if the click comes from a dynamic search advertisement."
+        },
         "xdm:audienceID": {
           "title": "Audience Identifier",
           "type": "string",

@@ -1,0 +1,16 @@
+{
+  "https://ns.adobe.com/experience/audiencemanager/segmentFolderIdentity": {
+    "@id": "id123",
+    "xdm:namespace": {
+      "xdm:code": "AAMSegments"
+    }
+  },
+  "https://ns.adobe.com/experience/audiencemanager/segmentFolderName": "User Folder",
+  "https://ns.adobe.com/experience/audiencemanager/segmentFolderStatus": "ACTIVE",
+  "https://ns.adobe.com/experience/audiencemanager/segmentParentFolderIdentity": {
+    "@id": "id1111",
+    "xdm:namespace": {
+      "xdm:code": "AAMSegments"
+    }
+  }
+}

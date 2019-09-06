@@ -55,6 +55,11 @@
           "title": "Ad Conversion Details",
           "$ref": "https://ns.adobe.com/experience/adcloud/conversiondetails",
           "description": "Search Ad Conversion Details."
+        },
+        "https://ns.adobe.com/experience/adcloud/fees": {
+          "title": "Advertising Fees",
+          "description": "Advertising Fees Details.",
+          "$ref": "https://ns.adobe.com/experience/adcloud/fees"
         }
       }
     }

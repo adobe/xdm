@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Consumer ExperienceEvent  Mixin",
   "type": "object",
-  "description": "Analytics ExperienceEvent mixin for use with schemas for Solution data ingestion. Includes the core/standard ExperienceEvent as well as the required Adobe Analytics ExperienceEvent mixins.",
+  "description": "Mixin that includes many of the standard mixins minus any solution specific fields",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
@@ -23,7 +23,7 @@
     "https://ns.adobe.com/xdm/context/experienceevent-segmentmembership",
     "https://ns.adobe.com/xdm/context/experienceevent-technical-details",
     "https://ns.adobe.com/xdm/context/experienceevent-web",
-    "https://ns.adobe.com/experience/analytics/commerce"
+    "https://ns.adobe.com/xdm/context/experienceevent-commerce"
   ],
   "definitions": {
     "analytics-experienceevent": {
@@ -59,7 +59,7 @@
       "$ref": "https://ns.adobe.com/xdm/context/experienceevent-web"
     },
     {
-      "$ref": "https://ns.adobe.com/experience/analytics/commerce"
+      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-commerce"
     },
 
     {

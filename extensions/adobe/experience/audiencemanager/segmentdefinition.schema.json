@@ -18,16 +18,10 @@
   "definitions": {
     "segmentdefinition": {
       "properties": {
-        "https://ns.adobe.com/experience/audiencemanager/segmentFolderIdentity": {
-          "title": "Segment folder identity",
-          "$ref": "https://ns.adobe.com/xdm/context/segmentidentity",
-          "description": "Identity of the parent segment folder"
-        },
         "xdm:segmentFolderId": {
           "title": "Folder Id",
           "type": "string",
-          "description": "Id of parent segment folder if present",
-          "meta:status": "deprecated"
+          "description": "id of parent folder if present"
         },
         "xdm:segmentSubType": {
           "title": "Sub Type",

@@ -51,32 +51,6 @@ An `EventEnvelope` is a type of `Activity` (in the sense of [W3C Activity Stream
 
 ```json
 {
-  "@type": "https://ns.adobe.com/xdm/common/event/created",
-  "xdm:objectType": "http://ns.adobe.com/adobecloud/core/1.0/asset",
-  "activitystreams:published": "2016-07-16T19:20:30+01:00",
-  "@id": "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
-  "activitystreams:to": {
-    "@type": "https://ns.adobe.com/adobecloudplatform/ims/user",
-    "@id": "D13A1E7053E46A220A4C86E1@AdobeID"
-  },
-  "activitystreams:generator": {
-    "@type": "https://ns.adobe.com/xdm/content/repository",
-    "xdm:root": "https://cc-api-storage-stage.adobe.io/"
-  },
-  "activitystreams:actor": {
-    "@type": "https://ns.adobe.com/adobecloudplatform/ims/user",
-    "@id": "D13A1E7053E46A220A4C86E1@AdobeID"
-  },
-  "activitystreams:object": {
-    "@type": "http://ns.adobe.com/adobecloud/core/1.0/asset",
-    "repo:id": "urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
-    "@id": "https://cc-api-storage-stage.adobe.io/id/urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185"
-  }
-}
-```
-
-```json
-{
   "@type": "https://ns.adobe.com/xdm/common/event/updated",
   "xdm:objectType": "http://ns.adobe.com/adobecloud/core/1.0/asset",
   "activitystreams:published": "2016-07-16T19:20:30+01:00",
@@ -101,6 +75,32 @@ An `EventEnvelope` is a type of `Activity` (in the sense of [W3C Activity Stream
     "xdm:path": "/content/dam/Fx_DUKE-small.png",
     "dc:format": "image/png",
     "repo:etag": "\"6fc55d0389d856ae7wddwebba54f110e\""
+  }
+}
+```
+
+```json
+{
+  "@type": "https://ns.adobe.com/xdm/common/event/created",
+  "xdm:objectType": "http://ns.adobe.com/adobecloud/core/1.0/asset",
+  "activitystreams:published": "2016-07-16T19:20:30+01:00",
+  "@id": "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
+  "activitystreams:to": {
+    "@type": "https://ns.adobe.com/adobecloudplatform/ims/user",
+    "@id": "D13A1E7053E46A220A4C86E1@AdobeID"
+  },
+  "activitystreams:generator": {
+    "@type": "https://ns.adobe.com/xdm/content/repository",
+    "xdm:root": "https://cc-api-storage-stage.adobe.io/"
+  },
+  "activitystreams:actor": {
+    "@type": "https://ns.adobe.com/adobecloudplatform/ims/user",
+    "@id": "D13A1E7053E46A220A4C86E1@AdobeID"
+  },
+  "activitystreams:object": {
+    "@type": "http://ns.adobe.com/adobecloud/core/1.0/asset",
+    "repo:id": "urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
+    "@id": "https://cc-api-storage-stage.adobe.io/id/urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185"
   }
 }
 ```

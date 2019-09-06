@@ -47,6 +47,9 @@
             "^schema:.*$": {},
             "^repo:.*$": {},
             "^iptc4xmpExt:.*$": {},
+            "^dsp:.*$": {},
+            "^searchads:.*$": {},
+            "^adcloud:.*$": {},
             ".+://.+": {},
             "@.*": {}
           },
@@ -207,6 +210,21 @@
                   "type": "string",
                   "format": "url",
                   "const": "http://iptc.org/std/Iptc4xmpExt/1.1/"
+                },
+                "dsp": {
+                  "type": "string",
+                  "format": "url",
+                  "const": "https://ns.adobe.com/adcloud/dsp/"
+                },
+                "searchads": {
+                  "type": "string",
+                  "format": "url",
+                  "const": "https://ns.adobe.com/adcloud/searchads/"
+                },
+                "adcloud": {
+                  "type": "string",
+                  "format": "url",
+                  "const": "https://ns.adobe.com/adcloud/"
                 }
               },
               "additionalProperties": false,
@@ -243,6 +261,9 @@
             "^schema:.*$": {},
             "^repo:.*$": {},
             "^iptc4xmpExt:.*$": {},
+            "^dsp:.*$": {},
+            "^searchads:.*$": {},
+            "^adcloud:.*$": {},
             ".+://.+": {}
           },
           "required": ["@context"],

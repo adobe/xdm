@@ -66,6 +66,11 @@
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
             "Product list is saved for future use. Example a product wish list."
+        },
+        "xdm:inStrorePurchase": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+          "inStore Purchase is saved for Analytics use."
         }
       }
     }

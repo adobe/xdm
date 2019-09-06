@@ -1,8 +1,0 @@
-{
-  "@id": "https://ns.adobe.com/xdm/channels/facebook-feed",
-  "@type": "https://ns.adobe.com/xdm/channel-types/social",
-  "xdm:metrics": [
-    "https://ns.adobe.com/xdm/data/metrics/web/page-views",
-    "https://ns.adobe.com/xdm/data/metrics/web/link-clicks"
-  ]
-}

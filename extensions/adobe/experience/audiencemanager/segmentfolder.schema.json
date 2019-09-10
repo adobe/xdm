@@ -33,7 +33,7 @@
         },
         "https://ns.adobe.com/experience/audiencemanager/segmentParentFolderIdentity": {
           "title": "Parent folder identity",
-          "$ref": "https://ns.adobe.com/xdm/context/identityReference",
+          "$ref": "https://ns.adobe.com/xdm/context/identity",
           "description": "Identity of the parent folder of current folder"
         }
       }

@@ -39,7 +39,7 @@ There are multiple experience channels, each with different constraints on how c
 | [@type](#type) | `string` | Optional | Experience Channel (this schema) |
 | [xdm:contentTypes](#xdmcontenttypes) | `string[]` | Optional | Experience Channel (this schema) |
 | [xdm:locationTypes](#xdmlocationtypes) | `string[]` | Optional | Experience Channel (this schema) |
-| [xdm:mediaAction](#xdmmediaaction) | `string[]` | Optional | Experience Channel (this schema) |
+| [xdm:mediaAction](#xdmmediaaction) | `string` | Optional | Experience Channel (this schema) |
 | [xdm:mediaType](#xdmmediatype) | `string` | Optional | Experience Channel (this schema) |
 | [xdm:metricTypes](#xdmmetrictypes) | `string[]` | Optional | Experience Channel (this schema) |
 | [xdm:mode](#xdmmode) | `enum` | Optional | Experience Channel (this schema) |
@@ -168,28 +168,35 @@ The `@type` of an XDM-defined location (virtual place) that this channel can con
 
 ## xdm:mediaAction
 
+The `mediaAction` property is used to provide a type of experiance event media action .
 
 `xdm:mediaAction`
 * is optional
-* type: `string[]`
-
+* type: `string`
 * defined in this schema
 
 ### xdm:mediaAction Type
 
 
-Array type: `string[]`
-
-All items must be of the type:
 `string`
 
 
 
-  
-The `mediaAction` property is used to provide a type of experiance event media action .
-
-
-
+### xdm:mediaAction Known Values
+| Value | Description |
+|-------|-------------|
+| `opens` | Opens |
+| `sends` | Sends |
+| `clicks` | Clicks |
+| `impressions` | Impressions |
+| `bounces` | Bounces |
+| `mirrorpages` | Mirrorpages |
+| `nonDeliverables` | NonDeliverables |
+| `notSent` | NotSent |
+| `offerOpens` | OfferOpens |
+| `unSubscriptions` | UnSubscriptions |
+| `userComplaints` | UserComplaints |
+| `subscriptions` | Subscriptions |
 
 
 

@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/adcloud/searchads/campaign",
+  "$id": "https://ns.adobe.com/xdm/adcloud/searchads/campaign",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Search Advertising Campaign",
   "type": "object",
@@ -15,7 +15,7 @@
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "description": "Search Advertising Campaigns is a set of ad groups (ads, keywords, and bids) that share a budget, location targeting, and other settings.",
   "definitions": {
-    "searchadvertising-campaign": {
+    "searchads-campaign": {
       "properties": {
         "searchads:campaignId": {
           "title": "Campaign Identifier",
@@ -159,7 +159,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/auditable"
     },
     {
-      "$ref": "#/definitions/searchadvertising-campaign"
+      "$ref": "#/definitions/searchads-campaign"
     }
   ],
   "meta:status": "experimental"

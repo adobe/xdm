@@ -73,25 +73,22 @@
           }
         },
         "xdm:mediaAction": {
-          "type": "array",
-          "items":{
-            "type":"string",
-            "description": "The `mediaAction` property is used to provide a type of experiance event media action .",
-            "meta:enum": {
-              "opens":"Opens", 
-              "sends":"Sends",
-              "clicks":"Clicks",
-              "impressions":"Impressions",
-              "bounces":"Bounces",
-              "mirrorpages":"Mirrorpages",
-              "nonDeliverables":"NonDeliverables",
-              "notSent":"NotSent",
-              "offerOpens":"OfferOpens",
-              "unSubscriptions":"UnSubscriptions",
-              "userComplaints":"UserComplaints",
-              "subscriptions":"Subscriptions"
+          "type":"string",
+          "description": "The `mediaAction` property is used to provide a type of experiance event media action .",
+          "meta:enum": {
+            "opens":"Opens", 
+            "sends":"Sends",
+            "clicks":"Clicks",
+            "impressions":"Impressions",
+            "bounces":"Bounces",
+            "mirrorpages":"Mirrorpages",
+            "nonDeliverables":"NonDeliverables",
+            "notSent":"NotSent",
+            "offerOpens":"OfferOpens",
+            "unSubscriptions":"UnSubscriptions",
+            "userComplaints":"UserComplaints",
+            "subscriptions":"Subscriptions"
           }
-        }
         },
         "xdm:contentTypes": {
           "type": "array",

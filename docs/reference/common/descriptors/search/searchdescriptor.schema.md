@@ -266,7 +266,7 @@ Whether and how search results can be sorted on this property.
 | `notSortable` | notSortable |
 | `sorted` | sorted |
 | `sortedCaseSensitive` | sortedCaseSensitive |
-| `sortedCaseInsensitive` | soretdCaseInsensitive |
+| `sortedCaseInsensitive` | sortedCaseInsensitive |
 
 
 

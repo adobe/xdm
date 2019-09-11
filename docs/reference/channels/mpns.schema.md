@@ -33,7 +33,7 @@ Microsoft Push Notification Service channel.
 | [@type](#type) | `const` | Optional | MPNS Channel (this schema) |
 | [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | MPNS Channel (this schema) |
 | [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | MPNS Channel (this schema) |
-| [xdm:mediaAction](#xdmmediaaction) | `string[]` | Optional | [Experience Channel](channel.schema.md#xdmmediaaction) |
+| [xdm:mediaAction](#xdmmediaaction) | `string` | Optional | [Experience Channel](channel.schema.md#xdmmediaaction) |
 | [xdm:mediaType](#xdmmediatype) | `string` | Optional | [Experience Channel](channel.schema.md#xdmmediatype) |
 | [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | MPNS Channel (this schema) |
 | [xdm:mode](#xdmmode) | `const` | Optional | MPNS Channel (this schema) |
@@ -130,28 +130,35 @@ The value of this property **must** be equal to:
 
 ## xdm:mediaAction
 
+The `mediaAction` property is used to provide a type of experiance event media action .
 
 `xdm:mediaAction`
 * is optional
-* type: `string[]`
-
+* type: `string`
 * defined in [Experience Channel](channel.schema.md#xdmmediaaction)
 
 ### xdm:mediaAction Type
 
 
-Array type: `string[]`
-
-All items must be of the type:
 `string`
 
 
 
-  
-The `mediaAction` property is used to provide a type of experiance event media action .
-
-
-
+### xdm:mediaAction Known Values
+| Value | Description |
+|-------|-------------|
+| `opens` | Opens |
+| `sends` | Sends |
+| `clicks` | Clicks |
+| `impressions` | Impressions |
+| `bounces` | Bounces |
+| `mirrorpages` | Mirrorpages |
+| `nonDeliverables` | NonDeliverables |
+| `notSent` | NotSent |
+| `offerOpens` | OfferOpens |
+| `unSubscriptions` | UnSubscriptions |
+| `userComplaints` | UserComplaints |
+| `subscriptions` | Subscriptions |
 
 
 

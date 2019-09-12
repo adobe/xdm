@@ -1,0 +1,30 @@
+{
+  "@id": 2419,
+  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+  "searchads:accountId": "123456",
+  "searchads:campaignId": "100",
+  "searchads:adgroupId": "101",
+  "searchads:adId": "103",
+  "searchads:searchEngineId": "3",
+  "searchads:clicks": {
+    "xdm:value": 20
+  },
+  "searchads:impressions": {
+    "xdm.value": 100
+  },
+  "searchads:totalCost": {
+    "searchads:totalCost": 42866
+  },
+  "searchads:avgPosition": {
+    "xdm:value": 2
+  },
+  "searchads:topPageBid": {
+    "xdm:value": 3.2
+  },
+  "searchads:device": {
+    "xdm:type": "mobile"
+  },
+  "searchads:qualityScore": {
+    "xdm:value": 4
+  }
+}

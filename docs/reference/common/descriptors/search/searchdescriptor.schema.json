@@ -49,7 +49,7 @@
                         "notSortable": "notSortable",
                         "sorted": "sorted",
                         "sortedCaseSensitive": "sortedCaseSensitive",
-                        "sortedCaseInsensitive": "soretdCaseInsensitive"
+                        "sortedCaseInsensitive": "sortedCaseInsensitive"
                     },
                     "default": "notSortable"
                 },
@@ -116,6 +116,7 @@
             "@id": "https://ns.adobe.com/xdm/common/descriptors/searchdescriptor",
             "@type": "xdm:searchdescriptor",
             "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile",
+            "xdm:sourceVersion": 1,
             "search:indexed": true,
             "search:filterable": true,
             "search:store": "storedAndFetchByDefault",

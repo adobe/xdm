@@ -38,13 +38,6 @@
           "default": false,
           "description":
             "Indicates this identity is the preferred identity. Is used as a hint to help systems better organize how identities are queried."
-        },
-        "xdm:referenceIdentity": {
-          "title": "Reference Identity",
-          "type": "boolean",
-          "default": false,
-          "description":
-          "Indicates this idenity is referring to the identity of a foreign entity and should not be treated as one of its own identity fields."
         }
       }
     }

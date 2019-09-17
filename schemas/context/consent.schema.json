@@ -24,19 +24,19 @@
 					"description": "The unique identifier of the identity associated with this record.",
 					"type": "string"
 				},
-				"ttl": {
+				"xdm:ttl": {
 					"title": "Time to Live",
 					"description": "The date and time this entry is valid until.",
 					"type": "string",
 					"format": "date-time"
 				},
-				"consentTimestamp": {
+				"xdm:consentTimestamp": {
 					"title": "Consent Timestamp",
 					"description": "The date and time the snapshot of consent assertions was taken.",
 					"type": "string",
 					"format": "date-time"
 				},
-				"consentSignal": {
+				"xdm:consentSignal": {
 					"title": "Consent Signal",
 					"type": "string",
 					"description": "User consent signal for a purpose within a given consent stack.",

@@ -7,12 +7,12 @@
 		"privacy": {
 			"type": "object",
 			"properties": {
-				"ConsentAssertionId": {
+				"xdm:consentAssertionId": {
 					"title": "Assertion Id",
 					"description": "Consent assertion ID.",
 					"type": "string"
 				},
-				"ConsentStack": {
+				"xdm:consentStack": {
 					"title": "Consent Stack",
 					"type": "string",
 					"description": "Consent Stack.",
@@ -21,7 +21,7 @@
 						"Sell_Share": "Sell_Share"
 					}
 				},
-				"ConsentPurpose": {
+				"xdm:consentPurpose": {
 					"title": "Consent Purpose",
 					"type": "string",
 					"description": "User consent for a Consent Purpose within a given consent Stack.",
@@ -29,7 +29,7 @@
 						"Opt_Out": "Opt_Out"
 					}
 				},
-				"ConsentSource": {
+				"xdm:consentSource": {
 					"title": "Consent Source",
 					"type": "string",
 					"description": "Source Application of User consent- Mobile Web,Mobile App,Web.",
@@ -39,7 +39,7 @@
 						"web": "web"
 					}
 				},
-				"Version": {
+				"xdm:version": {
 					"title": "Version",
 					"type": "string",
 					"description": "Version of consent for a given ID."
@@ -48,7 +48,13 @@
 			}
 		}
 	},
-	"allOf": [{
-		"$ref": "#/definitions/privacy"
-	}]
+	"allOf": [
+		{
+			"$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+		},
+		{
+			"$ref": "#/definitions/privacy"
+		}
+	],
+	"meta:status": "experimental"
 }

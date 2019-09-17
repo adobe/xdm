@@ -22,6 +22,11 @@
           "type": "string",
           "description": "Campaign ID on the search advertising platform."
         },
+        "searchads:accountId": {
+          "title": "Account Identifier",
+          "type": "string",
+          "description": "Identifier that defines Customer/Client ID setup on the Search Advertising Platform."
+        },
         "searchads:campaignName": {
           "title": "Campaign Name",
           "type": "string",

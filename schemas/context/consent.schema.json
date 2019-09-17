@@ -19,42 +19,44 @@
 	"definitions": {
 		"consent": {
 			"properties": {
-				"Id": {
+				"xdm:id": {
 					"title": "Id",
 					"description": "The unique identifier of the identity associated with this record.",
 					"type": "string"
 				},
-				"Ttl": {
+				"ttl": {
 					"title": "Time to Live",
 					"description": "The date and time this entry is valid until.",
 					"type": "string",
 					"format": "date-time"
 				},
-				"ConsentTimestamp": {
+				"consentTimestamp": {
 					"title": "Consent Timestamp",
 					"description": "The date and time the snapshot of consent assertions was taken.",
 					"type": "string",
 					"format": "date-time"
 				},
-				"ConsentSignal": {
+				"consentSignal": {
 					"title": "Consent Signal",
 					"type": "string",
 					"description": "User consent signal for a purpose within a given consent stack.",
-					"default": "N",
 					"meta:enum": {
 						"Y": "Opt-Out - User Opted Out",
 						"N/A": "Not Available"
 					}
 				},
 				"required": [
-					"Ttl",
-					"ConsentTimestamp",
-					"ConsentSignal"
+					"consentTimestamp",
+					"consentSignal"
 				]
 			}
 		}
 	},
-	"allOf": [{
+	"allOf": [
+		{
+		"$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+		},
+		{
 			"$ref": "#/definitions/consent"
 		}
 

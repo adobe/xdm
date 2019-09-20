@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/consumer-experienceevent",
+  "$id": "https://ns.adobe.com/xdm/context/experienceevent-consumer",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Consumer ExperienceEvent  Mixin",
   "type": "object",
@@ -57,5 +57,5 @@
       "$ref": "https://ns.adobe.com/xdm/context/experienceevent-commerce"
     }
   ],
-  "meta:status": "deprecated"
+  "meta:status": "experimental"
 }

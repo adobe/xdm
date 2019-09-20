@@ -107,10 +107,5 @@
   },
   "xdm:marketing": {
     "xdm:trackingCode": "marketingcampaign111"
-  },
-  "https://ns.adobe.com/experience/analytics/customDimensions": {
-    "xdm:eVars": {
-      "xdm:eVar1": "customer"
-    }
   }
 }

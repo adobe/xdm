@@ -33,8 +33,11 @@ Telefacsimile channel.
 | [@type](#type) | `const` | Optional | Fax Channel (this schema) |
 | [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | Fax Channel (this schema) |
 | [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | Fax Channel (this schema) |
+| [xdm:mediaAction](#xdmmediaaction) | `string` | Optional | [Experience Channel](channel.schema.md#xdmmediaaction) |
+| [xdm:mediaType](#xdmmediatype) | `string` | Optional | [Experience Channel](channel.schema.md#xdmmediatype) |
 | [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | Fax Channel (this schema) |
 | [xdm:mode](#xdmmode) | `const` | Optional | Fax Channel (this schema) |
+| [xdm:nameAtSource](#xdmnameatsource) | `string` | Optional | [Experience Channel](channel.schema.md#xdmnameatsource) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -125,6 +128,67 @@ The value of this property **must** be equal to:
 
 
 
+## xdm:mediaAction
+
+The `mediaAction` property is used to provide a type of experiance event media action .
+
+`xdm:mediaAction`
+* is optional
+* type: `string`
+* defined in [Experience Channel](channel.schema.md#xdmmediaaction)
+
+### xdm:mediaAction Type
+
+
+`string`
+
+
+
+### xdm:mediaAction Known Values
+| Value | Description |
+|-------|-------------|
+| `opens` | Opens |
+| `sends` | Sends |
+| `clicks` | Clicks |
+| `impressions` | Impressions |
+| `bounces` | Bounces |
+| `mirrorpages` | Mirrorpages |
+| `nonDeliverables` | NonDeliverables |
+| `notSent` | NotSent |
+| `offerOpens` | OfferOpens |
+| `unSubscriptions` | UnSubscriptions |
+| `userComplaints` | UserComplaints |
+| `subscriptions` | Subscriptions |
+
+
+
+
+## xdm:mediaType
+
+Describes wether the media type is paid,owned or earned.
+
+`xdm:mediaType`
+* is optional
+* type: `string`
+* defined in [Experience Channel](channel.schema.md#xdmmediatype)
+
+### xdm:mediaType Type
+
+
+`string`
+
+
+
+### xdm:mediaType Known Values
+| Value | Description |
+|-------|-------------|
+| `paid` | Paid |
+| `owned` | Owned |
+| `earned` | Earned |
+
+
+
+
 ## xdm:metricTypes
 
 The metrics that can be collected in this channel.
@@ -167,6 +231,25 @@ The value of this property **must** be equal to:
 | `push` | The publisher of an experience can initiate an experience by sending a message into the channel. Most `push` channels involve some form of subscription or opt-in. |
 | `pull` | The consumer can initiate an experience by requesting a location in the channel. Most `pull` channels give publishers some control how the experience is then delivered. |
 | `bidirectional` | Both `push` and `pull` interaction modes are supported by the channel. |
+
+
+
+
+## xdm:nameAtSource
+
+Customer defined custom channel name
+
+`xdm:nameAtSource`
+* is optional
+* type: `string`
+* defined in [Experience Channel](channel.schema.md#xdmnameatsource)
+
+### xdm:nameAtSource Type
+
+
+`string`
+
+
 
 
 

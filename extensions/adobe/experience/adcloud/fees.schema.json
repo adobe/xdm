@@ -1,0 +1,104 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/experience/adcloud/fees",
+  "title": "Advertising Fee Details",
+  "type": "object",
+  "description": "Adobe Advertising Cloud Fee Details.",
+  "definitions": {
+    "fees": {
+      "properties": {
+        "xdm:DSPMediaFees": {
+          "title": "DSP Media Fees",
+          "type": "number",
+          "description": "Media fees billable by DSP."
+        },
+        "xdm:DSPDataFees": {
+          "title": "DSP Data Fees",
+          "type": "number",
+          "description": "Data fees billable by DSP."
+        },
+        "xdm:DSPOtherFees": {
+          "title": "DSP Other Fees",
+          "type": "number",
+          "description": "Other fees billable by DSP."
+        },
+        "xdm:accountMediaFees": {
+          "title": "Account Media Fees",
+          "type": "number",
+          "description": "Media fees for the account but not billable by DSP."
+        },
+        "xdm:accountDataFees": {
+          "title": "Account Data Fees",
+          "type": "number",
+          "description": "Data fees for the account but not billable by DSP."
+        },
+        "xdm:accountOtherFees": {
+          "title": "Account Other Fees",
+          "type": "number",
+          "description": "Other fees for the account but not billable by DSP."
+        },
+        "xdm:advertiserMediaFees": {
+          "title": "Advertiser Media Fees",
+          "type": "number",
+          "description": "Media advertiser fees charged to the advertiser from the account."
+        },
+        "xdm:advertiserDataFees": {
+          "title": "Advertiser Data Fees",
+          "type": "number",
+          "description": "Other advertiser fees charged to the advertiser from the account."
+        },
+        "xdm:advertiserOtherFees": {
+          "title": "Advertiser Other Fees",
+          "type": "number",
+          "description": "Other advertiser fees charged to the advertiser from the account."
+        },
+        "xdm:billableMediaNetSpend": {
+          "title": "Billable Media Net Spend",
+          "type": "number",
+          "description": "The billable net spend for media advertising."
+        },
+        "xdm:totalMediaNetSpend": {
+          "title": "Total Media Net Spend",
+          "type": "number",
+          "description": "The total net spend for media advertising."
+        },
+        "xdm:billableDataNetSpend": {
+          "title": "Billable Data Net Spend",
+          "type": "number",
+          "description": "The billable net spend for data advertising."
+        },
+        "xdm:billableOtherNetSpend": {
+          "title": "Billable Other Net Spend",
+          "type": "number",
+          "description": "The billable net spend for other types of advertising."
+        },
+        "xdm:totalBillableNetSpend": {
+          "title": "Total Billable Net Spend",
+          "type": "number",
+          "description": "The total billable net spend."
+        },
+        "xdm:totalNonBillableNetSpend": {
+          "title": "Total Non-Billable Net Spend",
+          "type": "number",
+          "description": "The total non-billable net spend"
+        },
+        "xdm:totalNetSpend": {
+          "title": "Total Net Spend",
+          "type": "number",
+          "description": "The total net spend."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/fees"
+    }
+  ]
+}

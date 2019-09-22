@@ -30,6 +30,9 @@
     "repo": "http://ns.adobe.com/adobecloud/core/1.0/",
     "iptc4xmpExt": "http://iptc.org/std/Iptc4xmpExt/1.1/",
     "dcx": "http://ns.adobe.com/dcx/",
-    "search" : "https://ns.adobe.com/search"
+    "search" : "https://ns.adobe.com/search",
+    "dsp": "https://ns.adobe.com/xdm/adcloud/dsp/",
+    "searchads" : "https://ns.adobe.com/xdm/adcloud/searchads/",
+    "adcloud": "https://ns.adobe.com/xdm/adcloud/"
   }
 }

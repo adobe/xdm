@@ -20,7 +20,7 @@
           "format": "uri-reference",
           "description": "The ID uniquely identifies the channel. Each specific experience channel defines a constant `@id`."
         },
-        "xdm:nameAtSource": {
+        "xdm:typeAtSource": {
           "type": "string",
           "description": "Customer defined custom channel name"
         },

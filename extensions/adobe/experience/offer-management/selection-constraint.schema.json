@@ -16,7 +16,7 @@
   "title": "Offer Selection Constraint",
   "description": "Offer selection constraints specify conditions that have to be met in order for an offer to be included when ranking the best offer. Those constraints can have two aspects, date constraints and a an eligibility applied to the user profile fields.",
   "definitions": {
-    "selection-constraint": {
+    "selection-constraint-datatype": {
       "properties": {
         "xdm:eligibilityRule": {
           "type": "string",
@@ -32,7 +32,7 @@
       "$ref": "https://ns.adobe.com/experience/decisioning/calendar-constraint"
     },
     {
-      "$ref": "#/definitions/selection-constraint"
+      "$ref": "#/definitions/selection-constraint-datatype"
     },
     {
       "required": ["xdm:startDate", "xdm:endDate"]

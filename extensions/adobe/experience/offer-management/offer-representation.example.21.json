@@ -1,0 +1,12 @@
+{
+  "xdm:components": [
+    {
+      "@type": "https://ns.adobe.com/experience/offer-management/content-component-html-template",
+      "dc:format": "text/x-htl-template",
+      "dc:language": ["en"],
+      "repo:name": "firstname.htl",
+      "xdm:template": "<p data-sly-text=\"${profile.person.firstname}\">This text would be replaced with the property 'firstname'.</p>"
+    }
+  ],
+  "xdm:placement": "uri:xcore:placement-0004"
+}

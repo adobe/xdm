@@ -1,0 +1,40 @@
+{
+  "xdm:components": [
+    {
+      "@type": "https://ns.adobe.com/experience/offer-management/content-component-text-template",
+      "dc:format": "text/x-handlebars-template",
+      "dc:language": [
+        "en",
+        "en-AU",
+        "en-CA",
+        "en-GB",
+        "en-IN",
+        "en-IE",
+        "en-MT",
+        "en-NZ",
+        "en-PH",
+        "en-SG",
+        "en-ZA"
+      ],
+      "repo:name": "expiration_message_en",
+      "repo:id": "urn:aaid:sc:VA7:6dc33479-13ca-4b19-b25d-c805efef0c9e",
+      "xdm:template": "Dear Madam {{profile.person.lastName}}, the offer expires 12/6/2018"
+    },
+    {
+      "@type": "https://ns.adobe.com/experience/offer-management/content-component-text-template",
+      "dc:format": "text/x-handlebars-template",
+      "dc:language": ["en-US"],
+      "repo:name": "expiration_message_en-US",
+      "repo:id": "urn:aaid:sc:VA7:6dc33479-13ca-4b19-b25d-c805efef0c9e",
+      "xdm:template": "Dear Madam {{profile.person.lastName}}, the offer expires 6/12/2018"
+    },
+    {
+      "@type": "https://ns.adobe.com/experience/offer-management/content-component-text-template",
+      "dc:format": "text/x-handlebars-template",
+      "dc:language": ["es"],
+      "repo:name": "expiration_message_es",
+      "xdm:template": "Estimada señora {{profile.person.lastName}}: La oferta vence el 12/6/2018"
+    }
+  ],
+  "xdm:placement": "uri:xcore:placement-0001"
+}

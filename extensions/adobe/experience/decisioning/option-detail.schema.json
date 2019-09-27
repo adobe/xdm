@@ -26,6 +26,16 @@
           "title": "Option Name",
           "description": "Option name. The name is displayed in various user interfaces."
         },
+        "xdm:tags": {
+          "type": "array",
+          "title": "Tags",
+          "description": "The set of tags associated with this option. The tags are used indicate catetoegies (dimensions) that the option belonged to at the time the proposition was made.",
+          "items": {
+            "type": "string",
+            "format": "uri-reference",
+            "description": "An identifier of a Tag object. The value is the @id of the Tag that is referenced. See Tag schema https://ns.adobe.com/experience/decisioning/tag"
+          }
+        },
         "xdm:characteristics": {
           "title": "Option Characteristics",
           "description": "Additional properties or attributed belonging to this particular option. Different instances can have different characteristics. When every instance has a certain attribute or property it should be modeled as an extension to the schema that derives from option Detail. The characteristics are name value pairs used to distinguish an option from others. Characteristics are used as features to analyze and optimize the performance of an option.",

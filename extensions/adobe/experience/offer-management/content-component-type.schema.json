@@ -19,7 +19,9 @@
     "content-component-type": {
       "enum": [
         "https://ns.adobe.com/experience/offer-management/content-component-text",
+        "https://ns.adobe.com/experience/offer-management/content-component-text-template",
         "https://ns.adobe.com/experience/offer-management/content-component-html",
+        "https://ns.adobe.com/experience/offer-management/content-component-html-template",
         "https://ns.adobe.com/experience/offer-management/content-component-imagelink"
       ]
     }

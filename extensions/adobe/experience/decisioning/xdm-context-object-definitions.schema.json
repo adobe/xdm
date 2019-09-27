@@ -38,26 +38,33 @@
       "description": "Contains a valid XDM schema identifier or XDM type definition for the parameter or context object.",
       "type": "object",
       "properties": {
-        "meta:xdmId": {
-          "type": "string",
-          "format": "uri-reference",
-          "title": "Schema identifier",
-          "description": "The schema reference used in this definition."
+        "xdm:schema": {
+          "type": "object",
+          "title": "Context object schema",
+          "description": "Schema for the value of the parameter or context object",
+          "properties": {
+            "$ref": {
+              "type": "string",
+              "format": "uri-reference",
+              "title": "Schema identifier",
+              "description": "The schema reference used in this definition."
+            },
+            "meta:altId": {
+              "type": "string",
+              "title": "XED encoded schema identifier",
+              "pattern": "^_[0-9a-zA-Z]+([.][0-9a-zA-Z\\-]+?)*$",
+              "description": "An XED encoded variant of the schema reference used in this definition."
+            },
+            "version": {
+              "type": "string",
+              "pattern": "^[0-9]+([.][0-9]+?)?$",
+              "default": "1",
+              "title": "XDM schema version",
+              "description": "Schema version which can be a revision number or git repo release tag number etc. This should be the same version number as part of the schema id"
+            }
+          }
         },
-        "meta:altId": {
-          "type": "string",
-          "title": "XED encoded schema identifier",
-          "pattern": "^_[0-9a-zA-Z]+([.][0-9a-zA-Z\\-]+?)*$",
-          "description": "An XED encoded variant of the schema reference used in this definition."
-        },
-        "version": {
-          "type": "string",
-          "pattern": "^[0-9]+([.][0-9]+?)?$",
-          "default": "1",
-          "title": "XDM schema version",
-          "description": "Schema version which can be a revision number or git repo release tag number etc. This should be the same version number as part of the schema id"
-        },
-        "meta:referencePaths": {
+        "xdm:referencePaths": {
           "type": "array",
           "items": {
             "type": "string",

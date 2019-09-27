@@ -38,23 +38,31 @@
       },
       "xdm:definedOn": {
         "": {
-          "meta:altId": "_xdm.context.profile",
-          "version": "1",
-          "meta:referencePaths": ["homeAddress.stateOrProvince"]
+          "xdm:schema": {
+            "$ref": "https://ns.adobe.com/xdm/context/profile",
+            "meta:altId": "_xdm.context.profile",
+            "version": "1"
+          },
+          "xdm:referencePaths": ["homeAddress.stateOrProvince"]
         },
         "xEvent": {
-          "meta:altId": "_xdm.context.experienceevent",
-          "version": "1",
-          "meta:referencePaths": [
+          "xdm:schema": {
+            "$ref": "https://ns.adobe.com/xdm/context/experienceevent",
+            "meta:altId": "_xdm.context.experienceevent",
+            "version": "1"
+          },
+          "xdm:referencePaths": [
             "eventType",
             "commerce.order.priceTotal",
             "commerce.order.currencyCode"
           ]
         },
         "currentLocation": {
-          "meta:xdmId": "https://ns.adobe.com/xdm/context/address",
-          "version": "1.2",
-          "meta:referencePaths": ["stateOrProvince"]
+          "xdm:schema": {
+            "$ref": "https://ns.adobe.com/xdm/context/address",
+            "version": "1.2"
+          },
+          "xdm:referencePaths": ["stateOrProvince"]
         }
       }
     }
@@ -76,9 +84,12 @@
         "repo:resolveUrl": "https://platform.adobe.io/ml/resolve?id={id}",
         "xdm:definedOn": {
           "profile": {
-            "meta:altId": "_xdm.context.experienceevent",
-            "version": "1",
-            "meta:referencePaths": [
+            "xdm:schema": {
+              "$ref": "https://ns.adobe.com/xdm/context/experienceevent",
+              "meta:altId": "_xdm.context.experienceevent",
+              "version": "1"
+            },
+            "xdm:referencePaths": [
               "timestamp",
               "eventType",
               "search.keywords",
@@ -87,9 +98,11 @@
             ]
           },
           "option": {
-            "meta:xdmId": "https://ns.adobe.com/decision/option",
-            "version": "1",
-            "meta:referencePaths": ["characteristics.category"]
+            "xdm:schema": {
+              "$ref": "https://ns.adobe.com/decision/option",
+              "version": "1"
+            },
+            "xdm:referencePaths": ["characteristics.category"]
           }
         },
         "xdm:returns": {

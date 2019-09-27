@@ -9,14 +9,18 @@
   },
   "xdm:definedOn": {
     "": {
-      "meta:altId": "_xdm.context.profile",
-      "meta:version": "1",
-      "meta:referencePaths": ["homeAddress.stateOrProvince"]
+      "xdm:schema": {
+        "meta:altId": "_xdm.context.profile",
+        "version": "1"
+      },
+      "xdm:referencePaths": ["homeAddress.stateOrProvince"]
     },
     "xEvent": {
-      "meta:altId": "_xdm.context.experienceevent",
-      "meta:version": "1",
-      "meta:referencePaths": [
+      "xdm:schema": {
+        "meta:altId": "_xdm.context.experienceevent",
+        "version": "1"
+      },
+      "xdm:referencePaths": [
         "eventType",
         "commerce.order.priceTotal",
         "commerce.order.currencyCode"

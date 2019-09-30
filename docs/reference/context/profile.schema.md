@@ -1,5 +1,5 @@
 
-# XDM Profile Schema
+# XDM Individual Profile Schema
 
 ```
 https://ns.adobe.com/xdm/context/profile
@@ -12,13 +12,13 @@ An XDM Profile forms a singular representation of the attributes and interests o
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/profile.schema.json](context/profile.schema.json) |
 ## Schema Hierarchy
 
-* XDM Profile `https://ns.adobe.com/xdm/context/profile`
+* XDM Individual Profile `https://ns.adobe.com/xdm/context/profile`
   * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Audit Trail](../common/auditable.schema.md) `https://ns.adobe.com/xdm/common/auditable`
   * [Record Schema](../data/record.schema.md) `https://ns.adobe.com/xdm/data/record`
 
 
-## XDM Profile Example
+## XDM Individual Profile Example
 ```json
 {
   "xdm:identityMap": {
@@ -113,7 +113,7 @@ An XDM Profile forms a singular representation of the attributes and interests o
 }
 ```
 
-# XDM Profile Properties
+# XDM Individual Profile Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|

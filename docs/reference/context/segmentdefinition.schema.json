@@ -22,7 +22,8 @@
                 "xdm:segmentIdentity": {
                     "title": "Segment Identity",
                     "$ref": "https://ns.adobe.com/xdm/context/segmentidentity",
-                    "description": "Identity of the segment"
+                    "description": "Identity of the segment",
+                    "meta:status": "deprecated"
                 },
                 "xdm:segmentName": {
                     "title": "Segment name",
@@ -53,12 +54,15 @@
         }
     },
     "required": [
-        "xdm:segmentIdentity",
+        "xdm:identityMap",
         "xdm:segmentName"
     ],
     "allOf": [
         {
             "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/context/identitymap"
         },
         {
             "$ref": "https://ns.adobe.com/xdm/common/auditable"
@@ -73,11 +77,13 @@
     "meta:status": "experimental",
     "examples": [
         {
-            "xdm:segmentIdentity": {
-                "@id": "id123",
-                "xdm:namespace": {
-                    "xdm:code": "AAMSegments"
-                }
+            "xdm:identityMap": {
+                "AAMSegments": [
+                    {
+                        "xdm:id": "112233",
+                        "xdm:primary": true
+                    }
+                ]
             },
             "xdm:segmentName": "Users with TV segment",
             "xdm:description": "Segment is about users who have TV",

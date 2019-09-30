@@ -25,6 +25,7 @@
     "https://ns.adobe.com/xdm/context/experienceevent-web",
     "https://ns.adobe.com/xdm/context/experienceevent-commerce"
   ],
+  "definitions": {},
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/context/experienceevent-application"

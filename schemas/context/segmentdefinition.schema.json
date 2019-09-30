@@ -22,7 +22,8 @@
         "xdm:segmentIdentity": {
           "title": "Segment Identity",
           "$ref": "https://ns.adobe.com/xdm/context/segmentidentity",
-          "description": "Identity of the segment"
+          "description": "Identity of the segment",
+          "meta:status": "deprecated"
         },
         "xdm:segmentName": {
           "title": "Segment name",
@@ -53,12 +54,15 @@
     }
   },
   "required": [
-    "xdm:segmentIdentity",
+    "xdm:identityMap",
     "xdm:segmentName"
   ],
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/identitymap"
     },
     {
       "$ref": "https://ns.adobe.com/xdm/common/auditable"

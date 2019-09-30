@@ -21,7 +21,8 @@
         "xdm:segmentFolderId": {
           "title": "Folder Id",
           "type": "string",
-          "description": "id of parent folder if present"
+          "description": "id of parent folder if present",
+          "meta:status": "deprecated"
         },
         "xdm:segmentSubType": {
           "title": "Sub Type",
@@ -39,6 +40,11 @@
             "ALGO_TRAIT",
             "ON_BOARDED_TRAIT"
           ]
+        },
+        "https://ns.adobe.com/experience/audiencemanager/segmentFolderIdentity": {
+          "title": "Parent folder identity",
+          "$ref": "https://ns.adobe.com/xdm/context/identity",
+          "description": "Identity of the parent folder of current folder"
         }
       }
     }

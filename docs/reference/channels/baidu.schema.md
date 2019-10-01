@@ -37,7 +37,7 @@ Baidu Cloud Push Service channel.
 | [xdm:mediaType](#xdmmediatype) | `string` | Optional | [Experience Channel](channel.schema.md#xdmmediatype) |
 | [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | Baidu Channel (this schema) |
 | [xdm:mode](#xdmmode) | `const` | Optional | Baidu Channel (this schema) |
-| [xdm:nameAtSource](#xdmnameatsource) | `string` | Optional | [Experience Channel](channel.schema.md#xdmnameatsource) |
+| [xdm:typeAtSource](#xdmtypeatsource) | `string` | Optional | [Experience Channel](channel.schema.md#xdmtypeatsource) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -235,16 +235,16 @@ The value of this property **must** be equal to:
 
 
 
-## xdm:nameAtSource
+## xdm:typeAtSource
 
 Customer defined custom channel name
 
-`xdm:nameAtSource`
+`xdm:typeAtSource`
 * is optional
 * type: `string`
-* defined in [Experience Channel](channel.schema.md#xdmnameatsource)
+* defined in [Experience Channel](channel.schema.md#xdmtypeatsource)
 
-### xdm:nameAtSource Type
+### xdm:typeAtSource Type
 
 
 `string`

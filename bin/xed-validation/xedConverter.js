@@ -309,6 +309,22 @@ class Converter extends EventEmitter {
               if (statusList.length >1 )
                 console.log("!!!This schema contains multiple meta:status after resolving allOf!!!")
               return Array.from(new Set(statusList));
+            },
+            "meta:extensible" : function(values) {
+                var extensibleList = [];
+                for (var i in values)
+                    extensibleList = extensibleList.concat(values[i]);
+                if (extensibleList.length >1 )
+                    console.log("!!!This schema contains multiple meta:extensible after resolving allOf!!!")
+                return Array.from(new Set(extensibleList));
+            },
+            "meta:abstract" : function(values) {
+                var abstractList = [];
+                for (var i in values)
+                    abstractList = abstractList.concat(values[i]);
+                if (abstractList.length >1 )
+                    console.log("!!!This schema contains multiple meta:abstract after resolving allOf!!!")
+                return Array.from(new Set(abstractList));
             }
         }
     });

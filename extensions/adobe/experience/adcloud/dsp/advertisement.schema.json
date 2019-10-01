@@ -1,0 +1,148 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/adcloud/dsp/advertisement",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "DSP Advertising Advertisement",
+  "type": "object",
+  "meta:extensible": false,
+  "meta:abstract": false,
+  "meta:auditable": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "description": "Adobe Advertising Cloud DSP Advertisement Details.",
+  "definitions": {
+    "dsp-advertisement": {
+      "properties": {
+        "dsp:adKey": {
+          "title": "Ad Key",
+          "type": "string",
+          "description": "Ad external unique identifier."
+        },
+        "dsp:externalCreativeId": {
+          "title": "External Creative Identifier",
+          "type": "string",
+          "description": "Identifier for the creative which this ad is associated with."
+        },
+        "dsp:adStatus": {
+          "title": "Ad Status",
+          "type": "string",
+          "description": "Ad Status indicates if it is eligible to be served.",
+          "enum": [
+            "Active",
+            "Inactive",
+            "Deleted"
+          ],
+          "meta:enum": {
+            "Active": "Active",
+            "Inactive": "Inactive",
+            "Deleted": "Deleted"
+          }
+        },
+        "dsp:adUnitType": {
+          "title": "Ad Unit Type",
+          "type": "string",
+          "description": "Identifier for the literal piece of code driving display of the ad in a browser/device.",
+          "enum": [
+            "Onsite",
+            "Flash",
+            "Embed",
+            "YouTube",
+            "New Flash",
+            "HTML5",
+            "instream",
+            "vast_proxy",
+            "external_instream",
+            "instream_selector",
+            "inbanner_3rd_party",
+            "external_inbanner",
+            "mraid_3rd_party",
+            "dooh",
+            "standard_display",
+            "fb_news_feed_post",
+            "fb_news_feed"
+          ],
+          "meta:enum": {
+            "Onsite": "Onsite",
+            "Flash": "Flash",
+            "Embed": "Embed",
+            "YouTube": "YouTube",
+            "New Flash": "New Flash",
+            "HTML5": "HTML5",
+            "instream": "instream",
+            "vast_proxy": "vast_proxy",
+            "external_instream": "external_instream",
+            "instream_selector": "instream_selector",
+            "inbanner_3rd_party": "inbanner_3rd_party",
+            "external_inbanner": "external_inbanner",
+            "mraid_3rd_party": "mraid_3rd_party",
+            "dooh": "dooh",
+            "standard_display": "standard_display",
+            "fb_news_feed_post": "fb_news_feed_post",
+            "fb_news_feed": "fb_news_feed"
+          }
+        },
+        "dsp:adClass": {
+          "title": "Ad Class",
+          "type": "string",
+          "description": "Ad class of driving event.",
+          "enum": [
+            "inbanner",
+            "CTP",
+            "ROTP",
+            "SMA",
+            "BAP",
+            "preroll",
+            "midroll",
+            "postroll",
+            "mobile_web"
+          ],
+          "meta:enum": {
+            "inbanner": "inbanner",
+            "CTP": "CTP",
+            "ROTP": "ROTP",
+            "SMA": "SMA",
+            "BAP": "BAP",
+            "preroll": "preroll",
+            "midroll": "midroll",
+            "postroll": "postroll",
+            "mobile_web": "mobile_web"
+          }
+        }
+      },
+      "dsp:promotedVideoId": {
+        "title": "Promoted Video Identifier",
+        "type": "string",
+        "description": "Promoted video Identifier contained in this Ad."
+      },
+      "dsp:adServerId": {
+        "title": "Ad Server Identifier",
+        "type": "string",
+        "description": "Identifier for the Ad Server providing this Ad."
+      },
+      "dsp:placementIds": {
+        "title": "Placement Ids",
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "List of Placement Ids where this Ad is used."
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/auditable"
+    },
+    {
+      "$ref": "#/definitions/dsp-advertisement"
+    }
+  ],
+  "meta:status": "experimental"
+}

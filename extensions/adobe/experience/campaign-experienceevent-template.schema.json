@@ -24,6 +24,7 @@
     "https://ns.adobe.com/xdm/context/experienceevent-channel",
     "https://ns.adobe.com/xdm/context/experienceevent-directmarketing"
   ],
+  "definitions": {},
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/experience/campaign/experienceevent-ext"
@@ -42,9 +43,6 @@
     },
     {
       "$ref": "https://ns.adobe.com/experience/decisioning/proposition"
-    },
-    {
-      "$ref": "#/definitions/campaign-experienceevent"
     }
   ],
   "meta:status": "experimental"

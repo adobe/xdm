@@ -14,6 +14,7 @@ Segment Definition class to describe a segment from any system
 
 * Segment Definition `https://ns.adobe.com/xdm/context/segmentdefinition`
   * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [IdentityMap](identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
   * [Audit Trail](../common/auditable.schema.md) `https://ns.adobe.com/xdm/common/auditable`
   * [Record Schema](../data/record.schema.md) `https://ns.adobe.com/xdm/data/record`
   * [Segment Identity](segmentidentity.schema.md) `https://ns.adobe.com/xdm/context/segmentidentity`
@@ -22,11 +23,13 @@ Segment Definition class to describe a segment from any system
 ## Segment Definition Example
 ```json
 {
-  "xdm:segmentIdentity": {
-    "@id": "id123",
-    "xdm:namespace": {
-      "xdm:code": "AAMSegments"
-    }
+  "xdm:identityMap": {
+    "AAMSegments": [
+      {
+        "xdm:id": "112233",
+        "xdm:primary": true
+      }
+    ]
   },
   "xdm:segmentName": "Users with TV segment",
   "xdm:description": "Segment is about users who have TV",
@@ -45,10 +48,11 @@ Segment Definition class to describe a segment from any system
 | [repo:modifyDate](#repomodifydate) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#repomodifydate) |
 | [xdm:createdByBatchID](#xdmcreatedbybatchid) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmcreatedbybatchid) |
 | [xdm:description](#xdmdescription) | `string` | Optional | Segment Definition (this schema) |
+| [xdm:identityMap](#xdmidentitymap) | `object` | **Required** | [IdentityMap](identitymap.schema.md#xdmidentitymap) |
 | [xdm:modifiedByBatchID](#xdmmodifiedbybatchid) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmmodifiedbybatchid) |
 | [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmrepositorycreatedby) |
 | [xdm:repositoryLastModifiedBy](#xdmrepositorylastmodifiedby) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmrepositorylastmodifiedby) |
-| [xdm:segmentIdentity](#xdmsegmentidentity) | Segment Identity | **Required** | Segment Definition (this schema) |
+| [xdm:segmentIdentity](#xdmsegmentidentity) | Segment Identity | Optional | Segment Definition (this schema) |
 | [xdm:segmentName](#xdmsegmentname) | `string` | **Required** | Segment Definition (this schema) |
 | [xdm:segmentStatus](#xdmsegmentstatus) | `enum` | Optional | Segment Definition (this schema) |
 | [xdm:version](#xdmversion) | `string` | Optional | Segment Definition (this schema) |
@@ -166,6 +170,28 @@ Description of the segment
 
 
 
+## xdm:identityMap
+
+
+`xdm:identityMap`
+* is **required**
+* type: `object`
+* defined in [IdentityMap](identitymap.schema.md#xdmidentitymap)
+
+### xdm:identityMap Type
+
+
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+
+
+
+
+
+
 ## xdm:modifiedByBatchID
 ### Modified by Batch Identifier
 
@@ -233,7 +259,7 @@ User ID who last modified the entity. At creation time, `modifiedByUser` is set 
 Identity of the segment
 
 `xdm:segmentIdentity`
-* is **required**
+* is optional
 * type: Segment Identity
 * defined in this schema
 

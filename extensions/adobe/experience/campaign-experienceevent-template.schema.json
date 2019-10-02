@@ -26,19 +26,19 @@
   ],
   "allOf": [
     {
-      "ref": "https://ns.adobe.com/xdm/experience/campaign/experienceevent-ext"
+      "$ref": "https://ns.adobe.com/xdm/experience/campaign/experienceevent-ext"
     },
     {
-      "ref": "https://ns.adobe.com/xdm/context/experienceevent-environment-details"
+      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-environment-details"
     },
     {
-      "ref": "https://ns.adobe.com/xdm/context/experienceevent-application"
+      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-application"
     },
     {
-      "ref": "https://ns.adobe.com/xdm/context/experienceevent-channel"
+      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-channel"
     },
     {
-      "ref": "https://ns.adobe.com/xdm/context/experienceevent-directmarketing"
+      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-directmarketing"
     },
     {
       "$ref": "https://ns.adobe.com/experience/decisioning/proposition"

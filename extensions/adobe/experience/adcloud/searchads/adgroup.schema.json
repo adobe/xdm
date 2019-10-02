@@ -5,39 +5,44 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/adcloud/searchadvertising/adgroup",
+  "$id": "https://ns.adobe.com/xdm/adcloud/searchads/adgroup",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Search Advertising AdGroup",
   "type": "object",
-  "meta:extensible": true,
-  "meta:abstract": true,
+  "meta:extensible": false,
+  "meta:abstract": false,
   "meta:auditable": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "description": "Search Advertising Ad Group is a logical collection or grouping of ads.",
   "definitions": {
-    "searchadvertising-adgroup": {
+    "searchads-adgroup": {
       "properties": {
-        "xdm:adgroupId": {
+        "searchads:adgroupId": {
           "title": "Ad Group Identifier",
           "type": "string",
           "description": "Ad Group ID on the search advertising platform."
         },
-        "xdm:campaignId": {
+        "searchads:campaignId": {
           "title": "Campaign Identifier",
           "type": "string",
           "description": "Campaign ID for the Ad Group on the search advertising platform."
         },
-        "xdm:internalCampaignId": {
+        "searchads:internalCampaignId": {
           "title": "Internal Campaign Identifier",
           "type": "string",
           "description": "Internal Campaign ID for the Ad Group. This identifier determines uniqueness of campaign and ad group record."
         },
-        "xdm:adgroupName": {
+        "searchads:searchEngineId": {
+          "title": "Search Engine Identifier",
+          "type": "integer",
+          "description": "The application-specified identifier used to identify the Search Advertising Platform Name."
+        },
+        "searchads:adgroupName": {
           "title": "Ad Group Name",
           "type": "string",
           "description": "Name of the Ad Group."
         },
-        "xdm:adGroupStatus": {
+        "searchads:adGroupStatus": {
           "title": "Ad Group Status",
           "type": "string",
           "description": "Ad Group Status indicates if underlying ads are eligible to serve.",
@@ -80,7 +85,7 @@
             "Dummy": "Dummy"
           }
         },
-        "xdm:bidLevel": {
+        "searchads:bidLevel": {
           "title": "Bid Level",
           "type": "string",
           "description:": "What determines the bid for all ads belonging to this adgroup.",
@@ -114,8 +119,8 @@
       "$ref": "https://ns.adobe.com/xdm/common/auditable"
     },
     {
-      "$ref": "#/definitions/searchadvertising-adgroup"
+      "$ref": "#/definitions/searchads-adgroup"
     }
   ],
-  "meta:status": "deprecated"
+  "meta:status": "experimental"
 }

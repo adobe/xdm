@@ -26,7 +26,7 @@
   ],
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/experience/campaign/experienceevent-ext"
+      "$ref": "https://ns.adobe.com/experience/campaign/experienceevent-ext"
     },
     {
       "$ref": "https://ns.adobe.com/xdm/context/experienceevent-environment-details"

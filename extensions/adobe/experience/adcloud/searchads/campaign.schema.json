@@ -5,34 +5,39 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/adcloud/searchadvertising/campaign",
+  "$id": "https://ns.adobe.com/xdm/adcloud/searchads/campaign",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Search Advertising Campaign",
   "type": "object",
-  "meta:extensible": true,
-  "meta:abstract": true,
+  "meta:extensible": false,
+  "meta:abstract": false,
   "meta:auditable": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "description": "Search Advertising Campaigns is a set of ad groups (ads, keywords, and bids) that share a budget, location targeting, and other settings.",
   "definitions": {
-    "searchadvertising-campaign": {
+    "searchads-campaign": {
       "properties": {
-        "xdm:campaignId": {
+        "searchads:campaignId": {
           "title": "Campaign Identifier",
           "type": "string",
           "description": "Campaign ID on the search advertising platform."
         },
-        "xdm:campaignName": {
+        "searchads:accountId": {
+          "title": "Account Identifier",
+          "type": "string",
+          "description": "Identifier that defines Customer/Client ID setup on the Search Advertising Platform."
+        },
+        "searchads:campaignName": {
           "title": "Campaign Name",
           "type": "string",
           "description": "Name of the Campaign."
         },
-        "xdm:campaignDescription": {
+        "searchads:campaignDescription": {
           "title": "Description",
           "type": "string",
           "description": "Description of the Campaign."
         },
-        "xdm:campaignStatus": {
+        "searchads:campaignStatus": {
           "title": "Campaign Status",
           "type": "string",
           "description": "Campaign Status indicates if underlying ads are eligible to serve.",
@@ -75,17 +80,17 @@
             "Dummy": "Dummy"
           }
         },
-        "xdm:channelType": {
+        "searchads:channelType": {
           "title": "Channel Type",
           "type": "string",
           "description": "Channel Type for the Campaign"
         },
-        "xdm:budget": {
+        "searchads:budget": {
           "title": "Budget",
           "type": "number",
           "description": "Budget Allocated for the Campaign"
         },
-        "xdm:budgetType": {
+        "searchads:budgetType": {
           "title": "Budget Type",
           "type": "string",
           "description": "Budget Type indicates how the allocated budget will be spent",
@@ -104,7 +109,7 @@
             "Day of week": "Day of week"
           }
         },
-        "xdm:adDeliveryType": {
+        "searchads:adDeliveryType": {
           "title": "Ad Delivery Method",
           "type": "string",
           "description": "Ad Delivery method can determine how long your budget lasts",
@@ -114,7 +119,7 @@
             "accelerated": "Accelerated"
           }
         },
-        "xdm:objective": {
+        "searchads:objective": {
           "title": "Campaign Objective",
           "type": "string",
           "description": "Campaign Objective indicates the primary objective of the campaign - e.g. Promotions, Brands, App Installs.",
@@ -126,24 +131,24 @@
             "visit_offer": "visit_offer"
           }
         },
-        "xdm:campaignStartDate": {
+        "searchads:campaignStartDate": {
           "title": "Campaign Start Date",
           "type": "string",
           "format": "date",
           "description": "Campaign Start Date"
         },
-        "xdm:campaignEndDate": {
+        "searchads:campaignEndDate": {
           "title": "Campaign End Date",
           "type": "string",
           "format": "date",
           "description": "Campaign End Date"
         },
-        "xdm:portfolioId": {
+        "searchads:portfolioId": {
           "title": "Portfolio Identifier",
           "type": "string",
           "description": "Identifier indicates if campaign has been assigned and managed via portfolio."
         },
-        "xdm:searchEngineId": {
+        "searchads:searchEngineId": {
           "title": "Search Engine Identifier",
           "type": "integer",
           "description": "The application-specified identifier used to identify the Search Advertising Platform Name."
@@ -159,8 +164,8 @@
       "$ref": "https://ns.adobe.com/xdm/common/auditable"
     },
     {
-      "$ref": "#/definitions/searchadvertising-campaign"
+      "$ref": "#/definitions/searchads-campaign"
     }
   ],
-  "meta:status": "deprecated"
+  "meta:status": "experimental"
 }

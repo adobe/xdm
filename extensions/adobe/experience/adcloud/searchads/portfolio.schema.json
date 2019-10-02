@@ -5,24 +5,24 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/adcloud/searchadvertising/portfolio",
+  "$id": "https://ns.adobe.com/xdm/adcloud/searchads/portfolio",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Search Advertising Portfolio",
   "type": "object",
-  "meta:extensible": true,
-  "meta:abstract": true,
+  "meta:extensible": false,
+  "meta:abstract": false,
   "meta:auditable": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "description": "Search Advertising Portfolio Class includes fields that defines Portfolio.",
   "definitions": {
-    "searchadvertising-portfolio": {
+    "searchads-portfolio": {
       "properties": {
-        "xdm:portfolioName": {
+        "searchads:portfolioName": {
           "title": "Portfolio Name",
           "type": "string",
           "description": "Name of the Portfolio."
         },
-        "xdm:billingState": {
+        "searchads:billingState": {
           "title": "Portfolio Billing State",
           "type": "string",
           "description": "Portfolio Billing State indicates whether client should be billed for spend from this Portfolio.",
@@ -31,15 +31,38 @@
             "Not Managed": "Client will not be billed for the spend from this portfolio"
           }
         },
-        "xdm:portfolioGroupId": {
+        "searchads:portfolioGroupId": {
           "title": "Portfolio Group Identifier",
           "type": "string",
           "description": "Set of portfolios can be assigned to a portfolio Group. This identifier indicates if portfolio is assigned to a portfolio group."
         },
-        "xdm:portfolioGroupName": {
+        "searchads:portfolioGroupName": {
           "title": "Portfolio Group Name",
           "type": "string",
           "description": "Indicates Name of the Portfolio Group if portfolio belongs to a Portfolio Group."
+        },
+        "searchads:portfolioStatus": {
+          "title": "Portfolio Status",
+          "type": "string",
+          "description": "Portfolio Status",
+          "enum": [
+            "Active",
+            "Paused",
+            "Deleted",
+            "Inactive",
+            "Incomplete",
+            "Optimize",
+            "Unknown"
+          ],
+          "meta:enum": {
+            "Active": "Active",
+            "Paused": "Paused",
+            "Deleted": "Deleted",
+            "Inactive": "Inactive",
+            "Incomplete": "Incomplete",
+            "Optimize": "Optimize",
+            "Unknown": "Unknown"
+          }
         }
       }
     }
@@ -52,8 +75,8 @@
       "$ref": "https://ns.adobe.com/xdm/common/auditable"
     },
     {
-      "$ref": "#/definitions/searchadvertising-portfolio"
+      "$ref": "#/definitions/searchads-portfolio"
     }
   ],
-  "meta:status": "deprecated"
+  "meta:status": "experimental"
 }

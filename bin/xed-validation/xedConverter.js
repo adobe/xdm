@@ -98,7 +98,7 @@ class Converter extends EventEmitter {
     };
 
     function formatNested(field) { // format the dot-prop generated structure
-      if (checkNested(field) && !field.type)
+      if (checkNested(field) && (!field.type || typeof(field.type) == "object"))
         for (var key in field) { //format nested objs as expected from conversion logic
           if (typeof(field[key]) === "object" &&
             Object.prototype.toString.call(field[key]) != "[object Array]" //bypass arrays like required, enum, enumvalues, examples etc.

@@ -41,7 +41,7 @@
       "type": "object",
       "properties": {
         "xdm:optoutType": {
-          "title": "Optout Type"
+          "title": "Optout Type",
           "type": "string",
           "description": "Type of optout",
           "meta:enum": {

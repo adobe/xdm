@@ -15,62 +15,56 @@
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "description": "OverallConsent Mixin",
   "definitions": {
-    "profile-privacy": {
-      "type": "object",
-      "properties": {
-        "xdm:consent": {
-          "type": "object",
-          "properties": {
-            "xdm:optout": {
-              "type": "object",
-              "properties": {
-                "xdm:capturedOptouts": {
-                  "description": "Encapsulates different optout types",
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/definitions/optout"
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
+	"profile-privacy": {
+		"type": "object",
+			"properties": {
+				"xdm:consent": {
+				"type": "object",
+				"properties": {
+					"xdm:optouts": {
+						"description": "Encapsulates different optout types",
+						"type": "array",
+						"items": {
+						"$ref": "#/definitions/optout"
+						}
+					}
+				}
+				}
+			}
     },
     "optout": {
-      "type": "object",
-      "properties": {
-        "xdm:optoutType": {
-          "title": "Optout Type",
-          "type": "string",
-          "description": "Type of optout",
-          "meta:enum": {
-            "generalOptout": "generalOptout",
-            "ccpaSalesOptout": "ccpaSalesOptout"
-          }
-        },
-        "xdm:optoutValue": {
-          "title": "Optout value true or false",
-          "type": "string",
-          "meta:enum": {
-            "true": "true",
-            "false": "false"
-          }
-        }
-      }
+		"type": "object",
+		"properties": {
+			"xdm:optoutType": {
+				"title": "Optout Type",
+				"type": "string",
+				"description": "Type of optout",
+				"meta:enum": {
+					"generalOptout": "generalOptout",
+					"ccpaSalesOptout": "ccpaSalesOptout"
+				}
+			},
+			"xdm:optoutValue": {
+				"title": "Optout value true or false",
+				"type": "string",
+				"meta:enum": {
+				"true": "true",
+				"false": "false"
+				}
+			}
+		}	
     }
   },
-  "allOf": [
-    {
-      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
-    },
-    {
-      "$ref": "#/definitions/profile-privacy"
-    },
-    {
-      "$ref": "#/definitions/optout"
-    }
-  ],
-  "meta:status": "experimental"
+	"allOf": [
+		{
+		  "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+		},
+		{
+		  "$ref": "#/definitions/profile-privacy"
+		}
+	],
+	"meta:status": "experimental"
 }
+  
+
  

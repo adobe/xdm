@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Consumer ExperienceEvent  Mixin",
   "type": "object",
-  "description": "Mixin that includes many of the standard mixins minus any solution specific fields",
+  "description": "This mixin groups a set of standard fields to describe the behavior of an individual. This mixin can be used to express behavior of a consumer related to digital content consumption (web, mobile app), online or off-line purchases. The use of this standard represention allows for a single representation for data producers and consumers of consumer behavior in Experience Platform",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
@@ -25,6 +25,7 @@
     "https://ns.adobe.com/xdm/context/experienceevent-web",
     "https://ns.adobe.com/xdm/context/experienceevent-commerce"
   ],
+  "definitions": {},
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/context/experienceevent-application"
@@ -57,5 +58,5 @@
       "$ref": "https://ns.adobe.com/xdm/context/experienceevent-commerce"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "deprecated"
 }

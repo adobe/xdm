@@ -53,7 +53,7 @@ The entities related to buying and selling activity.
 |----------|------|----------|------------|
 | [xdm:cartAbandons](#xdmcartabandons) | Measure | Optional | Commerce (this schema) |
 | [xdm:checkouts](#xdmcheckouts) | Measure | Optional | Commerce (this schema) |
-| [xdm:inStrorePurchase](#xdminstrorepurchase) | Measure | Optional | Commerce (this schema) |
+| [xdm:inStorePurchase](#xdminstorepurchase) | Measure | Optional | Commerce (this schema) |
 | [xdm:order](#xdmorder) | Order | Optional | Commerce (this schema) |
 | [xdm:productListAdds](#xdmproductlistadds) | Measure | Optional | Commerce (this schema) |
 | [xdm:productListOpens](#xdmproductlistopens) | Measure | Optional | Commerce (this schema) |
@@ -101,16 +101,16 @@ An action during a checkout process of a product list, there can be more than on
 
 
 
-## xdm:inStrorePurchase
+## xdm:inStorePurchase
 
 inStore Purchase is saved for Analytics use.
 
-`xdm:inStrorePurchase`
+`xdm:inStorePurchase`
 * is optional
 * type: Measure
 * defined in this schema
 
-### xdm:inStrorePurchase Type
+### xdm:inStorePurchase Type
 
 
 * [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`

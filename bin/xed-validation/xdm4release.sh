@@ -4,6 +4,5 @@
 (cp -r ../../schemas ./tempinput/; cp -r ../../extensions ./tempinput/)
 ./cleaninput.sh #cleanup non-platform central repo xdms
 (rm -rf ../../json; mkdir ../../json; mkdir ../../json/release)
-cp -r ./tempinput/schemas ../../json/release
-cp -r ./tempinput/extensions ../../json/release
+(cp -r ./tempinput/schemas ../../json/release; cp -r ./tempinput/extensions ../../json/release)
 (rm -rf tempinput; mkdir tempinput)

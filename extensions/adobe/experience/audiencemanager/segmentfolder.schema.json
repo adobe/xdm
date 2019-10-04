@@ -1,0 +1,58 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/audiencemanager/segmentfolder",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Adobe Audience Manager Segment Folder Class",
+  "type": "object",
+  "description": "Adobe Audience Manager Segment Folder Class to define folder structure for segment defintions. This will help in organizing segments in customer preferred hierarchy.",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "definitions": {
+    "segmentfolder": {
+      "properties": {
+        "https://ns.adobe.com/experience/audiencemanager/segmentFolderName": {
+          "title": "Segment folder name",
+          "type": "string",
+          "description": "Name of the segment folder"
+        },
+        "https://ns.adobe.com/experience/audiencemanager/segmentFolderStatus": {
+          "type": "string",
+          "title": "Segment folder status",
+          "description": "Current status of segment folder",
+          "meta:enum": {
+            "ACTIVE": "Active",
+            "INACTIVE": "Inactive",
+            "DELETED": "Deleted"
+          }
+        },
+        "https://ns.adobe.com/experience/audiencemanager/segmentParentFolderIdentity": {
+          "title": "Parent folder identity",
+          "$ref": "https://ns.adobe.com/xdm/context/identity",
+          "description": "Identity of the parent folder of current folder"
+        }
+      }
+    }
+  },
+  "required": [
+    "xdm:identityMap",
+    "https://ns.adobe.com/experience/audiencemanager/segmentFolderName"
+  ],
+  "allOf": [
+    {
+      "$ref": "#/definitions/segmentfolder"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/identitymap"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    }
+  ],
+  "meta:status": "experimental"
+}

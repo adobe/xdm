@@ -91,7 +91,7 @@ An XDM producer that wishes to extend an existing XDM schema has to adhere to th
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/xdm/example/third",
-  "title": "Second",
+  "title": "Third",
   "type": "object",
   "meta:extensible": false,
   "meta:extends": [

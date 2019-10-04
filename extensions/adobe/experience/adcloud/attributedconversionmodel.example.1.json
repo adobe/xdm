@@ -1,0 +1,43 @@
+{
+  "@id": 2419,
+  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+  "adcloud:advertiserId": "2419",
+  "adcloud:searchEngineId": 3,
+  "adcloud:campaignId": "100",
+  "adcloud:placementId": "10001",
+  "adcloud:adgroupId": "101",
+  "adcloud:adId": "103",
+  "adcloud:term": "Cars",
+  "adcloud:termId": "123456",
+  "adcloud:matchType": "Phrase",
+  "adcloud:propertyName": "orders",
+  "adcloud:modelName": "LAST EVENT",
+  "adcloud:clickThroughCount": {
+    "xdm:value": 20
+  },
+  "adcloud:clickThroughValue": {
+    "xdm.value": 100
+  },
+  "adcloud:viewThroughCount": {
+    "adcloud:totalCost": 42
+  },
+  "adcloud:viewThroughValue": {
+    "xdm:value": 2
+  },
+  "adcloud:clickPlusViewThroughCount": {
+    "xdm:value": 3
+  },
+  "adcloud:clickPlusViewThroughValue": {
+    "xdm:value": 4
+  },
+  "adcloud:viewPlusClickThroughCount": {
+    "xdm:value": 4
+  },
+  "adcloud:viewPlusClickThroughValue": {
+    "xdm:value": 4
+  },
+  "adcloud:device": {
+    "xdm:type": "mobile"
+  },
+  "adcloud:conversionType": "Feed"
+}

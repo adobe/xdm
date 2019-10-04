@@ -217,6 +217,8 @@ Type of device being tracked.
 | `television` | Television |
 | `settop` | Set-top Box |
 | `mediaplayer` | Media Player |
+| `computers` | Computers |
+| `tv screens` | TV Screens |
 
 
 

@@ -13,7 +13,7 @@
   "meta:abstract": true,
   "title": "Privacy",
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
-  "description": "OverallConsent Mixin",
+  "description": "Optout Mixin",
   "definitions": {
 	"profile-privacy": {
 		"type": "object",
@@ -41,7 +41,7 @@
 				"description": "Type of optout",
 				"meta:enum": {
 					"generalOptout": "generalOptout",
-					"ccpaSalesOptout": "ccpaSalesOptout"
+					"ccpaSalesSharingOptout": "ccpaSalesSharingOptout"
 				}
 			},
 			"xdm:optoutValue": {

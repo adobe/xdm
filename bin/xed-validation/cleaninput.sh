@@ -8,11 +8,11 @@ cp tempinput/extensions/adobe/experience/offer-management/offer-activity-detail.
 cp tempinput/extensions/adobe/experience/offer-management/proposition-response-detail.schema.json tempinput/extensions/adobe/experience/offer-management-tmp/
 rm -rf tempinput/extensions/adobe/experience/offer-management
 mv tempinput/extensions/adobe/experience/offer-management-tmp tempinput/extensions/adobe/experience/offer-management
+rm input/extensions/adobe/experience/analytics/schema-template.schema.json
 
 rm -rf tempinput/schemas/assets
 
 rm -rf tempinput/schemas/common/event
-rm -rf tempinput/schemas/common/descriptors
 rm -rf tempinput/schemas/common/page.*
 rm -rf tempinput/schemas/common/selfservice.*
 rm -rf tempinput/schemas/common/principal.*

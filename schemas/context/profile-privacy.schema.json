@@ -18,17 +18,13 @@
 	"profile-privacy": {
 		"type": "object",
 			"properties": {
-				"xdm:consent": {
-				"type": "object",
-				"properties": {
-					"xdm:optouts": {
-						"description": "Encapsulates different optout types",
-						"type": "array",
-						"items": {
-						"$ref": "#/definitions/optout"
-						}
+				"xdm:optouts": {
+					"title": "Opt Outs",
+					"description": "Encapsulates different optout types",
+					"type": "array",
+					"items": {
+					"$ref": "#/definitions/optout"
 					}
-				}
 				}
 			}
     },
@@ -51,10 +47,18 @@
 				"true": "true",
 				"false": "false"
 				}
+			},
+			"xdm:timestamp": {
+				"title": "Opt-Out Date Time.",
+				"description": "Date and Time, when the opt-out signal was recieved.",
+				"type": "string",
+				"format": "date-time"
+								
 			}
-		}	
-    }
-  },
+		   },
+			"required": ["optoutType", "optoutValue"]
+       }
+    },
 	"allOf": [
 		{
 		  "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
@@ -65,6 +69,6 @@
 	],
 	"meta:status": "experimental"
 }
-  
+ 
 
  

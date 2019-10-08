@@ -36,3 +36,4 @@ rm -rf tempinput/schemas/external/repo/*directory*.*
 rm -rf tempinput/schemas/external/repo/effectiveprivileges*.*
 
 find tempinput -name *.example.*.json -type f -delete
+

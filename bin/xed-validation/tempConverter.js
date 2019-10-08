@@ -111,6 +111,7 @@ class Converter extends EventEmitter {
   }
 
   save(directory, id, schema) {
+    console.log("save --"+id)
     var filename = path.join(directory, id);
     log.verbose("Saving %s...", filename);
     fse.mkdirsSync(path.dirname(filename));

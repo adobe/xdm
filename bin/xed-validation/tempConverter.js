@@ -30,6 +30,7 @@ class Converter extends EventEmitter {
 
   //@refBase The base of the $ref attribute.
   convert(refBase) {
+    console.log("refBase is--"+refBase)
     var rawSchema = JSON.parse(fs.readFileSync(refBase).toString());
 
     delete(rawSchema['meta:intendedToExtend']);

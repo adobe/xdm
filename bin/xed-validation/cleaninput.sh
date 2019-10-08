@@ -12,6 +12,7 @@ mv tempinput/extensions/adobe/experience/offer-management-tmp tempinput/extensio
 rm -rf tempinput/schemas/assets
 
 rm -rf tempinput/schemas/common/event
+rm -rf tempinput/schemas/common/descriptors
 rm -rf tempinput/schemas/common/page.*
 rm -rf tempinput/schemas/common/selfservice.*
 rm -rf tempinput/schemas/common/principal.*
@@ -35,4 +36,4 @@ rm -rf tempinput/schemas/external/repo/*directory*.*
 rm -rf tempinput/schemas/external/repo/effectiveprivileges*.*
 
 find tempinput -name *.example.*.json -type f -delete
-find input -name *.md -type f -delete
+

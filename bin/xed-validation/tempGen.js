@@ -29,7 +29,7 @@ if (program.input) {
 				var converter = new Converter();
 				if (program.outputJson) {
 					outputToJson(program.outputJson, converter);
-					converter.convert(file.toLowerCase());
+					converter.convert(file);
 				}
 			}
         });

@@ -37,7 +37,7 @@
 				"description": "Type of optout",
 				"meta:enum": {
 					"generalOptout": "generalOptout",
-					"ccpaSalesSharingOptout": "ccpaSalesSharingOptout"
+					"salesSharingOptout": "salesSharingOptout"
 				}
 			},
 			"xdm:optoutValue": {

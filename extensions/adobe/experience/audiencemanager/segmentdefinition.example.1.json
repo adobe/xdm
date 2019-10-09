@@ -1,0 +1,15 @@
+{
+  "xdm:segmentExpression": {
+    "xdm:expressionType": "AAM",
+    "xdm:mimeType": "text/plain",
+    "xdm:value": "c_contextdata.catname matchesregex \"\"^sony -.+\"\""
+  },
+  "xdm:segmentFolderId": "1123",
+  "xdm:segmentSubType": "SEGMENT",
+  "https://ns.adobe.com/experience/audiencemanager/segmentFolderIdentity": {
+    "xdm:id": "1123",
+    "xdm:namespace": {
+      "xdm:code": "AAMSegments"
+    }
+  }
+}

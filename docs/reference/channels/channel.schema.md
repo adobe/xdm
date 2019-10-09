@@ -16,7 +16,7 @@ There are multiple experience channels, each with different constraints on how c
 ## Schema Hierarchy
 
 * Experience Channel `https://ns.adobe.com/xdm/channels/channel`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
 ## Experience Channel Example
@@ -39,8 +39,11 @@ There are multiple experience channels, each with different constraints on how c
 | [@type](#type) | `string` | Optional | Experience Channel (this schema) |
 | [xdm:contentTypes](#xdmcontenttypes) | `string[]` | Optional | Experience Channel (this schema) |
 | [xdm:locationTypes](#xdmlocationtypes) | `string[]` | Optional | Experience Channel (this schema) |
+| [xdm:mediaAction](#xdmmediaaction) | `string` | Optional | Experience Channel (this schema) |
+| [xdm:mediaType](#xdmmediatype) | `string` | Optional | Experience Channel (this schema) |
 | [xdm:metricTypes](#xdmmetrictypes) | `string[]` | Optional | Experience Channel (this schema) |
 | [xdm:mode](#xdmmode) | `enum` | Optional | Experience Channel (this schema) |
+| [xdm:typeAtSource](#xdmtypeatsource) | `string` | Optional | Experience Channel (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -89,6 +92,18 @@ The `@type` property is used to provide a rough classification of channels with 
 | `https://ns.adobe.com/xdm/channel-types/messaging` | Instant Messaging |
 | `https://ns.adobe.com/xdm/channel-types/email` | E-Mail |
 | `https://ns.adobe.com/xdm/channel-types/offline` | Non-Digital experience channels |
+| `https://ns.adobe.com/xdm/channel-types/display` | Display |
+| `https://ns.adobe.com/xdm/channel-types/search` | Search |
+| `https://ns.adobe.com/xdm/channel-types/social_display` | Social Display |
+| `https://ns.adobe.com/xdm/channel-types/video` | Video |
+| `https://ns.adobe.com/xdm/channel-types/affiliate` | Affiliate |
+| `https://ns.adobe.com/xdm/channel-types/affinity` | Affinity |
+| `https://ns.adobe.com/xdm/channel-types/apps` | Applications |
+| `https://ns.adobe.com/xdm/channel-types/preload` | Preload |
+| `https://ns.adobe.com/xdm/channel-types/direct` | Direct |
+| `https://ns.adobe.com/xdm/channel-types/external` | External |
+| `https://ns.adobe.com/xdm/channel-types/mail` | Mail |
+| `https://ns.adobe.com/xdm/channel-types/instore` | Instore |
 
 
 
@@ -151,6 +166,67 @@ The `@type` of an XDM-defined location (virtual place) that this channel can con
 
 
 
+## xdm:mediaAction
+
+The `mediaAction` property is used to provide a type of experiance event media action .
+
+`xdm:mediaAction`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:mediaAction Type
+
+
+`string`
+
+
+
+### xdm:mediaAction Known Values
+| Value | Description |
+|-------|-------------|
+| `opens` | Opens |
+| `sends` | Sends |
+| `clicks` | Clicks |
+| `impressions` | Impressions |
+| `bounces` | Bounces |
+| `mirrorpages` | Mirrorpages |
+| `nonDeliverables` | NonDeliverables |
+| `notSent` | NotSent |
+| `offerOpens` | OfferOpens |
+| `unSubscriptions` | UnSubscriptions |
+| `userComplaints` | UserComplaints |
+| `subscriptions` | Subscriptions |
+
+
+
+
+## xdm:mediaType
+
+Describes whether the media type is paid,owned or earned.
+
+`xdm:mediaType`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:mediaType Type
+
+
+`string`
+
+
+
+### xdm:mediaType Known Values
+| Value | Description |
+|-------|-------------|
+| `paid` | Paid |
+| `owned` | Owned |
+| `earned` | Earned |
+
+
+
+
 ## xdm:metricTypes
 
 The metrics that can be collected in this channel.
@@ -197,6 +273,25 @@ The value of this property **must** be equal to one of the [known values below](
 | `push` | The publisher of an experience can initiate an experience by sending a message into the channel. Most `push` channels involve some form of subscription or opt-in. |
 | `pull` | The consumer can initiate an experience by requesting a location in the channel. Most `pull` channels give publishers some control how the experience is then delivered. |
 | `bidirectional` | Both `push` and `pull` interaction modes are supported by the channel. |
+
+
+
+
+## xdm:typeAtSource
+
+Customer defined custom channel name
+
+`xdm:typeAtSource`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:typeAtSource Type
+
+
+`string`
+
+
 
 
 

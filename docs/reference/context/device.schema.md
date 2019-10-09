@@ -13,7 +13,7 @@ An identified device that is an application or browser instance that is trackabl
 ## Schema Hierarchy
 
 * Device `https://ns.adobe.com/xdm/context/device`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
 ## Device Example
@@ -131,7 +131,7 @@ The unique model number designation assigned by the manufacturer for this Device
 ## xdm:screenHeight
 ### Screen Height
 
-The number of veritcal pixels of the device's active display in its default orientation.
+The number of vertical pixels of the device's active display in its default orientation.
 
 `xdm:screenHeight`
 * is optional
@@ -151,7 +151,7 @@ The number of veritcal pixels of the device's active display in its default orie
 ## xdm:screenOrientation
 ### Screen Orientation
 
-The current screen orientation ("portait" or "landscape")
+The current screen orientation ("portrait" or "landscape")
 
 `xdm:screenOrientation`
 * is optional
@@ -217,6 +217,8 @@ Type of device being tracked.
 | `television` | Television |
 | `settop` | Set-top Box |
 | `mediaplayer` | Media Player |
+| `computers` | Computers |
+| `tv screens` | TV Screens |
 
 
 

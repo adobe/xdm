@@ -14,7 +14,7 @@
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/profile"
     ],
-    "description": "Profile Segmentation.",
+    "description": "Profile segmentation.",
     "definitions": {
         "profile-segmentation": {
             "properties": {

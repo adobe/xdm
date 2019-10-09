@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Adobe Target Activity Event",
   "type": "object",
-  "description": "Represents executed Adobe Target Activity and Activity Events.",
+  "description": "Represents executed Adobe Target activity and activity events.",
   "definitions": {
     "activityevent": {
       "properties": {
@@ -42,13 +42,13 @@
             "excludeSameExperience": "Continue to display content from the same experience. Never count the visitor more than once.",
             "ban": "Ban user from campaign.",
             "excludeDefaultContent": "Display default content. Never count the visitor again.",
-            "experienceFrequencyCapping": "Cap experience by frequency"
+            "experienceFrequencyCapping": "Cap experience by frequency."
           }
         },
         "xdm:score": {
           "title": "Engagement Metric Score",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "The Capture Score engagement metric calculates an aggregated score based on the value assigned to pages visited on the site, from the point the visitor first sees the campaign's first display mbox."
+          "description": "The capture score engagement metric calculates an aggregated score based on the value assigned to pages visited on the site, from the point the visitor first sees the campaign's first display mbox."
         },
         "xdm:eventScope": {
           "$ref": "https://ns.adobe.com/experience/target/activity/activityevent/eventscope#/definitions/eventscope"

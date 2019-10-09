@@ -1,0 +1,41 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/common/descriptors/descriptorManyToMany",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Many to Many Relationship Descriptor",
+  "meta:extensible": false,
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/common/desciptors/schemadescriptor",
+    "https://ns.adobe.com/xdm/common/descriptors/relationshipdescriptor"
+  ],
+  "meta:abstract": false,
+  "type": "object",
+  "description": "Describes many to many relationship descriptor.",
+  "definitions": {
+    "descriptorManyToMany": {
+      "properties":{
+        "@type": {
+          "type": "string",
+          "const": "xdm:descriptorManyToMany"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/descriptors/schemadescriptor#/definitions/descriptor"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/descriptors/relationshipdescriptor#/definitions/relationshipdescriptor"
+    },
+    {
+      "$ref": "#/definitions/descriptorManyToMany"
+    }
+  ],
+  "meta:status": "stabilizing"
+}

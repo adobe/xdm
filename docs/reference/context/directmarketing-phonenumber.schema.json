@@ -9,7 +9,7 @@
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "Direct Marketing Phone Number",
     "type": "object",
-    "description": "Direct Marketing Phone Number.",
+    "description": "Direct marketing phone number.",
     "definitions": {
         "directmarketing-phonenumber": {
             "properties": {

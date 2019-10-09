@@ -20,6 +20,18 @@
           "type": "string",
           "description":
             "Tracking code that can be used to identify the marketing campaign the event is associated with."
+        },          
+        "xdm:campaignName": {
+          "title": "Campaign Name",
+          "type": "string",
+          "description":
+            "Name of the Campaign used to identify marketing campaign like 50%_DISCOUNT_USA, 50%_DISCOUNT_ASIA."
+        },
+          "xdm:campaignGroup": {
+          "title": "Campaign Group",
+          "type": "string",
+          "description":
+            "Name of the Campaign group where in multiple campaigns are grouped together like 50%_DISCOUNT"
         }
       }
     }

@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/experienceevent-search
 ```
 
-ExperienceEvent Details for Search.
+ExperienceEvent details for search.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -13,7 +13,7 @@ ExperienceEvent Details for Search.
 ## Schema Hierarchy
 
 * ExperienceEvent Details for Search `https://ns.adobe.com/xdm/context/experienceevent-search`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Search](search.schema.md) `https://ns.adobe.com/xdm/context/search`
 
 

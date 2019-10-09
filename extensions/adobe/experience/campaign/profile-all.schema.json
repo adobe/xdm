@@ -12,19 +12,19 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
-  "description": "Adobe Campaign Full Extension for Profile",
+  "description": "Adobe Campaign full extension for Profile",
   "definitions": {
     "profile": {
       "properties": {
         "xdm:journeyAI": {
           "title": "Journey AI Scores",
           "type": "object",
-          "description": "Journey AI scores for all channels",
+          "description": "Journey AI scores for all channels.",
           "properties": {
             "xdm:emailScore": {
               "title": "Journey AI scores for Email Channel",
               "$ref": "https://ns.adobe.com/experience/campaign/journeyaiscores",
-              "description": "Journey AI open, click and fatigue scores for email channel"
+              "description": "Journey AI open, click and fatigue scores for email channel."
             }
           }
         },

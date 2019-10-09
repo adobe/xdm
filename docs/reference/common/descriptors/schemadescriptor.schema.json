@@ -19,12 +19,12 @@
                     "title": "Identifier",
                     "type": "string",
                     "format": "uri-reference",
-                    "description": "The unique identifier for the schema descriptor. This property is required when the descriptor is defined outside of the applicable schema, but is optional when applied via 'meta:descriptors'"
+                    "description": "The unique identifier for the schema descriptor. This property is required when the descriptor is defined outside of the applicable schema, but is optional when applied via 'meta:descriptors'."
                 },
                 "@type": {
                     "title": "Type",
                     "type": "string",
-                    "description": "The type of descriptor this object represents",
+                    "description": "The type of descriptor this object represents.",
                     "meta:enum": {}
                 },
                 "xdm:sourceSchema": {
@@ -38,14 +38,20 @@
                     "type": "string",
                     "description": "When present, the property of the source schema to which this descriptor applies. This value is a JSON Pointer, applied to an instance of an object described by `xdm:sourceSchema`."
                 },
+                "xdm:sourceVersion": {
+                    "title": "Source Version",
+                    "type": "number",
+                    "description": "Major version being referenced."
+                },
                 "xdm:sourceItem": {
                     "title": "Source Item",
-                    "description": "When present, the selector used to match a specific item in the array pointed to by `sourceProperty`",
+                    "description": "When present, the selector used to match a specific item in the array pointed to by `sourceProperty`.",
                     "$ref": "https://ns.adobe.com/xdm/common/descriptors/itemselector#/definitions/selector"
                 }
             },
             "required": [
-                "xdm:sourceSchema"
+                "xdm:sourceSchema",
+                "xdm:sourceVersion"
             ]
         }
     },
@@ -57,13 +63,14 @@
             "$ref": "#/definitions/descriptor"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stabilizing",
     "examples": [
         {
             "@id": "https://example.com/descriptors/1",
             "@type": "xdm:descriptorPrimaryKey",
             "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile",
             "xdm:sourceProperty": "xdm:identities",
+            "xdm:sourceVersion": 1,
             "xdm:sourceItem": {
                 "xdm:type": "https://ns.adobe.com/experience/mcid"
             }

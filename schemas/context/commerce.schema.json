@@ -10,7 +10,7 @@
   "title": "Commerce",
   "type": "object",
   "meta:extensible": true,
-  "description": "The entites related to buying and selling activity.",
+  "description": "The entities related to buying and selling activity.",
   "definitions": {
     "commerce": {
       "properties": {
@@ -66,6 +66,11 @@
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
             "Product list is saved for future use. Example a product wish list."
+        },
+        "xdm:inStorePurchase": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+          "inStore Purchase is saved for Analytics use."
         }
       }
     }

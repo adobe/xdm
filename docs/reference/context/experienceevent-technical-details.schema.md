@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/experienceevent-technical-details
 ```
 
-Technical Details extension for ExperienceEvent.
+Technical details extension for ExperienceEvent.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -13,7 +13,7 @@ Technical Details extension for ExperienceEvent.
 ## Schema Hierarchy
 
 * ExperienceEvent Technical Details `https://ns.adobe.com/xdm/context/experienceevent-technical-details`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Data Source](../data/datasource.schema.md) `https://ns.adobe.com/xdm/data/datasource`
 
 

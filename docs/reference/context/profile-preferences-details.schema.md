@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/profile-preferences-details
 ```
 
-Preferences for end user profiles.
+Preferences for end-user profiles.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -13,7 +13,7 @@ Preferences for end user profiles.
 ## Schema Hierarchy
 
 * Profile Preferences Details `https://ns.adobe.com/xdm/context/profile-preferences-details`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [OptInOut](optinout.schema.md) `https://ns.adobe.com/xdm/context/optinout`
 
 
@@ -46,7 +46,7 @@ Preferences for end user profiles.
 ## xdm:emailFormat
 ### Email Format
 
-Email format preferred by the profile. This can be rich text/plain text
+Email format preferred by the profile. This can be rich text/plain text.
 
 `xdm:emailFormat`
 * is optional
@@ -135,7 +135,7 @@ All instances must conform to this regular expression
 ## xdm:profilePictureLink
 ### Profile Picture Link
 
-Link to profile's picture
+Link to profile's picture.
 
 `xdm:profilePictureLink`
 * is optional

@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/profile",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "XDM Profile",
+  "title": "XDM Individual Profile",
   "type": "object",
   "auditable": true,
   "meta:extensible": true,

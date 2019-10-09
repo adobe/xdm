@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/experience/implementations",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Adobe Experience Platform implementation details",
+  "title": "Adobe Experience Platform Implementation Details",
   "type": "object",
   "description": "Details the type and version of client implementations for data collection interacting with Adobe Experience Cloud services. Used for debugging and usage analysis.",
   "definitions": {
@@ -29,9 +29,9 @@
           "description": "Client details interacting with Adobe Experience Cloud ID Service."
         },
         "https://ns.adobe.com/experience/adcloud/implementation": {
-          "title": "Client Implementation for Adobe AdCloud",
+          "title": "Client Implementation for Adobe Advertising Cloud",
           "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
-          "description": "Client details interacting with Adobe AdCloud."
+          "description": "Client details interacting with Adobe Advertising Cloud."
         }
       }
     }

@@ -13,7 +13,7 @@ Beacon, a wireless device that communicates identity information to mobile appli
 ## Schema Hierarchy
 
 * Beacon `https://ns.adobe.com/xdm/context/beacon-interaction-details`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
 ## Beacon Example
@@ -77,7 +77,7 @@ The second sub organization identifier of an area multiple beacon operate in. Th
 
 
 ## xdm:proximity
-### Proximity to beacon
+### Proximity to Beacon
 
 Estimated distance from the beacon.
 
@@ -91,9 +91,9 @@ The value of this property **must** be equal to one of the [known values below](
 ### xdm:proximity Known Values
 | Value | Description |
 |-------|-------------|
-| `immediate` | Within a few centimeters |
-| `near` | Within a couple of meters |
-| `far` | Greater than 10 meters away |
+| `immediate` | Within a few centimeter. |
+| `near` | Within a couple of meters. |
+| `far` | Greater than 10 meters away. |
 | `unknown` | Not able to ascertain distance, signal likely very weak. |
 
 

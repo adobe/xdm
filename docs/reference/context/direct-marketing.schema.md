@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/direct-marketing
 ```
 
-The events and properties related to direct/outbound marketing such as email, direct mail, texts and in-app notifications.
+The events and properties related to direct/outbound marketing such as email, direct mail, texts, and in-app notifications.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -13,7 +13,7 @@ The events and properties related to direct/outbound marketing such as email, di
 ## Schema Hierarchy
 
 * Direct Marketing `https://ns.adobe.com/xdm/context/direct-marketing`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Measure](../data/measure.schema.md) `https://ns.adobe.com/xdm/data/measure`
 
 
@@ -171,7 +171,7 @@ Offer in a marketing message (email, SMS, Push Notifications etc) has been opene
 
 ## xdm:opens
 
-The direct marketing message (email, SMS, Push Notifications etc) has been opened/swyped/touched by the recipient.
+The direct marketing message (email, SMS, Push Notifications etc) has been opened/swiped/touched by the recipient.
 
 `xdm:opens`
 * is optional

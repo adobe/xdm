@@ -11,7 +11,7 @@
   "meta:extensible": true,
   "type": "object",
   "title": "Eligibility Rule",
-  "description": "An eligibility rule is a named reusable predicate used in the domain of audience segmentation and message personalization. The Profile Query Language forms the foundation of those predicates. The predicate operates not only over profile fields but also over contextual data objects provided at the time of decisioning.",
+  "description": "An eligibility rule is a named reusable predicate used in the domain of audience segmentation and message personalization. The profile query language forms the foundation of those predicates. The predicate operates not only over profile fields but also over contextual data objects provided at the time of decisioning.",
   "definitions": {
     "eligibility-rule": {
       "properties": {
@@ -24,17 +24,17 @@
         "xdm:name": {
           "type": "string",
           "title": "Name",
-          "description": "Eligibility rule name that is used to locate this object in a search operation"
+          "description": "Eligibility rule name that is used to locate this object in a search operation."
         },
         "xdm:valueAsText": {
           "type": "string",
-          "title": "Expression over XDM instances in an alternate query syntax",
+          "title": "Expression over XDM Instances in an Alternate Query Syntax",
           "description": "Contains the expression over a collection of context XDM instances as a serialized string."
         },
         "xdm:value": {
           "$ref": "https://ns.adobe.com/experience/offer-management/filter-expression",
-          "title": "Expression over XDM instances",
-          "description": "Contains the expression tree over a collection of context XDM instances. When the expression evaluates to true the offer refering to this eligibility rule will be included in the decisioning otherwise included. Central context instances include the profile and the experience events associtaed with the profile."
+          "title": "Expression over XDM Instances",
+          "description": "Contains the expression tree over a collection of context XDM instances. When the expression evaluates to true the offer referring to this eligibility rule will be included in the decisioning otherwise included. Central context instances include the profile and the experience events associated with the profile."
         },
         "xdm:modelUsage": {
           "title": "Used Properties",

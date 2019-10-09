@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/experienceevent-advertising
 ```
 
-ExperienceEvent Details for Advertising.
+ExperienceEvent details for advertising.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -13,7 +13,7 @@ ExperienceEvent Details for Advertising.
 ## Schema Hierarchy
 
 * ExperienceEvent Details for Advertising `https://ns.adobe.com/xdm/context/experienceevent-advertising`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Advertising](advertising.schema.md) `https://ns.adobe.com/xdm/context/advertising`
 
 
@@ -57,7 +57,7 @@ ExperienceEvent Details for Advertising.
 ## xdm:advertising
 ### Advertising
 
-Information related to advertising activity in ExperienceEvents
+Information related to advertising activity in ExperienceEvents.
 
 `xdm:advertising`
 * is optional

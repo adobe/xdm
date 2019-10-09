@@ -1,0 +1,88 @@
+{
+		"graphId": "96698daa-d44a-4960-bb7e-588bfc928ea3" ,
+		"directed":  false,
+		"type": "Person Graph",
+		"graphCreateTimestamp": "2019-03-01T15:52:25+00:00",
+		"firstCreatedTimestamp": "2019-03-01T15:52:25+00:00",
+		"lastModifiedTimestamp": "2019-03-10T15:52:25+00:00",
+		"nodes" : {
+		"nodes" :
+			[
+			{
+			"nodeId": "aam_1|0",
+			"nodeType": "Identity",							
+			"ordinalId": 1,
+			"firstSeenTimestamp": "2019-03-01T15:52:25+00:00",
+			"lastSeenTimestamp": "2019-03-01T15:52:25+00:00",
+			"firstCreateTimestamp": "2019-03-01T15:52:25+00:00",
+			"lastModifiedTimestamp": "2019-03-01T15:52:25+00:00"
+			},
+			{
+			"nodeId": "dpuuid_1|10",
+			"nodeType": "Identity",							
+			"ordinalId": 2,
+			"firstSeenTimestamp": "2019-03-01T15:52:25+00:00",
+			"lastSeenTimestamp": "2019-03-01T15:52:25+00:00",
+			"firstCreateTimestamp": "2019-03-01T15:52:25+00:00",
+			"lastModifiedTimestamp": "2019-03-01T15:52:25+00:00"					
+			},
+			{
+			"nodeId": "aam_2|0",
+			"nodeType": "Identity",							
+			"ordinalId": 3,
+			"firstSeenTimestamp": "2019-03-01T15:52:25+00:00",
+			"lastSeenTimestamp": "2019-03-01T15:52:25+00:00",
+			"firstCreateTimestamp": "2019-03-01T15:52:25+00:00",
+			"lastModifiedTimestamp": "2019-03-01T15:52:25+00:00"					
+			},
+			{
+			"nodeId": "dpuuid_2|10",
+			"nodeType": "Identity",							
+			"ordinalId": 4,
+			"firstSeenTimestamp": "2019-03-01T15:52:25+00:00",
+			"lastSeenTimestamp": "2019-03-01T15:52:25+00:00",
+			"firstCreateTimestamp": "2019-03-01T15:52:25+00:00",
+			"lastModifiedTimestamp": "2019-03-01T15:52:25+00:00"					
+			}
+			]
+		},		
+		"edges" : {
+			"edges":
+			[
+			{
+			"edgeID" : "E1",
+			"relation" : "Relation 1",
+			"sourceNodeOrdinalId": 1,
+			"targetNodeOrdinalId": 2,
+			"directed": false
+			},
+			{
+			"edgeID" : "E2",
+			"relation" : "Relation 2",
+			"sourceNodeOrdinalId": 1,
+			"targetNodeOrdinalId": 2,
+			"directed": false
+			},
+			{
+			"edgeID" : "E3",
+			"relation" : "Relation 3",
+			"sourceNodeOrdinalId": 1,
+			"targetNodeOrdinalId": 2,
+			"directed": false
+			},
+			{
+			"edgeID" : "E4",
+			"relation" : "Relation 4",
+			"sourceNodeOrdinalId": 3,
+			"targetNodeOrdinalId": 2,
+			"directed": false
+			},
+			{
+			"sourceNodeOrdinalId": 3,
+			"targetNodeOrdinalId": 4,
+			"directed": false
+			}
+			]
+		}
+}
+	

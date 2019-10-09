@@ -1,0 +1,94 @@
+{
+    "meta:license": [
+      "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+      "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+      "you may not use this file except in compliance with the License. You may obtain a copy",
+      "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/context/graph",
+	"$schema": "http://json-schema.org/draft-06/schema",
+	"title": "XDM Graph Schema",
+	"type": "object",
+	"description": "XDM Graph Schema to host Graph Data.",
+	"auditable": true,
+	"meta:extensible": true,
+	"meta:abstract": true,
+	"meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+    "definitions": {
+        "graph": {
+            "properties": {
+				"xdm:graphId": {
+					"title": "Graph Id",
+					"description": "The unique identifier of the identity associated with this Graph.",
+					"type": "string"
+				},
+                "xdm:label": {
+					"title" : "Graph Label",
+					"description" : "Graph Label",
+                    "type": "string"
+                },
+                "xdm:directed": {
+					"title" : "Directed Graph Indicator",
+					"description" : "Directed Graph Indicator",
+                    "type": "boolean",
+                    "default": true
+                },
+                "xdm:type": {
+					"title" : "Graph Type",
+					"description" : "Graph Type. Examples - Person Graph, Third Party Graph, Private Graph  etc.",
+                    "type": "string"
+                },
+				"xdm:firstCreatedTimestamp": {
+					"title" : "Time and Date this graph was created",
+					"description" : "Time and Date this graph was created",
+					"type": "string",
+					"format": "date-time"
+				},
+				"xdm:lastModifiedTimestamp": {
+					"title" : "Time and Date this graph was created",
+					"description" : "Time and Date this graph was created",
+					"type": "string",
+					"format": "date-time"
+				},
+				"xdm:edges" : {
+					"type": "object",
+					"properties": {
+						"edges": {
+							"title": "Edges Associated with this graph",
+							"description": "Edges Associated with this graph",
+							"type": "array",
+							"items": {
+								"$ref": "https://ns.adobe.com/xdm/context/graph-edge"
+							}
+						}
+					}
+				},
+				"xdm:nodes" : {
+					"type": "object",
+					"properties": {
+						"nodes": {
+							"title": "Nodes Associated with this edge",
+							"description": "Nodes Associated with this edge",
+							"type": "array",
+							"items": {
+								"$ref": "https://ns.adobe.com/xdm/context/graph-node"
+							}
+						}
+					}
+				}
+            }
+        }
+    },
+	"allOf" : [
+		{
+		"$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+		},
+		{
+			"$ref": "#/definitions/graph"
+		},
+		{
+			"$ref": "https://ns.adobe.com/xdm/common/auditable"
+		}
+	],
+  "meta:status": "experimental"
+}

@@ -1,0 +1,127 @@
+{
+    "meta:license": [
+      "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+      "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+      "you may not use this file except in compliance with the License. You may obtain a copy",
+      "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/context/graph-edge",
+	"$schema": "http://json-schema.org/draft-06/schema",
+	"title": "XDM Graph Edge",
+	"type": "object",
+	"description": "XDM Graph Schema for Edge/Relationship between two nodes/vertices.",
+	"auditable": true,
+	"meta:extensible": true,
+	"meta:abstract": true,
+	"meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+    "definitions": {
+		"graph-edge": {
+			"properties": {
+				"xdm:edgeId": {
+					"title": "Edge Id",
+					"description": "The unique identifier of the identity associated with this Graph Edge.",
+					"type": "string"
+				},
+				"xdm:sourceNodeOrdinalId": {
+					"title" : "Source Node Ordinal Id",
+					"description" : "Source Node Ordinal Id",
+					"type": "integer"
+				},
+				"xdm:targetNodeOrdinalId": {
+					"title" : "Target Node Ordinal Id",
+					"description" : "Target Node Ordinal Id",
+					"type": "integer"
+				},
+				"xdm:relation": {
+					"title" : "Relation Description",
+					"description" : "Relation Description",
+					"type": "string"
+				},
+				"xdm:label": {
+					"type": "string",
+					"description" : "Additional Description",
+					"type": "string"
+				},
+				"xdm:realm": {
+					"type" : "array",
+					"items" : {
+						"type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+							"xdm:realmId" : {
+								"title" : "Realm Id.",
+								"description" : "Identifier of the realm which provided the relationship information.",
+								"type" : "integer"
+							},
+							"xdm:firstSeenTimestamp" : {
+								"title" : "Time and data the relation was first observed",
+								"description" : "Time and data the relation was first observed",
+								"type" : "string",
+								"format" : "date-time"
+							},
+							"xdm:lastSeenTimestamp" : {
+								"title" : "Time and data the relation was last observed",
+								"description" : "Time and data the relation was last observed",
+								"type" : "string",
+								"format" : "date-time"
+							},
+							"xdm:trusted": {
+								"title" : "Indicator of whether the data source is trusted or not",
+								"description" : "Indicator of whether the data source is trusted or not",
+								"type": "boolean",
+								"default": true
+							},
+							"xdm:directed": {
+								"title" : "Directed or birectional",
+								"description" : "Directed or birectional",
+								"type": "boolean",
+								"default": false
+							},
+							"xdm:relationType": {
+								"title" : "The method that established the raltionship - Online Deterministic/probabilistic or offline",
+								"description" : "The method that established the raltionship - Online Deterministic/probabilistic or offline",
+								"type": "string"
+							},
+							"xdm:frequency": {
+								"title" : "Frequency of the observed relationship",
+								"description" : "Frequency of the observed relationship",
+								"type": "integer"
+							},
+							"xdm:score": {
+								"title" : "Imputed score of relationship",
+								"description" : "Imputed score of relationship",
+								"type": "number"
+							},
+							"xdm:summedRecency": {
+								"title" : "Recency score of relationship",
+								"description" : "Recency score of relationship",
+								"type": "integer"
+							},
+							"xdm:lastCalculatedTimestamp": {
+								"title" : "Time and Date the relationship score was last calculated",
+								"description" : "Time and Date the relationship score was last calculated",
+								"type": "string",
+								"format" : "date-time"
+							}
+						}
+					
+					}
+					
+				}
+			},
+			"required" : ["sourceNodeOrdinalId", "targetNodeOrdinalId"]
+		}
+    },
+	"allOf" : [
+		{
+		"$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+		},
+		{
+			"$ref": "#/definitions/graph-edge"
+		},
+		{
+			"$ref": "https://ns.adobe.com/xdm/common/auditable"
+		}
+	],
+  "meta:status": "experimental"
+}

@@ -1,0 +1,87 @@
+{
+    "meta:license": [
+      "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+      "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+      "you may not use this file except in compliance with the License. You may obtain a copy",
+      "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/context/graph-node",
+	"$schema": "http://json-schema.org/draft-06/schema",
+	"title": "XDM Graph Node/Vertex Schema",
+	"type": "object",
+	"description": "XDM Schema for a graph Node/Vertex.",
+	"auditable": true,
+	"meta:extensible": true,
+	"meta:abstract": true,
+	"meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+    "definitions": {
+		"graph-node": {
+			"properties": {
+				"xdm:nodeId": {
+					"title": "Node Id",
+					"description": "The unique identifier of the identity associated with this Graph Node.",
+					"type": "string"
+				},
+				"xdm:nodeType": {
+					"title" : "Node/Entity Type",
+					"description" : "Node/Entity Type",
+					"type": "string"
+				},							
+				"xdm:label": {
+					"title" : "Node Label",
+					"description" : "Node Label",
+					"type": "string"
+				},
+				"xdm:ordinalId": {
+					"title" : "Node Ordinal Id",
+					"description" : "Node Ordinbal Id",
+					"type": "integer"
+				},
+				"xdm:dataSource": {
+					"title" : "Data Source for the node",
+					"description" : "Data Source for the node",
+					"type": "string"
+				},							
+				"xdm:firstSeenTimestamp": {
+					"title" : "Time and Date this node was first seen",
+					"description" : "Time and Date this node was first seen",
+					"type": "string",
+					"format": "date-time"
+				},
+				"xdm:lastSeenTimestamp": {
+					"title" : "Time and Date this node was last seen",
+					"description" : "Time and Date this node was last seen",
+					"type": "string",
+					"format": "date-time"
+				},
+				"xdm:firstCreateTimestamp": {
+					"title" : "Time and Date this node was first created",
+					"description" : "Time and Date this node was first created",
+					"type": "string",
+					"format": "date-time"
+				},
+				"xdm:lastModifiedTimestamp": {
+					"title" : "Time and Date this node was last modified",
+					"description" : "Time and Date this node was last modified",
+					"type": "string",
+					"format": "date-time"
+				}
+			},
+			"required": [
+					"nodeId"
+			]
+		}
+    },
+	"allOf" : [
+		{
+		"$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+		},
+		{
+			"$ref": "#/definitions/graph-node"
+		},
+		{
+			"$ref": "https://ns.adobe.com/xdm/common/auditable"
+		}
+	],
+  "meta:status": "experimental"
+}

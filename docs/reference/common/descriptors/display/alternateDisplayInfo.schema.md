@@ -24,6 +24,19 @@ Allows to modify the "title" and "description" values of the core library schema
   "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/environment",
   "xdm:sourceVersion": 1,
   "xdm:sourceProperty": "/browserDetails",
+  "xdm:description": {
+    "en_us": "friendly description for browser details",
+    "fr_ca": "description conviviale pour les détails du navigateur"
+  }
+}
+```
+
+```json
+{
+  "@type": "xdm:alternateDisplayInfo",
+  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/environment",
+  "xdm:sourceVersion": 1,
+  "xdm:sourceProperty": "/browserDetails",
   "xdm:title": {
     "en_us": "friendly title for browser details"
   },
@@ -42,19 +55,6 @@ Allows to modify the "title" and "description" values of the core library schema
   "xdm:title": {
     "en_us": "friendly title for browser details",
     "fr_ca": "titre convivial pour les détails du navigateur"
-  }
-}
-```
-
-```json
-{
-  "@type": "xdm:alternateDisplayInfo",
-  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/environment",
-  "xdm:sourceVersion": 1,
-  "xdm:sourceProperty": "/browserDetails",
-  "xdm:description": {
-    "en_us": "friendly description for browser details",
-    "fr_ca": "description conviviale pour les détails du navigateur"
   }
 }
 ```

@@ -1,15 +1,9 @@
 {
-	"profile-optinout": {
-		"type": "object",
-			"properties": {
-				"xdm:privacyOptouts": 
-				[
-				{
-					"xdm:optoutType": "salesSharingOptout",
-		"xdm:optoutValue": true,
+	"xdm:privacyOptouts": [
+		{
+		"xdm:optoutType": "generalOptout",
+		"xdm:optoutValue": "true",
 		"xdm:timestamp": "2019-01-01T15:52:25+00:00"
-				}
-			]
-			}
-    }
+		}
+	]
 }

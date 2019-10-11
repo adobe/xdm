@@ -65,7 +65,7 @@
                 },
                 "xdm:mediaType": {
                     "type": "string",
-                    "description": "Describes wether the media type is paid,owned or earned.",
+                    "description": "Describes whether the media type is paid,owned or earned.",
                     "meta:enum": {
                         "paid": "Paid",
                         "owned": "Owned",

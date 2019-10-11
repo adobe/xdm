@@ -68,7 +68,11 @@
 		},
 		{
 		  "$ref": "#/definitions/profile-optinout"
+		},
+		{
+		  "$ref": "#/definitions/optout"
 		}
+		
 	],
 	"meta:status": "experimental"
 }

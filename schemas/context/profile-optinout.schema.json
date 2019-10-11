@@ -39,11 +39,11 @@
 				"type": "string",
 				"description": "Type of optout",
 				"enum": [
-                        "generalOptout",
-                        "salesSharingOptout"
-                ],
+				  "generalOptout",
+				  "salesSharingOptout"
+				],
 				"meta:enum": {
-					"generalOptout": "General Opt-Out",
+				  "generalOptout": "General Opt-Out",
 					"salesSharingOptout": "Sales Sharing Opt-Out"
 				}
 			},

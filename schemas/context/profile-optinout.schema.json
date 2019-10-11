@@ -59,7 +59,7 @@
 								
 			}
 		   },
-			"required": ["optoutType", "optoutValue"]
+			"required": ["xdm:optoutType", "xdm:optoutValue"]
        }
     },
 	"allOf": [

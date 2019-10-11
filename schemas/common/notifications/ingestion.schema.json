@@ -41,21 +41,16 @@
                   "failure"
                ]
             },
-            "batchid":{
-               "title":"BatchID",
+            "xdm:id":{
+               "title":"ID",
                "type":"string",
                "description":"ADLS Unique identifier of the batch"
             },
-            "xdm:externalId":{
-               "title":"External Identifier",
+            "xdm:customerBatchId":{
+               "title":"Customer Batch Identifier",
                "type":"string",
                "pattern":"^[0-9A-Za-z\\.\\-\\_/@]+$",
                "description":"An externally generated identifier for this ingestion."
-            },
-            "sourceBatchid":{
-               "title":"Source BatchID",
-               "type":"string",
-               "description":"Unique identifier of the batch for UPS and UIS , this will be ADLS Batch id"
             },
             "datasetId":{
                "title":"Dataset ID",
@@ -84,12 +79,6 @@
                "type":"integer",
                "description":"The Unix timestamp (in milliseconds) when the Batch processing action was completed. Completed - Started should yield the total processing time.",
                "maximum":14500000000000
-            },
-            "xdm:createdUser":{
-               "type":"string",
-               "default":"unknown",
-               "description":"The ID of the user who created this object.",
-               "systemAttribute":true
             },
             "xdm:errors":{
                "type":"array",

@@ -1,18 +1,14 @@
 {
-	"profile-optinout":
-	{
-		"xdm:privacyOptouts": [
-			{
-			"xdm:optoutType": "salesSharingOptout",
-			"xdm:optoutValue": true,
-			"xdm:timestamp": "2019-01-01T15:52:25+00:00"
-			},
-			{
-			"xdm:optoutType": "generalOptout",
-			"xdm:optoutValue": true,
-			"xdm:timestamp": "2019-01-01T15:52:25+00:00"
-			}
-		]
-	}
-
+	"xdm:privacyOptouts": [
+		{
+		"xdm:optoutType": "salesSharingOptout",
+		"xdm:optoutValue": true,
+		"xdm:timestamp": "2019-01-01T15:52:25+00:00"
+		},
+		{
+		"xdm:optoutType": "generalOptout",
+		"xdm:optoutValue": true,
+		"xdm:timestamp": "2019-01-01T15:52:25+00:00"
+		}
+	]
 }

@@ -11,7 +11,6 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "title": "Profile Opt Out",
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "description": "Profile Optout Mixin",
   "definitions": {
@@ -28,7 +27,7 @@
 				},
 				"xdm:channelOptouts": {
 					"title": "Channel Opt Outs",
-					"$ref": "https://ns.adobe.com/xdm/context/optintout.schema.json"
+					"$ref": "https://ns.adobe.com/xdm/context/optinout"
 				}
 			}
     },

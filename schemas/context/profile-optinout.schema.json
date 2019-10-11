@@ -39,9 +39,13 @@
 				"title": "Optout Type",
 				"type": "string",
 				"description": "Type of optout",
+				"enum": [
+                        "generalOptout",
+                        "salesSharingOptout"
+                ],
 				"meta:enum": {
-					"generalOptout": "generalOptout",
-					"salesSharingOptout": "salesSharingOptout"
+					"generalOptout": "General Opt-Out",
+					"salesSharingOptout": "Sales Sharing Opt-Out"
 				}
 			},
 			"xdm:optoutValue": {

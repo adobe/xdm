@@ -15,20 +15,21 @@
   "description": "Profile Optout Mixin",
   "definitions": {
 	"profile-optinout": {
+		"type": "object",
 			"properties": {
-			"xdm:privacyOptouts": {
-				"title": "Privacy Opt Outs",
-				"description": "Encapsulates different optout types for Data Privacy",
-				"type": "array",
-				"items": {
-				"$ref": "#/definitions/optout"
+				"xdm:privacyOptouts": {
+					"title": "Privacy Opt Outs",
+					"description": "Encapsulates different optout types for Data Privacy",
+					"type": "array",
+					"items": {
+					"$ref": "#/definitions/optout"
+					}
+				},
+				"xdm:channelOptouts": {
+					"title": "Channel Opt Outs",
+					"$ref": "https://ns.adobe.com/xdm/context/optinout"
 				}
-			},
-			"xdm:channelOptouts": {
-				"title": "Channel Opt Outs",
-				"$ref": "https://ns.adobe.com/xdm/context/optinout"
 			}
-		}
     },
     "optout": {
 		"type": "object",

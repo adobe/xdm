@@ -1,0 +1,35 @@
+{
+"xdm:sourceNodeOrdinalId": 3,
+"xdm:targetNodeOrdinalId": 2,
+"xdm:realm": [
+	{
+	"xdm:realmId" : 100,
+	"xdm:firstSeenTimestamp" : "2019-02-01T15:52:25+00:00",
+	"xdm:lastSeenTimestamp" : "2019-02-01T15:52:25+00:00",
+	"xdm:trusted": true,
+	"xdm:directed": false,
+	"xdm:relationType": "Online Determinsitic",
+	"xdm:frequency": 1,
+	"xdm:lastCalculatedTimestamp": "2019-02-01T15:52:25+00:00"
+	},
+	{
+	"xdm:realmId" : 100,
+	"xdm:firstSeenTimestamp" : "2019-03-10T15:52:25+00:00",
+	"xdm:lastSeenTimestamp" : "2019-03-10T15:52:25+00:00",
+	"xdm:trusted": true,
+	"xdm:directed": false,
+	"xdm:relationType": "Offline Determinsitic",
+	"xdm:score": 1.0
+	},
+	{
+	"xdm:realmId" : 5,
+	"xdm:firstSeenTimestamp" : "2019-03-01T15:52:25+00:00",
+	"xdm:lastSeenTimestamp" : "2019-03-01T15:52:25+00:00",
+	"xdm:trusted": true,
+	"xdm:directed": false,
+	"xdm:relationType": "Online Determinsitic",
+	"xdm:frequency": 1,
+	"xdm:lastCalculatedTimestamp": "2019-03-01T15:52:25+00:00"
+	}
+]
+}

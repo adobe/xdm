@@ -10,7 +10,6 @@
 	"title": "XDM Graph Node/Vertex Schema",
 	"type": "object",
 	"description": "XDM Schema for a graph Node/Vertex.",
-	"auditable": true,
 	"meta:extensible": true,
 	"meta:abstract": true,
 	"meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
@@ -78,9 +77,6 @@
 		},
 		{
 			"$ref": "#/definitions/graph-node"
-		},
-		{
-			"$ref": "https://ns.adobe.com/xdm/common/auditable"
 		}
 	],
   "meta:status": "experimental"

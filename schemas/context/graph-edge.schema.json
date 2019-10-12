@@ -109,7 +109,7 @@
 					
 				}
 			},
-			"required" : ["sourceNodeOrdinalId", "targetNodeOrdinalId"]
+			"required" : ["xdm:sourceNodeOrdinalId", "xdm:targetNodeOrdinalId"]
 		}
     },
 	"allOf" : [

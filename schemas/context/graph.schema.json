@@ -33,7 +33,7 @@
                     "type": "boolean",
                     "default": true
                 },
-                "xdm:type": {
+                "xdm:graphType": {
 					"title" : "Graph Type",
 					"description" : "Graph Type. Examples - Person Graph, Third Party Graph, Private Graph  etc.",
                     "type": "string"

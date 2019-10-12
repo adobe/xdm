@@ -68,7 +68,7 @@
 				}
 			},
 			"required": [
-					"nodeId"
+					"xdm:nodeId"
 			]
 		}
     },

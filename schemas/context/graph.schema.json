@@ -6,7 +6,7 @@
       "of the License at https://creativecommons.org/licenses/by/4.0/"
     ],
     "$id": "https://ns.adobe.com/xdm/context/graph",
-	"$schema": "http://json-schema.org/draft-06/schema",
+	"$schema": "http://json-schema.org/draft-06/schema#",
 	"title": "XDM Graph Schema",
 	"type": "object",
 	"description": "XDM Graph Schema to host Graph Data.",

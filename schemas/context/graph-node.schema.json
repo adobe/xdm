@@ -6,7 +6,7 @@
       "of the License at https://creativecommons.org/licenses/by/4.0/"
     ],
     "$id": "https://ns.adobe.com/xdm/context/graph-node",
-	"$schema": "http://json-schema.org/draft-06/schema",
+	"$schema": "http://json-schema.org/draft-06/schema#",
 	"title": "XDM Graph Node/Vertex Schema",
 	"type": "object",
 	"description": "XDM Schema for a graph Node/Vertex.",

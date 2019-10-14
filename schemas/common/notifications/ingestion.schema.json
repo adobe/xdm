@@ -7,7 +7,7 @@
    ],
    "$id":"https://ns.adobe.com/xdm/common/notifications/ingestion",
    "$schema":"http://json-schema.org/draft-06/schema#",
-   "title":"Customer Notifications Event",
+   "title":"Customer Data Ingestion Notifications Event",
    "type":"object",
    "meta:extensible":false,
    "meta:abstract":false,
@@ -21,10 +21,10 @@
          "properties":{
             "xdm:eventtype":{
                "title":"Event Type",
-               "description":"Event Type of customer notification",
+               "description":"Event Type of customer data ingestion notification",
                "enum":[
-                  "dl_load_success",
-                  "dl_load_failure",
+                  "ing_load_success",
+                  "ing_load_failure",
                   "ps_load_success",
                   "ps_load_failure",
                   "ig_load_success",
@@ -32,7 +32,7 @@
                ]
             },
             "xdm:status":{
-               "title":"Status",
+               "title":"Ingestion Status",
                "type":"string",
                "description":"The current status of this ingestion process",
                "enum":[
@@ -40,12 +40,12 @@
                   "failure"
                ]
             },
-            "xdm:id":{
+            "xdm:ingestionId":{
                "title":"ID",
                "type":"string",
-               "description":"ADLS Unique identifier of the batch"
+               "description":"Unique identifier of customer data ingestion"
             },
-            "xdm:customerBatchId":{
+            "xdm:customerIngestionId":{
                "title":"Customer Batch Identifier",
                "type":"string",
                "pattern":"^[0-9A-Za-z\\.\\-\\_/@]+$",
@@ -54,7 +54,7 @@
             "datasetId":{
                "title":"Dataset ID",
                "type":"string",
-               "description":"Dataset ID of the batch."
+               "description":"Dataset ID of data ingestion."
             },
             "xdm:inputFormat":{
                "title":"Input File Format",

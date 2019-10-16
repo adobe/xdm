@@ -1,9 +1,9 @@
 {
-	"xdm:optOutConsent": {
-		"xdm:privacyOptouts": [
+	"xdm:optOutConsentLevel": {
+		"xdm:privacyOptOuts": [
 			{
-			"xdm:optoutType": "generalOptout",
-			"xdm:optoutValue": "out",
+			"xdm:optOutType": "general_opt_out",
+			"xdm:optOutValue": "out",
 			"xdm:timestamp": "2019-01-01T15:52:25+00:00"
 			}
 		]

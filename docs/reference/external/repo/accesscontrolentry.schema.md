@@ -15,6 +15,16 @@ Schema for the access control entry for the access control List of a resource.
 
 ```json
 {
+  "repo:principal": "authenticated",
+  "repo:privileges": [
+    "read"
+  ],
+  "repo:modifier": "grant"
+}
+```
+
+```json
+{
   "repo:principal": {
     "xdm:provider": {
       "@id": "https://ims-na1.adobelogin.com/"
@@ -28,16 +38,6 @@ Schema for the access control entry for the access control List of a resource.
   ],
   "repo:modifier": "grant",
   "repo:inheritance": "deep"
-}
-```
-
-```json
-{
-  "repo:principal": "authenticated",
-  "repo:privileges": [
-    "read"
-  ],
-  "repo:modifier": "grant"
 }
 ```
 

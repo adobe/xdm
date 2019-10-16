@@ -203,7 +203,7 @@ The `mediaAction` property is used to provide a type of experiance event media a
 
 ## xdm:mediaType
 
-Describes wether the media type is paid,owned or earned.
+Describes whether the media type is paid,owned or earned.
 
 `xdm:mediaType`
 * is optional

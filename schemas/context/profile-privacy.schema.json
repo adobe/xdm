@@ -1,0 +1,85 @@
+{
+  "meta:license": [
+		"Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+		"This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+		"you may not use this file except in compliance with the License. You may obtain a copy",
+		"of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/profile-privacy",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Profile Opt In/Out Signals",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "title": "Profile Opt Out",
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "description": "Profile Optout Mixin",
+  "definitions": {
+	"profile-privacy": {
+		"xdm:optOutConsent": {
+			"type": "object",
+			"title": "consent for optout",
+			"description": "Level for extensibility of consents for different opt out types",
+			"properties": {
+				"xdm:privacyOptouts": {
+					"title": "Privacy Opt Outs",
+					"description": "Encapsulates different optout types for Data Privacy",
+					"type": "array",
+					"items": {
+					"$ref": "#/definitions/optout"
+					}
+				}
+			}
+		}    
+	},
+    "optout": {
+		"type": "object",
+		"properties": {
+			"xdm:optoutType": {
+				"title": "Optout Type",
+				"type": "string",
+				"description": "Type of optout",
+				"enum": [
+                        "generalOptout",
+                        "salesSharingOptout"
+                ],
+				"meta:enum": {
+					"generalOptout": "General Opt-Out",
+					"salesSharingOptout": "Sales Sharing Opt-Out"
+				}
+			},
+			"xdm:optoutValue": {
+				"title": "Optout value",
+				"type": "string",
+				"enum": [
+					"not_provided",
+                    "true",
+					"false"
+                ],
+				"meta:enum": {
+					"not_provided": "No Opt Out Signal",
+					"true": "Opted Out",
+					"false": "Not opted out"
+				}
+			},
+			"xdm:timestamp": {
+				"title": "Opt-Out Date Time.",
+				"description": "Date and Time, when the opt-out signal was recieved.",
+				"type": "string",
+				"format": "date-time"
+								
+			}
+		   },
+			"required": ["xdm:optoutType", "xdm:optoutValue"]
+       }
+    },
+	"allOf": [
+		{
+		  "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+		},
+		{
+		  "$ref": "#/definitions/profile-privacy"
+		}
+	],
+	"meta:status": "experimental"
+}

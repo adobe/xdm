@@ -5,17 +5,21 @@
 		"you may not use this file except in compliance with the License. You may obtain a copy",
 		"of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/context/profile-optinout",
+  "$id": "https://ns.adobe.com/xdm/context/profile-privacy",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Profile Opt In/Out Signals",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
+  "title": "Profile Opt Out",
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "description": "Profile Optout Mixin",
   "definitions": {
-	"profile-optinout": {
-		"type": "object",
+	"profile-privacy": {
+		"xdm:optOutConsent": {
+			"type": "object",
+			"title": "consent for optout",
+			"description": "Level for extensibility of consents for different opt out types",
 			"properties": {
 				"xdm:privacyOptouts": {
 					"title": "Privacy Opt Outs",
@@ -24,13 +28,10 @@
 					"items": {
 					"$ref": "#/definitions/optout"
 					}
-				},
-				"xdm:channelOptouts": {
-					"title": "Channel Opt Outs",
-					"$ref": "https://ns.adobe.com/xdm/context/optinout"
 				}
 			}
-    },
+		}    
+	},
     "optout": {
 		"type": "object",
 		"properties": {
@@ -39,17 +40,27 @@
 				"type": "string",
 				"description": "Type of optout",
 				"enum": [
-				  "generalOptout",
-				  "salesSharingOptout"
-				],
+                        "generalOptout",
+                        "salesSharingOptout"
+                ],
 				"meta:enum": {
-				  "generalOptout": "General Opt-Out",
+					"generalOptout": "General Opt-Out",
 					"salesSharingOptout": "Sales Sharing Opt-Out"
 				}
 			},
 			"xdm:optoutValue": {
-				"title": "Optout value true or false",
-				"type": "boolean"
+				"title": "Optout value",
+				"type": "string",
+				"enum": [
+					"not_provided",
+                    "true",
+					"false"
+                ],
+				"meta:enum": {
+					"not_provided": "No Opt Out Signal",
+					"true": "Opted Out",
+					"false": "Not opted out"
+				}
 			},
 			"xdm:timestamp": {
 				"title": "Opt-Out Date Time.",
@@ -67,9 +78,8 @@
 		  "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
 		},
 		{
-		  "$ref": "#/definitions/profile-optinout"
+		  "$ref": "#/definitions/profile-privacy"
 		}
-		
 	],
 	"meta:status": "experimental"
 }

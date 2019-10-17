@@ -8,7 +8,7 @@
   "$id": "https://ns.adobe.com/xdm/context/profile-privacy",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Profile Privacy",
-  "description": "Accepts Privacy Opt-Out signals for Selling/Sharing of data or general Opt-Outs by Users",
+  "description": "Profile mix-in to capture general and sales/sharing opt-out signals.",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
@@ -17,27 +17,27 @@
 	"profile-privacy": {
 		"xdm:optOutConsentLevel": {
 			"type": "object",
-			"title": "Opt-Out consent level",
-			"description": "Opt-Out consent level",
+			"title": "Opt-Out Consent Level",
+			"description": "Opt-Out consent level.",
 			"properties": {
 				"xdm:privacyOptOuts": {
-					"title": "Privacy opt-outs",
-					"description": "Encapsulates different opt-out types for Data Privacy",
+					"title": "Privacy Opt-Outs",
+					"description": "Encapsulates different opt-out types for data privacy.",
 					"type": "array",
 					"items": {
-					"$ref": "#/definitions/optout"
+					"$ref": "#/definitions/optOut"
 					}
 				}
 			}
 		}    
 	},
-    "optout": {
+    "optOut": {
 		"type": "object",
 		"properties": {
 			"xdm:optOutType": {
 				"title": "Opt-Out Type",
 				"type": "string",
-				"description": "The type of opt-out",
+				"description": "The type of opt-out.",
 				"enum": [
                         "general_opt_out",
                         "sales_sharing_opt_out"
@@ -48,20 +48,20 @@
 				}
 			},
 			"xdm:optOutValue": {
-				"title": "Opt-Out value",
+				"title": "Opt-Out Value",
 				"type": "string",
-				"description": "The value of opt-out signal",
+				"description": "The value of opt-out signal.",
 				"enum": ["not_provided", "pending", "in", "out"],
 				"meta:enum": {
-                  "not_provided": "User opt-out signal not provided",
+                  "not_provided": "Not Provided",
                   "pending": "Pending Verification",
-                  "in": "Opt-In: The user opted in",
-                  "out": "Opt-Out: The user opted out"
+                  "in": "Opt-In",
+                  "out": "Opt-Out"
                }
 			},
 			"xdm:timestamp": {
-				"title": "Opt-Out date time",
-				"description": "The date and time when the opt out signal was received",
+				"title": "Opt-Out Timestamp",
+				"description": "Timestamp of the received opt-out signal.",
 				"type": "string",
 				"format": "date-time"
 			}

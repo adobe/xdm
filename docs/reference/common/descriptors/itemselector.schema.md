@@ -24,7 +24,7 @@ Matching may be done based on array index, `@id`, `@type`, or schema URI.
 
 ```json
 {
-  "xdm:index": 0
+  "xdm:schema": "https://ns.adobe.com/xdm/context/identity"
 }
 ```
 
@@ -36,7 +36,7 @@ Matching may be done based on array index, `@id`, `@type`, or schema URI.
 
 ```json
 {
-  "xdm:schema": "https://ns.adobe.com/xdm/context/identity"
+  "xdm:index": 0
 }
 ```
 

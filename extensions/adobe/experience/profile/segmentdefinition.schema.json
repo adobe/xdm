@@ -28,7 +28,6 @@
           "type": "string",
           "description": "The merge policy which is used"
         },
-        "xdm:sandbox": {},
         "xdm:schema": {
           "title": "Schema",
           "type": "object",

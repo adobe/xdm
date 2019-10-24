@@ -1,0 +1,35 @@
+{
+  "xdm:schema": {
+    "xdm:name": "_xdm.context.profile"
+  },
+  "xmd:ttlInDays": 30,
+  "xdm:imsOrgId": "E45D440D5CABDC100A494205@AdobeOrg",
+  "xdm:sandbox": {
+    "xdm:sandboxId": "9596bd90-c5d9-11e9-989e-51766e3b439b",
+    "xdm:sandboxName": "prod",
+    "xdm:type": "production",
+    "xdm:default": true
+  },
+  "xdm:name": "A segment name",
+  "xdm:description": "",
+  "xdm:expression": {
+    "xdm:type": "PQL",
+    "xdm:format": "pql/json",
+    "xdm:value": "{\"nodeType\":\"select\",\"variables\":[{\"nodeType\":\"varDecl\",\"varName\":\"_Attribute1\",\"from\":{\"nodeType\":\"fieldLookup\",\"fieldName\":\"identities\",\"object\":{\"nodeType\":\"literal\",\"literalType\":\"XDMObject\",\"value\":\"profile\"}},\"where\":{\"nodeType\":\"fnApply\",\"fnName\":\"equals\",\"params\":[{\"nodeType\":\"fieldLookup\",\"fieldName\":\"xid\",\"object\":{\"nodeType\":\"varRef\",\"varName\":\"_Attribute1\"}},{\"literalType\":\"String\",\"nodeType\":\"literal\",\"value\":\"\"},{\"nodeType\":\"literal\",\"literalType\":\"Boolean\",\"value\":false}]}}]}"
+  },
+  "xdm:mergePolicyId": "8123ffeb-b88a-4660-9435-b45bd5ec4e62",
+  "xdm:evaluationInfo": {
+    "xdm:batch": {
+      "xdm:enabled": true
+    },
+    "xdm:continuous": {
+      "xdm:enabled": false
+    },
+    "xdm:synchronous": {
+      "xdm:enabled": false
+    }
+  },
+  "xdm:creationTime": 1571933069000,
+  "xdm:updateEpoch": 1571933069,
+  "xdm:updateTime": 1571933069000
+}

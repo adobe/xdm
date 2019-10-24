@@ -1,0 +1,13 @@
+{
+  "xdm:evaluationinfo": {
+    "xdm:batch": {
+      "xdm:enabled": true
+    },
+    "xdm:continuous": {
+      "xdm:enabled": false
+    },
+    "xdm:synchronous": {
+      "xdm:enabled": false
+    }
+  }
+}

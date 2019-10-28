@@ -14,16 +14,29 @@
   ],
   "type": "object",
   "title": "Profile Constraint",
-  "description": "A profile constraint is a component of a decision option that defines which rule is evaluated to determine if the option qualifies. Usually the option is tested against a user profile and the events that were observed for that profile, but the qualification rule can evaluate any context data as long as it can be described by an XDM schema.",
+  "description": "A profile constraint is a component of a decision option that defines the rules for testing if the option qualifies. Usually the option is tested against a user profile and the events that were observed for that profile, but the qualification rule can consider any context data as long as it can be described by an XDM schema.",
   "definitions": {
     "profile-constraint-datatype": {
       "type": "object",
       "properties": {
-        "xdm:rule": {
+        "xdm:eligibilityRule": {
           "type": "string",
           "format": "uri-reference",
           "title": "Eligibility Rule",
           "description": "The reference to a decision rule that evaluates to true or false for a given profile and/or other given contextual XDM objects. The rule is used to decide if the option is eligible for a given profile and context. The value is the URI (@id) of the decision rule that is referenced. See schema https://ns.adobe.com/experience/decision/rule"
+        },
+        "xdm:segmentIdentities": {
+          "title": "Segment Identifiers",
+          "description": "Identifiers of the segments",
+          "type": "array",
+          "items": {
+            "$ref": "https://ns.adobe.com/xdm/context/segmentidentity"
+          }
+        },
+        "xdm:description": {
+          "type": "string",
+          "title": "Description",
+          "description": "Profile constraint description. It is used to convey human readable intentions on how or why this profile constraint was constructed and/or what option will be included or excluded by it."
         }
       }
     }

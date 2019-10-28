@@ -8,7 +8,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/experience/decisioning/option-all",
   "type": "object",
-  "title": "Decision Option Full Extension",
+  "title": "XDM Decision Option - Full Extension",
   "meta:abstract": true,
   "meta:extensible": true,
   "meta:intendedToExtend": [

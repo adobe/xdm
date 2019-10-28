@@ -58,14 +58,25 @@
           "examples": [
             "https://plaftform.adobe.io/resolveByPath?path=&quot;/mycorp/content/projectx/fragment/prod/herobanners/banner14.html3&quot;"
           ]
+        },
+        "xdm:content": {
+          "type": "string",
+          "description": "An optional unique resource locator to read the asset in a content repository. This will make it easier to obtain the asset whithout the client understanding where the asset is manages and what APIs to call. This is similar to a HAL link but the semantic is simpler and more pursposeful.",
+          "examples": [
+            ""
+          ]
+        },
+        "xdm:deliveryURL": {
+          "type": "string",
+          "format": "uri-reference",
+          "meta:immutable": true,
+          "meta:usereditable": false,
+          "description": "An optional unique resource locator to read the asset from a content delivery network or service endpoint. This URL is used to access the asset publicly from a user agent.",
+          "examples": [
+            "https://cdn.adobe.io/content/projectx/fragment/prod/static/1232324wd32.jpeg"
+          ]
         }
       }
-    },
-    "content-component-type": {
-      "type": "string",
-      "format": "uri-reference",
-      "title": "Content Component Type",
-      "description": "Content Component Type: e.g. imagelink, html or text. An enumerated set of URIs where each value maps to a type given to the content component. Some consumers of the content representations are expecting the @type value to be a reference to schema that describes additional properties of the content component."
     }
   },
   "allOf": [

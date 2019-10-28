@@ -5,12 +5,12 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/decisioning/activity-detail",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Decision Activity Detail",
+  "$id": "https://ns.adobe.com/experience/decisioning/activity-detail",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
+  "title": "Decision Activity Detail",
   "description": "Detail about the entity defining and controlling the decisioning process. Decisions are made in the context of an activity. At any given time, the best option is re-evaluated, or ranked, based on the most current set of context variables, rules and constraints. The decision activity specifies a fallback option should the combined constraints disqualify all narrowed-down options.",
   "definitions": {
     "activity-detail-datatype": {
@@ -49,14 +49,10 @@
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
-    },
-    {
       "$ref": "#/definitions/activity-detail-datatype"
     },
     {
       "required": ["xdm:id"]
     }
-  ],
-  "meta:status": "experimental"
+  ]
 }

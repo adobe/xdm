@@ -11,7 +11,7 @@
   "meta:extensible": true,
   "type": "object",
   "title": "Content Representation",
-  "description": "Content representations contain metadate for content in the end user experience.",
+  "description": "A channel specific set of content components that is contributing to the end user experience.",
   "definitions": {
     "content-representation-datatype": {
       "properties": {

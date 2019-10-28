@@ -6,42 +6,43 @@
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "https://ns.adobe.com/experience/decisioning/xdm-context-object-definitions",
+  "$id": "https://ns.adobe.com/experience/decisioning/xdm-parameter-definitions",
   "meta:abstract": true,
   "meta:extensible": true,
   "meta:intendedToExtend": [
     "https://ns.adobe.com/experience/decisioning/rule",
-    "https://ns.adobe.com/experience/decisioning/function"
+    "https://ns.adobe.com/experience/decisioning/function",
+    "https://ns.adobe.com/experience/decisioning/action",
   ],
   "type": "object",
-  "title": "Context object definitions",
+  "title": "Formal parameter definitions",
   "description": "A map where each key declares a parameter or context object by its name and the value contains a reference to the XDM model, i.e. the symbol's type.",
   "definitions": {
-    "xdm-context-object-definitions-mixin": {
-      "title": "Context object definitions",
-      "description": "A map where each key declares a parameter or context object by its name and the value contains a reference to the XDM model, i.e. the symbol's type.",
+    "xdm-parameter-definitions-mixin": {
+      "title": "Formal parameter definitions",
+      "description": "A map where each key declares a formal parameter or context object by its name and the value contains a reference to the XDM model, i.e. the parameter's or context object's type.",
       "type": "object",
       "properties": {
         "xdm:definedOn": {
           "type": "object",
           "meta:xdmType": "map",
-          "title": "Context object definition",
-          "description": "A map where each key declares a parameter or context object by its name and the value contains a reference to the XDM model, i.e. the symbol's type.",
+          "title": "Formal parameter definitions",
+          "description": "A map where each key declares a formal parameter or context object by its name and the value contains a reference to the XDM model, i.e. the parameter's or context object's  type.",
           "additionalProperties": {
-            "$ref": "#/definitions/object-definition-datatype"
+            "$ref": "#/definitions/parameter-definition-datatype"
           }
         }
       }
     },
-    "object-definition-datatype": {
-      "title": "Context object schema and schema usage",
+    "parameter-definition-datatype": {
+      "title": "Formal parameter schema and schema usage",
       "description": "Contains a valid XDM schema identifier or XDM type definition for the parameter or context object.",
       "type": "object",
       "properties": {
         "xdm:schema": {
           "type": "object",
-          "title": "Context object schema",
-          "description": "Schema for the value of the parameter or context object",
+          "title": "Formal parameter schema",
+          "description": "Schema for the value of the parameter or context object. It is either a reference to a registered schema definition or a schema defined directly in the 'xdm:schema' property. The schema complies with the http://json-schema.org/draft-06/schema# schema.",
           "properties": {
             "$ref": {
               "type": "string",
@@ -71,12 +72,13 @@
             "description": "A fully qualified JSON path to an XDM field with dots used as the path delimiter."
           }
         }
-      }
+      },
+      "required": [ "xdm:schema" ]
     }
   },
   "allOf": [
     {
-      "$ref": "#/definitions/xdm-context-object-definitions-mixin"
+      "$ref": "#/definitions/xdm-parameter-definitions-mixin"
     }
   ]
 }

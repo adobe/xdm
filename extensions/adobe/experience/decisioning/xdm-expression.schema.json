@@ -11,7 +11,7 @@
   "meta:extensible": true,
   "type": "object",
   "title": "XDM Expression",
-  "description": "An expression evaluated against sets of XDM instances. The Profile Query Language forms the foundation of those predicates. The expression operates not only over profile instances but over entity that conforms to the XDM model.",
+  "description": "An expression evaluated against sets of XDM instances. The Profile Query Language forms the foundation of those predicates. The expression operates not only over profile instances but over any entity that conforms to the XDM model.",
   "definitions": {
     "xdm-expresion-datatype": {
       "properties": {

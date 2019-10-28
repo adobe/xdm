@@ -1,0 +1,53 @@
+{
+  "@id": "xcore:function:e5244c22eff29e8",
+  "xdm:id": "ml:function:b437a2403cf10e9",
+  "xdm:name": "Predicted Score for interest in product",
+  "xdm:definedOn": {
+    "profile": {
+      "xdm:schema": {
+        "$ref": "https://ns.adobe.com/xdm/context/profile",
+        "version": "1"
+      },
+      "xdm:referencePaths": ["homeAddress.stateOrProvince"]
+    },
+    "currentSearch": {
+      "xdm:schema": {
+        "$ref": ":https://ns.adobe.com/xdm/context/experienceevent",
+        "meta:altId": "_xdm.context.experienceevent",
+        "version": "1"
+      },
+      "xdm:referencePaths": [
+        "eventType",
+        "search.keywords",
+        "search.position",
+        "search.pageDepth"
+      ]
+    },
+    "products": {
+      "xdm:schema": {
+        "type": "array",
+        "items": {
+          "$ref": ":https://ns.adobe.com/experience/decisioning/option",
+          "version": "1"
+        }
+      },
+      "xdm:referencePaths": [
+        "tags",
+        "characteristics"
+      ]
+    },
+    "currentLocation": {
+      "xdm:schema": {
+        "meta:altId": "_xdm.common.address",
+        "version": "1.2"
+      },
+      "xdm:referencePaths": ["_schema.latitude", "_schema.longitude"]
+    }
+  },
+  "xdm:returnType": {
+    "type": "array",
+    "items": {
+      "$ref": "https://ns.adobe.com/experience/decisioning/option"
+    }
+  }
+}

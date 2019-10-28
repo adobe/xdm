@@ -1,0 +1,58 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/experience/decisioning/action",
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record"
+  ],
+  "meta:abstract": true,
+  "meta:extensible": true,
+  "type": "object",
+  "title": "XDM Decision Action",
+  "description": "An Action is something that is done as a result of an event and the satisfaction of zero or more decision criteria, or formulas.",
+  "definitions": {
+    "action": {
+      "properties": {
+        "xdm:id": {
+          "type": "string",
+          "format": "uri-reference",
+          "title": "Action identifier",
+          "description": "Action's unique identifier that can be resolved to a service endpoint to invoke the action. The identifier can be used as part of a path in an HTTP request.  It must only contain letters, digits, underscores, and dashes and must start with a letter.  If no xdm:name parameter is specified this ide will be used as the displayed as the name."
+        },
+        "xdm:name": {
+          "type": "string",
+          "title": "Action name",
+          "description": "Action's external human-readable name to clients. Property has the semantic of schema.org's 'name' property defined on http://schema.org/Thing"
+        },
+        "xdm:description": {
+          "type": "string",
+          "title": "Action description",
+          "description": "An optional human readable string that describes what this action does."
+        },
+        "xdm:version": {
+          "type": "string",
+          "title": "Action version",
+          "description": "The version of the action.  The major version must be changed if the arguments or output of the action is changed."
+        },
+        "xdm:language": {
+          "type": "string",
+          "title": "Action implementation language",
+          "description": "A string or enum representing the programming language the action is written in.  Currently this must be set to 'JSON'."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "#/definitions/action"
+    }
+  ]
+}

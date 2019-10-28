@@ -1,0 +1,75 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/experience/decisioning/function",
+  "meta:abstract": true,
+  "meta:extensible": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "type": "object",
+  "title": "XDM Decision Function",
+  "description": "An function is a named and referencable entity used for evaluating argument values to a result value.",
+  "definitions": {
+    "function": {
+      "properties": {
+        "xdm:id": {
+          "type": "string",
+          "format": "uri-reference",
+          "title": "Function identifier",
+          "description": "Function's unique identifier that can be resolved to a service endpoint."
+        },
+        "xdm:name": {
+          "type": "string",
+          "title": "Function name",
+          "description": "Function's external human-readable name to clients. Property has the semantic of schema.org's 'name' property defined on http://schema.org/Thing"
+        },
+        "xdm:isPure": {
+          "type": "boolean",
+          "title": "Pure function indicator",
+          "description": "A pure function is a function that has the following properties: 1) Its return value is the same for the same arguments 2) Its evaluation has no side effects (source https://en.wikipedia.org/wiki/Pure_function). A function that is returning the current date and time is not pure. A function that is storing data in a database or that is sending a message to another system is not generally not pure."
+        },
+        "xdm:returnType": {
+          "type": "object",
+          "title": "Function return value schema",
+          "description": "Schema for the return value of the function. It is either a reference to a registered schema definition or a schema defined directly in the 'xdm:schema' property. The schema complies with the http://json-schema.org/draft-06/schema# schema.",
+          "properties": {
+            "$ref": {
+              "type": "string",
+              "format": "uri-reference",
+              "title": "Schema identifier",
+              "description": "The schema reference used in this definition."
+            },
+            "meta:altId": {
+              "type": "string",
+              "title": "XED encoded schema identifier",
+              "pattern": "^_[0-9a-zA-Z]+([.][0-9a-zA-Z\\-]+?)*$",
+              "description": "An XED encoded variant of the schema reference used in this definition."
+            },
+            "version": {
+              "type": "string",
+              "pattern": "^[0-9]+([.][0-9]+?)?$",
+              "default": "1",
+              "title": "XDM schema version",
+              "description": "Schema version which can be a revision number or git repo release tag number etc. This should be the same version number as part of the schema id"
+            }
+          }          
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "#/definitions/function"
+    },
+    {
+      "required": ["xdm:name", "xdm:returnType"]
+    }
+  ]
+}

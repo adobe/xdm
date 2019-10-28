@@ -5,18 +5,18 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/decisioning/decisionevent-all",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "DecisionEvent Details for Reporting",
-  "type": "object",
-  "description": "Extension for DecisionEvent that adds dimensions for rollup by organization, container and/or batch.",
+  "$id": "https://ns.adobe.com/experience/decisioning/decisionevent-all",
   "meta:abstract": true,
   "meta:extensible": true,
   "meta:intendedToExtend": [
     "https://ns.adobe.com/experience/decisioning/decisionevent"
   ],
+  "type": "object",
+  "title": "XDM Decision Event - Details for Reporting",
+  "description": "Extension for DecisionEvent that adds dimensions for rollup by organization, container and/or batch.",
   "definitions": {
-    "decisioning-mixin": {
+    "decisionevent-mixin": {
       "properties": {
         "https://ns.adobe.com/adobecloudplatform/ims/organizationID": {
           "title": "IMS Organization Identifier",
@@ -38,11 +38,7 @@
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
-    },
-    {
-      "$ref": "#/definitions/decisioning-mixin"
+      "$ref": "#/definitions/decisionevent-mixin"
     }
-  ],
-  "meta:status": "experimental"
+  ]
 }

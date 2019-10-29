@@ -10,7 +10,7 @@
   "meta:extends": [
     "https://ns.adobe.com/xdm/data/record",
     "https://ns.adobe.com/experience/decisioning/function",
-    
+
     "https://ns.adobe.com/experience/decisioning/xdm-parameter-definitions"
   ],
   "meta:abstract": false,

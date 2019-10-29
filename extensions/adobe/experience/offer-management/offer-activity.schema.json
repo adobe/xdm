@@ -61,11 +61,7 @@
       "$ref": "#/definitions/offer-activity"
     },
     {
-      "required": [
-        "xdm:name",
-        "xdm:status",
-        "xdm:fallback"
-      ]
+      "required": ["xdm:name", "xdm:status", "xdm:fallback"]
     }
   ]
 }

@@ -112,7 +112,7 @@
       "xdm:placements": ["xcore:offer-placement:6111463157c2221"],
       "xdm:profileConstraint": {
         "xdm:description": "Tender Group in (NonKC) AND Pilot = Y AND Discount(Reserve1) = 20",
-        "xdm:rule": "xcore:eligibility-rule:f65212b6b3c0b04", 
+        "xdm:rule": "xcore:eligibility-rule:f65212b6b3c0b04",
         "xdm:evaluatedFor": {
           "": "ups",
           "xEvent": "request",
@@ -152,7 +152,7 @@
       "xdm:placements": ["xcore:offer-placement:6111463157c2221"],
       "xdm:profileConstraint": {
         "xdm:description": "Tender Group in (NonKC) AND Pilot != Y",
-        "xdm:rule": "xcore:eligibility-rule:f65212b6b3c0b06", 
+        "xdm:rule": "xcore:eligibility-rule:f65212b6b3c0b06",
         "xdm:evaluatedFor": {
           "": "ups",
           "xEvent": "request",
@@ -172,7 +172,7 @@
       "xdm:placements": ["xcore:offer-placement:6111463157c2221"],
       "xdm:profileConstraint": {
         "xdm:description": "Tender Group in (ClassicKC, MVC, Unmatched) AND Pilot != Y AND Discount(Reserve1) = 30",
-        "xdm:rule": "xcore:eligibility-rule:f65212b6b3c0b07", 
+        "xdm:rule": "xcore:eligibility-rule:f65212b6b3c0b07",
         "xdm:evaluatedFor": {
           "": "ups",
           "xEvent": "request",
@@ -193,7 +193,7 @@
       "xdm:fallback": "xcore:fallback-offer:366709ad4e7b1fb",
       "xdm:profileConstraint": {
         "xdm:description": "Tender Group = ClassicKC OR MVC OR NULL OR Unmatched AND Pilot != Y AND Discount(Reserve1) !=30",
-        "xdm:rule": "xcore:eligibility-rule:f65212b6b3c0b09", 
+        "xdm:rule": "xcore:eligibility-rule:f65212b6b3c0b09",
         "xdm:evaluatedFor": {
           "": "ups",
           "xEvent": "request",

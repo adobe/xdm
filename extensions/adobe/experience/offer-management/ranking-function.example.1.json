@@ -29,10 +29,7 @@
         "meta:altId": "_experience.deicioning.option",
         "version": "1"
       },
-      "xdm:referencePaths": [
-        "tags",
-        "characteristics"
-      ]
+      "xdm:referencePaths": ["tags", "characteristics"]
     },
     "currentLocation": {
       "xdm:schema": {

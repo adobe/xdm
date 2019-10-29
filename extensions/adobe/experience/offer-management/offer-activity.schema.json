@@ -9,12 +9,13 @@
   "$id": "https://ns.adobe.com/experience/offer-management/offer-activity",
   "meta:extends": [
     "https://ns.adobe.com/xdm/data/record",
-    "https://ns.adobe.com/experience/decisioning/activity"
+    "https://ns.adobe.com/experience/decisioning/activity",
+    "https://ns.adobe.com/experience/decisioning/decision-criteria"
   ],
   "meta:abstract": false,
   "meta:extensible": true,
   "type": "object",
-  "title": "Activity",
+  "title": "Offer Activity",
   "description": "An offer activity is used to control the decisioning process. It specifies the filter applied to the total inventory to narrow down offers by topic/category, the placement to narrow down the inventory to those offers that technically fit into the reserved space for the offer and specifies a fall back option should the combined constraints disqualify all available personalization options (offers).",
   "definitions": {
     "offer-activity": {
@@ -54,15 +55,16 @@
       "$ref": "https://ns.adobe.com/experience/decisioning/activity"
     },
     {
+      "$ref": "https://ns.adobe.com/experience/decisioning/decision-criteria"
+    },
+    {
       "$ref": "#/definitions/offer-activity"
     },
     {
       "required": [
         "xdm:name",
-        "xdm:fallback",
         "xdm:status",
-        "xdm:placement",
-        "xdm:filter"
+        "xdm:fallback"
       ]
     }
   ]

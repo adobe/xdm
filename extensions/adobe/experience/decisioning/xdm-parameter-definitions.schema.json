@@ -12,7 +12,7 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/experience/decisioning/rule",
     "https://ns.adobe.com/experience/decisioning/function",
-    "https://ns.adobe.com/experience/decisioning/action",
+    "https://ns.adobe.com/experience/decisioning/action"
   ],
   "type": "object",
   "title": "Formal parameter definitions",
@@ -73,7 +73,7 @@
           }
         }
       },
-      "required": [ "xdm:schema" ]
+      "required": ["xdm:schema"]
     }
   },
   "allOf": [

@@ -7,29 +7,26 @@
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/experience/offer-management/selection-constraint",
-  "meta:extends": [
-    "https://ns.adobe.com/experience/decisioning/calendar-constraint"
-  ],
   "meta:abstract": true,
   "meta:extensible": true,
+  "meta:extends": [
+    "https://ns.adobe.com/experience/decisioning/calendar-constraint",
+    "https://ns.adobe.com/experience/decisioning/profile-constraint"
+  ],
   "type": "object",
   "title": "Offer Selection Constraint",
   "description": "Offer selection constraints specify conditions that have to be met in order for an offer to be included when ranking the best offer. Those constraints can have two aspects, date constraints and a an eligibility applied to the user profile fields.",
   "definitions": {
     "selection-constraint-datatype": {
-      "properties": {
-        "xdm:eligibilityRule": {
-          "type": "string",
-          "format": "uri-reference",
-          "title": "Eligibility Rule",
-          "description": "The reference to an eligibility rule that tests a condition using the profile and/or other contextual XDM instances. The value is the URI (@id) of the eligibility rule that is referenced. See schema https://ns.adobe.com/experience/offer-management/eligibility-rule"
-        }
-      }
+      "properties": {}
     }
   },
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/experience/decisioning/calendar-constraint"
+    },
+    {
+      "$ref": "https://ns.adobe.com/experience/decisioning/profile-constraint"
     },
     {
       "$ref": "#/definitions/selection-constraint-datatype"

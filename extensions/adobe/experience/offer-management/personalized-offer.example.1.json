@@ -17,7 +17,7 @@
           "dc:format": "text/plain",
           "dc:language": ["en"],
           "repo:name": "short text line",
-          "xdm:copyline": "text entered directly"
+          "xdm:content": "text entered directly"
         }
       ]
     },
@@ -35,6 +35,13 @@
     }
   ],
   "xdm:rank": {
-    "xdm:priority": 0
+    "xdm:priority": 0,
+    "xdm:order": {
+      "xdm:function": "ml:function:b437a2403cf10e9",
+      "xdm:evaluatedFor": {
+        "profile": "ups",
+        "o": "repository"
+      }
+    }
   }
 }

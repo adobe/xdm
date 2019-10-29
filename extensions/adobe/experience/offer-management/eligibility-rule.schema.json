@@ -9,19 +9,21 @@
   "$id": "https://ns.adobe.com/experience/offer-management/eligibility-rule",
   "meta:extends": [
     "https://ns.adobe.com/xdm/data/record",
-    "https://ns.adobe.com/experience/decisioning/rule"
+    "https://ns.adobe.com/experience/decisioning/rule",
+    
+    "https://ns.adobe.com/experience/decisioning/xdm-parameter-definitions"
   ],
   "meta:abstract": false,
   "meta:extensible": true,
   "type": "object",
-  "title": "Eligibility Rule",
+  "title": "Offer Eligibility Rule",
   "description": "An eligibility rule is a named reusable predicate used in the domain of audience segmentation and message personalization. The Profile Query Language forms the foundation of those predicates. The predicate operates not only over profile fields but also over contextual data objects provided at the time of decisioning.",
   "definitions": {
     "eligibility-rule": {
       "properties": {
         "xdm:modelUsage": {
-          "title": "Used Properties",
-          "description": "A list of \"model usage\" objects, one per model, that lists the fully qualified path to every used property from the model.",
+          "title": "Deprecated - Used Properties",
+          "description": "Deprecated. Use the parameter definition in 'xdm:definedOn' to describe what schemas and properties the rule is using. A list of \"model usage\" objects, one per model, that lists the fully qualified path to every used property from the model.",
           "type": "array",
           "items": {
             "$ref": "https://ns.adobe.com/experience/offer-management/model-usage"
@@ -36,6 +38,9 @@
     },
     {
       "$ref": "https://ns.adobe.com/experience/decisioning/rule"
+    },
+    {
+      "$ref": "https://ns.adobe.com/experience/decisioning/xdm-parameter-definitions"
     },
     {
       "$ref": "#/definitions/eligibility-rule"

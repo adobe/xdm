@@ -1,5 +1,5 @@
 {
-  "@id": "xcore:function:e5244c22eff29e8",
+  "@id": "xcore:ranking-function:f65212b6b3c0ba31",
   "xdm:id": "ml:function:b437a2403cf10e9",
   "xdm:name": "Predicted Score for interest in product",
   "xdm:definedOn": {
@@ -23,15 +23,16 @@
         "search.pageDepth"
       ]
     },
-    "products": {
+    "product": {
       "xdm:schema": {
-        "type": "array",
-        "items": {
-          "$ref": ":https://ns.adobe.com/experience/decisioning/option",
-          "version": "1"
-        }
+        "$ref": ":https://ns.adobe.com/experience/decisioning/option",
+        "meta:altId": "_experience.deicioning.option",
+        "version": "1"
       },
-      "xdm:referencePaths": ["tags", "characteristics"]
+      "xdm:referencePaths": [
+        "tags",
+        "characteristics"
+      ]
     },
     "currentLocation": {
       "xdm:schema": {
@@ -42,9 +43,6 @@
     }
   },
   "xdm:returnType": {
-    "type": "array",
-    "items": {
-      "$ref": "https://ns.adobe.com/experience/decisioning/option"
-    }
+    "type": "number"
   }
 }

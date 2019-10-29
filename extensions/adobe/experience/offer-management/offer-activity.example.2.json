@@ -1,0 +1,209 @@
+{
+  "@id": "xcore:offer-activity:fd55d033fea4b82",
+  "xdm:name": "In App Messages",
+  "xdm:startDate": "2019-06-18T10:52:57.000Z",
+  "xdm:endDate": "2019-09-01T00:00:00.000Z",
+  "xdm:status": "live",
+
+  "xdm:fallback": "xcore:fallback-offer:f6709ad4e7c0bac",
+  "xdm:criteria": [
+    {
+      "xdm:rank": {
+        "xdm:priority": 0
+      },
+      "xdm:placements": ["xcore:offer-placement:c652463157c2aa1"],
+      "xdm:profileConstraint": {
+        "xdm:description": "Pilot = Y",
+        "xdm:rule": "xcore:eligibility-rule:e5244c22eff29e8",
+        "xdm:evaluatedFor": {
+          "": "ups",
+          "xEvent": "ups",
+          "currentLocation": "request"
+        }
+      },
+      "xdm:optionSelection": {
+        "xdm:filter": "xcore:offer-filter:f6998eb62ed6f15",
+        "xdm:evaluatedFor": {
+          "o": "repository"
+        }
+      }
+    },
+    {
+      "xdm:rank": {
+        "xdm:priority": 0
+      },
+      "xdm:placements": ["xcore:offer-placement:c652463157c2aa2"],
+      "xdm:profileConstraint": {
+        "xdm:rule": "xcore:eligibility-rule:f65212b6b3c0ba3",
+        "xdm:evaluatedFor": {
+          "": "ups",
+          "xEvent": "ups",
+          "currentLocation": "request"
+        }
+      },
+      "xdm:optionSelection": {
+        "xdm:options": ["xcore:offer:f6998eb62ed6f15"]
+      }
+    },
+    {
+      "xdm:description": "S1:",
+      "xdm:rank": {
+        "xdm:priority": 8
+      },
+      "xdm:placements": ["xcore:offer-placement:6111463157c2221"],
+      "xdm:profileConstraint": {
+        "xdm:description": "Tender Group in (ClassicKC, MVC) AND Pilot = Y AND Discount(Reserve1) = 30",
+        "xdm:rule": "xcore:eligibility-rule:f65212b6b3c0b01",
+        "xdm:evaluatedFor": {
+          "": "ups",
+          "xEvent": "request",
+          "currentLocation": "request"
+        }
+      },
+      "xdm:optionSelection": {
+        "xdm:description": "Charge_Elite_30 Offer",
+        "xdm:options": ["xcore:offer:f6998eb62ed6f15"]
+      }
+    },
+    {
+      "xdm:description": "S2:",
+      "xdm:rank": {
+        "xdm:priority": 7
+      },
+      "xdm:profileConstraint": {
+        "xdm:description": "Tender Group in (ClassicKC, MVC) AND Pilot = Y AND Discount(Reserve1) != 30",
+        "xdm:rule": "xcore:eligibility-rule:f65212b6b3c0b02",
+        "xdm:evaluatedFor": {
+          "": "ups",
+          "xEvent": "request",
+          "currentLocation": "request"
+        }
+      },
+      "xdm:optionSelection": {
+        "xdm:description": "Charge_Elite_Generic",
+        "xdm:options": ["xcore:offer:f6998eb62ed6f16"]
+      }
+    },
+    {
+      "xdm:description": "S3:",
+      "xdm:rank": {
+        "xdm:priority": 6
+      },
+      "xdm:placements": ["xcore:offer-placement:6111463157c2221"],
+      "xdm:profileConstraint": {
+        "xdm:description": "Tender Group in (NonKC) AND Pilot = Y AND Discount(Reserve1) = 15",
+        "xdm:rule": "xcore:eligibility-rule:f65212b6b3c0b03",
+        "xdm:evaluatedFor": {
+          "": "ups",
+          "xEvent": "request",
+          "currentLocation": "request"
+        }
+      },
+      "xdm:optionSelection": {
+        "xdm:description": "Members_15",
+        "xdm:options": ["xcore:offer:f6998eb62ed6f17"]
+      }
+    },
+    {
+      "xdm:description": "S4:",
+      "xdm:rank": {
+        "xdm:priority": 5
+      },
+      "xdm:placements": ["xcore:offer-placement:6111463157c2221"],
+      "xdm:profileConstraint": {
+        "xdm:description": "Tender Group in (NonKC) AND Pilot = Y AND Discount(Reserve1) = 20",
+        "xdm:rule": "xcore:eligibility-rule:f65212b6b3c0b04", 
+        "xdm:evaluatedFor": {
+          "": "ups",
+          "xEvent": "request",
+          "currentLocation": "request"
+        }
+      },
+      "xdm:optionSelection": {
+        "xdm:description": "Members_20",
+        "xdm:options": ["xcore:offer:f6998eb62ed6f18"]
+      }
+    },
+    {
+      "xdm:description": "S5:",
+      "xdm:rank": {
+        "xdm:priority": 4
+      },
+      "xdm:placements": ["xcore:offer-placement:6111463157c2221"],
+      "xdm:profileConstraint": {
+        "xdm:description": "Tender Group in (NonKC) AND Pilot = Y AND Discount(Reserve1) = 30",
+        "xdm:rule": "xcore:eligibility-rule:f65212b6b3c0b05",
+        "xdm:evaluatedFor": {
+          "": "ups",
+          "xEvent": "request",
+          "currentLocation": "request"
+        }
+      },
+      "xdm:optionSelection": {
+        "xdm:description": "Members_30",
+        "xdm:options": ["xcore:offer:f6998eb62ed6f19"]
+      }
+    },
+    {
+      "xdm:description": "S6:",
+      "xdm:rank": {
+        "xdm:priority": 3
+      },
+      "xdm:placements": ["xcore:offer-placement:6111463157c2221"],
+      "xdm:profileConstraint": {
+        "xdm:description": "Tender Group in (NonKC) AND Pilot != Y",
+        "xdm:rule": "xcore:eligibility-rule:f65212b6b3c0b06", 
+        "xdm:evaluatedFor": {
+          "": "ups",
+          "xEvent": "request",
+          "currentLocation": "request"
+        }
+      },
+      "xdm:optionSelection": {
+        "xdm:description": "NONKC",
+        "xdm:options": ["xcore:offer:f6998eb62ed6f20"]
+      }
+    },
+    {
+      "xdm:description": "S7:",
+      "xdm:rank": {
+        "xdm:priority": 2
+      },
+      "xdm:placements": ["xcore:offer-placement:6111463157c2221"],
+      "xdm:profileConstraint": {
+        "xdm:description": "Tender Group in (ClassicKC, MVC, Unmatched) AND Pilot != Y AND Discount(Reserve1) = 30",
+        "xdm:rule": "xcore:eligibility-rule:f65212b6b3c0b07", 
+        "xdm:evaluatedFor": {
+          "": "ups",
+          "xEvent": "request",
+          "currentLocation": "request"
+        }
+      },
+      "xdm:optionSelection": {
+        "xdm:description": "Credit_30",
+        "xdm:options": ["xcore:offer:f6998eb62ed6f21"]
+      }
+    },
+    {
+      "xdm:description": "S8:",
+      "xdm:rank": {
+        "xdm:priority": 1
+      },
+      "xdm:placements": ["xcore:offer-placement:6111463157c2221"],
+      "xdm:fallback": "xcore:fallback-offer:366709ad4e7b1fb",
+      "xdm:profileConstraint": {
+        "xdm:description": "Tender Group = ClassicKC OR MVC OR NULL OR Unmatched AND Pilot != Y AND Discount(Reserve1) !=30",
+        "xdm:rule": "xcore:eligibility-rule:f65212b6b3c0b09", 
+        "xdm:evaluatedFor": {
+          "": "ups",
+          "xEvent": "request",
+          "currentLocation": "request"
+        }
+      },
+      "xdm:optionSelection": {
+        "xdm:description": "Credit_Generic",
+        "xdm:options": ["xcore:offer:f6998eb62ed6f22"]
+      }
+    }
+  ]
+}

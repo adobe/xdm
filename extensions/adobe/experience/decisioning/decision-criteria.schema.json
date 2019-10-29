@@ -50,7 +50,7 @@
           "description": "Criterion description. It is used to convey human readable intentions on how or why this criterion was constructed and how it is affecting the decision."
         }
       },
-      "required": [ "xdm:optionSelection" ]
+      "required": ["xdm:optionSelection"]
     },
     "decision-criteria-mixin": {
       "properties": {

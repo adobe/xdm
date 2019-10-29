@@ -7,11 +7,10 @@
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/experience/offer-management/content-component-type",
-  "version": "0.1",
   "meta:abstract": true,
   "meta:extensible": true,
   "meta:extends": [
-    "https://ns.adobe.com/experience/decisioning/content-representation"
+    "https://ns.adobe.com/experience/decisioning/content-component-type"
   ],
   "title": "Offer Content Component Type",
   "description": "Offer Content Component Type is one of imagelink, html or text. An enumerated set of URIs where each value maps to a type given to the content component. Some consumers of the content representations are expecting the @type value to be a reference to schema that describes additional properties of the content component.",
@@ -22,7 +21,9 @@
         "https://ns.adobe.com/experience/offer-management/content-component-text-template",
         "https://ns.adobe.com/experience/offer-management/content-component-html",
         "https://ns.adobe.com/experience/offer-management/content-component-html-template",
-        "https://ns.adobe.com/experience/offer-management/content-component-imagelink"
+        "https://ns.adobe.com/experience/offer-management/content-component-imagelink",
+        "https://ns.adobe.com/experience/offer-management/content-component-barcode-imagelink",
+        "https://ns.adobe.com/experience/offer-management/content-component-barcode-image-text"
       ]
     }
   },

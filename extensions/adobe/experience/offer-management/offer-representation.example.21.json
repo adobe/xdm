@@ -5,7 +5,7 @@
       "dc:format": "text/x-htl-template",
       "dc:language": ["en"],
       "repo:name": "firstname.htl",
-      "xdm:template": "<p data-sly-text=\"${profile.person.firstname}\">This text would be replaced with the property 'firstname'.</p>"
+      "xdm:content": "<p data-sly-text=\"${profile.person.firstname}\">This text would be replaced with the property 'firstname'.</p>"
     }
   ],
   "xdm:placement": "uri:xcore:placement-0004"

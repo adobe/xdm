@@ -1,0 +1,112 @@
+{
+  "@id": "xcore:personalized-offer:e526a1503bf29e9",
+  "xdm:name": "Personalized Offer 1",
+  "xdm:characteristics": {
+    "category": "DC127"
+  },
+  "xdm:status": "approved",
+  "xdm:tags": ["xcore:tag:e5196f1d9119862"],
+  "xdm:representations": [
+    {
+      "xdm:components": [
+        {
+          "@type": "https://ns.adobe.com/experience/offer-management/content-component-text",
+          "dc:format": "text/template",
+          "xdm:text": "You can always get what you want!"
+        }
+      ],
+      "xdm:placement": "xcore:offer-placement:e51944a87919861"
+    }
+  ],
+  "xdm:selectionConstraint": {
+    "xdm:startTime": "2018-03-13T05:59:18.914Z",
+    "xdm:endTime": "2018-12-27T05:59:18.914Z",
+    "xdm:rule": "xcore:eligibility-rule:e5244c22eff29e8",
+    "xdm:evaluatedFor": {
+      "": "ups",
+      "xEvent": "ups",
+      "currentLocation": "request"
+    },
+    "_embedded": {
+      "xdm:name": "Out of state shopper with one or more purchases of more than $1000",
+      "xdm:condition": {
+        "xdm:type": "PQL",
+        "xdm:format": "pql/text",
+        "xdm:value": "homeAddress.stateOrProvince != currentLocation.stateOrProvince AND (some x FROM xEvent WHERE x.eventType.equals(\"purchase\", true) and x.commerce.order.priceTotal > 1000 AND x.commerce.order.currencyCode = \"USD\")"
+      },
+      "xdm:definedOn": {
+        "": {
+          "xdm:schema": {
+            "$ref": "https://ns.adobe.com/xdm/context/profile",
+            "meta:altId": "_xdm.context.profile",
+            "version": "1"
+          },
+          "xdm:referencePaths": ["homeAddress.stateOrProvince"]
+        },
+        "xEvent": {
+          "xdm:schema": {
+            "$ref": "https://ns.adobe.com/xdm/context/experienceevent",
+            "meta:altId": "_xdm.context.experienceevent",
+            "version": "1"
+          },
+          "xdm:referencePaths": [
+            "eventType",
+            "commerce.order.priceTotal",
+            "commerce.order.currencyCode"
+          ]
+        },
+        "currentLocation": {
+          "xdm:schema": {
+            "$ref": "https://ns.adobe.com/xdm/context/address",
+            "version": "1.2"
+          },
+          "xdm:referencePaths": ["stateOrProvince"]
+        }
+      }
+    }
+  },
+  "xdm:cappingConstraint": {
+    "xdm:profileCap": 2,
+    "xdm:globalCap": 10
+  },
+  "xdm:rank": {
+    "xdm:priority": 3,
+    "xdm:order": {
+      "xdm:function": "ml:function:b437a2403cf10e9",
+      "xdm:evaluatedFor": {
+        "profile": "ups",
+        "option": "ode"
+      },
+      "_embedded": {
+        "xdm:name": "propensity",
+        "repo:resolveUrl": "https://platform.adobe.io/ml/resolve?id={id}",
+        "xdm:definedOn": {
+          "profile": {
+            "xdm:schema": {
+              "$ref": "https://ns.adobe.com/xdm/context/experienceevent",
+              "meta:altId": "_xdm.context.experienceevent",
+              "version": "1"
+            },
+            "xdm:referencePaths": [
+              "timestamp",
+              "eventType",
+              "search.keywords",
+              "web",
+              "placeContext"
+            ]
+          },
+          "option": {
+            "xdm:schema": {
+              "$ref": "https://ns.adobe.com/decisioning/option",
+              "version": "1"
+            },
+            "xdm:referencePaths": ["characteristics.category"]
+          }
+        },
+        "xdm:returns": {
+          "type": "int"
+        }
+      }
+    }
+  }
+}

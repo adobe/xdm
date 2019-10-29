@@ -18,7 +18,7 @@
       ],
       "repo:name": "expiration_message_en",
       "repo:id": "urn:aaid:sc:VA7:6dc33479-13ca-4b19-b25d-c805efef0c9e",
-      "xdm:copyline": "This offer expires 12/6/2018"
+      "xdm:content": "This offer expires 12/6/2018"
     },
     {
       "@type": "https://ns.adobe.com/experience/offer-management/content-component-text",
@@ -26,7 +26,7 @@
       "dc:language": ["en-US"],
       "repo:name": "expiration_message_en-US",
       "repo:id": "urn:aaid:sc:VA7:6dc33479-13ca-4b19-b25d-c805efef0c9e",
-      "xdm:copyline": "This offer expires 6/12/2018"
+      "xdm:content": "This offer expires 6/12/2018"
     },
     {
       "@type": "https://ns.adobe.com/experience/offer-management/content-component-text",

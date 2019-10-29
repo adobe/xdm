@@ -62,9 +62,7 @@
         "xdm:content": {
           "type": "string",
           "description": "An optional unique resource locator to read the asset in a content repository. This will make it easier to obtain the asset whithout the client understanding where the asset is manages and what APIs to call. This is similar to a HAL link but the semantic is simpler and more pursposeful.",
-          "examples": [
-            ""
-          ]
+          "examples": [""]
         },
         "xdm:deliveryURL": {
           "type": "string",

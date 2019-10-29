@@ -33,8 +33,12 @@
             "title": "Segment Membership per Namespace",
             "type": "object",
             "meta:xdmType": "map",
-			"required": ["AAMSegments","AAMTraits","AEPSegments","AEPTraits"],
-            "additionalProperties" : {
+			"oneOf":[
+					{
+					  "required": ["AAMSegments"]
+					}
+			],
+			"additionalProperties" : {
               "$ref" : "https://ns.adobe.com/xdm/context/segmentmembership"
             }
           }

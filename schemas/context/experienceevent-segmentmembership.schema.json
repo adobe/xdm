@@ -35,7 +35,7 @@
             "meta:xdmType": "map",
 			"oneOf":[
 					{
-					  "required": ["AAMSegments"]
+					  "AAMSegments"
 					}
 			],
 			"additionalProperties" : {

@@ -17,53 +17,55 @@
     ],
     "definitions": {
         "profile-privacy": {
-            "xdm:optOutConsentLevel": {
-                "type": "object",
-                "title": "Opt-Out Consent Level",
-                "description": "Opt-Out consent level.",
-                "properties": {
-                    "xdm:privacyOptOuts": {
-                        "title": "Privacy Opt-Outs",
-                        "description": "Encapsulates different opt-out types for data privacy.",
-                        "type": "array",
-                        "items": {
-                            "type": "object",
-                            "properties": {
-                                "xdm:optOutType": {
-                                    "title": "Opt-Out Type",
-                                    "type": "string",
-                                    "description": "The type of opt-out.",
-                                    "enum": [
-                                        "general_opt_out",
-                                        "sales_sharing_opt_out"
-                                    ],
-                                    "meta:enum": {
-                                        "general_opt_out": "General Opt-Out",
-                                        "sales_sharing_opt_out": "Sales Sharing Opt-Out"
+            "properties": {
+                "xdm:optOutConsentLevel": {
+                    "type": "object",
+                    "title": "Opt-Out Consent Level",
+                    "description": "Opt-Out consent level.",
+                    "properties": {
+                        "xdm:privacyOptOuts": {
+                            "title": "Privacy Opt-Outs",
+                            "description": "Encapsulates different opt-out types for data privacy.",
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "xdm:optOutType": {
+                                        "title": "Opt-Out Type",
+                                        "type": "string",
+                                        "description": "The type of opt-out.",
+                                        "enum": [
+                                            "general_opt_out",
+                                            "sales_sharing_opt_out"
+                                        ],
+                                        "meta:enum": {
+                                            "general_opt_out": "General Opt-Out",
+                                            "sales_sharing_opt_out": "Sales Sharing Opt-Out"
+                                        }
+                                    },
+                                    "xdm:optOutValue": {
+                                        "title": "Opt-Out Value",
+                                        "type": "string",
+                                        "description": "The value of opt-out signal.",
+                                        "enum": [
+                                            "not_provided",
+                                            "pending",
+                                            "in",
+                                            "out"
+                                        ],
+                                        "meta:enum": {
+                                            "not_provided": "Not Provided",
+                                            "pending": "Pending Verification",
+                                            "in": "Opt-In",
+                                            "out": "Opt-Out"
+                                        }
+                                    },
+                                    "xdm:timestamp": {
+                                        "title": "Opt-Out Timestamp",
+                                        "description": "Timestamp of the received opt-out signal.",
+                                        "type": "string",
+                                        "format": "date-time"
                                     }
-                                },
-                                "xdm:optOutValue": {
-                                    "title": "Opt-Out Value",
-                                    "type": "string",
-                                    "description": "The value of opt-out signal.",
-                                    "enum": [
-                                        "not_provided",
-                                        "pending",
-                                        "in",
-                                        "out"
-                                    ],
-                                    "meta:enum": {
-                                        "not_provided": "Not Provided",
-                                        "pending": "Pending Verification",
-                                        "in": "Opt-In",
-                                        "out": "Opt-Out"
-                                    }
-                                },
-                                "xdm:timestamp": {
-                                    "title": "Opt-Out Timestamp",
-                                    "description": "Timestamp of the received opt-out signal.",
-                                    "type": "string",
-                                    "format": "date-time"
                                 }
                             }
                         }

@@ -37,12 +37,6 @@
           "title": "Function return value schema",
           "description": "Schema for the return value of the function. It is either a reference to a registered schema definition or a schema defined directly in the 'xdm:schema' property. The schema complies with the http://json-schema.org/draft-06/schema# schema.",
           "properties": {
-            "$ref": {
-              "type": "string",
-              "format": "uri-reference",
-              "title": "Schema identifier",
-              "description": "The schema reference used in this definition."
-            },
             "meta:altId": {
               "type": "string",
               "title": "XED encoded schema identifier",

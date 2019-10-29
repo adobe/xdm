@@ -31,7 +31,7 @@
             ".+_.+": {
               "type": "string"
             }
-          },
+          }
         },
         "xdm:description": {
           "title": "Description",
@@ -41,7 +41,7 @@
             ".+_.+": {
               "type": "string"
             }
-          },
+          }
         }
       },
       "anyOf": [

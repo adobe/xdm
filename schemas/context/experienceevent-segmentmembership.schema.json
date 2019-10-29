@@ -29,16 +29,12 @@
           "title" : "Segment Membership Map",
           "type" : "object",
           "meta:xdmType": "map",
-		  "oneOf":[
-			{
-			  "AAMSegments"
-			}
-			],
+		  "oneOf":[{"AAMSegments"}],
           "additionalProperties" : {
             "title": "Segment Membership per Namespace",
             "type": "object",
             "meta:xdmType": "map",
-			"additionalProperties" : {
+            "additionalProperties" : {
               "$ref" : "https://ns.adobe.com/xdm/context/segmentmembership"
             }
           }

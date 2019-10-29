@@ -29,7 +29,7 @@
           "title" : "Segment Membership Map",
           "type" : "object",
           "meta:xdmType": "map",
-		  "required":["AAMSegments"],
+		  "required":["AAMSegments"|"AAMTraits"],
           "additionalProperties" : {
             "title": "Segment Membership per Namespace",
             "type": "object",

@@ -1,0 +1,179 @@
+{
+  "xdm:channel": {
+  "@id": "https://ns.adobe.com/xdm/channels/facebook-feed",
+  "@type": "https://ns.adobe.com/xdm/channel-types/social",
+  "xdm:metrics": [
+    "https://ns.adobe.com/xdm/data/metrics/web/page-views",
+    "https://ns.adobe.com/xdm/data/metrics/web/link-clicks"
+    ]
+  },
+  "xdm:environment": {
+  "xdm:type": "browser",
+  "xdm:browserDetails": {
+    "xdm:name": "Chrome",
+    "xdm:version": "63.0.3239",
+    "xdm:acceptLanguage": "en",
+    "xdm:cookiesEnabled": true,
+    "xdm:javaScriptEnabled": true,
+    "xdm:javaScriptVersion": "1.8.5",
+    "xdm:javaEnabled": true,
+    "xdm:javaVersion": "Java SE 8",
+    "xdm:viewportHeight": 900,
+    "xdm:viewportWidth": 1680
+   },
+  "xdm:operatingSystem": "MAC OS",
+  "xdm:operatingSystemVersion": "10.13",
+  "xdm:operatingSystemVendor": "Apple",
+  "xdm:connectionType": "cable",
+  "xdm:domain": "verizon.com",
+  "xdm:ISP": "Verizon"
+  },
+  "xdm:trackingCode": "marketingcampaign111",
+  "xdm:commerce": {
+  "xdm:order": {
+    "xdm:purchaseID": "a8g784hjq1mnp3",
+    "xdm:purchaseOrderNumber": "123456",
+    "xdm:payments": [
+      {
+        "xdm:transactionID": "transactid-a111",
+        "xdm:paymentAmount": 899.99,
+        "xdm:paymentType": "credit_card",
+        "xdm:currencyCode": "USD"
+      },
+      {
+        "xdm:transactionID": "transactid-a222",
+        "xdm:paymentAmount": 99.99,
+        "xdm:paymentType": "gift_card",
+        "xdm:currencyCode": "USD"
+      }
+    ],
+    "xdm:currencyCode": "USD",
+    "xdm:priceTotal": 999.98
+  },
+  "xdm:purchases": {
+    "xdm:value": 1.0
+  }
+  },
+  "xdm:productListItems": [ {
+  "xdm:SKU": "1002352692",
+  "xdm:product": "https://commerce.adobe.io/entities/product/product-203766910",
+  "@id": "https://commerce.adobe.io/entities/item/item-12345678",
+  "xdm:name": "24-Watt 8-Light Chrome Integrated LED Bath Light",
+  "xdm:currencyCode": "USD",
+  "xdm:quantity": 1,
+  "xdm:priceTotal": 159
+  } ],
+  "xdm:application":{
+  "xdm:id": "A123",
+  "xdm:name": "Myapp",
+  "xdm:version": "1.0.1",
+  "xdm:launches": {
+    "xdm:value": 1.0
+  }
+  },
+  "xdm:type": "other",
+  "xdm:URL": "https://www.example.com/products/store/?view=1",
+  "xdm:name": "product store",
+  "xdm:linkClicks": {
+    "xdm:value": 1.0
+  },
+  "xdm:siteSection": "Product section",
+  "xdm:server": "example.com",
+  "xdm:name": "product home",
+  "xdm:URL": "https://www.example.com",
+  "xdm:errorPage": false,
+  "xdm:homePage": true,
+  "xdm:pageViews": {
+    "xdm:value": 1.0
+  },
+  "xdm:searchEngine": "Google",
+  "xdm:searchEngineID": "https://ns.adobe.com/searchengines/3",
+  "xdm:keywords": "rice cooker",
+  "xdm:isPaid": true,
+  "xdm:pageDepth": 1,
+  "xdm:primaryAssetReference": {
+    "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234430",
+    "dc:title": "Floki Begs Helga for Freedom",
+    "xmpDM:duration": 87,
+    "iptc4xmpExt:Series": {
+      "iptc4xmpExt:Name": "nba_highlights",
+      "iptc4xmpExt:Identifier": "http://espn.com/series-identifiers/2613953"
+    },
+    "xdm:showType": "episode",
+    "xdm:streamFormat": "long",
+    "iptc4xmpExt:Season": {
+      "iptc4xmpExt:Number": 1.0
+    },
+    "iptc4xmpExt:Episode": {
+      "iptc4xmpExt:Number": 1.0
+    },
+    "iptc4xmpExt:Genre": ["sports"],
+    "iptc4xmpExt:Rating": [
+      {
+        "iptc4xmpExt:RatingValue": "TV14",
+        "iptc4xmpExt:RatingSourceLink": "http://www.tvguidelines.org/ratings.htm"
+      }
+    ],
+    "iptc4xmpExt:Creator": [
+      {
+        "iptc4xmpExt:Name": "ESPN"
+      }
+    ]
+  },
+  "xdm:primaryAssetViewDetails": {
+    "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114230",
+    "xdm:playerName": "watchespn",
+    "xdm:broadcastChannel": "WatchESPN",
+    "xdm:broadcastContentType": "VOD",
+    "xdm:streamFormat": "short",
+    "xdm:playerSDKVersion": {
+      "xdm:version": "1.0.8"
+    },
+    "xdm:broadcastNetwork": "nbcu",
+    "xdm:adLoadType": "2",
+    "xdm:sourceFeed": "http%3A%2F%2Fvod01.pure.centurylink.net%2Fhls%2Fvu%2F9083406%2FVUBX0280890106690980_38_3_M_HD.m3u8",
+    "xdm:sessionTimeout": 1800
+  },
+  "xdm:mediaChapter": {
+    "xdm:chapterAssetReference": {
+      "@id": "https://data.adobe.io/entities/media-chapter-asset-reference/2144511",
+      "dc:title": "Chapter1",
+      "xmpDM:duration": 44
+    },
+    "xdm:chapterAssetViewDetails": {
+      "xdm:index": 0,
+      "xdm:offset": 0
+    },
+    "xdm:impressions": {
+      "xdm:value": 1
+    },
+    "xdm:completes": {
+      "xdm:value": 1
+    },
+    "xdm:timePlayed": {
+      "xdm:value": 44
+    },
+    "xdm:federated": {
+      "xdm:value": 0
+    },
+    "xdm:URL": "https://www.some-adserver.com",
+    "xdm:type": "external",
+    "xdm:typeID": "TypeIdentifier-111",
+    "xdm:typeIDService": "https://ns.adobe.com/xdm/external/deviceatlas",
+    "xdm:type": "mobile",
+    "xdm:manufacturer": "Apple",
+    "xdm:model": "iPhone 6",
+    "xdm:modelNumber": "A1586",
+    "xdm:screenHeight": 667,
+    "xdm:screenWidth": 375,
+    "xdm:colorDepth": 16777216,
+    "xdm:screenOrientation": "portrait",
+    "@id": "https://data.adobe.io/entities/geo/tokyo",
+    "xdm:countryCode": "JP",
+    "xdm:stateProvince": "JP-13",
+    "xdm:city": "Tōkyō",
+    "xdm:postalCode": "141-0032",
+    "schema:latitude": 35.6185,
+    "schema:longitude": 139.73237
+  }
+}

@@ -53,6 +53,11 @@
                "type":"string",
                "description":"Dataset ID of data ingestion."
             },
+            "sandboxName":{
+               "title":"Sandbox Name",
+               "type":"string",
+               "description":"Name of the sandbox where data is ingested."
+            },
             "xdm:inputFormat":{
                "title":"Input File Format",
                "description":"Metadata describing the INGEST format of the data being loaded (e.g. Parquet, CSV, JSON).",

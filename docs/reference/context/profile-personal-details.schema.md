@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/profile-personal-details
 ```
 
-Personal related end user profile details.
+Personal related end-user profile details.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -13,7 +13,7 @@ Personal related end user profile details.
 ## Schema Hierarchy
 
 * Profile Personal Details `https://ns.adobe.com/xdm/context/profile-personal-details`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Address](../common/address.schema.md) `https://ns.adobe.com/xdm/common/address`
   * [Email Address](emailaddress.schema.md) `https://ns.adobe.com/xdm/context/emailaddress`
   * [Phone Number](phonenumber.schema.md) `https://ns.adobe.com/xdm/context/phonenumber`

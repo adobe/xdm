@@ -14,7 +14,7 @@
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/experienceevent"
     ],
-    "description": "ExperienceEvent Environment Details.",
+    "description": "ExperienceEvent environment details.",
     "definitions": {
         "experienceevent-environment-details": {
             "properties": {

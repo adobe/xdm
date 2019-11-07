@@ -14,7 +14,7 @@ XDM product variant, master product and key attributes of product in the product
 ## Schema Hierarchy
 
 * Product `https://ns.adobe.com/xdm/context/product`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
 ## Product Example
@@ -114,7 +114,7 @@ The localized description of the product.
 ## xdm:COGS
 ### Cost of Good Sold
 
-Cost of Good Sold. In the `currencyCode` currency.
+Cost of good sold. In the `currencyCode` currency.
 
 `xdm:COGS`
 * is optional
@@ -154,7 +154,7 @@ The unique SKU (Stock Keeping Unit) of the variant assigned by the vendor.
 ## xdm:brand
 ### Brand
 
-Brand of the Master/Variant products.
+Brand of the master/Variant products.
 
 `xdm:brand`
 * is optional
@@ -174,7 +174,7 @@ Brand of the Master/Variant products.
 ## xdm:category
 ### Category
 
-Primary categorization (category) name of the Master/variant.
+Primary categorization (category) name of the master/variant.
 
 `xdm:category`
 * is optional
@@ -429,7 +429,7 @@ The localized name of the product.
 ## xdm:masterProductSKU
 ### Master Product SKU
 
-The unique SKU (Stock Keeping Unit) of the master product assigned by the vendor or manufacturer(to update).
+The unique SKU (Stock Keeping Unit) of the master product assigned by the vendor or manufacturer (to update).
 
 `xdm:masterProductSKU`
 * is optional
@@ -532,7 +532,7 @@ The date when this product variant was last modified. The time using RFC3339 wit
 ## xdm:productURL
 ### Product URL
 
-The URL for the primary Product View of the product variant page.
+The URL for the primary product view of the product variant page.
 
 `xdm:productURL`
 * is optional

@@ -1,22 +1,22 @@
 
-# viewable-third-quartiles Schema
+# Viewable-third-quartiles Schema
 
 ```
 https://ns.adobe.com/xdm/data/viewablethirdquartiles
 ```
 
-The advertising/viewability metric viewable-third-quartiles describes whether at least 50% of the video's pixels were visible at the third quartile of play.
+The advertising/viewability metric `viewable-third-quartiles` describes whether at least 50% of the video's pixels were visible at the third quartile of play.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/viewablethirdquartiles.schema.json](data/viewablethirdquartiles.schema.json) |
 ## Schema Hierarchy
 
-* viewable-third-quartiles `https://ns.adobe.com/xdm/data/viewablethirdquartiles`
+* Viewable-third-quartiles `https://ns.adobe.com/xdm/data/viewablethirdquartiles`
   * [Metric Definition](metricdefinition.schema.md) `https://ns.adobe.com/xdm/data/metricdefinition`
 
 
-## viewable-third-quartiles Example
+## Viewable-third-quartiles Example
 ```json
 {
   "schema:name": "advertising/viewability metric: viewableThirdQuartiles",
@@ -26,7 +26,7 @@ The advertising/viewability metric viewable-third-quartiles describes whether at
 }
 ```
 
-# viewable-third-quartiles Properties
+# Viewable-third-quartiles Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|

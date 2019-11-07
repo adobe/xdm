@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/assets/video
 ```
 
-The Video class is for video assets, i.e. assets that consist of moving pictures and, optionally, sound.
+The video class is for video assets, i.e. assets that consist of moving pictures and, optionally, sound.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -205,7 +205,7 @@ The version ID of the piece of content. It will be generated both on explicit an
 ## tiff:imageLength
 ### Length
 
-Height in pixels. To maintain continuity with the XMP and TIFF standards, the height of an image or video is specified in the property `imageLength`. The duration of the video (also commonly called length) is specified in the property `extent`
+Height in pixels. To maintain continuity with the XMP and TIFF standards, the height of an image or video is specified in the property `imageLength`. The duration of the video (also commonly called length) is specified in the property `extent`.
 
 `tiff:imageLength`
 * is optional
@@ -226,7 +226,7 @@ Height in pixels. To maintain continuity with the XMP and TIFF standards, the he
 ## tiff:imageWidth
 ### Width
 
-Width in pixels
+Width in pixels.
 
 `tiff:imageWidth`
 * is optional
@@ -297,7 +297,7 @@ The video frame rate in frames per second (FPS). Predefined values include:
 These examples show common video and audio frame rates:
 - Film at 24 fps (frame rate = 24, rate basis = 1): `f24`
 - Speech-to-text in milliseconds (frame rate = 1000, rate basis = 1): `f1000`
-- NTSC at 29.97 fps (frame rate = 30000, rate basis = 1001): `f30000s1001`
+- NTSC at 29.97 fps (frame rate = 30000, rate basis = 1001): `f30000s1001`.
 
 `xmpDM:videoFrameRate`
 * is optional

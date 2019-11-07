@@ -13,7 +13,7 @@ Describes a users' communication preferences by channel. For each channel indivi
 ## Schema Hierarchy
 
 * OptInOut `https://ns.adobe.com/xdm/context/optinout`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
 ## OptInOut Example
@@ -76,7 +76,7 @@ The value of this property **must** be equal to one of the [known values below](
 | `not_provided` | Not Provided |
 | `pending` | Pending Verification |
 | `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel |
+| `out` | Opt-Out: the user declines to receive any messages on this channel. |
 
 
 
@@ -100,7 +100,7 @@ The value of this property **must** be equal to one of the [known values below](
 | `not_provided` | Not Provided |
 | `pending` | Pending Verification |
 | `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel |
+| `out` | Opt-Out: the user declines to receive any messages on this channel. |
 
 
 
@@ -124,7 +124,7 @@ The value of this property **must** be equal to one of the [known values below](
 | `not_provided` | Not Provided |
 | `pending` | Pending Verification |
 | `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel |
+| `out` | Opt-Out: the user declines to receive any messages on this channel. |
 
 
 
@@ -148,7 +148,7 @@ The value of this property **must** be equal to one of the [known values below](
 | `not_provided` | Not Provided |
 | `pending` | Pending Verification |
 | `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel |
+| `out` | Opt-Out: the user declines to receive any messages on this channel. |
 
 
 
@@ -172,7 +172,7 @@ The value of this property **must** be equal to one of the [known values below](
 | `not_provided` | Not Provided |
 | `pending` | Pending Verification |
 | `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel |
+| `out` | Opt-Out: the user declines to receive any messages on this channel. |
 
 
 
@@ -196,7 +196,7 @@ The value of this property **must** be equal to one of the [known values below](
 | `not_provided` | Not Provided |
 | `pending` | Pending Verification |
 | `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel |
+| `out` | Opt-Out: the user declines to receive any messages on this channel. |
 
 
 
@@ -220,7 +220,7 @@ The value of this property **must** be equal to one of the [known values below](
 | `not_provided` | Not Provided |
 | `pending` | Pending Verification |
 | `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel |
+| `out` | Opt-Out: the user declines to receive any messages on this channel. |
 
 
 
@@ -244,7 +244,7 @@ The value of this property **must** be equal to one of the [known values below](
 | `not_provided` | Not Provided |
 | `pending` | Pending Verification |
 | `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel |
+| `out` | Opt-Out: the user declines to receive any messages on this channel. |
 
 
 
@@ -268,7 +268,7 @@ The value of this property **must** be equal to one of the [known values below](
 | `not_provided` | Not Provided |
 | `pending` | Pending Verification |
 | `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel |
+| `out` | Opt-Out: the user declines to receive any messages on this channel. |
 
 
 
@@ -292,7 +292,7 @@ The value of this property **must** be equal to one of the [known values below](
 | `not_provided` | Not Provided |
 | `pending` | Pending Verification |
 | `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel |
+| `out` | Opt-Out: the user declines to receive any messages on this channel. |
 
 
 
@@ -316,7 +316,7 @@ The value of this property **must** be equal to one of the [known values below](
 | `not_provided` | Not Provided |
 | `pending` | Pending Verification |
 | `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel |
+| `out` | Opt-Out: the user declines to receive any messages on this channel. |
 
 
 
@@ -340,7 +340,7 @@ The value of this property **must** be equal to one of the [known values below](
 | `not_provided` | Not Provided |
 | `pending` | Pending Verification |
 | `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel |
+| `out` | Opt-Out: the user declines to receive any messages on this channel. |
 
 
 
@@ -364,7 +364,7 @@ The value of this property **must** be equal to one of the [known values below](
 | `not_provided` | Not Provided |
 | `pending` | Pending Verification |
 | `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel |
+| `out` | Opt-Out: the user declines to receive any messages on this channel. |
 
 
 
@@ -388,7 +388,7 @@ The value of this property **must** be equal to one of the [known values below](
 | `not_provided` | Not Provided |
 | `pending` | Pending Verification |
 | `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel |
+| `out` | Opt-Out: the user declines to receive any messages on this channel. |
 
 
 
@@ -412,7 +412,7 @@ The value of this property **must** be equal to one of the [known values below](
 | `not_provided` | Not Provided |
 | `pending` | Pending Verification |
 | `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel |
+| `out` | Opt-Out: the user declines to receive any messages on this channel. |
 
 
 
@@ -436,7 +436,7 @@ The value of this property **must** be equal to one of the [known values below](
 | `not_provided` | Not Provided |
 | `pending` | Pending Verification |
 | `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel |
+| `out` | Opt-Out: the user declines to receive any messages on this channel. |
 
 
 
@@ -460,7 +460,7 @@ The value of this property **must** be equal to one of the [known values below](
 | `not_provided` | Not Provided |
 | `pending` | Pending Verification |
 | `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel |
+| `out` | Opt-Out: the user declines to receive any messages on this channel. |
 
 
 
@@ -484,7 +484,7 @@ The value of this property **must** be equal to one of the [known values below](
 | `not_provided` | Not Provided |
 | `pending` | Pending Verification |
 | `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel |
+| `out` | Opt-Out: the user declines to receive any messages on this channel. |
 
 
 
@@ -508,7 +508,7 @@ The value of this property **must** be equal to one of the [known values below](
 | `not_provided` | Not Provided |
 | `pending` | Pending Verification |
 | `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel |
+| `out` | Opt-Out: the user declines to receive any messages on this channel. |
 
 
 
@@ -532,7 +532,7 @@ The value of this property **must** be equal to one of the [known values below](
 | `not_provided` | Not Provided |
 | `pending` | Pending Verification |
 | `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel |
+| `out` | Opt-Out: the user declines to receive any messages on this channel. |
 
 
 
@@ -556,7 +556,7 @@ The value of this property **must** be equal to one of the [known values below](
 | `not_provided` | Not Provided |
 | `pending` | Pending Verification |
 | `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel |
+| `out` | Opt-Out: the user declines to receive any messages on this channel. |
 
 
 

@@ -17,12 +17,12 @@
                 "xdm:siteSection": {
                     "title": "Site Section",
                     "type": "string",
-                    "description": "The normative name of the site section where this web page resides, which may be used to classify or categorize the interaction"
+                    "description": "The normative name of the site section where this web page resides, which may be used to classify or categorize the interaction."
                 },
                 "xdm:name": {
                     "title": "Name",
                     "type": "string",
-                    "description": "The normative name of the web page. This name is not necessarily the page title or directy associate with page content, but is used to organize a site's pages for classification purposes"
+                    "description": "The normative name of the web page. This name is not necessarily the page title or directly associate with page content, but is used to organize a site's pages for classification purposes."
                 },
                 "xdm:URL": {
                     "title": "URL",

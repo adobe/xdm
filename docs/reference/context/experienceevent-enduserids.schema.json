@@ -7,7 +7,7 @@
     ],
     "$id": "https://ns.adobe.com/xdm/context/experienceevent-enduserids",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "ExperienceEvent endUserIDs",
+    "title": "ExperienceEvent EndUserIDs",
     "type": "object",
     "meta:extensible": true,
     "meta:abstract": true,
@@ -19,7 +19,7 @@
         "experienceevent-enduserids": {
             "properties": {
                 "xdm:endUserIDs": {
-                    "title": "End-User IDs",
+                    "title": "EndUserIDs",
                     "$ref": "https://ns.adobe.com/xdm/context/enduserids",
                     "description": "Condensed, normalized encapsulation of end-user identifiers asserted for this ExperienceEvent."
                 }

@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/commerce
 ```
 
-The entites related to buying and selling activity.
+The entities related to buying and selling activity.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -13,7 +13,7 @@ The entites related to buying and selling activity.
 ## Schema Hierarchy
 
 * Commerce `https://ns.adobe.com/xdm/context/commerce`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Order](../data/order.schema.md) `https://ns.adobe.com/xdm/data/order`
   * [Measure](../data/measure.schema.md) `https://ns.adobe.com/xdm/data/measure`
 
@@ -53,6 +53,7 @@ The entites related to buying and selling activity.
 |----------|------|----------|------------|
 | [xdm:cartAbandons](#xdmcartabandons) | Measure | Optional | Commerce (this schema) |
 | [xdm:checkouts](#xdmcheckouts) | Measure | Optional | Commerce (this schema) |
+| [xdm:inStorePurchase](#xdminstorepurchase) | Measure | Optional | Commerce (this schema) |
 | [xdm:order](#xdmorder) | Order | Optional | Commerce (this schema) |
 | [xdm:productListAdds](#xdmproductlistadds) | Measure | Optional | Commerce (this schema) |
 | [xdm:productListOpens](#xdmproductlistopens) | Measure | Optional | Commerce (this schema) |
@@ -92,6 +93,24 @@ An action during a checkout process of a product list, there can be more than on
 * defined in this schema
 
 ### xdm:checkouts Type
+
+
+* [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
+## xdm:inStorePurchase
+
+inStore Purchase is saved for Analytics use.
+
+`xdm:inStorePurchase`
+* is optional
+* type: Measure
+* defined in this schema
+
+### xdm:inStorePurchase Type
 
 
 * [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`

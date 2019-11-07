@@ -13,7 +13,7 @@ An individual person. May represent a person acting in various roles, such as a 
 ## Schema Hierarchy
 
 * Person `https://ns.adobe.com/xdm/context/person`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Person Name](person-name.schema.md) `https://ns.adobe.com/xdm/context/person-name`
 
 
@@ -27,7 +27,7 @@ An individual person. May represent a person acting in various roles, such as a 
     "xdm:lastName": "Doe",
     "xdm:fullName": "Jane F. Doe"
   },
-  "xdm:birthDate": "1996-01-03"
+  "xdm:birthDayAndMonth": "01-03"
 }
 ```
 
@@ -39,7 +39,7 @@ An individual person. May represent a person acting in various roles, such as a 
     "xdm:lastName": "Doe",
     "xdm:fullName": "Jane F. Doe"
   },
-  "xdm:birthDayAndMonth": "01-03"
+  "xdm:birthDate": "1996-01-03"
 }
 ```
 
@@ -104,7 +104,7 @@ All instances must conform to this regular expression
 
 
 ## xdm:birthYear
-### Birth year
+### Birth Year
 
 The year a person was born including the century (yyyy, e.g 1983).  This field should be used when only the person's age is known, not the full birth date.
 
@@ -150,7 +150,7 @@ The value of this property **must** be equal to one of the [known values below](
 
 
 ## xdm:name
-### Full name
+### Full Name
 
 The person's full name
 

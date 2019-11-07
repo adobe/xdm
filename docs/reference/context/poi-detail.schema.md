@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/poi-detail
 ```
 
-A Point or Place of Interest(POI) Details. Used to capture the techncial and metadata information for a POI.
+A point or place of interest (POI) Details. Used to capture the technical and metadata information for a POI.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -13,7 +13,7 @@ A Point or Place of Interest(POI) Details. Used to capture the techncial and met
 ## Schema Hierarchy
 
 * Point of Interest Details `https://ns.adobe.com/xdm/context/poi-detail`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Beacon](beacon-interaction-details.schema.md) `https://ns.adobe.com/xdm/context/beacon-interaction-details`
   * [Geo Interaction Details](geo-interaction-details.schema.md) `https://ns.adobe.com/xdm/context/geo-interaction-details`
 
@@ -126,7 +126,7 @@ General category assigned for organizing the POIs by the administrator of POI de
 ## xdm:distanceToPOICenter
 ### Distance to POI Center
 
-Estimated distance from the POI Center in meters.
+Estimated distance from the POI center in meters.
 
 `xdm:distanceToPOICenter`
 * is optional

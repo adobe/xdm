@@ -13,7 +13,7 @@ View details for the ad playback captured by the experience event.
 ## Schema Hierarchy
 
 * Ad Asset View Details `https://ns.adobe.com/xdm/context/advertising-timed-asset-view-details`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Ad Break](advertising-break.schema.md) `https://ns.adobe.com/xdm/context/advertising-break`
 
 

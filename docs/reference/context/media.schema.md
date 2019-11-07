@@ -13,7 +13,7 @@ Media context information for content related interactions.
 ## Schema Hierarchy
 
 * Media Information `https://ns.adobe.com/xdm/context/media`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Timed Media Information](media-timed.schema.md) `https://ns.adobe.com/xdm/context/media-timed`
 
 
@@ -103,7 +103,7 @@ Media context information for content related interactions.
 ## xdm:mediaTimed
 ### Timed Media Information
 
-Timed media - main content, ads & chapters
+Timed media - main content, ads & chapters.
 
 `xdm:mediaTimed`
 * is optional

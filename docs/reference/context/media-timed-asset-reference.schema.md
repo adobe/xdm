@@ -13,7 +13,7 @@ Asset information about the main content that was played, but present on all ads
 ## Schema Hierarchy
 
 * Timed Media Primary Asset Reference `https://ns.adobe.com/xdm/context/media-timed-asset-reference`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Series](../external/iptc/series.schema.md) `http://www.iptc.org/series`
   * [Episode](../external/iptc/episode.schema.md) `http://www.iptc.org/season`
   * [Season](../external/iptc/season.schema.md) `http://www.iptc.org/episode`
@@ -115,7 +115,7 @@ The friendly (human-readable) name of the timed media asset.
 ## iptc4xmpExt:Creator
 ### Creator
 
-Party or parties (person or organisation) which created the video, refinement by the role attribute.
+Party or parties (person or organization) which created the video, refinement by the role attribute.
 
 `iptc4xmpExt:Creator`
 * is optional

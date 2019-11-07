@@ -211,7 +211,7 @@ All instances must conform to this regular expression
 ## xdm:dmaID
 ### Designated Market Area
 
-The Nielsen Media Research designated market area.
+The Nielsen media research designated market area.
 
 `xdm:dmaID`
 * is optional
@@ -231,7 +231,7 @@ The Nielsen Media Research designated market area.
 ## xdm:msaID
 ### Metropolitan Statistical Area
 
-The Metropolitan Statistical Area in the USA where the observation occurred.
+The metropolitan statistical area in the USA where the observation occurred.
 
 `xdm:msaID`
 * is optional
@@ -286,12 +286,12 @@ The state, or province portion of the observation. The format follows the [ISO 3
 
 All instances must conform to this regular expression 
 ```regex
-([A-Z]{2}-[A-Z0-9]{1,3}|)
+([A-Z]{2}-[A-Z0-9]{1,3})
 ```
 
-* test example: [US-CA](https://regexr.com/?expression=(%5BA-Z%5D%7B2%7D-%5BA-Z0-9%5D%7B1%2C3%7D%7C)&text=US-CA)
-* test example: [DE-BB](https://regexr.com/?expression=(%5BA-Z%5D%7B2%7D-%5BA-Z0-9%5D%7B1%2C3%7D%7C)&text=DE-BB)
-* test example: [JP-13](https://regexr.com/?expression=(%5BA-Z%5D%7B2%7D-%5BA-Z0-9%5D%7B1%2C3%7D%7C)&text=JP-13)
+* test example: [US-CA](https://regexr.com/?expression=(%5BA-Z%5D%7B2%7D-%5BA-Z0-9%5D%7B1%2C3%7D)&text=US-CA)
+* test example: [DE-BB](https://regexr.com/?expression=(%5BA-Z%5D%7B2%7D-%5BA-Z0-9%5D%7B1%2C3%7D)&text=DE-BB)
+* test example: [JP-13](https://regexr.com/?expression=(%5BA-Z%5D%7B2%7D-%5BA-Z0-9%5D%7B1%2C3%7D)&text=JP-13)
 
 
 

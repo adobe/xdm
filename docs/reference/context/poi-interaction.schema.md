@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/poi-interaction
 ```
 
-A Point or Place of Interest(POI) interaction. Used to capture triggered engagement activities when users enter, leave of come within range of a POI.
+A point or place of interest (POI) interaction. Used to capture triggered engagement activities when users enter, leave of come within range of a POI.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -13,7 +13,7 @@ A Point or Place of Interest(POI) interaction. Used to capture triggered engagem
 ## Schema Hierarchy
 
 * Point of Interest Interaction `https://ns.adobe.com/xdm/context/poi-interaction`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Point of Interest Details](poi-detail.schema.md) `https://ns.adobe.com/xdm/context/poi-detail`
   * [Measure](../data/measure.schema.md) `https://ns.adobe.com/xdm/data/measure`
 
@@ -69,7 +69,7 @@ Detail of the POI that cause the event.
 
 ## xdm:poiEntries
 
-The number of times a person has entered the Point of Interest (POI).
+The number of times a person has entered the point of interest (POI).
 
 `xdm:poiEntries`
 * is optional
@@ -87,7 +87,7 @@ The number of times a person has entered the Point of Interest (POI).
 
 ## xdm:poiExits
 
-The number of times a person has exited the Point of Interest (POI).
+The number of times a person has exited the point of interest (POI).
 
 `xdm:poiExits`
 * is optional

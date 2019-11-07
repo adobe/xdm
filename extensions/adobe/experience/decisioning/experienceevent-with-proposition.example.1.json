@@ -8,14 +8,14 @@
   "xdm:identityMap": {
     "ECID": [
       {
-        "id": "68519882713298129995549973016107434638",
-        "primary": true
+        "xdm:id": "68519882713298129995549973016107434638",
+        "xdm:primary": true
       }
     ],
     "CPGN": [
       {
-        "id": "https://data.adobe.io/entities/identity/1234567",
-        "primary": true
+        "xdm:id": "https://data.adobe.io/entities/identity/1234567",
+        "xdm:primary": true
       }
     ]
   },

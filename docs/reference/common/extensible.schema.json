@@ -8,7 +8,7 @@
     "$schema": "http://json-schema.org/draft-06/schema#",
     "$id": "https://ns.adobe.com/xdm/common/extensible",
     "type": "object",
-    "title": "Extensibility base schema",
+    "title": "Extensibility Base Schema",
     "description": "This schema can be included by referencing `https://ns.adobe.com/xdm/common/extensible`. It will enable property-based extensibility with namespace protection.\n\nIn order to make a given schema extensible, include this section at the bottom of your schema:\n\n```json\n\"allOf\":[\n    {\"$ref\": \"https://ns.adobe.com/xdm/common/extensible#/definitions/@context\"},\n    {\"$ref\": \"#/definitions/…\"}\n  ]\n```\n\nReplace `#/definitions/…` with the correct path to the `definitions` object in your local schema.\n",
     "definitions": {
         "@context": {
@@ -47,6 +47,9 @@
                         "^schema:.*$": {},
                         "^repo:.*$": {},
                         "^iptc4xmpExt:.*$": {},
+                        "^dsp:.*$": {},
+                        "^searchads:.*$": {},
+                        "^adcloud:.*$": {},
                         ".+://.+": {},
                         "@.*": {}
                     },
@@ -207,6 +210,21 @@
                                     "type": "string",
                                     "format": "url",
                                     "const": "http://iptc.org/std/Iptc4xmpExt/1.1/"
+                                },
+                                "dsp": {
+                                    "type": "string",
+                                    "format": "url",
+                                    "const": "https://ns.adobe.com/adcloud/dsp/"
+                                },
+                                "searchads": {
+                                    "type": "string",
+                                    "format": "url",
+                                    "const": "https://ns.adobe.com/adcloud/searchads/"
+                                },
+                                "adcloud": {
+                                    "type": "string",
+                                    "format": "url",
+                                    "const": "https://ns.adobe.com/adcloud/"
                                 }
                             },
                             "additionalProperties": false,
@@ -245,6 +263,9 @@
                         "^schema:.*$": {},
                         "^repo:.*$": {},
                         "^iptc4xmpExt:.*$": {},
+                        "^dsp:.*$": {},
+                        "^searchads:.*$": {},
+                        "^adcloud:.*$": {},
                         ".+://.+": {}
                     },
                     "required": [

@@ -13,7 +13,7 @@ Identity is used to clearly distinguish people that are interacting with digital
 ## Schema Hierarchy
 
 * Identity `https://ns.adobe.com/xdm/context/identity`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Identity Item](identityitem.schema.md) `https://ns.adobe.com/xdm/context/identityitem`
   * [Namespace](namespace.schema.md) `https://ns.adobe.com/xdm/context/namespace`
 
@@ -22,20 +22,20 @@ Identity is used to clearly distinguish people that are interacting with digital
 
 ```json
 {
-  "xdm:id": "id123",
+  "xdm:id": "someone@example.com",
   "xdm:namespace": {
-    "xdm:code": "AA12345"
-  },
-  "xdm:authenticatedState": "ambiguous"
+    "xdm:code": "Email"
+  }
 }
 ```
 
 ```json
 {
-  "xdm:id": "someone@example.com",
+  "xdm:id": "id123",
   "xdm:namespace": {
-    "xdm:code": "Email"
-  }
+    "xdm:code": "AA12345"
+  },
+  "xdm:authenticatedState": "ambiguous"
 }
 ```
 
@@ -67,7 +67,7 @@ The value of this property **must** be equal to one of the [known values below](
 | Value | Description |
 |-------|-------------|
 | `ambiguous` | Ambiguous |
-| `authenticated` | User identified by a login or simular action that was valid at the time of the event observation. |
+| `authenticated` | User identified by a login or similar action that was valid at the time of the event observation. |
 | `loggedOut` | User was identified by a login action at some point of time previously, but is not currently logged in. |
 
 

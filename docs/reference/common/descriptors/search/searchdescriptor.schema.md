@@ -45,6 +45,7 @@ Describes how XDM properties are to be handled for search, including the applica
   "@id": "https://ns.adobe.com/xdm/common/descriptors/searchdescriptor",
   "@type": "xdm:searchdescriptor",
   "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile",
+  "xdm:sourceVersion": 1,
   "search:indexed": true,
   "search:filterable": true,
   "search:store": "storedAndFetchByDefault",
@@ -72,12 +73,13 @@ Describes how XDM properties are to be handled for search, including the applica
 | [xdm:sourceItem](#xdmsourceitem) | complex | Optional |  | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceitem) |
 | [xdm:sourceProperty](#xdmsourceproperty) | `string` | Optional |  | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceproperty) |
 | [xdm:sourceSchema](#xdmsourceschema) | `string` | Optional |  | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceschema) |
+| [xdm:sourceVersion](#xdmsourceversion) | `number` | Optional |  | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceversion) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
 ### Identifier
 
-The unique identifier for the schema descriptor. This property is required when the descriptor is defined outside of the applicable schema, but is optional when applied via 'meta:descriptors'
+The unique identifier for the schema descriptor. This property is required when the descriptor is defined outside of the applicable schema, but is optional when applied via 'meta:descriptors'.
 
 `@id`
 * is optional
@@ -98,7 +100,7 @@ The unique identifier for the schema descriptor. This property is required when 
 ## @type
 ### Type
 
-The type of descriptor this object represents
+The type of descriptor this object represents.
 
 `@type`
 * is optional
@@ -166,7 +168,7 @@ All items must be of the type:
 ## search:defaultAnalyzer
 ### Default analyzer
 
-Default analyzer to be applied when search queries are made against this property
+Default analyzer to be applied when search queries are made against this property.
 
 `search:defaultAnalyzer`
 * is optional
@@ -264,7 +266,7 @@ Whether and how search results can be sorted on this property.
 | `notSortable` | notSortable |
 | `sorted` | sorted |
 | `sortedCaseSensitive` | sortedCaseSensitive |
-| `sortedCaseInsensitive` | soretdCaseInsensitive |
+| `sortedCaseInsensitive` | sortedCaseInsensitive |
 
 
 
@@ -300,7 +302,7 @@ Whether the property value is stored in, and therefore can be retrieved from, th
 ## xdm:sourceItem
 ### Source Item
 
-When present, the selector used to match a specific item in the array pointed to by `sourceProperty`
+When present, the selector used to match a specific item in the array pointed to by `sourceProperty`.
 
 `xdm:sourceItem`
 * is optional
@@ -368,6 +370,26 @@ The source schema this descriptor applies to. This property is required when the
 
 `string`
 * format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+
+
+
+
+
+
+## xdm:sourceVersion
+### Source Version
+
+Major version being referenced.
+
+`xdm:sourceVersion`
+* is optional
+* type: `number`
+* defined in [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceversion)
+
+### xdm:sourceVersion Type
+
+
+`number`
 
 
 

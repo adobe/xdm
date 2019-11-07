@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/experienceevent-directmarketing
 ```
 
-ExperienceEvent Direct Marketing Details.
+ExperienceEvent direct marketing details.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -13,7 +13,7 @@ ExperienceEvent Direct Marketing Details.
 ## Schema Hierarchy
 
 * ExperienceEvent Direct Marketing Details `https://ns.adobe.com/xdm/context/experienceevent-directmarketing`
-  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Direct Marketing](direct-marketing.schema.md) `https://ns.adobe.com/xdm/context/direct-marketing`
 
 
@@ -38,7 +38,7 @@ ExperienceEvent Direct Marketing Details.
 ## xdm:directMarketing
 ### Direct Marketing
 
-Events and properties related to direct/outbound marketing such as email, direct mail, texts and in-app notifications.
+Events and properties related to direct/outbound marketing such as email, direct mail, texts, and in-app notifications.
 
 `xdm:directMarketing`
 * is optional

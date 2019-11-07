@@ -11,7 +11,7 @@ xdm:navOrder: 1
 The goal of the Experience Data Model standard is to define a common language for digital experiences that spans multiple channels, software implementations and vendors. In particular, XDM aims to:
 
 - Enable software that creates, manages, publishes and measures digital experiences to interoperate more easily
-- Facilitate the creation of complex, engaging and intruiging digital experiences across channels
+- Facilitate the creation of complex, engaging and intriguing digital experiences across channels
 - Allow the creation of application programming interfaces (APIs) for experience creation, management, publication and measurement
 
 ## Status

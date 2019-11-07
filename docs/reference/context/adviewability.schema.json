@@ -57,7 +57,7 @@
                     "description": "Whether or not the ad was eligible to viewability measurement. An ad is eligible if the unit has a supported creative format and tag type."
                 },
                 "xdm:implementationDetails": {
-                    "title": "Viewabiltity implementation details",
+                    "title": "Viewabiltity Implementation Details",
                     "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
                     "description": "The name and version of the library instrumented to measure viewability metrics."
                 },

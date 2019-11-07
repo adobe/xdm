@@ -94,7 +94,7 @@ The unique identifier of the coordinates.
 
 ## repo:createDate
 
-The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
+The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The date time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
 
 `repo:createDate`
 * is optional
@@ -119,7 +119,7 @@ The server date and time when the resource was created in the repository, such a
 
 ## repo:modifyDate
 
-The server date and time when the resource was last modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
+The server date and time when the resource was last modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The date time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
 
 `repo:modifyDate`
 * is optional
@@ -294,7 +294,7 @@ All instances must conform to this regular expression
 ## xdm:createdByBatchID
 ### Created by Batch Identifier
 
-The Data Set Files in Catalog Services which has been originating the creation of the entity.
+The dataset files in Catalog Services which has been originating the creation of the entity.
 
 `xdm:createdByBatchID`
 * is optional
@@ -315,7 +315,7 @@ The Data Set Files in Catalog Services which has been originating the creation o
 ## xdm:dmaID
 ### Designated Market Area
 
-The Nielsen Media Research designated market area.
+The Nielsen media research designated market area.
 
 `xdm:dmaID`
 * is optional
@@ -376,7 +376,7 @@ The date that the address was last verified as still belonging to the person.
 ## xdm:modifiedByBatchID
 ### Modified by Batch Identifier
 
-The last Data Set Files in Catalog Services which has modified the entity. At creation time, `modifiedByBatchID` is set as `createdByBatchID`.
+The last dataset files in Catalog Services which has modified the entity. At creation time, `modifiedByBatchID` is set as `createdByBatchID`.
 
 `xdm:modifiedByBatchID`
 * is optional
@@ -397,7 +397,7 @@ The last Data Set Files in Catalog Services which has modified the entity. At cr
 ## xdm:msaID
 ### Metropolitan Statistical Area
 
-The Metropolitan Statistical Area in the USA where the observation occurred.
+The metropolitan statistical area in the USA where the observation occurred.
 
 `xdm:msaID`
 * is optional
@@ -458,7 +458,7 @@ The postal code of the location. Postal codes are not available for all countrie
 ## xdm:primary
 ### Primary
 
-Primary address indicator. A Profile can have only one `primary` address at a given point of time.
+Primary address indicator. A profile can have only one `primary` address at a given point of time.
 
 
 `xdm:primary`
@@ -498,7 +498,7 @@ The region, county, or district portion of the address.
 ## xdm:repositoryCreatedBy
 ### Created by User Identifier
 
-User id who has created the entity.
+User ID who has created the entity.
 
 `xdm:repositoryCreatedBy`
 * is optional
@@ -518,7 +518,7 @@ User id who has created the entity.
 ## xdm:repositoryLastModifiedBy
 ### Modified by User Identifier
 
-User id who last modified the entity. At creation time, `modifiedByUser` is set as `createdByUser`.
+User ID who last modified the entity. At creation time, `modifiedByUser` is set as `createdByUser`.
 
 `xdm:repositoryLastModifiedBy`
 * is optional
@@ -553,12 +553,12 @@ The state, or province portion of the observation. The format follows the [ISO 3
 
 All instances must conform to this regular expression 
 ```regex
-([A-Z]{2}-[A-Z0-9]{1,3}|)
+([A-Z]{2}-[A-Z0-9]{1,3})
 ```
 
-* test example: [US-CA](https://regexr.com/?expression=(%5BA-Z%5D%7B2%7D-%5BA-Z0-9%5D%7B1%2C3%7D%7C)&text=US-CA)
-* test example: [DE-BB](https://regexr.com/?expression=(%5BA-Z%5D%7B2%7D-%5BA-Z0-9%5D%7B1%2C3%7D%7C)&text=DE-BB)
-* test example: [JP-13](https://regexr.com/?expression=(%5BA-Z%5D%7B2%7D-%5BA-Z0-9%5D%7B1%2C3%7D%7C)&text=JP-13)
+* test example: [US-CA](https://regexr.com/?expression=(%5BA-Z%5D%7B2%7D-%5BA-Z0-9%5D%7B1%2C3%7D)&text=US-CA)
+* test example: [DE-BB](https://regexr.com/?expression=(%5BA-Z%5D%7B2%7D-%5BA-Z0-9%5D%7B1%2C3%7D)&text=DE-BB)
+* test example: [JP-13](https://regexr.com/?expression=(%5BA-Z%5D%7B2%7D-%5BA-Z0-9%5D%7B1%2C3%7D)&text=JP-13)
 
 
 

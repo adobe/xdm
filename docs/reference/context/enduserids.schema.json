@@ -10,7 +10,7 @@
     "title": "End-User IDs",
     "type": "object",
     "meta:extensible": true,
-    "description": "The end-user IDs schema is used to represent a federated identity of a visitor or known profile across a number of data sources.\n\nIt is an `object` that is using the `@id` of an XDM data source as keys.\nEach value consists of the (required) ID that is native to the data source, and (optional) metadata about the data source as well as (optional) confidence in the stitching.\n\nAdditionally, this schema can include a property that describes the data source that is responsible for identity stitching.\n",
+    "description": "The End User IDs schema is used to represent a federated identity of a visitor or known profile across a number of data sources.\n\nIt is an `object` that is using the `@id` of an XDM data source as keys.\nEach value consists of the (required) ID that is native to the data source, and (optional) metadata about the data source as well as (optional) confidence in the stitching.\n\nAdditionally, this schema can include a property that describes the data source that is responsible for identity stitching.\n",
     "minProperties": 1,
     "definitions": {
         "enduserids": {
@@ -66,7 +66,7 @@
         }
     },
     "meta:keys": {
-        "https://ns.adobe.com/experience/adcloud": "Adobe AdCloud",
+        "https://ns.adobe.com/experience/adcloud": "Adobe Advertising Cloud",
         "https://ns.adobe.com/experience/tntid": "Adobe Target",
         "https://ns.adobe.com/experience/acid": "Adobe Campaign",
         "https://ns.adobe.com/experience/aaid": "Adobe Analytics",

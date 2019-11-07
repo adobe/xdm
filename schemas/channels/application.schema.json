@@ -9,6 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Application Channel",
   "type": "object",
+  "meta:abstract": true,
   "description":
     "An application channel identifies apps that accepts messages or transmit events to the channel.",
   "definitions": {

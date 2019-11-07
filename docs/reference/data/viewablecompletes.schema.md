@@ -1,22 +1,22 @@
 
-# viewable-completes Schema
+# Viewable-completes Schema
 
 ```
 https://ns.adobe.com/xdm/data/viewablecompletes
 ```
 
-The advertising/viewability metric viewable-completes describes whether at least 50% of the video's pixels were visible at the end of play.
+The advertising/viewability metric `viewable-completes` describes whether at least 50% of the video's pixels were visible at the end of play.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/viewablecompletes.schema.json](data/viewablecompletes.schema.json) |
 ## Schema Hierarchy
 
-* viewable-completes `https://ns.adobe.com/xdm/data/viewablecompletes`
+* Viewable-completes `https://ns.adobe.com/xdm/data/viewablecompletes`
   * [Metric Definition](metricdefinition.schema.md) `https://ns.adobe.com/xdm/data/metricdefinition`
 
 
-## viewable-completes Example
+## Viewable-completes Example
 ```json
 {
   "schema:name": "advertising/viewability metric: viewableCompletes",
@@ -26,7 +26,7 @@ The advertising/viewability metric viewable-completes describes whether at least
 }
 ```
 
-# viewable-completes Properties
+# Viewable-completes Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|

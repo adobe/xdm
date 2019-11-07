@@ -43,7 +43,7 @@
         "xdm:sourceLastModifiedDate": {
           "title": "Customer Source Last Modified Date",
           "type": "string",
-          "format": "date-format",
+          "format": "date-time",
           "description":
           "Timestamp of the record on the customer system"
         }

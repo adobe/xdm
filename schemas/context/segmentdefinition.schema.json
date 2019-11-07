@@ -11,7 +11,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "description": "Segment Definition class to describe a segment from any system",
+  "description": "This is a base class for a segment definition which includes required fields like identity of a segment and name of segment. Segment definitions coming from various system can use this class to build Segment Definition XDM schema.",
   "meta:extends": [
     "https://ns.adobe.com/xdm/data/record",
     "https://ns.adobe.com/xdm/common/auditable"

@@ -63,17 +63,76 @@
           "title": "Segment Builder Model",
           "type": "string",
           "description": "Hash of internal model"
+        },
+        "xdm:sandbox": {
+          "title": "Sandbox",
+          "type": "object",
+          "properties": {
+            "xdm:default": {
+              "title": "Default",
+              "type": "boolean",
+              "description": "Is default"
+            },
+            "xdm:sandboxId": {
+              "title": "Sandbox Id",
+              "type": "string",
+              "description": "ID of the sandbox"
+            },
+            "xdm:sandboxName": {
+              "title": "Sandbox Name",
+              "type": "string",
+              "description": "Name of the sandbox"
+            },
+            "xdm:type": {
+              "title": "Type",
+              "type": "string",
+              "description": "Sandbox Type"
+            }
+          }
+        },
+        "xdm:evaluationInfo": {
+          "title": "Evaluation Info",
+          "type": "object",
+          "properties": {
+            "xdm:batch": {
+              "title": "Batch",
+              "type": "object",
+              "properties": {
+                "xdm:enabled": {
+                  "title": "Enabled",
+                  "type": "boolean",
+                  "description": "Is Enabled"
+                }
+              }
+            },
+            "xdm:continuous": {
+              "title": "Batch",
+              "type": "object",
+              "properties": {
+                "xdm:enabled": {
+                  "title": "Enabled",
+                  "type": "boolean",
+                  "description": "Is Enabled"
+                }
+              }
+            },
+            "xdm:synchronous": {
+              "title": "Batch",
+              "type": "object",
+              "properties": {
+                "xdm:enabled": {
+                  "title": "Enabled",
+                  "type": "boolean",
+                  "description": "Is Enabled"
+                }
+              }
+            }
+          }
         }
       }
     }
   },
   "allOf": [
-    {
-      "$ref": "https://ns.adobe.com/xdm/extensions/profile/segmentdefinition-sandbox"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/extensions/profile/segmentdefinition-evaluationinfo"
-    },
     {
       "$ref": "https://ns.adobe.com/xdm/context/segmentdefinition-expression"
     },

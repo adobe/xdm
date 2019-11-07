@@ -34,6 +34,18 @@
           "title": "Version",
           "type": "string",
           "description": "The version identifier of the API, e.g h.18."
+        },
+        "xdm:environment": {
+          "title": "Environment",
+          "type": "string",
+          "description": "The environment of the implementation",
+          "enum": ["web", "mobile", "server", "iot"],
+          "meta:enum": {
+            "web": "Web or Browser",
+            "mobile": "Mobile App",
+            "server": "Server",
+            "iot": "Internet of Things Device"
+          }
         }
       }
     }

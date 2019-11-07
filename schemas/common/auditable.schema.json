@@ -39,6 +39,13 @@
           "format": "uri-reference",
           "description":
             "The last dataset files in Catalog Services which has modified the entity. At creation time, `modifiedByBatchID` is set as `createdByBatchID`."
+        },
+        "xdm:sourceLastModifiedDate": {
+          "title": "Customer Source Last Modified Date",
+          "type": "string",
+          "format": "date-format",
+          "description":
+          "Timestamp of the record on the customer system"
         }
       }
     }

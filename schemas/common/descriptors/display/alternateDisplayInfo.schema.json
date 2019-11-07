@@ -26,12 +26,22 @@
         "xdm:title": {
           "title": "Title",
           "type": "object",
-          "description": "When present, user friendly title to display."
+          "description": "When present, user friendly title to display.",
+          "patternProperties": {
+            ".+_.+": {
+              "type": "string"
+            }
+          }
         },
         "xdm:description": {
           "title": "Description",
           "type": "object",
-          "description": "When present, user friendly description to display."
+          "description": "When present, user friendly description to display.",
+          "patternProperties": {
+            ".+_.+": {
+              "type": "string"
+            }
+          }
         }
       },
       "anyOf": [

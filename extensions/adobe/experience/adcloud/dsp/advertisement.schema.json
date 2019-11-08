@@ -17,6 +17,11 @@
   "definitions": {
     "dsp-advertisement": {
       "properties": {
+        "dsp:adName": {
+          "title": "Ad Name",
+          "type": "string",
+          "description": "Ad name."
+        },
         "dsp:adKey": {
           "title": "Ad Key",
           "type": "string",
@@ -111,25 +116,25 @@
             "postroll": "postroll",
             "mobile_web": "mobile_web"
           }
-        }
-      },
-      "dsp:promotedVideoId": {
-        "title": "Promoted Video Identifier",
-        "type": "string",
-        "description": "Promoted video Identifier contained in this Ad."
-      },
-      "dsp:adServerId": {
-        "title": "Ad Server Identifier",
-        "type": "string",
-        "description": "Identifier for the Ad Server providing this Ad."
-      },
-      "dsp:placementIds": {
-        "title": "Placement Ids",
-        "type": "array",
-        "items": {
-          "type": "string"
         },
-        "description": "List of Placement Ids where this Ad is used."
+        "dsp:promotedVideoId": {
+          "title": "Promoted Video Identifier",
+          "type": "string",
+          "description": "Promoted video Identifier contained in this Ad."
+        },
+        "dsp:adServerId": {
+          "title": "Ad Server Identifier",
+          "type": "string",
+          "description": "Identifier for the Ad Server providing this Ad."
+        },
+        "dsp:placementIds": {
+          "title": "Placement Ids",
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "List of Placement Ids where this Ad is used."
+        }
       }
     }
   },

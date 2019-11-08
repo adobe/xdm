@@ -45,7 +45,6 @@
         "dsp:advertiserUrl": {
           "title": "Advertiser Url",
           "type": "string",
-          "format": "uri",
           "description": "Advertiser Url."
         },
         "dsp:accountId": {

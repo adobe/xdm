@@ -12,13 +12,13 @@
    "meta:extensible":false,
    "meta:abstract":false,
    "meta:auditable":true,
-   "description":"Customer Notification Events for data ingestion processes.",
+   "description":"Customer notification events for data ingestion processes.",
    "definitions":{
       "ingestion-notification":{
          "properties":{
-            "xdm:eventtype":{
+            "xdm:eventType":{
                "title":"Event Type",
-               "description":"Event Type of customer data ingestion notification",
+               "description":"Event type of customer data ingestion notification.",
                "enum":[
                   "ing_load_success",
                   "ing_load_failure",
@@ -26,21 +26,33 @@
                   "ps_load_failure",
                   "ig_load_success",
                   "ig_load_failure"
-               ]
+               ],
+               "meta:enum": { 
+                  "ing_load_success":"Ing Load Success",
+                  "ing_load_failure":"Ing Load Failure",
+                  "ps_load_success":"Ps Load Success",
+                  "ps_load_failure":"Ps Load Lailure",
+                  "ig_load_success":"Ig Load Success",
+                  "ig_load_failure":"Ig Load Failure"
+               }
             },
             "xdm:status":{
                "title":"Ingestion Status",
                "type":"string",
-               "description":"The current status of this ingestion process",
+               "description":"The current status of this ingestion process.",
                "enum":[
                   "success",
                   "failure"
-               ]
+               ],
+               "meta:enum": {
+                  "success":"Sucess Status",
+                  "failure":"Failure Status"
+               }
             },
             "xdm:ingestionId":{
-               "title":"ID",
+               "title":"Ingestion ID",
                "type":"string",
-               "description":"Unique identifier of customer data ingestion"
+               "description":"Unique identifier of customer data ingestion."
             },
             "xdm:customerIngestionId":{
                "title":"Customer Batch Identifier",
@@ -48,12 +60,12 @@
                "pattern":"^[0-9A-Za-z\\.\\-\\_/@]+$",
                "description":"An externally generated identifier for this ingestion."
             },
-            "datasetId":{
+            "xdm:datasetId":{
                "title":"Dataset ID",
                "type":"string",
-               "description":"Dataset ID of data ingestion."
+               "description":"Dataset id of data ingestion."
             },
-            "sandboxName":{
+            "xdm:sandboxName":{
                "title":"Sandbox Name",
                "type":"string",
                "description":"Name of the sandbox where data is ingested."
@@ -65,7 +77,12 @@
                   "csv",
                   "parquet",
                   "json"
-               ]
+               ],
+               "meta:enum": {
+                  "csv":"CSV format of the file",
+                  "parquet":"Parquet format of the file",
+                  "json" : "JSON format of the file"
+               }
             },
             "xdm:imsOrg":{
                "description":"The owning IMS organization identifier.",
@@ -74,11 +91,11 @@
             },
             "xdm:startTime":{
                "type":"integer",
-               "description":"The Unix timestamp (in milliseconds) when the Batch processing action was started."
+               "description":"The unix timestamp (in milliseconds) when the batch processing action was started."
             },
             "xdm:completionTime":{
                "type":"integer",
-               "description":"The Unix timestamp (in milliseconds) when the Batch processing action was completed. Completed - Started should yield the total processing time.",
+               "description":"The unix timestamp (in milliseconds) when the batch processing action was completed. Completed - Started should yield the total processing time.",
                "maximum":14500000000000
             },
             "xdm:errors":{

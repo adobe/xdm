@@ -145,7 +145,7 @@ This work is licensed under a [Creative Commons Attribution 4.0 International (C
 
 ### You are free to:
 
-- Share — copy and redistribute the material in any medium or format
+- Share — copy and redistribute the material in any medium or format.
 - Adapt — remix, transform, and build upon the material for any purpose, even commercially.
 
 This license is acceptable for Free Cultural Works.

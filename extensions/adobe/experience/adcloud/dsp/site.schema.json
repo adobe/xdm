@@ -30,7 +30,6 @@
         "dsp:siteUrl": {
           "title": "Site Url",
           "type": "string",
-          "format": "uri",
           "description": "Placement site url."
         },
         "dsp:siteType": {

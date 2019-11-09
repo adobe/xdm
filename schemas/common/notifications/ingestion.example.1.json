@@ -1,7 +1,7 @@
 {
-            "xdm:eventtype":"dl_load_success",
+            "xdm:eventType":"dl_load_success",
             "xdm:status":"success",
-            "xdm:id":"batch1234",
+            "xdm:ingestionId":"batch1234",
             "xdm:customerBatchId":"1234@adobe",
             "datasetId":"",
             "xdm:inputFormat":"csv",

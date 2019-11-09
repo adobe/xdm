@@ -19,8 +19,12 @@
     "https://ns.adobe.com/xdm/context/profile-owning-entities",
     "https://ns.adobe.com/xdm/context/identitymap",
     "https://ns.adobe.com/xdm/context/profile-preferences-details",
-    "https://ns.adobe.com/xdm/context/profile-work-details"
-  ],
+    "https://ns.adobe.com/xdm/context/profile-work-details",
+    "https://ns.adobe.com/xdm/context/profile-privacy",
+    "https://ns.adobe.com/xdm/context/profile-push-details",
+    "https://ns.adobe.com/xdm/context/profile-segmentation",
+    "https://ns.adobe.com/xdm/context/profile-subscriptions"
+    ],
   "definitions": {},
   "allOf": [
     {
@@ -39,7 +43,24 @@
       "$ref": "https://ns.adobe.com/xdm/context/profile-preferences-details"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/context/profile-work-details"
+      "$ref": "https://ns.adobe.com/xdm/context/profile-work-details",
+
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/profile-privacy",
+
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/profile-push-details",
+
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/profile-segmentation",
+
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/profile-subscriptions",
+
     }
   ],
   "meta:status": "experimental"

@@ -39,10 +39,10 @@
           "title": "Environment",
           "type": "string",
           "description": "The environment of the implementation",
-          "enum": ["web", "mobile", "server", "iot"],
+          "enum": ["browser", "app", "server", "iot"],
           "meta:enum": {
-            "web": "Web or Browser",
-            "mobile": "Mobile App",
+            "browser": "Web Browser",
+            "app": "Application",
             "server": "Server",
             "iot": "Internet of Things Device"
           }

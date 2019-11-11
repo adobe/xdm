@@ -49,7 +49,7 @@
               }
             }
           },
-          "description": "List of IDs under which external systems track the asset. Example of external systems : google, facebook etc."
+          "description": "List of IDs under which external systems track the asset. Example of external systems : Google and Facebook"
         },
         "xmp:createDate": {
           "title": "Date Created",
@@ -86,12 +86,12 @@
             "label": {
               "title": "Milestone Label",
               "type": "string",
-              "description": "Label for the version of an asset"
+              "description": "Label for the version of an asset."
             },
             "description": {
               "title": "Milestone Description",
               "type": "string",
-              "description": "Description for the version of an asset"
+              "description": "Description for the version of an asset."
             }
           }
         },
@@ -180,7 +180,7 @@
           "items": {
             "$ref": "https://ns.adobe.com/xdm/assets/language-alternative#/definitions/language-alternative"
           },
-          "description": "A name given to the resource. Typically, a Title will be a name by which the resource is formally known."
+          "description": "A name given to the resource. Typically, a title will be a name by which the resource is formally known."
         },
         "dc:description": {
           "type": "array",
@@ -204,7 +204,7 @@
         },
         "xdm:notSafe": {
           "title": "NSFW State",
-          "description": "Indicates if the content is SFW (safe for work). Safe is value 0 or missing value. NSFW is value 1.",
+          "description": "Indicates if the content is safe for work (SFW). Safe is value 0 or missing value. NSFW is value 1.",
           "type": "integer",
           "enum": [
             0,

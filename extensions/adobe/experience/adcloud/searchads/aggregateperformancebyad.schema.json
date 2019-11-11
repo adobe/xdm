@@ -7,12 +7,12 @@
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/xdm/adcloud/searchads/aggregateperformancebyad",
-  "title": "Search Advertising Aggregated Performance Measures By Ad",
+  "title": "Search Advertising Aggregate Performance Measures By Ad",
   "type": "object",
   "meta:extensible": false,
   "meta:abstract": false,
   "meta:extends": ["https://ns.adobe.com/xdm/data/time-series"],
-  "description": "Search Advertising Aggregated Performance Measures By Ad is a collection of aggregated measures pulled from Search Advertising Platforms by Ad/Keyword.",
+  "description": "Search Advertising Aggregate Performance Measures By Ad is a collection of measures pulled from Search Advertising Platforms by Ad/Keyword.",
   "definitions": {
     "aggregateperformancebyad": {
       "properties": {

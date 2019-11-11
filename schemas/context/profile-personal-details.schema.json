@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
-  "description": "Personal related end-user profile details.",
+  "description": "This mixin is used to capture information regarding home address, home phone, mobile phone, fax, and personal email.",
   "definitions": {
     "profile-personal-details": {
       "properties": {

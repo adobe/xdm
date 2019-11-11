@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/profile-subscriptions
 ```
 
-Profile subscriptions for commercial or licensed services, and entitlements.
+This mixin is used to capture information regarding an individual's subscriptions, such as the billing period, contract ID, start date, and end date. Profile subscriptions include commercial or licensed services, and entitlements.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|

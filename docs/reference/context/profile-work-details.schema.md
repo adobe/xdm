@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/profile-work-details
 ```
 
-Work related end-user profile information.
+This mixin is used to capture information regarding work-related details of the individual such as work address, work email, work phone number, and organizations to which the profile belongs.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -14,7 +14,7 @@ Work related end-user profile information.
 
 * Profile Work Details `https://ns.adobe.com/xdm/context/profile-work-details`
   * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Address](../common/address.schema.md) `https://ns.adobe.com/xdm/common/address`
+  * [Postal Address](../common/address.schema.md) `https://ns.adobe.com/xdm/common/address`
   * [Email Address](emailaddress.schema.md) `https://ns.adobe.com/xdm/context/emailaddress`
   * [Phone Number](phonenumber.schema.md) `https://ns.adobe.com/xdm/context/phonenumber`
 
@@ -56,7 +56,7 @@ Work related end-user profile information.
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [xdm:organizations](#xdmorganizations) | `string[]` | Optional | Profile Work Details (this schema) |
-| [xdm:workAddress](#xdmworkaddress) | Address | Optional | Profile Work Details (this schema) |
+| [xdm:workAddress](#xdmworkaddress) | Postal Address | Optional | Profile Work Details (this schema) |
 | [xdm:workEmail](#xdmworkemail) | Email Address | Optional | Profile Work Details (this schema) |
 | [xdm:workPhone](#xdmworkphone) | Phone Number | Optional | Profile Work Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -93,13 +93,13 @@ A work postal address.
 
 `xdm:workAddress`
 * is optional
-* type: Address
+* type: Postal Address
 * defined in this schema
 
 ### xdm:workAddress Type
 
 
-* [Address](../common/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
+* [Postal Address](../common/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
 
 
 

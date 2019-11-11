@@ -14,7 +14,7 @@
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/experienceevent"
     ],
-    "description": "ExperienceEvent details for advertising.",
+    "description": "This mixin is used to capture advertising details related to an ExperienceEvent, such as clicks, completes, impressions, and conversions.",
     "definitions": {
         "experienceevent-advertising": {
             "properties": {

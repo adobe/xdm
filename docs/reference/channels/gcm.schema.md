@@ -1,23 +1,23 @@
 
-# GCM Channel Schema
+# Google Cloud Messaging (GCM) Channel Schema
 
 ```
 https://ns.adobe.com/xdm/channels/gcm
 ```
 
-Google Cloud Messaging channel.
+Use the GCM channel to send push notification messages to the Firebase Cloud Messaging (FCM) service, which replaces the Google Cloud Messaging (GCM) service.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/gcm.schema.json](channels/gcm.schema.json) |
 ## Schema Hierarchy
 
-* GCM Channel `https://ns.adobe.com/xdm/channels/gcm`
+* Google Cloud Messaging (GCM) Channel `https://ns.adobe.com/xdm/channels/gcm`
   * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
 
-## GCM Channel Example
+## Google Cloud Messaging (GCM) Channel Example
 ```json
 {
   "@id": "https://ns.adobe.com/xdm/channels/gcm",
@@ -25,18 +25,18 @@ Google Cloud Messaging channel.
 }
 ```
 
-# GCM Channel Properties
+# Google Cloud Messaging (GCM) Channel Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#id) | `const` | **Required** | GCM Channel (this schema) |
-| [@type](#type) | `const` | Optional | GCM Channel (this schema) |
-| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | GCM Channel (this schema) |
-| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | GCM Channel (this schema) |
+| [@id](#id) | `const` | **Required** | Google Cloud Messaging (GCM) Channel (this schema) |
+| [@type](#type) | `const` | Optional | Google Cloud Messaging (GCM) Channel (this schema) |
+| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | Google Cloud Messaging (GCM) Channel (this schema) |
+| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | Google Cloud Messaging (GCM) Channel (this schema) |
 | [xdm:mediaAction](#xdmmediaaction) | `string` | Optional | [Experience Channel](channel.schema.md#xdmmediaaction) |
 | [xdm:mediaType](#xdmmediatype) | `string` | Optional | [Experience Channel](channel.schema.md#xdmmediatype) |
-| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | GCM Channel (this schema) |
-| [xdm:mode](#xdmmode) | `const` | Optional | GCM Channel (this schema) |
+| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | Google Cloud Messaging (GCM) Channel (this schema) |
+| [xdm:mode](#xdmmode) | `const` | Optional | Google Cloud Messaging (GCM) Channel (this schema) |
 | [xdm:typeAtSource](#xdmtypeatsource) | `string` | Optional | [Experience Channel](channel.schema.md#xdmtypeatsource) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -80,10 +80,10 @@ The value of this property **must** be equal to:
 |-------|-------------|
 | `https://ns.adobe.com/xdm/channel-types/web` | The world wide web, including mobile web |
 | `https://ns.adobe.com/xdm/channel-types/social` | Social media platforms |
-| `https://ns.adobe.com/xdm/channel-types/mobile` | Mobile applications |
-| `https://ns.adobe.com/xdm/channel-types/messaging` | Instant Messaging |
-| `https://ns.adobe.com/xdm/channel-types/email` | E-Mail |
-| `https://ns.adobe.com/xdm/channel-types/offline` | Non-Digital experience channels |
+| `https://ns.adobe.com/xdm/channel-types/mobile` | Mobile apps |
+| `https://ns.adobe.com/xdm/channel-types/messaging` | Instant messaging |
+| `https://ns.adobe.com/xdm/channel-types/email` | Email |
+| `https://ns.adobe.com/xdm/channel-types/offline` | Non-digital experience channels |
 
 
 

@@ -11,9 +11,9 @@
   "xdm:completionTime": 12345678,
   "xdm:errors": [
     {
-      "code": "err1234",
-      "rows": ["1", "2"],
-      "description": "error"
+      "xdm:code": "err1234",
+      "xdm:rows": ["1", "2"],
+      "xdm:description": "error"
     }
   ]
 }

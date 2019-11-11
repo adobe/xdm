@@ -11,7 +11,6 @@
   "type": "object",
   "meta:extensible": false,
   "meta:abstract": false,
-  "meta:auditable": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "description": "Customer notification events for data ingestion processes.",
   "definitions": {
@@ -122,7 +121,7 @@
   },
   "allOf": [
     {
-      "ref":"https://ns.adobe.com/xdm/data/record"
+      "$ref": "https://ns.adobe.com/xdm/data/record"
     },
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"

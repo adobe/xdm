@@ -1,23 +1,23 @@
 
-# E-Mail Channel Schema
+# Email Channel Schema
 
 ```
 https://ns.adobe.com/xdm/channels/email
 ```
 
-E-Mail messages, delivered via SMTP to list subscribers channel.
+Email messages, delivered via SMTP to list subscribers channel.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/email.schema.json](channels/email.schema.json) |
 ## Schema Hierarchy
 
-* E-Mail Channel `https://ns.adobe.com/xdm/channels/email`
+* Email Channel `https://ns.adobe.com/xdm/channels/email`
   * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
 
-## E-Mail Channel Example
+## Email Channel Example
 ```json
 {
   "@id": "https://ns.adobe.com/xdm/channels/email",
@@ -25,18 +25,18 @@ E-Mail messages, delivered via SMTP to list subscribers channel.
 }
 ```
 
-# E-Mail Channel Properties
+# Email Channel Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#id) | `const` | **Required** | E-Mail Channel (this schema) |
-| [@type](#type) | `const` | Optional | E-Mail Channel (this schema) |
-| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | E-Mail Channel (this schema) |
-| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | E-Mail Channel (this schema) |
+| [@id](#id) | `const` | **Required** | Email Channel (this schema) |
+| [@type](#type) | `const` | Optional | Email Channel (this schema) |
+| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | Email Channel (this schema) |
+| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | Email Channel (this schema) |
 | [xdm:mediaAction](#xdmmediaaction) | `string` | Optional | [Experience Channel](channel.schema.md#xdmmediaaction) |
 | [xdm:mediaType](#xdmmediatype) | `string` | Optional | [Experience Channel](channel.schema.md#xdmmediatype) |
-| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | E-Mail Channel (this schema) |
-| [xdm:mode](#xdmmode) | `const` | Optional | E-Mail Channel (this schema) |
+| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | Email Channel (this schema) |
+| [xdm:mode](#xdmmode) | `const` | Optional | Email Channel (this schema) |
 | [xdm:typeAtSource](#xdmtypeatsource) | `string` | Optional | [Experience Channel](channel.schema.md#xdmtypeatsource) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -80,10 +80,10 @@ The value of this property **must** be equal to:
 |-------|-------------|
 | `https://ns.adobe.com/xdm/channel-types/web` | The world wide web, including mobile web |
 | `https://ns.adobe.com/xdm/channel-types/social` | Social media platforms |
-| `https://ns.adobe.com/xdm/channel-types/mobile` | Mobile applications |
-| `https://ns.adobe.com/xdm/channel-types/messaging` | Instant Messaging |
-| `https://ns.adobe.com/xdm/channel-types/email` | E-Mail |
-| `https://ns.adobe.com/xdm/channel-types/offline` | Non-Digital experience channels |
+| `https://ns.adobe.com/xdm/channel-types/mobile` | Mobile apps |
+| `https://ns.adobe.com/xdm/channel-types/messaging` | Instant messaging |
+| `https://ns.adobe.com/xdm/channel-types/email` | Email |
+| `https://ns.adobe.com/xdm/channel-types/offline` | Non-digital experience channels |
 
 
 

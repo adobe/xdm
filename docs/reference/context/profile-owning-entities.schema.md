@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/profile-owning-entities
 ```
 
-Indicates the owning organizational and geographical entities of this profile.
+This mixin is used to capture information regarding a particular organization or geographical unit to which the individual belongs.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|

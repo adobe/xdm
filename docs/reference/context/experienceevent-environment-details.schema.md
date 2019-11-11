@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/experienceevent-environment-details
 ```
 
-ExperienceEvent environment details.
+This mixin is used to capture information regarding environment details related to an ExperienceEvent, such as device details, browser information, local time, and other geographical information.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|

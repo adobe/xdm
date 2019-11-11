@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/segmentdefinition-expression
 ```
 
-Expression defining segment rule
+This mixin helps capture the qualifying expression for a segment.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|

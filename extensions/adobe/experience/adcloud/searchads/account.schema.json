@@ -72,6 +72,18 @@
           "title": "Search Engine Identifier",
           "type": "integer",
           "description": "The applicatio-specified identifier used to identify the Search Advertising Platform Name."
+        },
+        "searchads:createDate": {
+          "type": "string",
+          "format": "date-time",
+          "examples": ["2004-10-23T12:00:00-06:00"],
+          "description": "The date and time when the account was created. An example form is \"2004-10-23T12:00:00-06:00\"."
+        },
+        "searchads:modifyDate": {
+          "type": "string",
+          "format": "date-time",
+          "examples": ["2004-10-23T12:00:00-06:00"],
+          "description": "The date and time when the account was last modified. An example form is \"2004-10-23T12:00:00-06:00\"."
         }
       }
     }

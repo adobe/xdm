@@ -98,11 +98,11 @@
           "items": {
             "type": "object",
             "properties": {
-              "code": {
+              "xdm:code": {
                 "type": "string",
                 "description": "An enumerated code that details the type of error encountered. This value should be understandable by the reader and writer and eventually allow for localized error message (and solution) descriptions."
               },
-              "rows": {
+              "xdm:rows": {
                 "type": "array",
                 "description": "Indicates which rows exhibit this error. Could be a single number, or a hyphen-delimited range.",
                 "items": {
@@ -110,7 +110,7 @@
                   "description": "Row or range of rows this error was encountered on."
                 }
               },
-              "description": {
+              "xdm:description": {
                 "type": "string",
                 "description": "A human-readable description of the error. This message may be transmitted to clients, but isn't meant for customer-facing UIS."
               }

@@ -63,6 +63,18 @@
             "Optimize": "Optimize",
             "Unknown": "Unknown"
           }
+        },
+        "searchads:createDate": {
+          "type": "string",
+          "format": "date-time",
+          "examples": ["2004-10-23T12:00:00-06:00"],
+          "description": "The date and time when the portfolio was created. An example form is \"2004-10-23T12:00:00-06:00\"."
+        },
+        "searchads:modifyDate": {
+          "type": "string",
+          "format": "date-time",
+          "examples": ["2004-10-23T12:00:00-06:00"],
+          "description": "The date and time when the portfolio was last modified. An example form is \"2004-10-23T12:00:00-06:00\"."
         }
       }
     }

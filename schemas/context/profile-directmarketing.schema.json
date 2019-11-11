@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
-  "description": "Direct marketing addressing for profiles.",
+  "description": "This mixin is used to capture information regarding addresses, emails, and phone numbers to be used for direct marketing activities.",
   "definitions": {
     "profile-directmarketing": {
       "properties": {

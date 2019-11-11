@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/segmentdefinition"],
-  "description": "Expression defining segment rule",
+  "description": "This mixin helps capture the qualifying expression for a segment.",
   "definitions": {
     "segmentdefinition-expression": {
       "properties": {

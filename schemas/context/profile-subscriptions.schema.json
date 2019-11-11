@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
-  "description": "Profile subscriptions for commercial or licensed services, and entitlements.",
+  "description": "This mixin is used to capture information regarding an individual's subscriptions, such as the billing period, contract ID, start date, and end date. Profile subscriptions include commercial or licensed services, and entitlements.",
   "definitions": {
     "profile-subscriptions": {
       "properties": {

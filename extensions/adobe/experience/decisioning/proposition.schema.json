@@ -16,7 +16,7 @@
     "https://ns.adobe.com/experience/decisioning/decisionevent"
   ],
   "meta:extends": ["https://ns.adobe.com/xdm/context/identitymap"],
-  "description": "Decision Proposition Reference is used to link to the proposition in experience events that are response to a particular proposition.",
+  "description": "This mixin is used to capture information regarding the proposition ID in an DecisionEvent and link it to a specific proposition in an ExperienceEvent that is part of the decisioning process.",
   "definitions": {
     "proposition-mixin": {
       "properties": {

@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "ExperienceEvent commerce details.",
+  "description": "This mixin is used to capture information regarding commerce activities related to an ExperienceEvent such as standard cart operations (order, checkout, abandon) and product details (SKU, product name, quantity).",
   "definitions": {
     "experienceevent-commerce": {
       "properties": {

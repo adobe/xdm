@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/experienceevent-consumer
 ```
 
-This mixin groups a set of standard fields to describe the behavior of an individual. This mixin can be used to express behavior of a consumer related to digital content consumption (web, mobile app), online or off-line purchases. The use of this standard represention allows for a single representation for data producers and consumers of consumer behavior in Experience Platform
+This mixin groups a set of standard fields to describe the behavior of an individual as it relates to digital content consumption (web, mobile app) as well as online or off-line purchases. Using this standard mixin allows data producers and consumers to have a consistent representation of individual behavior across Experience Platform.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -164,7 +164,7 @@ This mixin groups a set of standard fields to describe the behavior of an indivi
 ## xdm:application
 ### Application
 
-Application related data from  ExperienceEvent observations. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login.
+This mixin is used to capture application information related to an ExperienceEvent, including the name of the application, app version, installs, launches, crashes, and closures. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login.
 
 `xdm:application`
 * is optional

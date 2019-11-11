@@ -10,24 +10,24 @@
     "title": "Application Channel",
     "type": "object",
     "meta:abstract": true,
-    "description": "An application that accepts messages or emit events (Facebook page, Mobile App, ...) channel.",
+    "description": "An application channel identifies apps that accepts messages or transmit events to the channel.",
     "definitions": {
         "application": {
             "properties": {
                 "@id": {
                     "title": "Application Identifier",
                     "type": "string",
-                    "description": "Unique identifier of the application."
+                    "description": "Unique identifier of the app."
                 },
                 "xdm:name": {
                     "title": "Name",
                     "type": "string",
-                    "description": "Name of the application."
+                    "description": "Name of the app."
                 },
                 "xdm:version": {
                     "title": "Version",
                     "type": "string",
-                    "description": "Version of the application."
+                    "description": "Version of the app."
                 }
             }
         }

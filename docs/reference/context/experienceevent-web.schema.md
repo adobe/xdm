@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/experienceevent-web
 ```
 
-The web details for ExperienceEvents.
+This mixin is used to capture information regarding web details related to an ExperienceEvent, such as the interaction, page details, and referrer.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|

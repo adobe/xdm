@@ -13,7 +13,7 @@
 	"auditable": true,
 	"meta:extensible": true,
 	"meta:abstract": true,
-	"meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+	"meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/graphs"],
     "definitions": {
         "graph": {
             "properties": {
@@ -49,32 +49,6 @@
 					"description" : "Time and Date this graph was created",
 					"type": "string",
 					"format": "date-time"
-				},
-				"xdm:edges" : {
-					"type": "object",
-					"properties": {
-						"edges": {
-							"title": "Edges Associated with this graph",
-							"description": "Edges Associated with this graph",
-							"type": "array",
-							"items": {
-								"$ref": "https://ns.adobe.com/xdm/context/graph-edge"
-							}
-						}
-					}
-				},
-				"xdm:nodes" : {
-					"type": "object",
-					"properties": {
-						"nodes": {
-							"title": "Nodes Associated with this edge",
-							"description": "Nodes Associated with this edge",
-							"type": "array",
-							"items": {
-								"$ref": "https://ns.adobe.com/xdm/context/graph-node"
-							}
-						}
-					}
 				}
             }
         }

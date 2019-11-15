@@ -31,12 +31,12 @@
 							"xdm:sourceNodeId": {
 								"title" : "Source Node Id",
 								"description" : "Source node identifier.",
-								"type": "integer"
+								"type": "string"
 							},
 							"xdm:targetNodeId": {
 								"title" : "Target Node Id",
 								"description" : "Target node identifier.",
-								"type": "integer"
+								"type": "string"
 							},
 							"xdm:relation": {
 								"title" : "Relation Description",

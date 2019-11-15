@@ -9,7 +9,7 @@
 	"$schema": "http://json-schema.org/draft-06/schema#",
 	"title": "XDM Graph Schema",
 	"type": "object",
-	"description": "XDM Graph Schema to host Graph Data.",
+	"description": "XDM graph schema to host graph data.",
 	"auditable": true,
 	"meta:extensible": true,
 	"meta:abstract": true,
@@ -18,35 +18,35 @@
         "graph": {
             "properties": {
 				"xdm:graphId": {
-					"title": "Graph Id",
-					"description": "The unique identifier of the identity associated with this Graph.",
+					"title": "Graph Identifier",
+					"description": "The unique identifier of the identity associated with this graph.",
 					"type": "string"
 				},
                 "xdm:label": {
 					"title" : "Graph Label",
-					"description" : "Graph Label",
+					"description" : "Graph label.",
                     "type": "string"
                 },
                 "xdm:directed": {
 					"title" : "Directed Graph Indicator",
-					"description" : "Directed Graph Indicator",
+					"description" : "Directed graph indicator.",
                     "type": "boolean",
                     "default": true
                 },
                 "xdm:graphType": {
 					"title" : "Graph Type",
-					"description" : "Graph Type. Examples - Person Graph, Third Party Graph, Private Graph  etc.",
+					"description" : "Graph type. Examples - Person graph, Third party graph, Private graph etc.",
                     "type": "string"
                 },
 				"xdm:firstCreatedTimestamp": {
-					"title" : "Time and Date this graph was created",
-					"description" : "Time and Date this graph was created",
+					"title" : "Graph Created Date And Time",
+					"description" : "Time and date this graph was created.",
 					"type": "string",
 					"format": "date-time"
 				},
 				"xdm:lastModifiedTimestamp": {
-					"title" : "Time and Date this graph was created",
-					"description" : "Time and Date this graph was created",
+					"title" : "Graph Last Modified Date And Time",
+					"description" : "Time and date this graph was last modified.",
 					"type": "string",
 					"format": "date-time"
 				}

@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/profile-directmarketing
 ```
 
-Direct marketing addressing for profiles.
+This mixin is used to capture information regarding addresses, emails, and phone numbers to be used for direct marketing activities.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|

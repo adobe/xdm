@@ -1,24 +1,24 @@
 
-# Address Schema
+# Postal Address Schema
 
 ```
 https://ns.adobe.com/xdm/common/address
 ```
 
-A postal address. Address could relate to a person's home, work, preferred store location etc.
+A postal address. Address could relate to a person's home, work, or preferred store location.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [common/address.schema.json](common/address.schema.json) |
 ## Schema Hierarchy
 
-* Address `https://ns.adobe.com/xdm/common/address`
+* Postal Address `https://ns.adobe.com/xdm/common/address`
   * [Geo Coordinates](../external/schema/geocoordinates.schema.md) `http://schema.org/GeoCoordinates`
   * [Geo](geo.schema.md) `https://ns.adobe.com/xdm/common/geo`
   * [Audit Trail](auditable.schema.md) `https://ns.adobe.com/xdm/common/auditable`
 
 
-## Address Example
+## Postal Address Example
 ```json
 {
   "@id": "https://data.adobe.io/entities/address/123",
@@ -36,7 +36,7 @@ A postal address. Address could relate to a person's home, work, preferred store
 }
 ```
 
-# Address Properties
+# Postal Address Properties
 
 | Property | Type | Required | Default | Defined by |
 |----------|------|----------|---------|------------|
@@ -48,27 +48,27 @@ A postal address. Address could relate to a person's home, work, preferred store
 | [schema:latitude](#schemalatitude) | `number` | Optional |  | [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemalatitude) |
 | [schema:longitude](#schemalongitude) | `number` | Optional |  | [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemalongitude) |
 | [xdm:city](#xdmcity) | `string` | Optional |  | [Geo](geo.schema.md#xdmcity) |
-| [xdm:country](#xdmcountry) | `string` | Optional |  | Address (this schema) |
+| [xdm:country](#xdmcountry) | `string` | Optional |  | Postal Address (this schema) |
 | [xdm:countryCode](#xdmcountrycode) | `string` | Optional |  | [Geo](geo.schema.md#xdmcountrycode) |
 | [xdm:createdByBatchID](#xdmcreatedbybatchid) | `string` | Optional |  | [Audit Trail](auditable.schema.md#xdmcreatedbybatchid) |
 | [xdm:dmaID](#xdmdmaid) | `integer` | Optional |  | [Geo](geo.schema.md#xdmdmaid) |
-| [xdm:label](#xdmlabel) | `string` | Optional |  | Address (this schema) |
-| [xdm:lastVerifiedDate](#xdmlastverifieddate) | `string` | Optional |  | Address (this schema) |
+| [xdm:label](#xdmlabel) | `string` | Optional |  | Postal Address (this schema) |
+| [xdm:lastVerifiedDate](#xdmlastverifieddate) | `string` | Optional |  | Postal Address (this schema) |
 | [xdm:modifiedByBatchID](#xdmmodifiedbybatchid) | `string` | Optional |  | [Audit Trail](auditable.schema.md#xdmmodifiedbybatchid) |
 | [xdm:msaID](#xdmmsaid) | `integer` | Optional |  | [Geo](geo.schema.md#xdmmsaid) |
-| [xdm:postOfficeBox](#xdmpostofficebox) | `string` | Optional |  | Address (this schema) |
+| [xdm:postOfficeBox](#xdmpostofficebox) | `string` | Optional |  | Postal Address (this schema) |
 | [xdm:postalCode](#xdmpostalcode) | `string` | Optional |  | [Geo](geo.schema.md#xdmpostalcode) |
-| [xdm:primary](#xdmprimary) | `boolean` | Optional |  | Address (this schema) |
-| [xdm:region](#xdmregion) | `string` | Optional |  | Address (this schema) |
+| [xdm:primary](#xdmprimary) | `boolean` | Optional |  | Postal Address (this schema) |
+| [xdm:region](#xdmregion) | `string` | Optional |  | Postal Address (this schema) |
 | [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | Optional |  | [Audit Trail](auditable.schema.md#xdmrepositorycreatedby) |
 | [xdm:repositoryLastModifiedBy](#xdmrepositorylastmodifiedby) | `string` | Optional |  | [Audit Trail](auditable.schema.md#xdmrepositorylastmodifiedby) |
 | [xdm:stateProvince](#xdmstateprovince) | `string` | Optional |  | [Geo](geo.schema.md#xdmstateprovince) |
-| [xdm:status](#xdmstatus) | `string` | Optional | `"active"` | Address (this schema) |
-| [xdm:statusReason](#xdmstatusreason) | `string` | Optional |  | Address (this schema) |
-| [xdm:street1](#xdmstreet1) | `string` | Optional |  | Address (this schema) |
-| [xdm:street2](#xdmstreet2) | `string` | Optional |  | Address (this schema) |
-| [xdm:street3](#xdmstreet3) | `string` | Optional |  | Address (this schema) |
-| [xdm:street4](#xdmstreet4) | `string` | Optional |  | Address (this schema) |
+| [xdm:status](#xdmstatus) | `string` | Optional | `"active"` | Postal Address (this schema) |
+| [xdm:statusReason](#xdmstatusreason) | `string` | Optional |  | Postal Address (this schema) |
+| [xdm:street1](#xdmstreet1) | `string` | Optional |  | Postal Address (this schema) |
+| [xdm:street2](#xdmstreet2) | `string` | Optional |  | Postal Address (this schema) |
+| [xdm:street3](#xdmstreet3) | `string` | Optional |  | Postal Address (this schema) |
+| [xdm:street4](#xdmstreet4) | `string` | Optional |  | Postal Address (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -553,12 +553,12 @@ The state, or province portion of the observation. The format follows the [ISO 3
 
 All instances must conform to this regular expression 
 ```regex
-([A-Z]{2}-[A-Z0-9]{1,3})
+([A-Z]{2}-[A-Z0-9]{1,3}|)
 ```
 
-* test example: [US-CA](https://regexr.com/?expression=(%5BA-Z%5D%7B2%7D-%5BA-Z0-9%5D%7B1%2C3%7D)&text=US-CA)
-* test example: [DE-BB](https://regexr.com/?expression=(%5BA-Z%5D%7B2%7D-%5BA-Z0-9%5D%7B1%2C3%7D)&text=DE-BB)
-* test example: [JP-13](https://regexr.com/?expression=(%5BA-Z%5D%7B2%7D-%5BA-Z0-9%5D%7B1%2C3%7D)&text=JP-13)
+* test example: [US-CA](https://regexr.com/?expression=(%5BA-Z%5D%7B2%7D-%5BA-Z0-9%5D%7B1%2C3%7D%7C)&text=US-CA)
+* test example: [DE-BB](https://regexr.com/?expression=(%5BA-Z%5D%7B2%7D-%5BA-Z0-9%5D%7B1%2C3%7D%7C)&text=DE-BB)
+* test example: [JP-13](https://regexr.com/?expression=(%5BA-Z%5D%7B2%7D-%5BA-Z0-9%5D%7B1%2C3%7D%7C)&text=JP-13)
 
 
 

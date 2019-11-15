@@ -14,7 +14,7 @@ A place in the real world with a physical location.
 
 * Place `https://ns.adobe.com/xdm/context/place`
   * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Address](../common/address.schema.md) `https://ns.adobe.com/xdm/common/address`
+  * [Postal Address](../common/address.schema.md) `https://ns.adobe.com/xdm/common/address`
   * [Geo Shape](../external/schema/geoshape.schema.md) `http://schema.org/GeoShape`
   * [Geo Coordinates](../external/schema/geocoordinates.schema.md) `http://schema.org/GeoCoordinates`
 
@@ -54,7 +54,7 @@ A place in the real world with a physical location.
 | [schema:branchCode](#schemabranchcode) | `string` | Optional | Place (this schema) |
 | [schema:description](#schemadescription) | `string` | Optional | Place (this schema) |
 | [schema:telephone](#schematelephone) | `string` | Optional | Place (this schema) |
-| [xdm:address](#xdmaddress) | Address | Optional | Place (this schema) |
+| [xdm:address](#xdmaddress) | Postal Address | Optional | Place (this schema) |
 | [xdm:containedInPlace](#xdmcontainedinplace) | `string` | Optional | Place (this schema) |
 | [xdm:containsPlaces](#xdmcontainsplaces) | `string[]` | Optional | Place (this schema) |
 | [xdm:pointOfInterest](#xdmpointofinterest) | Geo Coordinates | Optional | Place (this schema) |
@@ -151,13 +151,13 @@ The physical address of the location.
 
 `xdm:address`
 * is optional
-* type: Address
+* type: Postal Address
 * defined in this schema
 
 ### xdm:address Type
 
 
-* [Address](../common/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
+* [Postal Address](../common/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
 
 
 

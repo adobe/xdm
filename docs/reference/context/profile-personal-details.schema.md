@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/profile-personal-details
 ```
 
-Personal related end-user profile details.
+This mixin is used to capture information regarding home address, home phone, mobile phone, fax, and personal email.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -14,7 +14,7 @@ Personal related end-user profile details.
 
 * Profile Personal Details `https://ns.adobe.com/xdm/context/profile-personal-details`
   * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Address](../common/address.schema.md) `https://ns.adobe.com/xdm/common/address`
+  * [Postal Address](../common/address.schema.md) `https://ns.adobe.com/xdm/common/address`
   * [Email Address](emailaddress.schema.md) `https://ns.adobe.com/xdm/context/emailaddress`
   * [Phone Number](phonenumber.schema.md) `https://ns.adobe.com/xdm/context/phonenumber`
 
@@ -35,7 +35,7 @@ Personal related end-user profile details.
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [xdm:faxPhone](#xdmfaxphone) | Phone Number | Optional | Profile Personal Details (this schema) |
-| [xdm:homeAddress](#xdmhomeaddress) | Address | Optional | Profile Personal Details (this schema) |
+| [xdm:homeAddress](#xdmhomeaddress) | Postal Address | Optional | Profile Personal Details (this schema) |
 | [xdm:homePhone](#xdmhomephone) | Phone Number | Optional | Profile Personal Details (this schema) |
 | [xdm:mobilePhone](#xdmmobilephone) | Phone Number | Optional | Profile Personal Details (this schema) |
 | [xdm:personalEmail](#xdmpersonalemail) | Email Address | Optional | Profile Personal Details (this schema) |
@@ -67,13 +67,13 @@ A home postal address.
 
 `xdm:homeAddress`
 * is optional
-* type: Address
+* type: Postal Address
 * defined in this schema
 
 ### xdm:homeAddress Type
 
 
-* [Address](../common/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
+* [Postal Address](../common/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
 
 
 

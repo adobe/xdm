@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/profile-person-details
 ```
 
-Profile person details including naming, gender etc.
+This mixin is used to capture information regarding name, gender, and birth date of an individual.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|

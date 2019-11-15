@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/experienceevent-commerce
 ```
 
-ExperienceEvent commerce details.
+This mixin is used to capture information regarding commerce activities related to an ExperienceEvent such as standard cart operations (order, checkout, abandon) and product details (SKU, product name, quantity).
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|

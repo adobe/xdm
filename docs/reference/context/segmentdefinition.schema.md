@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/segmentdefinition
 ```
 
-Segment Definition class to describe a segment from any system
+This is the base class for a segment definition which includes required fields like identity of a segment and name of segment. Segment definitions coming from various system can use this class to build Segment Definition XDM schema.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|

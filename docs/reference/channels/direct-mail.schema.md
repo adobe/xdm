@@ -80,10 +80,10 @@ The value of this property **must** be equal to:
 |-------|-------------|
 | `https://ns.adobe.com/xdm/channel-types/web` | The world wide web, including mobile web |
 | `https://ns.adobe.com/xdm/channel-types/social` | Social media platforms |
-| `https://ns.adobe.com/xdm/channel-types/mobile` | Mobile applications |
-| `https://ns.adobe.com/xdm/channel-types/messaging` | Instant Messaging |
-| `https://ns.adobe.com/xdm/channel-types/email` | E-Mail |
-| `https://ns.adobe.com/xdm/channel-types/offline` | Non-Digital experience channels |
+| `https://ns.adobe.com/xdm/channel-types/mobile` | Mobile apps |
+| `https://ns.adobe.com/xdm/channel-types/messaging` | Instant messaging |
+| `https://ns.adobe.com/xdm/channel-types/email` | Email |
+| `https://ns.adobe.com/xdm/channel-types/offline` | Non-digital experience channels |
 
 
 

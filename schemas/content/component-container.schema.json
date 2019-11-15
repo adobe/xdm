@@ -8,7 +8,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/xdm/content/component-container",
   "type": "object",
-  "title": "Component Container",
+  "title": "Component container",
   "meta:extensible": true,
   "description": "",
   "definitions": {
@@ -18,7 +18,7 @@
           "type": "string",
           "format": "uri",
           "description":
-            "Type of the container. Acts as processing hint for the client."
+            "Type of the container, acts as processing hint for the client."
         },
         "xdm:items": {
           "type": "object",

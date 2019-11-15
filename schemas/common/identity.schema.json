@@ -11,7 +11,7 @@
   "type": "object",  
   "meta:extensible": true,
   "description":
-    "This model represents an authenticated IMS User. The IMS user principal is a user account under Adobe's identity management system (IMS).",
+    "This model represents an authenticated IMS user. The IMS user principal is a user account under Adobe's identity management system (IMS).",
   "definitions": {
     "identity": {
       "type": "object",
@@ -45,13 +45,13 @@
         "title": "Image",
         "format": "uri",
         "type": "string",
-        "description": "Profile avatar/picture of the person."
+        "description": "Profile avatar or picture of the person."
       },
       "xdm:profileLink": {
         "title": "Image",
         "format": "uri",
         "type": "string",
-        "description": "Link to the public profile of the person. An example of the same is Adobe Behance public profile."
+        "description": "Link to the public profile of the person, for example linking to the users Adobe Behance public profile."
       }
     }
   },

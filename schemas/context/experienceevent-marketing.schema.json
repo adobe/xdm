@@ -7,12 +7,12 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/experienceevent-marketing",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "ExperienceEvent Details for Marketing",
+  "title": "ExperienceEvent details for marketing",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "ExperienceEvent details for marketing.",
+  "description": "ExperienceEvent details for marketing relates to marketing activities that are active with the touchpoint.",
   "definitions": {
     "experienceevent-marketing": {
       "properties": {

@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/profile-owning-entities",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Profile Owning Entity Details",
+  "title": "Profile owning entity details",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
@@ -17,13 +17,13 @@
     "profile-owning-entities": {
       "properties": {
         "xdm:orgUnit": {
-          "title": "Organizational Unit",
+          "title": "Organizational unit",
           "$ref": "https://ns.adobe.com/xdm/common/orgunit",
           "description":
             "The unit within the organization owning the profile. This can be used to reference the organization details maintained in another dataset."
         },
         "xdm:geoUnit": {
-          "title": "Geographical Unit",
+          "title": "Geographical unit",
           "$ref": "https://ns.adobe.com/xdm/common/geounit",
           "description":
             "The geographical unit within the organization owning the profile. This can be used to reference the geographical information maintained in another dataset."

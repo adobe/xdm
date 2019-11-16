@@ -123,6 +123,13 @@
       "type": "string",
       "pattern": "^(\\w+|\\*)/([-.\\w.]+|\\*)\\+dcx$",
       "description": "The DCX format or group of formats this schema can be applied to in validation workflows."
+    },
+    "meta:mapKeyValues": {
+      "type": "array",
+	  "description": "Meta tag for values of a map."
+      "items": {
+        "type": "string"
+      }
     }
   },
   "allOf": [

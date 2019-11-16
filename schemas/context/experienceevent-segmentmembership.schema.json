@@ -29,6 +29,7 @@
           "title" : "Segment Membership Map",
           "type" : "object",
           "meta:xdmType": "map",
+		  "meta:mapKeyValues":["AAMSegments", "AAMTraits"],
           "additionalProperties" : {
             "title": "Segment Membership per Namespace",
             "type": "object",

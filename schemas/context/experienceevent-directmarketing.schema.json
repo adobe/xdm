@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "ExperienceEvent direct marketing details are events and properties related to direct and outbound marketing such as email, direct mail, texts, and in-app notifications.",
+  "description": "This mixin is used to capture information regarding direct marketing details related to an ExperienceEvent. This includes opens, clicks, impressions, and unsubscribes.",
   "definitions": {
     "experienceevent-directmarketing": {
       "properties": {

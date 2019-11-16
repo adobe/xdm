@@ -1,23 +1,23 @@
 
-# WNS Channel Schema
+# Windows Push Notification Service (WNS) Channel Schema
 
 ```
 https://ns.adobe.com/xdm/channels/wns
 ```
 
-Windows Push Notification Service channel.
+Windows Push is a notification service developed by Microsoft for all devices running Microsoft Windows platforms. The service enables sending push data to Windows and Universal Windows platform apps which implement the feature.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/wns.schema.json](channels/wns.schema.json) |
 ## Schema Hierarchy
 
-* WNS Channel `https://ns.adobe.com/xdm/channels/wns`
+* Windows Push Notification Service (WNS) Channel `https://ns.adobe.com/xdm/channels/wns`
   * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
 
-## WNS Channel Example
+## Windows Push Notification Service (WNS) Channel Example
 ```json
 {
   "@id": "https://ns.adobe.com/xdm/channels/wns",
@@ -25,18 +25,18 @@ Windows Push Notification Service channel.
 }
 ```
 
-# WNS Channel Properties
+# Windows Push Notification Service (WNS) Channel Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#id) | `const` | **Required** | WNS Channel (this schema) |
-| [@type](#type) | `const` | Optional | WNS Channel (this schema) |
-| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | WNS Channel (this schema) |
-| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | WNS Channel (this schema) |
+| [@id](#id) | `const` | **Required** | Windows Push Notification Service (WNS) Channel (this schema) |
+| [@type](#type) | `const` | Optional | Windows Push Notification Service (WNS) Channel (this schema) |
+| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | Windows Push Notification Service (WNS) Channel (this schema) |
+| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | Windows Push Notification Service (WNS) Channel (this schema) |
 | [xdm:mediaAction](#xdmmediaaction) | `string` | Optional | [Experience Channel](channel.schema.md#xdmmediaaction) |
 | [xdm:mediaType](#xdmmediatype) | `string` | Optional | [Experience Channel](channel.schema.md#xdmmediatype) |
-| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | WNS Channel (this schema) |
-| [xdm:mode](#xdmmode) | `const` | Optional | WNS Channel (this schema) |
+| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | Windows Push Notification Service (WNS) Channel (this schema) |
+| [xdm:mode](#xdmmode) | `const` | Optional | Windows Push Notification Service (WNS) Channel (this schema) |
 | [xdm:typeAtSource](#xdmtypeatsource) | `string` | Optional | [Experience Channel](channel.schema.md#xdmtypeatsource) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -80,10 +80,10 @@ The value of this property **must** be equal to:
 |-------|-------------|
 | `https://ns.adobe.com/xdm/channel-types/web` | The world wide web, including mobile web |
 | `https://ns.adobe.com/xdm/channel-types/social` | Social media platforms |
-| `https://ns.adobe.com/xdm/channel-types/mobile` | Mobile applications |
-| `https://ns.adobe.com/xdm/channel-types/messaging` | Instant Messaging |
-| `https://ns.adobe.com/xdm/channel-types/email` | E-Mail |
-| `https://ns.adobe.com/xdm/channel-types/offline` | Non-Digital experience channels |
+| `https://ns.adobe.com/xdm/channel-types/mobile` | Mobile apps |
+| `https://ns.adobe.com/xdm/channel-types/messaging` | Instant messaging |
+| `https://ns.adobe.com/xdm/channel-types/email` | Email |
+| `https://ns.adobe.com/xdm/channel-types/offline` | Non-digital experience channels |
 
 
 

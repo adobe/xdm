@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "ExperienceEvent details information related to web or mobile search.",
+  "description": "This mixin is used to capture search-related information for an ExperienceEvent, such as search engine, paid search (boolean), keywords, and position.",
   "definitions": {
     "experienceevent-search": {
       "properties": {

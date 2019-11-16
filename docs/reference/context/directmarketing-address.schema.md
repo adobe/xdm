@@ -13,7 +13,7 @@ Direct Marketing Address.
 ## Schema Hierarchy
 
 * Direct Marketing Address `https://ns.adobe.com/xdm/context/directmarketing-address`
-  * [Address](../common/address.schema.md) `https://ns.adobe.com/xdm/common/address`
+  * [Postal Address](../common/address.schema.md) `https://ns.adobe.com/xdm/common/address`
 
 
 ## Direct Marketing Address Example
@@ -40,20 +40,20 @@ Direct Marketing Address.
 
 | Property | Type | Required | Default | Defined by |
 |----------|------|----------|---------|------------|
-| [xdm:country](#xdmcountry) | `string` | Optional |  | [Address](../common/address.schema.md#xdmcountry) |
+| [xdm:country](#xdmcountry) | `string` | Optional |  | [Postal Address](../common/address.schema.md#xdmcountry) |
 | [xdm:errorCount](#xdmerrorcount) | `integer` | Optional |  | Direct Marketing Address (this schema) |
-| [xdm:label](#xdmlabel) | `string` | Optional |  | [Address](../common/address.schema.md#xdmlabel) |
-| [xdm:lastVerifiedDate](#xdmlastverifieddate) | `string` | Optional |  | [Address](../common/address.schema.md#xdmlastverifieddate) |
-| [xdm:postOfficeBox](#xdmpostofficebox) | `string` | Optional |  | [Address](../common/address.schema.md#xdmpostofficebox) |
-| [xdm:primary](#xdmprimary) | `boolean` | Optional |  | [Address](../common/address.schema.md#xdmprimary) |
+| [xdm:label](#xdmlabel) | `string` | Optional |  | [Postal Address](../common/address.schema.md#xdmlabel) |
+| [xdm:lastVerifiedDate](#xdmlastverifieddate) | `string` | Optional |  | [Postal Address](../common/address.schema.md#xdmlastverifieddate) |
+| [xdm:postOfficeBox](#xdmpostofficebox) | `string` | Optional |  | [Postal Address](../common/address.schema.md#xdmpostofficebox) |
+| [xdm:primary](#xdmprimary) | `boolean` | Optional |  | [Postal Address](../common/address.schema.md#xdmprimary) |
 | [xdm:quality](#xdmquality) | `string` | Optional |  | Direct Marketing Address (this schema) |
-| [xdm:region](#xdmregion) | `string` | Optional |  | [Address](../common/address.schema.md#xdmregion) |
-| [xdm:status](#xdmstatus) | `string` | Optional | `"active"` | [Address](../common/address.schema.md#xdmstatus) |
-| [xdm:statusReason](#xdmstatusreason) | `string` | Optional |  | [Address](../common/address.schema.md#xdmstatusreason) |
-| [xdm:street1](#xdmstreet1) | `string` | Optional |  | [Address](../common/address.schema.md#xdmstreet1) |
-| [xdm:street2](#xdmstreet2) | `string` | Optional |  | [Address](../common/address.schema.md#xdmstreet2) |
-| [xdm:street3](#xdmstreet3) | `string` | Optional |  | [Address](../common/address.schema.md#xdmstreet3) |
-| [xdm:street4](#xdmstreet4) | `string` | Optional |  | [Address](../common/address.schema.md#xdmstreet4) |
+| [xdm:region](#xdmregion) | `string` | Optional |  | [Postal Address](../common/address.schema.md#xdmregion) |
+| [xdm:status](#xdmstatus) | `string` | Optional | `"active"` | [Postal Address](../common/address.schema.md#xdmstatus) |
+| [xdm:statusReason](#xdmstatusreason) | `string` | Optional |  | [Postal Address](../common/address.schema.md#xdmstatusreason) |
+| [xdm:street1](#xdmstreet1) | `string` | Optional |  | [Postal Address](../common/address.schema.md#xdmstreet1) |
+| [xdm:street2](#xdmstreet2) | `string` | Optional |  | [Postal Address](../common/address.schema.md#xdmstreet2) |
+| [xdm:street3](#xdmstreet3) | `string` | Optional |  | [Postal Address](../common/address.schema.md#xdmstreet3) |
+| [xdm:street4](#xdmstreet4) | `string` | Optional |  | [Postal Address](../common/address.schema.md#xdmstreet4) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:country
@@ -64,7 +64,7 @@ The name of the government-administered territory. Other than `xdm:countryCode`,
 `xdm:country`
 * is optional
 * type: `string`
-* defined in [Address](../common/address.schema.md#xdmcountry)
+* defined in [Postal Address](../common/address.schema.md#xdmcountry)
 
 ### xdm:country Type
 
@@ -104,7 +104,7 @@ Free form name of the address.
 `xdm:label`
 * is optional
 * type: `string`
-* defined in [Address](../common/address.schema.md#xdmlabel)
+* defined in [Postal Address](../common/address.schema.md#xdmlabel)
 
 ### xdm:label Type
 
@@ -124,7 +124,7 @@ The date that the address was last verified as still belonging to the person.
 `xdm:lastVerifiedDate`
 * is optional
 * type: `string`
-* defined in [Address](../common/address.schema.md#xdmlastverifieddate)
+* defined in [Postal Address](../common/address.schema.md#xdmlastverifieddate)
 
 ### xdm:lastVerifiedDate Type
 
@@ -145,7 +145,7 @@ Post office box of the address.
 `xdm:postOfficeBox`
 * is optional
 * type: `string`
-* defined in [Address](../common/address.schema.md#xdmpostofficebox)
+* defined in [Postal Address](../common/address.schema.md#xdmpostofficebox)
 
 ### xdm:postOfficeBox Type
 
@@ -167,7 +167,7 @@ Primary address indicator. A profile can have only one `primary` address at a gi
 `xdm:primary`
 * is optional
 * type: `boolean`
-* defined in [Address](../common/address.schema.md#xdmprimary)
+* defined in [Postal Address](../common/address.schema.md#xdmprimary)
 
 ### xdm:primary Type
 
@@ -216,7 +216,7 @@ The region, county, or district portion of the address.
 `xdm:region`
 * is optional
 * type: `string`
-* defined in [Address](../common/address.schema.md#xdmregion)
+* defined in [Postal Address](../common/address.schema.md#xdmregion)
 
 ### xdm:region Type
 
@@ -237,7 +237,7 @@ An indication as to the ability to use the address.
 * is optional
 * type: `string`
 * default: `"active"`
-* defined in [Address](../common/address.schema.md#xdmstatus)
+* defined in [Postal Address](../common/address.schema.md#xdmstatus)
 
 ### xdm:status Type
 
@@ -266,7 +266,7 @@ A description of the current status.
 `xdm:statusReason`
 * is optional
 * type: `string`
-* defined in [Address](../common/address.schema.md#xdmstatusreason)
+* defined in [Postal Address](../common/address.schema.md#xdmstatusreason)
 
 ### xdm:statusReason Type
 
@@ -286,7 +286,7 @@ Primary Street level information, apartment number, street number and street nam
 `xdm:street1`
 * is optional
 * type: `string`
-* defined in [Address](../common/address.schema.md#xdmstreet1)
+* defined in [Postal Address](../common/address.schema.md#xdmstreet1)
 
 ### xdm:street1 Type
 
@@ -306,7 +306,7 @@ Optional street information second line.
 `xdm:street2`
 * is optional
 * type: `string`
-* defined in [Address](../common/address.schema.md#xdmstreet2)
+* defined in [Postal Address](../common/address.schema.md#xdmstreet2)
 
 ### xdm:street2 Type
 
@@ -326,7 +326,7 @@ Optional street information third line.
 `xdm:street3`
 * is optional
 * type: `string`
-* defined in [Address](../common/address.schema.md#xdmstreet3)
+* defined in [Postal Address](../common/address.schema.md#xdmstreet3)
 
 ### xdm:street3 Type
 
@@ -346,7 +346,7 @@ Optional street information fourth line.
 `xdm:street4`
 * is optional
 * type: `string`
-* defined in [Address](../common/address.schema.md#xdmstreet4)
+* defined in [Postal Address](../common/address.schema.md#xdmstreet4)
 
 ### xdm:street4 Type
 

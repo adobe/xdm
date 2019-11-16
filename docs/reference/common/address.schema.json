@@ -7,14 +7,14 @@
     ],
     "$id": "https://ns.adobe.com/xdm/common/address",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Address",
+    "title": "Postal Address",
     "type": "object",
     "meta:auditable": true,
     "meta:extends": [
         "http://schema.org/GeoCoordinates",
         "https://ns.adobe.com/xdm/common/geo"
     ],
-    "description": "A postal address. Address could relate to a person's home, work, preferred store location etc.",
+    "description": "A postal address. Address could relate to a person's home, work, or preferred store location.",
     "definitions": {
         "address": {
             "properties": {

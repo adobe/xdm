@@ -126,7 +126,7 @@
     },
     "meta:mapKeyValues": {
       "type": "array",
-	  "description": "Meta tag for values of a map."
+	  "description": "Meta tag for values of a map.",
       "items": {
         "type": "string"
       }

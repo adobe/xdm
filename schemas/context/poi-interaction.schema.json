@@ -16,6 +16,12 @@
       "properties": {
         "xdm:POIDetail": {
           "title": "POI Detail",
+          "meta:status": "deprecated",
+          "description": "Detail of the POI that cause the event.",
+          "$ref": "https://ns.adobe.com/xdm/context/poi-detail"
+        },
+         "xdm:poiDetail": {
+          "title": "POI Detail",
           "description": "Detail of the POI that cause the event.",
           "$ref": "https://ns.adobe.com/xdm/context/poi-detail"
         },

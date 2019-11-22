@@ -20,7 +20,7 @@
           "meta:status": "deprecated",
           "description": "The unique identifier of the POI."
         },
-        "xdm:poiId": {
+        "xdm:poiID": {
           "title": "POI Identity",
           "type": "string",
           "description": "The unique identifier of the POI."

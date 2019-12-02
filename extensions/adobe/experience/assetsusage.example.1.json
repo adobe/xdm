@@ -1,0 +1,48 @@
+{
+  "xdm:product": "Campaign",
+  "xdm:productName": "My Campaign",
+  "xdm:productId": "1234",
+  "xdm:messageId": "message_id1",
+  "xdm:deliveryId": "12345",
+  "xdm:channel": "email",
+  "xdm:assets": [
+    {
+      "xdm:repoId": "CompanyDesignsRepository",
+      "xdm:assetId": "urn:aaid:sc:VA7:0bc31bc0-e935-4922-8d1b-4b7b32ef07e6",
+      "xdm:linkId": "Link-1"
+    },
+    {
+      "xdm:repoId": "CompanySalesRepository",
+      "xdm:assetId": "urn:aaid:sc:VA7:0bc31bc0-e935-4922-8d1b-4b7b32ef07e5",
+      "xdm:linkId": "Link-2"
+    }
+  ],
+  "xdm:audiences": [
+    {
+      "xdm:audienceId": "Audience One",
+      "xdm:audienceSize": 10000
+    },
+    {
+      "xdm:audienceId": "Audience Two",
+      "xdm:audienceSize": 20000
+    },
+    {
+      "xdm:audienceId": "Audience Three",
+      "xdm:audienceSize": 30000
+    }
+  ],
+  "xdm:regions": [
+    {
+      "xdm:region": "US",
+      "xdm:assetId": "urn:aaid:sc:VA7:0bc31bc0-e935-4922-8d1b-4b7b32ef07e6"
+    },
+    {
+      "xdm:region": "EUROPE",
+      "xdm:assetId": "urn:aaid:sc:VA7:0bc31bc0-e935-4922-8d1b-4b7b32ef07e5"
+    },
+    {
+      "xdm:region": "APAC",
+      "xdm:assetId": "urn:aaid:sc:VA7:0bc31bc0-e935-4922-8d1b-4b7b32ef07e5"
+    }
+  ]
+}

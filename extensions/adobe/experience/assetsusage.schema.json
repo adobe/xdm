@@ -1,0 +1,130 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This file is licensed to you under the Apache License, Version 2.0 (the 'License');",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at http://www.apache.org/licenses/LICENSE-2.0"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/experience/assetsusage",
+  "title": "AssetsUsage Event Full Extension",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "This is the schema for asset usage in any product",
+  "type": "object",
+  "properties": {
+    "xdm:product": {
+      "type": "string",
+      "description": "The product using the asset",
+      "examples": ["Adobe Campaign", "Adobe Target"]
+    },
+    "xdm:productName": {
+      "type": "string",
+      "description": "The instance name of the product",
+      "examples": ["My Campaign", "My Target"]
+    },
+    "xdm:productId": {
+      "type": "string",
+      "description": "The instance identifier of the product",
+      "examples": ["12345", "23456"]
+    },
+    "xdm:deliveryId": {
+      "type": "string",
+      "description": "Usage Delivery Identifier of the product, optional",
+      "examples": ["12345", "23456"]
+    },
+    "xdm:channel": {
+      "type": "string",
+      "description": "The channel in which this asset was used by the product",
+      "examples": ["email", "sms"]
+    },
+    "xdm:assets": {
+      "type": "array",
+      "description": "The assets used in the product",
+      "items": {
+        "type": "object",
+        "properties": {
+          "xdm:repoId": {
+            "type": "string",
+            "description": "The repository of the asset",
+            "examples": [
+              "12345678-e935-4922-8d1b-4b7b32ef07e5",
+              "56789012-e935-4922-8d1b-4b7b32ef07e5"
+            ]
+          },
+          "xdm:assetId": {
+            "type": "string",
+            "description": "The identifier of the asset",
+            "examples": [
+              "abcdef-e935-4922-8d1b-4b7b32ef07e5",
+              "fedcba-e935-4922-8d1b-4b7b32ef07e5"
+            ]
+          },
+          "xdm:version": {
+            "type": "string",
+            "description": "The version of the asset",
+            "examples": ["1", "15b"]
+          },
+          "xdm:linkId": {
+            "type": "string",
+            "description": "Tracking URL ID as used in any channel",
+            "examples": ["98765", "98785"]
+          }
+        },
+        "required": ["xdm:repoId", "xdm:assetId", "xdm:linkId"]
+      }
+    },
+    "xdm:audiences": {
+      "type": "array",
+      "description": "The audiences for the assets used in the product",
+      "items": {
+        "type": "object",
+        "properties": {
+          "xdm:audienceId": {
+            "type": "string",
+            "description": "The identifier of the audience",
+            "examples": ["98765", "98785"]
+          },
+          "xdm:audienceSize": {
+            "type": "integer",
+            "description": "The size of the audience",
+            "examples": [10000, 20000]
+          }
+        },
+        "required": ["xdm:audienceId", "xdm:audienceSize"]
+      }
+    },
+    "xdm:regions": {
+      "type": "array",
+      "description": "The regions targeted in the product and corresponding assets",
+      "items": {
+        "type": "object",
+        "properties": {
+          "xdm:region": {
+            "type": "string",
+            "description": "The region targeted by the product",
+            "examples": ["EUR", "APAC"]
+          },
+          "xdm:assetId": {
+            "type": "string",
+            "description": "The identifier of the asset",
+            "examples": [
+              "abcdef-e935-4922-8d1b-4b7b32ef07e5",
+              "fedcba-e935-4922-8d1b-4b7b32ef07e5"
+            ]
+          }
+        },
+        "required": ["xdm:region", "xdm:assetId"]
+      }
+    }
+  },
+  "required": [
+    "xdm:product",
+    "xdm:productName",
+    "xdm:productId",
+    "xdm:channel",
+    "xdm:assets"
+  ]
+}

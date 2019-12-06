@@ -1,0 +1,199 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/adcloud/searchads/advertisement",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Search Advertising Advertisement",
+  "type": "object",
+  "meta:extensible": false,
+  "meta:abstract": false,
+  "meta:auditable": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "description": "Search Advertising Advertisement describes a single text Advertisement.",
+  "definitions": {
+    "searchads-advertisement": {
+      "properties": {
+        "searchads:advertisementId": {
+          "title": "Advertisement Identifier",
+          "type": "string",
+          "description": "Advertisement Id on the search advertising platform."
+        },
+        "searchads:searchEngineId": {
+          "title": "Search Engine Identifier",
+          "type": "integer",
+          "description": "The application-specified identifier used to identify the Search Advertising Platform Name."
+        },
+        "searchads:internalAdgroupId": {
+          "title": "Internal Ad Group Identifier",
+          "type": "string",
+          "description": "Internal Ad Group Id for the Advertisement. This identifier determines uniqueness of the Ad Group and Advertisement record."
+        },
+        "searchads:advertisementStatus": {
+          "title": "Advertisement Status",
+          "type": "string",
+          "description": "Advertisement Status indicates if underlying ads are eligible to serve.",
+          "enum": [
+            "Active",
+            "Paused",
+            "Deleted",
+            "Ended",
+            "Pending",
+            "Inactive",
+            "Disapproved",
+            "Incomplete",
+            "Offline",
+            "On Hold (Editing)",
+            "On Hold (Other)",
+            "Duplicate",
+            "Orphan",
+            "Optimize",
+            "Disabled",
+            "Unknown",
+            "Dummy"
+          ],
+          "meta:enum": {
+            "Active": "Active",
+            "Paused": "Paused",
+            "Deleted": "Deleted",
+            "Ended": "Ended",
+            "Pending": "Pending",
+            "Inactive": "Inactive",
+            "Disapproved": "Disapproved",
+            "Incomplete": "Incomplete",
+            "Offline": "Offline",
+            "On Hold (Editing)": "On Hold (Editing)",
+            "On Hold (Other)": "On Hold (Other)",
+            "Duplicate": "Duplicate",
+            "Orphan": "Orphan",
+            "Optimize": "Optimize",
+            "Disabled": "Disabled",
+            "Unknown": "Unknown",
+            "Dummy": "Dummy"
+          }
+        },
+        "searchads:title1": {
+          "title": "Advertisement Title Field 1",
+          "type": "string",
+          "description": "The first portion of the headline for a text advertisement"
+        },
+        "searchads:title2": {
+          "title": "Advertisement Title Field 2",
+          "type": "string",
+          "description": "The second portion of the headline for a text advertisement"
+        },
+        "searchads:title3": {
+          "title": "Advertisement Title Field 3",
+          "type": "string",
+          "description": "The third portion of the headline for a text advertisement" 
+        },
+        "searchads:description1": {
+          "title": "Advertisement Description Field 1",
+          "type": "string",
+          "description": "The first portion of the Advertisement Description Field"
+        },
+        "searchads:description2": {
+          "title": "Advertisement Description Field 2",
+          "type": "string",
+          "description": "The second portion of the Advertisement Description Field"
+        },
+        "searchads:displayUrl": {
+          "title": "Advertisement Display URL",
+          "type": "string",
+          "description": "The web url that is shown in the Advertisement"
+        },
+        "searchads:creativeType": {
+          "title": "Advertisement Creative Type",
+          "type": "string",
+          "description": "The type of Advertisement",
+          "enum": [
+			"App Install Ad",
+			"Call Only Ad",
+			"Display Ad",
+			"Dynamic Search Ad",
+			"Expanded Dynamic Search Ad",
+			"Expanded Text Ad",
+			"Image Ad",
+			"Inline Fan Ad",
+			"Local Business Ad",
+			"Mobile Ad",
+			"Others",
+			"Page Post Story Ad",
+			"Pin",
+			"Product Ad",
+			"Promoted Pin",
+			"Responsive Search Ad",
+			"Rich Media Ad",
+			"Text Ad",
+			"Third Party Ad",
+			"Unknown",
+			"Video Ad",
+			"YJP Text Ad"
+          ],
+          "meta:enum": {
+			"App Install Ad": "App Install Ad",
+			"Call Only Ad": "Call Only Ad",
+			"Display Ad": "Display Ad",
+			"Dynamic Search Ad": "Dynamic Search Ad",
+			"Expanded Dynamic Search Ad": "Expanded Dynamic Search Ad",
+			"Expanded Text Ad": "Expanded Text Ad",
+			"Image Ad": "Image Ad",
+			"Inline Fan Ad": "Inline Fan Ad",
+			"Local Business Ad": "Local Business Ad",
+			"Mobile Ad": "Mobile Ad",
+			"Others": "Others",
+			"Page Post Story Ad": "Page Post Story Ad",
+			"Pin": "Pin",
+			"Product Ad": "Product Ad",
+			"Promoted Pin": "Promoted Pin",
+			"Responsive Search Ad": "Responsive Search Ad",
+			"Rich Media Ad": "Rich Media Ad",
+			"Text Ad": "Text Ad",
+			"Third Party Ad": "Third Party Ad",
+			"Unknown": "Unknown",
+			"Video Ad": "Video Ad",
+			"YJP Text Ad": "YJP Text Ad"
+          }
+        },
+        "searchads:displayPath1": {
+          "title": "Advertisement Display Path 1",
+          "type": "string",
+          "description": "The first path in the Advertisement url that lets customers know where the Advertisment will direct them"
+        },
+        "searchads:displayPath2": {
+          "title": "Advertisement Display Path 2",
+          "type": "string",
+          "description": "The second path in the Advertisement url that lets customers know where the Advertisement will direct them"
+        },
+        "searchads:createDate": {
+          "type": "string",
+          "format": "date-time",
+          "examples": ["2004-10-23T12:00:00-06:00"],
+          "description": "The date and time when the Advertisment was created. An example form is \"2004-10-23T12:00:00-06:00\"."
+        },
+        "searchads:modifyDate": {
+          "type": "string",
+          "format": "date-time",
+          "examples": ["2004-10-23T12:00:00-06:00"],
+          "description": "The date and time when the Advertisement was last modified. An example form is \"2004-10-23T12:00:00-06:00\"."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/auditable"
+    },
+    {
+      "$ref": "#/definitions/searchads-advertisement"
+    }
+  ],
+  "meta:status": "experimental"
+}
+

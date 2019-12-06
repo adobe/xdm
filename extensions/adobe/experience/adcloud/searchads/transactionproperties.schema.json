@@ -5,23 +5,18 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/adcloud/searchads/transaction",
+  "$id": "https://ns.adobe.com/xdm/adcloud/searchads/transactionproperties",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Search Advertising Transaction Property",
+  "title": "Advertising Transaction Property",
   "type": "object",
   "meta:extensible": false,
   "meta:abstract": false,
   "meta:auditable": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
-  "description": "Search Advertising Transaction Class includes fields that defines Transaction.",
+  "description": "Advertising Transaction schemas includes metadata that describes a transaction property setup by Advertiser",
   "definitions": {
     "searchads-transaction": {
       "properties": {
-        "searchads:recordId": {
-          "title": "Unique record Id",
-          "type": "string",
-          "description": "Unique record Id for <UserId, PropertyId> tuple"
-        },
         "searchads:userId": {
           "title": "User Id",
           "type": "string",
@@ -36,6 +31,21 @@
           "title": "Property Id",
           "type": "string",
           "description": "Property Id."
+        },
+        "searchads:displayName": {
+          "title": "Display Name",
+          "type": "string",
+          "description": "Display Name."
+        },
+        "searchads:txid": {
+          "title": "TX ID",
+          "type": "string",
+          "description": "TX Id."
+        },
+        "searchads:revenueType": {
+          "title": "Revenue Type",
+          "type": "string",
+          "description": "Revenue Type."
         },
         "searchads:createDate": {
           "type": "string",
@@ -60,7 +70,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/auditable"
     },
     {
-      "$ref": "#/definitions/searchads-transaction"
+      "$ref": "#/definitions/searchads-transactionproperties"
     }
   ],
   "meta:status": "experimental"

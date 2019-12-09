@@ -17,10 +17,10 @@
   "definitions": {
     "searchads-transaction": {
       "properties": {
-        "searchads:userId": {
+        "searchads:clientId": {
           "title": "User Id",
           "type": "string",
-          "description": "User Id."
+          "description": "Ad Cloud Client Id"
         },
         "searchads:propertyName": {
           "title": "Name of the property",
@@ -36,11 +36,6 @@
           "title": "Display Name",
           "type": "string",
           "description": "Display Name."
-        },
-        "searchads:txid": {
-          "title": "TX ID",
-          "type": "string",
-          "description": "TX Id."
         },
         "searchads:revenueType": {
           "title": "Revenue Type",

@@ -1,5 +1,5 @@
 
-# ExperienceEvent Channel Details Schema
+# ExperienceEvent channel details Schema
 
 ```
 https://ns.adobe.com/xdm/context/experienceevent-channel
@@ -12,12 +12,12 @@ This mixin is used to capture channel information related to an ExperienceEvent,
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/experienceevent-channel.schema.json](context/experienceevent-channel.schema.json) |
 ## Schema Hierarchy
 
-* ExperienceEvent Channel Details `https://ns.adobe.com/xdm/context/experienceevent-channel`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* ExperienceEvent channel details `https://ns.adobe.com/xdm/context/experienceevent-channel`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](../channels/channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
 
-## ExperienceEvent Channel Details Example
+## ExperienceEvent channel details Example
 ```json
 {
   "xdm:channel": {
@@ -27,17 +27,17 @@ This mixin is used to capture channel information related to an ExperienceEvent,
 }
 ```
 
-# ExperienceEvent Channel Details Properties
+# ExperienceEvent channel details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:channel](#xdmchannel) | Experience Channel | Optional | ExperienceEvent Channel Details (this schema) |
+| [xdm:channel](#xdmchannel) | Experience Channel | Optional | ExperienceEvent channel details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:channel
-### Experience Channel
+### Experience channel
 
-Experience channel related to this ExperienceEvent.
+Experience channel related to the ExperienceEvent.
 
 `xdm:channel`
 * is optional

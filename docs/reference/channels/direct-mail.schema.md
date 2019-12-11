@@ -13,7 +13,7 @@ Mail delivered by a postal service channel.
 ## Schema Hierarchy
 
 * Direct Mail Channel `https://ns.adobe.com/xdm/channels/direct-mail`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
 

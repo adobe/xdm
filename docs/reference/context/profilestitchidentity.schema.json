@@ -7,9 +7,9 @@
     ],
     "$id": "https://ns.adobe.com/xdm/context/profileStitchIdentity",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Profile Stitch Identity",
+    "title": "Profile stitch identity",
     "type": "object",
-    "description": "Profile stitch identity is used to clearly distinguish profile Stitching from multiple sources. `ProfileStitchIdentity` is established by an profile stitch identity provider, which itself is referenced in the `namespace` attribute. Within each `namespace`, the profileStitchIdentity is unique.",
+    "description": "Profile stitch identity is used to clearly distinguish profile stitching from multiple sources. `ProfileStitchIdentity` is established by an profile stitch identity provider, which itself is referenced in the `namespace` attribute. Within each `namespace`, the profileStitchIdentity is unique.",
     "definitions": {
         "profileStitchIdentity": {
             "properties": {
@@ -25,7 +25,7 @@
                     "description": "The namespace associated with the `xid` attribute."
                 },
                 "xdm:xid": {
-                    "title": "Experience Identifier",
+                    "title": "Experience identifier",
                     "type": "string",
                     "description": "When present, this value represents a cross-namespace identifier that is unique across all namespace-scoped identifiers in all namespaces."
                 }

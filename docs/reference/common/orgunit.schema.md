@@ -1,5 +1,5 @@
 
-# Organizational Unit Schema
+# Organizational unit Schema
 
 ```
 https://ns.adobe.com/xdm/common/orgunit
@@ -11,7 +11,7 @@ The organizational unit of a parent organization.
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [common/orgunit.schema.json](common/orgunit.schema.json) |
 
-## Organizational Unit Example
+## Organizational unit Example
 ```json
 {
   "@id": "https://data.adobe.io/org-apparals-men",
@@ -19,12 +19,12 @@ The organizational unit of a parent organization.
 }
 ```
 
-# Organizational Unit Properties
+# Organizational unit Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#id) | `string` | Optional | Organizational Unit (this schema) |
-| [xdm:label](#xdmlabel) | `string` | Optional | Organizational Unit (this schema) |
+| [@id](#id) | `string` | Optional | Organizational unit (this schema) |
+| [xdm:label](#xdmlabel) | `string` | Optional | Organizational unit (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -49,7 +49,7 @@ The ID associated with this organizational unit.
 
 
 ## xdm:label
-### Label of the organizational Unit.
+### Label of the organizational unit.
 
 The user-friendly name for the organizational unit.
 

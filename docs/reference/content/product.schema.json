@@ -17,12 +17,12 @@
                     "title": "Identifier",
                     "type": "string",
                     "format": "uri-reference",
-                    "description": "The internal unique ID of the variant in the commerce backend system."
+                    "description": "The internal unique ID of the product in the commerce backend system."
                 },
                 "xdm:SKU": {
                     "title": "SKU",
                     "type": "string",
-                    "description": "The unique SKU (Stock Keeping Unit) of the variant assigned by the vendor."
+                    "description": "The unique SKU (stock keeping unit) of the product assigned by the vendor."
                 },
                 "xdm:name": {
                     "title": "Name",
@@ -37,7 +37,7 @@
                 "xdm:category": {
                     "title": "Category",
                     "type": "string",
-                    "description": "Primary categorization (category) name of the master/variant."
+                    "description": "Primary categorization or category name of the product."
                 },
                 "xdm:department": {
                     "title": "Department",
@@ -47,33 +47,33 @@
                 "xdm:brand": {
                     "title": "Brand",
                     "type": "string",
-                    "description": "Brand of the master/Variant products."
+                    "description": "The brand of the product."
                 },
                 "xdm:masterProductID": {
-                    "title": "Master Product Identifier",
+                    "title": "Master product identifier",
                     "type": "string",
                     "format": "uri",
                     "description": "The internal unique ID of the product in the commerce backend system."
                 },
                 "xdm:masterProductSKU": {
-                    "title": "Master Product SKU",
+                    "title": "Master product SKU",
                     "type": "string",
-                    "description": "The unique SKU (Stock Keeping Unit) of the master product assigned by the vendor or manufacturer (to update)."
+                    "description": "The unique SKU (stock keeping unit) of the master product assigned by the vendor or manufacturer."
                 },
                 "xdm:masterProductName": {
-                    "title": "Master Product Name",
+                    "title": "Master product name",
                     "type": "string",
                     "description": "The localized name of the product."
                 },
                 "xdm:masterProductDescription": {
-                    "title": "Master Product Description",
+                    "title": "Master product description",
                     "type": "string",
                     "description": "The description of the product."
                 },
                 "xdm:fabrication": {
                     "title": "Fabrication",
                     "type": "string",
-                    "description": "Primary material the product is constructed with."
+                    "description": "Primary material of the product construction."
                 },
                 "xdm:gender": {
                     "title": "Gender",
@@ -92,28 +92,28 @@
                     "description": "Standard product size for the product."
                 },
                 "xdm:unitOfMeasure": {
-                    "title": "Unit of Measure",
+                    "title": "Unit of measure",
                     "type": "string",
-                    "description": "Standard unit of measure of the variant. Denotes the units for the size measurement."
+                    "description": "Standard unit of measure of the product and or variation and relates the units for the size measurement."
                 },
                 "xdm:countryOfOrigin": {
-                    "title": "Country of Origin",
+                    "title": "Country of origin",
                     "type": "string",
                     "pattern": "^[A-Z]{2}$",
                     "description": "The two-character [ISO 3166-1 alpha-2](https://datahub.io/core/country-list) code for the country of origin of the product as defined by customs requirements."
                 },
                 "xdm:COGS": {
-                    "title": "Cost of Good Sold",
+                    "title": "Cost of good sold",
                     "type": "number",
-                    "description": "Cost of good sold. In the `currencyCode` currency."
+                    "description": "Cost of good sold, in the `currencyCode` currency."
                 },
                 "xdm:listPrice": {
-                    "title": "List Price",
+                    "title": "List price",
                     "type": "number",
-                    "description": "Default price of the product before sales and discounting. In the `currencyCode` currency."
+                    "description": "Default price of the product before sales and discounting, in the `currencyCode` currency."
                 },
                 "xdm:currencyCode": {
-                    "title": "Currency Code",
+                    "title": "Currency code",
                     "type": "string",
                     "examples": [
                         "USD",
@@ -123,35 +123,35 @@
                     "description": "The ISO 4217 alphabetic currency code used for cost and pricing, including `listPrice` and `COGS`."
                 },
                 "xdm:originalSaleDate": {
-                    "title": "Original Sale Date",
+                    "title": "Original sale date",
                     "type": "string",
                     "format": "date",
-                    "description": "First date the product was made available for sale. The time using RFC3339 with a stated timezone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\"."
+                    "description": "First date the product was made available for sale. The time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\"."
                 },
                 "xdm:productCreateDate": {
-                    "title": "Product Creation Date",
+                    "title": "Product creation date",
                     "format": "date",
                     "type": "string",
-                    "description": "The date when this product variant was created. The time using RFC3339 with a stated timezone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\"."
+                    "description": "The date when this product was created. The time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\"."
                 },
                 "xdm:productLastModified": {
-                    "title": "Product Last Modified",
+                    "title": "Product last modified",
                     "format": "date",
                     "type": "string",
-                    "description": "The date when this product variant was last modified. The time using RFC3339 with a stated timezone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\"."
+                    "description": "The date when this product was last modified. The time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\"."
                 },
                 "xdm:productURL": {
                     "title": "Product URL",
                     "type": "string",
-                    "description": "The URL for the primary product view of the product variant page."
+                    "description": "The URL for the primary product view of the product page."
                 },
                 "xdm:manufacturerName": {
-                    "title": "Manufacturer Name",
+                    "title": "Manufacturer name",
                     "type": "string",
                     "description": "Manufacturer of the product."
                 },
                 "xdm:supplierName": {
-                    "title": "Supplier Name",
+                    "title": "Supplier name",
                     "type": "string",
                     "description": "The distributor of the product."
                 }

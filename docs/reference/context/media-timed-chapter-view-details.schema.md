@@ -1,5 +1,5 @@
 
-# Timed Media Chapter View Details Schema
+# Timed media chapter view details Schema
 
 ```
 https://ns.adobe.com/xdm/context/media-timed-chapter-view-details
@@ -12,11 +12,11 @@ View details for the chapter playback captured by the experience event.
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/media-timed-chapter-view-details.schema.json](context/media-timed-chapter-view-details.schema.json) |
 ## Schema Hierarchy
 
-* Timed Media Chapter View Details `https://ns.adobe.com/xdm/context/media-timed-chapter-view-details`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* Timed media chapter view details `https://ns.adobe.com/xdm/context/media-timed-chapter-view-details`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
-## Timed Media Chapter View Details Example
+## Timed media chapter view details Example
 ```json
 {
   "xdm:index": 0,
@@ -24,16 +24,16 @@ View details for the chapter playback captured by the experience event.
 }
 ```
 
-# Timed Media Chapter View Details Properties
+# Timed media chapter view details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:index](#xdmindex) | `integer` | Optional | Timed Media Chapter View Details (this schema) |
-| [xdm:offset](#xdmoffset) | `integer` | Optional | Timed Media Chapter View Details (this schema) |
+| [xdm:index](#xdmindex) | `integer` | Optional | Timed media chapter view details (this schema) |
+| [xdm:offset](#xdmoffset) | `integer` | Optional | Timed media chapter view details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:index
-### Chapter Index
+### Chapter index
 
 The index of the chapter inside the content.
 
@@ -53,7 +53,7 @@ The index of the chapter inside the content.
 
 
 ## xdm:offset
-### Chapter Offset
+### Chapter offset
 
 The offset of the chapter, in seconds, inside the content from the start.
 

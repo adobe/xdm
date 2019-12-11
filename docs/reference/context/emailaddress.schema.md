@@ -1,5 +1,5 @@
 
-# Email Address Schema
+# Email address Schema
 
 ```
 https://ns.adobe.com/xdm/context/emailaddress
@@ -12,11 +12,11 @@ A standard email address.
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/emailaddress.schema.json](context/emailaddress.schema.json) |
 ## Schema Hierarchy
 
-* Email Address `https://ns.adobe.com/xdm/context/emailaddress`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* Email address `https://ns.adobe.com/xdm/context/emailaddress`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
-## Email Address Example
+## Email address Example
 ```json
 {
   "xdm:primary": false,
@@ -27,22 +27,22 @@ A standard email address.
 }
 ```
 
-# Email Address Properties
+# Email address Properties
 
 | Property | Type | Required | Default | Defined by |
 |----------|------|----------|---------|------------|
-| [xdm:address](#xdmaddress) | `string` | Optional |  | Email Address (this schema) |
-| [xdm:label](#xdmlabel) | `string` | Optional |  | Email Address (this schema) |
-| [xdm:primary](#xdmprimary) | `boolean` | Optional |  | Email Address (this schema) |
-| [xdm:status](#xdmstatus) | `string` | Optional | `"active"` | Email Address (this schema) |
-| [xdm:statusReason](#xdmstatusreason) | `string` | Optional |  | Email Address (this schema) |
-| [xdm:type](#xdmtype) | `string` | Optional |  | Email Address (this schema) |
+| [xdm:address](#xdmaddress) | `string` | Optional |  | Email address (this schema) |
+| [xdm:label](#xdmlabel) | `string` | Optional |  | Email address (this schema) |
+| [xdm:primary](#xdmprimary) | `boolean` | Optional |  | Email address (this schema) |
+| [xdm:status](#xdmstatus) | `string` | Optional | `"active"` | Email address (this schema) |
+| [xdm:statusReason](#xdmstatusreason) | `string` | Optional |  | Email address (this schema) |
+| [xdm:type](#xdmtype) | `string` | Optional |  | Email address (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:address
 ### Address
 
-The technical address, e.g 'name@domain.com' as commonly defined in RFC2822 and subsequent standards.
+The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards.
 
 `xdm:address`
 * is optional
@@ -63,7 +63,7 @@ The technical address, e.g 'name@domain.com' as commonly defined in RFC2822 and 
 ## xdm:label
 ### Label
 
-Additional display information that maybe available, e.g MS Outlook rich address controls display 'John Smith smithjr@company.uk', the 'John Smith' part is data that would be placed in the label.
+Additional display information that maybe available, for example, Microsoft Outlook rich address controls display 'John Smith smithjr@company.uk', 'John Smith' part is data that would be placed in the label.
 
 `xdm:label`
 * is optional
@@ -83,10 +83,7 @@ Additional display information that maybe available, e.g MS Outlook rich address
 ## xdm:primary
 ### Primary
 
-Primary email indicator.
-
-A Profile can have only one `primary` email address at a given point of time.
-
+Primary email indicator. A profile can have only one `primary` email address at a given point of time.
 
 `xdm:primary`
 * is optional
@@ -125,7 +122,7 @@ An indication as to the ability to use the email address.
 |-------|-------------|
 | `active` | Active |
 | `incomplete` | Incomplete |
-| `pending_verification` | Pending Verification |
+| `pending_verification` | Pending verification |
 | `blacklisted` | Blacklisted |
 | `blocked` | Blocked |
 
@@ -133,7 +130,7 @@ An indication as to the ability to use the email address.
 
 
 ## xdm:statusReason
-### Status Reason
+### Status reason
 
 A description of the current status.
 
@@ -155,7 +152,7 @@ A description of the current status.
 ## xdm:type
 ### Type
 
-The way the account relates to the person. e.g 'work' or 'personal'
+The way the account relates to the person for example 'work' or 'personal'.
 
 `xdm:type`
 * is optional

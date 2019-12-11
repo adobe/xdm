@@ -1,5 +1,5 @@
 
-# Extensibility Base Schema Schema
+# Extensibility base schema Schema
 
 ```
 https://ns.adobe.com/xdm/common/extensible
@@ -23,7 +23,7 @@ Replace `#/definitions/…` with the correct path to the `definitions` object in
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Cannot be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [common/extensible.schema.json](common/extensible.schema.json) |
 
-## Extensibility Base Schema Examples
+## Extensibility base schema Examples
 
 ```json
 {

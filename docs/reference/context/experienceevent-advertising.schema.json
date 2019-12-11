@@ -7,7 +7,7 @@
     ],
     "$id": "https://ns.adobe.com/xdm/context/experienceevent-advertising",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "ExperienceEvent Details for Advertising",
+    "title": "ExperienceEvent details for advertising",
     "type": "object",
     "meta:extensible": true,
     "meta:abstract": true,

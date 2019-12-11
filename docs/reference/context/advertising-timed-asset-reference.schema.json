@@ -7,9 +7,9 @@
     ],
     "$id": "https://ns.adobe.com/xdm/context/advertising-timed-asset-reference",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Ad Asset Reference",
+    "title": "Ad asset reference",
     "type": "object",
-    "description": "Asset information about the ad captured by the experience event.",
+    "description": "Ad asset reference is info about the ad captured by the experience event.",
     "meta:extensible": true,
     "definitions": {
         "adAssetReference": {
@@ -21,14 +21,14 @@
                     "description": "Identifier of the ad asset provided by media analytics customers."
                 },
                 "dc:title": {
-                    "title": "Ad Name",
+                    "title": "Ad name",
                     "type": "string",
-                    "description": "The friendly (human-readable) name of the ad asset."
+                    "description": "The friendly and human-readable name of the ad asset."
                 },
                 "xmpDM:duration": {
-                    "title": "Ad Length/Duration",
+                    "title": "Ad length or duration",
                     "type": "integer",
-                    "description": "Length of ad asset in seconds."
+                    "description": "Length or duration of ad asset in seconds."
                 }
             },
             "required": [

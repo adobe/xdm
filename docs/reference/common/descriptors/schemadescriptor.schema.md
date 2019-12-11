@@ -13,7 +13,7 @@ A descriptor that contains metadata about an XDM schema, including an optional p
 ## Schema Hierarchy
 
 * Schema Descriptor `https://ns.adobe.com/xdm/common/descriptors/schemadescriptor`
-  * [Extensibility Base Schema](../extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility base schema](../extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Item Selector](itemselector.schema.md) `https://ns.adobe.com/xdm/common/descriptors/itemselector`
 
 

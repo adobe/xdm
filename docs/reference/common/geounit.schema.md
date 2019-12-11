@@ -1,5 +1,5 @@
 
-# Geographical Unit Schema
+# Geographical unit Schema
 
 ```
 https://ns.adobe.com/xdm/common/geounit
@@ -11,7 +11,7 @@ The geographical unit of a parent geographical unit.
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [common/geounit.schema.json](common/geounit.schema.json) |
 
-## Geographical Unit Example
+## Geographical unit Example
 ```json
 {
   "@id": "https://data.adobe.io/geo-san-jose",
@@ -19,12 +19,12 @@ The geographical unit of a parent geographical unit.
 }
 ```
 
-# Geographical Unit Properties
+# Geographical unit Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#id) | `string` | Optional | Geographical Unit (this schema) |
-| [xdm:label](#xdmlabel) | `string` | Optional | Geographical Unit (this schema) |
+| [@id](#id) | `string` | Optional | Geographical unit (this schema) |
+| [xdm:label](#xdmlabel) | `string` | Optional | Geographical unit (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -49,7 +49,7 @@ The ID associated with this geographical unit.
 
 
 ## xdm:label
-### Label of the Geographical Unit.
+### Label of the geographical unit.
 
 The user-friendly name for the geographical unit.
 

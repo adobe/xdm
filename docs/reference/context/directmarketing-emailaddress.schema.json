@@ -7,14 +7,14 @@
     ],
     "$id": "https://ns.adobe.com/xdm/context/directmarketing-emailaddress",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Direct Marketing Email Address",
+    "title": "Direct marketing email address",
     "type": "object",
-    "description": "Direct marketing email address.",
+    "description": "Email address used to contact a user.",
     "definitions": {
         "directmarketing-emailaddress": {
             "properties": {
                 "xdm:errorCount": {
-                    "title": "Error Count",
+                    "title": "Error count",
                     "type": "integer",
                     "description": "Number of consecutive errors when sending to this email address."
                 },

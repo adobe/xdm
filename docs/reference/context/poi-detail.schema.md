@@ -1,5 +1,5 @@
 
-# Point of Interest Details Schema
+# Point of interest details Schema
 
 ```
 https://ns.adobe.com/xdm/context/poi-detail
@@ -12,17 +12,31 @@ A point or place of interest (POI) Details. Used to capture the technical and me
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/poi-detail.schema.json](context/poi-detail.schema.json) |
 ## Schema Hierarchy
 
-* Point of Interest Details `https://ns.adobe.com/xdm/context/poi-detail`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* Point of interest details `https://ns.adobe.com/xdm/context/poi-detail`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Beacon](beacon-interaction-details.schema.md) `https://ns.adobe.com/xdm/context/beacon-interaction-details`
-  * [Geo Interaction Details](geo-interaction-details.schema.md) `https://ns.adobe.com/xdm/context/geo-interaction-details`
+  * [Geo interaction details](geo-interaction-details.schema.md) `https://ns.adobe.com/xdm/context/geo-interaction-details`
 
 
-## Point of Interest Details Examples
+## Point of interest details Examples
 
 ```json
 {
-  "xdm:POIID": "c7f4bf28-c8d9-4b89-a81f-2a8ef9367390",
+  "xdm:poiID": "c7f4bf28-c8d9-4b89-a81f-2a8ef9367390",
+  "xdm:name": "Acme Hotel Tokyo",
+  "xdm:category": "Resorts",
+  "xdm:type": "Hotel",
+  "xdm:locatingType": "gps",
+  "xdm:geoInteractionDetails": {
+    "xdm:distanceToCenter": 100,
+    "xdm:accuracy": 30
+  }
+}
+```
+
+```json
+{
+  "xdm:poiID": "c7f4bf28-c8d9-4b89-a81f-2a8ef9367390",
   "xdm:name": "Acme Hotel Tokyo",
   "xdm:category": "Resorts",
   "xdm:type": "Hotel",
@@ -35,37 +49,24 @@ A point or place of interest (POI) Details. Used to capture the technical and me
 }
 ```
 
-```json
-{
-  "xdm:POIID": "c7f4bf28-c8d9-4b89-a81f-2a8ef9367390",
-  "xdm:name": "Acme Hotel Tokyo",
-  "xdm:category": "Resorts",
-  "xdm:type": "Hotel",
-  "xdm:locatingType": "gps",
-  "xdm:geoInteractionDetails": {
-    "xdm:distanceToCenter": 100,
-    "xdm:accuracy": 30
-  }
-}
-```
 
-
-# Point of Interest Details Properties
+# Point of interest details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:POIID](#xdmpoiid) | `string` | Optional | Point of Interest Details (this schema) |
-| [xdm:beaconInteractionDetails](#xdmbeaconinteractiondetails) | Beacon | Optional | Point of Interest Details (this schema) |
-| [xdm:category](#xdmcategory) | `string` | Optional | Point of Interest Details (this schema) |
-| [xdm:distanceToPOICenter](#xdmdistancetopoicenter) | `number` | Optional | Point of Interest Details (this schema) |
-| [xdm:geoInteractionDetails](#xdmgeointeractiondetails) | Geo Interaction Details | Optional | Point of Interest Details (this schema) |
-| [xdm:locatingType](#xdmlocatingtype) | `string` | Optional | Point of Interest Details (this schema) |
-| [xdm:name](#xdmname) | `string` | Optional | Point of Interest Details (this schema) |
-| [xdm:type](#xdmtype) | `string` | Optional | Point of Interest Details (this schema) |
+| [xdm:POIID](#xdmpoiid) | `string` | Optional | Point of interest details (this schema) |
+| [xdm:beaconInteractionDetails](#xdmbeaconinteractiondetails) | Beacon | Optional | Point of interest details (this schema) |
+| [xdm:category](#xdmcategory) | `string` | Optional | Point of interest details (this schema) |
+| [xdm:distanceToPOICenter](#xdmdistancetopoicenter) | `number` | Optional | Point of interest details (this schema) |
+| [xdm:geoInteractionDetails](#xdmgeointeractiondetails) | Geo interaction details | Optional | Point of interest details (this schema) |
+| [xdm:locatingType](#xdmlocatingtype) | `string` | Optional | Point of interest details (this schema) |
+| [xdm:name](#xdmname) | `string` | Optional | Point of interest details (this schema) |
+| [xdm:poiID](#xdmpoiid-1) | `string` | Optional | Point of interest details (this schema) |
+| [xdm:type](#xdmtype) | `string` | Optional | Point of interest details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:POIID
-### POI Identity
+### POI identity
 
 The unique identifier of the POI.
 
@@ -85,7 +86,7 @@ The unique identifier of the POI.
 
 
 ## xdm:beaconInteractionDetails
-### Beacon Interaction Details
+### Beacon interaction details
 
 Beacon details active for the POI interaction.
 
@@ -104,7 +105,7 @@ Beacon details active for the POI interaction.
 
 
 ## xdm:category
-### POI Category
+### POI category
 
 General category assigned for organizing the POIs by the administrator of POI definitions.
 
@@ -124,7 +125,7 @@ General category assigned for organizing the POIs by the administrator of POI de
 
 
 ## xdm:distanceToPOICenter
-### Distance to POI Center
+### Distance to POI center
 
 Estimated distance from the POI center in meters.
 
@@ -144,28 +145,28 @@ Estimated distance from the POI center in meters.
 
 
 ## xdm:geoInteractionDetails
-### Geo Interaction Details
+### Geo interaction details
 
 Geo details active for the POI interaction.
 
 `xdm:geoInteractionDetails`
 * is optional
-* type: Geo Interaction Details
+* type: Geo interaction details
 * defined in this schema
 
 ### xdm:geoInteractionDetails Type
 
 
-* [Geo Interaction Details](geo-interaction-details.schema.md) – `https://ns.adobe.com/xdm/context/geo-interaction-details`
+* [Geo interaction details](geo-interaction-details.schema.md) – `https://ns.adobe.com/xdm/context/geo-interaction-details`
 
 
 
 
 
 ## xdm:locatingType
-### Locating Type
+### Locating type
 
-Mechanism used to ascertain location.
+Mechanism used to determine location.
 
 `xdm:locatingType`
 * is optional
@@ -185,14 +186,14 @@ Mechanism used to ascertain location.
 | `beacon` | Hardware beacon |
 | `gps` | Device GPS |
 | `ip` | IP to geo lookup |
-| `ip+wifi` | IP with Wifi lookup |
+| `ip+wifi` | IP with wifi lookup |
 | `wifi-triangulation` | Wifi triangulation |
 
 
 
 
 ## xdm:name
-### POI Name
+### POI name
 
 The name given to the POI.
 
@@ -211,8 +212,28 @@ The name given to the POI.
 
 
 
+## xdm:poiID
+### POI Identity
+
+The unique identifier of the POI.
+
+`xdm:poiID`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:poiID Type
+
+
+`string`
+
+
+
+
+
+
 ## xdm:type
-### POI Type
+### POI type
 
 The general type of the POI using a typing schema selected by the administrator of the POI definitions.
 

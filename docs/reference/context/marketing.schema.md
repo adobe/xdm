@@ -13,7 +13,7 @@ The information related to marketing activities that are active with the touchpo
 ## Schema Hierarchy
 
 * Marketing `https://ns.adobe.com/xdm/context/marketing`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
 ## Marketing Example
@@ -33,9 +33,9 @@ The information related to marketing activities that are active with the touchpo
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:campaignGroup
-### Campaign Group
+### Campaign group
 
-Name of the Campaign group where in multiple campaigns are grouped together like 50%_DISCOUNT
+Name of the campaign group where multiple campaigns are grouped together like '50%_DISCOUNT'.
 
 `xdm:campaignGroup`
 * is optional
@@ -53,9 +53,9 @@ Name of the Campaign group where in multiple campaigns are grouped together like
 
 
 ## xdm:campaignName
-### Campaign Name
+### Campaign name
 
-Name of the Campaign used to identify marketing campaign like 50%_DISCOUNT_USA, 50%_DISCOUNT_ASIA.
+Name of the campaign used to identify marketing campaign like '50%_DISCOUNT_USA' or '50%_DISCOUNT_ASIA'.
 
 `xdm:campaignName`
 * is optional
@@ -73,7 +73,7 @@ Name of the Campaign used to identify marketing campaign like 50%_DISCOUNT_USA, 
 
 
 ## xdm:trackingCode
-### Tracking Code
+### Tracking code
 
 Tracking code that can be used to identify the marketing campaign the event is associated with.
 

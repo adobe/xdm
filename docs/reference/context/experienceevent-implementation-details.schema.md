@@ -1,5 +1,5 @@
 
-# ExperienceEvent Implementation Details Schema
+# ExperienceEvent implementation details Schema
 
 ```
 https://ns.adobe.com/xdm/context/experienceevent-implementation-details
@@ -12,12 +12,12 @@ Field to capture the details of the software used to collect the ExperienceEvent
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/experienceevent-implementation-details.schema.json](context/experienceevent-implementation-details.schema.json) |
 ## Schema Hierarchy
 
-* ExperienceEvent Implementation Details `https://ns.adobe.com/xdm/context/experienceevent-implementation-details`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Implementation Details](implementationdetails.schema.md) `https://ns.adobe.com/xdm/context/implementationdetails`
+* ExperienceEvent implementation details `https://ns.adobe.com/xdm/context/experienceevent-implementation-details`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Implementation details](implementationdetails.schema.md) `https://ns.adobe.com/xdm/context/implementationdetails`
 
 
-## ExperienceEvent Implementation Details Example
+## ExperienceEvent implementation details Example
 ```json
 {
   "xdm:implementationDetails": {
@@ -27,27 +27,27 @@ Field to capture the details of the software used to collect the ExperienceEvent
 }
 ```
 
-# ExperienceEvent Implementation Details Properties
+# ExperienceEvent implementation details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:implementationDetails](#xdmimplementationdetails) | Implementation Details | Optional | ExperienceEvent Implementation Details (this schema) |
+| [xdm:implementationDetails](#xdmimplementationdetails) | Implementation details | Optional | ExperienceEvent implementation details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:implementationDetails
-### Implementation Details
+### Implementation details
 
 The details of the software used to collect the ExperienceEvent.
 
 `xdm:implementationDetails`
 * is optional
-* type: Implementation Details
+* type: Implementation details
 * defined in this schema
 
 ### xdm:implementationDetails Type
 
 
-* [Implementation Details](implementationdetails.schema.md) – `https://ns.adobe.com/xdm/context/implementationdetails`
+* [Implementation details](implementationdetails.schema.md) – `https://ns.adobe.com/xdm/context/implementationdetails`
 
 
 

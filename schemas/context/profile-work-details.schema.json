@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/profile-work-details",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Profile Work Details",
+  "title": "Profile work details",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
@@ -17,17 +17,17 @@
     "profile-work-details": {
       "properties": {
         "xdm:workAddress": {
-          "title": "Work Address",
+          "title": "Work address",
           "$ref": "https://ns.adobe.com/xdm/common/address",
           "description": "A work postal address."
         },
         "xdm:workEmail": {
-          "title": "Work Email",
+          "title": "Work email",
           "$ref": "https://ns.adobe.com/xdm/context/emailaddress",
           "description": "A work email address."
         },
         "xdm:workPhone": {
-          "title": "Work Phone",
+          "title": "Work phone",
           "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
           "description": "Work phone number."
         },

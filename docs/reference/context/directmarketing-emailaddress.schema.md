@@ -1,22 +1,22 @@
 
-# Direct Marketing Email Address Schema
+# Direct marketing email address Schema
 
 ```
 https://ns.adobe.com/xdm/context/directmarketing-emailaddress
 ```
 
-Direct marketing email address.
+Email address used to contact a user.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/directmarketing-emailaddress.schema.json](context/directmarketing-emailaddress.schema.json) |
 ## Schema Hierarchy
 
-* Direct Marketing Email Address `https://ns.adobe.com/xdm/context/directmarketing-emailaddress`
-  * [Email Address](emailaddress.schema.md) `https://ns.adobe.com/xdm/context/emailaddress`
+* Direct marketing email address `https://ns.adobe.com/xdm/context/directmarketing-emailaddress`
+  * [Email address](emailaddress.schema.md) `https://ns.adobe.com/xdm/context/emailaddress`
 
 
-## Direct Marketing Email Address Example
+## Direct marketing email address Example
 ```json
 {
   "xdm:primary": false,
@@ -28,29 +28,29 @@ Direct marketing email address.
 }
 ```
 
-# Direct Marketing Email Address Properties
+# Direct marketing email address Properties
 
 | Property | Type | Required | Default | Defined by |
 |----------|------|----------|---------|------------|
-| [xdm:address](#xdmaddress) | `string` | Optional |  | [Email Address](emailaddress.schema.md#xdmaddress) |
-| [xdm:errorCount](#xdmerrorcount) | `integer` | Optional |  | Direct Marketing Email Address (this schema) |
-| [xdm:label](#xdmlabel) | `string` | Optional |  | [Email Address](emailaddress.schema.md#xdmlabel) |
-| [xdm:primary](#xdmprimary) | `boolean` | Optional |  | [Email Address](emailaddress.schema.md#xdmprimary) |
-| [xdm:quality](#xdmquality) | `string` | Optional |  | Direct Marketing Email Address (this schema) |
-| [xdm:status](#xdmstatus) | `string` | Optional | `"active"` | [Email Address](emailaddress.schema.md#xdmstatus) |
-| [xdm:statusReason](#xdmstatusreason) | `string` | Optional |  | [Email Address](emailaddress.schema.md#xdmstatusreason) |
-| [xdm:type](#xdmtype) | `string` | Optional |  | [Email Address](emailaddress.schema.md#xdmtype) |
+| [xdm:address](#xdmaddress) | `string` | Optional |  | [Email address](emailaddress.schema.md#xdmaddress) |
+| [xdm:errorCount](#xdmerrorcount) | `integer` | Optional |  | Direct marketing email address (this schema) |
+| [xdm:label](#xdmlabel) | `string` | Optional |  | [Email address](emailaddress.schema.md#xdmlabel) |
+| [xdm:primary](#xdmprimary) | `boolean` | Optional |  | [Email address](emailaddress.schema.md#xdmprimary) |
+| [xdm:quality](#xdmquality) | `string` | Optional |  | Direct marketing email address (this schema) |
+| [xdm:status](#xdmstatus) | `string` | Optional | `"active"` | [Email address](emailaddress.schema.md#xdmstatus) |
+| [xdm:statusReason](#xdmstatusreason) | `string` | Optional |  | [Email address](emailaddress.schema.md#xdmstatusreason) |
+| [xdm:type](#xdmtype) | `string` | Optional |  | [Email address](emailaddress.schema.md#xdmtype) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:address
 ### Address
 
-The technical address, e.g 'name@domain.com' as commonly defined in RFC2822 and subsequent standards.
+The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards.
 
 `xdm:address`
 * is optional
 * type: `string`
-* defined in [Email Address](emailaddress.schema.md#xdmaddress)
+* defined in [Email address](emailaddress.schema.md#xdmaddress)
 
 ### xdm:address Type
 
@@ -64,7 +64,7 @@ The technical address, e.g 'name@domain.com' as commonly defined in RFC2822 and 
 
 
 ## xdm:errorCount
-### Error Count
+### Error count
 
 Number of consecutive errors when sending to this email address.
 
@@ -86,12 +86,12 @@ Number of consecutive errors when sending to this email address.
 ## xdm:label
 ### Label
 
-Additional display information that maybe available, e.g MS Outlook rich address controls display 'John Smith smithjr@company.uk', the 'John Smith' part is data that would be placed in the label.
+Additional display information that maybe available, for example, Microsoft Outlook rich address controls display 'John Smith smithjr@company.uk', 'John Smith' part is data that would be placed in the label.
 
 `xdm:label`
 * is optional
 * type: `string`
-* defined in [Email Address](emailaddress.schema.md#xdmlabel)
+* defined in [Email address](emailaddress.schema.md#xdmlabel)
 
 ### xdm:label Type
 
@@ -106,15 +106,12 @@ Additional display information that maybe available, e.g MS Outlook rich address
 ## xdm:primary
 ### Primary
 
-Primary email indicator.
-
-A Profile can have only one `primary` email address at a given point of time.
-
+Primary email indicator. A profile can have only one `primary` email address at a given point of time.
 
 `xdm:primary`
 * is optional
 * type: `boolean`
-* defined in [Email Address](emailaddress.schema.md#xdmprimary)
+* defined in [Email address](emailaddress.schema.md#xdmprimary)
 
 ### xdm:primary Type
 
@@ -154,7 +151,7 @@ An indication as to the ability to use the email address.
 * is optional
 * type: `string`
 * default: `"active"`
-* defined in [Email Address](emailaddress.schema.md#xdmstatus)
+* defined in [Email address](emailaddress.schema.md#xdmstatus)
 
 ### xdm:status Type
 
@@ -168,7 +165,7 @@ An indication as to the ability to use the email address.
 |-------|-------------|
 | `active` | Active |
 | `incomplete` | Incomplete |
-| `pending_verification` | Pending Verification |
+| `pending_verification` | Pending verification |
 | `blacklisted` | Blacklisted |
 | `blocked` | Blocked |
 
@@ -176,14 +173,14 @@ An indication as to the ability to use the email address.
 
 
 ## xdm:statusReason
-### Status Reason
+### Status reason
 
 A description of the current status.
 
 `xdm:statusReason`
 * is optional
 * type: `string`
-* defined in [Email Address](emailaddress.schema.md#xdmstatusreason)
+* defined in [Email address](emailaddress.schema.md#xdmstatusreason)
 
 ### xdm:statusReason Type
 
@@ -198,12 +195,12 @@ A description of the current status.
 ## xdm:type
 ### Type
 
-The way the account relates to the person. e.g 'work' or 'personal'
+The way the account relates to the person for example 'work' or 'personal'.
 
 `xdm:type`
 * is optional
 * type: `string`
-* defined in [Email Address](emailaddress.schema.md#xdmtype)
+* defined in [Email address](emailaddress.schema.md#xdmtype)
 
 ### xdm:type Type
 

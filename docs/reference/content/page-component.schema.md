@@ -1,5 +1,5 @@
 
-# Page Component Schema
+# Page component Schema
 
 ```
 https://ns.adobe.com/xdm/content/page-component
@@ -15,11 +15,11 @@ The type determines how the component will be displayed, rendered, and authored.
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [content/page-component.schema.json](content/page-component.schema.json) |
 ## Schema Hierarchy
 
-* Page Component `https://ns.adobe.com/xdm/content/page-component`
-  * [Componentized Page](componentized-page.schema.md) `https://ns.adobe.com/xdm/content/componentized-page`
+* Page component `https://ns.adobe.com/xdm/content/page-component`
+  * [Componentized page](componentized-page.schema.md) `https://ns.adobe.com/xdm/content/componentized-page`
 
 
-## Page Component Examples
+## Page component Examples
 
 ```json
 {
@@ -40,16 +40,16 @@ The type determines how the component will be displayed, rendered, and authored.
 ```
 
 
-# Page Component Properties
+# Page component Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@type](#type) | `string` | Optional | Page Component (this schema) |
+| [@type](#type) | `string` | Optional | Page component (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @type
 
-Type of the component. Acts as processing hint for the client.
+Type of the component and acts as processing hint for the client.
 
 `@type`
 * is optional

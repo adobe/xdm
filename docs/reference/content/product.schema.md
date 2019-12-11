@@ -14,7 +14,7 @@ XDM product variant, master product and key attributes of product in the product
 ## Schema Hierarchy
 
 * Product `https://ns.adobe.com/xdm/context/product`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
 ## Product Example
@@ -73,7 +73,7 @@ XDM product variant, master product and key attributes of product in the product
 ## @id
 ### Identifier
 
-The internal unique ID of the variant in the commerce backend system.
+The internal unique ID of the product in the commerce backend system.
 
 `@id`
 * is optional
@@ -112,9 +112,9 @@ The localized description of the product.
 
 
 ## xdm:COGS
-### Cost of Good Sold
+### Cost of good sold
 
-Cost of good sold. In the `currencyCode` currency.
+Cost of good sold, in the `currencyCode` currency.
 
 `xdm:COGS`
 * is optional
@@ -134,7 +134,7 @@ Cost of good sold. In the `currencyCode` currency.
 ## xdm:SKU
 ### SKU
 
-The unique SKU (Stock Keeping Unit) of the variant assigned by the vendor.
+The unique SKU (stock keeping unit) of the product assigned by the vendor.
 
 `xdm:SKU`
 * is optional
@@ -154,7 +154,7 @@ The unique SKU (Stock Keeping Unit) of the variant assigned by the vendor.
 ## xdm:brand
 ### Brand
 
-Brand of the master/Variant products.
+The brand of the product.
 
 `xdm:brand`
 * is optional
@@ -174,7 +174,7 @@ Brand of the master/Variant products.
 ## xdm:category
 ### Category
 
-Primary categorization (category) name of the master/variant.
+Primary categorization or category name of the product.
 
 `xdm:category`
 * is optional
@@ -192,7 +192,7 @@ Primary categorization (category) name of the master/variant.
 
 
 ## xdm:countryOfOrigin
-### Country of Origin
+### Country of origin
 
 The two-character [ISO 3166-1 alpha-2](https://datahub.io/core/country-list) code for the country of origin of the product as defined by customs requirements.
 
@@ -219,7 +219,7 @@ All instances must conform to this regular expression
 
 
 ## xdm:currencyCode
-### Currency Code
+### Currency code
 
 The ISO 4217 alphabetic currency code used for cost and pricing, including `listPrice` and `COGS`.
 
@@ -280,7 +280,7 @@ Primary department the product is associated with.
 ## xdm:fabrication
 ### Fabrication
 
-Primary material the product is constructed with.
+Primary material of the product construction.
 
 `xdm:fabrication`
 * is optional
@@ -326,9 +326,9 @@ Gender the product is marketed to.
 
 
 ## xdm:listPrice
-### List Price
+### List price
 
-Default price of the product before sales and discounting. In the `currencyCode` currency.
+Default price of the product before sales and discounting, in the `currencyCode` currency.
 
 `xdm:listPrice`
 * is optional
@@ -346,7 +346,7 @@ Default price of the product before sales and discounting. In the `currencyCode`
 
 
 ## xdm:manufacturerName
-### Manufacturer Name
+### Manufacturer name
 
 Manufacturer of the product.
 
@@ -366,7 +366,7 @@ Manufacturer of the product.
 
 
 ## xdm:masterProductDescription
-### Master Product Description
+### Master product description
 
 The description of the product.
 
@@ -386,7 +386,7 @@ The description of the product.
 
 
 ## xdm:masterProductID
-### Master Product Identifier
+### Master product identifier
 
 The internal unique ID of the product in the commerce backend system.
 
@@ -407,7 +407,7 @@ The internal unique ID of the product in the commerce backend system.
 
 
 ## xdm:masterProductName
-### Master Product Name
+### Master product name
 
 The localized name of the product.
 
@@ -427,9 +427,9 @@ The localized name of the product.
 
 
 ## xdm:masterProductSKU
-### Master Product SKU
+### Master product SKU
 
-The unique SKU (Stock Keeping Unit) of the master product assigned by the vendor or manufacturer (to update).
+The unique SKU (stock keeping unit) of the master product assigned by the vendor or manufacturer.
 
 `xdm:masterProductSKU`
 * is optional
@@ -467,9 +467,9 @@ The name of the product.
 
 
 ## xdm:originalSaleDate
-### Original Sale Date
+### Original sale date
 
-First date the product was made available for sale. The time using RFC3339 with a stated timezone offset such as "2001-07-04T12:08:56-07:00". An example formatting pattern is "yyyy-MM-dd'T'HH:mm:ssXXX".
+First date the product was made available for sale. The time using RFC3339 with a stated time zone offset such as "2001-07-04T12:08:56-07:00". An example formatting pattern is "yyyy-MM-dd'T'HH:mm:ssXXX".
 
 `xdm:originalSaleDate`
 * is optional
@@ -488,9 +488,9 @@ First date the product was made available for sale. The time using RFC3339 with 
 
 
 ## xdm:productCreateDate
-### Product Creation Date
+### Product creation date
 
-The date when this product variant was created. The time using RFC3339 with a stated timezone offset such as "2001-07-04T12:08:56-07:00". An example formatting pattern is "yyyy-MM-dd'T'HH:mm:ssXXX".
+The date when this product was created. The time using RFC3339 with a stated time zone offset such as "2001-07-04T12:08:56-07:00". An example formatting pattern is "yyyy-MM-dd'T'HH:mm:ssXXX".
 
 `xdm:productCreateDate`
 * is optional
@@ -509,9 +509,9 @@ The date when this product variant was created. The time using RFC3339 with a st
 
 
 ## xdm:productLastModified
-### Product Last Modified
+### Product last modified
 
-The date when this product variant was last modified. The time using RFC3339 with a stated timezone offset such as "2001-07-04T12:08:56-07:00". An example formatting pattern is "yyyy-MM-dd'T'HH:mm:ssXXX".
+The date when this product was last modified. The time using RFC3339 with a stated time zone offset such as "2001-07-04T12:08:56-07:00". An example formatting pattern is "yyyy-MM-dd'T'HH:mm:ssXXX".
 
 `xdm:productLastModified`
 * is optional
@@ -532,7 +532,7 @@ The date when this product variant was last modified. The time using RFC3339 wit
 ## xdm:productURL
 ### Product URL
 
-The URL for the primary product view of the product variant page.
+The URL for the primary product view of the product page.
 
 `xdm:productURL`
 * is optional
@@ -570,7 +570,7 @@ Standard product size for the product.
 
 
 ## xdm:supplierName
-### Supplier Name
+### Supplier name
 
 The distributor of the product.
 
@@ -590,9 +590,9 @@ The distributor of the product.
 
 
 ## xdm:unitOfMeasure
-### Unit of Measure
+### Unit of measure
 
-Standard unit of measure of the variant. Denotes the units for the size measurement.
+Standard unit of measure of the product and or variation and relates the units for the size measurement.
 
 `xdm:unitOfMeasure`
 * is optional

@@ -13,7 +13,7 @@ WeChat is a Chinese multi-purpose messaging, social media, and mobile payment ap
 ## Schema Hierarchy
 
 * WeChat Channel `https://ns.adobe.com/xdm/channels/wechat`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
 

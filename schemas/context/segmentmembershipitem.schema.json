@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/segmentmembershipitem",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Segment Membership Item",
+  "title": "Segment membership item",
   "type": "object",
   "description": "List item that contains details of segment membership combined the profile stitched identities to which the membership applies.",
   "definitions": {

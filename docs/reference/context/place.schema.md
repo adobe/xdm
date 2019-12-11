@@ -1,5 +1,5 @@
 
-# Place Schema
+# Physical place Schema
 
 ```
 https://ns.adobe.com/xdm/context/place
@@ -12,14 +12,14 @@ A place in the real world with a physical location.
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/place.schema.json](context/place.schema.json) |
 ## Schema Hierarchy
 
-* Place `https://ns.adobe.com/xdm/context/place`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Postal Address](../common/address.schema.md) `https://ns.adobe.com/xdm/common/address`
+* Physical place `https://ns.adobe.com/xdm/context/place`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Postal address](../common/address.schema.md) `https://ns.adobe.com/xdm/common/address`
   * [Geo Shape](../external/schema/geoshape.schema.md) `http://schema.org/GeoShape`
   * [Geo Coordinates](../external/schema/geocoordinates.schema.md) `http://schema.org/GeoCoordinates`
 
 
-## Place Example
+## Physical place Example
 ```json
 {
   "@id": "https://data.adobe.io/entities/places/locationid-123456",
@@ -46,19 +46,19 @@ A place in the real world with a physical location.
 }
 ```
 
-# Place Properties
+# Physical place Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#id) | `string` | Optional | Place (this schema) |
-| [schema:branchCode](#schemabranchcode) | `string` | Optional | Place (this schema) |
-| [schema:description](#schemadescription) | `string` | Optional | Place (this schema) |
-| [schema:telephone](#schematelephone) | `string` | Optional | Place (this schema) |
-| [xdm:address](#xdmaddress) | Postal Address | Optional | Place (this schema) |
-| [xdm:containedInPlace](#xdmcontainedinplace) | `string` | Optional | Place (this schema) |
-| [xdm:containsPlaces](#xdmcontainsplaces) | `string[]` | Optional | Place (this schema) |
-| [xdm:pointOfInterest](#xdmpointofinterest) | Geo Coordinates | Optional | Place (this schema) |
-| [xdm:shape](#xdmshape) | Geo Shape | Optional | Place (this schema) |
+| [@id](#id) | `string` | Optional | Physical place (this schema) |
+| [schema:branchCode](#schemabranchcode) | `string` | Optional | Physical place (this schema) |
+| [schema:description](#schemadescription) | `string` | Optional | Physical place (this schema) |
+| [schema:telephone](#schematelephone) | `string` | Optional | Physical place (this schema) |
+| [xdm:address](#xdmaddress) | Postal address | Optional | Physical place (this schema) |
+| [xdm:containedInPlace](#xdmcontainedinplace) | `string` | Optional | Physical place (this schema) |
+| [xdm:containsPlaces](#xdmcontainsplaces) | `string[]` | Optional | Physical place (this schema) |
+| [xdm:pointOfInterest](#xdmpointofinterest) | Geo Coordinates | Optional | Physical place (this schema) |
+| [xdm:shape](#xdmshape) | Geo Shape | Optional | Physical place (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -83,11 +83,9 @@ The unique identifier of the place.
 
 
 ## schema:branchCode
-### Location Code
+### Location code
 
-A short textual code (also called "store code") that uniquely identifies a place of business. The code is typically assigned by the parent Organization and used in structured URLs.
-
-For example, in the URL `http://www.starbucks.co.uk/store-locator/etc/detail/3047` the code "3047" is a `branchCode` for a particular branch.
+A short textual code also called "store code" that uniquely identifies a place of business. The code is typically assigned by the parent organization and used in structured URLs. For example, in the URL `http://www.starbucks.co.uk/store-locator/etc/detail/3047` the code "3047" is a `branchCode` for a particular branch.
 
 `schema:branchCode`
 * is optional
@@ -125,7 +123,7 @@ The description of the physical location.
 
 
 ## schema:telephone
-### Phone Number
+### Phone number
 
 The phone number.
 
@@ -151,24 +149,22 @@ The physical address of the location.
 
 `xdm:address`
 * is optional
-* type: Postal Address
+* type: Postal address
 * defined in this schema
 
 ### xdm:address Type
 
 
-* [Postal Address](../common/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
+* [Postal address](../common/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
 
 
 
 
 
 ## xdm:containedInPlace
-### Contained by Location
+### Contained by location
 
-XDM URI of another `Place` that this place is contained in.
-
-This property is based on `schema:containedInPlace`, but is using URI references instead of embedding the containing place.
+XDM URI of another `Place` that this place is contained in. This property is based on `schema:containedInPlace`, but is using URI references instead of embedding the containing place.
 
 `xdm:containedInPlace`
 * is optional
@@ -187,11 +183,9 @@ This property is based on `schema:containedInPlace`, but is using URI references
 
 
 ## xdm:containsPlaces
-### Contains Locations
+### Contains locations
 
-An array of XDM URIs of other `Place` instances that this place is containing.
-
-This property is based on `schema:containsPlace`, but is using URI references instead of embedding the containing place. In addition, it is an array, allowing one place to include multiple other places.
+An array of XDM URIs of other `Place` instances that this place is containing. This property is based on `schema:containsPlace`, but is using URI references instead of embedding the containing place. In addition, it is an array, allowing one place to include multiple other places.
 
 `xdm:containsPlaces`
 * is optional
@@ -219,7 +213,7 @@ The XDM URI of another `Place` that this place contains.
 
 
 ## xdm:pointOfInterest
-### Point of Interest
+### Point of interest
 
 The coordinates of the point of interest for this location.
 
@@ -238,7 +232,7 @@ The coordinates of the point of interest for this location.
 
 
 ## xdm:shape
-### Geo Shape
+### Geo shape
 
 The geographic shape of the physical location.
 

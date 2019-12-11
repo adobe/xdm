@@ -13,7 +13,7 @@ This mixin is used to capture information regarding ExperienceEvent segment memb
 ## Schema Hierarchy
 
 * ExperienceEvent Segment Membership Details `https://ns.adobe.com/xdm/context/experienceevent-segmentmembership`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
 ## ExperienceEvent Segment Membership Details Example
@@ -51,7 +51,7 @@ This mixin is used to capture information regarding ExperienceEvent segment memb
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [xdm:segmentMembership](#xdmsegmentmembership) | `object` | Optional | ExperienceEvent Segment Membership Details (this schema) |
-| [xdm:segmentMemberships](#xdmsegmentmemberships) | Segment Membership Item | Optional | ExperienceEvent Segment Membership Details (this schema) |
+| [xdm:segmentMemberships](#xdmsegmentmemberships) | Segment membership item | Optional | ExperienceEvent Segment Membership Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:segmentMembership
@@ -83,17 +83,17 @@ The segments associated with this ExperienceEvent. Deprecated, use `xdm:segmentM
 
 `xdm:segmentMemberships`
 * is optional
-* type: Segment Membership Item
+* type: Segment membership item
 
 * defined in this schema
 
 ### xdm:segmentMemberships Type
 
 
-Array type: Segment Membership Item
+Array type: Segment membership item
 
 All items must be of the type:
-* [Segment Membership Item](segmentmembershipitem.schema.md) – `https://ns.adobe.com/xdm/context/segmentmembershipitem`
+* [Segment membership item](segmentmembershipitem.schema.md) – `https://ns.adobe.com/xdm/context/segmentmembershipitem`
 
 
 

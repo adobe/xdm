@@ -1,5 +1,5 @@
 
-# Timed Media Chapter Asset Reference Schema
+# Timed media chapter asset reference Schema
 
 ```
 https://ns.adobe.com/xdm/context/media-timed-chapter-asset-reference
@@ -12,11 +12,11 @@ Asset information about the chapter captured by the experience event.
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/media-timed-chapter-asset-reference.schema.json](context/media-timed-chapter-asset-reference.schema.json) |
 ## Schema Hierarchy
 
-* Timed Media Chapter Asset Reference `https://ns.adobe.com/xdm/context/media-timed-chapter-asset-reference`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* Timed media chapter asset reference `https://ns.adobe.com/xdm/context/media-timed-chapter-asset-reference`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
-## Timed Media Chapter Asset Reference Example
+## Timed media chapter asset reference Example
 ```json
 {
   "@id": "https://data.adobe.io/entities/media-chapter-asset-reference/2144511",
@@ -25,17 +25,17 @@ Asset information about the chapter captured by the experience event.
 }
 ```
 
-# Timed Media Chapter Asset Reference Properties
+# Timed media chapter asset reference Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#id) | `string` | Optional | Timed Media Chapter Asset Reference (this schema) |
-| [dc:title](#dctitle) | `string` | Optional | Timed Media Chapter Asset Reference (this schema) |
-| [xmpDM:duration](#xmpdmduration) | `integer` | Optional | Timed Media Chapter Asset Reference (this schema) |
+| [@id](#id) | `string` | Optional | Timed media chapter asset reference (this schema) |
+| [dc:title](#dctitle) | `string` | Optional | Timed media chapter asset reference (this schema) |
+| [xmpDM:duration](#xmpdmduration) | `integer` | Optional | Timed media chapter asset reference (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
-### Chapter Identity
+### Chapter identity
 
 The identity of the chapter.
 
@@ -56,9 +56,9 @@ The identity of the chapter.
 
 
 ## dc:title
-### Chapter Name
+### Chapter name
 
-The friendly name of the chapter and/or segment.
+The friendly name of the chapter and or segment.
 
 `dc:title`
 * is optional
@@ -76,7 +76,7 @@ The friendly name of the chapter and/or segment.
 
 
 ## xmpDM:duration
-### Chapter Length/Duration
+### Chapter length or duration
 
 The length of the chapter, in seconds.
 

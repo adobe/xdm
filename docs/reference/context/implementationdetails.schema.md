@@ -1,22 +1,22 @@
 
-# Implementation Details Schema
+# Implementation details Schema
 
 ```
 https://ns.adobe.com/xdm/context/implementationdetails
 ```
 
-Details about the SDK, library or service used in an application's or web page's implementation of a service.
+Details about the SDK, library, or service used in an application or web page implementation of a service.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/implementationdetails.schema.json](context/implementationdetails.schema.json) |
 ## Schema Hierarchy
 
-* Implementation Details `https://ns.adobe.com/xdm/context/implementationdetails`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* Implementation details `https://ns.adobe.com/xdm/context/implementationdetails`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
-## Implementation Details Example
+## Implementation details Example
 ```json
 {
   "xdm:name": "https://ns.adobe.com/experience/analytics/appmeasurement",
@@ -24,18 +24,18 @@ Details about the SDK, library or service used in an application's or web page's
 }
 ```
 
-# Implementation Details Properties
+# Implementation details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:name](#xdmname) | `string` | Optional | Implementation Details (this schema) |
-| [xdm:version](#xdmversion) | `string` | Optional | Implementation Details (this schema) |
+| [xdm:name](#xdmname) | `string` | Optional | Implementation details (this schema) |
+| [xdm:version](#xdmversion) | `string` | Optional | Implementation details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:name
 ### Name
 
-SDK or endpoint identifier. All SDKs or endpoints are identified through a URI, this includes extensions.
+SDK or endpoint identifier. All SDKs or endpoints are identified through a URI, including extensions.
 
 `xdm:name`
 * is optional
@@ -54,11 +54,11 @@ SDK or endpoint identifier. All SDKs or endpoints are identified through a URI, 
 | Value | Description |
 |-------|-------------|
 | `https://ns.adobe.com/experience/analytics/scode` | Adobe Analytics sCode |
-| `https://ns.adobe.com/experience/analytics/appmeasurement` | Adobe App Measurement |
+| `https://ns.adobe.com/experience/analytics/appmeasurement` | Adobe app measurement |
 | `https://ns.adobe.com/experience/analytics/mbox` | Adobe Target mBox |
-| `https://ns.adobe.com/experience/visitorapi` | Adobe Visitor Service |
-| `https://ns.adobe.com/experience/adcloud/viewability` | Adobe Advertising Cloud Viewability |
-| `https://ns.adobe.com/experience/alloy` | Adobe Experience Cloud Web SDK (Alloy) |
+| `https://ns.adobe.com/experience/visitorapi` | Adobe Visitor service |
+| `https://ns.adobe.com/experience/adcloud/viewability` | Adobe Advertising Cloud viewability |
+| `https://ns.adobe.com/experience/alloy` | Adobe Experience Cloud web SDK (Alloy) |
 
 
 
@@ -66,7 +66,7 @@ SDK or endpoint identifier. All SDKs or endpoints are identified through a URI, 
 ## xdm:version
 ### Version
 
-The version identifier of the API, e.g h.18.
+The version identifier of the API, for example, 'h.18'.
 
 `xdm:version`
 * is optional

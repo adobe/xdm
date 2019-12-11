@@ -1,23 +1,23 @@
 
-# ExperienceEvent Application Details Schema
+# ExperienceEvent application details Schema
 
 ```
 https://ns.adobe.com/xdm/context/experienceevent-application
 ```
 
-ExperienceEvent application details.
+Application related data from  ExperienceEvent observations.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/experienceevent-application.schema.json](context/experienceevent-application.schema.json) |
 ## Schema Hierarchy
 
-* ExperienceEvent Application Details `https://ns.adobe.com/xdm/context/experienceevent-application`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* ExperienceEvent application details `https://ns.adobe.com/xdm/context/experienceevent-application`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Application](application.schema.md) `https://ns.adobe.com/xdm/context/application`
 
 
-## ExperienceEvent Application Details Example
+## ExperienceEvent application details Example
 ```json
 {
   "xdm:application": {
@@ -31,11 +31,11 @@ ExperienceEvent application details.
 }
 ```
 
-# ExperienceEvent Application Details Properties
+# ExperienceEvent application details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:application](#xdmapplication) | Application | Optional | ExperienceEvent Application Details (this schema) |
+| [xdm:application](#xdmapplication) | Application | Optional | ExperienceEvent application details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:application

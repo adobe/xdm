@@ -1,5 +1,5 @@
 
-# Profile Stitch Schema
+# Profile stitch Schema
 
 ```
 https://ns.adobe.com/xdm/context/profileStitch
@@ -12,12 +12,12 @@ Details about the IDs that were joined by profile stitching.
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/profilestitch.schema.json](context/profilestitch.schema.json) |
 ## Schema Hierarchy
 
-* Profile Stitch `https://ns.adobe.com/xdm/context/profileStitch`
+* Profile stitch `https://ns.adobe.com/xdm/context/profileStitch`
   * [IdentityMap](identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
-  * [Profile Stitch Identity](profilestitchidentity.schema.md) `https://ns.adobe.com/xdm/context/profileStitchIdentity`
+  * [Profile stitch identity](profilestitchidentity.schema.md) `https://ns.adobe.com/xdm/context/profileStitchIdentity`
 
 
-## Profile Stitch Example
+## Profile stitch Example
 ```json
 {
   "xdm:profileStitchID": {
@@ -43,13 +43,13 @@ Details about the IDs that were joined by profile stitching.
 }
 ```
 
-# Profile Stitch Properties
+# Profile stitch Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [xdm:identityMap](#xdmidentitymap) | `object` | Optional | [IdentityMap](identitymap.schema.md#xdmidentitymap) |
-| [xdm:profileStitchID](#xdmprofilestitchid) | Profile Stitch Identity | Optional | Profile Stitch (this schema) |
-| [xdm:version](#xdmversion) | `string` | Optional | Profile Stitch (this schema) |
+| [xdm:profileStitchID](#xdmprofilestitchid) | Profile stitch identity | Optional | Profile stitch (this schema) |
+| [xdm:version](#xdmversion) | `string` | Optional | Profile stitch (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:identityMap
@@ -75,19 +75,19 @@ Details about the IDs that were joined by profile stitching.
 
 
 ## xdm:profileStitchID
-### Profile Stitch ID
+### Profile stitch ID
 
 The identity of the segment or snapshot definition in with the domain of the specific system that processes that type of segment.
 
 `xdm:profileStitchID`
 * is optional
-* type: Profile Stitch Identity
+* type: Profile stitch identity
 * defined in this schema
 
 ### xdm:profileStitchID Type
 
 
-* [Profile Stitch Identity](profilestitchidentity.schema.md) – `https://ns.adobe.com/xdm/context/profileStitchIdentity`
+* [Profile stitch identity](profilestitchidentity.schema.md) – `https://ns.adobe.com/xdm/context/profileStitchIdentity`
 
 
 
@@ -96,7 +96,7 @@ The identity of the segment or snapshot definition in with the domain of the spe
 ## xdm:version
 ### Version
 
-The version of the profile stitch definition used. Useful for debugging.
+The version of the profile stitch definition used and is useful for debugging.
 
 `xdm:version`
 * is optional

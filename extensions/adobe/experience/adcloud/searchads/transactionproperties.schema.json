@@ -17,11 +17,6 @@
   "definitions": {
     "searchads-transactionproperties": {
       "properties": {
-        "searchads:clientId": {
-          "title": "Client Id",
-          "type": "string",
-          "description": "Ad Cloud Client Id"
-        },
         "searchads:propertyName": {
           "title": "Name of the property",
           "type": "string",

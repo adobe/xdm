@@ -24,7 +24,7 @@ A point or place of interest (POI) interaction. Used to capture triggered engage
   "xdm:poiExits": {
     "xdm:value": 1
   },
-  "xdm:POIDetails": {
+  "xdm:poiDetail": {
     "xdm:POIID": "c7f4bf28-c8d9-4b89-a81f-2a8ef9367390",
     "xdm:name": "Acme Hotel Tokyo",
     "xdm:category": "Resorts",
@@ -44,6 +44,7 @@ A point or place of interest (POI) interaction. Used to capture triggered engage
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [xdm:POIDetail](#xdmpoidetail) | Point of Interest Details | Optional | Point of Interest Interaction (this schema) |
+| [xdm:poiDetail](#xdmpoidetail-1) | Point of Interest Details | Optional | Point of Interest Interaction (this schema) |
 | [xdm:poiEntries](#xdmpoientries) | Measure | Optional | Point of Interest Interaction (this schema) |
 | [xdm:poiExits](#xdmpoiexits) | Measure | Optional | Point of Interest Interaction (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -59,6 +60,25 @@ Detail of the POI that cause the event.
 * defined in this schema
 
 ### xdm:POIDetail Type
+
+
+* [Point of Interest Details](poi-detail.schema.md) – `https://ns.adobe.com/xdm/context/poi-detail`
+
+
+
+
+
+## xdm:poiDetail
+### POI Detail
+
+Detail of the POI that cause the event.
+
+`xdm:poiDetail`
+* is optional
+* type: Point of Interest Details
+* defined in this schema
+
+### xdm:poiDetail Type
 
 
 * [Point of Interest Details](poi-detail.schema.md) – `https://ns.adobe.com/xdm/context/poi-detail`

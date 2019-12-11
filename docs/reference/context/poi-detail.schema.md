@@ -22,7 +22,7 @@ A point or place of interest (POI) Details. Used to capture the technical and me
 
 ```json
 {
-  "xdm:POIID": "c7f4bf28-c8d9-4b89-a81f-2a8ef9367390",
+  "xdm:poiID": "c7f4bf28-c8d9-4b89-a81f-2a8ef9367390",
   "xdm:name": "Acme Hotel Tokyo",
   "xdm:category": "Resorts",
   "xdm:type": "Hotel",
@@ -37,7 +37,7 @@ A point or place of interest (POI) Details. Used to capture the technical and me
 
 ```json
 {
-  "xdm:POIID": "c7f4bf28-c8d9-4b89-a81f-2a8ef9367390",
+  "xdm:poiID": "c7f4bf28-c8d9-4b89-a81f-2a8ef9367390",
   "xdm:name": "Acme Hotel Tokyo",
   "xdm:category": "Resorts",
   "xdm:type": "Hotel",
@@ -61,6 +61,7 @@ A point or place of interest (POI) Details. Used to capture the technical and me
 | [xdm:geoInteractionDetails](#xdmgeointeractiondetails) | Geo Interaction Details | Optional | Point of Interest Details (this schema) |
 | [xdm:locatingType](#xdmlocatingtype) | `string` | Optional | Point of Interest Details (this schema) |
 | [xdm:name](#xdmname) | `string` | Optional | Point of Interest Details (this schema) |
+| [xdm:poiID](#xdmpoiid-1) | `string` | Optional | Point of Interest Details (this schema) |
 | [xdm:type](#xdmtype) | `string` | Optional | Point of Interest Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -202,6 +203,26 @@ The name given to the POI.
 * defined in this schema
 
 ### xdm:name Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:poiID
+### POI Identity
+
+The unique identifier of the POI.
+
+`xdm:poiID`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:poiID Type
 
 
 `string`

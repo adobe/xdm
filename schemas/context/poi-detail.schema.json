@@ -17,6 +17,12 @@
         "xdm:POIID": {
           "title": "POI identity",
           "type": "string",
+          "meta:status": "deprecated",
+          "description": "The unique identifier of the POI."
+        },
+        "xdm:poiID": {
+          "title": "POI Identity",
+          "type": "string",
           "description": "The unique identifier of the POI."
         },
         "xdm:name": {

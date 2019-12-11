@@ -1,26 +1,26 @@
 
-# Timed Media Information Schema
+# Timed media information Schema
 
 ```
 https://ns.adobe.com/xdm/context/media-timed
 ```
 
-Timed media - main content, ads & chapters
+Information related to timed media such main content, ads, and chapters.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/media-timed.schema.json](context/media-timed.schema.json) |
 ## Schema Hierarchy
 
-* Timed Media Information `https://ns.adobe.com/xdm/context/media-timed`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Timed Media Primary Asset Reference](media-timed-asset-reference.schema.md) `https://ns.adobe.com/xdm/context/media-timed-asset-reference`
-  * [Primary Asset View Details](media-timed-asset-view-details.schema.md) `https://ns.adobe.com/xdm/context/media-timed-asset-view-details`
-  * [Timed Media Chapter Information](media-timed-chapter.schema.md) `https://ns.adobe.com/xdm/context/media-timed-chapter`
+* Timed media information `https://ns.adobe.com/xdm/context/media-timed`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Timed media primary asset reference](media-timed-asset-reference.schema.md) `https://ns.adobe.com/xdm/context/media-timed-asset-reference`
+  * [Primary asset view details](media-timed-asset-view-details.schema.md) `https://ns.adobe.com/xdm/context/media-timed-asset-view-details`
+  * [Timed media chapter information](media-timed-chapter.schema.md) `https://ns.adobe.com/xdm/context/media-timed-chapter`
   * [Measure](../data/measure.schema.md) `https://ns.adobe.com/xdm/data/measure`
 
 
-## Timed Media Information Example
+## Timed media information Example
 ```json
 {
   "xdm:primaryAssetReference": {
@@ -94,35 +94,35 @@ Timed media - main content, ads & chapters
 }
 ```
 
-# Timed Media Information Properties
+# Timed media information Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:completes](#xdmcompletes) | Measure | Optional | Timed Media Information (this schema) |
-| [xdm:dropBeforeStarts](#xdmdropbeforestarts) | Measure | Optional | Timed Media Information (this schema) |
-| [xdm:federated](#xdmfederated) | Measure | Optional | Timed Media Information (this schema) |
-| [xdm:impressions](#xdmimpressions) | Measure | Optional | Timed Media Information (this schema) |
-| [xdm:mediaChapter](#xdmmediachapter) | Timed Media Chapter Information | Optional | Timed Media Information (this schema) |
-| [xdm:mediaSegmentViews](#xdmmediasegmentviews) | Measure | Optional | Timed Media Information (this schema) |
-| [xdm:pauseTime](#xdmpausetime) | Measure | Optional | Timed Media Information (this schema) |
-| [xdm:pauses](#xdmpauses) | Measure | Optional | Timed Media Information (this schema) |
-| [xdm:primaryAssetReference](#xdmprimaryassetreference) | Timed Media Primary Asset Reference | Optional | Timed Media Information (this schema) |
-| [xdm:primaryAssetViewDetails](#xdmprimaryassetviewdetails) | Primary Asset View Details | Optional | Timed Media Information (this schema) |
-| [xdm:progress10](#xdmprogress10) | Measure | Optional | Timed Media Information (this schema) |
-| [xdm:progress25](#xdmprogress25) | Measure | Optional | Timed Media Information (this schema) |
-| [xdm:progress50](#xdmprogress50) | Measure | Optional | Timed Media Information (this schema) |
-| [xdm:progress75](#xdmprogress75) | Measure | Optional | Timed Media Information (this schema) |
-| [xdm:progress95](#xdmprogress95) | Measure | Optional | Timed Media Information (this schema) |
-| [xdm:resumes](#xdmresumes) | Measure | Optional | Timed Media Information (this schema) |
-| [xdm:starts](#xdmstarts) | Measure | Optional | Timed Media Information (this schema) |
-| [xdm:timePlayed](#xdmtimeplayed) | Measure | Optional | Timed Media Information (this schema) |
-| [xdm:totalTimePlayed](#xdmtotaltimeplayed) | Measure | Optional | Timed Media Information (this schema) |
+| [xdm:completes](#xdmcompletes) | Measure | Optional | Timed media information (this schema) |
+| [xdm:dropBeforeStarts](#xdmdropbeforestarts) | Measure | Optional | Timed media information (this schema) |
+| [xdm:federated](#xdmfederated) | Measure | Optional | Timed media information (this schema) |
+| [xdm:impressions](#xdmimpressions) | Measure | Optional | Timed media information (this schema) |
+| [xdm:mediaChapter](#xdmmediachapter) | Timed media chapter information | Optional | Timed media information (this schema) |
+| [xdm:mediaSegmentViews](#xdmmediasegmentviews) | Measure | Optional | Timed media information (this schema) |
+| [xdm:pauseTime](#xdmpausetime) | Measure | Optional | Timed media information (this schema) |
+| [xdm:pauses](#xdmpauses) | Measure | Optional | Timed media information (this schema) |
+| [xdm:primaryAssetReference](#xdmprimaryassetreference) | Timed media primary asset reference | Optional | Timed media information (this schema) |
+| [xdm:primaryAssetViewDetails](#xdmprimaryassetviewdetails) | Primary asset view details | Optional | Timed media information (this schema) |
+| [xdm:progress10](#xdmprogress10) | Measure | Optional | Timed media information (this schema) |
+| [xdm:progress25](#xdmprogress25) | Measure | Optional | Timed media information (this schema) |
+| [xdm:progress50](#xdmprogress50) | Measure | Optional | Timed media information (this schema) |
+| [xdm:progress75](#xdmprogress75) | Measure | Optional | Timed media information (this schema) |
+| [xdm:progress95](#xdmprogress95) | Measure | Optional | Timed media information (this schema) |
+| [xdm:resumes](#xdmresumes) | Measure | Optional | Timed media information (this schema) |
+| [xdm:starts](#xdmstarts) | Measure | Optional | Timed media information (this schema) |
+| [xdm:timePlayed](#xdmtimeplayed) | Measure | Optional | Timed media information (this schema) |
+| [xdm:totalTimePlayed](#xdmtotaltimeplayed) | Measure | Optional | Timed media information (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:completes
 ### Completes
 
-Indicates if a timed media asset was watched to completion - this does not necessarily mean the viewer watched the whole video; viewer could have skipped ahead.
+Indicates if a timed media asset was watched to completion, this does not necessarily mean the viewer watched the whole video; viewer could have skipped ahead.
 
 `xdm:completes`
 * is optional
@@ -139,9 +139,9 @@ Indicates if a timed media asset was watched to completion - this does not neces
 
 
 ## xdm:dropBeforeStarts
-### Drop Before Starts
+### Drop before starts
 
-Indicates the user abandoned the media stream before the first frame (e.g. during the pre-roll ad break, due to an error while loading the content from the CDN).
+Indicates the user abandoned the media stream before the first frame for example, during the pre-roll ad break, or due to an error while loading the content from the CDN.
 
 `xdm:dropBeforeStarts`
 * is optional
@@ -160,7 +160,7 @@ Indicates the user abandoned the media stream before the first frame (e.g. durin
 ## xdm:federated
 ### Federated
 
-Indicates the experience event was created through data federation (data sharing).
+Indicates the experience event was created through data federation or data sharing.
 
 `xdm:federated`
 * is optional
@@ -196,28 +196,28 @@ Describes the intention to play a timed media asset. It does not measure success
 
 
 ## xdm:mediaChapter
-### Media Chapter
+### Media chapter
 
-Timed media - chapter information.
+Timed media chapter information.
 
 `xdm:mediaChapter`
 * is optional
-* type: Timed Media Chapter Information
+* type: Timed media chapter information
 * defined in this schema
 
 ### xdm:mediaChapter Type
 
 
-* [Timed Media Chapter Information](media-timed-chapter.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-chapter`
+* [Timed media chapter information](media-timed-chapter.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-chapter`
 
 
 
 
 
 ## xdm:mediaSegmentViews
-### Media Segment Views
+### Media segment views
 
-Indicates when at least one frame (not necessarily the first) has been viewed.
+Indicates when at least one frame, not necessarily the first has been viewed.
 
 `xdm:mediaSegmentViews`
 * is optional
@@ -234,9 +234,9 @@ Indicates when at least one frame (not necessarily the first) has been viewed.
 
 
 ## xdm:pauseTime
-### Total Pause Duration
+### Total pause duration
 
-Describes the duration (in seconds) in which playback was paused by the user.
+Describes the duration in seconds in which playback was paused by the user.
 
 `xdm:pauseTime`
 * is optional
@@ -272,45 +272,45 @@ The number of pause periods that occurred during playback.
 
 
 ## xdm:primaryAssetReference
-### Primary Asset Reference
+### Primary asset reference
 
 Asset information about the main content that was played, present on all ads and chapters that occur during the content's playback.
 
 `xdm:primaryAssetReference`
 * is optional
-* type: Timed Media Primary Asset Reference
+* type: Timed media primary asset reference
 * defined in this schema
 
 ### xdm:primaryAssetReference Type
 
 
-* [Timed Media Primary Asset Reference](media-timed-asset-reference.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-asset-reference`
+* [Timed media primary asset reference](media-timed-asset-reference.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-asset-reference`
 
 
 
 
 
 ## xdm:primaryAssetViewDetails
-### Primary Asset View Details
+### Primary asset view details
 
 View details for the main content playback, present on all ads and chapters that occur during the content's playback.
 
 `xdm:primaryAssetViewDetails`
 * is optional
-* type: Primary Asset View Details
+* type: Primary asset view details
 * defined in this schema
 
 ### xdm:primaryAssetViewDetails Type
 
 
-* [Primary Asset View Details](media-timed-asset-view-details.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-asset-view-details`
+* [Primary asset view details](media-timed-asset-view-details.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-asset-view-details`
 
 
 
 
 
 ## xdm:progress10
-### 10% Progress Marker
+### 10% Progress marker
 
 Indicates that the playhead passed the 10% marker of media based on stream length. The marker is only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.
 
@@ -329,7 +329,7 @@ Indicates that the playhead passed the 10% marker of media based on stream lengt
 
 
 ## xdm:progress25
-### 25% Progress Marker
+### 25% Progress marker
 
 Indicates that the playhead passed the 25% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.
 
@@ -348,7 +348,7 @@ Indicates that the playhead passed the 25% marker of media based on stream lengt
 
 
 ## xdm:progress50
-### 50% Progress Marker
+### 50% Progress marker
 
 Indicates that the playhead passed the 50% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.
 
@@ -367,7 +367,7 @@ Indicates that the playhead passed the 50% marker of media based on stream lengt
 
 
 ## xdm:progress75
-### 75% Progress Marker
+### 75% Progress marker
 
 Indicates that the playhead passed the 75% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.
 
@@ -386,7 +386,7 @@ Indicates that the playhead passed the 75% marker of media based on stream lengt
 
 
 ## xdm:progress95
-### 95% Progress Marker
+### 95% Progress marker
 
 Indicates that the playhead passed the 95% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.
 
@@ -426,7 +426,7 @@ Marks each playback that was resumed after more than 30 minutes of buffer, pause
 ## xdm:starts
 ### Starts
 
-Indicates the first frame of the timed media asset has been viewed - i.e. the viewer did not abandon during pre-roll ad, buffering, etc.
+Indicates the first frame of the timed media asset has been viewed for example, the viewer did not abandon during pre-roll ad, or buffering.
 
 `xdm:starts`
 * is optional
@@ -443,7 +443,7 @@ Indicates the first frame of the timed media asset has been viewed - i.e. the vi
 
 
 ## xdm:timePlayed
-### Time Spent
+### Time spent
 
 The amount of time spent in seconds by a user on a specific timed media asset.
 
@@ -462,7 +462,7 @@ The amount of time spent in seconds by a user on a specific timed media asset.
 
 
 ## xdm:totalTimePlayed
-### Content Play
+### Content play
 
 Describes the total amount of time spent by a user on a specific timed media asset, which includes time spent watching ads.
 

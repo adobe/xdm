@@ -1,5 +1,5 @@
 
-# ExperienceEvent Details for Media Schema
+# ExperienceEvent details for media Schema
 
 ```
 https://ns.adobe.com/xdm/context/experienceevent-media
@@ -12,12 +12,12 @@ This mixin is used to capture information regarding interactions with media such
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/experienceevent-media.schema.json](context/experienceevent-media.schema.json) |
 ## Schema Hierarchy
 
-* ExperienceEvent Details for Media `https://ns.adobe.com/xdm/context/experienceevent-media`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Media Information](media.schema.md) `https://ns.adobe.com/xdm/context/media`
+* ExperienceEvent details for media `https://ns.adobe.com/xdm/context/experienceevent-media`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Media information](media.schema.md) `https://ns.adobe.com/xdm/context/media`
 
 
-## ExperienceEvent Details for Media Example
+## ExperienceEvent details for media Example
 ```json
 {
   "xdm:media": {
@@ -152,11 +152,11 @@ This mixin is used to capture information regarding interactions with media such
 }
 ```
 
-# ExperienceEvent Details for Media Properties
+# ExperienceEvent details for media Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:media](#xdmmedia) | Media Information | Optional | ExperienceEvent Details for Media (this schema) |
+| [xdm:media](#xdmmedia) | Media information | Optional | ExperienceEvent details for media (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:media
@@ -166,13 +166,13 @@ Media activity information related to the experience event.
 
 `xdm:media`
 * is optional
-* type: Media Information
+* type: Media information
 * defined in this schema
 
 ### xdm:media Type
 
 
-* [Media Information](media.schema.md) – `https://ns.adobe.com/xdm/context/media`
+* [Media information](media.schema.md) – `https://ns.adobe.com/xdm/context/media`
 
 
 

@@ -13,8 +13,8 @@ This mixin provides a condensed, normalized encapsulation of end-user identifier
 ## Schema Hierarchy
 
 * ExperienceEvent EndUserIDs `https://ns.adobe.com/xdm/context/experienceevent-enduserids`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [End-User IDs](enduserids.schema.md) `https://ns.adobe.com/xdm/context/enduserids`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [End user IDs](enduserids.schema.md) `https://ns.adobe.com/xdm/context/enduserids`
 
 
 ## ExperienceEvent EndUserIDs Example
@@ -47,23 +47,23 @@ This mixin provides a condensed, normalized encapsulation of end-user identifier
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:endUserIDs](#xdmenduserids) | End-User IDs | Optional | ExperienceEvent EndUserIDs (this schema) |
+| [xdm:endUserIDs](#xdmenduserids) | End user IDs | Optional | ExperienceEvent EndUserIDs (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:endUserIDs
 ### EndUserIDs
 
-Condensed, normalized encapsulation of end-user identifiers asserted for this ExperienceEvent.
+Condensed, normalized encapsulation of end user identifiers asserted for this ExperienceEvent.
 
 `xdm:endUserIDs`
 * is optional
-* type: End-User IDs
+* type: End user IDs
 * defined in this schema
 
 ### xdm:endUserIDs Type
 
 
-* [End-User IDs](enduserids.schema.md) – `https://ns.adobe.com/xdm/context/enduserids`
+* [End user IDs](enduserids.schema.md) – `https://ns.adobe.com/xdm/context/enduserids`
 
 
 

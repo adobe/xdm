@@ -13,8 +13,8 @@ ExperienceEvent endUserIDs (deprecated).
 ## Schema Hierarchy
 
 * ExperienceEvent endUserIDs (deprecated) `https://ns.adobe.com/xdm/context/experienceevent-enduserids-deprecated`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [End-User IDs](enduserids.schema.md) `https://ns.adobe.com/xdm/context/enduserids`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [End user IDs](enduserids.schema.md) `https://ns.adobe.com/xdm/context/enduserids`
 
 
 ## ExperienceEvent endUserIDs (deprecated) Example
@@ -47,7 +47,7 @@ ExperienceEvent endUserIDs (deprecated).
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:endUserIDs](#xdmenduserids) | End-User IDs | Optional | ExperienceEvent endUserIDs (deprecated) (this schema) |
+| [xdm:endUserIDs](#xdmenduserids) | End user IDs | Optional | ExperienceEvent endUserIDs (deprecated) (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:endUserIDs
@@ -57,13 +57,13 @@ Condensed, normalized encapsulation of all end-user identifiers. Deprecated, use
 
 `xdm:endUserIDs`
 * is optional
-* type: End-User IDs
+* type: End user IDs
 * defined in this schema
 
 ### xdm:endUserIDs Type
 
 
-* [End-User IDs](enduserids.schema.md) – `https://ns.adobe.com/xdm/context/enduserids`
+* [End user IDs](enduserids.schema.md) – `https://ns.adobe.com/xdm/context/enduserids`
 
 
 

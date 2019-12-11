@@ -13,7 +13,7 @@ Amazon Device Messaging (ADM) channel uniquely identifies Amazon devices that ru
 ## Schema Hierarchy
 
 * Amazon Device Messaging (ADM) channel `https://ns.adobe.com/xdm/channels/adm`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
 

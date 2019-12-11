@@ -7,11 +7,11 @@
     ],
     "$id": "https://ns.adobe.com/xdm/context/implementationdetails",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Implementation Details",
+    "title": "Implementation details",
     "type": "object",
     "meta:extensible": true,
     "meta:status": "stabilizing",
-    "description": "Details about the SDK, library or service used in an application's or web page's implementation of a service.",
+    "description": "Details about the SDK, library, or service used in an application or web page implementation of a service.",
     "definitions": {
         "implementationdetails": {
             "properties": {
@@ -19,20 +19,20 @@
                     "title": "Name",
                     "type": "string",
                     "format": "uri",
-                    "description": "SDK or endpoint identifier. All SDKs or endpoints are identified through a URI, this includes extensions.",
+                    "description": "SDK or endpoint identifier. All SDKs or endpoints are identified through a URI, including extensions.",
                     "meta:enum": {
                         "https://ns.adobe.com/experience/analytics/scode": "Adobe Analytics sCode",
-                        "https://ns.adobe.com/experience/analytics/appmeasurement": "Adobe App Measurement",
+                        "https://ns.adobe.com/experience/analytics/appmeasurement": "Adobe app measurement",
                         "https://ns.adobe.com/experience/analytics/mbox": "Adobe Target mBox",
-                        "https://ns.adobe.com/experience/visitorapi": "Adobe Visitor Service",
-                        "https://ns.adobe.com/experience/adcloud/viewability": "Adobe Advertising Cloud Viewability",
-                        "https://ns.adobe.com/experience/alloy": "Adobe Experience Cloud Web SDK (Alloy)"
+                        "https://ns.adobe.com/experience/visitorapi": "Adobe Visitor service",
+                        "https://ns.adobe.com/experience/adcloud/viewability": "Adobe Advertising Cloud viewability",
+                        "https://ns.adobe.com/experience/alloy": "Adobe Experience Cloud web SDK (Alloy)"
                     }
                 },
                 "xdm:version": {
                     "title": "Version",
                     "type": "string",
-                    "description": "The version identifier of the API, e.g h.18."
+                    "description": "The version identifier of the API, for example, 'h.18'."
                 }
             }
         }

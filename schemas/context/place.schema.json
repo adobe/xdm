@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/place",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Place",
+  "title": "Physical place",
   "type": "object",
   "meta:extensible": true,
   "description": "A place in the real world with a physical location.",
@@ -31,40 +31,40 @@
           "description": "The physical address of the location."
         },
         "schema:telephone": {
-          "title": "Phone Number",
+          "title": "Phone number",
           "type": "string",
           "description": "The phone number."
         },
         "schema:branchCode": {
-          "title": "Location Code",
+          "title": "Location code",
           "type": "string",
-          "description": "A short textual code (also called \"store code\") that uniquely identifies a place of business. The code is typically assigned by the parent Organization and used in structured URLs.\n\nFor example, in the URL `http://www.starbucks.co.uk/store-locator/etc/detail/3047` the code \"3047\" is a `branchCode` for a particular branch."
+          "description": "A short textual code also called \"store code\" that uniquely identifies a place of business. The code is typically assigned by the parent organization and used in structured URLs. For example, in the URL `http://www.starbucks.co.uk/store-locator/etc/detail/3047` the code \"3047\" is a `branchCode` for a particular branch."
         },
         "xdm:shape": {
-          "title": "Geo Shape",
+          "title": "Geo shape",
           "$ref": "http://schema.org/GeoShape",
           "description": "The geographic shape of the physical location."
         },
         "xdm:pointOfInterest": {
-          "title": "Point of Interest",
+          "title": "Point of interest",
           "$ref": "http://schema.org/GeoCoordinates",
           "description": "The coordinates of the point of interest for this location."
         },
         "xdm:containedInPlace": {
-          "title": "Contained by Location",
+          "title": "Contained by location",
           "type": "string",
           "format": "uri",
-          "description": "XDM URI of another `Place` that this place is contained in.\n\nThis property is based on `schema:containedInPlace`, but is using URI references instead of embedding the containing place."
+          "description": "XDM URI of another `Place` that this place is contained in. This property is based on `schema:containedInPlace`, but is using URI references instead of embedding the containing place."
         },
         "xdm:containsPlaces": {
-          "title": "Contains Locations",
+          "title": "Contains locations",
           "type": "array",
           "items": {
             "type": "string",
             "format": "uri",
             "description": "The XDM URI of another `Place` that this place contains."
           },
-          "description": "An array of XDM URIs of other `Place` instances that this place is containing.\n\nThis property is based on `schema:containsPlace`, but is using URI references instead of embedding the containing place. In addition, it is an array, allowing one place to include multiple other places."
+          "description": "An array of XDM URIs of other `Place` instances that this place is containing. This property is based on `schema:containsPlace`, but is using URI references instead of embedding the containing place. In addition, it is an array, allowing one place to include multiple other places."
         }
       },
       "required": [

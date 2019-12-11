@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/beacon-interaction-details
 ```
 
-Beacon, a wireless device that communicates identity information to mobile applications as mobile devices come within range.
+Beacon is a wireless device that communicates identity information to mobile applications as mobile devices come within range.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -13,7 +13,7 @@ Beacon, a wireless device that communicates identity information to mobile appli
 ## Schema Hierarchy
 
 * Beacon `https://ns.adobe.com/xdm/context/beacon-interaction-details`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
 ## Beacon Example
@@ -37,9 +37,9 @@ Beacon, a wireless device that communicates identity information to mobile appli
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:beaconMajor
-### Beacon Major
+### Beacon major
 
-The first sub organization identifier of an area multiple beacon operate in.
+Major values identify and distinguish a group and unsigned integer values between 1 and 65,535.
 
 `xdm:beaconMajor`
 * is optional
@@ -59,7 +59,7 @@ The first sub organization identifier of an area multiple beacon operate in.
 ## xdm:beaconMinor
 ### Beacon Minor
 
-The second sub organization identifier of an area multiple beacon operate in. The smallest area a beacon can refine location to.
+Minor values identify and distinguish an individual and unsigned integer values between 1 and 65,535.
 
 `xdm:beaconMinor`
 * is optional
@@ -77,7 +77,7 @@ The second sub organization identifier of an area multiple beacon operate in. Th
 
 
 ## xdm:proximity
-### Proximity to Beacon
+### Proximity to beacon
 
 Estimated distance from the beacon.
 
@@ -102,7 +102,7 @@ The value of this property **must** be equal to one of the [known values below](
 ## xdm:proximityUUID
 ### Proximity UUID
 
-The UUID configured into a beacon (or multiple beacons if multiple operate in an area) to be transmitted to mobile devices in range to identify an organizations beacons.
+A proximity UUID (Universally Unique IDentifier) is a special type of identifier used to distinguish beacons in your network from all other beacons in networks outside your control. The proximity UUID is configured into a beacon, to be transmitted to mobile devices in range to identify an organizations beacons.
 
 `xdm:proximityUUID`
 * is optional

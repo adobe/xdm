@@ -7,14 +7,14 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/directmarketing-phonenumber",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Direct Marketing Phone Number",
+  "title": "Direct marketing phone number",
   "type": "object",
-  "description": "Direct marketing phone number.",
+  "description": "Phone number used to contact a user.",
   "definitions": {
     "directmarketing-phonenumber": {
       "properties": {
         "xdm:errorCount": {
-          "title": "Error Count",
+          "title": "Error count",
           "type": "integer",
           "description": "Number of consecutive errors when calling this phone number."
         },

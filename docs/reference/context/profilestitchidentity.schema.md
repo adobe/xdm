@@ -1,22 +1,22 @@
 
-# Profile Stitch Identity Schema
+# Profile stitch identity Schema
 
 ```
 https://ns.adobe.com/xdm/context/profileStitchIdentity
 ```
 
-Profile stitch identity is used to clearly distinguish profile Stitching from multiple sources. `ProfileStitchIdentity` is established by an profile stitch identity provider, which itself is referenced in the `namespace` attribute. Within each `namespace`, the profileStitchIdentity is unique.
+Profile stitch identity is used to clearly distinguish profile stitching from multiple sources. `ProfileStitchIdentity` is established by an profile stitch identity provider, which itself is referenced in the `namespace` attribute. Within each `namespace`, the profileStitchIdentity is unique.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/profilestitchidentity.schema.json](context/profilestitchidentity.schema.json) |
 ## Schema Hierarchy
 
-* Profile Stitch Identity `https://ns.adobe.com/xdm/context/profileStitchIdentity`
+* Profile stitch identity `https://ns.adobe.com/xdm/context/profileStitchIdentity`
   * [Namespace](namespace.schema.md) `https://ns.adobe.com/xdm/context/namespace`
 
 
-## Profile Stitch Identity Example
+## Profile stitch identity Example
 ```json
 {
   "@id": "https://data.adobe.io/entities/profileStitchIdentity/1",
@@ -26,13 +26,13 @@ Profile stitch identity is used to clearly distinguish profile Stitching from mu
 }
 ```
 
-# Profile Stitch Identity Properties
+# Profile stitch identity Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#id) | `string` | Optional | Profile Stitch Identity (this schema) |
-| [xdm:namespace](#xdmnamespace) | Namespace | Optional | Profile Stitch Identity (this schema) |
-| [xdm:xid](#xdmxid) | `string` | Optional | Profile Stitch Identity (this schema) |
+| [@id](#id) | `string` | Optional | Profile stitch identity (this schema) |
+| [xdm:namespace](#xdmnamespace) | Namespace | Optional | Profile stitch identity (this schema) |
+| [xdm:xid](#xdmxid) | `string` | Optional | Profile stitch identity (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -76,7 +76,7 @@ The namespace associated with the `xid` attribute.
 
 
 ## xdm:xid
-### Experience Identifier
+### Experience identifier
 
 When present, this value represents a cross-namespace identifier that is unique across all namespace-scoped identifiers in all namespaces.
 

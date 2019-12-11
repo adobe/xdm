@@ -13,7 +13,7 @@ Used to indicate the behavior of record data semantic when composed into data sc
 ## Schema Hierarchy
 
 * Record Schema `https://ns.adobe.com/xdm/data/record`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
 ## Record Schema Example

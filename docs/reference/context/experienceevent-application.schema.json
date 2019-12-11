@@ -7,14 +7,14 @@
     ],
     "$id": "https://ns.adobe.com/xdm/context/experienceevent-application",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "ExperienceEvent Application Details",
+    "title": "ExperienceEvent application details",
     "type": "object",
     "meta:extensible": true,
     "meta:abstract": true,
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/experienceevent"
     ],
-    "description": "ExperienceEvent application details.",
+    "description": "Application related data from  ExperienceEvent observations.",
     "definitions": {
         "experienceevent-application": {
             "properties": {

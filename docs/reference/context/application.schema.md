@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/application
 ```
 
-Details related to the application generated interactions. Application refers to a software experience, such as a mobile or desktop application that can be installed, run, closed, uninstalled by the end-user. This is not intended to describe agents such as chatbots, browser-based plugins, or other experiences that do not follow this lifecycle.
+Details related to the application generated interactions. Application refers to a software experience, such as a mobile or desktop application that can be installed, run, closed, or uninstalled by an end user. Details are not intended to describe agents such as chatbots, browser-based plugins, or other experiences that do not apply to applications.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -13,7 +13,7 @@ Details related to the application generated interactions. Application refers to
 ## Schema Hierarchy
 
 * Application `https://ns.adobe.com/xdm/context/application`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Measure](../data/measure.schema.md) `https://ns.adobe.com/xdm/data/measure`
 
 
@@ -47,7 +47,7 @@ Details related to the application generated interactions. Application refers to
 
 ## xdm:applicationCloses
 
-Graceful termination(s) of an application.
+Graceful termination of an application.
 
 `xdm:applicationCloses`
 * is optional
@@ -83,7 +83,7 @@ Triggered when the application does not exit gracefully. Event is sent on applic
 
 ## xdm:featureUsages
 
-Activation(s) of an application feature that is being measured.
+Activation of an application feature that is being measured.
 
 `xdm:featureUsages`
 * is optional
@@ -118,7 +118,7 @@ Triggered on first launch after install.
 
 
 ## xdm:id
-### Application Identifier
+### Application identifier
 
 Identifier of the application.
 
@@ -139,7 +139,7 @@ Identifier of the application.
 
 ## xdm:installs
 
-Install of an application on a device where the actual install event is available.
+Install of an application on a device where the specific install event is available.
 
 `xdm:installs`
 * is optional
@@ -157,7 +157,7 @@ Install of an application on a device where the actual install event is availabl
 
 ## xdm:launches
 
-Launch of an application. Triggered on every run, including crashes and installs. Also triggered on a resume from background when the lifecycle session timeout has been exceeded.
+Launch of an application. Triggered on every run, including crashes and installs. Also triggered on a resume from background when the session timeout has been exceeded.
 
 `xdm:launches`
 * is optional

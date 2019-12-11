@@ -1,5 +1,5 @@
 
-# Person Name Schema
+# Person name Schema
 
 ```
 https://ns.adobe.com/xdm/context/person-name
@@ -15,11 +15,11 @@ In addition, a number of optional properties are made available that can be used
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/person-name.schema.json](context/person-name.schema.json) |
 ## Schema Hierarchy
 
-* Person Name `https://ns.adobe.com/xdm/context/person-name`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* Person name `https://ns.adobe.com/xdm/context/person-name`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
-## Person Name Examples
+## Person name Examples
 
 ```json
 {
@@ -32,39 +32,36 @@ In addition, a number of optional properties are made available that can be used
 
 ```json
 {
-  "xdm:firstName": "张",
-  "xdm:lastName": "三",
-  "xdm:fullName": "张三"
-}
-```
-
-```json
-{
   "xdm:firstName": "فلانة",
   "xdm:lastName": "الفلانية",
   "xdm:fullName": "فلانة الفلانية"
 }
 ```
 
+```json
+{
+  "xdm:firstName": "张",
+  "xdm:lastName": "三",
+  "xdm:fullName": "张三"
+}
+```
 
-# Person Name Properties
+
+# Person name Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:courtesyTitle](#xdmcourtesytitle) | `string` | Optional | Person Name (this schema) |
-| [xdm:firstName](#xdmfirstname) | `string` | Optional | Person Name (this schema) |
-| [xdm:fullName](#xdmfullname) | `string` | Optional | Person Name (this schema) |
-| [xdm:lastName](#xdmlastname) | `string` | Optional | Person Name (this schema) |
-| [xdm:middleName](#xdmmiddlename) | `string` | Optional | Person Name (this schema) |
+| [xdm:courtesyTitle](#xdmcourtesytitle) | `string` | Optional | Person name (this schema) |
+| [xdm:firstName](#xdmfirstname) | `string` | Optional | Person name (this schema) |
+| [xdm:fullName](#xdmfullname) | `string` | Optional | Person name (this schema) |
+| [xdm:lastName](#xdmlastname) | `string` | Optional | Person name (this schema) |
+| [xdm:middleName](#xdmmiddlename) | `string` | Optional | Person name (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:courtesyTitle
-### Courtesy Title
+### Courtesy title
 
-Normally an abbreviation of a persons *title*, *honorific*, or *salutation*.
-The `courtesyTitle` is used in front of full or last name in opening texts.
-e.g Mr. Miss. or Dr J. Smith.
-
+Normally an abbreviation of a persons title, honorific, or salutation. The `courtesyTitle` is used in front of full or last name in opening texts. For example, Mr. Miss. or Dr.
 
 `xdm:courtesyTitle`
 * is optional
@@ -82,11 +79,9 @@ e.g Mr. Miss. or Dr J. Smith.
 
 
 ## xdm:firstName
-### First Name
+### First name
 
-The first segment of the name in the writing order most commonly accepted in the language of the name. In many cultures this is the preferred personal or given name.
-
-The `firstName` and `lastName` properties have been introduced to maintain compatibility with existing systems that model names in a simplified, non-semantic, and non-internationalizable way. Using `xdm:fullName` is always preferable.
+The first segment of the name in the writing order most commonly accepted in the language of the name. In many cultures this is the preferred personal or given name. The `firstName` and `lastName` properties have been introduced to maintain compatibility with existing systems that model names in a simplified, non-semantic, and non-internationalizable way. Using `xdm:fullName` is always preferable.
 
 `xdm:firstName`
 * is optional
@@ -104,7 +99,7 @@ The `firstName` and `lastName` properties have been introduced to maintain compa
 
 
 ## xdm:fullName
-### Full Name
+### Full name
 
 The full name of the person, in writing order most commonly accepted in the language of the name.
 
@@ -124,11 +119,9 @@ The full name of the person, in writing order most commonly accepted in the lang
 
 
 ## xdm:lastName
-### Last Name
+### Last name
 
-The last segment of the name in the writing order most commonly accepted in the language of the name. In many cultures this is the inherited family name, surname, patronymic, or matronymic name.
-
-The `firstName` and `lastName` properties have been introduced to maintain compatibility with existing systems that model names in a simplified, non-semantic, and non-internationalizable way. Using `xdm:fullName` is always preferable.
+The last segment of the name in the writing order most commonly accepted in the language of the name. In many cultures this is the inherited family name, surname, patronymic, or matronymic name. The `firstName` and `lastName` properties have been introduced to maintain compatibility with existing systems that model names in a simplified, non-semantic, and non-internationalizable way. Using `xdm:fullName` is always preferable.
 
 `xdm:lastName`
 * is optional
@@ -146,7 +139,7 @@ The `firstName` and `lastName` properties have been introduced to maintain compa
 
 
 ## xdm:middleName
-### Middle Name
+### Middle name
 
 Middle, alternative, or additional names supplied between the first name and last name.
 

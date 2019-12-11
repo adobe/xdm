@@ -1,22 +1,22 @@
 
-# Identity Item Schema
+# Identity item Schema
 
 ```
 https://ns.adobe.com/xdm/context/identityitem
 ```
 
-An end-user identity item, to be included in an instance of `context/identitymap`.
+An end user identity item, to be included in an instance of `context/identitymap`.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/identityitem.schema.json](context/identityitem.schema.json) |
 ## Schema Hierarchy
 
-* Identity Item `https://ns.adobe.com/xdm/context/identityitem`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* Identity item `https://ns.adobe.com/xdm/context/identityitem`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
-## Identity Item Example
+## Identity item Example
 ```json
 {
   "xdm:id": "id123",
@@ -24,13 +24,13 @@ An end-user identity item, to be included in an instance of `context/identitymap
 }
 ```
 
-# Identity Item Properties
+# Identity item Properties
 
 | Property | Type | Required | Default | Defined by |
 |----------|------|----------|---------|------------|
-| [xdm:authenticatedState](#xdmauthenticatedstate) | `enum` | Optional | `"ambiguous"` | Identity Item (this schema) |
-| [xdm:id](#xdmid) | `string` | Optional |  | Identity Item (this schema) |
-| [xdm:primary](#xdmprimary) | `boolean` | Optional | `false` | Identity Item (this schema) |
+| [xdm:authenticatedState](#xdmauthenticatedstate) | `enum` | Optional | `"ambiguous"` | Identity item (this schema) |
+| [xdm:id](#xdmid) | `string` | Optional |  | Identity item (this schema) |
+| [xdm:primary](#xdmprimary) | `boolean` | Optional | `false` | Identity item (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:authenticatedState

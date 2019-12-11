@@ -8,7 +8,7 @@
     "$schema": "http://json-schema.org/draft-06/schema#",
     "$id": "https://ns.adobe.com/xdm/content/page-component",
     "type": "object",
-    "title": "Page Component",
+    "title": "Page component",
     "meta:extensible": true,
     "description": "A page component is a part or module of a `Componentized Page` or included in a `Component Container`.\nIt contains content fragments and has a specific type.\nThe type determines how the component will be displayed, rendered, and authored.\n",
     "definitions": {
@@ -17,7 +17,7 @@
                 "@type": {
                     "type": "string",
                     "format": "uri",
-                    "description": "Type of the component. Acts as processing hint for the client."
+                    "description": "Type of the component and acts as processing hint for the client."
                 }
             }
         }

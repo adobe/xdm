@@ -7,7 +7,7 @@
     ],
     "$id": "https://ns.adobe.com/xdm/context/profile-directmarketing",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Profile Direct Marketing",
+    "title": "Profile direct marketing",
     "type": "object",
     "meta:extensible": true,
     "meta:abstract": true,
@@ -19,17 +19,17 @@
         "profile-directmarketing": {
             "properties": {
                 "xdm:directMarketingAddress": {
-                    "title": "Direct Marketing Address",
+                    "title": "Direct marketing address",
                     "$ref": "https://ns.adobe.com/xdm/context/directmarketing-address",
                     "description": "Direct marketing postal address."
                 },
                 "xdm:directMarketingEmail": {
-                    "title": "Direct Marketing Email",
+                    "title": "Direct marketing email",
                     "$ref": "https://ns.adobe.com/xdm/context/directmarketing-emailaddress",
                     "description": "Direct marketing email address."
                 },
                 "xdm:directMarketingPhone": {
-                    "title": "Direct Marketing Phone",
+                    "title": "Direct marketing phone",
                     "$ref": "https://ns.adobe.com/xdm/context/directmarketing-phonenumber",
                     "description": "Direct marketing phone number."
                 }

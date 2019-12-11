@@ -1,5 +1,5 @@
 
-# Profile Owning Entity Details Schema
+# Profile owning entity details Schema
 
 ```
 https://ns.adobe.com/xdm/context/profile-owning-entities
@@ -12,13 +12,13 @@ This mixin is used to capture information regarding a particular organization or
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/profile-owning-entities.schema.json](context/profile-owning-entities.schema.json) |
 ## Schema Hierarchy
 
-* Profile Owning Entity Details `https://ns.adobe.com/xdm/context/profile-owning-entities`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Organizational Unit](../common/orgunit.schema.md) `https://ns.adobe.com/xdm/common/orgunit`
-  * [Geographical Unit](../common/geounit.schema.md) `https://ns.adobe.com/xdm/common/geounit`
+* Profile owning entity details `https://ns.adobe.com/xdm/context/profile-owning-entities`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Organizational unit](../common/orgunit.schema.md) `https://ns.adobe.com/xdm/common/orgunit`
+  * [Geographical unit](../common/geounit.schema.md) `https://ns.adobe.com/xdm/common/geounit`
 
 
-## Profile Owning Entity Details Example
+## Profile owning entity details Example
 ```json
 {
   "xdm:orgUnit": {
@@ -30,47 +30,47 @@ This mixin is used to capture information regarding a particular organization or
 }
 ```
 
-# Profile Owning Entity Details Properties
+# Profile owning entity details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:geoUnit](#xdmgeounit) | Geographical Unit | Optional | Profile Owning Entity Details (this schema) |
-| [xdm:orgUnit](#xdmorgunit) | Organizational Unit | Optional | Profile Owning Entity Details (this schema) |
+| [xdm:geoUnit](#xdmgeounit) | Geographical unit | Optional | Profile owning entity details (this schema) |
+| [xdm:orgUnit](#xdmorgunit) | Organizational unit | Optional | Profile owning entity details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:geoUnit
-### Geographical Unit
+### Geographical unit
 
 The geographical unit within the organization owning the profile. This can be used to reference the geographical information maintained in another dataset.
 
 `xdm:geoUnit`
 * is optional
-* type: Geographical Unit
+* type: Geographical unit
 * defined in this schema
 
 ### xdm:geoUnit Type
 
 
-* [Geographical Unit](../common/geounit.schema.md) – `https://ns.adobe.com/xdm/common/geounit`
+* [Geographical unit](../common/geounit.schema.md) – `https://ns.adobe.com/xdm/common/geounit`
 
 
 
 
 
 ## xdm:orgUnit
-### Organizational Unit
+### Organizational unit
 
 The unit within the organization owning the profile. This can be used to reference the organization details maintained in another dataset.
 
 `xdm:orgUnit`
 * is optional
-* type: Organizational Unit
+* type: Organizational unit
 * defined in this schema
 
 ### xdm:orgUnit Type
 
 
-* [Organizational Unit](../common/orgunit.schema.md) – `https://ns.adobe.com/xdm/common/orgunit`
+* [Organizational unit](../common/orgunit.schema.md) – `https://ns.adobe.com/xdm/common/orgunit`
 
 
 

@@ -1,5 +1,5 @@
 
-# Primary Asset View Details Schema
+# Primary asset view details Schema
 
 ```
 https://ns.adobe.com/xdm/context/media-timed-asset-view-details
@@ -12,13 +12,13 @@ View details for the main content playback, present on all ads and chapters that
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/media-timed-asset-view-details.schema.json](context/media-timed-asset-view-details.schema.json) |
 ## Schema Hierarchy
 
-* Primary Asset View Details `https://ns.adobe.com/xdm/context/media-timed-asset-view-details`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Implementation Details](implementationdetails.schema.md) `https://ns.adobe.com/xdm/context/implementationdetails`
-  * [Timed Media Quality of Experience](media-timed-qoe.schema.md) `https://ns.adobe.com/xdm/context/media-timed-qoe`
+* Primary asset view details `https://ns.adobe.com/xdm/context/media-timed-asset-view-details`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Implementation details](implementationdetails.schema.md) `https://ns.adobe.com/xdm/context/implementationdetails`
+  * [Timed media quality of experience](media-timed-qoe.schema.md) `https://ns.adobe.com/xdm/context/media-timed-qoe`
 
 
-## Primary Asset View Details Example
+## Primary asset view details Example
 ```json
 {
   "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114230",
@@ -36,24 +36,24 @@ View details for the main content playback, present on all ads and chapters that
 }
 ```
 
-# Primary Asset View Details Properties
+# Primary asset view details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#id) | `string` | Optional | Primary Asset View Details (this schema) |
-| [xdm:adLoadType](#xdmadloadtype) | `string` | Optional | Primary Asset View Details (this schema) |
-| [xdm:broadcastChannel](#xdmbroadcastchannel) | `string` | Optional | Primary Asset View Details (this schema) |
-| [xdm:broadcastContentType](#xdmbroadcastcontenttype) | `string` | Optional | Primary Asset View Details (this schema) |
-| [xdm:broadcastNetwork](#xdmbroadcastnetwork) | `string` | Optional | Primary Asset View Details (this schema) |
-| [xdm:playerName](#xdmplayername) | `string` | Optional | Primary Asset View Details (this schema) |
-| [xdm:playerSDKVersion](#xdmplayersdkversion) | Implementation Details | Optional | Primary Asset View Details (this schema) |
-| [xdm:qoe](#xdmqoe) | Timed Media Quality of Experience | Optional | Primary Asset View Details (this schema) |
-| [xdm:sessionTimeout](#xdmsessiontimeout) | `integer` | Optional | Primary Asset View Details (this schema) |
-| [xdm:sourceFeed](#xdmsourcefeed) | `string` | Optional | Primary Asset View Details (this schema) |
+| [@id](#id) | `string` | Optional | Primary asset view details (this schema) |
+| [xdm:adLoadType](#xdmadloadtype) | `string` | Optional | Primary asset view details (this schema) |
+| [xdm:broadcastChannel](#xdmbroadcastchannel) | `string` | Optional | Primary asset view details (this schema) |
+| [xdm:broadcastContentType](#xdmbroadcastcontenttype) | `string` | Optional | Primary asset view details (this schema) |
+| [xdm:broadcastNetwork](#xdmbroadcastnetwork) | `string` | Optional | Primary asset view details (this schema) |
+| [xdm:playerName](#xdmplayername) | `string` | Optional | Primary asset view details (this schema) |
+| [xdm:playerSDKVersion](#xdmplayersdkversion) | Implementation details | Optional | Primary asset view details (this schema) |
+| [xdm:qoe](#xdmqoe) | Timed media quality of experience | Optional | Primary asset view details (this schema) |
+| [xdm:sessionTimeout](#xdmsessiontimeout) | `integer` | Optional | Primary asset view details (this schema) |
+| [xdm:sourceFeed](#xdmsourcefeed) | `string` | Optional | Primary asset view details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
-### Media Session ID
+### Media session ID
 
 Identifies an instance of a content stream unique to an individual playback.
 
@@ -74,7 +74,7 @@ Identifies an instance of a content stream unique to an individual playback.
 
 
 ## xdm:adLoadType
-### Ad Load Type
+### Ad load type
 
 The type of ad loaded as defined by each customer's internal representation.
 
@@ -94,7 +94,7 @@ The type of ad loaded as defined by each customer's internal representation.
 
 
 ## xdm:broadcastChannel
-### Distribution Channel
+### Distribution channel
 
 Distribution channel from where the content was played.
 
@@ -114,7 +114,7 @@ Distribution channel from where the content was played.
 
 
 ## xdm:broadcastContentType
-### Broadcast Content Type
+### Broadcast content type
 
 The type of the stream delivery.
 
@@ -133,19 +133,19 @@ The type of the stream delivery.
 ### xdm:broadcastContentType Known Values
 | Value | Description |
 |-------|-------------|
-| `VOD` | Video-on-Demand |
-| `Live` | Live Streaming |
+| `VOD` | Video-on-demand |
+| `Live` | Live streaming |
 | `Linear` | Linear playback of the media asset |
-| `UGC` | User-generated Content |
-| `Radio` | Radio Show |
-| `Podcast` | Audio Podcast |
+| `UGC` | User-generated content |
+| `Radio` | Radio show |
+| `Podcast` | Audio podcast |
 | `Audiobook` | Audiobook |
 
 
 
 
 ## xdm:broadcastNetwork
-### Broadcast Network
+### Broadcast network
 
 The programmer network name.
 
@@ -165,9 +165,9 @@ The programmer network name.
 
 
 ## xdm:playerName
-### Content Player Name
+### Content player name
 
-Name of the player.
+Name of the content player.
 
 `xdm:playerName`
 * is optional
@@ -185,45 +185,45 @@ Name of the player.
 
 
 ## xdm:playerSDKVersion
-### Player SDK Version
+### Player SDK version
 
 The SDK version used by the player.
 
 `xdm:playerSDKVersion`
 * is optional
-* type: Implementation Details
+* type: Implementation details
 * defined in this schema
 
 ### xdm:playerSDKVersion Type
 
 
-* [Implementation Details](implementationdetails.schema.md) – `https://ns.adobe.com/xdm/context/implementationdetails`
+* [Implementation details](implementationdetails.schema.md) – `https://ns.adobe.com/xdm/context/implementationdetails`
 
 
 
 
 
 ## xdm:qoe
-### Quality of Experience
+### Quality of experience
 
 Timed media properties related to the content playback's quality of experience (QoE).
 
 `xdm:qoe`
 * is optional
-* type: Timed Media Quality of Experience
+* type: Timed media quality of experience
 * defined in this schema
 
 ### xdm:qoe Type
 
 
-* [Timed Media Quality of Experience](media-timed-qoe.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-qoe`
+* [Timed media quality of experience](media-timed-qoe.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-qoe`
 
 
 
 
 
 ## xdm:sessionTimeout
-### Media Session Server Timeout
+### Media session server timeout
 
 Indicates the amount of time, in seconds, that passed between the user's last known interaction and the moment the session was closed.
 
@@ -243,9 +243,9 @@ Indicates the amount of time, in seconds, that passed between the user's last kn
 
 
 ## xdm:sourceFeed
-### Feed Type
+### Feed type
 
-The type of feed. Can either represent actual feed-related data (e.g. EAST HD/SD), or the source of the feed (e.g. an URL).
+The type of feed, which can either represent actual feed-related data such as  EAST HD or SD, or the source of the feed like a URL.
 
 `xdm:sourceFeed`
 * is optional

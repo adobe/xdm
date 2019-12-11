@@ -7,26 +7,26 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/advertising-break",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Ad Break",
+  "title": "Ad break",
   "type": "object",
-  "description": "Details about how a timed advertising is being inserted into a timed media.",
+  "description": "An ad break is an advertisement inserted into media content. Ad break describes how a timed advertising is inserted into a timed media.",
   "meta:extensible": true,
   "definitions": {
     "adBreak": {
       "properties": {
         "@id": {
-          "title": "Ad Break ID",
+          "title": "Ad break ID",
           "format": "uri-reference",
           "type": "string",
           "description": "Identifier of the ad break."
         },
         "dc:title": {
-          "title": "Ad Break Name",
+          "title": "Ad break name",
           "type": "string",
           "description": "The friendly name of the ad break."
         },
         "xdm:offset": {
-          "title": "Ad Break Offset",
+          "title": "Ad break offset",
           "type": "integer",
           "description": "The offset, in seconds, of the ad break from the start of the primary content."
         }

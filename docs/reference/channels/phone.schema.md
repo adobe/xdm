@@ -13,7 +13,7 @@ The telephone channel includes both inbound and outbound messages.
 ## Schema Hierarchy
 
 * Phone Channel `https://ns.adobe.com/xdm/channels/phone`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
 

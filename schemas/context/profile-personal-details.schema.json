@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/profile-personal-details",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Profile Personal Details",
+  "title": "Profile personal details",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
@@ -17,27 +17,27 @@
     "profile-personal-details": {
       "properties": {
         "xdm:homeAddress": {
-          "title": "Home Address",
+          "title": "Home address",
           "$ref": "https://ns.adobe.com/xdm/common/address",
           "description": "A home postal address."
         },
         "xdm:personalEmail": {
-          "title": "Personal Email",
+          "title": "Personal email",
           "$ref": "https://ns.adobe.com/xdm/context/emailaddress",
           "description": "A personal email address."
         },
         "xdm:homePhone": {
-          "title": "Home Phone",
+          "title": "Home phone",
           "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
           "description": "Home phone number."
         },
         "xdm:mobilePhone": {
-          "title": "Mobile Phone",
+          "title": "Mobile phone",
           "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
           "description": "Mobile phone number."
         },
         "xdm:faxPhone": {
-          "title": "Fax Phone",
+          "title": "Fax phone",
           "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
           "description": "Fax phone number."
         }

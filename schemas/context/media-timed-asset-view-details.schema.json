@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/media-timed-asset-view-details",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Primary Asset View Details",
+  "title": "Primary asset view details",
   "type": "object",
   "meta:status": "experimental",
   "meta:extensible": true,
@@ -16,62 +16,62 @@
     "media-asset-view-details": {
       "properties": {
         "@id": {
-          "title": "Media Session ID",
+          "title": "Media session ID",
           "type": "string",
           "format": "uri-reference",
           "description": "Identifies an instance of a content stream unique to an individual playback."
         },
         "xdm:playerName": {
-          "title": "Content Player Name",
+          "title": "Content player name",
           "type": "string",
-          "description": "Name of the player."
+          "description": "Name of the content player."
         },
         "xdm:broadcastChannel": {
-          "title": "Distribution Channel",
+          "title": "Distribution channel",
           "type": "string",
           "description": "Distribution channel from where the content was played."
         },
         "xdm:broadcastContentType": {
-          "title": "Broadcast Content Type",
+          "title": "Broadcast content type",
           "type": "string",
           "description": "The type of the stream delivery.",
           "meta:enum": {
-            "VOD": "Video-on-Demand",
-            "Live": "Live Streaming",
+            "VOD": "Video-on-demand",
+            "Live": "Live streaming",
             "Linear": "Linear playback of the media asset",
-            "UGC": "User-generated Content",
-            "Radio": "Radio Show",
-            "Podcast": "Audio Podcast",
+            "UGC": "User-generated content",
+            "Radio": "Radio show",
+            "Podcast": "Audio podcast",
             "Audiobook": "Audiobook"
           }
         },
         "xdm:playerSDKVersion": {
-          "title": "Player SDK Version",
+          "title": "Player SDK version",
           "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
           "description": "The SDK version used by the player."
         },
         "xdm:broadcastNetwork": {
-          "title": "Broadcast Network",
+          "title": "Broadcast network",
           "type": "string",
           "description": "The programmer network name."
         },
         "xdm:adLoadType": {
-          "title": "Ad Load Type",
+          "title": "Ad load type",
           "type": "string",
           "description": "The type of ad loaded as defined by each customer's internal representation."
         },
         "xdm:sourceFeed": {
-          "title": "Feed Type",
+          "title": "Feed type",
           "type": "string",
-          "description": "The type of feed. Can either represent actual feed-related data (e.g. EAST HD/SD), or the source of the feed (e.g. an URL)."
+          "description": "The type of feed, which can either represent actual feed-related data such as  EAST HD or SD, or the source of the feed like a URL."
         },
         "xdm:sessionTimeout": {
-          "title": "Media Session Server Timeout",
+          "title": "Media session server timeout",
           "type": "integer",
           "description": "Indicates the amount of time, in seconds, that passed between the user's last known interaction and the moment the session was closed."
         },
         "xdm:qoe": {
-          "title": "Quality of Experience",
+          "title": "Quality of experience",
           "$ref": "https://ns.adobe.com/xdm/context/media-timed-qoe",
           "description": "Timed media properties related to the content playback's quality of experience (QoE)."
         }

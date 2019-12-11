@@ -1,5 +1,5 @@
 
-# Segment Expression Schema
+# Segment expression Schema
 
 ```
 https://ns.adobe.com/xdm/context/segmentdefinition-expression
@@ -12,11 +12,11 @@ This mixin helps capture the qualifying expression for a segment.
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/segmentdefinition-expression.schema.json](context/segmentdefinition-expression.schema.json) |
 ## Schema Hierarchy
 
-* Segment Expression `https://ns.adobe.com/xdm/context/segmentdefinition-expression`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* Segment expression `https://ns.adobe.com/xdm/context/segmentdefinition-expression`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
-## Segment Expression Example
+## Segment expression Example
 ```json
 {
   "xdm:segmentExpression": {
@@ -27,15 +27,15 @@ This mixin helps capture the qualifying expression for a segment.
 }
 ```
 
-# Segment Expression Properties
+# Segment expression Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:segmentExpression](#xdmsegmentexpression) | `object` | Optional | Segment Expression (this schema) |
+| [xdm:segmentExpression](#xdmsegmentexpression) | `object` | Optional | Segment expression (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:segmentExpression
-### Segment Expression
+### Segment expression
 
 `xdm:segmentExpression`
 * is optional
@@ -59,7 +59,7 @@ This mixin helps capture the qualifying expression for a segment.
 #### xdm:expressionType
 ##### Type
 
-Type of expression. For example PQL, QUERYSERVICE, AAM
+Type of expression, for example, PQL, Query Service, or Adobe Audience Manager.
 
 `xdm:expressionType`
 * is optional
@@ -85,9 +85,9 @@ Type of expression. For example PQL, QUERYSERVICE, AAM
 
 
 #### xdm:mimeType
-##### Expression Mime Type
+##### Expression mime type
 
-Mime Type of expression. For example pql/text, application/sql
+Mime type of the expression. For example, pql/text or application/sql.
 
 `xdm:mimeType`
 * is optional

@@ -17,6 +17,12 @@
                 "xdm:POIID": {
                     "title": "POI Identity",
                     "type": "string",
+                    "meta:status": "deprecated",
+                    "description": "The unique identifier of the POI."
+                },
+                "xdm:poiID": {
+                    "title": "POI Identity",
+                    "type": "string",
                     "description": "The unique identifier of the POI."
                 },
                 "xdm:name": {
@@ -75,7 +81,7 @@
     "meta:status": "experimental",
     "examples": [
         {
-            "xdm:POIID": "c7f4bf28-c8d9-4b89-a81f-2a8ef9367390",
+            "xdm:poiID": "c7f4bf28-c8d9-4b89-a81f-2a8ef9367390",
             "xdm:name": "Acme Hotel Tokyo",
             "xdm:category": "Resorts",
             "xdm:type": "Hotel",
@@ -87,7 +93,7 @@
             }
         },
         {
-            "xdm:POIID": "c7f4bf28-c8d9-4b89-a81f-2a8ef9367390",
+            "xdm:poiID": "c7f4bf28-c8d9-4b89-a81f-2a8ef9367390",
             "xdm:name": "Acme Hotel Tokyo",
             "xdm:category": "Resorts",
             "xdm:type": "Hotel",

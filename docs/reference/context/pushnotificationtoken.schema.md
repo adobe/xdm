@@ -1,30 +1,26 @@
 
-# Push Notification Token Schema
+# Push notification token Schema
 
 ```
 https://ns.adobe.com/xdm/context/pushnotificationtoken
 ```
 
-Push notification tokens are used to communicate with applications that
-are installed on devices or SaaS application accounts. Examples include mobile
-application notifications over notification services like the Apple Push
-Notification service.
-
+Push notification tokens are used to communicate with applications that are installed on devices or SaaS application accounts. Examples include mobile application notifications over notification services like the Apple Push Notification service.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/pushnotificationtoken.schema.json](context/pushnotificationtoken.schema.json) |
 ## Schema Hierarchy
 
-* Push Notification Token `https://ns.adobe.com/xdm/context/pushnotificationtoken`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* Push notification token `https://ns.adobe.com/xdm/context/pushnotificationtoken`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Environment](environment.schema.md) `https://ns.adobe.com/xdm/context/environment`
   * [Device](device.schema.md) `https://ns.adobe.com/xdm/context/device`
   * [Application](application.schema.md) `https://ns.adobe.com/xdm/context/application`
   * [Experience Channel](../channels/channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
 
-## Push Notification Token Example
+## Push notification token Example
 ```json
 {
   "xdm:token": "ABC123DEFG",
@@ -70,24 +66,23 @@ Notification service.
 }
 ```
 
-# Push Notification Token Properties
+# Push notification token Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:application](#xdmapplication) | Application | Optional | Push Notification Token (this schema) |
-| [xdm:channel](#xdmchannel) | Experience Channel | Optional | Push Notification Token (this schema) |
-| [xdm:deregistrationDate](#xdmderegistrationdate) | `string` | Optional | Push Notification Token (this schema) |
-| [xdm:device](#xdmdevice) | Device | Optional | Push Notification Token (this schema) |
-| [xdm:environment](#xdmenvironment) | Environment | Optional | Push Notification Token (this schema) |
-| [xdm:registrationDate](#xdmregistrationdate) | `string` | Optional | Push Notification Token (this schema) |
-| [xdm:token](#xdmtoken) | `string` | Optional | Push Notification Token (this schema) |
+| [xdm:application](#xdmapplication) | Application | Optional | Push notification token (this schema) |
+| [xdm:channel](#xdmchannel) | Experience Channel | Optional | Push notification token (this schema) |
+| [xdm:deregistrationDate](#xdmderegistrationdate) | `string` | Optional | Push notification token (this schema) |
+| [xdm:device](#xdmdevice) | Device | Optional | Push notification token (this schema) |
+| [xdm:environment](#xdmenvironment) | Environment | Optional | Push notification token (this schema) |
+| [xdm:registrationDate](#xdmregistrationdate) | `string` | Optional | Push notification token (this schema) |
+| [xdm:token](#xdmtoken) | `string` | Optional | Push notification token (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:application
 ### Application
 
-Application registered to receive Push Notifications.
-
+Application registered to receive push notifications.
 
 `xdm:application`
 * is optional
@@ -104,7 +99,7 @@ Application registered to receive Push Notifications.
 
 
 ## xdm:channel
-### Communication Channel
+### Communication channel
 
 Channels for communicating with customers or users.
 
@@ -123,10 +118,9 @@ Channels for communicating with customers or users.
 
 
 ## xdm:deregistrationDate
-### Deregistration Date
+### De-registration date
 
 Date and time when the profile has disabled push notifications on the application.
-
 
 `xdm:deregistrationDate`
 * is optional
@@ -168,7 +162,6 @@ The device originating the registration.
 
 Environment of at the time of the registration.
 
-
 `xdm:environment`
 * is optional
 * type: Environment
@@ -184,11 +177,9 @@ Environment of at the time of the registration.
 
 
 ## xdm:registrationDate
-### Registration Date
+### Registration date
 
-Date and time when the profile has authorized its application to receive
-push notifications.
-
+Date and time when the profile has authorized the application to receive push notifications.
 
 `xdm:registrationDate`
 * is optional
@@ -209,9 +200,7 @@ push notifications.
 ## xdm:token
 ### Token
 
-The service specific token used to address the application for
-communication. e.g an Apple APN ID or a Google GCM ID.
-
+The service specific token used to address the application for communication for example, an Apple APN ID or a Google GCM ID.
 
 `xdm:token`
 * is optional

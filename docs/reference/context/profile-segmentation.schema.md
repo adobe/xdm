@@ -1,5 +1,5 @@
 
-# Profile Segmentation Schema
+# Profile segmentation Schema
 
 ```
 https://ns.adobe.com/xdm/context/profile-segmentation
@@ -12,11 +12,11 @@ This mixin is used to capture information regarding segment membership, includin
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/profile-segmentation.schema.json](context/profile-segmentation.schema.json) |
 ## Schema Hierarchy
 
-* Profile Segmentation `https://ns.adobe.com/xdm/context/profile-segmentation`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* Profile segmentation `https://ns.adobe.com/xdm/context/profile-segmentation`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
-## Profile Segmentation Example
+## Profile segmentation Example
 ```json
 {
   "xdm:segmentMembership": {
@@ -46,16 +46,16 @@ This mixin is used to capture information regarding segment membership, includin
 }
 ```
 
-# Profile Segmentation Properties
+# Profile segmentation Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:segmentMembership](#xdmsegmentmembership) | `object` | Optional | Profile Segmentation (this schema) |
-| [xdm:segments](#xdmsegments) | Segment Membership | Optional | Profile Segmentation (this schema) |
+| [xdm:segmentMembership](#xdmsegmentmembership) | `object` | Optional | Profile segmentation (this schema) |
+| [xdm:segments](#xdmsegments) | Segment membership | Optional | Profile segmentation (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:segmentMembership
-### Segment Membership Map
+### Segment membership map
 
 `xdm:segmentMembership`
 * is optional
@@ -77,21 +77,21 @@ This mixin is used to capture information regarding segment membership, includin
 
 
 ## xdm:segments
-### Segment Membership
+### Segment membership
 
 `xdm:segments`
 * is optional
-* type: Segment Membership
+* type: Segment membership
 
 * defined in this schema
 
 ### xdm:segments Type
 
 
-Array type: Segment Membership
+Array type: Segment membership
 
 All items must be of the type:
-* [Segment Membership](segmentmembership.schema.md) – `https://ns.adobe.com/xdm/context/segmentmembership`
+* [Segment membership](segmentmembership.schema.md) – `https://ns.adobe.com/xdm/context/segmentmembership`
 
 
 

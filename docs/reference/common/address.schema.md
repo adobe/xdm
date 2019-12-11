@@ -1,5 +1,5 @@
 
-# Postal Address Schema
+# Postal address Schema
 
 ```
 https://ns.adobe.com/xdm/common/address
@@ -12,13 +12,13 @@ A postal address. Address could relate to a person's home, work, or preferred st
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [common/address.schema.json](common/address.schema.json) |
 ## Schema Hierarchy
 
-* Postal Address `https://ns.adobe.com/xdm/common/address`
+* Postal address `https://ns.adobe.com/xdm/common/address`
   * [Geo Coordinates](../external/schema/geocoordinates.schema.md) `http://schema.org/GeoCoordinates`
   * [Geo](geo.schema.md) `https://ns.adobe.com/xdm/common/geo`
-  * [Audit Trail](auditable.schema.md) `https://ns.adobe.com/xdm/common/auditable`
+  * [Audit trail](auditable.schema.md) `https://ns.adobe.com/xdm/common/auditable`
 
 
-## Postal Address Example
+## Postal address Example
 ```json
 {
   "@id": "https://data.adobe.io/entities/address/123",
@@ -36,39 +36,39 @@ A postal address. Address could relate to a person's home, work, or preferred st
 }
 ```
 
-# Postal Address Properties
+# Postal address Properties
 
 | Property | Type | Required | Default | Defined by |
 |----------|------|----------|---------|------------|
 | [@id](#id) | `string` | Optional |  | [Geo Coordinates](../external/schema/geocoordinates.schema.md#id) |
-| [repo:createDate](#repocreatedate) | `string` | Optional |  | [Audit Trail](auditable.schema.md#repocreatedate) |
-| [repo:modifyDate](#repomodifydate) | `string` | Optional |  | [Audit Trail](auditable.schema.md#repomodifydate) |
+| [repo:createDate](#repocreatedate) | `string` | Optional |  | [Audit trail](auditable.schema.md#repocreatedate) |
+| [repo:modifyDate](#repomodifydate) | `string` | Optional |  | [Audit trail](auditable.schema.md#repomodifydate) |
 | [schema:description](#schemadescription) | `string` | Optional |  | [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemadescription) |
 | [schema:elevation](#schemaelevation) | `number` | Optional |  | [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemaelevation) |
 | [schema:latitude](#schemalatitude) | `number` | Optional |  | [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemalatitude) |
 | [schema:longitude](#schemalongitude) | `number` | Optional |  | [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemalongitude) |
 | [xdm:city](#xdmcity) | `string` | Optional |  | [Geo](geo.schema.md#xdmcity) |
-| [xdm:country](#xdmcountry) | `string` | Optional |  | Postal Address (this schema) |
+| [xdm:country](#xdmcountry) | `string` | Optional |  | Postal address (this schema) |
 | [xdm:countryCode](#xdmcountrycode) | `string` | Optional |  | [Geo](geo.schema.md#xdmcountrycode) |
-| [xdm:createdByBatchID](#xdmcreatedbybatchid) | `string` | Optional |  | [Audit Trail](auditable.schema.md#xdmcreatedbybatchid) |
+| [xdm:createdByBatchID](#xdmcreatedbybatchid) | `string` | Optional |  | [Audit trail](auditable.schema.md#xdmcreatedbybatchid) |
 | [xdm:dmaID](#xdmdmaid) | `integer` | Optional |  | [Geo](geo.schema.md#xdmdmaid) |
-| [xdm:label](#xdmlabel) | `string` | Optional |  | Postal Address (this schema) |
-| [xdm:lastVerifiedDate](#xdmlastverifieddate) | `string` | Optional |  | Postal Address (this schema) |
-| [xdm:modifiedByBatchID](#xdmmodifiedbybatchid) | `string` | Optional |  | [Audit Trail](auditable.schema.md#xdmmodifiedbybatchid) |
+| [xdm:label](#xdmlabel) | `string` | Optional |  | Postal address (this schema) |
+| [xdm:lastVerifiedDate](#xdmlastverifieddate) | `string` | Optional |  | Postal address (this schema) |
+| [xdm:modifiedByBatchID](#xdmmodifiedbybatchid) | `string` | Optional |  | [Audit trail](auditable.schema.md#xdmmodifiedbybatchid) |
 | [xdm:msaID](#xdmmsaid) | `integer` | Optional |  | [Geo](geo.schema.md#xdmmsaid) |
-| [xdm:postOfficeBox](#xdmpostofficebox) | `string` | Optional |  | Postal Address (this schema) |
+| [xdm:postOfficeBox](#xdmpostofficebox) | `string` | Optional |  | Postal address (this schema) |
 | [xdm:postalCode](#xdmpostalcode) | `string` | Optional |  | [Geo](geo.schema.md#xdmpostalcode) |
-| [xdm:primary](#xdmprimary) | `boolean` | Optional |  | Postal Address (this schema) |
-| [xdm:region](#xdmregion) | `string` | Optional |  | Postal Address (this schema) |
-| [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | Optional |  | [Audit Trail](auditable.schema.md#xdmrepositorycreatedby) |
-| [xdm:repositoryLastModifiedBy](#xdmrepositorylastmodifiedby) | `string` | Optional |  | [Audit Trail](auditable.schema.md#xdmrepositorylastmodifiedby) |
+| [xdm:primary](#xdmprimary) | `boolean` | Optional |  | Postal address (this schema) |
+| [xdm:region](#xdmregion) | `string` | Optional |  | Postal address (this schema) |
+| [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | Optional |  | [Audit trail](auditable.schema.md#xdmrepositorycreatedby) |
+| [xdm:repositoryLastModifiedBy](#xdmrepositorylastmodifiedby) | `string` | Optional |  | [Audit trail](auditable.schema.md#xdmrepositorylastmodifiedby) |
 | [xdm:stateProvince](#xdmstateprovince) | `string` | Optional |  | [Geo](geo.schema.md#xdmstateprovince) |
-| [xdm:status](#xdmstatus) | `string` | Optional | `"active"` | Postal Address (this schema) |
-| [xdm:statusReason](#xdmstatusreason) | `string` | Optional |  | Postal Address (this schema) |
-| [xdm:street1](#xdmstreet1) | `string` | Optional |  | Postal Address (this schema) |
-| [xdm:street2](#xdmstreet2) | `string` | Optional |  | Postal Address (this schema) |
-| [xdm:street3](#xdmstreet3) | `string` | Optional |  | Postal Address (this schema) |
-| [xdm:street4](#xdmstreet4) | `string` | Optional |  | Postal Address (this schema) |
+| [xdm:status](#xdmstatus) | `string` | Optional | `"active"` | Postal address (this schema) |
+| [xdm:statusReason](#xdmstatusreason) | `string` | Optional |  | Postal address (this schema) |
+| [xdm:street1](#xdmstreet1) | `string` | Optional |  | Postal address (this schema) |
+| [xdm:street2](#xdmstreet2) | `string` | Optional |  | Postal address (this schema) |
+| [xdm:street3](#xdmstreet3) | `string` | Optional |  | Postal address (this schema) |
+| [xdm:street4](#xdmstreet4) | `string` | Optional |  | Postal address (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -99,7 +99,7 @@ The server date and time when the resource was created in the repository, such a
 `repo:createDate`
 * is optional
 * type: `string`
-* defined in [Audit Trail](auditable.schema.md#repocreatedate)
+* defined in [Audit trail](auditable.schema.md#repocreatedate)
 
 ### repo:createDate Type
 
@@ -124,7 +124,7 @@ The server date and time when the resource was last modified in the repository, 
 `repo:modifyDate`
 * is optional
 * type: `string`
-* defined in [Audit Trail](auditable.schema.md#repomodifydate)
+* defined in [Audit trail](auditable.schema.md#repomodifydate)
 
 ### repo:modifyDate Type
 
@@ -292,14 +292,14 @@ All instances must conform to this regular expression
 
 
 ## xdm:createdByBatchID
-### Created by Batch Identifier
+### Created by batch identifier
 
-The dataset files in Catalog Services which has been originating the creation of the entity.
+The dataset files in Catalog which has been originating the creation of the record.
 
 `xdm:createdByBatchID`
 * is optional
 * type: `string`
-* defined in [Audit Trail](auditable.schema.md#xdmcreatedbybatchid)
+* defined in [Audit trail](auditable.schema.md#xdmcreatedbybatchid)
 
 ### xdm:createdByBatchID Type
 
@@ -313,7 +313,7 @@ The dataset files in Catalog Services which has been originating the creation of
 
 
 ## xdm:dmaID
-### Designated Market Area
+### Designated market area
 
 The Nielsen media research designated market area.
 
@@ -353,9 +353,9 @@ Free form name of the address.
 
 
 ## xdm:lastVerifiedDate
-### Last Verified Date
+### Last verified date
 
-The date that the address was last verified as still belonging to the person.
+The date that the address was last verified as still associated to the person.
 
 `xdm:lastVerifiedDate`
 * is optional
@@ -374,14 +374,14 @@ The date that the address was last verified as still belonging to the person.
 
 
 ## xdm:modifiedByBatchID
-### Modified by Batch Identifier
+### Modified by batch identifier
 
-The last dataset files in Catalog Services which has modified the entity. At creation time, `modifiedByBatchID` is set as `createdByBatchID`.
+The last dataset files in Catalog which has modified the record. At creation time, `modifiedByBatchID` is set as `createdByBatchID`.
 
 `xdm:modifiedByBatchID`
 * is optional
 * type: `string`
-* defined in [Audit Trail](auditable.schema.md#xdmmodifiedbybatchid)
+* defined in [Audit trail](auditable.schema.md#xdmmodifiedbybatchid)
 
 ### xdm:modifiedByBatchID Type
 
@@ -395,9 +395,9 @@ The last dataset files in Catalog Services which has modified the entity. At cre
 
 
 ## xdm:msaID
-### Metropolitan Statistical Area
+### Metropolitan statistical area
 
-The metropolitan statistical area in the USA where the observation occurred.
+The metropolitan statistical area in the United States where the observation occurred.
 
 `xdm:msaID`
 * is optional
@@ -415,7 +415,7 @@ The metropolitan statistical area in the USA where the observation occurred.
 
 
 ## xdm:postOfficeBox
-### Post Office Box
+### Post office box
 
 Post office box of the address.
 
@@ -460,7 +460,6 @@ The postal code of the location. Postal codes are not available for all countrie
 
 Primary address indicator. A profile can have only one `primary` address at a given point of time.
 
-
 `xdm:primary`
 * is optional
 * type: `boolean`
@@ -496,14 +495,14 @@ The region, county, or district portion of the address.
 
 
 ## xdm:repositoryCreatedBy
-### Created by User Identifier
+### Created by user identifier
 
-User ID who has created the entity.
+User ID of who created the record.
 
 `xdm:repositoryCreatedBy`
 * is optional
 * type: `string`
-* defined in [Audit Trail](auditable.schema.md#xdmrepositorycreatedby)
+* defined in [Audit trail](auditable.schema.md#xdmrepositorycreatedby)
 
 ### xdm:repositoryCreatedBy Type
 
@@ -516,14 +515,14 @@ User ID who has created the entity.
 
 
 ## xdm:repositoryLastModifiedBy
-### Modified by User Identifier
+### Modified by user identifier
 
-User ID who last modified the entity. At creation time, `modifiedByUser` is set as `createdByUser`.
+User ID of who last modified the record. At creation time, `modifiedByUser` is set as `createdByUser`.
 
 `xdm:repositoryLastModifiedBy`
 * is optional
 * type: `string`
-* defined in [Audit Trail](auditable.schema.md#xdmrepositorylastmodifiedby)
+* defined in [Audit trail](auditable.schema.md#xdmrepositorylastmodifiedby)
 
 ### xdm:repositoryLastModifiedBy Type
 
@@ -602,7 +601,7 @@ An indication as to the ability to use the address.
 |-------|-------------|
 | `active` | Active |
 | `incomplete` | Incomplete |
-| `pending_verification` | Pending Verification |
+| `pending_verification` | Pending verification |
 | `blacklisted` | Blacklisted |
 | `blocked` | Blocked |
 
@@ -610,7 +609,7 @@ An indication as to the ability to use the address.
 
 
 ## xdm:statusReason
-### Status Reason
+### Status reason
 
 A description of the current status.
 
@@ -632,7 +631,7 @@ A description of the current status.
 ## xdm:street1
 ### Street 1
 
-Primary Street level information, apartment number, street number and street name.
+Primary street level information, apartment number, street number, and street name.
 
 `xdm:street1`
 * is optional

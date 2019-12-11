@@ -16,7 +16,7 @@ There are multiple experience channels, each with different constraints on how c
 ## Schema Hierarchy
 
 * Experience Channel `https://ns.adobe.com/xdm/channels/channel`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
 ## Experience Channel Example

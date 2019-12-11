@@ -7,10 +7,10 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/webinteraction",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Web Interaction",
+  "title": "Web interaction",
   "type": "object",
   "meta:extensible": true,
-  "description": "Interaction details from inside the context of a loaded webpage.",
+  "description": "Interaction details from inside the context of a loaded web page.",
   "definitions": {
     "webinteraction": {
       "properties": {
@@ -28,7 +28,7 @@
         "xdm:URL": {
           "title": "URL",
           "type": "string",
-          "description": "The actual link/URL used for this web interaction."
+          "description": "The actual link or URL used for this web interaction."
         },
         "xdm:name": {
           "title": "Name",
@@ -38,7 +38,7 @@
         },
         "xdm:linkClicks": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Click of a web-link has occurred."
+          "description": "Click of a web link has occurred."
         }
       }
     }

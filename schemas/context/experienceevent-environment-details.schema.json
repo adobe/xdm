@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/experienceevent-environment-details",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "ExperienceEvent Environment Details",
+  "title": "ExperienceEvent environment details",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
@@ -24,12 +24,12 @@
         "xdm:device": {
           "title": "Device",
           "$ref": "https://ns.adobe.com/xdm/context/device",
-          "description": "An identified Device/Application or Device/Browser instance that is trackable across sessions, normally by cookies."
+          "description": "An identified device, application or device browser instance that is trackable across sessions, normally by cookies."
         },
         "xdm:placeContext": {
-          "title": "Place Context",
+          "title": "Place context",
           "$ref": "https://ns.adobe.com/xdm/context/placecontext",
-          "description": "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, working hours."
+          "description": "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, and working hours."
         }
       }
     }

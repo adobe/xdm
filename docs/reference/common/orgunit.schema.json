@@ -9,7 +9,7 @@
     "$schema": "http://json-schema.org/draft-06/schema#",
     "type": "object",
     "meta:extensible": true,
-    "title": "Organizational Unit",
+    "title": "Organizational unit",
     "description": "The organizational unit of a parent organization.",
     "definitions": {
         "orgunit": {
@@ -21,7 +21,7 @@
                     "description": "The ID associated with this organizational unit."
                 },
                 "xdm:label": {
-                    "title": "Label of the organizational Unit.",
+                    "title": "Label of the organizational unit.",
                     "type": "string",
                     "description": "The user-friendly name for the organizational unit."
                 }

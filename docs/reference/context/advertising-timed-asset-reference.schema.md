@@ -1,22 +1,22 @@
 
-# Ad Asset Reference Schema
+# Ad asset reference Schema
 
 ```
 https://ns.adobe.com/xdm/context/advertising-timed-asset-reference
 ```
 
-Asset information about the ad captured by the experience event.
+Ad asset reference is info about the ad captured by the experience event.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/advertising-timed-asset-reference.schema.json](context/advertising-timed-asset-reference.schema.json) |
 ## Schema Hierarchy
 
-* Ad Asset Reference `https://ns.adobe.com/xdm/context/advertising-timed-asset-reference`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* Ad asset reference `https://ns.adobe.com/xdm/context/advertising-timed-asset-reference`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
-## Ad Asset Reference Example
+## Ad asset reference Example
 ```json
 {
   "@id": "https://data.adobe.io/entities/asser-reference/23423",
@@ -25,13 +25,13 @@ Asset information about the ad captured by the experience event.
 }
 ```
 
-# Ad Asset Reference Properties
+# Ad asset reference Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#id) | `string` | Optional | Ad Asset Reference (this schema) |
-| [dc:title](#dctitle) | `string` | Optional | Ad Asset Reference (this schema) |
-| [xmpDM:duration](#xmpdmduration) | `integer` | Optional | Ad Asset Reference (this schema) |
+| [@id](#id) | `string` | Optional | Ad asset reference (this schema) |
+| [dc:title](#dctitle) | `string` | Optional | Ad asset reference (this schema) |
+| [xmpDM:duration](#xmpdmduration) | `integer` | Optional | Ad asset reference (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -56,9 +56,9 @@ Identifier of the ad asset provided by media analytics customers.
 
 
 ## dc:title
-### Ad Name
+### Ad name
 
-The friendly (human-readable) name of the ad asset.
+The friendly and human-readable name of the ad asset.
 
 `dc:title`
 * is optional
@@ -76,9 +76,9 @@ The friendly (human-readable) name of the ad asset.
 
 
 ## xmpDM:duration
-### Ad Length/Duration
+### Ad length or duration
 
-Length of ad asset in seconds.
+Length or duration of ad asset in seconds.
 
 `xmpDM:duration`
 * is optional

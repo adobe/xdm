@@ -1,5 +1,5 @@
 
-# Profile Preferences Details Schema
+# Profile preferences details Schema
 
 ```
 https://ns.adobe.com/xdm/context/profile-preferences-details
@@ -12,12 +12,12 @@ This mixin is used to capture information regarding individual preferences in th
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/profile-preferences-details.schema.json](context/profile-preferences-details.schema.json) |
 ## Schema Hierarchy
 
-* Profile Preferences Details `https://ns.adobe.com/xdm/context/profile-preferences-details`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* Profile preferences details `https://ns.adobe.com/xdm/context/profile-preferences-details`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [OptInOut](optinout.schema.md) `https://ns.adobe.com/xdm/context/optinout`
 
 
-## Profile Preferences Details Example
+## Profile preferences details Example
 ```json
 {
   "xdm:optInOut": {
@@ -32,21 +32,21 @@ This mixin is used to capture information regarding individual preferences in th
 }
 ```
 
-# Profile Preferences Details Properties
+# Profile preferences details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:emailFormat](#xdmemailformat) | `string` | Optional | Profile Preferences Details (this schema) |
-| [xdm:optInOut](#xdmoptinout) | OptInOut | Optional | Profile Preferences Details (this schema) |
-| [xdm:preferredLanguage](#xdmpreferredlanguage) | `string` | Optional | Profile Preferences Details (this schema) |
-| [xdm:profilePictureLink](#xdmprofilepicturelink) | `string` | Optional | Profile Preferences Details (this schema) |
-| [xdm:timeZone](#xdmtimezone) | `string` | Optional | Profile Preferences Details (this schema) |
+| [xdm:emailFormat](#xdmemailformat) | `string` | Optional | Profile preferences details (this schema) |
+| [xdm:optInOut](#xdmoptinout) | OptInOut | Optional | Profile preferences details (this schema) |
+| [xdm:preferredLanguage](#xdmpreferredlanguage) | `string` | Optional | Profile preferences details (this schema) |
+| [xdm:profilePictureLink](#xdmprofilepicturelink) | `string` | Optional | Profile preferences details (this schema) |
+| [xdm:timeZone](#xdmtimezone) | `string` | Optional | Profile preferences details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:emailFormat
-### Email Format
+### Email format
 
-Email format preferred by the profile. This can be rich text/plain text.
+Email format preferred by the profile. This can be rich text or plain text.
 
 `xdm:emailFormat`
 * is optional
@@ -89,7 +89,7 @@ Describes a users opting in and out preferences for communication by medium and 
 
 
 ## xdm:preferredLanguage
-### Preferred Language
+### Preferred language
 
 Describes the preferred system of communication used by the profile. Language codes are expressed in BCP 47 format.
 
@@ -133,7 +133,7 @@ All instances must conform to this regular expression
 
 
 ## xdm:profilePictureLink
-### Profile Picture Link
+### Profile picture link
 
 Link to profile's picture.
 
@@ -153,9 +153,9 @@ Link to profile's picture.
 
 
 ## xdm:timeZone
-### Time Zone
+### Time zone
 
-Describes which time zone the profile is present in, most frequently/the time zone preferred by the profile. Time zones are expressed according to the IETF tz database: https://www.ietf.org/timezones/tzdb-2016i/tz-link.htm
+Describes which time zone the profile is present in, most frequently the time zone preferred by the profile. Time zones are expressed according to the IETF tz database: https://www.ietf.org/timezones/tzdb-2016i/tz-link.htm
 
 `xdm:timeZone`
 * is optional

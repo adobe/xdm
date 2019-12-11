@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/segmentidentity",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Segment Identity",
+  "title": "Segment identity",
   "type": "object",
   "description": "Segment identity is used to clearly distinguish segments from multiple sources. Segment identity is established by an segment identity provider, which itself is referenced in the `namespace` attribute. Within each `namespace`, the segment identity is unique.",
   "definitions": {
@@ -17,7 +17,7 @@
           "title": "Identifier",
           "type": "string",
           "format": "uri-reference",
-          "description": "Identity of the Segment in the related namespace."
+          "description": "Identity of the segment in the related namespace."
         },
         "xdm:namespace": {
           "title": "Namespace",
@@ -25,7 +25,7 @@
           "description": "The namespace associated with the `xid` attribute."
         },
         "xdm:xid": {
-          "title": "Experience Identifier",
+          "title": "Experience identifier",
           "type": "string",
           "description": "When present, this value represents a cross-namespace identifier that is unique across all namespace-scoped identifiers in all namespaces."
         }

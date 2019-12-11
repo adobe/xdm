@@ -13,7 +13,7 @@ An identified device that is an application or browser instance that is trackabl
 ## Schema Hierarchy
 
 * Device `https://ns.adobe.com/xdm/context/device`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
 ## Device Example
@@ -49,7 +49,7 @@ An identified device that is an application or browser instance that is trackabl
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:colorDepth
-### Color Depth
+### Color depth
 
 The number of colors the display is able to represent.
 
@@ -71,7 +71,7 @@ The number of colors the display is able to represent.
 ## xdm:manufacturer
 ### Manufacturer
 
-The name of the organization who owns the design and creation of the Device. For example, 'Apple' is the manufacturer of the iPhone.
+The name of the organization who owns the design and creation of the device, for example, 'Apple' is the manufacturer of the iPhone.
 
 `xdm:manufacturer`
 * is optional
@@ -91,7 +91,7 @@ The name of the organization who owns the design and creation of the Device. For
 ## xdm:model
 ### Model
 
-The name of the model for the Device. This is the common, human-readable or marketing name for the Device. The 'iPhone 6S' is a particular model of mobile phone.
+The name of the model for the device. This is the common, human-readable, or marketing name for the device. For example, the 'iPhone 6S' is a particular model of mobile phone.
 
 `xdm:model`
 * is optional
@@ -109,9 +109,9 @@ The name of the model for the Device. This is the common, human-readable or mark
 
 
 ## xdm:modelNumber
-### Model Number
+### Model number
 
-The unique model number designation assigned by the manufacturer for this Device. Model numbers are not versions, but unique identifiers that identify a particular model configuration. While the model for a particular phone might be 'iPhone 6S' the model number would be 'A1633', or 'A1634' based on configuration at the time of sale.
+The unique model number designation assigned by the manufacturer for this device. Model numbers are not versions, but unique identifiers that identify a particular model configuration. While the model for a particular phone might be 'iPhone 6S' the model number would be 'A1633', or 'A1634' based on configuration at the time of sale.
 
 `xdm:modelNumber`
 * is optional
@@ -129,9 +129,9 @@ The unique model number designation assigned by the manufacturer for this Device
 
 
 ## xdm:screenHeight
-### Screen Height
+### Screen height
 
-The number of vertical pixels of the device's active display in its default orientation.
+The number of vertical pixels of the device's active display in the default orientation.
 
 `xdm:screenHeight`
 * is optional
@@ -149,9 +149,9 @@ The number of vertical pixels of the device's active display in its default orie
 
 
 ## xdm:screenOrientation
-### Screen Orientation
+### Screen orientation
 
-The current screen orientation ("portrait" or "landscape")
+The current screen orientation such as "portrait" or "landscape".
 
 `xdm:screenOrientation`
 * is optional
@@ -170,9 +170,9 @@ The value of this property **must** be equal to one of the [known values below](
 
 
 ## xdm:screenWidth
-### Screen Width
+### Screen width
 
-The number of horizontal pixels of the device's active display in its default orientation.
+The number of horizontal pixels of the device's active display in the default orientation.
 
 `xdm:screenWidth`
 * is optional
@@ -212,21 +212,21 @@ Type of device being tracked.
 | `mobile` | Mobile |
 | `tablet` | Tablet |
 | `desktop` | Desktop |
-| `ereader` | E-Reader |
-| `gaming` | Gaming Console |
+| `ereader` | E-reader |
+| `gaming` | Gaming console |
 | `television` | Television |
-| `settop` | Set-top Box |
-| `mediaplayer` | Media Player |
+| `settop` | Set-top box |
+| `mediaplayer` | Media player |
 | `computers` | Computers |
-| `tv screens` | TV Screens |
+| `tv screens` | TV screens |
 
 
 
 
 ## xdm:typeID
-### Type Identifier
+### Type identifier
 
-An identifier for the device. This may be an identifier from Device Atlas or another service that identifies the hardware that is being used.
+An identifier for the device. This may be an identifier from 'DeviceAtlas' or another service that identifies the hardware that is being used.
 
 `xdm:typeID`
 * is optional
@@ -244,7 +244,7 @@ An identifier for the device. This may be an identifier from Device Atlas or ano
 
 
 ## xdm:typeIDService
-### Type Identifier Service
+### Type identifier service
 
 The namespace of the service that is used to identify the device type.
 
@@ -264,7 +264,7 @@ The namespace of the service that is used to identify the device type.
 ### xdm:typeIDService Known Values
 | Value | Description |
 |-------|-------------|
-| `https://ns.adobe.com/xdm/external/deviceatlas` | Device Atlas |
+| `https://ns.adobe.com/xdm/external/deviceatlas` | DeviceAtlas |
 | `https://ns.adobe.com/xdm/external/adobecampaign` | Adobe Campaign |
 
 

@@ -16,7 +16,7 @@ Such as, to define experiences for which you want to keep a trace of the populat
 ## Schema Hierarchy
 
 * External Agency Channel `https://ns.adobe.com/xdm/channels/agency`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
 

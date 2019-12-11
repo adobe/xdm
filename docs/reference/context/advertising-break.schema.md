@@ -1,17 +1,17 @@
 
-# Ad Break Schema
+# Ad break Schema
 
 ```
 https://ns.adobe.com/xdm/context/advertising-break
 ```
 
-Details about how a timed advertising is being inserted into a timed media.
+An ad break is an advertisement inserted into media content. Ad break describes how a timed advertising is inserted into a timed media.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/advertising-break.schema.json](context/advertising-break.schema.json) |
 
-## Ad Break Example
+## Ad break Example
 ```json
 {
   "@id": "https://data.adobe.io/entities/ad-break/2394509340-30453470347",
@@ -20,17 +20,17 @@ Details about how a timed advertising is being inserted into a timed media.
 }
 ```
 
-# Ad Break Properties
+# Ad break Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#id) | `string` | Optional | Ad Break (this schema) |
-| [dc:title](#dctitle) | `string` | Optional | Ad Break (this schema) |
-| [xdm:offset](#xdmoffset) | `integer` | Optional | Ad Break (this schema) |
+| [@id](#id) | `string` | Optional | Ad break (this schema) |
+| [dc:title](#dctitle) | `string` | Optional | Ad break (this schema) |
+| [xdm:offset](#xdmoffset) | `integer` | Optional | Ad break (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
-### Ad Break ID
+### Ad break ID
 
 Identifier of the ad break.
 
@@ -51,7 +51,7 @@ Identifier of the ad break.
 
 
 ## dc:title
-### Ad Break Name
+### Ad break name
 
 The friendly name of the ad break.
 
@@ -71,7 +71,7 @@ The friendly name of the ad break.
 
 
 ## xdm:offset
-### Ad Break Offset
+### Ad break offset
 
 The offset, in seconds, of the ad break from the start of the primary content.
 

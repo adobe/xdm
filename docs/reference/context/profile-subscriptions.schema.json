@@ -7,7 +7,7 @@
     ],
     "$id": "https://ns.adobe.com/xdm/context/profile-subscriptions",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Profile Subscriptions",
+    "title": "Profile subscriptions",
     "type": "object",
     "meta:extensible": true,
     "meta:abstract": true,
@@ -21,7 +21,7 @@
                 "xdm:subscriptions": {
                     "title": "Subscriptions",
                     "type": "array",
-                    "description": "Subscriptions that this profile is entitled to including terminated, expired, or exhausted subscriptions.",
+                    "description": "Subscriptions that the profile is entitled to including terminated, expired, or exhausted subscriptions.",
                     "items": {
                         "$ref": "https://ns.adobe.com/xdm/context/subscription"
                     }

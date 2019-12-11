@@ -19,7 +19,7 @@
         "xdm:endUserIDs": {
           "title": "EndUserIDs",
           "$ref": "https://ns.adobe.com/xdm/context/enduserids",
-          "description": "Condensed, normalized encapsulation of end-user identifiers asserted for this ExperienceEvent."
+          "description": "Condensed, normalized encapsulation of end user identifiers asserted for this ExperienceEvent."
         }
       }
     }

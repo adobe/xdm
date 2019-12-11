@@ -13,7 +13,7 @@ Baidu Cloud Push is the push notification service provided by Baidu, a Chinese c
 ## Schema Hierarchy
 
 * Baidu Channel `https://ns.adobe.com/xdm/channels/baidu`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
 

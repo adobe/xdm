@@ -1,5 +1,5 @@
 
-# Web Information Schema
+# Web information Schema
 
 ```
 https://ns.adobe.com/xdm/context/webinfo
@@ -13,14 +13,14 @@ Information recorded via an `ExperienceEvent` that is specific to the World Wide
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/webinfo.schema.json](context/webinfo.schema.json) |
 ## Schema Hierarchy
 
-* Web Information `https://ns.adobe.com/xdm/context/webinfo`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Web Page Details](webpagedetails.schema.md) `https://ns.adobe.com/xdm/context/webpagedetails`
-  * [Web Interaction](webinteraction.schema.md) `https://ns.adobe.com/xdm/context/webinteraction`
-  * [Web Referrer](webreferrer.schema.md) `https://ns.adobe.com/xdm/context/webreferrer`
+* Web information `https://ns.adobe.com/xdm/context/webinfo`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Web page details](webpagedetails.schema.md) `https://ns.adobe.com/xdm/context/webpagedetails`
+  * [Web interaction](webinteraction.schema.md) `https://ns.adobe.com/xdm/context/webinteraction`
+  * [Web referrer](webreferrer.schema.md) `https://ns.adobe.com/xdm/context/webreferrer`
 
 
-## Web Information Examples
+## Web information Examples
 
 ```json
 {
@@ -68,67 +68,67 @@ Information recorded via an `ExperienceEvent` that is specific to the World Wide
 ```
 
 
-# Web Information Properties
+# Web information Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:webInteraction](#xdmwebinteraction) | Web Interaction | Optional | Web Information (this schema) |
-| [xdm:webPageDetails](#xdmwebpagedetails) | Web Page Details | Optional | Web Information (this schema) |
-| [xdm:webReferrer](#xdmwebreferrer) | Web Referrer | Optional | Web Information (this schema) |
+| [xdm:webInteraction](#xdmwebinteraction) | Web interaction | Optional | Web information (this schema) |
+| [xdm:webPageDetails](#xdmwebpagedetails) | Web page details | Optional | Web information (this schema) |
+| [xdm:webReferrer](#xdmwebreferrer) | Web referrer | Optional | Web information (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:webInteraction
-### Web Interaction
+### Web interaction
 
-Details about the web link (URL) that corresponds to where the interaction occurred.
+Details about the web link or URL that corresponds to where the interaction occurred.
 
 `xdm:webInteraction`
 * is optional
-* type: Web Interaction
+* type: Web interaction
 * defined in this schema
 
 ### xdm:webInteraction Type
 
 
-* [Web Interaction](webinteraction.schema.md) – `https://ns.adobe.com/xdm/context/webinteraction`
+* [Web interaction](webinteraction.schema.md) – `https://ns.adobe.com/xdm/context/webinteraction`
 
 
 
 
 
 ## xdm:webPageDetails
-### Web Page Details
+### Web page details
 
 Details about the web page where the web interaction occurred.
 
 `xdm:webPageDetails`
 * is optional
-* type: Web Page Details
+* type: Web page details
 * defined in this schema
 
 ### xdm:webPageDetails Type
 
 
-* [Web Page Details](webpagedetails.schema.md) – `https://ns.adobe.com/xdm/context/webpagedetails`
+* [Web page details](webpagedetails.schema.md) – `https://ns.adobe.com/xdm/context/webpagedetails`
 
 
 
 
 
 ## xdm:webReferrer
-### Web Referrer
+### Web referrer
 
 The referrer of a web interaction, which is the URL a visitor came from immediately before the current web interaction was recorded.
 
 `xdm:webReferrer`
 * is optional
-* type: Web Referrer
+* type: Web referrer
 * defined in this schema
 
 ### xdm:webReferrer Type
 
 
-* [Web Referrer](webreferrer.schema.md) – `https://ns.adobe.com/xdm/context/webreferrer`
+* [Web referrer](webreferrer.schema.md) – `https://ns.adobe.com/xdm/context/webreferrer`
 
 
 

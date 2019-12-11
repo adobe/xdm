@@ -7,7 +7,7 @@
     ],
     "$id": "https://ns.adobe.com/xdm/context/emailaddress",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Email Address",
+    "title": "Email address",
     "type": "object",
     "meta:extensible": true,
     "description": "A standard email address.",
@@ -17,23 +17,23 @@
                 "xdm:primary": {
                     "title": "Primary",
                     "type": "boolean",
-                    "description": "Primary email indicator.\n\nA Profile can have only one `primary` email address at a given point of time.\n"
+                    "description": "Primary email indicator. A profile can have only one `primary` email address at a given point of time."
                 },
                 "xdm:address": {
                     "title": "Address",
                     "type": "string",
                     "format": "email",
-                    "description": "The technical address, e.g 'name@domain.com' as commonly defined in RFC2822 and subsequent standards."
+                    "description": "The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards."
                 },
                 "xdm:label": {
                     "title": "Label",
                     "type": "string",
-                    "description": "Additional display information that maybe available, e.g MS Outlook rich address controls display 'John Smith smithjr@company.uk', the 'John Smith' part is data that would be placed in the label."
+                    "description": "Additional display information that maybe available, for example, Microsoft Outlook rich address controls display 'John Smith smithjr@company.uk', 'John Smith' part is data that would be placed in the label."
                 },
                 "xdm:type": {
                     "title": "Type",
                     "type": "string",
-                    "description": "The way the account relates to the person. e.g 'work' or 'personal'",
+                    "description": "The way the account relates to the person for example 'work' or 'personal'.",
                     "meta:enum": {
                         "unknown": "Unknown",
                         "personal": "Personal",
@@ -49,13 +49,13 @@
                     "meta:enum": {
                         "active": "Active",
                         "incomplete": "Incomplete",
-                        "pending_verification": "Pending Verification",
+                        "pending_verification": "Pending verification",
                         "blacklisted": "Blacklisted",
                         "blocked": "Blocked"
                     }
                 },
                 "xdm:statusReason": {
-                    "title": "Status Reason",
+                    "title": "Status reason",
                     "type": "string",
                     "description": "A description of the current status."
                 }

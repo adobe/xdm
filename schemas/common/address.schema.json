@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/common/address",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Postal Address",
+  "title": "Postal address",
   "type": "object",
   "meta:auditable": true,
   "meta:extends": [
@@ -23,7 +23,7 @@
           "title": "Primary",
           "type": "boolean",
           "description":
-            "Primary address indicator. A profile can have only one `primary` address at a given point of time.\n"
+            "Primary address indicator. A profile can have only one `primary` address at a given point of time."
         },
         "xdm:label": {
           "title": "Label",
@@ -34,7 +34,7 @@
           "title": "Street 1",
           "type": "string",
           "description":
-            "Primary Street level information, apartment number, street number and street name."
+            "Primary street level information, apartment number, street number, and street name."
         },
         "xdm:street2": {
           "title": "Street 2",
@@ -58,7 +58,7 @@
             "The region, county, or district portion of the address."
         },
         "xdm:postOfficeBox": {
-          "title": "Post Office Box",
+          "title": "Post office box",
           "type": "string",
           "description": "Post office box of the address.",
           "maxLength": 20
@@ -77,22 +77,22 @@
           "meta:enum": {
             "active": "Active",
             "incomplete": "Incomplete",
-            "pending_verification": "Pending Verification",
+            "pending_verification": "Pending verification",
             "blacklisted": "Blacklisted",
             "blocked": "Blocked"
           }
         },
         "xdm:statusReason": {
-          "title": "Status Reason",
+          "title": "Status reason",
           "type": "string",
           "description": "A description of the current status."
         },
         "xdm:lastVerifiedDate": {
-          "title": "Last Verified Date",
+          "title": "Last verified date",
           "type": "string",
           "format": "date",
           "description":
-            "The date that the address was last verified as still belonging to the person."
+            "The date that the address was last verified as still associated to the person."
         }
       }
     }

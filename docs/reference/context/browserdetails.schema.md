@@ -1,5 +1,5 @@
 
-# Browser Details Schema
+# Browser details Schema
 
 ```
 https://ns.adobe.com/xdm/context/browserdetails
@@ -12,11 +12,11 @@ Detail information related to the browser.
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/browserdetails.schema.json](context/browserdetails.schema.json) |
 ## Schema Hierarchy
 
-* Browser Details `https://ns.adobe.com/xdm/context/browserdetails`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* Browser details `https://ns.adobe.com/xdm/context/browserdetails`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
-## Browser Details Example
+## Browser details Example
 ```json
 {
   "xdm:name": "Chrome",
@@ -33,30 +33,30 @@ Detail information related to the browser.
 }
 ```
 
-# Browser Details Properties
+# Browser details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:acceptLanguage](#xdmacceptlanguage) | `string` | Optional | Browser Details (this schema) |
-| [xdm:cookiesEnabled](#xdmcookiesenabled) | `boolean` | Optional | Browser Details (this schema) |
-| [xdm:javaEnabled](#xdmjavaenabled) | `boolean` | Optional | Browser Details (this schema) |
-| [xdm:javaScriptEnabled](#xdmjavascriptenabled) | `boolean` | Optional | Browser Details (this schema) |
-| [xdm:javaScriptVersion](#xdmjavascriptversion) | `string` | Optional | Browser Details (this schema) |
-| [xdm:javaVersion](#xdmjavaversion) | `string` | Optional | Browser Details (this schema) |
-| [xdm:name](#xdmname) | `string` | Optional | Browser Details (this schema) |
-| [xdm:quicktimeVersion](#xdmquicktimeversion) | `string` | Optional | Browser Details (this schema) |
-| [xdm:thirdPartyCookiesEnabled](#xdmthirdpartycookiesenabled) | `boolean` | Optional | Browser Details (this schema) |
-| [xdm:userAgent](#xdmuseragent) | `string` | Optional | Browser Details (this schema) |
-| [xdm:vendor](#xdmvendor) | `string` | Optional | Browser Details (this schema) |
-| [xdm:version](#xdmversion) | `string` | Optional | Browser Details (this schema) |
-| [xdm:viewportHeight](#xdmviewportheight) | `integer` | Optional | Browser Details (this schema) |
-| [xdm:viewportWidth](#xdmviewportwidth) | `integer` | Optional | Browser Details (this schema) |
+| [xdm:acceptLanguage](#xdmacceptlanguage) | `string` | Optional | Browser details (this schema) |
+| [xdm:cookiesEnabled](#xdmcookiesenabled) | `boolean` | Optional | Browser details (this schema) |
+| [xdm:javaEnabled](#xdmjavaenabled) | `boolean` | Optional | Browser details (this schema) |
+| [xdm:javaScriptEnabled](#xdmjavascriptenabled) | `boolean` | Optional | Browser details (this schema) |
+| [xdm:javaScriptVersion](#xdmjavascriptversion) | `string` | Optional | Browser details (this schema) |
+| [xdm:javaVersion](#xdmjavaversion) | `string` | Optional | Browser details (this schema) |
+| [xdm:name](#xdmname) | `string` | Optional | Browser details (this schema) |
+| [xdm:quicktimeVersion](#xdmquicktimeversion) | `string` | Optional | Browser details (this schema) |
+| [xdm:thirdPartyCookiesEnabled](#xdmthirdpartycookiesenabled) | `boolean` | Optional | Browser details (this schema) |
+| [xdm:userAgent](#xdmuseragent) | `string` | Optional | Browser details (this schema) |
+| [xdm:vendor](#xdmvendor) | `string` | Optional | Browser details (this schema) |
+| [xdm:version](#xdmversion) | `string` | Optional | Browser details (this schema) |
+| [xdm:viewportHeight](#xdmviewportheight) | `integer` | Optional | Browser details (this schema) |
+| [xdm:viewportWidth](#xdmviewportwidth) | `integer` | Optional | Browser details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:acceptLanguage
-### Accept Language
+### Accept language
 
-An IETF Language Tag (RFC 5646).
+An IETF language tag (RFC 5646).
 
 `xdm:acceptLanguage`
 * is optional
@@ -74,7 +74,7 @@ An IETF Language Tag (RFC 5646).
 
 
 ## xdm:cookiesEnabled
-### Allows Cookies
+### Allows cookies
 
 The current user agent settings allow for the writing of cookies.'
 
@@ -93,7 +93,7 @@ The current user agent settings allow for the writing of cookies.'
 
 
 ## xdm:javaEnabled
-### Java Enabled
+### Java enabled
 
 If Java was enabled in the device this observation was made from.
 
@@ -112,7 +112,7 @@ If Java was enabled in the device this observation was made from.
 
 
 ## xdm:javaScriptEnabled
-### JavaScript Enabled
+### JavaScript enabled
 
 If JavaScript was enabled in the device this observation was made from.
 
@@ -131,7 +131,7 @@ If JavaScript was enabled in the device this observation was made from.
 
 
 ## xdm:javaScriptVersion
-### JavaScript Version
+### JavaScript version
 
 The version of JavaScript supported during the observation.
 
@@ -151,7 +151,7 @@ The version of JavaScript supported during the observation.
 
 
 ## xdm:javaVersion
-### Java Version
+### Java version
 
 The version of Java supported during the observation.
 
@@ -191,7 +191,7 @@ The application or browser name.
 
 
 ## xdm:quicktimeVersion
-### Quicktime Version
+### Quicktime version
 
 The version of Apple Quicktime supported during the observation.
 
@@ -211,7 +211,7 @@ The version of Apple Quicktime supported during the observation.
 
 
 ## xdm:thirdPartyCookiesEnabled
-### Allows Third-party Cookies
+### Allows third-party cookies
 
 If third-party cookies were enabled when this observation was made.
 
@@ -230,9 +230,9 @@ If third-party cookies were enabled when this observation was made.
 
 
 ## xdm:userAgent
-### User Agent
+### User agent
 
-The HTTP User-Agent string from the client request.
+The HTTP user-agent string from the client request.
 
 `xdm:userAgent`
 * is optional
@@ -290,9 +290,9 @@ The application or browser version.
 
 
 ## xdm:viewportHeight
-### Viewport Height
+### Viewport height
 
-The vertical size (in pixels) of the window the experience was displayed inside. For a web view event, the browser viewport height.
+The vertical size in pixels of the window the experience was displayed inside. For a web view event, the browser viewport height.
 
 `xdm:viewportHeight`
 * is optional
@@ -311,9 +311,9 @@ The vertical size (in pixels) of the window the experience was displayed inside.
 
 
 ## xdm:viewportWidth
-### Viewport Width
+### Viewport width
 
-The horizontal size (in pixels) of the window the experience was displayed inside. For a web view event, the browser viewport width.
+The horizontal size in pixels of the window the experience was displayed inside. For a web view event, the browser viewport width.
 
 `xdm:viewportWidth`
 * is optional

@@ -7,10 +7,10 @@
     ],
     "$id": "https://ns.adobe.com/xdm/context/identityitem",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Identity Item",
+    "title": "Identity item",
     "type": "object",
     "meta:extensible": true,
-    "description": "An end-user identity item, to be included in an instance of `context/identitymap`.",
+    "description": "An end user identity item, to be included in an instance of `context/identitymap`.",
     "definitions": {
         "identityitem": {
             "properties": {

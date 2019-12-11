@@ -13,7 +13,7 @@ Short message service (SMS) are messages that are delivered to a mobile phone ch
 ## Schema Hierarchy
 
 * SMS Channel `https://ns.adobe.com/xdm/channels/sms`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
 

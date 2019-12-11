@@ -52,8 +52,8 @@ Viewability details are always measured fields during runtime.
 ## Schema Hierarchy
 
 * MRC Viewability `https://ns.adobe.com/xdm/context/adviewability`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Implementation Details](implementationdetails.schema.md) `https://ns.adobe.com/xdm/context/implementationdetails`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Implementation details](implementationdetails.schema.md) `https://ns.adobe.com/xdm/context/implementationdetails`
   * [Measure](../data/measure.schema.md) `https://ns.adobe.com/xdm/data/measure`
 
 
@@ -88,7 +88,7 @@ Viewability details are always measured fields during runtime.
 | [xdm:adHeight](#xdmadheight) | `integer` | Optional | MRC Viewability (this schema) |
 | [xdm:adUnitDepth](#xdmadunitdepth) | `integer` | Optional | MRC Viewability (this schema) |
 | [xdm:adWidth](#xdmadwidth) | `integer` | Optional | MRC Viewability (this schema) |
-| [xdm:implementationDetails](#xdmimplementationdetails) | Implementation Details | Optional | MRC Viewability (this schema) |
+| [xdm:implementationDetails](#xdmimplementationdetails) | Implementation details | Optional | MRC Viewability (this schema) |
 | [xdm:measuredAdNotVisible](#xdmmeasuredadnotvisible) | Measure | Optional | MRC Viewability (this schema) |
 | [xdm:measuredMuted](#xdmmeasuredmuted) | Measure | Optional | MRC Viewability (this schema) |
 | [xdm:measuredWindowInactive](#xdmmeasuredwindowinactive) | Measure | Optional | MRC Viewability (this schema) |
@@ -197,13 +197,13 @@ The name and version of the library instrumented to measure viewability metrics.
 
 `xdm:implementationDetails`
 * is optional
-* type: Implementation Details
+* type: Implementation details
 * defined in this schema
 
 ### xdm:implementationDetails Type
 
 
-* [Implementation Details](implementationdetails.schema.md) – `https://ns.adobe.com/xdm/context/implementationdetails`
+* [Implementation details](implementationdetails.schema.md) – `https://ns.adobe.com/xdm/context/implementationdetails`
 
 
 

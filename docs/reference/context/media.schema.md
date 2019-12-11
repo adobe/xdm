@@ -1,5 +1,5 @@
 
-# Media Information Schema
+# Media information Schema
 
 ```
 https://ns.adobe.com/xdm/context/media
@@ -12,12 +12,12 @@ Media context information for content related interactions.
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/media.schema.json](context/media.schema.json) |
 ## Schema Hierarchy
 
-* Media Information `https://ns.adobe.com/xdm/context/media`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Timed Media Information](media-timed.schema.md) `https://ns.adobe.com/xdm/context/media-timed`
+* Media information `https://ns.adobe.com/xdm/context/media`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Timed media information](media-timed.schema.md) `https://ns.adobe.com/xdm/context/media-timed`
 
 
-## Media Information Example
+## Media information Example
 ```json
 {
   "xdm:mediaTimed": {
@@ -93,27 +93,27 @@ Media context information for content related interactions.
 }
 ```
 
-# Media Information Properties
+# Media information Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:mediaTimed](#xdmmediatimed) | Timed Media Information | Optional | Media Information (this schema) |
+| [xdm:mediaTimed](#xdmmediatimed) | Timed media information | Optional | Media information (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:mediaTimed
-### Timed Media Information
+### Timed media information
 
-Timed media - main content, ads & chapters.
+Information related to timed media main content, such as ads and chapters.
 
 `xdm:mediaTimed`
 * is optional
-* type: Timed Media Information
+* type: Timed media information
 * defined in this schema
 
 ### xdm:mediaTimed Type
 
 
-* [Timed Media Information](media-timed.schema.md) – `https://ns.adobe.com/xdm/context/media-timed`
+* [Timed media information](media-timed.schema.md) – `https://ns.adobe.com/xdm/context/media-timed`
 
 
 

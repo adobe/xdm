@@ -13,7 +13,7 @@ The Twitter feed is the stream of user-generated tweets and does not include Twi
 ## Schema Hierarchy
 
 * Twitter Feed Channel `https://ns.adobe.com/xdm/channels/twitter-feed`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
 

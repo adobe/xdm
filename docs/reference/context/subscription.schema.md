@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/subscription
 ```
 
-Subscriptions are licensed entitlements to software, services or goods that are utilized in a time or usage based way.
+Subscriptions are licensed entitlements to software, services, or goods that are utilized in a time or usage based way.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -13,7 +13,7 @@ Subscriptions are licensed entitlements to software, services or goods that are 
 ## Schema Hierarchy
 
 * Subscription `https://ns.adobe.com/xdm/context/subscription`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Person](person.schema.md) `https://ns.adobe.com/xdm/context/person`
   * [Device](device.schema.md) `https://ns.adobe.com/xdm/context/device`
   * [Environment](environment.schema.md) `https://ns.adobe.com/xdm/context/environment`
@@ -113,7 +113,7 @@ Unique identifier for the subscription instance.
 ## xdm:SKU
 ### SKU
 
-Stock Keeping Unit, a generally unique identifier for a product.
+Stock keeping unit (SKU), a generally unique identifier for a product.
 
 `xdm:SKU`
 * is optional
@@ -131,7 +131,7 @@ Stock Keeping Unit, a generally unique identifier for a product.
 
 
 ## xdm:billingPeriod
-### Billing Period
+### Billing period
 
 The duration between billings.
 
@@ -151,7 +151,7 @@ The duration between billings.
 
 
 ## xdm:billingStartDate
-### Billing Start Date
+### Billing start date
 
 The date when the first bill is due.
 
@@ -192,7 +192,7 @@ The main, top level categorization of this type of subscription.
 
 
 ## xdm:chargeMethod
-### Charge Method
+### Charge method
 
 The way the billing is setup to charge the customer.
 
@@ -234,7 +234,7 @@ Unique ID for the contract that governs this subscription.
 ## xdm:country
 ### Country
 
-The country that the subscription contractual/agreement terms are rooted in.
+The country that the subscription contractual and agreement terms are rooted in.
 
 `xdm:country`
 * is optional
@@ -271,7 +271,7 @@ The device linked to the subscription.
 
 
 ## xdm:endDate
-### End Date
+### End date
 
 The date the current subscription term ends.
 
@@ -294,12 +294,7 @@ The date the current subscription term ends.
 ## xdm:environment
 ### Environment
 
-Environment of the subscription.
-
-This can be either then known environment at the time of the subscription
-or the environment of the application for subscriptions related to an
-Application.
-
+Environment of the subscription. This can be either then known environment at the time of the subscription or the environment of the application for subscriptions related to an application.
 
 `xdm:environment`
 * is optional
@@ -316,7 +311,7 @@ Application.
 
 
 ## xdm:paymentMethod
-### Payment Method
+### Payment method
 
 The payment method for recurring payments.
 
@@ -336,7 +331,7 @@ The payment method for recurring payments.
 
 
 ## xdm:paymentStatus
-### Payment Status
+### Payment status
 
 The standing of the account.
 
@@ -356,7 +351,7 @@ The standing of the account.
 
 
 ## xdm:planName
-### Plan Name
+### Plan name
 
 The human readable name for the subscription.
 
@@ -436,7 +431,7 @@ The identification between subscriptions of the same name and category hierarchy
 
 
 ## xdm:startDate
-### Start Date
+### Start date
 
 The date the subscription begins.
 
@@ -477,7 +472,7 @@ The current status of the subscription.
 
 
 ## xdm:subCategory
-### Sub Category
+### Sub category
 
 The specific sub categorization of the subscription.
 
@@ -536,7 +531,7 @@ The numeric value of the term.
 
 
 ## xdm:termUnitOfTime
-### Term Unit Of Time
+### Term unit of time
 
 The unit of time for the term period.
 
@@ -556,7 +551,7 @@ The unit of time for the term period.
 
 
 ## xdm:topUp
-### Top Up
+### Top up
 
 Agreed terms for how consumable aspects of a subscription are repurchased during a billing period.
 

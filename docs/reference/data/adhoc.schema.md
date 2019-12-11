@@ -13,7 +13,7 @@ Used to indicate the behavior of the Ad hoc data semantic when composed into dat
 ## Schema Hierarchy
 
 * Ad Hoc Schema `https://ns.adobe.com/xdm/data/adhoc`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
 ## Ad Hoc Schema Example

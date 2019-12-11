@@ -7,7 +7,7 @@
     ],
     "$id": "https://ns.adobe.com/xdm/context/experienceevent-media",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "ExperienceEvent Details for Media",
+    "title": "ExperienceEvent details for media",
     "type": "object",
     "meta:extensible": true,
     "meta:abstract": true,

@@ -1,5 +1,5 @@
 
-# Profile Subscriptions Schema
+# Profile subscriptions Schema
 
 ```
 https://ns.adobe.com/xdm/context/profile-subscriptions
@@ -12,11 +12,11 @@ This mixin is used to capture information regarding an individual's subscription
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/profile-subscriptions.schema.json](context/profile-subscriptions.schema.json) |
 ## Schema Hierarchy
 
-* Profile Subscriptions `https://ns.adobe.com/xdm/context/profile-subscriptions`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* Profile subscriptions `https://ns.adobe.com/xdm/context/profile-subscriptions`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
-## Profile Subscriptions Example
+## Profile subscriptions Example
 ```json
 {
   "xdm:subscriptions": [
@@ -60,17 +60,17 @@ This mixin is used to capture information regarding an individual's subscription
 }
 ```
 
-# Profile Subscriptions Properties
+# Profile subscriptions Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:subscriptions](#xdmsubscriptions) | Subscription | Optional | Profile Subscriptions (this schema) |
+| [xdm:subscriptions](#xdmsubscriptions) | Subscription | Optional | Profile subscriptions (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:subscriptions
 ### Subscriptions
 
-Subscriptions that this profile is entitled to including terminated, expired, or exhausted subscriptions.
+Subscriptions that the profile is entitled to including terminated, expired, or exhausted subscriptions.
 
 `xdm:subscriptions`
 * is optional

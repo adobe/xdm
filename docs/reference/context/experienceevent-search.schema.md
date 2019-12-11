@@ -1,5 +1,5 @@
 
-# ExperienceEvent Details for Search Schema
+# ExperienceEvent details for search Schema
 
 ```
 https://ns.adobe.com/xdm/context/experienceevent-search
@@ -12,12 +12,12 @@ This mixin is used to capture search-related information for an ExperienceEvent,
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/experienceevent-search.schema.json](context/experienceevent-search.schema.json) |
 ## Schema Hierarchy
 
-* ExperienceEvent Details for Search `https://ns.adobe.com/xdm/context/experienceevent-search`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* ExperienceEvent details for search `https://ns.adobe.com/xdm/context/experienceevent-search`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Search](search.schema.md) `https://ns.adobe.com/xdm/context/search`
 
 
-## ExperienceEvent Details for Search Example
+## ExperienceEvent details for search Example
 ```json
 {
   "xdm:search": {
@@ -30,11 +30,11 @@ This mixin is used to capture search-related information for an ExperienceEvent,
 }
 ```
 
-# ExperienceEvent Details for Search Properties
+# ExperienceEvent details for search Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:search](#xdmsearch) | Search | Optional | ExperienceEvent Details for Search (this schema) |
+| [xdm:search](#xdmsearch) | Search | Optional | ExperienceEvent details for search (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:search

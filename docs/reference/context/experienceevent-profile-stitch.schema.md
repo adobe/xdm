@@ -1,22 +1,22 @@
 
-# ExperienceEvent Profile Stitch Details Schema
+# ExperienceEvent profile stitch details Schema
 
 ```
 https://ns.adobe.com/xdm/context/experienceevent-profile-stitch
 ```
 
-ExperienceEvent profile stitch details.
+ExperienceEvent profile stitch describes details about the IDs that were joined by profile stitching.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/experienceevent-profile-stitch.schema.json](context/experienceevent-profile-stitch.schema.json) |
 ## Schema Hierarchy
 
-* ExperienceEvent Profile Stitch Details `https://ns.adobe.com/xdm/context/experienceevent-profile-stitch`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* ExperienceEvent profile stitch details `https://ns.adobe.com/xdm/context/experienceevent-profile-stitch`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
-## ExperienceEvent Profile Stitch Details Example
+## ExperienceEvent profile stitch details Example
 ```json
 {
   "xdm:profileStitch": [
@@ -66,31 +66,31 @@ ExperienceEvent profile stitch details.
 }
 ```
 
-# ExperienceEvent Profile Stitch Details Properties
+# ExperienceEvent profile stitch details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:profileStitch](#xdmprofilestitch) | Profile Stitch | Optional | ExperienceEvent Profile Stitch Details (this schema) |
+| [xdm:profileStitch](#xdmprofilestitch) | Profile stitch | Optional | ExperienceEvent profile stitch details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:profileStitch
-### Profile Stitch
+### Profile stitch
 
 Details about the IDs that were joined by profile stitching.
 
 `xdm:profileStitch`
 * is optional
-* type: Profile Stitch
+* type: Profile stitch
 
 * defined in this schema
 
 ### xdm:profileStitch Type
 
 
-Array type: Profile Stitch
+Array type: Profile stitch
 
 All items must be of the type:
-* [Profile Stitch](profilestitch.schema.md) – `https://ns.adobe.com/xdm/context/profileStitch`
+* [Profile stitch](profilestitch.schema.md) – `https://ns.adobe.com/xdm/context/profileStitch`
 
 
 

@@ -15,13 +15,8 @@
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "description": "Advertising Transaction schemas includes metadata that describes a transaction property setup by Advertiser",
   "definitions": {
-    "searchads-transactionproperties": {
+    "searchads-transaction": {
       "properties": {
-        "searchads:clientId": {
-          "title": "Client Id",
-          "type": "string",
-          "description": "Ad Cloud Client Id"
-        },
         "searchads:propertyName": {
           "title": "Name of the property",
           "type": "string",

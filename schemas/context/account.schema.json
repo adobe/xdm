@@ -1,0 +1,107 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/account",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "XDM Business Account",
+  "type": "object",
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record"
+  ],
+  "description": "An XDM Business Account.",
+  "definitions": {
+    "account": {
+      "properties": {
+		"xdm:accountSourceSystemCRM": {
+          "title": "CRM Source System For Account",
+          "description": "CRM System which sent the account.",
+          "type": "string"
+        },
+		"xdm:accountNumber": {
+          "title": "Account Number",
+          "description": "Tracking or reference number for account. Up to 40 characters are allowed in this field.",
+          "type": "string"
+        },
+        "xdm:ownerId": {
+          "title": "Account Owner",
+          "description": "assigned owner of account. Not available in personal edition.",
+          "type": "string"
+        },
+        "xdm:parentId": {
+          "title": "Parent Account",
+          "description": "Parent company for companies that are subsidiaries of a larger company or organization. The parent account must be an existing account in salesforce. You can enter the account name, or select (or optionally, create) the account using the lookup icon.",
+          "type": "string"
+        },
+        "xdm:territoryId": {
+          "title": "Territories",
+          "description": "The territories to which the account has been assigned.",
+          "type": "string"
+        },
+        "xdm:annualRevenue": {
+          "title": "Annual Revenue",
+          "description": "Amount of annual reported revenue.",
+          "type": "number"
+        },
+        "xdm:fax": {
+          "title": "Fax Number",
+          "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
+          "description": "Fax number."
+        },
+        "xdm:account-organization": {
+          "$ref": "https://ns.adobe.com/xdm/common/organization"
+        },
+		"xdm:accountId": {
+		  "title": "Account ID",
+		  "description": "Account identifer",
+		  "type": "string"
+		},
+		"xdm:legalName": {
+		  "title": "Account Name",
+		  "description": "name of company. Up to 255 characters are allowed in this field.",
+		  "type": "string"
+		},
+		"xdm:ownership": {
+		  "title": "Ownership",
+		  "description": "Ownership of company, for example, public or private. Entry is selected from a picklist of available values, which a salesforce admin sets. Each picklist value can have up to 40 characters.",
+		  "type": "string"
+		},
+		"xdm:accountAddress": {
+			"properties":{
+				"addressType":{
+					"title": "Account Address Type",
+					"description": "Address type of Account. Example, Billing, Shipping.",
+					"type": "string"
+				},
+				"physicalAddress":{
+					"title": "Account Physical Address",
+					"$ref": "https://ns.adobe.com/xdm/common/address",
+					"description": "Account physical address."
+				}
+			}
+		}
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/auditable"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "#/definitions/account"
+    }
+  ],
+  "meta:status": "experimental"
+}

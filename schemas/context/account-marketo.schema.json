@@ -1,0 +1,184 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/account-marketo",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Marketo Account",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/account",
+    "https://ns.adobe.com/xdm/context/account-sf"
+  ],
+  "description": "Marketo specific Account fields.",
+  "definitions": {
+    "account-marketo": {
+      "properties": {
+        "marketo:company": {
+          "properties": {
+            "notes": {
+              "title": "Notes",
+              "description": "Notes.",
+              "type": "string"
+            },
+            "site": {
+              "title": "Account Site",
+              "type": "string",
+              "description": "Account site."
+            },
+            "SFDCType": {
+              "title": "SFDC Type",
+              "description": "SFDC type.",
+              "type": "string"
+            },
+            "companySFDCType": {
+              "title": "Company SFDC Type",
+              "description": "Company SFDC type.",
+              "type": "string"
+            },
+            "SFDCAccountNumber": {
+              "title": "SFDC Account Number",
+              "description": "SFDC account number.",
+              "type": "string"
+            },
+            "parentCompanyName": {
+              "title": "Parent Company Name",
+              "description": "Parent company name.",
+              "type": "string"
+            }
+          }
+        },
+        "marketo:namedAccount": {
+          "properties": {
+            "marketo-account:accountMetrics": {
+              "properties": {
+                "opptyAmount": {
+                  "title": "Opportunity Amount",
+                  "description": "Opportunity amount.",
+                  "type": "number"
+                },
+                "opptyCount": {
+                  "title": "Opportunity Count",
+                  "description": "Opportunity count.",
+                  "type": "number"
+                },
+                "percentile1": {
+                  "title": "Percentile 1",
+                  "description": "Percentile 1.",
+                  "type": "number"
+                },
+                "percentile2": {
+                  "title": "Percentile 2",
+                  "description": "Percentile 2.",
+                  "type": "number"
+                },
+                "percentile3": {
+                  "title": "Percentile 3",
+                  "description": "Percentile 3.",
+                  "type": "number"
+                },
+                "percentile4": {
+                  "title": "Percentile 4",
+                  "description": "Percentile 4.",
+                  "type": "number"
+                },
+                "percentile5": {
+                  "title": "Percentile 5",
+                  "description": "Percentile 5.",
+                  "type": "number"
+                },
+                "score1": {
+                  "title": "Score 1",
+                  "description": "Score 1.",
+                  "type": "number"
+                },
+                "score2": {
+                  "title": "Score 2",
+                  "description": "Score 2.",
+                  "type": "number"
+                },
+                "score3": {
+                  "title": "Score 3",
+                  "description": "Score 3.",
+                  "type": "number"
+                },
+                "score4": {
+                  "title": "Score 4",
+                  "description": "Score 4.",
+                  "type": "number"
+                },
+                "score5": {
+                  "title": "Score 5",
+                  "description": "Score 5.",
+                  "type": "number"
+                },
+                "membershipCount": {
+                  "title": "Membership Count",
+                  "description": "Membership count.",
+                  "type": "number"
+                }
+              }
+            },
+            "CRMGuid": {
+              "title": "CRM GUID Id",
+              "description": "CRM GUID Id.",
+              "type": "string"
+            },
+            "CRMOrgId": {
+              "title": "CRM Organization Id",
+              "description": "CRM organization Id.",
+              "type": "string"
+            },
+            "domainName": {
+              "title": "Domain Name",
+              "description": "Domain name.",
+              "type": "string"
+            },
+            "isDeleted": {
+              "title": "Account Record Deleted Indicator",
+              "description": "Indicator whether the Account record is deleted or not.",
+              "type": "string"
+            },
+            "isTargeted": {
+              "title": "Account targeted Indicator",
+              "description": "Indicator whether the Account is targeted.",
+              "type": "string"
+            },
+            "logoUrl": {
+              "title": "Logo URL",
+              "description": "Logo url.",
+              "type": "string",
+              "format": "uri"
+            },
+            "accounCreateDate": {
+              "title": "Account Created Date",
+              "description": "Account created date.",
+              "type": "string",
+              "format": "date-time"
+            },
+            "accounUpdateDate": {
+              "title": "Account Updated Date",
+              "description": "Account updated date.",
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/account-marketo"
+    }
+  ],
+  "meta:status": "experimental"
+}

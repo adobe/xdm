@@ -21,6 +21,11 @@
           "$ref": "https://ns.adobe.com/xdm/data/datasource",
           "description": "Globally unique identification of a data source."
         },
+        "xdm:userActivityRegion": {
+          "title": "Data capture region information",
+          "$ref": "https://ns.adobe.com/xdm/context/edgeregion",
+          "description": "Location and timestamp of region where this event was captured."
+        },
         "xdm:receivedTimestamp": {
           "title": "Received time stamp",
           "type": "string",

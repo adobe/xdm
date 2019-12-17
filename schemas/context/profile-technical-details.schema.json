@@ -1,0 +1,47 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/profile-technical-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Profile technical details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "description": "Technical details extension for Profile.",
+  "definitions": {
+    "profile-technical-details": {
+      "properties": {
+        "xdm:userActivityRegions": {
+          "title": "Data capture region information",
+          "type": "object",
+          "meta:xdmType": "map",
+          "additionalProperties": {
+            "properties": {
+              "xdm:regionTimeStamp": {
+                "title": "Data Capture Timestamp",
+                "type": "string",
+                "format": "date-time",
+                "description": "The time when data was captured on region node."
+              }
+            }
+          },
+          "description": "Map of Location and timestamp of regions where this profile was captured."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/profile-technical-details"
+    }
+  ],
+  "meta:status": "experimental"
+}

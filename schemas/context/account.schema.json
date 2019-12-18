@@ -74,12 +74,12 @@
 		},
 		"xdm:accountAddress": {
 			"properties":{
-				"addressType":{
+				"xdm:addressType":{
 					"title": "Account Address Type",
 					"description": "Address type of Account. Example, Billing, Shipping.",
 					"type": "string"
 				},
-				"physicalAddress":{
+				"xdm:physicalAddress":{
 					"title": "Account Physical Address",
 					"$ref": "https://ns.adobe.com/xdm/common/address",
 					"description": "Account physical address."

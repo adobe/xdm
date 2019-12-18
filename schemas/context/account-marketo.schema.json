@@ -21,32 +21,32 @@
       "properties": {
         "marketo:company": {
           "properties": {
-            "notes": {
+            "marketo:notes": {
               "title": "Notes",
               "description": "Notes.",
               "type": "string"
             },
-            "site": {
+            "marketo:site": {
               "title": "Account Site",
               "type": "string",
               "description": "Account site."
             },
-            "SFDCType": {
+            "marketo:SFDCType": {
               "title": "SFDC Type",
               "description": "SFDC type.",
               "type": "string"
             },
-            "companySFDCType": {
+            "marketo:companySFDCType": {
               "title": "Company SFDC Type",
               "description": "Company SFDC type.",
               "type": "string"
             },
-            "SFDCAccountNumber": {
+            "marketo:SFDCAccountNumber": {
               "title": "SFDC Account Number",
               "description": "SFDC account number.",
               "type": "string"
             },
-            "parentCompanyName": {
+            "marketo:parentCompanyName": {
               "title": "Parent Company Name",
               "description": "Parent company name.",
               "type": "string"
@@ -55,113 +55,113 @@
         },
         "marketo:namedAccount": {
           "properties": {
-            "marketo-account:accountMetrics": {
+            "marketo:accountMetrics": {
               "properties": {
-                "opptyAmount": {
+                "marketo:opptyAmount": {
                   "title": "Opportunity Amount",
                   "description": "Opportunity amount.",
                   "type": "number"
                 },
-                "opptyCount": {
+                "marketo:opptyCount": {
                   "title": "Opportunity Count",
                   "description": "Opportunity count.",
                   "type": "number"
                 },
-                "percentile1": {
+                "marketo:percentile1": {
                   "title": "Percentile 1",
                   "description": "Percentile 1.",
                   "type": "number"
                 },
-                "percentile2": {
+                "marketo:percentile2": {
                   "title": "Percentile 2",
                   "description": "Percentile 2.",
                   "type": "number"
                 },
-                "percentile3": {
+                "marketo:percentile3": {
                   "title": "Percentile 3",
                   "description": "Percentile 3.",
                   "type": "number"
                 },
-                "percentile4": {
+                "marketo:percentile4": {
                   "title": "Percentile 4",
                   "description": "Percentile 4.",
                   "type": "number"
                 },
-                "percentile5": {
+                "marketo:percentile5": {
                   "title": "Percentile 5",
                   "description": "Percentile 5.",
                   "type": "number"
                 },
-                "score1": {
+                "marketo:score1": {
                   "title": "Score 1",
                   "description": "Score 1.",
                   "type": "number"
                 },
-                "score2": {
+                "marketo:score2": {
                   "title": "Score 2",
                   "description": "Score 2.",
                   "type": "number"
                 },
-                "score3": {
+                "marketo:score3": {
                   "title": "Score 3",
                   "description": "Score 3.",
                   "type": "number"
                 },
-                "score4": {
+                "marketo:score4": {
                   "title": "Score 4",
                   "description": "Score 4.",
                   "type": "number"
                 },
-                "score5": {
+                "marketo:score5": {
                   "title": "Score 5",
                   "description": "Score 5.",
                   "type": "number"
                 },
-                "membershipCount": {
+                "marketo:membershipCount": {
                   "title": "Membership Count",
                   "description": "Membership count.",
                   "type": "number"
                 }
               }
             },
-            "CRMGuid": {
+            "marketo:CRMGuid": {
               "title": "CRM GUID Id",
               "description": "CRM GUID Id.",
               "type": "string"
             },
-            "CRMOrgId": {
+            "marketo:CRMOrgId": {
               "title": "CRM Organization Id",
               "description": "CRM organization Id.",
               "type": "string"
             },
-            "domainName": {
+            "marketo:domainName": {
               "title": "Domain Name",
               "description": "Domain name.",
               "type": "string"
             },
-            "isDeleted": {
+            "marketo:isDeleted": {
               "title": "Account Record Deleted Indicator",
               "description": "Indicator whether the Account record is deleted or not.",
               "type": "string"
             },
-            "isTargeted": {
+            "marketo:isTargeted": {
               "title": "Account targeted Indicator",
               "description": "Indicator whether the Account is targeted.",
               "type": "string"
             },
-            "logoUrl": {
+            "marketo:logoUrl": {
               "title": "Logo URL",
               "description": "Logo url.",
               "type": "string",
               "format": "uri"
             },
-            "accounCreateDate": {
+            "marketo:accounCreateDate": {
               "title": "Account Created Date",
               "description": "Account created date.",
               "type": "string",
               "format": "date-time"
             },
-            "accounUpdateDate": {
+            "marketo:accounUpdateDate": {
               "title": "Account Updated Date",
               "description": "Account updated date.",
               "type": "string",

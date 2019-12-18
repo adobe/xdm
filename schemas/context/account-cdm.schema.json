@@ -373,7 +373,7 @@
         },
         "cdm:accountMetrics": {
           "properties": {
-			"currencyCode": {
+			"cdm:currencyCode": {
 			  "title": "Currency Code",
 			  "type": "string",
 			  "examples": [
@@ -383,62 +383,62 @@
 			  "pattern": "^[A-Z]{3}$",
 			  "description": "The ISO 4217 currency code."
 			},
-            "aging30": {
+            "cdm:aging30": {
               "title": "Aging 30",
               "description": "For system use only.",
               "type": "number"
             },
-            "aging30Base": {
+            "cdm:aging30Base": {
               "title": "Aging 30 Base",
               "description": "The base currency equivalent of the aging 30 field.",
               "type": "number"
             },
-            "aging60": {
+            "cdm:aging60": {
               "title": "Aging 60",
               "description": "For system use only.",
               "type": "number"
             },
-            "aging60Base": {
+            "cdm:aging60Base": {
               "title": "Aging 60 Base",
               "description": "The base currency equivalent of the aging 60 field.",
               "type": "number"
             },
-            "aging90": {
+            "cdm:aging90": {
               "title": "Aging 90",
               "description": "For system use only.",
               "type": "number"
             },
-            "aging90Base": {
+            "cdm:aging90Base": {
               "title": "Aging 90 Base",
               "description": "The base currency equivalent of the aging 90 field.",
               "type": "number"
             },
-            "creditLimit": {
+            "cdm:creditLimit": {
               "title": "Credit Limit",
               "description": "Type the credit limit of the account. This is a useful reference when you address invoice and accounting issues with the customer.",
               "type": "number"
             },
-            "creditLimitBase": {
+            "cdm:creditLimitBase": {
               "title": "Credit Limit Base",
               "description": "Shows the credit limit converted to the system's default base currency for reporting purposes.",
               "type": "number"
             },
-            "creditOnHold": {
+            "cdm:creditOnHold": {
               "title": "Credit On Hold",
               "description": "Select whether the credit for the account is on hold. This is a useful reference while addressing the invoice and accounting issues with the customer.",
               "type": "number"
             },
-            "marketCap": {
+            "cdm:marketCap": {
               "title": "Market Cap",
               "description": "Type the market capitalization of the account to identify the company's equity, used as an indicator in financial performance analysis.",
               "type": "number"
             },
-            "marketCapBase": {
+            "cdm:marketCapBase": {
               "title": "Market Cap Base",
               "description": "Shows the market capitalization converted to the system's default base currency.",
               "type": "number"
             },
-            "revenueBase": {
+            "cdm:revenueBase": {
               "title": "Revenue Base",
               "description": "Shows the annual revenue converted to the system's default base currency. The calculations use the exchange rate specified in the currencies area.",
               "type": "number"
@@ -447,32 +447,32 @@
         },
         "cdm:accountPreferences": {
           "properties": {
-            "preferredAppointmentDayCodeDisplay": {
+            "cdm:preferredAppointmentDayCodeDisplay": {
               "title": "Preferred Appointment Day Code Display",
               "description": "0",
               "type": "string"
             },
-            "preferredAppointmentTimeCode": {
+            "cdm:preferredAppointmentTimeCode": {
               "title": "Preferred Appointment Time Code",
               "description": "Select the preferred time of day for service appointments.",
               "type": "string"
             },
-            "preferredAppointmentTimeCodeDisplay": {
+            "cdm:preferredAppointmentTimeCodeDisplay": {
               "title": "Preferred Appointment Time Code Display",
               "description": "0",
               "type": "string"
             },
-            "preferredContactMethodCode": {
+            "cdm:preferredContactMethodCode": {
               "title": "Preferred Contact Method Code",
               "description": "Select the preferred method of contact.",
               "type": "string"
             },
-            "preferredContactMethodCodeDisplay": {
+            "cdm:preferredContactMethodCodeDisplay": {
               "title": "Preferred Contact Method Code Display",
               "description": "0",
               "type": "string"
             },
-            "preferredSystemUserId": {
+            "cdm:preferredSystemUserId": {
               "title": "Preferred System Userid",
               "description": "Choose the preferred service representative for reference when you schedule service activities for the account.",
               "type": "string"
@@ -483,77 +483,77 @@
           "properties": {
             "cdm:otherAddressDetails": {
               "properties": {
-                "Fax": {
+                "cdm:fax": {
                   "title": "Address1 Fax",
                   "description": "Type the fax number associated with the customer's address.",
                   "$ref": "https://ns.adobe.com/xdm/context/phonenumber"
                 },
-                "Telephone1": {
+                "cdm:telephone1": {
                   "title": "Address1 Telephone1",
                   "description": "Type the primary phone number for the customer's address.",
                   "$ref": "https://ns.adobe.com/xdm/context/phonenumber"
                 },
-                "Telephone2": {
+                "cdm:telephone2": {
                   "title": "Address1 Telephone2",
                   "description": "Type a second phone number for the customer's address.",
                   "$ref": "https://ns.adobe.com/xdm/context/phonenumber"
                 },
-                "Telephone3": {
+                "cdm:telephone3": {
                   "title": "Address1 Telephone3",
                   "description": "Type a third phone number for the customer's address.",
                   "$ref": "https://ns.adobe.com/xdm/context/phonenumber"
                 },
-                "AddressId": {
+                "cdm:addressId": {
                   "title": "Address1 Addressid",
                   "description": "Unique identifier for address 1.",
                   "type": "string"
                 },
-                "AddressTypeCodeDisplay": {
+                "cdm:addressTypeCodeDisplay": {
                   "title": "Address1 Address Type Code Display",
                   "description": "0",
                   "type": "string"
                 },
-                "Composite": {
+                "cdm:composite": {
                   "title": "Address1 Composite",
                   "description": "Shows the complete address.",
                   "type": "string"
                 },
-                "FreightTermsCode": {
+                "cdm:freightTermsCode": {
                   "title": "Address1 Freight Terms Code",
                   "description": "Select the freight terms to make sure shipping charges are processed correctly.",
                   "type": "string"
                 },
-                "FreightTermsCodeDisplay": {
+                "cdm:freightTermsCodeDisplay": {
                   "title": "Address1 Freight Terms Code Display",
                   "description": "0",
                   "type": "string"
                 },
-                "Name": {
+                "cdm:name": {
                   "title": "Address1 Name",
                   "description": "Type a descriptive name for the customer's address, such as corporate headquarters.",
                   "type": "string"
                 },
-                "PrimaryContactName": {
+                "cdm:primaryContactName": {
                   "title": "Address1 Primarycontactname",
                   "description": "Type the name of the primary contact person for the customer's address.",
                   "type": "string"
                 },
-                "ShippingMethodCode": {
+                "cdm:shippingMethodCode": {
                   "title": "Address1 Shippingmethod Code",
                   "description": "Select a shipping method for deliveries sent to this address.",
                   "type": "string"
                 },
-                "ShippingMethodCodeDisplay": {
+                "cdm:shippingMethodCodeDisplay": {
                   "title": "Address1 Shippingmethod Code Display",
                   "description": "0",
                   "type": "string"
                 },
-                "UPSZone": {
+                "cdm:UPSZone": {
                   "title": "Address1 Upszone",
                   "description": "Type the ups zone of the customer's address to make sure shipping charges are calculated correctly and deliveries are made promptly, if shipped by ups.",
                   "type": "string"
                 },
-                "UtcOffset": {
+                "cdm:utcOffset": {
                   "title": "Address1 Utcoffset",
                   "description": "Select the time zone for the address.",
                   "type": "string"
@@ -566,77 +566,77 @@
           "properties": {
             "cdm:otherAddressDetails": {
               "properties": {
-                "Fax": {
+                "cdm:fax": {
                   "title": "Address2 Fax",
                   "description": "Type the fax number associated with the customer's address.",
                   "$ref": "https://ns.adobe.com/xdm/context/phonenumber"
                 },
-                "Telephone1": {
+                "cdm:telephone1": {
                   "title": "Address2 Telephone1",
                   "description": "Type the primary phone number for the customer's address.",
                   "$ref": "https://ns.adobe.com/xdm/context/phonenumber"
                 },
-                "Telephone2": {
+                "cdm:telephone2": {
                   "title": "Address2 Telephone2",
                   "description": "Type a second phone number for the customer's address.",
                   "$ref": "https://ns.adobe.com/xdm/context/phonenumber"
                 },
-                "Telephone3": {
+                "cdm:telephone3": {
                   "title": "Address2 Telephone3",
                   "description": "Type a third phone number for the customer's address.",
                   "$ref": "https://ns.adobe.com/xdm/context/phonenumber"
                 },
-                "AddressId": {
+                "cdm:addressId": {
                   "title": "Address2 Addressid",
                   "description": "Unique identifier for address 1.",
                   "type": "string"
                 },
-                "AddressTypeCodeDisplay": {
+                "cdm:addressTypeCodeDisplay": {
                   "title": "Address2 Address Type Code Display",
                   "description": "0",
                   "type": "string"
                 },
-                "Composite": {
+                "cdm:composite": {
                   "title": "Address2 Composite",
                   "description": "Shows the complete address.",
                   "type": "string"
                 },
-                "FreightTermsCode": {
+                "cdm:freightTermsCode": {
                   "title": "Address2 Freight Terms Code",
                   "description": "Select the freight terms to make sure shipping charges are processed correctly.",
                   "type": "string"
                 },
-                "FreightTermsCodeDisplay": {
+                "cdm:freightTermsCodeDisplay": {
                   "title": "Address2 Freight Terms Code Display",
                   "description": "0",
                   "type": "string"
                 },
-                "Name": {
+                "cdm:name": {
                   "title": "Address2 Name",
                   "description": "Type a descriptive name for the customer's address, such as corporate headquarters.",
                   "type": "string"
                 },
-                "PrimaryContactName": {
+                "cdm:primaryContactName": {
                   "title": "Address2 Primarycontactname",
                   "description": "Type the name of the primary contact person for the customer's address.",
                   "type": "string"
                 },
-                "ShippingMethodCode": {
+                "cdm:shippingMethodCode": {
                   "title": "Address2 Shippingmethod Code",
                   "description": "Select a shipping method for deliveries sent to this address.",
                   "type": "string"
                 },
-                "ShippingMethodCodeDisplay": {
+                "cdm:shippingMethodCodeDisplay": {
                   "title": "Address2 Shippingmethod Code Display",
                   "description": "0",
                   "type": "string"
                 },
-                "UPSZone": {
+                "cdm:UPSZone": {
                   "title": "Address2 Upszone",
                   "description": "Type the ups zone of the customer's address to make sure shipping charges are calculated correctly and deliveries are made promptly, if shipped by ups.",
                   "type": "string"
                 },
-                "UtcOffset": {
+                "cdm:utcOffset": {
                   "title": "Address2 Utcoffset",
                   "description": "Select the time zone for the address.",
                   "type": "string"

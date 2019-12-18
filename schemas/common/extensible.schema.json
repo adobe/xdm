@@ -50,10 +50,10 @@
             "^dsp:.*$": {},
             "^searchads:.*$": {},
             "^adcloud:.*$": {},
-			"^sf:.*$": {},
-			"^cdm:.*$": {},
-			"^dynamics:.*$": {},
-			"^marketo:.*$": {},
+            "^sf:.*$": {},
+            "^cdm:.*$": {},
+            "^dynamics:.*$": {},
+            "^marketo:.*$": {},
             ".+://.+": {},
             "@.*": {}
           },
@@ -250,10 +250,11 @@
                   "format": "url",
                   "const": "https://ns.adobe.com/marketo/"
                 }
-				
               },
               "additionalProperties": false,
-              "required": ["xdm"]
+              "required": [
+                "xdm"
+              ]
             }
           },
           "patternProperties": {
@@ -289,13 +290,15 @@
             "^dsp:.*$": {},
             "^searchads:.*$": {},
             "^adcloud:.*$": {},
-			"^sf:.*$": {},
-			"^cdm:.*$": {},
-			"^dynamics:.*$": {},
-			"^marketo:.*$": {},
+            "^sf:.*$": {},
+            "^cdm:.*$": {},
+            "^dynamics:.*$": {},
+            "^marketo:.*$": {},
             ".+://.+": {}
           },
-          "required": ["@context"],
+          "required": [
+            "@context"
+          ],
           "additionalProperties": false
         }
       ]

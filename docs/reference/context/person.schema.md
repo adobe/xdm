@@ -13,8 +13,8 @@ An individual person. May represent a person acting in various roles, such as a 
 ## Schema Hierarchy
 
 * Person `https://ns.adobe.com/xdm/context/person`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Person Name](person-name.schema.md) `https://ns.adobe.com/xdm/context/person-name`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Person name](person-name.schema.md) `https://ns.adobe.com/xdm/context/person-name`
 
 
 ## Person Examples
@@ -52,11 +52,11 @@ An individual person. May represent a person acting in various roles, such as a 
 | [xdm:birthDayAndMonth](#xdmbirthdayandmonth) | `string` | Optional |  | Person (this schema) |
 | [xdm:birthYear](#xdmbirthyear) | `integer` | Optional |  | Person (this schema) |
 | [xdm:gender](#xdmgender) | `enum` | Optional | `"not_specified"` | Person (this schema) |
-| [xdm:name](#xdmname) | Person Name | Optional |  | Person (this schema) |
+| [xdm:name](#xdmname) | Person name | Optional |  | Person (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:birthDate
-### Birth Date
+### Birth date
 
 The full date a person was born.
 
@@ -77,7 +77,7 @@ The full date a person was born.
 
 
 ## xdm:birthDayAndMonth
-### Birth Date
+### Birth date
 
 The day and month a person was born, in the format MM-DD. This field should be used when the day and month of a person's birth is known, but not the year.
 
@@ -104,9 +104,9 @@ All instances must conform to this regular expression
 
 
 ## xdm:birthYear
-### Birth Year
+### Birth year
 
-The year a person was born including the century (yyyy, e.g 1983).  This field should be used when only the person's age is known, not the full birth date.
+The year a person was born including the century, for example, 1983.  This field should be used when only the person's age is known, not the full birth date.
 
 `xdm:birthYear`
 * is optional
@@ -144,25 +144,25 @@ The value of this property **must** be equal to one of the [known values below](
 | `male` | Male |
 | `female` | Female |
 | `not_specified` | Not Specified |
-| `non_specific` | Nonspecific |
+| `non_specific` | Non-specific |
 
 
 
 
 ## xdm:name
-### Full Name
+### Full name
 
-The person's full name
+The person's full name.
 
 `xdm:name`
 * is optional
-* type: Person Name
+* type: Person name
 * defined in this schema
 
 ### xdm:name Type
 
 
-* [Person Name](person-name.schema.md) – `https://ns.adobe.com/xdm/context/person-name`
+* [Person name](person-name.schema.md) – `https://ns.adobe.com/xdm/context/person-name`
 
 
 

@@ -7,13 +7,13 @@
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/xdm/content/repository",
-  "title": "Content Repository",
+  "title": "Content repository",
   "description":
     "A content repository that is compliant with the Adobe Experience Platform API specification.",
   "type": "object",
   "properties": {
     "xdm:root": {
-      "name": "Root Resource",
+      "name": "Root resource",
       "decription":
         "The location of the root resource of the repository. The root resource is of significance because it defines the entry point into the repository, in an hypermedia sense.",
       "type": "string",

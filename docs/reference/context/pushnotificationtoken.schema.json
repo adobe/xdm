@@ -7,34 +7,34 @@
     ],
     "$id": "https://ns.adobe.com/xdm/context/pushnotificationtoken",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Push Notification Token",
+    "title": "Push notification token",
     "type": "object",
     "meta:extensible": true,
-    "description": "Push notification tokens are used to communicate with applications that\nare installed on devices or SaaS application accounts. Examples include mobile\napplication notifications over notification services like the Apple Push\nNotification service.\n",
+    "description": "Push notification tokens are used to communicate with applications that are installed on devices or SaaS application accounts. Examples include mobile application notifications over notification services like the Apple Push Notification service.",
     "definitions": {
         "pushnotificationtoken": {
             "properties": {
                 "xdm:token": {
                     "title": "Token",
                     "type": "string",
-                    "description": "The service specific token used to address the application for\ncommunication. e.g an Apple APN ID or a Google GCM ID.\n"
+                    "description": "The service specific token used to address the application for communication for example, an Apple APN ID or a Google GCM ID."
                 },
                 "xdm:registrationDate": {
-                    "title": "Registration Date",
+                    "title": "Registration date",
                     "type": "string",
                     "format": "date-time",
-                    "description": "Date and time when the profile has authorized its application to receive\npush notifications.\n"
+                    "description": "Date and time when the profile has authorized the application to receive push notifications."
                 },
                 "xdm:deregistrationDate": {
-                    "title": "Deregistration Date",
+                    "title": "De-registration date",
                     "type": "string",
                     "format": "date-time",
-                    "description": "Date and time when the profile has disabled push notifications on the application.\n"
+                    "description": "Date and time when the profile has disabled push notifications on the application."
                 },
                 "xdm:environment": {
                     "title": "Environment",
                     "$ref": "https://ns.adobe.com/xdm/context/environment",
-                    "description": "Environment of at the time of the registration.\n"
+                    "description": "Environment of at the time of the registration."
                 },
                 "xdm:device": {
                     "title": "Device",
@@ -44,10 +44,10 @@
                 "xdm:application": {
                     "title": "Application",
                     "$ref": "https://ns.adobe.com/xdm/context/application",
-                    "description": "Application registered to receive Push Notifications.\n"
+                    "description": "Application registered to receive push notifications."
                 },
                 "xdm:channel": {
-                    "title": "Communication Channel",
+                    "title": "Communication channel",
                     "$ref": "https://ns.adobe.com/xdm/channels/channel",
                     "description": "Channels for communicating with customers or users."
                 }

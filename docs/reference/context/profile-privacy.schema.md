@@ -1,22 +1,22 @@
 
-# Profile Privacy Schema
+# Profile privacy Schema
 
 ```
 https://ns.adobe.com/xdm/context/profile-privacy
 ```
 
-Profile privacy schema to capture general and sales/sharing opt-out signals.
+Profile privacy schema captures general and sales sharing opt-out signals.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/profile-privacy.schema.json](context/profile-privacy.schema.json) |
 ## Schema Hierarchy
 
-* Profile Privacy `https://ns.adobe.com/xdm/context/profile-privacy`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* Profile privacy `https://ns.adobe.com/xdm/context/profile-privacy`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
-## Profile Privacy Example
+## Profile privacy Example
 ```json
 {
   "xdm:optOutConsentLevel": {
@@ -31,17 +31,17 @@ Profile privacy schema to capture general and sales/sharing opt-out signals.
 }
 ```
 
-# Profile Privacy Properties
+# Profile privacy Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:optOutConsentLevel](#xdmoptoutconsentlevel) | `object` | Optional | Profile Privacy (this schema) |
+| [xdm:optOutConsentLevel](#xdmoptoutconsentlevel) | `object` | Optional | Profile privacy (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:optOutConsentLevel
-### Opt-Out Consent Level
+### Opt-out consent level
 
-Opt-Out consent level.
+Opt-out consent level.
 
 `xdm:optOutConsentLevel`
 * is optional
@@ -61,7 +61,7 @@ Opt-Out consent level.
 
 
 #### xdm:privacyOptOuts
-##### Privacy Opt-Outs
+##### Privacy opt-outs
 
 Encapsulates different opt-out types for data privacy.
 
@@ -88,7 +88,7 @@ All items must be of the type:
 
 
 #### xdm:optOutType
-##### Opt-Out Type
+##### Opt-out type
 
 The type of opt-out.
 
@@ -101,8 +101,8 @@ The value of this property **must** be equal to one of the [known values below](
 ##### xdm:optOutType Known Values
 | Value | Description |
 |-------|-------------|
-| `general_opt_out` | General Opt-Out |
-| `sales_sharing_opt_out` | Sales Sharing Opt-Out |
+| `general_opt_out` | General opt-out |
+| `sales_sharing_opt_out` | Sales sharing opt-out |
 
 
 
@@ -110,7 +110,7 @@ The value of this property **must** be equal to one of the [known values below](
 
 
 #### xdm:optOutValue
-##### Opt-Out Value
+##### Opt-out value
 
 The value of opt-out signal.
 
@@ -123,10 +123,10 @@ The value of this property **must** be equal to one of the [known values below](
 ##### xdm:optOutValue Known Values
 | Value | Description |
 |-------|-------------|
-| `not_provided` | Not Provided |
-| `pending` | Pending Verification |
-| `in` | Opt-In |
-| `out` | Opt-Out |
+| `not_provided` | Not provided |
+| `pending` | Pending verification |
+| `in` | Opt-in |
+| `out` | Opt-out |
 
 
 
@@ -134,7 +134,7 @@ The value of this property **must** be equal to one of the [known values below](
 
 
 #### xdm:timestamp
-##### Opt-Out Timestamp
+##### Opt-out timestamp
 
 Timestamp of the received opt-out signal.
 

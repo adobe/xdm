@@ -16,26 +16,26 @@
         "person": {
             "properties": {
                 "xdm:name": {
-                    "title": "Full Name",
+                    "title": "Full name",
                     "$ref": "https://ns.adobe.com/xdm/context/person-name",
-                    "description": "The person's full name"
+                    "description": "The person's full name."
                 },
                 "xdm:birthDate": {
-                    "title": "Birth Date",
+                    "title": "Birth date",
                     "type": "string",
                     "format": "date",
                     "description": "The full date a person was born."
                 },
                 "xdm:birthDayAndMonth": {
-                    "title": "Birth Date",
+                    "title": "Birth date",
                     "type": "string",
                     "pattern": "[0-1][0-9]-[0-9][0-9]",
                     "description": "The day and month a person was born, in the format MM-DD. This field should be used when the day and month of a person's birth is known, but not the year."
                 },
                 "xdm:birthYear": {
-                    "title": "Birth Year",
+                    "title": "Birth year",
                     "type": "integer",
-                    "description": "The year a person was born including the century (yyyy, e.g 1983).  This field should be used when only the person's age is known, not the full birth date.",
+                    "description": "The year a person was born including the century, for example, 1983.  This field should be used when only the person's age is known, not the full birth date.",
                     "minimum": 1,
                     "maximum": 32767
                 },
@@ -52,7 +52,7 @@
                         "male": "Male",
                         "female": "Female",
                         "not_specified": "Not Specified",
-                        "non_specific": "Nonspecific"
+                        "non_specific": "Non-specific"
                     },
                     "description": "Gender identity of the person.\n",
                     "default": "not_specified"

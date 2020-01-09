@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/commerce
 ```
 
-The entities related to buying and selling activity.
+The records related to buying and selling activity.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -13,7 +13,7 @@ The entities related to buying and selling activity.
 ## Schema Hierarchy
 
 * Commerce `https://ns.adobe.com/xdm/context/commerce`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Order](../data/order.schema.md) `https://ns.adobe.com/xdm/data/order`
   * [Measure](../data/measure.schema.md) `https://ns.adobe.com/xdm/data/measure`
 
@@ -67,7 +67,7 @@ The entities related to buying and selling activity.
 
 ## xdm:cartAbandons
 
-A product list has been identified as no longer accessible (e.g purchasable) by the user.
+A product list has been identified as no longer accessible or purchasable by the user.
 
 `xdm:cartAbandons`
 * is optional
@@ -103,7 +103,7 @@ An action during a checkout process of a product list, there can be more than on
 
 ## xdm:inStorePurchase
 
-inStore Purchase is saved for Analytics use.
+'inStore' purchase is saved for analytics use.
 
 `xdm:inStorePurchase`
 * is optional
@@ -140,7 +140,7 @@ The placed order for one or more products.
 
 ## xdm:productListAdds
 
-Addition of a product to the product list. Example a product is added to a shopping cart.
+Addition of a product to the product list, for example a product is added to a shopping cart.
 
 `xdm:productListAdds`
 * is optional
@@ -158,7 +158,7 @@ Addition of a product to the product list. Example a product is added to a shopp
 
 ## xdm:productListOpens
 
-Initializations of a new product list. Example a shopping cart is created.
+Initializations of a new product list, for example a shopping cart is created.
 
 `xdm:productListOpens`
 * is optional
@@ -176,7 +176,7 @@ Initializations of a new product list. Example a shopping cart is created.
 
 ## xdm:productListRemovals
 
-Removal(s) of a product entry from a product list. Example a product is removed from a shopping cart.
+Removal or removals of a product entry from a product list, for example a product is removed from a shopping cart.
 
 `xdm:productListRemovals`
 * is optional
@@ -194,7 +194,7 @@ Removal(s) of a product entry from a product list. Example a product is removed 
 
 ## xdm:productListReopens
 
-A product list that was no longer accessible(abandoned) has been re-activated by the user. Example via a re-marketing activity.
+A product list that was no longer accessible (abandoned) has been re-activated by the user. Example via a re-marketing activity.
 
 `xdm:productListReopens`
 * is optional
@@ -212,7 +212,7 @@ A product list that was no longer accessible(abandoned) has been re-activated by
 
 ## xdm:productListViews
 
-View(s) of a product-list has occurred.
+View or views of a product-list has occurred.
 
 `xdm:productListViews`
 * is optional
@@ -230,7 +230,7 @@ View(s) of a product-list has occurred.
 
 ## xdm:productViews
 
-View(s) of a product have occurred.
+View or views of a product have occurred.
 
 `xdm:productViews`
 * is optional
@@ -266,7 +266,7 @@ An order has been accepted. Purchase is the only required action in a commerce c
 
 ## xdm:saveForLaters
 
-Product list is saved for future use. Example a product wish list.
+Product list is saved for future use, for example a product wish list.
 
 `xdm:saveForLaters`
 * is optional

@@ -16,7 +16,7 @@
         "https://ns.adobe.com/xdm/context/segmentdefinition",
         "https://ns.adobe.com/experience/audiencemanager/segmentfolder"
     ],
-    "description": "Defines a map containing a set of end-user identities, keyed on either namespace integration code or the namespace ID of the identity.  The values of the map are an array, meaning that more than one identity of each namespace may be carried.",
+    "description": "Defines a map containing a set of end user identities, keyed on either namespace integration code or the namespace ID of the identity.  The values of the map are an array, meaning that more than one identity of each namespace may be carried.",
     "definitions": {
         "identitymap": {
             "properties": {
@@ -41,6 +41,22 @@
     "meta:status": "experimental",
     "examples": [
         {
+            "EMAIL": [
+                {
+                    "xdm:id": "92312748749128"
+                },
+                {
+                    "xdm:id": "92312748749239"
+                }
+            ],
+            "CRM": [
+                {
+                    "xdm:id": "2394509340-30453470347",
+                    "xdm:authenticatedState": "authenticated"
+                }
+            ]
+        },
+        {
             "https://data.adobe.io/entities/namespace/4": [
                 {
                     "xdm:id": "92312748749128"
@@ -58,22 +74,6 @@
             "https://data.adobe.io/entities/namespace/9": [
                 {
                     "xdm:id": "1233ce17-20e0-4a2c-8198-2a77fd60cf4d"
-                }
-            ]
-        },
-        {
-            "EMAIL": [
-                {
-                    "xdm:id": "92312748749128"
-                },
-                {
-                    "xdm:id": "92312748749239"
-                }
-            ],
-            "CRM": [
-                {
-                    "xdm:id": "2394509340-30453470347",
-                    "xdm:authenticatedState": "authenticated"
                 }
             ]
         }

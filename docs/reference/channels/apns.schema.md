@@ -1,23 +1,23 @@
 
-# APNS Channel Schema
+# Apple Push Notification service (APNS) Channel Schema
 
 ```
 https://ns.adobe.com/xdm/channels/apns
 ```
 
-Apple Push Notification Service channel.
+Apple Push Notification service (APNS) channel uniquely identifies Apple devices that run your application or service.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/apns.schema.json](channels/apns.schema.json) |
 ## Schema Hierarchy
 
-* APNS Channel `https://ns.adobe.com/xdm/channels/apns`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* Apple Push Notification service (APNS) Channel `https://ns.adobe.com/xdm/channels/apns`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
 
-## APNS Channel Example
+## Apple Push Notification service (APNS) Channel Example
 ```json
 {
   "@id": "https://ns.adobe.com/xdm/channels/apns",
@@ -25,24 +25,24 @@ Apple Push Notification Service channel.
 }
 ```
 
-# APNS Channel Properties
+# Apple Push Notification service (APNS) Channel Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#id) | `const` | **Required** | APNS Channel (this schema) |
-| [@type](#type) | `const` | Optional | APNS Channel (this schema) |
-| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | APNS Channel (this schema) |
-| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | APNS Channel (this schema) |
+| [@id](#id) | `const` | **Required** | Apple Push Notification service (APNS) Channel (this schema) |
+| [@type](#type) | `const` | Optional | Apple Push Notification service (APNS) Channel (this schema) |
+| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | Apple Push Notification service (APNS) Channel (this schema) |
+| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | Apple Push Notification service (APNS) Channel (this schema) |
 | [xdm:mediaAction](#xdmmediaaction) | `string` | Optional | [Experience Channel](channel.schema.md#xdmmediaaction) |
 | [xdm:mediaType](#xdmmediatype) | `string` | Optional | [Experience Channel](channel.schema.md#xdmmediatype) |
-| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | APNS Channel (this schema) |
-| [xdm:mode](#xdmmode) | `const` | Optional | APNS Channel (this schema) |
+| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | Apple Push Notification service (APNS) Channel (this schema) |
+| [xdm:mode](#xdmmode) | `const` | Optional | Apple Push Notification service (APNS) Channel (this schema) |
 | [xdm:typeAtSource](#xdmtypeatsource) | `string` | Optional | [Experience Channel](channel.schema.md#xdmtypeatsource) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
 
-The ID uniquely identifies the channel. Each specific experience channel defines a constant `@id`.
+The ID uniquely identifies the APNS channel. Each specific experience channel defines a constant `@id`.
 
 `@id`
 * is **required**
@@ -80,10 +80,10 @@ The value of this property **must** be equal to:
 |-------|-------------|
 | `https://ns.adobe.com/xdm/channel-types/web` | The world wide web, including mobile web |
 | `https://ns.adobe.com/xdm/channel-types/social` | Social media platforms |
-| `https://ns.adobe.com/xdm/channel-types/mobile` | Mobile applications |
-| `https://ns.adobe.com/xdm/channel-types/messaging` | Instant Messaging |
-| `https://ns.adobe.com/xdm/channel-types/email` | E-Mail |
-| `https://ns.adobe.com/xdm/channel-types/offline` | Non-Digital experience channels |
+| `https://ns.adobe.com/xdm/channel-types/mobile` | Mobile apps |
+| `https://ns.adobe.com/xdm/channel-types/messaging` | Instant messaging |
+| `https://ns.adobe.com/xdm/channel-types/email` | Email |
+| `https://ns.adobe.com/xdm/channel-types/offline` | Non-digital experience channels |
 
 
 

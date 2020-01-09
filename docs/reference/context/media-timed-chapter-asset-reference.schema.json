@@ -7,7 +7,7 @@
     ],
     "$id": "https://ns.adobe.com/xdm/context/media-timed-chapter-asset-reference",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Timed Media Chapter Asset Reference",
+    "title": "Timed media chapter asset reference",
     "type": "object",
     "meta:status": "experimental",
     "meta:extensible": true,
@@ -16,18 +16,18 @@
         "media-chapter-asset-reference": {
             "properties": {
                 "@id": {
-                    "title": "Chapter Identity",
+                    "title": "Chapter identity",
                     "format": "uri-reference",
                     "type": "string",
                     "description": "The identity of the chapter."
                 },
                 "dc:title": {
-                    "title": "Chapter Name",
+                    "title": "Chapter name",
                     "type": "string",
-                    "description": "The friendly name of the chapter and/or segment."
+                    "description": "The friendly name of the chapter and or segment."
                 },
                 "xmpDM:duration": {
-                    "title": "Chapter Length/Duration",
+                    "title": "Chapter length or duration",
                     "type": "integer",
                     "description": "The length of the chapter, in seconds."
                 }

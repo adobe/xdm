@@ -7,7 +7,7 @@
     ],
     "$id": "https://ns.adobe.com/xdm/context/media",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Media Information",
+    "title": "Media information",
     "type": "object",
     "meta:status": "experimental",
     "meta:extensible": true,
@@ -16,9 +16,9 @@
         "media": {
             "properties": {
                 "xdm:mediaTimed": {
-                    "title": "Timed Media Information",
+                    "title": "Timed media information",
                     "$ref": "https://ns.adobe.com/xdm/context/media-timed",
-                    "description": "Timed media - main content, ads & chapters."
+                    "description": "Information related to timed media main content, such as ads and chapters."
                 }
             }
         }

@@ -7,7 +7,7 @@
     ],
     "$id": "https://ns.adobe.com/xdm/context/browserdetails",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Browser Details",
+    "title": "Browser details",
     "type": "object",
     "meta:extensible": true,
     "description": "Detail information related to the browser.",
@@ -30,60 +30,60 @@
                     "description": "The application or browser version."
                 },
                 "xdm:userAgent": {
-                    "title": "User Agent",
+                    "title": "User agent",
                     "type": "string",
-                    "description": "The HTTP User-Agent string from the client request."
+                    "description": "The HTTP user-agent string from the client request."
                 },
                 "xdm:acceptLanguage": {
-                    "title": "Accept Language",
+                    "title": "Accept language",
                     "type": "string",
-                    "description": "An IETF Language Tag (RFC 5646)."
+                    "description": "An IETF language tag (RFC 5646)."
                 },
                 "xdm:cookiesEnabled": {
-                    "title": "Allows Cookies",
+                    "title": "Allows cookies",
                     "type": "boolean",
                     "description": "The current user agent settings allow for the writing of cookies.'"
                 },
                 "xdm:javaScriptEnabled": {
-                    "title": "JavaScript Enabled",
+                    "title": "JavaScript enabled",
                     "type": "boolean",
                     "description": "If JavaScript was enabled in the device this observation was made from."
                 },
                 "xdm:javaScriptVersion": {
-                    "title": "JavaScript Version",
+                    "title": "JavaScript version",
                     "type": "string",
                     "description": "The version of JavaScript supported during the observation."
                 },
                 "xdm:javaEnabled": {
-                    "title": "Java Enabled",
+                    "title": "Java enabled",
                     "type": "boolean",
                     "description": "If Java was enabled in the device this observation was made from."
                 },
                 "xdm:javaVersion": {
-                    "title": "Java Version",
+                    "title": "Java version",
                     "type": "string",
                     "description": "The version of Java supported during the observation."
                 },
                 "xdm:quicktimeVersion": {
-                    "title": "Quicktime Version",
+                    "title": "Quicktime version",
                     "type": "string",
                     "description": "The version of Apple Quicktime supported during the observation."
                 },
                 "xdm:thirdPartyCookiesEnabled": {
-                    "title": "Allows Third-party Cookies",
+                    "title": "Allows third-party cookies",
                     "type": "boolean",
                     "description": "If third-party cookies were enabled when this observation was made."
                 },
                 "xdm:viewportHeight": {
-                    "title": "Viewport Height",
+                    "title": "Viewport height",
                     "type": "integer",
-                    "description": "The vertical size (in pixels) of the window the experience was displayed inside. For a web view event, the browser viewport height.",
+                    "description": "The vertical size in pixels of the window the experience was displayed inside. For a web view event, the browser viewport height.",
                     "minimum": 0
                 },
                 "xdm:viewportWidth": {
-                    "title": "Viewport Width",
+                    "title": "Viewport width",
                     "type": "integer",
-                    "description": "The horizontal size (in pixels) of the window the experience was displayed inside. For a web view event, the browser viewport width.",
+                    "description": "The horizontal size in pixels of the window the experience was displayed inside. For a web view event, the browser viewport width.",
                     "minimum": 0
                 }
             }

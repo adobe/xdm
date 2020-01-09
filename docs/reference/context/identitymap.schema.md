@@ -5,13 +5,32 @@
 https://ns.adobe.com/xdm/context/identitymap
 ```
 
-Defines a map containing a set of end-user identities, keyed on either namespace integration code or the namespace ID of the identity.  The values of the map are an array, meaning that more than one identity of each namespace may be carried.
+Defines a map containing a set of end user identities, keyed on either namespace integration code or the namespace ID of the identity.  The values of the map are an array, meaning that more than one identity of each namespace may be carried.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/identitymap.schema.json](context/identitymap.schema.json) |
 
 ## IdentityMap Examples
+
+```json
+{
+  "EMAIL": [
+    {
+      "xdm:id": "92312748749128"
+    },
+    {
+      "xdm:id": "92312748749239"
+    }
+  ],
+  "CRM": [
+    {
+      "xdm:id": "2394509340-30453470347",
+      "xdm:authenticatedState": "authenticated"
+    }
+  ]
+}
+```
 
 ```json
 {
@@ -32,25 +51,6 @@ Defines a map containing a set of end-user identities, keyed on either namespace
   "https://data.adobe.io/entities/namespace/9": [
     {
       "xdm:id": "1233ce17-20e0-4a2c-8198-2a77fd60cf4d"
-    }
-  ]
-}
-```
-
-```json
-{
-  "EMAIL": [
-    {
-      "xdm:id": "92312748749128"
-    },
-    {
-      "xdm:id": "92312748749239"
-    }
-  ],
-  "CRM": [
-    {
-      "xdm:id": "2394509340-30453470347",
-      "xdm:authenticatedState": "authenticated"
     }
   ]
 }

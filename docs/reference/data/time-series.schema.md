@@ -13,7 +13,7 @@ Used to indicate the behavior of time partitioned semantics when composed into d
 ## Schema Hierarchy
 
 * Time-series Schema `https://ns.adobe.com/xdm/data/time-series`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
 ## Time-series Schema Example

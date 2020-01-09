@@ -7,7 +7,7 @@
     ],
     "$id": "https://ns.adobe.com/xdm/context/enduserids",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "End-User IDs",
+    "title": "End user IDs",
     "type": "object",
     "meta:extensible": true,
     "description": "The End User IDs schema is used to represent a federated identity of a visitor or known profile across a number of data sources.\n\nIt is an `object` that is using the `@id` of an XDM data source as keys.\nEach value consists of the (required) ID that is native to the data source, and (optional) metadata about the data source as well as (optional) confidence in the stitching.\n\nAdditionally, this schema can include a property that describes the data source that is responsible for identity stitching.\n",
@@ -21,44 +21,44 @@
                     "description": "A unique identifier from Adobe Marketing Cloud."
                 },
                 "https://ns.adobe.com/experience/aaid": {
-                    "title": "Adobe Analytics Cloud End-User IDs",
+                    "title": "Adobe Analytics Cloud end user IDs",
                     "$ref": "https://ns.adobe.com/xdm/context/identity",
-                    "description": "Adobe Analytics Cloud extension to end-user IDs."
+                    "description": "Adobe Analytics Cloud extension to end user IDs."
                 },
                 "https://ns.adobe.com/experience/aacustomid": {
-                    "title": "Adobe Analytics Cloud Custom End-User IDs",
+                    "title": "Adobe Analytics Cloud Custom end user IDs",
                     "$ref": "https://ns.adobe.com/xdm/context/identity",
                     "description": "An Adobe Analytics custom identifier passed in on a hit."
                 },
                 "https://ns.adobe.com/experience/acid": {
-                    "title": "Adobe Campaign End-User IDs",
+                    "title": "Adobe Campaign end user IDs",
                     "$ref": "https://ns.adobe.com/xdm/context/identity",
-                    "description": "Adobe Campaign extension to end-user IDs."
+                    "description": "Adobe Campaign extension to end user IDs."
                 },
                 "https://ns.adobe.com/experience/tntid": {
-                    "title": "Adobe Target End-User IDs",
+                    "title": "Adobe Target end user IDs",
                     "$ref": "https://ns.adobe.com/xdm/context/identity",
-                    "description": "Adobe Target extension to end-user IDs."
+                    "description": "Adobe Target extension to end user IDs."
                 },
                 "https://ns.adobe.com/experience/adcloud": {
-                    "title": "Adobe Advertising Cloud End-User IDs",
+                    "title": "Adobe Advertising Cloud end user IDs",
                     "$ref": "https://ns.adobe.com/xdm/context/identity",
-                    "description": "Adobe Advertising Cloud extension to end-user IDs."
+                    "description": "Adobe Advertising Cloud extension to end user IDs."
                 },
                 "https://ns.adobe.com/experience/emailid": {
-                    "title": "Email Address IDs",
+                    "title": "Email address IDs",
                     "$ref": "https://ns.adobe.com/xdm/context/identity",
                     "description": "Email addresses used as IDs."
                 },
                 "https://ns.adobe.com/experience/phonenumberid": {
-                    "title": "Phone Number IDs",
+                    "title": "Phone number IDs",
                     "$ref": "https://ns.adobe.com/xdm/context/identity",
                     "description": "Phone numbers used as IDs."
                 }
             },
             "patternProperties": {
                 ".+://.+": {
-                    "description": "The identifier, including data source (`@id` must be identical to the property value), foreign ID, and confidence.",
+                    "description": "The identifier, including data source, foreign ID, and confidence. Note, `@id` must be identical to the property value.",
                     "type": "object",
                     "$ref": "https://ns.adobe.com/xdm/context/identity"
                 }
@@ -70,10 +70,10 @@
         "https://ns.adobe.com/experience/tntid": "Adobe Target",
         "https://ns.adobe.com/experience/acid": "Adobe Campaign",
         "https://ns.adobe.com/experience/aaid": "Adobe Analytics",
-        "https://ns.adobe.com/experience/aacustomid": "Adobe Analytics Custom",
-        "https://ns.adobe.com/experience/mcid": "Marketing Cloud Identity Core Service",
-        "https://ns.adobe.com/experience/emailid": "Email Address",
-        "https://ns.adobe.com/experience/phonenumberid": "Phone Number"
+        "https://ns.adobe.com/experience/aacustomid": "Adobe Analytics custom",
+        "https://ns.adobe.com/experience/mcid": "Marketing Cloud identity core service",
+        "https://ns.adobe.com/experience/emailid": "Email address",
+        "https://ns.adobe.com/experience/phonenumberid": "Phone number"
     },
     "allOf": [
         {

@@ -23,9 +23,9 @@
                     "description": "The namespace associated with the `xid` attribute and matched up with the AAM data source integration code."
                 },
                 "xdm:xid": {
-                    "title": "Experience Identifier",
+                    "title": "Experience identifier",
                     "type": "string",
-                    "description": "When present, this value represents a cross-namespace identifier that is unique across all namespace-scoped identifiers in all namespaces."
+                    "description": "When present, experience identifier value represents a cross-namespace identifier that is unique across all namespace-scoped identifiers in all namespaces."
                 }
             }
         }
@@ -44,17 +44,17 @@
     "meta:status": "stabilizing",
     "examples": [
         {
-            "xdm:id": "someone@example.com",
-            "xdm:namespace": {
-                "xdm:code": "Email"
-            }
-        },
-        {
             "xdm:id": "id123",
             "xdm:namespace": {
                 "xdm:code": "AA12345"
             },
             "xdm:authenticatedState": "ambiguous"
+        },
+        {
+            "xdm:id": "someone@example.com",
+            "xdm:namespace": {
+                "xdm:code": "Email"
+            }
         }
     ]
 }

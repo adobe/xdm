@@ -1,23 +1,23 @@
 
-# MPNS Channel Schema
+# Microsoft Push Notification Service (MPNS) Channel Schema
 
 ```
 https://ns.adobe.com/xdm/channels/mpns
 ```
 
-Microsoft Push Notification Service channel.
+Microsoft Push Notification service is an asynchronous service that offers a channel to send data to a Windows phone app from a cloud service.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/mpns.schema.json](channels/mpns.schema.json) |
 ## Schema Hierarchy
 
-* MPNS Channel `https://ns.adobe.com/xdm/channels/mpns`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* Microsoft Push Notification Service (MPNS) Channel `https://ns.adobe.com/xdm/channels/mpns`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
 
-## MPNS Channel Example
+## Microsoft Push Notification Service (MPNS) Channel Example
 ```json
 {
   "@id": "https://ns.adobe.com/xdm/channels/mpns",
@@ -25,18 +25,18 @@ Microsoft Push Notification Service channel.
 }
 ```
 
-# MPNS Channel Properties
+# Microsoft Push Notification Service (MPNS) Channel Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#id) | `const` | **Required** | MPNS Channel (this schema) |
-| [@type](#type) | `const` | Optional | MPNS Channel (this schema) |
-| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | MPNS Channel (this schema) |
-| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | MPNS Channel (this schema) |
+| [@id](#id) | `const` | **Required** | Microsoft Push Notification Service (MPNS) Channel (this schema) |
+| [@type](#type) | `const` | Optional | Microsoft Push Notification Service (MPNS) Channel (this schema) |
+| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | Microsoft Push Notification Service (MPNS) Channel (this schema) |
+| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | Microsoft Push Notification Service (MPNS) Channel (this schema) |
 | [xdm:mediaAction](#xdmmediaaction) | `string` | Optional | [Experience Channel](channel.schema.md#xdmmediaaction) |
 | [xdm:mediaType](#xdmmediatype) | `string` | Optional | [Experience Channel](channel.schema.md#xdmmediatype) |
-| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | MPNS Channel (this schema) |
-| [xdm:mode](#xdmmode) | `const` | Optional | MPNS Channel (this schema) |
+| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | Microsoft Push Notification Service (MPNS) Channel (this schema) |
+| [xdm:mode](#xdmmode) | `const` | Optional | Microsoft Push Notification Service (MPNS) Channel (this schema) |
 | [xdm:typeAtSource](#xdmtypeatsource) | `string` | Optional | [Experience Channel](channel.schema.md#xdmtypeatsource) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -80,10 +80,10 @@ The value of this property **must** be equal to:
 |-------|-------------|
 | `https://ns.adobe.com/xdm/channel-types/web` | The world wide web, including mobile web |
 | `https://ns.adobe.com/xdm/channel-types/social` | Social media platforms |
-| `https://ns.adobe.com/xdm/channel-types/mobile` | Mobile applications |
-| `https://ns.adobe.com/xdm/channel-types/messaging` | Instant Messaging |
-| `https://ns.adobe.com/xdm/channel-types/email` | E-Mail |
-| `https://ns.adobe.com/xdm/channel-types/offline` | Non-Digital experience channels |
+| `https://ns.adobe.com/xdm/channel-types/mobile` | Mobile apps |
+| `https://ns.adobe.com/xdm/channel-types/messaging` | Instant messaging |
+| `https://ns.adobe.com/xdm/channel-types/email` | Email |
+| `https://ns.adobe.com/xdm/channel-types/offline` | Non-digital experience channels |
 
 
 

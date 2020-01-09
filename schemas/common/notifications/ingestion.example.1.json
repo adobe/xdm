@@ -1,0 +1,19 @@
+{
+  "xdm:eventType": "ig_load_success",
+  "xdm:status": "success",
+  "xdm:ingestionId": "batch1234",
+  "xdm:customerIngestionId": "1234@adobe",
+  "xdm:datasetId": "1234",
+  "xdm:sandboxName": "test",
+  "xdm:inputFormat": "csv",
+  "xdm:imsOrg": "D13A1E7053E46A220A4C86E1@AdobeOrg",
+  "xdm:startTime": 123456,
+  "xdm:completionTime": 12345678,
+  "xdm:errors": [
+    {
+      "xdm:code": "err1234",
+      "xdm:rows": ["1", "2"],
+      "xdm:description": "error"
+    }
+  ]
+}

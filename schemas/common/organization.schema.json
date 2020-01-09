@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Organization",
   "type": "object",
-  "description": "",
+  "description": "Examples of organization data are number of employees, market segment, industry, and location.",
   "definitions": {
     "organization": {
       "properties": {
@@ -20,40 +20,40 @@
           "description": "A unique identifier for the organization."
         },
         "xdm:legalName": {
-          "title": "Organization Name",
+          "title": "Organization legal name",
           "type": "string",
-          "description": "The official name of the organization."
+          "description": "The official or legal name of the organization."
         },
         "schema:description": {
-          "title": "Organization Description",
+          "title": "Organization description",
           "type": "string",
           "description": "A description of the organization."
         },
         "schema:numberOfEmployees": {
-          "title": "Number of Employees",
+          "title": "Number of employees",
           "type": "number",
-          "description": "The number of employees the organization has."
+          "description": "The number of employees the at the organization."
         },
         "xdm:industry": {
           "title": "Industry",
           "type": "string",
-          "description": "The the industry that this organization is a part of. This is a free-form field, and it is advisable to use a structured value for queries or to use the `xdm:classifier` property."
+          "description": "The industry that this organization is a part of. This is a free-form field, and it is advisable to use a structured value for queries or to use the `xdm:classifier` property."
         },
         "xdm:website": {
-          "title": "Web Site",
+          "title": "Website URL",
           "type": "string",
           "format": "uri",
           "description": "The URL of the organization's website."
         },
         "xdm:marketSegment": {
-          "title": "Market Segment",
+          "title": "Market segment",
           "type": "string",
           "description": "The named market segment that the organization participates in. This is a free-form field, and it is advisable to use a structured value for queries or to use the `xdm:identifier` property."
         },
         "xdm:location": {
           "title": "Location",
           "$ref": "https://ns.adobe.com/xdm/context/place",
-          "description": "The location of the organization's main office."
+          "description": "The location of the organization's main office or headquarters."
         },
         "xdm:rating": {
           "title": "Rating",
@@ -63,7 +63,7 @@
           "description": "The calculated score or star rating for this organization. `1` indicates the maximum possible rating, `0` the minimum possible rating."
         },
         "xdm:identifier": {
-          "title": "Organization Identifier",
+          "title": "Organization identifier",
           "type": "object",
           "meta:keys": {
             "https://ns.adobe.com/xdm/external/dnb": "Dun & Bradstreet",
@@ -81,10 +81,10 @@
               "https://ns.adobe.com/xdm/external/angellist": "https://angel.co/adobe"
             }
           ],
-          "description": "This object contains unambiguous identifiers for the organization. Each key is the URI of an identification service, each value is the unique ID (or preferably URI) of the organization as defined by the identification service."
+          "description": "This object contains unambiguous identifiers for the organization. Each key is the URI of an identification service, each value is the unique ID or preferably URI of the organization as defined by the identification service."
         },
         "xdm:classifier": {
-          "title": "Market/Industry Classifier",
+          "title": "Market or industry classifier",
           "type": "object",
           "meta:keys": {
             "https://ns.adobe.com/xdm/external/isic4": "International Standard of Industrial Classification of All Economic Activities (ISIC)",
@@ -103,7 +103,7 @@
               "https://ns.adobe.com/xdm/external/naics": "1234"
             }
           ],
-          "description": "This object contains unambiguous classifiers for the organization. Each key is the URI of an classification service or standard, each value is the unique ID (or preferably URI) of the organization as defined by the classification service."
+          "description": "This object contains unambiguous classifiers for the organization. Each key is the URI of an classification service or standard, each value is the unique ID or preferably URI of the organization as defined by the classification service."
         }
       }
     }

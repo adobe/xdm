@@ -1,17 +1,17 @@
 
-# Product List Item Schema
+# Product list item Schema
 
 ```
 https://ns.adobe.com/xdm/content/productlistitem
 ```
 
-The product list item is a list item representing a product selected by a customer with specific options and pricing that are for that usage context at a specific point of time and may differ from the product record. For example the product record contains details from the product information system that are consistent for all customers, where the product list item has the actual price offered to the customer at that time which may vary due to sales campaigns or seasonal pricing.
+The product list item represents a product selected by a customer with specific options, pricing, usage context for a specific point of time and may differ from the product record. For example the product record contains details from the product information system that are consistent for all customers, where the product list item has the actual price offered to the customer at that time which may vary due to sales campaigns or seasonal pricing.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [content/productlistitem.schema.json](content/productlistitem.schema.json) |
 
-## Product List Item Example
+## Product list item Example
 ```json
 {
   "xdm:SKU": "1002352692",
@@ -24,22 +24,22 @@ The product list item is a list item representing a product selected by a custom
 }
 ```
 
-# Product List Item Properties
+# Product list item Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#id) | `string` | Optional | Product List Item (this schema) |
-| [xdm:SKU](#xdmsku) | `string` | Optional | Product List Item (this schema) |
-| [xdm:currencyCode](#xdmcurrencycode) | `string` | Optional | Product List Item (this schema) |
-| [xdm:name](#xdmname) | `string` | Optional | Product List Item (this schema) |
-| [xdm:priceTotal](#xdmpricetotal) | `number` | Optional | Product List Item (this schema) |
-| [xdm:product](#xdmproduct) | `string` | Optional | Product List Item (this schema) |
-| [xdm:productAddMethod](#xdmproductaddmethod) | `string` | Optional | Product List Item (this schema) |
-| [xdm:quantity](#xdmquantity) | `integer` | Optional | Product List Item (this schema) |
+| [@id](#id) | `string` | Optional | Product list item (this schema) |
+| [xdm:SKU](#xdmsku) | `string` | Optional | Product list item (this schema) |
+| [xdm:currencyCode](#xdmcurrencycode) | `string` | Optional | Product list item (this schema) |
+| [xdm:name](#xdmname) | `string` | Optional | Product list item (this schema) |
+| [xdm:priceTotal](#xdmpricetotal) | `number` | Optional | Product list item (this schema) |
+| [xdm:product](#xdmproduct) | `string` | Optional | Product list item (this schema) |
+| [xdm:productAddMethod](#xdmproductaddmethod) | `string` | Optional | Product list item (this schema) |
+| [xdm:quantity](#xdmquantity) | `integer` | Optional | Product list item (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
-### Line Item ID.
+### Line item ID.
 
 The line item identifier for this product entry. The product itself is identified through `xdm:product`.
 
@@ -62,7 +62,7 @@ The line item identifier for this product entry. The product itself is identifie
 ## xdm:SKU
 ### SKU
 
-Stock keeping unit, the unique identifier for a product defined by the vendor.
+Stock keeping unit (SKU), the unique identifier for a product defined by the vendor.
 
 `xdm:SKU`
 * is optional
@@ -80,7 +80,7 @@ Stock keeping unit, the unique identifier for a product defined by the vendor.
 
 
 ## xdm:currencyCode
-### Currency Code
+### Currency code
 
 The ISO 4217 alphabetic currency code used for pricing the product.
 
@@ -139,7 +139,7 @@ The display name for the product as presented to the user for this product view.
 
 
 ## xdm:priceTotal
-### Price Total
+### Price total
 
 The total price for the product line item.
 
@@ -180,7 +180,7 @@ The XDM identifier of the product itself.
 
 
 ## xdm:productAddMethod
-### Product Add Method
+### Product add method
 
 The method that was used to add a product item to the list by the visitor. Set with product list add metrics.
 

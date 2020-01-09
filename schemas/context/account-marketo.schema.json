@@ -15,13 +15,13 @@
     "https://ns.adobe.com/xdm/context/account"
   ],
   "meta:extends": [
-    "https://ns.adobe.com/xdm/context/account-sf"
+    "https://ns.adobe.com/xdm/context/account-sync"
   ],
   "description": "Marketo specific Account fields.",
   "definitions": {
     "account-marketo": {
       "properties": {
-        "marketo:company": {
+        "marketo:org": {
           "properties": {
             "marketo:notes": {
               "title": "Notes",
@@ -33,25 +33,77 @@
               "type": "string",
               "description": "Account site."
             },
-            "marketo:SFDCType": {
-              "title": "SFDC Type",
-              "description": "SFDC type.",
+            "marketo:type": {
+              "title": "Organization Type",
+              "description": "Organization type.",
               "type": "string"
             },
-            "marketo:companySFDCType": {
-              "title": "Company SFDC Type",
-              "description": "Company SFDC type.",
+            "marketo:parentOrgId": {
+              "title": "Parent Company Id",
+              "description": "Parent company id.",
               "type": "string"
             },
-            "marketo:SFDCAccountNumber": {
+            "marketo:primaryInterestId": {
+              "title": "Primary Interest Id",
+              "description": "Primary interest id.",
+              "type": "string"
+            },
+            "marketo:isPrivate": {
+              "title": "Private Flag",
+              "description": "Private flag.",
+              "type": "string"
+            },
+            "marketo:additionalFields": {
+              "title": "Additional Fields",
+              "description": "Additional fields.",
+              "type": "string"
+            },
+            "marketo:salesAccountOwnerId": {
+              "title": "Sales Account Owner Id",
+              "description": "Sales account owner id.",
+              "type": "string"
+            },
+            "marketo:sfdcType": {
+              "title": "SFDC Account Type",
+              "description": "SFDC account type.",
+              "type": "string"
+            },
+            "marketo:sfdcAccountNum": {
               "title": "SFDC Account Number",
               "description": "SFDC account number.",
               "type": "string"
             },
-            "marketo:parentCompanyName": {
-              "title": "Parent Company Name",
-              "description": "Parent company name.",
+            "marketo:sfdcMasterRecordId": {
+              "title": "SFDC Master Record Id",
+              "description": "SFDC master record id.",
               "type": "string"
+            },
+            "marketo:sfdcAccountId": {
+              "title": "SFDC Account Id",
+              "description": "SFDC account id.",
+              "type": "string"
+            },
+            "marketo:sfdcAccountOwnerId": {
+              "title": "SFDC Account Owner Id",
+              "description": "SFDC account owner id.",
+              "type": "string"
+            },
+            "marketo:sfdcParentId": {
+              "title": "SFDC Parent Id",
+              "description": "SFDC parent id.",
+              "type": "string"
+            },
+            "marketo:createdAt": {
+              "title": "Account Create Date",
+              "description": "Account create date.",
+              "type": "string",
+              "format": "date-time"
+            },
+            "marketo:updatedAt": {
+              "title": "Account Update Date",
+              "description": "Account update date.",
+              "type": "string",
+              "format": "date-time"
             }
           }
         },
@@ -126,9 +178,9 @@
                 }
               }
             },
-            "marketo:CRMGuid": {
-              "title": "CRM GUID Id",
-              "description": "CRM GUID Id.",
+            "marketo:mktoGuid": {
+              "title": "Marketo GUID Id",
+              "description": "Marketo GUID Id.",
               "type": "string"
             },
             "marketo:CRMOrgId": {
@@ -151,19 +203,24 @@
               "description": "Indicator whether the Account is targeted.",
               "type": "string"
             },
+            "marketo:sourceType": {
+              "title": "Account Source Type",
+              "description": "Account source type.",
+              "type": "string"
+            },
             "marketo:logoUrl": {
               "title": "Logo URL",
               "description": "Logo url.",
               "type": "string",
               "format": "uri"
             },
-            "marketo:accounCreateDate": {
+            "marketo:createdAt": {
               "title": "Account Created Date",
               "description": "Account created date.",
               "type": "string",
               "format": "date-time"
             },
-            "marketo:accounUpdateDate": {
+            "marketo:updatedAt": {
               "title": "Account Updated Date",
               "description": "Account updated date.",
               "type": "string",
@@ -182,7 +239,7 @@
       "$ref": "#/definitions/account-marketo"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/context/account-sf"
+      "$ref": "https://ns.adobe.com/xdm/context/account-sync"
     }
   ],
   "meta:status": "experimental"

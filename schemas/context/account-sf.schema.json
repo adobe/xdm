@@ -58,17 +58,6 @@
           "description": "The record’s clean status, as compared with data.com. Values are not compared, in sync, reviewed, different, not found, and inactive. This field is available if you use data.com prospector or data.com clean.",
           "type": "string"
         },
-        "sf:createdById": {
-          "title": "Created By",
-          "description": "User who created the account, including creation date and time. (Read only)",
-          "type": "string"
-        },
-        "sf:createdDate": {
-          "title": "Created Date",
-          "description": "account created date",
-          "type": "string",
-		  "format":"date-time"
-        },
         "sf:customLinks": {
           "title": "Custom Links",
           "description": "listing of custom links for accounts as set up by your salesforce admin.",
@@ -78,39 +67,23 @@
           "title": "Last Activity",
           "description": "Last activity date",
           "type": "string",
-		  "format":"date-time"
-        },
-        "sf:lastModifiedById": {
-          "title": "Last Modified By",
-          "description": "last modified by",
-          "type": "string"
-        },
-        "sf:lastModifiedDate": {
-          "title": "Last Modified Date",
-          "description": "last modified date",
-          "type": "string",
-		  "format":"date-time"
+          "format": "date-time"
         },
         "sf:lastReferencedDate": {
           "title": "Last Referenced Date",
           "description": "last referenced date",
           "type": "string",
-		  "format":"date-time"
+          "format": "date-time"
         },
         "sf:lastViewedDate": {
           "title": "Last Viewed Date",
           "description": "last viewed date",
           "type": "string",
-		  "format":"date-time"
+          "format": "date-time"
         },
         "sf:masterRecordId": {
           "title": "Account",
           "description": "master record id of the account",
-          "type": "string"
-        },
-        "sf:modifiedBy": {
-          "title": "Modified By",
-          "description": "user who last changed the account fields, including modification date and time. This field doesn’t track changes made to any of the related list items on the account. (Read only)",
           "type": "string"
         },
         "sf:ownerId": {
@@ -197,6 +170,11 @@
           "title": "Jigsaw Company Id",
           "description": "Jigsaw company id",
           "type": "string"
+        },
+        "xdm:shippingAddress": {
+          "title": "Account Shipping Address",
+          "$ref": "https://ns.adobe.com/xdm/common/address",
+          "description": "Account shipping address."
         }
       }
     }

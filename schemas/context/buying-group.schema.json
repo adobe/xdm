@@ -49,7 +49,7 @@
           "description": "Contact role description for this opportunity.",
           "type": "string"
         },
-		"xdm:buyingGroupSystemProperties": {
+        "xdm:buyingGroupSystemProperties": {
           "properties": {
             "xdm:createdById": {
               "title": "Created By",
@@ -73,11 +73,7 @@
               "type": "string"
             }
           }
-        },
-		
-		
-		
-		
+        }
       }
     }
   },

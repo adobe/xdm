@@ -51,7 +51,7 @@
             "marketo-org:isPrivate": {
               "title": "Private Flag",
               "description": "Private flag.",
-              "type": "string"
+              "type": "boolean"
             },
             "marketo-org:additionalFields": {
               "title": "Additional Fields",
@@ -196,12 +196,12 @@
             "marketo-account:isDeleted": {
               "title": "Account Record Deleted Indicator",
               "description": "Indicator whether the Account record is deleted or not.",
-              "type": "string"
+              "type": "boolean"
             },
             "marketo-account:isTargeted": {
               "title": "Account targeted Indicator",
               "description": "Indicator whether the Account is targeted.",
-              "type": "string"
+              "type": "boolean"
             },
             "marketo-account:sourceType": {
               "title": "Account Source Type",

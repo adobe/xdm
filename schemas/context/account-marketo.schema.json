@@ -33,7 +33,7 @@
               "type": "string",
               "description": "Account site."
             },
-            "marketo-org:type": {
+            "marketo-org:organizationType": {
               "title": "Organization Type",
               "description": "Organization type.",
               "type": "string"

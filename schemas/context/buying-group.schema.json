@@ -1,0 +1,99 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/buying-group",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Buying Group",
+  "type": "object",
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record"
+  ],
+  "description": "Buying Group for an Opportunity and Account.",
+  "definitions": {
+    "buying-group": {
+      "properties": {
+        "xdm:buyingGroupId": {
+          "title": "Buying Group Id",
+          "description": "Buying group id.",
+          "type": "string"
+        },
+        "xdm:accountId": {
+          "title": "Account Id",
+          "description": "Account id.",
+          "type": "string"
+        },
+        "xdm:opportunityId": {
+          "title": "Opportunity Id",
+          "description": "Opportunity id.",
+          "type": "string"
+        },
+        "xdm:contactId": {
+          "title": "Contact Id",
+          "description": "Contact id.",
+          "type": "string"
+        },
+        "xdm:roleId": {
+          "title": "Contact Role Id For This Opportunity",
+          "description": "Contact role id for this opportunity.",
+          "type": "string"
+        },
+        "xdm:roleDesc": {
+          "title": "Contact Role Description For This Opportunity",
+          "description": "Contact role description for this opportunity.",
+          "type": "string"
+        },
+		"xdm:buyingGroupSystemProperties": {
+          "properties": {
+            "xdm:createdById": {
+              "title": "Created By",
+              "description": "User who created the account, including creation date and time. (Read only)",
+              "type": "string"
+            },
+            "xdm:createdDate": {
+              "title": "Created Date",
+              "description": "account created date",
+              "type": "string",
+              "format": "date-time"
+            },
+            "xdm:modifiedById": {
+              "title": "Modified By",
+              "description": "user who last changed the account fields, including modification date and time. This field doesn’t track changes made to any of the related list items on the account. (Read only)",
+              "type": "string"
+            },
+            "xdm:modifiedDate": {
+              "title": "Modified By",
+              "description": "Unique identifier of the user who modified the record.",
+              "type": "string"
+            }
+          }
+        },
+		
+		
+		
+		
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/auditable"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "#/definitions/buying-group"
+    }
+  ],
+  "meta:status": "experimental"
+}

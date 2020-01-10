@@ -50,6 +50,10 @@
             "^dsp:.*$": {},
             "^searchads:.*$": {},
             "^adcloud:.*$": {},
+            "^bg-sf:.*$": {},
+            "^bg-cdm:.*$": {},
+            "^bg-dynamics:.*$": {},
+            "^bg-marketo:.*$": {},
             ".+://.+": {},
             "@.*": {}
           },
@@ -225,10 +229,32 @@
                   "type": "string",
                   "format": "url",
                   "const": "https://ns.adobe.com/adcloud/"
+                },
+                "bg-sf": {
+                  "type": "string",
+                  "format": "url",
+                  "const": "https://ns.adobe.com/bg-sf/"
+                },
+                "bg-marketo": {
+                  "type": "string",
+                  "format": "url",
+                  "const": "https://ns.adobe.com/bg-marketo/"
+                },
+                "bg-cdm": {
+                  "type": "string",
+                  "format": "url",
+                  "const": "https://ns.adobe.com/bg-cdm/"
+                },
+                "bg-dynamics": {
+                  "type": "string",
+                  "format": "url",
+                  "const": "https://ns.adobe.com/bg-dynamics/"
                 }
               },
               "additionalProperties": false,
-              "required": ["xdm"]
+              "required": [
+                "xdm"
+              ]
             }
           },
           "patternProperties": {
@@ -264,9 +290,15 @@
             "^dsp:.*$": {},
             "^searchads:.*$": {},
             "^adcloud:.*$": {},
+            "^bg-sf:.*$": {},
+            "^bg-cdm:.*$": {},
+            "^bg-dynamics:.*$": {},
+            "^bg-marketo:.*$": {},
             ".+://.+": {}
           },
-          "required": ["@context"],
+          "required": [
+            "@context"
+          ],
           "additionalProperties": false
         }
       ]

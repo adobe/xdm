@@ -23,83 +23,83 @@
       "properties": {
         "marketo:org": {
           "properties": {
-            "marketo:notes": {
+            "marketo-org:notes": {
               "title": "Notes",
               "description": "Notes.",
               "type": "string"
             },
-            "marketo:site": {
+            "marketo-org:site": {
               "title": "Account Site",
               "type": "string",
               "description": "Account site."
             },
-            "marketo:type": {
+            "marketo-org:type": {
               "title": "Organization Type",
               "description": "Organization type.",
               "type": "string"
             },
-            "marketo:parentOrgId": {
+            "marketo-org:parentOrgId": {
               "title": "Parent Company Id",
               "description": "Parent company id.",
               "type": "string"
             },
-            "marketo:primaryInterestId": {
+            "marketo-org:primaryInterestId": {
               "title": "Primary Interest Id",
               "description": "Primary interest id.",
               "type": "string"
             },
-            "marketo:isPrivate": {
+            "marketo-org:isPrivate": {
               "title": "Private Flag",
               "description": "Private flag.",
               "type": "string"
             },
-            "marketo:additionalFields": {
+            "marketo-org:additionalFields": {
               "title": "Additional Fields",
               "description": "Additional fields.",
               "type": "string"
             },
-            "marketo:salesAccountOwnerId": {
+            "marketo-org:salesAccountOwnerId": {
               "title": "Sales Account Owner Id",
               "description": "Sales account owner id.",
               "type": "string"
             },
-            "marketo:sfdcType": {
+            "marketo-org:sfdcType": {
               "title": "SFDC Account Type",
               "description": "SFDC account type.",
               "type": "string"
             },
-            "marketo:sfdcAccountNum": {
+            "marketo-org:sfdcAccountNum": {
               "title": "SFDC Account Number",
               "description": "SFDC account number.",
               "type": "string"
             },
-            "marketo:sfdcMasterRecordId": {
+            "marketo-org:sfdcMasterRecordId": {
               "title": "SFDC Master Record Id",
               "description": "SFDC master record id.",
               "type": "string"
             },
-            "marketo:sfdcAccountId": {
+            "marketo-org:sfdcAccountId": {
               "title": "SFDC Account Id",
               "description": "SFDC account id.",
               "type": "string"
             },
-            "marketo:sfdcAccountOwnerId": {
+            "marketo-org:sfdcAccountOwnerId": {
               "title": "SFDC Account Owner Id",
               "description": "SFDC account owner id.",
               "type": "string"
             },
-            "marketo:sfdcParentId": {
+            "marketo-org:sfdcParentId": {
               "title": "SFDC Parent Id",
               "description": "SFDC parent id.",
               "type": "string"
             },
-            "marketo:createdAt": {
+            "marketo-org:createdAt": {
               "title": "Account Create Date",
               "description": "Account create date.",
               "type": "string",
               "format": "date-time"
             },
-            "marketo:updatedAt": {
+            "marketo-org:updatedAt": {
               "title": "Account Update Date",
               "description": "Account update date.",
               "type": "string",
@@ -109,118 +109,118 @@
         },
         "marketo:namedAccount": {
           "properties": {
-            "marketo:accountMetrics": {
+            "marketo-account:accountMetrics": {
               "properties": {
-                "marketo:opptyAmount": {
+                "marketo-account:opptyAmount": {
                   "title": "Opportunity Amount",
                   "description": "Opportunity amount.",
                   "type": "number"
                 },
-                "marketo:opptyCount": {
+                "marketo-account:opptyCount": {
                   "title": "Opportunity Count",
                   "description": "Opportunity count.",
                   "type": "number"
                 },
-                "marketo:percentile1": {
+                "marketo-account:percentile1": {
                   "title": "Percentile 1",
                   "description": "Percentile 1.",
                   "type": "number"
                 },
-                "marketo:percentile2": {
+                "marketo-account:percentile2": {
                   "title": "Percentile 2",
                   "description": "Percentile 2.",
                   "type": "number"
                 },
-                "marketo:percentile3": {
+                "marketo-account:percentile3": {
                   "title": "Percentile 3",
                   "description": "Percentile 3.",
                   "type": "number"
                 },
-                "marketo:percentile4": {
+                "marketo-account:percentile4": {
                   "title": "Percentile 4",
                   "description": "Percentile 4.",
                   "type": "number"
                 },
-                "marketo:percentile5": {
+                "marketo-account:percentile5": {
                   "title": "Percentile 5",
                   "description": "Percentile 5.",
                   "type": "number"
                 },
-                "marketo:score1": {
+                "marketo-account:score1": {
                   "title": "Score 1",
                   "description": "Score 1.",
                   "type": "number"
                 },
-                "marketo:score2": {
+                "marketo-account:score2": {
                   "title": "Score 2",
                   "description": "Score 2.",
                   "type": "number"
                 },
-                "marketo:score3": {
+                "marketo-account:score3": {
                   "title": "Score 3",
                   "description": "Score 3.",
                   "type": "number"
                 },
-                "marketo:score4": {
+                "marketo-account:score4": {
                   "title": "Score 4",
                   "description": "Score 4.",
                   "type": "number"
                 },
-                "marketo:score5": {
+                "marketo-account:score5": {
                   "title": "Score 5",
                   "description": "Score 5.",
                   "type": "number"
                 },
-                "marketo:membershipCount": {
+                "marketo-account:membershipCount": {
                   "title": "Membership Count",
                   "description": "Membership count.",
                   "type": "number"
                 }
               }
             },
-            "marketo:mktoGuid": {
+            "marketo-account:mktoGuid": {
               "title": "Marketo GUID Id",
               "description": "Marketo GUID Id.",
               "type": "string"
             },
-            "marketo:CRMOrgId": {
+            "marketo-account:CRMOrgId": {
               "title": "CRM Organization Id",
               "description": "CRM organization Id.",
               "type": "string"
             },
-            "marketo:domainName": {
+            "marketo-account:domainName": {
               "title": "Domain Name",
               "description": "Domain name.",
               "type": "string"
             },
-            "marketo:isDeleted": {
+            "marketo-account:isDeleted": {
               "title": "Account Record Deleted Indicator",
               "description": "Indicator whether the Account record is deleted or not.",
               "type": "string"
             },
-            "marketo:isTargeted": {
+            "marketo-account:isTargeted": {
               "title": "Account targeted Indicator",
               "description": "Indicator whether the Account is targeted.",
               "type": "string"
             },
-            "marketo:sourceType": {
+            "marketo-account:sourceType": {
               "title": "Account Source Type",
               "description": "Account source type.",
               "type": "string"
             },
-            "marketo:logoUrl": {
+            "marketo-account:logoUrl": {
               "title": "Logo URL",
               "description": "Logo url.",
               "type": "string",
               "format": "uri"
             },
-            "marketo:createdAt": {
+            "marketo-account:createdAt": {
               "title": "Account Created Date",
               "description": "Account created date.",
               "type": "string",
               "format": "date-time"
             },
-            "marketo:updatedAt": {
+            "marketo-account:updatedAt": {
               "title": "Account Updated Date",
               "description": "Account updated date.",
               "type": "string",

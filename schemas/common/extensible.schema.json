@@ -50,6 +50,11 @@
             "^dsp:.*$": {},
             "^searchads:.*$": {},
             "^adcloud:.*$": {},
+            "^sf:.*$": {},
+            "^cdm:.*$": {},
+            "^dynamics:.*$": {},
+            "^marketo:.*$": {},
+			"^account-sync:.*$": {},
             ".+://.+": {},
             "@.*": {}
           },
@@ -225,10 +230,32 @@
                   "type": "string",
                   "format": "url",
                   "const": "https://ns.adobe.com/adcloud/"
+                },
+                "sf": {
+                  "type": "string",
+                  "format": "url",
+                  "const": "https://ns.adobe.com/sf/"
+                },
+                "cdm": {
+                  "type": "string",
+                  "format": "url",
+                  "const": "https://ns.adobe.com/cdm/"
+                },
+                "dynamics": {
+                  "type": "string",
+                  "format": "url",
+                  "const": "https://ns.adobe.com/dynamics/"
+                },
+                "marketo": {
+                  "type": "string",
+                  "format": "url",
+                  "const": "https://ns.adobe.com/marketo/"
                 }
               },
               "additionalProperties": false,
-              "required": ["xdm"]
+              "required": [
+                "xdm"
+              ]
             }
           },
           "patternProperties": {
@@ -264,9 +291,16 @@
             "^dsp:.*$": {},
             "^searchads:.*$": {},
             "^adcloud:.*$": {},
+            "^sf:.*$": {},
+            "^cdm:.*$": {},
+            "^dynamics:.*$": {},
+            "^marketo:.*$": {},
+			"^account-sync:.*$": {},
             ".+://.+": {}
           },
-          "required": ["@context"],
+          "required": [
+            "@context"
+          ],
           "additionalProperties": false
         }
       ]

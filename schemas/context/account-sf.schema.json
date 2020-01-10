@@ -1,0 +1,191 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/account-sf",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Sales Force Account",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/account"
+  ],
+  "description": "Sales Force specific Account fields.",
+  "definitions": {
+    "account-sf": {
+      "properties": {
+        "sf:phone": {
+          "title": "Phone",
+          "description": "Primary phone number of account. Up to 40 characters are allowed in this field.",
+          "$ref": "https://ns.adobe.com/xdm/context/phonenumber"
+        },
+        "sf:currencyCode": {
+          "title": "Currency Code",
+          "type": "string",
+          "examples": [
+            "USD",
+            "EUR"
+          ],
+          "pattern": "^[A-Z]{3}$",
+          "description": "The ISO 4217 currency code."
+        },
+        "sf:legalName": {
+          "title": "Account Name",
+          "description": "name of company. Up to 255 characters are allowed in this field.",
+          "type": "string"
+        },
+        "sf:accountNumber": {
+          "title": "Account Number",
+          "description": "Tracking or reference number for account. Up to 40 characters are allowed in this field.",
+          "type": "string"
+        },
+        "sf:accountRecordType": {
+          "title": "Account Record Type",
+          "description": "Name of the field that determines what picklist values are available for the record. Available in professional, enterprise, unlimited, performance, and developer editions.",
+          "type": "string"
+        },
+        "sf:accountSource": {
+          "title": "Account Source",
+          "description": "The source of the account record. For example, advertisement, data.com, or trade show. The source is selected from a picklist of available values, which a salesforce admin sets. Each picklist value can have up to 40 characters.",
+          "type": "string"
+        },
+        "sf:cleanStatus": {
+          "title": "Clean Status",
+          "description": "The record’s clean status, as compared with data.com. Values are not compared, in sync, reviewed, different, not found, and inactive. This field is available if you use data.com prospector or data.com clean.",
+          "type": "string"
+        },
+        "sf:customLinks": {
+          "title": "Custom Links",
+          "description": "listing of custom links for accounts as set up by your salesforce admin.",
+          "type": "string"
+        },
+        "sf:lastActivityDate": {
+          "title": "Last Activity",
+          "description": "Last activity date",
+          "type": "string",
+          "format": "date-time"
+        },
+        "sf:lastReferencedDate": {
+          "title": "Last Referenced Date",
+          "description": "last referenced date",
+          "type": "string",
+          "format": "date-time"
+        },
+        "sf:lastViewedDate": {
+          "title": "Last Viewed Date",
+          "description": "last viewed date",
+          "type": "string",
+          "format": "date-time"
+        },
+        "sf:masterRecordId": {
+          "title": "Account",
+          "description": "master record id of the account",
+          "type": "string"
+        },
+        "sf:ownerId": {
+          "title": "Account Owner",
+          "description": "assigned owner of account. Not available in personal edition.",
+          "type": "string"
+        },
+        "sf:parentId": {
+          "title": "Parent Account",
+          "description": "Parent company for companies that are subsidiaries of a larger company or organization. The parent account must be an existing account in salesforce. You can enter the account name, or select (or optionally, create) the account using the lookup icon.",
+          "type": "string"
+        },
+        "sf:partnerAccountId": {
+          "title": "Partner Account",
+          "description": "Read-only field that indicates whether an account is a partner account.",
+          "type": "string"
+        },
+        "sf:photoUrl": {
+          "title": "Photo URL",
+          "description": "Photo url",
+          "type": "string"
+        },
+        "sf:site": {
+          "title": "Account Site",
+          "description": "information about the account’s location, such as single location, headquarters, or branch. Up to 80 characters are allowed in this field.",
+          "type": "string"
+        },
+        "sf:systemModstamp": {
+          "title": "System Modstamp",
+          "description": "System modified time stamp",
+          "type": "string"
+        },
+        "sf:territory": {
+          "title": "Tradestyle",
+          "description": "a name, different from its legal name, that a company can use for conducting business. Similar to “doing business as” or “dba”. This field is available if you use data.com prospector or data.com clean.",
+          "type": "string"
+        },
+        "sf:territoryId": {
+          "title": "Territories",
+          "description": "The territories to which the account has been assigned.",
+          "type": "string"
+        },
+        "sf:tickerSymbol": {
+          "title": "Ticker Symbol",
+          "description": "The abbreviation used to identify publicly traded shares of a particular stock. Also known as the stock symbol. Up to 20 characters are allowed in this field.",
+          "type": "string"
+        },
+        "sf:yearStarted": {
+          "title": "Year Started",
+          "description": "The year the company was established or the year when current ownership or management assumed control of the company. If the company establishment or ownership year is unavailable, then the year the dun & bradstreet record was created will be used. Dun & bradstreet does not supply this data for branch locations.this field is available if you use data.com prospector or data.com clean.",
+          "type": "string"
+        },
+        "sf:jigsaw": {
+          "title": "Data.com Key",
+          "description": "The company’s id in data.com. When salesforce records are compared with data.com records (via manual cleaning or automated clean jobs), if data.com finds a match, the two records are linked by this field’s numeric value.",
+          "type": "string"
+        },
+        "sf:legalNameLocal": {
+          "title": "Account Name (Local)",
+          "description": "The name of the account translated into the local language.",
+          "type": "string"
+        },
+        "sf:NAICSDescription": {
+          "title": "NAICS Description",
+          "description": "A brief description of an organization’s line of business, based on its naics code. This field is available if you use data.com prospector or data.com clean.",
+          "type": "string"
+        },
+        "sf:sicDesc": {
+          "title": "SIC Description",
+          "description": "A brief description of an organization’s line of business, based on its sic code.",
+          "type": "string"
+        },
+        "sf:type": {
+          "title": "Account Type",
+          "description": "Type of account, for example, customer, competitor, or partner. Entry is selected from a picklist of available values, which a salesforce admin sets. Each picklist value can have up to 40 characters.",
+          "type": "string"
+        },
+        "sf:DUNSNumber": {
+          "title": "D-U-N-S Number",
+          "description": "The data universal numbering system (d-u-n-s) number is a unique nine-digit number assigned to every business location in the d&b database that has a unique, separate, and distinct operation. D-u-n-s numbers are used by industries and organizations around the world as a global standard for business identification and tracking. This field is available if you use data.com prospector or data.com clean.",
+          "type": "string"
+        },
+        "sf:jigsawCompanyId": {
+          "title": "Jigsaw Company Id",
+          "description": "Jigsaw company id",
+          "type": "string"
+        },
+        "xdm:shippingAddress": {
+          "title": "Account Shipping Address",
+          "$ref": "https://ns.adobe.com/xdm/common/address",
+          "description": "Account shipping address."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/account-sf"
+    }
+  ],
+  "meta:status": "experimental"
+}

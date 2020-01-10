@@ -1,0 +1,63 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/account-sync",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Account Sync Attributes",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "Account syncronization fields.",
+  "definitions": {
+    "account-sync": {
+      "properties": {
+        "account-sync:synchTimestamp": {
+          "title": "Sync Timestamp",
+          "description": "Sync timestamp.",
+          "type": "string",
+          "format": "date-time"
+        },
+        "account-sync:systemModstamp": {
+          "title": "System Modified Timestamp",
+          "description": "System modified timestamp.",
+          "type": "string",
+          "format": "date-time"
+        },
+        "account-sync:IsDeleted": {
+          "title": "Deleted Flag",
+          "description": "Deleted flag.",
+          "type": "string"
+        },
+        "account-sync:createdDate": {
+          "title": "Account Create Date",
+          "description": "Account create date.",
+          "type": "string"
+        },
+        "account-sync:partialSynced": {
+          "title": "Partially Sync Flag",
+          "description": "Partially sync flag.",
+          "type": "string",
+          "format": "uri"
+        },
+        "account-sync:fkInSync": {
+          "title": "Foreign Key Sync Indicator",
+          "description": "Foreign key sync indicator.",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/account-sync"
+    }
+  ],
+  "meta:status": "experimental"
+}

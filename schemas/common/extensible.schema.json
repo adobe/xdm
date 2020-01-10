@@ -252,6 +252,21 @@
                   "type": "string",
                   "format": "url",
                   "const": "https://ns.adobe.com/marketo/"
+                },
+                "marketo-org": {
+                  "type": "string",
+                  "format": "url",
+                  "const": "https://ns.adobe.com/marketo-org/"
+                },
+                "marketo-account": {
+                  "type": "string",
+                  "format": "url",
+                  "const": "https://ns.adobe.com/marketo-account/"
+                },
+                "account-sync": {
+                  "type": "string",
+                  "format": "url",
+                  "const": "https://ns.adobe.com/account-sync/"
                 }
               },
               "additionalProperties": false,

@@ -37,6 +37,5 @@
       "$ref": "#/definitions/descriptorManyToMany"
     }
   ],
-  "additionalProperties" : false,
   "meta:status": "stabilizing"
 }

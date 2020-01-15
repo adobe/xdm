@@ -40,5 +40,6 @@
       "$ref": "#/definitions/descriptorReferenceIdentity"
     }
   ],
+  "additionalProperties" : false,
   "meta:status": "stabilizing"
 }

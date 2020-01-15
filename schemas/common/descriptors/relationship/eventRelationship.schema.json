@@ -45,5 +45,6 @@
       "$ref": "#/definitions/eventRelationship"
     }
   ],
+  "additionalProperties" : false,
   "meta:status": "stabilizing"
 }

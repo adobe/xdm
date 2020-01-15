@@ -110,5 +110,6 @@
       "$ref": "#/definitions/searchdescriptor"
     }
   ],
+  "additionalProperties" : false,
   "meta:status": "experimental"
 }

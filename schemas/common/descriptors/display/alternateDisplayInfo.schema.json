@@ -63,5 +63,6 @@
       "$ref": "#/definitions/alternateDisplayInfo"
     }
   ],
+  "additionalProperties" : false,
   "meta:status": "stabilizing"
 }

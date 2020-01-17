@@ -9,57 +9,57 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Advertising",
   "type": "object",
-  "description": "The information related to advertising activity related to the experience event.",
+  "description": "The information related to advertising activity in relationship to the experience event.",
   "meta:extensible": true,
   "definitions": {
     "advertising": {
       "properties": {
         "xdm:adViewability": {
-          "title": "MRC Viewability",
+          "title": "MRC viewability",
           "$ref": "https://ns.adobe.com/xdm/context/adviewability",
           "description":
-          "The runtime measured viewability specific details such as player volume, library version, window status, viewport/ad measured dimensions, etc."
+          "Media Rating Council (MRC) defines viewability as an online advertising metric that indicates the number of impressions that are actually “seen” by end-users. Viewability captures specific details such as player volume, library version, window status, and viewport ad measured dimensions."
         },
         "xdm:adAssetReference": {
-          "title": "Ad Asset Reference",
+          "title": "Ad asset reference",
           "description": "Asset information about the ad captured by the experience event.",
           "$ref": "https://ns.adobe.com/xdm/context/advertising-timed-asset-reference"
         },
         "xdm:adAssetViewDetails": {
-          "title": "Ad Asset View Details",
+          "title": "Ad asset view details",
           "description": "View details for the ad playback captured by the experience event.",
           "$ref": "https://ns.adobe.com/xdm/context/advertising-timed-asset-view-details"
         },
         "xdm:completes": {
           "title": "Completes",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Indicates if a timed media asset was watched to completion - this does not necessarily mean the viewer watched the whole video; viewer could have skipped ahead."
+          "description": "Indicates if a timed media asset was watched to completion but doesn't necessarily mean the end-user watched the whole video as the they could have skipped ahead."
         },
         "xdm:timePlayed": {
-          "title": "Time Spent",
+          "title": "Time spent",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Describes the amount of time spent by a user on a specific timed media asset."
+          "description": "Describes the amount of time spent by an end-user on a specific timed media asset."
         },
         "xdm:federated": {
           "title": "Federated",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Indicates if an experience event was created through data federation (data sharing between customers)."
+          "description": "Indicates if an experience event was created through data federation such as data sharing between customers."
         },
         "xdm:clicks": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Click(s) actions on an advertisement."
+          "description": "Click actions on an advertisement."
         },
         "xdm:conversions": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "A customer pre-defined action(s) which triggers an event for performance evaluation."
+          "description": "A customer pre-defined action or actions which triggers an event for performance evaluation."
         },
         "xdm:firstQuartiles": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "A digital video ad has played through 25% of its duration at normal speed."
+          "description": "A digital video ad that has played through 25% of its duration at normal speed."
         },
         "xdm:impressions": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Impression(s) of an advertisement to an end-user with the potential of being viewed."
+          "description": "Impression of an advertisement to a end-user with the potential of being viewed."
         },
         "xdm:midpoints": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",

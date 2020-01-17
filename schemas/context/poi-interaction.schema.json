@@ -7,15 +7,21 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/poi-interaction",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Point of Interest Interaction",
+  "title": "Point of interest interaction",
   "type": "object",
   "meta:extensible": true,
-  "description": "A point or place of interest (POI) interaction. Used to capture triggered engagement activities when users enter, leave of come within range of a POI.",
+  "description": "A point or place of interest (POI) interaction used to capture triggered engagement activities when users enter, leave, or come within range of a POI.",
   "definitions": {
     "poi-interaction": {
       "properties": {
         "xdm:POIDetail": {
-          "title": "POI Detail",
+          "title": "POI detail",
+          "meta:status": "deprecated",
+          "description": "Detail of the POI that cause the event.",
+          "$ref": "https://ns.adobe.com/xdm/context/poi-detail"
+        },
+         "xdm:poiDetail": {
+          "title": "POI detail",
           "description": "Detail of the POI that cause the event.",
           "$ref": "https://ns.adobe.com/xdm/context/poi-detail"
         },

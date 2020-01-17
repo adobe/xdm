@@ -45,14 +45,14 @@
                     "description": "The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code."
                 },
                 "xdm:dmaID": {
-                    "title": "Designated Market Area",
+                    "title": "Designated market area",
                     "type": "integer",
                     "description": "The Nielsen media research designated market area."
                 },
                 "xdm:msaID": {
-                    "title": "Metropolitan Statistical Area",
+                    "title": "Metropolitan statistical area",
                     "type": "integer",
-                    "description": "The metropolitan statistical area in the USA where the observation occurred."
+                    "description": "The metropolitan statistical area in the United States where the observation occurred."
                 }
             }
         }

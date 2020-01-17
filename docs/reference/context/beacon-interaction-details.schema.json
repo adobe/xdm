@@ -10,27 +10,27 @@
     "title": "Beacon",
     "type": "object",
     "meta:extensible": true,
-    "description": "Beacon, a wireless device that communicates identity information to mobile applications as mobile devices come within range.",
+    "description": "Beacon is a wireless device that communicates identity information to mobile applications as mobile devices come within range.",
     "definitions": {
         "beacon-interaction-detail": {
             "properties": {
                 "xdm:proximityUUID": {
                     "title": "Proximity UUID",
                     "type": "string",
-                    "description": "The UUID configured into a beacon (or multiple beacons if multiple operate in an area) to be transmitted to mobile devices in range to identify an organizations beacons."
+                    "description": "A proximity UUID (Universally Unique IDentifier) is a special type of identifier used to distinguish beacons in your network from all other beacons in networks outside your control. The proximity UUID is configured into a beacon, to be transmitted to mobile devices in range to identify an organizations beacons."
                 },
                 "xdm:beaconMajor": {
-                    "title": "Beacon Major",
+                    "title": "Beacon major",
                     "type": "number",
-                    "description": "The first sub organization identifier of an area multiple beacon operate in."
+                    "description": "Major values identify and distinguish a group and unsigned integer values between 1 and 65,535."
                 },
                 "xdm:beaconMinor": {
                     "title": "Beacon Minor",
                     "type": "number",
-                    "description": "The second sub organization identifier of an area multiple beacon operate in. The smallest area a beacon can refine location to."
+                    "description": "Minor values identify and distinguish an individual and unsigned integer values between 1 and 65,535."
                 },
                 "xdm:proximity": {
-                    "title": "Proximity to Beacon",
+                    "title": "Proximity to beacon",
                     "type": "string",
                     "description": "Estimated distance from the beacon.",
                     "enum": [

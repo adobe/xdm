@@ -8,7 +8,7 @@
     "$schema": "http://json-schema.org/draft-06/schema#",
     "$id": "https://ns.adobe.com/xdm/content/componentized-page",
     "type": "object",
-    "title": "Componentized Page",
+    "title": "Componentized page",
     "description": "A componentized page is a part of a digital experience that is authored though modular components.\nExamples for componentized pages include web pages as managed by a web content management system or mobile app pages as managed by a mobile content management system.\nComponentized pages are modular (consist of smaller content components), hyperlinked (link to other pages), and include digital assets (like images or videos).\n",
     "meta:extensible": true,
     "meta:extends": [

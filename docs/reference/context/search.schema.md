@@ -13,7 +13,7 @@ Information about web search activity.
 ## Schema Hierarchy
 
 * Search `https://ns.adobe.com/xdm/context/search`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
 ## Search Example
@@ -41,7 +41,7 @@ Information about web search activity.
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:isPaid
-### Is Paid
+### Is paid
 
 Indicate if the search is paid or not.
 
@@ -80,7 +80,7 @@ Keywords for the search.
 
 
 ## xdm:pageDepth
-### Page Depth
+### Page depth
 
 Page depth in the search results.
 
@@ -100,9 +100,9 @@ Page depth in the search results.
 
 
 ## xdm:position
-### Listing Position
+### Listing position
 
-Position (rank) of the listing in the search result page.
+Position or rank of the listing in the search result page.
 
 `xdm:position`
 * is optional
@@ -120,7 +120,7 @@ Position (rank) of the listing in the search result page.
 
 
 ## xdm:searchEngine
-### Search Engine
+### Search engine
 
 The search engine used by the search.
 
@@ -140,9 +140,9 @@ The search engine used by the search.
 
 
 ## xdm:searchEngineID
-### Search Engine ID
+### Search engine ID
 
-The application-specified identifier used to identify the search engine used by the search.
+The application specified identifier used to identify the search engine used by the search.
 
 `xdm:searchEngineID`
 * is optional
@@ -161,9 +161,9 @@ The application-specified identifier used to identify the search engine used by 
 
 
 ## xdm:slot
-### Page Slot
+### Page slot
 
-Named section of the page where the search result appeared. For eg. Top, Side.
+Named section of the page where the search result appeared, for example, top or side.
 
 `xdm:slot`
 * is optional

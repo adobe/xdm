@@ -4,15 +4,6 @@
 
 
 
-## /content/
-
-* [Component Container](./content/component-container.schema.md) – `https://ns.adobe.com/xdm/content/component-container` (Experimental)
-* [Componentized Page](./content/componentized-page.schema.md) – `https://ns.adobe.com/xdm/content/componentized-page` (Experimental)
-* [Content Repository](./content/repository.schema.md) – `https://ns.adobe.com/xdm/content/repository` (Experimental)
-* [Page Component](./content/page-component.schema.md) – `https://ns.adobe.com/xdm/content/page-component` (Experimental)
-* [Product](./content/product.schema.md) – `https://ns.adobe.com/xdm/context/product` (Experimental)
-* [Product List Item](./content/productlistitem.schema.md) – `https://ns.adobe.com/xdm/content/productlistitem` (Experimental)
-
 ## /assets/
 
 * [Aggregated Asset](./assets/aggregated-asset.schema.md) – `https://ns.adobe.com/xdm/assets/aggregated-asset` (Experimental)
@@ -28,19 +19,28 @@
 * [Simple Rectangular Area](./assets/rectangular.schema.md) – `https://ns.adobe.com/xdm/assets/rectangular` (Stabilizing)
 * [Video](./assets/video.schema.md) – `https://ns.adobe.com/xdm/assets/video` (Experimental)
 
+## /content/
+
+* [Component container](./content/component-container.schema.md) – `https://ns.adobe.com/xdm/content/component-container` (Experimental)
+* [Componentized page](./content/componentized-page.schema.md) – `https://ns.adobe.com/xdm/content/componentized-page` (Experimental)
+* [Content repository](./content/repository.schema.md) – `https://ns.adobe.com/xdm/content/repository` (Experimental)
+* [Page component](./content/page-component.schema.md) – `https://ns.adobe.com/xdm/content/page-component` (Experimental)
+* [Product](./content/product.schema.md) – `https://ns.adobe.com/xdm/context/product` (Experimental)
+* [Product list item](./content/productlistitem.schema.md) – `https://ns.adobe.com/xdm/content/productlistitem` (Experimental)
+
 ## /common/
 
-* [Audit Trail](./common/auditable.schema.md) – `https://ns.adobe.com/xdm/common/auditable` (Experimental)
+* [Audit trail](./common/auditable.schema.md) – `https://ns.adobe.com/xdm/common/auditable` (Experimental)
 * [Customer Managed Environment](./common/selfservice.schema.md) – `https://ns.adobe.com/xdm/common/selfservice` (Experimental)
 * [EventEnvelope](./common/eventenvelope.schema.md) – `https://ns.adobe.com/xdm/common/eventenvelope` (Experimental)
-* [Extensibility Base Schema](./common/extensible.schema.md) – `https://ns.adobe.com/xdm/common/extensible` (Stabilizing)
+* [Extensibility base schema](./common/extensible.schema.md) – `https://ns.adobe.com/xdm/common/extensible` (Stabilizing)
 * [Geo](./common/geo.schema.md) – `https://ns.adobe.com/xdm/common/geo` (Experimental)
-* [Geographical Unit](./common/geounit.schema.md) – `https://ns.adobe.com/xdm/common/geounit` (Experimental)
+* [Geographical unit](./common/geounit.schema.md) – `https://ns.adobe.com/xdm/common/geounit` (Experimental)
 * [Identity Provider](./common/identity-provider.schema.md) – `https://ns.adobe.com/xdm/common/identity-provider` (Experimental)
 * [Organization](./common/organization.schema.md) – `https://ns.adobe.com/xdm/common/organization` (Stabilizing)
-* [Organizational Unit](./common/orgunit.schema.md) – `https://ns.adobe.com/xdm/common/orgunit` (Experimental)
+* [Organizational unit](./common/orgunit.schema.md) – `https://ns.adobe.com/xdm/common/orgunit` (Experimental)
 * [Page](./common/page.schema.md) – `https://ns.adobe.com/xdm/common/page` (Experimental)
-* [Postal Address](./common/address.schema.md) – `https://ns.adobe.com/xdm/common/address` (Stabilizing)
+* [Postal address](./common/address.schema.md) – `https://ns.adobe.com/xdm/common/address` (Stabilizing)
 * [Principal](./common/principal.schema.md) – `https://ns.adobe.com/xdm/common/principal` (Experimental)
 * [User identity](./common/identity.schema.md) – `https://ns.adobe.com/xdm/common/identity` (Experimental)
 
@@ -148,90 +148,94 @@
 
 ## /context/
 
-* [Ad Asset Reference](./context/advertising-timed-asset-reference.schema.md) – `https://ns.adobe.com/xdm/context/advertising-timed-asset-reference` (Experimental)
-* [Ad Asset View Details](./context/advertising-timed-asset-view-details.schema.md) – `https://ns.adobe.com/xdm/context/advertising-timed-asset-view-details` (Experimental)
-* [Ad Break](./context/advertising-break.schema.md) – `https://ns.adobe.com/xdm/context/advertising-break` (Experimental)
+* [Ad asset reference](./context/advertising-timed-asset-reference.schema.md) – `https://ns.adobe.com/xdm/context/advertising-timed-asset-reference` (Experimental)
+* [Ad asset view details](./context/advertising-timed-asset-view-details.schema.md) – `https://ns.adobe.com/xdm/context/advertising-timed-asset-view-details` (Experimental)
+* [Ad break](./context/advertising-break.schema.md) – `https://ns.adobe.com/xdm/context/advertising-break` (Experimental)
 * [Advertising](./context/advertising.schema.md) – `https://ns.adobe.com/xdm/context/advertising` (Stabilizing)
 * [Application](./context/application.schema.md) – `https://ns.adobe.com/xdm/context/application` (Stabilizing)
 * [Beacon](./context/beacon-interaction-details.schema.md) – `https://ns.adobe.com/xdm/context/beacon-interaction-details` (Experimental)
-* [Browser Details](./context/browserdetails.schema.md) – `https://ns.adobe.com/xdm/context/browserdetails` (Stabilizing)
+* [Browser details](./context/browserdetails.schema.md) – `https://ns.adobe.com/xdm/context/browserdetails` (Stabilizing)
 * [Commerce](./context/commerce.schema.md) – `https://ns.adobe.com/xdm/context/commerce` (Stabilizing)
-* [Consumer ExperienceEvent  Mixin](./context/experienceevent-consumer.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-consumer` (Experimental)
+* [Consumer ExperienceEvent mixin](./context/experienceevent-consumer.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-consumer` (Experimental)
 * [Device](./context/device.schema.md) – `https://ns.adobe.com/xdm/context/device` (Stabilizing)
-* [Direct Marketing](./context/direct-marketing.schema.md) – `https://ns.adobe.com/xdm/context/direct-marketing` (Stabilizing)
-* [Direct Marketing Address](./context/directmarketing-address.schema.md) – `https://ns.adobe.com/xdm/context/directmarketing-address` (Experimental)
-* [Direct Marketing Email Address](./context/directmarketing-emailaddress.schema.md) – `https://ns.adobe.com/xdm/context/directmarketing-emailaddress` (Experimental)
-* [Direct Marketing Phone Number](./context/directmarketing-phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/directmarketing-phonenumber` (Experimental)
-* [Email Address](./context/emailaddress.schema.md) – `https://ns.adobe.com/xdm/context/emailaddress` (Stabilizing)
-* [End-User IDs](./context/enduserids.schema.md) – `https://ns.adobe.com/xdm/context/enduserids` (Stabilizing)
+* [Direct marketing](./context/direct-marketing.schema.md) – `https://ns.adobe.com/xdm/context/direct-marketing` (Stabilizing)
+* [Direct marketing email address](./context/directmarketing-emailaddress.schema.md) – `https://ns.adobe.com/xdm/context/directmarketing-emailaddress` (Experimental)
+* [Direct marketing phone number](./context/directmarketing-phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/directmarketing-phonenumber` (Experimental)
+* [Direct marketing postal address](./context/directmarketing-address.schema.md) – `https://ns.adobe.com/xdm/context/directmarketing-address` (Experimental)
+* [Email address](./context/emailaddress.schema.md) – `https://ns.adobe.com/xdm/context/emailaddress` (Stabilizing)
+* [End user IDs](./context/enduserids.schema.md) – `https://ns.adobe.com/xdm/context/enduserids` (Stabilizing)
 * [Environment](./context/environment.schema.md) – `https://ns.adobe.com/xdm/context/environment` (Stabilizing)
-* [ExperienceEvent Application Details](./context/experienceevent-application.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-application` (Stabilizing)
-* [ExperienceEvent Channel Details](./context/experienceevent-channel.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-channel` (Stabilizing)
-* [ExperienceEvent Commerce Details](./context/experienceevent-commerce.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-commerce` (Stabilizing)
-* [ExperienceEvent Details for Advertising](./context/experienceevent-advertising.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-advertising` (Stabilizing)
-* [ExperienceEvent Details for Marketing](./context/experienceevent-marketing.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-marketing` (Stabilizing)
-* [ExperienceEvent Details for Media](./context/experienceevent-media.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-media` (Stabilizing)
-* [ExperienceEvent Details for Search](./context/experienceevent-search.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-search` (Stabilizing)
-* [ExperienceEvent Direct Marketing Details](./context/experienceevent-directmarketing.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-directmarketing` (Stabilizing)
 * [ExperienceEvent EndUserIDs](./context/experienceevent-enduserids.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-enduserids` (Stabilizing)
-* [ExperienceEvent Environment Details](./context/experienceevent-environment-details.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-environment-details` (Stabilizing)
-* [ExperienceEvent Implementation Details](./context/experienceevent-implementation-details.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-implementation-details` (Stabilizing)
-* [ExperienceEvent Profile Stitch Details](./context/experienceevent-profile-stitch.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-profile-stitch` (Stabilizing)
 * [ExperienceEvent Segment Membership Details](./context/experienceevent-segmentmembership.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-segmentmembership` (Stabilizing)
-* [ExperienceEvent Technical Details](./context/experienceevent-technical-details.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-technical-details` (Stabilizing)
-* [ExperienceEvent Web Details](./context/experienceevent-web.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-web` (Stabilizing)
+* [ExperienceEvent application details](./context/experienceevent-application.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-application` (Stabilizing)
+* [ExperienceEvent channel details](./context/experienceevent-channel.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-channel` (Stabilizing)
+* [ExperienceEvent commerce details](./context/experienceevent-commerce.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-commerce` (Stabilizing)
+* [ExperienceEvent details for advertising](./context/experienceevent-advertising.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-advertising` (Stabilizing)
+* [ExperienceEvent details for marketing](./context/experienceevent-marketing.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-marketing` (Stabilizing)
+* [ExperienceEvent details for media](./context/experienceevent-media.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-media` (Stabilizing)
+* [ExperienceEvent details for search](./context/experienceevent-search.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-search` (Stabilizing)
+* [ExperienceEvent direct marketing details](./context/experienceevent-directmarketing.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-directmarketing` (Stabilizing)
 * [ExperienceEvent endUserIDs (deprecated)](./context/experienceevent-enduserids-deprecated.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-enduserids-deprecated` (Deprecated)
-* [Geo Interaction Details](./context/geo-interaction-details.schema.md) – `https://ns.adobe.com/xdm/context/geo-interaction-details` (Experimental)
-* [Identities Array for Profile (deprecated)](./context/profile-identities-deprecated.schema.md) – `https://ns.adobe.com/xdm/context/profile-identities-deprecated` (Deprecated)
+* [ExperienceEvent environment details](./context/experienceevent-environment-details.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-environment-details` (Stabilizing)
+* [ExperienceEvent implementation details](./context/experienceevent-implementation-details.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-implementation-details` (Stabilizing)
+* [ExperienceEvent profile stitch details](./context/experienceevent-profile-stitch.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-profile-stitch` (Stabilizing)
+* [ExperienceEvent technical details](./context/experienceevent-technical-details.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-technical-details` (Stabilizing)
+* [ExperienceEvent web details](./context/experienceevent-web.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-web` (Stabilizing)
+* [Geo interaction details](./context/geo-interaction-details.schema.md) – `https://ns.adobe.com/xdm/context/geo-interaction-details` (Experimental)
+* [Identities array for profile (deprecated)](./context/profile-identities-deprecated.schema.md) – `https://ns.adobe.com/xdm/context/profile-identities-deprecated` (Deprecated)
 * [Identity](./context/identity.schema.md) – `https://ns.adobe.com/xdm/context/identity` (Stabilizing)
-* [Identity Item](./context/identityitem.schema.md) – `https://ns.adobe.com/xdm/context/identityitem` (Experimental)
+* [Identity item](./context/identityitem.schema.md) – `https://ns.adobe.com/xdm/context/identityitem` (Experimental)
 * [IdentityMap](./context/identitymap.schema.md) – `https://ns.adobe.com/xdm/context/identitymap` (Experimental)
-* [Implementation Details](./context/implementationdetails.schema.md) – `https://ns.adobe.com/xdm/context/implementationdetails` (Stabilizing)
+* [Implementation details](./context/implementationdetails.schema.md) – `https://ns.adobe.com/xdm/context/implementationdetails` (Stabilizing)
 * [MRC Viewability](./context/adviewability.schema.md) – `https://ns.adobe.com/xdm/context/adviewability` (Stabilizing)
 * [Marketing](./context/marketing.schema.md) – `https://ns.adobe.com/xdm/context/marketing` (Stabilizing)
-* [Media Information](./context/media.schema.md) – `https://ns.adobe.com/xdm/context/media` (Experimental)
+* [Media information](./context/media.schema.md) – `https://ns.adobe.com/xdm/context/media` (Experimental)
 * [Namespace](./context/namespace.schema.md) – `https://ns.adobe.com/xdm/context/namespace` (Stabilizing)
 * [OptInOut](./context/optinout.schema.md) – `https://ns.adobe.com/xdm/context/optinout` (Experimental)
 * [Person](./context/person.schema.md) – `https://ns.adobe.com/xdm/context/person` (Experimental)
-* [Person Name](./context/person-name.schema.md) – `https://ns.adobe.com/xdm/context/person-name` (Experimental)
-* [Phone Number](./context/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber` (Stabilizing)
-* [Place](./context/place.schema.md) – `https://ns.adobe.com/xdm/context/place` (Experimental)
-* [Place Context](./context/placecontext.schema.md) – `https://ns.adobe.com/xdm/context/placecontext` (Experimental)
-* [Point of Interest Details](./context/poi-detail.schema.md) – `https://ns.adobe.com/xdm/context/poi-detail` (Experimental)
-* [Point of Interest Interaction](./context/poi-interaction.schema.md) – `https://ns.adobe.com/xdm/context/poi-interaction` (Experimental)
-* [Primary Asset View Details](./context/media-timed-asset-view-details.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-asset-view-details` (Experimental)
-* [Profile Direct Marketing](./context/profile-directmarketing.schema.md) – `https://ns.adobe.com/xdm/context/profile-directmarketing` (Experimental)
-* [Profile Owning Entity Details](./context/profile-owning-entities.schema.md) – `https://ns.adobe.com/xdm/context/profile-owning-entities` (Experimental)
-* [Profile Person Details](./context/profile-person-details.schema.md) – `https://ns.adobe.com/xdm/context/profile-person-details` (Experimental)
-* [Profile Personal Details](./context/profile-personal-details.schema.md) – `https://ns.adobe.com/xdm/context/profile-personal-details` (Experimental)
-* [Profile Preferences Details](./context/profile-preferences-details.schema.md) – `https://ns.adobe.com/xdm/context/profile-preferences-details` (Experimental)
-* [Profile Privacy](./context/profile-privacy.schema.md) – `https://ns.adobe.com/xdm/context/profile-privacy` (Experimental)
-* [Profile Push Details](./context/profile-push-details.schema.md) – `https://ns.adobe.com/xdm/context/profile-push-details` (Experimental)
-* [Profile Segmentation](./context/profile-segmentation.schema.md) – `https://ns.adobe.com/xdm/context/profile-segmentation` (Experimental)
-* [Profile Stitch](./context/profilestitch.schema.md) – `https://ns.adobe.com/xdm/context/profileStitch` (Experimental)
-* [Profile Stitch Identity](./context/profilestitchidentity.schema.md) – `https://ns.adobe.com/xdm/context/profileStitchIdentity` (Experimental)
-* [Profile Subscriptions](./context/profile-subscriptions.schema.md) – `https://ns.adobe.com/xdm/context/profile-subscriptions` (Experimental)
-* [Profile Test Details](./context/profile-test-profile.schema.md) – `https://ns.adobe.com/xdm/context/profile-test-profile` (Experimental)
-* [Profile Work Details](./context/profile-work-details.schema.md) – `https://ns.adobe.com/xdm/context/profile-work-details` (Experimental)
-* [Push Notification Token](./context/pushnotificationtoken.schema.md) – `https://ns.adobe.com/xdm/context/pushnotificationtoken` (Stabilizing)
+* [Person name](./context/person-name.schema.md) – `https://ns.adobe.com/xdm/context/person-name` (Experimental)
+* [Phone number](./context/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber` (Stabilizing)
+* [Physical place](./context/place.schema.md) – `https://ns.adobe.com/xdm/context/place` (Experimental)
+* [Place context](./context/placecontext.schema.md) – `https://ns.adobe.com/xdm/context/placecontext` (Experimental)
+* [Point of interest details](./context/poi-detail.schema.md) – `https://ns.adobe.com/xdm/context/poi-detail` (Experimental)
+* [Point of interest interaction](./context/poi-interaction.schema.md) – `https://ns.adobe.com/xdm/context/poi-interaction` (Experimental)
+* [Primary asset view details](./context/media-timed-asset-view-details.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-asset-view-details` (Experimental)
+* [Profile direct marketing](./context/profile-directmarketing.schema.md) – `https://ns.adobe.com/xdm/context/profile-directmarketing` (Experimental)
+* [Profile owning entity details](./context/profile-owning-entities.schema.md) – `https://ns.adobe.com/xdm/context/profile-owning-entities` (Experimental)
+* [Profile person details](./context/profile-person-details.schema.md) – `https://ns.adobe.com/xdm/context/profile-person-details` (Experimental)
+* [Profile personal details](./context/profile-personal-details.schema.md) – `https://ns.adobe.com/xdm/context/profile-personal-details` (Experimental)
+* [Profile preferences details](./context/profile-preferences-details.schema.md) – `https://ns.adobe.com/xdm/context/profile-preferences-details` (Experimental)
+* [Profile privacy](./context/profile-privacy.schema.md) – `https://ns.adobe.com/xdm/context/profile-privacy` (Experimental)
+* [Profile push details](./context/profile-push-details.schema.md) – `https://ns.adobe.com/xdm/context/profile-push-details` (Experimental)
+* [Profile segmentation](./context/profile-segmentation.schema.md) – `https://ns.adobe.com/xdm/context/profile-segmentation` (Experimental)
+* [Profile stitch](./context/profilestitch.schema.md) – `https://ns.adobe.com/xdm/context/profileStitch` (Experimental)
+* [Profile stitch identity](./context/profilestitchidentity.schema.md) – `https://ns.adobe.com/xdm/context/profileStitchIdentity` (Experimental)
+* [Profile subscriptions](./context/profile-subscriptions.schema.md) – `https://ns.adobe.com/xdm/context/profile-subscriptions` (Experimental)
+* [Profile test details](./context/profile-test-profile.schema.md) – `https://ns.adobe.com/xdm/context/profile-test-profile` (Experimental)
+* [Profile work details](./context/profile-work-details.schema.md) – `https://ns.adobe.com/xdm/context/profile-work-details` (Experimental)
+* [Push notification token](./context/pushnotificationtoken.schema.md) – `https://ns.adobe.com/xdm/context/pushnotificationtoken` (Stabilizing)
 * [Search](./context/search.schema.md) – `https://ns.adobe.com/xdm/context/search` (Stabilizing)
-* [Segment Definition](./context/segmentdefinition.schema.md) – `https://ns.adobe.com/xdm/context/segmentdefinition` (Experimental)
-* [Segment Expression](./context/segmentdefinition-expression.schema.md) – `https://ns.adobe.com/xdm/context/segmentdefinition-expression` (Experimental)
-* [Segment Identity](./context/segmentidentity.schema.md) – `https://ns.adobe.com/xdm/context/segmentidentity` (Experimental)
-* [Segment Membership](./context/segmentmembership.schema.md) – `https://ns.adobe.com/xdm/context/segmentmembership` (Experimental)
-* [Segment Membership Item](./context/segmentmembershipitem.schema.md) – `https://ns.adobe.com/xdm/context/segmentmembershipitem` (Experimental)
+* [Segment definition](./context/segmentdefinition.schema.md) – `https://ns.adobe.com/xdm/context/segmentdefinition` (Experimental)
+* [Segment expression](./context/segmentdefinition-expression.schema.md) – `https://ns.adobe.com/xdm/context/segmentdefinition-expression` (Experimental)
+* [Segment identity](./context/segmentidentity.schema.md) – `https://ns.adobe.com/xdm/context/segmentidentity` (Experimental)
+* [Segment membership](./context/segmentmembership.schema.md) – `https://ns.adobe.com/xdm/context/segmentmembership` (Experimental)
+* [Segment membership item](./context/segmentmembershipitem.schema.md) – `https://ns.adobe.com/xdm/context/segmentmembershipitem` (Experimental)
 * [Subscription](./context/subscription.schema.md) – `https://ns.adobe.com/xdm/context/subscription` (Experimental)
-* [Timed Media Chapter Asset Reference](./context/media-timed-chapter-asset-reference.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-chapter-asset-reference` (Experimental)
-* [Timed Media Chapter Information](./context/media-timed-chapter.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-chapter` (Experimental)
-* [Timed Media Chapter View Details](./context/media-timed-chapter-view-details.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-chapter-view-details` (Experimental)
-* [Timed Media Information](./context/media-timed.schema.md) – `https://ns.adobe.com/xdm/context/media-timed` (Experimental)
-* [Timed Media Primary Asset Reference](./context/media-timed-asset-reference.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-asset-reference` (Experimental)
-* [Timed Media Quality of Experience](./context/media-timed-qoe.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-qoe` (Experimental)
-* [Web Information](./context/webinfo.schema.md) – `https://ns.adobe.com/xdm/context/webinfo` (Stabilizing)
-* [Web Interaction](./context/webinteraction.schema.md) – `https://ns.adobe.com/xdm/context/webinteraction` (Stabilizing)
-* [Web Page Details](./context/webpagedetails.schema.md) – `https://ns.adobe.com/xdm/context/webpagedetails` (Stabilizing)
-* [Web Referrer](./context/webreferrer.schema.md) – `https://ns.adobe.com/xdm/context/webreferrer` (Stabilizing)
+* [Timed media chapter asset reference](./context/media-timed-chapter-asset-reference.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-chapter-asset-reference` (Experimental)
+* [Timed media chapter information](./context/media-timed-chapter.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-chapter` (Experimental)
+* [Timed media chapter view details](./context/media-timed-chapter-view-details.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-chapter-view-details` (Experimental)
+* [Timed media information](./context/media-timed.schema.md) – `https://ns.adobe.com/xdm/context/media-timed` (Experimental)
+* [Timed media primary asset reference](./context/media-timed-asset-reference.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-asset-reference` (Experimental)
+* [Timed media quality of experience](./context/media-timed-qoe.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-qoe` (Experimental)
+* [Web information](./context/webinfo.schema.md) – `https://ns.adobe.com/xdm/context/webinfo` (Stabilizing)
+* [Web interaction](./context/webinteraction.schema.md) – `https://ns.adobe.com/xdm/context/webinteraction` (Stabilizing)
+* [Web page details](./context/webpagedetails.schema.md) – `https://ns.adobe.com/xdm/context/webpagedetails` (Stabilizing)
+* [Web referrer](./context/webreferrer.schema.md) – `https://ns.adobe.com/xdm/context/webreferrer` (Stabilizing)
 * [XDM ExperienceEvent](./context/experienceevent.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent` (Stabilizing)
+* [XDM Graph Edge](./context/graph-edge.schema.md) – `https://ns.adobe.com/xdm/context/graph-edge` (Experimental)
+* [XDM Graph Node/Vertex Schema](./context/graph-node.schema.md) – `https://ns.adobe.com/xdm/context/graph-node` (Experimental)
+* [XDM Graph Schema](./context/graph.schema.md) – `https://ns.adobe.com/xdm/context/graph` (Experimental)
+* [XDM Graphs](./context/graphs.schema.md) – `https://ns.adobe.com/xdm/context/graphs` (Experimental)
 * [XDM Individual Profile](./context/profile.schema.md) – `https://ns.adobe.com/xdm/context/profile` (Experimental)
 
 ## /content/repository-policies/
@@ -240,15 +244,15 @@
 * [Storage Quota](./content/repository-policies/quota.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/quota` (Experimental)
 * [Versioning](./content/repository-policies/versioning.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/versioning` (Experimental)
 
-## /common/notifications/
-
-* [Customer Data Ingestion Notifications Event](./common/notifications/ingestion.schema.md) – `https://ns.adobe.com/xdm/common/notifications/ingestion` (Stabilizing)
-
 ## /common/descriptors/
 
 * [Item Selector](./common/descriptors/itemselector.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/itemselector` (Experimental)
 * [Relationship Descriptor](./common/descriptors/relationshipdescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/relationshipdescriptor` (Stabilizing)
 * [Schema Descriptor](./common/descriptors/schemadescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/schemadescriptor` (Stabilizing)
+
+## /common/notifications/
+
+* [Customer Data Ingestion Notifications Event](./common/notifications/ingestion.schema.md) – `https://ns.adobe.com/xdm/common/notifications/ingestion` (Stabilizing)
 
 ## /common/event/
 
@@ -259,29 +263,6 @@
 * [Rejected Event](./common/event/rejected.schema.md) – `https://ns.adobe.com/xdm/common/event/rejected` (Experimental)
 * [Unpublished Event](./common/event/unpublished.schema.md) – `https://ns.adobe.com/xdm/common/event/unpublished` (Experimental)
 * [Updated Event](./common/event/updated.schema.md) – `https://ns.adobe.com/xdm/common/event/updated` (Experimental)
-
-## /external/iptc/
-
-* [Creator](./external/iptc/creator.schema.md) – `http://www.iptc.org/creator` (Experimental)
-* [Episode](./external/iptc/episode.schema.md) – `http://www.iptc.org/season` (Experimental)
-* [Rating](./external/iptc/rating.schema.md) – `http://www.iptc.org/rating` (Experimental)
-* [Season](./external/iptc/season.schema.md) – `http://www.iptc.org/episode` (Experimental)
-* [Series](./external/iptc/series.schema.md) – `http://www.iptc.org/series` (Experimental)
-
-## /external/hal/
-
-* [HAL Link](./external/hal/hal-link.schema.md) – `https://ns.adobe.com/xdm/external/hal/link` (Experimental)
-* [HAL Resource](./external/hal/hal.schema.md) – `https://ns.adobe.com/xdm/external/hal/resource` (Experimental)
-
-## /external/repo/
-
-* [Access Control Entry](./external/repo/accesscontrolentry.schema.md) – `https://ns.adobe.com/xdm/external/repo/accesscontrolentry` (Experimental)
-* [Access Control Policy](./external/repo/accesscontrolpolicy.schema.md) – `https://ns.adobe.com/xdm/external/repo/accesscontrolpolicy` (Experimental)
-* [Asset](./external/repo/asset.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/asset` (Experimental)
-* [Common Properties](./external/repo/common.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0` (Experimental)
-* [Directory](./external/repo/directory.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/directory` (Experimental)
-* [Effective Privileges](./external/repo/effectiveprivileges.schema.md) – `https://ns.adobe.com/xdm/external/repo/effectiveprivileges` (Experimental)
-* [Sub-Directory](./external/repo/sub-directory.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/sub-directory` (Experimental)
 
 ## /external/activity-streams-2/
 
@@ -297,19 +278,43 @@
 * [Object](./external/activity-streams-2/object.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/object` (Experimental)
 * [RDF Language Tagged String](./external/activity-streams-2/rdf-langstring.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langstring` (Experimental)
 
+## /external/hal/
+
+* [HAL Link](./external/hal/hal-link.schema.md) – `https://ns.adobe.com/xdm/external/hal/link` (Experimental)
+* [HAL Resource](./external/hal/hal.schema.md) – `https://ns.adobe.com/xdm/external/hal/resource` (Experimental)
+
+## /external/iptc/
+
+* [Creator](./external/iptc/creator.schema.md) – `http://www.iptc.org/creator` (Experimental)
+* [Episode](./external/iptc/episode.schema.md) – `http://www.iptc.org/season` (Experimental)
+* [Rating](./external/iptc/rating.schema.md) – `http://www.iptc.org/rating` (Experimental)
+* [Season](./external/iptc/season.schema.md) – `http://www.iptc.org/episode` (Experimental)
+* [Series](./external/iptc/series.schema.md) – `http://www.iptc.org/series` (Experimental)
+
 ## /external/schema/
 
 * [Geo Circle](./external/schema/geocircle.schema.md) – `http://schema.org/GeoCircle` (Experimental)
 * [Geo Coordinates](./external/schema/geocoordinates.schema.md) – `http://schema.org/GeoCoordinates` (Experimental)
 * [Geo Shape](./external/schema/geoshape.schema.md) – `http://schema.org/GeoShape` (Experimental)
 
+## /external/repo/
+
+* [Access Control Entry](./external/repo/accesscontrolentry.schema.md) – `https://ns.adobe.com/xdm/external/repo/accesscontrolentry` (Experimental)
+* [Access Control Policy](./external/repo/accesscontrolpolicy.schema.md) – `https://ns.adobe.com/xdm/external/repo/accesscontrolpolicy` (Experimental)
+* [Asset](./external/repo/asset.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/asset` (Experimental)
+* [Common Properties](./external/repo/common.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0` (Experimental)
+* [Directory](./external/repo/directory.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/directory` (Experimental)
+* [Effective Privileges](./external/repo/effectiveprivileges.schema.md) – `https://ns.adobe.com/xdm/external/repo/effectiveprivileges` (Experimental)
+* [Sub-Directory](./external/repo/sub-directory.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/sub-directory` (Experimental)
+
 ## /common/descriptors/display/
 
 * [Friendly Name Descriptor](./common/descriptors/display/alternateDisplayInfo.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/alternateDisplayInfo` (Stabilizing)
 
-## /common/descriptors/search/
+## /common/descriptors/identity/
 
-* [Search Descriptor](./common/descriptors/search/searchdescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/searchdescriptor` (Experimental)
+* [Identity Descriptor](./common/descriptors/identity/descriptorIdentity.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/descriptorIdentity` (Stabilizing)
+* [Identity Reference Descriptor](./common/descriptors/identity/descriptorReferenceIdentity.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/descriptorReferenceIdentity` (Stabilizing)
 
 ## /common/descriptors/relationship/
 
@@ -318,8 +323,7 @@
 * [One to Many Relationship Descriptor](./common/descriptors/relationship/descriptorOneToMany.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/descriptorOneToMany` (Stabilizing)
 * [One to One Relationship Descriptor](./common/descriptors/relationship/descriptorOneToOne.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/descriptorOneToOne` (Stabilizing)
 
-## /common/descriptors/identity/
+## /common/descriptors/search/
 
-* [Identity Descriptor](./common/descriptors/identity/descriptorIdentity.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/descriptorIdentity` (Stabilizing)
-* [Identity Reference Descriptor](./common/descriptors/identity/descriptorReferenceIdentity.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/descriptorReferenceIdentity` (Stabilizing)
+* [Search Descriptor](./common/descriptors/search/searchdescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/searchdescriptor` (Experimental)
 

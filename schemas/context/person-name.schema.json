@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/person-name",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Person Name",
+  "title": "Person name",
   "type": "object",
   "meta:extensible": true,
   "description": "Full name of a person.",
@@ -15,31 +15,31 @@
     "personname": {
       "properties": {
         "xdm:firstName": {
-          "title": "First Name",
+          "title": "First name",
           "type": "string",
           "description":
-            "The first segment of the name in the writing order most commonly accepted in the language of the name. In many cultures this is the preferred personal or given name.\n\nThe `firstName` and `lastName` properties have been introduced to maintain compatibility with existing systems that model names in a simplified, non-semantic, and non-internationalizable way. Using `xdm:fullName` is always preferable."
+            "The first segment of the name in the writing order most commonly accepted in the language of the name. In many cultures this is the preferred personal or given name. The `firstName` and `lastName` properties have been introduced to maintain compatibility with existing systems that model names in a simplified, non-semantic, and non-internationalizable way. Using `xdm:fullName` is always preferable."
         },
         "xdm:lastName": {
-          "title": "Last Name",
+          "title": "Last name",
           "type": "string",
           "description":
-            "The last segment of the name in the writing order most commonly accepted in the language of the name. In many cultures this is the inherited family name, surname, patronymic, or matronymic name.\n\nThe `firstName` and `lastName` properties have been introduced to maintain compatibility with existing systems that model names in a simplified, non-semantic, and non-internationalizable way. Using `xdm:fullName` is always preferable."
+            "The last segment of the name in the writing order most commonly accepted in the language of the name. In many cultures this is the inherited family name, surname, patronymic, or matronymic name. The `firstName` and `lastName` properties have been introduced to maintain compatibility with existing systems that model names in a simplified, non-semantic, and non-internationalizable way. Using `xdm:fullName` is always preferable."
         },
         "xdm:middleName": {
-          "title": "Middle Name",
+          "title": "Middle name",
           "type": "string",
           "description":
             "Middle, alternative, or additional names supplied between the first name and last name."
         },
         "xdm:courtesyTitle": {
-          "title": "Courtesy Title",
+          "title": "Courtesy title",
           "type": "string",
           "description":
-            "Normally an abbreviation of a persons *title*, *honorific*, or *salutation*.\nThe `courtesyTitle` is used in front of full or last name in opening texts.\ne.g Mr. Miss. or Dr J. Smith.\n"
+            "Normally an abbreviation of a persons title, honorific, or salutation. The `courtesyTitle` is used in front of full or last name in opening texts. For example, Mr. Miss. or Dr."
         },
         "xdm:fullName": {
-          "title": "Full Name",
+          "title": "Full name",
           "type": "string",
           "description":
             "The full name of the person, in writing order most commonly accepted in the language of the name."

@@ -7,34 +7,34 @@
     ],
     "$id": "https://ns.adobe.com/xdm/common/auditable",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Audit Trail",
+    "title": "Audit trail",
     "type": "object",
     "meta:abstract": true,
-    "description": "Inclusion of this schema indicates that the data record is auditable, i.e. it can be determined when the record has last been modified and by whom.",
+    "description": "The audit trail schema indicates a data record is auditable. For example, who and when the record was last modified.",
     "definitions": {
         "auditlog": {
             "properties": {
                 "xdm:repositoryCreatedBy": {
-                    "title": "Created by User Identifier",
+                    "title": "Created by user identifier",
                     "type": "string",
-                    "description": "User ID who has created the entity."
+                    "description": "User ID of who created the record."
                 },
                 "xdm:repositoryLastModifiedBy": {
-                    "title": "Modified by User Identifier",
+                    "title": "Modified by user identifier",
                     "type": "string",
-                    "description": "User ID who last modified the entity. At creation time, `modifiedByUser` is set as `createdByUser`."
+                    "description": "User ID of who last modified the record. At creation time, `modifiedByUser` is set as `createdByUser`."
                 },
                 "xdm:createdByBatchID": {
-                    "title": "Created by Batch Identifier",
+                    "title": "Created by batch identifier",
                     "type": "string",
                     "format": "uri-reference",
-                    "description": "The dataset files in Catalog Services which has been originating the creation of the entity."
+                    "description": "The dataset files in Catalog which has been originating the creation of the record."
                 },
                 "xdm:modifiedByBatchID": {
-                    "title": "Modified by Batch Identifier",
+                    "title": "Modified by batch identifier",
                     "type": "string",
                     "format": "uri-reference",
-                    "description": "The last dataset files in Catalog Services which has modified the entity. At creation time, `modifiedByBatchID` is set as `createdByBatchID`."
+                    "description": "The last dataset files in Catalog which has modified the record. At creation time, `modifiedByBatchID` is set as `createdByBatchID`."
                 }
             }
         }

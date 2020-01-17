@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/common/identity
 ```
 
-This model represents an authenticated IMS User. The IMS user principal is a user account under Adobe's identity management system (IMS).
+This model represents an authenticated IMS user. The IMS user principal is a user account under Adobe's identity management system (IMS).
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -17,9 +17,7 @@ This model represents an authenticated IMS User. The IMS user principal is a use
 {
   "xdm:identityProvider": "ims",
   "xdm:id": "C0B648DE57D701277F000101@AdobeID",
-  "xdm:type": "https://ns.adobe.com/xdm/common/user",
-  "xdm:displayName": "The users name",
-  "xdm:profileImage": "https://mir-s3-cdn-cf.behance.net/user/276/b9c11633104347.57a9c2152b78e.jpg"
+  "xdm:type": "https://ns.adobe.com/xdm/common/user"
 }
 ```
 
@@ -27,7 +25,9 @@ This model represents an authenticated IMS User. The IMS user principal is a use
 {
   "xdm:identityProvider": "ims",
   "xdm:id": "C0B648DE57D701277F000101@AdobeID",
-  "xdm:type": "https://ns.adobe.com/xdm/common/user"
+  "xdm:type": "https://ns.adobe.com/xdm/common/user",
+  "xdm:displayName": "The users name",
+  "xdm:profileImage": "https://mir-s3-cdn-cf.behance.net/user/276/b9c11633104347.57a9c2152b78e.jpg"
 }
 ```
 

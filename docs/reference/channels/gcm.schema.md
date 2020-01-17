@@ -13,7 +13,7 @@ Use the GCM channel to send push notification messages to the Firebase Cloud Mes
 ## Schema Hierarchy
 
 * Google Cloud Messaging (GCM) Channel `https://ns.adobe.com/xdm/channels/gcm`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
 

@@ -14,7 +14,7 @@ Customer notification events for data ingestion processes.
 
 * Customer Data Ingestion Notifications Event `https://ns.adobe.com/xdm/common/notifications/ingestion`
   * [Record Schema](../../data/record.schema.md) `https://ns.adobe.com/xdm/data/record`
-  * [Extensibility Base Schema](../extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility base schema](../extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
 ## Customer Data Ingestion Notifications Event Example

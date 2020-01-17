@@ -13,7 +13,7 @@ Windows Push is a notification service developed by Microsoft for all devices ru
 ## Schema Hierarchy
 
 * Windows Push Notification Service (WNS) Channel `https://ns.adobe.com/xdm/channels/wns`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
 

@@ -7,7 +7,7 @@
     "aem_user": "packageUser",
     "aem_password": "override me securely",
     "markdown-importer-version": "0.0.4",
-    "schemas": 262
+    "schemas": 266
   },
   "scripts": {
     "clean": "rm -rf docs/reference",

@@ -1,5 +1,5 @@
 
-# Segment Definition Schema
+# Segment definition Schema
 
 ```
 https://ns.adobe.com/xdm/context/segmentdefinition
@@ -12,15 +12,15 @@ This is the base class for a segment definition which includes required fields l
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/segmentdefinition.schema.json](context/segmentdefinition.schema.json) |
 ## Schema Hierarchy
 
-* Segment Definition `https://ns.adobe.com/xdm/context/segmentdefinition`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* Segment definition `https://ns.adobe.com/xdm/context/segmentdefinition`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [IdentityMap](identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
-  * [Audit Trail](../common/auditable.schema.md) `https://ns.adobe.com/xdm/common/auditable`
+  * [Audit trail](../common/auditable.schema.md) `https://ns.adobe.com/xdm/common/auditable`
   * [Record Schema](../data/record.schema.md) `https://ns.adobe.com/xdm/data/record`
-  * [Segment Identity](segmentidentity.schema.md) `https://ns.adobe.com/xdm/context/segmentidentity`
+  * [Segment identity](segmentidentity.schema.md) `https://ns.adobe.com/xdm/context/segmentidentity`
 
 
-## Segment Definition Example
+## Segment definition Example
 ```json
 {
   "xdm:identityMap": {
@@ -39,23 +39,23 @@ This is the base class for a segment definition which includes required fields l
 }
 ```
 
-# Segment Definition Properties
+# Segment definition Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Record Schema](../data/record.schema.md#id) |
-| [repo:createDate](#repocreatedate) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#repocreatedate) |
-| [repo:modifyDate](#repomodifydate) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#repomodifydate) |
-| [xdm:createdByBatchID](#xdmcreatedbybatchid) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmcreatedbybatchid) |
-| [xdm:description](#xdmdescription) | `string` | Optional | Segment Definition (this schema) |
+| [repo:createDate](#repocreatedate) | `string` | Optional | [Audit trail](../common/auditable.schema.md#repocreatedate) |
+| [repo:modifyDate](#repomodifydate) | `string` | Optional | [Audit trail](../common/auditable.schema.md#repomodifydate) |
+| [xdm:createdByBatchID](#xdmcreatedbybatchid) | `string` | Optional | [Audit trail](../common/auditable.schema.md#xdmcreatedbybatchid) |
+| [xdm:description](#xdmdescription) | `string` | Optional | Segment definition (this schema) |
 | [xdm:identityMap](#xdmidentitymap) | `object` | **Required** | [IdentityMap](identitymap.schema.md#xdmidentitymap) |
-| [xdm:modifiedByBatchID](#xdmmodifiedbybatchid) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmmodifiedbybatchid) |
-| [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmrepositorycreatedby) |
-| [xdm:repositoryLastModifiedBy](#xdmrepositorylastmodifiedby) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmrepositorylastmodifiedby) |
-| [xdm:segmentIdentity](#xdmsegmentidentity) | Segment Identity | Optional | Segment Definition (this schema) |
-| [xdm:segmentName](#xdmsegmentname) | `string` | **Required** | Segment Definition (this schema) |
-| [xdm:segmentStatus](#xdmsegmentstatus) | `enum` | Optional | Segment Definition (this schema) |
-| [xdm:version](#xdmversion) | `string` | Optional | Segment Definition (this schema) |
+| [xdm:modifiedByBatchID](#xdmmodifiedbybatchid) | `string` | Optional | [Audit trail](../common/auditable.schema.md#xdmmodifiedbybatchid) |
+| [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | Optional | [Audit trail](../common/auditable.schema.md#xdmrepositorycreatedby) |
+| [xdm:repositoryLastModifiedBy](#xdmrepositorylastmodifiedby) | `string` | Optional | [Audit trail](../common/auditable.schema.md#xdmrepositorylastmodifiedby) |
+| [xdm:segmentIdentity](#xdmsegmentidentity) | Segment identity | Optional | Segment definition (this schema) |
+| [xdm:segmentName](#xdmsegmentname) | `string` | **Required** | Segment definition (this schema) |
+| [xdm:segmentStatus](#xdmsegmentstatus) | `enum` | Optional | Segment definition (this schema) |
+| [xdm:version](#xdmversion) | `string` | Optional | Segment definition (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -86,7 +86,7 @@ The server date and time when the resource was created in the repository, such a
 `repo:createDate`
 * is optional
 * type: `string`
-* defined in [Audit Trail](../common/auditable.schema.md#repocreatedate)
+* defined in [Audit trail](../common/auditable.schema.md#repocreatedate)
 
 ### repo:createDate Type
 
@@ -111,7 +111,7 @@ The server date and time when the resource was last modified in the repository, 
 `repo:modifyDate`
 * is optional
 * type: `string`
-* defined in [Audit Trail](../common/auditable.schema.md#repomodifydate)
+* defined in [Audit trail](../common/auditable.schema.md#repomodifydate)
 
 ### repo:modifyDate Type
 
@@ -130,14 +130,14 @@ The server date and time when the resource was last modified in the repository, 
 
 
 ## xdm:createdByBatchID
-### Created by Batch Identifier
+### Created by batch identifier
 
-The dataset files in Catalog Services which has been originating the creation of the entity.
+The dataset files in Catalog which has been originating the creation of the record.
 
 `xdm:createdByBatchID`
 * is optional
 * type: `string`
-* defined in [Audit Trail](../common/auditable.schema.md#xdmcreatedbybatchid)
+* defined in [Audit trail](../common/auditable.schema.md#xdmcreatedbybatchid)
 
 ### xdm:createdByBatchID Type
 
@@ -153,7 +153,7 @@ The dataset files in Catalog Services which has been originating the creation of
 ## xdm:description
 ### Segment description
 
-Description of the segment
+Description of the segment.
 
 `xdm:description`
 * is optional
@@ -193,14 +193,14 @@ Description of the segment
 
 
 ## xdm:modifiedByBatchID
-### Modified by Batch Identifier
+### Modified by batch identifier
 
-The last dataset files in Catalog Services which has modified the entity. At creation time, `modifiedByBatchID` is set as `createdByBatchID`.
+The last dataset files in Catalog which has modified the record. At creation time, `modifiedByBatchID` is set as `createdByBatchID`.
 
 `xdm:modifiedByBatchID`
 * is optional
 * type: `string`
-* defined in [Audit Trail](../common/auditable.schema.md#xdmmodifiedbybatchid)
+* defined in [Audit trail](../common/auditable.schema.md#xdmmodifiedbybatchid)
 
 ### xdm:modifiedByBatchID Type
 
@@ -214,14 +214,14 @@ The last dataset files in Catalog Services which has modified the entity. At cre
 
 
 ## xdm:repositoryCreatedBy
-### Created by User Identifier
+### Created by user identifier
 
-User ID who has created the entity.
+User ID of who created the record.
 
 `xdm:repositoryCreatedBy`
 * is optional
 * type: `string`
-* defined in [Audit Trail](../common/auditable.schema.md#xdmrepositorycreatedby)
+* defined in [Audit trail](../common/auditable.schema.md#xdmrepositorycreatedby)
 
 ### xdm:repositoryCreatedBy Type
 
@@ -234,14 +234,14 @@ User ID who has created the entity.
 
 
 ## xdm:repositoryLastModifiedBy
-### Modified by User Identifier
+### Modified by user identifier
 
-User ID who last modified the entity. At creation time, `modifiedByUser` is set as `createdByUser`.
+User ID of who last modified the record. At creation time, `modifiedByUser` is set as `createdByUser`.
 
 `xdm:repositoryLastModifiedBy`
 * is optional
 * type: `string`
-* defined in [Audit Trail](../common/auditable.schema.md#xdmrepositorylastmodifiedby)
+* defined in [Audit trail](../common/auditable.schema.md#xdmrepositorylastmodifiedby)
 
 ### xdm:repositoryLastModifiedBy Type
 
@@ -254,19 +254,19 @@ User ID who last modified the entity. At creation time, `modifiedByUser` is set 
 
 
 ## xdm:segmentIdentity
-### Segment Identity
+### Segment identity
 
-Identity of the segment
+Identity of the segment.
 
 `xdm:segmentIdentity`
 * is optional
-* type: Segment Identity
+* type: Segment identity
 * defined in this schema
 
 ### xdm:segmentIdentity Type
 
 
-* [Segment Identity](segmentidentity.schema.md) – `https://ns.adobe.com/xdm/context/segmentidentity`
+* [Segment identity](segmentidentity.schema.md) – `https://ns.adobe.com/xdm/context/segmentidentity`
 
 
 
@@ -275,7 +275,7 @@ Identity of the segment
 ## xdm:segmentName
 ### Segment name
 
-Name of the segment
+Name of the segment.
 
 `xdm:segmentName`
 * is **required**
@@ -295,7 +295,7 @@ Name of the segment
 ## xdm:segmentStatus
 ### Segment status
 
-Current status of segment from external system normalized to ACTIVE/INACTIVE
+Current status of segment from external system normalized to active or inactive.
 
 `xdm:segmentStatus`
 * is optional
@@ -317,7 +317,7 @@ The value of this property **must** be equal to one of the [known values below](
 ## xdm:version
 ### Segment version
 
-Version of the segment
+Version of the segment.
 
 `xdm:version`
 * is optional

@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/optinout
 ```
 
-Describes a users' communication preferences by channel. For each channel individually, which is a property of this object, a user's preference (opt-in, opt-out, pending) can be recorded. In addition, a global override opt-out is possible. Each property of this schema must be a valid and known URI for an XDM Channel.
+Describes user communication preferences by channel. For each channel individually, which is a property of this object, a user's preference such as opt-in, opt-out, or pending can be recorded. In addition, a global override opt-out is possible. Each property of this schema must be a valid and known URI for an XDM Channel.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -13,7 +13,7 @@ Describes a users' communication preferences by channel. For each channel indivi
 ## Schema Hierarchy
 
 * OptInOut `https://ns.adobe.com/xdm/context/optinout`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
 ## OptInOut Example
@@ -58,9 +58,9 @@ Describes a users' communication preferences by channel. For each channel indivi
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## https://ns.adobe.com/xdm/channels/adm
-### ADM
+### Amazon Device Messaging
 
-Amazon Device Messaging channel OptInOut.
+Amazon Device Messaging (ADM) channel OptInOut.
 
 `https://ns.adobe.com/xdm/channels/adm`
 * is optional
@@ -73,10 +73,10 @@ The value of this property **must** be equal to one of the [known values below](
 ### https://ns.adobe.com/xdm/channels/adm Known Values
 | Value | Description |
 |-------|-------------|
-| `not_provided` | Not Provided |
-| `pending` | Pending Verification |
-| `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel. |
+| `not_provided` | Not provided |
+| `pending` | Pending verification |
+| `in` | Opt-in: the user explicitly consents to receiving messages. |
+| `out` | Opt-out: the user declines to receive any messages on this channel. |
 
 
 
@@ -84,7 +84,7 @@ The value of this property **must** be equal to one of the [known values below](
 ## https://ns.adobe.com/xdm/channels/agency
 ### Agency
 
-External Agency channel OptInOut.
+External agency channel OptInOut.
 
 `https://ns.adobe.com/xdm/channels/agency`
 * is optional
@@ -97,18 +97,18 @@ The value of this property **must** be equal to one of the [known values below](
 ### https://ns.adobe.com/xdm/channels/agency Known Values
 | Value | Description |
 |-------|-------------|
-| `not_provided` | Not Provided |
-| `pending` | Pending Verification |
-| `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel. |
+| `not_provided` | Not provided |
+| `pending` | Pending verification |
+| `in` | Opt-in: the user explicitly consents to receiving messages. |
+| `out` | Opt-out: the user declines to receive any messages on this channel. |
 
 
 
 
 ## https://ns.adobe.com/xdm/channels/apns
-### APNS
+### Apple Push Notification Service
 
-Apple Push Notification Service channel OptInOut.
+Apple Push Notification Service (APNS) channel OptInOut.
 
 `https://ns.adobe.com/xdm/channels/apns`
 * is optional
@@ -121,10 +121,10 @@ The value of this property **must** be equal to one of the [known values below](
 ### https://ns.adobe.com/xdm/channels/apns Known Values
 | Value | Description |
 |-------|-------------|
-| `not_provided` | Not Provided |
-| `pending` | Pending Verification |
-| `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel. |
+| `not_provided` | Not provided |
+| `pending` | Pending verification |
+| `in` | Opt-in: the user explicitly consents to receiving messages. |
+| `out` | Opt-out: the user declines to receive any messages on this channel. |
 
 
 
@@ -145,16 +145,16 @@ The value of this property **must** be equal to one of the [known values below](
 ### https://ns.adobe.com/xdm/channels/application Known Values
 | Value | Description |
 |-------|-------------|
-| `not_provided` | Not Provided |
-| `pending` | Pending Verification |
-| `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel. |
+| `not_provided` | Not provided |
+| `pending` | Pending verification |
+| `in` | Opt-in: the user explicitly consents to receiving messages. |
+| `out` | Opt-out: the user declines to receive any messages on this channel. |
 
 
 
 
 ## https://ns.adobe.com/xdm/channels/baidu
-### Baidu
+### Baidu Cloud Push Service
 
 Baidu Cloud Push Service channel OptInOut.
 
@@ -169,10 +169,10 @@ The value of this property **must** be equal to one of the [known values below](
 ### https://ns.adobe.com/xdm/channels/baidu Known Values
 | Value | Description |
 |-------|-------------|
-| `not_provided` | Not Provided |
-| `pending` | Pending Verification |
-| `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel. |
+| `not_provided` | Not provided |
+| `pending` | Pending verification |
+| `in` | Opt-in: the user explicitly consents to receiving messages. |
+| `out` | Opt-out: the user declines to receive any messages on this channel. |
 
 
 
@@ -193,16 +193,16 @@ The value of this property **must** be equal to one of the [known values below](
 ### https://ns.adobe.com/xdm/channels/channel Known Values
 | Value | Description |
 |-------|-------------|
-| `not_provided` | Not Provided |
-| `pending` | Pending Verification |
-| `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel. |
+| `not_provided` | Not provided |
+| `pending` | Pending verification |
+| `in` | Opt-in: the user explicitly consents to receiving messages. |
+| `out` | Opt-out: the user declines to receive any messages on this channel. |
 
 
 
 
 ## https://ns.adobe.com/xdm/channels/direct-mail
-### Direct Mail
+### Direct mail
 
 Mail delivered by a postal service channel OptInOut.
 
@@ -217,18 +217,18 @@ The value of this property **must** be equal to one of the [known values below](
 ### https://ns.adobe.com/xdm/channels/direct-mail Known Values
 | Value | Description |
 |-------|-------------|
-| `not_provided` | Not Provided |
-| `pending` | Pending Verification |
-| `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel. |
+| `not_provided` | Not provided |
+| `pending` | Pending verification |
+| `in` | Opt-in: the user explicitly consents to receiving messages. |
+| `out` | Opt-out: the user declines to receive any messages on this channel. |
 
 
 
 
 ## https://ns.adobe.com/xdm/channels/email
-### E-Mail
+### Email
 
-E-Mail messages, delivered via SMTP to list subscribers channel OptInOut.
+Email messages, delivered via SMTP to list subscribers channel OptInOut.
 
 `https://ns.adobe.com/xdm/channels/email`
 * is optional
@@ -241,18 +241,18 @@ The value of this property **must** be equal to one of the [known values below](
 ### https://ns.adobe.com/xdm/channels/email Known Values
 | Value | Description |
 |-------|-------------|
-| `not_provided` | Not Provided |
-| `pending` | Pending Verification |
-| `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel. |
+| `not_provided` | Not provided |
+| `pending` | Pending verification |
+| `in` | Opt-in: the user explicitly consents to receiving messages. |
+| `out` | Opt-out: the user declines to receive any messages on this channel. |
 
 
 
 
 ## https://ns.adobe.com/xdm/channels/facebook-feed
-### Facebook News Feed
+### Facebook news feed
 
-The Facebook News Feed channel OptInOut.
+The Facebook news feed channel OptInOut.
 
 `https://ns.adobe.com/xdm/channels/facebook-feed`
 * is optional
@@ -265,10 +265,10 @@ The value of this property **must** be equal to one of the [known values below](
 ### https://ns.adobe.com/xdm/channels/facebook-feed Known Values
 | Value | Description |
 |-------|-------------|
-| `not_provided` | Not Provided |
-| `pending` | Pending Verification |
-| `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel. |
+| `not_provided` | Not provided |
+| `pending` | Pending verification |
+| `in` | Opt-in: the user explicitly consents to receiving messages. |
+| `out` | Opt-out: the user declines to receive any messages on this channel. |
 
 
 
@@ -276,7 +276,7 @@ The value of this property **must** be equal to one of the [known values below](
 ## https://ns.adobe.com/xdm/channels/fax
 ### Fax
 
-Telefacsimile channel OptInOut.
+Fax or telefacsimile channel OptInOut.
 
 `https://ns.adobe.com/xdm/channels/fax`
 * is optional
@@ -289,18 +289,18 @@ The value of this property **must** be equal to one of the [known values below](
 ### https://ns.adobe.com/xdm/channels/fax Known Values
 | Value | Description |
 |-------|-------------|
-| `not_provided` | Not Provided |
-| `pending` | Pending Verification |
-| `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel. |
+| `not_provided` | Not provided |
+| `pending` | Pending verification |
+| `in` | Opt-in: the user explicitly consents to receiving messages. |
+| `out` | Opt-out: the user declines to receive any messages on this channel. |
 
 
 
 
 ## https://ns.adobe.com/xdm/channels/gcm
-### GCM
+### Google Cloud Messaging
 
-Google Cloud Messaging channel OptInOut.
+Google Cloud Messaging (GCM) channel OptInOut.
 
 `https://ns.adobe.com/xdm/channels/gcm`
 * is optional
@@ -313,18 +313,18 @@ The value of this property **must** be equal to one of the [known values below](
 ### https://ns.adobe.com/xdm/channels/gcm Known Values
 | Value | Description |
 |-------|-------------|
-| `not_provided` | Not Provided |
-| `pending` | Pending Verification |
-| `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel. |
+| `not_provided` | Not provided |
+| `pending` | Pending verification |
+| `in` | Opt-in: the user explicitly consents to receiving messages. |
+| `out` | Opt-out: the user declines to receive any messages on this channel. |
 
 
 
 
 ## https://ns.adobe.com/xdm/channels/line
-### LINE
+### Line Platform Notification
 
-Line Platform Notification channel OptInOut.
+Line Platform Notification (LINE) channel OptInOut.
 
 `https://ns.adobe.com/xdm/channels/line`
 * is optional
@@ -337,10 +337,10 @@ The value of this property **must** be equal to one of the [known values below](
 ### https://ns.adobe.com/xdm/channels/line Known Values
 | Value | Description |
 |-------|-------------|
-| `not_provided` | Not Provided |
-| `pending` | Pending Verification |
-| `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel. |
+| `not_provided` | Not provided |
+| `pending` | Pending verification |
+| `in` | Opt-in: the user explicitly consents to receiving messages. |
+| `out` | Opt-out: the user declines to receive any messages on this channel. |
 
 
 
@@ -361,18 +361,18 @@ The value of this property **must** be equal to one of the [known values below](
 ### https://ns.adobe.com/xdm/channels/mobile-app Known Values
 | Value | Description |
 |-------|-------------|
-| `not_provided` | Not Provided |
-| `pending` | Pending Verification |
-| `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel. |
+| `not_provided` | Not provided |
+| `pending` | Pending verification |
+| `in` | Opt-in: the user explicitly consents to receiving messages. |
+| `out` | Opt-out: the user declines to receive any messages on this channel. |
 
 
 
 
 ## https://ns.adobe.com/xdm/channels/mpns
-### MPNS
+### Microsoft Push Notification Service
 
-Microsoft Push Notification Service channel OptInOut.
+Microsoft Push Notification Service (MPNS) channel OptInOut.
 
 `https://ns.adobe.com/xdm/channels/mpns`
 * is optional
@@ -385,10 +385,10 @@ The value of this property **must** be equal to one of the [known values below](
 ### https://ns.adobe.com/xdm/channels/mpns Known Values
 | Value | Description |
 |-------|-------------|
-| `not_provided` | Not Provided |
-| `pending` | Pending Verification |
-| `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel. |
+| `not_provided` | Not provided |
+| `pending` | Pending verification |
+| `in` | Opt-in: the user explicitly consents to receiving messages. |
+| `out` | Opt-out: the user declines to receive any messages on this channel. |
 
 
 
@@ -409,10 +409,10 @@ The value of this property **must** be equal to one of the [known values below](
 ### https://ns.adobe.com/xdm/channels/phone Known Values
 | Value | Description |
 |-------|-------------|
-| `not_provided` | Not Provided |
-| `pending` | Pending Verification |
-| `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel. |
+| `not_provided` | Not provided |
+| `pending` | Pending verification |
+| `in` | Opt-in: the user explicitly consents to receiving messages. |
+| `out` | Opt-out: the user declines to receive any messages on this channel. |
 
 
 
@@ -433,18 +433,18 @@ The value of this property **must** be equal to one of the [known values below](
 ### https://ns.adobe.com/xdm/channels/sms Known Values
 | Value | Description |
 |-------|-------------|
-| `not_provided` | Not Provided |
-| `pending` | Pending Verification |
-| `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel. |
+| `not_provided` | Not provided |
+| `pending` | Pending verification |
+| `in` | Opt-in: the user explicitly consents to receiving messages. |
+| `out` | Opt-out: the user declines to receive any messages on this channel. |
 
 
 
 
 ## https://ns.adobe.com/xdm/channels/twitter-feed
-### Twitter Feed
+### Twitter feed
 
-Twitter Feed channel OptInOut.
+Twitter feed channel OptInOut.
 
 `https://ns.adobe.com/xdm/channels/twitter-feed`
 * is optional
@@ -457,10 +457,10 @@ The value of this property **must** be equal to one of the [known values below](
 ### https://ns.adobe.com/xdm/channels/twitter-feed Known Values
 | Value | Description |
 |-------|-------------|
-| `not_provided` | Not Provided |
-| `pending` | Pending Verification |
-| `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel. |
+| `not_provided` | Not provided |
+| `pending` | Pending verification |
+| `in` | Opt-in: the user explicitly consents to receiving messages. |
+| `out` | Opt-out: the user declines to receive any messages on this channel. |
 
 
 
@@ -481,10 +481,10 @@ The value of this property **must** be equal to one of the [known values below](
 ### https://ns.adobe.com/xdm/channels/web Known Values
 | Value | Description |
 |-------|-------------|
-| `not_provided` | Not Provided |
-| `pending` | Pending Verification |
-| `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel. |
+| `not_provided` | Not provided |
+| `pending` | Pending verification |
+| `in` | Opt-in: the user explicitly consents to receiving messages. |
+| `out` | Opt-out: the user declines to receive any messages on this channel. |
 
 
 
@@ -505,10 +505,10 @@ The value of this property **must** be equal to one of the [known values below](
 ### https://ns.adobe.com/xdm/channels/webpage Known Values
 | Value | Description |
 |-------|-------------|
-| `not_provided` | Not Provided |
-| `pending` | Pending Verification |
-| `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel. |
+| `not_provided` | Not provided |
+| `pending` | Pending verification |
+| `in` | Opt-in: the user explicitly consents to receiving messages. |
+| `out` | Opt-out: the user declines to receive any messages on this channel. |
 
 
 
@@ -529,18 +529,18 @@ The value of this property **must** be equal to one of the [known values below](
 ### https://ns.adobe.com/xdm/channels/wechat Known Values
 | Value | Description |
 |-------|-------------|
-| `not_provided` | Not Provided |
-| `pending` | Pending Verification |
-| `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel. |
+| `not_provided` | Not provided |
+| `pending` | Pending verification |
+| `in` | Opt-in: the user explicitly consents to receiving messages. |
+| `out` | Opt-out: the user declines to receive any messages on this channel. |
 
 
 
 
 ## https://ns.adobe.com/xdm/channels/wns
-### WNS
+### Windows Push Notification Service
 
-Windows Push Notification Service channel OptInOut.
+Windows Push Notification Service (WNS) channel OptInOut.
 
 `https://ns.adobe.com/xdm/channels/wns`
 * is optional
@@ -553,10 +553,10 @@ The value of this property **must** be equal to one of the [known values below](
 ### https://ns.adobe.com/xdm/channels/wns Known Values
 | Value | Description |
 |-------|-------------|
-| `not_provided` | Not Provided |
-| `pending` | Pending Verification |
-| `in` | Opt-In: the user explicitly consents to receiving messages. |
-| `out` | Opt-Out: the user declines to receive any messages on this channel. |
+| `not_provided` | Not provided |
+| `pending` | Pending verification |
+| `in` | Opt-in: the user explicitly consents to receiving messages. |
+| `out` | Opt-out: the user declines to receive any messages on this channel. |
 
 
 

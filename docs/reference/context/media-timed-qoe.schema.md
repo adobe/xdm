@@ -1,5 +1,5 @@
 
-# Timed Media Quality of Experience Schema
+# Timed media quality of experience Schema
 
 ```
 https://ns.adobe.com/xdm/context/media-timed-qoe
@@ -12,12 +12,12 @@ Timed media properties related to the content playback's quality of experience (
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/media-timed-qoe.schema.json](context/media-timed-qoe.schema.json) |
 ## Schema Hierarchy
 
-* Timed Media Quality of Experience `https://ns.adobe.com/xdm/context/media-timed-qoe`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* Timed media quality of experience `https://ns.adobe.com/xdm/context/media-timed-qoe`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Measure](../data/measure.schema.md) `https://ns.adobe.com/xdm/data/measure`
 
 
-## Timed Media Quality of Experience Example
+## Timed media quality of experience Example
 ```json
 {
   "xdm:errors": {
@@ -50,23 +50,23 @@ Timed media properties related to the content playback's quality of experience (
 }
 ```
 
-# Timed Media Quality of Experience Properties
+# Timed media quality of experience Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:bitrateAverage](#xdmbitrateaverage) | Measure | Optional | Timed Media Quality of Experience (this schema) |
-| [xdm:bitrateChanges](#xdmbitratechanges) | Measure | Optional | Timed Media Quality of Experience (this schema) |
-| [xdm:bufferTime](#xdmbuffertime) | Measure | Optional | Timed Media Quality of Experience (this schema) |
-| [xdm:buffers](#xdmbuffers) | Measure | Optional | Timed Media Quality of Experience (this schema) |
-| [xdm:droppedFrames](#xdmdroppedframes) | Measure | Optional | Timed Media Quality of Experience (this schema) |
-| [xdm:errors](#xdmerrors) | Measure | Optional | Timed Media Quality of Experience (this schema) |
-| [xdm:stallTime](#xdmstalltime) | Measure | Optional | Timed Media Quality of Experience (this schema) |
-| [xdm:stalls](#xdmstalls) | Measure | Optional | Timed Media Quality of Experience (this schema) |
-| [xdm:timeToStart](#xdmtimetostart) | Measure | Optional | Timed Media Quality of Experience (this schema) |
+| [xdm:bitrateAverage](#xdmbitrateaverage) | Measure | Optional | Timed media quality of experience (this schema) |
+| [xdm:bitrateChanges](#xdmbitratechanges) | Measure | Optional | Timed media quality of experience (this schema) |
+| [xdm:bufferTime](#xdmbuffertime) | Measure | Optional | Timed media quality of experience (this schema) |
+| [xdm:buffers](#xdmbuffers) | Measure | Optional | Timed media quality of experience (this schema) |
+| [xdm:droppedFrames](#xdmdroppedframes) | Measure | Optional | Timed media quality of experience (this schema) |
+| [xdm:errors](#xdmerrors) | Measure | Optional | Timed media quality of experience (this schema) |
+| [xdm:stallTime](#xdmstalltime) | Measure | Optional | Timed media quality of experience (this schema) |
+| [xdm:stalls](#xdmstalls) | Measure | Optional | Timed media quality of experience (this schema) |
+| [xdm:timeToStart](#xdmtimetostart) | Measure | Optional | Timed media quality of experience (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:bitrateAverage
-### Average Bitrate
+### Average bitrate
 
 A weighted average of all bitrate values related to the play duration that occurred during a playback session.
 
@@ -85,7 +85,7 @@ A weighted average of all bitrate values related to the play duration that occur
 
 
 ## xdm:bitrateChanges
-### Bitrate Changes
+### Bitrate changes
 
 The number of bitrate change events that occurred during a playback session.
 
@@ -104,9 +104,9 @@ The number of bitrate change events that occurred during a playback session.
 
 
 ## xdm:bufferTime
-### Total Buffer Duration
+### Total buffer duration
 
-Describes the total amount of time (in seconds) spent buffering.
+Describes the total amount of time in seconds, spent buffering.
 
 `xdm:bufferTime`
 * is optional
@@ -142,7 +142,7 @@ The number of buffer states that occurred during a playback session.
 
 
 ## xdm:droppedFrames
-### Dropped Frames
+### Dropped frames
 
 The number of frames dropped during playback of the main content.
 
@@ -180,9 +180,9 @@ The number of errors that were encountered during playback.
 
 
 ## xdm:stallTime
-### Total Stalling Duration
+### Total stalling duration
 
-Describes the duration (in seconds) in which the playback was stalled during playback.
+Describes the duration in seconds in which the playback was stalled during playback.
 
 `xdm:stallTime`
 * is optional
@@ -218,9 +218,9 @@ The number of stall states that occurred during a playback session.
 
 
 ## xdm:timeToStart
-### Time to Start
+### Time to start
 
-Describes the duration (in seconds) passed between video load and start.
+Describes the duration in seconds passed between video load and start.
 
 `xdm:timeToStart`
 * is optional

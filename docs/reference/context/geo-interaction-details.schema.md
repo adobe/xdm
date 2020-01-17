@@ -1,5 +1,5 @@
 
-# Geo Interaction Details Schema
+# Geo interaction details Schema
 
 ```
 https://ns.adobe.com/xdm/context/geo-interaction-details
@@ -12,12 +12,12 @@ The geo details relating to the current state of inclusion in a geo defined area
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/geo-interaction-details.schema.json](context/geo-interaction-details.schema.json) |
 ## Schema Hierarchy
 
-* Geo Interaction Details `https://ns.adobe.com/xdm/context/geo-interaction-details`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* Geo interaction details `https://ns.adobe.com/xdm/context/geo-interaction-details`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Geo Shape](../external/schema/geoshape.schema.md) `http://schema.org/GeoShape`
 
 
-## Geo Interaction Details Example
+## Geo interaction details Example
 ```json
 {
   "xdm:distanceToCenter": 100,
@@ -25,19 +25,19 @@ The geo details relating to the current state of inclusion in a geo defined area
 }
 ```
 
-# Geo Interaction Details Properties
+# Geo interaction details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:deviceGeoAccuracy](#xdmdevicegeoaccuracy) | `number` | Optional | Geo Interaction Details (this schema) |
-| [xdm:distanceToCenter](#xdmdistancetocenter) | `number` | Optional | Geo Interaction Details (this schema) |
-| [xdm:geoShape](#xdmgeoshape) | Geo Shape | Optional | Geo Interaction Details (this schema) |
+| [xdm:deviceGeoAccuracy](#xdmdevicegeoaccuracy) | `number` | Optional | Geo interaction details (this schema) |
+| [xdm:distanceToCenter](#xdmdistancetocenter) | `number` | Optional | Geo interaction details (this schema) |
+| [xdm:geoShape](#xdmgeoshape) | Geo Shape | Optional | Geo interaction details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:deviceGeoAccuracy
-### Geo Device Accuracy
+### Geo device accuracy
 
-The accuracy of the geo measuring device or mechanism. Measured in meters.
+The accuracy of the geo measuring device or mechanism, measured in meters.
 
 `xdm:deviceGeoAccuracy`
 * is optional
@@ -55,9 +55,9 @@ The accuracy of the geo measuring device or mechanism. Measured in meters.
 
 
 ## xdm:distanceToCenter
-### Distance to Center
+### Distance to center
 
-Distance to center of geo in case of a geo circle. Measured in meters.
+Distance to center of geo in, case of a geo circle, measured in meters.
 
 `xdm:distanceToCenter`
 * is optional
@@ -75,7 +75,7 @@ Distance to center of geo in case of a geo circle. Measured in meters.
 
 
 ## xdm:geoShape
-### Geo Shape
+### Geo shape
 
 Geo shape of the geo being interacted with.
 

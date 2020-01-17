@@ -1,5 +1,5 @@
 
-# ExperienceEvent Direct Marketing Details Schema
+# ExperienceEvent direct marketing details Schema
 
 ```
 https://ns.adobe.com/xdm/context/experienceevent-directmarketing
@@ -12,12 +12,12 @@ This mixin is used to capture information regarding direct marketing details rel
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/experienceevent-directmarketing.schema.json](context/experienceevent-directmarketing.schema.json) |
 ## Schema Hierarchy
 
-* ExperienceEvent Direct Marketing Details `https://ns.adobe.com/xdm/context/experienceevent-directmarketing`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Direct Marketing](direct-marketing.schema.md) `https://ns.adobe.com/xdm/context/direct-marketing`
+* ExperienceEvent direct marketing details `https://ns.adobe.com/xdm/context/experienceevent-directmarketing`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Direct marketing](direct-marketing.schema.md) `https://ns.adobe.com/xdm/context/direct-marketing`
 
 
-## ExperienceEvent Direct Marketing Details Example
+## ExperienceEvent direct marketing details Example
 ```json
 {
   "xdm:directMarketing": {
@@ -28,27 +28,27 @@ This mixin is used to capture information regarding direct marketing details rel
 }
 ```
 
-# ExperienceEvent Direct Marketing Details Properties
+# ExperienceEvent direct marketing details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:directMarketing](#xdmdirectmarketing) | Direct Marketing | Optional | ExperienceEvent Direct Marketing Details (this schema) |
+| [xdm:directMarketing](#xdmdirectmarketing) | Direct marketing | Optional | ExperienceEvent direct marketing details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:directMarketing
-### Direct Marketing
+### Direct marketing
 
-Events and properties related to direct/outbound marketing such as email, direct mail, texts, and in-app notifications.
+Events and properties related to direct and outbound marketing such as email, direct mail, texts, and in-app notifications.
 
 `xdm:directMarketing`
 * is optional
-* type: Direct Marketing
+* type: Direct marketing
 * defined in this schema
 
 ### xdm:directMarketing Type
 
 
-* [Direct Marketing](direct-marketing.schema.md) – `https://ns.adobe.com/xdm/context/direct-marketing`
+* [Direct marketing](direct-marketing.schema.md) – `https://ns.adobe.com/xdm/context/direct-marketing`
 
 
 

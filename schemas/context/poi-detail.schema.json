@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/poi-detail",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Point of Interest Details",
+  "title": "Point of interest details",
   "type": "object",
   "meta:extensible": true,
   "description": "A point or place of interest (POI) Details. Used to capture the technical and metadata information for a POI.",
@@ -15,49 +15,55 @@
     "geo-interaction-detail": {
       "properties": {
         "xdm:POIID": {
+          "title": "POI identity",
+          "type": "string",
+          "meta:status": "deprecated",
+          "description": "The unique identifier of the POI."
+        },
+        "xdm:poiID": {
           "title": "POI Identity",
           "type": "string",
           "description": "The unique identifier of the POI."
         },
         "xdm:name": {
-          "title": "POI Name",
+          "title": "POI name",
           "type": "string",
           "description": "The name given to the POI."
         },
         "xdm:category": {
-          "title": "POI Category",
+          "title": "POI category",
           "type": "string",
           "description": "General category assigned for organizing the POIs by the administrator of POI definitions."
         },
         "xdm:type": {
-          "title": "POI Type",
+          "title": "POI type",
           "type": "string",
           "description": "The general type of the POI using a typing schema selected by the administrator of the POI definitions."
         },
         "xdm:distanceToPOICenter": {
-          "title": "Distance to POI Center",
+          "title": "Distance to POI center",
           "type": "number",
           "description": "Estimated distance from the POI center in meters."
         },
         "xdm:locatingType": {
-          "title": "Locating Type",
+          "title": "Locating type",
           "type": "string",
-          "description": "Mechanism used to ascertain location.",
+          "description": "Mechanism used to determine location.",
           "meta:enum": {
             "beacon": "Hardware beacon",
             "gps": "Device GPS",
             "ip": "IP to geo lookup",
-            "ip+wifi": "IP with Wifi lookup",
+            "ip+wifi": "IP with wifi lookup",
             "wifi-triangulation": "Wifi triangulation"
           }
         },
         "xdm:beaconInteractionDetails": {
-          "title": "Beacon Interaction Details",
+          "title": "Beacon interaction details",
           "$ref": "https://ns.adobe.com/xdm/context/beacon-interaction-details",
           "description": "Beacon details active for the POI interaction."
         },
         "xdm:geoInteractionDetails": {
-          "title": "Geo Interaction Details",
+          "title": "Geo interaction details",
           "$ref": "https://ns.adobe.com/xdm/context/geo-interaction-details",
           "description": "Geo details active for the POI interaction."
         }

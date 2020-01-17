@@ -7,11 +7,11 @@
     ],
     "$id": "https://ns.adobe.com/xdm/context/media-timed-asset-reference",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Timed Media Primary Asset Reference",
+    "title": "Timed media primary asset reference",
     "type": "object",
     "meta:status": "experimental",
     "meta:extensible": true,
-    "description": "Asset information about the main content that was played, but present on all ads and chapters that occur during the content's playback as well.",
+    "description": "Asset information about the main content that was played, but present on all ads and chapters that occur during the content playback.",
     "definitions": {
         "media-asset-reference": {
             "properties": {
@@ -19,22 +19,22 @@
                     "title": "Asset ID",
                     "type": "string",
                     "format": "uri-reference",
-                    "description": "Identifier of the content, which can be used to tie back to other industry / CMS IDs."
+                    "description": "Identifier of the content, which can be used to tie back to other industry or CMS IDs."
                 },
                 "dc:title": {
-                    "title": "Media Name",
+                    "title": "Media name",
                     "type": "string",
-                    "description": "The friendly (human-readable) name of the timed media asset."
+                    "description": "The friendly, human-readable name of the timed media asset."
                 },
                 "xmpDM:duration": {
-                    "title": "Media Length/Runtime",
+                    "title": "Media length runtime",
                     "type": "integer",
                     "description": "Length of primary media asset in seconds."
                 },
                 "xdm:showType": {
-                    "title": "Show Type",
+                    "title": "Show type",
                     "type": "string",
-                    "description": "The type of content e.g. Trailer, Full Episode."
+                    "description": "The type of content for example, trailer or full episode."
                 },
                 "iptc4xmpExt:Series": {
                     "title": "Series",
@@ -42,9 +42,9 @@
                     "$ref": "http://www.iptc.org/series"
                 },
                 "xdm:streamFormat": {
-                    "title": "Stream Format",
+                    "title": "Stream format",
                     "type": "string",
-                    "description": "Free-form format of the stream (e.g. short, long)."
+                    "description": "Free-form format of the stream for example, short or long."
                 },
                 "iptc4xmpExt:Season": {
                     "title": "Season",
@@ -65,7 +65,7 @@
                     }
                 },
                 "iptc4xmpExt:Rating": {
-                    "title": "Content Rating",
+                    "title": "Content rating",
                     "description": "The rating as defined by Parental Guidelines.",
                     "type": "array",
                     "items": {
@@ -74,7 +74,7 @@
                 },
                 "iptc4xmpExt:Creator": {
                     "title": "Creator",
-                    "description": "Party or parties (person or organization) which created the video, refinement by the role attribute.",
+                    "description": "Party or parties including person or organization which created the video, refinement by the role attribute.",
                     "type": "array",
                     "items": {
                         "$ref": "http://www.iptc.org/creator"

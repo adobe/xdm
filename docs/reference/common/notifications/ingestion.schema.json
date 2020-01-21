@@ -20,6 +20,7 @@
             "properties": {
                 "xdm:eventType": {
                     "title": "Event Type",
+                    "type": "string",
                     "description": "Event type of customer data ingestion notification.",
                     "enum": [
                         "ing_load_success",

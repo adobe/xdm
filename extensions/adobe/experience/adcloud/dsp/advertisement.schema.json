@@ -93,29 +93,7 @@
         "dsp:adClass": {
           "title": "Ad Class",
           "type": "string",
-          "description": "Ad class of driving event.",
-          "enum": [
-            "inbanner",
-            "CTP",
-            "ROTP",
-            "SMA",
-            "BAP",
-            "preroll",
-            "midroll",
-            "postroll",
-            "mobile_web"
-          ],
-          "meta:enum": {
-            "inbanner": "inbanner",
-            "CTP": "CTP",
-            "ROTP": "ROTP",
-            "SMA": "SMA",
-            "BAP": "BAP",
-            "preroll": "preroll",
-            "midroll": "midroll",
-            "postroll": "postroll",
-            "mobile_web": "mobile_web"
-          }
+          "description": "Ad class of driving event."
         },
         "dsp:promotedVideoId": {
           "title": "Promoted Video Identifier",

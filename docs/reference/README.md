@@ -4,6 +4,15 @@
 
 
 
+## /content/
+
+* [Component container](./content/component-container.schema.md) – `https://ns.adobe.com/xdm/content/component-container` (Experimental)
+* [Componentized page](./content/componentized-page.schema.md) – `https://ns.adobe.com/xdm/content/componentized-page` (Experimental)
+* [Content repository](./content/repository.schema.md) – `https://ns.adobe.com/xdm/content/repository` (Experimental)
+* [Page component](./content/page-component.schema.md) – `https://ns.adobe.com/xdm/content/page-component` (Experimental)
+* [Product](./content/product.schema.md) – `https://ns.adobe.com/xdm/context/product` (Experimental)
+* [Product list item](./content/productlistitem.schema.md) – `https://ns.adobe.com/xdm/content/productlistitem` (Experimental)
+
 ## /assets/
 
 * [Aggregated Asset](./assets/aggregated-asset.schema.md) – `https://ns.adobe.com/xdm/assets/aggregated-asset` (Experimental)
@@ -18,31 +27,6 @@
 * [Resource Event](./assets/resource-event.schema.md) – `https://ns.adobe.com/xdm/assets/resource-event` (Experimental)
 * [Simple Rectangular Area](./assets/rectangular.schema.md) – `https://ns.adobe.com/xdm/assets/rectangular` (Stabilizing)
 * [Video](./assets/video.schema.md) – `https://ns.adobe.com/xdm/assets/video` (Experimental)
-
-## /common/
-
-* [Audit trail](./common/auditable.schema.md) – `https://ns.adobe.com/xdm/common/auditable` (Experimental)
-* [Customer Managed Environment](./common/selfservice.schema.md) – `https://ns.adobe.com/xdm/common/selfservice` (Experimental)
-* [EventEnvelope](./common/eventenvelope.schema.md) – `https://ns.adobe.com/xdm/common/eventenvelope` (Experimental)
-* [Extensibility base schema](./common/extensible.schema.md) – `https://ns.adobe.com/xdm/common/extensible` (Stabilizing)
-* [Geo](./common/geo.schema.md) – `https://ns.adobe.com/xdm/common/geo` (Experimental)
-* [Geographical unit](./common/geounit.schema.md) – `https://ns.adobe.com/xdm/common/geounit` (Experimental)
-* [Identity Provider](./common/identity-provider.schema.md) – `https://ns.adobe.com/xdm/common/identity-provider` (Experimental)
-* [Organization](./common/organization.schema.md) – `https://ns.adobe.com/xdm/common/organization` (Stabilizing)
-* [Organizational unit](./common/orgunit.schema.md) – `https://ns.adobe.com/xdm/common/orgunit` (Experimental)
-* [Page](./common/page.schema.md) – `https://ns.adobe.com/xdm/common/page` (Experimental)
-* [Postal address](./common/address.schema.md) – `https://ns.adobe.com/xdm/common/address` (Stabilizing)
-* [Principal](./common/principal.schema.md) – `https://ns.adobe.com/xdm/common/principal` (Experimental)
-* [User identity](./common/identity.schema.md) – `https://ns.adobe.com/xdm/common/identity` (Experimental)
-
-## /content/
-
-* [Component container](./content/component-container.schema.md) – `https://ns.adobe.com/xdm/content/component-container` (Experimental)
-* [Componentized page](./content/componentized-page.schema.md) – `https://ns.adobe.com/xdm/content/componentized-page` (Experimental)
-* [Content repository](./content/repository.schema.md) – `https://ns.adobe.com/xdm/content/repository` (Experimental)
-* [Page component](./content/page-component.schema.md) – `https://ns.adobe.com/xdm/content/page-component` (Experimental)
-* [Product](./content/product.schema.md) – `https://ns.adobe.com/xdm/context/product` (Experimental)
-* [Product list item](./content/productlistitem.schema.md) – `https://ns.adobe.com/xdm/content/productlistitem` (Experimental)
 
 ## /channels/
 
@@ -66,6 +50,22 @@
 * [WeChat Channel](./channels/wechat.schema.md) – `https://ns.adobe.com/xdm/channels/wechat` (Experimental)
 * [Web Channel](./channels/web.schema.md) – `https://ns.adobe.com/xdm/channels/web` (Experimental)
 * [Windows Push Notification Service (WNS) Channel](./channels/wns.schema.md) – `https://ns.adobe.com/xdm/channels/wns` (Experimental)
+
+## /common/
+
+* [Audit trail](./common/auditable.schema.md) – `https://ns.adobe.com/xdm/common/auditable` (Experimental)
+* [Customer Managed Environment](./common/selfservice.schema.md) – `https://ns.adobe.com/xdm/common/selfservice` (Experimental)
+* [EventEnvelope](./common/eventenvelope.schema.md) – `https://ns.adobe.com/xdm/common/eventenvelope` (Experimental)
+* [Extensibility base schema](./common/extensible.schema.md) – `https://ns.adobe.com/xdm/common/extensible` (Stabilizing)
+* [Geo](./common/geo.schema.md) – `https://ns.adobe.com/xdm/common/geo` (Experimental)
+* [Geographical unit](./common/geounit.schema.md) – `https://ns.adobe.com/xdm/common/geounit` (Experimental)
+* [Identity Provider](./common/identity-provider.schema.md) – `https://ns.adobe.com/xdm/common/identity-provider` (Experimental)
+* [Organization](./common/organization.schema.md) – `https://ns.adobe.com/xdm/common/organization` (Stabilizing)
+* [Organizational unit](./common/orgunit.schema.md) – `https://ns.adobe.com/xdm/common/orgunit` (Experimental)
+* [Page](./common/page.schema.md) – `https://ns.adobe.com/xdm/common/page` (Experimental)
+* [Postal address](./common/address.schema.md) – `https://ns.adobe.com/xdm/common/address` (Stabilizing)
+* [Principal](./common/principal.schema.md) – `https://ns.adobe.com/xdm/common/principal` (Experimental)
+* [User identity](./common/identity.schema.md) – `https://ns.adobe.com/xdm/common/identity` (Experimental)
 
 ## /data/
 
@@ -238,15 +238,31 @@
 * [XDM Graphs](./context/graphs.schema.md) – `https://ns.adobe.com/xdm/context/graphs` (Experimental)
 * [XDM Individual Profile](./context/profile.schema.md) – `https://ns.adobe.com/xdm/context/profile` (Experimental)
 
-## /common/notifications/
+## /content/repository-policies/
 
-* [Customer Data Ingestion Notifications Event](./common/notifications/ingestion.schema.md) – `https://ns.adobe.com/xdm/common/notifications/ingestion` (Stabilizing)
+* [At-Rest Encryption](./content/repository-policies/encryption.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/encryption` (Experimental)
+* [Storage Quota](./content/repository-policies/quota.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/quota` (Experimental)
+* [Versioning](./content/repository-policies/versioning.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/versioning` (Experimental)
 
 ## /common/descriptors/
 
 * [Item Selector](./common/descriptors/itemselector.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/itemselector` (Experimental)
 * [Relationship Descriptor](./common/descriptors/relationshipdescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/relationshipdescriptor` (Stabilizing)
 * [Schema Descriptor](./common/descriptors/schemadescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/schemadescriptor` (Stabilizing)
+
+## /common/event/
+
+* [Created Event](./common/event/created.schema.md) – `https://ns.adobe.com/xdm/common/event/created` (Experimental)
+* [Deleted Event](./common/event/deleted.schema.md) – `https://ns.adobe.com/xdm/common/event/deleted` (Experimental)
+* [Emitted Event](./common/event/emitted.schema.md) – `https://ns.adobe.com/xdm/common/event/emitted` (Experimental)
+* [Published Event](./common/event/published.schema.md) – `https://ns.adobe.com/xdm/common/event/published` (Experimental)
+* [Rejected Event](./common/event/rejected.schema.md) – `https://ns.adobe.com/xdm/common/event/rejected` (Experimental)
+* [Unpublished Event](./common/event/unpublished.schema.md) – `https://ns.adobe.com/xdm/common/event/unpublished` (Experimental)
+* [Updated Event](./common/event/updated.schema.md) – `https://ns.adobe.com/xdm/common/event/updated` (Experimental)
+
+## /common/notifications/
+
+* [Customer Data Ingestion Notifications Event](./common/notifications/ingestion.schema.md) – `https://ns.adobe.com/xdm/common/notifications/ingestion` (Stabilizing)
 
 ## /external/activity-streams-2/
 
@@ -262,32 +278,11 @@
 * [Object](./external/activity-streams-2/object.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/object` (Experimental)
 * [RDF Language Tagged String](./external/activity-streams-2/rdf-langstring.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langstring` (Experimental)
 
-## /common/event/
-
-* [Created Event](./common/event/created.schema.md) – `https://ns.adobe.com/xdm/common/event/created` (Experimental)
-* [Deleted Event](./common/event/deleted.schema.md) – `https://ns.adobe.com/xdm/common/event/deleted` (Experimental)
-* [Emitted Event](./common/event/emitted.schema.md) – `https://ns.adobe.com/xdm/common/event/emitted` (Experimental)
-* [Published Event](./common/event/published.schema.md) – `https://ns.adobe.com/xdm/common/event/published` (Experimental)
-* [Rejected Event](./common/event/rejected.schema.md) – `https://ns.adobe.com/xdm/common/event/rejected` (Experimental)
-* [Unpublished Event](./common/event/unpublished.schema.md) – `https://ns.adobe.com/xdm/common/event/unpublished` (Experimental)
-* [Updated Event](./common/event/updated.schema.md) – `https://ns.adobe.com/xdm/common/event/updated` (Experimental)
-
-## /content/repository-policies/
-
-* [At-Rest Encryption](./content/repository-policies/encryption.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/encryption` (Experimental)
-* [Storage Quota](./content/repository-policies/quota.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/quota` (Experimental)
-* [Versioning](./content/repository-policies/versioning.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/versioning` (Experimental)
-
 ## /external/schema/
 
 * [Geo Circle](./external/schema/geocircle.schema.md) – `http://schema.org/GeoCircle` (Experimental)
 * [Geo Coordinates](./external/schema/geocoordinates.schema.md) – `http://schema.org/GeoCoordinates` (Experimental)
 * [Geo Shape](./external/schema/geoshape.schema.md) – `http://schema.org/GeoShape` (Experimental)
-
-## /external/hal/
-
-* [HAL Link](./external/hal/hal-link.schema.md) – `https://ns.adobe.com/xdm/external/hal/link` (Experimental)
-* [HAL Resource](./external/hal/hal.schema.md) – `https://ns.adobe.com/xdm/external/hal/resource` (Experimental)
 
 ## /external/iptc/
 
@@ -296,6 +291,11 @@
 * [Rating](./external/iptc/rating.schema.md) – `http://www.iptc.org/rating` (Experimental)
 * [Season](./external/iptc/season.schema.md) – `http://www.iptc.org/episode` (Experimental)
 * [Series](./external/iptc/series.schema.md) – `http://www.iptc.org/series` (Experimental)
+
+## /external/hal/
+
+* [HAL Link](./external/hal/hal-link.schema.md) – `https://ns.adobe.com/xdm/external/hal/link` (Experimental)
+* [HAL Resource](./external/hal/hal.schema.md) – `https://ns.adobe.com/xdm/external/hal/resource` (Experimental)
 
 ## /external/repo/
 
@@ -307,10 +307,6 @@
 * [Effective Privileges](./external/repo/effectiveprivileges.schema.md) – `https://ns.adobe.com/xdm/external/repo/effectiveprivileges` (Experimental)
 * [Sub-Directory](./external/repo/sub-directory.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/sub-directory` (Experimental)
 
-## /common/descriptors/search/
-
-* [Search Descriptor](./common/descriptors/search/searchdescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/searchdescriptor` (Experimental)
-
 ## /common/descriptors/display/
 
 * [Friendly Name Descriptor](./common/descriptors/display/alternateDisplayInfo.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/alternateDisplayInfo` (Stabilizing)
@@ -319,6 +315,10 @@
 
 * [Identity Descriptor](./common/descriptors/identity/descriptorIdentity.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/descriptorIdentity` (Stabilizing)
 * [Identity Reference Descriptor](./common/descriptors/identity/descriptorReferenceIdentity.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/descriptorReferenceIdentity` (Stabilizing)
+
+## /common/descriptors/search/
+
+* [Search Descriptor](./common/descriptors/search/searchdescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/searchdescriptor` (Experimental)
 
 ## /common/descriptors/relationship/
 

@@ -1,0 +1,101 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/opportunity-crm",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "CRM Opportunity",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/opportunity"
+  ],
+  "description": "CRM specific Opportunity fields.",
+  "definitions": {
+    "opportunity-crm": {
+      "properties": {
+            "xdm:amount": {
+              "title": "Opportunity Amount",
+              "description": "Marketo GUID Id.",
+              "type": "number"
+            },
+            "xdm:quantity": {
+              "title": "Opportunity Quantity",
+              "description": "CRM organization Id.",
+              "type": "number"
+            },
+            "xdm:fiscalYear": {
+              "title": "Fiscal Year",
+              "description": "Indicator whether the Account record is deleted or not.",
+              "type": "number"
+            },
+            "xdm:fiscalQuarter": {
+              "title": "Account targeted Indicator",
+              "description": "Indicator whether the Account is targeted.",
+              "type": "number"
+            },
+            "xdm:hasOpportunityLineItem": {
+              "title": "Account Source Type",
+              "description": "Account source type.",
+              "type": "boolean"
+            },
+            "xdm:probabilityPercentage": {
+              "title": "Logo URL",
+              "description": "Logo url.",
+              "type": "string"
+            },
+            "xdm:isClosed": {
+              "title": "Account Created Date",
+              "description": "Account created date.",
+              "type": "boolean"
+            },
+            "xdm:isWon": {
+              "title": "Account Updated Date",
+              "description": "Account updated date.",
+              "type": "boolean"
+            },
+            "xdm:closeDate": {
+              "title": "Account Updated Date",
+              "description": "Account updated date.",
+              "type": "string",
+              "format":"date-time"
+            },
+            "xdm:nextStep": {
+              "title": "Account Updated Date",
+              "description": "Account updated date.",
+              "type": "string"
+            },
+            "xdm:lastActivity": {
+              "title": "Account Updated Date",
+              "description": "Account updated date.",
+              "type": "string"
+            },
+            "xdm:private": {
+              "title": "Account Updated Date",
+              "description": "Account updated date.",
+              "type": "boolean"
+            },
+            "xdm:contractId": {
+              "title": "Account Updated Date",
+              "description": "Account updated date.",
+              "type": "number"
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/opportunity-crm"
+    }
+  ],
+  "meta:status": "experimental"
+}

@@ -1,0 +1,165 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/marketo/opportunity-marketo",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Marketo vendor specific opportunity",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/opportunity"
+  ],
+  "description": "Marketo specific Opportunity fields.",
+  "definitions": {
+    "opportunity-marketo": {
+      "properties": {
+        "marketo:Id": {
+          "title": "Opportunity Id",
+          "description": "Unique identifer of the opportunity",
+          "type": "number"
+        },
+        "marketo:mktoGuid": {
+          "title": "Marketo GUID Id",
+          "description": "Marketo GUID Id.",
+          "type": "string"
+        },
+        "marketo:sourceId": {
+          "title": "Opportunity Source Id",
+          "description": "Opportunity source unique identifer",
+          "type": "number"
+        },
+        "marketo:name": {
+          "title": "Opportunity Name",
+          "description": "Subject or descriptive name, such as the expected order or company name, for the opportunity.",
+          "type": "string"
+        },
+        "marketo:description": {
+          "title": "Opportunity Description",
+          "description": "Additional information to describe the opportunity, such as possible products to sell or past purchases from the customer.",
+          "type": "string"
+        },
+        "marketo:accountOrgId": {
+          "title": "Account Org Id",
+          "description": "Account Org identifer reference",
+          "type": "number"
+        },
+        "marketo:ownerPersonId": {
+          "title": "Owner Person Id",
+          "description": "Contact unique ID reference.",
+          "type": "number"
+        },
+        "marketo:sourceCampaignId": {
+          "title": "Source Campaign Id",
+          "description": "Campaign unique identifer reference",
+          "type": "number"
+        },
+        "marketo:type": {
+          "title": "Opportunity Type",
+          "description": "Type of Opportunity.",
+          "type": "string"
+        },
+        "marketo:stage": {
+          "title": "Opportunity Stage",
+          "description": "Sales stage of this opportunity to aid the sales team in their efforts to win this opportunity.",
+          "type": "string"
+        },
+        "marketo:fiscalQuarter": {
+          "title": "Account targeted Indicator",
+          "description": "Indicator whether the Account is targeted.",
+          "type": "number"
+        },
+        "marketo:fiscalYear": {
+          "title": "Fiscal Year",
+          "description": "Indicator whether the Account record is deleted or not.",
+          "type": "number"
+        },
+        "marketo:fiscal": {
+          "title": "Fiscal",
+          "description": "Indicator whether the Account record is deleted or not.",
+          "type": "number"
+        },
+        "marketo:forcastCategory": {
+          "title": "Forecast Category",
+          "description": "Forecast Category determined by the opportunity Stage value eg: omitted,pipeline,bestcase,commit,closed.",
+          "type": "string"
+        },
+        "marketo:forecastCategoryName": {
+          "title": "Forecast Category Name",
+          "description": "Forecast category name that is displayed in reports for a perticular forecast category.",
+          "type": "string"
+        },
+        "marketo:hasOpportunityLineItem": {
+          "title": "Has Opportunity Line Item",
+          "description": "Flag to indicate whether this opportunity have more line items.",
+          "type": "boolean"
+        },
+        "marketo:isClosed": {
+          "title": "Closed",
+          "description": "Flag indicating if this opportunity is closed.",
+          "type": "boolean"
+        },
+        "marketo:isWon": {
+          "title": "Won",
+          "description": "Flag indicating if this opportunity is Won.",
+          "type": "boolean"
+        },
+        "marketo:probability": {
+          "title": "Probability",
+          "description": "Likelihood that opportunity will close, stated as a percentage.",
+          "type": "number"
+        },
+        "marketo:amount": {
+          "title": "Amount",
+          "description": "Estimated total sale amount.",
+          "type": "number"
+        },
+        "marketo:expectedRevenue": {
+          "title": "Expected Revenue",
+          "description": "Calculated revenue based on the Amount and Probability.",
+          "type": "number"
+        },
+        "marketo:quantity": {
+          "title": "Quantity",
+          "description": "Total of all Quantity field values for all products in the Products related list if the opportunity has products. General use field if the opportunity does not have products.",
+          "type": "number"
+        },
+        "marketo:closeDate": {
+          "title": "Close Date",
+          "description": "Date when you plan to close the opportunity.",
+          "type": "string",
+          "format": "date-time"
+        },
+        "marketo:lastActivityDate": {
+          "title": "Last Activity Date",
+          "description": "Date last activity happened on this opportunity.",
+          "type": "string",
+          "format": "date-time"
+        },
+        "marketo:leadSource": {
+          "title": "Lead Source",
+          "description": "Source of the opportunity, for example, Advertisement, Partner, or Web",
+          "type": "string"
+        },
+        "marketo:nextStep": {
+          "title": "Next Step",
+          "description": "Description of next task in closing opportunity.",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/Opportunity-marketo"
+    }
+  ],
+  "meta:status": "experimental"
+}

@@ -1,0 +1,59 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/opportunity-contactrole",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "B2B Opportunity Contact Role",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/opportunity"
+  ],
+  "description": "Defines a map containing a set of business customer opportunity contact role",
+  "contactrole": {
+    "properties": {
+      "xdm:contactrole": {
+        "type": "object",
+        "meta:xdmType": "map",
+        "additionalProperties": {
+          "type": "array",
+          "items": {
+            "xdm:contactId": {
+              "title": "Contact Id",
+              "description": "Contact unique ID reference.",
+              "type": "number"
+            },
+            "xdm:contactrole": {
+              "title": "Contact Role",
+              "description": "Role of the opportunity contact like finance , sales .",
+              "type": "string"
+            },
+            "xdm:isPrimary": {
+              "title": "Primary",
+              "description": "Flag to check if opportunity contact is primary.",
+              "type": "boolean"
+            },
+            "xdm:isDeleted": {
+              "title": "Deleted",
+              "description": "Flag to check if this opportunioty contact deleted.",
+              "type": "boolean"
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/opportunity-contactrole"
+    }
+  ],
+  "meta:status": "experimental"
+}

@@ -7,14 +7,14 @@
   ],
   "$id": "https://ns.adobe.com/marketo/opportunity-marketo",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Marketo vendor specific opportunity",
+  "title": "Marketo opportunity",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/opportunity"
   ],
-  "description": "Marketo specific Opportunity fields.",
+  "description": "Marketo vendor specific opportunity fields.",
   "definitions": {
     "opportunity-marketo": {
       "properties": {
@@ -55,7 +55,7 @@
         },
         "marketo:sourceCampaignId": {
           "title": "Source Campaign Id",
-          "description": "Campaign unique identifer reference",
+          "description": "Campaign unique identifer reference responsible for generating this opportunity.",
           "type": "number"
         },
         "marketo:type": {

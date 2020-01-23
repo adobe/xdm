@@ -14,7 +14,7 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/opportunity"
   ],
-  "description": "CRM specific Opportunity fields.",
+  "description": "CRM specific opportunity fields.",
   "definitions": {
     "opportunity-crm": {
       "properties": {
@@ -81,7 +81,7 @@
         },
         "xdm:contractId": {
           "title": "Contract Id",
-          "description": "Contract unique Identifier reference that the opportunity is linked to.",
+          "description": "Contract unique Identifier reference that this opportunity is linked to.",
           "type": "number"
         }
       }

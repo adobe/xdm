@@ -1,5 +1,5 @@
 
-# ExperienceEvent Commerce Details Schema
+# ExperienceEvent commerce details Schema
 
 ```
 https://ns.adobe.com/xdm/context/experienceevent-commerce
@@ -12,12 +12,12 @@ This mixin is used to capture information regarding commerce activities related 
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/experienceevent-commerce.schema.json](context/experienceevent-commerce.schema.json) |
 ## Schema Hierarchy
 
-* ExperienceEvent Commerce Details `https://ns.adobe.com/xdm/context/experienceevent-commerce`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* ExperienceEvent commerce details `https://ns.adobe.com/xdm/context/experienceevent-commerce`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Commerce](commerce.schema.md) `https://ns.adobe.com/xdm/context/commerce`
 
 
-## ExperienceEvent Commerce Details Example
+## ExperienceEvent commerce details Example
 ```json
 {
   "xdm:productListItems": [
@@ -58,12 +58,12 @@ This mixin is used to capture information regarding commerce activities related 
 }
 ```
 
-# ExperienceEvent Commerce Details Properties
+# ExperienceEvent commerce details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:commerce](#xdmcommerce) | Commerce | Optional | ExperienceEvent Commerce Details (this schema) |
-| [xdm:productListItems](#xdmproductlistitems) | Product List Item | Optional | ExperienceEvent Commerce Details (this schema) |
+| [xdm:commerce](#xdmcommerce) | Commerce | Optional | ExperienceEvent commerce details (this schema) |
+| [xdm:productListItems](#xdmproductlistitems) | Product list item | Optional | ExperienceEvent commerce details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:commerce
@@ -86,23 +86,23 @@ Commerce specific data related to this event.
 
 
 ## xdm:productListItems
-### Product List Items
+### Product list items
 
 A list of items representing a product selected by a customer with specific options and pricing that are for that usage context at a specific point of time and may differ from the product record.
 
 `xdm:productListItems`
 * is optional
-* type: Product List Item
+* type: Product list item
 
 * defined in this schema
 
 ### xdm:productListItems Type
 
 
-Array type: Product List Item
+Array type: Product list item
 
 All items must be of the type:
-* [Product List Item](../content/productlistitem.schema.md) – `https://ns.adobe.com/xdm/content/productlistitem`
+* [Product list item](../content/productlistitem.schema.md) – `https://ns.adobe.com/xdm/content/productlistitem`
 
 
 

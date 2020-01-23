@@ -1,5 +1,5 @@
 
-# ExperienceEvent Environment Details Schema
+# ExperienceEvent environment details Schema
 
 ```
 https://ns.adobe.com/xdm/context/experienceevent-environment-details
@@ -12,14 +12,14 @@ This mixin is used to capture information regarding environment details related 
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/experienceevent-environment-details.schema.json](context/experienceevent-environment-details.schema.json) |
 ## Schema Hierarchy
 
-* ExperienceEvent Environment Details `https://ns.adobe.com/xdm/context/experienceevent-environment-details`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* ExperienceEvent environment details `https://ns.adobe.com/xdm/context/experienceevent-environment-details`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Environment](environment.schema.md) `https://ns.adobe.com/xdm/context/environment`
   * [Device](device.schema.md) `https://ns.adobe.com/xdm/context/device`
-  * [Place Context](placecontext.schema.md) `https://ns.adobe.com/xdm/context/placecontext`
+  * [Place context](placecontext.schema.md) `https://ns.adobe.com/xdm/context/placecontext`
 
 
-## ExperienceEvent Environment Details Example
+## ExperienceEvent environment details Example
 ```json
 {
   "xdm:environment": {
@@ -67,19 +67,19 @@ This mixin is used to capture information regarding environment details related 
 }
 ```
 
-# ExperienceEvent Environment Details Properties
+# ExperienceEvent environment details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:device](#xdmdevice) | Device | Optional | ExperienceEvent Environment Details (this schema) |
-| [xdm:environment](#xdmenvironment) | Environment | Optional | ExperienceEvent Environment Details (this schema) |
-| [xdm:placeContext](#xdmplacecontext) | Place Context | Optional | ExperienceEvent Environment Details (this schema) |
+| [xdm:device](#xdmdevice) | Device | Optional | ExperienceEvent environment details (this schema) |
+| [xdm:environment](#xdmenvironment) | Environment | Optional | ExperienceEvent environment details (this schema) |
+| [xdm:placeContext](#xdmplacecontext) | Place context | Optional | ExperienceEvent environment details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:device
 ### Device
 
-An identified Device/Application or Device/Browser instance that is trackable across sessions, normally by cookies.
+An identified device, application or device browser instance that is trackable across sessions, normally by cookies.
 
 `xdm:device`
 * is optional
@@ -115,19 +115,19 @@ Information about the surrounding situation the event observation occurred in, s
 
 
 ## xdm:placeContext
-### Place Context
+### Place context
 
-The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, working hours.
+The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, and working hours.
 
 `xdm:placeContext`
 * is optional
-* type: Place Context
+* type: Place context
 * defined in this schema
 
 ### xdm:placeContext Type
 
 
-* [Place Context](placecontext.schema.md) – `https://ns.adobe.com/xdm/context/placecontext`
+* [Place context](placecontext.schema.md) – `https://ns.adobe.com/xdm/context/placecontext`
 
 
 

@@ -1,0 +1,70 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/graph",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "XDM Graph Schema",
+  "type": "object",
+  "description": "XDM graph schema to host graph data.",
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/graphs"
+  ],
+  "definitions": {
+    "graph": {
+      "properties": {
+        "xdm:graphId": {
+          "title": "Graph Identifier",
+          "description": "The unique identifier of the identity associated with this graph.",
+          "type": "string"
+        },
+        "xdm:label": {
+          "title": "Graph Label",
+          "description": "Graph label.",
+          "type": "string"
+        },
+        "xdm:directed": {
+          "title": "Directed Graph Indicator",
+          "description": "Directed graph indicator.",
+          "type": "boolean",
+          "default": true
+        },
+        "xdm:graphType": {
+          "title": "Graph Type",
+          "description": "Graph type. Examples - Person graph, Third party graph, Private graph etc.",
+          "type": "string"
+        },
+        "xdm:firstCreatedTimestamp": {
+          "title": "Graph Created Date And Time",
+          "description": "Time and date this graph was created.",
+          "type": "string",
+          "format": "date-time"
+        },
+        "xdm:lastModifiedTimestamp": {
+          "title": "Graph Last Modified Date And Time",
+          "description": "Time and date this graph was last modified.",
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/graph"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/auditable"
+    }
+  ],
+  "meta:status": "experimental"
+}

@@ -14,7 +14,7 @@
     "meta:abstract": true,
     "meta:extends": [
         "https://ns.adobe.com/xdm/data/record",
-        "https://ns.adobe.com/xdm/context/identitymap"
+        "https://ns.adobe.com/xdm/common/auditable"
     ],
     "description": "An XDM Individual Profile forms a singular representation of the attributes and interests of both identified and partially-identified individuals. Less-identified profiles may contain only anonymous behavioral signals, such as browser cookies, while highly-identified profiles may contain detailed personal information such as name, date of birth, location, and email address. As a profile grows, it becomes a robust repository of personal information, identification information, contact details, and communication preferences for an individual.",
     "definitions": {

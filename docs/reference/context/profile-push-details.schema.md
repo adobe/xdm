@@ -1,5 +1,5 @@
 
-# Profile Push Details Schema
+# Profile push details Schema
 
 ```
 https://ns.adobe.com/xdm/context/profile-push-details
@@ -12,11 +12,11 @@ This mixin is used to capture information regarding push notifications including
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/profile-push-details.schema.json](context/profile-push-details.schema.json) |
 ## Schema Hierarchy
 
-* Profile Push Details `https://ns.adobe.com/xdm/context/profile-push-details`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* Profile push details `https://ns.adobe.com/xdm/context/profile-push-details`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
-## Profile Push Details Example
+## Profile push details Example
 ```json
 {
   "xdm:pushNotificationTokens": [
@@ -66,31 +66,31 @@ This mixin is used to capture information regarding push notifications including
 }
 ```
 
-# Profile Push Details Properties
+# Profile push details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:pushNotificationTokens](#xdmpushnotificationtokens) | Push Notification Token | Optional | Profile Push Details (this schema) |
+| [xdm:pushNotificationTokens](#xdmpushnotificationtokens) | Push notification token | Optional | Profile push details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:pushNotificationTokens
-### Push Notification Tokens
+### Push notification tokens
 
 Push notification tokens are used to communicate with applications that are installed on devices or SaaS application accounts.
 
 `xdm:pushNotificationTokens`
 * is optional
-* type: Push Notification Token
+* type: Push notification token
 
 * defined in this schema
 
 ### xdm:pushNotificationTokens Type
 
 
-Array type: Push Notification Token
+Array type: Push notification token
 
 All items must be of the type:
-* [Push Notification Token](pushnotificationtoken.schema.md) – `https://ns.adobe.com/xdm/context/pushnotificationtoken`
+* [Push notification token](pushnotificationtoken.schema.md) – `https://ns.adobe.com/xdm/context/pushnotificationtoken`
 
 
 

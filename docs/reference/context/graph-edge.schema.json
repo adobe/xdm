@@ -1,0 +1,169 @@
+{
+    "meta:license": [
+        "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/context/graph-edge",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "XDM Graph Edge",
+    "type": "object",
+    "description": "XDM graph schema for edge/relationship between two nodes/vertices.",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/graphs"
+    ],
+    "definitions": {
+        "graph-edge": {
+            "properties": {
+                "xdm:edges": {
+                    "title": "Array Of Edges",
+                    "description": "Array of edges.",
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "xdm:edgeId": {
+                                "title": "Edge Identifier",
+                                "description": "The unique identifier of the identity associated with this graph edge.",
+                                "type": "string"
+                            },
+                            "xdm:sourceNodeId": {
+                                "title": "Source Node Id",
+                                "description": "Source node identifier.",
+                                "type": "string"
+                            },
+                            "xdm:targetNodeId": {
+                                "title": "Target Node Id",
+                                "description": "Target node identifier.",
+                                "type": "string"
+                            },
+                            "xdm:relation": {
+                                "title": "Relation Description",
+                                "description": "Relation description.",
+                                "type": "string"
+                            },
+                            "xdm:label": {
+                                "title": "Label",
+                                "description": "Additional description.",
+                                "type": "string"
+                            },
+                            "xdm:dataProvider": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "xdm:dataProviderId": {
+                                            "title": "Data Provider Id",
+                                            "description": "Identifier of the Data Provider..",
+                                            "type": "integer"
+                                        },
+                                        "xdm:firstSeenTimestamp": {
+                                            "title": "Relationship Observed Time and Date",
+                                            "description": "Time and date the relation was first observed.",
+                                            "type": "string",
+                                            "format": "date-time"
+                                        },
+                                        "xdm:lastSeenTimestamp": {
+                                            "title": "Relationship Observed most recent Time and Date",
+                                            "description": "Time and date the relation was last observed.",
+                                            "type": "string",
+                                            "format": "date-time"
+                                        },
+                                        "xdm:trusted": {
+                                            "title": "Trusted Data Source Flag",
+                                            "description": "Indicator of whether the data source is trusted or not.",
+                                            "type": "boolean",
+                                            "default": true
+                                        },
+                                        "xdm:directed": {
+                                            "title": "Directed Or Birectional",
+                                            "description": "Nature of graph whether it is directed or birectional.",
+                                            "type": "boolean",
+                                            "default": false
+                                        },
+                                        "xdm:relationType": {
+                                            "title": "Relationship Type",
+                                            "description": "The method that established the relationship - Online/Offline deterministic/probabilistic.",
+                                            "type": "string",
+                                            "enum": [
+                                                "online_deterministic",
+                                                "online_probabilistic",
+                                                "offline_deterministic",
+                                                "offline_probabilistic"
+                                            ],
+                                            "meta:enum": {
+                                                "online_deterministic": "Online Deterministic",
+                                                "online_probabilistic": "Online Probabilistic",
+                                                "offline_deterministic": "Offline Deterministic",
+                                                "offline_probabilistic": "Offline Probabilistic"
+                                            }
+                                        },
+                                        "xdm:frequency": {
+                                            "title": "Frequency",
+                                            "description": "Frequency of the observed relationship.",
+                                            "type": "integer"
+                                        },
+                                        "xdm:score": {
+                                            "title": "Relationship Score",
+                                            "description": "Imputed score of relationship.",
+                                            "type": "number"
+                                        },
+                                        "xdm:summedRecency": {
+                                            "title": "Recency Score",
+                                            "description": "Recency score of relationship.",
+                                            "type": "integer"
+                                        },
+                                        "xdm:lastCalculatedTimestamp": {
+                                            "title": "Last Calculated Data And Time",
+                                            "description": "Time and date the relationship score was last calculated.",
+                                            "type": "string",
+                                            "format": "date-time"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/graph-edge"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/auditable"
+        }
+    ],
+    "meta:status": "experimental",
+    "examples": [
+        {
+            "xdm:edges": [
+                {
+                    "xdm:sourceNodeId": "aam_1|0",
+                    "xdm:targetNodeId": "dpuuid_1|10",
+                    "xdm:dataProvider": [
+                        {
+                            "xdm:dataProviderId": 5,
+                            "xdm:firstSeenTimestamp": "2019-02-01T15:52:25+00:00",
+                            "xdm:lastSeenTimestamp": "2019-02-01T15:52:25+00:00",
+                            "xdm:trusted": true,
+                            "xdm:directed": false,
+                            "xdm:relationType": "online_deterministic",
+                            "xdm:frequency": 1,
+                            "xdm:lastCalculatedTimestamp": "2019-02-01T15:52:25+00:00"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

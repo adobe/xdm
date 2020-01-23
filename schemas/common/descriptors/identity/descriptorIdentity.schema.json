@@ -36,6 +36,7 @@
         },
         "xdm:isPrimary": {
           "title": "Is primary key or not",
+          "type": "boolean",
           "description": "When present, only one field should be marked as the primary. Default is false."
         }
       },

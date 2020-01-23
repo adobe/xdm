@@ -1,5 +1,5 @@
 
-# Web Page Details Schema
+# Web page details Schema
 
 ```
 https://ns.adobe.com/xdm/context/webpagedetails
@@ -16,12 +16,12 @@ For interactions that are happening on a loaded page that do not trigger a new p
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/webpagedetails.schema.json](context/webpagedetails.schema.json) |
 ## Schema Hierarchy
 
-* Web Page Details `https://ns.adobe.com/xdm/context/webpagedetails`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* Web page details `https://ns.adobe.com/xdm/context/webpagedetails`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Measure](../data/measure.schema.md) `https://ns.adobe.com/xdm/data/measure`
 
 
-## Web Page Details Example
+## Web page details Example
 ```json
 {
   "xdm:siteSection": "Product section",
@@ -36,17 +36,17 @@ For interactions that are happening on a loaded page that do not trigger a new p
 }
 ```
 
-# Web Page Details Properties
+# Web page details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:URL](#xdmurl) | `string` | Optional | Web Page Details (this schema) |
-| [xdm:isErrorPage](#xdmiserrorpage) | `boolean` | Optional | Web Page Details (this schema) |
-| [xdm:isHomePage](#xdmishomepage) | `boolean` | Optional | Web Page Details (this schema) |
-| [xdm:name](#xdmname) | `string` | Optional | Web Page Details (this schema) |
-| [xdm:pageViews](#xdmpageviews) | Measure | Optional | Web Page Details (this schema) |
-| [xdm:server](#xdmserver) | `string` | Optional | Web Page Details (this schema) |
-| [xdm:siteSection](#xdmsitesection) | `string` | Optional | Web Page Details (this schema) |
+| [xdm:URL](#xdmurl) | `string` | Optional | Web page details (this schema) |
+| [xdm:isErrorPage](#xdmiserrorpage) | `boolean` | Optional | Web page details (this schema) |
+| [xdm:isHomePage](#xdmishomepage) | `boolean` | Optional | Web page details (this schema) |
+| [xdm:name](#xdmname) | `string` | Optional | Web page details (this schema) |
+| [xdm:pageViews](#xdmpageviews) | Measure | Optional | Web page details (this schema) |
+| [xdm:server](#xdmserver) | `string` | Optional | Web page details (this schema) |
+| [xdm:siteSection](#xdmsitesection) | `string` | Optional | Web page details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:URL
@@ -71,7 +71,7 @@ The normative or usual URL of the web page.  This may or may not be the actual U
 
 
 ## xdm:isErrorPage
-### Is Error Page
+### Is error page
 
 Flag that indicate if the page is error page or not.  Error here is defined by the application, and may nor may not correspond to a page served with an HTTP error code.  This flag is used to broadly categorize web interactions.
 
@@ -90,7 +90,7 @@ Flag that indicate if the page is error page or not.  Error here is defined by t
 
 
 ## xdm:isHomePage
-### Is Home Page
+### Is home page
 
 Flag that indicate if the page is the site home page or not.  The definition of home page is determined by the application, but is commonly used to designate a top level landing page or common site entry point.  This flag is used to broadly categorize web interactions.
 
@@ -167,7 +167,7 @@ The normative or usual server that hosts the web page.  This may or may not be t
 
 
 ## xdm:siteSection
-### Site Section
+### Site section
 
 The normative name of the site section where this web page resides, which may be used to classify or categorize the interaction.
 

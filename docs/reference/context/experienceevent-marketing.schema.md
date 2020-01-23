@@ -1,5 +1,5 @@
 
-# ExperienceEvent Details for Marketing Schema
+# ExperienceEvent details for marketing Schema
 
 ```
 https://ns.adobe.com/xdm/context/experienceevent-marketing
@@ -12,12 +12,12 @@ This mixin is used to capture information regarding marketing campaigns details 
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/experienceevent-marketing.schema.json](context/experienceevent-marketing.schema.json) |
 ## Schema Hierarchy
 
-* ExperienceEvent Details for Marketing `https://ns.adobe.com/xdm/context/experienceevent-marketing`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* ExperienceEvent details for marketing `https://ns.adobe.com/xdm/context/experienceevent-marketing`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Marketing](marketing.schema.md) `https://ns.adobe.com/xdm/context/marketing`
 
 
-## ExperienceEvent Details for Marketing Example
+## ExperienceEvent details for marketing Example
 ```json
 {
   "xdm:marketing": {
@@ -26,11 +26,11 @@ This mixin is used to capture information regarding marketing campaigns details 
 }
 ```
 
-# ExperienceEvent Details for Marketing Properties
+# ExperienceEvent details for marketing Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:marketing](#xdmmarketing) | Marketing | Optional | ExperienceEvent Details for Marketing (this schema) |
+| [xdm:marketing](#xdmmarketing) | Marketing | Optional | ExperienceEvent details for marketing (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:marketing

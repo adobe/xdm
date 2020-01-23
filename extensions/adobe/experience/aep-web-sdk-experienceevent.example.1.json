@@ -1,0 +1,47 @@
+{
+  "xdm:identityMap": {
+    "Email_LC_SHA256": [
+      {
+        "id": "81d1a7135b9722577fb4f094a2004296d6230512d37b68e64b73f050b919f7c4",
+        "authenticatedState": "ambiguous",
+        "primary": true
+      }
+    ],
+    "HYP": [
+      {
+        "id": "1234",
+        "authenticatedState": "ambiguous"
+      }
+    ]
+  },
+  "xdm:web": {
+    "xdm:webPageDetails": {
+      "xdm:URL": "http://localhost:3000/"
+    },
+    "xdm:webReferrer": {
+      "xdm:URL": ""
+    }
+  },
+  "xdm:device": {
+    "xdm:screenHeight": 1692,
+    "xdm:screenWidth": 3008,
+    "xdm:screenOrientation": "landscape"
+  },
+  "xdm:environment": {
+    "xdm:type": "browser",
+    "xdm:browserDetails": {
+      "xdm:viewportWidth": 1586,
+      "xdm:viewportHeight": 555
+    }
+  },
+  "xdm:placeContext": {
+    "xdm:localTime": "2020-01-07T15:11:14.143-07:00",
+    "xdm:localTimezoneOffset": 420
+  },
+  "xdm:timestamp": "2020-01-07T22:11:14.143Z",
+  "xdm:implementationDetails": {
+    "xdm:name": "https://ns.adobe.com/experience/alloy",
+    "xdm:version": "0.0.11"
+  },
+  "xdm:eventType": "page-view"
+}

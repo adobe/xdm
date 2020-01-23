@@ -13,7 +13,7 @@ LINE is an app for free instant messaging, voice and video calls, available on a
 ## Schema Hierarchy
 
 * LINE Channel `https://ns.adobe.com/xdm/channels/line`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
 

@@ -1,5 +1,5 @@
 
-# End-User IDs Schema
+# End user IDs Schema
 
 ```
 https://ns.adobe.com/xdm/context/enduserids
@@ -18,12 +18,12 @@ Additionally, this schema can include a property that describes the data source 
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/enduserids.schema.json](context/enduserids.schema.json) |
 ## Schema Hierarchy
 
-* End-User IDs `https://ns.adobe.com/xdm/context/enduserids`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* End user IDs `https://ns.adobe.com/xdm/context/enduserids`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Identity](identity.schema.md) `https://ns.adobe.com/xdm/context/identity`
 
 
-## End-User IDs Example
+## End user IDs Example
 ```json
 {
   "https://ns.adobe.com/experience/mcid": {
@@ -47,22 +47,22 @@ Additionally, this schema can include a property that describes the data source 
 }
 ```
 
-# End-User IDs Properties
+# End user IDs Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [https://ns.adobe.com/experience/aacustomid](#httpsnsadobecomexperienceaacustomid) | Identity | Optional | End-User IDs (this schema) |
-| [https://ns.adobe.com/experience/aaid](#httpsnsadobecomexperienceaaid) | Identity | Optional | End-User IDs (this schema) |
-| [https://ns.adobe.com/experience/acid](#httpsnsadobecomexperienceacid) | Identity | Optional | End-User IDs (this schema) |
-| [https://ns.adobe.com/experience/adcloud](#httpsnsadobecomexperienceadcloud) | Identity | Optional | End-User IDs (this schema) |
-| [https://ns.adobe.com/experience/emailid](#httpsnsadobecomexperienceemailid) | Identity | Optional | End-User IDs (this schema) |
-| [https://ns.adobe.com/experience/mcid](#httpsnsadobecomexperiencemcid) | Identity | Optional | End-User IDs (this schema) |
-| [https://ns.adobe.com/experience/phonenumberid](#httpsnsadobecomexperiencephonenumberid) | Identity | Optional | End-User IDs (this schema) |
-| [https://ns.adobe.com/experience/tntid](#httpsnsadobecomexperiencetntid) | Identity | Optional | End-User IDs (this schema) |
+| [https://ns.adobe.com/experience/aacustomid](#httpsnsadobecomexperienceaacustomid) | Identity | Optional | End user IDs (this schema) |
+| [https://ns.adobe.com/experience/aaid](#httpsnsadobecomexperienceaaid) | Identity | Optional | End user IDs (this schema) |
+| [https://ns.adobe.com/experience/acid](#httpsnsadobecomexperienceacid) | Identity | Optional | End user IDs (this schema) |
+| [https://ns.adobe.com/experience/adcloud](#httpsnsadobecomexperienceadcloud) | Identity | Optional | End user IDs (this schema) |
+| [https://ns.adobe.com/experience/emailid](#httpsnsadobecomexperienceemailid) | Identity | Optional | End user IDs (this schema) |
+| [https://ns.adobe.com/experience/mcid](#httpsnsadobecomexperiencemcid) | Identity | Optional | End user IDs (this schema) |
+| [https://ns.adobe.com/experience/phonenumberid](#httpsnsadobecomexperiencephonenumberid) | Identity | Optional | End user IDs (this schema) |
+| [https://ns.adobe.com/experience/tntid](#httpsnsadobecomexperiencetntid) | Identity | Optional | End user IDs (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## https://ns.adobe.com/experience/aacustomid
-### Adobe Analytics Cloud Custom End-User IDs
+### Adobe Analytics Cloud Custom end user IDs
 
 An Adobe Analytics custom identifier passed in on a hit.
 
@@ -81,9 +81,9 @@ An Adobe Analytics custom identifier passed in on a hit.
 
 
 ## https://ns.adobe.com/experience/aaid
-### Adobe Analytics Cloud End-User IDs
+### Adobe Analytics Cloud end user IDs
 
-Adobe Analytics Cloud extension to end-user IDs.
+Adobe Analytics Cloud extension to end user IDs.
 
 `https://ns.adobe.com/experience/aaid`
 * is optional
@@ -100,9 +100,9 @@ Adobe Analytics Cloud extension to end-user IDs.
 
 
 ## https://ns.adobe.com/experience/acid
-### Adobe Campaign End-User IDs
+### Adobe Campaign end user IDs
 
-Adobe Campaign extension to end-user IDs.
+Adobe Campaign extension to end user IDs.
 
 `https://ns.adobe.com/experience/acid`
 * is optional
@@ -119,9 +119,9 @@ Adobe Campaign extension to end-user IDs.
 
 
 ## https://ns.adobe.com/experience/adcloud
-### Adobe Advertising Cloud End-User IDs
+### Adobe Advertising Cloud end user IDs
 
-Adobe Advertising Cloud extension to end-user IDs.
+Adobe Advertising Cloud extension to end user IDs.
 
 `https://ns.adobe.com/experience/adcloud`
 * is optional
@@ -138,7 +138,7 @@ Adobe Advertising Cloud extension to end-user IDs.
 
 
 ## https://ns.adobe.com/experience/emailid
-### Email Address IDs
+### Email address IDs
 
 Email addresses used as IDs.
 
@@ -176,7 +176,7 @@ A unique identifier from Adobe Marketing Cloud.
 
 
 ## https://ns.adobe.com/experience/phonenumberid
-### Phone Number IDs
+### Phone number IDs
 
 Phone numbers used as IDs.
 
@@ -195,9 +195,9 @@ Phone numbers used as IDs.
 
 
 ## https://ns.adobe.com/experience/tntid
-### Adobe Target End-User IDs
+### Adobe Target end user IDs
 
-Adobe Target extension to end-user IDs.
+Adobe Target extension to end user IDs.
 
 `https://ns.adobe.com/experience/tntid`
 * is optional

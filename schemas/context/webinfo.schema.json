@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/webinfo",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Web Information",
+  "title": "Web information",
   "type": "object",
   "meta:status": "stabilizing",
   "meta:extensible": true,
@@ -16,19 +16,19 @@
     "webinfo": {
       "properties": {
         "xdm:webPageDetails": {
-          "title": "Web Page Details",
+          "title": "Web page details",
           "$ref": "https://ns.adobe.com/xdm/context/webpagedetails",
           "description":
             "Details about the web page where the web interaction occurred."
         },
         "xdm:webInteraction": {
-          "title": "Web Interaction",
+          "title": "Web interaction",
           "$ref": "https://ns.adobe.com/xdm/context/webinteraction",
           "description":
-            "Details about the web link (URL) that corresponds to where the interaction occurred."
+            "Details about the web link or URL that corresponds to where the interaction occurred."
         },
         "xdm:webReferrer": {
-          "title": "Web Referrer",
+          "title": "Web referrer",
           "$ref": "https://ns.adobe.com/xdm/context/webreferrer",
           "description":
             "The referrer of a web interaction, which is the URL a visitor came from immediately before the current web interaction was recorded."

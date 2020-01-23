@@ -7,7 +7,7 @@
     ],
     "$id": "https://ns.adobe.com/xdm/context/segmentdefinition",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Segment Definition",
+    "title": "Segment definition",
     "type": "object",
     "meta:extensible": true,
     "meta:abstract": true,
@@ -20,30 +20,30 @@
         "segmentdefinition": {
             "properties": {
                 "xdm:segmentIdentity": {
-                    "title": "Segment Identity",
+                    "title": "Segment identity",
                     "$ref": "https://ns.adobe.com/xdm/context/segmentidentity",
-                    "description": "Identity of the segment",
+                    "description": "Identity of the segment.",
                     "meta:status": "deprecated"
                 },
                 "xdm:segmentName": {
                     "title": "Segment name",
                     "type": "string",
-                    "description": "Name of the segment"
+                    "description": "Name of the segment."
                 },
                 "xdm:description": {
                     "title": "Segment description",
                     "type": "string",
-                    "description": "Description of the segment"
+                    "description": "Description of the segment."
                 },
                 "xdm:version": {
                     "title": "Segment version",
                     "type": "string",
-                    "description": "Version of the segment"
+                    "description": "Version of the segment."
                 },
                 "xdm:segmentStatus": {
                     "type": "string",
                     "title": "Segment status",
-                    "description": "Current status of segment from external system normalized to ACTIVE/INACTIVE",
+                    "description": "Current status of segment from external system normalized to active or inactive.",
                     "enum": [
                         "ACTIVE",
                         "INACTIVE",

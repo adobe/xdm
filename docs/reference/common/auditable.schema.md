@@ -1,22 +1,22 @@
 
-# Audit Trail Schema
+# Audit trail Schema
 
 ```
 https://ns.adobe.com/xdm/common/auditable
 ```
 
-Inclusion of this schema indicates that the data record is auditable, i.e. it can be determined when the record has last been modified and by whom.
+The audit trail schema indicates a data record is auditable. For example, who and when the record was last modified.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [common/auditable.schema.json](common/auditable.schema.json) |
 ## Schema Hierarchy
 
-* Audit Trail `https://ns.adobe.com/xdm/common/auditable`
+* Audit trail `https://ns.adobe.com/xdm/common/auditable`
   * [Common Properties](../external/repo/common.schema.md) `http://ns.adobe.com/adobecloud/core/1.0`
 
 
-## Audit Trail Example
+## Audit trail Example
 ```json
 {
   "repo:createDate": "2018-01-12T15:52:25+00:00",
@@ -28,16 +28,16 @@ Inclusion of this schema indicates that the data record is auditable, i.e. it ca
 }
 ```
 
-# Audit Trail Properties
+# Audit trail Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [repo:createDate](#repocreatedate) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#repocreatedate) |
 | [repo:modifyDate](#repomodifydate) | `string` | Optional | [Common Properties](../external/repo/common.schema.md#repomodifydate) |
-| [xdm:createdByBatchID](#xdmcreatedbybatchid) | `string` | Optional | Audit Trail (this schema) |
-| [xdm:modifiedByBatchID](#xdmmodifiedbybatchid) | `string` | Optional | Audit Trail (this schema) |
-| [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | Optional | Audit Trail (this schema) |
-| [xdm:repositoryLastModifiedBy](#xdmrepositorylastmodifiedby) | `string` | Optional | Audit Trail (this schema) |
+| [xdm:createdByBatchID](#xdmcreatedbybatchid) | `string` | Optional | Audit trail (this schema) |
+| [xdm:modifiedByBatchID](#xdmmodifiedbybatchid) | `string` | Optional | Audit trail (this schema) |
+| [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | Optional | Audit trail (this schema) |
+| [xdm:repositoryLastModifiedBy](#xdmrepositorylastmodifiedby) | `string` | Optional | Audit trail (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## repo:createDate
@@ -91,9 +91,9 @@ The server date and time when the resource was last modified in the repository, 
 
 
 ## xdm:createdByBatchID
-### Created by Batch Identifier
+### Created by batch identifier
 
-The dataset files in Catalog Services which has been originating the creation of the entity.
+The dataset files in Catalog which has been originating the creation of the record.
 
 `xdm:createdByBatchID`
 * is optional
@@ -112,9 +112,9 @@ The dataset files in Catalog Services which has been originating the creation of
 
 
 ## xdm:modifiedByBatchID
-### Modified by Batch Identifier
+### Modified by batch identifier
 
-The last dataset files in Catalog Services which has modified the entity. At creation time, `modifiedByBatchID` is set as `createdByBatchID`.
+The last dataset files in Catalog which has modified the record. At creation time, `modifiedByBatchID` is set as `createdByBatchID`.
 
 `xdm:modifiedByBatchID`
 * is optional
@@ -133,9 +133,9 @@ The last dataset files in Catalog Services which has modified the entity. At cre
 
 
 ## xdm:repositoryCreatedBy
-### Created by User Identifier
+### Created by user identifier
 
-User ID who has created the entity.
+User ID of who created the record.
 
 `xdm:repositoryCreatedBy`
 * is optional
@@ -153,9 +153,9 @@ User ID who has created the entity.
 
 
 ## xdm:repositoryLastModifiedBy
-### Modified by User Identifier
+### Modified by user identifier
 
-User ID who last modified the entity. At creation time, `modifiedByUser` is set as `createdByUser`.
+User ID of who last modified the record. At creation time, `modifiedByUser` is set as `createdByUser`.
 
 `xdm:repositoryLastModifiedBy`
 * is optional

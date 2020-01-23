@@ -10,7 +10,7 @@
   "title": "Commerce",
   "type": "object",
   "meta:extensible": true,
-  "description": "The entities related to buying and selling activity.",
+  "description": "The records related to buying and selling activity.",
   "definitions": {
     "commerce": {
       "properties": {
@@ -22,7 +22,7 @@
         "xdm:cartAbandons": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
-            "A product list has been identified as no longer accessible (e.g purchasable) by the user."
+            "A product list has been identified as no longer accessible or purchasable by the user."
         },
         "xdm:checkouts": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
@@ -32,30 +32,30 @@
         "xdm:productListAdds": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
-            "Addition of a product to the product list. Example a product is added to a shopping cart."
+            "Addition of a product to the product list, for example a product is added to a shopping cart."
         },
         "xdm:productListOpens": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
-            "Initializations of a new product list. Example a shopping cart is created."
+            "Initializations of a new product list, for example a shopping cart is created."
         },
         "xdm:productListRemovals": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
-            "Removal(s) of a product entry from a product list. Example a product is removed from a shopping cart."
+            "Removal or removals of a product entry from a product list, for example a product is removed from a shopping cart."
         },
         "xdm:productListReopens": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
-            "A product list that was no longer accessible(abandoned) has been re-activated by the user. Example via a re-marketing activity."
+            "A product list that was no longer accessible (abandoned) has been re-activated by the user. Example via a re-marketing activity."
         },
         "xdm:productListViews": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "View(s) of a product-list has occurred."
+          "description": "View or views of a product-list has occurred."
         },
         "xdm:productViews": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "View(s) of a product have occurred."
+          "description": "View or views of a product have occurred."
         },
         "xdm:purchases": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
@@ -65,12 +65,12 @@
         "xdm:saveForLaters": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
-            "Product list is saved for future use. Example a product wish list."
+            "Product list is saved for future use, for example a product wish list."
         },
         "xdm:inStorePurchase": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
-          "inStore Purchase is saved for Analytics use."
+          "'inStore' purchase is saved for analytics use."
         }
       }
     }

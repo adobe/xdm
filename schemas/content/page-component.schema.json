@@ -8,7 +8,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/xdm/content/page-component",
   "type": "object",
-  "title": "Page Component",
+  "title": "Page component",
   "meta:extensible": true,
   "description": "",
   "definitions": {
@@ -18,7 +18,7 @@
           "type": "string",
           "format": "uri",
           "description":
-            "Type of the component. Acts as processing hint for the client."
+            "Type of the component and acts as processing hint for the client."
         }
       }
     }

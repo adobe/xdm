@@ -15,15 +15,15 @@
         "search": {
             "properties": {
                 "xdm:searchEngine": {
-                    "title": "Search Engine",
+                    "title": "Search engine",
                     "type": "string",
                     "description": "The search engine used by the search."
                 },
                 "xdm:searchEngineID": {
-                    "title": "Search Engine ID",
+                    "title": "Search engine ID",
                     "type": "string",
                     "format": "uri",
-                    "description": "The application-specified identifier used to identify the search engine used by the search."
+                    "description": "The application specified identifier used to identify the search engine used by the search."
                 },
                 "xdm:keywords": {
                     "title": "Keywords",
@@ -31,28 +31,28 @@
                     "description": "Keywords for the search."
                 },
                 "xdm:isPaid": {
-                    "title": "Is Paid",
+                    "title": "Is paid",
                     "type": "boolean",
                     "description": "Indicate if the search is paid or not."
                 },
                 "xdm:pageDepth": {
-                    "title": "Page Depth",
+                    "title": "Page depth",
                     "type": "integer",
                     "description": "Page depth in the search results."
                 },
                 "xdm:slot": {
-                    "title": "Page Slot",
+                    "title": "Page slot",
                     "type": "string",
-                    "description": "Named section of the page where the search result appeared. For eg. Top, Side.",
+                    "description": "Named section of the page where the search result appeared, for example, top or side.",
                     "meta:enum": {
                         "top": "Top of the page",
                         "side": "Side of the page"
                     }
                 },
                 "xdm:position": {
-                    "title": "Listing Position",
+                    "title": "Listing position",
                     "type": "integer",
-                    "description": "Position (rank) of the listing in the search result page."
+                    "description": "Position or rank of the listing in the search result page."
                 }
             }
         }

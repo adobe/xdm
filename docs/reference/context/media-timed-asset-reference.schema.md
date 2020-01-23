@@ -1,25 +1,25 @@
 
-# Timed Media Primary Asset Reference Schema
+# Timed media primary asset reference Schema
 
 ```
 https://ns.adobe.com/xdm/context/media-timed-asset-reference
 ```
 
-Asset information about the main content that was played, but present on all ads and chapters that occur during the content's playback as well.
+Asset information about the main content that was played, but present on all ads and chapters that occur during the content playback.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/media-timed-asset-reference.schema.json](context/media-timed-asset-reference.schema.json) |
 ## Schema Hierarchy
 
-* Timed Media Primary Asset Reference `https://ns.adobe.com/xdm/context/media-timed-asset-reference`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* Timed media primary asset reference `https://ns.adobe.com/xdm/context/media-timed-asset-reference`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Series](../external/iptc/series.schema.md) `http://www.iptc.org/series`
   * [Episode](../external/iptc/episode.schema.md) `http://www.iptc.org/season`
   * [Season](../external/iptc/season.schema.md) `http://www.iptc.org/episode`
 
 
-## Timed Media Primary Asset Reference Example
+## Timed media primary asset reference Example
 ```json
 {
   "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234430",
@@ -54,27 +54,27 @@ Asset information about the main content that was played, but present on all ads
 }
 ```
 
-# Timed Media Primary Asset Reference Properties
+# Timed media primary asset reference Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#id) | `string` | Optional | Timed Media Primary Asset Reference (this schema) |
-| [dc:title](#dctitle) | `string` | Optional | Timed Media Primary Asset Reference (this schema) |
-| [iptc4xmpExt:Creator](#iptc4xmpextcreator) | Creator | Optional | Timed Media Primary Asset Reference (this schema) |
-| [iptc4xmpExt:Episode](#iptc4xmpextepisode) | Season | Optional | Timed Media Primary Asset Reference (this schema) |
-| [iptc4xmpExt:Genre](#iptc4xmpextgenre) | `string[]` | Optional | Timed Media Primary Asset Reference (this schema) |
-| [iptc4xmpExt:Rating](#iptc4xmpextrating) | Rating | Optional | Timed Media Primary Asset Reference (this schema) |
-| [iptc4xmpExt:Season](#iptc4xmpextseason) | Episode | Optional | Timed Media Primary Asset Reference (this schema) |
-| [iptc4xmpExt:Series](#iptc4xmpextseries) | Series | Optional | Timed Media Primary Asset Reference (this schema) |
-| [xdm:showType](#xdmshowtype) | `string` | Optional | Timed Media Primary Asset Reference (this schema) |
-| [xdm:streamFormat](#xdmstreamformat) | `string` | Optional | Timed Media Primary Asset Reference (this schema) |
-| [xmpDM:duration](#xmpdmduration) | `integer` | Optional | Timed Media Primary Asset Reference (this schema) |
+| [@id](#id) | `string` | Optional | Timed media primary asset reference (this schema) |
+| [dc:title](#dctitle) | `string` | Optional | Timed media primary asset reference (this schema) |
+| [iptc4xmpExt:Creator](#iptc4xmpextcreator) | Creator | Optional | Timed media primary asset reference (this schema) |
+| [iptc4xmpExt:Episode](#iptc4xmpextepisode) | Season | Optional | Timed media primary asset reference (this schema) |
+| [iptc4xmpExt:Genre](#iptc4xmpextgenre) | `string[]` | Optional | Timed media primary asset reference (this schema) |
+| [iptc4xmpExt:Rating](#iptc4xmpextrating) | Rating | Optional | Timed media primary asset reference (this schema) |
+| [iptc4xmpExt:Season](#iptc4xmpextseason) | Episode | Optional | Timed media primary asset reference (this schema) |
+| [iptc4xmpExt:Series](#iptc4xmpextseries) | Series | Optional | Timed media primary asset reference (this schema) |
+| [xdm:showType](#xdmshowtype) | `string` | Optional | Timed media primary asset reference (this schema) |
+| [xdm:streamFormat](#xdmstreamformat) | `string` | Optional | Timed media primary asset reference (this schema) |
+| [xmpDM:duration](#xmpdmduration) | `integer` | Optional | Timed media primary asset reference (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
 ### Asset ID
 
-Identifier of the content, which can be used to tie back to other industry / CMS IDs.
+Identifier of the content, which can be used to tie back to other industry or CMS IDs.
 
 `@id`
 * is optional
@@ -93,9 +93,9 @@ Identifier of the content, which can be used to tie back to other industry / CMS
 
 
 ## dc:title
-### Media Name
+### Media name
 
-The friendly (human-readable) name of the timed media asset.
+The friendly, human-readable name of the timed media asset.
 
 `dc:title`
 * is optional
@@ -115,7 +115,7 @@ The friendly (human-readable) name of the timed media asset.
 ## iptc4xmpExt:Creator
 ### Creator
 
-Party or parties (person or organization) which created the video, refinement by the role attribute.
+Party or parties including person or organization which created the video, refinement by the role attribute.
 
 `iptc4xmpExt:Creator`
 * is optional
@@ -185,7 +185,7 @@ All items must be of the type:
 
 
 ## iptc4xmpExt:Rating
-### Content Rating
+### Content rating
 
 The rating as defined by Parental Guidelines.
 
@@ -249,9 +249,9 @@ The series the show belongs to.
 
 
 ## xdm:showType
-### Show Type
+### Show type
 
-The type of content e.g. Trailer, Full Episode.
+The type of content for example, trailer or full episode.
 
 `xdm:showType`
 * is optional
@@ -269,9 +269,9 @@ The type of content e.g. Trailer, Full Episode.
 
 
 ## xdm:streamFormat
-### Stream Format
+### Stream format
 
-Free-form format of the stream (e.g. short, long).
+Free-form format of the stream for example, short or long.
 
 `xdm:streamFormat`
 * is optional
@@ -289,7 +289,7 @@ Free-form format of the stream (e.g. short, long).
 
 
 ## xmpDM:duration
-### Media Length/Runtime
+### Media length runtime
 
 Length of primary media asset in seconds.
 

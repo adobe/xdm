@@ -13,7 +13,7 @@ The world wide web and mobile web channel are pages delivered via HTTP to a web 
 ## Schema Hierarchy
 
 * Web Channel `https://ns.adobe.com/xdm/channels/web`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
 

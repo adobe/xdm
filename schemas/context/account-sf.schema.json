@@ -170,11 +170,6 @@
           "title": "Jigsaw Company Id",
           "description": "Jigsaw company id",
           "type": "string"
-        },
-        "xdm:shippingAddress": {
-          "title": "Account Shipping Address",
-          "$ref": "https://ns.adobe.com/xdm/common/address",
-          "description": "Account shipping address."
         }
       }
     }

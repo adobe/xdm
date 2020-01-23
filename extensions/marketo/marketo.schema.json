@@ -30,7 +30,7 @@
         },
         "marketo:sourceId": {
           "title": "Opportunity Source Id",
-          "description": "Opportunity source unique identifer",
+          "description": "Opportunity source unique identifer reference",
           "type": "number"
         },
         "marketo:name": {
@@ -44,13 +44,13 @@
           "type": "string"
         },
         "marketo:accountOrgId": {
-          "title": "Account Org Id",
-          "description": "Account Org identifer reference",
+          "title": "Account Organization Id",
+          "description": "Account organization identifer reference",
           "type": "number"
         },
         "marketo:ownerPersonId": {
           "title": "Owner Person Id",
-          "description": "Contact unique ID reference.",
+          "description": "Contact unique identifer reference.",
           "type": "number"
         },
         "marketo:sourceCampaignId": {
@@ -60,7 +60,7 @@
         },
         "marketo:type": {
           "title": "Opportunity Type",
-          "description": "Type of Opportunity.",
+          "description": "Type of opportunity for example, Existing Business or New Business.",
           "type": "string"
         },
         "marketo:stage": {
@@ -70,17 +70,17 @@
         },
         "marketo:fiscalQuarter": {
           "title": "Fiscal Quarter",
-          "description": "Fiscal Quarter this opportunity is targeted.",
+          "description": "Fiscal Quarter this opportunity is targeted for.",
           "type": "number"
         },
         "marketo:fiscalYear": {
           "title": "Fiscal Year",
-          "description": "Fiscal Year this opportunity is targeted.",
+          "description": "Fiscal Year this opportunity is targeted for.",
           "type": "number"
         },
         "marketo:fiscal": {
           "title": "Fiscal Period",
-          "description": "Fiscal Period this opportunity is targeted.",
+          "description": "Fiscal period this opportunity is targeted for.",
           "type": "number"
         },
         "marketo:forcastCategory": {
@@ -130,7 +130,7 @@
         },
         "marketo:closeDate": {
           "title": "Close Date",
-          "description": "Date when you plan to close the opportunity.",
+          "description": "Opportunity closed date.",
           "type": "string",
           "format": "date-time"
         },
@@ -158,7 +158,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "#/definitions/Opportunity-marketo"
+      "$ref": "#/definitions/opportunity-marketo"
     }
   ],
   "meta:status": "experimental"

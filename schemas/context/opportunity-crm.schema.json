@@ -81,7 +81,7 @@
         },
         "xdm:contractId": {
           "title": "Contract Id",
-          "description": "Contract unique Identifier reference.",
+          "description": "Contract unique Identifier reference that the opportunity is linked to.",
           "type": "number"
         }
       }

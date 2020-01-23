@@ -34,54 +34,54 @@
           "type": "number"
         },
         "xdm:fiscalQuarter": {
-          "title": "Account targeted Indicator",
-          "description": "Indicator whether the Account is targeted.",
+          "title": "Fiscal Quarter",
+          "description": "Fiscal Quarter this opportunity is targeted..",
           "type": "number"
         },
         "xdm:hasOpportunityLineItem": {
-          "title": "Account Source Type",
-          "description": "Account source type.",
+          "title": "Has Opportunity Line Item",
+          "description": "Flag to indicate whether this opportunity have more line items.",
           "type": "boolean"
         },
         "xdm:probabilityPercentage": {
-          "title": "Logo URL",
-          "description": "Logo url.",
+          "title": "Probability Percentage",
+          "description": "Likelihood that opportunity will close, stated as a percentage.",
           "type": "string"
         },
         "xdm:isClosed": {
-          "title": "Account Created Date",
-          "description": "Account created date.",
+          "title": "Closed",
+          "description": "Flag indicating if this opportunity is closed.",
           "type": "boolean"
         },
         "xdm:isWon": {
-          "title": "Account Updated Date",
-          "description": "Account updated date.",
+          "title": "Won",
+          "description": "Flag indicating if this opportunity is Won.",
           "type": "boolean"
         },
         "xdm:closeDate": {
-          "title": "Account Updated Date",
-          "description": "Account updated date.",
+          "title": "Close Date",
+          "description": "Date when you plan to close the opportunity.",
           "type": "string",
           "format": "date-time"
         },
         "xdm:nextStep": {
-          "title": "Account Updated Date",
-          "description": "Account updated date.",
+          "title": "Next Step",
+          "description": "Description of next task in closing opportunity.",
           "type": "string"
         },
         "xdm:lastActivity": {
-          "title": "Account Updated Date",
-          "description": "Account updated date.",
+          "title": "Last Activity",
+          "description": "Last activity captured for this sales opportunity.",
           "type": "string"
         },
-        "xdm:private": {
-          "title": "Account Updated Date",
-          "description": "Account updated date.",
+        "xdm:isprivate": {
+          "title": "Private",
+          "description": "Indicates that the opportunity is private.",
           "type": "boolean"
         },
         "xdm:contractId": {
-          "title": "Account Updated Date",
-          "description": "Account updated date.",
+          "title": "Contract Id",
+          "description": "Contract unique Identifier reference.",
           "type": "number"
         }
       }

@@ -1,1 +1,13 @@
-{}
+{
+        "xdm:amount": 1000000,
+        "xdm:quantity": 1,
+        "xdm:fiscalYear": 2020,
+        "xdm:fiscalQuarter": 1,
+        "xdm:hasOpportunityLineItem": false,
+        "xdm:probabilityPercentage": "90%",
+        "xdm:isClosed": false,
+        "xdm:isWon": true,
+        "xdm:closeDate": "June 2020",
+        "xdm:private": true,
+        "xdm:contractId": 12345
+}

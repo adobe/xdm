@@ -18,73 +18,71 @@
   "definitions": {
     "opportunity-crm": {
       "properties": {
-            "xdm:amount": {
-              "title": "Opportunity Amount",
-              "description": "Marketo GUID Id.",
-              "type": "number"
-            },
-            "xdm:quantity": {
-              "title": "Opportunity Quantity",
-              "description": "CRM organization Id.",
-              "type": "number"
-            },
-            "xdm:fiscalYear": {
-              "title": "Fiscal Year",
-              "description": "Indicator whether the Account record is deleted or not.",
-              "type": "number"
-            },
-            "xdm:fiscalQuarter": {
-              "title": "Account targeted Indicator",
-              "description": "Indicator whether the Account is targeted.",
-              "type": "number"
-            },
-            "xdm:hasOpportunityLineItem": {
-              "title": "Account Source Type",
-              "description": "Account source type.",
-              "type": "boolean"
-            },
-            "xdm:probabilityPercentage": {
-              "title": "Logo URL",
-              "description": "Logo url.",
-              "type": "string"
-            },
-            "xdm:isClosed": {
-              "title": "Account Created Date",
-              "description": "Account created date.",
-              "type": "boolean"
-            },
-            "xdm:isWon": {
-              "title": "Account Updated Date",
-              "description": "Account updated date.",
-              "type": "boolean"
-            },
-            "xdm:closeDate": {
-              "title": "Account Updated Date",
-              "description": "Account updated date.",
-              "type": "string",
-              "format":"date-time"
-            },
-            "xdm:nextStep": {
-              "title": "Account Updated Date",
-              "description": "Account updated date.",
-              "type": "string"
-            },
-            "xdm:lastActivity": {
-              "title": "Account Updated Date",
-              "description": "Account updated date.",
-              "type": "string"
-            },
-            "xdm:private": {
-              "title": "Account Updated Date",
-              "description": "Account updated date.",
-              "type": "boolean"
-            },
-            "xdm:contractId": {
-              "title": "Account Updated Date",
-              "description": "Account updated date.",
-              "type": "number"
-            }
-          }
+        "xdm:amount": {
+          "title": "Opportunity Amount",
+          "description": "Marketo GUID Id.",
+          "type": "number"
+        },
+        "xdm:quantity": {
+          "title": "Opportunity Quantity",
+          "description": "CRM organization Id.",
+          "type": "number"
+        },
+        "xdm:fiscalYear": {
+          "title": "Fiscal Year",
+          "description": "Indicator whether the Account record is deleted or not.",
+          "type": "number"
+        },
+        "xdm:fiscalQuarter": {
+          "title": "Account targeted Indicator",
+          "description": "Indicator whether the Account is targeted.",
+          "type": "number"
+        },
+        "xdm:hasOpportunityLineItem": {
+          "title": "Account Source Type",
+          "description": "Account source type.",
+          "type": "boolean"
+        },
+        "xdm:probabilityPercentage": {
+          "title": "Logo URL",
+          "description": "Logo url.",
+          "type": "string"
+        },
+        "xdm:isClosed": {
+          "title": "Account Created Date",
+          "description": "Account created date.",
+          "type": "boolean"
+        },
+        "xdm:isWon": {
+          "title": "Account Updated Date",
+          "description": "Account updated date.",
+          "type": "boolean"
+        },
+        "xdm:closeDate": {
+          "title": "Account Updated Date",
+          "description": "Account updated date.",
+          "type": "string",
+          "format": "date-time"
+        },
+        "xdm:nextStep": {
+          "title": "Account Updated Date",
+          "description": "Account updated date.",
+          "type": "string"
+        },
+        "xdm:lastActivity": {
+          "title": "Account Updated Date",
+          "description": "Account updated date.",
+          "type": "string"
+        },
+        "xdm:private": {
+          "title": "Account Updated Date",
+          "description": "Account updated date.",
+          "type": "boolean"
+        },
+        "xdm:contractId": {
+          "title": "Account Updated Date",
+          "description": "Account updated date.",
+          "type": "number"
         }
       }
     }

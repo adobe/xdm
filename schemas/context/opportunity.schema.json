@@ -47,18 +47,18 @@
         "xdm:sourceId": {
           "title": "Opportunity Source Id",
           "description": "Opportunity source unique identifer",
-          "type":"number"
+          "type": "number"
         },
         "xdm:accountId": {
           "title": "Account Id",
           "description": "Account identifer reference",
           "type": "number"
         },
-          "xdm:campaignID": {
+        "xdm:campaignID": {
           "title": "Campaign Id",
           "description": "Campaign unique identifer reference",
           "type": "number"
-        },
+        }
       }
     }
   },

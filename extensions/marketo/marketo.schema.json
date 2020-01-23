@@ -69,18 +69,18 @@
           "type": "string"
         },
         "marketo:fiscalQuarter": {
-          "title": "Account targeted Indicator",
-          "description": "Indicator whether the Account is targeted.",
+          "title": "Fiscal Quarter",
+          "description": "Fiscal Quarter this opportunity is targeted.",
           "type": "number"
         },
         "marketo:fiscalYear": {
           "title": "Fiscal Year",
-          "description": "Indicator whether the Account record is deleted or not.",
+          "description": "Fiscal Year this opportunity is targeted.",
           "type": "number"
         },
         "marketo:fiscal": {
-          "title": "Fiscal",
-          "description": "Indicator whether the Account record is deleted or not.",
+          "title": "Fiscal Period",
+          "description": "Fiscal Period this opportunity is targeted.",
           "type": "number"
         },
         "marketo:forcastCategory": {

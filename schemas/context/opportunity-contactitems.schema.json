@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/contactitems",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "B2B Opportunity Contact Role Item",
+  "title": "B2B Opportunity Contact Items",
   "type": "object",
   "meta:extensible": true,
   "description": "Defines the list of contact items for a given opportunity",
@@ -37,7 +37,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "#/definitions/contactmap"
+      "$ref": "#/definitions/contactitems"
     }
   ],
   "meta:status": "experimental"

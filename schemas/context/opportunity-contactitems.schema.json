@@ -9,7 +9,6 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "B2B Opportunity Contact Items",
   "type": "object",
-  "meta:extensible": true,
   "description": "Defines the list of contact items for a given opportunity",
   "definitions": {
     "contactitems": {
@@ -26,7 +25,7 @@
         },
         "xdm:isDeleted": {
           "title": "Deleted",
-          "description": "Flag to check if this opportunioty contact deleted.",
+          "description": "Flag to check if this contact for an opportunity is in deleted state.",
           "type": "boolean"
         }
       }

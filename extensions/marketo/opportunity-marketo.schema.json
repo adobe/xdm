@@ -17,13 +17,13 @@
   "definitions": {
     "opportunity-marketo": {
       "properties": {
-            "marketo:mktoGuid": {
-              "title": "Marketo GUID Id",
-              "description": "Marketo GUID Id.",
-              "type": "string"
-            }
-          }
+        "marketo:mktoGuid": {
+          "title": "Marketo GUID Id",
+          "description": "Marketo GUID Id.",
+          "type": "string"
         }
+      }
+    }
   },
   "allOf": [
     {
@@ -32,6 +32,9 @@
     {
       "$ref": "#/definitions/opportunity-marketo"
     }
+  ],
+  "required": [
+    "marketo:mktoGuid"
   ],
   "meta:status": "experimental"
 }

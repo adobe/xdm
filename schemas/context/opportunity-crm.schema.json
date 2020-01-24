@@ -61,8 +61,8 @@
           "title": "Probability Percentage",
           "description": "Likelihood that opportunity will close, stated as a percentage.",
           "type": "number",
-          "minimum":0,
-          "maximum":100
+          "minimum": 0,
+          "maximum": 100
         },
         "xdm:isClosed": {
           "title": "Closed",
@@ -99,6 +99,21 @@
           "title": "Contract Id",
           "description": "Contract unique Identifier reference that this opportunity is linked to.",
           "type": "string"
+        },
+        "xdm:forcastCategory": {
+          "title": "Forecast Category",
+          "description": "Forecast Category determined by the opportunity Stage value eg: omitted,pipeline,bestcase,commit,closed.",
+          "type": "string"
+        },
+        "xdm:forecastCategoryName": {
+          "title": "Forecast Category Name",
+          "description": "Forecast category name that is displayed in reports for a perticular forecast category.",
+          "type": "string"
+        },
+        "xdm:expectedRevenue": {
+          "title": "Expected Revenue",
+          "description": "Calculated revenue based on the Amount and Probability.",
+          "type": "number"
         }
       }
     }

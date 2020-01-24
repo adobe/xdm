@@ -15,7 +15,7 @@
   ],
   "description": "Defines a map containing a set of business customer opportunity contact role",
   "definitions": {
-    "contactrole": {
+    "opportunity-contactrole": {
       "properties": {
         "xdm:contactrole": {
           "type": "object",

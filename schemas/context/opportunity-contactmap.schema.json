@@ -17,7 +17,7 @@
   "definitions": {
     "contactmap": {
       "properties": {
-        "xdm:contactrole": {
+        "xdm:contactmap": {
           "type": "object",
           "meta:xdmType": "map",
           "additionalProperties": {

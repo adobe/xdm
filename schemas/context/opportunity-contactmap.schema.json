@@ -21,7 +21,6 @@
           "type": "object",
           "meta:xdmType": "map",
           "additionalProperties": {
-            "type": "array",
             "items": {
               "$ref": "https://ns.adobe.com/xdm/context/contactitems"
             }

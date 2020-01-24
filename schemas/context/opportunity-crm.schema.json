@@ -76,7 +76,7 @@
         },
         "xdm:closeDate": {
           "title": "Close Date",
-          "description": "Date when you plan to close the opportunity.",
+          "description": "Date of closure for this opportunity.",
           "type": "string",
           "format": "date-time"
         },

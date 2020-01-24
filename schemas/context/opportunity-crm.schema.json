@@ -126,5 +126,8 @@
       "$ref": "#/definitions/opportunity-crm"
     }
   ],
+  "required": [
+    "xdm:stage"
+  ],
   "meta:status": "experimental"
 }

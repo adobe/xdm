@@ -60,5 +60,10 @@
       "ref": "https://ns.adobe.com/xdm/context/contactmap"
     }
   ],
+  "required": [
+    "xdm:Id",
+    "xdm:type",
+    "xdm:accountId"
+  ],
   "meta:status": "experimental"
 }

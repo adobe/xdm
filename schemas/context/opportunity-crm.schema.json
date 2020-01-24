@@ -44,7 +44,7 @@
         },
         "xdm:fiscalYear": {
           "title": "Fiscal Year",
-          "description": "Indicator whether the Account record is deleted or not.",
+          "description": "Fiscal Year this opportunity is targeted.",
           "type": "string"
         },
         "xdm:fiscalQuarter": {

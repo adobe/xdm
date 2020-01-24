@@ -13,6 +13,11 @@
   "definitions": {
     "contactitems": {
       "properties": {
+        "xdm:roleId": {
+          "title": "Contact Role Id",
+          "description": "Contact role unique identifier.",
+          "type": "string"
+        },
         "xdm:role": {
           "title": "Contact Role",
           "description": "Role of the opportunity contact like finance , sales .",

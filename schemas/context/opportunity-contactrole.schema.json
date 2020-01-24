@@ -23,26 +23,7 @@
           "additionalProperties": {
             "type": "array",
             "items": {
-              "xdm:contactId": {
-                "title": "Contact Id",
-                "description": "Contact unique ID reference.",
-                "type": "number"
-              },
-              "xdm:contactrole": {
-                "title": "Contact Role",
-                "description": "Role of the opportunity contact like finance , sales .",
-                "type": "string"
-              },
-              "xdm:isPrimary": {
-                "title": "Primary",
-                "description": "Flag to check if opportunity contact is primary.",
-                "type": "boolean"
-              },
-              "xdm:isDeleted": {
-                "title": "Deleted",
-                "description": "Flag to check if this opportunioty contact deleted.",
-                "type": "boolean"
-              }
+              "$ref": "https://ns.adobe.com/xdm/context/contactmap"
             }
           }
         }

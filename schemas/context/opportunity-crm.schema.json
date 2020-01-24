@@ -10,7 +10,6 @@
   "title": "CRM Opportunity",
   "type": "object",
   "meta:extensible": true,
-  "meta:abstract": true,
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/opportunity"
   ],
@@ -18,25 +17,40 @@
   "definitions": {
     "opportunity-crm": {
       "properties": {
+        "xdm:name": {
+          "title": "Opportunity Name",
+          "description": "Subject or descriptive name, such as the expected order or company name, for the opportunity.",
+          "type": "string"
+        },
+        "xdm:description": {
+          "title": "Opportunity Description",
+          "description": "Additional information to describe the opportunity, such as possible products to sell or past purchases from the customer.",
+          "type": "string"
+        },
+        "xdm:stage": {
+          "title": "Opportunity Stage",
+          "description": "Sales stage of this opportunity to aid the sales team in their efforts to win this opportunity.",
+          "type": "string"
+        },
         "xdm:amount": {
           "title": "Opportunity Amount",
-          "description": "Marketo GUID Id.",
+          "description": "Opportunity Amount.",
           "type": "number"
         },
         "xdm:quantity": {
           "title": "Opportunity Quantity",
-          "description": "CRM organization Id.",
+          "description": "Opportunity Quantity.",
           "type": "number"
         },
         "xdm:fiscalYear": {
           "title": "Fiscal Year",
           "description": "Indicator whether the Account record is deleted or not.",
-          "type": "number"
+          "type": "string"
         },
         "xdm:fiscalQuarter": {
           "title": "Fiscal Quarter",
           "description": "Fiscal Quarter this opportunity is targeted..",
-          "type": "number"
+          "type": "string"
         },
         "xdm:hasOpportunityLineItem": {
           "title": "Has Opportunity Line Item",
@@ -46,7 +60,9 @@
         "xdm:probabilityPercentage": {
           "title": "Probability Percentage",
           "description": "Likelihood that opportunity will close, stated as a percentage.",
-          "type": "string"
+          "type": "number",
+          "minimum":0,
+          "maximum":100
         },
         "xdm:isClosed": {
           "title": "Closed",
@@ -82,7 +98,7 @@
         "xdm:contractId": {
           "title": "Contract Id",
           "description": "Contract unique Identifier reference that this opportunity is linked to.",
-          "type": "number"
+          "type": "string"
         }
       }
     }

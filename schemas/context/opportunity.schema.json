@@ -9,7 +9,6 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "XDM Business Opportunity",
   "type": "object",
-  "auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:extends": [
@@ -22,21 +21,6 @@
         "xdm:Id": {
           "title": "Opportunity Id",
           "description": "Unique identifer of the opportunity",
-          "type": "number"
-        },
-        "xdm:name": {
-          "title": "Opportunity Name",
-          "description": "Subject or descriptive name, such as the expected order or company name, for the opportunity.",
-          "type": "string"
-        },
-        "xdm:description": {
-          "title": "Opportunity Description",
-          "description": "Additional information to describe the opportunity, such as possible products to sell or past purchases from the customer.",
-          "type": "string"
-        },
-        "xdm:stage": {
-          "title": "Opportunity Stage",
-          "description": "Sales stage of this opportunity to aid the sales team in their efforts to win this opportunity.",
           "type": "string"
         },
         "xdm:type": {
@@ -47,17 +31,17 @@
         "xdm:sourceId": {
           "title": "Opportunity Source Id",
           "description": "Opportunity source unique identifer",
-          "type": "number"
+          "type": "string"
         },
         "xdm:accountId": {
           "title": "Account Id",
           "description": "Account identifer reference",
-          "type": "number"
+          "type": "string"
         },
         "xdm:campaignID": {
           "title": "Campaign Id",
           "description": "Campaign unique identifer reference",
-          "type": "number"
+          "type": "string"
         }
       }
     }

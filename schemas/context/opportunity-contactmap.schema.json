@@ -13,7 +13,7 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/opportunity"
   ],
-  "description": "Defines a map containing a set of business customer opportunity contact roles, keyed on contactId.  The values of the map are an array, meaning that more than one contact of each opportunity may be carried.",
+  "description": "Defines a map containing a set of business customer opportunity contact roles, keyed on contactId , meaning that more than one contact of each opportunity may be carried.",
   "definitions": {
     "contactmap": {
       "properties": {

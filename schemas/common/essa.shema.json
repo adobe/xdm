@@ -21,7 +21,7 @@
         },
         "xdm:createdDate": {
           "title": "Created Date",
-          "description": "Date when this record is created.",
+          "description": "Date when this record was created.",
           "type": "string",
           "format":"date-time"
         },

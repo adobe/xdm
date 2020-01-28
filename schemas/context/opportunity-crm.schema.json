@@ -124,6 +124,9 @@
     },
     {
       "$ref": "#/definitions/opportunity-crm"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/contactmap"
     }
   ],
   "required": [

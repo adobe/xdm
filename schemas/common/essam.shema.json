@@ -15,12 +15,12 @@
   ],
   "description": "Mixin which defines a set a audit properties for extenal sources.",
   "definitions": {
-    "essam": {
+    "ext-source-audit": {
       "properties": {
-        "xdm:auditfields": {
-          "title": "Audit properties",
-          "$ref": "https://ns.adobe.com/xdm/context/essa",
-          "description": "Audit attributes."
+        "xdm:ext-source-audit": {
+          "title": "External Source Audit Properties",
+          "$ref": "https://ns.adobe.com/xdm/common/essa",
+          "description": "Audit attributes for external sources."
         }
       }
     }
@@ -30,7 +30,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "#/definitions/essam"
+      "$ref": "#/definitions/ext-source-audit"
     }
   ],
   "meta:status": "experimental"

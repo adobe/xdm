@@ -58,6 +58,9 @@
     },
     {
       "ref": "https://ns.adobe.com/xdm/context/contactmap"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/essam"
     }
   ],
   "required": [

@@ -69,12 +69,12 @@
           "minimum": 0,
           "maximum": 100
         },
-        "xdm:isClosed": {
+        "xdm:Closed": {
           "title": "Closed",
           "description": "Flag indicating if this opportunity is closed.",
           "type": "boolean"
         },
-        "xdm:isWon": {
+        "xdm:Won": {
           "title": "Won",
           "description": "Flag indicating if this opportunity is Won.",
           "type": "boolean"
@@ -95,7 +95,7 @@
           "description": "Last activity captured for this sales opportunity.",
           "type": "string"
         },
-        "xdm:isprivate": {
+        "xdm:private": {
           "title": "Private",
           "description": "Indicates that the opportunity is private.",
           "type": "boolean"

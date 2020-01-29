@@ -37,6 +37,11 @@
           "description": "Opportunity Amount.",
           "type": "number"
         },
+        "xdm:currencyType": {
+          "title": "Currency Type Code",
+          "description": "ISO code for cureency Type.",
+          "type": "string"
+        },
         "xdm:quantity": {
           "title": "Opportunity Quantity",
           "description": "Opportunity Quantity.",

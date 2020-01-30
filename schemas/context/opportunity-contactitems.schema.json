@@ -25,12 +25,12 @@
         },
         "xdm:isPrimary": {
           "title": "Primary",
-          "description": "Flag to check if opportunity contact is primary.",
+          "description": "A flag to signify that this is the primary opportunity contact",
           "type": "boolean"
         },
         "xdm:isDeleted": {
           "title": "Deleted",
-          "description": "Flag to check if this contact for an opportunity is in deleted state.",
+          "description": "A flag to signify that this opportunity is in deleted state.",
           "type": "boolean"
         }
       }

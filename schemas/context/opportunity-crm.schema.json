@@ -49,12 +49,12 @@
         },
         "xdm:fiscalYear": {
           "title": "Fiscal Year",
-          "description": "Fiscal Year this opportunity is targeted.",
+          "description": "The fiscal year this opportunity is targeted.",
           "type": "string"
         },
         "xdm:fiscalQuarter": {
           "title": "Fiscal Quarter",
-          "description": "Fiscal Quarter this opportunity is targeted..",
+          "description": "The fiscal quarter this opportunity is targeted..",
           "type": "string"
         },
         "xdm:hasOpportunityLineItem": {

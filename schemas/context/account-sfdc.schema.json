@@ -14,6 +14,9 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/account"
   ],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/context/account-crm"
+  ],
   "description": "Sales Force specific Account fields.",
   "definitions": {
     "account-sfdc": {
@@ -64,16 +67,6 @@
         "sfdc:masterRecordId": {
           "title": "Account",
           "description": "master record id of the account",
-          "type": "string"
-        },
-        "sfdc:ownerId": {
-          "title": "Account Owner",
-          "description": "assigned owner of account. Not available in personal edition.",
-          "type": "string"
-        },
-        "sfdc:parentId": {
-          "title": "Parent Account",
-          "description": "Parent company for companies that are subsidiaries of a larger company or organization. The parent account must be an existing account in salesforce. You can enter the account name, or select (or optionally, create) the account using the lookup icon.",
           "type": "string"
         },
         "sfdc:partnerAccountId": {

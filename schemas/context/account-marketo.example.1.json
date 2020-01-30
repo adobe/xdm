@@ -14,8 +14,8 @@
     "marketo:sfdcAccountId": "ACC111",
     "marketo:sfdcAccountOwnerId": "OWNER444",
     "marketo:sfdcParentId": "ACC000",
-    "marketo:createdAt": "2018-01-02",
-    "marketo:updatedAt": "2018-01-02"
+    "marketo:createdAt": "2018-01-02T15:52:25+00:00",
+    "marketo:updatedAt": "2018-01-02T15:52:25+00:00"
   },
   "marketo:namedAccount": {
     "marketo:accountMetrics": {
@@ -41,7 +41,7 @@
     "marketo:isTargeted": true,
     "marketo:sourceType": "External",
     "marketo:logoUrl": "https://sampleaccount.com/logo.png",
-    "marketo:createdAt": "2018-01-02",
-    "marketo:updatedAt": "2018-01-02"
+    "marketo:createdAt": "2018-01-02T15:52:25+00:00",
+    "marketo:updatedAt": "2018-01-02T15:52:25+00:00"
   }
 }

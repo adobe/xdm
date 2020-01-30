@@ -1,0 +1,47 @@
+{
+  "marketo:org": {
+    "marketo:notes": {},
+    "marketo:site": {},
+    "marketo:organizationType": {},
+    "marketo:parentOrgId": {},
+    "marketo:primaryInterestId": {},
+    "marketo:isPrivate": {},
+    "marketo:additionalFields": {},
+    "marketo:salesAccountOwnerId": {},
+    "marketo:sfdcType": {},
+    "marketo:sfdcAccountNum": {},
+    "marketo:sfdcMasterRecordId": {},
+    "marketo:sfdcAccountId": {},
+    "marketo:sfdcAccountOwnerId": {},
+    "marketo:sfdcParentId": {},
+    "marketo:createdAt": {},
+    "marketo:updatedAt": {}
+  },
+  "marketo:namedAccount": {
+    "marketo:accountMetrics": {
+      "marketo:currencyCode": {},
+      "marketo:opptyAmount": {},
+      "marketo:opptyCount": {},
+      "marketo:percentile1": {},
+      "marketo:percentile2": {},
+      "marketo:percentile3": {},
+      "marketo:percentile4": {},
+      "marketo:percentile5": {},
+      "marketo:score1": {},
+      "marketo:score2": {},
+      "marketo:score3": {},
+      "marketo:score4": {},
+      "marketo:score5": {},
+      "marketo:membershipCount": {}
+    },
+    "marketo:mktoGuid": {},
+    "marketo:CRMOrgId": {},
+    "marketo:domainName": {},
+    "marketo:isDeleted": {},
+    "marketo:isTargeted": {},
+    "marketo:sourceType": {},
+    "marketo:logoUrl": {},
+    "marketo:createdAt": {},
+    "marketo:updatedAt": {}
+  }
+}

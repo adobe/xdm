@@ -1,6 +1,6 @@
 {
   "meta:license": [
-    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
     "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
@@ -19,6 +19,11 @@
   "definitions": {
     "account-crm": {
       "properties": {
+        "xdm:accountNumber": {
+          "title": "Account Number",
+          "description": "Tracking or reference number for account. Up to 40 characters are allowed in this field.",
+          "type": "string"
+        },
         "xdm:ownerId": {
           "title": "Account Owner",
           "description": "assigned owner of account. Not available in personal edition.",
@@ -34,10 +39,25 @@
           "description": "The territories to which the account has been assigned.",
           "type": "string"
         },
+        "xdm:currencyCode": {
+          "title": "Currency Code",
+          "type": "string",
+          "examples": [
+            "USD",
+            "EUR"
+          ],
+          "pattern": "^[A-Z]{3}$",
+          "description": "The ISO 4217 currency code."
+        },
         "xdm:annualRevenue": {
           "title": "Annual Revenue",
           "description": "Amount of annual reported revenue.",
           "type": "number"
+        },
+        "xdm:phone": {
+          "title": "Phone",
+          "description": "Primary phone number of account. Up to 40 characters are allowed in this field.",
+          "$ref": "https://ns.adobe.com/xdm/context/phonenumber"
         },
         "xdm:fax": {
           "title": "Fax Number",
@@ -56,31 +76,6 @@
           "title": "Ownership",
           "description": "Ownership of company, for example, public or private. Entry is selected from a picklist of available values, which a salesforce admin sets. Each picklist value can have up to 40 characters.",
           "type": "string"
-        },
-        "xdm:accountSystemProperties": {
-          "properties": {
-            "xdm:createdById": {
-              "title": "Created By",
-              "description": "User who created the account, including creation date and time. (Read only)",
-              "type": "string"
-            },
-            "xdm:createdDate": {
-              "title": "Created Date",
-              "description": "account created date",
-              "type": "string",
-              "format": "date-time"
-            },
-            "xdm:modifiedById": {
-              "title": "Modified By",
-              "description": "user who last changed the account fields, including modification date and time. This field doesn’t track changes made to any of the related list items on the account. (Read only)",
-              "type": "string"
-            },
-            "xdm:modifiedDate": {
-              "title": "Modified By",
-              "description": "Unique identifier of the user who modified the record.",
-              "type": "string"
-            }
-          }
         },
         "xdm:accountAddress": {
           "properties": {

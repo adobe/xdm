@@ -5,8 +5,16 @@
   "xdm:territoryId": "Terr1",
   "xdm:currencyCode": "USD",
   "xdm:annualRevenue": 10000000,
-  "xdm:phone": "1-408-800-1111",
-  "xdm:fax": "1-408-800-2222",
+  "xdm:phone": {
+    "xdm:primary": true,
+    "xdm:number": "1-408-888-8888",
+    "xdm:status": "active"
+  },
+  "xdm:fax": {
+    "xdm:primary": true,
+    "xdm:number": "1-408-888-8888",
+    "xdm:status": "active"
+  },
   "xdm:account-organization": {
     "@id": "https://data.adobe.io/entities/org/orgid111",
     "xdm:legalName": "ABC Stores",

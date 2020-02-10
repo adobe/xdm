@@ -27,6 +27,21 @@
           "$ref": "https://ns.adobe.com/xdm/common/geounit",
           "description":
             "The geographical unit within the organization owning the profile. This can be used to reference the geographical information maintained in another dataset."
+        },
+        "xdm:ownerId": {
+          "title": "Owner Id",
+          "type": "string",
+          "description": "Owner identifier."
+        },
+        "xdm:jigsawContactId": {
+          "title": "Jigsaw Contact Id",
+          "type": "string",
+          "description": "Jigsaw contact id."
+        },
+        "xdm:jigsaw": {
+          "title": "Data.com Key",
+          "type": "string",
+          "description": "Data.com key."
         }
       }
     }

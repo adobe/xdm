@@ -24,5 +24,43 @@
     "xdm:primary": true,
     "xdm:number": "1-408-888-8888",
     "xdm:status": "active"
-  }
+  },
+  "xdm:otherAddress": {
+    "@id": "https://data.adobe.io/entities/address/234",
+    "xdm:primary": false,
+    "xdm:street1": "100 Park Ave",
+    "xdm:city": "San Jose",
+    "xdm:stateProvince": "US-CA",
+    "xdm:postalCode": "95110",
+    "xdm:country": "United States",
+    "xdm:countryCode": "US",
+    "schema:latitude": 37.3382,
+    "schema:longitude": 121.8863,
+    "xdm:status": "active",
+    "xdm:lastVerifiedDate": "2018-01-02"
+  },
+  "xdm:otherPhone": {
+    "xdm:primary": true,
+    "xdm:number": "1-408-888-7777",
+    "xdm:status": "active"
+  },
+  "xdm:assistantDetails": {
+    "xdm:name": {
+      "xdm:firstName": "John",
+      "xdm:middleName": "S",
+      "xdm:lastName": "Doe",
+      "xdm:fullName": "John S. Doe"
+    },
+    "xdm:phone": {
+      "xdm:primary": true,
+      "xdm:number": "1-408-888-7777",
+      "xdm:status": "active"
+    }
+  },
+  "xdm:reportsToId": "RPT10000",
+  "xdm:departments": [
+    "Finance",
+    "Marketing"
+  ],
+  "xdm:photoUrl": "https://PersonOrg.com/personPhoto.jpg"
 }

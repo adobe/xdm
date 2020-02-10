@@ -17,19 +17,29 @@
     "profile-work-details": {
       "properties": {
         "xdm:workAddress": {
-          "title": "Work address",
+          "title": "Work Address",
           "$ref": "https://ns.adobe.com/xdm/common/address",
           "description": "A work postal address."
         },
+        "xdm:otherAddress": {
+          "title": "Other Address",
+          "$ref": "https://ns.adobe.com/xdm/common/address",
+          "description": "Other postal address."
+        },
         "xdm:workEmail": {
-          "title": "Work email",
+          "title": "Work Email",
           "$ref": "https://ns.adobe.com/xdm/context/emailaddress",
           "description": "A work email address."
         },
         "xdm:workPhone": {
-          "title": "Work phone",
+          "title": "Work Phone",
           "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
           "description": "Work phone number."
+        },
+        "xdm:otherPhone": {
+          "title": "Other Phone",
+          "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
+          "description": "Other phone number."
         },
         "xdm:organizations": {
           "title": "Organizations",
@@ -37,6 +47,38 @@
           "items": {
             "type": "string"
           }
+        },
+   		"xdm:assistantDetails": {
+			"xdm:name": {
+			  "title": "Assistant Name",
+			  "$ref": "https://ns.adobe.com/xdm/context/person-name",
+			  "description": "Assistant name."
+			},
+			"xdm:phone": {
+			  "title": "Assistant Phone",
+			  "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
+			  "description": "Assistant phone."
+			}
+		
+        },
+        "xdm:reportsToId": {
+          "title": "Reports To Id",
+          "description": "Reports to identifier.",
+		  "type": "string"
+        },
+        "xdm:departments": {
+          "title": "Department Name",
+          "description": "Department name.",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "xdm:photoUrl": {
+          "title": "Photo Url",
+          "description": "Photo url.",
+		  "type": "string",
+		  "format": "uri"
         }
       }
     }

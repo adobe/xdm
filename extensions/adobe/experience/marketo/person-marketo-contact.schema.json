@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/person-marketo-contact",
+  "$id": "https://ns.adobe.com/experience/marketo/person-marketo-contact",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Profile work details",
   "type": "object",
@@ -16,32 +16,32 @@
   "definitions": {
     "person-marketo-contact": {
       "properties": {
-        "marketo:mktoId": {
+        "https://ns.adobe.com/experience/marketo/mktoId": {
           "title": "Marketo ID",
           "description": "Marketo id.",
 		  "type": "string"
         },
-        "marketo:sfdcIsDeleted": {
+        "https://ns.adobe.com/experience/marketo/sfdcIsDeleted": {
           "title": "SFDC Is Deleted Flag",
           "description": "SFDC deleted flag.",
 		  "type": "boolean"
         },
-        "marketo:mktoIntegrationLogId": {
+        "https://ns.adobe.com/experience/marketo/mktoIntegrationLogId": {
           "title": "Marketo Integration Log Id",
           "description": "Marketo integration log id.",
 		  "type": "string"
         },
-        "marketo:sfdcId": {
+        "https://ns.adobe.com/experience/marketo/sfdcId": {
           "title": "SFDC Id",
           "description": "SFDC id.",
 		  "type": "string"
         },
-        "marketo:status": {
+        "https://ns.adobe.com/experience/marketo/status": {
           "title": "Contact Status",
           "description": "Contact status.",
 		  "type": "string"
         },
-        "marketo:statusDetail": {
+        "https://ns.adobe.com/experience/marketo/statusDetail": {
           "title": "Contact Status Detail",
           "description": "Contact status detail.",
 		  "type": "string"

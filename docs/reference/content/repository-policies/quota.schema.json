@@ -41,6 +41,11 @@
                     "meta:usereditable": false,
                     "type": "string",
                     "const": "Bytes"
+                },
+                "xdm:userId": {
+                    "name": "UserId of the user using the reository",
+                    "decription": "UserId mapped to the repository",
+                    "type": "string"
                 }
             },
             "required": [

@@ -55,7 +55,7 @@
         "xdm:originalIngestionId": {
           "title": "Original Ingestion ID",
           "type": "string",
-          "description": "The original data ingestion identifier."
+          "description": "The id of the ingestion process that resulted in the initiation of this ingestion. This can be used to correlate ingestion processes over multiple stages."
         },
         "xdm:customerIngestionId": {
           "title": "Customer Batch Identifier",

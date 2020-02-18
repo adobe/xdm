@@ -26,28 +26,43 @@
     "marketo-contact": {
       "properties": {
         "marketo:contactId": {
-          "title": "Marketo Contact ID",
+          "title": "Marketo Contact Id",
           "description": "Marketo contact id.",
 		  "type": "string"
         },
-        "marketo:mktPersonId": {
-          "title": "Marketo Person Id",
-          "description": "Marketo person id.",
+        "marketo:marketoId": {
+          "title": "Marketo Id",
+          "description": "Marketo id.",
 		  "type": "string"
         },
-        "marketo:abmProposedNameId": {
-          "title": "Account Based Marketing Proposed Name Id",
-          "description": "Account based marketing proposed name id.",
+        "marketo:sfdcIsDeleted": {
+          "title": "Is Deleted Flag",
+          "description": "Is deleted indicator.",
+		  "type": "boolean"
+        },
+        "marketo:mktoIntegrationLogId": {
+          "title": "Marketo Integration Log Id",
+          "description": "Marketo integration log id.",
 		  "type": "string"
         },
-        "marketo:count": {
-          "title": "Count",
-          "description": "Count.",
+        "marketo:sfdcId": {
+          "title": "SFDC Id",
+          "description": "SFDC id.",
 		  "type": "string"
         },
-        "marketo:totalProposedNameCount": {
-          "title": "Total Proposed Name Count",
-          "description": "Total proposed name count.",
+        "marketo:contactStatus": {
+          "title": "Contact Status",
+          "description": "Contact status.",
+		  "type": "string"
+        },
+        "marketo:status": {
+          "title": "Contact Status",
+          "description": "Contact status.",
+		  "type": "string"
+        },
+        "marketo:statusDetail": {
+          "title": "Contact Status Detail",
+          "description": "Contact status detail.",
 		  "type": "string"
         }
 	  }

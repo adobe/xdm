@@ -19,34 +19,33 @@
 	"https://ns.adobe.com/xdm/context/profile-work-details",
     "https://ns.adobe.com/xdm/context/profile-owning-entities",
     "https://ns.adobe.com/xdm/context/person-contact",
-	"https://ns.adobe.com/experience/marketo/person-marketo-contact",
 	"https://ns.adobe.com/xdm/context/optinout",
 	"https://ns.adobe.com/xdm/common/essam"
   ],
   "definitions": {
     "marketo-contact": {
       "properties": {
-        "https://ns.adobe.com/experience/marketo/id": {
-          "title": "Marketo Lead ID",
-          "description": "Marketo lead id.",
+        "marketo:contactId": {
+          "title": "Marketo Contact ID",
+          "description": "Marketo contact id.",
 		  "type": "string"
         },
-        "https://ns.adobe.com/experience/marketo/mktPersonId": {
+        "marketo:mktPersonId": {
           "title": "Marketo Person Id",
           "description": "Marketo person id.",
 		  "type": "string"
         },
-        "https://ns.adobe.com/experience/marketo/abmProposedNameId": {
+        "marketo:abmProposedNameId": {
           "title": "Account Based Marketing Proposed Name Id",
           "description": "Account based marketing proposed name id.",
 		  "type": "string"
         },
-        "https://ns.adobe.com/experience/marketo/count": {
+        "marketo:count": {
           "title": "Count",
           "description": "Count.",
 		  "type": "string"
         },
-        "https://ns.adobe.com/experience/marketo/totalProposedNameCount": {
+        "marketo:totalProposedNameCount": {
           "title": "Total Proposed Name Count",
           "description": "Total proposed name count.",
 		  "type": "string"
@@ -69,9 +68,6 @@
     },
     {
       "$ref": "https://ns.adobe.com/xdm/context/person-contact"
-    },
-    {
-      "$ref": "https://ns.adobe.com/experience/marketo/person-marketo-contact"
     },
     {
       "$ref": "https://ns.adobe.com/xdm/context/optinout"

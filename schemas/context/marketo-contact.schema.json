@@ -50,11 +50,6 @@
           "description": "SFDC id.",
 		  "type": "string"
         },
-        "marketo:contactStatus": {
-          "title": "Contact Status",
-          "description": "Contact status.",
-		  "type": "string"
-        },
         "marketo:status": {
           "title": "Contact Status",
           "description": "Contact status.",

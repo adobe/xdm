@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/channels/application
 ```
 
-An application that accepts messages or emit events (Facebook page, Mobile App, ...) channel.
+An application channel identifies apps that accepts messages or transmit events to the channel.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -32,7 +32,7 @@ An application that accepts messages or emit events (Facebook page, Mobile App, 
 ## @id
 ### Application Identifier
 
-Unique identifier of the application.
+Unique identifier of the app.
 
 `@id`
 * is optional
@@ -52,7 +52,7 @@ Unique identifier of the application.
 ## xdm:name
 ### Name
 
-Name of the application.
+Name of the app.
 
 `xdm:name`
 * is optional
@@ -72,7 +72,7 @@ Name of the application.
 ## xdm:version
 ### Version
 
-Version of the application.
+Version of the app.
 
 `xdm:version`
 * is optional

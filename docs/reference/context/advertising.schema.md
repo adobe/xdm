@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/advertising
 ```
 
-The information related to advertising activity related to the experience event.
+The information related to advertising activity in relationship to the experience event.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -13,10 +13,10 @@ The information related to advertising activity related to the experience event.
 ## Schema Hierarchy
 
 * Advertising `https://ns.adobe.com/xdm/context/advertising`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [MRC Viewability](adviewability.schema.md) `https://ns.adobe.com/xdm/context/adviewability`
-  * [Ad Asset Reference](advertising-timed-asset-reference.schema.md) `https://ns.adobe.com/xdm/context/advertising-timed-asset-reference`
-  * [Ad Asset View Details](advertising-timed-asset-view-details.schema.md) `https://ns.adobe.com/xdm/context/advertising-timed-asset-view-details`
+  * [Ad asset reference](advertising-timed-asset-reference.schema.md) `https://ns.adobe.com/xdm/context/advertising-timed-asset-reference`
+  * [Ad asset view details](advertising-timed-asset-view-details.schema.md) `https://ns.adobe.com/xdm/context/advertising-timed-asset-view-details`
   * [Measure](../data/measure.schema.md) `https://ns.adobe.com/xdm/data/measure`
 
 
@@ -52,8 +52,8 @@ The information related to advertising activity related to the experience event.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:adAssetReference](#xdmadassetreference) | Ad Asset Reference | Optional | Advertising (this schema) |
-| [xdm:adAssetViewDetails](#xdmadassetviewdetails) | Ad Asset View Details | Optional | Advertising (this schema) |
+| [xdm:adAssetReference](#xdmadassetreference) | Ad asset reference | Optional | Advertising (this schema) |
+| [xdm:adAssetViewDetails](#xdmadassetviewdetails) | Ad asset view details | Optional | Advertising (this schema) |
 | [xdm:adViewability](#xdmadviewability) | MRC Viewability | Optional | Advertising (this schema) |
 | [xdm:clicks](#xdmclicks) | Measure | Optional | Advertising (this schema) |
 | [xdm:completes](#xdmcompletes) | Measure | Optional | Advertising (this schema) |
@@ -68,47 +68,47 @@ The information related to advertising activity related to the experience event.
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:adAssetReference
-### Ad Asset Reference
+### Ad asset reference
 
 Asset information about the ad captured by the experience event.
 
 `xdm:adAssetReference`
 * is optional
-* type: Ad Asset Reference
+* type: Ad asset reference
 * defined in this schema
 
 ### xdm:adAssetReference Type
 
 
-* [Ad Asset Reference](advertising-timed-asset-reference.schema.md) – `https://ns.adobe.com/xdm/context/advertising-timed-asset-reference`
+* [Ad asset reference](advertising-timed-asset-reference.schema.md) – `https://ns.adobe.com/xdm/context/advertising-timed-asset-reference`
 
 
 
 
 
 ## xdm:adAssetViewDetails
-### Ad Asset View Details
+### Ad asset view details
 
 View details for the ad playback captured by the experience event.
 
 `xdm:adAssetViewDetails`
 * is optional
-* type: Ad Asset View Details
+* type: Ad asset view details
 * defined in this schema
 
 ### xdm:adAssetViewDetails Type
 
 
-* [Ad Asset View Details](advertising-timed-asset-view-details.schema.md) – `https://ns.adobe.com/xdm/context/advertising-timed-asset-view-details`
+* [Ad asset view details](advertising-timed-asset-view-details.schema.md) – `https://ns.adobe.com/xdm/context/advertising-timed-asset-view-details`
 
 
 
 
 
 ## xdm:adViewability
-### MRC Viewability
+### MRC viewability
 
-The runtime measured viewability specific details such as player volume, library version, window status, viewport/ad measured dimensions, etc.
+Media Rating Council (MRC) defines viewability as an online advertising metric that indicates the number of impressions that are actually “seen” by end-users. Viewability captures specific details such as player volume, library version, window status, and viewport ad measured dimensions.
 
 `xdm:adViewability`
 * is optional
@@ -126,7 +126,7 @@ The runtime measured viewability specific details such as player volume, library
 
 ## xdm:clicks
 
-Click(s) actions on an advertisement.
+Click actions on an advertisement.
 
 `xdm:clicks`
 * is optional
@@ -145,7 +145,7 @@ Click(s) actions on an advertisement.
 ## xdm:completes
 ### Completes
 
-Indicates if a timed media asset was watched to completion - this does not necessarily mean the viewer watched the whole video; viewer could have skipped ahead.
+Indicates if a timed media asset was watched to completion but doesn't necessarily mean the end-user watched the whole video as the they could have skipped ahead.
 
 `xdm:completes`
 * is optional
@@ -163,7 +163,7 @@ Indicates if a timed media asset was watched to completion - this does not neces
 
 ## xdm:conversions
 
-A customer pre-defined action(s) which triggers an event for performance evaluation.
+A customer pre-defined action or actions which triggers an event for performance evaluation.
 
 `xdm:conversions`
 * is optional
@@ -182,7 +182,7 @@ A customer pre-defined action(s) which triggers an event for performance evaluat
 ## xdm:federated
 ### Federated
 
-Indicates if an experience event was created through data federation (data sharing between customers).
+Indicates if an experience event was created through data federation such as data sharing between customers.
 
 `xdm:federated`
 * is optional
@@ -200,7 +200,7 @@ Indicates if an experience event was created through data federation (data shari
 
 ## xdm:firstQuartiles
 
-A digital video ad has played through 25% of its duration at normal speed.
+A digital video ad that has played through 25% of its duration at normal speed.
 
 `xdm:firstQuartiles`
 * is optional
@@ -218,7 +218,7 @@ A digital video ad has played through 25% of its duration at normal speed.
 
 ## xdm:impressions
 
-Impression(s) of an advertisement to an end-user with the potential of being viewed.
+Impression of an advertisement to a end-user with the potential of being viewed.
 
 `xdm:impressions`
 * is optional
@@ -289,9 +289,9 @@ A digital video ad has played through 75% of its duration at normal speed.
 
 
 ## xdm:timePlayed
-### Time Spent
+### Time spent
 
-Describes the amount of time spent by a user on a specific timed media asset.
+Describes the amount of time spent by an end-user on a specific timed media asset.
 
 `xdm:timePlayed`
 * is optional

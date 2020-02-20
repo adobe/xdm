@@ -1,5 +1,5 @@
 
-# Segment Membership Schema
+# Segment membership Schema
 
 ```
 https://ns.adobe.com/xdm/context/segmentmembership
@@ -12,12 +12,12 @@ Details about a segment membership.
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/segmentmembership.schema.json](context/segmentmembership.schema.json) |
 ## Schema Hierarchy
 
-* Segment Membership `https://ns.adobe.com/xdm/context/segmentmembership`
-  * [Segment Identity](segmentidentity.schema.md) `https://ns.adobe.com/xdm/context/segmentidentity`
-  * [Profile Stitch Identity](profilestitchidentity.schema.md) `https://ns.adobe.com/xdm/context/profileStitchIdentity`
+* Segment membership `https://ns.adobe.com/xdm/context/segmentmembership`
+  * [Segment identity](segmentidentity.schema.md) `https://ns.adobe.com/xdm/context/segmentidentity`
+  * [Profile stitch identity](profilestitchidentity.schema.md) `https://ns.adobe.com/xdm/context/profileStitchIdentity`
 
 
-## Segment Membership Example
+## Segment membership Example
 ```json
 {
   "xdm:lastQualificationTime": "2017-09-26T15:52:25+00:00",
@@ -31,21 +31,21 @@ Details about a segment membership.
 }
 ```
 
-# Segment Membership Properties
+# Segment membership Properties
 
 | Property | Type | Required | Default | Defined by |
 |----------|------|----------|---------|------------|
-| [xdm:lastQualificationTime](#xdmlastqualificationtime) | `string` | Optional |  | Segment Membership (this schema) |
-| [xdm:payload](#xdmpayload) | `object` | Optional |  | Segment Membership (this schema) |
-| [xdm:profileStitchID](#xdmprofilestitchid) | Profile Stitch Identity | Optional |  | Segment Membership (this schema) |
-| [xdm:segmentID](#xdmsegmentid) | Segment Identity | Optional |  | Segment Membership (this schema) |
-| [xdm:status](#xdmstatus) | `enum` | Optional | `"realized"` | Segment Membership (this schema) |
-| [xdm:validUntil](#xdmvaliduntil) | `string` | Optional |  | Segment Membership (this schema) |
-| [xdm:version](#xdmversion) | `string` | Optional |  | Segment Membership (this schema) |
+| [xdm:lastQualificationTime](#xdmlastqualificationtime) | `string` | Optional |  | Segment membership (this schema) |
+| [xdm:payload](#xdmpayload) | `object` | Optional |  | Segment membership (this schema) |
+| [xdm:profileStitchID](#xdmprofilestitchid) | Profile stitch identity | Optional |  | Segment membership (this schema) |
+| [xdm:segmentID](#xdmsegmentid) | Segment identity | Optional |  | Segment membership (this schema) |
+| [xdm:status](#xdmstatus) | `enum` | Optional | `"realized"` | Segment membership (this schema) |
+| [xdm:validUntil](#xdmvaliduntil) | `string` | Optional |  | Segment membership (this schema) |
+| [xdm:version](#xdmversion) | `string` | Optional |  | Segment membership (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:lastQualificationTime
-### Last Qualification Time
+### Last qualification time
 
 The timestamp when the assertion of segment membership was made.
 
@@ -206,13 +206,13 @@ The value of this property **must** be equal to one of the [known values below](
 
 `xdm:profileStitchID`
 * is optional
-* type: Profile Stitch Identity
+* type: Profile stitch identity
 * defined in this schema
 
 ### xdm:profileStitchID Type
 
 
-* [Profile Stitch Identity](profilestitchidentity.schema.md) – `https://ns.adobe.com/xdm/context/profileStitchIdentity`
+* [Profile stitch identity](profilestitchidentity.schema.md) – `https://ns.adobe.com/xdm/context/profileStitchIdentity`
 
 
 
@@ -225,13 +225,13 @@ The identity of the segment or snapshot definition in with the domain of the spe
 
 `xdm:segmentID`
 * is optional
-* type: Segment Identity
+* type: Segment identity
 * defined in this schema
 
 ### xdm:segmentID Type
 
 
-* [Segment Identity](segmentidentity.schema.md) – `https://ns.adobe.com/xdm/context/segmentidentity`
+* [Segment identity](segmentidentity.schema.md) – `https://ns.adobe.com/xdm/context/segmentidentity`
 
 
 
@@ -261,7 +261,7 @@ The value of this property **must** be equal to one of the [known values below](
 
 
 ## xdm:validUntil
-### Valid Until
+### Valid until
 
 The timestamp for when the segment assertion should no longer be assumed to be valid and should either be ignored or revalidated.
 

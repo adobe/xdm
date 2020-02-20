@@ -7,7 +7,7 @@
     ],
     "$id": "https://ns.adobe.com/xdm/context/segmentmembership",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Segment Membership",
+    "title": "Segment membership",
     "type": "object",
     "description": "Details about a segment membership.",
     "definitions": {
@@ -25,7 +25,7 @@
                     "description": "The version of the segment definition used in this segment assertion. Version can be omitted in audience lists when all memberships versions are the same."
                 },
                 "xdm:lastQualificationTime": {
-                    "title": "Last Qualification Time",
+                    "title": "Last qualification time",
                     "type": "string",
                     "format": "date-time",
                     "description": "The timestamp when the assertion of segment membership was made."
@@ -80,7 +80,7 @@
                     ]
                 },
                 "xdm:validUntil": {
-                    "title": "Valid Until",
+                    "title": "Valid until",
                     "type": "string",
                     "format": "date-time",
                     "description": "The timestamp for when the segment assertion should no longer be assumed to be valid and should either be ignored or revalidated."

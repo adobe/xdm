@@ -9,13 +9,13 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Application",
   "type": "object",
-  "description": "Details related to the application generated interactions. Application refers to a software experience, such as a mobile or desktop application that can be installed, run, closed, uninstalled by the end-user. This is not intended to describe agents such as chatbots, browser-based plugins, or other experiences that do not follow this lifecycle.",
+  "description": "Details related to the application generated interactions. Application refers to a software experience, such as a mobile or desktop application that can be installed, run, closed, or uninstalled by an end user. Details are not intended to describe agents such as chatbots, browser-based plugins, or other experiences that do not apply to applications.",
   "meta:extensible": true,
   "definitions": {
     "application": {
       "properties": {
         "xdm:id": {
-          "title": "Application Identifier",
+          "title": "Application identifier",
           "type": "string",
           "description": "Identifier of the application."
         },
@@ -31,7 +31,7 @@
         },
         "xdm:applicationCloses": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Graceful termination(s) of an application."
+          "description": "Graceful termination of an application."
         },
         "xdm:crashes": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
@@ -41,12 +41,12 @@
         "xdm:featureUsages": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
-            "Activation(s) of an application feature that is being measured."
+            "Activation of an application feature that is being measured."
         },
         "xdm:installs": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
-            "Install of an application on a device where the actual install event is available."
+            "Install of an application on a device where the specific install event is available."
         },
         "xdm:firstLaunches": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
@@ -56,7 +56,7 @@
         "xdm:launches": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description":
-            "Launch of an application. Triggered on every run, including crashes and installs. Also triggered on a resume from background when the lifecycle session timeout has been exceeded."
+            "Launch of an application. Triggered on every run, including crashes and installs. Also triggered on a resume from background when the session timeout has been exceeded."
         },
         "xdm:upgrades": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",

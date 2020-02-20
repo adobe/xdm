@@ -20,6 +20,10 @@
                     "format": "uri-reference",
                     "description": "The ID uniquely identifies the channel. Each specific experience channel defines a constant `@id`."
                 },
+                "xdm:typeAtSource": {
+                    "type": "string",
+                    "description": "Customer defined custom channel name"
+                },
                 "xdm:mode": {
                     "type": "string",
                     "enum": [
@@ -41,10 +45,49 @@
                     "meta:enum": {
                         "https://ns.adobe.com/xdm/channel-types/web": "The world wide web, including mobile web",
                         "https://ns.adobe.com/xdm/channel-types/social": "Social media platforms",
-                        "https://ns.adobe.com/xdm/channel-types/mobile": "Mobile applications",
-                        "https://ns.adobe.com/xdm/channel-types/messaging": "Instant Messaging",
-                        "https://ns.adobe.com/xdm/channel-types/email": "E-Mail",
-                        "https://ns.adobe.com/xdm/channel-types/offline": "Non-Digital experience channels"
+                        "https://ns.adobe.com/xdm/channel-types/mobile": "Mobile apps",
+                        "https://ns.adobe.com/xdm/channel-types/messaging": "Instant messaging",
+                        "https://ns.adobe.com/xdm/channel-types/email": "Email",
+                        "https://ns.adobe.com/xdm/channel-types/offline": "Non-digital experience channels",
+                        "https://ns.adobe.com/xdm/channel-types/display": "Display",
+                        "https://ns.adobe.com/xdm/channel-types/search": "Search",
+                        "https://ns.adobe.com/xdm/channel-types/social_display": "Social Display",
+                        "https://ns.adobe.com/xdm/channel-types/video": "Video",
+                        "https://ns.adobe.com/xdm/channel-types/affiliate": "Affiliate",
+                        "https://ns.adobe.com/xdm/channel-types/affinity": "Affinity",
+                        "https://ns.adobe.com/xdm/channel-types/apps": "Applications",
+                        "https://ns.adobe.com/xdm/channel-types/preload": "Preload",
+                        "https://ns.adobe.com/xdm/channel-types/direct": "Direct",
+                        "https://ns.adobe.com/xdm/channel-types/external": "External",
+                        "https://ns.adobe.com/xdm/channel-types/mail": "Mail",
+                        "https://ns.adobe.com/xdm/channel-types/instore": "Instore"
+                    }
+                },
+                "xdm:mediaType": {
+                    "type": "string",
+                    "description": "Describes whether the media type is paid,owned or earned.",
+                    "meta:enum": {
+                        "paid": "Paid",
+                        "owned": "Owned",
+                        "earned": "Earned"
+                    }
+                },
+                "xdm:mediaAction": {
+                    "type": "string",
+                    "description": "The `mediaAction` property is used to provide a type of experiance event media action .",
+                    "meta:enum": {
+                        "opens": "Opens",
+                        "sends": "Sends",
+                        "clicks": "Clicks",
+                        "impressions": "Impressions",
+                        "bounces": "Bounces",
+                        "mirrorpages": "Mirrorpages",
+                        "nonDeliverables": "NonDeliverables",
+                        "notSent": "NotSent",
+                        "offerOpens": "OfferOpens",
+                        "unSubscriptions": "UnSubscriptions",
+                        "userComplaints": "UserComplaints",
+                        "subscriptions": "Subscriptions"
                     }
                 },
                 "xdm:contentTypes": {

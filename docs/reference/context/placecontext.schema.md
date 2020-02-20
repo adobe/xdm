@@ -1,5 +1,5 @@
 
-# Place Context Schema
+# Place context Schema
 
 ```
 https://ns.adobe.com/xdm/context/placecontext
@@ -14,13 +14,13 @@ Examples include location specific information such as weather, local time, traf
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/placecontext.schema.json](context/placecontext.schema.json) |
 ## Schema Hierarchy
 
-* Place Context `https://ns.adobe.com/xdm/context/placecontext`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* Place context `https://ns.adobe.com/xdm/context/placecontext`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Geo](../common/geo.schema.md) `https://ns.adobe.com/xdm/common/geo`
-  * [Point of Interest Interaction](poi-interaction.schema.md) `https://ns.adobe.com/xdm/context/poi-interaction`
+  * [Point of interest interaction](poi-interaction.schema.md) `https://ns.adobe.com/xdm/context/poi-interaction`
 
 
-## Place Context Example
+## Place context Example
 ```json
 {
   "xdm:localTime": "2001-07-04T12:08:56+01:00",
@@ -75,54 +75,54 @@ Examples include location specific information such as weather, local time, traf
 }
 ```
 
-# Place Context Properties
+# Place context Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:POIinteraction](#xdmpoiinteraction) | Point of Interest Interaction | Optional | Place Context (this schema) |
-| [xdm:activePOIs](#xdmactivepois) | Point of Interest Details | Optional | Place Context (this schema) |
-| [xdm:geo](#xdmgeo) | Geo | Optional | Place Context (this schema) |
-| [xdm:localTime](#xdmlocaltime) | `string` | Optional | Place Context (this schema) |
-| [xdm:localTimezoneOffset](#xdmlocaltimezoneoffset) | `integer` | Optional | Place Context (this schema) |
+| [xdm:POIinteraction](#xdmpoiinteraction) | Point of interest interaction | Optional | Place context (this schema) |
+| [xdm:activePOIs](#xdmactivepois) | Point of interest details | Optional | Place context (this schema) |
+| [xdm:geo](#xdmgeo) | Geo | Optional | Place context (this schema) |
+| [xdm:localTime](#xdmlocaltime) | `string` | Optional | Place context (this schema) |
+| [xdm:localTimezoneOffset](#xdmlocaltimezoneoffset) | `integer` | Optional | Place context (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:POIinteraction
-### POI Interaction
+### POI interaction
 
 The point of interest (POI) interaction details.
 
 `xdm:POIinteraction`
 * is optional
-* type: Point of Interest Interaction
+* type: Point of interest interaction
 * defined in this schema
 
 ### xdm:POIinteraction Type
 
 
-* [Point of Interest Interaction](poi-interaction.schema.md) – `https://ns.adobe.com/xdm/context/poi-interaction`
+* [Point of interest interaction](poi-interaction.schema.md) – `https://ns.adobe.com/xdm/context/poi-interaction`
 
 
 
 
 
 ## xdm:activePOIs
-### POI Detail
+### POI detail
 
 Details of the points of interest (POIs) that cause the event.
 
 `xdm:activePOIs`
 * is optional
-* type: Point of Interest Details
+* type: Point of interest details
 
 * defined in this schema
 
 ### xdm:activePOIs Type
 
 
-Array type: Point of Interest Details
+Array type: Point of interest details
 
 All items must be of the type:
-* [Point of Interest Details](poi-detail.schema.md) – `https://ns.adobe.com/xdm/context/poi-detail`
+* [Point of interest details](poi-detail.schema.md) – `https://ns.adobe.com/xdm/context/poi-detail`
 
 
 
@@ -151,9 +151,9 @@ The geographic location where the experience was delivered.
 
 
 ## xdm:localTime
-### Local Time
+### Local time
 
-The local time using RFC3339 with a stated timezone offset such as "2001-07-04T12:08:56-07:00". An example formatting pattern is "yyyy-MM-dd'T'HH:mm:ssXXX".
+The local time using RFC3339 with a stated time zone offset such as "2001-07-04T12:08:56-07:00". An example formatting pattern is "yyyy-MM-dd'T'HH:mm:ssXXX".
 
 `xdm:localTime`
 * is optional
@@ -172,9 +172,9 @@ The local time using RFC3339 with a stated timezone offset such as "2001-07-04T1
 
 
 ## xdm:localTimezoneOffset
-### Local Timezone Offset
+### Local time zone offset
 
-The current, local timezone offset in minutes from UTC for the localTime in this object.  This will include the current DST offset if applicable.
+The current, local time zone offset in minutes from UTC for the localTime in this object.  This will include the current DST offset if applicable.
 
 `xdm:localTimezoneOffset`
 * is optional

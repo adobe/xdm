@@ -7,7 +7,7 @@
     ],
     "$id": "https://ns.adobe.com/xdm/context/webpagedetails",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Web Page Details",
+    "title": "Web page details",
     "type": "object",
     "meta:extensible": true,
     "description": "Details about the web page that has just been loaded and viewed, as recorded by an `ExperienceEvent`.\n\nThis schema is intended for full page details and initial page loads of single page web applications (SPAs).\nFor interactions that are happening on a loaded page that do not trigger a new page load, see `WebInteraction`.\n",
@@ -15,7 +15,7 @@
         "webpagedetails": {
             "properties": {
                 "xdm:siteSection": {
-                    "title": "Site Section",
+                    "title": "Site section",
                     "type": "string",
                     "description": "The normative name of the site section where this web page resides, which may be used to classify or categorize the interaction."
                 },
@@ -36,12 +36,12 @@
                     "description": "The normative or usual server that hosts the web page.  This may or may not be the host or server that actually served the page interaction, but is used for classification purposes."
                 },
                 "xdm:isErrorPage": {
-                    "title": "Is Error Page",
+                    "title": "Is error page",
                     "type": "boolean",
                     "description": "Flag that indicate if the page is error page or not.  Error here is defined by the application, and may nor may not correspond to a page served with an HTTP error code.  This flag is used to broadly categorize web interactions."
                 },
                 "xdm:isHomePage": {
-                    "title": "Is Home Page",
+                    "title": "Is home page",
                     "type": "boolean",
                     "description": "Flag that indicate if the page is the site home page or not.  The definition of home page is determined by the application, but is commonly used to designate a top level landing page or common site entry point.  This flag is used to broadly categorize web interactions."
                 },

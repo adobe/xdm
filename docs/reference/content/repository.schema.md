@@ -1,5 +1,5 @@
 
-# Content Repository Schema
+# Content repository Schema
 
 ```
 https://ns.adobe.com/xdm/content/repository
@@ -11,18 +11,18 @@ A content repository that is compliant with the Adobe Experience Platform API sp
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | No | Experimental | No | Forbidden | Permitted | [content/repository.schema.json](content/repository.schema.json) |
 
-## Content Repository Example
+## Content repository Example
 ```json
 {
   "xdm:root": "https://cc-api-storage.adobe.io/"
 }
 ```
 
-# Content Repository Properties
+# Content repository Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:root](#xdmroot) | `string` | **Required** | Content Repository (this schema) |
+| [xdm:root](#xdmroot) | `string` | **Required** | Content repository (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:root

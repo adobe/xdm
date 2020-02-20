@@ -1,5 +1,5 @@
 
-# Componentized Page Schema
+# Componentized page Schema
 
 ```
 https://ns.adobe.com/xdm/content/componentized-page
@@ -15,11 +15,11 @@ Componentized pages are modular (consist of smaller content components), hyperli
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [content/componentized-page.schema.json](content/componentized-page.schema.json) |
 ## Schema Hierarchy
 
-* Componentized Page `https://ns.adobe.com/xdm/content/componentized-page`
+* Componentized page `https://ns.adobe.com/xdm/content/componentized-page`
   * [Asset](../external/repo/asset.schema.md) `http://ns.adobe.com/adobecloud/core/1.0/asset`
 
 
-## Componentized Page Example
+## Componentized page Example
 ```json
 {
   "repo:name": "example",
@@ -70,26 +70,26 @@ Componentized pages are modular (consist of smaller content components), hyperli
 }
 ```
 
-# Componentized Page Properties
+# Componentized page Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [dc:title](#dctitle) | `string` | Optional | Componentized Page (this schema) |
+| [dc:title](#dctitle) | `string` | Optional | Componentized page (this schema) |
 | [repo:createdBy](#repocreatedby) | `string` | Optional | [Asset](../external/repo/asset.schema.md#repocreatedby) |
 | [repo:etag](#repoetag) | `string` | Optional | [Asset](../external/repo/asset.schema.md#repoetag) |
 | [repo:id](#repoid) | `string` | Optional | [Asset](../external/repo/asset.schema.md#repoid) |
 | [repo:modifiedBy](#repomodifiedby) | `string` | Optional | [Asset](../external/repo/asset.schema.md#repomodifiedby) |
-| [repo:name](#reponame) | `string` | **Required** | Componentized Page (this schema) |
-| [repo:path](#repopath) | `string` | **Required** | Componentized Page (this schema) |
+| [repo:name](#reponame) | `string` | **Required** | Componentized page (this schema) |
+| [repo:path](#repopath) | `string` | **Required** | Componentized page (this schema) |
 | [repo:size](#reposize) | `integer` | Optional | [Asset](../external/repo/asset.schema.md#reposize) |
 | [repo:version](#repoversion) | `string` | Optional | [Asset](../external/repo/asset.schema.md#repoversion) |
 | [tiff:imageLength](#tiffimagelength) | `integer` | Optional | [Asset](../external/repo/asset.schema.md#tiffimagelength) |
 | [tiff:imageWidth](#tiffimagewidth) | `integer` | Optional | [Asset](../external/repo/asset.schema.md#tiffimagewidth) |
-| [xdm:language](#xdmlanguage) | `string` | Optional | Componentized Page (this schema) |
-| [xdm:navOrder](#xdmnavorder) | `integer` | Optional | Componentized Page (this schema) |
-| [xdm:shortTitle](#xdmshorttitle) | `string` | Optional | Componentized Page (this schema) |
-| [xdm:template](#xdmtemplate) | `string` | Optional | Componentized Page (this schema) |
-| [xdm:unlisted](#xdmunlisted) | `boolean` | Optional | Componentized Page (this schema) |
+| [xdm:language](#xdmlanguage) | `string` | Optional | Componentized page (this schema) |
+| [xdm:navOrder](#xdmnavorder) | `integer` | Optional | Componentized page (this schema) |
+| [xdm:shortTitle](#xdmshorttitle) | `string` | Optional | Componentized page (this schema) |
+| [xdm:template](#xdmtemplate) | `string` | Optional | Componentized page (this schema) |
+| [xdm:unlisted](#xdmunlisted) | `boolean` | Optional | Componentized page (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## dc:title

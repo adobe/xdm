@@ -40,7 +40,7 @@ Namespaces are similar to datasources, both in the use of codes and in the assum
 ## Schema Hierarchy
 
 * Namespace `https://ns.adobe.com/xdm/context/namespace`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
 ## Namespace Example

@@ -1,5 +1,5 @@
 
-# Web Referrer Schema
+# Web referrer Schema
 
 ```
 https://ns.adobe.com/xdm/context/webreferrer
@@ -16,11 +16,11 @@ The information in this schema is semantically compatible with the information i
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/webreferrer.schema.json](context/webreferrer.schema.json) |
 ## Schema Hierarchy
 
-* Web Referrer `https://ns.adobe.com/xdm/context/webreferrer`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* Web referrer `https://ns.adobe.com/xdm/context/webreferrer`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
-## Web Referrer Example
+## Web referrer Example
 ```json
 {
   "xdm:URL": "https://www.some-adserver.com",
@@ -28,12 +28,12 @@ The information in this schema is semantically compatible with the information i
 }
 ```
 
-# Web Referrer Properties
+# Web referrer Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:URL](#xdmurl) | `string` | Optional | Web Referrer (this schema) |
-| [xdm:type](#xdmtype) | `enum` | Optional | Web Referrer (this schema) |
+| [xdm:URL](#xdmurl) | `string` | Optional | Web referrer (this schema) |
+| [xdm:type](#xdmtype) | `enum` | Optional | Web referrer (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:URL
@@ -73,12 +73,12 @@ The value of this property **must** be equal to one of the [known values below](
 |-------|-------------|
 | `internal` | Internal |
 | `external` | External |
-| `search_engine` | Search Engine |
-| `typed_bookmarked` | Typed/Bookmarked |
+| `search_engine` | Search engine |
+| `typed_bookmarked` | Typed or bookmarked |
 | `email` | Email |
-| `social` | Social Network |
+| `social` | Social network |
 | `unknown` | Unknown |
-| `news` | Usenet Newsgroup |
+| `news` | Usenet newsgroup |
 | `usenet` |  |
 
 

@@ -24,9 +24,8 @@ Used to mark a field as an identity.
   "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile",
   "xdm:sourceVersion": 1,
   "xdm:sourceProperty": "/orgUnitId",
-  "xdm:namespace": "AAM",
-  "xdm:property": "xdm:code",
-  "xdm:isPrimary": true
+  "xdm:namespace": "12345",
+  "xdm:property": "xdm:id"
 }
 ```
 
@@ -36,8 +35,9 @@ Used to mark a field as an identity.
   "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile",
   "xdm:sourceVersion": 1,
   "xdm:sourceProperty": "/orgUnitId",
-  "xdm:namespace": "12345",
-  "xdm:property": "xdm:id"
+  "xdm:namespace": "AAM",
+  "xdm:property": "xdm:code",
+  "xdm:isPrimary": true
 }
 ```
 
@@ -48,7 +48,7 @@ Used to mark a field as an identity.
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Schema Descriptor](../schemadescriptor.schema.md#id) |
 | [@type](#type) | `const` | Optional | Identity Descriptor (this schema) |
-| [xdm:isPrimary](#xdmisprimary) | complex | Optional | Identity Descriptor (this schema) |
+| [xdm:isPrimary](#xdmisprimary) | `boolean` | Optional | Identity Descriptor (this schema) |
 | [xdm:namespace](#xdmnamespace) | `string` | Optional | Identity Descriptor (this schema) |
 | [xdm:property](#xdmproperty) | `enum` | Optional | Identity Descriptor (this schema) |
 | [xdm:sourceItem](#xdmsourceitem) | complex | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceitem) |
@@ -103,20 +103,13 @@ When present, only one field should be marked as the primary. Default is false.
 
 `xdm:isPrimary`
 * is optional
-* type: complex
+* type: `boolean`
 * defined in this schema
 
 ### xdm:isPrimary Type
 
-Unknown type ``.
 
-```json
-{
-  "title": "Is primary key or not",
-  "description": "When present, only one field should be marked as the primary. Default is false.",
-  "simpletype": "complex"
-}
-```
+`boolean`
 
 
 

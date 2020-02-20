@@ -1,5 +1,5 @@
 
-# ExperienceEvent Technical Details Schema
+# ExperienceEvent technical details Schema
 
 ```
 https://ns.adobe.com/xdm/context/experienceevent-technical-details
@@ -12,12 +12,12 @@ Technical details extension for ExperienceEvent.
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/experienceevent-technical-details.schema.json](context/experienceevent-technical-details.schema.json) |
 ## Schema Hierarchy
 
-* ExperienceEvent Technical Details `https://ns.adobe.com/xdm/context/experienceevent-technical-details`
-  * [Extensibility Base Schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* ExperienceEvent technical details `https://ns.adobe.com/xdm/context/experienceevent-technical-details`
+  * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Data Source](../data/datasource.schema.md) `https://ns.adobe.com/xdm/data/datasource`
 
 
-## ExperienceEvent Technical Details Example
+## ExperienceEvent technical details Example
 ```json
 {
   "xdm:dataSource": {
@@ -28,16 +28,16 @@ Technical details extension for ExperienceEvent.
 }
 ```
 
-# ExperienceEvent Technical Details Properties
+# ExperienceEvent technical details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:dataSource](#xdmdatasource) | Data Source | Optional | ExperienceEvent Technical Details (this schema) |
-| [xdm:receivedTimestamp](#xdmreceivedtimestamp) | `string` | Optional | ExperienceEvent Technical Details (this schema) |
+| [xdm:dataSource](#xdmdatasource) | Data Source | Optional | ExperienceEvent technical details (this schema) |
+| [xdm:receivedTimestamp](#xdmreceivedtimestamp) | `string` | Optional | ExperienceEvent technical details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:dataSource
-### Data Source
+### Data source
 
 Globally unique identification of a data source.
 
@@ -56,7 +56,7 @@ Globally unique identification of a data source.
 
 
 ## xdm:receivedTimestamp
-### Received Timestamp
+### Received time stamp
 
 The time at which this interaction was received by a server.
 

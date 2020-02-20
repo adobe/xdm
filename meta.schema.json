@@ -47,7 +47,7 @@
       "items": [
         {
           "type": "string",
-          "pattern": "Copyright 201[7-9] .*\\. All rights reserved\\."
+          "pattern": "(Copyright 201[7-9] .*\\. All rights reserved\\.)|(Copyright 202[0-9] .*\\. All rights reserved\\.)"
         },
         {
           "type": "string",

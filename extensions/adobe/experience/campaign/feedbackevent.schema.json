@@ -16,14 +16,14 @@
     "feedbackevent": {
       "properties": {
         "xdm:feedbackType": {
-          "title": "Type",
+          "title": "Feedback Type",
           "type": "string",
-          "description": "The type of message event"
+          "description": "The type of message event."
         },
         "xdm:retryCount": {
-          "title": "retryCount",
+          "title": "Retry Count",
           "type": "integer",
-          "description": "Number of failed attempts before the current event"
+          "description": "Number of failed attempts before the current event."
         },
         "https://ns.adobe.com/experience/campaign/delivery": {
           "title": "The campaign activity originating a message to a recipient.",
@@ -91,17 +91,17 @@
                   "type": "string",
                   "description": "Address used as a to/callee address. Depending on the communication channel, the `address` has a different format.\n\n  * `email`: an email address.\n  * `textMessage` or `phone`: a shortcode or phone number."
                 },
-                "xdm:Type": {
+                "xdm:type": {
                   "title": "Type",
                   "type": "string",
-                  "description": "Whether this message message event describes the BCC, CC or To recipient"
+                  "description": "Whether this message message event describes the BCC, CC or To recipient."
                 }
               }
             }
           }
         },
         "https://ns.adobe.com/experience/campaign/messageFailure": {
-          "title": "Message failure",
+          "title": "Message Failure",
           "type": "object",
           "properties": {
             "xdm:canonicalReason": {
@@ -122,19 +122,19 @@
             "xdm:bounceType": {
               "title": "Bounce Type",
               "type": "string",
-              "description": "Classifies whether it is a soft bounce or hard bounce"
+              "description": "Classifies whether it is a soft bounce or hard bounce."
             },
             "xdm:bounceClass": {
               "title": "Bounce Class",
               "type": "string",
-              "description": "Classification code for a given message"
+              "description": "Classification code for a given message."
             }
           }
         },
         "xdm:solutionContext": {
           "title": "Solution Context",
           "type": "object",
-          "description": "Solution specific data",
+          "description": "Solution specific data.",
           "$ref": "https://ns.adobe.com/experience/analytics/keyedlist"
         },
         "https://ns.adobe.com/experience/campaign/channel": {
@@ -144,14 +144,14 @@
             "xdm:channelType": {
               "title": "Channel Type",
               "type": "string",
-              "description": "Classifies whether the channel is email, push, sms"
+              "description": "Classifies whether the channel is email, push, sms."
             },
             "https://ns.adobe.com/experience/campaign/email": {
-              "title": "E-mail channel",
+              "title": "E-mail Channel",
               "type": "object",
               "properties": {
                 "https://ns.adobe.com/experience/campaign/interactions": {
-                  "title": "User interations",
+                  "title": "User Interactions",
                   "type": "object",
                   "properties": {
                     "xdm:fbType": {
@@ -167,12 +167,12 @@
                     "xdm:reportTo": {
                       "title": "Report To",
                       "type": "string",
-                      "description": "E-mail Address to which this spam report is to be delivered"
+                      "description": "E-mail Address to which this spam report is to be delivered."
                     },
                     "xdm:userAgent": {
                       "title": "User Agent",
                       "type": "string",
-                      "description": "Value of the browser's User-Agent header"
+                      "description": "Value of the browser's User-Agent header."
                     }
                   }
                 },

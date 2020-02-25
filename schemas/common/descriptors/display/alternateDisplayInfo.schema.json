@@ -42,6 +42,21 @@
               "type": "string"
             }
           }
+        },
+        ,
+        "enum" : {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "meta:enum": {
+          "type": "object",
+          "patternProperties": {
+            ".+": {
+              "type": "string"
+            }
+          }
         }
       },
       "anyOf": [

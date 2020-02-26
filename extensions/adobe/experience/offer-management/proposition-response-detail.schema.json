@@ -7,6 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/experience/offer-management/proposition-response-detail",
   "$schema": "http://json-schema.org/draft-06/schema#",
+  "version": "1.1",
   "title": "Offer Response Detail",
   "type": "object",
   "meta:abstract": true,

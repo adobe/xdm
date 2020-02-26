@@ -39,15 +39,15 @@
           "description": "Activity start date and end time. Property has the semantic of schema.org's 'startTime' property defined on http://schema.org/Action"
         },
         "xdm:endTime": {
-          "title": "Activty End Date and Time",
+          "title": "Activity End Date and Time",
           "type": "string",
           "format": "date-time",
           "description": "Activity end date and end time. Property has the semantic of schema.org's 'endTime' property defined on http://schema.org/Action"
         },
         "xdm:fallback": {
+          "title": "Fallback Option",
           "type": "string",
           "format": "uri-reference",
-          "title": "Fallback Option",
           "description": "The reference to a fallback option that is used when decisioning in the context of this activity does not qualify any of the regular options (this typically happens when hard constraints are applied). The value is the URI (@id) of the fallback option that is referenced."
         }
       }

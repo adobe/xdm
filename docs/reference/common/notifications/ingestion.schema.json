@@ -55,13 +55,18 @@
                 "xdm:ingestionId": {
                     "title": "Ingestion ID",
                     "type": "string",
-                    "description": "Unique identifier of customer data ingestion."
+                    "description": "System generates Unique Identifier for a data ingestion instance."
+                },
+                "xdm:parentIngestionId": {
+                    "title": "Parent Ingestion ID",
+                    "type": "string",
+                    "description": "In a flow where multiple insgestion stage, each stage employs its own ingestion identifier, this value represents the parent stage that resulted in the initiation of this ingestion. This can be used to correlate ingestion processes over multiple stages."
                 },
                 "xdm:customerIngestionId": {
                     "title": "Customer Batch Identifier",
                     "type": "string",
                     "pattern": "^[0-9A-Za-z\\.\\-\\_/@]+$",
-                    "description": "An externally generated identifier for this ingestion."
+                    "description": "Customers can specify an externally generated identifier for this ingestion."
                 },
                 "xdm:datasetId": {
                     "title": "Dataset ID",
@@ -104,6 +109,7 @@
                 "xdm:errors": {
                     "type": "array",
                     "description": "A list of problems encountered during this ingestion process.",
+                    "meta:status": "deprecated",
                     "items": {
                         "type": "object",
                         "properties": {

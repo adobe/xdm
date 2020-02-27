@@ -24,6 +24,7 @@
           "title": "DEPRECATED - Channel",
           "type": "string",
           "format": "uri-reference",
+          "meta:status": "deprecated",
           "description": "DEPRECATED, use placement.channel instead. The channel in which proposition was made. The value is a valid Channel URI. See 'https://ns.adobe.com/xdm/channels/channel'"
         },
         "xdm:placement": {

@@ -56,6 +56,7 @@ Customer notification events for data ingestion processes.
 | [xdm:imsOrg](#xdmimsorg) | `string` | Optional | Customer Data Ingestion Notifications Event (this schema) |
 | [xdm:ingestionId](#xdmingestionid) | `string` | Optional | Customer Data Ingestion Notifications Event (this schema) |
 | [xdm:inputFormat](#xdminputformat) | `enum` | Optional | Customer Data Ingestion Notifications Event (this schema) |
+| [xdm:parentIngestionId](#xdmparentingestionid) | `string` | Optional | Customer Data Ingestion Notifications Event (this schema) |
 | [xdm:sandboxName](#xdmsandboxname) | `string` | Optional | Customer Data Ingestion Notifications Event (this schema) |
 | [xdm:startTime](#xdmstarttime) | `integer` | Optional | Customer Data Ingestion Notifications Event (this schema) |
 | [xdm:status](#xdmstatus) | `enum` | Optional | Customer Data Ingestion Notifications Event (this schema) |
@@ -104,7 +105,7 @@ The unix timestamp (in milliseconds) when the batch processing action was comple
 ## xdm:customerIngestionId
 ### Customer Batch Identifier
 
-An externally generated identifier for this ingestion.
+Customers can specify an externally generated identifier for this ingestion.
 
 `xdm:customerIngestionId`
 * is optional
@@ -304,7 +305,7 @@ All instances must conform to this regular expression
 ## xdm:ingestionId
 ### Ingestion ID
 
-Unique identifier of customer data ingestion.
+System generates Unique Identifier for a data ingestion instance.
 
 `xdm:ingestionId`
 * is optional
@@ -339,6 +340,26 @@ The value of this property **must** be equal to one of the [known values below](
 | `csv` | CSV format of the file |
 | `parquet` | Parquet format of the file |
 | `json` | JSON format of the file |
+
+
+
+
+## xdm:parentIngestionId
+### Parent Ingestion ID
+
+In a flow where multiple insgestion stage, each stage employs its own ingestion identifier, this value represents the parent stage that resulted in the initiation of this ingestion. This can be used to correlate ingestion processes over multiple stages.
+
+`xdm:parentIngestionId`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:parentIngestionId Type
+
+
+`string`
+
+
 
 
 

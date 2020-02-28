@@ -49,12 +49,12 @@
               "type": "string",
               "description": "Mode of delivery for the messages sent."
             },
-            "xdm:deliveryLabel": {
+            "xdm:label": {
               "title": "Delivery Label",
               "type": "string",
               "description": "A human-friendly name of the campaign activity which is originating this message."
             },
-            "xdm:deliveryName": {
+            "xdm:name": {
               "title": "Delivery Internal Name",
               "type": "string",
               "description": "A human-friendly identifier of the campaign activity which is originating this message."
@@ -141,7 +141,7 @@
           "title": "Delivery channel",
           "type": "object",
           "properties": {
-            "xdm:channelType": {
+            "xdm:type": {
               "title": "Channel Type",
               "type": "string",
               "description": "Classifies whether the channel is email, push, sms."

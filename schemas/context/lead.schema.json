@@ -41,7 +41,8 @@
         "xdm:convertedDate": {
           "title": "Converted Date",
           "description": "The date when the lead was converted to an account.",
-          "type": "string"
+          "type": "string",
+		  "format": "date-time"
         },
         "xdm:convertedOpportunityId": {
           "title": "Converted Opportunity ID",
@@ -61,7 +62,8 @@
         "xdm:emailBouncedDate": {
           "title": "Email Bounced Date",
           "description": "Email bounced date.",
-          "type": "string"
+          "type": "string",
+		  "format": "date-time"
         },
         "xdm:emailBouncedReason": {
           "title": "Email Bounced Reason",
@@ -76,22 +78,26 @@
         "xdm:lastActivityDate": {
           "title": "Last Activity Date",
           "description": "Last activity date.",
-          "type": "string"
+          "type": "string",
+		  "format": "date-time"
         },
         "xdm:lastReferencedDate": {
           "title": "Last Referenced Date",
           "description": "Last referenced date.",
-          "type": "string"
+          "type": "string",
+		  "format": "date-time"
         },
         "xdm:lastTransferDate": {
           "title": "Last Transfer Date",
           "description": "Last transfer date.",
-          "type": "string"
+          "type": "string",
+		  "format": "date-time"
         },
         "xdm:lastViewedDate": {
           "title": "Last Viewed Date",
           "description": "Last viewed date.",
-          "type": "string"
+          "type": "string",
+		  "format": "date-time"
         },
         "xdm:masterRecordId": {
           "title": "Master Record Id",
@@ -116,11 +122,6 @@
         "xdm:photoUrl": {
           "title": "Photo Url",
           "description": "Photo url.",
-          "type": "string"
-        },
-        "xdm:systemModStamp": {
-          "title": "System Modified Timestamp",
-          "description": "System modified timestamp.",
           "type": "string"
         },
         "xdm:isUnReadByOwner": {

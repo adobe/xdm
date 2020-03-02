@@ -41,12 +41,12 @@
         "marketo:count": {
           "title": "Count",
           "description": "Count.",
-		  "type": "string"
+		  "type": "number"
         },
         "marketo:totalProposedNameCount": {
           "title": "Total Proposed Name Count",
           "description": "Total proposed name count.",
-		  "type": "string"
+		  "type": "number"
         }	  
 	  }
     }

@@ -21,10 +21,10 @@
           "format": "uri-reference",
           "description": "A unique identifier for the decision option."
         },
-        "xdm:version": {
-          "title": "Decision Option Version",
+        "repo:etag": {
+          "title": "Decision Option ETag",
           "type": "string",
-          "description": "The version that the decision option object was at when the snapshot was taken."
+          "description": "The revision that the decision option object was at when the snapshot was taken."
         },
         "xdm:name": {
           "type": "string",

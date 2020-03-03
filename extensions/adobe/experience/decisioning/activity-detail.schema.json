@@ -21,10 +21,10 @@
           "format": "uri-reference",
           "description": "A unique, immutable identifier for the decision activity."
         },
-        "xdm:version": {
-          "title": "Activity Version",
+        "repo:etag": {
+          "title": "Activity ETag",
           "type": "string",
-          "description": "The version that the decision activity object was at when the snapshot was taken."
+          "description": "The revision that the decision activity object was at when the snapshot was taken."
         },
         "xdm:name": {
           "title": "Activity Name",

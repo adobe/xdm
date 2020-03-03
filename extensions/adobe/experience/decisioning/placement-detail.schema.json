@@ -21,10 +21,10 @@
           "format": "uri-reference",
           "description": "A unique identifier for the decision placement."
         },
-        "xdm:version": {
-          "title": "Placement Version",
+        "repo:etag": {
+          "title": "Placement ETag",
           "type": "string",
-          "description": "The version that the placement object was at when the snapshot was taken."
+          "description": "The revision that the placement object was at when the snapshot was taken."
         },
         "xdm:name": {
           "title": "Placement Name",

@@ -31,8 +31,8 @@
           "type": "string",
           "description": "Placement name. The name is displayed in various user interfaces."
         },
-        "xdm:channel": {
-          "title": "Placement Channel",
+        "xdm:channelID": {
+          "title": "Placement's Channel Identifier",
           "type": "string",
           "format": "uri-reference",
           "description": "The channel in which proposition was made. The value is a valid Channel URI. See 'https://ns.adobe.com/xdm/channels/channel'"

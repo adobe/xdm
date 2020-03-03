@@ -7,11 +7,11 @@
   ],
   "$id": "https://ns.adobe.com/experience/decisioning/activity-detail",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Decision Activity Detail",
+  "title": "Decision Activity Snapshot",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "description": "Detail about the entity defining and controlling the decisioning process. Decisions are made in the context of an activity. At any given time, the best option is re-evaluated, or ranked, based on the most current set of context variables, rules and constraints. The decision activity specifies a fallback option should the combined constraints disqualify all narrowed-down options.",
+  "description": "Snapshot of the properties of the decision activity. A decision activity is an entity that controls a decisioning process. Decisions are made in the context of an activity. See definition of decision activty for more details.",
   "definitions": {
     "activity-detail-datatype": {
       "properties": {
@@ -19,29 +19,34 @@
           "title": "Activity Identifier",
           "type": "string",
           "format": "uri-reference",
-          "description": "A unique identifier for the decision activity."
+          "description": "A unique, immutable identifier for the decision activity."
+        },
+        "repo:etag": {
+          "title": "Activity ETag",
+          "type": "string",
+          "description": "The revision that the decision activity object was at when the snapshot was taken."
         },
         "xdm:name": {
+          "title": "Activity Name",
           "type": "string",
-          "title": "Name",
           "description": "Activity name. The name is displayed in various user interfaces."
         },
         "xdm:startTime": {
+          "title": "Activity Start Date and Time",
           "type": "string",
           "format": "date-time",
-          "title": "Start Date and Time",
-          "description": "Activity start date and time. Property has the semantic of schema.org's 'startTime' property defined on http://schema.org/Action"
+          "description": "Activity start date and end time. Property has the semantic of schema.org's 'startTime' property defined on http://schema.org/Action"
         },
         "xdm:endTime": {
+          "title": "Activity End Date and Time",
           "type": "string",
           "format": "date-time",
-          "title": "End Date and Time",
-          "description": "Activity end date and time. Property has the semantic of schema.org's 'endTime' property defined on http://schema.org/Action"
+          "description": "Activity end date and end time. Property has the semantic of schema.org's 'endTime' property defined on http://schema.org/Action"
         },
         "xdm:fallback": {
+          "title": "Fallback Option",
           "type": "string",
           "format": "uri-reference",
-          "title": "Fallback Option",
           "description": "The reference to a fallback option that is used when decisioning in the context of this activity does not qualify any of the regular options (this typically happens when hard constraints are applied). The value is the URI (@id) of the fallback option that is referenced."
         }
       }
@@ -57,6 +62,5 @@
     {
       "required": ["xdm:id"]
     }
-  ],
-  "meta:status": "experimental"
+  ]
 }

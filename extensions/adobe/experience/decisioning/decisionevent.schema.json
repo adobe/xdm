@@ -7,9 +7,8 @@
   ],
   "$id": "https://ns.adobe.com/experience/decisioning/decisionevent",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "XDM DecisionEvent",
+  "title": "XDM Decision Event",
   "type": "object",
-  "description": "A DecisionEvent is used to capture observations about the outcome and context of a decision activity, including information about how the decision was made, when it occurred, what options were proposed (and chosen) and what contextual state existed that either influenced the decision or could be observed during the decision process. DecisionEvents also capture the proposition ID, a globally unique identifier that can be used to correlate the decision to other events. DecisionEvents are not only relatable to Experience Events that impacted a decision but also to ExperienceEvents that are a direct response to a proposition. It is the expectation that applications reference the proposition ID in every ExperienceEvent that was influenced by the propositions. The proposition-response history in an individual profile is maintained using proposition IDs.",
   "meta:abstract": true,
   "meta:extensible": true,
   "meta:extends": [
@@ -17,6 +16,7 @@
     "https://ns.adobe.com/experience/decisioning/proposition",
     "https://ns.adobe.com/experience/decisioning/proposition-details"
   ],
+  "description": "A decision event is used to capture observations about the outcome and context of a decision activity. The decision event captures information about how the decision made, when it was occurring, what options were proposed (chosen) and what contextual state existed that either influenced the decision or could be observed during the decision process. The decision event also captures the proposition ID, a globally unique identifier that can be used to correlate the decision to other events. DecisionEvents are not only relatable to Experience Events that impacted a decision but also to ExperienceEvents that are a direct response to a proposition. It is the expectation that applications reference the proposition ID in every experience event that was influenced by the propositions. A user profile's proposition-response history is maintained with these proposition IDs.",
   "definitions": {
     "decisionevent": {
       "properties": {}
@@ -45,6 +45,5 @@
         "https://ns.adobe.com/experience/decisioning/propositionID"
       ]
     }
-  ],
-  "meta:status": "experimental"
+  ]
 }

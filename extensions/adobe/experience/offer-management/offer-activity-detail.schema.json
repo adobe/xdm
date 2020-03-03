@@ -5,12 +5,12 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/experience/offer-management/offer-activity-detail",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Offer Activity Detail",
+  "type": "object",
   "meta:abstract": true,
   "meta:extensible": true,
-  "type": "object",
-  "title": "Offer Activity Detail",
   "meta:extends": [
     "https://ns.adobe.com/experience/decisioning/activity-detail"
   ],
@@ -19,21 +19,21 @@
     "offer-activity-detail": {
       "properties": {
         "xdm:placement": {
+          "title": "Offer Placement",
           "type": "string",
           "format": "uri-reference",
-          "title": "Offer Placement",
           "description": "The reference to an offer placement instance. Offer placements are used by offer activities to limit the offer selection to those offers that have a representation that complies with the offer placement restrictions. The value is the URI (@id) of the offer placement that is referenced. See schema https://ns.adobe.com/experience/offer-management/offer-placement"
         },
         "xdm:filter": {
+          "title": "Offer Filter",
           "type": "string",
           "format": "uri-reference",
-          "title": "Offer Filter",
           "description": "The reference to a filter that is applied to the inventory when a decisioning is made the context of this activity. The value is the URI (@id) of the offer filter that is referenced. See schema https://ns.adobe.com/experience/offer-management/offer-filter"
         },
         "xdm:fallback": {
+          "title": "Fallback Offer",
           "type": "string",
           "format": "uri-reference",
-          "title": "Fallback Offer",
           "description": "The reference to a fallback offer that is used when decisioning in the context of this activity does not qualify any of the offers specified in the fallback offer. The value is the URI (@id) of the fallback offer that is referenced.  See schema https://ns.adobe.com/experience/offer-management/fallback-offer"
         }
       }

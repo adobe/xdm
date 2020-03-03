@@ -7,19 +7,19 @@
   ],
   "$id": "https://ns.adobe.com/experience/decisioning/proposition-details",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "DecisionEvent List of Propositions",
+  "title": "XDM Decision Event - List of Propositions",
   "type": "object",
   "meta:abstract": true,
   "meta:extensible": true,
   "meta:intendedToExtend": [
     "https://ns.adobe.com/experience/decisioning/decisionevent"
   ],
-  "description": "Decision proposition is used to capture the outcome of a decisioning process.",
+  "description": "Decision proposition is used to capture the results of a decisioning process.",
   "definitions": {
     "proposition-details-mixin": {
       "properties": {
         "https://ns.adobe.com/experience/decisioning/propositionDetails": {
-          "title": "Outputs and contexts of a single decision event.",
+          "title": "Proposition Details.",
           "type": "array",
           "items": {
             "$ref": "https://ns.adobe.com/experience/decisioning/proposition-detail"
@@ -36,6 +36,5 @@
     {
       "$ref": "#/definitions/proposition-details-mixin"
     }
-  ],
-  "meta:status": "experimental"
+  ]
 }

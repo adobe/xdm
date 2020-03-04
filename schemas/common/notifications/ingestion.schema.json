@@ -101,7 +101,7 @@
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Number of records successfully ingested."
         },
-        "xdm:failedRecords" : {
+        "xdm:failedRecords": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Number of records failed to ingest."
         },

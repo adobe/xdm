@@ -67,7 +67,7 @@
           "properties": {
             "xdm:id": {
               "title": "Message Identifier",
-              "type": "number",
+              "type": "string",
               "description": "Identifier of the message."
             },
             "xdm:subject": {
@@ -76,11 +76,9 @@
               "description": "Subject line of the message."
             },
             "xdm:size": {
-              "title": "Size (Bytes)",
+              "title": "Message Size",
               "type": "integer",
-              "description": "Size in bytes of the message.\n* For email, the `size` reflects the all MIME envelope of the message, including the encoded attachments if any.\n* For SMS, the `size` reflects the number of bytes necessary to deliver the message.\nIf that number is over 160 the message will be delivered over more than one SMS.",
-              "minimum": 0,
-              "maximum": 2147483647
+              "description": "Size in bytes of the message."
             },
             "https://ns.adobe.com/experience/campaign/recipient": {
               "title": "The recipient of this message",
@@ -105,7 +103,7 @@
           "type": "object",
           "properties": {
             "xdm:canonicalReason": {
-              "title": "Reason",
+              "title": "Canonical Reason",
               "type": "string",
               "description": "Canonicalized text of the response returned by the remote server due to a failed delivery attempt."
             },
@@ -133,7 +131,6 @@
         },
         "xdm:solutionContext": {
           "title": "Solution Context",
-          "type": "object",
           "description": "Solution specific data.",
           "$ref": "https://ns.adobe.com/experience/analytics/keyedlist"
         },

@@ -99,13 +99,11 @@
         },
         "xdm:succesfulRecords": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-            "Number of records successfully ingested."
+          "description": "Number of records successfully ingested."
         },
         "xdm:failedRecords" : {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-            "Number of records failed to ingest."
+          "description": "Number of records failed to ingest."
         },
         "xdm:errors": {
           "type": "array",

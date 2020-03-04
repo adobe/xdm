@@ -15,6 +15,7 @@ Customer notification events for data ingestion processes.
 * Customer Data Ingestion Notifications Event `https://ns.adobe.com/xdm/common/notifications/ingestion`
   * [Record Schema](../../data/record.schema.md) `https://ns.adobe.com/xdm/data/record`
   * [Extensibility base schema](../extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Measure](../../data/measure.schema.md) `https://ns.adobe.com/xdm/data/measure`
 
 
 ## Customer Data Ingestion Notifications Event Example
@@ -53,6 +54,7 @@ Customer notification events for data ingestion processes.
 | [xdm:datasetId](#xdmdatasetid) | `string` | Optional | Customer Data Ingestion Notifications Event (this schema) |
 | [xdm:errors](#xdmerrors) | `object[]` | Optional | Customer Data Ingestion Notifications Event (this schema) |
 | [xdm:eventType](#xdmeventtype) | `enum` | Optional | Customer Data Ingestion Notifications Event (this schema) |
+| [xdm:failedRecords](#xdmfailedrecords) | Measure | Optional | Customer Data Ingestion Notifications Event (this schema) |
 | [xdm:imsOrg](#xdmimsorg) | `string` | Optional | Customer Data Ingestion Notifications Event (this schema) |
 | [xdm:ingestionId](#xdmingestionid) | `string` | Optional | Customer Data Ingestion Notifications Event (this schema) |
 | [xdm:inputFormat](#xdminputformat) | `enum` | Optional | Customer Data Ingestion Notifications Event (this schema) |
@@ -60,6 +62,7 @@ Customer notification events for data ingestion processes.
 | [xdm:sandboxName](#xdmsandboxname) | `string` | Optional | Customer Data Ingestion Notifications Event (this schema) |
 | [xdm:startTime](#xdmstarttime) | `integer` | Optional | Customer Data Ingestion Notifications Event (this schema) |
 | [xdm:status](#xdmstatus) | `enum` | Optional | Customer Data Ingestion Notifications Event (this schema) |
+| [xdm:succesfulRecords](#xdmsuccesfulrecords) | Measure | Optional | Customer Data Ingestion Notifications Event (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -276,6 +279,24 @@ The value of this property **must** be equal to one of the [known values below](
 
 
 
+## xdm:failedRecords
+
+Number of records failed to ingest.
+
+`xdm:failedRecords`
+* is optional
+* type: Measure
+* defined in this schema
+
+### xdm:failedRecords Type
+
+
+* [Measure](../../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
 ## xdm:imsOrg
 
 The owning IMS organization identifier.
@@ -420,6 +441,24 @@ The value of this property **must** be equal to one of the [known values below](
 |-------|-------------|
 | `success` | Sucess Status |
 | `failure` | Failure Status |
+
+
+
+
+## xdm:succesfulRecords
+
+Number of records successfully ingested.
+
+`xdm:succesfulRecords`
+* is optional
+* type: Measure
+* defined in this schema
+
+### xdm:succesfulRecords Type
+
+
+* [Measure](../../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
 
 
 

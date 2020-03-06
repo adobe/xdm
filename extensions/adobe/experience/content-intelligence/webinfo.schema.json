@@ -1,0 +1,45 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/content-intelligence/webinfo",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Content Intelligence Web information",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "Contains details for web page content, web interaction and commerce activity",
+  "definitions": {
+    "webinfo": {
+      "properties": {
+        "webPage": {
+          "title": "Web page details containing its metadata and embedded components",
+          "description": "The context of a web element which can be its parent with simblings or simply a web page.",
+          "isRequired": false,
+          "$ref": "https://ns.adobe.com/experience/content-intelligence/webcontainer",
+          "type": "object"
+        },
+        "webAction": {
+          "title": "Details of web interaction",
+          "description": "Defines information about web events and their context.",
+          "isRequired": false,
+          "$ref": "https://ns.adobe.com/experience/content-intelligence/webaction",
+          "type": "object"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/webinfo"
+    }
+  ],
+  "meta:status": "experimental"
+}

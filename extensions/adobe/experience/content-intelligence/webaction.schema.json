@@ -1,0 +1,48 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/content-intelligence/webaction",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Content Intelligence Web action",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "Web action in the form of web events and their context.",
+  "definitions": {
+    "webaction": {
+      "properties": {
+        "type": {
+          "title": "Action type",
+          "description": "Type of action. The action can be user generated (click, expand) or dynamic (offer loaded).",
+          "type": "string",
+          "meta:enum": {
+            "click":  "Click event has occured on the page. It can be link click or click on a web element.",
+            "expand": "Expand event occured on container web elements (accordion)",
+            "collapse":  "Collapse event occured on container web elements (accordion)",
+            "offer": "Personalized content (offer) was dynamically loaded in DOM"
+          }
+        },
+        "element": {
+          "title": "Element",
+          "description": "The target element metadata. For 'clickEvent' this is the target element. For 'offerLoaded' this could be the targeted element or empty if the targeted element is defined in the 'context'",
+          "$ref": "https://ns.adobe.com/experience/content-intelligence/webelement"
+        },
+        "context": {
+          "title": "Context",
+          "description": "The web context of the actioned element. For 'cliclEvent' this represents the parent element and its siblings. For 'offerLoaded' this represents the targeted element with offers",
+          "$ref": "https://ns.adobe.com/experience/content-intelligence/webcontainer"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/webaction"
+    }
+  ],
+  "meta:status": "experimental"
+}

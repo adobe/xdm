@@ -16,7 +16,7 @@
     "https://ns.adobe.com/experience/decisioning/decisionevent"
   ],
   "meta:extends": ["https://ns.adobe.com/xdm/context/identitymap"],
-  "description": "This mixin is used to capture information regarding the proposition ID in an DecisionEvent and link it to a specific proposition in an ExperienceEvent that is part of the decisioning process.",
+  "description": "A decision proposition reference is used to link to a decision event in experience events that are response to a particular proposition.",
   "definitions": {
     "proposition-mixin": {
       "properties": {
@@ -24,7 +24,7 @@
           "title": "Proposition Identifier",
           "type": "string",
           "format": "uri-reference",
-          "description": "An identity for the proposition entity associated with an XDM DecisionEvent. A single DecisionEvent can propose multiple options for a set of activities at once, one for each activity involved. It is the expectation that applications reference this PropositionID in every ExperienceEvent that was influenced by the set of propositions. An Profile's proposition-response history is maintained with these proposition identifiers."
+          "description": "An identity for the proposition entity associated with an \"XDM Decision Event\". A single decision event can propose multiple options for a set of activities at once, one for each activity involved. It is the expectation that applications reference this \"propositionID\" in every experience event that was influenced by the set of propositions. A profile's proposition-response history is maintained with these proposition identifiers."
         }
       }
     }
@@ -39,6 +39,5 @@
     {
       "$ref": "#/definitions/proposition-mixin"
     }
-  ],
-  "meta:status": "experimental"
+  ]
 }

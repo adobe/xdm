@@ -6,7 +6,11 @@
     "xdm:endDate": "2018-12-27T05:59:18.914Z",
     "xdm:fallback": "xcore:fallback-offer:e91ce7243fd8c2a"
   },
-  "xdm:channel": "https://ns.adobe.com/xdm/channels/email",
+  "xdm:placement": {
+    "xdm:id": "xcore:offer-placement:c652463157c2aa1",
+    "xdm:name": "Top Banner",
+    "xdm:channel": "https://ns.adobe.com/xdm/channels/email"
+  },
   "xdm:selections": [
     {
       "xdm:id": "xcore:personalized-offer:e91ee850a0bb7d9",

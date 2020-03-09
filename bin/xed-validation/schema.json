@@ -1,0 +1,59 @@
+{
+  "$id": "https://git.corp.adobe.com/experience-platform/sdm-specification/blob/master/json/schema.json",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "allOf": [{
+    "$ref": "http://json-schema.org/draft-06/schema#"
+  }],
+  "properties": {
+    "version": {
+      "$ref": "#/definitions/version"
+    },
+    "properties": {
+      "additionalProperties": {
+        "$ref": "#/definitions/object"
+      }
+    }
+  },
+  "definitions": {
+    "version": {
+      "description": "Schema version which can be a revision number or git repo release tag number etc. This should be the same version number as part of the schema id",
+      "type": "string",
+      "pattern": "^[0-9]+([.][0-9]+?)?$",
+      "default": "1"
+    },
+    "enumValues": {
+      "description": "Additionnal meta-data about enumerated values.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "patternProperties": {
+          "[_a-zA-Z0-9]*": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string",
+                "description": "The enum value as displayed in the user interface."
+              },
+              "description": {
+                "type": "string",
+                "description": "User documentation of the enum value."
+              }
+            }
+          }
+        }
+      }
+    },
+    "object": {
+      "properties": {
+        "enumValues": {
+          "$ref": "#/definitions/enumValues"
+        },
+        "properties": {
+          "additionalProperties": {
+            "$ref": "#/definitions/object"
+          }
+        }
+      }
+    }
+  }
+}

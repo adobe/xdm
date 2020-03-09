@@ -7,20 +7,20 @@
     ],
     "$id": "https://ns.adobe.com/xdm/channels/web",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Web",
-    "description": "The world wide web and mobile web. Pages delivered via HTTP to a web browser or in-app browser.",
+    "title": "Web Channel",
+    "description": "The world wide web and mobile web channel are pages delivered via HTTP to a web browser or in-app browser.",
     "meta:extensible": true,
     "meta:extends": [
         "https://ns.adobe.com/xdm/channels/channel#/definitions/channel"
     ],
-    "meta:abstract": false,
+    "meta:abstract": true,
     "type": "object",
     "definitions": {
         "channel": {
             "properties": {
                 "@id": {
                     "type": "string",
-                    "format": "uri",
+                    "format": "uri-reference",
                     "const": "https://ns.adobe.com/xdm/channels/web",
                     "description": "The ID uniquely identifies the channel. Each specific experience channel defines a constant `@id`."
                 },
@@ -42,10 +42,10 @@
                     "meta:enum": {
                         "https://ns.adobe.com/xdm/channel-types/web": "The world wide web, including mobile web",
                         "https://ns.adobe.com/xdm/channel-types/social": "Social media platforms",
-                        "https://ns.adobe.com/xdm/channel-types/mobile": "Mobile applications",
-                        "https://ns.adobe.com/xdm/channel-types/messaging": "Instant Messaging",
-                        "https://ns.adobe.com/xdm/channel-types/email": "E-Mail",
-                        "https://ns.adobe.com/xdm/channel-types/offline": "Non-Digital experience channels"
+                        "https://ns.adobe.com/xdm/channel-types/mobile": "Mobile apps",
+                        "https://ns.adobe.com/xdm/channel-types/messaging": "Instant messaging",
+                        "https://ns.adobe.com/xdm/channel-types/email": "Email",
+                        "https://ns.adobe.com/xdm/channel-types/offline": "Non-digital experience channels"
                     }
                 },
                 "xdm:contentTypes": {

@@ -5,7 +5,9 @@
       "xdm:value": 1
     }
   },
-  "xdm:channel": "https://ns.adobe.com/xdm/channels/sms",
+  "xdm:channel": {
+    "@id": "https://ns.adobe.com/xdm/channels/email"
+  },
   "xdm:endUserIDs": {
     "https://ns.adobe.com/experience/mcid": {
       "@id": "https://data.adobe.io/entities/identity/92312748749128",
@@ -61,7 +63,7 @@
     "xdm:messageClass": "oneTime"
   },
   "https://ns.adobe.com/experience/campaign/orchestration": {
-    "xdm:businessReason": "onJourneyEnter"
+    "xdm:eventID": "onJourneyEnter"
   },
   "xdm:mutation": {
     "xdm:timestamp": "2017-09-26T14:52:25+00:00",
@@ -73,5 +75,6 @@
     "xdm:reason": "undefined",
     "xdm:reasonMessage": "* Sent.",
     "xdm:quarantine": false
-  }
+  },
+  "https://ns.adobe.com/experience/campaign/eventSource": "pipelined-mta"
 }

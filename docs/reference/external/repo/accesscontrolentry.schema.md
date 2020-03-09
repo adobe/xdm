@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/external/repo/accesscontrolentry
 ```
 
-Schema for the Access Control Entry for the Access Control List of a resource
+Schema for the access control entry for the access control List of a resource.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
@@ -44,13 +44,13 @@ Schema for the Access Control Entry for the Access Control List of a resource
 
 # Access Control Entry Properties
 
-| Property | Type | Required | Defined by |
-|----------|------|----------|------------|
-| [repo:inheritance](#repoinheritance) | `string` | Optional | Access Control Entry (this schema) |
-| [repo:modifier](#repomodifier) | `string` | Optional | Access Control Entry (this schema) |
-| [repo:principal](#repoprincipal) | complex | Optional | Access Control Entry (this schema) |
-| [repo:privileges](#repoprivileges) | reference | Optional | Access Control Entry (this schema) |
-| [repo:relations](#reporelations) | `string[]` | Optional | Access Control Entry (this schema) |
+| Property | Type | Required | Default | Defined by |
+|----------|------|----------|---------|------------|
+| [repo:inheritance](#repoinheritance) | `string` | Optional | `"deep"` | Access Control Entry (this schema) |
+| [repo:modifier](#repomodifier) | `string` | Optional | `"grant"` | Access Control Entry (this schema) |
+| [repo:principal](#repoprincipal) | complex | Optional |  | Access Control Entry (this schema) |
+| [repo:privileges](#repoprivileges) | reference | Optional |  | Access Control Entry (this schema) |
+| [repo:relations](#reporelations) | `string[]` | Optional |  | Access Control Entry (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## repo:inheritance
@@ -60,6 +60,7 @@ Optional inheritance of the ace: whether the deny or grant is inherited by the c
 `repo:inheritance`
 * is optional
 * type: `string`
+* default: `"deep"`
 * defined in this schema
 
 ### repo:inheritance Type
@@ -85,6 +86,7 @@ Optional modified to the privilege: either grant or deny to grant or deny, resp.
 `repo:modifier`
 * is optional
 * type: `string`
+* default: `"grant"`
 * defined in this schema
 
 ### repo:modifier Type
@@ -97,8 +99,8 @@ Optional modified to the privilege: either grant or deny to grant or deny, resp.
 ### repo:modifier Known Values
 | Value | Description |
 |-------|-------------|
-| `grant` | Permission is granted to the Principal. |
-| `deny` | Permission is denied to the Principal. |
+| `grant` | Permission is granted to the principal. |
+| `deny` | Permission is denied to the principal. |
 
 
 
@@ -133,7 +135,7 @@ Optional modified to the privilege: either grant or deny to grant or deny, resp.
 
 ## repo:privileges
 
-Privileges granted or denied to the Principal
+Privileges granted or denied to the principal.
 
 `repo:privileges`
 * is optional
@@ -158,7 +160,7 @@ All items must be of the type:
 
 ## repo:relations
 
-List of relation link types to which this privilege applies
+List of relation link types to which this privilege applies.
 
 `repo:relations`
 * is optional

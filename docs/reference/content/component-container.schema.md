@@ -1,5 +1,5 @@
 
-# Component Container Schema
+# Component container Schema
 
 ```
 https://ns.adobe.com/xdm/content/component-container
@@ -12,7 +12,7 @@ A container for `Page Component`s, this means for content blocks that are within
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [content/component-container.schema.json](content/component-container.schema.json) |
 
-## Component Container Example
+## Component container Example
 ```json
 {
   "@type": "https://francois.corp.adobe.com:4502/apps/foundation/generic_container",
@@ -29,7 +29,7 @@ A container for `Page Component`s, this means for content blocks that are within
     "image0": {
       "type": "https://francois.corp.adobe.com:4502/apps/foundation/image",
       "image": {
-        "@type": "https://ns.adobe.com/xdm/assets/asset",
+        "@type": "http://ns.adobe.com/adobecloud/core/1.0/asset",
         "repo:id": "urn:aaid:aem:4123ba4c-93a8-4c5d-b979-1234e4318185",
         "id": "https://francois.corp.adobe.com:4502/content/dam/Glasses-small.jpg"
       }
@@ -42,18 +42,18 @@ A container for `Page Component`s, this means for content blocks that are within
 }
 ```
 
-# Component Container Properties
+# Component container Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@type](#@type) | `string` | **Required** | Component Container (this schema) |
-| [xdm:items](#xdmitems) | `object` | **Required** | Component Container (this schema) |
-| [xdm:itemsOrder](#xdmitemsorder) | `string[]` | Optional | Component Container (this schema) |
+| [@type](#type) | `string` | **Required** | Component container (this schema) |
+| [xdm:items](#xdmitems) | `object` | **Required** | Component container (this schema) |
+| [xdm:itemsOrder](#xdmitemsorder) | `string[]` | Optional | Component container (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @type
 
-Type of the container. Acts as processing hint for the client.
+Type of the container, acts as processing hint for the client.
 
 `@type`
 * is **required**
@@ -86,7 +86,7 @@ The items of this container.
 `object` with following properties:
 
 
-| Property | Type | Required
+| Property | Type | Required |
 |----------|------|----------|
 
 

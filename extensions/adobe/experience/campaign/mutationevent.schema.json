@@ -5,120 +5,80 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id":"https://ns.adobe.com/experience/campaign/mutationevent",
+  "$id": "https://ns.adobe.com/experience/campaign/mutationevent",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Adobe Campaign Mutation Event",
   "type": "object",
-  "description": "Adobe Campaign mutation event",
+  "description": "Adobe Campaign mutation event.",
   "definitions": {
-    "experienceevent": {
+    "mutationevent": {
       "properties": {
-        "@id": {
-          "title": "Identifier",
-          "type": "string",
-          "format": "uri",
-          "description": "The unique identifier for the ExperienceEvent."
-        },
-        "xdm:dataSource": {
-          "title": "Data Source",
-          "$ref": "https://ns.adobe.com/xdm/data/datasource",
-          "description": "Globally unique identification of a data source."
-        },
         "xdm:timestamp": {
           "title": "Timestamp",
           "type": "string",
           "format": "date-time",
-          "description":
-            "The time when the first event of the interaction occurred."
-        },
-        "xdm:endUserIDs": {
-          "title": "End User IDs",
-          "$ref": "https://ns.adobe.com/xdm/context/enduserids",
-          "description":
-            "Condensed, normalized encapsulation of all end user identifiers.\n"
-        },
-        "xdm:environment": {
-          "title": "Environment",
-          "$ref": "https://ns.adobe.com/xdm/context/environment",
-          "description":
-            "Information about the surrounding situation the event observation occurred in, specifically detailing transitory information such as the network or software versions."
-        },
-        "xdm:productListItems": {
-          "title": "Product List Items",
-          "type": "array",
-          "description":
-            "A list of items representing a product selected by a customer with specific options and pricing that are for that usage context at a specific point of time and may differ from the product record.",
-          "items": {
-            "$ref": "https://ns.adobe.com/xdm/content/productlistitem"
-          }
-        },
-        "xdm:device": {
-          "title": "Device",
-          "$ref": "https://ns.adobe.com/xdm/context/device",
-          "description":
-            "An identified Device/Application or Device/Browser instance that is trackable across sessions, normally by cookies."
-        },
-        "xdm:commerce": {
-          "title": "Commerce",
-          "$ref": "https://ns.adobe.com/xdm/context/commerce",
-          "description":
-            "The commerce specific data related to this interaction."
-        },
-        "xdm:application": {
-          "title": "Application",
-          "$ref": "https://ns.adobe.com/xdm/context/application",
-          "description":
-            "The application related to the event observation. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login."
-        },
-        "xdm:search": {
-          "title": "Search",
-          "$ref": "https://ns.adobe.com/xdm/context/search",
-          "description": "The information related to web or mobile search."
+          "description": "The time when the first event of the interaction occurred."
         },
         "xdm:web": {
           "title": "Web",
           "$ref": "https://ns.adobe.com/xdm/context/webinfo",
-          "description":
-            "The information related to web page and link of the ExperienceEvent."
+          "description": "The information related to web page and link of the ExperienceEvent."
         },
         "xdm:directMarketing": {
           "title": "Direct Marketing",
           "$ref": "https://ns.adobe.com/xdm/context/direct-marketing",
-          "description":
-            "The events and properties related to direct/outbound marketing such as email, direct mail, texts and in-app notifications."
+          "description": "The events and properties related to direct/outbound marketing such as email, direct mail, texts and in-app notifications."
         },
-        "xdm:marketing": {
-          "title": "Marketing",
-          "$ref": "https://ns.adobe.com/xdm/context/marketing",
-          "description":
-            "The information related to marketing activities that are active with the touchpoint."
-        },
-        "xdm:placeContext": {
-          "title": "Place Context",
-          "$ref": "https://ns.adobe.com/xdm/context/placecontext",
-          "description":
-            "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, working hours."
-        },
-        "xdm:channel": {
-          "title": "Experience Channel",
-          "description":
-            "The experience channel related to this ExperienceEvent.",
-            "$ref": "https://ns.adobe.com/xdm/channels/channel"
-        },
-        "xdm:advertising": {
-          "title": "Advertising",
-          "$ref": "https://ns.adobe.com/xdm/context/advertising",
-          "description": "The information related to advertising activity related to the experience event"
+        "https://ns.adobe.com/experience/campaign/message": {
+          "title": "A single message sent to a recipient.",
+          "type": "object",
+          "properties": {
+            "xdm:quarantine": {
+              "title": "Quarantine",
+              "type": "boolean",
+              "default": false,
+              "description": "Address moved to quarantine. The quarantine is set to `true` when the message failed to deliver in a way that indicates that no future messages will be deliverable either to this address."
+            },
+            "xdm:reason": {
+              "title": "Reason",
+              "type": "string",
+              "meta:enum": {
+                "undefined": "Not defined",
+                "unknown_user": "The address does not exist. There is no use sending deliveries to this address.",
+                "invalid_domain": "The domain of the email address is incorrect or no longer exists.",
+                "unreachable": "An error has occurred in the message delivery chain.These addresses can be removed from the quarantine list to make another attempt.",
+                "disabled": "The user uses a messaging service which is accessible from the web. When the Internet Access Provider (IAP) detects a lengthy period of inactivity, it can close the user's account. Deliveries to the user's address will then be impossible.",
+                "mailbox_full": "The recipient's mailbox contains too many messages. This address can be removed from the quarantine list to make another attempt.",
+                "not_connected": "The recipient's mobile phone is switched off or not connected to the network when the message is sent.",
+                "refused": "The address was rejected following the application of a security rule (e.g. by an anti-spam program)",
+                "error_ignored": "The address is whitelisted and the message ignored.",
+                "address_undefined": "No address is given for the recipient.",
+                "blacklisted": "The address was blacklisted at the time of sending.",
+                "quarantine": "The address was in quarantine at the time of sending.",
+                "duplicate": "The address of the recipient was already in this campaign activity.",
+                "typology_rule": "The recipient was excluded by a 'SQL' type campaign typology rule.",
+                "business_ranking": "The recipient was excluded by an 'arbitration' type campaign typology rule",
+                "cancelled": "Delivery cancelled",
+                "quality": "The quality rating for this address is too low",
+                "unchecked": "Unqualified address",
+                "offer_missing": "Not eligible for the offers",
+                "over_delivery_limit": "The campaign activity had more than allowed number of target profiles.",
+                "expired": "The campaign activity exceeded the time duration to complete.",
+                "too_long": "Text too long",
+                "untranslatable": "Character not supported by encoding",
+                "control_group": "Control address"
+              },
+              "description": "The reason why the message could/would not be delivered.",
+              "default": "undefined"
+            }
+          }
         }
       }
     }
   },
   "allOf": [
     {
-      "$ref": "#/definitions/experienceevent"
-    },
-    {
-      "$ref": "https://ns.adobe.com/experience/campaign/experienceevent#/definitions/experienceevent"
+      "$ref": "#/definitions/mutationevent"
     }
   ],
   "meta:status": "experimental"

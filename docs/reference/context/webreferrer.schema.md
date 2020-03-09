@@ -1,5 +1,5 @@
 
-# Web Referrer Schema
+# Web referrer Schema
 
 ```
 https://ns.adobe.com/xdm/context/webreferrer
@@ -16,11 +16,11 @@ The information in this schema is semantically compatible with the information i
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/webreferrer.schema.json](context/webreferrer.schema.json) |
 ## Schema Hierarchy
 
-* Web Referrer `https://ns.adobe.com/xdm/context/webreferrer`
+* Web referrer `https://ns.adobe.com/xdm/context/webreferrer`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
-## Web Referrer Example
+## Web referrer Example
 ```json
 {
   "xdm:URL": "https://www.some-adserver.com",
@@ -28,12 +28,12 @@ The information in this schema is semantically compatible with the information i
 }
 ```
 
-# Web Referrer Properties
+# Web referrer Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:URL](#xdmurl) | `string` | Optional | Web Referrer (this schema) |
-| [xdm:type](#xdmtype) | `enum` | Optional | Web Referrer (this schema) |
+| [xdm:URL](#xdmurl) | `string` | Optional | Web referrer (this schema) |
+| [xdm:type](#xdmtype) | `enum` | Optional | Web referrer (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:URL
@@ -66,19 +66,19 @@ The referrer type.
 * type: `enum`
 * defined in this schema
 
-The value of this property **must** be equal to one of the [known values below](#xdm:type-known-values).
+The value of this property **must** be equal to one of the [known values below](#xdmtype-known-values).
 
 ### xdm:type Known Values
 | Value | Description |
 |-------|-------------|
-| `internal` | Referral originated from the current domain or site. |
-| `external` | Referral originated from a different domain or site that was not a search or social type. |
-| `search_engine` | Search engine referrers are identified when visitors use a search engine to access the site. |
-| `typed_bookmarked` | Typed/bookmarked referrers are identified when visitors type your site’s URL directly into their browser, or if they access the site by selecting bookmarks. |
-| `email` | A referring domain is considered as an email referring domain type when visitors click an emailed message link containing the protocol imap:// or mail:// and arrive at the site. |
-| `social` | The referrer is identified as a social network. |
-| `unknown` | The referrer is unidentifiable (unknown). `No JavaScript` could be the cause. |
-| `news` | The URL of a referrer started with news://. As such, the referrer link was posted on a Usenet newsgroup rather than a web page. |
+| `internal` | Internal |
+| `external` | External |
+| `search_engine` | Search engine |
+| `typed_bookmarked` | Typed or bookmarked |
+| `email` | Email |
+| `social` | Social network |
+| `unknown` | Unknown |
+| `news` | Usenet newsgroup |
 | `usenet` |  |
 
 

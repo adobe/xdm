@@ -16,7 +16,7 @@
     "node-type": {
       "type": "string",
       "title": "Node Type",
-      "description": "Indicates the type of a node",
+      "description": "Indicates the type of a node.",
       "enum": [
         "fnApply",
         "fnCreate",
@@ -30,12 +30,12 @@
       "meta:enum": {
         "fnApply": "Apply a function to the evaluation context. The valency or arity of the function varies with the function-type. Functions can be boolean-valued or produce scalar values and vectors.",
         "fnCreate": "Create a function.",
-        "literal": "Prodcue a value from a literal",
-        "fieldLookup": "Produce a value from an object by accessing one of its fields",
-        "quantification": "Verify how many objects in a set satisfy the provided condition",
+        "literal": "Produce a value from a literal.",
+        "fieldLookup": "Produce a value from an object by accessing one of its fields.",
+        "quantification": "Verify how many objects in a set satisfy the provided condition.",
         "select": "Produce a list from a list of inputs by evaluating a projection and a selection expression for every element of the input list.",
-        "varDecl": "Sub-structure of the select expression that binds a variable to the elements matching a projection and a selection expression. The value is made available for reference via a variable name to other sub-select expressions",
-        "varRef": "Iterate over a list of values by referencing a variable name that denotes a list element previously qualified (evaluated in preceeding variable varDecl)."
+        "varDecl": "Sub-structure of the select expression that binds a variable to the elements matching a projection and a selection expression. The value is made available for reference via a variable name to other sub-select expressions.",
+        "varRef": "Iterate over a list of values by referencing a variable name that denotes a list element previously qualified (evaluated in preceding variable varDecl)."
       }
     },
     "function-type": {
@@ -76,7 +76,7 @@
     "literal-type": {
       "type": "string",
       "title": "Literal Type Identifier",
-      "description": "Literal Type Identifier: String, Number, Integer, Boolean, Date, DateTime, XDMObject",
+      "description": "Literal Type Identifier: String, Number, Integer, Boolean, Date, DateTime, XDMObject.",
       "enum": [
         "String",
         "Number",
@@ -91,7 +91,7 @@
         "Integer": "An integer literal",
         "Boolean": "A boolean literal",
         "List": "An array of literals",
-        "XDMObject": "A string denoting a reference of an XDM schema"
+        "XDMObject": "A string denoting a reference of an XDM schema."
       }
     },
     "quantifier-type": {
@@ -114,8 +114,8 @@
 
     "function-application-content": {
       "type": "object",
-      "title": "N-ary function application",
-      "description": "Apply an n-ary function (functor) that maps a value (scalar, object, list, tree) to anothe value, by recursively applying its child nodes to the objects and then taking the results as parameters to itself.",
+      "title": "N-ary Function Application",
+      "description": "Apply an n-ary function (functor) that maps a value (scalar, object, list, tree) to another value, by recursively applying its child nodes to the objects and then taking the results as parameters to itself.",
       "allOf": [
         {
           "type": "object",
@@ -469,7 +469,7 @@
 
     "function-creation-content": {
       "type": "object",
-      "title": "Function creation",
+      "title": "Function Creation",
       "description": "Creates a function with a set of variables as parameters.",
       "allOf": [
         {
@@ -503,8 +503,8 @@
 
     "field-lookup-content": {
       "type": "object",
-      "title": "Field accessor",
-      "description": "An epression that is applied on an object and returns the value of the field specified in the expression",
+      "title": "Field Accessor",
+      "description": "An expression that is applied on an object and returns the value of the field specified in the expression.",
       "allOf": [
         {
           "type": "object",
@@ -683,7 +683,7 @@
 
     "quantification-content": {
       "type": "object",
-      "title": "Apply a quantification",
+      "title": "Apply a Quantification",
       "description": "Produces a boolean value from a list of (tree-structured) input values by evaluating a predicate for each element. Depending on the quantifier 'all', 'some', 'none' or 'one' evaluations must result in `true` for the overall evaluation to become true.",
       "allOf": [
         {
@@ -712,8 +712,8 @@
 
     "select-expression-content": {
       "type": "object",
-      "title": "Object tree evaluation",
-      "description": "Produce a list of elements from a list of (tree-structured) input values by evaluating each clause in order of declaration. All clauses must evaluate to true for the element referenced in the first clause to qualify",
+      "title": "Object Tree Evaluation",
+      "description": "Produce a list of elements from a list of (tree-structured) input values by evaluating each clause in order of declaration. All clauses must evaluate to true for the element referenced in the first clause to qualify.",
       "allOf": [
         {
           "type": "object",

@@ -5,8 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id":
-    "https://ns.adobe.com/experience/campaign/orchestration/reportingevent",
+  "$id": "https://ns.adobe.com/experience/campaign/orchestration/reportingevent",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "User journey reporting event",
   "type": "object",
@@ -29,25 +28,27 @@
           "title": "Unique identifier of data entity",
           "type": "string",
           "format": "uri",
-          "description":
-            "The identifier for the data entity used for data enrichment"
+          "description": "The identifier for the data entity used for data enrichment"
         },
         "xdm:orgUnit": {
           "title": "Organizational Unit",
           "$ref": "https://ns.adobe.com/xdm/common/orgunit",
-          "description":
-            "The unit within the organization owning this journey version."
+          "description": "The unit within the organization owning this journey version."
         },
         "xdm:flowControlType": {
           "title": "Flow control",
           "type": "string",
           "description": "Flow control in the journey triggered by the event.",
-          "enum": ["end", "jump", "timer", "condition"],
+          "enum": [
+            "end",
+            "jump",
+            "timer",
+            "condition"
+          ],
           "meta:enum": {
             "end": "if the 'end' step has been reached, if this step exists",
             "jump": "if a jump has been taken",
-            "timer":
-              "if a transition has been applied, implying a scheduler notification",
+            "timer": "if a transition has been applied, implying a scheduler notification",
             "condition": "if a conditional step has been processed"
           }
         },
@@ -55,88 +56,34 @@
           "title": "Unique identifier for the flow control",
           "type": "string",
           "format": "uri",
-          "description":
-            "The identifier of the flow control in a journey version"
+          "description": "The identifier of the flow control in a journey version"
         },
         "xdm:eventMetrics": {
           "title": "Metrics to be reported",
-          "$ref":
-            "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics",
-          "description":
-            "The metrics for actions performed during this observation."
+          "$ref": "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics",
+          "description": "The metrics for actions performed during this observation."
         },
         "https://ns.adobe.com/experience/campaign/orchestrationAction": {
           "title": "Action on step transition",
-          "type": "object",
           "description":
             "Action taken during a step transition happening for an user in state machine",
-          "properties": {
-            "xdm:actionID": {
-              "title": "Action identifier",
-              "type": "string",
-              "format": "uri",
-              "description": "Unique identifier denoting the associated action."
-            },
-            "xdm:type": {
-              "title": "Action Type",
-              "type": "string",
-              "description": "The type of action to be performed.",
-              "meta:enum": {
-                "scheduled_notification":
-                  "This action type allows to specify scheduled notifications and wait for the notifications as incoming events for steps",
-                "http_call":
-                  "This action type is for a HTTP call on an external system",
-                "action_with_personalization":
-                  "This action type describes an action with personalization that will be resolved at runtime for each voyager instance",
-                "parameterized_action":
-                  "This action type describes an action with parameterization",
-                "send_journey_notification":
-                  "This action type is to send notification for another journey",
-                "acs_writer":
-                  "The ACS writer action performs REST calls to an Adobe campaign standard instance to write data",
-                "acs_message_center":
-                  "The ACS message center action performs REST calls to an Adobe campaign standard instance to send messages with Message Center"
-              }
-            }
-          }
+          "$ref": "https://ns.adobe.com/experience/campaign/orchestration/experienceevent#/definitions/action"  
         },
         "https://ns.adobe.com/experience/campaign/orchestrationExternalEvent": {
           "title": "external event received",
-          "$ref":
-            "https://ns.adobe.com/experience/campaign/orchestration/reportingexternalevent",
-          "description":
-            "External event received, triggering the state transition"
+          "$ref": "https://ns.adobe.com/experience/campaign/orchestration/reportingexternalevent",
+          "description": "External event received, triggering the state transition"
         },
         "https://ns.adobe.com/experience/campaign/journey": {
           "title": "Journey for users",
-          "type": "object",
           "description": "Journey created by marketer for its users",
-          "properties": {
-            "@id": {
-              "title": "Journey unique identifier",
-              "type": "string",
-              "format": "uri",
-              "description":
-                "The unique identifier of the journey created by the marketer."
-            }
-          },
-          "required": ["@id"]
+          "$ref": "https://ns.adobe.com/experience/campaign/orchestration/experienceevent#/definitions/journey"
         },
         "https://ns.adobe.com/experience/campaign/journeyVersion": {
           "title": "Journey version",
-          "type": "object",
           "description":
             "Schema for describing the version of a journey, where version holds the state machine",
-          "properties": {
-            "@id": {
-              "title": "Journey version identifier",
-              "type": "string",
-              "format": "uri",
-              "description":
-                "The unique identifier denoting the version of journey on which the user is active"
-            }
-          },
-          "required": ["@id"]
+          "$ref": "https://ns.adobe.com/experience/campaign/orchestration/experienceevent#/definitions/journeyVersion"
         }
       }
     }

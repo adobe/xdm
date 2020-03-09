@@ -9,7 +9,6 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "external event received",
   "type": "object",
-  "meta:extends": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "",
   "definitions": {
     "reportingexternalevent": {
@@ -28,9 +27,6 @@
   "allOf": [
     {
       "$ref": "#/definitions/reportingexternalevent"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/context/experienceevent"
     }
   ],
   "meta:status": "stabilizing"

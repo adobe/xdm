@@ -1,0 +1,7 @@
+{
+  "xdm:segmentExpression": {
+    "xdm:expressionType": "PQL",
+    "xdm:mimeType": "pql/text",
+    "xdm:value": "personalEmail.address.endsWith(\"testxdmmail.com\", false)"
+  }
+}

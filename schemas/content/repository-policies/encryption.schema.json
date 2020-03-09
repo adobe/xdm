@@ -10,23 +10,21 @@
   "title": "At-Rest Encryption",
   "type": "object",
   "meta:extensible": false,
-  "description": "Representation of how content is encrypted at-rest",
+  "description": "Representation of how content is encrypted at-rest.",
   "definitions": {
     "encryption": {
       "type": "object",
       "properties": {
         "xdm:keyType": {
           "name": "Key Type",
-          "description":
-            "The type of encryption key - 'platform': a key used across all tenants of the platform; 'org': a key managed exclusviely for the org to which the storage belongs",
+          "description": "The type of encryption key - 'platform': a key used across all tenants of the platform; 'org': a key managed exclusively for the org to which the storage belongs.",
           "meta:usereditable": false,
           "type": "string",
           "enum": ["platform", "org"]
         },
         "xdm:keyStatus": {
           "name": "Key Status",
-          "description":
-            "The status of the encryption key - 'enabled': the key is enabled and content is accessible to authorized users; 'disabled': the key is disabled and content is not accessible",
+          "description": "The status of the encryption key - 'enabled': the key is enabled and content is accessible to authorized users; 'disabled': the key is disabled and content is not accessible.",
           "meta:usereditable": false,
           "type": "string",
           "enum": ["enabled", "disabled"]

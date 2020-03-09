@@ -1,23 +1,23 @@
 
-# E-Mail Schema
+# Email Channel Schema
 
 ```
 https://ns.adobe.com/xdm/channels/email
 ```
 
-E-Mail messages, delivered via SMTP to list subscribers.
+Email messages, delivered via SMTP to list subscribers channel.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [channels/email.schema.json](channels/email.schema.json) |
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/email.schema.json](channels/email.schema.json) |
 ## Schema Hierarchy
 
-* E-Mail `https://ns.adobe.com/xdm/channels/email`
+* Email Channel `https://ns.adobe.com/xdm/channels/email`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
 
-## E-Mail Example
+## Email Channel Example
 ```json
 {
   "@id": "https://ns.adobe.com/xdm/channels/email",
@@ -25,16 +25,19 @@ E-Mail messages, delivered via SMTP to list subscribers.
 }
 ```
 
-# E-Mail Properties
+# Email Channel Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `const` | **Required** | E-Mail (this schema) |
-| [@type](#@type) | `const` | Optional | E-Mail (this schema) |
-| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | E-Mail (this schema) |
-| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | E-Mail (this schema) |
-| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | E-Mail (this schema) |
-| [xdm:mode](#xdmmode) | `const` | Optional | E-Mail (this schema) |
+| [@id](#id) | `const` | **Required** | Email Channel (this schema) |
+| [@type](#type) | `const` | Optional | Email Channel (this schema) |
+| [xdm:contentTypes](#xdmcontenttypes) | `const` | Optional | Email Channel (this schema) |
+| [xdm:locationTypes](#xdmlocationtypes) | `const` | Optional | Email Channel (this schema) |
+| [xdm:mediaAction](#xdmmediaaction) | `string` | Optional | [Experience Channel](channel.schema.md#xdmmediaaction) |
+| [xdm:mediaType](#xdmmediatype) | `string` | Optional | [Experience Channel](channel.schema.md#xdmmediatype) |
+| [xdm:metricTypes](#xdmmetrictypes) | `const` | Optional | Email Channel (this schema) |
+| [xdm:mode](#xdmmode) | `const` | Optional | Email Channel (this schema) |
+| [xdm:typeAtSource](#xdmtypeatsource) | `string` | Optional | [Experience Channel](channel.schema.md#xdmtypeatsource) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -77,10 +80,10 @@ The value of this property **must** be equal to:
 |-------|-------------|
 | `https://ns.adobe.com/xdm/channel-types/web` | The world wide web, including mobile web |
 | `https://ns.adobe.com/xdm/channel-types/social` | Social media platforms |
-| `https://ns.adobe.com/xdm/channel-types/mobile` | Mobile applications |
-| `https://ns.adobe.com/xdm/channel-types/messaging` | Instant Messaging |
-| `https://ns.adobe.com/xdm/channel-types/email` | E-Mail |
-| `https://ns.adobe.com/xdm/channel-types/offline` | Non-Digital experience channels |
+| `https://ns.adobe.com/xdm/channel-types/mobile` | Mobile apps |
+| `https://ns.adobe.com/xdm/channel-types/messaging` | Instant messaging |
+| `https://ns.adobe.com/xdm/channel-types/email` | Email |
+| `https://ns.adobe.com/xdm/channel-types/offline` | Non-digital experience channels |
 
 
 
@@ -121,6 +124,67 @@ The value of this property **must** be equal to:
 []
 ```
 
+
+
+
+
+## xdm:mediaAction
+
+The `mediaAction` property is used to provide a type of experiance event media action .
+
+`xdm:mediaAction`
+* is optional
+* type: `string`
+* defined in [Experience Channel](channel.schema.md#xdmmediaaction)
+
+### xdm:mediaAction Type
+
+
+`string`
+
+
+
+### xdm:mediaAction Known Values
+| Value | Description |
+|-------|-------------|
+| `opens` | Opens |
+| `sends` | Sends |
+| `clicks` | Clicks |
+| `impressions` | Impressions |
+| `bounces` | Bounces |
+| `mirrorpages` | Mirrorpages |
+| `nonDeliverables` | NonDeliverables |
+| `notSent` | NotSent |
+| `offerOpens` | OfferOpens |
+| `unSubscriptions` | UnSubscriptions |
+| `userComplaints` | UserComplaints |
+| `subscriptions` | Subscriptions |
+
+
+
+
+## xdm:mediaType
+
+Describes whether the media type is paid,owned or earned.
+
+`xdm:mediaType`
+* is optional
+* type: `string`
+* defined in [Experience Channel](channel.schema.md#xdmmediatype)
+
+### xdm:mediaType Type
+
+
+`string`
+
+
+
+### xdm:mediaType Known Values
+| Value | Description |
+|-------|-------------|
+| `paid` | Paid |
+| `owned` | Owned |
+| `earned` | Earned |
 
 
 
@@ -167,6 +231,25 @@ The value of this property **must** be equal to:
 | `push` | The publisher of an experience can initiate an experience by sending a message into the channel. Most `push` channels involve some form of subscription or opt-in. |
 | `pull` | The consumer can initiate an experience by requesting a location in the channel. Most `pull` channels give publishers some control how the experience is then delivered. |
 | `bidirectional` | Both `push` and `pull` interaction modes are supported by the channel. |
+
+
+
+
+## xdm:typeAtSource
+
+Customer defined custom channel name
+
+`xdm:typeAtSource`
+* is optional
+* type: `string`
+* defined in [Experience Channel](channel.schema.md#xdmtypeatsource)
+
+### xdm:typeAtSource Type
+
+
+`string`
+
+
 
 
 

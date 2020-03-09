@@ -9,7 +9,7 @@ Describes an object of any kind. The [`Object`](https://www.w3.org/TR/activityst
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [external/activity-streams-2/object.schema.json](external/activity-streams-2/object.schema.json) |
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/activity-streams-2/object.schema.json](external/activity-streams-2/object.schema.json) |
 ## Schema Hierarchy
 
 * Object `https://ns.adobe.com/xdm/external/activity-streams-2/object`
@@ -39,9 +39,9 @@ Describes an object of any kind. The [`Object`](https://www.w3.org/TR/activityst
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@context](#@context) | complex | Optional | [JSON-LD `@context`](context.schema.md#@context) |
-| [@id](#@id) | `string` | Optional | [JSON-LD `@id`](id.schema.md#@id) |
-| [@type](#@type) | complex | Optional | [JSON-LD `@type`](type.schema.md#@type) |
+| [@context](#context) | complex | Optional | [JSON-LD `@context`](context.schema.md#context) |
+| [@id](#id) | `string` | Optional | [JSON-LD `@id`](id.schema.md#id) |
+| [@type](#type) | complex | Optional | [JSON-LD `@type`](type.schema.md#type) |
 | [activitystreams:attachment](#activitystreamsattachment) | complex | Optional | Object (this schema) |
 | [activitystreams:attributedTo](#activitystreamsattributedto) | complex | Optional | Object (this schema) |
 | [activitystreams:audience](#activitystreamsaudience) | complex | Optional | Object (this schema) |
@@ -76,7 +76,7 @@ Describes an object of any kind. The [`Object`](https://www.w3.org/TR/activityst
 `@context`
 * is optional
 * type: complex
-* defined in [JSON-LD `@context`](context.schema.md#@context)
+* defined in [JSON-LD `@context`](context.schema.md#context)
 
 ### @context Type
 
@@ -202,13 +202,13 @@ Unknown type `oneOf`.
 `@id`
 * is optional
 * type: `string`
-* defined in [JSON-LD `@id`](id.schema.md#@id)
+* defined in [JSON-LD `@id`](id.schema.md#id)
 
 ### @id Type
 
 
 `string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
 
 
 
@@ -221,7 +221,7 @@ Unknown type `oneOf`.
 `@type`
 * is optional
 * type: complex
-* defined in [JSON-LD `@type`](type.schema.md#@type)
+* defined in [JSON-LD `@type`](type.schema.md#type)
 
 ### @type Type
 

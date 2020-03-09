@@ -1,5 +1,5 @@
 
-# Drop before Starts Schema
+# Drop Before Starts Schema
 
 ```
 https://ns.adobe.com/xdm/data/drop-before-starts
@@ -9,14 +9,14 @@ Indicates the user abandoned the media stream before the first frame (e.g. durin
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | Yes | Forbidden | Permitted | [data/drop-before-starts.schema.json](data/drop-before-starts.schema.json) |
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/drop-before-starts.schema.json](data/drop-before-starts.schema.json) |
 ## Schema Hierarchy
 
-* Drop before Starts `https://ns.adobe.com/xdm/data/drop-before-starts`
+* Drop Before Starts `https://ns.adobe.com/xdm/data/drop-before-starts`
   * [Metric Definition](metricdefinition.schema.md) `https://ns.adobe.com/xdm/data/metricdefinition`
 
 
-## Drop before Starts Example
+## Drop Before Starts Example
 ```json
 {
   "schema:name": "metric: dropBeforeStarts",
@@ -26,11 +26,11 @@ Indicates the user abandoned the media stream before the first frame (e.g. durin
 }
 ```
 
-# Drop before Starts Properties
+# Drop Before Starts Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | **Required** | [Metric Definition](metricdefinition.schema.md#@id) |
+| [@id](#id) | `string` | **Required** | [Metric Definition](metricdefinition.schema.md#id) |
 | [schema:name](#schemaname) | `string` | **Required** | [Metric Definition](metricdefinition.schema.md#schemaname) |
 | [xdm:measurement](#xdmmeasurement) | `string` | **Required** | [Metric Definition](metricdefinition.schema.md#xdmmeasurement) |
 | [xdm:unit](#xdmunit) | complex | **Required** | [Metric Definition](metricdefinition.schema.md#xdmunit) |
@@ -43,13 +43,13 @@ The unique identifier of this metric.
 `@id`
 * is **required**
 * type: `string`
-* defined in [Metric Definition](metricdefinition.schema.md#@id)
+* defined in [Metric Definition](metricdefinition.schema.md#id)
 
 ### @id Type
 
 
 `string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
 
 
 
@@ -63,7 +63,7 @@ The human-readable name of the metric. The name can be used in user interfaces a
 `schema:name`
 * is **required**
 * type: `string`
-* defined in [Metric Definition](metricdefinition.schema.md#schema:name)
+* defined in [Metric Definition](metricdefinition.schema.md#schemaname)
 
 ### schema:name Type
 
@@ -82,7 +82,7 @@ How to take measures of this metric.
 `xdm:measurement`
 * is **required**
 * type: `string`
-* defined in [Metric Definition](metricdefinition.schema.md#xdm:measurement)
+* defined in [Metric Definition](metricdefinition.schema.md#xdmmeasurement)
 
 ### xdm:measurement Type
 
@@ -119,7 +119,7 @@ How to take measures of this metric.
 `xdm:unit`
 * is **required**
 * type: complex
-* defined in [Metric Definition](metricdefinition.schema.md#xdm:unit)
+* defined in [Metric Definition](metricdefinition.schema.md#xdmunit)
 
 ### xdm:unit Type
 

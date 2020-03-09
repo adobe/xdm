@@ -1,0 +1,19 @@
+{
+  "xdm:identities": [
+    {
+      "xdm:id": "someone@example.com",
+      "xdm:namespace": {
+        "xdm:code": "Email"
+      }
+    }
+  ],
+  "xdm:notificationSubscriptions": [
+    {
+      "xdm:topicID": "50ac9bf9-721d-44ac-8cf3-fb04c089f3be",
+      "xdm:type": "Campaign/SubscriptionList",
+      "xdm:subsriptionDate": "2017-02-26T15:52:25+00:00",
+      "xdm:unsubsriptionDate": "2017-09-26T15:52:25+00:00",
+      "xdm:emailAddress": "johnDoe@adobe.com"
+    }
+  ]
+}

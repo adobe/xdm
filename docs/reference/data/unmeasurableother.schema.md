@@ -1,22 +1,22 @@
 
-# unmeasurable-other Schema
+# Unmeasurable-other Schema
 
 ```
 https://ns.adobe.com/xdm/data/unmeasurableother
 ```
 
-The advertising/viewability metric unmeasurable-other describes whether a measurement instrumented ad was not able to be measured due to a non-predefined error.
+The advertising/viewability metric `unmeasurable-other` describes whether a measurement instrumented ad was not able to be measured due to a non-predefined error.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | Yes | Forbidden | Permitted | [data/unmeasurableother.schema.json](data/unmeasurableother.schema.json) |
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/unmeasurableother.schema.json](data/unmeasurableother.schema.json) |
 ## Schema Hierarchy
 
-* unmeasurable-other `https://ns.adobe.com/xdm/data/unmeasurableother`
+* Unmeasurable-other `https://ns.adobe.com/xdm/data/unmeasurableother`
   * [Metric Definition](metricdefinition.schema.md) `https://ns.adobe.com/xdm/data/metricdefinition`
 
 
-## unmeasurable-other Example
+## Unmeasurable-other Example
 ```json
 {
   "schema:name": "advertising/viewability metric: unmeasurableOther",
@@ -26,11 +26,11 @@ The advertising/viewability metric unmeasurable-other describes whether a measur
 }
 ```
 
-# unmeasurable-other Properties
+# Unmeasurable-other Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | **Required** | [Metric Definition](metricdefinition.schema.md#@id) |
+| [@id](#id) | `string` | **Required** | [Metric Definition](metricdefinition.schema.md#id) |
 | [schema:name](#schemaname) | `string` | **Required** | [Metric Definition](metricdefinition.schema.md#schemaname) |
 | [xdm:measurement](#xdmmeasurement) | `string` | **Required** | [Metric Definition](metricdefinition.schema.md#xdmmeasurement) |
 | [xdm:unit](#xdmunit) | complex | **Required** | [Metric Definition](metricdefinition.schema.md#xdmunit) |
@@ -43,13 +43,13 @@ The unique identifier of this metric.
 `@id`
 * is **required**
 * type: `string`
-* defined in [Metric Definition](metricdefinition.schema.md#@id)
+* defined in [Metric Definition](metricdefinition.schema.md#id)
 
 ### @id Type
 
 
 `string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
 
 
 
@@ -63,7 +63,7 @@ The human-readable name of the metric. The name can be used in user interfaces a
 `schema:name`
 * is **required**
 * type: `string`
-* defined in [Metric Definition](metricdefinition.schema.md#schema:name)
+* defined in [Metric Definition](metricdefinition.schema.md#schemaname)
 
 ### schema:name Type
 
@@ -82,7 +82,7 @@ How to take measures of this metric.
 `xdm:measurement`
 * is **required**
 * type: `string`
-* defined in [Metric Definition](metricdefinition.schema.md#xdm:measurement)
+* defined in [Metric Definition](metricdefinition.schema.md#xdmmeasurement)
 
 ### xdm:measurement Type
 
@@ -119,7 +119,7 @@ How to take measures of this metric.
 `xdm:unit`
 * is **required**
 * type: complex
-* defined in [Metric Definition](metricdefinition.schema.md#xdm:unit)
+* defined in [Metric Definition](metricdefinition.schema.md#xdmunit)
 
 ### xdm:unit Type
 

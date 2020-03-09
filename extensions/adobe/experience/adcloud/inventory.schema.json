@@ -7,27 +7,26 @@
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/experience/adcloud/inventory",
-  "title": "Inventory",
+  "title": "Adobe Advertising Cloud Inventory",
   "type": "object",
-  "description": "Adobe AdCloud Inventory Traits",
+  "description": "Adobe Advertising Cloud inventory traits.",
   "definitions": {
     "inventory": {
       "properties": {
         "xdm:sessionId": {
           "title": "Session ID",
           "type": "string",
-          "description":
-          "Session ID associated with experience event, used to stitch together independent events which occurred in the same session."
+          "description": "Session ID associated with experience event, used to stitch together independent events which occurred in the same session."
         },
         "xdm:feedId": {
           "title": "Feed ID",
           "type": "string",
-          "description": "Composite id of the publisher, ad exchange, and other features."
+          "description": "Composite ID of the publisher, ad exchange, and other features."
         },
         "xdm:sspPartnerCode": {
           "title": "SSP Partner Code",
           "type": "string",
-          "description": "The partner (exchange) through which AdCloud receives the inventory opportunity."
+          "description": "The partner (exchange) through which Adobe Advertising Cloud receives the inventory opportunity."
         },
         "xdm:siteId": {
           "title": "Site ID",
@@ -44,12 +43,12 @@
         "xdm:inventorySourceId": {
           "title": "Inventory Source ID",
           "type": "string",
-          "description": "The id of the AdCloud inventory source this opportunity was delivered on."
+          "description": "The ID of the Adobe Advertising Cloud inventory source this opportunity was delivered on."
         },
         "xdm:segment": {
           "title": "Segmentation Details",
           "$ref": "https://ns.adobe.com/experience/adcloud/segment",
-          "description": "Details associatied with user segmentation rules."
+          "description": "Details associated with user segmentation rules."
         }
       }
     }

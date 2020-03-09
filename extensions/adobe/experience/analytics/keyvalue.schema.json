@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/experience/analytics/keyvalue",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Key value pair",
+  "title": "Key Value Pair",
   "type": "object",
   "description": "Key value pair.",
   "definitions": {
@@ -26,7 +26,9 @@
       }
     }
   },
-  "allOf": [{
-    "$ref": "#/definitions/keyvalue"
-  }]
+  "allOf": [
+    {
+      "$ref": "#/definitions/keyvalue"
+    }
+  ]
 }

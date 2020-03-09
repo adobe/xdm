@@ -9,7 +9,7 @@ The geographic coordinates of a place. Based on [schema.org](http://schema.org/G
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [external/schema/geocoordinates.schema.json](external/schema/geocoordinates.schema.json) |
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/schema/geocoordinates.schema.json](external/schema/geocoordinates.schema.json) |
 
 ## Geo Coordinates Example
 ```json
@@ -26,7 +26,7 @@ The geographic coordinates of a place. Based on [schema.org](http://schema.org/G
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Geo Coordinates (this schema) |
+| [@id](#id) | `string` | Optional | Geo Coordinates (this schema) |
 | [schema:description](#schemadescription) | `string` | Optional | Geo Coordinates (this schema) |
 | [schema:elevation](#schemaelevation) | `number` | Optional | Geo Coordinates (this schema) |
 | [schema:latitude](#schemalatitude) | `number` | Optional | Geo Coordinates (this schema) |
@@ -47,7 +47,7 @@ The unique identifier of the coordinates.
 
 
 `string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
 
 
 

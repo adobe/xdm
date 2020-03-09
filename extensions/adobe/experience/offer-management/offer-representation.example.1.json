@@ -3,20 +3,40 @@
     {
       "@type": "https://ns.adobe.com/experience/offer-management/content-component-text",
       "dc:format": "text/template",
-      "dc:language": ["en", "en-AU", "en-CA", "en-GB", "en-IN", "en-IE", "en-MT", "en-NZ", "en-PH", "en-SG", "en-ZA"],
-      "xdm:text": "Dear Madam {{profile.person.lastName}}, the offer expires 12/6/2018"
+      "dc:language": [
+        "en",
+        "en-AU",
+        "en-CA",
+        "en-GB",
+        "en-IN",
+        "en-IE",
+        "en-MT",
+        "en-NZ",
+        "en-PH",
+        "en-SG",
+        "en-ZA"
+      ],
+      "repo:name": "expiration_message_en",
+      "repo:id": "urn:aaid:sc:VA7:6dc33479-13ca-4b19-b25d-c805efef0c9e",
+      "repo:resolveURL": "https://platform-cs-stage.adobe.io/content/directory/resolve?asset_id=&quot;urn:aaid:sc:VA7:6dc33479-13ca-4b19-b25d-c805efef0c9e&quot;&resource=&quot;api:metadata/application&quot;&name=expiration_message_en",
+      "xdm:copyline": "Dear Madam {{profile.person.lastName}}, the offer expires 12/6/2018"
     },
     {
       "@type": "https://ns.adobe.com/experience/offer-management/content-component-text",
       "dc:format": "text/template",
       "dc:language": ["en-US"],
-      "xdm:text": "Dear Madam {{profile.person.lastName}}, the offer expires 6/12/2018"
-    }
+      "repo:name": "expiration_message_en-US",
+      "repo:id": "urn:aaid:sc:VA7:6dc33479-13ca-4b19-b25d-c805efef0c9e",
+      "repo:resolveURL": "https://platform-cs-stage.adobe.io/content/directory/resolve?asset_id=&quot;urn:aaid:sc:VA7:6dc33479-13ca-4b19-b25d-c805efef0c9e&quot;&resource=&quot;api:metadata/application&quot;&name=&quot;expiration_message_en-US&quot;",
+      "xdm:copyline": "Dear Madam {{profile.person.lastName}}, the offer expires 6/12/2018"
+    },
     {
       "@type": "https://ns.adobe.com/experience/offer-management/content-component-text",
       "dc:format": "text/template",
       "dc:language": ["es"],
-      "xdm:text": "Estimada señora {{profile.person.lastName}}: La oferta vence el 12/6/2018"
+      "repo:name": "expiration_message_es",
+      "repo:resolveURL": "https://platform-cs-stage.adobe.io/content/directory/resolve?asset_id=&quot;urn:aaid:sc:VA7:6dc33479-13ca-4b19-b25d-c805efef0c9e&quot;&resource=&quot;api:metadata/application&quot;&name=&quot;expiration_message_es&quot;",
+      "xdm:copyline": "Estimada señora {{profile.person.lastName}}: La oferta vence el 12/6/2018"
     }
   ],
   "xdm:placement": "uri:xcore:placement-0001",

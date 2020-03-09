@@ -1,0 +1,46 @@
+{
+  "xdm:activity": {
+    "xdm:id": "xcore:offer-activity:ebc48132c26ccfc",
+    "xdm:name": "Online College Counseler",
+    "xdm:startDate": "2018-10-13T05:59:18.914Z",
+    "xdm:endDate": "2018-12-27T05:59:18.914Z",
+    "xdm:fallback": "xcore:fallback-offer:e91ce7243fd8c2a"
+  },
+  "xdm:placement": {
+    "xdm:id": "xcore:offer-placement:c652463157c2aa1",
+    "xdm:name": "Top Banner",
+    "xdm:channel": "https://ns.adobe.com/xdm/channels/email"
+  },
+  "xdm:selections": [
+    {
+      "xdm:id": "xcore:personalized-offer:e91ee850a0bb7d9",
+      "xdm:name": "Introduction to machine learning",
+      "xdm:characteristics": {
+        "duration": "14",
+        "level": "intermediate",
+        "format": "Syllable"
+      },
+      "https://ns.adobe.com/experience/decisioning/propositionsTotal": {
+        "xdm:value": 4948
+      },
+      "https://ns.adobe.com/experience/decisioning/propositionsProfile": {
+        "xdm:value": 2
+      }
+    },
+    {
+      "xdm:id": "xcore:personalized-offer:f67bab756ed6ee4",
+      "xdm:name": "Summer Camp",
+      "xdm:characteristics": {
+        "cost": "$2400",
+        "inventoryId": "BORA04",
+        "country": "French Polynesia"
+      },
+      "https://ns.adobe.com/experience/decisioning/propositionsTotal": {
+        "xdm:value": 3813
+      },
+      "https://ns.adobe.com/experience/decisioning/propositionsProfile": {
+        "xdm:value": 1
+      }
+    }
+  ]
+}

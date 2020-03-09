@@ -15,7 +15,7 @@
         "https://ns.adobe.com/xdm/external/hal/resource#/definitions/hal"
     ],
     "meta:extensible": true,
-    "description": "An asset in Adobe Cloud Platform. It is not neccessarily a Digital Asset in the sense of Digital Asset Management, but a piece of content or data that can be represented in the form of a file.",
+    "description": "An _asset_, as defined here, is the principal construct within a _repository_. It is an asset that is created, read, updated, and deleted. It is assets that have identifiers, names, and metadata. It is assets that are organized into hierarchies and collections, and linked to each other. Assets include but are not limited to documents, images, audio, video, motion graphics, and 3D models.\n",
     "definitions": {
         "asset": {
             "properties": {
@@ -28,6 +28,13 @@
                         "urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e"
                     ]
                 },
+                "repo:size": {
+                    "meta:usereditable": false,
+                    "type": "integer",
+                    "minimum": 0,
+                    "title": "Size",
+                    "description": "Size of the asset in bytes."
+                },
                 "repo:etag": {
                     "meta:usereditable": false,
                     "type": "string",
@@ -39,6 +46,17 @@
                     "meta:immutable": true,
                     "meta:usereditable": false,
                     "description": "The version ID of the piece of content. It will be generated both on explicit and implicit save or upload."
+                },
+                "repo:createdBy": {
+                    "type": "string",
+                    "meta:immutable": true,
+                    "meta:usereditable": false,
+                    "description": "ID of the user who initiated the action that caused the resource to be created in the repository."
+                },
+                "repo:modifiedBy": {
+                    "type": "string",
+                    "meta:usereditable": false,
+                    "description": "ID of the user who initiated the action that most recently caused the resource to be modified in the repository."
                 },
                 "tiff:imageWidth": {
                     "title": "Width",
@@ -55,12 +73,6 @@
                     "meta:usereditable": false,
                     "minimum": 0,
                     "example": 1024
-                },
-                "repo:size": {
-                    "meta:usereditable": false,
-                    "type": "integer",
-                    "title": "Size",
-                    "description": "Size of the asset in bytes."
                 }
             }
         }
@@ -83,8 +95,8 @@
         "repo:name",
         "repo:path",
         "dc:format",
-        "repo:createdDate",
-        "repo:lastModifiedDate",
+        "repo:createDate",
+        "repo:modifyDate",
         "repo:id",
         "repo:etag",
         "repo:version",
@@ -94,13 +106,13 @@
     "examples": [
         {
             "repo:id": "urn:aaid:a:b:01234578-0123-ABCD-abcd-0123456789ab",
-            "repo:createdDate": "2017-09-26T15:52:25+00:00",
-            "repo:lastModifiedDate": "2017-09-26T15:52:25+00:00",
-            "repo:version": "15",
+            "repo:createDate": "2017-09-26T15:52:25+00:00",
+            "repo:modifyDate": "2017-09-26T15:52:25+00:00",
+            "repo:version": "15b",
             "repo:size": 1632418,
-            "repo:path": "here",
-            "repo:name": "example.png",
-            "repo:etag": "15",
+            "repo:path": "/users/joe/Project 1/logo.png",
+            "repo:name": "logo.png",
+            "repo:etag": "\"aa15\"",
             "dc:format": "image/png"
         }
     ]

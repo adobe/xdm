@@ -5,7 +5,7 @@
 http://ns.adobe.com/adobecloud/core/1.0/directory
 ```
 
-A directory in Adobe Cloud Platform.
+A directory in Adobe Experience Platform.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
@@ -32,14 +32,8 @@ A directory in Adobe Cloud Platform.
       "templated": true
     }
   },
-  "_page": {
-    "orderBy": "id",
-    "start": "123",
-    "next": "789",
-    "count": 100
-  },
-  "repo:createdDate": "2017-09-26T15:52:25+00:00",
-  "repo:lastModifiedDate": "2017-09-26T15:52:25+00:00",
+  "repo:createDate": "2017-09-26T15:52:25+00:00",
+  "repo:modifyDate": "2017-09-26T15:52:25+00:00",
   "repo:path": "/",
   "repo:name": "here",
   "repo:etag": "15",
@@ -60,8 +54,14 @@ A directory in Adobe Cloud Platform.
       "templated": true
     }
   },
-  "repo:createdDate": "2017-09-26T15:52:25+00:00",
-  "repo:lastModifiedDate": "2017-09-26T15:52:25+00:00",
+  "_page": {
+    "orderBy": "id",
+    "start": "123",
+    "next": "789",
+    "count": 100
+  },
+  "repo:createDate": "2017-09-26T15:52:25+00:00",
+  "repo:modifyDate": "2017-09-26T15:52:25+00:00",
   "repo:path": "/",
   "repo:name": "here",
   "repo:etag": "15",
@@ -80,8 +80,8 @@ A directory in Adobe Cloud Platform.
 | [_page](#_page) | Page | Optional | Directory (this schema) |
 | [children](#children) | `array` | Optional | Directory (this schema) |
 | [dc:format](#dcformat) | `string` | **Required** | [Common Properties](common.schema.md#dcformat) |
-| [repo:createDate](#repocreatedate) | `string` | Optional | [Common Properties](common.schema.md#repocreatedate) |
-| [repo:lastModifiedDate](#repolastmodifieddate) | `string` | **Required** | [Common Properties](common.schema.md#repolastmodifieddate) |
+| [repo:createDate](#repocreatedate) | `string` | **Required** | [Common Properties](common.schema.md#repocreatedate) |
+| [repo:modifyDate](#repomodifydate) | `string` | **Required** | [Common Properties](common.schema.md#repomodifydate) |
 | [repo:name](#reponame) | `string` | **Required** | [Common Properties](common.schema.md#reponame) |
 | [repo:path](#repopath) | `string` | **Required** | [Common Properties](common.schema.md#repopath) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -101,7 +101,7 @@ It is an object whose property names are link relation types (as defined by [RFC
 `object` with following properties:
 
 
-| Property | Type | Required
+| Property | Type | Required |
 |----------|------|----------|
 
 
@@ -124,7 +124,7 @@ It is an object whose property names are link relation types (as defined by [RFC
 `object` with following properties:
 
 
-| Property | Type | Required
+| Property | Type | Required |
 |----------|------|----------|
 
 
@@ -200,7 +200,7 @@ The physical or digital manifestation of the resource. Typically, Format should 
 `dc:format`
 * is **required**
 * type: `string`
-* defined in [Common Properties](common.schema.md#dc:format)
+* defined in [Common Properties](common.schema.md#dcformat)
 
 ### dc:format Type
 
@@ -227,12 +227,12 @@ All instances must conform to this regular expression
 
 ## repo:createDate
 
-The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
+The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The date time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
 
 `repo:createDate`
-* is optional
+* is **required**
 * type: `string`
-* defined in [Common Properties](common.schema.md#repo:createDate)
+* defined in [Common Properties](common.schema.md#repocreatedate)
 
 ### repo:createDate Type
 
@@ -250,16 +250,16 @@ The server date and time when the resource was created in the repository, such a
 ```
 
 
-## repo:lastModifiedDate
+## repo:modifyDate
 
-The server date and time when the resource was most recently modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
+The server date and time when the resource was last modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The date time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
 
-`repo:lastModifiedDate`
+`repo:modifyDate`
 * is **required**
 * type: `string`
-* defined in [Common Properties](common.schema.md#repo:lastModifiedDate)
+* defined in [Common Properties](common.schema.md#repomodifydate)
 
-### repo:lastModifiedDate Type
+### repo:modifyDate Type
 
 
 `string`
@@ -268,7 +268,7 @@ The server date and time when the resource was most recently modified in the rep
 
 
 
-### repo:lastModifiedDate Example
+### repo:modifyDate Example
 
 ```json
 "2004-10-23T12:00:00-06:00"
@@ -281,7 +281,7 @@ The server date and time when the resource was most recently modified in the rep
 `repo:name`
 * is **required**
 * type: `string`
-* defined in [Common Properties](common.schema.md#repo:name)
+* defined in [Common Properties](common.schema.md#reponame)
 
 ### repo:name Type
 
@@ -299,7 +299,7 @@ The server date and time when the resource was most recently modified in the rep
 `repo:path`
 * is **required**
 * type: `string`
-* defined in [Common Properties](common.schema.md#repo:path)
+* defined in [Common Properties](common.schema.md#repopath)
 
 ### repo:path Type
 

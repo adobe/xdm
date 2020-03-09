@@ -5,7 +5,9 @@
       "xdm:value": 1
     }
   },
-  "xdm:channel": "https://ns.adobe.com/xdm/channels/email",
+  "xdm:channel": {
+    "@id": "https://ns.adobe.com/xdm/channels/email"
+  },
   "xdm:endUserIDs": {
     "https://ns.adobe.com/experience/mcid": {
       "xdm:id": "92312748749128",
@@ -69,7 +71,8 @@
     "xdm:from": "no-reply@adobe.com",
     "xdm:testEnabled": true,
     "xdm:messageClass": "messageCenter",
-    "xdm:templateID": 1100
+    "xdm:templateID": 1100,
+    "xdm:templateName": "Mastering Stuff Series"
   },
   "https://ns.adobe.com/experience/campaign/link": {
     "xdm:id": "98765",
@@ -79,6 +82,21 @@
     "xdm:label": "XDM information"
   },
   "https://ns.adobe.com/experience/campaign/orchestration": {
-    "xdm:businessReason": "store-entry-beacon-triggered"
+    "xdm:eventID": "store-entry-beacon-triggered"
+  },
+  "https://ns.adobe.com/experience/campaign/eventSource": "pipelined-trackinglogd",
+  "https://ns.adobe.com/experience/decisioning/propositionID": "3cc33a7e-13ca-4b19-b25d-c816eff9a701",
+  "https://ns.adobe.com/experience/campaign/offerOpened": {
+    "xdm:activity": {
+      "xdm:id": "xcore:offer-activity:f66f792de3c0ba9",
+      "xdm:name": "Email - Next Best Offer",
+      "xdm:placement": "xcore:offer-placement:f6524d27c2d6edd",
+      "xdm:filter": "xcore:offer-filter:f66f792de3c0ba9"
+    },
+    "xdm:offer": {
+      "xdm:id": "xcore:personalized-offer:f67bab756ed6ee4",
+      "xdm:name": "Beach Vacations",
+      "xdm:tags": ["xcore:tag:f68535bc217322e", "xcore:tag:f66f67dbe6d6ee1"]
+    }
   }
 }

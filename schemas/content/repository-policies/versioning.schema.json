@@ -8,7 +8,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/xdm/content/repository-policies/versioning",
   "title": "Versioning",
-  "description": "Representation of how content is versioned",
+  "description": "Representation of how content is versioned.",
   "meta:extensible": false,
   "definitions": {
     "versioning": {
@@ -16,14 +16,12 @@
       "properties": {
         "xdm:retentionTime": {
           "name": "Retention Time (days)",
-          "description":
-            "The maximum time (in days) up to which a version is retained if it is not marked as a milestone",
+          "description": "The maximum time (in days) up to which a version is retained if it is not marked as a milestone.",
           "type": "integer"
         },
         "xdm:maxMilestones": {
           "name": "Maximum Number of Milestones",
-          "description":
-            "The maximum number of old versions that can be marked as a mlestone on a versioned resource",
+          "description": "The maximum number of old versions that can be marked as a milestone on a versioned resource.",
           "type": "integer"
         }
       }

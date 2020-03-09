@@ -17,26 +17,20 @@
       "properties": {
         "@id": {
           "type": "string",
-          "format": "uri",
+          "format": "uri-reference",
           "title": "ID",
           "description": "The unique identifier of the offer. It must be unique within a repository container for objects that are not the same, otherwise it is interpreted as referring to the same object."
         },
         "xdm:name": {
           "type": "string",
           "title": "Name",
-          "description": "The Offer name. A human readable string to find one or more offers."
+          "description": "The offer's name. A human readable string to find one or more offers."
         },
         "xdm:status": {
           "type": "string",
           "title": "Status",
           "description": "Offer Status allows user workflows to be conducted with offers. The status may affect where an offer is visible or considered relevant. Status changes are driven by the clients or services that use offers.",
-          "enum": [
-            "draft",
-            "pending",
-            "rejected",
-            "approved",
-            "archived"
-          ],
+          "enum": ["draft", "pending", "rejected", "approved", "archived"],
           "meta:enum": {
             "draft": "Draft",
             "pending": "Pending",
@@ -48,11 +42,11 @@
         "xdm:tags": {
           "type": "array",
           "title": "Tags",
-          "description": "The set of tags associated with this offer. The tags are used in OfferFilter expressions to constrain the overal offer inventory to a topical sub set (category).",
+          "description": "The set of tags associated with this offer. The tags are used in offer filter expressions to constrain the overall offer inventory to a topical sub set (category).",
           "items": {
             "type": "string",
             "format": "uri",
-            "description": "A reference to a Tag object. The value is the URI (@id) of the Tag that is referenced. See Tag schema https://ns.adobe.com/experience/offer-management/tag"
+            "description": "An identifier of a tag object. The value is the @id of the tag that is referenced. See tag schema: https://ns.adobe.com/experience/offer-management/tag"
           }
         },
         "xdm:representations": {
@@ -61,7 +55,7 @@
             "$ref": "https://ns.adobe.com/experience/offer-management/offer-representation"
           },
           "title": "Representations",
-          "description": "Offer representations for different content variants. A single offer can have multiple contents variants. An Offer Representation is the object that connects Offers to Content. Content is information that is directed towards an audience for consumption in a (digital) experience. Content is delivered through channels (or a particular medium). "
+          "description": "Offer representations for different content variants. A single offer can have multiple contents variants. An offer representation is the object that connects offers to content. Content is information that is directed towards an audience for consumption in a (digital) experience. Content is delivered through channels (or a particular medium). "
         },
         "xdm:customMetadata": {
           "type": "object",
@@ -71,16 +65,17 @@
             }
           },
           "title": "Custom Properties",
-          "description":
-            "Custom metadata is a key-value map that allows the end-users to attach properties to individual offer instances. Any string can be used as a key name, the values are also strings."
+          "description": "Custom metadata is a key-value map that allows the end-users to attach properties to individual offer instances. Any string can be used as a key name, the values are also strings."
         }
-      },
-      "required": ["xdm:name", "xdm:status"]
+      }
     }
   },
   "allOf": [
     {
       "$ref": "#/definitions/offer"
+    },
+    {
+      "required": ["xdm:name", "xdm:status"]
     }
   ]
 }

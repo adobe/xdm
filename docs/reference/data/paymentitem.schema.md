@@ -23,12 +23,12 @@ A payment associated with an order that defines the type of payment, the amount 
 
 # Payment Item Properties
 
-| Property | Type | Required | Defined by |
-|----------|------|----------|------------|
-| [xdm:currencyCode](#xdmcurrencycode) | `string` | Optional | Payment Item (this schema) |
-| [xdm:paymentAmount](#xdmpaymentamount) | `number` | Optional | Payment Item (this schema) |
-| [xdm:paymentType](#xdmpaymenttype) | `string` | Optional | Payment Item (this schema) |
-| [xdm:transactionID](#xdmtransactionid) | `string` | Optional | Payment Item (this schema) |
+| Property | Type | Required | Default | Defined by |
+|----------|------|----------|---------|------------|
+| [xdm:currencyCode](#xdmcurrencycode) | `string` | Optional |  | Payment Item (this schema) |
+| [xdm:paymentAmount](#xdmpaymentamount) | `number` | Optional |  | Payment Item (this schema) |
+| [xdm:paymentType](#xdmpaymenttype) | `string` | Optional | `"other"` | Payment Item (this schema) |
+| [xdm:transactionID](#xdmtransactionid) | `string` | Optional |  | Payment Item (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:currencyCode
@@ -98,6 +98,7 @@ The method of payment for this order. Enumerated, custom values allowed.
 `xdm:paymentType`
 * is optional
 * type: `string`
+* default: `"other"`
 * defined in this schema
 
 ### xdm:paymentType Type

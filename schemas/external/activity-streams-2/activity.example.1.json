@@ -3,13 +3,11 @@
     "activitystreams": "http://www.w3.org/ns/activitystreams#",
     "xdm": "https://ns.adobe.com/xdm/"
   },
-  "@id":
-    "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
+  "@id": "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
   "@type": "https://ns.adobe.com/xdm/common/event/created",
   "activitystreams:published": "2016-07-16T19:20:30+01:00",
   "activitystreams:to": {
-    "https://ns.adobe.com/adobecloudplatform/ims/user#id":
-      "D13A1E7053E46A220A4C86E1@AdobeID",
+    "https://ns.adobe.com/adobecloudplatform/ims/user#id": "D13A1E7053E46A220A4C86E1@AdobeID",
     "@type": "https://ns.adobe.com/adobecloudplatform/ims/user"
   },
   "activitystreams:generator": {
@@ -17,12 +15,11 @@
     "@type": "https://ns.adobe.com/xdm/content/repository"
   },
   "activitystreams:actor": {
-    "https://ns.adobe.com/adobecloudplatform/ims/user#id":
-      "D13A1E7053E46A220A4C86E1@AdobeID",
+    "https://ns.adobe.com/adobecloudplatform/ims/user#id": "D13A1E7053E46A220A4C86E1@AdobeID",
     "@type": "https://ns.adobe.com/adobecloudplatform/ims/user"
   },
   "activitystreams:object": {
-    "@type": "https://ns.adobe.com/xdm/assets/asset",
+    "@type": "http://ns.adobe.com/adobecloud/core/1.0/asset",
     "xdm:asset_id": "urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
     "xdm:asset_name": "example.jpg",
     "repo:etag": "6fc55d0389d856ae7deccebba54f110e",

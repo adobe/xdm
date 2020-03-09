@@ -10,8 +10,7 @@
   "type": "object",
   "title": "Updated Event",
   "meta:extends": "https://ns.adobe.com/xdm/common/eventenvelope",
-  "description":
-    "A `updated event` follows semantics that are exactly equivalent to the semantics described by the [`update activity`](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-update), except for one difference. The `update activity` can be used in imperative contexts, however, the `updated event` can only be used in passive contexts.",
+  "description": "A `updated event` follows semantics that are exactly equivalent to the semantics described by the [`update activity`](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-update), except for one difference. The `update activity` can be used in imperative contexts, however, the `updated event` can only be used in passive contexts.",
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/eventenvelope"

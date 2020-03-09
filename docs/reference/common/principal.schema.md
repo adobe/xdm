@@ -31,8 +31,8 @@ This model represents a principal in an access control system. Principals are en
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | **Required** | Principal (this schema) |
-| [@type](#@type) | `string` | **Required** | Principal (this schema) |
+| [@id](#id) | `string` | **Required** | Principal (this schema) |
+| [@type](#type) | `string` | **Required** | Principal (this schema) |
 | [xdm:provider](#xdmprovider) | Identity Provider | **Required** | Principal (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 

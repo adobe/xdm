@@ -1,22 +1,22 @@
 
-# poi-entries Schema
+# Point of Interest (POI) Entries Schema
 
 ```
 https://ns.adobe.com/xdm/data/metrics/placecontext/poi-entries
 ```
 
-The place context metric poi-entries describes the number of times a person has left a Point of Interest (POI).
+The place context metric `poi-entries` describes the number of times a person has left a point of interest (POI).
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [data/poi-entries.schema.json](data/poi-entries.schema.json) |
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/poi-entries.schema.json](data/poi-entries.schema.json) |
 ## Schema Hierarchy
 
-* poi-entries `https://ns.adobe.com/xdm/data/metrics/placecontext/poi-entries`
+* Point of Interest (POI) Entries `https://ns.adobe.com/xdm/data/metrics/placecontext/poi-entries`
   * [Metric Definition](metricdefinition.schema.md) `https://ns.adobe.com/xdm/data/metricdefinition`
 
 
-## poi-entries Example
+## Point of Interest (POI) Entries Example
 ```json
 {
   "schema:name": "placecontext: poiEntries",
@@ -26,11 +26,11 @@ The place context metric poi-entries describes the number of times a person has 
 }
 ```
 
-# poi-entries Properties
+# Point of Interest (POI) Entries Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | **Required** | [Metric Definition](metricdefinition.schema.md#@id) |
+| [@id](#id) | `string` | **Required** | [Metric Definition](metricdefinition.schema.md#id) |
 | [schema:name](#schemaname) | `string` | **Required** | [Metric Definition](metricdefinition.schema.md#schemaname) |
 | [xdm:measurement](#xdmmeasurement) | `string` | **Required** | [Metric Definition](metricdefinition.schema.md#xdmmeasurement) |
 | [xdm:unit](#xdmunit) | complex | **Required** | [Metric Definition](metricdefinition.schema.md#xdmunit) |
@@ -43,13 +43,13 @@ The unique identifier of this metric.
 `@id`
 * is **required**
 * type: `string`
-* defined in [Metric Definition](metricdefinition.schema.md#@id)
+* defined in [Metric Definition](metricdefinition.schema.md#id)
 
 ### @id Type
 
 
 `string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
 
 
 
@@ -63,7 +63,7 @@ The human-readable name of the metric. The name can be used in user interfaces a
 `schema:name`
 * is **required**
 * type: `string`
-* defined in [Metric Definition](metricdefinition.schema.md#schema:name)
+* defined in [Metric Definition](metricdefinition.schema.md#schemaname)
 
 ### schema:name Type
 
@@ -82,7 +82,7 @@ How to take measures of this metric.
 `xdm:measurement`
 * is **required**
 * type: `string`
-* defined in [Metric Definition](metricdefinition.schema.md#xdm:measurement)
+* defined in [Metric Definition](metricdefinition.schema.md#xdmmeasurement)
 
 ### xdm:measurement Type
 
@@ -119,7 +119,7 @@ How to take measures of this metric.
 `xdm:unit`
 * is **required**
 * type: complex
-* defined in [Metric Definition](metricdefinition.schema.md#xdm:unit)
+* defined in [Metric Definition](metricdefinition.schema.md#xdmunit)
 
 ### xdm:unit Type
 

@@ -15,6 +15,12 @@ While schema descriptors can be used to define metadata about a single schema, t
 
 Details on relationship descriptors and their usage can be found [here](./reference/common/descriptors/relationshipdescriptor.schema.md).
 
+## Defining Primary Keys
+
+When storing and indexing data based on an XDM schema, it is often useful to know which field to use as a primary key. Primary keys define the most natural and efficient way to organize stored data for efficient lookup or other processing. Ideally a primary key is unique within a set of data, although this is not necessary.
+
+In XDM, the convention is to use the `@id` construct to clearly signal the natural identity of an XDM entity. This value is generally a good choice for use as a primary key. In cases where an `@id` field is not present, a descriptor of type `xdm:primaryKey` may be used to indicate that a field is appropriate for use as a primary key. See example below.
+
 ## Update Policies
 
 TBD
@@ -134,8 +140,7 @@ Next, they define an extension to `SchemaDescriptor` containing the in-use flag:
   },
   "allOf": [
     {
-      "$ref":
-        "https://ns.adobe.com/xdm/common/schemadescriptor#/definitions/descriptor"
+      "$ref": "https://ns.adobe.com/xdm/common/schemadescriptor#/definitions/descriptor"
     },
     {
       "$ref": "#/definitions/inusedescriptor"
@@ -154,3 +159,31 @@ Applying this descriptor might look like:
   "xdm:usage": "production"
 }
 ```
+
+### Example Primary Key Descriptor
+
+We have a schema that describes a sales order taken from an external sales management system. As this schema is directly transcribed from the external system's data schema, it does not follow the XDM best practice of using `@id` as the primary identifier:
+
+```json
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.example.com/xdm/salesorder",
+  "title": "SalesOrder",
+  "type": "object",
+  "properties": {
+    "https://ns.example.com/xdm/txID": {
+      "meta:descriptors": [
+        {
+          "@type": "xdm:primaryKey"
+        }
+      ],
+      "type": "string"
+    },
+    "https://ns.example.com/xdm/confirmationNum": { "type": "string" },
+    "https://ns.example.com/xdm/customerID": { "type": "string" },
+    "https://ns.example.com/xdm/productID": { "type": "string" }
+  }
+}
+```
+
+It is not obvious from the unannotated schema which field is best suited to be the primary key for this data. The descriptor signals that the transaction identifier at 'txID' is the appropriate key to be used for this data.

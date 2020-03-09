@@ -1,0 +1,52 @@
+{
+  "xdm:timeSeriesEvents": [
+    {
+      "@id": "49069bba-3014-420b-a887-3959f87d474a"
+    }
+  ],
+  "xdm:identityMap": {
+    "https://data.adobe.io/entities/namespace/4": [
+      {
+        "xdm:id": "92312748749128"
+      },
+      {
+        "xdm:id": "92312748749239"
+      }
+    ],
+    "https://data.adobe.io/entities/namespace/10": [
+      {
+        "xdm:id": "2394509340-30453470347",
+        "xdm:authenticatedState": "authenticated"
+      }
+    ],
+    "https://data.adobe.io/entities/namespace/9": [
+      {
+        "xdm:id": "1233ce17-20e0-4a2c-8198-2a77fd60cf4d"
+      }
+    ]
+  },
+  "xdm:segmentMembership": {
+    "AAM": {
+      "04a81716-43d6-4e7a-a49c-f1d8b3129ba9": {
+        "xdm:version": "15",
+        "xdm:timestamp": "2018-04-26T15:52:25+00:00",
+        "xdm:validUntil": "2019-04-26T15:52:25+00:00",
+        "xdm:status": "existing"
+      },
+      "53cba6b2-a23b-454a-8069-fc41308f1c0f": {
+        "xdm:version": "3",
+        "xdm:lastQualificationTime": "2018-04-26T15:52:25+00:00",
+        "xdm:validUntil": "2018-04-27T15:52:25+00:00",
+        "xdm:status": "realized"
+      }
+    },
+    "Email": {
+      "abcd@adobe.com": {
+        "xdm:version": "1",
+        "xdm:lastQualificationTime": "2017-09-26T15:52:25+00:00",
+        "xdm:validUntil": "2017-12-26T15:52:25+00:00",
+        "xdm:status": "exited"
+      }
+    }
+  }
+}

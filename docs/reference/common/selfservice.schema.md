@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/common/selfservice
 ```
 
-A Customer Managed Environment is an environment that allows a system integration or deployer to manage applications. This is also known as selfservice.
+A customer managed environment is an environment that allows a system integration or deployer to manage applications. This is also known as self service.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -48,7 +48,7 @@ A Customer Managed Environment is an environment that allows a system integratio
 
 ## xdm:CICDPipeline
 
-A Continuous Deployment Continuous Integration pipeline (xdm:CICDPipeline) is used to deploy an application (see `xdm:application`) conforming to a defined topology (see `xdm:topology`) into an environment (see `xdm:environment`). The pipleline runs a standard process that understands the definingion of the topology, environment and application. The pipeline is a shared resource used by many applications and tenants (see `xdm:tenant`), although special tenants may have customised pipelines. A pipleline will have a URI which defines the API.
+A continuous deployment continuous integration pipeline (xdm:CICDPipeline) is used to deploy an application (see `xdm:application`) conforming to a defined topology (see `xdm:topology`) into an environment (see `xdm:environment`). The pipeline runs a standard process that understands the defining of the topology, environment and application. The pipeline is a shared resource used by many applications and tenants (see `xdm:tenant`), although special tenants may have customized pipelines. A pipeline will have a URI which defines the API.
 
 `xdm:CICDPipeline`
 * is optional
@@ -68,7 +68,7 @@ A Continuous Deployment Continuous Integration pipeline (xdm:CICDPipeline) is us
 
 ## xdm:application
 
-A set of code, content, and data that together implement an experience. Some applications do not allow a system integrator, partner or customer to perform customisation. Other applications may allow customisation on a per instance basis. These may be applications managed by the system integrator, partner or customer. An application be defined by a uri referencing the definition of the application.
+A set of code, content, and data that together implement an experience. Some applications do not allow a system integrator, partner or customer to perform customization. Other applications may allow customization on a per instance basis. These may be applications managed by the system integrator, partner or customer. An application be defined by a URI referencing the definition of the application.
 
 `xdm:application`
 * is **required**
@@ -108,7 +108,7 @@ An application owner, distinct from a tenant  (`xdm:tenant`), owns an applicatio
 
 ## xdm:artifact
 
-An artifact is a package forming the implementation of a service (see `xdm:service`). It is is stored in the artifactRepository (see `xdm:artifactRepository`) publised to the artifactRepository by the CICDPipeline (see `xdm:CICDPipeline`). An artifact has a version. Once an artifact with a version is published it becomes immutable. A version may be a unique string such as a SHA identifying a commit in a Git repository, or a semantic version number. Which is chosen depends on the prefered versioning mechanism.
+An artifact is a package forming the implementation of a service (see `xdm:service`). It is is stored in the artifactRepository (see `xdm:artifactRepository`) published to the artifactRepository by the CICDPipeline (see `xdm:CICDPipeline`). An artifact has a version. Once an artifact with a version is published it becomes immutable. A version may be a unique string such as a SHA identifying a commit in a Git repository, or a semantic version number. Which is chosen depends on the preferred versioning mechanism.
 
 `xdm:artifact`
 * is optional
@@ -128,7 +128,7 @@ An artifact is a package forming the implementation of a service (see `xdm:servi
 
 ## xdm:artifactRepository
 
-An artifact repository stores released binaries including artifacts (see `xdm:artifact`) either from vendors or created by the CICDPipeline (see `xdm:CICDPipeline`). These artifacts are used by the deployment pipleine to deploy an application (see `xdm:application`) into an environment (see `xdm:environment`). The artifactRepository will allow many versions of an artifact to exist and will be organised in a way that will allow artifacts specific to a tenant (see `xdm:tenant`), application, topology (see `xdm:topology`) and environment to be stored. The artifact repsitory must not be used to store any sensitive data.
+An artifact repository stores released binaries including artifacts (see `xdm:artifact`) either from vendors or created by the CICDPipeline (see `xdm:CICDPipeline`). These artifacts are used by the deployment pipeline to deploy an application (see `xdm:application`) into an environment (see `xdm:environment`). The artifactRepository will allow many versions of an artifact to exist and will be organized in a way that will allow artifacts specific to a tenant (see `xdm:tenant`), application, topology (see `xdm:topology`) and environment to be stored. The artifact repository must not be used to store any sensitive data.
 
 `xdm:artifactRepository`
 * is optional
@@ -148,7 +148,7 @@ An artifact repository stores released binaries including artifacts (see `xdm:ar
 
 ## xdm:cluster
 
-A group of instances deployed within a environment (see `xdm:environment` ) as part of a topology (see `xdm:topology`) that deliver a service  within an application (see `xdm:application`) often using a single source of persistence. A topology may have one or more clusters (see `xdm:cluster`). A service (see `xdm:service`) is typically delivered by a single cluster. Members of the cluster are typically stateless and disposable, meaning they are created and destroyed to maintain a suitable cluster size to deliver the service against the agreed SLA. A cluster will have a uri refencing the definition of the cluster, including parameters defining its scaling behaviour.
+A group of instances deployed within a environment (see `xdm:environment` ) as part of a topology (see `xdm:topology`) that deliver a service  within an application (see `xdm:application`) often using a single source of persistence. A topology may have one or more clusters (see `xdm:cluster`). A service (see `xdm:service`) is typically delivered by a single cluster. Members of the cluster are typically stateless and disposable, meaning they are created and destroyed to maintain a suitable cluster size to deliver the service against the agreed SLA. A cluster will have a URI referencing the definition of the cluster, including parameters defining its scaling behavior.
 
 `xdm:cluster`
 * is optional
@@ -168,7 +168,7 @@ A group of instances deployed within a environment (see `xdm:environment` ) as p
 
 ## xdm:codeRepository
 
-A Code Repostitory stores the application (see `xdm:application`) code and any definitions for topologies (see `xdm:topology`), services (see `xdm:service`), clusters (see `xdm:cluster`) and environments (see `(see `xdm:environment`). The CI/CD Pipeline (see `xdm:CICDPipeline`) will read the Code repository to perform integration and deploy the application.
+A code repository stores the application (see `xdm:application`) code and any definitions for topologies (see `xdm:topology`), services (see `xdm:service`), clusters (see `xdm:cluster`) and environments (see `(see `xdm:environment`). The CI/CD Pipeline (see `xdm:CICDPipeline`) will read the Code repository to perform integration and deploy the application.
 
 `xdm:codeRepository`
 * is optional
@@ -188,7 +188,7 @@ A Code Repostitory stores the application (see `xdm:application`) code and any d
 
 ## xdm:deployment
 
-Deployment is the final act of deploying an application (see `xdm:application`) into an environment (see `xdm:environment`) prior to going live in that enviroment. This should be achieved via an automated process working from specifcation and configuration stored in the codeRepository (see `xdm:codeRepository`). Some applications may require the installation of packages directly into a service (see `xdm:service`) or API provided by the application. Where this is the case the deployment process must be capable of supporting that style of deployment and must not make the application or any of its parts available to serve requests while the deployment is incomplete. The deployment process should include stepts to validate that the depoloyment was sucessfull. Deployment is not the same as provisioning (see `xdm:provisioning`), which is a pre-requisite for deployment. Typically a deployment will be perfomed every time changes in the code repository needs to be made available in the environment` Typically the deployment process is implemented by the CICDPipeline (see `xdm:CICDPipeline`)
+Deployment is the final act of deploying an application (see `xdm:application`) into an environment (see `xdm:environment`) prior to going live in that environment. This should be achieved via an automated process working from specification and configuration stored in the codeRepository (see `xdm:codeRepository`). Some applications may require the installation of packages directly into a service (see `xdm:service`) or API provided by the application. Where this is the case the deployment process must be capable of supporting that style of deployment and must not make the application or any of its parts available to serve requests while the deployment is incomplete. The deployment process should include steps to validate that the deployment was successful. Deployment is not the same as provisioning (see `xdm:provisioning`), which is a pre-requisite for deployment. Typically a deployment will be performed every time changes in the code repository needs to be made available in the environment` Typically the deployment process is implemented by the CICDPipeline (see `xdm:CICDPipeline`).
 
 `xdm:deployment`
 * is optional
@@ -208,7 +208,7 @@ Deployment is the final act of deploying an application (see `xdm:application`) 
 
 ## xdm:environment
 
-A tenant (see `xdm:tenant`) may work with 1..n environments where the application (see `xdm:application`) runs. Each environment serves a purpose in the CI/CD chain providing a structure whereby changes  to the application can be rolled out. Typically the owner of the application manages transitions between environments. A system integratior, partner or customer may be the owner of the application expecially where the application has  been extended and customised. An environment may have a uri referencing the definition of the environment. 
+A tenant (see `xdm:tenant`) may work with 1..n environments where the application (see `xdm:application`) runs. Each environment serves a purpose in the CI/CD chain providing a structure whereby changes  to the application can be rolled out. Typically the owner of the application manages transitions between environments. A system integrator, partner or customer may be the owner of the application especially where the application has  been extended and customized. An environment may have a URI referencing the definition of the environment. 
 
 `xdm:environment`
 * is **required**
@@ -226,17 +226,17 @@ A tenant (see `xdm:tenant`) may work with 1..n environments where the applicatio
 | Value | Description |
 |-------|-------------|
 | `dev` | A development environment for engineering teams to develop and test against prior to releasing to the QE teams. |
-| `qe` | A deployment provisioned to statisfy the Quality Engineering process |
-| `stage` | A final deployment environment before production. Typically used to perform final testing and give a reference  deployment to the last production deployment |
-| `beta` | A production deployment environment used to introduce end users of the `application` to new features. |
-| `prod` | The production deployment environment |
+| `qe` | A deployment provisioned to satisfy the quality engineering process. |
+| `stage` | A final deployment environment before production. Typically used to perform final testing and give a reference  deployment to the last production deployment. |
+| `beta` | A production deployment environment used to introduce end-users of the `application` to new features. |
+| `prod` | The production deployment environment. |
 
 
 
 
 ## xdm:provisioning
 
-Provisioning is the operation which sets up everything required to allow a tenant (see `xdm:tenant`) to deploy an application (see `xdm:application`). This includes setting up the Code Repository (see `xdm:codeRepository`), and allocating any resources that the CI/CD pipeline (see `xdm:CICDPipeline`) might require to deploy the application. Provisioning will ensure that any costs or charges are appropriately registerd as being related to the tenant so that billing systems can ensure the tenant is billed. Where the infrastrucutre is dedicated to the tenant, provisioning will ensure that sufficient infratructure is available when the first deployment (see `xdm:deployment`) is being performed. If the infratructure is to be provisioned from a pool, provisioning will ensure that the pool is notified of the level of future demand. Provisioning will understand any legal or juristrictional requirements and constraints that the tenant may have expressed in the contract and ensure that those requiremetns and constraints are satisfied.
+Provisioning is the operation which sets up everything required to allow a tenant (see `xdm:tenant`) to deploy an application (see `xdm:application`). This includes setting up the Code Repository (see `xdm:codeRepository`), and allocating any resources that the CI/CD pipeline (see `xdm:CICDPipeline`) might require to deploy the application. Provisioning will ensure that any costs or charges are appropriately registered as being related to the tenant so that billing systems can ensure the tenant is billed. Where the infrastructure is dedicated to the tenant, provisioning will ensure that sufficient infrastructure is available when the first deployment (see `xdm:deployment`) is being performed. If the infrastructure is to be provisioned from a pool, provisioning will ensure that the pool is notified of the level of future demand. Provisioning will understand any legal or jurisdictional requirements and constraints that the tenant may have expressed in the contract and ensure that those requirements and constraints are satisfied.
 
 `xdm:provisioning`
 * is optional
@@ -269,9 +269,9 @@ The customer CICDPipeline (see `xdm:CICDPipeline`) defines a number of quality g
 `object` with following properties:
 
 
-| Property | Type | Required
+| Property | Type | Required |
 |----------|------|----------|
-| `*Pass`| boolean | Optional | 
+| `*Pass`| boolean | Optional |
 
 
 
@@ -319,7 +319,7 @@ An instance is 1 copy of a service (see `xdm:service`) implementation running wi
 
 ## xdm:selfServiceAPI
 
-The Self Serivce API is a well defined API that will, using the model defined in XDM expose to a suitably authorised client a service implemenation that allows that client to one or more applications (see `xdm:application`) within a tenant (see `xdm:tenant`). The API must maintain tenant boundaries, as defined and controlled by an identity provider.
+The self service API is a well defined API that will, using the model defined in XDM expose to a suitably authorized client a service implementation that allows that client to one or more applications (see `xdm:application`) within a tenant (see `xdm:tenant`). The API must maintain tenant boundaries, as defined and controlled by an identity provider.
 
 `xdm:selfServiceAPI`
 * is optional
@@ -359,7 +359,7 @@ The process by which the CICDPipeline (see `xdm:CICDPipeline`) creates a artifac
 
 ## xdm:selfServiceUI
 
-A User interface or potal containg all the functionality of the selfServiceAPI (see `xdm:selfServiceAPI`) presented for use byt a human in a web browsesr interface. Typically this UI will use the selfServiceAPI and be implemented as a browser applicaiton or SPA.
+A user interface or portal containing all the functionality of the selfServiceAPI (see `xdm:selfServiceAPI`) presented for use by a human in a web browser interface. Typically this UI will use the selfServiceAPI and be implemented as a browser application or SPA.
 
 `xdm:selfServiceUI`
 * is optional
@@ -379,7 +379,7 @@ A User interface or potal containg all the functionality of the selfServiceAPI (
 
 ## xdm:service
 
-An application (see `xdm:application`) consists of one or more services, deployed into a topology (see `xdm:topology`) and implemented as a cluster (see `xdm:cluster`). The service will generally expose an API to consumers however that service may be private to the application. The implimentation of a service my be changed without changing the specification of the service. A service will have a URI defining it.
+An application (see `xdm:application`) consists of one or more services, deployed into a topology (see `xdm:topology`) and implemented as a cluster (see `xdm:cluster`). The service will generally expose an API to consumers however that service may be private to the application. The implementation of a service my be changed without changing the specification of the service. A service will have a URI defining it.
 
 `xdm:service`
 * is optional
@@ -399,7 +399,7 @@ An application (see `xdm:application`) consists of one or more services, deploye
 
 ## xdm:tenant
 
-A description of a customer having a agreement to use a specific set of services (see `xdm:service`). A tenant will typically have a URI which can be used to reference the tenant, and should be resovable by an identity provider.
+A description of a customer having a agreement to use a specific set of services (see `xdm:service`). A tenant will typically have a URI which can be used to reference the tenant, and should be resolvable by an identity provider.
 
 `xdm:tenant`
 * is **required**

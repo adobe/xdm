@@ -24,7 +24,7 @@ The order placed for a product list.
       "xdm:currencyCode": "USD"
     },
     {
-      "xdm:transactionId": "transactid-a222",
+      "xdm:transactionID": "transactid-a222",
       "xdm:paymentAmount": 99.99,
       "xdm:paymentType": "gift_card",
       "xdm:currencyCode": "USD"

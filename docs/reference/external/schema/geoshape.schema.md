@@ -40,7 +40,7 @@ The geographic shape of a place. Based on [schema.org](http://schema.org/GeoShap
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | Geo Shape (this schema) |
+| [@id](#id) | `string` | Optional | Geo Shape (this schema) |
 | [schema:box](#schemabox) | Geo Coordinates | Optional | Geo Shape (this schema) |
 | [schema:circle](#schemacircle) | Geo Circle | Optional | Geo Shape (this schema) |
 | [schema:description](#schemadescription) | `string` | Optional | Geo Shape (this schema) |

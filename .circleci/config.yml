@@ -40,7 +40,7 @@ jobs:
           name: Lint
           command: npm run lint
 
-  validate-json:
+  build:
     docker:
       # specify the version you desire here
       - image: circleci/node:7.10
@@ -80,6 +80,10 @@ jobs:
           path: junit
       - store_artifacts:
           path: junit 
+      # xed-validation
+      - run: npm run xed-validation
+      # incompatibility-check
+      - run: npm run incompatibility-check
 
   generate-docs:
     docker:
@@ -119,11 +123,13 @@ workflows:
   build:
     jobs:
       - lint-json
-      - validate-json
+      - build:
+          requires:
+            - lint-json
       - generate-docs:
           filters:
             branches:
               only:
                 - master
           requires: 
-            - validate-json
+            - build

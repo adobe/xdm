@@ -18,14 +18,14 @@ https://ns.adobe.com/xdm/external/hal/link
 
 ```json
 {
-  "href": "http://www.adobe.com/{product}",
-  "templated": true
+  "href": "http://www.adobe.com/"
 }
 ```
 
 ```json
 {
-  "href": "http://www.adobe.com/"
+  "href": "http://www.adobe.com/{product}",
+  "templated": true
 }
 ```
 

@@ -29,7 +29,7 @@ Versioning policy represents how versioning for content stored in this specific 
 
 ## xdm:maxMilestones
 
-The maximum number of old versions that can be marked as a mlestone on a versioned resource
+The maximum number of old versions that can be marked as a milestone on a versioned resource.
 
 `xdm:maxMilestones`
 * is optional
@@ -48,7 +48,7 @@ The maximum number of old versions that can be marked as a mlestone on a version
 
 ## xdm:retentionTime
 
-The maximum time (in days) up to which a version is retained if it is not marked as a milestone
+The maximum time (in days) up to which a version is retained if it is not marked as a milestone.
 
 `xdm:retentionTime`
 * is optional

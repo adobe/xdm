@@ -13,10 +13,10 @@ While schema descriptors can be used to define metadata about a single schema, t
 
 The following relationship types are defined by XDM:
 
-* `xdm:oneToOne`: describes a 1:1 relationship between a source schema and a destination schema
-* `xdm:oneToMany`: describes a 1:m relationship between a source schema and a destination schema
-* `xdm:manyToOne`: describes a m:1 relationship between a source schema and a destination schema
-* `xdm:manyToMany`: describes an m:n relationship between a source schema and a destination schema
+- `xdm:oneToOne`: describes a 1:1 relationship between a source schema and a destination schema
+- `xdm:oneToMany`: describes a 1:m relationship between a source schema and a destination schema
+- `xdm:manyToOne`: describes a m:1 relationship between a source schema and a destination schema
+- `xdm:manyToMany`: describes an m:n relationship between a source schema and a destination schema
 
 ## Arrays and Denormalized Links
 
@@ -149,11 +149,11 @@ This changes child.json to:
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [common/descriptors/relationshipdescriptor.schema.json](common/descriptors/relationshipdescriptor.schema.json) |
+| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [common/descriptors/relationshipdescriptor.schema.json](common/descriptors/relationshipdescriptor.schema.json) |
 ## Schema Hierarchy
 
 * Relationship Descriptor `https://ns.adobe.com/xdm/common/descriptors/relationshipdescriptor`
-  * [Schema Descriptor](schemadescriptor.schema.md) `https://ns.adobe.com/xdm/common/desciptors/schemadescriptor`
+  * [Schema Descriptor](schemadescriptor.schema.md) `https://ns.adobe.com/xdm/common/descriptors/schemadescriptor`
   * [Item Selector](itemselector.schema.md) `https://ns.adobe.com/xdm/common/descriptors/itemselector`
 
 
@@ -163,12 +163,14 @@ This changes child.json to:
   "@id": "https://example.com/descriptors/1",
   "@type": "xdm:descriptorOneToOne",
   "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile",
-  "xdm:sourceProperty": "xdm:identities",
+  "xdm:sourceProperty": "/xdm:identities",
+  "xdm:sourceVersion": 1,
   "xdm:sourceItem": {
     "xdm:type": "https://example.com/crmID"
   },
   "xdm:destinationSchema": "https://ns.adobe.com/extensions/12345678/customers",
-  "xdm:destinationProperty": "xdm:crmID"
+  "xdm:destinationProperty": "/xdm:crmID",
+  "xdm:destinationVersion": 1
 }
 ```
 
@@ -176,31 +178,35 @@ This changes child.json to:
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | [Schema Descriptor](schemadescriptor.schema.md#@id) |
-| [@type](#@type) | `string` | Optional | [Schema Descriptor](schemadescriptor.schema.md#@type) |
+| [@id](#id) | `string` | Optional | [Schema Descriptor](schemadescriptor.schema.md#id) |
+| [@type](#type) | `string` | Optional | [Schema Descriptor](schemadescriptor.schema.md#type) |
 | [xdm:destinationItem](#xdmdestinationitem) | complex | Optional | Relationship Descriptor (this schema) |
 | [xdm:destinationProperty](#xdmdestinationproperty) | `string` | Optional | Relationship Descriptor (this schema) |
 | [xdm:destinationSchema](#xdmdestinationschema) | `string` | Optional | Relationship Descriptor (this schema) |
+| [xdm:destinationVersion](#xdmdestinationversion) | `number` | Optional | Relationship Descriptor (this schema) |
+| [xdm:label](#xdmlabel) | `string` | Optional | Relationship Descriptor (this schema) |
 | [xdm:sourceItem](#xdmsourceitem) | complex | Optional | [Schema Descriptor](schemadescriptor.schema.md#xdmsourceitem) |
 | [xdm:sourceProperty](#xdmsourceproperty) | `string` | Optional | [Schema Descriptor](schemadescriptor.schema.md#xdmsourceproperty) |
 | [xdm:sourceSchema](#xdmsourceschema) | `string` | Optional | [Schema Descriptor](schemadescriptor.schema.md#xdmsourceschema) |
+| [xdm:sourceValue](#xdmsourcevalue) | `string` | Optional | Relationship Descriptor (this schema) |
+| [xdm:sourceVersion](#xdmsourceversion) | `number` | Optional | [Schema Descriptor](schemadescriptor.schema.md#xdmsourceversion) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
 ### Identifier
 
-The unique identifier for the schema descriptor. This property is required when the descriptor is defined outside of the applicable schema, but is optional when applied via 'meta:descriptors'
+The unique identifier for the schema descriptor. This property is required when the descriptor is defined outside of the applicable schema, but is optional when applied via 'meta:descriptors'.
 
 `@id`
 * is optional
 * type: `string`
-* defined in [Schema Descriptor](schemadescriptor.schema.md#@id)
+* defined in [Schema Descriptor](schemadescriptor.schema.md#id)
 
 ### @id Type
 
 
 `string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
 
 
 
@@ -210,12 +216,12 @@ The unique identifier for the schema descriptor. This property is required when 
 ## @type
 ### Type
 
-The type of descriptor this object represents
+The type of descriptor this object represents.
 
 `@type`
 * is optional
 * type: `string`
-* defined in [Schema Descriptor](schemadescriptor.schema.md#@type)
+* defined in [Schema Descriptor](schemadescriptor.schema.md#type)
 
 ### @type Type
 
@@ -308,15 +314,53 @@ The destination schema this descriptor applies to
 
 
 
+## xdm:destinationVersion
+### Destination Version
+
+Major version being referenced.
+
+`xdm:destinationVersion`
+* is optional
+* type: `number`
+* defined in this schema
+
+### xdm:destinationVersion Type
+
+
+`number`
+
+
+
+
+
+
+## xdm:label
+### Label
+
+`xdm:label`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:label Type
+
+
+`string`
+
+
+
+
+
+
 ## xdm:sourceItem
 ### Source Item
 
-When present, the selector used to match a specific item in the array pointed to by `sourceProperty`
+When present, the selector used to match a specific item in the array pointed to by `sourceProperty`.
 
 `xdm:sourceItem`
 * is optional
 * type: complex
-* defined in [Schema Descriptor](schemadescriptor.schema.md#xdm:sourceItem)
+* defined in [Schema Descriptor](schemadescriptor.schema.md#xdmsourceitem)
 
 ### xdm:sourceItem Type
 
@@ -352,7 +396,7 @@ When present, the property of the source schema to which this descriptor applies
 `xdm:sourceProperty`
 * is optional
 * type: `string`
-* defined in [Schema Descriptor](schemadescriptor.schema.md#xdm:sourceProperty)
+* defined in [Schema Descriptor](schemadescriptor.schema.md#xdmsourceproperty)
 
 ### xdm:sourceProperty Type
 
@@ -372,13 +416,53 @@ The source schema this descriptor applies to. This property is required when the
 `xdm:sourceSchema`
 * is optional
 * type: `string`
-* defined in [Schema Descriptor](schemadescriptor.schema.md#xdm:sourceSchema)
+* defined in [Schema Descriptor](schemadescriptor.schema.md#xdmsourceschema)
 
 ### xdm:sourceSchema Type
 
 
 `string`
 * format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+
+
+
+
+
+
+## xdm:sourceValue
+### Source Value
+
+When present, provides additional information about the values in that field. Descriptor producer and consumer should coordinate on how to use this field, e.g. defining rules on formats, values, and operations.
+
+`xdm:sourceValue`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:sourceValue Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:sourceVersion
+### Source Version
+
+Major version being referenced.
+
+`xdm:sourceVersion`
+* is optional
+* type: `number`
+* defined in [Schema Descriptor](schemadescriptor.schema.md#xdmsourceversion)
+
+### xdm:sourceVersion Type
+
+
+`number`
 
 
 

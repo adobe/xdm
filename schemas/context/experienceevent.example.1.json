@@ -5,26 +5,22 @@
     "xdm:code": "DataSourceIntegrationCode-123"
   },
   "xdm:timestamp": "2017-09-26T15:52:25+00:00",
-  "xdm:endUserIDs": {
-    "https://ns.adobe.com/experience/mcid": {
-      "xdm:id": "92312748749128",
-      "xdm:namespace": {
-        "xdm:code": "ECID"
+  "xdm:identityMap": {
+    "https://data.adobe.io/entities/namespace/4": [
+      {
+        "xdm:id": "92312748749128"
       }
-    },
-    "https://ns.adobe.com/experience/aaid": {
-      "xdm:id": "2394509340-30453470347",
-      "xdm:namespace": {
-        "xdm:code": "AVID"
+    ],
+    "https://data.adobe.io/entities/namespace/10": [
+      {
+        "xdm:id": "2394509340-30453470347"
       }
-    },
-    "https://ns.adobe.com/experience/tntid": {
-      "xdm:id":
-        "1233ce17-20e0-4a2c-8198-2a77fd60cf4d",
-      "xdm:namespace": {
-        "xdm:code": "tnt0051"
+    ],
+    "https://data.adobe.io/entities/namespace/9": [
+      {
+        "xdm:id": "1233ce17-20e0-4a2c-8198-2a77fd60cf4d"
       }
-    }
+    ]
   },
   "xdm:channel": {
     "@id": "https://ns.adobe.com/xdm/channels/apns",
@@ -114,5 +110,43 @@
   },
   "xdm:marketing": {
     "xdm:trackingCode": "marketingcampaign111"
-  }
+  },
+  "xdm:profileStitch": [
+    {
+      "xdm:profileStitchID": {
+        "@id": "https://data.adobe.io/entities/profileStitchIdentity/1",
+        "xdm:namespace": {
+          "xdm:code": "AAM"
+        }
+      },
+      "xdm:version": "1.0",
+      "xdm:identityMap": {
+        "ECID": [
+          { "xdm:id": "https://data.adobe.io/entities/identity/92312748749128" },
+          { "xdm:id": "https://data.adobe.io/entities/identity/62312748749321" },
+          { "xdm:id": "https://data.adobe.io/entities/identity/49312748749132" }
+        ]
+      }
+    }
+  ],
+  "xdm:segmentMemberships": [
+    {
+      "xdm:segmentID": {
+        "@id": "https://data.adobe.io/entities/identity/92312748749128",
+        "xdm:namespace": {
+          "xdm:code": "AAM"
+        }
+      },
+      "xdm:profileStitchID": {
+        "@id": "https://data.adobe.io/entities/profileStitchIdentity/1",
+        "xdm:namespace": {
+          "xdm:code": "AAM"
+        },
+        "xdm:lastQualificationTime": "2017-09-26T15:52:25+00:00",
+        "xdm:version": "1.0",
+        "xdm:validUntil": "2017-12-26T15:52:25+00:00",
+        "xdm:status": "realized"
+      }
+    }
+  ]
 }

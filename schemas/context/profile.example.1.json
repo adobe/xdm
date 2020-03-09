@@ -1,27 +1,24 @@
 {
-  "xdm:identities": [
-    {
-      "xdm:id": "someone@example.com",
-      "xdm:namespace": {
-        "xdm:code": "Email"
+   "xdm:identityMap": {
+    "ECID": [
+      {
+        "xdm:id": "92312748749128"
       }
-    },
-    {
-      "xdm:id": "123-456",
-      "xdm:namespace": {
-        "xdm:code": "BB111"
+    ],
+    "EMAIL": [
+      {
+        "xdm:id": "jane@doe.com"
       }
-    }
-  ],
-  "xdm:person": {
+    ]
+  },
+  "xdm:person":{
     "xdm:name": {
-      "xdm:givenName": "Jane",
+      "xdm:firstName": "Jane",
       "xdm:middleName": "F",
-      "xdm:surname": "Doe"
+      "xdm:lastName": "Doe",
+      "xdm:fullName": "Jane F. Doe"
     },
-    "xdm:birthMonth": 1,
-    "xdm:birthDay": 3,
-    "xdm:birthYear": 1996,
+    "xdm:birthDayAndMonth": "01-03",
     "xdm:gender": "female"
   },
   "xdm:workAddress": {

@@ -8,15 +8,14 @@
   "$id": "https://ns.adobe.com/xdm/external/repo/accesscontrolpolicy",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Access Control Policy",
-  "description": "Schema for the Access Control Policy of a resource",
+  "description": "Schema for the access control policy of a resource.",
   "type": "object",
   "definitions": {
     "accesscontrolpolicy": {
       "type": "object",
       "properties": {
         "repo:acl": {
-          "$ref":
-            "https://ns.adobe.com/xdm/external/repo/accesscontrolentry#/definitions/acl"
+          "$ref": "https://ns.adobe.com/xdm/external/repo/accesscontrolentry#/definitions/acl"
         }
       }
     }

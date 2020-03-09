@@ -10,7 +10,7 @@
     "title": "Subscription",
     "type": "object",
     "meta:extensible": true,
-    "description": "Subscriptions are licensed entitlements to software, services or goods that are utilized in a time or usage based way.",
+    "description": "Subscriptions are licensed entitlements to software, services, or goods that are utilized in a time or usage based way.",
     "definitions": {
         "subscription": {
             "properties": {
@@ -32,15 +32,15 @@
                 "xdm:environment": {
                     "title": "Environment",
                     "$ref": "https://ns.adobe.com/xdm/context/environment",
-                    "description": "Environment of the subscription.\n\nThis can be either then known environment at the time of the subscription\nor the environment of the application for subscriptions related to an\nApplication.\n"
+                    "description": "Environment of the subscription. This can be either then known environment at the time of the subscription or the environment of the application for subscriptions related to an application."
                 },
                 "xdm:SKU": {
                     "title": "SKU",
                     "type": "string",
-                    "description": "Stock Keeping Unit, a generally unique identifier for a product."
+                    "description": "Stock keeping unit (SKU), a generally unique identifier for a product."
                 },
                 "xdm:planName": {
-                    "title": "Plan Name",
+                    "title": "Plan name",
                     "type": "string",
                     "description": "The human readable name for the subscription."
                 },
@@ -52,16 +52,16 @@
                 "xdm:country": {
                     "title": "Country",
                     "type": "string",
-                    "description": "The country that the subscription contractual/agreement terms are rooted in."
+                    "description": "The country that the subscription contractual and agreement terms are rooted in."
                 },
                 "xdm:startDate": {
-                    "title": "Start Date",
+                    "title": "Start date",
                     "type": "string",
                     "format": "date",
                     "description": "The date the subscription begins."
                 },
                 "xdm:endDate": {
-                    "title": "End Date",
+                    "title": "End date",
                     "type": "string",
                     "format": "date",
                     "description": "The date the current subscription term ends."
@@ -72,7 +72,7 @@
                     "description": "The numeric value of the term."
                 },
                 "xdm:termUnitOfTime": {
-                    "title": "Term Unit Of Time",
+                    "title": "Term unit of time",
                     "type": "string",
                     "description": "The unit of time for the term period."
                 },
@@ -82,7 +82,7 @@
                     "description": "The agreed way that the subscription may continue after the end date."
                 },
                 "xdm:topUp": {
-                    "title": "Top Up",
+                    "title": "Top up",
                     "type": "string",
                     "description": "Agreed terms for how consumable aspects of a subscription are repurchased during a billing period."
                 },
@@ -97,28 +97,28 @@
                     "description": "Unique ID for the contract that governs this subscription."
                 },
                 "xdm:paymentMethod": {
-                    "title": "Payment Method",
+                    "title": "Payment method",
                     "type": "string",
                     "description": "The payment method for recurring payments."
                 },
                 "xdm:billingPeriod": {
-                    "title": "Billing Period",
+                    "title": "Billing period",
                     "type": "string",
                     "description": "The duration between billings."
                 },
                 "xdm:billingStartDate": {
-                    "title": "Billing Start Date",
+                    "title": "Billing start date",
                     "type": "string",
                     "format": "date",
                     "description": "The date when the first bill is due."
                 },
                 "xdm:chargeMethod": {
-                    "title": "Charge Method",
+                    "title": "Charge method",
                     "type": "string",
                     "description": "The way the billing is setup to charge the customer."
                 },
                 "xdm:paymentStatus": {
-                    "title": "Payment Status",
+                    "title": "Payment status",
                     "type": "string",
                     "description": "The standing of the account."
                 },
@@ -128,7 +128,7 @@
                     "description": "The main, top level categorization of this type of subscription."
                 },
                 "xdm:subCategory": {
-                    "title": "Sub Category",
+                    "title": "Sub category",
                     "type": "string",
                     "description": "The specific sub categorization of the subscription."
                 },

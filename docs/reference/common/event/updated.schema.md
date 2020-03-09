@@ -21,7 +21,7 @@ A `updated event` follows semantics that are exactly equivalent to the semantics
 {
   "@id": "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
   "@type": "https://ns.adobe.com/xdm/common/event/updated",
-  "xdm:objectType": "https://ns.adobe.com/xdm/assets/asset",
+  "xdm:objectType": "http://ns.adobe.com/adobecloud/core/1.0/asset",
   "activitystreams:actor": {
     "@id": "D13A1E7053E46A220A4C86E1@AdobeID",
     "@type": "https://ns.adobe.com/adobecloudplatform/ims/user"
@@ -31,7 +31,7 @@ A `updated event` follows semantics that are exactly equivalent to the semantics
     "@type": "https://ns.adobe.com/xdm/content/repository"
   },
   "activitystreams:object": {
-    "@type": "https://ns.adobe.com/xdm/assets/asset",
+    "@type": "http://ns.adobe.com/adobecloud/core/1.0/asset",
     "repo:id": "urn:aaid:sc:us:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
     "xdm:name": "example.jpg",
     "repo:etag": "6fc55d0389d856ae7deccebba54f110e",
@@ -50,7 +50,7 @@ A `updated event` follows semantics that are exactly equivalent to the semantics
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@type](#@type) | `const` | Optional | Updated Event (this schema) |
+| [@type](#type) | `const` | Optional | Updated Event (this schema) |
 | [xdm:objectType](#xdmobjecttype) | complex | Optional | [EventEnvelope](../eventenvelope.schema.md#xdmobjecttype) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -79,7 +79,7 @@ This is the type of the `object` that has been emitting this event. The value of
 `xdm:objectType`
 * is optional
 * type: complex
-* defined in [EventEnvelope](../eventenvelope.schema.md#xdm:objectType)
+* defined in [EventEnvelope](../eventenvelope.schema.md#xdmobjecttype)
 
 ### xdm:objectType Type
 

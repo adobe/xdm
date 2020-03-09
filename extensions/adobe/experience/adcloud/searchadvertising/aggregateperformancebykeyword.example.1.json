@@ -1,0 +1,32 @@
+{
+  "xdm:id": 2419,
+  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+  "xdm:accountId": "123456",
+  "xdm:campaignId": "100",
+  "xdm:adgroupId": "101",
+  "xdm:termId": "102",
+  "xdm:searchEngineId": "3",
+  "xdm:term": "photo-shop",
+  "xdm:matchType": "Broad",
+  "xdm:clicks": {
+    "xdm:value": 20
+  },
+  "xdm:impressions": {
+    "xdm.value": 100
+  },
+  "xdm:totalCost": {
+    "xdm:totalCost": 42866
+  },
+  "xdm:avgPosition": {
+    "xdm:value": 2
+  },
+  "xdm:topPageBid": {
+    "xdm:value": 3.2
+  },
+  "xdm:device": {
+    "xdm:type": "mobile"
+  },
+  "xdm:qualityScore": {
+    "xdm:value": 4
+  }
+}

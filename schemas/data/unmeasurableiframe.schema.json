@@ -7,13 +7,13 @@
   ],
   "$id": "https://ns.adobe.com/xdm/data/unmeasurableiframe",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "unmeasurable-iframe",
+  "title": "Unmeasurable-iframe",
   "type": "object",
   "meta:extensible": true,
   "meta:extends": [
     "https://ns.adobe.com/xdm/data/metricdefinition"
   ],
-  "description": "The advertising/viewability metric unmeasurable-iframe describes whether a measurement instrumented ad was not able to be measured due to it being inside one or more iFrames.",
+  "description": "The advertising/viewability metric `unmeasurable-iframe` describes whether a measurement instrumented ad was not able to be measured due to it being inside one or more iFrames.",
   "definitions": {
     "metricdefinition": {
       "properties": {

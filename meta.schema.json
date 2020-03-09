@@ -40,44 +40,38 @@
     "$id": {
       "type": "string",
       "format": "uri",
-      "pattern":
-        "(https://ns\\.adobe\\.com/xdm/[a-z0-9-/]*)|(http://schema\\.org/.*)|(http://ns.adobe.com/adobecloud/core/1.0.*)|(https://tools\\.ietf\\.org/html/draft-kelly-json-hal-08/.*)|(http://www.iptc\\.org/.*)"
+      "pattern": "(https://ns\\.adobe\\.com/xdm/[a-z0-9-/]*)|(http://schema\\.org/.*)|(http://ns.adobe.com/adobecloud/core/1.0.*)|([http|https]://ns\\.adobe\\.com/adobecloudplatform/.*)|(https://tools\\.ietf\\.org/html/draft-kelly-json-hal-08/.*)|(http://www.iptc\\.org/.*)"
     },
     "meta:license": {
       "type": "array",
       "items": [
         {
           "type": "string",
-          "pattern": "Copyright 201[7-8] .*\\. All rights reserved\\."
+          "pattern": "Copyright 201[7-9] .*\\. All rights reserved\\."
         },
         {
           "type": "string",
-          "const":
-            "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license"
+          "const": "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license"
         },
         {
           "type": "string",
-          "const":
-            "you may not use this file except in compliance with the License. You may obtain a copy"
+          "const": "you may not use this file except in compliance with the License. You may obtain a copy"
         },
         {
           "type": "string",
-          "const":
-            "of the License at https://creativecommons.org/licenses/by/4.0/"
+          "const": "of the License at https://creativecommons.org/licenses/by/4.0/"
         }
       ]
     },
     "meta:extensible": {
       "type": "boolean",
       "default": false,
-      "description":
-        "Set this `true` if the schema can be extended by other schemas."
+      "description": "Set this `true` if the schema can be extended by other schemas."
     },
     "meta:auditable": {
       "type": "boolean",
       "default": false,
-      "description":
-        "Set this `true` if entities of this schema can have an audit record."
+      "description": "Set this `true` if entities of this schema can have an audit record."
     },
     "meta:extends": {
       "oneOf": [
@@ -98,9 +92,24 @@
       "type": "array",
       "items": {
         "type": "object",
-        "$ref":
-          "https://ns.adobe.com/xdm/common/desciptors/schemadescriptor#/definitions/descriptor"
+        "$ref": "https://ns.adobe.com/xdm/common/descriptors/schemadescriptor#/definitions/descriptor"
       }
+    },
+    "meta:xdmType": {
+      "description": "signals the logical data type of a field",
+      "type": "string",
+      "enum": [
+        "string",
+        "number",
+        "long",
+        "int",
+        "short",
+        "byte",
+        "boolean",
+        "date",
+        "date-time",
+        "map"
+      ]
     },
     "type": {
       "type": "string",
@@ -109,6 +118,11 @@
     "title": {
       "type": "string",
       "minLength": 3
+    },
+    "dcx:typeRestriction": {
+      "type": "string",
+      "pattern": "^(\\w+|\\*)/([-.\\w.]+|\\*)\\+dcx$",
+      "description": "The DCX format or group of formats this schema can be applied to in validation workflows."
     }
   },
   "allOf": [
@@ -181,8 +195,7 @@
   ],
   "meta:status": {
     "title": "Status",
-    "description":
-      "Indicates if the schema’s level of stability. Defined values are: stable, stabilizing, and experimental.",
+    "description": "Indicates if the schema’s level of stability. Defined values are: stable, stabilizing, and experimental.",
     "type": "string",
     "meta:enum": ["stable", "stabilizing", "experimental", "deprecated"]
   }

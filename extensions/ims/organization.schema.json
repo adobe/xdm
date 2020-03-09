@@ -9,7 +9,7 @@
   "$id": "https://ns.adobe.com/adobecloudplatform/ims/organization",
   "title": "IMS Organization",
   "description":
-    "This model represents a IMS Organization. The IMS organization prinicpal is a organization account under Adobe's identity management system (IMS).",
+    "This model represents an IMS Organization. The IMS organization principal is a organization account under Adobe's identity management system (IMS).",
   "definitions": {
     "organization": {
       "type": "object",
@@ -20,7 +20,7 @@
         },
         "id": {
           "description":
-            "Principal id identifies an organization in IMS. It is a unique and persitent identifier which is allocated at the time the organization is created in the system. An organization's admin can find this value by logging into the [adminconsole](https://adminconsole.adobe.com) and parsing the resource URL they are redirected to.",
+            "Principal ID identifies an organization in IMS. It is a unique and persistent identifier which is allocated at the time the organization is created in the system. An organization's admin can find this value by logging into the [adminconsole](https://adminconsole.adobe.com) and parsing the resource URL they are redirected to.",
           "type": "string"
         },
         "type": {

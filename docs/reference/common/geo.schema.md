@@ -9,7 +9,7 @@ The geographic related data where an event was observed.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [common/geo.schema.json](common/geo.schema.json) |
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [common/geo.schema.json](common/geo.schema.json) |
 ## Schema Hierarchy
 
 * Geo `https://ns.adobe.com/xdm/common/geo`
@@ -17,6 +17,16 @@ The geographic related data where an event was observed.
 
 
 ## Geo Examples
+
+```json
+{
+  "@id": "https://data.adobe.io/entities/geo/potsdam",
+  "xdm:countryCode": "DE",
+  "xdm:stateProvince": "DE-BB",
+  "xdm:city": "Potsdam",
+  "xdm:postalCode": "14482"
+}
+```
 
 ```json
 {
@@ -30,22 +40,12 @@ The geographic related data where an event was observed.
 }
 ```
 
-```json
-{
-  "@id": "https://data.adobe.io/entities/geo/potsdam",
-  "xdm:countryCode": "DE",
-  "xdm:stateProvince": "DE-BB",
-  "xdm:city": "Potsdam",
-  "xdm:postalCode": "14482"
-}
-```
-
 
 # Geo Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | [Geo Coordinates](../external/schema/geocoordinates.schema.md#@id) |
+| [@id](#id) | `string` | Optional | [Geo Coordinates](../external/schema/geocoordinates.schema.md#id) |
 | [schema:description](#schemadescription) | `string` | Optional | [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemadescription) |
 | [schema:elevation](#schemaelevation) | `number` | Optional | [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemaelevation) |
 | [schema:latitude](#schemalatitude) | `number` | Optional | [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemalatitude) |
@@ -66,13 +66,13 @@ The unique identifier of the coordinates.
 `@id`
 * is optional
 * type: `string`
-* defined in [Geo Coordinates](../external/schema/geocoordinates.schema.md#@id)
+* defined in [Geo Coordinates](../external/schema/geocoordinates.schema.md#id)
 
 ### @id Type
 
 
 `string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
 
 
 
@@ -87,7 +87,7 @@ A description of what the coordinates identify.
 `schema:description`
 * is optional
 * type: `string`
-* defined in [Geo Coordinates](../external/schema/geocoordinates.schema.md#schema:description)
+* defined in [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemadescription)
 
 ### schema:description Type
 
@@ -107,7 +107,7 @@ The specific elevation of the defined coordinate. The value conforms to the [WGS
 `schema:elevation`
 * is optional
 * type: `number`
-* defined in [Geo Coordinates](../external/schema/geocoordinates.schema.md#schema:elevation)
+* defined in [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemaelevation)
 
 ### schema:elevation Type
 
@@ -127,7 +127,7 @@ The signed vertical coordinate of a geographic point.
 `schema:latitude`
 * is optional
 * type: `number`
-* defined in [Geo Coordinates](../external/schema/geocoordinates.schema.md#schema:latitude)
+* defined in [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemalatitude)
 
 ### schema:latitude Type
 
@@ -148,7 +148,7 @@ The signed horizontal coordinate of a geographic point.
 `schema:longitude`
 * is optional
 * type: `number`
-* defined in [Geo Coordinates](../external/schema/geocoordinates.schema.md#schema:longitude)
+* defined in [Geo Coordinates](../external/schema/geocoordinates.schema.md#schemalongitude)
 
 ### schema:longitude Type
 
@@ -209,9 +209,9 @@ All instances must conform to this regular expression
 
 
 ## xdm:dmaID
-### Designated Market Area
+### Designated market area
 
-The Nielsen Media Research designated market area.
+The Nielsen media research designated market area.
 
 `xdm:dmaID`
 * is optional
@@ -229,9 +229,9 @@ The Nielsen Media Research designated market area.
 
 
 ## xdm:msaID
-### Metropolitan Statistical Area
+### Metropolitan statistical area
 
-The Metropolitan Statistical Area in the USA where the observation occurred.
+The metropolitan statistical area in the United States where the observation occurred.
 
 `xdm:msaID`
 * is optional

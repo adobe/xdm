@@ -1,0 +1,40 @@
+{
+  "xdm:subscriptions": [
+    {
+      "@id": "https://data.adobe.io/subscriptionid-123",
+      "xdm:subscriber": {
+        "xdm:firstName": "John",
+        "xdm:lastName": "Smith",
+        "xdm:courtesyTitle": "Mr.",
+        "xdm:birthDay": 1,
+        "xdm:birthMonth": 1,
+        "xdm:birthYear": 2000,
+        "xdm:gender": "male"
+      },
+      "xdm:device": {
+        "xdm:typeId": "TypeIdentifier-111",
+        "xdm:typeIdService": "deviceAtlas",
+        "xdm:type": "mobile",
+        "xdm:manufacturer": "Apple",
+        "xdm:model": "iPhone 6",
+        "xdm:modelNumber": "A1586",
+        "xdm:screenHeight": 667,
+        "xdm:screenWidth": 375,
+        "xdm:colorDepth": 16777216
+      },
+      "xdm:SKU": "12345678",
+      "xdm:planName": "PS+ 12 Month Membership",
+      "xdm:country": "USA",
+      "xdm:startDate": "2001-01-01",
+      "xdm:endDate": "2002-01-01",
+      "xdm:term": 12,
+      "xdm:termUnitOfTime": "Month",
+      "xdm:status": "active",
+      "xdm:contractId": "contractid-123",
+      "xdm:paymentMethod": "creditCard",
+      "xdm:billingPeriod": "Month",
+      "xdm:billingStartDate": "2001-01-01",
+      "xdm:paymentStatus": "paid"
+    }
+  ]
+}

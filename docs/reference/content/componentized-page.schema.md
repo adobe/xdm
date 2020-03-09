@@ -1,5 +1,5 @@
 
-# Componentized Page Schema
+# Componentized page Schema
 
 ```
 https://ns.adobe.com/xdm/content/componentized-page
@@ -12,23 +12,23 @@ Componentized pages are modular (consist of smaller content components), hyperli
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | Yes | Forbidden | Permitted | [content/componentized-page.schema.json](content/componentized-page.schema.json) |
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [content/componentized-page.schema.json](content/componentized-page.schema.json) |
 ## Schema Hierarchy
 
-* Componentized Page `https://ns.adobe.com/xdm/content/componentized-page`
-  * [Content](content.schema.md) `https://ns.adobe.com/xdm/content/content`
+* Componentized page `https://ns.adobe.com/xdm/content/componentized-page`
+  * [Asset](../external/repo/asset.schema.md) `http://ns.adobe.com/adobecloud/core/1.0/asset`
 
 
-## Componentized Page Example
+## Componentized page Example
 ```json
 {
   "repo:name": "example",
   "repo:path": "/content/example",
   "dc:title": "Example Page for XDM.",
   "xdm:shortTitle": "Example",
-  "repo:createdDate": "2017-09-26T13:27:36+00:00",
+  "repo:createDate": "2017-09-26T13:27:36+00:00",
   "xdm:repositoryCreatedBy": "https://identity.adobe.io/users/tripod@adobe.com",
-  "repo:lastModifiedDate": "2017-09-26T13:31:19+00:00",
+  "repo:modifyDate": "2017-09-26T13:31:19+00:00",
   "xdm:repositoryLastModifiedBy": "https://identity.adobe.io/users/trieloff@adobe.com",
   "xdm:language": "en-US",
   "xdm:template": "https://francois.corp.adobe.com:4502/apps/foundation/generic_page",
@@ -36,7 +36,7 @@ Componentized pages are modular (consist of smaller content components), hyperli
     "type": "https://francois.corp.adobe.com:4502/apps/foundation/teaser",
     "title": "Sunglasses",
     "image": {
-      "@type": "https://ns.adobe.com/xdm/assets/asset",
+      "@type": "http://ns.adobe.com/adobecloud/core/1.0/asset",
       "repo:id": "urn:aaid:aem:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
       "@id": "https://francois.corp.adobe.com:4502/content/dam/Fx_DUKE-small.jpg"
     }
@@ -56,7 +56,7 @@ Componentized pages are modular (consist of smaller content components), hyperli
       "image0": {
         "type": "https://francois.corp.adobe.com:4502/apps/foundation/image",
         "image": {
-          "@type": "https://ns.adobe.com/xdm/assets/asset",
+          "@type": "http://ns.adobe.com/adobecloud/core/1.0/asset",
           "asset_id": "urn:aaid:aem:4123ba4c-93a8-4c5d-b979-1234e4318185",
           "id": "https://francois.corp.adobe.com:4502/content/dam/Glasses-small.jpg"
         }
@@ -70,42 +70,27 @@ Componentized pages are modular (consist of smaller content components), hyperli
 }
 ```
 
-# Componentized Page Properties
+# Componentized page Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#@id) | `string` | Optional | [Content](content.schema.md#@id) |
-| [dc:title](#dctitle) | `string` | Optional | Componentized Page (this schema) |
-| [repo:name](#reponame) | `string` | **Required** | Componentized Page (this schema) |
-| [repo:path](#repopath) | `string` | **Required** | Componentized Page (this schema) |
-| [xdm:language](#xdmlanguage) | `string` | Optional | Componentized Page (this schema) |
-| [xdm:navOrder](#xdmnavorder) | `integer` | Optional | Componentized Page (this schema) |
-| [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | **Required** | [Content](content.schema.md#xdmrepositorycreatedby) |
-| [xdm:repositoryLastModifiedBy](#xdmrepositorylastmodifiedby) | `string` | **Required** | [Content](content.schema.md#xdmrepositorylastmodifiedby) |
-| [xdm:shortTitle](#xdmshorttitle) | `string` | Optional | Componentized Page (this schema) |
-| [xdm:template](#xdmtemplate) | `string` | Optional | Componentized Page (this schema) |
-| [xdm:unlisted](#xdmunlisted) | `boolean` | Optional | Componentized Page (this schema) |
+| [dc:title](#dctitle) | `string` | Optional | Componentized page (this schema) |
+| [repo:createdBy](#repocreatedby) | `string` | Optional | [Asset](../external/repo/asset.schema.md#repocreatedby) |
+| [repo:etag](#repoetag) | `string` | Optional | [Asset](../external/repo/asset.schema.md#repoetag) |
+| [repo:id](#repoid) | `string` | Optional | [Asset](../external/repo/asset.schema.md#repoid) |
+| [repo:modifiedBy](#repomodifiedby) | `string` | Optional | [Asset](../external/repo/asset.schema.md#repomodifiedby) |
+| [repo:name](#reponame) | `string` | **Required** | Componentized page (this schema) |
+| [repo:path](#repopath) | `string` | **Required** | Componentized page (this schema) |
+| [repo:size](#reposize) | `integer` | Optional | [Asset](../external/repo/asset.schema.md#reposize) |
+| [repo:version](#repoversion) | `string` | Optional | [Asset](../external/repo/asset.schema.md#repoversion) |
+| [tiff:imageLength](#tiffimagelength) | `integer` | Optional | [Asset](../external/repo/asset.schema.md#tiffimagelength) |
+| [tiff:imageWidth](#tiffimagewidth) | `integer` | Optional | [Asset](../external/repo/asset.schema.md#tiffimagewidth) |
+| [xdm:language](#xdmlanguage) | `string` | Optional | Componentized page (this schema) |
+| [xdm:navOrder](#xdmnavorder) | `integer` | Optional | Componentized page (this schema) |
+| [xdm:shortTitle](#xdmshorttitle) | `string` | Optional | Componentized page (this schema) |
+| [xdm:template](#xdmtemplate) | `string` | Optional | Componentized page (this schema) |
+| [xdm:unlisted](#xdmunlisted) | `boolean` | Optional | Componentized page (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
-
-## @id
-
-A unique identifier given to every addressable piece of content in a given repository.
-
-`@id`
-* is optional
-* type: `string`
-* defined in [Content](content.schema.md#@id)
-
-### @id Type
-
-
-`string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
-
-
-
-
-
 
 ## dc:title
 
@@ -117,6 +102,89 @@ Full title of the page.
 * defined in this schema
 
 ### dc:title Type
+
+
+`string`
+
+
+
+
+
+
+## repo:createdBy
+
+ID of the user who initiated the action that caused the resource to be created in the repository.
+
+`repo:createdBy`
+* is optional
+* type: `string`
+* defined in [Asset](../external/repo/asset.schema.md#repocreatedby)
+
+### repo:createdBy Type
+
+
+`string`
+
+
+
+
+
+
+## repo:etag
+### ETag
+
+An  ETag is an HTTP response header returned by an HTTP/1.1 compliant web server used to determine change in content of a resource at a given URL. 
+
+`repo:etag`
+* is optional
+* type: `string`
+* defined in [Asset](../external/repo/asset.schema.md#repoetag)
+
+### repo:etag Type
+
+
+`string`
+
+
+
+
+
+
+## repo:id
+
+A unique identifier given to every addressable asset in a given repository.
+
+`repo:id`
+* is optional
+* type: `string`
+* defined in [Asset](../external/repo/asset.schema.md#repoid)
+
+### repo:id Type
+
+
+`string`
+
+
+
+
+
+### repo:id Example
+
+```json
+"urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e"
+```
+
+
+## repo:modifiedBy
+
+ID of the user who initiated the action that most recently caused the resource to be modified in the repository.
+
+`repo:modifiedBy`
+* is optional
+* type: `string`
+* defined in [Asset](../external/repo/asset.schema.md#repomodifiedby)
+
+### repo:modifiedBy Type
 
 
 `string`
@@ -164,9 +232,91 @@ Shows the hierarchy of the page. The path semantics should be same as that defin
 
 
 
+## repo:size
+### Size
+
+Size of the asset in bytes.
+
+`repo:size`
+* is optional
+* type: `integer`
+* defined in [Asset](../external/repo/asset.schema.md#reposize)
+
+### repo:size Type
+
+
+`integer`
+* minimum value: `0`
+
+
+
+
+
+
+## repo:version
+
+The version ID of the piece of content. It will be generated both on explicit and implicit save or upload.
+
+`repo:version`
+* is optional
+* type: `string`
+* defined in [Asset](../external/repo/asset.schema.md#repoversion)
+
+### repo:version Type
+
+
+`string`
+
+
+
+
+
+
+## tiff:imageLength
+### Length
+
+Height in pixels. To maintain continuity with the XMP and TIFF standards, the height of an image or video is specified in the property `imageLength`. The duration of the video (also commonly called length) is specified in the property `extent`
+
+`tiff:imageLength`
+* is optional
+* type: `integer`
+* defined in [Asset](../external/repo/asset.schema.md#tiffimagelength)
+
+### tiff:imageLength Type
+
+
+`integer`
+* minimum value: `0`
+
+
+
+
+
+
+## tiff:imageWidth
+### Width
+
+Width in pixels
+
+`tiff:imageWidth`
+* is optional
+* type: `integer`
+* defined in [Asset](../external/repo/asset.schema.md#tiffimagewidth)
+
+### tiff:imageWidth Type
+
+
+`integer`
+* minimum value: `0`
+
+
+
+
+
+
 ## xdm:language
 
-Specifies the language of this page. the language property should conform to BPC 47, for example `en-GB`
+Specifies the language of this page. the language property should conform to BPC 47, for example `en-GB`.
 
 `xdm:language`
 * is optional
@@ -204,44 +354,6 @@ When this page is shown in a collection of pages, use `nav_order` to sort. The s
 
 `integer`
 * minimum value: `0`
-
-
-
-
-
-
-## xdm:repositoryCreatedBy
-
-ID of the user who initiated the action that caused the resource to be created in the repository.
-
-`xdm:repositoryCreatedBy`
-* is **required**
-* type: `string`
-* defined in [Content](content.schema.md#xdm:repositoryCreatedBy)
-
-### xdm:repositoryCreatedBy Type
-
-
-`string`
-
-
-
-
-
-
-## xdm:repositoryLastModifiedBy
-
-ID of the user who initiated the action that most recently caused the resource to be modified in the repository.
-
-`xdm:repositoryLastModifiedBy`
-* is **required**
-* type: `string`
-* defined in [Content](content.schema.md#xdm:repositoryLastModifiedBy)
-
-### xdm:repositoryLastModifiedBy Type
-
-
-`string`
 
 
 

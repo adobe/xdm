@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/media-timed-chapter-view-details",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Timed Media Chapter View Details",
+  "title": "Timed media chapter view details",
   "type": "object",
   "meta:status": "experimental",
   "meta:extensible": true,
@@ -16,12 +16,12 @@
     "media-chapter-view-details": {
       "properties": {
         "xdm:index": {
-          "title": "Chapter Index",
+          "title": "Chapter index",
           "type": "integer",
           "description": "The index of the chapter inside the content."
         },
         "xdm:offset": {
-          "title": "Chapter Offset",
+          "title": "Chapter offset",
           "type": "integer",
           "description": "The offset of the chapter, in seconds, inside the content from the start."
         }

@@ -7,33 +7,42 @@
   ],
   "$id": "https://ns.adobe.com/experience/implementations",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title":
-    "The Adobe Experience Cloud technical implementations details for data collection",
+  "title": "Adobe Experience Platform Implementation Details",
   "type": "object",
-  "meta:extends": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description":
-    "Details the type and version of client implementations for data collection interacting with Adobe Experience Cloud services. Used for debugging and usage analysis.",
-  "properties": {
-    "https://ns.adobe.com/experience/analytics/implementation": {
-      "title": "Client Implementation for Adobe Analytics",
-      "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
-      "description": "Client details interacting with Adobe Analytics."
-    },
-    "https://ns.adobe.com/experience/target/implementation": {
-      "title": "Client Implementation for Adobe Target",
-      "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
-      "description": "Client details interacting with Adobe Target."
-    },
-    "https://ns.adobe.com/experience/idservice/implementation": {
-      "title": "Client Implementation for Adobe Visitor Service",
-      "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
-      "description":
-        "Client details interacting with Adobe Experience Cloud ID Service."
-    },
-    "https://ns.adobe.com/experience/adcloud/implementation": {
-      "title": "Client Implementation for Adobe AdCloud",
-      "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
-      "description": "Client details interacting with Adobe AdCloud."
+  "description": "Details the type and version of client implementations for data collection interacting with Adobe Experience Cloud services. Used for debugging and usage analysis.",
+  "definitions": {
+    "implementations": {
+      "properties": {
+        "https://ns.adobe.com/experience/analytics/implementation": {
+          "title": "Client Implementation for Adobe Analytics",
+          "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
+          "description": "Client details interacting with Adobe Analytics."
+        },
+        "https://ns.adobe.com/xdm/experience/target/implementation": {
+          "title": "Client Implementation for Adobe Target",
+          "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
+          "description": "Client details interacting with Adobe Target."
+        },
+        "https://ns.adobe.com/experience/idservice/implementation": {
+          "title": "Client Implementation for Adobe Visitor Service",
+          "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
+          "description": "Client details interacting with Adobe Experience Cloud ID Service."
+        },
+        "https://ns.adobe.com/experience/adcloud/implementation": {
+          "title": "Client Implementation for Adobe Advertising Cloud",
+          "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
+          "description": "Client details interacting with Adobe Advertising Cloud."
+        }
+      }
     }
-  }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/implementations"
+    }
+  ],
+  "meta:status": "stabilizing"
 }

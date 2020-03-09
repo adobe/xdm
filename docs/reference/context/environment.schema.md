@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/environment
 ```
 
-Information about the surrounding situation the event observation occurred in, specifically detailing transitory information such as the network or software versions. > IMPORTANT: All values should be aligned with the [DeviceAtlas](https://deviceatlas.com) database licensed by Adobe. 
+Information about the surrounding situation the event observation occurred, specifically detailing transitory information such as the network or software versions. IMPORTANT: All values should be aligned with the [DeviceAtlas](https://deviceatlas.com) database licensed by Adobe. 
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -14,7 +14,7 @@ Information about the surrounding situation the event observation occurred in, s
 
 * Environment `https://ns.adobe.com/xdm/context/environment`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Browser Details](browserdetails.schema.md) `https://ns.adobe.com/xdm/context/browserdetails`
+  * [Browser details](browserdetails.schema.md) `https://ns.adobe.com/xdm/context/browserdetails`
 
 
 ## Environment Example
@@ -36,7 +36,9 @@ Information about the surrounding situation the event observation occurred in, s
   "xdm:operatingSystem": "MAC OS",
   "xdm:operatingSystemVersion": "10.13",
   "xdm:operatingSystemVendor": "Apple",
-  "xdm:connectionType": "cable"
+  "xdm:connectionType": "cable",
+  "xdm:domain": "verizon.com",
+  "xdm:ISP": "Verizon"
 }
 ```
 
@@ -44,10 +46,12 @@ Information about the surrounding situation the event observation occurred in, s
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:browserDetails](#xdmbrowserdetails) | Browser Details | Optional | Environment (this schema) |
+| [xdm:ISP](#xdmisp) | `string` | Optional | Environment (this schema) |
+| [xdm:browserDetails](#xdmbrowserdetails) | Browser details | Optional | Environment (this schema) |
 | [xdm:carrier](#xdmcarrier) | `string` | Optional | Environment (this schema) |
 | [xdm:colorDepth](#xdmcolordepth) | `integer` | Optional | Environment (this schema) |
 | [xdm:connectionType](#xdmconnectiontype) | `enum` | Optional | Environment (this schema) |
+| [xdm:domain](#xdmdomain) | `string` | Optional | Environment (this schema) |
 | [xdm:ipV4](#xdmipv4) | `string` | Optional | Environment (this schema) |
 | [xdm:ipV6](#xdmipv6) | `string` | Optional | Environment (this schema) |
 | [xdm:operatingSystem](#xdmoperatingsystem) | `string` | Optional | Environment (this schema) |
@@ -58,27 +62,47 @@ Information about the surrounding situation the event observation occurred in, s
 | [xdm:viewportWidth](#xdmviewportwidth) | `integer` | Optional | Environment (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## xdm:browserDetails
-### Browser Details
+## xdm:ISP
+### Internet service provider
 
-The browser specific details such as browser name, version, javascript version, user agent string, accept language.
+The name of the user's internet service provider.
+
+`xdm:ISP`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:ISP Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:browserDetails
+### Browser details
+
+The browser specific details such as browser name, version, javascript version, user agent string, and accept language.
 
 `xdm:browserDetails`
 * is optional
-* type: Browser Details
+* type: Browser details
 * defined in this schema
 
 ### xdm:browserDetails Type
 
 
-* [Browser Details](browserdetails.schema.md) – `https://ns.adobe.com/xdm/context/browserdetails`
+* [Browser details](browserdetails.schema.md) – `https://ns.adobe.com/xdm/context/browserdetails`
 
 
 
 
 
 ## xdm:carrier
-### Mobile Network Carrier
+### Mobile network carrier
 
 A mobile network carrier or MNO, also known as a wireless service provider, wireless carrier, cellular company, or mobile network carrier, is a provider of services wireless communications that owns or controls all the elements necessary to sell and deliver services to an end user.
 
@@ -98,7 +122,7 @@ A mobile network carrier or MNO, also known as a wireless service provider, wire
 
 
 ## xdm:colorDepth
-### Color Depth
+### Color depth
 
 The number of bits used for each color component of a single pixel.
 
@@ -119,7 +143,7 @@ The number of bits used for each color component of a single pixel.
 
 
 ## xdm:connectionType
-### Connection Type
+### Connection type
 
 Internet connection type.
 
@@ -128,7 +152,7 @@ Internet connection type.
 * type: `enum`
 * defined in this schema
 
-The value of this property **must** be equal to one of the [known values below](#xdm:connectionType-known-values).
+The value of this property **must** be equal to one of the [known values below](#xdmconnectiontype-known-values).
 
 ### xdm:connectionType Known Values
 | Value | Description |
@@ -138,7 +162,7 @@ The value of this property **must** be equal to one of the [known values below](
 | `bisdn` | BISDN |
 | `dsl` | DSL |
 | `cable` | Cable |
-| `wireless_wifi` | Wireless WIFI |
+| `wireless_wifi` | Wireless wifi |
 | `mobile` | Mobile |
 | `mobile_edge` | Mobile Edge |
 | `mobile_gprs` | Mobile GPRS |
@@ -150,6 +174,26 @@ The value of this property **must** be equal to one of the [known values below](
 | `oc3` | OC3 |
 | `lan` | LAN |
 | `modem` | Modem |
+
+
+
+
+## xdm:domain
+### Domain
+
+The domain of the users ISP.
+
+`xdm:domain`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:domain Type
+
+
+`string`
+
+
 
 
 
@@ -197,9 +241,9 @@ The numerical label assigned to a device participating in a computer network tha
 
 
 ## xdm:operatingSystem
-### Operating System
+### Operating system
 
-The name of the operating system used when the observation was made. This attribute should not contain any version information i.e. 10.5.3, but can contain *edition* designations such as 'Ultimate', or 'Professional'.
+The name of the operating system used when the observation was made. The attribute should not contain any version information such as '10.5.3', but instead contain 'edition' designations such as 'Ultimate' or 'Professional'.
 
 `xdm:operatingSystem`
 * is optional
@@ -217,7 +261,7 @@ The name of the operating system used when the observation was made. This attrib
 
 
 ## xdm:operatingSystemVendor
-### Operating System Vendor
+### Operating system vendor
 
 The name of the operating system vendor used when the observation was made.
 
@@ -237,9 +281,9 @@ The name of the operating system vendor used when the observation was made.
 
 
 ## xdm:operatingSystemVersion
-### Operating System Version
+### Operating system version
 
-The full version identifier for the operating system used when the observation was made. Versions are generally numerically composed, but may be in a vendor defined format.
+The full version identifier for the operating system used when the observation was made. Versions are generally numerically composed but may be in a vendor defined format.
 
 `xdm:operatingSystemVersion`
 * is optional
@@ -266,23 +310,23 @@ The type of the application environment.
 * type: `enum`
 * defined in this schema
 
-The value of this property **must** be equal to one of the [known values below](#xdm:type-known-values).
+The value of this property **must** be equal to one of the [known values below](#xdmtype-known-values).
 
 ### xdm:type Known Values
 | Value | Description |
 |-------|-------------|
 | `browser` | Browser |
 | `application` | Application |
-| `iot` | IoT |
-| `external` | External System |
+| `iot` | Internet of things |
+| `external` | External system |
 
 
 
 
 ## xdm:viewportHeight
-### Viewport Height
+### Viewport height
 
-The vertical size (in pixels) of the window the experience was displayed inside. For a web view event, the browser viewport height.
+The vertical size in pixels of the window the experience was displayed inside. For a web view event, the browser viewport height.
 
 `xdm:viewportHeight`
 * is optional
@@ -301,9 +345,9 @@ The vertical size (in pixels) of the window the experience was displayed inside.
 
 
 ## xdm:viewportWidth
-### Viewport Width
+### Viewport width
 
-The horizontal size (in pixels) of the window the experience was displayed inside. For a web view event, the browser viewport width.
+The horizontal size in pixels of the window the experience was displayed inside. For a web view event, the browser viewport width.
 
 `xdm:viewportWidth`
 * is optional

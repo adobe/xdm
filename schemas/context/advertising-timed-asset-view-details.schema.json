@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/advertising-timed-asset-view-details",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Ad Asset View Details",
+  "title": "Ad asset view details",
   "type": "object",
   "description": "View details for the ad playback captured by the experience event.",
   "meta:extensible": true,
@@ -15,18 +15,18 @@
     "adAssetViewDetails": {
       "properties": {
         "xdm:playerName": {
-          "title": "Ad Player Name",
+          "title": "Ad player name",
           "type": "string",
           "description": "The name of the player responsible for rendering the ad."
         },
         "xdm:index": {
-          "title": "Ad Index in Pod",
+          "title": "Ad index in pod",
           "type": "integer",
-          "description": "The index of the ad inside the parent ad break. The first ad has index 0, the second 1, and so on."
+          "description": "The index of the ad inside the parent ad break, for example, the first ad has index 0 and the second ad has index 1."
         },
         "xdm:adBreak": {
-            "title": "Ad Break",
-            "description": "Details about how a timed advertising is being inserted into a timed media.",
+            "title": "Ad break",
+            "description": "Details about how a timed advertising is inserted into a timed media.",
             "$ref": "https://ns.adobe.com/xdm/context/advertising-break"
         }
       },

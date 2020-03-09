@@ -1,17 +1,167 @@
 {
   "@id": "https://www.example.com/offers/eligibility-rule/rule-0001",
-  "xdm:name": "Californians with two or more purchases of more than $1000",
-  "xdm:value": "profile.xdm:homeAddress.xdm:stateOrProvince = \"CA\" AND (SELECT X FROM xEvent WHERE X.xdm:commerce.xdm:order.xdm:priceTotal > 1000 AND X.xdm:commerce.xdm:order.xdm:currencyCode = \"USD\").count() > 1",
-  "xdm:modelUsage" : [
+  "xdm:name": "Californians with one or more purchases of more than $1000",
+  "xdm:valueAsText": "homeAddress.stateOrProvince = \"CA\" AND (some x FROM xEvent WHERE commerce.order.priceTotal > 1000 AND x.commerce.order.currencyCode = \"USD\")",
+  "xdm:value": {
+    "nodeType": "fnApply",
+    "fnName": "and",
+    "params": [
+      {
+        "nodeType": "fnApply",
+        "fnName": "=",
+        "params": [
+          {
+            "nodeType": "fieldLookup",
+            "fieldName": "xdm:stateOrProvince",
+            "object": {
+              "nodeType": "fieldLookup",
+              "fieldName": "xdm:homeAddress",
+              "object": {
+                "nodeType": "literal",
+                "literalType": "XDMObject",
+                "value": "profile"
+              }
+            }
+          },
+          {
+            "literalType": "String",
+            "nodeType": "literal",
+            "value": "CA"
+          }
+        ]
+      },
+      {
+        "nodeType": "quantification",
+        "quantifier": "some",
+        "variables": [
+          {
+            "nodeType": "varDecl",
+            "varName": "x",
+            "from": {
+              "nodeType": "fnApply",
+              "fnName": "modelInstances",
+              "params": [
+                {
+                  "nodeType": "literal",
+                  "literalType": "String",
+                  "value": "https://ns.adobe.com/xdm/context/experienceevent"
+                }
+              ]
+            },
+            "where": {
+              "nodeType": "fnApply",
+              "fnName": "and",
+              "params": [
+                {
+                  "nodeType": "quantification",
+                  "quantifier": "some",
+                  "variables": [
+                    {
+                      "nodeType": "varDecl",
+                      "varName": "id",
+                      "from": {
+                        "nodeType": "fieldLookup",
+                        "fieldName": "xdm:endUserIDs",
+                        "object": {
+                          "nodeType": "varRef",
+                          "varName": "x"
+                        }
+                      },
+                      "where": {
+                        "nodeType": "fnApply",
+                        "fnName": "in",
+                        "params": [
+                          {
+                            "nodeType": "varRef",
+                            "varName": "id"
+                          },
+                          {
+                            "nodeType": "fieldLookup",
+                            "fieldName": "xdm:identities",
+                            "object": {
+                              "nodeType": "literal",
+                              "literalType": "XDMObject",
+                              "value": "profile"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "fnApply",
+                  "fnName": ">",
+                  "params": [
+                    {
+                      "nodeType": "fieldLookup",
+                      "fieldName": "xdm:priceTotal",
+                      "object": {
+                        "nodeType": "fieldLookup",
+                        "fieldName": "xdm:order",
+                        "object": {
+                          "nodeType": "fieldLookup",
+                          "fieldName": "xdm:commerce",
+                          "object": {
+                            "nodeType": "varRef",
+                            "varName": "x"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "nodeType": "literal",
+                      "literalType": "Integer",
+                      "value": 1000
+                    }
+                  ]
+                },
+                {
+                  "nodeType": "fnApply",
+                  "fnName": "=",
+                  "params": [
+                    {
+                      "nodeType": "fieldLookup",
+                      "fieldName": "xdm:currencyCode",
+                      "object": {
+                        "nodeType": "fieldLookup",
+                        "fieldName": "xdm:order",
+                        "object": {
+                          "nodeType": "fieldLookup",
+                          "fieldName": "xdm:commerce",
+                          "object": {
+                            "nodeType": "varRef",
+                            "varName": "x"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "nodeType": "literal",
+                      "literalType": "String",
+                      "value": "USD"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "xdm:modelUsage": [
     {
-      "xdm:model" : "https://ns.adobe.com/xdm/context/profile",
-      "xdm:modelPropertyPaths" : [
+      "xdm:modelReference": "https://ns.adobe.com/xdm/context/profile",
+      "xdm:modelPropertyPaths": [
+        "xdm:identities",
         "xdm:homeAddress.xdm:stateProvince"
       ]
     },
     {
-      "xdm:model" : "https://ns.adobe.com/xdm/context/experienceevent",
-      "xdm:modelPropertyPaths" : [
+      "xdm:modelReference": "https://ns.adobe.com/xdm/context/experienceevent",
+      "xdm:modelPropertyPaths": [
+        "xdm:endUserIDs",
         "xdm:commerce.xdm:order.xdm:priceTotal",
         "xdm:commerce.xdm:order.xdm:currencyCode"
       ]

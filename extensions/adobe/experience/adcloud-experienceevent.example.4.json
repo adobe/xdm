@@ -1,0 +1,41 @@
+{
+  "_id": "XH9zXgAAAI@XLLFn",
+  "xdm:timestamp": "2018-08-07T08:06:34.672Z",
+  "xdm:search": {
+    "xdm:searchEngineID": "https://ns.adobe.com/searchengines/3"
+  },
+  "xdm:device": {
+    "xdm:type": "mobile"
+  },
+  "xdm:environment": {
+    "xdm:browserDetails": {
+      "xdm:userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36"
+    }
+  },
+  "xdm:web": {
+    "xdm:webReferrer": {
+      "xdm:URL": "https://www.google.com/"
+    }
+  },
+  "xdm:advertising": {
+    "xdm:conversions": {
+      "xdm:id": "177116802",
+      "value": 1.0
+    }
+  },
+  "xdm:identityMap": {
+    "AdCloud": [
+      {
+        "id": "XA9N8wAAAMnAaj_e"
+      }
+    ]
+  },
+
+  "https://ns.adobe.com/experience/adcloud/conversionDetails": {
+    "xdm:conversionProperties": {
+      "page_load": "1",
+      "personal_loan_landing_page": "2",
+      "SiteEngagement_LoginSignIn": "2"
+    }
+  }
+}

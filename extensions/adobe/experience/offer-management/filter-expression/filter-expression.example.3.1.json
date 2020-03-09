@@ -84,6 +84,7 @@
                   ]
                 },
                 "where": {
+                  "nodeType": "fnApply",
                   "fnName": "and",
                   "params": [
                     {
@@ -99,7 +100,7 @@
                             "object": {
                               "nodeType": "varRef",
                               "varName": "x"
-                            },
+                            }
                           },
                           "where": {
                             "nodeType": "fnApply",
@@ -108,14 +109,14 @@
                               {  
                                 "nodeType": "varRef",
                                 "varName": "id"
-                              }
+                              },
                               {
                                 "nodeType": "fieldLookup",
                                 "fieldName": "xdm:identities",
                                 "object": {
                                   "nodeType": "varRef",
                                   "varName": "p"
-                                },
+                                }
                               }
                             ]
                           }

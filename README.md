@@ -1,6 +1,6 @@
 # Experience Data Model (XDM) Schema
 
-[![CircleCI](https://circleci.com/gh/adobe/xdm.svg?style=svg)](https://circleci.com/gh/adobe/xdm)
+[![CircleCI](https://circleci.com/gh/adobe/xdm.svg?style=svg)](https://circleci.com/gh/adobe/xdm) [![Greenkeeper badge](https://badges.greenkeeper.io/adobe/xdm.svg)](https://greenkeeper.io/)
 
 The [Experience Data Model](https://www.adobe.io/open/standards/xdm) (XDM) is the language of digital experiences.
 XDM is a publicly documented specification, driven by Adobe to improve the interoperability, expressiveness, and power of digital experiences.
@@ -8,41 +8,41 @@ This repository contains the source code for the formal specification of the XDM
 
 ## Current Version
 
-XDM is at version `0.9.3`.
+XDM is at version `0.9.8`.
 
 You can find more about our versioning in [docs/introduction.md](docs/introduction.md#versioning)
 
 ## Read the XDM Spec
 
-* [Chapter 1: Introduction](docs/introduction.md)
-* [Chapter 2: Related Standards](docs/standards.md)
-* [Chapter 3: Terminology](docs/terminology.md)
-* [Chapter 4: Extending XDM](docs/extensions.md)
-* [Appendix A: Reference](docs/reference/README.md) – this contains all the schemas defined by XDM
+- [Chapter 1: Introduction](docs/introduction.md)
+- [Chapter 2: Related Standards](docs/standards.md)
+- [Chapter 3: Terminology](docs/terminology.md)
+- [Chapter 4: Extending XDM](docs/extensions.md)
+- [Appendix A: Reference](docs/reference/README.md) – this contains all the schemas defined by XDM
 
 ## Project Layout
 
 The project is laid out in the following way:
 
-* `docs`: Markdown files that contain front-matter, introduction, and non-normative parts of XDM
-* `schemas`: JSON schema files constituting the normative part of XDM
-  * `*.schema.json` is the schema file, e.g. `event-envelope.schema.json` – we pick the `.json` file extension for easy syntax highlighting in editors
-  * `*.example.*.json` is an example file that will be validated against the `*.schema.json` file, and if successful, merged into the `*.schema.json` file as an `"example"` field at the root of the schema before it is converted into Markdown or published
-  * `*.invalid.*.json` is an invalid example file that will be validated against the `*.schema.json` file. If the `invalid` file validates (false positive), the schema is too lax and the overall build will fail. `invalid` files will not be merged into documentation.
-  * `*.description.md` is a description file that will be merged into the `"description"` field at the root of the schema, allowing the authoring of longer descriptions. The merge happens before publishing the schema file or creating a joint Markdown file
-  * `schemas/assets` – for schemas related to the asset core concept, including image, video, document
-  * `schemas/audiences` – for schemas describing audiences, segments, and groups of consumers
-  * `schemas/campaigns` – for schemas describing orchestrated experience campaign
-  * `schemas/content` – for schemas related to content, including visual, audible, and virtual reality content
-  * `schemas/context` – for schemas related to the context of a digital experience, including profile, person, environment
-  * `schemas/data` – for schemas describing collected data, metric, etc.
-  * `schemas/external/*` – for JSON Schema representation of externally defined standards
-  * `schemas/channels` – for schemas describing experience channels and locations therein
-  * `schemas/common` – for basic concepts like extensibility that are not covered in `external` schemas
-* `*.ttl`: legacy schema files in Turtle Syntax that have not yet been converted into JSON Schema
-* `package.json`: a build file for `npm` that allows the generation of Markdown from the JSON Schema source files and (later) the generation of an AEM package to be deployed on the Adobe I/O Website
-* `README.md`: this file
-* `CONTRIBUTING.md`: guidelines for contributors, covering process, conventions and design guidelines
+- `docs`: Markdown files that contain front-matter, introduction, and non-normative parts of XDM
+- `schemas`: JSON schema files constituting the normative part of XDM
+  - `*.schema.json` is the schema file, e.g. `event-envelope.schema.json` – we pick the `.json` file extension for easy syntax highlighting in editors
+  - `*.example.*.json` is an example file that will be validated against the `*.schema.json` file, and if successful, merged into the `*.schema.json` file as an `"example"` field at the root of the schema before it is converted into Markdown or published
+  - `*.invalid.*.json` is an invalid example file that will be validated against the `*.schema.json` file. If the `invalid` file validates (false positive), the schema is too lax and the overall build will fail. `invalid` files will not be merged into documentation.
+  - `*.description.md` is a description file that will be merged into the `"description"` field at the root of the schema, allowing the authoring of longer descriptions. The merge happens before publishing the schema file or creating a joint Markdown file
+  - `schemas/assets` – for schemas related to the asset core concept, including image, video, document
+  - `schemas/audiences` – for schemas describing audiences, segments, and groups of consumers
+  - `schemas/campaigns` – for schemas describing orchestrated experience campaign
+  - `schemas/content` – for schemas related to content, including visual, audible, and virtual reality content
+  - `schemas/context` – for schemas related to the context of a digital experience, including profile, person, environment
+  - `schemas/data` – for schemas describing collected data, metric, etc.
+  - `schemas/external/*` – for JSON Schema representation of externally defined standards
+  - `schemas/channels` – for schemas describing experience channels and locations therein
+  - `schemas/common` – for basic concepts like extensibility that are not covered in `external` schemas
+- `*.ttl`: legacy schema files in Turtle Syntax that have not yet been converted into JSON Schema
+- `package.json`: a build file for `npm` that allows the generation of Markdown from the JSON Schema source files and (later) the generation of an AEM package to be deployed on the Adobe I/O Website
+- `README.md`: this file
+- `CONTRIBUTING.md`: guidelines for contributors, covering process, conventions and design guidelines
 
 ## Tooling
 
@@ -77,7 +77,7 @@ If you see warnings or error messages (or an non-zero exit code), fix them befor
 
 ## Naming Conventions
 
-* see the [Contributor's guide](CONTRIBUTING.md)
+- see the [Contributor's guide](CONTRIBUTING.md)
 
 ### AEM Package Generation (optional)
 
@@ -127,16 +127,16 @@ The `package.json` script will fetch a released version of the AEM Markdown Impo
 
 ### Specifications
 
-* [JSON Schema](http://json-schema.org/)
-* [JSON-LD 1.0](https://www.w3.org/TR/json-ld/)
-* [XMP SPECIFICATION PART 1 DATA MODEL, SERIALIZATION, AND CORE PROPERTIES](http://wwwimages.adobe.com/content/dam/Adobe/en/devnet/xmp/pdfs/XMP%20SDK%20Release%20cc-2014-12/XMPSpecificationPart1.pdf)
+- [JSON Schema](http://json-schema.org/)
+- [JSON-LD 1.0](https://www.w3.org/TR/json-ld/)
+- [XMP SPECIFICATION PART 1 DATA MODEL, SERIALIZATION, AND CORE PROPERTIES](http://wwwimages.adobe.com/content/dam/Adobe/en/devnet/xmp/pdfs/XMP%20SDK%20Release%20cc-2014-12/XMPSpecificationPart1.pdf)
 
 ### Vocabularies/Ontologies
 
-* [schema.org](http://schema.org)
-* [Dublin Core](http://dublincore.org/)
-* [OWL](http://www.w3.org/TR/2009/REC-owl2-overview-20091027/)
-* [SKOS Core](http://www.w3.org/TR/2009/REC-skos-reference-20090818/)
+- [schema.org](http://schema.org)
+- [Dublin Core](http://dublincore.org/)
+- [OWL](http://www.w3.org/TR/2009/REC-owl2-overview-20091027/)
+- [SKOS Core](http://www.w3.org/TR/2009/REC-skos-reference-20090818/)
 
 ## License/Copyright
 
@@ -145,8 +145,8 @@ This work is licensed under a [Creative Commons Attribution 4.0 International (C
 
 ### You are free to:
 
-* Share — copy and redistribute the material in any medium or format
-* Adapt — remix, transform, and build upon the material for any purpose, even commercially.
+- Share — copy and redistribute the material in any medium or format.
+- Adapt — remix, transform, and build upon the material for any purpose, even commercially.
 
 This license is acceptable for Free Cultural Works.
 
@@ -154,5 +154,5 @@ The licensor cannot revoke these freedoms as long as you follow the license term
 
 ### Under the following terms:
 
-* Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
-* No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+- Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+- No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.

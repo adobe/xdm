@@ -28,14 +28,8 @@
       "$ref": "https://ns.adobe.com/xdm/external/hal/resource#/definitions/hal"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/content/content#/definitions/content"
-    },
-    {
       "$ref":
         "https://ns.adobe.com/xdm/assets/copyright-owner#/definitions/copyright"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/assets/asset#/definitions/asset"
     },
     {
       "$ref":

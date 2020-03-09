@@ -6,13 +6,12 @@
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id":
-    "https://ns.adobe.com/experience/offer-management/selection-constraint",
+  "$id": "https://ns.adobe.com/experience/offer-management/selection-constraint",
   "meta:abstract": false,
   "meta:extensible": true,
   "type": "object",
   "title": "Offer Selection Constraint",
-  "description": "Offer Selection Constraint specify conditions that have to be met in order for an offer to be included in weighing the best offer. Those constraints can have many aspects, ranging from date constraints over rules applied to the user profile fields to rules checked against contextual data available at decision time.",
+  "description": "Offer selection constraint specify conditions that have to be met in order for an offer to be included in weighing the best offer. Those constraints can have many aspects, ranging from date constraints over rules applied to the user profile fields to rules checked against contextual data available at decision time.",
   "definitions": {
     "selection-constraint": {
       "properties": {
@@ -20,27 +19,29 @@
           "type": "string",
           "format": "date-time",
           "title": "Start Date",
-          "description": "Offer Start Date. Offers that have not reached their start date are not yet considered eligible in the decisioning."
+          "description": "Offer start date. Offers that have not reached their start date are not yet considered eligible in the decisioning."
         },
         "xdm:endDate": {
           "type": "string",
           "format": "date-time",
           "title": "End Date",
-          "description": "Offer End Date. Offers that have passed their end date are no longer considered eligible in the decisioning process."
+          "description": "Offer end date. Offers that have passed their end date are no longer considered eligible in the decisioning process."
         },
         "xdm:eligibilityRule": {
           "type": "string",
           "format": "uri",
           "title": "Eligibility Rule",
-          "description": "The reference to an eligibility rule that tests a condition using the profile and/or other contextual XDM instances. The value is the URI (@id) of the eligibility rule that is referenced. See EligibilityRule schema https://ns.adobe.com/experience/offer-management/eligibility-rule"
+          "description": "The reference to an eligibility rule that tests a condition using the profile and/or other contextual XDM instances. The value is the URI (@id) of the eligibility rule that is referenced. See schema https://ns.adobe.com/experience/offer-management/eligibility-rule"
         }
-      },
-      "required": ["xdm:startDate", "xdm:endDate"]
+      }
     }
   },
   "allOf": [
     {
       "$ref": "#/definitions/selection-constraint"
+    },
+    {
+      "required": ["xdm:startDate", "xdm:endDate"]
     }
   ]
 }

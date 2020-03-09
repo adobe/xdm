@@ -5,7 +5,9 @@
       "xdm:value": 1
     }
   },
-  "xdm:channel": "https://ns.adobe.com/xdm/channels/apns",
+  "xdm:channel": {
+    "@id": "https://ns.adobe.com/xdm/channels/email"
+  },
   "xdm:endUserIDs": {
     "https://ns.adobe.com/experience/mcid": {
       "@id": "https://data.adobe.io/entities/identity/92312748749128",
@@ -70,9 +72,11 @@
     "xdm:id": 1001,
     "xdm:testEnabled": false,
     "xdm:messageClass": "messageCenter",
-    "xdm:templateID": 1100
+    "xdm:templateID": 1100,
+    "xdm:templateName": "Newsletters-Black Friday"
   },
   "https://ns.adobe.com/experience/campaign/orchestration": {
-    "xdm:businessReason": "store-entry-beacon-triggered"
-  }
+    "xdm:eventID": "store-entry-beacon-triggered"
+  },
+  "https://ns.adobe.com/experience/campaign/eventSource": "pipelined-trackinglogd"
 }

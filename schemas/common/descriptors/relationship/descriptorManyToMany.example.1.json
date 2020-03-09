@@ -1,0 +1,9 @@
+{
+  "@id": "https://ns.adobe.com/example/descriptorManyToMany/1",
+  "@type": "xdm:descriptorManyToMany",
+  "xdm:sourceSchema": "https://ns.adobe.com/experience/aem/user",
+  "xdm:sourceVersion": 1,
+  "xdm:destinationSchema": "https://ns.adobe.com/xdm/context/profile",
+  "xdm:destinationVersion": 1,
+  "xdm:label": "UserProfile"
+}

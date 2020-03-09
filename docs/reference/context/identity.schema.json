@@ -10,30 +10,22 @@
     "title": "Identity",
     "type": "object",
     "meta:extensible": true,
+    "meta:extends": [
+        "https://ns.adobe.com/xdm/context/identityitem"
+    ],
     "description": "Identity is used to clearly distinguish people that are interacting with digital experiences. Identity is established by an identity provider, which itself is referenced in the `namespace` attribute. Within each `namespace`, the identity is unique.",
     "definitions": {
         "identity": {
             "properties": {
-                "xdm:id": {
-                    "title": "Identifier",
-                    "type": "string",
-                    "description": "Identity of the consumer in the related namespace."
-                },
                 "xdm:namespace": {
                     "title": "Namespace",
                     "$ref": "https://ns.adobe.com/xdm/context/namespace",
                     "description": "The namespace associated with the `xid` attribute and matched up with the AAM data source integration code."
                 },
                 "xdm:xid": {
-                    "title": "Experience Identifier",
+                    "title": "Experience identifier",
                     "type": "string",
-                    "description": "When present, this value represents a cross-namespace identifier that is unique across all namespace-scoped identifiers in all namespaces."
-                },
-                "xdm:primary": {
-                    "title": "Primary",
-                    "type": "boolean",
-                    "default": false,
-                    "description": "Indicates this identity is the preferred identity. Is used as a hint to help systems better organize how identities are queried."
+                    "description": "When present, experience identifier value represents a cross-namespace identifier that is unique across all namespace-scoped identifiers in all namespaces."
                 }
             }
         }
@@ -41,6 +33,9 @@
     "allOf": [
         {
             "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/context/identityitem#/definitions/identityitem"
         },
         {
             "$ref": "#/definitions/identity"
@@ -52,7 +47,8 @@
             "xdm:id": "id123",
             "xdm:namespace": {
                 "xdm:code": "AA12345"
-            }
+            },
+            "xdm:authenticatedState": "ambiguous"
         },
         {
             "xdm:id": "someone@example.com",

@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/metricdefinition"],
   "description":
-    "The direct-marketing metric sends describes the number of asynchronous messages (email, SMS, MMS etc) that have been dispatched to an recipient's account/address/device",
+    "The direct-marketing metric `sends` describes the number of asynchronous messages (email, SMS, MMS etc) that have been dispatched to an recipient's account/address/device.",
   "definitions": {
     "metricdefinition": {
       "properties": {

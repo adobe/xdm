@@ -9,8 +9,7 @@
   "$id": "https://ns.adobe.com/xdm/external/activity-streams-2/type",
   "type": "object",
   "title": "JSON-LD `@type`",
-  "description":
-    "Identifies the [Object](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object) or [Link](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-link) type. Multiple values may be specified. Refer to the [JSON-LD](https://json-ld.org/spec/latest/json-ld/) specification for a complete description of the `@type` field.",
+  "description": "Identifies the [Object](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object) or [Link](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-link) type. Multiple values may be specified. Refer to the [JSON-LD](https://json-ld.org/spec/latest/json-ld/) specification for a complete description of the `@type` field.",
   "definitions": {
     "type": {
       "oneOf": [

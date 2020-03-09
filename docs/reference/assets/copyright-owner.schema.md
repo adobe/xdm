@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/assets/copyright-owner
 ```
 
-Describes the owner of a copyrighted work through name and ID
+Describes the owner of a copyrighted work through name and ID.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -30,7 +30,7 @@ Describes the owner of a copyrighted work through name and ID
 ### Copyright Owner ID
 
 ID of the copyright owner.
-If the PLUS-ID being stored in this property is registered with the PLUS Coalition, it should be expressed as a URL. For example: http://plus-id.org/PLUS-ID
+If the PLUS-ID being stored in this property is registered with the PLUS Coalition, it should be expressed as a URL. For example: http://plus-id.org/PLUS-ID.
 
 `plus:copyrightOwnerID`
 * is optional

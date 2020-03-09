@@ -47,7 +47,7 @@ Page information for paginated resource list operations.
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## count
-### Number of items
+### Number of Items
 
 The number of items on this page.
 
@@ -68,7 +68,7 @@ The number of items on this page.
 
 
 ## next
-### Next page start value
+### Next Page Start Value
 
 The start value for the next page.
 
@@ -88,9 +88,9 @@ The start value for the next page.
 
 
 ## orderBy
-### Order by property
+### Order by Property
 
-The `orderBy` parameter specifies the comma-separated (no spaces after comma) list of properties by which the resource should be sorted. The properties by which to sort are listed in priority order. The first property is used for primary sorting, the second property to resolve ties in primary sorting, etc. The name of a property may be prefixed with a `+` to indicate ascending ordering or `-` to indicate descending ordering by that property. If the property name is not prefixed the result is sorted in asceding order. If `orderBy` is not given or does not name a property supported to sort by, the order is indeterminate and the service may return the elements in any order.
+The `orderBy` parameter specifies the comma-separated (no spaces after comma) list of properties by which the resource should be sorted. The properties by which to sort are listed in priority order. The first property is used for primary sorting, the second property to resolve ties in primary sorting, etc. The name of a property may be prefixed with a `+` to indicate ascending ordering or `-` to indicate descending ordering by that property. If the property name is not prefixed the result is sorted in ascending order. If `orderBy` is not given or does not name a property supported to sort by, the order is indeterminate and the service may return the elements in any order.
 
 `orderBy`
 * is **required**
@@ -108,7 +108,7 @@ The `orderBy` parameter specifies the comma-separated (no spaces after comma) li
 
 
 ## property
-### Filter properties
+### Filter Properties
 
 The list of properties by which the result is filtered, if any.
 This list is comma-separated (no spaces after comma). The resulting list will only include entries for which the filtered property has been defined. 
@@ -129,9 +129,9 @@ This list is comma-separated (no spaces after comma). The resulting list will on
 
 
 ## start
-### First value
+### First Value
 
-The first value, in sorted order, of the orderby property on this page.
+The first value, in sorted order, of the `orderby` property on this page.
 
 `start`
 * is **required**
@@ -149,7 +149,7 @@ The first value, in sorted order, of the orderby property on this page.
 
 
 ## type
-### Filter type value
+### Filter Type Value
 
 The applied type filtering value, if any. Unlike `property` which allows to filter for presence of any property, `type` filters only for the specific value of the `type` attribute, i.e. the media type. This is a literal filter without any globbing or pattern matching.
 

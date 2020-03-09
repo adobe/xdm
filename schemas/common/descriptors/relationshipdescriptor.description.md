@@ -6,10 +6,10 @@ While schema descriptors can be used to define metadata about a single schema, t
 
 The following relationship types are defined by XDM:
 
-* `xdm:oneToOne`: describes a 1:1 relationship between a source schema and a destination schema
-* `xdm:oneToMany`: describes a 1:m relationship between a source schema and a destination schema
-* `xdm:manyToOne`: describes a m:1 relationship between a source schema and a destination schema
-* `xdm:manyToMany`: describes an m:n relationship between a source schema and a destination schema
+- `xdm:oneToOne`: describes a 1:1 relationship between a source schema and a destination schema
+- `xdm:oneToMany`: describes a 1:m relationship between a source schema and a destination schema
+- `xdm:manyToOne`: describes a m:1 relationship between a source schema and a destination schema
+- `xdm:manyToMany`: describes an m:n relationship between a source schema and a destination schema
 
 ## Arrays and Denormalized Links
 

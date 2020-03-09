@@ -10,15 +10,15 @@
   "meta:abstract": false,
   "meta:extensible": true,
   "type": "object",
-  "title": "Used XDM Models and Properties from those models",
-  "description": "A key-value pair whose key is reference to the model, i.e. the model's $id property. The value is an array of strings, each string representing a fully qualified path to an XDM field with dots used as the path delimiter.",
+  "title": "Used XDM Models and Properties from those Models",
+  "description": "A key-value pair whose key is a reference to the model, i.e. the model's $id property. The value is an array of strings, each string representing a fully qualified path to an XDM field with dots used as the path delimiter.",
   "definitions": {
     "model-usage": {
       "type": "object",
       "title": "Model and Used Properties",
       "description": "A key-value pair whose key is reference to the model, i.e. the model's $id property. The value is an array of strings, each string representing a fully qualified path to an XDM field with dots used as the path delimiter.",
       "properties": {
-        "xdm:model": {
+        "xdm:modelReference": {
           "type": "string",
           "format": "uri",
           "description": "Reference to the model, i.e. its schema $id property. "
@@ -27,14 +27,18 @@
           "type": "array",
           "items": {
             "type": "string",
-            "description": "A fully qualified JSON path to an XDM field with dots used as the path delimiter"
+            "description": "A fully qualified JSON path to an XDM field with dots used as the path delimiter."
           }
         }
-      },
-      "required": [
-        "xdm:modelReference",
-        "xdm:modelPropertyPaths"
-      ]
+      }
     }
-  }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/model-usage"
+    },
+    {
+      "required": ["xdm:modelReference", "xdm:modelPropertyPaths"]
+    }
+  ]
 }

@@ -7,26 +7,26 @@
   ],
   "$id": "https://ns.adobe.com/xdm/data/metrics/placecontext/poi-entries",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "poi-entries",
+  "title": "Point of Interest (POI) Entries",
   "type": "object",
   "meta:extensible": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/metricdefinition"],
-  "description":
-    "The place context metric poi-entries describes the number of times a person has left a Point of Interest (POI).",
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/metricdefinition"
+  ],
+  "description": "The place context metric `poi-entries` describes the number of times a person has left a point of interest (POI).",
   "definitions": {
     "metric": {
       "properties": {
         "@id": {
           "type": "string",
-          "format": "uri",
+          "format": "uri-reference",
           "const": "xdm:poiEntries",
           "description": "The unique identifier of this metric."
         },
         "schema:name": {
           "type": "string",
           "const": "placecontext: poiEntries",
-          "description":
-            "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
+          "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
         },
         "xdm:measurement": {
           "type": "string",
@@ -47,6 +47,11 @@
       "$ref": "https://ns.adobe.com/xdm/data/metricdefinition"
     }
   ],
-  "required": ["@id", "schema:name", "xdm:measurement", "xdm:unit"],
+  "required": [
+    "@id",
+    "schema:name",
+    "xdm:measurement",
+    "xdm:unit"
+  ],
   "meta:status": "experimental"
 }

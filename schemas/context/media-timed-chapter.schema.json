@@ -7,21 +7,21 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/media-timed-chapter",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Timed Media Chapter Information",
+  "title": "Timed media chapter information",
   "type": "object",
   "meta:status": "experimental",
   "meta:extensible": true,
-  "description": "Timed media chapter information",
+  "description": "Timed media chapter information.",
   "definitions": {
     "media-timed-chapter": {
       "properties": {
         "xdm:chapterAssetReference": {
-          "title": "Chapter Asset Reference",
+          "title": "Chapter asset reference",
           "$ref": "https://ns.adobe.com/xdm/context/media-timed-chapter-asset-reference",
           "description": "Asset information about the chapter captured by the experience event."
         },
         "xdm:chapterAssetViewDetails": {
-          "title": "Chapter View Details",
+          "title": "Chapter view details",
           "$ref": "https://ns.adobe.com/xdm/context/media-timed-chapter-view-details",
           "description": "View details for the chapter playback captured by the experience event."
         },
@@ -36,14 +36,14 @@
           "description": "Indicates if a timed media asset was watched to completion - this does not necessarily mean the viewer watched the whole video; viewer could have skipped ahead."
         },
         "xdm:timePlayed": {
-          "title": "Time Spent",
+          "title": "Time spent",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Describes the amount of time (in seconds) spent by a user on a specific timed media asset."
+          "description": "Describes the amount of time in seconds spent by a user on a specific timed media asset."
         },
         "xdm:federated": {
           "title": "Federated",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Indicates if an experience event was created through data federation (data sharing)."
+          "description": "Indicates if an experience event was created through data federation or data sharing."
         }
       }
     }

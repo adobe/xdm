@@ -62,7 +62,7 @@ In a paged Collection, indicates the page that contains the most recently update
 `activitystreams:current`
 * is optional
 * type: complex
-* defined in [Collection](collection.schema.md#activitystreams:current)
+* defined in [Collection](collection.schema.md#activitystreamscurrent)
 
 ### activitystreams:current Type
 
@@ -101,7 +101,7 @@ In a paged Collection, indicates the furthest preceeding page of items in the co
 `activitystreams:first`
 * is optional
 * type: complex
-* defined in [Collection](collection.schema.md#activitystreams:first)
+* defined in [Collection](collection.schema.md#activitystreamsfirst)
 
 ### activitystreams:first Type
 
@@ -140,7 +140,7 @@ Identifies the items contained in a collection. The items might be ordered or un
 `activitystreams:items`
 * is optional
 * type: complex
-* defined in [Collection](collection.schema.md#activitystreams:items)
+* defined in [Collection](collection.schema.md#activitystreamsitems)
 
 ### activitystreams:items Type
 
@@ -212,7 +212,7 @@ In a paged Collection, indicates the furthest proceeding page of the collection.
 `activitystreams:last`
 * is optional
 * type: complex
-* defined in [Collection](collection.schema.md#activitystreams:last)
+* defined in [Collection](collection.schema.md#activitystreamslast)
 
 ### activitystreams:last Type
 
@@ -352,7 +352,7 @@ A non-negative integer specifying the total number of objects contained by the l
 `activitystreams:totalItems`
 * is optional
 * type: `integer`
-* defined in [Collection](collection.schema.md#activitystreams:totalItems)
+* defined in [Collection](collection.schema.md#activitystreamstotalitems)
 
 ### activitystreams:totalItems Type
 

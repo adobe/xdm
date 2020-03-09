@@ -8,10 +8,10 @@ We are in the process of increasing the visibility of XDM to partners and to inv
 For this purpose, we have moved the XDM repository to [https://github.com/adobe/xdm](https://github.com/adobe/xdm).
 For Adobe employees, following ground rules apply:
 
-* Like everyone, follow the [Code of Conduct](CODE_OF_CONDUCT.md)
-* Like everyone, follow these [Contributing](CONTRIBUTING.md) guides
-* Like always, don't share credentials, API keys, or other secrets in issues or in code
-* Focus on standardizing the category, not your specific product
+- Like everyone, follow the [Code of Conduct](CODE_OF_CONDUCT.md)
+- Like everyone, follow these [Contributing](CONTRIBUTING.md) guides
+- Like always, don't share credentials, API keys, or other secrets in issues or in code
+- Focus on standardizing the category, not your specific product
 
 ## Things to Keep in Mind
 
@@ -60,14 +60,14 @@ You can include the Creative Commons Attribution 4.0 International (CC BY 4.0) l
 
 Every pull request should specify:
 
-* What the change intends to do
-* If there are breaking changes (in case there are, list them in [CHANGELOG.md](CHANGELOG.md), too)
-* Link to the Github issue in the format `#42`
+- What the change intends to do
+- If there are breaking changes (in case there are, list them in [CHANGELOG.md](CHANGELOG.md), too)
+- Link to the Github issue in the format `#42`
 
 For every update to the schema, make sure
 
-* `npm test` validates all example files, see [README.md](README.md)
-* There are `schemas/*/*.example.*.json` files for each newly created or changed schema
+- `npm test` validates all example files, see [README.md](README.md)
+- There are `schemas/*/*.example.*.json` files for each newly created or changed schema
 
 Furthermore, a pull request that modifies the schema must also include accompanying documentation. Pull requests with missing documentation will be rejected.
 
@@ -77,11 +77,11 @@ All changes to the adobe/xdm repository now require an associated pull request.
 
 The target consumers of the data model are developers building applications using services from Adobe, our partners, and their customers. These design guidelines help:
 
-* **Longevity**: consuming applications rarely need to be changed.
-* **Clarity**: concepts are self-explanatory.
-* **Continuity**: existing knowledge can be re-applied.
-* **Compatibility**: implementations can easily cross between products.
-* **Consumability**: systems based on the data model are easy to build, understand, and use.
+- **Longevity**: consuming applications rarely need to be changed.
+- **Clarity**: concepts are self-explanatory.
+- **Continuity**: existing knowledge can be re-applied.
+- **Compatibility**: implementations can easily cross between products.
+- **Consumability**: systems based on the data model are easy to build, understand, and use.
 
 ### Design for Longevity
 
@@ -114,10 +114,10 @@ While there will be almost certainly multiple implementations of parts of XDM ac
 
 Additional aspects of standard design that aid with consumability are:
 
-* principle of least astonishment: don't surprise the consumer
-* avoid unnecessary complexity: don't introduce indirections that are not needed
-* the principle of minimal verbosity: make keep things as short as possible, but not shorter
-* avoid unnecessary polymorphism that is hard to consume, e.g. offering both singular and array notations, or introducing type variants that don't provide a common discriminator property.
+- principle of least astonishment: don't surprise the consumer
+- avoid unnecessary complexity: don't introduce indirections that are not needed
+- the principle of minimal verbosity: make keep things as short as possible, but not shorter
+- avoid unnecessary polymorphism that is hard to consume, e.g. offering both singular and array notations, or introducing type variants that don't provide a common discriminator property.
 
 ### Design for the Cloud
 
@@ -133,34 +133,34 @@ Avoid non-semantic limits – don’t put current resource limits in the data mo
 
 ## Coding Styleguides
 
-* file names for schema files should be lower case and end with `.schema.json`
-* include an `"$id"` with a value like `"https://ns.adobe.com/xdm/assets/image"` in the schema (but leave out the `.schema.json`)
-* when referencing schemas, use the absolute `$id`, don't use relative references like `../content/content.schema.json`
-* don't nest schemas too deeply. Break inline type definitions into separate `*.schema.json` files if they have properties with object types themselves.
-* don't make schemas too fine-grained, only create schemas for `object`s not for simple types like patterned strings
-* ensure that there is a `meta:license` at the top of the schema
-* use JSON Schema `draft-6`
-* provide a `description` and `title` for each schema and each property
-* have the `title` at the top of the schema, so that it can be found without scrolling
-* make sure you have an example for every schema
-* all properties must have a specific type, while JSON-Schema does allow variability in types in cases like enumerations, concrete types are required in XDM
-* restrict the values of `string` properties as much as appropriate for the domain. `minLength`, `maxLength`, `pattern`, and `format` all can help with that.
-* don't restrict values of `string` properties beyond the constraints of the domain, e.g. don't set a `maxLength` of 255, just because your current database uses a `VARCHAR(255)` default
-* run `npm test` before you make a pull request
-* convention is that property names are in camelCase, when they appear in JSON
-* Acronyms and abbreviations in camelCase like ID, API, JSON are also capitalized in camelCase, such as `documentID`
-* When combining two acronyms, use lowercase for the first and uppercase for the second, such as `dmaID`
-* don't invent your own `ID` attributes, use the `@id` convention
-* don't invent your own `type` attributes, use the `@type` convention
-* when using `enum` in JSON schema, document all values using `meta:enum`
-* when working with "soft enums" or "open enumerations", use `meta:enum` to document all known values
+- file names for schema files should be lower case and end with `.schema.json`
+- include an `"$id"` with a value like `"https://ns.adobe.com/xdm/assets/image"` in the schema (but leave out the `.schema.json`)
+- when referencing schemas, use the absolute `$id`, don't use relative references like `../repo/asset.schema.json`
+- don't nest schemas too deeply. Break inline type definitions into separate `*.schema.json` files if they have properties with object types themselves.
+- don't make schemas too fine-grained, only create schemas for `object`s not for simple types like patterned strings
+- ensure that there is a `meta:license` at the top of the schema
+- use JSON Schema `draft-6`
+- provide a `description` and `title` for each schema and each property
+- have the `title` at the top of the schema, so that it can be found without scrolling
+- make sure you have an example for every schema
+- all properties must have a specific type, while JSON-Schema does allow variability in types in cases like enumerations, concrete types are required in XDM
+- restrict the values of `string` properties as much as appropriate for the domain. `minLength`, `maxLength`, `pattern`, and `format` all can help with that.
+- don't restrict values of `string` properties beyond the constraints of the domain, e.g. don't set a `maxLength` of 255, just because your current database uses a `VARCHAR(255)` default
+- run `npm test` before you make a pull request
+- convention is that property names are in camelCase, when they appear in JSON
+- Acronyms and abbreviations in camelCase like ID, API, JSON are also capitalized in camelCase, such as `documentID`
+- When combining two acronyms, use lowercase for the first and uppercase for the second, such as `dmaID`
+- don't invent your own `ID` attributes, use the `@id` convention
+- don't invent your own `type` attributes, use the `@type` convention
+- when using `enum` in JSON schema, document all values using `meta:enum`
+- when working with "soft enums" or "open enumerations", use `meta:enum` to document all known values
 
 Run `npm run lint` before committing. The `lint` command is able to fix some easy styling issues, including:
 
-* intent: 2 spaces
-* line breaks
-* spaces around delimiters
-* breaks long lines where possible
+- intent: 2 spaces
+- line breaks
+- spaces around delimiters
+- breaks long lines where possible
 
 `npm lint` uses [Prettier](https://prettier.io), which offers integrations for consistent formatting for many editors and IDEs.
 
@@ -377,19 +377,19 @@ Namespaces _should not_ be used to organize or group concepts within a grammar. 
 
 Each schema should contains the enum property `meta:status` that designates it's stability. The value should be one of the following enumerations:
 
-* `stable` : No open issues and has been in `stabilizing` for 1 month without major changes
-* `stabilizing` : No further major changes are expected
-* `experimental` : Major changes can be expected
-* `deprecated` : Schema is no longer maintained, supported or is superceded by another schema/set of schemas
+- `stable` : No open issues and has been in `stabilizing` for 1 month without major changes
+- `stabilizing` : No further major changes are expected
+- `experimental` : Major changes can be expected
+- `deprecated` : Schema is no longer maintained, supported or is superceded by another schema/set of schemas
 
 ### Other Schema Extensions
 
 XDM is using a couple of custom keywords that are not part of the JSON Schema standard. These include:
 
-* `meta:extensible`: see above, to describe schemas that allow custom properties
-* `meta:auditable`: for schemas that have created and last modified dates
-* `meta:descriptors`: to annotate schemas with additional metadata (see Schema Descriptors above)
-* `meta:enum`: for known values in enums, strings, and as property keys (see below)
+- `meta:extensible`: see above, to describe schemas that allow custom properties
+- `meta:auditable`: for schemas that have created and last modified dates
+- `meta:descriptors`: to annotate schemas with additional metadata (see Schema Descriptors above)
+- `meta:enum`: for known values in enums, strings, and as property keys (see below)
 
 ##### Soft and Hard Enumerations
 
@@ -403,14 +403,14 @@ This means, soft enums are open enumerations that can be extended ad-hoc by XDM 
 
 ## Writing Styleguides
 
-For all writing, please follow the [Adobe I/O style guide](https://www.adobe.io/about/contributing/doc-style_master.html).
+For all writing, please follow the [Adobe I/O style guide](https://github.com/adobeio/styleguide/blob/master/opensource/doc-style.md).
 
 ## How Contributions get Reviewed
 
 The XDM project differentiates between major and minor contributions.
 
-* Minor contributions: contributions that do not change the meaning of the standard, such as corrections to typos, word order or formatting. Contributions to the project's `README.md` or `CONTRIBUTING.md` are also minor contributions.
-* Major contributions: all other contributions.
+- Minor contributions: contributions that do not change the meaning of the standard, such as corrections to typos, word order or formatting. Contributions to the project's `README.md` or `CONTRIBUTING.md` are also minor contributions.
+- Major contributions: all other contributions.
 
 ### Minor Contributions
 

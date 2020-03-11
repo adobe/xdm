@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/context/person-contact",
+  "$id": "https://ns.adobe.com/xdm/context/person-contact-crm",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Profile work details",
   "type": "object",
@@ -14,7 +14,7 @@
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "description": "This mixin is used to capture information regarding person details in context of Business to Business contact.",
   "definitions": {
-    "person-contact": {
+    "person-contact-crm": {
       "properties": {
         "xdm:masterRecordId": {
           "title": "Master Record Id",
@@ -83,7 +83,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "#/definitions/person-contact"
+      "$ref": "#/definitions/person-contact-crm"
     }
   ],
   "meta:status": "experimental"

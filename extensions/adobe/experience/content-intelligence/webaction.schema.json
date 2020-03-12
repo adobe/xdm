@@ -20,9 +20,9 @@
           "description": "Type of action. The action can be user generated (click, expand) or dynamic (offer loaded).",
           "type": "string",
           "meta:enum": {
-            "click":  "Click event has occured on the page. It can be link click or click on a web element.",
-            "expand": "Expand event occured on container web elements (accordion)",
-            "collapse":  "Collapse event occured on container web elements (accordion)",
+            "click": "Click event has occured on the page. It can be link click or click on a web element.",
+            "show": "Show event occured on container web elements (accordion, tabs)",
+            "hide": "Hide event occured on container web elements (accordion, tabs)",
             "offer": "Personalized content (offer) was dynamically loaded in DOM"
           }
         },

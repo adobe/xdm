@@ -28,13 +28,16 @@
         },
         "element": {
           "title": "Element",
-          "description": "The target element metadata. For 'clickEvent' this is the target element. For 'offerLoaded' this could be the targeted element or empty if the targeted element is defined in the 'context'",
+          "description": "The target element metadata. For 'click' event this is the target element. For 'offer' event this is the web element corresponding to the loaded offer.",
           "$ref": "https://ns.adobe.com/experience/content-intelligence/webelement"
         },
         "context": {
           "title": "Context",
-          "description": "The web context of the actioned element. For 'cliclEvent' this represents the parent element and its siblings. For 'offerLoaded' this represents the targeted element with offers",
-          "$ref": "https://ns.adobe.com/experience/content-intelligence/webcontainer"
+          "description": "A collection of contextual elements for the actioned item. For 'click' event this represents the collection of contextual elements which could be the siblings or surrounding (unrelated) elements of the target. For 'offer' event this contains the targeted element encapsulating the offers",
+          "type": "array",
+          "items": {
+            "$ref": "https://ns.adobe.com/experience/content-intelligence/webelement"
+          }
         }
       }
     }

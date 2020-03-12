@@ -26,6 +26,11 @@
           "type": "string",
           "description": "The friendly, human-readable name of the timed media asset."
         },
+        "id3:Audio": {
+          "title": "Audio",
+          "description": "Metadata specific to audio content (record label, radio station, etc.).",
+          "$ref": "https://id3.org/id3v2.4/audio"
+        },
         "xmpDM:duration": {
           "title": "Media length runtime",
           "type": "integer",
@@ -45,6 +50,17 @@
           "title": "Stream format",
           "type": "string",
           "description": "Free-form format of the stream for example, short or long."
+        },
+        "xdm:streamType": {
+          "description": "The type of the media stream",
+          "type": "string",
+          "default": "video",
+          "enum": ["audio", "video", "gaming"],
+          "meta:enum": {
+            "audio": "An audio stream (e.g. podcast, audiobook, radio stream).",
+            "video": "A video stream (e.g. Video-On-Demand, live event stream, downloaded movie).",
+            "gaming": "A gaming stream (e.g. Twitch, Hitbox)."
+          }
         },
         "iptc4xmpExt:Season": {
           "title": "Season",

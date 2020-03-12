@@ -24,6 +24,8 @@
       "xdm:primaryAssetReference": {
         "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234430",
         "dc:title": "Floki Begs Helga for Freedom",
+        "dc:creator": "Video Author",
+        "dc:publisher": "tvonline",
         "xmpDM:duration": 87,
         "iptc4xmpExt:Series": {
           "iptc4xmpExt:Name": "tv_highlights",
@@ -31,6 +33,7 @@
         },
         "xdm:showType": "episode",
         "xdm:streamFormat": "long",
+        "xdm:streamType": "video",
         "iptc4xmpExt:Season": {
           "iptc4xmpExt:Number": 1.0
         },
@@ -55,6 +58,8 @@
         "xdm:playerName": "watchsport",
         "xdm:broadcastChannel": "WatchSportTV",
         "xdm:broadcastContentType": "VOD",
+        "xdm:videoSegment": "3-10",
+        "xdm:path": "id:arg:episode:ntvr.com:dfb53-4ce7",
         "xdm:streamFormat": "short",
         "xdm:playerSDKVersion": {
           "xdm:version": "1.0.8"
@@ -62,7 +67,8 @@
         "xdm:broadcastNetwork": "ntwu",
         "xdm:adLoadType": "2",
         "xdm:sourceFeed": "http%3A%2F%2Fvod01.link.net%2Fhls%2Fvu%2F9083406%2FVUBX0280890243544980_38_3_M_HD.m3u8",
-        "xdm:sessionTimeout": 1800
+        "xdm:sessionTimeout": 1800,
+        "xdm:downloadedPlayback": false
       }
     }
   },
@@ -70,6 +76,8 @@
     "xdm:adAssetReference": {
       "@id": "https://data.adobe.io/entities/ad-id/AD1",
       "dc:title": "adNumber1",
+      "xdm:advertiser": "AdCompany",
+      "xdm:campaign": "731123",
       "xmpDM:duration": 10
     },
     "xdm:adAssetViewDetails": {

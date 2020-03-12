@@ -66,9 +66,29 @@
           "description": "Indicates the user abandoned the media stream before the first frame for example, during the pre-roll ad break, or due to an error while loading the content from the CDN."
         },
         "xdm:totalTimePlayed": {
-          "title": "Content play",
+          "title": "Total Time Played",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Describes the total amount of time spent by a user on a specific timed media asset, which includes time spent watching ads."
+        },
+        "xdm:uniqueTimePlayed": {
+          "title": "Unique Time Played",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Describes the sum of the unique intervals seen by a user on a timed media asset - i.e. the length playback intervals viewed multiple times are only counted once."
+        },
+        "xdm:averageMinuteAudience": {
+          "title": "Average Minute Audience",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Describes the average content time spent for a specific media item - i.e. the total content time spent divided by the length for all of the playback sessions."
+        },
+        "xdm:adCount": {
+          "title": "Ad count",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "The number of ads started during the playback."
+        },
+        "xdm:chapterCount": {
+          "title": "Chapter count",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "The number of chapters started during the playback."
         },
         "xdm:progress10": {
           "title": "10% Progress marker",
@@ -109,6 +129,16 @@
           "title": "Total pause duration",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Describes the duration in seconds in which playback was paused by the user."
+        },
+        "xdm:idp": {
+          "title": "MVPD Identifier",
+          "type": "string",
+          "description": "The MVPD (Multichannel Video Programming Distributor) provided via authentication. [https://en.wikipedia.org/?title=MVPD]"
+        },
+        "xdm:mediaAuth": {
+          "title": "Media authorized",
+          "type": "string",
+          "description": "The user has been authorized via authentication."
         }
       },
       "required": [

@@ -38,7 +38,7 @@ class Converter extends EventEmitter {
       if (id.indexOf(".com/experience") != -1) id = id.replace("https://ns.", "").replace("http://ns.", "").replace(".com","") //more logic here needed to extract other domains in the future
       return id.replace("https://ns.adobe.com/xdm/", "").replace("http://ns.adobe.com/xdm/", "")
                .replace("http://schema.org/", "external/schema/").replace("http://www.iptc.org/","external/iptc/")
-               .replace("http://ns.adobe.com/adobecloud/core/1.0", "external/repo/commmon").toLowerCase();
+               .replace("https://id3.org/id3v2.4/", "external/id3/").replace("http://ns.adobe.com/adobecloud/core/1.0", "external/repo/commmon").toLowerCase();
     };
 
 

@@ -18,6 +18,13 @@
       "xdm:value": 1.0
     }
   },
+  "xdm:adAssetReference": {
+    "@id": "https://data.adobe.io/entities/ad-id/AD1",
+    "dc:title": "adNumber2",
+    "xdm:advertiser": "Sample advertiser",
+    "xdm:campaign": "Sample campaign",
+    "xmpDM:duration": 10
+  },
   "xdm:firstQuartiles": {
     "xdm:value": 1.0
   }

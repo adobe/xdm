@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/context/webelement",
+  "$id": "https://ns.adobe.com/experience/content-intelligence/webelement",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Content Intelligence Web element",
   "type": "object",
@@ -36,7 +36,9 @@
           "type": "string",
           "format": "date-time",
           "meta:usereditable": false,
-          "examples": ["2004-10-23T12:00:00-06:00"],
+          "examples": [
+            "2004-10-23T12:00:00-06:00"
+          ],
           "description": "The server date and time when the resource was last modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The date time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\"."
         },
         "xdm:type": {
@@ -58,7 +60,7 @@
         "xdm:asset": {
           "title": "Asset",
           "description": "The asset referred by the web element.",
-          "$ref": "https://ns.adobe.com/xdm/context/webasset"
+          "$ref": "https://ns.adobe.com/experience/content-intelligence/webasset"
         },
         "xdm:linkUrl": {
           "title": "LinkUrl",
@@ -115,4 +117,3 @@
   ],
   "meta:status": "experimental"
 }
-

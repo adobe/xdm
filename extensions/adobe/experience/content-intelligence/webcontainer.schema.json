@@ -14,6 +14,9 @@
   "meta:extends": [
     "https://ns.adobe.com/experience/content-intelligence/webelement#/definitions/webelement"
   ],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Web element which is also a container of other web elements",
   "definitions": {
     "webcontainer": {

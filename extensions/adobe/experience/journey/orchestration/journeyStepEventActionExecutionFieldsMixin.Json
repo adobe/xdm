@@ -1,0 +1,228 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/journey/orchestration/journeyStepEventCommonFields",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Journey Orchestration Step Data Fetch Fields",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
+  "description": "This Mixin contains the common Jounney Metadata information ",
+  "definitions": {
+    "journeyStepEventCommonFields": {
+      "properties": {
+        "https://ns.adobe.com/experience/journey/orchestration": {
+          "title": "Journey Orchestration for creating user journey.",
+          "type": "object",
+          "properties": {
+            "entrance":{
+              "title":"entrance",
+              "description":"Indicate if the user has entered the journey. If not present, assuming that the value is false",
+              "type":"boolean",
+              "isRequired":false,
+              "default":true,
+              "meta:xdmType":"boolean"
+            },
+            "reentrance":{
+              "title":"reentrance",
+              "description":"Indicate if the user has reentered the journey with the same instance. If not present, assuming that the value is false",
+              "type":"boolean",
+              "isRequired":false,
+              "meta:xdmType":"boolean"
+            },
+            "instanceEnded":{
+              "title":"instanceEnded",
+              "description":"Indicate if the instance is ended (sucessfully or not)",
+              "type":"boolean",
+              "isRequired":false,
+              "meta:xdmType":"boolean"
+            },
+            "eventId":{
+              "title":"eventId",
+              "description":"Event id in processing, for the step processing",
+              "type":"string",
+              "isRequired":false,
+              "meta:xdmType":"string"
+            },
+            "nodeId":{
+              "title":"nodeId",
+              "description":"client node id",
+              "type":"string",
+              "isRequired":false,
+              "meta:xdmType":"string"
+            },
+            "stepId":{
+              "title":"stepId",
+              "description":"Unique id of the step that is currently in processing",
+              "type":"string",
+              "isRequired":false,
+              "meta:xdmType":"string"
+            },
+            "stepName":{
+              "title":"stepName",
+              "description":"Name of the step that is currently in processing",
+              "type":"string",
+              "isRequired":false,
+              "meta:xdmType":"string"
+            },
+            "stepType":{
+              "title":"stepType",
+              "description":"Type of the step",
+              "type":"string",
+              "isRequired":false,
+              "meta:xdmType":"string"
+            },
+            "stepStatus":{
+              "title":"stepStatus",
+              "description":"Status of the step, representing in which shape the step is, when its processing has been done",
+              "type":"string",
+              "isRequired":false,
+              "meta:xdmType":"string"
+            },
+            "journeyId":{
+              "title":"journeyId",
+              "description":"ID of the journey",
+              "type":"string",
+              "isRequired":false,
+              "meta:xdmType":"string"
+            },
+            "journeyVersionId":{
+              "title":"journeyVersionId",
+              "description":"ID of the journey version. This id represents the identity reference to the journey, in case of the journeyStepEvent",
+              "type":"string",
+              "isRequired":false,
+              "meta:xdmType":"string"
+            },
+            "journeyVersionName":{
+              "title":"journeyVersionName",
+              "description":"Name of the journey version",
+              "type":"string",
+              "isRequired":false,
+              "meta:xdmType":"string"
+            },
+            "journeyVersion":{
+              "title":"journeyVersion",
+              "description":"Version of the journey version",
+              "type":"string",
+              "isRequired":false,
+              "meta:xdmType":"string"
+            },
+            "instanceId":{
+              "title":"instanceId",
+              "description":"Internal ID of the journey instance",
+              "type":"string",
+              "isRequired":false,
+              "meta:xdmType":"string"
+            },
+            "externalKey":{
+              "title":"externalKey",
+              "description":"External key extracted from the event to process it",
+              "type":"string",
+              "isRequired":false,
+              "meta:xdmType":"string"
+            },
+            "parentStepId":{
+              "title":"parentStepId",
+              "description":"Step ID of the parent of the current processed step in the instance",
+              "type":"string",
+              "isRequired":false,
+              "meta:xdmType":"string"
+            },
+            "parentStepName":{
+              "title":"parentStepName",
+              "description":"Step name of the parent of the current step.",
+              "type":"string",
+              "isRequired":false,
+              "meta:xdmType":"string"
+            },
+            "parentTransitionId":{
+              "title":"parentTransitionId",
+              "description":"Id of the transition which has brought the instance to the processed step",
+              "type":"string",
+              "isRequired":false,
+              "meta:xdmType":"string"
+            },
+            "parentTransitionName":{
+              "title":"parentTransitionName",
+              "description":"Name of the transition which has brought the instance to the processed step",
+              "type":"string",
+              "isRequired":false,
+              "meta:xdmType":"string"
+            },
+            "inTest":{
+              "title":"inTest",
+              "description":"Whether this journey is in test mode or not",
+              "type":"boolean",
+              "isRequired":false,
+              "meta:xdmType":"boolean"
+            },
+            "processingTime":{
+              "title":"processingTime",
+              "description":"total time in millis from the instance step entrance to the end of the processing",
+              "type":"integer",
+              "isRequired":false,
+              "minimum":-9007199254740991,
+              "maximum":9007199254740991,
+              "meta:xdmType":"long"
+            },
+            "instanceType":{
+              "title":"instanceType",
+              "description":"indicate the instance type, if it is batch or unitary",
+              "type":"string",
+              "isRequired":false,
+              "meta:xdmType":"string"
+            },
+            "recurrenceIndex":{
+              "title":"recurrenceIndex",
+              "description":"Index of the recurrence if the journey is batch and recurring (first run has recurrenceIndex = 1)",
+              "type":"integer",
+              "isRequired":false,
+              "meta:xdmType":"long"
+            },
+            "isBatchToUnitary":{
+              "title":"isBatchToUnitary",
+              "description":"Indicates if this unitary instance has been triggered from a batch instance",
+              "type":"boolean",
+              "isRequired":false,
+              "meta:xdmType":"boolean"
+            },
+            "batchExternalKey":{
+              "title":"batchExternalKey",
+              "description":"If the instance has been triggered from a batch instance, batch external key",
+              "type":"string",
+              "isRequired":false,
+              "meta:xdmType":"string"
+            },
+            "batchInstanceId":{
+              "title":"batchInstanceId",
+              "description":"If the instance has been triggered from a batch instance, batch instance id",
+              "type":"string",
+              "isRequired":false,
+              "meta:xdmType":"string"
+            },
+            "batchUnitaryBranchId":{
+              "title":"batchUnitaryBranchId",
+              "description":"If the instance has been triggered from a batch instance, unitary branch id",
+              "type":"string",
+              "isRequired":false,
+              "meta:xdmType":"string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/journeyStepEventCommonFields"
+    }
+  ],
+  "meta:status": "experimental"
+}

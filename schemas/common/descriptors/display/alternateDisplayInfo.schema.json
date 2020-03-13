@@ -43,18 +43,10 @@
             }
           }
         },
-        "xdm:enum" : {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
         "meta:enum": {
           "type": "object",
           "patternProperties": {
-            ".+": {
-              "type": "string"
-            }
+            "type": "string"
           }
         }
       },
@@ -64,9 +56,6 @@
         },
         {
           "required": ["xdm:description"]
-        },
-        {
-          "required": ["xdm:enum"]
         },
         {
           "required": ["meta:enum"]

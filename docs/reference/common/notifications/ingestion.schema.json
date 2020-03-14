@@ -106,6 +106,14 @@
                     "description": "The unix timestamp (in milliseconds) when the batch processing action was completed. Completed - Started should yield the total processing time.",
                     "maximum": 14500000000000
                 },
+                "xdm:succesfulRecords": {
+                    "$ref": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "Number of records successfully ingested."
+                },
+                "xdm:failedRecords": {
+                    "$ref": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "Number of records failed to ingest."
+                },
                 "xdm:errors": {
                     "type": "array",
                     "description": "A list of problems encountered during this ingestion process.",

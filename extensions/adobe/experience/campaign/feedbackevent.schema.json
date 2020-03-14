@@ -15,12 +15,12 @@
   "definitions": {
     "feedbackevent": {
       "properties": {
-        "xdm:feedbackType": {
+        "https://ns.adobe.com/experience/campaign/feedbackType": {
           "title": "Feedback Type",
           "type": "string",
           "description": "The type of message event."
         },
-        "xdm:retryCount": {
+        "https://ns.adobe.com/experience/campaign/retryCount": {
           "title": "Retry Count",
           "type": "integer",
           "description": "Number of failed attempts before the current event."
@@ -129,10 +129,13 @@
             }
           }
         },
-        "xdm:solutionContext": {
+        "https://ns.adobe.com/experience/campaign/solutionContext": {
           "title": "Solution Context",
-          "description": "Solution specific data.",
-          "$ref": "https://ns.adobe.com/experience/analytics/keyedlist"
+          "type": "array",
+          "description": "List of solution specific key value pairs.",
+          "items": {
+            "$ref": "https://ns.adobe.com/experience/analytics/keyvalue"
+          }
         },
         "https://ns.adobe.com/experience/campaign/channel": {
           "title": "Delivery channel",

@@ -20,7 +20,7 @@
           "type": "string",
           "description": "The type of message event."
         },
-        "https://ns.adobe.com/experience/campaign/retryCount": {
+        "xdm:retryCount": {
           "title": "Retry Count",
           "type": "integer",
           "description": "Number of failed attempts before the current event."

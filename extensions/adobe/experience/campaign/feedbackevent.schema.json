@@ -15,7 +15,7 @@
   "definitions": {
     "feedbackevent": {
       "properties": {
-        "https://ns.adobe.com/experience/campaign/feedbackType": {
+        "https://ns.adobe.com/experience/campaign/feedback/type": {
           "title": "Feedback Type",
           "type": "string",
           "description": "The type of message event."
@@ -25,7 +25,7 @@
           "type": "integer",
           "description": "Number of failed attempts before the current event."
         },
-        "https://ns.adobe.com/experience/campaign/delivery": {
+        "https://ns.adobe.com/experience/campaign/feedback/delivery": {
           "title": "The campaign activity originating a message to a recipient.",
           "type": "object",
           "properties": {
@@ -61,7 +61,7 @@
             }
           }
         },
-        "https://ns.adobe.com/experience/campaign/message": {
+        "https://ns.adobe.com/experience/campaign/feedback/message": {
           "title": "A single message sent to a recipient.",
           "type": "object",
           "properties": {
@@ -70,17 +70,17 @@
               "type": "string",
               "description": "Identifier of the message."
             },
-            "xdm:subject": {
+            "subject": {
               "title": "Message Subject",
               "type": "string",
               "description": "Subject line of the message."
             },
-            "xdm:size": {
+            "size": {
               "title": "Message Size",
               "type": "integer",
               "description": "Size in bytes of the message."
             },
-            "https://ns.adobe.com/experience/campaign/recipient": {
+            "https://ns.adobe.com/experience/campaign/feedback/recipient": {
               "title": "The recipient of this message",
               "type": "object",
               "properties": {
@@ -98,7 +98,7 @@
             }
           }
         },
-        "https://ns.adobe.com/experience/campaign/messageFailure": {
+        "https://ns.adobe.com/experience/campaign/feedback/messageFailure": {
           "title": "Message Failure",
           "type": "object",
           "properties": {
@@ -129,7 +129,7 @@
             }
           }
         },
-        "https://ns.adobe.com/experience/campaign/solutionContext": {
+        "https://ns.adobe.com/experience/campaign/feedback/solutionContext": {
           "title": "Solution Context",
           "type": "array",
           "description": "List of solution specific key value pairs.",
@@ -137,7 +137,7 @@
             "$ref": "https://ns.adobe.com/experience/analytics/keyvalue"
           }
         },
-        "https://ns.adobe.com/experience/campaign/channel": {
+        "https://ns.adobe.com/experience/campaign/feedback/channel": {
           "title": "Delivery channel",
           "type": "object",
           "properties": {
@@ -146,20 +146,20 @@
               "type": "string",
               "description": "Classifies whether the channel is email, push, sms."
             },
-            "https://ns.adobe.com/experience/campaign/email": {
+            "https://ns.adobe.com/experience/campaign/feedback/email": {
               "title": "E-mail Channel",
               "type": "object",
               "properties": {
-                "https://ns.adobe.com/experience/campaign/interactions": {
+                "https://ns.adobe.com/experience/campaign/feedback/interactions": {
                   "title": "User Interactions",
                   "type": "object",
                   "properties": {
-                    "xdm:fbType": {
+                    "xdm:spamType": {
                       "title": "FB Type",
                       "type": "string",
                       "description": "Type of spam report entered against this message (see RFC 5965 § 7.3)."
                     },
-                    "xdm:reportBy": {
+                    "xdm:reportedBy": {
                       "title": "Report By",
                       "type": "string",
                       "description": "E-mail Address of the entity reporting this message as spam."
@@ -176,7 +176,7 @@
                     }
                   }
                 },
-                "https://ns.adobe.com/experience/campaign/operationalContext": {
+                "https://ns.adobe.com/experience/campaign/feedback/operationalContext": {
                   "title": "Operational Context",
                   "type": "object",
                   "properties": {
@@ -185,7 +185,7 @@
                       "type": "string",
                       "description": "Outbound IP address of the customer used to deliver the message."
                     },
-                    "xdm:deliveryMethod": {
+                    "xdm:sendProtocol": {
                       "title": "Delivery Method",
                       "type": "string",
                       "description": "Protocol by which the message is delivered."

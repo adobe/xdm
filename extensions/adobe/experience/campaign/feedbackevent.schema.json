@@ -155,12 +155,12 @@
                   "type": "object",
                   "properties": {
                     "xdm:spamType": {
-                      "title": "FB Type",
+                      "title": "Spam Type",
                       "type": "string",
                       "description": "Type of spam report entered against this message (see RFC 5965 § 7.3)."
                     },
                     "xdm:reportedBy": {
-                      "title": "Report By",
+                      "title": "Reported By",
                       "type": "string",
                       "description": "E-mail Address of the entity reporting this message as spam."
                     },
@@ -186,7 +186,7 @@
                       "description": "Outbound IP address of the customer used to deliver the message."
                     },
                     "xdm:sendProtocol": {
-                      "title": "Delivery Method",
+                      "title": "Send Protocol",
                       "type": "string",
                       "description": "Protocol by which the message is delivered."
                     },

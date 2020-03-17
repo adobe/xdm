@@ -80,7 +80,7 @@
               "type": "integer",
               "description": "Size in bytes of the message."
             },
-            "https://ns.adobe.com/experience/campaign/feedback/recipient": {
+            "recipient": {
               "title": "The recipient of this message",
               "type": "object",
               "properties": {
@@ -146,11 +146,11 @@
               "type": "string",
               "description": "Classifies whether the channel is email, push, sms."
             },
-            "https://ns.adobe.com/experience/campaign/feedback/email": {
+            "email": {
               "title": "E-mail Channel",
               "type": "object",
               "properties": {
-                "https://ns.adobe.com/experience/campaign/feedback/interactions": {
+                "interactions": {
                   "title": "User Interactions",
                   "type": "object",
                   "properties": {
@@ -176,7 +176,7 @@
                     }
                   }
                 },
-                "https://ns.adobe.com/experience/campaign/feedback/operationalContext": {
+                "operationalContext": {
                   "title": "Operational Context",
                   "type": "object",
                   "properties": {

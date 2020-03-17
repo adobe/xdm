@@ -73,24 +73,6 @@
           "type": "string",
           "description": "The element's text."
         },
-        "xdm:activeItem": {
-          "title": "Active item",
-          "type": "string",
-          "description": "The active item name, usually for container components."
-        },
-        "xdm:expandedItems": {
-          "title": "Expanded items",
-          "type": "array",
-          "description": "The expanded items mainly for collapsible elements (accordion)",
-          "items": {
-            "type": "string"
-          }
-        },
-        "xdm:itemsCount": {
-          "title": "Number of items",
-          "type": "number",
-          "description": "The element's number of items."
-        },
         "xdm:tags": {
           "title": "Web element tags",
           "type": "object",

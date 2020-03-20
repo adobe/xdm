@@ -22,7 +22,7 @@
           "description": "Marketo GUID Id.",
           "type": "string"
         },
-		"marketo:instanceId": {
+        "marketo:instanceId": {
           "title": "Instance Identifier",
           "description": "Instance identifier.",
           "type": "string"

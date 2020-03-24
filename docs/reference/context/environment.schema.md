@@ -319,6 +319,7 @@ The value of this property **must** be equal to one of the [known values below](
 | `application` | Application |
 | `iot` | Internet of things |
 | `external` | External system |
+| `widget` | Application extension |
 
 
 

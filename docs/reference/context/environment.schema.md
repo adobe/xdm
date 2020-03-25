@@ -39,7 +39,7 @@ Information about the surrounding situation the event observation occurred, spec
   "xdm:connectionType": "cable",
   "xdm:domain": "verizon.com",
   "xdm:ISP": "Verizon",
-  "xdm:locale": "en-US"
+  "dc:language": "en-US"
 }
 ```
 
@@ -55,7 +55,7 @@ Information about the surrounding situation the event observation occurred, spec
 | [xdm:domain](#xdmdomain) | `string` | Optional | Environment (this schema) |
 | [xdm:ipV4](#xdmipv4) | `string` | Optional | Environment (this schema) |
 | [xdm:ipV6](#xdmipv6) | `string` | Optional | Environment (this schema) |
-| [xdm:locale](#xdmlocale) | `string` | Optional | Environment (this schema) |
+| [dc:language](#dclanguage) | `string` | Optional | Environment (this schema) |
 | [xdm:operatingSystem](#xdmoperatingsystem) | `string` | Optional | Environment (this schema) |
 | [xdm:operatingSystemVendor](#xdmoperatingsystemvendor) | `string` | Optional | Environment (this schema) |
 | [xdm:operatingSystemVersion](#xdmoperatingsystemversion) | `string` | Optional | Environment (this schema) |
@@ -242,26 +242,43 @@ The numerical label assigned to a device participating in a computer network tha
 
 
 
-## xdm:locale
-### Language locale code
+### dc:format Example
 
-The language used in the environment. 
+```json
+"application/vnd.adobe.photoshop"
+```
 
-`xdm:locale`
+
+## dc:language
+### Language
+
+The language of the environment to represent the user's linguistic, geographical, or cultural preferences for data presentation.
+Languages are specified in language code as defined in [IETF RFC 3066](https://www.ietf.org/rfc/rfc3066.txt), which is part of BCP 47, which is used elsewhere in XDM.
+
+`dc:language`
 * is optional
 * type: `string`
+
 * defined in this schema
 
-### xdm:locale Type
+### dc:language Type
 
 
 `string`
-* format: `locale` - Locales are expressed following [RFC BCP47](https://tools.ietf.org/html/bcp47)
+
 
 All instances must conform to this regular expression 
 (test examples [here](https://regexr.com/?expression=%5E((((%5BA-Za-z%5D%7B2%2C3%7D(-(%5BA-Za-z%5D%7B3%7D(-%5BA-Za-z%5D%7B3%7D)%7B0%2C2%7D))%3F)%7C%5BA-Za-z%5D%7B4%7D%7C%5BA-Za-z%5D%7B5%2C8%7D)(-(%5BA-Za-z%5D%7B4%7D))%3F(-(%5BA-Za-z%5D%7B2%7D%7C%5B0-9%5D%7B3%7D))%3F(-(%5BA-Za-z0-9%5D%7B5%2C8%7D%7C%5B0-9%5D%5BA-Za-z0-9%5D%7B3%7D))*(-(%5B0-9A-WY-Za-wy-z%5D(-%5BA-Za-z0-9%5D%7B2%2C8%7D)%2B))*(-(x(-%5BA-Za-z0-9%5D%7B1%2C8%7D)%2B))%3F)%7C(x(-%5BA-Za-z0-9%5D%7B1%2C8%7D)%2B)%7C((en-GB-oed%7Ci-ami%7Ci-bnn%7Ci-default%7Ci-enochian%7Ci-hak%7Ci-klingon%7Ci-lux%7Ci-mingo%7Ci-navajo%7Ci-pwn%7Ci-tao%7Ci-tay%7Ci-tsu%7Csgn-BE-FR%7Csgn-BE-NL%7Csgn-CH-DE)%7C(art-lojban%7Ccel-gaulish%7Cno-bok%7Cno-nyn%7Czh-guoyu%7Czh-hakka%7Czh-min%7Czh-min-nan%7Czh-xiang)))%24)):
 ```regex
 ^(((([A-Za-z]{2,3}(-([A-Za-z]{3}(-[A-Za-z]{3}){0,2}))?)|[A-Za-z]{4}|[A-Za-z]{5,8})(-([A-Za-z]{4}))?(-([A-Za-z]{2}|[0-9]{3}))?(-([A-Za-z0-9]{5,8}|[0-9][A-Za-z0-9]{3}))*(-([0-9A-WY-Za-wy-z](-[A-Za-z0-9]{2,8})+))*(-(x(-[A-Za-z0-9]{1,8})+))?)|(x(-[A-Za-z0-9]{1,8})+)|((en-GB-oed|i-ami|i-bnn|i-default|i-enochian|i-hak|i-klingon|i-lux|i-mingo|i-navajo|i-pwn|i-tao|i-tay|i-tsu|sgn-BE-FR|sgn-BE-NL|sgn-CH-DE)|(art-lojban|cel-gaulish|no-bok|no-nyn|zh-guoyu|zh-hakka|zh-min|zh-min-nan|zh-xiang)))$
+```
+
+
+
+### dc:language Example
+
+```json
+"en-US"
 ```
 
 

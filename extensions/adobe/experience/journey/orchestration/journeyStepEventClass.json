@@ -1,0 +1,58 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/Journey/orchestration/journeyStepEvent",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Journey Step Event",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/time-series"],
+  "description": "This Class will have Journey Step Fields",
+  "definitions": {
+    "journeyStepEvent": {
+      "properties": {
+        "https://ns.adobe.com/experience/campaign/orchestration": {
+          "title": "Journey Step Event Class ",
+          "type": "object",
+          "properties": {
+            "entrance": {
+              "title": "entrance",
+              "description": "",
+              "type": "boolean",
+              "isRequired": false,
+              "default": true,
+              "meta:xdmType": "boolean"
+            },
+            "reentrance": {
+              "title": "reentrance",
+              "description": "Indicate if the user has reentered the journey with the same instance. If not present, assuming that the value is false",
+              "type": "boolean",
+              "isRequired": false,
+              "meta:xdmType": "boolean"
+            },
+            "instanceEnded": {
+              "title": "instanceEnded",
+              "description": "Indicate if the Journey instance has ended ",
+              "type": "boolean",
+              "isRequired": false,
+              "meta:xdmType": "boolean"
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [{
+    "$ref": "https://ns.adobe.com/xdm/data/time-series"
+  },
+    {
+      "$ref": "#/definitions/journeyStepEvent"
+    }
+  ],
+  "meta:status": "experimental"
+}

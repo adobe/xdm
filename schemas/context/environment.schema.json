@@ -19,12 +19,13 @@
           "title": "Type",
           "type": "string",
           "description": "The type of the application environment.",
-          "enum": ["browser", "application", "iot", "external"],
+          "enum": ["browser", "application", "iot", "external", "widget"],
           "meta:enum": {
             "browser": "Browser",
             "application": "Application",
             "iot": "Internet of things",
-            "external": "External system"
+            "external": "External system",
+            "widget": "Application extension"
           }
         },
         "xdm:browserDetails": {

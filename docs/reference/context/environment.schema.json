@@ -22,13 +22,15 @@
                         "browser",
                         "application",
                         "iot",
-                        "external"
+                        "external",
+                        "widget"
                     ],
                     "meta:enum": {
                         "browser": "Browser",
                         "application": "Application",
                         "iot": "Internet of things",
-                        "external": "External system"
+                        "external": "External system",
+                        "widget": "Application extension"
                     }
                 },
                 "xdm:browserDetails": {

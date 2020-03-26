@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/experience/content-intelligence/webinfo",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Content Intelligence Web information",
+  "title": "Content Intelligence Web Information",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
@@ -18,14 +18,14 @@
   "definitions": {
     "webinfo": {
       "properties": {
-        "webPage": {
+        "xdm:webPage": {
           "title": "Web page details containing its metadata and embedded components",
           "description": "The context of a web element which can be its parent with simblings or simply a web page.",
           "isRequired": false,
-          "$ref": "https://ns.adobe.com/experience/content-intelligence/webcontainer",
+          "$ref": "https://ns.adobe.com/experience/content-intelligence/webpage",
           "type": "object"
         },
-        "webAction": {
+        "xdm:webAction": {
           "title": "Details of web interaction",
           "description": "Defines information about web events and their context.",
           "isRequired": false,

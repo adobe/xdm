@@ -5,42 +5,32 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/content-intelligence/webasset",
+  "$id": "https://ns.adobe.com/experience/content-intelligence/webpage",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Content Intelligence Web Asset",
+  "title": "Content Intelligence Web Page",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "description": "Asset details associated to a web element",
+  "description": "Web page details and containing web elements",
   "definitions": {
-    "webasset": {
+    "webpage": {
       "properties": {
         "xdm:id": {
-          "title": "Asset Id",
+          "title": "Page Id",
+          "type": "string",
           "meta:immutable": true,
           "meta:usereditable": false,
-          "type": "string",
-          "description": "A unique identifier given to every addressable asset in a given repository."
+          "description": "The unique ID of the web page."
         },
         "xdm:name": {
           "meta:usereditable": false,
-          "title": "Asset name",
+          "title": "Page name",
           "type": "string"
         },
         "xdm:path": {
           "meta:usereditable": false,
-          "title": "Asset path",
+          "title": "Page path",
           "type": "string"
-        },
-        "xdm:format": {
-          "meta:usereditable": false,
-          "type": "string",
-          "title": "Asset format",
-          "pattern": "\\w+\\/[-.\\w]+(?:\\+[-.\\w]+)?",
-          "examples": [
-            "application/vnd.adobe.photoshop"
-          ],
-          "description": "The physical or digital manifestation of the resource. Typically, Format should include the media-type of the resource. Format may be used to determine the software, hardware or other equipment needed to display or operate the resource. Recommended best practice is to select a value from a controlled vocabulary (for example, the list of [Internet Media Types](http://www.iana.org/ assignments/media-types/) defining computer media formats)."
         },
         "xdm:modifyDate": {
           "type": "string",
@@ -51,17 +41,41 @@
           ],
           "description": "The server date and time when the resource was last modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The date time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\"."
         },
-        "xdm:url": {
-          "title": "Url",
+        "xdm:type": {
+          "title": "Type",
           "type": "string",
-          "format": "uri",
-          "description": "The absolute URL of the asset."
+          "description": "The type of the component.",
+          "meta:usereditable": false
+        },
+        "xdm:template": {
+          "title": "Template",
+          "type": "string",
+          "description": "The path to the page's template"
+        },
+        "xdm:language": {
+          "title": "Language",
+          "type": "string",
+          "description": "The language of of the page"
+        },
+        "xdm:text": {
+          "title": "Text",
+          "type": "string",
+          "description": "Page description."
         },
         "xdm:tags": {
-          "title": "Asset tags",
+          "title": "Web page tags",
           "type": "array",
+          "description": "The page tags and their confidence score in subunitary value format. A confidence score of 1 means the tag is predefined. Other values represent predicted confidence.",
           "items": {
             "$ref": "https://ns.adobe.com/experience/content-intelligence/contenttag"
+          }
+        },
+        "xdm:elements": {
+          "title": "Web elements",
+          "description": "The list of containing web elements.",
+          "type": "array",
+          "items": {
+            "$ref": "https://ns.adobe.com/experience/content-intelligence/webelement"
           }
         }
       }
@@ -69,12 +83,12 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/webasset"
+      "$ref": "#/definitions/webpage"
     }
   ],
   "required": [
     "xdm:id",
-    "xdm:path"
+    "xdm:type"
   ],
   "meta:status": "experimental"
 }

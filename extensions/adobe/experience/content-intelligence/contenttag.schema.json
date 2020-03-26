@@ -1,0 +1,49 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/content-intelligence/contenttag",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Content Intelligence Content Tag",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "A tag assigned to an asset or webelement. It is defined by name, type and confidence score",
+  "definitions": {
+    "contenttag": {
+      "properties": {
+        "xdm:name": {
+          "title": "Tag name",
+          "meta:usereditable": false,
+          "type": "string",
+          "description": "The name of the tag."
+        },
+        "xdm:confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Confidence score value."
+        },
+        "xdm:type": {
+          "meta:usereditable": false,
+          "title": "Tag type",
+          "type": "string",
+          "description": "Tag type with following values: predicted, custom, cqTag"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/contenttag"
+    }
+  ],
+  "required": [
+    "xdm:name",
+    "xdm:confidence"
+  ],
+  "meta:status": "experimental"
+}

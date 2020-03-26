@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/experience/content-intelligence/webelement",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Content Intelligence Web element",
+  "title": "Content Intelligence Web Element",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
@@ -15,24 +15,24 @@
   "definitions": {
     "webelement": {
       "properties": {
-        "repo:id": {
+        "xdm:id": {
           "title": "Element Id",
           "type": "string",
           "meta:immutable": true,
           "meta:usereditable": false,
           "description": "The unique ID of the web element."
         },
-        "repo:name": {
+        "xdm:name": {
           "meta:usereditable": false,
           "title": "Asset name",
           "type": "string"
         },
-        "repo:path": {
+        "xdm:path": {
           "meta:usereditable": false,
           "title": "Asset path",
           "type": "string"
         },
-        "repo:modifyDate": {
+        "xdm:modifyDate": {
           "type": "string",
           "format": "date-time",
           "meta:usereditable": false,
@@ -57,6 +57,11 @@
           "type": "string",
           "description": "The path to the element's template"
         },
+        "xdm:language": {
+          "title": "Language",
+          "type": "string",
+          "description": "The language of of the web element"
+        },
         "xdm:asset": {
           "title": "Asset",
           "description": "The asset referred by the web element.",
@@ -75,15 +80,34 @@
         },
         "xdm:tags": {
           "title": "Web element tags",
-          "type": "object",
-          "meta:xdmType": "map",
+          "type": "array",
           "description": "The element tags and their confidence score in subunitary value format. A confidence score of 1 means the tag is predefined. Other values represent predicted confidence.",
-          "additionalProperties": {
-            "type": "number",
-            "minimum": 0,
-            "maximum": 1,
-            "description": "Confidence score value."
+          "items": {
+            "$ref": "https://ns.adobe.com/experience/content-intelligence/contenttag"
           }
+        },
+        "xdm:parentId": {
+          "title": "Parent ID",
+          "type": "string",
+          "description": "The ID of the parent webelement."
+        },
+        "xdm:activeItem": {
+          "title": "Active item",
+          "type": "string",
+          "description": "The active item name, usually for container components."
+        },
+        "xdm:expandedItems": {
+          "title": "Expanded items",
+          "type": "array",
+          "description": "The expanded items mainly for collapsible elements (accordion)",
+          "items": {
+            "type": "string"
+          }
+        },
+        "xdm:itemsCount": {
+          "title": "Number of items",
+          "type": "number",
+          "description": "The element's number of items."
         }
       }
     }
@@ -94,7 +118,7 @@
     }
   ],
   "required": [
-    "repo:id",
+    "xdm:id",
     "xdm:type"
   ],
   "meta:status": "experimental"

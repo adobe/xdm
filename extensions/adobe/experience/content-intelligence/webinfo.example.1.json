@@ -1,0 +1,531 @@
+{
+  "xdm:webAction": {
+    "xdm:type": "click",
+    "xdm:element": {
+      "xdm:path": "/content/core-components-examples/library/container/carousel/jcr:content/root/responsivegrid/demo_181646866/component/carousel/image_1533234440",
+      "xdm:name": "Gray lava rock formation",
+      "xdm:id": "image-9594301bf3",
+      "xdm:type": "image",
+      "xdm:asset": {
+        "xdm:path": "/content/dam/core-components-examples/library/sample-assets/lava-rock-formation.jpg",
+        "xdm:modifyDate": "2020-03-26T12: 01: 40.105Z",
+        "xdm:name": "lava-rock-formation.jpg",
+        "xdm:id": "c58c09f6-e382-4698-bfbd-e8c8d37712c8",
+        "xdm:format": "image/jpeg",
+        "xdm:tags": [
+          {
+            "name": "white",
+            "confidence": 1
+          },
+          {
+            "name": "winter",
+            "confidence": 0.8
+          }
+        ]
+      },
+      "xdm:parentId": "carousel-efa1eac711-item-9594301bf3"
+    },
+    "xdm:context": [
+      {
+        "xdm:path": "/content/core-components-examples/library/container/carousel/jcr:content/root/responsivegrid/demo_181646866/component/carousel/image",
+        "xdm:id": "image-7d48db1522",
+        "xdm:type": "image",
+        "xdm:asset": {
+          "xdm:path": "/content/dam/core-components-examples/library/sample-assets/lava-into-ocean.jpg",
+          "xdm:modifyDate": "2020-03-26T12: 01: 42.288Z",
+          "xdm:name": "lava-into-ocean.jpg",
+          "xdm:id": "0f54e1b5-535b-45f7-a46b-35abb19dd6bc",
+          "xdm:format": "image/jpeg",
+          "xdm:tags": [
+            {
+              "name": "white",
+              "confidence": 1
+            },
+            {
+              "name": "winter",
+              "confidence": 0.8
+            }
+          ]
+        },
+        "xdm:parentId": "carousel-efa1eac711-item-7d48db1522"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library/container/carousel/jcr:content/root/responsivegrid/demo_181646866/component/carousel/image_1622336496",
+        "xdm:name": "Snowy mountain glacier",
+        "xdm:id": "image-d7eedd8d87",
+        "xdm:type": "image",
+        "xdm:asset": {
+          "xdm:path": "/content/dam/core-components-examples/library/sample-assets/snowy-mountain-glacier.jpg",
+          "xdm:modifyDate": "2020-03-26T12: 01: 40.331Z",
+          "xdm:name": "snowy-mountain-glacier.jpg",
+          "xdm:id": "45c6ee92-90e1-4af2-af69-b6dcbc7daeb7",
+          "xdm:format": "image/jpeg",
+          "xdm:tags": [
+            {
+              "name": "white",
+              "confidence": 1
+            },
+            {
+              "name": "winter",
+              "confidence": 0.8
+            }
+          ]
+        },
+        "xdm:parentId": "carousel-efa1eac711-item-d7eedd8d87"
+      }
+    ]
+  },
+  "xdm:webPage": {
+    "xdm:id": "page-113d229837",
+    "xdm:type": "page",
+    "xdm:language": "en-us",
+    "xdm:path": "/content/we-retail/us/en/products/equipment/snow-sports/midweight-fleece-gloves/jcr:content",
+    "xdm:name": "Midweight Fleece Gloves",
+    "xdm:template": "/conf/we-retail/settings/wcm/templates/product-page",
+    "xdm:elements": [
+      {
+        "xdm:path": "/content/core-components-examples/library/templating/navigation/jcr:content/root/responsivegrid/demo/info",
+        "xdm:activeItem": "tabs-9ebc28c5fc-item-b7234c5d61",
+        "xdm:name": "info",
+        "xdm:id": "tabs-9ebc28c5fc",
+        "xdm:type": "tabs",
+        "xdm:itemsCount": 3,
+        "xdm:parentId": "page-d4bbc7dcc9"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library/templating/navigation/jcr:content/root/responsivegrid/demo/info/properties",
+        "xdm:name": "properties",
+        "xdm:id": "tabs-9ebc28c5fc-item-fc22d11006",
+        "xdm:type": "resourceListItem",
+        "xdm:title": "Properties",
+        "xdm:parentId": "tabs-9ebc28c5fc"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library/templating/navigation/jcr:content/root/responsivegrid/demo/info/markup",
+        "xdm:name": "markup",
+        "xdm:id": "tabs-9ebc28c5fc-item-1918209d43",
+        "xdm:type": "resourceListItem",
+        "xdm:title": "Markup",
+        "xdm:parentId": "tabs-9ebc28c5fc"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library/templating/navigation/jcr:content/root/responsivegrid/demo/info/json",
+        "xdm:name": "json",
+        "xdm:id": "tabs-9ebc28c5fc-item-b7234c5d61",
+        "xdm:type": "resourceListItem",
+        "xdm:title": "JSON",
+        "xdm:parentId": "tabs-9ebc28c5fc"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library/templating/navigation/jcr:content/root/responsivegrid/demo/component/navigation",
+        "xdm:name": "navigation",
+        "xdm:id": "navigation-66efbaea3b",
+        "xdm:type": "navigation",
+        "xdm:itemsCount": 1,
+        "xdm:parentId": "tabs-9ebc28c5fc-item-1918209d43"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library",
+        "xdm:name": "library",
+        "xdm:linkUrl": "/content/core-components-examples/library.html",
+        "xdm:id": "navigation-66efbaea3b-item-2d654c795a",
+        "xdm:text": "Component Library",
+        "xdm:type": "navigationItem",
+        "xdm:title": "Component Library",
+        "xdm:parentId": "navigation-66efbaea3b"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library/templating",
+        "xdm:name": "templating",
+        "xdm:linkUrl": "/content/core-components-examples/library/templating.html",
+        "xdm:id": "navigation-66efbaea3b-item-9ea9addd24",
+        "xdm:text": "Templating",
+        "xdm:type": "navigationItem",
+        "xdm:title": "Templating",
+        "xdm:parentId": "navigation-66efbaea3b-item-2d654c795a"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library/templating/navigation",
+        "xdm:name": "navigation",
+        "xdm:linkUrl": "/content/core-components-examples/library/templating/navigation.html",
+        "xdm:id": "navigation-66efbaea3b-item-d68affb6e3",
+        "xdm:text": "Navigation",
+        "xdm:type": "navigationItem",
+        "xdm:title": "Navigation",
+        "xdm:parentId": "navigation-66efbaea3b-item-9ea9addd24"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library/templating/language-navigation/language-structure/us/en/language-navigation",
+        "xdm:name": "language-navigation",
+        "xdm:linkUrl": "/content/core-components-examples/library/templating/language-navigation/language-structure/us/en/language-navigation.html",
+        "xdm:id": "navigation-66efbaea3b-item-f3e01e812a",
+        "xdm:text": "Language Navigation",
+        "xdm:type": "navigationItem",
+        "xdm:title": "Language Navigation",
+        "xdm:parentId": "navigation-66efbaea3b-item-9ea9addd24"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library/templating/breadcrumb/hidden/level-1/level-2/breadcrumb",
+        "xdm:name": "breadcrumb",
+        "xdm:linkUrl": "/content/core-components-examples/library/templating/breadcrumb/hidden/level-1/level-2/breadcrumb.html",
+        "xdm:id": "navigation-66efbaea3b-item-cbb6d57cd6",
+        "xdm:text": "Breadcrumb",
+        "xdm:type": "navigationItem",
+        "xdm:title": "Breadcrumb",
+        "xdm:parentId": "navigation-66efbaea3b-item-9ea9addd24"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library/page-authoring",
+        "xdm:name": "page-authoring",
+        "xdm:linkUrl": "/content/core-components-examples/library/page-authoring.html",
+        "xdm:id": "navigation-66efbaea3b-item-4531d18e85",
+        "xdm:text": "Page Authoring",
+        "xdm:type": "navigationItem",
+        "xdm:title": "Page Authoring",
+        "xdm:parentId": "navigation-66efbaea3b-item-2d654c795a"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library/page-authoring/title",
+        "xdm:name": "title",
+        "xdm:linkUrl": "/content/core-components-examples/library/page-authoring/title.html",
+        "xdm:id": "navigation-66efbaea3b-item-a885621420",
+        "xdm:text": "Title",
+        "xdm:type": "navigationItem",
+        "xdm:title": "Title",
+        "xdm:parentId": "navigation-66efbaea3b-item-4531d18e85"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library/page-authoring/text",
+        "xdm:name": "text",
+        "xdm:linkUrl": "/content/core-components-examples/library/page-authoring/text.html",
+        "xdm:id": "navigation-66efbaea3b-item-73bb9ac6a4",
+        "xdm:text": "Text",
+        "xdm:type": "navigationItem",
+        "xdm:title": "Text",
+        "xdm:parentId": "navigation-66efbaea3b-item-4531d18e85"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library/page-authoring/image",
+        "xdm:name": "image",
+        "xdm:linkUrl": "/content/core-components-examples/library/page-authoring/image.html",
+        "xdm:id": "navigation-66efbaea3b-item-ccfb199698",
+        "xdm:text": "Image",
+        "xdm:type": "navigationItem",
+        "xdm:title": "Image",
+        "xdm:parentId": "navigation-66efbaea3b-item-4531d18e85"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library/page-authoring/button",
+        "xdm:name": "button",
+        "xdm:linkUrl": "/content/core-components-examples/library/page-authoring/button.html",
+        "xdm:id": "navigation-66efbaea3b-item-5ac319d956",
+        "xdm:text": "Button",
+        "xdm:type": "navigationItem",
+        "xdm:title": "Button",
+        "xdm:parentId": "navigation-66efbaea3b-item-4531d18e85"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library/page-authoring/teaser",
+        "xdm:name": "teaser",
+        "xdm:linkUrl": "/content/core-components-examples/library/page-authoring/teaser.html",
+        "xdm:id": "navigation-66efbaea3b-item-afdbf2191b",
+        "xdm:text": "Teaser",
+        "xdm:type": "navigationItem",
+        "xdm:title": "Teaser",
+        "xdm:parentId": "navigation-66efbaea3b-item-4531d18e85"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library/page-authoring/download",
+        "xdm:name": "download",
+        "xdm:linkUrl": "/content/core-components-examples/library/page-authoring/download.html",
+        "xdm:id": "navigation-66efbaea3b-item-036ae66c12",
+        "xdm:text": "Download",
+        "xdm:type": "navigationItem",
+        "xdm:title": "Download",
+        "xdm:parentId": "navigation-66efbaea3b-item-4531d18e85"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library/page-authoring/list",
+        "xdm:name": "list",
+        "xdm:linkUrl": "/content/core-components-examples/library/page-authoring/list.html",
+        "xdm:id": "navigation-66efbaea3b-item-1164e2af53",
+        "xdm:text": "List",
+        "xdm:type": "navigationItem",
+        "xdm:title": "List",
+        "xdm:parentId": "navigation-66efbaea3b-item-4531d18e85"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library/page-authoring/experience-fragment",
+        "xdm:name": "experience-fragment",
+        "xdm:linkUrl": "/content/core-components-examples/library/page-authoring/experience-fragment.html",
+        "xdm:id": "navigation-66efbaea3b-item-2b8d6ac14e",
+        "xdm:text": "Experience Fragment",
+        "xdm:type": "navigationItem",
+        "xdm:title": "Experience Fragment",
+        "xdm:parentId": "navigation-66efbaea3b-item-4531d18e85"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library/page-authoring/content-fragment",
+        "xdm:name": "content-fragment",
+        "xdm:linkUrl": "/content/core-components-examples/library/page-authoring/content-fragment.html",
+        "xdm:id": "navigation-66efbaea3b-item-69578dfa5c",
+        "xdm:text": "Content Fragment",
+        "xdm:type": "navigationItem",
+        "xdm:title": "Content Fragment",
+        "xdm:parentId": "navigation-66efbaea3b-item-4531d18e85"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library/page-authoring/content-fragment-list",
+        "xdm:name": "content-fragment-list",
+        "xdm:linkUrl": "/content/core-components-examples/library/page-authoring/content-fragment-list.html",
+        "xdm:id": "navigation-66efbaea3b-item-a5819db35b",
+        "xdm:text": "Content Fragment List",
+        "xdm:type": "navigationItem",
+        "xdm:title": "Content Fragment List",
+        "xdm:parentId": "navigation-66efbaea3b-item-4531d18e85"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library/page-authoring/embed",
+        "xdm:name": "embed",
+        "xdm:linkUrl": "/content/core-components-examples/library/page-authoring/embed.html",
+        "xdm:id": "navigation-66efbaea3b-item-366760cb49",
+        "xdm:text": "Embed",
+        "xdm:type": "navigationItem",
+        "xdm:title": "Embed",
+        "xdm:parentId": "navigation-66efbaea3b-item-4531d18e85"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library/page-authoring/social-sharing",
+        "xdm:name": "social-sharing",
+        "xdm:linkUrl": "/content/core-components-examples/library/page-authoring/social-sharing.html",
+        "xdm:id": "navigation-66efbaea3b-item-8101faf018",
+        "xdm:text": "Social Sharing",
+        "xdm:type": "navigationItem",
+        "xdm:title": "Social Sharing",
+        "xdm:parentId": "navigation-66efbaea3b-item-4531d18e85"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library/page-authoring/separator",
+        "xdm:name": "separator",
+        "xdm:linkUrl": "/content/core-components-examples/library/page-authoring/separator.html",
+        "xdm:id": "navigation-66efbaea3b-item-2b796fa44a",
+        "xdm:text": "Separator",
+        "xdm:type": "navigationItem",
+        "xdm:title": "Separator",
+        "xdm:parentId": "navigation-66efbaea3b-item-4531d18e85"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library/container",
+        "xdm:name": "container",
+        "xdm:linkUrl": "/content/core-components-examples/library/container.html",
+        "xdm:id": "navigation-66efbaea3b-item-d5f717cd25",
+        "xdm:text": "Container",
+        "xdm:type": "navigationItem",
+        "xdm:title": "Container",
+        "xdm:parentId": "navigation-66efbaea3b-item-2d654c795a"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library/container/container",
+        "xdm:name": "container",
+        "xdm:linkUrl": "/content/core-components-examples/library/container/container.html",
+        "xdm:id": "navigation-66efbaea3b-item-62edc29783",
+        "xdm:text": "Container",
+        "xdm:type": "navigationItem",
+        "xdm:title": "Container",
+        "xdm:parentId": "navigation-66efbaea3b-item-d5f717cd25"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library/container/carousel",
+        "xdm:name": "carousel",
+        "xdm:linkUrl": "/content/core-components-examples/library/container/carousel.html",
+        "xdm:id": "navigation-66efbaea3b-item-ad0e189193",
+        "xdm:text": "Carousel",
+        "xdm:type": "navigationItem",
+        "xdm:title": "Carousel",
+        "xdm:parentId": "navigation-66efbaea3b-item-d5f717cd25"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library/container/tabs",
+        "xdm:name": "tabs",
+        "xdm:linkUrl": "/content/core-components-examples/library/container/tabs.html",
+        "xdm:id": "navigation-66efbaea3b-item-45b607ef71",
+        "xdm:text": "Tabs",
+        "xdm:type": "navigationItem",
+        "xdm:title": "Tabs",
+        "xdm:parentId": "navigation-66efbaea3b-item-d5f717cd25"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library/container/accordion",
+        "xdm:name": "accordion",
+        "xdm:linkUrl": "/content/core-components-examples/library/container/accordion.html",
+        "xdm:id": "navigation-66efbaea3b-item-568dc0e8e3",
+        "xdm:text": "Accordion",
+        "xdm:type": "navigationItem",
+        "xdm:title": "Accordion",
+        "xdm:parentId": "navigation-66efbaea3b-item-d5f717cd25"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library/form",
+        "xdm:name": "form",
+        "xdm:linkUrl": "/content/core-components-examples/library/form.html",
+        "xdm:id": "navigation-66efbaea3b-item-a5cfe31644",
+        "xdm:text": "Form",
+        "xdm:type": "navigationItem",
+        "xdm:title": "Form",
+        "xdm:parentId": "navigation-66efbaea3b-item-2d654c795a"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library/form/container",
+        "xdm:name": "container",
+        "xdm:linkUrl": "/content/core-components-examples/library/form/container.html",
+        "xdm:id": "navigation-66efbaea3b-item-f0da960201",
+        "xdm:text": "Container",
+        "xdm:type": "navigationItem",
+        "xdm:title": "Container",
+        "xdm:parentId": "navigation-66efbaea3b-item-a5cfe31644"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library/form/input",
+        "xdm:name": "input",
+        "xdm:linkUrl": "/content/core-components-examples/library/form/input.html",
+        "xdm:id": "navigation-66efbaea3b-item-cbba1d623f",
+        "xdm:text": "Input",
+        "xdm:type": "navigationItem",
+        "xdm:title": "Input",
+        "xdm:parentId": "navigation-66efbaea3b-item-a5cfe31644"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library/form/options",
+        "xdm:name": "options",
+        "xdm:linkUrl": "/content/core-components-examples/library/form/options.html",
+        "xdm:id": "navigation-66efbaea3b-item-56ce1a34b9",
+        "xdm:text": "Options",
+        "xdm:type": "navigationItem",
+        "xdm:title": "Options",
+        "xdm:parentId": "navigation-66efbaea3b-item-a5cfe31644"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library/form/hidden",
+        "xdm:name": "hidden",
+        "xdm:linkUrl": "/content/core-components-examples/library/form/hidden.html",
+        "xdm:id": "navigation-66efbaea3b-item-6aeecbf95a",
+        "xdm:text": "Hidden",
+        "xdm:type": "navigationItem",
+        "xdm:title": "Hidden",
+        "xdm:parentId": "navigation-66efbaea3b-item-a5cfe31644"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library/form/button",
+        "xdm:name": "button",
+        "xdm:linkUrl": "/content/core-components-examples/library/form/button.html",
+        "xdm:id": "navigation-66efbaea3b-item-2deda4dcd9",
+        "xdm:text": "Button",
+        "xdm:type": "navigationItem",
+        "xdm:title": "Button",
+        "xdm:parentId": "navigation-66efbaea3b-item-a5cfe31644"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library/container/carousel/jcr:content/root/responsivegrid/demo_181646866/component/carousel",
+        "xdm:activeItem": "carousel-efa1eac711-item-7d48db1522",
+        "xdm:name": "carousel",
+        "xdm:id": "carousel-efa1eac711",
+        "xdm:type": "carousel",
+        "xdm:itemsCount": 3,
+        "xdm:parentId": "page-113d229837"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library/container/carousel/jcr:content/root/responsivegrid/demo_181646866/component/carousel/image",
+        "xdm:name": "image",
+        "xdm:id": "carousel-efa1eac711-item-7d48db1522",
+        "xdm:type": "resourceListItem",
+        "xdm:title": "Title",
+        "xdm:parentId": "carousel-efa1eac711"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library/container/carousel/jcr:content/root/responsivegrid/demo_181646866/component/carousel/image_1622336496",
+        "xdm:name": "image_1622336496",
+        "xdm:id": "carousel-efa1eac711-item-d7eedd8d87",
+        "xdm:type": "resourceListItem",
+        "xdm:parentId": "carousel-efa1eac711"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library/container/carousel/jcr:content/root/responsivegrid/demo_181646866/component/carousel/image_1533234440",
+        "xdm:name": "image_1533234440",
+        "xdm:id": "carousel-efa1eac711-item-9594301bf3",
+        "xdm:type": "resourceListItem",
+        "xdm:parentId": "carousel-efa1eac711"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library/container/carousel/jcr:content/root/responsivegrid/demo_181646866/component/carousel/image",
+        "xdm:id": "image-7d48db1522",
+        "xdm:type": "image",
+        "xdm:asset": {
+          "xdm:path": "/content/dam/core-components-examples/library/sample-assets/lava-into-ocean.jpg",
+          "xdm:modifyDate": "2020-03-26T12: 01: 42.288Z",
+          "xdm:name": "lava-into-ocean.jpg",
+          "xdm:id": "0f54e1b5-535b-45f7-a46b-35abb19dd6bc",
+          "xdm:format": "image/jpeg",
+          "xdm:tags": [
+            {
+              "name": "white",
+              "confidence": 1
+            },
+            {
+              "name": "winter",
+              "confidence": 0.8
+            }
+          ]
+        },
+        "xdm:parentId": "carousel-efa1eac711-item-7d48db1522"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library/container/carousel/jcr:content/root/responsivegrid/demo_181646866/component/carousel/image_1622336496",
+        "xdm:name": "Snowy mountain glacier",
+        "xdm:id": "image-d7eedd8d87",
+        "xdm:type": "image",
+        "xdm:asset": {
+          "xdm:path": "/content/dam/core-components-examples/library/sample-assets/snowy-mountain-glacier.jpg",
+          "xdm:modifyDate": "2020-03-26T12: 01: 40.331Z",
+          "xdm:name": "snowy-mountain-glacier.jpg",
+          "xdm:id": "45c6ee92-90e1-4af2-af69-b6dcbc7daeb7",
+          "xdm:format": "image/jpeg",
+          "xdm:tags": [
+            {
+              "name": "white",
+              "confidence": 1
+            },
+            {
+              "name": "winter",
+              "confidence": 0.8
+            }
+          ]
+        },
+        "xdm:parentId": "carousel-efa1eac711-item-d7eedd8d87"
+      },
+      {
+        "xdm:path": "/content/core-components-examples/library/container/carousel/jcr:content/root/responsivegrid/demo_181646866/component/carousel/image_1533234440",
+        "xdm:name": "Gray lava rock formation",
+        "xdm:id": "image-9594301bf3",
+        "xdm:type": "image",
+        "xdm:asset": {
+          "xdm:path": "/content/dam/core-components-examples/library/sample-assets/lava-rock-formation.jpg",
+          "xdm:modifyDate": "2020-03-26T12: 01: 40.105Z",
+          "xdm:name": "lava-rock-formation.jpg",
+          "xdm:id": "c58c09f6-e382-4698-bfbd-e8c8d37712c8",
+          "xdm:format": "image/jpeg",
+          "xdm:tags": [
+            {
+              "name": "white",
+              "confidence": 1
+            },
+            {
+              "name": "winter",
+              "confidence": 0.8
+            }
+          ]
+        },
+        "xdm:parentId": "carousel-efa1eac711-item-9594301bf3"
+      }
+    ]
+  }
+}

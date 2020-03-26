@@ -1,15 +1,37 @@
 {
-  "id": "text-35b19dd6bc",
-  "type": "text",
-  "path": "/content/bbcnews/en/articles/jcr:content/root/news/article1",
-  "text":"Negotiations are to take place once every two or three weeks from now until the summer at least, alternating between Brussels and London - with the prime minister insisting a deal must be struck by the year's end",
-  "name": "News at No 10",
-  "tags": {
-    "politics": 0.852,
-    "government": 0.793,
-    "budget": 0.689,
-    "economy": 0.887,
-    "bbc/brexit": 1,
-    "bbc/borrisjohnson": 1
-  }
+  "xdm:id": "text-35b19dd6bc",
+  "xdm:type": "text",
+  "xdm:path": "/content/bbcnews/en/articles/jcr:content/root/news/article1",
+  "xdm:text": "Negotiations are to take place once every two or three weeks from now until the summer at least, alternating between Brussels and London - with the prime minister insisting a deal must be struck by the year's end",
+  "xdm:name": "News at No 10",
+  "xdm:tags": [
+    {
+      "name": "politics",
+      "confidence": 0.852
+    },
+    {
+      "name": "government",
+      "confidence": 0.793
+    },
+    {
+      "name": "politics",
+      "confidence": 0.689
+    },
+    {
+      "name": "budget",
+      "confidence": 0.8
+    },
+    {
+      "name": "economy",
+      "confidence": 0.887
+    },
+    {
+      "name": "bbc/brexit",
+      "confidence": 1
+    },
+    {
+      "name": "bbc/borrisjohnson",
+      "confidence": 1
+    }
+  ]
 }

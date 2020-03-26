@@ -11,18 +11,20 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Contains details for web page content, web interaction and commerce activity",
   "definitions": {
     "commerce": {
       "properties": {
-        "commerce": {
+        "xdm:commerce": {
           "title": "Commerce activity details",
           "description": "",
           "$ref": "https://ns.adobe.com/xdm/context/commerce",
           "type": "object"
         },
-        "productListItems": {
+        "xdm:productListItems": {
           "title": "Commerce product list items associated to the commerce activity",
           "description": "Array of product items enriched with asset metadata",
           "type": "array",

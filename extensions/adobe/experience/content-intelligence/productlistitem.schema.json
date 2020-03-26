@@ -11,25 +11,24 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/content/productlistitem"
-  ],
   "description": "The extension of the predefined 'Product List Item' datatype which includes asset details associated with the product.",
   "definitions": {
     "productlistitem": {
       "properties": {
-        "https://ns.adobe.com/experience/content-intelligence/asset": {
+        "xdm:asset": {
           "title": "Product asset",
           "$ref": "https://ns.adobe.com/experience/content-intelligence/webasset",
           "description": "The asset associated with the product."
+        },
+        "xdm:product": {
+          "title": "Product properties",
+          "$ref": "https://ns.adobe.com/xdm/content/productlistitem",
+          "description": "The properties of the product."
         }
       }
     }
   },
   "allOf": [
-    {
-      "$ref": "https://ns.adobe.com/xdm/content/productlistitem"
-    },
     {
       "$ref": "#/definitions/productlistitem"
     }

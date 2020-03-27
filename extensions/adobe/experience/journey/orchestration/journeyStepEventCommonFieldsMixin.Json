@@ -5,100 +5,158 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/journey/orchestration/journeyStepEventActionExecutionFields",
+  "$id": "https://ns.adobe.com/experience/journey/orchestration/journeyStepEventCommonFields",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Journey Orchestration Step Data Fetch Fields",
+  "title": "Journey Orchestration Step veeent  Common Fields",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/experienceevent"
+    "https://ns.adobe.com/experience/Journey/orchestration/journeyStepEvent"
   ],
-  "description": "This Mixin will have Journey Action Metadata Fields",
+  "description": "This Mixin contains the common Jounney Metadata information ",
   "definitions": {
-    "journeyStepEventDataFetchFields": {
+    "journeyStepEventCommonFields": {
       "properties": {
         "https://ns.adobe.com/experience/journey/orchestration": {
           "title": "Journey Orchestration for creating user journey.",
           "type": "object",
           "properties": {
-            "actionId":{
-              "title":"actionId",
-              "description":"Id of the action that is being executed",
-              "type":"string",
-              "isRequired":false,
-              "meta:xdmType":"string"
+            "entrance":{
+              "title":"entrance",
+              "description":"Indicate if the user has entered the journey. If not present, assuming that the value is false",
+              "type":"boolean"
             },
-            "actionName":{
-              "title":"actionName",
-              "description":"Name of the action If no name has been set, the stepName will be taken",
-              "type":"string",
-              "isRequired":false,
-              "meta:xdmType":"string"
+            "reentrance":{
+              "title":"reentrance",
+              "description":"Indicate if the user has reentered the journey with the same instance. If not present, assuming that the value is false",
+              "type":"boolean"
             },
-            "actionType":{
-              "title":"actionType",
-              "description":"Type of the action",
-              "type":"string",
-              "isRequired":false,
-              "meta:xdmType":"string"
+            "instanceEnded":{
+              "title":"instanceEnded",
+              "description":"Indicate if the instance is ended (sucessfully or not)",
+              "type":"boolean"
             },
-            "actionParameterized":{
-              "title":"actionParameterized",
-              "description":"Indicates if the action is parameterized or not",
-              "type":"boolean",
-              "isRequired":false,
-              "meta:xdmType":"boolean"
+            "eventId":{
+              "title":"eventId",
+              "description":"Event id in processing, for the step processing",
+              "type":"string"
             },
-            "actionExecTime":{
-              "title":"actionExecTime",
-              "description":"The amount of time (in millis) taken to execute a current action",
-              "type":"integer",
-              "isRequired":false,
-              "meta:xdmType":"long"
+            "nodeId":{
+              "title":"nodeId",
+              "description":"client node id",
+              "type":"string"
             },
-            "actionExecError":{
-              "title":"actionExecError",
-              "description":"Type of error that happens when the action is called.",
-              "type":"string",
-              "isRequired":false,
-              "meta:xdmType":"string"
+            "stepId":{
+              "title":"stepId",
+              "description":"Unique id of the step that is currently in processing",
+              "type":"string"
             },
-            "actionExecErrorCode":{
-              "title":"actionExecErrorCode",
-              "description":"Code for action execution error. Present if the error has a code, such as an HTTP one",
-              "type":"string",
-              "isRequired":false,
-              "meta:xdmType":"string"
+            "stepName":{
+              "title":"stepName",
+              "description":"Name of the step that is currently in processing",
+              "type":"string"
             },
-            "actionExecOrigError":{
-              "title":"actionExecOrigError",
-              "description":"",
-              "type":"string",
-              "isRequired":false,
-              "meta:xdmType":"string",
+            "stepType":{
+              "title":"stepType",
+              "description":"Type of the step",
+              "type":"string"
             },
-            "actionExecOrigErrorCode":{
-              "title":"actionExecOrigErrorCode",
-              "description":"error code of the actionExecOrigError",
-              "type":"string",
-              "isRequired":false,
-              "meta:xdmType":"string"
+            "stepStatus":{
+              "title":"stepStatus",
+              "description":"Status of the journey step, representing in which shape the step is, when its processing has been done",
+              "type":"string"
             },
-            "actionBusinessType":{
-              "title":"actionBusinessType",
-              "description":"What type of action it is. It could be ACS, Business  Action, SMS etc.",
-              "type":"string",
-              "isRequired":false,
-              "meta:xdmType":"string"
+            "journeyId":{
+              "title":"journeyId",
+              "description":"ID of the journey",
+              "type":"string"
             },
-            "actionSchedulerCount":{
-              "title":"actionSchedulerCount",
-              "description":"count of scheduler notification requests sent to the scheduler service during the step processing",
-              "type":"integer",
-              "isRequired":false,
-              "meta:xdmType":"long"
-              }
+            "journeyVersionId":{
+              "title":"journeyVersionId",
+              "description":"ID of the journey version. This id represents the identity reference to the journey, in case of the journeyStepEvent",
+              "type":"string"
+            },
+            "journeyVersionName":{
+              "title":"journeyVersionName",
+              "description":"Name of the journey version",
+              "type":"string"
+            },
+            "journeyVersion":{
+              "title":"journeyVersion",
+              "description":"Version of the journey version",
+              "type":"string"
+            },
+            "instanceId":{
+              "title":"instanceId",
+              "description":"Internal ID of the journey instance",
+              "type":"string"
+            },
+            "externalKey":{
+              "title":"externalKey",
+              "description":"External key extracted from the event to process it",
+              "type":"string"
+            },
+            "parentStepId":{
+              "title":"parentStepId",
+              "description":"Step ID of the parent of the current processed step in the instance",
+              "type":"string"
+            },
+            "parentStepName":{
+              "title":"parentStepName",
+              "description":"Step name of the parent of the current step.",
+              "type":"string"
+            },
+            "parentTransitionId":{
+              "title":"parentTransitionId",
+              "description":"Id of the transition which has brought the instance to the processed step",
+              "type":"string"
+            },
+            "parentTransitionName":{
+              "title":"parentTransitionName",
+              "description":"Name of the transition which has brought the instance to the processed step",
+              "type":"string"
+            },
+            "inTest":{
+              "title":"inTest",
+              "description":"Whether this journey is in test mode or not",
+              "type":"boolean"
+            },
+            "processingTime":{
+              "title":"processingTime",
+              "description":"total time in millis from the instance step entrance to the end of the processing",
+              "type":"integer"
+            },
+            "instanceType":{
+              "title":"instanceType",
+              "description":"indicate the instance type, if it is batch or unitary",
+              "type":"string"
+            },
+            "recurrenceIndex":{
+              "title":"recurrenceIndex",
+              "description":"Index of the recurrence if the journey is batch and recurring (first run has recurrenceIndex = 1)",
+              "type":"integer"
+            },
+            "isBatchToUnitary":{
+              "title":"isBatchToUnitary",
+              "description":"Indicates if this unitary instance has been triggered from a batch instance",
+              "type":"boolean"
+            },
+            "batchExternalKey":{
+              "title":"batchExternalKey",
+              "description":" External Key for batch event",
+              "type":"string"
+            },
+            "batchInstanceId":{
+              "title":"batchInstanceId",
+              "description":" this is the batch instance id",
+              "type":"string"
+            },
+            "batchUnitaryBranchId":{
+              "title":"batchUnitaryBranchId",
+              "description":"If the instance has been triggered from a batch instance, unitary branch id",
+              "type":"string"
+            }
           }
         }
       }
@@ -106,7 +164,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/journeyStepEventActionExecutionFields"
+      "$ref": "#/definitions/journeyStepEventCommonFields"
     }
   ],
   "meta:status": "experimental"

@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/experienceevent"
+    "https://ns.adobe.com/experience/Journey/orchestration/journeyStepEvent"
   ],
   "description": "This event is in relation with journey and describe the profile Identifiers",
   "definitions": {

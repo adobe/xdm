@@ -7,56 +7,46 @@
   ],
   "$id": "https://ns.adobe.com/experience/Journey/orchestration/journeyFields",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Journey Orchestration Step Data Fetch Fields",
+  "title": "Journey Orchestration common Journey Fields",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "This s Mixin will have Journey Action Metadata Fields",
+  "description": "This Mixin will have Common Journey Metadata Fields",
   "definitions": {
     "journeyFields": {
       "properties": {
         "https://ns.adobe.com/experience/Journey/orchestration": {
-          "title": "Journey Orchestration for creating user journey.",
+          "title": "Journey Orchestration common Journey Fields",
           "type": "object",
           "properties": {
 
             "journeyId":{
               "title":"journeyId",
-              "description":"Identifier for the givn Journey",
-              "type":"string",
-              "isRequired":false,
-              "meta:xdmType":"string"
+              "description":"Identifier for the given Journey",
+              "type":"string"
             },
             "journeyVersionId":{
               "title":"journeyVersionId",
               "description":"Id of the journey version. This id represents the identity of a journey",
-              "type":"string",
-              "isRequired":false,
-              "meta:xdmType":"string"
+              "type":"string"
             },
             "name":{
               "title":"name",
-              "description":"name of the journey",
-              "type":"string",
-              "isRequired":false,
-              "meta:xdmType":"string",
+              "description":"Name of the Journey",
+              "type":"string"
             },
             "description":{
               "title":"description",
-              "description":"description of the journey",
-              "type":"string",
-              "isRequired":false,
-              "meta:xdmType":"string"
+              "description":"Description of the Journey",
+              "type":"string"
             },
             "version":{
               "title":"version",
-              "description":"version, represented as <major>.<minor>",
-              "type":"string",
-              "isRequired":false,
-              "meta:xdmType":"string"
+              "description":"Describes the Journey Version",
+              "type":"string"
             }
           }
         }

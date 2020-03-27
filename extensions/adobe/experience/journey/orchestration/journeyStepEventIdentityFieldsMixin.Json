@@ -19,7 +19,7 @@
     "journeyStepEventIdentityFields": {
       "properties": {
         "https://ns.adobe.com/experience/Journey/orchestration": {
-          "title": "Journey Orchestration for creating user journey.",
+          "title": "Journey Orchestration Step Event Identity Fields.",
           "type": "object",
           "properties": {
             "xdm:profileId": {

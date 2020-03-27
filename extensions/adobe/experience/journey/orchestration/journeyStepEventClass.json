@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/time-series"],
-  "description": "This Class will have Journey Step Fields",
+  "description": "A time-series based Journey Step Event Class",
   "definitions": {
     "journeyStepEvent": {
       "properties": {
@@ -23,24 +23,17 @@
             "entrance": {
               "title": "entrance",
               "description": "",
-              "type": "boolean",
-              "isRequired": false,
-              "default": true,
-              "meta:xdmType": "boolean"
+              "type": "boolean"
             },
             "reentrance": {
               "title": "reentrance",
               "description": "Indicate if the user has reentered the journey with the same instance. If not present, assuming that the value is false",
-              "type": "boolean",
-              "isRequired": false,
-              "meta:xdmType": "boolean"
+              "type": "boolean"
             },
             "instanceEnded": {
               "title": "instanceEnded",
               "description": "Indicate if the Journey instance has ended ",
-              "type": "boolean",
-              "isRequired": false,
-              "meta:xdmType": "boolean"
+              "type": "boolean"
             }
           }
         }

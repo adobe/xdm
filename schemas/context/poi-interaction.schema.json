@@ -14,12 +14,6 @@
   "definitions": {
     "poi-interaction": {
       "properties": {
-        "xdm:POIDetail": {
-          "title": "POI detail",
-          "meta:status": "deprecated",
-          "description": "Detail of the POI that cause the event.",
-          "$ref": "https://ns.adobe.com/xdm/context/poi-detail"
-        },
          "xdm:poiDetail": {
           "title": "POI detail",
           "description": "Detail of the POI that cause the event.",

@@ -10,9 +10,7 @@
   "title": "Marketo Opportunity",
   "type": "object",
   "meta:extensible": true,
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/context/opportunity-crm"
-  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/context/opportunity-crm"],
   "description": "Marketo specific Opportunity attributes.",
   "definitions": {
     "opportunity-marketo": {
@@ -33,8 +31,6 @@
       "$ref": "#/definitions/opportunity-marketo"
     }
   ],
-  "required": [
-    "marketo:mktoGuid"
-  ],
+  "required": ["marketo:mktoGuid"],
   "meta:status": "experimental"
 }

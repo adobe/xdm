@@ -19,6 +19,11 @@
           "title": "Marketo GUID Id",
           "description": "Marketo GUID Id.",
           "type": "string"
+        },
+        "marketo:instanceId": {
+          "title": "Instance Identifier",
+          "description": "Instance identifier.",
+          "type": "string"
         }
       }
     }

@@ -35,6 +35,24 @@
           "description": "Date when this record was last modofied.",
           "type": "string",
           "format":"date-time"
+        },
+        "xdm:lastActivityDate": {
+          "title": "Last Activity Date",
+          "description": "Last activity date.",
+		  "type": "string",
+		  "format": "date-time"
+        },
+        "xdm:lastReferencedDate": {
+          "title": "Last Referenced Date",
+          "description": "Last referenced date.",
+		  "type": "string",
+		  "format": "date-time"
+        },
+        "xdm:lastViewedDate": {
+          "title": "Last Viewed Date",
+          "description": "Last viewed date.",
+		  "type": "string",
+		  "format": "date-time"
         }
       }
     }

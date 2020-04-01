@@ -21,6 +21,8 @@
           "type": "object",
           "meta:xdmType": "map",
           "additionalProperties": {
+            "type": "object",
+            "meta:xdmType": "object",
             "properties": {
               "xdm:captureTimestamp": {
                 "title": "Edge data capture timestamp",

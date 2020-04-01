@@ -27,6 +27,7 @@
     "https://ns.adobe.com/xdm/context/experienceevent-technical-details",
     "https://ns.adobe.com/xdm/context/experienceevent-web",
     "https://ns.adobe.com/experience/analytics/experienceevent-all",
+    "https://ns.adobe.com/experience/experienceevent-edgeregion",
     "https://ns.adobe.com/experience/target/experienceevent-shared",
     "https://ns.adobe.com/experience/profile/experienceevent-shared",
     "https://ns.adobe.com/experience/implementations-ext",
@@ -80,6 +81,9 @@
     },
     {
       "$ref": "https://ns.adobe.com/experience/analytics/experienceevent-all"
+    },
+    {
+      "$ref": "https://ns.adobe.com/experience/experienceevent-edgeregion"
     },
     {
       "$ref": "https://ns.adobe.com/experience/target/experienceevent-shared"

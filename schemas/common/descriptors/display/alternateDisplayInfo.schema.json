@@ -43,15 +43,8 @@
             }
           }
         },
-        "xdm:softEnum": {
-          "type": "object",
-          "patternProperties": {
-            ".+": {
-              "type": "string"
-            }
-          }
-        },
-        "xdm:hardEnum": {
+        "meta:enum": {
+          "title": "Extended meta:enum values",
           "type": "object",
           "patternProperties": {
             ".+": {
@@ -68,10 +61,7 @@
           "required": ["xdm:description"]
         },
         {
-          "required": ["xdm:hardEnum"]
-        },
-        {
-          "required": ["xdm:softEnum"]
+          "required": ["meta:enum"]
         }
       ],
       "required": ["xdm:sourceProperty"]

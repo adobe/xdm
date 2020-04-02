@@ -15,9 +15,9 @@
   ],
   "description": "Defines a map containing a set of business customer opportunity contact roles, keyed on contactId , meaning that more than one contact of each opportunity may be carried.",
   "definitions": {
-    "contactmap": {
+    "contactMap": {
       "properties": {
-        "xdm:contactmap": {
+        "xdm:contactMap": {
           "type": "object",
           "meta:xdmType": "map",
           "additionalProperties": {
@@ -34,7 +34,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "#/definitions/contactmap"
+      "$ref": "#/definitions/contactMap"
     },
     {
       "ref": "https://ns.adobe.com/xdm/common/essam"

@@ -16,11 +16,11 @@
     "opportunity-marketo": {
       "properties": {
         "marketo:mktoGuid": {
-          "title": "Marketo GUID Id",
-          "description": "Marketo GUID Id.",
+          "title": "Marketo GUID ID",
+          "description": "Marketo GUID ID.",
           "type": "string"
         },
-        "marketo:instanceId": {
+        "marketo:instanceID": {
           "title": "Instance Identifier",
           "description": "Instance identifier.",
           "type": "string"

@@ -18,8 +18,8 @@
   "definitions": {
     "opportunity": {
       "properties": {
-        "xdm:Id": {
-          "title": "Opportunity Id",
+        "xdm:ID": {
+          "title": "Opportunity ID",
           "description": "Unique identifer of the opportunity",
           "type": "string"
         },
@@ -28,12 +28,12 @@
           "description": "Type of Opportunity.",
           "type": "string"
         },
-        "xdm:sourceId": {
+        "xdm:sourceID": {
           "title": "Opportunity Source Id",
           "description": "Opportunity source unique identifer",
           "type": "string"
         },
-        "xdm:accountId": {
+        "xdm:accountID": {
           "title": "Account Id",
           "description": "Account identifer reference",
           "type": "string"
@@ -64,9 +64,9 @@
     }
   ],
   "required": [
-    "xdm:Id",
+    "xdm:ID",
     "xdm:type",
-    "xdm:accountId"
+    "xdm:accountID"
   ],
   "meta:status": "experimental"
 }

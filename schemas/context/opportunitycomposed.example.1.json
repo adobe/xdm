@@ -31,7 +31,7 @@
   "marketo:mktoGuid": "Avcs45678kl",
   "xdm:contactmap": {
     "12345": {
-      "xdm:roleId": "92312748749128",
+      "xdm:roleID": "92312748749128",
       "xdm:role": "Decisipon maker",
       "xdm:isPrimary": true,
       "xdm:isDeleted": false,
@@ -43,7 +43,7 @@
       }
     },
     "12346": {
-      "xdm:roleId": "92312748749239",
+      "xdm:roleID": "92312748749239",
       "xdm:role": "Technical Buyer",
       "xdm:isPrimary": false,
       "xdm:isDeleted": false,

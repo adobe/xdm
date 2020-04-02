@@ -13,7 +13,7 @@
   "definitions": {
     "contactitems": {
       "properties": {
-        "xdm:roleId": {
+        "xdm:roleID": {
           "title": "Contact Role Id",
           "description": "Contact role unique identifier.",
           "type": "string"

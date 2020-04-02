@@ -1,0 +1,36 @@
+{
+  "commerceActivity": {
+    "xdm:productListViews": {
+      "xdm:value": 1
+    }
+  },
+  "cartItems": [
+    {
+      "xdm:product": {
+        "xdm:SKU": "meskwimis-One size",
+        "@id": "product-9594301bf3",
+        "xdm:name": "Midweight Fleece Gloves",
+        "xdm:product": "http://localhost:4502/content/we-retail/us/en/products/equipment/snow-sports/midweight-fleece-gloves.html#meskwimis-One%20size",
+        "xdm:quantity": 1,
+        "xdm:priceTotal": 30
+      },
+      "xdm:asset": {
+        "xdm:url": "https://www.adobe.com/content/dam/core-components-examples/library/sample-assets/lava-rock-formation.jpg",
+        "repo:lastModifiedDate": "2020-03-26T12: 01: 40.105Z",
+        "repo:name": "lava-rock-formation.jpg",
+        "repo:id": "c58c09f6-e382-4698-bfbd-e8c8d37712c8",
+        "dc:format": "image/jpeg",
+        "xmp:machineKeywords": [
+          {
+            "value": "white",
+            "confidence": 1
+          },
+          {
+            "value": "winter",
+            "confidence": 0.8
+          }
+        ]
+      }
+    }
+  ]
+}

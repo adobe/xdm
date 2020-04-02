@@ -97,7 +97,7 @@
         "xdm:name": "properties",
         "xdm:id": "tabs-9ebc28c5fc-item-fc22d11006",
         "xdm:type": "resourceListItem",
-        "xdm:title": "Properties",
+        "dc:title": "Properties",
         "xdm:parentId": "tabs-9ebc28c5fc"
       },
       {
@@ -105,7 +105,7 @@
         "xdm:name": "markup",
         "xdm:id": "tabs-9ebc28c5fc-item-1918209d43",
         "xdm:type": "resourceListItem",
-        "xdm:title": "Markup",
+        "dc:title": "Markup",
         "xdm:parentId": "tabs-9ebc28c5fc"
       },
       {
@@ -113,7 +113,7 @@
         "xdm:name": "json",
         "xdm:id": "tabs-9ebc28c5fc-item-b7234c5d61",
         "xdm:type": "resourceListItem",
-        "xdm:title": "JSON",
+        "dc:title": "JSON",
         "xdm:parentId": "tabs-9ebc28c5fc"
       },
       {
@@ -131,7 +131,7 @@
         "xdm:id": "navigation-66efbaea3b-item-2d654c795a",
         "xdm:text": "Component Library",
         "xdm:type": "navigationItem",
-        "xdm:title": "Component Library",
+        "dc:title": "Component Library",
         "xdm:parentId": "navigation-66efbaea3b"
       },
       {
@@ -141,7 +141,7 @@
         "xdm:id": "navigation-66efbaea3b-item-9ea9addd24",
         "xdm:text": "Templating",
         "xdm:type": "navigationItem",
-        "xdm:title": "Templating",
+        "dc:title": "Templating",
         "xdm:parentId": "navigation-66efbaea3b-item-2d654c795a"
       },
       {
@@ -151,7 +151,7 @@
         "xdm:id": "navigation-66efbaea3b-item-d68affb6e3",
         "xdm:text": "Navigation",
         "xdm:type": "navigationItem",
-        "xdm:title": "Navigation",
+        "dc:title": "Navigation",
         "xdm:parentId": "navigation-66efbaea3b-item-9ea9addd24"
       },
       {
@@ -161,7 +161,7 @@
         "xdm:id": "navigation-66efbaea3b-item-f3e01e812a",
         "xdm:text": "Language Navigation",
         "xdm:type": "navigationItem",
-        "xdm:title": "Language Navigation",
+        "dc:title": "Language Navigation",
         "xdm:parentId": "navigation-66efbaea3b-item-9ea9addd24"
       },
       {
@@ -171,7 +171,7 @@
         "xdm:id": "navigation-66efbaea3b-item-cbb6d57cd6",
         "xdm:text": "Breadcrumb",
         "xdm:type": "navigationItem",
-        "xdm:title": "Breadcrumb",
+        "dc:title": "Breadcrumb",
         "xdm:parentId": "navigation-66efbaea3b-item-9ea9addd24"
       },
       {
@@ -181,7 +181,7 @@
         "xdm:id": "navigation-66efbaea3b-item-4531d18e85",
         "xdm:text": "Page Authoring",
         "xdm:type": "navigationItem",
-        "xdm:title": "Page Authoring",
+        "dc:title": "Page Authoring",
         "xdm:parentId": "navigation-66efbaea3b-item-2d654c795a"
       },
       {
@@ -191,7 +191,7 @@
         "xdm:id": "navigation-66efbaea3b-item-a885621420",
         "xdm:text": "Title",
         "xdm:type": "navigationItem",
-        "xdm:title": "Title",
+        "dc:title": "Title",
         "xdm:parentId": "navigation-66efbaea3b-item-4531d18e85"
       },
       {
@@ -201,7 +201,7 @@
         "xdm:id": "navigation-66efbaea3b-item-73bb9ac6a4",
         "xdm:text": "Text",
         "xdm:type": "navigationItem",
-        "xdm:title": "Text",
+        "dc:title": "Text",
         "xdm:parentId": "navigation-66efbaea3b-item-4531d18e85"
       },
       {
@@ -211,7 +211,7 @@
         "xdm:id": "navigation-66efbaea3b-item-ccfb199698",
         "xdm:text": "Image",
         "xdm:type": "navigationItem",
-        "xdm:title": "Image",
+        "dc:title": "Image",
         "xdm:parentId": "navigation-66efbaea3b-item-4531d18e85"
       },
       {
@@ -221,7 +221,7 @@
         "xdm:id": "navigation-66efbaea3b-item-5ac319d956",
         "xdm:text": "Button",
         "xdm:type": "navigationItem",
-        "xdm:title": "Button",
+        "dc:title": "Button",
         "xdm:parentId": "navigation-66efbaea3b-item-4531d18e85"
       },
       {
@@ -231,7 +231,7 @@
         "xdm:id": "navigation-66efbaea3b-item-afdbf2191b",
         "xdm:text": "Teaser",
         "xdm:type": "navigationItem",
-        "xdm:title": "Teaser",
+        "dc:title": "Teaser",
         "xdm:parentId": "navigation-66efbaea3b-item-4531d18e85"
       },
       {
@@ -241,7 +241,7 @@
         "xdm:id": "navigation-66efbaea3b-item-036ae66c12",
         "xdm:text": "Download",
         "xdm:type": "navigationItem",
-        "xdm:title": "Download",
+        "dc:title": "Download",
         "xdm:parentId": "navigation-66efbaea3b-item-4531d18e85"
       },
       {
@@ -251,7 +251,7 @@
         "xdm:id": "navigation-66efbaea3b-item-1164e2af53",
         "xdm:text": "List",
         "xdm:type": "navigationItem",
-        "xdm:title": "List",
+        "dc:title": "List",
         "xdm:parentId": "navigation-66efbaea3b-item-4531d18e85"
       },
       {
@@ -261,7 +261,7 @@
         "xdm:id": "navigation-66efbaea3b-item-2b8d6ac14e",
         "xdm:text": "Experience Fragment",
         "xdm:type": "navigationItem",
-        "xdm:title": "Experience Fragment",
+        "dc:title": "Experience Fragment",
         "xdm:parentId": "navigation-66efbaea3b-item-4531d18e85"
       },
       {
@@ -271,7 +271,7 @@
         "xdm:id": "navigation-66efbaea3b-item-69578dfa5c",
         "xdm:text": "Content Fragment",
         "xdm:type": "navigationItem",
-        "xdm:title": "Content Fragment",
+        "dc:title": "Content Fragment",
         "xdm:parentId": "navigation-66efbaea3b-item-4531d18e85"
       },
       {
@@ -281,7 +281,7 @@
         "xdm:id": "navigation-66efbaea3b-item-a5819db35b",
         "xdm:text": "Content Fragment List",
         "xdm:type": "navigationItem",
-        "xdm:title": "Content Fragment List",
+        "dc:title": "Content Fragment List",
         "xdm:parentId": "navigation-66efbaea3b-item-4531d18e85"
       },
       {
@@ -291,7 +291,7 @@
         "xdm:id": "navigation-66efbaea3b-item-366760cb49",
         "xdm:text": "Embed",
         "xdm:type": "navigationItem",
-        "xdm:title": "Embed",
+        "dc:title": "Embed",
         "xdm:parentId": "navigation-66efbaea3b-item-4531d18e85"
       },
       {
@@ -301,7 +301,7 @@
         "xdm:id": "navigation-66efbaea3b-item-8101faf018",
         "xdm:text": "Social Sharing",
         "xdm:type": "navigationItem",
-        "xdm:title": "Social Sharing",
+        "dc:title": "Social Sharing",
         "xdm:parentId": "navigation-66efbaea3b-item-4531d18e85"
       },
       {
@@ -311,7 +311,7 @@
         "xdm:id": "navigation-66efbaea3b-item-2b796fa44a",
         "xdm:text": "Separator",
         "xdm:type": "navigationItem",
-        "xdm:title": "Separator",
+        "dc:title": "Separator",
         "xdm:parentId": "navigation-66efbaea3b-item-4531d18e85"
       },
       {
@@ -321,7 +321,7 @@
         "xdm:id": "navigation-66efbaea3b-item-d5f717cd25",
         "xdm:text": "Container",
         "xdm:type": "navigationItem",
-        "xdm:title": "Container",
+        "dc:title": "Container",
         "xdm:parentId": "navigation-66efbaea3b-item-2d654c795a"
       },
       {
@@ -331,7 +331,7 @@
         "xdm:id": "navigation-66efbaea3b-item-62edc29783",
         "xdm:text": "Container",
         "xdm:type": "navigationItem",
-        "xdm:title": "Container",
+        "dc:title": "Container",
         "xdm:parentId": "navigation-66efbaea3b-item-d5f717cd25"
       },
       {
@@ -341,7 +341,7 @@
         "xdm:id": "navigation-66efbaea3b-item-ad0e189193",
         "xdm:text": "Carousel",
         "xdm:type": "navigationItem",
-        "xdm:title": "Carousel",
+        "dc:title": "Carousel",
         "xdm:parentId": "navigation-66efbaea3b-item-d5f717cd25"
       },
       {
@@ -351,7 +351,7 @@
         "xdm:id": "navigation-66efbaea3b-item-45b607ef71",
         "xdm:text": "Tabs",
         "xdm:type": "navigationItem",
-        "xdm:title": "Tabs",
+        "dc:title": "Tabs",
         "xdm:parentId": "navigation-66efbaea3b-item-d5f717cd25"
       },
       {
@@ -361,7 +361,7 @@
         "xdm:id": "navigation-66efbaea3b-item-568dc0e8e3",
         "xdm:text": "Accordion",
         "xdm:type": "navigationItem",
-        "xdm:title": "Accordion",
+        "dc:title": "Accordion",
         "xdm:parentId": "navigation-66efbaea3b-item-d5f717cd25"
       },
       {
@@ -371,7 +371,7 @@
         "xdm:id": "navigation-66efbaea3b-item-a5cfe31644",
         "xdm:text": "Form",
         "xdm:type": "navigationItem",
-        "xdm:title": "Form",
+        "dc:title": "Form",
         "xdm:parentId": "navigation-66efbaea3b-item-2d654c795a"
       },
       {
@@ -381,7 +381,7 @@
         "xdm:id": "navigation-66efbaea3b-item-f0da960201",
         "xdm:text": "Container",
         "xdm:type": "navigationItem",
-        "xdm:title": "Container",
+        "dc:title": "Container",
         "xdm:parentId": "navigation-66efbaea3b-item-a5cfe31644"
       },
       {
@@ -391,7 +391,7 @@
         "xdm:id": "navigation-66efbaea3b-item-cbba1d623f",
         "xdm:text": "Input",
         "xdm:type": "navigationItem",
-        "xdm:title": "Input",
+        "dc:title": "Input",
         "xdm:parentId": "navigation-66efbaea3b-item-a5cfe31644"
       },
       {
@@ -401,7 +401,7 @@
         "xdm:id": "navigation-66efbaea3b-item-56ce1a34b9",
         "xdm:text": "Options",
         "xdm:type": "navigationItem",
-        "xdm:title": "Options",
+        "dc:title": "Options",
         "xdm:parentId": "navigation-66efbaea3b-item-a5cfe31644"
       },
       {
@@ -411,7 +411,7 @@
         "xdm:id": "navigation-66efbaea3b-item-6aeecbf95a",
         "xdm:text": "Hidden",
         "xdm:type": "navigationItem",
-        "xdm:title": "Hidden",
+        "dc:title": "Hidden",
         "xdm:parentId": "navigation-66efbaea3b-item-a5cfe31644"
       },
       {
@@ -421,7 +421,7 @@
         "xdm:id": "navigation-66efbaea3b-item-2deda4dcd9",
         "xdm:text": "Button",
         "xdm:type": "navigationItem",
-        "xdm:title": "Button",
+        "dc:title": "Button",
         "xdm:parentId": "navigation-66efbaea3b-item-a5cfe31644"
       },
       {
@@ -438,7 +438,7 @@
         "xdm:name": "image",
         "xdm:id": "carousel-efa1eac711-item-7d48db1522",
         "xdm:type": "resourceListItem",
-        "xdm:title": "Title",
+        "dc:title": "Title",
         "xdm:parentId": "carousel-efa1eac711"
       },
       {

@@ -1,0 +1,120 @@
+{
+  "@id": "1c796d36-f2e7-4125-813f-7223df5e7b5a-0",
+  "xdm:eventType": "web.webinteraction.linkClicks",
+  "xdm:timestamp": "2020-02-19T16:46:54.963Z",
+  "xdm:identityMap": {
+    "ECID": [
+      {
+        "xdm:id": "52901503159666957302406877195672356370",
+        "xdm:primary": true
+      }
+    ],
+    "CORE": [
+      {
+        "xdm:id": "47208482663822332152994686897075044703",
+        "xdm:primary": null
+      }
+    ]
+  },
+  "xdm:web": {
+    "xdm:webPageDetails": {
+      "xdm:URL": "http://localhost:4502/content/we-retail/language-masters/en.html"
+    },
+    "xdm:webReferrer": {
+      "xdm:URL": ""
+    }
+  },
+  "xdm:device": {
+    "xdm:screenHeight": 1080,
+    "xdm:screenWidth": 1920,
+    "xdm:screenOrientation": "landscape"
+  },
+  "xdm:environment": {
+    "xdm:type": "browser",
+    "xdm:browserDetails": {
+      "xdm:viewportWidth": 1920,
+      "xdm:viewportHeight": 529
+    }
+  },
+  "xdm:placeContext": {
+    "xdm:localTime": "2020-02-19T16:46:54.963+00:00",
+    "xdm:localTimezoneOffset": 0
+  },
+  "xdm:implementationDetails": {
+    "xdm:name": "https://ns.adobe.com/experience/alloy",
+    "xdm:version": "0.0.13"
+  },
+  "xdm:webAction": {
+    "xdm:actionType": "click",
+    "xdm:element": {
+      "repo:name": "Gray lava rock formation",
+      "repo:id": "image-9594301bf3",
+      "xdm:elementType": "image",
+      "xdm:asset": {
+        "xdm:url": "https://www.adobe.com/content/dam/core-components-examples/library/sample-assets/lava-rock-formation.jpg",
+        "repo:lastModifiedDate": "2020-03-26T12: 01: 40.105Z",
+        "repo:name": "lava-rock-formation.jpg",
+        "repo:id": "c58c09f6-e382-4698-bfbd-e8c8d37712c8",
+        "dc:format": "image/jpeg",
+        "xmp:machineKeywords": [
+          {
+            "value": "white",
+            "confidence": 1
+          },
+          {
+            "value": "winter",
+            "confidence": 0.8
+          }
+        ]
+      },
+      "repo:parentId": "carousel-efa1eac711-item-9594301bf3"
+    },
+    "xdm:context": [
+      {
+        "repo:id": "image-7d48db1522",
+        "xdm:type": "image",
+        "xdm:asset": {
+          "xdm:url": "https://www.adobe.com/content/dam/core-components-examples/library/sample-assets/lava-into-ocean.jpg",
+          "repo:lastModifiedDate": "2020-03-26T12: 01: 42.288Z",
+          "repo:name": "lava-into-ocean.jpg",
+          "repo:id": "0f54e1b5-535b-45f7-a46b-35abb19dd6bc",
+          "dc:format": "image/jpeg",
+          "xmp:machineKeywords": [
+            {
+              "value": "white",
+              "confidence": 1
+            },
+            {
+              "value": "winter",
+              "confidence": 0.8
+            }
+          ]
+        },
+        "repo:parentId": "carousel-efa1eac711-item-7d48db1522"
+      },
+      {
+        "repo:name": "Snowy mountain glacier",
+        "repo:id": "image-d7eedd8d87",
+        "xdm:type": "image",
+        "xdm:asset": {
+          "xdm:url": "https://www.adobe.com/content/dam/core-components-examples/library/sample-assets/snowy-mountain-glacier.jpg",
+          "repo:lastModifiedDate": "2020-03-26T12: 01: 40.331Z",
+          "repo:name": "snowy-mountain-glacier.jpg",
+          "repo:id": "45c6ee92-90e1-4af2-af69-b6dcbc7daeb7",
+          "dc:format": "image/jpeg",
+          "xmp:machineKeywords": [
+            {
+              "value": "white",
+              "confidence": 1
+            },
+            {
+              "value": "winter",
+              "confidence": 0.8
+            }
+          ]
+        },
+        "repo:parentId": "carousel-efa1eac711-item-d7eedd8d87"
+      }
+    ]
+  }
+}

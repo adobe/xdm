@@ -16,7 +16,7 @@
   "meta:extends": [
     "https://ns.adobe.com/xdm/context/person",
 	"https://ns.adobe.com/xdm/context/profile-work-details",
-    "https://ns.adobe.com/xdm/context/lead",
+    "https://ns.adobe.com/xdm/context/profile-lead-crm",
 	"https://ns.adobe.com/xdm/context/optinout",
 	"https://ns.adobe.com/xdm/common/essam"
   ],
@@ -59,7 +59,7 @@
       "$ref": "https://ns.adobe.com/xdm/context/profile-work-details"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/context/lead"
+      "$ref": "https://ns.adobe.com/xdm/context/profile-lead-crm"
     },
     {
       "$ref": "https://ns.adobe.com/xdm/context/optinout"

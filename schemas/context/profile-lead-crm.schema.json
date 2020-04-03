@@ -5,18 +5,16 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/context/lead",
+  "$id": "https://ns.adobe.com/xdm/context/profile-lead-crm",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "B2B Lead ",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/profile"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "description": "This mixin is used to capture information regarding a B2B Lead.",
   "definitions": {
-    "lead": {
+    "profile-lead-crm": {
       "properties": {
         "xdm:id": {
           "title": "Lead Id",
@@ -42,7 +40,7 @@
           "title": "Converted Date",
           "description": "The date when the lead was converted to an account.",
           "type": "string",
-		  "format": "date-time"
+          "format": "date-time"
         },
         "xdm:convertedOpportunityId": {
           "title": "Converted Opportunity ID",
@@ -54,7 +52,7 @@
           "description": "Indicator whether the lead was deleted.",
           "type": "boolean"
         },
-        "xdm:description": {
+        "xdm:leadDescription": {
           "title": "Lead Description",
           "description": "Lead description.",
           "type": "string"
@@ -63,7 +61,7 @@
           "title": "Email Bounced Date",
           "description": "Email bounced date.",
           "type": "string",
-		  "format": "date-time"
+          "format": "date-time"
         },
         "xdm:emailBouncedReason": {
           "title": "Email Bounced Reason",
@@ -75,29 +73,11 @@
           "description": "Jigsaw contact id.",
           "type": "string"
         },
-        "xdm:lastActivityDate": {
-          "title": "Last Activity Date",
-          "description": "Last activity date.",
-          "type": "string",
-		  "format": "date-time"
-        },
-        "xdm:lastReferencedDate": {
-          "title": "Last Referenced Date",
-          "description": "Last referenced date.",
-          "type": "string",
-		  "format": "date-time"
-        },
         "xdm:lastTransferDate": {
           "title": "Last Transfer Date",
           "description": "Last transfer date.",
           "type": "string",
-		  "format": "date-time"
-        },
-        "xdm:lastViewedDate": {
-          "title": "Last Viewed Date",
-          "description": "Last viewed date.",
-          "type": "string",
-		  "format": "date-time"
+          "format": "date-time"
         },
         "xdm:masterRecordId": {
           "title": "Master Record Id",
@@ -129,6 +109,37 @@
           "description": "Read by owner indicator.",
           "type": "string"
         },
+        "xdm:ProspectAddress": {
+          "title": "Prospect Address",
+          "description": "Prospect address.",
+          "$ref": "https://ns.adobe.com/xdm/common/address"
+        },
+        "xdm:prospectCompany": {
+          "title": "Prospect Company",
+          "description": "Prospect company.",
+          "type": "string"
+        },
+        "xdm:prospectName": {
+          "title": "Prospect Name",
+          "description": "Prospect name.",
+          "$ref": "https://ns.adobe.com/xdm/context/person-name"
+        },
+        "xdm:prospectScore": {
+          "title": "Prospect Score",
+          "description": "Prospect score.",
+          "type": "number"
+        },
+        "xdm:prospectSource": {
+          "title": "Prospect Source",
+          "description": "Prospect source.",
+          "type": "string"
+        },
+        "xdm:prospectWebsite": {
+          "title": "Prospect Website",
+          "description": "Prospect website.",
+          "type": "string",
+          "format": "uri"
+        },
         "xdm:leadOrganization": {
           "title": "Organization Attributes",
           "description": "Organization attributes if the lead is an organization.",
@@ -142,7 +153,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "#/definitions/lead"
+      "$ref": "#/definitions/profile-lead-crm"
     },
     {
       "$ref": "https://ns.adobe.com/xdm/common/essam"

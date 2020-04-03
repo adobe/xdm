@@ -12,18 +12,8 @@
   "description": "Marketo Contact schema for use with B2B Accounts and Opportunities. Includes other Profile mixins like person/work details, opt in/out etc.",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/profile"
-  ],
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/context/person",
-    "https://ns.adobe.com/xdm/context/profile-personal-details",
-    "https://ns.adobe.com/xdm/context/profile-work-details",
-    "https://ns.adobe.com/xdm/context/profile-owning-entities",
-    "https://ns.adobe.com/xdm/context/profile-contact-crm",
-    "https://ns.adobe.com/xdm/context/optinout",
-    "https://ns.adobe.com/xdm/common/essam"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "meta:extends": ["https://ns.adobe.com/xdm/context/person","https://ns.adobe.com/xdm/context/profile-personal-details","https://ns.adobe.com/xdm/context/profile-work-details","https://ns.adobe.com/xdm/context/profile-owning-entities","https://ns.adobe.com/xdm/context/profile-contact-crm","https://ns.adobe.com/xdm/context/optinout","https://ns.adobe.com/xdm/common/essam"],
   "definitions": {
     "marketo-person-contact": {
       "properties": {

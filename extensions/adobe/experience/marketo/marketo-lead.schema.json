@@ -14,41 +14,36 @@
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "meta:extends": [
-    "https://ns.adobe.com/xdm/context/person",
-	"https://ns.adobe.com/xdm/context/profile-work-details",
-    "https://ns.adobe.com/xdm/context/profile-lead-crm",
-	"https://ns.adobe.com/xdm/context/optinout",
-	"https://ns.adobe.com/xdm/common/essam"
-  ],
+    "https://ns.adobe.com/xdm/context/person", "https://ns.adobe.com/xdm/context/profile-work-details", "https://ns.adobe.com/xdm/context/profile-lead-crm", "https://ns.adobe.com/xdm/context/optinout", "https://ns.adobe.com/xdm/common/essam"],
   "definitions": {
     "marketo-lead": {
       "properties": {
         "marketo:leadId": {
           "title": "Marketo Lead ID",
           "description": "Marketo lead id.",
-		  "type": "string"
+          "type": "string"
         },
         "marketo:mktPersonId": {
           "title": "Marketo Person Id",
           "description": "Marketo person id.",
-		  "type": "string"
+          "type": "string"
         },
         "marketo:abmProposedNameId": {
           "title": "Account Based Marketing Proposed Name Id",
           "description": "Account based marketing proposed name id.",
-		  "type": "string"
+          "type": "string"
         },
         "marketo:count": {
           "title": "Count",
           "description": "Count.",
-		  "type": "number"
+          "type": "number"
         },
         "marketo:totalProposedNameCount": {
           "title": "Total Proposed Name Count",
           "description": "Total proposed name count.",
-		  "type": "number"
-        }	  
-	  }
+          "type": "number"
+        }
+      }
     }
   },
   "allOf": [

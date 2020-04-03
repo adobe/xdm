@@ -1,0 +1,230 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/marketo/marketo-person-contact",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Marketo Contact Schema",
+  "type": "object",
+  "description": "Marketo Contact schema for use with B2B Accounts and Opportunities. Includes other Profile mixins like person/work details, opt in/out etc.",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/profile"
+  ],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/context/person",
+    "https://ns.adobe.com/xdm/context/profile-personal-details",
+    "https://ns.adobe.com/xdm/context/profile-work-details",
+    "https://ns.adobe.com/xdm/context/profile-owning-entities",
+    "https://ns.adobe.com/xdm/context/profile-contact-crm",
+    "https://ns.adobe.com/xdm/context/optinout",
+    "https://ns.adobe.com/xdm/common/essam"
+  ],
+  "definitions": {
+    "marketo-person-contact": {
+      "properties": {
+        "marketo:id": {
+          "title": "Id",
+          "description": "Id.",
+          "type": "string"
+        },
+        "marketo:marketoID": {
+          "title": "Marketo Id",
+          "description": "Marketo id.",
+          "type": "string"
+        },
+        "marketo:instanceID": {
+          "title": "Instance Id",
+          "description": "Source System Id.",
+          "type": "string"
+        },
+        "marketo:mktoIntegrationLogID": {
+          "title": "Marketo Integration Log Id",
+          "description": "Marketo integration log id.",
+          "type": "string"
+        },
+        "marketo:additionalFields": {
+          "title": "additional fields",
+          "description": "additional fields",
+          "type": "string"
+        },
+        "marketo:anonymousHostname": {
+          "title": "anonymous hostname",
+          "description": "anonymous hostname",
+          "type": "string"
+        },
+        "marketo:blackListed": {
+          "title": "black listed",
+          "description": "black listed",
+          "type": "boolean"
+        },
+        "marketo:blackListedCause": {
+          "title": "black listed cause",
+          "description": "black listed cause",
+          "type": "string"
+        },
+        "marketo:emailInvalid": {
+          "title": "email invalid",
+          "description": "email invalid",
+          "type": "boolean"
+        },
+        "marketo:emailInvalidCause": {
+          "title": "email invalid cause",
+          "description": "email invalid cause",
+          "type": "string"
+        },
+        "marketo:employeePositionID": {
+          "title": "employee position id",
+          "description": "employee position id",
+          "type": "string"
+        },
+        "marketo:inferredCity": {
+          "title": "inferred city",
+          "description": "inferred city",
+          "type": "string"
+        },
+        "marketo:inferredCompany": {
+          "title": "inferred company",
+          "description": "inferred company",
+          "type": "string"
+        },
+        "marketo:inferredCompanyStatus": {
+          "title": "inferred company status",
+          "description": "inferred company status",
+          "type": "string"
+        },
+        "marketo:inferredCountry": {
+          "title": "inferred country",
+          "description": "inferred country",
+          "type": "string"
+        },
+        "marketo:inferredMetropolitanArea": {
+          "title": "inferred metropolitan area",
+          "description": "inferred metropolitan area",
+          "type": "string"
+        },
+        "marketo:inferredPhoneAreaCode": {
+          "title": "inferred phone area code",
+          "description": "inferred phone area code",
+          "type": "string"
+        },
+        "marketo:inferredPostalCode": {
+          "title": "inferred postal code",
+          "description": "inferred postal code",
+          "type": "string"
+        },
+        "marketo:inferredStateRegion": {
+          "title": "inferred state region",
+          "description": "inferred state region",
+          "type": "string"
+        },
+        "marketo:isAnonymous": {
+          "title": "is anonymous",
+          "description": "is anonymous",
+          "type": "boolean"
+        },
+        "marketo:isCustomer": {
+          "title": "is customer",
+          "description": "is customer",
+          "type": "boolean"
+        },
+        "marketo:isEmployee": {
+          "title": "is employee",
+          "description": "is employee",
+          "type": "boolean"
+        },
+        "marketo:isLead": {
+          "title": "is lead",
+          "description": "is lead",
+          "type": "boolean"
+        },
+        "marketo:isPartner": {
+          "title": "is partner",
+          "description": "is partner",
+          "type": "boolean"
+        },
+        "marketo:isPrivate": {
+          "title": "is private",
+          "description": "is private",
+          "type": "boolean"
+        },
+        "marketo:mktAccountID": {
+          "title": "mkt account id",
+          "description": "mkt account id",
+          "type": "string"
+        },
+        "marketo:mktgSuspended": {
+          "title": "mktg suspended",
+          "description": "mktg suspended",
+          "type": "boolean"
+        },
+        "marketo:mktgSuspendedCause": {
+          "title": "mktg suspended cause",
+          "description": "mktg suspended cause",
+          "type": "string"
+        },
+        "marketo:notes": {
+          "title": "notes",
+          "description": "notes",
+          "type": "string"
+        },
+        "marketo:orgID": {
+          "title": "org id",
+          "description": "org id",
+          "type": "string"
+        },
+        "marketo:primaryLeadInterestID": {
+          "title": "primary lead interest id",
+          "description": "primary lead interest id",
+          "type": "boolean"
+        },
+        "marketo:registerSourceInfo": {
+          "title": "register source info",
+          "description": "register source info",
+          "type": "string"
+        },
+        "marketo:registerSourceType": {
+          "title": "register source type",
+          "description": "register source type",
+          "type": "string"
+        },
+        "marketo:salesContactOwnerID": {
+          "title": "sales contact owner id",
+          "description": "sales contact owner id",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/person"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/profile-personal-details"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/profile-work-details"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/profile-owning-entities"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/profile-contact-crm"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/optinout"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/essam"
+    },
+    {
+      "$ref": "#/definitions/marketo-person-contact"
+    }
+  ],
+  "meta:status": "experimental"
+}

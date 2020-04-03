@@ -1,0 +1,37 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/common/essam",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "External Source System Attributes Mixin",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/opportunity","https://ns.adobe.com/xdm/context/account"
+  ],
+  "description": "Mixin which defines a set a audit properties for extenal sources.",
+  "definitions": {
+    "extSourceAudit": {
+      "properties": {
+        "xdm:extSourceAudit": {
+          "title": "External Source Audit Properties",
+          "$ref": "https://ns.adobe.com/xdm/common/essa",
+          "description": "Audit attributes for external sources."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/extSourceAudit"
+    }
+  ],
+  "meta:status": "experimental"
+}

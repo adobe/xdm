@@ -28,11 +28,11 @@
           "description": "Master record id.",
           "type": "string"
         },
-       "xdm:ownerID": {
+        "xdm:ownerID": {
           "title": "Contact Owner id",
           "description": "Contact owner id",
           "type": "string"
-        },		
+        },
         "xdm:accountID": {
           "title": "Contact account id",
           "description": "Contact account id",
@@ -133,7 +133,7 @@
           "title": "phone opt out reason",
           "description": "phone opt out reason",
           "type": "string"
-        },
+        }
       }
     }
   },

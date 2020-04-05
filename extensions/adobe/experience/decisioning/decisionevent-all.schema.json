@@ -7,14 +7,14 @@
   ],
   "$id": "https://ns.adobe.com/experience/decisioning/decisionevent-all",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "DecisionEvent Details for Reporting",
+  "title": "XDM Decision Event - Details for Reporting",
   "type": "object",
-  "description": "Extension for DecisionEvent that adds dimensions for rollup by organization, container and/or batch.",
   "meta:abstract": true,
   "meta:extensible": true,
   "meta:intendedToExtend": [
     "https://ns.adobe.com/experience/decisioning/decisionevent"
   ],
+  "description": "Extension for DecisionEvent that adds dimensions for rollup by organization, container, batch job and request.",
   "definitions": {
     "decisioning-mixin": {
       "properties": {
@@ -32,6 +32,11 @@
           "title": "Batch Identifier",
           "type": "string",
           "description": "An identity associated with the decision event, if the request was made in batch mode. This property will be absent if the decision leading to this event was made individually for a single profile identity."
+        },
+        "https://ns.adobe.com/experience/decisioning/decisionRequestID": {
+          "title": "Request Identifier",
+          "type": "string",
+          "description": "An optional identifier that was provided by the client, unique per profile and request. It is used to track the decision request in the dataset of propositions. If a request was processed more than once for any reason there will be more than one event with the same decision request identifier in the dataset and those events can be de-duplicated."
         }
       }
     }
@@ -43,6 +48,5 @@
     {
       "$ref": "#/definitions/decisioning-mixin"
     }
-  ],
-  "meta:status": "experimental"
+  ]
 }

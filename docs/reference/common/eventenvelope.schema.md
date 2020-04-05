@@ -51,6 +51,36 @@ An `EventEnvelope` is a type of `Activity` (in the sense of [W3C Activity Stream
 
 ```json
 {
+  "@type": "https://ns.adobe.com/xdm/common/event/updated",
+  "xdm:objectType": "http://ns.adobe.com/adobecloud/core/1.0/asset",
+  "activitystreams:published": "2016-07-16T19:20:30+01:00",
+  "@id": "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
+  "activitystreams:to": {
+    "@type": "http://ns.adobe.com/adobecloudplatform/ims/organization",
+    "@id": "08B3E5CE5822FC520A494229@AdobeOrg"
+  },
+  "activitystreams:generator": {
+    "@type": "https://ns.adobe.com/xdm/content/repository",
+    "@id": "https://francois.corp.adobe.com:4502/"
+  },
+  "activitystreams:actor": {
+    "@type": "https://ns.adobe.com/experience/aem/user",
+    "@id": "admin"
+  },
+  "activitystreams:object": {
+    "@type": "http://ns.adobe.com/adobecloud/core/1.0/asset",
+    "repo:id": "urn:aaid:aem:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
+    "@id": "https://francois.corp.adobe.com:4502/content/dam/Fx_DUKE-small.jpg",
+    "xdm:name": "Fx_DUKE-small.png",
+    "xdm:path": "/content/dam/Fx_DUKE-small.png",
+    "dc:format": "image/png",
+    "repo:etag": "\"6fc55d0389d856ae7wddwebba54f110e\""
+  }
+}
+```
+
+```json
+{
   "@type": "https://ns.adobe.com/xdm/common/event/created",
   "xdm:objectType": "http://ns.adobe.com/adobecloud/core/1.0/asset",
   "activitystreams:published": "2016-07-16T19:20:30+01:00",
@@ -125,36 +155,6 @@ An `EventEnvelope` is a type of `Activity` (in the sense of [W3C Activity Stream
     "@id": "http://adobesummit.adobesandbox.com:4502/content/geometrixx/en/vintage.html",
     "dc:title": "Vintage Collection",
     "xdm:path": "/content/geometrixx/en/vintage.html"
-  }
-}
-```
-
-```json
-{
-  "@type": "https://ns.adobe.com/xdm/common/event/updated",
-  "xdm:objectType": "http://ns.adobe.com/adobecloud/core/1.0/asset",
-  "activitystreams:published": "2016-07-16T19:20:30+01:00",
-  "@id": "https://events.adobe.io/event/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
-  "activitystreams:to": {
-    "@type": "http://ns.adobe.com/adobecloudplatform/ims/organization",
-    "@id": "08B3E5CE5822FC520A494229@AdobeOrg"
-  },
-  "activitystreams:generator": {
-    "@type": "https://ns.adobe.com/xdm/content/repository",
-    "@id": "https://francois.corp.adobe.com:4502/"
-  },
-  "activitystreams:actor": {
-    "@type": "https://ns.adobe.com/experience/aem/user",
-    "@id": "admin"
-  },
-  "activitystreams:object": {
-    "@type": "http://ns.adobe.com/adobecloud/core/1.0/asset",
-    "repo:id": "urn:aaid:aem:4123ba4c-93a8-4c5d-b979-ffbbe4318185",
-    "@id": "https://francois.corp.adobe.com:4502/content/dam/Fx_DUKE-small.jpg",
-    "xdm:name": "Fx_DUKE-small.png",
-    "xdm:path": "/content/dam/Fx_DUKE-small.png",
-    "dc:format": "image/png",
-    "repo:etag": "\"6fc55d0389d856ae7wddwebba54f110e\""
   }
 }
 ```

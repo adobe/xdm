@@ -5,45 +5,45 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/Journey/orchestration/journeyFields",
+  "$id": "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyFields",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Journey Orchestration common Journey Fields",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": [
-    "https://ns.adobe.com/experience/Journey/orchestration/journey"
+    "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journey"
   ],
   "description": "This Mixin will have Common Journey Metadata Fields",
   "definitions": {
     "journeyFields": {
       "properties": {
-        "https://ns.adobe.com/experience/Journey/orchestration": {
+        "https://ns.adobe.com/experience/journeyOrchestration/stepEvents": {
           "title": "Journey Orchestration common Journey Fields",
           "type": "object",
           "properties": {
 
-            "journeyId":{
+            "journey:journeyId":{
               "title":"journeyId",
               "description":"Identifier for the given Journey",
               "type":"string"
             },
-            "journeyVersionId":{
+            "journey:journeyVersionId":{
               "title":"journeyVersionId",
               "description":"Id of the journey version. This id represents the identity of a journey",
               "type":"string"
             },
-            "name":{
+            "journey:name":{
               "title":"name",
               "description":"Name of the Journey",
               "type":"string"
             },
-            "description":{
+            "journey:description":{
               "title":"description",
               "description":"Description of the Journey",
               "type":"string"
             },
-            "version":{
+            "journey:version":{
               "title":"version",
               "description":"Describes the Journey Version",
               "type":"string"
@@ -59,4 +59,4 @@
     }
   ],
   "meta:status": "experimental"
-}ss
+}

@@ -5,154 +5,155 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/journey/orchestration/journeyStepEventCommonFields",
+  "$id": "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyStepEventCommonFields",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Journey Orchestration Step veeent  Common Fields",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": [
-    "https://ns.adobe.com/experience/Journey/orchestration/journeyStepEvent"
+    "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyStepEvent",
+    "https://ns.adobe.com/xdm/context/experienceevent"
   ],
   "description": "This Mixin contains the common Jounney Metadata information ",
   "definitions": {
     "journeyStepEventCommonFields": {
       "properties": {
-        "https://ns.adobe.com/experience/journey/orchestration": {
+        "https://ns.adobe.com/experience/journeyOrchestration/stepEvents": {
           "title": "Journey Orchestration for creating user journey.",
           "type": "object",
           "properties": {
-            "entrance":{
+            "journey:entrance":{
               "title":"entrance",
               "description":"Indicate if the user has entered the journey. If not present, assuming that the value is false",
               "type":"boolean"
             },
-            "reentrance":{
+            "journey:reentrance":{
               "title":"reentrance",
               "description":"Indicate if the user has reentered the journey with the same instance. If not present, assuming that the value is false",
               "type":"boolean"
             },
-            "instanceEnded":{
+            "journey:instanceEnded":{
               "title":"instanceEnded",
               "description":"Indicate if the instance is ended (sucessfully or not)",
               "type":"boolean"
             },
-            "eventId":{
+            "journey:eventId":{
               "title":"eventId",
               "description":"Event id in processing, for the step processing",
               "type":"string"
             },
-            "nodeId":{
+            "journey:nodeId":{
               "title":"nodeId",
               "description":"client node id",
               "type":"string"
             },
-            "stepId":{
+            "journey:stepId":{
               "title":"stepId",
               "description":"Unique id of the step that is currently in processing",
               "type":"string"
             },
-            "stepName":{
+            "journey:stepName":{
               "title":"stepName",
               "description":"Name of the step that is currently in processing",
               "type":"string"
             },
-            "stepType":{
+            "journey:stepType":{
               "title":"stepType",
               "description":"Type of the step",
               "type":"string"
             },
-            "stepStatus":{
+            "journey:stepStatus":{
               "title":"stepStatus",
               "description":"Status of the journey step, representing in which shape the step is, when its processing has been done",
               "type":"string"
             },
-            "journeyId":{
+            "journey:journeyId":{
               "title":"journeyId",
               "description":"ID of the journey",
               "type":"string"
             },
-            "journeyVersionId":{
+            "journey:journeyVersionId":{
               "title":"journeyVersionId",
               "description":"ID of the journey version. This id represents the identity reference to the journey, in case of the journeyStepEvent",
               "type":"string"
             },
-            "journeyVersionName":{
+            "journey:journeyVersionName":{
               "title":"journeyVersionName",
               "description":"Name of the journey version",
               "type":"string"
             },
-            "journeyVersion":{
+            "journey:journeyVersion":{
               "title":"journeyVersion",
               "description":"Version of the journey version",
               "type":"string"
             },
-            "instanceId":{
+            "journey:instanceId":{
               "title":"instanceId",
               "description":"Internal ID of the journey instance",
               "type":"string"
             },
-            "externalKey":{
+            "journey:externalKey":{
               "title":"externalKey",
               "description":"External key extracted from the event to process it",
               "type":"string"
             },
-            "parentStepId":{
+            "journey:parentStepId":{
               "title":"parentStepId",
               "description":"Step ID of the parent of the current processed step in the instance",
               "type":"string"
             },
-            "parentStepName":{
+            "journey:parentStepName":{
               "title":"parentStepName",
               "description":"Step name of the parent of the current step.",
               "type":"string"
             },
-            "parentTransitionId":{
+            "journey:parentTransitionId":{
               "title":"parentTransitionId",
               "description":"Id of the transition which has brought the instance to the processed step",
               "type":"string"
             },
-            "parentTransitionName":{
+            "journey:parentTransitionName":{
               "title":"parentTransitionName",
               "description":"Name of the transition which has brought the instance to the processed step",
               "type":"string"
             },
-            "inTest":{
+            "journey:inTest":{
               "title":"inTest",
               "description":"Whether this journey is in test mode or not",
               "type":"boolean"
             },
-            "processingTime":{
+            "journey:processingTime":{
               "title":"processingTime",
               "description":"total time in millis from the instance step entrance to the end of the processing",
               "type":"integer"
             },
-            "instanceType":{
+            "journey:instanceType":{
               "title":"instanceType",
               "description":"indicate the instance type, if it is batch or unitary",
               "type":"string"
             },
-            "recurrenceIndex":{
+            "journey:recurrenceIndex":{
               "title":"recurrenceIndex",
               "description":"Index of the recurrence if the journey is batch and recurring (first run has recurrenceIndex = 1)",
               "type":"integer"
             },
-            "isBatchToUnitary":{
+            "journey:isBatchToUnitary":{
               "title":"isBatchToUnitary",
               "description":"Indicates if this unitary instance has been triggered from a batch instance",
               "type":"boolean"
             },
-            "batchExternalKey":{
+            "journey:batchExternalKey":{
               "title":"batchExternalKey",
               "description":" External Key for batch event",
               "type":"string"
             },
-            "batchInstanceId":{
+            "journey:batchInstanceId":{
               "title":"batchInstanceId",
               "description":" this is the batch instance id",
               "type":"string"
             },
-            "batchUnitaryBranchId":{
+            "journey:batchUnitaryBranchId":{
               "title":"batchUnitaryBranchId",
               "description":"If the instance has been triggered from a batch instance, unitary branch id",
               "type":"string"

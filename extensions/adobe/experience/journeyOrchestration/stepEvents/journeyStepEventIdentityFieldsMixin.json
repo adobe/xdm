@@ -5,29 +5,29 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/Journey/orchestration/journeyStepEventIdentityFields",
+  "$id": "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyStepEventIdentityFields",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Journey Orchestration Step Event Identity Fields",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": [
-    "https://ns.adobe.com/experience/Journey/orchestration/journeyStepEvent"
+    "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyStepEvent"
   ],
   "description": "This event is in relation with journey and describe the profile Identifiers",
   "definitions": {
     "journeyStepEventIdentityFields": {
       "properties": {
-        "https://ns.adobe.com/experience/Journey/orchestration": {
+        "https://ns.adobe.com/experience/journeyOrchestration/stepEvents": {
           "title": "Journey Orchestration Step Event Identity Fields.",
           "type": "object",
           "properties": {
-            "xdm:profileId": {
+            "journey:profileId": {
               "title": "Profile ID",
               "type": "string",
               "description": "profile identifier identifies the profile sent /used in a journey"
             },
-            "xdm:profileNamespace": {
+            "journey:profileNamespace": {
               "title": "Profile Namespace",
               "type": "string",
               "description": "Profile Identifier Namespace"

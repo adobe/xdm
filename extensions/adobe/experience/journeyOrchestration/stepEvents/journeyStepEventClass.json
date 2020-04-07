@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/Journey/orchestration/journeyStepEvent",
+  "$id": "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyStepEvent",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Journey Step Event",
   "type": "object",
@@ -16,21 +16,21 @@
   "definitions": {
     "journeyStepEvent": {
       "properties": {
-        "https://ns.adobe.com/experience/campaign/orchestration": {
+        "https://ns.adobe.com/experience/journeyOrchestration/stepEvents": {
           "title": "Journey Step Event Class ",
           "type": "object",
           "properties": {
-            "entrance": {
+            "journey:entrance": {
               "title": "entrance",
               "description": "",
               "type": "boolean"
             },
-            "reentrance": {
+            "journey:reentrance": {
               "title": "reentrance",
               "description": "Indicate if the user has reentered the journey with the same instance. If not present, assuming that the value is false",
               "type": "boolean"
             },
-            "instanceEnded": {
+            "journey:instanceEnded": {
               "title": "instanceEnded",
               "description": "Indicate if the Journey instance has ended ",
               "type": "boolean"

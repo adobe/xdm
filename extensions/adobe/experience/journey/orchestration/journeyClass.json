@@ -18,9 +18,8 @@
   "description":
     "A Record based Journey class for Journey orchestration contains common journey fields",
   "definitions": {
-    "profile": {
-      "properties": { }
-    }
+     
+     "properties": { }
   },
   "allOf": [
     {

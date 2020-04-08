@@ -43,29 +43,29 @@
               "description":"Indicates if the action is parameterized or not",
               "type":"boolean"
             },
-            "journey:actionExecTime":{
-              "title":"actionExecTime",
-              "description":"The amount of time (in millis) taken to execute a current action",
+            "journey:actionExecutionTime":{
+              "title":"actionExecutionTime",
+              "description":"The amount of time (in milliseconds) taken to execute a current action",
               "type":"integer"
             },
-            "journey:actionExecError":{
-              "title":"actionExecError",
+            "journey:actionExecutionError":{
+              "title":"actionExecutionError",
               "description":"Type of error that happens when the action is called.",
               "type":"string"
             },
-            "journey:actionExecErrorCode":{
-              "title":"actionExecErrorCode",
+            "journey:actionExecutionErrorCode":{
+              "title":"actionExecutionErrorCode",
               "description":"Code for action execution error. Present if the error has a code, such as an HTTP one",
               "type":"string"
             },
-            "journey:actionExecOrigError":{
-              "title":"actionExecOrigError",
+            "journey:actionExecutionOriginalError":{
+              "title":"actionExecutionOriginalError",
               "description":"",
               "type":"string"
             },
-            "journey:actionExecOrigErrorCode":{
-              "title":"actionExecOrigErrorCode",
-              "description":"error code of the actionExecOrigError",
+            "journey:actionExecutionOriginalErrorCode":{
+              "title":"actionExecutionOriginalErrorCode",
+              "description":"error code of the actionExecutionOriginalError",
               "type":"string"
             },
             "journey:actionBusinessType":{

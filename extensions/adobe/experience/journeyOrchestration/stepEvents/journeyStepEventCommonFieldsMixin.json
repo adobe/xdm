@@ -125,7 +125,7 @@
             },
             "journey:processingTime":{
               "title":"processingTime",
-              "description":"total time in millis from the instance step entrance to the end of the processing",
+              "description":"Total time in milliseconds from the instance step entrance to the end of the processing",
               "type":"integer"
             },
             "journey:instanceType":{

@@ -3,33 +3,33 @@
   "xdm:elementType": "core/wcm/components/text/v2/text",
   "xdm:text": "Negotiations are to take place once every two or three weeks from now until the summer at least, alternating between Brussels and London - with the prime minister insisting a deal must be struck by the year's end",
   "repo:name": "News at No 10",
-  "xmp:machineKeywords": [
+  "xdm:predictedTags": [
     {
-      "value": "politics",
+      "xmp:value": "politics",
       "confidence": 0.852
     },
     {
-      "value": "government",
+      "xmp:value": "government",
       "confidence": 0.793
     },
     {
-      "value": "politics",
+      "xmp:value": "politics",
       "confidence": 0.689
     },
     {
-      "value": "budget",
+      "xmp:value": "budget",
       "confidence": 0.8
     },
     {
-      "value": "economy",
+      "xmp:value": "economy",
       "confidence": 0.887
     },
     {
-      "value": "bbc/brexit",
+      "xmp:value": "bbc/brexit",
       "confidence": 1
     },
     {
-      "value": "bbc/borrisjohnson",
+      "xmp:value": "bbc/borrisjohnson",
       "confidence": 1
     }
   ]

@@ -12,13 +12,13 @@
         "xdm:name": "lava-rock-formation.jpg",
         "xdm:id": "c58c09f6-e382-4698-bfbd-e8c8d37712c8",
         "xdm:format": "image/jpeg",
-        "xdm:tags": [
+        "xdm:predictedTags": [
           {
-            "name": "white",
+            "xmp:value": "white",
             "confidence": 1
           },
           {
-            "name": "winter",
+            "xmp:value": "winter",
             "confidence": 0.8
           }
         ]
@@ -36,13 +36,13 @@
           "xdm:name": "lava-into-ocean.jpg",
           "xdm:id": "0f54e1b5-535b-45f7-a46b-35abb19dd6bc",
           "xdm:format": "image/jpeg",
-          "xdm:tags": [
+          "xdm:predictedTags": [
             {
-              "name": "white",
+              "xmp:value": "white",
               "confidence": 1
             },
             {
-              "name": "winter",
+              "xmp:value": "winter",
               "confidence": 0.8
             }
           ]
@@ -60,13 +60,13 @@
           "xdm:name": "snowy-mountain-glacier.jpg",
           "xdm:id": "45c6ee92-90e1-4af2-af69-b6dcbc7daeb7",
           "xdm:format": "image/jpeg",
-          "xdm:tags": [
+          "xdm:predictedTags": [
             {
-              "name": "white",
+              "xmp:value": "white",
               "confidence": 1
             },
             {
-              "name": "winter",
+              "xmp:value": "winter",
               "confidence": 0.8
             }
           ]
@@ -78,7 +78,7 @@
   "xdm:webPage": {
     "xdm:id": "page-113d229837",
     "xdm:type": "page",
-    "xdm:language": "en-us",
+    "dc:language": "en-us",
     "xdm:path": "/content/we-retail/us/en/products/equipment/snow-sports/midweight-fleece-gloves/jcr:content",
     "xdm:name": "Midweight Fleece Gloves",
     "xdm:template": "/conf/we-retail/settings/wcm/templates/product-page",
@@ -465,13 +465,13 @@
           "xdm:name": "lava-into-ocean.jpg",
           "xdm:id": "0f54e1b5-535b-45f7-a46b-35abb19dd6bc",
           "xdm:format": "image/jpeg",
-          "xdm:tags": [
+          "xdm:predictedTags": [
             {
-              "name": "white",
+              "xmp:value": "white",
               "confidence": 1
             },
             {
-              "name": "winter",
+              "xmp:value": "winter",
               "confidence": 0.8
             }
           ]
@@ -489,13 +489,13 @@
           "xdm:name": "snowy-mountain-glacier.jpg",
           "xdm:id": "45c6ee92-90e1-4af2-af69-b6dcbc7daeb7",
           "xdm:format": "image/jpeg",
-          "xdm:tags": [
+          "xdm:predictedTags": [
             {
-              "name": "white",
+              "xmp:value": "white",
               "confidence": 1
             },
             {
-              "name": "winter",
+              "xmp:value": "winter",
               "confidence": 0.8
             }
           ]
@@ -513,13 +513,13 @@
           "xdm:name": "lava-rock-formation.jpg",
           "xdm:id": "c58c09f6-e382-4698-bfbd-e8c8d37712c8",
           "xdm:format": "image/jpeg",
-          "xdm:tags": [
+          "xdm:predictedTags": [
             {
-              "name": "white",
+              "xmp:value": "white",
               "confidence": 1
             },
             {
-              "name": "winter",
+              "xmp:value": "winter",
               "confidence": 0.8
             }
           ]

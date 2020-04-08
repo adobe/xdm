@@ -40,7 +40,7 @@
           "type": "string",
           "description": "The title of the web element"
         },
-        "xdm:language": {
+        "dc:language": {
           "type": "string",
           "pattern": "^(((([A-Za-z]{2,3}(-([A-Za-z]{3}(-[A-Za-z]{3}){0,2}))?)|[A-Za-z]{4}|[A-Za-z]{5,8})(-([A-Za-z]{4}))?(-([A-Za-z]{2}|[0-9]{3}))?(-([A-Za-z0-9]{5,8}|[0-9][A-Za-z0-9]{3}))*(-([0-9A-WY-Za-wy-z](-[A-Za-z0-9]{2,8})+))*(-(x(-[A-Za-z0-9]{1,8})+))?)|(x(-[A-Za-z0-9]{1,8})+)|((en-GB-oed|i-ami|i-bnn|i-default|i-enochian|i-hak|i-klingon|i-lux|i-mingo|i-navajo|i-pwn|i-tao|i-tay|i-tsu|sgn-BE-FR|sgn-BE-NL|sgn-CH-DE)|(art-lojban|cel-gaulish|no-bok|no-nyn|zh-guoyu|zh-hakka|zh-min|zh-min-nan|zh-xiang)))$",
           "description": "Specifies the language of this web element. the language property should conform to BPC 47, for example `en-GB`."
@@ -61,36 +61,36 @@
           "type": "string",
           "description": "The element's text."
         },
-        "xmp:keywords": {
+        "xdm:predictedTags": {
           "type": "array",
-          "title": "Keywords",
+          "title": "Predicted Tags",
           "items": {
             "$schema": "http://json-schema.org/draft-06/schema#",
-            "title": "Keyword",
-            "description": "The `Keyword` schema describes a keyword in a list of keywords, with specific locale and importance relative to other keywords in the same list.",
+            "title": "Predicted tag",
+            "description": "The `Predicted tag` schema describes a tag in a list of tags, with specific importance relative to other tags in the same list.",
             "properties": {
-              "value": {
+              "xmp:value": {
                 "title": "Value",
-                "description": "The keyword itself. A keyword can be considered like a tag, i.e. a short description of the content of the asset.",
+                "description": "The tag itself. A short description of the content of the webelement.",
                 "type": "string"
               },
-              "localeCode": {
+              "dc:language": {
                 "type": "string",
                 "pattern": "^(((([A-Za-z]{2,3}(-([A-Za-z]{3}(-[A-Za-z]{3}){0,2}))?)|[A-Za-z]{4}|[A-Za-z]{5,8})(-([A-Za-z]{4}))?(-([A-Za-z]{2}|[0-9]{3}))?(-([A-Za-z0-9]{5,8}|[0-9][A-Za-z0-9]{3}))*(-([0-9A-WY-Za-wy-z](-[A-Za-z0-9]{2,8})+))*(-(x(-[A-Za-z0-9]{1,8})+))?)|(x(-[A-Za-z0-9]{1,8})+)|((en-GB-oed|i-ami|i-bnn|i-default|i-enochian|i-hak|i-klingon|i-lux|i-mingo|i-navajo|i-pwn|i-tao|i-tay|i-tsu|sgn-BE-FR|sgn-BE-NL|sgn-CH-DE)|(art-lojban|cel-gaulish|no-bok|no-nyn|zh-guoyu|zh-hakka|zh-min|zh-min-nan|zh-xiang)))$",
                 "description": "Language of the keyword. The locale code should follow [RFC BCP 47](https://tools.ietf.org/html/bcp47)",
                 "examples": ["en-US", "de-CH"]
               },
-              "importance": {
+              "xdm:confidence": {
                 "type": "number",
-                "title": "Importance",
+                "title": "Confidence score",
                 "minimum": 0,
                 "maximum": 1,
-                "description": "The importance of the keyword on a scale from zero to one. If required repository will infer it as per its policies and add it for the keywords"
+                "description": "The confidence score of the predicted tag on a scale from zero to one."
               }
             },
-            "required": ["value"]
+            "required": ["xmp:value"]
           },
-          "description": "The `keywords` property is used to track human-assigned descriptive phrases like keywords or tags of an asset. Rather than a plan list of tags, it is a structured set of keywords, where keywords can have an explicit importance ranking and a locale. This allows the management of multi-lingual keywords for a given asset. For machine-generated keywords, use the `machineKeywords` property. "
+          "description": "The `predictedTags` property is used to track machine-generated tags of webelement like `text`."
         },
         "repo:parentId": {
           "title": "Parent ID",

@@ -16,12 +16,12 @@
   "definitions": {
     "productListItem": {
       "properties": {
-        "productAsset": {
+        "asset": {
           "title": "Product asset",
           "$ref": "https://ns.adobe.com/experience/content-telemetry/webasset",
           "description": "The asset associated with the product."
         },
-        "productProperties": {
+        "attributes": {
           "title": "Product properties",
           "$ref": "https://ns.adobe.com/xdm/content/productlistitem",
           "description": "The properties of the product."
@@ -30,7 +30,7 @@
     },
     "commerce": {
       "properties": {
-        "commerceActivity": {
+        "activity": {
           "title": "Commerce activity details",
           "description": "Details related to cart operations.",
           "$ref": "https://ns.adobe.com/xdm/context/commerce",

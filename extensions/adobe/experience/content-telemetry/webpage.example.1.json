@@ -1,10 +1,11 @@
 {
   "repo:id": "page-113d229837",
   "xdm:pageType": "core-components-examples/components/page",
-  "xdm:language": "en-us",
+  "dc:language": "en-us",
   "xdm:url": "https://www.adobe.com/content/we-retail/us/en/products/equipment/snow-sports/midweight-fleece-gloves.html",
   "repo:name": "Midweight Fleece Gloves",
   "xdm:templatePath": "/conf/we-retail/settings/wcm/templates/product-page",
+  "xdm:tags": ["example", "content"],
   "xdm:elements": [
     {
       "xdm:shownItems": ["tabs-9ebc28c5fc-item-b7234c5d61"],
@@ -347,13 +348,13 @@
         "repo:name": "lava-into-ocean.jpg",
         "repo:id": "0f54e1b5-535b-45f7-a46b-35abb19dd6bc",
         "dc:format": "image/jpeg",
-        "xmp:machineKeywords": [
+        "xdm:predictedTags": [
           {
-            "value": "white",
+            "xmp:value": "white",
             "confidence": 1
           },
           {
-            "value": "winter",
+            "xmp:value": "winter",
             "confidence": 0.8
           }
         ]
@@ -369,13 +370,13 @@
         "repo:name": "snowy-mountain-glacier.jpg",
         "repo:id": "45c6ee92-90e1-4af2-af69-b6dcbc7daeb7",
         "dc:format": "image/jpeg",
-        "xmp:machineKeywords": [
+        "xdm:predictedTags": [
           {
-            "value": "white",
+            "xmp:value": "white",
             "confidence": 1
           },
           {
-            "value": "winter",
+            "xmp:value": "winter",
             "confidence": 0.8
           }
         ]
@@ -391,13 +392,13 @@
         "repo:name": "lava-rock-formation.jpg",
         "repo:id": "c58c09f6-e382-4698-bfbd-e8c8d37712c8",
         "dc:format": "image/jpeg",
-        "xmp:machineKeywords": [
+        "xdm:predictedTags": [
           {
-            "value": "white",
+            "xmp:value": "white",
             "confidence": 1
           },
           {
-            "value": "winter",
+            "xmp:value": "winter",
             "confidence": 0.8
           }
         ]

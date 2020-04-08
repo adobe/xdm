@@ -25,12 +25,12 @@
             "journey:profileId": {
               "title": "Profile ID",
               "type": "string",
-              "description": "profile identifier identifies the profile sent /used in a journey"
+              "description": "profile identifier identifies the profile sent/used in a journey"
             },
             "journey:profileNamespace": {
               "title": "Profile Namespace",
               "type": "string",
-              "description": "Profile Identifier Namespace"
+              "description": "This field describes the Namespace referenced by the Profile used in the Journey"
             }
           }
         }

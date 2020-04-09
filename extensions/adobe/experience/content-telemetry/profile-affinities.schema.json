@@ -17,21 +17,26 @@
     "affinities": {
       "properties": {
         "xdm:affinities": {
-          "type": "object",
+          "type": "array",
           "title": "Profile affinites",
-          "properties": {
-            "tag": {
-              "title": "Affinity tag",
-              "description": "A string tag representing the type of content",
-              "type": "string"
+          "items": {
+            "$schema": "http://json-schema.org/draft-06/schema#",
+            "title": "Profile affinity",
+            "description": "An affinity is represented by a string tag and it's calculated score for a profile",
+            "properties": {
+              "tag": {
+                "title": "Affinity tag",
+                "description": "A string tag representing the type of content",
+                "type": "string"
+              },
+              "score": {
+                "title": "Affinity score",
+                "description": "A numeric score calculeted for the tag",
+                "type": "number"
+              }
             },
-            "score": {
-              "title": "Affinity score",
-              "description": "A numeric score calculeted for the tag",
-              "type": "number"
-            }
-          },
-          "required": ["tag", "score"]
+            "required": ["tag", "score"]
+          }
         }
       }
     }

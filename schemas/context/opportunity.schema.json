@@ -18,19 +18,14 @@
   "definitions": {
     "opportunity": {
       "properties": {
-        "xdm:ID": {
+        "xdm:opportuntyID": {
           "title": "Opportunity ID",
           "description": "Unique identifer of the opportunity",
           "type": "string"
         },
-        "xdm:type": {
+        "xdm:opportunityType": {
           "title": "Opportunity Type",
           "description": "Type of Opportunity.",
-          "type": "string"
-        },
-        "xdm:sourceID": {
-          "title": "Opportunity Source Id",
-          "description": "Opportunity source unique identifer",
           "type": "string"
         },
         "xdm:accountID": {

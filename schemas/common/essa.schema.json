@@ -5,14 +5,14 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/common/essa",
+  "$id": "https://ns.adobe.com/xdm/common/external-source-system-audit",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "External Source System Audit Attributes",
   "type": "object",
   "meta:extensible": true,
   "description": "External Source System Audit fields.",
   "definitions": {
-    "essa": {
+    "externalSourceSystemAudit": {
       "properties": {
         "xdm:createdBy": {
           "title": "Created By",
@@ -62,7 +62,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "#/definitions/essa"
+      "$ref": "#/definitions/external-source-system-audit"
     }
   ],
   "meta:status": "experimental"

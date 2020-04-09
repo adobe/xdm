@@ -17,14 +17,29 @@
   "definitions": {
     "opportunity-crm": {
       "properties": {
-        "xdm:name": {
+        "xdm:opportunityName": {
           "title": "Opportunity Name",
           "description": "Subject or descriptive name, such as the expected order or company name, for the opportunity.",
+          "type": "string"
+        },
+        "xdm:sourceType": {
+          "title": "Opportunity Source Type",
+          "description": "Opportunity source type",
           "type": "string"
         },
         "xdm:description": {
           "title": "Opportunity Description",
           "description": "Additional information to describe the opportunity, such as possible products to sell or past purchases from the customer.",
+          "type": "string"
+        },
+        "xdm:owner": {
+          "title": "Opportunity Source",
+          "description": "Assigned owner for this opportunity.",
+          "type": "string"
+        },
+        "xdm:leadSource": {
+          "title": "Lead Source",
+          "description": "Source of the opportunity.",
           "type": "string"
         },
         "xdm:stage": {
@@ -57,7 +72,7 @@
           "description": "The fiscal quarter this opportunity is targeted..",
           "type": "string"
         },
-        "xdm:hasOpportunityLineItem": {
+        "xdm:opportunityLineItem": {
           "title": "Has Opportunity Line Item",
           "description": "Flag to indicate whether this opportunity have more line items.",
           "type": "boolean"
@@ -69,14 +84,19 @@
           "minimum": 0,
           "maximum": 100
         },
-        "xdm:Closed": {
+        "xdm:closed": {
           "title": "Closed",
           "description": "Flag indicating if this opportunity is closed.",
           "type": "boolean"
         },
-        "xdm:Won": {
+        "xdm:won": {
           "title": "Won",
           "description": "Flag indicating if this opportunity is Won.",
+          "type": "boolean"
+        },
+        "xdm:delete": {
+          "title": "Is Deleted",
+          "description": "Flag indicating if this opportunity is deleted.",
           "type": "boolean"
         },
         "xdm:closeDate": {
@@ -90,11 +110,6 @@
           "description": "Description of next task in closing opportunity.",
           "type": "string"
         },
-        "xdm:lastActivity": {
-          "title": "Last Activity",
-          "description": "Last activity captured for this sales opportunity.",
-          "type": "string"
-        },
         "xdm:private": {
           "title": "Private",
           "description": "Indicates that the opportunity is private.",
@@ -105,7 +120,7 @@
           "description": "Contract unique Identifier reference that this opportunity is linked to.",
           "type": "string"
         },
-        "xdm:forcastCategory": {
+        "xdm:forecastCategory": {
           "title": "Forecast Category",
           "description": "Forecast Category determined by the opportunity Stage value eg: omitted,pipeline,bestcase,commit,closed.",
           "type": "string"
@@ -129,9 +144,6 @@
     },
     {
       "$ref": "#/definitions/opportunity-crm"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/context/contactmap"
     }
   ],
   "required": [

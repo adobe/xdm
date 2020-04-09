@@ -56,7 +56,7 @@
             "type": "string",
             "description": "The list of manually assigned tags for the asset"
           },
-          "description": "The `keywords` property is used to track human-assigned descriptive phrases like keywords or tags of an asset. Rather than a plan list of tags, it is a structured set of keywords, where keywords can have an explicit importance ranking and a locale. This allows the management of multi-lingual keywords for a given asset. For machine-generated keywords, use the `machineKeywords` property. "
+          "description": "The `manualTags` property is used to track human-assigned descriptive phrases like keywords or tags of an asset."
         },
         "xdm:predictedTags": {
           "type": "array",

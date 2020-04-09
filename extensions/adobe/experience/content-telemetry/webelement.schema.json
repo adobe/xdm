@@ -61,6 +61,16 @@
           "type": "string",
           "description": "The element's text."
         },
+        "xdm:manualTags": {
+          "type": "array",
+          "title": "Tags",
+          "items": {
+            "title": "Tag",
+            "type": "string",
+            "description": "The list of manually assigned tags for the element"
+          },
+          "description": "The `manualTags` property is used to track human-assigned descriptive phrases like keywords or tags of an web element."
+        },
         "xdm:predictedTags": {
           "type": "array",
           "title": "Predicted Tags",

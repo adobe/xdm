@@ -36,6 +36,7 @@ Repository implementations can generate notifications or alerts when the consume
 
 ## xdm:amount
 
+The quota against which consumption is measured at the point of the repository that links to this document.
 
 `xdm:amount`
 * is optional
@@ -55,6 +56,7 @@ Repository implementations can generate notifications or alerts when the consume
 
 ## xdm:consumed
 
+The amount currently consumed against the quota at the point of the repository that links to this document.
 
 `xdm:consumed`
 * is optional
@@ -73,6 +75,7 @@ Repository implementations can generate notifications or alerts when the consume
 
 ## xdm:enforcement
 
+Determines whether the quota is being enforced (hard quota) or only reported on (soft quota).
 
 `xdm:enforcement`
 * is optional
@@ -92,6 +95,7 @@ The value of this property **must** be equal to one of the [known values below](
 
 ## xdm:unit
 
+The unit that is used to determine the quota and measure consumption. This property is optional, but fixed, i.e. it allows consumers to quickly understand the value just by looking at the JSON response from the API.
 
 `xdm:unit`
 * is optional

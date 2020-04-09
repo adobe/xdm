@@ -35,11 +35,6 @@
           "title": "Fax Phone",
           "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
           "description": "Fax phone number."
-        },        
-        "xdm:directMarketingPhone": {
-          "title": "Direct Marketing Phone",
-          "$ref": "https://ns.adobe.com/xdm/context/directmarketing-phonenumber",
-          "description": "Direct Marketing phone number."
         }                                      
       }
     }

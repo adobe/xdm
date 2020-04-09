@@ -30,12 +30,7 @@
           "title": "Shipping Address",
           "$ref": "https://ns.adobe.com/xdm/common/address",
           "description": "A mailing postal address."
-        },          
-        "xdm:directMarketingAddress": {
-          "title": "Direct Marketing Address",
-          "$ref": "https://ns.adobe.com/xdm/context/directmarketing-address",
-          "description": "Direct Marketing postal address."
-        }               
+        }              
       }
     }
   },

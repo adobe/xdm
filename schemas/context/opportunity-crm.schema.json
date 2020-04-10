@@ -50,7 +50,8 @@
         "xdm:amount": {
           "title": "Opportunity Amount",
           "description": "Opportunity Amount.",
-          "type": "number"
+          "type": "number",
+          "minimum": 0
         },
         "xdm:currencyCode": {
           "title": "Currency Code",
@@ -61,7 +62,8 @@
         "xdm:quantity": {
           "title": "Opportunity Quantity",
           "description": "Opportunity Quantity.",
-          "type": "integer"
+          "type": "integer",
+          "minimum": 0
         },
         "xdm:fiscalYear": {
           "title": "Fiscal Year",
@@ -82,7 +84,7 @@
         "xdm:probabilityPercentage": {
           "title": "Probability Percentage",
           "description": "Likelihood that opportunity will close, stated as a percentage.",
-          "type": "number",
+          "type": "integer",
           "minimum": 0,
           "maximum": 100
         },
@@ -135,7 +137,8 @@
         "xdm:expectedRevenue": {
           "title": "Expected Revenue",
           "description": "Calculated revenue based on the Amount and Probability.",
-          "type": "number"
+          "type": "number",
+          "minimum": 0
         }
       }
     }

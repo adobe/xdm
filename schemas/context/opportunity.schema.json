@@ -29,12 +29,12 @@
           "type": "string"
         },
         "xdm:accountID": {
-          "title": "Account Id",
+          "title": "Account ID",
           "description": "Account identifer reference",
           "type": "string"
         },
         "xdm:campaignID": {
-          "title": "Campaign Id",
+          "title": "Campaign ID",
           "description": "Campaign unique identifer reference",
           "type": "string"
         }

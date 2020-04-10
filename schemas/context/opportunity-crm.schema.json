@@ -54,19 +54,20 @@
         },
         "xdm:currencyCode": {
           "title": "Currency Code",
-          "description": "Standard ISO code for currency.",
-          "type": "string"
+          "description": "Standard ISO code(ISO 4217) for currency.",
+          "type": "string",
+          "pattern": "^([A-Z]{3})$"
         },
         "xdm:quantity": {
           "title": "Opportunity Quantity",
           "description": "Opportunity Quantity.",
-          "type": "number"
+          "type": "integer"
         },
         "xdm:fiscalYear": {
           "title": "Fiscal Year",
           "description": "The fiscal year this opportunity is targeted.",
           "type": "integer",
-          "pattern": "^[0-9]{4}$"
+          "pattern": "^([0-9]{4})$"
         },
         "xdm:fiscalQuarter": {
           "title": "Fiscal Quarter",
@@ -116,8 +117,8 @@
           "description": "Indicates that the opportunity is private.",
           "type": "boolean"
         },
-        "xdm:contractId": {
-          "title": "Contract Id",
+        "xdm:contractID": {
+          "title": "Contract ID",
           "description": "Contract unique Identifier reference that this opportunity is linked to.",
           "type": "string"
         },

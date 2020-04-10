@@ -58,14 +58,14 @@
               "description":"Code for action execution error. Present if the error has a code, such as an HTTP one",
               "type":"string"
             },
-            "journey:actionExecutionOriginalError":{
-              "title":"actionExecutionOriginalError",
-              "description":"",
+            "journey:actionExecutionOriginError":{
+              "title":"actionExecutionOriginError",
+              "description":"This Field tells about the timeout errors during retry for a Journey Action, such as HTTP,Capping",
               "type":"string"
             },
-            "journey:actionExecutionOriginalErrorCode":{
-              "title":"actionExecutionOriginalErrorCode",
-              "description":"error code of the actionExecutionOriginalError",
+            "journey:actionExecutionOriginCode":{
+              "title":"actionExecutionOriginCode",
+              "description":"error code of the actionExecutionOriginError",
               "type":"string"
             },
             "journey:actionBusinessType":{

@@ -14,38 +14,11 @@
   "meta:extends": ["https://ns.adobe.com/xdm/data/time-series"],
   "description": "A time-series based Journey Step Event Class",
   "definitions": {
-    "journeyStepEvent": {
-      "properties": {
-        "https://ns.adobe.com/experience/journeyOrchestration/stepEvents": {
-          "title": "Journey Step Event Class ",
-          "type": "object",
-          "properties": {
-            "journey:entrance": {
-              "title": "entrance",
-              "description": "",
-              "type": "boolean"
-            },
-            "journey:reentrance": {
-              "title": "reentrance",
-              "description": "Indicate if the user has reentered the journey with the same instance. If not present, assuming that the value is false",
-              "type": "boolean"
-            },
-            "journey:instanceEnded": {
-              "title": "instanceEnded",
-              "description": "Indicate if the Journey instance has ended ",
-              "type": "boolean"
-            }
-          }
-        }
-      }
-    }
+    "properties": { }
   },
   "allOf": [{
     "$ref": "https://ns.adobe.com/xdm/data/time-series"
-  },
-    {
-      "$ref": "#/definitions/journeyStepEvent"
-    }
+  }
   ],
   "meta:status": "experimental"
 }

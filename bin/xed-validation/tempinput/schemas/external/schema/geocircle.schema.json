@@ -1,0 +1,45 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "http://schema.org/GeoCircle",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Geo Circle",
+  "type": "object",
+  "description": "A circular region of a particular radius centered on a GeoCoordinate. Based on [schema.org](http://schema.org/GeoCircle)",
+  "definitions": {
+    "geocircle": {
+      "properties": {
+        "@id": {
+          "title": "Identifier",
+          "type": "string",
+          "description": "The unique identifier of the circle."
+        },
+        "schema:description": {
+          "title": "Description",
+          "type": "string",
+          "description": "A description of what the circle contains."
+        },
+        "schema:coordinates": {
+          "title": "Coordinates",
+          "$ref": "http://schema.org/GeoCoordinates",
+          "description": ""
+        },
+        "schema:radius": {
+          "title": "Radius",
+          "type": "number",
+          "description": "The length of the radius of the circle. This value conforms to the WGS84 datum and is measured in meters."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/geocircle"
+    }
+  ],
+  "meta:status": "experimental"
+}

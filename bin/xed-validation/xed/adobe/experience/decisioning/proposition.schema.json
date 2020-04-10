@@ -1,0 +1,53 @@
+{
+    "$id": "adobe/experience/decisioning/proposition.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Decision Proposition Reference",
+    "type": "object",
+    "meta:abstract": true,
+    "meta:extensible": true,
+    "description": "A decision proposition reference is used to link to a decision event in experience events that are response to a particular proposition.",
+    "meta:xdmType": "object",
+    "meta:status": "experimental",
+    "properties": {
+        "identityMap": {
+            "type": "object",
+            "meta:xdmType": "map",
+            "additionalProperties": {
+                "type": "array",
+                "meta:xdmType": "array",
+                "items": {
+                    "$ref": "../../../context/identityitem.schema.json",
+                    "tagNumber": 1
+                },
+                "tagNumber": 1
+            },
+            "meta:xdmField": "xdm:identityMap",
+            "tagNumber": 1
+        },
+        "_experience": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "decisioning": {
+                    "type": "object",
+                    "meta:xdmType": "object",
+                    "properties": {
+                        "propositionID": {
+                            "title": "Proposition Identifier",
+                            "type": "string",
+                            "format": "uri-reference",
+                            "description": "An identity for the proposition entity associated with an \"XDM Decision Event\". A single decision event can propose multiple options for a set of activities at once, one for each activity involved. It is the expectation that applications reference this \"propositionID\" in every experience event that was influenced by the set of propositions. A profile's proposition-response history is maintained with these proposition identifiers.",
+                            "meta:xdmType": "string",
+                            "meta:xdmField": "https://ns.adobe.com/experience/decisioning/propositionID",
+                            "tagNumber": 1
+                        }
+                    },
+                    "tagNumber": 1
+                }
+            },
+            "tagNumber": 2
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/decisioning/proposition",
+    "meta:altId": "_experience.decisioning.proposition"
+}

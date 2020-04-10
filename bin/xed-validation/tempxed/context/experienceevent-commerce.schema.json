@@ -1,0 +1,31 @@
+{
+    "$id": "context/experienceevent-commerce",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "ExperienceEvent commerce details",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "description": "This mixin is used to capture information regarding commerce activities related to an ExperienceEvent such as standard cart operations (order, checkout, abandon) and product details (SKU, product name, quantity).",
+    "meta:status": "stabilizing",
+    "meta:xdmType": "object",
+    "properties": {
+        "productListItems": {
+            "title": "Product list items",
+            "type": "array",
+            "description": "A list of items representing a product selected by a customer with specific options and pricing that are for that usage context at a specific point of time and may differ from the product record.",
+            "meta:xdmType": "array",
+            "items": {
+                "$ref": "content/productlistitem"
+            },
+            "meta:xdmField": "xdm:productListItems"
+        },
+        "commerce": {
+            "title": "Commerce",
+            "$ref": "context/commerce",
+            "description": "Commerce specific data related to this event.",
+            "meta:xdmField": "xdm:commerce"
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-commerce",
+    "meta:altId": "_xdm.context.experienceevent-commerce"
+}

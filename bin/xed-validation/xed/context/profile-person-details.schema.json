@@ -1,0 +1,22 @@
+{
+    "$id": "context/profile-person-details.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Profile person details",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "description": "This mixin is used to capture information regarding name, gender, and birth date of an individual.",
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "person": {
+            "title": "Person",
+            "$ref": "../context/person.schema.json",
+            "description": "An individual actor, contact, or owner.",
+            "meta:xdmField": "xdm:person",
+            "tagNumber": 1
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/profile-person-details",
+    "meta:altId": "_xdm.context.profile-person-details"
+}

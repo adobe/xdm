@@ -1,0 +1,27 @@
+{
+    "$id": "adobe/experience/implementations-ext.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Adobe Experience Platform Implementation Details Mixin",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "description": "Details the type and version of client implementations in ExperienceEvents for data collection interacting with Adobe Experience Cloud services. Used for debugging and usage analysis.",
+    "meta:status": "stabilizing",
+    "meta:xdmType": "object",
+    "properties": {
+        "_experience": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "implementations": {
+                    "$ref": "../../adobe/experience/implementations.schema.json",
+                    "meta:xdmField": "https://ns.adobe.com/experience/implementations",
+                    "tagNumber": 1
+                }
+            },
+            "tagNumber": 1
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/implementations-ext",
+    "meta:altId": "_experience.implementations-ext"
+}

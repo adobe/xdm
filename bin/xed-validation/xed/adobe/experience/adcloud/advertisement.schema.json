@@ -1,0 +1,124 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "adobe/experience/adcloud/advertisement.schema.json",
+    "title": "Adobe Advertising Cloud Ad Details",
+    "type": "object",
+    "description": "Adobe Advertising Cloud Ad Details.",
+    "meta:xdmType": "object",
+    "properties": {
+        "adId": {
+            "title": "Ad Identifier",
+            "type": "string",
+            "description": "Identifier for the ad this event is associated with. Not related to the Ad-ID standard.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:adId",
+            "tagNumber": 1
+        },
+        "runtime": {
+            "title": "Runtime Type",
+            "type": "string",
+            "description": "Runtime of the ad unit itself. Not the runtime of the browser or the operating system.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:runtime",
+            "tagNumber": 2
+        },
+        "adClass": {
+            "title": "Ad Class",
+            "type": "string",
+            "description": "Ad class of driving event.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:adClass",
+            "tagNumber": 3
+        },
+        "adUnitType": {
+            "title": "Ad Unit Type",
+            "type": "string",
+            "description": "Identifier for the literal piece of code driving display of the ad in a browser/device.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:adUnitType",
+            "tagNumber": 4
+        },
+        "promotedAssetId": {
+            "title": "Promoted Asset Identifier",
+            "type": "string",
+            "description": "Identifier for the underlying asset being promoted in the ad which this event is associated with.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:promotedAssetId",
+            "tagNumber": 5
+        },
+        "creativeID": {
+            "title": "Creative Identifier",
+            "type": "string",
+            "description": "Identifier for the creative which this event is associated with.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:creativeID",
+            "tagNumber": 6
+        },
+        "keywordID": {
+            "title": "Keyword Identifier",
+            "type": "string",
+            "description": "Identifier for the keyword that the surfer used to search, which triggered this click event.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:keywordID",
+            "tagNumber": 7
+        },
+        "keyword": {
+            "title": "Keyword",
+            "type": "string",
+            "description": "Listing keyword for which customer is bidding ",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:keyword",
+            "tagNumber": 8
+        },
+        "isDynamicSearchAd": {
+            "title": "Is Dynamic Search Advertisement",
+            "type": "boolean",
+            "description": "Indicates if the click comes from a dynamic search advertisement.",
+            "meta:xdmType": "boolean",
+            "meta:xdmField": "xdm:isDynamicSearchAd",
+            "tagNumber": 9
+        },
+        "audienceID": {
+            "title": "Audience Identifier",
+            "type": "string",
+            "description": "Identifier for the audience segment for which the ad is targeted.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:audienceID",
+            "tagNumber": 10
+        },
+        "adGroupID": {
+            "title": "Ad Group Identifier",
+            "type": "string",
+            "description": "Identifier for the adGroup which ad is displayed and triggered this click event.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:adGroupID",
+            "tagNumber": 11
+        },
+        "campaignID": {
+            "title": "Campaign Identifier",
+            "type": "string",
+            "description": "Identifier for the campaign that belongs to the current displayed advertisement which triggers this click event.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:campaignID",
+            "tagNumber": 12
+        },
+        "networkType": {
+            "title": "Network Type",
+            "type": "string",
+            "description": "Network type the click event came from a search advertisement or content advertisement.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:networkType",
+            "tagNumber": 13
+        },
+        "matchType": {
+            "title": "matchType",
+            "type": "string",
+            "description": "Match type used to match keyword.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:matchType",
+            "tagNumber": 14
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/adcloud/advertisement",
+    "meta:altId": "_experience.adcloud.advertisement"
+}

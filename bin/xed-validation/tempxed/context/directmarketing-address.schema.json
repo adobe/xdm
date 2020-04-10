@@ -1,0 +1,274 @@
+{
+    "$id": "context/directmarketing-address",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Direct marketing postal address",
+    "type": "object",
+    "description": "Postal address information used to contact a user.",
+    "meta:status": [
+        "experimental",
+        "stabilizing"
+    ],
+    "meta:xdmType": "object",
+    "meta:auditable": true,
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "properties": {
+        "errorCount": {
+            "title": "Address error count",
+            "type": "integer",
+            "description": "Number of consecutive errors when sending to this address.",
+            "meta:xdmType": "int",
+            "meta:xdmField": "xdm:errorCount"
+        },
+        "quality": {
+            "title": "Address quality",
+            "type": "string",
+            "description": "Address quality rating.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:quality"
+        },
+        "_id": {
+            "title": "Coordinates ID",
+            "type": "string",
+            "format": "uri-reference",
+            "description": "The unique identifier of the coordinates.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "@id"
+        },
+        "_schema": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "description": {
+                    "title": "Description",
+                    "type": "string",
+                    "description": "A description of what the coordinates identify.",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "schema:description"
+                },
+                "latitude": {
+                    "title": "Latitude",
+                    "type": "number",
+                    "minimum": -90,
+                    "maximum": 90,
+                    "description": "The signed vertical coordinate of a geographic point.",
+                    "meta:xdmType": "number",
+                    "meta:xdmField": "schema:latitude"
+                },
+                "longitude": {
+                    "title": "Longitude",
+                    "type": "number",
+                    "minimum": -180,
+                    "maximum": 180,
+                    "description": "The signed horizontal coordinate of a geographic point.",
+                    "meta:xdmType": "number",
+                    "meta:xdmField": "schema:longitude"
+                },
+                "elevation": {
+                    "title": "Elevation",
+                    "type": "number",
+                    "description": "The specific elevation of the defined coordinate. The value conforms to the [WGS84](http://gisgeography.com/wgs84-world-geodetic-system/) datum and is measured in meters.",
+                    "meta:xdmType": "number",
+                    "meta:xdmField": "schema:elevation"
+                }
+            }
+        },
+        "countryCode": {
+            "title": "Country code",
+            "type": "string",
+            "pattern": "^[A-Z]{2}$",
+            "description": "The two-character [ISO 3166-1 alpha-2](https://datahub.io/core/country-list) code for the country.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:countryCode"
+        },
+        "stateProvince": {
+            "title": "State or province",
+            "type": "string",
+            "description": "The state, or province portion of the observation. The format follows the [ISO 3166-2 (country and subdivision)][http://www.unece.org/cefact/locode/subdivisions.html] standard.",
+            "examples": [
+                "US-CA",
+                "DE-BB",
+                "JP-13"
+            ],
+            "pattern": "([A-Z]{2}-[A-Z0-9]{1,3}|)",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:stateProvince"
+        },
+        "city": {
+            "title": "City",
+            "type": "string",
+            "description": "The name of the city.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:city"
+        },
+        "postalCode": {
+            "title": "Postal code",
+            "type": "string",
+            "description": "The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:postalCode"
+        },
+        "dmaID": {
+            "title": "Designated market area",
+            "type": "integer",
+            "description": "The Nielsen media research designated market area.",
+            "meta:xdmType": "int",
+            "meta:xdmField": "xdm:dmaID"
+        },
+        "msaID": {
+            "title": "Metropolitan statistical area",
+            "type": "integer",
+            "description": "The metropolitan statistical area in the United States where the observation occurred.",
+            "meta:xdmType": "int",
+            "meta:xdmField": "xdm:msaID"
+        },
+        "repositoryCreatedBy": {
+            "title": "Created by user identifier",
+            "type": "string",
+            "description": "User ID of who created the record.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:repositoryCreatedBy"
+        },
+        "repositoryLastModifiedBy": {
+            "title": "Modified by user identifier",
+            "type": "string",
+            "description": "User ID of who last modified the record. At creation time, `modifiedByUser` is set as `createdByUser`.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:repositoryLastModifiedBy"
+        },
+        "createdByBatchID": {
+            "title": "Created by batch identifier",
+            "type": "string",
+            "format": "uri-reference",
+            "description": "The dataset files in Catalog which has been originating the creation of the record.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:createdByBatchID"
+        },
+        "modifiedByBatchID": {
+            "title": "Modified by batch identifier",
+            "type": "string",
+            "format": "uri-reference",
+            "description": "The last dataset files in Catalog which has modified the record. At creation time, `modifiedByBatchID` is set as `createdByBatchID`.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:modifiedByBatchID"
+        },
+        "_repo": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "createDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "meta:immutable": true,
+                    "meta:usereditable": false,
+                    "examples": [
+                        "2004-10-23T12:00:00-06:00"
+                    ],
+                    "description": "The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The date time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+                    "meta:xdmType": "date-time",
+                    "meta:xdmField": "repo:createDate"
+                },
+                "modifyDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "meta:usereditable": false,
+                    "examples": [
+                        "2004-10-23T12:00:00-06:00"
+                    ],
+                    "description": "The server date and time when the resource was last modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The date time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+                    "meta:xdmType": "date-time",
+                    "meta:xdmField": "repo:modifyDate"
+                }
+            }
+        },
+        "primary": {
+            "title": "Primary",
+            "type": "boolean",
+            "description": "Primary address indicator. A profile can have only one `primary` address at a given point of time.",
+            "meta:xdmType": "boolean",
+            "meta:xdmField": "xdm:primary"
+        },
+        "label": {
+            "title": "Label",
+            "type": "string",
+            "description": "Free form name of the address.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:label"
+        },
+        "street1": {
+            "title": "Street 1",
+            "type": "string",
+            "description": "Primary street level information, apartment number, street number, and street name.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:street1"
+        },
+        "street2": {
+            "title": "Street 2",
+            "type": "string",
+            "description": "Optional street information second line.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:street2"
+        },
+        "street3": {
+            "title": "Street 3",
+            "type": "string",
+            "description": "Optional street information third line.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:street3"
+        },
+        "street4": {
+            "title": "Street 4",
+            "type": "string",
+            "description": "Optional street information fourth line.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:street4"
+        },
+        "region": {
+            "title": "Region",
+            "type": "string",
+            "description": "The region, county, or district portion of the address.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:region"
+        },
+        "postOfficeBox": {
+            "title": "Post office box",
+            "type": "string",
+            "description": "Post office box of the address.",
+            "maxLength": 20,
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:postOfficeBox"
+        },
+        "country": {
+            "title": "Country",
+            "type": "string",
+            "description": "The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:country"
+        },
+        "status": {
+            "title": "Status",
+            "type": "string",
+            "description": "An indication as to the ability to use the address.",
+            "default": "active",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:status"
+        },
+        "statusReason": {
+            "title": "Status reason",
+            "type": "string",
+            "description": "A description of the current status.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:statusReason"
+        },
+        "lastVerifiedDate": {
+            "title": "Last verified date",
+            "type": "string",
+            "format": "date",
+            "description": "The date that the address was last verified as still associated to the person.",
+            "meta:xdmType": "date",
+            "meta:xdmField": "xdm:lastVerifiedDate"
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/directmarketing-address",
+    "meta:altId": "_xdm.context.directmarketing-address"
+}

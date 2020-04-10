@@ -1,0 +1,62 @@
+{
+    "$id": "context/opportunity.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "XDM Business Opportunity",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "description": "An XDM Business Opportunity.",
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "$ref": "../xdm/common/external-source-system-audit-details.schema.json.schema.json",
+    "properties": {
+        "_id": {
+            "title": "Identifier",
+            "type": "string",
+            "format": "uri-reference",
+            "description": "A unique identifier for the record.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "@id",
+            "tagNumber": 1
+        },
+        "opportuntyID": {
+            "title": "Opportunity ID",
+            "description": "Unique identifer of the opportunity",
+            "type": "string",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:opportuntyID",
+            "tagNumber": 2
+        },
+        "opportunityType": {
+            "title": "Opportunity Type",
+            "description": "Type of Opportunity.",
+            "type": "string",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:opportunityType",
+            "tagNumber": 3
+        },
+        "accountID": {
+            "title": "Account Id",
+            "description": "Account identifer reference",
+            "type": "string",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:accountID",
+            "tagNumber": 4
+        },
+        "campaignID": {
+            "title": "Campaign Id",
+            "description": "Campaign unique identifer reference",
+            "type": "string",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:campaignID",
+            "tagNumber": 5
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/opportunity",
+    "meta:altId": "_xdm.context.opportunity",
+    "required": [
+        "opportunityID",
+        "opportunityType",
+        "accountID"
+    ]
+}

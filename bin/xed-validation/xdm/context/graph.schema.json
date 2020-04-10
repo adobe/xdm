@@ -1,0 +1,65 @@
+{
+    "$id": "https://ns.adobe.com/xdm/context/graph",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "XDM Graph Schema",
+    "type": "object",
+    "description": "XDM graph schema to host graph data.",
+    "auditable": true,
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "definitions": {
+        "graph": {
+            "properties": {
+                "xdm:graphId": {
+                    "title": "Graph Identifier",
+                    "description": "The unique identifier of the identity associated with this graph.",
+                    "type": "string",
+                    "meta:xdmType": "string"
+                },
+                "xdm:label": {
+                    "title": "Graph Label",
+                    "description": "Graph label.",
+                    "type": "string",
+                    "meta:xdmType": "string"
+                },
+                "xdm:directed": {
+                    "title": "Directed Graph Indicator",
+                    "description": "Directed graph indicator.",
+                    "type": "boolean",
+                    "default": true,
+                    "meta:xdmType": "boolean"
+                },
+                "xdm:graphType": {
+                    "title": "Graph Type",
+                    "description": "Graph type. Examples - Person graph, Third party graph, Private graph etc.",
+                    "type": "string",
+                    "meta:xdmType": "string"
+                },
+                "xdm:firstCreatedTimestamp": {
+                    "title": "Graph Created Date And Time",
+                    "description": "Time and date this graph was created.",
+                    "type": "string",
+                    "format": "date-time",
+                    "meta:xdmType": "date-time"
+                },
+                "xdm:lastModifiedTimestamp": {
+                    "title": "Graph Last Modified Date And Time",
+                    "description": "Time and date this graph was last modified.",
+                    "type": "string",
+                    "format": "date-time",
+                    "meta:xdmType": "date-time"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/graph"
+        },
+        {
+            "$ref": "xdm/common/auditable.schema.json"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmType": "object"
+}

@@ -1,0 +1,34 @@
+{
+    "$id": "common/orgunit.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "type": "object",
+    "meta:extensible": true,
+    "title": "Organizational unit",
+    "description": "The organizational unit of a parent organization.",
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "_id": {
+            "title": "Identifier",
+            "type": "string",
+            "format": "uri-reference",
+            "description": "The ID associated with this organizational unit.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "@id",
+            "tagNumber": 1
+        },
+        "label": {
+            "title": "Label of the organizational unit.",
+            "type": "string",
+            "description": "The user-friendly name for the organizational unit.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:label",
+            "tagNumber": 2
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/common/orgunit",
+    "meta:altId": "_xdm.common.orgunit",
+    "required": [
+        "_id"
+    ]
+}

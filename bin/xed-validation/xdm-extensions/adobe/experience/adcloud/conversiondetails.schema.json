@@ -1,0 +1,30 @@
+{
+    "$id": "https://ns.adobe.com/experience/adcloud/conversiondetails",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Conversion Details",
+    "type": "object",
+    "description": "Adobe Advertising Cloud Search Conversion Details.",
+    "definitions": {
+        "conversiondetails": {
+            "properties": {
+                "xdm:conversionProperties": {
+                    "type": "object",
+                    "description": "List of Conversion Property Map.",
+                    "meta:xdmType": "map",
+                    "additionalProperties": {
+                        "title": "Conversion Property Item",
+                        "type": "string",
+                        "meta:xdmType": "string"
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/conversiondetails"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmType": "object"
+}

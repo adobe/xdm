@@ -1,0 +1,38 @@
+{
+    "$id": "https://ns.adobe.com/experience/campaign/offer-response-detail",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Campaign Offer Response Detail",
+    "type": "object",
+    "meta:abstract": true,
+    "meta:extensible": true,
+    "description": "An Offer Proposition Detail is used to capture the details about an Offer Proposition.",
+    "definitions": {
+        "response-detail-datatype": {
+            "properties": {
+                "xdm:offer": {
+                    "title": "Campaign Offer Detail",
+                    "description": "Snapshot of the Offer that the recipient responded to. The object contains a at least the xdm:id property value which is the identifier of an Offer.",
+                    "properties": {
+                        "xdm:eligibilityRule": {
+                            "type": "string",
+                            "format": "uri",
+                            "title": "Eligibility Rule",
+                            "description": "The reference to an eligibility rule that tests a condition using the profile and/or other contextual XDM instances. The value is the URI (@id) of the eligibility rule that is referenced. See schema https://ns.adobe.com/experience/offer-management/eligibility-rule",
+                            "meta:xdmType": "string"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "xdm-extensions/adobe/experience/offer-management/proposition-response-detail.schema.json"
+        },
+        {
+            "$ref": "#/definitions/response-detail-datatype"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmType": "object"
+}

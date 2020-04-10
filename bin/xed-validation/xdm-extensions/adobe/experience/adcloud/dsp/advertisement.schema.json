@@ -1,0 +1,135 @@
+{
+    "$id": "https://ns.adobe.com/xdm/adcloud/dsp/advertisement",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "DSP Advertising Advertisement",
+    "type": "object",
+    "meta:extensible": false,
+    "meta:abstract": false,
+    "meta:auditable": true,
+    "description": "Adobe Advertising Cloud DSP Advertisement Details.",
+    "definitions": {
+        "dsp-advertisement": {
+            "properties": {
+                "dsp:adName": {
+                    "title": "Ad Name",
+                    "type": "string",
+                    "description": "Ad name.",
+                    "meta:xdmType": "string"
+                },
+                "dsp:adKey": {
+                    "title": "Ad Key",
+                    "type": "string",
+                    "description": "Ad external unique identifier.",
+                    "meta:xdmType": "string"
+                },
+                "dsp:externalCreativeId": {
+                    "title": "External Creative Identifier",
+                    "type": "string",
+                    "description": "Identifier for the creative which this ad is associated with.",
+                    "meta:xdmType": "string"
+                },
+                "dsp:adStatus": {
+                    "title": "Ad Status",
+                    "type": "string",
+                    "description": "Ad Status indicates if it is eligible to be served.",
+                    "enum": [
+                        "Active",
+                        "Inactive",
+                        "Deleted"
+                    ],
+                    "meta:enum": {
+                        "Active": "Active",
+                        "Inactive": "Inactive",
+                        "Deleted": "Deleted"
+                    },
+                    "meta:xdmType": "string"
+                },
+                "dsp:adUnitType": {
+                    "title": "Ad Unit Type",
+                    "type": "string",
+                    "description": "Identifier for the literal piece of code driving display of the ad in a browser/device.",
+                    "enum": [
+                        "Onsite",
+                        "Flash",
+                        "Embed",
+                        "YouTube",
+                        "New Flash",
+                        "HTML5",
+                        "instream",
+                        "vast_proxy",
+                        "external_instream",
+                        "instream_selector",
+                        "inbanner_3rd_party",
+                        "external_inbanner",
+                        "mraid_3rd_party",
+                        "dooh",
+                        "standard_display",
+                        "fb_news_feed_post",
+                        "fb_news_feed"
+                    ],
+                    "meta:enum": {
+                        "Onsite": "Onsite",
+                        "Flash": "Flash",
+                        "Embed": "Embed",
+                        "YouTube": "YouTube",
+                        "New Flash": "New Flash",
+                        "HTML5": "HTML5",
+                        "instream": "instream",
+                        "vast_proxy": "vast_proxy",
+                        "external_instream": "external_instream",
+                        "instream_selector": "instream_selector",
+                        "inbanner_3rd_party": "inbanner_3rd_party",
+                        "external_inbanner": "external_inbanner",
+                        "mraid_3rd_party": "mraid_3rd_party",
+                        "dooh": "dooh",
+                        "standard_display": "standard_display",
+                        "fb_news_feed_post": "fb_news_feed_post",
+                        "fb_news_feed": "fb_news_feed"
+                    },
+                    "meta:xdmType": "string"
+                },
+                "dsp:adClass": {
+                    "title": "Ad Class",
+                    "type": "string",
+                    "description": "Ad class of driving event.",
+                    "meta:xdmType": "string"
+                },
+                "dsp:promotedVideoId": {
+                    "title": "Promoted Video Identifier",
+                    "type": "string",
+                    "description": "Promoted video Identifier contained in this Ad.",
+                    "meta:xdmType": "string"
+                },
+                "dsp:adServerId": {
+                    "title": "Ad Server Identifier",
+                    "type": "string",
+                    "description": "Identifier for the Ad Server providing this Ad.",
+                    "meta:xdmType": "string"
+                },
+                "dsp:placementIds": {
+                    "title": "Placement Ids",
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "meta:xdmType": "string"
+                    },
+                    "description": "List of Placement Ids where this Ad is used.",
+                    "meta:xdmType": "array"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "xdm/data/record.schema.json"
+        },
+        {
+            "$ref": "xdm/common/auditable.schema.json"
+        },
+        {
+            "$ref": "#/definitions/dsp-advertisement"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmType": "object"
+}

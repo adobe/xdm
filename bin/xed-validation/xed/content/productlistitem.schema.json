@@ -1,0 +1,87 @@
+{
+    "$id": "content/productlistitem.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Product list item",
+    "type": "object",
+    "description": "The product list item represents a product selected by a customer with specific options, pricing, usage context for a specific point of time and may differ from the product record. For example the product record contains details from the product information system that are consistent for all customers, where the product list item has the actual price offered to the customer at that time which may vary due to sales campaigns or seasonal pricing.",
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "SKU": {
+            "title": "SKU",
+            "type": "string",
+            "description": "Stock keeping unit (SKU), the unique identifier for a product defined by the vendor.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:SKU",
+            "tagNumber": 1
+        },
+        "_id": {
+            "title": "Line item ID.",
+            "type": "string",
+            "format": "uri-reference",
+            "description": "The line item identifier for this product entry. The product itself is identified through `xdm:product`.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "@id",
+            "tagNumber": 2
+        },
+        "product": {
+            "title": "Product",
+            "type": "string",
+            "format": "uri",
+            "description": "The XDM identifier of the product itself.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:product",
+            "tagNumber": 3
+        },
+        "name": {
+            "title": "Name",
+            "type": "string",
+            "description": "The display name for the product as presented to the user for this product view.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:name",
+            "tagNumber": 4
+        },
+        "productAddMethod": {
+            "title": "Product add method",
+            "type": "string",
+            "description": "The method that was used to add a product item to the list by the visitor. Set with product list add metrics.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:productAddMethod",
+            "tagNumber": 5
+        },
+        "currencyCode": {
+            "title": "Currency code",
+            "type": "string",
+            "examples": [
+                "USD",
+                "EUR"
+            ],
+            "pattern": "^[A-Z]{3}$",
+            "description": "The ISO 4217 alphabetic currency code used for pricing the product.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:currencyCode",
+            "tagNumber": 6
+        },
+        "quantity": {
+            "title": "Quantity",
+            "type": "integer",
+            "description": "The number of units the customer has indicated they require of the product.",
+            "meta:xdmType": "int",
+            "meta:xdmField": "xdm:quantity",
+            "tagNumber": 7
+        },
+        "priceTotal": {
+            "title": "Price total",
+            "type": "number",
+            "description": "The total price for the product line item.",
+            "meta:xdmType": "number",
+            "meta:xdmField": "xdm:priceTotal",
+            "tagNumber": 8
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/content/productlistitem",
+    "meta:altId": "_xdm.content.productlistitem",
+    "required": [
+        "SKU"
+    ]
+}

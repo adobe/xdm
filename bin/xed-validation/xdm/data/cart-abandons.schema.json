@@ -1,0 +1,51 @@
+{
+    "$id": "https://ns.adobe.com/xdm/data/metrics/cart-abandons",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Cart Abandons",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "Number of cart abandons for which a product list has been identified as no longer purchasable or accessible by the user without the user re-creating the product list from scratch.",
+    "definitions": {
+        "metricdefinition": {
+            "properties": {
+                "@id": {
+                    "type": "string",
+                    "const": "xdm:cartAbandons",
+                    "description": "The unique identifier of this metric.",
+                    "meta:xdmType": "string"
+                },
+                "schema:name": {
+                    "type": "string",
+                    "const": "commerce metric: cartAbandons",
+                    "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:measurement": {
+                    "type": "string",
+                    "description": "How to take measures of this metric.",
+                    "const": "count",
+                    "meta:xdmType": "string"
+                },
+                "xdm:unit": {
+                    "const": null
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/metricdefinition"
+        },
+        {
+            "$ref": "xdm/data/metricdefinition.schema.json"
+        }
+    ],
+    "required": [
+        "@id",
+        "schema:name",
+        "xdm:measurement",
+        "xdm:unit"
+    ],
+    "meta:status": "experimental",
+    "meta:xdmType": "object"
+}

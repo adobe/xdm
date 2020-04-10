@@ -1,0 +1,104 @@
+{
+    "$id": "adobe/experience/decisioning/option-detail.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Decision Option Detail",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "description": "Detail about the entity that represents one of the possible selections or choices for a decision. When referenced in propositions, options are enriched with the observed metrics that applied to them, i.e. they are measurable.",
+    "meta:xdmType": "object",
+    "properties": {
+        "id": {
+            "title": "Decision Option Identifier",
+            "type": "string",
+            "format": "uri-reference",
+            "description": "A unique identifier for the decision option.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:id",
+            "tagNumber": 1
+        },
+        "_repo": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "etag": {
+                    "title": "Decision Option ETag",
+                    "type": "string",
+                    "description": "The revision that the decision option object was at when the snapshot was taken.",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "repo:etag",
+                    "tagNumber": 1
+                }
+            },
+            "tagNumber": 2
+        },
+        "name": {
+            "type": "string",
+            "title": "Decision Option Name",
+            "description": "Option name. The name is displayed in various user interfaces.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:name",
+            "tagNumber": 3
+        },
+        "tags": {
+            "type": "array",
+            "title": "Decision Option Tags",
+            "description": "The set of tags associated with this option. The tags are used indicate catetoegies (dimensions) that the option belonged to at the time the proposition was made.",
+            "meta:xdmType": "array",
+            "items": {
+                "type": "string",
+                "format": "uri-reference",
+                "description": "An identifier of a Tag object. The value is the @id of the Tag that is referenced. See Tag schema https://ns.adobe.com/experience/decisioning/tag",
+                "meta:xdmType": "string",
+                "tagNumber": 1
+            },
+            "meta:xdmField": "xdm:tags",
+            "tagNumber": 4
+        },
+        "characteristics": {
+            "title": "Decision Option Characteristics",
+            "description": "Additional properties or attributes belonging to this particular decision option. Different instances can have different characteristics (keys in the map). The characteristics are name value pairs used to distinguish one decision option from others. Characteristics are used as values in content that represents this decision option and as features to analyze and optimize the performance of an option. When every instance has the same attribute or property, that aspect should be modeled as an extension schema that derives from decision option detail.",
+            "type": "object",
+            "meta:xdmType": "map",
+            "additionalProperties": {
+                "type": "string",
+                "description": "Value of the property.",
+                "meta:xdmType": "string",
+                "tagNumber": 1
+            },
+            "meta:xdmField": "xdm:characteristics",
+            "tagNumber": 5
+        },
+        "_experience": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "decisioning": {
+                    "type": "object",
+                    "meta:xdmType": "object",
+                    "properties": {
+                        "propositionsTotal": {
+                            "$ref": "../../../data/measure.schema.json",
+                            "description": "The total number a particular option was proposed so far across all profiles.",
+                            "meta:xdmField": "https://ns.adobe.com/experience/decisioning/propositionsTotal",
+                            "tagNumber": 1
+                        },
+                        "propositionsProfile": {
+                            "$ref": "../../../data/measure.schema.json",
+                            "description": "The number of times a particular option was proposed so far to a particular profile. When this metric is present the record or time-series entity must include an IdentityMap the profile.",
+                            "meta:xdmField": "https://ns.adobe.com/experience/decisioning/propositionsProfile",
+                            "tagNumber": 2
+                        }
+                    },
+                    "tagNumber": 1
+                }
+            },
+            "tagNumber": 6
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/decisioning/option-detail",
+    "meta:altId": "_experience.decisioning.option-detail",
+    "required": [
+        "id"
+    ]
+}

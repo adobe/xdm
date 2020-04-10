@@ -1,0 +1,40 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "https://ns.adobe.com/experience/profile/profile-all",
+    "title": "Adobe Unified Profile Service Profile Union Extension",
+    "description": "Adobe Unified Profile Service required fields for the Profile Union.",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "definitions": {
+        "unified-profile-union": {
+            "properties": {
+                "https://ns.adobe.com/experience/profile/identityNamespaces": {
+                    "type": "object",
+                    "meta:xdmType": "map",
+                    "additionalProperties": {
+                        "$refkept": "https://ns.adobe.com/xdm/context/namespace"
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/unified-profile-union"
+        },
+        {
+            "$ref": "xdm/data/record-timeseries-events.schema.json"
+        },
+        {
+            "$ref": "xdm/context/identitymap.schema.json"
+        },
+        {
+            "$ref": "xdm/context/profile-segmentation.schema.json"
+        },
+        {
+            "$ref": "xdm/context/profile-privacy.schema.json"
+        }
+    ],
+    "meta:xdmType": "object"
+}

@@ -1,0 +1,76 @@
+{
+    "$id": "context/poi-detail",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Point of interest details",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "A point or place of interest (POI) Details. Used to capture the technical and metadata information for a POI.",
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "POIID": {
+            "title": "POI identity",
+            "type": "string",
+            "meta:status": "deprecated",
+            "description": "The unique identifier of the POI.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:POIID"
+        },
+        "poiID": {
+            "title": "POI Identity",
+            "type": "string",
+            "description": "The unique identifier of the POI.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:poiID"
+        },
+        "name": {
+            "title": "POI name",
+            "type": "string",
+            "description": "The name given to the POI.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:name"
+        },
+        "category": {
+            "title": "POI category",
+            "type": "string",
+            "description": "General category assigned for organizing the POIs by the administrator of POI definitions.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:category"
+        },
+        "type": {
+            "title": "POI type",
+            "type": "string",
+            "description": "The general type of the POI using a typing schema selected by the administrator of the POI definitions.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:type"
+        },
+        "distanceToPOICenter": {
+            "title": "Distance to POI center",
+            "type": "number",
+            "description": "Estimated distance from the POI center in meters.",
+            "meta:xdmType": "number",
+            "meta:xdmField": "xdm:distanceToPOICenter"
+        },
+        "locatingType": {
+            "title": "Locating type",
+            "type": "string",
+            "description": "Mechanism used to determine location.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:locatingType"
+        },
+        "beaconInteractionDetails": {
+            "title": "Beacon interaction details",
+            "$ref": "context/beacon-interaction-details",
+            "description": "Beacon details active for the POI interaction.",
+            "meta:xdmField": "xdm:beaconInteractionDetails"
+        },
+        "geoInteractionDetails": {
+            "title": "Geo interaction details",
+            "$ref": "context/geo-interaction-details",
+            "description": "Geo details active for the POI interaction.",
+            "meta:xdmField": "xdm:geoInteractionDetails"
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/poi-detail",
+    "meta:altId": "_xdm.context.poi-detail"
+}

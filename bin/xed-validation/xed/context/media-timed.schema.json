@@ -1,0 +1,151 @@
+{
+    "$id": "context/media-timed.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Timed media information",
+    "type": "object",
+    "meta:status": "experimental",
+    "meta:extensible": true,
+    "description": "Information related to timed media such main content, ads, and chapters.",
+    "meta:xdmType": "object",
+    "properties": {
+        "primaryAssetReference": {
+            "title": "Primary asset reference",
+            "$ref": "../context/media-timed-asset-reference.schema.json",
+            "description": "Asset information about the main content that was played, present on all ads and chapters that occur during the content's playback.",
+            "meta:xdmField": "xdm:primaryAssetReference",
+            "tagNumber": 1
+        },
+        "primaryAssetViewDetails": {
+            "title": "Primary asset view details",
+            "$ref": "../context/media-timed-asset-view-details.schema.json",
+            "description": "View details for the main content playback, present on all ads and chapters that occur during the content's playback.",
+            "meta:xdmField": "xdm:primaryAssetViewDetails",
+            "tagNumber": 2
+        },
+        "mediaChapter": {
+            "title": "Media chapter",
+            "$ref": "../context/media-timed-chapter.schema.json",
+            "description": "Timed media chapter information.",
+            "meta:xdmField": "xdm:mediaChapter",
+            "tagNumber": 3
+        },
+        "impressions": {
+            "title": "Impressions",
+            "$ref": "../data/measure.schema.json",
+            "description": "Describes the intention to play a timed media asset. It does not measure success, as the user might abandon the content before the first frame is viewed.",
+            "meta:xdmField": "xdm:impressions",
+            "tagNumber": 4
+        },
+        "completes": {
+            "title": "Completes",
+            "$ref": "../data/measure.schema.json",
+            "description": "Indicates if a timed media asset was watched to completion, this does not necessarily mean the viewer watched the whole video; viewer could have skipped ahead.",
+            "meta:xdmField": "xdm:completes",
+            "tagNumber": 5
+        },
+        "timePlayed": {
+            "title": "Time spent",
+            "$ref": "../data/measure.schema.json",
+            "description": "The amount of time spent in seconds by a user on a specific timed media asset.",
+            "meta:xdmField": "xdm:timePlayed",
+            "tagNumber": 6
+        },
+        "federated": {
+            "title": "Federated",
+            "$ref": "../data/measure.schema.json",
+            "description": "Indicates the experience event was created through data federation or data sharing.",
+            "meta:xdmField": "xdm:federated",
+            "tagNumber": 7
+        },
+        "starts": {
+            "title": "Starts",
+            "$ref": "../data/measure.schema.json",
+            "description": "Indicates the first frame of the timed media asset has been viewed for example, the viewer did not abandon during pre-roll ad, or buffering.",
+            "meta:xdmField": "xdm:starts",
+            "tagNumber": 8
+        },
+        "mediaSegmentViews": {
+            "title": "Media segment views",
+            "$ref": "../data/measure.schema.json",
+            "description": "Indicates when at least one frame, not necessarily the first has been viewed.",
+            "meta:xdmField": "xdm:mediaSegmentViews",
+            "tagNumber": 9
+        },
+        "dropBeforeStarts": {
+            "title": "Drop before starts",
+            "$ref": "../data/measure.schema.json",
+            "description": "Indicates the user abandoned the media stream before the first frame for example, during the pre-roll ad break, or due to an error while loading the content from the CDN.",
+            "meta:xdmField": "xdm:dropBeforeStarts",
+            "tagNumber": 10
+        },
+        "totalTimePlayed": {
+            "title": "Content play",
+            "$ref": "../data/measure.schema.json",
+            "description": "Describes the total amount of time spent by a user on a specific timed media asset, which includes time spent watching ads.",
+            "meta:xdmField": "xdm:totalTimePlayed",
+            "tagNumber": 11
+        },
+        "progress10": {
+            "title": "10% Progress marker",
+            "$ref": "../data/measure.schema.json",
+            "description": "Indicates that the playhead passed the 10% marker of media based on stream length. The marker is only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.",
+            "meta:xdmField": "xdm:progress10",
+            "tagNumber": 12
+        },
+        "progress25": {
+            "title": "25% Progress marker",
+            "$ref": "../data/measure.schema.json",
+            "description": "Indicates that the playhead passed the 25% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.",
+            "meta:xdmField": "xdm:progress25",
+            "tagNumber": 13
+        },
+        "progress50": {
+            "title": "50% Progress marker",
+            "$ref": "../data/measure.schema.json",
+            "description": "Indicates that the playhead passed the 50% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.",
+            "meta:xdmField": "xdm:progress50",
+            "tagNumber": 14
+        },
+        "progress75": {
+            "title": "75% Progress marker",
+            "$ref": "../data/measure.schema.json",
+            "description": "Indicates that the playhead passed the 75% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.",
+            "meta:xdmField": "xdm:progress75",
+            "tagNumber": 15
+        },
+        "progress95": {
+            "title": "95% Progress marker",
+            "$ref": "../data/measure.schema.json",
+            "description": "Indicates that the playhead passed the 95% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.",
+            "meta:xdmField": "xdm:progress95",
+            "tagNumber": 16
+        },
+        "resumes": {
+            "title": "Resumes",
+            "$ref": "../data/measure.schema.json",
+            "description": "Marks each playback that was resumed after more than 30 minutes of buffer, pause, or stall period.",
+            "meta:xdmField": "xdm:resumes",
+            "tagNumber": 17
+        },
+        "pauses": {
+            "title": "Pauses",
+            "$ref": "../data/measure.schema.json",
+            "description": "The number of pause periods that occurred during playback.",
+            "meta:xdmField": "xdm:pauses",
+            "tagNumber": 18
+        },
+        "pauseTime": {
+            "title": "Total pause duration",
+            "$ref": "../data/measure.schema.json",
+            "description": "Describes the duration in seconds in which playback was paused by the user.",
+            "meta:xdmField": "xdm:pauseTime",
+            "tagNumber": 19
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/media-timed",
+    "meta:altId": "_xdm.context.media-timed",
+    "required": [
+        "primaryAssetReference",
+        "primaryAssetViewDetails"
+    ]
+}

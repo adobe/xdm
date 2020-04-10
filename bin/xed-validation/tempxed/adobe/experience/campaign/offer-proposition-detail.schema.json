@@ -1,0 +1,27 @@
+{
+    "$id": "adobe/experience/campaign/offer-proposition-detail",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Campaign Offer Proposition Detail",
+    "type": "object",
+    "meta:abstract": true,
+    "meta:extensible": true,
+    "description": "An offer proposition detail is used to capture the details about an offer proposition.",
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "activity": {
+            "title": "Offer Activity Detail",
+            "description": "Snapshot of the Activity for which the proposition was made. The object contains at least the xdm:id property value which is the identifier of the decision activity.",
+            "$ref": "adobe/experience/offer-management/offer-activity-detail",
+            "meta:xdmField": "xdm:activity"
+        },
+        "offer": {
+            "title": "Campaign Offer Detail",
+            "description": "Snapshot of the Offer that the recipient responded to. The object contains a at least the xdm:id property value which is the identifier of an Offer.",
+            "$ref": "adobe/experience/campaign/offer-detail",
+            "meta:xdmField": "xdm:offer"
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/campaign/offer-proposition-detail",
+    "meta:altId": "_experience.campaign.offer-proposition-detail"
+}

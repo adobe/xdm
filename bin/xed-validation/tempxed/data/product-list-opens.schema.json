@@ -1,0 +1,66 @@
+{
+    "$id": "data/metrics/product-list-opens",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Product List Opens",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "The commerce metric `product-list-opens` describes how many new product lists have been created. The most common case is the creation of a new shopping cart by putting the first item into the shopping cart.",
+    "meta:status": [
+        "experimental",
+        "stabilizing"
+    ],
+    "meta:xdmType": "object",
+    "properties": {
+        "_id": {
+            "type": "string",
+            "const": "xdm:productListOpens",
+            "description": "The unique identifier of this metric.",
+            "meta:xdmType": "string",
+            "format": "uri-reference",
+            "meta:xdmField": "@id"
+        },
+        "_schema": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "const": "commerce metric: productListOpens",
+                    "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "schema:name"
+                }
+            },
+            "required": [
+                "name"
+            ]
+        },
+        "measurement": {
+            "type": "string",
+            "description": "How to take measures of this metric.",
+            "const": "count",
+            "meta:xdmType": "string",
+            "examples": [
+                "distance",
+                "time",
+                "price",
+                "count"
+            ],
+            "meta:xdmField": "xdm:measurement"
+        },
+        "unit": {
+            "const": "",
+            "type": "string",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:unit"
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/data/metrics/product-list-opens",
+    "meta:altId": "_xdm.data.metrics.product-list-opens",
+    "required": [
+        "_id",
+        "_schema",
+        "measurement",
+        "unit"
+    ]
+}

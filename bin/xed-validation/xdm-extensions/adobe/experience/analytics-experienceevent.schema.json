@@ -1,0 +1,78 @@
+{
+    "$id": "https://ns.adobe.com/experience/analytics-experienceevent",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Adobe Analytics ExperienceEvent Template Mixin",
+    "type": "object",
+    "description": "Analytics ExperienceEvent mixin for use with schemas for Solution data ingestion. Includes the core/standard ExperienceEvent as well as the required Adobe Analytics ExperienceEvent mixins.",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "definitions": {
+        "analytics-experienceevent": {
+            "properties": {}
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "xdm/context/experienceevent-advertising.schema.json"
+        },
+        {
+            "$ref": "xdm/context/experienceevent-application.schema.json"
+        },
+        {
+            "$ref": "xdm/context/experienceevent-channel.schema.json"
+        },
+        {
+            "$ref": "xdm/context/experienceevent-directmarketing.schema.json"
+        },
+        {
+            "$ref": "xdm/context/experienceevent-environment-details.schema.json"
+        },
+        {
+            "$ref": "xdm/context/experienceevent-marketing.schema.json"
+        },
+        {
+            "$ref": "xdm/context/experienceevent-media.schema.json"
+        },
+        {
+            "$ref": "xdm/context/experienceevent-profile-stitch.schema.json"
+        },
+        {
+            "$ref": "xdm/context/experienceevent-search.schema.json"
+        },
+        {
+            "$ref": "xdm/context/experienceevent-segmentmembership.schema.json"
+        },
+        {
+            "$ref": "xdm/context/experienceevent-technical-details.schema.json"
+        },
+        {
+            "$ref": "xdm/context/experienceevent-web.schema.json"
+        },
+        {
+            "$ref": "xdm-extensions/adobe/experience/analytics/experienceevent-all.schema.json"
+        },
+        {
+            "$ref": "xdm-extensions/adobe/experience/experienceevent-edgeregion.schema.json"
+        },
+        {
+            "$ref": "xdm-extensions/adobe/experience/target/experienceevent-shared.schema.json"
+        },
+        {
+            "$ref": "xdm-extensions/adobe/experience/profile/experienceevent-shared.schema.json"
+        },
+        {
+            "$ref": "xdm-extensions/adobe/experience/implementations-ext.schema.json"
+        },
+        {
+            "$ref": "xdm/context/experienceevent-enduserids.schema.json"
+        },
+        {
+            "$ref": "xdm-extensions/adobe/experience/analytics/commerce.schema.json"
+        },
+        {
+            "$ref": "#/definitions/analytics-experienceevent"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmType": "object"
+}

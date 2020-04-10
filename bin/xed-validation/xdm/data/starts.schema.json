@@ -1,0 +1,51 @@
+{
+    "$id": "https://ns.adobe.com/xdm/data/starts",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Starts",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "Indicates the first frame of the timed media was viewed - i.e. the viewer did not abandon during pre-roll ad, buffering, etc.",
+    "definitions": {
+        "metricdefinition": {
+            "properties": {
+                "@id": {
+                    "type": "string",
+                    "const": "xdm:starts",
+                    "description": "The unique identifier of this metric.",
+                    "meta:xdmType": "string"
+                },
+                "schema:name": {
+                    "type": "string",
+                    "const": "metric: starts",
+                    "description": "Indicates the first frame of the timed media asset was viewed - i.e. the viewer did not abandon during pre-roll ad, buffering, etc.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:measurement": {
+                    "type": "string",
+                    "description": "How to take measures of this metric.",
+                    "const": "count",
+                    "meta:xdmType": "string"
+                },
+                "xdm:unit": {
+                    "const": null
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/metricdefinition"
+        },
+        {
+            "$ref": "xdm/data/metricdefinition.schema.json"
+        }
+    ],
+    "required": [
+        "@id",
+        "schema:name",
+        "xdm:measurement",
+        "xdm:unit"
+    ],
+    "meta:status": "stabilizing",
+    "meta:xdmType": "object"
+}

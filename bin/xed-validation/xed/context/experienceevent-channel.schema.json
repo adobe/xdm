@@ -1,0 +1,22 @@
+{
+    "$id": "context/experienceevent-channel.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "ExperienceEvent channel details",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "description": "This mixin is used to capture channel information related to an ExperienceEvent, including the channel ID, channel type, media type, and location type.",
+    "meta:status": "stabilizing",
+    "meta:xdmType": "object",
+    "properties": {
+        "channel": {
+            "title": "Experience channel",
+            "description": "Experience channel related to the ExperienceEvent.",
+            "$ref": "../channels/channel.schema.json",
+            "meta:xdmField": "xdm:channel",
+            "tagNumber": 1
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-channel",
+    "meta:altId": "_xdm.context.experienceevent-channel"
+}

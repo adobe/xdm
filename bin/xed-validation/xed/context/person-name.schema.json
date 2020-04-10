@@ -1,0 +1,54 @@
+{
+    "$id": "context/person-name.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Person name",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "Full name of a person.",
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "firstName": {
+            "title": "First name",
+            "type": "string",
+            "description": "The first segment of the name in the writing order most commonly accepted in the language of the name. In many cultures this is the preferred personal or given name. The `firstName` and `lastName` properties have been introduced to maintain compatibility with existing systems that model names in a simplified, non-semantic, and non-internationalizable way. Using `xdm:fullName` is always preferable.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:firstName",
+            "tagNumber": 1
+        },
+        "lastName": {
+            "title": "Last name",
+            "type": "string",
+            "description": "The last segment of the name in the writing order most commonly accepted in the language of the name. In many cultures this is the inherited family name, surname, patronymic, or matronymic name. The `firstName` and `lastName` properties have been introduced to maintain compatibility with existing systems that model names in a simplified, non-semantic, and non-internationalizable way. Using `xdm:fullName` is always preferable.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:lastName",
+            "tagNumber": 2
+        },
+        "middleName": {
+            "title": "Middle name",
+            "type": "string",
+            "description": "Middle, alternative, or additional names supplied between the first name and last name.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:middleName",
+            "tagNumber": 3
+        },
+        "courtesyTitle": {
+            "title": "Courtesy title",
+            "type": "string",
+            "description": "Normally an abbreviation of a persons title, honorific, or salutation. The `courtesyTitle` is used in front of full or last name in opening texts. For example, Mr. Miss. or Dr.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:courtesyTitle",
+            "tagNumber": 4
+        },
+        "fullName": {
+            "title": "Full name",
+            "type": "string",
+            "description": "The full name of the person, in writing order most commonly accepted in the language of the name.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:fullName",
+            "tagNumber": 5
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/person-name",
+    "meta:altId": "_xdm.context.person-name"
+}

@@ -1,0 +1,95 @@
+{
+    "$id": "common/organization.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Organization",
+    "type": "object",
+    "description": "Examples of organization data are number of employees, market segment, industry, and location.",
+    "meta:status": "stabilizing",
+    "meta:xdmType": "object",
+    "properties": {
+        "_id": {
+            "title": "Organization ID",
+            "type": "string",
+            "format": "uri-reference",
+            "description": "A unique identifier for the organization.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "@id",
+            "tagNumber": 1
+        },
+        "legalName": {
+            "title": "Organization legal name",
+            "type": "string",
+            "description": "The official or legal name of the organization.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:legalName",
+            "tagNumber": 2
+        },
+        "_schema": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "description": {
+                    "title": "Organization description",
+                    "type": "string",
+                    "description": "A description of the organization.",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "schema:description",
+                    "tagNumber": 1
+                },
+                "numberOfEmployees": {
+                    "title": "Number of employees",
+                    "type": "number",
+                    "description": "The number of employees the at the organization.",
+                    "meta:xdmType": "number",
+                    "meta:xdmField": "schema:numberOfEmployees",
+                    "tagNumber": 2
+                }
+            },
+            "tagNumber": 3
+        },
+        "industry": {
+            "title": "Industry",
+            "type": "string",
+            "description": "The industry that this organization is a part of. This is a free-form field, and it is advisable to use a structured value for queries or to use the `xdm:classifier` property.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:industry",
+            "tagNumber": 4
+        },
+        "website": {
+            "title": "Website URL",
+            "type": "string",
+            "format": "uri",
+            "description": "The URL of the organization's website.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:website",
+            "tagNumber": 5
+        },
+        "marketSegment": {
+            "title": "Market segment",
+            "type": "string",
+            "description": "The named market segment that the organization participates in. This is a free-form field, and it is advisable to use a structured value for queries or to use the `xdm:identifier` property.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:marketSegment",
+            "tagNumber": 6
+        },
+        "location": {
+            "title": "Location",
+            "$ref": "../context/place.schema.json",
+            "description": "The location of the organization's main office or headquarters.",
+            "meta:xdmField": "xdm:location",
+            "tagNumber": 7
+        },
+        "rating": {
+            "title": "Rating",
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1,
+            "description": "The calculated score or star rating for this organization. `1` indicates the maximum possible rating, `0` the minimum possible rating.",
+            "meta:xdmType": "number",
+            "meta:xdmField": "xdm:rating",
+            "tagNumber": 8
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/common/organization",
+    "meta:altId": "_xdm.common.organization"
+}

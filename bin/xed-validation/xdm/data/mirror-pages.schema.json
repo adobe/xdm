@@ -1,0 +1,51 @@
+{
+    "$id": "https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Mirror Pages",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "The direct-marketing metric `mirror-page`s describes the number of mirror pages for which a link to the online mirror page of a message has been clicked.",
+    "definitions": {
+        "metricdefinition": {
+            "properties": {
+                "@id": {
+                    "type": "string",
+                    "const": "xdm:mirrorPages",
+                    "description": "The unique identifier of this metric.",
+                    "meta:xdmType": "string"
+                },
+                "schema:name": {
+                    "type": "string",
+                    "const": "direct-marketing metric: mirrorPages",
+                    "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:measurement": {
+                    "type": "string",
+                    "description": "How to take measures of this metric.",
+                    "const": "count",
+                    "meta:xdmType": "string"
+                },
+                "xdm:unit": {
+                    "const": null
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/metricdefinition"
+        },
+        {
+            "$ref": "xdm/data/metricdefinition.schema.json"
+        }
+    ],
+    "required": [
+        "@id",
+        "schema:name",
+        "xdm:measurement",
+        "xdm:unit"
+    ],
+    "meta:status": "stabilizing",
+    "meta:xdmType": "object"
+}

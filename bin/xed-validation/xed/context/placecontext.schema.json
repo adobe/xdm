@@ -1,0 +1,59 @@
+{
+    "$id": "context/placecontext.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Place context",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "",
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "localTime": {
+            "title": "Local time",
+            "type": "string",
+            "format": "date-time",
+            "description": "The local time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\".",
+            "meta:xdmType": "date-time",
+            "meta:xdmField": "xdm:localTime",
+            "tagNumber": 1
+        },
+        "localTimezoneOffset": {
+            "title": "Local time zone offset",
+            "type": "integer",
+            "description": "The current, local time zone offset in minutes from UTC for the localTime in this object.  This will include the current DST offset if applicable.",
+            "meta:xdmType": "int",
+            "meta:xdmField": "xdm:localTimezoneOffset",
+            "tagNumber": 2
+        },
+        "geo": {
+            "title": "Geo",
+            "$ref": "../common/geo.schema.json",
+            "description": "The geographic location where the experience was delivered.",
+            "meta:xdmField": "xdm:geo",
+            "tagNumber": 3
+        },
+        "POIinteraction": {
+            "title": "POI interaction",
+            "description": "The point of interest (POI) interaction details.",
+            "meta:status": "experimental",
+            "$ref": "../context/poi-interaction.schema.json",
+            "meta:xdmField": "xdm:POIinteraction",
+            "tagNumber": 4
+        },
+        "activePOIs": {
+            "title": "POI detail",
+            "description": "Details of the points of interest (POIs) that cause the event.",
+            "meta:status": "experimental",
+            "type": "array",
+            "meta:xdmType": "array",
+            "items": {
+                "$ref": "../context/poi-detail.schema.json",
+                "tagNumber": 1
+            },
+            "meta:xdmField": "xdm:activePOIs",
+            "tagNumber": 5
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/placecontext",
+    "meta:altId": "_xdm.context.placecontext"
+}

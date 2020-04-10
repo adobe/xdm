@@ -1,0 +1,63 @@
+{
+    "$id": "data/bitrate-changes",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Bitrate Changes",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "The number of bitrate change events that occurred during a playback session.",
+    "meta:status": "stabilizing",
+    "meta:xdmType": "object",
+    "properties": {
+        "_id": {
+            "type": "string",
+            "const": "xdm:bitrateChanges",
+            "description": "The unique identifier of this metric.",
+            "meta:xdmType": "string",
+            "format": "uri-reference",
+            "meta:xdmField": "@id"
+        },
+        "_schema": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "const": "metric: bitrateChanges",
+                    "description": "The number of bitrate change events that occurred during a playback session.",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "schema:name"
+                }
+            },
+            "required": [
+                "name"
+            ]
+        },
+        "measurement": {
+            "type": "string",
+            "description": "How to take measures of this metric.",
+            "const": "count",
+            "meta:xdmType": "string",
+            "examples": [
+                "distance",
+                "time",
+                "price",
+                "count"
+            ],
+            "meta:xdmField": "xdm:measurement"
+        },
+        "unit": {
+            "const": "",
+            "type": "string",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:unit"
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/data/bitrate-changes",
+    "meta:altId": "_xdm.data.bitrate-changes",
+    "required": [
+        "_id",
+        "_schema",
+        "measurement",
+        "unit"
+    ]
+}

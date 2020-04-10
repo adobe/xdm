@@ -1,0 +1,107 @@
+{
+    "$id": "adobe/experience/target/activity/activityevent.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Adobe Target Activity Event",
+    "type": "object",
+    "description": "Represents executed Adobe Target activity and activity events.",
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "_experience": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "target": {
+                    "type": "object",
+                    "meta:xdmType": "object",
+                    "properties": {
+                        "activity": {
+                            "type": "object",
+                            "meta:xdmType": "object",
+                            "properties": {
+                                "activityevent": {
+                                    "type": "object",
+                                    "meta:xdmType": "object",
+                                    "properties": {
+                                        "context": {
+                                            "$ref": "../../../../adobe/experience/target/activity/activityevent/context.schema.json",
+                                            "meta:xdmField": "https://ns.adobe.com/experience/target/activity/activityevent/context",
+                                            "tagNumber": 1
+                                        }
+                                    },
+                                    "tagNumber": 1
+                                }
+                            },
+                            "tagNumber": 1
+                        }
+                    },
+                    "tagNumber": 1
+                }
+            },
+            "tagNumber": 1
+        },
+        "strategy": {
+            "title": "Activity Event Strategy",
+            "description": "Custom behavior strategy for both content viewing and counting when visiting a success metric.",
+            "type": "string",
+            "enum": [
+                "none",
+                "reconvert",
+                "alwaysConvert",
+                "restartSameExperience",
+                "restartRandomExperience",
+                "restartNewExperience",
+                "excludeSameExperience",
+                "ban",
+                "excludeDefaultContent",
+                "experienceFrequencyCapping"
+            ],
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:strategy",
+            "tagNumber": 2
+        },
+        "score": {
+            "title": "Engagement Metric Score",
+            "$ref": "../../../../data/measure.schema.json",
+            "description": "The capture score engagement metric calculates an aggregated score based on the value assigned to pages visited on the site, from the point the visitor first sees the campaign's first display mbox.",
+            "meta:xdmField": "xdm:score",
+            "tagNumber": 3
+        },
+        "eventScope": {
+            "type": "string",
+            "enum": [
+                "visitor",
+                "visit",
+                "impression"
+            ],
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eventScope",
+            "tagNumber": 4
+        },
+        "segmentEvents": {
+            "type": "array",
+            "meta:xdmType": "array",
+            "items": {
+                "$ref": "../../../../adobe/experience/target/activity/activityevent/segmentevent.schema.json",
+                "tagNumber": 1
+            },
+            "meta:xdmField": "xdm:segmentEvents",
+            "tagNumber": 5
+        },
+        "optionEvents": {
+            "type": "array",
+            "meta:xdmType": "array",
+            "items": {
+                "$ref": "../../../../adobe/experience/target/activity/activityevent/optionevent.schema.json",
+                "tagNumber": 1
+            },
+            "meta:xdmField": "xdm:optionEvents",
+            "tagNumber": 6
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/target/activity/activityevent",
+    "meta:altId": "_experience.target.activity.activityevent",
+    "required": [
+        "eventScope"
+    ]
+}

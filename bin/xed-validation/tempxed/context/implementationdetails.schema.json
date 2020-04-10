@@ -1,0 +1,29 @@
+{
+    "$id": "context/implementationdetails",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Implementation details",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:status": "stabilizing",
+    "description": "Details about the SDK, library, or service used in an application or web page implementation of a service.",
+    "meta:xdmType": "object",
+    "properties": {
+        "name": {
+            "title": "Name",
+            "type": "string",
+            "format": "uri",
+            "description": "SDK or endpoint identifier. All SDKs or endpoints are identified through a URI, including extensions.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:name"
+        },
+        "version": {
+            "title": "Version",
+            "type": "string",
+            "description": "The version identifier of the API, for example, 'h.18'.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:version"
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/implementationdetails",
+    "meta:altId": "_xdm.context.implementationdetails"
+}

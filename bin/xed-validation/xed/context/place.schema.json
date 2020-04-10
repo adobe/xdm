@@ -1,0 +1,102 @@
+{
+    "$id": "context/place.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Physical place",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "A place in the real world with a physical location.",
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "_id": {
+            "title": "Place ID",
+            "type": "string",
+            "format": "uri-reference",
+            "description": "The unique identifier of the place.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "@id",
+            "tagNumber": 1
+        },
+        "_schema": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "description": {
+                    "title": "Description",
+                    "type": "string",
+                    "description": "The description of the physical location.",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "schema:description",
+                    "tagNumber": 1
+                },
+                "telephone": {
+                    "title": "Phone number",
+                    "type": "string",
+                    "description": "The phone number.",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "schema:telephone",
+                    "tagNumber": 2
+                },
+                "branchCode": {
+                    "title": "Location code",
+                    "type": "string",
+                    "description": "A short textual code also called \"store code\" that uniquely identifies a place of business. The code is typically assigned by the parent organization and used in structured URLs. For example, in the URL `http://www.starbucks.co.uk/store-locator/etc/detail/3047` the code \"3047\" is a `branchCode` for a particular branch.",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "schema:branchCode",
+                    "tagNumber": 3
+                }
+            },
+            "tagNumber": 2
+        },
+        "address": {
+            "title": "Address",
+            "$ref": "../common/address.schema.json",
+            "description": "The physical address of the location.",
+            "meta:xdmField": "xdm:address",
+            "tagNumber": 3
+        },
+        "shape": {
+            "title": "Geo shape",
+            "$ref": "../external/schema/geoshape.schema.json",
+            "description": "The geographic shape of the physical location.",
+            "meta:xdmField": "xdm:shape",
+            "tagNumber": 4
+        },
+        "pointOfInterest": {
+            "title": "Point of interest",
+            "$ref": "../external/schema/geocoordinates.schema.json",
+            "description": "The coordinates of the point of interest for this location.",
+            "meta:xdmField": "xdm:pointOfInterest",
+            "tagNumber": 5
+        },
+        "containedInPlace": {
+            "title": "Contained by location",
+            "type": "string",
+            "format": "uri",
+            "description": "XDM URI of another `Place` that this place is contained in. This property is based on `schema:containedInPlace`, but is using URI references instead of embedding the containing place.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:containedInPlace",
+            "tagNumber": 6
+        },
+        "containsPlaces": {
+            "title": "Contains locations",
+            "type": "array",
+            "description": "An array of XDM URIs of other `Place` instances that this place is containing. This property is based on `schema:containsPlace`, but is using URI references instead of embedding the containing place. In addition, it is an array, allowing one place to include multiple other places.",
+            "meta:xdmType": "array",
+            "items": {
+                "type": "string",
+                "format": "uri",
+                "description": "The XDM URI of another `Place` that this place contains.",
+                "meta:xdmType": "string",
+                "tagNumber": 1
+            },
+            "meta:xdmField": "xdm:containsPlaces",
+            "tagNumber": 7
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/place",
+    "meta:altId": "_xdm.context.place",
+    "required": [
+        "_id"
+    ]
+}

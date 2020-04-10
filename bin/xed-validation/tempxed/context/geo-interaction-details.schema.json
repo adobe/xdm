@@ -1,0 +1,34 @@
+{
+    "$id": "context/geo-interaction-details",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Geo interaction details",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "The geo details relating to the current state of inclusion in a geo defined area.",
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "distanceToCenter": {
+            "title": "Distance to center",
+            "type": "number",
+            "description": "Distance to center of geo in, case of a geo circle, measured in meters.",
+            "meta:xdmType": "number",
+            "meta:xdmField": "xdm:distanceToCenter"
+        },
+        "deviceGeoAccuracy": {
+            "title": "Geo device accuracy",
+            "type": "number",
+            "description": "The accuracy of the geo measuring device or mechanism, measured in meters.",
+            "meta:xdmType": "number",
+            "meta:xdmField": "xdm:deviceGeoAccuracy"
+        },
+        "geoShape": {
+            "title": "Geo shape",
+            "$ref": "external/schema/geoshape",
+            "description": "Geo shape of the geo being interacted with.",
+            "meta:xdmField": "xdm:geoShape"
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/geo-interaction-details",
+    "meta:altId": "_xdm.context.geo-interaction-details"
+}

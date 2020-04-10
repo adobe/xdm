@@ -1,0 +1,175 @@
+{
+    "$id": "adcloud/searchads/portfolio.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Search Advertising Portfolio",
+    "type": "object",
+    "meta:extensible": [
+        false,
+        true
+    ],
+    "meta:abstract": [
+        false,
+        true
+    ],
+    "meta:auditable": true,
+    "description": "Search Advertising Portfolio Class includes fields that defines Portfolio.",
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "_id": {
+            "title": "Identifier",
+            "type": "string",
+            "format": "uri-reference",
+            "description": "A unique identifier for the record.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "@id",
+            "tagNumber": 1
+        },
+        "repositoryCreatedBy": {
+            "title": "Created by user identifier",
+            "type": "string",
+            "description": "User ID of who created the record.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:repositoryCreatedBy",
+            "tagNumber": 2
+        },
+        "repositoryLastModifiedBy": {
+            "title": "Modified by user identifier",
+            "type": "string",
+            "description": "User ID of who last modified the record. At creation time, `modifiedByUser` is set as `createdByUser`.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:repositoryLastModifiedBy",
+            "tagNumber": 3
+        },
+        "createdByBatchID": {
+            "title": "Created by batch identifier",
+            "type": "string",
+            "format": "uri-reference",
+            "description": "The dataset files in Catalog which has been originating the creation of the record.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:createdByBatchID",
+            "tagNumber": 4
+        },
+        "modifiedByBatchID": {
+            "title": "Modified by batch identifier",
+            "type": "string",
+            "format": "uri-reference",
+            "description": "The last dataset files in Catalog which has modified the record. At creation time, `modifiedByBatchID` is set as `createdByBatchID`.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:modifiedByBatchID",
+            "tagNumber": 5
+        },
+        "_repo": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "createDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "meta:immutable": true,
+                    "meta:usereditable": false,
+                    "examples": [
+                        "2004-10-23T12:00:00-06:00"
+                    ],
+                    "description": "The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The date time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+                    "meta:xdmType": "date-time",
+                    "meta:xdmField": "repo:createDate",
+                    "tagNumber": 1
+                },
+                "modifyDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "meta:usereditable": false,
+                    "examples": [
+                        "2004-10-23T12:00:00-06:00"
+                    ],
+                    "description": "The server date and time when the resource was last modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The date time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+                    "meta:xdmType": "date-time",
+                    "meta:xdmField": "repo:modifyDate",
+                    "tagNumber": 2
+                }
+            },
+            "tagNumber": 6
+        },
+        "_searchads": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "portfolioName": {
+                    "title": "Portfolio Name",
+                    "type": "string",
+                    "description": "Name of the Portfolio.",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "searchads:portfolioName",
+                    "tagNumber": 1
+                },
+                "billingState": {
+                    "title": "Portfolio Billing State",
+                    "type": "string",
+                    "description": "Portfolio Billing State indicates whether client should be billed for spend from this Portfolio.",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "searchads:billingState",
+                    "tagNumber": 2
+                },
+                "portfolioGroupId": {
+                    "title": "Portfolio Group Identifier",
+                    "type": "string",
+                    "description": "Set of portfolios can be assigned to a portfolio Group. This identifier indicates if portfolio is assigned to a portfolio group.",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "searchads:portfolioGroupId",
+                    "tagNumber": 3
+                },
+                "portfolioGroupName": {
+                    "title": "Portfolio Group Name",
+                    "type": "string",
+                    "description": "Indicates Name of the Portfolio Group if portfolio belongs to a Portfolio Group.",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "searchads:portfolioGroupName",
+                    "tagNumber": 4
+                },
+                "portfolioStatus": {
+                    "title": "Portfolio Status",
+                    "type": "string",
+                    "description": "Portfolio Status",
+                    "enum": [
+                        "Active",
+                        "Paused",
+                        "Deleted",
+                        "Inactive",
+                        "Incomplete",
+                        "Optimize",
+                        "Unknown"
+                    ],
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "searchads:portfolioStatus",
+                    "tagNumber": 5
+                },
+                "createDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "examples": [
+                        "2004-10-23T12:00:00-06:00"
+                    ],
+                    "description": "The date and time when the portfolio was created. An example form is \"2004-10-23T12:00:00-06:00\".",
+                    "meta:xdmType": "date-time",
+                    "meta:xdmField": "searchads:createDate",
+                    "tagNumber": 6
+                },
+                "modifyDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "examples": [
+                        "2004-10-23T12:00:00-06:00"
+                    ],
+                    "description": "The date and time when the portfolio was last modified. An example form is \"2004-10-23T12:00:00-06:00\".",
+                    "meta:xdmType": "date-time",
+                    "meta:xdmField": "searchads:modifyDate",
+                    "tagNumber": 7
+                }
+            },
+            "tagNumber": 7
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/adcloud/searchads/portfolio",
+    "meta:altId": "_xdm.adcloud.searchads.portfolio"
+}

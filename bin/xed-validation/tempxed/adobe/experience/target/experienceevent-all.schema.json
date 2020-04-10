@@ -1,0 +1,100 @@
+{
+    "$id": "adobe/experience/target/experienceevent-all",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Adobe Target ExperienceEvent Full Extension",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "description": "Adobe Target ExperienceEvent full extension. Contains all Solution added fields.",
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "_experience": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "target": {
+                    "type": "object",
+                    "meta:xdmType": "object",
+                    "properties": {
+                        "clientcode": {
+                            "title": "Adobe Target Client Code",
+                            "type": "string",
+                            "description": "Adobe Target client code.",
+                            "meta:xdmType": "string",
+                            "meta:xdmField": "https://ns.adobe.com/experience/target/clientcode"
+                        },
+                        "mboxname": {
+                            "title": "Adobe Target Mbox Name",
+                            "type": "string",
+                            "description": "Adobe Target mbox name.",
+                            "meta:xdmType": "string",
+                            "meta:xdmField": "https://ns.adobe.com/experience/target/mboxname"
+                        },
+                        "mboxversion": {
+                            "title": "Adobe Target Mbox Version",
+                            "type": "string",
+                            "description": "Adobe Target mbox version.",
+                            "meta:xdmType": "string",
+                            "meta:xdmField": "https://ns.adobe.com/experience/target/mboxversion"
+                        },
+                        "sessionid": {
+                            "title": "Adobe Target Session Identifier",
+                            "type": "string",
+                            "description": "Adobe Target session identifier.",
+                            "meta:xdmType": "string",
+                            "meta:xdmField": "https://ns.adobe.com/experience/target/sessionid"
+                        },
+                        "pagedetail": {
+                            "type": "object",
+                            "meta:xdmType": "object",
+                            "properties": {
+                                "pageid": {
+                                    "title": "Target Unique Page Identifier",
+                                    "type": "string",
+                                    "format": "uri",
+                                    "description": "Target generated page identifier for current event.",
+                                    "meta:xdmType": "string",
+                                    "meta:xdmField": "https://ns.adobe.com/experience/target/pagedetail/pageid"
+                                },
+                                "pagescore": {
+                                    "title": "Page Score",
+                                    "type": "number",
+                                    "description": "Customer assigned score to visited page.",
+                                    "meta:xdmType": "number",
+                                    "meta:xdmField": "https://ns.adobe.com/experience/target/pagedetail/pagescore"
+                                }
+                            }
+                        },
+                        "environmentID": {
+                            "title": "Environment Identifier",
+                            "type": "string",
+                            "description": "Identifier of the environment on which the event was processed.",
+                            "meta:xdmType": "string",
+                            "meta:xdmField": "https://ns.adobe.com/experience/target/environmentID"
+                        },
+                        "activities": {
+                            "title": "Activities",
+                            "type": "array",
+                            "description": "A list of items representing executed activities.",
+                            "meta:xdmType": "array",
+                            "items": {
+                                "$ref": "adobe/experience/target/activity"
+                            },
+                            "meta:xdmField": "https://ns.adobe.com/experience/target/activities"
+                        },
+                        "supplementalDataID": {
+                            "title": "Supplemental Data Identifier",
+                            "description": "Identifier used to stitch Target events with Analytics events",
+                            "type": "string",
+                            "meta:xdmType": "string",
+                            "meta:xdmField": "https://ns.adobe.com/experience/target/supplementalDataID"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/target/experienceevent-all",
+    "meta:altId": "_experience.target.experienceevent-all"
+}

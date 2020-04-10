@@ -1,0 +1,33 @@
+{
+    "$id": "https://ns.adobe.com/xdm/common/descriptors/descriptorOneToOne",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "One to One Relationship Descriptor",
+    "meta:extensible": false,
+    "meta:abstract": false,
+    "type": "object",
+    "description": "Describes one to one relationship descriptor.",
+    "definitions": {
+        "descriptorOneToOne": {
+            "properties": {
+                "@type": {
+                    "type": "string",
+                    "const": "xdm:descriptorOneToOne",
+                    "meta:xdmType": "string"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "xdm/common/descriptors/schemadescriptor.schema.json#/definitions/descriptor"
+        },
+        {
+            "$ref": "xdm/common/descriptors/relationshipdescriptor.schema.json#/definitions/relationshipdescriptor"
+        },
+        {
+            "$ref": "#/definitions/descriptorOneToOne"
+        }
+    ],
+    "meta:status": "stabilizing",
+    "meta:xdmType": "object"
+}

@@ -1,0 +1,46 @@
+{
+    "$id": "external/schema/geocircle",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Geo Circle",
+    "type": "object",
+    "description": "A circular region of a particular radius centered on a GeoCoordinate. Based on [schema.org](http://schema.org/GeoCircle)",
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "_id": {
+            "title": "Identifier",
+            "type": "string",
+            "description": "The unique identifier of the circle.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "@id"
+        },
+        "_schema": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "description": {
+                    "title": "Description",
+                    "type": "string",
+                    "description": "A description of what the circle contains.",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "schema:description"
+                },
+                "coordinates": {
+                    "title": "Coordinates",
+                    "$ref": "external/schema/geocoordinates",
+                    "description": "",
+                    "meta:xdmField": "schema:coordinates"
+                },
+                "radius": {
+                    "title": "Radius",
+                    "type": "number",
+                    "description": "The length of the radius of the circle. This value conforms to the WGS84 datum and is measured in meters.",
+                    "meta:xdmType": "number",
+                    "meta:xdmField": "schema:radius"
+                }
+            }
+        }
+    },
+    "meta:xdmId": "http://schema.org/GeoCircle",
+    "meta:altId": "_xdm.external.schema.geocircle"
+}

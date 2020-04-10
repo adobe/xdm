@@ -1,0 +1,43 @@
+{
+    "$id": "https://ns.adobe.com/xdm/context/directmarketing-address",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Direct marketing postal address",
+    "type": "object",
+    "description": "Postal address information used to contact a user.",
+    "definitions": {
+        "directmarketing-address": {
+            "properties": {
+                "xdm:errorCount": {
+                    "title": "Address error count",
+                    "type": "integer",
+                    "description": "Number of consecutive errors when sending to this address.",
+                    "meta:xdmType": "int"
+                },
+                "xdm:quality": {
+                    "title": "Address quality",
+                    "type": "string",
+                    "description": "Address quality rating.",
+                    "meta:enum": {
+                        "incomplete_address": "Incomplete address",
+                        "unknown_town_postal_code": "Unknown town or postal code",
+                        "empty_street": "Empty street",
+                        "unknown_street": "Unknown street",
+                        "partially_recognized_street": "Partially recognized street",
+                        "fully_recognized_street": "Fully recognized street"
+                    },
+                    "meta:xdmType": "string"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/directmarketing-address"
+        },
+        {
+            "$ref": "xdm/common/address.schema.json"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmType": "object"
+}

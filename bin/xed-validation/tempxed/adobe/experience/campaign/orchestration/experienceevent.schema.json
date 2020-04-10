@@ -1,0 +1,39 @@
+{
+    "$id": "adobe/experience/campaign/orchestration/experienceevent",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Journey experience event",
+    "type": "object",
+    "description": "Orchestration extension to ExperienceEvent",
+    "meta:status": "stabilizing",
+    "meta:xdmType": "object",
+    "properties": {
+        "_id": {
+            "title": "Journey unique identifier",
+            "type": "string",
+            "format": "uri-reference",
+            "description": "The unique identifier of the journey created by the marketer.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "@id"
+        },
+        "actionID": {
+            "title": "Action identifier",
+            "type": "string",
+            "format": "uri-reference",
+            "description": "Unique identifier denoting the associated action.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:actionID"
+        },
+        "actionType": {
+            "title": "Action Type",
+            "type": "string",
+            "description": "The type of action to be performed.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:actionType"
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/campaign/orchestration/experienceevent",
+    "meta:altId": "_experience.campaign.orchestration.experienceevent",
+    "required": [
+        "_id"
+    ]
+}

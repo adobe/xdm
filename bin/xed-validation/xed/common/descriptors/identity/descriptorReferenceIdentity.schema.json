@@ -1,0 +1,76 @@
+{
+    "$id": "common/descriptors/descriptorreferenceidentity.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Identity Reference Descriptor",
+    "meta:extensible": false,
+    "meta:abstract": false,
+    "type": "object",
+    "description": "Used to assign a namespace that will be used to derive a relationship.",
+    "meta:status": "stabilizing",
+    "meta:xdmType": "object",
+    "properties": {
+        "_id": {
+            "title": "Identifier",
+            "type": "string",
+            "format": "uri-reference",
+            "description": "The unique identifier for the schema descriptor. This property is required when the descriptor is defined outside of the applicable schema, but is optional when applied via 'meta:descriptors'.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "@id",
+            "tagNumber": 1
+        },
+        "_type": {
+            "title": "Type",
+            "type": "string",
+            "description": "The type of descriptor this object represents.",
+            "meta:xdmType": "string",
+            "const": "xdm:descriptorReferenceIdentity",
+            "meta:xdmField": "@type",
+            "tagNumber": 2
+        },
+        "sourceSchema": {
+            "title": "Source Schema",
+            "type": "string",
+            "format": "uri",
+            "description": "The source schema this descriptor applies to. This property is required when the descriptor is defined outside of the applicable schema, but is optional when applied via 'meta:descriptors'",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:sourceSchema",
+            "tagNumber": 3
+        },
+        "sourceProperty": {
+            "title": "Source Property",
+            "type": "string",
+            "description": "When present, the property of the source schema to which this descriptor applies. This value is a JSON Pointer, applied to an instance of an object described by `xdm:sourceSchema`.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:sourceProperty",
+            "tagNumber": 4
+        },
+        "sourceVersion": {
+            "title": "Source Version",
+            "type": "number",
+            "description": "Major version being referenced.",
+            "meta:xdmType": "number",
+            "meta:xdmField": "xdm:sourceVersion",
+            "tagNumber": 5
+        },
+        "sourceItem": {
+            "meta:xdmField": "xdm:sourceItem",
+            "tagNumber": 6
+        },
+        "identityNamespace": {
+            "title": "Identity Namespace",
+            "type": "string",
+            "description": "The namespace code defined in identity system.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:identityNamespace",
+            "tagNumber": 7
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/common/descriptors/descriptorReferenceIdentity",
+    "meta:altId": "_xdm.common.descriptors.descriptorreferenceidentity",
+    "required": [
+        "identityNamespace",
+        "sourceProperty",
+        "sourceSchema",
+        "sourceVersion"
+    ]
+}

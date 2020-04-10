@@ -1,0 +1,32 @@
+{
+    "$id": "context/media-timed-chapter-view-details",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Timed media chapter view details",
+    "type": "object",
+    "meta:status": "experimental",
+    "meta:extensible": true,
+    "description": "View details for the chapter playback captured by the experience event.",
+    "meta:xdmType": "object",
+    "properties": {
+        "index": {
+            "title": "Chapter index",
+            "type": "integer",
+            "description": "The index of the chapter inside the content.",
+            "meta:xdmType": "int",
+            "meta:xdmField": "xdm:index"
+        },
+        "offset": {
+            "title": "Chapter offset",
+            "type": "integer",
+            "description": "The offset of the chapter, in seconds, inside the content from the start.",
+            "meta:xdmType": "int",
+            "meta:xdmField": "xdm:offset"
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/media-timed-chapter-view-details",
+    "meta:altId": "_xdm.context.media-timed-chapter-view-details",
+    "required": [
+        "index",
+        "offset"
+    ]
+}

@@ -1,0 +1,63 @@
+{
+    "$id": "data/metrics/web/pageviews",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Page Views",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "The web metric `pageViews` describes the number of impressions of a web page.",
+    "meta:status": "stabilizing",
+    "meta:xdmType": "object",
+    "properties": {
+        "_id": {
+            "type": "string",
+            "const": "xdm:pageViews",
+            "description": "The unique identifier of this metric.",
+            "meta:xdmType": "string",
+            "format": "uri-reference",
+            "meta:xdmField": "@id"
+        },
+        "_schema": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "const": "web metric: pageViews",
+                    "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "schema:name"
+                }
+            },
+            "required": [
+                "name"
+            ]
+        },
+        "measurement": {
+            "type": "string",
+            "description": "How to take measures of this metric.",
+            "const": "count",
+            "meta:xdmType": "string",
+            "examples": [
+                "distance",
+                "time",
+                "price",
+                "count"
+            ],
+            "meta:xdmField": "xdm:measurement"
+        },
+        "unit": {
+            "const": "",
+            "type": "string",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:unit"
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/data/metrics/web/pageviews",
+    "meta:altId": "_xdm.data.metrics.web.pageviews",
+    "required": [
+        "_id",
+        "_schema",
+        "measurement",
+        "unit"
+    ]
+}

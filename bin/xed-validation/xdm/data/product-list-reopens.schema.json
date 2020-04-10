@@ -1,0 +1,51 @@
+{
+    "$id": "https://ns.adobe.com/xdm/data/metrics/product-list-reopens",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Product List Reopens",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "Number of reopens for which a product list that was no longer accessible has been re-activated by the user, for example via a re-marketing activity.",
+    "definitions": {
+        "metricdefinition": {
+            "properties": {
+                "@id": {
+                    "type": "string",
+                    "const": "xdm:productListReopens",
+                    "description": "The unique identifier of this metric.",
+                    "meta:xdmType": "string"
+                },
+                "schema:name": {
+                    "type": "string",
+                    "const": "commerce metric: productListReopens",
+                    "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:measurement": {
+                    "type": "string",
+                    "description": "How to take measures of this metric.",
+                    "const": "count",
+                    "meta:xdmType": "string"
+                },
+                "xdm:unit": {
+                    "const": null
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/metricdefinition"
+        },
+        {
+            "$ref": "xdm/data/metricdefinition.schema.json"
+        }
+    ],
+    "required": [
+        "@id",
+        "schema:name",
+        "xdm:measurement",
+        "xdm:unit"
+    ],
+    "meta:status": "experimental",
+    "meta:xdmType": "object"
+}

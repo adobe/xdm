@@ -1,0 +1,32 @@
+{
+    "$id": "https://ns.adobe.com/experience/offer-management/proposition-response-detail",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Offer Response Detail",
+    "type": "object",
+    "meta:abstract": true,
+    "meta:extensible": true,
+    "description": "A proposition response detail is used to capture the Response to an offer proposition. Proposition responses are enriched with the properties of the activity and offer at the time the decision was made.",
+    "definitions": {
+        "response-detail-datatype": {
+            "properties": {
+                "xdm:activity": {
+                    "title": "Offer Activity",
+                    "description": "Snapshot of the activity for which the proposition was made. The object contains at least the xdm:id property value which is the identifier of the decision activity.",
+                    "$refkept": "https://ns.adobe.com/experience/offer-management/offer-activity-detail"
+                },
+                "xdm:offer": {
+                    "title": "Offer",
+                    "description": "Snapshot of the offer that the recipient responded to. The object contains a at least the xdm:id property value which is the identifier of an offer.",
+                    "$refkept": "https://ns.adobe.com/experience/offer-management/offer-detail"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/response-detail-datatype"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmType": "object"
+}

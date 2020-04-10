@@ -1,0 +1,2012 @@
+{
+    "$id": "adobe/experience/analytics/evars.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "eVars",
+    "type": "object",
+    "description": "Custom eVars.",
+    "meta:xdmType": "object",
+    "properties": {
+        "eVar1": {
+            "title": "eVar1",
+            "type": "string",
+            "description": "Custom conversion variable 1.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar1",
+            "tagNumber": 1
+        },
+        "eVar2": {
+            "title": "eVar2",
+            "type": "string",
+            "description": "Custom conversion variable 2.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar2",
+            "tagNumber": 2
+        },
+        "eVar3": {
+            "title": "eVar3",
+            "type": "string",
+            "description": "Custom conversion variable 3.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar3",
+            "tagNumber": 3
+        },
+        "eVar4": {
+            "title": "eVar4",
+            "type": "string",
+            "description": "Custom conversion variable 4.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar4",
+            "tagNumber": 4
+        },
+        "eVar5": {
+            "title": "eVar5",
+            "type": "string",
+            "description": "Custom conversion variable 5.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar5",
+            "tagNumber": 5
+        },
+        "eVar6": {
+            "title": "eVar6",
+            "type": "string",
+            "description": "Custom conversion variable 6.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar6",
+            "tagNumber": 6
+        },
+        "eVar7": {
+            "title": "eVar7",
+            "type": "string",
+            "description": "Custom conversion variable 7.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar7",
+            "tagNumber": 7
+        },
+        "eVar8": {
+            "title": "eVar8",
+            "type": "string",
+            "description": "Custom conversion variable 8.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar8",
+            "tagNumber": 8
+        },
+        "eVar9": {
+            "title": "eVar9",
+            "type": "string",
+            "description": "Custom conversion variable 9.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar9",
+            "tagNumber": 9
+        },
+        "eVar10": {
+            "title": "eVar10",
+            "type": "string",
+            "description": "Custom conversion variable 10.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar10",
+            "tagNumber": 10
+        },
+        "eVar11": {
+            "title": "eVar11",
+            "type": "string",
+            "description": "Custom conversion variable 11.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar11",
+            "tagNumber": 11
+        },
+        "eVar12": {
+            "title": "eVar12",
+            "type": "string",
+            "description": "Custom conversion variable 12.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar12",
+            "tagNumber": 12
+        },
+        "eVar13": {
+            "title": "eVar13",
+            "type": "string",
+            "description": "Custom conversion variable 13.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar13",
+            "tagNumber": 13
+        },
+        "eVar14": {
+            "title": "eVar14",
+            "type": "string",
+            "description": "Custom conversion variable 14.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar14",
+            "tagNumber": 14
+        },
+        "eVar15": {
+            "title": "eVar15",
+            "type": "string",
+            "description": "Custom conversion variable 15.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar15",
+            "tagNumber": 15
+        },
+        "eVar16": {
+            "title": "eVar16",
+            "type": "string",
+            "description": "Custom conversion variable 16.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar16",
+            "tagNumber": 16
+        },
+        "eVar17": {
+            "title": "eVar17",
+            "type": "string",
+            "description": "Custom conversion variable 17.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar17",
+            "tagNumber": 17
+        },
+        "eVar18": {
+            "title": "eVar18",
+            "type": "string",
+            "description": "Custom conversion variable 18.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar18",
+            "tagNumber": 18
+        },
+        "eVar19": {
+            "title": "eVar19",
+            "type": "string",
+            "description": "Custom conversion variable 19.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar19",
+            "tagNumber": 19
+        },
+        "eVar20": {
+            "title": "eVar20",
+            "type": "string",
+            "description": "Custom conversion variable 20.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar20",
+            "tagNumber": 20
+        },
+        "eVar21": {
+            "title": "eVar21",
+            "type": "string",
+            "description": "Custom conversion variable 21.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar21",
+            "tagNumber": 21
+        },
+        "eVar22": {
+            "title": "eVar22",
+            "type": "string",
+            "description": "Custom conversion variable 22.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar22",
+            "tagNumber": 22
+        },
+        "eVar23": {
+            "title": "eVar23",
+            "type": "string",
+            "description": "Custom conversion variable 23.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar23",
+            "tagNumber": 23
+        },
+        "eVar24": {
+            "title": "eVar24",
+            "type": "string",
+            "description": "Custom conversion variable 24.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar24",
+            "tagNumber": 24
+        },
+        "eVar25": {
+            "title": "eVar25",
+            "type": "string",
+            "description": "Custom conversion variable 25.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar25",
+            "tagNumber": 25
+        },
+        "eVar26": {
+            "title": "eVar26",
+            "type": "string",
+            "description": "Custom conversion variable 26.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar26",
+            "tagNumber": 26
+        },
+        "eVar27": {
+            "title": "eVar27",
+            "type": "string",
+            "description": "Custom conversion variable 27.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar27",
+            "tagNumber": 27
+        },
+        "eVar28": {
+            "title": "eVar28",
+            "type": "string",
+            "description": "Custom conversion variable 28.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar28",
+            "tagNumber": 28
+        },
+        "eVar29": {
+            "title": "eVar29",
+            "type": "string",
+            "description": "Custom conversion variable 29.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar29",
+            "tagNumber": 29
+        },
+        "eVar30": {
+            "title": "eVar30",
+            "type": "string",
+            "description": "Custom conversion variable 30.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar30",
+            "tagNumber": 30
+        },
+        "eVar31": {
+            "title": "eVar31",
+            "type": "string",
+            "description": "Custom conversion variable 31.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar31",
+            "tagNumber": 31
+        },
+        "eVar32": {
+            "title": "eVar32",
+            "type": "string",
+            "description": "Custom conversion variable 32.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar32",
+            "tagNumber": 32
+        },
+        "eVar33": {
+            "title": "eVar33",
+            "type": "string",
+            "description": "Custom conversion variable 33.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar33",
+            "tagNumber": 33
+        },
+        "eVar34": {
+            "title": "eVar34",
+            "type": "string",
+            "description": "Custom conversion variable 34.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar34",
+            "tagNumber": 34
+        },
+        "eVar35": {
+            "title": "eVar35",
+            "type": "string",
+            "description": "Custom conversion variable 35.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar35",
+            "tagNumber": 35
+        },
+        "eVar36": {
+            "title": "eVar36",
+            "type": "string",
+            "description": "Custom conversion variable 36.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar36",
+            "tagNumber": 36
+        },
+        "eVar37": {
+            "title": "eVar37",
+            "type": "string",
+            "description": "Custom conversion variable 37.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar37",
+            "tagNumber": 37
+        },
+        "eVar38": {
+            "title": "eVar38",
+            "type": "string",
+            "description": "Custom conversion variable 38.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar38",
+            "tagNumber": 38
+        },
+        "eVar39": {
+            "title": "eVar39",
+            "type": "string",
+            "description": "Custom conversion variable 39.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar39",
+            "tagNumber": 39
+        },
+        "eVar40": {
+            "title": "eVar40",
+            "type": "string",
+            "description": "Custom conversion variable 40.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar40",
+            "tagNumber": 40
+        },
+        "eVar41": {
+            "title": "eVar41",
+            "type": "string",
+            "description": "Custom conversion variable 41.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar41",
+            "tagNumber": 41
+        },
+        "eVar42": {
+            "title": "eVar42",
+            "type": "string",
+            "description": "Custom conversion variable 42.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar42",
+            "tagNumber": 42
+        },
+        "eVar43": {
+            "title": "eVar43",
+            "type": "string",
+            "description": "Custom conversion variable 43.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar43",
+            "tagNumber": 43
+        },
+        "eVar44": {
+            "title": "eVar44",
+            "type": "string",
+            "description": "Custom conversion variable 44.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar44",
+            "tagNumber": 44
+        },
+        "eVar45": {
+            "title": "eVar45",
+            "type": "string",
+            "description": "Custom conversion variable 45.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar45",
+            "tagNumber": 45
+        },
+        "eVar46": {
+            "title": "eVar46",
+            "type": "string",
+            "description": "Custom conversion variable 46.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar46",
+            "tagNumber": 46
+        },
+        "eVar47": {
+            "title": "eVar47",
+            "type": "string",
+            "description": "Custom conversion variable 47.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar47",
+            "tagNumber": 47
+        },
+        "eVar48": {
+            "title": "eVar48",
+            "type": "string",
+            "description": "Custom conversion variable 48.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar48",
+            "tagNumber": 48
+        },
+        "eVar49": {
+            "title": "eVar49",
+            "type": "string",
+            "description": "Custom conversion variable 49.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar49",
+            "tagNumber": 49
+        },
+        "eVar50": {
+            "title": "eVar50",
+            "type": "string",
+            "description": "Custom conversion variable 50.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar50",
+            "tagNumber": 50
+        },
+        "eVar51": {
+            "title": "eVar51",
+            "type": "string",
+            "description": "Custom conversion variable 51.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar51",
+            "tagNumber": 51
+        },
+        "eVar52": {
+            "title": "eVar52",
+            "type": "string",
+            "description": "Custom conversion variable 52.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar52",
+            "tagNumber": 52
+        },
+        "eVar53": {
+            "title": "eVar53",
+            "type": "string",
+            "description": "Custom conversion variable 53.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar53",
+            "tagNumber": 53
+        },
+        "eVar54": {
+            "title": "eVar54",
+            "type": "string",
+            "description": "Custom conversion variable 54.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar54",
+            "tagNumber": 54
+        },
+        "eVar55": {
+            "title": "eVar55",
+            "type": "string",
+            "description": "Custom conversion variable 55.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar55",
+            "tagNumber": 55
+        },
+        "eVar56": {
+            "title": "eVar56",
+            "type": "string",
+            "description": "Custom conversion variable 56.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar56",
+            "tagNumber": 56
+        },
+        "eVar57": {
+            "title": "eVar57",
+            "type": "string",
+            "description": "Custom conversion variable 57.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar57",
+            "tagNumber": 57
+        },
+        "eVar58": {
+            "title": "eVar58",
+            "type": "string",
+            "description": "Custom conversion variable 58.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar58",
+            "tagNumber": 58
+        },
+        "eVar59": {
+            "title": "eVar59",
+            "type": "string",
+            "description": "Custom conversion variable 59.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar59",
+            "tagNumber": 59
+        },
+        "eVar60": {
+            "title": "eVar60",
+            "type": "string",
+            "description": "Custom conversion variable 60.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar60",
+            "tagNumber": 60
+        },
+        "eVar61": {
+            "title": "eVar61",
+            "type": "string",
+            "description": "Custom conversion variable 61.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar61",
+            "tagNumber": 61
+        },
+        "eVar62": {
+            "title": "eVar62",
+            "type": "string",
+            "description": "Custom conversion variable 62.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar62",
+            "tagNumber": 62
+        },
+        "eVar63": {
+            "title": "eVar63",
+            "type": "string",
+            "description": "Custom conversion variable 63.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar63",
+            "tagNumber": 63
+        },
+        "eVar64": {
+            "title": "eVar64",
+            "type": "string",
+            "description": "Custom conversion variable 64.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar64",
+            "tagNumber": 64
+        },
+        "eVar65": {
+            "title": "eVar65",
+            "type": "string",
+            "description": "Custom conversion variable 65.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar65",
+            "tagNumber": 65
+        },
+        "eVar66": {
+            "title": "eVar66",
+            "type": "string",
+            "description": "Custom conversion variable 66.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar66",
+            "tagNumber": 66
+        },
+        "eVar67": {
+            "title": "eVar67",
+            "type": "string",
+            "description": "Custom conversion variable 67.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar67",
+            "tagNumber": 67
+        },
+        "eVar68": {
+            "title": "eVar68",
+            "type": "string",
+            "description": "Custom conversion variable 68.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar68",
+            "tagNumber": 68
+        },
+        "eVar69": {
+            "title": "eVar69",
+            "type": "string",
+            "description": "Custom conversion variable 69.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar69",
+            "tagNumber": 69
+        },
+        "eVar70": {
+            "title": "eVar70",
+            "type": "string",
+            "description": "Custom conversion variable 70.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar70",
+            "tagNumber": 70
+        },
+        "eVar71": {
+            "title": "eVar71",
+            "type": "string",
+            "description": "Custom conversion variable 71.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar71",
+            "tagNumber": 71
+        },
+        "eVar72": {
+            "title": "eVar72",
+            "type": "string",
+            "description": "Custom conversion variable 72.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar72",
+            "tagNumber": 72
+        },
+        "eVar73": {
+            "title": "eVar73",
+            "type": "string",
+            "description": "Custom conversion variable 73.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar73",
+            "tagNumber": 73
+        },
+        "eVar74": {
+            "title": "eVar74",
+            "type": "string",
+            "description": "Custom conversion variable 74.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar74",
+            "tagNumber": 74
+        },
+        "eVar75": {
+            "title": "eVar75",
+            "type": "string",
+            "description": "Custom conversion variable 75.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar75",
+            "tagNumber": 75
+        },
+        "eVar76": {
+            "title": "eVar76",
+            "type": "string",
+            "description": "Custom conversion variable 76.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar76",
+            "tagNumber": 76
+        },
+        "eVar77": {
+            "title": "eVar77",
+            "type": "string",
+            "description": "Custom conversion variable 77.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar77",
+            "tagNumber": 77
+        },
+        "eVar78": {
+            "title": "eVar78",
+            "type": "string",
+            "description": "Custom conversion variable 78.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar78",
+            "tagNumber": 78
+        },
+        "eVar79": {
+            "title": "eVar79",
+            "type": "string",
+            "description": "Custom conversion variable 79.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar79",
+            "tagNumber": 79
+        },
+        "eVar80": {
+            "title": "eVar80",
+            "type": "string",
+            "description": "Custom conversion variable 80.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar80",
+            "tagNumber": 80
+        },
+        "eVar81": {
+            "title": "eVar81",
+            "type": "string",
+            "description": "Custom conversion variable 81.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar81",
+            "tagNumber": 81
+        },
+        "eVar82": {
+            "title": "eVar82",
+            "type": "string",
+            "description": "Custom conversion variable 82.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar82",
+            "tagNumber": 82
+        },
+        "eVar83": {
+            "title": "eVar83",
+            "type": "string",
+            "description": "Custom conversion variable 83.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar83",
+            "tagNumber": 83
+        },
+        "eVar84": {
+            "title": "eVar84",
+            "type": "string",
+            "description": "Custom conversion variable 84.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar84",
+            "tagNumber": 84
+        },
+        "eVar85": {
+            "title": "eVar85",
+            "type": "string",
+            "description": "Custom conversion variable 85.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar85",
+            "tagNumber": 85
+        },
+        "eVar86": {
+            "title": "eVar86",
+            "type": "string",
+            "description": "Custom conversion variable 86.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar86",
+            "tagNumber": 86
+        },
+        "eVar87": {
+            "title": "eVar87",
+            "type": "string",
+            "description": "Custom conversion variable 87.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar87",
+            "tagNumber": 87
+        },
+        "eVar88": {
+            "title": "eVar88",
+            "type": "string",
+            "description": "Custom conversion variable 88.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar88",
+            "tagNumber": 88
+        },
+        "eVar89": {
+            "title": "eVar89",
+            "type": "string",
+            "description": "Custom conversion variable 89.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar89",
+            "tagNumber": 89
+        },
+        "eVar90": {
+            "title": "eVar90",
+            "type": "string",
+            "description": "Custom conversion variable 90.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar90",
+            "tagNumber": 90
+        },
+        "eVar91": {
+            "title": "eVar91",
+            "type": "string",
+            "description": "Custom conversion variable 91.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar91",
+            "tagNumber": 91
+        },
+        "eVar92": {
+            "title": "eVar92",
+            "type": "string",
+            "description": "Custom conversion variable 92.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar92",
+            "tagNumber": 92
+        },
+        "eVar93": {
+            "title": "eVar93",
+            "type": "string",
+            "description": "Custom conversion variable 93.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar93",
+            "tagNumber": 93
+        },
+        "eVar94": {
+            "title": "eVar94",
+            "type": "string",
+            "description": "Custom conversion variable 94.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar94",
+            "tagNumber": 94
+        },
+        "eVar95": {
+            "title": "eVar95",
+            "type": "string",
+            "description": "Custom conversion variable 95.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar95",
+            "tagNumber": 95
+        },
+        "eVar96": {
+            "title": "eVar96",
+            "type": "string",
+            "description": "Custom conversion variable 96.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar96",
+            "tagNumber": 96
+        },
+        "eVar97": {
+            "title": "eVar97",
+            "type": "string",
+            "description": "Custom conversion variable 97.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar97",
+            "tagNumber": 97
+        },
+        "eVar98": {
+            "title": "eVar98",
+            "type": "string",
+            "description": "Custom conversion variable 98.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar98",
+            "tagNumber": 98
+        },
+        "eVar99": {
+            "title": "eVar99",
+            "type": "string",
+            "description": "Custom conversion variable 99.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar99",
+            "tagNumber": 99
+        },
+        "eVar100": {
+            "title": "eVar100",
+            "type": "string",
+            "description": "Custom conversion variable 100.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar100",
+            "tagNumber": 100
+        },
+        "eVar101": {
+            "title": "eVar101",
+            "type": "string",
+            "description": "Custom conversion variable 101.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar101",
+            "tagNumber": 101
+        },
+        "eVar102": {
+            "title": "eVar102",
+            "type": "string",
+            "description": "Custom conversion variable 102.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar102",
+            "tagNumber": 102
+        },
+        "eVar103": {
+            "title": "eVar103",
+            "type": "string",
+            "description": "Custom conversion variable 103.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar103",
+            "tagNumber": 103
+        },
+        "eVar104": {
+            "title": "eVar104",
+            "type": "string",
+            "description": "Custom conversion variable 104.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar104",
+            "tagNumber": 104
+        },
+        "eVar105": {
+            "title": "eVar105",
+            "type": "string",
+            "description": "Custom conversion variable 105.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar105",
+            "tagNumber": 105
+        },
+        "eVar106": {
+            "title": "eVar106",
+            "type": "string",
+            "description": "Custom conversion variable 106.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar106",
+            "tagNumber": 106
+        },
+        "eVar107": {
+            "title": "eVar107",
+            "type": "string",
+            "description": "Custom conversion variable 107.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar107",
+            "tagNumber": 107
+        },
+        "eVar108": {
+            "title": "eVar108",
+            "type": "string",
+            "description": "Custom conversion variable 108.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar108",
+            "tagNumber": 108
+        },
+        "eVar109": {
+            "title": "eVar109",
+            "type": "string",
+            "description": "Custom conversion variable 109.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar109",
+            "tagNumber": 109
+        },
+        "eVar110": {
+            "title": "eVar110",
+            "type": "string",
+            "description": "Custom conversion variable 110.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar110",
+            "tagNumber": 110
+        },
+        "eVar111": {
+            "title": "eVar111",
+            "type": "string",
+            "description": "Custom conversion variable 111.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar111",
+            "tagNumber": 111
+        },
+        "eVar112": {
+            "title": "eVar112",
+            "type": "string",
+            "description": "Custom conversion variable 112.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar112",
+            "tagNumber": 112
+        },
+        "eVar113": {
+            "title": "eVar113",
+            "type": "string",
+            "description": "Custom conversion variable 113.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar113",
+            "tagNumber": 113
+        },
+        "eVar114": {
+            "title": "eVar114",
+            "type": "string",
+            "description": "Custom conversion variable 114.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar114",
+            "tagNumber": 114
+        },
+        "eVar115": {
+            "title": "eVar115",
+            "type": "string",
+            "description": "Custom conversion variable 115.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar115",
+            "tagNumber": 115
+        },
+        "eVar116": {
+            "title": "eVar116",
+            "type": "string",
+            "description": "Custom conversion variable 116.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar116",
+            "tagNumber": 116
+        },
+        "eVar117": {
+            "title": "eVar117",
+            "type": "string",
+            "description": "Custom conversion variable 117.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar117",
+            "tagNumber": 117
+        },
+        "eVar118": {
+            "title": "eVar118",
+            "type": "string",
+            "description": "Custom conversion variable 118.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar118",
+            "tagNumber": 118
+        },
+        "eVar119": {
+            "title": "eVar119",
+            "type": "string",
+            "description": "Custom conversion variable 119.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar119",
+            "tagNumber": 119
+        },
+        "eVar120": {
+            "title": "eVar120",
+            "type": "string",
+            "description": "Custom conversion variable 120.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar120",
+            "tagNumber": 120
+        },
+        "eVar121": {
+            "title": "eVar121",
+            "type": "string",
+            "description": "Custom conversion variable 121.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar121",
+            "tagNumber": 121
+        },
+        "eVar122": {
+            "title": "eVar122",
+            "type": "string",
+            "description": "Custom conversion variable 122.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar122",
+            "tagNumber": 122
+        },
+        "eVar123": {
+            "title": "eVar123",
+            "type": "string",
+            "description": "Custom conversion variable 123.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar123",
+            "tagNumber": 123
+        },
+        "eVar124": {
+            "title": "eVar124",
+            "type": "string",
+            "description": "Custom conversion variable 124.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar124",
+            "tagNumber": 124
+        },
+        "eVar125": {
+            "title": "eVar125",
+            "type": "string",
+            "description": "Custom conversion variable 125.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar125",
+            "tagNumber": 125
+        },
+        "eVar126": {
+            "title": "eVar126",
+            "type": "string",
+            "description": "Custom conversion variable 126.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar126",
+            "tagNumber": 126
+        },
+        "eVar127": {
+            "title": "eVar127",
+            "type": "string",
+            "description": "Custom conversion variable 127.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar127",
+            "tagNumber": 127
+        },
+        "eVar128": {
+            "title": "eVar128",
+            "type": "string",
+            "description": "Custom conversion variable 128.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar128",
+            "tagNumber": 128
+        },
+        "eVar129": {
+            "title": "eVar129",
+            "type": "string",
+            "description": "Custom conversion variable 129.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar129",
+            "tagNumber": 129
+        },
+        "eVar130": {
+            "title": "eVar130",
+            "type": "string",
+            "description": "Custom conversion variable 130.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar130",
+            "tagNumber": 130
+        },
+        "eVar131": {
+            "title": "eVar131",
+            "type": "string",
+            "description": "Custom conversion variable 131.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar131",
+            "tagNumber": 131
+        },
+        "eVar132": {
+            "title": "eVar132",
+            "type": "string",
+            "description": "Custom conversion variable 132.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar132",
+            "tagNumber": 132
+        },
+        "eVar133": {
+            "title": "eVar133",
+            "type": "string",
+            "description": "Custom conversion variable 133.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar133",
+            "tagNumber": 133
+        },
+        "eVar134": {
+            "title": "eVar134",
+            "type": "string",
+            "description": "Custom conversion variable 134.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar134",
+            "tagNumber": 134
+        },
+        "eVar135": {
+            "title": "eVar135",
+            "type": "string",
+            "description": "Custom conversion variable 135.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar135",
+            "tagNumber": 135
+        },
+        "eVar136": {
+            "title": "eVar136",
+            "type": "string",
+            "description": "Custom conversion variable 136.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar136",
+            "tagNumber": 136
+        },
+        "eVar137": {
+            "title": "eVar137",
+            "type": "string",
+            "description": "Custom conversion variable 137.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar137",
+            "tagNumber": 137
+        },
+        "eVar138": {
+            "title": "eVar138",
+            "type": "string",
+            "description": "Custom conversion variable 138.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar138",
+            "tagNumber": 138
+        },
+        "eVar139": {
+            "title": "eVar139",
+            "type": "string",
+            "description": "Custom conversion variable 139.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar139",
+            "tagNumber": 139
+        },
+        "eVar140": {
+            "title": "eVar140",
+            "type": "string",
+            "description": "Custom conversion variable 140.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar140",
+            "tagNumber": 140
+        },
+        "eVar141": {
+            "title": "eVar141",
+            "type": "string",
+            "description": "Custom conversion variable 141.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar141",
+            "tagNumber": 141
+        },
+        "eVar142": {
+            "title": "eVar142",
+            "type": "string",
+            "description": "Custom conversion variable 142.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar142",
+            "tagNumber": 142
+        },
+        "eVar143": {
+            "title": "eVar143",
+            "type": "string",
+            "description": "Custom conversion variable 143.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar143",
+            "tagNumber": 143
+        },
+        "eVar144": {
+            "title": "eVar144",
+            "type": "string",
+            "description": "Custom conversion variable 144.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar144",
+            "tagNumber": 144
+        },
+        "eVar145": {
+            "title": "eVar145",
+            "type": "string",
+            "description": "Custom conversion variable 145.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar145",
+            "tagNumber": 145
+        },
+        "eVar146": {
+            "title": "eVar146",
+            "type": "string",
+            "description": "Custom conversion variable 146.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar146",
+            "tagNumber": 146
+        },
+        "eVar147": {
+            "title": "eVar147",
+            "type": "string",
+            "description": "Custom conversion variable 147.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar147",
+            "tagNumber": 147
+        },
+        "eVar148": {
+            "title": "eVar148",
+            "type": "string",
+            "description": "Custom conversion variable 148.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar148",
+            "tagNumber": 148
+        },
+        "eVar149": {
+            "title": "eVar149",
+            "type": "string",
+            "description": "Custom conversion variable 149.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar149",
+            "tagNumber": 149
+        },
+        "eVar150": {
+            "title": "eVar150",
+            "type": "string",
+            "description": "Custom conversion variable 150.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar150",
+            "tagNumber": 150
+        },
+        "eVar151": {
+            "title": "eVar151",
+            "type": "string",
+            "description": "Custom conversion variable 151.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar151",
+            "tagNumber": 151
+        },
+        "eVar152": {
+            "title": "eVar152",
+            "type": "string",
+            "description": "Custom conversion variable 152.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar152",
+            "tagNumber": 152
+        },
+        "eVar153": {
+            "title": "eVar153",
+            "type": "string",
+            "description": "Custom conversion variable 153.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar153",
+            "tagNumber": 153
+        },
+        "eVar154": {
+            "title": "eVar154",
+            "type": "string",
+            "description": "Custom conversion variable 154.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar154",
+            "tagNumber": 154
+        },
+        "eVar155": {
+            "title": "eVar155",
+            "type": "string",
+            "description": "Custom conversion variable 155.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar155",
+            "tagNumber": 155
+        },
+        "eVar156": {
+            "title": "eVar156",
+            "type": "string",
+            "description": "Custom conversion variable 156.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar156",
+            "tagNumber": 156
+        },
+        "eVar157": {
+            "title": "eVar157",
+            "type": "string",
+            "description": "Custom conversion variable 157.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar157",
+            "tagNumber": 157
+        },
+        "eVar158": {
+            "title": "eVar158",
+            "type": "string",
+            "description": "Custom conversion variable 158.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar158",
+            "tagNumber": 158
+        },
+        "eVar159": {
+            "title": "eVar159",
+            "type": "string",
+            "description": "Custom conversion variable 159.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar159",
+            "tagNumber": 159
+        },
+        "eVar160": {
+            "title": "eVar160",
+            "type": "string",
+            "description": "Custom conversion variable 160.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar160",
+            "tagNumber": 160
+        },
+        "eVar161": {
+            "title": "eVar161",
+            "type": "string",
+            "description": "Custom conversion variable 161.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar161",
+            "tagNumber": 161
+        },
+        "eVar162": {
+            "title": "eVar162",
+            "type": "string",
+            "description": "Custom conversion variable 162.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar162",
+            "tagNumber": 162
+        },
+        "eVar163": {
+            "title": "eVar163",
+            "type": "string",
+            "description": "Custom conversion variable 163.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar163",
+            "tagNumber": 163
+        },
+        "eVar164": {
+            "title": "eVar164",
+            "type": "string",
+            "description": "Custom conversion variable 164.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar164",
+            "tagNumber": 164
+        },
+        "eVar165": {
+            "title": "eVar165",
+            "type": "string",
+            "description": "Custom conversion variable 165.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar165",
+            "tagNumber": 165
+        },
+        "eVar166": {
+            "title": "eVar166",
+            "type": "string",
+            "description": "Custom conversion variable 166.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar166",
+            "tagNumber": 166
+        },
+        "eVar167": {
+            "title": "eVar167",
+            "type": "string",
+            "description": "Custom conversion variable 167.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar167",
+            "tagNumber": 167
+        },
+        "eVar168": {
+            "title": "eVar168",
+            "type": "string",
+            "description": "Custom conversion variable 168.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar168",
+            "tagNumber": 168
+        },
+        "eVar169": {
+            "title": "eVar169",
+            "type": "string",
+            "description": "Custom conversion variable 169.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar169",
+            "tagNumber": 169
+        },
+        "eVar170": {
+            "title": "eVar170",
+            "type": "string",
+            "description": "Custom conversion variable 170.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar170",
+            "tagNumber": 170
+        },
+        "eVar171": {
+            "title": "eVar171",
+            "type": "string",
+            "description": "Custom conversion variable 171.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar171",
+            "tagNumber": 171
+        },
+        "eVar172": {
+            "title": "eVar172",
+            "type": "string",
+            "description": "Custom conversion variable 172.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar172",
+            "tagNumber": 172
+        },
+        "eVar173": {
+            "title": "eVar173",
+            "type": "string",
+            "description": "Custom conversion variable 173.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar173",
+            "tagNumber": 173
+        },
+        "eVar174": {
+            "title": "eVar174",
+            "type": "string",
+            "description": "Custom conversion variable 174.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar174",
+            "tagNumber": 174
+        },
+        "eVar175": {
+            "title": "eVar175",
+            "type": "string",
+            "description": "Custom conversion variable 175.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar175",
+            "tagNumber": 175
+        },
+        "eVar176": {
+            "title": "eVar176",
+            "type": "string",
+            "description": "Custom conversion variable 176.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar176",
+            "tagNumber": 176
+        },
+        "eVar177": {
+            "title": "eVar177",
+            "type": "string",
+            "description": "Custom conversion variable 177.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar177",
+            "tagNumber": 177
+        },
+        "eVar178": {
+            "title": "eVar178",
+            "type": "string",
+            "description": "Custom conversion variable 178.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar178",
+            "tagNumber": 178
+        },
+        "eVar179": {
+            "title": "eVar179",
+            "type": "string",
+            "description": "Custom conversion variable 179.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar179",
+            "tagNumber": 179
+        },
+        "eVar180": {
+            "title": "eVar180",
+            "type": "string",
+            "description": "Custom conversion variable 180.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar180",
+            "tagNumber": 180
+        },
+        "eVar181": {
+            "title": "eVar181",
+            "type": "string",
+            "description": "Custom conversion variable 181.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar181",
+            "tagNumber": 181
+        },
+        "eVar182": {
+            "title": "eVar182",
+            "type": "string",
+            "description": "Custom conversion variable 182.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar182",
+            "tagNumber": 182
+        },
+        "eVar183": {
+            "title": "eVar183",
+            "type": "string",
+            "description": "Custom conversion variable 183.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar183",
+            "tagNumber": 183
+        },
+        "eVar184": {
+            "title": "eVar184",
+            "type": "string",
+            "description": "Custom conversion variable 184.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar184",
+            "tagNumber": 184
+        },
+        "eVar185": {
+            "title": "eVar185",
+            "type": "string",
+            "description": "Custom conversion variable 185.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar185",
+            "tagNumber": 185
+        },
+        "eVar186": {
+            "title": "eVar186",
+            "type": "string",
+            "description": "Custom conversion variable 186.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar186",
+            "tagNumber": 186
+        },
+        "eVar187": {
+            "title": "eVar187",
+            "type": "string",
+            "description": "Custom conversion variable 187.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar187",
+            "tagNumber": 187
+        },
+        "eVar188": {
+            "title": "eVar188",
+            "type": "string",
+            "description": "Custom conversion variable 188.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar188",
+            "tagNumber": 188
+        },
+        "eVar189": {
+            "title": "eVar189",
+            "type": "string",
+            "description": "Custom conversion variable 189.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar189",
+            "tagNumber": 189
+        },
+        "eVar190": {
+            "title": "eVar190",
+            "type": "string",
+            "description": "Custom conversion variable 190.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar190",
+            "tagNumber": 190
+        },
+        "eVar191": {
+            "title": "eVar191",
+            "type": "string",
+            "description": "Custom conversion variable 191.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar191",
+            "tagNumber": 191
+        },
+        "eVar192": {
+            "title": "eVar192",
+            "type": "string",
+            "description": "Custom conversion variable 192.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar192",
+            "tagNumber": 192
+        },
+        "eVar193": {
+            "title": "eVar193",
+            "type": "string",
+            "description": "Custom conversion variable 193.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar193",
+            "tagNumber": 193
+        },
+        "eVar194": {
+            "title": "eVar194",
+            "type": "string",
+            "description": "Custom conversion variable 194.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar194",
+            "tagNumber": 194
+        },
+        "eVar195": {
+            "title": "eVar195",
+            "type": "string",
+            "description": "Custom conversion variable 195.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar195",
+            "tagNumber": 195
+        },
+        "eVar196": {
+            "title": "eVar196",
+            "type": "string",
+            "description": "Custom conversion variable 196.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar196",
+            "tagNumber": 196
+        },
+        "eVar197": {
+            "title": "eVar197",
+            "type": "string",
+            "description": "Custom conversion variable 197.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar197",
+            "tagNumber": 197
+        },
+        "eVar198": {
+            "title": "eVar198",
+            "type": "string",
+            "description": "Custom conversion variable 198.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar198",
+            "tagNumber": 198
+        },
+        "eVar199": {
+            "title": "eVar199",
+            "type": "string",
+            "description": "Custom conversion variable 199.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar199",
+            "tagNumber": 199
+        },
+        "eVar200": {
+            "title": "eVar200",
+            "type": "string",
+            "description": "Custom conversion variable 200.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar200",
+            "tagNumber": 200
+        },
+        "eVar201": {
+            "title": "eVar201",
+            "type": "string",
+            "description": "Custom conversion variable 201.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar201",
+            "tagNumber": 201
+        },
+        "eVar202": {
+            "title": "eVar202",
+            "type": "string",
+            "description": "Custom conversion variable 202.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar202",
+            "tagNumber": 202
+        },
+        "eVar203": {
+            "title": "eVar203",
+            "type": "string",
+            "description": "Custom conversion variable 203.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar203",
+            "tagNumber": 203
+        },
+        "eVar204": {
+            "title": "eVar204",
+            "type": "string",
+            "description": "Custom conversion variable 204.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar204",
+            "tagNumber": 204
+        },
+        "eVar205": {
+            "title": "eVar205",
+            "type": "string",
+            "description": "Custom conversion variable 205.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar205",
+            "tagNumber": 205
+        },
+        "eVar206": {
+            "title": "eVar206",
+            "type": "string",
+            "description": "Custom conversion variable 206.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar206",
+            "tagNumber": 206
+        },
+        "eVar207": {
+            "title": "eVar207",
+            "type": "string",
+            "description": "Custom conversion variable 207.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar207",
+            "tagNumber": 207
+        },
+        "eVar208": {
+            "title": "eVar208",
+            "type": "string",
+            "description": "Custom conversion variable 208.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar208",
+            "tagNumber": 208
+        },
+        "eVar209": {
+            "title": "eVar209",
+            "type": "string",
+            "description": "Custom conversion variable 209.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar209",
+            "tagNumber": 209
+        },
+        "eVar210": {
+            "title": "eVar210",
+            "type": "string",
+            "description": "Custom conversion variable 210.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar210",
+            "tagNumber": 210
+        },
+        "eVar211": {
+            "title": "eVar211",
+            "type": "string",
+            "description": "Custom conversion variable 211.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar211",
+            "tagNumber": 211
+        },
+        "eVar212": {
+            "title": "eVar212",
+            "type": "string",
+            "description": "Custom conversion variable 212.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar212",
+            "tagNumber": 212
+        },
+        "eVar213": {
+            "title": "eVar213",
+            "type": "string",
+            "description": "Custom conversion variable 213.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar213",
+            "tagNumber": 213
+        },
+        "eVar214": {
+            "title": "eVar214",
+            "type": "string",
+            "description": "Custom conversion variable 214.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar214",
+            "tagNumber": 214
+        },
+        "eVar215": {
+            "title": "eVar215",
+            "type": "string",
+            "description": "Custom conversion variable 215.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar215",
+            "tagNumber": 215
+        },
+        "eVar216": {
+            "title": "eVar216",
+            "type": "string",
+            "description": "Custom conversion variable 216.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar216",
+            "tagNumber": 216
+        },
+        "eVar217": {
+            "title": "eVar217",
+            "type": "string",
+            "description": "Custom conversion variable 217.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar217",
+            "tagNumber": 217
+        },
+        "eVar218": {
+            "title": "eVar218",
+            "type": "string",
+            "description": "Custom conversion variable 218.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar218",
+            "tagNumber": 218
+        },
+        "eVar219": {
+            "title": "eVar219",
+            "type": "string",
+            "description": "Custom conversion variable 219.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar219",
+            "tagNumber": 219
+        },
+        "eVar220": {
+            "title": "eVar220",
+            "type": "string",
+            "description": "Custom conversion variable 220.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar220",
+            "tagNumber": 220
+        },
+        "eVar221": {
+            "title": "eVar221",
+            "type": "string",
+            "description": "Custom conversion variable 221.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar221",
+            "tagNumber": 221
+        },
+        "eVar222": {
+            "title": "eVar222",
+            "type": "string",
+            "description": "Custom conversion variable 222.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar222",
+            "tagNumber": 222
+        },
+        "eVar223": {
+            "title": "eVar223",
+            "type": "string",
+            "description": "Custom conversion variable 223.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar223",
+            "tagNumber": 223
+        },
+        "eVar224": {
+            "title": "eVar224",
+            "type": "string",
+            "description": "Custom conversion variable 224.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar224",
+            "tagNumber": 224
+        },
+        "eVar225": {
+            "title": "eVar225",
+            "type": "string",
+            "description": "Custom conversion variable 225.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar225",
+            "tagNumber": 225
+        },
+        "eVar226": {
+            "title": "eVar226",
+            "type": "string",
+            "description": "Custom conversion variable 226.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar226",
+            "tagNumber": 226
+        },
+        "eVar227": {
+            "title": "eVar227",
+            "type": "string",
+            "description": "Custom conversion variable 227.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar227",
+            "tagNumber": 227
+        },
+        "eVar228": {
+            "title": "eVar228",
+            "type": "string",
+            "description": "Custom conversion variable 228.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar228",
+            "tagNumber": 228
+        },
+        "eVar229": {
+            "title": "eVar229",
+            "type": "string",
+            "description": "Custom conversion variable 229.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar229",
+            "tagNumber": 229
+        },
+        "eVar230": {
+            "title": "eVar230",
+            "type": "string",
+            "description": "Custom conversion variable 230.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar230",
+            "tagNumber": 230
+        },
+        "eVar231": {
+            "title": "eVar231",
+            "type": "string",
+            "description": "Custom conversion variable 231.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar231",
+            "tagNumber": 231
+        },
+        "eVar232": {
+            "title": "eVar232",
+            "type": "string",
+            "description": "Custom conversion variable 232.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar232",
+            "tagNumber": 232
+        },
+        "eVar233": {
+            "title": "eVar233",
+            "type": "string",
+            "description": "Custom conversion variable 233.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar233",
+            "tagNumber": 233
+        },
+        "eVar234": {
+            "title": "eVar234",
+            "type": "string",
+            "description": "Custom conversion variable 234.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar234",
+            "tagNumber": 234
+        },
+        "eVar235": {
+            "title": "eVar235",
+            "type": "string",
+            "description": "Custom conversion variable 235.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar235",
+            "tagNumber": 235
+        },
+        "eVar236": {
+            "title": "eVar236",
+            "type": "string",
+            "description": "Custom conversion variable 236.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar236",
+            "tagNumber": 236
+        },
+        "eVar237": {
+            "title": "eVar237",
+            "type": "string",
+            "description": "Custom conversion variable 237.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar237",
+            "tagNumber": 237
+        },
+        "eVar238": {
+            "title": "eVar238",
+            "type": "string",
+            "description": "Custom conversion variable 238.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar238",
+            "tagNumber": 238
+        },
+        "eVar239": {
+            "title": "eVar239",
+            "type": "string",
+            "description": "Custom conversion variable 239.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar239",
+            "tagNumber": 239
+        },
+        "eVar240": {
+            "title": "eVar240",
+            "type": "string",
+            "description": "Custom conversion variable 240.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar240",
+            "tagNumber": 240
+        },
+        "eVar241": {
+            "title": "eVar241",
+            "type": "string",
+            "description": "Custom conversion variable 241.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar241",
+            "tagNumber": 241
+        },
+        "eVar242": {
+            "title": "eVar242",
+            "type": "string",
+            "description": "Custom conversion variable 242.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar242",
+            "tagNumber": 242
+        },
+        "eVar243": {
+            "title": "eVar243",
+            "type": "string",
+            "description": "Custom conversion variable 243.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar243",
+            "tagNumber": 243
+        },
+        "eVar244": {
+            "title": "eVar244",
+            "type": "string",
+            "description": "Custom conversion variable 244.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar244",
+            "tagNumber": 244
+        },
+        "eVar245": {
+            "title": "eVar245",
+            "type": "string",
+            "description": "Custom conversion variable 245.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar245",
+            "tagNumber": 245
+        },
+        "eVar246": {
+            "title": "eVar246",
+            "type": "string",
+            "description": "Custom conversion variable 246.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar246",
+            "tagNumber": 246
+        },
+        "eVar247": {
+            "title": "eVar247",
+            "type": "string",
+            "description": "Custom conversion variable 247.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar247",
+            "tagNumber": 247
+        },
+        "eVar248": {
+            "title": "eVar248",
+            "type": "string",
+            "description": "Custom conversion variable 248.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar248",
+            "tagNumber": 248
+        },
+        "eVar249": {
+            "title": "eVar249",
+            "type": "string",
+            "description": "Custom conversion variable 249.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar249",
+            "tagNumber": 249
+        },
+        "eVar250": {
+            "title": "eVar250",
+            "type": "string",
+            "description": "Custom conversion variable 250.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eVar250",
+            "tagNumber": 250
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/analytics/evars",
+    "meta:altId": "_experience.analytics.evars"
+}

@@ -1,0 +1,63 @@
+{
+    "$id": "data/viewabilityeligibleimpressions",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Viewability-eligible-impressions",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "The advertising/viewability metric `viewability-eligible-impressions` describes the number of impressions that were eligible to measure viewability. An impression is eligible if the ad unit has a supported creative format and tag type.",
+    "meta:status": "stabilizing",
+    "meta:xdmType": "object",
+    "properties": {
+        "_id": {
+            "type": "string",
+            "const": "xdm:viewabilityEligibleImpressions",
+            "description": "The unique identifier of this metric.",
+            "meta:xdmType": "string",
+            "format": "uri-reference",
+            "meta:xdmField": "@id"
+        },
+        "_schema": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "const": "advertising/viewability metric: viewabilityEligibleImpressions",
+                    "description": "The advertising/viewability metric `viewability-eligible-impressions` describes the number of impressions that were eligible to measure viewability. An impression is eligible if the ad unit has a supported creative format and tag type.",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "schema:name"
+                }
+            },
+            "required": [
+                "name"
+            ]
+        },
+        "measurement": {
+            "type": "string",
+            "description": "How to take measures of this metric.",
+            "const": "count",
+            "meta:xdmType": "string",
+            "examples": [
+                "distance",
+                "time",
+                "price",
+                "count"
+            ],
+            "meta:xdmField": "xdm:measurement"
+        },
+        "unit": {
+            "const": "",
+            "type": "string",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:unit"
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/data/viewabilityeligibleimpressions",
+    "meta:altId": "_xdm.data.viewabilityeligibleimpressions",
+    "required": [
+        "_id",
+        "_schema",
+        "measurement",
+        "unit"
+    ]
+}

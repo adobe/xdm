@@ -1,0 +1,37 @@
+{
+    "$id": "https://ns.adobe.com/xdm/common/geounit",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "type": "object",
+    "meta:extensible": true,
+    "title": "Geographical unit",
+    "description": "The geographical unit of a parent geographical unit.",
+    "definitions": {
+        "geounit": {
+            "properties": {
+                "@id": {
+                    "title": "Identifier",
+                    "type": "string",
+                    "format": "uri-reference",
+                    "description": "The ID associated with this geographical unit.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:label": {
+                    "title": "Label of the geographical unit.",
+                    "type": "string",
+                    "description": "The user-friendly name for the geographical unit.",
+                    "meta:xdmType": "string"
+                }
+            },
+            "required": [
+                "@id"
+            ]
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/geounit"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmType": "object"
+}

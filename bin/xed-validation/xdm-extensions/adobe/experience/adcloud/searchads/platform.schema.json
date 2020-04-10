@@ -1,0 +1,47 @@
+{
+    "$id": "https://ns.adobe.com/xdm/adcloud/searchads/platform",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Search Advertising Platform",
+    "type": "object",
+    "meta:extensible": false,
+    "meta:abstract": false,
+    "meta:auditable": true,
+    "description": "Information about Search Advertising Platform.",
+    "definitions": {
+        "searchads-platform": {
+            "properties": {
+                "searchads:adPlatform": {
+                    "title": "Search Advertising Platform",
+                    "type": "string",
+                    "description": "The Search Advertising Platform Name",
+                    "meta:xdmType": "string"
+                },
+                "searchads:searchEngineId": {
+                    "title": "Search Engine Identifier",
+                    "type": "integer",
+                    "description": "The application-specified identifier used to identify the Search Advertising Platform Name.",
+                    "meta:xdmType": "int"
+                },
+                "searchads:channelName": {
+                    "title": "Search Engine Channel Name",
+                    "type": "string",
+                    "description": "The application-specified classification for the Search Engine Platform.",
+                    "meta:xdmType": "string"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "xdm/data/record.schema.json"
+        },
+        {
+            "$ref": "xdm/common/auditable.schema.json"
+        },
+        {
+            "$ref": "#/definitions/searchads-platform"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmType": "object"
+}

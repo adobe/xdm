@@ -1,0 +1,74 @@
+{
+    "$id": "context/directmarketing-phonenumber",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Direct marketing phone number",
+    "type": "object",
+    "description": "Phone number used to contact a user.",
+    "meta:status": [
+        "experimental",
+        "stabilizing"
+    ],
+    "meta:xdmType": "object",
+    "meta:extensible": true,
+    "properties": {
+        "errorCount": {
+            "title": "Error count",
+            "type": "integer",
+            "description": "Number of consecutive errors when calling this phone number.",
+            "meta:xdmType": "int",
+            "meta:xdmField": "xdm:errorCount"
+        },
+        "quality": {
+            "title": "Quality",
+            "type": "string",
+            "description": "Quality rating.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:quality"
+        },
+        "primary": {
+            "title": "Primary",
+            "type": "boolean",
+            "description": "Primary phone number indicator. Unlike address or email address, there can be multiple primary phone numbers; one per communication channel. The communication channel is defined by the type: `textMessaging`, `mobile`, `phone`, `home`, `work`, `unknown`, and `fax`.",
+            "meta:xdmType": "boolean",
+            "meta:xdmField": "xdm:primary"
+        },
+        "number": {
+            "title": "Number",
+            "type": "string",
+            "description": "The phone number. Note the phone number is a string and may include meaningful characters such as brackets '()', hyphens '-', or characters to indicate sub-dialing identifiers like extensions 'x' for example,  1-353(0)18391111 or +613 9403600x1234.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:number"
+        },
+        "extension": {
+            "title": "Extension",
+            "type": "string",
+            "description": "The internal dialing number used to call from a private exchange, operator, or switchboard.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:extension"
+        },
+        "status": {
+            "title": "Status",
+            "type": "string",
+            "description": "An indication as to the ability to use the phone number.",
+            "default": "active",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:status"
+        },
+        "statusReason": {
+            "title": "Status reason",
+            "type": "string",
+            "description": "A description of the current status.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:statusReason"
+        },
+        "validity": {
+            "title": "Validity",
+            "type": "string",
+            "description": "A level of technical correctness of the phone number.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:validity"
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/directmarketing-phonenumber",
+    "meta:altId": "_xdm.context.directmarketing-phonenumber"
+}

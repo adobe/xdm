@@ -1,0 +1,51 @@
+{
+    "$id": "https://ns.adobe.com/xdm/data/conversions",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Conversions",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "The metric conversions measures a specific set of predefined actions taken by an surfer online. Further context is used to determine the predefined actions.",
+    "definitions": {
+        "metricdefinition": {
+            "properties": {
+                "@id": {
+                    "type": "string",
+                    "const": "xdm:conversions",
+                    "description": "The unique identifier of this metric.",
+                    "meta:xdmType": "string"
+                },
+                "schema:name": {
+                    "type": "string",
+                    "const": "metric: conversions",
+                    "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:measurement": {
+                    "type": "string",
+                    "description": "How to take measures of this metric.",
+                    "const": "count",
+                    "meta:xdmType": "string"
+                },
+                "xdm:unit": {
+                    "const": null
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/metricdefinition"
+        },
+        {
+            "$ref": "xdm/data/metricdefinition.schema.json"
+        }
+    ],
+    "required": [
+        "@id",
+        "schema:name",
+        "xdm:measurement",
+        "xdm:unit"
+    ],
+    "meta:status": "stabilizing",
+    "meta:xdmType": "object"
+}

@@ -1,0 +1,68 @@
+{
+    "$id": "data/total-time-played.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Total Time Played",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "Describes the total amount of time spent by a user on a specific timed media asset, which includes time spent watching ads.",
+    "meta:status": "stabilizing",
+    "meta:xdmType": "object",
+    "properties": {
+        "_id": {
+            "type": "string",
+            "const": "xdm:totalTimePlayed",
+            "description": "The unique identifier of this metric.",
+            "meta:xdmType": "string",
+            "format": "uri-reference",
+            "meta:xdmField": "@id",
+            "tagNumber": 1
+        },
+        "_schema": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "const": "metric: totalTimePlayed",
+                    "description": "Describes the total amount of time spent by a user on a specific timed media asset, which includes time spent watching ads.",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "schema:name",
+                    "tagNumber": 1
+                }
+            },
+            "required": [
+                "name"
+            ],
+            "tagNumber": 2
+        },
+        "measurement": {
+            "type": "string",
+            "description": "How to take measures of this metric.",
+            "const": "time",
+            "meta:xdmType": "string",
+            "examples": [
+                "distance",
+                "time",
+                "price",
+                "count"
+            ],
+            "meta:xdmField": "xdm:measurement",
+            "tagNumber": 3
+        },
+        "unit": {
+            "const": "second",
+            "type": "string",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:unit",
+            "tagNumber": 4
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/data/total-time-played",
+    "meta:altId": "_xdm.data.total-time-played",
+    "required": [
+        "_id",
+        "_schema",
+        "measurement",
+        "unit"
+    ]
+}

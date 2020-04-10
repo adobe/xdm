@@ -1,0 +1,49 @@
+{
+    "$id": "adobe/experience/campaign/journeyaiscores.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Journey AI Scores",
+    "type": "object",
+    "description": "Journey AI scores for one channel.",
+    "meta:xdmType": "object",
+    "properties": {
+        "fatigue": {
+            "title": "Fatigue",
+            "description": "Fatigue score for the profile.",
+            "$ref": "../../../adobe/experience/campaign/journeyaifatigue.schema.json",
+            "meta:xdmField": "xdm:fatigue",
+            "tagNumber": 1
+        },
+        "openScores": {
+            "title": "Open Scores by send hour for week",
+            "description": "Probability/score to open a message, assuming we send a message at that hour.",
+            "type": "array",
+            "minItems": 168,
+            "maxItems": 168,
+            "meta:xdmType": "array",
+            "items": {
+                "type": "number",
+                "meta:xdmType": "number",
+                "tagNumber": 1
+            },
+            "meta:xdmField": "xdm:openScores",
+            "tagNumber": 2
+        },
+        "clickScores": {
+            "title": "Click Scores by send hour for week",
+            "description": "Probability/score to click on a link in the message, assuming we send a message at that hour.",
+            "type": "array",
+            "minItems": 168,
+            "maxItems": 168,
+            "meta:xdmType": "array",
+            "items": {
+                "type": "number",
+                "meta:xdmType": "number",
+                "tagNumber": 1
+            },
+            "meta:xdmField": "xdm:clickScores",
+            "tagNumber": 3
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/campaign/journeyaiscores",
+    "meta:altId": "_experience.campaign.journeyaiscores"
+}

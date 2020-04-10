@@ -1,0 +1,51 @@
+{
+    "$id": "adobe/experience/target/activity/activityevent/context",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "type": "object",
+    "title": "Event Context",
+    "description": "Details about the context the event was processed in, activity that processed the request, the experience the user qualified for, etc..",
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "experienceID": {
+            "title": "Experience Identifier",
+            "type": "string",
+            "description": "Experience identifier denoting selected experience.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:experienceID"
+        },
+        "algorithmID": {
+            "title": "Algorithm Identifier",
+            "type": "string",
+            "description": "Algorithm identifier denoting used algorithm to select the experience.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:algorithmID"
+        },
+        "trafficType": {
+            "title": "Traffic Type",
+            "type": "string",
+            "description": "Denotes traffic type.",
+            "enum": [
+                "testing",
+                "targeted"
+            ],
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:trafficType"
+        },
+        "stepID": {
+            "title": "Step Identifier",
+            "type": "string",
+            "description": "Denotes the identifier of the visited activity step.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:stepID"
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/target/activity/activityevent/context",
+    "meta:altId": "_experience.target.activity.activityevent.context",
+    "required": [
+        "experienceID",
+        "algorithmID",
+        "trafficType",
+        "stepID"
+    ]
+}

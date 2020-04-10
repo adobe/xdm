@@ -1,0 +1,54 @@
+{
+    "$id": "adobe/experience/campaign/experienceevent-profile-subscriptions",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Adobe Campaign ExperienceEvent - Profile Snapshot Profile Subscriptions",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "description": "Adobe Campaign ExperienceEvent optional snapshot of profile subscriptions.",
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "_experience": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "campaign": {
+                    "type": "object",
+                    "meta:xdmType": "object",
+                    "properties": {
+                        "message": {
+                            "title": "A single message sent to a recipient.",
+                            "type": "object",
+                            "meta:xdmType": "object",
+                            "properties": {
+                                "profileSnapshot": {
+                                    "title": "Profile Snapshot",
+                                    "description": "Profile snapshot contains the recipient of the message. This property is primarily used to link the message to a profile using the `IdentityMap` but it can also be used to freeze some properties of the profile at the time the message was sent.",
+                                    "type": "object",
+                                    "meta:xdmType": "object",
+                                    "properties": {
+                                        "subscriptions": {
+                                            "title": "Subscriptions",
+                                            "type": "array",
+                                            "description": "Subscriptions that this profile is entitled to including terminated, expired or exhausted subscriptions.",
+                                            "meta:xdmType": "array",
+                                            "items": {
+                                                "$ref": "context/subscription"
+                                            },
+                                            "meta:xdmField": "xdm:subscriptions"
+                                        }
+                                    },
+                                    "meta:xdmField": "xdm:profileSnapshot"
+                                }
+                            },
+                            "meta:xdmField": "https://ns.adobe.com/experience/campaign/message"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/campaign/experienceevent-profile-subscriptions",
+    "meta:altId": "_experience.campaign.experienceevent-profile-subscriptions"
+}

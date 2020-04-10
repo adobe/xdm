@@ -33,7 +33,7 @@
           "type": "string"
         },
         "xdm:owner": {
-          "title": "Opportunity Source",
+          "title": "Opportunity Owner",
           "description": "Assigned owner for this opportunity.",
           "type": "string"
         },

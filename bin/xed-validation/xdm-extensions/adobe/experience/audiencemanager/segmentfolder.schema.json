@@ -1,0 +1,54 @@
+{
+    "$id": "https://ns.adobe.com/experience/audiencemanager/segmentfolder",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Adobe Audience Manager Segment Folder Class",
+    "type": "object",
+    "description": "This Adobe Audience Manager-specific folder definition helps organize segment definitions into a hierarchy. This includes required fields like folder identity and folder name. The segment definition class requires use of the 'Adobe Audience Manager Segment Definition Mixin' in order to point to the parent folder, which is an instance of this class.",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "definitions": {
+        "segmentfolder": {
+            "properties": {
+                "https://ns.adobe.com/experience/audiencemanager/segmentFolderName": {
+                    "title": "Segment folder name",
+                    "type": "string",
+                    "description": "Name of the segment folder",
+                    "meta:xdmType": "string"
+                },
+                "https://ns.adobe.com/experience/audiencemanager/segmentFolderStatus": {
+                    "type": "string",
+                    "title": "Segment folder status",
+                    "description": "Current status of segment folder",
+                    "meta:enum": {
+                        "ACTIVE": "Active",
+                        "INACTIVE": "Inactive",
+                        "DELETED": "Deleted"
+                    },
+                    "meta:xdmType": "string"
+                },
+                "https://ns.adobe.com/experience/audiencemanager/segmentParentFolderIdentity": {
+                    "title": "Parent folder identity",
+                    "$refkept": "https://ns.adobe.com/xdm/context/identity",
+                    "description": "Identity of the parent folder of current folder"
+                }
+            }
+        }
+    },
+    "required": [
+        "xdm:identityMap",
+        "https://ns.adobe.com/experience/audiencemanager/segmentFolderName"
+    ],
+    "allOf": [
+        {
+            "$ref": "#/definitions/segmentfolder"
+        },
+        {
+            "$ref": "xdm/context/identitymap.schema.json"
+        },
+        {
+            "$ref": "xdm/data/record.schema.json"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmType": "object"
+}

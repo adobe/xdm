@@ -1,0 +1,360 @@
+{
+    "$id": "adobe/experience/campaign/experienceevent-all",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Adobe Campaign ExperienceEvent Full Extension",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "description": "Adobe Campaign ExperienceEvent full extension. Contains all Solution added fields.",
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "_experience": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "campaign": {
+                    "type": "object",
+                    "meta:xdmType": "object",
+                    "properties": {
+                        "message": {
+                            "title": "A single message sent to a recipient.",
+                            "type": "object",
+                            "meta:xdmType": "object",
+                            "properties": {
+                                "id": {
+                                    "title": "Message Identifier",
+                                    "type": "number",
+                                    "description": "Identifier of the message.",
+                                    "meta:xdmType": "number",
+                                    "meta:xdmField": "xdm:id"
+                                },
+                                "profileSnapshot": {
+                                    "title": "Profile Snapshot",
+                                    "$ref": "adobe/experience/campaign/profile-snapshot",
+                                    "description": "Profile Snapshot contains the recipient of the message. This property is primarily used to link the message to a Profile using the `IdentityMap` but it can also be used to freeze some properties of the profile at the time the message was sent.",
+                                    "meta:xdmField": "xdm:profileSnapshot"
+                                },
+                                "variant": {
+                                    "title": "Content Variant",
+                                    "type": "string",
+                                    "description": "A campaign activity can have multiple variants e.g. Multilingual (translated variants for the same content) or A/B testing (different content to test what works better) but a message delivered to a recipient always contains one of them.\n> IMPORTANT: In case of multilingual, the mirror page, the recipient can switch from one variant to another (ex: switch of the language).",
+                                    "meta:xdmType": "string",
+                                    "meta:xdmField": "xdm:variant"
+                                },
+                                "seedMember": {
+                                    "title": "Seed Member",
+                                    "type": "boolean",
+                                    "default": false,
+                                    "description": "The recipient of this message is a member of a seed list for this campaign activity. Seed addresses are used to include recipients who do not match the defined target criteria. Seed members could be your marketing team or other stakeholders who are interested in tracking/measuring the quality of the campaign. SeedMembers get the actual message, at the same time with regular recipients, even when the seedMember does not qualify to be a regular recipient.",
+                                    "meta:xdmType": "boolean",
+                                    "meta:xdmField": "xdm:seedMember"
+                                },
+                                "quarantine": {
+                                    "title": "Quarantine",
+                                    "type": "boolean",
+                                    "default": false,
+                                    "description": "Address moved to quarantine. The quarantine is set to `true` when the message failed to deliver in a way that indicates that no future messages will be deliverable either to this address.",
+                                    "meta:xdmType": "boolean",
+                                    "meta:xdmField": "xdm:quarantine"
+                                },
+                                "proofMember": {
+                                    "title": "Proof Member",
+                                    "type": "boolean",
+                                    "description": "The recipient of this message is a member of the proof group for this campaign activity. The proof is a special message that lets you test a delivery before sending to the main target. Proof recipients are responsible for approving both the form and content of the message. It is a pre-delivery target.",
+                                    "default": false,
+                                    "meta:xdmType": "boolean",
+                                    "meta:xdmField": "xdm:proofMember"
+                                },
+                                "controlGroupMember": {
+                                    "title": "Control Group Member",
+                                    "type": "boolean",
+                                    "description": "The recipient of this message is a member of a control group for this campaign activity. A control group is a population which will not receive the delivery; it is used to track post-delivery behavior and campaign impact by making a comparison between the control group (or hold out group) with the behavior of target population, which has received the delivery.",
+                                    "default": false,
+                                    "meta:xdmType": "boolean",
+                                    "meta:xdmField": "xdm:controlGroupMember"
+                                },
+                                "testMember": {
+                                    "title": "A/B Test Member",
+                                    "type": "boolean",
+                                    "description": "The recipient of this message is a member of a test group for this campaign activity. This is primarily used for identifying the initial population of an A/B Test. After sending different variants to the testMembers, the winner Variant is decided to be sent to the remaining population based on behavioral changes in testMembers.",
+                                    "default": false,
+                                    "meta:xdmType": "boolean",
+                                    "meta:xdmField": "xdm:testMember"
+                                },
+                                "size": {
+                                    "title": "Size (Bytes)",
+                                    "type": "integer",
+                                    "description": "Size in bytes of the message.\n* For email, the `size` reflects the all MIME envelope of the message, including the encoded attachments if any.\n* For SMS, the `size` reflects the number of bytes necessary to deliver the message.\nIf that number is over 160 the message will be delivered over more than one SMS.",
+                                    "minimum": 0,
+                                    "maximum": 2147483647,
+                                    "meta:xdmType": "int",
+                                    "meta:xdmField": "xdm:size"
+                                },
+                                "reason": {
+                                    "title": "Reason",
+                                    "type": "string",
+                                    "description": "The reason why the message could/would not be delivered.",
+                                    "default": "undefined",
+                                    "meta:xdmType": "string",
+                                    "meta:xdmField": "xdm:reason"
+                                },
+                                "reasonMessage": {
+                                    "title": "Reason Message",
+                                    "type": "string",
+                                    "description": "Reason of message delivery failure.",
+                                    "meta:xdmType": "string",
+                                    "meta:xdmField": "xdm:reasonMessage"
+                                },
+                                "outboundIP": {
+                                    "title": "IP Address",
+                                    "type": "string",
+                                    "description": "Outbound IP address used to deliver the message.",
+                                    "meta:xdmType": "string",
+                                    "meta:xdmField": "xdm:outboundIP"
+                                },
+                                "externalID": {
+                                    "title": "External ID",
+                                    "type": "string",
+                                    "description": "An ID generated by the parent activity invoking service to check later if the incoming experienceEvent was generated using this ID.",
+                                    "meta:xdmType": "string",
+                                    "meta:xdmField": "xdm:externalID"
+                                },
+                                "segmentID": {
+                                    "title": "Segment ID",
+                                    "type": "string",
+                                    "description": "A code or ID assigned to the segment population generated by a segmentation workflow. This can identify the population as part of a result set based on a criteria.",
+                                    "meta:xdmType": "string",
+                                    "meta:xdmField": "xdm:segmentID"
+                                }
+                            },
+                            "meta:xdmField": "https://ns.adobe.com/experience/campaign/message"
+                        },
+                        "delivery": {
+                            "title": "The campaign activity originating a message to a recipient.",
+                            "type": "object",
+                            "meta:xdmType": "object",
+                            "properties": {
+                                "id": {
+                                    "title": "Delivery ID",
+                                    "type": "integer",
+                                    "description": "The campaign activity originating this message.",
+                                    "meta:xdmType": "int",
+                                    "meta:xdmField": "xdm:id"
+                                },
+                                "from": {
+                                    "title": "From",
+                                    "type": "string",
+                                    "description": "Address used as a from/sender/caller address. Depending on the communication channel, the `address` has a different format.\n\n  * `email`: an email address.\n  * `textMessage` or `phone`: a shortcode or phone number.",
+                                    "meta:xdmType": "string",
+                                    "meta:xdmField": "xdm:from"
+                                },
+                                "testEnabled": {
+                                    "title": "Test Enabled",
+                                    "type": "boolean",
+                                    "description": "Specify whether campaign activity is of type A/B testing.",
+                                    "default": false,
+                                    "meta:xdmType": "boolean",
+                                    "meta:xdmField": "xdm:testEnabled"
+                                },
+                                "messageClass": {
+                                    "title": "Message Class",
+                                    "type": "string",
+                                    "description": "Mode of delivery for the messages sent.\n",
+                                    "default": "one_time",
+                                    "meta:xdmType": "string",
+                                    "meta:xdmField": "xdm:messageClass"
+                                },
+                                "templateName": {
+                                    "title": "Delivery Template's Internal Name",
+                                    "type": "string",
+                                    "description": "A human-friendly identifier of the the parent entity (in case of event_based or continuous message Class) of the campaign activity originating this message.",
+                                    "meta:xdmType": "string",
+                                    "meta:xdmField": "xdm:templateName"
+                                },
+                                "templateID": {
+                                    "title": "Identifier of the Template",
+                                    "type": "integer",
+                                    "description": "The delivery template's ID used to initialize this delivery.\n\nThe type the template used in Adobe Campaign can be identified using the `messageClass`.\n\n* `messageClass` = `oneTime`: the template is standard delivery template.\n* `messageClass` = `continuous`: the template is a recurring delivery.\n* `messageClass` = `transactional`: the template is a transactional message template.\n",
+                                    "meta:xdmType": "int",
+                                    "meta:xdmField": "xdm:templateID"
+                                },
+                                "deliveryLabel": {
+                                    "title": "Delivery Label",
+                                    "type": "string",
+                                    "description": "A human-friendly name of the campaign activity which is originating this message.",
+                                    "meta:xdmType": "string",
+                                    "meta:xdmField": "xdm:deliveryLabel"
+                                },
+                                "deliveryName": {
+                                    "title": "Delivery Internal Name",
+                                    "type": "string",
+                                    "description": "A human-friendly identifier of the campaign activity which is originating this message.",
+                                    "meta:xdmType": "string",
+                                    "meta:xdmField": "xdm:deliveryName"
+                                }
+                            },
+                            "meta:xdmField": "https://ns.adobe.com/experience/campaign/delivery"
+                        },
+                        "marketingCampaign": {
+                            "title": "The campaign activity originating a message to a recipient.",
+                            "type": "object",
+                            "meta:xdmType": "object",
+                            "properties": {
+                                "id": {
+                                    "title": "Campaign ID",
+                                    "type": "integer",
+                                    "description": "Identifier of the marketing campaign to which activity originating this message belongs to.",
+                                    "meta:xdmType": "int",
+                                    "meta:xdmField": "xdm:id"
+                                },
+                                "campaignName": {
+                                    "title": "Campaign Internal Name",
+                                    "type": "string",
+                                    "description": "A human-friendly identifier of the marketing campaign which is originating this message.",
+                                    "meta:xdmType": "string",
+                                    "meta:xdmField": "xdm:campaignName"
+                                }
+                            },
+                            "meta:xdmField": "https://ns.adobe.com/experience/campaign/marketingCampaign"
+                        },
+                        "link": {
+                            "title": "The campaign activity originating a message to a recipient.",
+                            "type": "object",
+                            "meta:xdmType": "object",
+                            "properties": {
+                                "id": {
+                                    "title": "Tracking URL ID",
+                                    "type": "string",
+                                    "description": "Unique Identifier of the Link",
+                                    "meta:xdmType": "string",
+                                    "meta:xdmField": "xdm:id"
+                                },
+                                "description": {
+                                    "title": "Tracking URL Description",
+                                    "type": "string",
+                                    "description": "A human-friendly description of the link.",
+                                    "meta:xdmType": "string",
+                                    "meta:xdmField": "xdm:description"
+                                },
+                                "url": {
+                                    "title": "URL",
+                                    "format": "uri",
+                                    "type": "string",
+                                    "description": "URL of the Link.",
+                                    "meta:xdmType": "string",
+                                    "meta:xdmField": "xdm:url"
+                                },
+                                "occurrence": {
+                                    "title": "Occurrence",
+                                    "type": "integer",
+                                    "description": "URL occurrence index in the content (first is 1). When the same URL is available several times in the same content, its is necessary to track which occurrence of the URL has been clicked on.",
+                                    "default": 1,
+                                    "minimum": 1,
+                                    "maximum": 32767,
+                                    "meta:xdmType": "short",
+                                    "meta:xdmField": "xdm:occurrence"
+                                },
+                                "label": {
+                                    "title": "URL Label",
+                                    "type": "string",
+                                    "description": "The user-friendly label clicking on which the link opens.",
+                                    "meta:xdmType": "string",
+                                    "meta:xdmField": "xdm:label"
+                                },
+                                "category": {
+                                    "title": "URL Category",
+                                    "type": "string",
+                                    "description": "The category of the link. It may be `subscription`, or a user-defined category.",
+                                    "meta:xdmType": "string",
+                                    "meta:xdmField": "xdm:category"
+                                },
+                                "inAppMessageAction": {
+                                    "title": "In-App Message Action",
+                                    "type": "string",
+                                    "description": "Actions on the In-App message delivered, e.g. action on primary button, secondary button or close button.",
+                                    "meta:xdmType": "string",
+                                    "meta:xdmField": "xdm:inAppMessageAction"
+                                },
+                                "inAppMessageButtonText": {
+                                    "title": "In-App Message Button Text",
+                                    "type": "string",
+                                    "description": "The user-friendly text on the button.",
+                                    "meta:xdmType": "string",
+                                    "meta:xdmField": "xdm:inAppMessageButtonText"
+                                }
+                            },
+                            "meta:xdmField": "https://ns.adobe.com/experience/campaign/link"
+                        },
+                        "orchestration": {
+                            "title": "Campaign Orchestration for creating user journey.",
+                            "type": "object",
+                            "meta:xdmType": "object",
+                            "properties": {
+                                "eventID": {
+                                    "title": "Event ID",
+                                    "type": "string",
+                                    "description": "ID that identifies the event sent by the data source. This is used by Campaign orchestration to identify the event without inspecting its payload to determine which action should be triggered when the event is received. The value is automatically generated in Campaign at event creation time, it is globally unique across organizations.",
+                                    "meta:xdmType": "string",
+                                    "meta:xdmField": "xdm:eventID"
+                                },
+                                "orchestrationDetails": {
+                                    "title": "Orchestration Details",
+                                    "description": "Set of attributes that are associated with every orchestration.",
+                                    "$ref": "adobe/experience/campaign/orchestration/orchestrationdetails",
+                                    "meta:xdmField": "xdm:orchestrationDetails"
+                                }
+                            },
+                            "meta:xdmField": "https://ns.adobe.com/experience/campaign/orchestration"
+                        },
+                        "containerID": {
+                            "title": "Container Identifier",
+                            "type": "string",
+                            "description": "The identifier denoting the container with which Campaign ExperienceEvent is associated.",
+                            "meta:xdmType": "string",
+                            "meta:xdmField": "https://ns.adobe.com/experience/campaign/containerID"
+                        },
+                        "eventSource": {
+                            "title": "Event Source",
+                            "type": "string",
+                            "description": "A human-friendly name of the campaign activity which is originating this message.",
+                            "meta:xdmType": "string",
+                            "meta:xdmField": "https://ns.adobe.com/experience/campaign/eventSource"
+                        },
+                        "offerOpened": {
+                            "title": "Offer Opened",
+                            "description": "The offer in the message for an 'offer opened' event.",
+                            "$ref": "adobe/experience/campaign/offer-response-detail",
+                            "meta:xdmField": "https://ns.adobe.com/experience/campaign/offerOpened"
+                        },
+                        "offersProposed": {
+                            "title": "Offer Propositions",
+                            "description": "The offers in the message of a 'email-send' event.",
+                            "type": "array",
+                            "meta:xdmType": "array",
+                            "items": {
+                                "$ref": "adobe/experience/campaign/offer-proposition-detail"
+                            },
+                            "meta:xdmField": "https://ns.adobe.com/experience/campaign/offersProposed"
+                        },
+                        "medium": {
+                            "title": "Medium",
+                            "type": "string",
+                            "description": "The medium is a combination of the source of the event (message, web, ...) and its format if applicable.",
+                            "meta:xdmType": "string",
+                            "meta:xdmField": "https://ns.adobe.com/experience/campaign/medium"
+                        },
+                        "mutation": {
+                            "title": "Mutated Fields from Previous ExperienceEvent.",
+                            "description": "Information of the fields that have changed since the previous ExperienceEvent to keep track of the state changes across events. For e.g. if when an email gets sent, an ExperienceEvent with metric `sends` will be sent. This may get bounced and an ExperienceEvent with metric `bounces` will be sent then. It may be important for a downstream application to know that the previous ExperienceEvent with metric `sends` is now to be invalidated. This field will contain the values from the previous ExperienceEvent that have a different value in the current ExperienceEvent.",
+                            "$ref": "adobe/experience/campaign/mutationevent",
+                            "meta:xdmField": "https://ns.adobe.com/experience/campaign/mutation"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/campaign/experienceevent-all",
+    "meta:altId": "_experience.campaign.experienceevent-all"
+}

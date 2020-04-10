@@ -1,0 +1,58 @@
+{
+    "$id": "adobe/experience/campaign/notificationsubscription.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Notification Subscription",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "Adobe Campaign notification subscriptions allow end-users opt into topics that can be used for communication such as marketing subscription lists.",
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "topicID": {
+            "title": "Topic Identifier",
+            "type": "string",
+            "description": "The topic that the end-user has subscribed to and opted into notifications for.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:topicID",
+            "tagNumber": 1
+        },
+        "type": {
+            "title": "Subscription type",
+            "type": "string",
+            "description": "The type of notification/subscription.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:type",
+            "tagNumber": 2
+        },
+        "subscriptionDate": {
+            "title": "Subscription Date",
+            "type": "string",
+            "format": "date-time",
+            "description": "Date and time when the end-user has subscribed to a notification topic. An end-user is subscribed if they have a Subscription Date and the `unsubscriptiondetails/unsubscriptionDate` is empty.",
+            "meta:xdmType": "date-time",
+            "meta:xdmField": "xdm:subscriptionDate",
+            "tagNumber": 3
+        },
+        "notificationTarget": {
+            "title": "Target/destination for the notification",
+            "description": "Target/destination for where to send/receive the notification.",
+            "$ref": "../../../adobe/experience/campaign/notificationsubscriptiontarget.schema.json",
+            "meta:xdmField": "xdm:notificationTarget",
+            "tagNumber": 4
+        },
+        "unsubscriptionDetails": {
+            "title": "Adobe Campaign Notification Unsubscription details",
+            "description": "Adobe Campaign notification unsubscription details.",
+            "$ref": "../../../adobe/experience/campaign/notificationunsubscriptiondetails.schema.json",
+            "meta:xdmField": "xdm:unsubscriptionDetails",
+            "tagNumber": 5
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/campaign/notificationsubscription",
+    "meta:altId": "_experience.campaign.notificationsubscription",
+    "required": [
+        "topicID",
+        "type",
+        "subscriptionDate"
+    ]
+}

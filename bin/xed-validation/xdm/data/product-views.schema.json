@@ -1,0 +1,51 @@
+{
+    "$id": "https://ns.adobe.com/xdm/data/metrics/product-views",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Product Views",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "The commerce metric `productViews` describes the number of product views that have occurred. Because the number of products on a page might be greater than one, this number may differ from the page view count of product pages.",
+    "definitions": {
+        "metricdefinition": {
+            "properties": {
+                "@id": {
+                    "type": "string",
+                    "const": "xdm:productViews",
+                    "description": "The unique identifier of this metric.",
+                    "meta:xdmType": "string"
+                },
+                "schema:name": {
+                    "type": "string",
+                    "const": "commerce metric: productViews",
+                    "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:measurement": {
+                    "type": "string",
+                    "description": "How to take measures of this metric.",
+                    "const": "count",
+                    "meta:xdmType": "string"
+                },
+                "xdm:unit": {
+                    "const": null
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/metricdefinition"
+        },
+        {
+            "$ref": "xdm/data/metricdefinition.schema.json"
+        }
+    ],
+    "required": [
+        "@id",
+        "schema:name",
+        "xdm:measurement",
+        "xdm:unit"
+    ],
+    "meta:status": "experimental",
+    "meta:xdmType": "object"
+}

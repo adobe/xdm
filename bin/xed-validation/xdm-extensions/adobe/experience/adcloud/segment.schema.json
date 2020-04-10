@@ -1,0 +1,37 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "https://ns.adobe.com/experience/adcloud/segment",
+    "title": "Adobe Advertising Cloud Segment Detail",
+    "type": "object",
+    "description": "Adobe Advertising Cloud segmentation traits.",
+    "definitions": {
+        "segment": {
+            "properties": {
+                "xdm:attributablePartnerId": {
+                    "title": "Attributable Partner ID",
+                    "type": "string",
+                    "description": "The segment provider who owns the attributableSegmentId.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:attributableSegmentId": {
+                    "title": "Attributable Segment ID",
+                    "type": "string",
+                    "description": "The single segment accredit for user targeting among all the segments in the placement's targeting rule for the purposes of tracking costs and paying partners.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:segments": {
+                    "title": "Segments",
+                    "type": "string",
+                    "description": "The intersection of the user segments that both: a) the user belonged to, and b) the ad was targeting. NOT the full list of segments that the user belonged to at the time of the auction.",
+                    "meta:xdmType": "string"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/segment"
+        }
+    ],
+    "meta:xdmType": "object"
+}

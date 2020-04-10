@@ -1,0 +1,27 @@
+{
+    "$id": "https://ns.adobe.com/xdm/context/experienceevent-implementation-details",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "ExperienceEvent implementation details",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "description": "Field to capture the details of the software used to collect the ExperienceEvent.",
+    "definitions": {
+        "experienceevent-implementation-details": {
+            "properties": {
+                "xdm:implementationDetails": {
+                    "title": "Implementation details",
+                    "$refkept": "https://ns.adobe.com/xdm/context/implementationdetails",
+                    "description": "The details of the software used to collect the ExperienceEvent."
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/experienceevent-implementation-details"
+        }
+    ],
+    "meta:status": "stabilizing",
+    "meta:xdmType": "object"
+}

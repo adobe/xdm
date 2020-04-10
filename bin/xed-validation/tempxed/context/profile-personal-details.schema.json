@@ -1,0 +1,45 @@
+{
+    "$id": "context/profile-personal-details",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Profile personal details",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "description": "This mixin is used to capture information regarding home address, home phone, mobile phone, fax, and personal email.",
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "homeAddress": {
+            "title": "Home address",
+            "$ref": "common/address",
+            "description": "A home postal address.",
+            "meta:xdmField": "xdm:homeAddress"
+        },
+        "personalEmail": {
+            "title": "Personal email",
+            "$ref": "context/emailaddress",
+            "description": "A personal email address.",
+            "meta:xdmField": "xdm:personalEmail"
+        },
+        "homePhone": {
+            "title": "Home phone",
+            "$ref": "context/phonenumber",
+            "description": "Home phone number.",
+            "meta:xdmField": "xdm:homePhone"
+        },
+        "mobilePhone": {
+            "title": "Mobile phone",
+            "$ref": "context/phonenumber",
+            "description": "Mobile phone number.",
+            "meta:xdmField": "xdm:mobilePhone"
+        },
+        "faxPhone": {
+            "title": "Fax phone",
+            "$ref": "context/phonenumber",
+            "description": "Fax phone number.",
+            "meta:xdmField": "xdm:faxPhone"
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/profile-personal-details",
+    "meta:altId": "_xdm.context.profile-personal-details"
+}

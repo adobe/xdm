@@ -1,0 +1,83 @@
+{
+    "$id": "context/directmarketing-emailaddress.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Direct marketing email address",
+    "type": "object",
+    "description": "Email address used to contact a user.",
+    "meta:status": [
+        "experimental",
+        "stabilizing"
+    ],
+    "meta:xdmType": "object",
+    "meta:extensible": true,
+    "properties": {
+        "errorCount": {
+            "title": "Error count",
+            "type": "integer",
+            "description": "Number of consecutive errors when sending to this email address.",
+            "meta:xdmType": "int",
+            "meta:xdmField": "xdm:errorCount",
+            "tagNumber": 1
+        },
+        "quality": {
+            "title": "Quality",
+            "type": "string",
+            "description": "Quality rating.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:quality",
+            "tagNumber": 2
+        },
+        "primary": {
+            "title": "Primary",
+            "type": "boolean",
+            "description": "Primary email indicator. A profile can have only one `primary` email address at a given point of time.",
+            "meta:xdmType": "boolean",
+            "meta:xdmField": "xdm:primary",
+            "tagNumber": 3
+        },
+        "address": {
+            "title": "Address",
+            "type": "string",
+            "format": "email",
+            "description": "The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:address",
+            "tagNumber": 4
+        },
+        "label": {
+            "title": "Label",
+            "type": "string",
+            "description": "Additional display information that maybe available, for example, Microsoft Outlook rich address controls display 'John Smith smithjr@company.uk', 'John Smith' part is data that would be placed in the label.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:label",
+            "tagNumber": 5
+        },
+        "type": {
+            "title": "Type",
+            "type": "string",
+            "description": "The way the account relates to the person for example 'work' or 'personal'.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:type",
+            "tagNumber": 6
+        },
+        "status": {
+            "title": "Status",
+            "type": "string",
+            "description": "An indication as to the ability to use the email address.",
+            "default": "active",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:status",
+            "tagNumber": 7
+        },
+        "statusReason": {
+            "title": "Status reason",
+            "type": "string",
+            "description": "A description of the current status.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:statusReason",
+            "tagNumber": 8
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/directmarketing-emailaddress",
+    "meta:altId": "_xdm.context.directmarketing-emailaddress"
+}

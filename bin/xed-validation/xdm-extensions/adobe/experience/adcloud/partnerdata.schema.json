@@ -1,0 +1,32 @@
+{
+    "$id": "https://ns.adobe.com/experience/adcloud/partnerdata",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Adobe Advertising Cloud Partner Data",
+    "type": "object",
+    "description": "Details related to Adobe Advertising Cloud partner data such as data associated with a segment and search and marketing partner IDs.",
+    "definitions": {
+        "partnerdata": {
+            "properties": {
+                "xdm:id": {
+                    "title": "Search/Marketing partner ID",
+                    "type": "string",
+                    "description": "Internal mapping of search/marketing platforms/partners to IDs for Adobe Advertising Cloud search.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:data": {
+                    "title": "Search/Marketing partner data associated with a segment",
+                    "type": "string",
+                    "description": "Unique identifiers such conversion ID (in case of Google) associated with the synced segment.",
+                    "meta:xdmType": "string"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/partnerdata"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmType": "object"
+}

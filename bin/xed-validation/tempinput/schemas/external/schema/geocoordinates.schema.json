@@ -1,0 +1,56 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "http://schema.org/GeoCoordinates",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Geo Coordinates",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "The geographic coordinates of a place. Based on [schema.org](http://schema.org/GeoCoordinates).",
+  "definitions": {
+    "geocoordinates": {
+      "properties": {
+        "@id": {
+          "title": "Coordinates ID",
+          "type": "string",
+          "format": "uri-reference",
+          "description": "The unique identifier of the coordinates."
+        },
+        "schema:description": {
+          "title": "Description",
+          "type": "string",
+          "description": "A description of what the coordinates identify."
+        },
+        "schema:latitude": {
+          "title": "Latitude",
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90,
+          "description": "The signed vertical coordinate of a geographic point."
+        },
+        "schema:longitude": {
+          "title": "Longitude",
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180,
+          "description": "The signed horizontal coordinate of a geographic point."
+        },
+        "schema:elevation": {
+          "title": "Elevation",
+          "type": "number",
+          "description": "The specific elevation of the defined coordinate. The value conforms to the [WGS84](http://gisgeography.com/wgs84-world-geodetic-system/) datum and is measured in meters."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/geocoordinates"
+    }
+  ],
+  "meta:status": "experimental"
+}

@@ -1,0 +1,64 @@
+{
+    "$id": "https://ns.adobe.com/xdm/common/descriptors/schemadescriptor",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Schema Descriptor",
+    "meta:extensible": true,
+    "meta:abstract": false,
+    "type": "object",
+    "description": "A descriptor that contains metadata about an XDM schema, including an optional property and array item selector, used to address the descriptor to a specific property or item.",
+    "definitions": {
+        "descriptor": {
+            "properties": {
+                "@id": {
+                    "title": "Identifier",
+                    "type": "string",
+                    "format": "uri-reference",
+                    "description": "The unique identifier for the schema descriptor. This property is required when the descriptor is defined outside of the applicable schema, but is optional when applied via 'meta:descriptors'.",
+                    "meta:xdmType": "string"
+                },
+                "@type": {
+                    "title": "Type",
+                    "type": "string",
+                    "description": "The type of descriptor this object represents.",
+                    "meta:enum": {},
+                    "meta:xdmType": "string"
+                },
+                "xdm:sourceSchema": {
+                    "title": "Source Schema",
+                    "type": "string",
+                    "format": "uri",
+                    "description": "The source schema this descriptor applies to. This property is required when the descriptor is defined outside of the applicable schema, but is optional when applied via 'meta:descriptors'",
+                    "meta:xdmType": "string"
+                },
+                "xdm:sourceProperty": {
+                    "title": "Source Property",
+                    "type": "string",
+                    "description": "When present, the property of the source schema to which this descriptor applies. This value is a JSON Pointer, applied to an instance of an object described by `xdm:sourceSchema`.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:sourceVersion": {
+                    "title": "Source Version",
+                    "type": "number",
+                    "description": "Major version being referenced.",
+                    "meta:xdmType": "number"
+                },
+                "xdm:sourceItem": {
+                    "title": "Source Item",
+                    "description": "When present, the selector used to match a specific item in the array pointed to by `sourceProperty`.",
+                    "$ref": "xdm/common/descriptors/itemselector.schema.json#/definitions/selector"
+                }
+            },
+            "required": [
+                "xdm:sourceSchema",
+                "xdm:sourceVersion"
+            ]
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/descriptor"
+        }
+    ],
+    "meta:status": "stabilizing",
+    "meta:xdmType": "object"
+}

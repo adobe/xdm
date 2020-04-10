@@ -1,0 +1,38 @@
+{
+    "$id": "https://ns.adobe.com/experience/analytics/productlistitem",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Adobe Analytics extension to XDM Product List Item",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "description": "XDM Product List Item extension properties specific to Adobe Analytics that implements Merchandizing support.",
+    "definitions": {
+        "productlistitems": {
+            "properties": {
+                "https://ns.adobe.com/experience/analytics/customDimensions": {
+                    "type": "object",
+                    "title": "Merchandizing Custom Dimensions",
+                    "properties": {
+                        "xdm:eVars": {
+                            "title": "Merchandizing eVars",
+                            "$refkept": "https://ns.adobe.com/experience/analytics/evars"
+                        }
+                    },
+                    "meta:xdmType": "object"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/productlistitems"
+        },
+        {
+            "$ref": "xdm/content/productlistitem.schema.json"
+        },
+        {
+            "$ref": "xdm-extensions/adobe/experience/analytics/events.schema.json"
+        }
+    ],
+    "meta:xdmType": "object"
+}

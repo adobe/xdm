@@ -1,0 +1,56 @@
+{
+    "$id": "context/media-timed-chapter.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Timed media chapter information",
+    "type": "object",
+    "meta:status": "experimental",
+    "meta:extensible": true,
+    "description": "Timed media chapter information.",
+    "meta:xdmType": "object",
+    "properties": {
+        "chapterAssetReference": {
+            "title": "Chapter asset reference",
+            "$ref": "../context/media-timed-chapter-asset-reference.schema.json",
+            "description": "Asset information about the chapter captured by the experience event.",
+            "meta:xdmField": "xdm:chapterAssetReference",
+            "tagNumber": 1
+        },
+        "chapterAssetViewDetails": {
+            "title": "Chapter view details",
+            "$ref": "../context/media-timed-chapter-view-details.schema.json",
+            "description": "View details for the chapter playback captured by the experience event.",
+            "meta:xdmField": "xdm:chapterAssetViewDetails",
+            "tagNumber": 2
+        },
+        "impressions": {
+            "title": "Impressions",
+            "$ref": "../data/measure.schema.json",
+            "description": "Describes the intention to play a timed media asset. It does not measure success, as the user might abandon the content before the first frame is viewed.",
+            "meta:xdmField": "xdm:impressions",
+            "tagNumber": 3
+        },
+        "completes": {
+            "title": "Completes",
+            "$ref": "../data/measure.schema.json",
+            "description": "Indicates if a timed media asset was watched to completion - this does not necessarily mean the viewer watched the whole video; viewer could have skipped ahead.",
+            "meta:xdmField": "xdm:completes",
+            "tagNumber": 4
+        },
+        "timePlayed": {
+            "title": "Time spent",
+            "$ref": "../data/measure.schema.json",
+            "description": "Describes the amount of time in seconds spent by a user on a specific timed media asset.",
+            "meta:xdmField": "xdm:timePlayed",
+            "tagNumber": 5
+        },
+        "federated": {
+            "title": "Federated",
+            "$ref": "../data/measure.schema.json",
+            "description": "Indicates if an experience event was created through data federation or data sharing.",
+            "meta:xdmField": "xdm:federated",
+            "tagNumber": 6
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/media-timed-chapter",
+    "meta:altId": "_xdm.context.media-timed-chapter"
+}

@@ -1,0 +1,53 @@
+{
+    "$id": "adobe/experience/campaign/profile-snapshot.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Adobe Campaign Profile Snapshot",
+    "type": "object",
+    "description": "Adobe Campaign Profile snapshot contains the recipient of the message. This property is primarily used to link the message to a Profile using the `IdentityMap` but it can also be used to freeze some properties of the profile at the time the message was sent.",
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "person": {
+            "title": "Person",
+            "$ref": "../../../context/person.schema.json",
+            "description": "An individual actor, contact, or owner.",
+            "meta:xdmField": "xdm:person",
+            "tagNumber": 1
+        },
+        "directMarketingAddress": {
+            "title": "Direct Marketing Address",
+            "$ref": "../../../context/directmarketing-address.schema.json",
+            "description": "Direct Marketing postal address.",
+            "meta:xdmField": "xdm:directMarketingAddress",
+            "tagNumber": 2
+        },
+        "directMarketingEmail": {
+            "title": "Direct Marketing Email",
+            "$ref": "../../../context/directmarketing-emailaddress.schema.json",
+            "description": "Direct Marketing email address.",
+            "meta:xdmField": "xdm:directMarketingEmail",
+            "tagNumber": 3
+        },
+        "directMarketingPhone": {
+            "title": "Direct Marketing Phone",
+            "$ref": "../../../context/directmarketing-phonenumber.schema.json",
+            "description": "Direct Marketing phone number.",
+            "meta:xdmField": "xdm:directMarketingPhone",
+            "tagNumber": 4
+        },
+        "pushNotificationTokens": {
+            "title": "Push Notification Tokens",
+            "type": "array",
+            "description": "Push notification tokens are used to communicate with applications that are installed on devices or SaaS application accounts.",
+            "meta:xdmType": "array",
+            "items": {
+                "$ref": "../../../context/pushnotificationtoken.schema.json",
+                "tagNumber": 1
+            },
+            "meta:xdmField": "xdm:pushNotificationTokens",
+            "tagNumber": 5
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/campaign/profile-snapshot",
+    "meta:altId": "_experience.campaign.profile-snapshot"
+}

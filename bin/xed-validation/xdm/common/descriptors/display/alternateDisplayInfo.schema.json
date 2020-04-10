@@ -1,0 +1,86 @@
+{
+    "$id": "https://ns.adobe.com/xdm/common/descriptors/alternateDisplayInfo",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Friendly Name Descriptor",
+    "meta:extensible": false,
+    "meta:abstract": false,
+    "type": "object",
+    "description": "Allows to modify the \"title\" and \"description\" values of the core library schema fields. UI can use these to show a more friendly name for a standard field or to only show fields that have friendly names.",
+    "definitions": {
+        "alternateDisplayInfo": {
+            "properties": {
+                "@type": {
+                    "title": "Type",
+                    "type": "string",
+                    "const": "xdm:alternateDisplayInfo",
+                    "meta:xdmType": "string"
+                },
+                "xdm:title": {
+                    "title": "Title",
+                    "type": "object",
+                    "description": "When present, user friendly title to display.",
+                    "patternProperties": {
+                        ".+_.+": {
+                            "type": "string",
+                            "meta:xdmType": "string"
+                        }
+                    },
+                    "meta:xdmType": "object"
+                },
+                "xdm:description": {
+                    "title": "Description",
+                    "type": "object",
+                    "description": "When present, user friendly description to display.",
+                    "patternProperties": {
+                        ".+_.+": {
+                            "type": "string",
+                            "meta:xdmType": "string"
+                        }
+                    },
+                    "meta:xdmType": "object"
+                },
+                "meta:enum": {
+                    "title": "Extended meta:enum values",
+                    "type": "object",
+                    "patternProperties": {
+                        ".+": {
+                            "type": "string",
+                            "meta:xdmType": "string"
+                        }
+                    },
+                    "meta:xdmType": "object"
+                }
+            },
+            "anyOf": [
+                {
+                    "required": [
+                        "xdm:title"
+                    ]
+                },
+                {
+                    "required": [
+                        "xdm:description"
+                    ]
+                },
+                {
+                    "required": [
+                        "meta:enum"
+                    ]
+                }
+            ],
+            "required": [
+                "xdm:sourceProperty"
+            ]
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "xdm/common/descriptors/schemadescriptor.schema.json#/definitions/descriptor"
+        },
+        {
+            "$ref": "#/definitions/alternateDisplayInfo"
+        }
+    ],
+    "meta:status": "stabilizing",
+    "meta:xdmType": "object"
+}

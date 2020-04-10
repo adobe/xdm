@@ -1,0 +1,76 @@
+{
+    "$id": "https://ns.adobe.com/xdm/common/descriptors/relationshipdescriptor",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Relationship Descriptor",
+    "meta:extensible": true,
+    "meta:abstract": false,
+    "type": "object",
+    "description": "A descriptor that describes a relationship between two schemas, a 'source' and a 'destination'.  This relationship may be directly between the schemas, or between specific properties of the schemas.  Relationship descriptors may be used to describe foreign key relationships between schemas, defining a relational model or star schema.",
+    "definitions": {
+        "relationshipdescriptor": {
+            "properties": {
+                "xdm:destinationSchema": {
+                    "title": "Destination Schema",
+                    "type": "string",
+                    "format": "uri",
+                    "description": "The destination schema this descriptor applies to",
+                    "meta:xdmType": "string"
+                },
+                "xdm:destinationProperty": {
+                    "title": "Destination Property",
+                    "type": "string",
+                    "description": "When present, the property of the destination schema to which this descriptor applies. This value is a JSON Pointer, applied to an instance of an object described by 'xdm:destSchema'",
+                    "meta:xdmType": "string"
+                },
+                "xdm:destinationItem": {
+                    "title": "Destination Item",
+                    "description": "When present, the selector used to match a specific item in the array pointed to by destProperty",
+                    "$ref": "xdm/common/descriptors/itemselector.schema.json#/definitions/selector"
+                },
+                "xdm:destinationVersion": {
+                    "title": "Destination Version",
+                    "type": "number",
+                    "description": "Major version being referenced.",
+                    "meta:xdmType": "number"
+                },
+                "xdm:sourceValue": {
+                    "title": "Source Value",
+                    "type": "string",
+                    "description": "When present, provides additional information about the values in that field. Descriptor producer and consumer should coordinate on how to use this field, e.g. defining rules on formats, values, and operations.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:label": {
+                    "title": "Label",
+                    "type": "string",
+                    "meta:xdmType": "string"
+                }
+            },
+            "oneOf": [
+                {
+                    "required": [
+                        "xdm:label"
+                    ]
+                },
+                {
+                    "required": [
+                        "xdm:sourceProperty"
+                    ]
+                }
+            ],
+            "required": [
+                "xdm:destinationSchema",
+                "xdm:destinationVersion"
+            ]
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "xdm/common/descriptors/schemadescriptor.schema.json#/definitions/descriptor"
+        },
+        {
+            "$ref": "#/definitions/relationshipdescriptor"
+        }
+    ],
+    "meta:status": "stabilizing",
+    "meta:xdmType": "object"
+}

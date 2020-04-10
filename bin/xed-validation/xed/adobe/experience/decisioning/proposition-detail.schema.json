@@ -1,0 +1,59 @@
+{
+    "$id": "adobe/experience/decisioning/proposition-detail.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Decision Proposition Detail",
+    "type": "object",
+    "meta:abstract": true,
+    "meta:extensible": true,
+    "description": "A decision proposition detail is used to capture the output of a decisioning activity. Propositions are enriched with the observed metrics that applied to the selected options at the time the decision was made.",
+    "meta:xdmType": "object",
+    "properties": {
+        "activity": {
+            "title": "Decision Activity Snapshot",
+            "description": "Snapshot of the activity for which the proposition was made. The object contains at least the xdm:id property value which is the identifier of the decision activity.",
+            "$ref": "../../../adobe/experience/decisioning/activity-detail.schema.json",
+            "meta:xdmField": "xdm:activity",
+            "tagNumber": 1
+        },
+        "channel": {
+            "title": "DEPRECATED - Channel",
+            "type": "string",
+            "format": "uri-reference",
+            "meta:status": "deprecated",
+            "description": "DEPRECATED, use placement.channel instead. The channel in which proposition was made. The value is a valid Channel URI. See 'https://ns.adobe.com/xdm/channels/channel'",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:channel",
+            "tagNumber": 2
+        },
+        "placement": {
+            "title": "Placement Snapshot",
+            "description": "Snapshot of the placement for which the proposition was made. The object contains at least the xdm:id property value which is the identifier of the placement.",
+            "$ref": "../../../adobe/experience/decisioning/placement-detail.schema.json",
+            "meta:xdmField": "xdm:placement",
+            "tagNumber": 3
+        },
+        "selections": {
+            "title": "Selected Options' Snapshot",
+            "description": "Snapshot of the options that were selected by this activity. The objects contain a at least the xdm:id property value which is the identifier of an option. The intention is that either the selections or the fallback property is required.",
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "meta:xdmType": "array",
+            "items": {
+                "$ref": "../../../adobe/experience/decisioning/option-detail.schema.json",
+                "tagNumber": 1
+            },
+            "meta:xdmField": "xdm:selections",
+            "tagNumber": 4
+        },
+        "fallback": {
+            "title": "Fallback Option Snapshot",
+            "description": "Snapshot of the fixed fallback option that was selected because no available option satisfied all constraints. The object contains at least the xdm:id property value which is the identifier of the fallback action. Note that the intention is that either the selections or the fallback property is required.",
+            "$ref": "../../../adobe/experience/decisioning/option-detail.schema.json",
+            "meta:xdmField": "xdm:fallback",
+            "tagNumber": 5
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/decisioning/proposition-detail",
+    "meta:altId": "_experience.decisioning.proposition-detail"
+}

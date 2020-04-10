@@ -1,0 +1,28 @@
+{
+    "$id": "external/iptc/creator.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Creator",
+    "type": "object",
+    "description": "The creator of the show. Based on [www.iptc.org](https://www.iptc.org/std/videometadatahub/recommendation/pre-versions/IPTC-VideoMetadataHub-props-Rec_1.1.html)",
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "_iptc4xmpExt": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "Name": {
+                    "title": "Creator Name",
+                    "type": "string",
+                    "description": "Full name of the Creator.",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "iptc4xmpExt:Name",
+                    "tagNumber": 1
+                }
+            },
+            "tagNumber": 1
+        }
+    },
+    "meta:xdmId": "http://www.iptc.org/creator",
+    "meta:altId": "_xdm.external.iptc.creator"
+}

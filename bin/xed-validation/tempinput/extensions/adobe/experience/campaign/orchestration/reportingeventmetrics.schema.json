@@ -1,0 +1,127 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id":
+    "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "User journey reporting event metrics",
+  "type": "object",
+  "meta:extends": ["https://ns.adobe.com/xdm/data/metrics"],
+  "description":
+    "For state transitions, we capture certain metrics along with the dimensions. This schema hold the metrics associated with reporting of state transition",
+  "definitions": {
+    "reportingeventmetrics": {
+      "properties": {
+        "https://ns.adobe.com/experience/campaign/orchestrationEnteredJourneyInstance": {
+          "title": "Entered Journey",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Set to 1 when a journey instance is created"
+        },
+        "https://ns.adobe.com/experience/campaign/orchestrationExitedJourneyInstance": {
+          "title": "Exited journey",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Set to 1 when a journey instance is flagged as ended"
+        },
+        "https://ns.adobe.com/experience/campaign/orchestrationErrorInJourneyInstance": {
+          "title": "Error in Journey Instance",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+            "Set to 1 when an error is raised in a journey instance"
+        },
+        "https://ns.adobe.com/experience/campaign/orchestrationErrorInEventProcessing": {
+          "title": "Eroor in step processing",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+            "Set to 1 when an error occurs during an event processing, that is during a step processing"
+        },
+        "https://ns.adobe.com/experience/campaign/orchestrationErrorInActionExecution": {
+          "title": "Error in action execution",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+            "Set to 1 when an error occurs during an action execution"
+        },
+        "https://ns.adobe.com/experience/campaign/orchestrationErrorInJumpActionExecution": {
+          "title": "Error in jump action",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+            "Set to 1 when an error occurs during the jump action execution"
+        },
+        "https://ns.adobe.com/experience/campaign/orchestrationErrorInEnrichment": {
+          "title": "Error in enrichment",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Set to 1 when an error occurs during enrichment"
+        },
+        "https://ns.adobe.com/experience/campaign/orchestrationExecutedEvent": {
+          "title": "Event processed",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+            "Set to 1 when an event as triggered a transition in a journey instance"
+        },
+        "https://ns.adobe.com/experience/campaign/orchestrationExecutedAction": {
+          "title": "Action executed",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+            "Set to 1 when an action is executed successfully in a journey instance"
+        },
+        "https://ns.adobe.com/experience/campaign/orchestrationExecutedFlowControl": {
+          "title": "Flow control executed",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+            "Set to 1 when an action is executed successfully in a journey instance"
+        },
+        "https://ns.adobe.com/experience/campaign/orchestrationExecutedJumpAction": {
+          "title": "Executed jump action",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+            "Set to 1 when a jump action is executed successfully in a journey instance"
+        },
+        "https://ns.adobe.com/experience/campaign/orchestrationExecutedEnrichment": {
+          "title": "Enrichment made successfully ",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+            "Set to 1 when an enrichment is executed successfully in a journey instance"
+        },
+        "https://ns.adobe.com/experience/campaign/orchestrationJumpToJourney": {
+          "title": "Jump action executed successfully",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+            "Set to 1 when a jump to another journey instance is made"
+        },
+        "https://ns.adobe.com/experience/campaign/orchestrationTimeoutInAction": {
+          "title": "Timeout In Action",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+          "Set to 1 when timeout occurs during execution of an action"
+        },
+        "https://ns.adobe.com/experience/campaign/orchestrationTimeoutInEvent": {
+          "title": "Timeout in Event",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+          "Set to 1 when timeout occurs during the processing of an event"
+        },
+        "https://ns.adobe.com/experience/campaign/orchestrationTimeoutInJourney": {
+          "title": "Timeout In Journey",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+          "Set to 1 when timeout occurs during the flow of a journey"
+        },
+        "https://ns.adobe.com/experience/campaign/orchestrationTimeoutInEnrichment": {
+          "title": "Timeout In Enrichment",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description":
+          "Set to 1 when timeout occurs during enrichement"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/reportingeventmetrics"
+    }
+  ],
+  "meta:status": "stabilizing"
+}

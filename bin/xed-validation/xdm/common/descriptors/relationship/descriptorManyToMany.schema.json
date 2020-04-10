@@ -1,0 +1,33 @@
+{
+    "$id": "https://ns.adobe.com/xdm/common/descriptors/descriptorManyToMany",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Many to Many Relationship Descriptor",
+    "meta:extensible": false,
+    "meta:abstract": false,
+    "type": "object",
+    "description": "Describes many to many relationship descriptor.",
+    "definitions": {
+        "descriptorManyToMany": {
+            "properties": {
+                "@type": {
+                    "type": "string",
+                    "const": "xdm:descriptorManyToMany",
+                    "meta:xdmType": "string"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "xdm/common/descriptors/schemadescriptor.schema.json#/definitions/descriptor"
+        },
+        {
+            "$ref": "xdm/common/descriptors/relationshipdescriptor.schema.json#/definitions/relationshipdescriptor"
+        },
+        {
+            "$ref": "#/definitions/descriptorManyToMany"
+        }
+    ],
+    "meta:status": "stabilizing",
+    "meta:xdmType": "object"
+}

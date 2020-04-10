@@ -1,0 +1,51 @@
+{
+    "$id": "https://ns.adobe.com/xdm/data/pause-time",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Pause Time",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "Describes the duration in which playback was paused by the user.",
+    "definitions": {
+        "metricdefinition": {
+            "properties": {
+                "@id": {
+                    "type": "string",
+                    "const": "xdm:pauseTime",
+                    "description": "The unique identifier of this metric.",
+                    "meta:xdmType": "string"
+                },
+                "schema:name": {
+                    "type": "string",
+                    "const": "metric: pauseTime",
+                    "description": "Describes the duration in which playback was paused by the user.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:measurement": {
+                    "type": "string",
+                    "description": "How to take measures of this metric.",
+                    "const": "time",
+                    "meta:xdmType": "string"
+                },
+                "xdm:unit": {
+                    "const": "second"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/metricdefinition"
+        },
+        {
+            "$ref": "xdm/data/metricdefinition.schema.json"
+        }
+    ],
+    "required": [
+        "@id",
+        "schema:name",
+        "xdm:measurement",
+        "xdm:unit"
+    ],
+    "meta:status": "stabilizing",
+    "meta:xdmType": "object"
+}

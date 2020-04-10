@@ -1,0 +1,109 @@
+{
+    "$id": "common/geo",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "type": "object",
+    "meta:extensible": true,
+    "title": "Geo",
+    "description": "The geographic related data where an event was observed.",
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "_id": {
+            "title": "Coordinates ID",
+            "type": "string",
+            "format": "uri-reference",
+            "description": "The unique identifier of the coordinates.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "@id"
+        },
+        "_schema": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "description": {
+                    "title": "Description",
+                    "type": "string",
+                    "description": "A description of what the coordinates identify.",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "schema:description"
+                },
+                "latitude": {
+                    "title": "Latitude",
+                    "type": "number",
+                    "minimum": -90,
+                    "maximum": 90,
+                    "description": "The signed vertical coordinate of a geographic point.",
+                    "meta:xdmType": "number",
+                    "meta:xdmField": "schema:latitude"
+                },
+                "longitude": {
+                    "title": "Longitude",
+                    "type": "number",
+                    "minimum": -180,
+                    "maximum": 180,
+                    "description": "The signed horizontal coordinate of a geographic point.",
+                    "meta:xdmType": "number",
+                    "meta:xdmField": "schema:longitude"
+                },
+                "elevation": {
+                    "title": "Elevation",
+                    "type": "number",
+                    "description": "The specific elevation of the defined coordinate. The value conforms to the [WGS84](http://gisgeography.com/wgs84-world-geodetic-system/) datum and is measured in meters.",
+                    "meta:xdmType": "number",
+                    "meta:xdmField": "schema:elevation"
+                }
+            }
+        },
+        "countryCode": {
+            "title": "Country code",
+            "type": "string",
+            "pattern": "^[A-Z]{2}$",
+            "description": "The two-character [ISO 3166-1 alpha-2](https://datahub.io/core/country-list) code for the country.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:countryCode"
+        },
+        "stateProvince": {
+            "title": "State or province",
+            "type": "string",
+            "description": "The state, or province portion of the observation. The format follows the [ISO 3166-2 (country and subdivision)][http://www.unece.org/cefact/locode/subdivisions.html] standard.",
+            "examples": [
+                "US-CA",
+                "DE-BB",
+                "JP-13"
+            ],
+            "pattern": "([A-Z]{2}-[A-Z0-9]{1,3}|)",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:stateProvince"
+        },
+        "city": {
+            "title": "City",
+            "type": "string",
+            "description": "The name of the city.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:city"
+        },
+        "postalCode": {
+            "title": "Postal code",
+            "type": "string",
+            "description": "The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:postalCode"
+        },
+        "dmaID": {
+            "title": "Designated market area",
+            "type": "integer",
+            "description": "The Nielsen media research designated market area.",
+            "meta:xdmType": "int",
+            "meta:xdmField": "xdm:dmaID"
+        },
+        "msaID": {
+            "title": "Metropolitan statistical area",
+            "type": "integer",
+            "description": "The metropolitan statistical area in the United States where the observation occurred.",
+            "meta:xdmType": "int",
+            "meta:xdmField": "xdm:msaID"
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/common/geo",
+    "meta:altId": "_xdm.common.geo"
+}

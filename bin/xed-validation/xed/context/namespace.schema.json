@@ -1,0 +1,25 @@
+{
+    "$id": "context/namespace.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Namespace",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "",
+    "meta:status": "stabilizing",
+    "meta:xdmType": "object",
+    "properties": {
+        "code": {
+            "title": "Code",
+            "type": "string",
+            "description": "The code is a human readable identifier for the namespace and can be used to request the technical namespace id which is used for identity graph processing.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:code",
+            "tagNumber": 1
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/namespace",
+    "meta:altId": "_xdm.context.namespace",
+    "required": [
+        "code"
+    ]
+}

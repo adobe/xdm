@@ -1,0 +1,104 @@
+{
+    "$id": "adobe/experience/offer-management/offer-detail.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Offer Detail",
+    "type": "object",
+    "meta:abstract": true,
+    "meta:extensible": true,
+    "description": "Offer detail is used to capture the attributes of an offer in a proposition or response. Offers are the decision options in the offer management domain and the offer detail datatype extends the option detail datatype.",
+    "meta:xdmType": "object",
+    "properties": {
+        "tags": {
+            "type": "array",
+            "title": "Tags",
+            "description": "The set of tags associated with this offer. The tags are used in offer filter expressions to constrain the overall offer inventory to a topical sub set (category).",
+            "meta:xdmType": "array",
+            "items": {
+                "type": "string",
+                "format": "uri-reference",
+                "description": "An identifier of a tag object. The value is the @id of the tag that is referenced. See tag schema: https://ns.adobe.com/experience/offer-management/tag",
+                "meta:xdmType": "string",
+                "tagNumber": 1
+            },
+            "meta:xdmField": "xdm:tags",
+            "tagNumber": 1
+        },
+        "id": {
+            "title": "Decision Option Identifier",
+            "type": "string",
+            "format": "uri-reference",
+            "description": "A unique identifier for the decision option.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:id",
+            "tagNumber": 2
+        },
+        "_repo": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "etag": {
+                    "title": "Decision Option ETag",
+                    "type": "string",
+                    "description": "The revision that the decision option object was at when the snapshot was taken.",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "repo:etag",
+                    "tagNumber": 1
+                }
+            },
+            "tagNumber": 3
+        },
+        "name": {
+            "type": "string",
+            "title": "Decision Option Name",
+            "description": "Option name. The name is displayed in various user interfaces.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:name",
+            "tagNumber": 4
+        },
+        "characteristics": {
+            "title": "Decision Option Characteristics",
+            "description": "Additional properties or attributes belonging to this particular decision option. Different instances can have different characteristics (keys in the map). The characteristics are name value pairs used to distinguish one decision option from others. Characteristics are used as values in content that represents this decision option and as features to analyze and optimize the performance of an option. When every instance has the same attribute or property, that aspect should be modeled as an extension schema that derives from decision option detail.",
+            "type": "object",
+            "meta:xdmType": "map",
+            "additionalProperties": {
+                "type": "string",
+                "description": "Value of the property.",
+                "meta:xdmType": "string",
+                "tagNumber": 1
+            },
+            "meta:xdmField": "xdm:characteristics",
+            "tagNumber": 5
+        },
+        "_experience": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "decisioning": {
+                    "type": "object",
+                    "meta:xdmType": "object",
+                    "properties": {
+                        "propositionsTotal": {
+                            "$ref": "../../../data/measure.schema.json",
+                            "description": "The total number a particular option was proposed so far across all profiles.",
+                            "meta:xdmField": "https://ns.adobe.com/experience/decisioning/propositionsTotal",
+                            "tagNumber": 1
+                        },
+                        "propositionsProfile": {
+                            "$ref": "../../../data/measure.schema.json",
+                            "description": "The number of times a particular option was proposed so far to a particular profile. When this metric is present the record or time-series entity must include an IdentityMap the profile.",
+                            "meta:xdmField": "https://ns.adobe.com/experience/decisioning/propositionsProfile",
+                            "tagNumber": 2
+                        }
+                    },
+                    "tagNumber": 1
+                }
+            },
+            "tagNumber": 6
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/offer-management/offer-detail",
+    "meta:altId": "_experience.offer-management.offer-detail",
+    "required": [
+        "id"
+    ]
+}

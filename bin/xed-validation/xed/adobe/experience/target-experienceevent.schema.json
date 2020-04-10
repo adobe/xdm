@@ -1,0 +1,298 @@
+{
+    "$id": "adobe/experience/target-experienceevent.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Adobe Target ExperienceEvent Template Mixin",
+    "type": "object",
+    "description": "Target ExperienceEvent mixin for use with schemas for Solution data ingestion. Includes the core/standard ExperienceEvent as well as the required Adobe Target ExperienceEvent mixins.",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:status": [
+        "experimental",
+        "stabilizing"
+    ],
+    "meta:xdmType": "object",
+    "properties": {
+        "advertising": {
+            "title": "Advertising",
+            "$ref": "../../context/advertising.schema.json",
+            "description": "Information related to advertising activity in ExperienceEvents.",
+            "meta:xdmField": "xdm:advertising",
+            "tagNumber": 1
+        },
+        "application": {
+            "title": "Application",
+            "$ref": "../../context/application.schema.json",
+            "description": "This mixin is used to capture application information related to an ExperienceEvent, including the name of the application, app version, installs, launches, crashes, and closures. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login.",
+            "meta:xdmField": "xdm:application",
+            "tagNumber": 2
+        },
+        "channel": {
+            "title": "Experience channel",
+            "description": "Experience channel related to the ExperienceEvent.",
+            "$ref": "../../channels/channel.schema.json",
+            "meta:xdmField": "xdm:channel",
+            "tagNumber": 3
+        },
+        "productListItems": {
+            "title": "Product list items",
+            "type": "array",
+            "description": "A list of items representing a product selected by a customer with specific options and pricing that are for that usage context at a specific point of time and may differ from the product record.",
+            "meta:xdmType": "array",
+            "items": {
+                "$ref": "../../content/productlistitem.schema.json",
+                "tagNumber": 1
+            },
+            "meta:xdmField": "xdm:productListItems",
+            "tagNumber": 4
+        },
+        "commerce": {
+            "title": "Commerce",
+            "$ref": "../../context/commerce.schema.json",
+            "description": "Commerce specific data related to this event.",
+            "meta:xdmField": "xdm:commerce",
+            "tagNumber": 5
+        },
+        "directMarketing": {
+            "title": "Direct marketing",
+            "$ref": "../../context/direct-marketing.schema.json",
+            "description": "Events and properties related to direct and outbound marketing such as email, direct mail, texts, and in-app notifications.",
+            "meta:xdmField": "xdm:directMarketing",
+            "tagNumber": 6
+        },
+        "environment": {
+            "title": "Environment",
+            "$ref": "../../context/environment.schema.json",
+            "description": "Information about the surrounding situation the event observation occurred in, specifically detailing transitory information such as the network or software versions.",
+            "meta:xdmField": "xdm:environment",
+            "tagNumber": 7
+        },
+        "device": {
+            "title": "Device",
+            "$ref": "../../context/device.schema.json",
+            "description": "An identified device, application or device browser instance that is trackable across sessions, normally by cookies.",
+            "meta:xdmField": "xdm:device",
+            "tagNumber": 8
+        },
+        "placeContext": {
+            "title": "Place context",
+            "$ref": "../../context/placecontext.schema.json",
+            "description": "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, and working hours.",
+            "meta:xdmField": "xdm:placeContext",
+            "tagNumber": 9
+        },
+        "marketing": {
+            "title": "Marketing",
+            "$ref": "../../context/marketing.schema.json",
+            "description": "The information related to marketing activities that are active with the touchpoint.",
+            "meta:xdmField": "xdm:marketing",
+            "tagNumber": 10
+        },
+        "media": {
+            "title": "Media",
+            "meta:status": "experimental",
+            "$ref": "../../context/media.schema.json",
+            "description": "Media activity information related to the experience event.",
+            "meta:xdmField": "xdm:media",
+            "tagNumber": 11
+        },
+        "profileStitch": {
+            "title": "Profile stitch",
+            "description": "Details about the IDs that were joined by profile stitching.",
+            "type": "array",
+            "meta:xdmType": "array",
+            "items": {
+                "$ref": "../../context/profilestitch.schema.json",
+                "tagNumber": 1
+            },
+            "meta:xdmField": "xdm:profileStitch",
+            "tagNumber": 12
+        },
+        "search": {
+            "title": "Search",
+            "$ref": "../../context/search.schema.json",
+            "description": "The information related to web or mobile search.",
+            "meta:xdmField": "xdm:search",
+            "tagNumber": 13
+        },
+        "segmentMemberships": {
+            "title": "Segment Memberships",
+            "meta:status": "deprecated",
+            "description": "The segments associated with this ExperienceEvent. Deprecated, use `xdm:segmentMembership` instead.",
+            "type": "array",
+            "meta:xdmType": "array",
+            "items": {
+                "$ref": "../../context/segmentmembershipitem.schema.json",
+                "tagNumber": 1
+            },
+            "meta:xdmField": "xdm:segmentMemberships",
+            "tagNumber": 14
+        },
+        "segmentMembership": {
+            "title": "Segment Membership Map",
+            "type": "object",
+            "meta:xdmType": "map",
+            "additionalProperties": {
+                "title": "Segment Membership per Namespace",
+                "type": "object",
+                "meta:xdmType": "map",
+                "additionalProperties": {
+                    "$ref": "../../context/segmentmembership.schema.json",
+                    "tagNumber": 1
+                },
+                "tagNumber": 1
+            },
+            "meta:xdmField": "xdm:segmentMembership",
+            "tagNumber": 15
+        },
+        "dataSource": {
+            "title": "Data source",
+            "$ref": "../../data/datasource.schema.json",
+            "description": "Globally unique identification of a data source.",
+            "meta:xdmField": "xdm:dataSource",
+            "tagNumber": 16
+        },
+        "receivedTimestamp": {
+            "title": "Received time stamp",
+            "type": "string",
+            "format": "date-time",
+            "description": "The time at which this interaction was received by a server.",
+            "meta:xdmType": "date-time",
+            "meta:xdmField": "xdm:receivedTimestamp",
+            "tagNumber": 17
+        },
+        "web": {
+            "title": "Web",
+            "$ref": "../../context/webinfo.schema.json",
+            "description": "The information related to web page and link of the ExperienceEvent.",
+            "meta:xdmField": "xdm:web",
+            "tagNumber": 18
+        },
+        "_experience": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "target": {
+                    "type": "object",
+                    "meta:xdmType": "object",
+                    "properties": {
+                        "clientcode": {
+                            "title": "Adobe Target Client Code",
+                            "type": "string",
+                            "description": "Adobe Target client code.",
+                            "meta:xdmType": "string",
+                            "meta:xdmField": "https://ns.adobe.com/experience/target/clientcode",
+                            "tagNumber": 1
+                        },
+                        "mboxname": {
+                            "title": "Adobe Target Mbox Name",
+                            "type": "string",
+                            "description": "Adobe Target mbox name.",
+                            "meta:xdmType": "string",
+                            "meta:xdmField": "https://ns.adobe.com/experience/target/mboxname",
+                            "tagNumber": 2
+                        },
+                        "mboxversion": {
+                            "title": "Adobe Target Mbox Version",
+                            "type": "string",
+                            "description": "Adobe Target mbox version.",
+                            "meta:xdmType": "string",
+                            "meta:xdmField": "https://ns.adobe.com/experience/target/mboxversion",
+                            "tagNumber": 3
+                        },
+                        "sessionid": {
+                            "title": "Adobe Target Session Identifier",
+                            "type": "string",
+                            "description": "Adobe Target session identifier.",
+                            "meta:xdmType": "string",
+                            "meta:xdmField": "https://ns.adobe.com/experience/target/sessionid",
+                            "tagNumber": 4
+                        },
+                        "pagedetail": {
+                            "type": "object",
+                            "meta:xdmType": "object",
+                            "properties": {
+                                "pageid": {
+                                    "title": "Target Unique Page Identifier",
+                                    "type": "string",
+                                    "format": "uri",
+                                    "description": "Target generated page identifier for current event.",
+                                    "meta:xdmType": "string",
+                                    "meta:xdmField": "https://ns.adobe.com/experience/target/pagedetail/pageid",
+                                    "tagNumber": 1
+                                },
+                                "pagescore": {
+                                    "title": "Page Score",
+                                    "type": "number",
+                                    "description": "Customer assigned score to visited page.",
+                                    "meta:xdmType": "number",
+                                    "meta:xdmField": "https://ns.adobe.com/experience/target/pagedetail/pagescore",
+                                    "tagNumber": 2
+                                }
+                            },
+                            "tagNumber": 5
+                        },
+                        "environmentID": {
+                            "title": "Environment Identifier",
+                            "type": "string",
+                            "description": "Identifier of the environment on which the event was processed.",
+                            "meta:xdmType": "string",
+                            "meta:xdmField": "https://ns.adobe.com/experience/target/environmentID",
+                            "tagNumber": 6
+                        },
+                        "activities": {
+                            "title": "Activities",
+                            "type": "array",
+                            "description": "A list of items representing executed activities.",
+                            "meta:xdmType": "array",
+                            "items": {
+                                "$ref": "../../adobe/experience/target/activity.schema.json",
+                                "tagNumber": 1
+                            },
+                            "meta:xdmField": "https://ns.adobe.com/experience/target/activities",
+                            "tagNumber": 7
+                        },
+                        "supplementalDataID": {
+                            "title": "Supplemental Data Identifier",
+                            "description": "Identifier used to stitch Target events with Analytics events",
+                            "type": "string",
+                            "meta:xdmType": "string",
+                            "meta:xdmField": "https://ns.adobe.com/experience/target/supplementalDataID",
+                            "tagNumber": 8
+                        }
+                    },
+                    "tagNumber": 1
+                },
+                "profile": {
+                    "type": "object",
+                    "meta:xdmType": "object",
+                    "properties": {
+                        "originDatasetID": {
+                            "title": "Origin Dataset ID",
+                            "type": "string",
+                            "description": "Identity of the dataset that the Unified Profile Service ingested the data from. Usage is reserved for the Unified Profile Service.",
+                            "meta:xdmType": "string",
+                            "meta:xdmField": "https://ns.adobe.com/experience/profile/originDatasetID",
+                            "tagNumber": 1
+                        }
+                    },
+                    "tagNumber": 2
+                },
+                "implementations": {
+                    "$ref": "../../adobe/experience/implementations.schema.json",
+                    "meta:xdmField": "https://ns.adobe.com/experience/implementations",
+                    "tagNumber": 3
+                }
+            },
+            "tagNumber": 19
+        },
+        "endUserIDs": {
+            "title": "EndUserIDs",
+            "$ref": "../../context/enduserids.schema.json",
+            "description": "Condensed, normalized encapsulation of end user identifiers asserted for this ExperienceEvent.",
+            "meta:xdmField": "xdm:endUserIDs",
+            "tagNumber": 20
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/target-experienceevent",
+    "meta:altId": "_experience.target-experienceevent"
+}

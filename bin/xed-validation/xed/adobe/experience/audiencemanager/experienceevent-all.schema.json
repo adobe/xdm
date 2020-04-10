@@ -1,0 +1,60 @@
+{
+    "$id": "adobe/experience/audiencemanager/experienceevent-all.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Adobe Audience Manager ExperienceEvent Full Extension",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "description": "Adobe Audience Manager ExperienceEvent full extension. Contains all Solution added fields.",
+    "meta:xdmType": "object",
+    "properties": {
+        "signals": {
+            "title": "Signals",
+            "description": "Additional frequently changing properties captured with an event via request parameters or other means.",
+            "type": "object",
+            "meta:xdmType": "map",
+            "additionalProperties": {
+                "type": "array",
+                "meta:xdmType": "array",
+                "items": {
+                    "type": "string",
+                    "description": "Value of the parameter",
+                    "meta:xdmType": "string",
+                    "tagNumber": 1
+                },
+                "tagNumber": 1
+            },
+            "meta:xdmField": "xdm:signals",
+            "tagNumber": 1
+        },
+        "overwriteTraits": {
+            "title": "Overwrite Traits",
+            "type": "boolean",
+            "description": "Flag highlighting that all the traits realized before this for this id and data source, need to be discarded.",
+            "meta:xdmType": "boolean",
+            "meta:xdmField": "xdm:overwriteTraits",
+            "tagNumber": 2
+        },
+        "derivedSignals": {
+            "title": "Derived Signals",
+            "description": "Derived properties from event data",
+            "type": "object",
+            "meta:xdmType": "map",
+            "additionalProperties": {
+                "type": "array",
+                "meta:xdmType": "array",
+                "items": {
+                    "type": "string",
+                    "description": "Value of the parameter",
+                    "meta:xdmType": "string",
+                    "tagNumber": 1
+                },
+                "tagNumber": 1
+            },
+            "meta:xdmField": "xdm:derivedSignals",
+            "tagNumber": 3
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/audiencemanager/experienceevent-all",
+    "meta:altId": "_experience.audiencemanager.experienceevent-all"
+}

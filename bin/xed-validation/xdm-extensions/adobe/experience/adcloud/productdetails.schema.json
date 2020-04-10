@@ -1,0 +1,62 @@
+{
+    "$id": "https://ns.adobe.com/experience/adcloud/productdetails",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Adobe Advertising Cloud Product Details displayed in Search Advertisement.",
+    "type": "object",
+    "description": "Adobe Advertising Cloud Search Product Details.",
+    "definitions": {
+        "productdetails": {
+            "properties": {
+                "xdm:productID": {
+                    "title": "Product Identifier",
+                    "type": "string",
+                    "description": "Identifier for the product featured in the clicked advertisement.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:country": {
+                    "title": "Product Country",
+                    "type": "string",
+                    "description": "The country of sale for the product in the clicked ad.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:language": {
+                    "title": "Product Language",
+                    "type": "string",
+                    "description": "The language of your product information, as indicated in client's Merchant Center data feed.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:partitionID": {
+                    "title": "Product Partition Identifier",
+                    "type": "string",
+                    "description": "Identifier for the product group the clicked product advertisement belongs to.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:title": {
+                    "title": "Product Title",
+                    "type": "string",
+                    "description": "Product title value shown in the advertisement.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:adType": {
+                    "title": "Product Ad Type",
+                    "type": "string",
+                    "description": "Ad Type for Product used in Google Shopping Campaigns.",
+                    "meta:enum": {
+                        "pla_with_pog": "If the click is coming from a Purchases on Google-enabled Shopping ad",
+                        "pla": "If the click is coming from a Shopping ad",
+                        "pla_multichannel": "If the clicked Shopping ad included options for both “online” and “local” shopping channels.",
+                        "pla_with_promotion": "If the clicked Shopping ad displayed a merchant promotion."
+                    },
+                    "meta:xdmType": "string"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/productdetails"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmType": "object"
+}

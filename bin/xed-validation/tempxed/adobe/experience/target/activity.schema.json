@@ -1,0 +1,61 @@
+{
+    "$id": "adobe/experience/target/activity",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Adobe Target Activity",
+    "type": "object",
+    "description": "An Adobe Target activity compares two or more experiences against the success metrics that are specified for choosing the experience that is most likely to provide the optimal results.",
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "activityID": {
+            "title": "Activity Identifier",
+            "type": "string",
+            "description": "Unique identity of an Adobe Target activity. This identifier can be used in activity APIs offered by Adobe Target.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:activityID"
+        },
+        "version": {
+            "title": "Activity Version",
+            "type": "string",
+            "description": "Version of the activity that processed this given experience event.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:version"
+        },
+        "_experience": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "target": {
+                    "type": "object",
+                    "meta:xdmType": "object",
+                    "properties": {
+                        "activity": {
+                            "type": "object",
+                            "meta:xdmType": "object",
+                            "properties": {
+                                "preview": {
+                                    "$ref": "adobe/experience/target/activity/preview",
+                                    "meta:xdmField": "https://ns.adobe.com/experience/target/activity/preview"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "activityEvents": {
+            "type": "array",
+            "meta:xdmType": "array",
+            "items": {
+                "$ref": "adobe/experience/target/activity/activityevent"
+            },
+            "meta:xdmField": "xdm:activityEvents"
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/target/activity",
+    "meta:altId": "_experience.target.activity",
+    "required": [
+        "activityID",
+        "version"
+    ]
+}

@@ -1,0 +1,65 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "https://ns.adobe.com/experience/adcloud/inventory",
+    "title": "Adobe Advertising Cloud Inventory",
+    "type": "object",
+    "description": "Adobe Advertising Cloud inventory traits.",
+    "definitions": {
+        "inventory": {
+            "properties": {
+                "xdm:sessionId": {
+                    "title": "Session ID",
+                    "type": "string",
+                    "description": "Session ID associated with experience event, used to stitch together independent events which occurred in the same session.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:feedId": {
+                    "title": "Feed ID",
+                    "type": "string",
+                    "description": "Composite ID of the publisher, ad exchange, and other features.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:sspPartnerCode": {
+                    "title": "SSP Partner Code",
+                    "type": "string",
+                    "description": "The partner (exchange) through which Adobe Advertising Cloud receives the inventory opportunity.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:siteId": {
+                    "title": "Site ID",
+                    "type": "string",
+                    "description": "Identifier for the web site where ad impression was served.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:costCurrency": {
+                    "title": "Cost Currency",
+                    "type": "string",
+                    "examples": [
+                        "USD",
+                        "EUR"
+                    ],
+                    "pattern": "^[A-Z]{3}$",
+                    "description": "The ISO 4217 currency code used to pay partner for in ad opportunity.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:inventorySourceId": {
+                    "title": "Inventory Source ID",
+                    "type": "string",
+                    "description": "The ID of the Adobe Advertising Cloud inventory source this opportunity was delivered on.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:segment": {
+                    "title": "Segmentation Details",
+                    "$refkept": "https://ns.adobe.com/experience/adcloud/segment",
+                    "description": "Details associated with user segmentation rules."
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/inventory"
+        }
+    ],
+    "meta:xdmType": "object"
+}

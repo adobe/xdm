@@ -1,0 +1,39 @@
+{
+    "$id": "context/profilestitch",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Profile stitch",
+    "type": "object",
+    "description": "Details about the IDs that were joined by profile stitching.",
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "meta:extensible": true,
+    "properties": {
+        "identityMap": {
+            "type": "object",
+            "meta:xdmType": "map",
+            "additionalProperties": {
+                "type": "array",
+                "meta:xdmType": "array",
+                "items": {
+                    "$ref": "context/identityitem"
+                }
+            },
+            "meta:xdmField": "xdm:identityMap"
+        },
+        "profileStitchID": {
+            "title": "Profile stitch ID",
+            "$ref": "context/profilestitchidentity",
+            "description": "The identity of the segment or snapshot definition in with the domain of the specific system that processes that type of segment.",
+            "meta:xdmField": "xdm:profileStitchID"
+        },
+        "version": {
+            "title": "Version",
+            "type": "string",
+            "description": "The version of the profile stitch definition used and is useful for debugging.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:version"
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/profileStitch",
+    "meta:altId": "_xdm.context.profilestitch"
+}

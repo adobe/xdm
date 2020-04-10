@@ -1,0 +1,137 @@
+{
+    "$id": "context/media-timed-asset-reference.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Timed media primary asset reference",
+    "type": "object",
+    "meta:status": "experimental",
+    "meta:extensible": true,
+    "description": "Asset information about the main content that was played, but present on all ads and chapters that occur during the content playback.",
+    "meta:xdmType": "object",
+    "properties": {
+        "_id": {
+            "title": "Asset ID",
+            "type": "string",
+            "format": "uri-reference",
+            "description": "Identifier of the content, which can be used to tie back to other industry or CMS IDs.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "@id",
+            "tagNumber": 1
+        },
+        "_dc": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "title": {
+                    "title": "Media name",
+                    "type": "string",
+                    "description": "The friendly, human-readable name of the timed media asset.",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "dc:title",
+                    "tagNumber": 1
+                }
+            },
+            "tagNumber": 2
+        },
+        "_xmpDM": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "duration": {
+                    "title": "Media length runtime",
+                    "type": "integer",
+                    "description": "Length of primary media asset in seconds.",
+                    "meta:xdmType": "int",
+                    "meta:xdmField": "xmpDM:duration",
+                    "tagNumber": 1
+                }
+            },
+            "tagNumber": 3
+        },
+        "showType": {
+            "title": "Show type",
+            "type": "string",
+            "description": "The type of content for example, trailer or full episode.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:showType",
+            "tagNumber": 4
+        },
+        "_iptc4xmpExt": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "Series": {
+                    "title": "Series",
+                    "description": "The series the show belongs to.",
+                    "$ref": "../external/iptc/series.schema.json",
+                    "meta:xdmField": "iptc4xmpExt:Series",
+                    "tagNumber": 1
+                },
+                "Season": {
+                    "title": "Season",
+                    "description": "The season the show belongs to.",
+                    "$ref": "../external/iptc/season.schema.json",
+                    "meta:xdmField": "iptc4xmpExt:Season",
+                    "tagNumber": 2
+                },
+                "Episode": {
+                    "title": "Episode",
+                    "description": "The episode the show belongs to.",
+                    "$ref": "../external/iptc/episode.schema.json",
+                    "meta:xdmField": "iptc4xmpExt:Episode",
+                    "tagNumber": 3
+                },
+                "Genre": {
+                    "title": "Genre",
+                    "description": "Type or grouping of content as defined by content producer.",
+                    "type": "array",
+                    "meta:xdmType": "array",
+                    "items": {
+                        "type": "string",
+                        "meta:xdmType": "string",
+                        "tagNumber": 1
+                    },
+                    "meta:xdmField": "iptc4xmpExt:Genre",
+                    "tagNumber": 4
+                },
+                "Rating": {
+                    "title": "Content rating",
+                    "description": "The rating as defined by Parental Guidelines.",
+                    "type": "array",
+                    "meta:xdmType": "array",
+                    "items": {
+                        "$ref": "../external/iptc/rating.schema.json",
+                        "tagNumber": 1
+                    },
+                    "meta:xdmField": "iptc4xmpExt:Rating",
+                    "tagNumber": 5
+                },
+                "Creator": {
+                    "title": "Creator",
+                    "description": "Party or parties including person or organization which created the video, refinement by the role attribute.",
+                    "type": "array",
+                    "meta:xdmType": "array",
+                    "items": {
+                        "$ref": "../external/iptc/creator.schema.json",
+                        "tagNumber": 1
+                    },
+                    "meta:xdmField": "iptc4xmpExt:Creator",
+                    "tagNumber": 6
+                }
+            },
+            "tagNumber": 5
+        },
+        "streamFormat": {
+            "title": "Stream format",
+            "type": "string",
+            "description": "Free-form format of the stream for example, short or long.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:streamFormat",
+            "tagNumber": 6
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/media-timed-asset-reference",
+    "meta:altId": "_xdm.context.media-timed-asset-reference",
+    "required": [
+        "_id"
+    ]
+}

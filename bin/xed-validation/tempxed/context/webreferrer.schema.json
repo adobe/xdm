@@ -1,0 +1,38 @@
+{
+    "$id": "context/webreferrer",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Web referrer",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "",
+    "meta:status": "stabilizing",
+    "meta:xdmType": "object",
+    "properties": {
+        "URL": {
+            "title": "URL",
+            "type": "string",
+            "description": "The referrer URL.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:URL"
+        },
+        "type": {
+            "title": "Type",
+            "type": "string",
+            "description": "The referrer type.",
+            "enum": [
+                "internal",
+                "external",
+                "search_engine",
+                "typed_bookmarked",
+                "email",
+                "social",
+                "unknown",
+                "usenet"
+            ],
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:type"
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/webreferrer",
+    "meta:altId": "_xdm.context.webreferrer"
+}

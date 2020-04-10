@@ -1,0 +1,51 @@
+{
+    "$id": "https://ns.adobe.com/xdm/data/viewablethirdquartiles",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Viewable-third-quartiles",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "The advertising/viewability metric `viewable-third-quartiles` describes whether at least 50% of the video's pixels were visible at the third quartile of play.",
+    "definitions": {
+        "metricdefinition": {
+            "properties": {
+                "@id": {
+                    "type": "string",
+                    "const": "xdm:viewableThirdQuartiles",
+                    "description": "The unique identifier of this metric.",
+                    "meta:xdmType": "string"
+                },
+                "schema:name": {
+                    "type": "string",
+                    "const": "advertising/viewability metric: viewableThirdQuartiles",
+                    "description": "The advertising/viewability metric `viewable-third-quartiles` describes whether at least 50% of the video's pixels were visible at the third quartile of play.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:measurement": {
+                    "type": "string",
+                    "description": "How to take measures of this metric.",
+                    "const": "count",
+                    "meta:xdmType": "string"
+                },
+                "xdm:unit": {
+                    "const": null
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/metricdefinition"
+        },
+        {
+            "$ref": "xdm/data/metricdefinition.schema.json"
+        }
+    ],
+    "required": [
+        "@id",
+        "schema:name",
+        "xdm:measurement",
+        "xdm:unit"
+    ],
+    "meta:status": "stabilizing",
+    "meta:xdmType": "object"
+}

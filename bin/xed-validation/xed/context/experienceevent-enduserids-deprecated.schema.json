@@ -1,0 +1,23 @@
+{
+    "$id": "context/experienceevent-enduserids-deprecated.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "ExperienceEvent endUserIDs (deprecated)",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "description": "ExperienceEvent endUserIDs (deprecated).",
+    "meta:status": "deprecated",
+    "meta:xdmType": "object",
+    "properties": {
+        "endUserIDs": {
+            "meta:status": "deprecated",
+            "title": "End-User IDs",
+            "$ref": "../context/enduserids.schema.json",
+            "description": "Condensed, normalized encapsulation of all end-user identifiers. Deprecated, use `xdm:identityMap` instead.",
+            "meta:xdmField": "xdm:endUserIDs",
+            "tagNumber": 1
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-enduserids-deprecated",
+    "meta:altId": "_xdm.context.experienceevent-enduserids-deprecated"
+}

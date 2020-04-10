@@ -1,0 +1,68 @@
+{
+    "$id": "data/progress10.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "10% Progress Marker",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "Indicates that the playhead passed the 10% marker of media based on stream length. The marker is only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.",
+    "meta:status": "stabilizing",
+    "meta:xdmType": "object",
+    "properties": {
+        "_id": {
+            "type": "string",
+            "const": "xdm:progress10",
+            "description": "The unique identifier of this metric.",
+            "meta:xdmType": "string",
+            "format": "uri-reference",
+            "meta:xdmField": "@id",
+            "tagNumber": 1
+        },
+        "_schema": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "const": "metric: progress10",
+                    "description": "Indicates that the playhead passed the 10% marker of media based on stream length. The marker is only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "schema:name",
+                    "tagNumber": 1
+                }
+            },
+            "required": [
+                "name"
+            ],
+            "tagNumber": 2
+        },
+        "measurement": {
+            "type": "string",
+            "description": "How to take measures of this metric.",
+            "const": "count",
+            "meta:xdmType": "string",
+            "examples": [
+                "distance",
+                "time",
+                "price",
+                "count"
+            ],
+            "meta:xdmField": "xdm:measurement",
+            "tagNumber": 3
+        },
+        "unit": {
+            "const": "",
+            "type": "string",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:unit",
+            "tagNumber": 4
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/data/progress10",
+    "meta:altId": "_xdm.data.progress10",
+    "required": [
+        "_id",
+        "_schema",
+        "measurement",
+        "unit"
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "$id": "https://ns.adobe.com/xdm/context/opportunity",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "XDM Business Opportunity",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "description": "An XDM Business Opportunity.",
+    "definitions": {
+        "opportunity": {
+            "properties": {
+                "xdm:opportuntyID": {
+                    "title": "Opportunity ID",
+                    "description": "Unique identifer of the opportunity",
+                    "type": "string",
+                    "meta:xdmType": "string"
+                },
+                "xdm:opportunityType": {
+                    "title": "Opportunity Type",
+                    "description": "Type of Opportunity.",
+                    "type": "string",
+                    "meta:xdmType": "string"
+                },
+                "xdm:accountID": {
+                    "title": "Account Id",
+                    "description": "Account identifer reference",
+                    "type": "string",
+                    "meta:xdmType": "string"
+                },
+                "xdm:campaignID": {
+                    "title": "Campaign Id",
+                    "description": "Campaign unique identifer reference",
+                    "type": "string",
+                    "meta:xdmType": "string"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "xdm/data/record.schema.json"
+        },
+        {
+            "$ref": "#/definitions/opportunity"
+        },
+        {
+            "$ref": "xdm/common/external-source-system-audit-details.schema.json"
+        }
+    ],
+    "required": [
+        "xdm:opportunityID",
+        "xdm:opportunityType",
+        "xdm:accountID"
+    ],
+    "meta:status": "experimental",
+    "meta:xdmType": "object"
+}

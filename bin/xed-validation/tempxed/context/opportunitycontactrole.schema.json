@@ -1,0 +1,63 @@
+{
+    "$id": "context/opportunitycontactrole",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "B2B Opportunity Contact Role",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "Opportunity Contact Role",
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "opportunityContactID": {
+            "title": "opportunity ContactID",
+            "description": "Technical PK for Opportunity Contact.",
+            "type": "string",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:opportunityContactID"
+        },
+        "opportunityID": {
+            "title": "Opportunity ID",
+            "description": "Opportunity ID unique identifier.",
+            "type": "string",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:opportunityID"
+        },
+        "contactID": {
+            "title": "Contact ID",
+            "description": "Contact ID unique identifier.",
+            "type": "string",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:contactID"
+        },
+        "roleID": {
+            "title": "Contact Role Id",
+            "description": "Contact role unique identifier.",
+            "type": "string",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:roleID"
+        },
+        "role": {
+            "title": "Contact Role",
+            "description": "Role of the opportunity contact like finance , sales .",
+            "type": "string",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:role"
+        },
+        "primary": {
+            "title": "Primary",
+            "description": "A flag to signify that this is the primary opportunity contact",
+            "type": "boolean",
+            "meta:xdmType": "boolean",
+            "meta:xdmField": "xdm:primary"
+        },
+        "deleted": {
+            "title": "Deleted",
+            "description": "A flag to signify that this opportunity is in deleted state.",
+            "type": "boolean",
+            "meta:xdmType": "boolean",
+            "meta:xdmField": "xdm:deleted"
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/opportunitycontactrole",
+    "meta:altId": "_xdm.context.opportunitycontactrole"
+}

@@ -1,0 +1,138 @@
+{
+    "$id": "context/segmentdefinition",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Segment definition",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "description": "This is the base class for a segment definition which includes required fields like identity of a segment and name of segment. Segment definitions coming from various system can use this class to build Segment Definition XDM schema.",
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "identityMap": {
+            "type": "object",
+            "meta:xdmType": "map",
+            "additionalProperties": {
+                "type": "array",
+                "meta:xdmType": "array",
+                "items": {
+                    "$ref": "context/identityitem"
+                }
+            },
+            "meta:xdmField": "xdm:identityMap"
+        },
+        "repositoryCreatedBy": {
+            "title": "Created by user identifier",
+            "type": "string",
+            "description": "User ID of who created the record.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:repositoryCreatedBy"
+        },
+        "repositoryLastModifiedBy": {
+            "title": "Modified by user identifier",
+            "type": "string",
+            "description": "User ID of who last modified the record. At creation time, `modifiedByUser` is set as `createdByUser`.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:repositoryLastModifiedBy"
+        },
+        "createdByBatchID": {
+            "title": "Created by batch identifier",
+            "type": "string",
+            "format": "uri-reference",
+            "description": "The dataset files in Catalog which has been originating the creation of the record.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:createdByBatchID"
+        },
+        "modifiedByBatchID": {
+            "title": "Modified by batch identifier",
+            "type": "string",
+            "format": "uri-reference",
+            "description": "The last dataset files in Catalog which has modified the record. At creation time, `modifiedByBatchID` is set as `createdByBatchID`.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:modifiedByBatchID"
+        },
+        "_repo": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "createDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "meta:immutable": true,
+                    "meta:usereditable": false,
+                    "examples": [
+                        "2004-10-23T12:00:00-06:00"
+                    ],
+                    "description": "The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The date time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+                    "meta:xdmType": "date-time",
+                    "meta:xdmField": "repo:createDate"
+                },
+                "modifyDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "meta:usereditable": false,
+                    "examples": [
+                        "2004-10-23T12:00:00-06:00"
+                    ],
+                    "description": "The server date and time when the resource was last modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The date time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+                    "meta:xdmType": "date-time",
+                    "meta:xdmField": "repo:modifyDate"
+                }
+            }
+        },
+        "_id": {
+            "title": "Identifier",
+            "type": "string",
+            "format": "uri-reference",
+            "description": "A unique identifier for the record.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "@id"
+        },
+        "segmentIdentity": {
+            "title": "Segment identity",
+            "$ref": "context/segmentidentity",
+            "description": "Identity of the segment.",
+            "meta:status": "deprecated",
+            "meta:xdmField": "xdm:segmentIdentity"
+        },
+        "segmentName": {
+            "title": "Segment name",
+            "type": "string",
+            "description": "Name of the segment.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:segmentName"
+        },
+        "description": {
+            "title": "Segment description",
+            "type": "string",
+            "description": "Description of the segment.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:description"
+        },
+        "version": {
+            "title": "Segment version",
+            "type": "string",
+            "description": "Version of the segment.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:version"
+        },
+        "segmentStatus": {
+            "type": "string",
+            "title": "Segment status",
+            "description": "Current status of segment from external system normalized to active or inactive.",
+            "enum": [
+                "ACTIVE",
+                "INACTIVE",
+                "DELETED"
+            ],
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:segmentStatus"
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/segmentdefinition",
+    "meta:altId": "_xdm.context.segmentdefinition",
+    "required": [
+        "identityMap",
+        "segmentName"
+    ]
+}

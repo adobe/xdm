@@ -1,0 +1,39 @@
+{
+    "$id": "http://www.iptc.org/episode",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Season",
+    "type": "object",
+    "description": "The season the show belongs to. Based on [www.iptc.org](https://www.iptc.org/std/videometadatahub/recommendation/pre-versions/IPTC-VideoMetadataHub-props-Rec_1.1.html)",
+    "definitions": {
+        "season": {
+            "properties": {
+                "iptc4xmpExt:Name": {
+                    "title": "Season Name",
+                    "type": "string",
+                    "description": "Name of the season.",
+                    "meta:xdmType": "string"
+                },
+                "iptc4xmpExt:Number": {
+                    "title": "Season Number",
+                    "type": "number",
+                    "description": "Number of the season.",
+                    "meta:xdmType": "number"
+                },
+                "iptc4xmpExt:Identifier": {
+                    "title": "Season Identifier",
+                    "type": "string",
+                    "format": "uri",
+                    "description": "Identifier of the season.",
+                    "meta:xdmType": "string"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/season"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmType": "object"
+}

@@ -1,0 +1,71 @@
+{
+    "$id": "https://ns.adobe.com/xdm/adcloud/searchads/transactionproperties",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Advertising Transaction Property",
+    "type": "object",
+    "meta:extensible": false,
+    "meta:abstract": false,
+    "meta:auditable": true,
+    "description": "Advertising Transaction schemas includes metadata that describes a transaction property setup by Advertiser",
+    "definitions": {
+        "searchads-transactionproperties": {
+            "properties": {
+                "searchads:propertyName": {
+                    "title": "Name of the property",
+                    "type": "string",
+                    "description": "Property Name.",
+                    "meta:xdmType": "string"
+                },
+                "searchads:propertyId": {
+                    "title": "Property Id",
+                    "type": "string",
+                    "description": "Property Id.",
+                    "meta:xdmType": "string"
+                },
+                "searchads:displayName": {
+                    "title": "Display Name",
+                    "type": "string",
+                    "description": "Display Name.",
+                    "meta:xdmType": "string"
+                },
+                "searchads:revenueType": {
+                    "title": "Revenue Type",
+                    "type": "string",
+                    "description": "Revenue Type.",
+                    "meta:xdmType": "string"
+                },
+                "searchads:createDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "examples": [
+                        "2004-10-23T12:00:00-06:00"
+                    ],
+                    "description": "The date and time when the transaction was created. An example form is \"2004-10-23T12:00:00-06:00\".",
+                    "meta:xdmType": "date-time"
+                },
+                "searchads:modifyDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "examples": [
+                        "2004-10-23T12:00:00-06:00"
+                    ],
+                    "description": "The date and time when the transaction was last modified. An example form is \"2004-10-23T12:00:00-06:00\".",
+                    "meta:xdmType": "date-time"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "xdm/data/record.schema.json"
+        },
+        {
+            "$ref": "xdm/common/auditable.schema.json"
+        },
+        {
+            "$ref": "#/definitions/searchads-transactionproperties"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmType": "object"
+}

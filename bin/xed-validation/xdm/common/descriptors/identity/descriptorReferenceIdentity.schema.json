@@ -1,0 +1,41 @@
+{
+    "$id": "https://ns.adobe.com/xdm/common/descriptors/descriptorReferenceIdentity",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Identity Reference Descriptor",
+    "meta:extensible": false,
+    "meta:abstract": false,
+    "type": "object",
+    "description": "Used to assign a namespace that will be used to derive a relationship.",
+    "definitions": {
+        "descriptorReferenceIdentity": {
+            "properties": {
+                "@type": {
+                    "title": "Type",
+                    "type": "string",
+                    "const": "xdm:descriptorReferenceIdentity",
+                    "meta:xdmType": "string"
+                },
+                "xdm:identityNamespace": {
+                    "title": "Identity Namespace",
+                    "type": "string",
+                    "description": "The namespace code defined in identity system.",
+                    "meta:xdmType": "string"
+                }
+            },
+            "required": [
+                "xdm:sourceProperty",
+                "xdm:identityNamespace"
+            ]
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "xdm/common/descriptors/schemadescriptor.schema.json#/definitions/descriptor"
+        },
+        {
+            "$ref": "#/definitions/descriptorReferenceIdentity"
+        }
+    ],
+    "meta:status": "stabilizing",
+    "meta:xdmType": "object"
+}

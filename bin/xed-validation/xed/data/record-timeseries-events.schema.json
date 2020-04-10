@@ -1,0 +1,27 @@
+{
+    "$id": "data/record-timeseries-events.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Time-series Extension for Record Data",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "description": "Time-series extension for record data.",
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "timeSeriesEvents": {
+            "title": "Time-series Events",
+            "description": "List of time-series based events that relate to schemas based on record.",
+            "type": "array",
+            "meta:xdmType": "array",
+            "items": {
+                "$ref": "../data/time-series.schema.json",
+                "tagNumber": 1
+            },
+            "meta:xdmField": "xdm:timeSeriesEvents",
+            "tagNumber": 1
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/data/record-timeseries-events",
+    "meta:altId": "_xdm.data.record-timeseries-events"
+}

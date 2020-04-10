@@ -1,0 +1,35 @@
+{
+    "$id": "context/marketing",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Marketing",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "The information related to marketing activities that are active with the touchpoint.",
+    "meta:status": "stabilizing",
+    "meta:xdmType": "object",
+    "properties": {
+        "trackingCode": {
+            "title": "Tracking code",
+            "type": "string",
+            "description": "Tracking code that can be used to identify the marketing campaign the event is associated with.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:trackingCode"
+        },
+        "campaignName": {
+            "title": "Campaign name",
+            "type": "string",
+            "description": "Name of the campaign used to identify marketing campaign like '50%_DISCOUNT_USA' or '50%_DISCOUNT_ASIA'.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:campaignName"
+        },
+        "campaignGroup": {
+            "title": "Campaign group",
+            "type": "string",
+            "description": "Name of the campaign group where multiple campaigns are grouped together like '50%_DISCOUNT'.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:campaignGroup"
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/marketing",
+    "meta:altId": "_xdm.context.marketing"
+}

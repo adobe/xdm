@@ -1,0 +1,75 @@
+{
+    "$id": "common/external-source-system-audit.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "External Source System Audit Attributes",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "External Source System Audit fields.",
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "createdBy": {
+            "title": "Created By",
+            "description": "Name of the user who created this record",
+            "type": "string",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:createdBy",
+            "tagNumber": 1
+        },
+        "createdDate": {
+            "title": "Created Date",
+            "description": "Date when this record was created.",
+            "type": "string",
+            "format": "date-time",
+            "meta:xdmType": "date-time",
+            "meta:xdmField": "xdm:createdDate",
+            "tagNumber": 2
+        },
+        "lastUpdatedBy": {
+            "title": "Last Updated By",
+            "description": "User who last modified this record.",
+            "type": "string",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:lastUpdatedBy",
+            "tagNumber": 3
+        },
+        "lastUpdatedDate": {
+            "title": "Last Updated Date",
+            "description": "Date when this record was last modofied.",
+            "type": "string",
+            "format": "date-time",
+            "meta:xdmType": "date-time",
+            "meta:xdmField": "xdm:lastUpdatedDate",
+            "tagNumber": 4
+        },
+        "lastActivityDate": {
+            "title": "Last Activity Date",
+            "description": "Last activity date.",
+            "type": "string",
+            "format": "date-time",
+            "meta:xdmType": "date-time",
+            "meta:xdmField": "xdm:lastActivityDate",
+            "tagNumber": 5
+        },
+        "lastReferencedDate": {
+            "title": "Last Referenced Date",
+            "description": "Last referenced date.",
+            "type": "string",
+            "format": "date-time",
+            "meta:xdmType": "date-time",
+            "meta:xdmField": "xdm:lastReferencedDate",
+            "tagNumber": 6
+        },
+        "lastViewedDate": {
+            "title": "Last Viewed Date",
+            "description": "Last viewed date.",
+            "type": "string",
+            "format": "date-time",
+            "meta:xdmType": "date-time",
+            "meta:xdmField": "xdm:lastViewedDate",
+            "tagNumber": 7
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/common/external-source-system-audit",
+    "meta:altId": "_xdm.common.external-source-system-audit"
+}

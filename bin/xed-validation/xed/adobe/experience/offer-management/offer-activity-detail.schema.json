@@ -1,0 +1,94 @@
+{
+    "$id": "adobe/experience/offer-management/offer-activity-detail.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Offer Activity Detail",
+    "type": "object",
+    "meta:abstract": true,
+    "meta:extensible": true,
+    "description": "Offer activity detail is used to capture the attributes of an offer activity in a proposition or response.",
+    "meta:xdmType": "object",
+    "properties": {
+        "placement": {
+            "title": "Offer Placement",
+            "type": "string",
+            "format": "uri-reference",
+            "description": "The reference to an offer placement instance. Offer placements are used by offer activities to limit the offer selection to those offers that have a representation that complies with the offer placement restrictions. The value is the URI (@id) of the offer placement that is referenced. See schema https://ns.adobe.com/experience/offer-management/offer-placement",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:placement",
+            "tagNumber": 1
+        },
+        "filter": {
+            "title": "Offer Filter",
+            "type": "string",
+            "format": "uri-reference",
+            "description": "The reference to a filter that is applied to the inventory when a decisioning is made the context of this activity. The value is the URI (@id) of the offer filter that is referenced. See schema https://ns.adobe.com/experience/offer-management/offer-filter",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:filter",
+            "tagNumber": 2
+        },
+        "fallback": {
+            "title": "Fallback Offer",
+            "type": "string",
+            "format": "uri-reference",
+            "description": "The reference to a fallback offer that is used when decisioning in the context of this activity does not qualify any of the offers specified in the fallback offer. The value is the URI (@id) of the fallback offer that is referenced.  See schema https://ns.adobe.com/experience/offer-management/fallback-offer",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:fallback",
+            "tagNumber": 3
+        },
+        "id": {
+            "title": "Activity Identifier",
+            "type": "string",
+            "format": "uri-reference",
+            "description": "A unique, immutable identifier for the decision activity.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:id",
+            "tagNumber": 4
+        },
+        "_repo": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "etag": {
+                    "title": "Activity ETag",
+                    "type": "string",
+                    "description": "The revision that the decision activity object was at when the snapshot was taken.",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "repo:etag",
+                    "tagNumber": 1
+                }
+            },
+            "tagNumber": 5
+        },
+        "name": {
+            "title": "Activity Name",
+            "type": "string",
+            "description": "Activity name. The name is displayed in various user interfaces.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:name",
+            "tagNumber": 6
+        },
+        "startTime": {
+            "title": "Activity Start Date and Time",
+            "type": "string",
+            "format": "date-time",
+            "description": "Activity start date and end time. Property has the semantic of schema.org's 'startTime' property defined on http://schema.org/Action",
+            "meta:xdmType": "date-time",
+            "meta:xdmField": "xdm:startTime",
+            "tagNumber": 7
+        },
+        "endTime": {
+            "title": "Activity End Date and Time",
+            "type": "string",
+            "format": "date-time",
+            "description": "Activity end date and end time. Property has the semantic of schema.org's 'endTime' property defined on http://schema.org/Action",
+            "meta:xdmType": "date-time",
+            "meta:xdmField": "xdm:endTime",
+            "tagNumber": 8
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/offer-management/offer-activity-detail",
+    "meta:altId": "_experience.offer-management.offer-activity-detail",
+    "required": [
+        "id"
+    ]
+}

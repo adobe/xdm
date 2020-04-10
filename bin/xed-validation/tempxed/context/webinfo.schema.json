@@ -1,0 +1,32 @@
+{
+    "$id": "context/webinfo",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Web information",
+    "type": "object",
+    "meta:status": "stabilizing",
+    "meta:extensible": true,
+    "description": "",
+    "meta:xdmType": "object",
+    "properties": {
+        "webPageDetails": {
+            "title": "Web page details",
+            "$ref": "context/webpagedetails",
+            "description": "Details about the web page where the web interaction occurred.",
+            "meta:xdmField": "xdm:webPageDetails"
+        },
+        "webInteraction": {
+            "title": "Web interaction",
+            "$ref": "context/webinteraction",
+            "description": "Details about the web link or URL that corresponds to where the interaction occurred.",
+            "meta:xdmField": "xdm:webInteraction"
+        },
+        "webReferrer": {
+            "title": "Web referrer",
+            "$ref": "context/webreferrer",
+            "description": "The referrer of a web interaction, which is the URL a visitor came from immediately before the current web interaction was recorded.",
+            "meta:xdmField": "xdm:webReferrer"
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/webinfo",
+    "meta:altId": "_xdm.context.webinfo"
+}

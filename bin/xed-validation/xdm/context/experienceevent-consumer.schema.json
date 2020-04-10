@@ -1,0 +1,44 @@
+{
+    "$id": "https://ns.adobe.com/xdm/context/experienceevent-consumer",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Consumer ExperienceEvent mixin",
+    "type": "object",
+    "description": "This mixin groups a set of standard fields to describe the behavior of an individual as it relates to digital content consumption (web, mobile app) as well as online or off-line purchases. Using this standard mixin allows data producers and consumers to have a consistent representation of individual behavior across Experience Platform.",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "definitions": {},
+    "allOf": [
+        {
+            "$ref": "xdm/context/experienceevent-application.schema.json"
+        },
+        {
+            "$ref": "xdm/context/experienceevent-channel.schema.json"
+        },
+        {
+            "$ref": "xdm/context/experienceevent-environment-details.schema.json"
+        },
+        {
+            "$ref": "xdm/context/experienceevent-marketing.schema.json"
+        },
+        {
+            "$ref": "xdm/context/experienceevent-media.schema.json"
+        },
+        {
+            "$ref": "xdm/context/experienceevent-search.schema.json"
+        },
+        {
+            "$ref": "xdm/context/experienceevent-segmentmembership.schema.json"
+        },
+        {
+            "$ref": "xdm/context/experienceevent-technical-details.schema.json"
+        },
+        {
+            "$ref": "xdm/context/experienceevent-web.schema.json"
+        },
+        {
+            "$ref": "xdm/context/experienceevent-commerce.schema.json"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmType": "object"
+}

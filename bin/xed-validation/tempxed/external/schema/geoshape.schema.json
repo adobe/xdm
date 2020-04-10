@@ -1,0 +1,76 @@
+{
+    "$id": "external/schema/geoshape",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Geo Shape",
+    "type": "object",
+    "description": "The geographic shape of a place. Based on [schema.org](http://schema.org/GeoShape).",
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "_id": {
+            "title": "Shape ID",
+            "type": "string",
+            "description": "The unique identifier of the shape.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "@id"
+        },
+        "_schema": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "description": {
+                    "title": "Description",
+                    "type": "string",
+                    "description": "A description of what the shape is defining.",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "schema:description"
+                },
+                "polygon": {
+                    "title": "Polygon",
+                    "type": "array",
+                    "description": "A series of four or more coordinates where the first and final coordinates are identical. In schema.org, this is a plain text. In XDM, it is a structured array instead.",
+                    "minItems": 4,
+                    "meta:xdmType": "array",
+                    "items": {
+                        "$ref": "external/schema/geocoordinates"
+                    },
+                    "meta:xdmField": "schema:polygon"
+                },
+                "circle": {
+                    "title": "Circle",
+                    "$ref": "external/schema/geocircle",
+                    "description": "A circular region with a specific radius centered on a geographic coordinate.",
+                    "meta:xdmField": "schema:circle"
+                },
+                "box": {
+                    "title": "Box",
+                    "type": "array",
+                    "description": "The area enclosed by the rectangle formed by two coordinates. The first coordinate is the lower corner and the second coordinate is the upper corner of a rectangle.",
+                    "minItems": 2,
+                    "maxItems": 2,
+                    "meta:xdmType": "array",
+                    "items": {
+                        "$ref": "external/schema/geocoordinates"
+                    },
+                    "meta:xdmField": "schema:box"
+                },
+                "elevation": {
+                    "title": "Elevation",
+                    "type": "number",
+                    "description": "The specific or minimum elevation of the shape. This value conforms to the [WGS84](http://gisgeography.com/wgs84-world-geodetic-system/) datum and is measured in meters. In combination with `ceiling`, this property can be used to express a three-dimensional bounding box for a location.",
+                    "meta:xdmType": "number",
+                    "meta:xdmField": "schema:elevation"
+                }
+            }
+        },
+        "ceiling": {
+            "title": "Ceiling",
+            "type": "number",
+            "description": "The maximum elevation of the shape. Only valid when used in combination with `elevation`. This value conforms to the [WGS84](http://gisgeography.com/wgs84-world-geodetic-system/) datum and is measured in meters. This value is not part of the schema.org spec. In combination with `elevation`, this property can be used to express a three-dimensional bounding box for a location.",
+            "meta:xdmType": "number",
+            "meta:xdmField": "xdm:ceiling"
+        }
+    },
+    "meta:xdmId": "http://schema.org/GeoShape",
+    "meta:altId": "_xdm.external.schema.geoshape"
+}

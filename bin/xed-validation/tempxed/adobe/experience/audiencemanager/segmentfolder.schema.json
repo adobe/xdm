@@ -1,0 +1,77 @@
+{
+    "$id": "adobe/experience/audiencemanager/segmentfolder",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Adobe Audience Manager Segment Folder Class",
+    "type": "object",
+    "description": "This Adobe Audience Manager-specific folder definition helps organize segment definitions into a hierarchy. This includes required fields like folder identity and folder name. The segment definition class requires use of the 'Adobe Audience Manager Segment Definition Mixin' in order to point to the parent folder, which is an instance of this class.",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "_experience": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "audiencemanager": {
+                    "type": "object",
+                    "meta:xdmType": "object",
+                    "properties": {
+                        "segmentFolderName": {
+                            "title": "Segment folder name",
+                            "type": "string",
+                            "description": "Name of the segment folder",
+                            "meta:xdmType": "string",
+                            "meta:xdmField": "https://ns.adobe.com/experience/audiencemanager/segmentFolderName"
+                        },
+                        "segmentFolderStatus": {
+                            "type": "string",
+                            "title": "Segment folder status",
+                            "description": "Current status of segment folder",
+                            "meta:xdmType": "string",
+                            "meta:xdmField": "https://ns.adobe.com/experience/audiencemanager/segmentFolderStatus"
+                        },
+                        "segmentParentFolderIdentity": {
+                            "title": "Parent folder identity",
+                            "$ref": "context/identity",
+                            "description": "Identity of the parent folder of current folder",
+                            "meta:xdmField": "https://ns.adobe.com/experience/audiencemanager/segmentParentFolderIdentity"
+                        }
+                    },
+                    "required": [
+                        "segmentFolderName"
+                    ]
+                }
+            },
+            "required": [
+                "audiencemanager"
+            ]
+        },
+        "identityMap": {
+            "type": "object",
+            "meta:xdmType": "map",
+            "additionalProperties": {
+                "type": "array",
+                "meta:xdmType": "array",
+                "items": {
+                    "$ref": "context/identityitem"
+                }
+            },
+            "meta:xdmField": "xdm:identityMap"
+        },
+        "_id": {
+            "title": "Identifier",
+            "type": "string",
+            "format": "uri-reference",
+            "description": "A unique identifier for the record.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "@id"
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/audiencemanager/segmentfolder",
+    "meta:altId": "_experience.audiencemanager.segmentfolder",
+    "required": [
+        "identityMap",
+        "_experience"
+    ]
+}

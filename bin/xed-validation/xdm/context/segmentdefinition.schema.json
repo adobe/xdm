@@ -1,0 +1,70 @@
+{
+    "$id": "https://ns.adobe.com/xdm/context/segmentdefinition",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Segment definition",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "description": "This is the base class for a segment definition which includes required fields like identity of a segment and name of segment. Segment definitions coming from various system can use this class to build Segment Definition XDM schema.",
+    "definitions": {
+        "segmentdefinition": {
+            "properties": {
+                "xdm:segmentIdentity": {
+                    "title": "Segment identity",
+                    "$refkept": "https://ns.adobe.com/xdm/context/segmentidentity",
+                    "description": "Identity of the segment.",
+                    "meta:status": "deprecated"
+                },
+                "xdm:segmentName": {
+                    "title": "Segment name",
+                    "type": "string",
+                    "description": "Name of the segment.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:description": {
+                    "title": "Segment description",
+                    "type": "string",
+                    "description": "Description of the segment.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:version": {
+                    "title": "Segment version",
+                    "type": "string",
+                    "description": "Version of the segment.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:segmentStatus": {
+                    "type": "string",
+                    "title": "Segment status",
+                    "description": "Current status of segment from external system normalized to active or inactive.",
+                    "enum": [
+                        "ACTIVE",
+                        "INACTIVE",
+                        "DELETED"
+                    ],
+                    "meta:xdmType": "string"
+                }
+            }
+        }
+    },
+    "required": [
+        "xdm:identityMap",
+        "xdm:segmentName"
+    ],
+    "allOf": [
+        {
+            "$ref": "xdm/context/identitymap.schema.json"
+        },
+        {
+            "$ref": "xdm/common/auditable.schema.json"
+        },
+        {
+            "$ref": "xdm/data/record.schema.json"
+        },
+        {
+            "$ref": "#/definitions/segmentdefinition"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmType": "object"
+}

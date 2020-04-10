@@ -1,0 +1,68 @@
+{
+    "$id": "data/stalls.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Stalls",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "The number of stall states that occurred during a playback session.",
+    "meta:status": "stabilizing",
+    "meta:xdmType": "object",
+    "properties": {
+        "_id": {
+            "type": "string",
+            "const": "xdm:stalls",
+            "description": "The unique identifier of this metric.",
+            "meta:xdmType": "string",
+            "format": "uri-reference",
+            "meta:xdmField": "@id",
+            "tagNumber": 1
+        },
+        "_schema": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "const": "metric: stalls",
+                    "description": "The number of stall states that occurred during a playback session.",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "schema:name",
+                    "tagNumber": 1
+                }
+            },
+            "required": [
+                "name"
+            ],
+            "tagNumber": 2
+        },
+        "measurement": {
+            "type": "string",
+            "description": "How to take measures of this metric.",
+            "const": "count",
+            "meta:xdmType": "string",
+            "examples": [
+                "distance",
+                "time",
+                "price",
+                "count"
+            ],
+            "meta:xdmField": "xdm:measurement",
+            "tagNumber": 3
+        },
+        "unit": {
+            "const": "",
+            "type": "string",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:unit",
+            "tagNumber": 4
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/data/stalls",
+    "meta:altId": "_xdm.data.stalls",
+    "required": [
+        "_id",
+        "_schema",
+        "measurement",
+        "unit"
+    ]
+}

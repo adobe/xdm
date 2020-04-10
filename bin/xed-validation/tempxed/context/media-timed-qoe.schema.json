@@ -1,0 +1,68 @@
+{
+    "$id": "context/media-timed-qoe",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Timed media quality of experience",
+    "type": "object",
+    "meta:status": "experimental",
+    "meta:extensible": true,
+    "description": "Timed media properties related to the content playback's quality of experience (QoE).",
+    "meta:xdmType": "object",
+    "properties": {
+        "errors": {
+            "title": "Errors",
+            "$ref": "data/measure",
+            "description": "The number of errors that were encountered during playback.",
+            "meta:xdmField": "xdm:errors"
+        },
+        "buffers": {
+            "title": "Buffers",
+            "$ref": "data/measure",
+            "description": "The number of buffer states that occurred during a playback session.",
+            "meta:xdmField": "xdm:buffers"
+        },
+        "bufferTime": {
+            "title": "Total buffer duration",
+            "$ref": "data/measure",
+            "description": "Describes the total amount of time in seconds, spent buffering.",
+            "meta:xdmField": "xdm:bufferTime"
+        },
+        "stalls": {
+            "title": "Stalls",
+            "$ref": "data/measure",
+            "description": "The number of stall states that occurred during a playback session.",
+            "meta:xdmField": "xdm:stalls"
+        },
+        "stallTime": {
+            "title": "Total stalling duration",
+            "$ref": "data/measure",
+            "description": "Describes the duration in seconds in which the playback was stalled during playback.",
+            "meta:xdmField": "xdm:stallTime"
+        },
+        "bitrateChanges": {
+            "title": "Bitrate changes",
+            "$ref": "data/measure",
+            "description": "The number of bitrate change events that occurred during a playback session.",
+            "meta:xdmField": "xdm:bitrateChanges"
+        },
+        "bitrateAverage": {
+            "title": "Average bitrate",
+            "$ref": "data/measure",
+            "description": "A weighted average of all bitrate values related to the play duration that occurred during a playback session.",
+            "meta:xdmField": "xdm:bitrateAverage"
+        },
+        "droppedFrames": {
+            "title": "Dropped frames",
+            "$ref": "data/measure",
+            "description": "The number of frames dropped during playback of the main content.",
+            "meta:xdmField": "xdm:droppedFrames"
+        },
+        "timeToStart": {
+            "title": "Time to start",
+            "$ref": "data/measure",
+            "description": "Describes the duration in seconds passed between video load and start.",
+            "meta:xdmField": "xdm:timeToStart"
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/media-timed-qoe",
+    "meta:altId": "_xdm.context.media-timed-qoe"
+}

@@ -1,0 +1,27 @@
+{
+    "$id": "https://ns.adobe.com/xdm/context/experienceevent-search",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "ExperienceEvent details for search",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "description": "This mixin is used to capture search-related information for an ExperienceEvent, such as search engine, paid search (boolean), keywords, and position.",
+    "definitions": {
+        "experienceevent-search": {
+            "properties": {
+                "xdm:search": {
+                    "title": "Search",
+                    "$refkept": "https://ns.adobe.com/xdm/context/search",
+                    "description": "The information related to web or mobile search."
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/experienceevent-search"
+        }
+    ],
+    "meta:status": "stabilizing",
+    "meta:xdmType": "object"
+}

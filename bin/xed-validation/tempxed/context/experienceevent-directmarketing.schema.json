@@ -1,0 +1,21 @@
+{
+    "$id": "context/experienceevent-directmarketing",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "ExperienceEvent direct marketing details",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "description": "This mixin is used to capture information regarding direct marketing details related to an ExperienceEvent. This includes opens, clicks, impressions, and unsubscribes.",
+    "meta:status": "stabilizing",
+    "meta:xdmType": "object",
+    "properties": {
+        "directMarketing": {
+            "title": "Direct marketing",
+            "$ref": "context/direct-marketing",
+            "description": "Events and properties related to direct and outbound marketing such as email, direct mail, texts, and in-app notifications.",
+            "meta:xdmField": "xdm:directMarketing"
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-directmarketing",
+    "meta:altId": "_xdm.context.experienceevent-directmarketing"
+}

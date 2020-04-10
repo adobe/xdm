@@ -1,0 +1,21 @@
+{
+    "$id": "context/experienceevent-web",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "ExperienceEvent web details",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "description": "This mixin is used to capture information regarding web details related to an ExperienceEvent, such as the interaction, page details, and referrer.",
+    "meta:status": "stabilizing",
+    "meta:xdmType": "object",
+    "properties": {
+        "web": {
+            "title": "Web",
+            "$ref": "context/webinfo",
+            "description": "The information related to web page and link of the ExperienceEvent.",
+            "meta:xdmField": "xdm:web"
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-web",
+    "meta:altId": "_xdm.context.experienceevent-web"
+}

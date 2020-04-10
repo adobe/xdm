@@ -1,0 +1,70 @@
+{
+    "$id": "http://schema.org/GeoShape",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Geo Shape",
+    "type": "object",
+    "description": "The geographic shape of a place. Based on [schema.org](http://schema.org/GeoShape).",
+    "definitions": {
+        "geoshape": {
+            "properties": {
+                "@id": {
+                    "title": "Shape ID",
+                    "type": "string",
+                    "description": "The unique identifier of the shape.",
+                    "meta:xdmType": "string"
+                },
+                "schema:description": {
+                    "title": "Description",
+                    "type": "string",
+                    "description": "A description of what the shape is defining.",
+                    "meta:xdmType": "string"
+                },
+                "schema:polygon": {
+                    "title": "Polygon",
+                    "type": "array",
+                    "items": {
+                        "$refkept": "http://schema.org/GeoCoordinates"
+                    },
+                    "description": "A series of four or more coordinates where the first and final coordinates are identical. In schema.org, this is a plain text. In XDM, it is a structured array instead.",
+                    "minItems": 4,
+                    "meta:xdmType": "array"
+                },
+                "schema:circle": {
+                    "title": "Circle",
+                    "$refkept": "http://schema.org/GeoCircle",
+                    "description": "A circular region with a specific radius centered on a geographic coordinate."
+                },
+                "schema:box": {
+                    "title": "Box",
+                    "type": "array",
+                    "items": {
+                        "$refkept": "http://schema.org/GeoCoordinates"
+                    },
+                    "description": "The area enclosed by the rectangle formed by two coordinates. The first coordinate is the lower corner and the second coordinate is the upper corner of a rectangle.",
+                    "minItems": 2,
+                    "maxItems": 2,
+                    "meta:xdmType": "array"
+                },
+                "schema:elevation": {
+                    "title": "Elevation",
+                    "type": "number",
+                    "description": "The specific or minimum elevation of the shape. This value conforms to the [WGS84](http://gisgeography.com/wgs84-world-geodetic-system/) datum and is measured in meters. In combination with `ceiling`, this property can be used to express a three-dimensional bounding box for a location.",
+                    "meta:xdmType": "number"
+                },
+                "xdm:ceiling": {
+                    "title": "Ceiling",
+                    "type": "number",
+                    "description": "The maximum elevation of the shape. Only valid when used in combination with `elevation`. This value conforms to the [WGS84](http://gisgeography.com/wgs84-world-geodetic-system/) datum and is measured in meters. This value is not part of the schema.org spec. In combination with `elevation`, this property can be used to express a three-dimensional bounding box for a location.",
+                    "meta:xdmType": "number"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/geoshape"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmType": "object"
+}

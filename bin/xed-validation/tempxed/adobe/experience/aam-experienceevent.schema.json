@@ -1,0 +1,133 @@
+{
+    "$id": "adobe/experience/aam-experienceevent",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Adobe Audience Manager Template Mixin",
+    "type": "object",
+    "description": "Adobe Audience Manager mixin for use with schemas for Solution data ingestion. Includes the core/standard ExperienceEvent as well as the other required core mixins.",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:status": [
+        "experimental",
+        "stabilizing"
+    ],
+    "meta:xdmType": "object",
+    "properties": {
+        "segmentMemberships": {
+            "title": "Segment Memberships",
+            "meta:status": "deprecated",
+            "description": "The segments associated with this ExperienceEvent. Deprecated, use `xdm:segmentMembership` instead.",
+            "type": "array",
+            "meta:xdmType": "array",
+            "items": {
+                "$ref": "context/segmentmembershipitem"
+            },
+            "meta:xdmField": "xdm:segmentMemberships"
+        },
+        "segmentMembership": {
+            "title": "Segment Membership Map",
+            "type": "object",
+            "meta:xdmType": "map",
+            "additionalProperties": {
+                "title": "Segment Membership per Namespace",
+                "type": "object",
+                "meta:xdmType": "map",
+                "additionalProperties": {
+                    "$ref": "context/segmentmembership"
+                }
+            },
+            "meta:xdmField": "xdm:segmentMembership"
+        },
+        "environment": {
+            "title": "Environment",
+            "$ref": "context/environment",
+            "description": "Information about the surrounding situation the event observation occurred in, specifically detailing transitory information such as the network or software versions.",
+            "meta:xdmField": "xdm:environment"
+        },
+        "device": {
+            "title": "Device",
+            "$ref": "context/device",
+            "description": "An identified device, application or device browser instance that is trackable across sessions, normally by cookies.",
+            "meta:xdmField": "xdm:device"
+        },
+        "placeContext": {
+            "title": "Place context",
+            "$ref": "context/placecontext",
+            "description": "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, and working hours.",
+            "meta:xdmField": "xdm:placeContext"
+        },
+        "profileStitch": {
+            "title": "Profile stitch",
+            "description": "Details about the IDs that were joined by profile stitching.",
+            "type": "array",
+            "meta:xdmType": "array",
+            "items": {
+                "$ref": "context/profilestitch"
+            },
+            "meta:xdmField": "xdm:profileStitch"
+        },
+        "userActivityRegion": {
+            "title": "User activity region",
+            "description": "Region info where event is captured.",
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "dataCenterLocation": {
+                    "title": "Location of Data Center where data was captured",
+                    "type": "string",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "xdm:dataCenterLocation"
+                },
+                "captureTimestamp": {
+                    "title": "Data Capture Timestamp",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "The time when data was captured on data center node.",
+                    "meta:xdmType": "date-time",
+                    "meta:xdmField": "xdm:captureTimestamp"
+                }
+            },
+            "meta:xdmField": "xdm:userActivityRegion"
+        },
+        "signals": {
+            "title": "Signals",
+            "description": "Additional frequently changing properties captured with an event via request parameters or other means.",
+            "type": "object",
+            "meta:xdmType": "map",
+            "additionalProperties": {
+                "type": "array",
+                "meta:xdmType": "array",
+                "items": {
+                    "type": "string",
+                    "description": "Value of the parameter",
+                    "meta:xdmType": "string"
+                }
+            },
+            "meta:xdmField": "xdm:signals"
+        },
+        "overwriteTraits": {
+            "title": "Overwrite Traits",
+            "type": "boolean",
+            "description": "Flag highlighting that all the traits realized before this for this id and data source, need to be discarded.",
+            "meta:xdmType": "boolean",
+            "meta:xdmField": "xdm:overwriteTraits"
+        },
+        "derivedSignals": {
+            "title": "Derived Signals",
+            "description": "Derived properties from event data",
+            "type": "object",
+            "meta:xdmType": "map",
+            "additionalProperties": {
+                "type": "array",
+                "meta:xdmType": "array",
+                "items": {
+                    "type": "string",
+                    "description": "Value of the parameter",
+                    "meta:xdmType": "string"
+                }
+            },
+            "meta:xdmField": "xdm:derivedSignals"
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/aam-experienceevent",
+    "meta:altId": "_experience.aam-experienceevent"
+}

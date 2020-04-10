@@ -1,0 +1,127 @@
+{
+    "$id": "context/segmentmembershipitem.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Segment membership item",
+    "type": "object",
+    "description": "List item that contains details of segment membership combined the profile stitched identities to which the membership applies.",
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "segmentID": {
+            "title": "Segment ID",
+            "meta:status": "deprecated",
+            "$ref": "../context/segmentidentity.schema.json",
+            "description": "The identity of the segment or snapshot definition in with the domain of the specific system that processes that type of segment. Deprecated.",
+            "meta:xdmField": "xdm:segmentID",
+            "tagNumber": 1
+        },
+        "version": {
+            "title": "Version",
+            "type": "string",
+            "description": "The version of the segment definition used in this segment assertion. Version can be omitted in audience lists when all memberships versions are the same.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:version",
+            "tagNumber": 2
+        },
+        "lastQualificationTime": {
+            "title": "Last qualification time",
+            "type": "string",
+            "format": "date-time",
+            "description": "The timestamp when the assertion of segment membership was made.",
+            "meta:xdmType": "date-time",
+            "meta:xdmField": "xdm:lastQualificationTime",
+            "tagNumber": 3
+        },
+        "payload": {
+            "title": "Payload",
+            "description": "Values that are directly related with the segment realization. This payload exists with the same 'validUntil' as the segment realization.  Note that the intention is that exactly one payload value be included, as indicated by the payload type.  This was originally modeled using 'oneOf', but due to limitations in our tooling that was removed.  This more semantically meaningful representation will be re-introduced in the future.",
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "payloadBooleanValue": {
+                    "title": "Value",
+                    "type": "boolean",
+                    "description": "The boolean value.",
+                    "meta:xdmType": "boolean",
+                    "meta:xdmField": "xdm:payloadBooleanValue",
+                    "tagNumber": 1
+                },
+                "payloadNumberValue": {
+                    "title": "Value",
+                    "type": "number",
+                    "description": "The number.",
+                    "meta:xdmType": "number",
+                    "meta:xdmField": "xdm:payloadNumberValue",
+                    "tagNumber": 2
+                },
+                "payloadPropensityValue": {
+                    "title": "Value",
+                    "type": "number",
+                    "description": "The propensity.",
+                    "exclusiveMinimum": 0,
+                    "maximum": 1,
+                    "meta:xdmType": "number",
+                    "meta:xdmField": "xdm:payloadPropensityValue",
+                    "tagNumber": 3
+                },
+                "payloadStringValue": {
+                    "title": "Value",
+                    "type": "string",
+                    "description": "The string value.",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "xdm:payloadStringValue",
+                    "tagNumber": 4
+                },
+                "payloadType": {
+                    "title": "Payload Type",
+                    "type": "string",
+                    "enum": [
+                        "boolean",
+                        "number",
+                        "propensity",
+                        "string"
+                    ],
+                    "description": "The type of payload.",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "xdm:payloadType",
+                    "tagNumber": 5
+                }
+            },
+            "meta:xdmField": "xdm:payload",
+            "required": [
+                "payloadType"
+            ],
+            "tagNumber": 4
+        },
+        "validUntil": {
+            "title": "Valid until",
+            "type": "string",
+            "format": "date-time",
+            "description": "The timestamp for when the segment assertion should no longer be assumed to be valid and should either be ignored or revalidated.",
+            "meta:xdmType": "date-time",
+            "meta:xdmField": "xdm:validUntil",
+            "tagNumber": 5
+        },
+        "status": {
+            "title": "Status",
+            "type": "string",
+            "description": "Is the segment participation realized as part of the current request.",
+            "default": "realized",
+            "enum": [
+                "existing",
+                "realized",
+                "exited"
+            ],
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:status",
+            "tagNumber": 6
+        },
+        "profileStitchID": {
+            "$ref": "../context/profilestitchidentity.schema.json",
+            "meta:xdmField": "xdm:profileStitchID",
+            "tagNumber": 7
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/segmentmembershipitem",
+    "meta:altId": "_xdm.context.segmentmembershipitem"
+}

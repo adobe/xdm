@@ -1,0 +1,231 @@
+{
+    "$id": "context/product.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Product",
+    "type": "object",
+    "description": "XDM product name or title, master product, and key attributes of product in the product catalog.",
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "_id": {
+            "title": "Identifier",
+            "type": "string",
+            "format": "uri-reference",
+            "description": "The internal unique ID of the product in the commerce backend system.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "@id",
+            "tagNumber": 1
+        },
+        "SKU": {
+            "title": "SKU",
+            "type": "string",
+            "description": "The unique SKU (stock keeping unit) of the product assigned by the vendor.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:SKU",
+            "tagNumber": 2
+        },
+        "name": {
+            "title": "Name",
+            "type": "string",
+            "description": "The name of the product.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:name",
+            "tagNumber": 3
+        },
+        "_schema": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "description": {
+                    "title": "Description",
+                    "type": "string",
+                    "description": "The localized description of the product.",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "schema:description",
+                    "tagNumber": 1
+                }
+            },
+            "tagNumber": 4
+        },
+        "category": {
+            "title": "Category",
+            "type": "string",
+            "description": "Primary categorization or category name of the product.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:category",
+            "tagNumber": 5
+        },
+        "department": {
+            "title": "Department",
+            "type": "string",
+            "description": "Primary department the product is associated with.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:department",
+            "tagNumber": 6
+        },
+        "brand": {
+            "title": "Brand",
+            "type": "string",
+            "description": "The brand of the product.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:brand",
+            "tagNumber": 7
+        },
+        "masterProductID": {
+            "title": "Master product identifier",
+            "type": "string",
+            "format": "uri",
+            "description": "The internal unique ID of the product in the commerce backend system.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:masterProductID",
+            "tagNumber": 8
+        },
+        "masterProductSKU": {
+            "title": "Master product SKU",
+            "type": "string",
+            "description": "The unique SKU (stock keeping unit) of the master product assigned by the vendor or manufacturer.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:masterProductSKU",
+            "tagNumber": 9
+        },
+        "masterProductName": {
+            "title": "Master product name",
+            "type": "string",
+            "description": "The localized name of the product.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:masterProductName",
+            "tagNumber": 10
+        },
+        "masterProductDescription": {
+            "title": "Master product description",
+            "type": "string",
+            "description": "The description of the product.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:masterProductDescription",
+            "tagNumber": 11
+        },
+        "fabrication": {
+            "title": "Fabrication",
+            "type": "string",
+            "description": "Primary material of the product construction.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:fabrication",
+            "tagNumber": 12
+        },
+        "gender": {
+            "title": "Gender",
+            "type": "string",
+            "description": "Gender the product is marketed to.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:gender",
+            "tagNumber": 13
+        },
+        "size": {
+            "title": "Size",
+            "type": "number",
+            "description": "Standard product size for the product.",
+            "meta:xdmType": "number",
+            "meta:xdmField": "xdm:size",
+            "tagNumber": 14
+        },
+        "unitOfMeasure": {
+            "title": "Unit of measure",
+            "type": "string",
+            "description": "Standard unit of measure of the product and or variation and relates the units for the size measurement.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:unitOfMeasure",
+            "tagNumber": 15
+        },
+        "countryOfOrigin": {
+            "title": "Country of origin",
+            "type": "string",
+            "pattern": "^[A-Z]{2}$",
+            "description": "The two-character [ISO 3166-1 alpha-2](https://datahub.io/core/country-list) code for the country of origin of the product as defined by customs requirements.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:countryOfOrigin",
+            "tagNumber": 16
+        },
+        "COGS": {
+            "title": "Cost of good sold",
+            "type": "number",
+            "description": "Cost of good sold, in the `currencyCode` currency.",
+            "meta:xdmType": "number",
+            "meta:xdmField": "xdm:COGS",
+            "tagNumber": 17
+        },
+        "listPrice": {
+            "title": "List price",
+            "type": "number",
+            "description": "Default price of the product before sales and discounting, in the `currencyCode` currency.",
+            "meta:xdmType": "number",
+            "meta:xdmField": "xdm:listPrice",
+            "tagNumber": 18
+        },
+        "currencyCode": {
+            "title": "Currency code",
+            "type": "string",
+            "examples": [
+                "USD",
+                "EUR"
+            ],
+            "pattern": "^[A-Z]{3}$",
+            "description": "The ISO 4217 alphabetic currency code used for cost and pricing, including `listPrice` and `COGS`.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:currencyCode",
+            "tagNumber": 19
+        },
+        "originalSaleDate": {
+            "title": "Original sale date",
+            "type": "string",
+            "format": "date",
+            "description": "First date the product was made available for sale. The time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\".",
+            "meta:xdmType": "date",
+            "meta:xdmField": "xdm:originalSaleDate",
+            "tagNumber": 20
+        },
+        "productCreateDate": {
+            "title": "Product creation date",
+            "format": "date",
+            "type": "string",
+            "description": "The date when this product was created. The time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\".",
+            "meta:xdmType": "date",
+            "meta:xdmField": "xdm:productCreateDate",
+            "tagNumber": 21
+        },
+        "productLastModified": {
+            "title": "Product last modified",
+            "format": "date",
+            "type": "string",
+            "description": "The date when this product was last modified. The time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\".",
+            "meta:xdmType": "date",
+            "meta:xdmField": "xdm:productLastModified",
+            "tagNumber": 22
+        },
+        "productURL": {
+            "title": "Product URL",
+            "type": "string",
+            "description": "The URL for the primary product view of the product page.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:productURL",
+            "tagNumber": 23
+        },
+        "manufacturerName": {
+            "title": "Manufacturer name",
+            "type": "string",
+            "description": "Manufacturer of the product.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:manufacturerName",
+            "tagNumber": 24
+        },
+        "supplierName": {
+            "title": "Supplier name",
+            "type": "string",
+            "description": "The distributor of the product.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:supplierName",
+            "tagNumber": 25
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/product",
+    "meta:altId": "_xdm.context.product"
+}

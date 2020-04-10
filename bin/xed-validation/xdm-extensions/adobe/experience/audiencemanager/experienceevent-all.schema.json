@@ -1,0 +1,57 @@
+{
+    "$id": "https://ns.adobe.com/experience/audiencemanager/experienceevent-all",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Adobe Audience Manager ExperienceEvent Full Extension",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "description": "Adobe Audience Manager ExperienceEvent full extension. Contains all Solution added fields.",
+    "definitions": {
+        "experienceevent": {
+            "properties": {
+                "xdm:signals": {
+                    "title": "Signals",
+                    "description": "Additional frequently changing properties captured with an event via request parameters or other means.",
+                    "type": "object",
+                    "meta:xdmType": "map",
+                    "additionalProperties": {
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "description": "Value of the parameter",
+                            "meta:xdmType": "string"
+                        },
+                        "meta:xdmType": "array"
+                    }
+                },
+                "xdm:overwriteTraits": {
+                    "title": "Overwrite Traits",
+                    "type": "boolean",
+                    "description": "Flag highlighting that all the traits realized before this for this id and data source, need to be discarded.",
+                    "meta:xdmType": "boolean"
+                },
+                "xdm:derivedSignals": {
+                    "title": "Derived Signals",
+                    "description": "Derived properties from event data",
+                    "type": "object",
+                    "meta:xdmType": "map",
+                    "additionalProperties": {
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "description": "Value of the parameter",
+                            "meta:xdmType": "string"
+                        },
+                        "meta:xdmType": "array"
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/experienceevent"
+        }
+    ],
+    "meta:xdmType": "object"
+}

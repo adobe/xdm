@@ -1,0 +1,88 @@
+{
+    "$id": "adobe/experience/campaign/orchestration/orchestrationdetails.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Orchestration Details",
+    "type": "object",
+    "description": "Set of attributes that are associated with every orchestration.",
+    "properties": {
+        "journey": {
+            "title": "Journey of an entity",
+            "type": "object",
+            "description": "Journey created for an entity by marketer.",
+            "meta:xdmType": "object",
+            "properties": {
+                "_id": {
+                    "title": "Journey unique identifier",
+                    "type": "string",
+                    "format": "uri-reference",
+                    "description": "The unique identifier of the journey created by the marketer.",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "@id",
+                    "tagNumber": 1
+                }
+            },
+            "meta:xdmField": "xdm:journey",
+            "required": [
+                "_id"
+            ],
+            "tagNumber": 1
+        },
+        "journeyVersion": {
+            "title": "Journey version",
+            "type": "object",
+            "description": "Schema for describing the version of a journey, where version holds the state machine",
+            "meta:xdmType": "object",
+            "properties": {
+                "_id": {
+                    "title": "Journey version identifier",
+                    "type": "string",
+                    "format": "uri-reference",
+                    "description": "The unique identifier denoting the version of journey on which the entity is active.",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "@id",
+                    "tagNumber": 1
+                }
+            },
+            "meta:xdmField": "xdm:journeyVersion",
+            "required": [
+                "_id"
+            ],
+            "tagNumber": 2
+        },
+        "action": {
+            "title": "Action on step transition",
+            "type": "object",
+            "description": "Action taken during a step transition that happened for an entity in state machine",
+            "meta:xdmType": "object",
+            "properties": {
+                "actionID": {
+                    "title": "Action identifier",
+                    "type": "string",
+                    "format": "uri-reference",
+                    "description": "Unique identifier denoting the associated action.",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "xdm:actionID",
+                    "tagNumber": 1
+                },
+                "actionType": {
+                    "title": "Action Type",
+                    "type": "string",
+                    "description": "The type of action to be performed.",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "xdm:actionType",
+                    "tagNumber": 2
+                }
+            },
+            "meta:xdmField": "xdm:action",
+            "tagNumber": 3
+        }
+    },
+    "meta:xdmType": "object",
+    "meta:xdmId": "https://ns.adobe.com/experience/campaign/orchestration/orchestrationdetails",
+    "meta:altId": "_experience.campaign.orchestration.orchestrationdetails",
+    "required": [
+        "journey",
+        "journeyVersion",
+        "action"
+    ]
+}

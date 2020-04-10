@@ -1,0 +1,127 @@
+{
+    "$id": "https://ns.adobe.com/xdm/adcloud/dsp/campaign",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "DSP Advertising Campaign",
+    "type": "object",
+    "meta:extensible": false,
+    "meta:abstract": false,
+    "meta:auditable": true,
+    "description": "Adobe Advertising Cloud DSP Campaign Details.",
+    "definitions": {
+        "dsp-campaign": {
+            "properties": {
+                "dsp:campaignKey": {
+                    "title": "Campaign Key",
+                    "type": "string",
+                    "description": "Campaign external identifier.",
+                    "meta:xdmType": "string"
+                },
+                "dsp:campaignName": {
+                    "title": "Campaign Name",
+                    "type": "string",
+                    "description": "Name of the campaign.",
+                    "meta:xdmType": "string"
+                },
+                "dsp:campaignStatus": {
+                    "title": "Campaign Status",
+                    "type": "string",
+                    "description": "Campaign Status extracted from the Insertion Order associated with this campaign.Indicates if underlying ads are eligible to serve.",
+                    "enum": [
+                        "Active",
+                        "Inactive",
+                        "Deleted",
+                        "Paid"
+                    ],
+                    "meta:enum": {
+                        "Active": "Active",
+                        "Inactive": "Inactive",
+                        "Deleted": "Deleted",
+                        "Paid": "Paid"
+                    },
+                    "meta:xdmType": "string"
+                },
+                "dsp:timezone": {
+                    "title": "Campaign Timezone",
+                    "type": "string",
+                    "description": "Timezone of the campaign.",
+                    "meta:xdmType": "string"
+                },
+                "dsp:type": {
+                    "title": "Campaign Type",
+                    "type": "string",
+                    "description": "Campaign Type",
+                    "enum": [
+                        "Media",
+                        "Brandsights"
+                    ],
+                    "meta:enum": {
+                        "Media": "Media",
+                        "Brandsights": "Brandsights"
+                    },
+                    "meta:xdmType": "string"
+                },
+                "dsp:userId": {
+                    "title": "User Identifier",
+                    "type": "integer",
+                    "description": "Identifier for the user who created the campaign.",
+                    "meta:xdmType": "int"
+                },
+                "dsp:feeClass": {
+                    "title": "The Fee Class",
+                    "type": "string",
+                    "description": "Fee Class needed for computing the total spend.",
+                    "enum": [
+                        "tubemogul",
+                        "advertiser",
+                        "no_io"
+                    ],
+                    "meta:enum": {
+                        "tubemogul": "tubemogul",
+                        "advertiser": "advertiser",
+                        "no_io": "no_io"
+                    },
+                    "meta:xdmType": "string"
+                },
+                "dsp:campaignStartTime": {
+                    "title": "Campaign start time.",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "The insertion order fields representing campaign start time.",
+                    "meta:xdmType": "date-time"
+                },
+                "dsp:campaignEndTime": {
+                    "title": "Campaign end time.",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "The insertion order fields representing campaign end time.",
+                    "meta:xdmType": "date-time"
+                },
+                "dsp:accountId": {
+                    "title": "Account Identifier",
+                    "type": "string",
+                    "description": "Identifier for the account owning this campaign.",
+                    "meta:xdmType": "string"
+                },
+                "dsp:advertiserId": {
+                    "title": "Advertiser Identifier",
+                    "type": "string",
+                    "description": "Identifier for the advertiser owning this campaign.",
+                    "meta:xdmType": "string"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "xdm/data/record.schema.json"
+        },
+        {
+            "$ref": "xdm/common/auditable.schema.json"
+        },
+        {
+            "$ref": "#/definitions/dsp-campaign"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmType": "object"
+}

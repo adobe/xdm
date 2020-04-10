@@ -1,0 +1,39 @@
+{
+    "$id": "https://ns.adobe.com/experience/marketo/opportunity-marketo",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Marketo Opportunity",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "Marketo specific Opportunity attributes.",
+    "definitions": {
+        "opportunity-marketo": {
+            "properties": {
+                "marketo:opportunityID": {
+                    "title": "Marketo opportunity ID",
+                    "description": "Marketo ID.",
+                    "type": "string",
+                    "meta:xdmType": "string"
+                },
+                "marketo:instanceID": {
+                    "title": "Instance Identifier",
+                    "description": "Instance identifier.",
+                    "type": "string",
+                    "meta:xdmType": "string"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "xdm/context/opportunity-crm.schema.json"
+        },
+        {
+            "$ref": "#/definitions/opportunity-marketo"
+        }
+    ],
+    "required": [
+        "marketo:ID"
+    ],
+    "meta:status": "experimental",
+    "meta:xdmType": "object"
+}

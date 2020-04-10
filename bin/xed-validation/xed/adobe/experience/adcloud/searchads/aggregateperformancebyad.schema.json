@@ -1,0 +1,137 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "adcloud/searchads/aggregateperformancebyad.schema.json",
+    "title": "Search Advertising Aggregate Performance Measures By Ad",
+    "type": "object",
+    "meta:extensible": [
+        false,
+        true
+    ],
+    "meta:abstract": [
+        false,
+        true
+    ],
+    "description": "Search Advertising Aggregate Performance Measures By Ad is a collection of measures pulled from Search Advertising Platforms by Ad/Keyword.",
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "_id": {
+            "title": "Identifier",
+            "type": "string",
+            "format": "uri-reference",
+            "description": "A unique identifier for the time-series event.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "@id",
+            "tagNumber": 1
+        },
+        "timestamp": {
+            "title": "Timestamp",
+            "type": "string",
+            "format": "date-time",
+            "description": "The time when an event or observation occurred.",
+            "meta:xdmType": "date-time",
+            "meta:xdmField": "xdm:timestamp",
+            "tagNumber": 2
+        },
+        "eventType": {
+            "title": "Event Type",
+            "type": "string",
+            "description": "The primary event type for this time-series record.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eventType",
+            "tagNumber": 3
+        },
+        "_searchads": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "accountId": {
+                    "title": "Account Identifier",
+                    "type": "string",
+                    "description": "Identifier that defines Customer/Client ID setup on the Search Advertising Platform.",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "searchads:accountId",
+                    "tagNumber": 1
+                },
+                "campaignId": {
+                    "title": "Campaign Identifier",
+                    "type": "string",
+                    "description": "Campaign ID on the search advertising platform..",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "searchads:campaignId",
+                    "tagNumber": 2
+                },
+                "adgroupId": {
+                    "title": "Ad Group Identifier",
+                    "type": "string",
+                    "description": "Ad Group ID on the search advertising platform.",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "searchads:adgroupId",
+                    "tagNumber": 3
+                },
+                "adId": {
+                    "title": "Ad Identifier",
+                    "type": "string",
+                    "description": "Ad ID on the search advertising platform.",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "searchads:adId",
+                    "tagNumber": 4
+                },
+                "searchEngineId": {
+                    "title": "Search Engine Identifier",
+                    "type": "integer",
+                    "description": "The application-specified identifier used to identify the Search Advertising Platform Name.",
+                    "meta:xdmType": "int",
+                    "meta:xdmField": "searchads:searchEngineId",
+                    "tagNumber": 5
+                },
+                "clicks": {
+                    "$ref": "../../data/measure.schema.json",
+                    "description": "Count of Clicks for a given ad displayed on the network.",
+                    "meta:xdmField": "searchads:clicks",
+                    "tagNumber": 6
+                },
+                "impressions": {
+                    "$ref": "../../data/measure.schema.json",
+                    "description": "Count of impressions for a given ad displayed on the network.",
+                    "meta:xdmField": "searchads:impressions",
+                    "tagNumber": 7
+                },
+                "totalCost": {
+                    "$ref": "../../data/measure.schema.json",
+                    "description": "Total Advertising Spend for a given ad displayed on the network. The spend is in the account currency configured on the network.",
+                    "meta:xdmField": "searchads:totalCost",
+                    "tagNumber": 8
+                },
+                "avgPosition": {
+                    "$ref": "../../data/measure.schema.json",
+                    "description": "Average Position of the Ad displayed on the network.",
+                    "meta:xdmField": "searchads:avgPosition",
+                    "tagNumber": 9
+                },
+                "topPageBid": {
+                    "$ref": "../../data/measure.schema.json",
+                    "description": "Top of the Page Bid Estimator. The measure is computed by the network and is not an additive measure.",
+                    "meta:xdmField": "searchads:topPageBid",
+                    "tagNumber": 10
+                },
+                "qualityScore": {
+                    "$ref": "../../data/measure.schema.json",
+                    "description": "Quality Score of the Keyword assigned by the network - range 1 to 10. This is not an additive measure.",
+                    "meta:xdmField": "searchads:qualityScore",
+                    "tagNumber": 11
+                },
+                "device": {
+                    "title": "Device",
+                    "$ref": "../../context/device.schema.json",
+                    "description": "The device from where the ad was displayed.",
+                    "meta:xdmField": "searchads:device",
+                    "tagNumber": 12
+                }
+            },
+            "tagNumber": 4
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/adcloud/searchads/aggregateperformancebyad",
+    "meta:altId": "_xdm.adcloud.searchads.aggregateperformancebyad"
+}

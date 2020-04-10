@@ -1,0 +1,39 @@
+{
+    "$id": "adobe/experience/campaign/notificationunsubscriptiondetails",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Notification Unsubscription Details",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "Adobe Campaign notification unsubscriptions allow end-users opt out after opting into topics that can be used for communication such as marketing subscription lists.",
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "unsubscriptionDate": {
+            "title": "Unsubscription Date",
+            "type": "string",
+            "format": "date-time",
+            "description": "Date and time when the end-user has unsubscribed from a notification topic. When the subscription is registered the xdm:unsubscriptionDate must be empty.",
+            "meta:xdmType": "date-time",
+            "meta:xdmField": "xdm:unsubscriptionDate"
+        },
+        "remarkID": {
+            "title": "Remark Identifier",
+            "type": "string",
+            "description": "The pre defined remark that the end-user identified when unsubscribing.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:remarkID"
+        },
+        "remarkText": {
+            "title": "Remark text",
+            "type": "string",
+            "description": "A customer comment/remark that the end-user provided when unsubscribing.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:remarkText"
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/campaign/notificationunsubscriptiondetails",
+    "meta:altId": "_experience.campaign.notificationunsubscriptiondetails",
+    "required": [
+        "unsubscriptionDate"
+    ]
+}

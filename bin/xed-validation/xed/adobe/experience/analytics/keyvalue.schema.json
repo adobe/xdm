@@ -1,0 +1,28 @@
+{
+    "$id": "adobe/experience/analytics/keyvalue.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Key Value Pair",
+    "type": "object",
+    "description": "Key value pair.",
+    "meta:xdmType": "object",
+    "properties": {
+        "key": {
+            "title": "Key",
+            "description": "Key",
+            "type": "string",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:key",
+            "tagNumber": 1
+        },
+        "value": {
+            "title": "Value",
+            "description": "Value",
+            "type": "string",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:value",
+            "tagNumber": 2
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/analytics/keyvalue",
+    "meta:altId": "_experience.analytics.keyvalue"
+}

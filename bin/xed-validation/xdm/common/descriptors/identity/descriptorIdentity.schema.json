@@ -1,0 +1,58 @@
+{
+    "$id": "https://ns.adobe.com/xdm/common/descriptors/descriptorIdentity",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Identity Descriptor",
+    "meta:extensible": false,
+    "meta:abstract": false,
+    "type": "object",
+    "description": "Used to mark a field as an identity.",
+    "definitions": {
+        "descriptorIdentity": {
+            "properties": {
+                "@type": {
+                    "title": "Type",
+                    "type": "string",
+                    "const": "xdm:descriptorIdentity",
+                    "meta:xdmType": "string"
+                },
+                "xdm:namespace": {
+                    "title": "Namespace",
+                    "type": "string",
+                    "description": "Identity ID or Code.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:property": {
+                    "title": "Property",
+                    "type": "string",
+                    "description": "Property of the `xdm:namespace` field.",
+                    "enum": [
+                        "xdm:id",
+                        "xdm:code"
+                    ],
+                    "meta:xdmType": "string"
+                },
+                "xdm:isPrimary": {
+                    "title": "Is primary key or not",
+                    "type": "boolean",
+                    "description": "When present, only one field should be marked as the primary. Default is false.",
+                    "meta:xdmType": "boolean"
+                }
+            },
+            "required": [
+                "xdm:sourceProperty",
+                "xdm:namespace",
+                "xdm:property"
+            ]
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "xdm/common/descriptors/schemadescriptor.schema.json#/definitions/descriptor"
+        },
+        {
+            "$ref": "#/definitions/descriptorIdentity"
+        }
+    ],
+    "meta:status": "stabilizing",
+    "meta:xdmType": "object"
+}

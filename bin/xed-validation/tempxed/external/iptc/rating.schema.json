@@ -1,0 +1,41 @@
+{
+    "$id": "external/iptc/rating",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Rating",
+    "type": "object",
+    "description": "The rating of the show. Based on [www.iptc.org](https://www.iptc.org/std/videometadatahub/recommendation/pre-versions/IPTC-VideoMetadataHub-props-Rec_1.1.html)",
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "_iptc4xmpExt": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "RatingValue": {
+                    "title": "Rating Value",
+                    "type": "string",
+                    "description": "Rating value as issued by the rating source.",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "iptc4xmpExt:RatingValue"
+                },
+                "RatingSourceLink": {
+                    "title": "Rating Source Link",
+                    "type": "string",
+                    "format": "uri",
+                    "description": "Link to the site and optionally the page of the party which has issued the rating value, linked resource should explain the rating rules.",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "iptc4xmpExt:RatingSourceLink"
+                }
+            },
+            "required": [
+                "RatingValue",
+                "RatingSourceLink"
+            ]
+        }
+    },
+    "meta:xdmId": "http://www.iptc.org/rating",
+    "meta:altId": "_xdm.external.iptc.rating",
+    "required": [
+        "_iptc4xmpExt"
+    ]
+}

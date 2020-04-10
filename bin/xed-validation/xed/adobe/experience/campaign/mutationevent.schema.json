@@ -1,0 +1,77 @@
+{
+    "$id": "adobe/experience/campaign/mutationevent.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Adobe Campaign Mutation Event",
+    "type": "object",
+    "description": "Adobe Campaign mutation event.",
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "timestamp": {
+            "title": "Timestamp",
+            "type": "string",
+            "format": "date-time",
+            "description": "The time when the first event of the interaction occurred.",
+            "meta:xdmType": "date-time",
+            "meta:xdmField": "xdm:timestamp",
+            "tagNumber": 1
+        },
+        "web": {
+            "title": "Web",
+            "$ref": "../../../context/webinfo.schema.json",
+            "description": "The information related to web page and link of the ExperienceEvent.",
+            "meta:xdmField": "xdm:web",
+            "tagNumber": 2
+        },
+        "directMarketing": {
+            "title": "Direct Marketing",
+            "$ref": "../../../context/direct-marketing.schema.json",
+            "description": "The events and properties related to direct/outbound marketing such as email, direct mail, texts and in-app notifications.",
+            "meta:xdmField": "xdm:directMarketing",
+            "tagNumber": 3
+        },
+        "_experience": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "campaign": {
+                    "type": "object",
+                    "meta:xdmType": "object",
+                    "properties": {
+                        "message": {
+                            "title": "A single message sent to a recipient.",
+                            "type": "object",
+                            "meta:xdmType": "object",
+                            "properties": {
+                                "quarantine": {
+                                    "title": "Quarantine",
+                                    "type": "boolean",
+                                    "default": false,
+                                    "description": "Address moved to quarantine. The quarantine is set to `true` when the message failed to deliver in a way that indicates that no future messages will be deliverable either to this address.",
+                                    "meta:xdmType": "boolean",
+                                    "meta:xdmField": "xdm:quarantine",
+                                    "tagNumber": 1
+                                },
+                                "reason": {
+                                    "title": "Reason",
+                                    "type": "string",
+                                    "description": "The reason why the message could/would not be delivered.",
+                                    "default": "undefined",
+                                    "meta:xdmType": "string",
+                                    "meta:xdmField": "xdm:reason",
+                                    "tagNumber": 2
+                                }
+                            },
+                            "meta:xdmField": "https://ns.adobe.com/experience/campaign/message",
+                            "tagNumber": 1
+                        }
+                    },
+                    "tagNumber": 1
+                }
+            },
+            "tagNumber": 4
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/campaign/mutationevent",
+    "meta:altId": "_experience.campaign.mutationevent"
+}

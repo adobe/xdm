@@ -1,0 +1,99 @@
+{
+    "$id": "https://ns.adobe.com/xdm/adcloud/searchads/portfolio",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Search Advertising Portfolio",
+    "type": "object",
+    "meta:extensible": false,
+    "meta:abstract": false,
+    "meta:auditable": true,
+    "description": "Search Advertising Portfolio Class includes fields that defines Portfolio.",
+    "definitions": {
+        "searchads-portfolio": {
+            "properties": {
+                "searchads:portfolioName": {
+                    "title": "Portfolio Name",
+                    "type": "string",
+                    "description": "Name of the Portfolio.",
+                    "meta:xdmType": "string"
+                },
+                "searchads:billingState": {
+                    "title": "Portfolio Billing State",
+                    "type": "string",
+                    "description": "Portfolio Billing State indicates whether client should be billed for spend from this Portfolio.",
+                    "meta:enum": {
+                        "Managed": "Client will be billed for the spend from this portfolio",
+                        "Not Managed": "Client will not be billed for the spend from this portfolio"
+                    },
+                    "meta:xdmType": "string"
+                },
+                "searchads:portfolioGroupId": {
+                    "title": "Portfolio Group Identifier",
+                    "type": "string",
+                    "description": "Set of portfolios can be assigned to a portfolio Group. This identifier indicates if portfolio is assigned to a portfolio group.",
+                    "meta:xdmType": "string"
+                },
+                "searchads:portfolioGroupName": {
+                    "title": "Portfolio Group Name",
+                    "type": "string",
+                    "description": "Indicates Name of the Portfolio Group if portfolio belongs to a Portfolio Group.",
+                    "meta:xdmType": "string"
+                },
+                "searchads:portfolioStatus": {
+                    "title": "Portfolio Status",
+                    "type": "string",
+                    "description": "Portfolio Status",
+                    "enum": [
+                        "Active",
+                        "Paused",
+                        "Deleted",
+                        "Inactive",
+                        "Incomplete",
+                        "Optimize",
+                        "Unknown"
+                    ],
+                    "meta:enum": {
+                        "Active": "Active",
+                        "Paused": "Paused",
+                        "Deleted": "Deleted",
+                        "Inactive": "Inactive",
+                        "Incomplete": "Incomplete",
+                        "Optimize": "Optimize",
+                        "Unknown": "Unknown"
+                    },
+                    "meta:xdmType": "string"
+                },
+                "searchads:createDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "examples": [
+                        "2004-10-23T12:00:00-06:00"
+                    ],
+                    "description": "The date and time when the portfolio was created. An example form is \"2004-10-23T12:00:00-06:00\".",
+                    "meta:xdmType": "date-time"
+                },
+                "searchads:modifyDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "examples": [
+                        "2004-10-23T12:00:00-06:00"
+                    ],
+                    "description": "The date and time when the portfolio was last modified. An example form is \"2004-10-23T12:00:00-06:00\".",
+                    "meta:xdmType": "date-time"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "xdm/data/record.schema.json"
+        },
+        {
+            "$ref": "xdm/common/auditable.schema.json"
+        },
+        {
+            "$ref": "#/definitions/searchads-portfolio"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmType": "object"
+}

@@ -1,0 +1,103 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/campaign/orchestration/reportingevent",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "User journey reporting event",
+  "type": "object",
+  "description": "",
+  "definitions": {
+    "reportingevent": {
+      "properties": {
+        "xdm:timestamp": {
+          "title": "Timestamp for reporting event",
+          "type": "string",
+          "format": "date-time",
+          "description": "Time of generation of reporting event"
+        },
+        "xdm:dataEnrichmentSource": {
+          "title": "Data Source",
+          "$ref": "https://ns.adobe.com/xdm/data/datasource",
+          "description": "Data source used for data enrichment"
+        },
+        "xdm:dataEntityUID": {
+          "title": "Unique identifier of data entity",
+          "type": "string",
+          "format": "uri",
+          "description": "The identifier for the data entity used for data enrichment"
+        },
+        "xdm:orgUnit": {
+          "title": "Organizational Unit",
+          "$ref": "https://ns.adobe.com/xdm/common/orgunit",
+          "description": "The unit within the organization owning this journey version."
+        },
+        "xdm:flowControlType": {
+          "title": "Flow control",
+          "type": "string",
+          "description": "Flow control in the journey triggered by the event.",
+          "enum": [
+            "end",
+            "jump",
+            "timer",
+            "condition"
+          ],
+          "meta:enum": {
+            "end": "if the 'end' step has been reached, if this step exists",
+            "jump": "if a jump has been taken",
+            "timer": "if a transition has been applied, implying a scheduler notification",
+            "condition": "if a conditional step has been processed"
+          }
+        },
+        "xdm:flowControlID": {
+          "title": "Unique identifier for the flow control",
+          "type": "string",
+          "format": "uri",
+          "description": "The identifier of the flow control in a journey version"
+        },
+        "xdm:eventMetrics": {
+          "title": "Metrics to be reported",
+          "$ref": "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics",
+          "description": "The metrics for actions performed during this observation."
+        },
+        "https://ns.adobe.com/experience/campaign/orchestrationAction": {
+          "title": "Action on step transition",
+          "description":
+            "Action taken during a step transition happening for an user in state machine",
+          "$ref": "https://ns.adobe.com/experience/campaign/orchestration/experienceevent#/definitions/action"  
+        },
+        "https://ns.adobe.com/experience/campaign/orchestrationExternalEvent": {
+          "title": "external event received",
+          "$ref": "https://ns.adobe.com/experience/campaign/orchestration/reportingexternalevent",
+          "description": "External event received, triggering the state transition"
+        },
+        "https://ns.adobe.com/experience/campaign/journey": {
+          "title": "Journey for users",
+          "description": "Journey created by marketer for its users",
+          "$ref": "https://ns.adobe.com/experience/campaign/orchestration/experienceevent#/definitions/journey"
+        },
+        "https://ns.adobe.com/experience/campaign/journeyVersion": {
+          "title": "Journey version",
+          "description":
+            "Schema for describing the version of a journey, where version holds the state machine",
+          "$ref": "https://ns.adobe.com/experience/campaign/orchestration/experienceevent#/definitions/journeyVersion"
+        }
+      }
+    }
+  },
+  "required": [
+    "https://ns.adobe.com/experience/campaign/journey",
+    "https://ns.adobe.com/experience/campaign/journeyVersion",
+    "xdm:timestamp",
+    "xdm:orgID"
+  ],
+  "allOf": [
+    {
+      "$ref": "#/definitions/reportingevent"
+    }
+  ],
+  "meta:status": "stabilizing"
+}

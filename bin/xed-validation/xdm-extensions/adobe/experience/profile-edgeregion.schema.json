@@ -1,0 +1,41 @@
+{
+    "$id": "https://ns.adobe.com/experience/profile-edgeregion",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Data capture region for Profile",
+    "description": "Edge region locations and timestamps where the profile data is captured",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "definitions": {
+        "profile-edgeregion": {
+            "properties": {
+                "xdm:userActivityRegions": {
+                    "title": "Data capture region information",
+                    "type": "object",
+                    "meta:xdmType": "map",
+                    "additionalProperties": {
+                        "type": "object",
+                        "meta:xdmType": "object",
+                        "properties": {
+                            "xdm:captureTimestamp": {
+                                "title": "Edge data capture timestamp",
+                                "type": "string",
+                                "format": "date-time",
+                                "description": "The time when data was captured on region node.",
+                                "meta:xdmType": "date-time"
+                            }
+                        }
+                    },
+                    "description": "Map of Location and timestamp of regions where this profile was captured."
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/profile-edgeregion"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmType": "object"
+}

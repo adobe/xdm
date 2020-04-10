@@ -1,0 +1,35 @@
+{
+    "$id": "adobe/experience/campaign/journeyaifatigue.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Fatigue Score and Level",
+    "type": "object",
+    "description": "Fatigue score and fatigue level from Journey AI.",
+    "meta:xdmType": "object",
+    "properties": {
+        "fatigueScore": {
+            "title": "Fatigue Score",
+            "description": "Fatigue score for the profile.",
+            "type": "number",
+            "exclusiveMinimum": 0,
+            "maximum": 1,
+            "meta:xdmType": "number",
+            "meta:xdmField": "xdm:fatigueScore",
+            "tagNumber": 1
+        },
+        "fatigueLevel": {
+            "title": "Fatigue Level",
+            "description": "Classification of profile into different buckets, based on fatigue score.",
+            "type": "string",
+            "enum": [
+                "low",
+                "medium",
+                "high"
+            ],
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:fatigueLevel",
+            "tagNumber": 2
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/campaign/journeyaifatigue",
+    "meta:altId": "_experience.campaign.journeyaifatigue"
+}

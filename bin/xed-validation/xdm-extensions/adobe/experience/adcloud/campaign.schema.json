@@ -1,0 +1,72 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "https://ns.adobe.com/experience/adcloud/campaign",
+    "title": "Ad Campaign Detail",
+    "type": "object",
+    "description": "Adobe Advertising Cloud ad campaign hierarchy details such as, account, package, advertiser, and campaign IDs.",
+    "definitions": {
+        "campaign": {
+            "properties": {
+                "xdm:accountId": {
+                    "title": "Account Identifier",
+                    "type": "string",
+                    "description": "Identifier for the account.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:campaignId": {
+                    "title": "Campaign Identifier",
+                    "type": "string",
+                    "description": "Identifier for the campaign.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:placementId": {
+                    "title": "Placement Identifier",
+                    "type": "string",
+                    "description": "Identifier for the placement.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:packageId": {
+                    "title": "Package Identifier",
+                    "type": "string",
+                    "description": "Identifier for the package.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:advertiserId": {
+                    "title": "Advertiser Identifier",
+                    "type": "string",
+                    "description": "Identifier for the advertiser.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:experimentId": {
+                    "title": "Experiment Identifier",
+                    "type": "string",
+                    "description": "Identifier for the experiment.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:sampleGroupId": {
+                    "title": "Sample Group Identifier",
+                    "type": "string",
+                    "description": "Identifier for the sample group.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:currency": {
+                    "title": "Account Currency",
+                    "type": "string",
+                    "examples": [
+                        "USD",
+                        "EUR"
+                    ],
+                    "pattern": "^[A-Z]{3}$",
+                    "description": "The ISO 4217 billing currency code for the account.",
+                    "meta:xdmType": "string"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/campaign"
+        }
+    ],
+    "meta:xdmType": "object"
+}

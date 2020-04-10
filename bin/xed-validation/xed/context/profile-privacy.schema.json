@@ -1,0 +1,75 @@
+{
+    "$id": "context/profile-privacy.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Profile privacy",
+    "description": "Profile privacy schema captures general and sales sharing opt-out signals.",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "optOutConsentLevel": {
+            "type": "object",
+            "title": "Opt-out consent level",
+            "description": "Opt-out consent level.",
+            "meta:xdmType": "object",
+            "properties": {
+                "privacyOptOuts": {
+                    "title": "Privacy opt-outs",
+                    "description": "Encapsulates different opt-out types for data privacy.",
+                    "type": "array",
+                    "meta:xdmType": "array",
+                    "items": {
+                        "type": "object",
+                        "meta:xdmType": "object",
+                        "properties": {
+                            "optOutType": {
+                                "title": "Opt-out type",
+                                "type": "string",
+                                "description": "The type of opt-out.",
+                                "enum": [
+                                    "general_opt_out",
+                                    "sales_sharing_opt_out"
+                                ],
+                                "meta:xdmType": "string",
+                                "meta:xdmField": "xdm:optOutType",
+                                "tagNumber": 1
+                            },
+                            "optOutValue": {
+                                "title": "Opt-out value",
+                                "type": "string",
+                                "description": "The value of opt-out signal.",
+                                "enum": [
+                                    "not_provided",
+                                    "pending",
+                                    "in",
+                                    "out"
+                                ],
+                                "meta:xdmType": "string",
+                                "meta:xdmField": "xdm:optOutValue",
+                                "tagNumber": 2
+                            },
+                            "timestamp": {
+                                "title": "Opt-out timestamp",
+                                "description": "Timestamp of the received opt-out signal.",
+                                "type": "string",
+                                "format": "date-time",
+                                "meta:xdmType": "date-time",
+                                "meta:xdmField": "xdm:timestamp",
+                                "tagNumber": 3
+                            }
+                        },
+                        "tagNumber": 1
+                    },
+                    "meta:xdmField": "xdm:privacyOptOuts",
+                    "tagNumber": 1
+                }
+            },
+            "meta:xdmField": "xdm:optOutConsentLevel",
+            "tagNumber": 1
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/profile-privacy",
+    "meta:altId": "_xdm.context.profile-privacy"
+}

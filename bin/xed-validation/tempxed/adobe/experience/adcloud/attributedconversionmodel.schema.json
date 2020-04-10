@@ -1,0 +1,216 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "adcloud/attributedconversionmodel",
+    "title": "Attributed Model Conversions",
+    "type": "object",
+    "meta:extensible": [
+        false,
+        true
+    ],
+    "meta:abstract": [
+        false,
+        true
+    ],
+    "description": "Attributed Model Conversions is the Raw Conversion Count and Sum of Conversions",
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "_id": {
+            "title": "Identifier",
+            "type": "string",
+            "format": "uri-reference",
+            "description": "A unique identifier for the time-series event.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "@id"
+        },
+        "timestamp": {
+            "title": "Timestamp",
+            "type": "string",
+            "format": "date-time",
+            "description": "The time when an event or observation occurred.",
+            "meta:xdmType": "date-time",
+            "meta:xdmField": "xdm:timestamp"
+        },
+        "eventType": {
+            "title": "Event Type",
+            "type": "string",
+            "description": "The primary event type for this time-series record.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eventType"
+        },
+        "_adcloud": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "advertiserId": {
+                    "title": "Advertiser Identifier",
+                    "type": "string",
+                    "description": "Identifier for the advertiser",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "adcloud:advertiserId"
+                },
+                "searchEngineId": {
+                    "title": "Search Engine Identifier",
+                    "type": "integer",
+                    "description": "The application-specified identifier used to identify the Search Advertising Platform Name",
+                    "meta:xdmType": "int",
+                    "meta:xdmField": "adcloud:searchEngineId"
+                },
+                "campaignId": {
+                    "title": "Campaign Identifier",
+                    "type": "string",
+                    "description": "Campaign Identifer on the advertising platform",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "adcloud:campaignId"
+                },
+                "placementId": {
+                    "title": "Placement Identifier",
+                    "type": "string",
+                    "description": "Placement ID on the dsp advertising platform",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "adcloud:placementId"
+                },
+                "adgroupId": {
+                    "title": "Ad Group Identifier",
+                    "type": "string",
+                    "description": "Ad Group ID on the search advertising platform",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "adcloud:adgroupId"
+                },
+                "adId": {
+                    "title": "Ad Identifier",
+                    "type": "string",
+                    "description": "Ad ID on the advertising platform",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "adcloud:adId"
+                },
+                "term": {
+                    "title": "Search Term",
+                    "type": "string",
+                    "description": "Search Term that contributed to the conversion",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "adcloud:term"
+                },
+                "termId": {
+                    "title": "Search Term Identifier",
+                    "type": "string",
+                    "description": "Search Term ID on the search advertising platform",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "adcloud:termId"
+                },
+                "matchType": {
+                    "title": "Term Match Type",
+                    "type": "string",
+                    "description": "Match Type associated to the Search Term being targeted for the Ad",
+                    "enum": [
+                        "Broad",
+                        "Phrase",
+                        "Exact",
+                        "Advanced",
+                        "Standard",
+                        "Website",
+                        "Product Target",
+                        "Product Group",
+                        "Content",
+                        "SiteCpc",
+                        "SiteCpm",
+                        "Category",
+                        "Search",
+                        "Adgroup",
+                        "Dynamic Ad Target",
+                        "Unknown"
+                    ],
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "adcloud:matchType"
+                },
+                "propertyName": {
+                    "title": "Property Name",
+                    "type": "string",
+                    "description": "Property Name Configured by Pixel, Analytics, Custom Feeds",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "adcloud:propertyName"
+                },
+                "modelName": {
+                    "title": "Model Name",
+                    "type": "string",
+                    "description": "Model that was executed to generate Raw Conversion Count and Sum for the attributed conversion",
+                    "examples": [
+                        "LAST EVENT",
+                        "FIRST EVENT",
+                        "EVEN"
+                    ],
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "adcloud:modelName"
+                },
+                "clickThroughCount": {
+                    "title": "Click Through Conversion Count",
+                    "$ref": "data/measure",
+                    "description": "Evaluated as Raw Conversion Count for models if trigger event is Click",
+                    "meta:xdmField": "adcloud:clickThroughCount"
+                },
+                "clickThroughValue": {
+                    "title": "Click Through Conversion Sum",
+                    "$ref": "data/measure",
+                    "description": "Evaluated as Raw Conversion Sum for models if trigger event is Click",
+                    "meta:xdmField": "adcloud:clickThroughValue"
+                },
+                "viewThroughCount": {
+                    "title": "View Through Conversion Count",
+                    "$ref": "data/measure",
+                    "description": "Evaluated as Raw Conversion Count for models if trigger event is Impression",
+                    "meta:xdmField": "adcloud:viewThroughCount"
+                },
+                "viewThroughValue": {
+                    "title": "View Through Conversion Sum",
+                    "$ref": "data/measure",
+                    "description": "Evaluated as Raw Conversion Sum for models if trigger event is Impression",
+                    "meta:xdmField": "adcloud:viewThroughValue"
+                },
+                "clickPlusViewThroughCount": {
+                    "title": "Click Plus View Through Conversion Count",
+                    "$ref": "data/measure",
+                    "description": "Evaluated as Raw Conversion Count for models if trigger event is click but impressions present in path",
+                    "meta:xdmField": "adcloud:clickPlusViewThroughCount"
+                },
+                "clickPlusViewThroughValue": {
+                    "title": "Click Plus View Through Conversion Sum",
+                    "$ref": "data/measure",
+                    "description": "Evaluated as Raw Conversion Sum for models if trigger event is click but impressions present in path",
+                    "meta:xdmField": "adcloud:clickPlusViewThroughValue"
+                },
+                "viewPlusClickThroughCount": {
+                    "title": "View Plus Click Through Conversion Count",
+                    "$ref": "data/measure",
+                    "description": "Raw Conversion Count for models if trigger event is impression but clicks present in path",
+                    "meta:xdmField": "adcloud:viewPlusClickThroughCount"
+                },
+                "viewPlusClickThroughValue": {
+                    "title": "View Plus Click Through Conversion Sum",
+                    "$ref": "data/measure",
+                    "description": "Raw Conversion Sum for models if trigger event is impression but clicks present in path",
+                    "meta:xdmField": "adcloud:viewPlusClickThroughValue"
+                },
+                "conversionType": {
+                    "title": "Conversion Type",
+                    "type": "string",
+                    "description": "Feed Conversion Type the conversion event originated from",
+                    "enum": [
+                        "Feed",
+                        "Pixel",
+                        "Cross Device"
+                    ],
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "adcloud:conversionType"
+                },
+                "device": {
+                    "title": "Device",
+                    "$ref": "context/device",
+                    "description": "The device conversion event originated from",
+                    "meta:xdmField": "adcloud:device"
+                }
+            }
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/adcloud/attributedconversionmodel",
+    "meta:altId": "_xdm.adcloud.attributedconversionmodel"
+}

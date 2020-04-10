@@ -1,0 +1,49 @@
+{
+    "$id": "https://ns.adobe.com/experience/campaign/profile-snapshot",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Adobe Campaign Profile Snapshot",
+    "type": "object",
+    "description": "Adobe Campaign Profile snapshot contains the recipient of the message. This property is primarily used to link the message to a Profile using the `IdentityMap` but it can also be used to freeze some properties of the profile at the time the message was sent.",
+    "definitions": {
+        "profile-snapshot": {
+            "properties": {
+                "xdm:person": {
+                    "title": "Person",
+                    "$refkept": "https://ns.adobe.com/xdm/context/person",
+                    "description": "An individual actor, contact, or owner."
+                },
+                "xdm:directMarketingAddress": {
+                    "title": "Direct Marketing Address",
+                    "$refkept": "https://ns.adobe.com/xdm/context/directmarketing-address",
+                    "description": "Direct Marketing postal address."
+                },
+                "xdm:directMarketingEmail": {
+                    "title": "Direct Marketing Email",
+                    "$refkept": "https://ns.adobe.com/xdm/context/directmarketing-emailaddress",
+                    "description": "Direct Marketing email address."
+                },
+                "xdm:directMarketingPhone": {
+                    "title": "Direct Marketing Phone",
+                    "$refkept": "https://ns.adobe.com/xdm/context/directmarketing-phonenumber",
+                    "description": "Direct Marketing phone number."
+                },
+                "xdm:pushNotificationTokens": {
+                    "title": "Push Notification Tokens",
+                    "type": "array",
+                    "description": "Push notification tokens are used to communicate with applications that are installed on devices or SaaS application accounts.",
+                    "items": {
+                        "$refkept": "https://ns.adobe.com/xdm/context/pushnotificationtoken"
+                    },
+                    "meta:xdmType": "array"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/profile-snapshot"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmType": "object"
+}

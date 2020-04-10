@@ -1,0 +1,154 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/opportunity-crm",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "CRM Opportunity",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/opportunity"
+  ],
+  "description": "CRM specific opportunity fields.",
+  "definitions": {
+    "opportunity-crm": {
+      "properties": {
+        "xdm:opportunityName": {
+          "title": "Opportunity Name",
+          "description": "Subject or descriptive name, such as the expected order or company name, for the opportunity.",
+          "type": "string"
+        },
+        "xdm:sourceType": {
+          "title": "Opportunity Source Type",
+          "description": "Opportunity source type",
+          "type": "string"
+        },
+        "xdm:description": {
+          "title": "Opportunity Description",
+          "description": "Additional information to describe the opportunity, such as possible products to sell or past purchases from the customer.",
+          "type": "string"
+        },
+        "xdm:owner": {
+          "title": "Opportunity Source",
+          "description": "Assigned owner for this opportunity.",
+          "type": "string"
+        },
+        "xdm:leadSource": {
+          "title": "Lead Source",
+          "description": "Source of the opportunity.",
+          "type": "string"
+        },
+        "xdm:stage": {
+          "title": "Opportunity Stage",
+          "description": "Sales stage of this opportunity to aid the sales team in their efforts to win this opportunity.",
+          "type": "string"
+        },
+        "xdm:amount": {
+          "title": "Opportunity Amount",
+          "description": "Opportunity Amount.",
+          "type": "number"
+        },
+        "xdm:currencyCode": {
+          "title": "Currency Code",
+          "description": "Standard ISO code for currency.",
+          "type": "string"
+        },
+        "xdm:quantity": {
+          "title": "Opportunity Quantity",
+          "description": "Opportunity Quantity.",
+          "type": "number"
+        },
+        "xdm:fiscalYear": {
+          "title": "Fiscal Year",
+          "description": "The fiscal year this opportunity is targeted.",
+          "type": "integer",
+          "pattern": "^[0-9]{4}$"
+        },
+        "xdm:fiscalQuarter": {
+          "title": "Fiscal Quarter",
+          "description": "The fiscal quarter this opportunity is targeted..",
+          "type": "string"
+        },
+        "xdm:opportunityLineItem": {
+          "title": "Has Opportunity Line Item",
+          "description": "Flag to indicate whether this opportunity have more line items.",
+          "type": "boolean"
+        },
+        "xdm:probabilityPercentage": {
+          "title": "Probability Percentage",
+          "description": "Likelihood that opportunity will close, stated as a percentage.",
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "xdm:closed": {
+          "title": "Closed",
+          "description": "Flag indicating if this opportunity is closed.",
+          "type": "boolean"
+        },
+        "xdm:won": {
+          "title": "Won",
+          "description": "Flag indicating if this opportunity is Won.",
+          "type": "boolean"
+        },
+        "xdm:delete": {
+          "title": "Is Deleted",
+          "description": "Flag indicating if this opportunity is deleted.",
+          "type": "boolean"
+        },
+        "xdm:closeDate": {
+          "title": "Close Date",
+          "description": "Date of closure for this opportunity.",
+          "type": "string",
+          "format": "date-time"
+        },
+        "xdm:nextStep": {
+          "title": "Next Step",
+          "description": "Description of next task in closing opportunity.",
+          "type": "string"
+        },
+        "xdm:private": {
+          "title": "Private",
+          "description": "Indicates that the opportunity is private.",
+          "type": "boolean"
+        },
+        "xdm:contractId": {
+          "title": "Contract Id",
+          "description": "Contract unique Identifier reference that this opportunity is linked to.",
+          "type": "string"
+        },
+        "xdm:forecastCategory": {
+          "title": "Forecast Category",
+          "description": "Forecast Category determined by the opportunity Stage value eg: omitted,pipeline,bestcase,commit,closed.",
+          "type": "string"
+        },
+        "xdm:forecastCategoryName": {
+          "title": "Forecast Category Name",
+          "description": "Forecast category name that is displayed in reports for a perticular forecast category.",
+          "type": "string"
+        },
+        "xdm:expectedRevenue": {
+          "title": "Expected Revenue",
+          "description": "Calculated revenue based on the Amount and Probability.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/opportunity-crm"
+    }
+  ],
+  "required": [
+    "xdm:stage"
+  ],
+  "meta:status": "experimental"
+}

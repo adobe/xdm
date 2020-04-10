@@ -1,0 +1,215 @@
+{
+    "$id": "context/graph-edge",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "XDM Graph Edge",
+    "type": "object",
+    "description": "XDM graph schema for edge/relationship between two nodes/vertices.",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "edges": {
+            "title": "Array Of Edges",
+            "description": "Array of edges.",
+            "type": "array",
+            "meta:xdmType": "array",
+            "items": {
+                "type": "object",
+                "meta:xdmType": "object",
+                "properties": {
+                    "edgeId": {
+                        "title": "Edge Identifier",
+                        "description": "The unique identifier of the identity associated with this graph edge.",
+                        "type": "string",
+                        "meta:xdmType": "string",
+                        "meta:xdmField": "xdm:edgeId"
+                    },
+                    "sourceNodeId": {
+                        "title": "Source Node Id",
+                        "description": "Source node identifier.",
+                        "type": "string",
+                        "meta:xdmType": "string",
+                        "meta:xdmField": "xdm:sourceNodeId"
+                    },
+                    "targetNodeId": {
+                        "title": "Target Node Id",
+                        "description": "Target node identifier.",
+                        "type": "string",
+                        "meta:xdmType": "string",
+                        "meta:xdmField": "xdm:targetNodeId"
+                    },
+                    "relation": {
+                        "title": "Relation Description",
+                        "description": "Relation description.",
+                        "type": "string",
+                        "meta:xdmType": "string",
+                        "meta:xdmField": "xdm:relation"
+                    },
+                    "label": {
+                        "title": "Label",
+                        "description": "Additional description.",
+                        "type": "string",
+                        "meta:xdmType": "string",
+                        "meta:xdmField": "xdm:label"
+                    },
+                    "dataProvider": {
+                        "type": "array",
+                        "meta:xdmType": "array",
+                        "items": {
+                            "type": "object",
+                            "meta:xdmType": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "dataProviderId": {
+                                    "title": "Data Provider Id",
+                                    "description": "Identifier of the Data Provider..",
+                                    "type": "integer",
+                                    "meta:xdmType": "int",
+                                    "meta:xdmField": "xdm:dataProviderId"
+                                },
+                                "firstSeenTimestamp": {
+                                    "title": "Relationship Observed Time and Date",
+                                    "description": "Time and date the relation was first observed.",
+                                    "type": "string",
+                                    "format": "date-time",
+                                    "meta:xdmType": "date-time",
+                                    "meta:xdmField": "xdm:firstSeenTimestamp"
+                                },
+                                "lastSeenTimestamp": {
+                                    "title": "Relationship Observed most recent Time and Date",
+                                    "description": "Time and date the relation was last observed.",
+                                    "type": "string",
+                                    "format": "date-time",
+                                    "meta:xdmType": "date-time",
+                                    "meta:xdmField": "xdm:lastSeenTimestamp"
+                                },
+                                "trusted": {
+                                    "title": "Trusted Data Source Flag",
+                                    "description": "Indicator of whether the data source is trusted or not.",
+                                    "type": "boolean",
+                                    "default": true,
+                                    "meta:xdmType": "boolean",
+                                    "meta:xdmField": "xdm:trusted"
+                                },
+                                "directed": {
+                                    "title": "Directed Or Birectional",
+                                    "description": "Nature of graph whether it is directed or birectional.",
+                                    "type": "boolean",
+                                    "default": false,
+                                    "meta:xdmType": "boolean",
+                                    "meta:xdmField": "xdm:directed"
+                                },
+                                "relationType": {
+                                    "title": "Relationship Type",
+                                    "description": "The method that established the relationship - Online/Offline deterministic/probabilistic.",
+                                    "type": "string",
+                                    "enum": [
+                                        "online_deterministic",
+                                        "online_probabilistic",
+                                        "offline_deterministic",
+                                        "offline_probabilistic"
+                                    ],
+                                    "meta:xdmType": "string",
+                                    "meta:xdmField": "xdm:relationType"
+                                },
+                                "frequency": {
+                                    "title": "Frequency",
+                                    "description": "Frequency of the observed relationship.",
+                                    "type": "integer",
+                                    "meta:xdmType": "int",
+                                    "meta:xdmField": "xdm:frequency"
+                                },
+                                "score": {
+                                    "title": "Relationship Score",
+                                    "description": "Imputed score of relationship.",
+                                    "type": "number",
+                                    "meta:xdmType": "number",
+                                    "meta:xdmField": "xdm:score"
+                                },
+                                "summedRecency": {
+                                    "title": "Recency Score",
+                                    "description": "Recency score of relationship.",
+                                    "type": "integer",
+                                    "meta:xdmType": "int",
+                                    "meta:xdmField": "xdm:summedRecency"
+                                },
+                                "lastCalculatedTimestamp": {
+                                    "title": "Last Calculated Data And Time",
+                                    "description": "Time and date the relationship score was last calculated.",
+                                    "type": "string",
+                                    "format": "date-time",
+                                    "meta:xdmType": "date-time",
+                                    "meta:xdmField": "xdm:lastCalculatedTimestamp"
+                                }
+                            }
+                        },
+                        "meta:xdmField": "xdm:dataProvider"
+                    }
+                }
+            },
+            "meta:xdmField": "xdm:edges"
+        },
+        "repositoryCreatedBy": {
+            "title": "Created by user identifier",
+            "type": "string",
+            "description": "User ID of who created the record.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:repositoryCreatedBy"
+        },
+        "repositoryLastModifiedBy": {
+            "title": "Modified by user identifier",
+            "type": "string",
+            "description": "User ID of who last modified the record. At creation time, `modifiedByUser` is set as `createdByUser`.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:repositoryLastModifiedBy"
+        },
+        "createdByBatchID": {
+            "title": "Created by batch identifier",
+            "type": "string",
+            "format": "uri-reference",
+            "description": "The dataset files in Catalog which has been originating the creation of the record.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:createdByBatchID"
+        },
+        "modifiedByBatchID": {
+            "title": "Modified by batch identifier",
+            "type": "string",
+            "format": "uri-reference",
+            "description": "The last dataset files in Catalog which has modified the record. At creation time, `modifiedByBatchID` is set as `createdByBatchID`.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:modifiedByBatchID"
+        },
+        "_repo": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "createDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "meta:immutable": true,
+                    "meta:usereditable": false,
+                    "examples": [
+                        "2004-10-23T12:00:00-06:00"
+                    ],
+                    "description": "The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The date time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+                    "meta:xdmType": "date-time",
+                    "meta:xdmField": "repo:createDate"
+                },
+                "modifyDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "meta:usereditable": false,
+                    "examples": [
+                        "2004-10-23T12:00:00-06:00"
+                    ],
+                    "description": "The server date and time when the resource was last modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The date time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+                    "meta:xdmType": "date-time",
+                    "meta:xdmField": "repo:modifyDate"
+                }
+            }
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/graph-edge",
+    "meta:altId": "_xdm.context.graph-edge"
+}

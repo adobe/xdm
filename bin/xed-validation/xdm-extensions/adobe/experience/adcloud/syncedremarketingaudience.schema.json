@@ -1,0 +1,47 @@
+{
+    "$id": "https://ns.adobe.com/experience/adcloud/syncedremarketingaudience",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Synchronized Remarketing Audiences",
+    "type": "object",
+    "description": "Details about Adobe Advertising Cloud search segments used for retargeting surfers on a search and/or marketing platform.",
+    "definitions": {
+        "syncedremarketingaudience": {
+            "properties": {
+                "xdm:segmentID": {
+                    "title": "Segment ID",
+                    "type": "string",
+                    "description": "ID for the segment that would be used to retarget the surfer.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:type": {
+                    "title": "Segment/Audience Type",
+                    "type": "integer",
+                    "description": "Type of segment, eg. AAM.",
+                    "meta:xdmType": "int"
+                },
+                "xdm:timestamp": {
+                    "title": "Timestamp",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "The timestamp when the retargeting entity, e.g. aam-segment, was synced to the marketing platform.",
+                    "meta:xdmType": "date-time"
+                },
+                "xdm:partnerDetails": {
+                    "title": "Marketing Partner Details",
+                    "type": "array",
+                    "items": {
+                        "$refkept": "https://ns.adobe.com/experience/adcloud/partnerdata"
+                    },
+                    "meta:xdmType": "array"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/syncedremarketingaudience"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmType": "object"
+}

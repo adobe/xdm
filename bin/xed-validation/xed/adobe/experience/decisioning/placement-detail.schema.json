@@ -1,0 +1,58 @@
+{
+    "$id": "adobe/experience/decisioning/placement-detail.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Decision Placement Detail",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "description": "Detail about the entity defining and controlling the decisioning process. Decisions are made in the context of a placement. At any given time, the best option is re-evaluated, or ranked, based on the most current set of context variables, rules and constraints applicable for this placement.",
+    "meta:xdmType": "object",
+    "properties": {
+        "id": {
+            "title": "Placement Identifier",
+            "type": "string",
+            "format": "uri-reference",
+            "description": "A unique identifier for the decision placement.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:id",
+            "tagNumber": 1
+        },
+        "_repo": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "etag": {
+                    "title": "Placement ETag",
+                    "type": "string",
+                    "description": "The revision that the placement object was at when the snapshot was taken.",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "repo:etag",
+                    "tagNumber": 1
+                }
+            },
+            "tagNumber": 2
+        },
+        "name": {
+            "title": "Placement Name",
+            "type": "string",
+            "description": "Placement name. The name is displayed in various user interfaces.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:name",
+            "tagNumber": 3
+        },
+        "channelID": {
+            "title": "Placement's Channel Identifier",
+            "type": "string",
+            "format": "uri-reference",
+            "description": "The channel in which proposition was made. The value is a valid Channel URI. See 'https://ns.adobe.com/xdm/channels/channel'",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:channelID",
+            "tagNumber": 4
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/decisioning/placement-detail",
+    "meta:altId": "_experience.decisioning.placement-detail",
+    "required": [
+        "id"
+    ]
+}

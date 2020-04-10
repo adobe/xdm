@@ -1,0 +1,31 @@
+{
+    "$id": "adobe/experience/adcloud/searchadvertising/platform.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Search Advertising Platform",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "description": "Information about Search Advertising Platform.",
+    "meta:status": "deprecated",
+    "meta:xdmType": "object",
+    "properties": {
+        "adPlatform": {
+            "title": "Search Advertising Platform",
+            "type": "string",
+            "description": "The Search Advertising Platform Name",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:adPlatform",
+            "tagNumber": 1
+        },
+        "searchEngineId": {
+            "title": "Search Engine Identifier",
+            "type": "integer",
+            "description": "The application-specified identifier used to identify the Search Advertising Platform Name.",
+            "meta:xdmType": "int",
+            "meta:xdmField": "xdm:searchEngineId",
+            "tagNumber": 2
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/adcloud/searchadvertising/platform",
+    "meta:altId": "_experience.adcloud.searchadvertising.platform"
+}

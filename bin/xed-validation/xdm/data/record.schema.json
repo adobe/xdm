@@ -1,0 +1,29 @@
+{
+    "$id": "https://ns.adobe.com/xdm/data/record",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Record Schema",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "description": "Used to indicate the behavior of record data semantic when composed into data schemas.",
+    "definitions": {
+        "record": {
+            "properties": {
+                "@id": {
+                    "title": "Identifier",
+                    "type": "string",
+                    "format": "uri-reference",
+                    "description": "A unique identifier for the record.",
+                    "meta:xdmType": "string"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/record"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmType": "object"
+}

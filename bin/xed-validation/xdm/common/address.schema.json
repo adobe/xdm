@@ -1,0 +1,112 @@
+{
+    "$id": "https://ns.adobe.com/xdm/common/address",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Postal address",
+    "type": "object",
+    "meta:auditable": true,
+    "description": "A postal address. Address could relate to a person's home, work, or preferred store location.",
+    "definitions": {
+        "address": {
+            "properties": {
+                "xdm:primary": {
+                    "title": "Primary",
+                    "type": "boolean",
+                    "description": "Primary address indicator. A profile can have only one `primary` address at a given point of time.",
+                    "meta:xdmType": "boolean"
+                },
+                "xdm:label": {
+                    "title": "Label",
+                    "type": "string",
+                    "description": "Free form name of the address.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:street1": {
+                    "title": "Street 1",
+                    "type": "string",
+                    "description": "Primary street level information, apartment number, street number, and street name.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:street2": {
+                    "title": "Street 2",
+                    "type": "string",
+                    "description": "Optional street information second line.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:street3": {
+                    "title": "Street 3",
+                    "type": "string",
+                    "description": "Optional street information third line.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:street4": {
+                    "title": "Street 4",
+                    "type": "string",
+                    "description": "Optional street information fourth line.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:region": {
+                    "title": "Region",
+                    "type": "string",
+                    "description": "The region, county, or district portion of the address.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:postOfficeBox": {
+                    "title": "Post office box",
+                    "type": "string",
+                    "description": "Post office box of the address.",
+                    "maxLength": 20,
+                    "meta:xdmType": "string"
+                },
+                "xdm:country": {
+                    "title": "Country",
+                    "type": "string",
+                    "description": "The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:status": {
+                    "title": "Status",
+                    "type": "string",
+                    "description": "An indication as to the ability to use the address.",
+                    "default": "active",
+                    "meta:enum": {
+                        "active": "Active",
+                        "incomplete": "Incomplete",
+                        "pending_verification": "Pending verification",
+                        "blacklisted": "Blacklisted",
+                        "blocked": "Blocked"
+                    },
+                    "meta:xdmType": "string"
+                },
+                "xdm:statusReason": {
+                    "title": "Status reason",
+                    "type": "string",
+                    "description": "A description of the current status.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:lastVerifiedDate": {
+                    "title": "Last verified date",
+                    "type": "string",
+                    "format": "date",
+                    "description": "The date that the address was last verified as still associated to the person.",
+                    "meta:xdmType": "date"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "xdm/external/schema/geocoordinates.schema.json"
+        },
+        {
+            "$ref": "xdm/common/geo.schema.json"
+        },
+        {
+            "$ref": "xdm/common/auditable.schema.json"
+        },
+        {
+            "$ref": "#/definitions/address"
+        }
+    ],
+    "meta:status": "stabilizing",
+    "meta:xdmType": "object"
+}

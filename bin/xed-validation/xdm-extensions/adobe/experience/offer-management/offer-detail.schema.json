@@ -1,0 +1,36 @@
+{
+    "$id": "https://ns.adobe.com/experience/offer-management/offer-detail",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Offer Detail",
+    "type": "object",
+    "meta:abstract": true,
+    "meta:extensible": true,
+    "description": "Offer detail is used to capture the attributes of an offer in a proposition or response. Offers are the decision options in the offer management domain and the offer detail datatype extends the option detail datatype.",
+    "definitions": {
+        "offer-detail": {
+            "properties": {
+                "xdm:tags": {
+                    "type": "array",
+                    "title": "Tags",
+                    "description": "The set of tags associated with this offer. The tags are used in offer filter expressions to constrain the overall offer inventory to a topical sub set (category).",
+                    "items": {
+                        "type": "string",
+                        "format": "uri-reference",
+                        "description": "An identifier of a tag object. The value is the @id of the tag that is referenced. See tag schema: https://ns.adobe.com/experience/offer-management/tag",
+                        "meta:xdmType": "string"
+                    },
+                    "meta:xdmType": "array"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/offer-detail"
+        },
+        {
+            "$ref": "xdm-extensions/adobe/experience/decisioning/option-detail.schema.json"
+        }
+    ],
+    "meta:xdmType": "object"
+}

@@ -1,0 +1,140 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "adobe/experience/adcloud/fees.schema.json",
+    "title": "Advertising Fee Details",
+    "type": "object",
+    "description": "Adobe Advertising Cloud Fee Details.",
+    "meta:xdmType": "object",
+    "properties": {
+        "DSPMediaFees": {
+            "title": "DSP Media Fees",
+            "type": "number",
+            "description": "Media fees billable by DSP.",
+            "meta:xdmType": "number",
+            "meta:xdmField": "xdm:DSPMediaFees",
+            "tagNumber": 1
+        },
+        "DSPDataFees": {
+            "title": "DSP Data Fees",
+            "type": "number",
+            "description": "Data fees billable by DSP.",
+            "meta:xdmType": "number",
+            "meta:xdmField": "xdm:DSPDataFees",
+            "tagNumber": 2
+        },
+        "DSPOtherFees": {
+            "title": "DSP Other Fees",
+            "type": "number",
+            "description": "Other fees billable by DSP.",
+            "meta:xdmType": "number",
+            "meta:xdmField": "xdm:DSPOtherFees",
+            "tagNumber": 3
+        },
+        "accountMediaFees": {
+            "title": "Account Media Fees",
+            "type": "number",
+            "description": "Media fees for the account but not billable by DSP.",
+            "meta:xdmType": "number",
+            "meta:xdmField": "xdm:accountMediaFees",
+            "tagNumber": 4
+        },
+        "accountDataFees": {
+            "title": "Account Data Fees",
+            "type": "number",
+            "description": "Data fees for the account but not billable by DSP.",
+            "meta:xdmType": "number",
+            "meta:xdmField": "xdm:accountDataFees",
+            "tagNumber": 5
+        },
+        "accountOtherFees": {
+            "title": "Account Other Fees",
+            "type": "number",
+            "description": "Other fees for the account but not billable by DSP.",
+            "meta:xdmType": "number",
+            "meta:xdmField": "xdm:accountOtherFees",
+            "tagNumber": 6
+        },
+        "advertiserMediaFees": {
+            "title": "Advertiser Media Fees",
+            "type": "number",
+            "description": "Media advertiser fees charged to the advertiser from the account.",
+            "meta:xdmType": "number",
+            "meta:xdmField": "xdm:advertiserMediaFees",
+            "tagNumber": 7
+        },
+        "advertiserDataFees": {
+            "title": "Advertiser Data Fees",
+            "type": "number",
+            "description": "Other advertiser fees charged to the advertiser from the account.",
+            "meta:xdmType": "number",
+            "meta:xdmField": "xdm:advertiserDataFees",
+            "tagNumber": 8
+        },
+        "advertiserOtherFees": {
+            "title": "Advertiser Other Fees",
+            "type": "number",
+            "description": "Other advertiser fees charged to the advertiser from the account.",
+            "meta:xdmType": "number",
+            "meta:xdmField": "xdm:advertiserOtherFees",
+            "tagNumber": 9
+        },
+        "billableMediaNetSpend": {
+            "title": "Billable Media Net Spend",
+            "type": "number",
+            "description": "The billable net spend for media advertising.",
+            "meta:xdmType": "number",
+            "meta:xdmField": "xdm:billableMediaNetSpend",
+            "tagNumber": 10
+        },
+        "totalMediaNetSpend": {
+            "title": "Total Media Net Spend",
+            "type": "number",
+            "description": "The total net spend for media advertising.",
+            "meta:xdmType": "number",
+            "meta:xdmField": "xdm:totalMediaNetSpend",
+            "tagNumber": 11
+        },
+        "billableDataNetSpend": {
+            "title": "Billable Data Net Spend",
+            "type": "number",
+            "description": "The billable net spend for data advertising.",
+            "meta:xdmType": "number",
+            "meta:xdmField": "xdm:billableDataNetSpend",
+            "tagNumber": 12
+        },
+        "billableOtherNetSpend": {
+            "title": "Billable Other Net Spend",
+            "type": "number",
+            "description": "The billable net spend for other types of advertising.",
+            "meta:xdmType": "number",
+            "meta:xdmField": "xdm:billableOtherNetSpend",
+            "tagNumber": 13
+        },
+        "totalBillableNetSpend": {
+            "title": "Total Billable Net Spend",
+            "type": "number",
+            "description": "The total billable net spend.",
+            "meta:xdmType": "number",
+            "meta:xdmField": "xdm:totalBillableNetSpend",
+            "tagNumber": 14
+        },
+        "totalNonBillableNetSpend": {
+            "title": "Total Non-Billable Net Spend",
+            "type": "number",
+            "description": "The total non-billable net spend",
+            "meta:xdmType": "number",
+            "meta:xdmField": "xdm:totalNonBillableNetSpend",
+            "tagNumber": 15
+        },
+        "totalNetSpend": {
+            "title": "Total Net Spend",
+            "type": "number",
+            "description": "The total net spend.",
+            "meta:xdmType": "number",
+            "meta:xdmField": "xdm:totalNetSpend",
+            "tagNumber": 16
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/adcloud/fees",
+    "meta:altId": "_experience.adcloud.fees"
+}

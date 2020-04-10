@@ -1,0 +1,61 @@
+{
+    "$id": "adobe/experience/adcloud/productdetails.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Adobe Advertising Cloud Product Details displayed in Search Advertisement.",
+    "type": "object",
+    "description": "Adobe Advertising Cloud Search Product Details.",
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "productID": {
+            "title": "Product Identifier",
+            "type": "string",
+            "description": "Identifier for the product featured in the clicked advertisement.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:productID",
+            "tagNumber": 1
+        },
+        "country": {
+            "title": "Product Country",
+            "type": "string",
+            "description": "The country of sale for the product in the clicked ad.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:country",
+            "tagNumber": 2
+        },
+        "language": {
+            "title": "Product Language",
+            "type": "string",
+            "description": "The language of your product information, as indicated in client's Merchant Center data feed.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:language",
+            "tagNumber": 3
+        },
+        "partitionID": {
+            "title": "Product Partition Identifier",
+            "type": "string",
+            "description": "Identifier for the product group the clicked product advertisement belongs to.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:partitionID",
+            "tagNumber": 4
+        },
+        "title": {
+            "title": "Product Title",
+            "type": "string",
+            "description": "Product title value shown in the advertisement.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:title",
+            "tagNumber": 5
+        },
+        "adType": {
+            "title": "Product Ad Type",
+            "type": "string",
+            "description": "Ad Type for Product used in Google Shopping Campaigns.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:adType",
+            "tagNumber": 6
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/adcloud/productdetails",
+    "meta:altId": "_experience.adcloud.productdetails"
+}

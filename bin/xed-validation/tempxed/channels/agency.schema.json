@@ -1,0 +1,103 @@
+{
+    "$id": "channels/agency",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "External Agency Channel",
+    "description": "The marketing experience is handed-off to an external agency channel. This channel has no specific mechanism and is designed for descriptive purposes only. Such as, to define experiences for which you want to keep a trace of the population targeted in an external tool.",
+    "meta:extensible": true,
+    "type": "object",
+    "meta:abstract": true,
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "_id": {
+            "type": "string",
+            "format": "uri-reference",
+            "description": "The ID uniquely identifies the channel. Each specific experience channel defines a constant `@id`.",
+            "meta:xdmType": "string",
+            "const": "https://ns.adobe.com/xdm/channels/agency",
+            "meta:xdmField": "@id"
+        },
+        "typeAtSource": {
+            "type": "string",
+            "description": "Customer defined custom channel name",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:typeAtSource"
+        },
+        "mode": {
+            "type": "string",
+            "enum": [
+                "push",
+                "pull",
+                "bidirectional"
+            ],
+            "description": "How experiences are delivered in this channel.",
+            "meta:xdmType": "string",
+            "const": "bidirectional",
+            "meta:xdmField": "xdm:mode"
+        },
+        "_type": {
+            "type": "string",
+            "format": "uri",
+            "description": "The `@type` property is used to provide a rough classification of channels with similar properties.",
+            "meta:xdmType": "string",
+            "const": "https://ns.adobe.com/xdm/channel-types/offline",
+            "meta:xdmField": "@type"
+        },
+        "mediaType": {
+            "type": "string",
+            "description": "Describes whether the media type is paid,owned or earned.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:mediaType"
+        },
+        "mediaAction": {
+            "type": "string",
+            "description": "The `mediaAction` property is used to provide a type of experiance event media action .",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:mediaAction"
+        },
+        "contentTypes": {
+            "type": "array",
+            "description": "The content types that this channel can deliver.",
+            "meta:xdmType": "array",
+            "const": [],
+            "items": {
+                "type": "string",
+                "format": "uri",
+                "description": "The `@type` of an XDM-defined content type that is supported by this channel.",
+                "meta:xdmType": "string"
+            },
+            "meta:xdmField": "xdm:contentTypes"
+        },
+        "metricTypes": {
+            "type": "array",
+            "description": "The metrics that can be collected in this channel.",
+            "meta:xdmType": "array",
+            "const": [],
+            "items": {
+                "type": "string",
+                "format": "uri",
+                "description": "The `@type` of an XDM-defined metric that is supported by this channel.",
+                "meta:xdmType": "string"
+            },
+            "meta:xdmField": "xdm:metricTypes"
+        },
+        "locationTypes": {
+            "type": "array",
+            "description": "The types of locations (virtual places) that this channel consists of and can deliver content to.",
+            "meta:xdmType": "array",
+            "const": [],
+            "items": {
+                "type": "string",
+                "format": "uri",
+                "description": "The `@type` of an XDM-defined location (virtual place) that this channel can contain.",
+                "meta:xdmType": "string"
+            },
+            "meta:xdmField": "xdm:locationTypes"
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/channels/agency",
+    "meta:altId": "_xdm.channels.agency",
+    "required": [
+        "_id"
+    ]
+}

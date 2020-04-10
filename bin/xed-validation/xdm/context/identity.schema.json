@@ -1,0 +1,35 @@
+{
+    "$id": "https://ns.adobe.com/xdm/context/identity",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Identity",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "Identity is used to clearly distinguish people that are interacting with digital experiences. Identity is established by an identity provider, which itself is referenced in the `namespace` attribute. Within each `namespace`, the identity is unique.",
+    "definitions": {
+        "identity": {
+            "properties": {
+                "xdm:namespace": {
+                    "title": "Namespace",
+                    "$refkept": "https://ns.adobe.com/xdm/context/namespace",
+                    "description": "The namespace associated with the `xid` attribute and matched up with the AAM data source integration code."
+                },
+                "xdm:xid": {
+                    "title": "Experience identifier",
+                    "type": "string",
+                    "description": "When present, experience identifier value represents a cross-namespace identifier that is unique across all namespace-scoped identifiers in all namespaces.",
+                    "meta:xdmType": "string"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "xdm/context/identityitem.schema.json#/definitions/identityitem"
+        },
+        {
+            "$ref": "#/definitions/identity"
+        }
+    ],
+    "meta:status": "stabilizing",
+    "meta:xdmType": "object"
+}

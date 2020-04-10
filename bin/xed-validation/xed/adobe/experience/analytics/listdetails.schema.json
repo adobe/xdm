@@ -1,0 +1,33 @@
+{
+    "$id": "adobe/experience/analytics/listdetails.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "List Details",
+    "type": "object",
+    "description": "List of values with details.",
+    "meta:xdmType": "object",
+    "properties": {
+        "values": {
+            "title": "List Values",
+            "type": "array",
+            "description": "List of values.",
+            "meta:xdmType": "array",
+            "items": {
+                "type": "string",
+                "meta:xdmType": "string",
+                "tagNumber": 1
+            },
+            "meta:xdmField": "xdm:values",
+            "tagNumber": 1
+        },
+        "delimiter": {
+            "title": "Original List Delimiter",
+            "type": "string",
+            "description": "The original delimiter used to generate the list.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:delimiter",
+            "tagNumber": 2
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/analytics/listdetails",
+    "meta:altId": "_experience.analytics.listdetails"
+}

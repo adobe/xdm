@@ -1,0 +1,135 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "adobe/experience/profile/profile-all",
+    "title": "Adobe Unified Profile Service Profile Union Extension",
+    "description": "Adobe Unified Profile Service required fields for the Profile Union.",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:xdmType": "object",
+    "meta:status": "experimental",
+    "properties": {
+        "_experience": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "profile": {
+                    "type": "object",
+                    "meta:xdmType": "object",
+                    "properties": {
+                        "identityNamespaces": {
+                            "type": "object",
+                            "meta:xdmType": "map",
+                            "additionalProperties": {
+                                "$ref": "context/namespace"
+                            },
+                            "meta:xdmField": "https://ns.adobe.com/experience/profile/identityNamespaces"
+                        }
+                    }
+                }
+            }
+        },
+        "timeSeriesEvents": {
+            "title": "Time-series Events",
+            "description": "List of time-series based events that relate to schemas based on record.",
+            "type": "array",
+            "meta:xdmType": "array",
+            "items": {
+                "$ref": "data/time-series"
+            },
+            "meta:xdmField": "xdm:timeSeriesEvents"
+        },
+        "identityMap": {
+            "type": "object",
+            "meta:xdmType": "map",
+            "additionalProperties": {
+                "type": "array",
+                "meta:xdmType": "array",
+                "items": {
+                    "$ref": "context/identityitem"
+                }
+            },
+            "meta:xdmField": "xdm:identityMap"
+        },
+        "segments": {
+            "title": "Segment membership",
+            "meta:status": "deprecated",
+            "type": "array",
+            "meta:xdmType": "array",
+            "items": {
+                "$ref": "context/segmentmembership"
+            },
+            "meta:xdmField": "xdm:segments"
+        },
+        "segmentMembership": {
+            "title": "Segment membership map",
+            "type": "object",
+            "meta:xdmType": "map",
+            "additionalProperties": {
+                "title": "Segment membership per namespace",
+                "type": "object",
+                "meta:xdmType": "map",
+                "additionalProperties": {
+                    "$ref": "context/segmentmembership"
+                }
+            },
+            "meta:xdmField": "xdm:segmentMembership"
+        },
+        "optOutConsentLevel": {
+            "type": "object",
+            "title": "Opt-out consent level",
+            "description": "Opt-out consent level.",
+            "meta:xdmType": "object",
+            "properties": {
+                "privacyOptOuts": {
+                    "title": "Privacy opt-outs",
+                    "description": "Encapsulates different opt-out types for data privacy.",
+                    "type": "array",
+                    "meta:xdmType": "array",
+                    "items": {
+                        "type": "object",
+                        "meta:xdmType": "object",
+                        "properties": {
+                            "optOutType": {
+                                "title": "Opt-out type",
+                                "type": "string",
+                                "description": "The type of opt-out.",
+                                "enum": [
+                                    "general_opt_out",
+                                    "sales_sharing_opt_out"
+                                ],
+                                "meta:xdmType": "string",
+                                "meta:xdmField": "xdm:optOutType"
+                            },
+                            "optOutValue": {
+                                "title": "Opt-out value",
+                                "type": "string",
+                                "description": "The value of opt-out signal.",
+                                "enum": [
+                                    "not_provided",
+                                    "pending",
+                                    "in",
+                                    "out"
+                                ],
+                                "meta:xdmType": "string",
+                                "meta:xdmField": "xdm:optOutValue"
+                            },
+                            "timestamp": {
+                                "title": "Opt-out timestamp",
+                                "description": "Timestamp of the received opt-out signal.",
+                                "type": "string",
+                                "format": "date-time",
+                                "meta:xdmType": "date-time",
+                                "meta:xdmField": "xdm:timestamp"
+                            }
+                        }
+                    },
+                    "meta:xdmField": "xdm:privacyOptOuts"
+                }
+            },
+            "meta:xdmField": "xdm:optOutConsentLevel"
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/profile/profile-all",
+    "meta:altId": "_experience.profile.profile-all"
+}

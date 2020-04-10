@@ -1,0 +1,113 @@
+{
+    "$id": "https://ns.adobe.com/xdm/common/descriptors/searchdescriptor",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Search Descriptor",
+    "meta:extensible": false,
+    "meta:abstract": false,
+    "type": "object",
+    "description": "Describes search annotations for specific properties of the schemas.",
+    "definitions": {
+        "searchdescriptor": {
+            "properties": {
+                "search:indexed": {
+                    "title": "Indexed",
+                    "type": "boolean",
+                    "description": "Whether the property is indexable and searchable.",
+                    "default": false,
+                    "meta:xdmType": "boolean"
+                },
+                "search:filterable": {
+                    "title": "Filterable",
+                    "type": "boolean",
+                    "description": "Whether the property can be used as a filter in search queries.",
+                    "default": false,
+                    "meta:xdmType": "boolean"
+                },
+                "search:store": {
+                    "title": "Stored",
+                    "type": "string",
+                    "description": "Whether the property value is stored in, and therefore can be retrieved from, the index.",
+                    "meta:enum": {
+                        "notStored": "notStored",
+                        "stored": "stored",
+                        "storedAndFetchByDefault": "storedAndFetchByDefault"
+                    },
+                    "default": "notStored",
+                    "meta:xdmType": "string"
+                },
+                "search:sort": {
+                    "title": "Sort Type",
+                    "type": "string",
+                    "description": "Whether and how search results can be sorted on this property.",
+                    "meta:enum": {
+                        "notSortable": "notSortable",
+                        "sorted": "sorted",
+                        "sortedCaseSensitive": "sortedCaseSensitive",
+                        "sortedCaseInsensitive": "sortedCaseInsensitive"
+                    },
+                    "default": "notSortable",
+                    "meta:xdmType": "string"
+                },
+                "search:analyzers": {
+                    "title": "Analyzers",
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "meta:xdmType": "string"
+                    },
+                    "meta:enum": {
+                        "noAnalysis": "noAnalysis",
+                        "standard": "standard",
+                        "langGeneric": "langGeneric",
+                        "langFr": "langFr",
+                        "langTh": "langTh",
+                        "langDe": "langDe",
+                        "langJa": "langJa",
+                        "langZh": "langZh",
+                        "startsWithDefaultAnalyzer": "startsWithDefaultAnalyzer",
+                        "startsWithWhiteSpaceAnalyzer": "startsWithWhiteSpaceAnalyzer",
+                        "fileName": "fileName",
+                        "fileNameExtension": "fileNameExtension"
+                    },
+                    "description": "A set of analyzers to be applied when indexing this property.",
+                    "default": "noAnalysis",
+                    "meta:xdmType": "array"
+                },
+                "search:defaultAnalyzer": {
+                    "title": "Default analyzer",
+                    "type": "string",
+                    "description": "Default analyzer to be applied when search queries are made against this property.",
+                    "meta:enum": {
+                        "noAnalysis": "noAnalysis",
+                        "standard": "standard",
+                        "langGeneric": "langGeneric",
+                        "langFr": "langFr",
+                        "langTh": "langTh",
+                        "langDe": "langDe",
+                        "langJa": "langJa",
+                        "langZh": "langZh",
+                        "startsWithDefaultAnalyzer": "startsWithDefaultAnalyzer",
+                        "startsWithWhiteSpaceAnalyzer": "startsWithWhiteSpaceAnalyzer",
+                        "fileName": "fileName",
+                        "fileNameExtension": "fileNameExtension"
+                    },
+                    "default": "noAnalysis",
+                    "meta:xdmType": "string"
+                }
+            },
+            "required": [
+                "search:indexed"
+            ]
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "xdm/common/descriptors/schemadescriptor.schema.json#/definitions/descriptor"
+        },
+        {
+            "$ref": "#/definitions/searchdescriptor"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmType": "object"
+}

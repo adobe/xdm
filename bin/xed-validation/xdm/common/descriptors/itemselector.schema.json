@@ -1,0 +1,78 @@
+{
+    "$id": "https://ns.adobe.com/xdm/common/descriptors/itemselector",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Item Selector",
+    "meta:extensible": false,
+    "meta:abstract": false,
+    "type": "object",
+    "description": "Describes how to select or match to a specific item from an array of values described by an XDM schema.  Matching may be done based on array index, @id, @type, or schema URI.",
+    "definitions": {
+        "selector": {
+            "oneOf": [
+                {
+                    "properties": {
+                        "xdm:index": {
+                            "title": "Index",
+                            "type": "integer",
+                            "description": "When present, indicates the item at this array index should be selected.",
+                            "minimum": 0,
+                            "meta:xdmType": "int"
+                        }
+                    },
+                    "required": [
+                        "xdm:index"
+                    ]
+                },
+                {
+                    "properties": {
+                        "xdm:id": {
+                            "title": "ID",
+                            "type": "string",
+                            "format": "uri",
+                            "description": "When present, indicates the item with this @id value should be selected.",
+                            "meta:xdmType": "string"
+                        }
+                    },
+                    "required": [
+                        "xdm:id"
+                    ]
+                },
+                {
+                    "properties": {
+                        "xdm:type": {
+                            "title": "Type",
+                            "type": "string",
+                            "format": "uri",
+                            "description": "When present, indicates the item with this @type value should be selected.",
+                            "meta:xdmType": "string"
+                        }
+                    },
+                    "required": [
+                        "xdm:type"
+                    ]
+                },
+                {
+                    "properties": {
+                        "xdm:schema": {
+                            "title": "Schema",
+                            "type": "string",
+                            "format": "uri",
+                            "description": "When present, indicates the item which conforms to this schema URI should be selected.",
+                            "meta:xdmType": "string"
+                        }
+                    },
+                    "required": [
+                        "xdm:schema"
+                    ]
+                }
+            ]
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/selector"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmType": "object"
+}

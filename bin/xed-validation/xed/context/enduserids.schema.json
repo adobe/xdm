@@ -1,0 +1,88 @@
+{
+    "$id": "context/enduserids.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "End user IDs",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "Condensed, normalized encapsulation of all end user identifiers. At least one of the fields is required.",
+    "minProperties": 1,
+    "meta:keys": {
+        "adcloud": "Adobe Advertising Cloud",
+        "tntid": "Adobe Target",
+        "acid": "Adobe Campaign",
+        "aaid": "Adobe Analytics",
+        "aacustomid": "Adobe Analytics custom",
+        "mcid": "Marketing Cloud identity core service",
+        "emailid": "Email address",
+        "phonenumberid": "Phone number"
+    },
+    "meta:status": "stabilizing",
+    "meta:xdmType": "object",
+    "properties": {
+        "_experience": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "mcid": {
+                    "title": "Adobe Marketing Cloud ID",
+                    "$ref": "../context/identity.schema.json",
+                    "description": "A unique identifier from Adobe Marketing Cloud.",
+                    "meta:xdmField": "https://ns.adobe.com/experience/mcid",
+                    "tagNumber": 1
+                },
+                "aaid": {
+                    "title": "Adobe Analytics Cloud end user IDs",
+                    "$ref": "../context/identity.schema.json",
+                    "description": "Adobe Analytics Cloud extension to end user IDs.",
+                    "meta:xdmField": "https://ns.adobe.com/experience/aaid",
+                    "tagNumber": 2
+                },
+                "aacustomid": {
+                    "title": "Adobe Analytics Cloud Custom end user IDs",
+                    "$ref": "../context/identity.schema.json",
+                    "description": "An Adobe Analytics custom identifier passed in on a hit.",
+                    "meta:xdmField": "https://ns.adobe.com/experience/aacustomid",
+                    "tagNumber": 3
+                },
+                "acid": {
+                    "title": "Adobe Campaign end user IDs",
+                    "$ref": "../context/identity.schema.json",
+                    "description": "Adobe Campaign extension to end user IDs.",
+                    "meta:xdmField": "https://ns.adobe.com/experience/acid",
+                    "tagNumber": 4
+                },
+                "tntid": {
+                    "title": "Adobe Target end user IDs",
+                    "$ref": "../context/identity.schema.json",
+                    "description": "Adobe Target extension to end user IDs.",
+                    "meta:xdmField": "https://ns.adobe.com/experience/tntid",
+                    "tagNumber": 5
+                },
+                "adcloud": {
+                    "title": "Adobe Advertising Cloud end user IDs",
+                    "$ref": "../context/identity.schema.json",
+                    "description": "Adobe Advertising Cloud extension to end user IDs.",
+                    "meta:xdmField": "https://ns.adobe.com/experience/adcloud",
+                    "tagNumber": 6
+                },
+                "emailid": {
+                    "title": "Email address IDs",
+                    "$ref": "../context/identity.schema.json",
+                    "description": "Email addresses used as IDs.",
+                    "meta:xdmField": "https://ns.adobe.com/experience/emailid",
+                    "tagNumber": 7
+                },
+                "phonenumberid": {
+                    "title": "Phone number IDs",
+                    "$ref": "../context/identity.schema.json",
+                    "description": "Phone numbers used as IDs.",
+                    "meta:xdmField": "https://ns.adobe.com/experience/phonenumberid",
+                    "tagNumber": 8
+                }
+            },
+            "tagNumber": 1
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/enduserids",
+    "meta:altId": "_xdm.context.enduserids"
+}

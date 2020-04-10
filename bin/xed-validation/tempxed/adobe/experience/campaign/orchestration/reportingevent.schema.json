@@ -1,0 +1,162 @@
+{
+    "$id": "adobe/experience/campaign/orchestration/reportingevent",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "User journey reporting event",
+    "type": "object",
+    "description": "",
+    "meta:status": "stabilizing",
+    "meta:xdmType": "object",
+    "properties": {
+        "timestamp": {
+            "title": "Timestamp for reporting event",
+            "type": "string",
+            "format": "date-time",
+            "description": "Time of generation of reporting event",
+            "meta:xdmType": "date-time",
+            "meta:xdmField": "xdm:timestamp"
+        },
+        "dataEnrichmentSource": {
+            "title": "Data Source",
+            "$ref": "data/datasource",
+            "description": "Data source used for data enrichment",
+            "meta:xdmField": "xdm:dataEnrichmentSource"
+        },
+        "dataEntityUID": {
+            "title": "Unique identifier of data entity",
+            "type": "string",
+            "format": "uri",
+            "description": "The identifier for the data entity used for data enrichment",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:dataEntityUID"
+        },
+        "orgUnit": {
+            "title": "Organizational Unit",
+            "$ref": "common/orgunit",
+            "description": "The unit within the organization owning this journey version.",
+            "meta:xdmField": "xdm:orgUnit"
+        },
+        "flowControlType": {
+            "title": "Flow control",
+            "type": "string",
+            "description": "Flow control in the journey triggered by the event.",
+            "enum": [
+                "end",
+                "jump",
+                "timer",
+                "condition"
+            ],
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:flowControlType"
+        },
+        "flowControlID": {
+            "title": "Unique identifier for the flow control",
+            "type": "string",
+            "format": "uri",
+            "description": "The identifier of the flow control in a journey version",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:flowControlID"
+        },
+        "eventMetrics": {
+            "title": "Metrics to be reported",
+            "$ref": "adobe/experience/campaign/orchestration/reportingeventmetrics",
+            "description": "The metrics for actions performed during this observation.",
+            "meta:xdmField": "xdm:eventMetrics"
+        },
+        "_experience": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "campaign": {
+                    "type": "object",
+                    "meta:xdmType": "object",
+                    "properties": {
+                        "orchestrationAction": {
+                            "title": "Action on step transition",
+                            "type": "object",
+                            "description": "Action taken during a step transition that happened for an entity in state machine",
+                            "meta:xdmType": "object",
+                            "properties": {
+                                "actionID": {
+                                    "title": "Action identifier",
+                                    "type": "string",
+                                    "format": "uri-reference",
+                                    "description": "Unique identifier denoting the associated action.",
+                                    "meta:xdmType": "string",
+                                    "meta:xdmField": "xdm:actionID"
+                                },
+                                "actionType": {
+                                    "title": "Action Type",
+                                    "type": "string",
+                                    "description": "The type of action to be performed.",
+                                    "meta:xdmType": "string",
+                                    "meta:xdmField": "xdm:actionType"
+                                }
+                            },
+                            "meta:xdmField": "https://ns.adobe.com/experience/campaign/orchestrationAction"
+                        },
+                        "orchestrationExternalEvent": {
+                            "title": "external event received",
+                            "$ref": "adobe/experience/campaign/orchestration/reportingexternalevent",
+                            "description": "External event received, triggering the state transition",
+                            "meta:xdmField": "https://ns.adobe.com/experience/campaign/orchestrationExternalEvent"
+                        },
+                        "journey": {
+                            "title": "Journey of an entity",
+                            "type": "object",
+                            "description": "Journey created for an entity by marketer.",
+                            "meta:xdmType": "object",
+                            "properties": {
+                                "_id": {
+                                    "title": "Journey unique identifier",
+                                    "type": "string",
+                                    "format": "uri-reference",
+                                    "description": "The unique identifier of the journey created by the marketer.",
+                                    "meta:xdmType": "string",
+                                    "meta:xdmField": "@id"
+                                }
+                            },
+                            "meta:xdmField": "https://ns.adobe.com/experience/campaign/journey",
+                            "required": [
+                                "_id"
+                            ]
+                        },
+                        "journeyVersion": {
+                            "title": "Journey version",
+                            "type": "object",
+                            "description": "Schema for describing the version of a journey, where version holds the state machine",
+                            "meta:xdmType": "object",
+                            "properties": {
+                                "_id": {
+                                    "title": "Journey version identifier",
+                                    "type": "string",
+                                    "format": "uri-reference",
+                                    "description": "The unique identifier denoting the version of journey on which the entity is active.",
+                                    "meta:xdmType": "string",
+                                    "meta:xdmField": "@id"
+                                }
+                            },
+                            "meta:xdmField": "https://ns.adobe.com/experience/campaign/journeyVersion",
+                            "required": [
+                                "_id"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "journey",
+                        "journeyVersion"
+                    ]
+                }
+            },
+            "required": [
+                "campaign"
+            ]
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/campaign/orchestration/reportingevent",
+    "meta:altId": "_experience.campaign.orchestration.reportingevent",
+    "required": [
+        "_experience",
+        "timestamp",
+        "orgID"
+    ]
+}

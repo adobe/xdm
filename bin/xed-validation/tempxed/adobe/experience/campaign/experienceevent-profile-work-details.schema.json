@@ -1,0 +1,72 @@
+{
+    "$id": "adobe/experience/campaign/experienceevent-profile-work-details",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Adobe Campaign ExperienceEvent - Profile Snapshot Work Details",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "description": "Adobe Campaign ExperienceEvent optional snapshot of profile work details.",
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "_experience": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "campaign": {
+                    "type": "object",
+                    "meta:xdmType": "object",
+                    "properties": {
+                        "message": {
+                            "title": "A single message sent to a recipient.",
+                            "type": "object",
+                            "meta:xdmType": "object",
+                            "properties": {
+                                "profileSnapshot": {
+                                    "title": "Profile Snapshot",
+                                    "description": "Profile snapshot contains the recipient of the message. This property is primarily used to link the message to a Profile using the `IdentityMap` but it can also be used to freeze some properties of the profile at the time the message was sent.",
+                                    "type": "object",
+                                    "meta:xdmType": "object",
+                                    "properties": {
+                                        "workAddress": {
+                                            "title": "Work Address",
+                                            "$ref": "common/address",
+                                            "description": "A work postal address.",
+                                            "meta:xdmField": "xdm:workAddress"
+                                        },
+                                        "workEmail": {
+                                            "title": "Work Email",
+                                            "$ref": "context/emailaddress",
+                                            "description": "A work email address.",
+                                            "meta:xdmField": "xdm:workEmail"
+                                        },
+                                        "workPhone": {
+                                            "title": "Work Phone",
+                                            "$ref": "context/phonenumber",
+                                            "description": "Work phone number.",
+                                            "meta:xdmField": "xdm:workPhone"
+                                        },
+                                        "organizations": {
+                                            "title": "Organizations",
+                                            "type": "array",
+                                            "meta:xdmType": "array",
+                                            "items": {
+                                                "type": "string",
+                                                "meta:xdmType": "string"
+                                            },
+                                            "meta:xdmField": "xdm:organizations"
+                                        }
+                                    },
+                                    "meta:xdmField": "xdm:profileSnapshot"
+                                }
+                            },
+                            "meta:xdmField": "https://ns.adobe.com/experience/campaign/message"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/campaign/experienceevent-profile-work-details",
+    "meta:altId": "_experience.campaign.experienceevent-profile-work-details"
+}

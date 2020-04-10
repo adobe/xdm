@@ -1,0 +1,34 @@
+{
+    "$id": "https://ns.adobe.com/xdm/context/experienceevent-technical-details",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "ExperienceEvent technical details",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "description": "Technical details extension for ExperienceEvent.",
+    "definitions": {
+        "experienceevent-technical-details": {
+            "properties": {
+                "xdm:dataSource": {
+                    "title": "Data source",
+                    "$refkept": "https://ns.adobe.com/xdm/data/datasource",
+                    "description": "Globally unique identification of a data source."
+                },
+                "xdm:receivedTimestamp": {
+                    "title": "Received time stamp",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "The time at which this interaction was received by a server.",
+                    "meta:xdmType": "date-time"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/experienceevent-technical-details"
+        }
+    ],
+    "meta:status": "stabilizing",
+    "meta:xdmType": "object"
+}

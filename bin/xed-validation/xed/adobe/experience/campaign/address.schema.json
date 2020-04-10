@@ -1,0 +1,42 @@
+{
+    "$id": "adobe/experience/campaign/address.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Address Extensions for Adobe Campaign",
+    "type": "object",
+    "description": "Address extension properties specific to Adobe Campaign.",
+    "meta:xdmType": "object",
+    "properties": {
+        "_experience": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "campaign": {
+                    "type": "object",
+                    "meta:xdmType": "object",
+                    "properties": {
+                        "addressErrorCount": {
+                            "title": "Address Error Count",
+                            "type": "integer",
+                            "description": "Number of consecutive errors when sending to this address.",
+                            "meta:xdmType": "int",
+                            "meta:xdmField": "https://ns.adobe.com/experience/campaign/addressErrorCount",
+                            "tagNumber": 1
+                        },
+                        "addressQuality": {
+                            "title": "Address Quality",
+                            "type": "string",
+                            "description": "Address quality rating.",
+                            "meta:xdmType": "string",
+                            "meta:xdmField": "https://ns.adobe.com/experience/campaign/addressQuality",
+                            "tagNumber": 2
+                        }
+                    },
+                    "tagNumber": 1
+                }
+            },
+            "tagNumber": 1
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/campaign/address",
+    "meta:altId": "_experience.campaign.address"
+}

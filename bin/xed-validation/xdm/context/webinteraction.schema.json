@@ -1,0 +1,53 @@
+{
+    "$id": "https://ns.adobe.com/xdm/context/webinteraction",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Web interaction",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "Interaction details from inside the context of a loaded web page.",
+    "definitions": {
+        "webinteraction": {
+            "properties": {
+                "xdm:type": {
+                    "title": "Type",
+                    "type": "string",
+                    "description": "The link type.",
+                    "enum": [
+                        "download",
+                        "exit",
+                        "other"
+                    ],
+                    "meta:enum": {
+                        "download": "Download",
+                        "exit": "Exit",
+                        "other": "Other"
+                    },
+                    "meta:xdmType": "string"
+                },
+                "xdm:URL": {
+                    "title": "URL",
+                    "type": "string",
+                    "description": "The actual link or URL used for this web interaction.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:name": {
+                    "title": "Name",
+                    "type": "string",
+                    "description": "The normative name used for this web link, used for classification purposes.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:linkClicks": {
+                    "$refkept": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "Click of a web link has occurred."
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/webinteraction"
+        }
+    ],
+    "meta:status": "stabilizing",
+    "meta:xdmType": "object"
+}

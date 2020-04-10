@@ -1,0 +1,29 @@
+{
+    "$id": "context/profile-owning-entities.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Profile owning entity details",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "description": "This mixin is used to capture information regarding a particular organization or geographical unit to which the individual belongs.",
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "orgUnit": {
+            "title": "Organizational unit",
+            "$ref": "../common/orgunit.schema.json",
+            "description": "The unit within the organization owning the profile. This can be used to reference the organization details maintained in another dataset.",
+            "meta:xdmField": "xdm:orgUnit",
+            "tagNumber": 1
+        },
+        "geoUnit": {
+            "title": "Geographical unit",
+            "$ref": "../common/geounit.schema.json",
+            "description": "The geographical unit within the organization owning the profile. This can be used to reference the geographical information maintained in another dataset.",
+            "meta:xdmField": "xdm:geoUnit",
+            "tagNumber": 2
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/profile-owning-entities",
+    "meta:altId": "_xdm.context.profile-owning-entities"
+}

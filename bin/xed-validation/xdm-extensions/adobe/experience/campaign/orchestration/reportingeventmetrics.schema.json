@@ -1,0 +1,105 @@
+{
+    "$id": "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "User journey reporting event metrics",
+    "type": "object",
+    "description": "For state transitions, we capture certain metrics along with the dimensions. This schema hold the metrics associated with reporting of state transition",
+    "definitions": {
+        "reportingeventmetrics": {
+            "properties": {
+                "https://ns.adobe.com/experience/campaign/orchestrationEnteredJourneyInstance": {
+                    "title": "Entered Journey",
+                    "$refkept": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "Set to 1 when a journey instance is created"
+                },
+                "https://ns.adobe.com/experience/campaign/orchestrationExitedJourneyInstance": {
+                    "title": "Exited journey",
+                    "$refkept": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "Set to 1 when a journey instance is flagged as ended"
+                },
+                "https://ns.adobe.com/experience/campaign/orchestrationErrorInJourneyInstance": {
+                    "title": "Error in Journey Instance",
+                    "$refkept": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "Set to 1 when an error is raised in a journey instance"
+                },
+                "https://ns.adobe.com/experience/campaign/orchestrationErrorInEventProcessing": {
+                    "title": "Eroor in step processing",
+                    "$refkept": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "Set to 1 when an error occurs during an event processing, that is during a step processing"
+                },
+                "https://ns.adobe.com/experience/campaign/orchestrationErrorInActionExecution": {
+                    "title": "Error in action execution",
+                    "$refkept": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "Set to 1 when an error occurs during an action execution"
+                },
+                "https://ns.adobe.com/experience/campaign/orchestrationErrorInJumpActionExecution": {
+                    "title": "Error in jump action",
+                    "$refkept": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "Set to 1 when an error occurs during the jump action execution"
+                },
+                "https://ns.adobe.com/experience/campaign/orchestrationErrorInEnrichment": {
+                    "title": "Error in enrichment",
+                    "$refkept": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "Set to 1 when an error occurs during enrichment"
+                },
+                "https://ns.adobe.com/experience/campaign/orchestrationExecutedEvent": {
+                    "title": "Event processed",
+                    "$refkept": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "Set to 1 when an event as triggered a transition in a journey instance"
+                },
+                "https://ns.adobe.com/experience/campaign/orchestrationExecutedAction": {
+                    "title": "Action executed",
+                    "$refkept": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "Set to 1 when an action is executed successfully in a journey instance"
+                },
+                "https://ns.adobe.com/experience/campaign/orchestrationExecutedFlowControl": {
+                    "title": "Flow control executed",
+                    "$refkept": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "Set to 1 when an action is executed successfully in a journey instance"
+                },
+                "https://ns.adobe.com/experience/campaign/orchestrationExecutedJumpAction": {
+                    "title": "Executed jump action",
+                    "$refkept": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "Set to 1 when a jump action is executed successfully in a journey instance"
+                },
+                "https://ns.adobe.com/experience/campaign/orchestrationExecutedEnrichment": {
+                    "title": "Enrichment made successfully ",
+                    "$refkept": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "Set to 1 when an enrichment is executed successfully in a journey instance"
+                },
+                "https://ns.adobe.com/experience/campaign/orchestrationJumpToJourney": {
+                    "title": "Jump action executed successfully",
+                    "$refkept": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "Set to 1 when a jump to another journey instance is made"
+                },
+                "https://ns.adobe.com/experience/campaign/orchestrationTimeoutInAction": {
+                    "title": "Timeout In Action",
+                    "$refkept": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "Set to 1 when timeout occurs during execution of an action"
+                },
+                "https://ns.adobe.com/experience/campaign/orchestrationTimeoutInEvent": {
+                    "title": "Timeout in Event",
+                    "$refkept": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "Set to 1 when timeout occurs during the processing of an event"
+                },
+                "https://ns.adobe.com/experience/campaign/orchestrationTimeoutInJourney": {
+                    "title": "Timeout In Journey",
+                    "$refkept": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "Set to 1 when timeout occurs during the flow of a journey"
+                },
+                "https://ns.adobe.com/experience/campaign/orchestrationTimeoutInEnrichment": {
+                    "title": "Timeout In Enrichment",
+                    "$refkept": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "Set to 1 when timeout occurs during enrichement"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/reportingeventmetrics"
+        }
+    ],
+    "meta:status": "stabilizing",
+    "meta:xdmType": "object"
+}

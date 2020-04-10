@@ -1,0 +1,136 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "adobe/experience/adcloud/searchadvertising/aggregateperformancebykeyword",
+    "title": "Search Advertising Aggregated Performance Measures By Keyword",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "description": "Search Advertising Aggregated Performance Measures By Keyword is a rolled up data of the collection of aggregated performance measures as pulled from Search Advertising Platforms by Keyword.",
+    "meta:status": [
+        "deprecated",
+        "experimental"
+    ],
+    "meta:xdmType": "object",
+    "properties": {
+        "_id": {
+            "title": "Identifier",
+            "type": "string",
+            "format": "uri-reference",
+            "description": "A unique identifier for the time-series event.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "@id"
+        },
+        "timestamp": {
+            "title": "Timestamp",
+            "type": "string",
+            "format": "date-time",
+            "description": "The time when an event or observation occurred.",
+            "meta:xdmType": "date-time",
+            "meta:xdmField": "xdm:timestamp"
+        },
+        "eventType": {
+            "title": "Event Type",
+            "type": "string",
+            "description": "The primary event type for this time-series record.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:eventType"
+        },
+        "accountId": {
+            "title": "Account Identifier",
+            "type": "string",
+            "description": "Identifier that defines Customer/Client ID setup on the Search Advertising Platform.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:accountId"
+        },
+        "campaignId": {
+            "title": "Campaign Identifier",
+            "type": "string",
+            "description": "Campaign ID on the search advertising platform..",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:campaignId"
+        },
+        "adgroupId": {
+            "title": "Ad Group Identifier",
+            "type": "string",
+            "description": "Ad Group ID on the search advertising platform.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:adgroupId"
+        },
+        "termId": {
+            "title": "Search Term Identifier",
+            "type": "string",
+            "description": "Search Term ID on the search advertising platform.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:termId"
+        },
+        "term": {
+            "title": "Search Term",
+            "type": "string",
+            "description": "Search Term targeted for the Ad.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:term"
+        },
+        "matchType": {
+            "title": "Term Match Type",
+            "type": "string",
+            "description": "Match Type associated to the Search Term being targeted for the Ad.",
+            "enum": [
+                "Broad",
+                "Phrase",
+                "Exact",
+                "Advanced",
+                "Standard",
+                "Website",
+                "Product Target",
+                "Product Group"
+            ],
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:matchType"
+        },
+        "searchEngineId": {
+            "title": "Search Engine Identifier",
+            "type": "integer",
+            "description": "The application-specified identifier used to identify the Search Advertising Platform Name.",
+            "meta:xdmType": "int",
+            "meta:xdmField": "xdm:searchEngineId"
+        },
+        "clicks": {
+            "$ref": "data/measure",
+            "description": "Count of Clicks for a given ad displayed on the network.",
+            "meta:xdmField": "xdm:clicks"
+        },
+        "impressions": {
+            "$ref": "data/measure",
+            "description": "Count of impressions for a given ad displayed on the network.",
+            "meta:xdmField": "xdm:impressions"
+        },
+        "totalCost": {
+            "$ref": "data/measure",
+            "description": "Total Advertising Spend for a given ad displayed on the network. The spend is in the account currency configured on the network.",
+            "meta:xdmField": "xdm:totalCost"
+        },
+        "avgPosition": {
+            "$ref": "data/measure",
+            "description": "Average Position of the Ad displayed on the network.",
+            "meta:xdmField": "xdm:avgPosition"
+        },
+        "topPageBid": {
+            "$ref": "data/measure",
+            "description": "Top of the Page Bid Estimator. The measure is computed by the network and is not an additive measure.",
+            "meta:xdmField": "xdm:topPageBid"
+        },
+        "qualityScore": {
+            "$ref": "data/measure",
+            "description": "Quality Score of the Keyword assigned by the network - range 1 to 10. This is not an additive measure.",
+            "meta:xdmField": "xdm:qualityScore"
+        },
+        "device": {
+            "title": "Device",
+            "$ref": "context/device",
+            "description": "The device from where the ad was displayed.",
+            "meta:xdmField": "xdm:device"
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/adcloud/searchadvertising/aggregateperformancebykeyword",
+    "meta:altId": "_experience.adcloud.searchadvertising.aggregateperformancebykeyword"
+}

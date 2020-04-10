@@ -1,0 +1,67 @@
+{
+    "$id": "https://ns.adobe.com/xdm/common/geo",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "type": "object",
+    "meta:extensible": true,
+    "title": "Geo",
+    "description": "The geographic related data where an event was observed.",
+    "definitions": {
+        "geo": {
+            "properties": {
+                "xdm:countryCode": {
+                    "title": "Country code",
+                    "type": "string",
+                    "pattern": "^[A-Z]{2}$",
+                    "description": "The two-character [ISO 3166-1 alpha-2](https://datahub.io/core/country-list) code for the country.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:stateProvince": {
+                    "title": "State or province",
+                    "type": "string",
+                    "description": "The state, or province portion of the observation. The format follows the [ISO 3166-2 (country and subdivision)][http://www.unece.org/cefact/locode/subdivisions.html] standard.",
+                    "examples": [
+                        "US-CA",
+                        "DE-BB",
+                        "JP-13"
+                    ],
+                    "pattern": "([A-Z]{2}-[A-Z0-9]{1,3}|)",
+                    "meta:xdmType": "string"
+                },
+                "xdm:city": {
+                    "title": "City",
+                    "type": "string",
+                    "description": "The name of the city.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:postalCode": {
+                    "title": "Postal code",
+                    "type": "string",
+                    "description": "The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:dmaID": {
+                    "title": "Designated market area",
+                    "type": "integer",
+                    "description": "The Nielsen media research designated market area.",
+                    "meta:xdmType": "int"
+                },
+                "xdm:msaID": {
+                    "title": "Metropolitan statistical area",
+                    "type": "integer",
+                    "description": "The metropolitan statistical area in the United States where the observation occurred.",
+                    "meta:xdmType": "int"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "xdm/external/schema/geocoordinates.schema.json"
+        },
+        {
+            "$ref": "#/definitions/geo"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmType": "object"
+}

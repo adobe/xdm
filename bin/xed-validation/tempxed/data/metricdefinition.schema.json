@@ -1,0 +1,59 @@
+{
+    "$id": "data/metricdefinition",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Metric Definition",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "",
+    "meta:status": "stabilizing",
+    "meta:xdmType": "object",
+    "properties": {
+        "_id": {
+            "type": "string",
+            "format": "uri-reference",
+            "description": "The unique identifier of this metric.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "@id"
+        },
+        "_schema": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
+                    "meta:xdmType": "string",
+                    "meta:xdmField": "schema:name"
+                }
+            },
+            "required": [
+                "name"
+            ]
+        },
+        "measurement": {
+            "type": "string",
+            "description": "How to take measures of this metric.",
+            "examples": [
+                "distance",
+                "time",
+                "price",
+                "count"
+            ],
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:measurement"
+        },
+        "unit": {
+            "type": "string",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:unit"
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/data/metricdefinition",
+    "meta:altId": "_xdm.data.metricdefinition",
+    "required": [
+        "_id",
+        "_schema",
+        "measurement",
+        "unit"
+    ]
+}

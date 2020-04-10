@@ -1,0 +1,68 @@
+{
+    "$id": "https://ns.adobe.com/xdm/data/metricdefinition",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Metric Definition",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "",
+    "definitions": {
+        "metricdefinition": {
+            "properties": {
+                "@id": {
+                    "type": "string",
+                    "format": "uri-reference",
+                    "description": "The unique identifier of this metric.",
+                    "meta:xdmType": "string"
+                },
+                "schema:name": {
+                    "type": "string",
+                    "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
+                    "meta:xdmType": "string"
+                },
+                "xdm:measurement": {
+                    "type": "string",
+                    "description": "How to take measures of this metric.",
+                    "examples": [
+                        "distance",
+                        "time",
+                        "price",
+                        "count"
+                    ],
+                    "meta:xdmType": "string"
+                },
+                "xdm:unit": {
+                    "anyOf": [
+                        {
+                            "type": "string",
+                            "description": "The unit that this metric is measured in. Whenever possible, metrics should follow the [SI base units](https://www.bipm.org/en/measurement-units/) or be [ISO 4217 currency codes](https://www.iso.org/iso-4217-currency-codes.html).",
+                            "examples": [
+                                "m",
+                                "kg",
+                                "s",
+                                "USD"
+                            ],
+                            "meta:xdmType": "string"
+                        },
+                        {
+                            "const": null,
+                            "description": "The unit that this metric is measured in. For metric that are counts, the `xdm:unit` must be `null`."
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/metricdefinition"
+        }
+    ],
+    "required": [
+        "@id",
+        "schema:name",
+        "xdm:measurement",
+        "xdm:unit"
+    ],
+    "meta:status": "stabilizing",
+    "meta:xdmType": "object"
+}

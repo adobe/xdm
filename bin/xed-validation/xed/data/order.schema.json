@@ -1,0 +1,62 @@
+{
+    "$id": "data/order.schema.json",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Order",
+    "type": "object",
+    "description": "The order placed for a product list.",
+    "meta:status": "experimental",
+    "meta:xdmType": "object",
+    "properties": {
+        "purchaseID": {
+            "title": "Purchase ID",
+            "type": "string",
+            "description": "Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:purchaseID",
+            "tagNumber": 1
+        },
+        "purchaseOrderNumber": {
+            "title": "Purchase Order Number",
+            "type": "string",
+            "description": "Unique identifier assigned by the purchaser for this purchase or contract.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:purchaseOrderNumber",
+            "tagNumber": 2
+        },
+        "payments": {
+            "title": "Payment List",
+            "type": "array",
+            "description": "The list of payments for this order.",
+            "meta:xdmType": "array",
+            "items": {
+                "$ref": "../data/paymentitem.schema.json",
+                "tagNumber": 1
+            },
+            "meta:xdmField": "xdm:payments",
+            "tagNumber": 3
+        },
+        "currencyCode": {
+            "title": "Currency",
+            "type": "string",
+            "examples": [
+                "USD",
+                "EUR"
+            ],
+            "pattern": "^[A-Z]{3}$",
+            "description": "The ISO 4217 currency code used for the order totals.",
+            "meta:xdmType": "string",
+            "meta:xdmField": "xdm:currencyCode",
+            "tagNumber": 4
+        },
+        "priceTotal": {
+            "title": "Price Total",
+            "type": "number",
+            "description": "The total price of this order after all discounts and taxes have been applied.",
+            "meta:xdmType": "number",
+            "meta:xdmField": "xdm:priceTotal",
+            "tagNumber": 5
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/xdm/data/order",
+    "meta:altId": "_xdm.data.order"
+}

@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/data/datasource
 ```
 
-The Datasource acts as a namespace or unique identifier associated with a collection of data. Each EndUserID is associated with a given Datasource. A user can create and obtain information about a Datasource during the solution onboarding.
+The data source acts as a namespace or unique identifier associated with a collection of data. Each EndUserID is associated with a given data source. A user can create and obtain information about a data source during the solution onboarding.
 
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
@@ -32,7 +32,7 @@ The Datasource acts as a namespace or unique identifier associated with a collec
 ## @id
 ### Identifier
 
-The unique ID of this data source. This would be provided by the individual or system that created the Datasource.
+The unique ID of this data source. This would be provided by the individual or system that created the data source.
 
 
 `@id`

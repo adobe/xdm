@@ -7,14 +7,14 @@
   ],
   "$id": "https://ns.adobe.com/xdm/channels/mpns",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "MPNS Channel",
-  "description": "Microsoft Push Notification Service channel.",
+  "title": "Microsoft Push Notification Service (MPNS) Channel",
+  "description": "Microsoft Push Notification service is an asynchronous service that offers a channel to send data to a Windows phone app from a cloud service.",
   "meta:extensible": true,
   "meta:extends": [
     "https://ns.adobe.com/xdm/channels/channel#/definitions/channel"
   ],
   "type": "object",
-  "meta:abstract": false,
+  "meta:abstract": true,
   "definitions": {
     "channel": {
       "properties": {
@@ -42,10 +42,10 @@
           "meta:enum": {
             "https://ns.adobe.com/xdm/channel-types/web": "The world wide web, including mobile web",
             "https://ns.adobe.com/xdm/channel-types/social": "Social media platforms",
-            "https://ns.adobe.com/xdm/channel-types/mobile": "Mobile applications",
-            "https://ns.adobe.com/xdm/channel-types/messaging": "Instant Messaging",
-            "https://ns.adobe.com/xdm/channel-types/email": "E-Mail",
-            "https://ns.adobe.com/xdm/channel-types/offline": "Non-Digital experience channels"
+            "https://ns.adobe.com/xdm/channel-types/mobile": "Mobile apps",
+            "https://ns.adobe.com/xdm/channel-types/messaging": "Instant messaging",
+            "https://ns.adobe.com/xdm/channel-types/email": "Email",
+            "https://ns.adobe.com/xdm/channel-types/offline": "Non-digital experience channels"
           }
         },
         "xdm:contentTypes": {

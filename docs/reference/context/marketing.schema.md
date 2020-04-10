@@ -27,11 +27,53 @@ The information related to marketing activities that are active with the touchpo
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
+| [xdm:campaignGroup](#xdmcampaigngroup) | `string` | Optional | Marketing (this schema) |
+| [xdm:campaignName](#xdmcampaignname) | `string` | Optional | Marketing (this schema) |
 | [xdm:trackingCode](#xdmtrackingcode) | `string` | Optional | Marketing (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
+## xdm:campaignGroup
+### Campaign group
+
+Name of the campaign group where multiple campaigns are grouped together like '50%_DISCOUNT'.
+
+`xdm:campaignGroup`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:campaignGroup Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:campaignName
+### Campaign name
+
+Name of the campaign used to identify marketing campaign like '50%_DISCOUNT_USA' or '50%_DISCOUNT_ASIA'.
+
+`xdm:campaignName`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:campaignName Type
+
+
+`string`
+
+
+
+
+
+
 ## xdm:trackingCode
-### Tracking Code
+### Tracking code
 
 Tracking code that can be used to identify the marketing campaign the event is associated with.
 

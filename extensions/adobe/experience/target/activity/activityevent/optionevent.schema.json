@@ -21,7 +21,7 @@
             "xdm:locationID": {
               "title": "Location Identifier",
               "type": "string",
-              "description": "The local location identifier"
+              "description": "The local location identifier."
             },
             "xdm:selector": {
               "title": "Selector",

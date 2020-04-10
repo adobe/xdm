@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "ExperienceEvent Segment Membership Details.",
+  "description": "This mixin is used to capture information regarding ExperienceEvent segment membership, including which segments the individual belongs to, the last qualification time, and when the membership is valid until.",
   "definitions": {
     "experienceevent-segmentmembership": {
       "properties": {

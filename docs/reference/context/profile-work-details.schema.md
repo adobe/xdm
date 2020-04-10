@@ -1,25 +1,25 @@
 
-# Profile Work Details Schema
+# Profile work details Schema
 
 ```
 https://ns.adobe.com/xdm/context/profile-work-details
 ```
 
-Work related end user profile information.
+This mixin is used to capture information regarding work-related details of the individual such as work address, work email, work phone number, and organizations to which the profile belongs.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/profile-work-details.schema.json](context/profile-work-details.schema.json) |
 ## Schema Hierarchy
 
-* Profile Work Details `https://ns.adobe.com/xdm/context/profile-work-details`
+* Profile work details `https://ns.adobe.com/xdm/context/profile-work-details`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Address](../common/address.schema.md) `https://ns.adobe.com/xdm/common/address`
-  * [Email Address](emailaddress.schema.md) `https://ns.adobe.com/xdm/context/emailaddress`
-  * [Phone Number](phonenumber.schema.md) `https://ns.adobe.com/xdm/context/phonenumber`
+  * [Postal address](../common/address.schema.md) `https://ns.adobe.com/xdm/common/address`
+  * [Email address](emailaddress.schema.md) `https://ns.adobe.com/xdm/context/emailaddress`
+  * [Phone number](phonenumber.schema.md) `https://ns.adobe.com/xdm/context/phonenumber`
 
 
-## Profile Work Details Example
+## Profile work details Example
 ```json
 {
   "xdm:workAddress": {
@@ -51,14 +51,14 @@ Work related end user profile information.
 }
 ```
 
-# Profile Work Details Properties
+# Profile work details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:organizations](#xdmorganizations) | `string[]` | Optional | Profile Work Details (this schema) |
-| [xdm:workAddress](#xdmworkaddress) | Address | Optional | Profile Work Details (this schema) |
-| [xdm:workEmail](#xdmworkemail) | Email Address | Optional | Profile Work Details (this schema) |
-| [xdm:workPhone](#xdmworkphone) | Phone Number | Optional | Profile Work Details (this schema) |
+| [xdm:organizations](#xdmorganizations) | `string[]` | Optional | Profile work details (this schema) |
+| [xdm:workAddress](#xdmworkaddress) | Postal address | Optional | Profile work details (this schema) |
+| [xdm:workEmail](#xdmworkemail) | Email address | Optional | Profile work details (this schema) |
+| [xdm:workPhone](#xdmworkphone) | Phone number | Optional | Profile work details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:organizations
@@ -87,57 +87,57 @@ All items must be of the type:
 
 
 ## xdm:workAddress
-### Work Address
+### Work address
 
 A work postal address.
 
 `xdm:workAddress`
 * is optional
-* type: Address
+* type: Postal address
 * defined in this schema
 
 ### xdm:workAddress Type
 
 
-* [Address](../common/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
+* [Postal address](../common/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
 
 
 
 
 
 ## xdm:workEmail
-### Work Email
+### Work email
 
 A work email address.
 
 `xdm:workEmail`
 * is optional
-* type: Email Address
+* type: Email address
 * defined in this schema
 
 ### xdm:workEmail Type
 
 
-* [Email Address](emailaddress.schema.md) – `https://ns.adobe.com/xdm/context/emailaddress`
+* [Email address](emailaddress.schema.md) – `https://ns.adobe.com/xdm/context/emailaddress`
 
 
 
 
 
 ## xdm:workPhone
-### Work Phone
+### Work phone
 
 Work phone number.
 
 `xdm:workPhone`
 * is optional
-* type: Phone Number
+* type: Phone number
 * defined in this schema
 
 ### xdm:workPhone Type
 
 
-* [Phone Number](phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
+* [Phone number](phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
 
 
 

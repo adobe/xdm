@@ -1,22 +1,22 @@
 
-# impressions Schema
+# Impressions Schema
 
 ```
 https://ns.adobe.com/xdm/data/metrics/advertising/impressions
 ```
 
-The metric impressions describe the number of digital assets rendered.
+The metric impressions describes the number of digital assets rendered.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/impressions.schema.json](data/impressions.schema.json) |
 ## Schema Hierarchy
 
-* impressions `https://ns.adobe.com/xdm/data/metrics/advertising/impressions`
+* Impressions `https://ns.adobe.com/xdm/data/metrics/advertising/impressions`
   * [Metric Definition](metricdefinition.schema.md) `https://ns.adobe.com/xdm/data/metricdefinition`
 
 
-## impressions Example
+## Impressions Example
 ```json
 {
   "schema:name": "metric: impressions",
@@ -26,7 +26,7 @@ The metric impressions describe the number of digital assets rendered.
 }
 ```
 
-# impressions Properties
+# Impressions Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|

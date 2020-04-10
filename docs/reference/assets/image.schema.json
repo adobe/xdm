@@ -17,7 +17,7 @@
         "http://ns.adobe.com/adobecloud/core/1.0/asset",
         "https://ns.adobe.com/xdm/assets/rectangular"
     ],
-    "description": "The Image class is for raster and vector image assets, including JPEG, PNG, SVG files",
+    "description": "The image class is for raster and vector image assets, including JPEG, PNG, SVG files.",
     "definitions": {
         "rational": {
             "$id": "https://ns.adobe.com/xdm/assets/image/rational",
@@ -26,12 +26,12 @@
             "properties": {
                 "tiff:numerator": {
                     "title": "Numerator",
-                    "description": "The numerator of a fraction",
+                    "description": "The numerator of a fraction.",
                     "type": "integer"
                 },
                 "tiff:denominator": {
                     "title": "Denominator",
-                    "description": "The denominator of a fraction",
+                    "description": "The denominator of a fraction.",
                     "not": {
                         "maximum": 0,
                         "minimum": 0
@@ -50,7 +50,7 @@
                     "type": "integer",
                     "meta:usereditable": false,
                     "title": "Orientation",
-                    "description": "The orientation of the image. Following values are permitted:\n- `1` = Horizontal (normal)\n- `2` = Mirror horizontal\n- `3` = Rotate 180 degrees\n- `4` = Mirror vertical\n- `5` = Mirror horizontal and rotate 270 degrees clockwise\n- `6` = Rotate 90 degrees clockwise\n- `7` = Mirror horizontal and rotate 90 degrees clockwise\n- `8` = Rotate 270 degrees clockwise",
+                    "description": "The orientation of the image. Following values are permitted:\n- `1` = Horizontal (normal)\n- `2` = Mirror horizontal\n- `3` = Rotate 180 degrees\n- `4` = Mirror vertical\n- `5` = Mirror horizontal and rotate 270 degrees clockwise\n- `6` = Rotate 90 degrees clockwise\n- `7` = Mirror horizontal and rotate 90 degrees clockwise\n- `8` = Rotate 270 degrees clockwise.",
                     "minimum": 1,
                     "maximum": 8,
                     "meta:enum": {

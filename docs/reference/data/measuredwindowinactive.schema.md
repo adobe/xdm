@@ -1,22 +1,22 @@
 
-# measured-window-inactive Schema
+# Measured-window-inactive Schema
 
 ```
 https://ns.adobe.com/xdm/data/measuredwindowinactive
 ```
 
-The advertising/viewability metric measured-window-inactive describes whether the ad was displayed in a window not active by the user at event time.
+The advertising/viewability metric `measured-window-inactive` describes whether the ad was displayed in a window not active by the user at event time.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/measuredwindowinactive.schema.json](data/measuredwindowinactive.schema.json) |
 ## Schema Hierarchy
 
-* measured-window-inactive `https://ns.adobe.com/xdm/data/measuredwindowinactive`
+* Measured-window-inactive `https://ns.adobe.com/xdm/data/measuredwindowinactive`
   * [Metric Definition](metricdefinition.schema.md) `https://ns.adobe.com/xdm/data/metricdefinition`
 
 
-## measured-window-inactive Example
+## Measured-window-inactive Example
 ```json
 {
   "schema:name": "advertising/viewability metric: measuredWindowInactive",
@@ -26,7 +26,7 @@ The advertising/viewability metric measured-window-inactive describes whether th
 }
 ```
 
-# measured-window-inactive Properties
+# Measured-window-inactive Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|

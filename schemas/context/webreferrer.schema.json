@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/webreferrer",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Web Referrer",
+  "title": "Web referrer",
   "type": "object",
   "meta:extensible": true,
   "description": "",
@@ -36,12 +36,12 @@
           "meta:enum": {
             "internal": "Internal",
             "external": "External",
-            "search_engine": "Search Engine",
-            "typed_bookmarked": "Typed/Bookmarked",
+            "search_engine": "Search engine",
+            "typed_bookmarked": "Typed or bookmarked",
             "email": "Email",
-            "social": "Social Network",
+            "social": "Social network",
             "unknown": "Unknown",
-            "news": "Usenet Newsgroup"
+            "news": "Usenet newsgroup"
           }
         }
       }

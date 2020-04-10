@@ -1,0 +1,18 @@
+{
+  "xdm:identityMap": {
+    "AAMSegments": [
+      {
+        "xdm:id": "id123",
+        "xdm:primary": true
+      }
+    ]
+  },
+  "https://ns.adobe.com/experience/audiencemanager/segmentFolderName": "User Folder",
+  "https://ns.adobe.com/experience/audiencemanager/segmentFolderStatus": "ACTIVE",
+  "https://ns.adobe.com/experience/audiencemanager/segmentParentFolderIdentity": {
+    "xdm:id": "id1111",
+    "xdm:namespace": {
+      "xdm:code": "AAMSegments"
+    }
+  }
+}

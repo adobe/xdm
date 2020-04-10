@@ -1,22 +1,22 @@
 
-# viewability-eligible-impressions Schema
+# Viewability-eligible-impressions Schema
 
 ```
 https://ns.adobe.com/xdm/data/viewabilityeligibleimpressions
 ```
 
-The advertising/viewability metric viewability-eligible-impressions describes the number of impressions that were eligible to measure viewability. An impression is eligible if the ad unit has a supported creative format and tag type.
+The advertising/viewability metric `viewability-eligible-impressions` describes the number of impressions that were eligible to measure viewability. An impression is eligible if the ad unit has a supported creative format and tag type.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/viewabilityeligibleimpressions.schema.json](data/viewabilityeligibleimpressions.schema.json) |
 ## Schema Hierarchy
 
-* viewability-eligible-impressions `https://ns.adobe.com/xdm/data/viewabilityeligibleimpressions`
+* Viewability-eligible-impressions `https://ns.adobe.com/xdm/data/viewabilityeligibleimpressions`
   * [Metric Definition](metricdefinition.schema.md) `https://ns.adobe.com/xdm/data/metricdefinition`
 
 
-## viewability-eligible-impressions Example
+## Viewability-eligible-impressions Example
 ```json
 {
   "schema:name": "advertising/viewability metric: viewabilityEligibleImpressions",
@@ -26,7 +26,7 @@ The advertising/viewability metric viewability-eligible-impressions describes th
 }
 ```
 
-# viewability-eligible-impressions Properties
+# Viewability-eligible-impressions Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|

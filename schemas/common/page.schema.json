@@ -15,36 +15,36 @@
     "page": {
       "properties": {
         "orderBy": {
-          "title": "Order by property",
+          "title": "Order by Property",
           "type": "string",
           "description":
-            "The `orderBy` parameter specifies the comma-separated (no spaces after comma) list of properties by which the resource should be sorted. The properties by which to sort are listed in priority order. The first property is used for primary sorting, the second property to resolve ties in primary sorting, etc. The name of a property may be prefixed with a `+` to indicate ascending ordering or `-` to indicate descending ordering by that property. If the property name is not prefixed the result is sorted in asceding order. If `orderBy` is not given or does not name a property supported to sort by, the order is indeterminate and the service may return the elements in any order."
+            "The `orderBy` parameter specifies the comma-separated (no spaces after comma) list of properties by which the resource should be sorted. The properties by which to sort are listed in priority order. The first property is used for primary sorting, the second property to resolve ties in primary sorting, etc. The name of a property may be prefixed with a `+` to indicate ascending ordering or `-` to indicate descending ordering by that property. If the property name is not prefixed the result is sorted in ascending order. If `orderBy` is not given or does not name a property supported to sort by, the order is indeterminate and the service may return the elements in any order."
         },
         "start": {
-          "title": "First value",
+          "title": "First Value",
           "type": "string",
           "description":
-            "The first value, in sorted order, of the orderby property on this page."
+            "The first value, in sorted order, of the `orderby` property on this page."
         },
         "next": {
-          "title": "Next page start value",
+          "title": "Next Page Start Value",
           "type": "string",
           "description": "The start value for the next page."
         },
         "property": {
-          "title": "Filter properties",
+          "title": "Filter Properties",
           "type": "string",
           "description":
             "The list of properties by which the result is filtered, if any.\nThis list is comma-separated (no spaces after comma). The resulting list will only include entries for which the filtered property has been defined. "
         },
         "type": {
-          "title": "Filter type value",
+          "title": "Filter Type Value",
           "type": "string",
           "description":
             "The applied type filtering value, if any. Unlike `property` which allows to filter for presence of any property, `type` filters only for the specific value of the `type` attribute, i.e. the media type. This is a literal filter without any globbing or pattern matching."
         },
         "count": {
-          "title": "Number of items",
+          "title": "Number of Items",
           "type": "integer",
           "minimum": 0,
           "description": "The number of items on this page."

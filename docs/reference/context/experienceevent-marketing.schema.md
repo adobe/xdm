@@ -1,23 +1,23 @@
 
-# ExperienceEvent Details for Marketing Schema
+# ExperienceEvent details for marketing Schema
 
 ```
 https://ns.adobe.com/xdm/context/experienceevent-marketing
 ```
 
-ExperienceEvent Details for Marketing.
+This mixin is used to capture information regarding marketing campaigns details related to an ExperienceEvent, including campaign group, campaign name, and tracking code.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/experienceevent-marketing.schema.json](context/experienceevent-marketing.schema.json) |
 ## Schema Hierarchy
 
-* ExperienceEvent Details for Marketing `https://ns.adobe.com/xdm/context/experienceevent-marketing`
+* ExperienceEvent details for marketing `https://ns.adobe.com/xdm/context/experienceevent-marketing`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Marketing](marketing.schema.md) `https://ns.adobe.com/xdm/context/marketing`
 
 
-## ExperienceEvent Details for Marketing Example
+## ExperienceEvent details for marketing Example
 ```json
 {
   "xdm:marketing": {
@@ -26,11 +26,11 @@ ExperienceEvent Details for Marketing.
 }
 ```
 
-# ExperienceEvent Details for Marketing Properties
+# ExperienceEvent details for marketing Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:marketing](#xdmmarketing) | Marketing | Optional | ExperienceEvent Details for Marketing (this schema) |
+| [xdm:marketing](#xdmmarketing) | Marketing | Optional | ExperienceEvent details for marketing (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:marketing

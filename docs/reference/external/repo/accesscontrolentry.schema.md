@@ -5,13 +5,23 @@
 https://ns.adobe.com/xdm/external/repo/accesscontrolentry
 ```
 
-Schema for the Access Control Entry for the Access Control List of a resource
+Schema for the access control entry for the access control List of a resource.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/repo/accesscontrolentry.schema.json](external/repo/accesscontrolentry.schema.json) |
 
 ## Access Control Entry Examples
+
+```json
+{
+  "repo:principal": "authenticated",
+  "repo:privileges": [
+    "read"
+  ],
+  "repo:modifier": "grant"
+}
+```
 
 ```json
 {
@@ -28,16 +38,6 @@ Schema for the Access Control Entry for the Access Control List of a resource
   ],
   "repo:modifier": "grant",
   "repo:inheritance": "deep"
-}
-```
-
-```json
-{
-  "repo:principal": "authenticated",
-  "repo:privileges": [
-    "read"
-  ],
-  "repo:modifier": "grant"
 }
 ```
 
@@ -99,8 +99,8 @@ Optional modified to the privilege: either grant or deny to grant or deny, resp.
 ### repo:modifier Known Values
 | Value | Description |
 |-------|-------------|
-| `grant` | Permission is granted to the Principal. |
-| `deny` | Permission is denied to the Principal. |
+| `grant` | Permission is granted to the principal. |
+| `deny` | Permission is denied to the principal. |
 
 
 
@@ -135,7 +135,7 @@ Optional modified to the privilege: either grant or deny to grant or deny, resp.
 
 ## repo:privileges
 
-Privileges granted or denied to the Principal
+Privileges granted or denied to the principal.
 
 `repo:privileges`
 * is optional
@@ -160,7 +160,7 @@ All items must be of the type:
 
 ## repo:relations
 
-List of relation link types to which this privilege applies
+List of relation link types to which this privilege applies.
 
 `repo:relations`
 * is optional

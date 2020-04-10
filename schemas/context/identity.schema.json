@@ -23,10 +23,10 @@
             "The namespace associated with the `xid` attribute and matched up with the AAM data source integration code."
         },
         "xdm:xid": {
-          "title": "Experience Identifier",
+          "title": "Experience identifier",
           "type": "string",
           "description":
-            "When present, this value represents a cross-namespace identifier that is unique across all namespace-scoped identifiers in all namespaces."
+            "When present, experience identifier value represents a cross-namespace identifier that is unique across all namespace-scoped identifiers in all namespaces."
         }
       }
     }

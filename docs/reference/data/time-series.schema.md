@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/data/time-series
 ```
 
-Used to indicate the behaviour of time partitioned semantics when composed into data schemas.
+Used to indicate the behavior of time partitioned semantics when composed into data schemas.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -58,7 +58,7 @@ A unique identifier for the time-series event.
 ## xdm:eventType
 ### Event Type
 
-The primary event type for this timeseries record.
+The primary event type for this time-series record.
 
 `xdm:eventType`
 * is optional
@@ -81,7 +81,7 @@ The primary event type for this timeseries record.
 | `advertising.clicks` | Click(s) actions on an advertisement. |
 | `advertising.conversions` | A customer pre-defined action(s) which triggers an event for performance evaluation. |
 | `advertising.firstQuartiles` | A digital video ad has played through 25% of its duration at normal speed. |
-| `advertising.impressions` | Impression(s) of an advertisement to an end user with the potential of being viewed. |
+| `advertising.impressions` | Impression(s) of an advertisement to an end-user with the potential of being viewed. |
 | `advertising.midpoints` | A digital video ad has played through 50% of its duration at normal speed. |
 | `advertising.starts` | A digital video ad has started playing. |
 | `advertising.thirdQuartiles` | A digital video ad has played through 75% of its duration at normal speed. |
@@ -96,6 +96,7 @@ The primary event type for this timeseries record.
 | `commerce.productViews` | View(s) of a product have occurred. |
 | `commerce.purchases` | An order has been accepted. Purchase is the only required action in a commerce conversion. Purchase must have a product list referenced. |
 | `commerce.saveForLaters` | Product list is saved for future use. Example a product wish list. |
+| `delivery.feedback` | Feedback events for a delivery. Example feedback events for an email delivery. |
 
 
 

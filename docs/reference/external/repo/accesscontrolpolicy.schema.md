@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/external/repo/accesscontrolpolicy
 ```
 
-Schema for the Access Control Policy of a resource
+Schema for the access control policy of a resource.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
@@ -56,7 +56,7 @@ Schema for the Access Control Policy of a resource
 ## repo:acl
 ### Access Control List
 
-Schema for the Access Control List of a resource
+Schema for the access control List of a resource.
 
 `repo:acl`
 * is optional

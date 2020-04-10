@@ -1,22 +1,22 @@
 
-# poi-entries Schema
+# Point of Interest (POI) Entries Schema
 
 ```
 https://ns.adobe.com/xdm/data/metrics/placecontext/poi-entries
 ```
 
-The place context metric poi-entries describes the number of times a person has left a Point of Interest (POI).
+The place context metric `poi-entries` describes the number of times a person has left a point of interest (POI).
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/poi-entries.schema.json](data/poi-entries.schema.json) |
 ## Schema Hierarchy
 
-* poi-entries `https://ns.adobe.com/xdm/data/metrics/placecontext/poi-entries`
+* Point of Interest (POI) Entries `https://ns.adobe.com/xdm/data/metrics/placecontext/poi-entries`
   * [Metric Definition](metricdefinition.schema.md) `https://ns.adobe.com/xdm/data/metricdefinition`
 
 
-## poi-entries Example
+## Point of Interest (POI) Entries Example
 ```json
 {
   "schema:name": "placecontext: poiEntries",
@@ -26,7 +26,7 @@ The place context metric poi-entries describes the number of times a person has 
 }
 ```
 
-# poi-entries Properties
+# Point of Interest (POI) Entries Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|

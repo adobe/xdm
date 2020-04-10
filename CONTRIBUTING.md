@@ -403,7 +403,7 @@ This means, soft enums are open enumerations that can be extended ad-hoc by XDM 
 
 ## Writing Styleguides
 
-For all writing, please follow the [Adobe I/O style guide](https://www.adobe.io/about/contributing/doc-style_master.html).
+For all writing, please follow the [Adobe I/O style guide](https://github.com/adobeio/styleguide/blob/master/opensource/doc-style.md).
 
 ## How Contributions get Reviewed
 

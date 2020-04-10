@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Adobe Audience Manager Template Mixin",
   "type": "object",
-  "description": "Adobe Audience Manager Mixin for use with Schemas for Solution data ingestion. Includes the core/standard ExperienceEvent as well as the other required Core mixins.",
+  "description": "Adobe Audience Manager mixin for use with schemas for Solution data ingestion. Includes the core/standard ExperienceEvent as well as the other required core mixins.",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
@@ -17,6 +17,7 @@
     "https://ns.adobe.com/xdm/context/experienceevent-segmentmembership",
     "https://ns.adobe.com/xdm/context/experienceevent-environment-details",
     "https://ns.adobe.com/xdm/context/experienceevent-profile-stitch",
+    "https://ns.adobe.com/experience/experienceevent-edgeregion",
     "https://ns.adobe.com/experience/audiencemanager/experienceevent-all"
   ],
   "definitions": {
@@ -33,6 +34,9 @@
     },
     {
       "$ref": "https://ns.adobe.com/xdm/context/experienceevent-profile-stitch"
+    },
+    {
+      "$ref": "https://ns.adobe.com/experience/experienceevent-edgeregion"
     },
     {
       "$ref": "https://ns.adobe.com/experience/audiencemanager/experienceevent-all"

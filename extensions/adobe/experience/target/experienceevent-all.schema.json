@@ -15,12 +15,12 @@
   "meta:extends": [
     "https://ns.adobe.com/experience/target/experienceevent-shared"
   ],
-  "description": "Adobe Target ExperienceEvent Full Extension. Contains all Solution added fields.",
+  "description": "Adobe Target ExperienceEvent full extension. Contains all Solution added fields.",
   "definitions": {
     "target-experienceevent-all": {
       "properties": {
         "https://ns.adobe.com/experience/target/clientcode": {
-          "title": "Adobe Target client code",
+          "title": "Adobe Target Client Code",
           "type": "string",
           "description": "Adobe Target client code."
         },
@@ -30,7 +30,7 @@
           "description": "Adobe Target mbox name."
         },
         "https://ns.adobe.com/experience/target/mboxversion": {
-          "title": "Adobe Target Mbox version",
+          "title": "Adobe Target Mbox Version",
           "type": "string",
           "description": "Adobe Target mbox version."
         },
@@ -40,7 +40,7 @@
           "description": "Adobe Target session identifier."
         },
         "https://ns.adobe.com/experience/target/pagedetail/pageid": {
-          "title": "Target Unique Page identifier",
+          "title": "Target Unique Page Identifier",
           "type": "string",
           "format": "uri",
           "description": "Target generated page identifier for current event."

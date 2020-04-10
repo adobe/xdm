@@ -9,14 +9,14 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Adobe Target Activity",
   "type": "object",
-  "description": "An Adobe Target Activity compares two or more experiences against the success metrics that are specified for choosing the experience that is most likely to provide the optimal results",
+  "description": "An Adobe Target activity compares two or more experiences against the success metrics that are specified for choosing the experience that is most likely to provide the optimal results.",
   "definitions": {
     "activity": {
       "properties": {
         "xdm:activityID": {
           "title": "Activity Identifier",
           "type": "string",
-          "description": "Unique identity of an Adobe Target Activity. This identifier can be used in activity APIs offered by Adobe Target."
+          "description": "Unique identity of an Adobe Target activity. This identifier can be used in activity APIs offered by Adobe Target."
         },
         "xdm:version": {
           "title": "Activity Version",

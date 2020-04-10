@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/data/metrics/product-list-removals
 ```
 
-The commerce metric productListRemovals describes the number of times a product has been removed from a product list. The most common use case is the removal of a product from the shopping cart.
+The commerce metric `productListRemovals` describes the number of times a product has been removed from a product list. The most common use case is the removal of a product from the shopping cart.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|

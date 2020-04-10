@@ -1,5 +1,5 @@
 
-# third-quartiles Schema
+# Third-Quartiles Schema
 
 ```
 https://ns.adobe.com/xdm/data/thirdquartiles
@@ -12,11 +12,11 @@ The metric third-quartiles describes digital video which played for at least 75%
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/thirdquartiles.schema.json](data/thirdquartiles.schema.json) |
 ## Schema Hierarchy
 
-* third-quartiles `https://ns.adobe.com/xdm/data/thirdquartiles`
+* Third-Quartiles `https://ns.adobe.com/xdm/data/thirdquartiles`
   * [Metric Definition](metricdefinition.schema.md) `https://ns.adobe.com/xdm/data/metricdefinition`
 
 
-## third-quartiles Example
+## Third-Quartiles Example
 ```json
 {
   "schema:name": "metric: thirdQuartiles",
@@ -26,7 +26,7 @@ The metric third-quartiles describes digital video which played for at least 75%
 }
 ```
 
-# third-quartiles Properties
+# Third-Quartiles Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|

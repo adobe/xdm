@@ -1,23 +1,23 @@
 
-# ExperienceEvent Details for Advertising Schema
+# ExperienceEvent details for advertising Schema
 
 ```
 https://ns.adobe.com/xdm/context/experienceevent-advertising
 ```
 
-ExperienceEvent Details for Advertising.
+This mixin is used to capture advertising details related to an ExperienceEvent, such as clicks, completes, impressions, and conversions.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/experienceevent-advertising.schema.json](context/experienceevent-advertising.schema.json) |
 ## Schema Hierarchy
 
-* ExperienceEvent Details for Advertising `https://ns.adobe.com/xdm/context/experienceevent-advertising`
+* ExperienceEvent details for advertising `https://ns.adobe.com/xdm/context/experienceevent-advertising`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Advertising](advertising.schema.md) `https://ns.adobe.com/xdm/context/advertising`
 
 
-## ExperienceEvent Details for Advertising Example
+## ExperienceEvent details for advertising Example
 ```json
 {
   "xdm:advertising": {
@@ -47,17 +47,17 @@ ExperienceEvent Details for Advertising.
 }
 ```
 
-# ExperienceEvent Details for Advertising Properties
+# ExperienceEvent details for advertising Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:advertising](#xdmadvertising) | Advertising | Optional | ExperienceEvent Details for Advertising (this schema) |
+| [xdm:advertising](#xdmadvertising) | Advertising | Optional | ExperienceEvent details for advertising (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:advertising
 ### Advertising
 
-Information related to advertising activity in ExperienceEvents
+Information related to advertising activity in ExperienceEvents.
 
 `xdm:advertising`
 * is optional

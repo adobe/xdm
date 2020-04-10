@@ -1,5 +1,5 @@
 
-# starts Schema
+# Starts Schema
 
 ```
 https://ns.adobe.com/xdm/data/starts
@@ -12,11 +12,11 @@ Indicates the first frame of the timed media was viewed - i.e. the viewer did no
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/starts.schema.json](data/starts.schema.json) |
 ## Schema Hierarchy
 
-* starts `https://ns.adobe.com/xdm/data/starts`
+* Starts `https://ns.adobe.com/xdm/data/starts`
   * [Metric Definition](metricdefinition.schema.md) `https://ns.adobe.com/xdm/data/metricdefinition`
 
 
-## starts Example
+## Starts Example
 ```json
 {
   "schema:name": "metric: starts",
@@ -26,7 +26,7 @@ Indicates the first frame of the timed media was viewed - i.e. the viewer did no
 }
 ```
 
-# starts Properties
+# Starts Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|

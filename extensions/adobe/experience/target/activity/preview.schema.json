@@ -9,17 +9,17 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Activity Preview Parameters",
   "type": "object",
-  "description": "Adobe Target Activity Preview Parameters. QA Mode/Preview Mode parameters that were specified in the request, if any.",
+  "description": "Adobe Target activity preview parameters. QA mode/preview mode parameters that were specified in the request, if any.",
   "definitions": {
     "activitypreview": {
       "properties": {
         "xdm:forcedExperienceID": {
           "title": "Experience Identifier",
           "type": "string",
-          "description": "Activity Experience Identifier of previewed experience"
+          "description": "Activity experience identifier of previewed experience."
         },
         "xdm:audienceIDsToEvaluateAsTrue": {
-          "title": "Audience identifiers to evaluate as true",
+          "title": "Audience Identifiers to Evaluate as True.",
           "type": "array",
           "items": {
             "type": "string"
@@ -27,7 +27,7 @@
           "description": "Evaluated as matching audience identifiers."
         },
         "xdm:audienceIDsToEvaluateAsFalse": {
-          "title": "Audience identifiers to evaluate as false",
+          "title": "Audience Identifiers to Evaluate as False.",
           "type": "array",
           "items": {
             "type": "string"

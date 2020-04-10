@@ -1,22 +1,22 @@
 
-# viewable-first-quartiles Schema
+# Viewable-first-quartiles Schema
 
 ```
 https://ns.adobe.com/xdm/data/viewablefirstquartiles
 ```
 
-The advertising/viewability metric viewable-first-quartiles describes whether at least 50% of the video's pixels were visible at the first quartile of play.
+The advertising/viewability metric `viewable-first-quartiles` describes whether at least 50% of the video's pixels were visible at the first quartile of play.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/viewablefirstquartiles.schema.json](data/viewablefirstquartiles.schema.json) |
 ## Schema Hierarchy
 
-* viewable-first-quartiles `https://ns.adobe.com/xdm/data/viewablefirstquartiles`
+* Viewable-first-quartiles `https://ns.adobe.com/xdm/data/viewablefirstquartiles`
   * [Metric Definition](metricdefinition.schema.md) `https://ns.adobe.com/xdm/data/metricdefinition`
 
 
-## viewable-first-quartiles Example
+## Viewable-first-quartiles Example
 ```json
 {
   "schema:name": "advertising/viewability metric: viewableFirstQuartiles",
@@ -26,7 +26,7 @@ The advertising/viewability metric viewable-first-quartiles describes whether at
 }
 ```
 
-# viewable-first-quartiles Properties
+# Viewable-first-quartiles Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|

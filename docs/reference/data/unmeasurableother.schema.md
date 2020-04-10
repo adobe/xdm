@@ -1,22 +1,22 @@
 
-# unmeasurable-other Schema
+# Unmeasurable-other Schema
 
 ```
 https://ns.adobe.com/xdm/data/unmeasurableother
 ```
 
-The advertising/viewability metric unmeasurable-other describes whether a measurement instrumented ad was not able to be measured due to a non-predefined error.
+The advertising/viewability metric `unmeasurable-other` describes whether a measurement instrumented ad was not able to be measured due to a non-predefined error.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/unmeasurableother.schema.json](data/unmeasurableother.schema.json) |
 ## Schema Hierarchy
 
-* unmeasurable-other `https://ns.adobe.com/xdm/data/unmeasurableother`
+* Unmeasurable-other `https://ns.adobe.com/xdm/data/unmeasurableother`
   * [Metric Definition](metricdefinition.schema.md) `https://ns.adobe.com/xdm/data/metricdefinition`
 
 
-## unmeasurable-other Example
+## Unmeasurable-other Example
 ```json
 {
   "schema:name": "advertising/viewability metric: unmeasurableOther",
@@ -26,7 +26,7 @@ The advertising/viewability metric unmeasurable-other describes whether a measur
 }
 ```
 
-# unmeasurable-other Properties
+# Unmeasurable-other Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|

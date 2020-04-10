@@ -9,8 +9,8 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "type": "object",
   "meta:extensible": true,
-  "title": "Organizational Unit",
-  "description": "The organizaational unit of a parent organization.",
+  "title": "Organizational unit",
+  "description": "The organizational unit of a parent organization.",
   "definitions": {
     "orgunit": {
       "properties": {

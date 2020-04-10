@@ -1,25 +1,25 @@
 
-# Profile Direct Marketing Schema
+# Profile direct marketing Schema
 
 ```
 https://ns.adobe.com/xdm/context/profile-directmarketing
 ```
 
-Direct Marketing addressing for profiles.
+This mixin is used to capture information regarding addresses, emails, and phone numbers to be used for direct marketing activities.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/profile-directmarketing.schema.json](context/profile-directmarketing.schema.json) |
 ## Schema Hierarchy
 
-* Profile Direct Marketing `https://ns.adobe.com/xdm/context/profile-directmarketing`
+* Profile direct marketing `https://ns.adobe.com/xdm/context/profile-directmarketing`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Direct Marketing Address](directmarketing-address.schema.md) `https://ns.adobe.com/xdm/context/directmarketing-address`
-  * [Direct Marketing Email Address](directmarketing-emailaddress.schema.md) `https://ns.adobe.com/xdm/context/directmarketing-emailaddress`
-  * [Direct Marketing Phone Number](directmarketing-phonenumber.schema.md) `https://ns.adobe.com/xdm/context/directmarketing-phonenumber`
+  * [Direct marketing postal address](directmarketing-address.schema.md) `https://ns.adobe.com/xdm/context/directmarketing-address`
+  * [Direct marketing email address](directmarketing-emailaddress.schema.md) `https://ns.adobe.com/xdm/context/directmarketing-emailaddress`
+  * [Direct marketing phone number](directmarketing-phonenumber.schema.md) `https://ns.adobe.com/xdm/context/directmarketing-phonenumber`
 
 
-## Profile Direct Marketing Example
+## Profile direct marketing Example
 ```json
 {
   "xdm:directMarketingPhone": {
@@ -55,67 +55,67 @@ Direct Marketing addressing for profiles.
 }
 ```
 
-# Profile Direct Marketing Properties
+# Profile direct marketing Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:directMarketingAddress](#xdmdirectmarketingaddress) | Direct Marketing Address | Optional | Profile Direct Marketing (this schema) |
-| [xdm:directMarketingEmail](#xdmdirectmarketingemail) | Direct Marketing Email Address | Optional | Profile Direct Marketing (this schema) |
-| [xdm:directMarketingPhone](#xdmdirectmarketingphone) | Direct Marketing Phone Number | Optional | Profile Direct Marketing (this schema) |
+| [xdm:directMarketingAddress](#xdmdirectmarketingaddress) | Direct marketing postal address | Optional | Profile direct marketing (this schema) |
+| [xdm:directMarketingEmail](#xdmdirectmarketingemail) | Direct marketing email address | Optional | Profile direct marketing (this schema) |
+| [xdm:directMarketingPhone](#xdmdirectmarketingphone) | Direct marketing phone number | Optional | Profile direct marketing (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:directMarketingAddress
-### Direct Marketing Address
+### Direct marketing address
 
-Direct Marketing postal address.
+Direct marketing postal address.
 
 `xdm:directMarketingAddress`
 * is optional
-* type: Direct Marketing Address
+* type: Direct marketing postal address
 * defined in this schema
 
 ### xdm:directMarketingAddress Type
 
 
-* [Direct Marketing Address](directmarketing-address.schema.md) – `https://ns.adobe.com/xdm/context/directmarketing-address`
+* [Direct marketing postal address](directmarketing-address.schema.md) – `https://ns.adobe.com/xdm/context/directmarketing-address`
 
 
 
 
 
 ## xdm:directMarketingEmail
-### Direct Marketing Email
+### Direct marketing email
 
-Direct Marketing email address.
+Direct marketing email address.
 
 `xdm:directMarketingEmail`
 * is optional
-* type: Direct Marketing Email Address
+* type: Direct marketing email address
 * defined in this schema
 
 ### xdm:directMarketingEmail Type
 
 
-* [Direct Marketing Email Address](directmarketing-emailaddress.schema.md) – `https://ns.adobe.com/xdm/context/directmarketing-emailaddress`
+* [Direct marketing email address](directmarketing-emailaddress.schema.md) – `https://ns.adobe.com/xdm/context/directmarketing-emailaddress`
 
 
 
 
 
 ## xdm:directMarketingPhone
-### Direct Marketing Phone
+### Direct marketing phone
 
-Direct Marketing phone number.
+Direct marketing phone number.
 
 `xdm:directMarketingPhone`
 * is optional
-* type: Direct Marketing Phone Number
+* type: Direct marketing phone number
 * defined in this schema
 
 ### xdm:directMarketingPhone Type
 
 
-* [Direct Marketing Phone Number](directmarketing-phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/directmarketing-phonenumber`
+* [Direct marketing phone number](directmarketing-phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/directmarketing-phonenumber`
 
 
 

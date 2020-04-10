@@ -9,7 +9,7 @@
   "$id": "https://ns.adobe.com/experience/adcloud/campaign",
   "title": "Ad Campaign Detail",
   "type": "object",
-  "description": "Adobe AdCloud Ad Campaign Hierarchy Details",
+  "description": "Adobe Advertising Cloud ad campaign hierarchy details such as, account, package, advertiser, and campaign IDs.",
   "definitions": {
     "campaign": {
       "properties": {

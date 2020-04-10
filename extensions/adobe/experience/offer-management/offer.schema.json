@@ -42,11 +42,11 @@
         "xdm:tags": {
           "type": "array",
           "title": "Tags",
-          "description": "The set of tags associated with this offer. The tags are used in offer filter expressions to constrain the overal offer inventory to a topical sub set (category).",
+          "description": "The set of tags associated with this offer. The tags are used in offer filter expressions to constrain the overall offer inventory to a topical sub set (category).",
           "items": {
             "type": "string",
             "format": "uri",
-            "description": "An identifier of a Tag object. The value is the @id of the Tag that is referenced. See Tag schema https://ns.adobe.com/experience/offer-management/tag"
+            "description": "An identifier of a tag object. The value is the @id of the tag that is referenced. See tag schema: https://ns.adobe.com/experience/offer-management/tag"
           }
         },
         "xdm:representations": {
@@ -55,7 +55,7 @@
             "$ref": "https://ns.adobe.com/experience/offer-management/offer-representation"
           },
           "title": "Representations",
-          "description": "Offer representations for different content variants. A single offer can have multiple contents variants. An Offer Representation is the object that connects Offers to Content. Content is information that is directed towards an audience for consumption in a (digital) experience. Content is delivered through channels (or a particular medium). "
+          "description": "Offer representations for different content variants. A single offer can have multiple contents variants. An offer representation is the object that connects offers to content. Content is information that is directed towards an audience for consumption in a (digital) experience. Content is delivered through channels (or a particular medium). "
         },
         "xdm:customMetadata": {
           "type": "object",

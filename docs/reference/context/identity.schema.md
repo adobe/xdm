@@ -14,7 +14,7 @@ Identity is used to clearly distinguish people that are interacting with digital
 
 * Identity `https://ns.adobe.com/xdm/context/identity`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Identity Item](identityitem.schema.md) `https://ns.adobe.com/xdm/context/identityitem`
+  * [Identity item](identityitem.schema.md) `https://ns.adobe.com/xdm/context/identityitem`
   * [Namespace](namespace.schema.md) `https://ns.adobe.com/xdm/context/namespace`
 
 
@@ -44,10 +44,10 @@ Identity is used to clearly distinguish people that are interacting with digital
 
 | Property | Type | Required | Default | Defined by |
 |----------|------|----------|---------|------------|
-| [xdm:authenticatedState](#xdmauthenticatedstate) | `enum` | Optional | `"ambiguous"` | [Identity Item](identityitem.schema.md#xdmauthenticatedstate) |
-| [xdm:id](#xdmid) | `string` | Optional |  | [Identity Item](identityitem.schema.md#xdmid) |
+| [xdm:authenticatedState](#xdmauthenticatedstate) | `enum` | Optional | `"ambiguous"` | [Identity item](identityitem.schema.md#xdmauthenticatedstate) |
+| [xdm:id](#xdmid) | `string` | Optional |  | [Identity item](identityitem.schema.md#xdmid) |
 | [xdm:namespace](#xdmnamespace) | Namespace | Optional |  | Identity (this schema) |
-| [xdm:primary](#xdmprimary) | `boolean` | Optional | `false` | [Identity Item](identityitem.schema.md#xdmprimary) |
+| [xdm:primary](#xdmprimary) | `boolean` | Optional | `false` | [Identity item](identityitem.schema.md#xdmprimary) |
 | [xdm:xid](#xdmxid) | `string` | Optional |  | Identity (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -59,7 +59,7 @@ The state this identity is authenticated as for this observed ExperienceEvent.
 * is optional
 * type: `enum`
 * default: `"ambiguous"`
-* defined in [Identity Item](identityitem.schema.md#xdmauthenticatedstate)
+* defined in [Identity item](identityitem.schema.md#xdmauthenticatedstate)
 
 The value of this property **must** be equal to one of the [known values below](#xdmauthenticatedstate-known-values).
 
@@ -67,7 +67,7 @@ The value of this property **must** be equal to one of the [known values below](
 | Value | Description |
 |-------|-------------|
 | `ambiguous` | Ambiguous |
-| `authenticated` | User identified by a login or simular action that was valid at the time of the event observation. |
+| `authenticated` | User identified by a login or similar action that was valid at the time of the event observation. |
 | `loggedOut` | User was identified by a login action at some point of time previously, but is not currently logged in. |
 
 
@@ -81,7 +81,7 @@ Identity of the consumer in the related namespace.
 `xdm:id`
 * is optional
 * type: `string`
-* defined in [Identity Item](identityitem.schema.md#xdmid)
+* defined in [Identity item](identityitem.schema.md#xdmid)
 
 ### xdm:id Type
 
@@ -121,7 +121,7 @@ Indicates this identity is the preferred identity. Is used as a hint to help sys
 * is optional
 * type: `boolean`
 * default: `false`
-* defined in [Identity Item](identityitem.schema.md#xdmprimary)
+* defined in [Identity item](identityitem.schema.md#xdmprimary)
 
 ### xdm:primary Type
 
@@ -133,9 +133,9 @@ Indicates this identity is the preferred identity. Is used as a hint to help sys
 
 
 ## xdm:xid
-### Experience Identifier
+### Experience identifier
 
-When present, this value represents a cross-namespace identifier that is unique across all namespace-scoped identifiers in all namespaces.
+When present, experience identifier value represents a cross-namespace identifier that is unique across all namespace-scoped identifiers in all namespaces.
 
 `xdm:xid`
 * is optional

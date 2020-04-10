@@ -52,7 +52,7 @@ Artboards can contain layers and layer groups, but not other artboards.
 ## xdm:height
 ### Height
 
-Height of the artboard
+Height of the artboard.
 
 `xdm:height`
 * is optional
@@ -71,7 +71,7 @@ Height of the artboard
 
 ## xdm:name
 
-Name of the artboard. This would be visible to the user and users can specify names that can help them uniquely identfiy different Artboards.
+Name of the artboard. This would be visible to the user and users can specify names that can help them uniquely identify different artboards.
 
 `xdm:name`
 * is optional
@@ -91,7 +91,7 @@ Name of the artboard. This would be visible to the user and users can specify na
 ## xdm:originX
 ### Origin X
 
-Origin X position - Base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards)
+Origin X position - base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards).
 
 `xdm:originX`
 * is optional
@@ -111,7 +111,7 @@ Origin X position - Base system is cartesian, relative to master page and origin
 ## xdm:originY
 ### Origin Y
 
-Origin Y position - Base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards)
+Origin Y position - base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards).
 
 `xdm:originY`
 * is optional
@@ -131,7 +131,7 @@ Origin Y position - Base system is cartesian, relative to master page and origin
 ## xdm:unit
 ### Unit
 
-Unit used for artboard coordinates (`originX`, `originY`, `width` and `height`). For example: `inch`, `mm`, `pixel`, `pica`, `point` (default is `pixel`)
+Unit used for artboard coordinates (`originX`, `originY`, `width` and `height`). For example: `inch`, `mm`, `pixel`, `pica`, `point` (default is `pixel`).
 
 `xdm:unit`
 * is optional
@@ -152,7 +152,7 @@ Unit used for artboard coordinates (`originX`, `originY`, `width` and `height`).
 ## xdm:width
 ### Width
 
-Width of the artboard
+Width of the artboard.
 
 `xdm:width`
 * is optional

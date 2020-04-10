@@ -1,5 +1,5 @@
 
-# completes Schema
+# Completes Schema
 
 ```
 https://ns.adobe.com/xdm/data/completes
@@ -12,11 +12,11 @@ Indicates if a timed media asset was watched to completion - this does not neces
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/completes.schema.json](data/completes.schema.json) |
 ## Schema Hierarchy
 
-* completes `https://ns.adobe.com/xdm/data/completes`
+* Completes `https://ns.adobe.com/xdm/data/completes`
   * [Metric Definition](metricdefinition.schema.md) `https://ns.adobe.com/xdm/data/metricdefinition`
 
 
-## completes Example
+## Completes Example
 ```json
 {
   "schema:name": "metric: completes",
@@ -26,7 +26,7 @@ Indicates if a timed media asset was watched to completion - this does not neces
 }
 ```
 
-# completes Properties
+# Completes Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|

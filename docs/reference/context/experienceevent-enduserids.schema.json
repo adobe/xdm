@@ -7,19 +7,19 @@
     ],
     "$id": "https://ns.adobe.com/xdm/context/experienceevent-enduserids",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "ExperienceEvent endUserIDs",
+    "title": "ExperienceEvent EndUserIDs",
     "type": "object",
     "meta:extensible": true,
     "meta:abstract": true,
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/experienceevent"
     ],
-    "description": "Condensed, normalized encapsulation of end user identifiers asserted for this ExperienceEvent.",
+    "description": "This mixin provides a condensed, normalized encapsulation of end-user identifiers asserted for an ExperienceEvent. These IDs could include phone numbers, email addresses, or other identifiers related to an individual.",
     "definitions": {
         "experienceevent-enduserids": {
             "properties": {
                 "xdm:endUserIDs": {
-                    "title": "End User IDs",
+                    "title": "EndUserIDs",
                     "$ref": "https://ns.adobe.com/xdm/context/enduserids",
                     "description": "Condensed, normalized encapsulation of end user identifiers asserted for this ExperienceEvent."
                 }

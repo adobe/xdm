@@ -14,7 +14,7 @@
   "meta:extends": [
     "https://ns.adobe.com/experience/offer-management/offer-detail"
   ],
-  "description": "Campaign Offer Detail is used to capture the attributes of a Campaign Offer in a Proposition or Response. Offers are the Decision Options in the Offer Management domain and the Campaign Offer Detail datatype extends the Option Detail datatype.",
+  "description": "Campaign offer detail is used to capture the attributes of a Campaign offer in a proposition or response. Offers are the decision options in the Offer Management domain and the Campaign offer detail datatype extends the option detail datatype.",
   "definitions": {
     "offer-detail": {
       "properties": {

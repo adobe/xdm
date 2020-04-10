@@ -52,7 +52,7 @@ Describes the discounting rules in detail.
 ## xdm:code
 ### Code
 
-The description of the discountValue attribute. e.g percentage, currency, 3for2 etc. Can be enumerated, custom values allowed.
+The description of the `discountValue` attribute. e.g percentage, currency, 3for2 etc. Can be enumerated, custom values allowed.
 
 `xdm:code`
 * is **required**
@@ -84,7 +84,7 @@ The description of the discountValue attribute. e.g percentage, currency, 3for2 
 ## xdm:condition
 ### Condition
 
-The minimum amount of items or price for the dicount to qualify
+The minimum amount of items or price for the discount to qualify.
 
 `xdm:condition`
 * is optional
@@ -98,7 +98,7 @@ Unknown type ``.
 ```json
 {
   "title": "Condition",
-  "description": "The minimum amount of items or price for the dicount to qualify",
+  "description": "The minimum amount of items or price for the discount to qualify.",
   "simpletype": "complex"
 }
 ```

@@ -33,22 +33,31 @@
           "title": "Destination Item",
           "description": "When present, the selector used to match a specific item in the array pointed to by destProperty",
           "$ref": "https://ns.adobe.com/xdm/common/descriptors/itemselector#/definitions/selector"
+        },
+        "xdm:destinationVersion": {
+          "title": "Destination Version",
+          "type": "number",
+          "description": "Major version being referenced."
+        },
+        "xdm:sourceValue": {
+          "title": "Source Value",
+          "type": "string",
+          "description": "When present, provides additional information about the values in that field. Descriptor producer and consumer should coordinate on how to use this field, e.g. defining rules on formats, values, and operations."
+        },
+        "xdm:label": {
+          "title": "Label",
+          "type": "string"
         }
       },
       "oneOf": [
         {
-          "properties": {
-            "xdm:label": {
-              "type": "string"
-            }
-          },
           "required": ["xdm:label"]
         },
         {
           "required": ["xdm:sourceProperty"]
         }
       ],
-      "required": ["xdm:destinationSchema"]
+      "required": ["xdm:destinationSchema", "xdm:destinationVersion"]
     }
   },
   "allOf": [
@@ -59,5 +68,5 @@
       "$ref": "#/definitions/relationshipdescriptor"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stabilizing"
 }

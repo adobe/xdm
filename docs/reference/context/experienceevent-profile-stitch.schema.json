@@ -7,20 +7,20 @@
     ],
     "$id": "https://ns.adobe.com/xdm/context/experienceevent-profile-stitch",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "ExperienceEvent Profile Stitch Details",
+    "title": "ExperienceEvent profile stitch details",
     "type": "object",
     "meta:extensible": true,
     "meta:abstract": true,
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/experienceevent"
     ],
-    "description": "ExperienceEvent Profile Stitch Details.",
+    "description": "ExperienceEvent profile stitch describes details about the IDs that were joined by profile stitching.",
     "definitions": {
         "experienceevent-profile-stitch": {
             "properties": {
                 "xdm:profileStitch": {
-                    "title": "Profile Stitch",
-                    "description": "Details about the ids that were joined by profile stitching.",
+                    "title": "Profile stitch",
+                    "description": "Details about the IDs that were joined by profile stitching.",
                     "type": "array",
                     "items": {
                         "$ref": "https://ns.adobe.com/xdm/context/profileStitch"

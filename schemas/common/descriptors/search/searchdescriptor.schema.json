@@ -49,7 +49,7 @@
             "notSortable": "notSortable",
             "sorted": "sorted",
             "sortedCaseSensitive": "sortedCaseSensitive",
-            "sortedCaseInsensitive": "soretdCaseInsensitive"
+            "sortedCaseInsensitive": "sortedCaseInsensitive"
           },
           "default": "notSortable"
         },
@@ -79,7 +79,7 @@
         "search:defaultAnalyzer": {
           "title": "Default analyzer",
           "type": "string",
-          "description": "Default analyzer to be applied when search queries are made against this property",
+          "description": "Default analyzer to be applied when search queries are made against this property.",
           "meta:enum": {
             "noAnalysis": "noAnalysis",
             "standard": "standard",

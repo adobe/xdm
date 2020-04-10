@@ -8,7 +8,7 @@
     "$schema": "http://json-schema.org/draft-06/schema#",
     "$id": "https://ns.adobe.com/xdm/content/component-container",
     "type": "object",
-    "title": "Component Container",
+    "title": "Component container",
     "meta:extensible": true,
     "description": "A container for `Page Component`s, this means for content blocks that are within a _Componentized Page_, not a container for componentized pages themselves. Components in the container can be ordered or unordered, and the type of the container determines how the container is authored, configured, rendered, and displayed.\n",
     "definitions": {
@@ -17,7 +17,7 @@
                 "@type": {
                     "type": "string",
                     "format": "uri",
-                    "description": "Type of the container. Acts as processing hint for the client."
+                    "description": "Type of the container, acts as processing hint for the client."
                 },
                 "xdm:items": {
                     "type": "object",

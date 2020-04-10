@@ -12,34 +12,34 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "Adobe AdCloud ExperienceEvent Full Extension. Contains all Solution added fields.",
+  "description": "Adobe Advertising Cloud ExperienceEvent full extension. Contains all Solution added fields.",
   "definitions": {
     "experienceevent-all": {
       "properties": {
         "https://ns.adobe.com/experience/adcloud/eventType": {
           "title": "Event Type",
           "type": "string",
-          "description": "Adobe AdCloud event type."
+          "description": "Adobe Advertising Cloud event type."
         },
         "https://ns.adobe.com/experience/adcloud/campaign": {
           "title": "Ad Campaign Details",
           "$ref": "https://ns.adobe.com/experience/adcloud/campaign",
-          "description": "Adobe AdCloud ad campaign hierarchy details."
+          "description": "Adobe Advertising Cloud ad campaign hierarchy details."
         },
         "https://ns.adobe.com/experience/adcloud/inventory": {
           "title": "Ad Inventory Details",
           "$ref": "https://ns.adobe.com/experience/adcloud/inventory",
-          "description": "Adobe AdCloud inventory details."
+          "description": "Adobe Advertising Cloud inventory details."
         },
         "https://ns.adobe.com/experience/adcloud/advertisement": {
           "title": "Ad Asset Details",
           "$ref": "https://ns.adobe.com/experience/adcloud/advertisement",
-          "description": "Digital advertisement details"
+          "description": "Digital advertisement details."
         },
         "https://ns.adobe.com/experience/adcloud/stitchId": {
           "title": "Stitch ID Chosen",
           "type": "string",
-          "description": "ID from the Ad Servers through AdCloud STATS to track click-through conversion on browsers that block third party cookies"
+          "description": "ID from the ad servers through Adobe Advertising Cloud STATS to track click-through conversion on browsers that block third party cookies."
         },
         "https://ns.adobe.com/experience/adcloud/adDeliveryDetails": {
           "title": "Ad Delivery Details",
@@ -55,6 +55,11 @@
           "title": "Ad Conversion Details",
           "$ref": "https://ns.adobe.com/experience/adcloud/conversiondetails",
           "description": "Search Ad Conversion Details."
+        },
+        "https://ns.adobe.com/experience/adcloud/fees": {
+          "title": "Advertising Fees",
+          "description": "Advertising Fees Details.",
+          "$ref": "https://ns.adobe.com/experience/adcloud/fees"
         }
       }
     }

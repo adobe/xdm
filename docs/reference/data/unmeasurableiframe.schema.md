@@ -1,22 +1,22 @@
 
-# unmeasurable-iframe Schema
+# Unmeasurable-iframe Schema
 
 ```
 https://ns.adobe.com/xdm/data/unmeasurableiframe
 ```
 
-The advertising/viewability metric unmeasurable-iframe describes whether a measurement instrumented ad was not able to be measured due to it being inside one or more iFrames.
+The advertising/viewability metric `unmeasurable-iframe` describes whether a measurement instrumented ad was not able to be measured due to it being inside one or more iFrames.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/unmeasurableiframe.schema.json](data/unmeasurableiframe.schema.json) |
 ## Schema Hierarchy
 
-* unmeasurable-iframe `https://ns.adobe.com/xdm/data/unmeasurableiframe`
+* Unmeasurable-iframe `https://ns.adobe.com/xdm/data/unmeasurableiframe`
   * [Metric Definition](metricdefinition.schema.md) `https://ns.adobe.com/xdm/data/metricdefinition`
 
 
-## unmeasurable-iframe Example
+## Unmeasurable-iframe Example
 ```json
 {
   "schema:name": "advertising/viewability metric: unmeasurableIframe",
@@ -26,7 +26,7 @@ The advertising/viewability metric unmeasurable-iframe describes whether a measu
 }
 ```
 
-# unmeasurable-iframe Properties
+# Unmeasurable-iframe Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|

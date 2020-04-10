@@ -222,7 +222,7 @@ The value of this property **must** be equal to one of the [known values below](
 ### Copyright Owner ID
 
 ID of the copyright owner.
-If the PLUS-ID being stored in this property is registered with the PLUS Coalition, it should be expressed as a URL. For example: http://plus-id.org/PLUS-ID
+If the PLUS-ID being stored in this property is registered with the PLUS Coalition, it should be expressed as a URL. For example: http://plus-id.org/PLUS-ID.
 
 `plus:copyrightOwnerID`
 * is optional
@@ -261,7 +261,7 @@ Name of Copyright Owner.
 
 ## repo:createDate
 
-The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
+The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The date time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
 
 `repo:createDate`
 * is optional
@@ -369,7 +369,7 @@ ID of the user who initiated the action that most recently caused the resource t
 
 ## repo:modifyDate
 
-The server date and time when the resource was last modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
+The server date and time when the resource was last modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The date time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
 
 `repo:modifyDate`
 * is optional
@@ -519,7 +519,7 @@ Vertical resolution in pixels per `resolutionUnit`.
 ## tiff:imageLength
 ### Length
 
-Height in pixels. To maintain continuity with the XMP and TIFF standards, the height of an image or video is specified in the property `imageLength`. The duration of the video (also commonly called length) is specified in the property `extent`
+Height in pixels. To maintain continuity with the XMP and TIFF standards, the height of an image or video is specified in the property `imageLength`. The duration of the video (also commonly called length) is specified in the property `extent`.
 
 `tiff:imageLength`
 * is optional
@@ -540,7 +540,7 @@ Height in pixels. To maintain continuity with the XMP and TIFF standards, the he
 ## tiff:imageWidth
 ### Width
 
-Width in pixels
+Width in pixels.
 
 `tiff:imageWidth`
 * is optional
@@ -569,7 +569,7 @@ The orientation of the image. Following values are permitted:
 - `5` = Mirror horizontal and rotate 270 degrees clockwise
 - `6` = Rotate 90 degrees clockwise
 - `7` = Mirror horizontal and rotate 90 degrees clockwise
-- `8` = Rotate 270 degrees clockwise
+- `8` = Rotate 270 degrees clockwise.
 
 `tiff:orientation`
 * is optional
@@ -673,7 +673,7 @@ The video frame rate in frames per second (FPS). Predefined values include:
 These examples show common video and audio frame rates:
 - Film at 24 fps (frame rate = 24, rate basis = 1): `f24`
 - Speech-to-text in milliseconds (frame rate = 1000, rate basis = 1): `f1000`
-- NTSC at 29.97 fps (frame rate = 30000, rate basis = 1001): `f30000s1001`
+- NTSC at 29.97 fps (frame rate = 30000, rate basis = 1001): `f30000s1001`.
 
 `xmpDM:videoFrameRate`
 * is optional

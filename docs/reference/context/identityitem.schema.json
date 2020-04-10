@@ -7,10 +7,10 @@
     ],
     "$id": "https://ns.adobe.com/xdm/context/identityitem",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Identity Item",
+    "title": "Identity item",
     "type": "object",
     "meta:extensible": true,
-    "description": "An end-user identity item, to be included in an instance of `context/identitymap`",
+    "description": "An end user identity item, to be included in an instance of `context/identitymap`.",
     "definitions": {
         "identityitem": {
             "properties": {
@@ -30,7 +30,7 @@
                     ],
                     "meta:enum": {
                         "ambiguous": "Ambiguous",
-                        "authenticated": "User identified by a login or simular action that was valid at the time of the event observation.",
+                        "authenticated": "User identified by a login or similar action that was valid at the time of the event observation.",
                         "loggedOut": "User was identified by a login action at some point of time previously, but is not currently logged in."
                     }
                 },

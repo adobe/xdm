@@ -8,7 +8,7 @@
   "$id": "https://ns.adobe.com/xdm/external/repo/effectiveprivileges",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Effective Privileges",
-  "description": "Schema for the Effective Privileges resource",
+  "description": "Schema for the effective privileges resource.",
   "type": "object",
   "definitions": {
     "effectiveprivileges": {
@@ -23,7 +23,7 @@
       }
     },
     "privilege": {
-      "description": "Privilege granted to the current Subject",
+      "description": "Privilege granted to the current subject.",
       "type": "array",
       "items": {
         "type": "string",

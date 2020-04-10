@@ -7,7 +7,7 @@
     ],
     "$id": "https://ns.adobe.com/xdm/context/webinteraction",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Web Interaction",
+    "title": "Web interaction",
     "type": "object",
     "meta:extensible": true,
     "description": "The Web Interaction schema captures information about interactions that happened on a web page after the intial page load (see also Web Page View) was completed.\n\nIt is intended for recording interactions in rich web applications that do not trigger a new page load such as single page web apps (SPAs).\n",
@@ -32,16 +32,16 @@
                 "xdm:URL": {
                     "title": "URL",
                     "type": "string",
-                    "description": "The actual link/URL used for this web interaction"
+                    "description": "The actual link or URL used for this web interaction."
                 },
                 "xdm:name": {
                     "title": "Name",
                     "type": "string",
-                    "description": "The normative name used for this web link, used for classification purposes"
+                    "description": "The normative name used for this web link, used for classification purposes."
                 },
                 "xdm:linkClicks": {
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
-                    "description": "Click of a web-link has occurred."
+                    "description": "Click of a web link has occurred."
                 }
             }
         }

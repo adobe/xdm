@@ -7,13 +7,13 @@
     ],
     "$id": "https://ns.adobe.com/xdm/data/metrics/web/linkclicks",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "link-clicks",
+    "title": "Link-Clicks",
     "type": "object",
     "meta:extensible": true,
     "meta:extends": [
         "https://ns.adobe.com/xdm/data/metricdefinition"
     ],
-    "description": "The web metric link-clicks describes the number of clicks on a link on a web page.",
+    "description": "The web metric `link-clicks` describes the number of clicks on a link on a web page.",
     "definitions": {
         "metricdefinition": {
             "properties": {
@@ -26,7 +26,7 @@
                 "schema:name": {
                     "type": "string",
                     "const": "web metric: linkClicks",
-                    "description": "The web metric link-clicks describes the number of clicks on a link on a web page."
+                    "description": "The web metric `link-clicks` describes the number of clicks on a link on a web page."
                 },
                 "xdm:measurement": {
                     "type": "string",

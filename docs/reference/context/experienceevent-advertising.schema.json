@@ -7,21 +7,21 @@
     ],
     "$id": "https://ns.adobe.com/xdm/context/experienceevent-advertising",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "ExperienceEvent Details for Advertising",
+    "title": "ExperienceEvent details for advertising",
     "type": "object",
     "meta:extensible": true,
     "meta:abstract": true,
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/experienceevent"
     ],
-    "description": "ExperienceEvent Details for Advertising.",
+    "description": "This mixin is used to capture advertising details related to an ExperienceEvent, such as clicks, completes, impressions, and conversions.",
     "definitions": {
         "experienceevent-advertising": {
             "properties": {
                 "xdm:advertising": {
                     "title": "Advertising",
                     "$ref": "https://ns.adobe.com/xdm/context/advertising",
-                    "description": "Information related to advertising activity in ExperienceEvents"
+                    "description": "Information related to advertising activity in ExperienceEvents."
                 }
             }
         }

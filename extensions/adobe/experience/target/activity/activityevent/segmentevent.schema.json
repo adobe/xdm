@@ -9,14 +9,14 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Activity Segment Event",
   "type": "object",
-  "description": "Represents Activity Segment Event.",
+  "description": "Represents activity segment event.",
   "definitions": {
     "segmentevent": {
       "properties": {
         "xdm:segmentID": {
           "title": "Segment Identifier",
           "$ref": "https://ns.adobe.com/xdm/context/segmentidentity",
-          "description": "Activity Segment Event."
+          "description": "Activity segment event."
         },
         "xdm:eventScope": {
           "$ref": "https://ns.adobe.com/experience/target/activity/activityevent/eventscope#/definitions/eventscope"

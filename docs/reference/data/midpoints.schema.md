@@ -1,22 +1,22 @@
 
-# midpoints Schema
+# Midpoints Schema
 
 ```
 https://ns.adobe.com/xdm/data/midpoints
 ```
 
-The metric midpoints describes when digital video played for at least 50% of the total duration.
+The metric `midpoints` describes when digital video played for at least 50% of the total duration.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/midpoints.schema.json](data/midpoints.schema.json) |
 ## Schema Hierarchy
 
-* midpoints `https://ns.adobe.com/xdm/data/midpoints`
+* Midpoints `https://ns.adobe.com/xdm/data/midpoints`
   * [Metric Definition](metricdefinition.schema.md) `https://ns.adobe.com/xdm/data/metricdefinition`
 
 
-## midpoints Example
+## Midpoints Example
 ```json
 {
   "schema:name": "metric: midpoints",
@@ -26,7 +26,7 @@ The metric midpoints describes when digital video played for at least 50% of the
 }
 ```
 
-# midpoints Properties
+# Midpoints Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|

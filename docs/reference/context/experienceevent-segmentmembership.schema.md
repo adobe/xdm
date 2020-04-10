@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/experienceevent-segmentmembership
 ```
 
-ExperienceEvent Segment Membership Details.
+This mixin is used to capture information regarding ExperienceEvent segment membership, including which segments the individual belongs to, the last qualification time, and when the membership is valid until.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -51,7 +51,7 @@ ExperienceEvent Segment Membership Details.
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [xdm:segmentMembership](#xdmsegmentmembership) | `object` | Optional | ExperienceEvent Segment Membership Details (this schema) |
-| [xdm:segmentMemberships](#xdmsegmentmemberships) | Segment Membership Item | Optional | ExperienceEvent Segment Membership Details (this schema) |
+| [xdm:segmentMemberships](#xdmsegmentmemberships) | Segment membership item | Optional | ExperienceEvent Segment Membership Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:segmentMembership
@@ -83,17 +83,17 @@ The segments associated with this ExperienceEvent. Deprecated, use `xdm:segmentM
 
 `xdm:segmentMemberships`
 * is optional
-* type: Segment Membership Item
+* type: Segment membership item
 
 * defined in this schema
 
 ### xdm:segmentMemberships Type
 
 
-Array type: Segment Membership Item
+Array type: Segment membership item
 
 All items must be of the type:
-* [Segment Membership Item](segmentmembershipitem.schema.md) – `https://ns.adobe.com/xdm/context/segmentmembershipitem`
+* [Segment membership item](segmentmembershipitem.schema.md) – `https://ns.adobe.com/xdm/context/segmentmembershipitem`
 
 
 

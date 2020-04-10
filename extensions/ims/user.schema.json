@@ -20,7 +20,7 @@
         },
         "xdm:id": {
           "description":
-            "Principal id identifies a user account in IMS. Its value is equivalent to the standard claim, `sub` as mentioned in the [openid connect 1.0 standard claims](http://openid.net/specs/openid-connect-core-1_0.html#StandardClaim). This value can be obtained by fetching the [userinfo resource](http://openid.net/specs/openid-connect-core-1_0.html#UserInfo) for a particular user [in IMS](https://wiki.corp.adobe.com/display/ims/IMS+API+-+userinfo).",
+            "Principal ID identifies a user account in IMS. Its value is equivalent to the standard claim, `sub` as mentioned in the [openid connect 1.0 standard claims](http://openid.net/specs/openid-connect-core-1_0.html#StandardClaim). This value can be obtained by fetching the [userinfo resource](http://openid.net/specs/openid-connect-core-1_0.html#UserInfo) for a particular user [in IMS](https://wiki.corp.adobe.com/display/ims/IMS+API+-+userinfo).",
           "type": "string"
         },
         "xdm:type": {
@@ -33,13 +33,13 @@
       "xdm:displayName": {
         "title": "Name",
         "type": "string",
-        "description": "Display name"
+        "description": "Display name."
       },
       "xdm:profileImage": {
         "title": "Image",
         "format": "uri",
         "type": "string",
-        "description": "Profile avatar/picture of the person"
+        "description": "Profile avatar/picture of the person."
       },
       "xdm:profileLink": {
         "title": "Image",
@@ -61,5 +61,5 @@
     }
   ],
   "required" : ["xdm:identityProvider", "xdm:id", "xdm:type"],
-  "meta:status": "experimental"
+  "meta:status": "deprecated"
 }

@@ -40,14 +40,14 @@
     "$id": {
       "type": "string",
       "format": "uri",
-      "pattern": "(https://ns\\.adobe\\.com/xdm/[a-z0-9-/]*)|(http://schema\\.org/.*)|(http://ns.adobe.com/adobecloud/core/1.0.*)|(https://tools\\.ietf\\.org/html/draft-kelly-json-hal-08/.*)|(http://www.iptc\\.org/.*)"
+      "pattern": "(https://ns\\.adobe\\.com/xdm/[a-z0-9-/]*)|(http://schema\\.org/.*)|(http://ns.adobe.com/adobecloud/core/1.0.*)|([http|https]://ns\\.adobe\\.com/adobecloudplatform/.*)|(https://tools\\.ietf\\.org/html/draft-kelly-json-hal-08/.*)|(http://www.iptc\\.org/.*)"
     },
     "meta:license": {
       "type": "array",
       "items": [
         {
           "type": "string",
-          "pattern": "Copyright 201[7-9] .*\\. All rights reserved\\."
+          "pattern": "(Copyright 201[7-9] .*\\. All rights reserved\\.)|(Copyright 202[0-9] .*\\. All rights reserved\\.)"
         },
         {
           "type": "string",

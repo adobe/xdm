@@ -21,7 +21,7 @@
                 "xdm:code": {
                     "title": "Code",
                     "type": "string",
-                    "description": "The description of the discountValue attribute. e.g percentage, currency, 3for2 etc. Can be enumerated, custom values allowed.",
+                    "description": "The description of the `discountValue` attribute. e.g percentage, currency, 3for2 etc. Can be enumerated, custom values allowed.",
                     "meta:enum": {
                         "bogo": "Buy one, get one free",
                         "bogoho": "Buy one, get one half off",
@@ -40,7 +40,7 @@
                 },
                 "xdm:condition": {
                     "title": "Condition",
-                    "description": "The minimum amount of items or price for the dicount to qualify"
+                    "description": "The minimum amount of items or price for the discount to qualify."
                 }
             }
         }

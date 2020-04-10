@@ -11,7 +11,7 @@
   "meta:extensible": true,
   "type": "object",
   "title": "Representation",
-  "description": "Offer Representation",
+  "description": "Offer representation.",
   "definitions": {
     "offer-representation": {
       "properties": {
@@ -40,7 +40,7 @@
       "type": "string",
       "format": "uri",
       "title": "Content Component Type",
-      "description": "Content Component Type: imagelink, html or text",
+      "description": "Content component type: imagelink, html or text.",
       "enum": [
         "https://ns.adobe.com/experience/offer-management/content-component-text",
         "https://ns.adobe.com/experience/offer-management/content-component-html",
@@ -92,7 +92,7 @@
               "type": "string",
               "meta:immutable": true,
               "meta:usereditable": false,
-              "description": "An optional unique identifier to reference the asset in a content repository. When Platform APIs are used to retrieve the representation the client can expect an addtional propery \"repo:resolveUrl\" to retrieve the asset.",
+              "description": "An optional unique identifier to reference the asset in a content repository. When Platform APIs are used to retrieve the representation the client can expect an additional property \"repo:resolveUrl\" to retrieve the asset.",
               "examples": [
                 "urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e"
               ]
@@ -102,7 +102,7 @@
               "format": "uri",
               "meta:immutable": true,
               "meta:usereditable": false,
-              "description": "An optional unique resource locator to read the asset in a content repository. This will make it easier to obtain the asset whithout the client understanding where the asset is manages and what APIs to call. This is similar to a HAL link but the semantic is simpler and more pursposeful.",
+              "description": "An optional unique resource locator to read the asset in a content repository. This will make it easier to obtain the asset without the client understanding where the asset is manages and what APIs to call. This is similar to a HAL link but the semantic is simpler and more purposeful.",
               "examples": [
                 "https://plaftform.adobe.io/resolveByPath?path=&quot;/mycorp/content/projectx/fragment/prod/herobanners/banner14.html3&quot;"
               ]

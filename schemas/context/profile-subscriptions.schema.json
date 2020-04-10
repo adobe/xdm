@@ -7,12 +7,12 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/profile-subscriptions",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Profile Subscriptions",
+  "title": "Profile subscriptions",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
-  "description": "profile subscriptions for commercial or licensed services and entitlements.",
+  "description": "This mixin is used to capture information regarding an individual's subscriptions, such as the billing period, contract ID, start date, and end date. Profile subscriptions include commercial or licensed services, and entitlements.",
   "definitions": {
     "profile-subscriptions": {
       "properties": {
@@ -20,7 +20,7 @@
           "title": "Subscriptions",
           "type": "array",
           "description":
-            "Subscriptions that this profile is entitled to including terminated, expired or exhausted subscriptions.",
+            "Subscriptions that the profile is entitled to including terminated, expired, or exhausted subscriptions.",
           "items": {
             "$ref": "https://ns.adobe.com/xdm/context/subscription"
           }

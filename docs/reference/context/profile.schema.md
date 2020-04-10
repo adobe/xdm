@@ -1,24 +1,24 @@
 
-# XDM Profile Schema
+# XDM Individual Profile Schema
 
 ```
 https://ns.adobe.com/xdm/context/profile
 ```
 
-An XDM Profile forms a singular representation of the attributes and interests of both identified and partially-identified subjects. Less-identified profiles may contain only anonymous behavioral signals, such as browser cookies, while highly-identified profiles may contain detailed personal information such as name, date of birth, location, and email address. As a profile continues to grow, it becomes a robust repository of personal information, identification information, contact details, and communication preferences for an individual subject.
+An XDM Individual Profile forms a singular representation of the attributes and interests of both identified and partially-identified individuals. Less-identified profiles may contain only anonymous behavioral signals, such as browser cookies, while highly-identified profiles may contain detailed personal information such as name, date of birth, location, and email address. As a profile grows, it becomes a robust repository of personal information, identification information, contact details, and communication preferences for an individual.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/profile.schema.json](context/profile.schema.json) |
 ## Schema Hierarchy
 
-* XDM Profile `https://ns.adobe.com/xdm/context/profile`
+* XDM Individual Profile `https://ns.adobe.com/xdm/context/profile`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Audit Trail](../common/auditable.schema.md) `https://ns.adobe.com/xdm/common/auditable`
+  * [Audit trail](../common/auditable.schema.md) `https://ns.adobe.com/xdm/common/auditable`
   * [Record Schema](../data/record.schema.md) `https://ns.adobe.com/xdm/data/record`
 
 
-## XDM Profile Example
+## XDM Individual Profile Example
 ```json
 {
   "xdm:identityMap": {
@@ -113,17 +113,17 @@ An XDM Profile forms a singular representation of the attributes and interests o
 }
 ```
 
-# XDM Profile Properties
+# XDM Individual Profile Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Record Schema](../data/record.schema.md#id) |
-| [repo:createDate](#repocreatedate) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#repocreatedate) |
-| [repo:modifyDate](#repomodifydate) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#repomodifydate) |
-| [xdm:createdByBatchID](#xdmcreatedbybatchid) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmcreatedbybatchid) |
-| [xdm:modifiedByBatchID](#xdmmodifiedbybatchid) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmmodifiedbybatchid) |
-| [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmrepositorycreatedby) |
-| [xdm:repositoryLastModifiedBy](#xdmrepositorylastmodifiedby) | `string` | Optional | [Audit Trail](../common/auditable.schema.md#xdmrepositorylastmodifiedby) |
+| [repo:createDate](#repocreatedate) | `string` | Optional | [Audit trail](../common/auditable.schema.md#repocreatedate) |
+| [repo:modifyDate](#repomodifydate) | `string` | Optional | [Audit trail](../common/auditable.schema.md#repomodifydate) |
+| [xdm:createdByBatchID](#xdmcreatedbybatchid) | `string` | Optional | [Audit trail](../common/auditable.schema.md#xdmcreatedbybatchid) |
+| [xdm:modifiedByBatchID](#xdmmodifiedbybatchid) | `string` | Optional | [Audit trail](../common/auditable.schema.md#xdmmodifiedbybatchid) |
+| [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | Optional | [Audit trail](../common/auditable.schema.md#xdmrepositorycreatedby) |
+| [xdm:repositoryLastModifiedBy](#xdmrepositorylastmodifiedby) | `string` | Optional | [Audit trail](../common/auditable.schema.md#xdmrepositorylastmodifiedby) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -149,12 +149,12 @@ A unique identifier for the record.
 
 ## repo:createDate
 
-The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
+The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The date time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
 
 `repo:createDate`
 * is optional
 * type: `string`
-* defined in [Audit Trail](../common/auditable.schema.md#repocreatedate)
+* defined in [Audit trail](../common/auditable.schema.md#repocreatedate)
 
 ### repo:createDate Type
 
@@ -174,12 +174,12 @@ The server date and time when the resource was created in the repository, such a
 
 ## repo:modifyDate
 
-The server date and time when the resource was last modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The Date Time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
+The server date and time when the resource was last modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The date time property should conform to ISO 8601 standard. An example form is "2004-10-23T12:00:00-06:00".
 
 `repo:modifyDate`
 * is optional
 * type: `string`
-* defined in [Audit Trail](../common/auditable.schema.md#repomodifydate)
+* defined in [Audit trail](../common/auditable.schema.md#repomodifydate)
 
 ### repo:modifyDate Type
 
@@ -198,14 +198,14 @@ The server date and time when the resource was last modified in the repository, 
 
 
 ## xdm:createdByBatchID
-### Created by Batch Identifier
+### Created by batch identifier
 
-The Data Set Files in Catalog Services which has been originating the creation of the entity.
+The dataset files in Catalog which has been originating the creation of the record.
 
 `xdm:createdByBatchID`
 * is optional
 * type: `string`
-* defined in [Audit Trail](../common/auditable.schema.md#xdmcreatedbybatchid)
+* defined in [Audit trail](../common/auditable.schema.md#xdmcreatedbybatchid)
 
 ### xdm:createdByBatchID Type
 
@@ -219,14 +219,14 @@ The Data Set Files in Catalog Services which has been originating the creation o
 
 
 ## xdm:modifiedByBatchID
-### Modified by Batch Identifier
+### Modified by batch identifier
 
-The last Data Set Files in Catalog Services which has modified the entity. At creation time, `modifiedByBatchID` is set as `createdByBatchID`.
+The last dataset files in Catalog which has modified the record. At creation time, `modifiedByBatchID` is set as `createdByBatchID`.
 
 `xdm:modifiedByBatchID`
 * is optional
 * type: `string`
-* defined in [Audit Trail](../common/auditable.schema.md#xdmmodifiedbybatchid)
+* defined in [Audit trail](../common/auditable.schema.md#xdmmodifiedbybatchid)
 
 ### xdm:modifiedByBatchID Type
 
@@ -240,14 +240,14 @@ The last Data Set Files in Catalog Services which has modified the entity. At cr
 
 
 ## xdm:repositoryCreatedBy
-### Created by User Identifier
+### Created by user identifier
 
-User id who has created the entity.
+User ID of who created the record.
 
 `xdm:repositoryCreatedBy`
 * is optional
 * type: `string`
-* defined in [Audit Trail](../common/auditable.schema.md#xdmrepositorycreatedby)
+* defined in [Audit trail](../common/auditable.schema.md#xdmrepositorycreatedby)
 
 ### xdm:repositoryCreatedBy Type
 
@@ -260,14 +260,14 @@ User id who has created the entity.
 
 
 ## xdm:repositoryLastModifiedBy
-### Modified by User Identifier
+### Modified by user identifier
 
-User id who last modified the entity. At creation time, `modifiedByUser` is set as `createdByUser`.
+User ID of who last modified the record. At creation time, `modifiedByUser` is set as `createdByUser`.
 
 `xdm:repositoryLastModifiedBy`
 * is optional
 * type: `string`
-* defined in [Audit Trail](../common/auditable.schema.md#xdmrepositorylastmodifiedby)
+* defined in [Audit trail](../common/auditable.schema.md#xdmrepositorylastmodifiedby)
 
 ### xdm:repositoryLastModifiedBy Type
 

@@ -11,7 +11,7 @@
   "meta:extensible": true,
   "type": "object",
   "title": "Offer Selection Constraint",
-  "description": "Offer Selection Constraint specify conditions that have to be met in order for an offer to be included in weighing the best offer. Those constraints can have many aspects, ranging from date constraints over rules applied to the user profile fields to rules checked against contextual data available at decision time.",
+  "description": "Offer selection constraint specify conditions that have to be met in order for an offer to be included in weighing the best offer. Those constraints can have many aspects, ranging from date constraints over rules applied to the user profile fields to rules checked against contextual data available at decision time.",
   "definitions": {
     "selection-constraint": {
       "properties": {

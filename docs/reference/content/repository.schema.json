@@ -7,8 +7,8 @@
     ],
     "$schema": "http://json-schema.org/draft-06/schema#",
     "$id": "https://ns.adobe.com/xdm/content/repository",
-    "title": "Content Repository",
-    "description": "A Content Repository that is compliant with the Adobe Cloud Platform API specification.",
+    "title": "Content repository",
+    "description": "A content repository that is compliant with the Adobe Experience Platform API specification.",
     "type": "object",
     "properties": {
         "xdm:root": {

@@ -1,0 +1,122 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/adcloud/dsp/campaign",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "DSP Advertising Campaign",
+  "type": "object",
+  "meta:extensible": false,
+  "meta:abstract": false,
+  "meta:auditable": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "description": "Adobe Advertising Cloud DSP Campaign Details.",
+  "definitions": {
+    "dsp-campaign": {
+      "properties": {
+        "dsp:campaignKey": {
+          "title": "Campaign Key",
+          "type": "string",
+          "description": "Campaign external identifier."
+        },
+        "dsp:campaignName": {
+          "title": "Campaign Name",
+          "type": "string",
+          "description": "Name of the campaign."
+        },
+        "dsp:campaignStatus": {
+          "title": "Campaign Status",
+          "type": "string",
+          "description": "Campaign Status extracted from the Insertion Order associated with this campaign.Indicates if underlying ads are eligible to serve.",
+          "enum": [
+            "Active",
+            "Inactive",
+            "Deleted",
+            "Paid"
+          ],
+          "meta:enum": {
+            "Active": "Active",
+            "Inactive": "Inactive",
+            "Deleted": "Deleted",
+            "Paid": "Paid"
+          }
+        },
+        "dsp:timezone": {
+          "title": "Campaign Timezone",
+          "type": "string",
+          "description": "Timezone of the campaign."
+        },
+        "dsp:type": {
+          "title": "Campaign Type",
+          "type": "string",
+          "description": "Campaign Type",
+          "enum": [
+            "Media",
+            "Brandsights"
+          ],
+          "meta:enum": {
+            "Media": "Media",
+            "Brandsights": "Brandsights"
+          }
+        },
+        "dsp:userId": {
+          "title": "User Identifier",
+          "type": "integer",
+          "description": "Identifier for the user who created the campaign."
+        },
+        "dsp:feeClass": {
+          "title": "The Fee Class",
+          "type": "string",
+          "description": "Fee Class needed for computing the total spend.",
+          "enum": [
+            "tubemogul",
+            "advertiser",
+            "no_io"
+          ],
+          "meta:enum": {
+            "tubemogul": "tubemogul",
+            "advertiser": "advertiser",
+            "no_io": "no_io"
+          }
+        },
+        "dsp:campaignStartTime": {
+          "title": "Campaign start time.",
+          "type": "string",
+          "format": "date-time",
+          "description": "The insertion order fields representing campaign start time."
+        },
+        "dsp:campaignEndTime": {
+          "title": "Campaign end time.",
+          "type": "string",
+          "format": "date-time",
+          "description": "The insertion order fields representing campaign end time."
+        },
+        "dsp:accountId": {
+          "title": "Account Identifier",
+          "type": "string",
+          "description": "Identifier for the account owning this campaign."
+        },
+        "dsp:advertiserId": {
+          "title": "Advertiser Identifier",
+          "type": "string",
+          "description": "Identifier for the advertiser owning this campaign."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/auditable"
+    },
+    {
+      "$ref": "#/definitions/dsp-campaign"
+    }
+  ],
+  "meta:status": "experimental"
+}

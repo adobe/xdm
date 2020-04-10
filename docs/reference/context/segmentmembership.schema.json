@@ -7,7 +7,7 @@
     ],
     "$id": "https://ns.adobe.com/xdm/context/segmentmembership",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Segment Membership",
+    "title": "Segment membership",
     "type": "object",
     "description": "Details about a segment membership.",
     "definitions": {
@@ -25,37 +25,37 @@
                     "description": "The version of the segment definition used in this segment assertion. Version can be omitted in audience lists when all memberships versions are the same."
                 },
                 "xdm:lastQualificationTime": {
-                    "title": "Last Qualification Time",
+                    "title": "Last qualification time",
                     "type": "string",
                     "format": "date-time",
                     "description": "The timestamp when the assertion of segment membership was made."
                 },
                 "xdm:payload": {
                     "title": "Payload",
-                    "description": "Values that are directly related with the segment realization. This payload exists with the same validUntil as the segment realization.  Note that the intention is that exactly one payload value be included, as indicated by the payload type.  This was originally modelled using 'oneOf', but due to limitations in our tooling that was removed.  This more semantically meaningful representation will be re-introduced in the future.",
+                    "description": "Values that are directly related with the segment realization. This payload exists with the same 'validUntil' as the segment realization.  Note that the intention is that exactly one payload value be included, as indicated by the payload type.  This was originally modeled using 'oneOf', but due to limitations in our tooling that was removed.  This more semantically meaningful representation will be re-introduced in the future.",
                     "type": "object",
                     "properties": {
                         "xdm:payloadBooleanValue": {
                             "title": "Value",
                             "type": "boolean",
-                            "description": "The boolean value"
+                            "description": "The boolean value."
                         },
                         "xdm:payloadNumberValue": {
                             "title": "Value",
                             "type": "number",
-                            "description": "The number"
+                            "description": "The number."
                         },
                         "xdm:payloadPropensityValue": {
                             "title": "Value",
                             "type": "number",
-                            "description": "The propensity",
+                            "description": "The propensity.",
                             "exclusiveMinimum": 0,
                             "maximum": 1
                         },
                         "xdm:payloadStringValue": {
                             "title": "Value",
                             "type": "string",
-                            "description": "The string value"
+                            "description": "The string value."
                         },
                         "xdm:payloadType": {
                             "title": "Payload Type",
@@ -80,10 +80,10 @@
                     ]
                 },
                 "xdm:validUntil": {
-                    "title": "Valid Until",
+                    "title": "Valid until",
                     "type": "string",
                     "format": "date-time",
-                    "description": "The timestamp for when the segment assertion should nolonger be assumed to be valid and should either be ignored or revalidated."
+                    "description": "The timestamp for when the segment assertion should no longer be assumed to be valid and should either be ignored or revalidated."
                 },
                 "xdm:status": {
                     "title": "Status",
@@ -96,9 +96,9 @@
                         "exited"
                     ],
                     "meta:enum": {
-                        "existing": "Entity continues to be in the segment",
-                        "realized": "Entity is entering the segment",
-                        "exited": "Entity is exiting the segment"
+                        "existing": "Entity continues to be in the segment.",
+                        "realized": "Entity is entering the segment.",
+                        "exited": "Entity is exiting the segment."
                     }
                 },
                 "xdm:profileStitchID": {

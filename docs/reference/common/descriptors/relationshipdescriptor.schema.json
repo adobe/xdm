@@ -33,15 +33,24 @@
                     "title": "Destination Item",
                     "description": "When present, the selector used to match a specific item in the array pointed to by destProperty",
                     "$ref": "https://ns.adobe.com/xdm/common/descriptors/itemselector#/definitions/selector"
+                },
+                "xdm:destinationVersion": {
+                    "title": "Destination Version",
+                    "type": "number",
+                    "description": "Major version being referenced."
+                },
+                "xdm:sourceValue": {
+                    "title": "Source Value",
+                    "type": "string",
+                    "description": "When present, provides additional information about the values in that field. Descriptor producer and consumer should coordinate on how to use this field, e.g. defining rules on formats, values, and operations."
+                },
+                "xdm:label": {
+                    "title": "Label",
+                    "type": "string"
                 }
             },
             "oneOf": [
                 {
-                    "properties": {
-                        "xdm:label": {
-                            "type": "string"
-                        }
-                    },
                     "required": [
                         "xdm:label"
                     ]
@@ -53,7 +62,8 @@
                 }
             ],
             "required": [
-                "xdm:destinationSchema"
+                "xdm:destinationSchema",
+                "xdm:destinationVersion"
             ]
         }
     },
@@ -65,18 +75,20 @@
             "$ref": "#/definitions/relationshipdescriptor"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stabilizing",
     "examples": [
         {
             "@id": "https://example.com/descriptors/1",
             "@type": "xdm:descriptorOneToOne",
             "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile",
-            "xdm:sourceProperty": "xdm:identities",
+            "xdm:sourceProperty": "/xdm:identities",
+            "xdm:sourceVersion": 1,
             "xdm:sourceItem": {
                 "xdm:type": "https://example.com/crmID"
             },
             "xdm:destinationSchema": "https://ns.adobe.com/extensions/12345678/customers",
-            "xdm:destinationProperty": "xdm:crmID"
+            "xdm:destinationProperty": "/xdm:crmID",
+            "xdm:destinationVersion": 1
         }
     ]
 }

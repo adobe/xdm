@@ -1,5 +1,5 @@
 
-# Drop before Starts Schema
+# Drop Before Starts Schema
 
 ```
 https://ns.adobe.com/xdm/data/drop-before-starts
@@ -12,11 +12,11 @@ Indicates the user abandoned the media stream before the first frame (e.g. durin
 | Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/drop-before-starts.schema.json](data/drop-before-starts.schema.json) |
 ## Schema Hierarchy
 
-* Drop before Starts `https://ns.adobe.com/xdm/data/drop-before-starts`
+* Drop Before Starts `https://ns.adobe.com/xdm/data/drop-before-starts`
   * [Metric Definition](metricdefinition.schema.md) `https://ns.adobe.com/xdm/data/metricdefinition`
 
 
-## Drop before Starts Example
+## Drop Before Starts Example
 ```json
 {
   "schema:name": "metric: dropBeforeStarts",
@@ -26,7 +26,7 @@ Indicates the user abandoned the media stream before the first frame (e.g. durin
 }
 ```
 
-# Drop before Starts Properties
+# Drop Before Starts Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|

@@ -1,6 +1,6 @@
 {
   "meta:license": [
-    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
     "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
@@ -15,8 +15,8 @@
   "definitions": {
     "opportunity-marketo": {
       "properties": {
-        "marketo:ID": {
-          "title": "Marketo ID",
+        "marketo:opportunityID": {
+          "title": "Marketo opportunity ID",
           "description": "Marketo ID.",
           "type": "string"
         },
@@ -33,7 +33,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref":"https://ns.adobe.com/xdm/context/opportunity-crm"
+      "$ref": "https://ns.adobe.com/xdm/context/opportunity-crm"
     },
     {
       "$ref": "#/definitions/opportunity-marketo"

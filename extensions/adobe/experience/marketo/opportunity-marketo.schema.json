@@ -39,6 +39,6 @@
       "$ref": "#/definitions/opportunity-marketo"
     }
   ],
-  "required": ["marketo:mktoGuid"],
+  "required": ["marketo:ID"],
   "meta:status": "experimental"
 }

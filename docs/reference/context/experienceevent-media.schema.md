@@ -28,7 +28,7 @@ This mixin is used to capture information regarding interactions with media such
         "xmpDM:duration": 87,
         "iptc4xmpExt:Series": {
           "iptc4xmpExt:Name": "nba_highlights",
-          "iptc4xmpExt:Identifier": "http://espn.com/series-identifiers/2613953"
+          "iptc4xmpExt:Identifier": "http://sportcnl.com/series-identifiers/2613953"
         },
         "xdm:showType": "episode",
         "xdm:streamFormat": "long",
@@ -49,22 +49,22 @@ This mixin is used to capture information regarding interactions with media such
         ],
         "iptc4xmpExt:Creator": [
           {
-            "iptc4xmpExt:Name": "ESPN"
+            "iptc4xmpExt:Name": "SportCNL"
           }
         ]
       },
       "xdm:primaryAssetViewDetails": {
         "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114230",
-        "xdm:playerName": "watchespn",
-        "xdm:broadcastChannel": "WatchESPN",
+        "xdm:playerName": "watchsportcnl",
+        "xdm:broadcastChannel": "WatchSportCnl",
         "xdm:broadcastContentType": "VOD",
         "xdm:streamFormat": "short",
         "xdm:playerSDKVersion": {
           "xdm:version": "1.0.8"
         },
-        "xdm:broadcastNetwork": "nbcu",
+        "xdm:broadcastNetwork": "scu",
         "xdm:adLoadType": "2",
-        "xdm:sourceFeed": "http%3A%2F%2Fvod01.pure.centurylink.net%2Fhls%2Fvu%2F9083406%2FVUBX0280890106690980_38_3_M_HD.m3u8",
+        "xdm:sourceFeed": "http%3A%2F%2Fvod01.url.net%2Fhls%2Fvu%2F9083406%2FVUBX0280890106690980_38_3_M_HD.m3u8",
         "xdm:sessionTimeout": 1800,
         "xdm:QOE": {
           "xdm:errors": {

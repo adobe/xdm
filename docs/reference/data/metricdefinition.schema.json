@@ -34,21 +34,13 @@
                     ]
                 },
                 "xdm:unit": {
-                    "anyOf": [
-                        {
-                            "type": "string",
-                            "description": "The unit that this metric is measured in. Whenever possible, metrics should follow the [SI base units](https://www.bipm.org/en/measurement-units/) or be [ISO 4217 currency codes](https://www.iso.org/iso-4217-currency-codes.html).",
-                            "examples": [
-                                "m",
-                                "kg",
-                                "s",
-                                "USD"
-                            ]
-                        },
-                        {
-                            "const": null,
-                            "description": "The unit that this metric is measured in. For metric that are counts, the `xdm:unit` must be `null`."
-                        }
+                    "type": "string",
+                    "description": "The unit that this metric is measured in. Whenever possible, metrics should follow the [SI base units](https://www.bipm.org/en/measurement-units/) or be [ISO 4217 currency codes](https://www.iso.org/iso-4217-currency-codes.html).For metric that are counts, the `xdm:unit` must be empty string (equivalent to null)",
+                    "examples": [
+                        "m",
+                        "kg",
+                        "s",
+                        "USD"
                     ]
                 }
             }

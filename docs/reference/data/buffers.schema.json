@@ -33,7 +33,7 @@
                     "const": "count"
                 },
                 "xdm:unit": {
-                    "const": null
+                    "const": ""
                 }
             }
         }
@@ -58,7 +58,7 @@
             "schema:name": "metric: buffers",
             "@id": "xdm:buffers",
             "xdm:measurement": "count",
-            "xdm:unit": null
+            "xdm:unit": ""
         }
     ]
 }

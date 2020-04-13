@@ -39,7 +39,7 @@ Through XDM's extensibility mechanism, new metrics can be defined by extending `
 | [@id](#id) | `string` | **Required** | Metric Definition (this schema) |
 | [schema:name](#schemaname) | `string` | **Required** | Metric Definition (this schema) |
 | [xdm:measurement](#xdmmeasurement) | `string` | **Required** | Metric Definition (this schema) |
-| [xdm:unit](#xdmunit) | complex | **Required** | Metric Definition (this schema) |
+| [xdm:unit](#xdmunit) | `string` | **Required** | Metric Definition (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -121,29 +121,38 @@ How to take measures of this metric.
 
 ## xdm:unit
 
+The unit that this metric is measured in. Whenever possible, metrics should follow the [SI base units](https://www.bipm.org/en/measurement-units/) or be [ISO 4217 currency codes](https://www.iso.org/iso-4217-currency-codes.html).For metric that are counts, the `xdm:unit` must be empty string (equivalent to null)
 
 `xdm:unit`
 * is **required**
-* type: complex
+* type: `string`
 * defined in this schema
 
 ### xdm:unit Type
-
-
-**Any** following *options* needs to be fulfilled.
-
-
-#### Option 1
 
 
 `string`
 
 
 
-#### Option 2
 
 
+### xdm:unit Examples
 
+```json
+"m"
+```
 
+```json
+"kg"
+```
+
+```json
+"s"
+```
+
+```json
+"USD"
+```
 
 

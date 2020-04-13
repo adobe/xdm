@@ -56,6 +56,27 @@
                     },
                     "description": "Gender identity of the person.\n",
                     "default": "not_specified"
+                },
+                "xdm:maritalStatus": {
+                    "title": "Marital Status",
+                    "type": "string",
+                    "enum": [
+                        "married",
+                        "single",
+                        "not_specified"
+                    ],
+                    "meta:enum": {
+                        "married": "Married",
+                        "single": "Single",
+                        "not_specified": "Not Specified"
+                    },
+                    "description": "Marital status of the person.\n",
+                    "default": "not_specified"
+                },
+                "xdm:nationality": {
+                    "title": "Nationality",
+                    "type": "string",
+                    "description": "The legal relationship between a person and their state represented using the ISO 3166-1 Alpha-3 code."
                 }
             }
         }

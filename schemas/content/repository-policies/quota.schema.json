@@ -16,25 +16,25 @@
       "properties": {
         "xdm:enforcement": {
           "name": "Enforcement Type",
-          "decription": "Determines whether the quota is being enforced (hard quota) or only reported on (soft quota).",
+          "description": "Determines whether the quota is being enforced (hard quota) or only reported on (soft quota).",
           "type": "string",
           "enum": ["hard", "soft"]
         },
         "xdm:amount": {
           "name": "Quota Amount",
-          "decription": "The quota against which consumption is measured at the point of the repository that links to this document.",
+          "description": "The quota against which consumption is measured at the point of the repository that links to this document.",
           "type": "number",
           "minimum": 0
         },
         "xdm:consumed": {
           "name": "Currently Consumed Amount",
-          "decription": "The amount currently consumed against the quota at the point of the repository that links to this document.",
+          "description": "The amount currently consumed against the quota at the point of the repository that links to this document.",
           "meta:usereditable": false,
           "type": "number"
         },
         "xdm:unit": {
           "name": "Unit of the 'limit' and 'consumed' Properties",
-          "decription": "The unit that is used to determine the quota and measure consumption. This property is optional, but fixed, i.e. it allows consumers to quickly understand the value just by looking at the JSON response from the API.",
+          "description": "The unit that is used to determine the quota and measure consumption. This property is optional, but fixed, i.e. it allows consumers to quickly understand the value just by looking at the JSON response from the API.",
           "meta:usereditable": false,
           "type": "string",
           "const": "Bytes"

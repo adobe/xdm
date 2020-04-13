@@ -11,7 +11,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/opportunity","https://ns.adobe.com/xdm/context/account","https://ns.adobe.com/xdm/context/lead","https://ns.adobe.com/xdm/context/contact","https://ns.adobe.com/xdm/context/activitylog"
+    "https://ns.adobe.com/xdm/context/opportunity","https://ns.adobe.com/xdm/context/account","https://ns.adobe.com/xdm/context/lead","https://ns.adobe.com/xdm/context/contact","https://ns.adobe.com/xdm/context/opportunitycontactrole","https://ns.adobe.com/xdm/context/activitylog"
   ],
   "description": "Mixin which defines a set a audit properties for extenal sources.",
   "definitions": {

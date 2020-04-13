@@ -77,7 +77,7 @@
           "type": "string"
         },
         "xdm:opportunityLineItem": {
-          "title": "Has Opportunity Line Item",
+          "title": "Has Opportunity Line Item Flag",
           "description": "Flag to indicate whether this opportunity have more line items.",
           "type": "boolean"
         },

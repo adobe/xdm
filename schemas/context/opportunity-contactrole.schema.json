@@ -23,12 +23,12 @@
           "type": "string"
         },
         "xdm:primary": {
-          "title": "Primary",
+          "title": "Primary Flag",
           "description": "A flag to signify that this is the primary opportunity contact",
           "type": "boolean"
         },
         "xdm:deleted": {
-          "title": "Deleted",
+          "title": "Deleted Flag",
           "description": "A flag to signify that this opportunity is in deleted state.",
           "type": "boolean"
         }

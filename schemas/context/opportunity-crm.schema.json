@@ -89,17 +89,17 @@
           "maximum": 100
         },
         "xdm:closed": {
-          "title": "Closed",
+          "title": "Closed Flag",
           "description": "Flag indicating if this opportunity is closed.",
           "type": "boolean"
         },
         "xdm:won": {
-          "title": "Won",
+          "title": "Won Flag",
           "description": "Flag indicating if this opportunity is Won.",
           "type": "boolean"
         },
         "xdm:delete": {
-          "title": "Is Deleted",
+          "title": "Deleted Flag",
           "description": "Flag indicating if this opportunity is deleted.",
           "type": "boolean"
         },
@@ -115,7 +115,7 @@
           "type": "string"
         },
         "xdm:private": {
-          "title": "Private",
+          "title": "Private Flag",
           "description": "Indicates that the opportunity is private.",
           "type": "boolean"
         },

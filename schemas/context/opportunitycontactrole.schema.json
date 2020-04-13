@@ -49,5 +49,10 @@
       "$ref": "#/definitions/opportunityContactRole"
     }
   ],
+  "required": [
+  "xdm:opportunityContactID",
+  "xdm:opportunityID",
+  "xdm:contactID"
+  ],
   "meta:status": "experimental"
 }

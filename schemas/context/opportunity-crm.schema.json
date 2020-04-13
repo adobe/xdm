@@ -32,7 +32,7 @@
           "description": "Additional information to describe the opportunity, such as possible products to sell or past purchases from the customer.",
           "type": "string"
         },
-        "xdm:owner": {
+        "xdm:ownerID": {
           "title": "Opportunity Owner",
           "description": "Assigned owner for this opportunity.",
           "type": "string"

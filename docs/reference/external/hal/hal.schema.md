@@ -26,12 +26,41 @@ This external schema definition allows adding HAL expressions into an existing s
     "self": {
       "href": "/orders/523"
     },
-    "warehouse": {
-      "href": "/warehouse/56"
-    },
+    "replacing": [
+      {
+        "href": "/orders/521"
+      },
+      {
+        "href": "/orders/520"
+      }
+    ],
     "invoice": {
       "href": "/invoices/873"
     }
+  },
+  "_embedded": {
+    "replacing": [
+      {
+        "_links": {
+          "self": {
+            "href": "/orders/521"
+          }
+        },
+        "currency": "USD",
+        "status": "open",
+        "total": 10.2
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/orders/521"
+          }
+        },
+        "currency": "EUR",
+        "status": "open",
+        "total": 10.2
+      }
+    ]
   },
   "currency": "USD",
   "status": "shipped",
@@ -72,41 +101,12 @@ This external schema definition allows adding HAL expressions into an existing s
     "self": {
       "href": "/orders/523"
     },
-    "replacing": [
-      {
-        "href": "/orders/521"
-      },
-      {
-        "href": "/orders/520"
-      }
-    ],
+    "warehouse": {
+      "href": "/warehouse/56"
+    },
     "invoice": {
       "href": "/invoices/873"
     }
-  },
-  "_embedded": {
-    "replacing": [
-      {
-        "_links": {
-          "self": {
-            "href": "/orders/521"
-          }
-        },
-        "currency": "USD",
-        "status": "open",
-        "total": 10.2
-      },
-      {
-        "_links": {
-          "self": {
-            "href": "/orders/521"
-          }
-        },
-        "currency": "EUR",
-        "status": "open",
-        "total": 10.2
-      }
-    ]
   },
   "currency": "USD",
   "status": "shipped",

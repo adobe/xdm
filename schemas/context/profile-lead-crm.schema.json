@@ -16,22 +16,27 @@
   "definitions": {
     "profile-lead-crm": {
       "properties": {
-        "xdm:id": {
+        "xdm:leadID": {
           "title": "Lead Id",
           "description": "Lead id.",
           "type": "string"
         },
-        "xdm:isConverted": {
+        "xdm:sourceType": {
+          "title": "Lead Source Type",
+          "description": "Lead source type.",
+          "type": "string"
+        },		
+        "xdm:converted": {
           "title": "Converted Indicator",
           "description": "Converted indicator.",
           "type": "boolean"
         },
-        "xdm:convertedAccountid": {
+        "xdm:convertedAccountID": {
           "title": "Converted Account ID",
           "description": "Converted account id.",
           "type": "string"
         },
-        "xdm:convertedContactid": {
+        "xdm:convertedContactID": {
           "title": "Converted Contact ID",
           "description": "Converted contact id.",
           "type": "string"
@@ -42,12 +47,12 @@
           "type": "string",
           "format": "date-time"
         },
-        "xdm:convertedOpportunityId": {
+        "xdm:convertedOpportunityID": {
           "title": "Converted Opportunity ID",
           "description": "Converted opportunity id.",
           "type": "string"
         },
-        "xdm:isDeleted": {
+        "xdm:deleted": {
           "title": "Deleted Indicator",
           "description": "Indicator whether the lead was deleted.",
           "type": "boolean"
@@ -68,7 +73,7 @@
           "description": "Email bounced reason.",
           "type": "string"
         },
-        "xdm:jigsawContactId": {
+        "xdm:jigsawContactID": {
           "title": "Jigsaw Contact Id",
           "description": "Jigsaw contact id.",
           "type": "string"
@@ -79,12 +84,12 @@
           "type": "string",
           "format": "date-time"
         },
-        "xdm:masterRecordId": {
+        "xdm:masterRecordID": {
           "title": "Master Record Id",
           "description": "Master record id.",
           "type": "string"
         },
-        "xdm:ownerId": {
+        "xdm:ownerID": {
           "title": "Owner ID",
           "description": "Owner id.",
           "type": "string"
@@ -99,12 +104,12 @@
           "description": "Lead status.",
           "type": "string"
         },
-        "xdm:photoUrl": {
-          "title": "Photo Url",
-          "description": "Photo url.",
+        "xdm:leadPhotoUrl": {
+          "title": "Lead Photo Url",
+          "description": "Lead Photo url.",
           "type": "string"
         },
-        "xdm:isUnReadByOwner": {
+        "xdm:unReadByOwner": {
           "title": "Read By Owner Indicator",
           "description": "Read by owner indicator.",
           "type": "string"
@@ -139,6 +144,11 @@
           "description": "Prospect website.",
           "type": "string",
           "format": "uri"
+        },
+        "xdm:annualRevenue": {
+          "title": "Annual Revenue of the Lead Organization",
+          "description": "Amount of annual reported revenue.",
+          "type": "number"
         },
         "xdm:leadOrganization": {
           "title": "Organization Attributes",

@@ -23,17 +23,17 @@
   "definitions": {
     "marketo-lead": {
       "properties": {
-        "marketo:leadId": {
+        "marketo:leadID": {
           "title": "Marketo Lead ID",
           "description": "Marketo lead id.",
           "type": "string"
         },
-        "marketo:mktPersonId": {
+        "marketo:marketoPersonID": {
           "title": "Marketo Person Id",
           "description": "Marketo person id.",
           "type": "string"
         },
-        "marketo:abmProposedNameId": {
+        "marketo:abmProposedNameID": {
           "title": "Account Based Marketing Proposed Name Id",
           "description": "Account based marketing proposed name id.",
           "type": "string"

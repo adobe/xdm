@@ -63,20 +63,30 @@
                     "enum": [
                         "married",
                         "single",
+                        "divorced",
+                        "widowed",
                         "not_specified"
                     ],
                     "meta:enum": {
                         "married": "Married",
                         "single": "Single",
+                        "divoced": "Divorced",
+                        "widowed": "Widowed",
                         "not_specified": "Not Specified"
                     },
-                    "description": "Marital status of the person.\n",
+                    "description": "Describes a person's relationship with a significant other.",
                     "default": "not_specified"
                 },
                 "xdm:nationality": {
                     "title": "Nationality",
                     "type": "string",
+                    "pattern": "^[A-Z]{3}$",
                     "description": "The legal relationship between a person and their state represented using the ISO 3166-1 Alpha-3 code."
+                },
+                "xdm:taxId": {
+                    "title": "Tax ID",
+                    "type": "string",
+                    "description": "The Tax / Fiscal ID of the person, e.g. the TIN in the US or the CIF/NIF in Spain."
                 }
             }
         }

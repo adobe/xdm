@@ -26,8 +26,8 @@ Asset information about the main content that was played, but present on all ads
   "dc:title": "Floki Begs Helga for Freedom",
   "xmpDM:duration": 87,
   "iptc4xmpExt:Series": {
-    "iptc4xmpExt:Name": "nba_highlights",
-    "iptc4xmpExt:Identifier": "http://espn.com/series-identifiers/2613953"
+    "iptc4xmpExt:Name": "show_highlights",
+    "iptc4xmpExt:Identifier": "http://mychanneltv.com/series-identifiers/2613953"
   },
   "xdm:showType": "episode",
   "xdm:streamFormat": "long",
@@ -42,13 +42,13 @@ Asset information about the main content that was played, but present on all ads
   ],
   "iptc4xmpExt:Rating": [
     {
-      "iptc4xmpExt:RatingValue": "TV14",
-      "iptc4xmpExt:RatingSourceLink": "http://www.tvguidelines.org/ratings.htm"
+      "iptc4xmpExt:RatingValue": "OTV",
+      "iptc4xmpExt:RatingSourceLink": "http://www.tvmedia.org/ratings.htm"
     }
   ],
   "iptc4xmpExt:Creator": [
     {
-      "iptc4xmpExt:Name": "ESPN"
+      "iptc4xmpExt:Name": "MyChannelTV"
     }
   ]
 }

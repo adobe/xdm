@@ -4,8 +4,8 @@
     "dc:title": "Floki Begs Helga for Freedom",
     "xmpDM:duration": 87,
     "iptc4xmpExt:Series": {
-      "iptc4xmpExt:Name": "nba_highlights",
-      "iptc4xmpExt:Identifier": "http://espn.com/series-identifiers/2613953"
+      "iptc4xmpExt:Name": "show_summary",
+      "iptc4xmpExt:Identifier": "http://sporttv.com/series-identifiers/2613123"
     },
     "xdm:showType": "episode",
     "xdm:streamFormat": "long",
@@ -18,28 +18,28 @@
     "iptc4xmpExt:Genre": ["sports"],
     "iptc4xmpExt:Rating": [
       {
-        "iptc4xmpExt:RatingValue": "TV14",
-        "iptc4xmpExt:RatingSourceLink": "http://www.tvguidelines.org/ratings.htm"
+        "iptc4xmpExt:RatingValue": "MYTV",
+        "iptc4xmpExt:RatingSourceLink": "http://www.sporttops.org/ratings.htm"
       }
     ],
     "iptc4xmpExt:Creator": [
       {
-        "iptc4xmpExt:Name": "ESPN"
+        "iptc4xmpExt:Name": "SportTV"
       }
     ]
   },
   "xdm:primaryAssetViewDetails": {
     "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114230",
-    "xdm:playerName": "watchespn",
-    "xdm:broadcastChannel": "WatchESPN",
+    "xdm:playerName": "watchsport",
+    "xdm:broadcastChannel": "WatchSportTV",
     "xdm:broadcastContentType": "VOD",
     "xdm:streamFormat": "short",
     "xdm:playerSDKVersion": {
       "xdm:version": "1.0.8"
     },
-    "xdm:broadcastNetwork": "nbcu",
+    "xdm:broadcastNetwork": "ntwu",
     "xdm:adLoadType": "2",
-    "xdm:sourceFeed": "http%3A%2F%2Fvod01.pure.centurylink.net%2Fhls%2Fvu%2F9083406%2FVUBX0280890106690980_38_3_M_HD.m3u8",
+    "xdm:sourceFeed": "http%3A%2F%2Fvod01.this.link.net%2Fhls%2Fvu%2F9083406%2FVUBX02804879t475=90980_38_3_M_HD.m3u8",
     "xdm:sessionTimeout": 1800
   },
   "xdm:mediaChapter": {

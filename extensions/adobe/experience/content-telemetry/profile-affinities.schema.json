@@ -14,7 +14,7 @@
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "description": "Details related to Adobe Advertising Cloud ExperienceEvent full extension. Contains all Solution added fields.",
   "definitions": {
-    "affinities": {
+    "profile-affinities": {
       "properties": {
         "xdm:affinities": {
           "type": "array",
@@ -43,7 +43,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/user-affinities"
+      "$ref": "#/definitions/profile-affinities"
     }
   ],
   "meta:status": "experimental"

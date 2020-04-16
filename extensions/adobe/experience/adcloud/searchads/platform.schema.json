@@ -26,6 +26,11 @@
           "title": "Search Engine Identifier",
           "type": "integer",
           "description": "The application-specified identifier used to identify the Search Advertising Platform Name."
+        },
+        "searchads:channelName": {
+          "title": "Search Engine Channel Name",
+          "type": "string",
+          "description": "The application-specified classification for the Search Engine Platform."
         }
       }
     }

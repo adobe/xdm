@@ -16,9 +16,9 @@
   "definitions": {
     "opportunity-marketo": {
       "properties": {
-        "marketo:ID": {
-          "title": "Marketo ID",
-          "description": "Marketo ID.",
+        "marketo:opportunityID": {
+          "title": "Marketo Opportunity ID",
+          "description": "Marketo opportunity ID.",
           "type": "string"
         },
         "marketo:instanceID": {

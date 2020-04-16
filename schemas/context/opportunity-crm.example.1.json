@@ -1,7 +1,7 @@
 {
         "xdm:opportunityName":"Apple_opportunity",
         "xdm:description":"Apple corporation AEP opportunity",
-        "xdm:owner":"test",
+        "xdm:ownerID":"test",
         "xdm:leadSource":"salesforce",
         "xdm:stage":"initial" ,
         "xdm:amount": 1000000,
@@ -12,10 +12,10 @@
         "xdm:probabilityPercentage": 90,
         "xdm:closed": false,
         "xdm:won": true,
-        "xdm:delete":false,
+        "xdm:deleted":false,
         "xdm:closeDate": "2019-01-01T15:52:25+00:00",
         "xdm:private": true,
-        "xdm:contractId": "12345",
+        "xdm:contractID": "12345",
         "xdm:forecastCategory":"pipeline" ,
         "xdm:forecastCategoryName": "AEP_pipeline",
         "xdm:expectedRevenue": 900000

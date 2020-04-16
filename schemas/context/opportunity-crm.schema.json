@@ -27,7 +27,7 @@
           "description": "Opportunity source type",
           "type": "string"
         },
-        "xdm:description": {
+        "xdm:opportunityDescription": {
           "title": "Opportunity Description",
           "description": "Additional information to describe the opportunity, such as possible products to sell or past purchases from the customer.",
           "type": "string"
@@ -51,7 +51,8 @@
           "title": "Opportunity Amount",
           "description": "Opportunity Amount.",
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "default":0
         },
         "xdm:currencyCode": {
           "title": "Currency Code",
@@ -63,7 +64,8 @@
           "title": "Opportunity Quantity",
           "description": "Opportunity Quantity.",
           "type": "integer",
-          "minimum": 0
+          "minimum": 0,
+          "default":0
         },
         "xdm:fiscalYear": {
           "title": "Fiscal Year",
@@ -98,7 +100,7 @@
           "description": "Flag indicating if this opportunity is Won.",
           "type": "boolean"
         },
-        "xdm:delete": {
+        "xdm:deleted": {
           "title": "Deleted Flag",
           "description": "Flag indicating if this opportunity is deleted.",
           "type": "boolean"

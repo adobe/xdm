@@ -5,32 +5,33 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/context/opportunity-contactrole",
+  "$id": "https://ns.adobe.com/xdm/context/opportunitycontactrole",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "B2B Opportunity Contact Role mixin",
+  "title": "B2B Opportunity Contact Role",
   "type": "object",
   "meta:extensible": true,
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/opportunitycontactrole"
+  "meta:abstract": true,
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record"
   ],
-  "description": "Opportunity Contact Role additional properties",
+  "description": "Opportunity Contact Role",
   "definitions": {
     "opportunityContactRole": {
       "properties": {
-        "xdm:opportunityContactRole": {
-          "title": "Opportunity Contact Role",
-          "description": "Role of the opportunity contact like finance , sales .",
+        "xdm:opportunityContactID": {
+          "title": "opportunity ContactID",
+          "description": "Technical PK for Opportunity Contact.",
           "type": "string"
         },
-        "xdm:primary": {
-          "title": "Primary Flag",
-          "description": "A flag to signify that this is the primary opportunity contact",
-          "type": "boolean"
+        "xdm:opportunityID": {
+          "title": "Opportunity ID",
+          "description": "Opportunity ID unique identifier.",
+          "type": "string"
         },
-        "xdm:deleted": {
-          "title": "Deleted Flag",
-          "description": "A flag to signify that this opportunity is in deleted state.",
-          "type": "boolean"
+        "xdm:contactID": {
+          "title": "Contact ID",
+          "description": "Contact ID unique identifier.",
+          "type": "string"
         }
       }
     }
@@ -40,8 +41,19 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
       "$ref": "#/definitions/opportunityContactRole"
+    },
+    {
+      "$ref":"https://ns.adobe.com/xdm/common/externalsourcesystemauditdetails"
     }
+  ],
+  "required": [
+  "xdm:opportunityContactID",
+  "xdm:opportunityID",
+  "xdm:contactID"
   ],
   "meta:status": "experimental"
 }

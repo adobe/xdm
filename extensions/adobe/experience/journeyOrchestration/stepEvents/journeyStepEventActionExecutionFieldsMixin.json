@@ -73,6 +73,22 @@
               "description":"What type of action it is. It could be ACS, Business  Action, SMS etc.",
               "type":"string"
             },
+
+            "journey:deliveryJobId":{
+              "title":"deliveryJobId",
+              "description":"This describes the deliveryJobId for the batch Journey",
+              "type":"string"
+            },
+            "journey:batchDeliveryId":{
+              "title":"batchDeliveryId",
+              "description":"This describes the deliveryId for the batch Journey",
+              "type":"string"
+            },
+            "journey:isFromSegmentTrigger ":{
+              "title":"deliveryJobId",
+              "description":"This describes if the Batch Journey triggered from Audisence Segment",
+              "type":"boolean"
+            },
             "journey:actionSchedulerCount":{
               "title":"actionSchedulerCount",
               "description":"count of scheduler notification requests sent to the scheduler service during the step processing",

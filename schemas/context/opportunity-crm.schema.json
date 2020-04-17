@@ -140,7 +140,8 @@
           "title": "Expected Revenue",
           "description": "Calculated revenue based on the Amount and Probability.",
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "default":0
         }
       }
     }

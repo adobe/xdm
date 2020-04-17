@@ -22,15 +22,15 @@
           "title": "Journey Orchestration Step Event Identity Fields.",
           "type": "object",
           "properties": {
-            "journey:profileId": {
+            "https://ns.adobe.com/experience/journeyOrchestration/profileId": {
               "title": "Profile ID",
               "type": "string",
-              "description": "profile identifier identifies the profile sent/used in a journey"
+              "description": "profile identifier identifies the profile sent/used in a journey."
             },
-            "journey:profileNamespace": {
+            "https://ns.adobe.com/experience/journeyOrchestration/profileNamespace": {
               "title": "Profile Namespace",
               "type": "string",
-              "description": "This field describes the Namespace referenced by the Profile used in the Journey"
+              "description": "This field describes the Namespace referenced by the Profile used in the Journey."
             }
           }
         }

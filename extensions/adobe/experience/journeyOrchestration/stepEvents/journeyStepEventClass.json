@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/time-series"],
-  "description": "A time-series based Journey Step Event Class",
+  "description": "A time-series based Journey Step Event Class.",
   "definitions": {
     "properties": { }
   },

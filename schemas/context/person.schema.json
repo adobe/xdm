@@ -70,7 +70,7 @@
                     "meta:enum": {
                         "married": "Married",
                         "single": "Single",
-                        "divoced": "Divorced",
+                        "divorced": "Divorced",
                         "widowed": "Widowed",
                         "not_specified": "Not Specified"
                     },
@@ -80,8 +80,8 @@
                 "xdm:nationality": {
                     "title": "Nationality",
                     "type": "string",
-                    "pattern": "^[A-Z]{3}$",
-                    "description": "The legal relationship between a person and their state represented using the ISO 3166-1 Alpha-3 code."
+                    "pattern": "^[A-Z]{2}$",
+                    "description": "The legal relationship between a person and their state represented using the ISO 3166-1 Alpha-2 code."
                 },
                 "xdm:taxId": {
                     "title": "Tax ID",

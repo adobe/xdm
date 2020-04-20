@@ -5,9 +5,9 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/content-intelligence/webasset",
+  "$id": "https://ns.adobe.com/experience/content-telemetry/webasset",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Content Intelligence Web asset",
+  "title": "Content Telemetry Web Asset",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
@@ -22,60 +22,47 @@
           "type": "string",
           "description": "A unique identifier given to every addressable asset in a given repository."
         },
-        "repo:name": {
-          "meta:usereditable": false,
-          "title": "Asset name",
-          "type": "string"
-        },
-        "repo:path": {
-          "meta:usereditable": false,
-          "title": "Asset path",
-          "type": "string"
-        },
-        "dc:format": {
-          "meta:usereditable": false,
-          "type": "string",
-          "title": "Asset format",
-          "pattern": "\\w+\\/[-.\\w]+(?:\\+[-.\\w]+)?",
-          "examples": ["application/vnd.adobe.photoshop"],
-          "description": "The physical or digital manifestation of the resource. Typically, Format should include the media-type of the resource. Format may be used to determine the software, hardware or other equipment needed to display or operate the resource. Recommended best practice is to select a value from a controlled vocabulary (for example, the list of [Internet Media Types](http://www.iana.org/ assignments/media-types/) defining computer media formats)."
-        },
-        "repo:modifyDate": {
-          "type": "string",
-          "format": "date-time",
-          "meta:usereditable": false,
-          "examples": ["2004-10-23T12:00:00-06:00"],
-          "description": "The server date and time when the resource was last modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The date time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\"."
-        },
-        "xdm:url": {
-          "title": "Url",
+        "repo:resolveURL": {
           "type": "string",
           "format": "uri",
-          "description": "The absolute URL of the asset."
+          "meta:immutable": true,
+          "meta:usereditable": false,
+          "description":
+          "An optional unique resource locator to read the asset in a content repository. This will make it easier to obtain the asset whithout the client understanding where the asset is manages and what APIs to call. This is similar to a HAL link but the semantic is simpler and more pursposeful.",
+          "examples": ["https://we-retail.com/content/dam/we-retail/en/products/apparel/gloves/Gloves.jpg"]
         },
-        "xdm:tags": {
-          "title": "Asset tags",
-          "type": "object",
-          "meta:xdmType": "map",
-          "description": "The asset tags and their confidence score represented by sub-unitary value. A confidence score of 1 means the tag is predefined. Other values represent predicted confidence.",
-          "additionalProperties": {
-            "type": "number",
-            "minimum": 0,
-            "maximum": 1,
-            "description": "Confidence score value."
-          }
+        "xmp:keywords": {
+          "type": "array",
+          "title": "Keywords",
+          "items": {
+            "$ref": "https://ns.adobe.com/xdm/common/keyword"
+          },
+          "description":
+          "The `keywords` property is used to track human-assigned descriptive phrases like keywords or tags of an asset. Rather than a plan list of tags, it is a structured set of keywords, where keywords can have an explicit importance ranking and a locale. This allows the management of multi-lingual keywords for a given asset. For machine-generated keywords, use the `machineKeywords` property. "
+        },
+        "xmp:machineKeywords": {
+          "meta:usereditable": false,
+          "type": "array",
+          "items": {
+            "$ref": "https://ns.adobe.com/xdm/common/machinekeyword"
+          },
+          "description":
+          "The `machineKeywords` property is used to track machine-assigned descriptive phrases like keywords or tags of an asset. Rather than a plan list of tags, it is a structured set of keywords, where keywords can have an explicit confidence ranking and a locale. For human-defined keywords, use the `keywords` property. "
         }
       }
     }
   },
   "allOf": [
     {
+      "$ref": "http://ns.adobe.com/adobecloud/core/1.0#/definitions/common-properties"
+    },
+    {
+      "$ref": "http://ns.adobe.com/adobecloud/core/1.0#/definitions/date-properties"
+    },
+    {
       "$ref": "#/definitions/webasset"
     }
   ],
-  "required": [
-    "repo:id",
-    "repo:path"
-  ],
+  "required": ["repo:id", "repo:resolveURL"],
   "meta:status": "experimental"
 }

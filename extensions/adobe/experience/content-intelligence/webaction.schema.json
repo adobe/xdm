@@ -5,9 +5,9 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/content-intelligence/webaction",
+  "$id": "https://ns.adobe.com/experience/content-telemetry/webaction",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Content Intelligence Web action",
+  "title": "Content Telemetry Web Action",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
@@ -15,28 +15,29 @@
   "definitions": {
     "webaction": {
       "properties": {
-        "type": {
+        "contentTelemetry:actionType": {
           "title": "Action type",
           "description": "Type of action. The action can be user generated (click, expand) or dynamic (offer loaded).",
           "type": "string",
+          "enum": ["click", "show", "hide", "offer"],
           "meta:enum": {
-            "click":  "Click event has occured on the page. It can be link click or click on a web element.",
-            "expand": "Expand event occured on container web elements (accordion)",
-            "collapse":  "Collapse event occured on container web elements (accordion)",
+            "click": "Click event has occured on the page. It can be link click or click on a web element.",
+            "show": "Show event occured on container web elements (accordion, tabs)",
+            "hide": "Hide event occured on container web elements (accordion, tabs)",
             "offer": "Personalized content (offer) was dynamically loaded in DOM"
           }
         },
-        "element": {
-          "title": "Element",
+        "contentTelemetry:element": {
+          "title": "Web Element",
           "description": "The target element metadata. For 'click' event this is the target element. For 'offer' event this is the web element corresponding to the loaded offer.",
-          "$ref": "https://ns.adobe.com/experience/content-intelligence/webelement"
+          "$ref": "https://ns.adobe.com/experience/content-telemetry/webelement"
         },
-        "context": {
+        "contentTelemetry:context": {
           "title": "Context",
           "description": "A collection of contextual elements for the actioned item. For 'click' event this represents the collection of contextual elements which could be the siblings or surrounding (unrelated) elements of the target. For 'offer' event this contains the targeted element encapsulating the offers",
           "type": "array",
           "items": {
-            "$ref": "https://ns.adobe.com/experience/content-intelligence/webelement"
+            "$ref": "https://ns.adobe.com/experience/content-telemetry/webelement"
           }
         }
       }

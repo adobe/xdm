@@ -50,6 +50,7 @@
             "^dsp:.*$": {},
             "^searchads:.*$": {},
             "^adcloud:.*$": {},
+            "^contentTelemetry:.*$": {},
             ".+://.+": {},
             "@.*": {}
           },
@@ -225,6 +226,11 @@
                   "type": "string",
                   "format": "url",
                   "const": "https://ns.adobe.com/adcloud/"
+                },
+                "contenTelemetry": {
+                  "type": "string",
+                  "format": "url",
+                  "const": "https://ns.adobe.com/content-telemetry/"
                 }
               },
               "additionalProperties": false,
@@ -264,6 +270,7 @@
             "^dsp:.*$": {},
             "^searchads:.*$": {},
             "^adcloud:.*$": {},
+            "^contentTelemetry:.*$": {},
             ".+://.+": {}
           },
           "required": ["@context"],

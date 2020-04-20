@@ -1,25 +1,57 @@
 {
-  "id": "image-35b19dd6bc",
-  "type": "image",
-  "path": "/content/we-retail/us/en/products/equipment/snow-sports/midweight-fleece-gloves/jcr:content/root/product/image",
-  "name": "Midweight Fleece Gloves",
-  "asset": {
-    "id": "1ae52f08-42e4-493d-a529-5d4773231bc4",
-    "name": "Midweight Fleece.jpg",
-    "path": "/content/dam/we-retail/en/products/apparel/gloves/Midweight%20Fleece.jpg",
-    "url": "http://localhost:4502/content/dam/we-retail/en/products/apparel/gloves/Midweight%2520Fleece.jpg",
-    "format": "image/jpeg",
-    "tags": {
-      "gloves": 0.745,
-      "leather": 0.743,
-      "clothing": 0.727,
-      "winter": 0.725,
-      "protection": 0.632,
-      "hand": 0.605,
-      "we-retail:activity/skiing": 1,
-      "we-retail:apparel/gloves": 1,
-      "we-retail:gender/men": 1,
-      "we-retail:equipment": 1
-    }
+  "repo:id": "image-35b19dd6bc",
+  "contentTelemetry:elementType": "core/wcm/components/image/v2/image",
+  "repo:path": "/content/we-retail/us/en/products/equipment/snow-sports/midweight-fleece-gloves/jcr:content/root/product/image",
+  "repo:name": "Midweight Fleece Gloves",
+  "contentTelemetry:asset": {
+    "repo:id": "1ae52f08-42e4-493d-a529-5d4773231bc4",
+    "repo:name": "Midweight Fleece.jpg",
+    "repo:path": "/content/dam/we-retail/en/products/apparel/gloves/Midweight%20Fleece.jpg",
+    "repo:resolveURL": "http://localhost:4502/content/dam/we-retail/en/products/apparel/gloves/Midweight%2520Fleece.jpg",
+    "dc:format": "image/jpeg",
+    "xmp:keywords": [
+      {
+        "value": "we-retail:activity/skiing",
+        "importance": 1
+      },
+      {
+        "value": "we-retail:apparel/gloves",
+        "importance": 1
+      },
+      {
+        "value": "we-retail:gender/men",
+        "importance": 0.9
+      },
+      {
+        "value": "we-retail:equipment",
+        "importance": 0.9
+      }
+    ],
+    "xmp:machineKeywords": [
+      {
+        "value": "gloves",
+        "confidence": 0.75
+      },
+      {
+        "value": "leather",
+        "confidence": 0.743
+      },
+      {
+        "value": "clothing",
+        "confidence": 0.727
+      },
+      {
+        "value": "winter",
+        "confidence": 0.725
+      },
+      {
+        "value": "protection",
+        "confidence": 0.632
+      },
+      {
+        "value": "hand",
+        "confidence": 0.605
+      }
+    ]
   }
 }

@@ -5,9 +5,9 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/content-intelligence/commerce",
+  "$id": "https://ns.adobe.com/experience/content-telemetry/commerce",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Content Intelligence Commerce Information",
+  "title": "Content Telemetry Commerce Information",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
@@ -16,18 +16,12 @@
   "definitions": {
     "commerce": {
       "properties": {
-        "commerce": {
-          "title": "Commerce activity details",
-          "description": "",
-          "$ref": "https://ns.adobe.com/xdm/context/commerce",
-          "type": "object"
-        },
-        "productListItems": {
+        "contentTelemetry:commerceItems": {
           "title": "Commerce product list items associated to the commerce activity",
           "description": "Array of product items enriched with asset metadata",
           "type": "array",
           "items": {
-            "$ref": "https://ns.adobe.com/experience/content-intelligence/productlistitem"
+            "$ref": "https://ns.adobe.com/experience/content-telemetry/productlistitem"
           }
         }
       }
@@ -36,6 +30,9 @@
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/commerce#/definitions/commerce"
     },
     {
       "$ref": "#/definitions/commerce"

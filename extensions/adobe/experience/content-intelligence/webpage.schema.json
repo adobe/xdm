@@ -5,25 +5,28 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/content-intelligence/webcontainer",
+  "$id": "https://ns.adobe.com/experience/content-telemetry/webpage",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Content Intelligence Web container",
+  "title": "Content Telemetry Web Page",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:extends": [
-    "https://ns.adobe.com/experience/content-intelligence/webelement#/definitions/webelement"
-  ],
-  "description": "Web element which is also a container of other web elements",
+  "description": "Web page details and containing web elements",
   "definitions": {
-    "webcontainer": {
+    "webpage": {
       "properties": {
-        "elements": {
+        "xdm:url": {
+          "title": "Page URL",
+          "type": "string",
+          "format": "uri",
+          "description": "The absolute URL of the page."
+        },
+        "contentTelemetry:elements": {
           "title": "Web elements",
           "description": "The list of containing web elements.",
           "type": "array",
           "items": {
-            "$ref": "https://ns.adobe.com/experience/content-intelligence/webelement"
+            "$ref": "https://ns.adobe.com/experience/content-telemetry/webelement"
           }
         }
       }
@@ -31,11 +34,12 @@
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/experience/content-intelligence/webelement#/definitions/webelement"
+      "$ref": "https://ns.adobe.com/experience/content-telemetry/webelement#/definitions/webelement"
     },
     {
-      "$ref": "#/definitions/webcontainer"
+      "$ref": "#/definitions/webpage"
     }
   ],
+  "required": ["repo:id", "contentTelemetry:elementType"],
   "meta:status": "experimental"
 }

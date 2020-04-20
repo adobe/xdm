@@ -1,0 +1,54 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/common/machinekeyword",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Machine Keyword",
+  "type": "object",
+  "description":
+  "The `Machine Keyword` schema is used to track machine-assigned descriptive phrases like keywords or tags of an asset with specific confidence and locale. For human-defined keywords, use the `keywords` property. ",
+  "definitions": {
+    "machinekeyword": {
+      "properties": {
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description":
+          "Confidence of the algorithm that this keyword is applicable to the asset. Confidence values are numbers between zero and one. A value of .95 indicates that the algorithm expects less than 5% of all tags with the same confidence value to be mis-applied, i.e. not to be a proper description of the asset."
+        },
+        "algorithm": {
+          "type": "string",
+          "description":
+          "Name of the algorithm which generated the keyword."
+        },
+        "value": {
+          "type": "string",
+          "description":
+          "The keyword itself. A keyword can be considered like a tag, i.e. a short description of the content of the asset."
+        },
+        "localeCode": {
+          "type": "string",
+          "pattern":
+          "^(((([A-Za-z]{2,3}(-([A-Za-z]{3}(-[A-Za-z]{3}){0,2}))?)|[A-Za-z]{4}|[A-Za-z]{5,8})(-([A-Za-z]{4}))?(-([A-Za-z]{2}|[0-9]{3}))?(-([A-Za-z0-9]{5,8}|[0-9][A-Za-z0-9]{3}))*(-([0-9A-WY-Za-wy-z](-[A-Za-z0-9]{2,8})+))*(-(x(-[A-Za-z0-9]{1,8})+))?)|(x(-[A-Za-z0-9]{1,8})+)|((en-GB-oed|i-ami|i-bnn|i-default|i-enochian|i-hak|i-klingon|i-lux|i-mingo|i-navajo|i-pwn|i-tao|i-tay|i-tsu|sgn-BE-FR|sgn-BE-NL|sgn-CH-DE)|(art-lojban|cel-gaulish|no-bok|no-nyn|zh-guoyu|zh-hakka|zh-min|zh-min-nan|zh-xiang)))$",
+          "description":
+          "Language of the keyword. The locale code should follow [RFC BCP47](https://tools.ietf.org/html/bcp47)"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/machinekeyword"
+    }
+  ],
+  "required": [
+    "value",
+    "confidence"
+  ],
+  "meta:status": "experimental"
+}

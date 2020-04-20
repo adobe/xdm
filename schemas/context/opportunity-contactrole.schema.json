@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/context/opportunitycontactrole",
+  "$id": "https://ns.adobe.com/xdm/context/opportunity-contactrole",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "B2B Opportunity Contact Role",
   "type": "object",
@@ -47,7 +47,7 @@
       "$ref": "#/definitions/opportunityContactRole"
     },
     {
-      "$ref":"https://ns.adobe.com/xdm/common/externalsourcesystemauditdetails"
+      "$ref":"https://ns.adobe.com/xdm/common/external-source-system-audit-details"
     }
   ],
   "required": [

@@ -76,7 +76,8 @@
         "xdm:fiscalQuarter": {
           "title": "Fiscal Quarter",
           "description": "The fiscal quarter this opportunity is targeted..",
-          "type": "string"
+          "type": "string",
+          "pattern": "^([1-4]{1})$|^([Qq][1-4]{1})$"
         },
         "xdm:opportunityLineItem": {
           "title": "Has Opportunity Line Item Flag",

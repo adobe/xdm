@@ -27,9 +27,10 @@
           "format": "uri",
           "meta:immutable": true,
           "meta:usereditable": false,
-          "description":
-          "A unique resource locator to read the asset in a content repository. This will make it easier to obtain the asset whithout the client understanding where the asset is manages and what APIs to call. This is similar to a HAL link but the semantic is simpler and more pursposeful.",
-          "examples": ["https://we-retail.com/content/dam/we-retail/en/products/apparel/gloves/Gloves.jpg"]
+          "description": "A unique resource locator to read the asset in a content repository. This will make it easier to obtain the asset whithout the client understanding where the asset is manages and what APIs to call. This is similar to a HAL link but the semantic is simpler and more pursposeful.",
+          "examples": [
+            "https://we-retail.com/content/dam/we-retail/en/products/apparel/gloves/Gloves.jpg"
+          ]
         },
         "xmp:keywords": {
           "type": "array",
@@ -37,8 +38,7 @@
           "items": {
             "$ref": "https://ns.adobe.com/xdm/common/keyword"
           },
-          "description":
-          "The `keywords` property is used to track human-assigned descriptive phrases like keywords or tags of an asset. Rather than a plan list of tags, it is a structured set of keywords, where keywords can have an explicit importance ranking and a locale. This allows the management of multi-lingual keywords for a given asset. For machine-generated keywords, use the `machineKeywords` property. "
+          "description": "The `keywords` property is used to track human-assigned descriptive phrases like keywords or tags of an asset. Rather than a plan list of tags, it is a structured set of keywords, where keywords can have an explicit importance ranking and a locale. This allows the management of multi-lingual keywords for a given asset. For machine-generated keywords, use the `machineKeywords` property. "
         },
         "xmp:machineKeywords": {
           "meta:usereditable": false,
@@ -46,8 +46,7 @@
           "items": {
             "$ref": "https://ns.adobe.com/xdm/common/machinekeyword"
           },
-          "description":
-          "The `machineKeywords` property is used to track machine-assigned descriptive phrases like keywords or tags of an asset. Rather than a plan list of tags, it is a structured set of keywords, where keywords can have an explicit confidence ranking and a locale. For human-defined keywords, use the `keywords` property. "
+          "description": "The `machineKeywords` property is used to track machine-assigned descriptive phrases like keywords or tags of an asset. Rather than a plan list of tags, it is a structured set of keywords, where keywords can have an explicit confidence ranking and a locale. For human-defined keywords, use the `keywords` property. "
         }
       }
     }

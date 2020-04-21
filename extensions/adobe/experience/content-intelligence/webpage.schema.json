@@ -15,7 +15,12 @@
   "definitions": {
     "webpage": {
       "properties": {
-        "xdm:url": {
+        "xdm:description": {
+          "title": "Page description",
+          "type": "string",
+          "description": "Page description."
+        },
+        "xdm:URL": {
           "title": "Page URL",
           "type": "string",
           "format": "uri",
@@ -34,7 +39,10 @@
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/experience/content-telemetry/webelement#/definitions/webelement"
+      "$ref": "http://ns.adobe.com/adobecloud/core/1.0#/definitions/date-properties"
+    },
+    {
+      "$ref": "https://ns.adobe.com/experience/content-telemetry/webproperties#/definitions/webproperties"
     },
     {
       "$ref": "#/definitions/webpage"

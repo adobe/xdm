@@ -1,0 +1,79 @@
+{
+  "@id": "1c796d36-f2e7-4125-813f-7223df5e7b5a-0",
+  "xdm:eventType": "commerce.productListViews",
+  "xdm:timestamp": "2020-02-19T16:46:54.963Z",
+  "xdm:identityMap": {
+    "ECID": [
+      {
+        "xdm:id": "52901503159666957302406877195672356370",
+        "xdm:primary": true
+      }
+    ],
+    "CORE": [
+      {
+        "xdm:id": "47208482663822332152994686897075044703",
+        "xdm:primary": null
+      }
+    ]
+  },
+  "xdm:web": {
+    "xdm:webPageDetails": {
+      "xdm:URL": "http://localhost:4502/content/we-retail/language-masters/en.html"
+    },
+    "xdm:webReferrer": {
+      "xdm:URL": ""
+    }
+  },
+  "xdm:device": {
+    "xdm:screenHeight": 1080,
+    "xdm:screenWidth": 1920,
+    "xdm:screenOrientation": "landscape"
+  },
+  "xdm:environment": {
+    "xdm:type": "browser",
+    "xdm:browserDetails": {
+      "xdm:viewportWidth": 1920,
+      "xdm:viewportHeight": 529
+    }
+  },
+  "xdm:placeContext": {
+    "xdm:localTime": "2020-02-19T16:46:54.963+00:00",
+    "xdm:localTimezoneOffset": 0
+  },
+  "xdm:implementationDetails": {
+    "xdm:name": "https://ns.adobe.com/experience/alloy",
+    "xdm:version": "0.0.13"
+  },
+  "contentTelemetry:commerce": {
+    "xdm:productListViews": {
+      "xdm:value": 1
+    },
+    "xdm:productListItems": [
+      {
+        "xdm:SKU": "meskwimis-One size",
+        "@id": "product-9594301bf3",
+        "xdm:name": "Midweight Fleece Gloves",
+        "xdm:product": "http://localhost:4502/content/we-retail/us/en/products/equipment/snow-sports/midweight-fleece-gloves.html#meskwimis-One%20size",
+        "xdm:quantity": 1,
+        "xdm:priceTotal": 30
+        "xdm:asset": {
+          "xdm:URL": "https://www.adobe.com/content/dam/core-components-examples/library/sample-assets/lava-rock-formation.jpg",
+          "repo:modifyDate": "2020-03-26T12: 01: 40.105Z",
+          "repo:name": "lava-rock-formation.jpg",
+          "repo:id": "c58c09f6-e382-4698-bfbd-e8c8d37712c8",
+          "dc:format": "image/jpeg",
+          "xmp:machineKeywords": [
+            {
+              "value": "white",
+              "confidence": 1
+            },
+            {
+              "value": "winter",
+              "confidence": 0.8
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

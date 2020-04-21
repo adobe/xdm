@@ -2,7 +2,7 @@
   "repo:id": "page-113d229837",
   "contentTelemetry:elementType": "core-components-examples/components/page",
   "dc:language": "en-us",
-  "xdm:url": "https://www.adobe.com/content/we-retail/us/en/products/equipment/snow-sports/midweight-fleece-gloves.html",
+  "xdm:URL": "https://www.adobe.com/content/we-retail/us/en/products/equipment/snow-sports/midweight-fleece-gloves.html",
   "repo:name": "Midweight Fleece Gloves",
   "xdm:templatePath": "/conf/we-retail/settings/wcm/templates/product-page",
   "xmp:keywords": [
@@ -349,18 +349,18 @@
     {
       "repo:id": "image-7d48db1522",
       "contentTelemetry:elementType": "core-components-examples/components/image",
-      "xdm:asset": {
-        "repo:lastModifiedDate": "2020-03-26T12: 01: 42.288Z",
+      "contentTelemetry:asset": {
+        "repo:modifyDate": "2020-03-26T12: 01: 42.288Z",
         "repo:name": "lava-into-ocean.jpg",
         "repo:id": "0f54e1b5-535b-45f7-a46b-35abb19dd6bc",
         "dc:format": "image/jpeg",
         "xmp:machineKeywords": [
           {
-            "xmp:value": "white",
+            "value": "white",
             "confidence": 1
           },
           {
-            "xmp:value": "winter",
+            "value": "winter",
             "confidence": 0.8
           }
         ]
@@ -371,18 +371,18 @@
       "repo:name": "Snowy mountain glacier",
       "repo:id": "image-d7eedd8d87",
       "contentTelemetry:elementType": "core-components-examples/components/image",
-      "xdm:asset": {
-        "repo:lastModifiedDate": "2020-03-26T12: 01: 40.331Z",
+      "contentTelemetry:asset": {
+        "repo:modifyDate": "2020-03-26T12: 01: 40.331Z",
         "repo:name": "snowy-mountain-glacier.jpg",
         "repo:id": "45c6ee92-90e1-4af2-af69-b6dcbc7daeb7",
         "dc:format": "image/jpeg",
         "xmp:machineKeywords": [
           {
-            "xmp:value": "white",
+            "value": "white",
             "confidence": 1
           },
           {
-            "xmp:value": "winter",
+            "value": "winter",
             "confidence": 0.8
           }
         ]
@@ -393,18 +393,18 @@
       "repo:name": "Gray lava rock formation",
       "repo:id": "image-9594301bf3",
       "contentTelemetry:elementType": "core-components-examples/components/image",
-      "xdm:asset": {
-        "repo:lastModifiedDate": "2020-03-26T12: 01: 40.105Z",
+      "contentTelemetry:asset": {
+        "repo:modifyDate": "2020-03-26T12: 01: 40.105Z",
         "repo:name": "lava-rock-formation.jpg",
         "repo:id": "c58c09f6-e382-4698-bfbd-e8c8d37712c8",
         "dc:format": "image/jpeg",
         "xmp:machineKeywords": [
           {
-            "xmp:value": "white",
+            "value": "white",
             "confidence": 1
           },
           {
-            "xmp:value": "winter",
+            "value": "winter",
             "confidence": 0.8
           }
         ]

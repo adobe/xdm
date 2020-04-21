@@ -17,8 +17,7 @@ An individual person. May represent a person acting in various roles, such as a 
   * [Person name](person-name.schema.md) `https://ns.adobe.com/xdm/context/person-name`
 
 
-## Person Examples
-
+## Person Example
 ```json
 {
   "xdm:name": {
@@ -27,22 +26,12 @@ An individual person. May represent a person acting in various roles, such as a 
     "xdm:lastName": "Doe",
     "xdm:fullName": "Jane F. Doe"
   },
-  "xdm:birthDate": "1996-01-03"
+  "xdm:birthDate": "1996-01-03",
+  "xdm:gender": "female",
+  "xdm:maritalStatus": "single",
+  "xdm:nationality": "CA"
 }
 ```
-
-```json
-{
-  "xdm:name": {
-    "xdm:firstName": "Jane",
-    "xdm:middleName": "F",
-    "xdm:lastName": "Doe",
-    "xdm:fullName": "Jane F. Doe"
-  },
-  "xdm:birthDayAndMonth": "01-03"
-}
-```
-
 
 # Person Properties
 
@@ -52,7 +41,10 @@ An individual person. May represent a person acting in various roles, such as a 
 | [xdm:birthDayAndMonth](#xdmbirthdayandmonth) | `string` | Optional |  | Person (this schema) |
 | [xdm:birthYear](#xdmbirthyear) | `integer` | Optional |  | Person (this schema) |
 | [xdm:gender](#xdmgender) | `enum` | Optional | `"not_specified"` | Person (this schema) |
+| [xdm:maritalStatus](#xdmmaritalstatus) | `enum` | Optional | `"not_specified"` | Person (this schema) |
 | [xdm:name](#xdmname) | Person name | Optional |  | Person (this schema) |
+| [xdm:nationality](#xdmnationality) | `string` | Optional |  | Person (this schema) |
+| [xdm:taxId](#xdmtaxid) | `string` | Optional |  | Person (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:birthDate
@@ -149,6 +141,31 @@ The value of this property **must** be equal to one of the [known values below](
 
 
 
+## xdm:maritalStatus
+### Marital Status
+
+Describes a person's relationship with a significant other.
+
+`xdm:maritalStatus`
+* is optional
+* type: `enum`
+* default: `"not_specified"`
+* defined in this schema
+
+The value of this property **must** be equal to one of the [known values below](#xdmmaritalstatus-known-values).
+
+### xdm:maritalStatus Known Values
+| Value | Description |
+|-------|-------------|
+| `married` | Married |
+| `single` | Single |
+| `divorced` | Divorced |
+| `widowed` | Widowed |
+| `not_specified` | Not Specified |
+
+
+
+
 ## xdm:name
 ### Full name
 
@@ -163,6 +180,53 @@ The person's full name.
 
 
 * [Person name](person-name.schema.md) – `https://ns.adobe.com/xdm/context/person-name`
+
+
+
+
+
+## xdm:nationality
+### Nationality
+
+The legal relationship between a person and their state represented using the ISO 3166-1 Alpha-2 code.
+
+`xdm:nationality`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:nationality Type
+
+
+`string`
+
+
+All instances must conform to this regular expression 
+(test examples [here](https://regexr.com/?expression=%5E%5BA-Z%5D%7B2%7D%24)):
+```regex
+^[A-Z]{2}$
+```
+
+
+
+
+
+
+## xdm:taxId
+### Tax ID
+
+The Tax / Fiscal ID of the person, e.g. the TIN in the US or the CIF/NIF in Spain.
+
+`xdm:taxId`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:taxId Type
+
+
+`string`
+
 
 
 

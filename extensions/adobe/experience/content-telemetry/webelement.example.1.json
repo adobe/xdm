@@ -1,9 +1,9 @@
 {
   "repo:id": "image-35b19dd6bc",
-  "contentTelemetry:elementType": "core/wcm/components/image/v2/image",
+  "ct:elementType": "core/wcm/components/image/v2/image",
   "repo:path": "/content/we-retail/us/en/products/equipment/snow-sports/midweight-fleece-gloves/jcr:content/root/product/image",
   "repo:name": "Midweight Fleece Gloves",
-  "contentTelemetry:asset": {
+  "ct:asset": {
     "repo:id": "1ae52f08-42e4-493d-a529-5d4773231bc4",
     "repo:name": "Midweight Fleece.jpg",
     "repo:path": "/content/dam/we-retail/en/products/apparel/gloves/Midweight%20Fleece.jpg",
@@ -11,46 +11,46 @@
     "dc:format": "image/jpeg",
     "xmp:keywords": [
       {
-        "value": "we-retail:activity/skiing",
-        "importance": 1
+        "xdm:value": "we-retail:activity/skiing",
+        "xdm:importance": 1
       },
       {
-        "value": "we-retail:apparel/gloves",
-        "importance": 1
+        "xdm:value": "we-retail:apparel/gloves",
+        "xdm:importance": 1
       },
       {
-        "value": "we-retail:gender/men",
-        "importance": 0.9
+        "xdm:value": "we-retail:gender/men",
+        "xdm:importance": 0.9
       },
       {
-        "value": "we-retail:equipment",
-        "importance": 0.9
+        "xdm:value": "we-retail:equipment",
+        "xdm:importance": 0.9
       }
     ],
     "xmp:machineKeywords": [
       {
-        "value": "gloves",
-        "confidence": 0.75
+        "xdm:value": "gloves",
+        "xdm:confidence": 0.75
       },
       {
-        "value": "leather",
-        "confidence": 0.743
+        "xdm:value": "leather",
+        "xdm:confidence": 0.743
       },
       {
-        "value": "clothing",
-        "confidence": 0.727
+        "xdm:value": "clothing",
+        "xdm:confidence": 0.727
       },
       {
-        "value": "winter",
-        "confidence": 0.725
+        "xdm:value": "winter",
+        "xdm:confidence": 0.725
       },
       {
-        "value": "protection",
-        "confidence": 0.632
+        "xdm:value": "protection",
+        "xdm:confidence": 0.632
       },
       {
-        "value": "hand",
-        "confidence": 0.605
+        "xdm:value": "hand",
+        "xdm:confidence": 0.605
       }
     ]
   }

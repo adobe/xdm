@@ -15,7 +15,7 @@
   "definitions": {
     "productlistitem": {
       "properties": {
-        "contentTelemetry:asset": {
+        "ct:asset": {
           "title": "Product asset",
           "$ref": "https://ns.adobe.com/experience/content-telemetry/webasset",
           "description": "The asset associated with the product."

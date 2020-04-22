@@ -44,7 +44,7 @@
     "xdm:name": "https://ns.adobe.com/experience/alloy",
     "xdm:version": "0.0.13"
   },
-  "contentTelemetry:commerce": {
+  "ct:commerce": {
     "xdm:productListViews": {
       "xdm:value": 1
     },
@@ -64,12 +64,12 @@
           "dc:format": "image/jpeg",
           "xmp:machineKeywords": [
             {
-              "value": "white",
-              "confidence": 1
+              "xdm:value": "white",
+              "xdm:confidence": 1
             },
             {
-              "value": "winter",
-              "confidence": 0.8
+              "xdm:value": "winter",
+              "xdm:confidence": 0.8
             }
           ]
         }

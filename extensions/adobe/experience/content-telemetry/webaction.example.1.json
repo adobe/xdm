@@ -1,10 +1,10 @@
 {
-  "contentTelemetry:actionType": "click",
-  "contentTelemetry:element": {
+  "ct:actionType": "click",
+  "ct:element": {
     "repo:name": "Gray lava rock formation",
     "repo:id": "image-9594301bf3",
-    "contentTelemetry:elementType": "core/wcm/components/image/v2/image",
-    "contentTelemetry:asset": {
+    "ct:elementType": "core/wcm/components/image/v2/image",
+    "ct:asset": {
       "xdm:URL": "https://www.adobe.com/content/dam/core-components-examples/library/sample-assets/lava-rock-formation.jpg",
       "repo:modifyDate": "2020-03-26T12: 01: 40.105Z",
       "repo:name": "lava-rock-formation.jpg",
@@ -12,22 +12,22 @@
       "dc:format": "image/jpeg",
       "xmp:machineKeywords": [
         {
-          "value": "white",
-          "confidence": 0.75
+          "xdm:value": "white",
+          "xdm:confidence": 0.75
         },
         {
-          "value": "winter",
-          "confidence": 0.8
+          "xdm:value": "winter",
+          "xdm:confidence": 0.8
         }
       ]
     },
-    "repo:parentId": "carousel-efa1eac711-item-9594301bf3"
+    "ct:parentId": "carousel-efa1eac711-item-9594301bf3"
   },
-  "contentTelemetry:context": [
+  "ct:context": [
     {
       "repo:id": "image-7d48db1522",
-      "contentTelemetry:elementType": "core/wcm/components/image/v2/image",
-      "contentTelemetry:asset": {
+      "ct:elementType": "core/wcm/components/image/v2/image",
+      "ct:asset": {
         "xdm:URL": "https://www.adobe.com/content/dam/core-components-examples/library/sample-assets/lava-into-ocean.jpg",
         "repo:modifyDate": "2020-03-26T12: 01: 42.288Z",
         "repo:name": "lava-into-ocean.jpg",
@@ -35,22 +35,22 @@
         "dc:format": "image/jpeg",
         "xmp:machineKeywords": [
           {
-            "value": "white",
-            "confidence": 0.75
+            "xdm:value": "white",
+            "xdm:confidence": 0.75
           },
           {
-            "value": "winter",
-            "confidence": 0.8
+            "xdm:value": "winter",
+            "xdm:confidence": 0.8
           }
         ]
       },
-      "repo:parentId": "carousel-efa1eac711-item-7d48db1522"
+      "ct:parentId": "carousel-efa1eac711-item-7d48db1522"
     },
     {
       "repo:name": "Snowy mountain glacier",
       "repo:id": "image-d7eedd8d87",
-      "contentTelemetry:elementType": "core/wcm/components/image/v2/image",
-      "contentTelemetry:asset": {
+      "ct:elementType": "core/wcm/components/image/v2/image",
+      "ct:asset": {
         "xdm:URL": "https://www.adobe.com/content/dam/core-components-examples/library/sample-assets/snowy-mountain-glacier.jpg",
         "repo:modifyDate": "2020-03-26T12: 01: 40.331Z",
         "repo:name": "snowy-mountain-glacier.jpg",
@@ -58,16 +58,16 @@
         "dc:format": "image/jpeg",
         "xmp:machineKeywords": [
           {
-            "value": "white",
-            "confidence": 1
+            "xdm:value": "white",
+            "xdm:confidence": 1
           },
           {
-            "value": "winter",
-            "confidence": 0.8
+            "xdm:value": "winter",
+            "xdm:confidence": 0.8
           }
         ]
       },
-      "repo:parentId": "carousel-efa1eac711-item-d7eedd8d87"
+      "ct:parentId": "carousel-efa1eac711-item-d7eedd8d87"
     }
   ]
 }

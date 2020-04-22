@@ -1,415 +1,415 @@
 {
   "repo:id": "page-113d229837",
-  "contentTelemetry:elementType": "core-components-examples/components/page",
+  "ct:elementType": "core-components-examples/components/page",
   "dc:language": "en-us",
   "xdm:URL": "https://www.adobe.com/content/we-retail/us/en/products/equipment/snow-sports/midweight-fleece-gloves.html",
   "repo:name": "Midweight Fleece Gloves",
   "xdm:templatePath": "/conf/we-retail/settings/wcm/templates/product-page",
   "xmp:keywords": [
     {
-      "value": "example",
+      "xdm:value": "example",
       "importance": 1
     },
     {
-      "value": "content",
+      "xdm:value": "content",
       "importance": 1
     }
   ],
-  "contentTelemetry:elements": [
+  "ct:elements": [
     {
-      "xdm:shownItems": ["tabs-9ebc28c5fc-item-b7234c5d61"],
+      "ct:shownItems": ["tabs-9ebc28c5fc-item-b7234c5d61"],
       "repo:name": "info",
       "repo:id": "tabs-9ebc28c5fc",
-      "contentTelemetry:elementType": "core-components-examples/components/tabs",
-      "repo:parentId": "page-d4bbc7dcc9"
+      "ct:elementType": "core-components-examples/components/tabs",
+      "ct:parentId": "page-d4bbc7dcc9"
     },
     {
       "repo:name": "properties",
       "repo:id": "tabs-9ebc28c5fc-item-fc22d11006",
-      "contentTelemetry:elementType": "resourceListItem",
+      "ct:elementType": "resourceListItem",
       "dc:title": "Properties",
-      "repo:parentId": "tabs-9ebc28c5fc"
+      "ct:parentId": "tabs-9ebc28c5fc"
     },
     {
       "repo:name": "markup",
       "repo:id": "tabs-9ebc28c5fc-item-1918209d43",
-      "contentTelemetry:elementType": "resourceListItem",
+      "ct:elementType": "resourceListItem",
       "dc:title": "Markup",
-      "repo:parentId": "tabs-9ebc28c5fc"
+      "ct:parentId": "tabs-9ebc28c5fc"
     },
     {
       "repo:name": "json",
       "repo:id": "tabs-9ebc28c5fc-item-b7234c5d61",
-      "contentTelemetry:elementType": "resourceListItem",
+      "ct:elementType": "resourceListItem",
       "dc:title": "JSON",
-      "repo:parentId": "tabs-9ebc28c5fc"
+      "ct:parentId": "tabs-9ebc28c5fc"
     },
     {
       "repo:name": "navigation",
       "repo:id": "navigation-66efbaea3b",
-      "contentTelemetry:elementType": "navigation",
-      "repo:parentId": "tabs-9ebc28c5fc-item-1918209d43"
+      "ct:elementType": "navigation",
+      "ct:parentId": "tabs-9ebc28c5fc-item-1918209d43"
     },
     {
       "repo:name": "library",
-      "xdm:linkUrl": "https://www.adobe.com/content/core-components-examples/library.html",
+      "ct:linkUrl": "https://www.adobe.com/content/core-components-examples/library.html",
       "repo:id": "navigation-66efbaea3b-item-2d654c795a",
-      "contentTelemetry:text": "Component Library",
-      "contentTelemetry:elementType": "navigationItem",
+      "ct:text": "Component Library",
+      "ct:elementType": "navigationItem",
       "dc:title": "Component Library",
-      "repo:parentId": "navigation-66efbaea3b"
+      "ct:parentId": "navigation-66efbaea3b"
     },
     {
       "repo:name": "templating",
-      "xdm:linkUrl": "https://www.adobe.com/content/core-components-examples/library/templating.html",
+      "ct:linkUrl": "https://www.adobe.com/content/core-components-examples/library/templating.html",
       "repo:id": "navigation-66efbaea3b-item-9ea9addd24",
-      "contentTelemetry:text": "Templating",
-      "contentTelemetry:elementType": "navigationItem",
+      "ct:text": "Templating",
+      "ct:elementType": "navigationItem",
       "dc:title": "Templating",
-      "repo:parentId": "navigation-66efbaea3b-item-2d654c795a"
+      "ct:parentId": "navigation-66efbaea3b-item-2d654c795a"
     },
     {
       "repo:name": "navigation",
-      "xdm:linkUrl": "https://www.adobe.com/content/core-components-examples/library/templating/navigation.html",
+      "ct:linkUrl": "https://www.adobe.com/content/core-components-examples/library/templating/navigation.html",
       "repo:id": "navigation-66efbaea3b-item-d68affb6e3",
-      "contentTelemetry:text": "Navigation",
-      "contentTelemetry:elementType": "navigationItem",
+      "ct:text": "Navigation",
+      "ct:elementType": "navigationItem",
       "dc:title": "Navigation",
-      "repo:parentId": "navigation-66efbaea3b-item-9ea9addd24"
+      "ct:parentId": "navigation-66efbaea3b-item-9ea9addd24"
     },
     {
       "repo:name": "language-navigation",
-      "xdm:linkUrl": "https://www.adobe.com/content/core-components-examples/library/templating/language-navigation/language-structure/us/en/language-navigation.html",
+      "ct:linkUrl": "https://www.adobe.com/content/core-components-examples/library/templating/language-navigation/language-structure/us/en/language-navigation.html",
       "repo:id": "navigation-66efbaea3b-item-f3e01e812a",
-      "contentTelemetry:text": "Language Navigation",
-      "contentTelemetry:elementType": "navigationItem",
+      "ct:text": "Language Navigation",
+      "ct:elementType": "navigationItem",
       "dc:title": "Language Navigation",
-      "repo:parentId": "navigation-66efbaea3b-item-9ea9addd24"
+      "ct:parentId": "navigation-66efbaea3b-item-9ea9addd24"
     },
     {
       "repo:name": "breadcrumb",
-      "xdm:linkUrl": "https://www.adobe.com/content/core-components-examples/library/templating/breadcrumb/hidden/level-1/level-2/breadcrumb.html",
+      "ct:linkUrl": "https://www.adobe.com/content/core-components-examples/library/templating/breadcrumb/hidden/level-1/level-2/breadcrumb.html",
       "repo:id": "navigation-66efbaea3b-item-cbb6d57cd6",
-      "contentTelemetry:text": "Breadcrumb",
-      "contentTelemetry:elementType": "navigationItem",
+      "ct:text": "Breadcrumb",
+      "ct:elementType": "navigationItem",
       "dc:title": "Breadcrumb",
-      "repo:parentId": "navigation-66efbaea3b-item-9ea9addd24"
+      "ct:parentId": "navigation-66efbaea3b-item-9ea9addd24"
     },
     {
       "repo:name": "page-authoring",
-      "xdm:linkUrl": "https://www.adobe.com/content/core-components-examples/library/page-authoring.html",
+      "ct:linkUrl": "https://www.adobe.com/content/core-components-examples/library/page-authoring.html",
       "repo:id": "navigation-66efbaea3b-item-4531d18e85",
-      "contentTelemetry:text": "Page Authoring",
-      "contentTelemetry:elementType": "navigationItem",
+      "ct:text": "Page Authoring",
+      "ct:elementType": "navigationItem",
       "dc:title": "Page Authoring",
-      "repo:parentId": "navigation-66efbaea3b-item-2d654c795a"
+      "ct:parentId": "navigation-66efbaea3b-item-2d654c795a"
     },
     {
       "repo:name": "title",
-      "xdm:linkUrl": "https://www.adobe.com/content/core-components-examples/library/page-authoring/title.html",
+      "ct:linkUrl": "https://www.adobe.com/content/core-components-examples/library/page-authoring/title.html",
       "repo:id": "navigation-66efbaea3b-item-a885621420",
-      "contentTelemetry:text": "Title",
-      "contentTelemetry:elementType": "navigationItem",
+      "ct:text": "Title",
+      "ct:elementType": "navigationItem",
       "dc:title": "Title",
-      "repo:parentId": "navigation-66efbaea3b-item-4531d18e85"
+      "ct:parentId": "navigation-66efbaea3b-item-4531d18e85"
     },
     {
       "repo:name": "text",
-      "xdm:linkUrl": "https://www.adobe.com/content/core-components-examples/library/page-authoring/text.html",
+      "ct:linkUrl": "https://www.adobe.com/content/core-components-examples/library/page-authoring/text.html",
       "repo:id": "navigation-66efbaea3b-item-73bb9ac6a4",
-      "contentTelemetry:text": "Text",
-      "contentTelemetry:elementType": "navigationItem",
+      "ct:text": "Text",
+      "ct:elementType": "navigationItem",
       "dc:title": "Text",
-      "repo:parentId": "navigation-66efbaea3b-item-4531d18e85"
+      "ct:parentId": "navigation-66efbaea3b-item-4531d18e85"
     },
     {
       "repo:name": "image",
-      "xdm:linkUrl": "https://www.adobe.com/content/core-components-examples/library/page-authoring/image.html",
+      "ct:linkUrl": "https://www.adobe.com/content/core-components-examples/library/page-authoring/image.html",
       "repo:id": "navigation-66efbaea3b-item-ccfb199698",
-      "contentTelemetry:text": "Image",
-      "contentTelemetry:elementType": "navigationItem",
+      "ct:text": "Image",
+      "ct:elementType": "navigationItem",
       "dc:title": "Image",
-      "repo:parentId": "navigation-66efbaea3b-item-4531d18e85"
+      "ct:parentId": "navigation-66efbaea3b-item-4531d18e85"
     },
     {
       "repo:name": "button",
-      "xdm:linkUrl": "https://www.adobe.com/content/core-components-examples/library/page-authoring/button.html",
+      "ct:linkUrl": "https://www.adobe.com/content/core-components-examples/library/page-authoring/button.html",
       "repo:id": "navigation-66efbaea3b-item-5ac319d956",
-      "contentTelemetry:text": "Button",
-      "contentTelemetry:elementType": "navigationItem",
+      "ct:text": "Button",
+      "ct:elementType": "navigationItem",
       "dc:title": "Button",
-      "repo:parentId": "navigation-66efbaea3b-item-4531d18e85"
+      "ct:parentId": "navigation-66efbaea3b-item-4531d18e85"
     },
     {
       "repo:name": "teaser",
-      "xdm:linkUrl": "https://www.adobe.com/content/core-components-examples/library/page-authoring/teaser.html",
+      "ct:linkUrl": "https://www.adobe.com/content/core-components-examples/library/page-authoring/teaser.html",
       "repo:id": "navigation-66efbaea3b-item-afdbf2191b",
-      "contentTelemetry:text": "Teaser",
-      "contentTelemetry:elementType": "navigationItem",
+      "ct:text": "Teaser",
+      "ct:elementType": "navigationItem",
       "dc:title": "Teaser",
-      "repo:parentId": "navigation-66efbaea3b-item-4531d18e85"
+      "ct:parentId": "navigation-66efbaea3b-item-4531d18e85"
     },
     {
       "repo:name": "download",
-      "xdm:linkUrl": "https://www.adobe.com/content/core-components-examples/library/page-authoring/download.html",
+      "ct:linkUrl": "https://www.adobe.com/content/core-components-examples/library/page-authoring/download.html",
       "repo:id": "navigation-66efbaea3b-item-036ae66c12",
-      "contentTelemetry:text": "Download",
-      "contentTelemetry:elementType": "navigationItem",
+      "ct:text": "Download",
+      "ct:elementType": "navigationItem",
       "dc:title": "Download",
-      "repo:parentId": "navigation-66efbaea3b-item-4531d18e85"
+      "ct:parentId": "navigation-66efbaea3b-item-4531d18e85"
     },
     {
       "repo:name": "list",
-      "xdm:linkUrl": "https://www.adobe.com/content/core-components-examples/library/page-authoring/list.html",
+      "ct:linkUrl": "https://www.adobe.com/content/core-components-examples/library/page-authoring/list.html",
       "repo:id": "navigation-66efbaea3b-item-1164e2af53",
-      "contentTelemetry:text": "List",
-      "contentTelemetry:elementType": "navigationItem",
+      "ct:text": "List",
+      "ct:elementType": "navigationItem",
       "dc:title": "List",
-      "repo:parentId": "navigation-66efbaea3b-item-4531d18e85"
+      "ct:parentId": "navigation-66efbaea3b-item-4531d18e85"
     },
     {
       "repo:name": "experience-fragment",
-      "xdm:linkUrl": "https://www.adobe.com/content/core-components-examples/library/page-authoring/experience-fragment.html",
+      "ct:linkUrl": "https://www.adobe.com/content/core-components-examples/library/page-authoring/experience-fragment.html",
       "repo:id": "navigation-66efbaea3b-item-2b8d6ac14e",
-      "contentTelemetry:text": "Experience Fragment",
-      "contentTelemetry:elementType": "navigationItem",
+      "ct:text": "Experience Fragment",
+      "ct:elementType": "navigationItem",
       "dc:title": "Experience Fragment",
-      "repo:parentId": "navigation-66efbaea3b-item-4531d18e85"
+      "ct:parentId": "navigation-66efbaea3b-item-4531d18e85"
     },
     {
       "repo:name": "content-fragment",
-      "xdm:linkUrl": "https://www.adobe.com/content/core-components-examples/library/page-authoring/content-fragment.html",
+      "ct:linkUrl": "https://www.adobe.com/content/core-components-examples/library/page-authoring/content-fragment.html",
       "repo:id": "navigation-66efbaea3b-item-69578dfa5c",
-      "contentTelemetry:text": "Content Fragment",
-      "contentTelemetry:elementType": "navigationItem",
+      "ct:text": "Content Fragment",
+      "ct:elementType": "navigationItem",
       "dc:title": "Content Fragment",
-      "repo:parentId": "navigation-66efbaea3b-item-4531d18e85"
+      "ct:parentId": "navigation-66efbaea3b-item-4531d18e85"
     },
     {
       "repo:name": "content-fragment-list",
-      "xdm:linkUrl": "https://www.adobe.com/content/core-components-examples/library/page-authoring/content-fragment-list.html",
+      "ct:linkUrl": "https://www.adobe.com/content/core-components-examples/library/page-authoring/content-fragment-list.html",
       "repo:id": "navigation-66efbaea3b-item-a5819db35b",
-      "contentTelemetry:text": "Content Fragment List",
-      "contentTelemetry:elementType": "navigationItem",
+      "ct:text": "Content Fragment List",
+      "ct:elementType": "navigationItem",
       "dc:title": "Content Fragment List",
-      "repo:parentId": "navigation-66efbaea3b-item-4531d18e85"
+      "ct:parentId": "navigation-66efbaea3b-item-4531d18e85"
     },
     {
       "repo:name": "embed",
-      "xdm:linkUrl": "https://www.adobe.com/content/core-components-examples/library/page-authoring/embed.html",
+      "ct:linkUrl": "https://www.adobe.com/content/core-components-examples/library/page-authoring/embed.html",
       "repo:id": "navigation-66efbaea3b-item-366760cb49",
-      "contentTelemetry:text": "Embed",
-      "contentTelemetry:elementType": "navigationItem",
+      "ct:text": "Embed",
+      "ct:elementType": "navigationItem",
       "dc:title": "Embed",
-      "repo:parentId": "navigation-66efbaea3b-item-4531d18e85"
+      "ct:parentId": "navigation-66efbaea3b-item-4531d18e85"
     },
     {
       "repo:name": "social-sharing",
-      "xdm:linkUrl": "https://www.adobe.com/content/core-components-examples/library/page-authoring/social-sharing.html",
+      "ct:linkUrl": "https://www.adobe.com/content/core-components-examples/library/page-authoring/social-sharing.html",
       "repo:id": "navigation-66efbaea3b-item-8101faf018",
-      "contentTelemetry:text": "Social Sharing",
-      "contentTelemetry:elementType": "navigationItem",
+      "ct:text": "Social Sharing",
+      "ct:elementType": "navigationItem",
       "dc:title": "Social Sharing",
-      "repo:parentId": "navigation-66efbaea3b-item-4531d18e85"
+      "ct:parentId": "navigation-66efbaea3b-item-4531d18e85"
     },
     {
       "repo:name": "separator",
-      "xdm:linkUrl": "https://www.adobe.com/content/core-components-examples/library/page-authoring/separator.html",
+      "ct:linkUrl": "https://www.adobe.com/content/core-components-examples/library/page-authoring/separator.html",
       "repo:id": "navigation-66efbaea3b-item-2b796fa44a",
-      "contentTelemetry:text": "Separator",
-      "contentTelemetry:elementType": "navigationItem",
+      "ct:text": "Separator",
+      "ct:elementType": "navigationItem",
       "dc:title": "Separator",
-      "repo:parentId": "navigation-66efbaea3b-item-4531d18e85"
+      "ct:parentId": "navigation-66efbaea3b-item-4531d18e85"
     },
     {
       "repo:name": "container",
-      "xdm:linkUrl": "https://www.adobe.com/content/core-components-examples/library/container.html",
+      "ct:linkUrl": "https://www.adobe.com/content/core-components-examples/library/container.html",
       "repo:id": "navigation-66efbaea3b-item-d5f717cd25",
-      "contentTelemetry:text": "Container",
-      "contentTelemetry:elementType": "navigationItem",
+      "ct:text": "Container",
+      "ct:elementType": "navigationItem",
       "dc:title": "Container",
-      "repo:parentId": "navigation-66efbaea3b-item-2d654c795a"
+      "ct:parentId": "navigation-66efbaea3b-item-2d654c795a"
     },
     {
       "repo:name": "container",
-      "xdm:linkUrl": "https://www.adobe.com/content/core-components-examples/library/container/container.html",
+      "ct:linkUrl": "https://www.adobe.com/content/core-components-examples/library/container/container.html",
       "repo:id": "navigation-66efbaea3b-item-62edc29783",
-      "contentTelemetry:text": "Container",
-      "contentTelemetry:elementType": "navigationItem",
+      "ct:text": "Container",
+      "ct:elementType": "navigationItem",
       "dc:title": "Container",
-      "repo:parentId": "navigation-66efbaea3b-item-d5f717cd25"
+      "ct:parentId": "navigation-66efbaea3b-item-d5f717cd25"
     },
     {
       "repo:name": "carousel",
-      "xdm:linkUrl": "https://www.adobe.com/content/core-components-examples/library/container/carousel.html",
+      "ct:linkUrl": "https://www.adobe.com/content/core-components-examples/library/container/carousel.html",
       "repo:id": "navigation-66efbaea3b-item-ad0e189193",
-      "contentTelemetry:text": "Carousel",
-      "contentTelemetry:elementType": "navigationItem",
+      "ct:text": "Carousel",
+      "ct:elementType": "navigationItem",
       "dc:title": "Carousel",
-      "repo:parentId": "navigation-66efbaea3b-item-d5f717cd25"
+      "ct:parentId": "navigation-66efbaea3b-item-d5f717cd25"
     },
     {
       "repo:name": "tabs",
-      "xdm:linkUrl": "https://www.adobe.com/content/core-components-examples/library/container/tabs.html",
+      "ct:linkUrl": "https://www.adobe.com/content/core-components-examples/library/container/tabs.html",
       "repo:id": "navigation-66efbaea3b-item-45b607ef71",
-      "contentTelemetry:text": "Tabs",
-      "contentTelemetry:elementType": "navigationItem",
+      "ct:text": "Tabs",
+      "ct:elementType": "navigationItem",
       "dc:title": "Tabs",
-      "repo:parentId": "navigation-66efbaea3b-item-d5f717cd25"
+      "ct:parentId": "navigation-66efbaea3b-item-d5f717cd25"
     },
     {
       "repo:name": "accordion",
-      "xdm:linkUrl": "https://www.adobe.com/content/core-components-examples/library/container/accordion.html",
+      "ct:linkUrl": "https://www.adobe.com/content/core-components-examples/library/container/accordion.html",
       "repo:id": "navigation-66efbaea3b-item-568dc0e8e3",
-      "contentTelemetry:text": "Accordion",
-      "contentTelemetry:elementType": "navigationItem",
+      "ct:text": "Accordion",
+      "ct:elementType": "navigationItem",
       "dc:title": "Accordion",
-      "repo:parentId": "navigation-66efbaea3b-item-d5f717cd25"
+      "ct:parentId": "navigation-66efbaea3b-item-d5f717cd25"
     },
     {
       "repo:name": "form",
-      "xdm:linkUrl": "https://www.adobe.com/content/core-components-examples/library/form.html",
+      "ct:linkUrl": "https://www.adobe.com/content/core-components-examples/library/form.html",
       "repo:id": "navigation-66efbaea3b-item-a5cfe31644",
-      "contentTelemetry:text": "Form",
-      "contentTelemetry:elementType": "navigationItem",
+      "ct:text": "Form",
+      "ct:elementType": "navigationItem",
       "dc:title": "Form",
-      "repo:parentId": "navigation-66efbaea3b-item-2d654c795a"
+      "ct:parentId": "navigation-66efbaea3b-item-2d654c795a"
     },
     {
       "repo:name": "container",
-      "xdm:linkUrl": "https://www.adobe.com/content/core-components-examples/library/form/container.html",
+      "ct:linkUrl": "https://www.adobe.com/content/core-components-examples/library/form/container.html",
       "repo:id": "navigation-66efbaea3b-item-f0da960201",
-      "contentTelemetry:text": "Container",
-      "contentTelemetry:elementType": "navigationItem",
+      "ct:text": "Container",
+      "ct:elementType": "navigationItem",
       "dc:title": "Container",
-      "repo:parentId": "navigation-66efbaea3b-item-a5cfe31644"
+      "ct:parentId": "navigation-66efbaea3b-item-a5cfe31644"
     },
     {
       "repo:name": "input",
-      "xdm:linkUrl": "https://www.adobe.com/content/core-components-examples/library/form/input.html",
+      "ct:linkUrl": "https://www.adobe.com/content/core-components-examples/library/form/input.html",
       "repo:id": "navigation-66efbaea3b-item-cbba1d623f",
-      "contentTelemetry:text": "Input",
-      "contentTelemetry:elementType": "navigationItem",
+      "ct:text": "Input",
+      "ct:elementType": "navigationItem",
       "dc:title": "Input",
-      "repo:parentId": "navigation-66efbaea3b-item-a5cfe31644"
+      "ct:parentId": "navigation-66efbaea3b-item-a5cfe31644"
     },
     {
       "repo:name": "options",
-      "xdm:linkUrl": "https://www.adobe.com/content/core-components-examples/library/form/options.html",
+      "ct:linkUrl": "https://www.adobe.com/content/core-components-examples/library/form/options.html",
       "repo:id": "navigation-66efbaea3b-item-56ce1a34b9",
-      "contentTelemetry:text": "Options",
-      "contentTelemetry:elementType": "navigationItem",
+      "ct:text": "Options",
+      "ct:elementType": "navigationItem",
       "dc:title": "Options",
-      "repo:parentId": "navigation-66efbaea3b-item-a5cfe31644"
+      "ct:parentId": "navigation-66efbaea3b-item-a5cfe31644"
     },
     {
       "repo:name": "hidden",
-      "xdm:linkUrl": "https://www.adobe.com/content/core-components-examples/library/form/hidden.html",
+      "ct:linkUrl": "https://www.adobe.com/content/core-components-examples/library/form/hidden.html",
       "repo:id": "navigation-66efbaea3b-item-6aeecbf95a",
-      "contentTelemetry:text": "Hidden",
-      "contentTelemetry:elementType": "navigationItem",
+      "ct:text": "Hidden",
+      "ct:elementType": "navigationItem",
       "dc:title": "Hidden",
-      "repo:parentId": "navigation-66efbaea3b-item-a5cfe31644"
+      "ct:parentId": "navigation-66efbaea3b-item-a5cfe31644"
     },
     {
       "repo:name": "button",
-      "xdm:linkUrl": "https://www.adobe.com/content/core-components-examples/library/form/button.html",
+      "ct:linkUrl": "https://www.adobe.com/content/core-components-examples/library/form/button.html",
       "repo:id": "navigation-66efbaea3b-item-2deda4dcd9",
-      "contentTelemetry:text": "Button",
-      "contentTelemetry:elementType": "navigationItem",
+      "ct:text": "Button",
+      "ct:elementType": "navigationItem",
       "dc:title": "Button",
-      "repo:parentId": "navigation-66efbaea3b-item-a5cfe31644"
+      "ct:parentId": "navigation-66efbaea3b-item-a5cfe31644"
     },
     {
-      "xdm:shownItems": ["carousel-efa1eac711-item-7d48db1522"],
+      "ct:shownItems": ["carousel-efa1eac711-item-7d48db1522"],
       "repo:name": "carousel",
       "repo:id": "carousel-efa1eac711",
-      "contentTelemetry:elementType": "carousel",
-      "repo:parentId": "page-113d229837"
+      "ct:elementType": "carousel",
+      "ct:parentId": "page-113d229837"
     },
     {
       "repo:name": "image",
       "repo:id": "carousel-efa1eac711-item-7d48db1522",
-      "contentTelemetry:elementType": "resourceListItem",
+      "ct:elementType": "resourceListItem",
       "dc:title": "Title",
-      "repo:parentId": "carousel-efa1eac711"
+      "ct:parentId": "carousel-efa1eac711"
     },
     {
       "repo:name": "image_1622336496",
       "repo:id": "carousel-efa1eac711-item-d7eedd8d87",
-      "contentTelemetry:elementType": "resourceListItem",
-      "repo:parentId": "carousel-efa1eac711"
+      "ct:elementType": "resourceListItem",
+      "ct:parentId": "carousel-efa1eac711"
     },
     {
       "repo:name": "image_1533234440",
       "repo:id": "carousel-efa1eac711-item-9594301bf3",
-      "contentTelemetry:elementType": "resourceListItem",
-      "repo:parentId": "carousel-efa1eac711"
+      "ct:elementType": "resourceListItem",
+      "ct:parentId": "carousel-efa1eac711"
     },
     {
       "repo:id": "image-7d48db1522",
-      "contentTelemetry:elementType": "core-components-examples/components/image",
-      "contentTelemetry:asset": {
+      "ct:elementType": "core-components-examples/components/image",
+      "ct:asset": {
         "repo:modifyDate": "2020-03-26T12: 01: 42.288Z",
         "repo:name": "lava-into-ocean.jpg",
         "repo:id": "0f54e1b5-535b-45f7-a46b-35abb19dd6bc",
         "dc:format": "image/jpeg",
         "xmp:machineKeywords": [
           {
-            "value": "white",
-            "confidence": 1
+            "xdm:value": "white",
+            "xdm:confidence": 1
           },
           {
-            "value": "winter",
-            "confidence": 0.8
+            "xdm:value": "winter",
+            "xdm:confidence": 0.8
           }
         ]
       },
-      "repo:parentId": "carousel-efa1eac711-item-7d48db1522"
+      "ct:parentId": "carousel-efa1eac711-item-7d48db1522"
     },
     {
       "repo:name": "Snowy mountain glacier",
       "repo:id": "image-d7eedd8d87",
-      "contentTelemetry:elementType": "core-components-examples/components/image",
-      "contentTelemetry:asset": {
+      "ct:elementType": "core-components-examples/components/image",
+      "ct:asset": {
         "repo:modifyDate": "2020-03-26T12: 01: 40.331Z",
         "repo:name": "snowy-mountain-glacier.jpg",
         "repo:id": "45c6ee92-90e1-4af2-af69-b6dcbc7daeb7",
         "dc:format": "image/jpeg",
         "xmp:machineKeywords": [
           {
-            "value": "white",
-            "confidence": 1
+            "xdm:value": "white",
+            "xdm:confidence": 1
           },
           {
-            "value": "winter",
-            "confidence": 0.8
+            "xdm:value": "winter",
+            "xdm:confidence": 0.8
           }
         ]
       },
-      "repo:parentId": "carousel-efa1eac711-item-d7eedd8d87"
+      "ct:parentId": "carousel-efa1eac711-item-d7eedd8d87"
     },
     {
       "repo:name": "Gray lava rock formation",
       "repo:id": "image-9594301bf3",
-      "contentTelemetry:elementType": "core-components-examples/components/image",
-      "contentTelemetry:asset": {
+      "ct:elementType": "core-components-examples/components/image",
+      "ct:asset": {
         "repo:modifyDate": "2020-03-26T12: 01: 40.105Z",
         "repo:name": "lava-rock-formation.jpg",
         "repo:id": "c58c09f6-e382-4698-bfbd-e8c8d37712c8",
         "dc:format": "image/jpeg",
         "xmp:machineKeywords": [
           {
-            "value": "white",
-            "confidence": 1
+            "xdm:value": "white",
+            "xdm:confidence": 1
           },
           {
-            "value": "winter",
-            "confidence": 0.8
+            "xdm:value": "winter",
+            "xdm:confidence": 0.8
           }
         ]
       },
-      "repo:parentId": "carousel-efa1eac711-item-9594301bf3"
+      "ct:parentId": "carousel-efa1eac711-item-9594301bf3"
     }
   ]
 }

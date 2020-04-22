@@ -26,7 +26,7 @@
           "format": "uri",
           "description": "The absolute URL of the page."
         },
-        "contentTelemetry:elements": {
+        "ct:elements": {
           "title": "Web elements",
           "description": "The list of containing web elements.",
           "type": "array",
@@ -48,6 +48,6 @@
       "$ref": "#/definitions/webpage"
     }
   ],
-  "required": ["repo:id", "contentTelemetry:elementType"],
+  "required": ["repo:id", "ct:elementType"],
   "meta:status": "experimental"
 }

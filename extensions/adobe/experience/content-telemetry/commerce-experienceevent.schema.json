@@ -5,9 +5,9 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/content-telemetry/commerceinfo",
+  "$id": "https://ns.adobe.com/experience/content-telemetry/commerce-experienceevent",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Content Telemetry Commerce Information",
+  "title": "Content Telemetry Commerce ExperienceEvent",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
@@ -16,7 +16,7 @@
   "definitions": {
     "commerce": {
       "properties": {
-        "contentTelemetry:commerce": {
+        "ct:commerce": {
           "title": "Commerce details",
           "description": "Aggregation of commerce activity and associated products list",
           "$ref": "https://ns.adobe.com/experience/content-telemetry/commerce"

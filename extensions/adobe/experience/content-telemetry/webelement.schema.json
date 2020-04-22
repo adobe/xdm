@@ -15,28 +15,28 @@
   "definitions": {
     "webelement": {
       "properties": {
-        "contentTelemetry:asset": {
+        "ct:asset": {
           "title": "Asset",
           "description": "The asset referred by the web element.",
           "$ref": "https://ns.adobe.com/experience/content-telemetry/webasset"
         },
-        "xdm:linkUrl": {
+        "ct:linkUrl": {
           "title": "LinkUrl",
           "type": "string",
           "format": "uri",
           "description": "The URL the element links to."
         },
-        "contentTelemetry:text": {
+        "ct:text": {
           "title": "Text",
           "type": "string",
           "description": "The element's text."
         },
-        "repo:parentId": {
+        "ct:parentId": {
           "title": "Parent ID",
           "type": "string",
           "description": "The repo:id of the parent webelement."
         },
-        "xdm:shownItems": {
+        "ct:shownItems": {
           "title": "Shown item IDs",
           "type": "array",
           "description": "The IDs of shown items on containers like accordion or carousel",
@@ -58,6 +58,6 @@
       "$ref": "#/definitions/webelement"
     }
   ],
-  "required": ["repo:id", "contentTelemetry:elementType"],
+  "required": ["repo:id", "ct:elementType"],
   "meta:status": "experimental"
 }

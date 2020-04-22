@@ -15,7 +15,7 @@
   "definitions": {
     "webaction": {
       "properties": {
-        "contentTelemetry:actionType": {
+        "ct:actionType": {
           "title": "Action type",
           "description": "Type of action. The action can be user generated (click, expand) or dynamic (offer loaded).",
           "type": "string",
@@ -27,12 +27,12 @@
             "offer": "Personalized content (offer) was dynamically loaded in DOM"
           }
         },
-        "contentTelemetry:element": {
+        "ct:element": {
           "title": "Web Element",
           "description": "The target element metadata. For 'click' event this is the target element. For 'offer' event this is the web element corresponding to the loaded offer.",
           "$ref": "https://ns.adobe.com/experience/content-telemetry/webelement"
         },
-        "contentTelemetry:context": {
+        "ct:context": {
           "title": "Context",
           "description": "A collection of contextual elements for the actioned item. For 'click' event this represents the collection of contextual elements which could be the siblings or surrounding (unrelated) elements of the target. For 'offer' event this contains the targeted element encapsulating the offers",
           "type": "array",

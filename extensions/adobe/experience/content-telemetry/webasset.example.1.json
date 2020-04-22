@@ -6,12 +6,12 @@
   "dc:format": "image/jpeg",
   "xmp:machineKeywords": [
     {
-      "value": "white",
-      "confidence": 0.75
+      "xdm:value": "white",
+      "xdm:confidence": 0.75
     },
     {
-      "value": "winter",
-      "confidence": 0.8
+      "xdm:value": "winter",
+      "xdm:confidence": 0.8
     }
   ]
 }

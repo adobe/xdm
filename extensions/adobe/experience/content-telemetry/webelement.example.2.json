@@ -1,36 +1,35 @@
 {
   "repo:id": "text-35b19dd6bc",
-  "xdm:elementType": "core/wcm/components/text/v2/text",
-  "xdm:text": "Negotiations are to take place once every two or three weeks from now until the summer at least, alternating between Brussels and London - with the prime minister insisting a deal must be struck by the year's end",
+  "ct:elementType": "core/wcm/components/text/v2/text",
+  "repo:path": "/content/bbcnews/en/articles/jcr:content/root/news/article1",
+  "repo:text": "Negotiations are to take place once every two or three weeks from now until the summer at least, alternating between Brussels and London - with the prime minister insisting a deal must be struck by the year's end",
   "repo:name": "News at No 10",
-  "xdm:predictedTags": [
+  "xmp:keywords": [
     {
-      "xmp:value": "politics",
-      "confidence": 0.852
+      "xdm:value": "bbc/brexit",
+      "xdm:importance": 1
     },
     {
-      "xmp:value": "government",
-      "confidence": 0.793
+      "xdm:value": "bbc/borrisjohnson",
+      "xdm:importance": 0.9
+    }
+  ],
+  "xmp:machineKeywords": [
+    {
+      "xdm:value": "politics",
+      "xdm:confidence": 0.852
     },
     {
-      "xmp:value": "politics",
-      "confidence": 0.689
+      "xdm:value": "government",
+      "xdm:confidence": 0.793
     },
     {
-      "xmp:value": "budget",
-      "confidence": 0.8
+      "xdm:value": "budget",
+      "xdm:confidence": 0.689
     },
     {
-      "xmp:value": "economy",
-      "confidence": 0.887
-    },
-    {
-      "xmp:value": "bbc/brexit",
-      "confidence": 1
-    },
-    {
-      "xmp:value": "bbc/borrisjohnson",
-      "confidence": 1
+      "xdm:value": "economy",
+      "xdm:confidence": 0.887
     }
   ]
 }

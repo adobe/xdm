@@ -5,32 +5,43 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/content-telemetry/webasset",
+  "$id": "https://ns.adobe.com/experience/content-telemetry/webproperties",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Content Telemetry Web Asset",
+  "title": "Content Telemetry Web Properties",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "description": "Asset details associated to a web element",
+  "description": "Common web properties",
   "definitions": {
-    "webasset": {
+    "webproperties": {
       "properties": {
         "repo:id": {
-          "title": "Asset Id",
+          "title": "Element Id",
+          "type": "string",
           "meta:immutable": true,
           "meta:usereditable": false,
-          "type": "string",
-          "description": "A unique identifier given to every addressable asset in a given repository."
+          "description": "The unique ID of the web element."
         },
-        "xdm:URL": {
+        "ct:elementType": {
+          "title": "Element Type",
           "type": "string",
-          "format": "uri",
-          "meta:immutable": true,
-          "meta:usereditable": false,
-          "description": "A unique resource locator to read the asset in a content repository. This will make it easier to obtain the asset whithout the client understanding where the asset is manages and what APIs to call. This is similar to a HAL link but the semantic is simpler and more pursposeful.",
-          "examples": [
-            "https://we-retail.com/content/dam/we-retail/en/products/apparel/gloves/Gloves.jpg"
-          ]
+          "description": "The element's resource type.",
+          "meta:usereditable": false
+        },
+        "dc:title": {
+          "title": "Title",
+          "type": "string",
+          "description": "The title of the web element"
+        },
+        "dc:language": {
+          "type": "string",
+          "pattern": "^(((([A-Za-z]{2,3}(-([A-Za-z]{3}(-[A-Za-z]{3}){0,2}))?)|[A-Za-z]{4}|[A-Za-z]{5,8})(-([A-Za-z]{4}))?(-([A-Za-z]{2}|[0-9]{3}))?(-([A-Za-z0-9]{5,8}|[0-9][A-Za-z0-9]{3}))*(-([0-9A-WY-Za-wy-z](-[A-Za-z0-9]{2,8})+))*(-(x(-[A-Za-z0-9]{1,8})+))?)|(x(-[A-Za-z0-9]{1,8})+)|((en-GB-oed|i-ami|i-bnn|i-default|i-enochian|i-hak|i-klingon|i-lux|i-mingo|i-navajo|i-pwn|i-tao|i-tay|i-tsu|sgn-BE-FR|sgn-BE-NL|sgn-CH-DE)|(art-lojban|cel-gaulish|no-bok|no-nyn|zh-guoyu|zh-hakka|zh-min|zh-min-nan|zh-xiang)))$",
+          "description": "Specifies the language of this web element. the language property should conform to BPC 47, for example `en-GB`."
+        },
+        "ct:templatePath": {
+          "title": "Template path",
+          "type": "string",
+          "description": "The path to the component's template"
         },
         "xmp:keywords": {
           "type": "array",
@@ -53,15 +64,11 @@
   },
   "allOf": [
     {
-      "$ref": "http://ns.adobe.com/adobecloud/core/1.0#/definitions/common-properties"
-    },
-    {
       "$ref": "http://ns.adobe.com/adobecloud/core/1.0#/definitions/date-properties"
     },
     {
-      "$ref": "#/definitions/webasset"
+      "$ref": "#/definitions/webproperties"
     }
   ],
-  "required": ["repo:id", "xdm:URL"],
   "meta:status": "experimental"
 }

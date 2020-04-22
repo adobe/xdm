@@ -30,7 +30,7 @@
     "xdm:screenOrientation": "landscape"
   },
   "xdm:environment": {
-    "xdm:type": "browser",
+    "ct:elementType": "browser",
     "xdm:browserDetails": {
       "xdm:viewportWidth": 1920,
       "xdm:viewportHeight": 529
@@ -44,76 +44,76 @@
     "xdm:name": "https://ns.adobe.com/experience/alloy",
     "xdm:version": "0.0.13"
   },
-  "xdm:webAction": {
-    "xdm:actionType": "click",
-    "xdm:element": {
+  "ct:webAction": {
+    "ct:actionType": "click",
+    "ct:element": {
       "repo:name": "Gray lava rock formation",
       "repo:id": "image-9594301bf3",
-      "xdm:elementType": "image",
-      "xdm:asset": {
-        "xdm:url": "https://www.adobe.com/content/dam/core-components-examples/library/sample-assets/lava-rock-formation.jpg",
-        "repo:lastModifiedDate": "2020-03-26T12: 01: 40.105Z",
+      "ct:elementType": "core-components-examples/components/image",
+      "ct:asset": {
+        "xdm:URL": "https://www.adobe.com/content/dam/core-components-examples/library/sample-assets/lava-rock-formation.jpg",
+        "repo:modifyDate": "2020-03-26T12: 01: 40.105Z",
         "repo:name": "lava-rock-formation.jpg",
         "repo:id": "c58c09f6-e382-4698-bfbd-e8c8d37712c8",
         "dc:format": "image/jpeg",
-        "xdm:predictedTags": [
+        "xmp:machineKeywords": [
           {
-            "xmp:value": "white",
-            "confidence": 1
+            "xdm:value": "white",
+            "xdm:confidence": 1
           },
           {
-            "xmp:value": "winter",
-            "confidence": 0.8
+            "xdm:value": "winter",
+            "xdm:confidence": 0.8
           }
         ]
       },
-      "repo:parentId": "carousel-efa1eac711-item-9594301bf3"
+      "ct:parentId": "carousel-efa1eac711-item-9594301bf3"
     },
-    "xdm:context": [
+    "ct:context": [
       {
         "repo:id": "image-7d48db1522",
-        "xdm:type": "image",
-        "xdm:asset": {
-          "xdm:url": "https://www.adobe.com/content/dam/core-components-examples/library/sample-assets/lava-into-ocean.jpg",
-          "repo:lastModifiedDate": "2020-03-26T12: 01: 42.288Z",
+        "ct:elementType": "core-components-examples/components/image",
+        "ct:asset": {
+          "xdm:URL": "https://www.adobe.com/content/dam/core-components-examples/library/sample-assets/lava-into-ocean.jpg",
+          "repo:modifyDate": "2020-03-26T12: 01: 42.288Z",
           "repo:name": "lava-into-ocean.jpg",
           "repo:id": "0f54e1b5-535b-45f7-a46b-35abb19dd6bc",
           "dc:format": "image/jpeg",
-          "xdm:predictedTags": [
+          "xmp:machineKeywords": [
             {
-              "xmp:value": "white",
-              "confidence": 1
+              "xdm:value": "white",
+              "xdm:confidence": 1
             },
             {
-              "xmp:value": "winter",
-              "confidence": 0.8
+              "xdm:value": "winter",
+              "xdm:confidence": 0.8
             }
           ]
         },
-        "repo:parentId": "carousel-efa1eac711-item-7d48db1522"
+        "ct:parentId": "carousel-efa1eac711-item-7d48db1522"
       },
       {
         "repo:name": "Snowy mountain glacier",
         "repo:id": "image-d7eedd8d87",
-        "xdm:type": "image",
+        "ct:elementType": "core-components-examples/components/image",
         "xdm:asset": {
-          "xdm:url": "https://www.adobe.com/content/dam/core-components-examples/library/sample-assets/snowy-mountain-glacier.jpg",
-          "repo:lastModifiedDate": "2020-03-26T12: 01: 40.331Z",
+          "xdm:URL": "https://www.adobe.com/content/dam/core-components-examples/library/sample-assets/snowy-mountain-glacier.jpg",
+          "repo:modifyDate": "2020-03-26T12: 01: 40.331Z",
           "repo:name": "snowy-mountain-glacier.jpg",
           "repo:id": "45c6ee92-90e1-4af2-af69-b6dcbc7daeb7",
           "dc:format": "image/jpeg",
-          "xdm:predictedTags": [
+          "xmp:machineKeywords": [
             {
-              "xmp:value": "white",
-              "confidence": 1
+              "xdm:value": "white",
+              "xdm:confidence": 1
             },
             {
-              "xmp:value": "winter",
-              "confidence": 0.8
+              "xdm:value": "winter",
+              "xdm:confidence": 0.8
             }
           ]
         },
-        "repo:parentId": "carousel-efa1eac711-item-d7eedd8d87"
+        "ct:parentId": "carousel-efa1eac711-item-d7eedd8d87"
       }
     ]
   }

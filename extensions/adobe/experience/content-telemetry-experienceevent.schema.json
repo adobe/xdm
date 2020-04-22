@@ -13,8 +13,8 @@
   "meta:class": "https://ns.adobe.com/xdm/context/experienceevent",
   "meta:extends": [
     "https://ns.adobe.com/experience/aep-web-sdk-experienceevent",
-    "https://ns.adobe.com/experience/content-telemetry/webinfo",
-    "https://ns.adobe.com/experience/content-telemetry/commerce"
+    "https://ns.adobe.com/experience/content-telemetry/webinfo-experienceevent",
+    "https://ns.adobe.com/experience/content-telemetry/commerce-experienceevent"
   ],
   "description": "Contains details for web page content, web interaction and commerce activity",
   "definitions": {},
@@ -26,10 +26,10 @@
       "$ref": "https://ns.adobe.com/experience/aep-web-sdk-experienceevent"
     },
     {
-      "$ref": "https://ns.adobe.com/experience/content-telemetry/webinfo"
+      "$ref": "https://ns.adobe.com/experience/content-telemetry/webinfo-experienceevent"
     },
     {
-      "$ref": "https://ns.adobe.com/experience/content-telemetry/commerce"
+      "$ref": "https://ns.adobe.com/experience/content-telemetry/commerce-experienceevent"
     }
   ],
   "meta:status": "experimental"

@@ -15,10 +15,11 @@
   "definitions": {
     "webaction": {
       "properties": {
-        "xdm:actionType": {
+        "ct:actionType": {
           "title": "Action type",
           "description": "Type of action. The action can be user generated (click, expand) or dynamic (offer loaded).",
           "type": "string",
+          "enum": ["click", "show", "hide", "offer"],
           "meta:enum": {
             "click": "Click event has occured on the page. It can be link click or click on a web element.",
             "show": "Show event occured on container web elements (accordion, tabs)",
@@ -26,12 +27,12 @@
             "offer": "Personalized content (offer) was dynamically loaded in DOM"
           }
         },
-        "xdm:element": {
+        "ct:element": {
           "title": "Web Element",
           "description": "The target element metadata. For 'click' event this is the target element. For 'offer' event this is the web element corresponding to the loaded offer.",
           "$ref": "https://ns.adobe.com/experience/content-telemetry/webelement"
         },
-        "xdm:context": {
+        "ct:context": {
           "title": "Context",
           "description": "A collection of contextual elements for the actioned item. For 'click' event this represents the collection of contextual elements which could be the siblings or surrounding (unrelated) elements of the target. For 'offer' event this contains the targeted element encapsulating the offers",
           "type": "array",

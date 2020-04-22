@@ -1,23 +1,57 @@
 {
-  "repo:name": "Gray lava rock formation",
-  "repo:id": "image-9594301bf3",
-  "xdm:elementType": "core-components-examples/components/image",
-  "xdm:asset": {
-    "xdm:url": "https://www.adobe.com/content/dam/core-components-examples/library/sample-assets/lava-rock-formation.jpg",
-    "repo:lastModifiedDate": "2020-03-26T12: 01: 40.105Z",
-    "repo:name": "lava-rock-formation.jpg",
-    "repo:id": "c58c09f6-e382-4698-bfbd-e8c8d37712c8",
+  "repo:id": "image-35b19dd6bc",
+  "ct:elementType": "core/wcm/components/image/v2/image",
+  "repo:path": "/content/we-retail/us/en/products/equipment/snow-sports/midweight-fleece-gloves/jcr:content/root/product/image",
+  "repo:name": "Midweight Fleece Gloves",
+  "ct:asset": {
+    "repo:id": "1ae52f08-42e4-493d-a529-5d4773231bc4",
+    "repo:name": "Midweight Fleece.jpg",
+    "repo:path": "/content/dam/we-retail/en/products/apparel/gloves/Midweight%20Fleece.jpg",
+    "xdm:URL": "http://localhost:4502/content/dam/we-retail/en/products/apparel/gloves/Midweight%2520Fleece.jpg",
     "dc:format": "image/jpeg",
-    "xdm:predictedTags": [
+    "xmp:keywords": [
       {
-        "xmp:value": "white",
-        "confidence": 1
+        "xdm:value": "we-retail:activity/skiing",
+        "xdm:importance": 1
       },
       {
-        "xmp:value": "winter",
-        "confidence": 0.8
+        "xdm:value": "we-retail:apparel/gloves",
+        "xdm:importance": 1
+      },
+      {
+        "xdm:value": "we-retail:gender/men",
+        "xdm:importance": 0.9
+      },
+      {
+        "xdm:value": "we-retail:equipment",
+        "xdm:importance": 0.9
+      }
+    ],
+    "xmp:machineKeywords": [
+      {
+        "xdm:value": "gloves",
+        "xdm:confidence": 0.75
+      },
+      {
+        "xdm:value": "leather",
+        "xdm:confidence": 0.743
+      },
+      {
+        "xdm:value": "clothing",
+        "xdm:confidence": 0.727
+      },
+      {
+        "xdm:value": "winter",
+        "xdm:confidence": 0.725
+      },
+      {
+        "xdm:value": "protection",
+        "xdm:confidence": 0.632
+      },
+      {
+        "xdm:value": "hand",
+        "xdm:confidence": 0.605
       }
     ]
-  },
-  "repo:parentId": "carousel-efa1eac711-item-9594301bf3"
+  }
 }

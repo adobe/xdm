@@ -29,6 +29,11 @@
         "xdm:shippingAddress": {
           "title": "Shipping Address",
           "$ref": "https://ns.adobe.com/xdm/common/address",
+          "description": "A shipping postal address."
+        },
+        "xdm:mailingAddress": {
+          "title": "Mailing Address",
+          "$ref": "https://ns.adobe.com/xdm/common/address",
           "description": "A mailing postal address."
         }              
       }

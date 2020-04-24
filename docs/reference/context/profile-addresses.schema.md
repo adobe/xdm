@@ -30,9 +30,9 @@ Contains the various addresses a single profile can contain
     "xdm:country": "United States",
     "xdm:countryCode": "US",
     "schema:latitude": 37.3382,
-    "schema:longitude": 121.8863,
+    "schema:longitude": -121.8863,
     "xdm:status": "active",
-    "xdm:lastVerifiedDate": "2018-01-02"
+    "xdm:lastVerifiedDate": "2018-01-19"
   },
   "xdm:workAddress": {
     "@id": "https://data.adobe.io/entities/address/123",
@@ -44,9 +44,9 @@ Contains the various addresses a single profile can contain
     "xdm:country": "United States",
     "xdm:countryCode": "US",
     "schema:latitude": 37.3382,
-    "schema:longitude": 121.8863,
+    "schema:longitude": -121.8863,
     "xdm:status": "active",
-    "xdm:lastVerifiedDate": "2018-01-02"
+    "xdm:lastVerifiedDate": "2018-01-19"
   },
   "xdm:shippingAddress": {
     "@id": "https://data.adobe.io/entities/address/123",
@@ -58,9 +58,23 @@ Contains the various addresses a single profile can contain
     "xdm:country": "United States",
     "xdm:countryCode": "US",
     "schema:latitude": 37.3382,
-    "schema:longitude": 121.8863,
+    "schema:longitude": -121.8863,
     "xdm:status": "active",
-    "xdm:lastVerifiedDate": "2018-01-02"
+    "xdm:lastVerifiedDate": "2018-01-19"
+  },
+  "xdm:mailingAddress": {
+    "@id": "https://data.adobe.io/entities/address/123",
+    "xdm:primary": false,
+    "xdm:street1": "345 Park Ave",
+    "xdm:city": "San Jose",
+    "xdm:stateProvince": "US-CA",
+    "xdm:postalCode": "95110",
+    "xdm:country": "United States",
+    "xdm:countryCode": "US",
+    "schema:latitude": 37.3382,
+    "schema:longitude": -121.8863,
+    "xdm:status": "active",
+    "xdm:lastVerifiedDate": "2018-01-19"
   }
 }
 ```
@@ -70,6 +84,7 @@ Contains the various addresses a single profile can contain
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [xdm:homeAddress](#xdmhomeaddress) | Postal address | Optional | Profile Addresses (this schema) |
+| [xdm:mailingAddress](#xdmmailingaddress) | Postal address | Optional | Profile Addresses (this schema) |
 | [xdm:shippingAddress](#xdmshippingaddress) | Postal address | Optional | Profile Addresses (this schema) |
 | [xdm:workAddress](#xdmworkaddress) | Postal address | Optional | Profile Addresses (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -93,10 +108,29 @@ A home postal address.
 
 
 
+## xdm:mailingAddress
+### Mailing Address
+
+A mailing postal address.
+
+`xdm:mailingAddress`
+* is optional
+* type: Postal address
+* defined in this schema
+
+### xdm:mailingAddress Type
+
+
+* [Postal address](../common/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
+
+
+
+
+
 ## xdm:shippingAddress
 ### Shipping Address
 
-A mailing postal address.
+A shipping postal address.
 
 `xdm:shippingAddress`
 * is optional

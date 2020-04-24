@@ -23,9 +23,10 @@ In addition, a number of optional properties are made available that can be used
 
 ```json
 {
-  "xdm:firstName": "فلانة",
-  "xdm:lastName": "الفلانية",
-  "xdm:fullName": "فلانة الفلانية"
+  "xdm:firstName": "John",
+  "xdm:middleName": "S",
+  "xdm:lastName": "Doe",
+  "xdm:fullName": "John S. Doe"
 }
 ```
 
@@ -39,10 +40,9 @@ In addition, a number of optional properties are made available that can be used
 
 ```json
 {
-  "xdm:firstName": "John",
-  "xdm:middleName": "S",
-  "xdm:lastName": "Doe",
-  "xdm:fullName": "John S. Doe"
+  "xdm:firstName": "فلانة",
+  "xdm:lastName": "الفلانية",
+  "xdm:fullName": "فلانة الفلانية"
 }
 ```
 
@@ -56,6 +56,7 @@ In addition, a number of optional properties are made available that can be used
 | [xdm:fullName](#xdmfullname) | `string` | Optional | Person name (this schema) |
 | [xdm:lastName](#xdmlastname) | `string` | Optional | Person name (this schema) |
 | [xdm:middleName](#xdmmiddlename) | `string` | Optional | Person name (this schema) |
+| [xdm:suffix](#xdmsuffix) | `string` | Optional | Person name (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:courtesyTitle
@@ -149,6 +150,26 @@ Middle, alternative, or additional names supplied between the first name and las
 * defined in this schema
 
 ### xdm:middleName Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:suffix
+### Suffix
+
+A group of letters provided after a person's name to provide additional information. The `suffix` is used at the end of someones name. For example Jr., Sr., M.D., PhD, I, II, III, etc.
+
+`xdm:suffix`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:suffix Type
 
 
 `string`

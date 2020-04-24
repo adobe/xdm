@@ -90,7 +90,7 @@
         "xdm:lastVerifiedDate": {
           "title": "Last verified date",
           "type": "string",
-          "format": "email",
+          "format": "date",
           "description":
             "The date that the address was last verified as still associated to the person."
         }

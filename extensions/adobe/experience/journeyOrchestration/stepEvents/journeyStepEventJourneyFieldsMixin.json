@@ -23,27 +23,27 @@
           "type": "object",
           "properties": {
 
-            "https://ns.adobe.com/experience/journeyOrchestration/journeyId":{
+            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyId":{
               "title":"journeyId",
               "description":"Identifier for the given Journey.",
               "type":"string"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionId":{
+            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyVersionId":{
               "title":"journeyVersionId",
               "description":"Id of the journey version. This id represents the identity of a journey.",
               "type":"string"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/name":{
+            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/name":{
               "title":"name",
               "description":"Name of the Journey.",
               "type":"string"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/description":{
+            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/description":{
               "title":"description",
               "description":"Description of the Journey.",
               "type":"string"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/version":{
+            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/version":{
               "title":"version",
               "description":"Describes the Journey Version.",
               "type":"string"

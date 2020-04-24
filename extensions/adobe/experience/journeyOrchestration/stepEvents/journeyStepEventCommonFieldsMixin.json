@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyStepEventCommonFields",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Journey Orchestration Step veeent  Common Fields",
+  "title": "Journey Orchestration Step event  Common Fields",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
@@ -23,137 +23,137 @@
           "title": "Journey Orchestration for creating user journey",
           "type": "object",
           "properties": {
-            "https://ns.adobe.com/experience/journeyOrchestration/entrance":{
+            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/entrance":{
               "title":"entrance",
               "description":"Indicate if the user has entered the journey. If not present, assuming that the value is false.",
               "type":"boolean"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/reentrance":{
+            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/reentrance":{
               "title":"reentrance",
               "description":"Indicate if the user has reentered the journey with the same instance. If not present, assuming that the value is false.",
               "type":"boolean"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/instanceEnded":{
+            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/instanceEnded":{
               "title":"instanceEnded",
               "description":"Indicate if the instance is ended (sucessfully or not).",
               "type":"boolean"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/eventId":{
+            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/eventId":{
               "title":"eventId",
               "description":"Event id in processing, for the step processing.",
               "type":"string"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/nodeId":{
+            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/nodeId":{
               "title":"nodeId",
               "description":"client node id.",
               "type":"string"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/stepId":{
+            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/stepId":{
               "title":"stepId",
               "description":"Unique id of the step that is currently in processing.",
               "type":"string"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/stepName":{
+            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/stepName":{
               "title":"stepName",
               "description":"Name of the step that is currently in processing.",
               "type":"string"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/stepType":{
+            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/stepType":{
               "title":"stepType",
               "description":"Type of the step.",
               "type":"string"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/stepStatus":{
+            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/stepStatus":{
               "title":"stepStatus",
               "description":"Status of the journey step, representing in which shape the step is, when its processing has been done.",
               "type":"string"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/journeyId":{
+            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyId":{
               "title":"journeyId",
               "description":"ID of the journey.",
               "type":"string"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionId":{
+            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyVersionId":{
               "title":"journeyVersionId",
               "description":"ID of the journey version. This id represents the identity reference to the journey, in case of the journeyStepEvent.",
               "type":"string"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionName":{
+            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyVersionName":{
               "title":"journeyVersionName",
               "description":"Name of the journey version.",
               "type":"string"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/journeyVersion":{
+            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyVersion":{
               "title":"journeyVersion",
               "description":"Version of the journey version.",
               "type":"string"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/instanceId":{
+            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/instanceId":{
               "title":"instanceId",
               "description":"Internal ID of the journey instance.",
               "type":"string"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/externalKey":{
+            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/externalKey":{
               "title":"externalKey",
               "description":"External key extracted from the event to process it.",
               "type":"string"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/parentStepId":{
+            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/parentStepId":{
               "title":"parentStepId",
               "description":"Step ID of the parent of the current processed step in the instance.",
               "type":"string"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/parentStepName":{
+            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/parentStepName":{
               "title":"parentStepName",
               "description":"Step name of the parent of the current step.",
               "type":"string"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/parentTransitionId":{
+            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/parentTransitionId":{
               "title":"parentTransitionId",
               "description":"Id of the transition which has brought the instance to the processed step.",
               "type":"string"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/parentTransitionName":{
+            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/parentTransitionName":{
               "title":"parentTransitionName",
               "description":"Name of the transition which has brought the instance to the processed step.",
               "type":"string"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/inTest":{
+            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/inTest":{
               "title":"inTest",
               "description":"Whether this journey is in test mode or not.",
               "type":"boolean"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/processingTime":{
+            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/processingTime":{
               "title":"processingTime",
               "description":"Total time in milliseconds from the instance step entrance to the end of the processing.",
               "type":"integer"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/instanceType":{
+            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/instanceType":{
               "title":"instanceType",
               "description":"indicate the instance type, if it is batch or unitary.",
               "type":"string"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/recurrenceIndex":{
+            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/recurrenceIndex":{
               "title":"recurrenceIndex",
               "description":"Index of the recurrence if the journey is batch and recurring (first run has recurrenceIndex = 1).",
               "type":"integer"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/isBatchToUnitary":{
+            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/isBatchToUnitary":{
               "title":"isBatchToUnitary",
               "description":"Indicates if this unitary instance has been triggered from a batch instance.",
               "type":"boolean"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/batchExternalKey":{
+            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/batchExternalKey":{
               "title":"batchExternalKey",
               "description":" External Key for batch event.",
               "type":"string"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/batchInstanceId":{
+            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/batchInstanceId":{
               "title":"batchInstanceId",
               "description":" this is the batch instance id.",
               "type":"string"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/batchUnitaryBranchId":{
+            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/batchUnitaryBranchId":{
               "title":"batchUnitaryBranchId",
               "description":"If the instance has been triggered from a batch instance, unitary branch id.",
               "type":"string"

@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/context/opportunity-contactrole",
+  "$id": "https://ns.adobe.com/xdm/context/opportunity-contact-role",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "B2B Opportunity Contact Role",
   "type": "object",
@@ -16,11 +16,11 @@
   ],
   "description": "Opportunity Contact Role",
   "definitions": {
-    "opportunityContactRole": {
+    "opportunity-contact-role": {
       "properties": {
         "xdm:opportunityContactID": {
           "title": "opportunity ContactID",
-          "description": "Technical PK for Opportunity Contact.",
+          "description": "A Unique Key describing a combination of OpportunityID and contactID.",
           "type": "string"
         },
         "xdm:opportunityID": {
@@ -44,7 +44,7 @@
       "$ref": "https://ns.adobe.com/xdm/data/record"
     },
     {
-      "$ref": "#/definitions/opportunityContactRole"
+      "$ref": "#/definitions/opportunity-contact-role"
     },
     {
       "$ref":"https://ns.adobe.com/xdm/common/external-source-system-audit-details"

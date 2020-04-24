@@ -1,0 +1,66 @@
+{ 
+   "meta:license":[ 
+      "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+      "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+      "you may not use this file except in compliance with the License. You may obtain a copy",
+      "of the License at https://creativecommons.org/licenses/by/4.0/"
+   ],
+   "$id":"https://ns.adobe.com/xdm/context/profile-identity-properties",
+   "$schema":"http://json-schema.org/draft-06/schema#",
+   "title":"Profile Identity Properties",
+   "description":"Identity level properties for a given profile. Used to store identity specific information.",
+   "type":"object",
+   "meta:extensible":true,
+   "meta:abstract":true,
+   "meta:intendedToExtend":[ 
+      "https://ns.adobe.com/xdm/context/profile"
+   ],
+   "definitions":{ 
+      "profile-identity-properties":{ 
+         "properties":{ 
+            "xdm:identityProperties":{
+               "title" : "Identity level properties",
+               "type" : "object",
+               "meta:xdmType": "map",
+               "additionalProperties" : {
+                  "title": "User namespace",
+                  "type": "object",
+                  "meta:xdmType": "map",
+                  "additionalProperties" : {
+                     "type": "object",
+                     "title": "User Identity",
+                     "properties": {
+                        "xdm:identityConsent": {
+                           "type": "object",
+                           "title": "Identity level consent information",
+                           "properties": {
+                              "xdm:consentTimestamp":{
+                                 "title": "Timestamp of consent",
+                                 "description": "Timestamp (RFC3339) when this identity presented consent information",
+                                 "type": "string",
+                                 "format": "date-time"
+                              },
+                              "xdm:consentString":{
+                                 "title": "Captured consent information",
+                                 "description": "Consent string and its specification. This can help reading application to use appropriate library.",
+                                 "$ref": "https://ns.adobe.com/xdm/context/consentstring"
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "allOf":[ 
+      { 
+         "$ref":"https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+      },
+      { 
+         "$ref":"#/definitions/profile-identity-properties"
+      }
+   ],
+   "meta:status":"experimental"
+}

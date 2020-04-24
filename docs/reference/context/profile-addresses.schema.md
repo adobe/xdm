@@ -30,9 +30,9 @@ Contains the various addresses a single profile can contain
     "xdm:country": "United States",
     "xdm:countryCode": "US",
     "schema:latitude": 37.3382,
-    "schema:longitude": 121.8863,
+    "schema:longitude": -121.8863,
     "xdm:status": "active",
-    "xdm:lastVerifiedDate": "2018-01-02"
+    "xdm:lastVerifiedDate": "2018-01-19"
   },
   "xdm:workAddress": {
     "@id": "https://data.adobe.io/entities/address/123",
@@ -44,9 +44,9 @@ Contains the various addresses a single profile can contain
     "xdm:country": "United States",
     "xdm:countryCode": "US",
     "schema:latitude": 37.3382,
-    "schema:longitude": 121.8863,
+    "schema:longitude": -121.8863,
     "xdm:status": "active",
-    "xdm:lastVerifiedDate": "2018-01-02"
+    "xdm:lastVerifiedDate": "2018-01-19"
   },
   "xdm:shippingAddress": {
     "@id": "https://data.adobe.io/entities/address/123",
@@ -58,9 +58,9 @@ Contains the various addresses a single profile can contain
     "xdm:country": "United States",
     "xdm:countryCode": "US",
     "schema:latitude": 37.3382,
-    "schema:longitude": 121.8863,
+    "schema:longitude": -121.8863,
     "xdm:status": "active",
-    "xdm:lastVerifiedDate": "2018-01-02"
+    "xdm:lastVerifiedDate": "2018-01-19"
   },
   "xdm:mailingAddress": {
     "@id": "https://data.adobe.io/entities/address/123",
@@ -72,9 +72,9 @@ Contains the various addresses a single profile can contain
     "xdm:country": "United States",
     "xdm:countryCode": "US",
     "schema:latitude": 37.3382,
-    "schema:longitude": 121.8863,
+    "schema:longitude": -121.8863,
     "xdm:status": "active",
-    "xdm:lastVerifiedDate": "2018-01-02"
+    "xdm:lastVerifiedDate": "2018-01-19"
   }
 }
 ```

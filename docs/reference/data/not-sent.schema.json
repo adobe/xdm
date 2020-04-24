@@ -33,7 +33,7 @@
                     "const": "count"
                 },
                 "xdm:unit": {
-                    "const": null
+                    "const": ""
                 }
             }
         }
@@ -58,7 +58,7 @@
             "schema:name": "direct-marketing metric: notSent",
             "@id": "xdm:notSent",
             "xdm:measurement": "count",
-            "xdm:unit": null
+            "xdm:unit": ""
         }
     ]
 }

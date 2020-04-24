@@ -34,6 +34,11 @@
                     "type": "string",
                     "description": "Normally an abbreviation of a persons title, honorific, or salutation. The `courtesyTitle` is used in front of full or last name in opening texts. For example, Mr. Miss. or Dr."
                 },
+                "xdm:suffix": {
+                    "title": "Suffix",
+                    "type": "string",
+                    "description": "A group of letters provided after a person's name to provide additional information. The `suffix` is used at the end of someones name. For example Jr., Sr., M.D., PhD, I, II, III, etc."
+                },
                 "xdm:fullName": {
                     "title": "Full name",
                     "type": "string",
@@ -53,9 +58,10 @@
     "meta:status": "experimental",
     "examples": [
         {
-            "xdm:firstName": "فلانة",
-            "xdm:lastName": "الفلانية",
-            "xdm:fullName": "فلانة الفلانية"
+            "xdm:firstName": "John",
+            "xdm:middleName": "S",
+            "xdm:lastName": "Doe",
+            "xdm:fullName": "John S. Doe"
         },
         {
             "xdm:firstName": "张",
@@ -63,10 +69,9 @@
             "xdm:fullName": "张三"
         },
         {
-            "xdm:firstName": "John",
-            "xdm:middleName": "S",
-            "xdm:lastName": "Doe",
-            "xdm:fullName": "John S. Doe"
+            "xdm:firstName": "فلانة",
+            "xdm:lastName": "الفلانية",
+            "xdm:fullName": "فلانة الفلانية"
         }
     ]
 }

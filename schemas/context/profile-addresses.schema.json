@@ -16,26 +16,33 @@
   "definitions": {
     "profile-addresses": {
       "properties": {
-        "xdm:homeAddress": {
-          "title": "Home Address",
-          "$ref": "https://ns.adobe.com/xdm/common/address",
-          "description": "A home postal address."
-        },
-        "xdm:workAddress": {
-          "title": "Work Address",
-          "$ref": "https://ns.adobe.com/xdm/common/address",
-          "description": "A work postal address."
-        },
-        "xdm:shippingAddress": {
-          "title": "Shipping Address",
-          "$ref": "https://ns.adobe.com/xdm/common/address",
-          "description": "A shipping postal address."
-        },
-        "xdm:mailingAddress": {
-          "title": "Mailing Address",
-          "$ref": "https://ns.adobe.com/xdm/common/address",
-          "description": "A mailing postal address."
-        }              
+        "xdm:address": {
+          "title": "Address",
+          "type": "object",
+          "description": "",
+          "properties": {
+            "xdm:homeAddress": {
+              "title": "Home Address",
+              "$ref": "https://ns.adobe.com/xdm/common/address",
+              "description": "A home postal address."
+            },
+            "xdm:workAddress": {
+              "title": "Work Address",
+              "$ref": "https://ns.adobe.com/xdm/common/address",
+              "description": "A work postal address."
+            },
+            "xdm:shippingAddress": {
+              "title": "Shipping Address",
+              "$ref": "https://ns.adobe.com/xdm/common/address",
+              "description": "A shipping postal address."
+            },
+            "xdm:mailingAddress": {
+              "title": "Mailing Address",
+              "$ref": "https://ns.adobe.com/xdm/common/address",
+              "description": "A mailing postal address."
+            }  
+          }
+        }            
       }
     }
   },

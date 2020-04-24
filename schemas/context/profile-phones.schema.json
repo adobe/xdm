@@ -16,26 +16,33 @@
   "definitions": {
     "profile-phones": {
       "properties": {
-        "xdm:homePhone": {
-          "title": "Home Phone",
-          "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
-          "description": "Home phone number."
-        },
-        "xdm:mobilePhone": {
-          "title": "Mobile Phone",
-          "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
-          "description": "Mobile phone number."
-        },
-        "xdm:workPhone": {
-          "title": "Work Phone",
-          "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
-          "description": "Work phone number."
-        },
-        "xdm:faxPhone": {
-          "title": "Fax Phone",
-          "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
-          "description": "Fax phone number."
-        }                                      
+        "xdm:phone": {
+          "title": "Phone",
+          "type": "object",
+          "description": "",
+          "properties": {
+            "xdm:homePhone": {
+              "title": "Home Phone",
+              "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
+              "description": "Home phone number."
+            },
+            "xdm:mobilePhone": {
+              "title": "Mobile Phone",
+              "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
+              "description": "Mobile phone number."
+            },
+            "xdm:workPhone": {
+              "title": "Work Phone",
+              "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
+              "description": "Work phone number."
+            },
+            "xdm:faxPhone": {
+              "title": "Fax Phone",
+              "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
+              "description": "Fax phone number."
+            }
+          }     
+        }                                 
       }
     }
   },

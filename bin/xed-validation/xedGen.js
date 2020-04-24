@@ -25,7 +25,7 @@ if (program.input) {
     var input = path.normalize(program.input);
     glob(input + "/**/*.schema.json", function(er, files) {
         files.forEach(function(file) {
-              console.log('XED conversion processing---->' + file);
+              //console.log('XED conversion processing---->' + file);
               var converter = new Converter();
               if (program.outputJson) {
                   outputToJson(program.outputJson, converter);

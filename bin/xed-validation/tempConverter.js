@@ -22,9 +22,7 @@ const fse = require('fs-extra');
 const log = require('winston');
 const path = require('path');
 const EventEmitter = require('events').EventEmitter;
-const glob = require("glob");
 const rename = require('deep-rename-keys');
-const extensionFolder = "input/extensions"
 
 class Converter extends EventEmitter {
 
@@ -34,8 +32,6 @@ class Converter extends EventEmitter {
 
     delete(rawSchema['meta:intendedToExtend']);
     delete(rawSchema['meta:extends']);
-
-    var extensionFiles = glob.sync(extensionFolder + "/**/*schema.json"); //get all extension schema files location
 
     var dataTypeMappings = {
         "array": "array",
@@ -49,8 +45,6 @@ class Converter extends EventEmitter {
     var removeList = [
       "xdm/common/extensible.schema.json#/definitions/@context"
     ];
-
-
 
     traverse(rawSchema); //converting schema
 
@@ -70,6 +64,7 @@ class Converter extends EventEmitter {
                      .replace("http://schema.org/","xdm/external/schema/").replace("adobecloud/core/1.0", "xdm/external/repo/common")
                      .replace("http://www.iptc.org/","xdm/external/iptc/");
           o[i] = (o[i].indexOf("#/definitions/") == -1) ? o[i].toLowerCase() + ".schema.json" : o[i].replace("#/definitions/", ".schema.json#/definitions/");
+
           if (removeList.indexOf(o[i]) != -1) delete o[i];
 
         };

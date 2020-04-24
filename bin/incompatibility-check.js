@@ -181,7 +181,6 @@ function isDuplicatedKey(differences, brokenProperty, schema) {
     var res, dupField;
     for (var i in differences) {
         if (differences[i].kind == "N") {
-            console.log(differences[i])
             if (isDupChecked !== true) {
                 isDupChecked = true;
                 preProcess(schema);
@@ -190,8 +189,6 @@ function isDuplicatedKey(differences, brokenProperty, schema) {
                     dupField = res.substr(res.split("\"", 1).join("\"").length+1, res.split("\"", 2).join("\"").length-res.split("\"", 1).join("\"").length-1);
                 }
             }
-            console.log("dupField=="+dupField)
-            console.log("checking--"+differences[i].path[differences[i].path.length-1])
             if ((dupField !== undefined) && (dupField == differences[i].path[differences[i].path.length-1].toLowerCase())) {
                 brokenProperty.name = differences[i].path.join("/").replace("../", "");
                 return true;

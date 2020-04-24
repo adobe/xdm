@@ -90,14 +90,9 @@
         "xdm:lastVerifiedDate": {
           "title": "Last verified date",
           "type": "string",
-          "format": "date",
+          "format": "email",
           "description":
             "The date that the address was last verified as still associated to the person."
-        },
-        "xdm:statusReaSON": {
-          "title": "Status reason",
-          "type": "string",
-          "description": "A description of the current status."
         }
       }
     }

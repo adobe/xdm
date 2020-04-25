@@ -77,7 +77,7 @@ function checkBreakingChanges(files) {
                     errLogs.push(workingFile+' breaking changes found!!! Property "' + brokenProperty.name + '" can not be removed.\n');
                 }
 
-                if (isPropertyChanged(differences, brokenProperty)) { //check changed data types
+                if (isPropertyChanged(differences, brokenProperty)) { //check changed properties
                     if (brokenProperty.isFieldTypeBroken) {
                         errLogs.push(workingFile+' breaking changes found!!! Data type of property "' + brokenProperty.name + '" can not be changed.\n');
                     }

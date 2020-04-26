@@ -19,7 +19,7 @@
         "xdm:address": {
           "title": "Address",
           "type": "object",
-          "description": "",
+          "description": "Collection of various types of addresses for a person profile",
           "properties": {
             "xdm:homeAddress": {
               "title": "Home Address",

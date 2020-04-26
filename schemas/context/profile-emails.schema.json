@@ -19,7 +19,7 @@
         "xdm:email": {
           "title": "Email",
           "type": "object",
-          "description": "",
+          "description": "Collection of various types of emails for a person profile",
           "properties": {
             "xdm:personalEmail": {
               "title": "Personal Email",

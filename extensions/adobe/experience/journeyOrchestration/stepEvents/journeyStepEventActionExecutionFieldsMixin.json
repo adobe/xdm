@@ -23,9 +23,9 @@
           "title": "Journey Orchestration Action Execution Fields.",
           "type": "object",
           "properties": {
-            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/actionId":{
-              "title":"actionId",
-              "description":"Id of the action that is being executed.",
+            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/actionID":{
+              "title":"actionID",
+              "description":"ID of the action that is being executed.",
               "type":"string"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/actionName":{
@@ -74,18 +74,18 @@
               "type":"string"
             },
 
-            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/deliveryJobId":{
-              "title":"deliveryJobId",
-              "description":"This describes the deliveryJobId for the batch Journey.",
+            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/deliveryJobID":{
+              "title":"deliveryJobID",
+              "description":"This describes the delivery Job Id for the batch Journey.",
               "type":"string"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/batchDeliveryId":{
-              "title":"batchDeliveryId",
-              "description":"This describes the deliveryId for the batch Journey.",
+            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/batchDeliveryID":{
+              "title":"batchDeliveryID",
+              "description":"This describes the delivery Id for the batch Journey.",
               "type":"string"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/isFromSegmentTrigger ":{
-              "title":"deliveryJobId",
+            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/FromSegmentTrigger ":{
+              "title":"deliveryJobID",
               "description":"This describes if the Batch Journey triggered from Audisence Segment.",
               "type":"boolean"
             },

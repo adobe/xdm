@@ -22,7 +22,7 @@
           "title": "Journey Orchestration Step Event Identity Fields.",
           "type": "object",
           "properties": {
-            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/profileId": {
+            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/profileID": {
               "title": "Profile ID",
               "type": "string",
               "description": "profile identifier identifies the profile sent/used in a journey."

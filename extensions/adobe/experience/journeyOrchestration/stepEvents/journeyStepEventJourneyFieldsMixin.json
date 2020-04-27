@@ -23,13 +23,13 @@
           "type": "object",
           "properties": {
 
-            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyId":{
-              "title":"journeyId",
+            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyID":{
+              "title":"journeyID",
               "description":"Identifier for the given Journey.",
               "type":"string"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyVersionId":{
-              "title":"journeyVersionId",
+            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyVersionID":{
+              "title":"journeyVersionID",
               "description":"Id of the journey version. This id represents the identity of a journey.",
               "type":"string"
             },

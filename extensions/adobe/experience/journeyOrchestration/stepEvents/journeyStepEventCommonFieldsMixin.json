@@ -138,8 +138,8 @@
               "description":"Index of the recurrence if the journey is batch and recurring (first run has recurrenceIndex = 1).",
               "type":"integer"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/isBatchToUnitary":{
-              "title":"isBatchToUnitary",
+            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/batchToUnitary":{
+              "title":"batchToUnitary",
               "description":"Indicates if this unitary instance has been triggered from a batch instance.",
               "type":"boolean"
             },

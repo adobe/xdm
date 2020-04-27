@@ -84,8 +84,8 @@
               "description":"This describes the delivery Id for the batch Journey.",
               "type":"string"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/FromSegmentTrigger ":{
-              "title":"deliveryJobID",
+            "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/fromSegmentTrigger ":{
+              "title":"fromSegmentTrigger",
               "description":"This describes if the Batch Journey triggered from Audisence Segment.",
               "type":"boolean"
             },

@@ -17,6 +17,7 @@
     "https://ns.adobe.com/xdm/context/experienceevent-segmentmembership",
     "https://ns.adobe.com/xdm/context/experienceevent-environment-details",
     "https://ns.adobe.com/xdm/context/experienceevent-profile-stitch",
+    "https://ns.adobe.com/experience/experienceevent-edgeregion",
     "https://ns.adobe.com/experience/audiencemanager/experienceevent-all"
   ],
   "definitions": {
@@ -33,6 +34,9 @@
     },
     {
       "$ref": "https://ns.adobe.com/xdm/context/experienceevent-profile-stitch"
+    },
+    {
+      "$ref": "https://ns.adobe.com/experience/experienceevent-edgeregion"
     },
     {
       "$ref": "https://ns.adobe.com/experience/audiencemanager/experienceevent-all"

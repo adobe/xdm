@@ -16,7 +16,8 @@
   "meta:extends": [
     "https://ns.adobe.com/xdm/data/record-timeseries-events",
     "https://ns.adobe.com/xdm/context/identitymap",
-    "https://ns.adobe.com/xdm/context/profile-segmentation"
+    "https://ns.adobe.com/xdm/context/profile-segmentation",
+    "https://ns.adobe.com/xdm/context/profile-privacy"
   ],
   "definitions": {
     "unified-profile-union": {
@@ -43,6 +44,9 @@
     },
     {
       "$ref": "https://ns.adobe.com/xdm/context/profile-segmentation"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/profile-privacy"
     }
   ]
 }

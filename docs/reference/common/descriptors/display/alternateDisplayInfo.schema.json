@@ -42,6 +42,15 @@
                             "type": "string"
                         }
                     }
+                },
+                "meta:enum": {
+                    "title": "Extended meta:enum values",
+                    "type": "object",
+                    "patternProperties": {
+                        ".+": {
+                            "type": "string"
+                        }
+                    }
                 }
             },
             "anyOf": [
@@ -53,6 +62,11 @@
                 {
                     "required": [
                         "xdm:description"
+                    ]
+                },
+                {
+                    "required": [
+                        "meta:enum"
                     ]
                 }
             ],

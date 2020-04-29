@@ -1,0 +1,51 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/decisioning/placement-detail",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Decision Placement Detail",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "Detail about the entity defining and controlling the decisioning process. Decisions are made in the context of a placement. At any given time, the best option is re-evaluated, or ranked, based on the most current set of context variables, rules and constraints applicable for this placement.",
+  "definitions": {
+    "placement-detail-datatype": {
+      "properties": {
+        "xdm:id": {
+          "title": "Placement Identifier",
+          "type": "string",
+          "format": "uri-reference",
+          "description": "A unique identifier for the decision placement."
+        },
+        "repo:etag": {
+          "title": "Placement ETag",
+          "type": "string",
+          "description": "The revision that the placement object was at when the snapshot was taken."
+        },
+        "xdm:name": {
+          "title": "Placement Name",
+          "type": "string",
+          "description": "Placement name. The name is displayed in various user interfaces."
+        },
+        "xdm:channelID": {
+          "title": "Placement's Channel Identifier",
+          "type": "string",
+          "format": "uri-reference",
+          "description": "The channel in which proposition was made. The value is a valid Channel URI. See 'https://ns.adobe.com/xdm/channels/channel'"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/placement-detail-datatype"
+    },
+    {
+      "required": ["xdm:id"]
+    }
+  ]
+}

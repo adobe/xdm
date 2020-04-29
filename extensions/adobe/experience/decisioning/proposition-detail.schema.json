@@ -16,19 +16,25 @@
     "proposition-detail-datatype": {
       "properties": {
         "xdm:activity": {
-          "title": "Decision Activity",
+          "title": "Decision Activity Snapshot",
           "description": "Snapshot of the activity for which the proposition was made. The object contains at least the xdm:id property value which is the identifier of the decision activity.",
           "$ref": "https://ns.adobe.com/experience/decisioning/activity-detail"
         },
         "xdm:channel": {
+          "title": "DEPRECATED - Channel",
           "type": "string",
           "format": "uri-reference",
-          "title": "Channel",
-          "description": "The channel in which proposition was made. The value is a valid Channel URI. See 'https://ns.adobe.com/xdm/channels/channel'"
+          "meta:status": "deprecated",
+          "description": "DEPRECATED, use placement.channel instead. The channel in which proposition was made. The value is a valid Channel URI. See 'https://ns.adobe.com/xdm/channels/channel'"
+        },
+        "xdm:placement": {
+          "title": "Placement Snapshot",
+          "description": "Snapshot of the placement for which the proposition was made. The object contains at least the xdm:id property value which is the identifier of the placement.",
+          "$ref": "https://ns.adobe.com/experience/decisioning/placement-detail"
         },
         "xdm:selections": {
-          "title": "Selected Options",
-          "description": "Snapshots of the options that were selected for this activity. Those options are usually constrained. The objects contain a at least the xdm:id property value which is the identifier of an option. The intention is that either the selections or the fallback property is required.",
+          "title": "Selected Options' Snapshot",
+          "description": "Snapshot of the options that were selected by this activity. The objects contain a at least the xdm:id property value which is the identifier of an option. The intention is that either the selections or the fallback property is required.",
           "type": "array",
           "items": {
             "$ref": "https://ns.adobe.com/experience/decisioning/option-detail"
@@ -37,8 +43,8 @@
           "uniqueItems": true
         },
         "xdm:fallback": {
-          "title": "Fallback Option",
-          "description": "Snapshot of the fixed fallback option that was selected because no available option satisfied all constraints. The object contains at least the @id property value which is the URI of the fallback action. Note that the intention is that either the selections or the fallback property is required.",
+          "title": "Fallback Option Snapshot",
+          "description": "Snapshot of the fixed fallback option that was selected because no available option satisfied all constraints. The object contains at least the xdm:id property value which is the identifier of the fallback action. Note that the intention is that either the selections or the fallback property is required.",
           "$ref": "https://ns.adobe.com/experience/decisioning/option-detail"
         }
       }
@@ -51,6 +57,5 @@
     {
       "$ref": "#/definitions/proposition-detail-datatype"
     }
-  ],
-  "meta:status": "experimental"
+  ]
 }

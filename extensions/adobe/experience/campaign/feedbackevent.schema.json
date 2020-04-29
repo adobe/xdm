@@ -1,0 +1,244 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/campaign/feedbackevent",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Adobe Delivery Feedback Events",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "Contains all delivery event fields.",
+  "definitions": {
+    "feedbackevent": {
+      "properties": {
+        "https://ns.adobe.com/experience/campaign/feedback/type": {
+          "title": "Feedback Type",
+          "type": "string",
+          "description": "The type of message event."
+        },
+        "xdm:retryCount": {
+          "title": "Retry Count",
+          "type": "integer",
+          "description": "Number of failed attempts before the current event."
+        },
+        "https://ns.adobe.com/experience/campaign/feedback/delivery": {
+          "title": "The campaign activity originating a message to a recipient.",
+          "type": "object",
+          "properties": {
+            "xdm:id": {
+              "title": "Delivery ID",
+              "type": "string",
+              "description": "The campaign activity originating this message."
+            },
+            "xdm:campaignId": {
+              "title": "Campaign Id",
+              "type": "string",
+              "description": "Campaign of which this delivery was a part."
+            },
+            "xdm:from": {
+              "title": "From",
+              "type": "string",
+              "description": "Address used as a from/sender/caller address. Depending on the communication channel, the `address` has a different format.\n\n  * `email`: an email address.\n  * `textMessage` or `phone`: a shortcode or phone number."
+            },
+            "xdm:type": {
+              "title": "Delivery Type",
+              "type": "string",
+              "description": "Mode of delivery for the messages sent."
+            },
+            "xdm:label": {
+              "title": "Delivery Label",
+              "type": "string",
+              "description": "A human-friendly name of the campaign activity which is originating this message."
+            },
+            "xdm:name": {
+              "title": "Delivery Internal Name",
+              "type": "string",
+              "description": "A human-friendly identifier of the campaign activity which is originating this message."
+            }
+          }
+        },
+        "https://ns.adobe.com/experience/campaign/feedback/message": {
+          "title": "A single message sent to a recipient.",
+          "type": "object",
+          "properties": {
+            "xdm:id": {
+              "title": "Message Identifier",
+              "type": "string",
+              "description": "Identifier of the message."
+            },
+            "subject": {
+              "title": "Message Subject",
+              "type": "string",
+              "description": "Subject line of the message."
+            },
+            "size": {
+              "title": "Message Size",
+              "type": "integer",
+              "description": "Size in bytes of the message."
+            },
+            "recipient": {
+              "title": "The recipient of this message",
+              "type": "object",
+              "properties": {
+                "xdm:to": {
+                  "title": "To",
+                  "type": "string",
+                  "description": "Address used as a to/callee address. Depending on the communication channel, the `address` has a different format.\n\n  * `email`: an email address.\n  * `textMessage` or `phone`: a shortcode or phone number."
+                },
+                "xdm:type": {
+                  "title": "Type",
+                  "type": "string",
+                  "description": "Whether this message message event describes the BCC, CC or To recipient."
+                }
+              }
+            }
+          }
+        },
+        "https://ns.adobe.com/experience/campaign/feedback/messageFailure": {
+          "title": "Message Failure",
+          "type": "object",
+          "properties": {
+            "xdm:canonicalReason": {
+              "title": "Canonical Reason",
+              "type": "string",
+              "description": "Canonicalized text of the response returned by the remote server due to a failed delivery attempt."
+            },
+            "xdm:reason": {
+              "title": "Reason",
+              "type": "string",
+              "description": "Unmodified, exact response returned by the remote server due to a failed delivery attempt."
+            },
+            "xdm:errorCode": {
+              "title": "Error Code",
+              "type": "string",
+              "description": "Error code by which the remote server described a failed delivery attempt."
+            },
+            "xdm:bounceType": {
+              "title": "Bounce Type",
+              "type": "string",
+              "description": "Classifies whether it is a soft bounce or hard bounce."
+            },
+            "xdm:bounceClass": {
+              "title": "Bounce Class",
+              "type": "string",
+              "description": "Classification code for a given message."
+            }
+          }
+        },
+        "https://ns.adobe.com/experience/campaign/feedback/solutionContext": {
+          "title": "Solution Context",
+          "type": "array",
+          "description": "List of solution specific key value pairs.",
+          "items": {
+            "$ref": "https://ns.adobe.com/experience/analytics/keyvalue"
+          }
+        },
+        "https://ns.adobe.com/experience/campaign/feedback/channel": {
+          "title": "Delivery channel",
+          "type": "object",
+          "properties": {
+            "xdm:type": {
+              "title": "Channel Type",
+              "type": "string",
+              "description": "Classifies whether the channel is email, push, sms."
+            },
+            "email": {
+              "title": "E-mail Channel",
+              "type": "object",
+              "properties": {
+                "interactions": {
+                  "title": "User Interactions",
+                  "type": "object",
+                  "properties": {
+                    "xdm:spamType": {
+                      "title": "Spam Type",
+                      "type": "string",
+                      "description": "Type of spam report entered against this message (see RFC 5965 § 7.3)."
+                    },
+                    "xdm:reportedBy": {
+                      "title": "Reported By",
+                      "type": "string",
+                      "description": "E-mail Address of the entity reporting this message as spam."
+                    },
+                    "xdm:reportTo": {
+                      "title": "Report To",
+                      "type": "string",
+                      "description": "E-mail Address to which this spam report is to be delivered."
+                    },
+                    "xdm:userAgent": {
+                      "title": "User Agent",
+                      "type": "string",
+                      "description": "Value of the browser's User-Agent header."
+                    }
+                  }
+                },
+                "operationalContext": {
+                  "title": "Operational Context",
+                  "type": "object",
+                  "properties": {
+                    "xdm:outboundIP": {
+                      "title": "IP Address",
+                      "type": "string",
+                      "description": "Outbound IP address of the customer used to deliver the message."
+                    },
+                    "xdm:sendProtocol": {
+                      "title": "Send Protocol",
+                      "type": "string",
+                      "description": "Protocol by which the message is delivered."
+                    },
+                    "xdm:remoteIp": {
+                      "title": "IP Address",
+                      "type": "string",
+                      "oneOf": [
+                        {
+                          "format": "ipv4"
+                        },
+                        {
+                          "format": "ipv6"
+                        }
+                      ],
+                      "description": "IP address of the host to which this message is delivered."
+                    },
+                    "xdm:mtaHost": {
+                      "title": "Node Name",
+                      "type": "string",
+                      "description": "Name of the MTA Instance originating the events."
+                    },
+                    "xdm:mtaIp": {
+                      "title": "Sending IP Address",
+                      "type": "string",
+                      "oneOf": [
+                        {
+                          "format": "ipv4"
+                        },
+                        {
+                          "format": "ipv6"
+                        }
+                      ],
+                      "description": "IP address through which this message was sent."
+                    },
+                    "xdm:queueTime": {
+                      "title": "Queue time",
+                      "type": "number",
+                      "description": "Delay, expressed in milliseconds, between this message's injection into SparkPost and its delivery to the receiving domain; that is, the length of time this message spent in the outgoing queue."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/feedbackevent"
+    }
+  ],
+  "meta:status": "experimental"
+}

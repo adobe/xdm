@@ -18,6 +18,7 @@
       "properties": {
         "xdm:eventType": {
           "title": "Event Type",
+          "type": "string",
           "description": "Event type of customer data ingestion notification.",
           "enum": [
             "ing_load_success",
@@ -49,13 +50,18 @@
         "xdm:ingestionId": {
           "title": "Ingestion ID",
           "type": "string",
-          "description": "Unique identifier of customer data ingestion."
+          "description": "System generates Unique Identifier for a data ingestion instance."
+        },
+        "xdm:parentIngestionId": {
+          "title": "Parent Ingestion ID",
+          "type": "string",
+          "description": "In a flow where multiple insgestion stage, each stage employs its own ingestion identifier, this value represents the parent stage that resulted in the initiation of this ingestion. This can be used to correlate ingestion processes over multiple stages."
         },
         "xdm:customerIngestionId": {
           "title": "Customer Batch Identifier",
           "type": "string",
           "pattern": "^[0-9A-Za-z\\.\\-\\_/@]+$",
-          "description": "An externally generated identifier for this ingestion."
+          "description": "Customers can specify an externally generated identifier for this ingestion."
         },
         "xdm:datasetId": {
           "title": "Dataset ID",
@@ -91,9 +97,18 @@
           "description": "The unix timestamp (in milliseconds) when the batch processing action was completed. Completed - Started should yield the total processing time.",
           "maximum": 14500000000000
         },
+        "xdm:succesfulRecords": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Number of records successfully ingested."
+        },
+        "xdm:failedRecords": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Number of records failed to ingest."
+        },
         "xdm:errors": {
           "type": "array",
           "description": "A list of problems encountered during this ingestion process.",
+          "meta:status": "deprecated",
           "items": {
             "type": "object",
             "properties": {

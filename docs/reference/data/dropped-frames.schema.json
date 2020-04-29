@@ -33,7 +33,7 @@
                     "const": "count"
                 },
                 "xdm:unit": {
-                    "const": null
+                    "const": ""
                 }
             }
         }
@@ -58,7 +58,7 @@
             "schema:name": "metric: droppedFrames",
             "@id": "xdm:droppedFrames",
             "xdm:measurement": "count",
-            "xdm:unit": null
+            "xdm:unit": ""
         }
     ]
 }

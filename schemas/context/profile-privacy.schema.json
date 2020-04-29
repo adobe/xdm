@@ -70,6 +70,41 @@
                      }
                   }
                }
+            },
+            "xdm:identityPrivacyInfo":{
+               "title": "Identity level privacy information",
+               "description": "Captured privacy information for identities in profile.",
+               "type": "object",
+               "meta:xdmType": "map",
+               "additionalProperties" : {
+                  "title": "User namespace",
+                  "type": "object",
+                  "meta:xdmType": "map",
+                  "additionalProperties" : {
+                     "type": "object",
+                     "title": "User Identity",
+                     "properties": {
+                        "xdm:identityConsent": {
+                           "type": "object",
+                           "title": "Identity level consent information",
+                           "description": "Consent collected for an identity via consent management services.",
+                           "properties": {
+                              "xdm:consentTimestamp":{
+                                 "title": "Timestamp of consent",
+                                 "description": "Timestamp (RFC3339) when this identity presented consent information",
+                                 "type": "string",
+                                 "format": "date-time"
+                              },
+                              "xdm:consentString":{
+                                 "title": "Captured consent information",
+                                 "description": "Consent string and its specification. This can help reading application to use appropriate library.",
+                                 "$ref": "https://ns.adobe.com/xdm/context/consentstring"
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
             }
          }
       }

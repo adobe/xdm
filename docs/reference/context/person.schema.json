@@ -56,6 +56,37 @@
                     },
                     "description": "Gender identity of the person.\n",
                     "default": "not_specified"
+                },
+                "xdm:maritalStatus": {
+                    "title": "Marital Status",
+                    "type": "string",
+                    "enum": [
+                        "married",
+                        "single",
+                        "divorced",
+                        "widowed",
+                        "not_specified"
+                    ],
+                    "meta:enum": {
+                        "married": "Married",
+                        "single": "Single",
+                        "divorced": "Divorced",
+                        "widowed": "Widowed",
+                        "not_specified": "Not Specified"
+                    },
+                    "description": "Describes a person's relationship with a significant other.",
+                    "default": "not_specified"
+                },
+                "xdm:nationality": {
+                    "title": "Nationality",
+                    "type": "string",
+                    "pattern": "^[A-Z]{2}$",
+                    "description": "The legal relationship between a person and their state represented using the ISO 3166-1 Alpha-2 code."
+                },
+                "xdm:taxId": {
+                    "title": "Tax ID",
+                    "type": "string",
+                    "description": "The Tax / Fiscal ID of the person, e.g. the TIN in the US or the CIF/NIF in Spain."
                 }
             }
         }
@@ -77,16 +108,10 @@
                 "xdm:lastName": "Doe",
                 "xdm:fullName": "Jane F. Doe"
             },
-            "xdm:birthDayAndMonth": "01-03"
-        },
-        {
-            "xdm:name": {
-                "xdm:firstName": "Jane",
-                "xdm:middleName": "F",
-                "xdm:lastName": "Doe",
-                "xdm:fullName": "Jane F. Doe"
-            },
-            "xdm:birthDate": "1996-01-03"
+            "xdm:birthDate": "1996-01-19",
+            "xdm:gender": "female",
+            "xdm:maritalStatus": "single",
+            "xdm:nationality": "CA"
         }
     ]
 }

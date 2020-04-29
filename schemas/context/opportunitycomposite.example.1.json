@@ -3,14 +3,14 @@
   "xdm:opportunityType": "business",
   "xdm:accountID": "89765",
   "xdm:campaignID": "95678",
-  "externalSourceSystemAuditDetails":{
+  "xdm:extSourceSystemAudit":{
   "xdm:createdBy": "USER111",
-  "xdm:createdDate": "2018-01-02T15:52:25+00:00",
+  "xdm:createdDate": "2018-01-20T15:52:25+00:00",
   "xdm:lastUpdatedBy": "USER2222",
-  "xdm:lastUpdatedDate": "2018-01-02T15:52:25+00:00",
-  "xdm:lastActivityDate": "2018-01-02T15:52:25+00:00",
-  "xdm:lastReferencedDate": "2018-01-02T15:52:25+00:00",
-  "xdm:lastViewedDate": "2018-01-02T15:52:25+00:00"
+  "xdm:lastUpdatedDate": "2018-01-20T15:52:25+00:00",
+  "xdm:lastActivityDate": "2018-01-20T15:52:25+00:00",
+  "xdm:lastReferencedDate": "2018-01-20T15:52:25+00:00",
+  "xdm:lastViewedDate": "2018-01-20T15:52:25+00:00"
  },
   "xdm:opportunityName":"Apple_opportunity",
   "xdm:description":"Apple corporation AEP opportunity",
@@ -27,7 +27,7 @@
   "xdm:closed": false,
   "xdm:won": true,
   "xdm:deleted":false,
-  "xdm:closeDate": "2019-01-01T15:52:25+00:00",
+  "xdm:closeDate": "2019-01-20T15:52:25+00:00",
   "xdm:private": true,
   "xdm:contractID": "12345",
   "xdm:forecastCategory":"pipeline" ,

@@ -8,6 +8,7 @@ cp -r ../../extensions ./tempinput/
 ./cleaninput.sh #cleanup non-platform central repo xdms
 
 (echo "++++++++++Start XED conversion pre-processing.....++++++++++"; sleep 2)
+node schemaLocGen.js
 node tempGen.js -i tempinput/schemas -j xdm
 node tempGen.js -i tempinput/extensions -j xdm-extensions
 
@@ -25,9 +26,9 @@ returnCode=$?
 
 if [ $returnCode -ne 0 ]; then
   echo "There are schema validation errors!"
-  (rm -rf tempinput xdm xdm-extensions tempxed xed tags.json) #cleanup temp folders
+  (rm -rf tempinput xdm xdm-extensions tempxed xed tags.json schemaLoc.json) #cleanup temp folders
   exit 1
 else
   echo "All good"
-  (rm -rf tempinput xdm xdm-extensions tempxed xed tags.json) #cleanup temp folders
+  (rm -rf tempinput xdm xdm-extensions tempxed xed tags.json schemaLoc.json) #cleanup temp folders
 fi

@@ -25,7 +25,7 @@ if (program.input) {
     glob(input + "/**/*.json", function(er, files) {
         files.forEach(function(file) {
             if (file.indexOf(".example.") < 0) {
-				console.log('XED conversion preprocessing---->' + file);
+				//console.log('XED conversion preprocessing---->' + file);
 				var converter = new Converter();
 				if (program.outputJson) {
 					outputToJson(program.outputJson, converter);

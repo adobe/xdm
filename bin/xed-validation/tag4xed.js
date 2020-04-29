@@ -43,7 +43,7 @@ if (program.input) {
   var input = path.normalize(program.input);
   glob(input + "/**/*.json", function(er, files) {
     files.forEach(function(file) {
-      console.log('XED raw schema field tagging---->' + file);
+      //console.log('XED raw schema field tagging---->' + file);
       var rawSchema = JSON.parse(fs.readFileSync(file).toString());
       var tags = JSON.parse(fs.readFileSync(tagFile).toString());
       myTags = tags[rawSchema.$id+".schema.json"];

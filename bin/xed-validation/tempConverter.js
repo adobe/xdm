@@ -22,9 +22,7 @@ const fse = require('fs-extra');
 const log = require('winston');
 const path = require('path');
 const EventEmitter = require('events').EventEmitter;
-const glob = require("glob");
 const rename = require('deep-rename-keys');
-const extensionFolder = "input/extensions"
 
 class Converter extends EventEmitter {
 
@@ -34,8 +32,6 @@ class Converter extends EventEmitter {
 
     delete(rawSchema['meta:intendedToExtend']);
     delete(rawSchema['meta:extends']);
-
-    var extensionFiles = glob.sync(extensionFolder + "/**/*schema.json"); //get all extension schema files location
 
     var dataTypeMappings = {
         "array": "array",
@@ -50,8 +46,7 @@ class Converter extends EventEmitter {
       "xdm/common/extensible.schema.json#/definitions/@context"
     ];
 
-
-
+    var schemaLoc = JSON.parse(fs.readFileSync('schemaLoc.json'));
     traverse(rawSchema); //converting schema
 
     if (rawSchema.allOf) rawSchema.allOf = rawSchema.allOf.filter(value => Object.keys(value).length !== 0); //remove empty objs
@@ -66,10 +61,9 @@ class Converter extends EventEmitter {
         if (i == "xdm:identifier" || i == "xdm:classifier") delete o[i] //remove some others
 
         if (i == "$ref" && o[i].indexOf("#/definitions/") != 0) { //mapping to schema location
-          o[i] = o[i].replace("https://ns.adobe.com/experience","xdm-extensions/adobe/experience").replace("https://ns.adobe.com/", "").replace("http://ns.adobe.com/","")
-                     .replace("http://schema.org/","xdm/external/schema/").replace("adobecloud/core/1.0", "xdm/external/repo/common")
-                     .replace("http://www.iptc.org/","xdm/external/iptc/");
-          o[i] = (o[i].indexOf("#/definitions/") == -1) ? o[i].toLowerCase() + ".schema.json" : o[i].replace("#/definitions/", ".schema.json#/definitions/");
+
+          var schemaId = (o[i].indexOf("#/definitions/") != -1) ? o[i].substr(0, o[i].indexOf("#/definitions/")) : o[i];
+          o[i] = (o[i].indexOf("#/definitions/") == -1) ? schemaLoc[schemaId] : schemaLoc[schemaId]+o[i].substr(o[i].indexOf("#/definitions/"));
           if (removeList.indexOf(o[i]) != -1) delete o[i];
 
         };

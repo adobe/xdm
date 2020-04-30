@@ -50,6 +50,7 @@
             "^dsp:.*$": {},
             "^searchads:.*$": {},
             "^adcloud:.*$": {},
+            "^marketo:.*$": {},
             ".+://.+": {},
             "@.*": {}
           },
@@ -225,6 +226,11 @@
                   "type": "string",
                   "format": "url",
                   "const": "https://ns.adobe.com/adcloud/"
+                },
+                "marketo": {
+                  "type": "string",
+                  "format": "url",
+                  "const": "https://ns.adobe.com/marketo/"
                 }
               },
               "additionalProperties": false,
@@ -264,6 +270,7 @@
             "^dsp:.*$": {},
             "^searchads:.*$": {},
             "^adcloud:.*$": {},
+            "^marketo:.*$": {},
             ".+://.+": {}
           },
           "required": ["@context"],

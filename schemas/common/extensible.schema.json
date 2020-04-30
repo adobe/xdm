@@ -50,9 +50,6 @@
             "^dsp:.*$": {},
             "^searchads:.*$": {},
             "^adcloud:.*$": {},
-            "^sfdc:.*$": {},
-            "^cdm:.*$": {},
-            "^dynamics:.*$": {},
             "^marketo:.*$": {},
             ".+://.+": {},
             "@.*": {}
@@ -229,21 +226,6 @@
                   "type": "string",
                   "format": "url",
                   "const": "https://ns.adobe.com/adcloud/"
-                },
-                "sfdc": {
-                  "type": "string",
-                  "format": "url",
-                  "const": "https://ns.adobe.com/sfdc/"
-                },
-                "cdm": {
-                  "type": "string",
-                  "format": "url",
-                  "const": "https://ns.adobe.com/cdm/"
-                },
-                "dynamics": {
-                  "type": "string",
-                  "format": "url",
-                  "const": "https://ns.adobe.com/dynamics/"
                 },
                 "marketo": {
                   "type": "string",

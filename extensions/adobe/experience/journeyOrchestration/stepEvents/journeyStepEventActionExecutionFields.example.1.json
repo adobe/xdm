@@ -1,0 +1,16 @@
+{ 
+  "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/actionID":"testJrnyAction",
+  "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/actionName":"action",
+  "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/actionType":"Email",
+  "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/actionParameterized":true,
+  "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/actionExecutionTime":8433,
+  "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/actionExecutionError":"http",
+  "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/actionExecutionErrorCode":"200",
+  "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/actionExecutionOriginError":"capping",
+  "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/actionExecutionOriginCode":"500",
+  "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/actionBusinessType":"acs",
+  "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/deliveryJobID":"1",
+  "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/batchDeliveryID":"jv_13458",
+  "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/fromSegmentTrigger":true,
+  "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/actionSchedulerCount":345435       
+}

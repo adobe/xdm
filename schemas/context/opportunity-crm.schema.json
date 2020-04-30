@@ -7,13 +7,13 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/opportunity-crm",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "CRM Opportunity",
+  "title": "B2B Opportunity Additional Properties",
   "type": "object",
   "meta:extensible": true,
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/opportunity"
   ],
-  "description": "CRM specific opportunity fields.",
+  "description": "B2B specific opportunity properties.",
   "definitions": {
     "opportunity-crm": {
       "properties": {

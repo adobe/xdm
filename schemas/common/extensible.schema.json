@@ -234,7 +234,9 @@
                 }
               },
               "additionalProperties": false,
-              "required": ["xdm"]
+              "required": [
+                "xdm"
+              ]
             }
           },
           "patternProperties": {
@@ -273,7 +275,9 @@
             "^marketo:.*$": {},
             ".+://.+": {}
           },
-          "required": ["@context"],
+          "required": [
+            "@context"
+          ],
           "additionalProperties": false
         }
       ]

@@ -84,7 +84,7 @@
                      "type": "object",
                      "title": "User Identity",
                      "properties": {
-                        "xdm:identityConsent": {
+                        "xdm:identityIABConsent": {
                            "type": "object",
                            "title": "Identity level consent information",
                            "description": "Consent collected for an identity via consent management services.",

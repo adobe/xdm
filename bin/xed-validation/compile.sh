@@ -26,7 +26,7 @@ for xdm in $xdms; do #compile xdm schemas
 done
 
 if [ $failures -ne 0 ]; then
-  echo $failures below failed to validate
+  echo $failures schemas below failed to validate, please check above logs for detailed error
   for i in ${array[@]}
   do
   echo $i

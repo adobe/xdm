@@ -1,13 +1,13 @@
 {
   "name": "xdm",
-  "version": "0.9.11",
+  "version": "1.9.4",
   "description": "Experience Data Models",
   "main": "",
   "config": {
     "aem_user": "packageUser",
     "aem_password": "override me securely",
     "markdown-importer-version": "0.0.4",
-    "schemas": 266
+    "schemas": 270
   },
   "scripts": {
     "clean": "rm -rf docs/reference",
@@ -53,6 +53,7 @@
     "set-value": "^3.0.0",
     "shelljs": "^0.8.3",
     "shx": "^0.3.2",
-    "winston": "^2.4.3"
+    "winston": "^2.4.3",
+    "json-dup-key-validator": "^1.0.2"
   }
 }

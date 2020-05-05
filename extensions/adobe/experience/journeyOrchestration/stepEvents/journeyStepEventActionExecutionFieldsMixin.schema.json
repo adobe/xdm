@@ -1,0 +1,108 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyStepEventActionExecutionFields",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Journey Orchestration Step Event Action Execution Fields",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyStepEvent",
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
+  "description": "This Mixin will have Journey Action Metadata Fields.",
+  "definitions": {
+    "journeyStepEventActionExecutionFields": {
+      "properties": {
+        "https://ns.adobe.com/experience/journeyOrchestration/stepEvents": {
+          "title": "Journey Orchestration Action Execution Fields.",
+          "type": "object",
+          "properties": {
+            "https://ns.adobe.com/experience/journeyOrchestration/actionID":{
+              "title":"actionID",
+              "description":"ID of the action that is being executed.",
+              "type":"string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/actionName":{
+              "title":"actionName",
+              "description":"Name of the action If no name has been set, the stepName will be taken.",
+              "type":"string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/actionType":{
+              "title":"actionType",
+              "description":"Type of the action.",
+              "type":"string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/actionParameterized":{
+              "title":"actionParameterized",
+              "description":"Indicates if the action is parameterized or not.",
+              "type":"boolean"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/actionExecutionTime":{
+              "title":"actionExecutionTime",
+              "description":"The amount of time (in milliseconds) taken to execute a current action.",
+              "type":"integer"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/actionExecutionError":{
+              "title":"actionExecutionError",
+              "description":"Type of error that happens when the action is called.",
+              "type":"string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/actionExecutionErrorCode":{
+              "title":"actionExecutionErrorCode",
+              "description":"Code for action execution error. Present if the error has a code, such as an HTTP one.",
+              "type":"string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/actionExecutionOriginError":{
+              "title":"actionExecutionOriginError",
+              "description":"This Field tells about the timeout errors during retry for a Journey Action, such as HTTP,Capping.",
+              "type":"string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/actionExecutionOriginCode":{
+              "title":"actionExecutionOriginCode",
+              "description":"error code of the actionExecutionOriginError.",
+              "type":"string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/actionBusinessType":{
+              "title":"actionBusinessType",
+              "description":"What type of action it is. It could be ACS, Business  Action, SMS etc.",
+              "type":"string"
+            },
+
+            "https://ns.adobe.com/experience/journeyOrchestration/deliveryJobID":{
+              "title":"deliveryJobID",
+              "description":"This describes the delivery Job Id for the batch Journey.",
+              "type":"string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/batchDeliveryID":{
+              "title":"batchDeliveryID",
+              "description":"This describes the delivery Id for the batch Journey.",
+              "type":"string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/fromSegmentTrigger ":{
+              "title":"fromSegmentTrigger",
+              "description":"This describes if the Batch Journey triggered from Audisence Segment.",
+              "type":"boolean"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/actionSchedulerCount":{
+              "title":"actionSchedulerCount",
+              "description":"count of scheduler notification requests sent to the scheduler service during the step processing.",
+              "type":"integer"
+              }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/journeyStepEventActionExecutionFields"
+    }
+  ],
+  "meta:status": "experimental"
+}

@@ -60,5 +60,6 @@
       "$ref": "#/definitions/descriptor"
     }
   ],
+  "additionalProperties": true,
   "meta:status": "stabilizing"
 }

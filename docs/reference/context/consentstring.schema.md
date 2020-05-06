@@ -23,7 +23,7 @@ Consent String as presented by user along with standard information to help cons
   "xdm:consentStandardVersion": "2.0",
   "xdm:consentStringValue": "BObdrPUOevsguAfDqFENCNAAAAAmeAAA.PVAfDObdrA.DqFENCAmeAENCDA",
   "xdm:gdprApplies": true,
-  "xdm:gdprContainsPersonalData": false
+  "xdm:containsPersonalData": false
 }
 ```
 

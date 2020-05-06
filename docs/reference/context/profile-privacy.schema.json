@@ -84,7 +84,7 @@
                             "type": "object",
                             "title": "User Identity",
                             "properties": {
-                                "xdm:identityConsent": {
+                                "xdm:identityIABConsent": {
                                     "type": "object",
                                     "title": "Identity level consent information",
                                     "description": "Consent collected for an identity via consent management services.",
@@ -132,14 +132,14 @@
             "xdm:identityPrivacyInfo": {
                 "ECID": {
                     "11112222233333444": {
-                        "xdm:identityConsent": {
+                        "xdm:identityIABConsent": {
                             "xdm:consentTimestamp": "2020-04-11T05:05:05Z",
                             "xdm:consentString": {
                                 "xdm:consentStandard": "IAB TCF",
                                 "xdm:consentStandardVersion": "2.0",
                                 "xdm:consentStringValue": "BObdrPUOevsguAfDqFENCNAAAAAmeAAA.PVAfDObdrA.DqFENCAmeAENCDA",
                                 "xdm:gdprApplies": true,
-                                "xdm:gdprContainsPersonalData": false
+                                "xdm:containsPersonalData": false
                             }
                         }
                     }

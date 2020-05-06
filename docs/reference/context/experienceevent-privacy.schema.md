@@ -25,7 +25,7 @@ Experience event privacy schema captures consent information on the hit.
       "xdm:consentStandardVersion": "2.0",
       "xdm:consentStringValue": "BObdrPUOevsguAfDqFENCNAAAAAmeAAA.PVAfDObdrA.DqFENCAmeAENCDA",
       "xdm:gdprApplies": true,
-      "xdm:gdprContainsPersonalData": false
+      "xdm:containsPersonalData": false
     }
   ]
 }

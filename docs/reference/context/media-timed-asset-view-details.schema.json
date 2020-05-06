@@ -74,6 +74,31 @@
                     "title": "Quality of experience",
                     "$ref": "https://ns.adobe.com/xdm/context/media-timed-qoe",
                     "description": "Timed media properties related to the content playback's quality of experience (QoE)."
+                },
+                "xdm:fullScreen": {
+                    "title": "Full screen",
+                    "$ref": "https://ns.adobe.com/xdm/context/player-state",
+                    "description": "Timed media properties related to full screen player state."
+                },
+                "xdm:mute": {
+                    "title": "Mute",
+                    "$ref": "https://ns.adobe.com/xdm/context/player-state",
+                    "description": "Timed media properties related to mute player state."
+                },
+                "xdm:closeCaption": {
+                    "title": "Close caption",
+                    "$ref": "https://ns.adobe.com/xdm/context/player-state",
+                    "description": "Timed media properties related to close caption player state."
+                },
+                "xdm:pictureInPicture": {
+                    "title": "Picture in picture",
+                    "$ref": "https://ns.adobe.com/xdm/context/player-state",
+                    "description": "Timed media properties related to picture in picture player state."
+                },
+                "xdm:inFocus": {
+                    "title": "In focus",
+                    "$ref": "https://ns.adobe.com/xdm/context/player-state",
+                    "description": "Timed media properties related to in focus player state."
                 }
             },
             "required": [
@@ -102,7 +127,32 @@
             "xdm:broadcastNetwork": "nbpu",
             "xdm:adLoadType": "2",
             "xdm:sourceFeed": "http%3A%2F%2Fvod01.pure.centurylink.net%2Fhls%2Fvu%2F9083406%2FVUBX0280890106690980_38_3_M_HD.m3u8",
-            "xdm:sessionTimeout": 1800
+            "xdm:sessionTimeout": 1800,
+            "xdm:fullScreen": {
+                "xdm:playerStateSet": true,
+                "xdm:playerStateCount": 3,
+                "xdm:playerStateTime": 2520
+            },
+            "xdm:mute": {
+                "xdm:playerStateSet": false,
+                "xdm:playerStateCount": 5,
+                "xdm:playerStateTime": 80
+            },
+            "xdm:closeCaption": {
+                "xdm:playerStateSet": true,
+                "xdm:playerStateCount": 1,
+                "xdm:playerStateTime": 3
+            },
+            "xdm:pictureInPicture": {
+                "xdm:playerStateSet": true,
+                "xdm:playerStateCount": 1,
+                "xdm:playerStateTime": 2700
+            },
+            "xdm:inFocus": {
+                "xdm:playerStateSet": false,
+                "xdm:playerStateCount": 2,
+                "xdm:playerStateTime": 10
+            }
         }
     ]
 }

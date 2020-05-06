@@ -1,0 +1,41 @@
+{
+  "xdm:contactID": "11110000",
+  "xdm:sourceType": "SFDC",
+  "xdm:ownerID": "",
+  "xdm:accountID": "",
+  "xdm:userOwnerID": "",
+  "xdm:deleted": false,
+  "xdm:emailBouncedDate": "2018-12-20T15:52:25+00:00",
+  "xdm:emailBouncedReason": "Bounced Reason Here",
+  "xdm:emailBounced": true,
+  "xdm:leadSource": "Lead Source",
+  "xdm:contactDescription": "Contact description here",
+  "xdm:contactStatus": "Established",
+  "xdm:contactStatusDetail": "Contact has been established",
+  "xdm:contactType": "",
+  "xdm:userID": "",
+  "xdm:originalReferrer": "",
+  "xdm:originalSearchEngine": "",
+  "xdm:originalSearchPhrase": "",
+  "xdm:originalSourceInfo": "",
+  "xdm:originalSourceType": "",
+  "xdm:timezone": "",
+  "xdm:emailOptOutReason": "",
+  "xdm:phoneOptOutReason": "",
+  "xdm:extSourceSystemAudit": {
+    "xdm:createdBy": "USER111",
+    "xdm:createdDate": "2018-01-20T15:52:25+00:00",
+    "xdm:lastUpdatedBy": "USER2222",
+    "xdm:lastUpdatedDate": "2018-01-20T15:52:25+00:00",
+    "xdm:lastActivityDate": "2018-01-20T15:52:25+00:00",
+    "xdm:lastReferencedDate": "2018-01-20T15:52:25+00:00",
+    "xdm:lastViewedDate": "2018-01-20T15:52:25+00:00"
+  },
+   "xdm:identityMap": {
+    "EMAIL": [
+      {
+        "xdm:id": "jane@doe.com"
+      }
+    ]
+  }
+}

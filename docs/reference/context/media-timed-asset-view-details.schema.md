@@ -16,6 +16,7 @@ View details for the main content playback, present on all ads and chapters that
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Implementation details](implementationdetails.schema.md) `https://ns.adobe.com/xdm/context/implementationdetails`
   * [Timed media quality of experience](media-timed-qoe.schema.md) `https://ns.adobe.com/xdm/context/media-timed-qoe`
+  * [Player state information](player-state.schema.md) `https://ns.adobe.com/xdm/context/player-state`
 
 
 ## Primary asset view details Example
@@ -32,7 +33,32 @@ View details for the main content playback, present on all ads and chapters that
   "xdm:broadcastNetwork": "nbpu",
   "xdm:adLoadType": "2",
   "xdm:sourceFeed": "http%3A%2F%2Fvod01.pure.centurylink.net%2Fhls%2Fvu%2F9083406%2FVUBX0280890106690980_38_3_M_HD.m3u8",
-  "xdm:sessionTimeout": 1800
+  "xdm:sessionTimeout": 1800,
+  "xdm:fullScreen": {
+    "xdm:playerStateSet": true,
+    "xdm:playerStateCount": 3,
+    "xdm:playerStateTime": 2520
+  },
+  "xdm:mute": {
+    "xdm:playerStateSet": false,
+    "xdm:playerStateCount": 5,
+    "xdm:playerStateTime": 80
+  },
+  "xdm:closeCaption": {
+    "xdm:playerStateSet": true,
+    "xdm:playerStateCount": 1,
+    "xdm:playerStateTime": 3
+  },
+  "xdm:pictureInPicture": {
+    "xdm:playerStateSet": true,
+    "xdm:playerStateCount": 1,
+    "xdm:playerStateTime": 2700
+  },
+  "xdm:inFocus": {
+    "xdm:playerStateSet": false,
+    "xdm:playerStateCount": 2,
+    "xdm:playerStateTime": 10
+  }
 }
 ```
 
@@ -45,6 +71,11 @@ View details for the main content playback, present on all ads and chapters that
 | [xdm:broadcastChannel](#xdmbroadcastchannel) | `string` | Optional | Primary asset view details (this schema) |
 | [xdm:broadcastContentType](#xdmbroadcastcontenttype) | `string` | Optional | Primary asset view details (this schema) |
 | [xdm:broadcastNetwork](#xdmbroadcastnetwork) | `string` | Optional | Primary asset view details (this schema) |
+| [xdm:closeCaption](#xdmclosecaption) | Player state information | Optional | Primary asset view details (this schema) |
+| [xdm:fullScreen](#xdmfullscreen) | Player state information | Optional | Primary asset view details (this schema) |
+| [xdm:inFocus](#xdminfocus) | Player state information | Optional | Primary asset view details (this schema) |
+| [xdm:mute](#xdmmute) | Player state information | Optional | Primary asset view details (this schema) |
+| [xdm:pictureInPicture](#xdmpictureinpicture) | Player state information | Optional | Primary asset view details (this schema) |
 | [xdm:playerName](#xdmplayername) | `string` | Optional | Primary asset view details (this schema) |
 | [xdm:playerSDKVersion](#xdmplayersdkversion) | Implementation details | Optional | Primary asset view details (this schema) |
 | [xdm:qoe](#xdmqoe) | Timed media quality of experience | Optional | Primary asset view details (this schema) |
@@ -159,6 +190,101 @@ The programmer network name.
 
 `string`
 
+
+
+
+
+
+## xdm:closeCaption
+### Close caption
+
+Timed media properties related to close caption player state.
+
+`xdm:closeCaption`
+* is optional
+* type: Player state information
+* defined in this schema
+
+### xdm:closeCaption Type
+
+
+* [Player state information](player-state.schema.md) – `https://ns.adobe.com/xdm/context/player-state`
+
+
+
+
+
+## xdm:fullScreen
+### Full screen
+
+Timed media properties related to full screen player state.
+
+`xdm:fullScreen`
+* is optional
+* type: Player state information
+* defined in this schema
+
+### xdm:fullScreen Type
+
+
+* [Player state information](player-state.schema.md) – `https://ns.adobe.com/xdm/context/player-state`
+
+
+
+
+
+## xdm:inFocus
+### In focus
+
+Timed media properties related to in focus player state.
+
+`xdm:inFocus`
+* is optional
+* type: Player state information
+* defined in this schema
+
+### xdm:inFocus Type
+
+
+* [Player state information](player-state.schema.md) – `https://ns.adobe.com/xdm/context/player-state`
+
+
+
+
+
+## xdm:mute
+### Mute
+
+Timed media properties related to mute player state.
+
+`xdm:mute`
+* is optional
+* type: Player state information
+* defined in this schema
+
+### xdm:mute Type
+
+
+* [Player state information](player-state.schema.md) – `https://ns.adobe.com/xdm/context/player-state`
+
+
+
+
+
+## xdm:pictureInPicture
+### Picture in picture
+
+Timed media properties related to picture in picture player state.
+
+`xdm:pictureInPicture`
+* is optional
+* type: Player state information
+* defined in this schema
+
+### xdm:pictureInPicture Type
+
+
+* [Player state information](player-state.schema.md) – `https://ns.adobe.com/xdm/context/player-state`
 
 
 

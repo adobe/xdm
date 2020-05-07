@@ -22,7 +22,8 @@ Field to capture the details of the software used to collect the ExperienceEvent
 {
   "xdm:implementationDetails": {
     "xdm:name": "https://ns.adobe.com/experience/alloy",
-    "xdm:version": "0.11.0"
+    "xdm:version": "0.11.0",
+    "xdm:environment": "browser"
   }
 }
 ```

@@ -1,0 +1,47 @@
+{
+  "xdm:leadID": "",
+  "xdm:converted": true,
+  "xdm:sourceType": "SFDC",
+  "xdm:convertedAccountID": "",
+  "xdm:convertedContactID": "",
+  "xdm:convertedDate": "2018-12-20T15:52:25+00:00",
+  "xdm:convertedOpportunityID": "",
+  "xdm:deleted": true,
+  "xdm:leadDescription": "",
+  "xdm:emailBouncedDate": "2018-12-20T15:52:25+00:00",
+  "xdm:emailBouncedReason": "",
+  "xdm:jigsawContactID": "",
+  "xdm:lastTransferDate": "2018-12-20T15:52:25+00:00",
+  "xdm:ownerID": "",
+  "xdm:leadSource": "",
+  "xdm:leadStatus": "",
+  "xdm:leadPhotoUrl": "",
+  "xdm:unReadByOwner": false,
+  "xdm:prospectCompany": "",
+  "xdm:prospectName": {
+    "xdm:firstName": "Jane",
+    "xdm:middleName": "F",
+    "xdm:lastName": "Doe",
+    "xdm:fullName": "Jane F. Doe"
+  },
+  "xdm:prospectScore": 1,
+  "xdm:prospectSource": "",
+  "xdm:prospectWebsite": "http://abc.com",
+  "xdm:annualRevenue": 10000000.00,
+  "xdm:extSourceSystemAudit": {
+    "xdm:createdBy": "USER111",
+    "xdm:createdDate": "2018-01-20T15:52:25+00:00",
+    "xdm:lastUpdatedBy": "USER2222",
+    "xdm:lastUpdatedDate": "2018-01-20T15:52:25+00:00",
+    "xdm:lastActivityDate": "2018-01-20T15:52:25+00:00",
+    "xdm:lastReferencedDate": "2018-01-20T15:52:25+00:00",
+    "xdm:lastViewedDate": "2018-01-20T15:52:25+00:00"
+  },
+   "xdm:identityMap": {
+    "EMAIL": [
+      {
+        "xdm:id": "jane@doe.com"
+      }
+    ]
+  }  
+}

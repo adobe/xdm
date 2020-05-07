@@ -1,0 +1,172 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/profile-lead-crm",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "B2B Lead ",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "description": "This mixin is used to capture information regarding a B2B Lead.",
+  "definitions": {
+    "profile-lead-crm": {
+      "properties": {
+        "xdm:leadID": {
+          "title": "Lead Id",
+          "description": "Lead id.",
+          "type": "string"
+        },
+        "xdm:sourceType": {
+          "title": "Lead Source Type",
+          "description": "Lead source type.",
+          "type": "string"
+        },		
+        "xdm:converted": {
+          "title": "Converted Indicator",
+          "description": "Indicates whether the Lead was successfully converted or not.",
+          "type": "boolean"
+        },
+        "xdm:convertedAccountID": {
+          "title": "Converted Account ID",
+          "description": "Account Id if the lead was successfully converted.",
+          "type": "string"
+        },
+        "xdm:convertedContactID": {
+          "title": "Converted Contact ID",
+          "description": "Contact Id if the lead was successfully converted.",
+          "type": "string"
+        },
+        "xdm:convertedDate": {
+          "title": "Converted Date",
+          "description": "Date of conversion if the lead was successfully converted.",
+          "type": "string",
+          "format": "date-time"
+        },
+        "xdm:convertedOpportunityID": {
+          "title": "Converted Opportunity ID",
+          "description": "Opportunity Id if the lead was successfully converted.",
+          "type": "string"
+        },
+        "xdm:deleted": {
+          "title": "Deleted Indicator",
+          "description": "Indicator whether the lead was deleted.",
+          "type": "boolean"
+        },
+        "xdm:leadDescription": {
+          "title": "Lead Description",
+          "description": "Lead description.",
+          "type": "string"
+        },
+        "xdm:emailBouncedDate": {
+          "title": "Email Bounced Date",
+          "description": "If bounce management is activated and an email is sent to a contact, provides the date when the email was bounced.",
+          "type": "string",
+          "format": "date-time"
+        },
+        "xdm:emailBouncedReason": {
+          "title": "Email Bounced Reason",
+          "description": "If bounce management is activated and an email is sent to a contact, provides the reason for bounced email.",
+          "type": "string"
+        },
+        "xdm:jigsawContactID": {
+          "title": "Jigsaw Contact Id",
+          "description": "Lead’s Data.com ID if available.",
+          "type": "string"
+        },
+        "xdm:lastTransferDate": {
+          "title": "Last Transfer Date",
+          "description": "Last transfer date.",
+          "type": "string",
+          "format": "date-time"
+        },
+        "xdm:ownerID": {
+          "title": "Owner ID",
+          "description": "Owner id.",
+          "type": "string"
+        },
+        "xdm:leadSource": {
+          "title": "Lead Source",
+          "description": "Field recording what source the lead originated from.",
+          "type": "string"
+        },
+        "xdm:leadStatus": {
+          "title": "Lead Status",
+          "description": "Field recording the current marketing/sales status of the lead.",
+          "type": "string"
+        },
+        "xdm:leadPhotoUrl": {
+          "title": "Lead Photo Url",
+          "description": "Lead Photo url.",
+          "type": "string"
+        },
+        "xdm:unReadByOwner": {
+          "title": "Read By Owner Indicator",
+          "description": "Read by owner indicator.",
+          "type": "boolean"
+        },
+        "xdm:ProspectAddress": {
+          "title": "Prospect Address",
+          "description": "Prospect address.",
+          "$ref": "https://ns.adobe.com/xdm/common/address"
+        },
+        "xdm:prospectCompany": {
+          "title": "Prospect Company",
+          "description": "Prospect company.",
+          "type": "string"
+        },
+        "xdm:prospectName": {
+          "title": "Prospect Name",
+          "description": "Prospect name.",
+          "$ref": "https://ns.adobe.com/xdm/context/person-name"
+        },
+        "xdm:prospectScore": {
+          "title": "Prospect Score",
+          "description": "Prospect score.",
+          "type": "number"
+        },
+        "xdm:prospectSource": {
+          "title": "Prospect Source",
+          "description": "Prospect source.",
+          "type": "string"
+        },
+        "xdm:prospectWebsite": {
+          "title": "Prospect Website",
+          "description": "Prospect website.",
+          "type": "string",
+          "format": "uri"
+        },
+        "xdm:annualRevenue": {
+          "title": "Annual Revenue",
+          "description": "Estimated Amount of annual revenue of the lead organization.",
+          "type": "number"
+        },
+        "xdm:leadOrganization": {
+          "title": "Organization Attributes",
+          "description": "Organization attributes if the lead is an organization.",
+          "$ref": "https://ns.adobe.com/xdm/common/organization"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/profile-lead-crm"
+    },
+	{
+      "$ref": "https://ns.adobe.com/xdm/context/identitymap"
+    },	
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
+    }
+  ],
+  "required": ["xdm:leadID", "xdm:identityMap"],
+  "meta:status": "experimental"
+}

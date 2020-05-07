@@ -34,7 +34,7 @@ Repository implementations can generate notifications or alerts when the consume
 | [xdm:consumed](#xdmconsumed) | `number` | `https://ns.adobe.com/xdm/content/repository-policies/quota#/definitions/quota` |
 | [xdm:enforcement](#xdmenforcement) | `enum` | `https://ns.adobe.com/xdm/content/repository-policies/quota#/definitions/quota` |
 | [xdm:unit](#xdmunit) | `const` | `https://ns.adobe.com/xdm/content/repository-policies/quota#/definitions/quota` |
-| [xdm:userId](#xdmuserId) | `const` | `https://ns.adobe.com/xdm/content/repository-policies/quota#/definitions/quota` |
+| [xdm:userId](#xdmuserid) | `string` | `https://ns.adobe.com/xdm/content/repository-policies/quota#/definitions/quota` |
 
 ## xdm:amount
 
@@ -110,6 +110,10 @@ The value of this property **must** be equal to:
 "Bytes"
 ```
 
+
+
+
+
 ## xdm:userId
 
 
@@ -117,6 +121,12 @@ The value of this property **must** be equal to:
 * is optional
 * type: `string`
 * defined in this schema
+
+### xdm:userId Type
+
+
+`string`
+
 
 
 

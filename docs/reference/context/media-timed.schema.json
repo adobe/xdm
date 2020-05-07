@@ -170,7 +170,17 @@
                 "xdm:broadcastNetwork": "ntwu",
                 "xdm:adLoadType": "2",
                 "xdm:sourceFeed": "http%3A%2F%2Fvod01.this.link.net%2Fhls%2Fvu%2F9083406%2FVUBX02804879t475=90980_38_3_M_HD.m3u8",
-                "xdm:sessionTimeout": 1800
+                "xdm:sessionTimeout": 1800,
+                "xdm:fullScreen": {
+                    "xdm:playerStateSet": true,
+                    "xdm:playerStateCount": 3,
+                    "xdm:playerStateTime": 2520
+                },
+                "xdm:mute": {
+                    "xdm:playerStateSet": false,
+                    "xdm:playerStateCount": 5,
+                    "xdm:playerStateTime": 80
+                }
             },
             "xdm:mediaChapter": {
                 "xdm:chapterAssetReference": {

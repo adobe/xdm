@@ -42,6 +42,6 @@
       "$ref": "#/definitions/activity-type"
     }
   ],
-  "required": ["xdm:activityType.ID"],
+  "required": ["xdm:ID"],
   "meta:status": "experimental"
 } 

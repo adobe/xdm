@@ -100,14 +100,9 @@
           "description": "Captures the headers of the email for diagnosis"
         },
         "xdm:incomingMessage": {
-          "title": "Inbound/Outbound Message ",
+          "title": "Inbound or Outbound Message ",
           "type": "boolean",
-          "description": "A flag to represent whether a message was sent or recieved",
-          "meta:enum": {
-            "inbound": "Inbound",
-            "outbound": "Outbound",
-            "internal": "Internal communication message"
-          }
+          "description": "A flag to represent whether a message was sent or recieved"
         },
         "xdm:firstOpenDate": {
           "title": "First time the email was opened by the receiver",

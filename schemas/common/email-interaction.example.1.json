@@ -20,7 +20,7 @@
     "r@google.com"
   ],
   "xdm:headers": "Return-Path: <abc@google.com> X-SpamCatcher-Score: 1 [X] Received: from [136.167.40.119]",
-  "xdm:incomingMessage": "Outbound",
+  "xdm:incomingMessage": false,
   "xdm:firstOpenDate": "2020-05-18T05:00:00+00:00",
   "xdm:lastOpenDate": "2020-05-20T00:12:28+00:00",
   "xdm:tracked": true

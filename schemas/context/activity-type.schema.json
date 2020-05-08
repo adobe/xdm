@@ -23,7 +23,8 @@
                 "description": "Activity Type unique identifer for a given task or a business event",
                 "type": "string"
               }
-            }
+            },
+            "required":["xdm:ID"]
           }
         }
       }
@@ -42,6 +43,5 @@
       "$ref": "#/definitions/activity-type"
     }
   ],
-  "required": ["xdm:ID"],
   "meta:status": "experimental"
 } 

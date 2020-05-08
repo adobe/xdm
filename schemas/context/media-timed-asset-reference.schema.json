@@ -22,7 +22,7 @@
           "description": "Identifier of the content, which can be used to tie back to other industry or CMS IDs."
         },
         "dc:title": {
-          "title": "Media name",
+          "title": "Media content name",
           "type": "string",
           "description": "The friendly, human-readable name of the timed media asset."
         },
@@ -32,7 +32,7 @@
           "$ref": "https://id3.org/id3v2.4/audio"
         },
         "xmpDM:duration": {
-          "title": "Media length runtime",
+          "title": "Media content length",
           "type": "integer",
           "description": "Length of primary media asset in seconds."
         },

@@ -20,7 +20,7 @@
           "description": "The name of the player responsible for rendering the ad."
         },
         "xdm:index": {
-          "title": "Ad index in pod",
+          "title": "Ad In Pod Position",
           "type": "integer",
           "description": "The index of the ad inside the parent ad break, for example, the first ad has index 0 and the second ad has index 1."
         },

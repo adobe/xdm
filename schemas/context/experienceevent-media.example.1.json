@@ -49,33 +49,15 @@
         "xdm:sourceFeed": "http%3A%2F%2Fvod01.url.net%2Fhls%2Fvu%2F9083406%2FVUBX0280890106690980_38_3_M_HD.m3u8",
         "xdm:sessionTimeout": 1800,
         "xdm:QOE": {
-          "xdm:errors": {
-            "xdm:value": 0
-          },
-          "xdm:buffers": {
-            "xdm:value": 4
-          },
-          "xdm:bufferTime": {
-            "xdm:value": 5
-          },
-          "xdm:stalls": {
-            "xdm:value": 0
-          },
-          "xdm:stallTime": {
-            "xdm:value": 0
-          },
-          "xdm:bitrateChanges": {
-            "xdm:value": 0
-          },
-          "xdm:bitrateAverage": {
-            "xdm:value": 320
-          },
-          "xdm:droppedFrames": {
-            "xdm:value": 2
-          },
-          "xdm:timeToStart": {
-            "xdm:value": 3
-          },
+          "xdm:errors": 0,
+          "xdm:buffers": 4,
+          "xdm:bufferTime": 5,
+          "xdm:stalls": 0,
+          "xdm:stallTime": 0,
+          "xdm:bitrateChanges": 0,
+          "xdm:bitrateAverage": 320,
+          "xdm:droppedFrames": 2,
+          "xdm:timeToStart": 3,
           "xdm:mediaSdkErrors": [
             "300",
             "500.300.200"
@@ -90,66 +72,26 @@
         },
         "xdm:downloadedPlayback": false
       },
-      "xdm:impressions": {
-        "xdm:value": 1
-      },
-      "xdm:completes": {
-        "xdm:value": 0
-      },
-      "xdm:timePlayed": {
-        "xdm:value": 80
-      },
-      "xdm:federated": {
-        "xdm:value": 0
-      },
-      "xdm:starts": {
-        "xdm:value": 1
-      },
-      "xdm:mediaSegmentView": {
-        "xdm:value": 1
-      },
-      "xdm:dropBeforeStart": {
-        "xdm:value": 0
-      },
-      "xdm:totalTimePlayed": {
-        "xdm:value": 190
-      },
-      "xdm:uniqueTimePlayed": {
-        "xdm:value": 80
-      },
-      "xdm:averageMinuteAudience": {
-        "xdm:value": 1.03
-      },
-      "xdm:adCount": {
-        "xdm:value": 3
-      },
-      "xdm:chapterCount": {
-        "xdm:value": 1
-      },
-      "xdm:progress10": {
-        "xdm:value": 1
-      },
-      "xdm:firstQuartiles": {
-        "xdm:value": 1
-      },
-      "xdm:midpoints": {
-        "xdm:value": 1
-      },
-      "xdm:thirdQuartiles": {
-        "xdm:value": 1
-      },
-      "xdm:progress95": {
-        "xdm:value": 0
-      },
-      "xdm:resumes": {
-        "xdm:value": 0
-      },
-      "xdm:pauses": {
-        "xdm:value": 0
-      },
-      "xdm:pauseTime": {
-        "xdm:value": 0
-      },
+      "xdm:impressions": 1,
+      "xdm:completes": 0,
+      "xdm:timePlayed": 80,
+      "xdm:federated": 0,
+      "xdm:starts": 1,
+      "xdm:mediaSegmentView": 1,
+      "xdm:dropBeforeStart": 0,
+      "xdm:totalTimePlayed": 190,
+      "xdm:uniqueTimePlayed": 80,
+      "xdm:averageMinuteAudience": 1.03,
+      "xdm:adCount": 3,
+      "xdm:chapterCount": 1,
+      "xdm:progress10": 1,
+      "xdm:firstQuartiles": 1,
+      "xdm:midpoints": 1,
+      "xdm:thirdQuartiles": 1,
+      "xdm:progress95": 0,
+      "xdm:resumes": 0,
+      "xdm:pauses": 0,
+      "xdm:pauseTime": 0,
       "xdm:idp": "MyTVOnline",
       "xdm:mediaAuth": "Sample auth"
     }

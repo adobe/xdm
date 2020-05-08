@@ -59,18 +59,10 @@
         "xdm:index": 0,
         "xdm:offset": 0
       },
-      "xdm:impressions": {
-        "xdm:value": 1
-      },
-      "xdm:completes": {
-        "xdm:value": 1
-      },
-      "xdm:timePlayed": {
-        "xdm:value": 44
-      },
-      "xdm:federated": {
-        "xdm:value": 0
-      }
+      "xdm:impressions": 1,
+      "xdm:completes": 1,
+      "xdm:timePlayed": 44,
+      "xdm:federated": 0
     }
   }
 }

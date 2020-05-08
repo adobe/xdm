@@ -27,7 +27,7 @@
           "description": "The friendly name of the chapter and or segment."
         },
         "xmpDM:duration": {
-          "title": "Chapter length or duration",
+          "title": "Chapter length",
           "type": "integer",
           "description": "The length of the chapter, in seconds."
         }

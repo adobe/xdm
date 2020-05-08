@@ -21,7 +21,8 @@ Repository implementations can generate notifications or alerts when the consume
   "xdm:enforcement": "hard",
   "xdm:amount": 1099511627776,
   "xdm:consumed": 21474836480,
-  "xdm:unit": "Bytes"
+  "xdm:unit": "Bytes",
+  "xdm:userId": "xyz@AdobeID"
 }
 ```
 
@@ -33,6 +34,7 @@ Repository implementations can generate notifications or alerts when the consume
 | [xdm:consumed](#xdmconsumed) | `number` | `https://ns.adobe.com/xdm/content/repository-policies/quota#/definitions/quota` |
 | [xdm:enforcement](#xdmenforcement) | `enum` | `https://ns.adobe.com/xdm/content/repository-policies/quota#/definitions/quota` |
 | [xdm:unit](#xdmunit) | `const` | `https://ns.adobe.com/xdm/content/repository-policies/quota#/definitions/quota` |
+| [xdm:userId](#xdmuserid) | `string` | `https://ns.adobe.com/xdm/content/repository-policies/quota#/definitions/quota` |
 
 ## xdm:amount
 
@@ -107,6 +109,24 @@ The value of this property **must** be equal to:
 ```json
 "Bytes"
 ```
+
+
+
+
+
+## xdm:userId
+
+
+`xdm:userId`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:userId Type
+
+
+`string`
+
 
 
 

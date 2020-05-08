@@ -10,5 +10,31 @@
   "xdm:broadcastNetwork": "nbpu",
   "xdm:adLoadType": "2",
   "xdm:sourceFeed": "http%3A%2F%2Fvod01.pure.centurylink.net%2Fhls%2Fvu%2F9083406%2FVUBX0280890106690980_38_3_M_HD.m3u8",
-  "xdm:sessionTimeout": 1800
+  "xdm:sessionTimeout": 1800,
+  "xdm:fullScreen": {
+    "xdm:playerStateSet": true,
+    "xdm:playerStateCount": 3,
+    "xdm:playerStateTime": 2520
+  },
+  "xdm:mute": {
+    "xdm:playerStateSet": false,
+    "xdm:playerStateCount": 5,
+    "xdm:playerStateTime": 80
+  },
+  "xdm:closeCaption": {
+    "xdm:playerStateSet": true,
+    "xdm:playerStateCount": 1,
+    "xdm:playerStateTime": 3
+  },
+  "xdm:pictureInPicture": {
+    "xdm:playerStateSet": true,
+    "xdm:playerStateCount": 1,
+    "xdm:playerStateTime": 2700
+  },
+  "xdm:inFocus": {
+    "xdm:playerStateSet": false,
+    "xdm:playerStateCount": 2,
+    "xdm:playerStateTime": 10
+  }
+
 }

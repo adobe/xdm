@@ -20,7 +20,8 @@ Details about the SDK, library, or service used in an application or web page im
 ```json
 {
   "xdm:name": "https://ns.adobe.com/experience/analytics/appmeasurement",
-  "xdm:version": "2.7.0"
+  "xdm:version": "2.7.0",
+  "xdm:environment": "browser"
 }
 ```
 
@@ -28,9 +29,33 @@ Details about the SDK, library, or service used in an application or web page im
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
+| [xdm:environment](#xdmenvironment) | `enum` | Optional | Implementation details (this schema) |
 | [xdm:name](#xdmname) | `string` | Optional | Implementation details (this schema) |
 | [xdm:version](#xdmversion) | `string` | Optional | Implementation details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
+
+## xdm:environment
+### Environment
+
+The environment of the implementation
+
+`xdm:environment`
+* is optional
+* type: `enum`
+* defined in this schema
+
+The value of this property **must** be equal to one of the [known values below](#xdmenvironment-known-values).
+
+### xdm:environment Known Values
+| Value | Description |
+|-------|-------------|
+| `browser` | Web Browser |
+| `app` | Application |
+| `server` | Server |
+| `iot` | Internet of Things Device |
+
+
+
 
 ## xdm:name
 ### Name
@@ -66,7 +91,7 @@ SDK or endpoint identifier. All SDKs or endpoints are identified through a URI, 
 ## xdm:version
 ### Version
 
-The version identifier of the API, for example, 'h.18'.
+The version identifier of the API, e.g h.18.
 
 `xdm:version`
 * is optional

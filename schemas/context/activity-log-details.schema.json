@@ -1,0 +1,247 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/activity-log-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "XDM Activity",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:metaIntendToExtend": [
+    "https://ns.adobe.com/xdm/context/activity-log"
+  ],
+  "description": "An XDM Activity representing task or a business event",
+  "definitions": {
+    "activity-log-details": {
+      "properties": {
+        "xdm:activityDueDateTime": {
+          "title": "Activity Due date time",
+          "description": "Due date and time by which the activity should complete",
+          "type": "string",
+          "format": "date-time"
+        },
+        "xdm:activityStartDateTime": {
+          "title": "Activity Start date time",
+          "description": "The date and time when the activity in the form of task/business event got started",
+          "type": "string",
+          "format": "date-time"
+        },
+        "xdm:activityEndDateTime": {
+          "title": "Activity end date time",
+          "description": "The date and time when the activity in the form of task/business event got completed",
+          "type": "string",
+          "format": "date-time"
+        },
+        "xdm:task": {
+          "title": "Activity is task or business event",
+          "description": "A boolean flag to represent whether the activity is a task of Event Management",
+          "type": "boolean"
+        },
+        "required":["xdm:task"],
+        "xdm:completed": {
+          "title": "Activity completed or still open to work on",
+          "type": "boolean",
+          "description": "A boolean flag to indicate whether the activity is completed"
+        },
+        "xdm:deleted": {
+          "title": "Activity soft deletion",
+          "type": "boolean",
+          "description": "A boolean flag to indicate whether the activity is soft deleted"
+        },
+        "xdm:highPriority": {
+          "title": "Activity is a high priority task",
+          "description": "A boolean flag to indicate whether the activity is of high priority",
+          "type": "boolean"
+        },
+        "xdm:accountID": {
+          "title": "Business Account",
+          "description": "Business Account Unique Identifier",
+          "type": "string"
+        },
+        "xdm:division": {
+          "title": "Division of Account Enterprise",
+          "description": "name of division of the account",
+          "type": "string"
+        },
+        "xdm:ownerID": {
+          "title": "Ownership of the Activity",
+          "description": "The owner which is responsible for completing the task or event management",
+          "type": "string"
+        },
+        "xdm:userID": {
+          "title": "User who is performing the activity",
+          "description": "The user initiating the activity",
+          "type": "string"
+        },
+        "xdm:entity": {
+          "title": "Entity",
+          "description": "Holds Entity Name and its ID on which activity action is based upon.",
+          "properties": {
+            "xdm:name": {
+              "title": "Entity Name",
+              "description": "Holds Entity Name",
+              "type": "string"
+            },
+            "xdm:ID": {
+              "title": "Entity tuple ID",
+              "description": "Holds Entity Tuple's Primary Identifier",
+              "type": "string"
+            }
+          },
+          "required": [
+            "xdm:name",
+            "xdm:ID"
+          ]
+        },
+        "xdm:sourceType": {
+          "title": "Activity Source Type",
+          "description": "The upstream source from where the activity record has been syncronized",
+          "type": "string"
+        },
+        "xdm:asset": {
+          "title": "Object asset",
+          "description": "Asset details for its type and ID",
+          "properties": {
+            "xdm:name": {
+              "title": "Asset Type",
+              "description": "Holds Asset Type",
+              "type": "string"
+            },
+            "xdm:ID": {
+              "title": "Asset ID",
+              "description": "Holds Asset Identifier",
+              "type": "string"
+            }
+          },
+          "required": [
+            "xdm:mame",
+            "xdm:ID"
+          ]
+        },
+        "xdm:campaign": {
+          "title": "Campaign details",
+          "description": "Campaign amd its relevant associated details",
+          "properties": {
+            "xdm:ID": {
+              "title": "Campaign ID",
+              "description": "Unique identifer for Campaign.",
+              "type": "string"
+            },
+            "xdm:type": {
+              "title": "Campaign Type",
+              "description": "The type of campaign for which audience is invited",
+              "type": "string"
+            },
+            "xdm:member": {
+              "properties": {
+                "xdm:type": {
+                  "title": "Member type",
+                  "description": "Whether the Member is a lead or a contact",
+                  "type": "string"
+                },
+                "xdm:ID": {
+                  "title": "ID of the Member",
+                  "description": "Member's ID",
+                  "type": "string"
+                }
+              }
+            },
+            "xdm:program": {
+              "properties": {
+                "xdm:name": {
+                  "title": "Program Name associated with the campaign",
+                  "description": "Unique identifer for Campaign.",
+                  "type": "string"
+                },
+                "xdm:type": {
+                  "title": "Program Type",
+                  "description": "The type of program which is associated with the campaign",
+                  "type": "string"
+                },
+                "xdm:step": {
+                  "properties": {
+                    "xdm:number": {
+                      "title": "Workflow step number",
+                      "description": "Program's Workflow Step Number",
+                      "type": "int"
+                    },
+                    "xdm:status": {
+                      "title": "Program Workflow Step Status",
+                      "description": "Program's workflow name of the step status",
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "xdm:activityDescription": {
+          "title": "Activity description",
+          "description": "Activity self detailed description",
+          "type": "string"
+        },
+        "xdm:activitySubject": {
+          "title": "Subject of the activity",
+          "description": "Shortened version of the activityDescription",
+          "type": "string"
+        },
+        "xdm:activityStatus": {
+          "title": "Activity Status",
+          "description": "Current Status of the activity",
+          "type": "string"
+        },
+        "xdm:activityPriority": {
+          "title": "Activity priority",
+          "description": "Current priority of the activity",
+          "type": "string"
+        },
+        "xdm:interactionEvents": {
+          "title": "Interaction Events",
+          "description": "collection of various forms of interactions",
+          "properties": {
+            "xdm:phoneCall": {
+              "title": "Phone interaction",
+              "$ref": "https://ns.adobe.com/xdm/common/phoneinteraction",
+              "description": "Contextual information captured during a given phone conversation"
+            },
+            "xdm:meeting": {
+              "title": "Meeting",
+              "description": "Meeting details with location co-ordinates",
+              "properties": {
+                "xdm:meetingDetails": {
+                  "title": "Meeting interaction",
+                  "$ref": "https://ns.adobe.com/xdm/common/meetinginteraction",
+                  "description": "Contextual information captured for a online/offline meeting"
+                },
+                "xdm:location": {
+                  "title": "Physical location of the event management if meeting is offline ",
+                  "$ref": "https://ns.adobe.com/xdm/context/place",
+                  "description": "Physical location where the meeting is taking place"
+                }
+              }
+            },
+            "xdm:email": {
+              "title": "Email interaction",
+              "$ref": "https://ns.adobe.com/xdm/common/emailinteraction",
+              "description": "Contextual information captured during any given email message"
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/activity-log-details"
+    }
+  ],
+  "meta:status": "experimental"
+}

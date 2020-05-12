@@ -16,7 +16,7 @@
     ],
     "description": "This mixin is used to capture information regarding push notifications including mobile application and device details.",
     "definitions": {
-        "push-notification-details": {
+        "profile-push-notification-details": {
             "properties": {
                 "xdm:pushDetails": {
                     "title": "Push details",

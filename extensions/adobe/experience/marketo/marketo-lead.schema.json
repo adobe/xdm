@@ -30,11 +30,6 @@
           "description": "Source System Id.",
           "type": "string"
         },
-        "marketo:personID": {
-          "title": "Marketo Person Id",
-          "description": "Marketo person id.",
-          "type": "string"
-        },
         "marketo:contactID": {
           "title": "Marketo Contact Id",
           "description": "Marketo contact id.",
@@ -59,11 +54,6 @@
           "title": "Total Proposed Name Count",
           "description": "Total proposed name count.",
           "type": "number"
-        },
-        "marketo:leadAddress": {
-          "title": "Lead Address",
-          "description": "Lead address.",
-          "$ref": "https://ns.adobe.com/xdm/common/address"
         },
         "marketo:leadScore": {
           "title": "Lead Score",

@@ -36,7 +36,7 @@
           "marketo:bypassTrigger": {
             "title": "Bypass Trigger",
             "description": "Bypass Trigger",
-            "type": "int"
+            "type": "integer"
           }
         }
       }

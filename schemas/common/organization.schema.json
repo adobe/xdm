@@ -34,6 +34,11 @@
           "type": "number",
           "description": "The number of employees the at the organization."
         },
+        "xdm:annualRevenue": {
+          "title": "Annual Revenue",
+          "description": "Estimated amount of annual revenue of the organization.",
+          "type": "number"
+        },
         "xdm:industry": {
           "title": "Industry",
           "type": "string",

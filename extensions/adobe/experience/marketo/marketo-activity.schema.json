@@ -24,18 +24,18 @@
         },
         "marketo:attributeValues": {
           "title": "Attribute Values",
-          "type":"object",
-          "meta:xdmType":"map",
-          "additionalProperties":{
-            "title":"Value defined for each Key",
+          "type": "object",
+          "meta:xdmType": "map",
+          "additionalProperties": {
+            "title": "Value defined for each Key",          
             "description": "Map describing open set of key value pairs which are not composed semantically",
-            "type":"string"
+            "type": "string"            
           }
         },
         "marketo:bypassTrigger": {
-              "title": "Bypass Trigger",
-              "description": "Bypass Trigger",
-              "type": "int"
+          "title": "Bypass Trigger",
+          "description": "Bypass Trigger",
+          "type": "integer"
         }
       }
     }

@@ -41,7 +41,6 @@
           "description": "A boolean flag to represent whether the activity is a task of Event Management",
           "type": "boolean"
         },
-        "required":["xdm:task"],
         "xdm:completed": {
           "title": "Activity completed or still open to work on",
           "type": "boolean",

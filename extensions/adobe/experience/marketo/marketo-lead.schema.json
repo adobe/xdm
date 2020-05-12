@@ -84,6 +84,6 @@
       "$ref": "#/definitions/marketo-lead"
     }
   ],
-  "required": ["marketo:leadID"],  
+  "required": ["marketo:leadID"],
   "meta:status": "experimental"
 }

@@ -10,7 +10,6 @@
   "xdm:lastTransferDate": "2018-12-20T15:52:25+00:00",
   "xdm:leadSource": "",
   "xdm:unReadByOwner": false,
-  "xdm:annualRevenue": 10000000.00,
   "xdm:lead": {
     "xdm:type": "",
     "xdm:ownerID": "",
@@ -31,7 +30,7 @@
     "xdm:lastReferencedDate": "2018-01-20T15:52:25+00:00",
     "xdm:lastViewedDate": "2018-01-20T15:52:25+00:00"
   },
-   "xdm:identityMap": {
+  "xdm:identityMap": {
     "EMAIL": [
       {
         "xdm:id": "jane@doe.com"

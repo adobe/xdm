@@ -148,7 +148,7 @@
             "xdm:numberOfResponses": {
               "title": "Responses expected",
               "description": "Capture how many responses are expected for this campaign",
-              "type": "int"
+              "type": "integer"
             },
             "xdm:revenue": {
               "title": "Revenue Expected",
@@ -165,27 +165,27 @@
             "xdm:numberOfRequestsSent": {
               "title": "Number of Requests sent",
               "description": "Number of requests sent to persons for participation",
-              "type": "int"
+              "type": "integer"
             },
             "xdm:numberOfResponses": {
               "title": "Recieved Responses",
               "description": "Number of responses recieved out of number of requests sent",
-              "type": "int"
+              "type": "integer"
             },
             "xdm:numberOfLeads": {
               "title": "Number of leads",
               "description": "Number of leads to whom the requests have sent",
-              "type": "int"
+              "type": "integer"
             },
             "xdm:numberOfConvertedLeads": {
               "title": "Converted Leads",
               "description": "Number to indicate that how many leads got converted by this campaign",
-              "type": "int"
+              "type": "integer"
             },
             "xdm:numberOfContacts": {
               "title": "Number of Contacts",
               "description": "Number to indicate that the request was sent to how many contacts",
-              "type": "int"
+              "type": "integer"
             }
           }
         },
@@ -197,7 +197,7 @@
             "xdm:numberOfOpportunities": {
               "title": "Number of Opportunities",
               "description": "Total number of opportunities associated with the campaign",
-              "type": "int"
+              "type": "integer"
             },
             "xdm:amountOfAllOpportunities": {
               "title": "Amount for all opportunities",
@@ -207,7 +207,7 @@
             "xdm:numberOfWonOpportunities": {
               "title": "Number of won Opportunities",
               "description": "Number of converted opportunities",
-              "type": "int"
+              "type": "integer"
             },
             "xdm:amountOFWonOpportunities": {
               "title": "Amount of Won Opportunities",
@@ -234,32 +234,32 @@
             "xdm:numberOfRequestsSent": {
               "title": "Number of Requests sent",
               "description": "Number of Requests sent to participants at each level",
-              "type": "int"
+              "type": "integer"
             },
             "xdm:numberOfResponses": {
               "title": "Number of responses",
               "description": "Number of responses recieved by the participants at each level of the hierarchy",
-              "type": "int"
+              "type": "integer"
             },
             "xdm:numberOfLeads": {
               "title": "Number of leads",
               "description": "Number of leads to whom the requests have sent",
-              "type": "int"
+              "type": "integer"
             },
             "xdm:numberOfConvertedLeads": {
               "title": "Converted Leads",
               "description": "Number to indicate that how many leads got converted by this campaign",
-              "type": "int"
+              "type": "integer"
             },
             "xdm:numberOfContacts": {
               "title": "Number of Contacts",
               "description": "Number to indicate that the request was sent to how many contacts",
-              "type": "int"
+              "type": "integer"
             },
             "xdm:numberOfOpportunities": {
               "title": "Number of Opportunities",
               "description": "Total number of opportunities associated with the campaign",
-              "type": "int"
+              "type": "integer"
             },
             "xdm:amountOfAllOpportunities": {
               "title": "Amount for all opportunities",
@@ -269,7 +269,7 @@
             "xdm:numberOfWonOpportunities": {
               "title": "Number of won Opportunities",
               "description": "Number of converted opportunities",
-              "type": "int"
+              "type": "integer"
             },
             "xdm:amountOFWonOpportunities": {
               "title": "Amount of Won Opportunities",

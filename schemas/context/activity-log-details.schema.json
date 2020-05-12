@@ -164,7 +164,7 @@
                 },
                 "xdm:step": {
                   "properties": {
-                    "xdm:number": {
+                    "xdm:stepNumber": {
                       "title": "Workflow step number",
                       "description": "Program's Workflow Step Number",
                       "type": "int"

@@ -11,7 +11,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:metaIntendToExtend": [
+  "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/activity-log"
   ],
   "description": "An XDM Activity representing task or a business event",

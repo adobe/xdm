@@ -105,7 +105,7 @@
           "title": "Object asset",
           "description": "Asset details for its type and ID",
           "properties": {
-            "xdm:name": {
+            "xdm:type": {
               "title": "Asset Type",
               "description": "Holds Asset Type",
               "type": "string"
@@ -117,7 +117,7 @@
             }
           },
           "required": [
-            "xdm:mame",
+            "xdm:type",
             "xdm:ID"
           ]
         },

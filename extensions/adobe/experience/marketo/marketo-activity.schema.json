@@ -27,9 +27,9 @@
           "type": "object",
           "meta:xdmType": "map",
           "additionalProperties": {
-            "title": "Value defined for each Key",          
+            "title": "Value defined for each Key",
             "description": "Map describing open set of key value pairs which are not composed semantically",
-            "type": "string"            
+            "type": "string"
           }
         },
         "marketo:bypassTrigger": {

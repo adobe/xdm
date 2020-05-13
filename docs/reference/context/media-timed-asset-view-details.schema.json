@@ -100,10 +100,7 @@
                     "$ref": "https://ns.adobe.com/xdm/context/player-state",
                     "description": "Timed media properties related to in focus player state."
                 }
-            },
-            "required": [
-                "xdm:playerName"
-            ]
+            }
         }
     },
     "allOf": [

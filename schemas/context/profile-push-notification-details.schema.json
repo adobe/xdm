@@ -34,7 +34,7 @@
             "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
         },
         {
-            "$ref": "#/definitions/push-notification-details"
+            "$ref": "#/definitions/profile-push-notification-details"
         }
     ],
     "meta:status": "experimental"

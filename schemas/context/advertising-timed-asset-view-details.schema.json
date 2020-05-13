@@ -29,10 +29,7 @@
             "description": "Details about how a timed advertising is inserted into a timed media.",
             "$ref": "https://ns.adobe.com/xdm/context/advertising-break"
         }
-      },
-      "required": [
-        "xdm:index"
-      ]
+      }
     }
   },
   "allOf": [

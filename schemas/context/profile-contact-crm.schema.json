@@ -1,0 +1,88 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/profile-contact-crm",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "XDM Business Contact",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/context/profile-person-details",
+    "https://ns.adobe.com/xdm/context/profile-personal-details",
+    "https://ns.adobe.com/xdm/context/profile-work-details",
+    "https://ns.adobe.com/xdm/context/profile-other-work-details",
+    "https://ns.adobe.com/xdm/context/profile-owning-entities"
+  ],
+  "description": "This mixin is used to capture information regarding person details in context of Business to Business contact.",
+  "definitions": {
+    "profile-contact-crm": {
+      "properties": {
+        "xdm:contactID": {
+          "title": "Contact Record Id",
+          "description": "Contact record id.",
+          "type": "string"
+        },
+        "xdm:accountID": {
+          "title": "Contact Account id",
+          "description": "ID of the account that’s the parent of this contact.",
+          "type": "string"
+        },
+        "xdm:leadSource": {
+          "title": "Lead Source",
+          "description": "Field recording what source the lead originated from.",
+          "type": "string"
+        },
+        "xdm:contact": {
+          "title": "Other Contact Properties",
+          "description": "Holds additional properties for a person to be recognized as a contact in the business-to-business space.",
+          "$ref": "https://ns.adobe.com/xdm/common/contact-lead"
+        },
+        "xdm:contactPreferences": {
+          "title": "Contact Preferences",
+          "description": "Holds opt out values for different channels as selected by the contact.",
+          "$ref": "https://ns.adobe.com/xdm/context/optinout"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/identitymap"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/profile-person-details"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/profile-personal-details"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/profile-work-details"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/profile-other-work-details"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/profile-owning-entities"
+    },
+    {
+      "$ref": "#/definitions/profile-contact-crm"
+    }
+  ],
+  "required": [
+    "xdm:contactID",
+    "xdm:accountID"
+  ],
+  "meta:status": "experimental"
+}

@@ -41,6 +41,8 @@
           }
         },
         "xdm:assistantDetails": {
+          "type": "object",
+          "description": "Assistant Details",
           "xdm:name": {
             "title": "Assistant Name",
             "$ref": "https://ns.adobe.com/xdm/context/person-name",

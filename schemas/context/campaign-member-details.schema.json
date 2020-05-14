@@ -110,7 +110,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "#/definitions/campaign-workflow-details"
+      "$ref": "#/definitions/campaign-member-details"
     }
   ],
   "meta:status": "experimental"

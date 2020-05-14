@@ -63,7 +63,12 @@ class Converter extends EventEmitter {
         if (i == "$ref" && o[i].indexOf("#/definitions/") != 0) { //mapping to schema location
 
           var schemaId = (o[i].indexOf("#/definitions/") != -1) ? o[i].substr(0, o[i].indexOf("#/definitions/")) : o[i];
-          o[i] = (o[i].indexOf("#/definitions/") == -1) ? schemaLoc[schemaId] : schemaLoc[schemaId]+o[i].substr(o[i].indexOf("#/definitions/"));
+          if (schemaLoc[schemaId]) {
+            o[i] = (o[i].indexOf("#/definitions/") == -1) ? schemaLoc[schemaId] : schemaLoc[schemaId]+o[i].substr(o[i].indexOf("#/definitions/"));
+          }
+          else {
+            o[i] = schemaId;//for failing schema validation later
+          }
           if (removeList.indexOf(o[i]) != -1) delete o[i];
 
         };

@@ -23,8 +23,8 @@
   "definitions": {
     "profile-contact-crm": {
       "properties": {
-        "xdm:contactProperties": {
-          "title": "Contact Properties",
+        "xdm:contact": {
+          "title": "Contact Details",
           "description": "Holds properties for a person to be recognized as a contact in the business-to-business space.",
           "$ref": "https://ns.adobe.com/xdm/common/b2b-contact"
         }

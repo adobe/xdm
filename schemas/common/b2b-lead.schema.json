@@ -77,8 +77,8 @@
           "description": "Field recording what source the lead originated from.",
           "type": "string"
         },
-        "xdm:lead": {
-          "title": "Other Lead Properties",
+        "xdm:leadExtended": {
+          "title": "Lead Extended Properties",
           "description": "Holds additional properties for a person to be recognized as a lead in the business-to-business space.",
           "$ref": "https://ns.adobe.com/xdm/common/contact-lead"
         }

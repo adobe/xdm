@@ -25,8 +25,8 @@
   "definitions": {
     "profile-lead-crm": {
       "properties": {
-        "xdm:leadProperties": {
-          "title": "Lead Properties",
+        "xdm:lead": {
+          "title": "Lead Details",
           "description": "Holds properties for a person to be recognized as a lead in the business-to-business space.",
           "$ref": "https://ns.adobe.com/xdm/common/b2b-lead"
         }

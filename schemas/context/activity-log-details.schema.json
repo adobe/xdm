@@ -151,9 +151,9 @@
             },
             "xdm:program": {
               "properties": {
-                "xdm:name": {
-                  "title": "Program Name associated with the campaign",
-                  "description": "Unique identifer for Campaign.",
+                "xdm:ID": {
+                  "title": "Program ID associated with the campaign",
+                  "description": "Unique identifer for Program association with the Campaign.",
                   "type": "string"
                 },
                 "xdm:type": {

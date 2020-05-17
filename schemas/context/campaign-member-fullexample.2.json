@@ -15,9 +15,9 @@
   "xdm:campaignProgram": {
     "xdm:ID": "1",
     "xdm:type": "Webinar",
-    "xdm:status": {
-      "xdm:stepNumber": "10",
-      "xdm:stepName": "Invited"
+    "xdm:step": {
+      "xdm:number": 10,
+      "xdm:status": "Invited"
     }
   },
   "xdm:sourceType": "salesforce",

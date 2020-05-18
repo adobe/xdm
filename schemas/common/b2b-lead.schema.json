@@ -77,7 +77,7 @@
           "description": "Holds opt out values for different channels as selected by the lead.",
           "$ref": "https://ns.adobe.com/xdm/context/optinout"
         },
-        "xdm:extended": {
+        "xdm:extendedLead": {
           "title": "Lead Extended Properties",
           "description": "Holds additional properties for a person to be recognized as a lead in the business-to-business space.",
           "$ref": "https://ns.adobe.com/xdm/common/contact-lead"

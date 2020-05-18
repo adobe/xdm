@@ -61,6 +61,12 @@
               "title": "Job Title",
               "description": "Job title.",
               "type": "string"
+            },
+            "xdm:photoUrl": {
+              "title": "Photo Url",
+              "description": "Photo url.",
+		      "type": "string",
+		      "format": "uri"
             }
           }
         }

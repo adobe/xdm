@@ -60,9 +60,5 @@
       "$ref": "#/definitions/profile-contact-crm"
     }
   ],
-  "required": [
-    "xdm:contactID",
-    "xdm:accountID"
-  ],
   "meta:status": "experimental"
 }

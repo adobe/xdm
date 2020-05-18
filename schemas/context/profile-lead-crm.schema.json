@@ -62,8 +62,5 @@
       "$ref": "https://ns.adobe.com/xdm/context/profile-owning-entities"
     }
   ],
-  "required": [
-    "xdm:leadID"
-  ],
   "meta:status": "experimental"
 }

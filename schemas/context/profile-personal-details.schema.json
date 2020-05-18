@@ -40,12 +40,6 @@
           "title": "Fax phone",
           "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
           "description": "Fax phone number."
-        },
-        "xdm:photoUrl": {
-          "title": "Photo Url",
-          "description": "Photo url.",
-		  "type": "string",
-		  "format": "uri"
         }
       }
     }

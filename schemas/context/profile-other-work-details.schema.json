@@ -33,15 +33,19 @@
           "title": "Some Additional Person Work Details",
           "properties": {
             "xdm:assistantDetails": {
-              "xdm:name": {
-                "title": "Assistant Name",
-                "$ref": "https://ns.adobe.com/xdm/context/person-name",
-                "description": "Assistant name."
-              },
-              "xdm:phone": {
-                "title": "Assistant Phone",
-                "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
-                "description": "Assistant phone."
+              "type": "object",
+              "title": "Assitant Details",
+              "properties": {
+                "xdm:name": {
+                  "title": "Assistant Name",
+                  "$ref": "https://ns.adobe.com/xdm/context/person-name",
+                  "description": "Assistant name."
+                },
+                "xdm:phone": {
+                  "title": "Assistant Phone",
+                  "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
+                  "description": "Assistant phone."
+                }
               }
             },
             "xdm:reportsToID": {
@@ -65,8 +69,8 @@
             "xdm:photoUrl": {
               "title": "Photo Url",
               "description": "Photo url.",
-		      "type": "string",
-		      "format": "uri"
+              "type": "string",
+              "format": "uri"
             }
           }
         }

@@ -48,27 +48,6 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/context/identitymap"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/context/profile-person-details"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/context/profile-personal-details"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/context/profile-work-details"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/context/profile-other-work-details"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/context/profile-owning-entities"
-    },
-    {
       "$ref": "#/definitions/b2b-contact"
     }
   ],

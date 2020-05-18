@@ -11,9 +11,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/profile"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "description": "This mixin is used to capture information regarding work-related details of the individual such as work address, work email, work phone number, and organizations to which the profile belongs.",
   "definitions": {
     "profile-work-details": {
@@ -39,38 +37,6 @@
           "items": {
             "type": "string"
           }
-        },
-        "xdm:assistantDetails": {
-          "type": "object",
-          "description": "Assistant Details",
-          "xdm:name": {
-            "title": "Assistant Name",
-            "$ref": "https://ns.adobe.com/xdm/context/person-name",
-            "description": "Assistant name."
-          },
-          "xdm:phone": {
-            "title": "Assistant Phone",
-            "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
-            "description": "Assistant phone."
-          }
-        },
-        "xdm:reportsToID": {
-          "title": "Reports To Id",
-          "description": "Reports to identifier.",
-          "type": "string"
-        },
-        "xdm:departments": {
-          "title": "Department Name",
-          "description": "Department name.",
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "xdm:jobTitle": {
-          "title": "Job Title",
-          "description": "Job title.",
-          "type": "string"
         }
       }
     }

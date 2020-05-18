@@ -1,6 +1,6 @@
 {
   "meta:license": [
-    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
     "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/profile"
+  ],
   "description": "This mixin is used to capture information regarding additional/other work-related details of the individual such as work address, work email, work phone number, and organizations to which the profile belongs.",
   "definitions": {
     "profile-other-work-details": {
@@ -25,6 +27,48 @@
           "title": "Other Phone",
           "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
           "description": "Other phone number."
+        },
+        "xdm:extendedWorkDetails": {
+          "type": "object",
+          "title": "Some Additional Person Work Details",
+          "properties": {
+            "xdm:assistantDetails": {
+              "xdm:name": {
+                "title": "Assistant Name",
+                "$ref": "https://ns.adobe.com/xdm/context/person-name",
+                "description": "Assistant name."
+              },
+              "xdm:phone": {
+                "title": "Assistant Phone",
+                "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
+                "description": "Assistant phone."
+              }
+            },
+            "xdm:reportsToID": {
+              "title": "Reports To Id",
+              "description": "Reports to identifier.",
+              "type": "string"
+            },
+            "xdm:departments": {
+              "title": "Department Name",
+              "description": "Department name.",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "xdm:jobTitle": {
+              "title": "Job Title",
+              "description": "Job title.",
+              "type": "string"
+            },
+            "xdm:photoUrl": {
+              "title": "Photo Url",
+              "description": "Photo url.",
+		      "type": "string",
+		      "format": "uri"
+            }
+          }
         }
       }
     }

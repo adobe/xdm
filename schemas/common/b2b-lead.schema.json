@@ -1,0 +1,119 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/common/b2b-lead",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "B2B Lead",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "This Data Type is used to capture B2B Lead specific attributes.",
+  "definitions": {
+    "b2b-lead": {
+      "properties": {
+        "xdm:ID": {
+          "title": "Lead Id",
+          "description": "Lead id.",
+          "type": "string"
+        },
+        "xdm:converted": {
+          "title": "Converted Indicator",
+          "description": "Indicates whether the Lead was successfully converted or not.",
+          "type": "boolean"
+        },
+        "xdm:convertedAccountID": {
+          "title": "Converted Account ID",
+          "description": "Account Id if the lead was successfully converted.",
+          "type": "string"
+        },
+        "xdm:convertedContactID": {
+          "title": "Converted Contact ID",
+          "description": "Contact Id if the lead was successfully converted.",
+          "type": "string"
+        },
+        "xdm:convertedDate": {
+          "title": "Converted Date",
+          "description": "Date of conversion if the lead was successfully converted.",
+          "type": "string",
+          "format": "date-time"
+        },
+        "xdm:convertedOpportunityID": {
+          "title": "Converted Opportunity ID",
+          "description": "Opportunity Id if the lead was successfully converted.",
+          "type": "string"
+        },
+        "xdm:jigsawContactID": {
+          "title": "Jigsaw Contact Id",
+          "description": "Lead’s Data.com ID if available.",
+          "type": "string"
+        },
+        "xdm:lastTransferDate": {
+          "title": "Last Transfer Date",
+          "description": "Last transfer date.",
+          "type": "string",
+          "format": "date-time"
+        },
+        "xdm:unReadByOwner": {
+          "title": "Read By Owner Indicator",
+          "description": "Read by owner indicator.",
+          "type": "boolean"
+        },
+        "xdm:source": {
+          "title": "Lead Source",
+          "description": "Field recording what source the lead originated from.",
+          "type": "string"
+        },
+        "xdm:organization": {
+          "title": "Organization Attributes",
+          "description": "Organization attributes if the lead is an organization.",
+          "$ref": "https://ns.adobe.com/xdm/common/organization"
+        },
+        "xdm:preferences": {
+          "title": "Lead Preferences",
+          "description": "Holds opt out values for different channels as selected by the lead.",
+          "$ref": "https://ns.adobe.com/xdm/context/optinout"
+        },
+        "xdm:extendedLead": {
+          "title": "Lead Extended Properties",
+          "description": "Holds additional properties for a person to be recognized as a lead in the business-to-business space.",
+          "$ref": "https://ns.adobe.com/xdm/common/contact-lead"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/b2b-lead"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/identitymap"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/profile-person-details"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/profile-personal-details"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/profile-work-details"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/profile-other-work-details"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/profile-owning-entities"
+    }
+  ],
+  "required": ["xdm:ID"],
+  "meta:status": "experimental"
+}

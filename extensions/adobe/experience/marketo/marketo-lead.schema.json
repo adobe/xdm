@@ -13,10 +13,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/context/profile-lead-crm",
-    "https://ns.adobe.com/experience/marketo/marketo-contact-lead-person"
-  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/context/profile-lead-crm"],
   "definitions": {
     "marketo-lead": {
       "properties": {
@@ -59,6 +56,10 @@
           "title": "Lead Score",
           "description": "Lead score.",
           "type": "number"
+        },
+        "marketo:extendedLead": {
+          "title": "Extended Marketo Lead Attributes",
+          "$ref": "https://ns.adobe.com/experience/marketo/marketo-contact-lead-person"
         }
       }
     }
@@ -66,9 +67,6 @@
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/context/profile-lead-crm"
-    },
-    {
-      "$ref": "https://ns.adobe.com/experience/marketo/marketo-contact-lead-person"
     },
     {
       "$ref": "#/definitions/marketo-lead"

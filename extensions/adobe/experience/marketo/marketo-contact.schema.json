@@ -7,16 +7,13 @@
   ],
   "$id": "https://ns.adobe.com/experience/marketo/marketo-contact",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Marketo Contact Schema",
+  "title": "Marketo Contact",
   "type": "object",
   "description": "Marketo Contact schema for use with B2B Accounts and Opportunities. Includes other Profile mixins like person/work details, opt in/out etc.",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/context/profile-contact-crm",
-    "https://ns.adobe.com/experience/marketo/marketo-contact-lead-person"
-  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/context/profile-contact-crm"],
   "definitions": {
     "marketo-contact": {
       "properties": {
@@ -29,6 +26,10 @@
           "title": "Instance Id",
           "description": "Source System Id.",
           "type": "string"
+        },
+        "marketo:extendedContact": {
+          "title": "Extended Marketo Contact Attributes",
+          "$ref": "https://ns.adobe.com/experience/marketo/marketo-contact-lead-person"
         }
       }
     }
@@ -36,9 +37,6 @@
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/context/profile-contact-crm"
-    },
-    {
-      "$ref": "https://ns.adobe.com/experience/marketo/marketo-contact-lead-person"
     },
     {
       "$ref": "#/definitions/marketo-contact"

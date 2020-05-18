@@ -12,7 +12,6 @@
   "description": "Marketo Person schema for use within  B2B space. Includes other Profile mixins like person/work details, opt in/out etc.",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "definitions": {
     "marketo-contact-lead-person": {
       "properties": {

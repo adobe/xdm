@@ -12,10 +12,10 @@
   "description": "Marketo Lead schema. Includes other Profile mixins like person/work details, opt in/out etc.",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/context/profile-lead-crm"
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/profile"
   ],
+  "meta:extends": ["https://ns.adobe.com/xdm/context/profile-lead-crm"],
   "definitions": {
     "marketo-lead": {
       "properties": {
@@ -59,9 +59,10 @@
           "description": "Lead score.",
           "type": "number"
         },
-		"marketo:extendedLead": {
-		"$ref": "https://ns.adobe.com/experience/marketo/marketo-contact-lead-person"
-		}
+        "marketo:extendedLead": {
+          "title": "Extended Marketo Lead Attributes",
+          "$ref": "https://ns.adobe.com/experience/marketo/marketo-contact-lead-person"
+        }
       }
     }
   },
@@ -73,6 +74,8 @@
       "$ref": "#/definitions/marketo-lead"
     }
   ],
-  "required": ["marketo:leadID"],
+  "required": [
+    "marketo:leadID"
+  ],
   "meta:status": "experimental"
 }

@@ -18,12 +18,22 @@
                     "title": "Ad ID",
                     "type": "string",
                     "format": "uri-reference",
-                    "description": "Identifier of the ad asset provided by media analytics customers."
+                    "description": "Identifier of the ad asset provided by media analytics customers. Following the Ad-ID standard [https://www.ad-id.org]."
                 },
                 "dc:title": {
                     "title": "Ad name",
                     "type": "string",
                     "description": "The friendly and human-readable name of the ad asset."
+                },
+                "xdm:advertiser": {
+                    "title": "Ad advertiser",
+                    "type": "string",
+                    "description": "Company/Brand whose product is featured in the ad."
+                },
+                "xdm:campaign": {
+                    "title": "Ad campaign",
+                    "type": "string",
+                    "description": "ID of the ad campaign."
                 },
                 "xmpDM:duration": {
                     "title": "Ad length or duration",

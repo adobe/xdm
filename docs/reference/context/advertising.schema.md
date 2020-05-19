@@ -42,6 +42,13 @@ The information related to advertising activity in relationship to the experienc
       "xdm:value": 1
     }
   },
+  "xdm:adAssetReference": {
+    "@id": "https://data.adobe.io/entities/ad-id/AD1",
+    "dc:title": "adNumber2",
+    "xdm:advertiser": "Sample advertiser",
+    "xdm:campaign": "Sample campaign",
+    "xmpDM:duration": 10
+  },
   "xdm:firstQuartiles": {
     "xdm:value": 1
   }
@@ -143,7 +150,7 @@ Click actions on an advertisement.
 
 
 ## xdm:completes
-### Completes
+### Ad completes
 
 Indicates if a timed media asset was watched to completion but doesn't necessarily mean the end-user watched the whole video as the they could have skipped ahead.
 
@@ -180,7 +187,7 @@ A customer pre-defined action or actions which triggers an event for performance
 
 
 ## xdm:federated
-### Federated
+### Ad federated
 
 Indicates if an experience event was created through data federation such as data sharing between customers.
 
@@ -253,6 +260,7 @@ A digital video ad has played through 50% of its duration at normal speed.
 
 
 ## xdm:starts
+### Ad starts
 
 A digital video ad has started playing.
 
@@ -289,7 +297,7 @@ A digital video ad has played through 75% of its duration at normal speed.
 
 
 ## xdm:timePlayed
-### Time spent
+### Ad time spent
 
 Describes the amount of time spent by an end-user on a specific timed media asset.
 

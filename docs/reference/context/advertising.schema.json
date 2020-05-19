@@ -30,17 +30,17 @@
                     "$ref": "https://ns.adobe.com/xdm/context/advertising-timed-asset-view-details"
                 },
                 "xdm:completes": {
-                    "title": "Completes",
+                    "title": "Ad completes",
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
                     "description": "Indicates if a timed media asset was watched to completion but doesn't necessarily mean the end-user watched the whole video as the they could have skipped ahead."
                 },
                 "xdm:timePlayed": {
-                    "title": "Time spent",
+                    "title": "Ad time spent",
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
                     "description": "Describes the amount of time spent by an end-user on a specific timed media asset."
                 },
                 "xdm:federated": {
-                    "title": "Federated",
+                    "title": "Ad federated",
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
                     "description": "Indicates if an experience event was created through data federation such as data sharing between customers."
                 },
@@ -65,6 +65,7 @@
                     "description": "A digital video ad has played through 50% of its duration at normal speed."
                 },
                 "xdm:starts": {
+                    "title": "Ad starts",
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
                     "description": "A digital video ad has started playing."
                 },
@@ -104,6 +105,13 @@
                 "xdm:viewableFirstQuartile": {
                     "xdm:value": 1
                 }
+            },
+            "xdm:adAssetReference": {
+                "@id": "https://data.adobe.io/entities/ad-id/AD1",
+                "dc:title": "adNumber2",
+                "xdm:advertiser": "Sample advertiser",
+                "xdm:campaign": "Sample campaign",
+                "xmpDM:duration": 10
             },
             "xdm:firstQuartiles": {
                 "xdm:value": 1

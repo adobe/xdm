@@ -26,22 +26,22 @@
                     "description": "View details for the chapter playback captured by the experience event."
                 },
                 "xdm:impressions": {
-                    "title": "Impressions",
+                    "title": "Chapter impressions",
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
                     "description": "Describes the intention to play a timed media asset. It does not measure success, as the user might abandon the content before the first frame is viewed."
                 },
                 "xdm:completes": {
-                    "title": "Completes",
+                    "title": "Chapter completes",
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
                     "description": "Indicates if a timed media asset was watched to completion - this does not necessarily mean the viewer watched the whole video; viewer could have skipped ahead."
                 },
                 "xdm:timePlayed": {
-                    "title": "Time spent",
+                    "title": "Chapter time spent",
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
                     "description": "Describes the amount of time in seconds spent by a user on a specific timed media asset."
                 },
                 "xdm:federated": {
-                    "title": "Federated",
+                    "title": "Chapter federated",
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
                     "description": "Indicates if an experience event was created through data federation or data sharing."
                 }

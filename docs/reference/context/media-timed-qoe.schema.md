@@ -46,7 +46,18 @@ Timed media properties related to the content playback's quality of experience (
   },
   "xdm:timeToStart": {
     "xdm:value": 3
-  }
+  },
+  "xdm:mediaSdkErrors": [
+    "300",
+    "500.300.200"
+  ],
+  "xdm:playerSdkErrors": [
+    "custom.error.code"
+  ],
+  "xdm:externalSdkErrors": [
+    "100-5",
+    "11.12"
+  ]
 }
 ```
 
@@ -60,6 +71,9 @@ Timed media properties related to the content playback's quality of experience (
 | [xdm:buffers](#xdmbuffers) | Measure | Optional | Timed media quality of experience (this schema) |
 | [xdm:droppedFrames](#xdmdroppedframes) | Measure | Optional | Timed media quality of experience (this schema) |
 | [xdm:errors](#xdmerrors) | Measure | Optional | Timed media quality of experience (this schema) |
+| [xdm:externalSdkErrors](#xdmexternalsdkerrors) | `string[]` | Optional | Timed media quality of experience (this schema) |
+| [xdm:mediaSdkErrors](#xdmmediasdkerrors) | `string[]` | Optional | Timed media quality of experience (this schema) |
+| [xdm:playerSdkErrors](#xdmplayersdkerrors) | `string[]` | Optional | Timed media quality of experience (this schema) |
 | [xdm:stallTime](#xdmstalltime) | Measure | Optional | Timed media quality of experience (this schema) |
 | [xdm:stalls](#xdmstalls) | Measure | Optional | Timed media quality of experience (this schema) |
 | [xdm:timeToStart](#xdmtimetostart) | Measure | Optional | Timed media quality of experience (this schema) |
@@ -123,7 +137,7 @@ Describes the total amount of time in seconds, spent buffering.
 
 
 ## xdm:buffers
-### Buffers
+### Buffer events
 
 The number of buffer states that occurred during a playback session.
 
@@ -179,6 +193,87 @@ The number of errors that were encountered during playback.
 
 
 
+## xdm:externalSdkErrors
+### External Error IDs
+
+The error IDs encountered during a playback session that originated outside the Player or SDK.
+
+`xdm:externalSdkErrors`
+* is optional
+* type: `string[]`
+
+* defined in this schema
+
+### xdm:externalSdkErrors Type
+
+
+Array type: `string[]`
+
+All items must be of the type:
+`string`
+
+
+
+
+
+
+
+
+
+## xdm:mediaSdkErrors
+### SDK Error IDs
+
+The error IDs encountered during a playback session that originated in the Media SDK.
+
+`xdm:mediaSdkErrors`
+* is optional
+* type: `string[]`
+
+* defined in this schema
+
+### xdm:mediaSdkErrors Type
+
+
+Array type: `string[]`
+
+All items must be of the type:
+`string`
+
+
+
+
+
+
+
+
+
+## xdm:playerSdkErrors
+### Player Error IDs
+
+The error IDs encountered during a playback session that originated in the Player.
+
+`xdm:playerSdkErrors`
+* is optional
+* type: `string[]`
+
+* defined in this schema
+
+### xdm:playerSdkErrors Type
+
+
+Array type: `string[]`
+
+All items must be of the type:
+`string`
+
+
+
+
+
+
+
+
+
 ## xdm:stallTime
 ### Total stalling duration
 
@@ -220,7 +315,7 @@ The number of stall states that occurred during a playback session.
 ## xdm:timeToStart
 ### Time to start
 
-Describes the duration in seconds passed between video load and start.
+Describes the duration (in seconds) passed between video load and start.
 
 `xdm:timeToStart`
 * is optional

@@ -21,7 +21,7 @@
                     "description": "The number of errors that were encountered during playback."
                 },
                 "xdm:buffers": {
-                    "title": "Buffers",
+                    "title": "Buffer events",
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
                     "description": "The number of buffer states that occurred during a playback session."
                 },
@@ -58,7 +58,31 @@
                 "xdm:timeToStart": {
                     "title": "Time to start",
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
-                    "description": "Describes the duration in seconds passed between video load and start."
+                    "description": "Describes the duration (in seconds) passed between video load and start."
+                },
+                "xdm:playerSdkErrors": {
+                    "title": "Player Error IDs",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "The error IDs encountered during a playback session that originated in the Player."
+                },
+                "xdm:mediaSdkErrors": {
+                    "title": "SDK Error IDs",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "The error IDs encountered during a playback session that originated in the Media SDK."
+                },
+                "xdm:externalSdkErrors": {
+                    "title": "External Error IDs",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "The error IDs encountered during a playback session that originated outside the Player or SDK."
                 }
             }
         }
@@ -99,7 +123,18 @@
             },
             "xdm:timeToStart": {
                 "xdm:value": 3
-            }
+            },
+            "xdm:mediaSdkErrors": [
+                "300",
+                "500.300.200"
+            ],
+            "xdm:playerSdkErrors": [
+                "custom.error.code"
+            ],
+            "xdm:externalSdkErrors": [
+                "100-5",
+                "11.12"
+            ]
         }
     ]
 }

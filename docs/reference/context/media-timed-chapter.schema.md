@@ -79,7 +79,7 @@ View details for the chapter playback captured by the experience event.
 
 
 ## xdm:completes
-### Completes
+### Chapter completes
 
 Indicates if a timed media asset was watched to completion - this does not necessarily mean the viewer watched the whole video; viewer could have skipped ahead.
 
@@ -98,7 +98,7 @@ Indicates if a timed media asset was watched to completion - this does not neces
 
 
 ## xdm:federated
-### Federated
+### Chapter federated
 
 Indicates if an experience event was created through data federation or data sharing.
 
@@ -117,7 +117,7 @@ Indicates if an experience event was created through data federation or data sha
 
 
 ## xdm:impressions
-### Impressions
+### Chapter impressions
 
 Describes the intention to play a timed media asset. It does not measure success, as the user might abandon the content before the first frame is viewed.
 
@@ -136,7 +136,7 @@ Describes the intention to play a timed media asset. It does not measure success
 
 
 ## xdm:timePlayed
-### Time spent
+### Chapter time spent
 
 Describes the amount of time in seconds spent by a user on a specific timed media asset.
 

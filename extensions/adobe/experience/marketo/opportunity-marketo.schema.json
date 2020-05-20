@@ -40,6 +40,6 @@
       "$ref": "#/definitions/opportunity-marketo"
     }
   ],
-  "required": ["marketo:ID"],
+  "required": ["marketo:opportunityID"],
   "meta:status": "experimental"
 }

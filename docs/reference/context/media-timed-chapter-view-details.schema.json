@@ -16,7 +16,7 @@
         "media-chapter-view-details": {
             "properties": {
                 "xdm:index": {
-                    "title": "Chapter index",
+                    "title": "Chapter position",
                     "type": "integer",
                     "description": "The index of the chapter inside the content."
                 },

@@ -31,13 +31,15 @@ Ad asset reference is info about the ad captured by the experience event.
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | Ad asset reference (this schema) |
 | [dc:title](#dctitle) | `string` | Optional | Ad asset reference (this schema) |
+| [xdm:advertiser](#xdmadvertiser) | `string` | Optional | Ad asset reference (this schema) |
+| [xdm:campaign](#xdmcampaign) | `string` | Optional | Ad asset reference (this schema) |
 | [xmpDM:duration](#xmpdmduration) | `integer` | Optional | Ad asset reference (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
 ### Ad ID
 
-Identifier of the ad asset provided by media analytics customers.
+Identifier of the ad asset provided by media analytics customers. Following the Ad-ID standard [https://www.ad-id.org].
 
 `@id`
 * is optional
@@ -66,6 +68,46 @@ The friendly and human-readable name of the ad asset.
 * defined in this schema
 
 ### dc:title Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:advertiser
+### Ad advertiser
+
+Company/Brand whose product is featured in the ad.
+
+`xdm:advertiser`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:advertiser Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:campaign
+### Ad campaign
+
+ID of the ad campaign.
+
+`xdm:campaign`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:campaign Type
 
 
 `string`

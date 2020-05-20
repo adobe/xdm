@@ -33,7 +33,7 @@ View details for the chapter playback captured by the experience event.
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:index
-### Chapter index
+### Chapter position
 
 The index of the chapter inside the content.
 

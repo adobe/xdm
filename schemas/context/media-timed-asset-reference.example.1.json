@@ -1,13 +1,20 @@
 {
   "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234430",
   "dc:title": "Floki Begs Helga for Freedom",
+  "dc:creator": "Video Author",
+  "dc:publisher": "tvonline",
   "xmpDM:duration": 87,
+  "id3:Audio": {
+    "id3:TRSN": "Q991.3",
+    "id3:TPUB": "Atlantic"
+  },
   "iptc4xmpExt:Series": {
     "iptc4xmpExt:Name": "show_highlights",
     "iptc4xmpExt:Identifier": "http://mychanneltv.com/series-identifiers/2613953"
   },
   "xdm:showType": "episode",
   "xdm:streamFormat": "long",
+  "xdm:streamType": "video",
   "iptc4xmpExt:Season": {
     "iptc4xmpExt:Number": 1.0
   },

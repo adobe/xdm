@@ -14,23 +14,32 @@ Asset information about the main content that was played, but present on all ads
 
 * Timed media primary asset reference `https://ns.adobe.com/xdm/context/media-timed-asset-reference`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Audio](../external/id3/audio.schema.md) `https://id3.org/id3v2.4/audio`
   * [Series](../external/iptc/series.schema.md) `http://www.iptc.org/series`
   * [Episode](../external/iptc/episode.schema.md) `http://www.iptc.org/season`
   * [Season](../external/iptc/season.schema.md) `http://www.iptc.org/episode`
 
 
-## Timed media primary asset reference Example
+## Timed media primary asset reference Examples
+
 ```json
 {
   "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234430",
   "dc:title": "Floki Begs Helga for Freedom",
+  "dc:creator": "Video Author",
+  "dc:publisher": "tvonline",
   "xmpDM:duration": 87,
+  "id3:Audio": {
+    "id3:TRSN": "Q991.3",
+    "id3:TPUB": "Atlantic"
+  },
   "iptc4xmpExt:Series": {
     "iptc4xmpExt:Name": "show_highlights",
     "iptc4xmpExt:Identifier": "http://mychanneltv.com/series-identifiers/2613953"
   },
   "xdm:showType": "episode",
   "xdm:streamFormat": "long",
+  "xdm:streamType": "video",
   "iptc4xmpExt:Season": {
     "iptc4xmpExt:Number": 1
   },
@@ -54,21 +63,38 @@ Asset information about the main content that was played, but present on all ads
 }
 ```
 
+```json
+{
+  "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234431",
+  "dc:creator": "Jimmy Page",
+  "dc:title": "Stairway to Heaven",
+  "xdm:artist": "Led Zeppelin",
+  "xdm:album": "Led Zeppelin IV",
+  "xmpDM:duration": 482,
+  "xdm:streamType": "audio"
+}
+```
+
+
 # Timed media primary asset reference Properties
 
-| Property | Type | Required | Defined by |
-|----------|------|----------|------------|
-| [@id](#id) | `string` | Optional | Timed media primary asset reference (this schema) |
-| [dc:title](#dctitle) | `string` | Optional | Timed media primary asset reference (this schema) |
-| [iptc4xmpExt:Creator](#iptc4xmpextcreator) | Creator | Optional | Timed media primary asset reference (this schema) |
-| [iptc4xmpExt:Episode](#iptc4xmpextepisode) | Season | Optional | Timed media primary asset reference (this schema) |
-| [iptc4xmpExt:Genre](#iptc4xmpextgenre) | `string[]` | Optional | Timed media primary asset reference (this schema) |
-| [iptc4xmpExt:Rating](#iptc4xmpextrating) | Rating | Optional | Timed media primary asset reference (this schema) |
-| [iptc4xmpExt:Season](#iptc4xmpextseason) | Episode | Optional | Timed media primary asset reference (this schema) |
-| [iptc4xmpExt:Series](#iptc4xmpextseries) | Series | Optional | Timed media primary asset reference (this schema) |
-| [xdm:showType](#xdmshowtype) | `string` | Optional | Timed media primary asset reference (this schema) |
-| [xdm:streamFormat](#xdmstreamformat) | `string` | Optional | Timed media primary asset reference (this schema) |
-| [xmpDM:duration](#xmpdmduration) | `integer` | Optional | Timed media primary asset reference (this schema) |
+| Property | Type | Required | Default | Defined by |
+|----------|------|----------|---------|------------|
+| [@id](#id) | `string` | Optional |  | Timed media primary asset reference (this schema) |
+| [dc:title](#dctitle) | `string` | Optional |  | Timed media primary asset reference (this schema) |
+| [id3:Audio](#id3audio) | Audio | Optional |  | Timed media primary asset reference (this schema) |
+| [iptc4xmpExt:Creator](#iptc4xmpextcreator) | Creator | Optional |  | Timed media primary asset reference (this schema) |
+| [iptc4xmpExt:Episode](#iptc4xmpextepisode) | Season | Optional |  | Timed media primary asset reference (this schema) |
+| [iptc4xmpExt:Genre](#iptc4xmpextgenre) | `string[]` | Optional |  | Timed media primary asset reference (this schema) |
+| [iptc4xmpExt:Rating](#iptc4xmpextrating) | Rating | Optional |  | Timed media primary asset reference (this schema) |
+| [iptc4xmpExt:Season](#iptc4xmpextseason) | Episode | Optional |  | Timed media primary asset reference (this schema) |
+| [iptc4xmpExt:Series](#iptc4xmpextseries) | Series | Optional |  | Timed media primary asset reference (this schema) |
+| [xdm:showType](#xdmshowtype) | `string` | Optional |  | Timed media primary asset reference (this schema) |
+| [xdm:streamFormat](#xdmstreamformat) | `string` | Optional |  | Timed media primary asset reference (this schema) |
+| [xdm:streamType](#xdmstreamtype) | `enum` | Optional | `"video"` | Timed media primary asset reference (this schema) |
+| [xmpDM:album](#xmpdmalbum) | `string` | Optional |  | Timed media primary asset reference (this schema) |
+| [xmpDM:artist](#xmpdmartist) | `string` | Optional |  | Timed media primary asset reference (this schema) |
+| [xmpDM:duration](#xmpdmduration) | `integer` | Optional |  | Timed media primary asset reference (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -107,6 +133,25 @@ The friendly, human-readable name of the timed media asset.
 
 `string`
 
+
+
+
+
+
+## id3:Audio
+### Audio
+
+Metadata specific to audio content (record label, radio station, etc.).
+
+`id3:Audio`
+* is optional
+* type: Audio
+* defined in this schema
+
+### id3:Audio Type
+
+
+* [Audio](../external/id3/audio.schema.md) – `https://id3.org/id3v2.4/audio`
 
 
 
@@ -288,8 +333,70 @@ Free-form format of the stream for example, short or long.
 
 
 
+## xdm:streamType
+
+The type of the media stream
+
+`xdm:streamType`
+* is optional
+* type: `enum`
+* default: `"video"`
+* defined in this schema
+
+The value of this property **must** be equal to one of the [known values below](#xdmstreamtype-known-values).
+
+### xdm:streamType Known Values
+| Value | Description |
+|-------|-------------|
+| `audio` | An audio stream (e.g. podcast, audiobook, radio stream). |
+| `video` | A video stream (e.g. Video-On-Demand, live event stream, downloaded movie). |
+| `gaming` | A gaming stream (e.g. Twitch, Hitbox). |
+
+
+
+
+## xmpDM:album
+### Album
+
+The name of the album that the music recording or video belongs to.
+
+`xmpDM:album`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xmpDM:album Type
+
+
+`string`
+
+
+
+
+
+
+## xmpDM:artist
+### Artist
+
+The name of the album artist or group performing the music recording or video.
+
+`xmpDM:artist`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xmpDM:artist Type
+
+
+`string`
+
+
+
+
+
+
 ## xmpDM:duration
-### Media length runtime
+### Media content length
 
 Length of primary media asset in seconds.
 

@@ -37,13 +37,16 @@
                 "xdm:primaryAssetReference": {
                     "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234430",
                     "dc:title": "Floki Begs Helga for Freedom",
+                    "dc:creator": "Video Author",
+                    "dc:publisher": "tvonline",
                     "xmpDM:duration": 87,
                     "iptc4xmpExt:Series": {
-                        "iptc4xmpExt:Name": "tv_highlights",
-                        "iptc4xmpExt:Identifier": "http://mychannel.com/series-identifiers/2613953"
+                        "iptc4xmpExt:Name": "nba_highlights",
+                        "iptc4xmpExt:Identifier": "http://espn.com/series-identifiers/2613953"
                     },
                     "xdm:showType": "episode",
                     "xdm:streamFormat": "long",
+                    "xdm:streamType": "video",
                     "iptc4xmpExt:Season": {
                         "iptc4xmpExt:Number": 1
                     },
@@ -68,6 +71,8 @@
                 "xdm:primaryAssetViewDetails": {
                     "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114230",
                     "xdm:playerName": "watchmytv",
+                    "xdm:videoSegment": "3-10",
+                    "xdm:path": "mid:movie:part:foo.com:dfehfdb3-4ce7",
                     "xdm:broadcastChannel": "WatchMyTV",
                     "xdm:broadcastContentType": "VOD",
                     "xdm:streamFormat": "short",
@@ -77,7 +82,8 @@
                     "xdm:broadcastNetwork": "eccu",
                     "xdm:adLoadType": "2",
                     "xdm:sourceFeed": "http%3A%2F%2Fvod01.pure.centurylink.net%2Fhls%2Fvu%2F9080890106690980_38_3_M_HD.m3u8",
-                    "xdm:sessionTimeout": 1800
+                    "xdm:sessionTimeout": 1800,
+                    "xdm:downloadedPlayback": false
                 },
                 "xdm:mediaChapter": {
                     "xdm:chapterAssetReference": {

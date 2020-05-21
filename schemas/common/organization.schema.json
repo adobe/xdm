@@ -75,7 +75,9 @@
             "https://ns.adobe.com/xdm/external/angellist": "Angellist"
           },
 		  "properties": {
-		    "://": {}
+		    "://": {
+          "type": "string"
+        }
 		  },
           "patternProperties": {
             ".+://.+": {
@@ -100,7 +102,9 @@
             "https://ns.adobe.com/xdm/external/naics": "North American Industry Classification System"
           },
 		  "properties": {
-		    "://": {}
+		    "://": {
+           "type": "string"
+        }
 		  },
           "patternProperties": {
             ".+://.+": {

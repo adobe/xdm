@@ -15,162 +15,162 @@
   "definitions": {
     "marketo-contact-lead-person": {
       "properties": {
-        "marketoIntegrationLogID": {
+        "marketo:marketoIntegrationLogID": {
           "title": "Marketo Integration Log Id",
           "description": "Marketo integration log id.",
           "type": "string"
         },
-        "https://ns.adobe.com/experience/marketo/additionalFields": {
+        "marketo:additionalFields": {
           "title": "Additional Fields",
           "description": "Additional fields.",
           "type": "string"
         },
-        "https://ns.adobe.com/experience/marketo/anonymousHostname": {
+        "marketo:anonymousHostname": {
           "title": "Anonymous Hostname",
           "description": "Anonymous hostname.",
           "type": "string"
         },
-        "https://ns.adobe.com/experience/marketo/blackListed": {
+        "marketo:blackListed": {
           "title": "Black Listed Indicator",
           "description": "Black listed indicator.",
           "type": "boolean"
         },
-        "https://ns.adobe.com/experience/marketo/blackListedCause": {
+        "marketo:blackListedCause": {
           "title": "Black Listed Cause",
           "description": "Black listed cause.",
           "type": "string"
         },
-        "https://ns.adobe.com/experience/marketo/emailInvalid": {
+        "marketo:emailInvalid": {
           "title": "Invalid Email Indicator",
           "description": "Invalid email indicator.",
           "type": "boolean"
         },
-        "https://ns.adobe.com/experience/marketo/emailInvalidCause": {
+        "marketo:emailInvalidCause": {
           "title": "Email Invalid Cause",
           "description": "Email invalid cause.",
           "type": "string"
         },
-        "https://ns.adobe.com/experience/marketo/employeePositionID": {
+        "marketo:employeePositionID": {
           "title": "Employee Position Id",
           "description": "Employee position id.",
           "type": "string"
         },
-        "https://ns.adobe.com/experience/marketo/inferredAddress": {
+        "marketo:inferredAddress": {
           "title": "Inferred Address",
           "description": "Address details inferred by reverse IP lookup of the lead’s first recorded web visit.",
           "$ref": "https://ns.adobe.com/xdm/common/address"
         },
-        "https://ns.adobe.com/experience/marketo/inferredCompany": {
+        "marketo:inferredCompany": {
           "title": "Inferred Company",
           "description": "Company name inferred by reverse IP lookup of the lead’s first recorded web visit.",
           "type": "string"
         },
-        "https://ns.adobe.com/experience/marketo/inferredCompanyStatus": {
+        "marketo:inferredCompanyStatus": {
           "title": "Inferred Company Status",
           "description": "Status of the company name inferred by reverse IP lookup of the lead’s first recorded web visit.",
           "type": "string"
         },
-        "https://ns.adobe.com/experience/marketo/inferredMetropolitanArea": {
+        "marketo:inferredMetropolitanArea": {
           "title": "Inferred Metropolitan Area",
           "description": "Metropolitan area inferred by reverse IP lookup of lead’s first recorded web visit.",
           "type": "string"
         },
-        "https://ns.adobe.com/experience/marketo/inferredPhoneAreaCode": {
+        "marketo:inferredPhoneAreaCode": {
           "title": "Inferred Phone Area Code",
           "description": "Phone area code inferred by reverse IP lookup of lead’s first recorded web visit.",
           "type": "string"
         },
-        "https://ns.adobe.com/experience/marketo/anonymous": {
+        "marketo:anonymous": {
           "title": "Anonymous Indicator",
           "description": "Anonymous status of lead record. System managed.",
           "type": "boolean"
         },
-        "https://ns.adobe.com/experience/marketo/customer": {
+        "marketo:customer": {
           "title": "Customer Indicator",
           "description": "Customer indicator.",
           "type": "boolean"
         },
-        "https://ns.adobe.com/experience/marketo/employee": {
+        "marketo:employee": {
           "title": "Employee Indicator",
           "description": "Employee indicator.",
           "type": "boolean"
         },
-        "https://ns.adobe.com/experience/marketo/partner": {
+        "marketo:partner": {
           "title": "Partner Indicator",
           "description": "Partner indicator.",
           "type": "boolean"
         },
-        "https://ns.adobe.com/experience/marketo/private": {
+        "marketo:private": {
           "title": "Private Indicator",
           "description": "Private indicator.",
           "type": "boolean"
         },
-        "https://ns.adobe.com/experience/marketo/accountID": {
+        "marketo:accountID": {
           "title": "Marketo Account id",
           "description": "Marketo account id.",
           "type": "string"
         },
-        "https://ns.adobe.com/experience/marketo/marketingSuspended": {
+        "marketo:marketingSuspended": {
           "title": "Marketing Suspended",
           "description": "Marketing suspended.",
           "type": "boolean"
         },
-        "https://ns.adobe.com/experience/marketo/marketingSuspendedCause": {
+        "marketo:marketingSuspendedCause": {
           "title": "Marketing Suspended Cause",
           "description": "Marketing suspended cause.",
           "type": "string"
         },
-        "https://ns.adobe.com/experience/marketo/notes": {
+        "marketo:notes": {
           "title": "Notes",
           "description": "Notes.",
           "type": "string"
         },
-        "https://ns.adobe.com/experience/marketo/orgID": {
+        "marketo:orgID": {
           "title": "Organization ID",
           "description": "Organization id.",
           "type": "string"
         },
-        "https://ns.adobe.com/experience/marketo/primaryLeadInterestID": {
+        "marketo:primaryLeadInterestID": {
           "title": "Primary Lead Interest Id",
           "description": "Primary lead interest id.",
           "type": "boolean"
         },
-        "https://ns.adobe.com/experience/marketo/registerSourceInfo": {
+        "marketo:registerSourceInfo": {
           "title": "Register Source Info",
           "description": "Register source info.",
           "type": "string"
         },
-        "https://ns.adobe.com/experience/marketo/registerSourceType": {
+        "marketo:registerSourceType": {
           "title": "Register Source Type",
           "description": "Register source type.",
           "type": "string"
         },
-        "https://ns.adobe.com/experience/marketo/salesContactOwnerID": {
+        "marketo:salesContactOwnerID": {
           "title": "Sales Contact Owner Id",
           "description": "Sales contact owner id.",
           "type": "string"
         },
-        "https://ns.adobe.com/experience/marketo/originalReferrer": {
+        "marketo:originalReferrer": {
           "title": "Original Referrer",
           "description": "The original referrer is typically the page that leads to a form fill out.",
           "type": "string"
         },
-        "https://ns.adobe.com/experience/marketo/originalSearchEngine": {
+        "marketo:originalSearchEngine": {
           "title": "Original Search Engine",
           "description": "Search engine that the original referrer used.",
           "type": "string"
         },
-        "https://ns.adobe.com/experience/marketo/originalSearchPhrase": {
+        "marketo:originalSearchPhrase": {
           "title": "Original Search Phrase",
           "description": "Search phrase used by the original referrer.",
           "type": "string"
         },
-        "https://ns.adobe.com/experience/marketo/originalSourceInfo": {
+        "marketo:originalSourceInfo": {
           "title": "Original Source Info",
           "description": "Original source info.",
           "type": "string"
         },
-        "https://ns.adobe.com/experience/marketo/originalSourceType": {
+        "marketo:originalSourceType": {
           "title": "Original Source Type",
           "description": "Original ource type.",
           "type": "string"

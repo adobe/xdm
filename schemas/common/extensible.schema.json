@@ -248,7 +248,7 @@
                 "marketo": {
                   "type": "string",
                   "format": "url",
-                  "const": "https://ns.adobe.com/experience/marketo/"
+                  "const": "https://ns.adobe.com/marketo/"
                 }
               },
               "additionalProperties": false,

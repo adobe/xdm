@@ -17,47 +17,47 @@
   "definitions": {
     "marketo-lead": {
       "properties": {
-        "https://ns.adobe.com/experience/marketo/leadID": {
+        "marketo:leadID": {
           "title": "Marketo Lead ID",
           "description": "Marketo lead id.",
           "type": "string"
         },
-        "https://ns.adobe.com/experience/marketo/instanceID": {
+        "marketo:instanceID": {
           "title": "Instance Id",
           "description": "Source System Id.",
           "type": "string"
         },
-        "https://ns.adobe.com/experience/marketo/contactID": {
+        "marketo:contactID": {
           "title": "Marketo Contact Id",
           "description": "Marketo contact id.",
           "type": "string"
         },
-        "https://ns.adobe.com/experience/marketo/accountID": {
+        "marketo:accountID": {
           "title": "Marketo Account Id",
           "description": "Marketo account id.",
           "type": "string"
         },
-        "https://ns.adobe.com/experience/marketo/abmProposedNameID": {
+        "marketo:abmProposedNameID": {
           "title": "Account Based Marketing Proposed Name Id",
           "description": "Account based marketing proposed name id.",
           "type": "string"
         },
-        "https://ns.adobe.com/experience/marketo/count": {
+        "marketo:count": {
           "title": "Count",
           "description": "Count.",
           "type": "number"
         },
-        "https://ns.adobe.com/experience/marketo/totalProposedNameCount": {
+        "marketo:totalProposedNameCount": {
           "title": "Total Proposed Name Count",
           "description": "Total proposed name count.",
           "type": "number"
         },
-        "https://ns.adobe.com/experience/marketo/leadScore": {
+        "marketo:leadScore": {
           "title": "Lead Score",
           "description": "Lead score.",
           "type": "number"
         },
-        "https://ns.adobe.com/experience/marketo/extendedLead": {
+        "marketo:extendedLead": {
           "title": "Extended Marketo Lead Attributes",
           "$ref": "https://ns.adobe.com/experience/marketo/marketo-contact-lead-person"
         }
@@ -72,6 +72,6 @@
       "$ref": "#/definitions/marketo-lead"
     }
   ],
-  "required": ["https://ns.adobe.com/experience/marketo/leadID"],
+  "required": ["marketo:leadID"],
   "meta:status": "experimental"
 }

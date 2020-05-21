@@ -59,7 +59,7 @@
         },
         "https://ns.adobe.com/experience/marketo/extendedLead": {
           "title": "Extended Marketo Lead Attributes",
-		  "$ref": "https://ns.adobe.com/experience/marketo/marketo-contact-lead-person"
+          "$ref": "https://ns.adobe.com/experience/marketo/marketo-contact-lead-person"
         }
       }
     }

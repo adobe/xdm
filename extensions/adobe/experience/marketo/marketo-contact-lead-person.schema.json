@@ -15,7 +15,7 @@
   "definitions": {
     "marketo-contact-lead-person": {
       "properties": {
-        "https://ns.adobe.com/experience/marketo/marketoIntegrationLogID": {
+        "marketoIntegrationLogID": {
           "title": "Marketo Integration Log Id",
           "description": "Marketo integration log id.",
           "type": "string"

@@ -74,6 +74,9 @@
             "https://ns.adobe.com/xdm/external/dnb": "Dun & Bradstreet",
             "https://ns.adobe.com/xdm/external/angellist": "Angellist"
           },
+		  "properties": {
+		    "://": {}
+		  },
           "patternProperties": {
             ".+://.+": {
               "type": "string",
@@ -96,6 +99,9 @@
             "https://ns.adobe.com/xdm/external/sic": "Standard Industrial Classification",
             "https://ns.adobe.com/xdm/external/naics": "North American Industry Classification System"
           },
+		  "properties": {
+		    "://": {}
+		  },
           "patternProperties": {
             ".+://.+": {
               "type": "string",

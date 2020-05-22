@@ -75,6 +75,7 @@
   "xdm:advertising": {
     "xdm:adAssetReference": {
       "@id": "https://data.adobe.io/entities/ad-id/AD1",
+      "xdm:creative": "00da07e-1264-30de-grgg-24ndf4fe456",
       "dc:title": "adNumber1",
       "xdm:advertiser": "AdCompany",
       "xdm:campaign": "731123",

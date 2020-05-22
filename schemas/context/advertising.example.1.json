@@ -24,7 +24,10 @@
     "dc:title": "adNumber2",
     "xdm:advertiser": "Sample advertiser",
     "xdm:campaign": "Sample campaign",
-    "xmpDM:duration": 10
+    "xmpDM:duration": 10,
+    "xdm:creativeURL": "www.creative.com",
+    "xdm:siteID": "www.ad-site.com",
+    "xdm:placementID": "www.place.org"
   },
   "xdm:firstQuartiles": {
     "xdm:value": 1.0

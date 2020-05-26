@@ -129,6 +129,13 @@
     ],
     "examples": [
         {
+            "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114231",
+            "xdm:playerName": "watchtv",
+            "xdm:adLoadType": "1",
+            "xdm:sessionTimeout": 1800,
+            "xdm:downloadedPlayback": false
+        },
+        {
             "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114230",
             "xdm:playerName": "watchtv",
             "xdm:videoSegment": "3-10",
@@ -169,13 +176,6 @@
                 "xdm:playerStateCount": 2,
                 "xdm:playerStateTime": 10
             }
-        },
-        {
-            "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114231",
-            "xdm:playerName": "watchtv",
-            "xdm:adLoadType": "1",
-            "xdm:sessionTimeout": 1800,
-            "xdm:downloadedPlayback": false
         }
     ]
 }

@@ -16,8 +16,8 @@ Asset information about the main content that was played, but present on all ads
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Audio](../external/id3/audio.schema.md) `https://id3.org/id3v2.4/audio`
   * [Series](../external/iptc/series.schema.md) `http://www.iptc.org/series`
-  * [Episode](../external/iptc/episode.schema.md) `http://www.iptc.org/season`
-  * [Season](../external/iptc/season.schema.md) `http://www.iptc.org/episode`
+  * [Season](../external/iptc/season.schema.md) `http://www.iptc.org/season`
+  * [Episode](../external/iptc/episode.schema.md) `http://www.iptc.org/episode`
 
 
 ## Timed media primary asset reference Examples
@@ -84,10 +84,10 @@ Asset information about the main content that was played, but present on all ads
 | [dc:title](#dctitle) | `string` | Optional |  | Timed media primary asset reference (this schema) |
 | [id3:Audio](#id3audio) | Audio | Optional |  | Timed media primary asset reference (this schema) |
 | [iptc4xmpExt:Creator](#iptc4xmpextcreator) | Creator | Optional |  | Timed media primary asset reference (this schema) |
-| [iptc4xmpExt:Episode](#iptc4xmpextepisode) | Season | Optional |  | Timed media primary asset reference (this schema) |
+| [iptc4xmpExt:Episode](#iptc4xmpextepisode) | Episode | Optional |  | Timed media primary asset reference (this schema) |
 | [iptc4xmpExt:Genre](#iptc4xmpextgenre) | `string[]` | Optional |  | Timed media primary asset reference (this schema) |
 | [iptc4xmpExt:Rating](#iptc4xmpextrating) | Rating | Optional |  | Timed media primary asset reference (this schema) |
-| [iptc4xmpExt:Season](#iptc4xmpextseason) | Episode | Optional |  | Timed media primary asset reference (this schema) |
+| [iptc4xmpExt:Season](#iptc4xmpextseason) | Season | Optional |  | Timed media primary asset reference (this schema) |
 | [iptc4xmpExt:Series](#iptc4xmpextseries) | Series | Optional |  | Timed media primary asset reference (this schema) |
 | [xdm:showType](#xdmshowtype) | `string` | Optional |  | Timed media primary asset reference (this schema) |
 | [xdm:streamFormat](#xdmstreamformat) | `string` | Optional |  | Timed media primary asset reference (this schema) |
@@ -190,13 +190,13 @@ The episode the show belongs to.
 
 `iptc4xmpExt:Episode`
 * is optional
-* type: Season
+* type: Episode
 * defined in this schema
 
 ### iptc4xmpExt:Episode Type
 
 
-* [Season](../external/iptc/season.schema.md) – `http://www.iptc.org/episode`
+* [Episode](../external/iptc/episode.schema.md) – `http://www.iptc.org/episode`
 
 
 
@@ -262,13 +262,13 @@ The season the show belongs to.
 
 `iptc4xmpExt:Season`
 * is optional
-* type: Episode
+* type: Season
 * defined in this schema
 
 ### iptc4xmpExt:Season Type
 
 
-* [Episode](../external/iptc/episode.schema.md) – `http://www.iptc.org/season`
+* [Season](../external/iptc/season.schema.md) – `http://www.iptc.org/season`
 
 
 

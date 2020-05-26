@@ -1,0 +1,26 @@
+{
+  "https://ns.adobe.com/experience/adcloud/creative": {
+    "xdm:experienceId": "1001",
+    "xdm:targetingBranchId": "4001",
+    "xdm:adThemeCreativeId": "3001",
+    "xdm:segments": [
+      {
+        "xdm:identityMap": {
+          "AdCloudSegments": [
+            {
+              "xdm:id": "112233",
+              "xdm:primary": true
+            }
+          ]
+        },
+        "xdm:segmentName": "Users with TV segment",
+        "xdm:description": "Segment is about users who have TV",
+        "xdm:segmentStatus": "ACTIVE",
+        "repo:createDate": "2018-10-23T12:00:00-06:00",
+        "repo:modifyDate": "2019-03-21T12:00:00-06:00",
+        "xdm:targeted": true,
+        "xdm:partnerId": "10"
+      }
+    ]
+  }
+}

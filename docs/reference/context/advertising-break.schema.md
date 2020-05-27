@@ -30,7 +30,7 @@ An ad break is an advertisement inserted into media content. Ad break describes 
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
-### Ad break ID
+### Ad Pod ID
 
 Identifier of the ad break.
 
@@ -51,7 +51,7 @@ Identifier of the ad break.
 
 
 ## dc:title
-### Ad break name
+### Pod name
 
 The friendly name of the ad break.
 
@@ -71,7 +71,7 @@ The friendly name of the ad break.
 
 
 ## xdm:offset
-### Ad break offset
+### Pod position
 
 The offset, in seconds, of the ad break from the start of the primary content.
 

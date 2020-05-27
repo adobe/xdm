@@ -26,8 +26,19 @@
           "type": "string",
           "description": "Name of the content player."
         },
+        "xdm:videoSegment": {
+          "title": "Video segment",
+          "type": "string",
+          "pattern": "^[0-9]+-[0-9]+$",
+          "description": "The interval that describes the part of the content that has been viewed in minutes."
+        },
+        "xdm:path": {
+          "title": "Video path",
+          "type": "string",
+          "description": "The path to the video in the app or site."
+        },
         "xdm:broadcastChannel": {
-          "title": "Distribution channel",
+          "title": "Content channel",
           "type": "string",
           "description": "Distribution channel from where the content was played."
         },
@@ -75,6 +86,11 @@
           "$ref": "https://ns.adobe.com/xdm/context/media-timed-qoe",
           "description": "Timed media properties related to the content playback's quality of experience (QoE)."
         },
+        "xdm:downloadedPlayback": {
+          "title": "Downloaded Playback",
+          "type": "boolean",
+          "description": "The stream was played locally on the device after being downloaded."
+        },
         "xdm:fullScreen": {
           "title": "Full screen",
           "$ref": "https://ns.adobe.com/xdm/context/player-state",
@@ -100,10 +116,7 @@
           "$ref": "https://ns.adobe.com/xdm/context/player-state",
           "description": "Timed media properties related to in focus player state."
         }
-      },
-      "required": [
-        "xdm:playerName"
-      ]
+      }
     }
   },
   "allOf": [

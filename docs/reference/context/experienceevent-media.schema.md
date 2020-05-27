@@ -25,6 +25,8 @@ This mixin is used to capture information regarding interactions with media such
       "xdm:primaryAssetReference": {
         "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234430",
         "dc:title": "Floki Begs Helga for Freedom",
+        "dc:creator": "Video Author",
+        "dc:publisher": "tvonline",
         "xmpDM:duration": 87,
         "iptc4xmpExt:Series": {
           "iptc4xmpExt:Name": "nba_highlights",
@@ -32,6 +34,7 @@ This mixin is used to capture information regarding interactions with media such
         },
         "xdm:showType": "episode",
         "xdm:streamFormat": "long",
+        "xdm:streamType": "video",
         "iptc4xmpExt:Season": {
           "iptc4xmpExt:Number": 1
         },
@@ -56,6 +59,8 @@ This mixin is used to capture information regarding interactions with media such
       "xdm:primaryAssetViewDetails": {
         "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114230",
         "xdm:playerName": "watchsportcnl",
+        "xdm:videoSegment": "3-10",
+        "xdm:path": "id:arg:ep:npqr.com:dfb21354-4ce7",
         "xdm:broadcastChannel": "WatchSportCnl",
         "xdm:broadcastContentType": "VOD",
         "xdm:streamFormat": "short",
@@ -94,10 +99,19 @@ This mixin is used to capture information regarding interactions with media such
           "xdm:timeToStart": {
             "xdm:value": 3
           },
-          "xdm:mediaSdkErrors": "300,500.300.200",
-          "xdm:playerSdkErrors": "custom.error.code",
-          "xdm:externalSdkErrors": "100-5,11.12"
-        }
+          "xdm:mediaSdkErrors": [
+            "300",
+            "500.300.200"
+          ],
+          "xdm:playerSdkErrors": [
+            "custom.error.code"
+          ],
+          "xdm:externalSdkErrors": [
+            "100-5",
+            "11.12"
+          ]
+        },
+        "xdm:downloadedPlayback": false
       },
       "xdm:impressions": {
         "xdm:value": 1
@@ -123,6 +137,18 @@ This mixin is used to capture information regarding interactions with media such
       "xdm:totalTimePlayed": {
         "xdm:value": 190
       },
+      "xdm:uniqueTimePlayed": {
+        "xdm:value": 80
+      },
+      "xdm:averageMinuteAudience": {
+        "xdm:value": 1.03
+      },
+      "xdm:adCount": {
+        "xdm:value": 3
+      },
+      "xdm:chapterCount": {
+        "xdm:value": 1
+      },
       "xdm:progress10": {
         "xdm:value": 1
       },
@@ -146,7 +172,9 @@ This mixin is used to capture information regarding interactions with media such
       },
       "xdm:pauseTime": {
         "xdm:value": 0
-      }
+      },
+      "xdm:idp": "MyTVOnline",
+      "xdm:mediaAuth": "Sample auth"
     }
   }
 }

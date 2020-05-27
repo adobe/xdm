@@ -40,9 +40,6 @@
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/experience/adcloud/adcloudsegment"
-    },
-    {
       "$ref": "#/definitions/creative"
     }
   ]

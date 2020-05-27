@@ -34,7 +34,7 @@
                     "type": "string",
                     "description": "Unique Identifier for the mobile application."
                 },
-                "xdm:id": {
+                "xdm:ECID": {
                     "title": "Identifier",
                     "type": "string",
                     "description": "Unique Identifier for this object."

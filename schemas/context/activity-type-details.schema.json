@@ -17,7 +17,7 @@
     "activity-type-details": {
       "properties": {
           "xdm:activityType": {
-                "title":"Activity Type additional properties",
+                "title":"Activity Type Details",
                 "$ref":"https://ns.adobe.com/xdm/common/activity-type-reference-details",
                 "description":"Additional properties for Activity type"
                 }

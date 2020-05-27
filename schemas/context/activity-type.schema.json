@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/activity-type",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Type of Activity for captured for a given task or a business event",
+  "title": "XDM Activity Type",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,

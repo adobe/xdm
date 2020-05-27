@@ -12,36 +12,45 @@
   "auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/record"], 
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record"
+  ],
   "description": "An XDM Business Campaign Member,which relates members such as contact/lead to a campaign",
   "definitions": {
-  "campaign-member": {
-      "xdm:campaignMemberID": {
-      "title": "Campaign Member ID",
-      "description": "Campaign Member unique identifer",
-      "type": "string"
-      },
-      "required":["xdm:campaignMemberID"],
-      "xdm:campaign": {
-      "title": "Campaign",
-      "description": "Campaign ID and Type associated as a key-value pair",
-      "properties":{
-        "xdm:ID":{
-          "title": "Campaign ID",
-          "description": "Campaign Unique Identifer",
+    "campaign-member": {
+      "properties": {
+        "xdm:campaignMemberID": {
+          "title": "Campaign Member ID",
+          "description": "Campaign Member unique identifer",
           "type": "string"
         },
-        "xdm:type":{
-          "title": "Campaign Type",
-          "description": "Campaign Type",
-         "type": "string"
+        "required": [
+          "xdm:campaignMemberID"
+        ],
+        "xdm:campaign": {
+          "title": "Campaign",
+          "description": "Campaign ID and Type associated as a key-value pair",
+          "properties": {
+            "xdm:ID": {
+              "title": "Campaign ID",
+              "description": "Campaign Unique Identifer",
+              "type": "string"
+            },
+            "xdm:type": {
+              "title": "Campaign Type",
+              "description": "Campaign Type",
+              "type": "string"
+            }
+          },
+          "required": [
+            "xdm:ID",
+            "xdm:type"
+          ]
         }
-      },
-      "required":["xdm:ID","xdm:type"]
+      }
     }
-  }  
-},
-"allOf": [
+  },
+  "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
@@ -56,4 +65,4 @@
     }
   ],
   "meta:status": "experimental"
-} 
+}

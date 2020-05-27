@@ -24,9 +24,6 @@
           "description": "Campaign Member unique identifer",
           "type": "string"
         },
-        "required": [
-          "xdm:campaignMemberID"
-        ],
         "xdm:campaign": {
           "title": "Campaign",
           "description": "Campaign ID and Type associated as a key-value pair",
@@ -47,7 +44,10 @@
             "xdm:type"
           ]
         }
-      }
+      },
+      "required": [
+        "xdm:campaignMemberID"
+      ]
     }
   },
   "allOf": [

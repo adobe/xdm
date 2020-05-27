@@ -12,7 +12,7 @@
   "auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:metaIntendToExtend": [
+  "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/campaign-member"
   ],
   "description": "An XDM Business Campaign Member",

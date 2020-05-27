@@ -18,7 +18,7 @@
     "definitions": {
         "profile-push-notification-details": {
             "properties": {
-                "xdm:pushDetails": {
+                "xdm:pushNotificationDetails": {
                     "title": "Push details",
                     "type": "array",
                     "description": "Push details array containing notification info required to send mobile push notification to a specific mobile application on a given device.",

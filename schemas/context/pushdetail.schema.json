@@ -34,10 +34,10 @@
                     "type": "string",
                     "description": "Unique Identifier for the mobile application."
                 },
-                "xdm:ECID": {
-                    "title": "Identifier",
-                    "type": "string",
-                    "description": "Unique Identifier for this object."
+                "xdm:tokenID": {
+                    "title": "Unique Identifier",
+                    "$ref": "https://ns.adobe.com/xdm/context/identity",
+                    "description": "The identity associated with this token."
                 }
             }
         }

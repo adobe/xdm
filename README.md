@@ -1,6 +1,6 @@
 # Experience Data Model (XDM) Schema
 
-[![CircleCI](https://circleci.com/gh/adobe/xdm.svg?style=svg)](https://circleci.com/gh/adobe/xdm) [![Greenkeeper badge](https://badges.greenkeeper.io/adobe/xdm.svg)](https://greenkeeper.io/)
+[![CircleCI](https://circleci.com/gh/adobe/xdm.svg?style=svg)](https://circleci.com/gh/adobe/xdm) 
 
 The [Experience Data Model](https://www.adobe.io/open/standards/xdm) (XDM) is the language of digital experiences.
 XDM is a publicly documented specification, driven by Adobe to improve the interoperability, expressiveness, and power of digital experiences.

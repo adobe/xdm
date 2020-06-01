@@ -5,7 +5,7 @@
             "xdm:token": "99156313-c9df-4e54-9c6c-5740f940c3ca",
             "xdm:platform": "apns",
             "xdm:blacklisted": false,
-            "xdm:tokenID": {
+            "xdm:identity": {
                 "xdm:namespace": {
                     "xdm:code": "ECID"
                 },

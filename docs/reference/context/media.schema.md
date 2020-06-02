@@ -63,6 +63,7 @@ Media context information for content related interactions.
       "xdm:broadcastChannel": "WatchMyTV",
       "xdm:broadcastContentType": "VOD",
       "xdm:streamFormat": "short",
+      "xdm:vhlVersion": "js-2.0.1.88-c8c0b1",
       "xdm:playerSDKVersion": {
         "xdm:version": "1.0.8"
       },

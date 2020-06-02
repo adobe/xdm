@@ -117,7 +117,7 @@ Indicates if an experience event was created through data federation or data sha
 
 
 ## xdm:impressions
-### Chapter impressions
+### Chapter starts
 
 Describes the intention to play a timed media asset. It does not measure success, as the user might abandon the content before the first frame is viewed.
 

@@ -23,16 +23,6 @@ View details for the main content playback, present on all ads and chapters that
 
 ```json
 {
-  "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114231",
-  "xdm:playerName": "watchtv",
-  "xdm:adLoadType": "1",
-  "xdm:sessionTimeout": 1800,
-  "xdm:downloadedPlayback": false
-}
-```
-
-```json
-{
   "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114230",
   "xdm:playerName": "watchtv",
   "xdm:videoSegment": "3-10",
@@ -40,6 +30,7 @@ View details for the main content playback, present on all ads and chapters that
   "xdm:broadcastChannel": "WatchTV",
   "xdm:broadcastContentType": "VOD",
   "xdm:streamFormat": "short",
+  "xdm:vhlVersion": "js-2.0.1.88-c8c0b1",
   "xdm:playerSDKVersion": {
     "xdm:version": "1.0.8"
   },
@@ -76,6 +67,16 @@ View details for the main content playback, present on all ads and chapters that
 }
 ```
 
+```json
+{
+  "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114231",
+  "xdm:playerName": "watchtv",
+  "xdm:adLoadType": "1",
+  "xdm:sessionTimeout": 1800,
+  "xdm:downloadedPlayback": false
+}
+```
+
 
 # Primary asset view details Properties
 
@@ -98,6 +99,7 @@ View details for the main content playback, present on all ads and chapters that
 | [xdm:qoe](#xdmqoe) | Timed media quality of experience | Optional | Primary asset view details (this schema) |
 | [xdm:sessionTimeout](#xdmsessiontimeout) | `integer` | Optional | Primary asset view details (this schema) |
 | [xdm:sourceFeed](#xdmsourcefeed) | `string` | Optional | Primary asset view details (this schema) |
+| [xdm:vhlVersion](#xdmvhlversion) | `string` | Optional | Primary asset view details (this schema) |
 | [xdm:videoSegment](#xdmvideosegment) | `string` | Optional | Primary asset view details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -436,6 +438,26 @@ The type of feed, which can either represent actual feed-related data such as  E
 * defined in this schema
 
 ### xdm:sourceFeed Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:vhlVersion
+### VHL version
+
+The Media SDK version used for the tracking session.
+
+`xdm:vhlVersion`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:vhlVersion Type
 
 
 `string`

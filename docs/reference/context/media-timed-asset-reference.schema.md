@@ -24,6 +24,18 @@ Asset information about the main content that was played, but present on all ads
 
 ```json
 {
+  "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234431",
+  "dc:creator": "Jimmy Page",
+  "dc:title": "Stairway to Heaven",
+  "xdm:artist": "Led Zeppelin",
+  "xdm:album": "Led Zeppelin IV",
+  "xmpDM:duration": 482,
+  "xdm:streamType": "audio"
+}
+```
+
+```json
+{
   "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234430",
   "dc:title": "Floki Begs Helga for Freedom",
   "dc:creator": "Video Author",
@@ -63,24 +75,13 @@ Asset information about the main content that was played, but present on all ads
 }
 ```
 
-```json
-{
-  "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234431",
-  "dc:creator": "Jimmy Page",
-  "dc:title": "Stairway to Heaven",
-  "xdm:artist": "Led Zeppelin",
-  "xdm:album": "Led Zeppelin IV",
-  "xmpDM:duration": 482,
-  "xdm:streamType": "audio"
-}
-```
-
 
 # Timed media primary asset reference Properties
 
 | Property | Type | Required | Default | Defined by |
 |----------|------|----------|---------|------------|
 | [@id](#id) | `string` | Optional |  | Timed media primary asset reference (this schema) |
+| [dc:creator](#dccreator) | `string` | Optional |  | Timed media primary asset reference (this schema) |
 | [dc:title](#dctitle) | `string` | Optional |  | Timed media primary asset reference (this schema) |
 | [id3:Audio](#id3audio) | Audio | Optional |  | Timed media primary asset reference (this schema) |
 | [iptc4xmpExt:Creator](#iptc4xmpextcreator) | Creator | Optional |  | Timed media primary asset reference (this schema) |
@@ -118,8 +119,28 @@ Identifier of the content, which can be used to tie back to other industry or CM
 
 
 
+## dc:creator
+### Author
+
+Name of the media author.
+
+`dc:creator`
+* is optional
+* type: `string`
+* defined in this schema
+
+### dc:creator Type
+
+
+`string`
+
+
+
+
+
+
 ## dc:title
-### Media name
+### Content name
 
 The friendly, human-readable name of the timed media asset.
 
@@ -334,6 +355,7 @@ Free-form format of the stream for example, short or long.
 
 
 ## xdm:streamType
+### Stream type
 
 The type of the media stream
 

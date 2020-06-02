@@ -31,12 +31,12 @@
                     "description": "Timed media chapter information."
                 },
                 "xdm:impressions": {
-                    "title": "Media impressions",
+                    "title": "Media starts",
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
                     "description": "Describes the intention to play a timed media asset. It does not measure success, as the user might abandon the content before the first frame is viewed."
                 },
                 "xdm:completes": {
-                    "title": "Media completes",
+                    "title": "Content completes",
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
                     "description": "Indicates if a timed media asset was watched to completion, this does not necessarily mean the viewer watched the whole video; viewer could have skipped ahead."
                 },
@@ -51,7 +51,7 @@
                     "description": "Indicates the experience event was created through data federation or data sharing."
                 },
                 "xdm:starts": {
-                    "title": "Media starts",
+                    "title": "Content starts",
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
                     "description": "Indicates the first frame of the timed media asset has been viewed for example, the viewer did not abandon during pre-roll ad, or buffering."
                 },
@@ -116,12 +116,22 @@
                     "description": "Indicates that the playhead passed the 95% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted."
                 },
                 "xdm:resumes": {
-                    "title": "Resumes",
+                    "title": "Content resumes",
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
                     "description": "Marks each playback that was resumed after more than 30 minutes of buffer, pause, or stall period."
                 },
+                "xdm:estimatedStreams": {
+                    "title": "Estimated streams",
+                    "$ref": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "The estimated number of video or audio streams per each individual content."
+                },
+                "xdm:pauseImpactedStreams": {
+                    "title": "Pause impacted streams",
+                    "$ref": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "Indicates if one or more pauses occurred during the playback of a single media item."
+                },
                 "xdm:pauses": {
-                    "title": "Pauses",
+                    "title": "Pause events",
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
                     "description": "The number of pause periods that occurred during playback."
                 },
@@ -139,6 +149,11 @@
                     "title": "Media authorized",
                     "type": "string",
                     "description": "The user has been authorized via authentication."
+                },
+                "xdm:dayPart": {
+                    "title": "Day part",
+                    "type": "string",
+                    "description": "Defines the time of the day when the content was broadcast or played."
                 }
             },
             "required": [

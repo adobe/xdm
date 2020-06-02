@@ -44,6 +44,7 @@ The information related to advertising activity in relationship to the experienc
   },
   "xdm:adAssetReference": {
     "@id": "https://data.adobe.io/entities/ad-id/AD1",
+    "xdm:creative": "6738737",
     "dc:title": "adNumber2",
     "xdm:advertiser": "Sample advertiser",
     "xdm:campaign": "Sample campaign",

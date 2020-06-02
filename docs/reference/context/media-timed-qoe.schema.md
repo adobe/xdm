@@ -23,11 +23,17 @@ Timed media properties related to the content playback's quality of experience (
   "xdm:errors": {
     "xdm:value": 0
   },
+  "xdm:errorImpactedStreams": {
+    "xdm:value": 0
+  },
   "xdm:buffers": {
     "xdm:value": 4
   },
   "xdm:bufferTime": {
     "xdm:value": 5
+  },
+  "xdm:bufferImpactedStreams": {
+    "xdm:value": 2
   },
   "xdm:stalls": {
     "xdm:value": 0
@@ -35,13 +41,23 @@ Timed media properties related to the content playback's quality of experience (
   "xdm:stallTime": {
     "xdm:value": 0
   },
+  "xdm:stallingImpactedStreams": {
+    "xdm:value": 0
+  },
   "xdm:bitrateChanges": {
+    "xdm:value": 0
+  },
+  "xdm:bitrateChangeImpactedStreams": {
     "xdm:value": 0
   },
   "xdm:bitrateAverage": {
     "xdm:value": 320
   },
+  "xdm:bitrateAverageBucket": "800-899",
   "xdm:droppedFrames": {
+    "xdm:value": 2
+  },
+  "xdm:droppedFrameImpactedStreams": {
     "xdm:value": 2
   },
   "xdm:timeToStart": {
@@ -66,15 +82,21 @@ Timed media properties related to the content playback's quality of experience (
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [xdm:bitrateAverage](#xdmbitrateaverage) | Measure | Optional | Timed media quality of experience (this schema) |
+| [xdm:bitrateAverageBucket](#xdmbitrateaveragebucket) | `string` | Optional | Timed media quality of experience (this schema) |
+| [xdm:bitrateChangeImpactedStreams](#xdmbitratechangeimpactedstreams) | Measure | Optional | Timed media quality of experience (this schema) |
 | [xdm:bitrateChanges](#xdmbitratechanges) | Measure | Optional | Timed media quality of experience (this schema) |
+| [xdm:bufferImpactedStreams](#xdmbufferimpactedstreams) | Measure | Optional | Timed media quality of experience (this schema) |
 | [xdm:bufferTime](#xdmbuffertime) | Measure | Optional | Timed media quality of experience (this schema) |
 | [xdm:buffers](#xdmbuffers) | Measure | Optional | Timed media quality of experience (this schema) |
+| [xdm:droppedFrameImpactedStreams](#xdmdroppedframeimpactedstreams) | Measure | Optional | Timed media quality of experience (this schema) |
 | [xdm:droppedFrames](#xdmdroppedframes) | Measure | Optional | Timed media quality of experience (this schema) |
+| [xdm:errorImpactedStreams](#xdmerrorimpactedstreams) | Measure | Optional | Timed media quality of experience (this schema) |
 | [xdm:errors](#xdmerrors) | Measure | Optional | Timed media quality of experience (this schema) |
 | [xdm:externalSdkErrors](#xdmexternalsdkerrors) | `string[]` | Optional | Timed media quality of experience (this schema) |
 | [xdm:mediaSdkErrors](#xdmmediasdkerrors) | `string[]` | Optional | Timed media quality of experience (this schema) |
 | [xdm:playerSdkErrors](#xdmplayersdkerrors) | `string[]` | Optional | Timed media quality of experience (this schema) |
 | [xdm:stallTime](#xdmstalltime) | Measure | Optional | Timed media quality of experience (this schema) |
+| [xdm:stallingImpactedStreams](#xdmstallingimpactedstreams) | Measure | Optional | Timed media quality of experience (this schema) |
 | [xdm:stalls](#xdmstalls) | Measure | Optional | Timed media quality of experience (this schema) |
 | [xdm:timeToStart](#xdmtimetostart) | Measure | Optional | Timed media quality of experience (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -98,6 +120,45 @@ A weighted average of all bitrate values related to the play duration that occur
 
 
 
+## xdm:bitrateAverageBucket
+### Average bitrate bucket
+
+The average bitrate (in kbps). The value is predefined buckets at 100kbps intervals.
+
+`xdm:bitrateAverageBucket`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:bitrateAverageBucket Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:bitrateChangeImpactedStreams
+### Bitrate change impacted streams
+
+The number of streams in which bitrate changes occurred.
+
+`xdm:bitrateChangeImpactedStreams`
+* is optional
+* type: Measure
+* defined in this schema
+
+### xdm:bitrateChangeImpactedStreams Type
+
+
+* [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
 ## xdm:bitrateChanges
 ### Bitrate changes
 
@@ -109,6 +170,25 @@ The number of bitrate change events that occurred during a playback session.
 * defined in this schema
 
 ### xdm:bitrateChanges Type
+
+
+* [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
+## xdm:bufferImpactedStreams
+### Buffer impacted streams
+
+The number of streams impacted by buffering.
+
+`xdm:bufferImpactedStreams`
+* is optional
+* type: Measure
+* defined in this schema
+
+### xdm:bufferImpactedStreams Type
 
 
 * [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
@@ -155,6 +235,25 @@ The number of buffer states that occurred during a playback session.
 
 
 
+## xdm:droppedFrameImpactedStreams
+### Dropped frame impacted streams
+
+The number of streams in which frames were dropped.
+
+`xdm:droppedFrameImpactedStreams`
+* is optional
+* type: Measure
+* defined in this schema
+
+### xdm:droppedFrameImpactedStreams Type
+
+
+* [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
 ## xdm:droppedFrames
 ### Dropped frames
 
@@ -166,6 +265,25 @@ The number of frames dropped during playback of the main content.
 * defined in this schema
 
 ### xdm:droppedFrames Type
+
+
+* [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
+## xdm:errorImpactedStreams
+### Error impacted streams
+
+The number of streams in which an error event occurred.
+
+`xdm:errorImpactedStreams`
+* is optional
+* type: Measure
+* defined in this schema
+
+### xdm:errorImpactedStreams Type
 
 
 * [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
@@ -221,7 +339,7 @@ All items must be of the type:
 
 
 ## xdm:mediaSdkErrors
-### SDK Error IDs
+### Media SDK Error IDs
 
 The error IDs encountered during a playback session that originated in the Media SDK.
 
@@ -248,7 +366,7 @@ All items must be of the type:
 
 
 ## xdm:playerSdkErrors
-### Player Error IDs
+### Player SDK Error IDs
 
 The error IDs encountered during a playback session that originated in the Player.
 
@@ -293,8 +411,27 @@ Describes the duration in seconds in which the playback was stalled during playb
 
 
 
+## xdm:stallingImpactedStreams
+### Stalling impacted streams
+
+The number of streams impacted by stalling.
+
+`xdm:stallingImpactedStreams`
+* is optional
+* type: Measure
+* defined in this schema
+
+### xdm:stallingImpactedStreams Type
+
+
+* [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
 ## xdm:stalls
-### Stalls
+### Stalling events
 
 The number of stall states that occurred during a playback session.
 

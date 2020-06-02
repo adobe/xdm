@@ -61,6 +61,11 @@
                     "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
                     "description": "The SDK version used by the player."
                 },
+                "xdm:vhlVersion": {
+                    "title": "VHL version",
+                    "type": "string",
+                    "description": "The Media SDK version used for the tracking session."
+                },
                 "xdm:broadcastNetwork": {
                     "title": "Broadcast network",
                     "type": "string",
@@ -129,13 +134,6 @@
     ],
     "examples": [
         {
-            "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114231",
-            "xdm:playerName": "watchtv",
-            "xdm:adLoadType": "1",
-            "xdm:sessionTimeout": 1800,
-            "xdm:downloadedPlayback": false
-        },
-        {
             "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114230",
             "xdm:playerName": "watchtv",
             "xdm:videoSegment": "3-10",
@@ -143,6 +141,7 @@
             "xdm:broadcastChannel": "WatchTV",
             "xdm:broadcastContentType": "VOD",
             "xdm:streamFormat": "short",
+            "xdm:vhlVersion": "js-2.0.1.88-c8c0b1",
             "xdm:playerSDKVersion": {
                 "xdm:version": "1.0.8"
             },
@@ -176,6 +175,13 @@
                 "xdm:playerStateCount": 2,
                 "xdm:playerStateTime": 10
             }
+        },
+        {
+            "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114231",
+            "xdm:playerName": "watchtv",
+            "xdm:adLoadType": "1",
+            "xdm:sessionTimeout": 1800,
+            "xdm:downloadedPlayback": false
         }
     ]
 }

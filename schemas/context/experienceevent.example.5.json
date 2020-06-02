@@ -52,7 +52,7 @@
             "iptc4xmpExt:Name": "SportTV"
           }
         ],
-        "dc:date": "2016-01-05",
+        "xdm:firstAirDate": "2016-01-05",
         "xmpDM:releaseDate": "2016-01-25"
       },
       "xdm:primaryAssetViewDetails": {
@@ -77,7 +77,7 @@
   "xdm:advertising": {
     "xdm:adAssetReference": {
       "@id": "https://data.adobe.io/entities/ad-id/AD1",
-      "xdm:creative": "00da07e-1264-30de-grgg-24ndf4fe456",
+      "xdm:creativeID": "00da07e-1264-30de-grgg-24ndf4fe456",
       "dc:title": "adNumber1",
       "xdm:advertiser": "AdCompany",
       "xdm:campaign": "731123",

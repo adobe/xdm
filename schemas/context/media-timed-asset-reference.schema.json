@@ -120,7 +120,7 @@
             "$ref": "http://www.iptc.org/creator"
           }
         },
-        "dc:date": {
+        "xdm:firstAirDate": {
           "title": "First air date",
           "type": "string",
           "description": "The date when the content first aired on television."

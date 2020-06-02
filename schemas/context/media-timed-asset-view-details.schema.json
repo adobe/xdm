@@ -61,6 +61,11 @@
           "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
           "description": "The SDK version used by the player."
         },
+        "xdm:vhlVersion": {
+          "title": "VHL version",
+          "type": "string",
+          "description": "The Media SDK version used for the tracking session."
+        },
         "xdm:broadcastNetwork": {
           "title": "Broadcast network",
           "type": "string",

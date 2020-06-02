@@ -30,8 +30,13 @@
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Describes the total amount of time in seconds, spent buffering."
         },
+        "xdm:bufferImpactedStreams": {
+          "title": "Buffer impacted streams",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "The number of streams impacted by buffering."
+        },
         "xdm:stalls": {
-          "title": "Stalls",
+          "title": "Stalling events",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "The number of stall states that occurred during a playback session."
         },
@@ -39,6 +44,11 @@
           "title": "Total stalling duration",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Describes the duration in seconds in which the playback was stalled during playback."
+        },
+        "xdm:stallingImpactedStreams": {
+          "title": "Stalling impacted streams",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "The number of streams impacted by stalling."
         },
         "xdm:bitrateChanges": {
           "title": "Bitrate changes",
@@ -50,10 +60,25 @@
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "A weighted average of all bitrate values related to the play duration that occurred during a playback session."
         },
+        "xdm:bitrateAverageBucket": {
+          "title": "Average bitrate bucket",
+          "type": "string",
+          "description": "The average bitrate (in kbps). The value is predefined buckets at 100kbps intervals."
+        },
+        "xdm:bitrateChangeImpactedStreams": {
+          "title": "Bitrate change impacted streams",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "The number of streams in which bitrate changes occurred."
+        },
         "xdm:droppedFrames": {
           "title": "Dropped frames",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "The number of frames dropped during playback of the main content."
+        },
+        "xdm:droppedFrameImpactedStreams": {
+          "title": "Dropped frame impacted streams",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "The number of streams in which frames were dropped."
         },
         "xdm:timeToStart": {
           "title": "Time to start",
@@ -61,7 +86,7 @@
           "description": "Describes the duration (in seconds) passed between video load and start."
         },
         "xdm:playerSdkErrors": {
-          "title": "Player Error IDs",
+          "title": "Player SDK Error IDs",
           "type": "array",
           "items": {
             "type": "string"
@@ -69,7 +94,7 @@
           "description": "The error IDs encountered during a playback session that originated in the Player."
         },
         "xdm:mediaSdkErrors": {
-          "title": "SDK Error IDs",
+          "title": "Media SDK Error IDs",
           "type": "array",
           "items": {
             "type": "string"
@@ -83,6 +108,11 @@
             "type": "string"
           },
           "description": "The error IDs encountered during a playback session that originated outside the Player or SDK."
+        },
+        "xdm:errorImpactedStreams": {
+          "title": "Error impacted streams",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "The number of streams in which an error event occurred."
         }
       }
     }

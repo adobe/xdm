@@ -27,7 +27,7 @@
           "description": "The number of times that player state was set on the stream."
         },
         "xdm:playerStateTime": {
-          "title": "Show type",
+          "title": "Player state time",
           "type": "integer",
           "minimum": 0,
           "description": "The total duration of that player state."

@@ -75,7 +75,7 @@ Whether or not the player state is set on that state.
 
 
 ## xdm:playerStateTime
-### Show type
+### Player state time
 
 The total duration of that player state.
 

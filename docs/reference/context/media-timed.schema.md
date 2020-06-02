@@ -118,13 +118,16 @@ Information related to timed media such main content, ads, and chapters.
 | [xdm:averageMinuteAudience](#xdmaverageminuteaudience) | Measure | Optional | Timed media information (this schema) |
 | [xdm:chapterCount](#xdmchaptercount) | Measure | Optional | Timed media information (this schema) |
 | [xdm:completes](#xdmcompletes) | Measure | Optional | Timed media information (this schema) |
+| [xdm:dayPart](#xdmdaypart) | `string` | Optional | Timed media information (this schema) |
 | [xdm:dropBeforeStarts](#xdmdropbeforestarts) | Measure | Optional | Timed media information (this schema) |
+| [xdm:estimatedStreams](#xdmestimatedstreams) | Measure | Optional | Timed media information (this schema) |
 | [xdm:federated](#xdmfederated) | Measure | Optional | Timed media information (this schema) |
 | [xdm:idp](#xdmidp) | `string` | Optional | Timed media information (this schema) |
 | [xdm:impressions](#xdmimpressions) | Measure | Optional | Timed media information (this schema) |
 | [xdm:mediaAuth](#xdmmediaauth) | `string` | Optional | Timed media information (this schema) |
 | [xdm:mediaChapter](#xdmmediachapter) | Timed media chapter information | Optional | Timed media information (this schema) |
 | [xdm:mediaSegmentViews](#xdmmediasegmentviews) | Measure | Optional | Timed media information (this schema) |
+| [xdm:pauseImpactedStreams](#xdmpauseimpactedstreams) | Measure | Optional | Timed media information (this schema) |
 | [xdm:pauseTime](#xdmpausetime) | Measure | Optional | Timed media information (this schema) |
 | [xdm:pauses](#xdmpauses) | Measure | Optional | Timed media information (this schema) |
 | [xdm:primaryAssetReference](#xdmprimaryassetreference) | Timed media primary asset reference | Optional | Timed media information (this schema) |
@@ -199,7 +202,7 @@ The number of chapters started during the playback.
 
 
 ## xdm:completes
-### Media completes
+### Content completes
 
 Indicates if a timed media asset was watched to completion, this does not necessarily mean the viewer watched the whole video; viewer could have skipped ahead.
 
@@ -217,6 +220,26 @@ Indicates if a timed media asset was watched to completion, this does not necess
 
 
 
+## xdm:dayPart
+### Day part
+
+Defines the time of the day when the content was broadcast or played.
+
+`xdm:dayPart`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:dayPart Type
+
+
+`string`
+
+
+
+
+
+
 ## xdm:dropBeforeStarts
 ### Drops before starts
 
@@ -228,6 +251,25 @@ Indicates the user abandoned the media stream before the first frame for example
 * defined in this schema
 
 ### xdm:dropBeforeStarts Type
+
+
+* [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
+## xdm:estimatedStreams
+### Estimated streams
+
+The estimated number of video or audio streams per each individual content.
+
+`xdm:estimatedStreams`
+* is optional
+* type: Measure
+* defined in this schema
+
+### xdm:estimatedStreams Type
 
 
 * [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
@@ -276,7 +318,7 @@ The MVPD (Multichannel Video Programming Distributor) provided via authenticatio
 
 
 ## xdm:impressions
-### Media impressions
+### Media starts
 
 Describes the intention to play a timed media asset. It does not measure success, as the user might abandon the content before the first frame is viewed.
 
@@ -352,6 +394,25 @@ Indicates when at least one frame, not necessarily the first has been viewed.
 
 
 
+## xdm:pauseImpactedStreams
+### Pause impacted streams
+
+Indicates if one or more pauses occurred during the playback of a single media item.
+
+`xdm:pauseImpactedStreams`
+* is optional
+* type: Measure
+* defined in this schema
+
+### xdm:pauseImpactedStreams Type
+
+
+* [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
 ## xdm:pauseTime
 ### Total pause duration
 
@@ -372,7 +433,7 @@ Describes the duration in seconds in which playback was paused by the user.
 
 
 ## xdm:pauses
-### Pauses
+### Pause events
 
 The number of pause periods that occurred during playback.
 
@@ -524,7 +585,7 @@ Indicates that the playhead passed the 95% marker of media based on stream lengt
 
 
 ## xdm:resumes
-### Resumes
+### Content resumes
 
 Marks each playback that was resumed after more than 30 minutes of buffer, pause, or stall period.
 
@@ -543,7 +604,7 @@ Marks each playback that was resumed after more than 30 minutes of buffer, pause
 
 
 ## xdm:starts
-### Media starts
+### Content starts
 
 Indicates the first frame of the timed media asset has been viewed for example, the viewer did not abandon during pre-roll ad, or buffering.
 

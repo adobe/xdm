@@ -26,7 +26,7 @@
                     "description": "View details for the chapter playback captured by the experience event."
                 },
                 "xdm:impressions": {
-                    "title": "Chapter impressions",
+                    "title": "Chapter starts",
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
                     "description": "Describes the intention to play a timed media asset. It does not measure success, as the user might abandon the content before the first frame is viewed."
                 },

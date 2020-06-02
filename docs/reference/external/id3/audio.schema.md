@@ -28,9 +28,9 @@ Audio metadata based on [ID3 V2.4](https://id3.org/id3v2.4.0-frames)
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## id3:TPUB
-### Publisher
+### Record label
 
-The MP3 publisher.
+Name of the record label.
 
 `id3:TPUB`
 * is optional

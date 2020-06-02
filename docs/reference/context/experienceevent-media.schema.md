@@ -64,6 +64,7 @@ This mixin is used to capture information regarding interactions with media such
         "xdm:broadcastChannel": "WatchSportCnl",
         "xdm:broadcastContentType": "VOD",
         "xdm:streamFormat": "short",
+        "xdm:vhlVersion": "js-2.0.1.88-c8c0b1",
         "xdm:playerSDKVersion": {
           "xdm:version": "1.0.8"
         },
@@ -75,16 +76,25 @@ This mixin is used to capture information regarding interactions with media such
           "xdm:errors": {
             "xdm:value": 0
           },
+          "xdm:errorImpactedStreams": {
+            "xdm:value": 0
+          },
           "xdm:buffers": {
             "xdm:value": 4
           },
           "xdm:bufferTime": {
             "xdm:value": 5
           },
+          "xdm:bufferImpactedStreams": {
+            "xdm:value": 2
+          },
           "xdm:stalls": {
             "xdm:value": 0
           },
           "xdm:stallTime": {
+            "xdm:value": 0
+          },
+          "xdm:stallingImpactedStreams": {
             "xdm:value": 0
           },
           "xdm:bitrateChanges": {
@@ -93,7 +103,14 @@ This mixin is used to capture information regarding interactions with media such
           "xdm:bitrateAverage": {
             "xdm:value": 320
           },
+          "xdm:bitrateAverageBucket": "800-899",
+          "xdm:bitrateChangeImpactedStreams": {
+            "xdm:value": 0
+          },
           "xdm:droppedFrames": {
+            "xdm:value": 2
+          },
+          "xdm:droppedFrameImpactedStreams": {
             "xdm:value": 2
           },
           "xdm:timeToStart": {
@@ -167,6 +184,12 @@ This mixin is used to capture information regarding interactions with media such
       "xdm:resumes": {
         "xdm:value": 0
       },
+      "xdm:estimatedStreams": {
+        "xdm:value": 2
+      },
+      "xdm:pauseImpactedStreams": {
+        "xdm:value": 3
+      },
       "xdm:pauses": {
         "xdm:value": 0
       },
@@ -174,7 +197,8 @@ This mixin is used to capture information regarding interactions with media such
         "xdm:value": 0
       },
       "xdm:idp": "MyTVOnline",
-      "xdm:mediaAuth": "Sample auth"
+      "xdm:mediaAuth": "Sample auth",
+      "xdm:dayPart": "daytime"
     }
   }
 }

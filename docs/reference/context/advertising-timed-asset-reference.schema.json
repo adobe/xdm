@@ -20,6 +20,11 @@
                     "format": "uri-reference",
                     "description": "Identifier of the ad asset provided by media analytics customers. Following the Ad-ID standard [https://www.ad-id.org]."
                 },
+                "xdm:creativeID": {
+                    "title": "Ad creative ID",
+                    "type": "string",
+                    "description": "The ID of the ad creative."
+                },
                 "dc:title": {
                     "title": "Ad name",
                     "type": "string",
@@ -58,6 +63,7 @@
     "examples": [
         {
             "@id": "https://data.adobe.io/entities/asser-reference/23423",
+            "xdm:creative": "6738737",
             "dc:title": "Acme offer 21",
             "xmpDM:duration": 23
         }

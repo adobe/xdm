@@ -22,9 +22,14 @@
                     "description": "Identifier of the content, which can be used to tie back to other industry or CMS IDs."
                 },
                 "dc:title": {
-                    "title": "Media name",
+                    "title": "Content name",
                     "type": "string",
                     "description": "The friendly, human-readable name of the timed media asset."
+                },
+                "dc:creator": {
+                    "title": "Author",
+                    "type": "string",
+                    "description": "Name of the media author."
                 },
                 "id3:Audio": {
                     "title": "Audio",
@@ -62,6 +67,7 @@
                     "description": "Free-form format of the stream for example, short or long."
                 },
                 "xdm:streamType": {
+                    "title": "Stream type",
                     "description": "The type of the media stream",
                     "type": "string",
                     "default": "video",
@@ -126,6 +132,15 @@
     ],
     "examples": [
         {
+            "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234431",
+            "dc:creator": "Jimmy Page",
+            "dc:title": "Stairway to Heaven",
+            "xdm:artist": "Led Zeppelin",
+            "xdm:album": "Led Zeppelin IV",
+            "xmpDM:duration": 482,
+            "xdm:streamType": "audio"
+        },
+        {
             "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234430",
             "dc:title": "Floki Begs Helga for Freedom",
             "dc:creator": "Video Author",
@@ -162,15 +177,6 @@
                     "iptc4xmpExt:Name": "MyChannelTV"
                 }
             ]
-        },
-        {
-            "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234431",
-            "dc:creator": "Jimmy Page",
-            "dc:title": "Stairway to Heaven",
-            "xdm:artist": "Led Zeppelin",
-            "xdm:album": "Led Zeppelin IV",
-            "xmpDM:duration": 482,
-            "xdm:streamType": "audio"
         }
     ]
 }

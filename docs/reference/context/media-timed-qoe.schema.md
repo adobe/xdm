@@ -88,6 +88,7 @@ Timed media properties related to the content playback's quality of experience (
 | [xdm:bufferImpactedStreams](#xdmbufferimpactedstreams) | Measure | Optional | Timed media quality of experience (this schema) |
 | [xdm:bufferTime](#xdmbuffertime) | Measure | Optional | Timed media quality of experience (this schema) |
 | [xdm:buffers](#xdmbuffers) | Measure | Optional | Timed media quality of experience (this schema) |
+| [xdm:dropBeforeStarts](#xdmdropbeforestarts) | Measure | Optional | Timed media quality of experience (this schema) |
 | [xdm:droppedFrameImpactedStreams](#xdmdroppedframeimpactedstreams) | Measure | Optional | Timed media quality of experience (this schema) |
 | [xdm:droppedFrames](#xdmdroppedframes) | Measure | Optional | Timed media quality of experience (this schema) |
 | [xdm:errorImpactedStreams](#xdmerrorimpactedstreams) | Measure | Optional | Timed media quality of experience (this schema) |
@@ -227,6 +228,25 @@ The number of buffer states that occurred during a playback session.
 * defined in this schema
 
 ### xdm:buffers Type
+
+
+* [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
+## xdm:dropBeforeStarts
+### Drops before starts
+
+Indicates the user abandoned the media stream before the first frame for example, during the pre-roll ad break, or due to an error while loading the content from the CDN.
+
+`xdm:dropBeforeStarts`
+* is optional
+* type: Measure
+* defined in this schema
+
+### xdm:dropBeforeStarts Type
 
 
 * [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`

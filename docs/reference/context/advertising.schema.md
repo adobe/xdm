@@ -44,11 +44,14 @@ The information related to advertising activity in relationship to the experienc
   },
   "xdm:adAssetReference": {
     "@id": "https://data.adobe.io/entities/ad-id/AD1",
-    "xdm:creative": "6738737",
+    "xdm:creativeID": "6738737",
     "dc:title": "adNumber2",
     "xdm:advertiser": "Sample advertiser",
     "xdm:campaign": "Sample campaign",
-    "xmpDM:duration": 10
+    "xmpDM:duration": 10,
+    "xdm:creativeURL": "www.creative.com",
+    "xdm:siteID": "www.ad-site.com",
+    "xdm:placementID": "www.place.org"
   },
   "xdm:firstQuartiles": {
     "xdm:value": 1
@@ -66,6 +69,7 @@ The information related to advertising activity in relationship to the experienc
 | [xdm:clicks](#xdmclicks) | Measure | Optional | Advertising (this schema) |
 | [xdm:completes](#xdmcompletes) | Measure | Optional | Advertising (this schema) |
 | [xdm:conversions](#xdmconversions) | Measure | Optional | Advertising (this schema) |
+| [xdm:downloadedPlayback](#xdmdownloadedplayback) | `boolean` | Optional | Advertising (this schema) |
 | [xdm:federated](#xdmfederated) | Measure | Optional | Advertising (this schema) |
 | [xdm:firstQuartiles](#xdmfirstquartiles) | Measure | Optional | Advertising (this schema) |
 | [xdm:impressions](#xdmimpressions) | Measure | Optional | Advertising (this schema) |
@@ -182,6 +186,25 @@ A customer pre-defined action or actions which triggers an event for performance
 
 
 * [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
+## xdm:downloadedPlayback
+### Ad downloaded flag
+
+Set to true when the hit is generated due to playing a downloaded ad session.
+
+`xdm:downloadedPlayback`
+* is optional
+* type: `boolean`
+* defined in this schema
+
+### xdm:downloadedPlayback Type
+
+
+`boolean`
 
 
 

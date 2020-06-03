@@ -235,7 +235,7 @@ Timed media properties related to close caption player state.
 
 
 ## xdm:downloadedPlayback
-### Downloaded Playback
+### Media downloaded flag
 
 The stream was played locally on the device after being downloaded.
 

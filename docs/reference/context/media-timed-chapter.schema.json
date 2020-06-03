@@ -44,6 +44,11 @@
                     "title": "Chapter federated",
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
                     "description": "Indicates if an experience event was created through data federation or data sharing."
+                },
+                "xdm:downloadedPlayback": {
+                    "title": "Chapter downloaded flag",
+                    "type": "boolean",
+                    "description": "Set to true when the hit is generated due to playing a downloaded chapter content session."
                 }
             }
         }

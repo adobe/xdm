@@ -44,6 +44,11 @@
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
                     "description": "Indicates if an experience event was created through data federation such as data sharing between customers."
                 },
+                "xdm:downloadedPlayback": {
+                    "title": "Ad downloaded flag",
+                    "type": "boolean",
+                    "description": "Set to true when the hit is generated due to playing a downloaded ad session."
+                },
                 "xdm:clicks": {
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
                     "description": "Click actions on an advertisement."
@@ -108,11 +113,14 @@
             },
             "xdm:adAssetReference": {
                 "@id": "https://data.adobe.io/entities/ad-id/AD1",
-                "xdm:creative": "6738737",
+                "xdm:creativeID": "6738737",
                 "dc:title": "adNumber2",
                 "xdm:advertiser": "Sample advertiser",
                 "xdm:campaign": "Sample campaign",
-                "xmpDM:duration": 10
+                "xmpDM:duration": 10,
+                "xdm:creativeURL": "www.creative.com",
+                "xdm:siteID": "www.ad-site.com",
+                "xdm:placementID": "www.place.org"
             },
             "xdm:firstQuartiles": {
                 "xdm:value": 1

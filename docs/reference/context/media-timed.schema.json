@@ -63,7 +63,8 @@
                 "xdm:dropBeforeStarts": {
                     "title": "Drops before starts",
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
-                    "description": "Indicates the user abandoned the media stream before the first frame for example, during the pre-roll ad break, or due to an error while loading the content from the CDN."
+                    "description": "Indicates the user abandoned the media stream before the first frame for example, during the pre-roll ad break, or due to an error while loading the content from the CDN.",
+                    "meta:status": "deprecated"
                 },
                 "xdm:totalTimePlayed": {
                     "title": "Media Time Spent",

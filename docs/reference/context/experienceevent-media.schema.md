@@ -107,6 +107,9 @@ This mixin is used to capture information regarding interactions with media such
           "xdm:bitrateChangeImpactedStreams": {
             "xdm:value": 0
           },
+          "xdm:dropBeforeStart": {
+            "xdm:value": 0
+          },
           "xdm:droppedFrames": {
             "xdm:value": 2
           },
@@ -147,9 +150,6 @@ This mixin is used to capture information regarding interactions with media such
       },
       "xdm:mediaSegmentView": {
         "xdm:value": 1
-      },
-      "xdm:dropBeforeStart": {
-        "xdm:value": 0
       },
       "xdm:totalTimePlayed": {
         "xdm:value": 190

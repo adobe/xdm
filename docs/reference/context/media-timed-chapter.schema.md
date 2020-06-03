@@ -35,6 +35,7 @@ Timed media chapter information.
 | [xdm:chapterAssetReference](#xdmchapterassetreference) | Timed media chapter asset reference | Optional | Timed media chapter information (this schema) |
 | [xdm:chapterAssetViewDetails](#xdmchapterassetviewdetails) | Timed media chapter view details | Optional | Timed media chapter information (this schema) |
 | [xdm:completes](#xdmcompletes) | Measure | Optional | Timed media chapter information (this schema) |
+| [xdm:downloadedPlayback](#xdmdownloadedplayback) | `boolean` | Optional | Timed media chapter information (this schema) |
 | [xdm:federated](#xdmfederated) | Measure | Optional | Timed media chapter information (this schema) |
 | [xdm:impressions](#xdmimpressions) | Measure | Optional | Timed media chapter information (this schema) |
 | [xdm:timePlayed](#xdmtimeplayed) | Measure | Optional | Timed media chapter information (this schema) |
@@ -92,6 +93,25 @@ Indicates if a timed media asset was watched to completion - this does not neces
 
 
 * [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
+## xdm:downloadedPlayback
+### Chapter downloaded flag
+
+Set to true when the hit is generated due to playing a downloaded chapter content session.
+
+`xdm:downloadedPlayback`
+* is optional
+* type: `boolean`
+* defined in this schema
+
+### xdm:downloadedPlayback Type
+
+
+`boolean`
 
 
 

@@ -25,6 +25,21 @@
                     "type": "string",
                     "description": "The ID of the ad creative."
                 },
+                "xdm:creativeURL": {
+                    "title": "Ad creative URL",
+                    "type": "string",
+                    "description": "The URL of the ad creative."
+                },
+                "xdm:siteID": {
+                    "title": "Ad site ID",
+                    "type": "string",
+                    "description": "ID of the ad site."
+                },
+                "xdm:placementID": {
+                    "title": "Ad placement ID",
+                    "type": "string",
+                    "description": "Placement ID of the ad."
+                },
                 "dc:title": {
                     "title": "Ad name",
                     "type": "string",
@@ -63,7 +78,7 @@
     "examples": [
         {
             "@id": "https://data.adobe.io/entities/asser-reference/23423",
-            "xdm:creative": "6738737",
+            "xdm:creativeID": "6738737",
             "dc:title": "Acme offer 21",
             "xmpDM:duration": 23
         }

@@ -15,6 +15,7 @@ Asset information about the main content that was played, but present on all ads
 * Timed media primary asset reference `https://ns.adobe.com/xdm/context/media-timed-asset-reference`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Audio](../external/id3/audio.schema.md) `https://id3.org/id3v2.4/audio`
+  * [Media audio](media-timed-audio.schema.md) `https://ns.adobe.com/xdm/context/media-timed-audio`
   * [Series](../external/iptc/series.schema.md) `http://www.iptc.org/series`
   * [Season](../external/iptc/season.schema.md) `http://www.iptc.org/season`
   * [Episode](../external/iptc/episode.schema.md) `http://www.iptc.org/episode`
@@ -29,9 +30,11 @@ Asset information about the main content that was played, but present on all ads
   "dc:creator": "Video Author",
   "dc:publisher": "tvonline",
   "xmpDM:duration": 87,
-  "id3:Audio": {
-    "id3:TRSN": "Q991.3",
-    "id3:TPUB": "Atlantic"
+  "xdm:Audio": {
+    "id3:Audio": {
+      "id3:TRSN": "Q991.3",
+      "id3:TPUB": "Atlantic"
+    }
   },
   "iptc4xmpExt:Series": {
     "iptc4xmpExt:Name": "show_highlights",
@@ -59,17 +62,21 @@ Asset information about the main content that was played, but present on all ads
     {
       "iptc4xmpExt:Name": "MyChannelTV"
     }
-  ]
+  ],
+  "xdm:firstAirDate": "2016-01-05",
+  "xmpDM:releaseDate": "2016-01-25"
 }
 ```
 
 ```json
 {
   "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234431",
-  "dc:creator": "Jimmy Page",
   "dc:title": "Stairway to Heaven",
-  "xdm:artist": "Led Zeppelin",
-  "xdm:album": "Led Zeppelin IV",
+  "xdm:audio": {
+    "dc:creator": "Jimmy Page",
+    "xdm:artist": "Led Zeppelin",
+    "xdm:album": "Led Zeppelin IV"
+  },
   "xmpDM:duration": 482,
   "xdm:streamType": "audio"
 }
@@ -90,12 +97,15 @@ Asset information about the main content that was played, but present on all ads
 | [iptc4xmpExt:Rating](#iptc4xmpextrating) | Rating | Optional |  | Timed media primary asset reference (this schema) |
 | [iptc4xmpExt:Season](#iptc4xmpextseason) | Season | Optional |  | Timed media primary asset reference (this schema) |
 | [iptc4xmpExt:Series](#iptc4xmpextseries) | Series | Optional |  | Timed media primary asset reference (this schema) |
+| [xdm:Audio](#xdmaudio) | Media audio | Optional |  | Timed media primary asset reference (this schema) |
+| [xdm:firstAirDate](#xdmfirstairdate) | `string` | Optional |  | Timed media primary asset reference (this schema) |
 | [xdm:showType](#xdmshowtype) | `string` | Optional |  | Timed media primary asset reference (this schema) |
 | [xdm:streamFormat](#xdmstreamformat) | `string` | Optional |  | Timed media primary asset reference (this schema) |
 | [xdm:streamType](#xdmstreamtype) | `enum` | Optional | `"video"` | Timed media primary asset reference (this schema) |
 | [xmpDM:album](#xmpdmalbum) | `string` | Optional |  | Timed media primary asset reference (this schema) |
 | [xmpDM:artist](#xmpdmartist) | `string` | Optional |  | Timed media primary asset reference (this schema) |
 | [xmpDM:duration](#xmpdmduration) | `integer` | Optional |  | Timed media primary asset reference (this schema) |
+| [xmpDM:releaseDate](#xmpdmreleasedate) | `string` | Optional |  | Timed media primary asset reference (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -120,9 +130,9 @@ Identifier of the content, which can be used to tie back to other industry or CM
 
 
 ## dc:creator
-### Author
+### Originator
 
-Name of the media author.
+Creator of the content.
 
 `dc:creator`
 * is optional
@@ -314,6 +324,45 @@ The series the show belongs to.
 
 
 
+## xdm:Audio
+### Audio
+
+Metadata specific to audio content (record label, radio station, etc.).
+
+`xdm:Audio`
+* is optional
+* type: Media audio
+* defined in this schema
+
+### xdm:Audio Type
+
+
+* [Media audio](media-timed-audio.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-audio`
+
+
+
+
+
+## xdm:firstAirDate
+### First air date
+
+The date when the content first aired on television.
+
+`xdm:firstAirDate`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:firstAirDate Type
+
+
+`string`
+
+
+
+
+
+
 ## xdm:showType
 ### Show type
 
@@ -431,6 +480,26 @@ Length of primary media asset in seconds.
 
 
 `integer`
+
+
+
+
+
+
+## xmpDM:releaseDate
+### First digital date
+
+The date when the content first aired on any digital channel or platform.
+
+`xmpDM:releaseDate`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xmpDM:releaseDate Type
+
+
+`string`
 
 
 

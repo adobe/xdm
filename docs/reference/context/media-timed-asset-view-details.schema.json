@@ -92,7 +92,7 @@
                     "description": "Timed media properties related to the content playback's quality of experience (QoE)."
                 },
                 "xdm:downloadedPlayback": {
-                    "title": "Downloaded Playback",
+                    "title": "Media downloaded flag",
                     "type": "boolean",
                     "description": "The stream was played locally on the device after being downloaded."
                 },

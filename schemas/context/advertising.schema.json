@@ -45,6 +45,11 @@
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Indicates if an experience event was created through data federation such as data sharing between customers."
         },
+        "xdm:downloadedPlayback": {
+          "title": "Ad downloaded flag",
+          "type": "boolean",
+          "description": "Set to true when the hit is generated due to playing a downloaded ad session."
+        },
         "xdm:clicks": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Click actions on an advertisement."

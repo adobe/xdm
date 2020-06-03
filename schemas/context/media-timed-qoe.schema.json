@@ -80,6 +80,11 @@
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "The number of streams in which frames were dropped."
         },
+        "xdm:dropBeforeStarts": {
+          "title": "Drops before starts",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Indicates the user abandoned the media stream before the first frame for example, during the pre-roll ad break, or due to an error while loading the content from the CDN."
+        },
         "xdm:timeToStart": {
           "title": "Time to start",
           "$ref": "https://ns.adobe.com/xdm/data/measure",

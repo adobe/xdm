@@ -38,7 +38,7 @@ class Converter extends EventEmitter {
       if (id.indexOf(".com/experience") != -1) id = id.replace("https://ns.", "").replace("http://ns.", "").replace(".com","") //more logic here needed to extract other domains in the future
       return id.replace("https://ns.adobe.com/xdm/", "").replace("http://ns.adobe.com/xdm/", "")
                .replace("http://schema.org/", "external/schema/").replace("http://www.iptc.org/","external/iptc/")
-               .replace("http://ns.adobe.com/adobecloud/core/1.0", "external/repo/commmon").toLowerCase();
+               .replace("https://id3.org/id3v2.4/", "external/id3/").replace("http://ns.adobe.com/adobecloud/core/1.0", "external/repo/commmon").toLowerCase();
     };
 
 
@@ -302,12 +302,12 @@ class Converter extends EventEmitter {
             });
             return newEnum;
           },
-            "meta:status" : function(values) {
+            "meta:status" : function(values) {//do nothing for now when resolving conflict
               var statusList = [];
               for (var i in values)
                       statusList = statusList.concat(values[i]);
               if (statusList.length >1 )
-                console.log("!!!This schema contains multiple meta:status after resolving allOf!!!")
+                //console.log("!!!This schema contains multiple meta:status after resolving allOf!!!")
               return Array.from(new Set(statusList));
             },
             "meta:extensible" : function(values) {
@@ -315,7 +315,7 @@ class Converter extends EventEmitter {
                 for (var i in values)
                     extensibleList = extensibleList.concat(values[i]);
                 if (extensibleList.length >1 )
-                    console.log("!!!This schema contains multiple meta:extensible after resolving allOf!!!")
+                    //console.log("!!!This schema contains multiple meta:extensible after resolving allOf!!!")
                 return Array.from(new Set(extensibleList));
             },
             "meta:abstract" : function(values) {
@@ -323,7 +323,7 @@ class Converter extends EventEmitter {
                 for (var i in values)
                     abstractList = abstractList.concat(values[i]);
                 if (abstractList.length >1 )
-                    console.log("!!!This schema contains multiple meta:abstract after resolving allOf!!!")
+                    //console.log("!!!This schema contains multiple meta:abstract after resolving allOf!!!")
                 return Array.from(new Set(abstractList));
             }
         }

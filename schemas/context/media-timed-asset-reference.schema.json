@@ -22,12 +22,40 @@
           "description": "Identifier of the content, which can be used to tie back to other industry or CMS IDs."
         },
         "dc:title": {
-          "title": "Media name",
+          "title": "Content name",
           "type": "string",
           "description": "The friendly, human-readable name of the timed media asset."
         },
+        "dc:creator": {
+          "title": "Originator",
+          "type": "string",
+          "description": "Creator of the content."
+        },
+        "id3:Audio": {
+          "title": "Audio",
+          "description": "Metadata specific to audio content (record label, radio station, etc.).",
+          "$ref": "https://id3.org/id3v2.4/audio",
+          "meta:status": "deprecated"
+        },
+        "xmpDM:artist": {
+          "title": "Artist",
+          "type": "string",
+          "description": "The name of the album artist or group performing the music recording or video.",
+          "meta:status": "deprecated"
+        },
+        "xmpDM:album": {
+          "title": "Album",
+          "type": "string",
+          "description": "The name of the album that the music recording or video belongs to.",
+          "meta:status": "deprecated"
+        },
+        "xdm:Audio": {
+          "title": "Audio",
+          "description": "Metadata specific to audio content (record label, radio station, etc.).",
+          "$ref": "https://ns.adobe.com/xdm/context/media-timed-audio"
+        },
         "xmpDM:duration": {
-          "title": "Media length runtime",
+          "title": "Media content length",
           "type": "integer",
           "description": "Length of primary media asset in seconds."
         },
@@ -45,6 +73,18 @@
           "title": "Stream format",
           "type": "string",
           "description": "Free-form format of the stream for example, short or long."
+        },
+        "xdm:streamType": {
+          "title": "Stream type",
+          "description": "The type of the media stream",
+          "type": "string",
+          "default": "video",
+          "enum": ["audio", "video", "gaming"],
+          "meta:enum": {
+            "audio": "An audio stream (e.g. podcast, audiobook, radio stream).",
+            "video": "A video stream (e.g. Video-On-Demand, live event stream, downloaded movie).",
+            "gaming": "A gaming stream (e.g. Twitch, Hitbox)."
+          }
         },
         "iptc4xmpExt:Season": {
           "title": "Season",
@@ -79,6 +119,16 @@
           "items": {
             "$ref": "http://www.iptc.org/creator"
           }
+        },
+        "xdm:firstAirDate": {
+          "title": "First air date",
+          "type": "string",
+          "description": "The date when the content first aired on television."
+        },
+        "xmpDM:releaseDate": {
+          "title": "First digital date",
+          "type": "string",
+          "description": "The date when the content first aired on any digital channel or platform."
         }
       },
       "required": [

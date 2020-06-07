@@ -1,0 +1,92 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyStepEventDataFetchFields",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Journey Orchestration Step Data Fetch Fields",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyStepEvent",
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
+  "description": "Journey Orchestration Data Fetch Field for a Step Event.",
+  "definitions": {
+    "journeyStepEventDataFetchFields": {
+      "properties": {
+        "https://ns.adobe.com/experience/journeyOrchestration/stepEvents": {
+          "title": "Journey Step Event Data Fetch Field.",
+          "type": "object",
+          "properties": {
+            "https://ns.adobe.com/experience/journeyOrchestration/fetchTotalTime": {
+              "title": "fetchTotalTime",
+              "description": "This Field describes the total amount of time spent in data fetch in milliseconds during the step processing.",
+              "type": "integer"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/fetchTypeInError": {
+              "title": "fetchTypeInError",
+              "description": "This Field defines if the fetch in error is on the platform or on a custom data source.",
+              "type": "string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/fetchError": {
+              "title": "fetchError",
+              "description": "This Field describes the type of error that happens when the data fetch is processed. ",
+              "type": "string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/fetchErrorCode": {
+              "title": "fetchErrorCode",
+              "description": "This Field describes the Code for fetch error. Present if the error has a code, such as an HTTP one. For instance, if the actionExecError is http, the code 404 represents the HTTP 404 error.",
+              "type": "string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/fetchOriginError": {
+              "title": "fetchOriginError",
+              "description": "This Field tells if there are any timeout or origin error, If the error comes on a retry:  the OriginError/OriginErrorCode describes the error encountered on the attempt before the retry.",
+              "type": "string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/fetchOriginErrorCode": {
+              "title": "fetchOriginErrorCode",
+              "description": "This Field describes the error code encountered on the attempt before the retry, Error type is being defined by fetchOriginError.",
+              "type": "string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/fetchCount": {
+              "title": "fetchCount",
+              "description": "This Field gives the count , How many times the data is fetched, regardless of the type of source (AEP, custom).",
+              "type": "integer"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/fetchPlatformTotalTime": {
+              "title": "fetchPlatformTotalTime",
+              "description": "The total amount of time taken to fetch the data from Adobe Experience Platform (AEP) in milliseconds.",
+              "type": "integer"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/fetchPlatformCount": {
+              "title": "fetchPlatformCount",
+              "description": "How many times the data is fetched from Adobe Experience Platform(AEP).",
+              "type": "integer"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/fetchCustomTotalTime": {
+              "title": "fetchCustomTotalTime",
+              "description": "Time to fetch the custom data in milliseconds. Remark: this time is computed from the time the engine sends the enrichment event to the enrichment service and receive the response.",
+              "type": "integer"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/fetchCustomCount": {
+              "title": "fetchCustomCount",
+              "description": "How many times the custom data is fetched from external systems.",
+              "type": "integer"
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/journeyStepEventDataFetchFields"
+    }
+  ],
+  "meta:status": "experimental"
+}

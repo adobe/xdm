@@ -15,6 +15,7 @@
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "meta:extends": [
     "https://ns.adobe.com/xdm/context/experienceevent-implementation-details",
+    "https://ns.adobe.com/experience/experienceevent-edgeregion",
     "https://ns.adobe.com/xdm/context/experienceevent-environment-details",
     "https://ns.adobe.com/xdm/context/experienceevent-web"
   ],
@@ -29,6 +30,9 @@
     },
     {
       "$ref": "https://ns.adobe.com/xdm/context/experienceevent-implementation-details"
+    },
+    {
+      "$ref": "https://ns.adobe.com/experience/experienceevent-edgeregion"
     },
     {
       "$ref": "https://ns.adobe.com/xdm/context/experienceevent-environment-details"

@@ -59,7 +59,7 @@ Details about how a timed advertising is inserted into a timed media.
 
 
 ## xdm:index
-### Ad index in pod
+### Ad In Pod Position
 
 The index of the ad inside the parent ad break, for example, the first ad has index 0 and the second ad has index 1.
 

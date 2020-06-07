@@ -15,18 +15,18 @@
         "adBreak": {
             "properties": {
                 "@id": {
-                    "title": "Ad break ID",
+                    "title": "Ad Pod ID",
                     "format": "uri-reference",
                     "type": "string",
                     "description": "Identifier of the ad break."
                 },
                 "dc:title": {
-                    "title": "Ad break name",
+                    "title": "Pod name",
                     "type": "string",
                     "description": "The friendly name of the ad break."
                 },
                 "xdm:offset": {
-                    "title": "Ad break offset",
+                    "title": "Pod position",
                     "type": "integer",
                     "description": "The offset, in seconds, of the ad break from the start of the primary content."
                 }

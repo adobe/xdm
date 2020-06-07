@@ -43,5 +43,9 @@
   "https://ns.adobe.com/experience/adcloud/adDeliveryDetails": {
     "xdm:siteLinkText": "Best Personal Loan ",
     "xdm:physicalLocationID": "1014185"
+  },
+  "https://ns.adobe.com/experience/adcloud/creative": {
+    "xdm:experienceId": "1001",
+    "xdm:targetingBranchId": "4001"
   }
 }

@@ -34,7 +34,7 @@
                     "type": "string",
                     "description": "Unique Identifier for the mobile application."
                 },
-                "xdm:identiy": {
+                "xdm:identity": {
                     "title": "Identity associated with this token",
                     "$ref": "https://ns.adobe.com/xdm/context/identity",
                     "description": "The identity associated with this token before profile stitching."

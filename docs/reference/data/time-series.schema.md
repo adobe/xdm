@@ -97,6 +97,8 @@ The primary event type for this time-series record.
 | `commerce.purchases` | An order has been accepted. Purchase is the only required action in a commerce conversion. Purchase must have a product list referenced. |
 | `commerce.saveForLaters` | Product list is saved for future use. Example a product wish list. |
 | `delivery.feedback` | Feedback events for a delivery. Example feedback events for an email delivery. |
+| `message.feedback` | Feedback events for a Messages. Example feedback events for an email messages. |
+| `"message.tracking` | Tracking events for a Messages. Example feedback events for an email messages. |
 
 
 

@@ -1,0 +1,53 @@
+{
+  "xdm:timestamp": "2020-06-15T10:10:00+00:00",
+  "@id": "https://data.adobe.io/experienceid/5ba0475a-5c31-4fce-b573-8ee222a40f45",
+  "xdm:eventType": "message.feedback",
+  "xdm:identityMap": {
+    "ECID": [
+      {
+        "xdm:id": "68519882713298129995549973016107434638",
+        "xdm:primary": true
+      }
+    ]
+  },
+  "xdm:environment": {
+    "xdm:type": "browser",
+    "xdm:browserDetails": {
+      "xdm:name": "Chrome"
+    },
+    "xdm:operatingSystem": "MAC OS",
+    "xdm:operatingSystemVersion": "10.13"
+  },
+  "xdm:messageExecution": {
+    "@id": "4218b775-bef3-46b2-aee2-7caae052cf94",
+    "xdm:messageID": "aa440b96-ce65-4ad2-b95d-8c3b51f89bc2",
+    "xdm:messageLabel": "Deal for Gold members",
+    "xdm:externalApplicationID": "0cc85961-487d-49e5-9b6c-01f5630756ac",
+    "xdm:externalApplication": "Journey"
+  },
+  "xdm:messageProfile": {
+    "@id": "4218b775-bef3-46b2-aee2-7caae052cf94",
+    "xdm:channel": {
+      "@id": "https://ns.adobe.com/xdm/channels/email"
+    },
+    "xdm:variant": "A"
+  },
+  "xdm:channelContext": {
+    "xdm:emailChannelContext": {
+      "xdm:address": "user@domain.com",
+      "xdm:operationalContext": {
+        "xdm:outboundIP": "10.10.10.10"
+      }
+    }
+  },
+  "xdm:eventStatus": {
+    "xdm:messageTrackingLink": {
+      "xdm:interactionType": "click",
+      "@id": "123",
+      "xdm:description": "Click to check new offer",
+      "xdm:url": "https://mycompany.com/offer/1",
+      "xdm:label": "Click to check new offer",
+      "xdm:category": "Click"
+    }
+  }
+}

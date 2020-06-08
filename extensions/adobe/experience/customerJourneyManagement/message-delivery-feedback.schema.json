@@ -1,0 +1,95 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/experience/customerJourneyManagement/message-delivery-feedback",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Adobe CJM ExperienceEvent - Delivery-Feedback Details",
+  "description": "Provide details for the Delivery feedback for a single message in the MessageExecution.",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+
+  "definitions": {
+    "messageDeliveryfeedback": {
+      "properties": {
+        "xdm:feedbackStatus": {
+          "title": "Feedback Status",
+          "type": "string",
+          "description": "Provide status of a delivery attempt.",
+          "enum": ["error", "exclude", "sent", "bounce", "delay"],
+          "meta:enum": {
+            "error": "Mesage processing failed.",
+            "exclude": "Messageprofile is filtered out for sending the message",
+            "sent": "Messages such as Email, SMS, Push that have been dispatched to a person's account, address, or device.",
+            "bounce": "Message failed to deliver, and no longer will be retried.",
+            "delay": "message failed to deliver, but will be retry after next schedule time."
+          }
+        },
+        "xdm:excludeReason": {
+          "title": "Failure Code",
+          "type": "object",
+          "properties": {
+            "xdm:excludeCode": {
+              "title": "Exclude Code",
+              "type": "string",
+              "description": "Exclusion code."
+            },
+            "xdm:excludeSubCode": {
+              "title": "Exclude SubCode",
+              "type": "string",
+              "description": "Exclusion subcode"
+            }
+          }
+        },
+        "xdm:messageFailure": {
+          "title": "Message Failure",
+          "type": "object",
+          "properties": {
+            "xdm:failureReason": {
+              "title": "Failure Reason",
+              "type": "string",
+              "description": "Failure reason for a failed delivery attempt."
+            },
+            "xdm:failureCode": {
+              "title": "Failure Code",
+              "type": "string",
+              "description": "Failure code for a failed delivery attempt."
+            },
+            "xdm:failureType": {
+              "title": "Failure Type",
+              "type": "string",
+              "description": "Classifies whether it is a soft bounce or hard bounce.",
+              "meta:enum": {
+                "soft": "The reason for failed delivery is temprorary.",
+                "hard": "The reason for failed delivery is permanent."
+              }
+            }
+          }
+        },
+        "xdm:retryCount": {
+          "title": "Retry Count",
+          "type": "integer",
+          "description": "Number of failed attempts before the current event."
+        }
+      }
+    }
+  },
+  "required": ["xdm:feedbackStatus"],
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/messageDeliveryfeedback"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/direct-marketing"
+    }
+  ],
+  "meta:status": "experimental"
+}

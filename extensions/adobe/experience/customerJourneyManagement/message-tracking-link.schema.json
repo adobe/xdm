@@ -1,0 +1,69 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/experience/customerJourneyManagement/message-tracking-link",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Adobe CJM ExperienceEvent - Tracking link details",
+  "description": "Describes fields associated with the tracking link through which interaction is made by the end user.",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+
+  "definitions": {
+    "messageTrackingLink": {
+      "properties": {
+        "xdm:interactionType": {
+          "title": "Interaction Type",
+          "type": "string",
+          "description": "Specify action made by user on a message.",
+          "enum": ["click", "open"],
+          "meta:enum": {
+            "click": "Mesage opened by the user",
+            "open": "Link in a message is clicked by the user."
+          }
+        },
+        "@id": {
+          "title": "Tracking URL ID",
+          "type": "string",
+          "description": "Unique Identifier of the Link"
+        },
+        "xdm:description": {
+          "title": "Tracking URL Description",
+          "type": "string",
+          "description": "A human-friendly description of the link."
+        },
+        "xdm:url": {
+          "title": "URL",
+          "format": "uri",
+          "type": "string",
+          "description": "URL of the Link."
+        },
+        "xdm:label": {
+          "title": "URL Label",
+          "type": "string",
+          "description": "The user-friendly label clicking on which the link opens."
+        },
+        "xdm:category": {
+          "title": "URL Category",
+          "type": "string",
+          "description": "The category of the link. It may be `subscription`, or a user-defined category."
+        }
+      }
+    }
+  },
+  "required": ["xdm:interactionType"],
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/messageTrackingLink"
+    }
+  ],
+  "meta:status": "experimental"
+}

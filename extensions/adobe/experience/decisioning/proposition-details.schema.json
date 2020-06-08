@@ -7,11 +7,12 @@
   ],
   "$id": "https://ns.adobe.com/experience/decisioning/proposition-details",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "XDM Decision Event - List of Propositions",
+  "title": "Decision Proposition Details",
   "type": "object",
   "meta:abstract": true,
   "meta:extensible": true,
   "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent",
     "https://ns.adobe.com/experience/decisioning/decisionevent"
   ],
   "description": "Decision proposition is used to capture the results of a decisioning process.",
@@ -19,12 +20,17 @@
     "proposition-details-mixin": {
       "properties": {
         "https://ns.adobe.com/experience/decisioning/propositionDetails": {
-          "title": "Proposition Details.",
+          "title": "Proposition Details",
           "type": "array",
           "items": {
             "$ref": "https://ns.adobe.com/experience/decisioning/proposition-detail"
           },
           "description": "Details about the results of the decision. An array providing the output of a single decision event, one proposition per activity parameter in the request."
+        },
+        "https://ns.adobe.com/experience/decisioning/propositionContentKey": {
+          "title": "Proposition Content Key",
+          "type": "string",
+          "description": "Digest or unique value for the proposition content. Recipients of propositions with the same digest value will receive the same content selections in the placements that are targeted by the decision. Equally, propositions with the same digest value to the same user mean that the same options are being proposed. Propositions with different digest values is an indicator that the content will be different. Note that adding a placement to the decision always change content."
         }
       }
     }

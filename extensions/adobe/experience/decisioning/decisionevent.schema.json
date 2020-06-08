@@ -13,6 +13,7 @@
   "meta:extensible": true,
   "meta:extends": [
     "https://ns.adobe.com/xdm/data/time-series",
+    "https://ns.adobe.com/xdm/context/identitymap",
     "https://ns.adobe.com/experience/decisioning/proposition",
     "https://ns.adobe.com/experience/decisioning/proposition-details"
   ],
@@ -28,6 +29,9 @@
     },
     {
       "$ref": "https://ns.adobe.com/xdm/data/time-series"
+    },
+    {
+      "$ref": "https://ns.adobe.com/context/identitymap"
     },
     {
       "$ref": "https://ns.adobe.com/experience/decisioning/proposition"

@@ -4,9 +4,11 @@
   "dc:creator": "Video Author",
   "dc:publisher": "tvonline",
   "xmpDM:duration": 87,
-  "id3:Audio": {
-    "id3:TRSN": "Q991.3",
-    "id3:TPUB": "Atlantic"
+  "xdm:Audio": {
+    "id3:Audio": {
+      "id3:TRSN": "Q991.3",
+      "id3:TPUB": "Atlantic"
+    }
   },
   "iptc4xmpExt:Series": {
     "iptc4xmpExt:Name": "show_highlights",
@@ -32,5 +34,7 @@
     {
       "iptc4xmpExt:Name": "MyChannelTV"
     }
-  ]
+  ],
+  "xdm:firstAirDate": "2016-01-05",
+  "xmpDM:releaseDate": "2016-01-25"
 }

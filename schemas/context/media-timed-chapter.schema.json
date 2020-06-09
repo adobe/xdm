@@ -26,7 +26,7 @@
           "description": "View details for the chapter playback captured by the experience event."
         },
         "xdm:impressions": {
-          "title": "Chapter impressions",
+          "title": "Chapter starts",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Describes the intention to play a timed media asset. It does not measure success, as the user might abandon the content before the first frame is viewed."
         },
@@ -44,6 +44,11 @@
           "title": "Chapter federated",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Indicates if an experience event was created through data federation or data sharing."
+        },
+        "xdm:downloadedPlayback": {
+          "title": "Chapter downloaded flag",
+          "type": "boolean",
+          "description": "Set to true when the hit is generated due to playing a downloaded chapter content session."
         }
       }
     }

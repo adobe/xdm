@@ -35,6 +35,7 @@ Timed media chapter information.
 | [xdm:chapterAssetReference](#xdmchapterassetreference) | Timed media chapter asset reference | Optional | Timed media chapter information (this schema) |
 | [xdm:chapterAssetViewDetails](#xdmchapterassetviewdetails) | Timed media chapter view details | Optional | Timed media chapter information (this schema) |
 | [xdm:completes](#xdmcompletes) | Measure | Optional | Timed media chapter information (this schema) |
+| [xdm:downloadedPlayback](#xdmdownloadedplayback) | `boolean` | Optional | Timed media chapter information (this schema) |
 | [xdm:federated](#xdmfederated) | Measure | Optional | Timed media chapter information (this schema) |
 | [xdm:impressions](#xdmimpressions) | Measure | Optional | Timed media chapter information (this schema) |
 | [xdm:timePlayed](#xdmtimeplayed) | Measure | Optional | Timed media chapter information (this schema) |
@@ -97,6 +98,25 @@ Indicates if a timed media asset was watched to completion - this does not neces
 
 
 
+## xdm:downloadedPlayback
+### Chapter downloaded flag
+
+Set to true when the hit is generated due to playing a downloaded chapter content session.
+
+`xdm:downloadedPlayback`
+* is optional
+* type: `boolean`
+* defined in this schema
+
+### xdm:downloadedPlayback Type
+
+
+`boolean`
+
+
+
+
+
 ## xdm:federated
 ### Chapter federated
 
@@ -117,7 +137,7 @@ Indicates if an experience event was created through data federation or data sha
 
 
 ## xdm:impressions
-### Chapter impressions
+### Chapter starts
 
 Describes the intention to play a timed media asset. It does not measure success, as the user might abandon the content before the first frame is viewed.
 

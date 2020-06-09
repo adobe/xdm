@@ -14,9 +14,9 @@
         "audio": {
             "properties": {
                 "id3:TPUB": {
-                    "title": "Publisher",
+                    "title": "Record label",
                     "type": "string",
-                    "description": "The MP3 publisher."
+                    "description": "Name of the record label."
                 },
                 "id3:TRSN": {
                     "title": "InternetRadioStationName",

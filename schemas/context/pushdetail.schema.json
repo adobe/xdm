@@ -27,7 +27,13 @@
                 "xdm:blacklisted": {
                     "title": "Blacklist Flag",
                     "type": "boolean",
-                    "description": "Indicates whether the push token is blacklisted."
+                    "meta:status": "deprecated",
+                    "description": "Indicates whether the push token is blacklisted. Deprecated due to new guidance on key names, use blocklisted instead."
+                },
+                "xdm:blocklisted": {
+                    "title": "Blocklist Flag",
+                    "type": "boolean",
+                    "description": "Indicates whether the push token is blocked by the push provider. "
                 },
                 "xdm:appID": {
                     "title": "Application Identifier",

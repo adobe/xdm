@@ -7,14 +7,14 @@
   ],
   "$id": "https://ns.adobe.com/experience/decisioning/decisionevent-all",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "XDM Decision Event - Details for Reporting",
+  "title": "Decision Reporting Dimensions",
   "type": "object",
   "meta:abstract": true,
   "meta:extensible": true,
   "meta:intendedToExtend": [
     "https://ns.adobe.com/experience/decisioning/decisionevent"
   ],
-  "description": "Extension for DecisionEvent that adds dimensions for rollup by organization, container, batch job and request.",
+  "description": "Mixin for Decision Events that adds dimensions for rollup by organization, container, batch job and request.",
   "definitions": {
     "decisioning-mixin": {
       "properties": {
@@ -31,7 +31,7 @@
         "https://ns.adobe.com/experience/decisioning/batchID": {
           "title": "Batch Identifier",
           "type": "string",
-          "description": "An identity associated with the decision event, if the request was made in batch mode. This property will be absent if the decision leading to this event was made individually for a single profile identity."
+          "description": "A workflow identity associated with the decision event, if the request was made in batch mode. This property will be absent if the decision leading to this event was made individually for a single profile identity."
         },
         "https://ns.adobe.com/experience/decisioning/decisionRequestID": {
           "title": "Request Identifier",

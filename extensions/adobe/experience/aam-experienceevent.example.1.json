@@ -108,5 +108,14 @@
     "derivedPageTagCloud": ["aam"],
     "derivedPagelinkshovered": ["https://jhdjdi09002kdjjsl.com"]
   },
-  "xdm:overwriteTraits": true
+  "xdm:overwriteTraits": true,
+  "xdm:consentStrings": [
+    {
+      "xdm:consentStandard": "IAB TCF",
+      "xdm:consentStandardVersion": "2.0",
+      "xdm:consentStringValue": "BObdrPUOevsguAfDqFENCNAAAAAmeAAA.PVAfDObdrA.DqFENCAmeAENCDA",
+      "xdm:gdprApplies": true,
+      "xdm:containsPersonalData": false
+    }
+  ]
 }

@@ -60,22 +60,22 @@
             {
               "properties": {
                 "xdm:messageDeliveryfeedback": {
-                  "title": "Message Profile",
+                  "title": "Message Delivery Feedback",
                   "$ref": "https://ns.adobe.com/xdm/experience/customerJourneyManagement/message-delivery-feedback",
-                  "description": "Provide status of a delivery attempt."
+                  "description": "Captures Delivey status of a message."
                 }
               },
               "required": ["xdm:messageDeliveryfeedback"]
             },
             {
               "properties": {
-                "xdm:messageTrackingLink": {
-                  "title": "Message Tracking Link",
-                  "$ref": "https://ns.adobe.com/xdm/experience/customerJourneyManagement/message-tracking-link",
-                  "description": "Describes fields associated with the tracking link through which interaction is made by the end user."
+                "xdm:messageInteraction": {
+                  "title": "Message Interaction",
+                  "$ref": "https://ns.adobe.com/xdm/experience/customerJourneyManagement/message-interaction",
+                  "description": "Captures interaction made by the profile on the message."
                 }
               },
-              "required": ["xdm:messageTrackingLink"]
+              "required": ["xdm:messageInteraction"]
             }
           ]
         }

@@ -31,18 +31,20 @@
           }
         },
         "xdm:excludeReason": {
-          "title": "Failure Code",
+          "title": "Exclude Reason",
           "type": "object",
           "properties": {
             "xdm:excludeCode": {
               "title": "Exclude Code",
               "type": "string",
-              "description": "Exclusion code."
+              "description": "Provide top level exclusion reason, like typology rule, mandatory parameter missing. ",
+              "meta:enum": {
+              }
             },
             "xdm:excludeSubCode": {
               "title": "Exclude SubCode",
               "type": "string",
-              "description": "Exclusion subcode"
+              "description": "provide exclusion subcode, like exact typology rule-id."
             }
           }
         },
@@ -74,7 +76,7 @@
         "xdm:retryCount": {
           "title": "Retry Count",
           "type": "integer",
-          "description": "Number of failed attempts before the current event."
+          "description": "Number of failed attempts before the current event. The retryCount starts with '0', for message which is sent in first attempt will have 'retryCount' as 0."
         }
       }
     }

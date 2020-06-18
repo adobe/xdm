@@ -1,7 +1,7 @@
 {
   "xdm:timestamp": "2020-06-15T10:10:00+00:00",
   "@id": "https://data.adobe.io/experienceid/5ba0475a-5c31-4fce-b573-8ee222a40f45",
-  "xdm:eventType": "message.feedback",
+  "xdm:eventType": "message.tracking",
   "xdm:identityMap": {
     "ECID": [
       {
@@ -33,8 +33,13 @@
     }
   },
   "xdm:eventStatus": {
-    "xdm:messageDeliveryfeedback": {
-      "xdm:feedbackStatus": "sent"
-    }  
+    "xdm:messageInteraction": {
+      "xdm:interactionType": "click",
+      "@id": "123",
+      "xdm:description": "Click to check new offer",
+      "xdm:url": "https://mycompany.com/offer/1",
+      "xdm:label": "Click to check new offer",
+      "xdm:category": "Click"
+    }    
   }
 }

@@ -28,7 +28,7 @@
           "type": "object",
           "properties": {
             "xdm:outboundIP": {
-              "title": "IP Address",
+              "title": "Outbound IP Address",
               "type": "string",
               "description": "Outbound IP address of the customer used to deliver the message.",
               "oneOf": [

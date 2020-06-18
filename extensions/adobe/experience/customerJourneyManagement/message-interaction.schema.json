@@ -5,43 +5,33 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/experience/customerJourneyManagement/message-tracking-link",
+  "$id": "https://ns.adobe.com/xdm/experience/customerJourneyManagement/message-interaction",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Adobe CJM ExperienceEvent - Tracking link details",
-  "description": "Describes fields associated with the tracking link through which interaction is made by the end user.",
+  "title": "Adobe CJM ExperienceEvent - Message interaction details",
+  "description": "Describes interaction made by the profile on the message.",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
 
   "definitions": {
-    "messageTrackingLink": {
+    "messageInteraction": {
       "properties": {
         "xdm:interactionType": {
           "title": "Interaction Type",
           "type": "string",
           "description": "Specify action made by user on a message.",
-          "enum": ["click", "open"],
+          "enum": ["click", "open", "action"],
           "meta:enum": {
-            "click": "Mesage opened by the user",
-            "open": "Link in a message is clicked by the user."
+            "click": "Link in a message is clicked by the user.",
+            "open": "Either Message is open by the user, or in case of push, clicking the message opened the mobile application.",
+            "action": "Custom action taken on push notifcation, like clicking on some button in push notification."
           }
         },
         "@id": {
           "title": "Tracking URL ID",
           "type": "string",
-          "description": "Unique Identifier of the Link"
-        },
-        "xdm:description": {
-          "title": "Tracking URL Description",
-          "type": "string",
-          "description": "A human-friendly description of the link."
-        },
-        "xdm:url": {
-          "title": "URL",
-          "format": "uri",
-          "type": "string",
-          "description": "URL of the Link."
+          "description": "Unique Identifier of the Link clicked by the user."
         },
         "xdm:label": {
           "title": "URL Label",
@@ -51,7 +41,9 @@
         "xdm:category": {
           "title": "URL Category",
           "type": "string",
-          "description": "The category of the link. It may be `subscription`, or a user-defined category."
+          "description": "The category of the link. It may be `subscription`, or a user-defined category.",
+          "meta:enum": {
+          }
         }
       }
     }
@@ -62,7 +54,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "#/definitions/messageTrackingLink"
+      "$ref": "#/definitions/messageInteraction"
     }
   ],
   "meta:status": "experimental"

@@ -25,16 +25,15 @@
     "xdm:variant": "A"
   },
   "xdm:channelContext": {
-    "xdm:emailChannelContext": {
-      "xdm:address": "user@domain.com",
-      "xdm:operationalContext": {
-        "xdm:outboundIP": "10.10.10.10"
-      }
+    "xdm:pushChannelContext": {
+      "xdm:token": "99156313-c9df-4e54-9c6c-5740f940c3ca",
+      "xdm:platform": "apns",
+      "xdm:appID": "75eafb7e-fa44-4514-86fc-221e32c5aef9"
     }
   },
   "xdm:eventStatus": {
-    "xdm:messageDeliveryfeedback": {
-      "xdm:feedbackStatus": "sent"
+    "xdm:messageInteraction": {
+      "xdm:interactionType": "action"
     }  
   }
 }

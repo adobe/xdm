@@ -34,7 +34,13 @@
   },
   "xdm:eventStatus": {
     "xdm:messageDeliveryfeedback": {
-      "xdm:feedbackStatus": "sent"
+      "xdm:feedbackStatus": "bounce",
+      "xdm:messageFailure": {
+        "xdm:failureReason": "Messagebox is Full",
+        "xdm:failureCode": "FR-123",
+        "xdm:failureType": "Soft"
+      },
+      "xdm:retryCount": 0
     }  
   }
 }

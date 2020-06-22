@@ -38,8 +38,7 @@
               "title": "Exclude Code",
               "type": "string",
               "description": "Provide top level exclusion reason, like typology rule, mandatory parameter missing. ",
-              "meta:enum": {
-              }
+              "meta:enum": {}
             },
             "xdm:excludeSubCode": {
               "title": "Exclude SubCode",

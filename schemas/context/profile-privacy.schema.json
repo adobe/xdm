@@ -1,4 +1,4 @@
-{ 
+{
    "meta:license":[ 
       "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
       "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
@@ -7,67 +7,274 @@
    ],
    "$id":"https://ns.adobe.com/xdm/context/profile-privacy",
    "$schema":"http://json-schema.org/draft-06/schema#",
-   "title":"Profile privacy",
-   "description":"Profile privacy schema captures general and sales sharing opt-out signals.",
+   "title":"Privacy/Marketing Preferences (Consent)",
+   "description":"This schema captures privacy, personalization and marketing preferences (consents).",
    "type":"object",
    "meta:extensible":true,
    "meta:abstract":true,
    "meta:intendedToExtend":[ 
-      "https://ns.adobe.com/xdm/context/profile"
+      "https://ns.adobe.com/xdm/context/profile",
+      "https://ns.adobe.com/xdm/context/experienceevent"
    ],
    "definitions":{ 
-      "profile-privacy":{ 
-         "properties":{ 
-            "xdm:optOutConsentLevel":{ 
+      "ConsentValue": {
+         "type": "string",
+         "enum": [
+            "not_provided",
+            "pending",
+            "in",
+            "out",
+            "unknown",
+            "not_applicable"
+         ],
+         "meta:enum": {
+            "not_provided": "Not provided",
+            "pending": "Pending verification",
+            "in": "Opt-in",
+            "out": "Opt-out",
+            "unknown":"Unknown",
+            "not_applicable":"Not Applicable"
+         }
+      },
+      "timestamp": {
+         "title": "Preference timestamp",
+         "description": "Timestamp of this specific opt out or preference.",
+         "type": "string",
+         "format": "date-time"
+      }
+   },
+   "allOf":[ 
+      { 
+         "$ref":"https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+      },
+      { 
+         "properties":{
+            "xdm:optOutConsentLevel":{
                "type":"object",
-               "title":"Opt-out consent level",
-               "description":"Opt-out consent level.",
-               "properties":{ 
-                  "xdm:privacyOptOuts":{ 
-                     "title":"Privacy opt-outs",
-                     "description":"Encapsulates different opt-out types for data privacy.",
+               "title":"Privacy/Marketing Preference Values",
+               "description":"Privacy/Marketing Preference.",
+               "properties":{
+                  "xdm:privacyOptOuts":{
+                     "title":"Privacy Preferences",
+                     "description":"Encapsulates data privacy preferences.",
                      "type":"array",
-                     "items":{ 
+                     "items":{
                         "type":"object",
-                        "properties":{ 
-                           "xdm:optOutType":{ 
+                        "properties":{
+                           "xdm:optOutType":{
                               "title":"Opt-out type",
                               "type":"string",
-                              "description":"The type of opt-out.",
-                              "enum":[ 
+                              "description":"The type of user permission.",
+                              "enum":[
                                  "general_opt_out",
-                                 "sales_sharing_opt_out"
+                                 "sales_sharing_opt_out",
+                                 "anonymous_analysis",
+                                 "pseudonymous_analysis",
+                                 "device_linking"
                               ],
-                              "meta:enum":{ 
+                              "meta:enum":{
                                  "general_opt_out":"General opt-out",
-                                 "sales_sharing_opt_out":"Sales sharing opt-out"
+                                 "sales_sharing_opt_out":"Sales/sharing opt-out",
+                                 "anonymous_analysis":"Anonymous Analysis",
+                                 "pseudonymous_analysis":"Pseudonymous Analysis",
+                                 "device_linking":"Device Linking"
                               }
                            },
-                           "xdm:optOutValue":{ 
-                              "title":"Opt-out value",
+                           "xdm:basisOfProcessing":{
+                              "title":"Basis Of Processing",
                               "type":"string",
-                              "description":"The value of opt-out signal.",
-                              "enum":[ 
-                                 "not_provided",
-                                 "pending",
-                                 "in",
-                                 "out"
+                              "description":"Basis of Processing",
+                              "enum":[
+                                 "consent",
+                                 "legitimate_interest",
+                                 "contract",
+                                 "vital_interest",
+                                 "compliance",
+                                 "public_interest"
                               ],
-                              "meta:enum":{ 
-                                 "not_provided":"Not provided",
-                                 "pending":"Pending verification",
-                                 "in":"Opt-in",
-                                 "out":"Opt-out"
+                              "meta:enum":{
+                                 "consent":"User Consent",
+                                 "legitimate_interest":"Legitimate Interest",
+                                 "contract":"Contract",
+                                 "vital_interest":"Vital Interest of the Individual",
+                                 "compliance":"Compliance with a Legal Obligation",
+                                 "public_interest":"Public Interest"
                               }
                            },
-                           "xdm:timestamp":{ 
-                              "title":"Opt-out timestamp",
-                              "description":"Timestamp of the received opt-out signal.",
-                              "type":"string",
-                              "format":"date-time"
+
+                           "xdm:optOutValue": {
+                              "title":"Opt Out Value",
+                              "description": "The value of the specific opt out.",
+                              "$ref": "#/definitions/ConsentValue"
+                           },
+                           "xdm:timestamp": {
+                              "$ref": "#/definitions/timestamp"
                            }
                         }
                      }
+                  },
+                  "xdm:personalizationPreferences":{
+                     "title":"Personalization Preferences",
+                     "description":"User's Personalization Preferences",
+                     "type":"object",
+                     "properties": {
+                        "xdm:defaultPersonalizationPreference": {
+                           "title": "Global Personalization Preferences",
+                           "description": "User's Default Personalization Preference",
+                           "type": "object",
+                           "properties": {
+                              "xdm:personalizationChoice": {
+                                 "title":"Default Personalization Preferences Value",
+                                 "description": "The default value for personalization",
+                                 "$ref": "#/definitions/ConsentValue"
+                              },
+                              "xdm:timestamp": {
+                                 "$ref": "#/definitions/timestamp"
+                              }
+                           }
+                        },
+                        "xdm:personalizationOptions":{
+                           "title":"Itemized Personalization Preferences",
+                           "description":"Preferences for specific types of personalization",
+                           "type": "array",
+                           "items": {
+                              "type": "object",
+                              "properties": {
+                                 "xdm:PersonalizationType": {
+                                    "title": "Personalization Preference",
+                                    "type": "string",
+                                    "description": "The specific personalization preference.",
+                                    "enum": [
+                                       "content",
+                                       "in_app_messages",
+                                       "offers",
+                                       "email",
+                                       "snail_mail",
+                                       "phone_calls",
+                                       "customer_support",
+                                       "push_notifications",
+                                       "sms",
+                                       "in_store",
+                                       "in_vehicle",
+                                       "in_home",
+                                       "iot",
+                                       "social_media",
+                                       "third_party_offers",
+                                       "third_party_content",
+                                       "ads"
+                                    ],
+                                    "meta:enum": {
+                                       "content": "Personalize Content",
+                                       "in_app": "Personalize In App Messages",
+                                       "offers": "Personalize Offers",
+                                       "email": "Personalize eMail",
+                                       "snail_mail": "Personalize Regular Mail",
+                                       "phone_calls": "Personalize Phone Calls",
+                                       "push_notifications": "Personalize Push Notifications",
+                                       "sms": "Personalize SMS",
+                                       "customer_support": "Personalize Customer Support",
+                                       "in_store": "Personalize In Store",
+                                       "in_vehicle": "Personalize In Vehicle",
+                                       "in_home": "Personalize In Home",
+                                       "iot": "Personalize IoT",
+                                       "social_media": "Personalize Social Media",
+                                       "third_party_offers": "Personalize Third-party Offers",
+                                       "third_party_content": "Personalize Third-party Content",
+                                       "ads": "Personalize My Business's Ads on Other Sites"
+                                    }
+                                 },
+                                 "xdm:personalizationChoice": {
+                                    "title":"Personalization Preference Value",
+                                    "description": "The value for this specific personalization preference",
+                                    "$ref": "#/definitions/ConsentValue"
+                                 },
+                                 "xdm:timestamp": {
+                                    "$ref": "#/definitions/timestamp"
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  },
+                  "xdm:marketingPreferences":{
+                     "title":"Marketing Preferences",
+                     "description":"User's Direct Marketing Preferences",
+                     "type":"object",
+                     "properties": {
+                        "xdm:defaultMarketingPreference": {
+                           "title": "Default Direct Marketing Preference",
+                           "description": "User's Default Marketing Preference",
+                           "type": "object",
+                           "properties": {
+                              "xdm:marketingChoice": {
+                                 "title":"Default Marketing Preferences Value",
+                                 "description": "The default value for direct marketing preferences",
+                                 "$ref": "#/definitions/ConsentValue"
+                              },
+                              "xdm:timestamp": {
+                                 "$ref": "#/definitions/timestamp"
+                              }
+                           }
+                        },
+                        "xdm:marketingOptions": {
+                           "title":"Itemized Direct Marketing Preferences",
+                           "description":"Preferences for specific types of direct marketing",
+                           "type": "array",
+                           "items": {
+                              "type": "object",
+                              "properties": {
+                                 "xdm:marketingType": {
+                                    "title": "Marketing Preference",
+                                    "type": "string",
+                                    "description": "The specific marketing preference.",
+                                    "enum": [
+                                       "email",
+                                       "push_notifications",
+                                       "in_app_messages",
+                                       "sms",
+                                       "phone_calls",
+                                       "snail_mail",
+                                       "in_vehicle_messages",
+                                       "in_home_messages",
+                                       "iot",
+                                       "social_media"
+                                    ],
+                                    "meta:enum": {
+                                       "email": "Receive eMail",
+                                       "push_notifications": "Receive Push Notifications",
+                                       "in_app_messages": "Receive In App Messages",
+                                       "sms": "Receive SMS",
+                                       "phone_calls": "Receive Phone Calls",
+                                       "snail_mail": "Receive Regular Mail",
+                                       "in_vehicle_messages": "Receive In Vehicle Messages",
+                                       "in_home_messages": "Receive In Home Messages",
+                                       "iot": "Receive IoT",
+                                       "social_media": "Receive Social Media Messages"
+                                    }
+                                 },
+                                 "xdm:marketingChoice": {
+                                    "title":"Marketing Preference Value",
+                                    "description": "The value for this specific marketing preference",
+                                    "$ref": "#/definitions/ConsentValue"
+                                 },
+                                 "xdm:timestamp": {
+                                    "$ref": "#/definitions/timestamp"
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  },
+                  "xdm:timestamp":{
+                     "title":"Preferences timestamp",
+                     "description":"Timestamp of the complete set of user preferences.",
+                     "type":"string",
+                     "format":"date-time"
+                  },
+                  "xdm:version":{
+                     "title":"Preferences Version",
+                     "description": "Version of the Privacy Preferences Standard",
+                     "type":"string"
                   }
                }
             },
@@ -107,14 +314,6 @@
                }
             }
          }
-      }
-   },
-   "allOf":[ 
-      { 
-         "$ref":"https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
-      },
-      { 
-         "$ref":"#/definitions/profile-privacy"
       }
    ],
    "meta:status":"experimental"

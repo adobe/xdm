@@ -2,11 +2,55 @@
 	"xdm:optOutConsentLevel": {
 		"xdm:privacyOptOuts": [
 			{
-			"xdm:optOutType": "general_opt_out",
-			"xdm:optOutValue": "out",
-			"xdm:timestamp": "2019-01-01T15:52:25+00:00"
+				"xdm:optOutType": "general_opt_out",
+				"xdm:optOutValue": "out",
+				"xdm:timestamp": "2019-01-01T15:52:25+00:00",
+				"xdm:basisOfProcessing": "legitimate_interest"
+			},
+			{
+				"xdm:optOutType": "device_linking",
+				"xdm:optOutValue": "not_provided",
+				"xdm:basisOfProcessing": "vital_interest"
+			},
+			{
+				"xdm:optOutType": "anonymous_analysis",
+				"xdm:optOutValue": "in"
 			}
-		]
+		],
+		"xdm:personalizationPreferences": {
+			"xdm:defaultPersonalizationPreference": {
+				"xdm:personalizationChoice": "unknown",
+				"xdm:timestamp": "2019-01-01T15:52:25+00:00"
+			},
+			"xdm:personalizationOptions": [
+				{
+					"xdm:personalizationType": "email",
+					"xdm:personalizationChoice": "in"
+				},
+				{
+					"xdm:personalizationType": "push_notifications",
+					"xdm:personalizationChoice": "out"
+				}
+			]
+		},
+		"xdm:marketingPreferences": {
+			"xdm:defaultMarketingPreference": {
+				"xdm:marketingChoice": "unknown"
+			},
+			"xdm:marketingOptions": [
+				{
+					"xdm:marketingType": "email",
+					"xdm:marketingChoice": "in"
+				},
+				{
+					"xdm:marketingType": "iot",
+					"xdm:marketingChoice": "out",
+					"xdm:timestamp": "2019-01-01T15:52:25+00:00"
+				}
+			]
+		},
+		"xdm:version": "1.0.0",
+		"xdm:timestamp": "2019-01-01T15:52:25+00:00"
 	},
 	"xdm:identityPrivacyInfo": {
 		"ECID": {

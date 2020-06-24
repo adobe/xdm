@@ -62,14 +62,9 @@
          "description": "Timestamp of this specific opt out or preference.",
          "type": "string",
          "format": "date-time"
-      }
-   },
-   "allOf":[ 
-      { 
-         "$ref":"https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
       },
-      { 
-         "properties":{
+      "profile-privacy": {
+               "properties":{
             "xdm:optOutConsentLevel":{
                "type":"object",
                "title":"Privacy/Marketing Preference Values",
@@ -329,6 +324,14 @@
                }
             }
          }
+      }
+   },
+   "allOf":[ 
+      { 
+         "$ref":"https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+      },
+      {
+         "$ref": "#/definitions/profile-privacy"
       }
    ],
    "meta:status":"experimental"

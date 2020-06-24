@@ -3,7 +3,7 @@
 		"xdm:privacyOptOuts": [
 			{
 				"xdm:optOutType": "general_opt_out",
-				"xdm:optOutValue": "out",
+				"xdm:optOutValue": "in",
 				"xdm:timestamp": "2019-01-01T15:52:25+00:00",
 				"xdm:basisOfProcessing": "legitimate_interest"
 			},
@@ -14,13 +14,14 @@
 			},
 			{
 				"xdm:optOutType": "anonymous_analysis",
-				"xdm:optOutValue": "in"
+				"xdm:optOutValue": "out"
 			}
 		],
 		"xdm:personalizationPreferences": {
 			"xdm:defaultPersonalizationPreference": {
 				"xdm:personalizationChoice": "unknown",
-				"xdm:timestamp": "2019-01-01T15:52:25+00:00"
+				"xdm:timestamp": "2019-01-01T15:52:25+00:00",
+				"xdm:basisOfProcessing": "consent"
 			},
 			"xdm:personalizationOptions": [
 				{
@@ -29,7 +30,8 @@
 				},
 				{
 					"xdm:personalizationType": "push_notifications",
-					"xdm:personalizationChoice": "out"
+					"xdm:personalizationChoice": "out",
+					"xdm:basisOfProcessing": "legitimate_interest"
 				}
 			]
 		},
@@ -45,7 +47,8 @@
 				{
 					"xdm:marketingType": "iot",
 					"xdm:marketingChoice": "out",
-					"xdm:timestamp": "2019-01-01T15:52:25+00:00"
+					"xdm:timestamp": "2019-01-01T15:52:25+00:00",
+					"xdm:basisOfProcessing": "legitimate_interest"
 				}
 			]
 		},

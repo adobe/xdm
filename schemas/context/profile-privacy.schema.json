@@ -36,7 +36,28 @@
             "not_applicable":"Not Applicable"
          }
       },
-      "timestamp": {
+      "BasisOfProcessing": {
+         "title": "Basis Of Processing",
+         "type": "string",
+         "description": "Basis of Processing",
+         "enum": [
+            "consent",
+            "legitimate_interest",
+            "contract",
+            "vital_interest",
+            "compliance",
+            "public_interest"
+         ],
+         "meta:enum": {
+            "consent": "User Consent",
+            "legitimate_interest": "Legitimate Interest",
+            "contract": "Contract",
+            "vital_interest": "Vital Interest of the Individual",
+            "compliance": "Compliance with a Legal Obligation",
+            "public_interest": "Public Interest"
+         }
+      },
+      "Timestamp": {
          "title": "Preference timestamp",
          "description": "Timestamp of this specific opt out or preference.",
          "type": "string",
@@ -80,35 +101,17 @@
                                  "device_linking":"Device Linking"
                               }
                            },
-                           "xdm:basisOfProcessing":{
-                              "title":"Basis Of Processing",
-                              "type":"string",
-                              "description":"Basis of Processing",
-                              "enum":[
-                                 "consent",
-                                 "legitimate_interest",
-                                 "contract",
-                                 "vital_interest",
-                                 "compliance",
-                                 "public_interest"
-                              ],
-                              "meta:enum":{
-                                 "consent":"User Consent",
-                                 "legitimate_interest":"Legitimate Interest",
-                                 "contract":"Contract",
-                                 "vital_interest":"Vital Interest of the Individual",
-                                 "compliance":"Compliance with a Legal Obligation",
-                                 "public_interest":"Public Interest"
-                              }
-                           },
 
                            "xdm:optOutValue": {
                               "title":"Opt Out Value",
                               "description": "The value of the specific opt out.",
                               "$ref": "#/definitions/ConsentValue"
                            },
+                           "xdm:basisOfProcessing":{
+                              "$ref": "#/definitions/BasisOfProcessing"
+                           },
                            "xdm:timestamp": {
-                              "$ref": "#/definitions/timestamp"
+                              "$ref": "#/definitions/Timestamp"
                            }
                         }
                      }
@@ -128,8 +131,11 @@
                                  "description": "The default value for personalization",
                                  "$ref": "#/definitions/ConsentValue"
                               },
+                              "xdm:basisOfProcessing":{
+                                 "$ref": "#/definitions/BasisOfProcessing"
+                              },
                               "xdm:timestamp": {
-                                 "$ref": "#/definitions/timestamp"
+                                 "$ref": "#/definitions/Timestamp"
                               }
                            }
                         },
@@ -188,8 +194,11 @@
                                     "description": "The value for this specific personalization preference",
                                     "$ref": "#/definitions/ConsentValue"
                                  },
+                                 "xdm:basisOfProcessing":{
+                                    "$ref": "#/definitions/BasisOfProcessing"
+                                 },
                                  "xdm:timestamp": {
-                                    "$ref": "#/definitions/timestamp"
+                                    "$ref": "#/definitions/Timestamp"
                                  }
                               }
                            }
@@ -211,8 +220,11 @@
                                  "description": "The default value for direct marketing preferences",
                                  "$ref": "#/definitions/ConsentValue"
                               },
+                              "xdm:basisOfProcessing":{
+                                 "$ref": "#/definitions/BasisOfProcessing"
+                              },
                               "xdm:timestamp": {
-                                 "$ref": "#/definitions/timestamp"
+                                 "$ref": "#/definitions/Timestamp"
                               }
                            }
                         },
@@ -257,8 +269,11 @@
                                     "description": "The value for this specific marketing preference",
                                     "$ref": "#/definitions/ConsentValue"
                                  },
+                                 "xdm:basisOfProcessing":{
+                                    "$ref": "#/definitions/BasisOfProcessing"
+                                 },
                                  "xdm:timestamp": {
-                                    "$ref": "#/definitions/timestamp"
+                                    "$ref": "#/definitions/Timestamp"
                                  }
                               }
                            }

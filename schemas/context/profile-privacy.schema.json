@@ -64,7 +64,7 @@
          "format": "date-time"
       },
       "profile-privacy": {
-               "properties":{
+         "properties":{
             "xdm:optOutConsentLevel":{
                "type":"object",
                "title":"Privacy/Marketing Preference Values",

@@ -333,7 +333,10 @@
                                  "description": "Consent string and its specification. This can help reading application to use appropriate library.",
                                  "$ref": "https://ns.adobe.com/xdm/context/consentstring"
                               }
-                           }
+                           },
+                           "required": [
+                              "xdm:consentTimestamp"
+                           ]
                         }
                      }
                   }

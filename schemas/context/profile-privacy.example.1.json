@@ -42,13 +42,27 @@
 			"xdm:marketingOptions": [
 				{
 					"xdm:marketingType": "email",
-					"xdm:marketingChoice": "in"
+					"xdm:marketingChoice": "in",
+                    "xdm:subscriptions": {
+                       "weekly_mailer": {
+                          "xdm:marketingChoice": "out",
+                          "xdm:timestamp": "2019-02-03T15:52:25+00:00"
+                       },
+                       "daily_newsletter": {
+                          "xdm:marketingChoice": "in"
+                       }
+                    }
 				},
 				{
 					"xdm:marketingType": "iot",
 					"xdm:marketingChoice": "out",
 					"xdm:timestamp": "2019-01-01T15:52:25+00:00",
-					"xdm:basisOfProcessing": "legitimate_interest"
+					"xdm:basisOfProcessing": "legitimate_interest",
+                    "xdm:subscriptions": {
+                       "out_of_milk": {
+                         "xdm:marketingChoice": "in"
+                       }
+                    }
 				}
 			]
 		},

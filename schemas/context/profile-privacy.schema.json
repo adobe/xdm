@@ -269,6 +269,22 @@
                                  },
                                  "xdm:timestamp": {
                                     "$ref": "#/definitions/Timestamp"
+                                 },
+                                 "xdm:subscriptions": {
+                                    "title": "Company-specific subscriptions",
+                                    "description": "Company-specific subscriptions, such as mailing lists or newsletters",
+                                    "type": "object",
+                                    "meta:xdmType": "map ",
+                                    "additionalProperties" : {
+                                       "xdm:marketingChoice": {
+                                          "title": "Marketing Preference Value",
+                                          "description": "The value for this specific marketing preference",
+                                          "$ref": "#/definitions/ConsentValue"
+                                       },
+                                       "xdm:timestamp": {
+                                          "$ref": "#/definitions/Timestamp"
+                                       }
+                                    }
                                  }
                               }
                            }

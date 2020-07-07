@@ -8,7 +8,7 @@
   "$id": "https://ns.adobe.com/xdm/experience/customerJourneyManagement/email-channel-context",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Adobe CJM ExperienceEvent - MessageProfile Email Channel Details",
-  "description": "Email channel fields for the Messageprofle associated with the Adobe CJM Expereince Event.",
+  "description": "Email channel fields for the MessageProfile associated with the Adobe CJM Experience Event.",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,

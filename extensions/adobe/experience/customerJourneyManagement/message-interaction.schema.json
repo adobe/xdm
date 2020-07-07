@@ -29,17 +29,17 @@
           }
         },
         "@id": {
-          "title": "Tracking URL ID",
+          "title": "Tracker link ID",
           "type": "string",
           "description": "Unique Identifier of the Link clicked by the user."
         },
         "xdm:label": {
-          "title": "URL Label",
+          "title": "Link Label",
           "type": "string",
           "description": "The user-friendly label clicking on which the link opens."
         },
         "xdm:category": {
-          "title": "URL Category",
+          "title": "Link Category",
           "type": "string",
           "description": "The category of the link. It may be `subscription`, or a user-defined category.",
           "meta:enum": {}

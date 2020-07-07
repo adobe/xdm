@@ -29,14 +29,14 @@
 
         "xdm:channelContext": {
           "title": "Message Channel context",
-          "description": "Delivery Channel fields for the Messageprofle associated with the Adobe CJM Expereince Event.",
+          "description": "Message Channel fields for the Messageprofle associated with the Adobe CJM Experience Event.",
           "oneOf": [
             {
               "properties": {
                 "xdm:emailChannelContext": {
                   "title": "Email Channel Context",
                   "$ref": "https://ns.adobe.com/xdm/experience/customerJourneyManagement/email-channel-context",
-                  "description": "Email channel fields for the Messageprofle associated with the Adobe CJM Expereince Event."
+                  "description": "Email channel fields for the Messageprofle associated with the Adobe CJM Experience Event."
                 }
               },
               "required": ["xdm:emailChannelContext"]
@@ -46,7 +46,7 @@
                 "xdm:pushChannelContext": {
                   "title": "Push Channel Context",
                   "$ref": "https://ns.adobe.com/xdm/experience/customerJourneyManagement/push-channel-context",
-                  "description": "Push channel fields for the MessageProfile associated with the Adobe CJM Expereince Event."
+                  "description": "Push channel fields for the MessageProfile associated with the Adobe CJM Experience Event."
                 }
               },
               "required": ["xdm:pushChannelContext"]
@@ -55,7 +55,7 @@
         },
         "xdm:eventStatus": {
           "title": "Event Status",
-          "description": "Provide the status for the Delivery, Feedback, Tracking Expereince Event for the MessageProfile.",
+          "description": "Provide the status for the Delivery, Feedback, Tracking Experience Event for the MessageProfile.",
           "oneOf": [
             {
               "properties": {

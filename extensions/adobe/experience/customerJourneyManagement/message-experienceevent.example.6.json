@@ -1,7 +1,7 @@
 {
   "xdm:timestamp": "2020-06-15T10:10:00+00:00",
   "@id": "https://data.adobe.io/experienceid/5ba0475a-5c31-4fce-b573-8ee222a40f45",
-  "xdm:eventType": "message.feedback",
+  "xdm:eventType": "message.tracking",
   "xdm:identityMap": {
     "ECID": [
       {
@@ -20,7 +20,7 @@
   "xdm:messageProfile": {
     "@id": "4218b775-bef3-46b2-aee2-7caae052cf94",
     "xdm:channel": {
-      "@id": "https://ns.adobe.com/xdm/channels/email"
+      "@id": "https://ns.adobe.com/xdm/channels/push"
     },
     "xdm:variant": "A"
   },

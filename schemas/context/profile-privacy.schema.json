@@ -301,6 +301,31 @@
                      "title":"Preferences Version",
                      "description": "Version of the Privacy Preferences Standard",
                      "type":"string"
+                  },
+                  "xdm:user_locale":{
+                     "title":"User Locale",
+                     "description":"User location or jurisdiction that applies to the consents for this user",
+                     "type":"string"
+                  },
+                  "xdm:locale_source":{
+                     "title": "Locale Source",
+                     "description": "Method used to determine the user's locale",
+                     "enum":[
+                        "ip",
+                        "gps",
+                        "user_provided",
+                        "website_location",
+                        "inferred",
+                        "other"
+                     ],
+                     "meta:enum": {
+                        "ip": "IP Address",
+                        "gps": "Device GPS",
+                        "user_provided": "User Provided",
+                        "website_location": "Website eTDL",
+                        "inferred": "Inferred",
+                        "other": "other"
+                     }
                   }
                }
             },

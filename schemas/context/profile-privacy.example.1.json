@@ -67,7 +67,9 @@
 			]
 		},
 		"xdm:version": "1.0.0",
-		"xdm:timestamp": "2019-01-01T15:52:25+00:00"
+		"xdm:timestamp": "2019-01-01T15:52:25+00:00",
+		"xdm:user_locale": "UK",
+		"xdm:locale_source": "ip"
 	},
 	"xdm:identityPrivacyInfo": {
 		"ECID": {

@@ -86,7 +86,8 @@
     "xdm:messageExecution",
     "xdm:messageProfile",
     "xdm:channelContext",
-    "xdm:eventStatus"
+    "xdm:eventStatus",
+    "xdm:directMarketing"
   ],
   "allOf": [
     {
@@ -97,6 +98,9 @@
     },
     {
       "$ref": "https://ns.adobe.com/xdm/context/experienceevent-environment-details"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-directmarketing"
     },
     {
       "$ref": "#/definitions/messageExperienceevent"

@@ -21,11 +21,11 @@
           "title": "Feedback Status",
           "type": "string",
           "description": "Provide status of a delivery attempt.",
-          "enum": ["error", "exclude", "sent", "bounce", "delay"],
+          "enum": ["error", "exclude", "send", "bounce", "delay"],
           "meta:enum": {
             "error": "Mesage processing failed.",
             "exclude": "Messageprofile is filtered out for sending the message",
-            "sent": "Messages such as Email, SMS, Push that have been dispatched to a person's account, address, or device.",
+            "send": "Messages such as Email, SMS, Push that have been dispatched to a person's account, address, or device.",
             "bounce": "Message failed to deliver, and no longer will be retried.",
             "delay": "message failed to deliver, but will be retry after next schedule time."
           }
@@ -37,13 +37,13 @@
             "xdm:excludeCode": {
               "title": "Exclude Code",
               "type": "string",
-              "description": "Provide top level exclusion reason, like typology rule, mandatory parameter missing. ",
+              "description": "Provide top level exclusion reason, like typology rule, mandatory parameter missing.",
               "meta:enum": {}
             },
             "xdm:excludeSubCode": {
               "title": "Exclude SubCode",
               "type": "string",
-              "description": "provide exclusion subcode, like exact typology rule-id."
+              "description": "Provide exclusion subcode, like exact typology rule-id."
             }
           }
         },

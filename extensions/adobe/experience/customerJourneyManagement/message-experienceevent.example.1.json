@@ -10,6 +10,11 @@
       }
     ]
   },
+  "xdm:directMarketing": {
+    "xdm:sends": {
+      "xdm:value": 1
+    }
+  },
   "xdm:messageExecution": {
     "@id": "4218b775-bef3-46b2-aee2-7caae052cf94",
     "xdm:messageID": "aa440b96-ce65-4ad2-b95d-8c3b51f89bc2",
@@ -34,7 +39,7 @@
   },
   "xdm:eventStatus": {
     "xdm:messageDeliveryfeedback": {
-      "xdm:feedbackStatus": "sent"
+      "xdm:feedbackStatus": "send"
     }
   }
 }

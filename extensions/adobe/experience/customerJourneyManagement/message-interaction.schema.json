@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/experience/customerJourneyManagement/message-interaction",
+  "$id": "https://ns.adobe.com/experience/customerJourneyManagement/message-interaction",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Adobe CJM ExperienceEvent - Message interaction details",
   "description": "Describes interaction made by the profile on the message.",
@@ -17,7 +17,7 @@
   "definitions": {
     "messageInteraction": {
       "properties": {
-        "xdm:interactionType": {
+        "https://ns.adobe.com/xdm/experience/customerJourneyManagement/interactionType": {
           "title": "Interaction Type",
           "type": "string",
           "description": "Specify action made by user on a message.",
@@ -33,12 +33,12 @@
           "type": "string",
           "description": "Unique Identifier of the Link clicked by the user."
         },
-        "xdm:label": {
+        "https://ns.adobe.com/xdm/experience/customerJourneyManagement/label": {
           "title": "Link Label",
           "type": "string",
           "description": "The user-friendly label clicking on which the link opens."
         },
-        "xdm:category": {
+        "https://ns.adobe.com/xdm/experience/customerJourneyManagement/category": {
           "title": "Link Category",
           "type": "string",
           "description": "The category of the link. It may be `subscription`, or a user-defined category.",
@@ -47,7 +47,7 @@
       }
     }
   },
-  "required": ["xdm:interactionType"],
+  "required": ["https://ns.adobe.com/xdm/experience/customerJourneyManagement/interactionType"],
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"

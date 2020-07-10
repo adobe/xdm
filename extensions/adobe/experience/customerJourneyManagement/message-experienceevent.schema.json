@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/experience/customerJourneyManagement/message-experienceevent",
+  "$id": "https://ns.adobe.com/experience/customerJourneyManagement/message-experienceevent",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Adobe CJM ExperienceEvent Template Mixin",
   "type": "object",
@@ -16,66 +16,66 @@
   "definitions": {
     "messageExperienceevent": {
       "properties": {
-        "xdm:messageExecution": {
+        "https://ns.adobe.com/xdm/experience/customerJourneyManagement/messageExecution": {
           "title": "Message Execution",
-          "$ref": "https://ns.adobe.com/xdm/experience/customerJourneyManagement/messageexecution",
+          "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/messageexecution",
           "description": "MessageExecution details for the Adobe CJM ExperienceEvent."
         },
-        "xdm:messageProfile": {
+        "https://ns.adobe.com/xdm/experience/customerJourneyManagement/messageProfile": {
           "title": "Message Profile",
-          "$ref": "https://ns.adobe.com/xdm/experience/customerJourneyManagement/messageprofile",
+          "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/messageprofile",
           "description": "MessageProfile details for the Adobe CJM ExperienceEvent."
         },
 
-        "xdm:channelContext": {
+        "https://ns.adobe.com/xdm/experience/customerJourneyManagement/channelContext": {
           "title": "Message Channel context",
           "description": "Message Channel fields for the Messageprofle associated with the Adobe CJM Experience Event.",
           "oneOf": [
             {
               "properties": {
-                "xdm:emailChannelContext": {
+                "https://ns.adobe.com/xdm/experience/customerJourneyManagement/emailChannelContext": {
                   "title": "Email Channel Context",
-                  "$ref": "https://ns.adobe.com/xdm/experience/customerJourneyManagement/email-channel-context",
+                  "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/email-channel-context",
                   "description": "Email channel fields for the Messageprofle associated with the Adobe CJM Experience Event."
                 }
               },
-              "required": ["xdm:emailChannelContext"]
+              "required": ["https://ns.adobe.com/xdm/experience/customerJourneyManagement/emailChannelContext"]
             },
             {
               "properties": {
-                "xdm:pushChannelContext": {
+                "https://ns.adobe.com/xdm/experience/customerJourneyManagement/pushChannelContext": {
                   "title": "Push Channel Context",
-                  "$ref": "https://ns.adobe.com/xdm/experience/customerJourneyManagement/push-channel-context",
+                  "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/push-channel-context",
                   "description": "Push channel fields for the MessageProfile associated with the Adobe CJM Experience Event."
                 }
               },
-              "required": ["xdm:pushChannelContext"]
+              "required": ["https://ns.adobe.com/xdm/experience/customerJourneyManagement/pushChannelContext"]
             }
           ]
         },
-        "xdm:eventStatus": {
+        "https://ns.adobe.com/xdm/experience/customerJourneyManagement/eventStatus": {
           "title": "Event Status",
           "description": "Provide the status for the Delivery, Feedback, Tracking Experience Event for the MessageProfile.",
           "oneOf": [
             {
               "properties": {
-                "xdm:messageDeliveryfeedback": {
+                "https://ns.adobe.com/xdm/experience/customerJourneyManagement/messageDeliveryfeedback": {
                   "title": "Message Delivery Feedback",
-                  "$ref": "https://ns.adobe.com/xdm/experience/customerJourneyManagement/message-delivery-feedback",
+                  "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/message-delivery-feedback",
                   "description": "Captures Delivey status of a message."
                 }
               },
-              "required": ["xdm:messageDeliveryfeedback"]
+              "required": ["https://ns.adobe.com/xdm/experience/customerJourneyManagement/messageDeliveryfeedback"]
             },
             {
               "properties": {
-                "xdm:messageInteraction": {
+                "https://ns.adobe.com/xdm/experience/customerJourneyManagement/messageInteraction": {
                   "title": "Message Interaction",
-                  "$ref": "https://ns.adobe.com/xdm/experience/customerJourneyManagement/message-interaction",
+                  "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/message-interaction",
                   "description": "Captures interaction made by the profile on the message."
                 }
               },
-              "required": ["xdm:messageInteraction"]
+              "required": ["https://ns.adobe.com/xdm/experience/customerJourneyManagement/messageInteraction"]
             }
           ]
         }
@@ -83,10 +83,10 @@
     }
   },
   "required": [
-    "xdm:messageExecution",
-    "xdm:messageProfile",
-    "xdm:channelContext",
-    "xdm:eventStatus",
+    "https://ns.adobe.com/xdm/experience/customerJourneyManagement/messageExecution",
+    "https://ns.adobe.com/xdm/experience/customerJourneyManagement/messageProfile",
+    "https://ns.adobe.com/xdm/experience/customerJourneyManagement/channelContext",
+    "https://ns.adobe.com/xdm/experience/customerJourneyManagement/eventStatus",
     "xdm:directMarketing"
   ],
   "allOf": [

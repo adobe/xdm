@@ -1,8 +1,7 @@
 {
-  "xdm:interactionType": "click",
+  "https://ns.adobe.com/xdm/experience/customerJourneyManagement/interactionType": "click",
   "@id": "123",
   "xdm:description": "Click to check new offer",
-  "xdm:url": "https://mycompany.com/offer/1",
-  "xdm:label": "Click to check new offer",
-  "xdm:category": "Click"
+  "https://ns.adobe.com/xdm/experience/customerJourneyManagement/label": "Click to check new offer",
+  "https://ns.adobe.com/xdm/experience/customerJourneyManagement/category": "Click"
 }

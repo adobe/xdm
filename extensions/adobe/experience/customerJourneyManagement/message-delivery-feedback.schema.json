@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/experience/customerJourneyManagement/message-delivery-feedback",
+  "$id": "https://ns.adobe.com/experience/customerJourneyManagement/message-delivery-feedback",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Adobe CJM ExperienceEvent - Delivery-Feedback Details",
   "description": "Provide details for the Delivery feedback for a single message in the MessageExecution.",
@@ -17,7 +17,7 @@
   "definitions": {
     "messageDeliveryfeedback": {
       "properties": {
-        "xdm:feedbackStatus": {
+        "https://ns.adobe.com/xdm/experience/customerJourneyManagement/feedbackStatus": {
           "title": "Feedback Status",
           "type": "string",
           "description": "Provide status of a delivery attempt.",
@@ -30,38 +30,38 @@
             "delay": "message failed to deliver, but will be retry after next schedule time."
           }
         },
-        "xdm:excludeReason": {
+        "https://ns.adobe.com/xdm/experience/customerJourneyManagement/excludeReason": {
           "title": "Exclude Reason",
           "type": "object",
           "properties": {
-            "xdm:excludeCode": {
+            "https://ns.adobe.com/xdm/experience/customerJourneyManagement/excludeCode": {
               "title": "Exclude Code",
               "type": "string",
               "description": "Provide top level exclusion reason, like typology rule, mandatory parameter missing.",
               "meta:enum": {}
             },
-            "xdm:excludeSubCode": {
+            "https://ns.adobe.com/xdm/experience/customerJourneyManagement/excludeSubCode": {
               "title": "Exclude SubCode",
               "type": "string",
               "description": "Provide exclusion subcode, like exact typology rule-id."
             }
           }
         },
-        "xdm:messageFailure": {
+        "https://ns.adobe.com/xdm/experience/customerJourneyManagement/messageFailure": {
           "title": "Message Failure",
           "type": "object",
           "properties": {
-            "xdm:failureReason": {
+            "https://ns.adobe.com/xdm/experience/customerJourneyManagement/failureReason": {
               "title": "Failure Reason",
               "type": "string",
               "description": "Failure reason for a failed delivery attempt."
             },
-            "xdm:failureCode": {
+            "https://ns.adobe.com/xdm/experience/customerJourneyManagement/failureCode": {
               "title": "Failure Code",
               "type": "string",
               "description": "Failure code for a failed delivery attempt."
             },
-            "xdm:failureType": {
+            "https://ns.adobe.com/xdm/experience/customerJourneyManagement/failureType": {
               "title": "Failure Type",
               "type": "string",
               "description": "Classifies whether it is a soft bounce or hard bounce.",
@@ -72,7 +72,7 @@
             }
           }
         },
-        "xdm:retryCount": {
+        "https://ns.adobe.com/xdm/experience/customerJourneyManagement/retryCount": {
           "title": "Retry Count",
           "type": "integer",
           "description": "Number of failed attempts before the current event. The retryCount starts with '0', for message which is sent in first attempt will have 'retryCount' as 0."
@@ -80,7 +80,7 @@
       }
     }
   },
-  "required": ["xdm:feedbackStatus"],
+  "required": ["https://ns.adobe.com/xdm/experience/customerJourneyManagement/feedbackStatus"],
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"

@@ -5,12 +5,12 @@
 				"xdm:optOutType": "general_opt_out",
 				"xdm:optOutValue": "in",
 				"xdm:timestamp": "2019-01-01T15:52:25+00:00",
-				"xdm:basisOfProcessing": "legitimate_interest"
+				"xdm:optOutBasisOfProcessing": "legitimate_interest"
 			},
 			{
 				"xdm:optOutType": "device_linking",
 				"xdm:optOutValue": "not_provided",
-				"xdm:basisOfProcessing": "vital_interest"
+				"xdm:optOutBasisOfProcessing": "vital_interest"
 			},
 			{
 				"xdm:optOutType": "anonymous_analysis",
@@ -19,9 +19,9 @@
 		],
 		"xdm:personalizationPreferences": {
 			"xdm:defaultPersonalizationPreference": {
-				"xdm:personalizationChoice": "unknown",
-				"xdm:timestamp": "2019-01-01T15:52:25+00:00",
-				"xdm:basisOfProcessing": "consent"
+				"xdm:defaultPersonalizationChoice": "unknown",
+				"xdm:defaultPersonalizationTimestamp": "2019-01-01T15:52:25+00:00",
+				"xdm:defaultPersonalizationBasisOfProcessing": "consent"
 			},
 			"xdm:personalizationOptions": [
 				{
@@ -31,45 +31,45 @@
 				{
 					"xdm:personalizationType": "push_notifications",
 					"xdm:personalizationChoice": "out",
-					"xdm:basisOfProcessing": "legitimate_interest"
+					"xdm:personalizationBasisOfProcessing": "legitimate_interest"
 				}
 			]
 		},
 		"xdm:marketingPreferences": {
 			"xdm:defaultMarketingPreference": {
-				"xdm:marketingChoice": "unknown"
+				"xdm:defaultMarketingChoice": "unknown"
 			},
 			"xdm:marketingOptions": [
 				{
 					"xdm:marketingType": "email",
 					"xdm:marketingChoice": "in",
-                    "xdm:subscriptions": {
+                    "xdm:marketingSubscriptions": {
                        "weekly_mailer": {
-                          "xdm:marketingChoice": "out",
-                          "xdm:timestamp": "2019-02-03T15:52:25+00:00"
+                          "xdm:subscriptionChoice": "out",
+                          "xdm:subscriptionTimestamp": "2019-02-03T15:52:25+00:00"
                        },
                        "daily_newsletter": {
-                          "xdm:marketingChoice": "in"
+                          "xdm:subscriptionChoice": "in"
                        }
                     }
 				},
 				{
 					"xdm:marketingType": "iot",
 					"xdm:marketingChoice": "out",
-					"xdm:timestamp": "2019-01-01T15:52:25+00:00",
-					"xdm:basisOfProcessing": "legitimate_interest",
-                    "xdm:subscriptions": {
+					"xdm:marketingTimestamp": "2019-01-01T15:52:25+00:00",
+					"xdm:marketingBasisOfProcessing": "legitimate_interest",
+                    "xdm:marketingSubscriptions": {
                        "out_of_milk": {
-                         "xdm:marketingChoice": "in"
+                         "xdm:subscriptionChoice": "in"
                        }
                     }
 				}
 			]
 		},
-		"xdm:version": "1.0.0",
-		"xdm:timestamp": "2019-01-01T15:52:25+00:00",
-		"xdm:user_locale": "UK",
-		"xdm:locale_source": "ip"
+		"xdm:personalizationVersion": "1.0.0",
+		"xdm:personalizationTimestamp": "2019-01-01T15:52:25+00:00",
+		"xdm:personalizationUserLocale": "UK",
+		"xdm:personalizationLocaleSource": "ip"
 	},
 	"xdm:identityPrivacyInfo": {
 		"ECID": {

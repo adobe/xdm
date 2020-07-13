@@ -5,48 +5,48 @@
 				"xdm:optOutType": "general_opt_out",
 				"xdm:optOutValue": "in",
 				"xdm:timestamp": "2019-01-01T15:52:25+00:00",
-				"xdm:optOutBasisOfProcessing": "legitimate_interest"
+				"xdm:basisOfProcessing": "legitimate_interest"
 			}
 		],
 		"xdm:personalizationPreferences": {
-			"xdm:defaultPersonalizationPreference": {
-				"xdm:defaultPersonalizationChoice": "unknown",
-				"xdm:defaultPersonalizationTimestamp": "2019-01-01T15:52:25+00:00",
-				"xdm:defaultPersonalizationBasisOfProcessing": "consent"
+			"xdm:default": {
+				"xdm:choice": "unknown",
+				"xdm:timestamp": "2019-01-01T15:52:25+00:00",
+				"xdm:basisOfProcessing": "consent"
 			},
-			"xdm:personalizationOptions": [
+			"xdm:details": [
 				{
-					"xdm:personalizationType": "email",
-					"xdm:personalizationChoice": "in"
+					"xdm:type": "email",
+					"xdm:choice": "in"
 				}
 			]
 		},
 		"xdm:marketingPreferences": {
-			"xdm:defaultMarketingPreference": {
-				"xdm:defaultMarketingChoice": "unknown"
+			"xdm:default": {
+				"xdm:choice": "unknown"
 			},
-			"xdm:marketingOptions": [
+			"xdm:details": [
 				{
-					"xdm:marketingType": "email",
-					"xdm:marketingChoice": "in",
-                    "xdm:marketingSubscriptions": {
+					"xdm:type": "email",
+					"xdm:choice": "in",
+                    "xdm:subscriptions": {
                        "weekly_mailer": {
-                          "xdm:subscriptionChoice": "out",
-                          "xdm:subscriptionTimestamp": "2019-02-03T15:52:25+00:00"
+                          "xdm:choice": "out",
+                          "xdm:timestamp": "2019-02-03T15:52:25+00:00"
                        },
                        "daily_newsletter": {
-                          "xdm:subscriptionChoice": "in"
+                          "xdm:choice": "in"
                        }
                     }
 				},
 				{
-					"xdm:marketingType": "iot",
-					"xdm:marketingChoice": "out",
-					"xdm:marketingTimestamp": "2019-01-01T15:52:25+00:00",
-					"xdm:marketingBasisOfProcessing": "legitimate_interest",
-                    "xdm:marketingSubscriptions": {
+					"xdm:type": "iot",
+					"xdm:choice": "out",
+					"xdm:timestamp": "2019-01-01T15:52:25+00:00",
+					"xdm:basisOfProcessing": "legitimate_interest",
+                    "xdm:subscriptions": {
                        "out_of_milk": {
-                         "xdm:subscriptionChoice": "in"
+                         "xdm:choice": "in"
                        }
                     }
 				}

@@ -66,10 +66,10 @@
 				}
 			]
 		},
-		"xdm:personalizationVersion": "1.0.0",
-		"xdm:personalizationTimestamp": "2019-01-01T15:52:25+00:00",
-		"xdm:personalizationUserLocale": "UK",
-		"xdm:personalizationLocaleSource": "ip"
+		"xdm:consentAndPreferencesVersion": "1.0.0",
+		"xdm:consentAndPreferencesTimestamp": "2019-01-01T15:52:25+00:00",
+		"xdm:consentAndPreferencesUserLocale": "UK",
+		"xdm:consentAndPreferencesLocaleSource": "ip"
 	},
 	"xdm:identityPrivacyInfo": {
 		"ECID": {

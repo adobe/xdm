@@ -1,4 +1,58 @@
 {
+	"xdm:optOutConsentLevel": {
+		"xdm:privacyOptOuts": [
+			{
+				"xdm:optOutType": "general_opt_out",
+				"xdm:optOutValue": "in",
+				"xdm:timestamp": "2019-01-01T15:52:25+00:00",
+				"xdm:optOutBasisOfProcessing": "legitimate_interest"
+			}
+		],
+		"xdm:personalizationPreferences": {
+			"xdm:defaultPersonalizationPreference": {
+				"xdm:defaultPersonalizationChoice": "unknown",
+				"xdm:defaultPersonalizationTimestamp": "2019-01-01T15:52:25+00:00",
+				"xdm:defaultPersonalizationBasisOfProcessing": "consent"
+			},
+			"xdm:personalizationOptions": [
+				{
+					"xdm:personalizationType": "email",
+					"xdm:personalizationChoice": "in"
+				}
+			]
+		},
+		"xdm:marketingPreferences": {
+			"xdm:defaultMarketingPreference": {
+				"xdm:defaultMarketingChoice": "unknown"
+			},
+			"xdm:marketingOptions": [
+				{
+					"xdm:marketingType": "email",
+					"xdm:marketingChoice": "in",
+                    "xdm:marketingSubscriptions": {
+                       "weekly_mailer": {
+                          "xdm:subscriptionChoice": "out",
+                          "xdm:subscriptionTimestamp": "2019-02-03T15:52:25+00:00"
+                       },
+                       "daily_newsletter": {
+                          "xdm:subscriptionChoice": "in"
+                       }
+                    }
+				},
+				{
+					"xdm:marketingType": "iot",
+					"xdm:marketingChoice": "out",
+					"xdm:marketingTimestamp": "2019-01-01T15:52:25+00:00",
+					"xdm:marketingBasisOfProcessing": "legitimate_interest",
+                    "xdm:marketingSubscriptions": {
+                       "out_of_milk": {
+                         "xdm:subscriptionChoice": "in"
+                       }
+                    }
+				}
+			]
+		}
+	},
     "xdm:consentStrings": [
         {
             "xdm:consentStandard": "IAB TCF",

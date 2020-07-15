@@ -65,10 +65,7 @@
           "description": "> Its value is boolean and SHOULD be true when the Link Object's `href` property is a URI Template.\\n\\nIts value SHOULD be considered false if it is undefined or any other value than `true`."
         }
       },
-      "required": [
-        "href",
-        "templated"
-      ],
+      "required": ["href", "templated"],
       "additionalProperties": false
     },
     "hal-link": {
@@ -84,9 +81,7 @@
           "description": "> Its value is boolean and SHOULD be true when the Link Object's `href` property is a URI Template.\\n\\nIts value SHOULD be considered false if it is undefined or any other value than `true`."
         }
       },
-      "required": [
-        "href"
-      ],
+      "required": ["href"],
       "additionalProperties": false
     }
   },

@@ -70,16 +70,9 @@
           "default": "deep"
         }
       },
-      "required": [
-        "repo:principal",
-        "repo:privileges"
-      ],
+      "required": ["repo:principal", "repo:privileges"],
       "additionalProperties": {
-        "type": [
-          "object",
-          "array",
-          "string"
-        ]
+        "type": ["object", "array", "string"]
       }
     },
     "privilege": {

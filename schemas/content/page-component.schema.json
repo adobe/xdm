@@ -17,8 +17,7 @@
         "@type": {
           "type": "string",
           "format": "uri",
-          "description":
-            "Type of the component and acts as processing hint for the client."
+          "description": "Type of the component and acts as processing hint for the client."
         }
       }
     }
@@ -28,9 +27,8 @@
       "$ref": "#/definitions/component"
     },
     {
-      "$ref":
-        "https://ns.adobe.com/xdm/content/componentized-page#/definitions/residuals"
+      "$ref": "https://ns.adobe.com/xdm/content/componentized-page#/definitions/residuals"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

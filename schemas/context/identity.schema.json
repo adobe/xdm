@@ -10,23 +10,22 @@
   "title": "Identity",
   "type": "object",
   "meta:extensible": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/context/identityitem"],
-  "description":
-    "Identity is used to clearly distinguish people that are interacting with digital experiences. Identity is established by an identity provider, which itself is referenced in the `namespace` attribute. Within each `namespace`, the identity is unique.",
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/context/identityitem"
+  ],
+  "description": "Identity is used to clearly distinguish people that are interacting with digital experiences. Identity is established by an identity provider, which itself is referenced in the `namespace` attribute. Within each `namespace`, the identity is unique.",
   "definitions": {
     "identity": {
       "properties": {
         "xdm:namespace": {
           "title": "Namespace",
           "$ref": "https://ns.adobe.com/xdm/context/namespace",
-          "description":
-            "The namespace associated with the `xid` attribute and matched up with the AAM data source integration code."
+          "description": "The namespace associated with the `xid` attribute and matched up with the AAM data source integration code."
         },
         "xdm:xid": {
           "title": "Experience identifier",
           "type": "string",
-          "description":
-            "When present, experience identifier value represents a cross-namespace identifier that is unique across all namespace-scoped identifiers in all namespaces."
+          "description": "When present, experience identifier value represents a cross-namespace identifier that is unique across all namespace-scoped identifiers in all namespaces."
         }
       }
     }
@@ -42,5 +41,5 @@
       "$ref": "#/definitions/identity"
     }
   ],
-  "meta:status": "stabilizing"
+  "meta:status": "stable"
 }

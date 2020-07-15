@@ -234,7 +234,9 @@
                 }
               },
               "additionalProperties": false,
-              "required": ["xdm"]
+              "required": [
+                "xdm"
+              ]
             }
           },
           "patternProperties": {
@@ -273,7 +275,9 @@
             "^id3:.*$": {},
             ".+://.+": {}
           },
-          "required": ["@context"],
+          "required": [
+            "@context"
+          ],
           "additionalProperties": false
         }
       ]
@@ -284,5 +288,5 @@
       "$ref": "#/definitions/@context"
     }
   ],
-  "meta:status": "stabilizing"
+  "meta:status": "stable"
 }

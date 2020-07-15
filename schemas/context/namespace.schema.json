@@ -11,17 +11,18 @@
   "type": "object",
   "meta:extensible": true,
   "description": "",
-    "definitions": {
+  "definitions": {
     "namespace": {
       "properties": {
         "xdm:code": {
           "title": "Code",
           "type": "string",
-          "description":
-            "The code is a human readable identifier for the namespace and can be used to request the technical namespace id which is used for identity graph processing."
+          "description": "The code is a human readable identifier for the namespace and can be used to request the technical namespace id which is used for identity graph processing."
         }
       },
-      "required": ["xdm:code"]
+      "required": [
+        "xdm:code"
+      ]
     }
   },
   "allOf": [
@@ -32,5 +33,5 @@
       "$ref": "#/definitions/namespace"
     }
   ],
-  "meta:status": "stabilizing"
+  "meta:status": "stable"
 }

@@ -9,7 +9,9 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "type": "object",
   "meta:extensible": true,
-  "meta:extends": ["http://schema.org/GeoCoordinates"],
+  "meta:extends": [
+    "http://schema.org/GeoCoordinates"
+  ],
   "title": "Geo",
   "description": "The geographic related data where an event was observed.",
   "definitions": {
@@ -19,15 +21,17 @@
           "title": "Country code",
           "type": "string",
           "pattern": "^[A-Z]{2}$",
-          "description":
-            "The two-character [ISO 3166-1 alpha-2](https://datahub.io/core/country-list) code for the country."
+          "description": "The two-character [ISO 3166-1 alpha-2](https://datahub.io/core/country-list) code for the country."
         },
         "xdm:stateProvince": {
           "title": "State or province",
           "type": "string",
-          "description":
-            "The state, or province portion of the observation. The format follows the [ISO 3166-2 (country and subdivision)][http://www.unece.org/cefact/locode/subdivisions.html] standard.",
-          "examples": ["US-CA", "DE-BB", "JP-13"],
+          "description": "The state, or province portion of the observation. The format follows the [ISO 3166-2 (country and subdivision)][http://www.unece.org/cefact/locode/subdivisions.html] standard.",
+          "examples": [
+            "US-CA",
+            "DE-BB",
+            "JP-13"
+          ],
           "pattern": "([A-Z]{2}-[A-Z0-9]{1,3}|)"
         },
         "xdm:city": {
@@ -38,8 +42,7 @@
         "xdm:postalCode": {
           "title": "Postal code",
           "type": "string",
-          "description":
-            "The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code."
+          "description": "The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code."
         },
         "xdm:dmaID": {
           "title": "Designated market area",
@@ -49,8 +52,7 @@
         "xdm:msaID": {
           "title": "Metropolitan statistical area",
           "type": "integer",
-          "description":
-            "The metropolitan statistical area in the United States where the observation occurred."
+          "description": "The metropolitan statistical area in the United States where the observation occurred."
         }
       }
     }
@@ -63,5 +65,5 @@
       "$ref": "#/definitions/geo"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

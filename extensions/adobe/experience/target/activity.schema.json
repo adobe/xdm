@@ -33,7 +33,10 @@
           }
         }
       },
-      "required": ["activityID", "version"]
+      "required": [
+        "activityID",
+        "version"
+      ]
     }
   },
   "allOf": [
@@ -41,5 +44,5 @@
       "$ref": "#/definitions/activity"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

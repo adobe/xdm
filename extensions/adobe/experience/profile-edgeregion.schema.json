@@ -12,7 +12,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/profile"
+  ],
   "definitions": {
     "profile-edgeregion": {
       "properties": {
@@ -45,5 +47,5 @@
       "$ref": "#/definitions/profile-edgeregion"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

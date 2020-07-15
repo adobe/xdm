@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/profile"
+  ],
   "description": "Information about Search Advertising Platform.",
   "definitions": {
     "searchadvertising-platform": {
@@ -34,5 +36,5 @@
       "$ref": "#/definitions/searchadvertising-platform"
     }
   ],
-  "meta:status": "deprecated"
+  "meta:status": "stable"
 }

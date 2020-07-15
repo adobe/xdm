@@ -25,7 +25,10 @@
           "description": "Link to the site and optionally the page of the party which has issued the rating value, linked resource should explain the rating rules."
         }
       },
-      "required": ["iptc4xmpExt:RatingValue", "iptc4xmpExt:RatingSourceLink"]
+      "required": [
+        "iptc4xmpExt:RatingValue",
+        "iptc4xmpExt:RatingSourceLink"
+      ]
     }
   },
   "allOf": [
@@ -33,5 +36,5 @@
       "$ref": "#/definitions/rating"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

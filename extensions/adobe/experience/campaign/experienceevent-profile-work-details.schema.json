@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Adobe Campaign ExperienceEvent optional snapshot of profile work details.",
   "definitions": {
     "campaign-experienceevent-profile-work-details": {
@@ -59,5 +61,5 @@
       "$ref": "#/definitions/campaign-experienceevent-profile-work-details"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

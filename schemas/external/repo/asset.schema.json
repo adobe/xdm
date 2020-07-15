@@ -24,7 +24,9 @@
           "meta:immutable": true,
           "meta:usereditable": false,
           "description": "A unique identifier given to every addressable asset in a given repository.",
-          "examples": ["urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e"]
+          "examples": [
+            "urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e"
+          ]
         },
         "repo:size": {
           "meta:usereditable": false,
@@ -100,5 +102,5 @@
     "repo:version",
     "repo:size"
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

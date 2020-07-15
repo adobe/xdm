@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "ExperienceEvent endUserIDs (deprecated).",
   "definitions": {
     "experienceevent-enduserids-deprecated": {
@@ -33,5 +35,5 @@
       "$ref": "#/definitions/experienceevent-enduserids-deprecated"
     }
   ],
-  "meta:status": "deprecated"
+  "meta:status": "stable"
 }

@@ -55,16 +55,24 @@
       },
       "anyOf": [
         {
-          "required": ["xdm:title"]
+          "required": [
+            "xdm:title"
+          ]
         },
         {
-          "required": ["xdm:description"]
+          "required": [
+            "xdm:description"
+          ]
         },
         {
-          "required": ["meta:enum"]
+          "required": [
+            "meta:enum"
+          ]
         }
       ],
-      "required": ["xdm:sourceProperty"]
+      "required": [
+        "xdm:sourceProperty"
+      ]
     }
   },
   "allOf": [
@@ -75,5 +83,5 @@
       "$ref": "#/definitions/alternateDisplayInfo"
     }
   ],
-  "meta:status": "stabilizing"
+  "meta:status": "stable"
 }

@@ -51,13 +51,20 @@
       },
       "oneOf": [
         {
-          "required": ["xdm:label"]
+          "required": [
+            "xdm:label"
+          ]
         },
         {
-          "required": ["xdm:sourceProperty"]
+          "required": [
+            "xdm:sourceProperty"
+          ]
         }
       ],
-      "required": ["xdm:destinationSchema", "xdm:destinationVersion"]
+      "required": [
+        "xdm:destinationSchema",
+        "xdm:destinationVersion"
+      ]
     }
   },
   "allOf": [
@@ -68,5 +75,5 @@
       "$ref": "#/definitions/relationshipdescriptor"
     }
   ],
-  "meta:status": "stabilizing"
+  "meta:status": "stable"
 }

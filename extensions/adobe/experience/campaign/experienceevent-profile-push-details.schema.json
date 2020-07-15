@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Adobe Campaign ExperienceEvent optional snapshot of profile push details.",
   "definitions": {
     "campaign-experienceevent-profile-push-details": {
@@ -45,5 +47,5 @@
       "$ref": "#/definitions/campaign-experienceevent-profile-push-details"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

@@ -10,8 +10,7 @@
   "title": "Geo interaction details",
   "type": "object",
   "meta:extensible": true,
-  "description":
-    "The geo details relating to the current state of inclusion in a geo defined area.",
+  "description": "The geo details relating to the current state of inclusion in a geo defined area.",
   "definitions": {
     "geo-interaction-detail": {
       "properties": {
@@ -41,5 +40,5 @@
       "$ref": "#/definitions/geo-interaction-detail"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

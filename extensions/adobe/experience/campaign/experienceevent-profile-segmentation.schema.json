@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Adobe Campaign ExperienceEvent optional snapshot of profile segmentation.",
   "definitions": {
     "campaign-experienceevent-profile-segmentation": {
@@ -50,5 +52,5 @@
       "$ref": "#/definitions/campaign-experienceevent-profile-segmentation"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

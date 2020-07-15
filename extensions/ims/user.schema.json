@@ -8,8 +8,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/adobecloudplatform/ims/user",
   "title": "IMS User",
-  "description":
-    "This model represents an authenticated IMS User. The IMS user principal is a user account under Adobe's identity management system (IMS).",
+  "description": "This model represents an authenticated IMS User. The IMS user principal is a user account under Adobe's identity management system (IMS).",
   "definitions": {
     "user": {
       "type": "object",
@@ -19,8 +18,7 @@
           "const": "ims"
         },
         "xdm:id": {
-          "description":
-            "Principal ID identifies a user account in IMS. Its value is equivalent to the standard claim, `sub` as mentioned in the [openid connect 1.0 standard claims](http://openid.net/specs/openid-connect-core-1_0.html#StandardClaim). This value can be obtained by fetching the [userinfo resource](http://openid.net/specs/openid-connect-core-1_0.html#UserInfo) for a particular user [in IMS](https://wiki.corp.adobe.com/display/ims/IMS+API+-+userinfo).",
+          "description": "Principal ID identifies a user account in IMS. Its value is equivalent to the standard claim, `sub` as mentioned in the [openid connect 1.0 standard claims](http://openid.net/specs/openid-connect-core-1_0.html#StandardClaim). This value can be obtained by fetching the [userinfo resource](http://openid.net/specs/openid-connect-core-1_0.html#UserInfo) for a particular user [in IMS](https://wiki.corp.adobe.com/display/ims/IMS+API+-+userinfo).",
           "type": "string"
         },
         "xdm:type": {
@@ -60,6 +58,10 @@
       "$ref": "#/definitions/publicprofile"
     }
   ],
-  "required" : ["xdm:identityProvider", "xdm:id", "xdm:type"],
-  "meta:status": "deprecated"
+  "required": [
+    "xdm:identityProvider",
+    "xdm:id",
+    "xdm:type"
+  ],
+  "meta:status": "stable"
 }

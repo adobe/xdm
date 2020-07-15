@@ -27,7 +27,13 @@
       "type": "array",
       "items": {
         "type": "string",
-        "enum": ["ack", "read", "write", "attach", "delete"]
+        "enum": [
+          "ack",
+          "read",
+          "write",
+          "attach",
+          "delete"
+        ]
       }
     }
   },
@@ -36,5 +42,5 @@
       "$ref": "#/definitions/effectiveprivileges"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

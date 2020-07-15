@@ -18,7 +18,10 @@
           "name": "Enforcement Type",
           "description": "Determines whether the quota is being enforced (hard quota) or only reported on (soft quota).",
           "type": "string",
-          "enum": ["hard", "soft"]
+          "enum": [
+            "hard",
+            "soft"
+          ]
         },
         "xdm:amount": {
           "name": "Quota Amount",
@@ -45,10 +48,13 @@
           "type": "string"
         }
       },
-      "required": ["xdm:enforcement", "xdm:amount"]
+      "required": [
+        "xdm:enforcement",
+        "xdm:amount"
+      ]
     }
   },
   "type": "object",
   "$ref": "#/definitions/quota",
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

@@ -26,6 +26,8 @@ Information related to timed media such main content, ads, and chapters.
   "xdm:primaryAssetReference": {
     "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234430",
     "dc:title": "Floki Begs Helga for Freedom",
+    "dc:creator": "Video Author",
+    "dc:publisher": "tvonline",
     "xmpDM:duration": 87,
     "iptc4xmpExt:Series": {
       "iptc4xmpExt:Name": "show_summary",
@@ -33,6 +35,7 @@ Information related to timed media such main content, ads, and chapters.
     },
     "xdm:showType": "episode",
     "xdm:streamFormat": "long",
+    "xdm:streamType": "video",
     "iptc4xmpExt:Season": {
       "iptc4xmpExt:Number": 1
     },
@@ -57,6 +60,8 @@ Information related to timed media such main content, ads, and chapters.
   "xdm:primaryAssetViewDetails": {
     "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114230",
     "xdm:playerName": "watchsport",
+    "xdm:videoSegment": "3-10",
+    "xdm:path": "id:show:season:episode:bla.com:123a12263-4ce7",
     "xdm:broadcastChannel": "WatchSportTV",
     "xdm:broadcastContentType": "VOD",
     "xdm:streamFormat": "short",
@@ -67,6 +72,7 @@ Information related to timed media such main content, ads, and chapters.
     "xdm:adLoadType": "2",
     "xdm:sourceFeed": "http%3A%2F%2Fvod01.this.link.net%2Fhls%2Fvu%2F9083406%2FVUBX02804879t475=90980_38_3_M_HD.m3u8",
     "xdm:sessionTimeout": 1800,
+    "xdm:downloadedPlayback": false,
     "xdm:fullScreen": {
       "xdm:playerStateSet": true,
       "xdm:playerStateCount": 3,
@@ -108,12 +114,20 @@ Information related to timed media such main content, ads, and chapters.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
+| [xdm:adCount](#xdmadcount) | Measure | Optional | Timed media information (this schema) |
+| [xdm:averageMinuteAudience](#xdmaverageminuteaudience) | Measure | Optional | Timed media information (this schema) |
+| [xdm:chapterCount](#xdmchaptercount) | Measure | Optional | Timed media information (this schema) |
 | [xdm:completes](#xdmcompletes) | Measure | Optional | Timed media information (this schema) |
+| [xdm:dayPart](#xdmdaypart) | `string` | Optional | Timed media information (this schema) |
 | [xdm:dropBeforeStarts](#xdmdropbeforestarts) | Measure | Optional | Timed media information (this schema) |
+| [xdm:estimatedStreams](#xdmestimatedstreams) | Measure | Optional | Timed media information (this schema) |
 | [xdm:federated](#xdmfederated) | Measure | Optional | Timed media information (this schema) |
+| [xdm:idp](#xdmidp) | `string` | Optional | Timed media information (this schema) |
 | [xdm:impressions](#xdmimpressions) | Measure | Optional | Timed media information (this schema) |
+| [xdm:mediaAuth](#xdmmediaauth) | `string` | Optional | Timed media information (this schema) |
 | [xdm:mediaChapter](#xdmmediachapter) | Timed media chapter information | Optional | Timed media information (this schema) |
 | [xdm:mediaSegmentViews](#xdmmediasegmentviews) | Measure | Optional | Timed media information (this schema) |
+| [xdm:pauseImpactedStreams](#xdmpauseimpactedstreams) | Measure | Optional | Timed media information (this schema) |
 | [xdm:pauseTime](#xdmpausetime) | Measure | Optional | Timed media information (this schema) |
 | [xdm:pauses](#xdmpauses) | Measure | Optional | Timed media information (this schema) |
 | [xdm:primaryAssetReference](#xdmprimaryassetreference) | Timed media primary asset reference | Optional | Timed media information (this schema) |
@@ -127,10 +141,68 @@ Information related to timed media such main content, ads, and chapters.
 | [xdm:starts](#xdmstarts) | Measure | Optional | Timed media information (this schema) |
 | [xdm:timePlayed](#xdmtimeplayed) | Measure | Optional | Timed media information (this schema) |
 | [xdm:totalTimePlayed](#xdmtotaltimeplayed) | Measure | Optional | Timed media information (this schema) |
+| [xdm:uniqueTimePlayed](#xdmuniquetimeplayed) | Measure | Optional | Timed media information (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
+## xdm:adCount
+### Ad count
+
+The number of ads started during the playback.
+
+`xdm:adCount`
+* is optional
+* type: Measure
+* defined in this schema
+
+### xdm:adCount Type
+
+
+* [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
+## xdm:averageMinuteAudience
+### Average Minute Audience
+
+Describes the average content time spent for a specific media item - i.e. the total content time spent divided by the length for all of the playback sessions.
+
+`xdm:averageMinuteAudience`
+* is optional
+* type: Measure
+* defined in this schema
+
+### xdm:averageMinuteAudience Type
+
+
+* [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
+## xdm:chapterCount
+### Chapter count
+
+The number of chapters started during the playback.
+
+`xdm:chapterCount`
+* is optional
+* type: Measure
+* defined in this schema
+
+### xdm:chapterCount Type
+
+
+* [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
 ## xdm:completes
-### Completes
+### Content completes
 
 Indicates if a timed media asset was watched to completion, this does not necessarily mean the viewer watched the whole video; viewer could have skipped ahead.
 
@@ -148,8 +220,28 @@ Indicates if a timed media asset was watched to completion, this does not necess
 
 
 
+## xdm:dayPart
+### Day part
+
+Defines the time of the day when the content was broadcast or played.
+
+`xdm:dayPart`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:dayPart Type
+
+
+`string`
+
+
+
+
+
+
 ## xdm:dropBeforeStarts
-### Drop before starts
+### Drops before starts
 
 Indicates the user abandoned the media stream before the first frame for example, during the pre-roll ad break, or due to an error while loading the content from the CDN.
 
@@ -167,8 +259,27 @@ Indicates the user abandoned the media stream before the first frame for example
 
 
 
+## xdm:estimatedStreams
+### Estimated streams
+
+The estimated number of video or audio streams per each individual content.
+
+`xdm:estimatedStreams`
+* is optional
+* type: Measure
+* defined in this schema
+
+### xdm:estimatedStreams Type
+
+
+* [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
 ## xdm:federated
-### Federated
+### Media federated
 
 Indicates the experience event was created through data federation or data sharing.
 
@@ -186,8 +297,28 @@ Indicates the experience event was created through data federation or data shari
 
 
 
+## xdm:idp
+### MVPD Identifier
+
+The MVPD (Multichannel Video Programming Distributor) provided via authentication. [https://en.wikipedia.org/?title=MVPD]
+
+`xdm:idp`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:idp Type
+
+
+`string`
+
+
+
+
+
+
 ## xdm:impressions
-### Impressions
+### Media starts
 
 Describes the intention to play a timed media asset. It does not measure success, as the user might abandon the content before the first frame is viewed.
 
@@ -200,6 +331,26 @@ Describes the intention to play a timed media asset. It does not measure success
 
 
 * [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
+## xdm:mediaAuth
+### Media authorized
+
+The user has been authorized via authentication.
+
+`xdm:mediaAuth`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:mediaAuth Type
+
+
+`string`
+
 
 
 
@@ -243,6 +394,25 @@ Indicates when at least one frame, not necessarily the first has been viewed.
 
 
 
+## xdm:pauseImpactedStreams
+### Pause impacted streams
+
+Indicates if one or more pauses occurred during the playback of a single media item.
+
+`xdm:pauseImpactedStreams`
+* is optional
+* type: Measure
+* defined in this schema
+
+### xdm:pauseImpactedStreams Type
+
+
+* [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
 ## xdm:pauseTime
 ### Total pause duration
 
@@ -263,7 +433,7 @@ Describes the duration in seconds in which playback was paused by the user.
 
 
 ## xdm:pauses
-### Pauses
+### Pause events
 
 The number of pause periods that occurred during playback.
 
@@ -415,7 +585,7 @@ Indicates that the playhead passed the 95% marker of media based on stream lengt
 
 
 ## xdm:resumes
-### Resumes
+### Content resumes
 
 Marks each playback that was resumed after more than 30 minutes of buffer, pause, or stall period.
 
@@ -434,7 +604,7 @@ Marks each playback that was resumed after more than 30 minutes of buffer, pause
 
 
 ## xdm:starts
-### Starts
+### Content starts
 
 Indicates the first frame of the timed media asset has been viewed for example, the viewer did not abandon during pre-roll ad, or buffering.
 
@@ -453,7 +623,7 @@ Indicates the first frame of the timed media asset has been viewed for example, 
 
 
 ## xdm:timePlayed
-### Time spent
+### Content time spent
 
 The amount of time spent in seconds by a user on a specific timed media asset.
 
@@ -472,7 +642,7 @@ The amount of time spent in seconds by a user on a specific timed media asset.
 
 
 ## xdm:totalTimePlayed
-### Content play
+### Media Time Spent
 
 Describes the total amount of time spent by a user on a specific timed media asset, which includes time spent watching ads.
 
@@ -482,6 +652,25 @@ Describes the total amount of time spent by a user on a specific timed media ass
 * defined in this schema
 
 ### xdm:totalTimePlayed Type
+
+
+* [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
+## xdm:uniqueTimePlayed
+### Unique Time Played
+
+Describes the sum of the unique intervals seen by a user on a timed media asset - i.e. the length playback intervals viewed multiple times are only counted once.
+
+`xdm:uniqueTimePlayed`
+* is optional
+* type: Measure
+* defined in this schema
+
+### xdm:uniqueTimePlayed Type
 
 
 * [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`

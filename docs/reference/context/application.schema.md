@@ -25,7 +25,8 @@ Details related to the application generated interactions. Application refers to
   "xdm:version": "1.0.1",
   "xdm:launches": {
     "xdm:value": 1
-  }
+  },
+  "xdm:userPerspective": "foreground"
 }
 ```
 
@@ -42,6 +43,7 @@ Details related to the application generated interactions. Application refers to
 | [xdm:launches](#xdmlaunches) | Measure | Optional | Application (this schema) |
 | [xdm:name](#xdmname) | `string` | Optional | Application (this schema) |
 | [xdm:upgrades](#xdmupgrades) | Measure | Optional | Application (this schema) |
+| [xdm:userPerspective](#xdmuserperspective) | `enum` | Optional | Application (this schema) |
 | [xdm:version](#xdmversion) | `string` | Optional | Application (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -207,6 +209,27 @@ Upgrade of an application that has previously been installed. Triggered on first
 
 * [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
 
+
+
+
+
+## xdm:userPerspective
+
+The perspective/physical relationship between the user and the app/brand at the time the event happened.  The most common are the app being in the foreground with the user directly interacting with it vs the app being in the background and still generating events.  Detached means the event was related to the app but didn't come directly from the app like the sending of an email or push notification from an external system.  Understanding the perspective of the user in relation to the app helps with accuratly generating sessions as the majority of the time you will not want to include background and detached events as part of an active session.
+
+`xdm:userPerspective`
+* is optional
+* type: `enum`
+* defined in this schema
+
+The value of this property **must** be equal to one of the [known values below](#xdmuserperspective-known-values).
+
+### xdm:userPerspective Known Values
+| Value | Description |
+|-------|-------------|
+| `foreground` | Foreground |
+| `background` | Background |
+| `detached` | Detached |
 
 
 

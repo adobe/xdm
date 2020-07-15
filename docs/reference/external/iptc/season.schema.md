@@ -2,7 +2,7 @@
 # Season Schema
 
 ```
-http://www.iptc.org/episode
+http://www.iptc.org/season
 ```
 
 The season the show belongs to. Based on [www.iptc.org](https://www.iptc.org/std/videometadatahub/recommendation/pre-versions/IPTC-VideoMetadataHub-props-Rec_1.1.html)

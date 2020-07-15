@@ -49,6 +49,16 @@
           "title": "Segmentation Details",
           "$ref": "https://ns.adobe.com/experience/adcloud/segment",
           "description": "Details associated with user segmentation rules."
+        },
+        "xdm:optimizationTag": {
+          "title": "Optimization tag",
+          "type": "string",
+          "description": "Tag related with Optimization/ML."
+        },
+        "xdm:attributableDeviceGraphId": {
+          "title": "Attributable Device Graph Identifier",
+          "type": "string",
+          "description": "Identifier for the device graph attributable to a conversion event."
         }
       }
     }

@@ -18,6 +18,11 @@
           "type": "string",
           "description": "Identifier for the account."
         },
+        "xdm:dspId": {
+          "title": "Demand Side Platform(DSP) Identifier",
+          "type": "string",
+          "description": "Identifier for the Demand Side Platform where the campaign is defined. Usually, is the id of Adobe Advertising Cloud DSP."
+        },
         "xdm:campaignId": {
           "title": "Campaign Identifier",
           "type": "string",

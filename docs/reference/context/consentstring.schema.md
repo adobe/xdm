@@ -29,13 +29,13 @@ Consent String as presented by user along with standard information to help cons
 
 # Consent String Properties
 
-| Property | Type | Required | Defined by |
-|----------|------|----------|------------|
-| [xdm:consentStandard](#xdmconsentstandard) | `string` | Optional | Consent String (this schema) |
-| [xdm:consentStandardVersion](#xdmconsentstandardversion) | `string` | Optional | Consent String (this schema) |
-| [xdm:consentStringValue](#xdmconsentstringvalue) | `string` | Optional | Consent String (this schema) |
-| [xdm:containsPersonalData](#xdmcontainspersonaldata) | `boolean` | Optional | Consent String (this schema) |
-| [xdm:gdprApplies](#xdmgdprapplies) | `boolean` | Optional | Consent String (this schema) |
+| Property | Type | Required | Default | Defined by |
+|----------|------|----------|---------|------------|
+| [xdm:consentStandard](#xdmconsentstandard) | `string` | Optional |  | Consent String (this schema) |
+| [xdm:consentStandardVersion](#xdmconsentstandardversion) | `string` | Optional |  | Consent String (this schema) |
+| [xdm:consentStringValue](#xdmconsentstringvalue) | `string` | Optional |  | Consent String (this schema) |
+| [xdm:containsPersonalData](#xdmcontainspersonaldata) | `boolean` | Optional |  | Consent String (this schema) |
+| [xdm:gdprApplies](#xdmgdprapplies) | `boolean` | Optional | `false` | Consent String (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:consentStandard
@@ -125,6 +125,7 @@ If this is true, it means this consent string needs to be processed for consent 
 `xdm:gdprApplies`
 * is optional
 * type: `boolean`
+* default: `false`
 * defined in this schema
 
 ### xdm:gdprApplies Type

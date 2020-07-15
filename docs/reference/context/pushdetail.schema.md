@@ -23,7 +23,7 @@ Push notification detail required to send mobile push notification to a specific
   "xdm:appID": "75eafb7e-fa44-4514-86fc-221e32c5aef9",
   "xdm:token": "99156313-c9df-4e54-9c6c-5740f940c3ca",
   "xdm:platform": "apns",
-  "xdm:blacklisted": false,
+  "xdm:blocklisted": false,
   "xdm:identity": {
     "xdm:namespace": {
       "xdm:code": "ECID"
@@ -39,6 +39,8 @@ Push notification detail required to send mobile push notification to a specific
 |----------|------|----------|------------|
 | [xdm:appID](#xdmappid) | `string` | Optional | Push notification detail (this schema) |
 | [xdm:blacklisted](#xdmblacklisted) | `boolean` | Optional | Push notification detail (this schema) |
+| [xdm:blocklisted](#xdmblocklisted) | `boolean` | Optional | Push notification detail (this schema) |
+| [xdm:identity](#xdmidentity) | Identity | Optional | Push notification detail (this schema) |
 | [xdm:identiy](#xdmidentiy) | Identity | Optional | Push notification detail (this schema) |
 | [xdm:platform](#xdmplatform) | `string` | Optional | Push notification detail (this schema) |
 | [xdm:token](#xdmtoken) | `string` | Optional | Push notification detail (this schema) |
@@ -67,7 +69,7 @@ Unique Identifier for the mobile application.
 ## xdm:blacklisted
 ### Blacklist Flag
 
-Indicates whether the push token is blacklisted.
+Indicates whether the push token is blacklisted. Deprecated due to new guidance on key names, use blocklisted instead.
 
 `xdm:blacklisted`
 * is optional
@@ -83,10 +85,48 @@ Indicates whether the push token is blacklisted.
 
 
 
-## xdm:identiy
+## xdm:blocklisted
+### Blocklist Flag
+
+Indicates whether the push token is blocked by the push provider. 
+
+`xdm:blocklisted`
+* is optional
+* type: `boolean`
+* defined in this schema
+
+### xdm:blocklisted Type
+
+
+`boolean`
+
+
+
+
+
+## xdm:identity
 ### Identity associated with this token
 
 The identity associated with this token before profile stitching.
+
+`xdm:identity`
+* is optional
+* type: Identity
+* defined in this schema
+
+### xdm:identity Type
+
+
+* [Identity](identity.schema.md) – `https://ns.adobe.com/xdm/context/identity`
+
+
+
+
+
+## xdm:identiy
+### Identity associated with this token
+
+The identity associated with this token before profile stitching. Deprecated due to typo, use xdm:identity instead.
 
 `xdm:identiy`
 * is optional

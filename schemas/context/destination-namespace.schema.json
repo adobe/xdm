@@ -7,14 +7,14 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/destination-namespace",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Destinations",
+  "title": "Destinations Namespace Mapping",
   "type": "object",
   "meta:extensible": false,
   "meta:abstract": false,
   "meta:extends": [
     "https://ns.adobe.com/xdm/data/record"
   ],
-  "description": "Destinations Schema.",
+  "description": "Destinations Namespace Mapping Schema.",
   "definitions": {
     "destination-namespace": {
       "properties": {
@@ -24,7 +24,7 @@
           "description": "Unique Identifier for destination flow"
         },
         "xdm:namespaceCode": {
-          "title": "Destination Name",
+          "title": "Namespace Code",
           "type": "string",
           "description": "This code is a human readable identifier for the namespace and can be used to request the technical namespace id which is used for identity graph processing."
         },

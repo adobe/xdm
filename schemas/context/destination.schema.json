@@ -28,10 +28,10 @@
           "type": "string",
           "description": "Destination flow name"
         },
-        "xdm:destinationAccountName": {
-          "title": "Destination Type",
+        "xdm:destinationPlatform": {
+          "title": "Destination Platform",
           "type": "string",
-          "description": "Account credentials selected for destination flow."
+          "description": "The destination platform selected for activation flow."
         },
         "xdm:createTime": {
           "title": "Create Time",

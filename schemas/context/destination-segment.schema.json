@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/destination-segment",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Destinations",
+  "title": "Destinations Segment Mapping",
   "type": "object",
   "meta:extensible": false,
   "meta:abstract": false,
@@ -24,7 +24,7 @@
           "description": "Unique Identifier for destination flow"
         },
         "xdm:segmentID": {
-          "title": "Segment Identifier",
+          "title": "Segment ID",
           "type": "string",
           "description": "Identity of the segment in the related namespace"
         },

@@ -1,9 +1,9 @@
 {
-  "https://ns.adobe.com/xdm/experience/customerJourneyManagement/feedbackStatus": "bounce",
-  "https://ns.adobe.com/xdm/experience/customerJourneyManagement/messageFailure": {
-    "https://ns.adobe.com/xdm/experience/customerJourneyManagement/failureReason": "Messagebox is Full",
-    "https://ns.adobe.com/xdm/experience/customerJourneyManagement/failureCode": "FR-123",
-    "https://ns.adobe.com/xdm/experience/customerJourneyManagement/failureType": "Soft"
+  "https://ns.adobe.com/experience/customerJourneyManagement/feedbackStatus": "bounce",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageFailure": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/failureReason": "Messagebox is Full",
+    "https://ns.adobe.com/experience/customerJourneyManagement/failureCode": "FR-123",
+    "https://ns.adobe.com/experience/customerJourneyManagement/failureType": "Soft"
   },
-  "https://ns.adobe.com/xdm/experience/customerJourneyManagement/retryCount": 1
+  "https://ns.adobe.com/experience/customerJourneyManagement/retryCount": 1
 }

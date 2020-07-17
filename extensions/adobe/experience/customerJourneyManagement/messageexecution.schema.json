@@ -22,22 +22,22 @@
           "type": "string",
           "description": "The CJM activity originating this message."
         },
-        "https://ns.adobe.com/xdm/experience/customerJourneyManagement/messageID": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageID": {
           "title": "Message ID",
           "type": "string",
           "description": "The parent Message ID of a MessageExecution originating this message."
         },
-        "https://ns.adobe.com/xdm/experience/customerJourneyManagement/messageLabel": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageLabel": {
           "title": "MessageExecution Label",
           "type": "string",
           "description": "A human-friendly name of the Message ID."
         },
-        "https://ns.adobe.com/xdm/experience/customerJourneyManagement/externalApplicationID": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/externalApplicationID": {
           "title": "External Application ID",
           "type": "string",
           "description": "The ID of the external Application entity triggering the MessageExecution."
         },
-        "https://ns.adobe.com/xdm/experience/customerJourneyManagement/externalApplication": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/externalApplication": {
           "title": "External Application",
           "type": "string",
           "description": "The external Application triggering the MessageExecution."
@@ -45,7 +45,7 @@
       }
     }
   },
-  "required": ["@id", "https://ns.adobe.com/xdm/experience/customerJourneyManagement/messageID"],
+  "required": ["@id", "https://ns.adobe.com/experience/customerJourneyManagement/messageID"],
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"

@@ -22,12 +22,12 @@
           "type": "string",
           "description": "A unique id refers to every single message sent as part of a MessageExecution activity."
         },
-        "https://ns.adobe.com/xdm/experience/customerJourneyManagement/channel": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/channel": {
           "title": "Experience channel",
           "description": "Experience channel related to the ExperienceEvent.",
           "$ref": "https://ns.adobe.com/xdm/channels/channel"
         },
-        "https://ns.adobe.com/xdm/experience/customerJourneyManagement/variant": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/variant": {
           "title": "Content Variant",
           "type": "string",
           "description": "A message execution can have multiple variants e.g. Multilingual (translated variants for the same content) or A/B testing (different content to test what works better) but a message delivered to a recipient always contains one of them."

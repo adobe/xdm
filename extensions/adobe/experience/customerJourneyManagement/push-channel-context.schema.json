@@ -17,12 +17,12 @@
   "definitions": {
     "pushChannelContext": {
       "properties": {
-        "https://ns.adobe.com/xdm/experience/customerJourneyManagement/token": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/token": {
           "title": "Push Token",
           "type": "string",
           "description": "Valid push token for the given push platform."
         },
-        "https://ns.adobe.com/xdm/experience/customerJourneyManagement/platform": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/platform": {
           "title": "Push Platform",
           "type": "string",
           "description": "Push provider service, e.g. apns or fcm",
@@ -31,7 +31,7 @@
             "fcm": "Firebase cloud messaging service"
           }
         },
-        "https://ns.adobe.com/xdm/experience/customerJourneyManagement/applicationID": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/applicationID": {
           "title": "Application Identifier",
           "type": "string",
           "description": "Unique Identifier for the mobile application."
@@ -39,7 +39,7 @@
       }
     }
   },
-  "required": ["https://ns.adobe.com/xdm/experience/customerJourneyManagement/token", "https://ns.adobe.com/xdm/experience/customerJourneyManagement/platform", "https://ns.adobe.com/xdm/experience/customerJourneyManagement/applicationID"],
+  "required": ["https://ns.adobe.com/experience/customerJourneyManagement/token", "https://ns.adobe.com/experience/customerJourneyManagement/platform", "https://ns.adobe.com/experience/customerJourneyManagement/applicationID"],
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"

@@ -23,35 +23,35 @@
       }
     }
   },
-  "https://ns.adobe.com/xdm/experience/customerJourneyManagement/messageExecution": {
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution": {
     "@id": "4218b775-bef3-46b2-aee2-7caae052cf94",
-    "https://ns.adobe.com/xdm/experience/customerJourneyManagement/messageID": "aa440b96-ce65-4ad2-b95d-8c3b51f89bc2",
-    "https://ns.adobe.com/xdm/experience/customerJourneyManagement/messageLabel": "Deal for Gold members",
-    "https://ns.adobe.com/xdm/experience/customerJourneyManagement/externalApplicationID": "0cc85961-487d-49e5-9b6c-01f5630756ac",
-    "https://ns.adobe.com/xdm/experience/customerJourneyManagement/externalApplication": "Journey"
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageID": "aa440b96-ce65-4ad2-b95d-8c3b51f89bc2",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageLabel": "Deal for Gold members",
+    "https://ns.adobe.com/experience/customerJourneyManagement/externalApplicationID": "0cc85961-487d-49e5-9b6c-01f5630756ac",
+    "https://ns.adobe.com/experience/customerJourneyManagement/externalApplication": "Journey"
   },
-  "https://ns.adobe.com/xdm/experience/customerJourneyManagement/messageProfile": {
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile": {
     "@id": "4218b775-bef3-46b2-aee2-7caae052cf94",
-    "https://ns.adobe.com/xdm/experience/customerJourneyManagement/channel": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/channel": {
       "@id": "https://ns.adobe.com/xdm/channels/email"
     },
-    "https://ns.adobe.com/xdm/experience/customerJourneyManagement/variant": "A"
+    "https://ns.adobe.com/experience/customerJourneyManagement/variant": "A"
   },
-  "https://ns.adobe.com/xdm/experience/customerJourneyManagement/channelContext": {
-    "https://ns.adobe.com/xdm/experience/customerJourneyManagement/emailChannelContext": {
-      "https://ns.adobe.com/xdm/experience/customerJourneyManagement/address": "user@domain.com",
-      "https://ns.adobe.com/xdm/experience/customerJourneyManagement/operationalContext": {
-      "https://ns.adobe.com/xdm/experience/customerJourneyManagement/outboundIP": "10.10.10.10"
+  "https://ns.adobe.com/experience/customerJourneyManagement/channelContext": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext": {
+      "https://ns.adobe.com/experience/customerJourneyManagement/address": "user@domain.com",
+      "https://ns.adobe.com/experience/customerJourneyManagement/operationalContext": {
+      "https://ns.adobe.com/experience/customerJourneyManagement/outboundIP": "10.10.10.10"
       }
     }
   },
-  "https://ns.adobe.com/xdm/experience/customerJourneyManagement/eventStatus": {
-    "https://ns.adobe.com/xdm/experience/customerJourneyManagement/messageInteraction": {
-      "https://ns.adobe.com/xdm/experience/customerJourneyManagement/interactionType": "click",
+  "https://ns.adobe.com/experience/customerJourneyManagement/eventStatus": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction": {
+      "https://ns.adobe.com/experience/customerJourneyManagement/interactionType": "click",
       "@id": "123",
       "xdm:description": "Click to check new offer",
-      "https://ns.adobe.com/xdm/experience/customerJourneyManagement/label": "Click to check new offer",
-      "https://ns.adobe.com/xdm/experience/customerJourneyManagement/category": "Click"
+      "https://ns.adobe.com/experience/customerJourneyManagement/label": "Click to check new offer",
+      "https://ns.adobe.com/experience/customerJourneyManagement/category": "Click"
     }
   }
 }

@@ -12,9 +12,7 @@
   "description": "Adobe Experience Platform Web SDK ExperienceEvent Mixin. Includes field definitions for automatically collected data by the AEP Web SDK (Alloy) library.",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/experienceevent"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "meta:extends": [
     "https://ns.adobe.com/xdm/context/experienceevent-implementation-details",
     "https://ns.adobe.com/experience/experienceevent-edgeregion",

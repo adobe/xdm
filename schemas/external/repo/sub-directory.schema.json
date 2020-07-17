@@ -37,10 +37,6 @@
       "$ref": "https://ns.adobe.com/xdm/external/hal/resource#/definitions/hal"
     }
   ],
-  "required": [
-    "repo:name",
-    "repo:path",
-    "dc:format"
-  ],
+  "required": ["repo:name", "repo:path", "dc:format"],
   "meta:status": "stable"
 }

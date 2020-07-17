@@ -90,7 +90,10 @@
             },
             {
               "type": "string",
-              "enum": ["@id", "@vocab"]
+              "enum": [
+                "@id",
+                "@vocab"
+              ]
             },
             {
               "type": "null"
@@ -114,7 +117,12 @@
             },
             {
               "type": "string",
-              "enum": ["@set", "@list", "@language", "@index"]
+              "enum": [
+                "@set",
+                "@list",
+                "@language",
+                "@index"
+              ]
             }
           ]
         }

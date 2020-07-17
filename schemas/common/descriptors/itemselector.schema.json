@@ -24,7 +24,9 @@
               "minimum": 0
             }
           },
-          "required": ["xdm:index"]
+          "required": [
+            "xdm:index"
+          ]
         },
         {
           "properties": {
@@ -35,7 +37,9 @@
               "description": "When present, indicates the item with this @id value should be selected."
             }
           },
-          "required": ["xdm:id"]
+          "required": [
+            "xdm:id"
+          ]
         },
         {
           "properties": {
@@ -46,7 +50,9 @@
               "description": "When present, indicates the item with this @type value should be selected."
             }
           },
-          "required": ["xdm:type"]
+          "required": [
+            "xdm:type"
+          ]
         },
         {
           "properties": {
@@ -57,7 +63,9 @@
               "description": "When present, indicates the item which conforms to this schema URI should be selected."
             }
           },
-          "required": ["xdm:schema"]
+          "required": [
+            "xdm:schema"
+          ]
         }
       ]
     }

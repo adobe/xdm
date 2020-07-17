@@ -49,7 +49,10 @@
           "$ref": "https://ns.adobe.com/xdm/common/descriptors/itemselector#/definitions/selector"
         }
       },
-      "required": ["xdm:sourceSchema", "xdm:sourceVersion"]
+      "required": [
+        "xdm:sourceSchema",
+        "xdm:sourceVersion"
+      ]
     }
   },
   "allOf": [

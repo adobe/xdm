@@ -33,7 +33,10 @@
           }
         }
       },
-      "required": ["activityID", "version"]
+      "required": [
+        "activityID",
+        "version"
+      ]
     }
   },
   "allOf": [

@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": false,
   "meta:abstract": false,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/time-series"],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/time-series"
+  ],
   "description": "Attributed Model Conversions is the Raw Conversion Count and Sum of Conversions",
   "definitions": {
     "attributedconversionmodel": {
@@ -106,7 +108,11 @@
           "title": "Model Name",
           "type": "string",
           "description": "Model that was executed to generate Raw Conversion Count and Sum for the attributed conversion",
-          "examples": ["LAST EVENT", "FIRST EVENT", "EVEN"]
+          "examples": [
+            "LAST EVENT",
+            "FIRST EVENT",
+            "EVEN"
+          ]
         },
         "adcloud:clickThroughCount": {
           "title": "Click Through Conversion Count",
@@ -152,7 +158,11 @@
           "title": "Conversion Type",
           "type": "string",
           "description": "Feed Conversion Type the conversion event originated from",
-          "enum": ["Feed", "Pixel", "Cross Device"]
+          "enum": [
+            "Feed",
+            "Pixel",
+            "Cross Device"
+          ]
         },
         "adcloud:device": {
           "title": "Device",

@@ -31,7 +31,9 @@
           "description": "A customer comment/remark that the end-user provided when unsubscribing."
         }
       },
-      "required": ["xdm:unsubscriptionDate"]
+      "required": [
+        "xdm:unsubscriptionDate"
+      ]
     }
   },
   "allOf": [

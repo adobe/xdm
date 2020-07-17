@@ -51,13 +51,20 @@
       },
       "oneOf": [
         {
-          "required": ["xdm:label"]
+          "required": [
+            "xdm:label"
+          ]
         },
         {
-          "required": ["xdm:sourceProperty"]
+          "required": [
+            "xdm:sourceProperty"
+          ]
         }
       ],
-      "required": ["xdm:destinationSchema", "xdm:destinationVersion"]
+      "required": [
+        "xdm:destinationSchema",
+        "xdm:destinationVersion"
+      ]
     }
   },
   "allOf": [

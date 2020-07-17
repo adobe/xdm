@@ -12,9 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:auditable": true,
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/data/record"
-  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "description": "Search Advertising Account defines Customer Configuration on Search Advertising Platform.",
   "definitions": {
     "searchadvertising-account": {
@@ -32,11 +30,7 @@
         "xdm:currencyCode": {
           "title": "Currency Code",
           "type": "string",
-          "examples": [
-            "USD",
-            "EUR",
-            "JPY"
-          ],
+          "examples": ["USD", "EUR", "JPY"],
           "pattern": "^[A-Z]{3}$",
           "description": "Currency in which this account operates."
         },
@@ -44,10 +38,7 @@
           "title": "Account Status",
           "type": "string",
           "description": "Managed Flag indicates whether account is enabled or disabled on search networks.",
-          "enum": [
-            "Enabled",
-            "Disabled"
-          ],
+          "enum": ["Enabled", "Disabled"],
           "meta:enum": {
             "Enabled": "Enabled",
             "Disabled": "Disabled"
@@ -96,5 +87,5 @@
       "$ref": "#/definitions/searchadvertising-account"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "deprecated"
 }

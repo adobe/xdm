@@ -11,9 +11,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/data/time-series"
-  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/data/time-series"],
   "description": "Search Advertising Aggregated Performance Measures By Ad is a collection of aggregated measures pulled from Search Advertising Platforms by Ad/Keyword.",
   "definitions": {
     "aggregateperformancebyad": {
@@ -83,5 +81,5 @@
       "$ref": "#/definitions/aggregateperformancebyad"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "deprecated"
 }

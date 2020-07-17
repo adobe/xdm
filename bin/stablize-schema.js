@@ -13,7 +13,7 @@ function stablizeSchema(files) {
     files.forEach(function (file) {
         console.log('Stablize schema -->' + file);
         var originalSchema = JSON.parse(fs.readFileSync(file).toString());
-        if (originalSchema["meta:status"] != undefined) {
+        if ((originalSchema["meta:status"] != undefined) && (originalSchema["meta:status"] != "deprecated")) {
             originalSchema["meta:status"]="stable";
             fs.writeFileSync(file, JSON.stringify(originalSchema,null, 2), 'utf8');
         }

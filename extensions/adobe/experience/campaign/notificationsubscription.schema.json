@@ -41,7 +41,11 @@
           "$ref": "https://ns.adobe.com/experience/campaign/notificationunsubscriptiondetails"
         }
       },
-      "required": ["xdm:topicID", "xdm:type", "xdm:subscriptionDate"]
+      "required": [
+        "xdm:topicID",
+        "xdm:type",
+        "xdm:subscriptionDate"
+      ]
     }
   },
   "allOf": [

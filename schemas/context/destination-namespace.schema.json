@@ -21,7 +21,7 @@
         "xdm:destinationID": {
           "title": "Destination ID",
           "type": "string",
-          "description": "Unique Identifier for destination flow"
+          "description": "Unique Identifier for a destination instance"
         },
         "xdm:namespaceCode": {
           "title": "Namespace Code",

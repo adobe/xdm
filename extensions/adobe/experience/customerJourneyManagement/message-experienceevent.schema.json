@@ -30,52 +30,56 @@
         "https://ns.adobe.com/experience/customerJourneyManagement/channelContext": {
           "title": "Message Channel context",
           "description": "Message Channel fields for the Messageprofle associated with the Adobe CJM Experience Event.",
-          "oneOf": [
+          "properties": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext": {
+              "title": "Email Channel Context",
+              "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/email-channel-context",
+              "description": "Email channel fields for the Messageprofle associated with the Adobe CJM Experience Event."
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext": {
+              "title": "Push Channel Context",
+              "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/push-channel-context",
+              "description": "Push channel fields for the MessageProfile associated with the Adobe CJM Experience Event."
+            }
+          },
+           "oneOf": [
             {
-              "properties": {
-                "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext": {
-                  "title": "Email Channel Context",
-                  "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/email-channel-context",
-                  "description": "Email channel fields for the Messageprofle associated with the Adobe CJM Experience Event."
-                }
-              },
-              "required": ["https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext"]
+              "required": [
+                "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext"
+              ]
             },
             {
-              "properties": {
-                "https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext": {
-                  "title": "Push Channel Context",
-                  "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/push-channel-context",
-                  "description": "Push channel fields for the MessageProfile associated with the Adobe CJM Experience Event."
-                }
-              },
-              "required": ["https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext"]
+              "required": [
+                "https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext"
+              ]
             }
           ]
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/eventStatus": {
           "title": "Event Status",
           "description": "Provide the status for the Delivery, Feedback, Tracking Experience Event for the MessageProfile.",
+          "properties": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback": {
+              "title": "Message Delivery Feedback",
+              "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/message-delivery-feedback",
+              "description": "Captures Delivey status of a message."
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction": {
+              "title": "Message Interaction",
+              "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/message-interaction",
+              "description": "Captures interaction made by the profile on the message."
+            }
+          },
           "oneOf": [
             {
-              "properties": {
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback": {
-                  "title": "Message Delivery Feedback",
-                  "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/message-delivery-feedback",
-                  "description": "Captures Delivey status of a message."
-                }
-              },
-              "required": ["https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback"]
+              "required": [
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback"
+              ]
             },
             {
-              "properties": {
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction": {
-                  "title": "Message Interaction",
-                  "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/message-interaction",
-                  "description": "Captures interaction made by the profile on the message."
-                }
-              },
-              "required": ["https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction"]
+              "required": [
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction"
+              ]
             }
           ]
         }

@@ -129,6 +129,7 @@ The normative name of the web page. This name is not necessarily the page title 
 
 
 ## xdm:pageViews
+### Page Views
 
 View(s) of a webpage has occurred.
 

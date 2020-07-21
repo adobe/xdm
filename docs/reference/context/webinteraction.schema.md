@@ -63,6 +63,7 @@ The actual link or URL used for this web interaction.
 
 
 ## xdm:linkClicks
+### Link Clicks
 
 Click of a web link has occurred.
 

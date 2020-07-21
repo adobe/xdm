@@ -32,6 +32,7 @@
                 "xdm:gdprApplies": {
                     "title": "GDPR Applies",
                     "type": "boolean",
+                    "default": false,
                     "description": "If this is true, it means this consent string needs to be processed for consent enforcement."
                 },
                 "xdm:containsPersonalData": {
@@ -39,7 +40,10 @@
                     "type": "boolean",
                     "description": "If this is true, it means consent is coming with personal data."
                 }
-            }
+            },
+            "required": [
+                "xdm:gdprApplies"
+            ]
         }
     },
     "allOf": [

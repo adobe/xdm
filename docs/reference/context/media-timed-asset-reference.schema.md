@@ -25,6 +25,20 @@ Asset information about the main content that was played, but present on all ads
 
 ```json
 {
+  "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234431",
+  "dc:title": "Stairway to Heaven",
+  "xdm:audio": {
+    "dc:creator": "Jimmy Page",
+    "xdm:artist": "Led Zeppelin",
+    "xdm:album": "Led Zeppelin IV"
+  },
+  "xmpDM:duration": 482,
+  "xdm:streamType": "audio"
+}
+```
+
+```json
+{
   "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234430",
   "dc:title": "Floki Begs Helga for Freedom",
   "dc:creator": "Video Author",
@@ -65,20 +79,6 @@ Asset information about the main content that was played, but present on all ads
   ],
   "xdm:firstAirDate": "2016-01-05",
   "xmpDM:releaseDate": "2016-01-25"
-}
-```
-
-```json
-{
-  "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234431",
-  "dc:title": "Stairway to Heaven",
-  "xdm:audio": {
-    "dc:creator": "Jimmy Page",
-    "xdm:artist": "Led Zeppelin",
-    "xdm:album": "Led Zeppelin IV"
-  },
-  "xmpDM:duration": 482,
-  "xdm:streamType": "audio"
 }
 ```
 

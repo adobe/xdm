@@ -43,7 +43,7 @@ Destinations Schema.
 | [xdm:destinationName](#xdmdestinationname) | `string` | Optional | Destinations (this schema) |
 | [xdm:destinationPlatform](#xdmdestinationplatform) | `string` | Optional | Destinations (this schema) |
 | [xdm:destinationStatus](#xdmdestinationstatus) | `string` | Optional | Destinations (this schema) |
-| [xdm:version](#xdmversion) | complex | Optional | Destinations (this schema) |
+| [xdm:version](#xdmversion) | `string` | Optional | Destinations (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -220,20 +220,14 @@ Destination flow version
 
 `xdm:version`
 * is optional
-* type: complex
+* type: `string`
 * defined in this schema
 
 ### xdm:version Type
 
-Unknown type ``.
 
-```json
-{
-  "title": "Version",
-  "description": "Destination flow version",
-  "simpletype": "complex"
-}
-```
+`string`
+
 
 
 

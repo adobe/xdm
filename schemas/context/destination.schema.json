@@ -59,6 +59,7 @@
         },
         "xdm:version": {
           "title": "Version",
+          "type": "string",
           "description": "Destination flow version"
         }
       }

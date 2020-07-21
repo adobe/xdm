@@ -34,7 +34,7 @@
             "$ref": "#/definitions/experienceevent-implementation-details"
         }
     ],
-    "meta:status": "stabilizing",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:implementationDetails": {

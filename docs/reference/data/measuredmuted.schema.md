@@ -9,7 +9,7 @@ The advertising/viewability metric `measured-muted` describes whether the ad was
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/measuredmuted.schema.json](data/measuredmuted.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [data/measuredmuted.schema.json](data/measuredmuted.schema.json) |
 ## Schema Hierarchy
 
 * Measured-muted `https://ns.adobe.com/xdm/data/measuredmuted`

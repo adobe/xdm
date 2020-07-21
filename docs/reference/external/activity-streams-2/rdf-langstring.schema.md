@@ -9,7 +9,7 @@ The class `rdf:langString` is the class of [language-tagged string values](http:
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Cannot be instantiated | Yes | Experimental | No | Forbidden | Forbidden | [external/activity-streams-2/rdf-langstring.schema.json](external/activity-streams-2/rdf-langstring.schema.json) |
+| Cannot be instantiated | Yes | Stable | No | Forbidden | Forbidden | [external/activity-streams-2/rdf-langstring.schema.json](external/activity-streams-2/rdf-langstring.schema.json) |
 
 ## RDF Language Tagged String Example
 ```json

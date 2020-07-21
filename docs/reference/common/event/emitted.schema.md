@@ -9,7 +9,7 @@ The `emitted event` represents the activity of emitting a message or some `objec
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | No | Experimental | No | Forbidden | Permitted | [common/event/emitted.schema.json](common/event/emitted.schema.json) |
+| Can be instantiated | No | Stable | No | Forbidden | Permitted | [common/event/emitted.schema.json](common/event/emitted.schema.json) |
 ## Schema Hierarchy
 
 * Emitted Event `https://ns.adobe.com/xdm/common/event/emitted`

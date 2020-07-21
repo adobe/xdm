@@ -9,7 +9,7 @@ Indicates the user abandoned the media stream before the first frame (e.g. durin
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/drop-before-starts.schema.json](data/drop-before-starts.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [data/drop-before-starts.schema.json](data/drop-before-starts.schema.json) |
 ## Schema Hierarchy
 
 * Drop Before Starts `https://ns.adobe.com/xdm/data/drop-before-starts`

@@ -9,7 +9,7 @@ Microsoft Push Notification service is an asynchronous service that offers a cha
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/mpns.schema.json](channels/mpns.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [channels/mpns.schema.json](channels/mpns.schema.json) |
 ## Schema Hierarchy
 
 * Microsoft Push Notification Service (MPNS) Channel `https://ns.adobe.com/xdm/channels/mpns`

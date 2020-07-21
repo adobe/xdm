@@ -9,7 +9,7 @@ Postal address information used to contact a user.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/directmarketing-address.schema.json](context/directmarketing-address.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/directmarketing-address.schema.json](context/directmarketing-address.schema.json) |
 ## Schema Hierarchy
 
 * Direct marketing postal address `https://ns.adobe.com/xdm/context/directmarketing-address`

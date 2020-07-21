@@ -9,7 +9,7 @@ The direct-marketing metric `opens` describes the number of times the direct mar
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/opens.schema.json](data/opens.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [data/opens.schema.json](data/opens.schema.json) |
 ## Schema Hierarchy
 
 * Opens `https://ns.adobe.com/xdm/data/metrics/direct-marketing/opens`

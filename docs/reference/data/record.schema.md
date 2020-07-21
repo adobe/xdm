@@ -9,7 +9,7 @@ Used to indicate the behavior of record data semantic when composed into data sc
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/record.schema.json](data/record.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [data/record.schema.json](data/record.schema.json) |
 ## Schema Hierarchy
 
 * Record Schema `https://ns.adobe.com/xdm/data/record`

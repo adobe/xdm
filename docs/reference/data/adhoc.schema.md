@@ -9,7 +9,7 @@ Used to indicate the behavior of the Ad hoc data semantic when composed into dat
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Cannot be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/adhoc.schema.json](data/adhoc.schema.json) |
+| Cannot be instantiated | Yes | Stable | No | Forbidden | Permitted | [data/adhoc.schema.json](data/adhoc.schema.json) |
 ## Schema Hierarchy
 
 * Ad Hoc Schema `https://ns.adobe.com/xdm/data/adhoc`

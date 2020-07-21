@@ -9,7 +9,7 @@ The telephone channel includes both inbound and outbound messages.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/phone.schema.json](channels/phone.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [channels/phone.schema.json](channels/phone.schema.json) |
 ## Schema Hierarchy
 
 * Phone Channel `https://ns.adobe.com/xdm/channels/phone`

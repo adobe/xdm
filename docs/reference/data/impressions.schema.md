@@ -9,7 +9,7 @@ The metric impressions describes the number of digital assets rendered.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/impressions.schema.json](data/impressions.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [data/impressions.schema.json](data/impressions.schema.json) |
 ## Schema Hierarchy
 
 * Impressions `https://ns.adobe.com/xdm/data/metrics/advertising/impressions`

@@ -9,7 +9,7 @@ The direct-marketing metric `unsubscriptions` describes the number of times the 
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/unsubscriptions.schema.json](data/unsubscriptions.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [data/unsubscriptions.schema.json](data/unsubscriptions.schema.json) |
 ## Schema Hierarchy
 
 * Unsubscriptions `https://ns.adobe.com/xdm/data/metrics/direct-marketing/unsubscriptions`

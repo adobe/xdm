@@ -9,7 +9,7 @@ Number of cart abandons for which a product list has been identified as no longe
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/cart-abandons.schema.json](data/cart-abandons.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [data/cart-abandons.schema.json](data/cart-abandons.schema.json) |
 ## Schema Hierarchy
 
 * Cart Abandons `https://ns.adobe.com/xdm/data/metrics/cart-abandons`

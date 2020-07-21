@@ -12,7 +12,7 @@ A Layer Group can contain layers or other layer groups.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [assets/layer-group.schema.json](assets/layer-group.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [assets/layer-group.schema.json](assets/layer-group.schema.json) |
 
 ## Layer Group Example
 ```json

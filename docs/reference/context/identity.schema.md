@@ -9,7 +9,7 @@ Identity is used to clearly distinguish people that are interacting with digital
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/identity.schema.json](context/identity.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/identity.schema.json](context/identity.schema.json) |
 ## Schema Hierarchy
 
 * Identity `https://ns.adobe.com/xdm/context/identity`

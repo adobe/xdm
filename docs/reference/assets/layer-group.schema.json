@@ -42,7 +42,7 @@
             "$ref": "#/definitions/layer-group"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:name": "Example Layer Group",

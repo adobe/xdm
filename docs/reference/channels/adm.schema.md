@@ -9,7 +9,7 @@ Amazon Device Messaging (ADM) channel uniquely identifies Amazon devices that ru
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/adm.schema.json](channels/adm.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [channels/adm.schema.json](channels/adm.schema.json) |
 ## Schema Hierarchy
 
 * Amazon Device Messaging (ADM) channel `https://ns.adobe.com/xdm/channels/adm`

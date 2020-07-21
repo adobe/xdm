@@ -74,7 +74,7 @@
             "$ref": "#/definitions/adAssetReference"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "@id": "https://data.adobe.io/entities/asser-reference/23423",

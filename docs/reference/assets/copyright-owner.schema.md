@@ -9,7 +9,7 @@ Describes the owner of a copyrighted work through name and ID.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Cannot be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [assets/copyright-owner.schema.json](assets/copyright-owner.schema.json) |
+| Cannot be instantiated | Yes | Stable | No | Forbidden | Permitted | [assets/copyright-owner.schema.json](assets/copyright-owner.schema.json) |
 
 ## Copyright Owner Example
 ```json

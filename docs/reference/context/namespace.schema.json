@@ -33,7 +33,7 @@
             "$ref": "#/definitions/namespace"
         }
     ],
-    "meta:status": "stabilizing",
+    "meta:status": "stable",
     "examples": [
         {
             "@id": "https://data.adobe.io/entities/namespace/12345",

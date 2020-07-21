@@ -9,7 +9,7 @@ Used to indicate the behavior of time partitioned semantics when composed into d
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/time-series.schema.json](data/time-series.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [data/time-series.schema.json](data/time-series.schema.json) |
 ## Schema Hierarchy
 
 * Time-series Schema `https://ns.adobe.com/xdm/data/time-series`

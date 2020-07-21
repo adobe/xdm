@@ -72,7 +72,7 @@
             "$ref": "#/definitions/resource-event"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "stEvt:action": "created",

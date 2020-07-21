@@ -17,8 +17,7 @@
         "@type": {
           "type": "string",
           "format": "uri",
-          "description":
-            "Type of the container, acts as processing hint for the client."
+          "description": "Type of the container, acts as processing hint for the client."
         },
         "xdm:items": {
           "type": "object",
@@ -28,8 +27,7 @@
               "$ref": "#/definitions/container"
             },
             {
-              "$ref":
-                "https://ns.adobe.com/xdm/content/page-component#/definitions/component"
+              "$ref": "https://ns.adobe.com/xdm/content/page-component#/definitions/component"
             }
           ]
         },
@@ -39,8 +37,7 @@
           "items": {
             "type": "string"
           },
-          "description":
-            "Defines the order of the items in the container. Can be omitted if the order is not important."
+          "description": "Defines the order of the items in the container. Can be omitted if the order is not important."
         }
       }
     }
@@ -50,6 +47,9 @@
       "$ref": "#/definitions/container"
     }
   ],
-  "required": ["@type", "xdm:items"],
-  "meta:status": "experimental"
+  "required": [
+    "@type",
+    "xdm:items"
+  ],
+  "meta:status": "stable"
 }

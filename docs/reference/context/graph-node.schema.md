@@ -9,7 +9,7 @@ XDM Schema for a graph Node/Vertex.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/graph-node.schema.json](context/graph-node.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/graph-node.schema.json](context/graph-node.schema.json) |
 ## Schema Hierarchy
 
 * XDM Graph Node/Vertex Schema `https://ns.adobe.com/xdm/context/graph-node`

@@ -9,7 +9,7 @@ Time-series extension for record data.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/record-timeseries-events.schema.json](data/record-timeseries-events.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [data/record-timeseries-events.schema.json](data/record-timeseries-events.schema.json) |
 ## Schema Hierarchy
 
 * Time-series Extension for Record Data `https://ns.adobe.com/xdm/data/record-timeseries-events`

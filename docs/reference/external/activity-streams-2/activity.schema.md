@@ -9,7 +9,7 @@ An [Activity](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-activity) is
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/activity-streams-2/activity.schema.json](external/activity-streams-2/activity.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [external/activity-streams-2/activity.schema.json](external/activity-streams-2/activity.schema.json) |
 ## Schema Hierarchy
 
 * Activity `https://ns.adobe.com/xdm/external/activity-streams-2/activity`

@@ -9,7 +9,7 @@ This mixin is used to capture search-related information for an ExperienceEvent,
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/experienceevent-search.schema.json](context/experienceevent-search.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/experienceevent-search.schema.json](context/experienceevent-search.schema.json) |
 ## Schema Hierarchy
 
 * ExperienceEvent details for search `https://ns.adobe.com/xdm/context/experienceevent-search`

@@ -56,7 +56,7 @@
             "$ref": "#/definitions/segmentdefinition-expression"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:segmentExpression": {

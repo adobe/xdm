@@ -149,7 +149,7 @@ This changes child.json to:
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [common/descriptors/relationshipdescriptor.schema.json](common/descriptors/relationshipdescriptor.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [common/descriptors/relationshipdescriptor.schema.json](common/descriptors/relationshipdescriptor.schema.json) |
 ## Schema Hierarchy
 
 * Relationship Descriptor `https://ns.adobe.com/xdm/common/descriptors/relationshipdescriptor`

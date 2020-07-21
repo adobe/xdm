@@ -10,9 +10,10 @@
   "title": "Point of Interest (POI) Exits",
   "type": "object",
   "meta:extensible": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/metricdefinition"],
-  "description":
-    "The place context metric `poi-exits` describes the number of times a person has left a point of interest (POI).",
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/metricdefinition"
+  ],
+  "description": "The place context metric `poi-exits` describes the number of times a person has left a point of interest (POI).",
   "definitions": {
     "metric": {
       "properties": {
@@ -24,8 +25,7 @@
         "schema:name": {
           "type": "string",
           "const": "placecontext: poiExits",
-          "description":
-            "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
+          "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
         },
         "xdm:measurement": {
           "type": "string",
@@ -46,6 +46,11 @@
       "$ref": "https://ns.adobe.com/xdm/data/metricdefinition"
     }
   ],
-  "required": ["@id", "schema:name", "xdm:measurement", "xdm:unit"],
-  "meta:status": "experimental"
+  "required": [
+    "@id",
+    "schema:name",
+    "xdm:measurement",
+    "xdm:unit"
+  ],
+  "meta:status": "stable"
 }

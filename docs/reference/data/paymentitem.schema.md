@@ -9,7 +9,7 @@ A payment associated with an order that defines the type of payment, the amount 
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/paymentitem.schema.json](data/paymentitem.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [data/paymentitem.schema.json](data/paymentitem.schema.json) |
 
 ## Payment Item Example
 ```json

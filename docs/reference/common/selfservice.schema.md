@@ -9,7 +9,7 @@ A customer managed environment is an environment that allows a system integratio
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [common/selfservice.schema.json](common/selfservice.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [common/selfservice.schema.json](common/selfservice.schema.json) |
 
 ## Customer Managed Environment Example
 ```json

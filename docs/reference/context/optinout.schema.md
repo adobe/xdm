@@ -9,7 +9,7 @@ Describes user communication preferences by channel. For each channel individual
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/optinout.schema.json](context/optinout.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/optinout.schema.json](context/optinout.schema.json) |
 ## Schema Hierarchy
 
 * OptInOut `https://ns.adobe.com/xdm/context/optinout`

@@ -9,7 +9,7 @@ This mixin is used to capture information regarding addresses, emails, and phone
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/profile-directmarketing.schema.json](context/profile-directmarketing.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/profile-directmarketing.schema.json](context/profile-directmarketing.schema.json) |
 ## Schema Hierarchy
 
 * Profile direct marketing `https://ns.adobe.com/xdm/context/profile-directmarketing`

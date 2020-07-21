@@ -65,7 +65,7 @@
             "$ref": "#/definitions/geoshape"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "@id": "https://data.adobe.io/entities/geo/shapeid123",

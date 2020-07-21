@@ -9,7 +9,7 @@ The `published event` represents the activity of releasing an object for distrib
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | No | Experimental | No | Forbidden | Permitted | [common/event/published.schema.json](common/event/published.schema.json) |
+| Can be instantiated | No | Stable | No | Forbidden | Permitted | [common/event/published.schema.json](common/event/published.schema.json) |
 ## Schema Hierarchy
 
 * Published Event `https://ns.adobe.com/xdm/common/event/published`

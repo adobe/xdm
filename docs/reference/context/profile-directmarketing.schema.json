@@ -44,7 +44,7 @@
             "$ref": "#/definitions/profile-directmarketing"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:directMarketingPhone": {

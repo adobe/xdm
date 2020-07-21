@@ -9,16 +9,14 @@
   "$id": "https://ns.adobe.com/xdm/assets/copyright-owner",
   "title": "Copyright Owner",
   "type": "object",
-  "description":
-    "Describes the owner of a copyrighted work through name and ID.",
+  "description": "Describes the owner of a copyrighted work through name and ID.",
   "definitions": {
     "copyright": {
       "properties": {
         "plus:copyrightOwnerID": {
           "title": "Copyright Owner ID",
           "type": "string",
-          "description":
-            "ID of the copyright owner.\nIf the PLUS-ID being stored in this property is registered with the PLUS Coalition, it should be expressed as a URL. For example: http://plus-id.org/PLUS-ID."
+          "description": "ID of the copyright owner.\nIf the PLUS-ID being stored in this property is registered with the PLUS Coalition, it should be expressed as a URL. For example: http://plus-id.org/PLUS-ID."
         },
         "plus:copyrightOwnerName": {
           "title": "Copyright Owner Name",
@@ -28,5 +26,5 @@
       }
     }
   },
-  "meta:status": "stabilizing"
+  "meta:status": "stable"
 }

@@ -44,7 +44,7 @@
           "type": "string",
           "title": "Segment status",
           "description": "Current status of segment from external system normalized to active or inactive.",
-          "enum" : [
+          "enum": [
             "ACTIVE",
             "INACTIVE",
             "DELETED"
@@ -74,5 +74,5 @@
       "$ref": "#/definitions/segmentdefinition"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

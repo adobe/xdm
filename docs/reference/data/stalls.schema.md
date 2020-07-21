@@ -9,7 +9,7 @@ The number of stall states that occurred during a playback session.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/stalls.schema.json](data/stalls.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [data/stalls.schema.json](data/stalls.schema.json) |
 ## Schema Hierarchy
 
 * Stalls `https://ns.adobe.com/xdm/data/stalls`

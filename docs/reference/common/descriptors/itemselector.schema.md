@@ -12,19 +12,13 @@ Matching may be done based on array index, `@id`, `@type`, or schema URI.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Cannot be instantiated | Yes | Experimental | No | Forbidden | Permitted | [common/descriptors/itemselector.schema.json](common/descriptors/itemselector.schema.json) |
+| Cannot be instantiated | Yes | Stable | No | Forbidden | Permitted | [common/descriptors/itemselector.schema.json](common/descriptors/itemselector.schema.json) |
 
 ## Item Selector Examples
 
 ```json
 {
   "xdm:id": "https://example.com/objects/12345"
-}
-```
-
-```json
-{
-  "xdm:index": 0
 }
 ```
 
@@ -37,6 +31,12 @@ Matching may be done based on array index, `@id`, `@type`, or schema URI.
 ```json
 {
   "xdm:schema": "https://ns.adobe.com/xdm/context/identity"
+}
+```
+
+```json
+{
+  "xdm:index": 0
 }
 ```
 

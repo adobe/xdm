@@ -9,7 +9,7 @@ The Facebook news feed channel. This channel does not include Facebook Messenger
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/facebook-feed.schema.json](channels/facebook-feed.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [channels/facebook-feed.schema.json](channels/facebook-feed.schema.json) |
 ## Schema Hierarchy
 
 * Facebook News Feed Channel `https://ns.adobe.com/xdm/channels/facebook-feed`

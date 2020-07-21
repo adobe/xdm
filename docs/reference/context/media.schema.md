@@ -9,7 +9,7 @@ Media context information for content related interactions.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/media.schema.json](context/media.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/media.schema.json](context/media.schema.json) |
 ## Schema Hierarchy
 
 * Media information `https://ns.adobe.com/xdm/context/media`

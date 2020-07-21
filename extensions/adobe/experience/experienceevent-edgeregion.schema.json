@@ -8,12 +8,11 @@
   "$id": "https://ns.adobe.com/experience/experienceevent-edgeregion",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Data capture region for Experience Events",
-  "description": "Edge region location and timestamp where experience event data is captured",
+  "description": "",
   "type": "object",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:extensible": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "",
   "definitions": {
     "experienceevent-edgeregion": {
       "properties": {

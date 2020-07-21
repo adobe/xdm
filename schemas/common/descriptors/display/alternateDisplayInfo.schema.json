@@ -47,8 +47,11 @@
           "title": "Extended meta:enum values",
           "type": "object",
           "patternProperties": {
-            ".+": {
-              "type": "string"
+            ".+_.+": {
+              "oneOf": [
+                {"type": "object"},
+                {"type": "string"}
+              ]
             }
           }
         }

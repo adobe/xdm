@@ -9,7 +9,7 @@ Used to represent distinct subsets of items from a `Collection`. Refer to the [A
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/activity-streams-2/collection-page.schema.json](external/activity-streams-2/collection-page.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [external/activity-streams-2/collection-page.schema.json](external/activity-streams-2/collection-page.schema.json) |
 ## Schema Hierarchy
 
 * Collection Page `https://ns.adobe.com/xdm/external/activity-streams-2/collection-page`

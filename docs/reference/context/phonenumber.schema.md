@@ -9,7 +9,7 @@ Information that enables the contact of a person with a phone. Typically an alph
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/phonenumber.schema.json](context/phonenumber.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/phonenumber.schema.json](context/phonenumber.schema.json) |
 ## Schema Hierarchy
 
 * Phone number `https://ns.adobe.com/xdm/context/phonenumber`

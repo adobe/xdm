@@ -10,8 +10,7 @@
   "title": "Rectangular Object (measured in variable unit)",
   "type": "object",
   "meta:extensible": true,
-  "description":
-    "This is an abstract schema for objects of rectangular dimensions and position, with a user-specified unit of measurement. Examples include `Artboard` and `Layer`.",
+  "description": "This is an abstract schema for objects of rectangular dimensions and position, with a user-specified unit of measurement. Examples include `Artboard` and `Layer`.",
   "definitions": {
     "rectangular": {
       "properties": {
@@ -19,15 +18,13 @@
           "type": "integer",
           "title": "Origin X",
           "meta:usereditable": false,
-          "description":
-            "Origin X position - base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards)."
+          "description": "Origin X position - base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards)."
         },
         "xdm:originY": {
           "type": "integer",
           "title": "Origin Y",
           "meta:usereditable": false,
-          "description":
-            "Origin Y position - base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards)."
+          "description": "Origin Y position - base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards)."
         },
         "xdm:width": {
           "title": "Width",
@@ -48,11 +45,10 @@
           "meta:usereditable": false,
           "type": "string",
           "default": "pixel",
-          "description":
-            "Unit used for artboard coordinates (`originX`, `originY`, `width` and `height`). For example: `inch`, `mm`, `pixel`, `pica`, `point` (default is `pixel`)."
+          "description": "Unit used for artboard coordinates (`originX`, `originY`, `width` and `height`). For example: `inch`, `mm`, `pixel`, `pica`, `point` (default is `pixel`)."
         }
       }
     }
   },
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

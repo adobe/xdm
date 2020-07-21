@@ -17,8 +17,7 @@
         "xdm:adViewability": {
           "title": "MRC viewability",
           "$ref": "https://ns.adobe.com/xdm/context/adviewability",
-          "description":
-          "Media Rating Council (MRC) defines viewability as an online advertising metric that indicates the number of impressions that are actually “seen” by end-users. Viewability captures specific details such as player volume, library version, window status, and viewport ad measured dimensions."
+          "description": "Media Rating Council (MRC) defines viewability as an online advertising metric that indicates the number of impressions that are actually “seen” by end-users. Viewability captures specific details such as player volume, library version, window status, and viewport ad measured dimensions."
         },
         "xdm:adAssetReference": {
           "title": "Ad asset reference",
@@ -90,5 +89,5 @@
       "$ref": "#/definitions/advertising"
     }
   ],
-  "meta:status": "stabilizing"
+  "meta:status": "stable"
 }

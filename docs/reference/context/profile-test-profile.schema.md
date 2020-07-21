@@ -9,7 +9,7 @@ This mixin is used for indicating that the profile record is in use for testing/
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/profile-test-profile.schema.json](context/profile-test-profile.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/profile-test-profile.schema.json](context/profile-test-profile.schema.json) |
 ## Schema Hierarchy
 
 * Profile test details `https://ns.adobe.com/xdm/context/profile-test-profile`

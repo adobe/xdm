@@ -9,7 +9,7 @@ This mixin is used to capture information regarding marketing campaigns details 
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/experienceevent-marketing.schema.json](context/experienceevent-marketing.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/experienceevent-marketing.schema.json](context/experienceevent-marketing.schema.json) |
 ## Schema Hierarchy
 
 * ExperienceEvent details for marketing `https://ns.adobe.com/xdm/context/experienceevent-marketing`

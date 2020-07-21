@@ -42,7 +42,7 @@
             "$ref": "#/definitions/experienceevent-commerce"
         }
     ],
-    "meta:status": "stabilizing",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:productListItems": [

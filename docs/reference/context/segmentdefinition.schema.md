@@ -9,7 +9,7 @@ This is the base class for a segment definition which includes required fields l
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/segmentdefinition.schema.json](context/segmentdefinition.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/segmentdefinition.schema.json](context/segmentdefinition.schema.json) |
 ## Schema Hierarchy
 
 * Segment definition `https://ns.adobe.com/xdm/context/segmentdefinition`

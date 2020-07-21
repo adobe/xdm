@@ -9,7 +9,7 @@ The events and properties related to direct and outbound marketing such as email
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/direct-marketing.schema.json](context/direct-marketing.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/direct-marketing.schema.json](context/direct-marketing.schema.json) |
 ## Schema Hierarchy
 
 * Direct marketing `https://ns.adobe.com/xdm/context/direct-marketing`

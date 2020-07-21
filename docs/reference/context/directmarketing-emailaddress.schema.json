@@ -34,7 +34,7 @@
             "$ref": "https://ns.adobe.com/xdm/context/emailaddress"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:primary": false,

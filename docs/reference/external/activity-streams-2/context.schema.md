@@ -9,7 +9,7 @@ A a set of rules for interpreting a JSON-LD document as specified in [the Contex
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/activity-streams-2/context.schema.json](external/activity-streams-2/context.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [external/activity-streams-2/context.schema.json](external/activity-streams-2/context.schema.json) |
 
 ## JSON-LD `@context` Example
 ```json

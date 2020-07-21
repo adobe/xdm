@@ -11,7 +11,7 @@ Examples include location specific information such as weather, local time, traf
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/placecontext.schema.json](context/placecontext.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/placecontext.schema.json](context/placecontext.schema.json) |
 ## Schema Hierarchy
 
 * Place context `https://ns.adobe.com/xdm/context/placecontext`

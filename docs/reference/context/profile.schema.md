@@ -9,7 +9,7 @@ An XDM Individual Profile forms a singular representation of the attributes and 
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/profile.schema.json](context/profile.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/profile.schema.json](context/profile.schema.json) |
 ## Schema Hierarchy
 
 * XDM Individual Profile `https://ns.adobe.com/xdm/context/profile`

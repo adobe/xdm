@@ -9,7 +9,7 @@ A directory in Adobe Experience Platform.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/repo/directory.schema.json](external/repo/directory.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [external/repo/directory.schema.json](external/repo/directory.schema.json) |
 ## Schema Hierarchy
 
 * Directory `http://ns.adobe.com/adobecloud/core/1.0/directory`
@@ -32,12 +32,6 @@ A directory in Adobe Experience Platform.
       "templated": true
     }
   },
-  "_page": {
-    "orderBy": "id",
-    "start": "123",
-    "next": "789",
-    "count": 100
-  },
   "repo:createDate": "2017-09-26T15:52:25+00:00",
   "repo:modifyDate": "2017-09-26T15:52:25+00:00",
   "repo:path": "/",
@@ -59,6 +53,12 @@ A directory in Adobe Experience Platform.
       "href": "https://api2.example.com/v7/resolve{?asset_id}",
       "templated": true
     }
+  },
+  "_page": {
+    "orderBy": "id",
+    "start": "123",
+    "next": "789",
+    "count": 100
   },
   "repo:createDate": "2017-09-26T15:52:25+00:00",
   "repo:modifyDate": "2017-09-26T15:52:25+00:00",

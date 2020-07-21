@@ -9,7 +9,7 @@ Number of reopens for which a product list that was no longer accessible has bee
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/product-list-reopens.schema.json](data/product-list-reopens.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [data/product-list-reopens.schema.json](data/product-list-reopens.schema.json) |
 ## Schema Hierarchy
 
 * Product List Reopens `https://ns.adobe.com/xdm/data/metrics/product-list-reopens`

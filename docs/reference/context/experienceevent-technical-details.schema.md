@@ -9,7 +9,7 @@ Technical details extension for ExperienceEvent.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/experienceevent-technical-details.schema.json](context/experienceevent-technical-details.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/experienceevent-technical-details.schema.json](context/experienceevent-technical-details.schema.json) |
 ## Schema Hierarchy
 
 * ExperienceEvent technical details `https://ns.adobe.com/xdm/context/experienceevent-technical-details`

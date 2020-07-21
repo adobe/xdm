@@ -30,12 +30,8 @@
             "$ref": "https://ns.adobe.com/xdm/content/componentized-page#/definitions/residuals"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
-        {
-            "@type": "https://francois.corp.adobe.com:4502/apps/foundation/title",
-            "dc:title": "Protect Your Eyes"
-        },
         {
             "@type": "https://francois.corp.adobe.com:4502/apps/foundation/image",
             "image": {
@@ -43,6 +39,10 @@
                 "repo:id": "urn:aaid:aem:4123ba4c-93a8-4c5d-b979-1234e4318185",
                 "@id": "https://francois.corp.adobe.com:4502/content/dam/Glasses-small.jpg"
             }
+        },
+        {
+            "@type": "https://francois.corp.adobe.com:4502/apps/foundation/title",
+            "dc:title": "Protect Your Eyes"
         }
     ]
 }

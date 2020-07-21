@@ -18,7 +18,7 @@
   "description": "Describes one to many relationship descriptor.",
   "definitions": {
     "descriptorOneToMany": {
-      "properties":{
+      "properties": {
         "@type": {
           "type": "string",
           "const": "xdm:descriptorOneToMany"
@@ -37,5 +37,5 @@
       "$ref": "#/definitions/descriptorOneToMany"
     }
   ],
-  "meta:status": "stabilizing"
+  "meta:status": "stable"
 }

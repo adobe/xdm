@@ -9,7 +9,7 @@ This mixin provides a condensed, normalized encapsulation of end-user identifier
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/experienceevent-enduserids.schema.json](context/experienceevent-enduserids.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/experienceevent-enduserids.schema.json](context/experienceevent-enduserids.schema.json) |
 ## Schema Hierarchy
 
 * ExperienceEvent EndUserIDs `https://ns.adobe.com/xdm/context/experienceevent-enduserids`

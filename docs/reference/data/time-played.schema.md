@@ -9,7 +9,7 @@ Describes the amount of time spent by a user on a specific timed media asset.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/time-played.schema.json](data/time-played.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [data/time-played.schema.json](data/time-played.schema.json) |
 ## Schema Hierarchy
 
 * Time Played `https://ns.adobe.com/xdm/data/time-played`

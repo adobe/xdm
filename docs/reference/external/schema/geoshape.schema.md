@@ -9,7 +9,7 @@ The geographic shape of a place. Based on [schema.org](http://schema.org/GeoShap
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/schema/geoshape.schema.json](external/schema/geoshape.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [external/schema/geoshape.schema.json](external/schema/geoshape.schema.json) |
 ## Schema Hierarchy
 
 * Geo Shape `http://schema.org/GeoShape`

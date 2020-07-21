@@ -11,8 +11,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "description":
-    "Used to indicate the behavior of time partitioned semantics when composed into data schemas.",
+  "description": "Used to indicate the behavior of time partitioned semantics when composed into data schemas.",
   "definitions": {
     "time-series": {
       "properties": {
@@ -68,5 +67,5 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

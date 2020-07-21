@@ -9,7 +9,7 @@ Common Properties for storage in Adobe Experience Platform.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Cannot be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/repo/common.schema.json](external/repo/common.schema.json) |
+| Cannot be instantiated | Yes | Stable | No | Forbidden | Permitted | [external/repo/common.schema.json](external/repo/common.schema.json) |
 
 ## Common Properties Example
 ```json

@@ -9,7 +9,7 @@ Beacon is a wireless device that communicates identity information to mobile app
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/beacon-interaction-details.schema.json](context/beacon-interaction-details.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/beacon-interaction-details.schema.json](context/beacon-interaction-details.schema.json) |
 ## Schema Hierarchy
 
 * Beacon `https://ns.adobe.com/xdm/context/beacon-interaction-details`

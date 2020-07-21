@@ -10,7 +10,7 @@ Page information for paginated resource list operations.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [common/page.schema.json](common/page.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [common/page.schema.json](common/page.schema.json) |
 
 ## Page Examples
 

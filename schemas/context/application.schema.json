@@ -35,39 +35,36 @@
         },
         "xdm:crashes": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-            "Triggered when the application does not exit gracefully. Event is sent on application launch after a crash."
+          "description": "Triggered when the application does not exit gracefully. Event is sent on application launch after a crash."
         },
         "xdm:featureUsages": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-            "Activation of an application feature that is being measured."
+          "description": "Activation of an application feature that is being measured."
         },
         "xdm:installs": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-            "Install of an application on a device where the specific install event is available."
+          "description": "Install of an application on a device where the specific install event is available."
         },
         "xdm:firstLaunches": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-            "Triggered on first launch after install."
+          "description": "Triggered on first launch after install."
         },
         "xdm:launches": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-            "Launch of an application. Triggered on every run, including crashes and installs. Also triggered on a resume from background when the session timeout has been exceeded."
+          "description": "Launch of an application. Triggered on every run, including crashes and installs. Also triggered on a resume from background when the session timeout has been exceeded."
         },
         "xdm:upgrades": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-            "Upgrade of an application that has previously been installed. Triggered on first launch after upgrade."
+          "description": "Upgrade of an application that has previously been installed. Triggered on first launch after upgrade."
         },
         "xdm:userPerspective": {
           "type": "string",
-          "description":
-            "The perspective/physical relationship between the user and the app/brand at the time the event happened.  The most common are the app being in the foreground with the user directly interacting with it vs the app being in the background and still generating events.  Detached means the event was related to the app but didn't come directly from the app like the sending of an email or push notification from an external system.  Understanding the perspective of the user in relation to the app helps with accuratly generating sessions as the majority of the time you will not want to include background and detached events as part of an active session.",
-          "enum": ["foreground", "background", "detached"],
+          "description": "The perspective/physical relationship between the user and the app/brand at the time the event happened.  The most common are the app being in the foreground with the user directly interacting with it vs the app being in the background and still generating events.  Detached means the event was related to the app but didn't come directly from the app like the sending of an email or push notification from an external system.  Understanding the perspective of the user in relation to the app helps with accuratly generating sessions as the majority of the time you will not want to include background and detached events as part of an active session.",
+          "enum": [
+            "foreground",
+            "background",
+            "detached"
+          ],
           "meta:enum": {
             "foreground": "Foreground",
             "background": "Background",
@@ -85,5 +82,5 @@
       "$ref": "#/definitions/application"
     }
   ],
-  "meta:status": "stabilizing"
+  "meta:status": "stable"
 }

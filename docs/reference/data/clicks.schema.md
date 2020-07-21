@@ -9,7 +9,7 @@ The metric measures the number of interactions a user had by clicking on an asse
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/clicks.schema.json](data/clicks.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [data/clicks.schema.json](data/clicks.schema.json) |
 ## Schema Hierarchy
 
 * Clicks `https://ns.adobe.com/xdm/data/clicks`

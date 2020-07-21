@@ -9,7 +9,7 @@ The place context metric `poi-entries` describes the number of times a person ha
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/poi-entries.schema.json](data/poi-entries.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [data/poi-entries.schema.json](data/poi-entries.schema.json) |
 ## Schema Hierarchy
 
 * Point of Interest (POI) Entries `https://ns.adobe.com/xdm/data/metrics/placecontext/poi-entries`

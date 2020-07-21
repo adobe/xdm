@@ -9,7 +9,7 @@ The series the show belongs to. Based on [www.iptc.org](https://www.iptc.org/std
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/iptc/series.schema.json](external/iptc/series.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [external/iptc/series.schema.json](external/iptc/series.schema.json) |
 
 ## Series Example
 ```json

@@ -43,7 +43,7 @@
             "$ref": "#/definitions/descriptorReferenceIdentity"
         }
     ],
-    "meta:status": "stabilizing",
+    "meta:status": "stable",
     "examples": [
         {
             "@type": "xdm:descriptorReferenceIdentity",

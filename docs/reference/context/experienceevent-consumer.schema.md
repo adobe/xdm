@@ -9,7 +9,7 @@ This mixin groups a set of standard fields to describe the behavior of an indivi
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/experienceevent-consumer.schema.json](context/experienceevent-consumer.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/experienceevent-consumer.schema.json](context/experienceevent-consumer.schema.json) |
 ## Schema Hierarchy
 
 * Consumer ExperienceEvent mixin `https://ns.adobe.com/xdm/context/experienceevent-consumer`

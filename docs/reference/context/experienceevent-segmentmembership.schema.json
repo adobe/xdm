@@ -51,7 +51,7 @@
             "$ref": "#/definitions/experienceevent-segmentmembership"
         }
     ],
-    "meta:status": "stabilizing",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:segmentMembership": {

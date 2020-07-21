@@ -5,15 +5,15 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id":
-    "https://ns.adobe.com/xdm/data/metrics/direct-marketing/user-complaints",
+  "$id": "https://ns.adobe.com/xdm/data/metrics/direct-marketing/user-complaints",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "User Complaints",
   "type": "object",
   "meta:extensible": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/metricdefinition"],
-  "description":
-    "The direct-marketing metric `user-complaints` describes the number of user complaints that have been received. This generally occurs when a recipient of a message reported it as spam.",
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/metricdefinition"
+  ],
+  "description": "The direct-marketing metric `user-complaints` describes the number of user complaints that have been received. This generally occurs when a recipient of a message reported it as spam.",
   "definitions": {
     "metricdefinition": {
       "properties": {
@@ -25,8 +25,7 @@
         "schema:name": {
           "type": "string",
           "const": "direct-marketing metric: userComplaints",
-          "description":
-            "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
+          "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
         },
         "xdm:measurement": {
           "type": "string",
@@ -47,6 +46,11 @@
       "$ref": "https://ns.adobe.com/xdm/data/metricdefinition"
     }
   ],
-  "required": ["@id", "schema:name", "xdm:measurement", "xdm:unit"],
-  "meta:status": "stabilizing"
+  "required": [
+    "@id",
+    "schema:name",
+    "xdm:measurement",
+    "xdm:unit"
+  ],
+  "meta:status": "stable"
 }

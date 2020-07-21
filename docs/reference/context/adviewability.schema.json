@@ -133,7 +133,7 @@
             "$ref": "#/definitions/adviewability"
         }
     ],
-    "meta:status": "stabilizing",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:adUnitDepth": 0,

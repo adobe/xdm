@@ -35,7 +35,7 @@
             "$ref": "#/definitions/profile-test-profile"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:testProfile": false

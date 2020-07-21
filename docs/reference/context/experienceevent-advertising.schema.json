@@ -34,7 +34,7 @@
             "$ref": "#/definitions/experienceevent-advertising"
         }
     ],
-    "meta:status": "stabilizing",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:advertising": {

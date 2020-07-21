@@ -9,7 +9,7 @@ This model represents a principal in an access control system. Principals are en
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | No | Experimental | No | Forbidden | Permitted | [common/principal.schema.json](common/principal.schema.json) |
+| Can be instantiated | No | Stable | No | Forbidden | Permitted | [common/principal.schema.json](common/principal.schema.json) |
 ## Schema Hierarchy
 
 * Principal `https://ns.adobe.com/xdm/common/principal`

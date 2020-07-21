@@ -9,7 +9,7 @@
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "Timed media information",
     "type": "object",
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "meta:extensible": true,
     "description": "Information related to timed media such main content, ads, and chapters.",
     "definitions": {

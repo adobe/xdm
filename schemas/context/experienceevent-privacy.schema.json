@@ -18,7 +18,7 @@
    "definitions":{
       "experienceevent-privacy":{
          "properties":{
-            "xdm:consentsAndPreferneces":{
+            "xdm:consentsAndPreferences":{
                "title": "Consents, Personalization and Marketing Preferences",
                "ref": "https://ns.adobe.com/xdm/context/consentpreferences"
             },

@@ -54,7 +54,7 @@
             "$ref": "#/definitions/order"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:purchaseID": "a8g784hjq1mnp3",

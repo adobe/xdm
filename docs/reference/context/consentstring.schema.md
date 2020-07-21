@@ -9,7 +9,7 @@ Consent String as presented by user along with standard information to help cons
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/consentstring.schema.json](context/consentstring.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/consentstring.schema.json](context/consentstring.schema.json) |
 ## Schema Hierarchy
 
 * Consent String `https://ns.adobe.com/xdm/context/consentstring`

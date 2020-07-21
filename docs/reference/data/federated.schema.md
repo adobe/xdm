@@ -9,7 +9,7 @@ Indicates if the experience event was created through federation.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/federated.schema.json](data/federated.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [data/federated.schema.json](data/federated.schema.json) |
 ## Schema Hierarchy
 
 * Federated `https://ns.adobe.com/xdm/data/federated`

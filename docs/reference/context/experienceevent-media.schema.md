@@ -9,7 +9,7 @@ This mixin is used to capture information regarding interactions with media such
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/experienceevent-media.schema.json](context/experienceevent-media.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/experienceevent-media.schema.json](context/experienceevent-media.schema.json) |
 ## Schema Hierarchy
 
 * ExperienceEvent details for media `https://ns.adobe.com/xdm/context/experienceevent-media`

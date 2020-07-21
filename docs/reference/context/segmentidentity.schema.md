@@ -9,7 +9,7 @@ Segment identity is used to clearly distinguish segments from multiple sources. 
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/segmentidentity.schema.json](context/segmentidentity.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/segmentidentity.schema.json](context/segmentidentity.schema.json) |
 ## Schema Hierarchy
 
 * Segment identity `https://ns.adobe.com/xdm/context/segmentidentity`

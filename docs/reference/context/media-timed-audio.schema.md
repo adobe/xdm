@@ -9,7 +9,7 @@ Asset information about the audio content.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/media-timed-audio.schema.json](context/media-timed-audio.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/media-timed-audio.schema.json](context/media-timed-audio.schema.json) |
 ## Schema Hierarchy
 
 * Media audio `https://ns.adobe.com/xdm/context/media-timed-audio`

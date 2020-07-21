@@ -9,7 +9,7 @@ The commerce metric `saveForLaters` describes how often a product has been saved
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/save-for-laters.schema.json](data/save-for-laters.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [data/save-for-laters.schema.json](data/save-for-laters.schema.json) |
 ## Schema Hierarchy
 
 * Save For Laters `https://ns.adobe.com/xdm/data/metrics/save-for-laters`

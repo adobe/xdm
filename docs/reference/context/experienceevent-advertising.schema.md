@@ -9,7 +9,7 @@ This mixin is used to capture advertising details related to an ExperienceEvent,
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/experienceevent-advertising.schema.json](context/experienceevent-advertising.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/experienceevent-advertising.schema.json](context/experienceevent-advertising.schema.json) |
 ## Schema Hierarchy
 
 * ExperienceEvent details for advertising `https://ns.adobe.com/xdm/context/experienceevent-advertising`

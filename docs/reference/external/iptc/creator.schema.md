@@ -9,7 +9,7 @@ The creator of the show. Based on [www.iptc.org](https://www.iptc.org/std/videom
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/iptc/creator.schema.json](external/iptc/creator.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [external/iptc/creator.schema.json](external/iptc/creator.schema.json) |
 
 ## Creator Example
 ```json

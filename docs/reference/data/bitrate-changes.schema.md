@@ -9,7 +9,7 @@ The number of bitrate change events that occurred during a playback session.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/bitrate-changes.schema.json](data/bitrate-changes.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [data/bitrate-changes.schema.json](data/bitrate-changes.schema.json) |
 ## Schema Hierarchy
 
 * Bitrate Changes `https://ns.adobe.com/xdm/data/bitrate-changes`

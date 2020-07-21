@@ -18,7 +18,7 @@
   "description": "An ExperienceEvent is a fact record of what occurred, including the point in time and identity of the individual involved. ExperienceEvents can be either explicit (directly observable human actions) or implicit (raised without a direct human action) and are recorded without aggregation or interpretation. They are critical for time-domain analytics as they allow for observation and analysis of changes that occur in a given window of time and the comparison between multiple windows of time to track trends.",
   "definitions": {
     "experienceevent": {
-      "properties": { 
+      "properties": {
         "xdm:eventMergeId": {
           "title": "ExperienceEvent merge ID",
           "type": "string",
@@ -45,5 +45,5 @@
       "$ref": "#/definitions/experienceevent"
     }
   ],
-  "meta:status": "stabilizing"
+  "meta:status": "stable"
 }

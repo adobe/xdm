@@ -57,7 +57,7 @@
             "$ref": "#/definitions/beacon-interaction-detail"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:proximityUUID": "dd0094a0-52bb-4d3a-ab15-fcccb9b9b48e",

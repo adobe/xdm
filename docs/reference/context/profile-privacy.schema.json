@@ -120,7 +120,7 @@
             "$ref": "#/definitions/profile-privacy"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:optOutConsentLevel": {

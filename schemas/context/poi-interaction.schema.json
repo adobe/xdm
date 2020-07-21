@@ -20,20 +20,18 @@
           "description": "Detail of the POI that cause the event.",
           "$ref": "https://ns.adobe.com/xdm/context/poi-detail"
         },
-         "xdm:poiDetail": {
+        "xdm:poiDetail": {
           "title": "POI detail",
           "description": "Detail of the POI that cause the event.",
           "$ref": "https://ns.adobe.com/xdm/context/poi-detail"
         },
         "xdm:poiEntries": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-            "The number of times a person has entered the point of interest (POI)."
+          "description": "The number of times a person has entered the point of interest (POI)."
         },
         "xdm:poiExits": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-            "The number of times a person has exited the point of interest (POI)."
+          "description": "The number of times a person has exited the point of interest (POI)."
         }
       }
     }
@@ -46,5 +44,5 @@
       "$ref": "#/definitions/poi-interaction"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

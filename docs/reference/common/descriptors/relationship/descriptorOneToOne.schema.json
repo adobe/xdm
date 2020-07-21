@@ -37,7 +37,7 @@
             "$ref": "#/definitions/descriptorOneToOne"
         }
     ],
-    "meta:status": "stabilizing",
+    "meta:status": "stable",
     "examples": [
         {
             "@id": "https://ns.adobe.com/example/descriptorOneToOne/1",

@@ -9,7 +9,7 @@ Asset information about the main content that was played, but present on all ads
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/media-timed-asset-reference.schema.json](context/media-timed-asset-reference.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/media-timed-asset-reference.schema.json](context/media-timed-asset-reference.schema.json) |
 ## Schema Hierarchy
 
 * Timed media primary asset reference `https://ns.adobe.com/xdm/context/media-timed-asset-reference`
@@ -22,6 +22,20 @@ Asset information about the main content that was played, but present on all ads
 
 
 ## Timed media primary asset reference Examples
+
+```json
+{
+  "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234431",
+  "dc:title": "Stairway to Heaven",
+  "xdm:audio": {
+    "dc:creator": "Jimmy Page",
+    "xdm:artist": "Led Zeppelin",
+    "xdm:album": "Led Zeppelin IV"
+  },
+  "xmpDM:duration": 482,
+  "xdm:streamType": "audio"
+}
+```
 
 ```json
 {
@@ -65,20 +79,6 @@ Asset information about the main content that was played, but present on all ads
   ],
   "xdm:firstAirDate": "2016-01-05",
   "xmpDM:releaseDate": "2016-01-25"
-}
-```
-
-```json
-{
-  "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234431",
-  "dc:title": "Stairway to Heaven",
-  "xdm:audio": {
-    "dc:creator": "Jimmy Page",
-    "xdm:artist": "Led Zeppelin",
-    "xdm:album": "Led Zeppelin IV"
-  },
-  "xmpDM:duration": 482,
-  "xdm:streamType": "audio"
 }
 ```
 

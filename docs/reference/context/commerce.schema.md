@@ -9,7 +9,7 @@ The records related to buying and selling activity.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/commerce.schema.json](context/commerce.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/commerce.schema.json](context/commerce.schema.json) |
 ## Schema Hierarchy
 
 * Commerce `https://ns.adobe.com/xdm/context/commerce`

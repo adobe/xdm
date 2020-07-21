@@ -23,7 +23,7 @@
           "title": "Created Date",
           "description": "Date when this record was created.",
           "type": "string",
-          "format":"date-time"
+          "format": "date-time"
         },
         "xdm:lastUpdatedBy": {
           "title": "Last Updated By",
@@ -34,25 +34,25 @@
           "title": "Last Updated Date",
           "description": "Date when this record was last modofied.",
           "type": "string",
-          "format":"date-time"
+          "format": "date-time"
         },
         "xdm:lastActivityDate": {
           "title": "Last Activity Date",
           "description": "Last activity date.",
-		      "type": "string",
-		      "format": "date-time"
+          "type": "string",
+          "format": "date-time"
         },
-          "xdm:lastReferencedDate": {
-            "title": "Last Referenced Date",
-            "description": "Last referenced date.",
-		        "type": "string",
-		        "format": "date-time"
+        "xdm:lastReferencedDate": {
+          "title": "Last Referenced Date",
+          "description": "Last referenced date.",
+          "type": "string",
+          "format": "date-time"
         },
-          "xdm:lastViewedDate": {
-            "title": "Last Viewed Date",
-            "description": "Last viewed date.",
-		        "type": "string",
-		        "format": "date-time"
+        "xdm:lastViewedDate": {
+          "title": "Last Viewed Date",
+          "description": "Last viewed date.",
+          "type": "string",
+          "format": "date-time"
         }
       }
     }
@@ -65,5 +65,5 @@
       "$ref": "#/definitions/externalSourceSystemAudit"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

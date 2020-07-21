@@ -9,7 +9,7 @@ The advertising/viewability metric `viewable-impressions` describes whether at l
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/viewableimpressions.schema.json](data/viewableimpressions.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [data/viewableimpressions.schema.json](data/viewableimpressions.schema.json) |
 ## Schema Hierarchy
 
 * Viewable-impressions `https://ns.adobe.com/xdm/data/viewableimpressions`

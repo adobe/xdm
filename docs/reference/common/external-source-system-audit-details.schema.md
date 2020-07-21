@@ -9,7 +9,7 @@ Mixin which defines a set a audit properties for extenal sources.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [common/external-source-system-audit-details.schema.json](common/external-source-system-audit-details.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [common/external-source-system-audit-details.schema.json](common/external-source-system-audit-details.schema.json) |
 ## Schema Hierarchy
 
 * External Source System Audit Details Mixin `https://ns.adobe.com/xdm/common/external-source-system-audit-details`

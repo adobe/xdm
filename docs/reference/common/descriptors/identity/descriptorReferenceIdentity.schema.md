@@ -9,7 +9,7 @@ Used to assign a namespace that will be used to derive a relationship.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [common/descriptors/identity/descriptorReferenceIdentity.schema.json](common/descriptors/identity/descriptorReferenceIdentity.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [common/descriptors/identity/descriptorReferenceIdentity.schema.json](common/descriptors/identity/descriptorReferenceIdentity.schema.json) |
 ## Schema Hierarchy
 
 * Identity Reference Descriptor `https://ns.adobe.com/xdm/common/descriptors/descriptorReferenceIdentity`

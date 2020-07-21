@@ -9,7 +9,7 @@ Number of orders has occurred. Purchase is the only required action in a commerc
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/purchases.schema.json](data/purchases.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [data/purchases.schema.json](data/purchases.schema.json) |
 ## Schema Hierarchy
 
 * Purchases `https://ns.adobe.com/xdm/data/metrics/purchases`

@@ -10,7 +10,7 @@ Versioning policy represents how versioning for content stored in this specific 
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Cannot be instantiated | Yes | Experimental | No | Forbidden | Permitted | [content/repository-policies/versioning.schema.json](content/repository-policies/versioning.schema.json) |
+| Cannot be instantiated | Yes | Stable | No | Forbidden | Permitted | [content/repository-policies/versioning.schema.json](content/repository-policies/versioning.schema.json) |
 
 ## Versioning Example
 ```json

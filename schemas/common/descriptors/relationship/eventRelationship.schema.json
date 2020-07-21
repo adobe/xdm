@@ -15,7 +15,7 @@
   "meta:abstract": false,
   "type": "object",
   "description": "Used by the UPS system to assign the specific schema that will used for the timeSeriesEvents field which is part of the union view of a class. If not supplied, the system today will default to the unified ExperienceEvent.",
-    "definitions": {
+  "definitions": {
     "eventRelationship": {
       "properties": {
         "@type": {
@@ -34,7 +34,10 @@
           "description": "When present, major version being referenced."
         }
       },
-      "required": ["xdm:destinationSchema", "xdm:destinationVersion"]
+      "required": [
+        "xdm:destinationSchema",
+        "xdm:destinationVersion"
+      ]
     }
   },
   "allOf": [
@@ -45,5 +48,5 @@
       "$ref": "#/definitions/eventRelationship"
     }
   ],
-  "meta:status": "stabilizing"
+  "meta:status": "stable"
 }

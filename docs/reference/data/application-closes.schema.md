@@ -9,7 +9,7 @@ Graceful termination(s) of an application.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/application-closes.schema.json](data/application-closes.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [data/application-closes.schema.json](data/application-closes.schema.json) |
 ## Schema Hierarchy
 
 * Application Closes `https://ns.adobe.com/xdm/data/application-closes`

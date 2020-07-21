@@ -14,16 +14,14 @@
     "http://schema.org/GeoCoordinates",
     "https://ns.adobe.com/xdm/common/geo"
   ],
-  "description":
-    "A postal address. Address could relate to a person's home, work, or preferred store location.",
+  "description": "A postal address. Address could relate to a person's home, work, or preferred store location.",
   "definitions": {
     "address": {
       "properties": {
         "xdm:primary": {
           "title": "Primary",
           "type": "boolean",
-          "description":
-            "Primary address indicator. A profile can have only one `primary` address at a given point of time."
+          "description": "Primary address indicator. A profile can have only one `primary` address at a given point of time."
         },
         "xdm:label": {
           "title": "Label",
@@ -33,8 +31,7 @@
         "xdm:street1": {
           "title": "Street 1",
           "type": "string",
-          "description":
-            "Primary street level information, apartment number, street number, and street name."
+          "description": "Primary street level information, apartment number, street number, and street name."
         },
         "xdm:street2": {
           "title": "Street 2",
@@ -54,8 +51,7 @@
         "xdm:region": {
           "title": "Region",
           "type": "string",
-          "description":
-            "The region, county, or district portion of the address."
+          "description": "The region, county, or district portion of the address."
         },
         "xdm:postOfficeBox": {
           "title": "Post office box",
@@ -66,8 +62,7 @@
         "xdm:country": {
           "title": "Country",
           "type": "string",
-          "description":
-            "The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language."
+          "description": "The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language."
         },
         "xdm:status": {
           "title": "Status",
@@ -91,8 +86,7 @@
           "title": "Last verified date",
           "type": "string",
           "format": "date",
-          "description":
-            "The date that the address was last verified as still associated to the person."
+          "description": "The date that the address was last verified as still associated to the person."
         }
       }
     }
@@ -111,5 +105,5 @@
       "$ref": "#/definitions/address"
     }
   ],
-  "meta:status": "stabilizing"
+  "meta:status": "stable"
 }

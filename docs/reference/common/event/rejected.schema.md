@@ -24,7 +24,7 @@ Some examples of the `rejected event` include:
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | No | Experimental | No | Forbidden | Permitted | [common/event/rejected.schema.json](common/event/rejected.schema.json) |
+| Can be instantiated | No | Stable | No | Forbidden | Permitted | [common/event/rejected.schema.json](common/event/rejected.schema.json) |
 ## Schema Hierarchy
 
 * Rejected Event `https://ns.adobe.com/xdm/common/event/rejected`

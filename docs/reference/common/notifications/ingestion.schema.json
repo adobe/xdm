@@ -154,7 +154,7 @@
             "$ref": "#/definitions/ingestion-notification"
         }
     ],
-    "meta:status": "stabilizing",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:eventType": "ig_load_success",

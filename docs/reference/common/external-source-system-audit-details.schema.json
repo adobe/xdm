@@ -39,7 +39,7 @@
             "$ref": "#/definitions/externalSourceSystemAuditDetails"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:createdBy": "USER111",

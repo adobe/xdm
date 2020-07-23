@@ -396,6 +396,30 @@
           "type": "boolean",
           "description": "Do not contact this profile on any outbound channel.",
           "default": false
+        },
+        "xdm:optOutDetails": {
+          "properties": {
+            "xdm:email": {
+              "title": "Additional Details for Email Opt Out",
+              "description": "Additional Details for Email Opt Out like reason, date.",
+              "$ref": "https://ns.adobe.com/xdm/common/optinout-additional-details"
+            },
+            "xdm:phone": {
+              "title": "Additional Details for Phone Opt Out",
+              "description": "Additional details for phone opt out like reason, date.",
+              "$ref": "https://ns.adobe.com/xdm/common/optinout-additional-details"
+            },
+            "xdm:fax": {
+              "title": "Additional Details for Fax Opt Out",
+              "description": "Additional details for fax opt out like reason, date.",
+              "$ref": "https://ns.adobe.com/xdm/common/optinout-additional-details"
+            },
+            "xdm:direct-mail": {
+              "title": "Additional Details for Direct-Mail Opt Out",
+              "description": "Additional details for direct-mail opt out like reason, date.",
+              "$ref": "https://ns.adobe.com/xdm/common/optinout-additional-details"
+            }
+          }
         }
       }
     }
@@ -408,5 +432,5 @@
       "$ref": "#/definitions/optinout"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "experimental"
 }

@@ -50,7 +50,10 @@
             "^dsp:.*$": {},
             "^searchads:.*$": {},
             "^adcloud:.*$": {},
-            "^id3:.*$": {},
+            "^sfdc:.*$": {},
+            "^cdm:.*$": {},
+            "^dynamics:.*$": {},
+            "^marketo:.*$": {},
             ".+://.+": {},
             "@.*": {}
           },
@@ -227,10 +230,25 @@
                   "format": "url",
                   "const": "https://ns.adobe.com/adcloud/"
                 },
-                "id3": {
+                "sfdc": {
                   "type": "string",
                   "format": "url",
-                  "const": "http://id3.org/ns/2.4/"
+                  "const": "https://ns.adobe.com/sfdc/"
+                },
+                "cdm": {
+                  "type": "string",
+                  "format": "url",
+                  "const": "https://ns.adobe.com/cdm/"
+                },
+                "dynamics": {
+                  "type": "string",
+                  "format": "url",
+                  "const": "https://ns.adobe.com/dynamics/"
+                },
+                "marketo": {
+                  "type": "string",
+                  "format": "url",
+                  "const": "https://ns.adobe.com/marketo/"
                 }
               },
               "additionalProperties": false,
@@ -272,7 +290,10 @@
             "^dsp:.*$": {},
             "^searchads:.*$": {},
             "^adcloud:.*$": {},
-            "^id3:.*$": {},
+            "^sfdc:.*$": {},
+            "^cdm:.*$": {},
+            "^dynamics:.*$": {},
+            "^marketo:.*$": {},
             ".+://.+": {}
           },
           "required": [
@@ -288,5 +309,5 @@
       "$ref": "#/definitions/@context"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stabilizing"
 }

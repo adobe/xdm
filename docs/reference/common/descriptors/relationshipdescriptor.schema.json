@@ -75,7 +75,7 @@
             "$ref": "#/definitions/relationshipdescriptor"
         }
     ],
-    "meta:status": "stabilizing",
+    "meta:status": "stable",
     "examples": [
         {
             "@id": "https://example.com/descriptors/1",

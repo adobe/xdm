@@ -34,7 +34,7 @@
             "$ref": "#/definitions/experienceevent-application"
         }
     ],
-    "meta:status": "stabilizing",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:application": {

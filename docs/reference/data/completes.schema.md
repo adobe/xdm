@@ -9,7 +9,7 @@ Indicates if a timed media asset was watched to completion - this does not neces
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/completes.schema.json](data/completes.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [data/completes.schema.json](data/completes.schema.json) |
 ## Schema Hierarchy
 
 * Completes `https://ns.adobe.com/xdm/data/completes`

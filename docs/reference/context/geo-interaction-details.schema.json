@@ -40,7 +40,7 @@
             "$ref": "#/definitions/geo-interaction-detail"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:distanceToCenter": 100,

@@ -21,7 +21,7 @@
     "required": [
         "xdm:root"
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:root": "https://cc-api-storage.adobe.io/"

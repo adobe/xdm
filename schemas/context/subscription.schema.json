@@ -10,8 +10,7 @@
   "title": "Subscription",
   "type": "object",
   "meta:extensible": true,
-  "description":
-    "Subscriptions are licensed entitlements to software, services, or goods that are utilized in a time or usage based way.",
+  "description": "Subscriptions are licensed entitlements to software, services, or goods that are utilized in a time or usage based way.",
   "definitions": {
     "subscription": {
       "properties": {
@@ -33,14 +32,12 @@
         "xdm:environment": {
           "title": "Environment",
           "$ref": "https://ns.adobe.com/xdm/context/environment",
-          "description":
-            "Environment of the subscription. This can be either then known environment at the time of the subscription or the environment of the application for subscriptions related to an application."
+          "description": "Environment of the subscription. This can be either then known environment at the time of the subscription or the environment of the application for subscriptions related to an application."
         },
         "xdm:SKU": {
           "title": "SKU",
           "type": "string",
-          "description":
-            "Stock keeping unit (SKU), a generally unique identifier for a product."
+          "description": "Stock keeping unit (SKU), a generally unique identifier for a product."
         },
         "xdm:planName": {
           "title": "Plan name",
@@ -50,14 +47,12 @@
         "xdm:type": {
           "title": "Type",
           "type": "string",
-          "description":
-            "The scope of entitlement in relation to how many people are covered by the subscription."
+          "description": "The scope of entitlement in relation to how many people are covered by the subscription."
         },
         "xdm:country": {
           "title": "Country",
           "type": "string",
-          "description":
-            "The country that the subscription contractual and agreement terms are rooted in."
+          "description": "The country that the subscription contractual and agreement terms are rooted in."
         },
         "xdm:startDate": {
           "title": "Start date",
@@ -84,14 +79,12 @@
         "xdm:renew": {
           "title": "Renew",
           "type": "string",
-          "description":
-            "The agreed way that the subscription may continue after the end date."
+          "description": "The agreed way that the subscription may continue after the end date."
         },
         "xdm:topUp": {
           "title": "Top up",
           "type": "string",
-          "description":
-            "Agreed terms for how consumable aspects of a subscription are repurchased during a billing period."
+          "description": "Agreed terms for how consumable aspects of a subscription are repurchased during a billing period."
         },
         "xdm:status": {
           "title": "Status",
@@ -101,8 +94,7 @@
         "xdm:contractID": {
           "title": "Contract ID",
           "type": "string",
-          "description":
-            "Unique ID for the contract that governs this subscription."
+          "description": "Unique ID for the contract that governs this subscription."
         },
         "xdm:paymentMethod": {
           "title": "Payment method",
@@ -133,8 +125,7 @@
         "xdm:category": {
           "title": "Category",
           "type": "string",
-          "description":
-            "The main, top level categorization of this type of subscription."
+          "description": "The main, top level categorization of this type of subscription."
         },
         "xdm:subCategory": {
           "title": "Sub category",
@@ -144,14 +135,12 @@
         "xdm:revision": {
           "title": "Revision",
           "type": "string",
-          "description":
-            "The identification between subscriptions of the same name and category hierarchy."
+          "description": "The identification between subscriptions of the same name and category hierarchy."
         },
         "xdm:reason": {
           "title": "Reason",
           "type": "string",
-          "description":
-            "The general intent the member has for the use of the subscription."
+          "description": "The general intent the member has for the use of the subscription."
         }
       }
     }
@@ -164,5 +153,5 @@
       "$ref": "#/definitions/subscription"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

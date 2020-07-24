@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "This mixin is used to capture information regarding ExperienceEvent segment membership, including which segments the individual belongs to, the last qualification time, and when the membership is valid until.",
   "definitions": {
     "experienceevent-segmentmembership": {
@@ -25,16 +27,16 @@
             "$ref": "https://ns.adobe.com/xdm/context/segmentmembershipitem"
           }
         },
-        "xdm:segmentMembership":{
-          "title" : "Segment Membership Map",
-          "type" : "object",
+        "xdm:segmentMembership": {
+          "title": "Segment Membership Map",
+          "type": "object",
           "meta:xdmType": "map",
-          "additionalProperties" : {
+          "additionalProperties": {
             "title": "Segment Membership per Namespace",
             "type": "object",
             "meta:xdmType": "map",
-            "additionalProperties" : {
-              "$ref" : "https://ns.adobe.com/xdm/context/segmentmembership"
+            "additionalProperties": {
+              "$ref": "https://ns.adobe.com/xdm/context/segmentmembership"
             }
           }
         }
@@ -49,5 +51,5 @@
       "$ref": "#/definitions/experienceevent-segmentmembership"
     }
   ],
-  "meta:status": "stabilizing"
+  "meta:status": "stable"
 }

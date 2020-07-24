@@ -56,7 +56,7 @@
     },
     "type": "object",
     "$ref": "#/definitions/quota",
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:enforcement": "hard",

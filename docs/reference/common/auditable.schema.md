@@ -9,7 +9,7 @@ The audit trail schema indicates a data record is auditable. For example, who an
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [common/auditable.schema.json](common/auditable.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [common/auditable.schema.json](common/auditable.schema.json) |
 ## Schema Hierarchy
 
 * Audit trail `https://ns.adobe.com/xdm/common/auditable`

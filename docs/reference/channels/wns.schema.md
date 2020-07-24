@@ -9,7 +9,7 @@ Windows Push is a notification service developed by Microsoft for all devices ru
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/wns.schema.json](channels/wns.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [channels/wns.schema.json](channels/wns.schema.json) |
 ## Schema Hierarchy
 
 * Windows Push Notification Service (WNS) Channel `https://ns.adobe.com/xdm/channels/wns`

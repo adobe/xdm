@@ -9,7 +9,7 @@ Describes the total amount of time spent by a user on a specific timed media ass
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/total-time-played.schema.json](data/total-time-played.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [data/total-time-played.schema.json](data/total-time-played.schema.json) |
 ## Schema Hierarchy
 
 * Total Time Played `https://ns.adobe.com/xdm/data/total-time-played`

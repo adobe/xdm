@@ -9,7 +9,7 @@ This mixin is used to capture information regarding name, gender, and birth date
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/profile-person-details.schema.json](context/profile-person-details.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/profile-person-details.schema.json](context/profile-person-details.schema.json) |
 ## Schema Hierarchy
 
 * Profile person details `https://ns.adobe.com/xdm/context/profile-person-details`

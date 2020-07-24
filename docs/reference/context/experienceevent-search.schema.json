@@ -34,7 +34,7 @@
             "$ref": "#/definitions/experienceevent-search"
         }
     ],
-    "meta:status": "stabilizing",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:search": {

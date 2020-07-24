@@ -10,41 +10,35 @@
   "title": "Consent String",
   "type": "object",
   "meta:extensible": true,
-  "description":
-    "Consent String as presented by user along with standard information to help consent enforcer to parse the String.",
+  "description": "Consent String as presented by user along with standard information to help consent enforcer to parse the String.",
   "definitions": {
     "consentstring": {
       "properties": {
         "xdm:consentStandard": {
           "title": "Standard for the consent",
           "type": "string",
-          "description":
-            "This helps determine the format of the consent string as set by consent management services."
+          "description": "This helps determine the format of the consent string as set by consent management services."
         },
         "xdm:consentStandardVersion": {
           "title": "Standards Version",
           "type": "string",
-          "description":
-            "Standards version to accurately define the format of the consent string as set by consent management services."
+          "description": "Standards version to accurately define the format of the consent string as set by consent management services."
         },
         "xdm:consentStringValue": {
           "title": "Consent String",
           "type": "string",
-          "description":
-            "Full consent string as provided by consent management services. Standard and Version help define how to parse this string."
+          "description": "Full consent string as provided by consent management services. Standard and Version help define how to parse this string."
         },
         "xdm:gdprApplies": {
           "title": "GDPR Applies",
           "type": "boolean",
           "default": false,
-          "description":
-            "If this is true, it means this consent string needs to be processed for consent enforcement."
+          "description": "If this is true, it means this consent string needs to be processed for consent enforcement."
         },
         "xdm:containsPersonalData": {
           "title": "Contains personal data",
           "type": "boolean",
-          "description":
-            "If this is true, it means consent is coming with personal data."
+          "description": "If this is true, it means consent is coming with personal data."
         }
       },
       "required": [
@@ -60,5 +54,5 @@
       "$ref": "#/definitions/consentstring"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

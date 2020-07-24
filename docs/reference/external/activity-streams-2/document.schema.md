@@ -9,7 +9,7 @@ Represents a document of any kind. Refer to the [Activity Streams 2.0 Core](http
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | No | Experimental | No | Forbidden | Permitted | [external/activity-streams-2/document.schema.json](external/activity-streams-2/document.schema.json) |
+| Can be instantiated | No | Stable | No | Forbidden | Permitted | [external/activity-streams-2/document.schema.json](external/activity-streams-2/document.schema.json) |
 
 ## Document Example
 ```json

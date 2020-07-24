@@ -10,8 +10,7 @@
   "title": "Beacon",
   "type": "object",
   "meta:extensible": true,
-  "description":
-    "Beacon is a wireless device that communicates identity information to mobile applications as mobile devices come within range.",
+  "description": "Beacon is a wireless device that communicates identity information to mobile applications as mobile devices come within range.",
   "definitions": {
     "beacon-interaction-detail": {
       "properties": {
@@ -23,14 +22,12 @@
         "xdm:beaconMajor": {
           "title": "Beacon major",
           "type": "number",
-          "description":
-            "Major values identify and distinguish a group and unsigned integer values between 1 and 65,535."
+          "description": "Major values identify and distinguish a group and unsigned integer values between 1 and 65,535."
         },
         "xdm:beaconMinor": {
           "title": "Beacon Minor",
           "type": "number",
-          "description":
-            "Minor values identify and distinguish an individual and unsigned integer values between 1 and 65,535."
+          "description": "Minor values identify and distinguish an individual and unsigned integer values between 1 and 65,535."
         },
         "xdm:proximity": {
           "title": "Proximity to beacon",
@@ -60,5 +57,5 @@
       "$ref": "#/definitions/beacon-interaction-detail"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

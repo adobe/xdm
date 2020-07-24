@@ -53,7 +53,7 @@
         "xdm:measurement",
         "xdm:unit"
     ],
-    "meta:status": "stabilizing",
+    "meta:status": "stable",
     "examples": [
         {
             "schema:name": "web metric: linkClicks",

@@ -17,27 +17,23 @@
         "xdm:primary": {
           "title": "Primary",
           "type": "boolean",
-          "description":
-            "Primary email indicator. A profile can have only one `primary` email address at a given point of time."
+          "description": "Primary email indicator. A profile can have only one `primary` email address at a given point of time."
         },
         "xdm:address": {
           "title": "Address",
           "type": "string",
           "format": "email",
-          "description":
-            "The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards."
+          "description": "The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards."
         },
         "xdm:label": {
           "title": "Label",
           "type": "string",
-          "description":
-            "Additional display information that maybe available, for example, Microsoft Outlook rich address controls display 'John Smith smithjr@company.uk', 'John Smith' part is data that would be placed in the label."
+          "description": "Additional display information that maybe available, for example, Microsoft Outlook rich address controls display 'John Smith smithjr@company.uk', 'John Smith' part is data that would be placed in the label."
         },
         "xdm:type": {
           "title": "Type",
           "type": "string",
-          "description":
-            "The way the account relates to the person for example 'work' or 'personal'.",
+          "description": "The way the account relates to the person for example 'work' or 'personal'.",
           "meta:enum": {
             "unknown": "Unknown",
             "personal": "Personal",
@@ -48,8 +44,7 @@
         "xdm:status": {
           "title": "Status",
           "type": "string",
-          "description":
-            "An indication as to the ability to use the email address.",
+          "description": "An indication as to the ability to use the email address.",
           "default": "active",
           "meta:enum": {
             "active": "Active",
@@ -75,5 +70,5 @@
       "$ref": "#/definitions/emailaddress"
     }
   ],
-  "meta:status": "stabilizing"
+  "meta:status": "stable"
 }

@@ -13,7 +13,7 @@ Repository implementations can generate notifications or alerts when the consume
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Cannot be instantiated | Yes | Experimental | No | Forbidden | Permitted | [content/repository-policies/quota.schema.json](content/repository-policies/quota.schema.json) |
+| Cannot be instantiated | Yes | Stable | No | Forbidden | Permitted | [content/repository-policies/quota.schema.json](content/repository-policies/quota.schema.json) |
 
 ## Storage Quota Example
 ```json

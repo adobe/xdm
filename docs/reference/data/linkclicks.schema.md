@@ -9,7 +9,7 @@ The web metric `link-clicks` describes the number of clicks on a link on a web p
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/linkclicks.schema.json](data/linkclicks.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [data/linkclicks.schema.json](data/linkclicks.schema.json) |
 ## Schema Hierarchy
 
 * Link-Clicks `https://ns.adobe.com/xdm/data/metrics/web/linkclicks`

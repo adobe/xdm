@@ -65,9 +65,8 @@
         },
         "https://ns.adobe.com/experience/campaign/orchestrationAction": {
           "title": "Action on step transition",
-          "description":
-            "Action taken during a step transition happening for an user in state machine",
-          "$ref": "https://ns.adobe.com/experience/campaign/orchestration/experienceevent#/definitions/action"  
+          "description": "Action taken during a step transition happening for an user in state machine",
+          "$ref": "https://ns.adobe.com/experience/campaign/orchestration/experienceevent#/definitions/action"
         },
         "https://ns.adobe.com/experience/campaign/orchestrationExternalEvent": {
           "title": "external event received",
@@ -81,8 +80,7 @@
         },
         "https://ns.adobe.com/experience/campaign/journeyVersion": {
           "title": "Journey version",
-          "description":
-            "Schema for describing the version of a journey, where version holds the state machine",
+          "description": "Schema for describing the version of a journey, where version holds the state machine",
           "$ref": "https://ns.adobe.com/experience/campaign/orchestration/experienceevent#/definitions/journeyVersion"
         }
       }
@@ -99,5 +97,5 @@
       "$ref": "#/definitions/reportingevent"
     }
   ],
-  "meta:status": "stabilizing"
+  "meta:status": "stable"
 }

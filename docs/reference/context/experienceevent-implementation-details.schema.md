@@ -9,7 +9,7 @@ Field to capture the details of the software used to collect the ExperienceEvent
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/experienceevent-implementation-details.schema.json](context/experienceevent-implementation-details.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/experienceevent-implementation-details.schema.json](context/experienceevent-implementation-details.schema.json) |
 ## Schema Hierarchy
 
 * ExperienceEvent implementation details `https://ns.adobe.com/xdm/context/experienceevent-implementation-details`

@@ -9,7 +9,7 @@ ExperienceEvent profile stitch describes details about the IDs that were joined 
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/experienceevent-profile-stitch.schema.json](context/experienceevent-profile-stitch.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/experienceevent-profile-stitch.schema.json](context/experienceevent-profile-stitch.schema.json) |
 ## Schema Hierarchy
 
 * ExperienceEvent profile stitch details `https://ns.adobe.com/xdm/context/experienceevent-profile-stitch`

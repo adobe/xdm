@@ -17,14 +17,12 @@
     "http://ns.adobe.com/adobecloud/core/1.0/asset",
     "https://ns.adobe.com/xdm/assets/rectangular"
   ],
-  "description":
-    "The image class is for raster and vector image assets, including JPEG, PNG, SVG files.",
+  "description": "The image class is for raster and vector image assets, including JPEG, PNG, SVG files.",
   "definitions": {
     "rational": {
       "$id": "https://ns.adobe.com/xdm/assets/image/rational",
       "title": "Rational",
-      "description":
-        "A representation of rational numbers as fractions of denominator and numerator.",
+      "description": "A representation of rational numbers as fractions of denominator and numerator.",
       "properties": {
         "tiff:numerator": {
           "title": "Numerator",
@@ -41,7 +39,10 @@
           "type": "integer"
         }
       },
-      "required": ["tiff:numerator", "tiff:denominator"]
+      "required": [
+        "tiff:numerator",
+        "tiff:denominator"
+      ]
     },
     "image": {
       "properties": {
@@ -49,8 +50,7 @@
           "type": "integer",
           "meta:usereditable": false,
           "title": "Orientation",
-          "description":
-            "The orientation of the image. Following values are permitted:\n- `1` = Horizontal (normal)\n- `2` = Mirror horizontal\n- `3` = Rotate 180 degrees\n- `4` = Mirror vertical\n- `5` = Mirror horizontal and rotate 270 degrees clockwise\n- `6` = Rotate 90 degrees clockwise\n- `7` = Mirror horizontal and rotate 90 degrees clockwise\n- `8` = Rotate 270 degrees clockwise.",
+          "description": "The orientation of the image. Following values are permitted:\n- `1` = Horizontal (normal)\n- `2` = Mirror horizontal\n- `3` = Rotate 180 degrees\n- `4` = Mirror vertical\n- `5` = Mirror horizontal and rotate 270 degrees clockwise\n- `6` = Rotate 90 degrees clockwise\n- `7` = Mirror horizontal and rotate 90 degrees clockwise\n- `8` = Rotate 270 degrees clockwise.",
           "minimum": 1,
           "maximum": 8,
           "meta:enum": {
@@ -67,8 +67,7 @@
         "tiff:XResolution": {
           "title": "X-Resolution",
           "meta:usereditable": false,
-          "description":
-            "Horizontal resolution in pixels per `resolutionUnit`.",
+          "description": "Horizontal resolution in pixels per `resolutionUnit`.",
           "type": "object",
           "allOf": [
             {
@@ -90,10 +89,12 @@
         "tiff:resolutionUnit": {
           "meta:usereditable": false,
           "title": "Resolution Unit",
-          "description":
-            "Unit used for `XResolution` and `YRresolution`. Possible values are 2 (inches) and 3 (centimeters).",
+          "description": "Unit used for `XResolution` and `YRresolution`. Possible values are 2 (inches) and 3 (centimeters).",
           "type": "integer",
-          "enum": [2, 3],
+          "enum": [
+            2,
+            3
+          ],
           "meta:enum": {
             "2": "inches",
             "3": "centimeters"
@@ -102,10 +103,18 @@
         "photoshop:colorMode": {
           "meta:usereditable": false,
           "title": "Color Mode",
-          "description":
-            "The color mode or image mode determines how colors combine based on the number of channels in a color model. Different color modes result in different levels of color detail and file size. For instance, use CMYK color mode for images in a full-color print brochure, and use RGB color mode for images in web or e-mail to reduce file size while maintaining color integrity.",
+          "description": "The color mode or image mode determines how colors combine based on the number of channels in a color model. Different color modes result in different levels of color detail and file size. For instance, use CMYK color mode for images in a full-color print brochure, and use RGB color mode for images in web or e-mail to reduce file size while maintaining color integrity.",
           "type": "integer",
-          "enum": [0, 1, 2, 3, 4, 7, 8, 9],
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            7,
+            8,
+            9
+          ],
           "meta:enum": {
             "0": "Bitmap",
             "1": "Gray scale",
@@ -121,8 +130,7 @@
           "meta:usereditable": false,
           "type": "string",
           "title": "ICC Profile",
-          "description":
-            "The [ICC color profile](http://www.color.org/iccprofile.xalter), such as AppleRGB, AdobeRGB1998.",
+          "description": "The [ICC color profile](http://www.color.org/iccprofile.xalter), such as AppleRGB, AdobeRGB1998.",
           "meta:enum": [
             "ColorMatchRGB",
             "AppleRGB",
@@ -149,8 +157,7 @@
       "$ref": "http://ns.adobe.com/adobecloud/core/1.0/asset#/definitions/asset"
     },
     {
-      "$ref":
-        "https://ns.adobe.com/xdm/assets/rectangular#/definitions/rectangular"
+      "$ref": "https://ns.adobe.com/xdm/assets/rectangular#/definitions/rectangular"
     },
     {
       "$ref": "#/definitions/image"
@@ -167,5 +174,5 @@
     "xdm:path",
     "repo:etag"
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

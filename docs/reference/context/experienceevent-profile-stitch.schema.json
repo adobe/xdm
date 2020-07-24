@@ -37,7 +37,7 @@
             "$ref": "#/definitions/experienceevent-profile-stitch"
         }
     ],
-    "meta:status": "stabilizing",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:profileStitch": [

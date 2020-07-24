@@ -42,7 +42,7 @@
             "$ref": "https://ns.adobe.com/xdm/common/address"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "@id": "https://data.adobe.io/entities/address/123",

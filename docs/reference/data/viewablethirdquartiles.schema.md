@@ -9,7 +9,7 @@ The advertising/viewability metric `viewable-third-quartiles` describes whether 
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/viewablethirdquartiles.schema.json](data/viewablethirdquartiles.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [data/viewablethirdquartiles.schema.json](data/viewablethirdquartiles.schema.json) |
 ## Schema Hierarchy
 
 * Viewable-third-quartiles `https://ns.adobe.com/xdm/data/viewablethirdquartiles`

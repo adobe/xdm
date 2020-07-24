@@ -9,31 +9,26 @@
   "$id": "https://ns.adobe.com/xdm/assets/aggregated-asset",
   "title": "Aggregated Asset",
   "type": "object",
-  "description":
-    "This schema aggregates all asset sub-schemas that are supported by XDM.",
+  "description": "This schema aggregates all asset sub-schemas that are supported by XDM.",
   "additionalProperties": true,
   "allOf": [
     {
       "$ref": "http://ns.adobe.com/adobecloud/core/1.0/asset#/definitions/asset"
     },
     {
-      "$ref":
-        "http://ns.adobe.com/adobecloud/core/1.0#/definitions/common-properties"
+      "$ref": "http://ns.adobe.com/adobecloud/core/1.0#/definitions/common-properties"
     },
     {
-      "$ref":
-        "http://ns.adobe.com/adobecloud/core/1.0#/definitions/date-properties"
+      "$ref": "http://ns.adobe.com/adobecloud/core/1.0#/definitions/date-properties"
     },
     {
       "$ref": "https://ns.adobe.com/xdm/external/hal/resource#/definitions/hal"
     },
     {
-      "$ref":
-        "https://ns.adobe.com/xdm/assets/copyright-owner#/definitions/copyright"
+      "$ref": "https://ns.adobe.com/xdm/assets/copyright-owner#/definitions/copyright"
     },
     {
-      "$ref":
-        "https://ns.adobe.com/xdm/assets/rectangular#/definitions/rectangular"
+      "$ref": "https://ns.adobe.com/xdm/assets/rectangular#/definitions/rectangular"
     },
     {
       "$ref": "https://ns.adobe.com/xdm/assets/image#/definitions/image"
@@ -42,5 +37,5 @@
       "$ref": "https://ns.adobe.com/xdm/assets/video#/definitions/video"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

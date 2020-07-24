@@ -54,7 +54,7 @@
             "$ref": "#/definitions/consentstring"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:consentStandard": "IAB TCF",

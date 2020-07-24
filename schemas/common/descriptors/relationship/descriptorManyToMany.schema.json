@@ -18,7 +18,7 @@
   "description": "Describes many to many relationship descriptor.",
   "definitions": {
     "descriptorManyToMany": {
-      "properties":{
+      "properties": {
         "@type": {
           "type": "string",
           "const": "xdm:descriptorManyToMany"
@@ -37,5 +37,5 @@
       "$ref": "#/definitions/descriptorManyToMany"
     }
   ],
-  "meta:status": "stabilizing"
+  "meta:status": "stable"
 }

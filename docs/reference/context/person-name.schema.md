@@ -12,7 +12,7 @@ In addition, a number of optional properties are made available that can be used
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/person-name.schema.json](context/person-name.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/person-name.schema.json](context/person-name.schema.json) |
 ## Schema Hierarchy
 
 * Person name `https://ns.adobe.com/xdm/context/person-name`

@@ -16,7 +16,7 @@ This external schema definition allows adding HAL expressions into an existing s
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/hal/hal.schema.json](external/hal/hal.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [external/hal/hal.schema.json](external/hal/hal.schema.json) |
 
 ## HAL Resource Examples
 
@@ -29,6 +29,33 @@ This external schema definition allows adding HAL expressions into an existing s
     "warehouse": {
       "href": "/warehouse/56"
     },
+    "invoice": {
+      "href": "/invoices/873"
+    }
+  },
+  "currency": "USD",
+  "status": "shipped",
+  "total": 10.2
+}
+```
+
+```json
+{
+  "_links": {
+    "self": {
+      "href": "/orders/523"
+    },
+    "warehouses": [
+      {
+        "href": "/warehouse/56"
+      },
+      {
+        "href": "/warehouse/56"
+      },
+      {
+        "href": "/warehouse/56"
+      }
+    ],
     "invoice": {
       "href": "/invoices/873"
     }
@@ -80,33 +107,6 @@ This external schema definition allows adding HAL expressions into an existing s
         "total": 10.2
       }
     ]
-  },
-  "currency": "USD",
-  "status": "shipped",
-  "total": 10.2
-}
-```
-
-```json
-{
-  "_links": {
-    "self": {
-      "href": "/orders/523"
-    },
-    "warehouses": [
-      {
-        "href": "/warehouse/56"
-      },
-      {
-        "href": "/warehouse/56"
-      },
-      {
-        "href": "/warehouse/56"
-      }
-    ],
-    "invoice": {
-      "href": "/invoices/873"
-    }
   },
   "currency": "USD",
   "status": "shipped",

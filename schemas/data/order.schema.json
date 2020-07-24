@@ -16,14 +16,12 @@
         "xdm:purchaseID": {
           "title": "Purchase ID",
           "type": "string",
-          "description":
-            "Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique."
+          "description": "Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique."
         },
         "xdm:purchaseOrderNumber": {
           "title": "Purchase Order Number",
           "type": "string",
-          "description":
-            "Unique identifier assigned by the purchaser for this purchase or contract."
+          "description": "Unique identifier assigned by the purchaser for this purchase or contract."
         },
         "xdm:payments": {
           "title": "Payment List",
@@ -36,15 +34,17 @@
         "xdm:currencyCode": {
           "title": "Currency",
           "type": "string",
-          "examples": ["USD", "EUR"],
+          "examples": [
+            "USD",
+            "EUR"
+          ],
           "pattern": "^[A-Z]{3}$",
           "description": "The ISO 4217 currency code used for the order totals."
         },
         "xdm:priceTotal": {
           "title": "Price Total",
           "type": "number",
-          "description":
-            "The total price of this order after all discounts and taxes have been applied."
+          "description": "The total price of this order after all discounts and taxes have been applied."
         }
       }
     }
@@ -54,5 +54,5 @@
       "$ref": "#/definitions/order"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

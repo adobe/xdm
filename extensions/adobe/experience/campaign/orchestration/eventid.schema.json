@@ -11,10 +11,12 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "ID for a journey triggering event.",
   "definitions": {
-    "event-id":{
+    "event-id": {
       "properties": {
         "https://ns.adobe.com/experience/campaign/orchestration": {
           "title": "Campaign Orchestration for creating user journey.",
@@ -35,5 +37,5 @@
       "$ref": "#/definitions/event-id"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

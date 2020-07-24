@@ -9,7 +9,7 @@ The `unpublished event` represents the activity of making an object, which was p
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | No | Experimental | No | Forbidden | Permitted | [common/event/unpublished.schema.json](common/event/unpublished.schema.json) |
+| Can be instantiated | No | Stable | No | Forbidden | Permitted | [common/event/unpublished.schema.json](common/event/unpublished.schema.json) |
 ## Schema Hierarchy
 
 * Unpublished Event `https://ns.adobe.com/xdm/common/event/unpublished`

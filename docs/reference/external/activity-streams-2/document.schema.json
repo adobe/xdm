@@ -11,7 +11,7 @@
     "$ref": "https://ns.adobe.com/xdm/external/activity-streams-2/object",
     "title": "Document",
     "type": "object",
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "@context": {

@@ -44,7 +44,7 @@
             "$ref": "#/definitions/poi-interaction"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:poiExits": {

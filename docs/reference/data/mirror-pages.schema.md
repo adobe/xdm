@@ -9,7 +9,7 @@ The direct-marketing metric `mirror-page`s describes the number of mirror pages 
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/mirror-pages.schema.json](data/mirror-pages.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [data/mirror-pages.schema.json](data/mirror-pages.schema.json) |
 ## Schema Hierarchy
 
 * Mirror Pages `https://ns.adobe.com/xdm/data/metrics/direct-marketing/mirror-pages`

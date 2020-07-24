@@ -9,7 +9,7 @@ This mixin is used to capture information regarding home address, home phone, mo
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/profile-personal-details.schema.json](context/profile-personal-details.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/profile-personal-details.schema.json](context/profile-personal-details.schema.json) |
 ## Schema Hierarchy
 
 * Profile personal details `https://ns.adobe.com/xdm/context/profile-personal-details`

@@ -143,7 +143,7 @@
             "$ref": "https://ns.adobe.com/xdm/common/auditable"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:edges": [

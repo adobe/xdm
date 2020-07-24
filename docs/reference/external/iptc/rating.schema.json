@@ -36,7 +36,7 @@
             "$ref": "#/definitions/rating"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "iptc4xmpExt:RatingValue": "TV14",

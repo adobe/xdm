@@ -9,7 +9,7 @@ This schema aggregates all asset sub-schemas that are supported by XDM.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | No | Experimental | No | Forbidden | Permitted | [assets/aggregated-asset.schema.json](assets/aggregated-asset.schema.json) |
+| Can be instantiated | No | Stable | No | Forbidden | Permitted | [assets/aggregated-asset.schema.json](assets/aggregated-asset.schema.json) |
 ## Schema Hierarchy
 
 * Aggregated Asset `https://ns.adobe.com/xdm/assets/aggregated-asset`

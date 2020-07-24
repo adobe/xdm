@@ -9,7 +9,7 @@ Native mobile apps are installed through an app store channel.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/mobile-app.schema.json](channels/mobile-app.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [channels/mobile-app.schema.json](channels/mobile-app.schema.json) |
 ## Schema Hierarchy
 
 * Native Mobile Application Channel `https://ns.adobe.com/xdm/channels/mobile-app`

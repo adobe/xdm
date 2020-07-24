@@ -9,16 +9,14 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Payment Item",
   "type": "object",
-  "description":
-    "A payment associated with an order that defines the type of payment, the amount and the associated currency.",
+  "description": "A payment associated with an order that defines the type of payment, the amount and the associated currency.",
   "definitions": {
     "paymentitem": {
       "properties": {
         "xdm:transactionID": {
           "title": "Transaction ID",
           "type": "string",
-          "description":
-            "The unique transaction identifier for this payment item."
+          "description": "The unique transaction identifier for this payment item."
         },
         "xdm:paymentAmount": {
           "title": "Payment Amount",
@@ -28,8 +26,7 @@
         "xdm:paymentType": {
           "title": "Payment Type",
           "type": "string",
-          "description":
-            "The method of payment for this order. Enumerated, custom values allowed.",
+          "description": "The method of payment for this order. Enumerated, custom values allowed.",
           "default": "other",
           "meta:enum": {
             "cash": "Cash",
@@ -46,10 +43,12 @@
         "xdm:currencyCode": {
           "title": "Currency Code",
           "type": "string",
-          "examples": ["USD", "EUR"],
+          "examples": [
+            "USD",
+            "EUR"
+          ],
           "pattern": "^[A-Z]{3}$",
-          "description":
-            "The ISO 4217 currency code used for this payment item."
+          "description": "The ISO 4217 currency code used for this payment item."
         }
       }
     }
@@ -59,5 +58,5 @@
       "$ref": "#/definitions/paymentitem"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

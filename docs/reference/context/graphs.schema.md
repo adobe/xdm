@@ -9,7 +9,7 @@ An XDM Graph. A Graph represents a set of related nodes and their relationships 
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/graphs.schema.json](context/graphs.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/graphs.schema.json](context/graphs.schema.json) |
 ## Schema Hierarchy
 
 * XDM Graphs `https://ns.adobe.com/xdm/context/graphs`

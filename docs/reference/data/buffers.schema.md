@@ -9,7 +9,7 @@ The number of the different buffer states that occurred during a playback sessio
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/buffers.schema.json](data/buffers.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [data/buffers.schema.json](data/buffers.schema.json) |
 ## Schema Hierarchy
 
 * Buffers `https://ns.adobe.com/xdm/data/buffers`

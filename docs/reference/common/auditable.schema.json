@@ -47,7 +47,7 @@
             "$ref": "http://ns.adobe.com/adobecloud/core/1.0#/definitions/date-properties"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "repo:createDate": "2018-01-12T15:52:25+00:00",

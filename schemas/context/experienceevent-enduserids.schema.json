@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "This mixin provides a condensed, normalized encapsulation of end-user identifiers asserted for an ExperienceEvent. These IDs could include phone numbers, email addresses, or other identifiers related to an individual.",
   "definitions": {
     "experienceevent-enduserids": {
@@ -32,5 +34,5 @@
       "$ref": "#/definitions/experienceevent-enduserids"
     }
   ],
-  "meta:status": "stabilizing"
+  "meta:status": "stable"
 }

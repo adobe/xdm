@@ -9,7 +9,7 @@ A Link is an indirect, qualified reference to a resource identified by a URL. Th
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/activity-streams-2/link.schema.json](external/activity-streams-2/link.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [external/activity-streams-2/link.schema.json](external/activity-streams-2/link.schema.json) |
 ## Schema Hierarchy
 
 * Link `https://ns.adobe.com/xdm/external/activity-streams-2/link`

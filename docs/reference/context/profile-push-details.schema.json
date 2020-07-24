@@ -37,7 +37,7 @@
             "$ref": "#/definitions/profile-push-details"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:pushNotificationTokens": [

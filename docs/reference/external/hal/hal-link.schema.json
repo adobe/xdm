@@ -105,7 +105,7 @@
             "$ref": "#/definitions/hal-link-common"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "href": "http://www.adobe.com/"

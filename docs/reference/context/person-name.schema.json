@@ -55,7 +55,7 @@
             "$ref": "#/definitions/personname"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:firstName": "John",

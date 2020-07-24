@@ -9,8 +9,7 @@
   "$id": "https://ns.adobe.com/xdm/assets/rectangular",
   "title": "Simple Rectangular Area",
   "type": "object",
-  "description":
-    "Properties that apply to images, videos, and other rectangular media. It represents a rectangular area on a pixel-based surface, but without any indication of origin.",
+  "description": "Properties that apply to images, videos, and other rectangular media. It represents a rectangular area on a pixel-based surface, but without any indication of origin.",
   "definitions": {
     "rectangular": {
       "properties": {
@@ -24,8 +23,7 @@
         },
         "tiff:imageLength": {
           "title": "Length",
-          "description":
-            "Height in pixels. To maintain continuity with the XMP and TIFF standards, the height of an image or video is specified in the property `imageLength`. The duration of the video (also commonly called length) is specified in the property `extent`.",
+          "description": "Height in pixels. To maintain continuity with the XMP and TIFF standards, the height of an image or video is specified in the property `imageLength`. The duration of the video (also commonly called length) is specified in the property `extent`.",
           "type": "integer",
           "meta:usereditable": false,
           "minimum": 0,
@@ -33,8 +31,7 @@
         },
         "xdm:aspectRatio": {
           "title": "Aspect Ratio",
-          "description":
-            "Describes the proportional relationship between the width and the height. To determine the aspect ratio, divide width by height. Media that have an aspect ratio smaller than one are in landscape format, media that have an aspect ratio greater than one are in portrait format.",
+          "description": "Describes the proportional relationship between the width and the height. To determine the aspect ratio, divide width by height. Media that have an aspect ratio smaller than one are in landscape format, media that have an aspect ratio greater than one are in portrait format.",
           "type": "number",
           "minimum": 0,
           "meta:usereditable": false,
@@ -43,5 +40,5 @@
       }
     }
   },
-  "meta:status": "stabilizing"
+  "meta:status": "stable"
 }

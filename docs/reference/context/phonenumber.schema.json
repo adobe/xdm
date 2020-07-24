@@ -68,7 +68,7 @@
             "$ref": "#/definitions/phonenumber"
         }
     ],
-    "meta:status": "stabilizing",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:primary": true,

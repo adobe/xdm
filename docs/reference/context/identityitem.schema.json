@@ -51,7 +51,7 @@
             "$ref": "#/definitions/identityitem"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:id": "id123",

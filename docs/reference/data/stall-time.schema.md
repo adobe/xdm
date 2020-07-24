@@ -9,7 +9,7 @@ Describes the duration in which the playback was stalled during playback.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/stall-time.schema.json](data/stall-time.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [data/stall-time.schema.json](data/stall-time.schema.json) |
 ## Schema Hierarchy
 
 * Stall Time `https://ns.adobe.com/xdm/data/stall-time`

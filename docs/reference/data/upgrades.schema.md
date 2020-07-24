@@ -9,7 +9,7 @@ Upgrade of an application that has previously been installed. Triggered on first
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/upgrades.schema.json](data/upgrades.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [data/upgrades.schema.json](data/upgrades.schema.json) |
 ## Schema Hierarchy
 
 * Upgrades `https://ns.adobe.com/xdm/data/upgrades`

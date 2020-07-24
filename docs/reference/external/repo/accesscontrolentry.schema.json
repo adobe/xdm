@@ -100,7 +100,7 @@
             "$ref": "#/definitions/ace"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "repo:principal": "authenticated",

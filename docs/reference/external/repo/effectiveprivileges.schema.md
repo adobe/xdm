@@ -9,7 +9,7 @@ Schema for the effective privileges resource.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/repo/effectiveprivileges.schema.json](external/repo/effectiveprivileges.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [external/repo/effectiveprivileges.schema.json](external/repo/effectiveprivileges.schema.json) |
 
 ## Effective Privileges Example
 ```json

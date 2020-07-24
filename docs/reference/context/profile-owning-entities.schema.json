@@ -39,7 +39,7 @@
             "$ref": "#/definitions/profile-owning-entities"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:orgUnit": {

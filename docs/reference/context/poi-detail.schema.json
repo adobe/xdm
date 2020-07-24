@@ -78,7 +78,7 @@
             "$ref": "#/definitions/geo-interaction-detail"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:poiID": "c7f4bf28-c8d9-4b89-a81f-2a8ef9367390",

@@ -9,7 +9,7 @@ Number of actions during a checkout process of a product list, there can be more
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/checkouts.schema.json](data/checkouts.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [data/checkouts.schema.json](data/checkouts.schema.json) |
 ## Schema Hierarchy
 
 * Checkouts `https://ns.adobe.com/xdm/data/metrics/checkouts`

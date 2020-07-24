@@ -40,7 +40,7 @@
             "$ref": "#/definitions/experienceevent-technical-details"
         }
     ],
-    "meta:status": "stabilizing",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:dataSource": {

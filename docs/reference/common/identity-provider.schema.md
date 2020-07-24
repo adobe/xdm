@@ -9,7 +9,7 @@ An identity provider (abbreviated IdP) is a system entity that creates, maintain
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [common/identity-provider.schema.json](common/identity-provider.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [common/identity-provider.schema.json](common/identity-provider.schema.json) |
 
 ## Identity Provider Example
 ```json

@@ -9,7 +9,7 @@ The advertising/viewability metric `viewable-midpoints` describes whether at lea
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/viewablemidpoints.schema.json](data/viewablemidpoints.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [data/viewablemidpoints.schema.json](data/viewablemidpoints.schema.json) |
 ## Schema Hierarchy
 
 * Viewable-midpoints `https://ns.adobe.com/xdm/data/viewablemidpoints`

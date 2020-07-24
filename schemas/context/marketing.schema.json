@@ -10,28 +10,24 @@
   "title": "Marketing",
   "type": "object",
   "meta:extensible": true,
-  "description":
-    "The information related to marketing activities that are active with the touchpoint.",
+  "description": "The information related to marketing activities that are active with the touchpoint.",
   "definitions": {
     "marketing": {
       "properties": {
         "xdm:trackingCode": {
           "title": "Tracking code",
           "type": "string",
-          "description":
-            "Tracking code that can be used to identify the marketing campaign the event is associated with."
-        },          
+          "description": "Tracking code that can be used to identify the marketing campaign the event is associated with."
+        },
         "xdm:campaignName": {
           "title": "Campaign name",
           "type": "string",
-          "description":
-            "Name of the campaign used to identify marketing campaign like '50%_DISCOUNT_USA' or '50%_DISCOUNT_ASIA'."
+          "description": "Name of the campaign used to identify marketing campaign like '50%_DISCOUNT_USA' or '50%_DISCOUNT_ASIA'."
         },
-          "xdm:campaignGroup": {
+        "xdm:campaignGroup": {
           "title": "Campaign group",
           "type": "string",
-          "description":
-            "Name of the campaign group where multiple campaigns are grouped together like '50%_DISCOUNT'."
+          "description": "Name of the campaign group where multiple campaigns are grouped together like '50%_DISCOUNT'."
         }
       }
     }
@@ -44,5 +40,5 @@
       "$ref": "#/definitions/marketing"
     }
   ],
-  "meta:status": "stabilizing"
+  "meta:status": "stable"
 }

@@ -9,7 +9,7 @@ The world wide web and mobile web channel are pages delivered via HTTP to a web 
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/web.schema.json](channels/web.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [channels/web.schema.json](channels/web.schema.json) |
 ## Schema Hierarchy
 
 * Web Channel `https://ns.adobe.com/xdm/channels/web`

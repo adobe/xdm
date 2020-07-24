@@ -9,7 +9,7 @@ The commerce metric `productListAdds` describes the number of times a product ha
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/product-list-adds.schema.json](data/product-list-adds.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [data/product-list-adds.schema.json](data/product-list-adds.schema.json) |
 ## Schema Hierarchy
 
 * Product List Adds `https://ns.adobe.com/xdm/data/metrics/product-list-adds`

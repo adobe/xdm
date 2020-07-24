@@ -5,8 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id":
-    "https://ns.adobe.com/experience/campaign/orchestration/experienceevent",
+  "$id": "https://ns.adobe.com/experience/campaign/orchestration/experienceevent",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Journey experience event",
   "type": "object",
@@ -24,7 +23,9 @@
           "description": "The unique identifier of the journey created by the marketer."
         }
       },
-      "required": ["@id"]
+      "required": [
+        "@id"
+      ]
     },
     "journeyVersion": {
       "title": "Journey version",
@@ -38,7 +39,9 @@
           "description": "The unique identifier denoting the version of journey on which the entity is active."
         }
       },
-      "required": ["@id"]
+      "required": [
+        "@id"
+      ]
     },
     "action": {
       "title": "Action on step transition",
@@ -56,20 +59,13 @@
           "type": "string",
           "description": "The type of action to be performed.",
           "meta:enum": {
-            "scheduled_notification":
-              "This action type allows to specify scheduled notifications and wait for the notifications as incoming events for steps",
-            "http_request":
-              "This action type is for a HTTP call on an external system",
-            "personalized_action":
-              "This action type describes an action with personalization that will be resolved at runtime for each voyager instance",
-            "parameterized_action":
-              "This action type describes an action with parameterization",
-            "journey_notification":
-              "This action type is to send notification for another journey",
-            "campaign_request":
-              "This action performs REST calls to a campaign instance to write data",
-            "messageService_request":
-              "The message service action performs REST calls to campaign instance to send messages with messaging service"
+            "scheduled_notification": "This action type allows to specify scheduled notifications and wait for the notifications as incoming events for steps",
+            "http_request": "This action type is for a HTTP call on an external system",
+            "personalized_action": "This action type describes an action with personalization that will be resolved at runtime for each voyager instance",
+            "parameterized_action": "This action type describes an action with parameterization",
+            "journey_notification": "This action type is to send notification for another journey",
+            "campaign_request": "This action performs REST calls to a campaign instance to write data",
+            "messageService_request": "The message service action performs REST calls to campaign instance to send messages with messaging service"
           }
         }
       }
@@ -86,5 +82,5 @@
       "$ref": "#/definitions/action"
     }
   ],
-  "meta:status": "stabilizing"
+  "meta:status": "stable"
 }

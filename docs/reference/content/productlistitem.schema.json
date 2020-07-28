@@ -71,7 +71,7 @@
             "$ref": "#/definitions/productlistitem"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:SKU": "1002352692",

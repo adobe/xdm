@@ -65,7 +65,7 @@
             "$ref": "#/definitions/search"
         }
     ],
-    "meta:status": "stabilizing",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:searchEngine": "Google",

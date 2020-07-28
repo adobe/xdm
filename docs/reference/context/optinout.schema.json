@@ -408,7 +408,7 @@
             "$ref": "#/definitions/optinout"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "https://ns.adobe.com/xdm/channels/email": "pending",

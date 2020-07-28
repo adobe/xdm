@@ -70,7 +70,7 @@
             "$ref": "#/definitions/emailaddress"
         }
     ],
-    "meta:status": "stabilizing",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:primary": false,

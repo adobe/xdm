@@ -9,7 +9,7 @@ Mail delivered by a postal service channel.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/direct-mail.schema.json](channels/direct-mail.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [channels/direct-mail.schema.json](channels/direct-mail.schema.json) |
 ## Schema Hierarchy
 
 * Direct Mail Channel `https://ns.adobe.com/xdm/channels/direct-mail`

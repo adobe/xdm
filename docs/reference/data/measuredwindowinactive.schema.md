@@ -9,7 +9,7 @@ The advertising/viewability metric `measured-window-inactive` describes whether 
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/measuredwindowinactive.schema.json](data/measuredwindowinactive.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [data/measuredwindowinactive.schema.json](data/measuredwindowinactive.schema.json) |
 ## Schema Hierarchy
 
 * Measured-window-inactive `https://ns.adobe.com/xdm/data/measuredwindowinactive`

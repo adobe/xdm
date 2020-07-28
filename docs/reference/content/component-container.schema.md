@@ -10,7 +10,7 @@ A container for `Page Component`s, this means for content blocks that are within
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [content/component-container.schema.json](content/component-container.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [content/component-container.schema.json](content/component-container.schema.json) |
 
 ## Component container Example
 ```json

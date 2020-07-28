@@ -48,7 +48,7 @@
             "$ref": "#/definitions/eventRelationship"
         }
     ],
-    "meta:status": "stabilizing",
+    "meta:status": "stable",
     "examples": [
         {
             "@type": "xdm:eventRelationship",

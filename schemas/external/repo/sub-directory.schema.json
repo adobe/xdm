@@ -38,5 +38,5 @@
     }
   ],
   "required": ["repo:name", "repo:path", "dc:format"],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

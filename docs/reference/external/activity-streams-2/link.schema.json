@@ -99,7 +99,7 @@
             "$ref": "#/definitions/object-or-link-or-array-of-object-or-link"
         }
     },
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "@context": {

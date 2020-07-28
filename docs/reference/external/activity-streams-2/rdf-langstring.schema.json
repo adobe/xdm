@@ -24,7 +24,7 @@
     "additionalProperties": false,
     "title": "RDF Language Tagged String",
     "description": "The class `rdf:langString` is the class of [language-tagged string values](http://www.w3.org/TR/rdf11-concepts/#dfn-language-tagged-string).",
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "en-US": "A created event follows semantics that are exactly equivalent to the semantics described by the create activity."

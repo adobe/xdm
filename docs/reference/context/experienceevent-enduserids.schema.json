@@ -34,7 +34,7 @@
             "$ref": "#/definitions/experienceevent-enduserids"
         }
     ],
-    "meta:status": "stabilizing",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:endUserIDs": {

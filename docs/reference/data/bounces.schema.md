@@ -9,7 +9,7 @@ The direct-marketing metric bounces describes the number of asynchronous message
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/bounces.schema.json](data/bounces.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [data/bounces.schema.json](data/bounces.schema.json) |
 ## Schema Hierarchy
 
 * Bounces `https://ns.adobe.com/xdm/data/metrics/direct-marketing/bounces`

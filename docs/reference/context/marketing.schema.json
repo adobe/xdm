@@ -40,7 +40,7 @@
             "$ref": "#/definitions/marketing"
         }
     ],
-    "meta:status": "stabilizing",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:trackingCode": "marketingcampaign111"

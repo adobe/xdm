@@ -10,7 +10,7 @@ An _asset_, as defined here, is the principal construct within a _repository_. I
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/repo/asset.schema.json](external/repo/asset.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [external/repo/asset.schema.json](external/repo/asset.schema.json) |
 ## Schema Hierarchy
 
 * Asset `http://ns.adobe.com/adobecloud/core/1.0/asset`

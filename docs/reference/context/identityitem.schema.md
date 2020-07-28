@@ -9,7 +9,7 @@ An end user identity item, to be included in an instance of `context/identitymap
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/identityitem.schema.json](context/identityitem.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/identityitem.schema.json](context/identityitem.schema.json) |
 ## Schema Hierarchy
 
 * Identity item `https://ns.adobe.com/xdm/context/identityitem`

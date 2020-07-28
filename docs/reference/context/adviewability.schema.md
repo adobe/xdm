@@ -48,7 +48,7 @@ Viewability details are always measured fields during runtime.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/adviewability.schema.json](context/adviewability.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/adviewability.schema.json](context/adviewability.schema.json) |
 ## Schema Hierarchy
 
 * MRC Viewability `https://ns.adobe.com/xdm/context/adviewability`

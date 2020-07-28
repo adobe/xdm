@@ -9,7 +9,7 @@ WeChat is a Chinese multi-purpose messaging, social media, and mobile payment ap
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/wechat.schema.json](channels/wechat.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [channels/wechat.schema.json](channels/wechat.schema.json) |
 ## Schema Hierarchy
 
 * WeChat Channel `https://ns.adobe.com/xdm/channels/wechat`

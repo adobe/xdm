@@ -42,26 +42,22 @@
         "xdm:cookiesEnabled": {
           "title": "Allows cookies",
           "type": "boolean",
-          "description":
-            "The current user agent settings allow for the writing of cookies.'"
+          "description": "The current user agent settings allow for the writing of cookies.'"
         },
         "xdm:javaScriptEnabled": {
           "title": "JavaScript enabled",
           "type": "boolean",
-          "description":
-            "If JavaScript was enabled in the device this observation was made from."
+          "description": "If JavaScript was enabled in the device this observation was made from."
         },
         "xdm:javaScriptVersion": {
           "title": "JavaScript version",
           "type": "string",
-          "description":
-            "The version of JavaScript supported during the observation."
+          "description": "The version of JavaScript supported during the observation."
         },
         "xdm:javaEnabled": {
           "title": "Java enabled",
           "type": "boolean",
-          "description":
-            "If Java was enabled in the device this observation was made from."
+          "description": "If Java was enabled in the device this observation was made from."
         },
         "xdm:javaVersion": {
           "title": "Java version",
@@ -71,27 +67,23 @@
         "xdm:quicktimeVersion": {
           "title": "Quicktime version",
           "type": "string",
-          "description":
-            "The version of Apple Quicktime supported during the observation."
+          "description": "The version of Apple Quicktime supported during the observation."
         },
         "xdm:thirdPartyCookiesEnabled": {
           "title": "Allows third-party cookies",
           "type": "boolean",
-          "description":
-            "If third-party cookies were enabled when this observation was made."
+          "description": "If third-party cookies were enabled when this observation was made."
         },
         "xdm:viewportHeight": {
           "title": "Viewport height",
           "type": "integer",
-          "description":
-            "The vertical size in pixels of the window the experience was displayed inside. For a web view event, the browser viewport height.",
+          "description": "The vertical size in pixels of the window the experience was displayed inside. For a web view event, the browser viewport height.",
           "minimum": 0
         },
         "xdm:viewportWidth": {
           "title": "Viewport width",
           "type": "integer",
-          "description":
-            "The horizontal size in pixels of the window the experience was displayed inside. For a web view event, the browser viewport width.",
+          "description": "The horizontal size in pixels of the window the experience was displayed inside. For a web view event, the browser viewport width.",
           "minimum": 0
         }
       }
@@ -105,5 +97,5 @@
       "$ref": "#/definitions/browserdetails"
     }
   ],
-  "meta:status": "stabilizing"
+  "meta:status": "stable"
 }

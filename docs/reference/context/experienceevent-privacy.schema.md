@@ -9,7 +9,7 @@ Experience event privacy schema captures consent information on the hit.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/experienceevent-privacy.schema.json](context/experienceevent-privacy.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/experienceevent-privacy.schema.json](context/experienceevent-privacy.schema.json) |
 ## Schema Hierarchy
 
 * Experience event privacy mixin `https://ns.adobe.com/xdm/context/experienceevent-privacy`

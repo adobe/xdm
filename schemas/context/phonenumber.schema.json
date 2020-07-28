@@ -10,34 +10,29 @@
   "title": "Phone number",
   "type": "object",
   "meta:extensible": true,
-  "description":
-    "Information that enables the contact of a person with a phone. Typically an alphanumeric number, 1-222-333-4444 in North America, but can have a wide range of formats.",
+  "description": "Information that enables the contact of a person with a phone. Typically an alphanumeric number, 1-222-333-4444 in North America, but can have a wide range of formats.",
   "definitions": {
     "phonenumber": {
       "properties": {
         "xdm:primary": {
           "title": "Primary",
           "type": "boolean",
-          "description":
-            "Primary phone number indicator. Unlike address or email address, there can be multiple primary phone numbers; one per communication channel. The communication channel is defined by the type: `textMessaging`, `mobile`, `phone`, `home`, `work`, `unknown`, and `fax`."
+          "description": "Primary phone number indicator. Unlike address or email address, there can be multiple primary phone numbers; one per communication channel. The communication channel is defined by the type: `textMessaging`, `mobile`, `phone`, `home`, `work`, `unknown`, and `fax`."
         },
         "xdm:number": {
           "title": "Number",
           "type": "string",
-          "description":
-            "The phone number. Note the phone number is a string and may include meaningful characters such as brackets '()', hyphens '-', or characters to indicate sub-dialing identifiers like extensions 'x' for example,  1-353(0)18391111 or +613 9403600x1234."
+          "description": "The phone number. Note the phone number is a string and may include meaningful characters such as brackets '()', hyphens '-', or characters to indicate sub-dialing identifiers like extensions 'x' for example,  1-353(0)18391111 or +613 9403600x1234."
         },
         "xdm:extension": {
           "title": "Extension",
           "type": "string",
-          "description":
-            "The internal dialing number used to call from a private exchange, operator, or switchboard."
+          "description": "The internal dialing number used to call from a private exchange, operator, or switchboard."
         },
         "xdm:status": {
           "title": "Status",
           "type": "string",
-          "description":
-            "An indication as to the ability to use the phone number.",
+          "description": "An indication as to the ability to use the phone number.",
           "default": "active",
           "meta:enum": {
             "active": "Active",
@@ -54,8 +49,7 @@
         "xdm:validity": {
           "title": "Validity",
           "type": "string",
-          "description":
-            "A level of technical correctness of the phone number.",
+          "description": "A level of technical correctness of the phone number.",
           "meta:enum": {
             "consistent": "Consistent",
             "inconsistent": "Inconsistent",
@@ -74,5 +68,5 @@
       "$ref": "#/definitions/phonenumber"
     }
   ],
-  "meta:status": "stabilizing"
+  "meta:status": "stable"
 }

@@ -9,7 +9,7 @@ Describes one to one relationship descriptor.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [common/descriptors/relationship/descriptorOneToOne.schema.json](common/descriptors/relationship/descriptorOneToOne.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [common/descriptors/relationship/descriptorOneToOne.schema.json](common/descriptors/relationship/descriptorOneToOne.schema.json) |
 ## Schema Hierarchy
 
 * One to One Relationship Descriptor `https://ns.adobe.com/xdm/common/descriptors/descriptorOneToOne`

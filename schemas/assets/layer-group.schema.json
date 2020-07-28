@@ -17,13 +17,11 @@
         "xdm:name": {
           "type": "string",
           "title": "Name",
-          "description":
-            "Name of the layer group. This will be visible to the user and users can specify names that can help them to identify different layer groups."
+          "description": "Name of the layer group. This will be visible to the user and users can specify names that can help them to identify different layer groups."
         },
         "xdm:layers": {
           "name": "Layers",
-          "description":
-            "The layers or layer groups contained in this layer group.",
+          "description": "The layers or layer groups contained in this layer group.",
           "type": "array",
           "items": {
             "anyOf": [
@@ -31,8 +29,7 @@
                 "$ref": "#/definitions/layer-group"
               },
               {
-                "$ref":
-                  "https://ns.adobe.com/xdm/assets/layer#/definitions/layer"
+                "$ref": "https://ns.adobe.com/xdm/assets/layer#/definitions/layer"
               }
             ]
           }
@@ -45,5 +42,5 @@
       "$ref": "#/definitions/layer-group"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

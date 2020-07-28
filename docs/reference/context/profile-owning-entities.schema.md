@@ -9,7 +9,7 @@ This mixin is used to capture information regarding a particular organization or
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/profile-owning-entities.schema.json](context/profile-owning-entities.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/profile-owning-entities.schema.json](context/profile-owning-entities.schema.json) |
 ## Schema Hierarchy
 
 * Profile owning entity details `https://ns.adobe.com/xdm/context/profile-owning-entities`

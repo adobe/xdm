@@ -110,7 +110,7 @@
             "$ref": "#/definitions/searchdescriptor"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "@id": "https://ns.adobe.com/xdm/common/descriptors/searchdescriptor",

@@ -36,7 +36,7 @@
             "$ref": "#/definitions/experienceevent-privacy"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:consentStrings": [

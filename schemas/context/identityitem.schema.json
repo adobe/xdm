@@ -10,8 +10,7 @@
   "title": "Identity item",
   "type": "object",
   "meta:extensible": true,
-  "description":
-    "An end user identity item, to be included in an instance of `context/identitymap`.",
+  "description": "An end user identity item, to be included in an instance of `context/identitymap`.",
   "definitions": {
     "identityitem": {
       "properties": {
@@ -21,11 +20,14 @@
           "description": "Identity of the consumer in the related namespace."
         },
         "xdm:authenticatedState": {
-          "description":
-            "The state this identity is authenticated as for this observed ExperienceEvent.",
+          "description": "The state this identity is authenticated as for this observed ExperienceEvent.",
           "type": "string",
           "default": "ambiguous",
-          "enum": ["ambiguous", "authenticated", "loggedOut"],
+          "enum": [
+            "ambiguous",
+            "authenticated",
+            "loggedOut"
+          ],
           "meta:enum": {
             "ambiguous": "Ambiguous",
             "authenticated": "User identified by a login or similar action that was valid at the time of the event observation.",
@@ -36,8 +38,7 @@
           "title": "Primary",
           "type": "boolean",
           "default": false,
-          "description":
-            "Indicates this identity is the preferred identity. Is used as a hint to help systems better organize how identities are queried."
+          "description": "Indicates this identity is the preferred identity. Is used as a hint to help systems better organize how identities are queried."
         }
       }
     }
@@ -50,5 +51,5 @@
       "$ref": "#/definitions/identityitem"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

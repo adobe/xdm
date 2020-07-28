@@ -32,7 +32,7 @@
             "$ref": "#/definitions/series"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "iptc4xmpExt:Name": "nba_highlights",

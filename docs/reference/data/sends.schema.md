@@ -9,7 +9,7 @@ The direct-marketing metric `sends` describes the number of asynchronous message
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/sends.schema.json](data/sends.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [data/sends.schema.json](data/sends.schema.json) |
 ## Schema Hierarchy
 
 * Sends `https://ns.adobe.com/xdm/data/metrics/direct-marketing/sends`

@@ -10,8 +10,7 @@
   "title": "Application Channel",
   "type": "object",
   "meta:abstract": true,
-  "description":
-    "An application channel identifies apps that accepts messages or transmit events to the channel.",
+  "description": "An application channel identifies apps that accepts messages or transmit events to the channel.",
   "definitions": {
     "application": {
       "properties": {
@@ -38,5 +37,5 @@
       "$ref": "#/definitions/application"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

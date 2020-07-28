@@ -10,9 +10,8 @@
   "title": "Implementation details",
   "type": "object",
   "meta:extensible": true,
-  "meta:status": "stabilizing",
-  "description":
-    "Details about the SDK, library, or service used in an application or web page implementation of a service.",
+  "meta:status": "stable",
+  "description": "Details about the SDK, library, or service used in an application or web page implementation of a service.",
   "definitions": {
     "implementationdetails": {
       "properties": {
@@ -39,7 +38,12 @@
           "title": "Environment",
           "type": "string",
           "description": "The environment of the implementation",
-          "enum": ["browser", "app", "server", "iot"],
+          "enum": [
+            "browser",
+            "app",
+            "server",
+            "iot"
+          ],
           "meta:enum": {
             "browser": "Web Browser",
             "app": "Application",

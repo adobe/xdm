@@ -9,7 +9,7 @@ Allows to modify the "title" and "description" values of the core library schema
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [common/descriptors/display/alternateDisplayInfo.schema.json](common/descriptors/display/alternateDisplayInfo.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [common/descriptors/display/alternateDisplayInfo.schema.json](common/descriptors/display/alternateDisplayInfo.schema.json) |
 ## Schema Hierarchy
 
 * Friendly Name Descriptor `https://ns.adobe.com/xdm/common/descriptors/alternateDisplayInfo`
@@ -17,6 +17,21 @@ Allows to modify the "title" and "description" values of the core library schema
 
 
 ## Friendly Name Descriptor Examples
+
+```json
+{
+  "@type": "xdm:alternateDisplayInfo",
+  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/environment",
+  "xdm:sourceVersion": 1,
+  "xdm:sourceProperty": "/browserDetails",
+  "xdm:title": {
+    "en_us": "friendly title for browser details"
+  },
+  "xdm:description": {
+    "en_us": "friendly description for browser details"
+  }
+}
+```
 
 ```json
 {
@@ -40,21 +55,6 @@ Allows to modify the "title" and "description" values of the core library schema
   "xdm:description": {
     "en_us": "friendly description for browser details",
     "fr_ca": "description conviviale pour les détails du navigateur"
-  }
-}
-```
-
-```json
-{
-  "@type": "xdm:alternateDisplayInfo",
-  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/environment",
-  "xdm:sourceVersion": 1,
-  "xdm:sourceProperty": "/browserDetails",
-  "xdm:title": {
-    "en_us": "friendly title for browser details"
-  },
-  "xdm:description": {
-    "en_us": "friendly description for browser details"
   }
 }
 ```

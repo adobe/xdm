@@ -50,7 +50,7 @@
             "$ref": "#/definitions/profile-segmentation"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:segmentMembership": {

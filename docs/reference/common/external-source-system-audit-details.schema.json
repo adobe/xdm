@@ -13,8 +13,6 @@
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/opportunity",
         "https://ns.adobe.com/xdm/context/account",
-        "https://ns.adobe.com/xdm/context/profile-lead-crm",
-        "https://ns.adobe.com/xdm/context/profile-contact-crm",
         "https://ns.adobe.com/xdm/context/opportunity-contactrole",
         "https://ns.adobe.com/xdm/context/activitylog",
         "https://ns.adobe.com/xdm/context/profile"

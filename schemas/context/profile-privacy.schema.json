@@ -20,8 +20,8 @@
       "properties":{ 
         "xdm:optOutConsentLevel":{ 
           "type":"object",
-          "title":"Privacy/Marketing Preference Values",
-          "description":"Privacy/Personalization/Marketing Preferences.",
+          "title":"Global Privacy/Marketing Preference Values",
+          "description":"Global (User/Profile-level) Privacy/Personalization/Marketing Preferences.",
           "ref": "https://ns.adobe.com/xdm/context/consentpreferences"
         },
         "xdm:identityPrivacyInfo":{

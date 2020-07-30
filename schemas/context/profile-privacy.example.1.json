@@ -1,48 +1,39 @@
 {
-	"xdm:optOutConsentLevel": {
-		"xdm:privacyOptOuts": [
-			{
-				"xdm:optOutType": "general_opt_out",
-				"xdm:optOutValue": "in",
-				"xdm:timestamp": "2019-01-01T15:52:25+00:00",
-				"xdm:basisOfProcessing": "legitimate_interest"
-			},
-			{
-				"xdm:optOutType": "device_linking",
-				"xdm:optOutValue": "not_provided",
-				"xdm:basisOfProcessing": "vital_interest"
-			},
-			{
-				"xdm:optOutType": "anonymous_analysis",
-				"xdm:optOutValue": "out"
-			}
-		],
-		"xdm:personalizationPreferences": {
-			"xdm:default": {
-				"xdm:choice": "unknown",
-				"xdm:timestamp": "2019-01-01T15:52:25+00:00",
-				"xdm:basisOfProcessing": "consent"
-			},
-			"xdm:details": [
-				{
-					"xdm:type": "email",
-					"xdm:choice": "in"
-				},
-				{
-					"xdm:type": "push_notifications",
-					"xdm:choice": "out",
-					"xdm:basisOfProcessing": "legitimate_interest"
-				}
-			]
-		},
-		"xdm:marketingPreferences": {
-			"xdm:default": {
-				"xdm:choice": "unknown"
-			},
-			"xdm:details": [
-				{
-					"xdm:type": "email",
-					"xdm:choice": "in",
+  "xdm:optOutConsentLevel": {
+    "xdm:privacyOptOuts": [
+      {
+        "xdm:optOutType": "general_opt_out",
+        "xdm:optOutValue": "in",
+        "xdm:timestamp": "2019-01-01T15:52:25+00:00",
+        "xdm:basisOfProcessing": "legitimate_interest"
+      }
+    ],
+    "xdm:personalizationPreferences": {
+      "xdm:default": {
+        "xdm:choice": "unknown",
+        "xdm:timestamp": "2019-01-01T15:52:25+00:00",
+        "xdm:basisOfProcessing": "consent"
+      },
+      "xdm:details": [
+        {
+          "xdm:type": "email",
+          "xdm:choice": "in"
+        },
+        {
+          "xdm:type": "push_notifications",
+          "xdm:choice": "out",
+          "xdm:basisOfProcessing": "legitimate_interest"
+        }
+      ]
+    },
+    "xdm:marketingPreferences": {
+      "xdm:default": {
+        "xdm:choice": "unknown"
+      },
+      "xdm:details": [
+        {
+          "xdm:type": "email",
+          "xdm:choice": "in",
                     "xdm:subscriptions": {
                        "weekly_mailer": {
                           "xdm:choice": "out",
@@ -52,39 +43,66 @@
                           "xdm:choice": "pending"
                        }
                     }
-				},
-				{
-					"xdm:type": "iot",
-					"xdm:choice": "out",
-					"xdm:timestamp": "2019-01-01T15:52:25+00:00",
-					"xdm:basisOfProcessing": "legitimate_interest",
+        },
+        {
+          "xdm:type": "iot",
+          "xdm:choice": "out",
+          "xdm:timestamp": "2019-01-01T15:52:25+00:00",
+          "xdm:basisOfProcessing": "legitimate_interest",
                     "xdm:subscriptions": {
                        "out_of_milk": {
                          "xdm:choice": "in"
                        }
                     }
-				}
-			]
-		},
-		"xdm:version": "1.0.0",
-		"xdm:timestamp": "2019-01-01T15:52:25+00:00",
-		"xdm:userLocale": "UK",
-		"xdm:localeSource": "ip"
-	},
-	"xdm:identityPrivacyInfo": {
-		"ECID": {
-			"11112222233333444": {
-				"xdm:identityIABConsent": {
-					"xdm:consentTimestamp": "2020-04-11T05:05:05Z",
-					"xdm:consentString": {
-						"xdm:consentStandard": "IAB TCF",
-						"xdm:consentStandardVersion": "2.0",
-						"xdm:consentStringValue": "BObdrPUOevsguAfDqFENCNAAAAAmeAAA.PVAfDObdrA.DqFENCAmeAENCDA",
-						"xdm:gdprApplies": true,
-						"xdm:containsPersonalData": false
-					}
-				}
-			}
-		}
-	}
+        }
+      ]
+    },
+    "xdm:version": "1.0.0",
+    "xdm:timestamp": "2019-01-01T15:52:25+00:00",
+    "xdm:userLocale": "UK",
+    "xdm:localeSource": "ip"
+  },
+  "xdm:identityPrivacyInfo": {
+    "ECID": {
+      "11112222233333444": {
+        "xdm:consentsAndPreferences": {
+          "xdm:privacyOptOuts": [
+            {
+              "xdm:optOutType": "general_opt_out",
+              "xdm:optOutValue": "in",
+              "xdm:timestamp": "2019-01-01T15:52:25+00:00",
+              "xdm:basisOfProcessing": "legitimate_interest"
+            },
+            {
+              "xdm:optOutType": "device_linking",
+              "xdm:optOutValue": "not_provided",
+              "xdm:basisOfProcessing": "vital_interest"
+            },
+            {
+              "xdm:optOutType": "anonymous_analysis",
+              "xdm:optOutValue": "out"
+            }
+          ],
+          "xdm:personalizationPreferences": {
+            "xdm:details": [
+              {
+                "xdm:type": "content",
+                "xdm:choice": "in"
+              }
+            ]
+          }
+        },
+        "xdm:identityIABConsent": {
+          "xdm:consentTimestamp": "2020-04-11T05:05:05Z",
+          "xdm:consentString": {
+            "xdm:consentStandard": "IAB TCF",
+            "xdm:consentStandardVersion": "2.0",
+            "xdm:consentStringValue": "BObdrPUOevsguAfDqFENCNAAAAAmeAAA.PVAfDObdrA.DqFENCAmeAENCDA",
+            "xdm:gdprApplies": true,
+            "xdm:containsPersonalData": false
+          }
+        }
+      }
+    }
+  }
 }

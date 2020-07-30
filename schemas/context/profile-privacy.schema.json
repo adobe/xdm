@@ -37,6 +37,10 @@
               "type": "object",
               "title": "User Identity",
               "properties": {
+                "xdm:consentsAndPreferences":{
+                  "title": "Device/Identity-specific Consents, Personalization and Marketing Preferences",
+                  "ref": "https://ns.adobe.com/xdm/context/consentpreferences"
+                },
                 "xdm:identityIABConsent": {
                   "type": "object",
                   "title": "Identity level consent information",

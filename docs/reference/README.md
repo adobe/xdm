@@ -4,21 +4,6 @@
 
 
 
-## /assets/
-
-* [Aggregated Asset](./assets/aggregated-asset.schema.md) – `https://ns.adobe.com/xdm/assets/aggregated-asset` (Stable)
-* [Artboard](./assets/artboard.schema.md) – `https://ns.adobe.com/xdm/assets/artboard` (Stable)
-* [Copyright Owner](./assets/copyright-owner.schema.md) – `https://ns.adobe.com/xdm/assets/copyright-owner` (Stable)
-* [Font](./assets/font.schema.md) – `https://ns.adobe.com/xdm/assets/font` (Stable)
-* [Image](./assets/image.schema.md) – `https://ns.adobe.com/xdm/assets/image` (Stable)
-* [Language Alternative](./assets/language-alternative.schema.md) – `https://ns.adobe.com/xdm/assets/language-alternative` (Stable)
-* [Layer](./assets/layer.schema.md) – `https://ns.adobe.com/xdm/assets/layer` (Stable)
-* [Layer Group](./assets/layer-group.schema.md) – `https://ns.adobe.com/xdm/assets/layer-group` (Stable)
-* [Rectangular Object (measured in variable unit)](./assets/variable-unit-rectangular.schema.md) – `https://ns.adobe.com/xdm/assets/variable-unit-rectangular` (Stable)
-* [Resource Event](./assets/resource-event.schema.md) – `https://ns.adobe.com/xdm/assets/resource-event` (Stable)
-* [Simple Rectangular Area](./assets/rectangular.schema.md) – `https://ns.adobe.com/xdm/assets/rectangular` (Stable)
-* [Video](./assets/video.schema.md) – `https://ns.adobe.com/xdm/assets/video` (Stable)
-
 ## /channels/
 
 * [Amazon Device Messaging (ADM) channel](./channels/adm.schema.md) – `https://ns.adobe.com/xdm/channels/adm` (Stable)
@@ -41,6 +26,21 @@
 * [WeChat Channel](./channels/wechat.schema.md) – `https://ns.adobe.com/xdm/channels/wechat` (Stable)
 * [Web Channel](./channels/web.schema.md) – `https://ns.adobe.com/xdm/channels/web` (Stable)
 * [Windows Push Notification Service (WNS) Channel](./channels/wns.schema.md) – `https://ns.adobe.com/xdm/channels/wns` (Stable)
+
+## /assets/
+
+* [Aggregated Asset](./assets/aggregated-asset.schema.md) – `https://ns.adobe.com/xdm/assets/aggregated-asset` (Stable)
+* [Artboard](./assets/artboard.schema.md) – `https://ns.adobe.com/xdm/assets/artboard` (Stable)
+* [Copyright Owner](./assets/copyright-owner.schema.md) – `https://ns.adobe.com/xdm/assets/copyright-owner` (Stable)
+* [Font](./assets/font.schema.md) – `https://ns.adobe.com/xdm/assets/font` (Stable)
+* [Image](./assets/image.schema.md) – `https://ns.adobe.com/xdm/assets/image` (Stable)
+* [Language Alternative](./assets/language-alternative.schema.md) – `https://ns.adobe.com/xdm/assets/language-alternative` (Stable)
+* [Layer](./assets/layer.schema.md) – `https://ns.adobe.com/xdm/assets/layer` (Stable)
+* [Layer Group](./assets/layer-group.schema.md) – `https://ns.adobe.com/xdm/assets/layer-group` (Stable)
+* [Rectangular Object (measured in variable unit)](./assets/variable-unit-rectangular.schema.md) – `https://ns.adobe.com/xdm/assets/variable-unit-rectangular` (Stable)
+* [Resource Event](./assets/resource-event.schema.md) – `https://ns.adobe.com/xdm/assets/resource-event` (Stable)
+* [Simple Rectangular Area](./assets/rectangular.schema.md) – `https://ns.adobe.com/xdm/assets/rectangular` (Stable)
+* [Video](./assets/video.schema.md) – `https://ns.adobe.com/xdm/assets/video` (Stable)
 
 ## /content/
 
@@ -254,11 +254,6 @@
 
 * [Audio](./external/id3/audio.schema.md) – `https://id3.org/id3v2.4/audio` (Stable)
 
-## /external/hal/
-
-* [HAL Link](./external/hal/hal-link.schema.md) – `https://ns.adobe.com/xdm/external/hal/link` (Stable)
-* [HAL Resource](./external/hal/hal.schema.md) – `https://ns.adobe.com/xdm/external/hal/resource` (Stable)
-
 ## /content/repository-policies/
 
 * [At-Rest Encryption](./content/repository-policies/encryption.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/encryption` (Stable)
@@ -271,15 +266,26 @@
 * [Geo Coordinates](./external/schema/geocoordinates.schema.md) – `http://schema.org/GeoCoordinates` (Stable)
 * [Geo Shape](./external/schema/geoshape.schema.md) – `http://schema.org/GeoShape` (Stable)
 
-## /common/event/
+## /external/repo/
 
-* [Created Event](./common/event/created.schema.md) – `https://ns.adobe.com/xdm/common/event/created` (Stable)
-* [Deleted Event](./common/event/deleted.schema.md) – `https://ns.adobe.com/xdm/common/event/deleted` (Stable)
-* [Emitted Event](./common/event/emitted.schema.md) – `https://ns.adobe.com/xdm/common/event/emitted` (Stable)
-* [Published Event](./common/event/published.schema.md) – `https://ns.adobe.com/xdm/common/event/published` (Stable)
-* [Rejected Event](./common/event/rejected.schema.md) – `https://ns.adobe.com/xdm/common/event/rejected` (Stable)
-* [Unpublished Event](./common/event/unpublished.schema.md) – `https://ns.adobe.com/xdm/common/event/unpublished` (Stable)
-* [Updated Event](./common/event/updated.schema.md) – `https://ns.adobe.com/xdm/common/event/updated` (Stable)
+* [Access Control Entry](./external/repo/accesscontrolentry.schema.md) – `https://ns.adobe.com/xdm/external/repo/accesscontrolentry` (Stable)
+* [Access Control Policy](./external/repo/accesscontrolpolicy.schema.md) – `https://ns.adobe.com/xdm/external/repo/accesscontrolpolicy` (Stable)
+* [Asset](./external/repo/asset.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/asset` (Stable)
+* [Common Properties](./external/repo/common.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0` (Stable)
+* [Directory](./external/repo/directory.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/directory` (Stable)
+* [Effective Privileges](./external/repo/effectiveprivileges.schema.md) – `https://ns.adobe.com/xdm/external/repo/effectiveprivileges` (Stable)
+* [Sub-Directory](./external/repo/sub-directory.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/sub-directory` (Stable)
+
+## /common/descriptors/
+
+* [Item Selector](./common/descriptors/itemselector.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/itemselector` (Stable)
+* [Relationship Descriptor](./common/descriptors/relationshipdescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/relationshipdescriptor` (Stable)
+* [Schema Descriptor](./common/descriptors/schemadescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/schemadescriptor` (Stable)
+
+## /external/hal/
+
+* [HAL Link](./external/hal/hal-link.schema.md) – `https://ns.adobe.com/xdm/external/hal/link` (Stable)
+* [HAL Resource](./external/hal/hal.schema.md) – `https://ns.adobe.com/xdm/external/hal/resource` (Stable)
 
 ## /external/activity-streams-2/
 
@@ -303,25 +309,19 @@
 * [Season](./external/iptc/season.schema.md) – `http://www.iptc.org/season` (Stable)
 * [Series](./external/iptc/series.schema.md) – `http://www.iptc.org/series` (Stable)
 
-## /external/repo/
+## /common/event/
 
-* [Access Control Entry](./external/repo/accesscontrolentry.schema.md) – `https://ns.adobe.com/xdm/external/repo/accesscontrolentry` (Stable)
-* [Access Control Policy](./external/repo/accesscontrolpolicy.schema.md) – `https://ns.adobe.com/xdm/external/repo/accesscontrolpolicy` (Stable)
-* [Asset](./external/repo/asset.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/asset` (Stable)
-* [Common Properties](./external/repo/common.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0` (Stable)
-* [Directory](./external/repo/directory.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/directory` (Stable)
-* [Effective Privileges](./external/repo/effectiveprivileges.schema.md) – `https://ns.adobe.com/xdm/external/repo/effectiveprivileges` (Stable)
-* [Sub-Directory](./external/repo/sub-directory.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/sub-directory` (Stable)
+* [Created Event](./common/event/created.schema.md) – `https://ns.adobe.com/xdm/common/event/created` (Stable)
+* [Deleted Event](./common/event/deleted.schema.md) – `https://ns.adobe.com/xdm/common/event/deleted` (Stable)
+* [Emitted Event](./common/event/emitted.schema.md) – `https://ns.adobe.com/xdm/common/event/emitted` (Stable)
+* [Published Event](./common/event/published.schema.md) – `https://ns.adobe.com/xdm/common/event/published` (Stable)
+* [Rejected Event](./common/event/rejected.schema.md) – `https://ns.adobe.com/xdm/common/event/rejected` (Stable)
+* [Unpublished Event](./common/event/unpublished.schema.md) – `https://ns.adobe.com/xdm/common/event/unpublished` (Stable)
+* [Updated Event](./common/event/updated.schema.md) – `https://ns.adobe.com/xdm/common/event/updated` (Stable)
 
 ## /common/notifications/
 
 * [Customer Data Ingestion Notifications Event](./common/notifications/ingestion.schema.md) – `https://ns.adobe.com/xdm/common/notifications/ingestion` (Stable)
-
-## /common/descriptors/
-
-* [Item Selector](./common/descriptors/itemselector.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/itemselector` (Stable)
-* [Relationship Descriptor](./common/descriptors/relationshipdescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/relationshipdescriptor` (Stable)
-* [Schema Descriptor](./common/descriptors/schemadescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/schemadescriptor` (Stable)
 
 ## /common/descriptors/display/
 

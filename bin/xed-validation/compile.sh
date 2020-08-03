@@ -3,6 +3,7 @@
 echo $SHELL
 xdms=$(find xed -name "*.schema.json" -print)
 schema="schema.json"
+schemaChanges="schemaChanges.log"
 references=$(find xed -name "*.schema.json")
 append="-r $(echo $references | sed -e "s/ / -r /g")"
 failures=0
@@ -17,7 +18,10 @@ done
 
 for xdm in $xdms; do #compile xdm schemas
   #echo "Compiling---> $xdm"
+  #only compile the delta
+  if grep -q $xdm $schemaChanges; then
   ../../node_modules/.bin/ajv compile -s $xdm -m $schema $append $validFormats
+  fi
 
   if [ $? -ne 0 ]; then #log the invalid schemas to array
     array[$failures]=$xdm

@@ -19,42 +19,40 @@
       "properties": {
         "marketo:leadID": {
           "title": "Marketo Lead ID",
-          "description": "Marketo lead id.",
+          "description": "Unique identifier for Marketo lead.",
           "type": "string"
         },
         "marketo:instanceID": {
           "title": "Instance Id",
-          "description": "Source System Id.",
+          "description": "Identifier of the Marketo instance.",
           "type": "string"
         },
         "marketo:contactID": {
           "title": "Marketo Contact Id",
-          "description": "Marketo contact id.",
+          "description": "Unique identifier for Marketo contact.",
           "type": "string"
         },
         "marketo:accountID": {
           "title": "Marketo Account Id",
-          "description": "Marketo account id.",
+          "description": "Unique identifier for Marketo account.",
           "type": "string"
         },
         "marketo:abmProposedNameID": {
-          "title": "Account Based Marketing Proposed Name Id",
+          "title": "ABM Proposed Name Id",
           "description": "Account based marketing proposed name id.",
           "type": "string"
         },
         "marketo:count": {
           "title": "Count",
-          "description": "Count.",
           "type": "number"
         },
         "marketo:totalProposedNameCount": {
           "title": "Total Proposed Name Count",
-          "description": "Total proposed name count.",
           "type": "number"
         },
         "marketo:leadScore": {
           "title": "Lead Score",
-          "description": "Lead score.",
+          "description": "Computed score associated with the lead.",
           "type": "number"
         },
         "marketo:extendedLead": {

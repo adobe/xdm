@@ -17,7 +17,7 @@
       "properties": {
         "xdm:ID": {
           "title": "Contact Record Id",
-          "description": "Contact record id.",
+          "description": "Unique record id of the contact in the source system.",
           "type": "string"
         },
         "xdm:accountID": {

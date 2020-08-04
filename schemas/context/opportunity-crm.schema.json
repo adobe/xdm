@@ -24,7 +24,7 @@
         },
         "xdm:sourceType": {
           "title": "Opportunity Source Type",
-          "description": "Opportunity source type",
+          "description": "Opportunity source type such as Existing Business or New Business",
           "type": "string"
         },
         "xdm:opportunityDescription": {
@@ -39,7 +39,7 @@
         },
         "xdm:leadSource": {
           "title": "Lead Source",
-          "description": "Source of the opportunity.",
+          "description": "Source of the opportunity such as Advertisement, Partner, or Web.",
           "type": "string"
         },
         "xdm:stage": {
@@ -49,7 +49,7 @@
         },
         "xdm:amount": {
           "title": "Opportunity Amount",
-          "description": "Opportunity Amount.",
+          "description": "Estimated total sale amount.",
           "type": "number",
           "minimum": 0,
           "default":0
@@ -62,7 +62,7 @@
         },
         "xdm:quantity": {
           "title": "Opportunity Quantity",
-          "description": "Opportunity Quantity.",
+          "description": "Total of all quantity field values for all products in the Products related list for this opportunity.",
           "type": "integer",
           "minimum": 0,
           "default":0

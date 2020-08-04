@@ -19,12 +19,12 @@
       "properties": {
         "marketo:contactID": {
           "title": "Marketo Contact/Lead Id",
-          "description": "Marketo contact/lead id.",
+          "description": "Unique identifier for Marketo contact/lead.",
           "type": "string"
         },
         "marketo:instanceID": {
           "title": "Instance Id",
-          "description": "Source System Id.",
+          "description": "Identifier for the Source Marketo Instance.",
           "type": "string"
         },
         "marketo:extendedContact": {

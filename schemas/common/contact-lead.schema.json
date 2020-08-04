@@ -20,12 +20,12 @@
         },
           "xdm:sourceType": {
           "title": "Source Type",
-          "description": "Source type.",
+          "description": "Type of Source system. It could be CRM or a in house system.",
           "type": "string"
         },		
         "xdm:description": {
           "title": "Contact/Lead Description",
-          "description": "Contact/Lead description.",
+          "description": "Detailed description of Contact/Lead.",
           "type": "string"
         },
         "xdm:deleted": {
@@ -35,7 +35,7 @@
         },
         "xdm:ownerID": {
           "title": "Owner ID",
-          "description": "Owner id.",
+          "description": "The unique identofier for the Owner of the contact/lead record.",
           "type": "string"
         },
         "xdm:emailBounced": {

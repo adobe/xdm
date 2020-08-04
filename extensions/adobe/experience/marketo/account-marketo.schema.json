@@ -19,58 +19,53 @@
       "properties": {
         "marketo:accountID": {
           "title": "Marketo Account Identifier",
-          "description": "Marketo account identifier.",
+          "description": "Unique identifier for an account in the Marketo instance.",
           "type": "string"
         },
         "marketo:instanceID": {
           "title": "Instance Identifier",
-          "description": "Instance identifier.",
+          "description": "Instance identifier of Marketo where the record originated from.",
           "type": "string"
         },
         "marketo:org": {
+          "type": "object",
           "properties": {
             "marketo:notes": {
               "title": "Account Notes",
-              "description": "Account notes.",
               "type": "string"
             },
             "marketo:accountType": {
               "title": "Account Type",
-              "description": "Account type.",
+              "description": "Type of Account.",
               "type": "string"
             },
             "marketo:primaryInterestID": {
               "title": "Primary Interest Id",
-              "description": "Primary interest id.",
               "type": "string"
             },
             "marketo:private": {
               "title": "Private Flag",
-              "description": "Private flag.",
               "type": "boolean"
             },
             "marketo:additionalFields": {
               "title": "Additional Fields",
-              "description": "Additional fields.",
               "type": "string"
             }
           }
         },
         "marketo:namedAccount": {
+          "type": "object",
           "properties": {
             "marketo:opportunityAmount": {
               "title": "Opportunity Amount",
-              "description": "Opportunity amount.",
               "type": "number"
             },
             "marketo:opportunityCount": {
               "title": "Opportunity Count",
-              "description": "Opportunity count.",
-              "type": "number"
+              "type": "integer"
             },
             "marketo:percentiles": {
               "title": "Percentile Measures",
-              "description": "Percentile measures.",
               "type": "array",
               "items": {
                 "type": "number"
@@ -78,7 +73,6 @@
             },
             "marketo:scores": {
               "title": "Score Measures",
-              "description": "Score measures.",
               "type": "array",
               "items": {
                 "type": "number"
@@ -86,17 +80,16 @@
             },
             "marketo:membershipCount": {
               "title": "Membership Count",
-              "description": "Membership count.",
-              "type": "number"
+              "type": "integer"
             },
             "marketo:crmOrgID": {
               "title": "CRM Organization Id",
-              "description": "CRM organization Id.",
+              "description": "Organization Id of the account from the CRM system.",
               "type": "string"
             },
             "marketo:domainName": {
               "title": "Domain Name",
-              "description": "Domain name.",
+              "description": "Organization Domain name.",
               "type": "string"
             },
             "marketo:targeted": {

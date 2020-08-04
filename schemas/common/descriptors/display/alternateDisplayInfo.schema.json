@@ -54,6 +54,18 @@
               ]
             }
           }
+        },
+        "xdm:note": {
+          "title": "Title",
+          "type": "object",
+          "description": "When present, user friendly note to display.",
+          "patternProperties": {
+            "\u002e+_\u002e+": {
+              "type": "string",
+              "meta:xdmType": "string"
+            }
+          },
+          "meta:xdmType": "object"
         }
       },
       "anyOf": [

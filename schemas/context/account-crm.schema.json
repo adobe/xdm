@@ -109,7 +109,7 @@
         },
         "xdm:sourceType": {
           "title": "Account Source Type",
-          "description": "Account source type.",
+          "description": "Source type for the account.",
           "type": "string"
         },
         "xdm:tradeStyle": {
@@ -124,7 +124,7 @@
         },
         "xdm:billingAddress": {
           "title": "Account Billing Address",
-          "description": "Account billing address.",
+          "description": "Billing address(es) for the account.",
           "type": "array",
           "items": {
             "$ref": "https://ns.adobe.com/xdm/common/address"
@@ -132,7 +132,7 @@
         },
         "xdm:shippingAddress": {
           "title": "Account Shipping Address",
-          "description": "Account shipping address.",
+          "description": "Shipping address(es) for the account.",
           "type": "array",
           "items": {
             "$ref": "https://ns.adobe.com/xdm/common/address"

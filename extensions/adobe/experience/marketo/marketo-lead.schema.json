@@ -44,11 +44,11 @@
         },
         "marketo:count": {
           "title": "Count",
-          "type": "number"
+          "type": "integer"
         },
         "marketo:totalProposedNameCount": {
           "title": "Total Proposed Name Count",
-          "type": "number"
+          "type": "integer"
         },
         "marketo:leadScore": {
           "title": "Lead Score",

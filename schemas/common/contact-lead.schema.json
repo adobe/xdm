@@ -28,7 +28,7 @@
           "description": "Detailed description of Contact/Lead.",
           "type": "string"
         },
-        "xdm:deleted": {
+        "xdm:isDeleted": {
           "title": "Deleted Indicator",
           "description": "Indicator whether the instance was deleted.",
           "type": "boolean"
@@ -38,7 +38,7 @@
           "description": "The unique identofier for the Owner of the contact/lead record.",
           "type": "string"
         },
-        "xdm:emailBounced": {
+        "xdm:isEmailBounced": {
           "title": "Email Bounced Indicator",
           "description": "If bounce management is activated and an email is sent to a contact/lead, indicates whether the email bounced (true) or not (false).",
           "type": "boolean"

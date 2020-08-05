@@ -51,6 +51,7 @@
             "^searchads:.*$": {},
             "^adcloud:.*$": {},
             "^id3:.*$": {},
+            "^dataDotCom:.*$": {},
             "^marketo:.*$": {},
             ".+://.+": {},
             "@.*": {}
@@ -233,6 +234,11 @@
                   "format": "url",
                   "const": "http://id3.org/ns/2.4/"
                 },
+                "dataDotCom": {
+                  "type": "string",
+                  "format": "url",
+                  "const": "https://www.data.com/"
+                },
                 "marketo": {
                   "type": "string",
                   "format": "url",
@@ -279,6 +285,7 @@
             "^searchads:.*$": {},
             "^adcloud:.*$": {},
             "^id3:.*$": {},
+            "^dataDotCom:.*$": {},
             "^marketo:.*$": {},
             ".+://.+": {}
           },

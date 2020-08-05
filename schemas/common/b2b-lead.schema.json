@@ -20,7 +20,7 @@
           "description": "Lead id.",
           "type": "string"
         },
-        "xdm:converted": {
+        "xdm:isConverted": {
           "title": "Converted Indicator",
           "description": "Indicates whether the Lead was successfully converted or not.",
           "type": "boolean"
@@ -57,9 +57,9 @@
           "type": "string",
           "format": "date-time"
         },
-        "xdm:unReadByOwner": {
-          "title": "Read By Owner Indicator",
-          "description": "Read by owner indicator.",
+        "xdm:isUnReadByOwner": {
+          "title": "Un-Read By Owner",
+          "description": "Un Read by owner indicator.",
           "type": "boolean"
         },
         "xdm:source": {

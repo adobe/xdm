@@ -28,12 +28,12 @@
           "title": "Anonymous Hostname",
           "type": "string"
         },
-        "marketo:blackListed": {
-          "title": "Black Listed Indicator",
+        "marketo:blocked": {
+          "title": "Blocked Indicator",
           "type": "boolean"
         },
-        "marketo:blackListedCause": {
-          "title": "Black Listed Cause",
+        "marketo:blockedCause": {
+          "title": "Blocked Cause",
           "type": "string"
         },
         "marketo:emailInvalid": {

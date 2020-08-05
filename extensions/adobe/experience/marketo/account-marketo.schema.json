@@ -43,14 +43,10 @@
               "title": "Primary Interest Id",
               "type": "string"
             },
-            "marketo:private": {
+            "marketo:isPrivate": {
               "title": "Private Flag",
               "type": "boolean"
             },
-            "marketo:additionalFields": {
-              "title": "Additional Fields",
-              "type": "string"
-            }
           }
         },
         "marketo:namedAccount": {
@@ -92,7 +88,7 @@
               "description": "Organization Domain name.",
               "type": "string"
             },
-            "marketo:targeted": {
+            "marketo:isTargeted": {
               "title": "Account targeted Indicator",
               "description": "Indicator whether the Account is targeted.",
               "type": "boolean"

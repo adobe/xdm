@@ -5,8 +5,7 @@
     "marketo:notes": "Account Notes",
     "marketo:accountType": "Business",
     "marketo:primaryInterestID": "ABC111",
-    "marketo:private": true,
-    "marketo:additionalFields": "Additional fields information for this account"
+    "marketo:isPrivate": true
   },
   "marketo:namedAccount": {
     "marketo:opportunityAmount": 10000,
@@ -16,7 +15,7 @@
     "marketo:membershipCount": 3,
     "marketo:crmOrgID": "crmorg111",
     "marketo:domainName": "Retail",
-    "marketo:targeted": true
+    "marketo:isTargeted": true
   },
   "xdm:extSourceSystemAudit": {
     "xdm:createdBy": "USER111",

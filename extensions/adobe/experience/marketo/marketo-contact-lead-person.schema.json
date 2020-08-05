@@ -20,15 +20,11 @@
           "description": "Marketo integration log id.",
           "type": "string"
         },
-        "marketo:additionalFields": {
-          "title": "Additional Fields",
-          "type": "string"
-        },
         "marketo:anonymousHostname": {
           "title": "Anonymous Hostname",
           "type": "string"
         },
-        "marketo:blocked": {
+        "marketo:isBlocked": {
           "title": "Blocked Indicator",
           "type": "boolean"
         },
@@ -36,7 +32,7 @@
           "title": "Blocked Cause",
           "type": "string"
         },
-        "marketo:emailInvalid": {
+        "marketo:isEmailInvalid": {
           "title": "Invalid Email Indicator",
           "description": "Indicator whether the email is valid or not.",
           "type": "boolean"
@@ -75,26 +71,26 @@
           "description": "Phone area code inferred by reverse IP lookup of lead’s first recorded web visit.",
           "type": "string"
         },
-        "marketo:anonymous": {
+        "marketo:isAnonymous": {
           "title": "Anonymous Indicator",
           "description": "Anonymous status of lead record. System managed.",
           "type": "boolean"
         },
-        "marketo:customer": {
+        "marketo:isCustomer": {
           "title": "Customer Indicator",
           "type": "boolean"
         },
-        "marketo:employee": {
+        "marketo:isEmployee": {
           "title": "Employee Indicator",
           "description": "Indicator if the contact/lead is an employee or not.",
           "type": "boolean"
         },
-        "marketo:partner": {
+        "marketo:isPartner": {
           "title": "Partner Indicator",
           "description": "Indicator if the contact/lead is a partner or not.",
           "type": "boolean"
         },
-        "marketo:private": {
+        "marketo:isPrivate": {
           "title": "Private Indicator",
           "type": "boolean"
         },

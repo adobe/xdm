@@ -58,7 +58,7 @@
   "xdm:logoUrl": "https://sampleaccount.com/logo.png",
   "xdm:tradeStyle": "Trade style here",
   "xdm:tickerSymbol": "Ticker Symbol Here",
-  "xdm:deleted": false,
+  "xdm:isDeleted": false,
   "xdm:billingAddress": [
     {
       "@id": "https://data.adobe.io/entities/address/123",

@@ -5,10 +5,10 @@
   "xdm:extendedContact": {
     "xdm:type": "",
     "xdm:ownerID": "",
-    "xdm:deleted": false,
+    "xdm:isDeleted": false,
     "xdm:emailBouncedDate": "2018-12-20T15:52:25+00:00",
     "xdm:emailBouncedReason": "Bounced Reason Here",
-    "xdm:emailBounced": true,
+    "xdm:isEmailBounced": true,
     "xdm:description": "Contact/Lead description here",
     "xdm:status": "Status",
     "xdm:timezone": "",

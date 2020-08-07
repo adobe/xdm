@@ -41,19 +41,7 @@
               "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/push-channel-context",
               "description": "Push channel fields for the MessageProfile associated with the Adobe CJM Experience Event."
             }
-          },
-           "oneOf": [
-            {
-              "required": [
-                "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext"
-              ]
-            },
-            {
-              "required": [
-                "https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext"
-              ]
-            }
-          ]
+          }
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/eventStatus": {
           "title": "Event Status",
@@ -69,19 +57,7 @@
               "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/message-interaction",
               "description": "Captures interaction made by the profile on the message."
             }
-          },
-          "oneOf": [
-            {
-              "required": [
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback"
-              ]
-            },
-            {
-              "required": [
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction"
-              ]
-            }
-          ]
+          }
         }
       }
     }

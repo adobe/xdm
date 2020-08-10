@@ -43,6 +43,16 @@
             }
           }
         },
+        "xdm:note": {
+          "title": "Note",
+          "type": "object",
+          "description": "When present, user friendly note to display. Similar to a description, but provides more details about the actual usage of the field.",
+          "patternProperties": {
+            ".+_.+": {
+              "type": "string"
+            }
+          }
+        },
         "meta:enum": {
           "title": "Extended meta:enum values",
           "type": "object",

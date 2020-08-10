@@ -36,12 +36,12 @@
           "type": "string",
           "description": "The contents of the email after substitution of the placeholders in the template"
         },
-        "xdm:attachment": {
+        "xdm:hasAttachments": {
           "title": "Email has attachments",
           "type": "boolean",
           "description": "A flag represent whether any attachment is part of the email message"
         },
-        "xdm:quarantine": {
+        "xdm:isQuarantined": {
           "title": "quarantine message",
           "type": "boolean",
           "description": "A flag to represent whether the email message is a spam"
@@ -116,7 +116,7 @@
           "format": "date-time",
           "description": "Last time the email was opened, by any receiver"
         },
-        "xdm:tracked": {
+        "xdm:isTracked": {
           "title": "Email Tracking flag",
           "type": "boolean",
           "description": "A flag to capture whether the email was tracked by the sender"

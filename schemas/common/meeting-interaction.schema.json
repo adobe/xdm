@@ -14,17 +14,17 @@
   "definitions": {
     "meetinginteraction": {
       "properties": {
-        "xdm:allDay": {
+        "xdm:isAllDay": {
           "title": "All Day meeting/event",
           "type": "boolean",
           "description": "A flag to represent whether the meeting is all day long"
         },
-        "xdm:online": {
+        "xdm:isOnline": {
           "title": "Meeting online/offline",
           "type": "boolean",
           "description": "A flag indicating whether the neeting is online of offline"
         },
-        "xdm:reminderSet": {
+        "xdm:isReminderSet": {
           "title": "Reminder Set for the meeting",
           "type": "boolean",
           "description": "A flag indicating whether a reminder has been in place for the meeting"

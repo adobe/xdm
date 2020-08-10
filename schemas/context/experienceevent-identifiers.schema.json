@@ -1,0 +1,48 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/experienceevent-identifiers",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "ExperienceEvent Identifiers",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
+  "description": "This mixin provides a condensed, normalized encapsulation of all end user identifiers asserted for an ExperienceEvent. These IDs could include personal identifiers like phone numbers, email addresses, or other solution and device identifiers related to an individual.",
+  "definitions": {
+    "experienceevent-identifiers": {
+      "properties": {
+        "xdm:solutionidentifiers": {
+          "title": "SolutionIdentifiers",
+          "$ref": "https://ns.adobe.com/xdm/context/solutionidentifiers",
+          "description": "Condensed, normalized encapsulation of end user solution identifiers asserted for this ExperienceEvent."
+        },
+        "xdm:deviceidentifiers": {
+          "title": "DeviceIdentifiers",
+          "$ref": "https://ns.adobe.com/xdm/context/deviceidentifiers",
+          "description": "Condensed, normalized encapsulation of end user device identifiers asserted for this ExperienceEvent."
+        },
+        "xdm:personalidentifiers": {
+          "title": "PersonalIdentifiers",
+          "$ref": "https://ns.adobe.com/xdm/context/personalidentifiers",
+          "description": "Condensed, normalized encapsulation of end user personal identifiers asserted for this ExperienceEvent."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/experienceevent-identifiers"
+    }
+  ],
+  "meta:status" : "stabilizing"
+}

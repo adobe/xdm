@@ -79,7 +79,7 @@
           "type": "string",
           "pattern": "^([1-4]{1})$|^([Qq][1-4]{1})$"
         },
-        "xdm:opportunityLineItem": {
+        "xdm:hasOpportunityLineItem": {
           "title": "Has Opportunity Line Item Flag",
           "description": "Flag to indicate whether this opportunity have more line items.",
           "type": "boolean"
@@ -91,17 +91,17 @@
           "minimum": 0,
           "maximum": 100
         },
-        "xdm:closed": {
+        "xdm:isClosed": {
           "title": "Closed Flag",
           "description": "Flag indicating if this opportunity is closed.",
           "type": "boolean"
         },
-        "xdm:won": {
+        "xdm:isWon": {
           "title": "Won Flag",
           "description": "Flag indicating if this opportunity is Won.",
           "type": "boolean"
         },
-        "xdm:deleted": {
+        "xdm:isDeleted": {
           "title": "Deleted Flag",
           "description": "Flag indicating if this opportunity is deleted.",
           "type": "boolean"
@@ -117,7 +117,7 @@
           "description": "Description of next task in closing opportunity.",
           "type": "string"
         },
-        "xdm:private": {
+        "xdm:isPrivate": {
           "title": "Private Flag",
           "description": "Indicates that the opportunity is private.",
           "type": "boolean"

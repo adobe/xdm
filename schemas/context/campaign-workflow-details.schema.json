@@ -91,12 +91,12 @@
           "description": "Current Status of the campaign. eg. 'Active','Disabled' etc.",
           "type": "string"
         },
-        "xdm:deleted": {
+        "xdm:isDeleted": {
           "title": "Campaign soft delete status",
           "description": "A boolean flag which indicates whether the campaign is soft deleted in the system",
           "type": "boolean"
         },
-        "xdm:active": {
+        "xdm:isActive": {
           "title": "Campaign Active status ",
           "description": "A flag to indicate if the campaign is currently in the running/completed state",
           "type": "boolean"

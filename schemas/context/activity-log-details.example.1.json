@@ -2,10 +2,10 @@
   "xdm:activityDueDateTime": "2020-05-20T00:00:00+00:00",
   "xdm:activityStartDateTime": "2020-05-19T09:05:25+00:00",
   "xdm:activityEndDateTime": "2020-05-19T18:10:00+00:00",
-  "xdm:task": false,
-  "xdm:completed": false,
-  "xdm:deleted": false,
-  "xdm:highPriority": false,
+  "xdm:isTask": false,
+  "xdm:isCompleted": false,
+  "xdm:isDeleted": false,
+  "xdm:isHighPriority": false,
   "xdm:accountID": "423",
   "xdm:division": "div1",
   "xdm:ownerID": "6534",
@@ -42,9 +42,9 @@
   "xdm:interactionEvents": {
     "xdm:meeting": {
       "xdm:meetingDetails": {
-        "xdm:allDay": true,
-        "xdm:onlineMeeting": true,
-        "xdm:reminderSet": true,
+        "xdm:isAllDay": true,
+        "xdm:inOnlineMeeting": true,
+        "xdm:isReminderSet": true,
         "xdm:reminderDateTime": "2020-05-18T00:00:00+00:00",
         "xdm:scheduledStartDateTime": "2020-05-19T09:00:00+00:00",
         "xdm:scheduledEndDateTime": "2020-05-19T18:00:00+00:00",

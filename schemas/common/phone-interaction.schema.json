@@ -59,7 +59,7 @@
           "type": "string",
           "description": "Person's phone number who is the reciever of the call. Note the phone number is a string and may include meaningful characters such as brackets '()', hyphens '-', or characters to indicate sub-dialing identifiers like extensions 'x' for example,  1-353(0)18391111 or +613 9403600x1234."
         },
-        "xdm:leftVoiceMail": {
+        "xdm:hasLeftVoiceMail": {
           "title": "Has the initiator of the call left any Voice Mail message",
           "type": "boolean",
           "description": "A boolean flag to represent whether a voice mail has been left for the reciever"

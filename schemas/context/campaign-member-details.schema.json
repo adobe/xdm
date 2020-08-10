@@ -43,7 +43,7 @@
           "title": "Response of the Member",
           "description": "Record whether the member has responded to the workflow stage",
           "properties": {
-            "xdm:responded": {
+            "xdm:hasResponded": {
               "title": "Response of the Member",
               "description": "Record whether the member has responded to the workflow stage",
               "type": "boolean"
@@ -99,7 +99,7 @@
           "description": "The upstream source from where the campaign record has been syncronized",
           "type": "string"
         },
-        "xdm:deleted": {
+        "xdm:isDeleted": {
           "title": "Campaign soft delete status",
           "description": "A boolean flag which indicates whether the campaign is soft deleted in the system",
           "type": "boolean"

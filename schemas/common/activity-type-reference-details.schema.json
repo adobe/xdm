@@ -42,12 +42,12 @@
           "type": "string",
           "description": "Category of the activity type. 'Marketing email', futher categorisation of activity area"
         },
-        "xdm:deleted": {
+        "xdm:isDeleted": {
           "title": "Deleted flag",
           "type": "boolean",
           "description": "A boolean flag to depict if the corresponding activity type has been soft deleted"
         },
-        "xdm:active": {
+        "xdm:isActive": {
           "title": "Status of the activity type",
           "type": "boolean",
           "description":

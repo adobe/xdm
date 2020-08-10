@@ -4,7 +4,7 @@
     "xdm:ID": "18765386"
   },
   "xdm:response": {
-    "xdm:responded": true,
+    "xdm:hasResponded": true,
     "xdm:respondDate": "2020-05-19T00:00:00+00:00"
   },
   "xdm:campaignProgram": {
@@ -16,5 +16,5 @@
     }
   },
   "xdm:sourceType": "salesforce",
-  "xdm:deleted": false
+  "xdm:isDeleted": false
 }

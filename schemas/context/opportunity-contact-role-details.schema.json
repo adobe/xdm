@@ -27,12 +27,12 @@
           "description": "Role of the opportunity contact like finance , sales .",
           "type": "string"
         },
-        "xdm:primary": {
+        "xdm:isPrimary": {
           "title": "Primary Flag",
           "description": "A flag to signify that this is the primary opportunity contact",
           "type": "boolean"
         },
-        "xdm:deleted": {
+        "xdm:isDeleted": {
           "title": "Deleted Flag",
           "description": "A flag to signify that this opportunity is in deleted state.",
           "type": "boolean"

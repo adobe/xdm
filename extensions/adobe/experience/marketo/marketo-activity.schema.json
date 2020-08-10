@@ -18,6 +18,7 @@
     "activity-marketo-details": {
       "properties": {
         "marketo:activityLog": {
+          "type": "object",
           "properties": {
             "marketo:activityID": {
               "title": "Marketo Activity Unique Identifier",

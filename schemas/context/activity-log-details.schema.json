@@ -36,22 +36,22 @@
           "type": "string",
           "format": "date-time"
         },
-        "xdm:task": {
+        "xdm:isTask": {
           "title": "Activity is task or business event",
           "description": "A boolean flag to represent whether the activity is a task of Event Management",
           "type": "boolean"
         },
-        "xdm:completed": {
+        "xdm:isCompleted": {
           "title": "Activity completed or still open to work on",
           "type": "boolean",
           "description": "A boolean flag to indicate whether the activity is completed"
         },
-        "xdm:deleted": {
+        "xdm:isDeleted": {
           "title": "Activity soft deletion",
           "type": "boolean",
           "description": "A boolean flag to indicate whether the activity is soft deleted"
         },
-        "xdm:highPriority": {
+        "xdm:isHighPriority": {
           "title": "Activity is a high priority task",
           "description": "A boolean flag to indicate whether the activity is of high priority",
           "type": "boolean"

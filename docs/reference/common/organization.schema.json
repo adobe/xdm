@@ -34,6 +34,11 @@
                     "type": "number",
                     "description": "The number of employees the at the organization."
                 },
+                "xdm:annualRevenue": {
+                    "title": "Annual Revenue",
+                    "description": "Estimated amount of annual revenue of the organization.",
+                    "type": "number"
+                },
                 "xdm:industry": {
                     "title": "Industry",
                     "type": "string",
@@ -69,6 +74,11 @@
                         "https://ns.adobe.com/xdm/external/dnb": "Dun & Bradstreet",
                         "https://ns.adobe.com/xdm/external/angellist": "Angellist"
                     },
+                    "properties": {
+                        "://": {
+                            "type": "string"
+                        }
+                    },
                     "patternProperties": {
                         ".+://.+": {
                             "type": "string",
@@ -90,6 +100,11 @@
                         "https://ns.adobe.com/xdm/external/isic4": "International Standard of Industrial Classification of All Economic Activities (ISIC)",
                         "https://ns.adobe.com/xdm/external/sic": "Standard Industrial Classification",
                         "https://ns.adobe.com/xdm/external/naics": "North American Industry Classification System"
+                    },
+                    "properties": {
+                        "://": {
+                            "type": "string"
+                        }
                     },
                     "patternProperties": {
                         ".+://.+": {
@@ -113,12 +128,13 @@
             "$ref": "#/definitions/organization"
         }
     ],
-    "meta:status": "stable",
+    "meta:status": "experimental",
     "examples": [
         {
             "@id": "https://data.adobe.io/entities/org/orgid111",
             "xdm:legalName": "ABC Stores",
             "xdm:numberOfEmployees": 200,
+            "xdm:annualRevenue": 1000000,
             "xdm:industry": "Retail",
             "xdm:website": "http://www.abcstores.com",
             "rating": 1,
@@ -137,7 +153,7 @@
                     "xdm:country": "United States",
                     "xdm:countryCode": "US",
                     "schema:latitude": 37.3382,
-                    "schema:longitude": 121.8863,
+                    "schema:longitude": -121.8863,
                     "xdm:status": "active",
                     "xdm:lastVerifiedDate": "2018-01-03"
                 },

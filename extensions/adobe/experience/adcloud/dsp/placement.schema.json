@@ -12,9 +12,7 @@
   "meta:extensible": false,
   "meta:abstract": false,
   "meta:auditable": true,
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/data/record"
-  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "description": "Adobe Advertising Cloud DSP Campaign Placement Details.",
   "definitions": {
     "dsp-placement": {

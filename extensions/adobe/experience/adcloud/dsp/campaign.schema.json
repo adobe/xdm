@@ -12,9 +12,7 @@
   "meta:extensible": false,
   "meta:abstract": false,
   "meta:auditable": true,
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/data/record"
-  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "description": "Adobe Advertising Cloud DSP Campaign Details.",
   "definitions": {
     "dsp-campaign": {
@@ -33,12 +31,7 @@
           "title": "Campaign Status",
           "type": "string",
           "description": "Campaign Status extracted from the Insertion Order associated with this campaign.Indicates if underlying ads are eligible to serve.",
-          "enum": [
-            "Active",
-            "Inactive",
-            "Deleted",
-            "Paid"
-          ],
+          "enum": ["Active", "Inactive", "Deleted", "Paid"],
           "meta:enum": {
             "Active": "Active",
             "Inactive": "Inactive",
@@ -55,10 +48,7 @@
           "title": "Campaign Type",
           "type": "string",
           "description": "Campaign Type",
-          "enum": [
-            "Media",
-            "Brandsights"
-          ],
+          "enum": ["Media", "Brandsights"],
           "meta:enum": {
             "Media": "Media",
             "Brandsights": "Brandsights"
@@ -73,11 +63,7 @@
           "title": "The Fee Class",
           "type": "string",
           "description": "Fee Class needed for computing the total spend.",
-          "enum": [
-            "tubemogul",
-            "advertiser",
-            "no_io"
-          ],
+          "enum": ["tubemogul", "advertiser", "no_io"],
           "meta:enum": {
             "tubemogul": "tubemogul",
             "advertiser": "advertiser",

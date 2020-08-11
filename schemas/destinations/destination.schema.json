@@ -11,9 +11,7 @@
   "type": "object",
   "meta:extensible": false,
   "meta:abstract": false,
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/data/record"
-  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "description": "Destinations Schema.",
   "definitions": {
     "destination": {
@@ -53,9 +51,9 @@
           "type": "string",
           "description": "Status of destination flow",
           "meta:enum": {
-                  "enabled": "Enabled and ready to use",
-                  "disabled": "Disabled and cannot be used"
-               }
+            "enabled": "Enabled and ready to use",
+            "disabled": "Disabled and cannot be used"
+          }
         },
         "xdm:version": {
           "title": "Version",

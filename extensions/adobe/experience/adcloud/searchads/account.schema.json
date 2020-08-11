@@ -12,9 +12,7 @@
   "meta:extensible": false,
   "meta:abstract": false,
   "meta:auditable": true,
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/data/record"
-  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "description": "Search Advertising Account defines Customer Configuration on Search Advertising Platform.",
   "definitions": {
     "searchads-account": {
@@ -32,11 +30,7 @@
         "searchads:currencyCode": {
           "title": "Currency Code",
           "type": "string",
-          "examples": [
-            "USD",
-            "EUR",
-            "JPY"
-          ],
+          "examples": ["USD", "EUR", "JPY"],
           "pattern": "^[A-Z]{3}$",
           "description": "Currency in which this account operates."
         },
@@ -44,10 +38,7 @@
           "title": "Account Status",
           "type": "string",
           "description": "Managed Flag indicates whether account is enabled or disabled on search networks.",
-          "enum": [
-            "Enabled",
-            "Disabled"
-          ],
+          "enum": ["Enabled", "Disabled"],
           "meta:enum": {
             "Enabled": "Enabled",
             "Disabled": "Disabled"
@@ -85,17 +76,13 @@
         "searchads:createDate": {
           "type": "string",
           "format": "date-time",
-          "examples": [
-            "2004-10-23T12:00:00-06:00"
-          ],
+          "examples": ["2004-10-23T12:00:00-06:00"],
           "description": "The date and time when the account was created. An example form is \"2004-10-23T12:00:00-06:00\"."
         },
         "searchads:modifyDate": {
           "type": "string",
           "format": "date-time",
-          "examples": [
-            "2004-10-23T12:00:00-06:00"
-          ],
+          "examples": ["2004-10-23T12:00:00-06:00"],
           "description": "The date and time when the account was last modified. An example form is \"2004-10-23T12:00:00-06:00\"."
         }
       }

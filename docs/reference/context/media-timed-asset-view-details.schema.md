@@ -23,16 +23,6 @@ View details for the main content playback, present on all ads and chapters that
 
 ```json
 {
-  "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114231",
-  "xdm:playerName": "watchtv",
-  "xdm:adLoadType": "1",
-  "xdm:sessionTimeout": 1800,
-  "xdm:downloadedPlayback": false
-}
-```
-
-```json
-{
   "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114230",
   "xdm:playerName": "watchtv",
   "xdm:videoSegment": "3-10",
@@ -74,6 +64,16 @@ View details for the main content playback, present on all ads and chapters that
     "xdm:playerStateCount": 2,
     "xdm:playerStateTime": 10
   }
+}
+```
+
+```json
+{
+  "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114231",
+  "xdm:playerName": "watchtv",
+  "xdm:adLoadType": "1",
+  "xdm:sessionTimeout": 1800,
+  "xdm:downloadedPlayback": false
 }
 ```
 

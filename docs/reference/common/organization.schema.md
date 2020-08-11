@@ -10,7 +10,7 @@ Information that uniquely identifies an organized entity such as company, non-pr
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [common/organization.schema.json](common/organization.schema.json) |
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [common/organization.schema.json](common/organization.schema.json) |
 ## Schema Hierarchy
 
 * Organization `https://ns.adobe.com/xdm/common/organization`
@@ -23,6 +23,7 @@ Information that uniquely identifies an organized entity such as company, non-pr
   "@id": "https://data.adobe.io/entities/org/orgid111",
   "xdm:legalName": "ABC Stores",
   "xdm:numberOfEmployees": 200,
+  "xdm:annualRevenue": 1000000,
   "xdm:industry": "Retail",
   "xdm:website": "http://www.abcstores.com",
   "rating": 1,
@@ -41,7 +42,7 @@ Information that uniquely identifies an organized entity such as company, non-pr
       "xdm:country": "United States",
       "xdm:countryCode": "US",
       "schema:latitude": 37.3382,
-      "schema:longitude": 121.8863,
+      "schema:longitude": -121.8863,
       "xdm:status": "active",
       "xdm:lastVerifiedDate": "2018-01-03"
     },
@@ -65,6 +66,7 @@ Information that uniquely identifies an organized entity such as company, non-pr
 | [@id](#id) | `string` | Optional | Organization (this schema) |
 | [schema:description](#schemadescription) | `string` | Optional | Organization (this schema) |
 | [schema:numberOfEmployees](#schemanumberofemployees) | `number` | Optional | Organization (this schema) |
+| [xdm:annualRevenue](#xdmannualrevenue) | `number` | Optional | Organization (this schema) |
 | [xdm:classifier](#xdmclassifier) | `object` | Optional | Organization (this schema) |
 | [xdm:identifier](#xdmidentifier) | `object` | Optional | Organization (this schema) |
 | [xdm:industry](#xdmindustry) | `string` | Optional | Organization (this schema) |
@@ -136,6 +138,26 @@ The number of employees the at the organization.
 
 
 
+## xdm:annualRevenue
+### Annual Revenue
+
+Estimated amount of annual revenue of the organization.
+
+`xdm:annualRevenue`
+* is optional
+* type: `number`
+* defined in this schema
+
+### xdm:annualRevenue Type
+
+
+`number`
+
+
+
+
+
+
 ## xdm:classifier
 ### Market or industry classifier
 
@@ -154,6 +176,28 @@ This object contains unambiguous classifiers for the organization. Each key is t
 
 | Property | Type | Required |
 |----------|------|----------|
+| `://`| string | Optional |
+
+
+
+#### ://
+
+undefined
+
+`://`
+* is optional
+* type: `string`
+
+##### :// Type
+
+
+`string`
+
+
+
+
+
+
 
 
 
@@ -186,6 +230,28 @@ This object contains unambiguous identifiers for the organization. Each key is t
 
 | Property | Type | Required |
 |----------|------|----------|
+| `://`| string | Optional |
+
+
+
+#### ://
+
+undefined
+
+`://`
+* is optional
+* type: `string`
+
+##### :// Type
+
+
+`string`
+
+
+
+
+
+
 
 
 

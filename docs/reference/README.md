@@ -281,6 +281,20 @@
 * [Storage Quota](./content/repository-policies/quota.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/quota` (Stable)
 * [Versioning](./content/repository-policies/versioning.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/versioning` (Stable)
 
+## /external/activity-streams-2/
+
+* [Activity](./external/activity-streams-2/activity.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/activity` (Stable)
+* [Collection](./external/activity-streams-2/collection.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/collection` (Stable)
+* [Collection Page](./external/activity-streams-2/collection-page.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/collection-page` (Stable)
+* [Document](./external/activity-streams-2/document.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/document` (Stable)
+* [Image Document](./external/activity-streams-2/image.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/image` (Stable)
+* [JSON-LD `@context`](./external/activity-streams-2/context.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/context` (Stable)
+* [JSON-LD `@id`](./external/activity-streams-2/id.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/id` (Stable)
+* [JSON-LD `@type`](./external/activity-streams-2/type.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/type` (Stable)
+* [Link](./external/activity-streams-2/link.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/link` (Stable)
+* [Object](./external/activity-streams-2/object.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/object` (Stable)
+* [RDF Language Tagged String](./external/activity-streams-2/rdf-langstring.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langstring` (Stable)
+
 ## /external/id3/
 
 * [Audio](./external/id3/audio.schema.md) – `https://id3.org/id3v2.4/audio` (Stable)
@@ -298,20 +312,6 @@
 * [Season](./external/iptc/season.schema.md) – `http://www.iptc.org/season` (Stable)
 * [Series](./external/iptc/series.schema.md) – `http://www.iptc.org/series` (Stable)
 
-## /external/activity-streams-2/
-
-* [Activity](./external/activity-streams-2/activity.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/activity` (Stable)
-* [Collection](./external/activity-streams-2/collection.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/collection` (Stable)
-* [Collection Page](./external/activity-streams-2/collection-page.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/collection-page` (Stable)
-* [Document](./external/activity-streams-2/document.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/document` (Stable)
-* [Image Document](./external/activity-streams-2/image.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/image` (Stable)
-* [JSON-LD `@context`](./external/activity-streams-2/context.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/context` (Stable)
-* [JSON-LD `@id`](./external/activity-streams-2/id.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/id` (Stable)
-* [JSON-LD `@type`](./external/activity-streams-2/type.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/type` (Stable)
-* [Link](./external/activity-streams-2/link.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/link` (Stable)
-* [Object](./external/activity-streams-2/object.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/object` (Stable)
-* [RDF Language Tagged String](./external/activity-streams-2/rdf-langstring.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langstring` (Stable)
-
 ## /external/schema/
 
 * [Geo Circle](./external/schema/geocircle.schema.md) – `http://schema.org/GeoCircle` (Stable)
@@ -328,6 +328,12 @@
 * [Effective Privileges](./external/repo/effectiveprivileges.schema.md) – `https://ns.adobe.com/xdm/external/repo/effectiveprivileges` (Stable)
 * [Sub-Directory](./external/repo/sub-directory.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/sub-directory` (Stable)
 
+## /common/descriptors/
+
+* [Item Selector](./common/descriptors/itemselector.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/itemselector` (Stable)
+* [Relationship Descriptor](./common/descriptors/relationshipdescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/relationshipdescriptor` (Stable)
+* [Schema Descriptor](./common/descriptors/schemadescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/schemadescriptor` (Stable)
+
 ## /common/notifications/
 
 * [Customer Data Ingestion Notifications Event](./common/notifications/ingestion.schema.md) – `https://ns.adobe.com/xdm/common/notifications/ingestion` (Stable)
@@ -342,19 +348,9 @@
 * [Unpublished Event](./common/event/unpublished.schema.md) – `https://ns.adobe.com/xdm/common/event/unpublished` (Stable)
 * [Updated Event](./common/event/updated.schema.md) – `https://ns.adobe.com/xdm/common/event/updated` (Stable)
 
-## /common/descriptors/
-
-* [Item Selector](./common/descriptors/itemselector.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/itemselector` (Stable)
-* [Relationship Descriptor](./common/descriptors/relationshipdescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/relationshipdescriptor` (Stable)
-* [Schema Descriptor](./common/descriptors/schemadescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/schemadescriptor` (Stable)
-
 ## /common/descriptors/display/
 
 * [Friendly Name Descriptor](./common/descriptors/display/alternateDisplayInfo.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/alternateDisplayInfo` (Stable)
-
-## /common/descriptors/search/
-
-* [Search Descriptor](./common/descriptors/search/searchdescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/searchdescriptor` (Stable)
 
 ## /common/descriptors/identity/
 
@@ -367,4 +363,8 @@
 * [Many to Many Relationship Descriptor](./common/descriptors/relationship/descriptorManyToMany.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/descriptorManyToMany` (Stable)
 * [One to Many Relationship Descriptor](./common/descriptors/relationship/descriptorOneToMany.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/descriptorOneToMany` (Stable)
 * [One to One Relationship Descriptor](./common/descriptors/relationship/descriptorOneToOne.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/descriptorOneToOne` (Stable)
+
+## /common/descriptors/search/
+
+* [Search Descriptor](./common/descriptors/search/searchdescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/searchdescriptor` (Stable)
 

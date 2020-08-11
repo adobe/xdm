@@ -32,7 +32,7 @@ Describes how XDM properties are to be handled for search, including the applica
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [common/descriptors/search/searchdescriptor.schema.json](common/descriptors/search/searchdescriptor.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [common/descriptors/search/searchdescriptor.schema.json](common/descriptors/search/searchdescriptor.schema.json) |
 ## Schema Hierarchy
 
 * Search Descriptor `https://ns.adobe.com/xdm/common/descriptors/searchdescriptor`

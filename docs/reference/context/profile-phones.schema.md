@@ -1,5 +1,5 @@
 
-# Profile Addresses Schema
+# Profile Phones Schema
 
 ```
 https://ns.adobe.com/xdm/context/profile-phones
@@ -12,12 +12,12 @@ Contains the various phone numbers a single profile can contain
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/profile-phones.schema.json](context/profile-phones.schema.json) |
 ## Schema Hierarchy
 
-* Profile Addresses `https://ns.adobe.com/xdm/context/profile-phones`
+* Profile Phones `https://ns.adobe.com/xdm/context/profile-phones`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Phone number](phonenumber.schema.md) `https://ns.adobe.com/xdm/context/phonenumber`
 
 
-## Profile Addresses Example
+## Profile Phones Example
 ```json
 {
   "xdm:homePhone": {
@@ -43,14 +43,14 @@ Contains the various phone numbers a single profile can contain
 }
 ```
 
-# Profile Addresses Properties
+# Profile Phones Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:faxPhone](#xdmfaxphone) | Phone number | Optional | Profile Addresses (this schema) |
-| [xdm:homePhone](#xdmhomephone) | Phone number | Optional | Profile Addresses (this schema) |
-| [xdm:mobilePhone](#xdmmobilephone) | Phone number | Optional | Profile Addresses (this schema) |
-| [xdm:workPhone](#xdmworkphone) | Phone number | Optional | Profile Addresses (this schema) |
+| [xdm:faxPhone](#xdmfaxphone) | Phone number | Optional | Profile Phones (this schema) |
+| [xdm:homePhone](#xdmhomephone) | Phone number | Optional | Profile Phones (this schema) |
+| [xdm:mobilePhone](#xdmmobilephone) | Phone number | Optional | Profile Phones (this schema) |
+| [xdm:workPhone](#xdmworkphone) | Phone number | Optional | Profile Phones (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:faxPhone

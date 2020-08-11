@@ -1,0 +1,56 @@
+{
+  "xdm:campaignName": "Direct Marketing on Financials",
+  "xdm:campaignDescription": "Campaign to attract individuals topurchase financial product",
+  "xdm:campaignStartDate": "2018-01-19T15:52:25+00:00",
+  "xdm:campaignEndDate": "2018-01-26T15:52:25+00:00",
+  "xdm:ownerID": "34567",
+  "xdm:timezoneName": "America/Los_Angeles",
+  "xdm:parentCampaignID": "12",
+  "xdm:campaignProgram": {
+    "xdm:ID": "1",
+    "xdm:type": "Webinar"
+  },
+  "xdm:channelType": "Direct Mail",
+  "xdm:sourceType": "salesforce",
+  "xdm:campaignStatus": "In Progress",
+  "xdm:isDeleted": false,
+  "xdm:isActive": true,
+  "xdm:currencyCode": "USD",
+  "xdm:budgetedCost": 50000,
+  "xdm:actualCost": 46756,
+  "xdm:webinarSession": {
+    "xdm:ID": "12345",
+    "xdm:name": "Financial discipline",
+    "xdm:description": "Webinar for well being on finances"
+  },
+  "xdm:expectedParticipation": {
+    "xdm:numberOfResponses": 243,
+    "xdm:revenue": 60000
+  },
+  "xdm:participation": {
+    "xdm:numberOfRequestsSent": 300,
+    "xdm:numberOfResponses": 276,
+    "xdm:numberOfLeads": 235,
+    "xdm:numberOfConvertedLeads": 200,
+    "xdm:numberOfContacts": 35
+  },
+  "xdm:opportunity": {
+    "xdm:numberOfOpportunities": 48,
+    "xdm:amountOfAllOpportunities": 500000,
+    "xdm:numberOfWonOpportunities": 34,
+    "xdm:amountOFWonOpportunities": 349850
+  },
+  "xdm:hierarchy": {
+    "xdm:budgetedCost": 50000,
+    "xdm:actualCost": 46756,
+    "xdm:numberOfRequestsSent": 300,
+    "xdm:numberOfResponses": 276,
+    "xdm:numberOfLeads": 235,
+    "xdm:numberOfConvertedLeads": 200,
+    "xdm:numberOfContacts": 35,
+    "xdm:numberOfOpportunities": 48,
+    "xdm:amountOfAllOpportunities": 500000,
+    "xdm:numberOfWonOpportunities": 34,
+    "xdm:amountOFWonOpportunities": 349850
+  }
+}

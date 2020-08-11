@@ -56,7 +56,7 @@
             "$ref": "#/definitions/placecontext"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:localTime": "2001-07-04T12:08:56+01:00",

@@ -9,7 +9,7 @@ Baidu Cloud Push is the push notification service provided by Baidu, a Chinese c
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/baidu.schema.json](channels/baidu.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [channels/baidu.schema.json](channels/baidu.schema.json) |
 ## Schema Hierarchy
 
 * Baidu Channel `https://ns.adobe.com/xdm/channels/baidu`

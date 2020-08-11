@@ -1,0 +1,56 @@
+{
+  "xdm:ID": "",
+  "xdm:isConverted": true,
+  "xdm:convertedAccountID": "",
+  "xdm:convertedContactID": "",
+  "xdm:convertedDate": "2018-12-20T15:52:25+00:00",
+  "xdm:convertedOpportunityID": "",
+  "xdm:jigsawContactID": "",
+  "xdm:lastTransferDate": "2018-12-20T15:52:25+00:00",
+  "xdm:source": "",
+  "xdm:isUnReadByOwner": false,
+  "xdm:extendedLead": {
+    "xdm:type": "",
+    "xdm:ownerID": "",
+    "xdm:isDeleted": false,
+    "xdm:emailBouncedDate": "2018-12-20T15:52:25+00:00",
+    "xdm:emailBouncedReason": "Bounced Reason Here",
+    "xdm:isEmailBounced": true,
+    "xdm:description": "Contact description here",
+    "xdm:status": "Contacted",
+    "xdm:timezone": ""
+  },
+  "xdm:identityMap": {
+    "EMAIL": [
+      {
+        "xdm:id": "jane@doe.com"
+      }
+    ]
+  },
+  "xdm:preferences": {
+    "https://ns.adobe.com/xdm/channels/email": "pending",
+    "https://ns.adobe.com/xdm/channels/phone": "out",
+    "https://ns.adobe.com/xdm/channels/sms": "in",
+    "https://ns.adobe.com/xdm/channels/fax": "not_provided",
+    "https://ns.adobe.com/xdm/channels/direct-mail": "not_provided",
+    "https://ns.adobe.com/xdm/channels/apns": "not_provided",
+    "xdm:globalOptout": false,
+    "xdm:optOutDetails": {
+      "xdm:email": {
+        "xdm:optOutReason": "Reason here",
+        "xdm:optOutDate": "2018-01-20T15:52:25+00:00"
+      },
+      "xdm:phone": {
+        "xdm:optOutReason": "Reason here",
+        "xdm:optOutDate": "2018-01-20T15:52:25+00:00"
+      }
+    }
+  },
+  "xdm:organization": {
+    "xdm:legalName": "ABC Stores",
+    "xdm:numberOfEmployees": 200,
+    "xdm:annualRevenue": 1000000,
+    "xdm:industry": "Retail",
+    "xdm:website": "http://www.abcstores.com"
+  }
+}

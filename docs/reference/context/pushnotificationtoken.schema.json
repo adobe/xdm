@@ -62,7 +62,7 @@
             "$ref": "#/definitions/pushnotificationtoken"
         }
     ],
-    "meta:status": "stabilizing",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:token": "ABC123DEFG",

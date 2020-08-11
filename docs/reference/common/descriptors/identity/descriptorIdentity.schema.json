@@ -58,7 +58,7 @@
             "$ref": "#/definitions/descriptorIdentity"
         }
     ],
-    "meta:status": "stabilizing",
+    "meta:status": "stable",
     "examples": [
         {
             "@type": "xdm:descriptorIdentity",

@@ -9,7 +9,7 @@ View details for the chapter playback captured by the experience event.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/media-timed-chapter-view-details.schema.json](context/media-timed-chapter-view-details.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/media-timed-chapter-view-details.schema.json](context/media-timed-chapter-view-details.schema.json) |
 ## Schema Hierarchy
 
 * Timed media chapter view details `https://ns.adobe.com/xdm/context/media-timed-chapter-view-details`

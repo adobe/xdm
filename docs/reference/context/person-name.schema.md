@@ -12,7 +12,7 @@ In addition, a number of optional properties are made available that can be used
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/person-name.schema.json](context/person-name.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/person-name.schema.json](context/person-name.schema.json) |
 ## Schema Hierarchy
 
 * Person name `https://ns.adobe.com/xdm/context/person-name`
@@ -31,18 +31,18 @@ In addition, a number of optional properties are made available that can be used
 
 ```json
 {
-  "xdm:firstName": "John",
-  "xdm:middleName": "S",
-  "xdm:lastName": "Doe",
-  "xdm:fullName": "John S. Doe"
+  "xdm:firstName": "فلانة",
+  "xdm:lastName": "الفلانية",
+  "xdm:fullName": "فلانة الفلانية"
 }
 ```
 
 ```json
 {
-  "xdm:firstName": "فلانة",
-  "xdm:lastName": "الفلانية",
-  "xdm:fullName": "فلانة الفلانية"
+  "xdm:firstName": "John",
+  "xdm:middleName": "S",
+  "xdm:lastName": "Doe",
+  "xdm:fullName": "John S. Doe"
 }
 ```
 

@@ -9,7 +9,7 @@ Used by the UPS system to assign the specific schema that will used for the time
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [common/descriptors/relationship/eventRelationship.schema.json](common/descriptors/relationship/eventRelationship.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [common/descriptors/relationship/eventRelationship.schema.json](common/descriptors/relationship/eventRelationship.schema.json) |
 ## Schema Hierarchy
 
 * Event Relationship Descriptor `https://ns.adobe.com/xdm/common/descriptors/eventRelationship`

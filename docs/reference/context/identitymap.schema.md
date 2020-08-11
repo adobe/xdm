@@ -9,7 +9,7 @@ Defines a map containing a set of end user identities, keyed on either namespace
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/identitymap.schema.json](context/identitymap.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/identitymap.schema.json](context/identitymap.schema.json) |
 
 ## IdentityMap Examples
 

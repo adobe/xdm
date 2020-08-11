@@ -34,7 +34,7 @@
             "$ref": "#/definitions/experienceevent-directmarketing"
         }
     ],
-    "meta:status": "stabilizing",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:directMarketing": {

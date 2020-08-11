@@ -9,7 +9,7 @@ List item that contains details of segment membership combined the profile stitc
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/segmentmembershipitem.schema.json](context/segmentmembershipitem.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/segmentmembershipitem.schema.json](context/segmentmembershipitem.schema.json) |
 ## Schema Hierarchy
 
 * Segment membership item `https://ns.adobe.com/xdm/context/segmentmembershipitem`

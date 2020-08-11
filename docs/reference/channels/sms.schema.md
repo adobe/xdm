@@ -9,7 +9,7 @@ Short message service (SMS) are messages that are delivered to a mobile phone ch
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [channels/sms.schema.json](channels/sms.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [channels/sms.schema.json](channels/sms.schema.json) |
 ## Schema Hierarchy
 
 * SMS Channel `https://ns.adobe.com/xdm/channels/sms`

@@ -9,7 +9,7 @@ Install of an application on a device where the actual install event is availabl
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/installs.schema.json](data/installs.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [data/installs.schema.json](data/installs.schema.json) |
 ## Schema Hierarchy
 
 * Installs `https://ns.adobe.com/xdm/data/installs`

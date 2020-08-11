@@ -51,6 +51,8 @@
             "^searchads:.*$": {},
             "^adcloud:.*$": {},
             "^id3:.*$": {},
+            "^dataDotCom:.*$": {},
+            "^marketo:.*$": {},
             ".+://.+": {},
             "@.*": {}
           },
@@ -231,10 +233,22 @@
                   "type": "string",
                   "format": "url",
                   "const": "http://id3.org/ns/2.4/"
+                },
+                "dataDotCom": {
+                  "type": "string",
+                  "format": "url",
+                  "const": "https://www.data.com/"
+                },
+                "marketo": {
+                  "type": "string",
+                  "format": "url",
+                  "const": "https://ns.adobe.com/marketo/"
                 }
               },
               "additionalProperties": false,
-              "required": ["xdm"]
+              "required": [
+                "xdm"
+              ]
             }
           },
           "patternProperties": {
@@ -271,9 +285,13 @@
             "^searchads:.*$": {},
             "^adcloud:.*$": {},
             "^id3:.*$": {},
+            "^dataDotCom:.*$": {},
+            "^marketo:.*$": {},
             ".+://.+": {}
           },
-          "required": ["@context"],
+          "required": [
+            "@context"
+          ],
           "additionalProperties": false
         }
       ]
@@ -284,5 +302,5 @@
       "$ref": "#/definitions/@context"
     }
   ],
-  "meta:status": "stabilizing"
+  "meta:status": "stable"
 }

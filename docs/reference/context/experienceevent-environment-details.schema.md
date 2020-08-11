@@ -9,7 +9,7 @@ This mixin is used to capture information regarding environment details related 
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/experienceevent-environment-details.schema.json](context/experienceevent-environment-details.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/experienceevent-environment-details.schema.json](context/experienceevent-environment-details.schema.json) |
 ## Schema Hierarchy
 
 * ExperienceEvent environment details `https://ns.adobe.com/xdm/context/experienceevent-environment-details`

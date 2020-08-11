@@ -10,7 +10,7 @@
     "title": "Implementation details",
     "type": "object",
     "meta:extensible": true,
-    "meta:status": "stabilizing",
+    "meta:status": "stable",
     "description": "Details about the SDK, library, or service used in an application or web page implementation of a service.",
     "definitions": {
         "implementationdetails": {

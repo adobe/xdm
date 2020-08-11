@@ -9,7 +9,7 @@ Details about the IDs that were joined by profile stitching.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/profilestitch.schema.json](context/profilestitch.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/profilestitch.schema.json](context/profilestitch.schema.json) |
 ## Schema Hierarchy
 
 * Profile stitch `https://ns.adobe.com/xdm/context/profileStitch`

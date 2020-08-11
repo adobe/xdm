@@ -37,7 +37,7 @@
             "$ref": "#/definitions/descriptorOneToMany"
         }
     ],
-    "meta:status": "stabilizing",
+    "meta:status": "stable",
     "examples": [
         {
             "@id": "https://ns.adobe.com/example/descriptorOneToMany/1",

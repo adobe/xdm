@@ -112,7 +112,7 @@
             "$ref": "#/definitions/segmentMembership"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:lastQualificationTime": "2017-09-26T15:52:25+00:00",

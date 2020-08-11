@@ -166,7 +166,7 @@
             "$ref": "#/definitions/product"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "@id": "https://commerce.adobe.io/entities/product/product-203766910",

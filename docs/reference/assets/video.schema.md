@@ -9,7 +9,7 @@ The video class is for video assets, i.e. assets that consist of moving pictures
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [assets/video.schema.json](assets/video.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [assets/video.schema.json](assets/video.schema.json) |
 ## Schema Hierarchy
 
 * Video `https://ns.adobe.com/xdm/assets/video`

@@ -18,6 +18,7 @@
     "https://ns.adobe.com/xdm/context/experienceevent-environment-details",
     "https://ns.adobe.com/xdm/context/experienceevent-profile-stitch",
     "https://ns.adobe.com/experience/experienceevent-edgeregion",
+    "https://ns.adobe.com/xdm/context/experienceevent-privacy",
     "https://ns.adobe.com/experience/audiencemanager/experienceevent-all"
   ],
   "definitions": {
@@ -39,11 +40,14 @@
       "$ref": "https://ns.adobe.com/experience/experienceevent-edgeregion"
     },
     {
+      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-privacy"
+    },
+    {
       "$ref": "https://ns.adobe.com/experience/audiencemanager/experienceevent-all"
     },
     {
       "$ref": "#/definitions/aam-experienceevent"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

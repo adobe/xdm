@@ -40,6 +40,7 @@
                     "description": "The normative name used for this web link, used for classification purposes."
                 },
                 "xdm:linkClicks": {
+                    "title": "Link Clicks",
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
                     "description": "Click of a web link has occurred."
                 }
@@ -54,7 +55,7 @@
             "$ref": "#/definitions/webinteraction"
         }
     ],
-    "meta:status": "stabilizing",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:type": "other",

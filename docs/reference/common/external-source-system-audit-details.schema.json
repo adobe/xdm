@@ -13,10 +13,9 @@
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/opportunity",
         "https://ns.adobe.com/xdm/context/account",
-        "https://ns.adobe.com/xdm/context/profile-lead-crm",
-        "https://ns.adobe.com/xdm/context/profile-contact-crm",
         "https://ns.adobe.com/xdm/context/opportunity-contactrole",
-        "https://ns.adobe.com/xdm/context/activitylog"
+        "https://ns.adobe.com/xdm/context/activitylog",
+        "https://ns.adobe.com/xdm/context/profile"
     ],
     "description": "Mixin which defines a set a audit properties for extenal sources.",
     "definitions": {
@@ -38,7 +37,7 @@
             "$ref": "#/definitions/externalSourceSystemAuditDetails"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:createdBy": "USER111",

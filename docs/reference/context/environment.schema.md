@@ -9,7 +9,7 @@ Information about the surrounding situation the event observation occurred, spec
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/environment.schema.json](context/environment.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/environment.schema.json](context/environment.schema.json) |
 ## Schema Hierarchy
 
 * Environment `https://ns.adobe.com/xdm/context/environment`

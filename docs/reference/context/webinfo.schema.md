@@ -10,7 +10,7 @@ Information recorded via an `ExperienceEvent` that is specific to the World Wide
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/webinfo.schema.json](context/webinfo.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/webinfo.schema.json](context/webinfo.schema.json) |
 ## Schema Hierarchy
 
 * Web information `https://ns.adobe.com/xdm/context/webinfo`

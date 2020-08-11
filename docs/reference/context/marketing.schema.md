@@ -9,7 +9,7 @@ The information related to marketing activities that are active with the touchpo
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/marketing.schema.json](context/marketing.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/marketing.schema.json](context/marketing.schema.json) |
 ## Schema Hierarchy
 
 * Marketing `https://ns.adobe.com/xdm/context/marketing`

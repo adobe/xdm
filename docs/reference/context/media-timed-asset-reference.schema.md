@@ -9,7 +9,7 @@ Asset information about the main content that was played, but present on all ads
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/media-timed-asset-reference.schema.json](context/media-timed-asset-reference.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/media-timed-asset-reference.schema.json](context/media-timed-asset-reference.schema.json) |
 ## Schema Hierarchy
 
 * Timed media primary asset reference `https://ns.adobe.com/xdm/context/media-timed-asset-reference`

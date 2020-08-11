@@ -9,7 +9,7 @@ Details about a segment membership.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/segmentmembership.schema.json](context/segmentmembership.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/segmentmembership.schema.json](context/segmentmembership.schema.json) |
 ## Schema Hierarchy
 
 * Segment membership `https://ns.adobe.com/xdm/context/segmentmembership`

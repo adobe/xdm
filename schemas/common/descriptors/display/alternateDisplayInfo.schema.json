@@ -43,28 +43,49 @@
             }
           }
         },
+        "xdm:note": {
+          "title": "Note",
+          "type": "object",
+          "description": "When present, user friendly note to display. Similar to a description, but provides more details about the actual usage of the field.",
+          "patternProperties": {
+            ".+_.+": {
+              "type": "string"
+            }
+          }
+        },
         "meta:enum": {
           "title": "Extended meta:enum values",
           "type": "object",
           "patternProperties": {
-            ".+": {
-              "type": "string"
+            ".+_.+": {
+              "oneOf": [
+                {"type": "object"},
+                {"type": "string"}
+              ]
             }
           }
         }
       },
       "anyOf": [
         {
-          "required": ["xdm:title"]
+          "required": [
+            "xdm:title"
+          ]
         },
         {
-          "required": ["xdm:description"]
+          "required": [
+            "xdm:description"
+          ]
         },
         {
-          "required": ["meta:enum"]
+          "required": [
+            "meta:enum"
+          ]
         }
       ],
-      "required": ["xdm:sourceProperty"]
+      "required": [
+        "xdm:sourceProperty"
+      ]
     }
   },
   "allOf": [
@@ -75,5 +96,5 @@
       "$ref": "#/definitions/alternateDisplayInfo"
     }
   ],
-  "meta:status": "stabilizing"
+  "meta:status": "stable"
 }

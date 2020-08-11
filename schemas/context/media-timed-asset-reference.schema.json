@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Timed media primary asset reference",
   "type": "object",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:extensible": true,
   "description": "Asset information about the main content that was played, but present on all ads and chapters that occur during the content playback.",
   "definitions": {
@@ -79,7 +79,11 @@
           "description": "The type of the media stream",
           "type": "string",
           "default": "video",
-          "enum": ["audio", "video", "gaming"],
+          "enum": [
+            "audio",
+            "video",
+            "gaming"
+          ],
           "meta:enum": {
             "audio": "An audio stream (e.g. podcast, audiobook, radio stream).",
             "video": "A video stream (e.g. Video-On-Demand, live event stream, downloaded movie).",

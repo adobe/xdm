@@ -9,7 +9,7 @@ Customer notification events for data ingestion processes.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [common/notifications/ingestion.schema.json](common/notifications/ingestion.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [common/notifications/ingestion.schema.json](common/notifications/ingestion.schema.json) |
 ## Schema Hierarchy
 
 * Customer Data Ingestion Notifications Event `https://ns.adobe.com/xdm/common/notifications/ingestion`

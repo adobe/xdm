@@ -22,31 +22,30 @@
           "title": "Journey Orchestration common Journey Fields",
           "type": "object",
           "properties": {
-
-            "https://ns.adobe.com/experience/journeyOrchestration/journeyID":{
-              "title":"journeyID",
-              "description":"Identifier for the given Journey.",
-              "type":"string"
+            "https://ns.adobe.com/experience/journeyOrchestration/journeyID": {
+              "title": "journeyID",
+              "description": "Identifier for the given Journey.",
+              "type": "string"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionID":{
-              "title":"journeyVersionID",
-              "description":"Id of the journey version. This id represents the identity of a journey.",
-              "type":"string"
+            "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionID": {
+              "title": "journeyVersionID",
+              "description": "Id of the journey version. This id represents the identity of a journey.",
+              "type": "string"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/name":{
-              "title":"name",
-              "description":"Name of the Journey.",
-              "type":"string"
+            "https://ns.adobe.com/experience/journeyOrchestration/name": {
+              "title": "name",
+              "description": "Name of the Journey.",
+              "type": "string"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/description":{
-              "title":"description",
-              "description":"Description of the Journey.",
-              "type":"string"
+            "https://ns.adobe.com/experience/journeyOrchestration/description": {
+              "title": "description",
+              "description": "Description of the Journey.",
+              "type": "string"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/version":{
-              "title":"version",
-              "description":"Describes the Journey Version.",
-              "type":"string"
+            "https://ns.adobe.com/experience/journeyOrchestration/version": {
+              "title": "version",
+              "description": "Describes the Journey Version.",
+              "type": "string"
             }
           }
         }
@@ -58,5 +57,5 @@
       "$ref": "#/definitions/journeyFields"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

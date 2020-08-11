@@ -9,7 +9,7 @@ The commerce metric `product-list-views` describes how often a product list has 
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [data/product-list-views.schema.json](data/product-list-views.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [data/product-list-views.schema.json](data/product-list-views.schema.json) |
 ## Schema Hierarchy
 
 * Product List Views `https://ns.adobe.com/xdm/data/metrics/product-list-views`

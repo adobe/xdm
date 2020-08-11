@@ -12,20 +12,20 @@ https://ns.adobe.com/xdm/external/hal/link
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [external/hal/hal-link.schema.json](external/hal/hal-link.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [external/hal/hal-link.schema.json](external/hal/hal-link.schema.json) |
 
 ## HAL Link Examples
 
 ```json
 {
-  "href": "http://www.adobe.com/"
+  "href": "http://www.adobe.com/{product}",
+  "templated": true
 }
 ```
 
 ```json
 {
-  "href": "http://www.adobe.com/{product}",
-  "templated": true
+  "href": "http://www.adobe.com/"
 }
 ```
 

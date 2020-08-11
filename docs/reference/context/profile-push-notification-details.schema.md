@@ -9,7 +9,7 @@ This mixin is used to capture information regarding push notifications including
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/profile-push-notification-details.schema.json](context/profile-push-notification-details.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/profile-push-notification-details.schema.json](context/profile-push-notification-details.schema.json) |
 ## Schema Hierarchy
 
 * Push notification details `https://ns.adobe.com/xdm/context/profile-push-notification-details`
@@ -24,7 +24,7 @@ This mixin is used to capture information regarding push notifications including
       "xdm:appID": "75eafb7e-fa44-4514-86fc-221e32c5aef9",
       "xdm:token": "99156313-c9df-4e54-9c6c-5740f940c3ca",
       "xdm:platform": "apns",
-      "xdm:blacklisted": false,
+      "xdm:blocklisted": false,
       "xdm:identity": {
         "xdm:namespace": {
           "xdm:code": "ECID"

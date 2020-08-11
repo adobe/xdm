@@ -34,7 +34,7 @@
             "$ref": "#/definitions/experienceevent-channel"
         }
     ],
-    "meta:status": "stabilizing",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:channel": {

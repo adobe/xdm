@@ -9,7 +9,7 @@ The number of errors that were encountered during playback.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [data/errors.schema.json](data/errors.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [data/errors.schema.json](data/errors.schema.json) |
 ## Schema Hierarchy
 
 * Errors `https://ns.adobe.com/xdm/data/errors`

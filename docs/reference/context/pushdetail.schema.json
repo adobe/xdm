@@ -27,7 +27,13 @@
                 "xdm:blacklisted": {
                     "title": "Blacklist Flag",
                     "type": "boolean",
-                    "description": "Indicates whether the push token is blacklisted."
+                    "meta:status": "deprecated",
+                    "description": "Indicates whether the push token is blacklisted. Deprecated due to new guidance on key names, use blocklisted instead."
+                },
+                "xdm:blocklisted": {
+                    "title": "Blocklist Flag",
+                    "type": "boolean",
+                    "description": "Indicates whether the push token is blocked by the push provider. "
                 },
                 "xdm:appID": {
                     "title": "Application Identifier",
@@ -35,6 +41,12 @@
                     "description": "Unique Identifier for the mobile application."
                 },
                 "xdm:identiy": {
+                    "title": "Identity associated with this token",
+                    "$ref": "https://ns.adobe.com/xdm/context/identity",
+                    "meta:status": "deprecated",
+                    "description": "The identity associated with this token before profile stitching. Deprecated due to typo, use xdm:identity instead."
+                },
+                "xdm:identity": {
                     "title": "Identity associated with this token",
                     "$ref": "https://ns.adobe.com/xdm/context/identity",
                     "description": "The identity associated with this token before profile stitching."
@@ -50,13 +62,13 @@
             "$ref": "#/definitions/pushdetail"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:appID": "75eafb7e-fa44-4514-86fc-221e32c5aef9",
             "xdm:token": "99156313-c9df-4e54-9c6c-5740f940c3ca",
             "xdm:platform": "apns",
-            "xdm:blacklisted": false,
+            "xdm:blocklisted": false,
             "xdm:identity": {
                 "xdm:namespace": {
                     "xdm:code": "ECID"

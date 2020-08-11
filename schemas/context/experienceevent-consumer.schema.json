@@ -12,7 +12,9 @@
   "description": "This mixin groups a set of standard fields to describe the behavior of an individual as it relates to digital content consumption (web, mobile app) as well as online or off-line purchases. Using this standard mixin allows data producers and consumers to have a consistent representation of individual behavior across Experience Platform.",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "meta:extends": [
     "https://ns.adobe.com/xdm/context/experienceevent-application",
     "https://ns.adobe.com/xdm/context/experienceevent-channel",
@@ -58,5 +60,5 @@
       "$ref": "https://ns.adobe.com/xdm/context/experienceevent-commerce"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

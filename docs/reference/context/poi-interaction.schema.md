@@ -9,7 +9,7 @@ A point or place of interest (POI) interaction used to capture triggered engagem
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [context/poi-interaction.schema.json](context/poi-interaction.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/poi-interaction.schema.json](context/poi-interaction.schema.json) |
 ## Schema Hierarchy
 
 * Point of interest interaction `https://ns.adobe.com/xdm/context/poi-interaction`

@@ -9,7 +9,7 @@ A descriptor that contains metadata about an XDM schema, including an optional p
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [common/descriptors/schemadescriptor.schema.json](common/descriptors/schemadescriptor.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [common/descriptors/schemadescriptor.schema.json](common/descriptors/schemadescriptor.schema.json) |
 ## Schema Hierarchy
 
 * Schema Descriptor `https://ns.adobe.com/xdm/common/descriptors/schemadescriptor`

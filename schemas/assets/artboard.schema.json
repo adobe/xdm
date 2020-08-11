@@ -17,8 +17,7 @@
       "properties": {
         "xdm:name": {
           "type": "string",
-          "description":
-            "Name of the artboard. This would be visible to the user and users can specify names that can help them uniquely identify different artboards."
+          "description": "Name of the artboard. This would be visible to the user and users can specify names that can help them uniquely identify different artboards."
         }
       }
     }
@@ -28,9 +27,8 @@
       "$ref": "#/definitions/artboard"
     },
     {
-      "$ref":
-        "https://ns.adobe.com/xdm/assets/variable-unit-rectangular#/definitions/rectangular"
+      "$ref": "https://ns.adobe.com/xdm/assets/variable-unit-rectangular#/definitions/rectangular"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

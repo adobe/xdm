@@ -51,7 +51,7 @@
           "type": "boolean",
           "description": "A boolean flag to indicate whether the activity is soft deleted"
         },
-        "xdm:isHighPriority": {
+        "xdm:highPriority": {
           "title": "Activity is a high priority task",
           "description": "A boolean flag to indicate whether the activity is of high priority",
           "type": "boolean"
@@ -232,7 +232,7 @@
           }
         }
       },
-      "required":["xdm:task"]
+      "required":["xdm:isTask"]
     }
   },
   "allOf": [

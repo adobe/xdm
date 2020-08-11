@@ -32,10 +32,7 @@
           "title": "Property",
           "type": "string",
           "description": "Property of the `xdm:namespace` field.",
-          "enum": [
-            "xdm:id",
-            "xdm:code"
-          ]
+          "enum": ["xdm:id", "xdm:code"]
         },
         "xdm:isPrimary": {
           "title": "Is primary key or not",
@@ -43,11 +40,7 @@
           "description": "When present, only one field should be marked as the primary. Default is false."
         }
       },
-      "required": [
-        "xdm:sourceProperty",
-        "xdm:namespace",
-        "xdm:property"
-      ]
+      "required": ["xdm:sourceProperty", "xdm:namespace", "xdm:property"]
     }
   },
   "allOf": [

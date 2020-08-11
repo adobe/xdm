@@ -34,10 +34,7 @@
           "description": "When present, major version being referenced."
         }
       },
-      "required": [
-        "xdm:destinationSchema",
-        "xdm:destinationVersion"
-      ]
+      "required": ["xdm:destinationSchema", "xdm:destinationVersion"]
     }
   },
   "allOf": [

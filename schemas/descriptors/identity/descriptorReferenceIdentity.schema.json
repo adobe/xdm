@@ -29,10 +29,7 @@
           "description": "The namespace code defined in identity system."
         }
       },
-      "required": [
-        "xdm:sourceProperty",
-        "xdm:identityNamespace"
-      ]
+      "required": ["xdm:sourceProperty", "xdm:identityNamespace"]
     }
   },
   "allOf": [

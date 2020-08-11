@@ -7,10 +7,6 @@
   "search:filterable": true,
   "search:store": "storedAndFetchByDefault",
   "search:sort": "sortedCaseInsensitive",
-  "search:analyzers":
-     [
-      "standard",
-      "noAnalysis"
-    ],
+  "search:analyzers": ["standard", "noAnalysis"],
   "search:defaultAnalyzer": "standard"
 }

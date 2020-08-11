@@ -1,0 +1,153 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/account-crm",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "XDM Business Account",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/account"
+  ],
+  "description": "An XDM Business Account.",
+  "definitions": {
+    "account-crm": {
+      "properties": {
+        "xdm:ownerID": {
+          "title": "Account Owner",
+          "description": "assigned owner of account. Not available in personal edition.",
+          "type": "string"
+        },
+        "xdm:parentID": {
+          "title": "Parent Account",
+          "description": "Parent company for companies that are subsidiaries of a larger company or organization. The parent account must be an existing account in salesforce. You can enter the account name, or select (or optionally, create) the account using the lookup icon.",
+          "type": "string"
+        },
+        "xdm:partnerAccountID": {
+          "title": "Partner Account Id",
+          "description": "Partner accounts are accounts that a channel manager uses to manage partner organizations, partner users, and activities when using a partner community or partner portal.",
+          "type": "string"
+        },
+        "xdm:territoryID": {
+          "title": "Territory Id",
+          "description": "The territory to which the account has been assigned.",
+          "type": "string"
+        },
+        "xdm:accountSite": {
+          "title": "Account Site Details",
+          "description": "Information about the account’s location, such as single location, headquarters, or branch. Up to 80 characters are allowed in this field.",
+          "type": "string"
+        },
+        "xdm:currencyCode": {
+          "title": "Currency Code",
+          "type": "string",
+          "examples": [
+            "USD",
+            "EUR"
+          ],
+          "pattern": "^[A-Z]{3}$",
+          "description": "The ISO 4217 currency code."
+        },
+        "xdm:annualRevenue": {
+          "title": "Annual Revenue",
+          "description": "Estimated annual revenue of the account.",
+          "type": "number"
+        },
+        "xdm:fax": {
+          "title": "Fax Number",
+          "description": "Fax number for the account.",
+          "type": "array",
+          "items": {
+            "$ref": "https://ns.adobe.com/xdm/context/phonenumber"
+          }
+        },
+        "xdm:accountOrganization": {
+          "title": "Account Details",
+          "description": "Account details like number of employees, market segment, industry, and location.",
+          "$ref": "https://ns.adobe.com/xdm/common/organization"
+        },
+        "xdm:naicsDescription": {
+          "title": "NAICS Description",
+          "description": "A brief description of an organization’s line of business, based on its NAICS code.",
+          "type": "string"
+        },
+        "xdm:sicDescription": {
+          "title": "SIC Description",
+          "description": "A brief description of an organization’s line of business, based on its SIC code.",
+          "type": "string"
+        },
+        "xdm:accountName": {
+          "title": "Account Name",
+          "description": "name of company. Up to 255 characters are allowed in this field.",
+          "type": "string"
+        },
+        "xdm:accountDescription": {
+          "title": "Account Description",
+          "description": "Text description of the account.",
+          "type": "string"
+        },
+        "xdm:ownership": {
+          "title": "Ownership",
+          "description": "Ownership of company, for example, public or private. Entry is selected from a picklist of available values, which a salesforce admin sets. Each picklist value can have up to 40 characters.",
+          "type": "string"
+        },
+        "xdm:isDeleted": {
+          "title": "Account Record Deleted Indicator",
+          "description": "Indicator whether the Account record is deleted or not.",
+          "type": "boolean"
+        },
+        "xdm:logoUrl": {
+          "title": "Logo URL",
+          "description": "Path to be combined with the URL of a Salesforce instance (for example, https://yourInstance.salesforce.com/) to generate a URL to request the social network profile image associated with the account. Generated URL returns an HTTP redirect (code 302) to the social network profile image for the account.",
+          "type": "string",
+          "format": "uri"
+        },
+        "xdm:sourceType": {
+          "title": "Account Source Type",
+          "description": "Source type for the account.",
+          "type": "string"
+        },
+        "xdm:tradeStyle": {
+          "title": "Account Trade Style",
+          "description": "A name, different from its legal name, that an organization may use for conducting business. Similar to (Doing business as) or (DBA).",
+          "type": "string"
+        },
+        "xdm:tickerSymbol": {
+          "title": "Ticker Symbol",
+          "description": "The stock market symbol for this account. Maximum of 20 characters.",
+          "type": "string"
+        },
+        "xdm:billingAddress": {
+          "title": "Account Billing Address",
+          "description": "Billing address(es) for the account.",
+          "type": "array",
+          "items": {
+            "$ref": "https://ns.adobe.com/xdm/common/address"
+          }
+        },
+        "xdm:shippingAddress": {
+          "title": "Account Shipping Address",
+          "description": "Shipping address(es) for the account.",
+          "type": "array",
+          "items": {
+            "$ref": "https://ns.adobe.com/xdm/common/address"
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/account-crm"
+    }
+  ],
+  "meta:status": "experimental"
+}

@@ -1,0 +1,94 @@
+{
+  "xdm:ownerID": "OWNER111",
+  "xdm:parentID": "ACC000",
+  "xdm:partnerAccountID": "PRTNR1111",
+  "xdm:territoryID": "Terr1",
+  "xdm:accountSite": "Additional account site details",
+  "xdm:currencyCode": "USD",
+  "xdm:annualRevenue": 10000000,
+  "xdm:fax": [
+    {
+      "xdm:primary": true,
+      "xdm:number": "1-408-888-8888",
+      "xdm:status": "active"
+    }
+  ],
+  "xdm:accountOrganization": {
+    "@id": "https://data.adobe.io/entities/org/orgid111",
+    "xdm:legalName": "ABC Stores",
+    "xdm:numberOfEmployees": 200,
+    "xdm:industry": "Retail",
+    "xdm:website": "http://www.abcstores.com",
+    "rating": 1,
+    "xdm:marketSegment": "apparel for kids",
+    "xdm:location": {
+      "@id": "https://data.adobe.io/entities/places/locid123",
+      "schema:description": "ABC Store location",
+      "xdm:address": {
+        "@id": "https://data.adobe.io/entities/address/123",
+        "xdm:primary": true,
+        "xdm:type": "work",
+        "xdm:street1": "100 Lincoln Ave",
+        "xdm:city": "San Jose",
+        "xdm:stateProvince": "US-CA",
+        "xdm:postalCode": "95125",
+        "xdm:country": "United States",
+        "xdm:countryCode": "US",
+        "schema:latitude": 37.3382,
+        "schema:longitude": -121.8863,
+        "xdm:status": "active",
+        "xdm:lastVerifiedDate": "2018-12-20"
+      },
+      "schema:telephone": "1-408-800-0000",
+      "xdm:identifier": {
+        "https://ns.adobe.com/xdm/external/dnb": "1234",
+        "https://ns.adobe.com/xdm/external/angellist": "https://angel.co/adobe"
+      },
+      "xdm:classifier": {
+        "https://ns.adobe.com/xdm/external/sic": "1234",
+        "https://ns.adobe.com/xdm/external/naics": "1234"
+      }
+    }
+  },
+  "xdm:naicsDescription": "Naics Description Here",
+  "xdm:sicDescription": "SIC Description Here",
+  "xdm:accountName": "Account 123",
+  "xdm:accountDescription": "Account Description",
+  "xdm:ownership": "Public",
+  "xdm:logoUrl": "https://sampleaccount.com/logo.png",
+  "xdm:tradeStyle": "Trade style here",
+  "xdm:tickerSymbol": "Ticker Symbol Here",
+  "xdm:isDeleted": false,
+  "xdm:billingAddress": [
+    {
+      "@id": "https://data.adobe.io/entities/address/123",
+      "xdm:primary": true,
+      "xdm:street1": "345 Park Ave",
+      "xdm:city": "San Jose",
+      "xdm:stateProvince": "US-CA",
+      "xdm:postalCode": "95110",
+      "xdm:country": "United States",
+      "xdm:countryCode": "US",
+      "schema:latitude": 37.3382,
+      "schema:longitude": -121.8863,
+      "xdm:status": "active",
+      "xdm:lastVerifiedDate": "2018-12-20"
+    }
+  ],
+  "xdm:shippingAddress": [
+    {
+      "@id": "https://data.adobe.io/entities/address/234",
+      "xdm:primary": true,
+      "xdm:street1": "100 Park Ave",
+      "xdm:city": "San Jose",
+      "xdm:stateProvince": "US-CA",
+      "xdm:postalCode": "95110",
+      "xdm:country": "United States",
+      "xdm:countryCode": "US",
+      "schema:latitude": 37.3382,
+      "schema:longitude": -121.8863,
+      "xdm:status": "active",
+      "xdm:lastVerifiedDate": "2018-12-20"
+    }
+  ]
+}

@@ -2,6 +2,7 @@
   "@id": "https://data.adobe.io/entities/org/orgid111",
   "xdm:legalName": "ABC Stores",
   "xdm:numberOfEmployees": 200,
+  "xdm:annualRevenue": 1000000.00,
   "xdm:industry": "Retail",
   "xdm:website": "http://www.abcstores.com",
   "rating": 1,
@@ -20,7 +21,7 @@
       "xdm:country": "United States",
       "xdm:countryCode": "US",
       "schema:latitude": 37.3382,
-      "schema:longitude": 121.8863,
+      "schema:longitude": -121.8863,
       "xdm:status": "active",
       "xdm:lastVerifiedDate": "2018-01-03"
     },

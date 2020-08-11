@@ -1,0 +1,20 @@
+{
+  "xdm:campaignMember": {
+    "xdm:type": "Lead",
+    "xdm:ID": "18765386"
+  },
+  "xdm:response": {
+    "xdm:hasResponded": true,
+    "xdm:respondDate": "2020-05-19T00:00:00+00:00"
+  },
+  "xdm:campaignProgram": {
+    "xdm:ID": "1",
+    "xdm:type": "Webinar",
+    "xdm:step": {
+      "xdm:number": 10,
+      "xdm:status": "Invited"
+    }
+  },
+  "xdm:sourceType": "salesforce",
+  "xdm:isDeleted": false
+}

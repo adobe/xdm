@@ -25,7 +25,17 @@ Describes user communication preferences by channel. For each channel individual
   "https://ns.adobe.com/xdm/channels/fax": "not_provided",
   "https://ns.adobe.com/xdm/channels/direct-mail": "not_provided",
   "https://ns.adobe.com/xdm/channels/apns": "not_provided",
-  "xdm:globalOptout": false
+  "xdm:globalOptout": false,
+  "xdm:optOutDetails": {
+    "xdm:email": {
+      "xdm:optOutReason": "Reason here",
+      "xdm:optOutDate": "2018-01-20T15:52:25+00:00"
+    },
+    "xdm:phone": {
+      "xdm:optOutReason": "Reason here",
+      "xdm:optOutDate": "2018-01-20T15:52:25+00:00"
+    }
+  }
 }
 ```
 
@@ -55,6 +65,7 @@ Describes user communication preferences by channel. For each channel individual
 | [https://ns.adobe.com/xdm/channels/wechat](#httpsnsadobecomxdmchannelswechat) | `enum` | Optional | `"not_provided"` | OptInOut (this schema) |
 | [https://ns.adobe.com/xdm/channels/wns](#httpsnsadobecomxdmchannelswns) | `enum` | Optional | `"not_provided"` | OptInOut (this schema) |
 | [xdm:globalOptout](#xdmglobaloptout) | `boolean` | Optional | `false` | OptInOut (this schema) |
+| [xdm:optOutDetails](#xdmoptoutdetails) | complex | Optional |  | OptInOut (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## https://ns.adobe.com/xdm/channels/adm
@@ -576,6 +587,50 @@ Do not contact this profile on any outbound channel.
 
 
 `boolean`
+
+
+
+
+
+## xdm:optOutDetails
+
+
+`xdm:optOutDetails`
+* is optional
+* type: complex
+* defined in this schema
+
+### xdm:optOutDetails Type
+
+Unknown type ``.
+
+```json
+{
+  "properties": {
+    "xdm:email": {
+      "title": "Additional Details for Email Opt Out",
+      "description": "Additional Details for Email Opt Out like reason, date.",
+      "$ref": "https://ns.adobe.com/xdm/common/optinout-additional-details"
+    },
+    "xdm:phone": {
+      "title": "Additional Details for Phone Opt Out",
+      "description": "Additional details for phone opt out like reason, date.",
+      "$ref": "https://ns.adobe.com/xdm/common/optinout-additional-details"
+    },
+    "xdm:fax": {
+      "title": "Additional Details for Fax Opt Out",
+      "description": "Additional details for fax opt out like reason, date.",
+      "$ref": "https://ns.adobe.com/xdm/common/optinout-additional-details"
+    },
+    "xdm:direct-mail": {
+      "title": "Additional Details for Direct-Mail Opt Out",
+      "description": "Additional details for direct-mail opt out like reason, date.",
+      "$ref": "https://ns.adobe.com/xdm/common/optinout-additional-details"
+    }
+  },
+  "simpletype": "complex"
+}
+```
 
 
 

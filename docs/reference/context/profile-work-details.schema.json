@@ -19,17 +19,17 @@
         "profile-work-details": {
             "properties": {
                 "xdm:workAddress": {
-                    "title": "Work address",
+                    "title": "Work Address",
                     "$ref": "https://ns.adobe.com/xdm/common/address",
                     "description": "A work postal address."
                 },
                 "xdm:workEmail": {
-                    "title": "Work email",
+                    "title": "Work Email",
                     "$ref": "https://ns.adobe.com/xdm/context/emailaddress",
                     "description": "A work email address."
                 },
                 "xdm:workPhone": {
-                    "title": "Work phone",
+                    "title": "Work Phone",
                     "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
                     "description": "Work phone number."
                 },
@@ -64,7 +64,7 @@
                 "xdm:country": "United States",
                 "xdm:countryCode": "US",
                 "schema:latitude": 37.3382,
-                "schema:longitude": 121.8863,
+                "schema:longitude": -121.8863,
                 "xdm:status": "active",
                 "xdm:lastVerifiedDate": "2018-01-02"
             },
@@ -79,7 +79,26 @@
                 "xdm:primary": true,
                 "xdm:number": "1-408-888-8888",
                 "xdm:status": "active"
-            }
+            },
+            "xdm:assistantDetails": {
+                "xdm:name": {
+                    "xdm:firstName": "John",
+                    "xdm:middleName": "S",
+                    "xdm:lastName": "Doe",
+                    "xdm:fullName": "John S. Doe"
+                },
+                "xdm:phone": {
+                    "xdm:primary": true,
+                    "xdm:number": "1-408-888-7777",
+                    "xdm:status": "active"
+                }
+            },
+            "xdm:reportsToID": "RPT10000",
+            "xdm:departments": [
+                "Finance",
+                "Marketing"
+            ],
+            "xdm:jobTitle": "Account manager"
         }
     ]
 }

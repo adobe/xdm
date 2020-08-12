@@ -32,7 +32,7 @@ This mixin is used to capture information regarding work-related details of the 
     "xdm:country": "United States",
     "xdm:countryCode": "US",
     "schema:latitude": 37.3382,
-    "schema:longitude": 121.8863,
+    "schema:longitude": -121.8863,
     "xdm:status": "active",
     "xdm:lastVerifiedDate": "2018-01-02"
   },
@@ -47,7 +47,26 @@ This mixin is used to capture information regarding work-related details of the 
     "xdm:primary": true,
     "xdm:number": "1-408-888-8888",
     "xdm:status": "active"
-  }
+  },
+  "xdm:assistantDetails": {
+    "xdm:name": {
+      "xdm:firstName": "John",
+      "xdm:middleName": "S",
+      "xdm:lastName": "Doe",
+      "xdm:fullName": "John S. Doe"
+    },
+    "xdm:phone": {
+      "xdm:primary": true,
+      "xdm:number": "1-408-888-7777",
+      "xdm:status": "active"
+    }
+  },
+  "xdm:reportsToID": "RPT10000",
+  "xdm:departments": [
+    "Finance",
+    "Marketing"
+  ],
+  "xdm:jobTitle": "Account manager"
 }
 ```
 
@@ -87,7 +106,7 @@ All items must be of the type:
 
 
 ## xdm:workAddress
-### Work address
+### Work Address
 
 A work postal address.
 
@@ -106,7 +125,7 @@ A work postal address.
 
 
 ## xdm:workEmail
-### Work email
+### Work Email
 
 A work email address.
 
@@ -125,7 +144,7 @@ A work email address.
 
 
 ## xdm:workPhone
-### Work phone
+### Work Phone
 
 Work phone number.
 

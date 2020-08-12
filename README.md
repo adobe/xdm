@@ -25,39 +25,18 @@ You can find more about our versioning in [docs/introduction.md](docs/introducti
 The project is laid out in the following way:
 
 - `docs`: Markdown files that contain front-matter, introduction, and non-normative parts of XDM
-- `components`: JSON schema files constituting the core XDM constructs like behaviors, classes, mixins and data types. These schemas are defined within the context of a digital experience, including profile, person, environment etc.
-  - `*.schema.json` is the schema file, e.g. `event-envelope.schema.json` – we pick the `.json` file extension for easy syntax highlighting in editors
-  - `*.example.*.json` is an example file that will be validated against the `*.schema.json` file, and if successful, merged into the `*.schema.json` file as an `"example"` field at the root of the schema before it is converted into Markdown or published
-  - `*.invalid.*.json` is an invalid example file that will be validated against the `*.schema.json` file. If the `invalid` file validates (false positive), the schema is too lax and the overall build will fail. `invalid` files will not be merged into documentation.
-  - `*.description.md` is a description file that will be merged into the `"description"` field at the root of the schema, allowing the authoring of longer descriptions. The merge happens before publishing the schema file or creating a joint Markdown file
-- `components/behaviors` – for schemas related to the behavior of the data like record, time-series etc.
-- `components/classes` – for schemas related to the XDM classes avaialble.
-- `components/mixins` – for schemas related to the XDM mixins available to be added a class. Mixins added to a unique class are grouped together in a folder named after the class.
-- `components/mixins/shared` – for schemas related to the XDM mixins available to be added to more than one class.
-- `components/datatypes` – for schemas related to the common XDM data types referred within other JSON schemas.
-- `components/datatypes/assets` – for schemas related to the asset core concept, including image, video, document
-- `components/datatypes/channels` – for schemas describing experience channels and locations therein
-- `components/datatypes/content` – for schemas related to content, including visual, audible, and virtual reality content
-- `components/datatypes/data` – for schemas describing collected data, metric, etc.
-- `components/datatypes/external/*` – for JSON Schema representation of externally defined standards
-- `components/datatypes/common` – for basic concepts like extensibility that are not covered in `external` schemas
-- `schemas`: JSON schema files constituting the pre-composed out of the box Schemas which can be used by the customers to ingest their data. These Schemas are not extendable and can't be used with the profile service.
-- `schemas/destinations`: JSON schema files constituting the pre-composed out of the box Schemas for platform destinations.
-- `schemas/notifications`: JSON schema files constituting the pre-composed out of the box Schemas for data ingestion notifications.
-- `schemas/descriptors/*`: JSON schema files constituting the Schema descriptors like identity descriptors, relationship descriptors etc.
-- `extensions/adobe/experience/analytics` – for schemas describing orchestrated experience analytics
-- `extensions/adobe/experience/audiencemanager` – for schemas describing audiences, segments, and groups of consumers
-- `extensions/adobe/experience/adcloud` – for schemas describing advertising cloud
-- `extensions/adobe/experience/decisioning` – for schemas describing orchestrated experience campaign
-- `extensions/adobe/experience/journeyOrchestration/stepEvents` – for schemas describing journey orchestration
-- `extensions/adobe/experience/offer-management` – 
-- `extensions/adobe/experience/profile` – for schemas describing decisioning
-- `extensions/adobe/experience/target` – for schemas describing adobe target solution
-- `extensions/adobe/experience/campaigns` – for schemas describing orchestrated experience campaign
-- `*.ttl`: legacy schema files in Turtle Syntax that have not yet been converted into JSON Schema
+- `schemas`: JSON schema files that define out of the box cross user schemas
+- `components`: JSON schema files that define the AEP components used in the composition model to create schemas usable within UPS
+- `extensions`: JSON schema files that define vendor or solution specific components used within the composition model of AEP 
 - `package.json`: a build file for `npm` that allows the generation of Markdown from the JSON Schema source files and (later) the generation of an AEM package to be deployed on the Adobe I/O Website
 - `README.md`: this file
 - `CONTRIBUTING.md`: guidelines for contributors, covering process, conventions and design guidelines
+
+## File Types
+
+- `*.schema.json` is the schema file, e.g. `profile.schema.json` – we pick the `.json` file extension for easy syntax highlighting in editors
+- `*.example.*.json` is an example file that will be validated against the `*.schema.json` file, and if successful, merged into the `*.schema.json` file as an `"example"` field at the root of the schema before it is converted into Markdown or published
+- `*.invalid.*.json` is an invalid example file that will be validated against the `*.schema.json` file. If the `invalid` file validates (false positive), the schema is too lax and the overall build will fail. `invalid` files will not be merged into documentation.
 
 ## Tooling
 

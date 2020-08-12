@@ -108,11 +108,11 @@
     "meta:status": "stable",
     "examples": [
         {
-            "href": "http://www.adobe.com/{product}",
-            "templated": true
+            "href": "http://www.adobe.com/"
         },
         {
-            "href": "http://www.adobe.com/"
+            "href": "http://www.adobe.com/{product}",
+            "templated": true
         }
     ]
 }

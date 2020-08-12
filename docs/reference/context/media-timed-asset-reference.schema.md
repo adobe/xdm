@@ -30,12 +30,6 @@ Asset information about the main content that was played, but present on all ads
   "dc:creator": "Video Author",
   "dc:publisher": "tvonline",
   "xmpDM:duration": 87,
-  "xdm:Audio": {
-    "id3:Audio": {
-      "id3:TRSN": "Q991.3",
-      "id3:TPUB": "Atlantic"
-    }
-  },
   "iptc4xmpExt:Series": {
     "iptc4xmpExt:Name": "show_highlights",
     "iptc4xmpExt:Identifier": "http://mychanneltv.com/series-identifiers/2613953"

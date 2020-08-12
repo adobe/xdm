@@ -34,6 +34,11 @@
           "type": "number",
           "description": "The number of employees the at the organization."
         },
+        "xdm:annualRevenue": {
+          "title": "Annual Revenue",
+          "description": "Estimated amount of annual revenue of the organization.",
+          "type": "number"
+        },
         "xdm:industry": {
           "title": "Industry",
           "type": "string",
@@ -69,6 +74,11 @@
             "https://ns.adobe.com/xdm/external/dnb": "Dun & Bradstreet",
             "https://ns.adobe.com/xdm/external/angellist": "Angellist"
           },
+		  "properties": {
+		    "://": {
+          "type": "string"
+        }
+		  },
           "patternProperties": {
             ".+://.+": {
               "type": "string",
@@ -91,6 +101,11 @@
             "https://ns.adobe.com/xdm/external/sic": "Standard Industrial Classification",
             "https://ns.adobe.com/xdm/external/naics": "North American Industry Classification System"
           },
+		  "properties": {
+		    "://": {
+           "type": "string"
+        }
+		  },
           "patternProperties": {
             ".+://.+": {
               "type": "string",
@@ -113,5 +128,5 @@
       "$ref": "#/definitions/organization"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "experimental"
 }

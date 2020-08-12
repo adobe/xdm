@@ -1,0 +1,56 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/common/b2b-contact",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "B2B Contact",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "This Data Type is used to capture B2B Contact specific attributes.",
+  "definitions": {
+    "b2b-contact": {
+      "properties": {
+        "xdm:ID": {
+          "title": "Contact Record Id",
+          "description": "Unique record id of the contact in the source system.",
+          "type": "string"
+        },
+        "xdm:accountID": {
+          "title": "Contact Account id",
+          "description": "ID of the account that’s the parent of this contact.",
+          "type": "string"
+        },
+        "xdm:leadSource": {
+          "title": "Lead Source",
+          "description": "Field recording what source the lead originated from.",
+          "type": "string"
+        },
+        "xdm:extendedContact": {
+          "title": "Contact Extended Properties",
+          "description": "Holds additional properties for a person to be recognized as a contact in the business-to-business space.",
+          "$ref": "https://ns.adobe.com/xdm/common/contact-lead"
+        },
+        "xdm:preferences": {
+          "title": "Contact Preferences",
+          "description": "Holds opt out values for different channels as selected by the contact.",
+          "$ref": "https://ns.adobe.com/xdm/context/optinout"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/b2b-contact"
+    }
+  ],
+  "required": ["xdm:ID", "xdm:accountID"],
+  "meta:status": "experimental"
+}

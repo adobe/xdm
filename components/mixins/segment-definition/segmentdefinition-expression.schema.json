@@ -26,11 +26,7 @@
               "title": "Type",
               "type": "string",
               "description": "Type of expression, for example, PQL, Query Service, or Adobe Audience Manager.",
-              "meta:enum": [
-                "PQL",
-                "AAM",
-                "QUERYSERVICE"
-              ]
+              "meta:enum": ["PQL", "AAM", "QUERYSERVICE"]
             },
             "xdm:mimeType": {
               "title": "Expression mime type",

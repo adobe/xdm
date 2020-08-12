@@ -61,9 +61,7 @@
           "description": "Length or duration of ad asset in seconds."
         }
       },
-      "required": [
-        "@id"
-      ]
+      "required": ["@id"]
     }
   },
   "allOf": [

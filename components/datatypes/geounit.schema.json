@@ -26,9 +26,7 @@
           "description": "The user-friendly name for the geographical unit."
         }
       },
-      "required": [
-        "@id"
-      ]
+      "required": ["@id"]
     }
   },
   "allOf": [

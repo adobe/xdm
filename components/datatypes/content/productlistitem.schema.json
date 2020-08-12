@@ -43,10 +43,7 @@
         "xdm:currencyCode": {
           "title": "Currency code",
           "type": "string",
-          "examples": [
-            "USD",
-            "EUR"
-          ],
+          "examples": ["USD", "EUR"],
           "pattern": "^[A-Z]{3}$",
           "description": "The ISO 4217 alphabetic currency code used for pricing the product."
         },
@@ -61,9 +58,7 @@
           "description": "The total price for the product line item."
         }
       },
-      "required": [
-        "xdm:SKU"
-      ]
+      "required": ["xdm:SKU"]
     }
   },
   "allOf": [

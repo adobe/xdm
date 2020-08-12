@@ -110,23 +110,15 @@
           "xdm:droppedFrames": {
             "xdm:value": 2
           },
-          "xdm:droppedFrameImpactedStreams":{
+          "xdm:droppedFrameImpactedStreams": {
             "xdm:value": 2
           },
           "xdm:timeToStart": {
             "xdm:value": 3
           },
-          "xdm:mediaSdkErrors": [
-            "300",
-            "500.300.200"
-          ],
-          "xdm:playerSdkErrors": [
-            "custom.error.code"
-          ],
-          "xdm:externalSdkErrors": [
-            "100-5",
-            "11.12"
-          ]
+          "xdm:mediaSdkErrors": ["300", "500.300.200"],
+          "xdm:playerSdkErrors": ["custom.error.code"],
+          "xdm:externalSdkErrors": ["100-5", "11.12"]
         },
         "xdm:downloadedPlayback": false
       },

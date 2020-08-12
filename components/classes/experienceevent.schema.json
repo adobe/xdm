@@ -27,10 +27,7 @@
       }
     }
   },
-  "required": [
-    "@id",
-    "xdm:timestamp"
-  ],
+  "required": ["@id", "xdm:timestamp"],
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"

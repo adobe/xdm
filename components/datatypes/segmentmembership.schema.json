@@ -60,12 +60,7 @@
             "xdm:payloadType": {
               "title": "Payload Type",
               "type": "string",
-              "enum": [
-                "boolean",
-                "number",
-                "propensity",
-                "string"
-              ],
+              "enum": ["boolean", "number", "propensity", "string"],
               "meta:enum": {
                 "boolean": "Boolean",
                 "number": "Number",
@@ -75,9 +70,7 @@
               "description": "The type of payload."
             }
           },
-          "required": [
-            "xdm:payloadType"
-          ]
+          "required": ["xdm:payloadType"]
         },
         "xdm:validUntil": {
           "title": "Valid until",
@@ -90,11 +83,7 @@
           "type": "string",
           "description": "Is the segment participation realized as part of the current request.",
           "default": "realized",
-          "enum": [
-            "existing",
-            "realized",
-            "exited"
-          ],
+          "enum": ["existing", "realized", "exited"],
           "meta:enum": {
             "existing": "Entity continues to be in the segment.",
             "realized": "Entity is entering the segment.",

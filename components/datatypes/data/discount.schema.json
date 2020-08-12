@@ -50,8 +50,6 @@
       "$ref": "#/definitions/discount"
     }
   ],
-  "required": [
-    "xdm:code"
-  ],
+  "required": ["xdm:code"],
   "meta:status": "stable"
 }

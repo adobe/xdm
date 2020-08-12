@@ -79,11 +79,7 @@
           "description": "The type of the media stream",
           "type": "string",
           "default": "video",
-          "enum": [
-            "audio",
-            "video",
-            "gaming"
-          ],
+          "enum": ["audio", "video", "gaming"],
           "meta:enum": {
             "audio": "An audio stream (e.g. podcast, audiobook, radio stream).",
             "video": "A video stream (e.g. Video-On-Demand, live event stream, downloaded movie).",
@@ -135,9 +131,7 @@
           "description": "The date when the content first aired on any digital channel or platform."
         }
       },
-      "required": [
-        "@id"
-      ]
+      "required": ["@id"]
     }
   },
   "allOf": [

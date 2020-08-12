@@ -27,7 +27,7 @@ The project is laid out in the following way:
 - `docs`: Markdown files that contain front-matter, introduction, and non-normative parts of XDM
 - `schemas`: JSON schema files that define out of the box cross user schemas
 - `components`: JSON schema files that define the AEP components used in the composition model to create schemas usable within UPS
-- `extensions`: JSON schema files that define vendor or solution specific components used within the composition model of AEP 
+- `extensions`: JSON schema files that define vendor or solution specific components used within the composition model of AEP
 - `package.json`: a build file for `npm` that allows the generation of Markdown from the JSON Schema source files and (later) the generation of an AEM package to be deployed on the Adobe I/O Website
 - `README.md`: this file
 - `CONTRIBUTING.md`: guidelines for contributors, covering process, conventions and design guidelines

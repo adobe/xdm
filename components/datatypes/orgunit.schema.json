@@ -26,9 +26,7 @@
           "description": "The user-friendly name for the organizational unit."
         }
       },
-      "required": [
-        "@id"
-      ]
+      "required": ["@id"]
     }
   },
   "allOf": [

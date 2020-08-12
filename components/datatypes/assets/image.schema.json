@@ -39,10 +39,7 @@
           "type": "integer"
         }
       },
-      "required": [
-        "tiff:numerator",
-        "tiff:denominator"
-      ]
+      "required": ["tiff:numerator", "tiff:denominator"]
     },
     "image": {
       "properties": {
@@ -91,10 +88,7 @@
           "title": "Resolution Unit",
           "description": "Unit used for `XResolution` and `YRresolution`. Possible values are 2 (inches) and 3 (centimeters).",
           "type": "integer",
-          "enum": [
-            2,
-            3
-          ],
+          "enum": [2, 3],
           "meta:enum": {
             "2": "inches",
             "3": "centimeters"
@@ -105,16 +99,7 @@
           "title": "Color Mode",
           "description": "The color mode or image mode determines how colors combine based on the number of channels in a color model. Different color modes result in different levels of color detail and file size. For instance, use CMYK color mode for images in a full-color print brochure, and use RGB color mode for images in web or e-mail to reduce file size while maintaining color integrity.",
           "type": "integer",
-          "enum": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            7,
-            8,
-            9
-          ],
+          "enum": [0, 1, 2, 3, 4, 7, 8, 9],
           "meta:enum": {
             "0": "Bitmap",
             "1": "Gray scale",

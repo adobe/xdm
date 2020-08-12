@@ -44,19 +44,12 @@
           "type": "string",
           "title": "Segment status",
           "description": "Current status of segment from external system normalized to active or inactive.",
-          "enum": [
-            "ACTIVE",
-            "INACTIVE",
-            "DELETED"
-          ]
+          "enum": ["ACTIVE", "INACTIVE", "DELETED"]
         }
       }
     }
   },
-  "required": [
-    "xdm:identityMap",
-    "xdm:segmentName"
-  ],
+  "required": ["xdm:identityMap", "xdm:segmentName"],
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"

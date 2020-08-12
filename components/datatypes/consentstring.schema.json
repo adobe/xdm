@@ -41,9 +41,7 @@
           "description": "If this is true, it means consent is coming with personal data."
         }
       },
-      "required": [
-        "xdm:gdprApplies"
-      ]
+      "required": ["xdm:gdprApplies"]
     }
   },
   "allOf": [

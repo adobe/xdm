@@ -18,9 +18,7 @@
         "xdm:identityProvider": {
           "description": "The identity provider that manages this principal.",
           "type": "string",
-          "meta:enum": [
-            "ims"
-          ]
+          "meta:enum": ["ims"]
         },
         "xdm:id": {
           "description": "Principal ID identifies a user account in IMS. Its value is equivalent to the standard claim, `sub` as mentioned in the [openid connect 1.0 standard claims](http://openid.net/specs/openid-connect-core-1_0.html#StandardClaim). This value can be obtained by fetching the [userinfo resource](http://openid.net/specs/openid-connect-core-1_0.html#UserInfo) for a particular user [in IMS](https://wiki.corp.adobe.com/display/ims/IMS+API+-+userinfo).",
@@ -28,9 +26,7 @@
         },
         "xdm:type": {
           "type": "string",
-          "meta:enum": [
-            "https://ns.adobe.com/xdm/common/user"
-          ],
+          "meta:enum": ["https://ns.adobe.com/xdm/common/user"],
           "format": "uri",
           "description": "The type of the identity. Acts as a processing hint to the client. Ideally, each value should be identified as a [URI](https://tools.ietf.org/html/rfc3986)."
         }
@@ -64,10 +60,6 @@
       "$ref": "#/definitions/publicprofile"
     }
   ],
-  "required": [
-    "xdm:identityProvider",
-    "xdm:id",
-    "xdm:type"
-  ],
+  "required": ["xdm:identityProvider", "xdm:id", "xdm:type"],
   "meta:status": "stable"
 }

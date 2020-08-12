@@ -234,9 +234,7 @@
                 }
               },
               "additionalProperties": false,
-              "required": [
-                "xdm"
-              ]
+              "required": ["xdm"]
             }
           },
           "patternProperties": {
@@ -275,9 +273,7 @@
             "^id3:.*$": {},
             ".+://.+": {}
           },
-          "required": [
-            "@context"
-          ],
+          "required": ["@context"],
           "additionalProperties": false
         }
       ]

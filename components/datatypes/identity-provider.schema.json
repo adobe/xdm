@@ -27,8 +27,6 @@
       "$ref": "#/definitions/name"
     }
   ],
-  "required": [
-    "@id"
-  ],
+  "required": ["@id"],
   "meta:status": "stable"
 }

@@ -47,9 +47,6 @@
       "$ref": "#/definitions/container"
     }
   ],
-  "required": [
-    "@type",
-    "xdm:items"
-  ],
+  "required": ["@type", "xdm:items"],
   "meta:status": "stable"
 }

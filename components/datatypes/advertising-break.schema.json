@@ -31,9 +31,7 @@
           "description": "The offset, in seconds, of the ad break from the start of the primary content."
         }
       },
-      "required": [
-        "@id"
-      ]
+      "required": ["@id"]
     }
   },
   "allOf": [

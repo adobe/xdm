@@ -32,9 +32,7 @@
           "description": "The length of the chapter, in seconds."
         }
       },
-      "required": [
-        "@id"
-      ]
+      "required": ["@id"]
     }
   },
   "allOf": [

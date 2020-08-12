@@ -52,11 +52,6 @@
       "$ref": "#/definitions/page"
     }
   ],
-  "required": [
-    "orderBy",
-    "start",
-    "next",
-    "count"
-  ],
+  "required": ["orderBy", "start", "next", "count"],
   "meta:status": "stable"
 }

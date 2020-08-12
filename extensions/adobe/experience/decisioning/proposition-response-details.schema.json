@@ -20,7 +20,7 @@
         "xdm:decisionEventId": {
           "type": "string",
           "title": "Decision Event Identifier",
-          "description": "The unique identifier from the decision event. For a given decision request and profile the output of the decision is a unique event. If the same decision is made again for the same profile and the output are the same options, it is ist considered a different proposition with a unique propositionID. See https://ns.adobe.com/experience/decisioning/proposition."
+          "description": "The unique identifier from the decision event. For a given decision request and profile the output of the decision is a unique event. If the same decision is made again for the same profile and the output are the same options, it is considered a different proposition with a unique propositionID. See https://ns.adobe.com/experience/decisioning/proposition."
         },
         "xdm:eventContext": {
           "type": "object",

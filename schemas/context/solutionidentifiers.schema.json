@@ -14,27 +14,27 @@
   "definitions": {
     "solutionidentifiers": {
       "properties": {
-        "xdm:aaid": {
+        "https://ns.adobe.com/experience/aaid": {
           "title": "Adobe Analytics Cloud end user IDs",
           "type": "string",
           "description": "Adobe Analytics Cloud extension to end user IDs."
         },
-        "xdm:aacustomid": {
+        "https://ns.adobe.com/experience/aacustomid": {
           "title": "Adobe Analytics Cloud Custom end user IDs",
           "type": "string",
           "description": "An Adobe Analytics custom identifier passed in on a hit."
         },
-        "xdm:acid": {
+        "https://ns.adobe.com/experience/acid": {
           "title": "Adobe Campaign end user IDs",
           "type": "string",
           "description": "Adobe Campaign extension to end user IDs."
         },
-        "xdm:tntid": {
+        "https://ns.adobe.com/experience/tntid": {
           "title": "Adobe Target end user IDs",
           "type": "string",
           "description": "Adobe Target extension to end user IDs."
         },
-        "xdm:adcloudid": {
+        "https://ns.adobe.com/experience/adcloudid": {
           "title": "Adobe Advertising Cloud end user IDs",
           "type": "string",
           "description": "Adobe Advertising Cloud extension to end user IDs."

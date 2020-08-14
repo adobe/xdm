@@ -14,17 +14,17 @@
   "definitions": {
     "deviceidentifiers": {
       "properties": {
-        "xdm:ecid": {
+        "https://ns.adobe.com/experience/ecid": {
           "title": "Adobe Experience Cloud ID",
           "type": "string",
           "description": "A unique identifier from Adobe Experience Cloud."
         },
-        "xdm:gcmid": {
+        "https://ns.adobe.com/google/gcmid": {
           "title": "Google Cloud Messaging id",
           "type": "string",
           "description": "A unique identifier for Google Cloud Messaging"
         },
-        "xdm:apnsid": {
+        "https://ns.adobe.com/apple/apnsid": {
           "title": "Apple Push Notification id",
           "type": "string",
           "description": "A unique identifier for Apple Push Notification System"

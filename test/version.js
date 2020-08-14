@@ -1,0 +1,20 @@
+const $ = require("shelljs");
+const fs = require("fs");
+const assert = require('assert');
+
+const schemas1 = $.find("schemas").filter(name => {
+  return name.match(/.*\.schema\.json$/);
+});
+const schemas2 = $.find("components").filter(name => {
+  return name.match(/.*\.schema\.json$/);
+});
+const schemas = schemas1.concat(schemas2);
+
+const package = JSON.parse(fs.readFileSync("package.json", "utf8"));
+
+describe("package.json version", () => {
+  it("config.schemas in package.json is up-to-date", () => {
+    assert.equal(schemas.length, package.config.schemas, "Open package.json and increase the minor version number then update the config.schemas parameter to " +
+    schemas.length);
+  })
+});

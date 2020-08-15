@@ -1,0 +1,40 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/decisioning/proposition-attribution-detail",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Proposition Acceptance Details",
+  "type": "object",
+  "meta:abstract": true,
+  "meta:extensible": true,
+  "description": "A decision response is used to link an experience event that is a response to a prior decision/proposition events. Each decision output has a unique ID that can be echo'ed back with an experience event. The decision is assumed to have contributed to the experience event and is now attributed with by it.",
+  "definitions": {
+    "proposition-attribution-detail-datatype": {
+      "type": "object",
+      "properties": {
+        "xdm:decisionEventId": {
+          "type": "string",
+          "title": "Decision Event Identifier",
+          "description": "The unique identifier from the decision event. For a given decision request and profile the output of the decision is a unique event. If the same decision is made again for the same profile and the output are the same options, it is considered a different proposition with a unique propositionID. See https://ns.adobe.com/experience/decisioning/proposition."
+        },
+        "xdm:decisionScope": {
+          "type": "string",
+          "title": "Decision Event Scope",
+          "description": "The scope identifier that was used as an input for the decision request. This identifier selects the locatation or placement for which the decision was requested, plus any other static context used."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/proposition-attribution-detail-datatype"
+    }
+  ]
+}

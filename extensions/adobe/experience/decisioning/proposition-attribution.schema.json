@@ -1,0 +1,43 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/decisioning/proposition_attribution",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Decision Proposition Attribution",
+  "type": "object",
+  "meta:abstract": true,
+  "meta:extensible": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "A decision attribution mixin is used to link an experience event that is a response to one or more prior decision/proposition events. Each decision output has a unique ID that can be echo'ed back with an experience event. The decision is assumed to have contributed to the experience event and is now attributed with by it.",
+  "definitions": {
+    "proposition-attribution-mixin": {
+      "type": "object",
+      "properties": {
+        "https://ns.adobe.com/experience/decisioning/attibution": {
+          "title": "Decision Proposition Attribution",
+          "type": "array",
+          "format": "uri-reference",
+          "description": "An array of prior decisions that contributed to the experience event. The experience event is attributed (at least partially) to those prior decisions/propositions. An individual profile's proposition-response history is maintained with these decision identifiers.",
+          "items": {
+            "$ref": "https://ns.adobe.com/experience/decisioning/proposition-attribution-detail"
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/identitymap"
+    },
+    {
+      "$ref": "#/definitions/proposition-attribution-mixin"
+    }
+  ]
+}

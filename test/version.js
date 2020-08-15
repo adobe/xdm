@@ -2,13 +2,9 @@ const $ = require("shelljs");
 const fs = require("fs");
 const assert = require('assert');
 
-const schemas1 = $.find("schemas").filter(name => {
+const schemas = $.find("schemas","components").filter(name => {
   return name.match(/.*\.schema\.json$/);
 });
-const schemas2 = $.find("components").filter(name => {
-  return name.match(/.*\.schema\.json$/);
-});
-const schemas = schemas1.concat(schemas2);
 
 const package = JSON.parse(fs.readFileSync("package.json", "utf8"));
 

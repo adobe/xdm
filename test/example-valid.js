@@ -3,33 +3,21 @@ const $ = require("shelljs");
 const Ajv = require("ajv");
 const fs = require("fs");
 
-const schemas1 = $.find("schemas").filter(name => {
+const schemas = $.find("schemas","components").filter(name => {
   return name.match(/.*\.schema\.json$/);
 });
-const schemas2 = $.find("components").filter(name => {
-  return name.match(/.*\.schema\.json$/);
-});
-const schemas = schemas1.concat(schemas2);
 
 const extensions = $.find("extensions").filter(name => {
   return name.match(/.*\.schema\.json$/);
 });
 
-const examples1 = $.find("schemas").filter(name => {
+const examples = $.find("schemas","components").filter(name => {
   return name.match(/.*\.example\.[0-9]+\.json$/);
 });
-const examples2 = $.find("components").filter(name => {
-  return name.match(/.*\.example\.[0-9]+\.json$/);
-});
-const examples = examples1.concat(examples2);
 
-const invalids1 = $.find("schemas").filter(name => {
+const invalids = $.find("schemas","components").filter(name => {
   return name.match(/.*\.invalid\.[0-9]+\.json$/);
 });
-const invalids2 = $.find("components").filter(name => {
-  return name.match(/.*\.invalid\.[0-9]+\.json$/);
-});
-const invalids = invalids1.concat(invalids2);
 
 let allSchemas = {};
 const validator = new Ajv({

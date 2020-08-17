@@ -7219,12 +7219,24 @@
           "properties": {
             "xdm:browserID": {
               "title": "Browser ID",
+              "meta:status": "deprecated",
               "type": "integer",
-              "description": "The Adobe Analytics identifier for the browser used."
+              "description": "The Adobe Analytics identifier for the browser used. Deprecated, use xdm:browserIDStr instead."
             },
             "xdm:operatingSystemID": {
               "title": "Operating System ID",
+              "meta:status": "deprecated",
               "type": "integer",
+              "description": "The Adobe Analytics identifier of the operating system used. Deprecated, use xdm:operatingSystemIDStr instead."
+            },
+            "xdm:browserIDStr": {
+              "title": "Browser ID",
+              "type": "string",
+              "description": "The Adobe Analytics identifier for the browser used."
+            },
+            "xdm:operatingSystemIDStr": {
+              "title": "Operating System ID",
+              "type": "string",
               "description": "The Adobe Analytics identifier of the operating system used."
             }
           }

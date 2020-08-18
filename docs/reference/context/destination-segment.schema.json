@@ -52,7 +52,7 @@
             "$ref": "#/definitions/destination-segment"
         }
     ],
-    "meta:status": "stabilizing",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:destinationID": "b297ed27-607e-4715-97ed-27607e171589",

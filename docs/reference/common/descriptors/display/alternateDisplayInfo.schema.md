@@ -68,6 +68,7 @@ Allows to modify the "title" and "description" values of the core library schema
 | [@type](#type) | `const` | Optional | Friendly Name Descriptor (this schema) |
 | [meta:enum](#metaenum) | `object` | Optional | Friendly Name Descriptor (this schema) |
 | [xdm:description](#xdmdescription) | `object` | Optional | Friendly Name Descriptor (this schema) |
+| [xdm:note](#xdmnote) | `object` | Optional | Friendly Name Descriptor (this schema) |
 | [xdm:sourceItem](#xdmsourceitem) | complex | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceitem) |
 | [xdm:sourceProperty](#xdmsourceproperty) | `string` | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceproperty) |
 | [xdm:sourceSchema](#xdmsourceschema) | `string` | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceschema) |
@@ -147,6 +148,30 @@ When present, user friendly description to display.
 * defined in this schema
 
 ### xdm:description Type
+
+
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+
+
+
+
+
+
+## xdm:note
+### Note
+
+When present, user friendly note to display. Similar to a description, but provides more details about the actual usage of the field.
+
+`xdm:note`
+* is optional
+* type: `object`
+* defined in this schema
+
+### xdm:note Type
 
 
 `object` with following properties:

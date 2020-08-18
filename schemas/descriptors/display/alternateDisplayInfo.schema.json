@@ -58,23 +58,34 @@
           "type": "object",
           "patternProperties": {
             ".+_.+": {
-              "oneOf": [{ "type": "object" }, { "type": "string" }]
+              "oneOf": [
+                {"type": "object"},
+                {"type": "string"}
+              ]
             }
           }
         }
       },
       "anyOf": [
         {
-          "required": ["xdm:title"]
+          "required": [
+            "xdm:title"
+          ]
         },
         {
-          "required": ["xdm:description"]
+          "required": [
+            "xdm:description"
+          ]
         },
         {
-          "required": ["meta:enum"]
+          "required": [
+            "meta:enum"
+          ]
         }
       ],
-      "required": ["xdm:sourceProperty"]
+      "required": [
+        "xdm:sourceProperty"
+      ]
     }
   },
   "allOf": [

@@ -19,6 +19,60 @@ Experience event privacy schema captures consent information on the hit.
 ## Experience event privacy mixin Example
 ```json
 {
+  "xdm:consentsAndPreferences": {
+    "xdm:privacyOptOuts": [
+      {
+        "xdm:optOutType": "general_opt_out",
+        "xdm:optOutValue": "in",
+        "xdm:timestamp": "2019-01-01T15:52:25+00:00",
+        "xdm:basisOfProcessing": "legitimate_interest"
+      }
+    ],
+    "xdm:personalizationPreferences": {
+      "xdm:default": {
+        "xdm:choice": "unknown",
+        "xdm:timestamp": "2019-01-01T15:52:25+00:00",
+        "xdm:basisOfProcessing": "consent"
+      },
+      "xdm:details": [
+        {
+          "xdm:type": "email",
+          "xdm:choice": "in"
+        }
+      ]
+    },
+    "xdm:marketingPreferences": {
+      "xdm:default": {
+        "xdm:choice": "unknown"
+      },
+      "xdm:details": [
+        {
+          "xdm:type": "email",
+          "xdm:choice": "in",
+          "xdm:subscriptions": {
+            "weekly_mailer": {
+              "xdm:choice": "out",
+              "xdm:timestamp": "2019-02-03T15:52:25+00:00"
+            },
+            "daily_newsletter": {
+              "xdm:choice": "in"
+            }
+          }
+        },
+        {
+          "xdm:type": "iot",
+          "xdm:choice": "out",
+          "xdm:timestamp": "2019-01-01T15:52:25+00:00",
+          "xdm:basisOfProcessing": "legitimate_interest",
+          "xdm:subscriptions": {
+            "out_of_milk": {
+              "xdm:choice": "in"
+            }
+          }
+        }
+      ]
+    }
+  },
   "xdm:consentStrings": [
     {
       "xdm:consentStandard": "IAB TCF",
@@ -36,6 +90,7 @@ Experience event privacy schema captures consent information on the hit.
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [xdm:consentStrings](#xdmconsentstrings) | Consent String | Optional | Experience event privacy mixin (this schema) |
+| [xdm:consentsAndPreferences](#xdmconsentsandpreferences) | complex | Optional | Experience event privacy mixin (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:consentStrings
@@ -57,6 +112,30 @@ All items must be of the type:
 
 
 
+
+
+
+
+
+## xdm:consentsAndPreferences
+### Consents, Personalization and Marketing Preferences
+
+`xdm:consentsAndPreferences`
+* is optional
+* type: complex
+* defined in this schema
+
+### xdm:consentsAndPreferences Type
+
+Unknown type ``.
+
+```json
+{
+  "title": "Consents, Personalization and Marketing Preferences",
+  "ref": "https://ns.adobe.com/xdm/context/consentpreferences",
+  "simpletype": "complex"
+}
+```
 
 
 

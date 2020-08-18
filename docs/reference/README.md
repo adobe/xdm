@@ -218,6 +218,8 @@
 * [Point of interest details](./context/poi-detail.schema.md) – `https://ns.adobe.com/xdm/context/poi-detail` (Stable)
 * [Point of interest interaction](./context/poi-interaction.schema.md) – `https://ns.adobe.com/xdm/context/poi-interaction` (Stable)
 * [Primary asset view details](./context/media-timed-asset-view-details.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-asset-view-details` (Stable)
+* [Privacy/Marketing Preferences (Consent)](./context/consentpreferences.schema.md) – `https://ns.adobe.com/xdm/context/consent-preferences` (Experimental)
+* [Privacy/Marketing Preferences (Consent)](./context/profile-privacy.schema.md) – `https://ns.adobe.com/xdm/context/profile-privacy` (Stable)
 * [Profile Other Work Details](./context/profile-other-work-details.schema.md) – `https://ns.adobe.com/xdm/context/profile-other-work-details` (Experimental)
 * [Profile Phones](./context/profile-phones.schema.md) – `https://ns.adobe.com/xdm/context/profile-phones` (Experimental)
 * [Profile direct marketing](./context/profile-directmarketing.schema.md) – `https://ns.adobe.com/xdm/context/profile-directmarketing` (Stable)
@@ -225,7 +227,6 @@
 * [Profile person details](./context/profile-person-details.schema.md) – `https://ns.adobe.com/xdm/context/profile-person-details` (Stable)
 * [Profile personal details](./context/profile-personal-details.schema.md) – `https://ns.adobe.com/xdm/context/profile-personal-details` (Stable)
 * [Profile preferences details](./context/profile-preferences-details.schema.md) – `https://ns.adobe.com/xdm/context/profile-preferences-details` (Stable)
-* [Profile privacy](./context/profile-privacy.schema.md) – `https://ns.adobe.com/xdm/context/profile-privacy` (Stable)
 * [Profile push details](./context/profile-push-details.schema.md) – `https://ns.adobe.com/xdm/context/profile-push-details` (Stable)
 * [Profile segmentation](./context/profile-segmentation.schema.md) – `https://ns.adobe.com/xdm/context/profile-segmentation` (Stable)
 * [Profile stitch](./context/profilestitch.schema.md) – `https://ns.adobe.com/xdm/context/profileStitch` (Stable)
@@ -281,6 +282,15 @@
 * [Storage Quota](./content/repository-policies/quota.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/quota` (Stable)
 * [Versioning](./content/repository-policies/versioning.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/versioning` (Stable)
 
+## /external/id3/
+
+* [Audio](./external/id3/audio.schema.md) – `https://id3.org/id3v2.4/audio` (Stable)
+
+## /external/hal/
+
+* [HAL Link](./external/hal/hal-link.schema.md) – `https://ns.adobe.com/xdm/external/hal/link` (Stable)
+* [HAL Resource](./external/hal/hal.schema.md) – `https://ns.adobe.com/xdm/external/hal/resource` (Stable)
+
 ## /external/activity-streams-2/
 
 * [Activity](./external/activity-streams-2/activity.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/activity` (Stable)
@@ -295,29 +305,6 @@
 * [Object](./external/activity-streams-2/object.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/object` (Stable)
 * [RDF Language Tagged String](./external/activity-streams-2/rdf-langstring.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langstring` (Stable)
 
-## /external/id3/
-
-* [Audio](./external/id3/audio.schema.md) – `https://id3.org/id3v2.4/audio` (Stable)
-
-## /external/hal/
-
-* [HAL Link](./external/hal/hal-link.schema.md) – `https://ns.adobe.com/xdm/external/hal/link` (Stable)
-* [HAL Resource](./external/hal/hal.schema.md) – `https://ns.adobe.com/xdm/external/hal/resource` (Stable)
-
-## /external/iptc/
-
-* [Creator](./external/iptc/creator.schema.md) – `http://www.iptc.org/creator` (Stable)
-* [Episode](./external/iptc/episode.schema.md) – `http://www.iptc.org/episode` (Stable)
-* [Rating](./external/iptc/rating.schema.md) – `http://www.iptc.org/rating` (Stable)
-* [Season](./external/iptc/season.schema.md) – `http://www.iptc.org/season` (Stable)
-* [Series](./external/iptc/series.schema.md) – `http://www.iptc.org/series` (Stable)
-
-## /external/schema/
-
-* [Geo Circle](./external/schema/geocircle.schema.md) – `http://schema.org/GeoCircle` (Stable)
-* [Geo Coordinates](./external/schema/geocoordinates.schema.md) – `http://schema.org/GeoCoordinates` (Stable)
-* [Geo Shape](./external/schema/geoshape.schema.md) – `http://schema.org/GeoShape` (Stable)
-
 ## /external/repo/
 
 * [Access Control Entry](./external/repo/accesscontrolentry.schema.md) – `https://ns.adobe.com/xdm/external/repo/accesscontrolentry` (Stable)
@@ -328,15 +315,11 @@
 * [Effective Privileges](./external/repo/effectiveprivileges.schema.md) – `https://ns.adobe.com/xdm/external/repo/effectiveprivileges` (Stable)
 * [Sub-Directory](./external/repo/sub-directory.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/sub-directory` (Stable)
 
-## /common/descriptors/
+## /external/schema/
 
-* [Item Selector](./common/descriptors/itemselector.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/itemselector` (Stable)
-* [Relationship Descriptor](./common/descriptors/relationshipdescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/relationshipdescriptor` (Stable)
-* [Schema Descriptor](./common/descriptors/schemadescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/schemadescriptor` (Stable)
-
-## /common/notifications/
-
-* [Customer Data Ingestion Notifications Event](./common/notifications/ingestion.schema.md) – `https://ns.adobe.com/xdm/common/notifications/ingestion` (Stable)
+* [Geo Circle](./external/schema/geocircle.schema.md) – `http://schema.org/GeoCircle` (Stable)
+* [Geo Coordinates](./external/schema/geocoordinates.schema.md) – `http://schema.org/GeoCoordinates` (Stable)
+* [Geo Shape](./external/schema/geoshape.schema.md) – `http://schema.org/GeoShape` (Stable)
 
 ## /common/event/
 
@@ -348,14 +331,27 @@
 * [Unpublished Event](./common/event/unpublished.schema.md) – `https://ns.adobe.com/xdm/common/event/unpublished` (Stable)
 * [Updated Event](./common/event/updated.schema.md) – `https://ns.adobe.com/xdm/common/event/updated` (Stable)
 
+## /external/iptc/
+
+* [Creator](./external/iptc/creator.schema.md) – `http://www.iptc.org/creator` (Stable)
+* [Episode](./external/iptc/episode.schema.md) – `http://www.iptc.org/episode` (Stable)
+* [Rating](./external/iptc/rating.schema.md) – `http://www.iptc.org/rating` (Stable)
+* [Season](./external/iptc/season.schema.md) – `http://www.iptc.org/season` (Stable)
+* [Series](./external/iptc/series.schema.md) – `http://www.iptc.org/series` (Stable)
+
+## /common/notifications/
+
+* [Customer Data Ingestion Notifications Event](./common/notifications/ingestion.schema.md) – `https://ns.adobe.com/xdm/common/notifications/ingestion` (Stable)
+
+## /common/descriptors/
+
+* [Item Selector](./common/descriptors/itemselector.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/itemselector` (Stable)
+* [Relationship Descriptor](./common/descriptors/relationshipdescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/relationshipdescriptor` (Stable)
+* [Schema Descriptor](./common/descriptors/schemadescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/schemadescriptor` (Stable)
+
 ## /common/descriptors/display/
 
 * [Friendly Name Descriptor](./common/descriptors/display/alternateDisplayInfo.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/alternateDisplayInfo` (Stable)
-
-## /common/descriptors/identity/
-
-* [Identity Descriptor](./common/descriptors/identity/descriptorIdentity.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/descriptorIdentity` (Stable)
-* [Identity Reference Descriptor](./common/descriptors/identity/descriptorReferenceIdentity.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/descriptorReferenceIdentity` (Stable)
 
 ## /common/descriptors/relationship/
 
@@ -363,6 +359,11 @@
 * [Many to Many Relationship Descriptor](./common/descriptors/relationship/descriptorManyToMany.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/descriptorManyToMany` (Stable)
 * [One to Many Relationship Descriptor](./common/descriptors/relationship/descriptorOneToMany.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/descriptorOneToMany` (Stable)
 * [One to One Relationship Descriptor](./common/descriptors/relationship/descriptorOneToOne.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/descriptorOneToOne` (Stable)
+
+## /common/descriptors/identity/
+
+* [Identity Descriptor](./common/descriptors/identity/descriptorIdentity.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/descriptorIdentity` (Stable)
+* [Identity Reference Descriptor](./common/descriptors/identity/descriptorReferenceIdentity.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/descriptorReferenceIdentity` (Stable)
 
 ## /common/descriptors/search/
 

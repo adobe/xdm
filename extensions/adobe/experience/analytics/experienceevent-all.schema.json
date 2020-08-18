@@ -7232,11 +7232,13 @@
             "xdm:browserIDStr": {
               "title": "Browser ID",
               "type": "string",
+              "pattern": "^[0-9]+",
               "description": "The Adobe Analytics identifier for the browser used."
             },
             "xdm:operatingSystemIDStr": {
               "title": "Operating System ID",
               "type": "string",
+              "pattern": "^[0-9]+",
               "description": "The Adobe Analytics identifier of the operating system used."
             }
           }

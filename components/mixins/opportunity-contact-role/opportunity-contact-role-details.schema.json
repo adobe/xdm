@@ -10,7 +10,9 @@
   "title": "XDM Buying Group Additional Properties",
   "type": "object",
   "meta:extensible": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/opportunity-contact-role"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/opportunity-contact-role"
+  ],
   "description": "Opportunity Contact Role additional properties",
   "definitions": {
     "opportunity-contact-role-details": {

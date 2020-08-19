@@ -122,7 +122,8 @@
           "description": "The Facebook news feed channel OptInOut.",
           "type": "string",
           "default": "not_provided",
-          "enum": ["not_provided", "pending", "in", "out"],          "meta:enum": {
+          "enum": ["not_provided", "pending", "in", "out"],
+          "meta:enum": {
             "not_provided": "Not provided",
             "pending": "Pending verification",
             "in": "Opt-in: the user explicitly consents to receiving messages.",
@@ -134,7 +135,8 @@
           "description": "Fax or telefacsimile channel OptInOut.",
           "type": "string",
           "default": "not_provided",
-          "enum": ["not_provided", "pending", "in", "out"],          "meta:enum": {
+          "enum": ["not_provided", "pending", "in", "out"],
+          "meta:enum": {
             "not_provided": "Not provided",
             "pending": "Pending verification",
             "in": "Opt-in: the user explicitly consents to receiving messages.",
@@ -146,7 +148,8 @@
           "description": "Google Cloud Messaging (GCM) channel OptInOut.",
           "type": "string",
           "default": "not_provided",
-          "enum": ["not_provided", "pending", "in", "out"],          "meta:enum": {
+          "enum": ["not_provided", "pending", "in", "out"],
+          "meta:enum": {
             "not_provided": "Not provided",
             "pending": "Pending verification",
             "in": "Opt-in: the user explicitly consents to receiving messages.",
@@ -158,7 +161,8 @@
           "description": "Line Platform Notification (LINE) channel OptInOut.",
           "type": "string",
           "default": "not_provided",
-          "enum": ["not_provided", "pending", "in", "out"],          "meta:enum": {
+          "enum": ["not_provided", "pending", "in", "out"],
+          "meta:enum": {
             "not_provided": "Not provided",
             "pending": "Pending verification",
             "in": "Opt-in: the user explicitly consents to receiving messages.",
@@ -170,7 +174,8 @@
           "description": "Native mobile applications that are installed through an app store channel OptInOut.",
           "type": "string",
           "default": "not_provided",
-          "enum": ["not_provided", "pending", "in", "out"],          "meta:enum": {
+          "enum": ["not_provided", "pending", "in", "out"],
+          "meta:enum": {
             "not_provided": "Not provided",
             "pending": "Pending verification",
             "in": "Opt-in: the user explicitly consents to receiving messages.",
@@ -182,7 +187,8 @@
           "description": "Microsoft Push Notification Service (MPNS) channel OptInOut.",
           "type": "string",
           "default": "not_provided",
-          "enum": ["not_provided", "pending", "in", "out"],          "meta:enum": {
+          "enum": ["not_provided", "pending", "in", "out"],
+          "meta:enum": {
             "not_provided": "Not provided",
             "pending": "Pending verification",
             "in": "Opt-in: the user explicitly consents to receiving messages.",
@@ -194,7 +200,8 @@
           "description": "The telephone channel OptInOut.",
           "type": "string",
           "default": "not_provided",
-          "enum": ["not_provided", "pending", "in", "out"],          "meta:enum": {
+          "enum": ["not_provided", "pending", "in", "out"],
+          "meta:enum": {
             "not_provided": "Not provided",
             "pending": "Pending verification",
             "in": "Opt-in: the user explicitly consents to receiving messages.",
@@ -206,7 +213,8 @@
           "description": "Short Message Service delivered to a mobile phone channel OptInOut.",
           "type": "string",
           "default": "not_provided",
-          "enum": ["not_provided", "pending", "in", "out"],          "meta:enum": {
+          "enum": ["not_provided", "pending", "in", "out"],
+          "meta:enum": {
             "not_provided": "Not provided",
             "pending": "Pending verification",
             "in": "Opt-in: the user explicitly consents to receiving messages.",
@@ -218,7 +226,8 @@
           "description": "Twitter feed channel OptInOut.",
           "type": "string",
           "default": "not_provided",
-          "enum": ["not_provided", "pending", "in", "out"],          "meta:enum": {
+          "enum": ["not_provided", "pending", "in", "out"],
+          "meta:enum": {
             "not_provided": "Not provided",
             "pending": "Pending verification",
             "in": "Opt-in: the user explicitly consents to receiving messages.",
@@ -230,7 +239,8 @@
           "description": "World Wide Web and mobile web channel OptInOut.",
           "type": "string",
           "default": "not_provided",
-          "enum": ["not_provided", "pending", "in", "out"],          "meta:enum": {
+          "enum": ["not_provided", "pending", "in", "out"],
+		  "meta:enum": {
             "not_provided": "Not provided",
             "pending": "Pending verification",
             "in": "Opt-in: the user explicitly consents to receiving messages.",
@@ -242,7 +252,8 @@
           "description": "Web Page channel OptInOut.",
           "type": "string",
           "default": "not_provided",
-          "enum": ["not_provided", "pending", "in", "out"],          "meta:enum": {
+          "enum": ["not_provided", "pending", "in", "out"],
+          "meta:enum": {
             "not_provided": "Not provided",
             "pending": "Pending verification",
             "in": "Opt-in: the user explicitly consents to receiving messages.",
@@ -254,7 +265,8 @@
           "description": "WeChat Platform Notification channel OptInOut.",
           "type": "string",
           "default": "not_provided",
-          "enum": ["not_provided", "pending", "in", "out"],          "meta:enum": {
+          "enum": ["not_provided", "pending", "in", "out"],
+          "meta:enum": {
             "not_provided": "Not provided",
             "pending": "Pending verification",
             "in": "Opt-in: the user explicitly consents to receiving messages.",
@@ -266,7 +278,8 @@
           "description": "Windows Push Notification Service (WNS) channel OptInOut.",
           "type": "string",
           "default": "not_provided",
-          "enum": ["not_provided", "pending", "in", "out"],          "meta:enum": {
+          "enum": ["not_provided", "pending", "in", "out"],
+          "meta:enum": {
             "not_provided": "Not provided",
             "pending": "Pending verification",
             "in": "Opt-in: the user explicitly consents to receiving messages.",

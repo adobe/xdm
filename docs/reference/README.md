@@ -4,30 +4,6 @@
 
 
 
-## /assets/
-
-* [Aggregated Asset](./assets/aggregated-asset.schema.md) – `https://ns.adobe.com/xdm/assets/aggregated-asset` (Stable)
-* [Artboard](./assets/artboard.schema.md) – `https://ns.adobe.com/xdm/assets/artboard` (Stable)
-* [Copyright Owner](./assets/copyright-owner.schema.md) – `https://ns.adobe.com/xdm/assets/copyright-owner` (Stable)
-* [Font](./assets/font.schema.md) – `https://ns.adobe.com/xdm/assets/font` (Stable)
-* [Image](./assets/image.schema.md) – `https://ns.adobe.com/xdm/assets/image` (Stable)
-* [Language Alternative](./assets/language-alternative.schema.md) – `https://ns.adobe.com/xdm/assets/language-alternative` (Stable)
-* [Layer](./assets/layer.schema.md) – `https://ns.adobe.com/xdm/assets/layer` (Stable)
-* [Layer Group](./assets/layer-group.schema.md) – `https://ns.adobe.com/xdm/assets/layer-group` (Stable)
-* [Rectangular Object (measured in variable unit)](./assets/variable-unit-rectangular.schema.md) – `https://ns.adobe.com/xdm/assets/variable-unit-rectangular` (Stable)
-* [Resource Event](./assets/resource-event.schema.md) – `https://ns.adobe.com/xdm/assets/resource-event` (Stable)
-* [Simple Rectangular Area](./assets/rectangular.schema.md) – `https://ns.adobe.com/xdm/assets/rectangular` (Stable)
-* [Video](./assets/video.schema.md) – `https://ns.adobe.com/xdm/assets/video` (Stable)
-
-## /content/
-
-* [Component container](./content/component-container.schema.md) – `https://ns.adobe.com/xdm/content/component-container` (Stable)
-* [Componentized page](./content/componentized-page.schema.md) – `https://ns.adobe.com/xdm/content/componentized-page` (Stable)
-* [Content repository](./content/repository.schema.md) – `https://ns.adobe.com/xdm/content/repository` (Stable)
-* [Page component](./content/page-component.schema.md) – `https://ns.adobe.com/xdm/content/page-component` (Stable)
-* [Product](./content/product.schema.md) – `https://ns.adobe.com/xdm/context/product` (Stable)
-* [Product list item](./content/productlistitem.schema.md) – `https://ns.adobe.com/xdm/content/productlistitem` (Stable)
-
 ## /channels/
 
 * [Amazon Device Messaging (ADM) channel](./channels/adm.schema.md) – `https://ns.adobe.com/xdm/channels/adm` (Stable)
@@ -50,6 +26,30 @@
 * [WeChat Channel](./channels/wechat.schema.md) – `https://ns.adobe.com/xdm/channels/wechat` (Stable)
 * [Web Channel](./channels/web.schema.md) – `https://ns.adobe.com/xdm/channels/web` (Stable)
 * [Windows Push Notification Service (WNS) Channel](./channels/wns.schema.md) – `https://ns.adobe.com/xdm/channels/wns` (Stable)
+
+## /content/
+
+* [Component container](./content/component-container.schema.md) – `https://ns.adobe.com/xdm/content/component-container` (Stable)
+* [Componentized page](./content/componentized-page.schema.md) – `https://ns.adobe.com/xdm/content/componentized-page` (Stable)
+* [Content repository](./content/repository.schema.md) – `https://ns.adobe.com/xdm/content/repository` (Stable)
+* [Page component](./content/page-component.schema.md) – `https://ns.adobe.com/xdm/content/page-component` (Stable)
+* [Product](./content/product.schema.md) – `https://ns.adobe.com/xdm/context/product` (Stable)
+* [Product list item](./content/productlistitem.schema.md) – `https://ns.adobe.com/xdm/content/productlistitem` (Stable)
+
+## /assets/
+
+* [Aggregated Asset](./assets/aggregated-asset.schema.md) – `https://ns.adobe.com/xdm/assets/aggregated-asset` (Stable)
+* [Artboard](./assets/artboard.schema.md) – `https://ns.adobe.com/xdm/assets/artboard` (Stable)
+* [Copyright Owner](./assets/copyright-owner.schema.md) – `https://ns.adobe.com/xdm/assets/copyright-owner` (Stable)
+* [Font](./assets/font.schema.md) – `https://ns.adobe.com/xdm/assets/font` (Stable)
+* [Image](./assets/image.schema.md) – `https://ns.adobe.com/xdm/assets/image` (Stable)
+* [Language Alternative](./assets/language-alternative.schema.md) – `https://ns.adobe.com/xdm/assets/language-alternative` (Stable)
+* [Layer](./assets/layer.schema.md) – `https://ns.adobe.com/xdm/assets/layer` (Stable)
+* [Layer Group](./assets/layer-group.schema.md) – `https://ns.adobe.com/xdm/assets/layer-group` (Stable)
+* [Rectangular Object (measured in variable unit)](./assets/variable-unit-rectangular.schema.md) – `https://ns.adobe.com/xdm/assets/variable-unit-rectangular` (Stable)
+* [Resource Event](./assets/resource-event.schema.md) – `https://ns.adobe.com/xdm/assets/resource-event` (Stable)
+* [Simple Rectangular Area](./assets/rectangular.schema.md) – `https://ns.adobe.com/xdm/assets/rectangular` (Stable)
+* [Video](./assets/video.schema.md) – `https://ns.adobe.com/xdm/assets/video` (Stable)
 
 ## /common/
 
@@ -282,10 +282,6 @@
 * [Storage Quota](./content/repository-policies/quota.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/quota` (Stable)
 * [Versioning](./content/repository-policies/versioning.schema.md) – `https://ns.adobe.com/xdm/content/repository-policies/versioning` (Stable)
 
-## /external/id3/
-
-* [Audio](./external/id3/audio.schema.md) – `https://id3.org/id3v2.4/audio` (Stable)
-
 ## /external/hal/
 
 * [HAL Link](./external/hal/hal-link.schema.md) – `https://ns.adobe.com/xdm/external/hal/link` (Stable)
@@ -305,6 +301,30 @@
 * [Object](./external/activity-streams-2/object.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/object` (Stable)
 * [RDF Language Tagged String](./external/activity-streams-2/rdf-langstring.schema.md) – `https://ns.adobe.com/xdm/external/activity-streams-2/rdf-langstring` (Stable)
 
+## /external/schema/
+
+* [Geo Circle](./external/schema/geocircle.schema.md) – `http://schema.org/GeoCircle` (Stable)
+* [Geo Coordinates](./external/schema/geocoordinates.schema.md) – `http://schema.org/GeoCoordinates` (Stable)
+* [Geo Shape](./external/schema/geoshape.schema.md) – `http://schema.org/GeoShape` (Stable)
+
+## /external/id3/
+
+* [Audio](./external/id3/audio.schema.md) – `https://id3.org/id3v2.4/audio` (Stable)
+
+## /external/iptc/
+
+* [Creator](./external/iptc/creator.schema.md) – `http://www.iptc.org/creator` (Stable)
+* [Episode](./external/iptc/episode.schema.md) – `http://www.iptc.org/episode` (Stable)
+* [Rating](./external/iptc/rating.schema.md) – `http://www.iptc.org/rating` (Stable)
+* [Season](./external/iptc/season.schema.md) – `http://www.iptc.org/season` (Stable)
+* [Series](./external/iptc/series.schema.md) – `http://www.iptc.org/series` (Stable)
+
+## /common/descriptors/
+
+* [Item Selector](./common/descriptors/itemselector.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/itemselector` (Stable)
+* [Relationship Descriptor](./common/descriptors/relationshipdescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/relationshipdescriptor` (Stable)
+* [Schema Descriptor](./common/descriptors/schemadescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/schemadescriptor` (Stable)
+
 ## /external/repo/
 
 * [Access Control Entry](./external/repo/accesscontrolentry.schema.md) – `https://ns.adobe.com/xdm/external/repo/accesscontrolentry` (Stable)
@@ -314,12 +334,6 @@
 * [Directory](./external/repo/directory.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/directory` (Stable)
 * [Effective Privileges](./external/repo/effectiveprivileges.schema.md) – `https://ns.adobe.com/xdm/external/repo/effectiveprivileges` (Stable)
 * [Sub-Directory](./external/repo/sub-directory.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0/sub-directory` (Stable)
-
-## /external/schema/
-
-* [Geo Circle](./external/schema/geocircle.schema.md) – `http://schema.org/GeoCircle` (Stable)
-* [Geo Coordinates](./external/schema/geocoordinates.schema.md) – `http://schema.org/GeoCoordinates` (Stable)
-* [Geo Shape](./external/schema/geoshape.schema.md) – `http://schema.org/GeoShape` (Stable)
 
 ## /common/event/
 
@@ -331,27 +345,22 @@
 * [Unpublished Event](./common/event/unpublished.schema.md) – `https://ns.adobe.com/xdm/common/event/unpublished` (Stable)
 * [Updated Event](./common/event/updated.schema.md) – `https://ns.adobe.com/xdm/common/event/updated` (Stable)
 
-## /external/iptc/
-
-* [Creator](./external/iptc/creator.schema.md) – `http://www.iptc.org/creator` (Stable)
-* [Episode](./external/iptc/episode.schema.md) – `http://www.iptc.org/episode` (Stable)
-* [Rating](./external/iptc/rating.schema.md) – `http://www.iptc.org/rating` (Stable)
-* [Season](./external/iptc/season.schema.md) – `http://www.iptc.org/season` (Stable)
-* [Series](./external/iptc/series.schema.md) – `http://www.iptc.org/series` (Stable)
-
 ## /common/notifications/
 
 * [Customer Data Ingestion Notifications Event](./common/notifications/ingestion.schema.md) – `https://ns.adobe.com/xdm/common/notifications/ingestion` (Stable)
 
-## /common/descriptors/
-
-* [Item Selector](./common/descriptors/itemselector.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/itemselector` (Stable)
-* [Relationship Descriptor](./common/descriptors/relationshipdescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/relationshipdescriptor` (Stable)
-* [Schema Descriptor](./common/descriptors/schemadescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/schemadescriptor` (Stable)
-
 ## /common/descriptors/display/
 
 * [Friendly Name Descriptor](./common/descriptors/display/alternateDisplayInfo.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/alternateDisplayInfo` (Stable)
+
+## /common/descriptors/search/
+
+* [Search Descriptor](./common/descriptors/search/searchdescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/searchdescriptor` (Stable)
+
+## /common/descriptors/identity/
+
+* [Identity Descriptor](./common/descriptors/identity/descriptorIdentity.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/descriptorIdentity` (Stable)
+* [Identity Reference Descriptor](./common/descriptors/identity/descriptorReferenceIdentity.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/descriptorReferenceIdentity` (Stable)
 
 ## /common/descriptors/relationship/
 
@@ -359,13 +368,4 @@
 * [Many to Many Relationship Descriptor](./common/descriptors/relationship/descriptorManyToMany.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/descriptorManyToMany` (Stable)
 * [One to Many Relationship Descriptor](./common/descriptors/relationship/descriptorOneToMany.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/descriptorOneToMany` (Stable)
 * [One to One Relationship Descriptor](./common/descriptors/relationship/descriptorOneToOne.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/descriptorOneToOne` (Stable)
-
-## /common/descriptors/identity/
-
-* [Identity Descriptor](./common/descriptors/identity/descriptorIdentity.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/descriptorIdentity` (Stable)
-* [Identity Reference Descriptor](./common/descriptors/identity/descriptorReferenceIdentity.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/descriptorReferenceIdentity` (Stable)
-
-## /common/descriptors/search/
-
-* [Search Descriptor](./common/descriptors/search/searchdescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/searchdescriptor` (Stable)
 

@@ -14,7 +14,6 @@ This schema captures privacy, personalization and marketing preferences (consent
 
 * Privacy/Marketing Preferences (Consent) `https://ns.adobe.com/xdm/context/profile-privacy`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Privacy/Marketing Preferences (Consent)](consentpreferences.schema.md) `https://ns.adobe.com/xdm/context/consent-preferences`
 
 
 ## Privacy/Marketing Preferences (Consent) Example
@@ -134,7 +133,7 @@ This schema captures privacy, personalization and marketing preferences (consent
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [xdm:identityPrivacyInfo](#xdmidentityprivacyinfo) | `object` | Optional | Privacy/Marketing Preferences (Consent) (this schema) |
-| [xdm:optOutConsentLevel](#xdmoptoutconsentlevel) | Privacy/Marketing Preferences (Consent) | Optional | Privacy/Marketing Preferences (Consent) (this schema) |
+| [xdm:optOutConsentLevel](#xdmoptoutconsentlevel) | `object` | Optional | Privacy/Marketing Preferences (Consent) (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:identityPrivacyInfo
@@ -168,7 +167,7 @@ Global (User/Profile-level) Privacy/Personalization/Marketing Preferences.
 
 `xdm:optOutConsentLevel`
 * is optional
-* type: Privacy/Marketing Preferences (Consent)
+* type: `object`
 * defined in this schema
 
 ### xdm:optOutConsentLevel Type

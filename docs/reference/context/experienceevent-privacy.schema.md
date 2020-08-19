@@ -14,7 +14,6 @@ Experience event privacy schema captures consent information on the hit.
 
 * Experience event privacy mixin `https://ns.adobe.com/xdm/context/experienceevent-privacy`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Privacy/Marketing Preferences (Consent)](consentpreferences.schema.md) `https://ns.adobe.com/xdm/context/consent-preferences`
 
 
 ## Experience event privacy mixin Example
@@ -91,7 +90,7 @@ Experience event privacy schema captures consent information on the hit.
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [xdm:consentStrings](#xdmconsentstrings) | Consent String | Optional | Experience event privacy mixin (this schema) |
-| [xdm:consentsAndPreferences](#xdmconsentsandpreferences) | Privacy/Marketing Preferences (Consent) | Optional | Experience event privacy mixin (this schema) |
+| [xdm:consentsAndPreferences](#xdmconsentsandpreferences) | complex | Optional | Experience event privacy mixin (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:consentStrings
@@ -123,13 +122,20 @@ All items must be of the type:
 
 `xdm:consentsAndPreferences`
 * is optional
-* type: Privacy/Marketing Preferences (Consent)
+* type: complex
 * defined in this schema
 
 ### xdm:consentsAndPreferences Type
 
+Unknown type ``.
 
-* [Privacy/Marketing Preferences (Consent)](consentpreferences.schema.md) – `https://ns.adobe.com/xdm/context/consent-preferences`
+```json
+{
+  "title": "Consents, Personalization and Marketing Preferences",
+  "ref": "https://ns.adobe.com/xdm/context/consentpreferences",
+  "simpletype": "complex"
+}
+```
 
 
 

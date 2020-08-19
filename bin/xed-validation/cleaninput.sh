@@ -12,15 +12,7 @@ rm -rf tempinput/components/datatypes/page.*
 rm -rf tempinput/components/datatypes/selfservice.*
 rm -rf tempinput/components/datatypes/principal.*
 rm -rf tempinput/components/datatypes/identity-provider.*
-rm -rf tempinput/components/datatypes/eventenvelope.*
 rm -rf tempinput/components/datatypes/context.jsonld
-rm -rf tempinput/components/datatypes/content/component*.*
-rm -rf tempinput/components/datatypes/content/page-*.*
-rm -rf tempinput/components/datatypes/external/activity-streams-2
-rm -rf tempinput/components/datatypes/external/hal
-rm -rf tempinput/components/datatypes/external/repo/access*.*
-rm -rf tempinput/components/datatypes/external/repo/asset.*
-rm -rf tempinput/components/datatypes/external/repo/*directory*.*
 
 find tempinput -name *.example.*.json -type f -delete
 find tempinput -name *.md -type f -delete

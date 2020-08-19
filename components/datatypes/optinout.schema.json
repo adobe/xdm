@@ -240,7 +240,7 @@
           "type": "string",
           "default": "not_provided",
           "enum": ["not_provided", "pending", "in", "out"],
-		  "meta:enum": {
+          "meta:enum": {
             "not_provided": "Not provided",
             "pending": "Pending verification",
             "in": "Opt-in: the user explicitly consents to receiving messages.",

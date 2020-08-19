@@ -25,7 +25,7 @@ XDM incorporates or builds a number of existing standards and specifications.
 Prior to XDM, Adobe defined and standardized the Extensible Metadata Platform (XMP) throughout its Creative Cloud products.
 The vocabularies and operations of XMP entities are essential for those products as is XDM for the wider experience technology ecosystem.
 
-In XDM, these two efforts are integrated via the Resource Description Framework (RDF), which is a Word Wide Web Consortium (W3C) standard for data model interchange.
+In XDM, these two efforts are integrated via the Resource Description Framework (RDF), which is a World Wide Web Consortium (W3C) standard for data model interchange.
 XMP models are, at their core, RDF models expressed in an XML-based serialization.
 XDM models are, at their core, also RDF models, expressed in JSON-LD.
 Either one can be translated to the other using the underlying RDF model as an intermediary.

@@ -1,0 +1,55 @@
+{
+  "xdm:activityDueDateTime": "2020-05-20T00:00:00+00:00",
+  "xdm:activityStartDateTime": "2020-05-19T09:05:25+00:00",
+  "xdm:activityEndDateTime": "2020-05-19T18:10:00+00:00",
+  "xdm:isTask": false,
+  "xdm:isCompleted": false,
+  "xdm:isDeleted": false,
+  "xdm:isHighPriority": false,
+  "xdm:accountID": "423",
+  "xdm:division": "div1",
+  "xdm:ownerID": "6534",
+  "xdm:userID": "3784",
+  "xdm:entity": {
+    "xdm:name": "Contact",
+    "xdm:ID": "7863"
+  },
+  "xdm:sourceType": "Marketo",
+  "xdm:asset": {
+    "xdm:type": "Web Page",
+    "xdm:ID": "1654"
+  },
+  "xdm:campaign": {
+    "xdm:ID": "C1875",
+    "xdm:type": "Marketing",
+    "xdm:member": {
+      "xdm:ID": "14563",
+      "xdm:type": "Contact"
+    },
+    "xdm:program": {
+      "xdm:ID": "Webinar",
+      "xdm:type": "Event",
+      "xdm:step": {
+        "xdm:number": 10,
+        "xdm:status": "Invited"
+      }
+    }
+  },
+  "xdm:activityDescription": "To organize a webinar on Finance",
+  "xdm:activitySubject": "Finance Webinar",
+  "xdm:activityStatus": "Not Started",
+  "xdm:activityPriority": "Normal",
+  "xdm:interactionEvents": {
+    "xdm:meeting": {
+      "xdm:meetingDetails": {
+        "xdm:isAllDay": true,
+        "xdm:inOnlineMeeting": true,
+        "xdm:isReminderSet": true,
+        "xdm:reminderDateTime": "2020-05-18T00:00:00+00:00",
+        "xdm:scheduledStartDateTime": "2020-05-19T09:00:00+00:00",
+        "xdm:scheduledEndDateTime": "2020-05-19T18:00:00+00:00",
+        "xdm:organizerID": "98536"
+      }
+    }
+  }
+}

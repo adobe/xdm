@@ -17,17 +17,17 @@
     "profile-work-details": {
       "properties": {
         "xdm:workAddress": {
-          "title": "Work address",
+          "title": "Work Address",
           "$ref": "https://ns.adobe.com/xdm/common/address",
           "description": "A work postal address."
         },
         "xdm:workEmail": {
-          "title": "Work email",
+          "title": "Work Email",
           "$ref": "https://ns.adobe.com/xdm/context/emailaddress",
           "description": "A work email address."
         },
         "xdm:workPhone": {
-          "title": "Work phone",
+          "title": "Work Phone",
           "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
           "description": "Work phone number."
         },

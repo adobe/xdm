@@ -17,7 +17,8 @@
   "definitions": {
     "campaign-workflow": {
       "properties": {
-        "xdm:campaignID": {          "title": "Campaign ID",
+        "xdm:campaignID": {
+          "title": "Campaign ID",
           "description": "Unique identifer for Campaign.",
           "type": "string"
         },
@@ -26,6 +27,7 @@
           "description": "The type of campaign for which audience gets selected",
           "type": "string"
         }
+      }
     }
   },
   "allOf": [
@@ -44,4 +46,4 @@
   ],
   "required": ["xdm:campaignID", "xdm:campaignType"],
   "meta:status": "experimental"
-} 
+}

@@ -16,11 +16,13 @@
   "definitions": {
     "activity": {
       "properties": {
-        "xdm:activityID": {          "title": "Activity ID",
+        "xdm:activityID": {
+          "title": "Activity ID",
           "description": "Activity log unique identifer",
           "type": "string"
         },
-        "xdm:activityType": {          "title": "Activity Type",
+        "xdm:activityType": {
+          "title": "Activity Type",
           "description": "The tacking type of the activity in the form of a task or a business planned event",
           "properties": {
             "xdm:ID": {
@@ -39,9 +41,6 @@
       },
       "required": ["xdm:activityID"]
     }
-        },
-         "required": ["xdm:activityID"]
-      }
   },
   "allOf": [
     {

@@ -20,7 +20,7 @@
       "properties": {
         "xdm:consentsAndPreferences":{
           "title": "Consents, Personalization and Marketing Preferences",
-          "$ref": "https://ns.adobe.com/xdm/context/consent-preferences"
+          "ref": "https://ns.adobe.com/xdm/context/consentpreferences"
         },
         "xdm:consentStrings": {
           "title": "Identity level consent information",

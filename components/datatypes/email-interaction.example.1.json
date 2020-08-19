@@ -9,16 +9,9 @@
   "xdm:failureReasonCode": "0-0000",
   "xdm:failureReasonMessage": "Success",
   "xdm:fromAddress": "abc@google.com",
-  "xdm:toAddress": [
-      "mark@google.com"
-  ],
-  "xdm:ccAddress": [
-    "p@google.com",
-    "q@yahoo.com"
-  ],
-  "xdm:bccAddress": [
-    "r@google.com"
-  ],
+  "xdm:toAddress": ["mark@google.com"],
+  "xdm:ccAddress": ["p@google.com", "q@yahoo.com"],
+  "xdm:bccAddress": ["r@google.com"],
   "xdm:headers": "Return-Path: <abc@google.com> X-SpamCatcher-Score: 1 [X] Received: from [136.167.40.119]",
   "xdm:incomingMessage": false,
   "xdm:firstOpenDate": "2020-05-18T05:00:00+00:00",

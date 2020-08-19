@@ -14,16 +14,14 @@
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/activity-type"],
   "description": "An XDM Activity representing task or a business event",
   "definitions": {
-    "activity-type-details": {
-      "properties": {
-          "xdm:activityType": {
-                "title":"Activity Type Details",
-                "$ref":"https://ns.adobe.com/xdm/common/activity-type-reference-details",
-                "description":"Additional properties for Activity type"
-                }
-              }
-          }
-},
+        "xdm:activityType": {
+          "title": "Activity Type Details",
+          "$ref": "https://ns.adobe.com/xdm/common/activity-type-reference-details",
+          "description": "Additional properties for Activity type"
+        }
+      }
+    }
+  },
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
@@ -33,4 +31,4 @@
     }
   ],
   "meta:status": "experimental"
-} 
+}

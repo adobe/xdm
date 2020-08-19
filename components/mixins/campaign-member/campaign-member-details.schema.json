@@ -12,9 +12,7 @@
   "auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/campaign-member"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/campaign-member"],
   "description": "An XDM Business Campaign Member",
   "definitions": {
     "campaign-member-details": {
@@ -34,10 +32,7 @@
               "type": "string"
             }
           },
-          "required": [
-            "xdm:type",
-            "xdm:ID"
-          ]
+          "required": ["xdm:type", "xdm:ID"]
         },
         "xdm:response": {
           "title": "Response of the Member",
@@ -83,16 +78,10 @@
                   "type": "string"
                 }
               },
-              "required": [
-                "xdm:number",
-                "xdm:status"
-              ]
+              "required": ["xdm:number", "xdm:status"]
             }
           },
-          "required": [
-            "xdm:ID",
-            "xdm:type"
-          ]
+          "required": ["xdm:ID", "xdm:type"]
         },
         "xdm:sourceType": {
           "title": "Campaign Source Type",

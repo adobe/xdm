@@ -12,9 +12,7 @@
   "auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/data/record"
-  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "description": "An XDM Business Campaign Member,which relates members such as contact/lead to a campaign",
   "definitions": {
     "campaign-member": {
@@ -39,15 +37,10 @@
               "type": "string"
             }
           },
-          "required": [
-            "xdm:ID",
-            "xdm:type"
-          ]
+          "required": ["xdm:ID", "xdm:type"]
         }
       },
-      "required": [
-        "xdm:campaignMemberID"
-      ]
+      "required": ["xdm:campaignMemberID"]
     }
   },
   "allOf": [

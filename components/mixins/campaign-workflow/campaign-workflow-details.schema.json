@@ -71,10 +71,7 @@
               "type": "string"
             }
           },
-          "required": [
-            "xdm:ID",
-            "xdm:type"
-          ]
+          "required": ["xdm:ID", "xdm:type"]
         },
         "xdm:channelType": {
           "title": "Channel Type",

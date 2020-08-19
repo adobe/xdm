@@ -10,16 +10,14 @@
   "title": "XDM Activity",
   "type": "object",
   "meta:auditable": true,
-  "description":
-  "A form of a task or a business event which is alinged to a given activity type",
+  "description": "A form of a task or a business event which is alinged to a given activity type",
   "definitions": {
     "activity-type-reference-details": {
       "properties": {
         "xdm:name": {
           "title": "Name",
           "type": "string",
-          "description":
-            "Name of the activity, such as 'open email','click email' etc."
+          "description": "Name of the activity, such as 'open email','click email' etc."
         },
         "xdm:description": {
           "title": "Description",
@@ -29,8 +27,7 @@
         "xdm:type": {
           "title": "Type of Activity",
           "type": "string",
-          "description":
-            "Describing the nature of activity, in the form of a 'task' or a 'business event' "
+          "description": "Describing the nature of activity, in the form of a 'task' or a 'business event'."
         },
         "xdm:area": {
           "title": "Area of activity",
@@ -50,8 +47,7 @@
         "xdm:isActive": {
           "title": "Status of the activity type",
           "type": "boolean",
-          "description":
-            "A boolean flag to depict if the activity type can be used by the business system,or has been discontinued."
+          "description": "A boolean flag to depict if the activity type can be used by the business system,or has been discontinued."
         }
       }
     }

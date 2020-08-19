@@ -11,9 +11,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/activity-log"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/activity-log"],
   "description": "An XDM Activity representing task or a business event",
   "definitions": {
     "activity-log-details": {
@@ -91,10 +89,7 @@
               "type": "string"
             }
           },
-          "required": [
-            "xdm:name",
-            "xdm:ID"
-          ]
+          "required": ["xdm:name", "xdm:ID"]
         },
         "xdm:sourceType": {
           "title": "Activity Source Type",
@@ -116,10 +111,7 @@
               "type": "string"
             }
           },
-          "required": [
-            "xdm:type",
-            "xdm:ID"
-          ]
+          "required": ["xdm:type", "xdm:ID"]
         },
         "xdm:campaign": {
           "title": "Campaign details",
@@ -232,7 +224,7 @@
           }
         }
       },
-      "required":["xdm:isTask"]
+      "required": ["xdm:isTask"]
     }
   },
   "allOf": [

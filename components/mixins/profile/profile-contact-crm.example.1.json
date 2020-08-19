@@ -123,12 +123,9 @@
       }
     },
     "xdm:reportsToID": "RPT10000",
-    "xdm:departments": [
-      "Finance",
-      "Marketing"
-    ],
+    "xdm:departments": ["Finance", "Marketing"],
     "xdm:jobTitle": "",
-	"xdm:photoUrl": "https://PersonOrg.com/personPhoto.jpg"  
+    "xdm:photoUrl": "https://PersonOrg.com/personPhoto.jpg"
   },
   "xdm:photoUrl": "https://PersonOrg.com/personPhoto.jpg",
   "xdm:orgUnit": {

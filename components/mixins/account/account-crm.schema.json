@@ -11,9 +11,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/account"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/account"],
   "description": "An XDM Business Account.",
   "definitions": {
     "account-crm": {
@@ -46,10 +44,7 @@
         "xdm:currencyCode": {
           "title": "Currency Code",
           "type": "string",
-          "examples": [
-            "USD",
-            "EUR"
-          ],
+          "examples": ["USD", "EUR"],
           "pattern": "^[A-Z]{3}$",
           "description": "The ISO 4217 currency code."
         },

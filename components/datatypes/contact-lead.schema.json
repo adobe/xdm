@@ -18,11 +18,11 @@
           "description": "Type of the contact/lead.",
           "type": "string"
         },
-          "xdm:sourceType": {
+        "xdm:sourceType": {
           "title": "Source Type",
           "description": "Type of Source system. It could be CRM or a in house system.",
           "type": "string"
-        },		
+        },
         "xdm:description": {
           "title": "Contact/Lead Description",
           "description": "Detailed description of Contact/Lead.",

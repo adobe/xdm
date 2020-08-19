@@ -12,7 +12,7 @@
     "xdm:description": "Contact/Lead description here",
     "xdm:status": "Status",
     "xdm:timezone": "",
-	"xdm:jigsaw": "12345"
+    "xdm:jigsaw": "12345"
   },
   "xdm:identityMap": {
     "EMAIL": [
@@ -39,5 +39,5 @@
         "xdm:optOutDate": "2018-01-20T15:52:25+00:00"
       }
     }
-  }	  
+  }
 }

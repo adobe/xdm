@@ -11,9 +11,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/data/record"
-  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "description": "Opportunity Contact Role",
   "definitions": {
     "opportunity-contact-role": {
@@ -47,13 +45,13 @@
       "$ref": "#/definitions/opportunity-contact-role"
     },
     {
-      "$ref":"https://ns.adobe.com/xdm/common/external-source-system-audit-details"
+      "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
     }
   ],
   "required": [
-  "xdm:opportunityContactID",
-  "xdm:opportunityID",
-  "xdm:contactID"
+    "xdm:opportunityContactID",
+    "xdm:opportunityID",
+    "xdm:contactID"
   ],
   "meta:status": "experimental"
 }

@@ -22,7 +22,7 @@
           "type":"object",
           "title":"Global Privacy/Marketing Preference Values",
           "description":"Global (User/Profile-level) Privacy/Personalization/Marketing Preferences.",
-          "$ref": "https://ns.adobe.com/xdm/context/consent-preferences"
+          "ref": "https://ns.adobe.com/xdm/context/consentpreferences"
         },
         "xdm:identityPrivacyInfo":{
           "title": "Identity level privacy information",
@@ -39,7 +39,7 @@
               "properties": {
                 "xdm:consentsAndPreferences":{
                   "title": "Device/Identity-specific Consents, Personalization and Marketing Preferences",
-                  "$ref": "https://ns.adobe.com/xdm/context/consent-preferences"
+                  "ref": "https://ns.adobe.com/xdm/context/consentpreferences"
                 },
                 "xdm:identityIABConsent": {
                   "type": "object",

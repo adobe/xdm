@@ -1,6 +1,6 @@
 # Stabilization Candidates
 
-_Generated on **Wed Aug 19 2020 19:07:58 GMT+0000 (UTC)**_
+_Generated on **Wed Aug 19 2020 19:16:23 GMT+0000 (UTC)**_
 
 
 ### Unknown Status, needs immediate attention
@@ -32,7 +32,6 @@ _Generated on **Wed Aug 19 2020 19:07:58 GMT+0000 (UTC)**_
 |[schemas/context/campaign-member](schemas/context/campaign-member.schema.json)|experimental|26|26|[8f16cec](https://github.com/adobe/xdm/commit/8f16cec20371deabf27e027347125f803e4581d9 "added marketo schema files")|
 |[schemas/context/campaign-workflow-details](schemas/context/campaign-workflow-details.schema.json)|experimental|26|8|[dcefd2e](https://github.com/adobe/xdm/commit/dcefd2e507972dff527e104b4edbb0cc32c64d77 "Update campaign-workflow-details.schema.json") [8f16cec](https://github.com/adobe/xdm/commit/8f16cec20371deabf27e027347125f803e4581d9 "added marketo schema files")|
 |[schemas/context/campaign-workflow](schemas/context/campaign-workflow.schema.json)|experimental|26|26|[8f16cec](https://github.com/adobe/xdm/commit/8f16cec20371deabf27e027347125f803e4581d9 "added marketo schema files")|
-|[schemas/context/consentpreferences](schemas/context/consentpreferences.schema.json)|experimental|**36**|28|[0ea5b15](https://github.com/adobe/xdm/commit/0ea5b153059b95174ec123ba69613e011051a7fe "fix spelling error plus minor description improvements") [b83de60](https://github.com/adobe/xdm/commit/b83de604345b48338c150bc8b8770f0c01b54899 "have privacy fields match naming convention")|
 |[schemas/context/opportunity-contact-role-details](schemas/context/opportunity-contact-role-details.schema.json)|experimental|26|8|[06f26f6](https://github.com/adobe/xdm/commit/06f26f697644c896a83fe205d8a53ffe9e65a2d7 "Update opportunity-contact-role-details.schema.json") [8f16cec](https://github.com/adobe/xdm/commit/8f16cec20371deabf27e027347125f803e4581d9 "added marketo schema files")|
 |[schemas/context/opportunity-contact-role](schemas/context/opportunity-contact-role.schema.json)|experimental|26|26|[8f16cec](https://github.com/adobe/xdm/commit/8f16cec20371deabf27e027347125f803e4581d9 "added marketo schema files")|
 |[schemas/context/opportunity-crm](schemas/context/opportunity-crm.schema.json)|experimental|26|8|[1df7d36](https://github.com/adobe/xdm/commit/1df7d369f42b1205a5ca773b548b27a6c6980641 "Update opportunity-crm.schema.json") [d50cbd5](https://github.com/adobe/xdm/commit/d50cbd5e494e32401c4ed13463c3a9d2e9e3b588 "Update opportunity-crm.schema.json") [8f16cec](https://github.com/adobe/xdm/commit/8f16cec20371deabf27e027347125f803e4581d9 "added marketo schema files")|

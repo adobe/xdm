@@ -1,117 +1,36 @@
 
-# Privacy/Marketing Preferences (Consent) Schema
+# Profile privacy Schema
 
 ```
 https://ns.adobe.com/xdm/context/profile-privacy
 ```
 
-This schema captures privacy, personalization and marketing preferences (consents).
+Profile privacy schema captures general and sales sharing opt-out signals.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/profile-privacy.schema.json](context/profile-privacy.schema.json) |
 ## Schema Hierarchy
 
-* Privacy/Marketing Preferences (Consent) `https://ns.adobe.com/xdm/context/profile-privacy`
+* Profile privacy `https://ns.adobe.com/xdm/context/profile-privacy`
   * [Extensibility base schema](../common/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
-## Privacy/Marketing Preferences (Consent) Example
+## Profile privacy Example
 ```json
 {
   "xdm:optOutConsentLevel": {
     "xdm:privacyOptOuts": [
       {
         "xdm:optOutType": "general_opt_out",
-        "xdm:optOutValue": "in",
-        "xdm:timestamp": "2019-01-01T15:52:25+00:00",
-        "xdm:basisOfProcessing": "legitimate_interest"
+        "xdm:optOutValue": "out",
+        "xdm:timestamp": "2019-01-01T15:52:25+00:00"
       }
-    ],
-    "xdm:personalizationPreferences": {
-      "xdm:default": {
-        "xdm:choice": "unknown",
-        "xdm:timestamp": "2019-01-01T15:52:25+00:00",
-        "xdm:basisOfProcessing": "consent"
-      },
-      "xdm:details": [
-        {
-          "xdm:type": "email",
-          "xdm:choice": "in"
-        },
-        {
-          "xdm:type": "push_notifications",
-          "xdm:choice": "out",
-          "xdm:basisOfProcessing": "legitimate_interest"
-        }
-      ]
-    },
-    "xdm:marketingPreferences": {
-      "xdm:default": {
-        "xdm:choice": "unknown"
-      },
-      "xdm:details": [
-        {
-          "xdm:type": "email",
-          "xdm:choice": "in",
-          "xdm:subscriptions": {
-            "weekly_mailer": {
-              "xdm:choice": "out",
-              "xdm:timestamp": "2019-02-03T15:52:25+00:00"
-            },
-            "daily_newsletter": {
-              "xdm:choice": "pending"
-            }
-          }
-        },
-        {
-          "xdm:type": "iot",
-          "xdm:choice": "out",
-          "xdm:timestamp": "2019-01-01T15:52:25+00:00",
-          "xdm:basisOfProcessing": "legitimate_interest",
-          "xdm:subscriptions": {
-            "out_of_milk": {
-              "xdm:choice": "in"
-            }
-          }
-        }
-      ]
-    },
-    "xdm:version": "1.0.0",
-    "xdm:timestamp": "2019-01-01T15:52:25+00:00",
-    "xdm:userLocale": "UK",
-    "xdm:localeSource": "ip"
+    ]
   },
   "xdm:identityPrivacyInfo": {
     "ECID": {
       "11112222233333444": {
-        "xdm:consentsAndPreferences": {
-          "xdm:privacyOptOuts": [
-            {
-              "xdm:optOutType": "general_opt_out",
-              "xdm:optOutValue": "in",
-              "xdm:timestamp": "2019-01-01T15:52:25+00:00",
-              "xdm:basisOfProcessing": "legitimate_interest"
-            },
-            {
-              "xdm:optOutType": "device_linking",
-              "xdm:optOutValue": "not_provided",
-              "xdm:basisOfProcessing": "vital_interest"
-            },
-            {
-              "xdm:optOutType": "anonymous_analysis",
-              "xdm:optOutValue": "out"
-            }
-          ],
-          "xdm:personalizationPreferences": {
-            "xdm:details": [
-              {
-                "xdm:type": "content",
-                "xdm:choice": "in"
-              }
-            ]
-          }
-        },
         "xdm:identityIABConsent": {
           "xdm:consentTimestamp": "2020-04-11T05:05:05Z",
           "xdm:consentString": {
@@ -128,12 +47,12 @@ This schema captures privacy, personalization and marketing preferences (consent
 }
 ```
 
-# Privacy/Marketing Preferences (Consent) Properties
+# Profile privacy Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:identityPrivacyInfo](#xdmidentityprivacyinfo) | `object` | Optional | Privacy/Marketing Preferences (Consent) (this schema) |
-| [xdm:optOutConsentLevel](#xdmoptoutconsentlevel) | `object` | Optional | Privacy/Marketing Preferences (Consent) (this schema) |
+| [xdm:identityPrivacyInfo](#xdmidentityprivacyinfo) | `object` | Optional | Profile privacy (this schema) |
+| [xdm:optOutConsentLevel](#xdmoptoutconsentlevel) | `object` | Optional | Profile privacy (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:identityPrivacyInfo
@@ -161,9 +80,9 @@ Captured privacy information for identities in profile.
 
 
 ## xdm:optOutConsentLevel
-### Global Privacy/Marketing Preference Values
+### Opt-out consent level
 
-Global (User/Profile-level) Privacy/Personalization/Marketing Preferences.
+Opt-out consent level.
 
 `xdm:optOutConsentLevel`
 * is optional
@@ -178,6 +97,109 @@ Global (User/Profile-level) Privacy/Personalization/Marketing Preferences.
 
 | Property | Type | Required |
 |----------|------|----------|
+| `xdm:privacyOptOuts`| array | Optional |
+
+
+
+#### xdm:privacyOptOuts
+##### Privacy opt-outs
+
+Encapsulates different opt-out types for data privacy.
+
+`xdm:privacyOptOuts`
+* is optional
+* type: `object[]`
+
+
+##### xdm:privacyOptOuts Type
+
+
+Array type: `object[]`
+
+All items must be of the type:
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+| `xdm:optOutType`| string | Optional |
+| `xdm:optOutValue`| string | Optional |
+| `xdm:timestamp`| string | Optional |
+
+
+
+#### xdm:optOutType
+##### Opt-out type
+
+The type of opt-out.
+
+`xdm:optOutType`
+* is optional
+* type: `enum`
+
+The value of this property **must** be equal to one of the [known values below](#xdmoptoutconsentlevel-known-values).
+
+##### xdm:optOutType Known Values
+| Value | Description |
+|-------|-------------|
+| `general_opt_out` | General opt-out |
+| `sales_sharing_opt_out` | Sales sharing opt-out |
+
+
+
+
+
+
+#### xdm:optOutValue
+##### Opt-out value
+
+The value of opt-out signal.
+
+`xdm:optOutValue`
+* is optional
+* type: `enum`
+
+The value of this property **must** be equal to one of the [known values below](#xdmoptoutconsentlevel-known-values).
+
+##### xdm:optOutValue Known Values
+| Value | Description |
+|-------|-------------|
+| `not_provided` | Not provided |
+| `pending` | Pending verification |
+| `in` | Opt-in |
+| `out` | Opt-out |
+
+
+
+
+
+
+#### xdm:timestamp
+##### Opt-out timestamp
+
+Timestamp of the received opt-out signal.
+
+`xdm:timestamp`
+* is optional
+* type: `string`
+
+##### xdm:timestamp Type
+
+
+`string`
+* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

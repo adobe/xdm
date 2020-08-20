@@ -39,6 +39,9 @@
     }
   },
   "xdm:reportsToID": "RPT10000",
-  "xdm:departments": ["Finance", "Marketing"],
+  "xdm:departments": [
+    "Finance",
+    "Marketing"
+  ],
   "xdm:jobTitle": "Account manager"
 }

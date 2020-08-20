@@ -2,7 +2,7 @@
   "@id": "https://data.adobe.io/entities/org/orgid111",
   "xdm:legalName": "ABC Stores",
   "xdm:numberOfEmployees": 200,
-  "xdm:annualRevenue": 1000000.0,
+  "xdm:annualRevenue": 1000000.00,
   "xdm:industry": "Retail",
   "xdm:website": "http://www.abcstores.com",
   "rating": 1,

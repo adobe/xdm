@@ -28,6 +28,11 @@
           "type": "string",
           "description": "Free form name of the address."
         },
+        "xdm:label1": {
+          "title": "Label",
+          "type": "string",
+          "description": "Free form name of the address."
+        },
         "xdm:street1": {
           "title": "Street 1",
           "type": "string",

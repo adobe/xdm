@@ -1,0 +1,49 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/campaign-workflow",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "XDM Business Campaign Workflow",
+  "type": "object",
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "description": "An XDM Business Campaign workflow",
+  "definitions": {
+    "campaign-workflow": {
+      "properties": {
+        "xdm:campaignID": {
+          "title": "Campaign ID",
+          "description": "Unique identifer for Campaign.",
+          "type": "string"
+        },
+        "xdm:campaignType": {
+          "title": "Campaign Type",
+          "description": "The type of campaign for which audience gets selected",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
+    },
+    {
+      "$ref": "#/definitions/campaign-workflow"
+    }
+  ],
+  "required": ["xdm:campaignID", "xdm:campaignType"],
+  "meta:status": "experimental"
+}

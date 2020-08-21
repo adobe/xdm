@@ -1,0 +1,10 @@
+{
+  "xdm:identities": [
+    {
+      "xdm:id": "someone@example.com",
+      "xdm:namespace": {
+        "xdm:code": "Email"
+      }
+    }
+  ]
+}

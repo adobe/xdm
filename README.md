@@ -8,7 +8,7 @@ This repository contains the source code for the formal specification of the XDM
 
 ## Current Version
 
-XDM is at version `0.9.8`.
+XDM is at version `1.13.3`.
 
 You can find more about our versioning in [docs/introduction.md](docs/introduction.md#versioning)
 
@@ -25,24 +25,18 @@ You can find more about our versioning in [docs/introduction.md](docs/introducti
 The project is laid out in the following way:
 
 - `docs`: Markdown files that contain front-matter, introduction, and non-normative parts of XDM
-- `schemas`: JSON schema files constituting the normative part of XDM
-  - `*.schema.json` is the schema file, e.g. `event-envelope.schema.json` – we pick the `.json` file extension for easy syntax highlighting in editors
-  - `*.example.*.json` is an example file that will be validated against the `*.schema.json` file, and if successful, merged into the `*.schema.json` file as an `"example"` field at the root of the schema before it is converted into Markdown or published
-  - `*.invalid.*.json` is an invalid example file that will be validated against the `*.schema.json` file. If the `invalid` file validates (false positive), the schema is too lax and the overall build will fail. `invalid` files will not be merged into documentation.
-  - `*.description.md` is a description file that will be merged into the `"description"` field at the root of the schema, allowing the authoring of longer descriptions. The merge happens before publishing the schema file or creating a joint Markdown file
-  - `schemas/assets` – for schemas related to the asset core concept, including image, video, document
-  - `schemas/audiences` – for schemas describing audiences, segments, and groups of consumers
-  - `schemas/campaigns` – for schemas describing orchestrated experience campaign
-  - `schemas/content` – for schemas related to content, including visual, audible, and virtual reality content
-  - `schemas/context` – for schemas related to the context of a digital experience, including profile, person, environment
-  - `schemas/data` – for schemas describing collected data, metric, etc.
-  - `schemas/external/*` – for JSON Schema representation of externally defined standards
-  - `schemas/channels` – for schemas describing experience channels and locations therein
-  - `schemas/common` – for basic concepts like extensibility that are not covered in `external` schemas
-- `*.ttl`: legacy schema files in Turtle Syntax that have not yet been converted into JSON Schema
+- `schemas`: JSON schema files that define out of the box cross user schemas
+- `components`: JSON schema files that define the AEP components used in the composition model to create schemas usable within UPS
+- `extensions`: JSON schema files that define vendor or solution specific components used within the composition model of AEP
 - `package.json`: a build file for `npm` that allows the generation of Markdown from the JSON Schema source files and (later) the generation of an AEM package to be deployed on the Adobe I/O Website
 - `README.md`: this file
 - `CONTRIBUTING.md`: guidelines for contributors, covering process, conventions and design guidelines
+
+## File Types
+
+- `*.schema.json` is the schema file, e.g. `profile.schema.json` – we pick the `.json` file extension for easy syntax highlighting in editors
+- `*.example.*.json` is an example file that will be validated against the `*.schema.json` file, and if successful, merged into the `*.schema.json` file as an `"example"` field at the root of the schema before it is converted into Markdown or published
+- `*.invalid.*.json` is an invalid example file that will be validated against the `*.schema.json` file. If the `invalid` file validates (false positive), the schema is too lax and the overall build will fail. `invalid` files will not be merged into documentation.
 
 ## Tooling
 

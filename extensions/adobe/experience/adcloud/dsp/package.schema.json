@@ -12,9 +12,7 @@
   "meta:extensible": false,
   "meta:abstract": false,
   "meta:auditable": true,
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/data/record"
-  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "description": "Adobe Advertising Cloud DSP Package Details.",
   "definitions": {
     "dsp-package": {
@@ -33,11 +31,7 @@
           "title": "Package Status",
           "type": "string",
           "description": "Package Status indicates if underlying ads are eligible to serve.",
-          "enum": [
-            "Active",
-            "Inactive",
-            "Deleted"
-          ],
+          "enum": ["Active", "Inactive", "Deleted"],
           "meta:enum": {
             "Active": "Active",
             "Inactive": "Inactive",
@@ -63,10 +57,7 @@
           "title": "Goal Type",
           "type": "string",
           "description": "The action taken when the metric hits the maximum value.",
-          "enum": [
-            "CAP",
-            "PACE"
-          ],
+          "enum": ["CAP", "PACE"],
           "meta:enum": {
             "CAP": "CAP",
             "PACE": "PACE"
@@ -76,13 +67,7 @@
           "title": "Goal Interval",
           "type": "string",
           "description": "The time frame for which the metric value is computed. E.g. DAY, ALLTIME ",
-          "enum": [
-            "ALLTIME",
-            "DAY",
-            "HOUR",
-            "MONTH",
-            "WEEK"
-          ],
+          "enum": ["ALLTIME", "DAY", "HOUR", "MONTH", "WEEK"],
           "meta:enum": {
             "ALLTIME": "ALLTIME",
             "DAY": "DAY",

@@ -3,17 +3,19 @@ const $ = require("shelljs");
 const Ajv = require("ajv");
 const fs = require("fs");
 
-const schemas = $.find("schemas").filter(name => {
+const schemas = $.find("schemas","components").filter(name => {
   return name.match(/.*\.schema\.json$/);
 });
+
 const extensions = $.find("extensions").filter(name => {
   return name.match(/.*\.schema\.json$/);
 });
 
-const examples = $.find("schemas").filter(name => {
+const examples = $.find("schemas","components").filter(name => {
   return name.match(/.*\.example\.[0-9]+\.json$/);
 });
-const invalids = $.find("schemas").filter(name => {
+
+const invalids = $.find("schemas","components").filter(name => {
   return name.match(/.*\.invalid\.[0-9]+\.json$/);
 });
 
@@ -30,11 +32,11 @@ describe("Loading of schemas", () => {
     "allErrors": true,
     "extendRefs": true //we need to change this to "fail" for cleaner schemas
   });
-  
+
   ajv
-    .addSchema(JSON.parse(fs.readFileSync("./schemas/common/descriptors/schemadescriptor.schema.json")))
-    .addSchema(JSON.parse(fs.readFileSync("./schemas/common/descriptors/itemselector.schema.json")))
-    .addSchema(JSON.parse(fs.readFileSync("./schemas/common/extensible.schema.json")))
+    .addSchema(JSON.parse(fs.readFileSync("./schemas/descriptors/schemadescriptor.schema.json")))
+    .addSchema(JSON.parse(fs.readFileSync("./schemas/descriptors/itemselector.schema.json")))
+    .addSchema(JSON.parse(fs.readFileSync("./components/datatypes/extensible.schema.json")))
     .addSchema(JSON.parse(fs.readFileSync("./meta.schema.json")));
   
   schemas.forEach(schema => {

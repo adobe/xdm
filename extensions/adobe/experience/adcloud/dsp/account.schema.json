@@ -12,9 +12,7 @@
   "meta:extensible": false,
   "meta:abstract": false,
   "meta:auditable": true,
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/data/record"
-  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "description": "Adobe Advertising Cloud DSP Account Details.",
   "definitions": {
     "dsp-account": {
@@ -56,12 +54,7 @@
           "title": "Product Name",
           "type": "string",
           "description": "The name of the product associated with this account.",
-          "enum": [
-            "PlayTime",
-            "InPlay",
-            "OneLoad",
-            "PrivateExchange"
-          ],
+          "enum": ["PlayTime", "InPlay", "OneLoad", "PrivateExchange"],
           "meta:enum": {
             "PlayTime": "PlayTime",
             "InPlay": "InPlay",
@@ -72,11 +65,7 @@
         "dsp:currency": {
           "title": "Account Currency",
           "type": "string",
-          "examples": [
-            "USD",
-            "EUR",
-            "JPY"
-          ],
+          "examples": ["USD", "EUR", "JPY"],
           "pattern": "^[A-Z]{3}$",
           "description": "The ISO 4217 billing currency code for the account."
         }

@@ -1,3 +1,3 @@
 # Archive
 
-Archived JSON schema files which are not used in AEP  
+Contains old JSON schema files that were never used by AEP and no longer maintained in this repo.

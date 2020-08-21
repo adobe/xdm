@@ -1,7 +1,7 @@
 # Extensions
 
 Extensions are needed when the standard XDM components (classes, mixins, datatypes) do not provide a set of fields
-needed to represent a value which is unique to a given vendor or Adobe solution. 
+needed to represent a concept which is unique to a given vendor or Adobe solution. 
 
 Users should always look to the standard components first and in many cases 
 update or add to those if possible. Extensions should only be used if the new field(s)

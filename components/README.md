@@ -2,7 +2,7 @@
 
 The "components" act as the building blocks to compose a schema which is fully supported and usable within AEP. They are still JSON schema files, but they are treated differently in AEP in that they cannot be referenced and used directly by a Dataset. Instead they are only referenced and used by tenant defined "composed schema" which are then referenced by the Dataset. 
 
-## Component Styles
+## Component Types
 
 **Behavior** - Provide the lowest level type of data (record, or time-series). This drives how data ingestion partitions the data.
 

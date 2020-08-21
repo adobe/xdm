@@ -37,23 +37,9 @@ As all XDM versions are mutually compatible, the version numbers indicated in th
 
 XDM Versioning follows the practices laid out in the [Semantic Versioning 2.0.0 guideline](https://semver.org). This means, that XDM version numbers are in the form MAJOR.MINOR.PATCH, with increments happening when:
 
-> - MAJOR version when you make incompatible API changes
-> - MINOR version when you add functionality in a backwards-compatible manner
-> - PATCH version when you make backwards-compatible bug fixes
-
-Applied to XDM, this means:
-
-- MAJOR version will not be increased once version 1.0.0 is reached
-- MINOR version will be increased when new optional properties get added, the range of property values gets broadened
-- PATCH version will be increased when names, titles and descriptions of properties get changed
-
-### Versioning before 1.0.0
-
-As laid out in [Semantic Versioning 2.0.0](https://semver.org), article 4:
-
-> Major version zero (0.y.z) is for initial development. Anything may change at any time. The public API should not be considered stable.
-
-XDM is at major version zero at this time and should not be considered stable.
+> - MAJOR version when you make incompatible API changes (not supported at this time - remains at 1)
+> - MINOR value incremented on a monthly basis
+> - PATCH value related to the week of the month
 
 ### Schema Status
 

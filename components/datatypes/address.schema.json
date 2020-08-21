@@ -25,7 +25,7 @@
         },
         "xdm:label": {
           "title": "Label",
-          "type": "string",
+          "type": "number",
           "description": "Free form name of the address."
         },
         "xdm:label1": {

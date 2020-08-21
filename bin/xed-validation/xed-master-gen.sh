@@ -3,6 +3,7 @@
 
 (rm -rf tempinput; mkdir tempinput)
 cp -r ../../schemas ./tempinput/
+cp -r ../../components ./tempinput/
 cp -r ../../extensions ./tempinput/
 
 (echo "++++++++++Start clean-up for master branch XED conversion of platform schemas only.....++++++++++"; sleep 1)
@@ -11,6 +12,7 @@ cp -r ../../extensions ./tempinput/
 (echo "++++++++++Start master branch XED conversion pre-processing.....++++++++++"; sleep 1)
 node schemaLocGen.js
 node tempGen.js -i tempinput/schemas -j xdm
+node tempGen.js -i tempinput/components -j xdm
 node tempGen.js -i tempinput/extensions -j xdm-extensions
 
 (echo "++++++++++Start master branch XED conversion processing++++++++++....."; sleep 1)

@@ -1,16 +1,16 @@
-{ 
-  "https://ns.adobe.com/experience/journeyOrchestration/actionID":"testJrnyAction",
-  "https://ns.adobe.com/experience/journeyOrchestration/actionName":"action",
-  "https://ns.adobe.com/experience/journeyOrchestration/actionType":"Email",
-  "https://ns.adobe.com/experience/journeyOrchestration/actionParameterized":true,
-  "https://ns.adobe.com/experience/journeyOrchestration/actionExecutionTime":8433,
-  "https://ns.adobe.com/experience/journeyOrchestration/actionExecutionError":"http",
-  "https://ns.adobe.com/experience/journeyOrchestration/actionExecutionErrorCode":"200",
-  "https://ns.adobe.com/experience/journeyOrchestration/actionExecutionOriginError":"capping",
-  "https://ns.adobe.com/experience/journeyOrchestration/actionExecutionOriginCode":"500",
-  "https://ns.adobe.com/experience/journeyOrchestration/actionBusinessType":"acs",
-  "https://ns.adobe.com/experience/journeyOrchestration/deliveryJobID":"1",
-  "https://ns.adobe.com/experience/journeyOrchestration/batchDeliveryID":"jv_13458",
-  "https://ns.adobe.com/experience/journeyOrchestration/fromSegmentTrigger":true,
-  "https://ns.adobe.com/experience/journeyOrchestration/actionSchedulerCount":345435       
+{
+  "https://ns.adobe.com/experience/journeyOrchestration/actionID": "testJrnyAction",
+  "https://ns.adobe.com/experience/journeyOrchestration/actionName": "action",
+  "https://ns.adobe.com/experience/journeyOrchestration/actionType": "Email",
+  "https://ns.adobe.com/experience/journeyOrchestration/actionParameterized": true,
+  "https://ns.adobe.com/experience/journeyOrchestration/actionExecutionTime": 8433,
+  "https://ns.adobe.com/experience/journeyOrchestration/actionExecutionError": "http",
+  "https://ns.adobe.com/experience/journeyOrchestration/actionExecutionErrorCode": "200",
+  "https://ns.adobe.com/experience/journeyOrchestration/actionExecutionOriginError": "capping",
+  "https://ns.adobe.com/experience/journeyOrchestration/actionExecutionOriginCode": "500",
+  "https://ns.adobe.com/experience/journeyOrchestration/actionBusinessType": "acs",
+  "https://ns.adobe.com/experience/journeyOrchestration/deliveryJobID": "1",
+  "https://ns.adobe.com/experience/journeyOrchestration/batchDeliveryID": "jv_13458",
+  "https://ns.adobe.com/experience/journeyOrchestration/fromSegmentTrigger": true,
+  "https://ns.adobe.com/experience/journeyOrchestration/actionSchedulerCount": 345435
 }

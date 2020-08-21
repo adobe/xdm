@@ -1,0 +1,20 @@
+{
+  "xdm:priority": "high",
+  "xdm:sentDateTime": "2020-05-18T00:00:00+00:00",
+  "xdm:receivedDateTime": "2020-05-18T00:00:28+00:00",
+  "xdm:body": "Mark nice to meet you virtually and welcome back to conversations with Marketo......",
+  "xdm:hasAttachments": false,
+  "xdm:isQuarantined": false,
+  "xdm:sizeInBytes": 2576,
+  "xdm:failureReasonCode": "0-0000",
+  "xdm:failureReasonMessage": "Success",
+  "xdm:fromAddress": "abc@google.com",
+  "xdm:toAddress": ["mark@google.com"],
+  "xdm:ccAddress": ["p@google.com", "q@yahoo.com"],
+  "xdm:bccAddress": ["r@google.com"],
+  "xdm:headers": "Return-Path: <abc@google.com> X-SpamCatcher-Score: 1 [X] Received: from [136.167.40.119]",
+  "xdm:incomingMessage": false,
+  "xdm:firstOpenDate": "2020-05-18T05:00:00+00:00",
+  "xdm:lastOpenDate": "2020-05-20T00:12:28+00:00",
+  "xdm:isTracked": true
+}

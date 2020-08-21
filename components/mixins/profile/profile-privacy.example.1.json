@@ -1,0 +1,27 @@
+{
+  "xdm:optOutConsentLevel": {
+    "xdm:privacyOptOuts": [
+      {
+        "xdm:optOutType": "general_opt_out",
+        "xdm:optOutValue": "out",
+        "xdm:timestamp": "2019-01-01T15:52:25+00:00"
+      }
+    ]
+  },
+  "xdm:identityPrivacyInfo": {
+    "ECID": {
+      "11112222233333444": {
+        "xdm:identityIABConsent": {
+          "xdm:consentTimestamp": "2020-04-11T05:05:05Z",
+          "xdm:consentString": {
+            "xdm:consentStandard": "IAB TCF",
+            "xdm:consentStandardVersion": "2.0",
+            "xdm:consentStringValue": "BObdrPUOevsguAfDqFENCNAAAAAmeAAA.PVAfDObdrA.DqFENCAmeAENCDA",
+            "xdm:gdprApplies": true,
+            "xdm:containsPersonalData": false
+          }
+        }
+      }
+    }
+  }
+}

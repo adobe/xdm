@@ -12,9 +12,7 @@
   "meta:extensible": false,
   "meta:abstract": false,
   "meta:auditable": true,
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/data/record"
-  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "description": "Search Advertising Campaigns is a set of ad groups (ads, keywords, and bids) that share a budget, location targeting, and other settings.",
   "definitions": {
     "searchads-campaign": {
@@ -115,10 +113,7 @@
           "title": "Ad Delivery Method",
           "type": "string",
           "description": "Ad Delivery method can determine how long your budget lasts",
-          "enum": [
-            "Standard",
-            "Accelerated"
-          ],
+          "enum": ["Standard", "Accelerated"],
           "meta:enum": {
             "standard": "Standard",
             "accelerated": "Accelerated"
@@ -128,12 +123,7 @@
           "title": "Campaign Objective",
           "type": "string",
           "description": "Campaign Objective indicates the primary objective of the campaign - e.g. Promotions, Brands, App Installs.",
-          "enum": [
-            "visit_web",
-            "promote_brand",
-            "install_app",
-            "visit_offer"
-          ],
+          "enum": ["visit_web", "promote_brand", "install_app", "visit_offer"],
           "meta:enum": {
             "visit_web": "visit_web",
             "promote_brand": "promote_brand",
@@ -166,17 +156,13 @@
         "searchads:createDate": {
           "type": "string",
           "format": "date-time",
-          "examples": [
-            "2004-10-23T12:00:00-06:00"
-          ],
+          "examples": ["2004-10-23T12:00:00-06:00"],
           "description": "The date and time when the campaign was created. An example form is \"2004-10-23T12:00:00-06:00\"."
         },
         "searchads:modifyDate": {
           "type": "string",
           "format": "date-time",
-          "examples": [
-            "2004-10-23T12:00:00-06:00"
-          ],
+          "examples": ["2004-10-23T12:00:00-06:00"],
           "description": "The date and time when the campaign was last modified. An example form is \"2004-10-23T12:00:00-06:00\"."
         }
       }

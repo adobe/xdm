@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-git clone https://github.com/adobe/xdm.git tempmaster
-(cd tempmaster/bin/xed-validation; pwd; cp ../../../xed-master-gen.sh ../../../cleaninput.sh ../../../schemaLocGen.js .; ./xed-master-gen.sh) #get master branch xed
+#git clone https://github.com/adobe/xdm.git tempmaster
+#(cd tempmaster/bin/xed-validation; pwd; cp ../../../xed-master-gen.sh ../../../cleaninput.sh ../../../schemaLocGen.js .; ./xed-master-gen.sh) #get master branch xed
 
 (rm -rf tempinput xed; mkdir tempinput)
 cp -r ../../schemas ./tempinput/
@@ -25,8 +25,8 @@ node xedGen.js -i xdm-extensions -j tempxed
 echo "{}" > tags.json
 node tag4xed.js -i tempxed -j xed
 
-(echo "++++++++++Search changed schemas..... ++++++++++"; sleep 1)
-diff -rq tempmaster/bin/xed-validation/xed xed/ | sed -E "s/: /\\//g" > schemaChanges.log
+#(echo "++++++++++Search changed schemas..... ++++++++++"; sleep 1)
+#diff -rq tempmaster/bin/xed-validation/xed xed/ | sed -E "s/: /\\//g" > schemaChanges.log
 
 (echo "++++++++++Start XED schema validation..... ++++++++++"; sleep 1)
 ./compile.sh

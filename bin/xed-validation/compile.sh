@@ -23,9 +23,9 @@ done
 for xdm in $xdms; do #compile xdm schemas
   #echo "Compiling---> $xdm"
   #only compile the delta
-  if grep -q $xdm $schemaChanges; then
+  #if grep -q $xdm $schemaChanges; then
   ../../node_modules/.bin/ajv compile -s $xdm -m $schema $append $validFormats
-  fi
+  #fi
 
   if [ $? -ne 0 ]; then #log the invalid schemas to array
     array[$failures]=$xdm

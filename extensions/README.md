@@ -29,7 +29,7 @@ For example, the following is a new mixin created by vendorx that can be used to
 
 In the above example the new component has an $id of "https://ns.vendorx.com/profile-extension" which is a unique ID representing the component named "profile-extension" from the "https://ns.vendorx.com/" namespace.
 
-The field being defined is "https://ns.vendorx.com/vendorField" which is the same as a field named "vendorField" from the "https://ns.vendorx.com/" namespace. 
+The field being defined is "https://ns.vendorx.com/vendorField" which is saying a field named "vendorField" from the "https://ns.vendorx.com/" namespace. 
 
-Another vendor could come along and also introduce their own "vendorField", but it would have a different namespace making it a complete different field. 
+Another vendor could come along and also introduce their own "vendorField", but it would have a different namespace making it a completely different field. 
  

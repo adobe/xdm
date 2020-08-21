@@ -22,7 +22,13 @@
         "xdm:SKU": {
           "title": "SKU",
           "type": "string",
-          "description": "The unique SKU (stock keeping unit) of the product assigned by the vendor."
+          "description": "The unique SKU (stock keeping unit) of the product assigned by the vendor.",
+          "meta:descriptors": [
+            {
+              "@type": "xdm:searchdescriptor",
+              "search:indexed": true
+            }
+          ]
         },
         "xdm:name": {
           "title": "Name",
@@ -32,7 +38,13 @@
         "schema:description": {
           "title": "Description",
           "type": "string",
-          "description": "The localized description of the product."
+          "description": "The localized description of the product.",
+          "meta:descriptors": [
+            {
+              "@type": "xdm:searchdescriptor",
+              "search:indexed": true
+            }
+          ]
         },
         "xdm:category": {
           "title": "Category",
@@ -47,7 +59,13 @@
         "xdm:brand": {
           "title": "Brand",
           "type": "string",
-          "description": "The brand of the product."
+          "description": "The brand of the product.",
+          "meta:descriptors": [
+            {
+              "@type": "xdm:searchdescriptor",
+              "search:indexed": true
+            }
+          ]
         },
         "xdm:masterProductID": {
           "title": "Master product identifier",
@@ -73,7 +91,13 @@
         "xdm:fabrication": {
           "title": "Fabrication",
           "type": "string",
-          "description": "Primary material of the product construction."
+          "description": "Primary material of the product construction.",
+          "meta:descriptors": [
+            {
+              "@type": "xdm:searchdescriptor",
+              "search:indexed": true
+            }
+          ]
         },
         "xdm:gender": {
           "title": "Gender",

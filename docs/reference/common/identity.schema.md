@@ -9,17 +9,9 @@ This model represents an authenticated IMS user. The IMS user principal is a use
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [common/identity.schema.json](common/identity.schema.json) |
+| Can be instantiated | Yes | Deprecated | No | Forbidden | Permitted | [common/identity.schema.json](common/identity.schema.json) |
 
 ## User identity Examples
-
-```json
-{
-  "xdm:identityProvider": "ims",
-  "xdm:id": "C0B648DE57D701277F000101@AdobeID",
-  "xdm:type": "https://ns.adobe.com/xdm/common/user"
-}
-```
 
 ```json
 {
@@ -28,6 +20,14 @@ This model represents an authenticated IMS user. The IMS user principal is a use
   "xdm:type": "https://ns.adobe.com/xdm/common/user",
   "xdm:displayName": "The users name",
   "xdm:profileImage": "https://mir-s3-cdn-cf.behance.net/user/276/b9c11633104347.57a9c2152b78e.jpg"
+}
+```
+
+```json
+{
+  "xdm:identityProvider": "ims",
+  "xdm:id": "C0B648DE57D701277F000101@AdobeID",
+  "xdm:type": "https://ns.adobe.com/xdm/common/user"
 }
 ```
 

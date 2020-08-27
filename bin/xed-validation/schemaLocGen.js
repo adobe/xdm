@@ -7,7 +7,7 @@ glob("tempinput/**/*.schema.json", function(er, files) {
     let schemaLoc = {};
     files.forEach(function(file) {
         let schema = JSON.parse(fs.readFileSync(file));
-        schemaLoc[schema["$id"]] = file.replace("tempinput/schemas/","xdm/").replace("tempinput/extensions/", "xdm-extensions/");
+        schemaLoc[schema["$id"]] = file.replace("tempinput/schemas/","xdm/").replace("tempinput/components/", "xdm/").replace("tempinput/extensions/", "xdm-extensions/");
     });
     fs.writeFileSync('schemaLoc.json', JSON.stringify(schemaLoc,null,2));
 });

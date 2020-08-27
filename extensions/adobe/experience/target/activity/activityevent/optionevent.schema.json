@@ -29,9 +29,7 @@
               "description": "A CSS selector in a html page."
             }
           },
-          "required": [
-            "xdm:locationID"
-          ]
+          "required": ["xdm:locationID"]
         },
         "https://ns.adobe.com/experience/target/activity/activityevent/optionevent/targetOption": {
           "title": "Activity Option",
@@ -54,9 +52,7 @@
               "description": "Version of the offer that was displayed."
             }
           },
-          "required": [
-            "xdm:optionID"
-          ]
+          "required": ["xdm:optionID"]
         },
         "xdm:eventScope": {
           "$ref": "https://ns.adobe.com/experience/target/activity/activityevent/eventscope#/definitions/eventscope"

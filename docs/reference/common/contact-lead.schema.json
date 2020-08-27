@@ -1,0 +1,98 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/common/contact-lead",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "XDM Contact and Lead common B2B attributes",
+    "type": "object",
+    "description": "Common B2B attributes for contacts and leads.",
+    "definitions": {
+        "contact-lead": {
+            "properties": {
+                "xdm:type": {
+                    "title": "Contact/Lead Type",
+                    "description": "Type of the contact/lead.",
+                    "type": "string"
+                },
+                "xdm:sourceType": {
+                    "title": "Source Type",
+                    "description": "Type of Source system. It could be CRM or a in house system.",
+                    "type": "string"
+                },
+                "xdm:description": {
+                    "title": "Contact/Lead Description",
+                    "description": "Detailed description of Contact/Lead.",
+                    "type": "string"
+                },
+                "xdm:isDeleted": {
+                    "title": "Deleted Indicator",
+                    "description": "Indicator whether the instance was deleted.",
+                    "type": "boolean"
+                },
+                "xdm:ownerID": {
+                    "title": "Owner ID",
+                    "description": "The unique identofier for the Owner of the contact/lead record.",
+                    "type": "string"
+                },
+                "xdm:isEmailBounced": {
+                    "title": "Email Bounced Indicator",
+                    "description": "If bounce management is activated and an email is sent to a contact/lead, indicates whether the email bounced (true) or not (false).",
+                    "type": "boolean"
+                },
+                "xdm:emailBouncedDate": {
+                    "title": "Email Bounced Date",
+                    "description": "If bounce management is activated and an email is sent to a contact/lead, provides the date when the email was bounced.",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "xdm:emailBouncedReason": {
+                    "title": "Email Bounced Reason",
+                    "description": "If bounce management is activated and an email is sent to a contact/lead, provides the reason for bounced email.",
+                    "type": "string"
+                },
+                "xdm:status": {
+                    "title": "Lead/Contact Status",
+                    "description": "Field recording the current marketing/sales status of the lead/contact.",
+                    "type": "string"
+                },
+                "xdm:timezone": {
+                    "title": "Timezone",
+                    "description": "Timezone of the contact's/lead's location.",
+                    "type": "string"
+                },
+                "xdm:jigsaw": {
+                    "title": "Jigsaw",
+                    "description": "Data.com key",
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/contact-lead"
+        }
+    ],
+    "meta:status": "experimental",
+    "examples": [
+        {
+            "xdm:type": "",
+            "xdm:ownerID": "",
+            "xdm:isDeleted": false,
+            "xdm:emailBouncedDate": "2018-12-20T15:52:25+00:00",
+            "xdm:emailBouncedReason": "Bounced Reason Here",
+            "xdm:isEmailBounced": true,
+            "xdm:description": "Contact/Lead description here",
+            "xdm:status": "Status",
+            "xdm:timezone": "",
+            "xdm:jigsaw": "12345"
+        }
+    ]
+}

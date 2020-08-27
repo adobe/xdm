@@ -1,0 +1,34 @@
+{
+  "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234430",
+  "dc:title": "Floki Begs Helga for Freedom",
+  "dc:creator": "Video Author",
+  "dc:publisher": "tvonline",
+  "xmpDM:duration": 87,
+  "iptc4xmpExt:Series": {
+    "iptc4xmpExt:Name": "show_highlights",
+    "iptc4xmpExt:Identifier": "http://mychanneltv.com/series-identifiers/2613953"
+  },
+  "xdm:showType": "episode",
+  "xdm:streamFormat": "long",
+  "xdm:streamType": "video",
+  "iptc4xmpExt:Season": {
+    "iptc4xmpExt:Number": 1.0
+  },
+  "iptc4xmpExt:Episode": {
+    "iptc4xmpExt:Number": 1.0
+  },
+  "iptc4xmpExt:Genre": ["sports"],
+  "iptc4xmpExt:Rating": [
+    {
+      "iptc4xmpExt:RatingValue": "OTV",
+      "iptc4xmpExt:RatingSourceLink": "http://www.tvmedia.org/ratings.htm"
+    }
+  ],
+  "iptc4xmpExt:Creator": [
+    {
+      "iptc4xmpExt:Name": "MyChannelTV"
+    }
+  ],
+  "xdm:firstAirDate": "2016-01-05",
+  "xmpDM:releaseDate": "2016-01-25"
+}

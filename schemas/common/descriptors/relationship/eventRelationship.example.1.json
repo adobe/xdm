@@ -1,7 +1,0 @@
-{
-  "@type": "xdm:eventRelationship",
-  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile__union",
-  "xdm:sourceVersion": 1,
-  "xdm:destinationSchema": "https://ns.adobe.com/xdm/context/experienceevent__union",
-  "xdm:destinationVersion": 1
-}

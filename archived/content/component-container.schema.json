@@ -1,0 +1,52 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/content/component-container",
+  "type": "object",
+  "title": "Component container",
+  "meta:extensible": true,
+  "description": "",
+  "definitions": {
+    "container": {
+      "properties": {
+        "@type": {
+          "type": "string",
+          "format": "uri",
+          "description": "Type of the container, acts as processing hint for the client."
+        },
+        "xdm:items": {
+          "type": "object",
+          "description": "The items of this container.",
+          "anyOf": [
+            {
+              "$ref": "#/definitions/container"
+            },
+            {
+              "$ref": "https://ns.adobe.com/xdm/content/page-component#/definitions/component"
+            }
+          ]
+        },
+        "xdm:itemsOrder": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          },
+          "description": "Defines the order of the items in the container. Can be omitted if the order is not important."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/container"
+    }
+  ],
+  "required": ["@type", "xdm:items"],
+  "meta:status": "stable"
+}

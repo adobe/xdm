@@ -2,6 +2,10 @@
 ##Please run from the root of branch
 echo $SHELL
 xdms=$(find xed -name "*.schema.json" -print)
+if [ $? -ne 0 ]; then
+  echo "Error finding schemas!"
+  exit 1
+fi
 schema="schema.json"
 schemaChanges="schemaChanges.log"
 references=$(find xed -name "*.schema.json")

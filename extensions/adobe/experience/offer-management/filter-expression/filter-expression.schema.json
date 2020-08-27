@@ -77,14 +77,7 @@
       "type": "string",
       "title": "Literal Type Identifier",
       "description": "Literal Type Identifier: String, Number, Integer, Boolean, Date, DateTime, XDMObject.",
-      "enum": [
-        "String",
-        "Number",
-        "Integer",
-        "Boolean",
-        "List",
-        "XDMObject"
-      ],
+      "enum": ["String", "Number", "Integer", "Boolean", "List", "XDMObject"],
       "meta:enum": {
         "String": "A string literal",
         "Number": "A number literal",
@@ -98,12 +91,7 @@
       "type": "string",
       "title": "Quantifier Type Identifier",
       "description": "Quantifier of first order logic. Produce a boolean value from a list of values by applying a predicate to each item and returning true or false based on the quantifier.",
-      "enum": [
-        "all",
-        "some",
-        "none",
-        "one"
-      ],
+      "enum": ["all", "some", "none", "one"],
       "meta:enum": {
         "all": "The All quantifier",
         "some": "The Exists quantifier",
@@ -184,7 +172,7 @@
           "type": "string",
           "const": "and"
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -204,7 +192,7 @@
           "type": "string",
           "const": "or"
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -224,7 +212,7 @@
           "type": "string",
           "const": "="
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -245,7 +233,7 @@
           "type": "string",
           "const": "!="
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -266,7 +254,7 @@
           "type": "string",
           "const": ">"
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -287,7 +275,7 @@
           "type": "string",
           "const": ">="
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -308,7 +296,7 @@
           "type": "string",
           "const": "<="
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -329,7 +317,7 @@
           "type": "string",
           "const": "<"
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -350,7 +338,7 @@
           "type": "string",
           "const": "in"
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -371,7 +359,7 @@
           "type": "string",
           "const": "notIn"
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -392,7 +380,7 @@
           "type": "string",
           "const": "isNull"
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -413,7 +401,7 @@
           "type": "string",
           "const": "isNotNull"
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -434,7 +422,7 @@
           "type": "string",
           "const": "="
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -455,7 +443,7 @@
           "type": "string",
           "const": "notEqualTo"
         },
-        "params" : {
+        "params": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/node-content"
@@ -479,7 +467,7 @@
               "type": "string",
               "const": "fnCreate"
             },
-            "params" : {
+            "params": {
               "type": "array",
               "items": {
                 "type": "object",
@@ -578,7 +566,7 @@
           "type": "string",
           "const": "String"
         },
-        "value" : {
+        "value": {
           "type": "string"
         }
       },
@@ -594,7 +582,7 @@
           "type": "string",
           "const": "Number"
         },
-        "value" : {
+        "value": {
           "type": "number"
         }
       },
@@ -610,7 +598,7 @@
           "type": "string",
           "const": "Integer"
         },
-        "value" : {
+        "value": {
           "type": "integer"
         }
       },
@@ -626,7 +614,7 @@
           "type": "string",
           "const": "Boolean"
         },
-        "value" : {
+        "value": {
           "type": "boolean"
         }
       },
@@ -642,7 +630,7 @@
           "type": "string",
           "const": "List"
         },
-        "value" : {
+        "value": {
           "type": "array"
         }
       },
@@ -658,7 +646,7 @@
           "type": "string",
           "const": "XDMObject"
         },
-        "value" : {
+        "value": {
           "type": "string"
         }
       },
@@ -674,7 +662,7 @@
           "type": "string",
           "const": "QueryString"
         },
-        "value" : {
+        "value": {
           "type": "string"
         }
       },
@@ -735,7 +723,7 @@
         }
       ]
     },
-    
+
     "variable-domain-content": {
       "type": "object",
       "title": "Define a variable and its domain",

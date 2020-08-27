@@ -9,7 +9,7 @@ Destinations Segment Mapping Schema.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stabilizing | No | Forbidden | Permitted | [context/destination-segment.schema.json](context/destination-segment.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [context/destination-segment.schema.json](context/destination-segment.schema.json) |
 ## Schema Hierarchy
 
 * Destinations Segment Mapping `https://ns.adobe.com/xdm/context/destination-segment`

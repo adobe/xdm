@@ -1,0 +1,74 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/assets/resource-event",
+  "title": "Resource Event",
+  "type": "object",
+  "meta:extensible": false,
+  "description": "",
+  "definitions": {
+    "resource-event": {
+      "properties": {
+        "stEvt:action": {
+          "title": "Action",
+          "description": "The action that occurred. Defined values are: converted, copied, created, cropped, edited, filtered, formatted, version_updated, printed, published, managed, produced, resized, and saved. New values should be verbs in the past tense.",
+          "meta:enum": [
+            "converted",
+            "copied",
+            "created",
+            "cropped",
+            "edited",
+            "filtered",
+            "formatted",
+            "version_updated",
+            "printed",
+            "published",
+            "managed",
+            "produced",
+            "resized",
+            "saved"
+          ]
+        },
+        "stEvt:changed": {
+          "title": "Changed",
+          "description": "A semicolon-delimited list of the parts of the resource that were changed since the previous event history. If not present, presumed to be undefined. When tracking changes and the scope of the changed components is unknown, it should be assumed that anything might have changed.",
+          "type": "string"
+        },
+        "stEvt:instanceID": {
+          "title": "Instance ID",
+          "description": "The value of the `instanceID` property for the modified (output) resource. The value is a GUID, capital A-F, and 8-4-4-12.",
+          "examples": ["00112233-4455-6677-8899-AABBCCDDEEFF"],
+          "pattern": "^[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}$",
+          "type": "string"
+        },
+        "stEvt:parameters": {
+          "title": "Parameters",
+          "description": "Additional description of the action.",
+          "type": "string"
+        },
+        "stEvt:softwareAgent": {
+          "title": "Software Agent",
+          "description": "The software agent (program) that performed the action.\nIt is recommended that the value use this format convention:\nOrganization Software_name Version (token;token;...)\n- Organization: The name of the company or organization providing the software, no SPACEs.\n- Software_name: The full name of the software, SPACEs allowed.\n- version: The version of the software, no SPACEs.\n- tokens: Can be used to identify an operating system, plug-in, or more detailed version information.",
+          "type": "string"
+        },
+        "stEvt:when": {
+          "title": "When",
+          "description": "Timestamp of when the action occurred. For events that create or write to a file, this should be the approximate modification time of the file.",
+          "format": "date-time",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/resource-event"
+    }
+  ],
+  "meta:status": "stable"
+}

@@ -1,0 +1,7 @@
+{
+  "@type": "xdm:descriptorReferenceIdentity",
+  "xdm:sourceSchema": "https://ns.adobe.com/marriot/schemas/marriott-loyalty",
+  "xdm:sourceVersion": 1,
+  "xdm:sourceProperty": "/_marriott/favoriteHotel",
+  "xdm:identityNamespace": "marriott"
+}

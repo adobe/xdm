@@ -7,8 +7,8 @@
   ],
   "$id":"https://ns.adobe.com/xdm/context/profile-privacy",
   "$schema":"http://json-schema.org/draft-06/schema#",
-  "title":"Privacy/Marketing Preferences (Consent)",
-  "description":"This schema captures privacy, personalization and marketing preferences (consents).",
+  "title":"Profile privacy",
+  "description":"Profile privacy schema captures general and sales sharing opt-out signals.",
   "type":"object",
   "meta:extensible":true,
   "meta:abstract":true,
@@ -18,11 +18,58 @@
   "definitions":{ 
     "profile-privacy":{ 
       "properties":{ 
-        "xdm:optOutConsentLevel":{ 
+        "xdm:optOutConsentLevel":{
           "type":"object",
-          "title":"Global Privacy/Marketing Preference Values",
-          "description":"Global (User/Profile-level) Privacy/Personalization/Marketing Preferences.",
-          "ref": "https://ns.adobe.com/xdm/context/consentpreferences"
+          "title":"Out-out consent level (deprecated)",
+          "description":"Opt-out consent level (deprecated).",
+          "properties": {
+            "xdm:privacyOptOuts": {
+              "title": "Privacy opt-outs",
+              "description": "Encapsulates different opt-out types for data privacy.",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "xdm:optOutType": {
+                    "title": "Opt-out type",
+                    "type": "string",
+                    "description": "The type of opt-out.",
+                    "enum": [
+                      "general_opt_out",
+                      "sales_sharing_opt_out"
+                    ],
+                    "meta:enum": {
+                      "general_opt_out": "General opt-out",
+                      "sales_sharing_opt_out": "Sales sharing opt-out"
+                    }
+                  },
+                  "xdm:optOutValue": {
+                    "title": "Opt-out value",
+                    "type": "string",
+                    "description": "The value of opt-out signal.",
+                    "enum": [
+                      "not_provided",
+                      "pending",
+                      "in",
+                      "out"
+                    ],
+                    "meta:enum": {
+                      "not_provided": "Not provided",
+                      "pending": "Pending verification",
+                      "in": "Opt-in",
+                      "out": "Opt-out"
+                    }
+                  },
+                  "xdm:timestamp": {
+                    "title": "Opt-out timestamp",
+                    "description": "Timestamp of the received opt-out signal.",
+                    "type": "string",
+                    "format": "date-time"
+                  }
+                }
+              }
+            }
+          }
         },
         "xdm:identityPrivacyInfo":{
           "title": "Identity level privacy information",
@@ -37,10 +84,6 @@
               "type": "object",
               "title": "User Identity",
               "properties": {
-                "xdm:consentsAndPreferences":{
-                  "title": "Device/Identity-specific Consents, Personalization and Marketing Preferences",
-                  "ref": "https://ns.adobe.com/xdm/context/consentpreferences"
-                },
                 "xdm:identityIABConsent": {
                   "type": "object",
                   "title": "Identity level consent information",

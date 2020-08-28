@@ -40,7 +40,7 @@
           "description": "Parent company for companies that are subsidiaries of a larger company or organization. The parent account must be an existing account in salesforce. You can enter the account name, or select (or optionally, create) the account using the lookup icon.",
           "$ref": "https://ns.adobe.com/xdm/datatype/b2b-source"
         },
-        "xdm:externalID": {
+        "xdm:accountExternalID": {
           "title": "External ID",
           "description": "External ID.",
           "$ref": "https://ns.adobe.com/xdm/datatype/b2b-source"

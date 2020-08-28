@@ -100,7 +100,7 @@
           "description": "A brief description of an organization’s line of business, based on its SIC code.",
           "type": "string"
         },
-        "xdm:D-U-N-S-Number": {
+        "xdm:DUNSNumber": {
           "title": "Dun & Bradstreet D-U-N-S Number",
           "description": "The Dun & Bradstreet D-U-N-S Number is a non-indicative, nine-digit number assigned to each business location in the Dun & Bradstreet database having a unique, separate, and distinct operation, and is maintained solely by Dun & Bradstreet.",
           "type": "string"

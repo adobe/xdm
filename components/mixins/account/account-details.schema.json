@@ -21,8 +21,8 @@
           "items": {
             "type": "object",
             "properties": {
-              "xdm:territoryID": {
-                "title": "Territory Id",
+              "xdm:accountTerritoryID": {
+                "title": "Account Territory Id",
                 "description": "The territory to which the account has been assigned.",
                 "type": "string"
               },
@@ -42,11 +42,11 @@
                 "title": "External Account Identifier",
                 "$ref": "https://ns.adobe.com/xdm/datatype/b2b-source"
               },
-              "xdm:ownerID": {
+              "xdm:accountOwnerID": {
                 "title": "Owner ID",
                 "$ref": "https://ns.adobe.com/xdm/datatype/b2b-source"
               },
-              "xdm:parentID": {
+              "xdm:accountParentID": {
                 "title": "Parent ID",
                 "$ref": "https://ns.adobe.com/xdm/datatype/b2b-source"
               },
@@ -54,8 +54,8 @@
                 "title": "Partner Account ID",
                 "$ref": "https://ns.adobe.com/xdm/datatype/b2b-source"
               },
-              "xdm:externalID": {
-                "title": "External ID",
+              "xdm:accountExternalID": {
+                "title": "Account External ID",
                 "$ref": "https://ns.adobe.com/xdm/datatype/b2b-source"
               },
               "xdm:salesAccountOwnerID": {
@@ -74,7 +74,7 @@
                 "title": "Account Physical Address",
                 "$ref": "https://ns.adobe.com/xdm/common/address"
               },
-              "xdm:organization": {
+              "xdm:accountOrganization": {
                 "title": "Account Organization Details",
                 "$ref": "https://ns.adobe.com/xdm/datatype/b2b-account-organization"
               },

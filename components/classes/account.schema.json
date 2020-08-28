@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/context/account",
+  "$id": "https://ns.adobe.com/xdm/class/account",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "XDM Business Account",
   "type": "object",
@@ -21,16 +21,6 @@
           "title": "Account ID",
           "description": "Account identifer",
           "type": "string"
-        },
-        "xdm:accountNumber": {
-          "title": "Account Number",
-          "description": "Tracking or reference number for account. Up to 40 characters are allowed in this field.",
-          "type": "string"
-        },
-        "xdm:accountType": {
-          "title": "Account Type",
-          "description": "Type of account, for example, customer, competitor, or partner. Entry is selected from a picklist of available values, which a salesforce admin sets. Each picklist value can have up to 40 characters.",
-          "type": "string"
         }
       }
     }
@@ -41,9 +31,6 @@
     },
     {
       "$ref": "https://ns.adobe.com/xdm/data/record"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
     },
     {
       "$ref": "#/definitions/account"

@@ -1,0 +1,113 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/marketo/account-marketo",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Marketo Account",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/account"],
+  "meta:extends": ["https://ns.adobe.com/xdm/context/account-crm"],
+  "description": "Marketo specific Account fields.",
+  "definitions": {
+    "account-marketo": {
+      "properties": {
+        "marketo:accountID": {
+          "title": "Marketo Account Identifier",
+          "description": "Unique identifier for an account in the Marketo instance.",
+          "type": "string"
+        },
+        "marketo:instanceID": {
+          "title": "Instance Identifier",
+          "description": "Instance identifier of Marketo where the record originated from.",
+          "type": "string"
+        },
+        "marketo:org": {
+          "type": "object",
+          "properties": {
+            "marketo:notes": {
+              "title": "Account Notes",
+              "type": "string"
+            },
+            "marketo:accountType": {
+              "title": "Account Type",
+              "description": "Type of Account.",
+              "type": "string"
+            },
+            "marketo:primaryInterestID": {
+              "title": "Primary Interest Id",
+              "type": "string"
+            },
+            "marketo:isPrivate": {
+              "title": "Private Flag",
+              "type": "boolean"
+            }
+          }
+        },
+        "marketo:namedAccount": {
+          "type": "object",
+          "properties": {
+            "marketo:opportunityAmount": {
+              "title": "Opportunity Amount",
+              "type": "number"
+            },
+            "marketo:opportunityCount": {
+              "title": "Opportunity Count",
+              "type": "integer"
+            },
+            "marketo:percentiles": {
+              "title": "Percentile Measures",
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
+            },
+            "marketo:scores": {
+              "title": "Score Measures",
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
+            },
+            "marketo:membershipCount": {
+              "title": "Membership Count",
+              "type": "integer"
+            },
+            "marketo:crmOrgID": {
+              "title": "CRM Organization Id",
+              "description": "Organization Id of the account from the CRM system.",
+              "type": "string"
+            },
+            "marketo:domainName": {
+              "title": "Domain Name",
+              "description": "Organization Domain name.",
+              "type": "string"
+            },
+            "marketo:isTargeted": {
+              "title": "Account targeted Indicator",
+              "description": "Indicator whether the Account is targeted.",
+              "type": "boolean"
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/account-marketo"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/account-crm"
+    }
+  ],
+  "meta:status": "deprecated"
+}

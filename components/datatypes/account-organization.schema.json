@@ -13,12 +13,7 @@
   "definitions": {
     "b2b-account-organization": {
       "properties": {
-        "schema:description": {
-          "title": "Organization description",
-          "type": "string",
-          "description": "A description of the organization."
-        },
-        "schema:numberOfEmployees": {
+        "xdm:numberOfEmployees": {
           "title": "Number of employees",
           "type": "number",
           "description": "The number of employees at the organization."

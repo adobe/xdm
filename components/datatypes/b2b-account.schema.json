@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/datatype/b2b-account",
+  "$id": "https://ns.adobe.com/xdm/datatypes/b2b-account",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "B2B Account",
   "type": "object",
@@ -38,27 +38,27 @@
         "xdm:accountparentID": {
           "title": "Parent Account",
           "description": "Parent company for companies that are subsidiaries of a larger company or organization. The parent account must be an existing account in salesforce. You can enter the account name, or select (or optionally, create) the account using the lookup icon.",
-          "$ref": "https://ns.adobe.com/xdm/datatype/b2b-source"
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
         },
         "xdm:accountExternalID": {
           "title": "External ID",
           "description": "External ID.",
-          "$ref": "https://ns.adobe.com/xdm/datatype/b2b-source"
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
         },
         "xdm:partnerAccountID": {
           "title": "Partner Account Id",
           "description": "Partner accounts are accounts that a channel manager uses to manage partner organizations, partner users, and activities when using a partner community or partner portal.",
-          "$ref": "https://ns.adobe.com/xdm/datatype/b2b-source"
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
         },
         "xdm:salesAccountOwnerID": {
           "title": "Sales Account Owner Id",
           "description": "Sales account owner ID.",
-          "$ref": "https://ns.adobe.com/xdm/datatype/b2b-source"
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
         },
         "xdm:accountOwnerID": {
           "title": "Account Owner Id",
           "description": "Account owner ID.",
-          "$ref": "https://ns.adobe.com/xdm/datatype/b2b-source"
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
         },
         "xdm:accountBillingAddress": {
           "title": "Account Billing Address",
@@ -126,7 +126,7 @@
         },
         "xdm:accountOrganization": {
           "title": "Account Organization",
-          "$ref": "https://ns.adobe.com/xdm/datatype/b2b-account-organization"
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-account-organization"
         }
       }
     }

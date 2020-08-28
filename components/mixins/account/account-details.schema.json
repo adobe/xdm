@@ -5,13 +5,13 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/mixin/account-details",
+  "$id": "https://ns.adobe.com/xdm/mixins/account-details",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Account Details",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/class/account"],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/account"],
   "description": "An XDM Business Account.",
   "definitions": {
     "account-details": {
@@ -36,31 +36,31 @@
               },
               "xdm:sourceAccountIdentifier": {
                 "title": "Source System Account Identifier",
-                "$ref": "https://ns.adobe.com/xdm/datatype/b2b-source"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
               },
               "xdm:externalAccountIdentifier": {
                 "title": "External Account Identifier",
-                "$ref": "https://ns.adobe.com/xdm/datatype/b2b-source"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
               },
               "xdm:accountOwnerID": {
                 "title": "Owner ID",
-                "$ref": "https://ns.adobe.com/xdm/datatype/b2b-source"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
               },
               "xdm:accountParentID": {
                 "title": "Parent ID",
-                "$ref": "https://ns.adobe.com/xdm/datatype/b2b-source"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
               },
               "xdm:partnerAccountID": {
                 "title": "Partner Account ID",
-                "$ref": "https://ns.adobe.com/xdm/datatype/b2b-source"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
               },
               "xdm:accountExternalID": {
                 "title": "Account External ID",
-                "$ref": "https://ns.adobe.com/xdm/datatype/b2b-source"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
               },
               "xdm:salesAccountOwnerID": {
                 "title": "Sales Account Owner ID",
-                "$ref": "https://ns.adobe.com/xdm/datatype/b2b-source"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
               },
               "xdm:accountBillingAddress": {
                 "title": "Account Billing Address",
@@ -76,7 +76,7 @@
               },
               "xdm:accountOrganization": {
                 "title": "Account Organization Details",
-                "$ref": "https://ns.adobe.com/xdm/datatype/b2b-account-organization"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-account-organization"
               },
               "xdm:externalSourceAudit": {
                 "title": "External Source System Audit Details",
@@ -96,7 +96,7 @@
       "$ref": "#/definitions/account-details"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/datatype/b2b-account"
+      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-account"
     }
   ],
   "meta:status": "experimental"

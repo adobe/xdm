@@ -23,7 +23,7 @@
         "xdm:ID": {
           "title": "ID",
           "type": "string",
-		  "description": "This is the row id for the fragment (of whatever type it is).It could be row id for the contact, account, lead etc."
+          "description": "This is the row id for the fragment (of whatever type it is).It could be row id for the contact, account, lead etc."
         },
         "xdm:key": {
           "title": "System Key",

@@ -90,7 +90,7 @@
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/common/b2b-account/definitions/@context"
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
       "$ref": "#/definitions/account-details"

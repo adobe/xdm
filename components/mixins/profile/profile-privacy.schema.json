@@ -18,12 +18,12 @@
       "properties": {
         "xdm:optOutConsentLevel": {
           "type": "object",
-          "title": "Opt-out consent level",
-          "description": "Opt-out consent level.",
+          "title": "Opt-out consent level (deprecated)",
+          "description": "Opt-out consent level (deprecated).",
           "properties": {
             "xdm:privacyOptOuts": {
-              "title": "Privacy opt-outs",
-              "description": "Encapsulates different opt-out types for data privacy.",
+              "title": "Privacy opt-outs (deprecated)",
+              "description": "Encapsulates different opt-out types for data privacy (deprecated).",
               "type": "array",
               "items": {
                 "type": "object",

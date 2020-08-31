@@ -1,0 +1,352 @@
+{
+  "meta:license":[
+     "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+     "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+     "you may not use this file except in compliance with the License. You may obtain a copy",
+     "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id":"https://ns.adobe.com/xdm/datatypes/consent-preferences",
+  "$schema":"http://json-schema.org/draft-06/schema#",
+  "title":"Privacy/Marketing Preferences (Consent)",
+  "description":"This schema captures privacy, personalization and marketing preferences (consents).",
+  "type":"object",
+  "meta:extensible":true,
+  "meta:abstract":true,
+  "definitions":{
+    "consentValue": {
+      "title": "Consent Value",
+      "description": "The value of the specific privacy/consent preference.",
+      "type": "string",
+      "enum": [
+        "yes",
+        "no",
+        "pending",
+        "unknown",
+        "not_applicable"
+      ],
+      "meta:enum": {
+        "yes": "The user has explicitly opted in to this feature",
+        "no": "The user has explicitly opted out of this feature",
+        "pending": "Pending verification",
+        "unknown":"Unknown",
+        "not_applicable":"Not Applicable"
+      }
+    },
+    "basisOfProcessing": {
+      "title": "Basis Of Processing",
+      "type": "string",
+      "description": "Basis of Processing",
+      "enum": [
+        "consent",
+        "legitimate_interest",
+        "contract",
+        "compliance",
+        "vital_interest",
+        "public_interest"
+      ],
+      "meta:enum": {
+        "consent": "User Consent",
+        "legitimate_interest": "Legitimate Interest",
+        "contract": "Contract",
+        "compliance": "Compliance with a Legal Obligation",
+        "vital_interest": "Vital Interest of the Individual",
+        "public_interest": "Public Interest"
+      }
+    },
+    "timestamp": {
+      "title": "Preference timestamp",
+      "description": "Timestamp of this specific opt out or preference.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "consentOption": {
+      "type": "object",
+      "properties": {
+        "xdm:choice": {
+          "$ref": "#/definitions/consentValue"
+        },
+        "xdm:basisOfProcessing": {
+          "$ref": "#/definitions/basisOfProcessing"
+        },
+        "xdm:timestamp": {
+          "$ref": "#/definitions/timestamp"
+        }
+      }
+    },
+    "marketingOption": {
+      "type": "object",
+      "properties": {
+        "xdm:choice": {
+          "$ref": "#/definitions/consentValue"
+        },
+        "xdm:basisOfProcessing": {
+          "$ref": "#/definitions/basisOfProcessing"
+        },
+        "xdm:timestamp": {
+          "$ref": "#/definitions/timestamp"
+        },
+        "xdm:reason": {
+          "title": "Opt Out Reason",
+          "type": "string",
+          "description": "Reason for opting out"
+        }
+      }
+    },
+    "consent-preferences": {
+      "properties": {
+        "xdm:privacyPreferences": {
+          "title": "Privacy Preferences",
+          "description": "Encapsulates data privacy preferences or consents.",
+          "type": "object",
+          "properties": {
+            "xdm:dataCollection": {
+              "title": "Data Collection",
+              "description": "Data collection is permitted",
+              "$ref": "#/definitions/consentOption"
+            },
+            "xdm:saleOfData": {
+              "title": "Sale of Data",
+              "description": "Sale of Data is permitted, such as in compliance with CCPA",
+              "$ref": "#/definitions/consentOption"
+            },
+            "xdm:sharingOfData": {
+              "title": "Sharing of Data",
+              "description": "Sharing of Data with 2nd or 3rd parties is permitted",
+              "$ref": "#/definitions/consentOption"
+            },
+            "xdm:anonymousAnalysis": {
+              "title": "Anonymous Analysis",
+              "description": "Data can be used for analysis that does not require the use of any type of ID (whether it can be tied to an individual or not)",
+              "$ref": "#/definitions/consentOption"
+            },
+            "xdm:pseudonymousAnalysis": {
+              "title": "Pseudonymous Analysis",
+              "description": "Data can be used for analysis that may include an ID that may or may not be tied to an actual person",
+              "$ref": "#/definitions/consentOption"
+            },
+            "xdm:deviceLinking": {
+              "title": "Device Linking",
+              "description": "Attempts to associate multiple devices used/owned by an individual/household/organization are permitted",
+              "$ref": "#/definitions/consentOption"
+            },
+            "xdm:preciseGeoLocation": {
+              "title": "Precise Geo Location",
+              "description": "Collection of Geo Location data with an accuracy of 1 km or better is permitted",
+              "$ref": "#/definitions/consentOption"
+            },
+            "xdm:courseGeoLocation": {
+              "title": "Course Geo Location",
+              "description": "Collection of a rough Geo location that is less accurate than 1 km is permitted",
+              "$ref": "#/definitions/consentOption"
+            }
+          }
+        },
+        "xdm:personalizationPreferences": {
+          "title": "Personalization Preferences",
+          "description": "User's Personalization Preferences",
+          "type": "object",
+          "properties": {
+            "xdm:default": {
+              "title": "Default Personalization Preference",
+              "description": "Unless overridden by a specific personalization preference, personalization is permitted",
+              "$ref": "#/definitions/consentOption"
+            },
+            "xdm:content": {
+              "title": "Personalize content",
+              "description": "Allow personalization of the content on my site or in my apps",
+              "$ref": "#/definitions/consentOption"
+            },
+            "xdm:inAppMessages": {
+              "title": "Personalize in-app messages",
+              "description": "Allow personalization of messages displayed within my apps",
+              "$ref": "#/definitions/consentOption"
+            },
+            "xdm:offers": {
+              "title": "Personalize Offers",
+              "description": "Allow personalization of offers (my own ads) displayed on my site or in my app",
+              "$ref": "#/definitions/consentOption"
+            },
+            "xdm:eMail": {
+              "title": "Personalize eMail",
+              "description": "Allow personalization of emails sent to the user",
+              "$ref": "#/definitions/consentOption"
+            },
+            "xdm:snailMail": {
+              "title": "Personalize snail-mail",
+              "description": "Allow personalization of offers sent via traditional mail",
+              "$ref": "#/definitions/consentOption"
+            },
+            "xdm:phoneCalls": {
+              "title": "Personalize phone calls",
+              "description": "Allow phone calls that we initiate to be personalized base on your interests/history",
+              "$ref": "#/definitions/consentOption"
+            },
+            "xdm:customerSupport": {
+              "title": "Personalize customer support",
+              "description": "Allow customer support to personalize responses/suggestions based on your interests/history",
+              "$ref": "#/definitions/consentOption"
+            },
+            "xdm:pushNotifications": {
+              "title": "Personalize push notifications",
+              "description": "Personalization of push notifications is permitted",
+              "$ref": "#/definitions/consentOption"
+            },
+            "xdm:sms": {
+              "title": "Personalize SMS",
+              "description": "Personalize text messages",
+              "$ref": "#/definitions/consentOption"
+            },
+            "xdm:inStore": {
+              "title": "Personalize in-store",
+              "description": "Personalize in-store experiences",
+              "$ref": "#/definitions/consentOption"
+            },
+            "xdm:inVehicle": {
+              "title": "Personalize in-vehicle",
+              "description": "Personalize in-vehicle experiences",
+              "$ref": "#/definitions/consentOption"
+            },
+            "xdm:inHome": {
+              "title": "Personalize in-home",
+              "description": "Personalize in-home experiences",
+              "$ref": "#/definitions/consentOption"
+            },
+            "xdm:iot": {
+              "title": "Personalize IoT",
+              "description": "Personalize interactions on IoT devices",
+              "$ref": "#/definitions/consentOption"
+            },
+            "xdm:socialMedia": {
+              "title": "Personalize Social Media",
+              "description": "Personalize interactions on Social Media sites/apps",
+              "$ref": "#/definitions/consentOption"
+            },
+            "xdm:thirdPartyOffers": {
+              "title": "Personalize ",
+              "description": "Personalize third-party offers/ads displayed on my site or in my app",
+              "$ref": "#/definitions/consentOption"
+            },
+            "xdm:thirdPartyContent": {
+              "title": "Personalize ",
+              "description": "Personalize third-party content displayed on my site or in my app",
+              "$ref": "#/definitions/consentOption"
+            },
+            "xdm:ads": {
+              "title": "Personalize Ads",
+              "description": "Personalize my business's ads on third-party sites/apps",
+              "$ref": "#/definitions/consentOption"
+            }
+          }
+        },
+        "xdm:marketingPreferences": {
+          "title": "Marketing Preferences",
+          "description": "User's Direct Marketing Preferences",
+          "type": "object",
+          "properties": {
+            "xdm:default": {
+              "title": "Default Direct Marketing Preference",
+              "description": "User's Default Preference for Direct Marketing",
+              "$ref": "#/definitions/marketingOption"
+            },
+            "xdm:eMail": {
+              "title": "Receive email",
+              "description": "User is willing to be contacted via email",
+              "$ref": "#/definitions/marketingOption"
+            },
+            "xdm:pushNotifications": {
+              "title": "Receive push notifications",
+              "description": "It is okay to send push notifications",
+              "$ref": "#/definitions/marketingOption"
+            },
+            "xdm:inAppMessages": {
+              "title": "Receive in-app messages",
+              "description": "User has allowed messages to be shown within the company's apps",
+              "$ref": "#/definitions/marketingOption"
+            },
+            "xdm:sms": {
+              "title": "Receive SMS",
+              "description": "It is okay to send text messages to the user",
+              "$ref": "#/definitions/marketingOption"
+            },
+            "xdm:phoneCalls": {
+              "title": "Receive phone calls",
+              "description": "The company may contact the user with phone solicitations",
+              "$ref": "#/definitions/marketingOption"
+            },
+            "xdm:snailMail": {
+              "title": "Receive snail-mail",
+              "description": "It is okay to send offers via traditional mail.",
+              "$ref": "#/definitions/marketingOption"
+            },
+            "xdm:inVehicleMessages": {
+              "title": "Receive in-vehicle messages",
+              "description": "It is okay to provide offers to the user via technology installed in their vehicle",
+              "$ref": "#/definitions/marketingOption"
+            },
+            "xdm:inHomeMessages": {
+              "title": "Receive in-home messages",
+              "description": "It is okay to provide offers to the user via technology installed in their home",
+              "$ref": "#/definitions/marketingOption"
+            },
+            "xdm:iot": {
+              "title": "Receive IoT messages",
+              "description": "It is okay to present offers via less traditional types of connected devices",
+              "$ref": "#/definitions/marketingOption"
+            },
+            "xdm:socialMedia": {
+              "title": "Receive Social Media Messages",
+              "description": "It is okay to direct messages to the user via their social media accounts",
+              "$ref": "#/definitions/marketingOption"
+            }
+          }
+        },
+        "xdm:timestamp": {
+          "title": "Consent Preferences timestamp",
+          "description": "Timestamp of the complete set of user consent preferences",
+          "type": "string",
+          "format": "date-time"
+        },
+        "xdm:version": {
+          "title": "Preferences Version",
+          "description": "Version of the Privacy Preferences Standard",
+          "type": "string"
+        },
+        "xdm:userLocale": {
+          "title": "User Locale",
+          "description": "User location or jurisdiction that applies to the consents for this user",
+          "type": "string"
+        },
+        "xdm:localeSource": {
+          "title": "Locale Source",
+          "description": "Method used to determine the user's locale",
+          "type": "string",
+          "enum": [
+            "ip",
+            "gps",
+            "user_provided",
+            "website_location",
+            "inferred",
+            "other"
+          ],
+          "meta:enum": {
+            "ip": "IP Address",
+            "gps": "Device GPS",
+            "user_provided": "User Provided",
+            "website_location": "Website eTDL",
+            "inferred": "Inferred",
+            "other": "Other"
+          }
+        }
+      }
+    }
+  },
+  "allOf":[
+    {
+      "$ref":"https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/consent-preferences"
+    }
+  ],
+  "meta:status":"experimental"
+}

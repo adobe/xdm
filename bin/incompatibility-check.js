@@ -23,6 +23,7 @@ const diff = require('deep-diff');
 const jsonValidator = require('json-dup-key-validator');
 const masterCopyLoc = "../tempmaster/";
 const masterSchemaFolder = masterCopyLoc + "schemas";
+const masterComponentFolder = masterCopyLoc + "components";
 const masterExtensionFolder = masterCopyLoc + "extensions";
 
 shell.rm("-rf", masterCopyLoc); //start
@@ -35,6 +36,7 @@ var jsonDataTypes = ["string", "number", "integer", "array", "object", "boolean"
 var jsonStringFormats = ["date-time", "time", "date", "email", "idn-email", "ipv4", "ipv6", "uri", "uri-reference", "iri", "iri-reference", "uri-template", "json-pointer", "relative-json-pointer", "regex"];
 var schemaFiles = glob.sync(masterSchemaFolder + "/**/*.schema.json");
 schemaFiles = schemaFiles.concat(glob.sync(masterExtensionFolder + "/**/*.schema.json"));
+schemaFiles = schemaFiles.concat(glob.sync(masterComponentFolder + "/**/*.schema.json"));
 
 var errLogs = [];
 checkBreakingChanges(schemaFiles);

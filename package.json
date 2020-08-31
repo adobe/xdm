@@ -7,13 +7,13 @@
     "aem_user": "packageUser",
     "aem_password": "override me securely",
     "markdown-importer-version": "0.0.4",
-    "schemas": 304
+    "schemas": 197
   },
   "scripts": {
     "clean": "rm -rf docs/reference",
-    "markdown": "shx mkdir -p docs/reference && jsonschema2md -o docs/reference -d schemas --link-abstract abstract.md --link-extensible extensions.md --link-status status.md --link-id id.md --link-custom extensions.md --link-additional extensions.md -v \"06\"",
+    "markdown": "shx mkdir -p docs/reference && jsonschema2md -o docs/reference -d components --link-abstract abstract.md --link-extensible extensions.md --link-status status.md --link-id id.md --link-custom extensions.md --link-additional extensions.md -v \"06\"",
     "test": "mocha",
-    "lint": "prettier --write *.json RELEASING.md CHANGELOG.md CONTRIBUTING.md README.md docs/*.md schemas/*/**/*.md schemas/*/**/*.json extensions/*/**/*.json extensions/*/*/**/*.json && git diff --exit-code",
+    "lint": "prettier --write *.json RELEASING.md CHANGELOG.md CONTRIBUTING.md README.md docs/*.md schemas/*/**/*.md schemas/*/*.json schemas/*/**/*.json components/*/*.json components/*/**/*.json extensions/*/**/*.json extensions/*/*/**/*.json && git diff --exit-code",
     "lint-quick": "pretty-quick",
     "package": "npm run markdown && curl -o \"./node_modules/markdown-importer-0.0.4-jar-with-dependencies.jar\" -C - https://artifactory.corp.adobe.com/artifactory/maven-markdown-tools-release/io/adobe/udp/markdown-importer/0.0.4/markdown-importer-0.0.4-jar-with-dependencies.jar && java -jar ./node_modules/markdown-importer-0.0.4-jar-with-dependencies.jar markdown2aem.yaml",
     "upload": "curl -u \"$npm_package_config_aem_user:$npm_package_config_aem_password\" -F file=\"@xdm-docs.zip\" -F name=\"xdm-docs\" -F force=true -F install=true https://author-adobeio-stage.adobemsbasic.com/crx/packmgr/service.jsp",

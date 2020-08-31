@@ -1,0 +1,18 @@
+{
+  "xdm:segmentID": {
+    "@id": "https://data.adobe.io/entities/identity/92312748749128",
+    "xdm:namespace": {
+      "xdm:code": "AAM"
+    }
+  },
+  "xdm:profileStitchID": {
+    "@id": "https://data.adobe.io/entities/profileStitchIdentity/1",
+    "xdm:namespace": {
+      "xdm:code": "AAM"
+    },
+    "xdm:lastQualificationTime": "2017-09-26T15:52:25+00:00",
+    "xdm:version": "1.0",
+    "xdm:validUntil": "2017-12-26T15:52:25+00:00",
+    "xdm:status": "realized"
+  }
+}

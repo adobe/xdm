@@ -1,0 +1,72 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/context/opportunity",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "XDM Business Opportunity",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:extends": [
+        "https://ns.adobe.com/xdm/data/record"
+    ],
+    "description": "An XDM Business Opportunity.",
+    "definitions": {
+        "opportunity": {
+            "properties": {
+                "xdm:opportuntyID": {
+                    "title": "Opportunity ID",
+                    "description": "Unique identifer of the opportunity",
+                    "type": "string"
+                },
+                "xdm:opportunityType": {
+                    "title": "Opportunity Type",
+                    "description": "Type of Opportunity.",
+                    "type": "string"
+                },
+                "xdm:accountID": {
+                    "title": "Account ID",
+                    "description": "Account identifer reference",
+                    "type": "string"
+                },
+                "xdm:campaignID": {
+                    "title": "Campaign ID",
+                    "description": "Campaign unique identifer reference",
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/data/record"
+        },
+        {
+            "$ref": "#/definitions/opportunity"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
+        }
+    ],
+    "required": [
+        "xdm:opportunityID",
+        "xdm:opportunityType",
+        "xdm:accountID"
+    ],
+    "meta:status": "experimental",
+    "examples": [
+        {
+            "xdm:opportunityID": "12345",
+            "xdm:opportunityType": "business",
+            "xdm:accountID": "89765",
+            "xdm:campaignID": "95678"
+        }
+    ]
+}

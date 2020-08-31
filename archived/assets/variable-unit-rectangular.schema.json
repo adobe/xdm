@@ -1,0 +1,54 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/assets/variable-unit-rectangular",
+  "title": "Rectangular Object (measured in variable unit)",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "This is an abstract schema for objects of rectangular dimensions and position, with a user-specified unit of measurement. Examples include `Artboard` and `Layer`.",
+  "definitions": {
+    "rectangular": {
+      "properties": {
+        "xdm:originX": {
+          "type": "integer",
+          "title": "Origin X",
+          "meta:usereditable": false,
+          "description": "Origin X position - base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards)."
+        },
+        "xdm:originY": {
+          "type": "integer",
+          "title": "Origin Y",
+          "meta:usereditable": false,
+          "description": "Origin Y position - base system is cartesian, relative to master page and origin in top, left (X increasing to right, Y increasing downwards)."
+        },
+        "xdm:width": {
+          "title": "Width",
+          "meta:usereditable": false,
+          "type": "integer",
+          "exclusiveMinimum": 0,
+          "description": "Width of the artboard."
+        },
+        "xdm:height": {
+          "title": "Height",
+          "meta:usereditable": false,
+          "type": "integer",
+          "exclusiveMinimum": 0,
+          "description": "Height of the artboard."
+        },
+        "xdm:unit": {
+          "title": "Unit",
+          "meta:usereditable": false,
+          "type": "string",
+          "default": "pixel",
+          "description": "Unit used for artboard coordinates (`originX`, `originY`, `width` and `height`). For example: `inch`, `mm`, `pixel`, `pica`, `point` (default is `pixel`)."
+        }
+      }
+    }
+  },
+  "meta:status": "stable"
+}

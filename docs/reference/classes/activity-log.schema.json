@@ -1,0 +1,88 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/context/activity-log",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "XDM Business Activity Log",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:extends": [
+        "https://ns.adobe.com/xdm/data/time-series"
+    ],
+    "description": "An XDM Activity in the form of a task or a business event.",
+    "definitions": {
+        "activity": {
+            "properties": {
+                "xdm:activityID": {
+                    "title": "Activity ID",
+                    "description": "Activity log unique identifer",
+                    "type": "string"
+                },
+                "xdm:activityType": {
+                    "title": "Activity Type",
+                    "description": "The tacking type of the activity in the form of a task or a business planned event",
+                    "properties": {
+                        "xdm:ID": {
+                            "title": "ID of the Activity Type",
+                            "description": "The tacking type of the activity in the form of a task or a business planned event",
+                            "type": "string"
+                        },
+                        "xdm:type": {
+                            "title": "Type of the Activity Type",
+                            "description": "The tacking type of the activity in the form of a task or a business planned event",
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "xdm:ID",
+                        "xdm:type"
+                    ]
+                }
+            },
+            "required": [
+                "xdm:activityID"
+            ]
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/data/time-series"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
+        },
+        {
+            "$ref": "#/definitions/activity"
+        }
+    ],
+    "meta:status": "experimental",
+    "examples": [
+        {
+            "xdm:activityID": "1",
+            "xdm:activityType": {
+                "xdm:ID": "6",
+                "xdm:type": "Event"
+            },
+            "@id": "https://data.adobe.io/experienceid-123456",
+            "xdm:timestamp": "2020-05-19T09:05:25+00:00",
+            "xdm:eventType": "",
+            "xdm:extSourceSystemAudit": {
+                "xdm:createdBy": "USER111",
+                "xdm:createdDate": "2018-01-19T15:52:25+00:00",
+                "xdm:lastUpdatedBy": "USER2222",
+                "xdm:lastUpdatedDate": "2018-01-19T15:52:25+00:00",
+                "xdm:lastActivityDate": "2018-01-19T15:52:25+00:00",
+                "xdm:lastReferencedDate": "2018-01-20T15:52:25+00:00",
+                "xdm:lastViewedDate": "2018-01-26T15:52:25+00:00"
+            }
+        }
+    ]
+}

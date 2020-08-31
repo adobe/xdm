@@ -1,0 +1,20 @@
+{
+  "xdm:edges": [
+    {
+      "xdm:sourceNodeId": "aam_1|0",
+      "xdm:targetNodeId": "dpuuid_1|10",
+      "xdm:dataProvider": [
+        {
+          "xdm:dataProviderId": 5,
+          "xdm:firstSeenTimestamp": "2019-02-01T15:52:25+00:00",
+          "xdm:lastSeenTimestamp": "2019-02-01T15:52:25+00:00",
+          "xdm:trusted": true,
+          "xdm:directed": false,
+          "xdm:relationType": "online_deterministic",
+          "xdm:frequency": 1,
+          "xdm:lastCalculatedTimestamp": "2019-02-01T15:52:25+00:00"
+        }
+      ]
+    }
+  ]
+}

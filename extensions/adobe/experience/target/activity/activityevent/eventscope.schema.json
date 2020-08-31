@@ -13,11 +13,7 @@
   "definitions": {
     "eventscope": {
       "type": "string",
-      "enum": [
-        "visitor",
-        "visit",
-        "impression"
-      ],
+      "enum": ["visitor", "visit", "impression"],
       "meta:enum": {
         "visitor": "Activity got a new visitor.",
         "visit": "Activity got a new visit.",

@@ -27,10 +27,7 @@
           "title": "Traffic Type",
           "type": "string",
           "description": "Denotes traffic type.",
-          "enum": [
-            "testing",
-            "targeted"
-          ],
+          "enum": ["testing", "targeted"],
           "meta:enum": {
             "testing": "Testing Traffic",
             "targeted": "Targeted Traffic"

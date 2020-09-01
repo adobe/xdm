@@ -6,10 +6,10 @@
         "xdm:timestamp": "2019-01-01T15:52:25+00:00",
         "xdm:basisOfProcessing": "consent"
       },
-      "device_linking": {
+      "xdm:deviceLinking": {
         "xdm:basisOfProcessing": "vital_interest"
       },
-      "anonymous_analysis": {
+      "xdm:anonymousAnalysis": {
         "xdm:choice": "no"
       }
     },

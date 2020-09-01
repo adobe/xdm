@@ -1,6 +1,6 @@
 {
   "meta:license":[
-     "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+     "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
      "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
      "you may not use this file except in compliance with the License. You may obtain a copy",
      "of the License at https://creativecommons.org/licenses/by/4.0/"
@@ -86,7 +86,7 @@
           "$ref": "#/definitions/timestamp"
         },
         "xdm:reason": {
-          "title": "Opt Out Reason",
+          "title": "Opt out reason",
           "type": "string",
           "description": "Reason for opting out"
         }
@@ -104,14 +104,9 @@
               "description": "Data collection is permitted",
               "$ref": "#/definitions/consentOption"
             },
-            "xdm:saleOfData": {
-              "title": "Sale of Data",
-              "description": "Sale of Data is permitted, such as in compliance with CCPA",
-              "$ref": "#/definitions/consentOption"
-            },
-            "xdm:sharingOfData": {
-              "title": "Sharing of Data",
-              "description": "Sharing of Data with 2nd or 3rd parties is permitted",
+            "xdm:sellingOrSharingOfData": {
+              "title": "Selling or Sharing of Data",
+              "description": "Sharing or Selling of Data with/to 2nd or 3rd parties is permitted, such as in compliance with CCPA",
               "$ref": "#/definitions/consentOption"
             },
             "xdm:anonymousAnalysis": {
@@ -128,16 +123,6 @@
               "title": "Device Linking",
               "description": "Attempts to associate multiple devices used/owned by an individual/household/organization are permitted",
               "$ref": "#/definitions/consentOption"
-            },
-            "xdm:preciseGeoLocation": {
-              "title": "Precise Geo Location",
-              "description": "Collection of Geo Location data with an accuracy of 1 km or better is permitted",
-              "$ref": "#/definitions/consentOption"
-            },
-            "xdm:courseGeoLocation": {
-              "title": "Course Geo Location",
-              "description": "Collection of a rough Geo location that is less accurate than 1 km is permitted",
-              "$ref": "#/definitions/consentOption"
             }
           }
         },
@@ -146,9 +131,9 @@
           "description": "User's Personalization Preferences",
           "type": "object",
           "properties": {
-            "xdm:default": {
-              "title": "Default Personalization Preference",
-              "description": "Unless overridden by a specific personalization preference, personalization is permitted",
+            "xdm:general": {
+              "title": "General Personalization Preference",
+              "description": "Is there consent for personalization, unless overridden by a specific personalization preference",
               "$ref": "#/definitions/consentOption"
             },
             "xdm:content": {
@@ -243,9 +228,9 @@
           "description": "User's Direct Marketing Preferences",
           "type": "object",
           "properties": {
-            "xdm:default": {
-              "title": "Default Direct Marketing Preference",
-              "description": "User's Default Preference for Direct Marketing",
+            "xdm:general": {
+              "title": "General Direct Marketing Preference",
+              "description": "Does user consent to Direct Marketing in general, unless overridden by specific choices",
               "$ref": "#/definitions/marketingOption"
             },
             "xdm:eMail": {

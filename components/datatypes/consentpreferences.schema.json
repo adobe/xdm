@@ -151,8 +151,8 @@
               "description": "Allow personalization of offers (my own ads) displayed on my site or in my app",
               "$ref": "#/definitions/consentOption"
             },
-            "xdm:eMail": {
-              "title": "Personalize eMail",
+            "xdm:email": {
+              "title": "Personalize email",
               "description": "Allow personalization of emails sent to the user",
               "$ref": "#/definitions/consentOption"
             },
@@ -196,8 +196,8 @@
               "description": "Personalize in-home experiences",
               "$ref": "#/definitions/consentOption"
             },
-            "xdm:iot": {
-              "title": "Personalize IoT",
+            "xdm:iotDevices": {
+              "title": "Personalize IoT Devices",
               "description": "Personalize interactions on IoT devices",
               "$ref": "#/definitions/consentOption"
             },
@@ -216,7 +216,7 @@
               "description": "Personalize third-party content displayed on my site or in my app",
               "$ref": "#/definitions/consentOption"
             },
-            "xdm:ads": {
+            "xdm:advertising": {
               "title": "Personalize Ads",
               "description": "Personalize my business's ads on third-party sites/apps",
               "$ref": "#/definitions/consentOption"
@@ -228,12 +228,41 @@
           "description": "User's Direct Marketing Preferences",
           "type": "object",
           "properties": {
+            "xdm:preferredChannel": {
+              "title": "Preferred Channel",
+              "description": "User's preferred channel for receiving communications",
+              "type": "string",
+              "enum": [
+                "email",
+                "pushNotifications",
+                "inAppMessages",
+                "sms",
+                "phoneCalls",
+                "snailMail",
+                "inVehicleMessages",
+                "inHomeMessages",
+                "iotMessages",
+                "socialMedia"
+              ],
+              "meta:enum": {
+                "email": "email",
+                "pushNotifications": "push notifications",
+                "inAppMessages": "in-app messages",
+                "sms": "sms (text messages)",
+                "phoneCalls": "phone calls",
+                "snailMail": "traditional mail",
+                "inVehicleMessages": "in-vehicle messages",
+                "inHomeMessages": "in-home messages",
+                "iot": "IoT messages",
+                "socialMedia": "social media"
+              }
+            },
             "xdm:general": {
               "title": "General Direct Marketing Preference",
               "description": "Does user consent to Direct Marketing in general, unless overridden by specific choices",
               "$ref": "#/definitions/marketingOption"
             },
-            "xdm:eMail": {
+            "xdm:email": {
               "title": "Receive email",
               "description": "User is willing to be contacted via email",
               "$ref": "#/definitions/marketingOption"
@@ -273,7 +302,7 @@
               "description": "It is okay to provide offers to the user via technology installed in their home",
               "$ref": "#/definitions/marketingOption"
             },
-            "xdm:iot": {
+            "xdm:iotMessages": {
               "title": "Receive IoT messages",
               "description": "It is okay to present offers via less traditional types of connected devices",
               "$ref": "#/definitions/marketingOption"
@@ -294,16 +323,18 @@
         "xdm:version": {
           "title": "Preferences Version",
           "description": "Version of the Privacy Preferences Standard",
-          "type": "string"
+          "type": "string",
+          "pattern": "^[0-9]{1,2}\\.[0-9]{1,2}\\.[0-9]{1,4}$",
+          "default": "1.0.0"
         },
-        "xdm:userLocale": {
-          "title": "User Locale",
+        "xdm:userJurisdiction": {
+          "title": "User Jurisdiction",
           "description": "User location or jurisdiction that applies to the consents for this user",
           "type": "string"
         },
-        "xdm:localeSource": {
-          "title": "Locale Source",
-          "description": "Method used to determine the user's locale",
+        "xdm:jurisdictionSource": {
+          "title": "Jurisdiction Source",
+          "description": "Method used to determine the user's jurisdiction",
           "type": "string",
           "enum": [
             "ip",

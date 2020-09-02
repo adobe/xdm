@@ -13,12 +13,12 @@
     }
   },
   "xdm:personalizationPreferences": {
-    "xdm:default": {
+    "xdm:general": {
       "xdm:choice": "unknown",
       "xdm:timestamp": "2019-01-01T15:52:25+00:00",
       "xdm:basisOfProcessing": "consent"
     },
-    "xdm:eMail": {
+    "xdm:email": {
       "xdm:choice": "yes"
     },
     "xdm:pushNotifications": {
@@ -28,10 +28,11 @@
     }
   },
   "xdm:marketingPreferences": {
-    "xdm:default": {
-      "xdm:choice": "unknown"
+    "xdm:preferredChannel": "email",
+    "xdm:general": {
+      "xdm:choice": "yes"
     },
-    "xdm:eMail": {
+    "xdm:email": {
       "xdm:choice": "yes"
     },
     "xdm:pushNotifications": {
@@ -46,6 +47,6 @@
   },
   "xdm:version": "1.0.0",
   "xdm:timestamp": "2019-01-01T15:52:25+00:00",
-  "xdm:userLocale": "UK",
-  "xdm:localeSource": "ip"
+  "xdm:userJurisdiction": "UK",
+  "xdm:jurisdictionSource": "ip"
 }

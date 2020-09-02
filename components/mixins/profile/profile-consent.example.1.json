@@ -14,24 +14,18 @@
       }
     },
     "xdm:personalizationPreferences": {
-      "xdm:default": {
+      "xdm:general": {
         "xdm:choice": "yes",
         "xdm:timestamp": "2019-01-01T15:52:25+00:00",
         "xdm:basisOfProcessing": "consent"
       }
     },
     "xdm:marketingPreferences": {
-      "xdm:default": {
+      "xdm:preferredChannel": "email",
+      "xdm:general": {
         "xdm:choice": "unknown"
       },
-      "xdm:eMail": {
-        "xdm:choice": "no"
-      },
-      "xdm:pushNotifications": {
-        "xdm:choice": "no",
-        "xdm:reason": "not relevant"
-      },
-      "xdm:iot": {
+      "xdm:iotMessages": {
         "xdm:choice": "yes",
         "xdm:timestamp": "2019-01-01T15:52:25+00:00",
         "xdm:basisOfProcessing": "legitimate_interest"
@@ -39,30 +33,42 @@
     },
     "xdm:version": "1.0.0",
     "xdm:timestamp": "2019-01-01T15:52:25+00:00",
-    "xdm:userLocale": "UK",
-    "xdm:localeSource": "ip"
+    "xdm:userJurisdiction": "UK",
+    "xdm:jurisdictionSource": "ip"
   },
   "xdm:identityConsentsAndPreferences": {
     "ECID": {
       "11112222233333444": {
         "xdm:privacyPreferences": {
           "xdm:anonymousAnalysis": {
-            "xdm:choice": "no"
+            "xdm:choice": "yes"
           }
         },
         "xdm:personalizationPreferences": {
           "xdm:content": {
-            "xdm:type": "content",
+            "xdm:choice": "no"
+          }
+        },
+        "xdm:marketingPreferences": {
+          "xdm:pushNotifications": {
             "xdm:choice": "yes"
           }
         }
       }
     },
-    "eMail": {
+    "email": {
       "john@acme.com": {
         "xdm:marketingPreferences": {
           "xdm:eMail": {
             "xdm:choice": "yes"
+          }
+        }
+      },
+      "john@google.com": {
+        "xdm:marketingPreferences": {
+          "xdm:eMail": {
+           "xdm:choice": "no",
+           "xdm:reason": "Too Frequent"
           }
         }
       }

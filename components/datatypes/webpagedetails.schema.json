@@ -24,6 +24,11 @@
           "type": "string",
           "description": "The normative name of the web page. This name is not necessarily the page title or directly associate with page content, but is used to organize a site's pages for classification purposes."
         },
+        "xdm:viewName": {
+          "title": "View Name",
+          "type": "string",
+          "description": "A view name in a Single Page Application."
+        },
         "xdm:URL": {
           "title": "URL",
           "type": "string",

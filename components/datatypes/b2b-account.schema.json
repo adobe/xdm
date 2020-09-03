@@ -20,7 +20,7 @@
           "description": "name of company. Up to 255 characters are allowed in this field.",
           "type": "string"
         },
-		"xdm:accountTerritoryID": {
+        "xdm:accountTerritoryID": {
           "title": "Account Territory Id",
           "description": "The territory to which the account has been assigned.",
           "type": "string"
@@ -90,7 +90,7 @@
           "description": "Information about the account’s location, such as single location, headquarters, or branch. Up to 80 characters are allowed in this field.",
           "type": "string"
         },
-		"xdm:accountType": {
+        "xdm:accountType": {
           "title": "Account Type",
           "description": "Account Type.",
           "type": "string"
@@ -103,10 +103,7 @@
         "xdm:accountCurrencyCode": {
           "title": "Currency Code",
           "type": "string",
-          "examples": [
-            "USD",
-            "EUR"
-          ],
+          "examples": ["USD", "EUR"],
           "pattern": "^[A-Z]{3}$",
           "description": "The ISO 4217 currency code."
         },

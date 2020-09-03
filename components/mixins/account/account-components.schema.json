@@ -21,7 +21,7 @@
           "items": {
             "type": "object",
             "properties": {
-			  "xdm:sourceAccountID": {
+              "xdm:sourceAccountID": {
                 "title": "Source Account ID",
                 "description": "Source account ID.",
                 "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"

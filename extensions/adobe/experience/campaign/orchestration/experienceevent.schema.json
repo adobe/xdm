@@ -23,9 +23,7 @@
           "description": "The unique identifier of the journey created by the marketer."
         }
       },
-      "required": [
-        "@id"
-      ]
+      "required": ["@id"]
     },
     "journeyVersion": {
       "title": "Journey version",
@@ -39,9 +37,7 @@
           "description": "The unique identifier denoting the version of journey on which the entity is active."
         }
       },
-      "required": [
-        "@id"
-      ]
+      "required": ["@id"]
     },
     "action": {
       "title": "Action on step transition",

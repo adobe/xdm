@@ -1,0 +1,112 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/content/componentized-page",
+  "type": "object",
+  "title": "Componentized page",
+  "description": "",
+  "meta:extensible": true,
+  "meta:extends": [
+    "http://ns.adobe.com/adobecloud/core/1.0#/definitions/common-properties",
+    "http://ns.adobe.com/adobecloud/core/1.0#/definitions/date-properties",
+    "https://ns.adobe.com/xdm/external/hal/resource#/definitions/hal",
+    "http://ns.adobe.com/adobecloud/core/1.0/asset"
+  ],
+  "additionalProperties": {
+    "$ref": "#/definitions/residuals"
+  },
+  "allOf": [
+    {
+      "$ref": "http://ns.adobe.com/adobecloud/core/1.0/asset#/definitions/asset"
+    },
+    {
+      "$ref": "#/definitions/page"
+    }
+  ],
+  "required": [
+    "repo:name",
+    "repo:path",
+    "repo:createDate",
+    "xdm:repositoryCreatedBy",
+    "repo:modifyDate",
+    "xdm:repositoryLastModifiedBy"
+  ],
+  "definitions": {
+    "page": {
+      "properties": {
+        "repo:path": {
+          "type": "string",
+          "description": "Shows the hierarchy of the page. The path semantics should be same as that defined in [RFC 3986](https://tools.ietf.org/html/rfc3986#section-3.3). In case a repository is not path based then it can return the information which will help in browsing. It could be just an document id, or something like `{catalog}/{id}` in case of a document database."
+        },
+        "repo:name": {
+          "type": "string",
+          "description": "Name of the page in the repository. This could be a file name or any name provided by the repository to the page."
+        },
+        "dc:title": {
+          "type": "string",
+          "description": "Full title of the page."
+        },
+        "xdm:shortTitle": {
+          "type": "string",
+          "description": "Short title of the page that is suitable to be displayed in navigation links."
+        },
+        "xdm:unlisted": {
+          "type": "boolean",
+          "description": "Indicates if this page should be hidden by default in navigational collections."
+        },
+        "xdm:template": {
+          "type": "string",
+          "format": "uri-reference",
+          "description": "The template that was used to create this page."
+        },
+        "xdm:language": {
+          "type": "string",
+          "pattern": "^(((([A-Za-z]{2,3}(-([A-Za-z]{3}(-[A-Za-z]{3}){0,2}))?)|[A-Za-z]{4}|[A-Za-z]{5,8})(-([A-Za-z]{4}))?(-([A-Za-z]{2}|[0-9]{3}))?(-([A-Za-z0-9]{5,8}|[0-9][A-Za-z0-9]{3}))*(-([0-9A-WY-Za-wy-z](-[A-Za-z0-9]{2,8})+))*(-(x(-[A-Za-z0-9]{1,8})+))?)|(x(-[A-Za-z0-9]{1,8})+)|((en-GB-oed|i-ami|i-bnn|i-default|i-enochian|i-hak|i-klingon|i-lux|i-mingo|i-navajo|i-pwn|i-tao|i-tay|i-tsu|sgn-BE-FR|sgn-BE-NL|sgn-CH-DE)|(art-lojban|cel-gaulish|no-bok|no-nyn|zh-guoyu|zh-hakka|zh-min|zh-min-nan|zh-xiang)))$",
+          "description": "Specifies the language of this page. the language property should conform to BPC 47, for example `en-GB`."
+        },
+        "xdm:navOrder": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "When this page is shown in a collection of pages, use `nav_order` to sort. The smallest `nav_order` should be the first item in the sorted collection."
+        }
+      }
+    },
+    "residuals": {
+      "description": "Defines the set of residual properties allowed on a page or component.",
+      "additionalProperties": {
+        "anyOf": [
+          {
+            "type": "object"
+          },
+          {
+            "type": "string"
+          },
+          {
+            "type": "number"
+          },
+          {
+            "type": "integer"
+          },
+          {
+            "type": "array"
+          },
+          {
+            "type": "boolean"
+          },
+          {
+            "$ref": "https://ns.adobe.com/xdm/content/page-component#/definitions/component"
+          },
+          {
+            "$ref": "https://ns.adobe.com/xdm/content/component-container#/definitions/container"
+          }
+        ]
+      }
+    }
+  },
+  "meta:status": "stable"
+}

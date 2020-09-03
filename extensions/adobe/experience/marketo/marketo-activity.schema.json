@@ -1,0 +1,60 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/marketo/activity-marketo-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Marketo Activity Log",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/activity-log"],
+  "meta:extends": ["https://ns.adobe.com/xdm/context/activity-log-details"],
+  "description": "Marketo specific Activity Log Details",
+  "definitions": {
+    "activity-marketo-details": {
+      "properties": {
+        "marketo:activityLog": {
+          "type": "object",
+          "properties": {
+            "marketo:activityID": {
+              "title": "Marketo Activity Unique Identifier",
+              "description": "Marketo Activity Unique identifier.",
+              "type": "string"
+            },
+            "marketo:attributeValues": {
+              "title": "Attribute Values",
+              "type": "object",
+              "meta:xdmType": "map",
+              "additionalProperties": {
+                "title": "Value defined for each Key",
+                "description": "Map describing open set of key value pairs which are not composed semantically",
+                "type": "string"
+              }
+            },
+            "marketo:bypassTrigger": {
+              "title": "Bypass Trigger",
+              "description": "Bypass Trigger",
+              "type": "integer"
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/activity-marketo-details"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/activity-log-details"
+    }
+  ],
+  "meta:status": "experimental"
+}

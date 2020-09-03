@@ -1,0 +1,21 @@
+{
+  "xdm:extSourceSystemAudit": {
+    "xdm:createdBy": "USER111",
+    "xdm:createdDate": "2018-01-19T15:52:25+00:00",
+    "xdm:lastUpdatedBy": "USER2222",
+    "xdm:lastUpdatedDate": "2018-01-19T15:52:25+00:00",
+    "xdm:lastActivityDate": "2018-01-19T15:52:25+00:00",
+    "xdm:lastReferencedDate": "2018-01-20T15:52:25+00:00",
+    "xdm:lastViewedDate": "2018-01-26T15:52:25+00:00"
+  },
+  "xdm:activityType": {
+    "xdm:ID": "6",
+    "xdm:name": "Send Email",
+    "xdm:description": "Send Marketo Email to a person",
+    "xdm:type": "task",
+    "xdm:area": "Email",
+    "xdm:category": "Marketing Mail",
+    "xdm:isDeleted": false,
+    "xdm:isActive": true
+  }
+}

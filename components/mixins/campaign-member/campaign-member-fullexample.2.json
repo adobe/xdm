@@ -1,0 +1,34 @@
+{
+  "xdm:campaignMemberID": "1",
+  "xdm:campaign": {
+    "xdm:ID": "1003",
+    "xdm:type": "Direct Mail campaign"
+  },
+  "xdm:campaignMember": {
+    "xdm:type": "Lead",
+    "xdm:ID": "18765386"
+  },
+  "xdm:response": {
+    "xdm:hasResponded": true,
+    "xdm:respondDate": "2020-05-19T00:00:00+00:00"
+  },
+  "xdm:campaignProgram": {
+    "xdm:ID": "1",
+    "xdm:type": "Webinar",
+    "xdm:step": {
+      "xdm:number": 10,
+      "xdm:status": "Invited"
+    }
+  },
+  "xdm:sourceType": "salesforce",
+  "xdm:isDeleted": false,
+  "xdm:extSourceSystemAudit": {
+    "xdm:createdBy": "USER111",
+    "xdm:createdDate": "2018-01-19T15:52:25+00:00",
+    "xdm:lastUpdatedBy": "USER2222",
+    "xdm:lastUpdatedDate": "2018-01-19T15:52:25+00:00",
+    "xdm:lastActivityDate": "2018-01-19T15:52:25+00:00",
+    "xdm:lastReferencedDate": "2018-01-20T15:52:25+00:00",
+    "xdm:lastViewedDate": "2018-01-26T15:52:25+00:00"
+  }
+}

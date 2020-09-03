@@ -1,0 +1,61 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/common/activity-type-reference-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "XDM Activity",
+  "type": "object",
+  "meta:auditable": true,
+  "description": "A form of a task or a business event which is alinged to a given activity type",
+  "definitions": {
+    "activity-type-reference-details": {
+      "properties": {
+        "xdm:name": {
+          "title": "Name",
+          "type": "string",
+          "description": "Name of the activity, such as 'open email','click email' etc."
+        },
+        "xdm:description": {
+          "title": "Description",
+          "type": "string",
+          "description": "Detailed description of the activity name."
+        },
+        "xdm:type": {
+          "title": "Type of Activity",
+          "type": "string",
+          "description": "Describing the nature of activity, in the form of a 'task' or a 'business event'."
+        },
+        "xdm:area": {
+          "title": "Area of activity",
+          "type": "string",
+          "description": "Optional alingned area of the activity type, such as 'Mail' if the name is 'click email' etc."
+        },
+        "xdm:category": {
+          "title": "Activity type Category",
+          "type": "string",
+          "description": "Category of the activity type. 'Marketing email', futher categorisation of activity area"
+        },
+        "xdm:isDeleted": {
+          "title": "Deleted flag",
+          "type": "boolean",
+          "description": "A boolean flag to depict if the corresponding activity type has been soft deleted"
+        },
+        "xdm:isActive": {
+          "title": "Status of the activity type",
+          "type": "boolean",
+          "description": "A boolean flag to depict if the activity type can be used by the business system,or has been discontinued."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/activity-type-reference-details"
+    }
+  ],
+  "meta:status": "experimental"
+}

@@ -1,9 +1,0 @@
-{
-  "id": "urn:selfsevice:example1",
-  "xdm:tenant":
-    "https://selfsevice.adobe.io/tenant/id/82235bac-2b81-4e70-90b5-2bd1f04b5c7b",
-  "xdm:application":
-    "http://git.corp.adobe.com/Applications/application1/definition.json",
-  "xdm:environment": "beta",
-  "xdm:selfServicePortal": "https://selfsevice.adobe.io/portal"
-}

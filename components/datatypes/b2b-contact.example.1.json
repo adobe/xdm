@@ -1,0 +1,43 @@
+{
+  "xdm:ID": "11110000",
+  "xdm:accountID": "",
+  "xdm:leadSource": "Lead Source",
+  "xdm:extendedContact": {
+    "xdm:type": "",
+    "xdm:ownerID": "",
+    "xdm:isDeleted": false,
+    "xdm:emailBouncedDate": "2018-12-20T15:52:25+00:00",
+    "xdm:emailBouncedReason": "Bounced Reason Here",
+    "xdm:isEmailBounced": true,
+    "xdm:description": "Contact/Lead description here",
+    "xdm:status": "Status",
+    "xdm:timezone": "",
+    "xdm:jigsaw": "12345"
+  },
+  "xdm:identityMap": {
+    "EMAIL": [
+      {
+        "xdm:id": "jane@doe.com"
+      }
+    ]
+  },
+  "xdm:preferences": {
+    "https://ns.adobe.com/xdm/channels/email": "pending",
+    "https://ns.adobe.com/xdm/channels/phone": "out",
+    "https://ns.adobe.com/xdm/channels/sms": "in",
+    "https://ns.adobe.com/xdm/channels/fax": "not_provided",
+    "https://ns.adobe.com/xdm/channels/direct-mail": "not_provided",
+    "https://ns.adobe.com/xdm/channels/apns": "not_provided",
+    "xdm:globalOptout": false,
+    "xdm:optOutDetails": {
+      "xdm:email": {
+        "xdm:optOutReason": "Reason here",
+        "xdm:optOutDate": "2018-01-20T15:52:25+00:00"
+      },
+      "xdm:phone": {
+        "xdm:optOutReason": "Reason here",
+        "xdm:optOutDate": "2018-01-20T15:52:25+00:00"
+      }
+    }
+  }
+}

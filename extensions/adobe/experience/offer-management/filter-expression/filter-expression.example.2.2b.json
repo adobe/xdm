@@ -25,10 +25,7 @@
             "from": {
               "nodeType": "literal",
               "literalType": "List",
-              "value": [
-                "uri:com:example:tag-0001",
-                "uri:com:example:tag-0002"
-              ]
+              "value": ["uri:com:example:tag-0001", "uri:com:example:tag-0002"]
             },
             "where": {
               "nodeType": "fnApply",

@@ -80,7 +80,9 @@
       }
     }
   },
-  "required": ["https://ns.adobe.com/experience/customerJourneyManagement/feedbackStatus"],
+  "required": [
+    "https://ns.adobe.com/experience/customerJourneyManagement/feedbackStatus"
+  ],
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"

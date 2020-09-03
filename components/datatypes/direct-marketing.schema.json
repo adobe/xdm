@@ -60,14 +60,11 @@
         },
         "xdm:excludes": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-            "The recipient of the direct marketing message such as email or push has been excluded due to some typology rules configured like fatigue/blacklisted."
-
+          "description": "The recipient of the direct marketing message such as email or push has been excluded due to some typology rules configured like fatigue/blacklisted."
         },
         "xdm:customActions": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description":
-            "Action(s) that users can take on custom objects sent as part of a direct marketing message like push notification."
+          "description": "Action(s) that users can take on custom objects sent as part of a direct marketing message like push notification."
         }
       }
     }

@@ -45,7 +45,10 @@
       }
     }
   },
-  "required": ["@id", "https://ns.adobe.com/experience/customerJourneyManagement/messageID"],
+  "required": [
+    "@id",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageID"
+  ],
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"

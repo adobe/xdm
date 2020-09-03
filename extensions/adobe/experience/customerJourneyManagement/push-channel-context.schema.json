@@ -39,7 +39,11 @@
       }
     }
   },
-  "required": ["https://ns.adobe.com/experience/customerJourneyManagement/token", "https://ns.adobe.com/experience/customerJourneyManagement/platform", "https://ns.adobe.com/experience/customerJourneyManagement/applicationID"],
+  "required": [
+    "https://ns.adobe.com/experience/customerJourneyManagement/token",
+    "https://ns.adobe.com/experience/customerJourneyManagement/platform",
+    "https://ns.adobe.com/experience/customerJourneyManagement/applicationID"
+  ],
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"

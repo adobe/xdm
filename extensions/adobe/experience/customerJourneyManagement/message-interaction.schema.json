@@ -47,7 +47,9 @@
       }
     }
   },
-  "required": ["https://ns.adobe.com/experience/customerJourneyManagement/interactionType"],
+  "required": [
+    "https://ns.adobe.com/experience/customerJourneyManagement/interactionType"
+  ],
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"

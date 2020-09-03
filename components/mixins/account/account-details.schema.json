@@ -15,77 +15,7 @@
   "description": "An XDM Business Account.",
   "definitions": {
     "account-details": {
-      "properties": {
-        "xdm:accountComponents": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "xdm:accountTerritoryID": {
-                "title": "Account Territory Id",
-                "description": "The territory to which the account has been assigned.",
-                "type": "string"
-              },
-              "xdm:accountName": {
-                "title": "Account Name",
-                "type": "number"
-              },
-              "xdm:accountScore": {
-                "title": "Account Score",
-                "type": "number"
-              },
-              "xdm:sourceAccountIdentifier": {
-                "title": "Source System Account Identifier",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
-              },
-              "xdm:externalAccountIdentifier": {
-                "title": "External Account Identifier",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
-              },
-              "xdm:accountOwnerID": {
-                "title": "Owner ID",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
-              },
-              "xdm:accountParentID": {
-                "title": "Parent ID",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
-              },
-              "xdm:partnerAccountID": {
-                "title": "Partner Account ID",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
-              },
-              "xdm:accountExternalID": {
-                "title": "Account External ID",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
-              },
-              "xdm:salesAccountOwnerID": {
-                "title": "Sales Account Owner ID",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
-              },
-              "xdm:accountBillingAddress": {
-                "title": "Account Billing Address",
-                "$ref": "https://ns.adobe.com/xdm/common/address"
-              },
-              "xdm:accountshippingAddress": {
-                "title": "Account Shipping Address",
-                "$ref": "https://ns.adobe.com/xdm/common/address"
-              },
-              "xdm:accountPhysicalAddress": {
-                "title": "Account Physical Address",
-                "$ref": "https://ns.adobe.com/xdm/common/address"
-              },
-              "xdm:accountOrganization": {
-                "title": "Account Organization Details",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-account-organization"
-              },
-              "xdm:externalSourceAudit": {
-                "title": "External Source System Audit Details",
-                "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit"
-              }
-            }
-          }
-        }
-      }
+      "properties": {}
     }
   },
   "allOf": [
@@ -97,6 +27,9 @@
     },
     {
       "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-account"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/mixins/account-components"
     }
   ],
   "meta:status": "experimental"

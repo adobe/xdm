@@ -15,7 +15,7 @@
       "properties": {
         "xdm:numberOfEmployees": {
           "title": "Number of employees",
-          "type": "number",
+          "type": "integer",
           "description": "The number of employees at the organization."
         },
         "xdm:annualRevenue": {

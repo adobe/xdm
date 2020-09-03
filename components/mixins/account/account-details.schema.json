@@ -27,9 +27,6 @@
     },
     {
       "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-account"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/mixins/account-components"
     }
   ],
   "meta:status": "experimental"

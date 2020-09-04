@@ -35,7 +35,9 @@
       }
     }
   },
-  "required": ["@id"],
+  "required": [
+    "https://ns.adobe.com/experience/customerJourneyManagement/channel"
+  ],
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"

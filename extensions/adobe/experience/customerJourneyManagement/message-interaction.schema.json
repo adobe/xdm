@@ -29,19 +29,19 @@
           }
         },
         "@id": {
-          "title": "Tracker link ID",
+          "title": "Tracker URL ID",
           "type": "string",
-          "description": "Unique Identifier of the Link clicked by the user."
+          "description": "Unique Identifier of the URL clicked by the user."
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/label": {
-          "title": "Link Label",
+          "title": "URL Label",
           "type": "string",
-          "description": "The user-friendly label clicking on which the link opens."
+          "description": "The user-friendly label clicking on which the url opens."
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/category": {
-          "title": "Link Category",
+          "title": "URL Category",
           "type": "string",
-          "description": "The category of the link. It may be `subscription`, or a user-defined category.",
+          "description": "The category of the URL. It may be `subscription`, or a user-defined category.",
           "meta:enum": {}
         }
       }

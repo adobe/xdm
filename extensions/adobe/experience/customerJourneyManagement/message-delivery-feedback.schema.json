@@ -30,18 +30,17 @@
             "delay": "message failed to deliver, but will be retry after next schedule time."
           }
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/excludeReason": {
-          "title": "Exclude Reason",
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageExclusion": {
+          "title": "Message Exclusion",
           "type": "object",
           "properties": {
-            "https://ns.adobe.com/experience/customerJourneyManagement/excludeCode": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/code": {
               "title": "Exclude Code",
               "type": "string",
-              "description": "Provide top level exclusion reason, like typology rule, mandatory parameter missing.",
-              "meta:enum": {}
+              "description": "Provide top level exclusion reason, like typology rule, mandatory parameter missing."
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/excludeSubCode": {
-              "title": "Exclude SubCode",
+            "https://ns.adobe.com/experience/customerJourneyManagement/reason": {
+              "title": "Exclude Reason",
               "type": "string",
               "description": "Provide exclusion subcode, like exact typology rule-id."
             }
@@ -51,17 +50,17 @@
           "title": "Message Failure",
           "type": "object",
           "properties": {
-            "https://ns.adobe.com/experience/customerJourneyManagement/failureReason": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/reason": {
               "title": "Failure Reason",
               "type": "string",
               "description": "Failure reason for a failed delivery attempt."
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/failureCode": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/code": {
               "title": "Failure Code",
               "type": "string",
               "description": "Failure code for a failed delivery attempt."
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/failureType": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/type": {
               "title": "Failure Type",
               "type": "string",
               "description": "Classifies whether it is a soft bounce or hard bounce.",
@@ -89,9 +88,6 @@
     },
     {
       "$ref": "#/definitions/messageDeliveryfeedback"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/context/direct-marketing"
     }
   ],
   "meta:status": "experimental"

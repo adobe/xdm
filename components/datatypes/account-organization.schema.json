@@ -13,6 +13,11 @@
   "definitions": {
     "b2b-account-organization": {
       "properties": {
+        "xdm:organizationType": {
+          "title": "Organization Type", 
+          "description": "Label describing the type of organization",
+          "type": "string"
+        },
         "xdm:numberOfEmployees": {
           "title": "Number of employees",
           "type": "integer",

@@ -1,0 +1,78 @@
+{
+    "meta:license": [
+        "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/experience/audiencemanager/segmentdefinition",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Adobe Audience Manager Segment Definition Mixin",
+    "type": "object",
+    "description": "This mixin captures Adobe Audience Manager-specific segment definition fields like the identity of the folder this segment belongs to and Audience Manager type for the segment.",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/segmentdefinition"
+    ],
+    "definitions": {
+        "segmentdefinition": {
+            "properties": {
+                "xdm:segmentFolderId": {
+                    "title": "Folder Id",
+                    "type": "string",
+                    "description": "id of parent folder if present",
+                    "meta:status": "deprecated"
+                },
+                "xdm:segmentSubType": {
+                    "title": "Sub Type",
+                    "type": "string",
+                    "description": "Further classification of AAM Entity",
+                    "meta:enum": [
+                        "FOLDER",
+                        "FOLDER_TRAIT",
+                        "SEGMENT",
+                        "UNDEFINED",
+                        "RULE_BASED_TRAIT",
+                        "NON_ALGO_TRAIT",
+                        "TEST_SEGMENT",
+                        "COMPANY_ACTIVITY_TRAIT",
+                        "ALGO_TRAIT",
+                        "ON_BOARDED_TRAIT"
+                    ]
+                },
+                "https://ns.adobe.com/experience/audiencemanager/segmentFolderIdentity": {
+                    "title": "Parent folder identity",
+                    "$ref": "https://ns.adobe.com/xdm/context/identity",
+                    "description": "Identity of the parent folder of current folder"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/context/segmentdefinition-expression"
+        },
+        {
+            "$ref": "#/definitions/segmentdefinition"
+        }
+    ],
+    "meta:status": "stable",
+    "examples": [
+        {
+            "xdm:segmentExpression": {
+                "xdm:expressionType": "AAM",
+                "xdm:mimeType": "text/plain",
+                "xdm:value": "c_contextdata.catname matchesregex \"\"^sony -.+\"\""
+            },
+            "xdm:segmentFolderId": "1123",
+            "xdm:segmentSubType": "SEGMENT",
+            "https://ns.adobe.com/experience/audiencemanager/segmentFolderIdentity": {
+                "xdm:id": "1123",
+                "xdm:namespace": {
+                    "xdm:code": "AAMSegments"
+                }
+            }
+        }
+    ]
+}

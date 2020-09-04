@@ -149,7 +149,7 @@
             "$ref": "#/definitions/account-crm"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "deprecated",
     "examples": [
         {
             "xdm:ownerID": "OWNER111",

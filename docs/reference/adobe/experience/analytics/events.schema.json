@@ -1,0 +1,69 @@
+{
+    "meta:license": [
+        "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/experience/analytics/events",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Adobe Analytics Custom Events",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "description": "Adobe Analytics custom event fields.",
+    "definitions": {
+        "events": {
+            "properties": {
+                "https://ns.adobe.com/experience/analytics/event1to100": {
+                    "title": "Event 1 to 100",
+                    "$ref": "https://ns.adobe.com/experience/analytics/event1to100"
+                },
+                "https://ns.adobe.com/experience/analytics/event101to200": {
+                    "title": "Event 101 to 200",
+                    "$ref": "https://ns.adobe.com/experience/analytics/event101to200"
+                },
+                "https://ns.adobe.com/experience/analytics/event201to300": {
+                    "title": "Event 201 to 300",
+                    "$ref": "https://ns.adobe.com/experience/analytics/event201to300"
+                },
+                "https://ns.adobe.com/experience/analytics/event301to400": {
+                    "title": "Event 301 to 400",
+                    "$ref": "https://ns.adobe.com/experience/analytics/event301to400"
+                },
+                "https://ns.adobe.com/experience/analytics/event401to500": {
+                    "title": "Event 401 to 500",
+                    "$ref": "https://ns.adobe.com/experience/analytics/event401to500"
+                },
+                "https://ns.adobe.com/experience/analytics/event501to600": {
+                    "title": "Event 501 to 600",
+                    "$ref": "https://ns.adobe.com/experience/analytics/event501to600"
+                },
+                "https://ns.adobe.com/experience/analytics/event601to700": {
+                    "title": "Event 601 to 700",
+                    "$ref": "https://ns.adobe.com/experience/analytics/event601to700"
+                },
+                "https://ns.adobe.com/experience/analytics/event701to800": {
+                    "title": "Event 701 to 800",
+                    "$ref": "https://ns.adobe.com/experience/analytics/event701to800"
+                },
+                "https://ns.adobe.com/experience/analytics/event801to900": {
+                    "title": "Event 801 to 900",
+                    "$ref": "https://ns.adobe.com/experience/analytics/event801to900"
+                },
+                "https://ns.adobe.com/experience/analytics/event901to1000": {
+                    "title": "Event 901 to 1000",
+                    "$ref": "https://ns.adobe.com/experience/analytics/event901to1000"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/events"
+        }
+    ]
+}

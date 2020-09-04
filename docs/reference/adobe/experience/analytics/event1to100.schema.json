@@ -1,0 +1,504 @@
+{
+    "xdm:event1": {
+        "title": "event1",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 1."
+    },
+    "xdm:event2": {
+        "title": "event2",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 2."
+    },
+    "xdm:event3": {
+        "title": "event3",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 3."
+    },
+    "xdm:event4": {
+        "title": "event4",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 4."
+    },
+    "xdm:event5": {
+        "title": "event5",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 5."
+    },
+    "xdm:event6": {
+        "title": "event6",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 6."
+    },
+    "xdm:event7": {
+        "title": "event7",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 7."
+    },
+    "xdm:event8": {
+        "title": "event8",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 8."
+    },
+    "xdm:event9": {
+        "title": "event9",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 9."
+    },
+    "xdm:event10": {
+        "title": "event10",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 10."
+    },
+    "xdm:event11": {
+        "title": "event11",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 11."
+    },
+    "xdm:event12": {
+        "title": "event12",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 12."
+    },
+    "xdm:event13": {
+        "title": "event13",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 13."
+    },
+    "xdm:event14": {
+        "title": "event14",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 14."
+    },
+    "xdm:event15": {
+        "title": "event15",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 15."
+    },
+    "xdm:event16": {
+        "title": "event16",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 16."
+    },
+    "xdm:event17": {
+        "title": "event17",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 17."
+    },
+    "xdm:event18": {
+        "title": "event18",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 18."
+    },
+    "xdm:event19": {
+        "title": "event19",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 19."
+    },
+    "xdm:event20": {
+        "title": "event20",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 20."
+    },
+    "xdm:event21": {
+        "title": "event21",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 21."
+    },
+    "xdm:event22": {
+        "title": "event22",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 22."
+    },
+    "xdm:event23": {
+        "title": "event23",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 23."
+    },
+    "xdm:event24": {
+        "title": "event24",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 24."
+    },
+    "xdm:event25": {
+        "title": "event25",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 25."
+    },
+    "xdm:event26": {
+        "title": "event26",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 26."
+    },
+    "xdm:event27": {
+        "title": "event27",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 27."
+    },
+    "xdm:event28": {
+        "title": "event28",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 28."
+    },
+    "xdm:event29": {
+        "title": "event29",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 29."
+    },
+    "xdm:event30": {
+        "title": "event30",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 30."
+    },
+    "xdm:event31": {
+        "title": "event31",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 31."
+    },
+    "xdm:event32": {
+        "title": "event32",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 32."
+    },
+    "xdm:event33": {
+        "title": "event33",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 33."
+    },
+    "xdm:event34": {
+        "title": "event34",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 34."
+    },
+    "xdm:event35": {
+        "title": "event35",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 35."
+    },
+    "xdm:event36": {
+        "title": "event36",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 36."
+    },
+    "xdm:event37": {
+        "title": "event37",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 37."
+    },
+    "xdm:event38": {
+        "title": "event38",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 38."
+    },
+    "xdm:event39": {
+        "title": "event39",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 39."
+    },
+    "xdm:event40": {
+        "title": "event40",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 40."
+    },
+    "xdm:event41": {
+        "title": "event41",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 41."
+    },
+    "xdm:event42": {
+        "title": "event42",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 42."
+    },
+    "xdm:event43": {
+        "title": "event43",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 43."
+    },
+    "xdm:event44": {
+        "title": "event44",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 44."
+    },
+    "xdm:event45": {
+        "title": "event45",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 45."
+    },
+    "xdm:event46": {
+        "title": "event46",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 46."
+    },
+    "xdm:event47": {
+        "title": "event47",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 47."
+    },
+    "xdm:event48": {
+        "title": "event48",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 48."
+    },
+    "xdm:event49": {
+        "title": "event49",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 49."
+    },
+    "xdm:event50": {
+        "title": "event50",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 50."
+    },
+    "xdm:event51": {
+        "title": "event51",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 51."
+    },
+    "xdm:event52": {
+        "title": "event52",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 52."
+    },
+    "xdm:event53": {
+        "title": "event53",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 53."
+    },
+    "xdm:event54": {
+        "title": "event54",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 54."
+    },
+    "xdm:event55": {
+        "title": "event55",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 55."
+    },
+    "xdm:event56": {
+        "title": "event56",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 56."
+    },
+    "xdm:event57": {
+        "title": "event57",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 57."
+    },
+    "xdm:event58": {
+        "title": "event58",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 58."
+    },
+    "xdm:event59": {
+        "title": "event59",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 59."
+    },
+    "xdm:event60": {
+        "title": "event60",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 60."
+    },
+    "xdm:event61": {
+        "title": "event61",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 61."
+    },
+    "xdm:event62": {
+        "title": "event62",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 62."
+    },
+    "xdm:event63": {
+        "title": "event63",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 63."
+    },
+    "xdm:event64": {
+        "title": "event64",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 64."
+    },
+    "xdm:event65": {
+        "title": "event65",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 65."
+    },
+    "xdm:event66": {
+        "title": "event66",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 66."
+    },
+    "xdm:event67": {
+        "title": "event67",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 67."
+    },
+    "xdm:event68": {
+        "title": "event68",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 68."
+    },
+    "xdm:event69": {
+        "title": "event69",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 69."
+    },
+    "xdm:event70": {
+        "title": "event70",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 70."
+    },
+    "xdm:event71": {
+        "title": "event71",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 71."
+    },
+    "xdm:event72": {
+        "title": "event72",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 72."
+    },
+    "xdm:event73": {
+        "title": "event73",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 73."
+    },
+    "xdm:event74": {
+        "title": "event74",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 74."
+    },
+    "xdm:event75": {
+        "title": "event75",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 75."
+    },
+    "xdm:event76": {
+        "title": "event76",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 76."
+    },
+    "xdm:event77": {
+        "title": "event77",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 77."
+    },
+    "xdm:event78": {
+        "title": "event78",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 78."
+    },
+    "xdm:event79": {
+        "title": "event79",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 79."
+    },
+    "xdm:event80": {
+        "title": "event80",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 80."
+    },
+    "xdm:event81": {
+        "title": "event81",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 81."
+    },
+    "xdm:event82": {
+        "title": "event82",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 82."
+    },
+    "xdm:event83": {
+        "title": "event83",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 83."
+    },
+    "xdm:event84": {
+        "title": "event84",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 84."
+    },
+    "xdm:event85": {
+        "title": "event85",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 85."
+    },
+    "xdm:event86": {
+        "title": "event86",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 86."
+    },
+    "xdm:event87": {
+        "title": "event87",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 87."
+    },
+    "xdm:event88": {
+        "title": "event88",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 88."
+    },
+    "xdm:event89": {
+        "title": "event89",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 89."
+    },
+    "xdm:event90": {
+        "title": "event90",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 90."
+    },
+    "xdm:event91": {
+        "title": "event91",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 91."
+    },
+    "xdm:event92": {
+        "title": "event92",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 92."
+    },
+    "xdm:event93": {
+        "title": "event93",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 93."
+    },
+    "xdm:event94": {
+        "title": "event94",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 94."
+    },
+    "xdm:event95": {
+        "title": "event95",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 95."
+    },
+    "xdm:event96": {
+        "title": "event96",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 96."
+    },
+    "xdm:event97": {
+        "title": "event97",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 97."
+    },
+    "xdm:event98": {
+        "title": "event98",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 98."
+    },
+    "xdm:event99": {
+        "title": "event99",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 99."
+    },
+    "xdm:event100": {
+        "title": "event100",
+        "$ref": "https://ns.adobe.com/xdm/data/measure",
+        "description": "Custom event 100."
+    },
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "https://ns.adobe.com/experience/analytics/event1to100"
+}

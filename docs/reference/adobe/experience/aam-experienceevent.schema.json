@@ -1,0 +1,188 @@
+{
+    "meta:license": [
+        "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/experience/aam-experienceevent",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Adobe Audience Manager Template Mixin",
+    "type": "object",
+    "description": "Adobe Audience Manager mixin for use with schemas for Solution data ingestion. Includes the core/standard ExperienceEvent as well as the other required core mixins.",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/experienceevent"
+    ],
+    "meta:extends": [
+        "https://ns.adobe.com/xdm/context/experienceevent-segmentmembership",
+        "https://ns.adobe.com/xdm/context/experienceevent-environment-details",
+        "https://ns.adobe.com/xdm/context/experienceevent-profile-stitch",
+        "https://ns.adobe.com/experience/experienceevent-edgeregion",
+        "https://ns.adobe.com/xdm/context/experienceevent-privacy",
+        "https://ns.adobe.com/experience/audiencemanager/experienceevent-all"
+    ],
+    "definitions": {
+        "aam-experienceevent": {
+            "properties": {}
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/context/experienceevent-segmentmembership"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/context/experienceevent-environment-details"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/context/experienceevent-profile-stitch"
+        },
+        {
+            "$ref": "https://ns.adobe.com/experience/experienceevent-edgeregion"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/context/experienceevent-privacy"
+        },
+        {
+            "$ref": "https://ns.adobe.com/experience/audiencemanager/experienceevent-all"
+        },
+        {
+            "$ref": "#/definitions/aam-experienceevent"
+        }
+    ],
+    "meta:status": "stable",
+    "examples": [
+        {
+            "@id": "https://data.adobe.io/experienceid-123456",
+            "xdm:dataSource": {
+                "@id": "https://data.adobe.io/datasources/datasource-123",
+                "xdm:code": "DataSourceIntegrationCode-123"
+            },
+            "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+            "xdm:identityMap": {
+                "https://data.adobe.io/entities/namespace/4": [
+                    {
+                        "xdm:id": "92312748749128"
+                    }
+                ],
+                "https://data.adobe.io/entities/namespace/10": [
+                    {
+                        "xdm:id": "2394509340-30453470347"
+                    }
+                ],
+                "https://data.adobe.io/entities/namespace/9": [
+                    {
+                        "xdm:id": "1233ce17-20e0-4a2c-8198-2a77fd60cf4d"
+                    }
+                ]
+            },
+            "xdm:userActivityRegion": {
+                "xdm:dataCenterLocation": "VA6",
+                "xdm:captureTimestamp": "2017-09-26T15:52:20+00:00"
+            },
+            "xdm:environment": {
+                "xdm:type": "browser",
+                "xdm:browserDetails": {
+                    "xdm:name": "Chrome",
+                    "xdm:version": "63.0.3239",
+                    "xdm:acceptLanguage": "en",
+                    "xdm:cookiesEnabled": true,
+                    "xdm:javaScriptEnabled": true,
+                    "xdm:javaScriptVersion": "1.8.5",
+                    "xdm:javaEnabled": true,
+                    "xdm:javaVersion": "Java SE 8",
+                    "xdm:viewportHeight": 900,
+                    "xdm:viewportWidth": 1680
+                },
+                "xdm:operatingSystem": "MAC OS",
+                "xdm:operatingSystemVersion": "10.13",
+                "xdm:connectionType": "cable"
+            },
+            "xdm:placeContext": {
+                "xdm:localTime": "2017-09-26T15:52:25+13:00",
+                "xdm:geo": {
+                    "@id": "https://data.adobe.io/entities/geo/tokyo",
+                    "xdm:countryCode": "JP",
+                    "xdm:stateProvince": "JP-13",
+                    "xdm:city": "Tōkyō",
+                    "xdm:postalCode": "141-0032",
+                    "schema:latitude": 35.6185,
+                    "schema:longitude": 139.73237
+                }
+            },
+            "xdm:profileStitch": [
+                {
+                    "xdm:profileStitchID": {
+                        "@id": "https://data.adobe.io/entities/profileStitchIdentity/1",
+                        "xdm:namespace": {
+                            "xdm:code": "AAM"
+                        }
+                    },
+                    "xdm:version": "1.0",
+                    "xdm:identityMap": {
+                        "ECID": [
+                            {
+                                "xdm:id": "https://data.adobe.io/entities/identity/92312748749128"
+                            },
+                            {
+                                "xdm:id": "https://data.adobe.io/entities/identity/62312748749321"
+                            },
+                            {
+                                "xdm:id": "https://data.adobe.io/entities/identity/49312748749132"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "xdm:segmentMemberships": [
+                {
+                    "xdm:segmentID": {
+                        "@id": "https://data.adobe.io/entities/identity/92312748749128",
+                        "xdm:namespace": {
+                            "xdm:code": "AAM"
+                        }
+                    },
+                    "xdm:profileStitchID": {
+                        "@id": "https://data.adobe.io/entities/profileStitchIdentity/1",
+                        "xdm:namespace": {
+                            "xdm:code": "AAM"
+                        },
+                        "xdm:lastQualificationTime": "2017-09-26T15:52:25+00:00",
+                        "xdm:version": "1.0",
+                        "xdm:validUntil": "2017-12-26T15:52:25+00:00",
+                        "xdm:status": "realized"
+                    }
+                }
+            ],
+            "xdm:signals": {
+                "pageTagCloud": [
+                    "analytics",
+                    "bigdata"
+                ],
+                "pagelinkshovered": [
+                    "http://abcxyzabcxyz.com",
+                    "http://abcxyzabcxyz1.com"
+                ]
+            },
+            "xdm:derivedSignals": {
+                "derivedPageTagCloud": [
+                    "aam"
+                ],
+                "derivedPagelinkshovered": [
+                    "https://jhdjdi09002kdjjsl.com"
+                ]
+            },
+            "xdm:overwriteTraits": true,
+            "xdm:consentStrings": [
+                {
+                    "xdm:consentStandard": "IAB TCF",
+                    "xdm:consentStandardVersion": "2.0",
+                    "xdm:consentStringValue": "BObdrPUOevsguAfDqFENCNAAAAAmeAAA.PVAfDObdrA.DqFENCAmeAENCDA",
+                    "xdm:gdprApplies": true,
+                    "xdm:containsPersonalData": false
+                }
+            ]
+        }
+    ]
+}

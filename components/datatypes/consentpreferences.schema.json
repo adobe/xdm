@@ -156,9 +156,9 @@
               "description": "Allow personalization of emails sent to the user",
               "$ref": "#/definitions/consentOption"
             },
-            "xdm:snailMail": {
-              "title": "Personalize snail-mail",
-              "description": "Allow personalization of offers sent via traditional mail",
+            "xdm:physicalMail": {
+              "title": "Personalize physical mail",
+              "description": "Allow personalization of offers sent via traditional/physical mail",
               "$ref": "#/definitions/consentOption"
             },
             "xdm:phoneCalls": {
@@ -238,7 +238,7 @@
                 "inAppMessages",
                 "sms",
                 "phoneCalls",
-                "snailMail",
+                "physicalMail",
                 "inVehicleMessages",
                 "inHomeMessages",
                 "iotMessages",
@@ -250,7 +250,7 @@
                 "inAppMessages": "in-app messages",
                 "sms": "sms (text messages)",
                 "phoneCalls": "phone calls",
-                "snailMail": "traditional mail",
+                "physicalMail": "physical mail",
                 "inVehicleMessages": "in-vehicle messages",
                 "inHomeMessages": "in-home messages",
                 "iot": "IoT messages",
@@ -287,9 +287,9 @@
               "description": "The company may contact the user with phone solicitations",
               "$ref": "#/definitions/marketingOption"
             },
-            "xdm:snailMail": {
-              "title": "Receive snail-mail",
-              "description": "It is okay to send offers via traditional mail.",
+            "xdm:physicalMail": {
+              "title": "Receive physical mail",
+              "description": "It is okay to send offers via traditional/physical mail.",
               "$ref": "#/definitions/marketingOption"
             },
             "xdm:inVehicleMessages": {

@@ -1,0 +1,66 @@
+{
+    "meta:license": [
+        "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "https://ns.adobe.com/experience/adcloud/creative-event",
+    "title": "Adobe Advertising Cloud Creative Management Platform Event Extension",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/experienceevent"
+    ],
+    "description": "Adobe Advertising Cloud Creative Management Platform Event extension.",
+    "definitions": {
+        "creative-event": {
+            "properties": {
+                "https://ns.adobe.com/experience/adcloud/creative": {
+                    "title": "Advertising Creative Management Platform Details",
+                    "description": "Advertising Creative Management Platform Details.",
+                    "$ref": "https://ns.adobe.com/experience/adcloud/creative"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/context/experienceevent#/definitions/experienceevent"
+        },
+        {
+            "$ref": "#/definitions/creative-event"
+        }
+    ],
+    "meta:status": "stable",
+    "examples": [
+        {
+            "https://ns.adobe.com/experience/adcloud/creative": {
+                "xdm:experienceId": "1001",
+                "xdm:targetingBranchId": "4001",
+                "xdm:adThemeCreativeId": "3001",
+                "xdm:segments": [
+                    {
+                        "xdm:identityMap": {
+                            "AdCloudSegments": [
+                                {
+                                    "xdm:id": "112233",
+                                    "xdm:primary": true
+                                }
+                            ]
+                        },
+                        "xdm:segmentName": "Users with TV segment",
+                        "xdm:description": "Segment is about users who have TV",
+                        "xdm:segmentStatus": "ACTIVE",
+                        "repo:createDate": "2018-10-23T12:00:00-06:00",
+                        "repo:modifyDate": "2019-03-21T12:00:00-06:00",
+                        "xdm:targeted": true,
+                        "xdm:partnerId": "10"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -27,7 +27,7 @@
         "xdm:viewName": {
           "title": "View Name",
           "type": "string",
-          "description": "A view name in a Single Page Application."
+          "description": "The name of the view, within a page. This is commonly used with Single Page Applications or pages that have tabs or controls that change a majority of the page layout."
         },
         "xdm:URL": {
           "title": "URL",

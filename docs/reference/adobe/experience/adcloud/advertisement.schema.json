@@ -126,6 +126,19 @@
     ],
     "examples": [
         {
+            "@id": "14",
+            "dsp:adKey": "yyyy029YLCDvseo8QhTE",
+            "dsp:adStatus": "Active",
+            "dsp:adClass": "inbanner",
+            "dsp:adUnitType": "Flash",
+            "dsp:externalCreativeId": "5121209",
+            "dsp:promotedVideoId": "14",
+            "dsp:adServerId": "2",
+            "dsp:placementIds": [
+                "1"
+            ]
+        },
+        {
             "xdm:creativeID": "301404063528",
             "xdm:keywordID": "147741280",
             "xdm:audienceID": "257600311580",
@@ -140,19 +153,6 @@
             "xdm:adClass": "video",
             "xdm:adUnitType": "HTML5",
             "xdm:promotedAssetId": "4116761052"
-        },
-        {
-            "@id": "14",
-            "dsp:adKey": "yyyy029YLCDvseo8QhTE",
-            "dsp:adStatus": "Active",
-            "dsp:adClass": "inbanner",
-            "dsp:adUnitType": "Flash",
-            "dsp:externalCreativeId": "5121209",
-            "dsp:promotedVideoId": "14",
-            "dsp:adServerId": "2",
-            "dsp:placementIds": [
-                "1"
-            ]
         }
     ]
 }

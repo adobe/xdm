@@ -15,6 +15,22 @@ Adobe Advertising Cloud Ad Details.
 
 ```json
 {
+  "@id": "14",
+  "dsp:adKey": "yyyy029YLCDvseo8QhTE",
+  "dsp:adStatus": "Active",
+  "dsp:adClass": "inbanner",
+  "dsp:adUnitType": "Flash",
+  "dsp:externalCreativeId": "5121209",
+  "dsp:promotedVideoId": "14",
+  "dsp:adServerId": "2",
+  "dsp:placementIds": [
+    "1"
+  ]
+}
+```
+
+```json
+{
   "xdm:creativeID": "301404063528",
   "xdm:keywordID": "147741280",
   "xdm:audienceID": "257600311580",
@@ -32,22 +48,6 @@ Adobe Advertising Cloud Ad Details.
   "xdm:adClass": "video",
   "xdm:adUnitType": "HTML5",
   "xdm:promotedAssetId": "4116761052"
-}
-```
-
-```json
-{
-  "@id": "14",
-  "dsp:adKey": "yyyy029YLCDvseo8QhTE",
-  "dsp:adStatus": "Active",
-  "dsp:adClass": "inbanner",
-  "dsp:adUnitType": "Flash",
-  "dsp:externalCreativeId": "5121209",
-  "dsp:promotedVideoId": "14",
-  "dsp:adServerId": "2",
-  "dsp:placementIds": [
-    "1"
-  ]
 }
 ```
 

@@ -14,9 +14,9 @@
     "b2b-account-organization": {
       "properties": {
         "xdm:organizationType": {
-          "title": "Organization Type", 
-          "description": "Label describing the type of organization",
-          "type": "string"
+          "title": "Type of Organizations",
+          "type": "string",
+          "description": "Label describing the type of organization"
         },
         "xdm:numberOfEmployees": {
           "title": "Number of employees",

@@ -5,24 +5,17 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/context/account",
+  "$id": "https://ns.adobe.com/xdm/mixins/account-details",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "XDM Business Account",
+  "title": "Account Details",
   "type": "object",
-  "auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
-  "description": "An XDM Business Account.",
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/account"],
+  "description": "XDM business account details.",
   "definitions": {
-    "account": {
-      "properties": {
-        "xdm:accountID": {
-          "title": "Account ID",
-          "description": "Account identifer",
-          "type": "string"
-        }
-      }
+    "account-details": {
+      "properties": {}
     }
   },
   "allOf": [
@@ -30,15 +23,11 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/data/record"
+      "$ref": "#/definitions/account-details"
     },
     {
-      "$ref": "#/definitions/account"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
+      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-account"
     }
   ],
-  "required": ["xdm:accountID"],
   "meta:status": "experimental"
 }

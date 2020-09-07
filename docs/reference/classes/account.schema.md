@@ -21,9 +21,7 @@ An XDM Business Account.
 ## XDM Business Account Example
 ```json
 {
-  "xdm:accountID": "1234567890",
-  "xdm:accountNumber": "ACC111",
-  "xdm:accountType": "Business"
+  "xdm:accountID": "1234567890"
 }
 ```
 
@@ -33,8 +31,6 @@ An XDM Business Account.
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Record Schema](../behaviors/record.schema.md#id) |
 | [xdm:accountID](#xdmaccountid) | `string` | **Required** | XDM Business Account (this schema) |
-| [xdm:accountNumber](#xdmaccountnumber) | `string` | Optional | XDM Business Account (this schema) |
-| [xdm:accountType](#xdmaccounttype) | `string` | Optional | XDM Business Account (this schema) |
 | [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details Mixin](../mixins/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -70,46 +66,6 @@ Account identifer
 * defined in this schema
 
 ### xdm:accountID Type
-
-
-`string`
-
-
-
-
-
-
-## xdm:accountNumber
-### Account Number
-
-Tracking or reference number for account. Up to 40 characters are allowed in this field.
-
-`xdm:accountNumber`
-* is optional
-* type: `string`
-* defined in this schema
-
-### xdm:accountNumber Type
-
-
-`string`
-
-
-
-
-
-
-## xdm:accountType
-### Account Type
-
-Type of account, for example, customer, competitor, or partner. Entry is selected from a picklist of available values, which a salesforce admin sets. Each picklist value can have up to 40 characters.
-
-`xdm:accountType`
-* is optional
-* type: `string`
-* defined in this schema
-
-### xdm:accountType Type
 
 
 `string`

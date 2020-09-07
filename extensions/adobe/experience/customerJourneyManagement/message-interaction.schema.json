@@ -17,7 +17,7 @@
   "definitions": {
     "messageInteraction": {
       "properties": {
-        "https://ns.adobe.com/experience/customerJourneyManagement/interactionType": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType": {
           "title": "Interaction Type",
           "type": "string",
           "description": "Specify action made by user on a message.",
@@ -28,17 +28,17 @@
             "action": "Custom action taken on push notifcation, like clicking on some button in push notification."
           }
         },
-        "@id": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/urlID": {
           "title": "Tracker URL ID",
           "type": "string",
           "description": "Unique Identifier of the URL clicked by the user."
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/label": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label": {
           "title": "URL Label",
           "type": "string",
           "description": "The user-friendly label clicking on which the url opens."
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/category": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/category": {
           "title": "URL Category",
           "type": "string",
           "description": "The category of the URL. It may be `subscription`, or a user-defined category.",
@@ -48,7 +48,7 @@
     }
   },
   "required": [
-    "https://ns.adobe.com/experience/customerJourneyManagement/interactionType"
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType"
   ],
   "allOf": [
     {

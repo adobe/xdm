@@ -22,17 +22,17 @@
           "type": "string",
           "description": "The CJM activity originating this message."
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageID": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageID": {
           "title": "Message ID",
           "type": "string",
           "description": "The parent Message ID of a MessageExecution originating this message."
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/JourneyVersionID": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/JourneyVersionID": {
           "title": "JourneyVersion ID",
           "type": "string",
           "description": " JourneyVersion Id triggerieng the MessageExecution."
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/JourneyVersionInstanceId": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/JourneyVersionInstanceId": {
           "title": "JourneyVersion Instance Id",
           "type": "string",
           "description": "Identifier of the journey version instance, specific to one individual (uuid)."

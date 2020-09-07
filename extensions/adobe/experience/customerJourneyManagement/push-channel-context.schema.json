@@ -17,7 +17,7 @@
   "definitions": {
     "pushChannelContext": {
       "properties": {
-        "https://ns.adobe.com/experience/customerJourneyManagement/platform": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform": {
           "title": "Push Platform",
           "type": "string",
           "description": "Push provider service, e.g. apns or fcm",
@@ -30,7 +30,7 @@
     }
   },
   "required": [
-    "https://ns.adobe.com/experience/customerJourneyManagement/platform"
+    "https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform"
   ],
   "allOf": [
     {

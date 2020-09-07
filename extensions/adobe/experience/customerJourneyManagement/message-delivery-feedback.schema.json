@@ -17,7 +17,7 @@
   "definitions": {
     "messageDeliveryfeedback": {
       "properties": {
-        "https://ns.adobe.com/experience/customerJourneyManagement/feedbackStatus": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/feedbackStatus": {
           "title": "Feedback Status",
           "type": "string",
           "description": "Provide status of a delivery attempt.",
@@ -30,37 +30,37 @@
             "delay": "message failed to deliver, but will be retry after next schedule time."
           }
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageExclusion": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageExclusion": {
           "title": "Message Exclusion",
           "type": "object",
           "properties": {
-            "https://ns.adobe.com/experience/customerJourneyManagement/code": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/code": {
               "title": "Exclude Code",
               "type": "string",
               "description": "Provide top level exclusion reason, like typology rule, mandatory parameter missing."
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/reason": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/reason": {
               "title": "Exclude Reason",
               "type": "string",
               "description": "Provide exclusion subcode, like exact typology rule-id."
             }
           }
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageFailure": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageFailure": {
           "title": "Message Failure",
           "type": "object",
           "properties": {
-            "https://ns.adobe.com/experience/customerJourneyManagement/reason": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/reason": {
               "title": "Failure Reason",
               "type": "string",
               "description": "Failure reason for a failed delivery attempt."
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/code": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/code": {
               "title": "Failure Code",
               "type": "string",
               "description": "Failure code for a failed delivery attempt."
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/type": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/type": {
               "title": "Failure Type",
               "type": "string",
               "description": "Classifies whether it is a soft bounce or hard bounce.",
@@ -71,7 +71,7 @@
             }
           }
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/retryCount": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/retryCount": {
           "title": "Retry Count",
           "type": "integer",
           "description": "Number of failed attempts before the current event. The retryCount starts with '0', for message which is sent in first attempt will have 'retryCount' as 0."
@@ -80,7 +80,7 @@
     }
   },
   "required": [
-    "https://ns.adobe.com/experience/customerJourneyManagement/feedbackStatus"
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/feedbackStatus"
   ],
   "allOf": [
     {

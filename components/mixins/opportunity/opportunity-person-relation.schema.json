@@ -5,24 +5,17 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/context/opportunity",
+  "$id": "https://ns.adobe.com/xdm/mixins/opportunity-person-relation",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "XDM Business Opportunity",
+  "title": "opportunity Person Relation Details",
   "type": "object",
-  "auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
-  "description": "An XDM Business Opportunity.",
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/opportunity-person"],
+  "description": "XDM business opportunity person relation details.",
   "definitions": {
-    "opportunity": {
-      "properties": {
-        "xdm:opportunityID": {
-          "title": "Opportunity ID",
-          "description": "Opportunity identifer",
-          "type": "string"
-        }
-      }
+    "opportunity-person-details": {
+      "properties": {}
     }
   },
   "allOf": [
@@ -30,15 +23,11 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/data/record"
+      "$ref": "#/definitions/opportunity-person-relation"
     },
     {
-      "$ref": "#/definitions/opportunity"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
+      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-opportunity-person"
     }
   ],
-  "required": ["xdm:opportunityID"],
   "meta:status": "experimental"
 }

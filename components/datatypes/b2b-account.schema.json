@@ -37,7 +37,7 @@
           "title": "Account Shipping Address",
           "$ref": "https://ns.adobe.com/xdm/common/address"
         },
-        "xdm:accountPhysicalAdress": {
+        "xdm:accountPhysicalAddress": {
           "title": "Account Physical Address",
           "description": "Actual physical address of the account. Could be the HQ address or any preffered business address for communication.",
           "$ref": "https://ns.adobe.com/xdm/common/address"
@@ -117,7 +117,7 @@
           "description": "A name, different from its legal name, that an organization may use for conducting business. Similar to (Doing business as) or (DBA).",
           "type": "string"
         },
-        "xdm:accontPhone": {
+        "xdm:accountPhone": {
           "title": "Account Phone Number",
           "description": "Phone number for the account.",
           "$ref": "https://ns.adobe.com/xdm/context/phonenumber"

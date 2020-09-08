@@ -23,11 +23,7 @@ Details related to the application generated interactions. Application refers to
 {
   "xdm:id": "A123",
   "xdm:name": "Myapp",
-  "xdm:version": "1.0.1",
-  "xdm:launches": {
-    "xdm:value": 1
-  },
-  "xdm:userPerspective": "foreground"
+  "xdm:version": "1.0.1"
 }
 ```
 
@@ -35,7 +31,11 @@ Details related to the application generated interactions. Application refers to
 {
   "xdm:id": "A123",
   "xdm:name": "Myapp",
-  "xdm:version": "1.0.1"
+  "xdm:version": "1.0.1",
+  "xdm:launches": {
+    "xdm:value": 1
+  },
+  "xdm:userPerspective": "foreground"
 }
 ```
 

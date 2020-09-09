@@ -54,7 +54,6 @@ All items must be of the type:
 | `xdm:sourceAccountParentID`|  | Optional |
 | `xdm:sourceExternalID`|  | Optional |
 | `xdm:sourcePartnerAccountID`|  | Optional |
-| `xdm:sourceSalesAccountOwnerID`|  | Optional |
 
 
 
@@ -168,26 +167,6 @@ Partner accounts are accounts that a channel manager uses to manage partner orga
 * type: reference
 
 ##### xdm:sourcePartnerAccountID Type
-
-
-* []() – `https://ns.adobe.com/xdm/datatypes/b2b-source`
-
-
-
-
-
-
-
-#### xdm:sourceSalesAccountOwnerID
-##### Source Sales Account Owner Id
-
-Sales account owner ID.
-
-`xdm:sourceSalesAccountOwnerID`
-* is optional
-* type: reference
-
-##### xdm:sourceSalesAccountOwnerID Type
 
 
 * []() – `https://ns.adobe.com/xdm/datatypes/b2b-source`

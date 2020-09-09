@@ -194,9 +194,6 @@
       "$ref": "#/definitions/b2b-person-details"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-person"
-    },
-    {
       "$ref": "https://ns.adobe.com/xdm/context/profile-personal-details"
     },
     {

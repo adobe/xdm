@@ -1,0 +1,104 @@
+{
+    "meta:license": [
+        "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/experience/adcloud-profile",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Adobe Advertising Cloud Profile Template Mixin",
+    "type": "object",
+    "description": "Adobe Advertising Cloud profile mixin for use with schemas for Solution data ingestion. Includes the core and standard profile as well as the required Adobe Advertising Cloud profile mixins.",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/profile"
+    ],
+    "meta:extends": [
+        "https://ns.adobe.com/xdm/context/profile-segmentation",
+        "https://ns.adobe.com/experience/adcloud/profile-all"
+    ],
+    "definitions": {
+        "adcloud-profile": {
+            "properties": {}
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/context/profile-segmentation"
+        },
+        {
+            "$ref": "https://ns.adobe.com/experience/adcloud/profile-all"
+        },
+        {
+            "$ref": "#/definitions/adcloud-profile"
+        }
+    ],
+    "meta:status": "stable",
+    "examples": [
+        {
+            "xdm:segments": [
+                {
+                    "xdm:segmentID": {
+                        "@id": "https://data.adobe.io/entities/segmentidentity/04a81716-43d6-4e7a-a49c-f1d8b3129ba9",
+                        "xdm:namespace": {
+                            "xdm:code": "AAM"
+                        }
+                    },
+                    "xdm:version": "15",
+                    "xdm:timestamp": "2018-04-26T15:52:25+00:00",
+                    "xdm:validUntil": "2019-04-26T15:52:25+00:00",
+                    "xdm:status": "existing"
+                },
+                {
+                    "xdm:segmentID": {
+                        "@id": "https://data.adobe.io/entities/identity/53cba6b2-a23b-454a-8069-fc41308f1c0f",
+                        "xdm:namespace": {
+                            "xdm:code": "AAM"
+                        }
+                    },
+                    "xdm:version": "3",
+                    "xdm:lastQualificationTime": "2018-04-26T15:52:25+00:00",
+                    "xdm:validUntil": "2018-04-27T15:52:25+00:00",
+                    "xdm:status": "realized"
+                }
+            ],
+            "xdm:syncedRemarketingAudiences": [
+                {
+                    "xdm:segmentID": "https://data.adobe.io/entities/segmentidentity/04a81716-43d6-4e7a-a49c-f1d8b3129ba9",
+                    "xdm:segmentType": 3,
+                    "xdm:timestamp": "2018-08-07T08:06:34.672Z",
+                    "xdm:partnerDetails": [
+                        {
+                            "xdm:id": "2",
+                            "xdm:data": "sample-conversion-id-123"
+                        },
+                        {
+                            "xdm:id": "1",
+                            "xdm:data": "sample-conversion-id-124"
+                        }
+                    ]
+                },
+                {
+                    "xdm:segmentID": "https://data.adobe.io/entities/segmentidentity/53cba6b2-a23b-454a-8069-fc41308f1c0f",
+                    "xdm:segmentType": 3,
+                    "xdm:timestamp": "2018-08-07T08:06:34.672Z",
+                    "xdm:partnerDetails": [
+                        {
+                            "xdm:id": "2",
+                            "xdm:data": "sample-conversion-id-125"
+                        },
+                        {
+                            "xdm:id": "1",
+                            "xdm:data": "sample-conversion-id-126"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

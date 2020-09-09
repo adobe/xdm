@@ -43,11 +43,6 @@
                                 "description": "Partner accounts are accounts that a channel manager uses to manage partner organizations, partner users, and activities when using a partner community or partner portal.",
                                 "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
                             },
-                            "xdm:sourceSalesAccountOwnerID": {
-                                "title": "Source Sales Account Owner Id",
-                                "description": "Sales account owner ID.",
-                                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
-                            },
                             "xdm:sourceAccountOwnerID": {
                                 "title": "Account Owner Id",
                                 "description": "Account owner ID.",

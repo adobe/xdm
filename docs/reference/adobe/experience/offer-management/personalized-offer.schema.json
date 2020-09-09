@@ -1,0 +1,95 @@
+{
+    "meta:license": [
+        "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "https://ns.adobe.com/experience/offer-management/personalized-offer",
+    "meta:extends": [
+        "https://ns.adobe.com/experience/offer-management/offer"
+    ],
+    "meta:abstract": false,
+    "meta:extensible": true,
+    "type": "object",
+    "title": "Adobe Experience Cloud Personalized Offer",
+    "description": "A personalized offer is the conceptual entity that is chosen during the decisioning process. The objective for decisioning is to take a large inventory of content items and apply numerous constraint rules to that inventory to first narrow it down and then rank the qualifying options. The outcome modifies the overall experience to accommodate specific individuals, sometimes tied to groups or segments of individuals.",
+    "definitions": {
+        "personalized-offer": {
+            "allOf": [
+                {
+                    "properties": {
+                        "xdm:rank": {
+                            "$ref": "https://ns.adobe.com/experience/offer-management/rank",
+                            "title": "Rank",
+                            "description": "Offer rank (priority). Defines what is considered the \"best offer\" given the context of the decision. Among all the offers that have not been disqualified due other constraints, the ranking will decide top (or top N) offers to be proposed."
+                        },
+                        "xdm:selectionConstraint": {
+                            "$ref": "https://ns.adobe.com/experience/offer-management/selection-constraint",
+                            "title": "Selection Constraints",
+                            "description": "Selection constraints define all rules that decide if an offer disqualifies from the set of eligible offers at this moment, for this context and/or for this profile identity. For example, offers typically have a start and end date before and after they are not eligible for consideration anymore"
+                        },
+                        "xdm:cappingConstraint": {
+                            "$ref": "https://ns.adobe.com/experience/offer-management/capping-constraint",
+                            "title": "Capping Constraints",
+                            "description": "Capping constraint define additional rules based on prior offer proposition, either across all audiences or for a particular profile identity."
+                        }
+                    }
+                },
+                {
+                    "$ref": "https://ns.adobe.com/experience/offer-management/offer#/definitions/offer"
+                }
+            ]
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/experience/offer-management/offer"
+        },
+        {
+            "$ref": "#/definitions/personalized-offer"
+        },
+        {
+            "required": [
+                "xdm:rank",
+                "xdm:selectionConstraint"
+            ]
+        }
+    ],
+    "examples": [
+        {
+            "@id": "xcore:personalized-offer:e526a1503bf29e9",
+            "xdm:name": "Personalized Offer 1",
+            "xdm:status": "approved",
+            "xdm:representations": [
+                {
+                    "xdm:components": [
+                        {
+                            "xdm:text": "You can always get what you want!",
+                            "@type": "https://ns.adobe.com/experience/offer-management/content-component-text",
+                            "dc:format": "text/template"
+                        }
+                    ],
+                    "xdm:channel": "https://ns.adobe.com/xdm/channels/email",
+                    "xdm:placement": "xcore:offer-placement:e51944a87919861"
+                }
+            ],
+            "xdm:tags": [
+                "xcore:tag:e5196f1d9119862"
+            ],
+            "xdm:selectionConstraint": {
+                "xdm:startDate": "2018-03-13T05:59:18.914Z",
+                "xdm:endDate": "2018-12-27T05:59:18.914Z",
+                "xdm:eligibilityRule": "xcore:eligibility-rule:e5244c22eff29e8"
+            },
+            "xdm:cappingConstraint": {
+                "xdm:frequency": 2,
+                "xdm:volume": 10
+            },
+            "xdm:rank": {
+                "xdm:priority": 1
+            }
+        }
+    ]
+}

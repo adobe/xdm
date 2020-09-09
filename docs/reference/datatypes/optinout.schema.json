@@ -398,6 +398,7 @@
                     "default": false
                 },
                 "xdm:optOutDetails": {
+                    "type": "object",
                     "properties": {
                         "xdm:email": {
                             "title": "Additional Details for Email Opt Out",

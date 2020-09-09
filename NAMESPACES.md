@@ -50,10 +50,10 @@ XDM uses the [JSON-LD](https://json-ld.org/spec/latest/json-ld/) syntax to assig
 	}
 
 
-## Namespaces and Adobe Experience Platform (AEP)
-The use of JSON-LD within XDM was put in place before AEP transitioned to using XDM for its schema definitions. AEP is a data platform where data is based on the XDM schema, but fields are exposed in interfaces such as SQL where the JSON-LD notation (slashes, colons, dots) is either not supported or complicates the user experience.  As a result, AEP exposes the XDM schema and it's associated data in a form known as XED (Experience for Data). 
+## JSON-LD and Adobe Experience Platform (AEP)
+The use of JSON-LD within XDM was put in place before AEP started using XDM for its standard models and Dataset definitions. The JSON-LD syntax provides a standard way to define the namespace of a field, but the intentions of AEP to expose raw field names in SQL and other interfaces made the JSON-LD syntax impossible to use in its raw form. As a result, AEP exposes the XDM schema in a form known as XED (Experience for Data). The XED view of the schema maintains the namespaces, but in a format that is compatible with the AEP use cases and current implementation. The example below shows what users of AEP see today and when the view the XDM scheam from above. 
 
-**The above XDM schema is expose in AEP as the following:**
+**AEP form of the above XDM schema:**
 
     {
 	   "$id": "https://ns.adobe.com/xdm/schemas/mySchema",

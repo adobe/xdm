@@ -1,0 +1,69 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/b2b-person-components",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "XDM Business Person Components",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "description": "This Mixin is used to capture B2B Person specific relationship attributes and other attributes which are required for person segmentation.",
+  "definitions": {
+    "b2b-person-components": {
+      "properties": {
+        "xdm:personComponents": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "xdm:sourcePersonID": {
+                "title": "Source Person ID",
+                "description": "Source person ID.",
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+              },
+              "xdm:sourceAccountID": {
+                "title": "Source Account ID",
+                "description": "Source account ID.",
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+              },
+              "xdm:sourcePersonOwnerID": {
+                "title": "Source Person Owner ID",
+                "description": "Source person owner identifier.",
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+              },
+              "xdm:sourceConvertedAccountID": {
+                "title": "Source Converted Account ID",
+                "description": "Source converted account ID.",
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+              },
+              "xdm:sourceConvertedOpportunityID": {
+                "title": "Source Converted Opportunity ID",
+                "description": "Source converted opportunity ID.",
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+              },
+              "xdm:sourceConvertedContactID": {
+                "title": "Source Converted Contact ID",
+                "description": "Source converted contact ID.",
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/b2b-person-components"
+    }
+  ],
+  "meta:status": "experimental"
+}

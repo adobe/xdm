@@ -101,7 +101,7 @@
           "title": "Lead Source",
           "description": "Field recording what source the lead originated from.",
           "type": "string"
-        }
+        },
         "xdm:jigsawPersonID": {
           "title": "Jigsaw Person Id",
           "description": "Person’s Data.com ID if available.",
@@ -111,7 +111,7 @@
           "title": "Jigsaw",
           "description": "Data.com key",
           "type": "string"
-        }
+        },
         "xdm:lastTransferDate": {
           "title": "Last Transfer Date",
           "description": "Last transfer date.",
@@ -168,7 +168,7 @@
           "title": "Inferred Phone Area Code",
           "description": "Phone area code inferred by reverse IP lookup of lead’s first recorded web visit.",
           "type": "string"
-        },	  
+        },
         "xdm:personOrganization": {
           "title": "Person Organization",
           "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-account-organization"
@@ -196,7 +196,7 @@
     {
       "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-person"
     },
-	{
+    {
       "$ref": "https://ns.adobe.com/xdm/context/profile-personal-details"
     },
     {
@@ -209,12 +209,14 @@
       "$ref": "https://ns.adobe.com/xdm/context/profile-work-details"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/context/identitymap"	
+      "$ref": "https://ns.adobe.com/xdm/context/identitymap"
     },
     {
       "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
     }
   ],
-  "required": ["xdm:personID"],
+  "required": [
+    "xdm:personID"
+  ],
   "meta:status": "experimental"
 }

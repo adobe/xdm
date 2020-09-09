@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/opportunity-person"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/opportunity-person"
+  ],
   "description": "XDM business opportunity person relation details.",
   "definitions": {
     "opportunity-person-details": {

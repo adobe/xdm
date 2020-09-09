@@ -19,7 +19,7 @@
       "properties": {
         "xdm:opportunityID": {
           "title": "Opportunity ID",
-          "description": "Opportunity identifer",
+          "description": "Opportunity unique identifer",
           "type": "string"
         }
       }

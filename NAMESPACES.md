@@ -17,6 +17,7 @@ XDM uses the [JSON-LD](https://json-ld.org/spec/latest/json-ld/) syntax to assig
 		"@context": { //Shorthand prefixes that can be used instead of the full URI
 			"xdm": "https://ns.adobe.com/xdm",
 			"repo": "http://ns.adobe.com/adobecloud/core/1.0/",
+			"schema": "http://schema.org",
 			"customerA": "https://ns.adobe.com/customera"
 		}
 		"properties": {
@@ -33,10 +34,16 @@ XDM uses the [JSON-LD](https://json-ld.org/spec/latest/json-ld/) syntax to assig
 				"type": "string",
 				"format": "datetime"
 			},
+			"https://ns.adobe.com/xdm/channels/application": { //https://ns.adobe.com/xdm/channels is the namespace, createdDate is the field name
+				"type": "string"
+			},
+			"schema:latitude": { //schema is the namespace and comes from the schema.org defintion, latitude is the field name
+				"type": "number"
+			},
 			"https://ns.adobe.com/vendora/product/stockNumber": { //https://ns.adobe.com/vendora/product is the namespace, stockNumber is the fieldname
 				"type": "string"
 			},
-			"customerA:internalSku": { //customera is the namespace, internalSku is the field name
+			"customerA:internalSku": { //customera is the namespace (tenantId), internalSku is the field name
 				"type": "number"
 			}
 		}
@@ -70,8 +77,24 @@ The use of JSON-LD within XDM was put in place before AEP transitioned to using 
 				       	"format": "datetime"
 				    }
 				}
-	       	}
-	       	"_vendora": { //top portion of the vendora/product namespace
+	       	},
+	       	"_channels": { //https://ns.adobe.com/xdm/channels namespace is exposed as a parent field named _channels
+		       	"type": "object",
+		       	"properties": {
+			       	"application": { //member of the "repo" namespace
+				       	"type": "string"
+				    }
+				}
+	       	},
+	       	"_schema": { //https://ns.adobe.com/xdm/channels namespace is exposed as a parent field named _channels
+		       	"type": "object",
+		       	"properties": {
+			       	"application": { //member of the "repo" namespace
+				       	"type": "string"
+				    }
+				}
+	       	},
+	       	"_vendora": { //URI namespace is converted into a nested path
 		       	"type": "object",
 		       	"properties": {
 			       	"product": { //second level of the namespace
@@ -84,8 +107,8 @@ The use of JSON-LD within XDM was put in place before AEP transitioned to using 
 					}
 				}
 			}
-		}
-		"_customera": {//customera namespace converted into a physical field named _customera
+		},
+		"_customera": {//customera namespace (tenantId) converted into a physical field named _customera
 			"type": "object",
 			"properties": {
 				"internalSku": { 

@@ -169,11 +169,6 @@
           "description": "Phone area code inferred by reverse IP lookup of lead’s first recorded web visit.",
           "type": "string"
         },	  
-        "xdm:isDeleted": {
-          "title": "Deleted Indicator",
-          "description": "Indicator whether the instance was deleted.",
-          "type": "boolean"
-        },
         "xdm:personOrganization": {
           "title": "Person Organization",
           "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-account-organization"

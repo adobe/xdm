@@ -21,16 +21,6 @@
           "title": "Account ID",
           "description": "Account identifer",
           "type": "string"
-        },
-        "xdm:accountNumber": {
-          "title": "Account Number",
-          "description": "Tracking or reference number for account. Up to 40 characters are allowed in this field.",
-          "type": "string"
-        },
-        "xdm:accountType": {
-          "title": "Account Type",
-          "description": "Type of account, for example, customer, competitor, or partner. Entry is selected from a picklist of available values, which a salesforce admin sets. Each picklist value can have up to 40 characters.",
-          "type": "string"
         }
       }
     }
@@ -43,10 +33,10 @@
       "$ref": "https://ns.adobe.com/xdm/data/record"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
+      "$ref": "#/definitions/account"
     },
     {
-      "$ref": "#/definitions/account"
+      "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
     }
   ],
   "required": ["xdm:accountID"],

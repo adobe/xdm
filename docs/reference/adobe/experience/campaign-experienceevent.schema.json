@@ -1,0 +1,193 @@
+{
+    "meta:license": [
+        "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/experience/campaign-experienceevent",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Adobe Campaign ExperienceEvent Template Mixin",
+    "type": "object",
+    "description": "Campaign ExperienceEvent mixin for use with schemas for Solution data ingestion. Includes the core/standard ExperienceEvent as well as the required Adobe Campaign ExperienceEvent mixins.",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/experienceevent",
+        "https://ns.adobe.com/experience/decisioning/decisionevent"
+    ],
+    "meta:extends": [
+        "https://ns.adobe.com/xdm/context/experienceevent-advertising",
+        "https://ns.adobe.com/xdm/context/experienceevent-application",
+        "https://ns.adobe.com/xdm/context/experienceevent-channel",
+        "https://ns.adobe.com/xdm/context/experienceevent-commerce",
+        "https://ns.adobe.com/xdm/context/experienceevent-directmarketing",
+        "https://ns.adobe.com/xdm/context/experienceevent-environment-details",
+        "https://ns.adobe.com/xdm/context/experienceevent-marketing",
+        "https://ns.adobe.com/xdm/context/experienceevent-media",
+        "https://ns.adobe.com/xdm/context/experienceevent-profile-stitch",
+        "https://ns.adobe.com/xdm/context/experienceevent-search",
+        "https://ns.adobe.com/xdm/context/experienceevent-segmentmembership",
+        "https://ns.adobe.com/xdm/context/experienceevent-technical-details",
+        "https://ns.adobe.com/xdm/context/experienceevent-web",
+        "https://ns.adobe.com/experience/campaign/experienceevent-all",
+        "https://ns.adobe.com/experience/decisioning/proposition",
+        "https://ns.adobe.com/experience/target/experienceevent-shared",
+        "https://ns.adobe.com/experience/profile/experienceevent-shared",
+        "https://ns.adobe.com/experience/implementations-ext",
+        "https://ns.adobe.com/xdm/context/experienceevent-enduserids"
+    ],
+    "definitions": {
+        "campaign-experienceevent": {
+            "properties": {}
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/context/experienceevent-advertising"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/context/experienceevent-application"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/context/experienceevent-channel"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/context/experienceevent-commerce"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/context/experienceevent-directmarketing"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/context/experienceevent-environment-details"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/context/experienceevent-marketing"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/context/experienceevent-media"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/context/experienceevent-profile-stitch"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/context/experienceevent-search"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/context/experienceevent-segmentmembership"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/context/experienceevent-technical-details"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/context/experienceevent-web"
+        },
+        {
+            "$ref": "https://ns.adobe.com/experience/campaign/experienceevent-all"
+        },
+        {
+            "$ref": "https://ns.adobe.com/experience/decisioning/proposition"
+        },
+        {
+            "$ref": "https://ns.adobe.com/experience/target/experienceevent-shared"
+        },
+        {
+            "$ref": "https://ns.adobe.com/experience/profile/experienceevent-shared"
+        },
+        {
+            "$ref": "https://ns.adobe.com/experience/implementations-ext"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/context/experienceevent-enduserids"
+        },
+        {
+            "$ref": "#/definitions/campaign-experienceevent"
+        }
+    ],
+    "meta:status": "stable",
+    "examples": [
+        {
+            "@id": "https://data.adobe.io/experienceid-1234567",
+            "xdm:dataSource": {
+                "@id": "https://data.adobe.io/datasources/datasource-124",
+                "xdm:code": "DataSourceIntegrationCode-124"
+            },
+            "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+            "xdm:identityMap": {
+                "ECID": [
+                    {
+                        "xdm:id": "68519882713298129995549973016107434638",
+                        "xdm:primary": true
+                    }
+                ],
+                "CPGN": [
+                    {
+                        "xdm:id": "https://data.adobe.io/entities/identity/1234567",
+                        "xdm:primary": true
+                    }
+                ]
+            },
+            "xdm:directMarketing": {
+                "xdm:sends": {
+                    "xdm:value": 1
+                }
+            },
+            "xdm:channel": {
+                "@id": "https://ns.adobe.com/xdm/channels/email"
+            },
+            "https://ns.adobe.com/experience/campaign/message": {
+                "xdm:id": 10000,
+                "xdm:profile": {
+                    "xdm:person": {
+                        "xdm:birthMonth": 1,
+                        "xdm:birthDay": 3,
+                        "xdm:birthYear": 1996,
+                        "xdm:gender": "female"
+                    },
+                    "xdm:workAddress": {
+                        "@id": "https://ns.adobe.com/entities/address/123",
+                        "xdm:primary": true,
+                        "xdm:city": "San Jose",
+                        "xdm:stateProvinceISO": "CA",
+                        "xdm:postalCode": "95110",
+                        "xdm:countryCode": "US"
+                    },
+                    "xdm:workEmail": {
+                        "xdm:primary": true,
+                        "xdm:address": "jsmith@xyzinc.com"
+                    }
+                },
+                "xdm:variant": "English",
+                "xdm:seedMember": false,
+                "xdm:quarantine": false,
+                "xdm:proofMember": false,
+                "xdm:controlGroupMember": false,
+                "xdm:testMember": true,
+                "xdm:size": 421,
+                "xdm:outboundIP": "10.20.30.40",
+                "xdm:externalID": "uuid:00112233-4455-6677-8899-AABBCCDDEEFF"
+            },
+            "https://ns.adobe.com/experience/campaign/delivery": {
+                "xdm:id": 1001,
+                "xdm:from": "no-reply@adobe.com",
+                "xdm:testEnabled": true,
+                "xdm:messageClass": "continuous",
+                "xdm:templateID": 1000,
+                "xdm:deliveryName": "DM200",
+                "xdm:deliveryLabel": "Birthday Wishes"
+            },
+            "https://ns.adobe.com/experience/campaign/marketingCampaign": {
+                "xdm:id": 100,
+                "xdm:campaignName": "CAMP2010"
+            },
+            "https://ns.adobe.com/experience/campaign/orchestration": {
+                "xdm:eventID": "onJourneyEnter"
+            },
+            "https://ns.adobe.com/experience/campaign/containerID": "customer-stage",
+            "https://ns.adobe.com/experience/campaign/eventSource": "pipelined-mta"
+        }
+    ]
+}

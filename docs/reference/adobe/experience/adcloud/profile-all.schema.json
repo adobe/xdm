@@ -1,0 +1,74 @@
+{
+    "meta:license": [
+        "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "https://ns.adobe.com/experience/adcloud/profile-all",
+    "title": "Adobe Advertising Cloud Profile Full Extension",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/profile"
+    ],
+    "description": "Details related to Adobe Advertising Cloud ExperienceEvent full extension. Contains all Solution added fields.",
+    "definitions": {
+        "profile-all": {
+            "properties": {
+                "xdm:syncedRemarketingAudiences": {
+                    "title": "Synchronized Segments",
+                    "type": "array",
+                    "items": {
+                        "$ref": "https://ns.adobe.com/experience/adcloud/syncedremarketingaudience"
+                    },
+                    "description": "List of search retargeting entities that have been synced with the Adobe Advertising Cloud partner to build audiences on the platform, e.g. RLSA for Google, WCA for Facebook."
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/profile-all"
+        }
+    ],
+    "meta:status": "stable",
+    "examples": [
+        {
+            "xdm:syncedRemarketingAudiences": [
+                {
+                    "xdm:segmentID": "https://data.adobe.io/entities/segmentidentity/04a81716-43d6-4e7a-a49c-f1d8b3129ba9",
+                    "xdm:segmentType": 3,
+                    "xdm:timestamp": "2018-08-07T08:06:34.672Z",
+                    "xdm:partnerDetails": [
+                        {
+                            "xdm:id": "2",
+                            "xdm:data": "sample-conversion-id-123"
+                        },
+                        {
+                            "xdm:id": "1",
+                            "xdm:data": "sample-conversion-id-124"
+                        }
+                    ]
+                },
+                {
+                    "xdm:segmentID": "https://data.adobe.io/entities/segmentidentity/53cba6b2-a23b-454a-8069-fc41308f1c0f",
+                    "xdm:segmentType": 3,
+                    "xdm:timestamp": "2018-08-07T08:06:34.672Z",
+                    "xdm:partnerDetails": [
+                        {
+                            "xdm:id": "2",
+                            "xdm:data": "sample-conversion-id-125"
+                        },
+                        {
+                            "xdm:id": "1",
+                            "xdm:data": "sample-conversion-id-126"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

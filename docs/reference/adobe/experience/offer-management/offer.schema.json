@@ -1,0 +1,113 @@
+{
+    "meta:license": [
+        "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "https://ns.adobe.com/experience/offer-management/offer",
+    "meta:abstract": true,
+    "meta:extensible": true,
+    "type": "object",
+    "title": "Offer",
+    "description": "This is the base concept for offers that are used for personalization and those that serve as fallback choices when none of offers for personalization qualify at within the given context.",
+    "definitions": {
+        "offer": {
+            "properties": {
+                "@id": {
+                    "type": "string",
+                    "format": "uri-reference",
+                    "title": "ID",
+                    "description": "The unique identifier of the offer. It must be unique within a repository container for objects that are not the same, otherwise it is interpreted as referring to the same object."
+                },
+                "xdm:name": {
+                    "type": "string",
+                    "title": "Name",
+                    "description": "The offer's name. A human readable string to find one or more offers."
+                },
+                "xdm:status": {
+                    "type": "string",
+                    "title": "Status",
+                    "description": "Offer Status allows user workflows to be conducted with offers. The status may affect where an offer is visible or considered relevant. Status changes are driven by the clients or services that use offers.",
+                    "enum": [
+                        "draft",
+                        "pending",
+                        "rejected",
+                        "approved",
+                        "archived"
+                    ],
+                    "meta:enum": {
+                        "draft": "Draft",
+                        "pending": "Pending",
+                        "rejected": "Rejected",
+                        "approved": "Approved",
+                        "archived": "Archived"
+                    }
+                },
+                "xdm:tags": {
+                    "type": "array",
+                    "title": "Tags",
+                    "description": "The set of tags associated with this offer. The tags are used in offer filter expressions to constrain the overall offer inventory to a topical sub set (category).",
+                    "items": {
+                        "type": "string",
+                        "format": "uri",
+                        "description": "An identifier of a tag object. The value is the @id of the tag that is referenced. See tag schema: https://ns.adobe.com/experience/offer-management/tag"
+                    }
+                },
+                "xdm:representations": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "https://ns.adobe.com/experience/offer-management/offer-representation"
+                    },
+                    "title": "Representations",
+                    "description": "Offer representations for different content variants. A single offer can have multiple contents variants. An offer representation is the object that connects offers to content. Content is information that is directed towards an audience for consumption in a (digital) experience. Content is delivered through channels (or a particular medium). "
+                },
+                "xdm:customMetadata": {
+                    "type": "object",
+                    "patternProperties": {
+                        ".+": {
+                            "type": "string"
+                        }
+                    },
+                    "title": "Custom Properties",
+                    "description": "Custom metadata is a key-value map that allows the end-users to attach properties to individual offer instances. Any string can be used as a key name, the values are also strings."
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/offer"
+        },
+        {
+            "required": [
+                "xdm:name",
+                "xdm:status"
+            ]
+        }
+    ],
+    "examples": [
+        {
+            "@id": "xcore:personalized-offer:e526a1503bf29e9",
+            "xdm:name": "Personalized Offer 1",
+            "xdm:status": "approved",
+            "xdm:representations": [
+                {
+                    "xdm:components": [
+                        {
+                            "xdm:text": "You can always get what you want!",
+                            "@type": "https://ns.adobe.com/experience/offer-management/content-component-text",
+                            "dc:format": "text/template"
+                        }
+                    ],
+                    "xdm:channel": "https://ns.adobe.com/xdm/channels/email",
+                    "xdm:placement": "xcore:offer-placement:e51944a87919861"
+                }
+            ],
+            "xdm:tags": [
+                "xcore:tag:e5196f1d9119862"
+            ]
+        }
+    ]
+}

@@ -28,7 +28,6 @@ This Data Type is used to capture B2B Account properties. They are grouped funct
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:accontPhone](#xdmaccontphone) | Phone number | Optional | B2B Account (this schema) |
 | [xdm:accountBillingAddress](#xdmaccountbillingaddress) | Postal address | Optional | B2B Account (this schema) |
 | [xdm:accountCurrencyCode](#xdmaccountcurrencycode) | `string` | Optional | B2B Account (this schema) |
 | [xdm:accountDescription](#xdmaccountdescription) | `string` | Optional | B2B Account (this schema) |
@@ -39,7 +38,8 @@ This Data Type is used to capture B2B Account properties. They are grouped funct
 | [xdm:accountOwnerID](#xdmaccountownerid) | `string` | Optional | B2B Account (this schema) |
 | [xdm:accountOwnership](#xdmaccountownership) | `string` | Optional | B2B Account (this schema) |
 | [xdm:accountParentID](#xdmaccountparentid) | `string` | Optional | B2B Account (this schema) |
-| [xdm:accountPhysicalAdress](#xdmaccountphysicaladress) | Postal address | Optional | B2B Account (this schema) |
+| [xdm:accountPhone](#xdmaccountphone) | Phone number | Optional | B2B Account (this schema) |
+| [xdm:accountPhysicalAddress](#xdmaccountphysicaladdress) | Postal address | Optional | B2B Account (this schema) |
 | [xdm:accountScore](#xdmaccountscore) | `number` | Optional | B2B Account (this schema) |
 | [xdm:accountShippingAddress](#xdmaccountshippingaddress) | Postal address | Optional | B2B Account (this schema) |
 | [xdm:accountSite](#xdmaccountsite) | `string` | Optional | B2B Account (this schema) |
@@ -50,27 +50,7 @@ This Data Type is used to capture B2B Account properties. They are grouped funct
 | [xdm:externalID](#xdmexternalid) | `string` | Optional | B2B Account (this schema) |
 | [xdm:isDeleted](#xdmisdeleted) | `boolean` | Optional | B2B Account (this schema) |
 | [xdm:partnerAccountID](#xdmpartneraccountid) | `string` | Optional | B2B Account (this schema) |
-| [xdm:salesAccountOwnerID](#xdmsalesaccountownerid) | `string` | Optional | B2B Account (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
-
-## xdm:accontPhone
-### Account Phone Number
-
-Phone number for the account.
-
-`xdm:accontPhone`
-* is optional
-* type: Phone number
-* defined in this schema
-
-### xdm:accontPhone Type
-
-
-* [Phone number](phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
-
-
-
-
 
 ## xdm:accountBillingAddress
 ### Account Billing Address
@@ -284,17 +264,36 @@ Parent company for companies that are subsidiaries of a larger company or organi
 
 
 
-## xdm:accountPhysicalAdress
+## xdm:accountPhone
+### Account Phone Number
+
+Phone number for the account.
+
+`xdm:accountPhone`
+* is optional
+* type: Phone number
+* defined in this schema
+
+### xdm:accountPhone Type
+
+
+* [Phone number](phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
+
+
+
+
+
+## xdm:accountPhysicalAddress
 ### Account Physical Address
 
 Actual physical address of the account. Could be the HQ address or any preffered business address for communication.
 
-`xdm:accountPhysicalAdress`
+`xdm:accountPhysicalAddress`
 * is optional
 * type: Postal address
 * defined in this schema
 
-### xdm:accountPhysicalAdress Type
+### xdm:accountPhysicalAddress Type
 
 
 * [Postal address](address.schema.md) – `https://ns.adobe.com/xdm/common/address`
@@ -488,26 +487,6 @@ Partner accounts are accounts that a channel manager uses to manage partner orga
 * defined in this schema
 
 ### xdm:partnerAccountID Type
-
-
-`string`
-
-
-
-
-
-
-## xdm:salesAccountOwnerID
-### Sales Account Owner Id
-
-Sales account owner ID.
-
-`xdm:salesAccountOwnerID`
-* is optional
-* type: `string`
-* defined in this schema
-
-### xdm:salesAccountOwnerID Type
 
 
 `string`

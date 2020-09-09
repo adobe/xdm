@@ -1,0 +1,93 @@
+{
+    "meta:license": [
+        "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "https://ns.adobe.com/experience/offer-management/offer-activity",
+    "meta:abstract": false,
+    "meta:extensible": true,
+    "type": "object",
+    "title": "Activity",
+    "description": "An offer activity is used to control the decisioning process. It specifies the filter applied to the total inventory to narrow down offers by topic/category, the placement to narrow down the inventory to those offers that technically fit into the reserved space for the offer and specifies a fall back option should the combined constraints disqualify all available personalization options (offers).",
+    "definitions": {
+        "offer-activity": {
+            "properties": {
+                "@id": {
+                    "type": "string",
+                    "format": "uri-reference",
+                    "title": "ID",
+                    "description": "The unique identifier of the offer activity. This @id must be unique across for objects that are not semantically the same, otherwise it is interpreted as referring to the same object. "
+                },
+                "xdm:name": {
+                    "type": "string",
+                    "title": "Name",
+                    "description": "Activity name. The name is displayed in various user interfaces."
+                },
+                "xdm:status": {
+                    "type": "string",
+                    "title": "Status",
+                    "description": "Activity Status",
+                    "enum": [
+                        "draft",
+                        "live",
+                        "complete",
+                        "archived"
+                    ],
+                    "meta:enum": {
+                        "draft": "Draft",
+                        "live": "Live",
+                        "complete": "Complete",
+                        "archived": "Archived"
+                    }
+                },
+                "xdm:startDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "title": "Start Date",
+                    "description": "Activity Start Date"
+                },
+                "xdm:endDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "title": "End Date",
+                    "description": "Activity End Date"
+                },
+                "xdm:placement": {
+                    "type": "string",
+                    "format": "uri",
+                    "title": "Offer Placement",
+                    "description": "The reference to an offer placement instance. Offer placements are used by offer activities to limit the offer selection to those offers that have a representation that complies with the offer placement restrictions. The value is the URI (@id) of the offer placement that is referenced. See schema https://ns.adobe.com/experience/offer-management/offer-placement"
+                },
+                "xdm:filter": {
+                    "type": "string",
+                    "format": "uri",
+                    "title": "Offer Filter",
+                    "description": "The reference to a filter that is applied to the inventory when a decisioning is made the context of this activity. The value is the URI (@id) of the offer filter that is referenced. See schema https://ns.adobe.com/experience/offer-management/offer-filter"
+                },
+                "xdm:fallback": {
+                    "type": "string",
+                    "format": "uri",
+                    "title": "Fallback Offer",
+                    "description": "The reference to a fallback offer that is used when decisioning in the context of this activity does not qualify any of the offers specified in the fallback offer. The value is the URI (@id) of the fallback offer that is referenced.  See schema https://ns.adobe.com/experience/offer-management/fallback-offer"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/offer-activity"
+        },
+        {
+            "required": [
+                "xdm:name",
+                "xdm:status",
+                "xdm:placement",
+                "xdm:filter",
+                "xdm:fallback"
+            ]
+        }
+    ]
+}

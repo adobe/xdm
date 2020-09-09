@@ -1,0 +1,116 @@
+{
+    "xdm:id": {
+        "title": "Message Identifier",
+        "type": "number",
+        "description": "Identifier of the message."
+    },
+    "xdm:profileSnapshot": {
+        "title": "Profile Snapshot",
+        "$ref": "https://ns.adobe.com/experience/campaign/profile-snapshot",
+        "description": "Profile Snapshot contains the recipient of the message. This property is primarily used to link the message to a Profile using the `IdentityMap` but it can also be used to freeze some properties of the profile at the time the message was sent."
+    },
+    "xdm:variant": {
+        "title": "Content Variant",
+        "type": "string",
+        "description": "A campaign activity can have multiple variants e.g. Multilingual (translated variants for the same content) or A/B testing (different content to test what works better) but a message delivered to a recipient always contains one of them.\n> IMPORTANT: In case of multilingual, the mirror page, the recipient can switch from one variant to another (ex: switch of the language)."
+    },
+    "xdm:seedMember": {
+        "title": "Seed Member",
+        "type": "boolean",
+        "default": false,
+        "description": "The recipient of this message is a member of a seed list for this campaign activity. Seed addresses are used to include recipients who do not match the defined target criteria. Seed members could be your marketing team or other stakeholders who are interested in tracking/measuring the quality of the campaign. SeedMembers get the actual message, at the same time with regular recipients, even when the seedMember does not qualify to be a regular recipient."
+    },
+    "xdm:quarantine": {
+        "title": "Quarantine",
+        "type": "boolean",
+        "default": false,
+        "description": "Address moved to quarantine. The quarantine is set to `true` when the message failed to deliver in a way that indicates that no future messages will be deliverable either to this address."
+    },
+    "xdm:proofMember": {
+        "title": "Proof Member",
+        "type": "boolean",
+        "description": "The recipient of this message is a member of the proof group for this campaign activity. The proof is a special message that lets you test a delivery before sending to the main target. Proof recipients are responsible for approving both the form and content of the message. It is a pre-delivery target.",
+        "default": false
+    },
+    "xdm:controlGroupMember": {
+        "title": "Control Group Member",
+        "type": "boolean",
+        "description": "The recipient of this message is a member of a control group for this campaign activity. A control group is a population which will not receive the delivery; it is used to track post-delivery behavior and campaign impact by making a comparison between the control group (or hold out group) with the behavior of target population, which has received the delivery.",
+        "default": false
+    },
+    "xdm:testMember": {
+        "title": "A/B Test Member",
+        "type": "boolean",
+        "description": "The recipient of this message is a member of a test group for this campaign activity. This is primarily used for identifying the initial population of an A/B Test. After sending different variants to the testMembers, the winner Variant is decided to be sent to the remaining population based on behavioral changes in testMembers.",
+        "default": false
+    },
+    "xdm:size": {
+        "title": "Size (Bytes)",
+        "type": "integer",
+        "description": "Size in bytes of the message.\n* For email, the `size` reflects the all MIME envelope of the message, including the encoded attachments if any.\n* For SMS, the `size` reflects the number of bytes necessary to deliver the message.\nIf that number is over 160 the message will be delivered over more than one SMS.",
+        "minimum": 0,
+        "maximum": 2147483647
+    },
+    "xdm:reason": {
+        "title": "Reason",
+        "type": "string",
+        "meta:enum": {
+            "undefined": "Not defined",
+            "unknown_user": "The address does not exist. There is no use sending deliveries to this address.",
+            "invalid_domain": "The domain of the email address is incorrect or no longer exists.",
+            "unreachable": "An error has occurred in the message delivery chain.These addresses can be removed from the quarantine list to make another attempt.",
+            "disabled": "The user uses a messaging service which is accessible from the web. When the Internet Access Provider (IAP) detects a lengthy period of inactivity, it can close the user's account. Deliveries to the user's address will then be impossible.",
+            "mailbox_full": "The recipient's mailbox contains too many messages. This address can be removed from the quarantine list to make another attempt.",
+            "not_connected": "The recipient's mobile phone is switched off or not connected to the network when the message is sent.",
+            "refused": "The address was rejected following the application of a security rule (e.g. by an anti-spam program)",
+            "error_ignored": "The address is whitelisted and the message ignored.",
+            "address_undefined": "No address is given for the recipient.",
+            "blacklisted": "The address was blacklisted at the time of sending.",
+            "quarantine": "The address was in quarantine at the time of sending.",
+            "duplicate": "The address of the recipient was already in this campaign activity.",
+            "typology_rule": "The recipient was excluded by a 'SQL' type campaign typology rule.",
+            "business_ranking": "The recipient was excluded by an 'arbitration' type campaign typology rule",
+            "cancelled": "Delivery cancelled",
+            "quality": "The quality rating for this address is too low",
+            "unchecked": "Unqualified address",
+            "offer_missing": "Not eligible for the offers",
+            "over_delivery_limit": "The campaign activity had more than allowed number of target profiles.",
+            "expired": "The campaign activity exceeded the time duration to complete.",
+            "too_long": "Text too long",
+            "untranslatable": "Character not supported by encoding",
+            "control_group": "Control address"
+        },
+        "description": "The reason why the message could/would not be delivered.",
+        "default": "undefined"
+    },
+    "xdm:reasonMessage": {
+        "title": "Reason Message",
+        "type": "string",
+        "description": "Reason of message delivery failure."
+    },
+    "xdm:outboundIP": {
+        "title": "IP Address",
+        "type": "string",
+        "oneOf": [
+            {
+                "format": "ipv4"
+            },
+            {
+                "format": "ipv6"
+            }
+        ],
+        "description": "Outbound IP address used to deliver the message."
+    },
+    "xdm:externalID": {
+        "title": "External ID",
+        "type": "string",
+        "description": "An ID generated by the parent activity invoking service to check later if the incoming experienceEvent was generated using this ID."
+    },
+    "xdm:segmentID": {
+        "title": "Segment ID",
+        "type": "string",
+        "description": "A code or ID assigned to the segment population generated by a segmentation workflow. This can identify the population as part of a result set based on a criteria."
+    },
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "https://ns.adobe.com/experience/campaign/message"
+}

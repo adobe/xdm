@@ -28,11 +28,6 @@
           "description": "Person unique identifier reference.",
           "type": "string"
         },
-        "xdm:externalID": {
-          "title": "External ID",
-          "description": "External unique identifier reference like sfdc id,dynamicsid etc to help identify and deduplicate if and when needed.",
-          "type": "string"
-        },
         "xdm:personRole": {
           "title": "Person Role",
           "description": "Role of the person/contact for this opportunity",
@@ -41,11 +36,6 @@
         "xdm:isPrimary": {
           "title": "Primary Flag",
           "description": "A flag to signify that this is the primary opportunity contact",
-          "type": "boolean"
-        },
-        "xdm:isDeleted": {
-          "title": "Deleted Flag",
-          "description": "A flag to signify that this opportunity is in deleted state.",
           "type": "boolean"
         }
       }

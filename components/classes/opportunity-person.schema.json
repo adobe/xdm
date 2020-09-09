@@ -15,7 +15,7 @@
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "description": "An XDM Business Opportunity Person Relation.",
   "definitions": {
-    "opportunity": {
+    "opportunity-person": {
       "properties": {
         "xdm:opportunityPersonID": {
           "title": "Opportunity Person ID",

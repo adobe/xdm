@@ -11,9 +11,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/opportunity"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/opportunity"],
   "description": "XDM Business opportunity components for one data source.",
   "definitions": {
     "opportunity-components": {

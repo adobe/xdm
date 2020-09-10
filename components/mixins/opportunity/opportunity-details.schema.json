@@ -12,15 +12,10 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/opportunity"],
-  "description": "XDM business opportunity details.",
+  "description": "This mixin is used to capture and maintain opportunity non mandatory attributes.",
   "definitions": {
     "opportunity-details": {
       "properties": {
-        "xdm:opportunityName": {
-          "title": "Opportunity Name",
-          "description": "Subject or descriptive name, such as the expected order or company name, for the opportunity.",
-          "type": "string"
-        },
         "xdm:accountID": {
           "title": "Account ID",
           "description": "Account unique identifier reference that this opportunity is linked to.",
@@ -34,21 +29,6 @@
         "xdm:campaignID": {
           "title": "Campaign ID",
           "description": "Campaign unique identifer reference.",
-          "type": "string"
-        },
-        "xdm:opportunityType": {
-          "title": "Opportunity Type",
-          "description": "Opportunity type such as Existing Business or New Business",
-          "type": "string"
-        },
-        "xdm:opportunityDescription": {
-          "title": "Opportunity Description",
-          "description": "Additional information to describe the opportunity, such as possible products to sell or past purchases from the customer.",
-          "type": "string"
-        },
-        "xdm:stage": {
-          "title": "Opportunity Stage",
-          "description": "Sales stage of this opportunity to aid the sales team in their efforts to win this opportunity.",
           "type": "string"
         },
         "xdm:fiscalYear": {

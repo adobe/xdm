@@ -37,9 +37,14 @@
           "description": "Opportunity type such as Existing Business or New Business",
           "type": "string"
         },
-        "xdm:stage": {
+        "xdm:opportunityStage": {
           "title": "Opportunity Stage",
           "description": "Sales stage of this opportunity to aid the sales team in their efforts to win this opportunity.",
+          "type": "string"
+        },
+        "xdm:accountID": {
+          "title": "Account ID",
+          "description": "Account unique identifier reference that this opportunity is linked to.",
           "type": "string"
         }
       }

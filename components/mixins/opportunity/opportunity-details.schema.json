@@ -16,11 +16,6 @@
   "definitions": {
     "opportunity-details": {
       "properties": {
-        "xdm:accountID": {
-          "title": "Account ID",
-          "description": "Account unique identifier reference that this opportunity is linked to.",
-          "type": "string"
-        },
         "xdm:opportunityOwnerID": {
           "title": "opportunity Owner Id",
           "description": "Assigned owner for this opportunity.",

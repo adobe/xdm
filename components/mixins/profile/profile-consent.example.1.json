@@ -51,7 +51,8 @@
         },
         "xdm:marketingPreferences": {
           "xdm:pushNotifications": {
-            "xdm:choice": "yes"
+            "xdm:choice": "yes",
+            "xdm:source": "OurApp"
           }
         }
       }
@@ -61,7 +62,8 @@
         "xdm:marketingPreferences": {
           "xdm:eMail": {
             "xdm:choice": "yes"
-          }
+          },
+          "xdm:source": "CJM"
         }
       },
       "john@google.com": {
@@ -69,7 +71,8 @@
           "xdm:eMail": {
            "xdm:choice": "no",
            "xdm:reason": "Too Frequent"
-          }
+          },
+          "xdm:source": "CJM"
         }
       }
     }

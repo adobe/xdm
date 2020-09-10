@@ -59,6 +59,11 @@
       "type": "string",
       "format": "date-time"
     },
+    "source": {
+      "title": "Source of Consent",
+      "description": "Through which feature/product/method did the user provide this consent value",
+      "type": "string"
+    },
     "consentOption": {
       "type": "object",
       "properties": {
@@ -70,6 +75,9 @@
         },
         "xdm:timestamp": {
           "$ref": "#/definitions/timestamp"
+        },
+        "xdm:source": {
+          "$ref": "#/definitions/source"
         }
       }
     },
@@ -84,6 +92,9 @@
         },
         "xdm:timestamp": {
           "$ref": "#/definitions/timestamp"
+        },
+        "xdm:source": {
+          "$ref": "#/definitions/source"
         },
         "xdm:reason": {
           "title": "Opt out reason",
@@ -314,18 +325,23 @@
             }
           }
         },
-        "xdm:timestamp": {
-          "title": "Consent Preferences timestamp",
-          "description": "Timestamp of the complete set of user consent preferences",
-          "type": "string",
-          "format": "date-time"
-        },
         "xdm:version": {
           "title": "Preferences Version",
           "description": "Version of the Privacy Preferences Standard",
           "type": "string",
           "pattern": "^[0-9]{1,2}\\.[0-9]{1,2}\\.[0-9]{1,4}$",
           "default": "1.0.0"
+        },
+        "xdm:timestamp": {
+          "title": "Consent Preferences timestamp",
+          "description": "Timestamp of the complete set of user consent preferences",
+          "type": "string",
+          "format": "date-time"
+        },
+        "xdm:source": {
+          "title": "Consent Preferences source",
+          "description": "Source for the complete set of user consent preferences",
+          "$ref": "#/definitions/source"
         },
         "xdm:userCountry": {
           "title": "User Country",

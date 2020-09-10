@@ -1,0 +1,39 @@
+{
+    "meta:license": [
+        "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "https://ns.adobe.com/experience/offer-management/capping-constraint",
+    "meta:abstract": false,
+    "meta:extensible": true,
+    "type": "object",
+    "title": "Capping Constraint",
+    "description": "A capping constraint is a way of restricting how many times an offer is proposed. These restrictions can be applied in two ways.\n\nOne of the ways is by setting a cap globally. This means that the offer won't be proposed more than the set cap. This is also referred to as volume-based capping.\n\nAnother way is by setting a cap per profile. An offer is always proposed to some profile. A marketer may want to limit the number of times the same profile sees the offer. This is also referred to as user-fatigue capping.\n\nA marketer can set both these caps on an offer at the same time.\n",
+    "definitions": {
+        "capping-constraint": {
+            "type": "object",
+            "properties": {
+                "xdm:globalCap": {
+                    "type": "integer",
+                    "title": "Global Cap",
+                    "description": "Global cap is a constraint on how many times an offer can be proposed in totality.",
+                    "minimum": 1
+                },
+                "xdm:profileCap": {
+                    "type": "integer",
+                    "title": "Profile Cap",
+                    "description": "Profile cap is a constraint on how many times an offer can be proposed to a certain profile.",
+                    "minimum": 1
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/capping-constraint"
+        }
+    ]
+}

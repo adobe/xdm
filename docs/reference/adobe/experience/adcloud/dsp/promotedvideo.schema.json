@@ -1,0 +1,78 @@
+{
+    "meta:license": [
+        "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/adcloud/dsp/promotedvideo",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "DSP Advertising Promoted Video",
+    "type": "object",
+    "meta:extensible": false,
+    "meta:abstract": false,
+    "meta:auditable": true,
+    "meta:extends": [
+        "https://ns.adobe.com/xdm/data/record"
+    ],
+    "description": "Adobe Advertising Cloud DSP Promoted Video Details.",
+    "definitions": {
+        "dsp-promotedvideo": {
+            "properties": {
+                "dsp:promotedVideoKey": {
+                    "title": "promotedVideoKey",
+                    "type": "string",
+                    "description": "External unique identifier for a promoted video the ad is displaying."
+                },
+                "dsp:campaignKey": {
+                    "title": "campaignKey",
+                    "type": "string",
+                    "description": "Identifier for the campaign that belongs to the displayed video."
+                },
+                "dsp:promotedVideoName": {
+                    "title": "promotedVideoName",
+                    "type": "string",
+                    "description": "A name that uniquely identifies the promoted video within the campaign."
+                },
+                "dsp:promoteVideoDuration": {
+                    "title": "promoteVideoDuration",
+                    "type": "integer",
+                    "description": "The duration of the video."
+                },
+                "dsp:promotedVideoTags": {
+                    "title": "Promoted Video Tags",
+                    "type": "string",
+                    "description": "Labels describing ad categories for this video."
+                },
+                "dsp:promotedVideoDescription": {
+                    "title": "Promoted Video Description",
+                    "type": "string",
+                    "description": "Detailed description for this video."
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/data/record"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/auditable"
+        },
+        {
+            "$ref": "#/definitions/dsp-promotedvideo"
+        }
+    ],
+    "meta:status": "stable",
+    "examples": [
+        {
+            "@id": "14",
+            "dsp:promotedVideoKey": "pJw0SLRbgeIXbjsKEJsU",
+            "dsp:campaignKey": "PIO446D9mff9OgS9YBY2",
+            "dsp:promotedVideoName": "Karate Kid Long Form",
+            "dsp:promoteVideoDuration": 30,
+            "dsp:promotedVideoTags": "karate kid, new karate kid, karate kid soundtrack, jackie chan, jaden smith, karate kid trailer, karate kid movie",
+            "dsp:promotedVideoDescription": "Visit http://www.karatekidmovie.com.au/ THE KARATE KID, starring Jaden Smith and Jackie Chan, is a story about a bullied boy who learns self-defense and much more under the tutelage of an unlikely kung-fu master - On July only at the movies!"
+        }
+    ]
+}

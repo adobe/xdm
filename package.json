@@ -11,7 +11,7 @@
   },
   "scripts": {
     "clean": "rm -rf docs/reference",
-    "markdown": "shx mkdir -p docs/reference && jsonschema2md -o docs/reference -d components --link-abstract abstract.md --link-extensible extensions.md --link-status status.md --link-id id.md --link-custom extensions.md --link-additional extensions.md -v \"06\"",
+    "markdown": "./bin/pre-doc-gen.sh && jsonschema2md -o docs/reference -d docsource --link-abstract abstract.md --link-extensible extensions.md --link-status status.md --link-id id.md --link-custom extensions.md --link-additional extensions.md -v \"06\" || : && rm -rf docsource",
     "test": "mocha",
     "lint": "prettier --write *.json RELEASING.md CHANGELOG.md CONTRIBUTING.md README.md docs/*.md schemas/*/**/*.md schemas/*/*.json schemas/*/**/*.json components/*/*.json components/*/**/*.json extensions/*/**/*.json extensions/*/*/**/*.json && git diff --exit-code",
     "lint-quick": "pretty-quick",

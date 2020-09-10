@@ -65,7 +65,7 @@ Describes user communication preferences by channel. For each channel individual
 | [https://ns.adobe.com/xdm/channels/wechat](#httpsnsadobecomxdmchannelswechat) | `enum` | Optional | `"not_provided"` | OptInOut (this schema) |
 | [https://ns.adobe.com/xdm/channels/wns](#httpsnsadobecomxdmchannelswns) | `enum` | Optional | `"not_provided"` | OptInOut (this schema) |
 | [xdm:globalOptout](#xdmglobaloptout) | `boolean` | Optional | `false` | OptInOut (this schema) |
-| [xdm:optOutDetails](#xdmoptoutdetails) | complex | Optional |  | OptInOut (this schema) |
+| [xdm:optOutDetails](#xdmoptoutdetails) | `object` | Optional |  | OptInOut (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## https://ns.adobe.com/xdm/channels/adm
@@ -597,40 +597,102 @@ Do not contact this profile on any outbound channel.
 
 `xdm:optOutDetails`
 * is optional
-* type: complex
+* type: `object`
 * defined in this schema
 
 ### xdm:optOutDetails Type
 
-Unknown type ``.
 
-```json
-{
-  "properties": {
-    "xdm:email": {
-      "title": "Additional Details for Email Opt Out",
-      "description": "Additional Details for Email Opt Out like reason, date.",
-      "$ref": "https://ns.adobe.com/xdm/common/optinout-additional-details"
-    },
-    "xdm:phone": {
-      "title": "Additional Details for Phone Opt Out",
-      "description": "Additional details for phone opt out like reason, date.",
-      "$ref": "https://ns.adobe.com/xdm/common/optinout-additional-details"
-    },
-    "xdm:fax": {
-      "title": "Additional Details for Fax Opt Out",
-      "description": "Additional details for fax opt out like reason, date.",
-      "$ref": "https://ns.adobe.com/xdm/common/optinout-additional-details"
-    },
-    "xdm:direct-mail": {
-      "title": "Additional Details for Direct-Mail Opt Out",
-      "description": "Additional details for direct-mail opt out like reason, date.",
-      "$ref": "https://ns.adobe.com/xdm/common/optinout-additional-details"
-    }
-  },
-  "simpletype": "complex"
-}
-```
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+| `xdm:direct-mail`|  | Optional |
+| `xdm:email`|  | Optional |
+| `xdm:fax`|  | Optional |
+| `xdm:phone`|  | Optional |
+
+
+
+#### xdm:direct-mail
+##### Additional Details for Direct-Mail Opt Out
+
+Additional details for direct-mail opt out like reason, date.
+
+`xdm:direct-mail`
+* is optional
+* type: reference
+
+##### xdm:direct-mail Type
+
+
+* []() – `https://ns.adobe.com/xdm/common/optinout-additional-details`
+
+
+
+
+
+
+
+#### xdm:email
+##### Additional Details for Email Opt Out
+
+Additional Details for Email Opt Out like reason, date.
+
+`xdm:email`
+* is optional
+* type: reference
+
+##### xdm:email Type
+
+
+* []() – `https://ns.adobe.com/xdm/common/optinout-additional-details`
+
+
+
+
+
+
+
+#### xdm:fax
+##### Additional Details for Fax Opt Out
+
+Additional details for fax opt out like reason, date.
+
+`xdm:fax`
+* is optional
+* type: reference
+
+##### xdm:fax Type
+
+
+* []() – `https://ns.adobe.com/xdm/common/optinout-additional-details`
+
+
+
+
+
+
+
+#### xdm:phone
+##### Additional Details for Phone Opt Out
+
+Additional details for phone opt out like reason, date.
+
+`xdm:phone`
+* is optional
+* type: reference
+
+##### xdm:phone Type
+
+
+* []() – `https://ns.adobe.com/xdm/common/optinout-additional-details`
+
+
+
+
+
 
 
 

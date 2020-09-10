@@ -1,0 +1,46 @@
+{
+    "meta:license": [
+        "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/experience/decisioning/proposition-details",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Decision Proposition Details",
+    "type": "object",
+    "meta:abstract": true,
+    "meta:extensible": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/experienceevent",
+        "https://ns.adobe.com/experience/decisioning/decisionevent"
+    ],
+    "description": "Decision proposition is used to capture the results of a decisioning process.",
+    "definitions": {
+        "proposition-details-mixin": {
+            "properties": {
+                "https://ns.adobe.com/experience/decisioning/propositionDetails": {
+                    "title": "Proposition Details",
+                    "type": "array",
+                    "items": {
+                        "$ref": "https://ns.adobe.com/experience/decisioning/proposition-detail"
+                    },
+                    "description": "Details about the results of the decision. An array providing the output of a single decision event, one proposition per activity parameter in the request."
+                },
+                "https://ns.adobe.com/experience/decisioning/propositionContentKey": {
+                    "title": "Proposition Content Key",
+                    "type": "string",
+                    "description": "Digest or unique hash key (generated automatically) for the proposition content. Recipients of propositions with the same value will receive the same content selections in the targeted placements. Moreover, propositions with the same value to the same user mean that the content of the propositions has not changed. Propositions with different digests or hash values indicate that the decision selections are different. Note that adding a placement to the decision always change digest value."
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/proposition-details-mixin"
+        }
+    ]
+}

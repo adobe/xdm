@@ -28,7 +28,7 @@
         },
         "xdm:personScore": {
           "title": "Person Score",
-          "description": "Person score.",
+          "description": "A Score generated for a person by the CRM system.",
           "type": "number"
         },
         "xdm:personGroupID": {
@@ -53,22 +53,22 @@
         },
         "xdm:isBlocked": {
           "title": "Blocked Indicator",
-          "description": "Blocked Indicator.",
+          "description": "Indicator if the person is blocked or not.",
           "type": "boolean"
         },
         "xdm:blockedCause": {
           "title": "Blocked Cause",
-          "description": "Blocked cause.",
+          "description": "Reason why the person is blocked.",
           "type": "string"
         },
         "xdm:isMarketingSuspended": {
-          "title": "Marketing Suspended",
-          "description": "Marketing suspended.",
+          "title": "Marketing Suspended Indicator",
+          "description": "Marketing suspended flag.",
           "type": "boolean"
         },
         "xdm:marketingSuspendedCause": {
           "title": "Marketing Suspended Cause",
-          "description": "Marketing suspended cause.",
+          "description": "Reason why the person is suspended for any marketing purposes.",
           "type": "string"
         },
         "xdm:isConverted": {
@@ -175,7 +175,7 @@
         },
         "xdm:personSource": {
           "title": "Person Source",
-          "description": "Person source.",
+          "description": "Source from where the information regarding the person was recieved.",
           "type": "string"
         },
         "xdm:personOptInOut": {

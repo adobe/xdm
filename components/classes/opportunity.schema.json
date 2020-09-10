@@ -13,7 +13,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
-  "description": "An XDM Business Opportunity.",
+  "description": "This class is used to capture minimum set of properties that define business opportunity.",
   "definitions": {
     "opportunity": {
       "properties": {

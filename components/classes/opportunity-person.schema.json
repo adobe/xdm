@@ -13,14 +13,34 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
-  "description": "An XDM Business Opportunity Person Relation.",
+  "description": "This class is used to capture XDM Business Opportunity Person Relationship attributes.",
   "definitions": {
     "opportunity-person": {
       "properties": {
         "xdm:opportunityPersonID": {
           "title": "Opportunity Person ID",
-          "description": "Opportunity person relation unique identifer",
+          "description": "Opportunity person relation unique identifer.",
           "type": "string"
+        },
+        "xdm:opportunityID": {
+          "title": "Opportunity ID",
+          "description": "Opportunity unique identifier reference.",
+          "type": "string"
+        },
+        "xdm:personID": {
+          "title": "Person ID",
+          "description": "Person unique identifier reference.",
+          "type": "string"
+        },
+        "xdm:personRole": {
+          "title": "Person Role",
+          "description": "Role of the person/contact for this opportunity.",
+          "type": "string"
+        },
+        "xdm:isPrimary": {
+          "title": "Primary Flag",
+          "description": "A flag to signify that this is the primary opportunity contact",
+          "type": "boolean"
         }
       }
     }

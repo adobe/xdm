@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/opportunity"],
-  "description": "This mixin is used to capture and maintain opportunity non mandatory attributes.",
+  "description": "This mixin is used to capture and maintain additional opportunity attributes that are used by industry crm systems.",
   "definitions": {
     "opportunity-details": {
       "properties": {
@@ -39,7 +39,7 @@
         },
         "xdm:fiscalQuarter": {
           "title": "Fiscal Quarter",
-          "description": "The fiscal quarter this opportunity is targeted..",
+          "description": "The fiscal quarter this opportunity is targeted.",
           "type": "string",
           "pattern": "^([1-4]{1})$|^([Qq][1-4]{1})$"
         },

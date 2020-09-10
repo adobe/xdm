@@ -1,0 +1,182 @@
+{
+    "meta:license": [
+        "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/common/notifications/ingestion",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Customer Data Ingestion Notifications Event",
+    "type": "object",
+    "meta:extensible": false,
+    "meta:abstract": false,
+    "meta:extends": [
+        "https://ns.adobe.com/xdm/data/record"
+    ],
+    "description": "Customer notification events for data ingestion processes.",
+    "definitions": {
+        "ingestion-notification": {
+            "properties": {
+                "xdm:eventType": {
+                    "title": "Event Type",
+                    "type": "string",
+                    "description": "Event type of customer data ingestion notification.",
+                    "enum": [
+                        "ing_load_success",
+                        "ing_load_failure",
+                        "ps_load_success",
+                        "ps_load_failure",
+                        "ig_load_success",
+                        "ig_load_failure"
+                    ],
+                    "meta:enum": {
+                        "ing_load_success": "Ing Load Success",
+                        "ing_load_failure": "Ing Load Failure",
+                        "ps_load_success": "Ps Load Success",
+                        "ps_load_failure": "Ps Load Lailure",
+                        "ig_load_success": "Ig Load Success",
+                        "ig_load_failure": "Ig Load Failure"
+                    }
+                },
+                "xdm:status": {
+                    "title": "Ingestion Status",
+                    "type": "string",
+                    "description": "The current status of this ingestion process.",
+                    "enum": [
+                        "success",
+                        "failure"
+                    ],
+                    "meta:enum": {
+                        "success": "Sucess Status",
+                        "failure": "Failure Status"
+                    }
+                },
+                "xdm:ingestionId": {
+                    "title": "Ingestion ID",
+                    "type": "string",
+                    "description": "System generates Unique Identifier for a data ingestion instance."
+                },
+                "xdm:parentIngestionId": {
+                    "title": "Parent Ingestion ID",
+                    "type": "string",
+                    "description": "In a flow where multiple insgestion stage, each stage employs its own ingestion identifier, this value represents the parent stage that resulted in the initiation of this ingestion. This can be used to correlate ingestion processes over multiple stages."
+                },
+                "xdm:customerIngestionId": {
+                    "title": "Customer Batch Identifier",
+                    "type": "string",
+                    "pattern": "^[0-9A-Za-z\\.\\-\\_/@]+$",
+                    "description": "Customers can specify an externally generated identifier for this ingestion."
+                },
+                "xdm:datasetId": {
+                    "title": "Dataset ID",
+                    "type": "string",
+                    "description": "Dataset id of data ingestion."
+                },
+                "xdm:sandboxName": {
+                    "title": "Sandbox Name",
+                    "type": "string",
+                    "description": "Name of the sandbox where data is ingested."
+                },
+                "xdm:inputFormat": {
+                    "title": "Input File Format",
+                    "description": "Metadata describing the INGEST format of the data being loaded (e.g. Parquet, CSV, JSON).",
+                    "enum": [
+                        "csv",
+                        "parquet",
+                        "json"
+                    ],
+                    "meta:enum": {
+                        "csv": "CSV format of the file",
+                        "parquet": "Parquet format of the file",
+                        "json": "JSON format of the file"
+                    }
+                },
+                "xdm:imsOrg": {
+                    "description": "The owning IMS organization identifier.",
+                    "type": "string",
+                    "pattern": "^[0-9A-Za-z]*@[Aa]dobe[Oo]rg$"
+                },
+                "xdm:startTime": {
+                    "type": "integer",
+                    "description": "The unix timestamp (in milliseconds) when the batch processing action was started."
+                },
+                "xdm:completionTime": {
+                    "type": "integer",
+                    "description": "The unix timestamp (in milliseconds) when the batch processing action was completed. Completed - Started should yield the total processing time.",
+                    "maximum": 14500000000000
+                },
+                "xdm:succesfulRecords": {
+                    "$ref": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "Number of records successfully ingested."
+                },
+                "xdm:failedRecords": {
+                    "$ref": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "Number of records failed to ingest."
+                },
+                "xdm:errors": {
+                    "type": "array",
+                    "description": "A list of problems encountered during this ingestion process.",
+                    "meta:status": "deprecated",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "xdm:code": {
+                                "type": "string",
+                                "description": "An enumerated code that details the type of error encountered. This value should be understandable by the reader and writer and eventually allow for localized error message (and solution) descriptions."
+                            },
+                            "xdm:rows": {
+                                "type": "array",
+                                "description": "Indicates which rows exhibit this error. Could be a single number, or a hyphen-delimited range.",
+                                "items": {
+                                    "type": "string",
+                                    "description": "Row or range of rows this error was encountered on."
+                                }
+                            },
+                            "xdm:description": {
+                                "type": "string",
+                                "description": "A human-readable description of the error. This message may be transmitted to clients, but isn't meant for customer-facing UIS."
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/data/record"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/ingestion-notification"
+        }
+    ],
+    "meta:status": "stable",
+    "examples": [
+        {
+            "xdm:eventType": "ig_load_success",
+            "xdm:status": "success",
+            "xdm:ingestionId": "batch1234",
+            "xdm:customerIngestionId": "1234@adobe",
+            "xdm:datasetId": "1234",
+            "xdm:sandboxName": "test",
+            "xdm:inputFormat": "csv",
+            "xdm:imsOrg": "D13A1E7053E46A220A4C86E1@AdobeOrg",
+            "xdm:startTime": 123456,
+            "xdm:completionTime": 12345678,
+            "xdm:errors": [
+                {
+                    "xdm:code": "err1234",
+                    "xdm:rows": [
+                        "1",
+                        "2"
+                    ],
+                    "xdm:description": "error"
+                }
+            ]
+        }
+    ]
+}

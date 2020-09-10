@@ -1,0 +1,14 @@
+{
+    "xdm:eventID": {
+        "title": "Event ID",
+        "type": "string",
+        "description": "ID that identifies the event sent by the data source. This is used by Campaign orchestration to identify the event without inspecting its payload to determine which action should be triggered when the event is received. The value is automatically generated in Campaign at event creation time, it is globally unique across organizations."
+    },
+    "xdm:orchestrationDetails": {
+        "title": "Orchestration Details",
+        "description": "Set of attributes that are associated with every orchestration.",
+        "$ref": "https://ns.adobe.com/experience/campaign/orchestration/orchestrationdetails"
+    },
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "https://ns.adobe.com/experience/campaign/orchestration"
+}

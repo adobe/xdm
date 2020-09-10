@@ -9,7 +9,7 @@ An XDM Business Account.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/account/account-crm.schema.json](mixins/account/account-crm.schema.json) |
+| Can be instantiated | Yes | Deprecated | No | Forbidden | Permitted | [mixins/account/account-crm.schema.json](mixins/account/account-crm.schema.json) |
 ## Schema Hierarchy
 
 * XDM Business Account `https://ns.adobe.com/xdm/context/account-crm`

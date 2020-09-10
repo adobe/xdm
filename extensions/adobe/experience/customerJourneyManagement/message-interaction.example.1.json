@@ -2,5 +2,9 @@
   "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType": "click",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/urlID": "123",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/messageInteraction/label": "Click to check new offer",
-  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/messageInteraction/category": "Click"
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/messageInteraction/trackingType": "subscription",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/tags": [
+    "offer",
+    "gold customer"
+  ]
 }

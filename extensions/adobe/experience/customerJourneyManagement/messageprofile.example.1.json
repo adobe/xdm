@@ -1,7 +1,8 @@
 {
-  "@id": "4218b775-bef3-46b2-aee2-7caae052cf94",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID": "4218b775-bef3-46b2-aee2-7caae052cf94",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel": {
     "@id": "https://ns.adobe.com/xdm/channels/email"
   },
-  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant": "A"
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant": "A",
+  "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address": "user@domain.com"
 }

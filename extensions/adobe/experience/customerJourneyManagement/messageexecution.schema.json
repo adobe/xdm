@@ -17,7 +17,7 @@
   "definitions": {
     "messageExecution": {
       "properties": {
-        "@id": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageExecutionID": {
           "title": "MessageExecution ID",
           "type": "string",
           "description": "The CJM activity originating this message."
@@ -40,7 +40,9 @@
       }
     }
   },
-  "required": ["@id"],
+  "required": [
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageExecutionID"
+  ],
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"

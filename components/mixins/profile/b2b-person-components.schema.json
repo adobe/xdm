@@ -50,6 +50,11 @@
                 "title": "Source Converted Contact ID",
                 "description": "Source converted contact ID.",
                 "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+              },
+              "xdm:personSegmentTraits": {
+                "title": "Person Segmentation Attributes",
+                "description": "These attributes are required to build predicates for person segmentation.",
+                "$ref": "https://ns.adobe.com/xdm/mixins/b2b-person-details#/definitions/b2b-person-segment-traits"
               }
             }
           }
@@ -63,9 +68,6 @@
     },
     {
       "$ref": "#/definitions/b2b-person-components"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/mixins/b2b-person-details#/definitions/b2b-person-segment-traits"
     }
   ],
   "meta:status": "experimental"

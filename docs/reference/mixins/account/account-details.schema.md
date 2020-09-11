@@ -26,7 +26,6 @@ XDM business account details.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:accontPhone](#xdmaccontphone) | Phone number | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccontphone) |
 | [xdm:accountBillingAddress](#xdmaccountbillingaddress) | Postal address | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountbillingaddress) |
 | [xdm:accountCurrencyCode](#xdmaccountcurrencycode) | `string` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountcurrencycode) |
 | [xdm:accountDescription](#xdmaccountdescription) | `string` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountdescription) |
@@ -37,7 +36,8 @@ XDM business account details.
 | [xdm:accountOwnerID](#xdmaccountownerid) | `string` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountownerid) |
 | [xdm:accountOwnership](#xdmaccountownership) | `string` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountownership) |
 | [xdm:accountParentID](#xdmaccountparentid) | `string` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountparentid) |
-| [xdm:accountPhysicalAdress](#xdmaccountphysicaladress) | Postal address | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountphysicaladress) |
+| [xdm:accountPhone](#xdmaccountphone) | Phone number | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountphone) |
+| [xdm:accountPhysicalAddress](#xdmaccountphysicaladdress) | Postal address | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountphysicaladdress) |
 | [xdm:accountScore](#xdmaccountscore) | `number` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountscore) |
 | [xdm:accountShippingAddress](#xdmaccountshippingaddress) | Postal address | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountshippingaddress) |
 | [xdm:accountSite](#xdmaccountsite) | `string` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountsite) |
@@ -48,27 +48,7 @@ XDM business account details.
 | [xdm:externalID](#xdmexternalid) | `string` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmexternalid) |
 | [xdm:isDeleted](#xdmisdeleted) | `boolean` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmisdeleted) |
 | [xdm:partnerAccountID](#xdmpartneraccountid) | `string` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmpartneraccountid) |
-| [xdm:salesAccountOwnerID](#xdmsalesaccountownerid) | `string` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmsalesaccountownerid) |
 | `*` | any | Additional | this schema *allows* additional properties |
-
-## xdm:accontPhone
-### Account Phone Number
-
-Phone number for the account.
-
-`xdm:accontPhone`
-* is optional
-* type: Phone number
-* defined in [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccontphone)
-
-### xdm:accontPhone Type
-
-
-* [Phone number](../../datatypes/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
-
-
-
-
 
 ## xdm:accountBillingAddress
 ### Account Billing Address
@@ -282,17 +262,36 @@ Parent company for companies that are subsidiaries of a larger company or organi
 
 
 
-## xdm:accountPhysicalAdress
+## xdm:accountPhone
+### Account Phone Number
+
+Phone number for the account.
+
+`xdm:accountPhone`
+* is optional
+* type: Phone number
+* defined in [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountphone)
+
+### xdm:accountPhone Type
+
+
+* [Phone number](../../datatypes/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
+
+
+
+
+
+## xdm:accountPhysicalAddress
 ### Account Physical Address
 
 Actual physical address of the account. Could be the HQ address or any preffered business address for communication.
 
-`xdm:accountPhysicalAdress`
+`xdm:accountPhysicalAddress`
 * is optional
 * type: Postal address
-* defined in [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountphysicaladress)
+* defined in [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountphysicaladdress)
 
-### xdm:accountPhysicalAdress Type
+### xdm:accountPhysicalAddress Type
 
 
 * [Postal address](../../datatypes/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
@@ -486,26 +485,6 @@ Partner accounts are accounts that a channel manager uses to manage partner orga
 * defined in [B2B Account](../../datatypes/b2b-account.schema.md#xdmpartneraccountid)
 
 ### xdm:partnerAccountID Type
-
-
-`string`
-
-
-
-
-
-
-## xdm:salesAccountOwnerID
-### Sales Account Owner Id
-
-Sales account owner ID.
-
-`xdm:salesAccountOwnerID`
-* is optional
-* type: `string`
-* defined in [B2B Account](../../datatypes/b2b-account.schema.md#xdmsalesaccountownerid)
-
-### xdm:salesAccountOwnerID Type
 
 
 `string`

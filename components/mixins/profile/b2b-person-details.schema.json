@@ -135,12 +135,6 @@
           "description": "Opportunity Id if the lead was successfully converted.",
           "type": "string"
         },
-        "xdm:lastTransferDate": {
-          "title": "Last Transfer Date",
-          "description": "Last transfer date.",
-          "type": "string",
-          "format": "date-time"
-        },
         "xdm:personSource": {
           "title": "Person Source",
           "description": "Source from where the information regarding the person was received.",

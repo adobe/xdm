@@ -1,0 +1,130 @@
+{
+    "meta:license": [
+        "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/adcloud/searchads/account",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Search Advertising Account",
+    "type": "object",
+    "meta:extensible": false,
+    "meta:abstract": false,
+    "meta:auditable": true,
+    "meta:extends": [
+        "https://ns.adobe.com/xdm/data/record"
+    ],
+    "description": "Search Advertising Account defines Customer Configuration on Search Advertising Platform.",
+    "definitions": {
+        "searchads-account": {
+            "properties": {
+                "searchads:accountId": {
+                    "title": "Account Identifier",
+                    "type": "string",
+                    "description": "Identifier that defines Customer/Client ID setup on the Search Advertising Platform."
+                },
+                "searchads:accountName": {
+                    "title": "Account Name",
+                    "type": "string",
+                    "description": "Name of the Account."
+                },
+                "searchads:currencyCode": {
+                    "title": "Currency Code",
+                    "type": "string",
+                    "examples": [
+                        "USD",
+                        "EUR",
+                        "JPY"
+                    ],
+                    "pattern": "^[A-Z]{3}$",
+                    "description": "Currency in which this account operates."
+                },
+                "searchads:accountStatus": {
+                    "title": "Account Status",
+                    "type": "string",
+                    "description": "Managed Flag indicates whether account is enabled or disabled on search networks.",
+                    "enum": [
+                        "Enabled",
+                        "Disabled"
+                    ],
+                    "meta:enum": {
+                        "Enabled": "Enabled",
+                        "Disabled": "Disabled"
+                    }
+                },
+                "searchads:budget": {
+                    "title": "Budget",
+                    "type": "number",
+                    "description": "Budget Allocated to the Account acts only as a spend cap across all your campaigns."
+                },
+                "searchads:budgetType": {
+                    "title": "Budget Type",
+                    "type": "string",
+                    "description": "Budget Type",
+                    "enum": [
+                        "Daily",
+                        "Monthly",
+                        "Lifetime",
+                        "Daily Spend Until Depleted",
+                        "Day of Week"
+                    ],
+                    "meta:enum": {
+                        "Daily": "Daily",
+                        "Monthly": "Monthly",
+                        "Lifetime": "Lifetime",
+                        "Daily Spend Until Depleted": "Daily spend until depleted",
+                        "Day of Week": "Day of Week"
+                    }
+                },
+                "searchads:searchEngineId": {
+                    "title": "Search Engine Identifier",
+                    "type": "integer",
+                    "description": "The applicatio-specified identifier used to identify the Search Advertising Platform Name."
+                },
+                "searchads:createDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "examples": [
+                        "2004-10-23T12:00:00-06:00"
+                    ],
+                    "description": "The date and time when the account was created. An example form is \"2004-10-23T12:00:00-06:00\"."
+                },
+                "searchads:modifyDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "examples": [
+                        "2004-10-23T12:00:00-06:00"
+                    ],
+                    "description": "The date and time when the account was last modified. An example form is \"2004-10-23T12:00:00-06:00\"."
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/data/record"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/auditable"
+        },
+        {
+            "$ref": "#/definitions/searchads-account"
+        }
+    ],
+    "meta:status": "stable",
+    "examples": [
+        {
+            "@id": "100001061",
+            "searchads:accountId": "10001234",
+            "searchads:accountName": "My First Account",
+            "searchads:currencyCode": "USD",
+            "searchads:accountStatus": "Enabled",
+            "searchads:budget": 123.45,
+            "searchads:budgetType": "Monthly",
+            "searchads:searchEngineId": 3,
+            "repo:createDate": "2019-04-26T14:00:00+00:00",
+            "repo:modifyDate": "2019-04-26T14:00:00+00:00"
+        }
+    ]
+}

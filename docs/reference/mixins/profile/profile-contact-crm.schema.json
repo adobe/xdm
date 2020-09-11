@@ -62,7 +62,7 @@
             "$ref": "#/definitions/profile-contact-crm"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "deprecated",
     "examples": [
         {
             "xdm:contact": {

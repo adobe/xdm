@@ -52,5 +52,5 @@
     }
   ],
   "required": ["xdm:ID", "xdm:accountID"],
-  "meta:status": "experimental"
+  "meta:status": "deprecated"
 }

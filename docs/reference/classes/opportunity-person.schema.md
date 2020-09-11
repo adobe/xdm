@@ -1,46 +1,45 @@
 
-# XDM Business Opportunity Schema
+# XDM Business Opportunity Person Relation Schema
 
 ```
-https://ns.adobe.com/xdm/context/opportunity
+https://ns.adobe.com/xdm/classes/opportunity-person
 ```
 
-This class is used to capture minimum set of properties that define business opportunity.
+This class is used to capture XDM Business Opportunity Person Relationship attributes.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [classes/opportunity.schema.json](classes/opportunity.schema.json) |
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [classes/opportunity-person.schema.json](classes/opportunity-person.schema.json) |
 ## Schema Hierarchy
 
-* XDM Business Opportunity `https://ns.adobe.com/xdm/context/opportunity`
+* XDM Business Opportunity Person Relation `https://ns.adobe.com/xdm/classes/opportunity-person`
   * [Extensibility base schema](../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Record Schema](../behaviors/record.schema.md) `https://ns.adobe.com/xdm/data/record`
   * [External Source System Audit Details Mixin](../mixins/shared/external-source-system-audit-details.schema.md) `https://ns.adobe.com/xdm/common/external-source-system-audit-details`
 
 
-## XDM Business Opportunity Example
+## XDM Business Opportunity Person Relation Example
 ```json
 {
-  "xdm:opportunityID": "12345",
-  "xdm:opportunityName": "Best Buy AEP",
-  "xdm:opportunityDescription": "This opportunity is for Best buy customer to buy AEP product",
-  "xdm:opportunityType": "business",
-  "xdm:stage": "initial"
+  "xdm:opportunityPersonID": "123456",
+  "xdm:opportunityID": "jkghdiuw68o",
+  "xdm:personID": "6897ihkhf",
+  "xdm:personRole": "Sales",
+  "xdm:isPrimary": true
 }
 ```
 
-# XDM Business Opportunity Properties
+# XDM Business Opportunity Person Relation Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Record Schema](../behaviors/record.schema.md#id) |
-| [xdm:accountID](#xdmaccountid) | `string` | Optional | XDM Business Opportunity (this schema) |
 | [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details Mixin](../mixins/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
-| [xdm:opportunityDescription](#xdmopportunitydescription) | `string` | Optional | XDM Business Opportunity (this schema) |
-| [xdm:opportunityID](#xdmopportunityid) | `string` | **Required** | XDM Business Opportunity (this schema) |
-| [xdm:opportunityName](#xdmopportunityname) | `string` | Optional | XDM Business Opportunity (this schema) |
-| [xdm:opportunityStage](#xdmopportunitystage) | `string` | Optional | XDM Business Opportunity (this schema) |
-| [xdm:opportunityType](#xdmopportunitytype) | `string` | Optional | XDM Business Opportunity (this schema) |
+| [xdm:isPrimary](#xdmisprimary) | `boolean` | Optional | XDM Business Opportunity Person Relation (this schema) |
+| [xdm:opportunityID](#xdmopportunityid) | `string` | Optional | XDM Business Opportunity Person Relation (this schema) |
+| [xdm:opportunityPersonID](#xdmopportunitypersonid) | `string` | **Required** | XDM Business Opportunity Person Relation (this schema) |
+| [xdm:personID](#xdmpersonid) | `string` | Optional | XDM Business Opportunity Person Relation (this schema) |
+| [xdm:personRole](#xdmpersonrole) | `string` | Optional | XDM Business Opportunity Person Relation (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -58,26 +57,6 @@ A unique identifier for the record.
 
 `string`
 * format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
-
-
-
-
-
-
-## xdm:accountID
-### Account ID
-
-Account unique identifier reference that this opportunity is linked to.
-
-`xdm:accountID`
-* is optional
-* type: `string`
-* defined in this schema
-
-### xdm:accountID Type
-
-
-`string`
 
 
 
@@ -103,21 +82,20 @@ Audit attributes for external sources.
 
 
 
-## xdm:opportunityDescription
-### Opportunity Description
+## xdm:isPrimary
+### Primary Flag
 
-Additional information to describe the opportunity, such as possible products to sell or past purchases from the customer.
+A flag to signify that this is the primary opportunity contact
 
-`xdm:opportunityDescription`
+`xdm:isPrimary`
 * is optional
-* type: `string`
+* type: `boolean`
 * defined in this schema
 
-### xdm:opportunityDescription Type
+### xdm:isPrimary Type
 
 
-`string`
-
+`boolean`
 
 
 
@@ -126,10 +104,10 @@ Additional information to describe the opportunity, such as possible products to
 ## xdm:opportunityID
 ### Opportunity ID
 
-Opportunity unique identifer
+Opportunity unique identifier reference.
 
 `xdm:opportunityID`
-* is **required**
+* is optional
 * type: `string`
 * defined in this schema
 
@@ -143,17 +121,17 @@ Opportunity unique identifer
 
 
 
-## xdm:opportunityName
-### Opportunity Name
+## xdm:opportunityPersonID
+### Opportunity Person ID
 
-Subject or descriptive name, such as the expected order or company name, for the opportunity.
+Opportunity person relation unique identifer.
 
-`xdm:opportunityName`
-* is optional
+`xdm:opportunityPersonID`
+* is **required**
 * type: `string`
 * defined in this schema
 
-### xdm:opportunityName Type
+### xdm:opportunityPersonID Type
 
 
 `string`
@@ -163,17 +141,17 @@ Subject or descriptive name, such as the expected order or company name, for the
 
 
 
-## xdm:opportunityStage
-### Opportunity Stage
+## xdm:personID
+### Person ID
 
-Sales stage of this opportunity to aid the sales team in their efforts to win this opportunity.
+Person unique identifier reference.
 
-`xdm:opportunityStage`
+`xdm:personID`
 * is optional
 * type: `string`
 * defined in this schema
 
-### xdm:opportunityStage Type
+### xdm:personID Type
 
 
 `string`
@@ -183,17 +161,17 @@ Sales stage of this opportunity to aid the sales team in their efforts to win th
 
 
 
-## xdm:opportunityType
-### Opportunity Type
+## xdm:personRole
+### Person Role
 
-Opportunity type such as Existing Business or New Business
+Role of the person/contact for this opportunity.
 
-`xdm:opportunityType`
+`xdm:personRole`
 * is optional
 * type: `string`
 * defined in this schema
 
-### xdm:opportunityType Type
+### xdm:personRole Type
 
 
 `string`

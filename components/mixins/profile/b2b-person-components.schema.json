@@ -51,6 +51,10 @@
                 "description": "Source converted contact ID.",
                 "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
               },
+              "xdm:personEmail": {
+                "title": "Email ID of B2B Person",
+                "$ref": "https://ns.adobe.com/xdm/context/emailaddress"
+              },
               "xdm:personSegmentTraits": {
                 "title": "Person Segmentation Attributes",
                 "description": "These attributes are required to build predicates for person segmentation.",

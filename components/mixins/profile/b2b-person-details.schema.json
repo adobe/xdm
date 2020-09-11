@@ -135,30 +135,15 @@
           "description": "Opportunity Id if the lead was successfully converted.",
           "type": "string"
         },
-        "xdm:jigsawPersonID": {
-          "title": "Jigsaw Person Id",
-          "description": "Person’s Data.com ID if available.",
-          "type": "string"
-        },
-        "xdm:jigsaw": {
-          "title": "Jigsaw",
-          "description": "Data.com key",
-          "type": "string"
-        },
         "xdm:lastTransferDate": {
           "title": "Last Transfer Date",
           "description": "Last transfer date.",
           "type": "string",
           "format": "date-time"
         },
-        "xdm:unReadByOwner": {
-          "title": "Read By Owner Indicator",
-          "description": "Read by owner indicator.",
-          "type": "boolean"
-        },
         "xdm:personSource": {
           "title": "Person Source",
-          "description": "Source from where the information regarding the person was recieved.",
+          "description": "Source from where the information regarding the person was received.",
           "type": "string"
         },
         "xdm:personOptInOut": {

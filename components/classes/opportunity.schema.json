@@ -9,31 +9,42 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "XDM Business Opportunity",
   "type": "object",
+  "auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
-  "description": "An XDM Business Opportunity.",
+  "description": "This class is used to capture minimum set of properties that define business opportunity.",
   "definitions": {
     "opportunity": {
       "properties": {
-        "xdm:opportuntyID": {
+        "xdm:opportunityID": {
           "title": "Opportunity ID",
-          "description": "Unique identifer of the opportunity",
+          "description": "Opportunity unique identifer",
+          "type": "string"
+        },
+        "xdm:opportunityName": {
+          "title": "Opportunity Name",
+          "description": "Subject or descriptive name, such as the expected order or company name, for the opportunity.",
+          "type": "string"
+        },
+        "xdm:opportunityDescription": {
+          "title": "Opportunity Description",
+          "description": "Additional information to describe the opportunity, such as possible products to sell or past purchases from the customer.",
           "type": "string"
         },
         "xdm:opportunityType": {
           "title": "Opportunity Type",
-          "description": "Type of Opportunity.",
+          "description": "Opportunity type such as Existing Business or New Business",
+          "type": "string"
+        },
+        "xdm:opportunityStage": {
+          "title": "Opportunity Stage",
+          "description": "Sales stage of this opportunity to aid the sales team in their efforts to win this opportunity.",
           "type": "string"
         },
         "xdm:accountID": {
           "title": "Account ID",
-          "description": "Account identifer reference",
-          "type": "string"
-        },
-        "xdm:campaignID": {
-          "title": "Campaign ID",
-          "description": "Campaign unique identifer reference",
+          "description": "Account unique identifier reference that this opportunity is linked to.",
           "type": "string"
         }
       }
@@ -53,6 +64,6 @@
       "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
     }
   ],
-  "required": ["xdm:opportunityID", "xdm:opportunityType", "xdm:accountID"],
+  "required": ["xdm:opportunityID"],
   "meta:status": "experimental"
 }

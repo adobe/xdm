@@ -51,7 +51,7 @@
                 "description": "Source converted contact ID.",
                 "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
               },
-              "xdm:personEmail": {
+              "xdm:workEmail": {
                 "title": "Email ID of B2B Person",
                 "$ref": "https://ns.adobe.com/xdm/context/emailaddress"
               },

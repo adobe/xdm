@@ -63,7 +63,8 @@
           "xdm:eMail": {
             "xdm:choice": "yes"
           },
-          "xdm:source": "CJM"
+          "xdm:source": "CJM",
+          "xdm:notice": "Can we send you occasional emails describing items that may be of interest to you?"
         }
       },
       "john@google.com": {

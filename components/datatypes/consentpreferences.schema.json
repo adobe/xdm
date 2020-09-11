@@ -78,6 +78,11 @@
         },
         "xdm:source": {
           "$ref": "#/definitions/source"
+        },
+        "xdm:notice": {
+          "title": "Notice displayed to user",
+          "description": "The text that was presented to the user when they provided this consent",
+          "type": "string"
         }
       }
     },
@@ -95,6 +100,11 @@
         },
         "xdm:source": {
           "$ref": "#/definitions/source"
+        },
+        "xdm:notice": {
+          "title": "Notice displayed to user",
+          "description": "The text that was presented to the user when they provided this consent",
+          "type": "string"
         },
         "xdm:reason": {
           "title": "Opt out reason",

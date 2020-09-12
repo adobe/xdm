@@ -37,7 +37,7 @@
           "type": "string"
         },
         "xdm:leadOrganization": {
-          "title": "lead Organization Properties",
+          "title": "Lead Organization Properties",
           "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-account-organization"
         },
         "xdm:leadSource": {

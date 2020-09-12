@@ -34,10 +34,10 @@
         "xdm:personGroupID": {
           "title": "Person Group ID",
           "description": "Group identifier for the person.",
-          "type": "number"
+          "type": "string"
         },
-        "xdm:personOrganization": {
-          "title": "Person Organization",
+        "xdm:leadOrganization": {
+          "title": "lead Organization Properties",
           "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-account-organization"
         },
         "xdm:leadSource": {

@@ -55,6 +55,7 @@ This mixin is used to capture B2B Person specific attributes. A B2B Person could
 | [xdm:isBlocked](#xdmisblocked) | `boolean` | Optional | XDM Business Person Details (this schema) |
 | [xdm:isConverted](#xdmisconverted) | `boolean` | Optional | XDM Business Person Details (this schema) |
 | [xdm:isMarketingSuspended](#xdmismarketingsuspended) | `boolean` | Optional | XDM Business Person Details (this schema) |
+| [xdm:leadOrganization](#xdmleadorganization) | Account Organization | Optional | XDM Business Person Details (this schema) |
 | [xdm:leadSource](#xdmleadsource) | `string` | Optional | XDM Business Person Details (this schema) |
 | [xdm:marketingSuspendedCause](#xdmmarketingsuspendedcause) | `string` | Optional | XDM Business Person Details (this schema) |
 | [xdm:mobilePhone](#xdmmobilephone) | Phone number | Optional | [Profile personal details](profile-personal-details.schema.md#xdmmobilephone) |
@@ -62,9 +63,8 @@ This mixin is used to capture B2B Person specific attributes. A B2B Person could
 | [xdm:otherAddress](#xdmotheraddress) | Postal address | Optional | [Profile Other Work Details](profile-other-work-details.schema.md#xdmotheraddress) |
 | [xdm:otherPhone](#xdmotherphone) | Phone number | Optional | [Profile Other Work Details](profile-other-work-details.schema.md#xdmotherphone) |
 | [xdm:person](#xdmperson) | Person | Optional | [Profile person details](profile-person-details.schema.md#xdmperson) |
-| [xdm:personGroupID](#xdmpersongroupid) | `number` | Optional | XDM Business Person Details (this schema) |
+| [xdm:personGroupID](#xdmpersongroupid) | `string` | Optional | XDM Business Person Details (this schema) |
 | [xdm:personOptInOut](#xdmpersonoptinout) | OptInOut | Optional | XDM Business Person Details (this schema) |
-| [xdm:personOrganization](#xdmpersonorganization) | Account Organization | Optional | XDM Business Person Details (this schema) |
 | [xdm:personOwnerID](#xdmpersonownerid) | `string` | Optional | XDM Business Person Details (this schema) |
 | [xdm:personScore](#xdmpersonscore) | `number` | Optional | XDM Business Person Details (this schema) |
 | [xdm:personSource](#xdmpersonsource) | `string` | Optional | XDM Business Person Details (this schema) |
@@ -629,6 +629,23 @@ Marketing suspended flag.
 
 
 
+## xdm:leadOrganization
+### Lead Organization Properties
+
+`xdm:leadOrganization`
+* is optional
+* type: Account Organization
+* defined in this schema
+
+### xdm:leadOrganization Type
+
+
+* [Account Organization](../../datatypes/account-organization.schema.md) – `https://ns.adobe.com/xdm/datatypes/b2b-account-organization`
+
+
+
+
+
 ## xdm:leadSource
 ### Lead Source
 
@@ -777,13 +794,13 @@ Group identifier for the person.
 
 `xdm:personGroupID`
 * is optional
-* type: `number`
+* type: `string`
 * defined in this schema
 
 ### xdm:personGroupID Type
 
 
-`number`
+`string`
 
 
 
@@ -804,23 +821,6 @@ Holds opt out values for different channels as selected by the person.
 
 
 * [OptInOut](../../datatypes/optinout.schema.md) – `https://ns.adobe.com/xdm/context/optinout`
-
-
-
-
-
-## xdm:personOrganization
-### Person Organization
-
-`xdm:personOrganization`
-* is optional
-* type: Account Organization
-* defined in this schema
-
-### xdm:personOrganization Type
-
-
-* [Account Organization](../../datatypes/account-organization.schema.md) – `https://ns.adobe.com/xdm/datatypes/b2b-account-organization`
 
 
 

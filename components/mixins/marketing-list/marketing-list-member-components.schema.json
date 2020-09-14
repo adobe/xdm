@@ -26,19 +26,19 @@
             "properties": {
               "xdm:sourceMarketingListMemberID": {
                 "title": "Source Marketing List Identifier",
-                "$ref": "https://ns.adobe.com/xdm/datatype/b2b-source"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
               },
               "xdm:sourcePersonID": {
                 "title": "Source Person Identifier",
-                "$ref": "https://ns.adobe.com/xdm/datatype/b2b-source"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
               },
               "xdm:sourceMarketingListID": {
                 "title": "Source Marketing List Identifier",
-                "$ref": "https://ns.adobe.com/xdm/datatype/b2b-source"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
               },
               "xdm:sourceExternalID": {
                 "title": "Source External Identifier",
-                "$ref": "https://ns.adobe.com/xdm/datatype/b2b-source"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
               }
             }
           }

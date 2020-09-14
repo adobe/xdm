@@ -7,8 +7,8 @@
     ],
     "$id": "https://ns.adobe.com/experience/customerJourneyManagement/messageexecution",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Adobe CJM ExperienceEvent - MessageExecution Details",
-    "description": "MessageExecution details for the Adobe CJM ExperienceEvent.",
+    "title": "Adobe CJM ExperienceEvent - Message Execution Details",
+    "description": "Message Execution details for the Adobe CJM ExperienceEvent.",
     "type": "object",
     "meta:extensible": true,
     "meta:abstract": true,
@@ -28,12 +28,12 @@
                     "type": "string",
                     "description": "The parent Message ID of a MessageExecution originating this message."
                 },
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/JourneyVersionID": {
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionID": {
                     "title": "JourneyVersion ID",
                     "type": "string",
                     "description": " JourneyVersion Id triggerieng the MessageExecution."
                 },
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/JourneyVersionInstanceId": {
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionInstanceId": {
                     "title": "JourneyVersion Instance Id",
                     "type": "string",
                     "description": "Identifier of the journey version instance, specific to one individual (uuid)."
@@ -58,8 +58,8 @@
             "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageExecutionID": "4218b775-bef3-46b2-aee2-7caae052cf94",
             "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageID": "aa440b96-ce65-4ad2-b95d-8c3b51f89bc2",
             "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageLabel": "Deal for Gold members",
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/JourneyVersionID": "0cc85961-487d-49e5-9b6c-01f5630756ac",
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/JourneyVersionInstanceId": "b9029525-c33a-40f2-a1c1-95f0b8305078"
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionID": "0cc85961-487d-49e5-9b6c-01f5630756ac",
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionInstanceId": "b9029525-c33a-40f2-a1c1-95f0b8305078"
         }
     ]
 }

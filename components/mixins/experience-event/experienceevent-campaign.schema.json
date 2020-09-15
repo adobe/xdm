@@ -1,0 +1,56 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-campaign",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "ExperienceEvent Campaign details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "This mixin is used to capture campaign information related to an ExperienceEvent, including the channel ID, channel type, media type, and location type.",
+  "definitions": {
+    "experienceevent-campaign": {
+      "properties": {
+        "xdm:campaignID": {
+          "title": "Campaign ID",
+          "type": "string",
+          "description": "Identifier of the marketing campaign to which activity originating this message belongs to."
+        },
+        "xdm:campaignName": {
+          "title": "Campaign Internal Name",
+          "type": "string",
+          "description": "A human-friendly identifier of the marketing campaign which is originating this message."
+        },
+        "xdm:campaignOutboundMessage": {
+          "title": "Campaign Outbound Message",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/outboundmessage",
+          "description": "Outbound Message attributes related to this campaign."
+        },
+        "xdm:campaignMessageDelivery": {
+          "title": "Campaign Message Delivery",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/messagedelivery",
+          "description": "Message delivery attributes related to this campaign."
+        },
+        "xdm:campaignTrackingLink": {
+          "title": "Campaign Tracking Link",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/trackinglink",
+          "description": "Tracking link attributes related to this campaign message."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/experienceevent-campaign"
+    }
+  ],
+  "meta:status": "stable"
+}

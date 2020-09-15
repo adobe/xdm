@@ -1,0 +1,77 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/datatypes/messagedelivery",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Message Delivery",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "This Data Type is used to capture message delivery related properties like properties used for campaign message delivery.",
+  "definitions": {
+    "message-delivery": {
+      "properties": {
+        "xdm:deliveryId": {
+          "title": "Delivery ID",
+          "type": "integer",
+          "description": "The campaign activity originating this message."
+        },
+        "xdm:from": {
+          "title": "From",
+          "type": "string",
+          "description": "Address used as a from/sender/caller address. Depending on the communication channel, the `address` has a different format.\n\n  * `email`: an email address.\n  * `textMessage` or `phone`: a shortcode or phone number."
+        },
+        "xdm:testEnabled": {
+          "title": "Test Enabled",
+          "type": "boolean",
+          "description": "Specify whether campaign activity is of type A/B testing.",
+          "default": false
+        },
+        "xdm:messageClass": {
+          "title": "Message Class",
+          "type": "string",
+          "meta:enum": {
+            "one_time": "Marketing (One Time)",
+            "continuous": "Recurring",
+            "event_based": "Transactional (Event-based)"
+          },
+          "description": "Mode of delivery for the messages sent.\n",
+          "default": "one_time"
+        },
+        "xdm:templateName": {
+          "title": "Delivery Template's Internal Name",
+          "type": "string",
+          "description": "A human-friendly identifier of the the parent entity (in case of event_based or continuous message Class) of the campaign activity originating this message."
+        },
+        "xdm:templateID": {
+          "title": "Identifier of the Template",
+          "type": "integer",
+          "description": "The delivery template's ID used to initialize this delivery.\n\nThe type the template used in Adobe Campaign can be identified using the `messageClass`.\n\n* `messageClass` = `oneTime`: the template is standard delivery template.\n* `messageClass` = `continuous`: the template is a recurring delivery.\n* `messageClass` = `transactional`: the template is a transactional message template.\n"
+        },
+        "xdm:deliveryLabel": {
+          "title": "Delivery Label",
+          "type": "string",
+          "description": "A human-friendly name of the campaign activity which is originating this message."
+        },
+        "xdm:deliveryName": {
+          "title": "Delivery Internal Name",
+          "type": "string",
+          "description": "A human-friendly identifier of the campaign activity which is originating this message."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/message-delivery"
+    }
+  ],
+  "meta:status": "stable"
+}

@@ -1,23 +1,23 @@
 
-# Adobe CJM ExperienceEvent - MessageProfile Details Schema
+# Adobe CJM ExperienceEvent - Message Profile Details Schema
 
 ```
 https://ns.adobe.com/experience/customerJourneyManagement/messageprofile
 ```
 
-MessageProfile details for the Adobe CJM ExperienceEvent.
+Message Profile details for the Adobe CJM ExperienceEvent.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/customerJourneyManagement/messageprofile.schema.json](adobe/experience/customerJourneyManagement/messageprofile.schema.json) |
 ## Schema Hierarchy
 
-* Adobe CJM ExperienceEvent - MessageProfile Details `https://ns.adobe.com/experience/customerJourneyManagement/messageprofile`
+* Adobe CJM ExperienceEvent - Message Profile Details `https://ns.adobe.com/experience/customerJourneyManagement/messageprofile`
   * [Extensibility base schema](../../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Experience Channel](../../../datatypes/channels/channel.schema.md) `https://ns.adobe.com/xdm/channels/channel`
 
 
-## Adobe CJM ExperienceEvent - MessageProfile Details Example
+## Adobe CJM ExperienceEvent - Message Profile Details Example
 ```json
 {
   "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID": "4218b775-bef3-46b2-aee2-7caae052cf94",
@@ -29,15 +29,15 @@ MessageProfile details for the Adobe CJM ExperienceEvent.
 }
 ```
 
-# Adobe CJM ExperienceEvent - MessageProfile Details Properties
+# Adobe CJM ExperienceEvent - Message Profile Details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address](#httpsnsadobecomexperiencecustomerjourneymanagementemailchannelcontextaddress) | `string` | Optional | Adobe CJM ExperienceEvent - MessageProfile Details (this schema) |
-| [https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel](#httpsnsadobecomexperiencecustomerjourneymanagementmessageprofilechannel) | Experience Channel | **Required** | Adobe CJM ExperienceEvent - MessageProfile Details (this schema) |
-| [https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID](#httpsnsadobecomexperiencecustomerjourneymanagementmessageprofilemessageprofileid) | `string` | Optional | Adobe CJM ExperienceEvent - MessageProfile Details (this schema) |
-| [https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant](#httpsnsadobecomexperiencecustomerjourneymanagementmessageprofilevariant) | `string` | Optional | Adobe CJM ExperienceEvent - MessageProfile Details (this schema) |
-| [https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform](#httpsnsadobecomexperiencecustomerjourneymanagementpushchannelcontextplatform) | `string` | Optional | Adobe CJM ExperienceEvent - MessageProfile Details (this schema) |
+| [https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address](#httpsnsadobecomexperiencecustomerjourneymanagementemailchannelcontextaddress) | `string` | Optional | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
+| [https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel](#httpsnsadobecomexperiencecustomerjourneymanagementmessageprofilechannel) | Experience Channel | **Required** | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
+| [https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID](#httpsnsadobecomexperiencecustomerjourneymanagementmessageprofilemessageprofileid) | `string` | Optional | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
+| [https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant](#httpsnsadobecomexperiencecustomerjourneymanagementmessageprofilevariant) | `string` | Optional | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
+| [https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform](#httpsnsadobecomexperiencecustomerjourneymanagementpushchannelcontextplatform) | `string` | Optional | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address

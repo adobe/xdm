@@ -7,8 +7,8 @@
     ],
     "$id": "https://ns.adobe.com/experience/customerJourneyManagement/message-delivery-feedback",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Adobe CJM ExperienceEvent - Delivery-Feedback Details",
-    "description": "Provide details for the Delivery feedback for a single message in the MessageExecution.",
+    "title": "Adobe CJM ExperienceEvent - Message Delivery Feedback Details",
+    "description": "Provide details for the delivery feedback for a single message in the Message Execution.",
     "type": "object",
     "meta:extensible": true,
     "meta:abstract": true,
@@ -41,12 +41,12 @@
                     "title": "Message Exclusion",
                     "type": "object",
                     "properties": {
-                        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/code": {
+                        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageExclusion/code": {
                             "title": "Exclude Code",
                             "type": "string",
                             "description": "Provide top level exclusion reason, like typology rule, mandatory parameter missing."
                         },
-                        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/reason": {
+                        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageExclusion/reason": {
                             "title": "Exclude Reason",
                             "type": "string",
                             "description": "Provide exclusion subcode, like exact typology rule-id."
@@ -57,17 +57,17 @@
                     "title": "Message Failure",
                     "type": "object",
                     "properties": {
-                        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/reason": {
+                        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageFailure/reason": {
                             "title": "Failure Reason",
                             "type": "string",
                             "description": "Failure reason for a failed delivery attempt."
                         },
-                        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/code": {
+                        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageFailure/code": {
                             "title": "Failure Code",
                             "type": "string",
                             "description": "Failure code for a failed delivery attempt."
                         },
-                        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/type": {
+                        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageFailure/type": {
                             "title": "Failure Type",
                             "type": "string",
                             "description": "Classifies whether it is a soft bounce or hard bounce.",
@@ -102,9 +102,9 @@
         {
             "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/feedbackStatus": "bounce",
             "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageFailure": {
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/reason": "Messagebox is Full",
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/code": "FR-123",
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/type": "Soft"
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageFailure/reason": "Messagebox is Full",
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageFailure/code": "FR-123",
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageFailure/type": "Soft"
             },
             "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/retryCount": 1
         }

@@ -7,8 +7,8 @@
   ],
   "$id": "https://ns.adobe.com/experience/customerJourneyManagement/messageexecution",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Adobe CJM ExperienceEvent - MessageExecution Details",
-  "description": "MessageExecution details for the Adobe CJM ExperienceEvent.",
+  "title": "Adobe CJM ExperienceEvent - Message Execution Details",
+  "description": "Message Execution details for the Adobe CJM ExperienceEvent.",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
@@ -27,12 +27,12 @@
           "type": "string",
           "description": "The parent Message ID of a MessageExecution originating this message."
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/JourneyVersionID": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionID": {
           "title": "JourneyVersion ID",
           "type": "string",
           "description": " JourneyVersion Id triggerieng the MessageExecution."
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/JourneyVersionInstanceId": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionInstanceId": {
           "title": "JourneyVersion Instance Id",
           "type": "string",
           "description": "Identifier of the journey version instance, specific to one individual (uuid)."

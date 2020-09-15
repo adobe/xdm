@@ -9,7 +9,7 @@ Opportunity Contact Role
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [classes/opportunity-contact-role.schema.json](classes/opportunity-contact-role.schema.json) |
+| Can be instantiated | Yes | Deprecated | No | Forbidden | Permitted | [classes/opportunity-contact-role.schema.json](classes/opportunity-contact-role.schema.json) |
 ## Schema Hierarchy
 
 * XDM Buying Group `https://ns.adobe.com/xdm/context/opportunity-contact-role`

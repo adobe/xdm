@@ -24,6 +24,11 @@
                     "type": "string",
                     "description": "The normative name of the web page. This name is not necessarily the page title or directly associate with page content, but is used to organize a site's pages for classification purposes."
                 },
+                "xdm:viewName": {
+                    "title": "View Name",
+                    "type": "string",
+                    "description": "The name of the view, within a page. This is commonly used with Single Page Applications or pages that have tabs or controls that change a majority of the page layout."
+                },
                 "xdm:URL": {
                     "title": "URL",
                     "type": "string",
@@ -63,6 +68,18 @@
     ],
     "meta:status": "stable",
     "examples": [
+        {
+            "xdm:siteSection": "Product Details Page",
+            "xdm:server": "example.com",
+            "xdm:name": "Scottish Haggis Product Details",
+            "xdm:viewName": "FAQ Tab",
+            "xdm:URL": "https://www.example.com",
+            "xdm:errorPage": false,
+            "xdm:homePage": true,
+            "xdm:pageViews": {
+                "xdm:value": 1
+            }
+        },
         {
             "xdm:siteSection": "Product section",
             "xdm:server": "example.com",

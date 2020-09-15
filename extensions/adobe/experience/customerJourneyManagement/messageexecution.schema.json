@@ -1,0 +1,55 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/customerJourneyManagement/messageexecution",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Adobe CJM ExperienceEvent - Message Execution Details",
+  "description": "Message Execution details for the Adobe CJM ExperienceEvent.",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+
+  "definitions": {
+    "messageExecution": {
+      "properties": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageExecutionID": {
+          "title": "MessageExecution ID",
+          "type": "string",
+          "description": "The CJM activity originating this message."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageID": {
+          "title": "Message ID",
+          "type": "string",
+          "description": "The parent Message ID of a MessageExecution originating this message."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionID": {
+          "title": "JourneyVersion ID",
+          "type": "string",
+          "description": " JourneyVersion Id triggerieng the MessageExecution."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionInstanceId": {
+          "title": "JourneyVersion Instance Id",
+          "type": "string",
+          "description": "Identifier of the journey version instance, specific to one individual (uuid)."
+        }
+      }
+    }
+  },
+  "required": [
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageExecutionID"
+  ],
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/messageExecution"
+    }
+  ],
+  "meta:status": "experimental"
+}

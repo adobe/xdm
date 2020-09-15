@@ -21,7 +21,23 @@ For interactions that are happening on a loaded page that do not trigger a new p
   * [Measure](data/measure.schema.md) `https://ns.adobe.com/xdm/data/measure`
 
 
-## Web page details Example
+## Web page details Examples
+
+```json
+{
+  "xdm:siteSection": "Product Details Page",
+  "xdm:server": "example.com",
+  "xdm:name": "Scottish Haggis Product Details",
+  "xdm:viewName": "FAQ Tab",
+  "xdm:URL": "https://www.example.com",
+  "xdm:errorPage": false,
+  "xdm:homePage": true,
+  "xdm:pageViews": {
+    "xdm:value": 1
+  }
+}
+```
+
 ```json
 {
   "xdm:siteSection": "Product section",
@@ -36,6 +52,7 @@ For interactions that are happening on a loaded page that do not trigger a new p
 }
 ```
 
+
 # Web page details Properties
 
 | Property | Type | Required | Defined by |
@@ -47,6 +64,7 @@ For interactions that are happening on a loaded page that do not trigger a new p
 | [xdm:pageViews](#xdmpageviews) | Measure | Optional | Web page details (this schema) |
 | [xdm:server](#xdmserver) | `string` | Optional | Web page details (this schema) |
 | [xdm:siteSection](#xdmsitesection) | `string` | Optional | Web page details (this schema) |
+| [xdm:viewName](#xdmviewname) | `string` | Optional | Web page details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:URL
@@ -178,6 +196,26 @@ The normative name of the site section where this web page resides, which may be
 * defined in this schema
 
 ### xdm:siteSection Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:viewName
+### View Name
+
+The name of the view, within a page. This is commonly used with Single Page Applications or pages that have tabs or controls that change a majority of the page layout.
+
+`xdm:viewName`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:viewName Type
 
 
 `string`

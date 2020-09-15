@@ -172,6 +172,21 @@
               "title": "eventProcessed",
               "description": "This field describes if the Journey step event has been Processed. ",
               "type": "string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyID": {
+              "title": "originJumpJourneyID",
+              "description": "Describes Journey ID of the Original journey . ",
+              "type": "string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyVersionID": {
+              "title": "originJumpJourneyVersionID",
+              "description": "Describes the journey version ID for the Original journey in journey jump scenario. ",
+              "type": "string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyInstanceID": {
+              "title": "originJumpJourneyInstanceID",
+              "description": "Describes the journey Instance ID for the Original journey in journey jump scenario. ",
+              "type": "string"
             }
           }
         }

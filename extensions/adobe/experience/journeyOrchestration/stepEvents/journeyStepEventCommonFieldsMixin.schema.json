@@ -187,6 +187,21 @@
               "title": "originJumpJourneyInstanceID",
               "description": "Describes the journey Instance ID for the Original journey in journey jump scenario. ",
               "type": "string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyID": {
+              "title": "previousJumpJourneyID",
+              "description": "Describes the previous Journey ID in journey jump scenario. ",
+              "type": "string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyVersionID": {
+              "title": "previousJumpJourneyVersionID",
+              "description": "Describes the JourneyVersion ID in journey jump scenario for the previous jump. ",
+              "type": "string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyInstanceID": {
+              "title": "previousJumpJourneyInstanceID",
+              "description": "Describes the JourneyInstance ID in journey jump scenario for the previous jump. ",
+              "type": "string"
             }
           }
         }

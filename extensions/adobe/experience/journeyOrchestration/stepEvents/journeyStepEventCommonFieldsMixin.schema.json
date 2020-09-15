@@ -167,6 +167,11 @@
               "title": "journeyNodeProcessed",
               "description": "Field describes if the journeyNode is processed.",
               "type": "string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/eventProcessed": {
+              "title": "eventProcessed",
+              "description": "This field describes if the Journey step event has been Processed. ",
+              "type": "string"
             }
           }
         }

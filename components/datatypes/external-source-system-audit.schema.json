@@ -54,11 +54,6 @@
           "type": "string",
           "format": "date-time"
         },
-        "xdm:isDeleted": {
-          "title": "Deleted Flag",
-          "description": "Flag indicating if this record is deleted.",
-          "type": "boolean"
-        },
         "xdm:externalID": {
           "title": "External ID",
           "description": "External unique identifier reference to external source to help identify and deduplicate if and when needed.",

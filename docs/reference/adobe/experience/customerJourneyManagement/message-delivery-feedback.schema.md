@@ -21,9 +21,9 @@ Provide details for the delivery feedback for a single message in the Message Ex
 {
   "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/feedbackStatus": "bounce",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageFailure": {
-    "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageFailure/reason": "Messagebox is Full",
-    "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageFailure/code": "FR-123",
-    "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageFailure/type": "Soft"
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/reason": "Messagebox is Full",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/code": "FR-123",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/type": "Soft"
   },
   "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/retryCount": 1
 }
@@ -79,21 +79,21 @@ The value of this property **must** be equal to one of the [known values below](
 
 | Property | Type | Required |
 |----------|------|----------|
-| `https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageExclusion/code`| string | Optional |
-| `https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageExclusion/reason`| string | Optional |
+| `https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/code`| string | Optional |
+| `https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/reason`| string | Optional |
 
 
 
-#### https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageExclusion/code
+#### https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/code
 ##### Exclude Code
 
 Provide top level exclusion reason, like typology rule, mandatory parameter missing.
 
-`https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageExclusion/code`
+`https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/code`
 * is optional
 * type: `string`
 
-##### https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageExclusion/code Type
+##### https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/code Type
 
 
 `string`
@@ -105,16 +105,16 @@ Provide top level exclusion reason, like typology rule, mandatory parameter miss
 
 
 
-#### https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageExclusion/reason
+#### https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/reason
 ##### Exclude Reason
 
 Provide exclusion subcode, like exact typology rule-id.
 
-`https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageExclusion/reason`
+`https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/reason`
 * is optional
 * type: `string`
 
-##### https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageExclusion/reason Type
+##### https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/reason Type
 
 
 `string`
@@ -145,22 +145,22 @@ Provide exclusion subcode, like exact typology rule-id.
 
 | Property | Type | Required |
 |----------|------|----------|
-| `https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageFailure/code`| string | Optional |
-| `https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageFailure/reason`| string | Optional |
-| `https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageFailure/type`| string | Optional |
+| `https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/code`| string | Optional |
+| `https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/reason`| string | Optional |
+| `https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/type`| string | Optional |
 
 
 
-#### https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageFailure/code
+#### https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/code
 ##### Failure Code
 
 Failure code for a failed delivery attempt.
 
-`https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageFailure/code`
+`https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/code`
 * is optional
 * type: `string`
 
-##### https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageFailure/code Type
+##### https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/code Type
 
 
 `string`
@@ -172,16 +172,16 @@ Failure code for a failed delivery attempt.
 
 
 
-#### https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageFailure/reason
+#### https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/reason
 ##### Failure Reason
 
 Failure reason for a failed delivery attempt.
 
-`https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageFailure/reason`
+`https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/reason`
 * is optional
 * type: `string`
 
-##### https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageFailure/reason Type
+##### https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/reason Type
 
 
 `string`
@@ -193,23 +193,23 @@ Failure reason for a failed delivery attempt.
 
 
 
-#### https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageFailure/type
+#### https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/type
 ##### Failure Type
 
 Classifies whether it is a soft bounce or hard bounce.
 
-`https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageFailure/type`
+`https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/type`
 * is optional
 * type: `string`
 
-##### https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageFailure/type Type
+##### https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/type Type
 
 
 `string`
 
 
 
-##### https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageFailure/type Known Values
+##### https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/type Known Values
 | Value | Description |
 |-------|-------------|
 | `soft` | The reason for failed delivery is temporary. |

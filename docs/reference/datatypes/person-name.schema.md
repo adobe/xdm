@@ -31,18 +31,18 @@ In addition, a number of optional properties are made available that can be used
 
 ```json
 {
-  "xdm:firstName": "John",
-  "xdm:middleName": "S",
-  "xdm:lastName": "Doe",
-  "xdm:fullName": "John S. Doe"
+  "xdm:firstName": "فلانة",
+  "xdm:lastName": "الفلانية",
+  "xdm:fullName": "فلانة الفلانية"
 }
 ```
 
 ```json
 {
-  "xdm:firstName": "فلانة",
-  "xdm:lastName": "الفلانية",
-  "xdm:fullName": "فلانة الفلانية"
+  "xdm:firstName": "John",
+  "xdm:middleName": "S",
+  "xdm:lastName": "Doe",
+  "xdm:fullName": "John S. Doe"
 }
 ```
 

@@ -36,7 +36,6 @@ External Source System Audit fields.
 | [xdm:createdBy](#xdmcreatedby) | `string` | Optional | External Source System Audit Attributes (this schema) |
 | [xdm:createdDate](#xdmcreateddate) | `string` | Optional | External Source System Audit Attributes (this schema) |
 | [xdm:externalID](#xdmexternalid) | `string` | Optional | External Source System Audit Attributes (this schema) |
-| [xdm:isDeleted](#xdmisdeleted) | `boolean` | Optional | External Source System Audit Attributes (this schema) |
 | [xdm:lastActivityDate](#xdmlastactivitydate) | `string` | Optional | External Source System Audit Attributes (this schema) |
 | [xdm:lastReferencedDate](#xdmlastreferenceddate) | `string` | Optional | External Source System Audit Attributes (this schema) |
 | [xdm:lastUpdatedBy](#xdmlastupdatedby) | `string` | Optional | External Source System Audit Attributes (this schema) |
@@ -100,25 +99,6 @@ External unique identifier reference to external source to help identify and ded
 
 `string`
 
-
-
-
-
-
-## xdm:isDeleted
-### Deleted Flag
-
-Flag indicating if this record is deleted.
-
-`xdm:isDeleted`
-* is optional
-* type: `boolean`
-* defined in this schema
-
-### xdm:isDeleted Type
-
-
-`boolean`
 
 
 

@@ -15,7 +15,7 @@
 2.The script will only generate warning messages for cases below.
 -when the meta:extends does not match allOf
 
-3.The scripts also will also do some extra validation such as non existing required fields etc..
+3.The scripts will also do some extra validation such as non existing required fields, missing object type for properties etc..
 */
 
 const fs = require('fs');

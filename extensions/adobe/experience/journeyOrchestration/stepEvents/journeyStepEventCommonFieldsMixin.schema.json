@@ -166,41 +166,41 @@
             "https://ns.adobe.com/experience/journeyOrchestration/journeyNodeProcessed": {
               "title": "journeyNodeProcessed",
               "description": "Field describes if the journeyNode is processed.",
-              "type": "string"
+              "type": "boolean"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/eventProcessed": {
               "title": "eventProcessed",
-              "description": "This field describes if the Journey step event has been Processed. ",
-              "type": "string"
+              "description": "Boolean field describes if the event has been Processed. ",
+              "type": "boolean"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyID": {
               "title": "originJumpJourneyID",
-              "description": "Describes Journey ID of the Original journey . ",
+              "description": "Journey ID of the initial journey in a journey jump scenario. ",
               "type": "string"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyVersionID": {
               "title": "originJumpJourneyVersionID",
-              "description": "Describes the journey version ID for the Original journey in journey jump scenario. ",
+              "description": "Journey version ID of the initial journey in a journey jump scenario. ",
               "type": "string"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyInstanceID": {
               "title": "originJumpJourneyInstanceID",
-              "description": "Describes the journey Instance ID for the Original journey in journey jump scenario. ",
+              "description": "Journey instance ID of the initial journey in a journey jump scenario. ",
               "type": "string"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyID": {
               "title": "previousJumpJourneyID",
-              "description": "Describes the previous Journey ID in journey jump scenario. ",
+              "description": "Journey ID of the previous journey in a journey jump scenario. ",
               "type": "string"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyVersionID": {
               "title": "previousJumpJourneyVersionID",
-              "description": "Describes the JourneyVersion ID in journey jump scenario for the previous jump. ",
+              "description": "Journey version ID of the previous journey in a journey jump scenario. ",
               "type": "string"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyInstanceID": {
               "title": "previousJumpJourneyInstanceID",
-              "description": "Describes the JourneyInstance ID in journey jump scenario for the previous jump. ",
+              "description": "Journey instance ID of the previous journey in a journey jump scenario. ",
               "type": "string"
             }
           }

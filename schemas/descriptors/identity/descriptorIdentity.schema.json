@@ -40,7 +40,7 @@
           "description": "When present, only one field should be marked as the primary. Default is false."
         }
       },
-      "required": ["xdm:sourceProperty", "xdm:namespace", "xdm:property"]
+      "required": ["xdm:namespace", "xdm:property"]
     }
   },
   "allOf": [

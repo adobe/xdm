@@ -49,7 +49,7 @@
       }
     }
   },
-  "required": ["xdm:identityMap", "xdm:segmentName"],
+  "required": ["xdm:segmentName"],
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"

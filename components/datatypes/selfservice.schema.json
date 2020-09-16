@@ -141,7 +141,7 @@
       "$ref": "#/definitions/selfservice"
     },
     {
-      "required": ["id", "xdm:tenant", "xdm:application", "xdm:environment"]
+      "required": ["xdm:tenant", "xdm:application", "xdm:environment"]
     }
   ],
   "meta:status": "stable"

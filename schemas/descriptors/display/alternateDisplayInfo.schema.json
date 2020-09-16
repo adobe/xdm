@@ -73,8 +73,7 @@
         {
           "required": ["meta:enum"]
         }
-      ],
-      "required": ["xdm:sourceProperty"]
+      ]
     }
   },
   "allOf": [

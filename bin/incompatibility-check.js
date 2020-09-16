@@ -14,6 +14,8 @@
 
 2.The script will only generate warning messages for cases below.
 -when the meta:extends does not match allOf
+
+3.The scripts also will also do some extra validation such as non existing required fields etc..
 */
 
 const fs = require('fs');
@@ -21,10 +23,26 @@ const glob = require("glob");
 const shell = require('shelljs');
 const diff = require('deep-diff');
 const jsonValidator = require('json-dup-key-validator');
+const mergeAllOf = require('json-schema-merge-allof');
+const deref = require('json-schema-deref-sync');
 const masterCopyLoc = "../tempmaster/";
 const masterSchemaFolder = masterCopyLoc + "schemas";
 const masterComponentFolder = masterCopyLoc + "components";
 const masterExtensionFolder = masterCopyLoc + "extensions";
+const ignoredForRequiredValidation =
+    ["../schemas/descriptors/display/alternateDisplayInfo.schema.json",
+    "../schemas/descriptors/identity/descriptorIdentity.schema.json",
+    "../schemas/descriptors/identity/descriptorReferenceIdentity.schema.json",
+    "../extensions/adobe/experience/audiencemanager/segmentfolder.schema.json",
+    "../extensions/adobe/experience/campaign/orchestration/reportingevent.schema.json",
+    "../extensions/adobe/experience/target/activity.schema.json",
+    "../extensions/adobe/experience/target/activity.schema.json",
+    "../components/classes/experienceevent.schema.json",
+    "../components/classes/experienceevent.schema.json",
+    "../components/classes/opportunity.schema.json",
+    "../components/classes/segmentdefinition.schema.json",
+    "../components/datatypes/selfservice.schema.json"];
+const isExistingIgnored = false;
 
 shell.rm("-rf", masterCopyLoc); //start
 if (shell.exec('git clone https://github.com/adobe/xdm.git ' + masterCopyLoc).code !== 0) {
@@ -38,8 +56,13 @@ var schemaFiles = glob.sync(masterSchemaFolder + "/**/*.schema.json");
 schemaFiles = schemaFiles.concat(glob.sync(masterExtensionFolder + "/**/*.schema.json"));
 schemaFiles = schemaFiles.concat(glob.sync(masterComponentFolder + "/**/*.schema.json"));
 
+var workingFiles = glob.sync(masterSchemaFolder.replace(masterCopyLoc, "../") + "/**/*.schema.json");
+workingFiles = workingFiles.concat(glob.sync(masterExtensionFolder.replace(masterCopyLoc, "../") + "/**/*.schema.json"));
+workingFiles = workingFiles.concat(glob.sync(masterComponentFolder.replace(masterCopyLoc, "../") + "/**/*.schema.json"));
+
 var errLogs = [];
 checkBreakingChanges(schemaFiles);
+validateSchemas(workingFiles);
 if (errLogs.length > 0) {
     createError(errLogs.join(""));
 }
@@ -48,7 +71,7 @@ shell.rm("-rf", masterCopyLoc); //done
 function checkBreakingChanges(files) {
     files.forEach(function (file) {
         var err;
-        console.log('Check breaking changes -->' + file);
+        console.log('Check breaking changes -->' + file.replace(masterCopyLoc,"../"));
         var originalSchema = JSON.parse(fs.readFileSync(file).toString());
         var workingFile = file.replace("tempmaster/", "");
 
@@ -61,7 +84,7 @@ function checkBreakingChanges(files) {
                 errLogs.push(workingFile+err+"\n"); //raise other validation errors
         }
 
-        if (newSchema) {
+        if (newSchema && (workingFile.indexOf("selfservice.schema.json") != -1)) {
             var allOfCheck = isAllOfBroken(originalSchema["allOf"], newSchema["allOf"]); //check deleted allOfs
             if (originalSchema["allOf"] && allOfCheck.isBroken) {
                 errLogs.push(workingFile+' breaking changes found!!! {"$ref": "' + allOfCheck["$ref"] + '"} inside "allOf" can not be removed.\n');
@@ -97,15 +120,27 @@ function checkBreakingChanges(files) {
                 if (isDuplicatedKey(differences, brokenProperty, newSchema)) { //check duplicated lowercase keys
                     errLogs.push(workingFile+' duplicated key found!!! Property "' + brokenProperty.name + '" can not be added as its lowercase is a duplicate key already.\n');
                 }
-            }
+            };
         }
     });
+}
+
+function validateSchemas(files) {
+    files.forEach(function (file) {
+        console.log('Validate schema -->' + file);
+        var schema = JSON.parse(fs.readFileSync(file).toString());
+        var schema4Validation =  mergeAllOf(deref(schema));
+        delete schema4Validation.definitions;
+        //if (file.indexOf("filter-expression.schema.json") != -1) console.log(JSON.stringify(schema4Validation,null,2))
+        validate(schema4Validation, file);
+    });
+
 }
 
 function isAllOfBroken(origAllOf, newAllOf) {
     var isBroken;
     for (var i in origAllOf) {
-        isBroken = true;
+        isBroken = origAllOf[i].hasOwnProperty("required") ? false : true;
         for (var j in newAllOf) {
             if (JSON.stringify(origAllOf[i]) == JSON.stringify(newAllOf[j])) isBroken = false;
         }
@@ -202,13 +237,38 @@ function isDuplicatedKey(differences, brokenProperty, schema) {
 
 function preProcess(o) {
     for (var i in o) {
-        if (o[i]["meta:status"] == "deprecated") {
+        if (o[i] && o[i]["meta:status"] == "deprecated") {
             delete o[i] //remove deprecated
         }
 
         if (o[i] !== null && typeof(o[i]) == "object") {
             //going one step down in the object tree!!
             preProcess(o[i]);
+        }
+    }
+}
+
+function validate(o, file) {
+    for (var i in o) {
+        if (o[i] && o[i]["meta:status"] == "deprecated") {
+            delete o[i] //remove deprecated
+        }
+
+        if (((ignoredForRequiredValidation.indexOf(file) == -1) || isExistingIgnored == false) && o.hasOwnProperty("properties") && o.hasOwnProperty("required") && i == "properties") {
+            for (var j in o.required) {
+                if (!o.properties.hasOwnProperty(o.required[j])) {
+                    errLogs.push(file + ' validation error!!! Required field "' + o.required[j] + '" does not exist in related properties.\n')
+                }
+            }
+        }
+
+        if (o.hasOwnProperty("properties") && !(o.type == "object") && i == "properties" ) {
+            errLogs.push(file + ' validation error!!! Missing object type definition for "' +'properties"' + '.\n')
+        }
+
+        if (o[i] !== null && typeof(o[i]) == "object") {
+            //going one step down in the object tree!!
+            validate(o[i], file);
         }
     }
 }

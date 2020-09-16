@@ -84,7 +84,7 @@ function checkBreakingChanges(files) {
                 errLogs.push(workingFile+err+"\n"); //raise other validation errors
         }
 
-        if (newSchema && (workingFile.indexOf("selfservice.schema.json") != -1)) {
+        if (newSchema) {
             var allOfCheck = isAllOfBroken(originalSchema["allOf"], newSchema["allOf"]); //check deleted allOfs
             if (originalSchema["allOf"] && allOfCheck.isBroken) {
                 errLogs.push(workingFile+' breaking changes found!!! {"$ref": "' + allOfCheck["$ref"] + '"} inside "allOf" can not be removed.\n');

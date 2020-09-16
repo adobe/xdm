@@ -131,7 +131,6 @@ function validateSchemas(files) {
         var schema = JSON.parse(fs.readFileSync(file).toString());
         var schema4Validation =  mergeAllOf(deref(schema));
         delete schema4Validation.definitions;
-        //if (file.indexOf("filter-expression.schema.json") != -1) console.log(JSON.stringify(schema4Validation,null,2))
         validate(schema4Validation, file);
     });
 

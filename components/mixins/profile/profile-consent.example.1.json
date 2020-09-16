@@ -42,6 +42,9 @@
         "xdm:privacyPreferences": {
           "xdm:anonymousAnalysis": {
             "xdm:choice": "yes"
+          },
+          "xdm:canUseAdvertiserID": {
+            "xdm:choice": "no"
           }
         },
         "xdm:personalizationPreferences": {

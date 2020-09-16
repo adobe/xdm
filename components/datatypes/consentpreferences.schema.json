@@ -62,7 +62,8 @@
     "source": {
       "title": "Source of Consent",
       "description": "Through which feature/product/method did the user provide this consent value",
-      "type": "string"
+      "type": "string",
+      "maxLength": 20
     },
     "consentOption": {
       "type": "object",
@@ -78,11 +79,6 @@
         },
         "xdm:source": {
           "$ref": "#/definitions/source"
-        },
-        "xdm:notice": {
-          "title": "Notice displayed to user",
-          "description": "The text that was presented to the user when they provided this consent",
-          "type": "string"
         }
       }
     },
@@ -100,11 +96,6 @@
         },
         "xdm:source": {
           "$ref": "#/definitions/source"
-        },
-        "xdm:notice": {
-          "title": "Notice displayed to user",
-          "description": "The text that was presented to the user when they provided this consent",
-          "type": "string"
         },
         "xdm:reason": {
           "title": "Opt out reason",
@@ -125,9 +116,14 @@
               "description": "Data collection is permitted",
               "$ref": "#/definitions/consentOption"
             },
-            "xdm:sellOrShareData": {
-              "title": "Sell or Share Data",
-              "description": "Sharing or Selling of user's Data with/to 2nd or 3rd parties is permitted, such as in compliance with CCPA",
+            "xdm:sellData": {
+              "title": "Sell Data",
+              "description": "Selling of user's Data with/to 2nd or 3rd parties is permitted, such as in compliance with CCPA",
+              "$ref": "#/definitions/consentOption"
+            },
+            "xdm:shareData": {
+              "title": "Share Data",
+              "description": "Sharing of user's Data with/to 2nd or 3rd parties is permitted",
               "$ref": "#/definitions/consentOption"
             },
             "xdm:anonymousAnalysis": {
@@ -143,6 +139,11 @@
             "xdm:deviceLinking": {
               "title": "Device Linking",
               "description": "Attempts to associate multiple devices used/owned by an individual/household/organization are permitted",
+              "$ref": "#/definitions/consentOption"
+            },
+            "xdm:canUseAdvertiserID": {
+              "title": "Can Use Advertiser ID",
+              "description": "The user's mobile advertiser ID, such as Apple's IDFA, can be used",
               "$ref": "#/definitions/consentOption"
             }
           }
@@ -263,7 +264,10 @@
                 "inVehicleMessages",
                 "inHomeMessages",
                 "iotMessages",
-                "socialMedia"
+                "socialMedia",
+                "other",
+                "none",
+                "unknown"
               ],
               "meta:enum": {
                 "email": "email",
@@ -275,7 +279,10 @@
                 "inVehicleMessages": "in-vehicle messages",
                 "inHomeMessages": "in-home messages",
                 "iot": "IoT messages",
-                "socialMedia": "social media"
+                "socialMedia": "social media",
+                "other": "other (a non-standard channel)",
+                "none": "none (user does not have a preferred channel)",
+                "unknown": "unknown"
               }
             },
             "xdm:general": {
@@ -353,8 +360,13 @@
           "description": "Source for the complete set of user consent preferences",
           "$ref": "#/definitions/source"
         },
+        "xdm:sourceID": {
+          "title": "?? Source ID",
+          "description": "External ID maintained by consent source",
+          "type": "string"
+        },
         "xdm:userCountry": {
-          "title": "User Country",
+          "title": "User Country/Region",
           "description": "ISO 3166 alpha2 country code or ISO 3166-2 country plus state/province code for use in helping to determine how to interpret consent values",
           "type": "string",
           "maxLength": 6,

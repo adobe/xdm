@@ -133,20 +133,17 @@
                         }
                     }
                 }
-            }
+            },
+            "required": [
+                "xdm:tenant",
+                "xdm:application",
+                "xdm:environment"
+            ]
         }
     },
     "allOf": [
         {
             "$ref": "#/definitions/selfservice"
-        },
-        {
-            "required": [
-                "id",
-                "xdm:tenant",
-                "xdm:application",
-                "xdm:environment"
-            ]
         }
     ],
     "meta:status": "stable",

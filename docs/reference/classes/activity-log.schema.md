@@ -47,7 +47,7 @@ An XDM Activity in the form of a task or a business event.
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Time-series Schema](../behaviors/time-series.schema.md#id) |
 | [xdm:activityID](#xdmactivityid) | `string` | Optional | XDM Business Activity Log (this schema) |
-| [xdm:activityType](#xdmactivitytype) | complex | Optional | XDM Business Activity Log (this schema) |
+| [xdm:activityType](#xdmactivitytype) | `object` | Optional | XDM Business Activity Log (this schema) |
 | [xdm:eventType](#xdmeventtype) | `string` | Optional | [Time-series Schema](../behaviors/time-series.schema.md#xdmeventtype) |
 | [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details Mixin](../mixins/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
 | [xdm:timestamp](#xdmtimestamp) | `string` | Optional | [Time-series Schema](../behaviors/time-series.schema.md#xdmtimestamp) |
@@ -101,36 +101,62 @@ The tacking type of the activity in the form of a task or a business planned eve
 
 `xdm:activityType`
 * is optional
-* type: complex
+* type: `object`
 * defined in this schema
 
 ### xdm:activityType Type
 
-Unknown type ``.
 
-```json
-{
-  "title": "Activity Type",
-  "description": "The tacking type of the activity in the form of a task or a business planned event",
-  "properties": {
-    "xdm:ID": {
-      "title": "ID of the Activity Type",
-      "description": "The tacking type of the activity in the form of a task or a business planned event",
-      "type": "string"
-    },
-    "xdm:type": {
-      "title": "Type of the Activity Type",
-      "description": "The tacking type of the activity in the form of a task or a business planned event",
-      "type": "string"
-    }
-  },
-  "required": [
-    "xdm:ID",
-    "xdm:type"
-  ],
-  "simpletype": "complex"
-}
-```
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+| `xdm:ID`| string | **Required** |
+| `xdm:type`| string | **Required** |
+
+
+
+#### xdm:ID
+##### ID of the Activity Type
+
+The tacking type of the activity in the form of a task or a business planned event
+
+`xdm:ID`
+* is **required**
+* type: `string`
+
+##### xdm:ID Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### xdm:type
+##### Type of the Activity Type
+
+The tacking type of the activity in the form of a task or a business planned event
+
+`xdm:type`
+* is **required**
+* type: `string`
+
+##### xdm:type Type
+
+
+`string`
+
+
+
+
+
+
 
 
 

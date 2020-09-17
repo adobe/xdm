@@ -30,7 +30,7 @@
           "title": "Person Source",
           "description": "Source from where the information regarding the person was received.",
           "type": "string"
-        },		
+        },
         "xdm:personScore": {
           "title": "Person Score",
           "description": "A Score generated for a person by the CRM system.",

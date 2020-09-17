@@ -22,6 +22,7 @@
           "type": "string"
         },
         "xdm:activityType": {
+          "type": "object",
           "title": "Activity Type",
           "description": "The tacking type of the activity in the form of a task or a business planned event",
           "properties": {

@@ -16,6 +16,7 @@
     "selector": {
       "oneOf": [
         {
+          "type": "object",
           "properties": {
             "xdm:index": {
               "title": "Index",
@@ -27,6 +28,7 @@
           "required": ["xdm:index"]
         },
         {
+          "type": "object",
           "properties": {
             "xdm:id": {
               "title": "ID",
@@ -38,6 +40,7 @@
           "required": ["xdm:id"]
         },
         {
+          "type": "object",
           "properties": {
             "xdm:type": {
               "title": "Type",
@@ -49,6 +52,7 @@
           "required": ["xdm:type"]
         },
         {
+          "type": "object",
           "properties": {
             "xdm:schema": {
               "title": "Schema",

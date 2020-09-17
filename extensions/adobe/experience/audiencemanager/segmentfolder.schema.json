@@ -39,7 +39,8 @@
       }
     }
   },
-  "required": ["xdm:identityMap",
+  "required": [
+    "xdm:identityMap",
     "https://ns.adobe.com/experience/audiencemanager/segmentFolderName"
   ],
   "allOf": [

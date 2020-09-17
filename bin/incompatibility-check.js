@@ -36,10 +36,7 @@ const ignoredForRequiredValidation =
     "../extensions/adobe/experience/audiencemanager/segmentfolder.schema.json",
     "../extensions/adobe/experience/campaign/orchestration/reportingevent.schema.json",
     "../extensions/adobe/experience/target/activity.schema.json",
-    "../extensions/adobe/experience/target/activity.schema.json",
     "../components/classes/experienceevent.schema.json",
-    "../components/classes/experienceevent.schema.json",
-    "../components/classes/opportunity.schema.json",
     "../components/classes/segmentdefinition.schema.json",
     "../components/datatypes/selfservice.schema.json"];
 const isExistingIgnored = false;

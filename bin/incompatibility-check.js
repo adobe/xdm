@@ -34,12 +34,9 @@ const ignoredForRequiredValidation =
     "../schemas/descriptors/identity/descriptorIdentity.schema.json",
     "../schemas/descriptors/identity/descriptorReferenceIdentity.schema.json",
     "../extensions/adobe/experience/audiencemanager/segmentfolder.schema.json",
-    "../extensions/adobe/experience/campaign/orchestration/reportingevent.schema.json",
-    "../extensions/adobe/experience/target/activity.schema.json",
     "../components/classes/experienceevent.schema.json",
-    "../components/classes/segmentdefinition.schema.json",
-    "../components/datatypes/selfservice.schema.json"];
-const isExistingIgnored = false;
+    "../components/classes/segmentdefinition.schema.json"
+    ];
 
 shell.rm("-rf", masterCopyLoc); //start
 if (shell.exec('git clone https://github.com/adobe/xdm.git ' + masterCopyLoc).code !== 0) {
@@ -250,7 +247,7 @@ function validate(o, file) {
             delete o[i] //remove deprecated
         }
 
-        if (((ignoredForRequiredValidation.indexOf(file) == -1) || isExistingIgnored == false) && o.hasOwnProperty("properties") && o.hasOwnProperty("required") && i == "properties") {
+        if (((ignoredForRequiredValidation.indexOf(file) == -1)) && o.hasOwnProperty("properties") && o.hasOwnProperty("required") && i == "properties") {
             for (var j in o.required) {
                 if (!o.properties.hasOwnProperty(o.required[j])) {
                     errLogs.push(file + ' validation error!!! Required field "' + o.required[j] + '" does not exist in related properties.\n')

@@ -26,6 +26,11 @@
           "type": "string",
           "description": "A human-friendly identifier of the marketing campaign which is originating this message."
         },
+        "xdm:campaignGroup": {
+          "title": "Campaign group",
+          "type": "string",
+          "description": "Name of the campaign group where multiple campaigns are grouped together like '50%_DISCOUNT'."
+        },
         "xdm:campaignOutboundMessage": {
           "title": "Campaign Outbound Message",
           "$ref": "https://ns.adobe.com/xdm/datatypes/outboundmessage",

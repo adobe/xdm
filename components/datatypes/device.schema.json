@@ -90,11 +90,6 @@
             "type": "boolean",
             "description": "For devices like mobile , this tracks the system background push enabled permision status."
           },
-          "xdm:ianaTimezone": {
-            "title": "Iana Timezone",
-            "type": "string",
-            "description": "Timezone of the device represented as a standard timezone string. https://en.wikipedia.org/wiki/List_of_tz_database_time_zones."
-          },
           "xdm:isLocationEnabled": {
             "title": "Location Enabled Flag",
             "type": "boolean",

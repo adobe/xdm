@@ -12,10 +12,6 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/mixins/b2b-person-details",
-    "https://ns.adobe.com/xdm/mixins/b2b-person-components"
-  ],
   "description": "This mixin is used to capture Bizible B2B Person specific attributes. A B2B Person could be a contact/lead etc.",
   "definitions": {
     "bizible-person-details": {
@@ -35,16 +31,7 @@
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
-    },
-    {
       "$ref": "#/definitions/bizible-person-details"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/mixins/b2b-person-details"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/mixins/b2b-person-components"
     }
   ],
   "meta:status": "experimental"

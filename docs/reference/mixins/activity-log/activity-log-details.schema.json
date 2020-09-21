@@ -77,6 +77,7 @@
                     "type": "string"
                 },
                 "xdm:entity": {
+                    "type": "object",
                     "title": "Entity",
                     "description": "Holds Entity Name and its ID on which activity action is based upon.",
                     "properties": {
@@ -102,6 +103,7 @@
                     "type": "string"
                 },
                 "xdm:asset": {
+                    "type": "object",
                     "title": "Object asset",
                     "description": "Asset details for its type and ID",
                     "properties": {
@@ -122,6 +124,7 @@
                     ]
                 },
                 "xdm:campaign": {
+                    "type": "object",
                     "title": "Campaign details",
                     "description": "Campaign amd its relevant associated details",
                     "properties": {
@@ -136,6 +139,7 @@
                             "type": "string"
                         },
                         "xdm:member": {
+                            "type": "object",
                             "properties": {
                                 "xdm:type": {
                                     "title": "Member type",
@@ -150,6 +154,7 @@
                             }
                         },
                         "xdm:program": {
+                            "type": "object",
                             "properties": {
                                 "xdm:ID": {
                                     "title": "Program ID associated with the campaign",
@@ -162,6 +167,7 @@
                                     "type": "string"
                                 },
                                 "xdm:step": {
+                                    "type": "object",
                                     "properties": {
                                         "xdm:number": {
                                             "title": "Workflow step number",
@@ -200,6 +206,7 @@
                     "type": "string"
                 },
                 "xdm:interactionEvents": {
+                    "type": "object",
                     "title": "Interaction Events",
                     "description": "collection of various forms of interactions",
                     "properties": {
@@ -209,6 +216,7 @@
                             "description": "Contextual information captured during a given phone conversation"
                         },
                         "xdm:meeting": {
+                            "type": "object",
                             "title": "Meeting",
                             "description": "Meeting details with location co-ordinates",
                             "properties": {

@@ -20,6 +20,7 @@
         "campaign-member-details": {
             "properties": {
                 "xdm:campaignMember": {
+                    "type": "object",
                     "title": "Campaign Member",
                     "description": "Member type and associated reference ID",
                     "properties": {
@@ -40,6 +41,7 @@
                     ]
                 },
                 "xdm:response": {
+                    "type": "object",
                     "title": "Response of the Member",
                     "description": "Record whether the member has responded to the workflow stage",
                     "properties": {
@@ -57,6 +59,7 @@
                     }
                 },
                 "xdm:campaignProgram": {
+                    "type": "object",
                     "title": "Campaign's Program",
                     "description": "The name and the type of the program with which the campaign is associated, eg, 'Tradeshow'->'Event'",
                     "properties": {
@@ -71,6 +74,7 @@
                             "type": "string"
                         },
                         "xdm:step": {
+                            "type": "object",
                             "properties": {
                                 "xdm:number": {
                                     "title": "Campaign Program's control workflow step number",

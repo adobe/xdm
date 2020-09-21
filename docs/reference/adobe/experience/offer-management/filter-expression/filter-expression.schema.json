@@ -177,6 +177,7 @@
             ]
         },
         "function-content-and": {
+            "type": "object",
             "properties": {
                 "nodeType": {
                     "type": "string",
@@ -197,6 +198,7 @@
             "additionalProperties": false
         },
         "function-content-or": {
+            "type": "object",
             "properties": {
                 "nodeType": {
                     "type": "string",
@@ -217,6 +219,7 @@
             "additionalProperties": false
         },
         "function-content-equals-native": {
+            "type": "object",
             "properties": {
                 "nodeType": {
                     "type": "string",
@@ -238,6 +241,7 @@
             "additionalProperties": false
         },
         "function-content-not-equals-native": {
+            "type": "object",
             "properties": {
                 "nodeType": {
                     "type": "string",
@@ -259,6 +263,7 @@
             "additionalProperties": false
         },
         "function-content-greater-than-native": {
+            "type": "object",
             "properties": {
                 "nodeType": {
                     "type": "string",
@@ -280,6 +285,7 @@
             "additionalProperties": false
         },
         "function-content-greater-than-or-equal-native": {
+            "type": "object",
             "properties": {
                 "nodeType": {
                     "type": "string",
@@ -301,6 +307,7 @@
             "additionalProperties": false
         },
         "function-content-less-than-or-equal-native": {
+            "type": "object",
             "properties": {
                 "nodeType": {
                     "type": "string",
@@ -322,6 +329,7 @@
             "additionalProperties": false
         },
         "function-content-less-than-native": {
+            "type": "object",
             "properties": {
                 "nodeType": {
                     "type": "string",
@@ -343,6 +351,7 @@
             "additionalProperties": false
         },
         "function-content-in": {
+            "type": "object",
             "properties": {
                 "nodeType": {
                     "type": "string",
@@ -364,6 +373,7 @@
             "additionalProperties": false
         },
         "function-content-not-in": {
+            "type": "object",
             "properties": {
                 "nodeType": {
                     "type": "string",
@@ -385,6 +395,7 @@
             "additionalProperties": false
         },
         "function-content-null": {
+            "type": "object",
             "properties": {
                 "nodeType": {
                     "type": "string",
@@ -406,6 +417,7 @@
             "additionalProperties": false
         },
         "function-content-not-null": {
+            "type": "object",
             "properties": {
                 "nodeType": {
                     "type": "string",
@@ -427,6 +439,7 @@
             "additionalProperties": false
         },
         "function-content-equals-string": {
+            "type": "object",
             "properties": {
                 "nodeType": {
                     "type": "string",
@@ -448,6 +461,7 @@
             "additionalProperties": false
         },
         "function-content-not-equal-to-string": {
+            "type": "object",
             "properties": {
                 "nodeType": {
                     "type": "string",
@@ -580,6 +594,7 @@
             ]
         },
         "literal-string-content": {
+            "type": "object",
             "properties": {
                 "nodeType": {
                     "type": "string",
@@ -596,6 +611,7 @@
             "additionalProperties": false
         },
         "literal-number-content": {
+            "type": "object",
             "properties": {
                 "nodeType": {
                     "type": "string",
@@ -612,6 +628,7 @@
             "additionalProperties": false
         },
         "literal-integer-content": {
+            "type": "object",
             "properties": {
                 "nodeType": {
                     "type": "string",
@@ -628,6 +645,7 @@
             "additionalProperties": false
         },
         "literal-boolean-content": {
+            "type": "object",
             "properties": {
                 "nodeType": {
                     "type": "string",
@@ -644,6 +662,7 @@
             "additionalProperties": false
         },
         "literal-list-content": {
+            "type": "object",
             "properties": {
                 "nodeType": {
                     "type": "string",
@@ -660,6 +679,7 @@
             "additionalProperties": false
         },
         "literal-xdmobject-content": {
+            "type": "object",
             "properties": {
                 "nodeType": {
                     "type": "string",
@@ -676,6 +696,7 @@
             "additionalProperties": false
         },
         "literal-query-string-content": {
+            "type": "object",
             "properties": {
                 "nodeType": {
                     "type": "string",
@@ -895,7 +916,7 @@
                 {
                     "nodeType": "literal",
                     "literalType": "String",
-                    "value": "/queries/offersByPlacementIds?placementId=\"uri:com:example:placement-01001\"&placementId=\"uri:com:example:placement-01002\""
+                    "value": "/queries/offersByPlacementIds?placementId=\"uri:com:example:placement-01001\""
                 }
             ]
         },
@@ -953,17 +974,6 @@
                             }
                         ]
                     }
-                }
-            ]
-        },
-        {
-            "nodeType": "fnApply",
-            "fnName": "modelInstances",
-            "params": [
-                {
-                    "nodeType": "literal",
-                    "literalType": "String",
-                    "value": "/queries/offersByPlacementIds?placementId=\"uri:com:example:placement-01001\""
                 }
             ]
         },
@@ -1045,7 +1055,7 @@
                 {
                     "nodeType": "literal",
                     "literalType": "String",
-                    "value": "/queries/offersByTagIds?tagId=\"uri:com:example:tag-0001\"&tagId=\"uri:com:example:tag-0002\""
+                    "value": "/queries/offersByPlacementIds?placementId=\"uri:com:example:placement-01001\"&placementId=\"uri:com:example:placement-01002\""
                 }
             ]
         },
@@ -1135,17 +1145,6 @@
             ]
         },
         {
-            "nodeType": "fnApply",
-            "fnName": "modelInstances",
-            "params": [
-                {
-                    "nodeType": "literal",
-                    "literalType": "String",
-                    "value": "/queries/offersByTagIds?tagId=\"uri:com:example:tag-0001\""
-                }
-            ]
-        },
-        {
             "nodeType": "select",
             "variables": [
                 {
@@ -1181,6 +1180,28 @@
                             }
                         ]
                     }
+                }
+            ]
+        },
+        {
+            "nodeType": "fnApply",
+            "fnName": "modelInstances",
+            "params": [
+                {
+                    "nodeType": "literal",
+                    "literalType": "String",
+                    "value": "/queries/offersByTagIds?tagId=\"uri:com:example:tag-0001\""
+                }
+            ]
+        },
+        {
+            "nodeType": "fnApply",
+            "fnName": "modelInstances",
+            "params": [
+                {
+                    "nodeType": "literal",
+                    "literalType": "String",
+                    "value": "/queries/offersByTagIds?tagId=\"uri:com:example:tag-0001\"&tagId=\"uri:com:example:tag-0002\""
                 }
             ]
         },
@@ -1331,44 +1352,68 @@
                             {
                                 "nodeType": "literal",
                                 "literalType": "String",
-                                "value": "/queries/offersByTagIds?tagId=\"uri:com:example:tag-0001\"&tagId=\"uri:com:example:tag-0002\"&qop=AND&property=`\"_instance.status=approved\""
+                                "value": "https://ns.adobe.com/experience/offer-management/personalized-offer"
                             }
                         ]
                     },
                     "where": {
-                        "nodeType": "quantification",
-                        "quantifier": "some",
-                        "variables": [
+                        "nodeType": "fnApply",
+                        "fnName": "and",
+                        "params": [
                             {
-                                "nodeType": "varDecl",
-                                "varName": "r",
-                                "from": {
-                                    "nodeType": "fieldLookup",
-                                    "fieldName": "xdm:representations",
-                                    "object": {
-                                        "nodeType": "varRef",
-                                        "varName": "o"
-                                    }
-                                },
-                                "where": {
-                                    "nodeType": "fnApply",
-                                    "fnName": "=",
-                                    "params": [
-                                        {
-                                            "nodeType": "fieldLookup",
-                                            "fieldName": "xdm:placement",
-                                            "object": {
-                                                "nodeType": "varRef",
-                                                "varName": "r"
-                                            }
-                                        },
-                                        {
+                                "nodeType": "quantification",
+                                "quantifier": "all",
+                                "variables": [
+                                    {
+                                        "nodeType": "varDecl",
+                                        "varName": "t",
+                                        "from": {
                                             "nodeType": "literal",
-                                            "literalType": "String",
-                                            "value": "uri:com:example:placement-1001"
+                                            "literalType": "List",
+                                            "value": [
+                                                "uri:com:example:tag-0001",
+                                                "uri:com:example:tag-0002"
+                                            ]
+                                        },
+                                        "where": {
+                                            "nodeType": "fnApply",
+                                            "fnName": "in",
+                                            "params": [
+                                                {
+                                                    "nodeType": "varRef",
+                                                    "varName": "t"
+                                                },
+                                                {
+                                                    "nodeType": "fieldLookup",
+                                                    "fieldName": "xdm:tags",
+                                                    "object": {
+                                                        "nodeType": "varRef",
+                                                        "varName": "o"
+                                                    }
+                                                }
+                                            ]
                                         }
-                                    ]
-                                }
+                                    }
+                                ]
+                            },
+                            {
+                                "nodeType": "fnApply",
+                                "fnName": "=",
+                                "params": [
+                                    {
+                                        "nodeType": "fieldLookup",
+                                        "fieldName": "xdm:status",
+                                        "object": {
+                                            "nodeType": "varRef",
+                                            "varName": "o"
+                                        }
+                                    },
+                                    {
+                                        "nodeType": "literal",
+                                        "literalType": "String",
+                                        "value": "approved"
+                                    }
+                                ]
                             }
                         ]
                     }
@@ -1507,122 +1552,6 @@
                                 "nodeType": "literal",
                                 "literalType": "String",
                                 "value": "https://ns.adobe.com/experience/offer-management/personalized-offer"
-                            },
-                            {
-                                "nodeType": "literal",
-                                "literalType": "String",
-                                "value": "?id=\"uri:com:example:offer-10001\"&id=\"uri:com:example:offer-10002\"&id=\"uri:com:example:offer-10004\"&id=\"uri:com:example:offer-10009\"&id=\"uri:com:example:offer-10013\"&id=\"uri:com:example:offer-10005\"&id=\"uri:com:example:offer-10022\""
-                            },
-                            {
-                                "nodeType": "literal",
-                                "literalType": "String",
-                                "value": "?property=\"_instance.xdm:representations.xdm:placement=uri:com:example:placement-1001\""
-                            },
-                            {
-                                "nodeType": "literal",
-                                "literalType": "String",
-                                "value": "?property=\"_instance.xdm:status=approved\""
-                            }
-                        ]
-                    }
-                }
-            ]
-        },
-        {
-            "nodeType": "select",
-            "variables": [
-                {
-                    "nodeType": "varDecl",
-                    "varName": "o",
-                    "from": {
-                        "nodeType": "fnApply",
-                        "fnName": "modelInstances",
-                        "params": [
-                            {
-                                "nodeType": "literal",
-                                "literalType": "String",
-                                "value": "https://ns.adobe.com/experience/offer-management/personalized-offer"
-                            }
-                        ]
-                    },
-                    "where": {
-                        "nodeType": "fnApply",
-                        "fnName": "and",
-                        "params": [
-                            {
-                                "nodeType": "quantification",
-                                "quantifier": "all",
-                                "variables": [
-                                    {
-                                        "nodeType": "varDecl",
-                                        "varName": "t",
-                                        "from": {
-                                            "nodeType": "literal",
-                                            "literalType": "List",
-                                            "value": [
-                                                "uri:com:example:tag-0001",
-                                                "uri:com:example:tag-0002"
-                                            ]
-                                        },
-                                        "where": {
-                                            "nodeType": "fnApply",
-                                            "fnName": "in",
-                                            "params": [
-                                                {
-                                                    "nodeType": "varRef",
-                                                    "varName": "t"
-                                                },
-                                                {
-                                                    "nodeType": "fieldLookup",
-                                                    "fieldName": "xdm:tags",
-                                                    "object": {
-                                                        "nodeType": "varRef",
-                                                        "varName": "o"
-                                                    }
-                                                }
-                                            ]
-                                        }
-                                    }
-                                ]
-                            },
-                            {
-                                "nodeType": "fnApply",
-                                "fnName": "=",
-                                "params": [
-                                    {
-                                        "nodeType": "fieldLookup",
-                                        "fieldName": "xdm:status",
-                                        "object": {
-                                            "nodeType": "varRef",
-                                            "varName": "o"
-                                        }
-                                    },
-                                    {
-                                        "nodeType": "literal",
-                                        "literalType": "String",
-                                        "value": "approved"
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-                }
-            ]
-        },
-        {
-            "nodeType": "select",
-            "variables": [
-                {
-                    "nodeType": "varDecl",
-                    "varName": "o",
-                    "from": {
-                        "nodeType": "fnApply",
-                        "fnName": "modelInstances",
-                        "params": [
-                            {
-                                "nodeType": "literal",
-                                "literalType": "String",
-                                "value": "https://ns.adobe.com/experience/offer-management/personalized-offer"
                             }
                         ]
                     },
@@ -1712,6 +1641,98 @@
                                         "value": "approved"
                                     }
                                 ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "nodeType": "select",
+            "variables": [
+                {
+                    "nodeType": "varDecl",
+                    "varName": "o",
+                    "from": {
+                        "nodeType": "fnApply",
+                        "fnName": "modelInstances",
+                        "params": [
+                            {
+                                "nodeType": "literal",
+                                "literalType": "String",
+                                "value": "/queries/offersByTagIds?tagId=\"uri:com:example:tag-0001\"&tagId=\"uri:com:example:tag-0002\"&qop=AND&property=`\"_instance.status=approved\""
+                            }
+                        ]
+                    },
+                    "where": {
+                        "nodeType": "quantification",
+                        "quantifier": "some",
+                        "variables": [
+                            {
+                                "nodeType": "varDecl",
+                                "varName": "r",
+                                "from": {
+                                    "nodeType": "fieldLookup",
+                                    "fieldName": "xdm:representations",
+                                    "object": {
+                                        "nodeType": "varRef",
+                                        "varName": "o"
+                                    }
+                                },
+                                "where": {
+                                    "nodeType": "fnApply",
+                                    "fnName": "=",
+                                    "params": [
+                                        {
+                                            "nodeType": "fieldLookup",
+                                            "fieldName": "xdm:placement",
+                                            "object": {
+                                                "nodeType": "varRef",
+                                                "varName": "r"
+                                            }
+                                        },
+                                        {
+                                            "nodeType": "literal",
+                                            "literalType": "String",
+                                            "value": "uri:com:example:placement-1001"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "nodeType": "select",
+            "variables": [
+                {
+                    "nodeType": "varDecl",
+                    "varName": "o",
+                    "from": {
+                        "nodeType": "fnApply",
+                        "fnName": "modelInstances",
+                        "params": [
+                            {
+                                "nodeType": "literal",
+                                "literalType": "String",
+                                "value": "https://ns.adobe.com/experience/offer-management/personalized-offer"
+                            },
+                            {
+                                "nodeType": "literal",
+                                "literalType": "String",
+                                "value": "?id=\"uri:com:example:offer-10001\"&id=\"uri:com:example:offer-10002\"&id=\"uri:com:example:offer-10004\"&id=\"uri:com:example:offer-10009\"&id=\"uri:com:example:offer-10013\"&id=\"uri:com:example:offer-10005\"&id=\"uri:com:example:offer-10022\""
+                            },
+                            {
+                                "nodeType": "literal",
+                                "literalType": "String",
+                                "value": "?property=\"_instance.xdm:representations.xdm:placement=uri:com:example:placement-1001\""
+                            },
+                            {
+                                "nodeType": "literal",
+                                "literalType": "String",
+                                "value": "?property=\"_instance.xdm:status=approved\""
                             }
                         ]
                     }

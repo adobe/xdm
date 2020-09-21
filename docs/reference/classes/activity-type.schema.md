@@ -41,7 +41,7 @@ An XDM Activity type in the form of a task or a business event
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Record Schema](../behaviors/record.schema.md#id) |
-| [xdm:activityType](#xdmactivitytype) | complex | Optional | XDM Activity Type (this schema) |
+| [xdm:activityType](#xdmactivitytype) | `object` | Optional | XDM Activity Type (this schema) |
 | [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details Mixin](../mixins/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -71,28 +71,40 @@ A unique identifier for the record.
 
 `xdm:activityType`
 * is optional
-* type: complex
+* type: `object`
 * defined in this schema
 
 ### xdm:activityType Type
 
-Unknown type ``.
 
-```json
-{
-  "properties": {
-    "xdm:ID": {
-      "title": "Activity type ID",
-      "description": "Activity Type unique identifer for a given task or a business event",
-      "type": "string"
-    }
-  },
-  "required": [
-    "xdm:ID"
-  ],
-  "simpletype": "complex"
-}
-```
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+| `xdm:ID`| string | **Required** |
+
+
+
+#### xdm:ID
+##### Activity type ID
+
+Activity Type unique identifer for a given task or a business event
+
+`xdm:ID`
+* is **required**
+* type: `string`
+
+##### xdm:ID Type
+
+
+`string`
+
+
+
+
+
+
 
 
 

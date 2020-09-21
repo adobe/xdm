@@ -84,8 +84,7 @@
   "required": [
     "https://ns.adobe.com/experience/campaign/journey",
     "https://ns.adobe.com/experience/campaign/journeyVersion",
-    "xdm:timestamp",
-    "xdm:orgID"
+    "xdm:timestamp"
   ],
   "allOf": [
     {

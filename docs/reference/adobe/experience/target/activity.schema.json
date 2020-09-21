@@ -34,8 +34,8 @@
                 }
             },
             "required": [
-                "activityID",
-                "version"
+                "xdm:activityID",
+                "xdm:version"
             ]
         }
     },

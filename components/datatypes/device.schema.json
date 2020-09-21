@@ -93,7 +93,7 @@
           "xdm:isLocationEnabled": {
             "title": "Location Enabled Flag",
             "type": "boolean",
-            "description": "Indicates whether or not the device has location services enabled.."
+            "description": "Indicates whether or not the device has location services enabled."
           },
           "xdm:locationPermission": {
             "title": "Location Permission",

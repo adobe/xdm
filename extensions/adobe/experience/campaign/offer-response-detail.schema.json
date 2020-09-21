@@ -19,6 +19,7 @@
     "response-detail-datatype": {
       "properties": {
         "xdm:offer": {
+          "type": "object",
           "title": "Campaign Offer Detail",
           "description": "Snapshot of the Offer that the recipient responded to. The object contains a at least the xdm:id property value which is the identifier of an Offer.",
           "properties": {

@@ -39,6 +39,43 @@ This schema (`reportingevent`) represents a data model for capturing events, act
   * [external event received](reportingexternalevent.schema.md) `https://ns.adobe.com/experience/campaign/orchestration/reportingexternalevent`
 
 
+## User journey reporting event Example
+```json
+{
+  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+  "xdm:dataEnrichmentSource": {
+    "@id": "https://ns.adobe.com/experience/campaign/orchestration/dataenrichmentsource/datasource-123"
+  },
+  "xdm:dataEntityUID": "https://ns.adobe.com/experience/campaign/orchestration/dataentity/123",
+  "xdm:orgUnit": {
+    "@id": "https://data.adobe.io/org-apparals-men"
+  },
+  "xdm:flowControlType": "timer",
+  "xdm:flowControlID": "https://ns.adobe.com/experience/campaign/orchestration/flowcontrol/123",
+  "xdm:eventMetrics": {
+    "https://ns.adobe.com/experience/campaign/orchestrationEnteredJourneyInstance": {
+      "xdm:value": 1
+    },
+    "https://ns.adobe.com/experience/campaign/orchestrationErrorInJourneyInstance": {
+      "xdm:value": 1
+    }
+  },
+  "https://ns.adobe.com/experience/campaign/journey": {
+    "@id": "https://ns.adobe.com/experience/campaign/orchestration/journey/1234-abc4-1232-afeb-4fff"
+  },
+  "https://ns.adobe.com/experience/campaign/journeyVersion": {
+    "@id": "https://ns.adobe.com/experience/campaign/orchestration/journeyVersion/5132-abc4-1abf-1111-ffff"
+  },
+  "https://ns.adobe.com/experience/campaign/orchestrationAction": {
+    "xdm:actionID": "https://ns.adobe.com/experience/campaign/orchestration/action/123",
+    "xdm:actionType": "parameterized_action"
+  },
+  "https://ns.adobe.com/experience/campaign/orchestrationExternalEvent": {
+    "@id": "https://ns.adobe.com/experience/campaign/orchestration/externalevent/1234"
+  }
+}
+```
+
 # User journey reporting event Properties
 
 | Property | Type | Required | Defined by |

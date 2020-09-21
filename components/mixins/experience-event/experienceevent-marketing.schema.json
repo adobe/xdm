@@ -20,6 +20,21 @@
           "title": "Marketing",
           "$ref": "https://ns.adobe.com/xdm/context/marketing",
           "description": "The information related to marketing activities that are active with the touchpoint."
+        },
+        "xdm:campaignOutboundMessage": {
+          "title": "Campaign Outbound Message",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/outboundmessage",
+          "description": "Outbound Message attributes related to this campaign."
+        },
+        "xdm:campaignMessageDelivery": {
+          "title": "Campaign Message Delivery",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/messagedelivery",
+          "description": "Message delivery attributes related to this campaign."
+        },
+        "xdm:campaignTrackingLink": {
+          "title": "Campaign Tracking Link",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/trackinglink",
+          "description": "Tracking link attributes related to this campaign message."
         }
       }
     }

@@ -15,7 +15,7 @@
   "definitions": {
     "message-delivery": {
       "properties": {
-        "xdm:deliveryId": {
+        "xdm:deliveryID": {
           "title": "Delivery ID",
           "type": "integer",
           "description": "The campaign activity originating this message."

@@ -15,7 +15,8 @@
     "https://ns.adobe.com/xdm/context/account",
     "https://ns.adobe.com/xdm/context/opportunity-contactrole",
     "https://ns.adobe.com/xdm/context/activitylog",
-    "https://ns.adobe.com/xdm/context/profile"
+    "https://ns.adobe.com/xdm/context/profile",
+    "https://ns.adobe.com/xdm/context/experienceevent"
   ],
   "description": "Mixin which defines a set a audit properties for extenal sources.",
   "definitions": {

@@ -20,6 +20,11 @@
           "type": "number",
           "description": "Unique identifier of the message."
         },
+        "xdm:profileSnapshot": {
+          "title": "Profile Snapshot",
+          "$ref": "https://ns.adobe.com/experience/campaign/profile-snapshot",
+          "description": "Profile Snapshot contains the recipient of the message. This property is primarily used to link the message to a Profile using the `IdentityMap` but it can also be used to freeze some properties of the profile at the time the message was sent."
+        },
         "xdm:variant": {
           "title": "Content Variant",
           "type": "string",

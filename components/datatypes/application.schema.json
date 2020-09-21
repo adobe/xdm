@@ -29,6 +29,11 @@
           "type": "string",
           "description": "Version of the application."
         },
+        "xdm:sdkVersion": {
+          "title": "SDK Version",
+          "type": "string",
+          "description": "Version of the application sdk."
+        },
         "xdm:applicationCloses": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Graceful termination of an application."

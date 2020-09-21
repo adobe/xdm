@@ -12,10 +12,6 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/account"],
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/mixins/account-details",
-    "https://ns.adobe.com/xdm/mixins/account-components"
-  ],
   "description": "Bizible business account details.",
   "definitions": {
     "bizible-account-details": {
@@ -35,16 +31,7 @@
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
-    },
-    {
       "$ref": "#/definitions/bizible-account-details"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/mixins/account-details"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/mixins/account-components"
     }
   ],
   "meta:status": "experimental"

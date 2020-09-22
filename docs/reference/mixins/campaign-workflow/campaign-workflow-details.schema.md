@@ -85,7 +85,7 @@ An XDM campaign workflow
 | [xdm:campaignDescription](#xdmcampaigndescription) | `string` | Optional | XDM Business Campaign workflow (this schema) |
 | [xdm:campaignEndDate](#xdmcampaignenddate) | `string` | Optional | XDM Business Campaign workflow (this schema) |
 | [xdm:campaignName](#xdmcampaignname) | `string` | Optional | XDM Business Campaign workflow (this schema) |
-| [xdm:campaignProgram](#xdmcampaignprogram) | complex | Optional | XDM Business Campaign workflow (this schema) |
+| [xdm:campaignProgram](#xdmcampaignprogram) | `object` | Optional | XDM Business Campaign workflow (this schema) |
 | [xdm:campaignStartDate](#xdmcampaignstartdate) | `string` | Optional | XDM Business Campaign workflow (this schema) |
 | [xdm:campaignStatus](#xdmcampaignstatus) | `string` | Optional | XDM Business Campaign workflow (this schema) |
 | [xdm:channelType](#xdmchanneltype) | `string` | Optional | XDM Business Campaign workflow (this schema) |
@@ -211,36 +211,62 @@ The ID and the type of the program with which the campaign is associated, eg, 'T
 
 `xdm:campaignProgram`
 * is optional
-* type: complex
+* type: `object`
 * defined in this schema
 
 ### xdm:campaignProgram Type
 
-Unknown type ``.
 
-```json
-{
-  "title": "Campaign's Program",
-  "description": "The ID and the type of the program with which the campaign is associated, eg, 'Tradeshow'->'Event'",
-  "properties": {
-    "xdm:ID": {
-      "title": "Program ID",
-      "description": "Program ID associated with the Campaign",
-      "type": "string"
-    },
-    "xdm:type": {
-      "title": "Program Type",
-      "description": "Program's Type of the Program ID",
-      "type": "string"
-    }
-  },
-  "required": [
-    "xdm:ID",
-    "xdm:type"
-  ],
-  "simpletype": "complex"
-}
-```
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+| `xdm:ID`| string | **Required** |
+| `xdm:type`| string | **Required** |
+
+
+
+#### xdm:ID
+##### Program ID
+
+Program ID associated with the Campaign
+
+`xdm:ID`
+* is **required**
+* type: `string`
+
+##### xdm:ID Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### xdm:type
+##### Program Type
+
+Program's Type of the Program ID
+
+`xdm:type`
+* is **required**
+* type: `string`
+
+##### xdm:type Type
+
+
+`string`
+
+
+
+
+
+
 
 
 

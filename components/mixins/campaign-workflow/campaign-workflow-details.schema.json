@@ -57,6 +57,7 @@
           "type": "string"
         },
         "xdm:campaignProgram": {
+          "type": "object",
           "title": "Campaign's Program",
           "description": "The ID and the type of the program with which the campaign is associated, eg, 'Tradeshow'->'Event'",
           "properties": {

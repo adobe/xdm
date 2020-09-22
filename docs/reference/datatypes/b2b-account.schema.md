@@ -48,7 +48,6 @@ This Data Type is used to capture B2B Account properties. They are grouped funct
 | [xdm:accountTradeStyle](#xdmaccounttradestyle) | `string` | Optional | B2B Account (this schema) |
 | [xdm:accountType](#xdmaccounttype) | `string` | Optional | B2B Account (this schema) |
 | [xdm:externalID](#xdmexternalid) | `string` | Optional | B2B Account (this schema) |
-| [xdm:isDeleted](#xdmisdeleted) | `boolean` | Optional | B2B Account (this schema) |
 | [xdm:partnerAccountID](#xdmpartneraccountid) | `string` | Optional | B2B Account (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -452,25 +451,6 @@ External ID.
 
 `string`
 
-
-
-
-
-
-## xdm:isDeleted
-### Account Record Deleted Indicator
-
-Indicator whether the Account record is deleted or not.
-
-`xdm:isDeleted`
-* is optional
-* type: `boolean`
-* defined in this schema
-
-### xdm:isDeleted Type
-
-
-`boolean`
 
 
 

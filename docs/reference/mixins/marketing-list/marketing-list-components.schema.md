@@ -1,5 +1,5 @@
 
-# Marketing List Components Schema
+# XDM Business Marketing List Components Schema
 
 ```
 https://ns.adobe.com/xdm/mixins/marketing-list-components
@@ -12,20 +12,20 @@ Marketing list relationship attributes form a single data source. This is the pl
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/marketing-list/marketing-list-components.schema.json](mixins/marketing-list/marketing-list-components.schema.json) |
 ## Schema Hierarchy
 
-* Marketing List Components `https://ns.adobe.com/xdm/mixins/marketing-list-components`
+* XDM Business Marketing List Components `https://ns.adobe.com/xdm/mixins/marketing-list-components`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
-## Marketing List Components Example
+## XDM Business Marketing List Components Example
 ```json
 {}
 ```
 
-# Marketing List Components Properties
+# XDM Business Marketing List Components Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:marketingListComponents](#xdmmarketinglistcomponents) | `object[]` | Optional | Marketing List Components (this schema) |
+| [xdm:marketingListComponents](#xdmmarketinglistcomponents) | `object[]` | Optional | XDM Business Marketing List Components (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:marketingListComponents

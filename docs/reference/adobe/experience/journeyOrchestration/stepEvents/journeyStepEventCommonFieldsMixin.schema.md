@@ -40,20 +40,29 @@ This Mixin contains the common Journey Metadata information.
 | `https://ns.adobe.com/experience/journeyOrchestration/batchUnitaryBranchID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/entrance`| boolean | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/eventID`| string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/eventProcessed`| boolean | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/externalKey`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/inTest`| boolean | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/instanceEnded`| boolean | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/instanceID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/instanceType`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/journeyID`| string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/journeyNodeName`| string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/journeyNodeProcessed`| boolean | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/journeyVersion`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/journeyVersionID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/journeyVersionName`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/nodeID`| string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyID`| string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyInstanceID`| string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyVersionID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/parentStepID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/parentStepName`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/parentTransitionID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/parentTransitionName`| string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyID`| string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyInstanceID`| string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyVersionID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/processingTime`| integer | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/recurrenceIndex`| integer | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/reentrance`| boolean | Optional |
@@ -188,6 +197,26 @@ Event ID in processing, for the step processing.
 
 
 
+#### https://ns.adobe.com/experience/journeyOrchestration/eventProcessed
+##### eventProcessed
+
+Boolean field describes if the event has been Processed. 
+
+`https://ns.adobe.com/experience/journeyOrchestration/eventProcessed`
+* is optional
+* type: `boolean`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/eventProcessed Type
+
+
+`boolean`
+
+
+
+
+
+
+
 #### https://ns.adobe.com/experience/journeyOrchestration/externalKey
 ##### externalKey
 
@@ -312,6 +341,47 @@ ID of the journey.
 
 
 
+#### https://ns.adobe.com/experience/journeyOrchestration/journeyNodeName
+##### journeyNodeName
+
+Name of the Journey Node being processed.
+
+`https://ns.adobe.com/experience/journeyOrchestration/journeyNodeName`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/journeyNodeName Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/journeyOrchestration/journeyNodeProcessed
+##### journeyNodeProcessed
+
+Field describes if the journeyNode is processed.
+
+`https://ns.adobe.com/experience/journeyOrchestration/journeyNodeProcessed`
+* is optional
+* type: `boolean`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/journeyNodeProcessed Type
+
+
+`boolean`
+
+
+
+
+
+
+
 #### https://ns.adobe.com/experience/journeyOrchestration/journeyVersion
 ##### journeyVersion
 
@@ -396,6 +466,69 @@ client node ID.
 
 
 
+#### https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyID
+##### originJumpJourneyID
+
+Journey ID of the initial journey in a journey jump scenario. 
+
+`https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyID`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyID Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyInstanceID
+##### originJumpJourneyInstanceID
+
+Journey instance ID of the initial journey in a journey jump scenario. 
+
+`https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyInstanceID`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyInstanceID Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyVersionID
+##### originJumpJourneyVersionID
+
+Journey version ID of the initial journey in a journey jump scenario. 
+
+`https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyVersionID`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyVersionID Type
+
+
+`string`
+
+
+
+
+
+
+
+
 #### https://ns.adobe.com/experience/journeyOrchestration/parentStepID
 ##### parentStepID
 
@@ -469,6 +602,69 @@ Name of the transition which has brought the instance to the processed step.
 * type: `string`
 
 ##### https://ns.adobe.com/experience/journeyOrchestration/parentTransitionName Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyID
+##### previousJumpJourneyID
+
+Journey ID of the previous journey in a journey jump scenario. 
+
+`https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyID`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyID Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyInstanceID
+##### previousJumpJourneyInstanceID
+
+Journey instance ID of the previous journey in a journey jump scenario. 
+
+`https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyInstanceID`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyInstanceID Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyVersionID
+##### previousJumpJourneyVersionID
+
+Journey version ID of the previous journey in a journey jump scenario. 
+
+`https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyVersionID`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyVersionID Type
 
 
 `string`

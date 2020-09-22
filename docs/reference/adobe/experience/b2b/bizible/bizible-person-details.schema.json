@@ -1,0 +1,43 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/experience/b2b/bizible/bizible-person-details",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Bizible Business Person Details",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/profile"
+    ],
+    "description": "This mixin is used to capture Bizible B2B Person specific attributes. A B2B Person could be a contact/lead etc.",
+    "definitions": {
+        "bizible-person-details": {
+            "properties": {
+                "bizible:stage": {
+                    "title": "Contact/Lead Stage",
+                    "description": "Current stage of a business Contact or Lead.",
+                    "type": "string"
+                },
+                "bizible:stagePrevious": {
+                    "title": "Contact/Lead Previous Stage",
+                    "description": "Previous stage of a business Contact or Lead.",
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/bizible-person-details"
+        }
+    ],
+    "meta:status": "experimental",
+    "examples": [
+        {}
+    ]
+}

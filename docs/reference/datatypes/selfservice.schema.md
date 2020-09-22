@@ -27,14 +27,14 @@ A customer managed environment is an environment that allows a system integratio
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [xdm:CICDPipeline](#xdmcicdpipeline) | `string` | Optional | Customer Managed Environment (this schema) |
-| [xdm:application](#xdmapplication) | `string` | **Required** | Customer Managed Environment (this schema) |
+| [xdm:application](#xdmapplication) | `string` | Optional | Customer Managed Environment (this schema) |
 | [xdm:applicationOwner](#xdmapplicationowner) | `string` | Optional | Customer Managed Environment (this schema) |
 | [xdm:artifact](#xdmartifact) | `string` | Optional | Customer Managed Environment (this schema) |
 | [xdm:artifactRepository](#xdmartifactrepository) | `string` | Optional | Customer Managed Environment (this schema) |
 | [xdm:cluster](#xdmcluster) | `string` | Optional | Customer Managed Environment (this schema) |
 | [xdm:codeRepository](#xdmcoderepository) | `string` | Optional | Customer Managed Environment (this schema) |
 | [xdm:deployment](#xdmdeployment) | `string` | Optional | Customer Managed Environment (this schema) |
-| [xdm:environment](#xdmenvironment) | `string` | **Required** | Customer Managed Environment (this schema) |
+| [xdm:environment](#xdmenvironment) | `string` | Optional | Customer Managed Environment (this schema) |
 | [xdm:provisioning](#xdmprovisioning) | `string` | Optional | Customer Managed Environment (this schema) |
 | [xdm:qualityGateState](#xdmqualitygatestate) | `object` | Optional | Customer Managed Environment (this schema) |
 | [xdm:runningInstance](#xdmrunninginstance) | `string` | Optional | Customer Managed Environment (this schema) |
@@ -42,7 +42,7 @@ A customer managed environment is an environment that allows a system integratio
 | [xdm:selfServiceBuild](#xdmselfservicebuild) | `string` | Optional | Customer Managed Environment (this schema) |
 | [xdm:selfServiceUI](#xdmselfserviceui) | `string` | Optional | Customer Managed Environment (this schema) |
 | [xdm:service](#xdmservice) | `string` | Optional | Customer Managed Environment (this schema) |
-| [xdm:tenant](#xdmtenant) | `string` | **Required** | Customer Managed Environment (this schema) |
+| [xdm:tenant](#xdmtenant) | `string` | Optional | Customer Managed Environment (this schema) |
 | [xdm:topology](#xdmtopology) | `string` | Optional | Customer Managed Environment (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -71,7 +71,7 @@ A continuous deployment continuous integration pipeline (xdm:CICDPipeline) is us
 A set of code, content, and data that together implement an experience. Some applications do not allow a system integrator, partner or customer to perform customization. Other applications may allow customization on a per instance basis. These may be applications managed by the system integrator, partner or customer. An application be defined by a URI referencing the definition of the application.
 
 `xdm:application`
-* is **required**
+* is optional
 * type: `string`
 * defined in this schema
 
@@ -211,7 +211,7 @@ Deployment is the final act of deploying an application (see `xdm:application`) 
 A tenant (see `xdm:tenant`) may work with 1..n environments where the application (see `xdm:application`) runs. Each environment serves a purpose in the CI/CD chain providing a structure whereby changes  to the application can be rolled out. Typically the owner of the application manages transitions between environments. A system integrator, partner or customer may be the owner of the application especially where the application has  been extended and customized. An environment may have a URI referencing the definition of the environment. 
 
 `xdm:environment`
-* is **required**
+* is optional
 * type: `string`
 * defined in this schema
 
@@ -402,7 +402,7 @@ An application (see `xdm:application`) consists of one or more services, deploye
 A description of a customer having a agreement to use a specific set of services (see `xdm:service`). A tenant will typically have a URI which can be used to reference the tenant, and should be resolvable by an identity provider.
 
 `xdm:tenant`
-* is **required**
+* is optional
 * type: `string`
 * defined in this schema
 

@@ -35,6 +35,7 @@ External Source System Audit fields.
 |----------|------|----------|------------|
 | [xdm:createdBy](#xdmcreatedby) | `string` | Optional | External Source System Audit Attributes (this schema) |
 | [xdm:createdDate](#xdmcreateddate) | `string` | Optional | External Source System Audit Attributes (this schema) |
+| [xdm:externalID](#xdmexternalid) | `string` | Optional | External Source System Audit Attributes (this schema) |
 | [xdm:lastActivityDate](#xdmlastactivitydate) | `string` | Optional | External Source System Audit Attributes (this schema) |
 | [xdm:lastReferencedDate](#xdmlastreferenceddate) | `string` | Optional | External Source System Audit Attributes (this schema) |
 | [xdm:lastUpdatedBy](#xdmlastupdatedby) | `string` | Optional | External Source System Audit Attributes (this schema) |
@@ -77,6 +78,26 @@ Date when this record was created.
 
 `string`
 * format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+
+
+
+
+
+
+## xdm:externalID
+### External ID
+
+External unique identifier reference to external source to help identify and deduplicate if and when needed.
+
+`xdm:externalID`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:externalID Type
+
+
+`string`
 
 
 

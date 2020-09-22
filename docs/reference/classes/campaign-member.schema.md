@@ -43,7 +43,7 @@ An XDM Business Campaign Member,which relates members such as contact/lead to a 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Record Schema](../behaviors/record.schema.md#id) |
-| [xdm:campaign](#xdmcampaign) | complex | Optional | XDM Business Campaign Member (this schema) |
+| [xdm:campaign](#xdmcampaign) | `object` | Optional | XDM Business Campaign Member (this schema) |
 | [xdm:campaignMemberID](#xdmcampaignmemberid) | `string` | Optional | XDM Business Campaign Member (this schema) |
 | [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details Mixin](../mixins/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -76,36 +76,62 @@ Campaign ID and Type associated as a key-value pair
 
 `xdm:campaign`
 * is optional
-* type: complex
+* type: `object`
 * defined in this schema
 
 ### xdm:campaign Type
 
-Unknown type ``.
 
-```json
-{
-  "title": "Campaign",
-  "description": "Campaign ID and Type associated as a key-value pair",
-  "properties": {
-    "xdm:ID": {
-      "title": "Campaign ID",
-      "description": "Campaign Unique Identifer",
-      "type": "string"
-    },
-    "xdm:type": {
-      "title": "Campaign Type",
-      "description": "Campaign Type",
-      "type": "string"
-    }
-  },
-  "required": [
-    "xdm:ID",
-    "xdm:type"
-  ],
-  "simpletype": "complex"
-}
-```
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+| `xdm:ID`| string | **Required** |
+| `xdm:type`| string | **Required** |
+
+
+
+#### xdm:ID
+##### Campaign ID
+
+Campaign Unique Identifer
+
+`xdm:ID`
+* is **required**
+* type: `string`
+
+##### xdm:ID Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### xdm:type
+##### Campaign Type
+
+Campaign Type
+
+`xdm:type`
+* is **required**
+* type: `string`
+
+##### xdm:type Type
+
+
+`string`
+
+
+
+
+
+
 
 
 

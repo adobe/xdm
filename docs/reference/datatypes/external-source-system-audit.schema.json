@@ -53,6 +53,11 @@
                     "description": "Last viewed date.",
                     "type": "string",
                     "format": "date-time"
+                },
+                "xdm:externalID": {
+                    "title": "External ID",
+                    "description": "External unique identifier reference to external source to help identify and deduplicate if and when needed.",
+                    "type": "string"
                 }
             }
         }

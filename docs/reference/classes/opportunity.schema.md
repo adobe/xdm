@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/opportunity
 ```
 
-An XDM Business Opportunity.
+This class is used to capture minimum set of properties that define business opportunity.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -22,9 +22,10 @@ An XDM Business Opportunity.
 ```json
 {
   "xdm:opportunityID": "12345",
+  "xdm:opportunityName": "Best Buy AEP",
+  "xdm:opportunityDescription": "This opportunity is for Best buy customer to buy AEP product",
   "xdm:opportunityType": "business",
-  "xdm:accountID": "89765",
-  "xdm:campaignID": "95678"
+  "xdm:stage": "initial"
 }
 ```
 
@@ -33,11 +34,13 @@ An XDM Business Opportunity.
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Record Schema](../behaviors/record.schema.md#id) |
-| [xdm:accountID](#xdmaccountid) | `string` | **Required** | XDM Business Opportunity (this schema) |
-| [xdm:campaignID](#xdmcampaignid) | `string` | Optional | XDM Business Opportunity (this schema) |
+| [xdm:accountID](#xdmaccountid) | `string` | Optional | XDM Business Opportunity (this schema) |
 | [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details Mixin](../mixins/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
-| [xdm:opportunityType](#xdmopportunitytype) | `string` | **Required** | XDM Business Opportunity (this schema) |
-| [xdm:opportuntyID](#xdmopportuntyid) | `string` | Optional | XDM Business Opportunity (this schema) |
+| [xdm:opportunityDescription](#xdmopportunitydescription) | `string` | Optional | XDM Business Opportunity (this schema) |
+| [xdm:opportunityID](#xdmopportunityid) | `string` | **Required** | XDM Business Opportunity (this schema) |
+| [xdm:opportunityName](#xdmopportunityname) | `string` | Optional | XDM Business Opportunity (this schema) |
+| [xdm:opportunityStage](#xdmopportunitystage) | `string` | Optional | XDM Business Opportunity (this schema) |
+| [xdm:opportunityType](#xdmopportunitytype) | `string` | Optional | XDM Business Opportunity (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -64,34 +67,14 @@ A unique identifier for the record.
 ## xdm:accountID
 ### Account ID
 
-Account identifer reference
+Account unique identifier reference that this opportunity is linked to.
 
 `xdm:accountID`
-* is **required**
-* type: `string`
-* defined in this schema
-
-### xdm:accountID Type
-
-
-`string`
-
-
-
-
-
-
-## xdm:campaignID
-### Campaign ID
-
-Campaign unique identifer reference
-
-`xdm:campaignID`
 * is optional
 * type: `string`
 * defined in this schema
 
-### xdm:campaignID Type
+### xdm:accountID Type
 
 
 `string`
@@ -120,17 +103,17 @@ Audit attributes for external sources.
 
 
 
-## xdm:opportunityType
-### Opportunity Type
+## xdm:opportunityDescription
+### Opportunity Description
 
-Type of Opportunity.
+Additional information to describe the opportunity, such as possible products to sell or past purchases from the customer.
 
-`xdm:opportunityType`
-* is **required**
+`xdm:opportunityDescription`
+* is optional
 * type: `string`
 * defined in this schema
 
-### xdm:opportunityType Type
+### xdm:opportunityDescription Type
 
 
 `string`
@@ -140,17 +123,77 @@ Type of Opportunity.
 
 
 
-## xdm:opportuntyID
+## xdm:opportunityID
 ### Opportunity ID
 
-Unique identifer of the opportunity
+Opportunity unique identifer
 
-`xdm:opportuntyID`
+`xdm:opportunityID`
+* is **required**
+* type: `string`
+* defined in this schema
+
+### xdm:opportunityID Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:opportunityName
+### Opportunity Name
+
+Subject or descriptive name, such as the expected order or company name, for the opportunity.
+
+`xdm:opportunityName`
 * is optional
 * type: `string`
 * defined in this schema
 
-### xdm:opportuntyID Type
+### xdm:opportunityName Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:opportunityStage
+### Opportunity Stage
+
+Sales stage of this opportunity to aid the sales team in their efforts to win this opportunity.
+
+`xdm:opportunityStage`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:opportunityStage Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:opportunityType
+### Opportunity Type
+
+Opportunity type such as Existing Business or New Business
+
+`xdm:opportunityType`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:opportunityType Type
 
 
 `string`

@@ -1,0 +1,94 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/customerJourneyManagement/message-delivery-feedback",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Adobe CJM ExperienceEvent - Message Delivery Feedback Details",
+  "description": "Provide details for the delivery feedback for a single message in the Message Execution.",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+
+  "definitions": {
+    "messageDeliveryfeedback": {
+      "properties": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/feedbackStatus": {
+          "title": "Feedback Status",
+          "type": "string",
+          "description": "Provide status of a delivery attempt.",
+          "enum": ["error", "exclude", "send", "bounce", "delay"],
+          "meta:enum": {
+            "error": "Mesage processing failed.",
+            "exclude": "Messageprofile is filtered out for sending the message",
+            "send": "Messages such as Email, SMS, Push that have been dispatched to a person's account, address, or device.",
+            "bounce": "Message failed to deliver, and no longer will be retried.",
+            "delay": "message failed to deliver, but will be retry after next schedule time."
+          }
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageExclusion": {
+          "title": "Message Exclusion",
+          "type": "object",
+          "properties": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/code": {
+              "title": "Exclude Code",
+              "type": "string",
+              "description": "Provide top level exclusion reason, like typology rule, mandatory parameter missing."
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/reason": {
+              "title": "Exclude Reason",
+              "type": "string",
+              "description": "Provide exclusion subcode, like exact typology rule-id."
+            }
+          }
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageFailure": {
+          "title": "Message Failure",
+          "type": "object",
+          "properties": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/reason": {
+              "title": "Failure Reason",
+              "type": "string",
+              "description": "Failure reason for a failed delivery attempt."
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/code": {
+              "title": "Failure Code",
+              "type": "string",
+              "description": "Failure code for a failed delivery attempt."
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/type": {
+              "title": "Failure Type",
+              "type": "string",
+              "description": "Classifies whether it is a soft bounce or hard bounce.",
+              "meta:enum": {
+                "soft": "The reason for failed delivery is temporary.",
+                "hard": "The reason for failed delivery is permanent."
+              }
+            }
+          }
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/retryCount": {
+          "title": "Retry Count",
+          "type": "integer",
+          "description": "Number of failed attempts before the current event. The retryCount starts with '0', for message which is sent in first attempt will have 'retryCount' as 0."
+        }
+      }
+    }
+  },
+  "required": [
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/feedbackStatus"
+  ],
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/messageDeliveryfeedback"
+    }
+  ],
+  "meta:status": "experimental"
+}

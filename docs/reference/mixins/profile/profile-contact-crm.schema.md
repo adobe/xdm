@@ -9,7 +9,7 @@ This mixin is used to capture information regarding person details in context of
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/profile/profile-contact-crm.schema.json](mixins/profile/profile-contact-crm.schema.json) |
+| Can be instantiated | Yes | Deprecated | No | Forbidden | Permitted | [mixins/profile/profile-contact-crm.schema.json](mixins/profile/profile-contact-crm.schema.json) |
 ## Schema Hierarchy
 
 * XDM Business Contact `https://ns.adobe.com/xdm/context/profile-contact-crm`

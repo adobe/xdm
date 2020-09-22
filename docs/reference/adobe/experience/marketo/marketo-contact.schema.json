@@ -49,7 +49,7 @@
     "required": [
         "marketo:contactID"
     ],
-    "meta:status": "experimental",
+    "meta:status": "deprecated",
     "examples": [
         {
             "marketo:contactID": "MKTCNTCT1111",

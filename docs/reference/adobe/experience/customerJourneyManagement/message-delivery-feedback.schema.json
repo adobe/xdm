@@ -86,9 +86,6 @@
             }
         }
     },
-    "required": [
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/feedbackStatus"
-    ],
     "allOf": [
         {
             "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"

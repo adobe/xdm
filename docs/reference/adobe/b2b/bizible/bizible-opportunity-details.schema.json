@@ -1,0 +1,43 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/b2b/bizible/bizible-opportunity-details",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Bizible Business Opportunity Details",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/opportunity"
+    ],
+    "description": "This mixin is used to capture and maintain additional Bizible opportunity attributes. They extend the ones used by industry crm systems.",
+    "definitions": {
+        "bizible-opportunity-details": {
+            "properties": {
+                "bizible:stage": {
+                    "title": "Opportunity Stage",
+                    "description": "Current stage of a business opportunity.",
+                    "type": "string"
+                },
+                "bizible:stagePrevious": {
+                    "title": "Opportunity Previous Stage",
+                    "description": "Previous stage of a business opportunity.",
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/bizible-opportunity-details"
+        }
+    ],
+    "meta:status": "experimental",
+    "examples": [
+        {}
+    ]
+}

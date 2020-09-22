@@ -32,10 +32,20 @@
           "type": "string",
           "description": " JourneyVersion Id triggerieng the MessageExecution."
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionInstanceId": {
-          "title": "JourneyVersion Instance Id",
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionInstanceID": {
+          "title": "JourneyVersion Instance ID",
           "type": "string",
           "description": "Identifier of the journey version instance, specific to one individual (uuid)."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionNodeID": {
+          "title": "Journey Version Node ID",
+          "type": "string",
+          "description": "Identifier of the journey version node, triggering  the Message Execution."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyActionID": {
+          "title": "Journey Action ID",
+          "type": "string",
+          "description": "Journey Action ID, for which MessageExecution is triggered."
         }
       }
     }

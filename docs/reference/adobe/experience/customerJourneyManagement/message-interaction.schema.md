@@ -29,7 +29,7 @@ Describes interaction made by the profile on the message.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType](#httpsnsadobecomexperiencecustomerjourneymanagementmessageinteractioninteractiontype) | `enum` | **Required** | Adobe CJM ExperienceEvent - Message interaction details (this schema) |
+| [https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType](#httpsnsadobecomexperiencecustomerjourneymanagementmessageinteractioninteractiontype) | `enum` | Optional | Adobe CJM ExperienceEvent - Message interaction details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/trackingType](#httpsnsadobecomexperiencecustomerjourneymanagementmessageinteractiontrackingtype) | `string` | Optional | Adobe CJM ExperienceEvent - Message interaction details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/urlID](#httpsnsadobecomexperiencecustomerjourneymanagementmessageinteractionurlid) | `string` | Optional | Adobe CJM ExperienceEvent - Message interaction details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -40,7 +40,7 @@ Describes interaction made by the profile on the message.
 Specify action made by user on a message.
 
 `https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType`
-* is **required**
+* is optional
 * type: `enum`
 * defined in this schema
 

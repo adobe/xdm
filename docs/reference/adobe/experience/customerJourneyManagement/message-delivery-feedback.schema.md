@@ -33,7 +33,7 @@ Provide details for the delivery feedback for a single message in the Message Ex
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/feedbackStatus](#httpsnsadobecomexperiencecustomerjourneymanagementmessagedeliveryfeedbackfeedbackstatus) | `enum` | **Required** | Adobe CJM ExperienceEvent - Message Delivery Feedback Details (this schema) |
+| [https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/feedbackStatus](#httpsnsadobecomexperiencecustomerjourneymanagementmessagedeliveryfeedbackfeedbackstatus) | `enum` | Optional | Adobe CJM ExperienceEvent - Message Delivery Feedback Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageExclusion](#httpsnsadobecomexperiencecustomerjourneymanagementmessagedeliveryfeedbackmessageexclusion) | `object` | Optional | Adobe CJM ExperienceEvent - Message Delivery Feedback Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageFailure](#httpsnsadobecomexperiencecustomerjourneymanagementmessagedeliveryfeedbackmessagefailure) | `object` | Optional | Adobe CJM ExperienceEvent - Message Delivery Feedback Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/retryCount](#httpsnsadobecomexperiencecustomerjourneymanagementmessagedeliveryfeedbackretrycount) | `integer` | Optional | Adobe CJM ExperienceEvent - Message Delivery Feedback Details (this schema) |
@@ -45,7 +45,7 @@ Provide details for the delivery feedback for a single message in the Message Ex
 Provide status of a delivery attempt.
 
 `https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/feedbackStatus`
-* is **required**
+* is optional
 * type: `enum`
 * defined in this schema
 

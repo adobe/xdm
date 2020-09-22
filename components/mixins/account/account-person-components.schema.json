@@ -26,6 +26,11 @@
                 "description": "Account person relationship unique identifier at the source.",
                 "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
               },
+              "xdm:sourceExternalID": {
+                "title": "Source External ID",
+                "description": "External unique identifer at the source.",
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+              },
               "xdm:sourceAccountID": {
                 "title": "Source Account ID",
                 "description": "Account unique identifier at the source.",

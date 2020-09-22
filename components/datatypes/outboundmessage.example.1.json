@@ -1,4 +1,13 @@
 {
+  "xdm:profileSnapshot": {
+    "profile-snapshot": {
+      "xdm:person": {
+        "xdm:name": {
+          "xdm:firstName": "Jane"
+        }
+      }
+    }
+  },
   "xdm:messageID": 56979156,
   "xdm:variant": "TEST A/B",
   "xdm:seedMember": false,

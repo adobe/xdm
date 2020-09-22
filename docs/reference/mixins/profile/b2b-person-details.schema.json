@@ -28,6 +28,11 @@
                     "description": "Field recording the current marketing/sales status of the Person.",
                     "type": "string"
                 },
+                "xdm:personSource": {
+                    "title": "Person Source",
+                    "description": "Source from where the information regarding the person was received.",
+                    "type": "string"
+                },
                 "xdm:personScore": {
                     "title": "Person Score",
                     "description": "A Score generated for a person by the CRM system.",
@@ -41,11 +46,6 @@
                 "xdm:leadOrganization": {
                     "title": "Lead Organization Properties",
                     "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-account-organization"
-                },
-                "xdm:leadSource": {
-                    "title": "Lead Source",
-                    "description": "Field recording what source the lead originated from.",
-                    "type": "string"
                 },
                 "xdm:anonymousHostname": {
                     "title": "Anonymous Hostname",
@@ -135,11 +135,6 @@
                 "xdm:convertedOpportunityID": {
                     "title": "Converted Opportunity ID",
                     "description": "Opportunity Id if the lead was successfully converted.",
-                    "type": "string"
-                },
-                "xdm:personSource": {
-                    "title": "Person Source",
-                    "description": "Source from where the information regarding the person was received.",
                     "type": "string"
                 },
                 "xdm:personOptInOut": {

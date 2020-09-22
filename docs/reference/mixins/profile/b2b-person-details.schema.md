@@ -56,7 +56,6 @@ This mixin is used to capture B2B Person specific attributes. A B2B Person could
 | [xdm:isConverted](#xdmisconverted) | `boolean` | Optional | XDM Business Person Details (this schema) |
 | [xdm:isMarketingSuspended](#xdmismarketingsuspended) | `boolean` | Optional | XDM Business Person Details (this schema) |
 | [xdm:leadOrganization](#xdmleadorganization) | Account Organization | Optional | XDM Business Person Details (this schema) |
-| [xdm:leadSource](#xdmleadsource) | `string` | Optional | XDM Business Person Details (this schema) |
 | [xdm:marketingSuspendedCause](#xdmmarketingsuspendedcause) | `string` | Optional | XDM Business Person Details (this schema) |
 | [xdm:mobilePhone](#xdmmobilephone) | Phone number | Optional | [Profile personal details](profile-personal-details.schema.md#xdmmobilephone) |
 | [xdm:organizations](#xdmorganizations) | `string[]` | Optional | [Profile work details](profile-work-details.schema.md#xdmorganizations) |
@@ -641,26 +640,6 @@ Marketing suspended flag.
 
 
 * [Account Organization](../../datatypes/account-organization.schema.md) – `https://ns.adobe.com/xdm/datatypes/b2b-account-organization`
-
-
-
-
-
-## xdm:leadSource
-### Lead Source
-
-Field recording what source the lead originated from.
-
-`xdm:leadSource`
-* is optional
-* type: `string`
-* defined in this schema
-
-### xdm:leadSource Type
-
-
-`string`
-
 
 
 

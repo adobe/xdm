@@ -1,5 +1,5 @@
 
-# Marketing List Schema
+# XDM Business Marketing List Schema
 
 ```
 https://ns.adobe.com/xdm/classes/marketing-list
@@ -12,28 +12,28 @@ Marketing list allows you to prioritize on prospect clients who are most likely 
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [classes/marketing-list.schema.json](classes/marketing-list.schema.json) |
 ## Schema Hierarchy
 
-* Marketing List `https://ns.adobe.com/xdm/classes/marketing-list`
+* XDM Business Marketing List `https://ns.adobe.com/xdm/classes/marketing-list`
   * [Extensibility base schema](../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Record Schema](../behaviors/record.schema.md) `https://ns.adobe.com/xdm/data/record`
   * [External Source System Audit Details Mixin](../mixins/shared/external-source-system-audit-details.schema.md) `https://ns.adobe.com/xdm/common/external-source-system-audit-details`
 
 
-## Marketing List Example
+## XDM Business Marketing List Example
 ```json
 {
   "xdm:marketingListID": "MKTLST1111"
 }
 ```
 
-# Marketing List Properties
+# XDM Business Marketing List Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Record Schema](../behaviors/record.schema.md#id) |
 | [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details Mixin](../mixins/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
-| [xdm:marketingListDescription](#xdmmarketinglistdescription) | `string` | Optional | Marketing List (this schema) |
-| [xdm:marketingListID](#xdmmarketinglistid) | `string` | **Required** | Marketing List (this schema) |
-| [xdm:marketingListName](#xdmmarketinglistname) | `string` | Optional | Marketing List (this schema) |
+| [xdm:marketingListDescription](#xdmmarketinglistdescription) | `string` | Optional | XDM Business Marketing List (this schema) |
+| [xdm:marketingListID](#xdmmarketinglistid) | `string` | **Required** | XDM Business Marketing List (this schema) |
+| [xdm:marketingListName](#xdmmarketinglistname) | `string` | Optional | XDM Business Marketing List (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id

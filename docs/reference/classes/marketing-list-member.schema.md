@@ -1,5 +1,5 @@
 
-# Marketing List Member Schema
+# XDM Business Marketing List Members Schema
 
 ```
 https://ns.adobe.com/xdm/classes/marketing-list-member
@@ -12,28 +12,28 @@ Members/Persons/Contacts etc. associated with a marketing list.
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [classes/marketing-list-member.schema.json](classes/marketing-list-member.schema.json) |
 ## Schema Hierarchy
 
-* Marketing List Member `https://ns.adobe.com/xdm/classes/marketing-list-member`
+* XDM Business Marketing List Members `https://ns.adobe.com/xdm/classes/marketing-list-member`
   * [Extensibility base schema](../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Record Schema](../behaviors/record.schema.md) `https://ns.adobe.com/xdm/data/record`
   * [External Source System Audit Details Mixin](../mixins/shared/external-source-system-audit-details.schema.md) `https://ns.adobe.com/xdm/common/external-source-system-audit-details`
 
 
-## Marketing List Member Example
+## XDM Business Marketing List Members Example
 ```json
 {
   "xdm:marketingListMemberID": "MKTMBR11111"
 }
 ```
 
-# Marketing List Member Properties
+# XDM Business Marketing List Members Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Record Schema](../behaviors/record.schema.md#id) |
 | [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details Mixin](../mixins/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
-| [xdm:marketingListID](#xdmmarketinglistid) | `string` | Optional | Marketing List Member (this schema) |
-| [xdm:marketingListMemberID](#xdmmarketinglistmemberid) | `string` | **Required** | Marketing List Member (this schema) |
-| [xdm:personID](#xdmpersonid) | `string` | Optional | Marketing List Member (this schema) |
+| [xdm:marketingListID](#xdmmarketinglistid) | `string` | Optional | XDM Business Marketing List Members (this schema) |
+| [xdm:marketingListMemberID](#xdmmarketinglistmemberid) | `string` | **Required** | XDM Business Marketing List Members (this schema) |
+| [xdm:personID](#xdmpersonid) | `string` | Optional | XDM Business Marketing List Members (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id

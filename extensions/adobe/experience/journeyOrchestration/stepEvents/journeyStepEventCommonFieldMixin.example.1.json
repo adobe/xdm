@@ -1,13 +1,13 @@
-{ 
-  "https://ns.adobe.com/experience/journeyOrchestration/entrance":true,
-  "https://ns.adobe.com/experience/journeyOrchestration/reentrance":false,
-  "https://ns.adobe.com/experience/journeyOrchestration/instanceEnded":true,
-  "https://ns.adobe.com/experience/journeyOrchestration/eventID":"scheduledNotificationReceived",
-  "https://ns.adobe.com/experience/journeyOrchestration/nodeID":"c19714bc-e74f-4448-",
+{
+  "https://ns.adobe.com/experience/journeyOrchestration/entrance": true,
+  "https://ns.adobe.com/experience/journeyOrchestration/reentrance": false,
+  "https://ns.adobe.com/experience/journeyOrchestration/instanceEnded": true,
+  "https://ns.adobe.com/experience/journeyOrchestration/eventID": "scheduledNotificationReceived",
+  "https://ns.adobe.com/experience/journeyOrchestration/nodeID": "c19714bc-e74f-4448-",
   "https://ns.adobe.com/experience/journeyOrchestration/stepID": "c19714bc-e74f-4448-94a5-425b7b609911",
-  "https://ns.adobe.com/experience/journeyOrchestration/stepType":"actionStep",
-  "https://ns.adobe.com/experience/journeyOrchestration/stepStatus":"endStep",
-  "https://ns.adobe.com/experience/journeyOrchestration/journeyID":"fc0b645e-b3e3-4441-99e1-faf3f9c7064f",
-  "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionID":"f3485959-0a9e-4004-82d9-f11bd6c4585b",
-  "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionName""Step_Event_test_2"            
+  "https://ns.adobe.com/experience/journeyOrchestration/stepType": "actionStep",
+  "https://ns.adobe.com/experience/journeyOrchestration/stepStatus": "endStep",
+  "https://ns.adobe.com/experience/journeyOrchestration/journeyID": "fc0b645e-b3e3-4441-99e1-faf3f9c7064f",
+  "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionID": "f3485959-0a9e-4004-82d9-f11bd6c4585b",
+  "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionName": "Step_Event_test_2"
 }

@@ -1,0 +1,62 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/classes/marketing-list",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "XDM Business Marketing List",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:extends": [
+        "https://ns.adobe.com/xdm/data/record"
+    ],
+    "description": "Marketing list allows you to prioritize on prospect clients who are most likely to buy your product.",
+    "definitions": {
+        "marketing-list": {
+            "properties": {
+                "xdm:marketingListID": {
+                    "title": "Marketing List ID",
+                    "description": "Marketing list unique identifer.",
+                    "type": "string"
+                },
+                "xdm:marketingListName": {
+                    "title": "Marketing List Name",
+                    "description": "Marketing list name.",
+                    "type": "string"
+                },
+                "xdm:marketingListDescription": {
+                    "title": "Marketing List Description",
+                    "description": "Marketing list description.",
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/data/record"
+        },
+        {
+            "$ref": "#/definitions/marketing-list"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
+        }
+    ],
+    "required": [
+        "xdm:marketingListID"
+    ],
+    "meta:status": "experimental",
+    "examples": [
+        {
+            "xdm:marketingListID": "MKTLST1111"
+        }
+    ]
+}

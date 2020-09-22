@@ -68,6 +68,13 @@
     "meta:status": "stable",
     "examples": [
         {
+            "@id": "https://data.adobe.io/entities/geo/potsdam",
+            "xdm:countryCode": "DE",
+            "xdm:stateProvince": "DE-BB",
+            "xdm:city": "Potsdam",
+            "xdm:postalCode": "14482"
+        },
+        {
             "@id": "https://data.adobe.io/entities/geo/tokyo",
             "xdm:countryCode": "JP",
             "xdm:stateProvince": "JP-13",
@@ -75,13 +82,6 @@
             "xdm:postalCode": "141-0032",
             "schema:latitude": 35.6185,
             "schema:longitude": 139.73237
-        },
-        {
-            "@id": "https://data.adobe.io/entities/geo/potsdam",
-            "xdm:countryCode": "DE",
-            "xdm:stateProvince": "DE-BB",
-            "xdm:city": "Potsdam",
-            "xdm:postalCode": "14482"
         }
     ]
 }

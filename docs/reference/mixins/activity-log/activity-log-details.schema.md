@@ -87,12 +87,12 @@ An XDM Activity representing task or a business event
 | [xdm:activityStartDateTime](#xdmactivitystartdatetime) | `string` | Optional | XDM Business Activity Log details (this schema) |
 | [xdm:activityStatus](#xdmactivitystatus) | `string` | Optional | XDM Business Activity Log details (this schema) |
 | [xdm:activitySubject](#xdmactivitysubject) | `string` | Optional | XDM Business Activity Log details (this schema) |
-| [xdm:asset](#xdmasset) | complex | Optional | XDM Business Activity Log details (this schema) |
-| [xdm:campaign](#xdmcampaign) | complex | Optional | XDM Business Activity Log details (this schema) |
+| [xdm:asset](#xdmasset) | `object` | Optional | XDM Business Activity Log details (this schema) |
+| [xdm:campaign](#xdmcampaign) | `object` | Optional | XDM Business Activity Log details (this schema) |
 | [xdm:division](#xdmdivision) | `string` | Optional | XDM Business Activity Log details (this schema) |
-| [xdm:entity](#xdmentity) | complex | Optional | XDM Business Activity Log details (this schema) |
+| [xdm:entity](#xdmentity) | `object` | Optional | XDM Business Activity Log details (this schema) |
 | [xdm:highPriority](#xdmhighpriority) | `boolean` | Optional | XDM Business Activity Log details (this schema) |
-| [xdm:interactionEvents](#xdminteractionevents) | complex | Optional | XDM Business Activity Log details (this schema) |
+| [xdm:interactionEvents](#xdminteractionevents) | `object` | Optional | XDM Business Activity Log details (this schema) |
 | [xdm:isCompleted](#xdmiscompleted) | `boolean` | Optional | XDM Business Activity Log details (this schema) |
 | [xdm:isDeleted](#xdmisdeleted) | `boolean` | Optional | XDM Business Activity Log details (this schema) |
 | [xdm:isTask](#xdmistask) | `boolean` | Optional | XDM Business Activity Log details (this schema) |
@@ -271,36 +271,62 @@ Asset details for its type and ID
 
 `xdm:asset`
 * is optional
-* type: complex
+* type: `object`
 * defined in this schema
 
 ### xdm:asset Type
 
-Unknown type ``.
 
-```json
-{
-  "title": "Object asset",
-  "description": "Asset details for its type and ID",
-  "properties": {
-    "xdm:type": {
-      "title": "Asset Type",
-      "description": "Holds Asset Type",
-      "type": "string"
-    },
-    "xdm:ID": {
-      "title": "Asset ID",
-      "description": "Holds Asset Identifier",
-      "type": "string"
-    }
-  },
-  "required": [
-    "xdm:type",
-    "xdm:ID"
-  ],
-  "simpletype": "complex"
-}
-```
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+| `xdm:ID`| string | **Required** |
+| `xdm:type`| string | **Required** |
+
+
+
+#### xdm:ID
+##### Asset ID
+
+Holds Asset Identifier
+
+`xdm:ID`
+* is **required**
+* type: `string`
+
+##### xdm:ID Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### xdm:type
+##### Asset Type
+
+Holds Asset Type
+
+`xdm:type`
+* is **required**
+* type: `string`
+
+##### xdm:type Type
+
+
+`string`
+
+
+
+
+
+
 
 
 
@@ -313,74 +339,153 @@ Campaign amd its relevant associated details
 
 `xdm:campaign`
 * is optional
-* type: complex
+* type: `object`
 * defined in this schema
 
 ### xdm:campaign Type
 
-Unknown type ``.
+
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+| `xdm:ID`| string | Optional |
+| `xdm:member`| object | Optional |
+| `xdm:program`| object | Optional |
+| `xdm:type`| string | Optional |
+
+
+
+#### xdm:ID
+##### Campaign ID
+
+Unique identifer for Campaign.
+
+`xdm:ID`
+* is optional
+* type: `string`
+
+##### xdm:ID Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### xdm:member
+
+undefined
+
+`xdm:member`
+* is optional
+* type: `object`
+
+##### xdm:member Type
+
+Unknown type `object`.
 
 ```json
 {
-  "title": "Campaign details",
-  "description": "Campaign amd its relevant associated details",
+  "type": "object",
+  "properties": {
+    "xdm:type": {
+      "title": "Member type",
+      "description": "Whether the Member is a lead or a contact",
+      "type": "string"
+    },
+    "xdm:ID": {
+      "title": "ID of the Member",
+      "description": "Member's ID",
+      "type": "string"
+    }
+  },
+  "simpletype": "`object`"
+}
+```
+
+
+
+
+
+
+
+#### xdm:program
+
+undefined
+
+`xdm:program`
+* is optional
+* type: `object`
+
+##### xdm:program Type
+
+Unknown type `object`.
+
+```json
+{
+  "type": "object",
   "properties": {
     "xdm:ID": {
-      "title": "Campaign ID",
+      "title": "Program ID associated with the campaign",
       "description": "Unique identifer for Campaign.",
       "type": "string"
     },
     "xdm:type": {
-      "title": "Campaign Type",
-      "description": "The type of campaign for which audience is invited",
+      "title": "Program Type",
+      "description": "The type of program which is associated with the campaign",
       "type": "string"
     },
-    "xdm:member": {
+    "xdm:step": {
+      "type": "object",
       "properties": {
-        "xdm:type": {
-          "title": "Member type",
-          "description": "Whether the Member is a lead or a contact",
-          "type": "string"
+        "xdm:number": {
+          "title": "Workflow step number",
+          "description": "Program's Workflow Step Number",
+          "type": "integer"
         },
-        "xdm:ID": {
-          "title": "ID of the Member",
-          "description": "Member's ID",
+        "xdm:status": {
+          "title": "Program Workflow Step Status",
+          "description": "Program's workflow name of the step status",
           "type": "string"
-        }
-      }
-    },
-    "xdm:program": {
-      "properties": {
-        "xdm:ID": {
-          "title": "Program ID associated with the campaign",
-          "description": "Unique identifer for Campaign.",
-          "type": "string"
-        },
-        "xdm:type": {
-          "title": "Program Type",
-          "description": "The type of program which is associated with the campaign",
-          "type": "string"
-        },
-        "xdm:step": {
-          "properties": {
-            "xdm:number": {
-              "title": "Workflow step number",
-              "description": "Program's Workflow Step Number",
-              "type": "integer"
-            },
-            "xdm:status": {
-              "title": "Program Workflow Step Status",
-              "description": "Program's workflow name of the step status",
-              "type": "string"
-            }
-          }
         }
       }
     }
   },
-  "simpletype": "complex"
+  "simpletype": "`object`"
 }
 ```
+
+
+
+
+
+
+
+#### xdm:type
+##### Campaign Type
+
+The type of campaign for which audience is invited
+
+`xdm:type`
+* is optional
+* type: `string`
+
+##### xdm:type Type
+
+
+`string`
+
+
+
+
+
+
 
 
 
@@ -413,36 +518,62 @@ Holds Entity Name and its ID on which activity action is based upon.
 
 `xdm:entity`
 * is optional
-* type: complex
+* type: `object`
 * defined in this schema
 
 ### xdm:entity Type
 
-Unknown type ``.
 
-```json
-{
-  "title": "Entity",
-  "description": "Holds Entity Name and its ID on which activity action is based upon.",
-  "properties": {
-    "xdm:name": {
-      "title": "Entity Name",
-      "description": "Holds Entity Name",
-      "type": "string"
-    },
-    "xdm:ID": {
-      "title": "Entity tuple ID",
-      "description": "Holds Entity Tuple's Primary Identifier",
-      "type": "string"
-    }
-  },
-  "required": [
-    "xdm:name",
-    "xdm:ID"
-  ],
-  "simpletype": "complex"
-}
-```
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+| `xdm:ID`| string | **Required** |
+| `xdm:name`| string | **Required** |
+
+
+
+#### xdm:ID
+##### Entity tuple ID
+
+Holds Entity Tuple's Primary Identifier
+
+`xdm:ID`
+* is **required**
+* type: `string`
+
+##### xdm:ID Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### xdm:name
+##### Entity Name
+
+Holds Entity Name
+
+`xdm:name`
+* is **required**
+* type: `string`
+
+##### xdm:name Type
+
+
+`string`
+
+
+
+
+
+
 
 
 
@@ -474,48 +605,101 @@ collection of various forms of interactions
 
 `xdm:interactionEvents`
 * is optional
-* type: complex
+* type: `object`
 * defined in this schema
 
 ### xdm:interactionEvents Type
 
-Unknown type ``.
+
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+| `xdm:email`|  | Optional |
+| `xdm:meeting`| object | Optional |
+| `xdm:phoneCall`|  | Optional |
+
+
+
+#### xdm:email
+##### Email interaction
+
+Contextual information captured during any given email message
+
+`xdm:email`
+* is optional
+* type: reference
+
+##### xdm:email Type
+
+
+* []() – `https://ns.adobe.com/xdm/common/emailinteraction`
+
+
+
+
+
+
+
+#### xdm:meeting
+##### Meeting
+
+Meeting details with location co-ordinates
+
+`xdm:meeting`
+* is optional
+* type: `object`
+
+##### xdm:meeting Type
+
+Unknown type `object`.
 
 ```json
 {
-  "title": "Interaction Events",
-  "description": "collection of various forms of interactions",
+  "type": "object",
+  "title": "Meeting",
+  "description": "Meeting details with location co-ordinates",
   "properties": {
-    "xdm:phoneCall": {
-      "title": "Phone interaction",
-      "$ref": "https://ns.adobe.com/xdm/common/phoneinteraction",
-      "description": "Contextual information captured during a given phone conversation"
+    "xdm:meetingDetails": {
+      "title": "Meeting interaction",
+      "$ref": "https://ns.adobe.com/xdm/common/meetinginteraction",
+      "description": "Contextual information captured for a online/offline meeting"
     },
-    "xdm:meeting": {
-      "title": "Meeting",
-      "description": "Meeting details with location co-ordinates",
-      "properties": {
-        "xdm:meetingDetails": {
-          "title": "Meeting interaction",
-          "$ref": "https://ns.adobe.com/xdm/common/meetinginteraction",
-          "description": "Contextual information captured for a online/offline meeting"
-        },
-        "xdm:location": {
-          "title": "Physical location of the event management if meeting is offline ",
-          "$ref": "https://ns.adobe.com/xdm/context/place",
-          "description": "Physical location where the meeting is taking place"
-        }
-      }
-    },
-    "xdm:email": {
-      "title": "Email interaction",
-      "$ref": "https://ns.adobe.com/xdm/common/emailinteraction",
-      "description": "Contextual information captured during any given email message"
+    "xdm:location": {
+      "title": "Physical location of the event management if meeting is offline ",
+      "$ref": "https://ns.adobe.com/xdm/context/place",
+      "description": "Physical location where the meeting is taking place"
     }
   },
-  "simpletype": "complex"
+  "simpletype": "`object`"
 }
 ```
+
+
+
+
+
+
+
+#### xdm:phoneCall
+##### Phone interaction
+
+Contextual information captured during a given phone conversation
+
+`xdm:phoneCall`
+* is optional
+* type: reference
+
+##### xdm:phoneCall Type
+
+
+* []() – `https://ns.adobe.com/xdm/common/phoneinteraction`
+
+
+
+
+
 
 
 

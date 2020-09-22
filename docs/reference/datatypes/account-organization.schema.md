@@ -26,7 +26,7 @@ Commonly used organizational attributes for a B2B account such as number of empl
 | [xdm:SICCode](#xdmsiccode) | `string` | Optional | Account Organization (this schema) |
 | [xdm:SICDescription](#xdmsicdescription) | `string` | Optional | Account Organization (this schema) |
 | [xdm:annualRevenue](#xdmannualrevenue) | `number` | Optional | Account Organization (this schema) |
-| [xdm:compantProductAndServices](#xdmcompantproductandservices) | `string` | Optional | Account Organization (this schema) |
+| [xdm:companyProductAndServices](#xdmcompanyproductandservices) | `string` | Optional | Account Organization (this schema) |
 | [xdm:facebookPageUrl](#xdmfacebookpageurl) | `string` | Optional | Account Organization (this schema) |
 | [xdm:industry](#xdmindustry) | `string` | Optional | Account Organization (this schema) |
 | [xdm:jigsaw](#xdmjigsaw) | `string` | Optional | Account Organization (this schema) |
@@ -162,17 +162,17 @@ Estimated amount of annual revenue of the organization.
 
 
 
-## xdm:compantProductAndServices
+## xdm:companyProductAndServices
 ### Company Product and Services
 
 Product and Services the Company is dealing or doing business in.
 
-`xdm:compantProductAndServices`
+`xdm:companyProductAndServices`
 * is optional
 * type: `string`
 * defined in this schema
 
-### xdm:compantProductAndServices Type
+### xdm:companyProductAndServices Type
 
 
 `string`

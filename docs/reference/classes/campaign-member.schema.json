@@ -25,6 +25,7 @@
                     "type": "string"
                 },
                 "xdm:campaign": {
+                    "type": "object",
                     "title": "Campaign",
                     "description": "Campaign ID and Type associated as a key-value pair",
                     "properties": {

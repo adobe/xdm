@@ -19,12 +19,26 @@
         "xdm:decisionEventID": {
           "type": "string",
           "title": "Decision Event Identifier",
-          "description": "The unique identifier from the decision event. For a given decision request and profile the output of the decision is a unique event. If the same decision is made again for the same profile and the output are the same options, it is considered a different proposition with a unique propositionID. See https://ns.adobe.com/experience/decisioning/proposition."
+          "description": "The unique identifier of the decision event. For a given decision request and profile identity the output of the decision is a unique event. If a decision is requested again for the same profile and the output are the same options, it is still considered a different proposition with a unique propositionID. See https://ns.adobe.com/experience/decisioning/proposition."
+        },
+        "xdm:selections": {
+          "type": "array",
+          "title": "Selected Decision Content Items",
+          "description": "One or more of the item identifiers that this experience event is attributed to. Those item identifiers were returned as results of the decision for a requested scope. For instance, if the decision returned five proposed videos to watch and the user selected two in a \"Save For Later\" action, then this experience event may record the user's reaction with an event type \"custom.savedToWatchLater\". ",
+          "items": {
+            "type": "string",
+            "description": "An item identifier from the decision proposition's options. See 'selections' of the 'Decision Proposition Detail'."
+          }
         },
         "xdm:decisionScope": {
           "type": "string",
           "title": "Decision Event Scope",
-          "description": "The scope identifier that was used as an input for the decision request. This identifier selects the locatation or placement for which the decision was requested, plus any other static context used."
+          "description": "The scope that is associated with the decision's items reported in the 'xdm:selection' property. This is the same scope that was in effect when the decision was made that proposed the selected items."
+        },
+        "xdm:decisionScopeDetails": {
+          "$ref": "https://ns.adobe.com/experience/decisioning/scope-details",
+          "title": "Decision Event Scope Details",
+          "description": "A snapshot of properties from the scope of the decision when it was made.."
         }
       }
     }

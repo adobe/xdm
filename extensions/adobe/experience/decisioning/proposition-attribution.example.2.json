@@ -2,23 +2,41 @@
   "https://ns.adobe.com/experience/decisioning/attribution": [
     {
       "xdm:decisionEventID": "TNT:activity1:experience1:1597208433",
-      "xdm:decisionScope": "demo-box",
-      "xdm:activityID": "actitivty1"
+      "xdm:selections": [
+        {
+          "xdm:id": "experience1"
+        }
+      ],
+      "xdm:decisionScope": "__view__",
+      "xdm:decisionScopeDetails": {
+        "xdm:id": "__view__",
+        "xdm:decisionProvider": "Target Premium",
+        "xdm:placement": {
+          "xdm:id": "mbox1"
+        },
+        "xdm:activity": {
+          "xdm:id": "actitivty1"
+        }
+      }
     },
     {
       "xdm:decisionEventID": "3cc33a7e-13ca-4b19-b25d-c816eff9a70a",
-      "xdm:decisionScope": "eyJhY3Rpdml0eUlkIjoieGNvcmU6b2ZmZXItYWN0aXZpdHk6MTFjZmIxZmE5MzM4MWFjYSIsInBsYWNlbWVudElkIjoieGNvcmU6b2ZmZXItcGxhY2VtZW50OjExNzUwMDk2MTJiMDEwMGMifQ==",
-      "xdm:activity": {
-        "xdm:id": "xcore:offer-placement:11cfb1fa93381aca"
-      },
-      "xdm:placement": {
-        "xdm:id": "xcore:offer-placement:1175009612b0100c"
-      },
       "xdm:selections": [
         {
-          "xdm:id": "xcore:personalized-offer:f67bab756ed6ee4"
+          "xdm:id": "personalized-offer:f67bab756ed6ee4"
         }
-      ]
+      ],
+      "xdm:decisionScope": "scope:12cfc3fa94281acb",
+      "xdm:decisionScopeDetails": {
+        "xdm:id": "scope:12cfc3fa94281acb",
+        "xdm:placement": {
+          "xdm:id": "offer-placement:1175009612b0100c"
+        },
+        "xdm:activity": {
+          "xdm:id": "offer-activity:11cfb1fa93381aca"
+        },
+        "xdm:decisionProvider": "AEP Decisioning"
+      }
     }
   ]
 }

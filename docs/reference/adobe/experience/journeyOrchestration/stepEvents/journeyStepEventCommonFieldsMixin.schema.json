@@ -157,6 +157,51 @@
                             "title": "batchUnitaryBranchID",
                             "description": "If the instance has been triggered from a batch instance, unitary branch ID.",
                             "type": "string"
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/journeyNodeName": {
+                            "title": "journeyNodeName",
+                            "description": "Name of the Journey Node being processed.",
+                            "type": "string"
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/journeyNodeProcessed": {
+                            "title": "journeyNodeProcessed",
+                            "description": "Field describes if the journeyNode is processed.",
+                            "type": "boolean"
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/eventProcessed": {
+                            "title": "eventProcessed",
+                            "description": "Boolean field describes if the event has been Processed. ",
+                            "type": "boolean"
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyID": {
+                            "title": "originJumpJourneyID",
+                            "description": "Journey ID of the initial journey in a journey jump scenario. ",
+                            "type": "string"
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyVersionID": {
+                            "title": "originJumpJourneyVersionID",
+                            "description": "Journey version ID of the initial journey in a journey jump scenario. ",
+                            "type": "string"
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyInstanceID": {
+                            "title": "originJumpJourneyInstanceID",
+                            "description": "Journey instance ID of the initial journey in a journey jump scenario. ",
+                            "type": "string"
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyID": {
+                            "title": "previousJumpJourneyID",
+                            "description": "Journey ID of the previous journey in a journey jump scenario. ",
+                            "type": "string"
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyVersionID": {
+                            "title": "previousJumpJourneyVersionID",
+                            "description": "Journey version ID of the previous journey in a journey jump scenario. ",
+                            "type": "string"
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyInstanceID": {
+                            "title": "previousJumpJourneyInstanceID",
+                            "description": "Journey instance ID of the previous journey in a journey jump scenario. ",
+                            "type": "string"
                         }
                     }
                 }

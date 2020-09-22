@@ -53,6 +53,7 @@
             "^id3:.*$": {},
             "^dataDotCom:.*$": {},
             "^marketo:.*$": {},
+            "^bizible:.*$": {},
             ".+://.+": {},
             "@.*": {}
           },
@@ -243,6 +244,11 @@
                   "type": "string",
                   "format": "url",
                   "const": "https://ns.adobe.com/marketo/"
+                },
+                "bizible": {
+                  "type": "string",
+                  "format": "url",
+                  "const": "https://ns.adobe.com/bizible/"
                 }
               },
               "additionalProperties": false,
@@ -285,6 +291,7 @@
             "^id3:.*$": {},
             "^dataDotCom:.*$": {},
             "^marketo:.*$": {},
+            "^bizible:.*$": {},
             ".+://.+": {}
           },
           "required": ["@context"],

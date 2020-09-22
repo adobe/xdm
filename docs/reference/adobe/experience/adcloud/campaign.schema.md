@@ -15,6 +15,20 @@ Adobe Advertising Cloud ad campaign hierarchy details such as, account, package,
 
 ```json
 {
+  "xdm:accountId": "123456",
+  "xdm:dspId": "2",
+  "xdm:campaignId": "987654",
+  "xdm:placementId": "7656467",
+  "xdm:packageId": "98766172",
+  "xdm:advertiserId": "87612391",
+  "xdm:experimentId": "9812987",
+  "xdm:sampleGroupId": "8676378",
+  "xdm:currency": "USD"
+}
+```
+
+```json
+{
   "@id": "100001061",
   "searchads:campaignId": "10001234",
   "searchads:accountId": "10001456",
@@ -46,20 +60,6 @@ Adobe Advertising Cloud ad campaign hierarchy details such as, account, package,
   "dsp:campaignEndTime": "2019-01-11 00:00:00",
   "repo:createDate": "2019-04-26T14:00:00+00:00",
   "repo:modifyDate": "2019-04-26T14:00:00+00:00"
-}
-```
-
-```json
-{
-  "xdm:accountId": "123456",
-  "xdm:dspId": "2",
-  "xdm:campaignId": "987654",
-  "xdm:placementId": "7656467",
-  "xdm:packageId": "98766172",
-  "xdm:advertiserId": "87612391",
-  "xdm:experimentId": "9812987",
-  "xdm:sampleGroupId": "8676378",
-  "xdm:currency": "USD"
 }
 ```
 

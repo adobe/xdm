@@ -158,8 +158,8 @@
               "description": "If the instance has been triggered from a batch instance, unitary branch ID.",
               "type": "string"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/journeyNodeName": {
-              "title": "journeyNodeName",
+            "https://ns.adobe.com/experience/journeyOrchestration/nodeName": {
+              "title": "nodeName",
               "description": "Name of the Journey Node being processed.",
               "type": "string"
             },

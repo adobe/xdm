@@ -3,8 +3,7 @@
     "xdm:dataCollection": {
       "xdm:choice": "yes",
       "xdm:timestamp": "2019-01-01T15:52:25+00:00",
-      "xdm:basisOfProcessing": "consent",
-      "xdm:notice": "Can we collect data for approved purposes?"
+      "xdm:basisOfProcessing": "consent"
     },
     "xdm:deviceLinking": {
       "xdm:basisOfProcessing": "vital_interest"
@@ -48,7 +47,7 @@
   },
   "xdm:version": "1.0.0",
   "xdm:timestamp": "2019-01-01T15:52:25+00:00",
-  "xdm:source": "OneTrust",
+  "xdm:source": "BestCMP",
   "xdm:userCountry": "US-CA",
   "xdm:countrySource": "ip"
 }

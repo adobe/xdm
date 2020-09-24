@@ -100,7 +100,8 @@
         "xdm:reason": {
           "title": "Opt out reason",
           "type": "string",
-          "description": "Reason for opting out"
+          "description": "Reason for opting out",
+          "maxLength": 20
         }
       }
     },
@@ -363,7 +364,8 @@
         "xdm:sourceID": {
           "title": "?? Source ID",
           "description": "External ID maintained by consent source",
-          "type": "string"
+          "type": "string",
+          "maxLength": 20
         },
         "xdm:userCountry": {
           "title": "User Country/Region",

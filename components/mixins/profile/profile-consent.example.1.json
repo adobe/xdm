@@ -1,5 +1,5 @@
 {
-  "xdm:userConsentsAndPreferences": {
+  "xdm:consentsAndPreferences": {
     "xdm:privacyPreferences": {
       "xdm:dataCollection": {
         "xdm:choice": "yes",
@@ -29,56 +29,20 @@
         "xdm:choice": "yes",
         "xdm:timestamp": "2019-01-01T15:52:25+00:00",
         "xdm:basisOfProcessing": "legitimate_interest"
+      },
+      "xdm:pushNotifications": {
+        "xdm:choice": "yes",
+        "xdm:source": "OurApp"
+      },
+      "xdm:eMail": {
+       "xdm:choice": "no",
+       "xdm:reason": "Too Frequent"
       }
     },
     "xdm:version": "1.0.0",
     "xdm:timestamp": "2019-01-01T15:52:25+00:00",
     "xdm:userCountry": "US",
-    "xdm:countrySource": "ip"
-  },
-  "xdm:identityConsentsAndPreferences": {
-    "ECID": {
-      "11112222233333444": {
-        "xdm:privacyPreferences": {
-          "xdm:anonymousAnalysis": {
-            "xdm:choice": "yes"
-          },
-          "xdm:canUseAdvertiserID": {
-            "xdm:choice": "no"
-          }
-        },
-        "xdm:personalizationPreferences": {
-          "xdm:content": {
-            "xdm:choice": "no"
-          }
-        },
-        "xdm:marketingPreferences": {
-          "xdm:pushNotifications": {
-            "xdm:choice": "yes",
-            "xdm:source": "OurApp"
-          }
-        }
-      }
-    },
-    "email": {
-      "john@acme.com": {
-        "xdm:marketingPreferences": {
-          "xdm:eMail": {
-            "xdm:choice": "yes"
-          },
-          "xdm:source": "CJM",
-          "xdm:notice": "Can we send you occasional emails describing items that may be of interest to you?"
-        }
-      },
-      "john@google.com": {
-        "xdm:marketingPreferences": {
-          "xdm:eMail": {
-           "xdm:choice": "no",
-           "xdm:reason": "Too Frequent"
-          },
-          "xdm:source": "CJM"
-        }
-      }
-    }
+    "xdm:countrySource": "ip",
+    "xdm:source": "CJM"
   }
 }

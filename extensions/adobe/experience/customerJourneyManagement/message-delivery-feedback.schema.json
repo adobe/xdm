@@ -20,16 +20,7 @@
         "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/feedbackStatus": {
           "title": "Feedback Status",
           "type": "string",
-          "description": "Provide status of a delivery attempt.",
-          "enum": ["error", "exclude", "send", "bounce", "delay", "duplicate", "blocklisted"],
-          "meta:enum": {
-            "error": "Mesage processing failed.",
-            "exclude": "Messageprofile is filtered out for sending the message",
-            "send": "Messages such as Email, SMS, Push that have been dispatched to a person's account, address, or device.",
-            "bounce": "Message failed to deliver, and no longer will be retried.",
-            "delay": "message failed to deliver, but will be retry after next schedule time.",
-            "duplicate": "message is skipped since it's a duplicate for this groupID/pushtoken pairing "
-          }
+          "description": "Provide status of a delivery attempt."
         },
         
         "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/appID": {

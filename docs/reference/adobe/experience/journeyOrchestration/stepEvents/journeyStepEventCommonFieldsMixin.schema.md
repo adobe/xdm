@@ -47,12 +47,12 @@ This Mixin contains the common Journey Metadata information.
 | `https://ns.adobe.com/experience/journeyOrchestration/instanceID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/instanceType`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/journeyID`| string | Optional |
-| `https://ns.adobe.com/experience/journeyOrchestration/journeyNodeName`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/journeyNodeProcessed`| boolean | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/journeyVersion`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/journeyVersionID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/journeyVersionName`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/nodeID`| string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/nodeName`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyInstanceID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyVersionID`| string | Optional |
@@ -341,27 +341,6 @@ ID of the journey.
 
 
 
-#### https://ns.adobe.com/experience/journeyOrchestration/journeyNodeName
-##### journeyNodeName
-
-Name of the Journey Node being processed.
-
-`https://ns.adobe.com/experience/journeyOrchestration/journeyNodeName`
-* is optional
-* type: `string`
-
-##### https://ns.adobe.com/experience/journeyOrchestration/journeyNodeName Type
-
-
-`string`
-
-
-
-
-
-
-
-
 #### https://ns.adobe.com/experience/journeyOrchestration/journeyNodeProcessed
 ##### journeyNodeProcessed
 
@@ -455,6 +434,27 @@ client node ID.
 * type: `string`
 
 ##### https://ns.adobe.com/experience/journeyOrchestration/nodeID Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/journeyOrchestration/nodeName
+##### nodeName
+
+Name of the Journey Step Node being processed.
+
+`https://ns.adobe.com/experience/journeyOrchestration/nodeName`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/nodeName Type
 
 
 `string`

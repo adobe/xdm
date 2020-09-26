@@ -23,7 +23,9 @@ Message Execution details for the Adobe CJM ExperienceEvent.
   "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageID": "aa440b96-ce65-4ad2-b95d-8c3b51f89bc2",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageLabel": "Deal for Gold members",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionID": "0cc85961-487d-49e5-9b6c-01f5630756ac",
-  "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionInstanceId": "b9029525-c33a-40f2-a1c1-95f0b8305078"
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionInstanceID": "b9029525-c33a-40f2-a1c1-95f0b8305078",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionNodeID": "6cfe93cc-bb0e-4ec9-a39b-56b53a73d28c",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyActionID": "132fa0e5-7a75-412d-9013-740ae29e9c51"
 }
 ```
 
@@ -31,11 +33,33 @@ Message Execution details for the Adobe CJM ExperienceEvent.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
+| [https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyActionID](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutionjourneyactionid) | `string` | Optional | Adobe CJM ExperienceEvent - Message Execution Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionID](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutionjourneyversionid) | `string` | Optional | Adobe CJM ExperienceEvent - Message Execution Details (this schema) |
-| [https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionInstanceId](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutionjourneyversioninstanceid) | `string` | Optional | Adobe CJM ExperienceEvent - Message Execution Details (this schema) |
+| [https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionInstanceID](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutionjourneyversioninstanceid) | `string` | Optional | Adobe CJM ExperienceEvent - Message Execution Details (this schema) |
+| [https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionNodeID](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutionjourneyversionnodeid) | `string` | Optional | Adobe CJM ExperienceEvent - Message Execution Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageExecutionID](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutionmessageexecutionid) | `string` | **Required** | Adobe CJM ExperienceEvent - Message Execution Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageID](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutionmessageid) | `string` | Optional | Adobe CJM ExperienceEvent - Message Execution Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
+
+## https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyActionID
+### Journey Action ID
+
+Journey Action ID, for which MessageExecution is triggered.
+
+`https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyActionID`
+* is optional
+* type: `string`
+* defined in this schema
+
+### https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyActionID Type
+
+
+`string`
+
+
+
+
+
 
 ## https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionID
 ### JourneyVersion ID
@@ -57,17 +81,37 @@ Message Execution details for the Adobe CJM ExperienceEvent.
 
 
 
-## https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionInstanceId
-### JourneyVersion Instance Id
+## https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionInstanceID
+### JourneyVersion Instance ID
 
 Identifier of the journey version instance, specific to one individual (uuid).
 
-`https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionInstanceId`
+`https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionInstanceID`
 * is optional
 * type: `string`
 * defined in this schema
 
-### https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionInstanceId Type
+### https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionInstanceID Type
+
+
+`string`
+
+
+
+
+
+
+## https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionNodeID
+### Journey Version Node ID
+
+Identifier of the journey version node, triggering  the Message Execution.
+
+`https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionNodeID`
+* is optional
+* type: `string`
+* defined in this schema
+
+### https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionNodeID Type
 
 
 `string`

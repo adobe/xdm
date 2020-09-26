@@ -20,6 +20,11 @@
                     "format": "date-time",
                     "description": "The local time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\"."
                 },
+                "xdm:ianaTimezone": {
+                    "title": "Iana Timezone",
+                    "type": "string",
+                    "description": "Timezone of the device represented as a standard timezone string. https://en.wikipedia.org/wiki/List_of_tz_database_time_zones."
+                },
                 "xdm:localTimezoneOffset": {
                     "title": "Local time zone offset",
                     "type": "integer",

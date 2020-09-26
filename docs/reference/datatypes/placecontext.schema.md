@@ -82,6 +82,7 @@ Examples include location specific information such as weather, local time, traf
 | [xdm:POIinteraction](#xdmpoiinteraction) | Point of interest interaction | Optional | Place context (this schema) |
 | [xdm:activePOIs](#xdmactivepois) | Point of interest details | Optional | Place context (this schema) |
 | [xdm:geo](#xdmgeo) | Geo | Optional | Place context (this schema) |
+| [xdm:ianaTimezone](#xdmianatimezone) | `string` | Optional | Place context (this schema) |
 | [xdm:localTime](#xdmlocaltime) | `string` | Optional | Place context (this schema) |
 | [xdm:localTimezoneOffset](#xdmlocaltimezoneoffset) | `integer` | Optional | Place context (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -145,6 +146,26 @@ The geographic location where the experience was delivered.
 
 
 * [Geo](geo.schema.md) – `https://ns.adobe.com/xdm/common/geo`
+
+
+
+
+
+## xdm:ianaTimezone
+### Iana Timezone
+
+Timezone of the device represented as a standard timezone string. https://en.wikipedia.org/wiki/List_of_tz_database_time_zones.
+
+`xdm:ianaTimezone`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:ianaTimezone Type
+
+
+`string`
+
 
 
 

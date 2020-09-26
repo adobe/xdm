@@ -41,9 +41,6 @@
       }
     }
   },
-  "required": [
-    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType"
-  ],
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"

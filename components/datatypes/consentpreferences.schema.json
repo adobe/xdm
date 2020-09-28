@@ -35,7 +35,7 @@
     "basisOfProcessing": {
       "title": "Basis Of Processing",
       "type": "string",
-      "description": "Basis of Processing",
+      "description": "Legal basis for collecting/processing data. Is user consent required?",
       "enum": [
         "consent",
         "legitimate_interest",
@@ -142,7 +142,7 @@
               "description": "Attempts to associate multiple devices used/owned by an individual/household/organization are permitted",
               "$ref": "#/definitions/consentOption"
             },
-            "xdm:canUseAdvertiserID": {
+            "xdm:useAdvertiserID": {
               "title": "Can Use Advertiser ID",
               "description": "The user's mobile advertiser ID, such as Apple's IDFA, can be used",
               "$ref": "#/definitions/consentOption"

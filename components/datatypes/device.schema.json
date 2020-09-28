@@ -84,34 +84,34 @@
           "meta:enum": {
             "portrait": "Portrait",
             "landscape": "Landscape"
-          },
-          "xdm:isBackgroundPushEnabled": {
-            "title": "Background Push Enabled Flag",
-            "type": "boolean",
-            "description": "For devices like mobile , this tracks the system background push enabled permision status."
-          },
-          "xdm:isLocationEnabled": {
-            "title": "Location Enabled Flag",
-            "type": "boolean",
-            "description": "Indicates whether or not the device has location services enabled."
-          },
-          "xdm:locationPermission": {
-            "title": "Location Permission",
-            "type": "string",
-            "description": "Tracks the device location permision attribute setting.",
-            "enum": [
-              "SYSTEM_LOCATION_DISABLED",
-              "NOT_ALLOWED",
-              "ALWAYS_ALLOWED",
-              "FOREGROUND_ALLOWED",
-              "UNPROMPTED"
-            ]
-          },
-          "xdm:isPushOptIn": {
-            "title": "Push Opt In Flag",
-            "type": "boolean",
-            "description": "Indicates whether or not the device opted-in to receive push notifications."
           }
+        },
+        "xdm:isBackgroundPushEnabled": {
+          "title": "Background Push Enabled Flag",
+          "type": "boolean",
+          "description": "For devices like mobile , this tracks the system background push enabled permision status."
+        },
+        "xdm:isLocationEnabled": {
+          "title": "Location Enabled Flag",
+          "type": "boolean",
+          "description": "Indicates whether or not the device has location services enabled."
+        },
+        "xdm:locationPermission": {
+          "title": "Location Permission",
+          "type": "string",
+          "description": "Tracks the device location permision attribute setting.",
+          "enum": [
+            "SYSTEM_LOCATION_DISABLED",
+            "NOT_ALLOWED",
+            "ALWAYS_ALLOWED",
+            "FOREGROUND_ALLOWED",
+            "UNPROMPTED"
+          ]
+        },
+        "xdm:isPushOptIn": {
+          "title": "Push Opt In Flag",
+          "type": "boolean",
+          "description": "Indicates whether or not the device opted-in to receive push notifications."
         }
       }
     }

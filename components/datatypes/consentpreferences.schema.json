@@ -363,7 +363,7 @@
         },
         "xdm:sourceID": {
           "title": "?? Source ID",
-          "description": "External ID maintained by consent source",
+          "description": "ID for user as defined by consent source",
           "type": "string",
           "maxLength": 20
         },
@@ -390,7 +390,7 @@
             "ip": "IP Address",
             "gps": "Device GPS",
             "user_provided": "User Provided",
-            "website_location": "Website location or eTDL",
+            "website_location": "Website location or eTLD",
             "inferred": "Inferred",
             "other": "Other"
           }

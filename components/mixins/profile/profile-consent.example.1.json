@@ -1,48 +1,52 @@
 {
   "xdm:consentsAndPreferences": {
-    "xdm:privacyPreferences": {
-      "xdm:dataCollection": {
-        "xdm:choice": "yes",
-        "xdm:timestamp": "2019-01-01T15:52:25+00:00",
-        "xdm:basisOfProcessing": "consent"
+    "xdm:consentOptions": {
+      "xdm:privacyPreferences": {
+        "xdm:dataCollection": {
+          "xdm:choice": "yes",
+          "xdm:timestamp": "2019-01-01T15:52:25+00:00",
+          "xdm:basisOfProcessing": "consent"
+        },
+        "xdm:deviceLinking": {
+          "xdm:basisOfProcessing": "vital_interest"
+        },
+        "xdm:anonymousAnalysis": {
+          "xdm:choice": "no"
+        }
       },
-      "xdm:deviceLinking": {
-        "xdm:basisOfProcessing": "vital_interest"
+      "xdm:personalizationPreferences": {
+        "xdm:general": {
+          "xdm:choice": "yes",
+          "xdm:timestamp": "2019-01-01T15:52:25+00:00",
+          "xdm:basisOfProcessing": "consent"
+        }
       },
-      "xdm:anonymousAnalysis": {
-        "xdm:choice": "no"
+      "xdm:marketingPreferences": {
+        "xdm:preferredChannel": "email",
+        "xdm:general": {
+          "xdm:choice": "unknown"
+        },
+        "xdm:iotMessages": {
+          "xdm:choice": "yes",
+          "xdm:timestamp": "2019-01-01T15:52:25+00:00",
+          "xdm:basisOfProcessing": "legitimate_interest"
+        },
+        "xdm:pushNotifications": {
+          "xdm:choice": "yes",
+          "xdm:source": "OurApp"
+        },
+        "xdm:eMail": {
+          "xdm:choice": "no",
+          "xdm:reason": "Too Frequent"
+        }
       }
     },
-    "xdm:personalizationPreferences": {
-      "xdm:general": {
-        "xdm:choice": "yes",
-        "xdm:timestamp": "2019-01-01T15:52:25+00:00",
-        "xdm:basisOfProcessing": "consent"
-      }
-    },
-    "xdm:marketingPreferences": {
-      "xdm:preferredChannel": "email",
-      "xdm:general": {
-        "xdm:choice": "unknown"
-      },
-      "xdm:iotMessages": {
-        "xdm:choice": "yes",
-        "xdm:timestamp": "2019-01-01T15:52:25+00:00",
-        "xdm:basisOfProcessing": "legitimate_interest"
-      },
-      "xdm:pushNotifications": {
-        "xdm:choice": "yes",
-        "xdm:source": "OurApp"
-      },
-      "xdm:eMail": {
-       "xdm:choice": "no",
-       "xdm:reason": "Too Frequent"
-      }
-    },
-    "xdm:version": "1.0.0",
-    "xdm:timestamp": "2019-01-01T15:52:25+00:00",
-    "xdm:userCountry": "US",
-    "xdm:countrySource": "ip",
-    "xdm:source": "CJM"
+    "xdm:consentMetadata": {
+      "xdm:version": "1.0.0",
+      "xdm:timestamp": "2019-01-01T15:52:25+00:00",
+      "xdm:userCountry": "US",
+      "xdm:countrySource": "ip",
+      "xdm:source": "CJM"
+    }
   }
 }

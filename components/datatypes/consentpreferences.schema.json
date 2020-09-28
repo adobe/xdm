@@ -105,7 +105,7 @@
         }
       }
     },
-    "consent-preferences": {
+    "consent-options": {
       "properties": {
         "xdm:privacyPreferences": {
           "title": "Privacy Preferences",
@@ -342,7 +342,11 @@
               "$ref": "#/definitions/marketingOption"
             }
           }
-        },
+        }
+      }
+    },
+    "consent-metadata": {
+      "properties": {
         "xdm:version": {
           "title": "Preferences Version",
           "description": "Version of the Privacy Preferences Standard",
@@ -394,6 +398,16 @@
             "inferred": "Inferred",
             "other": "Other"
           }
+        }
+      }
+    },
+    "consent-preferences": {
+      "properties": {
+        "xdm:consentOptions": {
+            "$ref": "#/definitions/consent-options"
+        },
+        "xdm:consentMetadata": {
+            "$ref": "#/definitions/consent-metadata"
         }
       }
     }

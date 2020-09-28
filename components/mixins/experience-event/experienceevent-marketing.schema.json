@@ -21,6 +21,24 @@
           "$ref": "https://ns.adobe.com/xdm/context/marketing",
           "description": "The information related to marketing activities that are active with the touchpoint."
         }
+        "xdm:externalCampaign": {
+          "title": "External Campaign",
+          "description": "A unique code that identifies each campaign & the channel. It can also contain date and type of the campaign.",
+		  "type": "string",
+		  "meta:status": "experimental"
+        }
+        "xdm:internalCampaign": {
+          "title": "Internal Campaign",
+          "description": "A unique code that identifies each internal campaign & promo area. It can also contain date and type of the campaign.",
+		  "type": "string",
+		  "meta:status": "experimental"
+        }
+        "xdm:productFindingMethod": {
+          "title": "Product Finding Method",
+          "description": "How the user found a product immediately prior to viewing it. Allows a view of which finding methods were most effective for each product.",
+		  "type": "string",
+		  "meta:status": "experimental"
+        }
       }
     }
   },

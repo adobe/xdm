@@ -37,6 +37,10 @@ An identified device that is an application or browser instance that is trackabl
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [xdm:colorDepth](#xdmcolordepth) | `integer` | Optional | Device (this schema) |
+| [xdm:isBackgroundPushEnabled](#xdmisbackgroundpushenabled) | `boolean` | Optional | Device (this schema) |
+| [xdm:isLocationEnabled](#xdmislocationenabled) | `boolean` | Optional | Device (this schema) |
+| [xdm:isPushOptIn](#xdmispushoptin) | `boolean` | Optional | Device (this schema) |
+| [xdm:locationPermission](#xdmlocationpermission) | `enum` | Optional | Device (this schema) |
 | [xdm:manufacturer](#xdmmanufacturer) | `string` | Optional | Device (this schema) |
 | [xdm:model](#xdmmodel) | `string` | Optional | Device (this schema) |
 | [xdm:modelNumber](#xdmmodelnumber) | `string` | Optional | Device (this schema) |
@@ -64,6 +68,87 @@ The number of colors the display is able to represent.
 `integer`
 
 
+
+
+
+
+## xdm:isBackgroundPushEnabled
+### Background Push Enabled Flag
+
+For devices like mobile , this tracks the system background push enabled permision status.
+
+`xdm:isBackgroundPushEnabled`
+* is optional
+* type: `boolean`
+* defined in this schema
+
+### xdm:isBackgroundPushEnabled Type
+
+
+`boolean`
+
+
+
+
+
+## xdm:isLocationEnabled
+### Location Enabled Flag
+
+Indicates whether or not the device has location services enabled.
+
+`xdm:isLocationEnabled`
+* is optional
+* type: `boolean`
+* defined in this schema
+
+### xdm:isLocationEnabled Type
+
+
+`boolean`
+
+
+
+
+
+## xdm:isPushOptIn
+### Push Opt In Flag
+
+Indicates whether or not the device opted-in to receive push notifications.
+
+`xdm:isPushOptIn`
+* is optional
+* type: `boolean`
+* defined in this schema
+
+### xdm:isPushOptIn Type
+
+
+`boolean`
+
+
+
+
+
+## xdm:locationPermission
+### Location Permission
+
+Tracks the device location permision attribute setting.
+
+`xdm:locationPermission`
+* is optional
+* type: `enum`
+* defined in this schema
+
+The value of this property **must** be equal to one of the [known values below](#xdmlocationpermission-known-values).
+
+### xdm:locationPermission Known Values
+| Value | Description |
+|-------|-------------|
+| `SYSTEM_LOCATION_DISABLED` |  |
+| `NOT_ALLOWED` |  |
+| `ALWAYS_ALLOWED` |  |
+| `FOREGROUND_ALLOWED` |  |
+| `UNPROMPTED` |  |
 
 
 

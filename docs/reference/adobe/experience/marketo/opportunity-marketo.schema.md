@@ -9,7 +9,7 @@ Marketo specific Opportunity properties.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/marketo/opportunity-marketo.schema.json](adobe/experience/marketo/opportunity-marketo.schema.json) |
+| Can be instantiated | Yes | Deprecated | No | Forbidden | Permitted | [adobe/experience/marketo/opportunity-marketo.schema.json](adobe/experience/marketo/opportunity-marketo.schema.json) |
 ## Schema Hierarchy
 
 * Marketo Opportunity `https://ns.adobe.com/experience/marketo/opportunity-marketo`

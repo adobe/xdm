@@ -9,7 +9,7 @@ Marketo Person schema for use within  B2B space. Includes other Profile mixins l
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/marketo/marketo-contact-lead-person.schema.json](adobe/experience/marketo/marketo-contact-lead-person.schema.json) |
+| Can be instantiated | Yes | Deprecated | No | Forbidden | Permitted | [adobe/experience/marketo/marketo-contact-lead-person.schema.json](adobe/experience/marketo/marketo-contact-lead-person.schema.json) |
 ## Schema Hierarchy
 
 * Marketo Contact/Lead Person Schema `https://ns.adobe.com/experience/marketo/marketo-contact-lead-person`

@@ -50,19 +50,19 @@
         "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/requestTime": {
             "title": "request time",
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
             "description": "time at which the message request first entered the system for processing."
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/receivedTime": {
             "title": "received time",
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
             "description": "time at which the system starts processing the message request"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/completedTime": {
             "title": "completed time",
             "type": "string",
-             "format": "date-time"
+             "format": "date-time",
              "description": "time at which the system finished processing the message request"
         },
         

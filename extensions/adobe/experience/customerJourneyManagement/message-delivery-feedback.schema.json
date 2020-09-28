@@ -20,7 +20,16 @@
         "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/feedbackStatus": {
           "title": "Feedback Status",
           "type": "string",
-          "description": "Provide status of a delivery attempt."
+          "description": "Provide status of a delivery attempt.",
+          "enum": ["error", "exclude", "send", "bounce", "delay", "duplicate", "blocklisted"],
+          "meta:enum": {
+            "error": "Mesage processing failed.",
+            "exclude": "Messageprofile is filtered out for sending the message",
+            "send": "Messages such as Email, SMS, Push that have been dispatched to a person's account, address, or device.",
+            "bounce": "Message failed to deliver, and no longer will be retried.",
+            "delay": "message failed to deliver, but will be retry after next schedule time.",
+            "duplicate": "message is skipped since it's a duplicate for this groupID/pushtoken pairing "
+          }
         },
         
         "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/appID": {
@@ -88,14 +97,7 @@
           "properties": {
             "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/reason": {
               "title": "Failure Reason",
-              "type": "string",
-              "enum": ["missingPushCredential", "malformedNotification", "unsupportedPlatform", "pushProviderError", "expired"],
-              "meta:enum": {
-                  "missingPushCredential": "Can't find push credential for the notification's appID",
-                  "malformedNotification": "notification was malformed",
-                  "unsupportedPlatform": "notification's platform field is not recognized",
-                  "pushProviderError": "apns/fcm rejected the payload",
-                  "expired": "notification is already expired by the time we process it as indicated by the expiry field in it."
+              "type": "string"
               },
               "description": "Failure reason for a failed delivery attempt."
             },

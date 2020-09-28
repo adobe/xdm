@@ -16,6 +16,7 @@
         "selector": {
             "oneOf": [
                 {
+                    "type": "object",
                     "properties": {
                         "xdm:index": {
                             "title": "Index",
@@ -29,6 +30,7 @@
                     ]
                 },
                 {
+                    "type": "object",
                     "properties": {
                         "xdm:id": {
                             "title": "ID",
@@ -42,6 +44,7 @@
                     ]
                 },
                 {
+                    "type": "object",
                     "properties": {
                         "xdm:type": {
                             "title": "Type",
@@ -55,6 +58,7 @@
                     ]
                 },
                 {
+                    "type": "object",
                     "properties": {
                         "xdm:schema": {
                             "title": "Schema",
@@ -81,13 +85,13 @@
             "xdm:id": "https://example.com/objects/12345"
         },
         {
-            "xdm:type": "https://ns.adobe.com/experience/mcid"
-        },
-        {
             "xdm:index": 0
         },
         {
             "xdm:schema": "https://ns.adobe.com/xdm/context/identity"
+        },
+        {
+            "xdm:type": "https://ns.adobe.com/experience/mcid"
         }
     ]
 }

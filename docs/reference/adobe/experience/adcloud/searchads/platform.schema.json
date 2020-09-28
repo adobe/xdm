@@ -1,0 +1,61 @@
+{
+    "meta:license": [
+        "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/adcloud/searchads/platform",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Search Advertising Platform",
+    "type": "object",
+    "meta:extensible": false,
+    "meta:abstract": false,
+    "meta:auditable": true,
+    "meta:extends": [
+        "https://ns.adobe.com/xdm/data/record"
+    ],
+    "description": "Information about Search Advertising Platform.",
+    "definitions": {
+        "searchads-platform": {
+            "properties": {
+                "searchads:adPlatform": {
+                    "title": "Search Advertising Platform",
+                    "type": "string",
+                    "description": "The Search Advertising Platform Name"
+                },
+                "searchads:searchEngineId": {
+                    "title": "Search Engine Identifier",
+                    "type": "integer",
+                    "description": "The application-specified identifier used to identify the Search Advertising Platform Name."
+                },
+                "searchads:channelName": {
+                    "title": "Search Engine Channel Name",
+                    "type": "string",
+                    "description": "The application-specified classification for the Search Engine Platform."
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/data/record"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/auditable"
+        },
+        {
+            "$ref": "#/definitions/searchads-platform"
+        }
+    ],
+    "meta:status": "stable",
+    "examples": [
+        {
+            "searchads:searchEngineId": 3,
+            "searchads:adPlatform": "Google AdWords",
+            "searchads:channelName": "search",
+            "repo:createDate": "2019-04-26T14:00:00+00:00",
+            "repo:modifyDate": "2019-04-26T14:00:00+00:00"
+        }
+    ]
+}

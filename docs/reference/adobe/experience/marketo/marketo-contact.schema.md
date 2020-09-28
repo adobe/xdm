@@ -9,7 +9,7 @@ Marketo Contact schema for use with B2B Accounts and Opportunities. Includes oth
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/marketo/marketo-contact.schema.json](adobe/experience/marketo/marketo-contact.schema.json) |
+| Can be instantiated | Yes | Deprecated | No | Forbidden | Permitted | [adobe/experience/marketo/marketo-contact.schema.json](adobe/experience/marketo/marketo-contact.schema.json) |
 ## Schema Hierarchy
 
 * Marketo Contact `https://ns.adobe.com/experience/marketo/marketo-contact`

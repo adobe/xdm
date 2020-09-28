@@ -46,7 +46,6 @@ XDM business account details.
 | [xdm:accountTradeStyle](#xdmaccounttradestyle) | `string` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccounttradestyle) |
 | [xdm:accountType](#xdmaccounttype) | `string` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccounttype) |
 | [xdm:externalID](#xdmexternalid) | `string` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmexternalid) |
-| [xdm:isDeleted](#xdmisdeleted) | `boolean` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmisdeleted) |
 | [xdm:partnerAccountID](#xdmpartneraccountid) | `string` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmpartneraccountid) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -450,25 +449,6 @@ External ID.
 
 `string`
 
-
-
-
-
-
-## xdm:isDeleted
-### Account Record Deleted Indicator
-
-Indicator whether the Account record is deleted or not.
-
-`xdm:isDeleted`
-* is optional
-* type: `boolean`
-* defined in [B2B Account](../../datatypes/b2b-account.schema.md#xdmisdeleted)
-
-### xdm:isDeleted Type
-
-
-`boolean`
 
 
 

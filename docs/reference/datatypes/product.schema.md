@@ -59,9 +59,11 @@ XDM product name or title, master product, and key attributes of product in the 
 | [xdm:masterProductID](#xdmmasterproductid) | `string` | Optional | Product (this schema) |
 | [xdm:masterProductName](#xdmmasterproductname) | `string` | Optional | Product (this schema) |
 | [xdm:masterProductSKU](#xdmmasterproductsku) | `string` | Optional | Product (this schema) |
+| [xdm:material](#xdmmaterial) | `string` | Optional | Product (this schema) |
 | [xdm:name](#xdmname) | `string` | Optional | Product (this schema) |
 | [xdm:originalSaleDate](#xdmoriginalsaledate) | `string` | Optional | Product (this schema) |
 | [xdm:productCreateDate](#xdmproductcreatedate) | `string` | Optional | Product (this schema) |
+| [xdm:productDescription](#xdmproductdescription) | `string` | Optional | Product (this schema) |
 | [xdm:productLastModified](#xdmproductlastmodified) | `string` | Optional | Product (this schema) |
 | [xdm:productURL](#xdmproducturl) | `string` | Optional | Product (this schema) |
 | [xdm:size](#xdmsize) | `number` | Optional | Product (this schema) |
@@ -445,6 +447,26 @@ The unique SKU (stock keeping unit) of the master product assigned by the vendor
 
 
 
+## xdm:material
+### Material
+
+Primary material of the product construction.
+
+`xdm:material`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:material Type
+
+
+`string`
+
+
+
+
+
+
 ## xdm:name
 ### Name
 
@@ -501,6 +523,26 @@ The date when this product was created. The time using RFC3339 with a stated tim
 
 `string`
 * format: `date` – date, without time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+
+
+
+
+
+
+## xdm:productDescription
+### Description
+
+The localized description of the product.
+
+`xdm:productDescription`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:productDescription Type
+
+
+`string`
 
 
 

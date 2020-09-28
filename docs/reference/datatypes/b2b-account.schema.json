@@ -105,11 +105,6 @@
                     "pattern": "^[A-Z]{3}$",
                     "description": "The ISO 4217 currency code."
                 },
-                "xdm:isDeleted": {
-                    "title": "Account Record Deleted Indicator",
-                    "description": "Indicator whether the Account record is deleted or not.",
-                    "type": "boolean"
-                },
                 "xdm:accountOwnership": {
                     "title": "Ownership",
                     "description": "Ownership of company, for example, public or private. Entry is selected from a picklist of available values, which a salesforce admin sets. Each picklist value can have up to 40 characters.",

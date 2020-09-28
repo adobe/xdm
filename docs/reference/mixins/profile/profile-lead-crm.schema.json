@@ -62,7 +62,7 @@
             "$ref": "https://ns.adobe.com/xdm/context/profile-owning-entities"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "deprecated",
     "examples": [
         {
             "xdm:lead": {

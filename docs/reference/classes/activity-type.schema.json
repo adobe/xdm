@@ -19,6 +19,7 @@
         "activity-type": {
             "properties": {
                 "xdm:activityType": {
+                    "type": "object",
                     "properties": {
                         "xdm:ID": {
                             "title": "Activity type ID",

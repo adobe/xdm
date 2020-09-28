@@ -33,7 +33,7 @@
           }
         }
       },
-      "required": ["activityID", "version"]
+      "required": ["xdm:activityID", "xdm:version"]
     }
   },
   "allOf": [

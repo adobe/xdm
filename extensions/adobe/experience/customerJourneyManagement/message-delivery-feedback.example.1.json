@@ -1,0 +1,9 @@
+{
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/feedbackStatus": "bounce",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageFailure": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/reason": "Messagebox is Full",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/code": "FR-123",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/type": "Soft"
+  },
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/retryCount": 1
+}

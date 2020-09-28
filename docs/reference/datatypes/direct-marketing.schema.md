@@ -32,6 +32,8 @@ The events and properties related to direct and outbound marketing such as email
 |----------|------|----------|------------|
 | [xdm:bounces](#xdmbounces) | Measure | Optional | Direct marketing (this schema) |
 | [xdm:clicks](#xdmclicks) | Measure | Optional | Direct marketing (this schema) |
+| [xdm:customActions](#xdmcustomactions) | Measure | Optional | Direct marketing (this schema) |
+| [xdm:excludes](#xdmexcludes) | Measure | Optional | Direct marketing (this schema) |
 | [xdm:impressions](#xdmimpressions) | Measure | Optional | Direct marketing (this schema) |
 | [xdm:mirrorPages](#xdmmirrorpages) | Measure | Optional | Direct marketing (this schema) |
 | [xdm:nonDeliverables](#xdmnondeliverables) | Measure | Optional | Direct marketing (this schema) |
@@ -71,6 +73,42 @@ Click actions on a message.
 * defined in this schema
 
 ### xdm:clicks Type
+
+
+* [Measure](data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
+## xdm:customActions
+
+Action(s) that users can take on custom objects sent as part of a direct marketing message like push notification.
+
+`xdm:customActions`
+* is optional
+* type: Measure
+* defined in this schema
+
+### xdm:customActions Type
+
+
+* [Measure](data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
+## xdm:excludes
+
+The recipient of the direct marketing message such as email or push has been excluded due to some typology rules configured like fatigue/blacklisted.
+
+`xdm:excludes`
+* is optional
+* type: Measure
+* defined in this schema
+
+### xdm:excludes Type
 
 
 * [Measure](data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`

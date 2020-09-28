@@ -1,0 +1,8 @@
+{
+  "xdm:applicationOpened": true,
+  "xdm:messageId": "unique msgID from ios/android",
+  "xdm:customAction": {
+    "xdm:actionId": "GAME_INVITATION",
+    "xdm:value": 500
+  }
+}

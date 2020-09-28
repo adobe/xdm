@@ -1,0 +1,57 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/experienceevent-pushtracking",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Push notification tracking",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "push notification tracking details",
+  "definitions": {
+    "experienceevent-pushtracking": {
+      "properties": {
+        "xdm:customAction": {
+          "title": "custom action",
+          "type": "object",
+          "description": "End user clicked custom action in the push notification",
+          "properties": {
+            "xdm:actionId": {
+              "title": "action ID",
+              "type": "string",
+              "description": "user clicked custom action identifier"
+            },
+            "xdm:value": {
+              "title": "value",
+              "type": "number",
+              "description": "value associated with the custom action, if any"
+            }
+          }
+        },
+        "xdm:applicationOpened": {
+          "title": "application opened",
+          "type": "boolean",
+          "description": "Flag indicating whether push notification interaction resulted in opening the application"
+        },
+        "xdm:messageId": {
+          "title": "message ID",
+          "type": "string",
+          "description": "ID associated with this message"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/experienceevent-pushtracking"
+    }
+  ],
+  "meta:status": "experimental"
+}

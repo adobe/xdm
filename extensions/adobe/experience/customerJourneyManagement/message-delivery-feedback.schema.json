@@ -21,60 +21,15 @@
           "title": "Feedback Status",
           "type": "string",
           "description": "Provide status of a delivery attempt.",
-          "enum": ["error", "exclude", "send", "bounce", "delay", "duplicate", "blocklisted"],
+          "enum": ["error", "exclude", "send", "bounce", "delay"],
           "meta:enum": {
             "error": "Mesage processing failed.",
             "exclude": "Messageprofile is filtered out for sending the message",
             "send": "Messages such as Email, SMS, Push that have been dispatched to a person's account, address, or device.",
             "bounce": "Message failed to deliver, and no longer will be retried.",
-            "delay": "message failed to deliver, but will be retry after next schedule time.",
-            "duplicate": "message is skipped since it's a duplicate for this groupID/pushtoken pairing "
+            "delay": "message failed to deliver, but will be retry after next schedule time."
           }
         },
-        
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/appID": {
-            "title": "application id",
-            "type": "string",
-            "description": "Unique identifier for the application that received this message request, if any."
-        },
-        
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/groupID": {
-            "title": "group id",
-            "type": "string",
-            "description": "Group ID for the message request. Deduplication was done based on group ID + token. If no group ID is supplied then no deduplication would have been applied."
-        },
-        
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/pushToken": {
-            "title": "Push Token",
-            "type": "string",
-            "description": "push token the message request was sent to if this was a push notification message request."
-        },
-
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/pushProviderMessageID": {
-            "title": "Push Provider message ID",
-            "type": "string",
-            "description": "message id that push provider assign to the message request, if the notification was successfully sent"
-        },
-        
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/requestTime": {
-            "title": "request time",
-            "type": "string",
-            "format": "date-time"
-            "description": "time at which the message request first entered the system for processing."
-        },
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/receivedTime": {
-            "title": "received time",
-            "type": "string",
-            "format": "date-time"
-            "description": "time at which the system starts processing the message request"
-        },
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/completedTime": {
-            "title": "completed time",
-            "type": "string",
-             "format": "date-time"
-             "description": "time at which the system finished processing the message request"
-        },
-        
         "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageExclusion": {
           "title": "Message Exclusion",
           "type": "object",
@@ -98,14 +53,6 @@
             "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/reason": {
               "title": "Failure Reason",
               "type": "string",
-              "enum": ["missingPushCredential", "malformedNotification", "unsupportedPlatform", "pushProviderError", "expired"],
-              "meta:enum": {
-                  "missingPushCredential": "Can't find push credential for the notification's appID",
-                  "malformedNotification": "notification was malformed",
-                  "unsupportedPlatform": "notification's platform field is not recognized",
-                  "pushProviderError": "apns/fcm rejected the payload",
-                  "expired": "notification is already expired by the time we process it as indicated by the expiry field in it."
-              },
               "description": "Failure reason for a failed delivery attempt."
             },
             "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/code": {

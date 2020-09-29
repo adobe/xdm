@@ -202,6 +202,21 @@
               "title": "previousJumpJourneyInstanceID",
               "description": "Journey instance ID of the previous journey in a journey jump scenario. ",
               "type": "string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/reactionActionID": {
+              "title": "reactionActionID",
+              "description": "Message action ID referenced by the reaction in a journey. ",
+              "type": "string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/reactionChannel": {
+              "title": "reactionChannel",
+              "description": "Message channel referenced by the reaction (email, push) in a journey. ",
+              "type": "string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/reactionInteractionType": {
+              "title": "reactionInteractionType",
+              "description": "Message interaction type referenced by the reaction (click, open, sent, error...) in a journey. ",
+              "type": "string"
             }
           }
         }

@@ -5,26 +5,36 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/context/campaign-member",
+  "$id": "https://ns.adobe.com/xdm/classes/campaign",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "XDM Business Campaign Member",
+  "title": "XDM Business Campaign",
   "type": "object",
   "auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
-  "description": "An XDM Business Campaign Member,which relates members such as contact/lead to a campaign",
+  "description": "This class is used to capture minimum properties that are required to define xdm business bampaign concept",
   "definitions": {
-    "campaign-member": {
+    "campaign": {
       "properties": {
-        "xdm:campaignMemberID": {
-          "title": "Campaign Member ID",
-          "description": "Campaign Member unique identifer",
-          "type": "string"
-        },
         "xdm:campaignID": {
           "title": "Campaign ID",
-          "description": "Campaign Unique Identifer",
+          "description": "Unique identifer for campaign.",
+          "type": "string"
+        },
+        "xdm:campaignName": {
+          "title": "Campaign Name",
+          "description": "Friendly name for campaign.",
+          "type": "string"
+        },
+        "xdm:campaignType": {
+          "title": "Campaign Type",
+          "description": "The type of campaign for which audience gets selected.",
+          "type": "string"
+        },
+        "xdm:campaignDescription": {
+          "title": "Campaign Description",
+          "description": "Campaign description.",
           "type": "string"
         }
       }
@@ -35,13 +45,10 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/data/record"
-    },
-    {
       "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
     },
     {
-      "$ref": "#/definitions/campaign-member"
+      "$ref": "#/definitions/campaign"
     }
   ],
   "meta:status": "experimental"

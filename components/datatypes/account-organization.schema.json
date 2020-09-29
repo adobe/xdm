@@ -26,7 +26,7 @@
         "xdm:annualRevenue": {
           "title": "Annual Revenue",
           "description": "Estimated amount of annual revenue of the organization.",
-          "type": "number"
+          "$ref": "https://ns.adobe.com/xdm/datatypes/currency"
         },
         "xdm:industry": {
           "title": "Industry",

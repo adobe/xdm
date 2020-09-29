@@ -95,13 +95,6 @@
           "description": "Source type for the account.",
           "type": "string"
         },
-        "xdm:accountCurrencyCode": {
-          "title": "Currency Code",
-          "type": "string",
-          "examples": ["USD", "EUR"],
-          "pattern": "^[A-Z]{3}$",
-          "description": "The ISO 4217 currency code."
-        },
         "xdm:accountOwnership": {
           "title": "Ownership",
           "description": "Ownership of company, for example, public or private. Entry is selected from a picklist of available values, which a salesforce admin sets. Each picklist value can have up to 40 characters.",

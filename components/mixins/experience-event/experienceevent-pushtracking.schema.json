@@ -15,32 +15,39 @@
   "definitions": {
     "experienceevent-pushtracking": {
       "properties": {
-        "xdm:customAction": {
-          "title": "custom action",
+        "xdm:pushNotificationTracking": {
+          "title": "push notification tracking details",
           "type": "object",
-          "description": "End user clicked custom action in the push notification",
+          "description": "Describes interaction with a push notification.",
           "properties": {
-            "xdm:actionId": {
-              "title": "action ID",
-              "type": "string",
-              "description": "user clicked custom action identifier"
+            "xdm:customAction": {
+              "title": "custom action",
+              "type": "object",
+              "description": "End user clicked custom action in the push notification",
+              "properties": {
+                "xdm:actionId": {
+                  "title": "action ID",
+                  "type": "string",
+                  "description": "user clicked custom action identifier"
+                },
+                "xdm:value": {
+                  "title": "value",
+                  "type": "number",
+                  "description": "value associated with the custom action, if any"
+                }
+              }
             },
-            "xdm:value": {
-              "title": "value",
-              "type": "number",
-              "description": "value associated with the custom action, if any"
-            }
+            "xdm:applicationOpened": {
+              "title": "application opened",
+              "type": "boolean",
+              "description": "Flag indicating whether push notification interaction resulted in opening the application"
+            },
+            "xdm:messageId": {
+              "title": "message ID",
+              "type": "string",
+              "description": "ID associated with this message"
+            }            
           }
-        },
-        "xdm:applicationOpened": {
-          "title": "application opened",
-          "type": "boolean",
-          "description": "Flag indicating whether push notification interaction resulted in opening the application"
-        },
-        "xdm:messageId": {
-          "title": "message ID",
-          "type": "string",
-          "description": "ID associated with this message"
         }
       }
     }

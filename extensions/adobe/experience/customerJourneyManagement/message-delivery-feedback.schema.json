@@ -37,7 +37,7 @@
             "bounce": "Message failed to deliver, and no longer will be retried.",
             "delay": "message failed to deliver, but will be retry after next schedule time.",
             "duplicate": "message is skipped since it's a duplicate for this groupID/pushtoken pairing ",
-            "blocklisted": "message is skipped since this push token has been invalidated"
+            "denylist": "message is skipped since this push token has been invalidated"
           }
         },
 

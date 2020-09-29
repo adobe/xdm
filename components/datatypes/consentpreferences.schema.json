@@ -13,7 +13,7 @@
   "meta:extensible":true,
   "meta:abstract":true,
   "definitions":{
-    "consentValue": {
+    "consent-value": {
       "title": "Consent Value",
       "description": "The value of the specific privacy/consent preference.",
       "type": "string",
@@ -25,14 +25,14 @@
         "not_applicable"
       ],
       "meta:enum": {
-        "yes": "The user has explicitly opted in to this feature",
-        "no": "The user has explicitly opted out of this feature",
+        "yes": "Yes",
+        "no": "No",
         "pending": "Pending verification",
         "unknown":"Unknown",
         "not_applicable":"Not Applicable"
       }
     },
-    "basisOfProcessing": {
+    "basis-of-processing": {
       "title": "Basis Of Processing",
       "type": "string",
       "description": "Legal basis for collecting/processing data. Is user consent required?",
@@ -65,14 +65,14 @@
       "type": "string",
       "maxLength": 20
     },
-    "consentOption": {
+    "consent-fields": {
       "type": "object",
       "properties": {
         "xdm:choice": {
-          "$ref": "#/definitions/consentValue"
+          "$ref": "#/definitions/consent-value"
         },
         "xdm:basisOfProcessing": {
-          "$ref": "#/definitions/basisOfProcessing"
+          "$ref": "#/definitions/basis-of-processing"
         },
         "xdm:timestamp": {
           "$ref": "#/definitions/timestamp"
@@ -82,14 +82,14 @@
         }
       }
     },
-    "marketingOption": {
+    "marketing-fields": {
       "type": "object",
       "properties": {
         "xdm:choice": {
-          "$ref": "#/definitions/consentValue"
+          "$ref": "#/definitions/consent-value"
         },
         "xdm:basisOfProcessing": {
-          "$ref": "#/definitions/basisOfProcessing"
+          "$ref": "#/definitions/basis-of-processing"
         },
         "xdm:timestamp": {
           "$ref": "#/definitions/timestamp"
@@ -115,37 +115,37 @@
             "xdm:dataCollection": {
               "title": "Data Collection",
               "description": "Data collection is permitted",
-              "$ref": "#/definitions/consentOption"
+              "$ref": "#/definitions/consent-fields"
             },
             "xdm:sellData": {
               "title": "Sell Data",
               "description": "Selling of user's Data with/to 2nd or 3rd parties is permitted, such as in compliance with CCPA",
-              "$ref": "#/definitions/consentOption"
+              "$ref": "#/definitions/consent-fields"
             },
             "xdm:shareData": {
               "title": "Share Data",
               "description": "Sharing of user's Data with/to 2nd or 3rd parties is permitted",
-              "$ref": "#/definitions/consentOption"
+              "$ref": "#/definitions/consent-fields"
             },
             "xdm:anonymousAnalysis": {
               "title": "Anonymous Analysis",
               "description": "Data can be used for analysis that does not require the use of any type of ID (whether it can be tied to an individual or not)",
-              "$ref": "#/definitions/consentOption"
+              "$ref": "#/definitions/consent-fields"
             },
             "xdm:pseudonymousAnalysis": {
               "title": "Pseudonymous Analysis",
               "description": "Data can be used for analysis that may include an ID that may or may not be tied to an actual person",
-              "$ref": "#/definitions/consentOption"
+              "$ref": "#/definitions/consent-fields"
             },
             "xdm:deviceLinking": {
               "title": "Device Linking",
               "description": "Attempts to associate multiple devices used/owned by an individual/household/organization are permitted",
-              "$ref": "#/definitions/consentOption"
+              "$ref": "#/definitions/consent-fields"
             },
             "xdm:useAdvertiserID": {
               "title": "Can Use Advertiser ID",
               "description": "The user's mobile advertiser ID, such as Apple's IDFA, can be used",
-              "$ref": "#/definitions/consentOption"
+              "$ref": "#/definitions/consent-fields"
             }
           }
         },
@@ -157,92 +157,92 @@
             "xdm:general": {
               "title": "General Personalization Preference",
               "description": "Is there consent for personalization, unless overridden by a specific personalization preference",
-              "$ref": "#/definitions/consentOption"
+              "$ref": "#/definitions/consent-fields"
             },
             "xdm:content": {
               "title": "Personalize content",
               "description": "Allow personalization of the content on my site or in my apps",
-              "$ref": "#/definitions/consentOption"
+              "$ref": "#/definitions/consent-fields"
             },
             "xdm:inAppMessages": {
               "title": "Personalize in-app messages",
               "description": "Allow personalization of messages displayed within my apps",
-              "$ref": "#/definitions/consentOption"
+              "$ref": "#/definitions/consent-fields"
             },
             "xdm:offers": {
               "title": "Personalize Offers",
               "description": "Allow personalization of offers (my own ads) displayed on my site or in my app",
-              "$ref": "#/definitions/consentOption"
+              "$ref": "#/definitions/consent-fields"
             },
             "xdm:email": {
               "title": "Personalize email",
               "description": "Allow personalization of emails sent to the user",
-              "$ref": "#/definitions/consentOption"
+              "$ref": "#/definitions/consent-fields"
             },
             "xdm:physicalMail": {
               "title": "Personalize physical mail",
               "description": "Allow personalization of offers sent via traditional/physical mail",
-              "$ref": "#/definitions/consentOption"
+              "$ref": "#/definitions/consent-fields"
             },
             "xdm:phoneCalls": {
               "title": "Personalize phone calls",
               "description": "Allow phone calls that we initiate to be personalized base on your interests/history",
-              "$ref": "#/definitions/consentOption"
+              "$ref": "#/definitions/consent-fields"
             },
             "xdm:customerSupport": {
               "title": "Personalize customer support",
               "description": "Allow customer support to personalize responses/suggestions based on your interests/history",
-              "$ref": "#/definitions/consentOption"
+              "$ref": "#/definitions/consent-fields"
             },
             "xdm:pushNotifications": {
               "title": "Personalize push notifications",
               "description": "Personalization of push notifications is permitted",
-              "$ref": "#/definitions/consentOption"
+              "$ref": "#/definitions/consent-fields"
             },
             "xdm:sms": {
               "title": "Personalize SMS",
               "description": "Personalize text messages",
-              "$ref": "#/definitions/consentOption"
+              "$ref": "#/definitions/consent-fields"
             },
             "xdm:inStore": {
               "title": "Personalize in-store",
               "description": "Personalize in-store experiences",
-              "$ref": "#/definitions/consentOption"
+              "$ref": "#/definitions/consent-fields"
             },
             "xdm:inVehicle": {
               "title": "Personalize in-vehicle",
               "description": "Personalize in-vehicle experiences",
-              "$ref": "#/definitions/consentOption"
+              "$ref": "#/definitions/consent-fields"
             },
             "xdm:inHome": {
               "title": "Personalize in-home",
               "description": "Personalize in-home experiences",
-              "$ref": "#/definitions/consentOption"
+              "$ref": "#/definitions/consent-fields"
             },
             "xdm:iotDevices": {
               "title": "Personalize IoT Devices",
               "description": "Personalize interactions on IoT devices",
-              "$ref": "#/definitions/consentOption"
+              "$ref": "#/definitions/consent-fields"
             },
             "xdm:socialMedia": {
               "title": "Personalize Social Media",
               "description": "Personalize interactions on Social Media sites/apps",
-              "$ref": "#/definitions/consentOption"
+              "$ref": "#/definitions/consent-fields"
             },
             "xdm:thirdPartyOffers": {
               "title": "Personalize ",
               "description": "Personalize third-party offers/ads displayed on my site or in my app",
-              "$ref": "#/definitions/consentOption"
+              "$ref": "#/definitions/consent-fields"
             },
             "xdm:thirdPartyContent": {
               "title": "Personalize ",
               "description": "Personalize third-party content displayed on my site or in my app",
-              "$ref": "#/definitions/consentOption"
+              "$ref": "#/definitions/consent-fields"
             },
             "xdm:advertising": {
               "title": "Personalize Ads",
               "description": "Personalize my business's ads on third-party sites/apps",
-              "$ref": "#/definitions/consentOption"
+              "$ref": "#/definitions/consent-fields"
             }
           }
         },
@@ -289,57 +289,57 @@
             "xdm:general": {
               "title": "General Direct Marketing Preference",
               "description": "Does user consent to Direct Marketing in general, unless overridden by specific choices",
-              "$ref": "#/definitions/marketingOption"
+              "$ref": "#/definitions/marketing-fields"
             },
             "xdm:email": {
               "title": "Receive email",
               "description": "User is willing to be contacted via email",
-              "$ref": "#/definitions/marketingOption"
+              "$ref": "#/definitions/marketing-fields"
             },
             "xdm:pushNotifications": {
               "title": "Receive push notifications",
               "description": "It is okay to send push notifications",
-              "$ref": "#/definitions/marketingOption"
+              "$ref": "#/definitions/marketing-fields"
             },
             "xdm:inAppMessages": {
               "title": "Receive in-app messages",
               "description": "User has allowed messages to be shown within the company's apps",
-              "$ref": "#/definitions/marketingOption"
+              "$ref": "#/definitions/marketing-fields"
             },
             "xdm:sms": {
               "title": "Receive SMS",
               "description": "It is okay to send text messages to the user",
-              "$ref": "#/definitions/marketingOption"
+              "$ref": "#/definitions/marketing-fields"
             },
             "xdm:phoneCalls": {
               "title": "Receive phone calls",
               "description": "The company may contact the user with phone solicitations",
-              "$ref": "#/definitions/marketingOption"
+              "$ref": "#/definitions/marketing-fields"
             },
             "xdm:physicalMail": {
               "title": "Receive physical mail",
               "description": "It is okay to send offers via traditional/physical mail.",
-              "$ref": "#/definitions/marketingOption"
+              "$ref": "#/definitions/marketing-fields"
             },
             "xdm:inVehicleMessages": {
               "title": "Receive in-vehicle messages",
               "description": "It is okay to provide offers to the user via technology installed in their vehicle",
-              "$ref": "#/definitions/marketingOption"
+              "$ref": "#/definitions/marketing-fields"
             },
             "xdm:inHomeMessages": {
               "title": "Receive in-home messages",
               "description": "It is okay to provide offers to the user via technology installed in their home",
-              "$ref": "#/definitions/marketingOption"
+              "$ref": "#/definitions/marketing-fields"
             },
             "xdm:iotMessages": {
               "title": "Receive IoT messages",
               "description": "It is okay to present offers via less traditional types of connected devices",
-              "$ref": "#/definitions/marketingOption"
+              "$ref": "#/definitions/marketing-fields"
             },
             "xdm:socialMedia": {
               "title": "Receive Social Media Messages",
               "description": "It is okay to direct messages to the user via their social media accounts",
-              "$ref": "#/definitions/marketingOption"
+              "$ref": "#/definitions/marketing-fields"
             }
           }
         }
@@ -403,7 +403,7 @@
     },
     "consent-preferences": {
       "properties": {
-        "xdm:consentOptions": {
+        "xdm:preferences": {
             "$ref": "#/definitions/consent-options"
         },
         "xdm:consentMetadata": {

@@ -36,7 +36,6 @@
         "xdm:website": {
           "title": "Website URL",
           "type": "string",
-          "format": "uri",
           "description": "The URL of the organization's website."
         },
         "xdm:marketSegment": {

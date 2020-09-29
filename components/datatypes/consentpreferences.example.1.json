@@ -1,6 +1,6 @@
 {
-  "xdm:preferences": {
-    "xdm:privacyPreferences": {
+  "xdm:choices": {
+    "xdm:consents": {
       "xdm:dataCollection": {
         "xdm:choice": "yes",
         "xdm:timestamp": "2019-01-01T15:52:25+00:00",
@@ -47,11 +47,12 @@
       }
     }
   },
-  "xdm:consentMetadata": {
+  "xdm:choicesMetadata": {
     "xdm:version": "1.0.0",
     "xdm:timestamp": "2019-01-01T15:52:25+00:00",
     "xdm:source": "BestCMP",
-    "xdm:userCountry": "US-CA",
-    "xdm:countrySource": "ip"
+    "xdm:userIDfromSource": "12F5B902C89EA592",
+    "xdm:userCountryRegionCode": "US-CA",
+    "xdm:countryRegionSource": "ip"
   }
 }

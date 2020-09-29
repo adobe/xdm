@@ -1,7 +1,7 @@
 {
   "xdm:consentsAndPreferences": {
-    "xdm:preferences": {
-      "xdm:privacyPreferences": {
+    "xdm:choices": {
+      "xdm:consents": {
         "xdm:dataCollection": {
           "xdm:choice": "yes",
           "xdm:timestamp": "2019-01-01T15:52:25+00:00",
@@ -35,7 +35,7 @@
           "xdm:choice": "yes",
           "xdm:source": "OurApp"
         },
-        "xdm:eMail": {
+        "xdm:email": {
           "xdm:choice": "no",
           "xdm:reason": "Too Frequent"
         }
@@ -44,8 +44,8 @@
     "xdm:consentMetadata": {
       "xdm:version": "1.0.0",
       "xdm:timestamp": "2019-01-01T15:52:25+00:00",
-      "xdm:userCountry": "US",
-      "xdm:countrySource": "ip",
+      "xdm:userCountryRegionCode": "US",
+      "xdm:countryRegionSource": "ip",
       "xdm:source": "CJM"
     }
   }

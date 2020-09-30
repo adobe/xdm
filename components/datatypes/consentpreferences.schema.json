@@ -1,35 +1,29 @@
 {
-  "meta:license":[
-     "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
-     "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
-     "you may not use this file except in compliance with the License. You may obtain a copy",
-     "of the License at https://creativecommons.org/licenses/by/4.0/"
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id":"https://ns.adobe.com/xdm/datatypes/consent-preferences",
-  "$schema":"http://json-schema.org/draft-06/schema#",
-  "title":"Privacy/Marketing Preferences (Consent)",
-  "description":"This schema captures privacy, personalization and marketing preferences (consents).",
-  "type":"object",
-  "meta:extensible":true,
-  "meta:abstract":true,
-  "definitions":{
+  "$id": "https://ns.adobe.com/xdm/datatypes/consent-preferences",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Privacy/Marketing Preferences (Consent)",
+  "description": "This schema captures privacy, personalization and marketing preferences (consents).",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "definitions": {
     "choice-value": {
       "title": "Choice Value",
       "description": "The value specified by the user as their preference",
       "type": "string",
-      "enum": [
-        "yes",
-        "no",
-        "pending",
-        "unknown",
-        "not_applicable"
-      ],
+      "enum": ["yes", "no", "pending", "unknown", "not_applicable"],
       "meta:enum": {
         "yes": "Yes",
         "no": "No",
         "pending": "Pending verification",
-        "unknown":"Unknown",
-        "not_applicable":"Not Applicable"
+        "unknown": "Unknown",
+        "not_applicable": "Not Applicable"
       }
     },
     "basis-of-processing": {
@@ -362,7 +356,7 @@
         }
       }
     },
-    "consent-metadata": {
+    "metadata": {
       "properties": {
         "xdm:version": {
           "title": "Consent Schema Version",
@@ -421,21 +415,21 @@
     "consent-preferences": {
       "properties": {
         "xdm:choices": {
-            "$ref": "#/definitions/choices"
+          "$ref": "#/definitions/choices"
         },
         "xdm:choicesMetadata": {
-            "$ref": "#/definitions/consent-metadata"
+          "$ref": "#/definitions/metadata"
         }
       }
     }
   },
-  "allOf":[
+  "allOf": [
     {
-      "$ref":"https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
       "$ref": "#/definitions/consent-preferences"
     }
   ],
-  "meta:status":"stable"
+  "meta:status": "stable"
 }

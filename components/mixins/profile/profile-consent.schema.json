@@ -17,8 +17,8 @@
     "profile-consents": {
       "properties": {
         "xdm:consentsAndPreferences": {
-          "title":"Global Privacy/Marketing Preference Values",
-          "description":"Global (User/Profile-level) Privacy/Personalization/Marketing Preferences.",
+          "title": "Global Privacy/Marketing Preference Values",
+          "description": "Global (User/Profile-level) Privacy/Personalization/Marketing Preferences.",
           "ref": "https://ns.adobe.com/xdm/datatypes/consentpreferences"
         }
       }

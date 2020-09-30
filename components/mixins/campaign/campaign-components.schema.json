@@ -52,7 +52,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "#/definitions/opportunity-components"
+      "$ref": "#/definitions/campaign-components"
     }
   ],
   "meta:status": "experimental"

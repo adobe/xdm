@@ -40,6 +40,32 @@
                 "title": "Source Person ID",
                 "description": "Campaign owner unique identifier at the source.",
                 "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+              },
+              "xdm:sourceCampaignMemberStatus": {
+                "title": "Source Campaign Member Status",
+                "description": "",
+                "type": "string"
+              },
+              "xdm:sourceStatusReason": {
+                "title": "Source Status Reason",
+                "description": "",
+                "type": "string"
+              },
+              "xdm:sourceAcquiredByCampaignID": {
+                "title": "Source Acquired By CampaignID",
+                "description": "",
+                "type": "string"
+              },
+              "xdm:sourceHasReachedSuccess": {
+                "title": "Source Has Reached Success",
+                "description": "",
+                "type": "boolean"
+              },
+              "xdm:sourceReachedSuccessDate": {
+                "title": "Source Reached Success Date",
+                "description": "",
+                "type": "string",
+                "format": "date-time"
               }
             }
           }

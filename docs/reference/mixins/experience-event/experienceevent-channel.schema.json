@@ -14,7 +14,7 @@
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/experienceevent"
     ],
-    "description": "This mixin is used to capture channel information related to an ExperienceEvent, including the channel ID, channel type, media type, and location type.",
+    "description": "Use for channel information such as ID, channel type, media type, and location type.",
     "definitions": {
         "experienceevent-channel": {
             "properties": {

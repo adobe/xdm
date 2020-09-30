@@ -36,7 +36,6 @@
         "xdm:website": {
           "title": "Website URL",
           "type": "string",
-          "format": "uri",
           "description": "The URL of the organization's website."
         },
         "xdm:marketSegment": {
@@ -59,26 +58,22 @@
         "xdm:logoUrl": {
           "title": "Logo URL",
           "description": "Path to be combined with the URL of a Salesforce instance (for example, https://yourInstance.salesforce.com/) to generate a URL to request the social network profile image associated with the account. Generated URL returns an HTTP redirect (code 302) to the social network profile image for the account.",
-          "type": "string",
-          "format": "uri"
+          "type": "string"
         },
         "xdm:linkedinPageUrl": {
           "title": "Linkedinin Page URL",
           "description": "Website link to the Linkedin account of the account",
-          "type": "string",
-          "format": "uri"
+          "type": "string"
         },
         "xdm:twitterHandleUrl": {
           "title": "Twitter handle URL",
           "description": "Website link to the twitter handle of the account",
-          "type": "string",
-          "format": "uri"
+          "type": "string"
         },
         "xdm:facebookPageUrl": {
           "title": "Facebook Page URL",
           "description": "Website link to the Facebook account of the account",
-          "type": "string",
-          "format": "uri"
+          "type": "string"
         },
         "xdm:NAICSCode": {
           "title": "NAICS Code",

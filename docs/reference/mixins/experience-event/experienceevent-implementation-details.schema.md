@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/experienceevent-implementation-details
 ```
 
-Field to capture the details of the software used to collect the ExperienceEvent.
+Use to capture information related to the software used to collect an ExperienceEvent such as environment, name, and version.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|

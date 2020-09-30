@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
-  "description": "This mixin is used to capture information regarding push notifications including device details and registration date. Push addressing details are used to communicate with applications that are installed on devices or SaaS application accounts.",
+  "description": "Use for information regarding push notifications such as device details and registration date. Push addressing details are used to communicate with applications that are installed on devices or SaaS application accounts.",
   "definitions": {
     "profile-push-details": {
       "properties": {

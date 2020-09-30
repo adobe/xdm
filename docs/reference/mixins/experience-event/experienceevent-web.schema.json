@@ -14,7 +14,7 @@
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/experienceevent"
     ],
-    "description": "This mixin is used to capture information regarding web details related to an ExperienceEvent, such as the interaction, page details, and referrer.",
+    "description": "Use for information regarding web details events such as interaction, page details, and referrer.",
     "definitions": {
         "experienceevent-web": {
             "properties": {

@@ -196,7 +196,6 @@ Website link to the Facebook account of the account
 
 
 `string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
 
 
 
@@ -257,7 +256,6 @@ Website link to the Linkedin account of the account
 
 
 `string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
 
 
 
@@ -278,7 +276,6 @@ Path to be combined with the URL of a Salesforce instance (for example, https://
 
 
 `string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
 
 
 
@@ -418,7 +415,6 @@ Website link to the twitter handle of the account
 
 
 `string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
 
 
 
@@ -439,7 +435,6 @@ The URL of the organization's website.
 
 
 `string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
 
 
 

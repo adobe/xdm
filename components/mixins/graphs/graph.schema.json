@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "XDM Graph Schema",
   "type": "object",
-  "description": "XDM graph schema to host graph data.",
+  "description": "Use for host graph data such as label, type, and creation timestamps.",
   "auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,

@@ -14,7 +14,7 @@
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/profile"
     ],
-    "description": "This mixin is used to capture information regarding push notifications including mobile application and device details.",
+    "description": "Use for information regarding push notifications, such as mobile application and device details.",
     "definitions": {
         "profile-push-notification-details": {
             "properties": {

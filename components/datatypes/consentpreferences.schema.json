@@ -415,9 +415,13 @@
     "consent-preferences": {
       "properties": {
         "xdm:choices": {
+          "title": "Consent and Preference Choices",
+          "description": "Specific Consent and Preference Options",
           "$ref": "#/definitions/choices"
         },
         "xdm:choicesMetadata": {
+          "title": "Consent and Preference Metadata",
+          "description": "Metadata that applies to all consents and preferences that don't specify a different value",
           "$ref": "#/definitions/metadata"
         }
       }

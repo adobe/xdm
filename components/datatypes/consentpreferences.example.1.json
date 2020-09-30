@@ -14,7 +14,7 @@
       }
     },
     "xdm:personalizationPreferences": {
-      "xdm:general": {
+      "xdm:any": {
         "xdm:choice": "unknown",
         "xdm:timestamp": "2019-01-01T15:52:25+00:00",
         "xdm:basisOfProcessing": "consent"
@@ -30,7 +30,7 @@
     },
     "xdm:marketingPreferences": {
       "xdm:preferredChannel": "email",
-      "xdm:general": {
+      "xdm:any": {
         "xdm:choice": "yes"
       },
       "xdm:email": {

@@ -165,9 +165,9 @@
           "description": "User's Personalization Preferences",
           "type": "object",
           "properties": {
-            "xdm:general": {
+            "xdm:any": {
               "title": "General Personalization Preference",
-              "description": "Is permission granted to perform personalization",
+              "description": "Is permission granted to perform any type of personalization",
               "$ref": "#/definitions/personalization-fields"
             },
             "xdm:content": {
@@ -297,9 +297,9 @@
                 "unknown": "Unknown"
               }
             },
-            "xdm:general": {
+            "xdm:any": {
               "title": "General Direct Marketing Preference",
-              "description": "Does user permit Direct Marketing",
+              "description": "Does user permit any type of direct marketing",
               "$ref": "#/definitions/marketing-fields"
             },
             "xdm:email": {

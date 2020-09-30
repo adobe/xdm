@@ -83,7 +83,8 @@ SDK or endpoint identifier. All SDKs or endpoints are identified through a URI, 
 | `https://ns.adobe.com/experience/analytics/mbox` | Adobe Target mBox |
 | `https://ns.adobe.com/experience/visitorapi` | Adobe Visitor service |
 | `https://ns.adobe.com/experience/adcloud/viewability` | Adobe Advertising Cloud viewability |
-| `https://ns.adobe.com/experience/alloy` | Adobe Experience Cloud web SDK (Alloy) |
+| `https://ns.adobe.com/experience/alloy` | Adobe Experience Platform Web SDK |
+| `https://ns.adobe.com/experience/alloy/reactor` | Adobe Experience Platform Web SDK Launch Extension |
 
 
 
